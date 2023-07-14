@@ -1,7 +1,7 @@
 ---
 title: Gidiş Dönüş Bilgilerini Dışa Aktar
 linktitle: Gidiş Dönüş Bilgilerini Dışa Aktar
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgeyi HTML olarak kaydederken gidiş dönüş bilgilerini dışa aktarmak için adım adım kılavuz.
 type: docs
 weight: 10

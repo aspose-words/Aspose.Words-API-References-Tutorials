@@ -1,7 +1,7 @@
 ---
 title: Bind SDT till anpassad XML-del
 linktitle: Bind SDT till anpassad XML-del
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du binder en SDT till en anpassad XML-del med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -17,7 +17,7 @@ För att följa denna handledning måste du ha följande:
 - Grundläggande kunskaper i C# och XML.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 ### Exempel på källkod för Bind Sd Tto Custom Xml Part med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

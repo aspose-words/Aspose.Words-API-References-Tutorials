@@ -1,7 +1,7 @@
 ---
 title: Développer la mise en forme sur les cellules et la ligne à partir du style
 linktitle: Développer la mise en forme sur les cellules et la ligne à partir du style
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour étendre la mise en forme aux cellules et aux lignes à partir d'un style de tableau à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ### Exemple de code source pour développer la mise en forme sur les cellules et la ligne à partir du style à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

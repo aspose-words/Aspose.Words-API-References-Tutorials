@@ -1,7 +1,7 @@
 ---
 title: PDF Belgesinde Görüntü Sıkıştırma
 linktitle: PDF Belgesinde Görüntü Sıkıştırma
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir PDF Belgesinde görüntüleri sıkıştırmak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -115,7 +115,7 @@ C: Bir PDF belgesindeki görüntüleri Aspose.Words for .NET ile sıkıştırmak
 
  örneğini oluşturun`Document` Word belgesine giden yolu belirten sınıf.
 
- örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`ImageCompression` mülkiyet`PdfImageCompression.Jpeg` JPEG sıkıştırmasını kullanmak için.
+ örneğini oluşturun`PdfSaveOptions`sınıflandırın ve ayarlayın`ImageCompression` mülkiyet`PdfImageCompression.Jpeg` JPEG sıkıştırmasını kullanmak için.
 
 JPEG kalitesi gibi diğer görüntü sıkıştırma seçeneklerini de ihtiyaçlarınıza göre ayarlayabilirsiniz.
 

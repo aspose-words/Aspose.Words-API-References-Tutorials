@@ -1,7 +1,7 @@
 ---
 title: Knoten im verfolgten Dokument verschieben
 linktitle: Knoten im verfolgten Dokument verschieben
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Verschieben Sie Knoten in einem verfolgten Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 ## Abschluss
 
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET einen Knoten in einem verfolgten Word-Dokument verschiebt. Durch Befolgen der Schritte zum Erstellen des Dokuments, Aktivieren der Revisionsverfolgung, Verschieben des Knotens und Stoppen der Revisionsverfolgung konnten wir diese Manipulation erfolgreich durchführen. Aspose.Words für .NET ist ein leistungsstarkes Tool zum Arbeiten mit Word-Dokumenten und bietet erweiterte Funktionen zum Verwalten von Revisionen. Jetzt können Sie dieses Wissen nutzen, um Knoten in Ihren eigenen Word-Dokumenten zu verschieben und gleichzeitig Revisionen mit Aspose.Words für .NET zu verfolgen.
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET einen Knoten in einem verfolgten Word-Dokument verschiebt. Durch Befolgen der Schritte zum Erstellen des Dokuments, Aktivieren der Revisionsverfolgung, Verschieben des Knotens und Stoppen der Revisionsverfolgung konnten wir diese Manipulation erfolgreich durchführen. Aspose.Words für .NET ist ein leistungsstarkes Tool für die Textverarbeitung mit Word-Dokumenten und bietet erweiterte Funktionen zum Verwalten von Überarbeitungen. Jetzt können Sie dieses Wissen nutzen, um Knoten in Ihren eigenen Word-Dokumenten zu verschieben und gleichzeitig Revisionen mit Aspose.Words für .NET zu verfolgen.
 
 ### FAQs
 

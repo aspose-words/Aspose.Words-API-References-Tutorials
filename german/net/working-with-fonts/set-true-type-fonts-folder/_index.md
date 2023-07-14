@@ -1,7 +1,7 @@
 ---
 title: Legen Sie den Ordner für True-Type-Schriftarten fest
 linktitle: Legen Sie den Ordner für True-Type-Schriftarten fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Festlegen des Ordners für True-Type-Schriftarten beim Rendern eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ### Beispielquellcode für „Ordner für True Type-Schriftarten festlegen“ mit Aspose.Words für .NET 
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit Aspose.Words für .NET den Ordner für True-Type-Schriftarten festlegt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach einen benutzerdefinierten Ordner mit True Type-Schriftarten angeben, die Sie beim Rendern Ihrer Dokumente verwenden möchten. Aspose.Words bietet eine leistungsstarke und flexible API für die Arbeit mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftarten steuern und an Ihre spezifischen Anforderungen anpassen.
+In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit Aspose.Words für .NET den Ordner für True-Type-Schriftarten festlegt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach einen benutzerdefinierten Ordner mit True Type-Schriftarten angeben, die Sie beim Rendern Ihrer Dokumente verwenden möchten. Aspose.Words bietet eine leistungsstarke und flexible API für die Textverarbeitung mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftarten steuern und an Ihre spezifischen Anforderungen anpassen.
 
 ### FAQs
 

@@ -1,7 +1,7 @@
 ---
 title: Export Word Document Header Footer Bookmarks to PDF Document
 linktitle: Export Word Document Header Footer Bookmarks to PDF Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step by step guide to export word document header footer bookmarks to pdf document bookmarks with Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Formularfelder nach Namen abrufen
 linktitle: Formularfelder nach Namen abrufen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Formularfelder in Word-Dokumenten nach Namen abrufen und ändern.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Schritt 2: Formularfelder abrufen
 
- Als nächstes greifen Sie auf zu`FormFields` Eigentum der`Range` Objekt im Dokument, um alle Formularfelder abzurufen:
+ Als nächstes greifen Sie auf zu`FormFields`Eigentum der`Range` Objekt im Dokument, um alle Formularfelder abzurufen:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

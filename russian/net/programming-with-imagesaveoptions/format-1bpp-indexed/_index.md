@@ -1,7 +1,7 @@
 ---
 title: Формат 1Bpp Индексированный
 linktitle: Формат 1Bpp Индексированный
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как форматировать изображения в формате 1 бит на пиксель, проиндексированные с помощью Aspose.Words для .NET. Полное руководство для изображений с низкой глубиной цвета.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
 ```csharp 
  
-			 // Путь к вашему каталогу документов
+			 //Путь к вашему каталогу документов
 			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
             
             Document doc = new Document(dataDir + "Rendering.docx");

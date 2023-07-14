@@ -1,7 +1,7 @@
 ---
 title: Verwenden Sie Zielstile
 linktitle: Verwenden Sie Zielstile
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Word-Dokumente zusammenfügen und anhängen und dabei Zieldokumentstile mit Aspose.Words für .NET anwenden.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 ## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir`Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -55,7 +55,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 Hier ist der vollständige Quellcode für die Funktion „Zielstile verwenden“ in C# mit Aspose.Words für .NET:
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

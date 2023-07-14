@@ -1,7 +1,7 @@
 ---
 title: Teckensnittsformatering
 linktitle: Teckensnittsformatering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här handledningen lär du dig hur du formaterar teckensnittet i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ### Exempel på källkod för teckensnittsformatering med Aspose.Words för .NET 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Felder im Absatz konvertieren
 linktitle: Felder im Absatz konvertieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Konvertieren Sie IF-Felder in einfachen Text in einem Absatz mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
- Dieser Code verwendet eine Kombination von LINQ-Methoden, um Felder im letzten Absatz des Dokuments herauszufiltern und sie dann durch Aufrufen von in einfachen Text umzuwandeln`Unlink()` Methode.
+Dieser Code verwendet eine Kombination von LINQ-Methoden, um Felder im letzten Absatz des Dokuments herauszufiltern und sie dann durch Aufrufen von in einfachen Text umzuwandeln`Unlink()` Methode.
 
 ## Schritt 4: Speichern des geänderten Dokuments
 

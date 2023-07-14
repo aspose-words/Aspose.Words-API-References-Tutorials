@@ -1,7 +1,7 @@
 ---
 title: Eliminar contenido de pie de página de encabezado
 linktitle: Eliminar contenido de pie de página de encabezado
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda a eliminar contenido de encabezado y pie de página de un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A continuación, cargaremos el documento de Word en una instancia del`Document` clase. Accederemos a la primera sección del documento utilizando el índice 0.
 
 ```csharp
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Document.docx");
 
 // Accede a la sección
@@ -36,7 +36,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Paso 3: eliminar contenido de encabezado y pie de página
- Para eliminar el contenido del encabezado y el pie de página de la sección, usaremos el`ClearHeadersFooters` método.
+ Para eliminar el contenido del encabezado y pie de página de la sección, usaremos el`ClearHeadersFooters` método.
 
 ```csharp
 section.ClearHeadersFooters();
@@ -46,7 +46,7 @@ section.ClearHeadersFooters();
 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -74,7 +74,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  R: Para cargar el documento de Word en una instancia del`Document` clase llamada`doc` y acceda a la primera sección del documento usando el índice 0, puede usar el siguiente código:
 
 ```csharp
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Document.docx");
 
 // Accede a la sección

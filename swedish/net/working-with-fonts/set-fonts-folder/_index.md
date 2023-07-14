@@ -1,7 +1,7 @@
 ---
 title: Ställ in typsnittsmapp
 linktitle: Ställ in typsnittsmapp
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ställer in teckensnittskatalogen i Aspose.Words för .NET och se till att teckensnitt som används i dina dokument är tillgängliga.
 type: docs
 weight: 10
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

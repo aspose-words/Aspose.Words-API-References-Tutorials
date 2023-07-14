@@ -1,7 +1,7 @@
 ---
 title: Update Last Printed Property in PDF Document
 linktitle: Update Last Printed Property in PDF Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to update "Last Printed" property when converting to PDF with Aspose.Words for .NET.
 type: docs
 weight: 10

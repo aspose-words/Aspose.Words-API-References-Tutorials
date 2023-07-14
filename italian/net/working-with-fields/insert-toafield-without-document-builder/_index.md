@@ -1,7 +1,7 @@
 ---
 title: Inserisci campo TOA senza Document Builder
 linktitle: Inserisci campo TOA senza Document Builder
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per inserire il campo TOA senza Document Builder utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

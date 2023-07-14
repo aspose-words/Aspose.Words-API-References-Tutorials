@@ -1,7 +1,7 @@
 ---
 title: Word Belgesini PDF 1.7'ye Dönüştür
 linktitle: Word Belgesini PDF 1.7'ye Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile word belgesini PDF 1.7'ye nasıl dönüştüreceğinizi öğrenin.
 type: docs
 weight: 10

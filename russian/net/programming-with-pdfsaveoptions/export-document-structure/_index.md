@@ -1,7 +1,7 @@
 ---
 title: Экспорт структуры документа Word в документ PDF
 linktitle: Экспорт структуры документа Word в документ PDF
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по экспорту структуры документа Word в документ PDF с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", save
 
  Создайте экземпляр`Document` класс, указывающий путь к документу Word.
 
- Создайте экземпляр`PdfSaveOptions` класс и установить`ExportDocumentStructure` собственность на`true`. Это позволит экспортировать структуру документа и сделать ее видимой на панели навигации «Содержимое» Adobe Acrobat Pro при редактировании файла PDF.
+ Создайте экземпляр`PdfSaveOptions`класс и установить`ExportDocumentStructure` собственность на`true`. Это позволит экспортировать структуру документа и сделать ее видимой на панели навигации «Содержимое» Adobe Acrobat Pro при редактировании файла PDF.
 
  Использовать`Save` метод`Document`class, чтобы сохранить документ в формате PDF, указав параметры сохранения.
 

@@ -1,7 +1,7 @@
 ---
 title: 删除自定义文档属性
 linktitle: 删除自定义文档属性
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 从文档中删除自定义属性的分步指南。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: View Options
 linktitle: View Options
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to configure document display options with Aspose.Words for .NET.
 type: docs
 weight: 10

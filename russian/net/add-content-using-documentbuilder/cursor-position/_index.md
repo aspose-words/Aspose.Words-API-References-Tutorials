@@ -1,7 +1,7 @@
 ---
 title: Позиция курсора
 linktitle: Позиция курсора
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как получить позицию курсора в документе Word с помощью Aspose.Words для .NET. Пошаговое руководство.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Move To Document Start End
 linktitle: Move To Document Start End
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use Aspose.Words for .NET to move to the document start and end in Word documents with this step-by-step guide.
 type: docs
 weight: 10
@@ -66,4 +66,4 @@ Console.WriteLine("\nThis is the end of the document.");
 
 ## Conclusion
 
-In this example, we have explored the Move To Document Start/End feature of Aspose.Words for .NET. We learned how to navigate to the beginning and end of a document using the DocumentBuilder class. This feature is useful when programmatically working with Word documents and needing to manipulate or insert content at specific positions within the document.
+In this example, we have explored the Move To Document Start/End feature of Aspose.Words for .NET. We learned how to navigate to the beginning and end of a document using the DocumentBuilder class. This feature is useful when programmatically Words Processing with Word documents and needing to manipulate or insert content at specific positions within the document.

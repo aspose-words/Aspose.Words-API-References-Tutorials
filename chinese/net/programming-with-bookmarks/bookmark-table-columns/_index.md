@@ -1,7 +1,7 @@
 ---
-title: 书签表列
-linktitle: 书签表列
-second_title: Aspose.Words for .NET API 参考
+title: 在 Word 文档中为表格列添加书签
+linktitle: 在 Word 文档中为表格列添加书签
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中为表格列添加书签。
 type: docs
 weight: 10
@@ -123,3 +123,65 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 ## 结论
 
 在本文中，我们探索了 C# 源代码，以了解如何使用 Aspose.Words for .NET 的书签表列功能。我们按照分步指南为 Word 文档中表格的特定列添加书签，并跳转到该列的内容。
+
+### Word 文档中书签表列的常见问题解答
+
+#### 问：使用 Aspose.Words for .NET 中的“表列书签”功能有哪些先决条件？
+
+答：要使用 Aspose.Words for .NET 中的“表格列书签”功能，您需要具备 C# 语言的基本知识。您还需要一个安装了 Aspose.Words 库的 .NET 开发环境。
+
+#### 问：如何使用 Aspose.Words for .NET 在 Word 文档中创建包含列的表格？
+
+答：要使用 Aspose.Words for .NET 在 Word 文档中创建包含列的表格，您可以使用`DocumentBuilder`对象将单元格和内容插入表中。这是示例代码：
+
+```csharp
+builder. StartTable();
+
+builder. InsertCell();
+builder.Write("Contents of cell 1 of column 1");
+
+builder. InsertCell();
+builder.Write("Contents of cell 2 of column 2");
+
+builder. EndRow();
+
+builder. InsertCell();
+builder.Write("Contents of cell 1 of column 2");
+
+builder. InsertCell();
+builder.Write("Contents of cell 2 of column 2");
+
+builder. EndRow();
+
+builder. EndTable();
+```
+
+#### 问：如何使用 Aspose.Words for .NET 为表格列添加书签？
+
+答：要使用 Aspose.Words for .NET 在表格列上创建书签，您可以使用`StartBookmark`的方法`DocumentBuilder`对象在特定表列上启动书签。这是示例代码：
+
+```csharp
+builder.StartBookmark("MyBookmark");
+```
+
+#### 问：如何使用 Aspose.Words for .NET 从书签访问表格列内容？
+
+答：要使用 Aspose.Words for .NET 从书签访问表格列的内容，您可以循环遍历文档中的所有书签，检查书签是否为列，然后使用列的索引来访问那个专栏。这是示例代码：
+
+```csharp
+foreach(Bookmark bookmark in doc.Range.Bookmarks)
+{
+     if (bookmark.IsColumn)
+     {
+         if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
+         {
+             string content = row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar);
+             //对列的内容做一些事情......
+         }
+     }
+}
+```
+
+#### 问：在带有列书签的表中可以创建的列数是否有限制？
+
+答：使用 Aspose.Words for .NET 在带有列书签的表格中创建的列数没有具体限制。该限制主要取决于系统上的可用资源以及您所使用的 Word 文件格式的规格。但是，建议不要创建过多的列，因为这可能会影响最终文档的性能和可读性。

@@ -1,7 +1,7 @@
 ---
 title: Använd mellanslagstecken per nivå för listindrag
 linktitle: Använd mellanslagstecken per nivå för listindrag
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att använda ett mellanslagstecken per nivå för listindrag i Aspose.Words för .NET. Skapa välstrukturerade Word-dokument med lätthet.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek för att skapa, redigera och
 
 ## Förstå Aspose.Words-biblioteket
 
-Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett populärt bibliotek som gör arbetet med Word-dokument enkelt och effektivt. Den erbjuder ett brett utbud av funktioner för att skapa, ändra och manipulera Word-dokument, inklusive hantering av listor och indrag.
+Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett populärt bibliotek som gör ordbehandling med Word-dokument enkelt och effektivt. Den erbjuder ett brett utbud av funktioner för att skapa, ändra och manipulera Word-dokument, inklusive hantering av listor och indrag.
 
 ## Skapa dokumentet och lägga till innehåll
 
@@ -44,7 +44,7 @@ saveOptions.ListIndentation.Character = ' ';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-I det här exemplet skapar vi en instans av TxtSaveOptions och ställer in egenskapen ListIndentation.Count till 3 för att indikera att det finns tre nivåer av indrag i listan. Vi ställer också in egenskapen ListIndentation.Character till det blanksteg (' ') som vi vill använda för indrag.
+det här exemplet skapar vi en instans av TxtSaveOptions och ställer in egenskapen ListIndentation.Count till 3 för att indikera att det finns tre nivåer av indrag i listan. Vi ställer också in egenskapen ListIndentation.Character till det blanksteg (' ') som vi vill använda för indrag.
 
 ### Exempel på källkod för funktionen "Använd ett blanksteg per nivå för listindrag" med Aspose.Words för .NET
 
@@ -91,12 +91,12 @@ namespace Example
 
 ## Slutsats
 
-den här guiden förklarade vi hur man använder Aspose.Words för .NET för att tillämpa funktionen "Använd ett blanksteg per nivå för listindrag". Genom att följa de angivna stegen och använda den medföljande C#-källkoden kan du enkelt konfigurera indragningen av listor i dina Word-dokument med ett blanksteg per nivå. Aspose.Words erbjuder en enorm flexibilitet och kraft för att arbeta med textformatering och listhantering, vilket gör att du kan skapa välstrukturerade dokument i din C#-applikation.
+den här guiden förklarade vi hur man använder Aspose.Words för .NET för att tillämpa funktionen "Använd ett blanksteg per nivå för listindrag". Genom att följa de angivna stegen och använda den medföljande C#-källkoden kan du enkelt konfigurera indragningen av listor i dina Word-dokument med ett blanksteg per nivå. Aspose.Words erbjuder en enorm flexibilitet och kraft för ordbehandling med textformatering och listhantering, vilket gör att du kan skapa välstrukturerade dokument i din C#-applikation.
 
 ### Vanliga frågor
 
 #### F: Vad är Aspose.Words för .NET?
-Aspose.Words för .NET är ett kraftfullt bibliotek för att skapa, redigera och manipulera Word-dokument i en C#-applikation. Den erbjuder många funktioner för att arbeta med Word-dokument, inklusive möjligheten att använda ett blanksteg per nivå för indrag av listor.
+Aspose.Words för .NET är ett kraftfullt bibliotek för att skapa, redigera och manipulera Word-dokument i en C#-applikation. Den erbjuder många funktioner för ordbehandling med Word-dokument, inklusive möjligheten att använda ett blanksteg per nivå för indragningslistor.
 
 #### F: Hur kan jag använda ett blanksteg per nivå för listindrag med Aspose.Words för .NET?
 Du kan använda ett blanksteg per nivå för listindrag genom att följa dessa steg:
@@ -105,7 +105,7 @@ Du kan använda ett blanksteg per nivå för listindrag genom att följa dessa s
 
  Använd`DocumentBuilder`klass för att lägga till innehåll i dokumentet och skapa en lista med flera nivåer av indrag.
 
- När du har lagt till innehållet och konfigurerat listindragningen använder du`TxtSaveOptions` klass och ställ in`ListIndentation.Count` egenskapen till antalet indragsnivåer och`ListIndentation.Character` egendom på utrymmet (`' '`) att använda.
+ När du har lagt till innehållet och konfigurerat listindragningen använder du`TxtSaveOptions`klass och ställ in`ListIndentation.Count` egenskapen till antalet indragsnivåer och`ListIndentation.Character` egendom på utrymmet (`' '`) att använda.
 
  Spara dokumentet med de angivna alternativen med hjälp av`Save` metod för`Document` klass.
 

@@ -1,7 +1,7 @@
 ---
 title: Configuration du lien vers le contenu
 linktitle: Configuration du lien vers le contenu
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour configurer la liaison au contenu d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10

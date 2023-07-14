@@ -1,7 +1,7 @@
 ---
 title: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
 linktitle: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج حقل كتلة عنوان دمج المراسلات في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

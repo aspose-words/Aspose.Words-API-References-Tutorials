@@ -1,14 +1,14 @@
 ---
 title: Mettre à jour les champs modifiés
 linktitle: Mettre à jour les champs modifiés
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à charger un document Word en mettant à jour les champs modifiés avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/update-dirty-fields/
 ---
 
-Lorsque vous travaillez avec des documents Word dans une application C#, il peut être nécessaire de mettre à jour les champs modifiés pour afficher les valeurs les plus récentes. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement mettre à jour les champs modifiés lors du chargement du document à l'aide de LoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document en mettant à jour les champs modifiés à l'aide de LoadOptions.
+Lors du traitement de texte avec des documents Word dans une application C#, il peut être nécessaire de mettre à jour les champs modifiés pour afficher les valeurs les plus récentes. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement mettre à jour les champs modifiés lors du chargement du document à l'aide de LoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document en mettant à jour les champs modifiés à l'aide de LoadOptions.
 
 ## Comprendre la bibliothèque Aspose.Words
 

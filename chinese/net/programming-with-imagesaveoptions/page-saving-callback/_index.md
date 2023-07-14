@@ -1,7 +1,7 @@
 ---
 title: 页面保存回调
 linktitle: 页面保存回调
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 自定义将文档页面保存为图像。
 type: docs
 weight: 10

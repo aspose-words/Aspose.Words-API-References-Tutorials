@@ -1,7 +1,7 @@
 ---
 title: Interpolate Images in a PDF Document
 linktitle: Interpolate Images in a PDF Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to enable image interpolation in a PDF Document with Aspose.Words for .NET.
 type: docs
 weight: 10

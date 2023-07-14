@@ -1,7 +1,7 @@
 ---
 title: Feldcode
 linktitle: Feldcode
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Abrufen von Feldcode und Feldergebnis in Ihren Word-Dokumenten mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -73,7 +73,7 @@ Damit ist unser Leitfaden zur Verwendung der Funktion „Get Field Code“ mit A
 
 #### F: Wie kann ich Felder in einem Dokument mit Aspose.Words für .NET aktualisieren?
 
- A: Um Dokumentfelder mit Aspose.Words für .NET zu aktualisieren, können Sie das verwenden`Document.UpdateFields` Methode. Dadurch werden alle im Dokument vorhandenen Felder aktualisiert, z. B. Zusammenführungsfelder, Datumsfelder usw.
+ A: Um Dokumentfelder mit Aspose.Words für .NET zu aktualisieren, können Sie das verwenden`Document.UpdateFields`Methode. Dadurch werden alle im Dokument vorhandenen Felder aktualisiert, z. B. Zusammenführungsfelder, Datumsfelder usw.
 
 #### F: Wie kann ich den Wert eines bestimmten Felds in Aspose.Words für .NET abrufen?
 

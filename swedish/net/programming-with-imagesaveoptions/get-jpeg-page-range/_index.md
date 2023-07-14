@@ -1,7 +1,7 @@
 ---
 title: Hämta Jpeg-sidintervall
 linktitle: Hämta Jpeg-sidintervall
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du får en rad JPEG-sidor med Aspose.Words för .NET. Komplett handledning för att extrahera anpassade bilder.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Nu kan du köra källkoden för att konvertera ett visst antal sidor i ditt doku
 ### Exempel på källkod för Get Jpeg Page Range med Aspose.Words för .NET
 
 ```csharp 
- // Sökväg till din dokumentkatalog
+ //Sökväg till din dokumentkatalog
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

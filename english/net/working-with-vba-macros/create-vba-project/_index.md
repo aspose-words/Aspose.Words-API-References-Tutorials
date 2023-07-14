@@ -1,7 +1,7 @@
 ---
-title: Create Vba Project
-linktitle: Create Vba Project
-second_title: Aspose.Words for .NET API Reference
+title: Create Vba Project in Word Document
+linktitle: Create Vba Project in Word Document
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to create a VBA project in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -82,3 +82,24 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 ## Conclusion
 In this tutorial, we saw how to create a VBA project in a Word document using Aspose.Words for .NET. Creating a VBA project allows you to add and customize VBA code in your Word document. Feel free to use this feature to automate tasks or add custom functionality to your Word documents.
 
+### FAQ's
+
+#### Q: What is a VBA project in a Word document?
+
+A: A VBA project in a Word document is a collection of VBA modules containing code that can be used to automate tasks, add custom functionality, or perform specific operations in a Word document.
+
+#### Q: What are the prerequisites for creating a VBA project in a Word document?
+
+A: Before you can create a VBA project in a Word document, you must have a working knowledge of the C# programming language. You also need to install the Aspose.Words for .NET library in your project.
+
+#### Q: How to set the document directory in the code?
+
+A: In the code provided, you need to replace `"YOUR DOCUMENTS DIRECTORY"` with the appropriate path to the directory where you want to save your Word document with the VBA project.
+
+#### Q: How to specify macro source code in VBA module?
+
+A: To specify the source code of the macro in the VBA module, you can use the `SourceCode` property of the `VbaModule` class by assigning it a character string containing the VBA code.
+
+#### Q: Can I add multiple VBA modules to a VBA project in a Word document?
+
+A: Yes, you can add multiple VBA modules to a VBA project in a Word document by instantiating multiple `VbaModule` objects and adding them to the `Modules` collection of the `VbaProject` object. This allows you to organize your VBA code into different modules for better management and reuse.

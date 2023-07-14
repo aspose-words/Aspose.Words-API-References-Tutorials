@@ -1,7 +1,7 @@
 ---
 title: Horisontell sammanfogning
 linktitle: Horisontell sammanfogning
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du sammanfogar celler horisontellt i en Word-tabell med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ I den här handledningen kommer vi att lära oss hur man horisontellt sammanfoga
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Skapa dokumentet och initialisera dokumentgeneratorn
-För att börja arbeta med tabellen och cellerna måste vi skapa ett nytt dokument och initiera dokumentgeneratorn. Följ dessa steg:
+För att starta ordbehandling med tabellen och cellerna måste vi skapa ett nytt dokument och initiera dokumentgeneratorn. Följ dessa steg:
 
 ```csharp
 // Sökväg till din dokumentkatalog
@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Här använder vi dokumentbyggaren för att bygga tabellen och ställa in cellens horisontella sammanfogningsegenskaper. Vi använder`HorizontalMerge` egendom av`CellFormat` objekt för att ange vilken typ av horisontell sammanslagning som ska tillämpas på varje cell. Använder sig av`CellMerge.First` vi slår samman den första cellen med nästa, medan vi använder`CellMerge.Previous` vi slår samman den nuvarande cellen med den föregående cellen.`CellMerge.None` indikerar att cellen inte ska slås samman.
+ Här använder vi dokumentbyggaren för att bygga tabellen och ställa in cellens horisontella sammanfogningsegenskaper. Vi använder`HorizontalMerge`egendom av`CellFormat` objekt för att ange vilken typ av horisontell sammanslagning som ska tillämpas på varje cell. Använder sig av`CellMerge.First` vi slår samman den första cellen med nästa, medan vi använder`CellMerge.Previous` vi slår samman den nuvarande cellen med den föregående cellen.`CellMerge.None` indikerar att cellen inte ska slås samman.
 
 ## Steg 4: Spara det ändrade dokumentet
 Slutligen måste vi spara det modifierade dokumentet med cellerna sammanslagna horisontellt. Använd följande kod:
@@ -65,7 +65,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för Horizontal Merge med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Удалить все разделы
 linktitle: Удалить все разделы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: В этом руководстве вы узнаете, как удалить все разделы из документа Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

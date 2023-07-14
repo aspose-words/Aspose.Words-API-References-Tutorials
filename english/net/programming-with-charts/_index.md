@@ -1,7 +1,7 @@
 ---
-title: Programming With Charts
-linktitle: Programming With Charts
-second_title: Aspose.Words for .NET API Reference
+title: Using Word Chart API
+linktitle: Using Charts
+second_title: Aspose.Words Document Processing API
 description: Learn how to create, customize, and manipulate graphics in Word documents using Aspose.Words for .NET. The tutorials provide step-by-step explanations and C# source code to help you add charts.
 type: docs
 weight: 1540

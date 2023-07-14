@@ -1,7 +1,7 @@
 ---
 title: Applicare la licenza misurata
 linktitle: Applicare la licenza misurata
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come applicare una licenza a consumo utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Prima di iniziare, assicurati di avere i seguenti prerequisiti:
 - Credenziali valide per le licenze a consumo. 
 
 ## Passaggio 1: importare gli spazi dei nomi richiesti
-Per iniziare, importa gli spazi dei nomi necessari nel tuo codice C#. Questi spazi dei nomi contengono le classi ei metodi necessari per lavorare con Aspose.Words.
+Per iniziare, importa gli spazi dei nomi necessari nel tuo codice C#. Questi spazi dei nomi contengono le classi ei metodi necessari per l'elaborazione di testi con Aspose.Words.
 
 ```csharp
 using Aspose.Words;

@@ -1,7 +1,7 @@
 ---
 title: 解析字体名称
 linktitle: 解析字体名称
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 转换为 HTML 时解决缺少字体名称的分步指南。
 type: docs
 weight: 10

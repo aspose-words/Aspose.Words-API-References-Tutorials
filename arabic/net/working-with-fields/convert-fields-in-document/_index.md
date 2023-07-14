@@ -1,7 +1,7 @@
 ---
 title: تحويل الحقول في المستند
 linktitle: تحويل الحقول في المستند
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لتحويل حقول المستند إلى نص باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## الخطوة 3: قم بتحميل المستند
- استخدم ال`Document`class of Aspose.Words لتحميل مستند Word الذي يحتوي على الحقول المرتبطة التي تريد تحويلها.
+ استخدم ال`Document` class of Aspose.Words لتحميل مستند Word الذي يحتوي على الحقول المرتبطة التي تريد تحويلها.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## الخطوة 5: احفظ المستند المحول
- استخدم ال`Save()` طريقة لحفظ المستند مع الحقول المحولة إلى نص في دليل المستند المحدد.
+ استخدم ال`Save()`طريقة لحفظ المستند مع الحقول المحولة إلى نص في دليل المستند المحدد.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

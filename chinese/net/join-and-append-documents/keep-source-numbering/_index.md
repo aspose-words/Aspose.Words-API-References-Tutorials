@@ -1,7 +1,7 @@
 ---
 title: 保留源编号
 linktitle: 保留源编号
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在 Aspose.Words for .NET 中附加文档，同时保留源编号格式。
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 步骤 3：导入时保留源编号
+## 步骤 3：导入时保留来源编号
 
 要保留源文档中编号段落的编号格式，请创建一个实例`ImportFormatOptions`并设置`KeepSourceNumbering`到`true`。用一个`NodeImporter`要将节点从源文档导入到目标文档，请指定`ImportFormatMode.KeepSourceFormatting`和`importFormatOptions`.
 

@@ -1,7 +1,7 @@
 ---
 title: Skapa en enkel tabell
 linktitle: Skapa en enkel tabell
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skapar en enkel tabell i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -78,7 +78,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för Skapa enkel tabell med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

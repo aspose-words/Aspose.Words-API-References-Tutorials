@@ -1,7 +1,7 @@
 ---
 title: 从 Html 插入表格
 linktitle: 从 Html 插入表格
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将 HTML 表格插入到 Word 文档中。
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/insert-table-from-html/
 2. 添加对 Aspose.Words for .NET 库的引用。
 
 ## 第2步：创建文档并初始化文档生成器
-要开始使用文档和文档生成器，请按照下列步骤操作：
+要使用文档和文档生成器启动字处理，请按照下列步骤操作：
 
 ```csharp
 //文档目录的路径

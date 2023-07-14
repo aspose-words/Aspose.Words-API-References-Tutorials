@@ -1,7 +1,7 @@
 ---
 title: حدد الخط الافتراضي عند التقديم
 linktitle: حدد الخط الافتراضي عند التقديم
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لتحديد الخط الافتراضي عند تقديم مستند باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## الخطوة 3: تعيين الخط الافتراضي
- يمكنك الآن تحديد الخط الافتراضي لاستخدامه عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة ووضع`DefaultFontName` ممتلكات`DefaultFontSubstitution` يعترض على`DefaultFontSubstitution` هدف`SubstitutionSettings` ل`FontSettings`.
+ يمكنك الآن تحديد الخط الافتراضي لاستخدامه عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة ووضع`DefaultFontName`ممتلكات`DefaultFontSubstitution` يعترض على`DefaultFontSubstitution` هدف`SubstitutionSettings` ل`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### عينة من التعليمات البرمجية المصدر لـ Specify Default Font عند العرض باستخدام Aspose.Words for .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -56,13 +56,13 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تحديد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تعيين خط افتراضي لاستخدامه عند عرض المستندات الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في عرض مستنداتك وتخصيصه وفقًا لاحتياجاتك الخاصة.
+في هذا البرنامج التعليمي ، تعلمنا كيفية تحديد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تعيين خط افتراضي لاستخدامه عند عرض المستندات الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الكلمات باستخدام الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في عرض مستنداتك وتخصيصه وفقًا لاحتياجاتك الخاصة.
 
 ### التعليمات
 
 #### س: كيف يمكنني تحديد خط افتراضي عند التحويل إلى PDF في Aspose.Words؟
 
- ج: لتحديد خط افتراضي عند التحويل إلى PDF في Aspose.Words ، يمكنك استخدام`PdfOptions` فئة وضبط`DefaultFontName` الخاصية لاسم الخط المطلوب.
+ ج: لتحديد خط افتراضي عند التحويل إلى PDF في Aspose.Words ، يمكنك استخدام`PdfOptions`فئة وضبط`DefaultFontName` الخاصية لاسم الخط المطلوب.
 
 #### س: ماذا لو لم يكن الخط الافتراضي متاحًا عند التحويل إلى PDF؟
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 
 #### س: كيف يمكنني التحقق من الخط الافتراضي المحدد في Aspose.Words؟
 
- ج: للتحقق من الخط الافتراضي المحدد في Aspose.Words ، يمكنك استخدام`DefaultFontName` ممتلكات`PdfOptions` class واسترداد اسم الخط الذي تم تكوينه.
+ ج: للتحقق من الخط الافتراضي المحدد في Aspose.Words ، يمكنك استخدام`DefaultFontName`ممتلكات`PdfOptions` class واسترداد اسم الخط الذي تم تكوينه.
 
 #### س: هل من الممكن تحديد خط افتراضي مختلف لكل قسم من المستند؟
 

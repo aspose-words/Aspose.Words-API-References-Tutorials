@@ -1,7 +1,7 @@
 ---
 title: Texte en italique
 linktitle: Texte en italique
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à mettre du texte en italique avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de te
 
 #### Q : Comment puis-je mettre du texte en italique dans Aspose.Words ?
 
- : Pour mettre en italique du texte dans Aspose.Words, vous pouvez utiliser le`Font.Italic` propriété de la`Run`objet. Vous pouvez définir cette propriété sur`true` pour mettre en italique un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.Italic=true` mettre en italique le texte contenu dans le`Run` objet.
+ : Pour mettre en italique du texte dans Aspose.Words, vous pouvez utiliser le`Font.Italic`propriété de la`Run`objet. Vous pouvez définir cette propriété sur`true` pour mettre en italique un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.Italic=true` mettre en italique le texte contenu dans le`Run` objet.
 
 #### Q : Est-il possible de mettre en italique plusieurs parties de texte dans le même paragraphe ?
 
@@ -54,4 +54,4 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de te
 
 #### Q : Puis-je mettre en italique du texte qui se trouve dans un tableau ou une cellule dans Aspose.Words ?
 
- R : Oui, vous pouvez mettre en italique le texte qui se trouve dans un tableau ou une cellule dans Aspose.Words. Vous pouvez accéder à la cellule ou au paragraphe de votre choix à l'aide des méthodes appropriées, puis appliquer la mise en forme en italique à l'aide de la`Font.Italic` propriété de la`Run` ou`Paragraph` objet.
+ R : Oui, vous pouvez mettre en italique le texte qui se trouve dans un tableau ou une cellule dans Aspose.Words. Vous pouvez accéder à la cellule ou au paragraphe de votre choix à l'aide des méthodes appropriées, puis appliquer la mise en forme en italique à l'aide de la`Font.Italic`propriété de la`Run` ou`Paragraph` objet.

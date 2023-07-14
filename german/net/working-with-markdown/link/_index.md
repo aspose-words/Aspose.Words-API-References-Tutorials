@@ -1,7 +1,7 @@
 ---
 title: Verknüpfung
 linktitle: Verknüpfung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Links mit Aspose.Words für .NET einfügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10

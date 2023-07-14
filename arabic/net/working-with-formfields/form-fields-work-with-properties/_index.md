@@ -1,7 +1,7 @@
 ---
 title: تعمل حقول النموذج مع الخصائص
 linktitle: تعمل حقول النموذج مع الخصائص
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية التعامل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## الخطوة 3: العمل مع خصائص حقل النموذج
+## الخطوة 3: معالجة الكلمات بخصائص حقل النموذج
 
  يمكنك معالجة الخصائص المختلفة لحقل النموذج بناءً على نوعه. في هذا المثال ، نتحقق مما إذا كان حقل النموذج من النوع`FieldType.FieldFormTextInput` وضبطها`Result` بناء على ذلك:
 

@@ -1,7 +1,7 @@
 ---
 title: Exportera till Markdown med tabellinnehållsjustering
 linktitle: Exportera till Markdown med tabellinnehållsjustering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du exporterar tabellinnehåll med olika justeringar till Markdown-filer med Aspose.Words för .NET.
 type: docs
 weight: 10

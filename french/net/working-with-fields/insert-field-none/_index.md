@@ -1,7 +1,7 @@
 ---
 title: Insérer un champ Aucun
 linktitle: Insérer un champ Aucun
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer un champ AUCUN dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -57,7 +57,7 @@ Ceci conclut notre guide sur l'utilisation de la fonctionnalité "Insert NONE Fi
 
 ### FAQ
 
-#### Q : Que couvre le didacticiel "Travailler avec des champs : Insérer un champ aucun" ?
+#### Q : Que couvre le didacticiel "Traitement de texte avec champs : Insérer un champ aucun" ?
 
 R : Ce didacticiel couvre la manipulation de champs dans Aspose Words pour .NET, avec un accent particulier sur l'insertion du champ "Aucun". Les champs sont des éléments dynamiques dans un document Word qui peuvent être utilisés pour afficher ou calculer des données. Le tutoriel explique comment insérer le champ "Aucun" et l'utiliser de manière appropriée.
 

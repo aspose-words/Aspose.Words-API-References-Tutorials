@@ -1,7 +1,7 @@
 ---
 title: 更新 PDF 文档中最后打印的属性
 linktitle: 更新 PDF 文档中最后打印的属性
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 转换为 PDF 时更新“上次打印”属性的分步指南。
 type: docs
 weight: 10

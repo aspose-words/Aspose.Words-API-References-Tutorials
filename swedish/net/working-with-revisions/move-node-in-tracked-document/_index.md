@@ -1,7 +1,7 @@
 ---
 title: Flytta nod i spårat dokument
 linktitle: Flytta nod i spårat dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Flytta noder i ett spårat dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 ## Slutsats
 
-I den här handledningen lärde vi oss hur man flyttar en nod i ett spårat Word-dokument med Aspose.Words för .NET. Genom att följa stegen för att skapa dokumentet, aktivera revisionsspårning, flytta noden och stoppa revisionsspårning, kunde vi utföra denna manipulation framgångsrikt. Aspose.Words för .NET är ett kraftfullt verktyg för att arbeta med Word-dokument och erbjuder avancerade funktioner för att hantera revisioner. Nu kan du använda denna kunskap för att flytta noder i dina egna Word-dokument samtidigt som du spårar revisioner med Aspose.Words för .NET.
+I den här handledningen lärde vi oss hur man flyttar en nod i ett spårat Word-dokument med Aspose.Words för .NET. Genom att följa stegen för att skapa dokumentet, aktivera revisionsspårning, flytta noden och stoppa revisionsspårning, kunde vi utföra denna manipulation framgångsrikt. Aspose.Words för .NET är ett kraftfullt verktyg för ordbehandling med Word-dokument och erbjuder avancerade funktioner för att hantera revisioner. Nu kan du använda denna kunskap för att flytta noder i dina egna Word-dokument samtidigt som du spårar revisioner med Aspose.Words för .NET.
 
 ### FAQ's
 

@@ -1,7 +1,7 @@
 ---
 title: Добавить префикс имени класса Css
 linktitle: Добавить префикс имени класса Css
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по добавлению префикса имени класса CSS при преобразовании документа в HTML с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Inserisci campo Includi testo senza Document Builder
 linktitle: Inserisci FieldIncludeText senza Document Builder
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire un campo FieldIncludeText nei tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -85,7 +85,7 @@ Questo conclude la nostra guida sull'utilizzo della funzione "Inserisci un Field
 
 #### D: Come posso specificare il file sorgente per il campo di inclusione del testo in Aspose.Words per .NET?
 
- R: Per specificare il file sorgente per il campo di inclusione del testo in Aspose.Words per .NET, puoi utilizzare il`FieldIncludeText.SourceFullName` property per impostare il percorso completo del file di origine. Assicurati che il file di origine sia accessibile e contenga il contenuto che desideri includere nel campo di inclusione del testo.
+ R: Per specificare il file sorgente per il campo di inclusione del testo in Aspose.Words per .NET, puoi utilizzare il`FieldIncludeText.SourceFullName`property per impostare il percorso completo del file di origine. Assicurati che il file di origine sia accessibile e contenga il contenuto che desideri includere nel campo di inclusione del testo.
 
 #### D: Posso includere il testo di una macro nel campo di inclusione del testo con Aspose.Words per .NET?
 

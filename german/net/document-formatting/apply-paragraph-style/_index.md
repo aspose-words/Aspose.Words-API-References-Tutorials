@@ -1,7 +1,7 @@
 ---
 title: Absatzstil anwenden
 linktitle: Absatzstil anwenden
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET einen Absatzstil anwenden.
 type: docs
 weight: 10

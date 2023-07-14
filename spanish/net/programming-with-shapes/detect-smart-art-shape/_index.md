@@ -1,7 +1,7 @@
 ---
 title: Detectar forma de arte inteligente
 linktitle: Detectar forma de arte inteligente
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a detectar formas Smart Art en un documento de Word usando Aspose.Words para .NET, identificando representaciones gráficas.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Este tutorial explica cómo detectar formas Smart Art en un documento de Word ut
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
  Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde se encuentra su documento.
@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Smart Art.docx");
 ```
 
 ## Paso 3: Detectar formas artísticas inteligentes
-Iterar a través de los nodos secundarios de tipo`Shape` en el documento utilizando el`GetChildNodes` método. Compruebe si cada forma tiene Smart Art usando el`HasSmart Art` propiedad.
+ Iterar a través de los nodos secundarios de tipo`Shape` en el documento utilizando el`GetChildNodes`método. Compruebe si cada forma tiene Smart Art usando el`HasSmart Art` propiedad.
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmart Art);
@@ -47,7 +47,7 @@ Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ### Código fuente de ejemplo para Detectar forma de arte inteligente usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Smart Art.docx");

@@ -1,7 +1,7 @@
 ---
 title: Получить расстояние между таблицей, окружающей текст
 linktitle: Получить расстояние между таблицей, окружающей текст
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по определению расстояния между текстом и таблицей в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -38,7 +38,7 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 ### Пример исходного кода для получения расстояния между текстом, окружающим таблицу, с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

@@ -1,7 +1,7 @@
 ---
 title: 复制部分
 linktitle: 复制部分
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，了解如何使用 Aspose.Words for .NET 将某个部分从 Word 文档复制到另一个文档。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Accesso digitato
 linktitle: Accesso digitato
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare l'accesso digitato per manipolare le tabelle in Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -87,7 +87,7 @@ R: L'accesso digitato in Node.js si riferisce all'uso di tipi di nodo specifici 
 
 #### D: Come si accede ai nodi utilizzando l'accesso digitato?
 
- R: Per accedere ai nodi utilizzando l'accesso digitato in Node.js, puoi utilizzare metodi specifici a seconda del tipo di nodo a cui vuoi accedere. Ad esempio, puoi utilizzare il`getElementsByTagName` metodo per accedere a tutti i nodi di un tipo specifico, the`getAttribute` metodo per accedere al valore di un attributo, ecc.
+ R: Per accedere ai nodi utilizzando l'accesso digitato in Node.js, puoi utilizzare metodi specifici a seconda del tipo di nodo a cui desideri accedere. Ad esempio, puoi utilizzare il`getElementsByTagName` metodo per accedere a tutti i nodi di un tipo specifico, the`getAttribute` metodo per accedere al valore di un attributo, ecc.
 
 #### D: Quali sono i vantaggi dell'accesso digitato rispetto all'accesso non digitato?
 

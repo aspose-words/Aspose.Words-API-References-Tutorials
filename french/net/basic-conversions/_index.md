@@ -1,7 +1,7 @@
 ---
 title: Conversions de base
 linktitle: Conversions de base
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez les conversions de base avec Aspose.Words pour .NET. Convertissez facilement des documents Word vers d'autres formats tels que PDF, HTML, RTF et plus encore.
 type: docs
 weight: 1600

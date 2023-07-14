@@ -1,7 +1,7 @@
 ---
 title: Smart stilbeteende
 linktitle: Smart stilbeteende
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du upprätthåller smart stilbeteende när du ansluter och lägger till Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Innan du börjar, se till att du har följande:
 
 ## Steg 1: Initiera dokumentkatalogerna
 
- Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
+ Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir`variabel till sökvägen där dina dokument finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Ladda käll- och måldokumenten
 
- Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
+ Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktor enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Steg 4: Ställ in alternativ för smart stilbeteende
 
-För att aktivera smart stilbeteende under tilläggsåtgärden måste du skapa en instans av`ImportFormatOptions` och ställ in`SmartStyleBehavior` egendom till`true`.
+ För att aktivera smart stilbeteende under tilläggsåtgärden måste du skapa en instans av`ImportFormatOptions` och ställ in`SmartStyleBehavior` egendom till`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
@@ -73,7 +73,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 Här är den fullständiga källkoden för funktionen "Smart Style Behavior" i C# med Aspose.Words för .NET:
  
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

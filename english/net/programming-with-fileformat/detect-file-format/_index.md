@@ -1,7 +1,7 @@
 ---
 title: Detect Document File Format
 linktitle: Detect Document File Format
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step by step guide to detect document file format with Aspose.Words for .NET.
 type: docs
 weight: 10

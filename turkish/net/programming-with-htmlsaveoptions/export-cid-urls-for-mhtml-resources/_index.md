@@ -1,7 +1,7 @@
 ---
 title: Mhtml Kaynakları İçin Cid URL'lerini Dışa Aktar
 linktitle: Mhtml Kaynakları İçin Cid URL'lerini Dışa Aktar
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgeyi kaydederken MHTML kaynaklarının CID URL'lerini dışa aktarmak için adım adım kılavuz.
 type: docs
 weight: 10

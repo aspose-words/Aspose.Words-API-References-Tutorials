@@ -1,7 +1,7 @@
 ---
 title: Innehållskontroll för Rich Text Box
 linktitle: Innehållskontroll för Rich Text Box
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skapar en innehållskontroll för rik textruta i ett Word-dokument med Aspose.Words för .NET som möjliggör textformatering och stil.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Den här handledningen visar hur man skapar en innehållskontroll för rik textr
 För att följa denna handledning måste du ha följande:
 
 - Aspose.Words för .NET-biblioteket installerat.
-- Grundläggande kunskaper i C# och att arbeta med Word-dokument.
+- Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ### Exempel på källkod för Rich Text Box Content Control med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

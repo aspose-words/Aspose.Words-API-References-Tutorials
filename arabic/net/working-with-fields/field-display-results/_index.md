@@ -1,7 +1,7 @@
 ---
 title: نتائج العرض الميداني
 linktitle: نتائج العرض الميداني
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لعرض النتائج الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -40,7 +40,7 @@ document. UpdateFields();
 
 ## الخطوة 4: عرض النتائج الميدانية
 
- نحن نستخدم`foreach`حلقة للتكرار خلال جميع الحقول في المستند وعرض نتائجها.
+ نحن نستخدم`foreach` حلقة للتكرار خلال جميع الحقول في المستند وعرض نتائجها.
 
 ```csharp
 foreach(Field field in document.Range.Fields)

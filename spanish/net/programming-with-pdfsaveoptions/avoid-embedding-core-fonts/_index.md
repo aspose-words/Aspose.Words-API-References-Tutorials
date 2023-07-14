@@ -1,7 +1,7 @@
 ---
 title: Reduzca el tamaño del archivo PDF al no incrustar fuentes principales
 linktitle: Reduzca el tamaño del archivo PDF al no incrustar fuentes principales
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a reducir el tamaño del archivo PDF al no incrustar fuentes principales al convertir documentos de Word a PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ R: Para configurar Aspose.Words para .NET para que no incruste las fuentes princ
 
  Cargue el documento de Word que desea convertir a PDF usando el`Document` clase y la ruta del documento especificado.
 
- Crear una instancia de la`PdfSaveOptions` clase y establecer el`UseCoreFonts` propiedad a`true`. Esto evitará la incrustación de fuentes base en el archivo PDF generado.
+ Crear una instancia de la`PdfSaveOptions`clase y establecer el`UseCoreFonts` propiedad a`true`. Esto evitará la incrustación de fuentes base en el archivo PDF generado.
 
  Utilizar el`Save` metodo de la`Document` objeto para guardar el documento en formato PDF especificando las opciones de conversión configuradas anteriormente.
 

@@ -1,7 +1,7 @@
 ---
 title: Bir PDF Belgesindeki Görüntüleri Enterpolasyon
 linktitle: Bir PDF Belgesindeki Görüntüleri Enterpolasyon
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir PDF Belgesinde görüntü interpolasyonunu etkinleştirmek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ C: Aspose.Words for .NET ile PDF'ye dönüştürürken görüntü enterpolasyonu
 
  örneğini oluşturun`Document` Word belgesine giden yolu belirten sınıf.
 
- örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`InterpolateImages` mülkiyet`true` görüntü enterpolasyonunu etkinleştirmek için.
+ örneğini oluşturun`PdfSaveOptions`sınıflandırın ve ayarlayın`InterpolateImages` mülkiyet`true` görüntü enterpolasyonunu etkinleştirmek için.
 
  Kullan`Save` yöntemi`Document`kaydetme seçeneklerini belirterek belgeyi PDF biçiminde kaydetmek için sınıf.
 

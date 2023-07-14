@@ -1,7 +1,7 @@
 ---
 title: Migliora il posizionamento del testo PDF con il posizionamento del testo aggiuntivo
 linktitle: Migliora il posizionamento del testo PDF con il posizionamento del testo aggiuntivo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come migliorare il posizionamento del testo PDF con il posizionamento del testo aggiuntivo durante la conversione di documenti Word in PDF con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ In questo tutorial, ti guideremo attraverso i passaggi per migliorare il posizio
 
 ## Passaggio 1: caricamento del documento
 
-Inizia caricando il documento Word che desideri convertire in PDF:
+Inizia caricando il documento Word che vuoi convertire in PDF:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

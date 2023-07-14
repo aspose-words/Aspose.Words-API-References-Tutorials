@@ -1,7 +1,7 @@
 ---
 title: Başlık
 linktitle: Başlık
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile başlığı nasıl kullanacağınızı adım adım öğrenin.
 type: docs
 weight: 10

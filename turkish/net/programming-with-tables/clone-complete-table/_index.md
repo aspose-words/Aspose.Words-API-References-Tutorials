@@ -1,7 +1,7 @@
 ---
 title: Komple Tabloyu Klonla
 linktitle: Komple Tabloyu Klonla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir tablonun tamamını bir Word belgesine nasıl kopyalayacağınızı öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu eğitimde, Aspose.Words for .NET'in tüm tabloyu bir Word belgesine klonlamak
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi yükleme ve tabloya erişme
-Tabloyla çalışmaya başlamak için onu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekiyor. Bu adımları takip et:
+Tablo ile Sözcük İşleme başlatmak için tabloyu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekir. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Diziye erişim
@@ -60,16 +60,16 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ### Aspose.Words for .NET kullanan Clone Complete Table için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Tabloyu kopyalayın ve orijinalden sonra belgeye ekleyin.
+	//Tabloyu kopyalayın ve orijinalden sonra belgeye ekleyin.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
 	// İki tablo arasına boş bir paragraf ekleyin,
-	//veya kaydettikten sonra bir araya getirilecekler, bunun belge doğrulaması ile ilgisi var.
+	// veya kaydettikten sonra bir araya getirilecekler, bunun belge doğrulaması ile ilgisi var.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```

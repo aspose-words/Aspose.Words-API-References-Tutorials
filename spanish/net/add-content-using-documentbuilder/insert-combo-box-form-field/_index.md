@@ -1,7 +1,7 @@
 ---
 title: Insertar campo de formulario de cuadro combinado
 linktitle: Insertar campo de formulario de cuadro combinado
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar campos de formulario de cuadro combinado en documentos de Word usando Aspose.Words para .NET. Guía paso por paso.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Enlace
 linktitle: Enlace
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar enlaces con Aspose.Words para .NET. Guía paso por paso.
 type: docs
 weight: 10

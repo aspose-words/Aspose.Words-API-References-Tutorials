@@ -1,7 +1,7 @@
 ---
 title: Basit Tablo Oluştur
 linktitle: Basit Tablo Oluştur
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesinde basit tablo oluşturmayı öğrenin.
 type: docs
 weight: 10
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ### Aspose.Words for .NET kullanarak Create Simple Table için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

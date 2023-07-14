@@ -1,7 +1,7 @@
 ---
 title: Yazı Tipi Yedek Ayarlarını Ayarlayın
 linktitle: Yazı Tipi Yedek Ayarlarını Ayarlayın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te yazı tipi değiştirme ayarlarını nasıl yapacağınızı ve Word belgelerinizde yazı tipi değiştirmeyi nasıl özelleştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ### Aspose.Words for .NET kullanarak Font Fallback Ayarlarını Ayarlamak için örnek kaynak kodu 
 ```csharp
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

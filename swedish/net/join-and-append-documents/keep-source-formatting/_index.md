@@ -1,7 +1,7 @@
 ---
 title: Fortsätt källformatering
 linktitle: Fortsätt källformatering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till ett källdokument till ett måldokument samtidigt som du bevarar den ursprungliga formateringen med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Steg 3: Lägg till källdokumentet till måldokumentet
 
- Använd`AppendDocument` metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.KeepSourceFormatting` som importformatläge för att behålla originalformateringen av källdokumentet.
+ Använd`AppendDocument`metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.KeepSourceFormatting` som importformatläge för att behålla originalformateringen av källdokumentet.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -42,7 +42,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Steg 4: Spara det ändrade dokumentet
 
-Spara det ändrade dokumentet med hjälp av`Save` metod för`Document` objekt.
+ Spara det ändrade dokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
@@ -53,7 +53,7 @@ Detta slutför implementeringen av att lägga till ett källdokument till ett m�
 ### Exempel på källkod för Keep Source Formatting med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();

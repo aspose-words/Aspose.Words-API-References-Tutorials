@@ -1,7 +1,7 @@
 ---
 title: Legen Sie die Formatierung der Tabellenzellen fest
 linktitle: Legen Sie die Formatierung der Tabellenzellen fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Festlegen der Formatierung von Tabellenzellen mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableC
 ### Beispielquellcode zum Festlegen der Tabellenzellenformatierung mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

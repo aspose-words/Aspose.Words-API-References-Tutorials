@@ -1,7 +1,7 @@
 ---
 title: Posición de la mesa flotante
 linktitle: Posición de la mesa flotante
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a colocar una tabla en una posición flotante en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ En este tutorial, vamos a aprender a usar Aspose.Words para .NET para colocar un
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Cargar el documento y acceder a la tabla
-Para empezar a trabajar con la tabla, necesitamos cargar el documento que la contiene y acceder a ella. Sigue estos pasos:
+Para iniciar el procesamiento de textos con la tabla, necesitamos cargar el documento que la contiene y acceder a ella. Sigue estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
 // Acceso a la matriz
@@ -54,7 +54,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Ejemplo de código fuente para Posición de tabla flotante usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

@@ -1,7 +1,7 @@
 ---
 title: Перенос слов языков
 linktitle: Перенос слов языков
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как расставлять переносы слов на разных языках в документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

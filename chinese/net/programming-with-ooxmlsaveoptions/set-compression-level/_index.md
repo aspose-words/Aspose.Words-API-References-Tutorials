@@ -1,7 +1,7 @@
 ---
 title: 设置压缩级别
 linktitle: 设置压缩级别
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 保存文档时设置压缩级别。
 type: docs
 weight: 10

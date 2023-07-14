@@ -1,7 +1,7 @@
 ---
 title: استخدم الخط من الجهاز المستهدف
 linktitle: استخدم الخط من الجهاز المستهدف
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تحويل مستند Word إلى HTML ثابت باستخدام خطوط الجهاز الهدف باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

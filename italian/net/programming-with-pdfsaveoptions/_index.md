@@ -1,13 +1,13 @@
 ---
-title: Programmare con Pdfsaveoptions
-linktitle: Programmare con Pdfsaveoptions
-second_title: Riferimento all'API Aspose.Words per .NET
-description: Esplora la programmazione con le opzioni di salvataggio PDF in Aspose.Words per .NET. Scopri come generare documenti Word in PDF con funzionalità avanzate attraverso esercitazioni dettagliate e codice di esempio.
+title: Elaborazione testi con Pdfsaveoptions
+linktitle: Elaborazione testi con Pdfsaveoptions
+second_title: Aspose.Words API di elaborazione dei documenti
+description: Esplora l'elaborazione di testi con le opzioni di salvataggio PDF in Aspose.Words per .NET. Scopri come generare documenti Word in PDF con funzionalità avanzate attraverso esercitazioni dettagliate e codice di esempio.
 type: docs
 weight: 1680
 url: /it/net/programming-with-pdfsaveoptions/
 ---
-Le esercitazioni di Aspose.Words per .NET sulla programmazione con PdfSaveOptions ti guidano attraverso le varie funzionalità e tecniche per lavorare con le opzioni di salvataggio PDF. Questi tutorial ti aiutano a capire come personalizzare la conversione da Word a PDF modificando le impostazioni di layout, i caratteri, le immagini, i metadati e altro ancora.
+Le esercitazioni di Aspose.Words per .NET sull'elaborazione di testi con PdfSaveOptions ti guidano attraverso le varie funzionalità e tecniche per l'elaborazione di testi con le opzioni di salvataggio PDF. Questi tutorial ti aiutano a capire come personalizzare la conversione da Word a PDF modificando le impostazioni di layout, i caratteri, le immagini, i metadati e altro ancora.
 
 Imparerai come regolare le opzioni di qualità dell'immagine, scegliere il livello di compressione per le immagini, impostare le impostazioni di sicurezza PDF come crittografia e autorizzazioni e persino inserire filigrane nei file PDF generati. I tutorial includono anche esempi di codice dettagliati per aiutarti a mettere in pratica queste funzionalità nei tuoi progetti.
 

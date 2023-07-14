@@ -1,7 +1,7 @@
 ---
 title: Умное поведение
 linktitle: Умное поведение
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как поддерживать интеллектуальное поведение при присоединении и добавлении документов Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/smart-style-behavior/
 
 ## Шаг 1: Инициализируйте каталоги документов
 
- Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir` переменная на путь, где находятся ваши документы.
+ Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir`переменная на путь, где находятся ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Шаг 4. Установите параметры поведения смарт-стиля
 
-Чтобы включить интеллектуальное поведение во время операции добавления, вам необходимо создать экземпляр`ImportFormatOptions` и установите`SmartStyleBehavior` собственность на`true`.
+ Чтобы включить интеллектуальное поведение во время операции добавления, вам необходимо создать экземпляр`ImportFormatOptions` и установите`SmartStyleBehavior` собственность на`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
@@ -73,7 +73,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 Вот полный исходный код функции Smart Style Behavior на C# с использованием Aspose.Words для .NET:
  
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

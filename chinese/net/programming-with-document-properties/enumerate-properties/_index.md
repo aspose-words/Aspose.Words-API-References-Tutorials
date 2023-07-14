@@ -1,7 +1,7 @@
 ---
 title: 枚举属性
 linktitle: 枚举属性
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 枚举文档属性的分步指南。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
-title: Vba-Modul klonen
-linktitle: Vba-Modul klonen
-second_title: Aspose.Words für .NET API-Referenz
+title: Klonen Sie ein VBA-Modul aus einem Word-Dokument
+linktitle: Klonen Sie ein VBA-Modul aus einem Word-Dokument
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET ein VBA-Modul aus einem Word-Dokument klonen.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 ### Beispielquellcode für Clone Vba Module mit Aspose.Words für .NET 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");
@@ -68,3 +68,21 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 
 ## Abschluss
 In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET ein VBA-Modul aus einem Word-Dokument mit Makros klont. Durch das Klonen von VBA-Modulen können Sie VBA-Code aus einem Quelldokument problemlos in einem anderen Dokument wiederverwenden. Nutzen Sie diese Funktion gerne zum Organisieren und Verwalten Ihrer Makros in verschiedenen Dokumenten.
+
+### FAQs
+
+#### F: Was ist das Duplizieren eines VBA-Moduls?
+
+A: Beim Duplizieren eines VBA-Moduls wird ein Modul, das VBA-Code enthält, aus einem Word-Quelldokument in ein anderes Dokument kopiert. Dadurch können Sie VBA-Code in verschiedenen Kontexten wiederverwenden oder mit anderen Dokumenten teilen.
+
+#### F: Was sind die Voraussetzungen für das Klonen eines VBA-Moduls aus einem Word-Dokument?
+
+A: Bevor Sie ein VBA-Modul aus einem Word-Dokument klonen können, müssen Sie über praktische Kenntnisse der Programmiersprache C# verfügen. Sie müssen außerdem die Aspose.Words for .NET-Bibliothek in Ihrem Projekt installieren. Außerdem benötigen Sie ein Word-Dokument, das ein VBA-Projekt mit dem Modul enthält, das Sie klonen möchten.
+
+#### F: Wie lege ich das Dokumentverzeichnis im Code fest?
+
+ A: Im bereitgestellten Code müssen Sie ersetzen`"YOUR DOCUMENTS DIRECTORY"` mit dem entsprechenden Pfad zu dem Verzeichnis, in dem sich Ihr Word-Dokument mit dem VBA-Projekt befindet.
+
+#### F: Wie speichere ich ein Zieldokument mit einem geklonten VBA-Modul?
+
+ A: Um das Zieldokument mit dem geklonten VBA-Modul zu speichern, können Sie das verwenden`Save` Methode der`Document` Klasse durch Angabe des gewünschten Zielpfads und Dateinamens.

@@ -1,13 +1,13 @@
 ---
-title: Programación con formato de archivo
-linktitle: Programación con formato de archivo
-second_title: Referencia de API de Aspose.Words para .NET
+title: Procesamiento de textos con formato de archivo
+linktitle: Procesamiento de textos con formato de archivo
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a trabajar con formatos de archivo en Aspose.Words para .NET. Los tutoriales lo guían a través de las diversas funciones, como la detección del formato de archivo y la conversión entre formatos.
 type: docs
 weight: 1610
 url: /es/net/programming-with-fileformat/
 ---
-Los tutoriales de Aspose.Words para .NET sobre programación con el formato de archivo ofrecen un recurso integral para los desarrolladores que deseen manipular y trabajar con diferentes formatos de archivo en sus aplicaciones. Los tutoriales cubren varios aspectos de la programación con formatos de archivo, incluida la lectura, escritura, conversión y manipulación de documentos de Word.
+Los tutoriales de Aspose.Words para .NET sobre el procesamiento de textos con el formato de archivo ofrecen un recurso completo para los desarrolladores que deseen manipular y trabajar con diferentes formatos de archivo en sus aplicaciones. Los tutoriales cubren varios aspectos del procesamiento de textos con formatos de archivo, incluida la lectura, escritura, conversión y manipulación de documentos de Word.
 
 En estos tutoriales, aprenderá a utilizar las potentes funciones de Aspose.Words para .NET para extraer datos de documentos de Word, agregar elementos como texto, imágenes y tablas, y realizar operaciones de diseño. forma y diseño avanzados. También aprenderá a administrar las propiedades del documento, como metadatos, encabezados y pies de página y comentarios.
 

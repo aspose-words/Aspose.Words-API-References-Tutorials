@@ -1,7 +1,7 @@
 ---
 title: Comparison Target
 linktitle: Comparison Target
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn compare target feature of Aspose.Words for .NET that allows you to compare documents and generate a new document containing the changes made.
 type: docs
 weight: 10

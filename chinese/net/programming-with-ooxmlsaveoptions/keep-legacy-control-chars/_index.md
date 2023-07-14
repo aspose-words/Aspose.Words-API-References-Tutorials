@@ -1,7 +1,7 @@
 ---
 title: 保留旧控制字符
 linktitle: 保留旧控制字符
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 保存文档时保留旧控制字符。
 type: docs
 weight: 10
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 在本教程中，我们探讨了使用 Aspose.Words for .NET 保存文档时保留旧控制字符的功能。我们已经了解了如何保留那些对于正确的文档格式或显示可能很重要的特殊字符。
 
-在处理使用较旧或特定功能（例如特殊控制字符）的文档时，保留旧控制字符特别有用。通过启用`KeepLegacyControlChars`保存文档时选择选项，确保保留这些字符。
+当对使用较旧或特定功能（例如特殊控制字符）的文档进行文字处理时，保留旧控制字符特别有用。通过启用`KeepLegacyControlChars`保存文档时选择选项，确保保留这些字符。
 
 Aspose.Words for .NET 提供了一系列灵活且强大的备份选项来满足您的文档操作需求。通过使用适当的选项，您可以自定义备份过程以保留文档的特定特征。
 

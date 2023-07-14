@@ -1,7 +1,7 @@
 ---
 title: Agregar prefijo de nombre de clase Css
 linktitle: Agregar prefijo de nombre de clase Css
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para agregar un prefijo de nombre de clase CSS al convertir un documento a HTML con Aspose.Words para .NET.
 type: docs
 weight: 10

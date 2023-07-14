@@ -1,7 +1,7 @@
 ---
 title: Recevoir une notification d'avertissement
 linktitle: Recevoir une notification d'avertissement
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment recevoir une notification d'avertissement lors de l'utilisation d'Aspose.Words pour .NET et gérer les problèmes ou les avertissements dans vos documents.
 type: docs
 weight: 10
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

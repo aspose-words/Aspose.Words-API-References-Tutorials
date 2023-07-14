@@ -1,7 +1,7 @@
 ---
 title: Costruisci tavolo con stile
 linktitle: Costruisci tavolo con stile
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata alla creazione di una tabella con uno stile personalizzato utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -94,7 +94,7 @@ Congratulazioni! Ora hai creato una tabella con uno stile personalizzato utilizz
 ### Esempio di codice sorgente per Build Table With Style utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

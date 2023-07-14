@@ -1,7 +1,7 @@
 ---
 title: قسم الاستنساخ
 linktitle: قسم الاستنساخ
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استنساخ قسم في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فصل. ثم سنستخدم ملف`Clone` طريقة استنساخ القسم الأول من المستند.
 
 ```csharp
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Document.docx");
 
 // استنساخ القسم
@@ -40,7 +40,7 @@ Section cloneSection = doc.Sections[0].Clone();
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -67,7 +67,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  ج: لتحميل مستند Word في مثيل`Document` class واستنساخ القسم الأول من المستند ، يمكنك استخدام الكود التالي:
 
 ```csharp
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Document.docx");
 
 // استنساخ القسم

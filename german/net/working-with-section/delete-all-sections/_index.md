@@ -1,7 +1,7 @@
 ---
 title: Alle Abschnitte löschen
 linktitle: Alle Abschnitte löschen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET alle Abschnitte aus einem Word-Dokument entfernen.
 type: docs
 weight: 10

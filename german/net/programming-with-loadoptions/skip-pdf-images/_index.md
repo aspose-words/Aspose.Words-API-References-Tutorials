@@ -1,14 +1,14 @@
 ---
 title: PDF-Bilder überspringen
 linktitle: PDF-Bilder überspringen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein PDF-Dokument laden und dabei das Laden von PDF-Bildern überspringen.
 type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/skip-pdf-images/
 ---
 
-Beim Arbeiten mit PDF-Dokumenten in einer C#-Anwendung kann es aus Gründen der Leistung oder der Speicherplatzverwaltung erforderlich sein, das Laden von PDF-Bildern zu überspringen. Mit der Aspose.Words-Bibliothek für .NET können Sie das Laden von PDF-Bildern mithilfe der Ladeoptionen von PdfLoadOptions problemlos überspringen. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Laden eines PDF-Dokuments, indem wir das Laden von PDF-Bildern mithilfe der Ladeoptionen von PdfLoadOptions überspringen.
+Bei der Textverarbeitung mit PDF-Dokumenten in einer C#-Anwendung kann es aus Gründen der Leistung oder der Speicherplatzverwaltung erforderlich sein, das Laden von PDF-Bildern zu überspringen. Mit der Aspose.Words-Bibliothek für .NET können Sie das Laden von PDF-Bildern mithilfe der Ladeoptionen von PdfLoadOptions problemlos überspringen. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Laden eines PDF-Dokuments, indem wir das Laden von PDF-Bildern mithilfe der Ladeoptionen von PdfLoadOptions überspringen.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 

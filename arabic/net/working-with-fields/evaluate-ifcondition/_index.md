@@ -1,7 +1,7 @@
 ---
 title: تقييم حالة IF
 linktitle: تقييم حالة IF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لتقييم حالة IF في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
 ## الخطوة 3: تقييم شرط IF
 
- ال`EvaluateCondition()`الطريقة المستخدمة لتقييم حالة حقل IF.
+ ال`EvaluateCondition()` الطريقة المستخدمة لتقييم حالة حقل IF.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();

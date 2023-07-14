@@ -1,7 +1,7 @@
 ---
 title: Agregar marca de agua de texto con opciones específicas
 linktitle: Agregar marca de agua de texto con opciones específicas
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a agregar una marca de agua de texto con opciones específicas usando Aspose.Words para .NET. Guía paso por paso.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Paso 3: agregue una marca de agua de texto con opciones específicas
 
- Vamos a crear una instancia de la`TextWatermarkOptions` clase y configure las opciones deseadas para la marca de agua de texto.
+ Vamos a crear una instancia de la`TextWatermarkOptions`clase y configure las opciones deseadas para la marca de agua de texto.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

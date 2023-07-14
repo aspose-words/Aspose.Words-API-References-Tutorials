@@ -1,7 +1,7 @@
 ---
 title: Изменить интервал и отступ азиатского абзаца
 linktitle: Изменить интервал и отступ азиатского абзаца
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как изменить расстояние между абзацами и отступы для азиатских стран с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

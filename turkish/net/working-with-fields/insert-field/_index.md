@@ -1,7 +1,7 @@
 ---
 title: Alan Ekle
 linktitle: Alan Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinize nasıl alan ekleyeceğinizi öğrenin. Belgelerinizi dinamik alanlarla kişiselleştirin.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-Bu örnekte, yeni bir belge oluşturduk, bir DocumentBuilder başlattık ve ardından "AlanAdım" alan adına ve birleştirme biçimine sahip bir birleştirme alanı ekledik. Belge daha sonra belirtilen dosya adıyla kaydedilir.
+Bu örnekte, yeni bir belge oluşturduk, DocumentBuilder'ı başlattık ve ardından "MyFieldName" alan adına ve birleştirme biçimine sahip bir birleştirme alanı ekledik. Belge daha sonra belirtilen dosya adıyla kaydedilir.
 
 Aspose.Words for .NET ile "Insert a Field" (Alan Ekle) özelliğinin kullanımına ilişkin kılavuzumuz burada sona eriyor.
 

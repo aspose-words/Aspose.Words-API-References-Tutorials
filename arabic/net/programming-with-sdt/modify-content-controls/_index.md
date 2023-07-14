@@ -1,7 +1,7 @@
 ---
 title: تعديل عناصر التحكم في المحتوى
 linktitle: تعديل عناصر التحكم في المحتوى
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تعديل النص والقوائم المنسدلة والصور ضمن عناصر التحكم في المحتوى في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /ar/net/programming-with-sdt/modify-content-controls/
 لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
 
 - تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- معرفة أساسية بـ C # ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: قم بإعداد دليل المستندات
  ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ### مثال على شفرة المصدر لتعديل عناصر التحكم في المحتوى باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

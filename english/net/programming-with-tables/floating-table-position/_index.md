@@ -1,7 +1,7 @@
 ---
 title: Floating Table Position
 linktitle: Floating Table Position
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to position a table in a floating position in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In this tutorial, we are going to learn how to use Aspose.Words for .NET to posi
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Loading the document and accessing the table
-To start working with the table, we need to load the document that contains it and access it. Follow these steps:
+To start Words Processing with the table, we need to load the document that contains it and access it. Follow these steps:
 
 ```csharp
 // Path to your documents directory

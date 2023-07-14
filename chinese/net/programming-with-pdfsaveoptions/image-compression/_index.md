@@ -1,7 +1,7 @@
 ---
 title: PDF 文档中的图像压缩
 linktitle: PDF 文档中的图像压缩
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 压缩 PDF 文档中的图像的分步指南。
 type: docs
 weight: 10

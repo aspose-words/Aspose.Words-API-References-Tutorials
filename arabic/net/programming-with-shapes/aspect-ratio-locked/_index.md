@@ -1,7 +1,7 @@
 ---
 title: نسبة العرض إلى الارتفاع مقفلة
 linktitle: نسبة العرض إلى الارتفاع مقفلة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية قفل أو إلغاء قفل نسبة العرض إلى الارتفاع لشكل ما في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ url: /ar/net/programming-with-shapes/aspect-ratio-locked/
 لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
 
 - تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- معرفة أساسية بـ C # ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+ ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي للدليل حيث تريد حفظ المستند.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,10 +39,10 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
 ```
 
 ## الخطوة 4: قفل أو فتح نسبة العرض إلى الارتفاع
- تعيين`AspectRatioLocked` خاصية الشكل ل`true` أو`false`لقفل أو إلغاء قفل نسبة العرض إلى الارتفاع ، على التوالي.
+ تعيين`AspectRatioLocked` خاصية الشكل ل`true` أو`false` لقفل أو إلغاء قفل نسبة العرض إلى الارتفاع ، على التوالي.
 
 ```csharp
-shape.AspectRatioLocked = false; // افتح نسبة العرض إلى الارتفاع
+shape.AspectRatioLocked = false; //افتح نسبة العرض إلى الارتفاع
 ```
 
 ## الخطوة 5: احفظ المستند
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ### مثال على شفرة المصدر لـ Aspect Ratio Locked باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

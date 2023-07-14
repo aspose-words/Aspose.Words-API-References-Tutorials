@@ -1,7 +1,7 @@
 ---
 title: Особенности открытого типа
 linktitle: Особенности открытого типа
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как включить и использовать функции Open Type в Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 
 #### Вопрос. Как проверить, поддерживается ли функция OpenType определенным шрифтом?
 
- О: Вы можете проверить, поддерживается ли функция OpenType в определенном шрифте, используя`Font.OpenTypeFeatures` метод в Aspose.Words для .NET.
+О: Вы можете проверить, поддерживается ли функция OpenType в определенном шрифте, используя`Font.OpenTypeFeatures` метод в Aspose.Words для .NET.
 
 #### В: Какие еще функции форматирования текста поддерживает Aspose.Words for .NET?
 

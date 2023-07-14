@@ -1,7 +1,7 @@
 ---
 title: Infoga fält Inget
 linktitle: Infoga fält Inget
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger in en mästare AUCUN i dokumenten Word avec Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -51,13 +51,13 @@ FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, fals
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-I det här exemplet har vi skapat ett nytt dokument, initierat en DocumentBuilder och sedan infogat ett INGEN-fält. Dokumentet sparas sedan med ett angivet filnamn.
+det här exemplet har vi skapat ett nytt dokument, initierat en DocumentBuilder och sedan infogat ett INGEN-fält. Dokumentet sparas sedan med ett angivet filnamn.
 
 Detta avslutar vår guide om hur du använder funktionen "Infoga inget fält" med Aspose.Words för .NET.
 
 ### FAQ's
 
-#### F: Vad omfattar handledningen "Arbeta med fält: Infoga fält inget"?
+#### F: Vad omfattar handledningen "Ordbehandling med fält: Infoga fält inget"?
 
 S: Denna handledning täcker fältmanipulation i Aspose Words för .NET, med särskilt fokus på att infoga fältet "Ingen". Fält är dynamiska element i ett Word-dokument som kan användas för att visa eller beräkna data. Handledningen förklarar hur du infogar fältet "Ingen" och använder det på rätt sätt.
 

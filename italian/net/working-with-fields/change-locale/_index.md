@@ -1,7 +1,7 @@
 ---
 title: Cambia locale
 linktitle: Cambia locale
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come modificare le impostazioni locali per la formattazione di data e numero nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Kesilen Köşeleri Ekle
 linktitle: Kesilen Köşeleri Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesine köşeleri kırpılmış bir şekli nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ url: /tr/net/programming-with-shapes/add-corners-snipped/
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
 - Aspose.Words for .NET kitaplığı yüklendi.
-- Temel C# bilgisi ve Word belgeleriyle çalışma.
+- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini kurun
- Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 ### Aspose.Words for .NET kullanılarak Alıntı Alınmış Köşe Ekleme için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

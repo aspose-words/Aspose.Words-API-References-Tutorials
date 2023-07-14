@@ -1,7 +1,7 @@
 ---
 title: Kontrollera DrawingML Text Effect
 linktitle: Kontrollera DrawingML Text Effect
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här handledningen lär du dig hur du kontrollerar DrawingML-texteffekter i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Därefter laddar vi Word-dokumentet och kommer åt samlingen av körningar (teckensekvenser) i det första stycket i dokumentets brödtext. Därefter kontrollerar vi om några specifika DrawingML-texteffekter tillämpas på teckensnittet för den första körningen.
 
 ```csharp
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "DrawingML text effects.docx");
 RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
 Font runFont = runs[0].Font;
@@ -45,7 +45,7 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "DrawingML text effects.docx");

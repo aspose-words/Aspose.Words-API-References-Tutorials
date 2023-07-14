@@ -1,7 +1,7 @@
 ---
-title: البرمجة باستخدام Sdt
-linktitle: البرمجة باستخدام Sdt
-second_title: Aspose.Words لمراجع .NET API
+title: معالجة الكلمات باستخدام Sdt
+linktitle: معالجة الكلمات باستخدام Sdt
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية البرمجة باستخدام عناصر التحكم في المحتوى المهيكل (SDT) في Aspose.Words for .NET. اتبع البرامج التعليمية خطوة بخطوة وعينة التعليمات البرمجية في C # لمعالجة عناصر تحكم المحتوى المهيكلة وتخصيصها في مستندات Word الخاصة بك.
 type: docs
 weight: 1400

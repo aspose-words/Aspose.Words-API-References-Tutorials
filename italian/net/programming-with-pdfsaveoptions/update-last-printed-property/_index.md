@@ -1,7 +1,7 @@
 ---
 title: Aggiorna l'ultima proprietà stampata nel documento PDF
 linktitle: Aggiorna l'ultima proprietà stampata nel documento PDF
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo-passo per aggiornare la proprietà "Last Printed" durante la conversione in PDF con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ R: Per aggiornare la proprietà "Ultima stampa" in un documento PDF con Aspose.W
 
  Crea un'istanza di`Document` class che specifica il percorso del documento Word.
 
- Crea un'istanza di`PdfSaveOptions` classe e impostare il`UpdateLastPrintedProperty` proprietà a`true` per abilitare l'aggiornamento della proprietà "Ultimo stampato".
+ Crea un'istanza di`PdfSaveOptions`classe e impostare il`UpdateLastPrintedProperty` proprietà a`true` per abilitare l'aggiornamento della proprietà "Ultimo stampato".
 
  Usa il`Save` metodo del`Document`class per salvare il documento in formato PDF specificando le opzioni di salvataggio.
 

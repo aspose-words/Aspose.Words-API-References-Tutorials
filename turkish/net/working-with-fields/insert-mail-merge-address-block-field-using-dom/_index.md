@@ -1,7 +1,7 @@
 ---
 title: DOM Kullanarak Adres Mektup Birleştirme Adres Bloğu Alanı Ekleme
 linktitle: DOM Kullanarak Adres Mektup Birleştirme Adres Bloğu Alanı Ekleme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinize adres mektup birleştirme adres bloğu alanını nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -100,7 +100,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
  C: Aspose.Words for .NET ile bir Word belgesindeki posta adresinin biçimini aşağıdaki özellikleri kullanarak özelleştirebilirsiniz:`FieldAddressBlock`nesne. İstenilen formatı elde etmek için adres stili, ayırıcılar, isteğe bağlı öğeler vb. gibi formatlama seçeneklerini ayarlayabilirsiniz.
 
-#### S: Aspose.Words for .NET'te posta adresi alanı için kaynak verileri nasıl belirleyebilirim?
+#### S: Aspose.Words for .NET'te posta adresi alanı için kaynak verileri nasıl belirtebilirim?
 
  C: Aspose.Words for .NET'te posta adresi alanı için kaynak verileri belirtmek üzere`FieldAddressBlock.StartAddress` Ve`FieldAddressBlock.EndAddress` özellikler. Bu özellikler, CSV dosyası, veritabanı vb. gibi harici veri kaynağındaki adres aralıklarını tanımlamak için kullanılır.
 

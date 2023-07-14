@@ -1,7 +1,7 @@
 ---
 title: Definisci la formattazione condizionale
 linktitle: Definisci la formattazione condizionale
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per definire la formattazione condizionale in una tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -70,7 +70,7 @@ Congratulazioni! Ora hai definito la formattazione condizionale per la tua tabel
 ### Codice sorgente di esempio per definire la formattazione condizionale utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Сравнить документы
 linktitle: Сравнить документы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как сравнивать документы Word и выявлять различия с помощью Aspose.Words для .NET. Руководства и практические примеры включены.
 type: docs
 weight: 1480

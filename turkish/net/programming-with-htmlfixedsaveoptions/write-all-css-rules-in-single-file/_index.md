@@ -1,7 +1,7 @@
 ---
 title: Tüm Css Kurallarını Tek Dosyaya Yazın
 linktitle: Tüm Css Kurallarını Tek Dosyaya Yazın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile tüm CSS kurallarını tek bir dosyaya yazarak bir Word belgesini sabit HTML'ye nasıl dönüştüreceğinizi öğrenin.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Copy Section
 linktitle: Copy Section
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to copy a section from a Word document to another document using Aspose.Words for .NET.
 type: docs
 weight: 10

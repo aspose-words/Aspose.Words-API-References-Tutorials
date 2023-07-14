@@ -1,7 +1,7 @@
 ---
 title: ضم الصفوف
 linktitle: ضم الصفوف
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية دمج صفوف الجدول في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ar/net/programming-with-tables/combine-rows/
 2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
 
 ## الخطوة الثانية: تحميل المستند والوصول إلى الجداول
-لبدء العمل مع الجداول ، نحتاج إلى تحميل المستند الذي يحتوي عليها والوصول إليها. اتبع هذه الخطوات:
+لبدء معالجة الكلمات باستخدام الجداول ، نحتاج إلى تحميل المستند الذي يحتوي عليها والوصول إليها. اتبع هذه الخطوات:
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Tables.docx");
 
 // الوصول إلى الجداول
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ### عينة من التعليمات البرمجية المصدر لـ Combine Rows باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

@@ -1,14 +1,14 @@
 ---
 title: Ignorer les images PDF
 linktitle: Ignorer les images PDF
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à charger un document PDF sans charger les images PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/skip-pdf-images/
 ---
 
-Lorsque vous travaillez avec des documents PDF dans une application C#, il peut être nécessaire d'ignorer le chargement des images PDF pour des raisons de performances ou de gestion de l'espace de stockage. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement ignorer le chargement des images PDF à l'aide des options de chargement PdfLoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document PDF en sautant le chargement des images PDF à l'aide des options de chargement PdfLoadOptions.
+Lors du traitement de texte avec des documents PDF dans une application C#, il peut être nécessaire de ne pas charger les images PDF pour des raisons de performances ou de gestion de l'espace de stockage. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement ignorer le chargement des images PDF à l'aide des options de chargement PdfLoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document PDF en sautant le chargement des images PDF à l'aide des options de chargement PdfLoadOptions.
 
 ## Comprendre la bibliothèque Aspose.Words
 

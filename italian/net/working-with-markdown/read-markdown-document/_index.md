@@ -1,7 +1,7 @@
 ---
 title: Leggi il documento Markdown
 linktitle: Leggi il documento Markdown
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come leggere il documento markdown con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10

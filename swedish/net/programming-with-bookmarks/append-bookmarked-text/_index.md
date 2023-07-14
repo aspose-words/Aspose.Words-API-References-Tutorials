@@ -1,14 +1,14 @@
 ---
-title: Lägg till bokmärkt text
-linktitle: Lägg till bokmärkt text
-second_title: Aspose.Words för .NET API Referens
+title: Lägg till bokmärkt text i Word-dokument
+linktitle: Lägg till bokmärkt text i Word-dokument
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till text från ett bokmärke i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 
-den här artikeln kommer vi att utforska ovanstående C#-källkod för att förstå hur man använder funktionen Lägg till bokmärkt text i Aspose.Words för .NET-biblioteket. Med den här funktionen kan du lägga till texten i ett specifikt bokmärke i ett Word-dokument till ett annat dokument.
+I den här artikeln kommer vi att utforska ovanstående C#-källkod för att förstå hur man använder funktionen Lägg till bokmärkt text i Aspose.Words för .NET-biblioteket. Med den här funktionen kan du lägga till texten i ett specifikt bokmärke i ett Word-dokument till ett annat dokument.
 
 ## Förutsättningar
 
@@ -99,4 +99,23 @@ Här är den fullständiga källkoden som visar hur man lägger till text från 
 
 ## Slutsats
 
-den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Lägg till bokmärkt text i Aspose.Words för .NET. Vi har följt en steg-för-steg-guide för att hämta stycken från ett bokmärke, verifiera föräldrar och kopiera stycken till ett annat dokument.
+I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Lägg till bokmärkt text i Aspose.Words för .NET. Vi har följt en steg-för-steg-guide för att hämta stycken från ett bokmärke, verifiera föräldrar och kopiera stycken till ett annat dokument.
+
+### Vanliga frågor för att lägga till bokmärkt text i Word-dokument
+
+#### F1: Vilka är förutsättningarna för att använda funktionen "Lägg till text med bokmärken" i Aspose.Words för .NET?
+
+S: För att använda funktionen "Lägg till text med bokmärken" i Aspose.Words för .NET behöver du ha grundläggande kunskaper i C#-språket. Du behöver också en .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
+
+#### F2: Hur får man de stycken som innehåller början och slutet av ett bokmärke i ett Word-dokument?
+
+ S: För att få de stycken som innehåller början och slutet av ett bokmärke i ett Word-dokument kan du komma åt`BookmarkStart` och`BookmarkEnd` egenskaper för bokmärket. Här är en exempelkod:
+
+```csharp
+Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+```
+
+#### F3: Vad händer om start- och slutstyckena inte har giltiga föräldrar?
+
+S: Om start- och slutstyckena inte har giltiga föräldrar, dvs de är inte riktigt stycken, kommer ett undantag att kastas. Denna situation kan inte hanteras i nuläget.

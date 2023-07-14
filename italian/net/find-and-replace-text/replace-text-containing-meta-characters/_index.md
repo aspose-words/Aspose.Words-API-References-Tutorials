@@ -1,14 +1,13 @@
 ---
-title: Sostituisci testo contenente metacaratteri
-linktitle: Sostituisci testo contenente metacaratteri
-second_title: Riferimento all'API Aspose.Words per .NET
+title: Parola Sostituisci testo contenente metacaratteri
+linktitle: Parola Sostituisci testo contenente metacaratteri
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come sostituire il testo contenente metacaratteri nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
-
-In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Sostituisci testo contenente metacaratteri nella libreria Aspose.Words per .NET. Questa funzione consente di sostituire porzioni di testo in un documento contenente metacaratteri specifici.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Word Replace Text Containing Meta Characters nella libreria Aspose.Words per .NET. Questa funzione consente di sostituire porzioni di testo in un documento contenente metacaratteri specifici.
 
 ## Prerequisiti
 
@@ -26,7 +25,7 @@ Document doc = new Document();
 
 ## Passaggio 2: inserire il testo nel documento
 
- Una volta che abbiamo un documento, possiamo inserire il testo usando a`DocumentBuilder` oggetto. Nel nostro esempio, usiamo il`Writeln`metodo per inserire più paragrafi di testo in diverse sezioni:
+ Una volta che abbiamo un documento, possiamo inserire il testo usando a`DocumentBuilder` oggetto. Nel nostro esempio, usiamo il`Writeln` metodo per inserire più paragrafi di testo in diverse sezioni:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -45,14 +44,12 @@ builder.Writeln("1st paragraph");
 
 ```csharp
 FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
-findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment
-
-.Center;
+findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
 ## Passaggio 4: sostituzione del testo contenente metacaratteri
 
- Noi usiamo il`Range.Replace` metodo per eseguire la sostituzione di testo contenente metacaratteri. Nel nostro esempio, sostituiamo ogni occorrenza della parola "sezione" seguita da un'interruzione di paragrafo con la stessa parola seguita da diversi trattini e una nuova interruzione di paragrafo:
+ Noi usiamo il`Range.Replace`metodo per eseguire la sostituzione di testo contenente metacaratteri. Nel nostro esempio, sostituiamo ogni occorrenza della parola "sezione" seguita da un'interruzione di paragrafo con la stessa parola seguita da diversi trattini e una nuova interruzione di paragrafo:
 
 ```csharp
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
@@ -110,3 +107,65 @@ Ecco il codice sorgente di esempio completo per dimostrare l'uso della sostituzi
 
 In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzionalità Sostituisci testo contenente metacaratteri di Aspose.Words per .NET. Abbiamo seguito una guida passo passo per creare un documento, inserire testo, sostituire testo contenente metacaratteri e salvare il documento modificato.
 
+### FAQ
+
+#### D: Cos'è la funzione Sostituisci testo contenente metacaratteri in Aspose.Words per .NET?
+
+R: La funzione Sostituisci testo contenente metacaratteri in Aspose.Words per .NET consente di sostituire porzioni di testo in un documento contenente metacaratteri specifici. Puoi utilizzare questa funzione per eseguire sostituzioni avanzate nel tuo documento tenendo conto dei metacaratteri.
+
+#### D: Come creare un nuovo documento in Aspose.Words per .NET?
+
+ R: Prima di utilizzare la funzione Sostituisci testo contenente meta caratteri, è necessario creare un nuovo documento utilizzando Aspose.Words per .NET. Questo può essere fatto istanziando a`Document` oggetto. Ecco un esempio di codice per creare un nuovo documento:
+
+```csharp
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document();
+```
+
+#### D: Come inserire testo in un documento utilizzando Aspose.Words per .NET?
+
+ R: Una volta che hai un documento, puoi inserire il testo usando a`DocumentBuilder` oggetto. Nel nostro esempio, usiamo il`Writeln` metodo per inserire più paragrafi di testo in diverse sezioni:
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Font.Name = "Arial";
+builder.Writeln("First section");
+builder.Writeln("1st paragraph");
+builder.Writeln("2nd paragraph");
+builder.Writen("{insert-section}");
+builder.Writeln("Second section");
+builder.Writeln("1st paragraph");
+```
+
+#### D: Come configurare le opzioni di ricerca e sostituzione in Aspose.Words per .NET?
+
+ A: Ora configureremo le opzioni di ricerca e sostituzione utilizzando a`FindReplaceOptions` oggetto. Nel nostro esempio, impostiamo l'allineamento dei paragrafi sostituiti su "Centrato":
+
+```csharp
+FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
+findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
+```
+
+#### D: Come sostituire il testo contenente metacaratteri in un documento utilizzando Aspose.Words per .NET?
+
+ R: Usiamo il`Range.Replace` metodo per eseguire la sostituzione di testo contenente meta-caratteri. Nel nostro esempio, sostituiamo ogni occorrenza della parola "sezione" seguita da un'interruzione di paragrafo con la stessa parola seguita da diversi trattini e una nuova interruzione di paragrafo:
+
+```csharp
+int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
+```
+
+#### D: Come sostituire un tag di testo personalizzato contenente metacaratteri in un documento utilizzando Aspose.Words per .NET?
+
+ A: Usiamo anche il`Range.Replace` metodo per sostituire un'impostazione personalizzata "{insert-section}" tag di testo con un'interruzione di sezione. Nel nostro esempio, sostituiamo "{insert-section}" con "&b" per inserire un'interruzione di sezione:
+
+```csharp
+count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
+```
+
+#### D: Come salvare il documento modificato in Aspose.Words per .NET?
+
+ R: Dopo aver apportato modifiche al documento, puoi salvarlo in una directory specificata utilizzando il file`Save` metodo:
+
+```csharp
+doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
+```

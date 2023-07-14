@@ -1,7 +1,7 @@
 ---
 title: تصدير الموارد
 linktitle: تصدير الموارد
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لتصدير موارد المستندات عند الحفظ بتنسيق HTML باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

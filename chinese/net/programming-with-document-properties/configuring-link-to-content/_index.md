@@ -1,7 +1,7 @@
 ---
 title: 配置内容链接
 linktitle: 配置内容链接
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 设置文档内容链接的分步指南。
 type: docs
 weight: 10
@@ -53,7 +53,7 @@ string linkSource = customProperty.LinkSource;
 string customPropertyValue = customProperty.Value.ToString();
 ```
 
-此代码添加一个名为“Bookmark”的与内容相关的属性，其中书签为“MyBookmark”。然后，它检索与内容相关的属性信息，例如链接状态、链接源和属性值。
+此代码添加了一个名为“Bookmark”的与内容相关的属性，其中书签为“MyBookmark”。然后，它检索与内容相关的属性信息，例如链接状态、链接源和属性值。
 
 ### 使用 Aspose.Words for .NET 配置内容链接的示例源代码
 

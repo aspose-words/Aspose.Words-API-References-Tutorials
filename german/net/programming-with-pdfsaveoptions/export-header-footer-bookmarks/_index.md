@@ -1,7 +1,7 @@
 ---
 title: Exportieren Sie die Kopf- und Fußzeilen-Lesezeichen eines Word-Dokuments in ein PDF-Dokument
 linktitle: Exportieren Sie die Kopf- und Fußzeilen-Lesezeichen eines Word-Dokuments in ein PDF-Dokument
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Exportieren von Kopf- und Fußzeilen-Lesezeichen von Word-Dokumenten in PDF-Dokument-Lesezeichen mit Aspose.Words für .NET.
 type: docs
 weight: 10

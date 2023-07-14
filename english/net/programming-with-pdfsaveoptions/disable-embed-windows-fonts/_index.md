@@ -1,7 +1,7 @@
 ---
 title: Reduce PDF Size by Disabling Embeded Fonts
 linktitle: Reduce PDF Size by Disabling Embeded Fonts
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to reduce PDF size with disable Windows font embedding when converting documents to PDF with Aspose.Words for .NET.
 type: docs
 weight: 10

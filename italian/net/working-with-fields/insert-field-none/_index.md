@@ -1,7 +1,7 @@
 ---
 title: Inserisci campo Nessuno
 linktitle: Inserisci campo Nessuno
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire un campione AUCUN nei tuoi documenti Word con Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -57,7 +57,7 @@ Questo conclude la nostra guida sull'utilizzo della funzione "Inserisci campo NO
 
 ### FAQ
 
-#### D: Cosa tratta l'esercitazione "Lavorare con i campi: Inserisci campo nessuno"?
+#### D: Cosa tratta l'esercitazione "Elaborazione di testi con campi: Inserisci campo nessuno"?
 
 R: Questo tutorial copre la manipolazione dei campi in Aspose Words per .NET, con particolare attenzione all'inserimento del campo "Nessuno". I campi sono elementi dinamici in un documento Word che possono essere utilizzati per visualizzare o calcolare dati. Il tutorial spiega come inserire il campo "Nessuno" e utilizzarlo in modo appropriato.
 

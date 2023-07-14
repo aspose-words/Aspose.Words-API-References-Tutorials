@@ -1,7 +1,7 @@
 ---
 title: Enregistrer le Pdf au format Jpeg
 linktitle: Enregistrer le Pdf au format Jpeg
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à convertir des documents PDF en images JPEG à l'aide d'Aspose.Words pour .NET. Tutoriel étape par étape avec un exemple de code source.
 type: docs
 weight: 10

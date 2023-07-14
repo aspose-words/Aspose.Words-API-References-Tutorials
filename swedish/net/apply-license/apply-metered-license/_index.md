@@ -1,7 +1,7 @@
 ---
 title: Tillämpa mätlicens
 linktitle: Tillämpa mätlicens
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ansöker en uppmätt licens med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Innan vi börjar, se till att du har följande förutsättningar:
 - Giltiga referenser för mätlicenser. 
 
 ## Steg 1: Importera de nödvändiga namnområdena
-För att börja, importera de nödvändiga namnrymden i din C#-kod. Dessa namnrymder innehåller de klasser och metoder som behövs för att arbeta med Aspose.Words.
+För att börja, importera de nödvändiga namnrymden i din C#-kod. Dessa namnrymder innehåller de klasser och metoder som behövs för ordbehandling med Aspose.Words.
 
 ```csharp
 using Aspose.Words;

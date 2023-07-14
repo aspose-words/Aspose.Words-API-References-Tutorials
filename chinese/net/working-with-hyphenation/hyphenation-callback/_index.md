@@ -1,7 +1,7 @@
 ---
 title: 连字符回调
 linktitle: 连字符回调
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在 Aspose.Words for .NET 中使用连字符回调来处理单词连字符。
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ finally
 }
 ```
 
-这将在完成处理后清理并禁用连字提醒。
+这将在完成处理后清除并禁用连字提醒。
 
 所以 ！您已成功在 Aspose.Words for .NET 中使用连字符回调。
 

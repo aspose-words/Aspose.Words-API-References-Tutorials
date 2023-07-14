@@ -1,7 +1,7 @@
 ---
 title: Interpolar imágenes en un documento PDF
 linktitle: Interpolar imágenes en un documento PDF
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para habilitar la interpolación de imágenes en un documento PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ R: Para habilitar la interpolación de imágenes al convertir a PDF con Aspose.W
 
  Crear una instancia de la`Document` class especificando la ruta al documento de Word.
 
- Crear una instancia de la`PdfSaveOptions` clase y establecer el`InterpolateImages` propiedad a`true` para permitir la interpolación de imágenes.
+ Crear una instancia de la`PdfSaveOptions`clase y establecer el`InterpolateImages` propiedad a`true` para permitir la interpolación de imágenes.
 
  Utilizar el`Save` metodo de la`Document`class para guardar el documento en formato PDF especificando las opciones de guardado.
 

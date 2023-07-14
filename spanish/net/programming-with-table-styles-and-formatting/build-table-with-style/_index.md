@@ -1,7 +1,7 @@
 ---
 title: Construye una mesa con estilo
 linktitle: Construye una mesa con estilo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para construir una tabla con un estilo personalizado usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 ### Ejemplo de código fuente para Build Table With Style usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

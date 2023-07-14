@@ -1,7 +1,7 @@
 ---
 title: Dosyadan Lisansı Uygula
 linktitle: Dosyadan Lisansı Uygula
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir dosyadan nasıl lisans uygulayacağınızı öğrenin.
 type: docs
 weight: 10
@@ -17,7 +17,7 @@ Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 - Aspose.Words için geçerli bir lisans dosyası. 
 
 ## Adım 1: Aspose.Words Ad Alanını İçeri Aktarın
-Başlamak için Aspose.Words ad alanını C# kodunuza aktarmanız gerekir. Bu ad alanı, Word belgeleriyle çalışmak için gereken tüm sınıfları ve yöntemleri sağlar.
+Başlamak için Aspose.Words ad alanını C# kodunuza aktarmanız gerekir. Bu ad alanı, Word belgeleriyle Sözcük İşleme için gereken tüm sınıfları ve yöntemleri sağlar.
 
 ```csharp
 using Aspose.Words;

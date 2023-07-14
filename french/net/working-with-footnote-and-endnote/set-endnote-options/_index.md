@@ -1,7 +1,7 @@
 ---
 title: Définir les options de note de fin
 linktitle: Définir les options de note de fin
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment définir les options de note de fin dans les documents Word à l'aide d'Aspose.Words pour .NET. Tutoriel étape par étape avec un exemple de code source.
 type: docs
 weight: 10
@@ -89,12 +89,12 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Comment positionner les notes de fin dans un document ?
 
- R : Pour positionner les notes de fin dans un document, vous pouvez utiliser le`Position` propriété de la`EndnoteOptions` classe. Vous pouvez spécifier si les notes de fin doivent être placées au bas de chaque page, à la fin de chaque section ou à la fin du document.
+ R : Pour positionner les notes de fin dans un document, vous pouvez utiliser le`Position`propriété de la`EndnoteOptions` classe. Vous pouvez spécifier si les notes de fin doivent être placées au bas de chaque page, à la fin de chaque section ou à la fin du document.
 
 #### Q : Puis-je personnaliser le format de numérotation des notes de fin ?
 
- R : Oui, vous pouvez personnaliser le format de numérotation des notes de fin dans Aspose.Words. Utilisez le`NumberFormat` propriété de la`EndnoteOptions` class pour définir le format souhaité, tel que les chiffres arabes, les chiffres romains, les lettres, etc.
+ R : Oui, vous pouvez personnaliser le format de numérotation des notes de fin dans Aspose.Words. Utilisez le`NumberFormat`propriété de la`EndnoteOptions` class pour définir le format souhaité, tel que les chiffres arabes, les chiffres romains, les lettres, etc.
 
 #### Q : Est-il possible de continuer la numérotation des notes de fin entre les sections d'un document ?
 
- R : Oui, il est possible de continuer la numérotation des notes de fin entre les sections d'un document. Utilisez le`RestartRule` propriété de la`EndnoteOptions` classe et réglez-le sur`RestartContinuous` pour permettre à la numérotation de continuer entre les sections.
+ R : Oui, il est possible de continuer la numérotation des notes de fin entre les sections d'un document. Utilisez le`RestartRule`propriété de la`EndnoteOptions` classe et réglez-le sur`RestartContinuous` pour permettre à la numérotation de continuer entre les sections.

@@ -1,7 +1,7 @@
 ---
 title: Ställ in sidinställningar och avsnittsformatering
 linktitle: Ställ in sidinställningar och avsnittsformatering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ställa in ett dokuments layout och sektionsformatering med Aspose.Words för .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: وثيقة الاستنساخ
 linktitle: وثيقة الاستنساخ
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استنساخ مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

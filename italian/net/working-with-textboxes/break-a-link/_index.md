@@ -1,14 +1,14 @@
 ---
 title: Rompere il collegamento in avanti nel documento di Word
 linktitle: Rompere il collegamento in avanti nel documento di Word
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come interrompere i collegamenti in avanti in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words per .NET è una potente libreria che offre varie funzionalità per lavorare con i documenti di Microsoft Word a livello di programmazione. Una delle sue funzioni utili è la capacità di interrompere i collegamenti in avanti in un documento di Word. In questo tutorial, esploreremo il codice sorgente in C# che dimostra come interrompere il collegamento in avanti nel documento di Word utilizzando Aspose.Words per .NET.
+Aspose.Words per .NET è una potente libreria che offre varie funzionalità per l'elaborazione di testi con documenti Microsoft Word a livello di programmazione. Una delle sue funzioni utili è la capacità di interrompere i collegamenti in avanti in un documento di Word. In questo tutorial, esploreremo il codice sorgente in C# che dimostra come interrompere il collegamento in avanti nel documento di Word utilizzando Aspose.Words per .NET.
 
 ## Passaggio 1: anteprima del codice sorgente C#
 
@@ -16,7 +16,7 @@ Il codice sorgente C# fornito si concentra sulla funzionalità "Break A Link" di
 
 ## Passaggio 2: impostazione del documento e creazione di una forma TextBox
 
-Per iniziare, dobbiamo impostare il documento e creare una forma TextBox. Il codice seguente inizializza una nuova istanza di`Document` class e crea una forma di casella di testo:
+ Per iniziare, dobbiamo impostare il documento e creare una forma TextBox. Il codice seguente inizializza una nuova istanza di`Document` class e crea una forma di casella di testo:
 
 ```csharp
 Document doc = new Document();
@@ -58,7 +58,7 @@ TextBox textBox = shape.TextBox;
 // Interrompere il collegamento in avanti.
 textBox.BreakForwardLink();
 
-//Interrompi un collegamento in avanti impostando un valore nullo.
+// Interrompi un collegamento in avanti impostando un valore nullo.
 textBox. Next = null;
 
 // Interrompere un collegamento che porta a questa casella di testo.
@@ -81,7 +81,7 @@ R: Per interrompere i collegamenti di reindirizzamento in un documento Word util
 
 #### D: Come interrompere un collegamento di reindirizzamento impostando un valore nullo?
 
- R: In alternativa, puoi interrompere un collegamento di reindirizzamento impostando l'estensione`Next`proprietà del TextBox a`null`. Questo rimuove efficacemente la connessione alla forma successiva.
+R: In alternativa, puoi interrompere un collegamento di reindirizzamento impostando l'estensione`Next` proprietà del TextBox a`null`. Questo rimuove efficacemente la connessione alla forma successiva.
 
 #### D: Come interrompere un collegamento che porta al TextBox?
 

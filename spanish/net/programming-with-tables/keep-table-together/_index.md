@@ -1,27 +1,27 @@
 ---
 title: Mantener la mesa unida
 linktitle: Mantener la mesa unida
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a mantener unida una tabla en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/keep-table-together/
 ---
 
-En este tutorial, vamos a aprender cómo mantener unida una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá mantener una tabla intacta sin que se divida en varias páginas en sus documentos de Word.
+En este tutorial, vamos a aprender cómo mantener unida una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá mantener una tabla intacta sin que se divida en varias páginas en sus documentos de Word.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Cargar el documento y recuperar la tabla
-Para comenzar a trabajar con la tabla, debemos cargar el documento y buscar la tabla que queremos mantener unida. Sigue estos pasos:
+Para iniciar el procesamiento de textos con la tabla, debemos cargar el documento y buscar la tabla que queremos mantener unida. Sigue estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 
 // recuperar la mesa
@@ -57,7 +57,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Ejemplo de código fuente para Keep Table Together usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");

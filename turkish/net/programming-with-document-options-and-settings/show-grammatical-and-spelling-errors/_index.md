@@ -1,7 +1,7 @@
 ---
 title: Dilbilgisi ve Yazım Hatalarını Göster
 linktitle: Dilbilgisi ve Yazım Hatalarını Göster
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgedeki dilbilgisi ve imla hatalarının görüntülenmesini sağlamak için adım adım kılavuz.
 type: docs
 weight: 10

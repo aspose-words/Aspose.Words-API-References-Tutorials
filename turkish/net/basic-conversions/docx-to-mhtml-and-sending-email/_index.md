@@ -1,7 +1,7 @@
 ---
 title: Docx'i Mhtml'ye Dönüştürme ve E-posta Gönderme
 linktitle: Docx'i Mhtml'ye Dönüştürme ve E-posta Gönderme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Word belgelerini Docx'ten MHTML'ye nasıl dönüştüreceğinizi ve bunları Aspose.Words ve Aspose.Email kullanarak e-posta olarak göndermeyi öğrenin. Adım adım öğretici.
 type: docs
 weight: 10
@@ -93,7 +93,7 @@ Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimleriniz
 
 ### SSS
 
-#### DOCX dosyası MHTML'ye nasıl dönüştürülür?
+#### Bir DOCX dosyasını MHTML'ye nasıl dönüştürebilirim?
 
 Bir DOCX dosyasını MHTML'ye dönüştürmek için bu işlevi sağlayan yazılım araçlarını veya kitaplıkları kullanabilirsiniz. Aspose.Words for .NET, bu dönüştürme için güvenilir bir seçenektir. DOCX dosyasını yüklemek ve MHTML biçiminde kaydetmek için kitaplık API'sini kullanabilirsiniz.
 

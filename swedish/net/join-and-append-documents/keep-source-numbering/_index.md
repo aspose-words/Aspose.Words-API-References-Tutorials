@@ -1,7 +1,7 @@
 ---
 title: Behåll källnumrering
 linktitle: Behåll källnumrering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till ett dokument samtidigt som du behåller källnumreringsformateringen i Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -29,9 +29,9 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Steg 3: Behåll källnumreringen vid import
+## Steg 3: Behåll källnumreringen när du importerar
 
- För att bevara numreringsformateringen av numrerade stycken från källdokumentet, skapa en instans av`ImportFormatOptions` och ställ in`KeepSourceNumbering` till`true` Använda en`NodeImporter` att importera noder från källdokumentet till måldokumentet, ange`ImportFormatMode.KeepSourceFormatting` och den`importFormatOptions`.
+ För att bevara numreringsformateringen av numrerade stycken från källdokumentet, skapa en instans av`ImportFormatOptions` och ställ in`KeepSourceNumbering` till`true` . Använda en`NodeImporter` att importera noder från källdokumentet till måldokumentet, ange`ImportFormatMode.KeepSourceFormatting` och den`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Steg 5: Spara det ändrade dokumentet
 
-Spara det ändrade dokumentet med hjälp av`Save` metod för`Document` objekt.
+ Spara det ändrade dokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
@@ -64,7 +64,7 @@ Detta slutför implementeringen av att lägga till ett källdokument till ett m�
 ### Exempel på källkod för Keep Source Numbering med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

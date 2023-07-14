@@ -1,7 +1,7 @@
 ---
 title: Asian Typography Line Break Group
 linktitle: Asian Typography Line Break Group
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du använder asiatisk typografi radbrytningsgrupp med Aspose.Words för .NET.
 type: docs
 weight: 10

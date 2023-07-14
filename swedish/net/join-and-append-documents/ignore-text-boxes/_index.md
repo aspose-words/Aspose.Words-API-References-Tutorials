@@ -1,7 +1,7 @@
 ---
 title: Ignorera textrutor
 linktitle: Ignorera textrutor
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till ett dokument samtidigt som du ignorerar textruteformatering med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Ställ in alternativ för importformat
 
- Skapa en instans av`ImportFormatOptions` klass och ställ in`IgnoreTextBoxes` egendom till`false`. Detta säkerställer att textrutorna inkluderas under bifogningsprocessen samtidigt som deras formatering bevaras.
+ Skapa en instans av`ImportFormatOptions`klass och ställ in`IgnoreTextBoxes` egendom till`false`. Detta säkerställer att textrutorna inkluderas under bifogningsprocessen samtidigt som deras formatering bevaras.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Steg 4: Lägg till innehåll i textrutan
 
- Skapa en`NodeImporter` objekt och använd det för att importera textboxnoder från källdokumentet till måldokumentet. Iterera igenom varje stycke i källdokumentet och importera det till måldokumentet.
+ Skapa en`NodeImporter`objekt och använd det för att importera textboxnoder från källdokumentet till måldokumentet. Iterera igenom varje stycke i källdokumentet och importera det till måldokumentet.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -64,12 +64,12 @@ Detta slutför implementeringen av att lägga till ett dokument samtidigt som te
 ### Exempel på källkod för Ignorera textrutor med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Behåll källtextrutornas formatering när du importerar.
+	// Behåll källtextrutornas formatering när du importerar.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

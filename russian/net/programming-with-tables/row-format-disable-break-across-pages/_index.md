@@ -1,7 +1,7 @@
 ---
 title: Формат строки Отключить разрыв между страницами
 linktitle: Формат строки Отключить разрыв между страницами
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как отключить разрыв строки для таблицы на нескольких страницах в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ru/net/programming-with-tables/row-format-disable-break-across-pages/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Загрузка документа
-Чтобы начать работу с документом, выполните следующие действия:
+Чтобы запустить Word Processing с документом, выполните следующие действия:
 
 ```csharp
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
@@ -53,7 +53,7 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ### Пример исходного кода для отключения разрывов между страницами в формате строки с использованием Aspose.Words для .NET 
 
 ```csharp
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");

@@ -1,7 +1,7 @@
 ---
 title: 使用 Web 扩展任务窗格
 linktitle: 使用 Web 扩展任务窗格
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 将 Web 扩展任务窗格与 Aspose.Words for .NET 结合使用的分步指南。
 type: docs
 weight: 10

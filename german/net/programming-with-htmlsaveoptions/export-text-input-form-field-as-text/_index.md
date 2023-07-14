@@ -1,7 +1,7 @@
 ---
 title: Texteingabeformularfeld als Text exportieren
 linktitle: Texteingabeformularfeld als Text exportieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Exportieren von Texteingabeformularfeldern als Nur-Text mit Aspose.Words für .NET.
 type: docs
 weight: 10

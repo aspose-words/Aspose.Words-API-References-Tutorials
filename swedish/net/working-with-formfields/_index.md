@@ -1,13 +1,13 @@
 ---
-title: Arbeta med FormFields
-linktitle: Arbeta med FormFields
-second_title: Aspose.Words för .NET API Referens
+title: Ordbehandling med FormFields
+linktitle: Ordbehandling med FormFields
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du arbetar med formulärfält i Word-dokument med Aspose.Words för .NET. Detaljerade tutorials med kodexempel.
 type: docs
 weight: 690
 url: /sv/net/working-with-formfields/
 ---
-Arbeta med formulärfält är en omfattande resurs för att lära dig hur man arbetar med formulärfält i Word-dokument med Aspose.Words för .NET-biblioteket. Handledningar ger steg-för-steg förklaringar, fullständig källkod och praktiska exempel för att skapa, ändra och hantera formulärfält som kryssrutor, textrutor, rullgardinslistor och mer. Du kommer också att lära dig hur du extraherar och fyller i data från formulärfält, samt anpassar deras formatering och beteende. Denna resurs är viktig för utvecklare som vill automatisera skapandet och hanteringen av formulär i Word-dokument med Aspose.Words för .NET.
+Ordbehandling med formulärfält är en omfattande resurs för att lära dig hur man arbetar med formulärfält i Word-dokument med hjälp av Aspose.Words för .NET-biblioteket. Handledningar ger steg-för-steg förklaringar, fullständig källkod och praktiska exempel för att skapa, ändra och hantera formulärfält som kryssrutor, textrutor, rullgardinslistor och mer. Du kommer också att lära dig hur du extraherar och fyller i data från formulärfält, samt anpassar deras formatering och beteende. Denna resurs är viktig för utvecklare som vill automatisera skapandet och hanteringen av formulär i Word-dokument med Aspose.Words för .NET.
 
  ## Handledningar
 | Titel | Beskrivning |

@@ -1,7 +1,7 @@
 ---
 title: Ottimizza le dimensioni del PDF con Salta i caratteri Arial e Times Roman incorporati
 linktitle: Ottimizza le dimensioni del PDF con Salta i caratteri Arial e Times Roman incorporati
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per generare PDF ottimizzati senza incorporare i caratteri Arial e Times Roman con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -76,7 +76,7 @@ R: Per configurare Aspose.Words per .NET in modo che non incorpori i font Arial 
 
  Caricare il documento che si desidera elaborare utilizzando il file`Document` class e il percorso del documento specificato.
 
- Crea un'istanza di`PdfSaveOptions` classe e impostare il`FontEmbeddingMode` proprietà a`PdfFontEmbeddingMode.EmbedAll`. Questo incorporerà tutti i caratteri tranne Arial e Times Roman nel file PDF generato.
+ Crea un'istanza di`PdfSaveOptions`classe e impostare il`FontEmbeddingMode` proprietà a`PdfFontEmbeddingMode.EmbedAll`. Questo incorporerà tutti i caratteri tranne Arial e Times Roman nel file PDF generato.
 
  Usa il`Save` metodo del`Document` oggetto di salvare il documento in formato PDF specificando le opzioni di salvataggio configurate in precedenza.
 

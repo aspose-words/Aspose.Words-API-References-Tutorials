@@ -1,7 +1,7 @@
 ---
 title: 将俄语设置为默认编辑语言
 linktitle: 将俄语设置为默认编辑语言
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 将俄语设置为文档的默认编辑语言的分步指南。
 type: docs
 weight: 10

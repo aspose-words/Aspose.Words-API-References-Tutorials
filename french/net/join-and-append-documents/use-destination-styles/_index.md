@@ -1,7 +1,7 @@
 ---
-title: Utiliser les styles de destination
-linktitle: Utiliser les styles de destination
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Utiliser les styles de destinations
+linktitle: Utiliser les styles de destinations
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment joindre et ajouter des documents Word tout en appliquant des styles de document de destination à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 ## Étape 1 : Initialiser les répertoires de documents
 
- Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir`variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -55,7 +55,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 Voici le code source complet de la fonctionnalité "Utiliser les styles de destination" en C# en utilisant Aspose.Words pour .NET :
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

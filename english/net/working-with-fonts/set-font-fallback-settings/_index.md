@@ -1,7 +1,7 @@
 ---
 title: Set Font Fallback Settings
 linktitle: Set Font Fallback Settings
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set font substitution settings in Aspose.Words for .NET and customize font substitution in your Word documents.
 type: docs
 weight: 10

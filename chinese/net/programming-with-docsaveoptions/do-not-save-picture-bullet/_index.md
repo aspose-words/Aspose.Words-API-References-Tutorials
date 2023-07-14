@@ -1,7 +1,7 @@
 ---
 title: 不保存图片项目符号
 linktitle: 不保存图片项目符号
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中禁用保存图像项目符号。
 type: docs
 weight: 10

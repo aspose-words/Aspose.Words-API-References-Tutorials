@@ -1,7 +1,7 @@
 ---
 title: Не сохранять маркер изображения
 linktitle: Не сохранять маркер изображения
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как отключить сохранение маркированных изображений в документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

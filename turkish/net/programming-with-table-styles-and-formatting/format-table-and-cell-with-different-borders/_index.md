@@ -1,7 +1,7 @@
 ---
 title: Tabloyu ve Hücreyi Farklı Kenarlıklarla Biçimlendirme
 linktitle: Tabloyu ve Hücreyi Farklı Kenarlıklarla Biçimlendirme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak tablo ve hücreyi farklı kenarlıklarla biçimlendirmek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -70,7 +70,7 @@ Tebrikler! Artık Aspose.Words for .NET'i kullanarak bir tabloyu ve bir hücreyi
 ### Aspose.Words for .NET kullanarak Tabloyu ve Hücreyi Farklı Kenarlıklarla Formatlamak için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

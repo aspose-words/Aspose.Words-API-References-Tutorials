@@ -1,7 +1,7 @@
 ---
 title: Kursiver Text
 linktitle: Kursiver Text
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Text mit Aspose.Words für .NET kursiv formatieren.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Funktion für kurs
 
 #### F: Wie kann ich Text in Aspose.Words kursiv schreiben?
 
-A: Um Text in Aspose.Words kursiv zu schreiben, können Sie die verwenden`Font.Italic` Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf festlegen`true` um einen bestimmten Text kursiv zu schreiben. Sie können zum Beispiel verwenden`run.Font.Italic=true` um den darin enthaltenen Text kursiv zu schreiben`Run` Objekt.
+A: Um Text in Aspose.Words kursiv zu schreiben, können Sie die verwenden`Font.Italic`Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf festlegen`true` um einen bestimmten Text kursiv zu schreiben. Sie können zum Beispiel verwenden`run.Font.Italic=true` um den darin enthaltenen Text kursiv zu schreiben`Run` Objekt.
 
 #### F: Ist es möglich, mehrere Textteile im selben Absatz kursiv zu schreiben?
 
@@ -54,4 +54,4 @@ A: Um Text in Aspose.Words kursiv zu schreiben, können Sie die verwenden`Font.I
 
 #### F: Kann ich Text in einer Tabelle oder Zelle in Aspose.Words kursiv schreiben?
 
- A: Ja, Sie können Text in einer Tabelle oder Zelle in Aspose.Words kursiv schreiben. Sie können mit den entsprechenden Methoden zu der gewünschten Zelle oder dem gewünschten Absatz navigieren und dann mit der Kursivformatierung anwenden`Font.Italic` Eigentum der`Run` oder`Paragraph` Objekt.
+ A: Ja, Sie können Text in einer Tabelle oder Zelle in Aspose.Words kursiv schreiben. Sie können mit den entsprechenden Methoden zu der gewünschten Zelle oder dem gewünschten Absatz navigieren und dann mit der Kursivformatierung anwenden`Font.Italic`Eigentum der`Run` oder`Paragraph` Objekt.

@@ -1,8 +1,8 @@
 ---
 title: Advertencias de procesamiento de PDF
 linktitle: Advertencias de procesamiento de PDF
-second_title: Referencia de API de Aspose.Words para .NET
-description: Guía paso a paso para lidiar con las advertencias de procesamiento de PDF con Aspose.Words para .NET.
+second_title: API de procesamiento de documentos de Aspose.Words
+description: Guía paso a paso para manejar las advertencias de procesamiento de PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/pdf-render-warnings/

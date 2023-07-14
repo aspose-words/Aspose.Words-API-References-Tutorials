@@ -1,13 +1,15 @@
 ---
-title: Arbeta med Node
-linktitle: Arbeta med Node
-second_title: Aspose.Words för .NET API Referens
+title: Ordbehandling med Node
+linktitle: Ordbehandling med Node
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du arbetar med noder i Word-dokument med Aspose.Words för .NET. Detaljerade tutorials med kodexempel.
 type: docs
 weight: 1000
 url: /sv/net/working-with-node/
 ---
-Arbeta med revisioner är en omfattande resurs som guidar dig genom att arbeta med revisioner i Word-dokument med hjälp av Aspose.Words för .NET-biblioteket. Handledningarna visar dig steg för steg hur du lägger till, tar bort, accepterar och avvisar versioner, hur du visar versioner i dokumentet, hur du jämför olika versioner och mycket mer. Du får lära dig hur du arbetar effektivt med granskningar för samarbete och förändringshantering i dina Word-dokument. Denna resurs är viktig för utvecklare som vill automatisera revisionshantering i sina Aspose.Words för .NET-baserade applikationer.
+Noder i Aspose.Words för .NET representerar de olika elementen i ett Word-dokument, såsom stycken, tabeller, bilder och mer. Genom att manipulera dessa noder kan utvecklare programmässigt ändra innehållet och formateringen av ett Word-dokument. Noder tillhandahåller en hierarkisk struktur för dokumentet, vilket möjliggör enkel navigering och manipulering av specifika element.
+
+För att arbeta med noder i Aspose.Words för .NET kan utvecklare använda Document Object Model (DOM) som tillhandahålls av biblioteket. DOM representerar hela Word-dokumentet som ett träd av noder, med själva dokumentet som rotnoden. Varje nod har en specifik nodtyp och kan innehålla underordnade noder, vilket möjliggör en djup nivå av anpassning.
 
  ## Handledningar
 | Titel | Beskrivning |

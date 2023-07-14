@@ -1,7 +1,7 @@
 ---
 title: Yazı Tiplerini PDF Belgesine Göm
 linktitle: Yazı Tiplerini PDF Belgesine Göm
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir PDF'e Yazı Tiplerini Gömmek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -97,4 +97,4 @@ Geliştirilmiş okunabilirlik: Yazı tiplerinin gömülmesi belgenin daha iyi ok
 C: Evet, yazı tipi verilerinin dosyaya dahil edilmesi gerektiğinden, tüm yazı tiplerini bir PDF belgesine gömmek, oluşturulan PDF dosyasının boyutunu artırabilir. Bununla birlikte, boyuttaki bu artış çoğu belge için genellikle ihmal edilebilir düzeydedir ve yazı tiplerini gömmenin faydaları genellikle boyuttaki bu hafif artıştan daha ağır basar.
 
 #### S: Bir PDF belgesine gömmek için belirli yazı tiplerini seçebilir miyim?
- C: Evet, Aspose.Words for .NET ile gelişmiş yapılandırma seçeneklerini kullanarak bir PDF belgesine gömmek için belirli yazı tiplerini seçebilirsiniz. Örneğin,`SubsetFonts` mülkiyeti`PdfSaveOptions` hangi yazı tiplerinin dahil edileceğini belirtmek için nesneyi kullanın veya özel yazı tipi seçim filtrelerini ayarlamak için ek seçenekler kullanın.
+ C: Evet, Aspose.Words for .NET ile gelişmiş yapılandırma seçeneklerini kullanarak bir PDF belgesine gömmek için belirli yazı tiplerini seçebilirsiniz. Örneğin,`SubsetFonts`mülkiyeti`PdfSaveOptions` hangi yazı tiplerinin dahil edileceğini belirtmek için nesneyi kullanın veya özel yazı tipi seçim filtrelerini ayarlamak için ek seçenekler kullanın.

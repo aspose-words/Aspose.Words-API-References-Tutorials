@@ -1,7 +1,7 @@
 ---
 title: Horizontal Merge
 linktitle: Horizontal Merge
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to horizontally merge cells in a Word table with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In this tutorial, we will learn how to horizontally merge cells in a table in a 
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Creating the document and initializing the document generator
-To start working with the table and cells, we need to create a new document and initialize the document generator. Follow these steps:
+To start Words Processing with the table and cells, we need to create a new document and initialize the document generator. Follow these steps:
 
 ```csharp
 // Path to your documents directory

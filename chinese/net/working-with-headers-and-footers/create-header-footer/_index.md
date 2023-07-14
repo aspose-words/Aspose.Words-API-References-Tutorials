@@ -1,7 +1,7 @@
 ---
 title: 创建页眉页脚
 linktitle: 创建页眉页脚
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建页眉和页脚。为每个页面自定义页眉和页脚。
 type: docs
 weight: 10
@@ -249,7 +249,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### 问：如何在 Aspose.Words 中向页眉或页脚添加文本？
 
-答：要在 Aspose.Words 中添加文本到页眉或页脚，您可以使用`HeaderFooter.Paragraphs`属性来获取页眉或页脚的段落集合，然后使用以下命令将包含文本的段落添加到该集合中`ParagraphCollection.Add`方法。
+答：要在 Aspose.Words 中向页眉或页脚添加文本，您可以使用`HeaderFooter.Paragraphs`属性来获取页眉或页脚的段落集合，然后使用以下命令将包含文本的段落添加到该集合中`ParagraphCollection.Add`方法。
 
 #### 问：我可以在 Aspose.Words 中使用图像和页码自定义页眉或页脚内容吗？
 

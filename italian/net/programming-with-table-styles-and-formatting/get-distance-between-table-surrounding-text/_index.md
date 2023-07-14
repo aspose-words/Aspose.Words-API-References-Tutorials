@@ -1,7 +1,7 @@
 ---
 title: Ottieni la distanza tra la tabella che circonda il testo
 linktitle: Ottieni la distanza tra la tabella che circonda il testo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per ottenere la distanza tra il testo e una tabella in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -38,7 +38,7 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 ### Esempio di codice sorgente per Ottieni la distanza tra la tabella che circonda il testo utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

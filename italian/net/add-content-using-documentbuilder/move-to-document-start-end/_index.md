@@ -1,14 +1,14 @@
 ---
 title: Sposta nel documento Inizio Fine
 linktitle: Sposta nel documento Inizio Fine
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare Aspose.Words per .NET per passare all'inizio e alla fine del documento nei documenti di Word con questa guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 
-In questo esempio, esploreremo la funzionalità Move To Document Start/End di Aspose.Words per .NET. Aspose.Words è una potente libreria di manipolazione dei documenti che consente agli sviluppatori di creare, modificare e convertire i documenti di Word a livello di codice. La funzione Move To Document Start/End ci consente di navigare all'inizio o alla fine di un documento utilizzando la classe DocumentBuilder.
+In questo esempio, esploreremo la funzione Move To Document Start/End di Aspose.Words per .NET. Aspose.Words è una potente libreria di manipolazione dei documenti che consente agli sviluppatori di creare, modificare e convertire i documenti di Word a livello di programmazione. La funzione Move To Document Start/End ci consente di navigare all'inizio o alla fine di un documento utilizzando la classe DocumentBuilder.
 
 ## Spiegando il codice sorgente passo dopo passo
 
@@ -66,4 +66,4 @@ Console.WriteLine("\nThis is the end of the document.");
 
 ## Conclusione
 
-In questo esempio, abbiamo esplorato la funzionalità Move To Document Start/End di Aspose.Words per .NET. Abbiamo imparato come navigare all'inizio e alla fine di un documento utilizzando la classe DocumentBuilder. Questa funzionalità è utile quando si lavora a livello di codice con documenti di Word e si ha la necessità di manipolare o inserire contenuto in posizioni specifiche all'interno del documento.
+In questo esempio, abbiamo esplorato la funzionalità Move To Document Start/End di Aspose.Words per .NET. Abbiamo imparato come navigare all'inizio e alla fine di un documento utilizzando la classe DocumentBuilder. Questa funzione è utile durante l'elaborazione di parole a livello di codice con documenti Word e la necessità di manipolare o inserire contenuto in posizioni specifiche all'interno del documento.

@@ -1,7 +1,7 @@
 ---
 title: Impostazioni carattere Istanza predefinita
 linktitle: Impostazioni carattere Istanza predefinita
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questo tutorial, scopri come configurare le impostazioni predefinite dei caratteri in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Codice sorgente di esempio per l'istanza predefinita delle impostazioni dei caratteri utilizzando Aspose.Words per .NET 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -76,11 +76,11 @@ In questo tutorial, abbiamo visto come configurare le impostazioni predefinite d
 
 #### D: Posso specificare la dimensione del carattere predefinita in Aspose.Words?
 
- A: Sì, è possibile specificare la dimensione del carattere predefinita in Aspose.Words utilizzando il file`DefaultFontSize` proprietà del`FontSettings` classe. È possibile impostare la dimensione in punti desiderata.
+ A: Sì, è possibile specificare la dimensione del carattere predefinita in Aspose.Words utilizzando il file`DefaultFontSize`proprietà del`FontSettings` classe. È possibile impostare la dimensione in punti desiderata.
 
 #### D: È possibile impostare il colore del carattere predefinito in Aspose.Words?
 
- A: Sì, puoi impostare il colore del carattere predefinito in Aspose.Words usando il`DefaultColor` proprietà del`FontSettings` classe. È possibile specificare il colore utilizzando valori RGB o nomi predefiniti.
+ A: Sì, puoi impostare il colore del carattere predefinito in Aspose.Words usando il`DefaultColor`proprietà del`FontSettings` classe. È possibile specificare il colore utilizzando valori RGB o nomi predefiniti.
 
 #### D: Le impostazioni predefinite dei caratteri si applicano a tutti i documenti?
 

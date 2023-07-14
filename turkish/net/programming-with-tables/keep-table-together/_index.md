@@ -1,7 +1,7 @@
 ---
 title: Masayı Birlikte Tutun
 linktitle: Masayı Birlikte Tutun
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesinde bir tabloyu nasıl bir arada tutacağınızı öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde bir tabloyu n
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi yükleme ve tabloyu alma
-Tablo ile çalışmaya başlamak için belgeyi yüklememiz ve bir arada tutmak istediğimiz tabloyu getirmemiz gerekiyor. Bu adımları takip et:
+Tablo ile Kelime İşleme başlamak için, belgeyi yüklememiz ve bir arada tutmak istediğimiz tabloyu getirmemiz gerekiyor. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 
 // tabloyu al
@@ -31,7 +31,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 "BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
 ## 3. Adım: "KeepWithNext" seçeneğini etkinleştirin
-Tabloyu bir arada tutmak ve birden fazla sayfaya bölünmesini önlemek için tablonun son satırının son paragrafları hariç tablodaki her paragraf için "KeepWithNext" seçeneğini etkinleştirmemiz gerekir. Aşağıdaki kodu kullanın:
+Tabloyu bir arada tutmak ve birden fazla sayfaya bölünmesini önlemek için tablonun son satırının son paragrafları hariç tablodaki her paragraf için "KeepWithNext" seçeneğini etkinleştirmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 foreach(Cell cell in table.GetChildNodes(NodeType.Cell, true))
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ### Aspose.Words for .NET kullanarak Keep Table Together için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");

@@ -1,7 +1,7 @@
 ---
 title: Définir le niveau de compression
 linktitle: Définir le niveau de compression
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à définir le niveau de compression lors de l'enregistrement d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Vous pouvez maintenant exécuter le code source pour définir le niveau de compr
 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Document.docx");

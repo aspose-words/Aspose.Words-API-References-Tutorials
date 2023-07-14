@@ -1,7 +1,7 @@
 ---
 title: Игнорировать текстовые поля
 linktitle: Игнорировать текстовые поля
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как добавить документ, игнорируя форматирование текстового поля, с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте параметры формата импорта
 
- Создайте экземпляр`ImportFormatOptions` класс и установить`IgnoreTextBoxes` собственность на`false`. Это гарантирует, что текстовые поля будут включены в процесс добавления с сохранением их форматирования.
+ Создайте экземпляр`ImportFormatOptions`класс и установить`IgnoreTextBoxes` собственность на`false`. Это гарантирует, что текстовые поля будут включены в процесс добавления с сохранением их форматирования.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Шаг 4. Добавьте содержимое текстового поля.
 
- Создать`NodeImporter` объект и использовать его для импорта узлов текстового поля из исходного документа в целевой документ. Переберите каждый абзац в исходном документе и импортируйте его в целевой документ.
+ Создать`NodeImporter`объект и использовать его для импорта узлов текстового поля из исходного документа в целевой документ. Переберите каждый абзац в исходном документе и импортируйте его в целевой документ.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -64,12 +64,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ### Пример исходного кода для игнорирования текстовых полей с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Сохраняйте форматирование исходных текстовых полей при импорте.
+	// Сохраняйте форматирование исходных текстовых полей при импорте.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

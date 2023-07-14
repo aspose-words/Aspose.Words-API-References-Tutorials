@@ -1,7 +1,7 @@
 ---
 title: Position du curseur
 linktitle: Position du curseur
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à récupérer la position du curseur dans un document Word à l'aide du guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10

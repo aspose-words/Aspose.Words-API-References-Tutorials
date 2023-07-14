@@ -1,7 +1,7 @@
 ---
 title: Kaynak Numaralandırmayı Koru
 linktitle: Kaynak Numaralandırmayı Koru
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te kaynak numaralandırma biçimlendirmesini korurken bir belgeyi nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: İçe aktarırken kaynak numaralandırmayı koruyun
 
- Kaynak belgedeki numaralandırılmış paragrafların numaralandırma biçimlendirmesini korumak için bir örnek oluşturun.`ImportFormatOptions` ve ayarla`KeepSourceNumbering` ile`true` Kullanın`NodeImporter` kaynak belgeden hedef belgeye düğümleri içe aktarmak için`ImportFormatMode.KeepSourceFormatting` ve`importFormatOptions`.
+ Kaynak belgedeki numaralandırılmış paragrafların numaralandırma biçimlendirmesini korumak için bir örnek oluşturun.`ImportFormatOptions` ve ayarla`KeepSourceNumbering` ile`true` . Kullanın`NodeImporter` kaynak belgeden hedef belgeye düğümleri içe aktarmak için`ImportFormatMode.KeepSourceFormatting` ve`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## 5. Adım: Değiştirilen belgeyi kaydedin
 
-Değiştirilen belgeyi şunu kullanarak kaydedin:`Save` yöntemi`Document` nesne.
+ Değiştirilen belgeyi şunu kullanarak kaydedin:`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
@@ -64,7 +64,7 @@ Bu, Aspose.Words for .NET kullanarak orijinal numaralandırma biçimlendirmesini
 ### Aspose.Words for .NET kullanan Keep Source Numbering için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

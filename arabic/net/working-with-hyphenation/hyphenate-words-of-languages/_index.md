@@ -1,7 +1,7 @@
 ---
 title: وصل كلمات اللغات
 linktitle: وصل كلمات اللغات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

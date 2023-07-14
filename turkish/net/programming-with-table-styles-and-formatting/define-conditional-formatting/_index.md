@@ -1,7 +1,7 @@
 ---
 title: Koşullu Biçimlendirmeyi Tanımla
 linktitle: Koşullu Biçimlendirmeyi Tanımla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir tabloda koşullu biçimlendirmeyi tanımlamak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -70,7 +70,7 @@ Tebrikler! Artık tablonuz için Aspose.Words for .NET kullanarak koşullu biçi
 ### Aspose.Words for .NET kullanarak Koşullu Biçimlendirmeyi Tanımlamak için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

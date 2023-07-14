@@ -1,7 +1,7 @@
 ---
 title: Remove Source Headers Footers
 linktitle: Remove Source Headers Footers
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to remove headers and footers while joining and appending Word documents using Aspose.Words for .NET.
 type: docs
 weight: 10

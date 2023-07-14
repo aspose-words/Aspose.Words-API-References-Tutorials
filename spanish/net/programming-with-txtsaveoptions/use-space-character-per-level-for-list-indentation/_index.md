@@ -1,7 +1,7 @@
 ---
 title: Use el carácter de espacio por nivel para la sangría de la lista
 linktitle: Use el carácter de espacio por nivel para la sangría de la lista
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para usar un carácter de espacio por nivel para la sangría de lista en Aspose.Words para .NET. Cree documentos de Word bien estructurados con facilidad.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Aspose.Words para .NET es una poderosa biblioteca para crear, editar y manipular
 
 ## Comprender la biblioteca Aspose.Words
 
-Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una biblioteca popular que hace que trabajar con documentos de Word sea fácil y eficiente. Ofrece una amplia gama de funcionalidades para crear, modificar y manipular documentos de Word, incluida la gestión de listas y sangrado.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una biblioteca popular que hace que el procesamiento de textos con documentos de Word sea fácil y eficiente. Ofrece una amplia gama de funcionalidades para crear, modificar y manipular documentos de Word, incluida la gestión de listas y sangrado.
 
 ## Creación del documento y adición de contenido.
 
@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIn
 
 En este ejemplo, creamos una instancia de TxtSaveOptions y establecemos la propiedad ListIndentation.Count en 3 para indicar que hay tres niveles de sangría en la lista. También establecemos la propiedad ListIndentation.Character en el carácter de espacio (' ') que queremos usar para la sangría.
 
-### Ejemplo de código fuente para la función "Usar un carácter de espacio por nivel para sangría de lista" con Aspose.Words para .NET
+### Código fuente de ejemplo para la función "Usar un carácter de espacio por nivel para sangría de lista" con Aspose.Words para .NET
 
 Aquí está el código fuente de muestra completo para la función "Usar un carácter de espacio por nivel para sangría de lista" con Aspose.Words para .NET:
 
@@ -91,12 +91,12 @@ namespace Example
 
 ## Conclusión
 
-En esta guía, explicamos cómo usar Aspose.Words para .NET para aplicar la funcionalidad "Usar un carácter de espacio por nivel para sangría de lista". Siguiendo los pasos proporcionados y utilizando el código fuente de C# proporcionado, puede configurar fácilmente la sangría de las listas en sus documentos de Word utilizando un carácter de espacio por nivel. Aspose.Words ofrece una gran flexibilidad y potencia para trabajar con el formato de texto y la gestión de listas, lo que le permite crear documentos bien estructurados en su aplicación C#.
+En esta guía, explicamos cómo usar Aspose.Words para .NET para aplicar la funcionalidad "Usar un carácter de espacio por nivel para sangría de lista". Siguiendo los pasos proporcionados y utilizando el código fuente de C# proporcionado, puede configurar fácilmente la sangría de las listas en sus documentos de Word utilizando un carácter de espacio por nivel. Aspose.Words ofrece una gran flexibilidad y potencia para el procesamiento de textos con formato de texto y administración de listas, lo que le permite crear documentos bien estructurados en su aplicación C#.
 
 ### Preguntas frecuentes
 
 #### P: ¿Qué es Aspose.Words para .NET?
-Aspose.Words para .NET es una poderosa biblioteca para crear, editar y manipular documentos de Word en una aplicación C#. Ofrece muchas funciones para trabajar con documentos de Word, incluida la capacidad de usar un espacio por nivel para sangrar las listas.
+Aspose.Words para .NET es una poderosa biblioteca para crear, editar y manipular documentos de Word en una aplicación C#. Ofrece muchas funciones para el procesamiento de textos con documentos de Word, incluida la capacidad de usar un espacio por nivel para sangrar las listas.
 
 #### P: ¿Cómo puedo usar un espacio por nivel para la sangría de la lista con Aspose.Words para .NET?
 Puede usar un espacio por nivel para la sangría de la lista siguiendo estos pasos:
@@ -105,7 +105,7 @@ Puede usar un espacio por nivel para la sangría de la lista siguiendo estos pas
 
  Utilizar el`DocumentBuilder`class para agregar contenido al documento y crear una lista con múltiples niveles de sangría.
 
- Una vez que haya agregado el contenido y configurado la sangría de la lista, use el`TxtSaveOptions` clase y establecer el`ListIndentation.Count` propiedad al número de niveles de sangría y la`ListIndentation.Character` propiedad sobre el espacio (`' '`) usar.
+ Una vez que haya agregado el contenido y configurado la sangría de la lista, use el`TxtSaveOptions`clase y establecer el`ListIndentation.Count` propiedad al número de niveles de sangría y la`ListIndentation.Character` propiedad sobre el espacio (`' '`) usar.
 
  Guarde el documento con las opciones especificadas usando el`Save` metodo de la`Document` clase.
 

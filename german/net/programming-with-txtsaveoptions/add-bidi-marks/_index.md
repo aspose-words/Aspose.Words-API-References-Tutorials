@@ -1,7 +1,7 @@
 ---
 title: Fügen Sie Bidi-Marken in ein Word-Dokument ein
 linktitle: Fügen Sie Bidi-Marken in ein Word-Dokument ein
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Bidi-Markierungen zu einem Word-Dokument hinzufügen und professionelle mehrsprachige Dokumente erstellen.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbe
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 
-Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Arbeit mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten, einschließlich des Hinzufügens von Bidi-Marken.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Textverarbeitung mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten, einschließlich des Hinzufügens von Bidi-Marken.
 
 ## Erstellen des Dokuments und Hinzufügen von Inhalten
 
@@ -65,12 +65,12 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 
 ## Abschluss
 
-In dieser Anleitung haben wir erklärt, wie Sie mit Aspose.Words für .NET mithilfe des bereitgestellten C#-Quellcodes Bidi-Markierungen zu einem Word-Dokument hinzufügen. Indem Sie die bereitgestellten Schritte befolgen, können Sie ganz einfach Bidi-Markierungen zu Ihren Word-Dokumenten in Ihrer C#-Anwendung hinzufügen. Aspose.Words bietet enorme Flexibilität und Leistungsfähigkeit für die Arbeit mit Textformatierung und Sprachverwaltung, sodass Sie mehrsprachige Dokumente professionell erstellen können.
+In dieser Anleitung haben wir erklärt, wie Sie mit Aspose.Words für .NET mithilfe des bereitgestellten C#-Quellcodes Bidi-Markierungen zu einem Word-Dokument hinzufügen. Indem Sie die bereitgestellten Schritte befolgen, können Sie ganz einfach Bidi-Markierungen zu Ihren Word-Dokumenten in Ihrer C#-Anwendung hinzufügen. Aspose.Words bietet enorme Flexibilität und Leistung für die Textverarbeitung mit Textformatierung und Sprachverwaltung, sodass Sie mehrsprachige Dokumente professionell erstellen können.
 
 ### Häufig gestellte Fragen
 
 #### F: Was ist Aspose.Words für .NET?
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten in einer C#-Anwendung. Es bietet viele Funktionen für die Arbeit mit Word-Dokumenten, einschließlich des Hinzufügens von Bidi-Markierungen (bidirektional).
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten in einer C#-Anwendung. Es bietet viele Funktionen für die Textverarbeitung mit Word-Dokumenten, einschließlich des Hinzufügens von Bidi-Markierungen (bidirektional).
 
 #### F: Welche Funktionen bietet Aspose.Words für .NET?
 Aspose.Words für .NET bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten. Zu diesen Funktionen gehören das Erstellen von Dokumenten, das Hinzufügen von Inhalten, das Formatieren von Text, das Verwalten von Tabellen, das Zusammenführen und Teilen von Dokumenten, das Konvertieren von Dokumenten und mehr.
@@ -82,7 +82,7 @@ Sie können einem Word-Dokument Bidi-Marken hinzufügen, indem Sie die folgenden
 
  Benutzen Sie die`DocumentBuilder` Klasse, um dem Dokument Inhalte hinzuzufügen.
 
- Sobald Sie den Inhalt hinzugefügt haben, verwenden Sie die`TxtSaveOptions` Klasse und legen Sie die fest`AddBidiMarks` Eigentum zu`true`.
+ Sobald Sie den Inhalt hinzugefügt haben, verwenden Sie die`TxtSaveOptions`Klasse und legen Sie die fest`AddBidiMarks` Eigentum zu`true`.
 
  Speichern Sie das Dokument mit Bidi-Markierungen mithilfe von`Save` Methode der`Document` Klasse.
 
@@ -90,4 +90,4 @@ Sie können einem Word-Dokument Bidi-Marken hinzufügen, indem Sie die folgenden
 Ja, Aspose.Words unterstützt mehrere Sprachen zum Hinzufügen von Bidi-Markierungen. Mit Aspose.Words für .NET können Sie Text in verschiedenen Sprachen, beispielsweise Englisch, Hebräisch und Arabisch, Bidi-Markierungen hinzufügen.
 
 #### F: Gibt es zusätzliche Optionen zum Speichern des Dokuments mit Bidi-Markierungen?
-Ja, Sie können beim Speichern des Dokuments mit Bidi-Markierungen andere Optionen angeben`TxtSaveOptions` Klasse. Sie können beispielsweise das Speicherformat des Dokuments, Kodierungsoptionen usw. festlegen.
+ Ja, Sie können beim Speichern des Dokuments mit Bidi-Markierungen andere Optionen angeben`TxtSaveOptions` Klasse. Sie können beispielsweise das Speicherformat des Dokuments, Kodierungsoptionen usw. festlegen.

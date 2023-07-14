@@ -1,14 +1,13 @@
 ---
 title: Skapa ny signaturlinje och ställ in leverantörs-ID
 linktitle: Skapa ny signaturlinje och ställ in leverantörs-ID
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skapar en ny signaturrad och ställer in leverantörs-ID i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
-
-I den här handledningen går vi igenom stegen för att använda funktionen Skapa ny signaturlinje och ange leverantörs-ID med Aspose.Words för .NET. Med den här funktionen kan du infoga en signaturrad i ett Word-dokument, ställa in anpassade alternativ och signera dokumentet. Följ stegen nedan:
+den här handledningen går vi igenom stegen för att använda funktionen Skapa ny signaturlinje och ange leverantörs-ID med Aspose.Words för .NET. Med den här funktionen kan du infoga en signaturrad i ett Word-dokument, ställa in anpassade alternativ och signera dokumentet. Följ stegen nedan:
 
 ## Steg 1: Skapa dokumentet och generatorn
 
@@ -130,3 +129,53 @@ Här är den fullständiga källkoden för att skapa en ny signaturrad och stäl
 
 Genom att följa dessa steg kan du enkelt skapa en ny signaturrad och ange leverantörs-ID i ditt Word-dokument med Aspose.Words för .NET.
 
+## Slutsats
+
+den här handledningen utforskade vi funktionen att skapa en ny signaturrad och ställa in leverantörs-ID i ett Word-dokument med Aspose.Words för .NET. Genom att följa de angivna stegen kan du enkelt infoga en signaturrad med anpassade alternativ och associera den med en specifik leverantör med hjälp av leverantörs-ID. Att lägga till signaturrader och anpassa leverantörsinformationen förbättrar äktheten och pålitligheten hos dina dokument. Aspose.Words för .NET tillhandahåller ett kraftfullt API för ordbehandling med signaturrader och digitala certifikat i Word-dokument, vilket gör att du kan automatisera signeringsprocessen och säkerställa att dina dokument är giltiga.
+
+### FAQ's
+
+#### F: Vad är ett leverantörs-ID i en signaturrad?
+
+S: Ett leverantörs-ID i en signaturrad är en unik identifierare som representerar leverantören av den digitala signaturen. Det hjälper till att identifiera källan eller organisationen som är ansvarig för signaturen.
+
+#### F: Hur kan jag skapa en ny signaturrad i ett Word-dokument med Aspose.Words för .NET?
+
+S: För att skapa en ny signaturrad i ett Word-dokument med Aspose.Words för .NET, kan du följa dessa steg:
+1.  Skapa en instans av`Document` klass och a`DocumentBuilder` objekt.
+2.  Skapa en instans av`SignatureLineOptions` klass och ställ in önskade signaturradsalternativ.
+3.  Använd`InsertSignatureLine` metod för`DocumentBuilder` objekt för att infoga signaturraden i dokumentet.
+
+#### F: Kan jag anpassa alternativen för signaturraden, såsom undertecknarens namn, titel och instruktioner?
+
+ S: Ja, du kan anpassa alternativen för signaturraden. De`SignatureLineOptions` klass tillhandahåller egenskaper för att ställa in önskade alternativ, som t.ex`Signer`, `SignerTitle`, `Instructions`, `AllowComments`, etc. Du kan ändra dessa egenskaper innan du infogar signaturraden.
+
+#### F: Vad är syftet med att ställa in leverantörs-ID för en signaturlinje?
+
+S: Att ställa in leverantörs-ID för en signaturlinje hjälper till att identifiera källan eller organisationen som är ansvarig för den digitala signaturen. Det låter dig associera signaturen med en specifik leverantör eller enhet, vilket ger ytterligare information om signaturens ursprung och tillförlitlighet.
+
+#### F: Hur kan jag ställa in leverantörs-ID för en signaturrad med Aspose.Words för .NET?
+
+S: För att ställa in leverantörs-ID för en signaturrad med Aspose.Words för .NET kan du följa dessa steg:
+1.  När du har infogat signaturraden, gå till`ProviderId`egendom av`SignatureLine` objekt.
+2.  Ställ in`ProviderId` egendom till det önskade leverantörs-ID-värdet med hjälp av`Guid` data typ.
+
+#### F: Kan jag signera dokumentet efter att ha skapat en ny signaturrad och angett leverantörs-ID?
+
+ S: Ja, efter att ha skapat en ny signaturrad och angett leverantörs-ID kan du signera dokumentet. För att signera dokumentet måste du ställa in signaturalternativ, inklusive signaturrads-ID, leverantörs-ID, kommentarer och signeringstid. Använd sedan`DigitalSignatureUtil.Sign` metod för att signera dokumentet med ett digitalt certifikat.
+
+#### F: Kan jag ange ett specifikt leverantörs-ID för varje signaturrad i ett Word-dokument?
+
+S: Ja, du kan ange ett specifikt leverantörs-ID för varje signaturrad i ett Word-dokument. Efter att ha infogat varje signaturrad kan du ställa in leverantörs-ID för just den signaturraden genom att gå till`ProviderId` respektive egendom`SignatureLine` objekt.
+
+#### F: Hur kan jag spara det ändrade dokumentet efter att ha skapat en ny signaturrad och angett leverantörs-ID?
+
+ S: För att spara det ändrade dokumentet efter att ha skapat en ny signaturrad och angett leverantörs-ID, kan du använda`Save` metod för`Document` objekt. Ange rätt sökväg och filnamn för att spara dokumentet.
+
+#### F: Vilket filformat stöder Aspose.Words for .NET för att skapa och signera signaturrader?
+
+S: Aspose.Words för .NET stöder att skapa och signera signaturrader i DOCX-filformatet. Du kan skapa och signera signaturrader i DOCX-filer med hjälp av de medföljande metoderna och klasserna.
+
+#### F: Kan jag ändra leverantörs-ID eller andra alternativ för en signaturrad efter att den har signerats?
+
+S: När en signaturrad har signerats blir den en del av dokumentets innehåll och kan inte ändras separat. Eventuella ändringar av signaturraden, som att ändra leverantörs-ID eller andra alternativ, skulle kräva att man tar bort den befintliga signaturen och skapar en ny signaturrad.

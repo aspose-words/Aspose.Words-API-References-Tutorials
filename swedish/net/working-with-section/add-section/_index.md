@@ -1,7 +1,7 @@
 ---
 title: Lägg till avsnitt
 linktitle: Lägg till avsnitt
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: den här självstudien lär du dig hur du lägger till ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide för att strukturera ditt dokument.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Liste Numarasını Yeniden Başlat
 linktitle: Liste Numarasını Yeniden Başlat
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesindeki liste numarasını nasıl sıfırlayacağınızı öğrenin.
 type: docs
 weight: 10

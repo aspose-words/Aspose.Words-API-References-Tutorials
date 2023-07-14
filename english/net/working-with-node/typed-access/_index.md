@@ -1,7 +1,7 @@
 ---
 title: Typed Access
 linktitle: Typed Access
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use typed access to manipulate tables in Aspose.Words for .NET.
 type: docs
 weight: 10

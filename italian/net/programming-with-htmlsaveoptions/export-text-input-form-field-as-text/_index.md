@@ -1,7 +1,7 @@
 ---
 title: Esporta campo modulo di immissione testo come testo
 linktitle: Esporta campo modulo di immissione testo come testo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per esportare i campi del modulo di input del testo come testo normale con Aspose.Words per .NET.
 type: docs
 weight: 10

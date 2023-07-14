@@ -1,7 +1,7 @@
 ---
 title: Appliquer le style de paragraphe
 linktitle: Appliquer le style de paragraphe
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à appliquer un style de paragraphe à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10

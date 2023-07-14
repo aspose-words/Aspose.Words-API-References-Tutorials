@@ -1,7 +1,7 @@
 ---
 title: İşleme Sırasında Varsayılan Yazı Tipini Belirtin
 linktitle: İşleme Sırasında Varsayılan Yazı Tipini Belirtin
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir belgeyi işlerken varsayılan yazı tipini belirlemek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## 3. Adım: Varsayılan yazı tipini ayarlayın
- Artık, örneğini oluşturarak, işleme sırasında kullanılacak varsayılan yazı tipini belirtebilirsiniz.`FontSettings` sınıf ve ayar`DefaultFontName` mülkiyeti`DefaultFontSubstitution` itiraz etmek`DefaultFontSubstitution` nesne`SubstitutionSettings` ile ilgili`FontSettings`.
+ Artık, örneğini oluşturarak, işleme sırasında kullanılacak varsayılan yazı tipini belirtebilirsiniz.`FontSettings` sınıf ve ayar`DefaultFontName`mülkiyeti`DefaultFontSubstitution` itiraz etmek`DefaultFontSubstitution` nesne`SubstitutionSettings` ile ilgili`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Aspose.Words for .NET kullanarak Oluştururken Varsayılan Yazı Tipini Belirt için örnek kaynak kodu 
 
 ```csharp
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -56,13 +56,13 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Çözüm
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi işlerken varsayılan yazı tipini nasıl belirleyeceğimizi öğrendik. Bu adım adım kılavuzu izleyerek, belgelerinizi işlerken kullanmak üzere varsayılan bir yazı tipini kolayca ayarlayabilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle çalışmak için güçlü ve esnek bir API sunar. Bu bilgiyle, belgelerinizin işlenmesini özel ihtiyaçlarınıza göre kontrol edebilir ve özelleştirebilirsiniz.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi işlerken varsayılan yazı tipini nasıl belirleyeceğimizi öğrendik. Bu adım adım kılavuzu izleyerek, belgelerinizi işlerken kullanmak üzere varsayılan bir yazı tipini kolayca ayarlayabilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle Kelime İşleme için güçlü ve esnek bir API sunar. Bu bilgiyle, belgelerinizin işlenmesini özel ihtiyaçlarınıza göre kontrol edebilir ve özelleştirebilirsiniz.
 
 ### SSS
 
 #### S: Aspose.Words'ta PDF'ye dönüştürürken varsayılan bir yazı tipini nasıl belirleyebilirim?
 
- C: Aspose.Words'te PDF'ye dönüştürürken bir varsayılan yazı tipi belirtmek için`PdfOptions` sınıflandırın ve ayarlayın`DefaultFontName` özelliğini istediğiniz yazı tipinin adına ekleyin.
+ C: Aspose.Words'te PDF'ye dönüştürürken bir varsayılan yazı tipi belirtmek için`PdfOptions`sınıflandırın ve ayarlayın`DefaultFontName` özelliğini istediğiniz yazı tipinin adına ekleyin.
 
 #### S: PDF'ye dönüştürürken varsayılan yazı tipi yoksa ne olur?
 
@@ -74,7 +74,7 @@ C: Evet, uygun dönüştürme seçeneklerini kullanarak ve her biçim için kar�
 
 #### S: Aspose.Words'te belirtilen varsayılan yazı tipini nasıl kontrol edebilirim?
 
- C: Aspose.Words'te belirtilen varsayılan yazı tipini kontrol etmek için`DefaultFontName` mülkiyeti`PdfOptions` sınıflandırın ve yapılandırılan yazı tipinin adını alın.
+ C: Aspose.Words'te belirtilen varsayılan yazı tipini kontrol etmek için`DefaultFontName`mülkiyeti`PdfOptions` sınıflandırın ve yapılandırılan yazı tipinin adını alın.
 
 #### S: Belgenin her bölümü için farklı bir varsayılan yazı tipi belirlemek mümkün müdür?
 

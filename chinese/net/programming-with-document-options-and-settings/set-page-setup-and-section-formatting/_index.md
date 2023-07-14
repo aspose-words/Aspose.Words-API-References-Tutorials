@@ -1,7 +1,7 @@
 ---
 title: 设置页面设置和部分格式
 linktitle: 设置页面设置和部分格式
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 设置文档布局和部分格式的分步指南。
 type: docs
 weight: 10

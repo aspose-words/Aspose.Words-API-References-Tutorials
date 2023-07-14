@@ -1,8 +1,8 @@
 ---
-title: 拆分文档
-linktitle: 拆分文档
-second_title: Aspose.Words for .NET API 参考
-description: 了解如何使用 Aspose.Words for .NET 将 Word 文档有效地拆分为单独的部分。按照分步教程并使用 C# 代码示例来学习不同的文档拆分技术。
+title: Word文档分割
+linktitle: Word文档分割
+second_title: Aspose.Words 文档处理 API
+description: 了解如何使用 Aspose.Words for .NET 将 Word 文档拆分为单独的部分。这个综合资源提供了详细的教程、源代码示例以及根据不同条件拆分文档的实用技巧。
 type: docs
 weight: 1450
 url: /zh/net/split-document/

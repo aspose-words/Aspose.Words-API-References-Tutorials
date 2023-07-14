@@ -1,7 +1,7 @@
 ---
 title: 清理未使用的样式和列表
 linktitle: 清理未使用的样式和列表
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 清理文档中未使用的样式和列表的分步指南。
 type: docs
 weight: 10

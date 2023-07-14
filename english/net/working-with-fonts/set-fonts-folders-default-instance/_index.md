@@ -1,7 +1,7 @@
 ---
 title: Set Fonts Folders Default Instance
 linktitle: Set Fonts Folders Default Instance
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to setting the default font folder when rendering a document using Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
 ## Conclusion
-In this tutorial, we learned how to set the default font folder when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify which folder of fonts to use as the default folder when rendering your documents. Aspose.Words offers a powerful and flexible API for working with fonts in your documents. With this knowledge, you can control and customize the font sources used when rendering your documents to your specific needs.
+In this tutorial, we learned how to set the default font folder when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify which folder of fonts to use as the default folder when rendering your documents. Aspose.Words offers a powerful and flexible API for Words Processing with fonts in your documents. With this knowledge, you can control and customize the font sources used when rendering your documents to your specific needs.
 
 ### FAQ's
 

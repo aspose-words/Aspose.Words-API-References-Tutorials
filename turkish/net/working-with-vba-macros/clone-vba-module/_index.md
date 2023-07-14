@@ -1,7 +1,7 @@
 ---
-title: Vba Modülünü Klonla
-linktitle: Vba Modülünü Klonla
-second_title: Aspose.Words for .NET API Referansı
+title: Bir Word Belgesinden Vba Modülünü Klonlama
+linktitle: Bir Word Belgesinden Vba Modülünü Klonlama
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinden bir VBA modülünün nasıl kopyalanacağını öğrenin.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 ### Aspose.Words for .NET kullanan Clone Vba Module için örnek kaynak kodu 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");
@@ -68,3 +68,21 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 
 ## Çözüm
 Bu eğitimde, Aspose.Words for .NET kullanarak makrolarla bir Word belgesinden bir VBA modülünün nasıl kopyalanacağını gördük. VBA modüllerini klonlamak, bir kaynak belgedeki VBA kodunu başka bir belgede kolayca yeniden kullanmanızı sağlar. Makrolarınızı farklı belgelerde düzenlemek ve yönetmek için bu özelliği kullanmaktan çekinmeyin.
+
+### SSS
+
+#### S: Bir VBA modülünü kopyalamak nedir?
+
+C: Bir VBA modülünün çoğaltılması, VBA kodu içeren bir modülün bir kaynak Word belgesinden başka bir belgeye kopyalanmasından oluşur. Bu, VBA kodunu farklı bağlamlarda yeniden kullanmanıza veya başka belgelerle paylaşmanıza olanak tanır.
+
+#### S: Bir VBA modülünü bir Word belgesinden klonlamak için ön koşullar nelerdir?
+
+C: Bir Word belgesinden bir VBA modülünü klonlayabilmeniz için, C# programlama dili hakkında çalışma bilgisine sahip olmanız gerekir. Aspose.Words for .NET kitaplığını da projenize kurmanız gerekir. Ayrıca, klonlamak istediğiniz modül ile bir VBA projesi içeren bir Word belgesine ihtiyacınız var.
+
+#### S: Kodda belge dizini nasıl ayarlanır?
+
+ A: Sağlanan kodda değiştirmeniz gerekir`"YOUR DOCUMENTS DIRECTORY"` VBA projesini içeren Word belgenizin bulunduğu dizine uygun yolla.
+
+#### S: Klonlanmış VBA modülü ile hedef belge nasıl kaydedilir?
+
+ C: Hedef belgeyi klonlanmış VBA modülüyle kaydetmek için`Save` yöntemi`Document` istenen hedef yolu ve dosya adını belirterek sınıf.

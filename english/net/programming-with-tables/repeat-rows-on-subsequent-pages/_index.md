@@ -1,7 +1,7 @@
 ---
 title: Repeat Rows On Subsequent Pages
 linktitle: Repeat Rows On Subsequent Pages
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to repeat table rows on subsequent pages in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In this tutorial, we will learn how to repeat the rows of a table on subsequent 
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Creating the document and initializing the document generator
-To start working with the document and document generator, follow these steps:
+To start Words Processing with the document and document generator, follow these steps:
 
 ```csharp
 // Path to your documents directory

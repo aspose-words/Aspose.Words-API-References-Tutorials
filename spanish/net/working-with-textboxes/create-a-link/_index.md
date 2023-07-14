@@ -1,7 +1,7 @@
 ---
 title: Crear enlace en Word
 linktitle: Crear enlace en Word
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a crear un vínculo en Word entre cuadros de texto en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -24,7 +24,7 @@ TextBox textBox2 = shape2.TextBox;
 
 ## Paso 2: Creando un enlace entre TextBoxes
 
- Ahora crearemos un enlace entre los dos TextBoxes usando el`IsValidLinkTarget()` método y el`Next` propiedad del primer TextBox.
+Ahora crearemos un enlace entre los dos TextBoxes usando el`IsValidLinkTarget()` método y el`Next` propiedad del primer TextBox.
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
@@ -62,7 +62,7 @@ R: Para vincular cuadros de texto en Word usando Aspose.Words para .NET, la bibl
 
 #### P: ¿Cómo crear un vínculo entre dos cuadros de texto?
 
- R: Para crear un vínculo entre dos cuadros de texto, debe configurar el`Next`propiedad del primer cuadro de texto al segundo cuadro de texto. Asegúrese de haber verificado la validez del destino del enlace de antemano utilizando el`IsValidLinkTarget()` método.
+ R: Para crear un vínculo entre dos cuadros de texto, debe configurar el`Next` propiedad del primer cuadro de texto al segundo cuadro de texto. Asegúrese de haber verificado la validez del destino del enlace de antemano utilizando el`IsValidLinkTarget()` método.
 
 #### P: ¿Es posible crear vínculos entre elementos que no sean cuadros de texto?
 

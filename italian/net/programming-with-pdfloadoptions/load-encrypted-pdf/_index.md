@@ -1,14 +1,14 @@
 ---
 title: Carica PDF crittografato
 linktitle: Carica PDF crittografato
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per caricare un PDF crittografato utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 
-Quando si lavora con documenti PDF nell'applicazione .NET, potrebbe essere necessario caricare file PDF protetti da password. Aspose.Words per .NET è una potente libreria che fornisce funzionalità per il caricamento di documenti PDF crittografati. In questo articolo, ti guideremo passo dopo passo per comprendere e utilizzare questa funzione.
+Durante l'elaborazione di testi con documenti PDF nell'applicazione .NET, potrebbe essere necessario caricare file PDF protetti da password. Aspose.Words per .NET è una potente libreria che fornisce funzionalità per il caricamento di documenti PDF crittografati. In questo articolo, ti guideremo passo dopo passo per comprendere e utilizzare questa funzione.
 
 ## Comprensione della funzione Carica PDF crittografato
 
@@ -85,6 +85,6 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## Conclusione
 
-In questo articolo, abbiamo esplorato come utilizzare la funzione Carica PDF crittografato di Aspose.Words per .NET. Hai imparato come caricare file PDF crittografati, come crittografare un documento PDF, come caricare un PDF crittografato con una password e come generare output in formato Markdown. Questa funzione è estremamente utile quando si lavora con documenti PDF protetti.
+In questo articolo, abbiamo esplorato come utilizzare la funzione Carica PDF crittografato di Aspose.Words per .NET. Hai imparato come caricare file PDF crittografati, come crittografare un documento PDF, come caricare un PDF crittografato con una password e come generare output in formato Markdown. Questa funzione è estremamente utile durante l'elaborazione di testi con documenti PDF protetti.
 
 

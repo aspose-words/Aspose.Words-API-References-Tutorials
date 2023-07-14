@@ -1,7 +1,7 @@
 ---
 title: Appliquer la licence à partir du flux
 linktitle: Appliquer la licence à partir du flux
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à appliquer une licence à partir d'un flux à l'aide d'Aspose.Words pour .NET. Guide étape par étape
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
 - Un fichier de licence valide pour Aspose.Words.
 
 ## Étape 1 : Importer les espaces de noms requis
-Pour commencer, importez les espaces de noms nécessaires dans votre code C#. Ces espaces de noms contiennent les classes et les méthodes nécessaires pour travailler avec Aspose.Words.
+Pour commencer, importez les espaces de noms nécessaires dans votre code C#. Ces espaces de noms contiennent les classes et les méthodes nécessaires au traitement de mots avec Aspose.Words.
 
 ```csharp
 using Aspose.Words;

@@ -1,7 +1,7 @@
 ---
 title: Dokumentseiteneinrichtung
 linktitle: Dokumentseiteneinrichtung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Einrichten eines Dokumentlayouts mit Aspose.Words für .NET.
 type: docs
 weight: 10

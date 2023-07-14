@@ -1,7 +1,7 @@
 ---
 title: Imposta le opzioni della nota di chiusura
 linktitle: Imposta le opzioni della nota di chiusura
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come impostare le opzioni delle note di chiusura nei documenti di Word utilizzando Aspose.Words per .NET. Tutorial passo passo con codice sorgente di esempio.
 type: docs
 weight: 10
@@ -89,12 +89,12 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in
 
 #### D: Come posso posizionare le note di chiusura in un documento?
 
- R: Per posizionare le note di chiusura in un documento, puoi usare il`Position` proprietà del`EndnoteOptions` classe. È possibile specificare se le note di chiusura devono essere posizionate in fondo a ogni pagina, alla fine di ogni sezione o alla fine del documento.
+ R: Per posizionare le note di chiusura in un documento, puoi usare il`Position`proprietà del`EndnoteOptions` classe. È possibile specificare se le note di chiusura devono essere posizionate in fondo a ogni pagina, alla fine di ogni sezione o alla fine del documento.
 
 #### D: Posso personalizzare il formato di numerazione delle note di chiusura?
 
- R: Sì, puoi personalizzare il formato della numerazione delle note di chiusura in Aspose.Words. Usa il`NumberFormat` proprietà del`EndnoteOptions` class per impostare il formato desiderato, come numeri arabi, numeri romani, lettere, ecc.
+ R: Sì, puoi personalizzare il formato della numerazione delle note di chiusura in Aspose.Words. Usa il`NumberFormat`proprietà del`EndnoteOptions` class per impostare il formato desiderato, come numeri arabi, numeri romani, lettere, ecc.
 
 #### D: È possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento?
 
- R: Sì, è possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento. Usa il`RestartRule` proprietà del`EndnoteOptions` class e impostarlo su`RestartContinuous` per consentire la continuazione della numerazione tra le sezioni.
+ R: Sì, è possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento. Usa il`RestartRule`proprietà del`EndnoteOptions` class e impostarlo su`RestartContinuous` per consentire la continuazione della numerazione tra le sezioni.

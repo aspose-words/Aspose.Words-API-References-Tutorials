@@ -1,7 +1,7 @@
 ---
 title: Alan Ekle Belge Oluşturucu Olmadan Metni Dahil Et
 linktitle: Belge Oluşturucu Olmadan FieldIncludeText Ekleme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinize FieldIncludeText alanını nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -83,9 +83,9 @@ Bu, Aspose.Words for .NET ile "Insert a FieldIncludeText" özelliğini kullanma 
 
 ### SSS
 
-#### S: Aspose.Words for .NET'te metin ekleme alanı için kaynak dosyayı nasıl belirleyebilirim?
+#### S: Aspose.Words for .NET'te metin ekleme alanı için kaynak dosyayı nasıl belirtebilirim?
 
- C: Aspose.Words for .NET'teki metin ekleme alanı için kaynak dosyayı belirtmek üzere`FieldIncludeText.SourceFullName` kaynak dosyanın tam yolunu ayarlamak için özellik. Kaynak dosyanın erişilebilir olduğundan ve metin ekleme alanına eklemek istediğiniz içeriği içerdiğinden emin olun.
+ C: Aspose.Words for .NET'teki metin ekleme alanı için kaynak dosyayı belirtmek üzere`FieldIncludeText.SourceFullName`kaynak dosyanın tam yolunu ayarlamak için özellik. Kaynak dosyanın erişilebilir olduğundan ve metin ekleme alanına eklemek istediğiniz içeriği içerdiğinden emin olun.
 
 #### S: Aspose.Words for .NET ile metin ekleme alanına bir makrodan metin ekleyebilir miyim?
 

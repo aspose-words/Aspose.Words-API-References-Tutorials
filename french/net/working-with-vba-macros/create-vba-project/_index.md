@@ -1,7 +1,7 @@
 ---
-title: Créer un projet Vba
-linktitle: Créer un projet Vba
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Créer un projet Vba dans un document Word
+linktitle: Créer un projet Vba dans un document Word
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment créer un projet VBA dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Créer un nouveau document
 Document doc = new Document();
 
-// Créer un nouveau projet VBA
+//Créer un nouveau projet VBA
 VbaProject project = new VbaProject();
 project.Name = "AsposeProject";
 doc.VbaProject = project;
@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -81,3 +81,25 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 ## Conclusion
 Dans ce tutoriel, nous avons vu comment créer un projet VBA dans un document Word en utilisant Aspose.Words pour .NET. La création d'un projet VBA vous permet d'ajouter et de personnaliser du code VBA dans votre document Word. N'hésitez pas à utiliser cette fonctionnalité pour automatiser des tâches ou ajouter des fonctionnalités personnalisées à vos documents Word.
+
+### FAQ
+
+#### Q : Qu'est-ce qu'un projet VBA dans un document Word ?
+
+: Un projet VBA dans un document Word est un ensemble de modules VBA contenant du code pouvant être utilisé pour automatiser des tâches, ajouter des fonctionnalités personnalisées ou effectuer des opérations spécifiques dans un document Word.
+
+#### Q : Quels sont les prérequis pour créer un projet VBA dans un document Word ?
+
+R : Avant de pouvoir créer un projet VBA dans un document Word, vous devez avoir une connaissance pratique du langage de programmation C#. Vous devez également installer la bibliothèque Aspose.Words pour .NET dans votre projet.
+
+#### Q : Comment définir le répertoire des documents dans le code ?
+
+ A : Dans le code fourni, vous devez remplacer`"YOUR DOCUMENTS DIRECTORY"` avec le chemin d'accès approprié au répertoire dans lequel vous souhaitez enregistrer votre document Word avec le projet VBA.
+
+#### Q : Comment spécifier le code source de la macro dans le module VBA ?
+
+ R : Pour spécifier le code source de la macro dans le module VBA, vous pouvez utiliser le`SourceCode`propriété de la`VbaModule` classe en lui affectant une chaîne de caractères contenant le code VBA.
+
+#### Q : Puis-je ajouter plusieurs modules VBA à un projet VBA dans un document Word ?
+
+ : Oui, vous pouvez ajouter plusieurs modules VBA à un projet VBA dans un document Word en instanciant plusieurs`VbaModule` objets et de les ajouter à la`Modules` collecte de la`VbaProject` objet. Cela vous permet d'organiser votre code VBA en différents modules pour une meilleure gestion et réutilisation.

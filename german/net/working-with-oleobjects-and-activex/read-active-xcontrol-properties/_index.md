@@ -1,7 +1,7 @@
 ---
 title: Lesen Sie die ActiveXControl-Eigenschaften aus der Word-Datei
 linktitle: Lesen Sie die ActiveXControl-Eigenschaften aus der Word-Datei
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Lesen Sie Eigenschaften von ActiveX-Steuerelementen in einer Word-Datei mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -86,7 +86,7 @@ Hier ist der vollständige Quellcode zum Lesen von Eigenschaften von ActiveX-Ste
 
 In dieser Anleitung erfahren Sie, wie Sie mit Aspose.Words für .NET Eigenschaften von ActiveX-Steuerelementen in einer Word-Datei lesen. Indem Sie die beschriebenen Schritte befolgen, können Sie das Dokument initialisieren, ActiveX-Steuerelemente abrufen und deren Eigenschaften lesen. Nutzen Sie den bereitgestellten Beispielcode als Ausgangspunkt und passen Sie ihn an Ihre spezifischen Anforderungen an.
 
-Durch das Lesen der Eigenschaften von ActiveX-Steuerelementen können Sie wichtige Informationen aus Ihren Word-Dateien extrahieren, die diese Steuerelemente enthalten. Aspose.Words für .NET bietet leistungsstarke Funktionen für die Arbeit mit ActiveX-Steuerelementen und die Automatisierung Ihrer Dokumentverarbeitung.
+Durch das Lesen der Eigenschaften von ActiveX-Steuerelementen können Sie wichtige Informationen aus Ihren Word-Dateien extrahieren, die diese Steuerelemente enthalten. Aspose.Words für .NET bietet leistungsstarke Funktionen für die Textverarbeitung mit ActiveX-Steuerelementen und die Automatisierung Ihrer Dokumentverarbeitung.
 
 ### FAQs
 

@@ -1,14 +1,14 @@
 ---
 title: Uyarı Geri Arama
 linktitle: Uyarı Geri Arama
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile geri çağırma işlevini kullanarak bir Word belgesi yüklerken uyarıları nasıl ele alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/warning-callback/
 ---
 
-Bir C# uygulamasında Word belgeleriyle çalışırken, belge yüklenirken verilen uyarıların farkında olmak yararlı olabilir. .NET için Aspose.Words kitaplığıyla, LoadOptions yükleme seçeneklerini kullanarak belgeyi yüklerken uyarıları işlemek için kolayca bir geri arama işlevi belirleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak uyarılar için bir geri arama işlevi kullanarak bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+Bir C# uygulamasında Word ile Kelime İşleme belgeleri hazırlanırken, belge yüklenirken verilen uyarılardan haberdar olmak faydalı olabilir. .NET için Aspose.Words kitaplığıyla, LoadOptions yükleme seçeneklerini kullanarak belgeyi yüklerken uyarıları işlemek için kolayca bir geri arama işlevi belirleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak uyarılar için bir geri arama işlevi kullanarak bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 

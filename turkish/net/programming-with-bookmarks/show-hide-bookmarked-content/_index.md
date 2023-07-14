@@ -1,14 +1,14 @@
 ---
-title: Göster Yer İşaretli İçeriği Gizle
-linktitle: Göster Yer İşaretli İçeriği Gizle
-second_title: Aspose.Words for .NET API Referansı
-description: Aspose.Words for .NET kullanarak yer imi içeriğinin nasıl gösterileceğini veya gizleneceğini öğrenin.
+title: Word Belgesinde Yer İşaretli İçeriği Gizle'yi Göster
+linktitle: Word Belgesinde Yer İşaretli İçeriği Gizle'yi Göster
+second_title: Aspose.Words Belge İşleme API'sı
+description: Aspose.Words for .NET'i kullanarak word belgesindeki yer imi içeriğini nasıl göstereceğinizi veya gizleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-Bu makalede, Aspose.Words for .NET kitaplığında Show Hide Bookmarked Content işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, verileri birleştirirken belirli bir koşula dayalı olarak bir yer iminin içeriğini göstermenize veya gizlemenize olanak tanır.
+Bu makalede, Aspose.Words for .NET kitaplığında Show Hide Bookmarked Content işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, verileri birleştirirken belirli bir koşula dayalı olarak bir yer iminin içeriğini word belgesinde göstermenizi veya gizlemenizi sağlar.
 
 ## Önkoşullar
 
@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## 2. Adım: Birleştirme alanlarını ekleme
 
- Bir belge oluşturucu kullanıyoruz`DocumentBuilder` gerekli birleştirme alanlarını eklemek için. Bu birleştirme alanları, değerine bağlı olarak yer imi içeriğini göstermek veya gizlemek için bir koşul ayarlar.`showHide` değişken:
+ Bir belge oluşturucu kullanıyoruz`DocumentBuilder`gerekli birleştirme alanlarını eklemek için. Bu birleştirme alanları, değerine bağlı olarak yer imi içeriğini göstermek veya gizlemek için bir koşul ayarlar.`showHide` değişken:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -145,3 +145,33 @@ Aspose.Words for .NET kullanarak yer imi içeriğinin gösterilmesini veya gizle
 ## Çözüm
 
 Bu makalede, Aspose.Words for .NET'in Show Hide Bookmarked Content özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Verileri birleştirirken belirli bir koşula bağlı olarak bir yer iminin içeriğini göstermek veya gizlemek için adım adım bir kılavuz izledik.
+
+### Word belgesinde yer imi eklenmiş içeriğin gösterilmesi ile ilgili SSS
+
+#### S: Aynı koşulu aynı belgede birden fazla yer imi için kullanabilir miyim?
+
+ C: Evet, aynı koşulu aynı belgede birden çok yer imi için kullanabilirsiniz. Yer imi adını ve isteğe bağlı olarak değerini ayarlayarak her yer imi için 2-5 arasındaki adımları tekrarlayın.`showhide` gerektiği gibi değişken.
+
+#### S: Yer imi içeriğini göstermek veya gizlemek için nasıl daha fazla koşul ekleyebilirim?
+
+ C: Daha fazla koşul eklemek için aşağıdaki gibi mantıksal işleçler kullanabilirsiniz:`AND` Ve`OR` adım 2'de birleştirme alanlarını ekleme kodunda. Ek koşullar eklemek için aşağıdaki koddaki koşulu düzenleyin :
+
+```csharp
+builder. Write("\" = \"true\" ");
+```
+
+#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki yer imini nasıl silebilirim?
+
+C: Aspose.Words for .NET kullanarak bir Word belgesindeki yer imini kaldırmak için`Remove` gelen yöntem`Bookmarks` belge aralığının toplanması. Belirli bir yer imini silmek için örnek kod aşağıda verilmiştir:
+
+```csharp
+doc.Range.Bookmarks.Remove(bookmarkName);
+```
+
+#### S: Aspose.Words kütüphanesi ücretsiz mi?
+
+Y: Aspose.Words kitaplığı ticari bir kitaplıktır ve projelerinizde kullanmak için geçerli bir lisans gerektirir. Lisanslama seçenekleri ve fiyatlandırma hakkında daha fazla bilgi edinmek için Aspose'un resmi web sitesine bakabilirsiniz.
+
+#### S: .NET'te Word belgeleriyle Sözcük İşleme için kullanılabilen başka kitaplıklar var mı?
+
+Y: Evet, .NET'te Word belgeleriyle Sözcük İşleme için Open XML SDK ve GemBox.Document gibi başka kitaplıklar da vardır. Özel ihtiyaçlarınıza ve tercihlerinize göre bu kütüphaneleri Aspose.Words'a alternatif olarak keşfedebilirsiniz.

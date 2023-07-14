@@ -1,7 +1,7 @@
 ---
 title: Yeni Sayfaya Katıl
 linktitle: Yeni Sayfaya Katıl
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak biçimlendirmeyi korurken yeni bir sayfada iki belgeyi nasıl birleştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## 4. Adım: Kaynak belgeyi ekleyin
 
- kullanarak kaynak belgeyi hedef belgeye ekleyin.`AppendDocument` yöntemi`Document` sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting`kaynak belgedeki orijinal stilleri korumak için.
+ kullanarak kaynak belgeyi hedef belgeye ekleyin.`AppendDocument` yöntemi`Document` sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak belgedeki orijinal stilleri korumak için.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -58,7 +58,7 @@ Bu, Aspose.Words for .NET kullanılarak yeni bir sayfada iki belgeyi birleştirm
 ### Aspose.Words for .NET kullanarak Yeni Sayfaya Katıl için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

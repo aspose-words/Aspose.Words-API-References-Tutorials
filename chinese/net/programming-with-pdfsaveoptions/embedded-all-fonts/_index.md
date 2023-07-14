@@ -1,7 +1,7 @@
 ---
 title: 在 PDF 文档中嵌入字体
 linktitle: 在 PDF 文档中嵌入字体
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 在 PDF 中嵌入字体的分步指南。
 type: docs
 weight: 10

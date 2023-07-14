@@ -1,7 +1,7 @@
 ---
 title: Encajar a la cuadricula
 linktitle: Encajar a la cuadricula
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para explicar el código fuente de C# de la función Snap to Grid con Aspose.Words para .NET.
 type: docs
 weight: 10

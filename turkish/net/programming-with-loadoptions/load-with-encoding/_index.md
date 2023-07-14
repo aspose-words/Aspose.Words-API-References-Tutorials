@@ -1,13 +1,13 @@
 ---
 title: Kodlama ile Yükle
 linktitle: Kodlama ile Yükle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak belirli bir kodlamaya sahip bir belgeyi nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/load-with-encoding/
 ---
-Bir C# uygulamasında metin belgeleriyle çalışırken, doğru kodlamayı belirterek bunları doğru şekilde yükleyebilmek önemlidir. .NET için Aspose.Words kitaplığı ile, LoadOptions yükleme seçeneklerini kullanarak metin belgelerini istediğiniz kodlamayla kolayca yükleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak belirtilen kodlamaya sahip bir metin belgesini yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+Bir C# uygulamasında metin belgeleriyle Sözcük İşleme yaparken, doğru kodlamayı belirterek bunları doğru şekilde yükleyebilmek önemlidir. .NET için Aspose.Words kitaplığı ile, LoadOptions yükleme seçeneklerini kullanarak metin belgelerini istediğiniz kodlamayla kolayca yükleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak belirtilen kodlamaya sahip bir metin belgesini yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 

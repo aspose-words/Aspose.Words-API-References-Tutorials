@@ -1,7 +1,7 @@
 ---
 title: Konvertieren Sie Docx in Rtf
 linktitle: Konvertieren Sie Docx in Rtf
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET vom Docx- in das RTF-Format konvertieren. Schritt-für-Schritt-Anleitung mit Beispielquellcode.
 type: docs
 weight: 10

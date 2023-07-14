@@ -1,7 +1,7 @@
 ---
 title: Font Settings With Load Options
 linktitle: Font Settings With Load Options
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to load a Word document with custom loading options and corresponding font settings.
 type: docs
 weight: 10

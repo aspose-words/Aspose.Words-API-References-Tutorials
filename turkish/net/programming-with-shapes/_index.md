@@ -1,13 +1,13 @@
 ---
-title: Şekillerle Programlama
-linktitle: Şekillerle Programlama
-second_title: Aspose.Words for .NET API Referansı
+title: Şekillerle Sözcük İşleme
+linktitle: Şekillerle Sözcük İşleme
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te şekil programlamayı keşfedin. C# dilinde adım adım öğreticiler ve örnek kod ile Word belgelerinizdeki şekilleri nasıl değiştireceğinizi ve özelleştireceğinizi öğrenin.
 type: docs
 weight: 1560
 url: /tr/net/programming-with-shapes/
 ---
-Şekillerle programlama üzerine Aspose.Words for .NET öğreticileri, Word belgelerindeki şekilleri manipüle etmek ve yönetmek için kapsamlı bir kılavuz sunar. Bu öğreticiler, şekillerin nasıl oluşturulacağını, değiştirileceğini ve silineceğini ve bunların renk, boyut, konum ve diğer nitelikler açısından nasıl özelleştirileceğini adım adım açıklar. Öğreticiler, kolay anlaşılması ve uygulanması için net kod örnekleri ve adım adım açıklamalar içerir.
+Şekillerle Kelime İşleme üzerine Aspose.Words for .NET öğreticileri, Word belgelerindeki şekilleri manipüle etmek ve yönetmek için kapsamlı bir rehber sunar. Bu öğreticiler, şekillerin nasıl oluşturulacağını, değiştirileceğini ve silineceğini ve bunların renk, boyut, konum ve diğer nitelikler açısından nasıl özelleştirileceğini adım adım açıklar. Öğreticiler, kolay anlaşılması ve uygulanması için net kod örnekleri ve adım adım açıklamalar içerir.
 
 Bu öğreticiler aracılığıyla, düzeni ve bilgi görselleştirmesini iyileştirmek için belgelerinize dikdörtgenler, daireler, çizgiler ve oklar gibi şekilleri nasıl ekleyeceğinizi öğreneceksiniz. Ayrıca döndürme, saydamlık ve dolgu gibi şekil özelliklerini kendi özel ihtiyaçlarınıza uyacak şekilde nasıl değiştireceğinizi de öğreneceksiniz.
 

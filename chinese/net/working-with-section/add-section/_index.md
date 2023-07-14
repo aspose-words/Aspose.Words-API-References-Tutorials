@@ -1,7 +1,7 @@
 ---
 title: 添加部分
 linktitle: 添加部分
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，了解如何使用 Aspose.Words for .NET 将节添加到 Word 文档。构建文档的分步指南。
 type: docs
 weight: 10

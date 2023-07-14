@@ -1,7 +1,7 @@
 ---
 title: Belge Başlangıç Sonuna Taşı
 linktitle: Belge Başlangıç Sonuna Taşı
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu adım adım kılavuz ile Word belgelerinde belge başlangıcına ve bitişine gitmek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
@@ -66,4 +66,4 @@ Console.WriteLine("\nThis is the end of the document.");
 
 ## Çözüm
 
-Bu örnekte, Aspose.Words for .NET'in Belge Başlangıcına/Bitişine Taşı özelliğini inceledik. DocumentBuilder sınıfını kullanarak bir belgenin başına ve sonuna nasıl gidileceğini öğrendik. Bu özellik, Word belgeleriyle programlı olarak çalışırken ve belgedeki belirli konumlara içerik eklemeye veya değiştirmeye ihtiyaç duyulduğunda kullanışlıdır.
+Bu örnekte, Aspose.Words for .NET'in Belge Başlangıcına/Bitişine Taşı özelliğini inceledik. DocumentBuilder sınıfını kullanarak bir belgenin başına ve sonuna nasıl gidileceğini öğrendik. Bu özellik, Word belgeleriyle programlı olarak Sözcük İşleme yaparken ve belge içindeki belirli konumlara içerik eklemeye veya değiştirmeye ihtiyaç duyulduğunda kullanışlıdır.

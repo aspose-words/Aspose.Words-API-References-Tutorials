@@ -1,14 +1,14 @@
 ---
 title: Obtener sustitución sin sufijos
 linktitle: Obtener sustitución sin sufijos
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda cómo obtener anulaciones sin sufijo en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-En este tutorial, le mostraremos cómo obtener anulaciones sin sufijos en un documento de Word utilizando la biblioteca Aspose.Words para .NET. Las sustituciones sin sufijos se utilizan para resolver problemas de sustitución de fuentes al mostrar o imprimir documentos. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
+En este tutorial, le mostraremos cómo obtener anulaciones sin sufijos en un documento de Word utilizando la biblioteca Aspose.Words para .NET. Las sustituciones sin sufijos se utilizan para resolver problemas de sustitución de fuentes al visualizar o imprimir documentos. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
 
 ## requisitos previos
 Antes de comenzar, asegúrese de tener los siguientes elementos:
@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 ### Ejemplo de código fuente para Obtener sustitución sin sufijos mediante Aspose.Words para .NET 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");

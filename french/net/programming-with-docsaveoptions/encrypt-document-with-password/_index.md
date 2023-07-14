@@ -1,13 +1,13 @@
 ---
 title: Crypter le document avec un mot de passe
 linktitle: Crypter le document avec un mot de passe
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à chiffrer des documents avec un mot de passe en utilisant Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-La sécurité des documents est essentielle lorsque vous travaillez avec des fichiers dans une application C#. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement protéger vos documents en les cryptant avec un mot de passe. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour chiffrer un document à l'aide des options d'enregistrement de DocSaveOptions.
+La sécurité des documents est essentielle lors du traitement de texte avec des fichiers dans une application C#. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement protéger vos documents en les cryptant avec un mot de passe. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour chiffrer un document à l'aide des options d'enregistrement de DocSaveOptions.
 
 ## Comprendre la bibliothèque Aspose.Words
 

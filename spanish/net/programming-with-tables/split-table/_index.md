@@ -1,7 +1,7 @@
 ---
 title: Tabla dividida
 linktitle: Tabla dividida
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a dividir una tabla en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ En este tutorial, vamos a aprender cómo dividir una tabla en un documento de Wo
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Cargar el documento
-Para comenzar a trabajar con el documento, siga estos pasos:
+Para iniciar el procesamiento de textos con el documento, siga estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -71,7 +71,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Ejemplo de código fuente para Split Table usando Aspose.Words para .NET 
 
 ```csharp
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

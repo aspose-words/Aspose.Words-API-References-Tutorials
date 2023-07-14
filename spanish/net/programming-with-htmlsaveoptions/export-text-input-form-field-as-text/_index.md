@@ -1,7 +1,7 @@
 ---
 title: Exportar campo de formulario de entrada de texto como texto
 linktitle: Exportar campo de formulario de entrada de texto como texto
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para exportar campos de formulario de entrada de texto como texto sin formato con Aspose.Words para .NET.
 type: docs
 weight: 10

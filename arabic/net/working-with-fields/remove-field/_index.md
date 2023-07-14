@@ -1,7 +1,7 @@
 ---
 title: إزالة الحقل
 linktitle: إزالة الحقل
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا الدليل ، ستتعلم كيفية حذف حقل معين في مستند باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

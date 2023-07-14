@@ -1,7 +1,7 @@
 ---
 title: Получите фактические очки границ формы
 linktitle: Получите фактические очки границ формы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как получить фактические границы фигуры в пунктах (единицы измерения) в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /ru/net/programming-with-shapes/get-actual-shape-bounds-points/
 Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
 - Установлена библиотека Aspose.Words for .NET.
-- Базовые знания C# и работы с документами Word.
+- Базовые знания C# и Word Processing с документами Word.
 
 ## Шаг 1: Создайте новый документ и DocumentBuilder
  Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
@@ -33,7 +33,7 @@ shape.AspectRatioLocked = false;
 ```
 
 ## Шаг 3: Получить фактические точки границ формы
- Доступ к форме`ShapeRenderer` используя`GetShapeRenderer`метод. Затем извлеките фактические границы фигуры в точках, используя`BoundsInPoints` свойство.
+ Доступ к форме`ShapeRenderer` используя`GetShapeRenderer` метод. Затем извлеките фактические границы фигуры в точках, используя`BoundsInPoints` свойство.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");

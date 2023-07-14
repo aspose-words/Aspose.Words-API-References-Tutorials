@@ -1,7 +1,7 @@
 ---
 title: Ooxml Compliance Iso 29500_2008_Strict
 linktitle: Ooxml Compliance Iso 29500_2008_Strict
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to ensure Ooxml Iso 29500_2008_Strict compliance when saving documents with Aspose.Words for .NET.
 type: docs
 weight: 10

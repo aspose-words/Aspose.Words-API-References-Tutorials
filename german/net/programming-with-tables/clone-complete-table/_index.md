@@ -1,7 +1,7 @@
 ---
 title: Vollständige Tabelle klonen
 linktitle: Vollständige Tabelle klonen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine ganze Tabelle in ein Word-Dokument klonen.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET eine ganze T
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Laden des Dokuments und Zugriff auf die Tabelle
-Um mit der Tabelle zu arbeiten, müssen wir das Dokument laden, das sie enthält, und darauf zugreifen. Folge diesen Schritten:
+Um die Textverarbeitung mit der Tabelle zu starten, müssen wir das Dokument, das sie enthält, laden und darauf zugreifen. Folge diesen Schritten:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Zugriff auf das Array
@@ -60,16 +60,16 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ### Beispielquellcode für Clone Complete Table mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Klonen Sie die Tabelle und fügen Sie sie nach dem Original in das Dokument ein.
+	//Klonen Sie die Tabelle und fügen Sie sie nach dem Original in das Dokument ein.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
 	// Fügen Sie zwischen den beiden Tabellen einen leeren Absatz ein.
-	//Andernfalls werden sie beim Speichern zu einem zusammengefasst. Dies hat mit der Dokumentenvalidierung zu tun.
+	// Andernfalls werden sie beim Speichern zu einem zusammengefasst. Dies hat mit der Dokumentenvalidierung zu tun.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```

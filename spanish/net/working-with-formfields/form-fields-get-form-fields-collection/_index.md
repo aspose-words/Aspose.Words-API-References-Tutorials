@@ -1,7 +1,7 @@
 ---
 title: Campos de formulario Obtener colección de campos de formulario
 linktitle: Campos de formulario Obtener colección de campos de formulario
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a recuperar y manipular la colección de campos de formulario en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Paso 2: Recuperar la colección de campos de formulario
 
- A continuación, acceda a la`FormFields` propiedad de la`Range` objeto en el documento para recuperar la colección de campos de formulario:
+ A continuación, acceda a la`FormFields`propiedad de la`Range` objeto en el documento para recuperar la colección de campos de formulario:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

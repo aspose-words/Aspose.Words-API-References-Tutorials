@@ -1,7 +1,7 @@
 ---
 title: Stellen Sie die Komprimierungsstufe ein
 linktitle: Stellen Sie die Komprimierungsstufe ein
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Komprimierungsstufe beim Speichern eines Dokuments mit Aspose.Words für .NET festlegen.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Jetzt können Sie den Quellcode ausführen, um die Komprimierungsstufe beim Spei
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Document.docx");
@@ -66,6 +66,6 @@ In diesem Tutorial haben wir die Funktionalität zum Festlegen der Komprimierung
 
 Die Verwendung der Komprimierung kann hilfreich sein, wenn Sie die Größe der generierten Dateien reduzieren müssen, insbesondere bei großen Dokumenten. Dies kann das Speichern, Teilen und Übertragen von Dokumenten erleichtern.
 
-Aspose.Words für .NET bietet eine Reihe leistungsstarker Optionen und Funktionen zur Dokumentenbearbeitung. Durch die Verwendung der entsprechenden Sicherungsoptionen können Sie den Dokumenterstellungsprozess anpassen und die Leistung Ihrer Anwendung optimieren.
+Aspose.Words für .NET bietet eine Reihe leistungsstarker Optionen und Funktionen zur Dokumentenbearbeitung. Durch die Verwendung der entsprechenden Sicherungsoptionen können Sie den Dokumentenerstellungsprozess anpassen und die Leistung Ihrer Anwendung optimieren.
 
 Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um Ihren Workflow bei der Dokumentenerstellung zu verbessern.

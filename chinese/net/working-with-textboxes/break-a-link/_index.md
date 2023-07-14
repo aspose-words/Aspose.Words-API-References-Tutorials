@@ -1,14 +1,14 @@
 ---
 title: 断开 Word 文档中的前向链接
 linktitle: 断开 Word 文档中的前向链接
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 断开 Word 文档中的前向链接。
 type: docs
 weight: 10
 url: /zh/net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words for .NET 是一个功能强大的库，提供了以编程方式处理 Microsoft Word 文档的各种功能。它的有用功能之一是能够断开 Word 文档中的前向链接。在本教程中，我们将探索 C# 源代码，演示如何使用 Aspose.Words for .NET 断开 Word 文档中的前向链接。
+Aspose.Words for .NET 是一个功能强大的库，它以编程方式提供 Microsoft Word 文档的文字处理的各种功能。它的有用功能之一是能够断开 Word 文档中的前向链接。在本教程中，我们将探索 C# 源代码，演示如何使用 Aspose.Words for .NET 断开 Word 文档中的前向链接。
 
 ## 第 1 步：C# 源代码预览
 

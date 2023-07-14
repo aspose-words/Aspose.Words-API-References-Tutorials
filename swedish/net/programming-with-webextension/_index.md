@@ -1,13 +1,13 @@
 ---
-title: Programmering med Webextension
-linktitle: Programmering med Webextension
-second_title: Aspose.Words för .NET API Referens
+title: Ordbehandling med Webextension
+linktitle: Ordbehandling med Webextension
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du utvecklar webbtillägg för Word-dokument med Aspose.Words för .NET. Lär dig hur du skapar, ändrar och anpassar webbtillägg, integrerar dem i dina Word-dokument.
 type: docs
 weight: 1530
 url: /sv/net/programming-with-webextension/
 ---
-Aspose.Words för .NET-handledningarna om programmering med WebExtensions leder dig genom de avancerade funktionerna för att arbeta med webbtillägg i dina Word-dokument. Handledningarna beskriver hur man använder Aspose.Words API:er för att skapa, redigera och ta bort webbtillägg, samt interagera med JavaScript-kod inbäddad i Word-dokument.
+Aspose.Words för .NET-handledningarna om ordbehandling med WebExtensions leder dig genom de avancerade funktionerna i ordbehandling med webbtillägg i dina Word-dokument. Handledningarna beskriver hur man använder Aspose.Words API:er för att skapa, redigera och ta bort webbtillägg, samt interagera med JavaScript-kod inbäddad i Word-dokument.
 
 Dessa handledningar ger steg-för-steg-instruktioner för att förstå och använda funktionaliteten hos WebExtensions med Aspose.Words för .NET. Du kommer att lära dig hur du kommer åt webbtilläggsobjekt, hanterar händelser, utvärderar JavaScript-kod, lägger till anpassad funktionalitet och mer. Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa tutorials hjälpa dig att behärska programmeringstekniker med WebExtensions.
 

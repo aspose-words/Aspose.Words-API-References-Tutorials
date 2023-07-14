@@ -1,7 +1,7 @@
 ---
 title: Seçenekleri Karşılaştır
 linktitle: Seçenekleri Karşılaştır
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Seçenekleri Karşılaştır özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz.
 type: docs
 weight: 10

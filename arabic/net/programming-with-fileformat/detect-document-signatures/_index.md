@@ -1,7 +1,7 @@
 ---
 title: كشف التوقيع الرقمي في مستند Word
 linktitle: كشف التوقيع الرقمي في مستند Word
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لاكتشاف التوقيع الرقمي على مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signe
 
 ## الخطوة 3: تحقق من وجود توقيعات رقمية
 
- نتحقق مما إذا كان المستند يحتوي على توقيعات رقمية باستخدام امتداد`HasDigitalSignature` ممتلكات`FileFormatInfo` هدف. إذا تم الكشف عن التوقيعات الرقمية ، فإننا نعرض رسالة تشير إلى أن التوقيعات ستفقد إذا تم فتح / حفظ المستند باستخدام Aspose.Words.
+ نتحقق مما إذا كان المستند يحتوي على توقيعات رقمية باستخدام امتداد`HasDigitalSignature`ممتلكات`FileFormatInfo` هدف. إذا تم الكشف عن التوقيعات الرقمية ، فإننا نعرض رسالة تشير إلى أن التوقيعات ستفقد إذا تم فتح / حفظ المستند باستخدام Aspose.Words.
 
 ```csharp
 if (info.HasDigitalSignature)
@@ -68,7 +68,7 @@ if (info.HasDigitalSignature)
 
 #### كيف تكتشف وجود توقيع رقمي على مستند Word باستخدام Aspose.Words for .NET؟
 
- لاكتشاف وجود توقيع رقمي على مستند Word باستخدام Aspose.Words for .NET ، يمكنك اتباع الخطوات الواردة في البرنامج التعليمي. باستخدام`DetectFileFormat` طريقة`FileFormatUtil` سيسمح لك الفصل باكتشاف معلومات تنسيق الملف. ثم يمكنك التحقق من`HasDigitalSignature` ممتلكات`FileFormatInfo`لتحديد ما إذا كان المستند يحتوي على توقيع رقمي. إذا تم اكتشاف توقيع رقمي ، يمكنك عرض رسالة تفيد بأن التوقيعات ستفقد إذا تم فتح / حفظ المستند باستخدام Aspose.Words.
+ لاكتشاف وجود توقيع رقمي على مستند Word باستخدام Aspose.Words for .NET ، يمكنك اتباع الخطوات الواردة في البرنامج التعليمي. باستخدام`DetectFileFormat` طريقة`FileFormatUtil` سيسمح لك الفصل باكتشاف معلومات تنسيق الملف. ثم يمكنك التحقق من`HasDigitalSignature`ممتلكات`FileFormatInfo`لتحديد ما إذا كان المستند يحتوي على توقيع رقمي. إذا تم اكتشاف توقيع رقمي ، يمكنك عرض رسالة تفيد بأن التوقيعات ستفقد إذا تم فتح / حفظ المستند باستخدام Aspose.Words.
 
 #### كيف يتم تحديد الدليل الذي يحتوي على الوثائق المراد البحث فيها عن التوقيع الرقمي؟
 

@@ -1,14 +1,14 @@
 ---
 title: Word Belgesinde İleri Bağlantıyı Kır
 linktitle: Word Belgesinde İleri Bağlantıyı Kır
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesindeki ileri bağlantıları nasıl kıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words for .NET, Microsoft Word belgeleriyle programlı olarak çalışmak için çeşitli özellikler sunan güçlü bir kitaplıktır. Yararlı özelliklerinden biri, bir kelime belgesindeki bağlantıları ileriye doğru kırabilme yeteneğidir. Bu öğreticide, Aspose.Words for .NET kullanarak word belgesindeki ileri bağlantının nasıl kırılacağını gösteren C# kaynak kodunu keşfedeceğiz.
+Aspose.Words for .NET, programlı olarak Microsoft Word belgeleriyle Kelime İşleme için çeşitli özellikler sunan güçlü bir kitaplıktır. Yararlı özelliklerinden biri, bir kelime belgesindeki bağlantıları ileriye doğru kırabilme yeteneğidir. Bu öğreticide, Aspose.Words for .NET kullanarak word belgesindeki ileri bağlantının nasıl kırılacağını gösteren C# kaynak kodunu keşfedeceğiz.
 
 ## 1. Adım: C# Kaynak Kodu Önizlemesi
 
@@ -16,7 +16,7 @@ Sağlanan C# kaynak kodu, Aspose.Words for .NET'in "Break A Link" özelliğine o
 
 ## 2. Adım: Belgeyi ayarlama ve bir Metin Kutusu şekli oluşturma
 
-Başlamak için, belgeyi kurmamız ve bir TextBox şekli oluşturmamız gerekiyor. Aşağıdaki kod, yeni bir örneğini başlatır.`Document` class ve bir metin kutusu şekli oluşturur:
+ Başlamak için, belgeyi kurmamız ve bir TextBox şekli oluşturmamız gerekiyor. Aşağıdaki kod, yeni bir örneğini başlatır.`Document` class ve bir metin kutusu şekli oluşturur:
 
 ```csharp
 Document doc = new Document();
@@ -58,7 +58,7 @@ TextBox textBox = shape.TextBox;
 // İleri bağlantıyı kes.
 textBox.BreakForwardLink();
 
-//Boş bir değer ayarlayarak ileri bağlantıyı kesin.
+// Boş bir değer ayarlayarak ileri bağlantıyı kesin.
 textBox. Next = null;
 
 // Bu metin kutusuna yönlendiren bir bağlantıyı koparın.
@@ -81,7 +81,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesindeki yeniden yönlendirme b
 
 #### S: Boş bir değer ayarlayarak bir yönlendirme bağlantısını nasıl kesebilirim?
 
- A: Alternatif olarak, ayarlayarak bir yönlendirme bağlantısını kesebilirsiniz.`Next`TextBox özelliği`null`. Bu, sonraki şekle olan bağlantıyı etkili bir şekilde kaldırır.
+A: Alternatif olarak, ayarlayarak bir yönlendirme bağlantısını kesebilirsiniz.`Next` TextBox özelliği`null`. Bu, sonraki şekle olan bağlantıyı etkili bir şekilde kaldırır.
 
 #### S: TextBox'a giden bir bağlantı nasıl kesilir?
 

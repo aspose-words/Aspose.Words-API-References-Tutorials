@@ -1,7 +1,7 @@
 ---
 title: Benutzerdefinierte Dokumenteigenschaften entfernen
 linktitle: Benutzerdefinierte Dokumenteigenschaften entfernen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Entfernen benutzerdefinierter Eigenschaften aus einem Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10

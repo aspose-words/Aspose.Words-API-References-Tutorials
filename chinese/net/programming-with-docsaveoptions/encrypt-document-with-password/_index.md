@@ -1,13 +1,13 @@
 ---
 title: 使用密码加密文档
 linktitle: 使用密码加密文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 使用密码加密文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-在 C# 应用程序中处理文件时，文档安全性至关重要。借助适用于 .NET 的 Aspose.Words 库，您可以通过使用密码加密来轻松保护您的文档。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码并使用 DocSaveOptions 保存选项来加密文档。
+在 C# 应用程序中对文件进行文字处理时，文档安全性至关重要。借助适用于 .NET 的 Aspose.Words 库，您可以通过使用密码加密来轻松保护您的文档。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码并使用 DocSaveOptions 保存选项来加密文档。
 
 ## 了解 Aspose.Words 库
 

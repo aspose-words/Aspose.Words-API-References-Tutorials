@@ -1,7 +1,7 @@
 ---
 title: Citazione
 linktitle: Citazione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare la citazione con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Cargar rango de página de PDF
 linktitle: Cargar rango de página de PDF
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para cargar un rango de páginas PDF específico con Aspose.Words para .NET.
 type: docs
 weight: 10

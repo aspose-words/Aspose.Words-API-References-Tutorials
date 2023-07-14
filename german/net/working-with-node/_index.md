@@ -1,13 +1,15 @@
 ---
-title: Arbeiten mit Node
-linktitle: Arbeiten mit Node
-second_title: Aspose.Words für .NET API-Referenz
+title: Textverarbeitung mit Node
+linktitle: Textverarbeitung mit Node
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Knoten in Word-Dokumenten arbeiten. Ausführliche Tutorials mit Codebeispielen.
 type: docs
 weight: 1000
 url: /de/net/working-with-node/
 ---
-„Arbeiten mit Revisionen“ ist eine umfassende Ressource, die Sie durch die Arbeit mit Revisionen in Word-Dokumenten mithilfe der Aspose.Words für .NET-Bibliothek führt. Die Tutorials zeigen Ihnen Schritt für Schritt, wie Sie Revisionen hinzufügen, löschen, akzeptieren und ablehnen, wie Sie Revisionen im Dokument anzeigen, wie Sie verschiedene Versionen vergleichen und vieles mehr. Sie erfahren, wie Sie mit Bewertungen für die Zusammenarbeit und das Änderungsmanagement in Ihren Word-Dokumenten effektiv arbeiten. Diese Ressource ist wichtig für Entwickler, die die Revisionsverwaltung in ihren Aspose.Words für .NET-basierte Anwendungen automatisieren möchten.
+Knoten in Aspose.Words für .NET stellen die verschiedenen Elemente eines Word-Dokuments dar, z. B. Absätze, Tabellen, Bilder und mehr. Durch die Manipulation dieser Knoten können Entwickler den Inhalt und die Formatierung eines Word-Dokuments programmgesteuert ändern. Knoten sorgen für eine hierarchische Struktur des Dokuments und ermöglichen eine einfache Navigation und Bearbeitung bestimmter Elemente.
+
+Um mit Knoten in Aspose.Words für .NET zu arbeiten, können Entwickler das von der Bibliothek bereitgestellte Document Object Model (DOM) verwenden. Das DOM stellt das gesamte Word-Dokument als Knotenbaum dar, wobei das Dokument selbst den Wurzelknoten darstellt. Jeder Knoten hat einen bestimmten Knotentyp und kann untergeordnete Knoten enthalten, was ein umfassendes Maß an Anpassung ermöglicht.
 
  ## Tutorials
 | Titel | Beschreibung |

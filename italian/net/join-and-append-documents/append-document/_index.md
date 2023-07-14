@@ -1,7 +1,7 @@
 ---
 title: Aggiungi documento
 linktitle: Aggiungi documento
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come aggiungere il contenuto di un documento a un altro utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ Questo completa l'implementazione dell'aggiunta di un documento utilizzando Aspo
 ### Esempio di codice sorgente per Accoda documento utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -63,7 +63,7 @@ Questo completa l'implementazione dell'aggiunta di un documento utilizzando Aspo
 	// I nodi di sezione sono figli immediati del nodo Documento, quindi possiamo semplicemente enumerare il Documento.
 	foreach (Section srcSection in srcDoc)
 	{
-		//Poiché stiamo copiando una sezione da un documento a un altro,
+		// Poiché stiamo copiando una sezione da un documento a un altro,
 		// è necessario importare il nodo Sezione nel documento di destinazione.
 		// Questo regola eventuali riferimenti specifici del documento a stili, elenchi, ecc.
 		//

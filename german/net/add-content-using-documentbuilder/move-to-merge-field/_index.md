@@ -1,7 +1,7 @@
 ---
 title: Zum Zusammenführungsfeld verschieben
 linktitle: Zum Zusammenführungsfeld verschieben
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie anhand der Schritt-für-Schritt-Anleitung, wie Sie die Funktion „In Merge-Feld verschieben“ in Aspose.Words für .NET implementieren.
 type: docs
 weight: 10
@@ -79,5 +79,5 @@ builder.Write(" Text immediately after the field.");
 
 ## Abschluss
 
-Wir haben die Funktion „In Zusammenführungsfeld verschieben“ von Aspose.Words für .NET untersucht. Wir haben gelernt, wie man mithilfe der DocumentBuilder-Klasse zu Zusammenführungsfeldern innerhalb eines Dokuments navigiert und Operationen daran durchführt. Diese Funktion ist nützlich, wenn Sie programmgesteuert mit Merge arbeiten
+Wir haben die Funktion „In Zusammenführungsfeld verschieben“ von Aspose.Words für .NET untersucht. Wir haben gelernt, wie man mithilfe der DocumentBuilder-Klasse zu Zusammenführungsfeldern innerhalb eines Dokuments navigiert und Operationen daran durchführt. Diese Funktion ist bei der programmgesteuerten Textverarbeitung mit Zusammenführung nützlich
 

@@ -1,7 +1,7 @@
 ---
 title: Rename Merge Fields
 linktitle: Rename Merge Fields
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, you will learn how to rename merge fields in a document using Aspose.Words for .NET.
 type: docs
 weight: 10

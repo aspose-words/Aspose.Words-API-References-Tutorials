@@ -1,7 +1,7 @@
 ---
-title: 图表数据标签
-linktitle: 图表数据标签
-second_title: Aspose.Words for .NET API 参考
+title: 自定义图表数据标签
+linktitle: 自定义图表数据标签
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在图表中添加和自定义数据标签，以提供有关数据点的附加信息。
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /zh/net/programming-with-charts/chart-data-label/
 要学习本教程，您需要具备以下条件：
 
 - 已安装 Aspose.Words for .NET 库。
-- C# 和使用 Word 文档的基本知识。
+- C# 和 Word 文档文字处理的基础知识。
 
 ## 第 1 步：设置文档目录
 首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`与要保存文档的目录的实际路径。
@@ -88,3 +88,17 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
 就是这样！您已使用 Aspose.Words for .NET 在图表中成功添加和自定义数据标签。
+
+## 结论
+在本教程中，您学习了如何使用 Aspose.Words for .NET 在图表中添加和自定义数据标签。通过遵循分步指南，您可以插入图表、访问数据标签集合以及修改属性以自定义数据标签的外观。 Aspose.Words for .NET 提供了强大的 API，用于 Word 文档和图表的文字处理，使您能够使用自定义数据标签创建具有视觉吸引力和信息丰富的图表。
+
+### 常见问题解答
+
+#### Q1.图表中的数据标签是什么？
+图表中的数据标签提供有关图表中表示的数据点的附加信息。它们可以根据图表类型和配置显示值、类别、系列名称、百分比或其他相关详细信息。
+
+#### Q2。我可以自定义数据标签的外观吗？
+是的，您可以自定义图表中数据标签的外观。 Aspose.Words for .NET 提供了修改数据标签各种属性的选项，例如显示图例键、引导线、类别名称、系列名称、值等。您还可以设置分隔符并设置标签格式以满足您的特定要求。
+
+#### Q3。我可以将数据标签添加到任何图表类型吗？
+是的，您可以向各种类型的图表添加数据标签，包括条形图、饼图、折线图等。添加和自定义数据标签的过程可能会略有不同，具体取决于图表类型以及您正在使用的库或工具。

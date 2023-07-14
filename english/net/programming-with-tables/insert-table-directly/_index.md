@@ -1,7 +1,7 @@
 ---
 title: Insert Table Directly
 linktitle: Insert Table Directly
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert a table directly into a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In this tutorial, we will learn how to directly insert a table into a Word docum
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Creating the Document and Table
-To start working with the array, we need to create a new document and initialize the array. Follow these steps:
+To start Words Processing with the array, we need to create a new document and initialize the array. Follow these steps:
 
 ```csharp
 // Path to your documents directory

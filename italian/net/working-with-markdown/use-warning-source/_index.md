@@ -1,7 +1,7 @@
 ---
 title: Usa la fonte di avviso
 linktitle: Usa la fonte di avviso
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare la fonte di avviso con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10

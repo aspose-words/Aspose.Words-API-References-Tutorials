@@ -1,7 +1,7 @@
 ---
 title: Export Text Input Form Field As Text
 linktitle: Export Text Input Form Field As Text
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step by step guide to export text input form fields as plain text with Aspose.Words for .NET.
 type: docs
 weight: 10

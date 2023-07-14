@@ -1,7 +1,7 @@
 ---
 title: Wörter von Sprachen trennen
 linktitle: Wörter von Sprachen trennen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Wörter in verschiedenen Sprachen in Word-Dokumenten trennen.
 type: docs
 weight: 10

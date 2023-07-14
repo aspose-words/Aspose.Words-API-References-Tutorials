@@ -1,7 +1,7 @@
 ---
 title: Specify Default Font When Rendering
 linktitle: Specify Default Font When Rendering
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to specifying the default font when rendering a document using Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Conclusion
-In this tutorial, we learned how to specify the default font when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily set a default font to use when rendering your documents. Aspose.Words offers a powerful and flexible API for working with fonts in your documents. With this knowledge, you can control and customize the rendering of your documents to your specific needs.
+In this tutorial, we learned how to specify the default font when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily set a default font to use when rendering your documents. Aspose.Words offers a powerful and flexible API for Words Processing with fonts in your documents. With this knowledge, you can control and customize the rendering of your documents to your specific needs.
 
 ### FAQ's
 

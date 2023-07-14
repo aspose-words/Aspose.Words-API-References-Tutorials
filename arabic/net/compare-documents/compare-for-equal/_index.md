@@ -1,7 +1,7 @@
 ---
 title: قارن للحصول على Equal
 linktitle: قارن للحصول على Equal
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # لميزة "المقارنة لـ Equals مع Aspose.Words for .NET.
 type: docs
 weight: 10

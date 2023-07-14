@@ -1,7 +1,7 @@
 ---
 title: Cambiar el nombre de los campos de combinación
 linktitle: Cambiar el nombre de los campos de combinación
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenderá a cambiar el nombre de los campos de combinación en un documento utilizando Aspose.Words para .NET.
 type: docs
 weight: 10

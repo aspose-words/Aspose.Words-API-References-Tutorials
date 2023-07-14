@@ -1,7 +1,7 @@
 ---
 title: Obtenir des groupes de révision
 linktitle: Obtenir des groupes de révision
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Obtenez des groupes de révision dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -72,7 +72,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 #### Q : Comment obtenir l'auteur d'un groupe de révision dans Aspose.Words pour .NET ?
 
- R : Utilisez le`Author` propriété de la`RevisionGroup` objet pour obtenir l'auteur du groupe de révision.
+ R : Utilisez le`Author`propriété de la`RevisionGroup` objet pour obtenir l'auteur du groupe de révision.
 
 ```csharp
 string author = group.Author;
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### Q : Comment obtenir le type de révision d'un groupe de révision dans Aspose.Words pour .NET ?
 
- R : Utilisez le`RevisionType` propriété de la`RevisionGroup`objet pour obtenir le type de révision du groupe.
+ R : Utilisez le`RevisionType`propriété de la`RevisionGroup`objet pour obtenir le type de révision du groupe.
 
 ```csharp
 string revisionType = group.RevisionType;

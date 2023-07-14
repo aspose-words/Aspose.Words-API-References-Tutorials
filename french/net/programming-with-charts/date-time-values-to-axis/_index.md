@@ -1,7 +1,7 @@
 ---
-title: Valeurs de date et d'heure sur l'axe
-linktitle: Valeurs de date et d'heure sur l'axe
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Ajouter des valeurs de date et d'heure à l'axe d'un graphique
+linktitle: Ajouter des valeurs de date et d'heure à l'axe d'un graphique
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajouter des valeurs de date et d'heure à l'axe d'un graphique à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Ce didacticiel explique comment ajouter des valeurs de date et d'heure à l'axe 
 Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
 - Bibliothèque Aspose.Words pour .NET installée.
-- Connaissance de base de C# et travail avec des documents Word.
+- Connaissance de base de C# et du traitement de texte avec des documents Word.
 
 ## Étape 1 : Configurer le répertoire de documents
- Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
+ Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -67,7 +67,7 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 ```
 
 ## Étape 6 : Enregistrer le document
- Enregistrez le document dans le répertoire spécifié à l'aide de la`Save`méthode. Indiquez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous "WorkingWithCharts.DateTimeValuesToAxis.docx".
+ Enregistrez le document dans le répertoire spécifié à l'aide de la`Save` méthode. Indiquez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous "WorkingWithCharts.DateTimeValuesToAxis.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ### Exemple de code source pour les valeurs de date et d'heure sur l'axe à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -103,3 +103,17 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
 Cet exemple de code crée un nouveau document Word, insère un histogramme avec des valeurs de date et d'heure sur l'axe X et enregistre le document dans le répertoire spécifié.
+
+## Conclusion
+Dans ce didacticiel, vous avez appris à ajouter des valeurs de date et d'heure à l'axe d'un graphique à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape, vous pouvez créer un graphique, ajouter des valeurs de date et d'heure à la série et configurer l'axe pour afficher les valeurs de date et d'heure avec précision. Aspose.Words pour .NET fournit un ensemble puissant de fonctionnalités pour le traitement de mots avec des graphiques dans des documents Word, vous permettant de représenter et de visualiser efficacement des données avec des valeurs de date et d'heure.
+
+### FAQ
+
+#### Q1. Puis-je ajouter des valeurs de date et d'heure à l'axe d'un graphique à l'aide d'Aspose.Words pour .NET ?
+Oui, avec Aspose.Words pour .NET, vous pouvez ajouter et afficher des valeurs de date et d'heure sur l'axe d'un graphique dans un document Word. Aspose.Words fournit des API et des fonctionnalités pour travailler avec différents types de graphiques et personnaliser leur apparence, y compris la gestion des valeurs de date et d'heure sur l'axe.
+
+#### Q2. Comment ajouter des valeurs de date et d'heure à la série de graphiques ?
+ Pour ajouter des valeurs de date et d'heure à la série de graphiques, vous pouvez utiliser l'outil`Add`méthode de la série du graphique. Fournissez un tableau de valeurs de date et d'heure en tant que données de catégorie (axe X), ainsi que les valeurs de série correspondantes. Cela vous permet de tracer des points de données avec des valeurs de date et d'heure sur le graphique.
+
+#### Q3. Comment puis-je configurer l'axe pour afficher les valeurs de date et d'heure ?
+ Vous pouvez configurer l'axe du graphique pour afficher les valeurs de date et d'heure en définissant les propriétés appropriées. Par exemple, vous pouvez spécifier les valeurs minimale et maximale de l'axe à l'aide de la`Scaling.Minimum` et`Scaling.Maximum` propriétés, respectivement. De plus, vous pouvez définir les unités majeures et mineures pour définir l'intervalle et les graduations de l'axe.

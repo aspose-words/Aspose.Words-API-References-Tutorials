@@ -1,7 +1,7 @@
 ---
 title: 每级使用制表符进行列表缩进
 linktitle: 每级使用制表符进行列表缩进
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在 Aspose.Words for .NET 中使用带有制表符功能的缩进列表。利用这一强大的功能节省时间并改进您的工作流程。
 type: docs
 weight: 10

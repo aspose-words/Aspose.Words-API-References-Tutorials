@@ -1,7 +1,7 @@
 ---
 title: Ställ in teckensnittsformatering
 linktitle: Ställ in teckensnittsformatering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ställer in teckensnittsformatering i Word-dokument med Aspose.Words för .NET och skapar attraktiva dokument.
 type: docs
 weight: 10
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Skapa och formatera dokumentet
- Skapa en instans av`Document` klass och`DocumentBuilder` klass för att bygga dokumentet. Använd`Font` egendom av`DocumentBuilder` för att komma åt egenskaper för teckensnittsformatering.
+ Skapa en instans av`Document` klass och`DocumentBuilder` klass för att bygga dokumentet. Använd`Font`egendom av`DocumentBuilder` för att komma åt egenskaper för teckensnittsformatering.
 
 ```csharp
 Document doc = new Document();
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ### Exempel på källkod för Set Font Formatting med Aspose.Words för .NET 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

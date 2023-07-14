@@ -1,7 +1,7 @@
 ---
 title: Pdf Render Warnings
 linktitle: Pdf Render Warnings
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to dealing with PDF rendering warnings with Aspose.Words for .NET.
 type: docs
 weight: 10

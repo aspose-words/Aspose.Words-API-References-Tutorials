@@ -1,7 +1,7 @@
 ---
 title: Exportar información de ida y vuelta
 linktitle: Exportar información de ida y vuelta
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para exportar información de ida y vuelta al guardar un documento como HTML con Aspose.Words para .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Kullanılmayan Stilleri ve Listeleri Temizleme
 linktitle: Kullanılmayan Stilleri ve Listeleri Temizleme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgedeki kullanılmayan stilleri ve listeleri temizlemek için adım adım kılavuz.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Lista Använd destinationsstilar
 linktitle: Lista Använd destinationsstilar
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du går med i och lägger till Word-dokument samtidigt som du bevarar måldokumentets liststilar med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Innan du börjar, se till att du har följande:
 
 ## Steg 1: Initiera dokumentkatalogerna
 
- Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
+ Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir`variabel till sökvägen där dina dokument finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Ladda käll- och måldokumenten
 
- Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
+ Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktor enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -82,7 +82,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 
 ## Steg 6: Spara det slutliga dokumentet
 
-Spara slutligen det sammanslagna dokumentet med funktionen Listanvänd destinationsstilar aktiverad med hjälp av`Save` metod för`Document` klass.
+ Spara slutligen det sammanslagna dokumentet med funktionen Listanvänd destinationsstilar aktiverad med hjälp av`Save` metod för`Document` klass.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
@@ -94,12 +94,12 @@ Här är den fullständiga källkoden för funktionen "List Use Destination Styl
 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Ställ in källdokumentet att fortsätta direkt efter slutet av måldokumentet.
+	//Ställ in källdokumentet att fortsätta direkt efter slutet av måldokumentet.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Håll koll på listorna som skapas.
 	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -109,7 +109,7 @@ Här är den fullständiga källkoden för funktionen "List Use Destination Styl
 		{
 			int listId = para.ListFormat.List.ListId;
 			// Kontrollera om måldokumentet redan innehåller en lista med detta ID. Om det gör det, så kan detta
-			// få de två listorna att köras tillsammans. Skapa istället en kopia av listan i källdokumentet.
+			//få de två listorna att köras tillsammans. Skapa istället en kopia av listan i källdokumentet.
 			if (dstDoc.Lists.GetListByListId(listId) != null)
 			{
 				Aspose.Words.Lists.List currentList;

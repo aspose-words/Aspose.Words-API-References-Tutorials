@@ -1,7 +1,7 @@
 ---
 title: 附加文档
 linktitle: 附加文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将一个文档的内容附加到另一个文档。
 type: docs
 weight: 10

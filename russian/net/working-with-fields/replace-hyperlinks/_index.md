@@ -1,7 +1,7 @@
 ---
 title: Заменить гиперссылки
 linktitle: Заменить гиперссылки
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Замените гиперссылки в документах Word с помощью Aspose.Words для .NET. Пошаговая инструкция по замене гиперссылок.
 type: docs
 weight: 10

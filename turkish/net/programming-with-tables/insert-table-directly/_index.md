@@ -1,7 +1,7 @@
 ---
 title: Doğrudan Tablo Ekle
 linktitle: Doğrudan Tablo Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile doğrudan bir Word belgesine tablo eklemeyi öğrenin.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine doğrudan t
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## Adım 2: Belge ve Tabloyu Oluşturma
-Dizi ile çalışmaya başlamak için yeni bir belge oluşturmamız ve diziyi başlatmamız gerekiyor. Bu adımları takip et:
+Dizi ile Sözcük İşlemeyi başlatmak için yeni bir belge oluşturmamız ve diziyi başlatmamız gerekiyor. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Belge oluşturma
 Document doc = new Document();
 
-// Diziyi oluştur
+//Diziyi oluştur
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ### Aspose.Words for .NET kullanarak Doğrudan Tablo Ekle için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

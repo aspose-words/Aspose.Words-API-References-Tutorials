@@ -1,7 +1,7 @@
 ---
 title: Ajuste automático al ancho de la página
 linktitle: Ajuste automático al ancho de la página
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a ajustar automáticamente una tabla al ancho de página en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ En este tutorial, aprenderemos a usar Aspose.Words para .NET para ajustar autom�
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Creación y configuración del documento
-Para comenzar a trabajar con la tabla, necesitamos crear un documento y configurar el generador de documentos. Sigue estos pasos:
+Para iniciar el procesamiento de textos con la tabla, necesitamos crear un documento y configurar el generador de documentos. Sigue estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Crear el documento y el generador de documentos
+// Crear el documento y el generador de documentos
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -58,7 +58,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Ejemplo de código fuente para Ajuste automático al ancho de la página usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

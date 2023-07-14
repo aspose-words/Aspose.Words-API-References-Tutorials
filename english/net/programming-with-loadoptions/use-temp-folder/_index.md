@@ -1,14 +1,14 @@
 ---
 title: Use Temp Folder
 linktitle: Use Temp Folder
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use a temporary folder when uploading documents with Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /net/programming-with-loadoptions/use-temp-folder/
 ---
 
-When working with Word documents in a C# application, it may be necessary to use a temporary folder to store temporary files generated during document processing. With the Aspose.Words library for .NET, you can easily specify a temporary folder using the LoadOptions load options. In this step-by-step guide, we'll show you how to use Aspose.Words for .NET C# source code to load a document using a temporary folder specified using the LoadOptions load options.
+When Words Processing with Word documents in a C# application, it may be necessary to use a temporary folder to store temporary files generated during document processing. With the Aspose.Words library for .NET, you can easily specify a temporary folder using the LoadOptions load options. In this step-by-step guide, we'll show you how to use Aspose.Words for .NET C# source code to load a document using a temporary folder specified using the LoadOptions load options.
 
 ## Understanding the Aspose.Words library
 

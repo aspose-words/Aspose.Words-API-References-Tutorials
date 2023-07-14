@@ -1,7 +1,7 @@
 ---
 title: Клонировать раздел
 linktitle: Клонировать раздел
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как клонировать раздел в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Далее мы загрузим документ Word в экземпляр`Document` сорт. Затем мы будем использовать`Clone` способ клонирования первого раздела документа.
 
 ```csharp
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Document.docx");
 
 // Клонировать раздел
@@ -40,7 +40,7 @@ Section cloneSection = doc.Sections[0].Clone();
 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -67,7 +67,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Чтобы загрузить документ Word в экземпляр`Document` class и клонировать первый раздел документа, вы можете использовать следующий код:
 
 ```csharp
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Document.docx");
 
 // Клонировать раздел

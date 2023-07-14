@@ -1,7 +1,7 @@
 ---
 title: Get Jpeg Page Range
 linktitle: Get Jpeg Page Range
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to get a range of JPEG pages with Aspose.Words for .NET. Complete tutorial for extracting custom images.
 type: docs
 weight: 10

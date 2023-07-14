@@ -1,7 +1,7 @@
 ---
 title: Applica licenza da file
 linktitle: Applica licenza da file
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come applicare una licenza da un file utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -17,7 +17,7 @@ Prima di iniziare, assicurati di disporre dei seguenti prerequisiti:
 - Un file di licenza valido per Aspose.Words. 
 
 ## Passaggio 1: importa lo spazio dei nomi Aspose.Words
-Per iniziare, devi importare lo spazio dei nomi Aspose.Words nel tuo codice C#. Questo spazio dei nomi fornisce tutte le classi e i metodi necessari per lavorare con i documenti di Word.
+Per iniziare, devi importare lo spazio dei nomi Aspose.Words nel tuo codice C#. Questo spazio dei nomi fornisce tutte le classi ei metodi richiesti per l'elaborazione di testi con documenti Word.
 
 ```csharp
 using Aspose.Words;

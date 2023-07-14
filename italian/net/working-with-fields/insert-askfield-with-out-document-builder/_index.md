@@ -1,7 +1,7 @@
 ---
 title: Inserisci ASKField senza Document Builder
 linktitle: Inserisci ASKField senza Document Builder
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire un campo ASK nei tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -60,7 +60,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// Inserisci il campo ASK.
+//Inserisci il campo ASK.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 
 field.BookmarkName = "Test 1";

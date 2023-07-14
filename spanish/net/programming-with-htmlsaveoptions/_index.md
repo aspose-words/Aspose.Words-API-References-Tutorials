@@ -1,7 +1,7 @@
 ---
-title: Programación con Htmlsaveoptions
-linktitle: Programación con Htmlsaveoptions
-second_title: Referencia de API de Aspose.Words para .NET
+title: Procesamiento de textos con Htmlsaveoptions
+linktitle: Procesamiento de textos con Htmlsaveoptions
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a programar con opciones de guardado de HTML en Aspose.Words para .NET. Convierta fácilmente documentos de Word a HTML conservando el formato y el contenido.
 type: docs
 weight: 1620
@@ -9,7 +9,7 @@ url: /es/net/programming-with-htmlsaveoptions/
 ---
 Aspose.Words for .NET es una poderosa biblioteca para manipular y generar documentos de Word en aplicaciones .NET. Los tutoriales en el sitio de referencia de Aspose.Words para .NET proporcionan un recurso valioso para los desarrolladores que buscan dominar esta biblioteca y aprovechar al máximo su funcionalidad.
 
-El tutorial "Programación con HtmlSaveOptions" se centra en el uso de opciones de guardado de HTML en Aspose.Words para .NET. Este tutorial guía a los desarrolladores a través de las diversas opciones disponibles para personalizar la conversión de documentos de Word a HTML. Se proporcionan ejemplos de código detallados para demostrar el uso de estas opciones y lograr los resultados de conversión deseados.
+El tutorial "Procesamiento de palabras con HtmlSaveOptions" se centra en el uso de opciones de guardado de HTML en Aspose.Words para .NET. Este tutorial guía a los desarrolladores a través de las diversas opciones disponibles para personalizar la conversión de documentos de Word a HTML. Se proporcionan ejemplos de código detallados para demostrar el uso de estas opciones y lograr los resultados de conversión deseados.
 
 Ya sea que desee convertir documentos de Word a HTML para mostrarlos en la web, incrustar contenido HTML en sus documentos de Word o personalizar la representación de HTML, este tutorial le brinda el conocimiento y las habilidades para hacerlo. Gracias a explicaciones detalladas y ejemplos prácticos, podrá aprovechar al máximo las funcionalidades de conversión de HTML de Aspose.Words para .NET en sus proyectos de desarrollo.
 

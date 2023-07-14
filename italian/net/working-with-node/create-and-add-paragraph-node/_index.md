@@ -1,7 +1,7 @@
 ---
 title: Crea e aggiungi nodo paragrafo
 linktitle: Crea e aggiungi nodo paragrafo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Crea e aggiungi un nodo paragrafo ai tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10

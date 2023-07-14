@@ -1,7 +1,7 @@
 ---
 title: Anexar documento
 linktitle: Anexar documento
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a agregar el contenido de un documento a otro usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ Esto completa la implementación de agregar un documento usando Aspose.Words par
 ### Ejemplo de código fuente para agregar documento usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -63,7 +63,7 @@ Esto completa la implementación de agregar un documento usando Aspose.Words par
 	// Los nodos de sección son hijos inmediatos del nodo Documento, por lo que solo podemos enumerar el Documento.
 	foreach (Section srcSection in srcDoc)
 	{
-		//Porque estamos copiando una sección de un documento a otro,
+		// Porque estamos copiando una sección de un documento a otro,
 		// es necesario importar el nodo Sección en el documento de destino.
 		// Esto ajusta cualquier referencia específica del documento a estilos, listas, etc.
 		//

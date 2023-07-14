@@ -1,7 +1,7 @@
 ---
 title: احصل على تباعد أسطر الخط
 linktitle: احصل على تباعد أسطر الخط
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -41,7 +41,7 @@ builder.Font.Name = "Calibri";
 builder. Writen("qText");
 ```
 
-## الخطوة 4: احصل على تباعد الأسطر
+## الخطوة 4: احصل على تباعد أسطر الخطوط
  الآن سوف نصل إلى`Font` كائن من الفقرة الأولى من المستند واسترداد قيمة`LineSpacing` ملكية.
 
 ```csharp

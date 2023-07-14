@@ -1,7 +1,7 @@
 ---
 title: 行格式禁用跨页中断
 linktitle: 行格式禁用跨页中断
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 禁用 Word 文档中跨多个页面的表格换行符。
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/row-format-disable-break-across-pages/
 2. 添加对 Aspose.Words for .NET 库的引用。
 
 ## 第 2 步：加载文档
-要开始使用该文档，请按照下列步骤操作：
+要启动文档的文字处理，请按照下列步骤操作：
 
 ```csharp
 //文档目录的路径

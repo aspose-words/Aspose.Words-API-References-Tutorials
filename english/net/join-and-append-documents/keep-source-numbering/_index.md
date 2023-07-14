@@ -1,7 +1,7 @@
 ---
 title: Keep Source Numbering
 linktitle: Keep Source Numbering
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to append a document while preserving source numbering formatting in Aspose.Words for .NET.
 type: docs
 weight: 10

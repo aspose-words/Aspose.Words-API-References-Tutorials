@@ -1,13 +1,13 @@
 ---
-title: Programming With Shapes
-linktitle: Programming With Shapes
-second_title: Aspose.Words for .NET API Reference
+title: Words Processing with Shapes
+linktitle: Words Processing with Shapes
+second_title: Aspose.Words Document Processing API
 description: Explore shape programming in Aspose.Words for .NET. Learn how to manipulate and customize shapes in your Word documents with step-by-step tutorials and sample code in C#.
 type: docs
 weight: 1560
 url: /net/programming-with-shapes/
 ---
-The Aspose.Words for .NET tutorials on programming with shapes offer a comprehensive guide to manipulating and managing shapes in Word documents. These tutorials explain step by step how to create, modify and delete shapes, as well as how to customize them in terms of color, size, position and other attributes. Tutorials include clear code examples and step-by-step explanations for easy understanding and implementation.
+The Aspose.Words for .NET tutorials on Words Processing with shapes offer a comprehensive guide to manipulating and managing shapes in Word documents. These tutorials explain step by step how to create, modify and delete shapes, as well as how to customize them in terms of color, size, position and other attributes. Tutorials include clear code examples and step-by-step explanations for easy understanding and implementation.
 
 Through these tutorials, you will learn how to add shapes to your documents, such as rectangles, circles, lines, and arrows, to improve layout and information visualization. You'll also learn how to manipulate shape properties, such as rotation, transparency, and fill, to suit your specific needs.
 

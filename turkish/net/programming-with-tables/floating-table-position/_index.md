@@ -1,7 +1,7 @@
 ---
 title: Yüzer Masa Konumu
 linktitle: Yüzer Masa Konumu
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesinde bir tabloyu kayan konumda nasıl konumlandıracağınızı öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu öğreticide, bir Word belgesinde bir tabloyu kayan bir konumda konumlandırm
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi yükleme ve tabloya erişme
-Tabloyla çalışmaya başlamak için onu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekiyor. Bu adımları takip et:
+Tablo ile Sözcük İşleme başlatmak için tabloyu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekir. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
 // Diziye erişim
@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ### Aspose.Words for .NET kullanan Floating Table Position için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

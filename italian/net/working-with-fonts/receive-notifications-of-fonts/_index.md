@@ -1,7 +1,7 @@
 ---
 title: Ricevi notifiche di caratteri
 linktitle: Ricevi notifiche di caratteri
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come ricevere notifiche di caratteri mancanti o sostituiti quando usi Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ### Esempio di codice sorgente per ricevere notifiche di caratteri utilizzando Aspose.Words per .NET 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

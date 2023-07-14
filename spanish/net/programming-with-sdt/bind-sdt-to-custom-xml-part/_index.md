@@ -1,7 +1,7 @@
 ---
 title: Vincular SDT a la parte Xml personalizada
 linktitle: Vincular SDT a la parte Xml personalizada
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a vincular una SDT a una pieza Xml personalizada mediante Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -17,7 +17,7 @@ Para seguir este tutorial, necesita tener lo siguiente:
 - Conocimientos básicos de C# y XML.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,7 +39,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, Ma
 doc.FirstSection.Body.AppendChild(sdt);
 ```
 
-## Paso 4: establecer la asignación XML para la SDT
+## Paso 4: Establecer la asignación XML para la SDT
  Asigne el SDT al`CustomXmlPart` usando el`SetMapping` metodo de la`XmlMapping` propiedad. Especifica el`CustomXmlPart` , la expresión XPath para ubicar el nodo XML deseado y el prefijo del espacio de nombres si es necesario. En este ejemplo, asignamos el SDT a`/root[1]/text[1]`.
 
 ```csharp
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 ### Ejemplo de código fuente para Bind Sd Tto Custom Xml Part usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

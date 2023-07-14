@@ -1,7 +1,7 @@
 ---
 title: Teckensnittsinställningar Standardinstans
 linktitle: Teckensnittsinställningar Standardinstans
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här handledningen lär du dig hur du konfigurerar standardteckensnittsinställningar i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Exempel på källkod för Font Settings Default Instance med Aspose.Words för .NET 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -76,11 +76,11 @@ I den här handledningen såg vi hur man konfigurerar standardteckensnittsinstä
 
 #### F: Kan jag ange standard teckenstorlek i Aspose.Words?
 
- S: Ja, du kan ange standard teckenstorlek i Aspose.Words med hjälp av`DefaultFontSize` egendom av`FontSettings` klass. Du kan ställa in önskad punktstorlek.
+ S: Ja, du kan ange standard teckenstorlek i Aspose.Words med hjälp av`DefaultFontSize`egendom av`FontSettings` klass. Du kan ställa in önskad punktstorlek.
 
 #### F: Är det möjligt att ställa in standardtypsnittsfärgen i Aspose.Words?
 
- S: Ja, du kan ställa in standardtypsnittsfärgen i Aspose.Words med hjälp av`DefaultColor` egendom av`FontSettings` klass. Du kan ange färgen med RGB-värden eller fördefinierade namn.
+ S: Ja, du kan ställa in standardtypsnittsfärgen i Aspose.Words med hjälp av`DefaultColor`egendom av`FontSettings` klass. Du kan ange färgen med RGB-värden eller fördefinierade namn.
 
 #### F: Gäller standardteckensnittsinställningarna för alla dokument?
 

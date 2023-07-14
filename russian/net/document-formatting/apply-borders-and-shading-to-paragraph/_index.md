@@ -1,7 +1,7 @@
 ---
 title: Применение границ и заливки к абзацу
 linktitle: Применение границ и заливки к абзацу
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как применить границы и затенение к абзацу с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

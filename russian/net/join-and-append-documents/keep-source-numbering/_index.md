@@ -1,7 +1,7 @@
 ---
 title: Сохраняйте нумерацию источников
 linktitle: Сохраняйте нумерацию источников
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как добавить документ, сохранив исходное форматирование нумерации в Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Сохраняйте нумерацию источников при импорте
 
- Чтобы сохранить формат нумерации нумерованных абзацев из исходного документа, создайте экземпляр`ImportFormatOptions` и установить`KeepSourceNumbering` к`true` Использовать`NodeImporter` импортировать узлы из исходного документа в целевой документ, указав`ImportFormatMode.KeepSourceFormatting` и`importFormatOptions`.
+ Чтобы сохранить формат нумерации нумерованных абзацев из исходного документа, создайте экземпляр`ImportFormatOptions` и установить`KeepSourceNumbering` к`true` . Использовать`NodeImporter` импортировать узлы из исходного документа в целевой документ, указав`ImportFormatMode.KeepSourceFormatting` и`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Шаг 5: Сохраните измененный документ
 
-Сохраните измененный документ с помощью`Save` метод`Document` объект.
+ Сохраните измененный документ с помощью`Save` метод`Document` объект.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
@@ -64,7 +64,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ### Пример исходного кода для сохранения нумерации источников с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

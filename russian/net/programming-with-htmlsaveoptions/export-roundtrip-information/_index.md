@@ -1,7 +1,7 @@
 ---
 title: Экспорт информации о пути туда и обратно
 linktitle: Экспорт информации о пути туда и обратно
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по экспорту информации о пути туда и обратно при сохранении документа в формате HTML с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

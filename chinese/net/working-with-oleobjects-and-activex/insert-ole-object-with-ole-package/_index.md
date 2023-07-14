@@ -1,7 +1,7 @@
 ---
 title: 使用 Ole 包在 Word 中插入 Ole 对象
 linktitle: 使用 Ole 包在 Word 中插入 Ole 对象
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将带有 OLE 包的 OLE 对象插入到文档中。
 type: docs
 weight: 10
@@ -72,7 +72,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 总之，我们已经完成了使用 Aspose.Words for .NET 将 OLE 对象插入带有 OLE 包的 Word 文档的分步指南。
 
-通过执行这些步骤，您将能够使用 Aspose.Words for .NET 成功将带有 OLE 包的 OLE 对象插入到 Word 文档中。请务必导入必要的参考并仔细按照说明进行操作，以获得所需的结果。
+通过执行这些步骤，您将能够使用 Aspose.Words for .NET 将带有 OLE 包的 OLE 对象成功插入到 Word 文档中。请务必导入必要的参考并仔细按照说明进行操作，以获得所需的结果。
 
 ### 使用 ole 包在 word 中插入 ole 对象的常见问题解答
 

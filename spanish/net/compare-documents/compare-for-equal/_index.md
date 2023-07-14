@@ -1,7 +1,7 @@
 ---
 title: Comparar por igual
 linktitle: Comparar por igual
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para explicar el código fuente de C# de la función Compare for Equals con Aspose.Words para .NET.
 type: docs
 weight: 10

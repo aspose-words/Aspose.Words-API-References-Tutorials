@@ -1,7 +1,7 @@
 ---
 title: Получать уведомления о шрифтах
 linktitle: Получать уведомления о шрифтах
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как получать уведомления об отсутствующих или замененных шрифтах при использовании Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ### Пример исходного кода для получения уведомлений о шрифтах с использованием Aspose.Words для .NET 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

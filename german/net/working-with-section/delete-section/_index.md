@@ -1,7 +1,7 @@
 ---
 title: Abschnitt löschen
 linktitle: Abschnitt löschen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET einen bestimmten Abschnitt aus einem Word-Dokument entfernen.
 type: docs
 weight: 10

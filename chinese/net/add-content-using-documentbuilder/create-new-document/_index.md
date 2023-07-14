@@ -1,7 +1,7 @@
 ---
 title: 创建新文档
 linktitle: 创建新文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 创建新的 Word 文档并添加内容。分步指南。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 字体设置默认实例
 linktitle: 字体设置默认实例
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，了解如何使用 Aspose.Words for .NET 在 Word 文档中配置默认字体设置。
 type: docs
 weight: 10

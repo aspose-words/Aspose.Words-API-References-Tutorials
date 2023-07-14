@@ -1,7 +1,7 @@
 ---
 title: 评估 IF 条件
 linktitle: 评估 IF 条件
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 评估 Word 文档中的 IF 条件的分步指南。
 type: docs
 weight: 10

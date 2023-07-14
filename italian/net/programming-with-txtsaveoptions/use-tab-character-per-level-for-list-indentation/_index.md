@@ -1,7 +1,7 @@
 ---
 title: Usa il carattere di tabulazione per livello per il rientro dell'elenco
 linktitle: Usa il carattere di tabulazione per livello per il rientro dell'elenco
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare gli elenchi di rientro con la funzionalità dei caratteri di tabulazione in Aspose.Words per .NET. Risparmia tempo e migliora il tuo flusso di lavoro con questa potente funzionalità.
 type: docs
 weight: 10
@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- In questo passaggio, applichiamo il formato predefinito dei numeri di elenco utilizzando il`ApplyNumberDefault()` metodo del formattatore di elenchi. Successivamente, aggiungiamo tre elementi al nostro elenco utilizzando il generatore di documenti`Writeln()` E`Write()` metodi. Noi usiamo il`ListIndent()` metodo per incrementare l'indentazione a ogni livello.
+In questo passaggio, applichiamo il formato predefinito dei numeri di elenco utilizzando il`ApplyNumberDefault()` metodo del formattatore di elenchi. Successivamente, aggiungiamo tre elementi al nostro elenco utilizzando il generatore di documenti`Writeln()` E`Write()` metodi. Noi usiamo il`ListIndent()` metodo per incrementare l'indentazione a ogni livello.
 
 ## Passaggio 4: configurare le opzioni di registrazione
 
@@ -100,7 +100,7 @@ Configura il tuo ambiente di sviluppo aggiungendo i riferimenti necessari e impo
 
  Crea un nuovo`Document` oggetto e un associato`DocumentBuilder` oggetto.
 
- Usa il`DocumentBuilder` per creare un elenco con più livelli di indentazione utilizzando i metodi`ApplyNumberDefault()` per applicare il formato del numero di elenco predefinito,`Writeln()` E`Write()` per aggiungere elementi all'elenco e`ListIndent()` per incrementare l'indentazione ad ogni livello.
+ Usa il`DocumentBuilder` per creare un elenco con più livelli di indentazione utilizzando i metodi`ApplyNumberDefault()` per applicare il formato del numero di elenco predefinito,`Writeln()` E`Write()` per aggiungere elementi all'elenco e`ListIndent()`per incrementare l'indentazione ad ogni livello.
 
  Configura le opzioni di salvataggio creando un file`TxtSaveOptions` oggetto e l'impostazione delle proprietà`ListIndentation.Count` al numero di caratteri di tabulazione per livello e`ListIndentation.Character` A`'\t'` per utilizzare i caratteri di tabulazione.
 
@@ -110,7 +110,7 @@ Configura il tuo ambiente di sviluppo aggiungendo i riferimenti necessari e impo
  Sì, puoi personalizzare il numero di caratteri di tabulazione per livello per il rientro dell'elenco modificando il valore di`ListIndentation.Count` proprietà nel`TxtSaveOptions` classe. È possibile specificare il numero di caratteri di tabulazione desiderati per ciascun livello di rientro.
 
 #### D: Quali altri caratteri posso utilizzare per l'indentazione dell'elenco con Aspose.Words per .NET?
-Oltre ai caratteri di tabulazione, puoi anche utilizzare altri caratteri per il rientro dell'elenco con Aspose.Words per .NET. Puoi impostare il`ListIndentation.Character` proprietà a qualsiasi carattere desiderato, come lo spazio (`' '`), per gli elenchi di rientro.
+ Oltre ai caratteri di tabulazione, puoi anche utilizzare altri caratteri per il rientro dell'elenco con Aspose.Words per .NET. Puoi impostare il`ListIndentation.Character` proprietà a qualsiasi carattere desiderato, come lo spazio (`' '`), per gli elenchi di rientro.
 
 #### D: Aspose.Words per .NET offre altre funzionalità per la gestione degli elenchi?
 Sì, Aspose.Words per .NET offre molte funzionalità per la gestione degli elenchi nei documenti di Word. Puoi creare elenchi numerati o puntati, impostare i livelli di rientro, personalizzare lo stile degli elenchi, aggiungere voci di elenco e altro ancora.

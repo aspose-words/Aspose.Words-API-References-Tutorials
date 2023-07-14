@@ -1,7 +1,7 @@
 ---
-title: Programmering med diagram
-linktitle: Programmering med diagram
-second_title: Aspose.Words för .NET API Referens
+title: Använder Word Chart API
+linktitle: Använda diagram
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skapar, anpassar och manipulerar grafik i Word-dokument med Aspose.Words för .NET. Handledningarna ger steg-för-steg-förklaringar och C#-källkod för att hjälpa dig lägga till diagram.
 type: docs
 weight: 1540

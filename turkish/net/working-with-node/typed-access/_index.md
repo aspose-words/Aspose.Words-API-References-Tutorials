@@ -1,7 +1,7 @@
 ---
 title: Yazılı Erişim
 linktitle: Yazılı Erişim
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te tabloları işlemek için yazılı erişimi nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10

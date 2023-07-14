@@ -1,7 +1,7 @@
 ---
 title: Remove Comments In Pdf File
 linktitle: Remove Comments In Pdf File
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Remove comments in a PDF file with Aspose.Words for .NET.
 type: docs
 weight: 10

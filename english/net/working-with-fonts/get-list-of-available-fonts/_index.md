@@ -1,7 +1,7 @@
 ---
 title: Get List Of Available Fonts
 linktitle: Get List Of Available Fonts
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to get the list of fonts available in Aspose.Words for .NET.
 type: docs
 weight: 10

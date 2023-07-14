@@ -1,7 +1,7 @@
 ---
 title: Titre
 linktitle: Titre
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser le titre avec Aspose.Words pour .NET Guide étape par étape.
 type: docs
 weight: 10

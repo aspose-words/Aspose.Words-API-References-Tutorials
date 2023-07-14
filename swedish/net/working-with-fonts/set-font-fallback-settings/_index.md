@@ -1,7 +1,7 @@
 ---
 title: Ställ in alternativa teckensnittsinställningar
 linktitle: Ställ in alternativa teckensnittsinställningar
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ställer in inställningar för teckensnittsersättning i Aspose.Words för .NET och anpassa teckensnittsersättning i dina Word-dokument.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ### Exempel på källkod för Set Font Fallback Settings med Aspose.Words för .NET 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -1,7 +1,7 @@
 ---
 title: Yazı Tipleri Klasörünü Ayarla
 linktitle: Yazı Tipleri Klasörünü Ayarla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te yazı tipi dizinini nasıl ayarlayacağınızı ve belgelerinizde kullanılan yazı tiplerinin kullanılabilirliğini nasıl sağlayacağınızı öğrenin.
 type: docs
 weight: 10
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

@@ -1,7 +1,7 @@
 ---
 title: ضغط الصور في مستند PDF
 linktitle: ضغط الصور في مستند PDF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لضغط الصور في مستند PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 
  قم بإنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- قم بإنشاء مثيل لـ`PdfSaveOptions` فئة وضبط`ImageCompression` الملكية ل`PdfImageCompression.Jpeg` لاستخدام ضغط JPEG.
+ قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`ImageCompression` ملكية ل`PdfImageCompression.Jpeg` لاستخدام ضغط JPEG.
 
 يمكنك أيضًا تعيين خيارات أخرى لضغط الصور ، مثل جودة JPEG ، وفقًا لاحتياجاتك.
 

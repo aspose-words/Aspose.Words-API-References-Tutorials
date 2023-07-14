@@ -1,7 +1,7 @@
 ---
 title: Exportar marcadores de pie de página de encabezado de documento de Word a documento PDF
 linktitle: Exportar marcadores de pie de página de encabezado de documento de Word a documento PDF
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para exportar marcadores de pie de página de encabezado de documento de Word a marcadores de documento pdf con Aspose.Words para .NET.
 type: docs
 weight: 10

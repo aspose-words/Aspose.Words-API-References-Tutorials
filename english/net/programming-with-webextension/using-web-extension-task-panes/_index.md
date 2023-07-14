@@ -1,7 +1,7 @@
 ---
 title: Using Web Extension Task Panes
 linktitle: Using Web Extension Task Panes
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to using Web Extension Task Panes with Aspose.Words for .NET.
 type: docs
 weight: 10

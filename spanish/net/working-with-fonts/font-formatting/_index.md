@@ -1,7 +1,7 @@
 ---
 title: Formato de fuente
 linktitle: Formato de fuente
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda a formatear la fuente en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ### Ejemplo de código fuente para el formato de fuente usando Aspose.Words para .NET 
 ```csharp
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -88,7 +88,7 @@ En este tutorial, vimos cómo formatear fuentes en un documento de Word usando A
 
 #### P: ¿Es posible cambiar el tamaño de fuente de un texto específico en un documento de Word?
 
-R: Sí, con Aspose.Words puede cambiar fácilmente el tamaño de fuente de un texto específico en un documento de Word. Puede usar la API para seleccionar el texto deseado y aplicar el tamaño de fuente apropiado.
+R: Sí, con Aspose.Words puede cambiar fácilmente el tamaño de fuente de un texto específico en un documento de Word. Puede usar la API para seleccionar el texto deseado y aplicar el tamaño de fuente adecuado.
 
 #### P: ¿Puedo aplicar diferentes estilos de fuente a diferentes párrafos en un documento de Word?
 

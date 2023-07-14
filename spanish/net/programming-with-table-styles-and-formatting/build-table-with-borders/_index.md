@@ -1,7 +1,7 @@
 ---
 title: Construir mesa con bordes
 linktitle: Construir mesa con bordes
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para construir una tabla con bordes usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ url: /es/net/programming-with-table-styles-and-formatting/build-table-with-borde
 En este tutorial, lo guiaremos a través del proceso paso a paso para crear una tabla con bordes usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo crear una tabla con bordes personalizados en sus documentos de Word utilizando Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se almacena su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
+Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se almacena su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.do
 ### Ejemplo de código fuente para Build Table With Borders usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

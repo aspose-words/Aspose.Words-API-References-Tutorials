@@ -1,7 +1,7 @@
 ---
 title: إزالة المعلومات الشخصية
 linktitle: إزالة المعلومات الشخصية
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لإزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInforma
 
 ## الخطوة 3: حذف المعلومات الشخصية
 
- الآن سنعمل على تمكين إزالة المعلومات الشخصية عن طريق تعيين`RemovePersonalInformation` الملكية ل`true`. استخدم الكود التالي:
+ الآن سنعمل على تمكين إزالة المعلومات الشخصية عن طريق تعيين`RemovePersonalInformation` ملكية ل`true`. استخدم الكود التالي:
 
 ```csharp
 doc.RemovePersonalInformation = true;

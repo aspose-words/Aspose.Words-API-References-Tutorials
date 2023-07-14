@@ -1,7 +1,7 @@
 ---
 title: تعداد الخصائص
 linktitle: تعداد الخصائص
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لتعداد خصائص المستند باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

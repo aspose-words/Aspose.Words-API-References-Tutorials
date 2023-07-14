@@ -1,14 +1,14 @@
 ---
-title: Show Hide Bookmarked Content
-linktitle: Show Hide Bookmarked Content
-second_title: Aspose.Words for .NET API Reference
-description: Learn how to show or hide bookmark content using Aspose.Words for .NET.
+title: Show Hide Bookmarked Content In Word Document
+linktitle: Show Hide Bookmarked Content In Word Document
+second_title: Aspose.Words Document Processing API
+description: Learn how to show or hide bookmark content in word document using Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-In this article, we will explore the above C# source code to understand how to use Show Hide Bookmarked Content function in Aspose.Words for .NET library. This feature allows you to show or hide the contents of a bookmark based on a specific condition when merging data.
+In this article, we will explore the above C# source code to understand how to use Show Hide Bookmarked Content function in Aspose.Words for .NET library. This feature allows you to show or hide the contents of a bookmark in word document based on a specific condition when merging data.
 
 ## Prerequisites
 
@@ -145,3 +145,33 @@ Here is the full example of Source code to demonstrate showing or hiding bookmar
 ## Conclusion
 
 In this article, we explored the C# source code to understand how to use the Show Hide Bookmarked Content feature of Aspose.Words for .NET. We've followed a step-by-step guide to show or hide the contents of a bookmark based on a specific condition when merging data.
+
+### FAQ's for show hide bookmarked content in word document
+
+#### Q: Can I use the same condition for multiple bookmarks in the same document?
+
+A: Yes, you can use the same condition for multiple bookmarks in the same document. Just repeat steps 2-5 for each bookmark, adjusting the bookmark name and optionally the value of the `showhide` variable as needed.
+
+#### Q: How can I add more conditions to show or hide bookmark content?
+
+A: To add more conditions, you can use logical operators such as `AND` and `OR` in the code for inserting the merge fields in step 2. Edit the condition in the following code to add additional conditions :
+
+```csharp
+builder. Write("\" = \"true\" ");
+```
+
+#### Q: How can I delete a bookmark in a Word document using Aspose.Words for .NET?
+
+A: To remove a bookmark in a Word document using Aspose.Words for .NET, you can use the `Remove` method from the `Bookmarks` collection of the document range. Here is sample code for deleting a specific bookmark:
+
+```csharp
+doc.Range.Bookmarks.Remove(bookmarkName);
+```
+
+#### Q: Is the Aspose.Words library free?
+
+A: The Aspose.Words library is a commercial library and requires a valid license to use in your projects. You can check Aspose's official website to learn more about licensing options and pricing.
+
+#### Q: Are there other libraries available for Words Processing with Word documents in .NET?
+
+A: Yes, there are other libraries available for Words Processing with Word documents in .NET, such as Open XML SDK and GemBox.Document. You can explore these libraries as alternatives to Aspose.Words based on your specific needs and preferences.

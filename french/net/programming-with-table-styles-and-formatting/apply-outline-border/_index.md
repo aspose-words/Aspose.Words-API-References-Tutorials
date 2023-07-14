@@ -1,7 +1,7 @@
 ---
 title: Appliquer la bordure de contour
 linktitle: Appliquer la bordure de contour
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour appliquer une bordure de contour à un tableau à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -76,7 +76,7 @@ Félicitation ! Vous avez maintenant appliqué une bordure de contour à une tab
 ### Exemple de code source pour Apply Outline Border à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

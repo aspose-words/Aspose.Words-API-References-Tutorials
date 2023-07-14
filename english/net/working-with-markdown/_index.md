@@ -1,14 +1,14 @@
 ---
-title: Working with Markdown
-linktitle: Working with Markdown
-second_title: Aspose.Words for .NET API Reference
+title: Words Processing with Markdown
+linktitle: Words Processing with Markdown
+second_title: Aspose.Words Document Processing API
 description: Learn how to work with Markdown syntax in Word documents using Aspose.Words for .NET with these step-by-step tutorials and hands-on examples.
 type: docs
 weight: 810
 url: /net/working-with-markdown/
 ---
 
-Working with Markdown provides a comprehensive resource for learning how to work with the Markdown format using the Aspose.Words for .NET library. Tutorials provide detailed explanations, complete source code and practical examples for manipulating and generating Markdown documents, including importing Markdown files, converting Word documents to Markdown, customizing Markdown styling, exporting to PDF, etc. other formats and much more. This resource is essential for developers who want to master using Markdown with Aspose.Words for .NET and take full advantage of its advanced features for text-based content generation.
+Words Processing with Markdown provides a comprehensive resource for learning how to work with the Markdown format using the Aspose.Words for .NET library. Tutorials provide detailed explanations, complete source code and practical examples for manipulating and generating Markdown documents, including importing Markdown files, converting Word documents to Markdown, customizing Markdown styling, exporting to PDF, etc. other formats and much more. This resource is essential for developers who want to master using Markdown with Aspose.Words for .NET and take full advantage of its advanced features for text-based content generation.
 
  ## Tutorials
 | Title | Description |

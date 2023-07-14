@@ -1,7 +1,7 @@
 ---
 title: 忽略页眉页脚
 linktitle: 忽略页眉页脚
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 附加文档，同时忽略页眉和页脚内容。
 type: docs
 weight: 10

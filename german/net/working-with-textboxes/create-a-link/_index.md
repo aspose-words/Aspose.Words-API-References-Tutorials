@@ -1,7 +1,7 @@
 ---
 title: Link in Word erstellen
 linktitle: Link in Word erstellen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Word-Verknüpfung zwischen Textfeldern in einem Word-Dokument erstellen.
 type: docs
 weight: 10
@@ -24,7 +24,7 @@ TextBox textBox2 = shape2.TextBox;
 
 ## Schritt 2: Erstellen einer Verknüpfung zwischen TextBoxen
 
- Wir erstellen nun mithilfe von eine Verknüpfung zwischen den beiden TextBoxen`IsValidLinkTarget()` Methode und die`Next` Eigenschaft der ersten TextBox.
+Wir erstellen nun mithilfe von eine Verknüpfung zwischen den beiden TextBoxen`IsValidLinkTarget()` Methode und die`Next` Eigenschaft der ersten TextBox.
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
@@ -62,7 +62,7 @@ A: Um Textfelder in Word mit Aspose.Words für .NET zu verknüpfen, wird die Bib
 
 #### F: Wie erstelle ich eine Verknüpfung zwischen zwei Textfeldern?
 
- A: Um eine Verknüpfung zwischen zwei Textfeldern zu erstellen, müssen Sie die festlegen`Next`Eigenschaft des ersten Textfelds auf das zweite Textfeld übertragen. Stellen Sie sicher, dass Sie die Gültigkeit des Linkziels zuvor mithilfe des überprüft haben`IsValidLinkTarget()` Methode.
+ A: Um eine Verknüpfung zwischen zwei Textfeldern zu erstellen, müssen Sie die festlegen`Next` Eigenschaft des ersten Textfelds auf das zweite Textfeld übertragen. Stellen Sie sicher, dass Sie die Gültigkeit des Linkziels zuvor mithilfe des überprüft haben`IsValidLinkTarget()` Methode.
 
 #### F: Ist es möglich, Verknüpfungen zwischen anderen Elementen als Textfeldern zu erstellen?
 

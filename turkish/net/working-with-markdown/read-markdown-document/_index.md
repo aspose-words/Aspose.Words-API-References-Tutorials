@@ -1,14 +1,14 @@
 ---
 title: İşaretleme Belgesini Oku
 linktitle: İşaretleme Belgesini Oku
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET Adım adım kılavuz ile işaretleme belgesini nasıl okuyacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/read-markdown-document/
 ---
 
-Bu örnekte, bir Markdown belgesini Aspose.Words for .NET kullanarak nasıl okuyacağınızı göstereceğiz. Markdown, düz metni biçimlendirmek için kullanılan hafif bir biçimlendirme dilidir.
+Bu örnekte, Aspose.Words for .NET kullanarak bir Markdown belgesini nasıl okuyacağınızı göstereceğiz. Markdown, düz metni biçimlendirmek için kullanılan hafif bir biçimlendirme dilidir.
 
 ## 1. Adım: Markdown belgesini okuma
 

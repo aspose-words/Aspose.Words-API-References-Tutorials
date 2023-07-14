@@ -1,13 +1,13 @@
 ---
-title: Programming With Txtsaveoptions
-linktitle: Programming With Txtsaveoptions
-second_title: Aspose.Words for .NET API Reference
+title: Words Processing with Txtsaveoptions
+linktitle: Words Processing with Txtsaveoptions
+second_title: Aspose.Words Document Processing API
 description: Learn how to program with text file saving options in Aspose.Words for .NET. Learn how to specify encoding, format text, manage line breaks, and more with step-by-step tutorials and sample code in C#.
 type: docs
 weight: 1700
 url: /net/programming-with-txtsaveoptions/
 ---
-Aspose.Words for .NET tutorials walk you through the various features and uses of the library in the context of manipulating Word documents. One of the tutorials focuses on programming with TXT save options, showing you how to generate text files from Word documents while maintaining content formatting and structure. You will learn how to use the various options available to customize the conversion of documents to text files, such as specifying the column delimiter and managing white spaces.
+Aspose.Words for .NET tutorials walk you through the various features and uses of the library in the context of manipulating Word documents. One of the tutorials focuses on Words Processing with TXT save options, showing you how to generate text files from Word documents while maintaining content formatting and structure. You will learn how to use the various options available to customize the conversion of documents to text files, such as specifying the column delimiter and managing white spaces.
 
 These tutorials provide step-by-step instructions, along with sample C# code, to help you understand and practice the concepts covered. Whether you are a beginner or an experienced developer, you will find detailed information on how to use Aspose.Words for .NET and how to get the most out of this powerful document manipulation library.
 

@@ -1,7 +1,7 @@
 ---
 title: Matematiska ekvationer
 linktitle: Matematiska ekvationer
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till matematiska ekvationer till dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek för att skapa, redigera och
 
 ## Förstå Aspose.Words-biblioteket
 
-Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett populärt bibliotek som gör arbetet med Word-dokument enkelt och effektivt. Den erbjuder ett brett utbud av funktioner för att skapa, redigera och manipulera Word-dokument, inklusive stöd för matematiska ekvationer.
+Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett populärt bibliotek som gör ordbehandling med Word-dokument enkelt och effektivt. Den erbjuder ett brett utbud av funktioner för att skapa, redigera och manipulera Word-dokument, inklusive stöd för matematiska ekvationer.
 
 ## Laddar Word-dokumentet
 
@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## Slutsats
 
-I den här guiden har vi täckt hur man använder Aspose.Words för .NET för att lägga till matematiska ekvationer till ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt lägga till matematiska ekvationer till dina Word-dokument i din C#-applikation. Aspose.Words erbjuder enorm flexibilitet och kraft för att arbeta med matematiska ekvationer, vilket gör att du kan skapa professionella, välformaterade dokument.
+I den här guiden har vi täckt hur man använder Aspose.Words för .NET för att lägga till matematiska ekvationer till ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt lägga till matematiska ekvationer till dina Word-dokument i din C#-applikation. Aspose.Words erbjuder enorm flexibilitet och kraft för ordbehandling med matematiska ekvationer, så att du kan skapa professionella, välformaterade dokument.

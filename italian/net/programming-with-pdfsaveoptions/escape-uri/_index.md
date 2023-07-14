@@ -1,7 +1,7 @@
 ---
 title: URI di escape nel documento PDF
 linktitle: URI di escape nel documento PDF
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata Come sfuggire all'URI nel documento PDF con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -87,7 +87,7 @@ R: Per eseguire l'escape degli URI in un documento PDF utilizzando Aspose.Words 
 
  Crea una nuova istanza di`Document` classe e a`DocumentBuilder` oggetto per costruire il documento.
 
- Usa il`InsertHyperlink` metodo del`DocumentBuilder` oggetto per inserire collegamenti ipertestuali nel documento. Assicurati di eseguire l'escape dell'URI utilizzando il`Uri.EscapeUriString` funzione per evitare errori di formato.
+ Usa il`InsertHyperlink` metodo del`DocumentBuilder` oggetto per inserire collegamenti ipertestuali nel documento. Assicurati di eseguire l'escape dell'URI utilizzando il file`Uri.EscapeUriString` funzione per evitare errori di formato.
 
  Usa il`Save` metodo del`Document` oggetto per salvare il documento in formato PDF specificando il nome del file di output.
 

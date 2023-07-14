@@ -1,7 +1,7 @@
 ---
 title: Endnotenoptionen festlegen
 linktitle: Endnotenoptionen festlegen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Endnotenoptionen in Word-Dokumenten festlegen. Schritt-für-Schritt-Anleitung mit Beispielquellcode.
 type: docs
 weight: 10
@@ -89,12 +89,12 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprech
 
 #### F: Wie kann ich Endnoten in einem Dokument positionieren?
 
- A: Um Endnoten in einem Dokument zu positionieren, können Sie die verwenden`Position` Eigentum der`EndnoteOptions` Klasse. Sie können festlegen, ob Endnoten am Ende jeder Seite, am Ende jedes Abschnitts oder am Ende des Dokuments platziert werden sollen.
+ A: Um Endnoten in einem Dokument zu positionieren, können Sie die verwenden`Position`Eigentum der`EndnoteOptions` Klasse. Sie können festlegen, ob Endnoten am Ende jeder Seite, am Ende jedes Abschnitts oder am Ende des Dokuments platziert werden sollen.
 
 #### F: Kann ich das Format der Endnotennummerierung anpassen?
 
- A: Ja, Sie können das Format der Endnotennummerierung in Aspose.Words anpassen. Benutzen Sie die`NumberFormat` Eigentum der`EndnoteOptions` -Klasse, um das gewünschte Format festzulegen, z. B. arabische Ziffern, römische Ziffern, Buchstaben usw.
+ A: Ja, Sie können das Format der Endnotennummerierung in Aspose.Words anpassen. Benutzen Sie die`NumberFormat`Eigentum der`EndnoteOptions` -Klasse, um das gewünschte Format festzulegen, z. B. arabische Ziffern, römische Ziffern, Buchstaben usw.
 
 #### F: Ist es möglich, die Endnotennummerierung zwischen Abschnitten eines Dokuments fortzusetzen?
 
- A: Ja, es ist möglich, die Endnotennummerierung zwischen Abschnitten eines Dokuments fortzusetzen. Benutzen Sie die`RestartRule` Eigentum der`EndnoteOptions` Klasse und setzen Sie es auf`RestartContinuous` Damit die Nummerierung zwischen den Abschnitten fortgesetzt werden kann.
+ A: Ja, es ist möglich, die Endnotennummerierung zwischen Abschnitten eines Dokuments fortzusetzen. Benutzen Sie die`RestartRule`Eigentum der`EndnoteOptions` Klasse und setzen Sie es auf`RestartContinuous` Damit die Nummerierung zwischen den Abschnitten fortgesetzt werden kann.

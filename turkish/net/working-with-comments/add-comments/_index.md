@@ -1,7 +1,7 @@
 ---
 title: Yorum ekle
 linktitle: Yorum ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerine nasıl yorum ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -93,7 +93,7 @@ C: Evet, mevcut biçimlendirme özelliklerini kullanarak yorum metnini Aspose.Wo
 
 #### S: Bir belgede bulunan tüm yorumları nasıl alabilirim?
 
- C: Bir belgede bulunan tüm yorumları aşağıdakileri kullanarak alabilirsiniz.`Document.Comments` mülk.
+C: Bir belgede bulunan tüm yorumları aşağıdakileri kullanarak alabilirsiniz.`Document.Comments` mülk.
 
 #### S: Aspose.Words for .NET'te belirli bir yorumu silebilir miyim?
 

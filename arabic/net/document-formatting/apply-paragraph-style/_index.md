@@ -1,7 +1,7 @@
 ---
 title: تطبيق نمط الفقرة
 linktitle: تطبيق نمط الفقرة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

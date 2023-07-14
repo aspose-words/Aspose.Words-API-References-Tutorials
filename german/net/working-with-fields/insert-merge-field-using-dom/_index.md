@@ -1,7 +1,7 @@
 ---
 title: Zusammenführungsfeld mithilfe von DOM einfügen
 linktitle: Zusammenführungsfeld mithilfe von DOM einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET benutzerdefinierte Feldzusammenführungsfelder in Ihre Word-Dokumente einfügen.
 type: docs
 weight: 10

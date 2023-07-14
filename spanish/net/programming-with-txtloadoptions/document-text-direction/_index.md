@@ -1,7 +1,7 @@
 ---
 title: Dirección del texto del documento
 linktitle: Dirección del texto del documento
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a especificar la dirección del texto en sus documentos con Aspose.Words para .NET. Mejore la visualización de los idiomas de derecha a izquierda.
 type: docs
 weight: 10
@@ -81,7 +81,7 @@ Esta característica es esencial para garantizar que el texto se muestre correct
 
 Con Aspose.Words, puede manipular fácilmente la dirección del texto en sus documentos, brindando una experiencia de lectura fluida e intuitiva para los usuarios.
 
-Es importante tener en cuenta que esta función es especialmente útil cuando se trabaja con idiomas que requieren una dirección de texto específica. Aspose.Words facilita esta tarea al proporcionar herramientas poderosas para administrar la dirección del texto en sus documentos.
+Es importante tener en cuenta que esta función es especialmente útil cuando se procesan textos con idiomas que requieren una dirección de texto específica. Aspose.Words facilita esta tarea al proporcionar herramientas poderosas para administrar la dirección del texto en sus documentos.
 
 Recuerde usar las opciones de carga adecuadas, como configurar la dirección automática del texto, para obtener los resultados que desea en sus documentos.
 

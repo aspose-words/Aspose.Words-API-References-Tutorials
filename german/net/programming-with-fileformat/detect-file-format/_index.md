@@ -1,7 +1,7 @@
 ---
 title: Dokumentdateiformat erkennen
 linktitle: Dokumentdateiformat erkennen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Erkennen des Dokumentdateiformats mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -219,7 +219,7 @@ Aspose.Words für .NET unterstützt eine Vielzahl von Dokumentformaten, darunter
 
 #### Wie gehe ich bei der Formaterkennung mit verschlüsselten Dokumentdateien um?
 
- Wenn Sie das Format einer Dokumentdatei ermitteln möchten, können Sie Folgendes verwenden`IsEncrypted` Eigentum der`FileFormatInfo` Objekt, um zu prüfen, ob die Datei verschlüsselt ist. Wenn die Datei verschlüsselt ist, können Sie zusätzliche Schritte unternehmen, um diesen speziellen Fall zu behandeln, z. B. das Kopieren der Datei in ein Verzeichnis, das für verschlüsselte Dokumente vorgesehen ist. Du kannst den ... benutzen`File.Copy` Methode, um dies zu tun.
+ Wenn Sie das Format einer Dokumentdatei ermitteln möchten, können Sie Folgendes verwenden`IsEncrypted`Eigentum der`FileFormatInfo` Objekt, um zu überprüfen, ob die Datei verschlüsselt ist. Wenn die Datei verschlüsselt ist, können Sie zusätzliche Schritte unternehmen, um diesen speziellen Fall zu behandeln, z. B. das Kopieren der Datei in ein Verzeichnis, das für verschlüsselte Dokumente vorgesehen ist. Du kannst den ... benutzen`File.Copy` Methode, um dies zu tun.
 
 #### Welche Maßnahmen sollten ergriffen werden, wenn das Format eines Dokuments unbekannt ist?
 

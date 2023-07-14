@@ -1,7 +1,7 @@
 ---
 title: PDF 文档中的转义 URI
 linktitle: PDF 文档中的转义 URI
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 分步指南如何使用 Aspose.Words for .NET 在 PDF 文档中转义 URI。
 type: docs
 weight: 10

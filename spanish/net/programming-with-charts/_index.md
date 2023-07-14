@@ -1,7 +1,7 @@
 ---
-title: Programación con gráficos
-linktitle: Programación con gráficos
-second_title: Referencia de API de Aspose.Words para .NET
+title: Uso de la API de gráficos de palabras
+linktitle: Uso de gráficos
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a crear, personalizar y manipular gráficos en documentos de Word con Aspose.Words para .NET. Los tutoriales brindan explicaciones paso a paso y el código fuente de C# para ayudarlo a agregar gráficos.
 type: docs
 weight: 1540

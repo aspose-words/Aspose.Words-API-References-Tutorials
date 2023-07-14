@@ -1,7 +1,7 @@
 ---
 title: 设置字体回退设置
 linktitle: 设置字体回退设置
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在 Aspose.Words for .NET 中设置字体替换设置并在 Word 文档中自定义字体替换。
 type: docs
 weight: 10

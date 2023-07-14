@@ -1,7 +1,7 @@
 ---
 title: Formularfelder funktionieren mit Eigenschaften
 linktitle: Formularfelder funktionieren mit Eigenschaften
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Formularfeldeigenschaften in Word-Dokumenten arbeiten.
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ Rufen Sie als Nächstes ein bestimmtes Formularfeld aus der Formularfeldsammlung
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## Schritt 3: Arbeiten mit Formularfeldeigenschaften
+## Schritt 3: Textverarbeitung mit Formularfeldeigenschaften
 
  Sie können verschiedene Eigenschaften des Formularfelds je nach Typ bearbeiten. In diesem Beispiel prüfen wir, ob das Formularfeld vom Typ ist`FieldType.FieldFormTextInput` und stellen Sie es ein`Result` Eigentum entsprechend:
 

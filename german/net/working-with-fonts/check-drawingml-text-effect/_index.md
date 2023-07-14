@@ -1,7 +1,7 @@
 ---
 title: Überprüfen Sie den DrawingML-Texteffekt
 linktitle: Überprüfen Sie den DrawingML-Texteffekt
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie DrawingML-Texteffekte in einem Word-Dokument mit Aspose.Words für .NET überprüfen.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Als Nächstes laden wir das Word-Dokument und greifen auf die Sammlung von Abläufen (Zeichenfolgen) im ersten Absatz des Hauptteils des Dokuments zu. Als Nächstes prüfen wir, ob bestimmte DrawingML-Texteffekte auf die Schriftart des ersten Durchlaufs angewendet werden.
 
 ```csharp
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "DrawingML text effects.docx");
 RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
 Font runFont = runs[0].Font;
@@ -45,7 +45,7 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "DrawingML text effects.docx");

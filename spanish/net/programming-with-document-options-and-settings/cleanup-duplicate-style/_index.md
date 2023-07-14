@@ -1,7 +1,7 @@
 ---
 title: Limpiar estilo duplicado
 linktitle: Limpiar estilo duplicado
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para limpiar estilos duplicados en un documento usando Aspose.Words para .NET. Código fuente completo incluido.
 type: docs
 weight: 10
@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 
 Esta declaración muestra el número de estilos restantes después de la limpieza.
 
-### Código fuente de ejemplo para Limpiar estilo duplicado usando Aspose.Words para .NET
+### Ejemplo de código fuente para Limpiar estilo duplicado usando Aspose.Words para .NET
 
 ```csharp
 

@@ -1,7 +1,7 @@
 ---
 title: Оптимизируйте размер PDF с помощью Skip Embedded Arial и Times Roman Fonts
 linktitle: Оптимизируйте размер PDF с помощью Skip Embedded Arial и Times Roman Fonts
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по созданию оптимизированного PDF-файла без встраивания шрифтов Arial и Times Roman с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 
  Загрузите документ, который хотите обработать, с помощью`Document` класс и указанный путь к документу.
 
- Создайте экземпляр`PdfSaveOptions` класс и установить`FontEmbeddingMode` собственность на`PdfFontEmbeddingMode.EmbedAll`. Это позволит внедрить все шрифты, кроме Arial и Times Roman, в сгенерированный PDF-файл.
+ Создайте экземпляр`PdfSaveOptions`класс и установить`FontEmbeddingMode` собственность на`PdfFontEmbeddingMode.EmbedAll`. Это позволит внедрить все шрифты, кроме Arial и Times Roman, в сгенерированный PDF-файл.
 
  Использовать`Save` метод`Document` объект, чтобы сохранить документ в формате PDF, указав параметры сохранения, настроенные ранее.
 

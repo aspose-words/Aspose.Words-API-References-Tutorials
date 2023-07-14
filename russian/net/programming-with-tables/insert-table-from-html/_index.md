@@ -1,7 +1,7 @@
 ---
 title: Вставить таблицу из HTML
 linktitle: Вставить таблицу из HTML
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставить таблицу из HTML в документ Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /ru/net/programming-with-tables/insert-table-from-html/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Создание документа и инициализация генератора документов
-Чтобы начать работу с документом и генератором документов, выполните следующие действия:
+Чтобы запустить Word Processing с документом и генератором документов, выполните следующие действия:
 
 ```csharp
 // Путь к каталогу ваших документов
@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ### Пример исходного кода для вставки таблицы из Html с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

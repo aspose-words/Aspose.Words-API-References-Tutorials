@@ -1,7 +1,7 @@
 ---
 title: Formato de documento
 linktitle: Formato de documento
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a formatear y formatear documentos de Word con Aspose.Words para .NET. Los tutoriales lo guiarán a través de las diversas técnicas de diseño, estilo, numeración, párrafos, fuentes y más.
 type: docs
 weight: 1490

@@ -1,7 +1,7 @@
 ---
 title: Convertir metarchivos a emf o wmf
 linktitle: Convertir metarchivos a emf o wmf
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para convertir metarchivos a formatos EMF o WMF al convertir un documento a HTML con Aspose.Words para .NET.
 type: docs
 weight: 10

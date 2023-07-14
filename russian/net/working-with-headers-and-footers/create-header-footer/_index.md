@@ -1,7 +1,7 @@
 ---
 title: Создать нижний колонтитул
 linktitle: Создать нижний колонтитул
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как создавать верхние и нижние колонтитулы в документах Word с помощью Aspose.Words для .NET. Настройте верхние и нижние колонтитулы для каждой страницы.
 type: docs
 weight: 10

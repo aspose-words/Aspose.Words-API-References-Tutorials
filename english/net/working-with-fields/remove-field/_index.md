@@ -1,7 +1,7 @@
 ---
 title: Remove Field
 linktitle: Remove Field
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this guide, you will learn how to delete a specific field in a document using Aspose.Words for .NET.
 type: docs
 weight: 10

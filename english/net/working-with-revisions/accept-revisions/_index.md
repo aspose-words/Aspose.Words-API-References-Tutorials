@@ -1,7 +1,7 @@
 ---
 title: Accept Revisions
 linktitle: Accept Revisions
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to accept revisions to a Word document using Aspose.Words for .NET
 type: docs
 weight: 10

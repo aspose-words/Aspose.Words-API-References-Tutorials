@@ -1,7 +1,7 @@
 ---
 title: Accès aux sections par index
 linktitle: Accès aux sections par index
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment accéder aux sections d'un document Word par index et modifier leurs paramètres avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Ensuite, nous allons charger le document Word dans une instance du`Document` classe. Pour accéder à une section spécifique, nous utilisons l'index de la section. Dans cet exemple, nous accédons à la première section en utilisant l'index 0.
 
 ```csharp
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Document.docx");
 
 // Accéder à une rubrique par index
@@ -52,7 +52,7 @@ section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm
 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -86,7 +86,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  R : Pour charger le document Word dans une instance du`Document` class et accéder à une section spécifique par index, vous pouvez utiliser le code suivant :
 
 ```csharp
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Document.docx");
 
 // Accéder à une rubrique par index

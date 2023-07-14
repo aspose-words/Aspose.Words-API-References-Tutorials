@@ -1,7 +1,7 @@
 ---
 title: çitle çevrili kod
 linktitle: çitle çevrili kod
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET Adım adım kılavuzla çitle çevrili kod özelliğinin nasıl kullanılacağını öğrenin.
 type: docs
 weight: 10

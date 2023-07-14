@@ -1,7 +1,7 @@
 ---
 title: Applicera kanter och skuggning på stycke
 linktitle: Applicera kanter och skuggning på stycke
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du använder kanter och skuggning på ett stycke med Aspose.Words för .NET.
 type: docs
 weight: 10

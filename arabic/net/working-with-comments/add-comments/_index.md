@@ -1,7 +1,7 @@
 ---
 title: أضف التعليقات
 linktitle: أضف التعليقات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إضافة تعليقات إلى مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 
 #### س: كيف يمكنني استرداد جميع التعليقات الموجودة في المستند؟
 
- ج: يمكنك استرداد جميع التعليقات الموجودة في المستند باستخدام`Document.Comments` ملكية.
+ج: يمكنك استرداد جميع التعليقات الموجودة في المستند باستخدام`Document.Comments` ملكية.
 
 #### س: هل يمكنني حذف تعليق معين في Aspose.Words for .NET؟
 

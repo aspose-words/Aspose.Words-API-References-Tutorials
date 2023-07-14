@@ -1,7 +1,7 @@
 ---
 title: 栅格化变换的元素
 linktitle: 栅格化变换的元素
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解在使用 Aspose.Words for .NET 转换为 PCL 格式时如何禁用转换元素的光栅化。
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中
 
 ## 了解 Aspose.Words 库
 
-在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。 Aspose.Words 是一个流行的库，它使 Word 文档的处理变得简单而高效。它提供了用于创建、编辑和转换 Word 文档的广泛功能，包括支持在转换过程中对转换后的元素进行光栅化。
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。 Aspose.Words 是一个流行的库，它使 Word 文档的文字处理变得简单高效。它提供了用于创建、编辑和转换 Word 文档的广泛功能，包括支持在转换过程中对转换后的元素进行光栅化。
 
 ## 加载Word文档
 

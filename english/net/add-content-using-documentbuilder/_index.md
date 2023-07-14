@@ -1,7 +1,7 @@
 ---
 title: Add Content Using Documentbuilder
 linktitle: Add Content Using Documentbuilder
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to add content to your Word documents using DocumentBuilder with Aspose.Words for .NET. Hands-on tutorials with detailed code examples.
 type: docs
 weight: 1460

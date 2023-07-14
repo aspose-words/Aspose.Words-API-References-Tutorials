@@ -1,7 +1,7 @@
 ---
 title: Оптимизировать для MS Word
 linktitle: Оптимизировать для MS Word
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по оптимизации документа для MS Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

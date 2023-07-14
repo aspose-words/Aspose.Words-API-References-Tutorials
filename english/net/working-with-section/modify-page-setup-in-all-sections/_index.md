@@ -1,7 +1,7 @@
 ---
 title: Modify Word Page Setup In All Sections
 linktitle: Modify Word Page Setup In All Sections
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to modify the word page setup in all sections of a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

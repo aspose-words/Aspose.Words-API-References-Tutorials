@@ -1,7 +1,7 @@
 ---
 title: Построить таблицу с границами
 linktitle: Построить таблицу с границами
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по созданию таблицы с границами с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.do
 ### Пример исходного кода для создания таблицы с границами с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

@@ -1,7 +1,7 @@
 ---
 title: 插入文本输入表单字段
 linktitle: 插入文本输入表单字段
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 通过此分步指南，了解如何使用 Aspose.Words for .NET 将文本输入表单字段插入到 Word 文档中。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 3D DML 3DEffects'i bir PDF Belgesinde İşleyin
 linktitle: 3D DML 3DEffects'i bir PDF Belgesinde İşleyin
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işlenmesini nasıl etkinleştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -72,7 +72,7 @@ C: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işle
 
  örneğini oluşturun`Document` Word belgesine giden yolu belirten sınıf.
 
- örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`Dml3DEffectsRenderingMode` mülkiyet`Dml3DEffectsRenderingMode.Advanced` 3B DML efektlerinin gelişmiş şekilde oluşturulmasını sağlamak için.
+ örneğini oluşturun`PdfSaveOptions`sınıflandırın ve ayarlayın`Dml3DEffectsRenderingMode` mülkiyet`Dml3DEffectsRenderingMode.Advanced` 3B DML efektlerinin gelişmiş şekilde oluşturulmasını sağlamak için.
 
  Kullan`Save` yöntemi`Document`kaydetme seçeneklerini belirterek belgeyi PDF biçiminde kaydetmek için sınıf.
 

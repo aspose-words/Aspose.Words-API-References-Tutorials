@@ -1,7 +1,7 @@
 ---
 title: Utilizzo dei riquadri attività delle estensioni Web
 linktitle: Utilizzo dei riquadri attività delle estensioni Web
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata all'utilizzo dei riquadri attività delle estensioni Web con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Prima di iniziare, assicurati di aver installato e configurato la libreria Aspos
 
 ## Passaggio 1: definire la directory dei documenti
 
-Per iniziare, è necessario definire il percorso della directory in cui si desidera salvare il documento generato. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
+ Per iniziare, è necessario definire il percorso della directory in cui si desidera salvare il documento generato. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

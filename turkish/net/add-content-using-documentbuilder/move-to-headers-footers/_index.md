@@ -1,7 +1,7 @@
 ---
 title: Üstbilgilere Taşı Altbilgiler
 linktitle: Üstbilgilere Taşı Altbilgiler
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu adım adım kılavuz ile Word belgelerinde üst bilgiler ve alt bilgilerde gezinmek ve bunları değiştirmek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10

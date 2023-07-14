@@ -1,7 +1,7 @@
 ---
 title: Use Space Character Per Level For List Indentation
 linktitle: Use Space Character Per Level For List Indentation
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to using a space character per level for list indentation in Aspose.Words for .NET. Create well-structured Word documents with ease.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Aspose.Words for .NET is a powerful library for creating, editing, and manipulat
 
 ## Understanding the Aspose.Words library
 
-Before diving into the code, it's important to understand the Aspose.Words library for .NET. Aspose.Words is a popular library that makes working with Word documents easy and efficient. It offers a wide range of functionalities for creating, modifying and manipulating Word documents, including management of lists and indentation.
+Before diving into the code, it's important to understand the Aspose.Words library for .NET. Aspose.Words is a popular library that makes Words Processing with Word documents easy and efficient. It offers a wide range of functionalities for creating, modifying and manipulating Word documents, including management of lists and indentation.
 
 ## Creating the document and adding content
 
@@ -91,12 +91,12 @@ namespace Example
 
 ## Conclusion
 
-In this guide, we explained how to use Aspose.Words for .NET to apply the "Use one space character per level for list indentation" functionality. By following the steps provided and using the C# source code provided, you can easily configure the indentation of lists in your Word documents using one space character per level. Aspose.Words offers tremendous flexibility and power for working with text formatting and list management, allowing you to create well-structured documents in your C# application.
+In this guide, we explained how to use Aspose.Words for .NET to apply the "Use one space character per level for list indentation" functionality. By following the steps provided and using the C# source code provided, you can easily configure the indentation of lists in your Word documents using one space character per level. Aspose.Words offers tremendous flexibility and power for Words Processing with text formatting and list management, allowing you to create well-structured documents in your C# application.
 
 ### Frequently Asked Questions
 
 #### Q: What is Aspose.Words for .NET?
-Aspose.Words for .NET is a powerful library for creating, editing and manipulating Word documents in a C# application. It offers many features for working with Word documents, including the ability to use one space per level for indenting lists.
+Aspose.Words for .NET is a powerful library for creating, editing and manipulating Word documents in a C# application. It offers many features for Words Processing with Word documents, including the ability to use one space per level for indenting lists.
 
 #### Q: How can I use one space per level for list indentation with Aspose.Words for .NET?
 You can use one space per level for list indentation by following these steps:

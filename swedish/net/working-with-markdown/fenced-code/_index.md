@@ -1,7 +1,7 @@
 ---
 title: Inhägnad kod
 linktitle: Inhägnad kod
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du använder den inhägnade kodfunktionen med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10

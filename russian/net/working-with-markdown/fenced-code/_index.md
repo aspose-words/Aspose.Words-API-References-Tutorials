@@ -1,7 +1,7 @@
 ---
 title: Огражденный код
 linktitle: Огражденный код
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как использовать функцию изолированного кода с Aspose.Words для .NET. Пошаговое руководство.
 type: docs
 weight: 10

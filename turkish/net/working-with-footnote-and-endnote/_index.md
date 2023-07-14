@@ -1,13 +1,13 @@
 ---
-title: Dipnot ve Sonnot ile Çalışma
-linktitle: Dipnot ve Sonnot ile Çalışma
-second_title: Aspose.Words for .NET API Referansı
+title: Dipnot ve Sonnot ile Kelime İşleme
+linktitle: Dipnot ve Sonnot ile Kelime İşleme
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinizdeki dipnotlar ve son notlarla nasıl çalışacağınızı öğrenin. Ayrıntılı öğreticiler ve pratik örnekler.
 type: docs
 weight: 660
 url: /tr/net/working-with-footnote-and-endnote/
 ---
-Dipnotlar ve Sonnotlarla Çalışmak, .NET için Aspose.Words kitaplığını kullanarak Word belgelerinizdeki dipnotlar ve sonnotlarla çalışırken size yol gösteren kapsamlı bir kaynaktır. Öğreticiler, ayrıntılı adım adım açıklamalar, eksiksiz kaynak kodu ve dipnotları ve son notları eklemek, değiştirmek ve kaldırmak için pratik örnekler sağlar. Ayrıca notların biçimini ve stilini özelleştirmeyi, notlar arasında gezinmeyi ve bunları PDF veya HTML gibi farklı biçimlere dönüştürmeyi de öğreneceksiniz. Bu kaynak, Aspose.Words for .NET kullanarak Word belgelerindeki referansları ve açıklamaları yönetmek isteyen geliştiriciler için gereklidir.
+Words Processing with Footnotes and Endnotes, Aspose.Words for .NET kütüphanesini kullanarak Word belgelerinizde dipnotlar ve son notlar içeren Kelime İşleme konusunda size yol gösteren kapsamlı bir kaynaktır. Öğreticiler, ayrıntılı adım adım açıklamalar, eksiksiz kaynak kodu ve dipnotları ve son notları eklemek, değiştirmek ve kaldırmak için pratik örnekler sağlar. Ayrıca notların biçimini ve stilini özelleştirmeyi, notlar arasında gezinmeyi ve bunları PDF veya HTML gibi farklı biçimlere dönüştürmeyi de öğreneceksiniz. Bu kaynak, Aspose.Words for .NET kullanarak Word belgelerindeki referansları ve açıklamaları yönetmek isteyen geliştiriciler için gereklidir.
 
  ## Öğreticiler
 | Başlık | Tanım |

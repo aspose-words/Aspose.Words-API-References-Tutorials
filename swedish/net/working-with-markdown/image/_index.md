@@ -1,7 +1,7 @@
 ---
 title: Bild
 linktitle: Bild
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar och anpassar en bild med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Erhalten Sie eine Warnmeldung
 linktitle: Erhalten Sie eine Warnmeldung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie bei der Verwendung von Aspose.Words für .NET eine Warnmeldung erhalten und alle Probleme oder Warnungen in Ihren Dokumenten verwalten.
 type: docs
 weight: 10
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

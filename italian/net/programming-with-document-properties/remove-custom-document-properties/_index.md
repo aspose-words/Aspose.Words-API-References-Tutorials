@@ -1,7 +1,7 @@
 ---
 title: Rimuovi proprietà documento personalizzate
 linktitle: Rimuovi proprietà documento personalizzate
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per rimuovere le proprietà personalizzate da un documento con Aspose.Words per .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Изменить форматирование строк
 linktitle: Изменить форматирование строк
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по изменению форматирования строк таблицы с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 ### Пример исходного кода для изменения форматирования строк с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

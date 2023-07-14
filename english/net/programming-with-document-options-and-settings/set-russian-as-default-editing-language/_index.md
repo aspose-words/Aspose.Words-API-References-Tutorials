@@ -1,7 +1,7 @@
 ---
 title: Set Russian As Default Editing Language
 linktitle: Set Russian As Default Editing Language
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to set Russian as the default editing language of a document with Aspose.Words for .NET.
 type: docs
 weight: 10

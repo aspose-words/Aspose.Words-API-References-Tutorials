@@ -1,7 +1,7 @@
 ---
 title: إدراج حقل بلا
 linktitle: إدراج حقل بلا
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية برنامج Insérez un Champ AUCUN dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -57,7 +57,7 @@ doc.Save(dataDir + "InsertionFieldNone.docx");
 
 ### التعليمات
 
-#### س: ماذا يغطي البرنامج التعليمي "التعامل مع الحقول: إدراج حقل بلا"؟
+#### س: ماذا يغطي البرنامج التعليمي "معالجة الكلمات باستخدام الحقول: إدراج حقل بلا"؟
 
 ج: يغطي هذا البرنامج التعليمي معالجة المجال في Aspose Words for .NET ، مع التركيز بشكل خاص على إدخال حقل "None". الحقول هي عناصر ديناميكية في مستند Word يمكن استخدامها لعرض البيانات أو حسابها. يشرح البرنامج التعليمي كيفية إدراج حقل "بلا" واستخدامه بشكل مناسب.
 

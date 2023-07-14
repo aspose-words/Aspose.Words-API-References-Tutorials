@@ -1,7 +1,7 @@
 ---
 title: Получить межстрочный интервал шрифта
 linktitle: Получить межстрочный интервал шрифта
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого руководства вы узнаете, как получить межстрочный интервал шрифта в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

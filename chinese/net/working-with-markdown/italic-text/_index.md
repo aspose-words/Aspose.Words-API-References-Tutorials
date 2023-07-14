@@ -1,7 +1,7 @@
 ---
 title: 斜体文本
 linktitle: 斜体文本
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 分步指南将文本设置为斜体。
 type: docs
 weight: 10

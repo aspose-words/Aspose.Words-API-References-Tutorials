@@ -1,7 +1,7 @@
 ---
 title: Split Table
 linktitle: Split Table
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to split a table in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In this tutorial, we are going to learn how to split a table in a Word document 
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Loading the document
-To start working with the document, follow these steps:
+To start Words Processing with the document, follow these steps:
 
 ```csharp
 // Path to your documents directory

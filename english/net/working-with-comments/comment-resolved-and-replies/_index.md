@@ -1,7 +1,7 @@
 ---
 title: Comment Resolved And Replies
 linktitle: Comment Resolved And Replies
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to resolve comments and their replies in Word documents using Aspose.Words for .NET. 
 type: docs
 weight: 10

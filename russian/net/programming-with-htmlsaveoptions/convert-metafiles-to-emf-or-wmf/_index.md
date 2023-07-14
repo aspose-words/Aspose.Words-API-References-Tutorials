@@ -1,7 +1,7 @@
 ---
 title: Преобразование метафайлов в EMF или WMF
 linktitle: Преобразование метафайлов в EMF или WMF
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по преобразованию метафайлов в форматы EMF или WMF при преобразовании документа в HTML с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Get Revision Types Of Words
 linktitle: Get Revision Types Of Words
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Get revision types of words in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

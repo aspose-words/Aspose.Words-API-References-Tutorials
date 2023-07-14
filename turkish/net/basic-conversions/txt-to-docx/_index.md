@@ -1,7 +1,7 @@
 ---
 title: Metin Dosyasını Word Belgesine Dönüştür
 linktitle: Metin Dosyasını Word Belgesine Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak düz metin dosyalarını (Txt) Word belgelerine (Docx) nasıl dönüştüreceğinizi öğrenin. Örnek kod ile adım adım öğretici.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Açık Tip Özellikler
 linktitle: Açık Tip Özellikler
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te Open Type özelliklerini nasıl etkinleştireceğinizi ve kullanacağınızı öğrenin
 type: docs
 weight: 10
@@ -65,7 +65,7 @@ C: Aspose.Words for .NET bitişik harfler, glif varyasyonları, bağlamsal ikame
 
 #### S: Bir OpenType özelliğinin belirli bir yazı tipinde desteklenip desteklenmediğini nasıl kontrol edebilirim?
 
- C: Bir OpenType özelliğinin belirli bir yazı tipinde desteklenip desteklenmediğini kontrol etmek için`Font.OpenTypeFeatures` Aspose.Words for .NET'te yöntem.
+C: Bir OpenType özelliğinin belirli bir yazı tipinde desteklenip desteklenmediğini kontrol etmek için`Font.OpenTypeFeatures` Aspose.Words for .NET'te yöntem.
 
 #### S: Aspose.Words for .NET başka hangi metin biçimlendirme özelliklerini destekliyor?
 

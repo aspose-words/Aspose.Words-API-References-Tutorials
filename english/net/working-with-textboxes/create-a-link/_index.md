@@ -1,7 +1,7 @@
 ---
 title: Create Link In Word
 linktitle: Create Link In Word
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to create link in word between TextBoxes in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

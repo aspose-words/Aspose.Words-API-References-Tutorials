@@ -1,7 +1,7 @@
 ---
 title: 插入字段包括文本而不使用文档生成器
 linktitle: 在没有文档生成器的情况下插入 FieldIncludeText
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入 FieldIncludeText 字段。
 type: docs
 weight: 10

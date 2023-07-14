@@ -1,7 +1,7 @@
 ---
 title: Zusammenführungsfelder umbenennen
 linktitle: Zusammenführungsfelder umbenennen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie Zusammenführungsfelder in einem Dokument mit Aspose.Words für .NET umbenennen.
 type: docs
 weight: 10

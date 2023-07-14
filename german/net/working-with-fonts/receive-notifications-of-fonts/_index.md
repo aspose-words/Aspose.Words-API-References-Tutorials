@@ -1,7 +1,7 @@
 ---
 title: Erhalten Sie Benachrichtigungen über Schriftarten
 linktitle: Erhalten Sie Benachrichtigungen über Schriftarten
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Benachrichtigungen über fehlende oder ersetzte Schriftarten erhalten, wenn Sie Aspose.Words für .NET verwenden.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ### Beispielquellcode für den Empfang von Benachrichtigungen über Schriftarten mit Aspose.Words für .NET 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -1,7 +1,7 @@
 ---
 title: Установить форматирование строки таблицы
 linktitle: Установить форматирование строки таблицы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по настройке форматирования строк таблицы с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 ### Пример исходного кода для настройки форматирования строк таблицы с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

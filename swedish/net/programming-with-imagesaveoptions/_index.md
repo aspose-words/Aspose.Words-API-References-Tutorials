@@ -1,13 +1,13 @@
 ---
-title: Programmering med bildsparalternativ
-linktitle: Programmering med bildsparalternativ
-second_title: Aspose.Words för .NET API Referens
+title: Ordbehandling med bildsparalternativ
+linktitle: Ordbehandling med bildsparalternativ
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du programmerar med bildsparalternativ i Aspose.Words för .NET. Steg-för-steg handledning med exempelkod för att spara och manipulera bilder i dina Word-dokument.
 type: docs
 weight: 1630
 url: /sv/net/programming-with-imagesaveoptions/
 ---
-Aspose.Words för .NET tutorials om programmering med ImageSaveOptions hjälper dig att bemästra avancerade bildmanipuleringsfunktioner i dina Word-dokument. Dessa steg-för-steg handledningar guidar dig genom att använda bildsparalternativ, inklusive komprimering, val av bildformat, inställning av bildkvalitet och mer. Du kommer att lära dig hur du anpassar bildbehandlingen när du genererar eller konverterar dokument, vilket ger dig exakt kontroll över utseendet och storleken på bilder i dina Word-filer.
+Aspose.Words för .NET handledningar om ordbehandling med ImageSaveOptions hjälper dig att bemästra avancerade bildmanipuleringsfunktioner i dina Word-dokument. Dessa steg-för-steg handledningar guidar dig genom att använda bildsparalternativ, inklusive komprimering, val av bildformat, inställning av bildkvalitet och mer. Du kommer att lära dig hur du anpassar bildbehandlingen när du genererar eller konverterar dokument, vilket ger dig exakt kontroll över utseendet och storleken på bilder i dina Word-filer.
 
 Handledningarna täcker också de grundläggande begreppen bildmanipulering, inklusive infoga, ta bort, ändra storlek på och beskära bilder i ett Word-dokument med Aspose.Words för .NET. Du kommer att lära dig hur du extraherar bilder från Word-dokument, ersätter dem med andra bilder och justerar deras position, justering och omslag. Dessa handledningar låter dig skapa automatiserade och effektiva arbetsflöden för att hantera bilder i dina Word-dokument, vilket ger dig färdigheter att enkelt och effektivt manipulera de visuella elementen i dina Word-filer.
 

@@ -1,7 +1,7 @@
 ---
 title: Insert Document At Replace
 linktitle: Insert Document At Replace
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert a document on replacement using Aspose.Words for .NET.
 type: docs
 weight: 10

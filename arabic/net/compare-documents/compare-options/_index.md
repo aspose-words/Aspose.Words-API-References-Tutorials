@@ -1,7 +1,7 @@
 ---
 title: قارن الخيارات
 linktitle: قارن الخيارات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة مقارنة الخيارات مع Aspose.Words for .NET.
 type: docs
 weight: 10

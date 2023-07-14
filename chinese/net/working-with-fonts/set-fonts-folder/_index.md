@@ -1,7 +1,7 @@
 ---
 title: 设置字体文件夹
 linktitle: 设置字体文件夹
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在 Aspose.Words for .NET 中设置字体目录并确保文档中使用的字体的可用性。
 type: docs
 weight: 10

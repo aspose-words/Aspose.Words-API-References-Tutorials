@@ -1,7 +1,7 @@
 ---
-title: Configuración de fuente con opciones de carga
-linktitle: Configuración de fuente con opciones de carga
-second_title: Referencia de API de Aspose.Words para .NET
+title: Configuración de fuentes con opciones de carga
+linktitle: Configuración de fuentes con opciones de carga
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda a cargar un documento de Word con opciones de carga personalizadas y la configuración de fuente correspondiente.
 type: docs
 weight: 10
@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Ejemplo de código fuente para la configuración de fuentes con opciones de carga mediante Aspose.Words para .NET 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -57,7 +57,7 @@ En este tutorial, vimos cómo usar las opciones de carga con la configuración d
 
 #### P: ¿Cómo puedo especificar una fuente predeterminada al cargar un documento en Aspose.Words?
 
- R: Para especificar una fuente predeterminada al cargar un documento en Aspose.Words, puede usar el`LoadOptions` clase y establecer el`DefaultFontName` propiedad al nombre de la fuente deseada.
+ R: Para especificar una fuente predeterminada al cargar un documento en Aspose.Words, puede usar el`LoadOptions`clase y establecer el`DefaultFontName` propiedad al nombre de la fuente deseada.
 
 #### P: ¿Qué otras configuraciones de fuentes puedo especificar con las opciones de carga en Aspose.Words?
 

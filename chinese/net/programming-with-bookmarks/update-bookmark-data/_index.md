@@ -1,14 +1,14 @@
 ---
-title: 更新书签数据
+title: 更新Word文档中的书签数据
 linktitle: 更新书签数据
-second_title: Aspose.Words for .NET API 参考
-description: 分步指南解释 .NET 的 Aspose.Words 书签数据更新功能的 C# 源代码。
+second_title: Aspose.Words 文档处理 API
+description: 分步指南解释 .NET 的 Word 文档功能中的 Aspose.Words 书签数据更新的 C# 源代码。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-在本教程中，我们将逐步指导您了解和实现 Aspose.Words for .NET 的更新书签数据功能。此功能允许您使用 C# 源代码更新 Word 文档中书签的内容和属性。
+在本教程中，我们将逐步指导您了解和实现 Aspose.Words for .NET 的“更新 Word 文档中的书签数据”功能。此功能允许您使用 C# 源代码更新 Word 文档中书签的内容和属性。
 
 ## 要求
 
@@ -62,7 +62,7 @@ bookmark.Text = "This is a new bookmarked text.";
 doc.Save(dataDir + "UpdatedDocument.docx");
 ```
 
-此代码会将修改后的文档保存在与原始文档相同的目录中，名称为“UpdatedDocument.docx”。
+此代码会将修改后的文档以“UpdatedDocument.docx”名称保存在与原始文档相同的目录中。
 
 ### 使用 Aspose.Words for .NET 更新书签数据的示例源代码
 
@@ -87,3 +87,21 @@ doc.Save(dataDir + "UpdatedDocument.docx");
 ## 结论
 
 恭喜！您已成功学习如何使用 Aspose.Words for .NET 更新书签数据。通过遵循本教程中提供的分步指南，您现在应该能够将此功能合并到您的 C# 应用程序中，并以编程方式操作 Word 文档中的书签。
+
+### Word 文档中更新书签数据的常见问题解答
+
+#### 问：更新书签数据功能是否仅适用于Word文档中的书签？
+
+答：是的，更新书签数据功能是专门为 Word 文档中的书签设计的。它允许您更新 Word 文档中书签的内容和属性。
+
+#### 问：除了文本之外，我还可以更新其他书签属性吗？
+
+答：是的，除了文本之外，您还可以更新其他书签属性，例如书签名称、书签范围等。使用书签的相应属性`Bookmark`对象来更新所需的属性。
+
+#### 问：我可以更新同一文档中的多个书签吗？
+
+答：是的，您可以通过重复每个书签的访问和更新步骤来更新同一文档中的多个书签。请务必为要更新的每个书签使用唯一的书签名称。
+
+#### 问：更新书签数据功能是否会修改原始文档？
+
+答：是的，书签数据更新功能通过更新书签属性和内容来修改原始文档。在应用此功能之前，请务必保存原始文档的副本。

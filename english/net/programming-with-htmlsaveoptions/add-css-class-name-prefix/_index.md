@@ -1,7 +1,7 @@
 ---
 title: Add Css Class Name Prefix
 linktitle: Add Css Class Name Prefix
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to add a CSS class name prefix when converting a document to HTML with Aspose.Words for .NET.
 type: docs
 weight: 10

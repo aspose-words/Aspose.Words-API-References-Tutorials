@@ -1,7 +1,7 @@
 ---
 title: Escape URI في مستند PDF
 linktitle: Escape URI في مستند PDF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة كيفية الهروب من URI في مستند PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

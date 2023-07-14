@@ -1,7 +1,7 @@
 ---
 title: Formrevision
 linktitle: Formrevision
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Überarbeiten Sie Formen in einem Word-Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -127,7 +127,7 @@ Assert.False(shapes[1].IsMoveToRevision);
 
 ## Abschluss
 
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Überarbeitungen an Formen in einem Word-Dokument vornimmt. Durch Befolgen der Schritte zum Erstellen des Dokuments, Aktivieren der Revisionsverfolgung, Überprüfen der mit jeder Form verknüpften Revisionen und Überprüfen der Revisionen zum Verschieben der Formen konnten wir die Revisionen erfolgreich verwalten. Aspose.Words für .NET bietet eine leistungsstarke API für die Arbeit mit Rezensionen und Formularen in Word-Dokumenten.
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Überarbeitungen an Formen in einem Word-Dokument vornimmt. Durch Befolgen der Schritte zum Erstellen des Dokuments, Aktivieren der Revisionsverfolgung, Überprüfen der mit jeder Form verknüpften Revisionen und Überprüfen der Revisionen zum Verschieben der Formen konnten wir die Revisionen erfolgreich verwalten. Aspose.Words für .NET bietet eine leistungsstarke API für die Textverarbeitung mit Rezensionen und Formularen in Word-Dokumenten.
 
 ### FAQs
 

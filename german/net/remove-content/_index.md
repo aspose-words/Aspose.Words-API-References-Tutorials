@@ -1,7 +1,7 @@
 ---
-title: Inhalt entfernen
+title: Word-Dokument – So entfernen Sie Inhalte
 linktitle: Inhalt entfernen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET effektiv Inhalte aus Word-Dokumenten entfernen. Befolgen Sie Schritt-für-Schritt-Anleitungen und verwenden Sie C#-Codebeispiele, um verschiedene Techniken zum Entfernen von Inhalten zu erlernen.
 type: docs
 weight: 1370
@@ -16,7 +16,7 @@ Unabhängig davon, ob Sie Word-Dokumente bearbeiten, erstellen, konvertieren ode
  ## Tutorials
 | Titel | Beschreibung |
 | --- | --- |
-| [Seitenumbrüche entfernen](./remove-page-breaks/) | Erfahren Sie, wie Sie Seitenumbrüche in einem Dokument mithilfe der Aspose.Words-Bibliothek für .NET entfernen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für ein nahtloses Layout. |
-| [Abschnittsumbrüche entfernen](./remove-section-breaks/) | Erfahren Sie, wie Sie Abschnittsumbrüche in einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET entfernen. Beseitigen Sie effektiv Abschnittsumbrüche, die die Formatierung Ihres Dokuments beeinträchtigen können.|
-| [Fußzeilen entfernen](./remove-footers/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ganz einfach Fußzeilen aus Word-Dokumenten entfernen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für den effizienten Umgang mit DOCX-Dateien. |
-| [Inhaltsverzeichnis entfernen](./remove-table-of-contents/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET das Inhaltsverzeichnis aus einem Word-Dokument entfernen. |
+| [Entfernen Sie Seitenumbrüche im Word-Dokument](./remove-page-breaks/) | Erfahren Sie, wie Sie Seitenumbrüche in Word-Dokumenten mithilfe der Aspose.Words-Bibliothek für .NET entfernen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für ein nahtloses Layout. |
+| [Entfernen Sie Abschnittsumbrüche im Word-Dokument](./remove-section-breaks/) | Erfahren Sie, wie Sie Abschnittsumbrüche in einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET entfernen. Beseitigen Sie effektiv Abschnittsumbrüche, die die Formatierung Ihres Dokuments beeinträchtigen können.|
+| [Fußzeilen im Word-Dokument entfernen](./remove-footers/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ganz einfach Fußzeilen in Word-Dokumenten entfernen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für den effizienten Umgang mit DOCX-Dateien. |
+| [Inhaltsverzeichnis im Word-Dokument entfernen](./remove-table-of-contents/) | Erfahren Sie, wie Sie das Inhaltsverzeichnis in einem Word-Dokument mit Aspose.Words für .NET entfernen. |

@@ -1,7 +1,7 @@
 ---
 title: Преобразование в горизонтально объединенные ячейки
 linktitle: Преобразование в горизонтально объединенные ячейки
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как преобразовать ячейки таблицы в горизонтально объединенные ячейки в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ru/net/programming-with-tables/convert-to-horizontally-merged-cells/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Загрузка документа и доступ к таблице
-Чтобы начать работу с таблицей, нам нужно загрузить содержащий ее документ и получить к нему доступ. Следуй этим шагам:
+Чтобы запустить Word Processing с таблицей, нам нужно загрузить содержащий ее документ и получить к нему доступ. Следуй этим шагам:
 
 ```csharp
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Table with merged cells.docx");
 
 // Доступ к массиву
@@ -43,7 +43,7 @@ table. ConvertToHorizontallyMergedCells();
 ### Пример исходного кода для преобразования в горизонтально объединенные ячейки с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");

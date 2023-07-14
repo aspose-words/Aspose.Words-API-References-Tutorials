@@ -1,7 +1,7 @@
 ---
 title: Césure des mots des langues
 linktitle: Césure des mots des langues
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à couper des mots dans différentes langues dans des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10

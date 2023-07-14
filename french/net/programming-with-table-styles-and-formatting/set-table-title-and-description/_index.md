@@ -1,7 +1,7 @@
 ---
 title: Définir le titre et la description du tableau
 linktitle: Définir le titre et la description du tableau
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour définir le titre et la description d'un tableau à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 ### Exemple de code source pour Set Table Title And Description en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

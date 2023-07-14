@@ -1,7 +1,7 @@
 ---
 title: Ställ in teckensnittsmappar
 linktitle: Ställ in teckensnittsmappar
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ställa in teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### Exempel på källkod för Set Fonts-mappar med Aspose.Words för .NET 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
 ## Slutsats
-I den här handledningen lärde vi oss hur man ställer in teckensnittsmappar när man renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange vilka teckensnittskällor som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att arbeta med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa teckensnittskällorna som används när du renderar dina dokument efter dina specifika behov.
+I den här handledningen lärde vi oss hur man ställer in teckensnittsmappar när man renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange vilka teckensnittskällor som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för ordbehandling med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa teckensnittskällorna som används när du renderar dina dokument efter dina specifika behov.
 
 ### FAQ's
 

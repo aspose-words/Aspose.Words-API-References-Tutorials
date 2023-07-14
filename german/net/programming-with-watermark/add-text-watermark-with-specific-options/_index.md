@@ -1,7 +1,7 @@
 ---
 title: Fügen Sie Textwasserzeichen mit spezifischen Optionen hinzu
 linktitle: Fügen Sie Textwasserzeichen mit spezifischen Optionen hinzu
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Textwasserzeichen mit bestimmten Optionen hinzufügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Schritt 3: Fügen Sie ein Textwasserzeichen mit bestimmten Optionen hinzu
 
- Wir werden eine Instanz davon erstellen`TextWatermarkOptions` Klasse und legen Sie die gewünschten Optionen für das Textwasserzeichen fest.
+ Wir werden eine Instanz davon erstellen`TextWatermarkOptions`Klasse und legen Sie die gewünschten Optionen für das Textwasserzeichen fest.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

@@ -1,7 +1,7 @@
 ---
 title: Установить параметры резервного шрифта
 linktitle: Установить параметры резервного шрифта
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как установить параметры замены шрифта в Aspose.Words для .NET и настроить замену шрифта в ваших документах Word.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ### Пример исходного кода для установки параметров резервного шрифта с использованием Aspose.Words для .NET 
 ```csharp
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

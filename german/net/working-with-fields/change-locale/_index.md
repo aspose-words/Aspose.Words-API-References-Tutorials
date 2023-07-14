@@ -1,7 +1,7 @@
 ---
 title: Gebietsschema ändern
 linktitle: Gebietsschema ändern
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET das Gebietsschema für die Datums- und Zahlenformatierung in Word-Dokumenten ändern.
 type: docs
 weight: 10

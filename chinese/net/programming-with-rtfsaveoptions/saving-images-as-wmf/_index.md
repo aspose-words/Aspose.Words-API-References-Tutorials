@@ -1,7 +1,7 @@
 ---
 title: 将图像另存为 Wmf
 linktitle: 将图像另存为 Wmf
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 转换为 RTF 时将图像另存为 WMF。
 type: docs
 weight: 10

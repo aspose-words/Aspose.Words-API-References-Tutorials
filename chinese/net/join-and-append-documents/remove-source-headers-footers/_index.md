@@ -1,7 +1,7 @@
 ---
 title: 删除源页眉页脚
 linktitle: 删除源页眉页脚
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 加入和附加 Word 文档时删除页眉和页脚。
 type: docs
 weight: 10

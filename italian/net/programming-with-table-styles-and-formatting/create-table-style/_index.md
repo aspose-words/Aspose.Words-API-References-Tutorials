@@ -1,7 +1,7 @@
 ---
 title: Crea stile tabella
 linktitle: Crea stile tabella
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata alla creazione di uno stile di tabella personalizzato utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ Congratulazioni! Ora hai creato uno stile personalizzato per la tua tabella util
 ### Esempio di codice sorgente per Crea stile tabella utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

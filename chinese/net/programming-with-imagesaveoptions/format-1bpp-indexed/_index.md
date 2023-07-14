@@ -1,7 +1,7 @@
 ---
 title: 格式 1Bpp 索引
 linktitle: 格式 1Bpp 索引
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何格式化使用 Aspose.Words for .NET 索引的 1 bpp 图像。低颜色深度图像的完整教程。
 type: docs
 weight: 10

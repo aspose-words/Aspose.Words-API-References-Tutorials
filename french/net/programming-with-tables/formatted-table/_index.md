@@ -1,7 +1,7 @@
 ---
 title: Tableau formaté
 linktitle: Tableau formaté
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer un tableau formaté dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -112,7 +112,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour le tableau formaté à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

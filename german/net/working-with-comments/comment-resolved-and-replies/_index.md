@@ -1,7 +1,7 @@
 ---
 title: Kommentar gelöst und Antworten
 linktitle: Kommentar gelöst und Antworten
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Kommentare und deren Antworten in Word-Dokumenten mit Aspose.Words für .NET auflösen.
 type: docs
 weight: 10
@@ -84,15 +84,15 @@ Die Kommentarauflösung hilft bei der Verfolgung und Verwaltung von Feedback inn
 
 #### F: Wie füge ich eine Antwort auf einen gelösten Kommentar in Aspose.Words für .NET hinzu?
 
- A: Obwohl aufgelöste Kommentare im endgültigen Dokument standardmäßig ausgeblendet sind, können Sie dennoch eine Antwort auf einen aufgelösten Kommentar hinzufügen`Comment.AddReply`Methode, die den Antworttext angibt und angibt, wo Sie ihn hinzufügen möchten.
+ A: Obwohl aufgelöste Kommentare im endgültigen Dokument standardmäßig ausgeblendet sind, können Sie dennoch eine Antwort auf einen aufgelösten Kommentar hinzufügen`Comment.AddReply` Methode, die den Antworttext angibt und angibt, wo Sie ihn hinzufügen möchten.
 
 #### F: Wie kann ich aufgelöste Kommentare in Aspose.Words für .NET anzeigen?
 
- A: Standardmäßig werden gelöste Kommentare im endgültigen Dokument ausgeblendet. Sie können sie jedoch anzeigen, indem Sie die verwenden`CommentOptions.ShowResolvedComments` Eigentum der`Document` Objekt und setzen es auf`true`.
+ A: Standardmäßig werden gelöste Kommentare im endgültigen Dokument ausgeblendet. Sie können sie jedoch anzeigen, indem Sie die verwenden`CommentOptions.ShowResolvedComments`Eigentum der`Document` Objekt und setzen es auf`true`.
 
 #### F: Wie kann ich alle Kommentare, einschließlich Antworten, in Aspose.Words für .NET ausblenden?
 
- A: Um alle Kommentare, einschließlich Antworten, in Aspose.Words für .NET auszublenden, können Sie die verwenden`CommentOptions.CommentDisplayMode` Eigentum der`Document` Objekt und setzen Sie es auf`CommentDisplayMode.None`.
+ A: Um alle Kommentare, einschließlich Antworten, in Aspose.Words für .NET auszublenden, können Sie die verwenden`CommentOptions.CommentDisplayMode`Eigentum der`Document` Objekt und setzen Sie es auf`CommentDisplayMode.None`.
 
 #### F: Kann ich den Text eines aufgelösten Kommentars in Aspose.Words für .NET bearbeiten?
 

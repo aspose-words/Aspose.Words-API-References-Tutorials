@@ -1,7 +1,7 @@
 ---
 title: Установить позицию сноски и конечной сноски
 linktitle: Установить позицию сноски и конечной сноски
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как установить положение сносок и концевых сносок в документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

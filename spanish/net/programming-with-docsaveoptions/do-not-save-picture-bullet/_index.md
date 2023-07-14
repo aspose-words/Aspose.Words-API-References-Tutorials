@@ -1,7 +1,7 @@
 ---
 title: No guardar viñeta de imagen
 linktitle: No guardar viñeta de imagen
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a deshabilitar el guardado de viñetas de imágenes en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Reduzca el tamaño del PDF deshabilitando las fuentes incrustadas
 linktitle: Reduzca el tamaño del PDF deshabilitando las fuentes incrustadas
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a reducir el tamaño de un PDF desactivando la incrustación de fuentes de Windows al convertir documentos a PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ R: Para deshabilitar la incrustación de fuentes de Windows en un documento PDF 
 
  Cargue el documento que desea convertir a PDF usando el`Document` clase y ruta del documento.
 
- Crear una instancia de la`PdfSaveOptions` clase y establecer el`FontEmbeddingMode` propiedad a`PdfFontEmbeddingMode.EmbedNone`. Esto deshabilita la incrustación de fuentes de Windows en el archivo PDF generado.
+ Crear una instancia de la`PdfSaveOptions`clase y establecer el`FontEmbeddingMode` propiedad a`PdfFontEmbeddingMode.EmbedNone`. Esto deshabilita la incrustación de fuentes de Windows en el archivo PDF generado.
 
  Utilizar el`Save` metodo de la`Document` objeto para convertir el documento a PDF especificando las opciones de conversión configuradas anteriormente.
 

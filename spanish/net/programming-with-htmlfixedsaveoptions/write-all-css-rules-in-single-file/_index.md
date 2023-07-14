@@ -1,7 +1,7 @@
 ---
 title: Escribir todas las reglas de CSS en un solo archivo
 linktitle: Escribir todas las reglas de CSS en un solo archivo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a convertir un documento de Word a HTML fijo escribiendo todas las reglas de CSS en un solo archivo con Aspose.Words para .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Read Active XControl Properties From Word File
 linktitle: Read Active XControl Properties From Word File
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Read properties of ActiveX controls in a Word file with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -86,7 +86,7 @@ Here is the complete source code for reading properties of ActiveX controls usin
 
 This guide showed you how to read properties of ActiveX controls in a Word file using Aspose.Words for .NET. By following the described steps, you can initialize the document, retrieve ActiveX controls and read their properties. Use the sample code provided as a starting point and customize it to your specific needs.
 
-Reading the properties of ActiveX controls allows you to extract important information from your Word files containing these controls. Aspose.Words for .NET offers powerful features for working with ActiveX controls and automating your document processing.
+Reading the properties of ActiveX controls allows you to extract important information from your Word files containing these controls. Aspose.Words for .NET offers powerful features for Words Processing with ActiveX controls and automating your document processing.
 
 ### FAQs
 

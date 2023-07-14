@@ -1,7 +1,7 @@
 ---
-title: 使用 Htmlsaveoptions 进行编程
-linktitle: 使用 Htmlsaveoptions 进行编程
-second_title: Aspose.Words for .NET API 参考
+title: 使用 Htmlsaveoptions 进行文字处理
+linktitle: 使用 Htmlsaveoptions 进行文字处理
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在 Aspose.Words for .NET 中使用 HTML 保存选项进行编程。轻松将 Word 文档转换为 HTML，同时保留格式和内容。
 type: docs
 weight: 1620
@@ -9,7 +9,7 @@ url: /zh/net/programming-with-htmlsaveoptions/
 ---
 Aspose.Words for .NET 是一个功能强大的库，用于在 .NET 应用程序中操作和生成 Word 文档。 Aspose.Words for .NET 参考站点上的教程为希望掌握该库并充分利用其功能的开发人员提供了宝贵的资源。
 
-“使用 HtmlSaveOptions 进行编程”教程重点介绍在 Aspose.Words for .NET 中使用 HTML 保存选项。本教程指导开发人员使用各种可用选项来自定义将 Word 文档转换为 HTML。提供了详细的代码示例来演示这些选项的使用并实现所需的转换结果。
+“使用 HtmlSaveOptions 进行文字处理”教程重点介绍在 Aspose.Words for .NET 中使用 HTML 保存选项。本教程指导开发人员使用各种可用选项来自定义将 Word 文档转换为 HTML。提供了详细的代码示例来演示这些选项的使用并实现所需的转换结果。
 
 无论您想要将 Word 文档转换为 HTML 以在 Web 上显示、将 HTML 内容嵌入到 Word 文档中，还是自定义 HTML 呈现，本教程都会为您提供执行此操作的知识和技能。通过详细的解释和实际示例，您将能够在您的开发项目中充分利用 Aspose.Words for .NET 的 HTML 转换功能。
 

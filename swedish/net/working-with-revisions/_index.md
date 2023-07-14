@@ -1,13 +1,13 @@
 ---
-title: Arbeta med revisioner
-linktitle: Arbeta med revisioner
-second_title: Aspose.Words för .NET API Referens
+title: Ordbehandling med revisioner
+linktitle: Ordbehandling med revisioner
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du arbetar med revisioner i Word-dokument med Aspose.Words för .NET. Steg-för-steg handledning med exempelkod för hantering och visning av revisioner.
 type: docs
 weight: 1130
 url: /sv/net/working-with-revisions/
 ---
-Handledningar för att arbeta med revisioner leder dig genom funktionerna för att arbeta med revisioner i Aspose.Words för .NET. Dessa handledningar visar hur du lägger till, accepterar, avvisar och visar versioner i ett Word-dokument. Du kommer också att lära dig hur du bläddrar i revisioner, hämtar detaljerad information om varje revision och utför avancerade operationer som att slå samman revisioner.
+Handledningar för ordbehandling med revisioner leder dig genom funktionerna i ordbehandling med revisioner i Aspose.Words för .NET. Dessa handledningar visar hur du lägger till, accepterar, avvisar och visar versioner i ett Word-dokument. Du kommer också att lära dig hur du bläddrar i revisioner, hämtar detaljerad information om varje revision och utför avancerade operationer som att slå samman revisioner.
 
 Genom att följa dessa tutorials kommer du att förstå hur du effektivt hanterar revisioner i dina Word-dokument med Aspose.Words för .NET. Du kommer att lära dig hur du kontrollerar ändringar av dokumentinnehåll, samarbetar med andra användare och upprätthåller en historik över gjorda ändringar. Handledningarna ger detaljerade kodexempel och tydliga förklaringar som hjälper dig att bemästra dessa funktioner.
 

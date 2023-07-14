@@ -1,7 +1,7 @@
 ---
 title: Code de champ
 linktitle: Code de champ
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour obtenir le code de champ et le résultat de champ dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -73,7 +73,7 @@ Ceci conclut notre guide sur l'utilisation de la fonctionnalité "Obtenir le cod
 
 #### Q : Comment puis-je mettre à jour les champs d'un document à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour mettre à jour les champs de document à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Document.UpdateFields` méthode. Cela mettra à jour tous les champs présents dans le document, tels que les champs de fusion, les champs de date, etc.
+ R : Pour mettre à jour les champs de document à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Document.UpdateFields`méthode. Cela mettra à jour tous les champs présents dans le document, tels que les champs de fusion, les champs de date, etc.
 
 #### Q : Comment puis-je récupérer la valeur d'un champ spécifique dans Aspose.Words pour .NET ?
 

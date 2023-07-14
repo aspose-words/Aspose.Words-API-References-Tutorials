@@ -1,7 +1,7 @@
 ---
 title: Revisión de forma
 linktitle: Revisión de forma
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Revise formas en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -127,7 +127,7 @@ Assert.False(shapes[1].IsMoveToRevision);
 
 ## Conclusión
 
-En este tutorial, aprendimos a realizar revisiones de formas en un documento de Word utilizando Aspose.Words para .NET. Al seguir los pasos de crear el documento, habilitar el seguimiento de revisiones, verificar las revisiones asociadas con cada forma y verificar las revisiones para mover las formas, pudimos administrar las revisiones con éxito. Aspose.Words for .NET ofrece una potente API para trabajar con reseñas y formularios en documentos de Word.
+En este tutorial, aprendimos a realizar revisiones de formas en un documento de Word utilizando Aspose.Words para .NET. Al seguir los pasos de crear el documento, habilitar el seguimiento de revisiones, verificar las revisiones asociadas con cada forma y verificar las revisiones para mover las formas, pudimos administrar las revisiones con éxito. Aspose.Words for .NET ofrece una potente API para procesamiento de textos con reseñas y formularios en documentos de Word.
 
 ### Preguntas frecuentes
 

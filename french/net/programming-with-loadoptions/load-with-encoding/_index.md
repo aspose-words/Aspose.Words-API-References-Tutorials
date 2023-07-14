@@ -1,13 +1,13 @@
 ---
 title: Charger avec encodage
 linktitle: Charger avec encodage
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à charger un document avec un encodage spécifié à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/load-with-encoding/
 ---
-Lorsque vous travaillez avec des documents texte dans une application C#, il est important de pouvoir les charger correctement en spécifiant le codage correct. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement charger des documents texte avec l'encodage souhaité à l'aide des options de chargement LoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document texte avec l'encodage spécifié à l'aide des options de chargement LoadOptions.
+Lors d'un traitement de texte avec des documents texte dans une application C#, il est important de pouvoir les charger correctement en spécifiant le bon encodage. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement charger des documents texte avec l'encodage souhaité à l'aide des options de chargement LoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document texte avec l'encodage spécifié à l'aide des options de chargement LoadOptions.
 
 ## Comprendre la bibliothèque Aspose.Words
 

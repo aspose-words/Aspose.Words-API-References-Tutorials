@@ -1,7 +1,7 @@
 ---
 title: 直接插入表格
 linktitle: 直接插入表格
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将表格直接插入到 Word 文档中。
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/insert-table-directly/
 2. 添加对 Aspose.Words for .NET 库的引用。
 
 ## 第2步：创建文档和表格
-要开始使用数组，我们需要创建一个新文档并初始化数组。按着这些次序：
+要使用数组启动文字处理，我们需要创建一个新文档并初始化数组。按着这些次序：
 
 ```csharp
 //文档目录的路径

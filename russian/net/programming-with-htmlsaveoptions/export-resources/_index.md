@@ -1,7 +1,7 @@
 ---
 title: Экспорт ресурсов
 linktitle: Экспорт ресурсов
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по экспорту ресурсов документа при сохранении в формате HTML с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

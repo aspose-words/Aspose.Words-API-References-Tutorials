@@ -1,7 +1,7 @@
 ---
 title: Incorpora sottoinsiemi di caratteri nel documento PDF
 linktitle: Incorpora sottoinsiemi di caratteri nel documento PDF
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per incorporare sottoinsiemi di caratteri in un documento PDF utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -68,7 +68,7 @@ In questo tutorial, abbiamo imparato come incorporare sottoinsiemi di caratteri 
 
 ### Domande frequenti
 
-#### D: Cos'è l'incorporamento di sottoinsiemi di font in un documento PDF?
+#### D: Cos'è l'incorporamento di sottoinsiemi di caratteri in un documento PDF?
 R: L'incorporamento di sottoinsiemi di font in un documento PDF è il processo che consiste nell'includere solo i glifi utilizzati nel documento, piuttosto che includere tutti i font completi. Ciò riduce le dimensioni del file PDF includendo solo i dati dei font necessari per visualizzare i caratteri effettivamente utilizzati nel documento.
 
 #### D: Qual è la differenza tra l'incorporamento di caratteri completi e l'incorporamento di sottoinsiemi di caratteri?

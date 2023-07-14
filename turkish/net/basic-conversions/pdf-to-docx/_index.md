@@ -1,7 +1,7 @@
 ---
 title: PDF'yi Word Formatına Kaydet (Docx)
 linktitle: PDF'yi Word Formatına Kaydet (Docx)
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak PDF belgelerini Word fromat (Docx) formatına nasıl dönüştüreceğinizi veya kaydedeceğinizi öğrenin. Örnek kaynak koduyla adım adım öğretici.
 type: docs
 weight: 10

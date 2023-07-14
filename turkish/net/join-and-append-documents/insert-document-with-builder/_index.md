@@ -1,7 +1,7 @@
 ---
 title: Builder ile Belge Ekle
 linktitle: Builder ile Belge Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak başka bir belgenin sonuna nasıl belge ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -67,7 +67,7 @@ Bu, Aspose.Words for .NET kullanılarak başka bir belgeye belge ekleme uygulama
 ### Aspose.Words for .NET kullanarak Document With Builder için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

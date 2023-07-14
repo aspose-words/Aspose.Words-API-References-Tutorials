@@ -1,14 +1,14 @@
 ---
 title: Legen Sie die MS Word-Version fest
 linktitle: Legen Sie die MS Word-Version fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit einer bestimmten Version von MS Word laden.
 type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/set-ms-word-version/
 ---
 
-Beim Arbeiten mit Word-Dokumenten in einer C#-Anwendung kann es erforderlich sein, beim Laden des Dokuments die Version von Microsoft Word anzugeben, die verwendet werden soll. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe von LoadOptions ganz einfach festlegen, welche Version von MS Word verwendet werden soll. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Laden eines Dokuments mit einer bestimmten Version von MS Word mithilfe der LoadOptions-Ladeoptionen.
+Bei der Textverarbeitung mit Word-Dokumenten in einer C#-Anwendung kann es erforderlich sein, beim Laden des Dokuments die Version von Microsoft Word anzugeben, die verwendet werden soll. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe von LoadOptions ganz einfach festlegen, welche Version von MS Word verwendet werden soll. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Laden eines Dokuments mit einer bestimmten Version von MS Word mithilfe der LoadOptions-Ladeoptionen.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 

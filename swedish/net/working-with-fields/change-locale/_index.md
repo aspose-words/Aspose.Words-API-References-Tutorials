@@ -1,14 +1,14 @@
 ---
 title: Ändra språk
 linktitle: Ändra språk
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ändrar språk för datum- och nummerformatering i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/change-locale/
 ---
 
-I den här handledningen kommer vi att guida dig genom processen att ändra språket i Word-dokument med Aspose.Words för .NET. Genom att ändra språket kan du styra formateringen av datum och siffror under kopplingsoperationer. Vi kommer att förse dig med den nödvändiga C#-källkoden och steg-för-steg-instruktioner för att uppnå detta.
+den här handledningen kommer vi att guida dig genom processen att ändra språket i Word-dokument med Aspose.Words för .NET. Genom att ändra språket kan du styra formateringen av datum och siffror under kopplingsoperationer. Vi kommer att förse dig med den nödvändiga C#-källkoden och steg-för-steg-instruktioner för att uppnå detta.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:
@@ -49,7 +49,7 @@ Utför en kopplingsoperation och ange datumvärdet för fältet "Datum":
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-I det här kodavsnittet kör vi sammankopplingsoperationen och anger det aktuella datumet som värde för fältet "Datum".
+det här kodavsnittet kör vi sammankopplingsoperationen och anger det aktuella datumet som värde för fältet "Datum".
 
 ## Steg 5: Återställ den ursprungliga lokalen
 När sammanslagningen är klar återställer du den ursprungliga kulturen för tråden:

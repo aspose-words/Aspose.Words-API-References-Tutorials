@@ -1,7 +1,7 @@
 ---
 title: Reduzca el tamaño del documento PDF con imágenes de reducción de resolución
 linktitle: Reduzca el tamaño del documento PDF con imágenes de reducción de resolución
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a reducir el tamaño de un documento PDF reduciendo la resolución de imágenes al convertir a PDF con Aspose.Words para .NET.
 type: docs
 weight: 10

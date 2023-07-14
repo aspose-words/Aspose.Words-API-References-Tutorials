@@ -1,7 +1,7 @@
 ---
 title: Überprüfen Sie das verschlüsselte Word-Dokument
 linktitle: Überprüfen Sie das verschlüsselte Word-Dokument
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zur Überprüfung, ob ein Word-Dokument mit Aspose.Words für .NET verschlüsselt ist.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Schritt 3: Überprüfen Sie, ob das Dokument verschlüsselt ist
 
- Wir benutzen das`IsEncrypted` Eigentum der`FileFormatInfo` Objekt, um zu prüfen, ob das Dokument verschlüsselt ist. Diese Eigenschaft wird zurückgegeben`true` wenn das Dokument verschlüsselt ist, andernfalls wird es zurückgegeben`false`. Das Ergebnis zeigen wir in der Konsole an.
+ Wir benutzen das`IsEncrypted`Eigentum der`FileFormatInfo` Objekt, um zu prüfen, ob das Dokument verschlüsselt ist. Diese Eigenschaft wird zurückgegeben`true` wenn das Dokument verschlüsselt ist, andernfalls wird es zurückgegeben`false`. Das Ergebnis zeigen wir in der Konsole an.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -77,7 +77,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 ```
 
 ### F: Wie kann ich überprüfen, ob das Dokument verschlüsselt ist?
- Du kannst den ... benutzen`IsEncrypted` Eigentum der`FileFormatInfo` Objekt, um zu prüfen, ob das Dokument verschlüsselt ist. Diese Eigenschaft wird zurückgegeben`true` wenn das Dokument verschlüsselt ist, andernfalls wird es zurückgegeben`false`. Das Ergebnis wird in der Konsole angezeigt:
+ Du kannst den ... benutzen`IsEncrypted`Eigentum der`FileFormatInfo` Objekt, um zu prüfen, ob das Dokument verschlüsselt ist. Diese Eigenschaft wird zurückgegeben`true` wenn das Dokument verschlüsselt ist, andernfalls wird es zurückgegeben`false`. Das Ergebnis wird in der Konsole angezeigt:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

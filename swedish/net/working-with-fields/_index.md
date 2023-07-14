@@ -1,8 +1,8 @@
 ---
-title: Arbeta med Fields
-linktitle: Arbeta med Fields
-second_title: Aspose.Words för .NET API Referens
-description: En omfattande resurs för att arbeta med fält i Word-dokument med Aspose.Words för .NET. Handledningar, exempel och detaljerade förklaringar.
+title: Ordbehandling med fält
+linktitle: Ordbehandling med fält
+second_title: Aspose.Words Document Processing API
+description: En omfattande resurs för ordbehandling med fält i Word-dokument med Aspose.Words för .NET. Handledningar, exempel och detaljerade förklaringar.
 type: docs
 weight: 140
 url: /sv/net/working-with-fields/

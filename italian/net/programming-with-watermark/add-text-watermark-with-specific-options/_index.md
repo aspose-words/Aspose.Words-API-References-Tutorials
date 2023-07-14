@@ -1,7 +1,7 @@
 ---
 title: Aggiungi filigrana di testo con opzioni specifiche
 linktitle: Aggiungi filigrana di testo con opzioni specifiche
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come aggiungere una filigrana di testo con opzioni specifiche utilizzando Aspose.Words per .NET. Guida passo dopo passo.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Passaggio 3: aggiungi filigrana di testo con opzioni specifiche
 
- Creeremo un'istanza di`TextWatermarkOptions` class e impostare le opzioni desiderate per la filigrana di testo.
+ Creeremo un'istanza di`TextWatermarkOptions`class e impostare le opzioni desiderate per la filigrana di testo.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

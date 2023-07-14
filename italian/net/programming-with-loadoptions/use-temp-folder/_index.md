@@ -1,14 +1,14 @@
 ---
 title: Usa la cartella Temp
 linktitle: Usa la cartella Temp
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare una cartella temporanea durante il caricamento di documenti con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/use-temp-folder/
 ---
 
-Quando si lavora con documenti Word in un'applicazione C#, potrebbe essere necessario utilizzare una cartella temporanea per archiviare i file temporanei generati durante l'elaborazione del documento. Con la libreria Aspose.Words per .NET, puoi facilmente specificare una cartella temporanea utilizzando le opzioni di caricamento LoadOptions. In questa guida dettagliata, ti mostreremo come usare Aspose.Words per il codice sorgente .NET C# per caricare un documento usando una cartella temporanea specificata usando le opzioni di caricamento LoadOptions.
+Quando si esegue l'elaborazione di testi con documenti Word in un'applicazione C#, potrebbe essere necessario utilizzare una cartella temporanea per archiviare i file temporanei generati durante l'elaborazione del documento. Con la libreria Aspose.Words per .NET, puoi facilmente specificare una cartella temporanea utilizzando le opzioni di caricamento LoadOptions. In questa guida dettagliata, ti mostreremo come usare Aspose.Words per il codice sorgente .NET C# per caricare un documento usando una cartella temporanea specificata usando le opzioni di caricamento LoadOptions.
 
 ## Comprensione della libreria Aspose.Words
 
@@ -40,7 +40,7 @@ In questo esempio, carichiamo il documento "Document.docx" situato nella directo
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Configura le opzioni di caricamento con la funzione "Usa cartella temporanea".
+//Configura le opzioni di caricamento con la funzione "Usa cartella temporanea".
 LoadOptions loadOptions = new LoadOptions { TempFolder = ArtifactsDir };
 
 // Caricare il documento utilizzando una cartella temporanea specificata

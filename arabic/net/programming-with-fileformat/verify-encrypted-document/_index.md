@@ -1,7 +1,7 @@
 ---
 title: تحقق من مستند Word المشفر
 linktitle: تحقق من مستند Word المشفر
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة للتحقق من أن مستند Word مشفر باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## الخطوة 3: تحقق مما إذا كان المستند مشفرًا
 
- نحن نستخدم ال`IsEncrypted` ممتلكات`FileFormatInfo` للتحقق مما إذا كان المستند مشفرًا. تعود هذه الخاصية`true` إذا تم تشفير المستند ، وإلا فإنه يعود`false`. نعرض النتيجة في وحدة التحكم.
+ نحن نستخدم ال`IsEncrypted`ممتلكات`FileFormatInfo` للتحقق مما إذا كان المستند مشفرًا. تعود هذه الخاصية`true` إذا تم تشفير المستند ، وإلا فإنه يعود`false`. نعرض النتيجة في وحدة التحكم.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -77,7 +77,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 ```
 
 ### س: كيف تتحقق مما إذا كان المستند مشفرًا؟
- يمكنك استخدام ال`IsEncrypted` ممتلكات`FileFormatInfo` للتحقق مما إذا كان المستند مشفرًا. تعود هذه الخاصية`true` إذا تم تشفير المستند ، وإلا فإنه يعود`false`. يتم عرض النتيجة في وحدة التحكم:
+ يمكنك استخدام ال`IsEncrypted`ممتلكات`FileFormatInfo` للتحقق مما إذا كان المستند مشفرًا. تعود هذه الخاصية`true` إذا تم تشفير المستند ، وإلا فإنه يعود`false`. يتم عرض النتيجة في وحدة التحكم:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

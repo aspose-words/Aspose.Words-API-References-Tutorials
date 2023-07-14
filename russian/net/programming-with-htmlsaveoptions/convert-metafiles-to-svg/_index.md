@@ -1,7 +1,7 @@
 ---
 title: Конвертировать метафайлы в SVG
 linktitle: Конвертировать метафайлы в SVG
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по преобразованию метафайлов в формат SVG при преобразовании документа в HTML с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

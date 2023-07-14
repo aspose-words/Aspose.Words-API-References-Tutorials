@@ -1,7 +1,7 @@
 ---
 title: Définir le russe comme langue d'édition par défaut
 linktitle: Définir le russe comme langue d'édition par défaut
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour définir le russe comme langue d'édition par défaut d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10

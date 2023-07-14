@@ -1,7 +1,7 @@
 ---
 title: Définir le rembourrage des cellules
 linktitle: Définir le rembourrage des cellules
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour définir les marges des cellules de tableau à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ### Exemple de code source pour Set Cell Padding à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Формат горизонтального правила
 linktitle: Формат горизонтального правила
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как форматировать горизонтальные линейки в документах Word с помощью Aspose.Words для .NET. Пошаговое руководство.
 type: docs
 weight: 10

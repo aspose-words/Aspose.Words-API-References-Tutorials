@@ -1,14 +1,14 @@
 ---
 title: Använd Temp-mappen
 linktitle: Använd Temp-mappen
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du använder en tillfällig mapp när du laddar upp dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-loadoptions/use-temp-folder/
 ---
 
-När du arbetar med Word-dokument i en C#-applikation kan det vara nödvändigt att använda en temporär mapp för att lagra temporära filer som genererats under dokumentbehandlingen. Med Aspose.Words-biblioteket för .NET kan du enkelt ange en tillfällig mapp med laddningsalternativen LoadOptions. I den här steg-för-steg-guiden kommer vi att visa dig hur du använder Aspose.Words för .NET C#-källkod för att ladda ett dokument med hjälp av en temporär mapp som anges med laddningsalternativen LoadOptions.
+Vid ordbehandling med Word-dokument i en C#-applikation kan det vara nödvändigt att använda en temporär mapp för att lagra temporära filer som genererats under dokumentbehandlingen. Med Aspose.Words-biblioteket för .NET kan du enkelt ange en tillfällig mapp med laddningsalternativen LoadOptions. I den här steg-för-steg-guiden kommer vi att visa dig hur du använder Aspose.Words för .NET C#-källkod för att ladda ett dokument med hjälp av en temporär mapp som anges med laddningsalternativen LoadOptions.
 
 ## Förstå Aspose.Words-biblioteket
 
@@ -40,7 +40,7 @@ I det här exemplet laddar vi dokumentet "Document.docx" som finns i dokumentkat
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Konfigurera laddningsalternativ med funktionen "Använd temporär mapp".
+//Konfigurera laddningsalternativ med funktionen "Använd temporär mapp".
 LoadOptions loadOptions = new LoadOptions { TempFolder = ArtifactsDir };
 
 // Ladda dokumentet med en angiven tillfällig mapp
@@ -49,4 +49,4 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## Slutsats
 
-den här guiden förklarade vi hur man laddar upp ett dokument med en viss temporär mapp med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Genom att använda en temporär mapp kan temporära filer som genereras under dokumentbehandlingen lagras på ett organiserat och effektivt sätt.
+I den här guiden förklarade vi hur man laddar upp ett dokument med en viss temporär mapp med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Genom att använda en temporär mapp kan temporära filer som genereras under dokumentbehandlingen lagras på ett organiserat och effektivt sätt.

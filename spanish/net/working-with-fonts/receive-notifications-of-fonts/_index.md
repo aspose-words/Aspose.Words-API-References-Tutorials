@@ -1,7 +1,7 @@
 ---
 title: Recibir notificaciones de fuentes
 linktitle: Recibir notificaciones de fuentes
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a recibir notificaciones de fuente faltante o sustituida al usar Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ### Ejemplo de código fuente para recibir notificaciones de fuentes usando Aspose.Words para .NET 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

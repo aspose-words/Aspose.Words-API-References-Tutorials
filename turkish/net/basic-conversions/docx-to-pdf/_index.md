@@ -1,7 +1,7 @@
 ---
 title: Word Dosyasını PDF'ye Dönüştür
 linktitle: Word Dosyasını PDF'ye Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerini Docx'ten PDF'ye nasıl dönüştüreceğinizi öğrenin. Örnek kaynak koduyla adım adım öğretici.
 type: docs
 weight: 10
@@ -77,5 +77,5 @@ PDF dosyalarını DOCX, DOC, HTML vb. biçimlere dönüştürün.
 EPUB, ODT, OTT, TXT vb. dosyaların dönüştürülmesi. diğer formatlara.
 
 
-#### S4. Aspose.Words for .NET ile çalışmak için daha fazla örnek kod ve kaynağı nerede bulabilirim?
+#### S4. Aspose.Words for .NET ile Kelime İşleme için daha fazla örnek kod ve kaynağı nerede bulabilirim?
  Daha fazla kod örneğini ve kaynağı şu adreste bulabilirsiniz:[Aspose.Words for .NET API Referansı](https://reference.aspose.com/words/net/) Ve[Aspose.Words for .NET API Öğreticileri](https://reference.aspose.com/tutorials/words/net/). Bu kaynaklar, adım adım kılavuzlar, örnek kodlar ve öğreticiler sağlar.

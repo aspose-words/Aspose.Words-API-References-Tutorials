@@ -1,7 +1,7 @@
 ---
 title: Visa grammatiska och stavningsfel
 linktitle: Visa grammatiska och stavningsfel
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att möjliggöra visning av grammatiska fel och stavfel i ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

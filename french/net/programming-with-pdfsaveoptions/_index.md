@@ -1,13 +1,13 @@
 ---
-title: Programmation avec Pdfsaveoptions
-linktitle: Programmation avec Pdfsaveoptions
-second_title: Référence de l'API Aspose.Words pour .NET
-description: Explorez la programmation avec les options d'enregistrement PDF dans Aspose.Words pour .NET. Apprenez à générer des documents Word au format PDF avec des fonctionnalités avancées grâce à des didacticiels pas à pas et à des exemples de code.
+title: Traitement de texte avec Pdfsaveoptions
+linktitle: Traitement de texte avec Pdfsaveoptions
+second_title: API de traitement de documents Aspose.Words
+description: Explorez le traitement de texte avec les options d'enregistrement PDF dans Aspose.Words pour .NET. Apprenez à générer des documents Word au format PDF avec des fonctionnalités avancées grâce à des didacticiels pas à pas et à des exemples de code.
 type: docs
 weight: 1680
 url: /fr/net/programming-with-pdfsaveoptions/
 ---
-Les didacticiels Aspose.Words pour .NET sur la programmation avec PdfSaveOptions vous guident à travers les différentes fonctionnalités et techniques pour travailler avec les options d'enregistrement PDF. Ces didacticiels vous aident à comprendre comment personnaliser la conversion de Word en PDF en modifiant les paramètres de mise en page, les polices, les images, les métadonnées, etc.
+Les didacticiels Aspose.Words pour .NET sur le traitement de mots avec PdfSaveOptions vous guident à travers les différentes fonctionnalités et techniques de traitement de mots avec options d'enregistrement PDF. Ces didacticiels vous aident à comprendre comment personnaliser la conversion de Word en PDF en modifiant les paramètres de mise en page, les polices, les images, les métadonnées, etc.
 
 Vous apprendrez à régler les options de qualité d'image, à choisir le niveau de compression des images, à définir les paramètres de sécurité PDF tels que le cryptage et les autorisations, et même à insérer des filigranes dans les fichiers PDF générés. Les didacticiels incluent également des exemples de code détaillés pour vous aider à mettre en pratique ces fonctionnalités dans vos projets.
 

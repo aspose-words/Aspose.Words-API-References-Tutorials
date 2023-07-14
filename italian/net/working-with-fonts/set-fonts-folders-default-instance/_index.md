@@ -1,7 +1,7 @@
 ---
 title: Imposta l'istanza predefinita delle cartelle dei caratteri
 linktitle: Imposta l'istanza predefinita delle cartelle dei caratteri
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata all'impostazione della cartella dei caratteri predefinita durante il rendering di un documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ### Esempio di codice sorgente per l'istanza predefinita delle cartelle dei caratteri impostati utilizzando Aspose.Words per .NET 
 
 ```csharp
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come impostare la cartella dei caratteri predefinita durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida passo-passo, puoi facilmente specificare quale cartella di caratteri utilizzare come cartella predefinita durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per lavorare con i caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare le origini dei caratteri utilizzate durante il rendering dei tuoi documenti in base alle tue esigenze specifiche.
+In questo tutorial, abbiamo imparato come impostare la cartella dei caratteri predefinita durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida passo-passo, puoi facilmente specificare quale cartella di caratteri utilizzare come cartella predefinita durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per l'elaborazione di testi con caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare le origini dei caratteri utilizzate durante il rendering dei tuoi documenti in base alle tue esigenze specifiche.
 
 ### FAQ
 

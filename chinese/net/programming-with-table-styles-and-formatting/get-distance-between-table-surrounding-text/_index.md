@@ -1,7 +1,7 @@
 ---
 title: 获取表格周围文本之间的距离
 linktitle: 获取表格周围文本之间的距离
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 获取 Word 文档中文本和表格之间的距离的分步指南。
 type: docs
 weight: 10

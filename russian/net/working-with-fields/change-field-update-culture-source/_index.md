@@ -1,7 +1,7 @@
 ---
 title: Изменить источник культуры обновления поля
 linktitle: Изменить источник культуры обновления поля
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Изменить источник культуры обновления поля. Пошаговое руководство по изменению источника культуры в Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 #### Вопрос: Как указать конкретную культуру для обновления полей в Aspose.Words для .NET?
 
- О: Чтобы указать конкретную культуру для обновления полей в Aspose.Words for .NET, вы можете использовать`Document.FieldOptions.FieldUpdateCultureInfo` свойство и установить`CultureInfo` объект, соответствующий желаемой культуре. Например, вы можете использовать`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` чтобы указать французскую (Францию) культуру.
+О: Чтобы указать конкретную культуру для обновления полей в Aspose.Words for .NET, вы можете использовать`Document.FieldOptions.FieldUpdateCultureInfo` свойство и установить`CultureInfo` объект, соответствующий желаемой культуре. Например, вы можете использовать`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` чтобы указать французскую (Францию) культуру.
 
 #### В: Можно ли отключить автоматическое обновление полей в Aspose.Words для .NET?
 

@@ -1,7 +1,7 @@
 ---
 title: Sertifika Sahibini Kullanarak PDF'ye Dijital İmza Ekleme
 linktitle: Sertifika Sahibini Kullanarak PDF'ye Dijital İmza Ekleme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Sertifika Sahibini kullanarak PDF'ye Dijital İmza eklemeyi öğrenin.
 type: docs
 weight: 10

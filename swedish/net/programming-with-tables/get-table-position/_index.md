@@ -1,7 +1,7 @@
 ---
 title: Få bordsposition
 linktitle: Få bordsposition
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du får positionen för en tabell i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ I den här handledningen ska vi lära oss hur man får positionen för en tabell
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Ladda dokumentet och komma åt tabellen
-För att börja arbeta med tabellen måste vi ladda dokumentet som innehåller den och komma åt den. Följ dessa steg:
+För att starta ordbehandling med tabellen måste vi ladda dokumentet som innehåller den och komma åt den. Följ dessa steg:
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Tillgång till arrayen
@@ -50,7 +50,7 @@ Console.WriteLine(table.Alignment);
 ### Exempel på källkod för Get Table Position med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

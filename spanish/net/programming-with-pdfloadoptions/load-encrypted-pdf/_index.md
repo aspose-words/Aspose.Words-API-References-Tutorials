@@ -1,14 +1,14 @@
 ---
 title: Cargar PDF encriptado
 linktitle: Cargar PDF encriptado
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para cargar un PDF encriptado usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 
-Cuando trabaje con documentos PDF en su aplicación .NET, puede ser necesario cargar archivos PDF protegidos con contraseña. Aspose.Words para .NET es una poderosa biblioteca que brinda funcionalidad para cargar documentos PDF encriptados. En este artículo, lo guiaremos paso a paso para comprender y usar esta función.
+Cuando utilice el procesamiento de textos con documentos PDF en su aplicación .NET, puede que sea necesario cargar archivos PDF protegidos con contraseña. Aspose.Words para .NET es una poderosa biblioteca que brinda funcionalidad para cargar documentos PDF encriptados. En este artículo, lo guiaremos paso a paso para comprender y usar esta función.
 
 ## Descripción de la función Cargar PDF cifrado
 
@@ -85,6 +85,6 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## Conclusión
 
-En este artículo, exploramos cómo usar la función Cargar PDF cifrado de Aspose.Words para .NET. Aprendió cómo cargar archivos PDF encriptados, cómo encriptar un documento PDF, cómo cargar un PDF encriptado con una contraseña y cómo generar resultados en formato Markdown. Esta característica es extremadamente útil cuando se trabaja con documentos PDF seguros.
+En este artículo, exploramos cómo usar la función Cargar PDF cifrado de Aspose.Words para .NET. Aprendió cómo cargar archivos PDF encriptados, cómo encriptar un documento PDF, cómo cargar un PDF encriptado con una contraseña y cómo generar resultados en formato Markdown. Esta característica es extremadamente útil cuando se procesan textos con documentos PDF seguros.
 
 

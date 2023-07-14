@@ -1,7 +1,7 @@
 ---
 title: Get Revision Group Details
 linktitle: Get Revision Group Details
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Get revision group details in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

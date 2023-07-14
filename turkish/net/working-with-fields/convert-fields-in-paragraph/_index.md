@@ -1,7 +1,7 @@
 ---
 title: Paragraftaki Alanları Dönüştür
 linktitle: Paragraftaki Alanları Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile IF alanlarını bir paragraftaki düz metne dönüştürün.
 type: docs
 weight: 10
@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
- Bu kod, belgenin son paragrafındaki alanları filtrelemek için LINQ yöntemlerinin bir kombinasyonunu kullanır ve ardından bunları çağırarak düz metne dönüştürür.`Unlink()` yöntem.
+Bu kod, belgenin son paragrafındaki alanları filtrelemek için LINQ yöntemlerinin bir kombinasyonunu kullanır ve ardından bunları çağırarak düz metne dönüştürür.`Unlink()` yöntem.
 
 ## 4. Adım: Değiştirilen belgeyi kaydetme
 

@@ -1,7 +1,7 @@
 ---
 title: Insert Check Box Form Field
 linktitle: Insert Check Box Form Field
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert check box form fields in Word documents using Aspose.Words for .NET. Step-by-step guide.
 type: docs
 weight: 10

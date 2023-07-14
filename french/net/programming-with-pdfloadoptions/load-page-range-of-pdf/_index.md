@@ -1,7 +1,7 @@
 ---
 title: Charger la plage de pages du pdf
 linktitle: Charger la plage de pages du pdf
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour charger une plage de pages PDF spécifique avec Aspose.Words pour .NET.
 type: docs
 weight: 10

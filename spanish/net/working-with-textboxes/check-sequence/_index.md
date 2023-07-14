@@ -1,7 +1,7 @@
 ---
 title: Comprobar secuencia
 linktitle: Comprobar secuencia
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a verificar la secuencia de cuadros de texto en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Esta guía paso a paso explica cómo verificar la secuencia de TextBoxes en un d
 
 ## Paso 1: configurar el documento y crear una forma de cuadro de texto
 
-Para comenzar, debemos configurar el documento y crear una forma de cuadro de texto. El siguiente código inicializa una nueva instancia del`Document` clase y crea una forma de cuadro de texto:
+ Para comenzar, debemos configurar el documento y crear una forma de cuadro de texto. El siguiente código inicializa una nueva instancia del`Document` clase y crea una forma de cuadro de texto:
 
 ```csharp
 Document doc = new Document();

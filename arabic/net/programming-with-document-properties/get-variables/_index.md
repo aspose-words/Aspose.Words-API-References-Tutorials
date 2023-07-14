@@ -1,7 +1,7 @@
 ---
 title: احصل على المتغيرات
 linktitle: احصل على المتغيرات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لاسترداد متغيرات المستند باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

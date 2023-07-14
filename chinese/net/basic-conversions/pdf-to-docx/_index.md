@@ -1,7 +1,7 @@
 ---
 title: 将 PDF 保存为 Word 格式 (Docx)
 linktitle: 将 PDF 保存为 Word 格式 (Docx)
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将 PDF 文档转换或保存为 Word fromat (Docx) 格式。带有示例源代码的分步教程。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Пример исходного кода шрифта Steam
 linktitle: Пример исходного кода шрифта Steam
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как использовать источник шрифтов Resource Stream для загрузки пользовательских шрифтов в Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ### Пример исходного кода для примера источника шрифта Resource Steam с использованием Aspose.Words для .NET 
 
 ```csharp
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

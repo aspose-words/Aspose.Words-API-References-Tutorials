@@ -1,7 +1,7 @@
 ---
 title: Bygg bord med stil
 linktitle: Bygg bord med stil
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att bygga en tabell med en anpassad stil med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -94,7 +94,7 @@ Grattis! Du har nu byggt en anpassad tabell med Aspose.Words för .NET.
 ### Exempel på källkod för Bygg tabell med stil med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

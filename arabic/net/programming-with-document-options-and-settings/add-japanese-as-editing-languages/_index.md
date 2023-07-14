@@ -1,7 +1,7 @@
 ---
 title: أضف اليابانية كلغات تحرير
 linktitle: أضف اليابانية كلغات تحرير
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لإضافة اليابانية كلغة تحرير باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

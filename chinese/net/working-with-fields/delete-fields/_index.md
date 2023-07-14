@@ -1,7 +1,7 @@
 ---
 title: 删除字段
 linktitle: 删除字段
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 删除 Word 文档中的合并字段的分步指南。
 type: docs
 weight: 10

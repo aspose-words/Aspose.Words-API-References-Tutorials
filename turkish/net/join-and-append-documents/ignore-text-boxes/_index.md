@@ -1,7 +1,7 @@
 ---
 title: Metin Kutularını Yoksay
 linktitle: Metin Kutularını Yoksay
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak metin kutusu biçimlendirmesini yok sayarken bir belgeyi nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: İçe aktarma biçimi seçeneklerini ayarlayın
 
- örneğini oluşturun`ImportFormatOptions` sınıflandırın ve ayarlayın`IgnoreTextBoxes` mülkiyet`false`. Bu, metin kutularının biçimlendirmeleri korunurken ekleme işlemi sırasında dahil edilmesini sağlar.
+ örneğini oluşturun`ImportFormatOptions`sınıflandırın ve ayarlayın`IgnoreTextBoxes` mülkiyet`false`. Bu, metin kutularının biçimlendirmeleri korunurken ekleme işlemi sırasında dahil edilmesini sağlar.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## 4. Adım: Metin kutusu içeriğini ekleyin
 
- Oluşturmak`NodeImporter` nesneyi seçin ve metin kutusu düğümlerini kaynak belgeden hedef belgeye içe aktarmak için kullanın. Kaynak belgedeki her paragrafı yineleyin ve onu hedef belgeye aktarın.
+ Oluşturmak`NodeImporter`nesneyi seçin ve metin kutusu düğümlerini kaynak belgeden hedef belgeye içe aktarmak için kullanın. Kaynak belgedeki her paragrafı yineleyin ve onu hedef belgeye aktarın.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -64,12 +64,12 @@ Bu, Aspose.Words for .NET kullanarak metin kutusu biçimlendirmesini korurken be
 ### Aspose.Words for .NET kullanan Metin Kutularını Yoksay için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//İçe aktarırken kaynak metin kutularının biçimlendirmesini koruyun.
+	// İçe aktarırken kaynak metin kutularının biçimlendirmesini koruyun.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

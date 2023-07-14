@@ -1,7 +1,7 @@
 ---
 title: Formatage de liste à plusieurs niveaux
 linktitle: Formatage de liste à plusieurs niveaux
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer une liste à plusieurs niveaux et à appliquer une mise en forme personnalisée avec Aspose.Words pour .NET.
 type: docs
 weight: 10

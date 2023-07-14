@@ -1,7 +1,7 @@
 ---
 title: Obtenir la position de la table flottante
 linktitle: Obtenir la position de la table flottante
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à obtenir la position des tableaux flottants dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Dans ce didacticiel, nous allons apprendre à obtenir la position d'un tableau f
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Etape 2 : Charger le document et accéder aux tableaux
-Pour commencer à travailler avec des tableaux, nous devons charger le document qui les contient et y accéder. Suivez ces étapes:
+Pour démarrer le traitement de texte avec des tableaux, nous devons charger le document qui les contient et y accéder. Suivez ces étapes:
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
@@ -53,7 +53,7 @@ Console.WriteLine("...............................");
 ### Exemple de code source pour Get Floating Table Position à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");
@@ -75,4 +75,4 @@ Console.WriteLine("...............................");
 ```
 
 ## Conclusion
-Dans ce didacticiel, nous avons appris à obtenir la position d'un tableau flottant dans un document Word à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez obtenir par programmation les propriétés de positionnement des tableaux flottants dans vos documents Word. Cette fonctionnalité vous permet d'analyser et de manipuler des tableaux flottants en fonction de vos besoins spécifiques.
+Dans ce didacticiel, nous avons appris à obtenir la position d'un tableau flottant dans un document Word à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez obtenir par programme les propriétés de positionnement des tableaux flottants dans vos documents Word. Cette fonctionnalité vous permet d'analyser et de manipuler des tableaux flottants en fonction de vos besoins spécifiques.

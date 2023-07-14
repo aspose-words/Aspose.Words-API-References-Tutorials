@@ -1,13 +1,13 @@
 ---
-title: Programmation avec Txtsaveoptions
-linktitle: Programmation avec Txtsaveoptions
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Traitement de texte avec Txtsaveoptions
+linktitle: Traitement de texte avec Txtsaveoptions
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à programmer avec les options d'enregistrement de fichiers texte dans Aspose.Words pour .NET. Apprenez à spécifier l'encodage, à formater le texte, à gérer les sauts de ligne, etc., grâce à des didacticiels pas à pas et à des exemples de code en C#.
 type: docs
 weight: 1700
 url: /fr/net/programming-with-txtsaveoptions/
 ---
-Les didacticiels Aspose.Words pour .NET vous guident à travers les différentes fonctionnalités et utilisations de la bibliothèque dans le contexte de la manipulation de documents Word. L'un des didacticiels se concentre sur la programmation avec les options d'enregistrement TXT, vous montrant comment générer des fichiers texte à partir de documents Word tout en conservant la mise en forme et la structure du contenu. Vous apprendrez à utiliser les différentes options disponibles pour personnaliser la conversion des documents en fichiers texte, telles que la spécification du délimiteur de colonne et la gestion des espaces blancs.
+Les didacticiels Aspose.Words pour .NET vous guident à travers les différentes fonctionnalités et utilisations de la bibliothèque dans le contexte de la manipulation de documents Word. L'un des didacticiels se concentre sur le traitement de texte avec les options d'enregistrement TXT, vous montrant comment générer des fichiers texte à partir de documents Word tout en conservant la mise en forme et la structure du contenu. Vous apprendrez à utiliser les différentes options disponibles pour personnaliser la conversion des documents en fichiers texte, telles que la spécification du délimiteur de colonne et la gestion des espaces blancs.
 
 Ces didacticiels fournissent des instructions détaillées, ainsi qu'un exemple de code C#, pour vous aider à comprendre et à mettre en pratique les concepts abordés. Que vous soyez un débutant ou un développeur expérimenté, vous trouverez des informations détaillées sur la façon d'utiliser Aspose.Words pour .NET et comment tirer le meilleur parti de cette puissante bibliothèque de manipulation de documents.
 

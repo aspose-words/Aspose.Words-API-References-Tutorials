@@ -1,7 +1,7 @@
 ---
 title: 不同的页面设置
 linktitle: 不同的页面设置
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 附加具有不同页面设置设置的文档。
 type: docs
 weight: 10

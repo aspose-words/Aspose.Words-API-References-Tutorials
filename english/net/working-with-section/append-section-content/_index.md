@@ -1,7 +1,7 @@
 ---
 title: Append Section Word Content
 linktitle: Append Section Word Content
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to add word content to specific sections of a Word document using Aspose.Words for .NET. 
 type: docs
 weight: 10

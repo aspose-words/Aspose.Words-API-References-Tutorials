@@ -1,7 +1,7 @@
 ---
 title: Export Into Markdown With Table Content Alignment
 linktitle: Export Into Markdown With Table Content Alignment
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to export table content with different alignments to Markdown files using Aspose.Words for .NET. 
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Word Belge Yapısını PDF Belgesine Aktar
 linktitle: Word Belge Yapısını PDF Belgesine Aktar
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word Belge Yapısını PDF Belgesine Aktarmak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -78,7 +78,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesinin yapısını bir PDF belg
 
  örneğini oluşturun`Document` Word belgesine giden yolu belirten sınıf.
 
- örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`ExportDocumentStructure` mülkiyet`true`. Bu, belge yapısını dışa aktaracak ve PDF dosyasını düzenlerken Adobe Acrobat Pro'nun "İçerik" gezinme bölmesinde görünmesini sağlayacaktır.
+ örneğini oluşturun`PdfSaveOptions`sınıflandırın ve ayarlayın`ExportDocumentStructure` mülkiyet`true`. Bu, belge yapısını dışa aktaracak ve PDF dosyasını düzenlerken Adobe Acrobat Pro'nun "İçerik" gezinme bölmesinde görünmesini sağlayacaktır.
 
  Kullan`Save` yöntemi`Document`kaydetme seçeneklerini belirterek belgeyi PDF biçiminde kaydetmek için sınıf.
 

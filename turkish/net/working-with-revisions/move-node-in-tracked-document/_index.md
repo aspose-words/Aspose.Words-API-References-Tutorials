@@ -1,7 +1,7 @@
 ---
 title: Düğümü İzlenen Belgede Taşı
 linktitle: Düğümü İzlenen Belgede Taşı
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile izlenen bir belgedeki düğümleri taşıyın.
 type: docs
 weight: 10
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 ## Çözüm
 
-Bu öğreticide, Aspose.Words for .NET kullanarak izlenen bir Word belgesindeki bir düğümün nasıl taşınacağını öğrendik. Belge oluşturma, revizyon izlemeyi etkinleştirme, düğümü taşıma ve revizyon izlemeyi durdurma adımlarını izleyerek bu manipülasyonu başarıyla gerçekleştirebildik. Aspose.Words for .NET, Word belgeleriyle çalışmak için güçlü bir araçtır ve revizyonları yönetmek için gelişmiş özellikler sunar. Artık bu bilgiyi, Aspose.Words for .NET kullanarak revizyonları izlerken kendi Word belgelerinizdeki düğümleri taşımak için kullanabilirsiniz.
+Bu öğreticide, Aspose.Words for .NET kullanarak izlenen bir Word belgesindeki bir düğümün nasıl taşınacağını öğrendik. Belge oluşturma, revizyon izlemeyi etkinleştirme, düğümü taşıma ve revizyon izlemeyi durdurma adımlarını izleyerek bu manipülasyonu başarıyla gerçekleştirebildik. Aspose.Words for .NET, Word belgeleriyle Kelime İşleme için güçlü bir araçtır ve revizyonları yönetmek için gelişmiş özellikler sunar. Artık bu bilgiyi, Aspose.Words for .NET kullanarak revizyonları izlerken kendi Word belgelerinizdeki düğümleri taşımak için kullanabilirsiniz.
 
 ### SSS
 

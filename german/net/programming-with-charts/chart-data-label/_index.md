@@ -1,7 +1,7 @@
 ---
-title: Diagrammdatenbeschriftung
-linktitle: Diagrammdatenbeschriftung
-second_title: Aspose.Words für .NET API-Referenz
+title: Passen Sie die Diagrammdatenbeschriftung an
+linktitle: Passen Sie die Diagrammdatenbeschriftung an
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Datenbeschriftungen in einem Diagramm hinzufügen und anpassen, um zusätzliche Informationen zu Datenpunkten bereitzustellen.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ In diesem Tutorial wird erklärt, wie Sie mit Aspose.Words für .NET Datenbeschr
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
 - Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
+- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
- Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"`mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -55,7 +55,7 @@ labels.Separator = "/";
 ```
 
 ## Schritt 5: Speichern Sie das Dokument
- Speichern Sie das Dokument mit im angegebenen Verzeichnis`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithCharts.ChartDataLabel.docx“.
+ Speichern Sie das Dokument mit im angegebenen Verzeichnis`Save`Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithCharts.ChartDataLabel.docx“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ### Beispielquellcode für Chart Data Label mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 	ChartSeries series0 = shape.Chart.Series[0];
 	ChartDataLabelCollection labels = series0.DataLabels;
 	labels.ShowLegendKey = true;
-	//Wenn Sie den Datenpunkten in einem Kreisdiagramm Datenbeschriftungen hinzufügen, werden standardmäßig Führungslinien für Datenbeschriftungen angezeigt
+	// Wenn Sie den Datenpunkten in einem Kreisdiagramm Datenbeschriftungen hinzufügen, werden standardmäßig Führungslinien für Datenbeschriftungen angezeigt
 	// weit außerhalb des Endes der Datenpunkte positioniert. Führungslinien stellen eine visuelle Verbindung zwischen einem Datenetikett und seinem Datenetikett her
 	// entsprechenden Datenpunkt.
 	labels.ShowLeaderLines = true;
@@ -88,3 +88,17 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
 Das ist es! Sie haben mit Aspose.Words für .NET erfolgreich Datenbeschriftungen in einem Diagramm hinzugefügt und angepasst.
+
+## Abschluss
+In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET Datenbeschriftungen in einem Diagramm hinzufügen und anpassen. Wenn Sie der Schritt-für-Schritt-Anleitung folgen, können Sie ein Diagramm einfügen, auf die Datenbeschriftungssammlung zugreifen und die Eigenschaften ändern, um das Erscheinungsbild der Datenbeschriftungen anzupassen. Aspose.Words für .NET bietet eine leistungsstarke API für die Textverarbeitung mit Word-Dokumenten und -Diagrammen, sodass Sie optisch ansprechende und informative Diagramme mit benutzerdefinierten Datenbeschriftungen erstellen können.
+
+### FAQs
+
+#### Q1. Was sind Datenbeschriftungen in einem Diagramm?
+Datenbeschriftungen in einem Diagramm bieten zusätzliche Informationen zu den im Diagramm dargestellten Datenpunkten. Sie können je nach Diagrammtyp und -konfiguration Werte, Kategorien, Reihennamen, Prozentsätze oder andere relevante Details anzeigen.
+
+#### Q2. Kann ich das Erscheinungsbild von Datenbeschriftungen anpassen?
+Ja, Sie können das Erscheinungsbild von Datenbeschriftungen in einem Diagramm anpassen. Aspose.Words für .NET bietet Optionen zum Ändern verschiedener Eigenschaften von Datenbeschriftungen, z. B. zum Anzeigen von Legendenschlüsseln, Führungslinien, Kategorienamen, Reihennamen, Werten und mehr. Sie können auch Trennzeichen festlegen und die Etiketten entsprechend Ihren spezifischen Anforderungen formatieren.
+
+#### Q3. Kann ich jedem Diagrammtyp Datenbeschriftungen hinzufügen?
+Ja, Sie können Datenbeschriftungen zu verschiedenen Diagrammtypen hinzufügen, darunter Balkendiagramme, Kreisdiagramme, Liniendiagramme und mehr. Der Vorgang zum Hinzufügen und Anpassen von Datenbeschriftungen kann je nach Diagrammtyp und verwendeter Bibliothek oder Tool leicht variieren.

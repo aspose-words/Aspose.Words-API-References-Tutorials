@@ -1,7 +1,7 @@
 ---
-title: 删除内容
+title: Word 文档 - 如何删除内容
 linktitle: 删除内容
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 有效地从 Word 文档中删除内容。按照分步教程并使用 C# 代码示例来学习不同的内容删除技术。
 type: docs
 weight: 1370
@@ -16,7 +16,7 @@ url: /zh/net/remove-content/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [删除分页符](./remove-page-breaks/) | 了解如何使用 Aspose.Words Library for .NET 删除文档中的分页符。按照我们的分步指南进行无缝布局。 |
-| [删除分节符](./remove-section-breaks/) | 了解如何使用 .NET 的 Aspose.Words 库删除 Word 文档中的分节符。有效消除可能破坏文档格式的分节符。|
-| [删除页脚](./remove-footers/) | 了解如何使用 Aspose.Words for .NET 轻松删除 Word 文档中的页脚。请按照我们的分步指南高效处理 DOCX 文件。 |
-| [删除目录](./remove-table-of-contents/) | 了解如何使用 Aspose.Words for .NET 从 Word 文档中删除目录。 |
+| [删除Word文档中的分页符](./remove-page-breaks/) | 了解如何使用 Aspose.Words Library for .NET 删除 Word 文档中的分页符。按照我们的分步指南进行无缝布局。 |
+| [删除 Word 文档中的分节符](./remove-section-breaks/) | 了解如何使用 .NET 的 Aspose.Words 库删除 Word 文档中的分节符。有效消除可能破坏文档格式的分节符。|
+| [删除Word文档中的页脚](./remove-footers/) | 了解如何使用 Aspose.Words for .NET 轻松删除 Word 文档中的页脚。请按照我们的分步指南高效处理 DOCX 文件。 |
+| [删除Word文档中的目录](./remove-table-of-contents/) | 了解如何使用 Aspose.Words for .NET 删除 Word 文档中的目录。 |

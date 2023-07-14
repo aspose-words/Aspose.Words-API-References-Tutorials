@@ -1,7 +1,7 @@
 ---
 title: 接收字体通知
 linktitle: 接收字体通知
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解使用 Aspose.Words for .NET 时如何接收缺失或替换字体通知。
 type: docs
 weight: 10

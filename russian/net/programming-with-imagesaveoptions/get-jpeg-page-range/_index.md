@@ -1,7 +1,7 @@
 ---
 title: Получить диапазон страниц Jpeg
 linktitle: Получить диапазон страниц Jpeg
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как получить набор страниц в формате JPEG с помощью Aspose.Words для .NET. Полное руководство по извлечению пользовательских изображений.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 ### Пример исходного кода для получения диапазона страниц Jpeg с использованием Aspose.Words For .NET
 
 ```csharp 
- // Путь к вашему каталогу документов
+ //Путь к вашему каталогу документов
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -1,7 +1,7 @@
 ---
 title: Move Node In Tracked Document
 linktitle: Move Node In Tracked Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Move nodes in a tracked document with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 ## Conclusion
 
-In this tutorial, we learned how to move a node in a tracked Word document using Aspose.Words for .NET. By following the steps of creating the document, enabling revision tracking, moving the node, and stopping revision tracking, we were able to perform this manipulation successfully. Aspose.Words for .NET is a powerful tool for working with Word documents and offers advanced features for managing revisions. Now you can use this knowledge to move nodes in your own Word documents while tracking revisions using Aspose.Words for .NET.
+In this tutorial, we learned how to move a node in a tracked Word document using Aspose.Words for .NET. By following the steps of creating the document, enabling revision tracking, moving the node, and stopping revision tracking, we were able to perform this manipulation successfully. Aspose.Words for .NET is a powerful tool for Words Processing with Word documents and offers advanced features for managing revisions. Now you can use this knowledge to move nodes in your own Word documents while tracking revisions using Aspose.Words for .NET.
 
 ### FAQ's
 

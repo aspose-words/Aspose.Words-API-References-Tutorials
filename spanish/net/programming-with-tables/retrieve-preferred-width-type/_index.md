@@ -1,7 +1,7 @@
 ---
 title: Recuperar tipo de ancho preferido
 linktitle: Recuperar tipo de ancho preferido
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a recuperar el tipo y el valor de ancho preferido de una celda en una tabla de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ En este tutorial, aprenderemos cómo recuperar el tipo de ancho preferido y su v
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Cargar el documento
-Para comenzar a trabajar con el documento, siga estos pasos:
+Para iniciar el procesamiento de textos con el documento, siga estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -50,7 +50,7 @@ Aquí usamos el documento para obtener la primera tabla, luego habilitamos el aj
 ### Ejemplo de código fuente para recuperar el tipo de ancho preferido mediante Aspose.Words para .NET 
 
 ```csharp
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

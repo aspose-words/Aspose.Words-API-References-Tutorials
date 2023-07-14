@@ -1,7 +1,7 @@
 ---
 title: Mover al campo de combinación
 linktitle: Mover al campo de combinación
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a implementar la función Mover a campo de combinación en Aspose.Words para .NET con una guía paso a paso.
 type: docs
 weight: 10
@@ -48,7 +48,7 @@ builder.MoveToField(field, true);
 
 ## Agregar texto inmediatamente después del campo de combinación
 
-Una vez que el cursor del generador de documentos se encuentre dentro del campo de combinación, puede agregar texto inmediatamente después de este mediante el método Escribir:
+Una vez que el cursor del generador de documentos se encuentra dentro del campo de combinación, puede agregar texto inmediatamente después de este mediante el método Escribir:
 
 ```csharp
 Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
@@ -79,5 +79,5 @@ builder.Write(" Text immediately after the field.");
 
 ## Conclusión
 
-hemos explorado la característica Move To Merge Field de Aspose.Words para .NET. Aprendimos a navegar para fusionar campos dentro de un documento usando la clase DocumentBuilder y realizar operaciones en ellos. Esta función es útil cuando se trabaja mediante programación con combinación
+hemos explorado la característica Move To Merge Field de Aspose.Words para .NET. Aprendimos a navegar para fusionar campos dentro de un documento usando la clase DocumentBuilder y realizar operaciones en ellos. Esta función es útil cuando se utiliza Procesamiento de textos programáticamente con combinación.
 

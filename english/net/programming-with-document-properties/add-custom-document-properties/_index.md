@@ -1,7 +1,7 @@
 ---
 title: Add Custom Document Properties
 linktitle: Add Custom Document Properties
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step by step guide to add custom properties to a document with Aspose.Words for .NET.
 type: docs
 weight: 10

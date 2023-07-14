@@ -1,7 +1,7 @@
 ---
-title: 读取Vba宏
-linktitle: 读取Vba宏
-second_title: Aspose.Words for .NET API 参考
+title: 从 Word 文档中读取 Vba 宏
+linktitle: 从 Word 文档中读取 Vba 宏
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，了解如何使用 Aspose.Words for .NET 从 Word 文档读取 VBA 宏。
 type: docs
 weight: 10
@@ -59,4 +59,25 @@ if (doc.VbaProject != null)
 ## 结论
 在本教程中，我们了解了如何使用 Aspose.Words for .NET 从 Word 文档读取 VBA 宏。读取 VBA 宏允许您访问文档中现有的 VBA 代码并根据您的需要执行操作。请随意使用此功能来查看和分析 Word 文档中的 VBA 宏。
 
+### 常见问题解答
+
+#### 问：Word 文档中的 VBA 宏是什么？
+
+答：Word 文档中的 VBA 宏是一组指令或代码，可以运行它们来自动执行任务或在文档中执行特定操作。 VBA 宏允许您添加自定义功能并自动执行重复操作。
+
+#### 问：从Word文档中读取VBA宏有什么先决条件？
+
+答：在从 Word 文档中读取 VBA 宏之前，您必须具备 C# 编程语言的应用知识。您还需要在项目中安装 Aspose.Words for .NET 库。此外，您还需要一个包含 VBA 宏的 Word 文档。
+
+#### Q：代码中如何设置文档目录？
+
+ A：在提供的代码中，您必须替换`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 宏的 Word 文档所在目录的适当路径。
+
+#### 问：如何访问Word文档中VBA宏的源代码？
+
+答：要访问Word文档中VBA宏的源代码，可以使用`SourceCode`对应的属性`VbaModule`目的。您可以迭代 VBA 项目中的所有模块并查看每个模块的源代码。
+
+#### 问：我可以从 Word 文档运行 VBA 宏吗？
+
+答：是的，您可以使用 .NET 的 Aspose.Words 库的特定功能从 Word 文档运行 VBA 宏。但是，请务必采取适当的安全措施来防止执行潜在的恶意代码。
 

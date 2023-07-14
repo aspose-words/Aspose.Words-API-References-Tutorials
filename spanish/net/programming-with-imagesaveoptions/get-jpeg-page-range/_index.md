@@ -1,14 +1,14 @@
 ---
 title: Obtener intervalo de páginas JPEG
 linktitle: Obtener intervalo de páginas JPEG
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a obtener una variedad de páginas JPEG con Aspose.Words para .NET. Tutorial completo para extraer imágenes personalizadas.
 type: docs
 weight: 10
 url: /es/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 ---
 
-En este tutorial, exploraremos el código fuente de C# provisto para la característica "Obtener rango de páginas JPEG" con Aspose.Words para .NET. Esta característica le permite convertir un rango específico de páginas de un documento en imágenes en formato JPEG.
+En este tutorial, exploraremos el código fuente de C# provisto para la función "Obtener rango de páginas JPEG" con Aspose.Words para .NET. Esta característica le permite convertir un rango específico de páginas de un documento en imágenes en formato JPEG.
 
 ## Paso 1: Configuración del entorno
 
@@ -50,7 +50,7 @@ Ahora puede ejecutar el código fuente para convertir un rango específico de p�
 ### Ejemplo de código fuente para Obtener rango de páginas Jpeg usando Aspose.Words para .NET
 
 ```csharp 
- // Ruta a su directorio de documentos
+ //Ruta a su directorio de documentos
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

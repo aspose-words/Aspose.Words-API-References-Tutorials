@@ -1,7 +1,7 @@
 ---
 title: 导出 Mhtml 资源的 Cid URL
 linktitle: 导出 Mhtml 资源的 Cid URL
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 保存文档时导出 MHTML 资源的 CID URL 的分步指南。
 type: docs
 weight: 10

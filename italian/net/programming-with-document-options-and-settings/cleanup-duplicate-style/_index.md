@@ -1,7 +1,7 @@
 ---
 title: Pulisci stile duplicato
 linktitle: Pulisci stile duplicato
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per ripulire gli stili duplicati in un documento utilizzando Aspose.Words per .NET. Codice sorgente completo incluso.
 type: docs
 weight: 10

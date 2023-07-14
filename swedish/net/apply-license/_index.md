@@ -1,7 +1,7 @@
 ---
 title: Tillämpa licens
 linktitle: Tillämpa licens
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Få steg-för-steg-instruktioner för att tillämpa en Aspose.Words-licens i dina .NET-projekt. Följ stegen för att aktivera full funktionalitet för Aspose.Words-biblioteket.
 type: docs
 weight: 10

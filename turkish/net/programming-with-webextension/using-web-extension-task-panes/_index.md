@@ -1,7 +1,7 @@
 ---
 title: Web Uzantısı Görev Bölmelerini Kullanma
 linktitle: Web Uzantısı Görev Bölmelerini Kullanma
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Web Uzantısı Görev Panolarını kullanmak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzd
 
 ## 1. Adım: Belge dizinini tanımlayın
 
-Başlamak için, oluşturulan belgeyi kaydetmek istediğiniz dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
+ Başlamak için, oluşturulan belgeyi kaydetmek istediğiniz dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -1,7 +1,7 @@
 ---
 title: منشئ المستند إدراج إشارة مرجعية
 linktitle: منشئ المستند إدراج إشارة مرجعية
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج الإشارات المرجعية في مستندات Word باستخدام DocumentBuilder في Aspose.Words for .NET. دليل خطوة بخطوة.
 type: docs
 weight: 10

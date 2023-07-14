@@ -1,7 +1,7 @@
 ---
 title: Add Japanese As Editing Languages
 linktitle: Add Japanese As Editing Languages
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to add Japanese as an editing language with Aspose.Words for .NET.
 type: docs
 weight: 10

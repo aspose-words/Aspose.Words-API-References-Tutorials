@@ -1,7 +1,7 @@
 ---
 title: Esporta informazioni di andata e ritorno
 linktitle: Esporta informazioni di andata e ritorno
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per esportare le informazioni di andata e ritorno durante il salvataggio di un documento come HTML con Aspose.Words per .NET.
 type: docs
 weight: 10

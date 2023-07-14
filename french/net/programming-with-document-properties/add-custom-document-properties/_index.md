@@ -1,7 +1,7 @@
 ---
 title: Ajouter des propriétés de document personnalisées
 linktitle: Ajouter des propriétés de document personnalisées
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour ajouter des propriétés personnalisées à un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10

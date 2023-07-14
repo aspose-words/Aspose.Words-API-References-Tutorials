@@ -1,7 +1,7 @@
 ---
 title: Bind SDT to Custom Xml Part
 linktitle: Bind SDT to Custom Xml Part
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to bind a SDT to a Custom Xml Part using Aspose.Words for .NET.
 type: docs
 weight: 10

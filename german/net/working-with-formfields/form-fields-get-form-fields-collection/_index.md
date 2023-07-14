@@ -1,7 +1,7 @@
 ---
 title: Formularfelder Holen Sie sich eine Sammlung von Formularfeldern
 linktitle: Formularfelder Holen Sie sich eine Sammlung von Formularfeldern
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Formularfeldsammlungen in Word-Dokumenten abrufen und bearbeiten.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Schritt 2: Abrufen der Formularfeldsammlung
 
- Als nächstes greifen Sie auf zu`FormFields` Eigentum der`Range` Objekt im Dokument, um die Sammlung von Formularfeldern abzurufen:
+ Als nächstes greifen Sie auf zu`FormFields`Eigentum der`Range` Objekt im Dokument, um die Sammlung von Formularfeldern abzurufen:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

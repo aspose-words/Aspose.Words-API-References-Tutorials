@@ -1,7 +1,7 @@
 ---
 title: Set Fonts Folders System And Custom Folder
 linktitle: Set Fonts Folders System And Custom Folder
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to setting system and custom font folders when rendering a document using Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Conclusion
-In this tutorial, we learned how to set system font folders and a custom folder when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify multiple font folders, including the system folder and a custom folder, to use when rendering your documents. Aspose.Words offers a powerful and flexible API for working with fonts in your documents. With this knowledge, you can control and customize the font sources used when rendering your documents to your specific needs.
+In this tutorial, we learned how to set system font folders and a custom folder when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify multiple font folders, including the system folder and a custom folder, to use when rendering your documents. Aspose.Words offers a powerful and flexible API for Words Processing with fonts in your documents. With this knowledge, you can control and customize the font sources used when rendering your documents to your specific needs.
 
 ### FAQ's
 

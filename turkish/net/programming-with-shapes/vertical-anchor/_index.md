@@ -1,7 +1,7 @@
 ---
 title: Dikey Çapa
 linktitle: Dikey Çapa
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'teki dikey bağlantı özelliğini kullanarak bir şekli bir belge içinde dikey olarak konumlandırmayı öğrenin.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Bu öğretici, bir şekli belge içinde dikey olarak konumlandırmak için Aspos
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
 - Aspose.Words for .NET kitaplığı yüklendi.
-- Temel C# bilgisi ve Word belgeleriyle çalışma.
+- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini kurun
- Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 ### Aspose.Words for .NET kullanan Vertical Anchor için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

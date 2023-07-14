@@ -1,7 +1,7 @@
 ---
 title: Использование панелей задач веб-расширения
 linktitle: Использование панелей задач веб-расширения
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по использованию панелей задач веб-расширения с Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /ru/net/programming-with-webextension/using-web-extension-task-panes/
 
 ## Шаг 1: Определите каталог документов
 
-Для начала вам нужно указать путь к каталогу, в котором вы хотите сохранить сгенерированный документ. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу ваших документов.
+ Для начала вам нужно указать путь к каталогу, в котором вы хотите сохранить сгенерированный документ. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу ваших документов.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

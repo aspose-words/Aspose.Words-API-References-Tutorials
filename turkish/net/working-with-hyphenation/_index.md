@@ -1,13 +1,13 @@
 ---
-title: Tireleme ile Çalışma
-linktitle: Tireleme ile Çalışma
-second_title: Aspose.Words for .NET API Referansı
+title: Tireleme ile Sözcük İşleme
+linktitle: Tireleme ile Sözcük İşleme
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinde sözcük hecelemesini nasıl yöneteceğinizi öğrenin. Eksiksiz öğreticiler ve pratik örnekler dahildir.
 type: docs
 weight: 750
 url: /tr/net/working-with-hyphenation/
 ---
-Tireleme ile Çalışmak, Aspose.Words for .NET kitaplığını kullanarak Word belgelerinizde hecelemeyi kullanma konusunda size yol gösteren kapsamlı bir kaynaktır. . Öğreticiler, belgelerinizdeki hecelemeyi etkili bir şekilde anlamak ve yönetmek için adım adım açıklamalar, eksiksiz kaynak kodu ve pratik örnekler sağlar. Otomatik hecelemeyi etkinleştirmeyi, heceleme sözlüklerini özelleştirmeyi, hecelemeyi belirli paragraflara uygulamayı, heceleme istisnalarını işlemeyi ve daha fazlasını öğreneceksiniz. Bu kaynak, Aspose.Words for .NET ile hecelemeyi kullanarak Word belgelerinin okunabilirliğini ve düzenini geliştirmek isteyen geliştiriciler için çok önemlidir.
+Tireleme ile Kelime İşleme, Aspose.Words for .NET kütüphanesini kullanarak Word belgelerinizde hecelemeyi kullanma konusunda size yol gösteren kapsamlı bir kaynaktır. . Öğreticiler, belgelerinizdeki hecelemeyi etkili bir şekilde anlamak ve yönetmek için adım adım açıklamalar, eksiksiz kaynak kodu ve pratik örnekler sağlar. Otomatik hecelemeyi etkinleştirmeyi, heceleme sözlüklerini özelleştirmeyi, hecelemeyi belirli paragraflara uygulamayı, heceleme istisnalarını işlemeyi ve daha fazlasını öğreneceksiniz. Bu kaynak, Aspose.Words for .NET ile hecelemeyi kullanarak Word belgelerinin okunabilirliğini ve düzenini geliştirmek isteyen geliştiriciler için çok önemlidir.
 
  ## Öğreticiler
 | Başlık | Tanım |

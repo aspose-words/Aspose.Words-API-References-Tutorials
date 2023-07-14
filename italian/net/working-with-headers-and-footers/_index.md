@@ -1,14 +1,14 @@
 ---
-title: Lavorare con intestazioni e piè di pagina
-linktitle: Lavorare con intestazioni e piè di pagina
-second_title: Riferimento all'API Aspose.Words per .NET
+title: Elaborazione di testi con intestazioni e piè di pagina
+linktitle: Elaborazione di testi con intestazioni e piè di pagina
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come lavorare con intestazioni e piè di pagina nei documenti di Word utilizzando Aspose.Words per .NET. Tutorial completi ed esempi pratici.
 type: docs
 weight: 730
 url: /it/net/working-with-headers-and-footers/
 ---
 
-Lavorare con intestazioni e piè di pagina è una risorsa completa per apprendere come manipolare e personalizzare intestazioni e piè di pagina nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial forniscono spiegazioni dettagliate, esempi di codice e istruzioni passo-passo per aggiungere, modificare e rimuovere intestazioni e piè di pagina, impostare intestazioni e piè di pagina diversi per diverse sezioni di un documento, inserire immagini, tabelle, campi dinamici e molto altro. Questa risorsa è essenziale per gli sviluppatori che desiderano creare documenti Word professionali e personalizzati con intestazioni e piè di pagina personalizzati in base alle loro esigenze specifiche.
+L'elaborazione di parole con intestazioni e piè di pagina è una risorsa completa per apprendere come manipolare e personalizzare intestazioni e piè di pagina nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial forniscono spiegazioni dettagliate, esempi di codice e istruzioni passo-passo per aggiungere, modificare e rimuovere intestazioni e piè di pagina, impostare intestazioni e piè di pagina diversi per diverse sezioni di un documento, inserire immagini, tabelle, campi dinamici e molto altro. Questa risorsa è essenziale per gli sviluppatori che desiderano creare documenti Word professionali e personalizzati con intestazioni e piè di pagina personalizzati in base alle loro esigenze specifiche.
 
 
  ## Tutorial

@@ -1,7 +1,7 @@
 ---
-title: Htmlsaveoptions ile Programlama
-linktitle: Htmlsaveoptions ile Programlama
-second_title: Aspose.Words for .NET API Referansı
+title: Htmlsaveoptions ile Kelime İşleme
+linktitle: Htmlsaveoptions ile Kelime İşleme
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te HTML kaydetme seçenekleriyle nasıl programlanacağını öğrenin. Biçimlendirmeyi ve içeriği korurken Word belgelerini kolayca HTML'ye dönüştürün.
 type: docs
 weight: 1620
@@ -9,7 +9,7 @@ url: /tr/net/programming-with-htmlsaveoptions/
 ---
 Aspose.Words for .NET, .NET uygulamalarında Word belgelerini işlemek ve oluşturmak için güçlü bir kitaplıktır. Aspose.Words for .NET referans sitesindeki öğreticiler, bu kitaplıkta uzmanlaşmak ve işlevselliğinden tam olarak yararlanmak isteyen geliştiriciler için değerli bir kaynak sağlar.
 
-"HtmlSaveOptions ile Programlama" öğreticisi, Aspose.Words for .NET'te HTML kaydetme seçeneklerinin kullanımına odaklanır. Bu eğitim, geliştiricilere Word belgelerinin HTML'ye dönüştürülmesini özelleştirmek için mevcut çeşitli seçenekler konusunda rehberlik eder. Bu seçeneklerin kullanımını göstermek ve istenen dönüştürme sonuçlarını elde etmek için ayrıntılı kod örnekleri verilmiştir.
+"HtmlSaveOptions ile Kelime İşleme" öğreticisi, Aspose.Words for .NET'te HTML kaydetme seçeneklerinin kullanımına odaklanır. Bu eğitim, geliştiricilere Word belgelerinin HTML'ye dönüştürülmesini özelleştirmek için mevcut çeşitli seçenekler konusunda rehberlik eder. Bu seçeneklerin kullanımını göstermek ve istenen dönüştürme sonuçlarını elde etmek için ayrıntılı kod örnekleri verilmiştir.
 
 İster Word belgelerini web'de görüntülemek için HTML'ye dönüştürmek, ister HTML içeriğini Word belgelerinize gömmek veya HTML işlemeyi özelleştirmek isteyin, bu eğitim size bunu yapacak bilgi ve becerileri verir. Ayrıntılı açıklamalar ve pratik örnekler sayesinde geliştirme projelerinizde Aspose.Words for .NET'in HTML dönüştürme işlevlerinden tam olarak yararlanabileceksiniz.
 

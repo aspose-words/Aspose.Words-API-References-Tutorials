@@ -1,7 +1,7 @@
 ---
 title: Mit Importformatoptionen anhängen
 linktitle: Mit Importformatoptionen anhängen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit Importformatoptionen anhängen.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Schritt 4: Hängen Sie das Quelldokument an das Zieldokument an
 
- Benutzen Sie die`AppendDocument` Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.UseDestinationStyles` als zweiten Parameter, um die Stile und Formatierungen des Zieldokuments zu verwenden.
+ Benutzen Sie die`AppendDocument`Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.UseDestinationStyles` als zweiten Parameter, um die Stile und Formatierungen des Zieldokuments zu verwenden.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,12 +58,12 @@ Damit ist die Implementierung des Anhängens eines Dokuments mit Importformatopt
 ### Beispielquellcode für Append With Import Format Options mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//Geben Sie an, dass bei Nummerierungskonflikten in Quell- und Zieldokumenten
+	// Geben Sie an, dass bei Nummerierungskonflikten in Quell- und Zieldokumenten
 	// dann wird die Nummerierung aus dem Quelldokument verwendet.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

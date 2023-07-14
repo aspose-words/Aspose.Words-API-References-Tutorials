@@ -1,7 +1,7 @@
 ---
 title: Document Formatting
 linktitle: Document Formatting
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to format and format Word documents with Aspose.Words for .NET. The tutorials will guide you through the various layout techniques, styling, numbering, paragraphing, fonts and more.
 type: docs
 weight: 1490

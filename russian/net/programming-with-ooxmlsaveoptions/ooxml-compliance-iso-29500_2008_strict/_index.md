@@ -1,7 +1,7 @@
 ---
 title: Ooxml Соответствие ISO 29500_2008_Strict
 linktitle: Ooxml Соответствие ISO 29500_2008_Strict
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как обеспечить соответствие Ooxml Iso 29500_2008_Strict при сохранении документов с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
 ### Пример исходного кода для Ooxml Compliance Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

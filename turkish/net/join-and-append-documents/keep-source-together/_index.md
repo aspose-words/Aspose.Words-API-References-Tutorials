@@ -1,7 +1,7 @@
 ---
 title: Kaynağı Bir Arada Tutun
 linktitle: Kaynağı Bir Arada Tutun
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Kaynak içeriği hedef belgeyle bir arada tutarken Word belgelerini birleştirmek ve eklemek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
 ## 1. Adım: Belge Dizinlerini Başlatın
 
- Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir` belgelerinizin bulunduğu yola değişken.
+ Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir`belgelerinizin bulunduğu yola değişken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 6. Adım: Nihai Belgeyi Kaydedin
 
- Son olarak, birleştirilmiş belgeyi "Kaynağı Bir Arada Tut" özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
+Son olarak, birleştirilmiş belgeyi "Kaynağı Bir Arada Tut" özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
@@ -75,7 +75,7 @@ Aspose.Words for .NET kullanan C# dilindeki "Kaynağı Bir Arada Tut" özelliği
 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

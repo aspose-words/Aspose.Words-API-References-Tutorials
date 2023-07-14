@@ -1,7 +1,7 @@
 ---
 title: Delat bord
 linktitle: Delat bord
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du delar upp en tabell i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ I den här handledningen ska vi lära oss hur man delar upp en tabell i ett Word
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Ladda dokumentet
-För att börja arbeta med dokumentet, följ dessa steg:
+Följ dessa steg för att starta ordbehandling med dokumentet:
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -71,7 +71,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för Split Table med Aspose.Words för .NET 
 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

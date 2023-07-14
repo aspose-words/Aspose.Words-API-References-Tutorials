@@ -1,7 +1,7 @@
 ---
 title: Code en retrait
 linktitle: Code en retrait
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser le code indenté avec le guide pas à pas Aspose.Words pour .NET.
 type: docs
 weight: 10

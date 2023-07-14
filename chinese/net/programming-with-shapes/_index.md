@@ -1,13 +1,13 @@
 ---
-title: 使用形状进行编程
-linktitle: 使用形状进行编程
-second_title: Aspose.Words for .NET API 参考
+title: 带有形状的文字处理
+linktitle: 带有形状的文字处理
+second_title: Aspose.Words 文档处理 API
 description: 探索 Aspose.Words for .NET 中的形状编程。通过分步教程和 C# 示例代码，了解如何操作和自定义 Word 文档中的形状。
 type: docs
 weight: 1560
 url: /zh/net/programming-with-shapes/
 ---
-Aspose.Words for .NET 关于形状编程的教程提供了在 Word 文档中操作和管理形状的全面指南。这些教程逐步解释如何创建、修改和删除形状，以及如何在颜色、大小、位置和其他属性方面自定义它们。教程包括清晰的代码示例和分步说明，以便于理解和实施。
+Aspose.Words for .NET 关于形状文字处理的教程提供了操作和管理 Word 文档中形状的综合指南。这些教程逐步解释如何创建、修改和删除形状，以及如何在颜色、大小、位置和其他属性方面自定义它们。教程包括清晰的代码示例和分步说明，以便于理解和实施。
 
 通过这些教程，您将学习如何向文档添加形状（例如矩形、圆形、线条和箭头），以改进布局和信息可视化。您还将学习如何操作形状属性，例如旋转、透明度和填充，以满足您的特定需求。
 

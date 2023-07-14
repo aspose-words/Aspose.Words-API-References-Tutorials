@@ -1,7 +1,7 @@
 ---
 title: 将 Word 文档页眉页脚书签导出到 PDF 文档
 linktitle: 将 Word 文档页眉页脚书签导出到 PDF 文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 将 Word 文档页眉页脚书签导出到 pdf 文档书签的分步指南。
 type: docs
 weight: 10

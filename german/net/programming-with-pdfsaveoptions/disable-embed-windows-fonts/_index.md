@@ -1,7 +1,7 @@
 ---
 title: Reduzieren Sie die PDF-Größe, indem Sie eingebettete Schriftarten deaktivieren
 linktitle: Reduzieren Sie die PDF-Größe, indem Sie eingebettete Schriftarten deaktivieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die PDF-Größe reduzieren, indem Sie die Einbettung von Windows-Schriftarten deaktivieren, wenn Sie Dokumente mit Aspose.Words für .NET in PDF konvertieren.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ A: Um das Einbetten von Windows-Schriftarten in ein PDF-Dokument mit Aspose.Word
 
  Laden Sie das Dokument, das Sie in PDF konvertieren möchten, mit`Document` Klasse und Dokumentpfad.
 
- Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`FontEmbeddingMode` Eigentum zu`PdfFontEmbeddingMode.EmbedNone`. Dadurch wird die Einbettung von Windows-Schriftarten in die generierte PDF-Datei deaktiviert.
+ Erstellen Sie eine Instanz von`PdfSaveOptions`Klasse und legen Sie die fest`FontEmbeddingMode` Eigentum zu`PdfFontEmbeddingMode.EmbedNone`. Dadurch wird die Einbettung von Windows-Schriftarten in die generierte PDF-Datei deaktiviert.
 
  Benutzen Sie die`Save` Methode der`Document` Objekt zum Konvertieren des Dokuments in PDF unter Angabe der zuvor konfigurierten Konvertierungsoptionen.
 

@@ -1,7 +1,7 @@
 ---
 title: Hyperlink einfügen
 linktitle: Hyperlink einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Hyperlinks in Word-Dokumente einfügen.
 type: docs
 weight: 10

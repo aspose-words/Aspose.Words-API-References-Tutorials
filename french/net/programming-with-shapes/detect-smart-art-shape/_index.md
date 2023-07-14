@@ -1,7 +1,7 @@
 ---
 title: Détecter la forme d'art intelligente
 linktitle: Détecter la forme d'art intelligente
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à détecter les formes Smart Art dans un document Word à l'aide d'Aspose.Words pour .NET, en identifiant les représentations graphiques.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Ce didacticiel explique comment détecter les formes Smart Art dans un document 
 Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
 - Bibliothèque Aspose.Words pour .NET installée.
-- Connaissance de base de C# et travail avec des documents Word.
+- Connaissance de base de C# et du traitement de texte avec des documents Word.
 
 ## Étape 1 : Configurer le répertoire de documents
  Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où se trouve votre document.
@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Smart Art.docx");
 ```
 
 ## Étape 3 : Détecter les formes d'art intelligentes
-Itérer à travers les nœuds enfants de type`Shape` dans le document à l'aide de`GetChildNodes` méthode. Vérifiez si chaque forme a Smart Art en utilisant le`HasSmart Art` propriété.
+ Itérer à travers les nœuds enfants de type`Shape` dans le document à l'aide de`GetChildNodes`méthode. Vérifiez si chaque forme a Smart Art en utilisant le`HasSmart Art` propriété.
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmart Art);
@@ -47,7 +47,7 @@ Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ### Exemple de code source pour détecter la forme d'art intelligente à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Smart Art.docx");

@@ -1,7 +1,7 @@
 ---
-title: Append Bookmarked Text
-linktitle: Append Bookmarked Text
-second_title: Aspose.Words for .NET API Reference
+title: Append Bookmarked Text In Word Document
+linktitle: Append Bookmarked Text In Word Document
+second_title: Aspose.Words Document Processing API
 description: Learn how to add text from a bookmark in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -100,3 +100,23 @@ Here is the full example source code to demonstrate adding text from a bookmark 
 ## Conclusion
 
 In this article, we explored the C# source code to understand how to use the Append Bookmarked Text function of Aspose.Words for .NET. We've followed a step-by-step guide to getting paragraphs from a bookmark, verifying parents, and copying paragraphs to another document.
+
+### FAQ's for append bookmarked text in word document
+
+#### Q1: What are the prerequisites to use the "Add text with bookmarks" feature in Aspose.Words for .NET?
+
+A: To use the "Add text with bookmarks" function in Aspose.Words for .NET, you need to have basic knowledge of C# language. You also need a .NET development environment with the Aspose.Words library installed.
+
+#### Q2: How to get the paragraphs that contain the beginning and end of a bookmark in a Word document?
+
+A: To get the paragraphs that contain the start and end of a bookmark in a Word document, you can access the `BookmarkStart` and `BookmarkEnd` properties of the bookmark. Here is a sample code:
+
+```csharp
+Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+```
+
+#### Q3: What happens if the start and end paragraphs don't have valid parents?
+
+A: If the start and end paragraphs do not have valid parents, i.e. they are not really paragraphs, an exception will be thrown. This situation cannot be managed at this time.
+

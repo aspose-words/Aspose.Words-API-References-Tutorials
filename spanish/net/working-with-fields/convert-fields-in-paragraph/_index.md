@@ -1,7 +1,7 @@
 ---
 title: Convertir campos en párrafo
 linktitle: Convertir campos en párrafo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Convierta los campos IF en texto sin formato en un párrafo con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
- Este código utiliza una combinación de métodos LINQ para filtrar campos en el último párrafo del documento y luego los convierte en texto sin formato llamando a la`Unlink()` método.
+Este código utiliza una combinación de métodos LINQ para filtrar campos en el último párrafo del documento y luego los convierte en texto sin formato llamando a la`Unlink()` método.
 
 ## Paso 4: Guardar el documento modificado
 

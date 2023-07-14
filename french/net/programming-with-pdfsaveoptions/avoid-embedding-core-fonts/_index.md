@@ -1,7 +1,7 @@
 ---
 title: Réduire la taille du fichier PDF en n'incorporant pas les polices de base
 linktitle: Réduire la taille du fichier PDF en n'incorporant pas les polices de base
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment réduire la taille du fichier PDF en n'incorporant pas les polices de base lors de la conversion de documents Word en PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ R : Pour configurer Aspose.Words pour .NET afin qu'il n'intègre pas les police
 
  Chargez le document Word que vous souhaitez convertir en PDF à l'aide du`Document` class et le chemin d'accès au document spécifié.
 
- Créer une instance de`PdfSaveOptions` classe et définissez la`UseCoreFonts` propriété à`true`. Cela évitera l'incorporation de polices de base dans le fichier PDF généré.
+ Créer une instance de`PdfSaveOptions`classe et définissez la`UseCoreFonts` propriété à`true`. Cela évitera l'incorporation de polices de base dans le fichier PDF généré.
 
  Utilisez le`Save` méthode de la`Document` objet pour enregistrer le document au format PDF en précisant les options de conversion configurées précédemment.
 

@@ -1,27 +1,27 @@
 ---
 title: Combinar filas
 linktitle: Combinar filas
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a combinar filas de tablas en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/combine-rows/
 ---
 
-En este tutorial, aprenderemos a usar Aspose.Words para .NET para combinar filas de tablas en un documento de Word. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá manipular y fusionar filas de tablas en sus documentos de Word mediante programación.
+En este tutorial, aprenderemos a usar Aspose.Words para .NET para combinar filas de tablas en un documento de Word. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá manipular y fusionar filas de tablas en sus documentos de Word mediante programación.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Cargar el documento y acceder a las tablas
-Para empezar a trabajar con tablas, necesitamos cargar el documento que las contiene y acceder a ellas. Sigue estos pasos:
+Para iniciar el procesamiento de textos con tablas, necesitamos cargar el documento que las contiene y acceder a ellas. Sigue estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Acceso a mesas
@@ -56,7 +56,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Ejemplo de código fuente para Combinar filas usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

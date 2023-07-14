@@ -1,14 +1,14 @@
 ---
-title: البرمجة باستخدام Markdownsaveoptions
-linktitle: البرمجة باستخدام Markdownsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تعلم البرمجة باستخدام MarkdownSaveOptions في Aspose.Words for .NET. برامج تعليمية مفصلة مع نموذج التعليمات البرمجية لحفظ مستندات Word بتنسيق Markdown.
+title: معالجة الكلمات بخيارات Markdownsave
+linktitle: معالجة الكلمات بخيارات Markdownsave
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
+description: تعلم معالجة الكلمات باستخدام MarkdownSaveOptions في Aspose.Words for .NET. برامج تعليمية مفصلة مع نموذج التعليمات البرمجية لحفظ مستندات Word بتنسيق Markdown.
 type: docs
 weight: 1640
 url: /ar/net/programming-with-markdownsaveoptions/
 ---
 
-البرمجة باستخدام MarkdownSaveOptions هي مورد متعمق يرشدك خلال البرمجة باستخدام MarkdownSaveOptions باستخدام مكتبة Aspose.Words لـ .NET. توفر لك البرامج التعليمية توضيحات خطوة بخطوة وكود مصدر كامل وأمثلة عملية لفهم واستخدام MarkdownSaveOptions لتصدير مستندات Word إلى تنسيق Markdown. ستتعلم كيفية تخصيص خيارات التصدير ، مثل إدارة الصور ومواءمة محتوى الجدول وتحويل الأنماط والمزيد. هذا المورد ضروري للمطورين الذين يتطلعون إلى دمج وظيفة تصدير Markdown في تطبيقاتهم باستخدام Aspose.Words for .NET.
+معالجة الكلمات باستخدام MarkdownSaveOptions هو مورد متعمق يرشدك خلال معالجة الكلمات باستخدام MarkdownSaveOptions باستخدام مكتبة Aspose.Words لـ .NET. توفر لك البرامج التعليمية توضيحات خطوة بخطوة وكود مصدر كامل وأمثلة عملية لفهم واستخدام MarkdownSaveOptions لتصدير مستندات Word إلى تنسيق Markdown. ستتعلم كيفية تخصيص خيارات التصدير ، مثل إدارة الصور ومواءمة محتوى الجدول وتحويل الأنماط والمزيد. هذا المورد ضروري للمطورين الذين يتطلعون إلى دمج وظيفة تصدير Markdown في تطبيقاتهم باستخدام Aspose.Words for .NET.
 
  ## دروس
 | عنوان | وصف |

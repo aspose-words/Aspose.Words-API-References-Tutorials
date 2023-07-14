@@ -1,7 +1,7 @@
 ---
 title: Imposta il livello di compressione
 linktitle: Imposta il livello di compressione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come impostare il livello di compressione durante il salvataggio di un documento con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Ora puoi eseguire il codice sorgente per impostare il livello di compressione du
 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Document.docx");

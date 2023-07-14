@@ -1,7 +1,7 @@
 ---
 title: Répéter les lignes sur les pages suivantes
 linktitle: Répéter les lignes sur les pages suivantes
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à répéter les lignes d'un tableau sur les pages suivantes d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Dans ce didacticiel, nous allons apprendre à répéter les lignes d'un tableau 
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Etape 2 : Création du document et initialisation du générateur de document
-Pour commencer à travailler avec le document et le générateur de documents, suivez ces étapes :
+Pour démarrer le traitement de texte avec le document et le générateur de documents, procédez comme suit :
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
@@ -87,7 +87,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour Répéter les lignes sur les pages suivantes à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

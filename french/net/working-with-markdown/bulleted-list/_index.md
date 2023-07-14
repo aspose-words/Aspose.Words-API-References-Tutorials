@@ -1,7 +1,7 @@
 ---
 title: Liste à puces
 linktitle: Liste à puces
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer une liste à puces avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10

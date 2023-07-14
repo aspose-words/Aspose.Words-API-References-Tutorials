@@ -1,7 +1,7 @@
 ---
 title: Créer un nouveau document
 linktitle: Créer un nouveau document
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer un nouveau document Word et à ajouter du contenu à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
 - Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
 ## Étape 1 : créer un nouveau document
-Pour commencer, créez un nouveau document en utilisant la classe Document :
+Pour commencer, créez un nouveau document en utilisant la classe Document :
 
 ```csharp
 Document doc = new Document();

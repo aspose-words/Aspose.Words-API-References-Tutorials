@@ -1,7 +1,7 @@
 ---
 title: Imposta la posizione orizzontale o verticale relativa
 linktitle: Imposta la posizione orizzontale o verticale relativa
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come impostare la posizione orizzontale o verticale relativa di una tabella in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In questo tutorial impareremo come impostare la posizione orizzontale o vertical
 2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: caricamento del documento
-Per iniziare a lavorare con il documento, attenersi alla seguente procedura:
+Per avviare l'elaborazione di parole con il documento, attenersi alla seguente procedura:
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
@@ -55,7 +55,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ### Esempio di codice sorgente per Imposta posizione orizzontale o verticale relativa utilizzando Aspose.Words per .NET 
 
 ```csharp
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");

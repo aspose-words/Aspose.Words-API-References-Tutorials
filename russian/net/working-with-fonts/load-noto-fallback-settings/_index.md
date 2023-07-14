@@ -1,7 +1,7 @@
 ---
 title: Загрузить резервные настройки Noto
 linktitle: Загрузить резервные настройки Noto
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого руководства вы узнаете, как загрузить параметры переопределения Noto в документ Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 2. Загрузите документ и настройте параметры замены шрифта.
- Далее мы загрузим документ с помощью`Document` класс и настройте параметры переопределения шрифта с помощью`FontSettings` сорт. Мы загрузим резервные настройки шрифта Noto, используя`LoadNotoFallbackSettings()` метод.
+ Далее мы загрузим документ с помощью`Document` class и настройте параметры переопределения шрифта с помощью`FontSettings` сорт. Мы загрузим резервные настройки шрифта Noto, используя`LoadNotoFallbackSettings()` метод.
 
 ```csharp
 // Загрузите документ и настройте параметры замены шрифта
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ### Пример исходного кода для резервных настроек Noto с использованием Aspose.Words для .NET 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

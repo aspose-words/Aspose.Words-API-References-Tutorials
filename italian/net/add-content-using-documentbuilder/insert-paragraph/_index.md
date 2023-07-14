@@ -1,7 +1,7 @@
 ---
 title: Inserisci paragrafo
 linktitle: Inserisci paragrafo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire paragrafi formattati nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

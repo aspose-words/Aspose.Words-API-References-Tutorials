@@ -1,7 +1,7 @@
 ---
 title: Вставьте объект Ole в виде значка с помощью потока
 linktitle: Вставьте объект Ole в виде значка с помощью потока
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставить объект OLE в качестве значка с помощью потока с Aspose.Words для .NET.
 type: docs
 weight: 10

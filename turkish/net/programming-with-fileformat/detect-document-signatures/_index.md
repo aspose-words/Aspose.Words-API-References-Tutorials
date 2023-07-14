@@ -1,7 +1,7 @@
 ---
 title: Word Belgesinde Dijital İmza Algılama
 linktitle: Word Belgesinde Dijital İmza Algılama
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile kelime belgesindeki dijital imzayı algılamak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signe
 
 ## 3. Adım: Dijital imzaları kontrol edin
 
- kullanarak belgenin dijital imza içerip içermediğini kontrol ederiz.`HasDigitalSignature` mülkiyeti`FileFormatInfo` nesne. Dijital imzalar algılanırsa, belge Aspose.Words ile açılır/kaydedilirse imzaların kaybolacağını belirten bir mesaj görüntüleriz.
+ kullanarak belgenin dijital imza içerip içermediğini kontrol ederiz.`HasDigitalSignature`mülkiyeti`FileFormatInfo` nesne. Dijital imzalar algılanırsa, belge Aspose.Words ile açılır/kaydedilirse imzaların kaybolacağını belirten bir mesaj görüntüleriz.
 
 ```csharp
 if (info.HasDigitalSignature)
@@ -68,7 +68,7 @@ Bu öğretici, Aspose.Words for .NET ile dijital imza algılama özelliğini kul
 
 #### Aspose.Words for .NET kullanılarak bir Word belgesinde dijital imzanın varlığı nasıl tespit edilir?
 
- Aspose.Words for .NET kullanarak bir Word belgesinde dijital imzanın varlığını algılamak için eğitimde verilen adımları takip edebilirsiniz. Kullanmak`DetectFileFormat` yöntemi`FileFormatUtil` class, dosya formatı bilgilerini algılamanıza izin verecektir. Sonra kontrol edebilirsiniz`HasDigitalSignature` mülkiyeti`FileFormatInfo`Belgenin dijital imza içerip içermediğini belirlemek için nesne. Bir dijital imza algılanırsa, belgenin Aspose.Words ile açılması/kaydedilmesi durumunda imzaların kaybolacağını belirten bir mesaj görüntüleyebilirsiniz.
+ Aspose.Words for .NET kullanarak bir Word belgesinde dijital imzanın varlığını algılamak için eğitimde verilen adımları takip edebilirsiniz. Kullanmak`DetectFileFormat` yöntemi`FileFormatUtil` class, dosya formatı bilgilerini algılamanıza izin verecektir. Sonra kontrol edebilirsiniz`HasDigitalSignature`mülkiyeti`FileFormatInfo`Belgenin dijital imza içerip içermediğini belirlemek için nesne. Bir dijital imza algılanırsa, belgenin Aspose.Words ile açılması/kaydedilmesi durumunda imzaların kaybolacağını belirten bir mesaj görüntüleyebilirsiniz.
 
 #### Dijital imzanın aranacağı belgeleri içeren dizin nasıl belirlenir?
 

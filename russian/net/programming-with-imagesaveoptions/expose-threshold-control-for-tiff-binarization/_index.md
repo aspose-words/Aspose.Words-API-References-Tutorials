@@ -1,7 +1,7 @@
 ---
 title: Выставить контроль порога для бинаризации Tiff
 linktitle: Выставить контроль порога для бинаризации Tiff
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как управлять порогом бинаризации TIFF с помощью Aspose.Words для .NET. Полное руководство для улучшения качества изображений.
 type: docs
 weight: 10
@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBin
 
 ```csharp 
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

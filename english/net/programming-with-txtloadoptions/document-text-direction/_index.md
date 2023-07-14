@@ -1,7 +1,7 @@
 ---
 title: Document Text Direction
 linktitle: Document Text Direction
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to specify text direction in your documents with Aspose.Words for .NET. Improve display for right-to-left languages.
 type: docs
 weight: 10
@@ -81,7 +81,7 @@ This feature is essential to ensure that text is displayed correctly in multilin
 
 With Aspose.Words, you can easily manipulate the direction of text in your documents, providing a smooth and intuitive reading experience for users.
 
-It is important to note that this feature is especially useful when working with languages that require specific text direction. Aspose.Words makes this task easy by providing powerful tools to manage the direction of text in your documents.
+It is important to note that this feature is especially useful when Words Processing with languages that require specific text direction. Aspose.Words makes this task easy by providing powerful tools to manage the direction of text in your documents.
 
 Remember to use the appropriate loading options, such as setting automatic text direction, to get the results you want in your documents.
 

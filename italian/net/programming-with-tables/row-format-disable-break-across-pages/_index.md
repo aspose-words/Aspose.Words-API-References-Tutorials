@@ -1,7 +1,7 @@
 ---
 title: Formato riga Disabilita l'interruzione tra le pagine
 linktitle: Formato riga Disabilita l'interruzione tra le pagine
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come disabilitare l'interruzione di riga per una tabella su più pagine in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In questo tutorial impareremo come disabilitare l'interruzione di riga di una ta
 2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: caricamento del documento
-Per iniziare a lavorare con il documento, attenersi alla seguente procedura:
+Per avviare l'elaborazione di parole con il documento, attenersi alla seguente procedura:
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
@@ -50,10 +50,10 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 
 Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### Codice sorgente di esempio per il formato di riga Disabilita l'interruzione tra le pagine utilizzando Aspose.Words per .NET 
+### Esempio di codice sorgente per Row Format Disabilita l'interruzione tra le pagine utilizzando Aspose.Words per .NET 
 
 ```csharp
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");

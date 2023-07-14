@@ -1,14 +1,14 @@
 ---
-title: Afficher Masquer le contenu marqué d'un signet
-linktitle: Afficher Masquer le contenu marqué d'un signet
-second_title: Référence de l'API Aspose.Words pour .NET
-description: Découvrez comment afficher ou masquer le contenu des signets à l'aide d'Aspose.Words pour .NET.
+title: Afficher Masquer le contenu mis en signet dans le document Word
+linktitle: Afficher Masquer le contenu mis en signet dans le document Word
+second_title: API de traitement de documents Aspose.Words
+description: Apprenez à afficher ou à masquer le contenu des signets dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-Dans cet article, nous allons explorer le code source C # ci-dessus pour comprendre comment utiliser la fonction Afficher le contenu mis en signet dans Aspose.Words pour la bibliothèque .NET. Cette fonctionnalité vous permet d'afficher ou de masquer le contenu d'un signet en fonction d'une condition spécifique lors de la fusion de données.
+Dans cet article, nous allons explorer le code source C # ci-dessus pour comprendre comment utiliser la fonction Afficher le contenu mis en signet dans Aspose.Words pour la bibliothèque .NET. Cette fonctionnalité vous permet d'afficher ou de masquer le contenu d'un signet dans un document Word en fonction d'une condition spécifique lors de la fusion de données.
 
 ## Conditions préalables
 
@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## Étape 2 : Insertion des champs de fusion
 
- Nous utilisons un générateur de documents`DocumentBuilder` pour insérer les champs de fusion nécessaires. Ces champs de fusion définiront une condition pour afficher ou masquer le contenu du signet en fonction de la valeur du`showHide` variable:
+ Nous utilisons un générateur de documents`DocumentBuilder`pour insérer les champs de fusion nécessaires. Ces champs de fusion définiront une condition pour afficher ou masquer le contenu du signet en fonction de la valeur du`showHide` variable:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -145,3 +145,33 @@ Voici l'exemple complet de code source pour démontrer l'affichage ou le masquag
 ## Conclusion
 
 Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonctionnalité Afficher le contenu mis en signet d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour afficher ou masquer le contenu d'un signet en fonction d'une condition spécifique lors de la fusion de données.
+
+### FAQ pour afficher le contenu marqué d'un signet dans un document Word
+
+#### Q : Puis-je utiliser la même condition pour plusieurs signets dans le même document ?
+
+ R : Oui, vous pouvez utiliser la même condition pour plusieurs signets dans le même document. Répétez simplement les étapes 2 à 5 pour chaque signet, en ajustant le nom du signet et éventuellement la valeur du`showhide` variables selon les besoins.
+
+#### Q : Comment puis-je ajouter d'autres conditions pour afficher ou masquer le contenu des favoris ?
+
+ R : Pour ajouter d'autres conditions, vous pouvez utiliser des opérateurs logiques tels que`AND` et`OR` dans le code d'insertion des champs de fusion à l'étape 2. Modifiez la condition dans le code suivant pour ajouter des conditions supplémentaires :
+
+```csharp
+builder. Write("\" = \"true\" ");
+```
+
+#### Q : Comment puis-je supprimer un signet dans un document Word à l'aide d'Aspose.Words pour .NET ?
+
+R : Pour supprimer un signet dans un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Remove` méthode de la`Bookmarks` collection de la plage de documents. Voici un exemple de code pour supprimer un signet spécifique :
+
+```csharp
+doc.Range.Bookmarks.Remove(bookmarkName);
+```
+
+#### Q : La bibliothèque Aspose.Words est-elle gratuite ?
+
+R : La bibliothèque Aspose.Words est une bibliothèque commerciale et nécessite une licence valide pour être utilisée dans vos projets. Vous pouvez consulter le site Web officiel d'Aspose pour en savoir plus sur les options de licence et les prix.
+
+#### Q : Existe-t-il d'autres bibliothèques disponibles pour le traitement de texte avec des documents Word dans .NET ?
+
+R : Oui, il existe d'autres bibliothèques disponibles pour le traitement de texte avec des documents Word dans .NET, comme Open XML SDK et GemBox.Document. Vous pouvez explorer ces bibliothèques comme alternatives à Aspose.Words en fonction de vos besoins et préférences spécifiques.

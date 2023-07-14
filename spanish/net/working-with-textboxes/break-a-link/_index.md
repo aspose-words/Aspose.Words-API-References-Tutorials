@@ -1,14 +1,14 @@
 ---
 title: Romper enlace hacia adelante en documento de Word
 linktitle: Romper enlace hacia adelante en documento de Word
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a romper vínculos hacia adelante en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words for .NET es una poderosa biblioteca que ofrece varias funciones para trabajar con documentos de Microsoft Word mediante programación. Una de sus características útiles es la capacidad de romper enlaces hacia adelante en un documento de Word. En este tutorial, exploraremos el código fuente en C# que demuestra cómo dividir el enlace hacia adelante en un documento de Word usando Aspose.Words para .NET.
+Aspose.Words for .NET es una potente biblioteca que ofrece varias funciones para el procesamiento de textos con documentos de Microsoft Word mediante programación. Una de sus características útiles es la capacidad de romper enlaces hacia adelante en un documento de Word. En este tutorial, exploraremos el código fuente en C# que demuestra cómo dividir el enlace hacia adelante en un documento de Word usando Aspose.Words para .NET.
 
 ## Paso 1: Vista previa del código fuente de C#
 
@@ -16,7 +16,7 @@ El código fuente de C# proporcionado se centra en la función "Romper un enlace
 
 ## Paso 2: configurar el documento y crear una forma de cuadro de texto
 
-Para comenzar, debemos configurar el documento y crear una forma de cuadro de texto. El siguiente código inicializa una nueva instancia del`Document` clase y crea una forma de cuadro de texto:
+ Para comenzar, debemos configurar el documento y crear una forma de cuadro de texto. El siguiente código inicializa una nueva instancia del`Document` clase y crea una forma de cuadro de texto:
 
 ```csharp
 Document doc = new Document();
@@ -58,7 +58,7 @@ TextBox textBox = shape.TextBox;
 // Romper el enlace directo.
 textBox.BreakForwardLink();
 
-//Rompe un enlace directo estableciendo un valor nulo.
+// Rompe un enlace directo estableciendo un valor nulo.
 textBox. Next = null;
 
 // Rompe un enlace que lleva a este cuadro de texto.
@@ -81,7 +81,7 @@ R: Para romper enlaces de redirección en un documento de Word usando Aspose.Wor
 
 #### P: ¿Cómo romper un enlace de redirección estableciendo un valor nulo?
 
- R: Alternativamente, puede romper un enlace de redirección configurando el`Next`propiedad del cuadro de texto para`null`. Esto elimina efectivamente la conexión con la siguiente forma.
+R: Alternativamente, puede romper un enlace de redirección configurando el`Next` propiedad del cuadro de texto para`null`. Esto elimina efectivamente la conexión con la siguiente forma.
 
 #### P: ¿Cómo romper un enlace que conduce al cuadro de texto?
 

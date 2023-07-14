@@ -1,13 +1,13 @@
 ---
 title: 将图元文件转换为 Png
 linktitle: 将图元文件转换为 Png
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解使用 Aspose.Words for .NET 上传文档时如何将图元文件转换为 PNG 图像。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/convert-metafiles-to-png/
 ---
-在 C# 应用程序中处理文档时，可能需要将图元文件转换为 PNG 图像，以获得更好的兼容性和准确的渲染。借助适用于 .NET 的 Aspose.Words 库，您可以在加载文档时轻松将图元文件转换为 PNG。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码来加载文档，并使用 LoadOptions 加载选项将图元文件转换为 PNG。
+在 C# 应用程序中对文档进行文字处理时，可能需要将图元文件转换为 PNG 图像，以获得更好的兼容性和准确的渲染。借助适用于 .NET 的 Aspose.Words 库，您可以在加载文档时轻松将图元文件转换为 PNG。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码来加载文档，并使用 LoadOptions 加载选项将图元文件转换为 PNG。
 
 ## 了解 Aspose.Words 库
 

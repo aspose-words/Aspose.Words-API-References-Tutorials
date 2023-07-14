@@ -1,14 +1,14 @@
 ---
 title: Détecter le format de fichier du document
 linktitle: Détecter le format de fichier du document
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour détecter le format de fichier de document avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-fileformat/detect-file-format/
 ---
 
-Cet article fournit un guide étape par étape sur la façon d'utiliser la fonction de détection de format de fichier de document avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. A la fin de ce tutoriel, vous serez en mesure de comprendre comment détecter le format des différents fichiers de documents.
+Cet article fournit un guide étape par étape sur la façon d'utiliser la fonctionnalité de détection de format de fichier de document avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. A la fin de ce tutoriel, vous serez en mesure de comprendre comment détecter le format des différents fichiers de documents.
 
 Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words pour .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 
@@ -219,7 +219,7 @@ Aspose.Words pour .NET prend en charge une variété de formats de documents, no
 
 #### Comment gérer les fichiers de documents chiffrés lors de la détection du format ?
 
- Lors de la détection du format d'un fichier de document, vous pouvez utiliser le`IsEncrypted` propriété de la`FileFormatInfo` objet pour vérifier si le fichier est crypté. Si le fichier est crypté, vous pouvez prendre des mesures supplémentaires pour gérer ce cas spécifique, comme copier le fichier dans un répertoire dédié aux documents cryptés. Vous pouvez utiliser le`File.Copy` méthode pour ce faire.
+ Lors de la détection du format d'un fichier de document, vous pouvez utiliser le`IsEncrypted`propriété de la`FileFormatInfo` objet pour vérifier si le fichier est crypté. Si le fichier est crypté, vous pouvez prendre des mesures supplémentaires pour gérer ce cas spécifique, comme copier le fichier dans un répertoire dédié aux documents cryptés. Vous pouvez utiliser le`File.Copy` méthode pour ce faire.
 
 #### Quelles actions entreprendre lorsque le format d'un document est inconnu ?
 

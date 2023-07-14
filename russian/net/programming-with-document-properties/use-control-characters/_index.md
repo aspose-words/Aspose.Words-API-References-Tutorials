@@ -1,7 +1,7 @@
 ---
 title: Используйте управляющие символы
 linktitle: Используйте управляющие символы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по использованию управляющих символов в Aspose.Words для .NET.
 type: docs
 weight: 10

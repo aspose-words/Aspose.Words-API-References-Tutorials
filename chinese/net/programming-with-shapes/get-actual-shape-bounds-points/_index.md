@@ -1,7 +1,7 @@
 ---
 title: 获取实际形状边界点
 linktitle: 获取实际形状边界点
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中检索以点（测量单位）为单位的形状的实际边界。
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /zh/net/programming-with-shapes/get-actual-shape-bounds-points/
 要学习本教程，您需要具备以下条件：
 
 - 已安装 Aspose.Words for .NET 库。
-- C# 和使用 Word 文档的基本知识。
+- C# 和 Word 文档文字处理的基础知识。
 
 ## 第 1 步：创建新文档和 DocumentBuilder
 创建一个新实例`Document`类和一个`DocumentBuilder`对象使用该文档。

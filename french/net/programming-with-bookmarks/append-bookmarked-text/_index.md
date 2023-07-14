@@ -1,7 +1,7 @@
 ---
-title: Ajouter le texte marqué d'un signet
-linktitle: Ajouter le texte marqué d'un signet
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Ajouter du texte marqué d'un signet dans un document Word
+linktitle: Ajouter du texte marqué d'un signet dans un document Word
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajouter du texte à partir d'un signet dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -100,3 +100,22 @@ Voici l'exemple de code source complet pour illustrer l'ajout de texte à partir
 ## Conclusion
 
 Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Append Bookmarked Text de Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour obtenir des paragraphes à partir d'un signet, vérifier les parents et copier des paragraphes dans un autre document.
+
+### FAQ pour ajouter du texte marqué d'un signet dans un document Word
+
+#### Q1 : Quels sont les prérequis pour utiliser la fonctionnalité "Ajouter du texte avec des signets" dans Aspose.Words pour .NET ?
+
+R : Pour utiliser la fonction "Ajouter du texte avec des signets" dans Aspose.Words pour .NET, vous devez avoir une connaissance de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+
+#### Q2 : Comment obtenir les paragraphes qui contiennent le début et la fin d'un signet dans un document Word ?
+
+ R : Pour obtenir les paragraphes contenant le début et la fin d'un signet dans un document Word, vous pouvez accéder au`BookmarkStart` et`BookmarkEnd` propriétés du signet. Voici un exemple de code :
+
+```csharp
+Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+```
+
+#### Q3 : Que se passe-t-il si les paragraphes de début et de fin n'ont pas de parents valides ?
+
+R : Si les paragraphes de début et de fin n'ont pas de parents valides, c'est-à-dire qu'ils ne sont pas vraiment des paragraphes, une exception sera levée. Cette situation ne peut pas être gérée pour le moment.

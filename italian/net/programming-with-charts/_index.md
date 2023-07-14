@@ -1,7 +1,7 @@
 ---
-title: Programmazione con i grafici
-linktitle: Programmazione con i grafici
-second_title: Riferimento all'API Aspose.Words per .NET
+title: Utilizzo dell'API del grafico di parole
+linktitle: Utilizzo di grafici
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come creare, personalizzare e manipolare la grafica nei documenti di Word utilizzando Aspose.Words per .NET. Le esercitazioni forniscono spiegazioni dettagliate e codice sorgente C# per aiutarti ad aggiungere grafici.
 type: docs
 weight: 1540

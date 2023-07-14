@@ -1,7 +1,7 @@
 ---
 title: Abschnittszugriff nach Index
 linktitle: Abschnittszugriff nach Index
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET über den Index auf Abschnitte eines Word-Dokuments zugreifen und deren Einstellungen ändern.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Als nächstes laden wir das Word-Dokument in eine Instanz von`Document` Klasse. Um auf einen bestimmten Abschnitt zuzugreifen, verwenden wir den Abschnittsindex. In diesem Beispiel greifen wir über den Index 0 auf den ersten Abschnitt zu.
 
 ```csharp
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
 // Greifen Sie über den Index auf einen Abschnitt zu
@@ -52,7 +52,7 @@ section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -86,7 +86,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Um das Word-Dokument in eine Instanz von zu laden`Document` Um eine Klasse zu erstellen und über den Index auf einen bestimmten Abschnitt zuzugreifen, können Sie den folgenden Code verwenden:
 
 ```csharp
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
 // Greifen Sie über den Index auf einen Abschnitt zu

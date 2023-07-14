@@ -1,7 +1,7 @@
 ---
 title: Combiner les lignes
 linktitle: Combiner les lignes
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à combiner des lignes de tableau dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Dans ce didacticiel, nous apprendrons à utiliser Aspose.Words pour .NET pour co
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Etape 2 : Charger le document et accéder aux tableaux
-Pour commencer à travailler avec des tableaux, nous devons charger le document qui les contient et y accéder. Suivez ces étapes:
+Pour démarrer le traitement de texte avec des tableaux, nous devons charger le document qui les contient et y accéder. Suivez ces étapes:
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Accéder aux tableaux
@@ -56,7 +56,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour combiner des lignes à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

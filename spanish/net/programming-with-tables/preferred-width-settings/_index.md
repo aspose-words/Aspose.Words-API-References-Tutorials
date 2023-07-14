@@ -1,7 +1,7 @@
 ---
 title: Configuraciones de ancho preferidas
 linktitle: Configuraciones de ancho preferidas
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a establecer anchos de celda de tabla preferidos en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ En este tutorial, aprenderemos cómo establecer la configuración de ancho prefe
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Creación del documento e inicialización del generador de documentos
-Para comenzar a trabajar con el documento y el generador de documentos, siga estos pasos:
+Para iniciar el procesamiento de textos con el documento y el generador de documentos, siga estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
@@ -75,7 +75,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Ejemplo de código fuente para la configuración de ancho preferido con Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

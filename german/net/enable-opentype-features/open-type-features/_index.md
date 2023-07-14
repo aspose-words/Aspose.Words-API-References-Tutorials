@@ -1,7 +1,7 @@
 ---
 title: Offene Typfunktionen
 linktitle: Offene Typfunktionen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Open Type-Funktionen in Aspose.Words für .NET aktivieren und verwenden
 type: docs
 weight: 10
@@ -65,7 +65,7 @@ A: Aspose.Words für .NET unterstützt mehrere OpenType-Funktionen, wie Ligature
 
 #### F: Wie kann ich überprüfen, ob eine OpenType-Funktion in einer bestimmten Schriftart unterstützt wird?
 
- A: Sie können mithilfe von überprüfen, ob eine OpenType-Funktion in einer bestimmten Schriftart unterstützt wird`Font.OpenTypeFeatures` Methode in Aspose.Words für .NET.
+A: Sie können mithilfe von überprüfen, ob eine OpenType-Funktion in einer bestimmten Schriftart unterstützt wird`Font.OpenTypeFeatures` Methode in Aspose.Words für .NET.
 
 #### F: Welche anderen Textformatierungsfunktionen unterstützt Aspose.Words für .NET?
 

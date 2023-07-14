@@ -1,7 +1,7 @@
 ---
 title: Ställ in komprimeringsnivå
 linktitle: Ställ in komprimeringsnivå
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ställer in komprimeringsnivån när du sparar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Nu kan du köra källkoden för att ställa in komprimeringsnivån när du spara
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Document.docx");

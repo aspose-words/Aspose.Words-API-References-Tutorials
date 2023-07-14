@@ -1,7 +1,7 @@
 ---
 title: Ändern Sie die Zeilenformatierung
 linktitle: Ändern Sie die Zeilenformatierung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Ändern der Tabellenzeilenformatierung mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 ### Beispielquellcode zum Ändern der Zeilenformatierung mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

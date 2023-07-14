@@ -1,7 +1,7 @@
 ---
 title: Klonsektion
 linktitle: Klonsektion
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du klona ett avsnitt i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Därefter laddar vi Word-dokumentet i en instans av`Document` klass. Vi kommer då att använda`Clone` metod för att klona den första delen av dokumentet.
 
 ```csharp
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Klona avsnittet
@@ -40,7 +40,7 @@ Section cloneSection = doc.Sections[0].Clone();
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -67,7 +67,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  S: För att ladda Word-dokumentet i en instans av`Document` klass och klona den första delen av dokumentet kan du använda följande kod:
 
 ```csharp
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Klona avsnittet

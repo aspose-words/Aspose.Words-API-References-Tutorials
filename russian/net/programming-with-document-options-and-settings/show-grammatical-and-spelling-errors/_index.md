@@ -1,7 +1,7 @@
 ---
 title: Показать грамматические и орфографические ошибки
 linktitle: Показать грамматические и орфографические ошибки
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по отображению грамматических и орфографических ошибок в документе с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

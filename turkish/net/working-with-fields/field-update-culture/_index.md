@@ -1,7 +1,7 @@
 ---
 title: Alan Güncelleme Kültürü
 linktitle: Alan Güncelleme Kültürü
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinizdeki alan kültürünü nasıl güncelleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Zaman alanını girin.
 builder. InsertField(FieldType.FieldTime, true);
 
-//Alan güncelleme kültürünü yapılandırın.
+// Alan güncelleme kültürünü yapılandırın.
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 

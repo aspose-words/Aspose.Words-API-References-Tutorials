@@ -1,7 +1,7 @@
 ---
 title: 创建表格样式
 linktitle: 创建表格样式
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 创建自定义表格样式的分步指南。
 type: docs
 weight: 10

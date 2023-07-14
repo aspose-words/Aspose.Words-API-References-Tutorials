@@ -1,7 +1,7 @@
 ---
 title: Insertar tabla de contenido
 linktitle: Insertar tabla de contenido
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar una tabla de contenido en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10

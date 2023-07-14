@@ -1,7 +1,7 @@
 ---
 title: 获取单词的修订类型
 linktitle: 获取单词的修订类型
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 获取 Word 文档中单词的修订类型。
 type: docs
 weight: 10

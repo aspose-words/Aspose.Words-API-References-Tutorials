@@ -1,7 +1,7 @@
 ---
 title: Yatay kural
 linktitle: Yatay kural
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile yatay bir kuralı nasıl ekleyeceğinizi adım adım öğrenin.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Obtenir le séparateur de style de paragraphe
 linktitle: Obtenir le séparateur de style de paragraphe
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à obtenir le séparateur de style de paragraphe avec Aspose.Words pour .NET.
 type: docs
 weight: 10

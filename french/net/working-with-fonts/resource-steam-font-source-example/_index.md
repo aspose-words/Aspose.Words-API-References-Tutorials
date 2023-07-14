@@ -1,7 +1,7 @@
 ---
 title: Ressource Exemple de source de police Steam
 linktitle: Ressource Exemple de source de police Steam
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser Resource Stream Font Source pour charger des polices personnalisées dans Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ### Exemple de code source pour Resource Steam Font Source Example utilisant Aspose.Words pour .NET 
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

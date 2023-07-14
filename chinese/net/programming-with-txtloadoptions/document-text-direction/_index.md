@@ -1,7 +1,7 @@
 ---
 title: 文档文本方向
 linktitle: 文档文本方向
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在文档中指定文本方向。改进从右到左语言的显示。
 type: docs
 weight: 10
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 使用Aspose.Words，您可以轻松操纵文档中文本的方向，为用户提供流畅直观的阅读体验。
 
-值得注意的是，当使用需要特定文本方向的语言时，此功能特别有用。 Aspose.Words 通过提供强大的工具来管理文档中文本的方向，使这项任务变得容易。
+值得注意的是，当使用需要特定文本方向的语言进行文字处理时，此功能特别有用。 Aspose.Words 通过提供强大的工具来管理文档中文本的方向，使这项任务变得容易。
 
 请记住使用适当的加载选项（例如设置自动文本方向）以获得您想要的文档结果。
 

@@ -1,7 +1,7 @@
 ---
 title: 使用目标机中的字体
 linktitle: 使用目标机中的字体
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何通过 Aspose.Words for .NET 使用目标计算机的字体将 Word 文档转换为固定 HTML。
 type: docs
 weight: 10

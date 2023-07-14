@@ -1,14 +1,14 @@
 ---
 title: Ne pas compresser les petits métafichiers
 linktitle: Ne pas compresser les petits métafichiers
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser Aspose.Words pour .NET pour activer la fonctionnalité Ne pas compresser les petits métafichiers lors de l'enregistrement de documents.
 type: docs
 weight: 10
 url: /fr/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 
-La compression des métadonnées dans un document est une fonctionnalité courante lorsque vous travaillez avec des fichiers dans une application C#. Cependant, il peut être nécessaire de ne pas compresser les métadonnées des petits fichiers pour préserver leur qualité. Dans ce guide étape par étape, nous allons vous montrer comment utiliser le code source C# de Aspose.Words pour .NET pour activer la fonctionnalité "Ne pas compresser les petits métafichiers" dans les options d'enregistrement du document.
+La compression des métadonnées dans un document est une fonctionnalité courante lors du traitement de texte avec des fichiers dans une application C#. Cependant, il peut être nécessaire de ne pas compresser les métadonnées des petits fichiers pour préserver leur qualité. Dans ce guide étape par étape, nous vous montrerons comment utiliser le code source C# de Aspose.Words pour .NET pour activer la fonctionnalité "Ne pas compresser les petits métafichiers" dans les options d'enregistrement du document.
 
 ## Comprendre la bibliothèque Aspose.Words
 
@@ -60,7 +60,7 @@ Cette configuration garantit que les métadonnées des petits fichiers ne sont p
 
 ## Étape 5 : Enregistrez le document
 
- Enfin, vous pouvez enregistrer le document à l'aide de la`Save` méthode de la classe Document. Spécifiez le chemin d'accès complet au fichier et le nom de fichier souhaité. Par exemple :
+Enfin, vous pouvez enregistrer le document à l'aide de la`Save` méthode de la classe Document. Spécifiez le chemin d'accès complet au fichier et le nom de fichier souhaité. Par exemple :
 
 ```csharp
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);

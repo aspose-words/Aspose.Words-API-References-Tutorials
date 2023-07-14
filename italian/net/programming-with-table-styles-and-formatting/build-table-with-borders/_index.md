@@ -1,7 +1,7 @@
 ---
 title: Costruisci tabella con bordi
 linktitle: Costruisci tabella con bordi
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo alla creazione di una tabella con bordi utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ Congratulazioni! Ora hai creato una tabella con bordi personalizzati utilizzando
 ### Esempio di codice sorgente per Build Table With Borders utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

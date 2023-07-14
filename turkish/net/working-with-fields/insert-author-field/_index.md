@@ -1,7 +1,7 @@
 ---
 title: Yazar Alanı Ekle
 linktitle: Yazar Alanı Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinize YAZAR alanı eklemeyi öğrenin. Belgelerinizi kişiselleştirmek için yazarın adını belirtin.
 type: docs
 weight: 10

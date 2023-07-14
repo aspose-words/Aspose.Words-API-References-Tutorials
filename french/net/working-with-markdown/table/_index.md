@@ -1,7 +1,7 @@
 ---
 title: Tableau
 linktitle: Tableau
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer un tableau avec le guide pas à pas Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -55,7 +55,7 @@ builder.InsertCell();
 builder.Writeln("d");
 ```
 
-Félicitation ! Vous avez maintenant appris à créer un tableau avec Aspose.Words pour .NET.
+Félicitation ! Vous avez maintenant appris à créer une table avec Aspose.Words pour .NET.
 
 ### FAQ
 

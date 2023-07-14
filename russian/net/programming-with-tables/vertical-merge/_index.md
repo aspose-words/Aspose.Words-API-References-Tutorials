@@ -1,7 +1,7 @@
 ---
 title: Вертикальное слияние
 linktitle: Вертикальное слияние
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вертикально объединить ячейки в таблице в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /ru/net/programming-with-tables/vertical-merge/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Загрузка документа
-Чтобы начать работу с документом, выполните следующие действия:
+Чтобы запустить Word Processing с документом, выполните следующие действия:
 
 ```csharp
 // Путь к каталогу ваших документов
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 
 ### Пример исходного кода для вертикального слияния с использованием Aspose.Words для .NET 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

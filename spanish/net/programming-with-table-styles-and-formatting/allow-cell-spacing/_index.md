@@ -1,7 +1,7 @@
 ---
 title: Permitir espacio entre celdas
 linktitle: Permitir espacio entre celdas
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para permitir el espacio entre celdas usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
 ## Paso 4: habilite el espacio entre celdas
- Ahora, podemos habilitar el espacio entre celdas configurando el`AllowCellSpacing`propiedad de la tabla a`true`. Esta propiedad determina si la tabla puede tener espacio entre celdas.
+ Ahora, podemos habilitar el espacio entre celdas configurando el`AllowCellSpacing` propiedad de la tabla a`true`. Esta propiedad determina si la tabla puede tener espacio entre celdas.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 ### Ejemplo de código fuente para Permitir espacio entre celdas usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

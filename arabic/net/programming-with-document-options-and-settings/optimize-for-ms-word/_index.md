@@ -1,7 +1,7 @@
 ---
 title: تحسين لبرنامج MS Word
 linktitle: تحسين لبرنامج MS Word
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لتحسين مستند لبرنامج MS Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

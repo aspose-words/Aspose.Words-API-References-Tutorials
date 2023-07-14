@@ -1,7 +1,7 @@
 ---
 title: Activer Désactiver la substitution de police
 linktitle: Activer Désactiver la substitution de police
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment activer ou désactiver la substitution de polices dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Ensuite, nous chargerons le document Word que vous souhaitez rendre et créerons une instance du`FontSettings` classe pour gérer les paramètres de police. Nous allons définir le remplacement de police par défaut en spécifiant le nom de la police dans`DefaultFontName` et désactiver le remplacement des informations de police avec`Enabled` mis à`false`.
 
 ```csharp
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Rendering.docx");
 
 // Configurer les paramètres de police
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -78,7 +78,7 @@ R : Oui, avec Aspose.Words, vous pouvez désactiver la substitution de polices 
 
 #### Q : Que se passe-t-il lorsque les polices requises sont manquantes lors de la substitution dans un document Word ?
 
-R : Lorsque les polices requises sont manquantes lors de la substitution dans un document Word, Aspose.Words peut détecter ce problème et vous proposer des options pour le résoudre. Vous pouvez choisir de remplacer les polices manquantes par d'autres polices ou d'inclure les polices manquantes dans le document, garantissant un affichage correct.
+R : Lorsque les polices requises sont manquantes lors de la substitution dans un document Word, Aspose.Words peut détecter ce problème et vous proposer des options pour le résoudre. Vous pouvez choisir de remplacer les polices manquantes par d'autres polices ou d'inclure les polices manquantes dans le document, garantissant un affichage correct.
 
 #### Q : Comment puis-je gérer les polices manquantes lors de la substitution dans un document Word avec Aspose.Words ?
 

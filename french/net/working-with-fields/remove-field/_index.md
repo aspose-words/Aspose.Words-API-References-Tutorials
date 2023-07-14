@@ -1,7 +1,7 @@
 ---
 title: Supprimer le champ
 linktitle: Supprimer le champ
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce guide, vous apprendrez à supprimer un champ spécifique dans un document à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -25,7 +25,7 @@ Nous commençons par charger le document existant à partir du fichier spécifi�
 Document doc = new Document(dataDir + "Various fields.docx");
 ```
 
-## Étape 3 : Supprimer le champ
+## Étape 3 : suppression du champ
 
  Nous sélectionnons le premier champ de la plage de documents et utilisons le`Remove()` méthode pour le supprimer.
 

@@ -1,7 +1,7 @@
 ---
 title: 通过不嵌入核心字体来减小 PDF 文件大小
 linktitle: 通过不嵌入核心字体来减小 PDF 文件大小
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解在使用 Aspose.Words for .NET 将 Word 文档转换为 PDF 时如何通过不嵌入核心字体来减小 PDF 文件大小。
 type: docs
 weight: 10

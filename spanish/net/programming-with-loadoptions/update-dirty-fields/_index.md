@@ -1,14 +1,14 @@
 ---
 title: Actualizar campos sucios
 linktitle: Actualizar campos sucios
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a cargar un documento de Word actualizando los campos sin validar con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/update-dirty-fields/
 ---
 
-Cuando se trabaja con documentos de Word en una aplicación de C#, puede ser necesario actualizar los campos sin validar para mostrar los valores más recientes. Con la biblioteca Aspose.Words para .NET, puede actualizar fácilmente los campos sucios en la carga de documentos mediante LoadOptions. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento mediante la actualización de campos sucios mediante LoadOptions.
+Cuando se procesan textos con documentos de Word en una aplicación de C#, puede ser necesario actualizar los campos sin validar para mostrar los valores más recientes. Con la biblioteca Aspose.Words para .NET, puede actualizar fácilmente los campos sucios en la carga de documentos mediante LoadOptions. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento mediante la actualización de campos sucios mediante LoadOptions.
 
 ## Comprender la biblioteca Aspose.Words
 
@@ -22,7 +22,7 @@ El primer paso es configurar las opciones de carga de nuestro documento. Utilice
 LoadOptions loadOptions = new LoadOptions { UpdateDirtyFields = true };
 ```
 
-Creamos un nuevo objeto LoadOptions y establecemos la propiedad UpdateDirtyFields en verdadero para actualizar los campos sucios al cargar el documento.
+Creamos un nuevo objeto LoadOptions y establecemos la propiedad UpdateDirtyFields en true para actualizar los campos sucios al cargar el documento.
 
 ## Cargando documento actualizando campos sucios
 

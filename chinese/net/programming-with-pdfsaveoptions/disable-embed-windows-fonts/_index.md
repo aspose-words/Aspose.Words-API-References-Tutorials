@@ -1,7 +1,7 @@
 ---
 title: 通过禁用嵌入字体来减小 PDF 大小
 linktitle: 通过禁用嵌入字体来减小 PDF 大小
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解在使用 Aspose.Words for .NET 将文档转换为 PDF 时如何通过禁用 Windows 字体嵌入来减小 PDF 大小。
 type: docs
 weight: 10

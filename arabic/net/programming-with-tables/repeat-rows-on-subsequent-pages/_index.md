@@ -1,7 +1,7 @@
 ---
 title: كرر الصفوف في الصفحات اللاحقة
 linktitle: كرر الصفوف في الصفحات اللاحقة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تكرار صفوف الجدول في الصفحات اللاحقة في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /ar/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
 
 ## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+لبدء معالجة الكلمات باستخدام منشئ المستندات والمستندات ، اتبع الخطوات التالية:
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ### نموذج لشفرة مصدر لصفوف التكرار في الصفحات اللاحقة باستخدام Aspose.Words for .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

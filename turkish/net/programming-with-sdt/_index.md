@@ -1,7 +1,7 @@
 ---
-title: SDT ile Programlama
-linktitle: SDT ile Programlama
-second_title: Aspose.Words for .NET API Referansı
+title: SDT ile Kelime İşleme
+linktitle: SDT ile Kelime İşleme
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te Yapılandırılmış İçerik Kontrolleri (SDT) ile programlamayı öğrenin. Word belgelerinizdeki yapılandırılmış içerik denetimlerini işlemek ve özelleştirmek için C# dilinde adım adım öğreticileri ve örnek kodu izleyin.
 type: docs
 weight: 1400

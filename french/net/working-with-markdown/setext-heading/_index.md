@@ -1,7 +1,7 @@
 ---
 title: En-tête de texte
 linktitle: En-tête de texte
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser les en-têtes Setext pour formater vos documents avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Ottieni tipi di parole di revisione
 linktitle: Ottieni tipi di parole di revisione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Ottieni i tipi di revisione delle parole in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10

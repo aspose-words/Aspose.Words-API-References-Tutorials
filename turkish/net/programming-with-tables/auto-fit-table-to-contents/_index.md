@@ -1,7 +1,7 @@
 ---
 title: Tabloyu İçeriğe Otomatik Sığdır
 linktitle: Tabloyu İçeriğe Otomatik Sığdır
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki tabloyu içeriğine otomatik olarak sığdırmayı öğrenin.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Bu öğreticide, C# kullanarak bir Word belgesindeki bir tabloyu içeriğine oto
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Word belgesini yükleyin
-Tablo ile çalışmaya başlamak için tabloyu içeren Word belgesini yüklememiz gerekiyor. Bu adımları takip et:
+Tablo ile Kelime İşleme başlatmak için tabloyu içeren Word belgesini yüklememiz gerekir. Bu adımları takip et:
 
 ```csharp
 // Belge dizininizin yolu
@@ -53,7 +53,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 ### Aspose.Words for .NET kullanarak Tabloyu İçeriğe Otomatik Sığdır için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

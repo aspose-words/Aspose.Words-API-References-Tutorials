@@ -1,7 +1,7 @@
 ---
 title: Feld einfügen, Text einschließen, ohne Document Builder
 linktitle: Fügen Sie FieldIncludeText ohne Document Builder ein
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein FieldIncludeText-Feld in Ihre Word-Dokumente einfügen.
 type: docs
 weight: 10
@@ -85,7 +85,7 @@ Damit ist unser Leitfaden zur Verwendung der Funktion „Einen FieldIncludeText 
 
 #### F: Wie kann ich die Quelldatei für das Texteinschlussfeld in Aspose.Words für .NET angeben?
 
- A: Um die Quelldatei für das Texteinschlussfeld in Aspose.Words für .NET anzugeben, können Sie die verwenden`FieldIncludeText.SourceFullName` -Eigenschaft, um den vollständigen Pfad der Quelldatei festzulegen. Stellen Sie sicher, dass auf die Quelldatei zugegriffen werden kann und sie den Inhalt enthält, den Sie in das Texteinschlussfeld einfügen möchten.
+ A: Um die Quelldatei für das Texteinschlussfeld in Aspose.Words für .NET anzugeben, können Sie die verwenden`FieldIncludeText.SourceFullName`-Eigenschaft, um den vollständigen Pfad der Quelldatei festzulegen. Stellen Sie sicher, dass auf die Quelldatei zugegriffen werden kann und sie den Inhalt enthält, den Sie in das Texteinschlussfeld einfügen möchten.
 
 #### F: Kann ich mit Aspose.Words für .NET Text aus einem Makro in das Texteinschlussfeld einfügen?
 

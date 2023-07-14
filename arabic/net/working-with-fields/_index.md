@@ -1,8 +1,8 @@
 ---
-title: العمل مع الحقول
-linktitle: العمل مع الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: مورد شامل للعمل مع الحقول في مستندات Word باستخدام Aspose.Words for .NET. دروس وأمثلة وشروحات مفصلة.
+title: معالجة الكلمات مع الحقول
+linktitle: معالجة الكلمات مع الحقول
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
+description: مورد شامل لمعالجة الكلمات مع الحقول في مستندات Word باستخدام Aspose.Words for .NET. دروس وأمثلة وشروحات مفصلة.
 type: docs
 weight: 140
 url: /ar/net/working-with-fields/

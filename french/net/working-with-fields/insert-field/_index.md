@@ -1,7 +1,7 @@
 ---
 title: Insérer un champ
 linktitle: Insérer un champ
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer un champ dans vos documents Word avec Aspose.Words pour .NET. Personnalisez vos documents avec des champs dynamiques.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ Ceci conclut notre guide sur l'utilisation de la fonctionnalité "Insérer un ch
 
 #### Q : Qu'est-ce qu'un champ dans Word ?
 
-: Un champ dans Word est un élément qui vous permet d'insérer et de manipuler des données dynamiques dans un document. Il peut être utilisé pour afficher des informations variables telles que des dates, des numéros de page, des tableaux, des formules mathématiques, etc.
+R : Un champ dans Word est un élément qui vous permet d'insérer et de manipuler des données dynamiques dans un document. Il peut être utilisé pour afficher des informations variables telles que des dates, des numéros de page, des tableaux, des formules mathématiques, etc.
 
 #### Q : Comment insérer un champ dans un document Word ?
 
@@ -84,5 +84,5 @@ R : Word propose une grande variété de types de champs que vous pouvez utilise
 
 #### Q : Puis-je personnaliser l'apparence des champs dans Word ?
 
-R : Oui, vous pouvez personnaliser l'apparence des champs dans Word en utilisant les options de mise en forme disponibles. Par exemple, vous pouvez modifier la police, la taille, la couleur et le style du texte d'un champ. Vous pouvez également appliquer des effets de mise en forme tels que gras, italique et souligné.
+: Oui, vous pouvez personnaliser l'apparence des champs dans Word en utilisant les options de mise en forme disponibles. Par exemple, vous pouvez modifier la police, la taille, la couleur et le style du texte d'un champ. Vous pouvez également appliquer des effets de mise en forme tels que gras, italique et souligné.
   

@@ -1,7 +1,7 @@
 ---
 title: Imposta il titolo e la descrizione della tabella
 linktitle: Imposta il titolo e la descrizione della tabella
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per impostare il titolo e la descrizione di una tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 ### Esempio di codice sorgente per Imposta titolo e descrizione della tabella utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

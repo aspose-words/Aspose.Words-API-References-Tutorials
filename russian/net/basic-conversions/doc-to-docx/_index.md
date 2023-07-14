@@ -1,7 +1,7 @@
 ---
 title: Преобразовать документ в документ
 linktitle: Преобразовать документ в документ
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как конвертировать документы Word из формата .doc в формат Docx с помощью Aspose.Words для .NET. Пошаговое руководство с примером исходного кода.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Dokument mit Builder einfügen
 linktitle: Dokument mit Builder einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument am Ende eines anderen Dokuments einfügen.
 type: docs
 weight: 10
@@ -67,7 +67,7 @@ Damit ist die Implementierung des Einfügens eines Dokuments in ein anderes Doku
 ### Beispielquellcode für „Dokument einfügen mit Builder“ unter Verwendung von Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

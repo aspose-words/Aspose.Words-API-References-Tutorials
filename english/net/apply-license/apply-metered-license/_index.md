@@ -1,7 +1,7 @@
 ---
 title: Apply Metered License
 linktitle: Apply Metered License
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to apply a metered license using Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Before we begin, ensure that you have the following prerequisites:
 - Valid credentials for metered licensing. 
 
 ## Step 1: Import the Required Namespaces
-To start, import the necessary namespaces in your C# code. These namespaces contain the classes and methods needed for working with Aspose.Words.
+To start, import the necessary namespaces in your C# code. These namespaces contain the classes and methods needed for Words Processing with Aspose.Words.
 
 ```csharp
 using Aspose.Words;

@@ -1,7 +1,7 @@
 ---
 title: تعيين إعداد الصفحة وتنسيق القسم
 linktitle: تعيين إعداد الصفحة وتنسيق القسم
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لإعداد تخطيط المستند وتنسيق القسم باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

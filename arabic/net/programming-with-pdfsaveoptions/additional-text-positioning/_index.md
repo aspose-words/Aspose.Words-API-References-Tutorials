@@ -1,7 +1,7 @@
 ---
 title: إرفاق نصوص PDF مع مواضع نصية إضافية
 linktitle: إرفاق نصوص PDF مع مواضع نصية إضافية
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تعديل وضع نصوص PDF باستخدام مواضع نصية إضافية عند تحويل مستندات Word إلى PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Salva PDF in formato Word (Docx)
 linktitle: Salva PDF in formato Word (Docx)
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come convertire o salvare documenti PDF in formato Word fromat (Docx) utilizzando Aspose.Words per .NET. Tutorial passo passo con codice sorgente di esempio.
 type: docs
 weight: 10

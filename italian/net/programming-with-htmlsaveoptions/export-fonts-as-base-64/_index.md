@@ -1,7 +1,7 @@
 ---
 title: Esporta font come base 64
 linktitle: Esporta font come base 64
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per esportare i caratteri base 64 durante il salvataggio di un documento con Aspose.Words per .NET.
 type: docs
 weight: 10

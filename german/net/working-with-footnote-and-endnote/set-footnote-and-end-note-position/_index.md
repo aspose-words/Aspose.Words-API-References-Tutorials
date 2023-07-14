@@ -1,7 +1,7 @@
 ---
 title: Legen Sie die Fußnoten- und Endnotenposition fest
 linktitle: Legen Sie die Fußnoten- und Endnotenposition fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Position von Fußnoten und Endnoten in Word-Dokumenten festlegen.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 替换超链接
 linktitle: 替换超链接
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 替换 Word 文档中的超链接。替换超链接的分步说明。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Flytta till sidhuvuden Sidfötter
 linktitle: Flytta till sidhuvuden Sidfötter
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du använder Aspose.Words för .NET för att navigera och ändra sidhuvuden och sidfötter i Word-dokument med denna steg-för-steg-guide.
 type: docs
 weight: 10

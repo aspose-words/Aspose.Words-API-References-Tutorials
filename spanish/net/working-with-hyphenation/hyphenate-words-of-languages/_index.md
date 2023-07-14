@@ -1,7 +1,7 @@
 ---
 title: Separar Palabras De Idiomas
 linktitle: Separar Palabras De Idiomas
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a separar palabras en diferentes idiomas en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Tercih Edilen Kontrol Tipi
 linktitle: Tercih Edilen Kontrol Tipi
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir HTML belgesi yüklerken tercih edilen kontrol tipini belirlemek için adım adım kılavuz.
 type: docs
 weight: 10

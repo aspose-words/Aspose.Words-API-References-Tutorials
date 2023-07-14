@@ -1,7 +1,7 @@
 ---
 title: Mover nodo en documento con seguimiento
 linktitle: Mover nodo en documento con seguimiento
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Mueva nodos en un documento con seguimiento con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 ## Conclusión
 
-En este tutorial, aprendimos cómo mover un nodo en un documento de Word rastreado usando Aspose.Words para .NET. Al seguir los pasos de crear el documento, habilitar el seguimiento de revisiones, mover el nodo y detener el seguimiento de revisiones, pudimos realizar esta manipulación con éxito. Aspose.Words for .NET es una poderosa herramienta para trabajar con documentos de Word y ofrece funciones avanzadas para administrar las revisiones. Ahora puede usar este conocimiento para mover nodos en sus propios documentos de Word mientras realiza un seguimiento de las revisiones con Aspose.Words para .NET.
+En este tutorial, aprendimos cómo mover un nodo en un documento de Word rastreado usando Aspose.Words para .NET. Al seguir los pasos de crear el documento, habilitar el seguimiento de revisiones, mover el nodo y detener el seguimiento de revisiones, pudimos realizar esta manipulación con éxito. Aspose.Words for .NET es una poderosa herramienta para el procesamiento de textos con documentos de Word y ofrece funciones avanzadas para administrar las revisiones. Ahora puede usar este conocimiento para mover nodos en sus propios documentos de Word mientras realiza un seguimiento de las revisiones con Aspose.Words para .NET.
 
 ### Preguntas frecuentes
 

@@ -1,7 +1,7 @@
 ---
 title: Получить переменные
 linktitle: Получить переменные
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по извлечению переменных документа с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

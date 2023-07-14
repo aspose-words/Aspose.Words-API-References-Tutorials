@@ -1,14 +1,14 @@
 ---
 title: Üstbilgi Altbilgi İçeriğini Sil
 linktitle: Üstbilgi Altbilgi İçeriğini Sil
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinden üstbilgi ve altbilgi içeriğinin nasıl kaldırılacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-section/delete-header-footer-content/
 ---
 
-Bu öğreticide, size Aspose.Words library for .NET kullanarak üstbilgi ve altbilgi içeriğini Word belgesinden nasıl kaldıracağınızı göstereceğiz. Üst bilgilerden ve alt bilgilerden içerik kaldırmak, bu öğeleri belgenizden sıfırlamak veya kaldırmak istediğinizde yararlı olabilir. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
+Bu öğreticide, size Aspose.Words library for .NET kullanarak üstbilgi ve altbilgi içeriğini Word belgesinden nasıl kaldıracağınızı göstereceğiz. Üst bilgilerden ve alt bilgilerden içerik kaldırmak, bu öğeleri belgenizden sıfırlamak veya kaldırmak istediğinizde faydalı olabilir. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
 ## Önkoşullar
 Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Ardından, Word belgesini bir örneğine yükleyeceğiz.`Document` sınıf. 0 indeksini kullanarak belgenin ilk bölümüne erişeceğiz.
 
 ```csharp
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Document.docx");
 
 // Bölüme erişin
@@ -46,7 +46,7 @@ section.ClearHeadersFooters();
 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -74,7 +74,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Word belgesini bir örneğine yüklemek için`Document` sınıf denir`doc` ve 0 indeksini kullanarak belgenin ilk bölümüne erişmek için aşağıdaki kodu kullanabilirsiniz:
 
 ```csharp
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Document.docx");
 
 // Bölüme erişin

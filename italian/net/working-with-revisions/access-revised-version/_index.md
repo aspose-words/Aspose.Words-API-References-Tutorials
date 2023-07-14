@@ -1,7 +1,7 @@
 ---
 title: Accedi alla versione rivista
 linktitle: Accedi alla versione rivista
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Accedi a una versione rivista di un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### D: Come accedo alla versione rivista di un documento in Aspose.Words per .NET?
 
- R: Usa il`RevisionsView` proprietà del`Document` opporsi all'accesso alla versione riveduta del documento. È possibile impostare il valore di`RevisionsView` proprietà a`RevisionsView.Final` per mostrare la versione finale senza le revisioni.
+ R: Usa il`RevisionsView`proprietà del`Document` opporsi all'accesso alla versione riveduta del documento. È possibile impostare il valore di`RevisionsView` proprietà a`RevisionsView.Final` per mostrare la versione finale senza le revisioni.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### D: Come faccio a sfogliare le revisioni dei documenti in Aspose.Words per .NET?
 
- R: Usa a`foreach` loop per scorrere le revisioni presenti nel documento. Puoi usare il`Revisions` proprietà del`Document` object per ottenere una raccolta di tutte le revisioni del documento.
+ R: Usa a`foreach` loop per scorrere le revisioni presenti nel documento. Puoi usare il`Revisions`proprietà del`Document` object per ottenere una raccolta di tutte le revisioni del documento.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -106,7 +106,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### D: Come verificare se un paragrafo è una voce di elenco in Aspose.Words per .NET?
 
- R: Usa il`IsListItem` proprietà del`Paragraph` oggetto per controllare se un paragrafo è un elemento di elenco. IL`IsListItem` resi di proprietà`true` se il paragrafo è un elemento di elenco, altrimenti ritorna`false`.
+ R: Usa il`IsListItem`proprietà del`Paragraph` oggetto per controllare se un paragrafo è un elemento di elenco. IL`IsListItem` resi di proprietà`true` se il paragrafo è un elemento di elenco, altrimenti ritorna`false`.
 
 ```csharp
 if (paragraph.IsListItem)

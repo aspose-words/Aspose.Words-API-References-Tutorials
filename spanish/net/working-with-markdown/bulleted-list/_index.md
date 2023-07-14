@@ -1,7 +1,7 @@
 ---
 title: Lista con viñetas
 linktitle: Lista con viñetas
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a crear una lista con viñetas con Aspose.Words para la guía paso a paso de .NET.
 type: docs
 weight: 10

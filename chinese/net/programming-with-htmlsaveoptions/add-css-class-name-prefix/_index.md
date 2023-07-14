@@ -1,7 +1,7 @@
 ---
 title: 添加 CSS 类名前缀
 linktitle: 添加 CSS 类名前缀
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 将文档转换为 HTML 时添加 CSS 类名前缀的分步指南。
 type: docs
 weight: 10

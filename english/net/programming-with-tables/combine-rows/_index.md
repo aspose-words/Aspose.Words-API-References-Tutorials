@@ -1,7 +1,7 @@
 ---
 title: Combine Rows
 linktitle: Combine Rows
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to combine table rows in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In this tutorial, we will learn how to use Aspose.Words for .NET to combine rows
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Loading the document and accessing the tables
-To start working with tables, we need to load the document that contains them and access them. Follow these steps:
+To start Words Processing with tables, we need to load the document that contains them and access them. Follow these steps:
 
 ```csharp
 // Path to your documents directory

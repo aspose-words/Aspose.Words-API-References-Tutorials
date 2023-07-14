@@ -1,7 +1,7 @@
 ---
 title: Legen Sie die Schriftart-Fallback-Einstellungen fest
 linktitle: Legen Sie die Schriftart-Fallback-Einstellungen fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Schriftartersetzungseinstellungen in Aspose.Words für .NET festlegen und die Schriftartenersetzung in Ihren Word-Dokumenten anpassen.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ### Beispielquellcode zum Festlegen von Font-Fallback-Einstellungen mit Aspose.Words für .NET 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

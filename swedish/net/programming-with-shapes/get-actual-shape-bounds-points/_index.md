@@ -1,7 +1,7 @@
 ---
 title: Få faktiska Shape Bounds-poäng
 linktitle: Få faktiska Shape Bounds-poäng
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du hämtar de faktiska gränserna för en form i punkter (måttenhet) i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Denna handledning förklarar hur man hämtar de faktiska gränserna för en form
 För att följa denna handledning måste du ha följande:
 
 - Aspose.Words för .NET-biblioteket installerat.
-- Grundläggande kunskaper i C# och att arbeta med Word-dokument.
+- Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Skapa ett nytt dokument och DocumentBuilder
  Skapa en ny instans av`Document` klass och a`DocumentBuilder` objekt för att arbeta med dokumentet.
@@ -33,7 +33,7 @@ shape.AspectRatioLocked = false;
 ```
 
 ## Steg 3: Hämta faktiska Shape Bounds Points
- Få tillgång till formens`ShapeRenderer` använda`GetShapeRenderer`metod. Hämta sedan formens faktiska gränser i punkter med hjälp av`BoundsInPoints` fast egendom.
+ Få tillgång till formens`ShapeRenderer` använda`GetShapeRenderer` metod. Hämta sedan formens faktiska gränser i punkter med hjälp av`BoundsInPoints` fast egendom.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");

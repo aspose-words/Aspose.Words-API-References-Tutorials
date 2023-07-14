@@ -1,13 +1,13 @@
 ---
-title: 使用脚注和尾注
-linktitle: 使用脚注和尾注
-second_title: Aspose.Words for .NET API 参考
+title: 使用脚注和尾注进行文字处理
+linktitle: 使用脚注和尾注进行文字处理
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中使用脚注和尾注。详细的教程和实际例子。
 type: docs
 weight: 660
 url: /zh/net/working-with-footnote-and-endnote/
 ---
-使用脚注和尾注是一个综合资源，可引导您使用适用于 .NET 的 Aspose.Words 库在 Word 文档中处理脚注和尾注。这些教程提供了详细的分步说明、完整的源代码以及添加、修改和删除脚注和尾注的实际示例。您还将学习如何自定义笔记的格式和样式、在笔记之间导航以及将它们转换为不同的格式，例如 PDF 或 HTML。对于希望使用 Aspose.Words for .NET 管理 Word 文档中的引用和注释的开发人员来说，此资源至关重要。
+使用脚注和尾注进行文字处理是一个综合资源，可引导您使用适用于 .NET 的 Aspose.Words 库在 Word 文档中完成使用脚注和尾注进行文字处理。这些教程提供了详细的分步说明、完整的源代码以及添加、修改和删除脚注和尾注的实际示例。您还将学习如何自定义笔记的格式和样式、在笔记之间导航以及将它们转换为不同的格式，例如 PDF 或 HTML。对于希望使用 Aspose.Words for .NET 管理 Word 文档中的引用和注释的开发人员来说，此资源至关重要。
 
  ## 教程
 | 标题 | 描述 |

@@ -1,7 +1,7 @@
 ---
 title: Seitenlayout aktualisieren
 linktitle: Seitenlayout aktualisieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie das Seitenlayout beim Zusammenfügen und Anhängen von Word-Dokumenten mit Aspose.Words für .NET aktualisieren.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 ## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir`Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Schritt 5: Aktualisieren Sie das Seitenlayout erneut
 
- Nachdem Sie das Quelldokument angehängt haben, müssen Sie das aufrufen`UpdatePageLayout`Führen Sie die Methode erneut für das Zieldokument aus, um sicherzustellen, dass alle nach dem Anhängevorgang vorgenommenen Änderungen in der gerenderten Ausgabe widergespiegelt werden.
+ Nachdem Sie das Quelldokument angehängt haben, müssen Sie das aufrufen`UpdatePageLayout` Führen Sie die Methode erneut für das Zieldokument aus, um sicherzustellen, dass alle nach dem Anhängevorgang vorgenommenen Änderungen in der gerenderten Ausgabe widergespiegelt werden.
 
 ```csharp
 dstDoc.UpdatePageLayout();
@@ -71,12 +71,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 Hier ist der vollständige Quellcode für die Funktion „Seitenlayout aktualisieren“ in C# mit Aspose.Words für .NET:
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Wenn das Zieldokument als PDF, Bild usw. gerendert wird.
+	//Wenn das Zieldokument als PDF, Bild usw. gerendert wird.
 	// oder UpdatePageLayout wird vor dem Quelldokument aufgerufen. Ist beigefügt,
 	// dann werden alle danach vorgenommenen Änderungen nicht in der gerenderten Ausgabe widergespiegelt
 	dstDoc.UpdatePageLayout();

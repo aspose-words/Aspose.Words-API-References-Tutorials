@@ -1,7 +1,7 @@
 ---
 title: Läs Active XControl-egenskaper från Word-fil
 linktitle: Läs Active XControl-egenskaper från Word-fil
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Läs egenskaperna för ActiveX-kontroller i en Word-fil med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -86,7 +86,7 @@ Här är den fullständiga källkoden för att läsa egenskaperna för ActiveX-k
 
 Den här guiden visade hur du läser egenskaperna för ActiveX-kontroller i en Word-fil med Aspose.Words för .NET. Genom att följa de beskrivna stegen kan du initiera dokumentet, hämta ActiveX-kontroller och läsa deras egenskaper. Använd exempelkoden som tillhandahålls som utgångspunkt och anpassa den efter dina specifika behov.
 
-Genom att läsa egenskaperna för ActiveX-kontroller kan du extrahera viktig information från dina Word-filer som innehåller dessa kontroller. Aspose.Words för .NET erbjuder kraftfulla funktioner för att arbeta med ActiveX-kontroller och automatisera din dokumentbehandling.
+Genom att läsa egenskaperna för ActiveX-kontroller kan du extrahera viktig information från dina Word-filer som innehåller dessa kontroller. Aspose.Words för .NET erbjuder kraftfulla funktioner för ordbehandling med ActiveX-kontroller och automatisering av din dokumentbehandling.
 
 ### Vanliga frågor
 

@@ -1,7 +1,7 @@
 ---
 title: Экспорт пользовательских свойств в PDF-документ
 linktitle: Экспорт пользовательских свойств в PDF-документ
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как экспортировать пользовательские свойства при преобразовании документов в PDF с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

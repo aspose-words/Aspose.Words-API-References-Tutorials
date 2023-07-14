@@ -1,7 +1,7 @@
 ---
-title: البرمجة مع الرسوم البيانية
-linktitle: البرمجة مع الرسوم البيانية
-second_title: Aspose.Words لمراجع .NET API
+title: باستخدام Word Chart API
+linktitle: باستخدام الرسوم البيانية
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إنشاء الرسومات وتخصيصها ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET. توفر البرامج التعليمية تفسيرات خطوة بخطوة وكود مصدر C # لمساعدتك في إضافة الرسوم البيانية.
 type: docs
 weight: 1540

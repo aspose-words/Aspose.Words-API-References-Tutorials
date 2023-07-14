@@ -1,14 +1,14 @@
 ---
 title: Warning Callback
 linktitle: Warning Callback
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to handle warnings when loading a Word document using callback functionality with Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /net/programming-with-loadoptions/warning-callback/
 ---
 
-When working with Word documents in a C# application, it can be useful to be aware of warnings issued when loading the document. With the Aspose.Words library for .NET, you can easily specify a callback function to handle warnings while loading the document using the LoadOptions load options. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a document using a callback function for warnings using the LoadOptions load options.
+When Words Processing with Word documents in a C# application, it can be useful to be aware of warnings issued when loading the document. With the Aspose.Words library for .NET, you can easily specify a callback function to handle warnings while loading the document using the LoadOptions load options. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a document using a callback function for warnings using the LoadOptions load options.
 
 ## Understanding the Aspose.Words library
 

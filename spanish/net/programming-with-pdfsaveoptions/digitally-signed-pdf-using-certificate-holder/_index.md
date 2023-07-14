@@ -1,7 +1,7 @@
 ---
 title: Agregar firma digital a PDF utilizando el titular del certificado
 linktitle: Agregar firma digital a PDF utilizando el titular del certificado
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a agregar una firma digital a un PDF mediante el titular del certificado con Aspose.Words para .NET.
 type: docs
 weight: 10

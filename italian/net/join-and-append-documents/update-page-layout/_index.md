@@ -1,7 +1,7 @@
 ---
 title: Aggiorna layout di pagina
 linktitle: Aggiorna layout di pagina
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come aggiornare il layout di pagina quando unisci e aggiungi documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 
 ## Passaggio 1: inizializzare le directory dei documenti
 
- Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i documenti.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir`variabile al percorso in cui si trovano i documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Passaggio 5: aggiorna nuovamente il layout della pagina
 
- Dopo aver aggiunto il documento di origine, è necessario chiamare il file`UpdatePageLayout`metodo sul documento di destinazione per garantire che eventuali modifiche apportate dopo l'operazione di accodamento si riflettano nell'output sottoposto a rendering.
+ Dopo aver aggiunto il documento di origine, è necessario chiamare il file`UpdatePageLayout` metodo sul documento di destinazione per garantire che eventuali modifiche apportate dopo l'operazione di accodamento si riflettano nell'output sottoposto a rendering.
 
 ```csharp
 dstDoc.UpdatePageLayout();
@@ -71,12 +71,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 Ecco il codice sorgente completo per la funzionalità "Aggiorna layout di pagina" in C# utilizzando Aspose.Words per .NET:
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Se il documento di destinazione è reso in PDF, immagine ecc.
+	//Se il documento di destinazione è reso in PDF, immagine ecc.
 	// o UpdatePageLayout viene chiamato prima del documento di origine. è aggiunto,
 	// quindi eventuali modifiche apportate dopo non si rifletteranno nell'output di rendering
 	dstDoc.UpdatePageLayout();

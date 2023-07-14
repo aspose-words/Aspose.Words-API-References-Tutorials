@@ -1,7 +1,7 @@
 ---
 title: رمز مسافة بادئة
 linktitle: رمز مسافة بادئة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استخدام التعليمات البرمجية ذات المسافات البادئة مع دليل Aspose.Words for .NET خطوة بخطوة.
 type: docs
 weight: 10

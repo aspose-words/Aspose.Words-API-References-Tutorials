@@ -1,13 +1,12 @@
 ---
-title: Signature de la ligne de signature existante
-linktitle: Signature de la ligne de signature existante
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Signature de la ligne de signature existante dans un document Word
+linktitle: Signature de la ligne de signature existante dans un document Word
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à signer une ligne de signature existante dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
-
 Dans ce didacticiel, nous vous expliquerons les étapes à suivre pour utiliser la fonctionnalité de signature d'une ligne de signature existante avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de signer numériquement une ligne de signature déjà présente dans un document Word. Suivez les étapes ci-dessous :
 
 ## Étape 1 : Chargement du document et accès à la ligne de signature
@@ -86,3 +85,37 @@ Voici le code source complet pour signer une ligne de signature existante avec A
 
 En suivant ces étapes, vous pouvez facilement signer une ligne de signature existante dans un document Word avec Aspose.Words pour .NET.
 
+## Conclusion
+
+Dans ce didacticiel, nous avons appris à signer une ligne de signature existante dans un document Word à l'aide de Aspose.Words pour .NET. En suivant les étapes fournies, vous pouvez facilement charger le document, accéder à la ligne de signature existante, définir les options de signature et signer le document. La possibilité de signer une ligne de signature existante offre un moyen pratique d'ajouter des signatures numériques à des zones prédéfinies de vos documents Word, garantissant ainsi l'intégrité et l'authentification des documents. Aspose.Words pour .NET offre une API puissante pour le traitement de mots avec des signatures numériques, vous permettant de personnaliser le processus de signature et d'améliorer la sécurité de vos documents Word.
+
+### FAQ
+
+#### Q : Qu'est-ce qu'une ligne de signature existante dans un document Word ?
+
+R : Une ligne de signature existante dans un document Word est une zone prédéfinie où une signature peut être placée. Il est généralement représenté par une forme ou un objet dans le document et sert d'espace désigné pour que le signataire ajoute sa signature numérique.
+
+#### Q : Comment puis-je signer une ligne de signature existante dans un document Word à l'aide d'Aspose.Words pour .NET ?
+
+R : Pour signer une ligne de signature existante dans un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez suivre ces étapes :
+1.  Chargez le document à l'aide de la`Document` classe et spécifiez le chemin d'accès au fichier de document.
+2.  Accédez à la ligne de signature existante à l'aide de la méthode ou de la propriété appropriée. Par exemple, vous pouvez utiliser`GetChild` méthode pour récupérer la forme de la ligne de signature.
+3.  Créer une instance de`SignOptions`classe et définissez la`SignatureLineId` propriété à l'ID de la ligne de signature existante.
+4.  Met le`SignatureLineImage`propriété de la`SignOptions` classe à l'image représentant la signature numérique.
+5.  Chargez le certificat de signature à l'aide de la`CertificateHolder` classe et fournissez le certificat et le mot de passe nécessaires.
+6.  Utilisez le`DigitalSignatureUtil.Sign` méthode pour signer le document, en fournissant les paramètres nécessaires, y compris le`SignOptions` objet.
+
+#### Q : Comment accéder à la ligne de signature existante dans un document Word à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour accéder à la ligne de signature existante dans un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser la méthode ou la propriété appropriée pour récupérer la forme de la ligne de signature à partir de la structure du document. Par exemple, vous pouvez utiliser le`GetChild` méthode avec les paramètres appropriés pour obtenir la forme de ligne de signature souhaitée.
+
+#### Q : Puis-je personnaliser l'apparence de la signature numérique dans une ligne de signature existante ?
+
+ : Oui, vous pouvez personnaliser l'apparence de la signature numérique dans une ligne de signature existante en fournissant un fichier image représentant la signature. L'image peut être un logo, une signature manuscrite ou toute autre représentation graphique de la signature. Vous pouvez régler le`SignatureLineImage`propriété de la`SignOptions` classe aux octets du fichier image.
+
+#### Q : Puis-je signer plusieurs lignes de signature existantes dans un document Word ?
+ R : Oui, vous pouvez signer plusieurs lignes de signature existantes dans un document Word. Vous devez suivre les étapes pour chaque ligne de signature individuellement, en définissant le`SignatureLineId` et`SignatureLineImage` valeurs dans le`SignOptions` objet pour chaque ligne de signature.
+
+#### Q : Quel format doit avoir le fichier image pour la signature numérique dans une ligne de signature existante ?
+
+ R : Le fichier image de la signature numérique dans une ligne de signature existante peut être dans différents formats, tels que PNG, JPEG, BMP ou GIF. Vous pouvez spécifier le chemin du fichier ou lire les octets du fichier image et l'affecter au`SignatureLineImage`propriété de la`SignOptions` classe.

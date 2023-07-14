@@ -1,7 +1,7 @@
 ---
 title: حذف كافة الأقسام
 linktitle: حذف كافة الأقسام
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية إزالة جميع الأقسام من مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /ar/net/working-with-section/delete-all-sections/
 - تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
 
 ## الخطوة 1: قم بإنشاء مستند ومنشئ
- أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` منشئ لبناء المستند.
+ أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لبناء المستند.
 
 ```csharp
 Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Minska PDF-dokumentstorleken med nedsampling av bilder
 linktitle: Minska PDF-dokumentstorleken med nedsampling av bilder
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du minskar pdf-dokumentstorleken med nedsampling av bilder när du konverterar till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10

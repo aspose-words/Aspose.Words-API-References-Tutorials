@@ -1,7 +1,7 @@
 ---
 title: Erkennen Sie digitale Signaturen in Word-Dokumenten
 linktitle: Erkennen Sie digitale Signaturen in Word-Dokumenten
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Erkennen digitaler Signaturen in Word-Dokumenten mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signe
 
 ## Schritt 3: Suchen Sie nach digitalen Signaturen
 
- Wir prüfen, ob das Dokument digitale Signaturen enthält`HasDigitalSignature` Eigentum der`FileFormatInfo` Objekt. Wenn digitale Signaturen erkannt werden, zeigen wir eine Meldung an, dass die Signaturen verloren gehen, wenn das Dokument mit Aspose.Words geöffnet/gespeichert wird.
+ Wir prüfen, ob das Dokument digitale Signaturen enthält`HasDigitalSignature`Eigentum der`FileFormatInfo` Objekt. Wenn digitale Signaturen erkannt werden, zeigen wir eine Meldung an, dass die Signaturen verloren gehen, wenn das Dokument mit Aspose.Words geöffnet/gespeichert wird.
 
 ```csharp
 if (info.HasDigitalSignature)
@@ -68,7 +68,7 @@ Dieses Tutorial bietet Ihnen eine Schritt-für-Schritt-Anleitung zum Erkennen di
 
 #### Wie erkennt man mit Aspose.Words für .NET das Vorhandensein einer digitalen Signatur in einem Word-Dokument?
 
- Um mit Aspose.Words für .NET das Vorhandensein einer digitalen Signatur in einem Word-Dokument zu erkennen, können Sie die im Tutorial bereitgestellten Schritte befolgen. Verwendung der`DetectFileFormat` Methode der`FileFormatUtil` Mit der Klasse können Sie Dateiformatinformationen erkennen. Dann können Sie das überprüfen`HasDigitalSignature` Eigentum der`FileFormatInfo`Objekt, um festzustellen, ob das Dokument eine digitale Signatur enthält. Wenn eine digitale Signatur erkannt wird, können Sie eine Meldung anzeigen, dass Signaturen verloren gehen, wenn das Dokument mit Aspose.Words geöffnet/gespeichert wird.
+ Um mit Aspose.Words für .NET das Vorhandensein einer digitalen Signatur in einem Word-Dokument zu erkennen, können Sie die im Tutorial bereitgestellten Schritte befolgen. Verwendung der`DetectFileFormat` Methode der`FileFormatUtil` Mit der Klasse können Sie Dateiformatinformationen erkennen. Dann können Sie das überprüfen`HasDigitalSignature`Eigentum der`FileFormatInfo`Objekt, um festzustellen, ob das Dokument eine digitale Signatur enthält. Wenn eine digitale Signatur erkannt wird, können Sie eine Meldung anzeigen, dass Signaturen verloren gehen, wenn das Dokument mit Aspose.Words geöffnet/gespeichert wird.
 
 #### Wie kann das Verzeichnis mit den Dokumenten angegeben werden, in denen nach der digitalen Signatur gesucht werden soll?
 

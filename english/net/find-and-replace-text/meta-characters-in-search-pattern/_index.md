@@ -1,13 +1,12 @@
 ---
 title: Meta Characters In Search Pattern
 linktitle: Meta Characters In Search Pattern
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use metacharacters in the search pattern with Aspose.Words for .NET to manipulate Word documents.
 type: docs
 weight: 10
 url: /net/find-and-replace-text/meta-characters-in-search-pattern/
 ---
-
 In this article, we will explore the above C# source code to understand how to use Meta Characters In Search Pattern function in Aspose.Words for .NET library. This feature allows you to use special metacharacters to perform advanced searches and replaces in Word documents.
 
 ## Prerequisites
@@ -107,3 +106,62 @@ Here is the full sample source code to demonstrate the use of metacharacters in 
 
 In this article, we explored the C# source code to understand how to use metacharacters in the search pattern of Aspose.Words for .NET. We followed a step-by-step guide to create a document, insert text, perform search and replace using special metacharacters, insert page breaks, and save the edited document.
 
+### FAQ's
+
+#### Q: What is Meta Characters In Search Pattern feature in Aspose.Words for .NET?
+
+A: The Meta Characters In Search Pattern feature in Aspose.Words for .NET allows you to use special meta characters to perform advanced searches and replacements in Word documents. These metacharacters allow you to represent paragraph breaks, section breaks, page breaks, and other special elements in your search pattern.
+
+#### Q: How to create a new document in Aspose.Words for .NET?
+
+A: Before using metacharacters in the search template, you must create a new document using Aspose.Words for .NET. This can be done by instantiating a `Document` object. Here is a sample code to create a new document:
+
+```csharp
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document();
+```
+
+#### Q: How to insert text into a document using Aspose.Words for .NET?
+
+A: Once you have a document, you can insert text using a `DocumentBuilder` object. In our example, we use the `Writeln` and `Write` methods to insert two lines of text:
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("This is line 1");
+builder.Writeln("This is line 2");
+```
+
+#### Q: How to search and replace text with metacharacters in a document using Aspose.Words for .NET?
+
+A: To search and replace text with metacharacters, you can use the `Range.Replace` method. In our example, we replace the phrase "This is line 1&pThis is line 2" with "This line is replaced" using the `&p` metacharacter to represent a paragraph break:
+
+```csharp
+doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
+```
+
+#### Q: How to insert a page break in a document using Aspose.Words for .NET?
+
+A: To illustrate the use of another metacharacter, we will insert a page break into the document using the `InsertBreak` method with the `BreakType.PageBreak` parameter. We first move the cursor from the `DocumentBuilder` to the end of the document, then we insert the page break and a new line of text:
+
+```csharp
+builder. MoveToDocumentEnd();
+builder.Write("This is line 1");
+builder. InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is line 2");
+```
+
+#### Q: How to search and replace with another metacharacter in a document using Aspose.Words for .NET?
+
+A: We will now perform another search and replace using the `&m` metacharacter to represent a page break. We replace the phrase "This is line 1&mThis is line 2" with "The page break is replaced with new text." :
+
+```csharp
+doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
+```
+
+#### Q: How to save edited document in Aspose.Words for .NET?
+
+A: Once you have made changes to the document, you can save it to a specified directory using the `Save` method:
+
+```csharp
+doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
+```

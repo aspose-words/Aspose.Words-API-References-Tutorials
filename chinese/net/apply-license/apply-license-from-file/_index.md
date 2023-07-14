@@ -1,7 +1,7 @@
 ---
 title: 从文件应用许可证
 linktitle: 从文件应用许可证
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 从文件应用许可证。
 type: docs
 weight: 10
@@ -17,7 +17,7 @@ url: /zh/net/apply-license/apply-license-from-file/
 - Aspose.Words 的有效许可证文件。 
 
 ## 第 1 步：导入 Aspose.Words 命名空间
-首先，您需要在 C# 代码中导入 Aspose.Words 命名空间。此命名空间提供了处理 Word 文档所需的所有类和方法。
+首先，您需要在 C# 代码中导入 Aspose.Words 命名空间。此命名空间提供了 Word 文档的文字处理所需的所有类和方法。
 
 ```csharp
 using Aspose.Words;

@@ -1,7 +1,7 @@
 ---
 title: احصل على نقاط حدود الشكل الفعلي
 linktitle: احصل على نقاط حدود الشكل الفعلي
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استرداد الحدود الفعلية للشكل بالنقاط (وحدة القياس) في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /ar/net/programming-with-shapes/get-actual-shape-bounds-points/
 لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
 
 - تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- معرفة أساسية بـ C # ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
  قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
@@ -33,7 +33,7 @@ shape.AspectRatioLocked = false;
 ```
 
 ## الخطوة 3: استرجع نقاط حدود الشكل الفعلية
- الوصول إلى الأشكال`ShapeRenderer` باستخدام`GetShapeRenderer`طريقة. ثم استرجع الحدود الفعلية للشكل بالنقاط باستخدام`BoundsInPoints` ملكية.
+ الوصول إلى الأشكال`ShapeRenderer` باستخدام`GetShapeRenderer` طريقة. ثم استرجع الحدود الفعلية للشكل بالنقاط باستخدام`BoundsInPoints` ملكية.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");

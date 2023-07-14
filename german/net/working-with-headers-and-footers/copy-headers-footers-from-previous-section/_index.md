@@ -1,7 +1,7 @@
 ---
 title: Kopieren Sie Kopf- und Fußzeilen aus dem vorherigen Abschnitt
 linktitle: Kopieren Sie Kopf- und Fußzeilen aus dem vorherigen Abschnitt
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Kopf- und Fußzeilen aus dem vorherigen Abschnitt in Word-Dokumente kopieren.
 type: docs
 weight: 10

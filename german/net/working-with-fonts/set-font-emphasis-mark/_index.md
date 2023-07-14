@@ -1,7 +1,7 @@
 ---
 title: Legen Sie die Markierung für die Schriftbetonung fest
 linktitle: Legen Sie die Markierung für die Schriftbetonung fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den Schriftbetonungsstil in einem Word-Dokument festlegen.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ### Beispielquellcode für Set Font Emphasis Mark mit Aspose.Words für .NET 
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();

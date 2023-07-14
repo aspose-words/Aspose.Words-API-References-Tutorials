@@ -1,7 +1,7 @@
 ---
 title: Restart Page Numbering
 linktitle: Restart Page Numbering
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to restart page numbering while joining and appending Word documents using Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: تصدير إلى Markdown مع محاذاة محتوى الجدول
 linktitle: تصدير إلى Markdown مع محاذاة محتوى الجدول
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تصدير محتوى الجدول بمحاذاة مختلفة لملفات Markdown باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: وثيقة المالك
 linktitle: وثيقة المالك
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استخدام مستند المالك في Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -56,7 +56,7 @@ doc.FirstSection.Body.AppendChild(para);
 ```
 
 ## الخطوة 7: تحقق من العقدة الأصلية بعد الإضافة
-بعد إضافة الفقرة إلى المستند ، نتحقق مرة أخرى مما إذا كانت تحتوي الآن على عقدة أصلية.
+بعد إضافة الفقرة إلى المستند ، نتحقق مرة أخرى مما إذا كانت تحتوي الآن على عقدة رئيسية.
 
 ```csharp
 Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null));

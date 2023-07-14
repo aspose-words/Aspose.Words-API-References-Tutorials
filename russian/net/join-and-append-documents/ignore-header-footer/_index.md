@@ -1,7 +1,7 @@
 ---
 title: Игнорировать верхний колонтитул
 linktitle: Игнорировать верхний колонтитул
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как добавить документ, игнорируя содержимое верхнего и нижнего колонтитула, используя Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте параметры формата импорта
 
- Создайте экземпляр`ImportFormatOptions` класс и установить`IgnoreHeaderFooter` собственность на`false`. Это гарантирует, что содержимое верхнего и нижнего колонтитула будет включено в процесс добавления.
+ Создайте экземпляр`ImportFormatOptions`класс и установить`IgnoreHeaderFooter` собственность на`false`. Это гарантирует, что содержимое верхнего и нижнего колонтитула будет включено в процесс добавления.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Шаг 4. Добавьте исходный документ к целевому документу.
 
- Использовать`AppendDocument` метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting` в качестве второго параметра и параметры формата импорта в качестве третьего параметра.
+ Использовать`AppendDocument`метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting` в качестве второго параметра и параметры формата импорта в качестве третьего параметра.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ### Пример исходного кода для игнорирования нижнего колонтитула верхнего колонтитула с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

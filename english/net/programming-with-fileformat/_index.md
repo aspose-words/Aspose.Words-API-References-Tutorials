@@ -1,13 +1,13 @@
 ---
-title: Programming With Fileformat
-linktitle: Programming With Fileformat
-second_title: Aspose.Words for .NET API Reference
+title: Words Processing with Fileformat
+linktitle: Words Processing with Fileformat
+second_title: Aspose.Words Document Processing API
 description: Learn how to work with file formats in Aspose.Words for .NET. The tutorials walk you through the various features such as detecting file format, converting between formats.
 type: docs
 weight: 1610
 url: /net/programming-with-fileformat/
 ---
-The Aspose.Words for .NET tutorials on programming with the file format offer a comprehensive resource for developers wishing to manipulate and work with different file formats in their applications. The tutorials cover various aspects of programming with file formats, including reading, writing, converting, and manipulating Word documents.
+The Aspose.Words for .NET tutorials on Words Processing with the file format offer a comprehensive resource for developers wishing to manipulate and work with different file formats in their applications. The tutorials cover various aspects of Words Processing with file formats, including reading, writing, converting, and manipulating Word documents.
 
 In these tutorials, you will learn how to use the powerful features of Aspose.Words for .NET to extract data from Word documents, add elements such as text, images and tables, and perform layout operations. advanced form and layout. You'll also learn how to manage document properties, such as metadata, headers and footers, and comments.
 

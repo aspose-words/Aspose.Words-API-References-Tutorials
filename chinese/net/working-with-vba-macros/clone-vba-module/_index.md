@@ -1,7 +1,7 @@
 ---
-title: 克隆 Vba 模块
-linktitle: 克隆 Vba 模块
-second_title: Aspose.Words for .NET API 参考
+title: 从 Word 文档克隆 Vba 模块
+linktitle: 从 Word 文档克隆 Vba 模块
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，了解如何使用 Aspose.Words for .NET 从 Word 文档克隆 VBA 模块。
 type: docs
 weight: 10
@@ -68,3 +68,21 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 
 ## 结论
 在本教程中，我们了解了如何使用 Aspose.Words for .NET 从带有宏的 Word 文档克隆 VBA 模块。克隆 VBA 模块使您可以轻松地在另一文档中重复使用一个源文档中的 VBA 代码。请随意使用此功能来组织和管理不同文档中的宏。
+
+### 常见问题解答
+
+#### 问：什么是复制 VBA 模块？
+
+答：复制 VBA 模块包括将包含 VBA 代码的模块从源 Word 文档复制到另一个文档。这允许您在不同的上下文中重用 VBA 代码或与其他文档共享。
+
+#### 问：从 Word 文档克隆 VBA 模块的先决条件是什么？
+
+答：在从 Word 文档克隆 VBA 模块之前，您必须具备 C# 编程语言的应用知识。您还需要在项目中安装 Aspose.Words for .NET 库。此外，您还需要一个包含 VBA 项目以及要克隆的模块的 Word 文档。
+
+#### Q：代码中如何设置文档目录？
+
+ A：在提供的代码中，您需要替换`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 项目的 Word 文档所在目录的适当路径。
+
+#### 问：如何使用克隆的 VBA 模块保存目标文档？
+
+答：要使用克隆的 VBA 模块保存目标文档，您可以使用`Save`的方法`Document`通过指定所需的目标路径和文件名来指定类。

@@ -1,14 +1,14 @@
 ---
 title: Ek Metin Konumlandırma ile PDF Metin Konumlandırmayı İyileştirin
 linktitle: Ek Metin Konumlandırma ile PDF Metin Konumlandırmayı İyileştirin
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerini PDF'ye dönüştürürken ek metin konumlandırma ile PDF metin konumlandırmayı nasıl geliştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/additional-text-positioning/
 ---
 
-Bu eğitimde, Aspose.Words for .NET ile ek metin konumlandırma özelliği ile PDF metin konumlandırmayı iyileştirme adımlarında size yol göstereceğiz. Bu özellik, bir Word belgesini PDF'ye dönüştürürken ek metnin yerleşimini kontrol etmenizi sağlar. Aşağıdaki adımları takip et:
+Bu öğreticide, Aspose.Words for .NET ile ek metin konumlandırma özelliğiyle PDF metin konumlandırmayı iyileştirme adımlarında size yol göstereceğiz. Bu özellik, bir Word belgesini PDF'ye dönüştürürken ek metnin yerleşimini kontrol etmenizi sağlar. Aşağıdaki adımları takip et:
 
 ## 1. Adım: Belgeyi yükleme
 

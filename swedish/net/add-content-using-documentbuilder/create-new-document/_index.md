@@ -1,7 +1,7 @@
 ---
 title: Skapa nytt dokument
 linktitle: Skapa nytt dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skapar ett nytt Word-dokument och lägger till innehåll med Aspose.Words för .NET. Steg-för-steg guide.
 type: docs
 weight: 10

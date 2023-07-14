@@ -1,7 +1,7 @@
 ---
 title: Uppdatera egenskapen Senaste sparad tid
 linktitle: Uppdatera egenskapen Senaste sparad tid
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du automatiskt uppdaterar egenskapen Last Saved Time när du sparar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Nu kan du köra källkoden för att automatiskt uppdatera egenskapen för senast
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

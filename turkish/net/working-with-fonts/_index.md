@@ -1,18 +1,18 @@
 ---
-title: Yazı Tipleriyle Çalışmak
-linktitle: Yazı Tipleriyle Çalışmak
-second_title: Aspose.Words for .NET API Referansı
-description: Yazı Tipleriyle Çalışma öğreticileri, Aspose.Words for .NET ile Word'de yazı tipleriyle nasıl çalışacağınızı öğretir. Biçimlendirme, değiştirmeler, bildirimler ve daha fazlası.
+title: Yazı Tipleriyle Kelime İşleme
+linktitle: Yazı Tipleriyle Kelime İşleme
+second_title: Aspose.Words Belge İşleme API'sı
+description: Yazı Tipleriyle Kelime İşleme öğreticileri, Aspose.Words for .NET ile Word'de yazı tipleriyle nasıl çalışacağınızı öğretir. Biçimlendirme, değiştirmeler, bildirimler ve daha fazlası.
 type: docs
 weight: 420
 url: /tr/net/working-with-fonts/
 ---
 
-Yazı Tipleriyle Çalışma eğitimleri, yazı tipleriyle çalışmanın çeşitli yönlerinde size rehberlik ederek yazı tipi formatını değiştirme, yazı tiplerini belirli dizinlerden yükleme, yazı tiplerini değiştirmeyi yönetme ve daha fazlası gibi işlemleri gerçekleştirmenize olanak tanır.
+Yazı Tipleriyle Sözcük İşleme eğitimleri, yazı tipi biçimlendirmesini değiştirme, belirli dizinlerden yazı tiplerini yükleme, yazı tiplerini değiştirmeyi yönetme ve daha fazlası gibi işlemleri gerçekleştirmenize olanak tanıyarak, yazı tipleriyle Sözcük İşlemenin çeşitli yönlerinde size rehberlik eder.
 
 Öğreticiler, kavramları göstermek için C# dil kaynak kodunun yanı sıra her özellik için ayrıntılı adım adım açıklamalar sunar. Word belgelerinizde yazı tipiyle ilgili belirli görevleri gerçekleştirmek için Aspose.Words Library for .NET'ten sınıfları ve yöntemleri nasıl kullanacağınızı öğreneceksiniz.
 
-Metni farklı yazı tipleriyle biçimlendirmek, yazı tipi değiştirme kurallarını ayarlamak, belirli dizinlerden yazı tipleri yüklemek veya yazı tipi bildirimleri almak isteyip istemediğinize göre, "Yazı Tipleriyle Çalışma" eğitimleri size bu görevleri gerçekleştirmeniz için gereken bilgileri sağlayacaktır. kolaylıkla.
+Metni farklı yazı tipleriyle biçimlendirmek, yazı tipi değiştirme kurallarını ayarlamak, belirli dizinlerden yazı tiplerini yüklemek veya yazı tipi bildirimleri almak isteyip istemediğinize göre, "Yazı Tipleriyle Sözcük İşleme" eğitimleri size bu görevleri gerçekleştirmeniz için gereken bilgileri sağlayacaktır. kolaylıkla.
 
  ## Öğreticiler
 | Başlık | Tanım |

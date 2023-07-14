@@ -1,7 +1,7 @@
 ---
 title: Yazı Tipi Adlarını Çöz
 linktitle: Yazı Tipi Adlarını Çöz
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile HTML'ye dönüştürürken eksik yazı tipi adlarını çözmek için adım adım kılavuz.
 type: docs
 weight: 10

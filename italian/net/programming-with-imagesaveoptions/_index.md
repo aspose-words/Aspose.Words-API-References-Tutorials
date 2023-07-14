@@ -1,13 +1,13 @@
 ---
-title: Programmazione con Imagesaveoptions
-linktitle: Programmazione con Imagesaveoptions
-second_title: Riferimento all'API Aspose.Words per .NET
+title: Elaborazione di testi con Imagesaveoptions
+linktitle: Elaborazione di testi con Imagesaveoptions
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come programmare con le opzioni di salvataggio delle immagini in Aspose.Words per .NET. Tutorial passo passo con codice di esempio per il salvataggio e la manipolazione delle immagini nei documenti di Word.
 type: docs
 weight: 1630
 url: /it/net/programming-with-imagesaveoptions/
 ---
-tutorial di Aspose.Words per .NET sulla programmazione con ImageSaveOptions ti aiuteranno a padroneggiare le funzionalità avanzate di manipolazione delle immagini nei tuoi documenti Word. Questi tutorial passo-passo ti guideranno attraverso l'utilizzo delle opzioni di salvataggio delle immagini, inclusa la compressione, la scelta del formato dell'immagine, l'impostazione della qualità dell'immagine e altro ancora. Imparerai come personalizzare l'elaborazione delle immagini durante la generazione o la conversione di documenti, offrendoti un controllo preciso sull'aspetto e le dimensioni delle immagini nei tuoi file Word.
+tutorial di Aspose.Words per .NET sull'elaborazione di parole con ImageSaveOptions ti aiuteranno a padroneggiare le funzionalità avanzate di manipolazione delle immagini nei tuoi documenti Word. Questi tutorial passo-passo ti guideranno attraverso l'utilizzo delle opzioni di salvataggio delle immagini, inclusa la compressione, la scelta del formato dell'immagine, l'impostazione della qualità dell'immagine e altro ancora. Imparerai come personalizzare l'elaborazione delle immagini durante la generazione o la conversione di documenti, offrendoti un controllo preciso sull'aspetto e le dimensioni delle immagini nei tuoi file Word.
 
 tutorial coprono anche i concetti di base della manipolazione delle immagini, tra cui l'inserimento, l'eliminazione, il ridimensionamento e il ritaglio delle immagini in un documento Word utilizzando Aspose.Words per .NET. Imparerai come estrarre immagini da documenti Word, sostituirle con altre immagini e regolarne la posizione, l'allineamento e il wrapping. Questi tutorial ti permetteranno di creare flussi di lavoro automatizzati ed efficienti per la gestione delle immagini nei tuoi documenti Word, dandoti le competenze per manipolare in modo semplice ed efficiente gli elementi visivi dei tuoi file Word.
 

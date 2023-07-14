@@ -1,7 +1,7 @@
 ---
 title: Non salvare il punto elenco dell'immagine
 linktitle: Non salvare il punto elenco dell'immagine
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come disabilitare il salvataggio dei punti elenco delle immagini nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

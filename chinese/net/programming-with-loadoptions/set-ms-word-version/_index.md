@@ -1,14 +1,14 @@
 ---
 title: 设置Ms Word版本
 linktitle: 设置Ms Word版本
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 使用指定版本的 MS Word 加载文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/set-ms-word-version/
 ---
 
-在 C# 应用程序中处理 Word 文档时，可能需要指定加载文档时要使用的 Microsoft Word 版本。借助适用于 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 轻松设置要使用的 MS Word 版本。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码使用 LoadOptions 加载选项加载具有指定版本的 MS Word 的文档。
+在 C# 应用程序中对 Word 文档进行文字处理时，可能需要指定加载文档时要使用的 Microsoft Word 版本。借助适用于 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 轻松设置要使用的 MS Word 版本。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码使用 LoadOptions 加载选项加载具有指定版本的 MS Word 的文档。
 
 ## 了解 Aspose.Words 库
 

@@ -1,7 +1,7 @@
 ---
 title: Docx'i Byte'a Dönüştür
 linktitle: Docx'i Byte'a Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Docx'ten Word belgelerini bayt dizisine nasıl dönüştüreceğinizi öğrenin. Örnek kaynak koduyla adım adım öğretici.
 type: docs
 weight: 10
@@ -22,7 +22,7 @@ MemoryStream outStream = new MemoryStream();
 
 ## 2. Adım: Belgeyi MemoryStream'e Kaydetme
 
- Ardından,`Save` yöntemi`Document` belgeyi kaydetmek için sınıf`MemoryStream` Docx formatında:
+ Ardından,`Save` yöntemi`Document` belgeyi kaydetmek için sınıf`MemoryStream` Docx biçiminde:
 
 ```csharp
 doc.Save(outStream, SaveFormat.Docx);
@@ -78,7 +78,7 @@ Bir DOCX dosyasını bayta dönüştürmek için bu işlevi sağlayan farklı ya
 
 #### Dönüştürme işleminin sınırlamaları nelerdir?
 
-Dönüştürme işleminin sınırlamaları, kullandığınız araca veya kitaplığa bağlıdır. Bazı araçların girdi belgesinin boyutu veya karmaşıklığıyla ilgili kısıtlamaları olabilir. Dönüştürme görevinizin taleplerini karşılayabilecek bir araç seçmek önemlidir.
+Dönüştürme işleminin sınırlamaları, kullandığınız araca veya kitaplığa bağlıdır. Bazı araçların girdi belgesinin boyutu veya karmaşıklığı ile ilgili kısıtlamaları olabilir. Dönüştürme görevinizin taleplerini karşılayabilecek bir araç seçmek önemlidir.
 
 ### Orijinal belgenin biçimlendirmesini koruyabilir miyim?
 

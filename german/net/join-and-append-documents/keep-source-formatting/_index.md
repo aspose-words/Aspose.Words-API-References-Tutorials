@@ -1,7 +1,7 @@
 ---
 title: Behalten Sie die Quellformatierung bei
 linktitle: Behalten Sie die Quellformatierung bei
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Quelldokument an ein Zieldokument anhängen und dabei die ursprüngliche Formatierung beibehalten.
 type: docs
 weight: 10
@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Schritt 3: Hängen Sie das Quelldokument an das Zieldokument an
 
- Benutzen Sie die`AppendDocument` Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.KeepSourceFormatting` als Importformatmodus, um die ursprüngliche Formatierung des Quelldokuments beizubehalten.
+ Benutzen Sie die`AppendDocument`Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.KeepSourceFormatting` als Importformatmodus, um die ursprüngliche Formatierung des Quelldokuments beizubehalten.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -42,7 +42,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Schritt 4: Speichern Sie das geänderte Dokument
 
-Speichern Sie das geänderte Dokument mit`Save` Methode der`Document` Objekt.
+ Speichern Sie das geänderte Dokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
@@ -53,7 +53,7 @@ Damit ist die Implementierung des Anhängens eines Quelldokuments an ein Zieldok
 ### Beispielquellcode für „Quellformatierung beibehalten“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();

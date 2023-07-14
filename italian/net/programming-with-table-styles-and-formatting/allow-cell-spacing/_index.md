@@ -1,7 +1,7 @@
 ---
 title: Consenti spaziatura celle
 linktitle: Consenti spaziatura celle
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per consentire la spaziatura delle celle utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
 ## Passaggio 4: abilita la spaziatura delle celle
- Ora possiamo abilitare la spaziatura delle celle impostando il`AllowCellSpacing`proprietà della tabella a`true`. Questa proprietà determina se la tabella può avere una spaziatura tra le celle.
+ Ora possiamo abilitare la spaziatura delle celle impostando il`AllowCellSpacing` proprietà della tabella a`true`. Questa proprietà determina se la tabella può avere una spaziatura tra le celle.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -57,7 +57,7 @@ Congratulazioni! Hai consentito correttamente la spaziatura delle celle nelle ta
 ### Esempio di codice sorgente per Consenti spaziatura celle utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

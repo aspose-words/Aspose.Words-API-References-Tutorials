@@ -1,7 +1,7 @@
 ---
 title: Ana Düğümü Al
 linktitle: Ana Düğümü Al
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile belirli bir öğenin ana düğümünü nasıl alacağınızı öğrenin.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Cumplimiento Ooxml ISO 29500_2008_Estricto
 linktitle: Cumplimiento Ooxml ISO 29500_2008_Estricto
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda cómo garantizar el cumplimiento estricto de Ooxml Iso 29500_2008_al guardar documentos con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -48,7 +48,7 @@ Ahora puede ejecutar el código fuente para garantizar el cumplimiento de Ooxml 
 ### Ejemplo de código fuente para el cumplimiento de Ooxml Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

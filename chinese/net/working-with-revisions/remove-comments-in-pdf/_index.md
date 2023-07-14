@@ -1,7 +1,7 @@
 ---
 title: 删除 PDF 文件中的注释
 linktitle: 删除 PDF 文件中的注释
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 删除 PDF 文件中的注释。
 type: docs
 weight: 10

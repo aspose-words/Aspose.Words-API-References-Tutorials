@@ -1,14 +1,14 @@
 ---
-title: Programmieren mit Markdownsaveoptions
-linktitle: Programmieren mit Markdownsaveoptions
-second_title: Aspose.Words für .NET API-Referenz
-description: Lernen Sie das Programmieren mit MarkdownSaveOptions in Aspose.Words für .NET. Detaillierte Tutorials mit Beispielcode zum Speichern von Word-Dokumenten im Markdown-Format.
+title: Textverarbeitung mit Markdownsaveoptions
+linktitle: Textverarbeitung mit Markdownsaveoptions
+second_title: Aspose.Words-Dokumentverarbeitungs-API
+description: Lernen Sie die Wortverarbeitung mit MarkdownSaveOptions in Aspose.Words für .NET. Detaillierte Tutorials mit Beispielcode zum Speichern von Word-Dokumenten im Markdown-Format.
 type: docs
 weight: 1640
 url: /de/net/programming-with-markdownsaveoptions/
 ---
 
-„Programmieren mit MarkdownSaveOptions“ ist eine ausführliche Ressource, die Sie durch die Programmierung mit MarkdownSaveOptions unter Verwendung der Aspose.Words-Bibliothek für .NET führt. Die Tutorials bieten Ihnen Schritt-für-Schritt-Erklärungen, vollständigen Quellcode und praktische Beispiele zum Verständnis und zur Verwendung von MarkdownSaveOptions zum Exportieren von Word-Dokumenten in das Markdown-Format. Sie erfahren, wie Sie Exportoptionen anpassen, z. B. Bilder verwalten, Tabelleninhalte ausrichten, Stile konvertieren und mehr. Diese Ressource ist für Entwickler, die Markdown-Exportfunktionen mithilfe von Aspose.Words für .NET in ihre Anwendungen integrieren möchten, von entscheidender Bedeutung.
+Die Wortverarbeitung mit MarkdownSaveOptions ist eine ausführliche Ressource, die Sie durch die Wortverarbeitung mit MarkdownSaveOptions unter Verwendung der Aspose.Words-Bibliothek für .NET führt. Die Tutorials bieten Ihnen Schritt-für-Schritt-Erklärungen, vollständigen Quellcode und praktische Beispiele zum Verständnis und zur Verwendung von MarkdownSaveOptions zum Exportieren von Word-Dokumenten in das Markdown-Format. Sie erfahren, wie Sie Exportoptionen anpassen, z. B. Bilder verwalten, Tabelleninhalte ausrichten, Stile konvertieren und mehr. Diese Ressource ist für Entwickler, die Markdown-Exportfunktionen mithilfe von Aspose.Words für .NET in ihre Anwendungen integrieren möchten, von entscheidender Bedeutung.
 
  ## Tutorials
 | Titel | Beschreibung |

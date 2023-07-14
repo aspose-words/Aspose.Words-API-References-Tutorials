@@ -1,7 +1,7 @@
 ---
 title: Relación de aspecto bloqueada
 linktitle: Relación de aspecto bloqueada
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a bloquear o desbloquear la relación de aspecto de una forma en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Este tutorial explica cómo bloquear o desbloquear la relación de aspecto de un
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,10 +39,10 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
 ```
 
 ## Paso 4: bloquear o desbloquear la relación de aspecto
- Selecciona el`AspectRatioLocked` propiedad de la forma de`true` o`false`para bloquear o desbloquear la relación de aspecto, respectivamente.
+ Selecciona el`AspectRatioLocked` propiedad de la forma de`true` o`false` para bloquear o desbloquear la relación de aspecto, respectivamente.
 
 ```csharp
-shape.AspectRatioLocked = false; // Desbloquear la relación de aspecto
+shape.AspectRatioLocked = false; //Desbloquear la relación de aspecto
 ```
 
 ## Paso 5: Guarde el documento
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ### Ejemplo de código fuente para Relación de aspecto bloqueada usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

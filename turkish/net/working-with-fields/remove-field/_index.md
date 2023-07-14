@@ -1,7 +1,7 @@
 ---
 title: Alanı Kaldır
 linktitle: Alanı Kaldır
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu kılavuzda, Aspose.Words for .NET kullanarak bir belgedeki belirli bir alanı nasıl sileceğinizi öğreneceksiniz.
 type: docs
 weight: 10

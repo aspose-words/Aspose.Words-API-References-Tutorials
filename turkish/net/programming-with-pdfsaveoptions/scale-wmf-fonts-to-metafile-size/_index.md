@@ -1,7 +1,7 @@
 ---
 title: Wmf Yazı Tiplerini Meta Dosya Boyutuna Ölçeklendirerek PDF Boyutunu Küçültün
 linktitle: Wmf Yazı Tiplerini Meta Dosya Boyutuna Ölçeklendirerek PDF Boyutunu Küçültün
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile PDF'ye dönüştürürken wmf yazı tiplerini meta dosyası boyutuna ölçeklendirerek pdf boyutunu küçültmek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -49,7 +49,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = met
 
 ## 5. Adım: Belgeyi Meta Dosya Oluşturma Seçenekleriyle PDF Olarak Kaydedin
 
-Önceden yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedin.
+Önceden yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF biçiminde kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);

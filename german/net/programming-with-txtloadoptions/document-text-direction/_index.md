@@ -1,7 +1,7 @@
 ---
 title: Dokumenttextrichtung
 linktitle: Dokumenttextrichtung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Textrichtung in Ihren Dokumenten festlegen. Verbessern Sie die Anzeige für Sprachen mit Schreibrichtung von rechts nach links.
 type: docs
 weight: 10
@@ -81,7 +81,7 @@ Diese Funktion ist wichtig, um sicherzustellen, dass Text in mehrsprachigen Doku
 
 Mit Aspose.Words können Sie die Textrichtung in Ihren Dokumenten einfach ändern und so den Benutzern ein reibungsloses und intuitives Leseerlebnis bieten.
 
-Es ist wichtig zu beachten, dass diese Funktion besonders nützlich ist, wenn Sie mit Sprachen arbeiten, die eine bestimmte Textrichtung erfordern. Aspose.Words erleichtert diese Aufgabe, indem es leistungsstarke Tools zur Verwaltung der Textrichtung in Ihren Dokumenten bereitstellt.
+Es ist wichtig zu beachten, dass diese Funktion besonders nützlich ist, wenn die Textverarbeitung mit Sprachen erfolgt, die eine bestimmte Textrichtung erfordern. Aspose.Words erleichtert diese Aufgabe, indem es leistungsstarke Tools zur Verwaltung der Textrichtung in Ihren Dokumenten bereitstellt.
 
 Denken Sie daran, die entsprechenden Ladeoptionen zu verwenden, z. B. das Festlegen der automatischen Textrichtung, um die gewünschten Ergebnisse in Ihren Dokumenten zu erzielen.
 

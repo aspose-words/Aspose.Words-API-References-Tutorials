@@ -1,7 +1,7 @@
 ---
 title: Lägg till textvattenstämpel med specifika alternativ
 linktitle: Lägg till textvattenstämpel med specifika alternativ
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till en textvattenstämpel med specifika alternativ med Aspose.Words för .NET. Steg-för-steg guide.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Steg 3: Lägg till textvattenstämpel med specifika alternativ
 
- Vi kommer att skapa en instans av`TextWatermarkOptions` klass och ställ in önskade alternativ för textens vattenstämpel.
+ Vi kommer att skapa en instans av`TextWatermarkOptions`klass och ställ in önskade alternativ för textens vattenstämpel.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

@@ -1,7 +1,7 @@
 ---
 title: Visa revisioner i ballonger
 linktitle: Visa revisioner i ballonger
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Visa revisioner i ballonger med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Hur visar man revisioner i ballonger med Aspose.Words för .NET?
 
- A: Använd`ShowInBalloons` egendom av`RevisionOptions` objekt för att konfigurera visningen av revisioner i ballonger. Du kan ställa in den här egenskapen`ShowInBalloons.FormatAndDelete` för att visa revisioner i ballonger med raderings- och formateringsrevisioner.
+ A: Använd`ShowInBalloons`egendom av`RevisionOptions` objekt för att konfigurera visningen av revisioner i ballonger. Du kan ställa in den här egenskapen`ShowInBalloons.FormatAndDelete` för att visa revisioner i ballonger med raderings- och formateringsrevisioner.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

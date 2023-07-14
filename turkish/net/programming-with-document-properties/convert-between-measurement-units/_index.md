@@ -1,7 +1,7 @@
 ---
 title: Ölçü Birimleri Arasında Dönüştür
 linktitle: Ölçü Birimleri Arasında Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgede ölçüm birimleri arasında dönüşüm yapmak için adım adım kılavuz.
 type: docs
 weight: 10

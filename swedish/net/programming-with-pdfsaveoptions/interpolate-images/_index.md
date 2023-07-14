@@ -1,7 +1,7 @@
 ---
 title: Interpolera bilder i ett PDF-dokument
 linktitle: Interpolera bilder i ett PDF-dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att möjliggöra bildinterpolation i ett PDF-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ S: För att aktivera bildinterpolation vid konvertering till PDF med Aspose.Word
 
  Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
 
- Skapa en instans av`PdfSaveOptions` klass och ställ in`InterpolateImages` egendom till`true` för att möjliggöra bildinterpolation.
+ Skapa en instans av`PdfSaveOptions`klass och ställ in`InterpolateImages` egendom till`true` för att möjliggöra bildinterpolation.
 
  Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
 

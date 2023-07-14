@@ -1,7 +1,7 @@
 ---
 title: Зашифровать Docx паролем
 linktitle: Зашифровать Docx паролем
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как зашифровать файл DOCX паролем с помощью Aspose.Words для .NET. Полное руководство по безопасности документов.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", s
 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";  
 
 Document doc = new Document(dataDir + "Document.docx");

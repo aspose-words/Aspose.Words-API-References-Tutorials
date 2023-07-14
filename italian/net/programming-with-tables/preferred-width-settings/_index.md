@@ -1,7 +1,7 @@
 ---
 title: Impostazioni di larghezza preferite
 linktitle: Impostazioni di larghezza preferite
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come impostare le larghezze delle celle di tabella preferite in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In questo tutorial impareremo come impostare le impostazioni di larghezza prefer
 2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: creazione del documento e inizializzazione del generatore di documenti
-Per iniziare a lavorare con il documento e il generatore di documenti, attenersi alla seguente procedura:
+Per avviare l'elaborazione di testi con il documento e il generatore di documenti, attenersi alla seguente procedura:
 
 ```csharp
 // Percorso della directory dei documenti
@@ -75,7 +75,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ### Codice sorgente di esempio per le impostazioni di larghezza preferite utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

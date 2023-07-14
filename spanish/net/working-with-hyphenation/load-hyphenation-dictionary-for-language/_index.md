@@ -1,7 +1,7 @@
 ---
 title: Cargar diccionario de partición de palabras para el idioma
 linktitle: Cargar diccionario de partición de palabras para el idioma
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a cargar un diccionario de división de palabras para un idioma específico en Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -60,7 +60,7 @@ Siéntase libre de usar este código en sus propios proyectos y modifíquelo par
 
 #### P: ¿Cómo cargar un diccionario de silabeo para un idioma específico en Aspose.Words?
 
- R: Para cargar un diccionario de silabeo para un idioma específico en Aspose.Words, puede usar el`Hyphenation` clase y el`LoadDictionary()` método. Crear una instancia de la`Hyphenation` clase y llamar al`LoadDictionary()` que especifica la ruta al archivo del diccionario de silabeo para el idioma deseado. Esto cargará el diccionario de silabeo en Aspose.Words.
+ R: Para cargar un diccionario de silabeo para un idioma específico en Aspose.Words, puede usar el`Hyphenation` clase y el`LoadDictionary()` método. Crear una instancia de la`Hyphenation` clase y llamar al`LoadDictionary()` método que especifica la ruta al archivo del diccionario de silabeo para el idioma deseado. Esto cargará el diccionario de silabeo en Aspose.Words.
 
 #### P: ¿Dónde puedo encontrar archivos de diccionarios de silabeo para diferentes idiomas?
 

@@ -1,7 +1,7 @@
 ---
 title: Построить таблицу
 linktitle: Построить таблицу
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как создать таблицу в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

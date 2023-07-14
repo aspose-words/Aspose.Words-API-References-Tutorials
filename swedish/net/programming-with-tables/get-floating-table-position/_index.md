@@ -1,7 +1,7 @@
 ---
 title: Få flytande bordsposition
 linktitle: Få flytande bordsposition
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du får positionen för flytande tabeller i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ I den här handledningen kommer vi att lära oss hur man får positionen för et
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Ladda dokumentet och komma åt tabellerna
-För att börja arbeta med tabeller måste vi ladda dokumentet som innehåller dem och komma åt dem. Följ dessa steg:
+För att starta ordbehandling med tabeller måste vi ladda dokumentet som innehåller dem och komma åt dem. Följ dessa steg:
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
@@ -53,7 +53,7 @@ Console.WriteLine("...............................");
 ### Exempel på källkod för Get Floating Table Position med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

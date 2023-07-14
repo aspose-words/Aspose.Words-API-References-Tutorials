@@ -1,7 +1,7 @@
 ---
 title: Add Bidi Marks in Word Document
 linktitle: Add Bidi Marks in Word Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn to add Bidi marks to a Word document using Aspose.Words for .NET and create professional multilingual documents.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words for .NET is a powerful library for creating, editing, and manipulat
 
 ## Understanding the Aspose.Words library
 
-Before diving into the code, it's important to understand the Aspose.Words library for .NET. Aspose.Words is a popular library that makes working with Word documents easy and efficient. It offers a wide range of features for creating, editing and manipulating Word documents, including adding Bidi marks.
+Before diving into the code, it's important to understand the Aspose.Words library for .NET. Aspose.Words is a popular library that makes Words Processing with Word documents easy and efficient. It offers a wide range of features for creating, editing and manipulating Word documents, including adding Bidi marks.
 
 ## Creating the document and adding content
 
@@ -65,12 +65,12 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 
 ## Conclusion
 
-In this guide, we have explained how to use Aspose.Words for .NET to add Bidi marks to a Word document using the provided C# source code. By following the provided steps, you can easily add Bidi marks to your Word documents in your C# application. Aspose.Words offers tremendous flexibility and power for working with text formatting and language management, allowing you to create multilingual documents professionally.
+In this guide, we have explained how to use Aspose.Words for .NET to add Bidi marks to a Word document using the provided C# source code. By following the provided steps, you can easily add Bidi marks to your Word documents in your C# application. Aspose.Words offers tremendous flexibility and power for Words Processing with text formatting and language management, allowing you to create multilingual documents professionally.
 
 ### Frequently Asked Questions
 
 #### Q: What is Aspose.Words for .NET?
-Aspose.Words for .NET is a powerful library for creating, editing and manipulating Word documents in a C# application. It offers many features for working with Word documents, including adding Bidi (bidirectional) marks.
+Aspose.Words for .NET is a powerful library for creating, editing and manipulating Word documents in a C# application. It offers many features for Words Processing with Word documents, including adding Bidi (bidirectional) marks.
 
 #### Q: What features does Aspose.Words for .NET offer?
 Aspose.Words for .NET offers a wide range of features for creating, editing and manipulating Word documents. Some of these features include creating documents, adding content, formatting text, managing tables, merging and splitting documents, converting documents, and more.

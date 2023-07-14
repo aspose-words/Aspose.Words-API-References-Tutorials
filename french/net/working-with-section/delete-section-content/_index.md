@@ -1,7 +1,7 @@
 ---
 title: Supprimer le contenu de la section
 linktitle: Supprimer le contenu de la section
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment supprimer le contenu d'une section spécifique d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Ensuite, nous allons charger le document Word dans une instance du`Document` classe. Nous allons accéder à la première section du document en utilisant l'index 0.
 
 ```csharp
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Document.docx");
 
 // Accéder à la rubrique
@@ -45,7 +45,7 @@ section.ClearContent();
 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -73,7 +73,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  R : Pour charger le document Word dans une instance du`Document` classe appelée`doc` et accéder à la première section du document en utilisant l'index 0, vous pouvez utiliser le code suivant :
 
 ```csharp
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Document.docx");
 
 // Accéder à la rubrique

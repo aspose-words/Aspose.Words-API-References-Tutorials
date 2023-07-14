@@ -1,7 +1,7 @@
 ---
 title: Set Content Control Color
 linktitle: Set Content Control Color
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set the color of a content control in a Word document using Aspose.Words for .NET, customizing its appearance.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ This tutorial explains how to set the color of a content control in a Word docum
 To follow this tutorial, you need to have the following:
 
 - Aspose.Words for .NET library installed.
-- Basic knowledge of C# and working with Word documents.
+- Basic knowledge of C# and Words Processing with Word documents.
 
 ## Step 1: Set up the Document Directory
 Start by setting up the path to your document directory. Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to the directory where your document is located.

@@ -1,7 +1,7 @@
 ---
 title: Infoga kryssruta formulärfält
 linktitle: Infoga kryssruta formulärfält
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar kryssrutaformulär i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide.
 type: docs
 weight: 10

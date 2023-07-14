@@ -1,7 +1,7 @@
 ---
 title: Felder löschen
 linktitle: Felder löschen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Löschen von Zusammenführungsfeldern in Ihren Word-Dokumenten mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Dies ist besonders nützlich, wenn Sie nur den statischen Inhalt behalten und al
 // Der Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Vorhandenes Dokument laden.
+// Vorhandenes Dokument laden.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
 // Zusammenführungsfelder entfernen.
@@ -54,7 +54,7 @@ Unser Leitfaden zur Implementierung der Funktion „Felder löschen“ über Asp
 
 #### F: Was ist ein Feld in Aspose.Words?
 
-A: Ein Feld in Aspose.Words ist eine Dokumentstruktur, die automatisch generierten Text oder einen berechneten Wert darstellt. Felder werden verwendet, um dynamische Informationen in einem Dokument anzuzeigen, wie z. B. Seitenzahlen, Datumsangaben, Seriendruckfelder usw.
+A: Ein Feld in Aspose.Words ist eine Dokumentstruktur, die automatisch generierten Text oder einen berechneten Wert darstellt. Felder werden verwendet, um dynamische Informationen in einem Dokument anzuzeigen, wie z. B. Seitenzahlen, Datumsangaben, Serienbrieffelder usw.
 
 #### F: Wie lösche ich ein Feld in einem Word-Dokument mit Aspose.Words?
 

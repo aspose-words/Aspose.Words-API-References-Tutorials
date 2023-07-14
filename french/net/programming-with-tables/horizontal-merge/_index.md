@@ -1,7 +1,7 @@
 ---
 title: Fusion horizontale
 linktitle: Fusion horizontale
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à fusionner horizontalement des cellules dans un tableau Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Dans ce didacticiel, nous allons apprendre à fusionner horizontalement des cell
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Etape 2 : Création du document et initialisation du générateur de document
-Pour commencer à travailler avec le tableau et les cellules, nous devons créer un nouveau document et initialiser le générateur de documents. Suivez ces étapes:
+Pour démarrer le traitement de texte avec le tableau et les cellules, nous devons créer un nouveau document et initialiser le générateur de documents. Suivez ces étapes:
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Ici, nous utilisons le générateur de documents pour créer le tableau et définir les propriétés de fusion horizontale des cellules. Nous utilisons le`HorizontalMerge` propriété de la`CellFormat` objet pour spécifier le type de fusion horizontale à appliquer à chaque cellule. En utilisant`CellMerge.First` on fusionne la première cellule avec la suivante, tout en utilisant`CellMerge.Previous` nous fusionnons la cellule actuelle avec la cellule précédente.`CellMerge.None` indique que la cellule ne doit pas être fusionnée.
+ Ici, nous utilisons le générateur de documents pour créer le tableau et définir les propriétés de fusion horizontale des cellules. Nous utilisons le`HorizontalMerge`propriété de la`CellFormat` objet pour spécifier le type de fusion horizontale à appliquer à chaque cellule. En utilisant`CellMerge.First` on fusionne la première cellule avec la suivante, tout en utilisant`CellMerge.Previous` nous fusionnons la cellule actuelle avec la cellule précédente.`CellMerge.None` indique que la cellule ne doit pas être fusionnée.
 
 ## Étape 4 : Enregistrer le document modifié
 Enfin, nous devons enregistrer le document modifié avec les cellules fusionnées horizontalement. Utilisez le code suivant :
@@ -65,7 +65,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour la fusion horizontale à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,13 +1,13 @@
 ---
 title: Dokument mit Passwort verschlüsseln
 linktitle: Dokument mit Passwort verschlüsseln
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Dokumente mit Aspose.Words für .NET mit einem Passwort verschlüsseln.
 type: docs
 weight: 10
 url: /de/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-Dokumentensicherheit ist bei der Arbeit mit Dateien in einer C#-Anwendung von entscheidender Bedeutung. Mit der Aspose.Words-Bibliothek für .NET können Sie Ihre Dokumente ganz einfach schützen, indem Sie sie mit einem Passwort verschlüsseln. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung des Aspose.Words für .NET C#-Quellcodes zum Verschlüsseln eines Dokuments mithilfe der DocSaveOptions-Speicheroptionen.
+Dokumentensicherheit ist bei der Textverarbeitung mit Dateien in einer C#-Anwendung von entscheidender Bedeutung. Mit der Aspose.Words-Bibliothek für .NET können Sie Ihre Dokumente ganz einfach schützen, indem Sie sie mit einem Passwort verschlüsseln. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung des Aspose.Words für .NET C#-Quellcodes zum Verschlüsseln eines Dokuments mithilfe der DocSaveOptions-Speicheroptionen.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 

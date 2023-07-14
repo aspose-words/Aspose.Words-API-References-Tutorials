@@ -1,7 +1,7 @@
 ---
 title: Revizyonları Balonlarda Göster
 linktitle: Revizyonları Balonlarda Göster
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile revizyonları balonlarda gösterin.
 type: docs
 weight: 10
@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### S: Aspose.Words for .NET ile revizyonları balonlarda nasıl gösterebilirim?
 
- C: Şunu kullanın:`ShowInBalloons` mülkiyeti`RevisionOptions` revizyonların balonlarda görüntülenmesini yapılandırmak için nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`ShowInBalloons.FormatAndDelete` revizyonları silme ve biçimlendirme revizyonları ile balonlarda göstermek için.
+ C: Şunu kullanın:`ShowInBalloons`mülkiyeti`RevisionOptions` revizyonların balonlarda görüntülenmesini yapılandırmak için nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`ShowInBalloons.FormatAndDelete` revizyonları silme ve biçimlendirme revizyonları ile balonlarda göstermek için.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

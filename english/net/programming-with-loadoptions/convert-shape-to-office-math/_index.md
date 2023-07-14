@@ -1,14 +1,14 @@
 ---
 title: Convert Shape To Office Math
 linktitle: Convert Shape To Office Math
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to convert shapes to Office math formulas when uploading documents with Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /net/programming-with-loadoptions/convert-shape-to-office-math/
 ---
 
-When working with documents containing math shapes in a C# application, you may need to convert them to Office math formulas for better compatibility and presentation. With the Aspose.Words library for .NET, you can easily convert shapes into Office math formulas while loading a document. In this step-by-step guide, we'll walk you through how to use Aspose.Words for .NET C# source code to load a document with converting shapes to Office math formulas using LoadOptions.
+When Words Processing with documents containing math shapes in a C# application, you may need to convert them to Office math formulas for better compatibility and presentation. With the Aspose.Words library for .NET, you can easily convert shapes into Office math formulas while loading a document. In this step-by-step guide, we'll walk you through how to use Aspose.Words for .NET C# source code to load a document with converting shapes to Office math formulas using LoadOptions.
 
 ## Understanding the Aspose.Words library
 

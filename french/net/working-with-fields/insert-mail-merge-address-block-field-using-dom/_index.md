@@ -1,7 +1,7 @@
 ---
 title: Insérer un champ de bloc d'adresse de fusion et publipostage à l'aide de DOM
 linktitle: Insérer un champ de bloc d'adresse de fusion et publipostage à l'aide de DOM
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer un champ de bloc d'adresse de fusion et publipostage dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10

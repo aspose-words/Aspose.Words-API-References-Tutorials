@@ -1,7 +1,7 @@
 ---
 title: Lägg till innehåll med Documentbuilder
 linktitle: Lägg till innehåll med Documentbuilder
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till innehåll i dina Word-dokument med DocumentBuilder med Aspose.Words för .NET. Praktiska handledningar med detaljerade kodexempel.
 type: docs
 weight: 1460

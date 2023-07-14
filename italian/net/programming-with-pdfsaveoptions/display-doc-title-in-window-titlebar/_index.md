@@ -1,7 +1,7 @@
 ---
 title: Visualizza il titolo del documento nella barra del titolo della finestra
 linktitle: Visualizza il titolo del documento nella barra del titolo della finestra
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come visualizzare il titolo del documento nella barra del titolo della finestra durante la conversione in PDF con Aspose.Words per .NET.
 type: docs
 weight: 10

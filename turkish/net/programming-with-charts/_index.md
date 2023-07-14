@@ -1,7 +1,7 @@
 ---
-title: Grafiklerle Programlama
-linktitle: Grafiklerle Programlama
-second_title: Aspose.Words for .NET API Referansı
+title: Word Chart API'yi Kullanma
+linktitle: Grafikleri Kullanma
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerinde grafikleri nasıl oluşturacağınızı, özelleştireceğinizi ve değiştireceğinizi öğrenin. Öğreticiler, grafik eklemenize yardımcı olacak adım adım açıklamalar ve C# kaynak kodu sağlar.
 type: docs
 weight: 1540
@@ -25,7 +25,7 @@ Bu eğitimlerle, görsel olarak çekici ve bilgilendirici grafikler ekleyerek Wo
 | [Dağılım Grafiği Ekle](./insert-scatter-chart/) | Aspose.Words for .NET kullanarak bir belgeye dağılım grafiği eklemeyi öğrenin. X ve Y koordinatlarıyla seri verileri ekleyin. |
 | [XYAxis Özelliklerini Tanımlayın](./define-xyaxis-properties/) | Aspose.Words for .NET kullanarak bir grafikte XY ekseni özelliklerini nasıl tanımlayacağınızı öğrenin. X ve Y eksenleri için özelleştirme seçenekleri gösterilmektedir. |
 | [Tarih Saat Değerler - Eksen](./date-time-values-to-axis/) | Aspose.Words for .NET kullanarak bir grafiğin eksenine tarih saat değerleri eklemeyi öğrenin. |
-| [Eksen İçin Sayı Formatı](./number-format-for-axis/) | Aspose.Words for .NET kullanarak bir grafikte bir eksen için sayı biçimini nasıl ayarlayacağınızı öğrenin. |
+| [Eksen İçin Sayı Biçimi](./number-format-for-axis/) | Aspose.Words for .NET kullanarak bir grafikte bir eksen için sayı biçimini nasıl ayarlayacağınızı öğrenin. |
 | [eksen sınırları](./bounds-of-axis/) | Aspose.Words for .NET'i kullanarak eksende görüntülenen değer aralığını kontrol ederek bir grafikte bir eksenin sınırlarını nasıl ayarlayacağınızı öğrenin. |
 | [Eksen Üzerindeki Etiketler Arasındaki Aralık Birimi](./interval-unit-between-labels-on-axis/) | Aspose.Words for .NET kullanarak bir grafiğin ekseni üzerindeki etiketler arasındaki aralık birimini nasıl ayarlayacağınızı öğrenin. |
 | [Grafik Eksenini Gizle](./hide-chart-axis/) | Aspose.Words for .NET kullanarak bir belgede grafik eksenini nasıl gizleyeceğinizi öğrenin. Daha temiz ve daha odaklı bir grafik görüntüsü için ekseni gizleyin. |

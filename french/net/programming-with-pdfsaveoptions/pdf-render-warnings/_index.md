@@ -1,7 +1,7 @@
 ---
 title: Avertissements de rendu PDF
 linktitle: Avertissements de rendu PDF
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour traiter les avertissements de rendu PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10

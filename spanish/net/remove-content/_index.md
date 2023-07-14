@@ -1,7 +1,7 @@
 ---
-title: Eliminar contenido
+title: Documento de Word: cómo eliminar contenido
 linktitle: Eliminar contenido
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a eliminar contenido de documentos de Word de manera eficaz con Aspose.Words para .NET. Siga tutoriales paso a paso y use ejemplos de código C# para aprender diferentes técnicas de eliminación de contenido.
 type: docs
 weight: 1370
@@ -16,7 +16,7 @@ Ya sea que necesite manipular, crear, convertir o generar documentos de Word, lo
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Eliminar saltos de página](./remove-page-breaks/) | Aprenda a eliminar saltos de página en un documento con la biblioteca Aspose.Words para .NET. Siga nuestra guía paso a paso para un diseño perfecto. |
-| [Eliminar saltos de sección](./remove-section-breaks/) | Aprenda a eliminar saltos de sección en un documento de Word usando la biblioteca Aspose.Words para .NET. Elimine eficazmente los saltos de sección que pueden interrumpir el formato de su documento.|
-| [Eliminar pies de página](./remove-footers/) | Aprenda a eliminar fácilmente los pies de página de los documentos de Word con Aspose.Words para .NET. Siga nuestra guía paso a paso para el manejo eficiente de archivos DOCX. |
-| [Eliminar tabla de contenido](./remove-table-of-contents/) | Aprenda a eliminar la tabla de contenido de un documento de Word usando Aspose.Words para .NET. |
+| [Eliminar saltos de página en un documento de Word](./remove-page-breaks/) | Aprenda a eliminar saltos de página en un documento de Word con la biblioteca Aspose.Words para .NET. Siga nuestra guía paso a paso para un diseño perfecto. |
+| [Eliminar saltos de sección en un documento de Word](./remove-section-breaks/) | Aprenda a eliminar saltos de sección en un documento de Word usando la biblioteca Aspose.Words para .NET. Elimine eficazmente los saltos de sección que pueden interrumpir el formato de su documento.|
+| [Eliminar pies de página en un documento de Word](./remove-footers/) | Aprenda a eliminar fácilmente los pies de página en documentos de Word con Aspose.Words para .NET. Siga nuestra guía paso a paso para el manejo eficiente de archivos DOCX. |
+| [Eliminar la tabla de contenido en un documento de Word](./remove-table-of-contents/) | Aprenda a eliminar la tabla de contenido en un documento de Word usando Aspose.Words para .NET. |

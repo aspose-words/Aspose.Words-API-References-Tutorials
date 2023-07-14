@@ -1,7 +1,7 @@
 ---
 title: Control de umbral de exposición para binarización Tiff
 linktitle: Control de umbral de exposición para binarización Tiff
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a controlar el umbral de binarización TIFF con Aspose.Words para .NET. Tutorial completo para imágenes de mejor calidad.
 type: docs
 weight: 10
@@ -52,7 +52,7 @@ Ahora puede ejecutar el código fuente para convertir su documento a formato TIF
 
 ```csharp 
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

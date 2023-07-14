@@ -1,7 +1,7 @@
 ---
 title: Ajouter le document au blanc
 linktitle: Ajouter le document au blanc
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajouter un document à un document de destination vide dans Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document();
 
 ## Étape 3 : supprimer le contenu existant du document de destination
 
-Pour garantir un document de destination propre, supprimez tout le contenu existant du document à l'aide de la`RemoveAllChildren` méthode.
+ Pour garantir un document de destination propre, supprimez tout le contenu existant du document à l'aide de la`RemoveAllChildren` méthode.
 
 ```csharp
 dstDoc.RemoveAllChildren();
@@ -58,12 +58,12 @@ Ceci termine l'implémentation de l'ajout d'un document à un document de destin
 ### Exemple de code source pour Append Document To Blank en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	// Le document de destination n'est pas vide, ce qui provoque souvent l'apparition d'une page vierge avant le document ajouté.
+	//Le document de destination n'est pas vide, ce qui provoque souvent l'apparition d'une page vierge avant le document ajouté.
 	// Cela est dû au fait que le document de base a une section vide et que le nouveau document commence à la page suivante.
 	// Supprimez tout le contenu du document de destination avant de l'ajouter.
 	dstDoc.RemoveAllChildren();

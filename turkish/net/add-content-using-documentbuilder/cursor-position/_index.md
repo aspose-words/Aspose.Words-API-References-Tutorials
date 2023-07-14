@@ -1,7 +1,7 @@
 ---
 title: İmleç Konumu
 linktitle: İmleç Konumu
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET Adım adım kılavuzunu kullanarak bir Word belgesinde imleç konumunu nasıl alacağınızı öğrenin.
 type: docs
 weight: 10

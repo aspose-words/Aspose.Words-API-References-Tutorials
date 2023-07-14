@@ -1,7 +1,7 @@
 ---
 title: Yapılandırılmış Belge Etiket Aralığı Xml Eşlemesini Başlat
 linktitle: Yapılandırılmış Belge Etiket Aralığı Xml Eşlemesini Başlat
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesinde başlayan yapılandırılmış bir belge etiketi aralığı için XML eşlemeyi nasıl kuracağınızı öğrenin.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesinde yapıland
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
 - Aspose.Words for .NET kitaplığı yüklendi.
-- Temel C# bilgisi ve Word belgeleriyle çalışma.
+- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini kurun
  Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 ### Yapılandırılmış Belge Etiket Aralığı için örnek kaynak kodu Aspose.Words for .NET kullanarak Xml Eşlemeyi Başlat 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

@@ -1,7 +1,7 @@
 ---
 title: إنشاء ارتباط في Word
 linktitle: إنشاء ارتباط في Word
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إنشاء ارتباط في Word بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -24,7 +24,7 @@ TextBox textBox2 = shape2.TextBox;
 
 ## الخطوة 2: إنشاء ارتباط بين مربعات النص
 
- سنقوم الآن بإنشاء رابط بين مربعي النص باستخدام امتداد`IsValidLinkTarget()` الطريقة و`Next` خاصية TextBox الأول.
+سنقوم الآن بإنشاء رابط بين مربعي النص باستخدام امتداد`IsValidLinkTarget()` الطريقة و`Next` خاصية TextBox الأول.
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
@@ -62,7 +62,7 @@ if (textBox1.IsValidLinkTarget(textBox2))
 
 #### س: كيف يمكن إنشاء ارتباط بين مربعي نص؟
 
- ج: لإنشاء ارتباط بين مربعين نصيين ، تحتاج إلى تعيين ملف`Next`الخاصية من مربع النص الأول إلى مربع النص الثاني. تأكد من التحقق من صلاحية رابط الهدف مسبقًا باستخدام`IsValidLinkTarget()` طريقة.
+ ج: لإنشاء ارتباط بين مربعين نصيين ، تحتاج إلى تعيين ملف`Next` الخاصية من مربع النص الأول إلى مربع النص الثاني. تأكد من التحقق من صلاحية رابط الهدف مسبقًا باستخدام`IsValidLinkTarget()` طريقة.
 
 #### س: هل من الممكن إنشاء روابط بين عناصر أخرى غير مربعات النص؟
 

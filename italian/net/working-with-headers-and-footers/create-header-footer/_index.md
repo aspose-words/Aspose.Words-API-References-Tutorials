@@ -1,7 +1,7 @@
 ---
 title: Crea piè di pagina intestazione
 linktitle: Crea piè di pagina intestazione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come creare intestazioni e piè di pagina nei tuoi documenti Word con Aspose.Words per .NET. Personalizza intestazioni e piè di pagina per ogni pagina.
 type: docs
 weight: 10

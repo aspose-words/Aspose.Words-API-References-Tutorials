@@ -1,7 +1,7 @@
 ---
 title: Hücrelerde ve Stilden Satırda Biçimlendirmeyi Genişletin
 linktitle: Hücrelerde ve Stilden Satırda Biçimlendirmeyi Genişletin
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir tablo stilinden biçimlendirmeyi hücrelere ve satırlara genişletmek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ### Aspose.Words for .NET kullanarak Hücrelerde ve Satırdan Stilde Biçimlendirmeyi Genişletmek için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

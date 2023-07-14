@@ -1,13 +1,13 @@
 ---
-title: Belge Seçenekleri ve Ayarlarla Programlama
-linktitle: Belge Seçenekleri ve Ayarlarla Programlama
-second_title: Aspose.Words for .NET API Referansı
+title: Belge Seçenekleri ve Ayarları ile Kelime İşleme
+linktitle: Belge Seçenekleri ve Ayarları ile Kelime İşleme
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinin davranışını özelleştirmek ve kontrol etmek için belge seçeneklerini ve ayarlarını nasıl kullanacağınızı öğrenin. Öğreticiler, belge özellikleri gibi farklı özelliklerde size yol gösterir.
 type: docs
 weight: 1510
 url: /tr/net/programming-with-document-options-and-settings/
 ---
-Aspose.Words for .NET "Belge Seçenekleri ve Ayarları ile Programlama" öğreticileri, Aspose.Words for .NET'te belge seçeneklerini ve ayarlarını değiştirmek için çeşitli özellikler ve teknikler konusunda size yol gösterir. Bu eğitimler, yükleme ayarlarını nasıl özelleştireceğinizi, yazı tiplerini, belge biçimlerini, şablonları ve daha fazlasını nasıl yöneteceğinizi anlamanıza yardımcı olur.
+Aspose.Words for .NET "Belge Seçenekleri ve Ayarları ile Kelime İşleme" öğreticileri, Aspose.Words for .NET'te belge seçeneklerini ve ayarlarını değiştirmek için çeşitli özellikler ve teknikler konusunda size yol gösterir. Bu eğitimler, yükleme ayarlarını nasıl özelleştireceğinizi, yazı tiplerini, belge biçimlerini, şablonları ve daha fazlasını nasıl yöneteceğinizi anlamanıza yardımcı olur.
 
 Öğreticiler, belge yükleme seçeneklerinin nasıl özelleştirileceğini açıklar. Yazı tipi yönetimi, bağlantı çözünürlüğü, performans optimizasyonu vb. gibi yükleme parametrelerini nasıl belirleyeceğinizi öğreneceksiniz. Bu seçenekler, belge yükleme davranışını tam olarak kontrol etmenize ve uygulamanızın performansını optimize etmenize olanak tanır.
 

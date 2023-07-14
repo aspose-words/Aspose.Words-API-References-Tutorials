@@ -1,7 +1,7 @@
 ---
 title: Rimuovi informazioni personali
 linktitle: Rimuovi informazioni personali
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata alla rimozione di informazioni personali da un documento con Aspose.Words per .NET.
 type: docs
 weight: 10

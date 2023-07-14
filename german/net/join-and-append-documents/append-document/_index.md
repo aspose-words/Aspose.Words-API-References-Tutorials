@@ -1,7 +1,7 @@
 ---
 title: Dokument anhängen
 linktitle: Dokument anhängen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den Inhalt eines Dokuments an ein anderes anhängen.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ Damit ist die Implementierung des Anhängens eines Dokuments mithilfe von Aspose
 ### Beispielquellcode für Append Document mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -63,7 +63,7 @@ Damit ist die Implementierung des Anhängens eines Dokuments mithilfe von Aspose
 	// Abschnittsknoten sind unmittelbare untergeordnete Elemente des Dokumentknotens, sodass wir das Dokument einfach aufzählen können.
 	foreach (Section srcSection in srcDoc)
 	{
-		//Da wir einen Abschnitt von einem Dokument in ein anderes kopieren,
+		// Da wir einen Abschnitt von einem Dokument in ein anderes kopieren,
 		// Es ist erforderlich, den Abschnittsknoten in das Zieldokument zu importieren.
 		// Dadurch werden alle dokumentspezifischen Verweise auf Stile, Listen usw. angepasst.
 		//

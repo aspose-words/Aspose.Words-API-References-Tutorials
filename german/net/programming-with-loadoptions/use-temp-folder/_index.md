@@ -1,14 +1,14 @@
 ---
 title: Verwenden Sie den Temp-Ordner
 linktitle: Verwenden Sie den Temp-Ordner
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie beim Hochladen von Dokumenten mit Aspose.Words für .NET einen temporären Ordner verwenden.
 type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/use-temp-folder/
 ---
 
-Beim Arbeiten mit Word-Dokumenten in einer C#-Anwendung kann es erforderlich sein, einen temporären Ordner zum Speichern temporärer Dateien zu verwenden, die während der Dokumentverarbeitung generiert werden. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe der LoadOptions-Ladeoptionen ganz einfach einen temporären Ordner angeben. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie Aspose.Words für .NET C#-Quellcode verwenden, um ein Dokument mithilfe eines temporären Ordners zu laden, der mit den LoadOptions-Ladeoptionen angegeben wurde.
+Bei der Textverarbeitung mit Word-Dokumenten in einer C#-Anwendung kann es erforderlich sein, einen temporären Ordner zum Speichern temporärer Dateien zu verwenden, die während der Dokumentverarbeitung generiert werden. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe der LoadOptions-Ladeoptionen ganz einfach einen temporären Ordner angeben. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie Aspose.Words für .NET C#-Quellcode verwenden, um ein Dokument mithilfe eines temporären Ordners zu laden, der mit den LoadOptions-Ladeoptionen angegeben wurde.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 
@@ -40,7 +40,7 @@ In diesem Beispiel laden wir das Dokument „Document.docx“, das sich im Dokum
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Konfigurieren Sie Ladeoptionen mit der Funktion „Temporären Ordner verwenden“.
+//Konfigurieren Sie Ladeoptionen mit der Funktion „Temporären Ordner verwenden“.
 LoadOptions loadOptions = new LoadOptions { TempFolder = ArtifactsDir };
 
 // Laden Sie das Dokument mithilfe eines angegebenen temporären Ordners

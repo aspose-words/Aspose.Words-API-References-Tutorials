@@ -1,14 +1,14 @@
 ---
 title: Ladda krypterad pdf
 linktitle: Ladda krypterad pdf
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg guide för att ladda en krypterad PDF med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 
-När du arbetar med PDF-dokument i din .NET-applikation kan det vara nödvändigt att ladda PDF-filer som är lösenordsskyddade. Aspose.Words för .NET är ett kraftfullt bibliotek som tillhandahåller funktionalitet för att ladda krypterade PDF-dokument. I den här artikeln guidar vi dig steg för steg för att förstå och använda den här funktionen.
+Vid ordbehandling med PDF-dokument i din .NET-applikation kan det vara nödvändigt att ladda PDF-filer som är lösenordsskyddade. Aspose.Words för .NET är ett kraftfullt bibliotek som tillhandahåller funktionalitet för att ladda krypterade PDF-dokument. I den här artikeln guidar vi dig steg för steg för att förstå och använda den här funktionen.
 
 ## Förstå Load Encrypted PDF-funktionen
 
@@ -85,6 +85,6 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## Slutsats
 
-I den här artikeln undersökte vi hur man använder funktionen Ladda krypterad PDF i Aspose.Words för .NET. Du lärde dig hur man laddar upp krypterade PDF-filer, hur man krypterar ett PDF-dokument, hur man laddar upp en krypterad PDF med ett lösenord och hur man genererar utdata i Markdown-format. Den här funktionen är extremt användbar när du arbetar med säkra PDF-dokument.
+I den här artikeln undersökte vi hur man använder funktionen Ladda krypterad PDF i Aspose.Words för .NET. Du lärde dig hur man laddar upp krypterade PDF-filer, hur man krypterar ett PDF-dokument, hur man laddar upp en krypterad PDF med ett lösenord och hur man genererar utdata i Markdown-format. Den här funktionen är extremt användbar vid ordbehandling med säkra PDF-dokument.
 
 

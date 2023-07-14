@@ -1,7 +1,7 @@
 ---
 title: Les champs de formulaire fonctionnent avec les propriétés
 linktitle: Les champs de formulaire fonctionnent avec les propriétés
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser les propriétés de champ de formulaire dans les documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ Ensuite, récupérez un champ de formulaire spécifique à partir de la collecti
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## Étape 3 : Travailler avec les propriétés du champ de formulaire
+## Étape 3 : traitement de texte avec les propriétés du champ de formulaire
 
  Vous pouvez manipuler diverses propriétés du champ de formulaire en fonction de son type. Dans cet exemple, nous vérifions si le champ du formulaire est de type`FieldType.FieldFormTextInput` et régler son`Result` propriété en conséquence :
 

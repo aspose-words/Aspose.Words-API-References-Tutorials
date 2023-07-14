@@ -1,7 +1,7 @@
 ---
 title: Ta emot meddelanden om teckensnitt
 linktitle: Ta emot meddelanden om teckensnitt
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du får meddelanden om saknade eller ersatta teckensnitt när du använder Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ### Exempel på källkod för att ta emot meddelanden om teckensnitt med Aspose.Words för .NET 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

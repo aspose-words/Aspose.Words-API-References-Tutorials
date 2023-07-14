@@ -1,7 +1,7 @@
 ---
 title: Håll ihop bordet
 linktitle: Håll ihop bordet
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du håller ihop ett bord i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ I den här handledningen ska vi lära oss hur man håller ihop en tabell i ett W
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Ladda dokumentet och hämta tabellen
-För att börja arbeta med tabellen måste vi ladda dokumentet och hämta tabellen vi vill behålla tillsammans. Följ dessa steg:
+För att starta ordbehandling med tabellen måste vi ladda dokumentet och hämta tabellen vi vill behålla tillsammans. Följ dessa steg:
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 
 // Hämta bordet
@@ -57,7 +57,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för Keep Table Together med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");

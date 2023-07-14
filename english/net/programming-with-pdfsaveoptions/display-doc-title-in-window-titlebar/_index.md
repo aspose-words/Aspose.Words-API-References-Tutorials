@@ -1,7 +1,7 @@
 ---
 title: Display Document Title In Window Titlebar
 linktitle: Display Document Title In Window Titlebar
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to display document title in window title bar when converting to PDF with Aspose.Words for .NET.
 type: docs
 weight: 10

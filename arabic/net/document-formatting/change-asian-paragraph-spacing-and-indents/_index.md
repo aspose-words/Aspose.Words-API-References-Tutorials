@@ -1,7 +1,7 @@
 ---
 title: تغيير تباعد الفقرات الآسيوية والمسافات البادئة
 linktitle: تغيير تباعد الفقرات الآسيوية والمسافات البادئة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تغيير تباعد الفقرات الآسيوية والمسافات البادئة باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

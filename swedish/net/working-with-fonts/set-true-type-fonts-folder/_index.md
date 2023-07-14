@@ -1,7 +1,7 @@
 ---
 title: Ställ in True Type Fonts-mappen
 linktitle: Ställ in True Type Fonts-mappen
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ställa in mappen True Type fonts när du renderar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ### Exempel på källkod för Set True Type Fonts Folder med Aspose.Words för .NET 
 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
 ## Slutsats
-den här handledningen lärde vi oss hur man ställer in mappen true type fonts när man renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange en anpassad mapp som innehåller True Type-teckensnitt som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att arbeta med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa typsnitten som används när du renderar dina dokument efter dina specifika behov.
+den här handledningen lärde vi oss hur man ställer in mappen true type fonts när man renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange en anpassad mapp som innehåller True Type-teckensnitt som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för ordbehandling med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa typsnitten som används när du renderar dina dokument efter dina specifika behov.
 
 ### FAQ's
 

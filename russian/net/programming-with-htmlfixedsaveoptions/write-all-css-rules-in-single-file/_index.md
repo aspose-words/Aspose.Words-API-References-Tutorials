@@ -1,7 +1,7 @@
 ---
 title: Запишите все правила CSS в один файл
 linktitle: Запишите все правила CSS в один файл
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как преобразовать документ Word в фиксированный HTML, записав все правила CSS в одном файле с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

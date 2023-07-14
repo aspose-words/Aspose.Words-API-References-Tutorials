@@ -1,7 +1,7 @@
 ---
 title: Använd teckensnitt från målmaskin
 linktitle: Använd teckensnitt från målmaskin
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du konverterar ett Word-dokument till fast HTML med hjälp av målmaskinens teckensnitt med Aspose.Words för .NET.
 type: docs
 weight: 10

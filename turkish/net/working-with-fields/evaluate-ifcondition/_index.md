@@ -1,7 +1,7 @@
 ---
 title: IF Koşulunu Değerlendir
 linktitle: IF Koşulunu Değerlendir
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinizdeki IF koşulunu değerlendirmek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Burada örnek olarak "1=1" koşulunu kullandık, ancak koşulu gerektiği gibi �
 
 ## 3. Adım: IF koşulunu değerlendirin
 
- bu`EvaluateCondition()`yöntemi, IF alanının durumunu değerlendirmek için kullanılır.
+ bu`EvaluateCondition()` yöntemi, IF alanının durumunu değerlendirmek için kullanılır.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();

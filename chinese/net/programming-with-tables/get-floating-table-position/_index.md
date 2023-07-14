@@ -1,7 +1,7 @@
 ---
 title: 获取浮动表位置
 linktitle: 获取浮动表位置
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 获取 Word 文档中浮动表格的位置。
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/get-floating-table-position/
 2. 添加对 Aspose.Words for .NET 库的引用。
 
 ## 第 2 步：加载文档并访问表格
-要开始使用表格，我们需要加载包含它们的文档并访问它们。按着这些次序：
+要开始使用表格进行文字处理，我们需要加载包含它们的文档并访问它们。按着这些次序：
 
 ```csharp
 //文档目录的路径

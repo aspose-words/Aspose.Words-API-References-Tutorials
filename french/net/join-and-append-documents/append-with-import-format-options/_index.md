@@ -1,7 +1,7 @@
 ---
 title: Ajouter avec les options de format d'importation
 linktitle: Ajouter avec les options de format d'importation
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajouter un document avec des options de format d'importation à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Étape 4 : Ajouter le document source au document de destination
 
- Utilisez le`AppendDocument` méthode du document de destination pour ajouter le document source. Passer`ImportFormatMode.UseDestinationStyles` comme deuxième paramètre pour utiliser les styles et la mise en forme du document de destination.
+ Utilisez le`AppendDocument`méthode du document de destination pour ajouter le document source. Passer`ImportFormatMode.UseDestinationStyles` comme deuxième paramètre pour utiliser les styles et la mise en forme du document de destination.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,12 +58,12 @@ Ceci termine la mise en œuvre de l'ajout d'un document avec des options de form
 ### Exemple de code source pour Ajouter avec les options de format d'importation à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//Précisez qu'en cas de conflit de numérotation dans les documents source et de destination,
+	// Précisez qu'en cas de conflit de numérotation dans les documents source et de destination,
 	// alors la numérotation du document source sera utilisée.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

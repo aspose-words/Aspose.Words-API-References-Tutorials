@@ -1,7 +1,7 @@
 ---
 title: Schriftarteinstellungen mit Ladeoptionen
 linktitle: Schriftarteinstellungen mit Ladeoptionen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie ein Word-Dokument mit benutzerdefinierten Ladeoptionen und entsprechenden Schriftarteinstellungen laden.
 type: docs
 weight: 10
@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Beispielquellcode für Schriftarteinstellungen mit Ladeoptionen unter Verwendung von Aspose.Words für .NET 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -57,7 +57,7 @@ In diesem Tutorial haben wir gesehen, wie man Ladeoptionen mit Schriftarteinstel
 
 #### F: Wie kann ich beim Laden eines Dokuments in Aspose.Words eine Standardschriftart angeben?
 
- A: Um beim Laden eines Dokuments in Aspose.Words eine Standardschriftart festzulegen, können Sie die verwenden`LoadOptions` Klasse und legen Sie die fest`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
+ A: Um beim Laden eines Dokuments in Aspose.Words eine Standardschriftart festzulegen, können Sie die verwenden`LoadOptions`Klasse und legen Sie die fest`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
 
 #### F: Welche anderen Schriftarteinstellungen kann ich mit den Ladeoptionen in Aspose.Words angeben?
 

@@ -1,7 +1,7 @@
 ---
 title: Legen Sie Russisch als Standardbearbeitungssprache fest
 linktitle: Legen Sie Russisch als Standardbearbeitungssprache fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Festlegen von Russisch als Standardbearbeitungssprache eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10

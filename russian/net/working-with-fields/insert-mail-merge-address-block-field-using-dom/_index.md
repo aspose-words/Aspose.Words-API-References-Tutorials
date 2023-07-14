@@ -1,7 +1,7 @@
 ---
 title: Вставьте поле блока адреса для слияния с помощью DOM
 linktitle: Вставьте поле блока адреса для слияния с помощью DOM
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставить поле блока адреса слияния в документы Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

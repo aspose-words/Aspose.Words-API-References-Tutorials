@@ -1,7 +1,7 @@
 ---
 title: Esporta in markdown con allineamento del contenuto della tabella
 linktitle: Esporta in markdown con allineamento del contenuto della tabella
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come esportare il contenuto della tabella con diversi allineamenti in file Markdown utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

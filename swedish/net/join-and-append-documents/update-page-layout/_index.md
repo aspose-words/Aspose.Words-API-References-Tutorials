@@ -1,7 +1,7 @@
 ---
 title: Uppdatera sidlayout
 linktitle: Uppdatera sidlayout
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du uppdaterar sidlayouten när du går med i och lägger till Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Innan du börjar, se till att du har följande:
 
 ## Steg 1: Initiera dokumentkatalogerna
 
- Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
+ Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir`variabel till sökvägen där dina dokument finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Ladda käll- och måldokumenten
 
- Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
+ Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktor enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Steg 5: Uppdatera sidlayout igen
 
- När du har lagt till källdokumentet måste du ringa till`UpdatePageLayout`metod på måldokumentet igen för att säkerställa att eventuella ändringar som görs efter tilläggsåtgärden återspeglas i den renderade utdata.
+ När du har lagt till källdokumentet måste du ringa till`UpdatePageLayout` metod på måldokumentet igen för att säkerställa att eventuella ändringar som görs efter tilläggsåtgärden återspeglas i den renderade utdata.
 
 ```csharp
 dstDoc.UpdatePageLayout();
@@ -71,12 +71,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 Här är den fullständiga källkoden för funktionen "Uppdatera sidlayout" i C# med Aspose.Words för .NET:
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Om måldokumentet renderas till PDF, bild etc.
+	//Om måldokumentet renderas till PDF, bild etc.
 	// eller UpdatePageLayout anropas före källdokumentet. Bifogas,
 	// då kommer alla ändringar som görs efter inte att återspeglas i den renderade utdata
 	dstDoc.UpdatePageLayout();

@@ -1,7 +1,7 @@
 ---
 title: Lägg till Css Class Name Prefix
 linktitle: Lägg till Css Class Name Prefix
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att lägga till ett CSS-klassnamnsprefix när du konverterar ett dokument till HTML med Aspose.Words för .NET.
 type: docs
 weight: 10

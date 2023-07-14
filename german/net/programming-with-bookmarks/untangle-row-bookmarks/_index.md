@@ -1,8 +1,8 @@
 ---
-title: Zeilenlesezeichen entwirren
-linktitle: Zeilenlesezeichen entwirren
-second_title: Aspose.Words für .NET API-Referenz
-description: Erfahren Sie, wie Sie verschachtelte Zeilenlesezeichen entwirren, um bestimmte Zeilen zu entfernen, ohne dass sich dies auf andere Lesezeichen auswirkt.
+title: Zeilenlesezeichen im Word-Dokument entwirren
+linktitle: Zeilenlesezeichen im Word-Dokument entwirren
+second_title: Aspose.Words-Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie verschachtelte Zeilenlesezeichen in einem Word-Dokument entwirren, um bestimmte Zeilen zu entfernen, ohne dass sich dies auf andere Lesezeichen auswirkt.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/untangle-row-bookmarks/
@@ -62,7 +62,7 @@ Hier ist der vollständige Beispielquellcode zum Entwirren von Lesezeichen aus Z
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	//Dadurch wird die benutzerdefinierte Aufgabe ausgeführt, die Enden der Zeilenlesezeichen in derselben Zeile wie die Lesezeichenanfänge zu platzieren.
+	// Dadurch wird die benutzerdefinierte Aufgabe ausgeführt, die Enden der Zeilenlesezeichen in derselben Zeile wie die Lesezeichenanfänge zu platzieren.
 	Untangle(doc);
 
 	// Jetzt können wir ganz einfach Zeilen mit einem Lesezeichen löschen, ohne die Lesezeichen einer anderen Zeile zu beschädigen.
@@ -79,3 +79,25 @@ Hier ist der vollständige Beispielquellcode zum Entwirren von Lesezeichen aus Z
 ## Abschluss
 
 In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Zeilenlesezeichen entwirren“ von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um Zeilenlesezeichen zu entwirren und eine bestimmte Zeile zu löschen, ohne andere Lesezeichen zu beschädigen.
+
+### FAQs zum Entwirren von Zeilenlesezeichen in Word-Dokumenten
+
+#### F: Funktioniert „Zeilenlesezeichen entschlüsseln“ nur mit Zeilenlesezeichen in Tabellen?
+
+A: Ja, die Funktion „Zeilenlesezeichen entwirren“ wurde speziell zum Entwirren von Zeilenlesezeichen in Tabellen entwickelt. Mit dieser Funktion können Zeilenlesezeichen in Arrays verarbeitet und sichergestellt werden, dass sich die Enden der Lesezeichen in derselben Zeile wie die Anfänge der Lesezeichen befinden.
+
+#### F: Ändert die Funktion „Zeilenlesezeichen entschlüsseln“ den Inhalt des Originaldokuments?
+
+A: Ja, die Funktion „Zeilenlesezeichen entschlüsseln“ ändert das Originaldokument, indem sie die Enden der Zeilenlesezeichen verschiebt, um sie in derselben Zeile wie die Anfänge der Lesezeichen zu platzieren. Stellen Sie sicher, dass Sie eine Sicherungskopie des Dokuments speichern, bevor Sie diese Funktion anwenden.
+
+#### F: Wie kann ich Zeilenlesezeichen in meinem Word-Dokument identifizieren?
+
+A: Zeilenlesezeichen werden normalerweise in Tabellen verwendet, um bestimmte Abschnitte zu markieren. Sie können Zeilenlesezeichen identifizieren, indem Sie die Lesezeichen im Dokument durchsuchen und prüfen, ob sich die Lesezeichen in Tabellenzeilen befinden.
+
+#### F: Ist es möglich, Zeilenlesezeichen in nicht benachbarten Tabellen zu entwirren?
+
+A: Die in diesem Artikel vorgestellte Funktion „Zeilenlesezeichen entwirren“ dient dazu, Zeilenlesezeichen in benachbarten Tabellen zu entwirren. Um Zeilenlesezeichen in nicht benachbarten Tabellen zu entwirren, können je nach Struktur des Dokuments zusätzliche Anpassungen am Code erforderlich sein.
+
+#### F: Welche anderen Manipulationen kann ich an Zeilenlesezeichen vornehmen, nachdem sie entschlüsselt wurden?
+
+A: Sobald die Zeilen-Lesezeichen entschlüsselt sind, können Sie je nach Bedarf verschiedene Manipulationen durchführen. Dies kann das Bearbeiten, Löschen oder Hinzufügen von Inhalten zu mit Lesezeichen versehenen Zeilen umfassen. Gehen Sie mit Zeilenlesezeichen vorsichtig um, um unerwünschte Auswirkungen auf den Rest des Dokuments zu vermeiden.

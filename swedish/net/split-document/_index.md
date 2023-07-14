@@ -1,8 +1,8 @@
 ---
-title: Dela dokument
-linktitle: Dela dokument
-second_title: Aspose.Words för .NET API Referens
-description: Lär dig hur du effektivt delar upp ett Word-dokument i separata delar med Aspose.Words för .NET. Följ steg-för-steg tutorials och använd C#-kodexempel för att lära dig olika tekniker för dokumentdelning.
+title: Uppdelning av Word-dokument
+linktitle: Uppdelning av Word-dokument
+second_title: Aspose.Words Document Processing API
+description: Lär dig hur du delar upp ett Word-dokument i separata delar med Aspose.Words för .NET. Den här omfattande resursen ger detaljerade handledningar, källkodsexempel och praktiska tips för att dela upp dokument efter olika förhållanden.
 type: docs
 weight: 1450
 url: /sv/net/split-document/

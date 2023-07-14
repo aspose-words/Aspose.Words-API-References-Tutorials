@@ -1,7 +1,7 @@
 ---
 title: Ole-Objekt mit Ole-Paket in Word einfügen
 linktitle: Ole-Objekt mit Ole-Paket in Word einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt mit einem OLE-Paket in ein Dokument einfügen.
 type: docs
 weight: 10

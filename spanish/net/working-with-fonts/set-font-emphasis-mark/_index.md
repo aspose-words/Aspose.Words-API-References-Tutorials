@@ -1,7 +1,7 @@
 ---
 title: Establecer marca de énfasis de fuente
 linktitle: Establecer marca de énfasis de fuente
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a configurar el estilo de énfasis de fuente en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ### Ejemplo de código fuente para Establecer marca de énfasis de fuente usando Aspose.Words para .NET 
 
 ```csharp
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();

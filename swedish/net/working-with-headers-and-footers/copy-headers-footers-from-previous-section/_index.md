@@ -1,7 +1,7 @@
 ---
 title: Kopiera sidhuvuden sidfötter från föregående avsnitt
 linktitle: Kopiera sidhuvuden sidfötter från föregående avsnitt
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du kopierar sidhuvuden och sidfötter från föregående avsnitt i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

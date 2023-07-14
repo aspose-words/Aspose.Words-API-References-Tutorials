@@ -1,7 +1,7 @@
 ---
-title: Document Protection
-linktitle: Document Protection
-second_title: Aspose.Words for .NET API Reference
+title: Word Document Protection
+linktitle: Word Document Protection
+second_title: Aspose.Words Document Processing API
 description: Learn how to protect Word documents with Aspose.Words for .NET. The tutorials will guide you through the various protection methods, such as locking changes, password protection, restricting access to document elements, and much more.
 type: docs
 weight: 1430
@@ -16,11 +16,11 @@ Aspose.Words for .NET document protection tutorials guide you through practical 
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Password Protection](./password-protection/) | Learn how to password protection your Word documents using Aspose.Words for .NET. |
-| [Allow Only Form Fields Protect](./allow-only-form-fields-protect/) | Learn how to use Aspose.Words for .NET to protect documents and only allow form fields to be edited. |
-| [Remove Document Protection](./remove-document-protection/) | Learn how to remove protection from a Word document with Aspose.Words for .NET. |
-| [Unrestricted Editable Regions](./unrestricted-editable-regions/) | Learn how to create unrestricted editable areas in a Word document with Aspose.Words for .NET. |
-| [Unrestricted Section](./unrestricted-section/) | Learn how to define unrestricted sections in a Word document with Aspose.Words for .NET. |
-| [Get Protection Type](./get-protection-type/) | Learn how to use the Get Protection Type function of Aspose.Words for .NET to determine the protection type of a document. |
-| [Read Only Protection](./read-only-protection/) | Learn how to protect your read-only Word documents with Aspose.Words for .NET. |
+| [Password Protection In Word Document](./password-protection/) | Learn how to password protection in Word documents using Aspose.Words for .NET. |
+| [Allow Only Form Fields Protect In Word Document](./allow-only-form-fields-protect/) | Learn how to use Aspose.Words for .NET to protect in word document and only allow form fields to be edited. |
+| [Remove Document Protection In Word Document](./remove-document-protection/) | Learn how to remove protection in a Word document with Aspose.Words for .NET. |
+| [Unrestricted Editable Regions In Word Document](./unrestricted-editable-regions/) | Learn how to create unrestricted editable areas in a Word document with Aspose.Words for .NET. |
+| [Unrestricted Section In Word Document](./unrestricted-section/) | Learn how to define unrestricted sections in a Word document with Aspose.Words for .NET. |
+| [Get Protection Type In Word Document](./get-protection-type/) | Learn how to use the Get Protection Type in word document function of Aspose.Words for .NET to determine the protection type of a document. |
+| [Read Only Protection In Word Document](./read-only-protection/) | Learn how to protect your read-only in Word documents with Aspose.Words for .NET. |
 | [Remove Read Only Restriction](./remove-read-only-restriction/) | Learn how to remove the read-only restriction from a Word document with Aspose.Words for .NET. |

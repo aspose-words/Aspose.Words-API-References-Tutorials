@@ -1,7 +1,7 @@
 ---
 title: Добавить комментарии
 linktitle: Добавить комментарии
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как добавлять комментарии к документам Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 
 #### В: Как я могу получить все комментарии, присутствующие в документе?
 
- О: Вы можете получить все комментарии, присутствующие в документе, с помощью`Document.Comments` свойство.
+О: Вы можете получить все комментарии, присутствующие в документе, с помощью`Document.Comments` свойство.
 
 #### В: Могу ли я удалить определенный комментарий в Aspose.Words для .NET?
 

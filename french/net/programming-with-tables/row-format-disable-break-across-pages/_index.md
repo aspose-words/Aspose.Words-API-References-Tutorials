@@ -1,7 +1,7 @@
 ---
 title: Format de ligne Désactiver le saut sur les pages
 linktitle: Format de ligne Désactiver le saut sur les pages
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment désactiver le saut de ligne pour un tableau sur plusieurs pages dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Dans ce didacticiel, nous allons apprendre à désactiver le saut de ligne d'un 
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Étape 2 : Chargement du document
-Pour commencer à travailler avec le document, procédez comme suit :
+Pour démarrer le traitement de texte avec le document, procédez comme suit :
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
@@ -53,7 +53,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour Row Format Disable Break Across Pages en utilisant Aspose.Words pour .NET 
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");

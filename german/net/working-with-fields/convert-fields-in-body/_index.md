@@ -1,7 +1,7 @@
 ---
 title: Felder im Textkörper konvertieren
 linktitle: Felder im Textkörper konvertieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Seitenfelder in Text im Hauptteil eines Word-Dokuments konvertieren.
 type: docs
 weight: 10
@@ -22,13 +22,13 @@ Deklarieren Sie zunächst eine Variable für den Pfad zu Ihrem Dokumentenverzeic
 // Der Pfad zu Ihrem Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
 ## Schritt 3: Konvertieren Sie Seitenfelder in einfachen Text
 
-Nachdem das Dokument nun geladen ist, können wir mit den Konvertierungsschritten fortfahren. Um die Seitenfelder im Hauptteil des ersten Abschnitts in einfachen Text umzuwandeln, können Sie die verwenden`Range.Fields` Methode, um alle Felder im angegebenen Bereich abzurufen und dann Felder des Typs herauszufiltern`FieldType.FieldPage` . Dann können Sie das verwenden`ForEach` Methode, um jedes Feld zu durchlaufen und aufzurufen`Unlink()` Methode, um es in einfachen Text umzuwandeln.
+ Nachdem das Dokument nun geladen ist, können wir mit den Konvertierungsschritten fortfahren. Um die Seitenfelder im Hauptteil des ersten Abschnitts in einfachen Text umzuwandeln, können Sie die verwenden`Range.Fields` Methode, um alle Felder im angegebenen Bereich abzurufen und dann Felder des Typs herauszufiltern`FieldType.FieldPage` . Dann können Sie das verwenden`ForEach` Methode, um jedes Feld zu durchlaufen und aufzurufen`Unlink()` Methode, um es in einfachen Text umzuwandeln.
 
 ```csharp
 // Übergeben Sie die entsprechenden Parameter, um die Seitenfelder im Hauptteil des ersten Abschnitts in einfachen Text umzuwandeln.
@@ -37,7 +37,7 @@ doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToL
 
 ## Schritt 4: Speichern Sie das geänderte Dokument
 
- Nachdem Sie die Seitenfelder in einfachen Text umgewandelt haben, können Sie das geänderte Dokument mit speichern`Save()` -Methode und Angabe des Pfads und Namens der Ausgabedatei. In unserem Beispiel speichern wir es als „WorkingWithFields.ConvertFieldsInBody.docx“.
+Nachdem Sie die Seitenfelder in einfachen Text umgewandelt haben, können Sie das geänderte Dokument mit speichern`Save()` -Methode und Angabe des Pfads und Namens der Ausgabedatei. In unserem Beispiel speichern wir es als „WorkingWithFields.ConvertFieldsInBody.docx“.
 
 ```csharp
 // Speichern Sie das geänderte Dokument
@@ -52,7 +52,7 @@ Hier ist das vollständige Quellcodebeispiel für die Konvertierung von Feldern 
 // Der Pfad zu Ihrem Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Übergeben Sie die entsprechenden Parameter, um die Seitenfelder im Hauptteil des ersten Abschnitts in einfachen Text umzuwandeln.

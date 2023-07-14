@@ -1,7 +1,7 @@
 ---
 title: Contrôle du seuil d'exposition pour la binarisation Tiff
 linktitle: Contrôle du seuil d'exposition pour la binarisation Tiff
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à contrôler le seuil de binarisation TIFF avec Aspose.Words pour .NET. Tutoriel complet pour des images de meilleure qualité.
 type: docs
 weight: 10
@@ -52,7 +52,7 @@ Vous pouvez maintenant exécuter le code source pour convertir votre document au
 
 ```csharp 
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

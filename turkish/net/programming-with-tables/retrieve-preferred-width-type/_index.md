@@ -1,7 +1,7 @@
 ---
 title: Tercih Edilen Genişlik Tipini Al
 linktitle: Tercih Edilen Genişlik Tipini Al
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word tablosundaki bir hücrenin tipini ve tercih edilen genişlik değerini nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablo h
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi yükleme
-Belgeyle çalışmaya başlamak için şu adımları izleyin:
+Sözcük İşlemeyi belgeyle başlatmak için şu adımları izleyin:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -50,7 +50,7 @@ Burada ilk tabloyu getirmek için belgeyi kullanıyoruz, ardından otomatik tabl
 ### Aspose.Words for .NET kullanarak Tercih Edilen Genişlik Tipini Al için örnek kaynak kodu 
 
 ```csharp
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

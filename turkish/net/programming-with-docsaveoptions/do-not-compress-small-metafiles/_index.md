@@ -1,14 +1,14 @@
 ---
 title: Küçük Meta Dosyaları Sıkıştırmayın
 linktitle: Küçük Meta Dosyaları Sıkıştırmayın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Belgeleri kaydederken Küçük Meta Dosyaları Sıkıştırma özelliğini etkinleştirmek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 
-Bir belgedeki meta verileri sıkıştırmak, bir C# uygulamasındaki dosyalarla çalışırken yaygın olarak görülen bir özelliktir. Ancak, kalitelerini korumak için küçük dosyaların meta verilerinin sıkıştırılmaması gerekebilir. Bu adım adım kılavuzda, belge kaydetme seçeneklerinde "Küçük Meta Dosyaları Sıkıştırma" özelliğini etkinleştirmek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
+Bir belgedeki meta verileri sıkıştırmak, bir C# uygulamasındaki dosyalarla Sözcük İşleme yaparken yaygın bir özelliktir. Ancak, kalitelerini korumak için küçük dosyaların meta verilerinin sıkıştırılmaması gerekebilir. Bu adım adım kılavuzda, belge kaydetme seçeneklerinde "Küçük Meta Dosyaları Sıkıştırma" özelliğini etkinleştirmek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 
@@ -60,7 +60,7 @@ Bu yapılandırma, belge kaydedildiğinde küçük dosya meta verilerinin sıkı
 
 ## 5. Adım: Belgeyi kaydedin
 
- Son olarak, belgeyi kullanarak kaydedebilirsiniz.`Save` Document sınıfının yöntemi. Dosyanın tam yolunu ve istenen dosya adını belirtin. Örneğin :
+Son olarak, belgeyi kullanarak kaydedebilirsiniz.`Save` Document sınıfının yöntemi. Dosyanın tam yolunu ve istenen dosya adını belirtin. Örneğin :
 
 ```csharp
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);

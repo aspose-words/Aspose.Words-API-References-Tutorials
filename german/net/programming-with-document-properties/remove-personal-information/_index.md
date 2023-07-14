@@ -1,7 +1,7 @@
 ---
 title: Persönliche Daten entfernen
 linktitle: Persönliche Daten entfernen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Entfernen persönlicher Informationen aus einem Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -60,4 +60,4 @@ Dieser Code speichert das Dokument mit den entfernten persönlichen Informatione
 
  Stellen Sie sicher, dass Sie den richtigen Dokumentpfad angeben`dataDir` Variable.
 
-Sie haben jetzt erfahren, wie Sie mit Aspose.Words für .NET persönliche Informationen aus einem Dokument entfernen. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie vertrauliche Informationen ganz einfach aus Ihren eigenen Dokumenten entfernen.
+Sie haben jetzt gelernt, wie Sie mit Aspose.Words für .NET persönliche Informationen aus einem Dokument entfernen. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie vertrauliche Informationen ganz einfach aus Ihren eigenen Dokumenten entfernen.

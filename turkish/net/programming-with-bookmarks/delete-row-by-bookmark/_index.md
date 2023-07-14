@@ -1,14 +1,14 @@
 ---
-title: Yer İşaretine Göre Satırı Sil
-linktitle: Yer İşaretine Göre Satırı Sil
-second_title: Aspose.Words for .NET API Referansı
-description: Aspose.Words for .NET kullanarak bir belgedeki belirli bir yer imine dayalı bir tablo satırını nasıl sileceğinizi öğrenin.
+title: Word Belgesinde Yer İşaretine Göre Satırı Sil
+linktitle: Word Belgesinde Yer İşaretine Göre Satırı Sil
+second_title: Aspose.Words Belge İşleme API'sı
+description: Aspose.Words for .NET kullanarak word belgesindeki belirli bir yer imine dayalı bir tablo satırını nasıl sileceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 
-Bu makalede, Aspose.Words for .NET kitaplığındaki Yer İşaretine Göre Satırı Sil işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir belgedeki belirli bir yer imine dayalı olarak bir tablo satırını silmenizi sağlar.
+Bu makalede, Aspose.Words for .NET kitaplığındaki Yer İşaretine Göre Satırı Sil işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, word belgesindeki belirli bir yer imine dayalı olarak bir tablo satırını silmenizi sağlar.
 
 ## Önkoşullar
 
@@ -17,7 +17,7 @@ Bu makalede, Aspose.Words for .NET kitaplığındaki Yer İşaretine Göre Satı
 
 ## 1. Adım: Yer imini alma
 
- biz kullanıyoruz`Bookmarks`tablo satırını silmek için kullanmak istediğimiz belirli yer işaretini almak için belge aralığının özelliği:
+ biz kullanıyoruz`Bookmarks` tablo satırını silmek için kullanmak istediğimiz belirli yer işaretini almak için belge aralığının özelliği:
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
@@ -48,3 +48,21 @@ Aspose.Words for .NET kullanarak belirli bir yer imine dayalı bir tablo satır�
 ## Çözüm
 
 Bu makalede, Aspose.Words for .NET'in Yer İşaretine Göre Satırı Sil işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Belgedeki belirli bir yer imine dayalı olarak bir tablo satırını silmek için adım adım ilerleyen bir kılavuz izledik.
+
+### Word belgesinde yer imlerine göre satır silmek için SSS
+
+#### S: Aynı yer işaretini kullanarak birden çok satırı silebilir miyim?
+
+C: Evet, aynı yer işaretini kullanarak birden çok satırı silebilirsiniz. Ancak, silinecek satır sayısını belirlemek ve sağlanan kod parçacığında gerekli ayarlamaları yapmak için kodunuzdaki mantığı kullanmanız gerekir.
+
+#### S: Yer imi belgede yoksa ne olur?
+
+C: Belgede belirtilen yer imi yoksa, kod parçacığı yer imi nesnesi için boş bir değer döndürür. Bu nedenle, tablo satırını silmeye çalışmadan önce uygun kontrolleri ekleyerek bu senaryoyu kodunuzda işlemeniz gerekir.
+
+#### S: Aspose.Words kitaplığının kullanımı ücretsiz mi?
+
+Y: Aspose.Words kitaplığı ticari bir kitaplıktır ve onu projelerinizde kullanmak için geçerli bir lisansa ihtiyacınız olabilir. Lisanslama seçenekleri ve fiyatları hakkında daha fazla bilgi edinmek için resmi Aspose web sitesini ziyaret edebilirsiniz.
+
+#### S: Word belgesinin belirli bir bölümündeki bir tablodan satırları silebilir miyim?
+
+C: Evet, bir Word belgesinin belirli bir bölümündeki bir tablodan satırları silebilirsiniz. Belirli bir bölümü hedeflemek için sağlanan kod parçacığını, o bölümdeki uygun aralığı veya yer işaretini kullanarak değiştirebilirsiniz.

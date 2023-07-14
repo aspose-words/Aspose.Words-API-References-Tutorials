@@ -1,7 +1,7 @@
 ---
 title: Rusçayı Varsayılan Düzenleme Dili Olarak Ayarla
 linktitle: Rusçayı Varsayılan Düzenleme Dili Olarak Ayarla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgenin varsayılan düzenleme dili olarak Rusça'yı ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10

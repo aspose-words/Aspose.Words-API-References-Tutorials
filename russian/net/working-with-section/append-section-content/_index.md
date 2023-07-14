@@ -1,7 +1,7 @@
 ---
 title: Добавить содержимое слова раздела
 linktitle: Добавить содержимое слова раздела
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого руководства вы узнаете, как добавить текстовое содержимое в определенные разделы документа Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

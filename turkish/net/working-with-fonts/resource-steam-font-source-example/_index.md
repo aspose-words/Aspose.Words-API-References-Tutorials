@@ -1,7 +1,7 @@
 ---
 title: Kaynak Steam Yazı Tipi Kaynağı Örneği
 linktitle: Kaynak Steam Yazı Tipi Kaynağı Örneği
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Özel yazı tiplerini Aspose.Words for .NET'e yüklemek için Kaynak Akışı Yazı Tipi Kaynağını nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ### Aspose.Words for .NET kullanan Kaynak Steam Yazı Tipi Kaynak Örneği için örnek kaynak kodu 
 
 ```csharp
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

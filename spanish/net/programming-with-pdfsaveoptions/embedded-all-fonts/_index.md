@@ -1,7 +1,7 @@
 ---
 title: Incrustar fuentes en documento PDF
 linktitle: Incrustar fuentes en documento PDF
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para incrustar fuentes en un PDF usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -97,4 +97,4 @@ Legibilidad mejorada: la incrustación de fuentes garantiza una mejor legibilida
 R: Sí, incrustar todas las fuentes en un documento PDF puede aumentar el tamaño del archivo PDF generado, ya que los datos de las fuentes deben incluirse en el archivo. Sin embargo, este aumento de tamaño suele ser insignificante para la mayoría de los documentos, y los beneficios de incrustar fuentes a menudo superan este ligero aumento de tamaño.
 
 #### P: ¿Puedo seleccionar fuentes específicas para incrustarlas en un documento PDF?
- R: Sí, con Aspose.Words para .NET puede seleccionar fuentes específicas para incrustarlas en un documento PDF usando opciones de configuración avanzadas. Por ejemplo, puede utilizar el`SubsetFonts` propiedad de la`PdfSaveOptions` objeto para especificar qué fuentes incluir, o usar opciones adicionales para establecer filtros de selección de fuentes personalizados.
+ R: Sí, con Aspose.Words para .NET puede seleccionar fuentes específicas para incrustarlas en un documento PDF usando opciones de configuración avanzadas. Por ejemplo, puede utilizar el`SubsetFonts`propiedad de la`PdfSaveOptions` objeto para especificar qué fuentes incluir, o usar opciones adicionales para establecer filtros de selección de fuentes personalizados.

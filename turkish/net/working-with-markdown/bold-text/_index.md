@@ -1,7 +1,7 @@
 ---
 title: Kalın yazı
 linktitle: Kalın yazı
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET Adım adım kılavuz ile metni kalın yapmayı öğrenin.
 type: docs
 weight: 10
@@ -53,7 +53,7 @@ Tebrikler! Artık Aspose.Words for .NET ile kalın yazı yazmayı öğrendiniz.
 
 #### S: Aspose.Words'te metni nasıl kalın yapabilirim?
 
- C: Aspose.Words'te metni kalın yapmak için`Font.Bold` mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` belirli bir metni kalınlaştırmak için Örneğin, kullanabilirsiniz`run.Font.Bold=true` içindeki metni kalın yapmak için`Run` nesne.
+ C: Aspose.Words'te metni kalın yapmak için`Font.Bold`mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` belirli bir metni kalınlaştırmak için Örneğin, kullanabilirsiniz`run.Font.Bold=true` içindeki metni kalın yapmak için`Run` nesne.
 
 #### S: Aynı paragrafta birkaç metin parçasını kalın yapmak mümkün mü?
 
@@ -61,4 +61,4 @@ Tebrikler! Artık Aspose.Words for .NET ile kalın yazı yazmayı öğrendiniz.
 
 #### S: Aspose.Words'te bir tablo veya hücredeki metni kalınlaştırabilir miyim?
 
- C: Evet, Aspose.Words'te bir tablo veya hücredeki metni kalın yapabilirsiniz. Uygun yöntemleri kullanarak istediğiniz hücreye veya paragrafa gidebilir ve ardından kalın biçimlendirmeyi kullanarak uygulayabilirsiniz.`Font.Bold` mülkiyeti`Run` veya`Paragraph` nesne.
+ C: Evet, Aspose.Words'te bir tablo veya hücredeki metni kalın yapabilirsiniz. Uygun yöntemleri kullanarak istediğiniz hücreye veya paragrafa gidebilir ve ardından kalın biçimlendirmeyi kullanarak uygulayabilirsiniz.`Font.Bold`mülkiyeti`Run` veya`Paragraph` nesne.

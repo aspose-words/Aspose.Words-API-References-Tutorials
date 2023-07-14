@@ -1,7 +1,7 @@
 ---
 title: Incorpora caratteri nel documento PDF
 linktitle: Incorpora caratteri nel documento PDF
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per incorporare i caratteri in un PDF utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -97,4 +97,4 @@ Migliore leggibilità: l'incorporamento dei caratteri garantisce una migliore le
 R: Sì, l'incorporamento di tutti i font in un documento PDF può aumentare le dimensioni del file PDF generato, poiché i dati dei font devono essere inclusi nel file. Tuttavia, questo aumento delle dimensioni è generalmente trascurabile per la maggior parte dei documenti e i vantaggi dell'incorporamento dei caratteri spesso superano questo leggero aumento delle dimensioni.
 
 #### D: Posso selezionare caratteri specifici da incorporare in un documento PDF?
- R: Sì, con Aspose.Words per .NET puoi selezionare caratteri specifici da incorporare in un documento PDF utilizzando opzioni di configurazione avanzate. Ad esempio, puoi utilizzare il`SubsetFonts` proprietà del`PdfSaveOptions` oggetto per specificare i caratteri da includere o utilizzare opzioni aggiuntive per impostare filtri di selezione dei caratteri personalizzati.
+ R: Sì, con Aspose.Words per .NET puoi selezionare caratteri specifici da incorporare in un documento PDF utilizzando opzioni di configurazione avanzate. Ad esempio, puoi utilizzare il`SubsetFonts`proprietà del`PdfSaveOptions` oggetto per specificare i caratteri da includere o utilizzare opzioni aggiuntive per impostare filtri di selezione dei caratteri personalizzati.

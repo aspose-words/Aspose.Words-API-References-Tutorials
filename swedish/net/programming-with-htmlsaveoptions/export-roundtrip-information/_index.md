@@ -1,7 +1,7 @@
 ---
 title: Exportera information om tur och retur
 linktitle: Exportera information om tur och retur
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att exportera information tur och retur när du sparar ett dokument som HTML med Aspose.Words för .NET.
 type: docs
 weight: 10

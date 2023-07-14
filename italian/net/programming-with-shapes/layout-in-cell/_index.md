@@ -1,7 +1,7 @@
 ---
 title: Disposizione nella cella
 linktitle: Disposizione nella cella
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come disporre una forma all'interno di una cella di tabella in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Questo tutorial spiega come disporre una forma all'interno di una cella di tabel
 Per seguire questo tutorial, è necessario disporre di quanto segue:
 
 - Aspose.Words per la libreria .NET installata.
-- Conoscenza di base di C# e lavoro con documenti Word.
+- Conoscenza di base di C# e Word Processing con documenti Word.
 
 ## Passaggio 1: impostare la directory dei documenti
- Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo della directory in cui si desidera salvare il documento.
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si desidera salvare il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,7 +65,7 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 ```
 
 ## Passaggio 5: personalizza la forma
- Personalizza l'aspetto e il testo della forma della filigrana impostando proprietà come`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`eccetera.
+ Personalizza l'aspetto e il testo della forma della filigrana impostando proprietà come`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, eccetera.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Passaggio 6: inserire la forma nel documento
- Inserisci la forma della filigrana nel documento utilizzando il`InsertNode` metodo del`DocumentBuilder` oggetto. Posizionare la forma utilizzando il`MoveTo` metodo per posizionarlo dopo l'ultima esecuzione nel documento.
+Inserisci la forma della filigrana nel documento utilizzando il`InsertNode` metodo del`DocumentBuilder` oggetto. Posizionare la forma utilizzando il`MoveTo` metodo per posizionarlo dopo l'ultima esecuzione nel documento.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -98,7 +98,7 @@ doc
 ### Esempio di codice sorgente per Layout In Cell utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

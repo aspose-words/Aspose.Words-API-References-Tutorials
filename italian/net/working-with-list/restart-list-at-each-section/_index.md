@@ -1,7 +1,7 @@
 ---
 title: Riavvia l'elenco in ogni sezione
 linktitle: Riavvia l'elenco in ogni sezione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come reimpostare un elenco numerato in ogni sezione in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10

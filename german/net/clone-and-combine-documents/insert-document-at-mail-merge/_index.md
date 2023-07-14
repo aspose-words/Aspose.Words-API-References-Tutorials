@@ -1,7 +1,7 @@
 ---
 title: Dokument beim Seriendruck einfügen
 linktitle: Dokument beim Seriendruck einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument beim Seriendruck in ein anderes einfügen.
 type: docs
 weight: 10

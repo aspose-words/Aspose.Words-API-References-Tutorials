@@ -1,7 +1,7 @@
 ---
 title: 资源 Steam 字体源示例
 linktitle: 资源 Steam 字体源示例
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用资源流字体源将自定义字体加载到 Aspose.Words for .NET 中。
 type: docs
 weight: 10

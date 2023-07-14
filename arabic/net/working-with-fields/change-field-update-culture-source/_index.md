@@ -1,7 +1,7 @@
 ---
 title: تغيير مصدر ثقافة تحديث الحقل
 linktitle: تغيير مصدر ثقافة تحديث الحقل
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تغيير مصدر ثقافة تحديث الحقل ، دليل خطوة بخطوة لتعديل مصدر الثقافة في Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 #### س: كيف يمكنني تحديد ثقافة معينة لتحديث الحقول في Aspose.Words for .NET؟
 
- ج: لتحديد ثقافة معينة لتحديث الحقول في Aspose.Words for .NET ، يمكنك استخدام`Document.FieldOptions.FieldUpdateCultureInfo` الممتلكات وتعيين`CultureInfo` الكائن المطابق للثقافة المرغوبة. على سبيل المثال ، يمكنك استخدام ملفات`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` لتحديد الثقافة الفرنسية (الفرنسية).
+ج: لتحديد ثقافة معينة لتحديث الحقول في Aspose.Words for .NET ، يمكنك استخدام`Document.FieldOptions.FieldUpdateCultureInfo` الممتلكات وتعيين`CultureInfo` الكائن المطابق للثقافة المرغوبة. على سبيل المثال ، يمكنك استخدام ملفات`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` لتحديد الثقافة الفرنسية (الفرنسية).
 
 #### س: هل من الممكن تعطيل التحديث التلقائي للمجال في Aspose.Words for .NET؟
 

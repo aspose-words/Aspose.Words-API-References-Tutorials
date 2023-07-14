@@ -1,7 +1,7 @@
 ---
 title: 亚洲版式换行组
 linktitle: 亚洲版式换行组
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何将亚洲版式换行符组与 Aspose.Words for .NET 结合使用。
 type: docs
 weight: 10

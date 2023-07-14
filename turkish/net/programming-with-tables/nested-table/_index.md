@@ -1,7 +1,7 @@
 ---
 title: İç İçe Tablo
 linktitle: İç İçe Tablo
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesinde iç içe tablo oluşturmayı öğrenin.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde iç içe t
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
-Belge ve belge oluşturucuyla çalışmaya başlamak için şu adımları izleyin:
+Belge ve belge oluşturucu ile Sözcük İşleme'yi başlatmak için şu adımları izleyin:
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ### Aspose.Words for .NET kullanan Nested Table için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

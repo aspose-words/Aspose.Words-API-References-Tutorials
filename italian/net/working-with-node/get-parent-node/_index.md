@@ -1,7 +1,7 @@
 ---
 title: Ottieni nodo padre
 linktitle: Ottieni nodo padre
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come ottenere il nodo padre di un elemento specifico con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -68,7 +68,7 @@ R: Il nodo padre in Node.js si riferisce al successivo nodo superiore nella gera
 
  A: Per verificare se un nodo ha un nodo padre, puoi semplicemente verificare se il file`parentNode` proprietà del nodo è impostata. Se impostato, significa che il nodo ha un nodo genitore.
 
-#### D: Possiamo cambiare il nodo genitore di un nodo?
+#### D: Possiamo cambiare il nodo padre di un nodo?
 
  R: Nella maggior parte dei casi, il nodo padre di un nodo è determinato dalla struttura del documento XML e non può essere modificato direttamente. Tuttavia, puoi spostare un nodo su un altro nodo utilizzando metodi specifici, ad esempio`appendChild` O`insertBefore`.
 

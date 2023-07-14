@@ -1,8 +1,8 @@
 ---
-title: Por encabezados HTML
+title: Dividir documento de Word por encabezados Html
 linktitle: Por encabezados HTML
-second_title: Referencia de API de Aspose.Words para .NET
-description: Guía paso a paso para explicar el código fuente C# de la función HTML Por encabezado de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
+description: Guía paso a paso para explicar el código fuente C# del documento de palabra dividida Por la función HTML de encabezado de Aspose.Words para .NET
 type: docs
 weight: 10
 url: /es/net/split-document/by-headings-html/
@@ -54,3 +54,32 @@ doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 
 Con este código, podrá dividir un documento de Word en partes más pequeñas usando Aspose.Words para .NET, según los encabezados. Luego puede generar documentos HTML separados para cada parte.
 
+## Conclusión
+
+ En este tutorial, aprendimos a dividir un documento de Word en partes más pequeñas usando la función Por encabezado HTML de Aspose.Words para .NET. Al especificar el`DocumentSplitCriteria` como`HeadingParagraph` en el`HtmlSaveOptions`, pudimos generar documentos HTML separados basados en los encabezados presentes en el documento original.
+
+Dividir un documento por encabezados puede ser útil para organizar y administrar el contenido, especialmente en documentos grandes con varias secciones. Aspose.Words para .NET proporciona una solución confiable y eficiente para manejar la división de documentos y generar resultados en varios formatos.
+
+Siéntase libre de explorar características y opciones adicionales proporcionadas por Aspose.Words para .NET para mejorar aún más sus capacidades de procesamiento de documentos y agilizar su flujo de trabajo.
+
+### preguntas frecuentes
+
+#### ¿Cómo puedo dividir un documento de Word en partes más pequeñas según los encabezados usando Aspose.Words para .NET?
+
+ Para dividir un documento de Word en función de los encabezados, puede utilizar la función Por encabezado HTML de Aspose.Words para .NET. Siga el código fuente provisto y configure el`DocumentSplitCriteria` a`HeadingParagraph` en el`HtmlSaveOptions` objeto. Esto dividirá el documento en partes más pequeñas en cada encabezado.
+
+#### ¿En qué formatos puedo dividir el documento de Word?
+
+El código fuente proporcionado muestra cómo dividir el documento de Word en partes más pequeñas en formato HTML. Sin embargo, Aspose.Words para .NET admite varios formatos de salida, incluidos DOCX, PDF, EPUB y más. Puede modificar el código y especificar el formato de salida deseado en el`HtmlSaveOptions` objeto en consecuencia.
+
+#### ¿Puedo elegir un criterio diferente para dividir el documento?
+
+ Sí, puede elegir un criterio diferente para dividir el documento según sus requisitos. Aspose.Words para .NET proporciona varias opciones de criterios, como`HeadingParagraph`, `Page`, `Section` , y más. Modificar el`DocumentSplitCriteria` propiedad en el`HtmlSaveOptions` objeto para seleccionar los criterios apropiados para dividir.
+
+#### ¿Cómo puedo personalizar el HTML de salida para las partes divididas?
+
+ Aspose.Words para .NET le permite personalizar el HTML de salida para las partes divididas especificando opciones adicionales en el`HtmlSaveOptions` objeto. Puede controlar varios aspectos, como estilos CSS, imágenes, fuentes y más. Consulte la documentación de Aspose.Words para obtener más detalles sobre cómo personalizar la salida HTML.
+
+#### ¿Puedo dividir el documento según varios criterios?
+
+ Sí, puede dividir el documento en función de varios criterios combinando las opciones de criterios en consecuencia. Por ejemplo, puede dividir el documento por encabezado y página configurando el`DocumentSplitCriteria` propiedad a`HeadingParagraph | Page`. Esto dividirá el documento en cada encabezado y cada página, creando partes más pequeñas basadas en ambos criterios.

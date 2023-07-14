@@ -1,7 +1,7 @@
 ---
 title: أضف بادئة اسم فئة Css
 linktitle: أضف بادئة اسم فئة Css
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لإضافة بادئة اسم فئة CSS عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

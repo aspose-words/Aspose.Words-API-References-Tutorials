@@ -1,7 +1,7 @@
 ---
 title: تحميل قاموس الواصلة للغة
 linktitle: تحميل قاموس الواصلة للغة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET.
 type: docs
 weight: 10

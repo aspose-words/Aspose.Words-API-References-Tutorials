@@ -1,7 +1,7 @@
 ---
 title: Поля формы Получить коллекцию полей формы
 linktitle: Поля формы Получить коллекцию полей формы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как извлекать и управлять коллекцией полей форм в документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Шаг 2. Получение коллекции полей формы
 
- Далее войдите в`FormFields` собственность`Range` объект в документе для получения коллекции полей формы:
+ Далее войдите в`FormFields`собственность`Range` объект в документе для получения коллекции полей формы:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

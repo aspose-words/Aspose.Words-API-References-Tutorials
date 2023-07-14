@@ -1,7 +1,7 @@
 ---
 title: انقسام الجدول
 linktitle: انقسام الجدول
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ar/net/programming-with-tables/split-table/
 2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
 
 ## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+لبدء معالجة الكلمات بالمستند ، اتبع الخطوات التالية:
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -71,7 +71,7 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ### نموذج التعليمات البرمجية المصدر لـ Split Table باستخدام Aspose.Words for .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

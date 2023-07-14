@@ -1,7 +1,7 @@
 ---
 title: Lizenz aus Stream anwenden
 linktitle: Lizenz aus Stream anwenden
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Lizenz aus einem Stream anwenden. Schritt für Schritt Anleitung
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 - Eine gültige Lizenzdatei für Aspose.Words.
 
 ## Schritt 1: Importieren Sie die erforderlichen Namespaces
-Importieren Sie zunächst die erforderlichen Namespaces in Ihren C#-Code. Diese Namespaces enthalten die Klassen und Methoden, die für die Arbeit mit Aspose.Words erforderlich sind.
+Importieren Sie zunächst die erforderlichen Namespaces in Ihren C#-Code. Diese Namespaces enthalten die Klassen und Methoden, die für die Wortverarbeitung mit Aspose.Words erforderlich sind.
 
 ```csharp
 using Aspose.Words;

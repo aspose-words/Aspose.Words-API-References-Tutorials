@@ -1,7 +1,7 @@
 ---
 title: 字段代码
 linktitle: 字段代码
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 在 Word 文档中获取字段代码和字段结果的分步指南。
 type: docs
 weight: 10

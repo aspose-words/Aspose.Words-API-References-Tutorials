@@ -1,7 +1,7 @@
 ---
 title: Sürekli Katıl
 linktitle: Sürekli Katıl
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak biçimlendirmeyi korurken iki belgeyi sürekli olarak nasıl birleştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## 4. Adım: Kaynak belgeyi ekleyin
 
- kullanarak kaynak belgeyi hedef belgeye ekleyin.`AppendDocument` yöntemi`Document` sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting`kaynak belgedeki orijinal stilleri korumak için.
+ kullanarak kaynak belgeyi hedef belgeye ekleyin.`AppendDocument` yöntemi`Document` sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak belgedeki orijinal stilleri korumak için.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -58,7 +58,7 @@ Bu, Aspose.Words for .NET kullanarak iki belgeyi sürekli olarak birleştirme uy
 ### Aspose.Words for .NET kullanarak Join Continuous için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

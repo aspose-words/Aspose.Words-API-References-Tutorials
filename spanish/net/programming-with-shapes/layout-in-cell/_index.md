@@ -1,7 +1,7 @@
 ---
 title: Diseño en celda
 linktitle: Diseño en celda
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a diseñar una forma dentro de una celda de tabla en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Este tutorial explica cómo diseñar una forma dentro de una celda de tabla en u
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,7 +65,7 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 ```
 
 ## Paso 5: Personaliza la forma
- Personalice la apariencia y el texto de la forma de la marca de agua configurando propiedades como`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`etc.
+ Personalice la apariencia y el texto de la forma de la marca de agua configurando propiedades como`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, etc.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Paso 6: inserte la forma en el documento
- Inserte la forma de marca de agua en el documento usando el`InsertNode` metodo de la`DocumentBuilder` objeto. Coloque la forma usando el`MoveTo` para colocarlo después de la última ejecución en el documento.
+Inserte la forma de marca de agua en el documento usando el`InsertNode` metodo de la`DocumentBuilder` objeto. Coloque la forma usando el`MoveTo` para colocarlo después de la última ejecución en el documento.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -98,7 +98,7 @@ doc
 ### Ejemplo de código fuente para Layout In Cell usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

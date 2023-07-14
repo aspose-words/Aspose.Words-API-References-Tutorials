@@ -1,7 +1,7 @@
 ---
 title: Преобразование текстового файла в документ Word
 linktitle: Преобразование текстового файла в документ Word
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как конвертировать текстовые файлы (Txt) в документы Word (Docx) с помощью Aspose.Words для .NET. Пошаговое руководство с примером кода.
 type: docs
 weight: 10

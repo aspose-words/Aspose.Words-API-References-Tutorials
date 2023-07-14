@@ -1,7 +1,7 @@
 ---
 title: Präfix für CSS-Klassennamen hinzufügen
 linktitle: Präfix für CSS-Klassennamen hinzufügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Hinzufügen eines CSS-Klassennamenpräfixes beim Konvertieren eines Dokuments in HTML mit Aspose.Words für .NET.
 type: docs
 weight: 10

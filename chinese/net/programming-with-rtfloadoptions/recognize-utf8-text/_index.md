@@ -1,7 +1,7 @@
 ---
 title: 识别UTF8文本
 linktitle: 识别UTF8文本
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 识别 RTF 文档中的 Utf-8 字符。确保数据完整性。
 type: docs
 weight: 10
@@ -67,4 +67,4 @@ doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 
 此功能对于确保 RTF 文档中正确显示 Utf-8 字符至关重要。通过配置适当的加载选项，Aspose.Words 能够正确识别和处理这些字符，有助于保持文本的完整性和质量。
 
-当使用需要 Utf-8 编码支持的特定语言和字符集时，UTF-8 文本识别尤其重要。借助 Aspose.Words for .NET，您可以轻松操作包含 Utf-8 字符的 RTF 文档，而没有丢失或损坏的风险。
+当使用需要 Utf-8 编码支持的特定语言和字符集进行文字处理时，UTF-8 文本识别尤其重要。借助 Aspose.Words for .NET，您可以轻松操作包含 Utf-8 字符的 RTF 文档，而没有丢失或损坏的风险。

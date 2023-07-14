@@ -1,7 +1,7 @@
 ---
 title: Commento di ancoraggio
 linktitle: Commento di ancoraggio
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come ancorare le risposte ai commenti a testo specifico nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Crea tre oggetti Run.
-// primi due eseguono del testo, mentre il terzo esegue un commento
+// I primi due eseguono del testo, mentre il terzo esegue un commento
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ R: Per aggiungere un'ancora di commento in un documento Aspose.Words per .NET, s
 
 #### D: Come posso modificare il testo di un commento collegato a un'ancora di commento in Aspose.Words per .NET?
 
-R: Per modificare il testo di un commento associato a un commento di ancoraggio in Aspose.Words per .NET, è possibile accedere al`Comment.Text` proprietà del corrispondente`Comment` oggetto e modificare il testo secondo necessità.
+ R: Per modificare il testo di un commento associato a un commento di ancoraggio in Aspose.Words per .NET, è possibile accedere al`Comment.Text` proprietà del corrispondente`Comment` oggetto e modificare il testo secondo necessità.
 

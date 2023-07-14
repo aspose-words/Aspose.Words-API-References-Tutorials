@@ -1,7 +1,7 @@
 ---
 title: تنظيف النمط المكرر
 linktitle: تنظيف النمط المكرر
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لتنظيف الأنماط المكررة في مستند باستخدام Aspose.Words for .NET. تم تضمين كود المصدر الكامل.
 type: docs
 weight: 10

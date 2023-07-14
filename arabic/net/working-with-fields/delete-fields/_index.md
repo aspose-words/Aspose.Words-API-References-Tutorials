@@ -1,7 +1,7 @@
 ---
 title: حذف الحقول
 linktitle: حذف الحقول
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لحذف حقول الدمج في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Document doc = new Document();
 // المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//تحميل المستند الحالي.
+// تحميل المستند الحالي.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
 // قم بإزالة حقول الدمج.

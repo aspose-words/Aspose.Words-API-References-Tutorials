@@ -1,7 +1,7 @@
 ---
 title: Получить имена полей слияния
 linktitle: Получить имена полей слияния
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как получить имена полей слияния в ваших документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

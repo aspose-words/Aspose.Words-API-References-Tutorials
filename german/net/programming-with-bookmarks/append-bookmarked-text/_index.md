@@ -1,7 +1,7 @@
 ---
-title: Mit Lesezeichen versehenen Text anhängen
-linktitle: Mit Lesezeichen versehenen Text anhängen
-second_title: Aspose.Words für .NET API-Referenz
+title: Mit Lesezeichen versehenen Text im Word-Dokument anhängen
+linktitle: Mit Lesezeichen versehenen Text im Word-Dokument anhängen
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Text aus einem Lesezeichen in ein Word-Dokument einfügen.
 type: docs
 weight: 10
@@ -100,3 +100,22 @@ Hier ist der vollständige Beispielquellcode, um das Hinzufügen von Text aus ei
 ## Abschluss
 
 In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Append Bookmarked Text“ von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung zum Abrufen von Absätzen aus einem Lesezeichen, zum Überprüfen der übergeordneten Elemente und zum Kopieren von Absätzen in ein anderes Dokument befolgt.
+
+### FAQs zum Anhängen von mit Lesezeichen versehenem Text in Word-Dokumenten
+
+#### F1: Was sind die Voraussetzungen, um die Funktion „Text mit Lesezeichen hinzufügen“ in Aspose.Words für .NET verwenden zu können?
+
+A: Um die Funktion „Text mit Lesezeichen hinzufügen“ in Aspose.Words für .NET verwenden zu können, müssen Sie über Grundkenntnisse der C#-Sprache verfügen. Sie benötigen außerdem eine .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
+
+#### F2: Wie erhalte ich die Absätze, die den Anfang und das Ende eines Lesezeichens in einem Word-Dokument enthalten?
+
+ A: Um die Absätze zu erhalten, die den Anfang und das Ende eines Lesezeichens in einem Word-Dokument enthalten, können Sie auf das zugreifen`BookmarkStart` Und`BookmarkEnd` Eigenschaften des Lesezeichens. Hier ist ein Beispielcode:
+
+```csharp
+Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+```
+
+#### F3: Was passiert, wenn die Anfangs- und Endabsätze keine gültigen übergeordneten Elemente haben?
+
+A: Wenn die Anfangs- und Endabsätze keine gültigen übergeordneten Elemente haben, es sich also nicht um echte Absätze handelt, wird eine Ausnahme ausgelöst. Diese Situation kann derzeit nicht bewältigt werden.

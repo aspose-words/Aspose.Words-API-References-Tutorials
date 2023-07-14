@@ -1,7 +1,7 @@
 ---
 title: Добавить раздел
 linktitle: Добавить раздел
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого руководства вы узнаете, как добавить раздел в документ Word с помощью Aspose.Words для .NET. Пошаговое руководство по структурированию документа.
 type: docs
 weight: 10

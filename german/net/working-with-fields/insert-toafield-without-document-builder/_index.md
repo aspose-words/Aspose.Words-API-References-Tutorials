@@ -1,7 +1,7 @@
 ---
 title: TOA-Feld ohne Document Builder einfügen
 linktitle: TOA-Feld ohne Document Builder einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Einfügen eines TOA-Felds ohne Document Builder mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -107,7 +107,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 ### FAQs
 
-#### F: Wie kann ich das Erscheinungsbild des in das Word-Dokument eingefügten TOA-Felds mit Aspose.Words für .NET anpassen?
+#### F: Wie kann ich das Erscheinungsbild des in das Word-Dokument eingefügten TOA-Feldes mit Aspose.Words für .NET anpassen?
 
 A: Sie können das Erscheinungsbild des eingefügten TOA-Felds anpassen, indem Sie die Eigenschaften des verwenden`FieldTOA` -Objekt, um Formatierungsoptionen anzugeben.
 

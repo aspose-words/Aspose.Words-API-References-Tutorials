@@ -1,7 +1,7 @@
 ---
 title: 形状修正
 linktitle: 形状修正
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 修改 Word 文档中的形状。
 type: docs
 weight: 10
@@ -127,7 +127,7 @@ Assert.False(shapes[1].IsMoveToRevision);
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 对 Word 文档中的形状进行修改。通过遵循创建文档、启用修订跟踪、检查与每个形状关联的修订以及检查移动形状的修订的步骤，我们能够成功管理修订。 Aspose.Words for .NET 提供了强大的 API，用于处理 Word 文档中的评论和表单。
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 对 Word 文档中的形状进行修改。通过遵循创建文档、启用修订跟踪、检查与每个形状关联的修订以及检查移动形状的修订的步骤，我们能够成功管理修订。 Aspose.Words for .NET 提供了强大的 API，用于文字处理，包括 Word 文档中的评论和表单。
 
 ### 常见问题解答
 

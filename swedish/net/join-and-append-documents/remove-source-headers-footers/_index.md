@@ -1,7 +1,7 @@
 ---
 title: Ta bort Source Headers Footers
 linktitle: Ta bort Source Headers Footers
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du tar bort sidhuvuden och sidfötter samtidigt som du ansluter och lägger till Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Innan du börjar, se till att du har följande:
 
 ## Steg 1: Initiera dokumentkatalogerna
 
- Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
+ Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir`variabel till sökvägen där dina dokument finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Ladda käll- och måldokumenten
 
- Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
+ Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktor enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Steg 4: Inaktivera "LinkToPrevious"-inställningen för sidhuvuden
 
-Även efter att du har rensat sidhuvuden och sidfötter från källdokumentet finns det en möjlighet att inställningen "LinkToPrevious" för`HeadersFooters` kan fortfarande ställas in. För att undvika detta beteende måste du uttryckligen ställa in det på`false` för det första avsnittet`HeadersFooters` fast egendom.
+ Även efter att du har rensat sidhuvuden och sidfötter från källdokumentet finns det en möjlighet att inställningen "LinkToPrevious" för`HeadersFooters` kan fortfarande ställas in. För att undvika detta beteende måste du uttryckligen ställa in det på`false` för det första avsnittet`HeadersFooters` fast egendom.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ Här är den fullständiga källkoden för funktionen "Ta bort Source Headers Fo
 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

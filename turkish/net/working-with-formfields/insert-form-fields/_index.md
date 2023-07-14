@@ -1,7 +1,7 @@
 ---
 title: Form Alanları Ekle
 linktitle: Form Alanları Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak açılır form alanlarını Word belgelerine nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -60,7 +60,7 @@ Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimleriniz
 
  A: Aspose.Words'te bir metin tipi form alanı eklemek için`FormField` sınıflandırın ve ayarlayın`Type` mülkiyet`FormFieldType.Text`. Ad, etiket ve seçenekler gibi diğer özellikleri de özelleştirebilirsiniz.
 
-#### S: Bir belgede onay kutusu tipi bir form alanı oluşturmak mümkün mü?
+#### S: Bir belgede onay kutusu tipi bir form alanı oluşturmak mümkün müdür?
 
  C: Evet, bir Aspose.Words belgesinde onay kutusu tipi bir form alanı oluşturmak mümkündür. kullanabilirsiniz`FormField` sınıflandırın ve ayarlayın`Type` mülkiyet`FormFieldType.CheckBox` bir onay kutusu oluşturmak için. Ardından, onay kutusunun özelliklerini gerektiği gibi özelleştirebilirsiniz.
 

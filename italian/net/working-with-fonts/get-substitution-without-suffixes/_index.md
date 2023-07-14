@@ -1,7 +1,7 @@
 ---
 title: Ottieni sostituzione senza suffissi
 linktitle: Ottieni sostituzione senza suffissi
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questo tutorial, scopri come ottenere sostituzioni senza suffisso in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 ### Esempio di codice sorgente per Ottieni sostituzione senza suffissi utilizzando Aspose.Words per .NET 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");

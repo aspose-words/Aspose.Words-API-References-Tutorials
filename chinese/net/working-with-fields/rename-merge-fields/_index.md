@@ -1,7 +1,7 @@
 ---
 title: 重命名合并字段
 linktitle: 重命名合并字段
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，您将学习如何使用 Aspose.Words for .NET 重命名文档中的合并字段。
 type: docs
 weight: 10

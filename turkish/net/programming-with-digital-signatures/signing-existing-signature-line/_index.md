@@ -1,14 +1,13 @@
 ---
-title: Mevcut İmza Satırını İmzalama
-linktitle: Mevcut İmza Satırını İmzalama
-second_title: Aspose.Words for .NET API Referansı
+title: Word Belgesinde Mevcut İmza Satırını İmzalamak
+linktitle: Word Belgesinde Mevcut İmza Satırını İmzalamak
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesindeki mevcut bir imza satırını nasıl imzalayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
-
-Bu eğitimde, Aspose.Words for .NET ile mevcut bir imza satırının imza özelliğini kullanma adımlarında size yol göstereceğiz. Bu özellik, bir Word belgesinde zaten mevcut olan bir imza satırını dijital olarak imzalamanıza olanak tanır. Aşağıdaki adımları takip et:
+Bu öğreticide, Aspose.Words for .NET ile mevcut bir imza satırının imza özelliğini kullanma adımlarında size yol göstereceğiz. Bu özellik, bir Word belgesinde zaten mevcut olan bir imza satırını dijital olarak imzalamanıza olanak tanır. Aşağıdaki adımları takip et:
 
 ## 1. Adım: Belgeyi yükleme ve imza satırına erişme
 
@@ -86,3 +85,37 @@ Aspose.Words for .NET ile mevcut bir imza satırını imzalamak için eksiksiz k
 
 Bu adımları izleyerek bir Word belgesindeki mevcut bir imza satırını Aspose.Words for .NET ile kolayca imzalayabilirsiniz.
 
+## Çözüm
+
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki mevcut bir imza satırının nasıl imzalanacağını öğrendik. Verilen adımları izleyerek belgeyi kolayca yükleyebilir, mevcut imza satırına erişebilir, imzalama seçeneklerini ayarlayabilir ve belgeyi imzalayabilirsiniz. Mevcut bir imza satırını imzalama yeteneği, Word belgelerinizdeki önceden tanımlanmış alanlara dijital imzalar eklemek için uygun bir yol sağlayarak belge bütünlüğünü ve kimlik doğrulamasını sağlar. Aspose.Words for .NET, imzalama sürecini özelleştirmenize ve Word belgelerinizin güvenliğini artırmanıza olanak tanıyan, dijital imzalarla Kelime İşleme için güçlü bir API sunar.
+
+### SSS
+
+#### S: Word belgesindeki mevcut imza satırı nedir?
+
+C: Word belgesindeki mevcut bir imza satırı, imzanın yerleştirilebileceği önceden tanımlanmış bir alandır. Tipik olarak belgede bir şekil veya nesne ile temsil edilir ve imzalayanın dijital imzasını eklemesi için belirlenmiş bir alan görevi görür.
+
+#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki mevcut bir imza satırını nasıl imzalayabilirim?
+
+C: Aspose.Words for .NET kullanarak bir Word belgesindeki mevcut bir imza satırını imzalamak için şu adımları takip edebilirsiniz:
+1.  kullanarak belgeyi yükleyin.`Document` class ve belge dosyasının yolunu belirtin.
+2.  Uygun yöntemi veya özelliği kullanarak mevcut imza satırına erişin. Örneğin, kullanabilirsiniz`GetChild` imza çizgisi şeklini alma yöntemi.
+3.  örneğini oluşturun`SignOptions`sınıflandırın ve ayarlayın`SignatureLineId` özellik mevcut imza satırının kimliğine.
+4.  Yı kur`SignatureLineImage`mülkiyeti`SignOptions` dijital imzayı temsil eden görüntüye sınıf.
+5.  kullanarak imzalama sertifikasını yükleyin.`CertificateHolder` class ve gerekli sertifika ve şifreyi sağlayın.
+6.  Kullan`DigitalSignatureUtil.Sign` dahil olmak üzere gerekli parametreleri sağlayarak belgeyi imzalama yöntemi`SignOptions` nesne.
+
+#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki mevcut imza satırına nasıl erişebilirim?
+
+ C: Aspose.Words for .NET kullanarak bir Word belgesindeki mevcut imza satırına erişmek için, belgenin yapısından imza satırı şeklini almak için uygun yöntemi veya özelliği kullanabilirsiniz. Örneğin,`GetChild` İstenen imza çizgisi şeklini elde etmek için uygun parametrelerle yöntem.
+
+#### S: Dijital imzanın görünümünü mevcut bir imza satırında özelleştirebilir miyim?
+
+C: Evet, imzayı temsil eden bir görüntü dosyası sağlayarak dijital imzanın görünümünü mevcut bir imza satırında özelleştirebilirsiniz. Görüntü bir logo, el yazısı imza veya imzanın başka herhangi bir grafik gösterimi olabilir. ayarlayabilirsiniz`SignatureLineImage`mülkiyeti`SignOptions` görüntü dosyasının baytlarına sınıf.
+
+#### S: Bir Word belgesinde birden çok mevcut imza satırını imzalayabilir miyim?
+ C: Evet, bir Word belgesinde birden çok mevcut imza satırını imzalayabilirsiniz. Her bir imza satırı için ayrı ayrı adımları izlemeniz ve uygun ayarı yapmanız gerekir.`SignatureLineId` Ve`SignatureLineImage` içindeki değerler`SignOptions` her imza satırı için nesne.
+
+#### S: Mevcut bir imza satırındaki dijital imza için resim dosyası hangi formatta olmalıdır?
+
+ Y: Mevcut bir imza satırındaki dijital imza için görüntü dosyası PNG, JPEG, BMP veya GIF gibi çeşitli biçimlerde olabilir. Dosya yolunu belirtebilir veya görüntü dosyasının baytlarını okuyabilir ve onu`SignatureLineImage`mülkiyeti`SignOptions` sınıf.

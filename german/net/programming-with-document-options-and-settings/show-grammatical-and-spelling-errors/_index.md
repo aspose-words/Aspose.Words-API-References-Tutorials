@@ -1,7 +1,7 @@
 ---
 title: Zeigen Sie Grammatik- und Rechtschreibfehler an
 linktitle: Zeigen Sie Grammatik- und Rechtschreibfehler an
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Aktivieren der Anzeige von Grammatik- und Rechtschreibfehlern in einem Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10

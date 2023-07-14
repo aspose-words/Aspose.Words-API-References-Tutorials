@@ -1,21 +1,21 @@
 ---
 title: Fusión vertical
 linktitle: Fusión vertical
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a combinar verticalmente celdas en una tabla en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/vertical-merge/
 ---
 
-En este tutorial, aprenderemos cómo fusionar verticalmente celdas en una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá combinar verticalmente celdas en sus tablas en documentos de Word.
+En este tutorial, aprenderemos cómo fusionar verticalmente celdas en una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá combinar verticalmente celdas en sus tablas en documentos de Word.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Cargar el documento
-Para comenzar a trabajar con el documento, siga estos pasos:
+Para iniciar el procesamiento de textos con el documento, siga estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
@@ -78,7 +78,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 
 ### Ejemplo de código fuente para Vertical Merge usando Aspose.Words para .NET 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

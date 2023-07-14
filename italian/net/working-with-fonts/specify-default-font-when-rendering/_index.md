@@ -1,7 +1,7 @@
 ---
 title: Specifica carattere predefinito durante il rendering
 linktitle: Specifica carattere predefinito durante il rendering
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per specificare il carattere predefinito durante il rendering di un documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Passaggio 3: imposta il carattere predefinito
- Ora puoi specificare il carattere predefinito da utilizzare durante il rendering creando un'istanza del file`FontSettings` classe e l'impostazione del`DefaultFontName` proprietà del`DefaultFontSubstitution` opporsi al`DefaultFontSubstitution` oggetto`SubstitutionSettings` Di`FontSettings`.
+ Ora puoi specificare il carattere predefinito da utilizzare durante il rendering creando un'istanza del file`FontSettings` classe e l'impostazione del`DefaultFontName`proprietà del`DefaultFontSubstitution` opporsi al`DefaultFontSubstitution` oggetto`SubstitutionSettings` Di`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Esempio di codice sorgente per specificare il carattere predefinito durante il rendering utilizzando Aspose.Words per .NET 
 
 ```csharp
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -56,13 +56,13 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come specificare il carattere predefinito durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente impostare un carattere predefinito da utilizzare durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per lavorare con i caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare il rendering dei tuoi documenti in base alle tue esigenze specifiche.
+In questo tutorial, abbiamo imparato come specificare il carattere predefinito durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente impostare un carattere predefinito da utilizzare durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per l'elaborazione di testi con caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare il rendering dei tuoi documenti in base alle tue esigenze specifiche.
 
 ### FAQ
 
 #### D: Come posso specificare un carattere predefinito durante la conversione in PDF in Aspose.Words?
 
- R: Per specificare un carattere predefinito durante la conversione in PDF in Aspose.Words, puoi utilizzare il file`PdfOptions` classe e impostare il`DefaultFontName` property al nome del carattere desiderato.
+ R: Per specificare un carattere predefinito durante la conversione in PDF in Aspose.Words, puoi utilizzare il file`PdfOptions`classe e impostare il`DefaultFontName` property al nome del carattere desiderato.
 
 #### D: Cosa succede se il carattere predefinito non è disponibile durante la conversione in PDF?
 
@@ -74,7 +74,7 @@ R: Sì, puoi specificare un carattere predefinito per altri formati di output co
 
 #### D: Come posso controllare il carattere predefinito specificato in Aspose.Words?
 
- R: Per verificare il carattere predefinito specificato in Aspose.Words, puoi utilizzare il file`DefaultFontName` proprietà del`PdfOptions` class e recuperare il nome del carattere configurato.
+ R: Per verificare il carattere predefinito specificato in Aspose.Words, puoi utilizzare il file`DefaultFontName`proprietà del`PdfOptions` class e recuperare il nome del carattere configurato.
 
 #### D: È possibile specificare un font predefinito diverso per ogni sezione del documento?
 

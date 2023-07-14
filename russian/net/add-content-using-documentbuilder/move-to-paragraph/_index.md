@@ -1,7 +1,7 @@
 ---
 title: Перейти к абзацу
 linktitle: Перейти к абзацу
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как использовать функцию «Переместить в абзац» Aspose.Words для .NET для программного перемещения и управления абзацами в документах Word.
 type: docs
 weight: 10

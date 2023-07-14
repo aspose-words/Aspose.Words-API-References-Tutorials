@@ -1,7 +1,7 @@
 ---
 title: Converti documento Word in PDF 1.7
 linktitle: Converti documento Word in PDF 1.7
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come convertire un documento word in PDF 1.7 con Aspose.Words per .NET.
 type: docs
 weight: 10

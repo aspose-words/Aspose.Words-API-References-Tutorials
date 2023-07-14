@@ -1,7 +1,7 @@
 ---
 title: Kayan Tablo Konumunu Alın
 linktitle: Kayan Tablo Konumunu Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesinde kayan tabloların konumunu nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde kayan bir tab
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## Adım 2: Belgeyi yükleme ve tablolara erişme
-Tablolarla çalışmaya başlamak için onları içeren belgeyi yüklememiz ve onlara erişmemiz gerekiyor. Bu adımları takip et:
+Sözcük İşleme'yi tablolarla başlatmak için, onları içeren belgeyi yüklememiz ve bunlara erişmemiz gerekiyor. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
@@ -53,7 +53,7 @@ Console.WriteLine("...............................");
 ### Aspose.Words for .NET kullanarak Kayan Tablo Konumunu Getir için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

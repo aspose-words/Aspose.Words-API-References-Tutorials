@@ -1,7 +1,7 @@
 ---
 title: Liste de redémarrage à chaque section
 linktitle: Liste de redémarrage à chaque section
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à réinitialiser une liste numérotée pour chaque section d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10

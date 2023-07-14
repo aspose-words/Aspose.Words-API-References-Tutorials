@@ -1,7 +1,7 @@
 ---
 title: Campos de formulario Trabajar con propiedades
 linktitle: Campos de formulario Trabajar con propiedades
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a trabajar con propiedades de campo de formulario en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ A continuación, recupere un campo de formulario específico de la colección de
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## Paso 3: trabajar con propiedades de campo de formulario
+## Paso 3: procesamiento de textos con propiedades de campo de formulario
 
  Puede manipular varias propiedades del campo de formulario según su tipo. En este ejemplo, comprobamos si el campo del formulario es del tipo`FieldType.FieldFormTextInput` y establecer su`Result` propiedad en consecuencia:
 

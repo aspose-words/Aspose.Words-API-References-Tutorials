@@ -1,7 +1,7 @@
 ---
 title: Enumerare i nodi figlio
 linktitle: Enumerare i nodi figlio
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come enumerare i nodi figlio in un paragrafo con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -96,6 +96,6 @@ R: Un nodo figlio in Node.js si riferisce a un nodo contenuto direttamente all'i
 
  R: Sì, è possibile modificare i nodi figli di un nodo in Node.js utilizzando i metodi e le proprietà forniti dall'API XML utilizzata nell'ambiente Node.js. Ad esempio, puoi utilizzare metodi come`appendChild` O`removeChild` per aggiungere o rimuovere nodi figlio da un nodo specifico.
 
-#### D: Come sfogliare tutti i nodi figli di un nodo?
+#### D: Come sfogliare tutti i nodi figlio di un nodo?
 
  R: Per scorrere tutti i nodi figlio di un nodo specifico in Node.js, puoi utilizzare a`for` ciclo per scorrere l'elenco dei nodi figli restituiti da`childNodes` proprietà. È quindi possibile accedere alle proprietà e ai valori di ciascun nodo figlio all'interno del ciclo.

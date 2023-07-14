@@ -1,7 +1,7 @@
 ---
 title: Autoriser l'espacement des cellules
 linktitle: Autoriser l'espacement des cellules
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour autoriser l'espacement des cellules à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
 ## Étape 4 : Activer l'espacement des cellules
- Maintenant, nous pouvons activer l'espacement des cellules en définissant le`AllowCellSpacing`propriété de la table à`true`. Cette propriété détermine si le tableau peut avoir un espacement des cellules.
+ Maintenant, nous pouvons activer l'espacement des cellules en définissant le`AllowCellSpacing` propriété de la table à`true`. Cette propriété détermine si le tableau peut avoir un espacement des cellules.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -57,7 +57,7 @@ Toutes nos félicitations! Vous avez autorisé avec succès l'espacement des cel
 ### Exemple de code source pour Autoriser l'espacement des cellules à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

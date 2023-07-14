@@ -1,7 +1,7 @@
 ---
 title: Costruisci tabella
 linktitle: Costruisci tabella
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come creare una tabella in un documento Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

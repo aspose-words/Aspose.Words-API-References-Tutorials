@@ -1,7 +1,7 @@
 ---
 title: Control de contenido de tipo de casilla de verificación
 linktitle: Control de contenido de tipo de casilla de verificación
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a crear un control de contenido de tipo casilla de verificación en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Este tutorial explica cómo crear un control de contenido de tipo casilla de ver
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
 ### Ejemplo de código fuente para el control de contenido de tipo de casilla de verificación usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
 	doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);
 ```
 
-¡Eso es todo! Ha creado con éxito un control de contenido de tipo casilla de verificación en su documento de Word usando Aspose.Words para .NET.
+¡Eso es todo! Ha creado con éxito un control de contenido de tipo casilla de verificación en su documento de Word utilizando Aspose.Words para .NET.

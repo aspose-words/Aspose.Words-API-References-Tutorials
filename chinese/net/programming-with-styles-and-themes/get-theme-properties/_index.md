@@ -1,7 +1,7 @@
 ---
-title: 获取主题属性
+title: 获取Word中的文档主题属性
 linktitle: 获取主题属性
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 探索文档的主题属性。定制样式和颜色以获得独特的外观。
 type: docs
 weight: 10
@@ -63,3 +63,25 @@ Console.WriteLine(theme.Colors.Accent1);
 Aspose.Words for .NET 提供了强大的 API 来操作文档主题，使您可以轻松调整和自定义文档的外观。
 
 请随意探索 Aspose.Words for .NET 的更多功能，以增强您的工作流程并满足您的特定样式和主题管理需求。
+
+### 常见问题解答
+
+#### 如何使用 Aspose.Words for .NET 访问文档的主题属性？
+
+要访问文档的主题属性，您可以使用`Theme`的财产`Document`目的。它返回一个`Theme`包含有关主要和辅助字体以及文档主题中使用的强调色的信息的对象。
+
+#### 如何检索文档主题的主要和辅助字体？
+
+您可以使用以下命令访问文档主题的主要和辅助字体`MajorFonts`和`MinorFonts`的属性`Theme`分别为对象。这些属性提供对不同语言或区域的文档主题中使用的字体名称的访问。
+
+#### 我可以获得文档主题中使用的强调色吗？
+
+是的，您可以通过访问来获取文档主题中使用的强调色`Colors`的财产`Theme`目的。此属性提供对强调色的访问，例如`Accent1`, `Accent2`, `Accent3`等等，您可以将其用于自定义或分析目的。
+
+#### 如何使用检索到的主题属性？
+
+检索到的主题属性可用于各种目的。您可以根据主题中使用的字体和颜色自定义文档的样式和布局。您还可以对文档中的字体和颜色使用情况进行分析，或根据主题属性对特定元素应用有针对性的更改。
+
+#### 我可以使用 Aspose.Words for .NET 修改主题属性吗？
+
+Aspose.Words for .NET 主要关注文档生成和操作，而不是主题修改。虽然您可以使用 API 检索主题属性，但不支持直接修改主题属性。要修改主题本身，您可能需要使用其他工具或软件。

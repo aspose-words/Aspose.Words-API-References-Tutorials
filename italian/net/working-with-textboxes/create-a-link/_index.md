@@ -1,13 +1,13 @@
 ---
 title: Crea collegamento in Word
 linktitle: Crea collegamento in Word
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come creare un collegamento in Word tra le caselle di testo in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-textboxes/create-a-link/
 ---
-Questa guida dettagliata spiega come creare un collegamento in Word tra due caselle di testo in un documento Word utilizzando la libreria Aspose.Words per .NET. Imparerai come configurare il documento, creare le forme delle caselle di testo, accedere alle caselle di testo, verificare la validità della destinazione del collegamento e infine creare il collegamento stesso.
+Questa guida dettagliata spiega come creare un collegamento in Word tra due caselle di testo in un documento Word utilizzando la libreria Aspose.Words per .NET. Imparerai come configurare il documento, creare le forme delle caselle di testo, accedere alle caselle di testo, controllare la validità della destinazione del collegamento e infine creare il collegamento stesso.
 
 ## Passaggio 1: impostazione del documento e creazione di forme TextBox
 
@@ -24,7 +24,7 @@ TextBox textBox2 = shape2.TextBox;
 
 ## Passaggio 2: creazione di un collegamento tra le caselle di testo
 
- Ora creeremo un collegamento tra i due TextBox utilizzando il`IsValidLinkTarget()` metodo e il`Next` proprietà del primo TextBox.
+Ora creeremo un collegamento tra i due TextBox utilizzando il`IsValidLinkTarget()` metodo e il`Next` proprietà del primo TextBox.
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
@@ -62,7 +62,7 @@ R: Per collegare le caselle di testo in Word utilizzando Aspose.Words per .NET, 
 
 #### D: Come creare un collegamento tra due caselle di testo?
 
- R: Per creare un collegamento tra due caselle di testo, è necessario impostare il file`Next`proprietà della prima casella di testo alla seconda casella di testo. Assicurati di aver verificato in anticipo la validità della destinazione del collegamento utilizzando il file`IsValidLinkTarget()` metodo.
+ A: Per creare un collegamento tra due caselle di testo, è necessario impostare il file`Next` proprietà della prima casella di testo alla seconda casella di testo. Assicurati di aver verificato in anticipo la validità della destinazione del collegamento utilizzando il file`IsValidLinkTarget()` metodo.
 
 #### D: È possibile creare collegamenti tra elementi diversi dalle caselle di testo?
 

@@ -1,7 +1,7 @@
 ---
 title: Configuración de página diferente
 linktitle: Configuración de página diferente
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a agregar un documento con diferentes configuraciones de configuración de página usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: configure los ajustes de página para el documento de origen
 
- Ajuste la configuración de la página del documento de origen para garantizar una continuación y una numeración adecuadas. En este ejemplo, configuramos el inicio de la sección en`SectionStart.Continuous` y reinicie la numeración de páginas. También nos aseguramos de que el ancho, la altura y la orientación de la página coincidan con la última sección del documento de destino.
+Ajuste la configuración de la página del documento de origen para garantizar una continuación y una numeración adecuadas. En este ejemplo, configuramos el inicio de la sección en`SectionStart.Continuous` y reinicie la numeración de páginas. También nos aseguramos de que el ancho, la altura y la orientación de la página coincidan con la última sección del documento de destino.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Paso 4: modificar el formato de párrafo
 
-Para mantener el formato adecuado, repita todos los párrafos del documento de origen y establezca el`KeepWithNext` propiedad a`true`. Esto asegura que los párrafos permanezcan juntos durante el proceso de adición.
+ Para mantener el formato adecuado, repita todos los párrafos del documento de origen y establezca el`KeepWithNext` propiedad a`true`. Esto asegura que los párrafos permanezcan juntos durante el proceso de adición.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -74,19 +74,19 @@ Esto completa la implementación de agregar un documento con diferentes configur
 ### Código fuente de ejemplo para configuración de página diferente usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Configure el documento de origen para que continúe inmediatamente después del final del documento de destino.
+	//Configure el documento de origen para que continúe inmediatamente después del final del documento de destino.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Reinicie la numeración de páginas al principio del documento de origen.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Para asegurarse de que esto no suceda cuando el documento de origen tiene una configuración de página diferente, asegúrese de que el
 	// la configuración es idéntica entre la última sección del documento de destino.
-	//Si hay más secciones continuas que siguen en el documento fuente,
+	// Si hay más secciones continuas que siguen en el documento fuente,
 	// esto deberá repetirse para esas secciones.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;

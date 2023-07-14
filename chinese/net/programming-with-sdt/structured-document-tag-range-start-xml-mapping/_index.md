@@ -1,7 +1,7 @@
 ---
 title: 结构化文档标记范围起始 Xml 映射
 linktitle: 结构化文档标记范围起始 Xml 映射
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中为结构化文档标记范围设置 XML 映射。
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /zh/net/programming-with-sdt/structured-document-tag-range-start-xml-mappin
 要学习本教程，您需要具备以下条件：
 
 - 已安装 Aspose.Words for .NET 库。
-- C# 和使用 Word 文档的基本知识。
+- C# 和 Word 文档文字处理的基础知识。
 
 ## 第 1 步：设置文档目录
 首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`与文档所在目录的实际路径。

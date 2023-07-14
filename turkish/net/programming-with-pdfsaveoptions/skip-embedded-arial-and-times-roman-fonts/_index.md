@@ -1,7 +1,7 @@
 ---
 title: Gömülü Arial ve Times Roman Yazı Tiplerini Atla ile PDF Boyutunu Optimize Edin
 linktitle: Gömülü Arial ve Times Roman Yazı Tiplerini Atla ile PDF Boyutunu Optimize Edin
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Arial ve Times Roman yazı tiplerini gömmeden optimize edilmiş PDF oluşturmak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -76,7 +76,7 @@ C: Aspose.Words for .NET'i Arial ve Times Roman yazı tiplerini bir PDF belgesin
 
  kullanarak işlemek istediğiniz belgeyi yükleyin.`Document` sınıf ve belirtilen belge yolu.
 
- örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`FontEmbeddingMode` mülkiyet`PdfFontEmbeddingMode.EmbedAll`. Bu, oluşturulan PDF dosyasına Arial ve Times Roman dışındaki tüm yazı tiplerini gömecektir.
+ örneğini oluşturun`PdfSaveOptions`sınıflandırın ve ayarlayın`FontEmbeddingMode` mülkiyet`PdfFontEmbeddingMode.EmbedAll`. Bu, oluşturulan PDF dosyasına Arial ve Times Roman dışındaki tüm yazı tiplerini gömecektir.
 
  Kullan`Save` yöntemi`Document` Daha önce yapılandırılan kaydetme seçeneklerini belirterek belgeyi PDF biçiminde kaydetmek için nesne.
 

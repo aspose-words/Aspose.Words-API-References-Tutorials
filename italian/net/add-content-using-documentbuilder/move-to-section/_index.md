@@ -1,7 +1,7 @@
 ---
 title: Sposta in sezione
 linktitle: Sposta in sezione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata all'utilizzo di Sposta in sezione in Aspose.Words per .NET manipolare sezioni e paragrafi nei documenti di Word.
 type: docs
 weight: 10

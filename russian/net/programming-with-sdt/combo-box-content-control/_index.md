@@ -1,7 +1,7 @@
 ---
 title: Поле со списком
 linktitle: Поле со списком
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как создать элемент управления содержимым поля со списком в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ url: /ru/net/programming-with-sdt/combo-box-content-control/
 Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
 - Установлена библиотека Aspose.Words for .NET.
-- Базовые знания C# и работы с документами Word.
+- Базовые знания C# и Word Processing с документами Word.
 
 ## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
+ Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Шаг 3: добавьте элементы в поле со списком
- Добавьте элементы в поле со списком, используя кнопку`ListItems` собственность`StructuredDocumentTag` Каждый элемент представлен`SdtListItem` объект, который принимает отображаемый текст и значение. В этом примере мы добавляем три элемента в поле со списком.
+ Добавьте элементы в поле со списком, используя кнопку`ListItems`собственность`StructuredDocumentTag` Каждый элемент представлен`SdtListItem` объект, который принимает отображаемый текст и значение. В этом примере мы добавляем три элемента в поле со списком.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ### Пример исходного кода для управления содержимым поля со списком с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

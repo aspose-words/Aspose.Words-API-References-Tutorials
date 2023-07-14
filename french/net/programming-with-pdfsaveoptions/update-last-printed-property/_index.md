@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour la dernière propriété imprimée dans le document PDF
 linktitle: Mettre à jour la dernière propriété imprimée dans le document PDF
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour mettre à jour la propriété "Dernière impression" lors de la conversion au format PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ R : Pour mettre à jour la propriété "Dernière impression" dans un document 
 
  Créer une instance de`Document` classe spécifiant le chemin d'accès au document Word.
 
- Créer une instance de`PdfSaveOptions` classe et définissez la`UpdateLastPrintedProperty` propriété à`true` pour activer la mise à jour de la propriété "Dernière impression".
+ Créer une instance de`PdfSaveOptions`classe et définissez la`UpdateLastPrintedProperty` propriété à`true` pour activer la mise à jour de la propriété "Dernière impression".
 
  Utilisez le`Save` méthode de la`Document`classe pour enregistrer le document au format PDF en spécifiant les options d'enregistrement.
 

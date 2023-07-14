@@ -1,7 +1,7 @@
 ---
 title: Tablo Oluştur
 linktitle: Tablo Oluştur
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesinde tablo oluşturmayı öğrenin.
 type: docs
 weight: 10

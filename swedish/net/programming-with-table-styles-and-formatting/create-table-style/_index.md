@@ -1,7 +1,7 @@
 ---
 title: Skapa tabellstil
 linktitle: Skapa tabellstil
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att skapa en anpassad tabellstil med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ Grattis! Du har nu skapat en anpassad stil för din tabell med Aspose.Words för
 ### Exempel på källkod för Skapa tabellstil med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

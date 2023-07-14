@@ -1,7 +1,7 @@
 ---
 title: Держите источник вместе
 linktitle: Держите источник вместе
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как использовать Aspose.Words для .NET для объединения и добавления документов Word, сохраняя при этом исходный контент вместе с целевым документом.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/keep-source-together/
 
 ## Шаг 1: Инициализируйте каталоги документов
 
- Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir` переменная на путь, где находятся ваши документы.
+ Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir`переменная на путь, где находятся ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Шаг 6: Сохраните окончательный документ
 
- Наконец, сохраните объединенный документ с включенной функцией «Сохранить исходный код вместе» с помощью`Save` метод`Document` сорт.
+Наконец, сохраните объединенный документ с включенной функцией «Сохранить исходный код вместе» с помощью`Save` метод`Document` сорт.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
@@ -75,7 +75,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -1,7 +1,7 @@
 ---
 title: Aggiungi documento a vuoto
 linktitle: Aggiungi documento a vuoto
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come aggiungere un documento a un documento di destinazione vuoto in Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document();
 
 ## Passaggio 3: rimuovere il contenuto esistente dal documento di destinazione
 
-Per garantire un documento di destinazione pulito, rimuovere tutto il contenuto esistente dal documento utilizzando il file`RemoveAllChildren` metodo.
+ Per garantire un documento di destinazione pulito, rimuovere tutto il contenuto esistente dal documento utilizzando il file`RemoveAllChildren` metodo.
 
 ```csharp
 dstDoc.RemoveAllChildren();
@@ -58,12 +58,12 @@ Questo completa l'implementazione dell'aggiunta di un documento a un documento d
 ### Esempio di codice sorgente per Aggiungi documento a vuoto utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	// Il documento di destinazione non è vuoto, causando spesso la visualizzazione di una pagina vuota prima del documento aggiunto.
+	//Il documento di destinazione non è vuoto, causando spesso la visualizzazione di una pagina vuota prima del documento aggiunto.
 	// Ciò è dovuto al fatto che il documento di base ha una sezione vuota e il nuovo documento viene avviato nella pagina successiva.
 	// Rimuovi tutto il contenuto dal documento di destinazione prima di aggiungerlo.
 	dstDoc.RemoveAllChildren();

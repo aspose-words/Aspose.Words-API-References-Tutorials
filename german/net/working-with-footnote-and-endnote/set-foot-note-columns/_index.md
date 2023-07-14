@@ -1,7 +1,7 @@
 ---
 title: Fußnotenspalten festlegen
 linktitle: Fußnotenspalten festlegen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Anzahl der Spalten für Fußnoten in Word-Dokumenten festlegen.
 type: docs
 weight: 10

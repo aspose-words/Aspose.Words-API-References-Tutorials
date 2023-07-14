@@ -1,14 +1,14 @@
 ---
 title: Load Chm
 linktitle: Load Chm
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to load CHM files with Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /net/programming-with-loadoptions/load-chm/
 ---
 
-When working with HTML Help (CHM) files in a C# application, it's important to be able to load them correctly. With the Aspose.Words library for .NET, you can easily load CHM files using the appropriate load options. In this step-by-step guide, we will show you how to use Aspose.Words for .NET C# source code to load a CHM file using the LoadOptions load options.
+When Words Processing with HTML Help (CHM) files in a C# application, it's important to be able to load them correctly. With the Aspose.Words library for .NET, you can easily load CHM files using the appropriate load options. In this step-by-step guide, we will show you how to use Aspose.Words for .NET C# source code to load a CHM file using the LoadOptions load options.
 
 ## Understanding the Aspose.Words library
 

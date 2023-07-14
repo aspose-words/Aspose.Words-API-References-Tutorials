@@ -1,7 +1,7 @@
 ---
 title: Начало Xml-сопоставления диапазона тегов структурированного документа
 linktitle: Начало Xml-сопоставления диапазона тегов структурированного документа
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как настроить сопоставление XML для диапазона тегов структурированного документа, начиная с документа Word, используя Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /ru/net/programming-with-sdt/structured-document-tag-range-start-xml-mappin
 Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
 - Установлена библиотека Aspose.Words for .NET.
-- Базовые знания C# и работы с документами Word.
+- Базовые знания C# и Word Processing с документами Word.
 
 ## Шаг 1. Настройте каталог документов
  Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором находится ваш документ.
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 ### Пример исходного кода для сопоставления начала Xml диапазона тегов структурированного документа с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

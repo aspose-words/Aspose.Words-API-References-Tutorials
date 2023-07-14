@@ -1,7 +1,7 @@
 ---
 title: Satır Biçimlendirmesini Değiştir
 linktitle: Satır Biçimlendirmesini Değiştir
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak tablo satırı biçimlendirmesini değiştirmek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 ### Aspose.Words for .NET kullanarak Modify Row Formatting için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

@@ -1,7 +1,7 @@
 ---
 title: Insertar párrafo
 linktitle: Insertar párrafo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar párrafos con formato en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10

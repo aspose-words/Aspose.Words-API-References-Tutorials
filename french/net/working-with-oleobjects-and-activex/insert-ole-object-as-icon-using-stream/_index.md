@@ -1,7 +1,7 @@
 ---
 title: Insérer un objet Ole en tant qu'icône à l'aide de Stream
 linktitle: Insérer un objet Ole en tant qu'icône à l'aide de Stream
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer un objet OLE en tant qu'icône à l'aide d'un flux avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -98,7 +98,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 A. Pour insérer un objet OLE sous forme d'icône à partir d'un flux, vous pouvez suivre ces étapes :
 
- Utilisez le`InsertOleObjectAsIcon` méthode du générateur de document pour insérer l'objet OLE :
+ Utilisez le`InsertOleObjectAsIcon` méthode du générateur de document pour insérer l'objet OLE :
 
 ```csharp
 using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))

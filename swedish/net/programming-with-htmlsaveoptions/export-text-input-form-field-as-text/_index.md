@@ -1,7 +1,7 @@
 ---
 title: Exportera textinmatningsformulärfält som text
 linktitle: Exportera textinmatningsformulärfält som text
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att exportera textinmatningsformulärfält som vanlig text med Aspose.Words för .NET.
 type: docs
 weight: 10

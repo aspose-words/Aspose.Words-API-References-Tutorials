@@ -1,7 +1,7 @@
 ---
 title: Insert Table From Html
 linktitle: Insert Table From Html
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert a table from HTML into a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In this tutorial, we will learn how to insert a table into a Word document from 
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Creating the document and initializing the document generator
-To start working with the document and document generator, follow these steps:
+To start Words Processing with the document and document generator, follow these steps:
 
 ```csharp
 // Path to your documents directory

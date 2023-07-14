@@ -1,7 +1,7 @@
 ---
 title: 移至部分
 linktitle: 移至部分
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 中的“移至节”操作 Word 文档中的节和段落的分步指南。
 type: docs
 weight: 10

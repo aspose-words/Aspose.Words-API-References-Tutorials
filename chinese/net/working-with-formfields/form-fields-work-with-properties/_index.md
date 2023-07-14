@@ -1,7 +1,7 @@
 ---
 title: 表单字段使用属性
 linktitle: 表单字段使用属性
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的表单字段属性。
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## 步骤 3：使用表单字段属性
+## 步骤 3：使用表单字段属性进行文字处理
 
 您可以根据表单字段的类型来操作表单字段的各种属性。在此示例中，我们检查表单字段的类型是否为`FieldType.FieldFormTextInput`并设置其`Result`相应的财产：
 

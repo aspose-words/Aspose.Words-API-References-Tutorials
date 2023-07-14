@@ -1,7 +1,7 @@
 ---
 title: Tercih Edilen Genişlik Ayarları
 linktitle: Tercih Edilen Genişlik Ayarları
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesinde tercih edilen tablo hücresi genişliklerini nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo hücr
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
-Belge ve belge oluşturucuyla çalışmaya başlamak için şu adımları izleyin:
+Belge ve belge oluşturucu ile Sözcük İşleme'yi başlatmak için şu adımları izleyin:
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ### Aspose.Words for .NET kullanan Tercih Edilen Genişlik Ayarları için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -103,4 +103,4 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
 ## Çözüm
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo hücreleri için tercih edilen genişlik ayarlarının nasıl ayarlanacağını öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, tablo hücre genişliklerinizi Word belgelerinizdeki özel ihtiyaçlarınıza göre özelleştirebilirsiniz.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo hücreleri için tercih edilen genişlik ayarlarının nasıl ayarlanacağını öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, tablo hücre genişliklerinizi Word belgelerinizdeki özel ihtiyaçlarınıza göre özelleştirebilirsiniz.

@@ -1,7 +1,7 @@
 ---
 title: Обновить свойство последнего сохраненного времени
 linktitle: Обновить свойство последнего сохраненного времени
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как автоматически обновлять свойство «Время последнего сохранения» при сохранении документа с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx
 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

@@ -1,7 +1,7 @@
 ---
 title: 克隆部分
 linktitle: 克隆部分
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 克隆 Word 文档中的节。
 type: docs
 weight: 10

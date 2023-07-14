@@ -1,14 +1,14 @@
 ---
-title: Yer İşareti Verilerini Güncelle
+title: Word Belgesinde Yer İşareti Verilerini Güncelle
 linktitle: Yer İşareti Verilerini Güncelle
-second_title: Aspose.Words for .NET API Referansı
-description: .NET için Aspose.Words yer imi veri güncelleme özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz.
+second_title: Aspose.Words Belge İşleme API'sı
+description: .NET için word belgesi özelliğinde Aspose.Words yer imi veri güncellemesinin C# kaynak kodunu açıklayan adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-Bu öğreticide, Aspose.Words for .NET'in Yer İşareti Verilerini Güncelle özelliğini anlamak ve uygulamak için adım adım ilerleyen bir kılavuzdan geçeceğiz. Bu özellik, C# kaynak kodunu kullanarak bir Word belgesindeki yer imlerinin içeriğini ve özelliklerini güncellemenizi sağlar.
+Bu öğreticide, Aspose.Words for .NET'in kelime belgesinde Yer İşareti Verilerini Güncelle özelliğini anlamak ve uygulamak için adım adım bir kılavuz inceleyeceğiz. Bu özellik, C# kaynak kodunu kullanarak bir Word belgesindeki yer imlerinin içeriğini ve özelliklerini güncellemenizi sağlar.
 
 ## Gereksinimler
 
@@ -87,3 +87,21 @@ Bu kod, değiştirilen belgeyi "UpdatedDocument.docx" adıyla orijinal belgeyle 
 ## Çözüm
 
 Tebrikler! Aspose.Words for .NET kullanarak yer imi verilerini nasıl güncelleyeceğinizi başarıyla öğrendiniz. Bu öğreticide sağlanan adım adım kılavuzu izleyerek, artık bu özelliği C# uygulamalarınıza dahil edebilmeli ve Word belgeleri içindeki yer imlerini programlı olarak değiştirebilmelisiniz.
+
+### Word belgesindeki yer imi verilerini güncellemek için SSS
+
+#### S: Yer imi verilerini güncelleme özelliği yalnızca Word belgelerindeki yer imleriyle mi çalışır?
+
+Y: Evet, Yer İşareti Verilerini Güncelle özelliği özellikle Word belgelerindeki yer işaretleri için tasarlanmıştır. Bir Word belgesindeki yer imlerinin içeriğini ve özelliklerini güncellemenizi sağlar.
+
+#### S: Metnin yanı sıra diğer yer imi özelliklerini güncelleyebilir miyim?
+
+C: Evet, metne ek olarak, yer imi adı, yer imi kapsamı vb. gibi diğer yer imi özelliklerini de güncelleyebilirsiniz.`Bookmark` istenen özellikleri güncellemek için nesne.
+
+#### S: Aynı belgede birden fazla yer imini güncelleyebilir miyim?
+
+C: Evet, her bir yer imi için erişim ve güncelleme adımlarını tekrarlayarak aynı belgedeki birden fazla yer imi güncelleyebilirsiniz. Güncellemek istediğiniz her yer imi için benzersiz yer imi adları kullandığınızdan emin olun.
+
+#### S: Yer imi verilerini güncelleme işlevi orijinal belgeyi değiştirir mi?
+
+Y: Evet, yer imi veri güncelleme özelliği, yer imi özelliklerini ve içeriğini güncelleyerek orijinal belgeyi değiştirir. Bu özelliği uygulamadan önce orijinal belgenin bir kopyasını kaydettiğinizden emin olun.

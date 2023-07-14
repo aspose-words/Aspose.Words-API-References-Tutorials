@@ -1,7 +1,7 @@
 ---
 title: أضف التوقيع الرقمي إلى PDF باستخدام Certificate Holder
 linktitle: أضف التوقيع الرقمي إلى PDF باستخدام Certificate Holder
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إضافة التوقيع الرقمي إلى PDF باستخدام Certificate Holder with Aspose.Words for .NET.
 type: docs
 weight: 10

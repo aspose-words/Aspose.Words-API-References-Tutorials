@@ -1,7 +1,7 @@
 ---
 title: Erhalten Sie tatsächliche Formbegrenzungspunkte
 linktitle: Erhalten Sie tatsächliche Formbegrenzungspunkte
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die tatsächlichen Grenzen einer Form in Punkten (Maßeinheit) in einem Word-Dokument abrufen.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET die tats�
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
 - Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
+- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
  Erstellen Sie eine neue Instanz von`Document` Klasse und a`DocumentBuilder` Objekt, um mit dem Dokument zu arbeiten.
@@ -33,7 +33,7 @@ shape.AspectRatioLocked = false;
 ```
 
 ## Schritt 3: Abrufen der tatsächlichen Formbegrenzungspunkte
- Greifen Sie auf die Formen zu`ShapeRenderer` Verwendung der`GetShapeRenderer`Methode. Rufen Sie dann mithilfe von die tatsächlichen Grenzen der Form in Punkten ab`BoundsInPoints` Eigentum.
+ Greifen Sie auf die Formen zu`ShapeRenderer` Verwendung der`GetShapeRenderer` Methode. Rufen Sie dann mithilfe von die tatsächlichen Grenzen der Form in Punkten ab`BoundsInPoints` Eigentum.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");

@@ -1,14 +1,14 @@
 ---
-title: Mostrar Ocultar contenido marcado
-linktitle: Mostrar Ocultar contenido marcado
-second_title: Referencia de API de Aspose.Words para .NET
-description: Aprenda a mostrar u ocultar contenido de marcadores usando Aspose.Words para .NET.
+title: Mostrar ocultar contenido marcado en documento de Word
+linktitle: Mostrar ocultar contenido marcado en documento de Word
+second_title: API de procesamiento de documentos de Aspose.Words
+description: Aprenda a mostrar u ocultar el contenido de marcadores en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función Mostrar ocultar contenido marcado en Aspose.Words para la biblioteca .NET. Esta función le permite mostrar u ocultar el contenido de un marcador en función de una condición específica al fusionar datos.
+En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función Mostrar ocultar contenido marcado en Aspose.Words para la biblioteca .NET. Esta función le permite mostrar u ocultar el contenido de un marcador en un documento de Word en función de una condición específica al fusionar datos.
 
 ## requisitos previos
 
@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## Paso 2: Insertar los campos de combinación
 
- Usamos un generador de documentos.`DocumentBuilder` para insertar los campos de combinación necesarios. Estos campos de combinación establecerán una condición para mostrar u ocultar el contenido del marcador según el valor del`showHide` variable:
+ Usamos un generador de documentos.`DocumentBuilder`para insertar los campos de combinación necesarios. Estos campos de combinación establecerán una condición para mostrar u ocultar el contenido del marcador según el valor del`showHide` variable:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -145,3 +145,33 @@ Aquí está el ejemplo completo del código fuente para mostrar u ocultar el con
 ## Conclusión
 
 En este artículo, exploramos el código fuente de C# para entender cómo usar la función Mostrar contenido marcado como favorito de Aspose.Words para .NET. Hemos seguido una guía paso a paso para mostrar u ocultar el contenido de un marcador en función de una condición específica al fusionar datos.
+
+### Preguntas frecuentes para mostrar ocultar contenido marcado en un documento de Word
+
+#### P: ¿Puedo usar la misma condición para múltiples marcadores en el mismo documento?
+
+ R: Sí, puede usar la misma condición para múltiples marcadores en el mismo documento. Simplemente repita los pasos 2 a 5 para cada marcador, ajustando el nombre del marcador y, opcionalmente, el valor del marcador.`showhide` variable según sea necesario.
+
+#### P: ¿Cómo puedo agregar más condiciones para mostrar u ocultar contenido de marcadores?
+
+ R: Para agregar más condiciones, puede usar operadores lógicos como`AND` y`OR` en el código para insertar los campos de combinación en el paso 2. Edite la condición en el siguiente código para agregar condiciones adicionales:
+
+```csharp
+builder. Write("\" = \"true\" ");
+```
+
+#### P: ¿Cómo puedo eliminar un marcador en un documento de Word usando Aspose.Words para .NET?
+
+R: Para eliminar un marcador en un documento de Word usando Aspose.Words para .NET, puede usar el`Remove` método de la`Bookmarks` colección del rango de documentos. Aquí hay un código de muestra para eliminar un marcador específico:
+
+```csharp
+doc.Range.Bookmarks.Remove(bookmarkName);
+```
+
+#### P: ¿La biblioteca de Aspose.Words es gratuita?
+
+R: La biblioteca Aspose.Words es una biblioteca comercial y requiere una licencia válida para usarla en sus proyectos. Puede consultar el sitio web oficial de Aspose para obtener más información sobre las opciones de licencia y los precios.
+
+#### P: ¿Hay otras bibliotecas disponibles para el procesamiento de textos con documentos de Word en .NET?
+
+R: Sí, hay otras bibliotecas disponibles para el procesamiento de textos con documentos de Word en .NET, como Open XML SDK y GemBox.Document. Puede explorar estas bibliotecas como alternativas a Aspose.Words según sus necesidades y preferencias específicas.

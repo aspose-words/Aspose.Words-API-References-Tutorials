@@ -1,7 +1,7 @@
 ---
 title: Aggiungi sezione
 linktitle: Aggiungi sezione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questo tutorial, scopri come aggiungere una sezione a un documento di Word utilizzando Aspose.Words per .NET. Guida passo passo per strutturare il tuo documento.
 type: docs
 weight: 10

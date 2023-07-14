@@ -1,14 +1,14 @@
 ---
 title: Salta immagini PDF
 linktitle: Salta immagini PDF
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come caricare un documento PDF saltando il caricamento di immagini PDF con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/skip-pdf-images/
 ---
 
-Quando si lavora con documenti PDF in un'applicazione C#, potrebbe essere necessario ignorare il caricamento delle immagini PDF per motivi di prestazioni o di gestione dello spazio di archiviazione. Con la libreria Aspose.Words per .NET, puoi saltare facilmente il caricamento di immagini PDF utilizzando le opzioni di caricamento PdfLoadOptions. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per caricare un documento PDF saltando il caricamento delle immagini PDF utilizzando le opzioni di caricamento PdfLoadOptions.
+Durante l'elaborazione di testi con documenti PDF in un'applicazione C#, potrebbe essere necessario ignorare il caricamento delle immagini PDF per motivi di prestazioni o di gestione dello spazio di archiviazione. Con la libreria Aspose.Words per .NET, puoi saltare facilmente il caricamento di immagini PDF utilizzando le opzioni di caricamento PdfLoadOptions. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per caricare un documento PDF saltando il caricamento delle immagini PDF utilizzando le opzioni di caricamento PdfLoadOptions.
 
 ## Comprensione della libreria Aspose.Words
 

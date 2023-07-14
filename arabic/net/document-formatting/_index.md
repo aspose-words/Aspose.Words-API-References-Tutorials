@@ -1,7 +1,7 @@
 ---
 title: تنسيق المستند
 linktitle: تنسيق المستند
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تنسيق مستندات Word وتنسيقها باستخدام Aspose.Words for .NET. ستوجهك البرامج التعليمية عبر تقنيات التخطيط المختلفة ، والتصميم ، والترقيم ، والفقرات ، والخطوط والمزيد.
 type: docs
 weight: 1490

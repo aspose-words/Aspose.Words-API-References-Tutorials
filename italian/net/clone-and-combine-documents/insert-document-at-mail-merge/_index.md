@@ -1,7 +1,7 @@
 ---
 title: Inserisci documento alla stampa unione
 linktitle: Inserisci documento alla stampa unione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire un documento in un altro durante la stampa unione utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

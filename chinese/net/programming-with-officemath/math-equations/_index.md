@@ -1,7 +1,7 @@
 ---
 title: 数学方程
 linktitle: 数学方程
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将数学方程添加到 Word 文档中。
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中
 
 ## 了解 Aspose.Words 库
 
-在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。 Aspose.Words 是一个流行的库，它使 Word 文档的处理变得简单而高效。它提供了广泛的用于创建、编辑和操作 Word 文档的功能，包括对数学方程的支持。
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。 Aspose.Words 是一个流行的库，它使 Word 文档的文字处理变得简单高效。它提供了广泛的用于创建、编辑和操作 Word 文档的功能，包括对数学方程的支持。
 
 ## 加载Word文档
 
@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## 结论
 
-在本指南中，我们介绍了如何使用 Aspose.Words for .NET 通过提供的 C# 源代码将数学方程添加到 Word 文档中。通过按照提供的步骤操作，您可以轻松地将数学方程添加到 C# 应用程序中的 Word 文档中。 Aspose.Words 为处理数学方程提供了巨大的灵活性和强大的功能，使您能够创建专业的、格式良好的文档。
+在本指南中，我们介绍了如何使用 Aspose.Words for .NET 通过提供的 C# 源代码将数学方程添加到 Word 文档中。通过按照提供的步骤操作，您可以轻松地将数学方程添加到 C# 应用程序中的 Word 文档中。 Aspose.Words 为带有数学方程的文字处理提供了巨大的灵活性和强大功能，使您能够创建专业的、格式良好的文档。

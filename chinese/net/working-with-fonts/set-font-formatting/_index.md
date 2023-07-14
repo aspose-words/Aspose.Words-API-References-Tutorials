@@ -1,7 +1,7 @@
 ---
 title: 设置字体格式
 linktitle: 设置字体格式
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置字体格式并创建有吸引力的文档。
 type: docs
 weight: 10

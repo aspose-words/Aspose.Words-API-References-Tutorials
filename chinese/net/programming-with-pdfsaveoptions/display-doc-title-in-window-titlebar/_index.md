@@ -1,7 +1,7 @@
 ---
 title: 在窗口标题栏中显示文档标题
 linktitle: 在窗口标题栏中显示文档标题
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解使用 Aspose.Words for .NET 转换为 PDF 时如何在窗口标题栏中显示文档标题。
 type: docs
 weight: 10

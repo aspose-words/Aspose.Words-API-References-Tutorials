@@ -1,7 +1,7 @@
 ---
 title: Different Page Setup
 linktitle: Different Page Setup
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to append a document with different page setup settings using Aspose.Words for .NET.
 type: docs
 weight: 10

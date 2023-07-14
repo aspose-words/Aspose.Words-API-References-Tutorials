@@ -1,7 +1,7 @@
 ---
 title: Erweitertes Feld ohne Document Builder einfügen
 linktitle: Erweitertes Feld ohne Document Builder einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein erweitertes Feld in Ihre Word-Dokumente einfügen.
 type: docs
 weight: 10

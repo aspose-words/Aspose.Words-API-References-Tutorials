@@ -1,7 +1,7 @@
 ---
 title: 从 Stream 应用许可证
 linktitle: 从 Stream 应用许可证
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 从流应用许可证。分步指南
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ url: /zh/net/apply-license/apply-license-from-stream/
 - Aspose.Words 的有效许可证文件。
 
 ## 第 1 步：导入所需的命名空间
-首先，在 C# 代码中导入必要的命名空间。这些命名空间包含使用 Aspose.Words 所需的类和方法。
+首先，在 C# 代码中导入必要的命名空间。这些命名空间包含使用 Aspose.Words 进行文字处理所需的类和方法。
 
 ```csharp
 using Aspose.Words;

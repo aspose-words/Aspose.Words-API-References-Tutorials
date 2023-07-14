@@ -1,13 +1,15 @@
 ---
-title: Travailler avec le nœud
-linktitle: Travailler avec le nœud
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Traitement de texte avec Node
+linktitle: Traitement de texte avec Node
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à travailler avec des nœuds dans des documents Word à l'aide d'Aspose.Words pour .NET. Tutoriels détaillés avec des exemples de code.
 type: docs
 weight: 1000
 url: /fr/net/working-with-node/
 ---
-Travailler avec les révisions est une ressource complète qui vous guide tout au long de l'utilisation des révisions dans les documents Word à l'aide de la bibliothèque Aspose.Words pour .NET. Les didacticiels vous montrent étape par étape comment ajouter, supprimer, accepter et rejeter des révisions, comment afficher des révisions dans le document, comment comparer différentes versions et bien plus encore. Vous apprendrez à travailler efficacement avec des révisions pour la collaboration et la gestion du changement dans vos documents Word. Cette ressource est essentielle pour les développeurs qui souhaitent automatiser la gestion des révisions dans leurs applications Aspose.Words pour .NET.
+Les nœuds dans Aspose.Words pour .NET représentent les différents éléments d'un document Word, tels que les paragraphes, les tableaux, les images, etc. En manipulant ces nœuds, les développeurs peuvent modifier par programmation le contenu et la mise en forme d'un document Word. Les nœuds fournissent une structure hiérarchique au document, permettant une navigation et une manipulation faciles d'éléments spécifiques.
+
+Pour travailler avec des nœuds dans Aspose.Words pour .NET, les développeurs peuvent utiliser le Document Object Model (DOM) fourni par la bibliothèque. Le DOM représente l'ensemble du document Word sous la forme d'un arbre de nœuds, le document lui-même étant le nœud racine. Chaque nœud a un type de nœud spécifique et peut contenir des nœuds enfants, permettant un niveau de personnalisation approfondi.
 
  ## Tutoriels
 | Titre | Description |

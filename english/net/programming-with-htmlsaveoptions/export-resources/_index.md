@@ -1,7 +1,7 @@
 ---
 title: Export Resources
 linktitle: Export Resources
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to export document resources when saving as HTML with Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Ta bort personlig information
 linktitle: Ta bort personlig information
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ta bort personlig information från ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

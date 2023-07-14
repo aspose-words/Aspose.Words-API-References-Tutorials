@@ -1,14 +1,14 @@
 ---
-title: Travailler avec la liste
-linktitle: Travailler avec la liste
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Traitement de texte avec liste
+linktitle: Traitement de texte avec liste
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à travailler avec des listes dans des documents Word à l'aide d'Aspose.Words pour .NET. Tutoriels détaillés avec des exemples de code.
 type: docs
 weight: 780
 url: /fr/net/working-with-list/
 ---
 
-Travailler avec des listes est une ressource complète qui vous guide tout au long de l'utilisation de listes dans des documents Word à l'aide de la bibliothèque Aspose.Words pour .NET. Les didacticiels fournissent des explications étape par étape, un code source complet et des exemples pratiques pour créer, personnaliser et gérer différents types de listes, y compris les listes à puces, les listes numérotées et les listes à plusieurs niveaux. Vous apprendrez également à ajouter des éléments, à formater des listes, à modifier l'apparence et l'indentation et à réaliser d'autres opérations avancées. Cette ressource est essentielle pour les développeurs qui souhaitent automatiser la création et la gestion de listes dans leurs documents Word à l'aide d'Aspose.Words pour .NET.
+Le traitement de mots avec des listes est une ressource complète qui vous guide tout au long du traitement de mots avec des listes dans des documents Word à l'aide de la bibliothèque Aspose.Words pour .NET. Les didacticiels fournissent des explications étape par étape, un code source complet et des exemples pratiques pour créer, personnaliser et gérer différents types de listes, y compris les listes à puces, les listes numérotées et les listes à plusieurs niveaux. Vous apprendrez également à ajouter des éléments, à formater des listes, à modifier l'apparence et l'indentation et à réaliser d'autres opérations avancées. Cette ressource est essentielle pour les développeurs qui souhaitent automatiser la création et la gestion de listes dans leurs documents Word à l'aide d'Aspose.Words pour .NET.
 
  ## Tutoriels
 | Titre | Description |

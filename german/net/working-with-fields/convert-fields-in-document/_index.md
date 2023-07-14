@@ -1,7 +1,7 @@
 ---
 title: Felder im Dokument konvertieren
 linktitle: Felder im Dokument konvertieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Konvertieren von Dokumentfeldern in Text mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 3: Laden Sie das Dokument
- Benutzen Sie die`Document`Klasse von Aspose.Words, um das Word-Dokument zu laden, das die verknüpften Felder enthält, die Sie konvertieren möchten.
+ Benutzen Sie die`Document` Klasse von Aspose.Words, um das Word-Dokument zu laden, das die verknüpften Felder enthält, die Sie konvertieren möchten.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Schritt 5: Speichern Sie das transformierte Dokument
- Benutzen Sie die`Save()` Methode zum Speichern des Dokuments mit den in Text konvertierten Feldern im angegebenen Dokumentverzeichnis.
+ Benutzen Sie die`Save()`Methode zum Speichern des Dokuments mit den in Text konvertierten Feldern im angegebenen Dokumentverzeichnis.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

@@ -1,7 +1,7 @@
 ---
 title: Akıllı Sanat Şeklini Algıla
 linktitle: Akıllı Sanat Şeklini Algıla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki Akıllı Sanat şekillerini nasıl algılayacağınızı öğrenin, grafik temsilleri tanımlayın.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesindeki Akıll�
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
 - Aspose.Words for .NET kitaplığı yüklendi.
-- Temel C# bilgisi ve Word belgeleriyle çalışma.
+- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini kurun
  Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Smart Art.docx");
 ```
 
 ## 3. Adım: Akıllı Sanat Şekillerini Tespit Etme
-Türün alt düğümlerini yineleyin`Shape` kullanarak belgede`GetChildNodes` yöntem. kullanarak her şeklin Smart Art'a sahip olup olmadığını kontrol edin.`HasSmart Art` mülk.
+ Türün alt düğümlerini yineleyin`Shape` kullanarak belgede`GetChildNodes`yöntem. kullanarak her şeklin Smart Art'a sahip olup olmadığını kontrol edin.`HasSmart Art` mülk.
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmart Art);
@@ -47,7 +47,7 @@ Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ### Aspose.Words for .NET kullanarak Akıllı Sanat Şeklini Algıla için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Smart Art.docx");

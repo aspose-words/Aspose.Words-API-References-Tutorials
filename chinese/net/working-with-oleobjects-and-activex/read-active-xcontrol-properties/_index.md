@@ -1,7 +1,7 @@
 ---
 title: 从 Word 文件读取 Active XControl 属性
 linktitle: 从 Word 文件读取 Active XControl 属性
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 读取 Word 文件中 ActiveX 控件的属性。
 type: docs
 weight: 10
@@ -86,7 +86,7 @@ Console.WriteLine("\n" + properties);
 
 本指南向您展示了如何使用 Aspose.Words for .NET 读取 Word 文件中 ActiveX 控件的属性。通过执行所描述的步骤，您可以初始化文档、检索 ActiveX 控件并读取其属性。使用提供的示例代码作为起点，并根据您的特定需求进行自定义。
 
-读取 ActiveX 控件的属性使您可以从包含这些控件的 Word 文件中提取重要信息。 Aspose.Words for .NET 提供了使用 ActiveX 控件和自动化文档处理的强大功能。
+读取 ActiveX 控件的属性使您可以从包含这些控件的 Word 文件中提取重要信息。 Aspose.Words for .NET 为带有 ActiveX 控件的文字处理和自动化文档处理提供了强大的功能。
 
 ### 常见问题解答
 

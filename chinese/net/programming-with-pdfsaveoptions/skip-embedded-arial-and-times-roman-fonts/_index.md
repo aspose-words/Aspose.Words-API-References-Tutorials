@@ -1,7 +1,7 @@
 ---
 title: 通过跳过嵌入的 Arial 和 Times Roman 字体优化 PDF 大小
 linktitle: 通过跳过嵌入的 Arial 和 Times Roman 字体优化 PDF 大小
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 生成优化 PDF 且无需嵌入 Arial 和 Times Roman 字体的分步指南。
 type: docs
 weight: 10

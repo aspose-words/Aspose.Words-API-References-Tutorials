@@ -1,7 +1,7 @@
 ---
 title: Skapa länk i Word
 linktitle: Skapa länk i Word
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skapar länk i word mellan TextBoxes i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -24,7 +24,7 @@ TextBox textBox2 = shape2.TextBox;
 
 ## Steg 2: Skapa en länk mellan TextBoxes
 
- Vi kommer nu att skapa en länk mellan de två textrutorna med hjälp av`IsValidLinkTarget()` metoden och`Next` egenskapen för den första textrutan.
+Vi kommer nu att skapa en länk mellan de två textrutorna med hjälp av`IsValidLinkTarget()` metoden och`Next` egenskapen för den första textrutan.
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
@@ -62,7 +62,7 @@ S: För att länka textrutor i Word med Aspose.Words för .NET, är biblioteket 
 
 #### F: Hur skapar man en länk mellan två textrutor?
 
- S: För att skapa en länk mellan två textrutor måste du ställa in`Next`egenskapen för den första textrutan till den andra textrutan. Se till att du har kontrollerat giltigheten av länkmålet i förväg med hjälp av`IsValidLinkTarget()` metod.
+ S: För att skapa en länk mellan två textrutor måste du ställa in`Next` egenskapen för den första textrutan till den andra textrutan. Se till att du har kontrollerat giltigheten av länkmålet i förväg med hjälp av`IsValidLinkTarget()` metod.
 
 #### F: Är det möjligt att skapa länkar mellan andra element än textrutor?
 

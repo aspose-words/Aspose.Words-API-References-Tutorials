@@ -1,7 +1,7 @@
 ---
 title: Establecer carpeta de imágenes
 linktitle: Establecer carpeta de imágenes
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a configurar la carpeta de imágenes al exportar a Markdown con Aspose.Words para .NET. Personalice la ubicación de las imágenes para una mejor organización e integración.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
-title: Infoga kombinationsruta formulärfält
-linktitle: Infoga kombinationsruta formulärfält
-second_title: Aspose.Words för .NET API Referens
+title: Infoga formulärfält för kombinationsruta
+linktitle: Infoga formulärfält för kombinationsruta
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar kombinationsrutaformulär i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide.
 type: docs
 weight: 10

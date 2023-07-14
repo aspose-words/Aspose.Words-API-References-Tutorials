@@ -1,7 +1,7 @@
 ---
 title: Kontrollkästchentyp-Inhaltssteuerung
 linktitle: Kontrollkästchentyp-Inhaltssteuerung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Inhaltssteuerelement vom Typ Kontrollkästchen in einem Word-Dokument erstellen.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET ein Inhal
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
 - Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
+- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
- Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"`mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Schritt 3: Fügen Sie ein Inhaltssteuerelement vom Typ Kontrollkästchen hinzu
- Ein ... kreieren`StructuredDocumentTag` mit`SdtType.Checkbox` um das Kontrollkästchen-Inhaltssteuerelement darzustellen. Angeben`MarkupLevel.Inline` um es im Text zu platzieren.
+ Ein ... kreieren`StructuredDocumentTag` mit`SdtType.Checkbox` um die Inhaltssteuerung des Kontrollkästchens darzustellen. Angeben`MarkupLevel.Inline` um es im Text zu platzieren.
 
 ```csharp
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.Checkbox, MarkupLevel.Inline);
@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
 ### Beispielquellcode für die Inhaltssteuerung vom Typ „Kontrollkästchen“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

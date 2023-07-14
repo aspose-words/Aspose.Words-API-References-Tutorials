@@ -1,7 +1,7 @@
 ---
 title: Imposta la posizione della nota a piè di pagina e della nota finale
 linktitle: Imposta la posizione della nota a piè di pagina e della nota finale
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come impostare la posizione delle note a piè di pagina e di chiusura nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

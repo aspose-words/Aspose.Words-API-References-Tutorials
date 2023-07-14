@@ -1,7 +1,7 @@
 ---
 title: Ajouter le japonais comme langue d'édition
 linktitle: Ajouter le japonais comme langue d'édition
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour ajouter le japonais comme langue d'édition avec Aspose.Words pour .NET.
 type: docs
 weight: 10

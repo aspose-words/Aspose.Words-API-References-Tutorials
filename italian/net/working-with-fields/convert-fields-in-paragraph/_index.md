@@ -1,7 +1,7 @@
 ---
 title: Converti campi nel paragrafo
 linktitle: Converti campi nel paragrafo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Converti i campi IF in testo normale in un paragrafo con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
- Questo codice utilizza una combinazione di metodi LINQ per filtrare i campi nell'ultimo paragrafo del documento e quindi li converte in testo normale chiamando il metodo`Unlink()` metodo.
+Questo codice utilizza una combinazione di metodi LINQ per filtrare i campi nell'ultimo paragrafo del documento e quindi li converte in testo normale chiamando il metodo`Unlink()` metodo.
 
 ## Passaggio 4: salvare il documento modificato
 

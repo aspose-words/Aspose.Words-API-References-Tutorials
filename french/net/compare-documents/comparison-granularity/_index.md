@@ -1,7 +1,7 @@
 ---
 title: Granularité de la comparaison
 linktitle: Granularité de la comparaison
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à comparer la fonctionnalité de granularité d'Aspose.Words pour .NET qui permet de comparer les documents caractère par caractère, en signalant les modifications apportées.
 type: docs
 weight: 10

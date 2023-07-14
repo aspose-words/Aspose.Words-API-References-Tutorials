@@ -1,7 +1,7 @@
 ---
 title: Font Settings Default Instance
 linktitle: Font Settings Default Instance
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to configure default font settings in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

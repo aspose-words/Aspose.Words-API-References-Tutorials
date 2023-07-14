@@ -1,7 +1,7 @@
 ---
 title: Infoga författarefält
 linktitle: Infoga författarefält
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar ett AUTHOR-fält i dina Word-dokument med Aspose.Words för .NET. Ange författarens namn för att anpassa dina dokument.
 type: docs
 weight: 10
@@ -13,7 +13,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -68,7 +68,7 @@ field. Update();
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-det här exemplet skapade vi ett nytt dokument, infogade ett AUTHOR-fält, konfigurerade författarens namn och sparade dokumentet med ett specificerat filnamn.
+I det här exemplet skapade vi ett nytt dokument, infogade ett AUTHOR-fält, konfigurerade författarens namn och sparade dokumentet med ett specificerat filnamn.
 
 Detta avslutar vår guide om hur du använder funktionen "Infoga AUTHOR Field" med Aspose.Words för .NET.
 

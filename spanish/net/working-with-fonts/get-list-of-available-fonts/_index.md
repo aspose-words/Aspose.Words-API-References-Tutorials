@@ -1,7 +1,7 @@
 ---
 title: Obtener lista de fuentes disponibles
 linktitle: Obtener lista de fuentes disponibles
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda cómo obtener la lista de fuentes disponibles en Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -56,7 +56,7 @@ Console.WriteLine("Path: " + fontInfo.FilePath);
 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

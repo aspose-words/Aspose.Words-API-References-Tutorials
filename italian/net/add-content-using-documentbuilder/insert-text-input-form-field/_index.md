@@ -1,7 +1,7 @@
 ---
 title: Inserisci il campo del modulo di immissione del testo
 linktitle: Inserisci il campo del modulo di immissione del testo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare Aspose.Words per .NET per inserire il campo del modulo di immissione del testo nei documenti di Word con questa guida dettagliata.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Seguire i passaggi seguenti per implementare la funzionalità Inserisci campo mo
 
 ### Passaggio 1: inizializzazione del documento e del generatore di documenti
 
-Per iniziare, inizializza il documento e il generatore di documenti. Il generatore di documenti è un potente strumento fornito da Aspose.Words per .NET che ci consente di costruire e manipolare documenti Word a livello di codice. Utilizza il seguente frammento di codice:
+Per iniziare, inizializza il documento e il generatore di documenti. Il generatore di documenti è un potente strumento fornito da Aspose.Words per .NET che ci consente di costruire e manipolare documenti Word a livello di programmazione. Utilizza il seguente frammento di codice:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

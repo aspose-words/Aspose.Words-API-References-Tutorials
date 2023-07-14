@@ -1,7 +1,7 @@
 ---
 title: Rimuovi campo
 linktitle: Rimuovi campo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questa guida imparerai come eliminare un campo specifico in un documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

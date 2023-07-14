@@ -1,7 +1,7 @@
 ---
 title: 启用 OpenType 功能
 linktitle: 启用 OpenType 功能
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中启用 OpenType 功能。这些教程将指导您完成启用 OpenType 字体高级功能的步骤。
 type: docs
 weight: 40

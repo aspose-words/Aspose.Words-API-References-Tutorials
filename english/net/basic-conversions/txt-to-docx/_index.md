@@ -1,7 +1,7 @@
 ---
 title: Convert Text File To Word Document
 linktitle: Convert Text File To Word Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to convert plain text files (Txt) to Word documents (Docx) using Aspose.Words for .NET. Step-by-step tutorial with example code.
 type: docs
 weight: 10

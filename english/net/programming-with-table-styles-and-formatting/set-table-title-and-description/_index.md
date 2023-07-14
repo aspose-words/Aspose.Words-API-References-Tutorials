@@ -1,7 +1,7 @@
 ---
 title: Set Table Title And Description
 linktitle: Set Table Title And Description
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step by step guide to set title and description of a table using Aspose.Words for .NET.
 type: docs
 weight: 10

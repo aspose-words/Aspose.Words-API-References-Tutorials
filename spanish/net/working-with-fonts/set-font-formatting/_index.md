@@ -1,7 +1,7 @@
 ---
 title: Establecer formato de fuente
 linktitle: Establecer formato de fuente
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a configurar el formato de fuente en un documento de Word usando Aspose.Words para .NET y cree documentos atractivos.
 type: docs
 weight: 10
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: Crear y dar formato al documento
- Crear una instancia de la`Document` clase y el`DocumentBuilder` clase para construir el documento. Utilizar el`Font` propiedad de la`DocumentBuilder` para acceder a las propiedades de formato de fuente.
+ Crear una instancia de la`Document` clase y el`DocumentBuilder` clase para construir el documento. Utilizar el`Font`propiedad de la`DocumentBuilder` para acceder a las propiedades de formato de fuente.
 
 ```csharp
 Document doc = new Document();
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ### Ejemplo de código fuente para Establecer formato de fuente usando Aspose.Words para .NET 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Obtener puntos de límites de forma reales
 linktitle: Obtener puntos de límites de forma reales
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a recuperar los límites reales de una forma en puntos (unidad de medida) en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Este tutorial explica cómo recuperar los límites reales de una forma en puntos
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: Cree un nuevo documento y DocumentBuilder
  Crear una nueva instancia de la`Document` clase y un`DocumentBuilder` objeto de trabajar con el documento.
@@ -33,7 +33,7 @@ shape.AspectRatioLocked = false;
 ```
 
 ## Paso 3: recuperar puntos de límites de forma reales
- Accede a la forma`ShapeRenderer` utilizando el`GetShapeRenderer`método. Luego, recupere los límites reales de la forma en puntos usando el`BoundsInPoints` propiedad.
+ Accede a la forma`ShapeRenderer` utilizando el`GetShapeRenderer` método. Luego, recupere los límites reales de la forma en puntos usando el`BoundsInPoints` propiedad.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");

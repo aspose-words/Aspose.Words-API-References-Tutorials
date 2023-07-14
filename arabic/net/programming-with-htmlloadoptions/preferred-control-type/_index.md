@@ -1,7 +1,7 @@
 ---
 title: نوع التحكم المفضل
 linktitle: نوع التحكم المفضل
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لتحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -27,9 +27,9 @@ const string html=@"
 ";
 ```
 
-## الخطوة الثانية: تعيين خيارات تحميل HTML
+## الخطوة 2: تعيين خيارات تحميل HTML
 
- بعد ذلك ، نقوم بإنشاء ملف`HtmlLoadOptions` كائن وتعيين`PreferredControlType` الملكية ل`HtmlControlType.StructuredDocumentTag`. هذا يخبر Aspose.Words باستخدام StructuredDocumentTags لتمثيل HTML عند التحميل.
+ بعد ذلك ، نقوم بإنشاء ملف`HtmlLoadOptions` كائن وتعيين`PreferredControlType` ملكية ل`HtmlControlType.StructuredDocumentTag`. هذا يخبر Aspose.Words باستخدام StructuredDocumentTags لتمثيل HTML عند التحميل.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
@@ -44,7 +44,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), load
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### مثال على كود المصدر لنوع التحكم المفضل مع Aspose.Words for .NET
+### مثال على شفرة المصدر لنوع التحكم المفضل مع Aspose.Words for .NET
 
 ```csharp
 	

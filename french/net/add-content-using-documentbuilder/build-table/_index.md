@@ -1,7 +1,7 @@
 ---
 title: Créer un tableau
 linktitle: Créer un tableau
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer un tableau dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
 - Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
 ## Étape 1 : créer un nouveau document
-Pour commencer, créez un nouveau document en utilisant la classe Document :
+Pour commencer, créez un nouveau document en utilisant la classe Document :
 
 ```csharp
 Document doc = new Document();
@@ -71,7 +71,7 @@ builder.EndTable();
 ```
 
 ### Exemple de code source pour la construction d'une table à l'aide de Aspose.Words pour .NET
-Voici le code source complet pour construire une table en utilisant Aspose.Words pour .NET :
+Voici le code source complet pour construire une table en utilisant Aspose.Words pour .NET :
 
 ```csharp
 Document doc = new Document();

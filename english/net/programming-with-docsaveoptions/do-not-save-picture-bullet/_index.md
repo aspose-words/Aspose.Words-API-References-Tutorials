@@ -1,7 +1,7 @@
 ---
 title: Do Not Save Picture Bullet
 linktitle: Do Not Save Picture Bullet
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to disable saving image bullets in Word documents using Aspose.Words for .NET.
 type: docs
 weight: 10

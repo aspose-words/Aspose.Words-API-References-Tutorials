@@ -1,7 +1,7 @@
 ---
 title: Définir le style de contrôle du contenu
 linktitle: Définir le style de contrôle du contenu
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à définir le style d'un contrôle de contenu dans un document Word à l'aide d'Aspose.Words pour .NET, en appliquant une mise en forme cohérente.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Ce didacticiel explique comment définir le style d'un contrôle de contenu dans
 Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
 - Bibliothèque Aspose.Words pour .NET installée.
-- Connaissance de base de C# et travail avec des documents Word.
+- Connaissance de base de C# et du traitement de texte avec des documents Word.
 
 ## Étape 1 : Configurer le répertoire de documents
  Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où se trouve votre document.
@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ### Exemple de code source pour Définir le style de contrôle du contenu à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

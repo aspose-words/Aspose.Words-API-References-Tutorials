@@ -1,14 +1,14 @@
 ---
 title: Chm'yi Yükle
 linktitle: Chm'yi Yükle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile CHM dosyalarını nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/load-chm/
 ---
 
-Bir C# uygulamasında HTML Yardımı (CHM) dosyalarıyla çalışırken, bunları doğru şekilde yükleyebilmek önemlidir. .NET için Aspose.Words kitaplığı ile uygun yükleme seçeneklerini kullanarak CHM dosyalarını kolayca yükleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak bir CHM dosyasını yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
+HTML Yardımı ile Sözcük İşleme (CHM) dosyaları bir C# uygulamasında olduğunda, bunları doğru şekilde yükleyebilmek önemlidir. .NET için Aspose.Words kitaplığı ile uygun yükleme seçeneklerini kullanarak CHM dosyalarını kolayca yükleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak bir CHM dosyasını yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 

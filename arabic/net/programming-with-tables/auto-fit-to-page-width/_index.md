@@ -1,7 +1,7 @@
 ---
 title: احتواء تلقائي لعرض الصفحة
 linktitle: احتواء تلقائي لعرض الصفحة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية ملاءمة جدول تلقائيًا لعرض الصفحة في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ar/net/programming-with-tables/auto-fit-to-page-width/
 2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
 
 ## الخطوة 2: إنشاء وتكوين المستند
-لبدء العمل مع الجدول ، نحتاج إلى إنشاء مستند وتكوين منشئ المستندات. اتبع هذه الخطوات:
+لبدء معالجة الكلمات بالجدول ، نحتاج إلى إنشاء مستند وتكوين منشئ المستند. اتبع هذه الخطوات:
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بإنشاء المستند ومُنشئ المستند
+// قم بإنشاء المستند ومُنشئ المستند
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ### عينة من التعليمات البرمجية المصدر لـ Auto Fit To Page Width باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Documentbuilder'ı Kullanarak İçerik Ekleme
 linktitle: Documentbuilder'ı Kullanarak İçerik Ekleme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile DocumentBuilder'ı kullanarak Word belgelerinize nasıl içerik ekleyeceğinizi öğrenin. Ayrıntılı kod örnekleri içeren uygulamalı öğreticiler.
 type: docs
 weight: 1460
@@ -17,7 +17,7 @@ DocumentBuilder'ı Kullanarak İçerik Ekleme, .NET için Aspose.Words kitaplı�
 | [Belge Oluşturucu Yer İşareti Ekle](./document-builder-insert-bookmark/) | Aspose.Words for .NET'te DocumentBuilder'ı kullanarak Word belgelerine nasıl yer imleri ekleyeceğinizi öğrenin. Adım adım rehber. |
 | [Tablo Oluştur](./build-table/) | Aspose.Words for .NET kullanarak bir Word belgesinde tablo oluşturmayı öğrenin. |
 | [Yatay Kural Ekle](./insert-horizontal-rule/) | Aspose.Words for .NET kullanarak Word belgelerine yatay kuralları nasıl ekleyeceğinizi öğrenin. Adım adım rehber. |
-| [Yatay Kural Formatı](./horizontal-rule-format/) | Aspose.Words for .NET kullanarak Word belgelerinde yatay kuralları nasıl biçimlendireceğinizi öğrenin. Adım adım rehber. |
+| [Yatay Kural Biçimi](./horizontal-rule-format/) | Aspose.Words for .NET kullanarak Word belgelerinde yatay kuralları nasıl biçimlendireceğinizi öğrenin. Adım adım rehber. |
 | [Mola Ekle](./insert-break/) | Aspose.Words for .NET kullanarak Word belgelerine nasıl sayfa sonları ekleyeceğinizi öğrenin. Adım adım rehber. |
 | [Metin Giriş Formu Alanı Ekle](./insert-text-input-form-field/) | Bu adım adım kılavuz ile Word belgelerine metin giriş formu alanı eklemek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin. |
 | [Onay Kutusu Form Alanı Ekle](./insert-check-box-form-field/) | Aspose.Words for .NET kullanarak Word belgelerine onay kutusu form alanlarının nasıl ekleneceğini öğrenin. Adım adım rehber. |

@@ -1,7 +1,7 @@
 ---
 title: قبول المراجعات
 linktitle: قبول المراجعات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية قبول المراجعات على مستند Word باستخدام Aspose.Words for .NET
 type: docs
 weight: 10
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### الحل 2:
 
- ج: يمكنك أيضًا تمكين تتبع المراجعة باستخدام ملف`Document` المُنشئ الذي يقبل`trackRevisions` و`author` حدود.
+ ج: يمكنك أيضًا تمكين تتبع المراجعة باستخدام ملف`Document` منشئ يقبل`trackRevisions` و`author` حدود.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

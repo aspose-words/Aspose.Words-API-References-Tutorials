@@ -1,7 +1,7 @@
 ---
 title: 获取变量
 linktitle: 获取变量
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 检索文档变量的分步指南。
 type: docs
 weight: 10

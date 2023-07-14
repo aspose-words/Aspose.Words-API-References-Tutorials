@@ -1,7 +1,7 @@
 ---
 title: Obtener detalles del grupo de revisión
 linktitle: Obtener detalles del grupo de revisión
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Obtenga detalles del grupo de revisión en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### P: ¿Cómo verificar si una revisión pertenece a un grupo en Aspose.Words para .NET?
 
- R: Usa el`Group` propiedad de la`Revision` objeto para comprobar si una revisión pertenece a un grupo. Si el`Group` la propiedad es`null`significa que la revisión no pertenece a ningún grupo.
+ R: Usa el`Group`propiedad de la`Revision` objeto para comprobar si una revisión pertenece a un grupo. Si el`Group` la propiedad es`null`significa que la revisión no pertenece a ningún grupo.
 
 ```csharp
 if (revision.Group != null)

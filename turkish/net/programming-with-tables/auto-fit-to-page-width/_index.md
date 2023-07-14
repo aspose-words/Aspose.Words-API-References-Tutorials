@@ -1,7 +1,7 @@
 ---
 title: Sayfa Genişliğine Otomatik Sığdır
 linktitle: Sayfa Genişliğine Otomatik Sığdır
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesinde tabloyu sayfa genişliğine otomatik sığdırmayı öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu eğitimde, bir Word belgesinde bir tabloyu sayfa genişliğine otomatik olara
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi Oluşturma ve Yapılandırma
-Tabloyla çalışmaya başlamak için bir belge oluşturmamız ve belge oluşturucuyu yapılandırmamız gerekiyor. Bu adımları takip et:
+Kelime İşleme'yi tablo ile başlatmak için bir belge oluşturmamız ve belge oluşturucuyu yapılandırmamız gerekiyor. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Belgeyi ve belge oluşturucuyu oluşturun
+// Belgeyi ve belge oluşturucuyu oluşturun
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ### Aspose.Words for .NET kullanarak Sayfa Genişliğine Otomatik Sığdır için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

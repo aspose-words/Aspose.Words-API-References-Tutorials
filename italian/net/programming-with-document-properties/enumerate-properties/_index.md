@@ -1,7 +1,7 @@
 ---
 title: Enumera proprietà
 linktitle: Enumera proprietà
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata all'enumerazione delle proprietà del documento con Aspose.Words per .NET.
 type: docs
 weight: 10

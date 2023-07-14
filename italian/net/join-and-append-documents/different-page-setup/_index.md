@@ -1,7 +1,7 @@
 ---
 title: Impostazione pagina diversa
 linktitle: Impostazione pagina diversa
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come aggiungere un documento con diverse impostazioni di configurazione della pagina utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: configurare le impostazioni della pagina per il documento di origine
 
- Regola le impostazioni di configurazione della pagina del documento di origine per garantire una continuazione e una numerazione corrette. In questo esempio, impostiamo l'inizio della sezione su`SectionStart.Continuous` e riavviare la numerazione delle pagine. Ci assicuriamo inoltre che la larghezza, l'altezza e l'orientamento della pagina corrispondano all'ultima sezione del documento di destinazione.
+Regola le impostazioni di configurazione della pagina del documento di origine per garantire una continuazione e una numerazione corrette. In questo esempio, impostiamo l'inizio della sezione su`SectionStart.Continuous` e riavviare la numerazione delle pagine. Ci assicuriamo inoltre che la larghezza, l'altezza e l'orientamento della pagina corrispondano all'ultima sezione del documento di destinazione.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Passaggio 4: modificare la formattazione del paragrafo
 
-Per mantenere una formattazione corretta, scorrere tutti i paragrafi nel documento di origine e impostare l'estensione`KeepWithNext` proprietà a`true`. Ciò garantisce che i paragrafi rimangano uniti durante il processo di aggiunta.
+ Per mantenere una formattazione corretta, scorrere tutti i paragrafi nel documento di origine e impostare l'estensione`KeepWithNext` proprietà a`true`. Ciò garantisce che i paragrafi rimangano uniti durante il processo di aggiunta.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -74,19 +74,19 @@ Questo completa l'implementazione dell'aggiunta di un documento con diverse impo
 ### Esempio di codice sorgente per Different Page Setup utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Impostare il documento di origine in modo che continui subito dopo la fine del documento di destinazione.
+	//Impostare il documento di origine in modo che continui subito dopo la fine del documento di destinazione.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Riavvia la numerazione delle pagine all'inizio del documento di origine.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Per garantire che ciò non accada quando il documento di origine ha impostazioni di configurazione della pagina diverse, assicurati che il file
 	// le impostazioni sono identiche nell'ultima sezione del documento di destinazione.
-	//Se ci sono ulteriori sezioni continue che seguono nel documento di origine,
+	// Se ci sono ulteriori sezioni continue che seguono nel documento di origine,
 	// questo dovrà essere ripetuto per quelle sezioni.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;

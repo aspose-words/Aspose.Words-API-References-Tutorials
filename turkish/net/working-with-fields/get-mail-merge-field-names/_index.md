@@ -1,7 +1,7 @@
 ---
 title: Adres Mektup Birleştirme Alan Adlarını Alın
 linktitle: Adres Mektup Birleştirme Alan Adlarını Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinizde adres mektup birleştirme alan adlarını nasıl alacağınızı öğrenin.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Recevoir des notifications de polices
 linktitle: Recevoir des notifications de polices
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment recevoir des notifications de polices manquantes ou remplacées lors de l'utilisation d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ### Exemple de code source pour recevoir des notifications de polices à l'aide d'Aspose.Words pour .NET 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

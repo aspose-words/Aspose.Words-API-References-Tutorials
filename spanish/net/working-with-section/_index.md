@@ -1,15 +1,15 @@
 ---
-title: Trabajando con Sección
-linktitle: Trabajando con Sección
-second_title: Referencia de API de Aspose.Words para .NET
+title: Procesamiento de textos con sección
+linktitle: Procesamiento de textos con sección
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a trabajar con secciones en documentos de Word usando Aspose.Words para .NET. Tutoriales paso a paso con código de muestra para crear, editar y formatear secciones de manera eficiente.
 type: docs
 weight: 1220
 url: /es/net/working-with-section/
 ---
-Trabajar con secciones ofrece un recurso valioso para los desarrolladores que desean dominar el trabajo con secciones en documentos de Word. Estos tutoriales brindan instrucciones paso a paso, código de muestra y explicaciones paso a paso para ayudarlo a comprender y usar de manera efectiva las funciones relacionadas con la sección en Aspose.Words.
+El procesamiento de textos con secciones ofrece un recurso valioso para los desarrolladores que desean dominar el procesamiento de textos con secciones en documentos de Word. Estos tutoriales brindan instrucciones paso a paso, código de muestra y explicaciones paso a paso para ayudarlo a comprender y usar de manera efectiva las funciones relacionadas con la sección en Aspose.Words.
 
-Los tutoriales cubren los aspectos básicos del trabajo con secciones, incluida la creación de nuevas secciones, la adición de contenido, el cambio de la configuración de diseño y más. Aprenderá a manipular secciones para personalizar la estructura de su documento y crear diseños profesionales.
+Los tutoriales cubren los conceptos básicos del procesamiento de textos con secciones, incluida la creación de nuevas secciones, la adición de contenido, el cambio de la configuración de diseño y más. Aprenderá a manipular secciones para personalizar la estructura de su documento y crear diseños profesionales.
 
 Los tutoriales también se enfocan en eliminar y modificar secciones existentes. Aprenderá a eliminar secciones específicas, reorganizar secciones, cambiar la configuración de diseño y realizar otras operaciones avanzadas para adaptar sus documentos de Word a sus necesidades específicas.
 

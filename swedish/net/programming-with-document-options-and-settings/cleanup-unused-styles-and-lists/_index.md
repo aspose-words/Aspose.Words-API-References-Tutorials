@@ -1,7 +1,7 @@
 ---
 title: Rensa oanvända stilar och listor
 linktitle: Rensa oanvända stilar och listor
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att rensa bort oanvända stilar och listor i ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

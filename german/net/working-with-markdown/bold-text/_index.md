@@ -1,7 +1,7 @@
 ---
 title: Fetter Text
 linktitle: Fetter Text
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Text mit Aspose.Words für .NET fett formatieren.
 type: docs
 weight: 10
@@ -26,7 +26,7 @@ DocumentBuilder builder = new DocumentBuilder();
 builder.Font.Bold = true;
 ```
 
-## Schritt 3: Fügen Sie dem Dokument Inhalte hinzu
+## Schritt 3: Inhalte zum Dokument hinzufügen
 
  Jetzt können wir mithilfe der Document Builder-Methoden Inhalte zum Dokument hinzufügen, z`Writeln`, wodurch eine Textzeile hinzugefügt wird.
 
@@ -53,7 +53,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie mit Aspose.Words für 
 
 #### F: Wie kann ich Text in Aspose.Words fett formatieren?
 
- A: Um Text in Aspose.Words fett darzustellen, können Sie Folgendes verwenden`Font.Bold` Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf festlegen`true` um einen bestimmten Text fett zu formatieren. Sie können zum Beispiel verwenden`run.Font.Bold=true` um den Text darin fett zu machen`Run` Objekt.
+ A: Um Text in Aspose.Words fett darzustellen, können Sie Folgendes verwenden`Font.Bold`Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf festlegen`true` um einen bestimmten Text fett zu formatieren. Sie können zum Beispiel verwenden`run.Font.Bold=true` um den Text darin fett zu machen`Run` Objekt.
 
 #### F: Ist es möglich, mehrere Textteile im selben Absatz fett zu formatieren?
 
@@ -61,4 +61,4 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie mit Aspose.Words für 
 
 #### F: Kann ich Text in einer Tabelle oder Zelle in Aspose.Words fett formatieren?
 
- A: Ja, Sie können Text in einer Tabelle oder Zelle in Aspose.Words fett formatieren. Sie können mit den entsprechenden Methoden zu der gewünschten Zelle oder dem gewünschten Absatz navigieren und dann die Fettformatierung mithilfe von anwenden`Font.Bold` Eigentum der`Run` oder`Paragraph` Objekt.
+ A: Ja, Sie können Text in einer Tabelle oder Zelle in Aspose.Words fett formatieren. Sie können mit den entsprechenden Methoden zu der gewünschten Zelle oder dem gewünschten Absatz navigieren und dann die Fettformatierung mithilfe von anwenden`Font.Bold`Eigentum der`Run` oder`Paragraph` Objekt.

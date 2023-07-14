@@ -1,7 +1,7 @@
 ---
 title: Son Not Seçeneklerini Ayarla
 linktitle: Son Not Seçeneklerini Ayarla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerinde son not seçeneklerini nasıl ayarlayacağınızı öğrenin. Örnek kaynak koduyla adım adım öğretici.
 type: docs
 weight: 10
@@ -89,12 +89,12 @@ Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimleriniz
 
 #### S: Son notları bir belgede nasıl konumlandırabilirim?
 
- C: Bir belgedeki son notları konumlandırmak için`Position` mülkiyeti`EndnoteOptions` sınıf. Son notların her sayfanın altına mı, her bölümün sonuna mı yoksa belgenin sonuna mı yerleştirileceğini belirleyebilirsiniz.
+ C: Bir belgedeki son notları konumlandırmak için`Position`mülkiyeti`EndnoteOptions` sınıf. Son notların her sayfanın altına mı, her bölümün sonuna mı yoksa belgenin sonuna mı yerleştirileceğini belirleyebilirsiniz.
 
 #### S: Son not numaralandırma formatını özelleştirebilir miyim?
 
- C: Evet, Aspose.Words'te son not numaralandırma formatını özelleştirebilirsiniz. Kullan`NumberFormat` mülkiyeti`EndnoteOptions` Arap rakamları, Romen rakamları, harfler vb. gibi istenen formatı ayarlamak için sınıf.
+ C: Evet, Aspose.Words'te son not numaralandırma formatını özelleştirebilirsiniz. Kullan`NumberFormat`mülkiyeti`EndnoteOptions` Arap rakamları, Romen rakamları, harfler vb. gibi istenen formatı ayarlamak için sınıf.
 
 #### S: Bir belgenin bölümleri arasında son not numaralandırmaya devam etmek mümkün müdür?
 
- C: Evet, bir belgenin bölümleri arasında son not numaralandırmaya devam etmek mümkündür. Kullan`RestartRule` mülkiyeti`EndnoteOptions` sınıflandırın ve ayarlayın`RestartContinuous` numaralandırmanın bölümler arasında devam etmesini sağlamak için.
+ C: Evet, bir belgenin bölümleri arasında son not numaralandırmaya devam etmek mümkündür. Kullan`RestartRule`mülkiyeti`EndnoteOptions` sınıflandırın ve ayarlayın`RestartContinuous` numaralandırmanın bölümler arasında devam etmesini sağlamak için.

@@ -1,7 +1,7 @@
 ---
 title: تعيين موضع الحاشية السفلية وملاحظة النهاية
 linktitle: تعيين موضع الحاشية السفلية وملاحظة النهاية
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تعيين موضع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

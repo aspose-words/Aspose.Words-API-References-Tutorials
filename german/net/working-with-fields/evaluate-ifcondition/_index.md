@@ -1,7 +1,7 @@
 ---
 title: Bewerten Sie die IF-Bedingung
 linktitle: Bewerten Sie die IF-Bedingung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zur Auswertung der IF-Bedingung in Ihren Word-Dokumenten mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Hier haben wir als Beispiel die Bedingung „1=1“ verwendet, Sie können die B
 
 ## Schritt 3: Bewerten Sie die IF-Bedingung
 
- Der`EvaluateCondition()`Die Methode wird verwendet, um den Zustand des IF-Felds auszuwerten.
+ Der`EvaluateCondition()` Die Methode wird verwendet, um den Zustand des IF-Felds auszuwerten.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();

@@ -1,14 +1,14 @@
 ---
 title: Ändra fältuppdateringskulturkälla
 linktitle: Ändra fältuppdateringskulturkälla
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Ändra fältuppdatering kulturkälla, steg-för-steg-guide för att ändra kulturkälla i Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/change-field-update-culture-source/
 ---
 
-den här handledningen kommer vi att guida dig genom processen att ändra fältuppdateringskulturkällan i Word-dokument med Aspose.Words för .NET. Genom att ändra kulturkällan kan du styra datumformateringen under fältuppdateringar och kopplingsoperationer. Vi kommer att förse dig med den nödvändiga C#-källkoden och steg-för-steg-instruktioner för att uppnå detta.
+I den här handledningen kommer vi att guida dig genom processen att ändra fältuppdateringskulturkällan i Word-dokument med Aspose.Words för .NET. Genom att ändra kulturkällan kan du styra datumformateringen under fältuppdateringar och kopplingsoperationer. Vi kommer att förse dig med den nödvändiga C#-källkoden och steg-för-steg-instruktioner för att uppnå detta.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:
@@ -91,7 +91,7 @@ Grattis! Du har framgångsrikt lärt dig hur du ändrar fältuppdateringskulturk
 
 #### F: Hur kan jag specificera en specifik kultur för uppdatering av fält i Aspose.Words för .NET?
 
- S: För att ange en specifik kultur för uppdatering av fält i Aspose.Words för .NET, kan du använda`Document.FieldOptions.FieldUpdateCultureInfo` egendom och ställ in`CultureInfo` objekt som motsvarar den önskade kulturen. Du kan till exempel använda`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` för att specificera den franska (Frankrike) kulturen.
+S: För att ange en specifik kultur för uppdatering av fält i Aspose.Words för .NET, kan du använda`Document.FieldOptions.FieldUpdateCultureInfo` egendom och ställ in`CultureInfo` objekt som motsvarar den önskade kulturen. Du kan till exempel använda`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` för att specificera den franska (Frankrike) kulturen.
 
 #### F: Är det möjligt att inaktivera automatisk fältuppdatering i Aspose.Words för .NET?
 

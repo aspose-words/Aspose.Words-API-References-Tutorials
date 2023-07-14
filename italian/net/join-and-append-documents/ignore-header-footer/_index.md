@@ -1,7 +1,7 @@
 ---
 title: Ignora il piè di pagina dell'intestazione
 linktitle: Ignora il piè di pagina dell'intestazione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come aggiungere un documento ignorando il contenuto di intestazione e piè di pagina utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: imposta le opzioni del formato di importazione
 
- Crea un'istanza di`ImportFormatOptions` classe e impostare il`IgnoreHeaderFooter` proprietà a`false`. Ciò garantisce che il contenuto dell'intestazione e del piè di pagina sia incluso durante il processo di aggiunta.
+ Crea un'istanza di`ImportFormatOptions`classe e impostare il`IgnoreHeaderFooter` proprietà a`false`. Ciò garantisce che il contenuto dell'intestazione e del piè di pagina sia incluso durante il processo di aggiunta.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Passaggio 4: aggiungere il documento di origine al documento di destinazione
 
- Usa il`AppendDocument` metodo del documento di destinazione per aggiungere il documento di origine. Passaggio`ImportFormatMode.KeepSourceFormatting` come secondo parametro e le opzioni del formato di importazione come terzo parametro.
+ Usa il`AppendDocument`metodo del documento di destinazione per aggiungere il documento di origine. Passaggio`ImportFormatMode.KeepSourceFormatting` come secondo parametro e le opzioni del formato di importazione come terzo parametro.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ Questo completa l'implementazione dell'aggiunta di un documento ignorando il con
 ### Esempio di codice sorgente per Ignore Header Footer utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

@@ -1,7 +1,7 @@
 ---
 title: Imposta il russo come lingua di modifica predefinita
 linktitle: Imposta il russo come lingua di modifica predefinita
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo-passo per impostare il russo come lingua di modifica predefinita di un documento con Aspose.Words per .NET.
 type: docs
 weight: 10

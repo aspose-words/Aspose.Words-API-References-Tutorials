@@ -1,7 +1,7 @@
 ---
 title: Utiliser la police de la machine cible
 linktitle: Utiliser la police de la machine cible
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à convertir un document Word en HTML fixe à l'aide des polices de la machine cible avec Aspose.Words pour .NET.
 type: docs
 weight: 10

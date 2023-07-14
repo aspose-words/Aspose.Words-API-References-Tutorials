@@ -1,13 +1,13 @@
 ---
 title: Meta Dosyalarını Png'ye Dönüştür
 linktitle: Meta Dosyalarını Png'ye Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile belgeleri yüklerken meta dosyalarını PNG resimlerine nasıl dönüştüreceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/convert-metafiles-to-png/
 ---
-Bir C# uygulamasındaki belgelerle çalışırken, daha iyi uyumluluk ve doğru işleme için meta dosyalarını PNG resimlerine dönüştürmek gerekebilir. .NET için Aspose.Words kitaplığıyla, bir belge yüklerken meta dosyalarını kolayca PNG'ye dönüştürebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak meta dosyalarını PNG'ye dönüştüren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+Bir C# uygulamasındaki belgelerle Sözcük İşleme yaparken, daha iyi uyumluluk ve doğru işleme için meta dosyaların PNG resimlerine dönüştürülmesi gerekebilir. .NET için Aspose.Words kitaplığıyla, bir belge yüklerken meta dosyalarını kolayca PNG'ye dönüştürebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak meta dosyalarını PNG'ye dönüştüren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 

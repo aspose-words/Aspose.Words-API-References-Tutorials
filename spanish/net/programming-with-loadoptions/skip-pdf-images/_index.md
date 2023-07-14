@@ -1,14 +1,14 @@
 ---
 title: Saltar imágenes en PDF
 linktitle: Saltar imágenes en PDF
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a cargar un documento PDF sin cargar imágenes PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/skip-pdf-images/
 ---
 
-Cuando se trabaja con documentos PDF en una aplicación C#, puede que sea necesario omitir la carga de imágenes PDF por motivos de rendimiento o de gestión del espacio de almacenamiento. Con la biblioteca Aspose.Words para .NET, puede omitir fácilmente la carga de imágenes PDF utilizando las opciones de carga de PdfLoadOptions. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento PDF omitiendo la carga de imágenes PDF usando las opciones de carga de PdfLoadOptions.
+Cuando se utiliza el procesamiento de textos con documentos PDF en una aplicación C#, es posible que sea necesario omitir la carga de imágenes PDF por motivos de rendimiento o de gestión del espacio de almacenamiento. Con la biblioteca Aspose.Words para .NET, puede omitir fácilmente la carga de imágenes PDF utilizando las opciones de carga de PdfLoadOptions. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento PDF omitiendo la carga de imágenes PDF usando las opciones de carga de PdfLoadOptions.
 
 ## Comprender la biblioteca Aspose.Words
 

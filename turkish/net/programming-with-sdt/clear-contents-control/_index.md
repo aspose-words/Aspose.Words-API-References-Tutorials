@@ -1,7 +1,7 @@
 ---
 title: İçerik Kontrolünü Temizle
 linktitle: İçerik Kontrolünü Temizle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki kontrolün içeriğini nasıl temizleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesindeki bir SDT
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
 - Aspose.Words for .NET kitaplığı yüklendi.
-- Temel C# bilgisi ve Word belgeleriyle çalışma.
+- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini kurun
  Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## 4. Adım: Belgeyi Kaydedin
-Değiştirilen belgeyi şunu kullanarak kaydedin:`Save`yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.ClearContentsControl.doc" olarak kaydediyoruz.
+ Değiştirilen belgeyi şunu kullanarak kaydedin:`Save`yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.ClearContentsControl.doc" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ### Aspose.Words for .NET kullanan Clear Contents Control için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

@@ -1,13 +1,15 @@
 ---
-title: Working with Node
-linktitle: Working with Node
-second_title: Aspose.Words for .NET API Reference
+title: Words Processing with Node
+linktitle: Words Processing with Node
+second_title: Aspose.Words Document Processing API
 description: Learn how to work with nodes in Word documents using Aspose.Words for .NET. Detailed tutorials with code examples.
 type: docs
 weight: 1000
 url: /net/working-with-node/
 ---
-Working with Revisions is a comprehensive resource that guides you through working with revisions in Word documents using the Aspose.Words for .NET library. The tutorials show you step by step how to add, delete, accept and reject revisions, how to display revisions in the document, how to compare different versions and much more. You will learn how to work effectively with reviews for collaboration and change management in your Word documents. This resource is essential for developers who want to automate revision management in their Aspose.Words for .NET-based applications.
+Nodes in Aspose.Words for .NET represent the various elements of a Word document, such as paragraphs, tables, images, and more. By manipulating these nodes, developers can programmatically modify the content and formatting of a Word document. Nodes provide a hierarchical structure to the document, allowing easy navigation and manipulation of specific elements.
+
+To work with nodes in Aspose.Words for .NET, developers can utilize the Document Object Model (DOM) provided by the library. The DOM represents the entire Word document as a tree of nodes, with the document itself being the root node. Each node has a specific node type and may contain child nodes, allowing for a deep level of customization.
 
  ## Tutorials
 | Title | Description |

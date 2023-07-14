@@ -1,7 +1,7 @@
 ---
 title: Ta bort innehåll i sidhuvud
 linktitle: Ta bort innehåll i sidhuvud
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här handledningen lär du dig hur du tar bort sidhuvud och sidfotsinnehåll från ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Därefter laddar vi Word-dokumentet i en instans av`Document` klass. Vi kommer åt den första delen av dokumentet med index 0.
 
 ```csharp
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Gå till avsnittet
@@ -46,7 +46,7 @@ section.ClearHeadersFooters();
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -58,7 +58,7 @@ section.ClearHeadersFooters();
 ## Slutsats
 den här handledningen har vi sett hur du tar bort sidhuvud och sidfotsinnehåll från ett Word-dokument med Aspose.Words för .NET. Genom att ta bort innehåll från sidhuvuden och sidfötter kan du återställa eller ta bort de specifika elementen från ditt dokument. Känn dig fri att anpassa och använda den här funktionen efter dina specifika behov.
 
-### Vanliga frågor för att ta bort sidfotsinnehåll
+### Vanliga frågor för att ta bort sidhuvudsinnehåll
 
 #### F: Hur ställer jag in dokumentkatalogen i Aspose.Words för .NET?
 
@@ -74,7 +74,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  S: För att ladda Word-dokumentet i en instans av`Document` klass kallas`doc` och komma åt den första delen av dokumentet med index 0, kan du använda följande kod:
 
 ```csharp
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Gå till avsnittet

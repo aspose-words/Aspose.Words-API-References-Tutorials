@@ -1,7 +1,7 @@
 ---
-title: Límites del eje
-linktitle: Límites del eje
-second_title: Referencia de API de Aspose.Words para .NET
+title: Límites del eje en un gráfico
+linktitle: Límites del eje en un gráfico
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a establecer los límites de un eje en un gráfico usando Aspose.Words para .NET controlando el rango de valores que se muestran en el eje.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Este tutorial explica cómo establecer los límites de un eje en un gráfico usa
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ### Ejemplo de código fuente para Bounds Of Axis usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -84,3 +84,21 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
 ¡Eso es todo! Ha establecido correctamente los límites de un eje en un gráfico utilizando Aspose.Words para .NET.
+
+## Conclusión
+En este tutorial, ha aprendido a establecer los límites de un eje en un gráfico utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso, puede insertar y configurar un gráfico, agregar datos de serie y definir los valores mínimo y máximo para la escala del eje. Aspose.Words para .NET proporciona una API potente y flexible para el procesamiento de textos con documentos de Word, lo que le permite crear gráficos dinámicos y visualmente atractivos con facilidad.
+
+
+### preguntas frecuentes
+
+#### Q1. ¿Qué es Aspose.Words para .NET?
+Aspose.Words para .NET es una biblioteca que permite a los desarrolladores trabajar con documentos de Word mediante programación. Proporciona una amplia gama de características y funcionalidades para crear, manipular y guardar documentos de Word.
+
+#### Q2. ¿Cómo puedo instalar Aspose.Words para .NET?
+Para instalar Aspose.Words para .NET, puede usar el administrador de paquetes NuGet en Visual Studio. Simplemente busque "Aspose.Words" en el administrador de paquetes NuGet e instálelo en su proyecto.
+
+#### Q3. ¿Puedo usar Aspose.Words para .NET con otros lenguajes de programación?
+No, Aspose.Words para .NET está diseñado específicamente para aplicaciones .NET. Funciona con lenguajes de programación como C# y VB.NET.
+
+#### Q4. ¿Existen otros requisitos previos para usar Aspose.Words para .NET?
+Además de instalar la biblioteca Aspose.Words para .NET, debe tener conocimientos básicos de programación en C# y procesamiento de textos con documentos de Word. La familiaridad con el marco .NET también será útil.

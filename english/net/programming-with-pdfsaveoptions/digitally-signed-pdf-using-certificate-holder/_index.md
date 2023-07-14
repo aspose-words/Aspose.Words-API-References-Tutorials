@@ -1,7 +1,7 @@
 ---
 title: Add Digital Signature to PDF using Certificate Holder
 linktitle: Add Digital Signature to PDF using Certificate Holder
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to add Digital Signature to PDF using Certificate Holder with Aspose.Words for .NET.
 type: docs
 weight: 10

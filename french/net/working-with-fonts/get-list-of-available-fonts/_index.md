@@ -1,7 +1,7 @@
 ---
 title: Obtenir la liste des polices disponibles
 linktitle: Obtenir la liste des polices disponibles
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment obtenir la liste des polices disponibles dans Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -56,7 +56,7 @@ Console.WriteLine("Path: " + fontInfo.FilePath);
 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

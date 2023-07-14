@@ -1,7 +1,7 @@
 ---
 title: Definiera villkorlig formatering
 linktitle: Definiera villkorlig formatering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att definiera villkorlig formatering i en tabell med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -70,7 +70,7 @@ Grattis! Du har nu definierat villkorlig formatering för din tabell med Aspose.
 ### Exempel på källkod för Definiera villkorlig formatering med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

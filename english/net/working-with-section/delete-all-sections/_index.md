@@ -1,7 +1,7 @@
 ---
 title: Delete All Sections
 linktitle: Delete All Sections
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to remove all sections from a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

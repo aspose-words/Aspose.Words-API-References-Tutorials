@@ -1,7 +1,7 @@
 ---
 title: Düğüm Türünü Kullan
 linktitle: Düğüm Türünü Kullan
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile belgeye özgü bilgilere erişmek için düğüm türünü nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10

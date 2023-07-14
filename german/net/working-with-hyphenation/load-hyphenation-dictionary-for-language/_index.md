@@ -1,7 +1,7 @@
 ---
 title: Silbentrennungswörterbuch für Sprache laden
 linktitle: Silbentrennungswörterbuch für Sprache laden
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie in Aspose.Words für .NET ein Silbentrennungswörterbuch für eine bestimmte Sprache laden.
 type: docs
 weight: 10

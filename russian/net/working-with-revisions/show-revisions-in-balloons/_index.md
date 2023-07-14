@@ -1,7 +1,7 @@
 ---
 title: Показать изменения в выносках
 linktitle: Показать изменения в выносках
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Показывайте исправления во всплывающих подсказках с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### В: Как отображать версии во всплывающих подсказках с помощью Aspose.Words для .NET?
 
- О: Используйте`ShowInBalloons` собственность`RevisionOptions` object для настройки отображения ревизий во всплывающих подсказках. Вы можете установить это свойство на`ShowInBalloons.FormatAndDelete` для отображения ревизий во всплывающих подсказках с исправлениями удаления и форматирования.
+ О: Используйте`ShowInBalloons`собственность`RevisionOptions` object для настройки отображения ревизий во всплывающих подсказках. Вы можете установить это свойство на`ShowInBalloons.FormatAndDelete` для отображения ревизий во всплывающих подсказках с исправлениями удаления и форматирования.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

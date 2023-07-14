@@ -1,7 +1,7 @@
 ---
 title: Feldaktualisierungskultur
 linktitle: Feldaktualisierungskultur
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Feldkultur in Ihren Word-Dokumenten mit Aspose.Words für .NET aktualisieren.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Fügen Sie das Zeitfeld ein.
 builder. InsertField(FieldType.FieldTime, true);
 
-//Konfigurieren Sie die Feldaktualisierungskultur.
+// Konfigurieren Sie die Feldaktualisierungskultur.
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 

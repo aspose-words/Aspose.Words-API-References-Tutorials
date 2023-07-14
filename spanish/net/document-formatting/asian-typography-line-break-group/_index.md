@@ -1,7 +1,7 @@
 ---
 title: Grupo de salto de línea de tipografía asiática
 linktitle: Grupo de salto de línea de tipografía asiática
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a usar el grupo de salto de línea de tipografía asiática con Aspose.Words para .NET.
 type: docs
 weight: 10

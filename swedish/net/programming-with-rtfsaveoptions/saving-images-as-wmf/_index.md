@@ -1,7 +1,7 @@
 ---
 title: Spara bilder som Wmf
 linktitle: Spara bilder som Wmf
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du sparar bilder som WMF när du konverterar till RTF med Aspose.Words för .NET.
 type: docs
 weight: 10

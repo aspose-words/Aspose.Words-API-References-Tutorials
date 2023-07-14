@@ -1,7 +1,7 @@
 ---
 title: Update Last Saved Time Property
 linktitle: Update Last Saved Time Property
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to automatically update the Last Saved Time property when saving a document with Aspose.Words for .NET.
 type: docs
 weight: 10

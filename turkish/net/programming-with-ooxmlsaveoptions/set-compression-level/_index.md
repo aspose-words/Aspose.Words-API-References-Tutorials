@@ -1,7 +1,7 @@
 ---
 title: Sıkıştırma Düzeyini Ayarla
 linktitle: Sıkıştırma Düzeyini Ayarla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgeyi kaydederken sıkıştırma düzeyini nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Artık bir belgeyi kaydederken sıkıştırma düzeyini ayarlamak için kaynak k
 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Document.docx");

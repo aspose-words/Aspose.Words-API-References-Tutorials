@@ -1,7 +1,7 @@
 ---
 title: Reemplazar hipervínculos
 linktitle: Reemplazar hipervínculos
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Reemplace hipervínculos en documentos de Word usando Aspose.Words para .NET. Instrucciones paso a paso para reemplazar hipervínculos.
 type: docs
 weight: 10

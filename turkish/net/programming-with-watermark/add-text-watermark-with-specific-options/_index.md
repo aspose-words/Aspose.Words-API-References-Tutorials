@@ -1,7 +1,7 @@
 ---
 title: Belirli Seçeneklerle Metin Filigranı Ekleyin
 linktitle: Belirli Seçeneklerle Metin Filigranı Ekleyin
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak belirli seçeneklerle metin filigranı eklemeyi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## 3. Adım: Belirli seçeneklerle metin filigranı ekleyin
 
- örneğini oluşturacağız`TextWatermarkOptions` sınıfını seçin ve metin filigranı için istediğiniz seçenekleri ayarlayın.
+ örneğini oluşturacağız`TextWatermarkOptions`sınıfını seçin ve metin filigranı için istediğiniz seçenekleri ayarlayın.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

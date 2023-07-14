@@ -1,7 +1,7 @@
 ---
 title: أدخل حقل نموذج مربع التحرير والسرد
 linktitle: أدخل حقل نموذج مربع التحرير والسرد
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج حقول نموذج مربع التحرير والسرد في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
 type: docs
 weight: 10
@@ -22,7 +22,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: تحديد عناصر صندوق الكومبو
+## الخطوة 2: تحديد عناصر صندوق الكومبو
 بعد ذلك ، حدد مصفوفة من العناصر لحقل نموذج مربع التحرير والسرد:
 
 ```csharp

@@ -1,7 +1,7 @@
 ---
 title: Keep Source Formatting
 linktitle: Keep Source Formatting
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to append a source document to a destination document while preserving the original formatting using Aspose.Words for .NET.
 type: docs
 weight: 10

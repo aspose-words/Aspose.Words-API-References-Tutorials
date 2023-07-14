@@ -1,7 +1,7 @@
 ---
 title: احصل على فاصل نمط الفقرة
 linktitle: احصل على فاصل نمط الفقرة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية الحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

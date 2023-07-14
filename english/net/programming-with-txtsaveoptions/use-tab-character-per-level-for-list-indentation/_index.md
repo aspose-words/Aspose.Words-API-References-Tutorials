@@ -1,7 +1,7 @@
 ---
 title: Use Tab Character Per Level For List Indentation
 linktitle: Use Tab Character Per Level For List Indentation
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use the indent lists with tab characters feature in Aspose.Words for .NET. Save time and improve your workflow with this powerful feature.
 type: docs
 weight: 10

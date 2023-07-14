@@ -1,7 +1,7 @@
 ---
 title: Form Fields Work With Properties
 linktitle: Form Fields Work With Properties
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to work with form field properties in Word documents using Aspose.Words for .NET. 
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ Next, retrieve a specific form field from the document's form field collection. 
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## Step 3: Working with Form Field Properties
+## Step 3: Words Processing with Form Field Properties
 
 You can manipulate various properties of the form field based on its type. In this example, we check if the form field is of type `FieldType.FieldFormTextInput` and set its `Result` property accordingly:
 

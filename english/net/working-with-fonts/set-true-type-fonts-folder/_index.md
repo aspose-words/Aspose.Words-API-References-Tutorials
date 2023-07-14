@@ -1,7 +1,7 @@
 ---
 title: Set True Type Fonts Folder
 linktitle: Set True Type Fonts Folder
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to setting the true type fonts folder when rendering a document using Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
 ## Conclusion
-In this tutorial, we learned how to set the true type fonts folder when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify a custom folder containing True Type fonts to use when rendering your documents. Aspose.Words offers a powerful and flexible API for working with fonts in your documents. With this knowledge, you can control and customize the fonts used when rendering your documents to your specific needs.
+In this tutorial, we learned how to set the true type fonts folder when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify a custom folder containing True Type fonts to use when rendering your documents. Aspose.Words offers a powerful and flexible API for Words Processing with fonts in your documents. With this knowledge, you can control and customize the fonts used when rendering your documents to your specific needs.
 
 ### FAQ's
 

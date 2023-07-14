@@ -1,13 +1,13 @@
 ---
-title: Programmation avec Htmlfixedsaveoptions
-linktitle: Programmation avec Htmlfixedsaveoptions
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Traitement de texte avec Htmlfixedsaveoptions
+linktitle: Traitement de texte avec Htmlfixedsaveoptions
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à programmer avec des options d'enregistrement HTML fixes dans Aspose.Words pour .NET. Les didacticiels vous guident à travers les différentes fonctionnalités pour générer des documents HTML avec une mise en page fixe, des images intégrées.
 type: docs
 weight: 1610
 url: /fr/net/programming-with-htmlfixedsaveoptions/
 ---
-Les didacticiels Aspose.Words pour .NET sont conçus pour vous aider à maîtriser l'utilisation de la bibliothèque Aspose.Words dans vos projets .NET. L'un de ces didacticiels, intitulé "Programmation avec HtmlFixedSaveOptions", vous guide à travers les étapes nécessaires pour convertir un document Word en HTML fixe à l'aide des options d'enregistrement HtmlFixedSaveOptions. Ce didacticiel explique comment configurer les options d'enregistrement, comment spécifier les paramètres de mise en page et comment gérer les images et les polices lors de la conversion. Vous apprendrez également à personnaliser les options de sauvegarde pour répondre à vos besoins spécifiques.
+Les didacticiels Aspose.Words pour .NET sont conçus pour vous aider à maîtriser l'utilisation de la bibliothèque Aspose.Words dans vos projets .NET. L'un de ces didacticiels, intitulé "Traitement de texte avec HtmlFixedSaveOptions", vous guide à travers les étapes nécessaires pour convertir un document Word en HTML fixe à l'aide des options d'enregistrement HtmlFixedSaveOptions. Ce didacticiel explique comment configurer les options d'enregistrement, comment spécifier les paramètres de mise en page et comment gérer les images et les polices lors de la conversion. Vous apprendrez également à personnaliser les options de sauvegarde pour répondre à vos besoins spécifiques.
 
  ## Tutoriels
 | Titre | Description |

@@ -1,7 +1,7 @@
 ---
 title: Layout I Cell
 linktitle: Layout I Cell
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du layoutar en form i en tabellcell i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Denna handledning förklarar hur man layoutar en form i en tabellcell i ett Word
 För att följa denna handledning måste du ha följande:
 
 - Aspose.Words för .NET-biblioteket installerat.
-- Grundläggande kunskaper i C# och att arbeta med Word-dokument.
+- Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,7 +65,7 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 ```
 
 ## Steg 5: Anpassa formen
- Anpassa vattenstämpelns utseende och text genom att ställa in egenskaper som t.ex`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`etc.
+ Anpassa vattenstämpelns utseende och text genom att ställa in egenskaper som t.ex`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, etc.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Steg 6: Infoga formen i dokumentet
- Infoga vattenstämpelns form i dokumentet med hjälp av`InsertNode` metod för`DocumentBuilder` objekt. Placera formen med hjälp av`MoveTo` metod för att placera den efter den senaste körningen i dokumentet.
+Infoga vattenstämpelns form i dokumentet med hjälp av`InsertNode` metod för`DocumentBuilder` objekt. Placera formen med hjälp av`MoveTo` metod för att placera den efter den senaste körningen i dokumentet.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -98,7 +98,7 @@ doc
 ### Exempel på källkod för Layout In Cell med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

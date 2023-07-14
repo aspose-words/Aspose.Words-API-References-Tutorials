@@ -1,7 +1,7 @@
 ---
 title: 带有加载选项的字体设置
 linktitle: 带有加载选项的字体设置
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，了解如何使用自定义加载选项和相应的字体设置加载 Word 文档。
 type: docs
 weight: 10

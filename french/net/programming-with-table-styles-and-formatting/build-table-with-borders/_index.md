@@ -1,7 +1,7 @@
 ---
 title: Construire un tableau avec des bordures
 linktitle: Construire un tableau avec des bordures
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour créer un tableau avec des bordures à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ Félicitation ! Vous avez maintenant créé un tableau avec des bordures personn
 ### Exemple de code source pour Build Table With Borders à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

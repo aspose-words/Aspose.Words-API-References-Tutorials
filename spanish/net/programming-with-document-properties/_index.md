@@ -1,17 +1,17 @@
 ---
-title: Programación con propiedades de documento
-linktitle: Programación con propiedades de documento
-second_title: Referencia de API de Aspose.Words para .NET
+title: Procesamiento de textos con propiedades de documentos
+linktitle: Procesamiento de textos con propiedades de documentos
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a administrar las propiedades de los documentos de Word con Aspose.Words para .NET. Los tutoriales lo guían a través de las diversas funciones, como las propiedades de lectura y escritura, y la personalización de las propiedades predeterminadas.
 type: docs
 weight: 1520
 url: /es/net/programming-with-document-properties/
 ---
-Los tutoriales de Aspose.Words para .NET sobre programación con propiedades de documentos brindan una mirada detallada a la administración de propiedades de documentos en sus proyectos. En estos tutoriales aprenderá a acceder, modificar y eliminar propiedades como título, autor, palabras clave, etc., para personalizar sus documentos de Word. También aprenderá a agregar propiedades personalizadas para satisfacer sus necesidades específicas.
+Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con propiedades de documentos brindan una mirada detallada a la administración de propiedades de documentos en sus proyectos. En estos tutoriales aprenderá a acceder, modificar y eliminar propiedades como título, autor, palabras clave, etc., para personalizar sus documentos de Word. También aprenderá a agregar propiedades personalizadas para satisfacer sus necesidades específicas.
 
 Estos tutoriales lo guiarán paso a paso para usar la biblioteca Aspose.Words for .NET para interactuar con las propiedades del documento. Aprenderá a extraer propiedades existentes, establecer nuevos valores y eliminar propiedades no deseadas. Al comprender cómo manipular las propiedades del documento, podrá crear documentos de Word profesionales y personalizarlos para que se ajusten a sus requisitos.
 
-Ya sea que sea un desarrollador principiante o experimentado, los tutoriales de Aspose.Words para .NET sobre programación con propiedades de documentos le brindarán los conocimientos y las habilidades para administrar de manera efectiva las propiedades de sus documentos de Word y optimizar su flujo de trabajo de desarrollo.
+Ya sea que sea un desarrollador principiante o experimentado, los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con propiedades de documentos le brindarán los conocimientos y las habilidades para administrar de manera efectiva las propiedades de sus documentos de Word y optimizar su flujo de trabajo de desarrollo.
 
  ## Tutoriales
 | Título | Descripción |

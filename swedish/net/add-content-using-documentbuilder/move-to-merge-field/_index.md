@@ -1,7 +1,7 @@
 ---
 title: Flytta till sammanfogningsfält
 linktitle: Flytta till sammanfogningsfält
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du implementerar funktionen Move To Merge Field i Aspose.Words för .NET med hjälp av en steg-för-steg-guide.
 type: docs
 weight: 10
@@ -79,5 +79,5 @@ builder.Write(" Text immediately after the field.");
 
 ## Slutsats
 
-vi har utforskat funktionen Move To Merge Field i Aspose.Words för .NET. Vi lärde oss hur man navigerar för att slå samman fält i ett dokument med klassen DocumentBuilder och utföra operationer på dem. Den här funktionen är användbar när du programmässigt arbetar med sammanfogning
+vi har utforskat funktionen Move To Merge Field i Aspose.Words för .NET. Vi lärde oss hur man navigerar för att slå samman fält i ett dokument med klassen DocumentBuilder och utföra operationer på dem. Den här funktionen är användbar när du programmerar ordbehandling med sammanfogning
 

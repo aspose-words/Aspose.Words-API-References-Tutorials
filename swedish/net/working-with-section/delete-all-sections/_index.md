@@ -1,7 +1,7 @@
 ---
 title: Ta bort alla avsnitt
 linktitle: Ta bort alla avsnitt
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här handledningen lär du dig hur du tar bort alla avsnitt från ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Insertar campo de bloque de dirección de combinación de correspondencia usando DOM
 linktitle: Insertar campo de bloque de dirección de combinación de correspondencia usando DOM
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar un campo de bloque de dirección de combinación de correspondencia en sus documentos de Word con Aspose.Words para .NET.
 type: docs
 weight: 10

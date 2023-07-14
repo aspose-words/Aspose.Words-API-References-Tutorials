@@ -1,7 +1,7 @@
 ---
 title: Exporter les signets d'en-tête de pied de page de document Word vers un document PDF
 linktitle: Exporter les signets d'en-tête de pied de page de document Word vers un document PDF
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour exporter des signets de pied de page d'en-tête de document Word vers des signets de document PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10

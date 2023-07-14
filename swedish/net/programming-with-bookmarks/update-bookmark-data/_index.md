@@ -1,14 +1,14 @@
 ---
-title: Uppdatera bokmärkesdata
+title: Uppdatera bokmärkesdata i Word-dokument
 linktitle: Uppdatera bokmärkesdata
-second_title: Aspose.Words för .NET API Referens
-description: Steg-för-steg-guide för att förklara C#-källkoden för Aspose.Words-funktionen för uppdatering av bokmärkesdata för .NET.
+second_title: Aspose.Words Document Processing API
+description: Steg-för-steg-guide för att förklara C#-källkoden för Aspose.Words bokmärkesdatauppdatering i Word-dokumentfunktionen för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-I den här handledningen kommer vi att gå igenom en steg-för-steg-guide för att förstå och implementera funktionen Uppdatera bokmärkesdata i Aspose.Words för .NET. Den här funktionen låter dig uppdatera innehållet och egenskaperna för bokmärken i ett Word-dokument med hjälp av C#-källkoden.
+den här handledningen kommer vi att gå igenom en steg-för-steg-guide för att förstå och implementera funktionen Uppdatera bokmärkesdata i Word-dokument i Aspose.Words för .NET. Den här funktionen låter dig uppdatera innehållet och egenskaperna för bokmärken i ett Word-dokument med hjälp av C#-källkoden.
 
 ## Krav
 
@@ -87,3 +87,21 @@ Denna kod kommer att spara det ändrade dokumentet med namnet "UpdatedDocument.d
 ## Slutsats
 
 Grattis! Du har framgångsrikt lärt dig hur du uppdaterar bokmärkesdata med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i denna handledning, bör du nu kunna införliva den här funktionen i dina C#-applikationer och manipulera bokmärken i Word-dokument programmatiskt.
+
+### Vanliga frågor för uppdatering av bokmärkesdata i word-dokument
+
+#### F: Fungerar funktionen för uppdatering av bokmärkesdata bara med bokmärken i Word-dokument?
+
+S: Ja, funktionen Uppdatera bokmärkesdata är speciellt utformad för bokmärken i Word-dokument. Det låter dig uppdatera innehållet och egenskaperna för bokmärken i ett Word-dokument.
+
+#### F: Kan jag uppdatera andra bokmärkesegenskaper förutom text?
+
+S: Ja, förutom text kan du även uppdatera andra bokmärkesegenskaper, såsom bokmärkesnamn, bokmärkes omfattning, etc. Använd lämpliga egenskaper för`Bookmark` objekt för att uppdatera de önskade egenskaperna.
+
+#### F: Kan jag uppdatera flera bokmärken i samma dokument?
+
+S: Ja, du kan uppdatera flera bokmärken i samma dokument genom att upprepa åtkomst- och uppdateringsstegen för varje bokmärke. Se till att använda unika bokmärkesnamn för varje bokmärke du vill uppdatera.
+
+#### F: Modifierar funktionen för uppdatering av bokmärkesdata originaldokumentet?
+
+S: Ja, funktionen för uppdatering av bokmärkesdata ändrar originaldokumentet genom att uppdatera bokmärkesegenskaper och innehåll. Se till att spara en kopia av originaldokumentet innan du använder den här funktionen.

@@ -1,7 +1,7 @@
 ---
 title: Удалить раздел
 linktitle: Удалить раздел
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого руководства вы узнаете, как удалить определенный раздел из документа Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Unité de mesure
 linktitle: Unité de mesure
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à spécifier l'unité de mesure lors de la conversion d'un document Word en ODT avec Aspose.Words pour .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Gardez la table ensemble
 linktitle: Gardez la table ensemble
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à maintenir un tableau ensemble dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Dans ce didacticiel, nous allons apprendre à maintenir un tableau dans un docum
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Etape 2 : Chargement du document et récupération du tableau
-Pour commencer à travailler avec le tableau, nous devons charger le document et récupérer le tableau que nous voulons conserver ensemble. Suivez ces étapes:
+Pour démarrer le traitement de texte avec le tableau, nous devons charger le document et récupérer le tableau que nous voulons conserver ensemble. Suivez ces étapes:
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 
 // Récupérer le tableau
@@ -57,7 +57,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour Keep Table Together en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");

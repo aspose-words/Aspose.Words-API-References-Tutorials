@@ -1,7 +1,7 @@
 ---
 title: Cible de comparaison
 linktitle: Cible de comparaison
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à comparer la fonction cible d'Aspose.Words pour .NET qui vous permet de comparer des documents et de générer un nouveau document contenant les modifications apportées.
 type: docs
 weight: 10

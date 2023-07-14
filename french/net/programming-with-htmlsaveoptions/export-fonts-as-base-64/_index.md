@@ -1,7 +1,7 @@
 ---
 title: Exporter les polices en base 64
 linktitle: Exporter les polices en base 64
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour exporter les polices de base 64 lors de l'enregistrement d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10

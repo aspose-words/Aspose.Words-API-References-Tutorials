@@ -1,7 +1,7 @@
 ---
 title: İç İçe Alanlar Ekle
 linktitle: İç İçe Alanlar Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile iç içe geçmiş alanları Word belgelerinize kolayca nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10

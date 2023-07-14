@@ -1,7 +1,7 @@
 ---
 title: Embed Fonts in PDF Document
 linktitle: Embed Fonts in PDF Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step by step guide to Embed Fonts in a PDF using Aspose.Words for .NET.
 type: docs
 weight: 10

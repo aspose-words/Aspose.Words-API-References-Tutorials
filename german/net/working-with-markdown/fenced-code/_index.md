@@ -1,7 +1,7 @@
 ---
 title: Eingezäunter Code
 linktitle: Eingezäunter Code
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie die Funktion „Fenced Code“ mit Aspose.Words für .NET verwenden.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Imposta la cartella delle immagini
 linktitle: Imposta la cartella delle immagini
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come impostare la cartella delle immagini durante l'esportazione in Markdown con Aspose.Words per .NET. Personalizza il posizionamento delle immagini per una migliore organizzazione e integrazione.
 type: docs
 weight: 10

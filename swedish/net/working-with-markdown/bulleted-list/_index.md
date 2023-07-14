@@ -1,7 +1,7 @@
 ---
 title: Punktlista
 linktitle: Punktlista
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skapar en punktlista med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10

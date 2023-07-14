@@ -1,7 +1,7 @@
 ---
 title: Schwellenwertsteuerung für die TIFF-Binarisierung verfügbar machen
 linktitle: Schwellenwertsteuerung für die TIFF-Binarisierung verfügbar machen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie den TIFF-Binarisierungsschwellenwert mit Aspose.Words für .NET steuern. Vollständiges Tutorial für bessere Bildqualität.
 type: docs
 weight: 10
@@ -52,7 +52,7 @@ Jetzt können Sie den Quellcode ausführen, um Ihr Dokument in das TIFF-Format z
 
 ```csharp 
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

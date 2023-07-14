@@ -1,7 +1,7 @@
 ---
 title: Insérer un lien hypertexte
 linktitle: Insérer un lien hypertexte
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer des liens hypertexte dans des documents Word à l'aide du guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -37,7 +37,7 @@ builder.Write(" for more information.");
 ```
 
 ## Étape 3 : Enregistrer le document
-Après avoir inséré le lien hypertexte, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir inséré le lien hypertexte, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");

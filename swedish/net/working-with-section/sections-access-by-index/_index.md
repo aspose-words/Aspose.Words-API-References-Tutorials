@@ -1,7 +1,7 @@
 ---
 title: Avsnitt Åtkomst via index
 linktitle: Avsnitt Åtkomst via index
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här handledningen lär du dig hur du kommer åt delar av ett Word-dokument genom att indexera och ändrar deras inställningar med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Därefter laddar vi Word-dokumentet i en instans av`Document` klass. För att komma åt en specifik sektion använder vi sektionsindexet. I det här exemplet kommer vi åt den första sektionen med index 0.
 
 ```csharp
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Få tillgång till ett avsnitt efter index
@@ -52,7 +52,7 @@ section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -86,7 +86,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  S: För att ladda Word-dokumentet i en instans av`Document` klass och få tillgång till ett specifikt avsnitt efter index, kan du använda följande kod:
 
 ```csharp
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Få tillgång till ett avsnitt efter index

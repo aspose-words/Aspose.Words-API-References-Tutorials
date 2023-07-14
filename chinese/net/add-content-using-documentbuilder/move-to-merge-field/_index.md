@@ -1,7 +1,7 @@
 ---
 title: 移至合并字段
 linktitle: 移至合并字段
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用分步指南在 Aspose.Words for .NET 中实现“移动到合并字段”功能。
 type: docs
 weight: 10
@@ -79,5 +79,5 @@ builder.Write(" Text immediately after the field.");
 
 ## 结论
 
-我们已经探索了 Aspose.Words for .NET 的“移动到合并字段”功能。我们学习了如何使用 DocumentBuilder 类导航到合并文档中的字段并对它们执行操作。当以编程方式使用合并时，此功能非常有用
+我们已经探索了 Aspose.Words for .NET 的“移动到合并字段”功能。我们学习了如何使用 DocumentBuilder 类导航到合并文档中的字段并对它们执行操作。当以编程方式进行合并的文字处理时，此功能非常有用
 

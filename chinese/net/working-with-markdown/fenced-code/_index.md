@@ -1,7 +1,7 @@
 ---
 title: 围栏代码
 linktitle: 围栏代码
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何通过 Aspose.Words for .NET 分步指南使用隔离代码功能。
 type: docs
 weight: 10

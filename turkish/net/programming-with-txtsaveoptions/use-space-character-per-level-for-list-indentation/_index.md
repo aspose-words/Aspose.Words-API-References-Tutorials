@@ -1,7 +1,7 @@
 ---
 title: Liste Girintisi İçin Düzey Başına Boşluk Karakteri Kullanın
 linktitle: Liste Girintisi İçin Düzey Başına Boşluk Karakteri Kullanın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te liste girintisi için seviye başına bir boşluk karakteri kullanmaya yönelik adım adım kılavuz. İyi yapılandırılmış Word belgelerini kolaylıkla oluşturun.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenl
 
 ## Aspose.Words kitaplığını anlama
 
-Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle çalışmayı kolay ve verimli hale getiren popüler bir kitaplıktır. Listelerin ve girintilerin yönetimi de dahil olmak üzere Word belgelerini oluşturmak, değiştirmek ve işlemek için çok çeşitli işlevler sunar.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle Kelime İşlemeyi kolay ve verimli hale getiren popüler bir kütüphanedir. Listelerin ve girintilerin yönetimi de dahil olmak üzere Word belgeleri oluşturmak, değiştirmek ve işlemek için çok çeşitli işlevler sunar.
 
 ## Belge oluşturma ve içerik ekleme
 
@@ -91,12 +91,12 @@ namespace Example
 
 ## Çözüm
 
-Bu kılavuzda, "Liste girintisi için düzey başına bir boşluk karakteri kullan" işlevini uygulamak için Aspose.Words for .NET'in nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak, Word belgelerinizdeki listelerin girintisini düzey başına bir boşluk karakteri kullanarak kolayca yapılandırabilirsiniz. Aspose.Words, C# uygulamanızda iyi yapılandırılmış belgeler oluşturmanıza izin vererek, metin formatlama ve liste yönetimi ile çalışmak için muazzam bir esneklik ve güç sunar.
+Bu kılavuzda, "Liste girintisi için düzey başına bir boşluk karakteri kullan" işlevini uygulamak için Aspose.Words for .NET'in nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak, Word belgelerinizdeki listelerin girintisini düzey başına bir boşluk karakteri kullanarak kolayca yapılandırabilirsiniz. Aspose.Words, C# uygulamanızda iyi yapılandırılmış belgeler oluşturmanıza izin vererek, metin biçimlendirme ve liste yönetimi ile Kelime İşleme için muazzam esneklik ve güç sunar.
 
 ### Sıkça Sorulan Sorular
 
 #### S: Aspose.Words for .NET nedir?
-Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenlemek ve değiştirmek için güçlü bir kitaplıktır. Girintili listeler için düzey başına bir boşluk kullanma yeteneği de dahil olmak üzere Word belgeleriyle çalışmak için birçok özellik sunar.
+Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenlemek ve değiştirmek için güçlü bir kitaplıktır. Girintili listeler için düzey başına bir boşluk kullanma yeteneği de dahil olmak üzere, Word belgeleriyle Sözcük İşleme için birçok özellik sunar.
 
 #### S: Aspose.Words for .NET ile liste girintisi için seviye başına bir alanı nasıl kullanabilirim?
 Aşağıdaki adımları izleyerek liste girintisi için düzey başına bir boşluk kullanabilirsiniz:
@@ -105,7 +105,7 @@ Aşağıdaki adımları izleyerek liste girintisi için düzey başına bir boş
 
  Kullan`DocumentBuilder`Belgeye içerik eklemek ve birden çok girinti düzeyine sahip bir liste oluşturmak için sınıf.
 
- İçeriği ekledikten ve liste girintisini yapılandırdıktan sonra,`TxtSaveOptions` sınıflandırın ve ayarlayın`ListIndentation.Count` özelliği girinti seviyelerinin sayısına ve`ListIndentation.Character` uzaydaki özellik (`' '`) kullanmak.
+ İçeriği ekledikten ve liste girintisini yapılandırdıktan sonra,`TxtSaveOptions`sınıflandırın ve ayarlayın`ListIndentation.Count` özelliği girinti seviyelerinin sayısına ve`ListIndentation.Character` uzaydaki özellik (`' '`) kullanmak.
 
  kullanarak belgeyi belirtilen seçeneklerle kaydedin.`Save` yöntemi`Document` sınıf.
 

@@ -1,7 +1,7 @@
 ---
 title: Richiamata di sillabazione
 linktitle: Richiamata di sillabazione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare il callback della sillabazione in Aspose.Words per .NET per gestire la sillabazione delle parole.
 type: docs
 weight: 10

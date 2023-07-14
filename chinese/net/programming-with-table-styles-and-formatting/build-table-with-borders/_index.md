@@ -1,7 +1,7 @@
 ---
 title: 构建带边框的表格
 linktitle: 构建带边框的表格
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 构建带边框的表格的分步指南。
 type: docs
 weight: 10

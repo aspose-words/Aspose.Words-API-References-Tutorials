@@ -1,7 +1,7 @@
 ---
-title: 创建Vba项目
-linktitle: 创建Vba项目
-second_title: Aspose.Words for .NET API 参考
+title: 在Word文档中创建Vba项目
+linktitle: 在Word文档中创建Vba项目
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，了解如何使用 Aspose.Words for .NET 在 Word 文档中创建 VBA 项目。
 type: docs
 weight: 10
@@ -81,3 +81,25 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 ## 结论
 在本教程中，我们了解了如何使用 Aspose.Words for .NET 在 Word 文档中创建 VBA 项目。创建 VBA 项目允许您在 Word 文档中添加和自定义 VBA 代码。您可以随意使用此功能来自动执行任务或向您的 Word 文档添加自定义功能。
+
+### 常见问题解答
+
+#### 问：什么是Word文档中的VBA项目？
+
+答：Word 文档中的 VBA 项目是 VBA 模块的集合，其中包含可用于自动执行任务、添加自定义功能或在 Word 文档中执行特定操作的代码。
+
+#### 问：在Word文档中创建VBA项目有哪些先决条件？
+
+答：在 Word 文档中创建 VBA 项目之前，您必须具备 C# 编程语言的应用知识。您还需要在项目中安装 Aspose.Words for .NET 库。
+
+#### Q：代码中如何设置文档目录？
+
+ A：在提供的代码中，您需要替换`"YOUR DOCUMENTS DIRECTORY"`输入要保存包含 VBA 项目的 Word 文档的目录的适当路径。
+
+#### 问：如何在VBA模块中指定宏源代码？
+
+ A：要指定VBA模块中宏的源代码，可以使用`SourceCode`的财产`VbaModule`类，通过为其分配包含 VBA 代码的字符串。
+
+#### 问：我可以将多个 VBA 模块添加到 Word 文档中的 VBA 项目中吗？
+
+答：是的，您可以通过实例化多个 VBA 模块到 Word 文档中的 VBA 项目中`VbaModule`对象并将它们添加到`Modules`的集合`VbaProject`目的。这使您可以将 VBA 代码组织到不同的模块中，以便更好地管理和重用。

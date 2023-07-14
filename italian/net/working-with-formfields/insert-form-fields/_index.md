@@ -1,7 +1,7 @@
 ---
 title: Inserisci campi modulo
 linktitle: Inserisci campi modulo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire campi modulo a discesa nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

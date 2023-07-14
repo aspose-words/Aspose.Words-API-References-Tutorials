@@ -1,7 +1,7 @@
 ---
 title: Преобразование между единицами измерения
 linktitle: Преобразование между единицами измерения
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по преобразованию единиц измерения в документе с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

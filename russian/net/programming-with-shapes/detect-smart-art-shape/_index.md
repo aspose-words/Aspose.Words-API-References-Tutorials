@@ -1,7 +1,7 @@
 ---
 title: Обнаружение формы смарт-арта
 linktitle: Обнаружение формы смарт-арта
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как обнаруживать фигуры Smart Art в документе Word с помощью Aspose.Words для .NET, определяя графические представления.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /ru/net/programming-with-shapes/detect-smart-art-shape/
 Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
 - Установлена библиотека Aspose.Words for .NET.
-- Базовые знания C# и работы с документами Word.
+- Базовые знания C# и Word Processing с документами Word.
 
 ## Шаг 1. Настройте каталог документов
  Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором находится ваш документ.
@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Smart Art.docx");
 ```
 
 ## Шаг 3. Обнаружение фигур Smart Art
-Итерация по дочерним узлам типа`Shape` в документе с помощью`GetChildNodes` метод. Проверьте, есть ли у каждой фигуры Smart Art, используя`HasSmart Art` свойство.
+ Итерация по дочерним узлам типа`Shape` в документе с помощью`GetChildNodes`метод. Проверьте, есть ли у каждой фигуры Smart Art, используя`HasSmart Art` свойство.
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmart Art);
@@ -47,7 +47,7 @@ Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ### Пример исходного кода для обнаружения формы Smart Art с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Smart Art.docx");

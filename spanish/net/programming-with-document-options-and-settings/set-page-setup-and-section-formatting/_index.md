@@ -1,7 +1,7 @@
 ---
 title: Establecer configuración de página y formato de sección
 linktitle: Establecer configuración de página y formato de sección
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para configurar el formato de la sección y el diseño de un documento con Aspose.Words para .NET.
 type: docs
 weight: 10

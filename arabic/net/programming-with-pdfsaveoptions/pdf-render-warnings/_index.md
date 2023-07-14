@@ -1,7 +1,7 @@
 ---
 title: تحذيرات تقديم ملف PDF
 linktitle: تحذيرات تقديم ملف PDF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة للتعامل مع تحذيرات عرض PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

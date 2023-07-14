@@ -1,7 +1,7 @@
 ---
 title: Elimina campi
 linktitle: Elimina campi
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per l'eliminazione dei campi di unione nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Ciò è particolarmente utile se si desidera mantenere solo il contenuto statico
 // Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento esistente.
+// Carica il documento esistente.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
 // Rimuovi i campi di unione.

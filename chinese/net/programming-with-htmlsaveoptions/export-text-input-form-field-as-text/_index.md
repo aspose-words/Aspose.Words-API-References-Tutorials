@@ -1,7 +1,7 @@
 ---
 title: 将文本输入表单字段导出为文本
 linktitle: 将文本输入表单字段导出为文本
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 将文本输入表单字段导出为纯文本的分步指南。
 type: docs
 weight: 10

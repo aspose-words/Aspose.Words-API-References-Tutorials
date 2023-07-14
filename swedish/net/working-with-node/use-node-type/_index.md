@@ -1,7 +1,7 @@
 ---
 title: Använd nodtyp
 linktitle: Använd nodtyp
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du använder nodtyp för att komma åt dokumentspecifik information med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -24,7 +24,7 @@ using Aspose.Words;
 Document doc = new Document();
 ```
 
-## Steg 3: Hämta dokumentnodtyp
+## Steg 3: Hämta Document Node Type
 För att få nodtypen för ett dokument använder vi`NodeType` fast egendom.
 
 ```csharp

@@ -1,7 +1,7 @@
 ---
 title: Applica lo stile di paragrafo
 linktitle: Applica lo stile di paragrafo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come applicare uno stile di paragrafo utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

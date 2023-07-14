@@ -1,7 +1,7 @@
 ---
 title: Detectar formato de archivo de documento
 linktitle: Detectar formato de archivo de documento
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para detectar el formato de archivo de un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -211,7 +211,7 @@ Eso es todo ! Ha detectado con éxito el formato de diferentes archivos de docum
 
 #### ¿Cómo detectar el formato de un archivo de documento usando Aspose.Words para .NET?
 
- Para detectar el formato de un archivo de documento usando Aspose.Words para .NET, puede seguir los pasos proporcionados en el tutorial. Utilizando el`DetectFileFormat` metodo de la`FileFormatUtil` class le permitirá detectar el formato del archivo del documento. Esto le permitirá determinar si se trata de un documento de Microsoft Word 97-2003, una plantilla, un documento Office Open XML WordprocessingML u otros formatos admitidos. El código provisto en el tutorial lo guiará a través de la implementación de esta característica.
+ Para detectar el formato de un archivo de documento usando Aspose.Words para .NET, puede seguir los pasos proporcionados en el tutorial. Utilizando el`DetectFileFormat` metodo de la`FileFormatUtil` class le permitirá detectar el formato del archivo del documento. Esto le permitirá determinar si se trata de un documento de Microsoft Word 97-2003, una plantilla, un documento Office Open XML WordprocessingML u otros formatos admitidos. El código provisto en el tutorial lo guiará a través de la implementación de esta función.
 
 #### ¿Qué formatos de documentos admite Aspose.Words para .NET?
 
@@ -219,7 +219,7 @@ Aspose.Words para .NET admite una variedad de formatos de documentos, incluidos 
 
 #### ¿Cómo manejar archivos de documentos encriptados durante la detección de formato?
 
- Al detectar el formato de un archivo de documento, puede utilizar el`IsEncrypted` propiedad de la`FileFormatInfo` object para verificar si el archivo está encriptado. Si el archivo está encriptado, puede tomar medidas adicionales para manejar este caso específico, como copiar el archivo en un directorio dedicado a documentos encriptados. Puedes usar el`File.Copy` método para hacer esto.
+ Al detectar el formato de un archivo de documento, puede utilizar el`IsEncrypted`propiedad de la`FileFormatInfo` object para verificar si el archivo está encriptado. Si el archivo está encriptado, puede tomar medidas adicionales para manejar este caso específico, como copiar el archivo en un directorio dedicado a documentos encriptados. Puedes usar el`File.Copy` método para hacer esto.
 
 #### ¿Qué acciones se deben tomar cuando se desconoce el formato de un documento?
 

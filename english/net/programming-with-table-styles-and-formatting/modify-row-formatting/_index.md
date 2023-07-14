@@ -1,7 +1,7 @@
 ---
 title: Modify Row Formatting
 linktitle: Modify Row Formatting
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to change table row formatting using Aspose.Words for .NET.
 type: docs
 weight: 10

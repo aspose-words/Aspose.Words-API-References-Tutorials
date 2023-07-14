@@ -1,7 +1,7 @@
 ---
 title: Réduire la taille du PDF en désactivant les polices intégrées
 linktitle: Réduire la taille du PDF en désactivant les polices intégrées
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment réduire la taille du PDF en désactivant l'incorporation de polices Windows lors de la conversion de documents au format PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ R : Pour désactiver l'intégration des polices Windows dans un document PDF à
 
  Chargez le document que vous souhaitez convertir en PDF à l'aide du`Document` chemin de classe et de document.
 
- Créer une instance de`PdfSaveOptions` classe et définissez la`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedNone`. Cela désactive l'intégration des polices Windows dans le fichier PDF généré.
+ Créer une instance de`PdfSaveOptions`classe et définissez la`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedNone`. Cela désactive l'intégration des polices Windows dans le fichier PDF généré.
 
  Utilisez le`Save` méthode de la`Document` objet pour convertir le document en PDF en spécifiant les options de conversion configurées précédemment.
 

@@ -1,14 +1,14 @@
 ---
-title: Arbeta med List
-linktitle: Arbeta med List
-second_title: Aspose.Words för .NET API Referens
+title: Ordbehandling med lista
+linktitle: Ordbehandling med lista
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du arbetar med listor i Word-dokument med Aspose.Words för .NET. Detaljerade tutorials med kodexempel.
 type: docs
 weight: 780
 url: /sv/net/working-with-list/
 ---
 
-Arbeta med listor är en omfattande resurs som guidar dig genom att arbeta med listor i Word-dokument med Aspose.Words för .NET-biblioteket. Handledningarna ger steg-för-steg-förklaringar, fullständig källkod och praktiska exempel för att skapa, anpassa och hantera olika typer av listor, inklusive punktlistor, numrerade listor och flernivålistor. Du kommer också att lära dig hur du lägger till objekt, formaterar listor, ändrar utseende och indrag och andra avancerade funktioner. Denna resurs är viktig för utvecklare som vill automatisera skapandet och hanteringen av listor i sina Word-dokument med Aspose.Words för .NET.
+Ordbehandling med listor är en omfattande resurs som guidar dig genom ordbehandling med listor i Word-dokument med hjälp av Aspose.Words för .NET-biblioteket. Handledningarna ger steg-för-steg-förklaringar, fullständig källkod och praktiska exempel för att skapa, anpassa och hantera olika typer av listor, inklusive punktlistor, numrerade listor och flernivålistor. Du kommer också att lära dig hur du lägger till objekt, formaterar listor, ändrar utseende och indrag och andra avancerade funktioner. Denna resurs är viktig för utvecklare som vill automatisera skapandet och hanteringen av listor i sina Word-dokument med Aspose.Words för .NET.
 
  ## Handledningar
 | Titel | Beskrivning |

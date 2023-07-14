@@ -1,7 +1,7 @@
 ---
 title: 移至页眉页脚
 linktitle: 移至页眉页脚
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 通过此分步指南，了解如何使用 Aspose.Words for .NET 导航和修改 Word 文档中的页眉和页脚。
 type: docs
 weight: 10

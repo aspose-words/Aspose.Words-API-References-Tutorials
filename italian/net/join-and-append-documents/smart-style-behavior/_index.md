@@ -1,7 +1,7 @@
 ---
 title: Comportamento di stile intelligente
 linktitle: Comportamento di stile intelligente
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come mantenere un comportamento di stile intelligente quando unisci e aggiungi documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 
 ## Passaggio 1: inizializzare le directory dei documenti
 
- Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i documenti.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir`variabile al percorso in cui si trovano i documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Passaggio 4: imposta le opzioni di comportamento dello stile intelligente
 
-Per abilitare il comportamento dello stile intelligente durante l'operazione di accodamento, è necessario creare un'istanza di`ImportFormatOptions` e impostare il`SmartStyleBehavior` proprietà a`true`.
+ Per abilitare il comportamento dello stile intelligente durante l'operazione di accodamento, è necessario creare un'istanza di`ImportFormatOptions` e impostare il`SmartStyleBehavior` proprietà a`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
@@ -73,7 +73,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 Ecco il codice sorgente completo per la funzionalità "Smart Style Behavior" in C# utilizzando Aspose.Words per .NET:
  
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -1,7 +1,7 @@
 ---
 title: Flytande bordsposition
 linktitle: Flytande bordsposition
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du placerar en tabell i en flytande position i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ I den här handledningen ska vi lära oss hur man använder Aspose.Words för .N
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Ladda dokumentet och komma åt tabellen
-För att börja arbeta med tabellen måste vi ladda dokumentet som innehåller den och komma åt den. Följ dessa steg:
+För att starta ordbehandling med tabellen måste vi ladda dokumentet som innehåller den och komma åt den. Följ dessa steg:
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
 // Tillgång till arrayen
@@ -54,7 +54,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för flytande bordsposition med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

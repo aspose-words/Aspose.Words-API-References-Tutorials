@@ -1,7 +1,7 @@
 ---
 title: Riavvia il numero dell'elenco
 linktitle: Riavvia il numero dell'elenco
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come reimpostare il numero di un elenco in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10

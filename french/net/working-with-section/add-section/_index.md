@@ -1,7 +1,7 @@
 ---
 title: Ajouter une rubrique
 linktitle: Ajouter une rubrique
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment ajouter une section à un document Word à l'aide de Aspose.Words pour .NET. Guide étape par étape pour structurer votre document.
 type: docs
 weight: 10

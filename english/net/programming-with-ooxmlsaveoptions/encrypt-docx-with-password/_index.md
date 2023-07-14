@@ -1,7 +1,7 @@
 ---
 title: Encrypt Docx With Password
 linktitle: Encrypt Docx With Password
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to encrypt a DOCX file with a password using Aspose.Words for .NET. Complete tutorial for document security.
 type: docs
 weight: 10

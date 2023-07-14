@@ -1,7 +1,7 @@
 ---
 title: 获取 Tiff 页面范围
 linktitle: 获取 Tiff 页面范围
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 提取一系列 TIFF 页面。自定义 TIFF 文件的完整教程。
 type: docs
 weight: 10

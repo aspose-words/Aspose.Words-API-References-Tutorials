@@ -1,7 +1,7 @@
 ---
 title: 将 Doc 转换为 Docx
 linktitle: 将 Doc 转换为 Docx
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将 Word 文档从 .doc 转换为 Docx 格式。带有示例源代码的分步教程。
 type: docs
 weight: 10
@@ -67,7 +67,7 @@ doc.Save(dataDir + "BaseConversions.DocToDocx.docx");
 
 #### Q1：什么是 Aspose.Words for .NET？
 
-Aspose.Words for .NET 是一个功能强大的文档处理库，允许开发人员以编程方式创建、修改、转换和呈现 Microsoft Word 文档。它为各种 Word 文件格式提供广泛支持，包括 DOC 和 DOCX。
+Aspose.Words for .NET 是一个功能强大的文档处理库，允许开发人员以编程方式创建、修改、转换和渲染 Microsoft Word 文档。它为各种 Word 文件格式提供广泛支持，包括 DOC 和 DOCX。
 
 #### Q2: 为什么要将 DOC 转换为 DOCX？
 

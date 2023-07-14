@@ -1,7 +1,7 @@
 ---
 title: Доступ к разделам по индексу
 linktitle: Доступ к разделам по индексу
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: В этом руководстве вы узнаете, как получить доступ к разделам документа Word по индексу и изменить их настройки с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Далее мы загрузим документ Word в экземпляр`Document` сорт. Чтобы получить доступ к определенному разделу, мы используем индекс раздела. В этом примере мы обращаемся к первому разделу, используя индекс 0.
 
 ```csharp
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Document.docx");
 
 // Доступ к разделу по индексу
@@ -52,7 +52,7 @@ section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 см
 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -86,7 +86,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Чтобы загрузить документ Word в экземпляр`Document` class и получить доступ к определенному разделу по индексу, вы можете использовать следующий код:
 
 ```csharp
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Document.docx");
 
 // Доступ к разделу по индексу

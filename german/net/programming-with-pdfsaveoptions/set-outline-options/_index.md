@@ -1,7 +1,7 @@
 ---
 title: Legen Sie Gliederungsoptionen in einem PDF-Dokument fest
 linktitle: Legen Sie Gliederungsoptionen in einem PDF-Dokument fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Festlegen von Gliederungsoptionen in einem PDF-Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10

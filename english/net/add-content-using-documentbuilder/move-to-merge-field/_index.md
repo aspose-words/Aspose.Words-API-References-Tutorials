@@ -1,7 +1,7 @@
 ---
 title: Move To Merge Field
 linktitle: Move To Merge Field
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to implement the Move To Merge Field feature in Aspose.Words for .NET using step-by-step guide.
 type: docs
 weight: 10
@@ -79,6 +79,6 @@ builder.Write(" Text immediately after the field.");
 
 ## Conclusion
 
-we have explored the Move To Merge Field feature of Aspose.Words for .NET. We learned how to navigate to merge fields within a document using the DocumentBuilder class and perform operations on them. This feature is useful when programmatically working with merge
+we have explored the Move To Merge Field feature of Aspose.Words for .NET. We learned how to navigate to merge fields within a document using the DocumentBuilder class and perform operations on them. This feature is useful when programmatically Words Processing with merge
 
 

@@ -1,7 +1,7 @@
 ---
 title: Accès typé
 linktitle: Accès typé
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser l'accès typé pour manipuler des tables dans Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -33,7 +33,7 @@ Section section = doc.FirstSection;
 Body body = section.Body;
 ```
 
-## Etape 4 : Accès rapide et typé aux tables
+## Etape 4 : Accès rapide et typé aux tableaux
 Maintenant que nous avons le corps du document, nous pouvons utiliser un accès rapide et typé pour accéder à toutes les tables contenues dans le corps.
 
 ```csharp

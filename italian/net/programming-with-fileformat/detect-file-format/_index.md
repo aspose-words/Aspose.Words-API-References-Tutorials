@@ -1,7 +1,7 @@
 ---
 title: Rileva il formato del file del documento
 linktitle: Rileva il formato del file del documento
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per rilevare il formato del file del documento con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -211,7 +211,7 @@ break;
 
 #### Come rilevare il formato di un file di documento utilizzando Aspose.Words per .NET?
 
- Per rilevare il formato di un file di documento utilizzando Aspose.Words per .NET, è possibile seguire i passaggi forniti nel tutorial. Usando il`DetectFileFormat` metodo del`FileFormatUtil` class ti permetterà di rilevare il formato del file del documento. Ciò consentirà di determinare se si tratta di un documento Microsoft Word 97-2003, un modello, un documento Office Open XML WordprocessingML o altri formati supportati. Il codice fornito nel tutorial ti guiderà attraverso l'implementazione di questa funzione.
+ Per rilevare il formato di un file di documento utilizzando Aspose.Words per .NET, è possibile seguire i passaggi forniti nel tutorial. Usando il`DetectFileFormat` metodo del`FileFormatUtil` class ti permetterà di rilevare il formato del file del documento. Ciò consentirà di determinare se si tratta di un documento Microsoft Word 97-2003, un modello, un documento Office Open XML WordprocessingML o altri formati supportati. Il codice fornito nel tutorial ti guiderà attraverso l'implementazione di questa funzionalità.
 
 #### Quali formati di documento supporta Aspose.Words per .NET?
 
@@ -219,7 +219,7 @@ Aspose.Words per .NET supporta una varietà di formati di documenti inclusi docu
 
 #### Come gestire i file di documenti crittografati durante il rilevamento del formato?
 
- Quando si rileva il formato di un file di documento, è possibile utilizzare l'estensione`IsEncrypted` proprietà del`FileFormatInfo` oggetto per verificare se il file è crittografato. Se il file è crittografato, puoi eseguire ulteriori passaggi per gestire questo caso specifico, come copiare il file in una directory dedicata ai documenti crittografati. Puoi usare il`File.Copy` metodo per farlo.
+ Quando si rileva il formato di un file di documento, è possibile utilizzare l'estensione`IsEncrypted`proprietà del`FileFormatInfo` oggetto per verificare se il file è crittografato. Se il file è crittografato, puoi eseguire ulteriori passaggi per gestire questo caso specifico, come copiare il file in una directory dedicata ai documenti crittografati. Puoi usare il`File.Copy` metodo per farlo.
 
 #### Quali azioni dovrebbero essere intraprese quando il formato di un documento è sconosciuto?
 

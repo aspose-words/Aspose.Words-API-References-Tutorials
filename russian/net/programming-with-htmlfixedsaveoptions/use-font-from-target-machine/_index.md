@@ -1,7 +1,7 @@
 ---
 title: Использовать шрифт с целевой машины
 linktitle: Использовать шрифт с целевой машины
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как преобразовать документ Word в фиксированный HTML, используя шрифты целевой машины с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

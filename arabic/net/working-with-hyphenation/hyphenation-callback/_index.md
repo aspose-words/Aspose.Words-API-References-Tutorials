@@ -1,7 +1,7 @@
 ---
 title: رد اتصال الواصلة
 linktitle: رد اتصال الواصلة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 自动适应页面宽度
 linktitle: 自动适应页面宽度
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 自动调整 Word 文档中表格的页面宽度。
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/auto-fit-to-page-width/
 2. 添加对 Aspose.Words for .NET 库的引用。
 
 ## 第 2 步：创建和配置文档
-要开始使用表格，我们需要创建一个文档并配置文档生成器。按着这些次序：
+要使用表格启动文字处理，我们需要创建一个文档并配置文档生成器。按着这些次序：
 
 ```csharp
 //文档目录的路径

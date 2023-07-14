@@ -1,7 +1,7 @@
 ---
 title: Imposta il segno di enfasi del carattere
 linktitle: Imposta il segno di enfasi del carattere
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come impostare lo stile di enfasi del carattere in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ### Esempio di codice sorgente per Set Font Enphasis Mark utilizzando Aspose.Words per .NET 
 
 ```csharp
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();

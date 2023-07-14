@@ -1,7 +1,7 @@
 ---
 title: 在没有文档生成器的情况下插入 TOA 字段
 linktitle: 在没有文档生成器的情况下插入 TOA 字段
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 分步指南使用 Aspose.Words for .NET 插入 TOA 字段，无需文档生成器。
 type: docs
 weight: 10
@@ -84,7 +84,7 @@ fieldToa.Update();
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-//我们想要像这样插入 TA 和 TOA 字段：
+//我们要像这样插入 TA 和 TOA 字段：
 // { TA \c 1 \l "值 0" }
 // { TOA \c 1 }
 

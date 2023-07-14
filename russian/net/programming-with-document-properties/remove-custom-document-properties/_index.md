@@ -1,7 +1,7 @@
 ---
 title: Удалить пользовательские свойства документа
 linktitle: Удалить пользовательские свойства документа
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по удалению пользовательских свойств из документа с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

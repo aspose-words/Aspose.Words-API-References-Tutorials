@@ -1,7 +1,7 @@
 ---
 title: Объединить строки
 linktitle: Объединить строки
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как объединить строки таблицы в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ru/net/programming-with-tables/combine-rows/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Загрузка документа и доступ к таблицам
-Чтобы начать работать с таблицами, нам нужно загрузить содержащий их документ и получить к ним доступ. Следуй этим шагам:
+Чтобы запустить Word Processing с таблицами, нам нужно загрузить содержащий их документ и получить к ним доступ. Следуй этим шагам:
 
 ```csharp
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Доступ к таблицам
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ### Пример исходного кода для объединения строк с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

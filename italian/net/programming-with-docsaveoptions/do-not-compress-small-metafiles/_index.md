@@ -1,14 +1,14 @@
 ---
 title: Non comprimere piccoli metafile
 linktitle: Non comprimere piccoli metafile
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare Aspose.Words per .NET per abilitare la funzione Non comprimere piccoli metafile durante il salvataggio dei documenti.
 type: docs
 weight: 10
 url: /it/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 
-La compressione dei metadati in un documento è una caratteristica comune quando si lavora con i file in un'applicazione C#. Tuttavia, potrebbe essere necessario non comprimere i metadati di file di piccole dimensioni per preservarne la qualità. In questa guida dettagliata, ti mostreremo come utilizzare il codice sorgente C# di Aspose.Words per .NET per abilitare la funzione "Non comprimere piccoli metafile" nelle opzioni di salvataggio del documento.
+La compressione dei metadati in un documento è una funzionalità comune durante l'elaborazione di testi con i file in un'applicazione C#. Tuttavia, potrebbe essere necessario non comprimere i metadati di file di piccole dimensioni per preservarne la qualità. In questa guida dettagliata, ti mostreremo come utilizzare il codice sorgente C# di Aspose.Words per .NET per abilitare la funzione "Non comprimere piccoli metafile" nelle opzioni di salvataggio del documento.
 
 ## Comprensione della libreria Aspose.Words
 
@@ -60,7 +60,7 @@ Questa configurazione garantisce che i metadati dei file di piccole dimensioni n
 
 ## Passaggio 5: salvare il documento
 
- Infine, puoi salvare il documento utilizzando il file`Save` metodo della classe Document. Specificare il percorso completo del file e il nome del file desiderato. Per esempio :
+Infine, puoi salvare il documento utilizzando il file`Save` metodo della classe Document. Specificare il percorso completo del file e il nome del file desiderato. Per esempio :
 
 ```csharp
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);

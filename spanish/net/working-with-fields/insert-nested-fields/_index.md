@@ -1,7 +1,7 @@
 ---
 title: Insertar campos anidados
 linktitle: Insertar campos anidados
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar fácilmente campos anidados en sus documentos de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -103,7 +103,7 @@ En este ejemplo, creamos un nuevo documento, insertamos saltos de página, movim
 R: Para insertar campos anidados en un documento de Word utilizando Aspose.Words para .NET, puede seguir estos pasos:
 
 1. Obtenga el párrafo donde desea insertar los campos anidados.
-2.  Crear un`FieldStart` objeto para el campo padre.
+2.  Crear un`FieldStart` objeto para el campo principal.
 3.  Agregue los campos secundarios usando el`FieldStart.NextSibling` método pasando el correspondiente`FieldStart` objetos como parámetros.
 
 #### P: ¿Cuáles son los beneficios de usar campos anidados en un documento de Word con Aspose.Words para .NET?

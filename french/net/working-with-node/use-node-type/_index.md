@@ -1,7 +1,7 @@
 ---
 title: Utiliser le type de nœud
 linktitle: Utiliser le type de nœud
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser le type de nœud pour accéder aux informations spécifiques au document avec Aspose.Words pour .NET.
 type: docs
 weight: 10

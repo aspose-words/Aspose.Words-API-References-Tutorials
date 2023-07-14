@@ -1,7 +1,7 @@
 ---
 title: Обратный вызов сохранения страницы
 linktitle: Обратный вызов сохранения страницы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как настроить сохранение страниц документа в изображения с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- На этом этапе мы реализуем`HandlePageSavingCallback` класс, который реализует`IPageSavingCallback` интерфейс. Вы можете настроить этот класс, добавив свои конкретные действия в`PageSaving` метод. Вы можете получить доступ к информации о странице через`args.PageIndex` собственность`PageSavingArgs` объект, переданный в качестве аргумента.
+ На этом этапе мы реализуем`HandlePageSavingCallback` класс, который реализует`IPageSavingCallback` интерфейс. Вы можете настроить этот класс, добавив свои конкретные действия в`PageSaving` метод. Вы можете получить доступ к информации о странице через`args.PageIndex`собственность`PageSavingArgs` объект, переданный в качестве аргумента.
 
 ## Шаг 5. Сохранение страниц в виде изображений
 
@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 
 ```csharp 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 

@@ -1,14 +1,14 @@
 ---
 title: 将形状转换为 Office 数学
 linktitle: 将形状转换为 Office 数学
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解使用 Aspose.Words for .NET 上传文档时如何将形状转换为 Office 数学公式。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/convert-shape-to-office-math/
 ---
 
-在 C# 应用程序中处理包含数学形状的文档时，您可能需要将它们转换为 Office 数学公式，以获得更好的兼容性和演示效果。借助适用于 .NET 的 Aspose.Words 库，您可以在加载文档时轻松将形状转换为 Office 数学公式。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码加载文档，并使用 LoadOptions 将形状转换为 Office 数学公式。
+在 C# 应用程序中对包含数学形状的文档进行文字处理时，您可能需要将它们转换为 Office 数学公式，以获得更好的兼容性和演示效果。借助适用于 .NET 的 Aspose.Words 库，您可以在加载文档时轻松将形状转换为 Office 数学公式。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码加载文档，并使用 LoadOptions 将形状转换为 Office 数学公式。
 
 ## 了解 Aspose.Words 库
 

@@ -1,7 +1,7 @@
 ---
-title: 日期时间值转轴
-linktitle: 日期时间值转轴
-second_title: Aspose.Words for .NET API 参考
+title: 将日期时间值添加到图表的轴
+linktitle: 将日期时间值添加到图表的轴
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将日期时间值添加到图表的轴。
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /zh/net/programming-with-charts/date-time-values-to-axis/
 要学习本教程，您需要具备以下条件：
 
 - 已安装 Aspose.Words for .NET 库。
-- C# 和使用 Word 文档的基本知识。
+- C# 和 Word 文档文字处理的基础知识。
 
 ## 第 1 步：设置文档目录
 首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`与要保存文档的目录的实际路径。
@@ -103,3 +103,17 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
 此示例代码创建一个新的 Word 文档，插入 X 轴上带有日期时间值的柱形图，并将文档保存到指定目录。
+
+## 结论
+在本教程中，您学习了如何使用 Aspose.Words for .NET 将日期时间值添加到图表的轴。通过遵循分步指南，您可以创建图表、向系列添加日期时间值以及配置轴以准确显示日期时间值。 Aspose.Words for .NET 为 Word 文档中的图表进行文字处理提供了一组强大的功能，使您能够有效地表示和可视化具有日期时间值的数据。
+
+### 常见问题解答
+
+#### Q1.我可以使用 Aspose.Words for .NET 将日期时间值添加到图表的轴吗？
+是的，使用 Aspose.Words for .NET，您可以在 Word 文档中的图表轴上添加和显示日期时间值。 Aspose.Words 提供 API 和功能来处理各种图表类型并自定义其外观，包括处理轴上的日期时间值。
+
+#### Q2。如何向图表系列添加日期时间值？
+要将日期时间值添加到图表系列中，您可以使用`Add`图表系列的方法。提供日期时间值数组作为类别（X 轴）数据以及相应的系列值。这允许您在图表上绘制具有日期时间值的数据点。
+
+#### Q3。如何配置轴以显示日期时间值？
+您可以通过设置适当的属性来配置图表的轴以显示日期时间值。例如，您可以使用以下命令指定轴的最小值和最大值`Scaling.Minimum`和`Scaling.Maximum`属性，分别。此外，您可以设置主要和次要单位来定义轴的间隔和刻度线。

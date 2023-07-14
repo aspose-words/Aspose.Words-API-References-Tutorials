@@ -1,7 +1,7 @@
 ---
 title: Fältvisningsresultat
 linktitle: Fältvisningsresultat
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att visa fältresultat i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -40,7 +40,7 @@ Detta steg är viktigt eftersom det säkerställer att fältresultaten visas kor
 
 ## Steg 4: Visa fältresultat
 
- Vi använder a`foreach`loop till loop genom alla fält i dokumentet och visa deras resultat.
+ Vi använder a`foreach` loop till loop genom alla fält i dokumentet och visa deras resultat.
 
 ```csharp
 foreach(Field field in document.Range.Fields)
@@ -66,7 +66,7 @@ foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
-I det här exemplet laddade vi upp ett dokument, uppdaterade alla fält och cyklade sedan igenom fälten för att visa deras resultat. Du kan anpassa detta steg med din egen logik för att bearbeta fältresultat.
+det här exemplet laddade vi upp ett dokument, uppdaterade alla fält och cyklade sedan igenom fälten för att visa deras resultat. Du kan anpassa detta steg med din egen logik för att bearbeta fältresultat.
 
 Detta avslutar vår guide till att använda funktionen "Visa fältresultat" med Aspose.Words för .NET.
 

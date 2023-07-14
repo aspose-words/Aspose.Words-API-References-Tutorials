@@ -1,7 +1,7 @@
 ---
 title: Üstbilgi Altbilgiyi Yoksay
 linktitle: Üstbilgi Altbilgiyi Yoksay
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak üstbilgi ve altbilgi içeriğini yok sayarken bir belgeyi nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: İçe aktarma biçimi seçeneklerini ayarlayın
 
- örneğini oluşturun`ImportFormatOptions` sınıflandırın ve ayarlayın`IgnoreHeaderFooter` mülkiyet`false`. Bu, üstbilgi ve altbilgi içeriğinin ekleme işlemi sırasında dahil edilmesini sağlar.
+ örneğini oluşturun`ImportFormatOptions`sınıflandırın ve ayarlayın`IgnoreHeaderFooter` mülkiyet`false`. Bu, üstbilgi ve altbilgi içeriğinin ekleme işlemi sırasında dahil edilmesini sağlar.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## 4. Adım: Kaynak belgeyi hedef belgeye ekleyin
 
- Kullan`AppendDocument` kaynak belgeyi eklemek için hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` ikinci parametre olarak ve içe aktarma biçimi seçeneklerini üçüncü parametre olarak.
+ Kullan`AppendDocument`kaynak belgeyi eklemek için hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` ikinci parametre olarak ve içe aktarma biçimi seçeneklerini üçüncü parametre olarak.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ Bu, Aspose.Words for .NET kullanarak üst bilgi ve alt bilgi içeriğini yok say
 ### Aspose.Words for .NET kullanan Üstbilgi Altbilgiyi Yoksay için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

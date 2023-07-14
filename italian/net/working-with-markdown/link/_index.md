@@ -1,7 +1,7 @@
 ---
 title: Collegamento
 linktitle: Collegamento
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire collegamenti con Aspose.Words per .NET. Guida passo dopo passo.
 type: docs
 weight: 10

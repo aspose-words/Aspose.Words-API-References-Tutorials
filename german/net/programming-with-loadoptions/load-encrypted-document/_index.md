@@ -1,14 +1,14 @@
 ---
 title: Verschlüsseltes Dokument laden
 linktitle: Verschlüsseltes Dokument laden
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie verschlüsselte Dokumente mit Aspose.Words für .NET laden und speichern.
 type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-Beim Arbeiten mit verschlüsselten Dokumenten in einer C#-Anwendung ist es wichtig, diese durch Angabe des richtigen Passworts korrekt laden zu können. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe der entsprechenden Ladeoptionen problemlos verschlüsselte Dokumente laden. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um ein verschlüsseltes Dokument mithilfe der LoadOptions-Ladeoptionen zu laden.
+Bei der Textverarbeitung mit verschlüsselten Dokumenten in einer C#-Anwendung ist es wichtig, diese durch Angabe des richtigen Passworts korrekt laden zu können. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe der entsprechenden Ladeoptionen problemlos verschlüsselte Dokumente laden. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um ein verschlüsseltes Dokument mithilfe der LoadOptions-Ladeoptionen zu laden.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 

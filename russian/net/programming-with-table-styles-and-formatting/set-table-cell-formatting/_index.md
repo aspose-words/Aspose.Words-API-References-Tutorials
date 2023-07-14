@@ -1,7 +1,7 @@
 ---
 title: Установить форматирование ячеек таблицы
 linktitle: Установить форматирование ячеек таблицы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по настройке форматирования ячеек таблицы с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableC
 ### Пример исходного кода для настройки форматирования ячеек таблицы с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

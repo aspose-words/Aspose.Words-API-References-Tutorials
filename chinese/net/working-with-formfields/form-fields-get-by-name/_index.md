@@ -1,7 +1,7 @@
 ---
 title: 表单字段按名称获取
 linktitle: 表单字段按名称获取
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中按名称检索和修改表单字段。
 type: docs
 weight: 10

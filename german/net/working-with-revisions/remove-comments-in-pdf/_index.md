@@ -1,7 +1,7 @@
 ---
 title: Entfernen Sie Kommentare in einer PDF-Datei
 linktitle: Entfernen Sie Kommentare in einer PDF-Datei
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Entfernen Sie Kommentare in einer PDF-Datei mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Wie verstecke ich Kommentare in PDFs, die mit Aspose.Words für .NET generiert wurden?
 
- A: Benutzen Sie die`CommentDisplayMode` Eigentum der`LayoutOptions` -Objekt, um zu konfigurieren, wie Kommentare beim Generieren der PDF-Datei angezeigt werden. Um Kommentare auszublenden, legen Sie diese Eigenschaft auf fest`CommentDisplayMode.Hide`.
+ A: Benutzen Sie die`CommentDisplayMode`Eigentum der`LayoutOptions` -Objekt, um zu konfigurieren, wie Kommentare beim Generieren der PDF-Datei angezeigt werden. Um Kommentare auszublenden, legen Sie diese Eigenschaft auf fest`CommentDisplayMode.Hide`.
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;

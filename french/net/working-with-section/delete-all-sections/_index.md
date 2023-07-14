@@ -1,7 +1,7 @@
 ---
 title: Supprimer toutes les sections
 linktitle: Supprimer toutes les sections
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment supprimer toutes les sections d'un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Ignorar encabezado de pie de página
 linktitle: Ignorar encabezado de pie de página
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a agregar un documento ignorando el contenido del encabezado y el pie de página con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: Configure las opciones de formato de importación
 
- Crear una instancia de la`ImportFormatOptions` clase y establecer el`IgnoreHeaderFooter` propiedad a`false`. Esto garantiza que el contenido del encabezado y pie de página se incluya durante el proceso de adición.
+ Crear una instancia de la`ImportFormatOptions`clase y establecer el`IgnoreHeaderFooter` propiedad a`false`. Esto garantiza que el contenido del encabezado y pie de página se incluya durante el proceso de adición.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Paso 4: agregue el documento de origen al documento de destino
 
- Utilizar el`AppendDocument` del documento de destino para anexar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting` como segundo parámetro y las opciones de formato de importación como tercer parámetro.
+ Utilizar el`AppendDocument`del documento de destino para anexar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting` como segundo parámetro y las opciones de formato de importación como tercer parámetro.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ Esto completa la implementación de agregar un documento mientras se ignora el c
 ### Ejemplo de código fuente para Ignorar encabezado y pie de página usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

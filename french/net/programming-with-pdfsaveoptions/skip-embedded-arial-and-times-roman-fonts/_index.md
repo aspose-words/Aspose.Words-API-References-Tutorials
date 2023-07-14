@@ -1,7 +1,7 @@
 ---
 title: Optimisez la taille du PDF avec Ignorer les polices Arial et Times Roman intégrées
 linktitle: Optimisez la taille du PDF avec Ignorer les polices Arial et Times Roman intégrées
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour générer un PDF optimisé sans incorporer les polices Arial et Times Roman avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -66,7 +66,7 @@ Dans ce didacticiel, nous avons expliqué comment désactiver l'intégration des
 
 ### Questions fréquemment posées
 
-#### Q : Qu'est-ce que la désactivation de l'incorporation des polices Arial et Times Roman dans un document PDF et pourquoi est-ce important ?
+#### Q : Qu'est-ce que la désactivation de l'intégration des polices Arial et Times Roman dans un document PDF et pourquoi est-ce important ?
 R : La désactivation de l'intégration des polices Arial et Times Roman dans un document PDF consiste à ne pas inclure ces polices dans le fichier PDF généré. Cela peut être important pour réduire la taille du fichier PDF en évitant d'inclure des polices qui sont déjà couramment disponibles sur les systèmes de lecture PDF. Cela peut également aider à assurer une meilleure compatibilité et une apparence cohérente du document PDF sur différents appareils et plates-formes.
 
 #### Q : Comment puis-je configurer Aspose.Words pour .NET afin qu'il n'intègre pas les polices Arial et Times Roman dans un document PDF ?
@@ -76,7 +76,7 @@ R : Pour configurer Aspose.Words pour .NET afin qu'il n'intègre pas les police
 
  Chargez le document que vous souhaitez traiter à l'aide de la`Document` class et le chemin d'accès au document spécifié.
 
- Créer une instance de`PdfSaveOptions` classe et définissez la`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedAll`. Cela intégrera toutes les polices sauf Arial et Times Roman dans le fichier PDF généré.
+ Créer une instance de`PdfSaveOptions`classe et définissez la`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedAll`. Cela intégrera toutes les polices sauf Arial et Times Roman dans le fichier PDF généré.
 
  Utilisez le`Save` méthode de la`Document` objet pour enregistrer le document au format PDF en spécifiant les options d'enregistrement configurées précédemment.
 

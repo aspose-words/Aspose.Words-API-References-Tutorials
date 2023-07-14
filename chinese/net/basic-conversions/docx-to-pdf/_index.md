@@ -1,7 +1,7 @@
 ---
 title: 将 Word 文件转换为 PDF
 linktitle: 将 Word 文件转换为 PDF
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将 Word 文档从 Docx 转换为 PDF。带有示例源代码的分步教程。
 type: docs
 weight: 10
@@ -77,5 +77,5 @@ DOCX 转换为其他文件格式，例如 DOC、RTF、HTML、XML 等。
 EPUB、ODT、OTT、TXT 等文件的转换。到其他格式。
 
 
-#### Q4。在哪里可以找到更多使用 Aspose.Words for .NET 的示例代码和资源？
+#### Q4。在哪里可以找到更多使用 Aspose.Words for .NET 进行文字处理的示例代码和资源？
 您可以在以下位置找到更多代码示例和资源[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)和[Aspose.Words for .NET API 教程](https://reference.aspose.com/tutorials/words/net/)。这些资源提供分步指南、示例代码和教程。

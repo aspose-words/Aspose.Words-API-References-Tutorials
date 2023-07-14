@@ -1,14 +1,14 @@
 ---
 title: Do Not Compress Small Metafiles
 linktitle: Do Not Compress Small Metafiles
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use Aspose.Words for .NET to enable the Do Not Compress Small Metafiles feature when saving documents.
 type: docs
 weight: 10
 url: /net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 
-Compressing metadata in a document is a common feature when working with files in a C# application. However, it may be necessary not to compress the metadata of small files to preserve their quality. In this step-by-step guide, we'll show you how to use the C# source code of Aspose.Words for .NET to enable the "Do Not Compress Small Metafiles" feature in the document save options.
+Compressing metadata in a document is a common feature when Words Processing with files in a C# application. However, it may be necessary not to compress the metadata of small files to preserve their quality. In this step-by-step guide, we'll show you how to use the C# source code of Aspose.Words for .NET to enable the "Do Not Compress Small Metafiles" feature in the document save options.
 
 ## Understanding the Aspose.Words library
 

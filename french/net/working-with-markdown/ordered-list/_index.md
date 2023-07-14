@@ -1,7 +1,7 @@
 ---
 title: Liste ordonnée
 linktitle: Liste ordonnée
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer une liste ordonnée avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Dans cet exemple, nous expliquerons comment utiliser la fonctionnalité de liste
 
 ## Étape 1 : Utiliser un générateur de documents
 
-Tout d'abord, nous allons utiliser un générateur de documents pour créer un nouveau document.
+Tout d'abord, nous allons utiliser un générateur de document pour créer un nouveau document.
 
 ```csharp
 Document doc = new Document();

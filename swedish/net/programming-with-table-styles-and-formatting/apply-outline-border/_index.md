@@ -1,7 +1,7 @@
 ---
 title: Använd konturgräns
 linktitle: Använd konturgräns
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att applicera en konturram på en tabell med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -76,7 +76,7 @@ Grattis! Du har nu använt en konturram på en tabell med Aspose.Words för .NET
 ### Exempel på källkod för Apply Outline Border med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

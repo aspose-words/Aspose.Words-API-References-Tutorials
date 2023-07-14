@@ -1,7 +1,7 @@
 ---
-title: Dokumentskydd
-linktitle: Dokumentskydd
-second_title: Aspose.Words för .NET API Referens
+title: Word dokumentskydd
+linktitle: Word dokumentskydd
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skyddar Word-dokument med Aspose.Words för .NET. Handledningarna guidar dig genom de olika skyddsmetoderna, som att låsa ändringar, lösenordsskydd, begränsa åtkomst till dokumentelement och mycket mer.
 type: docs
 weight: 1430
@@ -16,11 +16,11 @@ Handledningar för Aspose.Words för .NET-dokumentskydd guidar dig genom praktis
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Lösenordsskydd](./password-protection/) | Lär dig hur du lösenordsskyddar dina Word-dokument med Aspose.Words för .NET. |
-| [Tillåt endast formulärfältsskydd](./allow-only-form-fields-protect/) | Lär dig hur du använder Aspose.Words för .NET för att skydda dokument och endast tillåta att formulärfält redigeras. |
-| [Ta bort dokumentskydd](./remove-document-protection/) | Lär dig hur du tar bort skyddet från ett Word-dokument med Aspose.Words för .NET. |
-| [Obegränsade redigerbara regioner](./unrestricted-editable-regions/) | Lär dig hur du skapar obegränsade redigerbara områden i ett Word-dokument med Aspose.Words för .NET. |
-| [Obegränsad sektion](./unrestricted-section/) | Lär dig hur du definierar obegränsade avsnitt i ett Word-dokument med Aspose.Words för .NET. |
-| [Få skyddstyp](./get-protection-type/) | Lär dig hur du använder funktionen Få skyddstyp i Aspose.Words för .NET för att fastställa skyddstypen för ett dokument. |
-| [Lässkydd](./read-only-protection/) | Lär dig hur du skyddar dina skrivskyddade Word-dokument med Aspose.Words för .NET. |
+| [Lösenordsskydd i Word-dokument](./password-protection/) | Lär dig hur du lösenordsskyddar i Word-dokument med Aspose.Words för .NET. |
+| [Tillåt endast formulärfält att skydda i Word-dokument](./allow-only-form-fields-protect/) | Lär dig hur du använder Aspose.Words för .NET för att skydda i word-dokument och endast tillåta att formulärfält redigeras. |
+| [Ta bort dokumentskydd i Word-dokument](./remove-document-protection/) | Lär dig hur du tar bort skyddet i ett Word-dokument med Aspose.Words för .NET. |
+| [Obegränsade redigerbara regioner i Word-dokument](./unrestricted-editable-regions/) | Lär dig hur du skapar obegränsade redigerbara områden i ett Word-dokument med Aspose.Words för .NET. |
+| [Obegränsad sektion i Word-dokument](./unrestricted-section/) | Lär dig hur du definierar obegränsade avsnitt i ett Word-dokument med Aspose.Words för .NET. |
+| [Få skyddstyp i Word-dokument](./get-protection-type/) | Lär dig hur du använder funktionen Få skyddstyp i Word-dokument i Aspose.Words för .NET för att fastställa skyddstypen för ett dokument. |
+| [Lässkydd i Word-dokument](./read-only-protection/) | Lär dig hur du skyddar dina skrivskyddade i Word-dokument med Aspose.Words för .NET. |
 | [Ta bort skrivskyddad begränsning](./remove-read-only-restriction/) | Lär dig hur du tar bort skrivskyddet från ett Word-dokument med Aspose.Words för .NET. |

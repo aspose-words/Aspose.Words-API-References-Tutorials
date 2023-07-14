@@ -1,7 +1,7 @@
 ---
 title: Campos de formulario Obtener por nombre
 linktitle: Campos de formulario Obtener por nombre
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a recuperar y modificar campos de formulario por nombre en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Paso 2: Recuperar campos de formulario
 
- A continuación, acceda a la`FormFields` propiedad de la`Range` objeto en el documento para recuperar todos los campos del formulario:
+ A continuación, acceda a la`FormFields`propiedad de la`Range` objeto en el documento para recuperar todos los campos del formulario:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

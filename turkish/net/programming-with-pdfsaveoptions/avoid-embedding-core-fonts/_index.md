@@ -1,7 +1,7 @@
 ---
 title: Çekirdek Yazı Tiplerini Gömmeyerek PDF Dosyasının Boyutunu Küçültün
 linktitle: Çekirdek Yazı Tiplerini Gömmeyerek PDF Dosyasının Boyutunu Küçültün
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerini PDF'ye dönüştürürken Temel Yazı Tiplerini Gömmeyerek PDF Dosyasının Boyutunu Nasıl Küçülteceğinizi öğrenin.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ C: Aspose.Words for .NET'i temel yazı tiplerini bir PDF dosyasına gömmeyecek 
 
  kullanarak PDF'ye dönüştürmek istediğiniz Word belgesini yükleyin.`Document` sınıf ve belirtilen belge yolu.
 
- örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`UseCoreFonts` mülkiyet`true`. Bu, temel yazı tiplerinin oluşturulan PDF dosyasına gömülmesini önleyecektir.
+ örneğini oluşturun`PdfSaveOptions`sınıflandırın ve ayarlayın`UseCoreFonts` mülkiyet`true`. Bu, temel yazı tiplerinin oluşturulan PDF dosyasına gömülmesini önleyecektir.
 
  Kullan`Save` yöntemi`Document` Daha önce yapılandırılan dönüştürme seçeneklerini belirterek belgeyi PDF biçiminde kaydetmek için nesne.
 

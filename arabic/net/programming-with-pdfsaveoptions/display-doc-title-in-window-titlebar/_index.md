@@ -1,7 +1,7 @@
 ---
 title: عرض عنوان المستند في شريط عنوان النافذة
 linktitle: عرض عنوان المستند في شريط عنوان النافذة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pd
 
  قم بتحميل المستند باستخدام ملف`Document` طريقة وتحديد مسار الملف للتحويل إلى PDF.
 
- قم بتكوين خيارات حفظ PDF عن طريق إنشاء مثيل لملف`PdfSaveOptions` الطبقة ووضع`DisplayDocTitle` الملكية ل`true`. يتيح ذلك عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF.
+ قم بتكوين خيارات حفظ PDF عن طريق إنشاء مثيل لملف`PdfSaveOptions` الطبقة ووضع`DisplayDocTitle` ملكية ل`true`. يتيح ذلك عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF.
 
  استخدم ال`Save` طريقة لتحويل المستند إلى PDF مع تحديد خيارات التحويل.
 

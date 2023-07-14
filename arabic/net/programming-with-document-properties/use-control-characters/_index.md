@@ -1,7 +1,7 @@
 ---
 title: استخدم أحرف التحكم
 linktitle: استخدم أحرف التحكم
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لاستخدام أحرف التحكم مع Aspose.Words for .NET.
 type: docs
 weight: 10

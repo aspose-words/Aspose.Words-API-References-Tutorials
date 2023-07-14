@@ -1,7 +1,7 @@
 ---
 title: Konvertera metafiler till emf eller wmf
 linktitle: Konvertera metafiler till emf eller wmf
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att konvertera metafiler till EMF- eller WMF-format vid konvertering av ett dokument till HTML med Aspose.Words för .NET.
 type: docs
 weight: 10

@@ -1,13 +1,13 @@
 ---
-title: Programación con opciones y configuraciones de documentos
-linktitle: Programación con opciones y configuraciones de documentos
-second_title: Referencia de API de Aspose.Words para .NET
+title: Procesamiento de textos con opciones y configuraciones de documentos
+linktitle: Procesamiento de textos con opciones y configuraciones de documentos
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a usar las opciones y configuraciones del documento para personalizar y controlar el comportamiento de los documentos de Word con Aspose.Words para .NET. Los tutoriales lo guían a través de las diferentes funciones, como las propiedades del documento.
 type: docs
 weight: 1510
 url: /es/net/programming-with-document-options-and-settings/
 ---
-Los tutoriales de "Programación con opciones y configuraciones de documentos" de Aspose.Words para .NET lo guiarán a través de las diversas características y técnicas para manipular las opciones y configuraciones de documentos en Aspose.Words para .NET. Estos tutoriales lo ayudan a comprender cómo personalizar la configuración de carga, administrar fuentes, formatos de documentos, plantillas y más.
+Los tutoriales de "Procesamiento de textos con opciones y configuraciones de documentos" de Aspose.Words para .NET lo guiarán a través de las diversas características y técnicas para manipular las opciones y configuraciones de documentos en Aspose.Words para .NET. Estos tutoriales lo ayudan a comprender cómo personalizar la configuración de carga, administrar fuentes, formatos de documentos, plantillas y más.
 
 Los tutoriales explican cómo personalizar las opciones de carga de documentos. Aprenderá a especificar parámetros de carga, como administración de fuentes, resolución de enlaces, optimización del rendimiento, etc. Estas opciones le permiten controlar con precisión el comportamiento de carga de documentos y optimizar el rendimiento de su aplicación.
 

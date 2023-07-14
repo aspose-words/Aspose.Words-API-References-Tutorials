@@ -1,7 +1,7 @@
 ---
 title: Yeni Belge Oluştur
 linktitle: Yeni Belge Oluştur
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak nasıl yeni bir Word belgesi oluşturacağınızı ve içerik ekleyeceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10

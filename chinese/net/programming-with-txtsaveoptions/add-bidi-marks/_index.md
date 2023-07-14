@@ -1,7 +1,7 @@
 ---
 title: 在Word文档中添加双向标记
 linktitle: 在Word文档中添加双向标记
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 学习使用 Aspose.Words for .NET 将 Bidi 标记添加到 Word 文档并创建专业的多语言文档。
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中
 
 ## 了解 Aspose.Words 库
 
-在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。 Aspose.Words 是一个流行的库，它使 Word 文档的处理变得简单而高效。它提供了用于创建、编辑和操作 Word 文档的广泛功能，包括添加 Bidi 标记。
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。 Aspose.Words 是一个流行的库，它使 Word 文档的文字处理变得简单高效。它提供了用于创建、编辑和操作 Word 文档的广泛功能，包括添加 Bidi 标记。
 
 ## 创建文档并添加内容
 
@@ -65,12 +65,12 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 
 ## 结论
 
-在本指南中，我们解释了如何使用 Aspose.Words for .NET 使用提供的 C# 源代码将 Bidi 标记添加到 Word 文档。通过按照提供的步骤操作，您可以轻松地将 Bidi 标记添加到 C# 应用程序中的 Word 文档中。 Aspose.Words 为文本格式设置和语言管理提供了巨大的灵活性和强大功能，使您能够专业地创建多语言文档。
+在本指南中，我们解释了如何使用 Aspose.Words for .NET 使用提供的 C# 源代码将 Bidi 标记添加到 Word 文档。通过按照提供的步骤操作，您可以轻松地将 Bidi 标记添加到 C# 应用程序中的 Word 文档中。 Aspose.Words 通过文本格式设置和语言管理为文字处理提供了巨大的灵活性和强大功能，使您能够专业地创建多语言文档。
 
 ### 经常问的问题
 
 #### 问：什么是 Aspose.Words for .NET？
-Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中创建、编辑和操作 Word 文档。它提供了许多用于处理 Word 文档的功能，包括添加 Bidi（双向）标记。
+Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中创建、编辑和操作 Word 文档。它为 Word 文档的文字处理提供了许多功能，包括添加 Bidi（双向）标记。
 
 #### 问：Aspose.Words for .NET 提供哪些功能？
 Aspose.Words for .NET 提供了广泛的用于创建、编辑和操作 Word 文档的功能。其中一些功能包括创建文档、添加内容、格式化文本、管理表格、合并和拆分文档、转换文档等。

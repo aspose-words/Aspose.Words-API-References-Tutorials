@@ -1,7 +1,7 @@
 ---
 title: Преобразование документа Word в PDF 1.7
 linktitle: Преобразование документа Word в PDF 1.7
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как преобразовать текстовый документ в PDF 1.7 с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

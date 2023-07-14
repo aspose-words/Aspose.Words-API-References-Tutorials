@@ -1,7 +1,7 @@
 ---
 title: Tiff Binarizasyonu İçin Eşik Kontrolünü Açığa Çıkarın
 linktitle: Tiff Binarizasyonu İçin Eşik Kontrolünü Açığa Çıkarın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile TIFF ikilileştirme eşiğini nasıl kontrol edeceğinizi öğrenin. Daha kaliteli görüntüler için eksiksiz eğitim.
 type: docs
 weight: 10
@@ -52,7 +52,7 @@ Artık belirtilen seçeneklerle ikilileştirme eşiğini kontrol ederken belgeni
 
 ```csharp 
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

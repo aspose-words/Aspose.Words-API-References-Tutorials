@@ -1,7 +1,7 @@
 ---
 title: Ignore Header Footer
 linktitle: Ignore Header Footer
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to append a document while ignoring header and footer content using Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: فتح ميزات النوع
 linktitle: فتح ميزات النوع
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET
 type: docs
 weight: 10
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 
 #### س: كيف يمكنني التحقق مما إذا كانت ميزة OpenType مدعومة في خط معين؟
 
- ج: يمكنك التحقق مما إذا كانت ميزة OpenType مدعومة في خط معين باستخدام ملف`Font.OpenTypeFeatures` الطريقة في Aspose.Words لـ .NET.
+ج: يمكنك التحقق مما إذا كانت ميزة OpenType مدعومة في خط معين باستخدام ملف`Font.OpenTypeFeatures` الأسلوب في Aspose.Words لـ .NET.
 
 #### س: ما هي ميزات تنسيق النص الأخرى التي تدعمها Aspose.Words for .NET؟
 

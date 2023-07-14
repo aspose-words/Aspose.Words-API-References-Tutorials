@@ -1,7 +1,7 @@
 ---
 title: Vérifier la séquence
 linktitle: Vérifier la séquence
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à vérifier la séquence des zones de texte dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Ce guide étape par étape explique comment vérifier la séquence des zones de 
 
 ## Étape 1 : Configuration du document et création d'une forme TextBox
 
-Pour commencer, nous devons configurer le document et créer une forme TextBox. Le code suivant initialise une nouvelle instance de`Document` classe et crée une forme de zone de texte :
+ Pour commencer, nous devons configurer le document et créer une forme TextBox. Le code suivant initialise une nouvelle instance de`Document` classe et crée une forme de zone de texte :
 
 ```csharp
 Document doc = new Document();
@@ -91,7 +91,7 @@ R : Pour vérifier la séquence des zones de texte à l'aide de Aspose.Words po
 
 #### Q : Comment déterminer si un TextBox est la tête de la séquence ?
 
-R : Pour déterminer si une zone de texte est la tête de la séquence, vous pouvez vérifier si elle a un formulaire suivant (`Next`) mais pas une forme précédente (`Previous`). Si c'est le cas, cela signifie qu'il est en tête de la séquence.
+R : Pour déterminer si une zone de texte est la tête de la séquence, vous pouvez vérifier si elle a un formulaire suivant (`Next`) mais pas une forme précédente (`Previous`). Si c'est le cas, cela signifie qu'il est en tête de la série.
 
 #### Q : Comment savoir si un TextBox est au milieu de la séquence ?
 
@@ -103,4 +103,4 @@ A: Pour vérifier si un TextBox est la fin de la séquence, vous pouvez vérifie
 
 #### Q : Pouvons-nous vérifier la séquence d'éléments autres que les TextBox ?
 
-R : Oui, en utilisant la bibliothèque Aspose.Words pour .NET, il est possible de vérifier la séquence d'autres éléments tels que des paragraphes, des tableaux, des images, etc. Le processus variera en fonction de l'élément spécifique que vous souhaitez vérifier.
+: Oui, en utilisant la bibliothèque Aspose.Words pour .NET, il est possible de vérifier la séquence d'autres éléments tels que des paragraphes, des tableaux, des images, etc. Le processus variera en fonction de l'élément spécifique que vous souhaitez vérifier.

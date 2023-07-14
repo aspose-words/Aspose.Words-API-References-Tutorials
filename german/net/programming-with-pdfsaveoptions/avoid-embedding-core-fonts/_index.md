@@ -1,7 +1,7 @@
 ---
 title: Reduzieren Sie die PDF-Dateigröße, indem Sie keine Kernschriftarten einbetten
 linktitle: Reduzieren Sie die PDF-Dateigröße, indem Sie keine Kernschriftarten einbetten
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Größe von PDF-Dateien reduzieren können, indem Sie beim Konvertieren von Word-Dokumenten in PDF mit Aspose.Words für .NET keine Kernschriftarten einbetten.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ A: Um Aspose.Words für .NET so zu konfigurieren, dass Kernschriftarten nicht in
 
  Laden Sie das Word-Dokument, das Sie in PDF konvertieren möchten, mit`Document` -Klasse und den angegebenen Dokumentpfad.
 
- Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`UseCoreFonts` Eigentum zu`true`. Dadurch wird das Einbetten von Basisschriftarten in die generierte PDF-Datei vermieden.
+ Erstellen Sie eine Instanz von`PdfSaveOptions`Klasse und legen Sie die fest`UseCoreFonts` Eigentum zu`true`. Dadurch wird das Einbetten von Basisschriftarten in die generierte PDF-Datei vermieden.
 
  Benutzen Sie die`Save` Methode der`Document` Objekt zum Speichern des Dokuments im PDF-Format unter Angabe der zuvor konfigurierten Konvertierungsoptionen.
 

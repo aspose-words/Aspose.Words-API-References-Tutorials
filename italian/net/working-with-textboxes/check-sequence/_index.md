@@ -1,7 +1,7 @@
 ---
 title: Controlla la sequenza
 linktitle: Controlla la sequenza
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come controllare la sequenza di TextBox in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Questa guida dettagliata spiega come controllare la sequenza di TextBox in un do
 
 ## Passaggio 1: impostazione del documento e creazione di una forma TextBox
 
-Per iniziare, dobbiamo impostare il documento e creare una forma TextBox. Il codice seguente inizializza una nuova istanza di`Document` class e crea una forma di casella di testo:
+ Per iniziare, dobbiamo impostare il documento e creare una forma TextBox. Il codice seguente inizializza una nuova istanza di`Document` class e crea una forma di casella di testo:
 
 ```csharp
 Document doc = new Document();

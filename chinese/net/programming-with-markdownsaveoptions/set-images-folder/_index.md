@@ -1,7 +1,7 @@
 ---
 title: 设置图像文件夹
 linktitle: 设置图像文件夹
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解使用 Aspose.Words for .NET 导出到 Markdown 时如何设置图像文件夹。自定义图像的位置以更好地组织和集成。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Créer un style de tableau
 linktitle: Créer un style de tableau
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour créer un style de tableau personnalisé à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -40,7 +40,7 @@ builder. InsertCell();
 builder. EndTable();
 ```
 
-## Étape 4 : créer un style de tableau
+## Étape 4 : Créer un style de tableau
  Nous pouvons maintenant créer un style de tableau en utilisant le`TableStyle` classe et la`Add()` méthode du document`s `Collection Styles. Nous définissons les propriétés du style, telles que les bordures, les marges et les rembourrages.
 
 ```csharp
@@ -74,7 +74,7 @@ Félicitation ! Vous avez maintenant créé un style personnalisé pour votre ta
 ### Exemple de code source pour Créer un style de tableau à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

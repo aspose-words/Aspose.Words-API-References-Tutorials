@@ -1,7 +1,7 @@
 ---
 title: Auto Fit To Page Width
 linktitle: Auto Fit To Page Width
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to auto fit a table to page width in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In this tutorial, we will learn how to use Aspose.Words for .NET to auto fit a t
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Creating and Configuring the Document
-To start working with the table, we need to create a document and configure the document generator. Follow these steps:
+To start Words Processing with the table, we need to create a document and configure the document generator. Follow these steps:
 
 ```csharp
 // Path to your documents directory

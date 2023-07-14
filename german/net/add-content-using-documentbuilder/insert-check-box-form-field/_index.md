@@ -1,7 +1,7 @@
 ---
 title: Kontrollkästchen-Formularfeld einfügen
 linktitle: Kontrollkästchen-Formularfeld einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Kontrollkästchen-Formularfelder in Word-Dokumente einfügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10

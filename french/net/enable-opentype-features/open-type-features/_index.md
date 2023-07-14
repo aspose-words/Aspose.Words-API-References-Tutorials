@@ -1,7 +1,7 @@
 ---
 title: Caractéristiques de type ouvert
 linktitle: Caractéristiques de type ouvert
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment activer et utiliser les fonctionnalités Open Type dans Aspose.Words pour .NET
 type: docs
 weight: 10
@@ -65,7 +65,7 @@ R : Aspose.Words pour .NET prend en charge plusieurs fonctionnalités OpenType,
 
 #### Q : Comment puis-je vérifier si une fonctionnalité OpenType est prise en charge dans une police spécifique ?
 
- R : Vous pouvez vérifier si une fonctionnalité OpenType est prise en charge dans une police spécifique à l'aide de la`Font.OpenTypeFeatures` méthode dans Aspose.Words pour .NET.
+R : Vous pouvez vérifier si une fonctionnalité OpenType est prise en charge dans une police spécifique à l'aide de la`Font.OpenTypeFeatures` méthode dans Aspose.Words pour .NET.
 
 #### Q : Quelles autres fonctionnalités de formatage de texte sont prises en charge par Aspose.Words pour .NET ?
 
@@ -73,4 +73,4 @@ R : Outre les fonctionnalités OpenType, Aspose.Words pour .NET prend égalemen
 
 #### Q : Puis-je utiliser les fonctionnalités OpenType dans toutes les versions d'Aspose.Words pour .NET ?
 
-: Les fonctionnalités OpenType sont prises en charge dans les nouvelles versions d'Aspose.Words pour .NET. Assurez-vous d'utiliser une version compatible pour bénéficier de ces fonctionnalités.
+R : Les fonctionnalités OpenType sont prises en charge dans les nouvelles versions d'Aspose.Words pour .NET. Assurez-vous d'utiliser une version compatible pour bénéficier de ces fonctionnalités.

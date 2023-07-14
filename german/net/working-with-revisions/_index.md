@@ -1,13 +1,13 @@
 ---
-title: Arbeiten mit Revisionen
-linktitle: Arbeiten mit Revisionen
-second_title: Aspose.Words für .NET API-Referenz
+title: Textverarbeitung mit Überarbeitungen
+linktitle: Textverarbeitung mit Überarbeitungen
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Revisionen in Word-Dokumenten arbeiten. Schritt-für-Schritt-Anleitungen mit Beispielcode zum Verwalten und Anzeigen von Revisionen.
 type: docs
 weight: 1130
 url: /de/net/working-with-revisions/
 ---
-Tutorials zum Arbeiten mit Revisionen führen Sie durch die Funktionen der Arbeit mit Revisionen in Aspose.Words für .NET. Diese Tutorials zeigen Ihnen, wie Sie Revisionen in einem Word-Dokument hinzufügen, akzeptieren, ablehnen und anzeigen. Sie erfahren außerdem, wie Sie Revisionen durchsuchen, detaillierte Informationen zu jeder Revision abrufen und erweiterte Vorgänge wie das Zusammenführen von Revisionen durchführen.
+Tutorials zur Textverarbeitung mit Revisionen führen Sie durch die Funktionen der Textverarbeitung mit Revisionen in Aspose.Words für .NET. Diese Tutorials zeigen Ihnen, wie Sie Revisionen in einem Word-Dokument hinzufügen, akzeptieren, ablehnen und anzeigen. Sie erfahren außerdem, wie Sie Revisionen durchsuchen, detaillierte Informationen zu jeder Revision abrufen und erweiterte Vorgänge wie das Zusammenführen von Revisionen durchführen.
 
 Wenn Sie diese Tutorials befolgen, werden Sie verstehen, wie Sie Revisionen in Ihren Word-Dokumenten mit Aspose.Words für .NET effektiv verwalten. Sie erfahren, wie Sie Änderungen am Dokumentinhalt steuern, mit anderen Benutzern zusammenarbeiten und einen Verlauf der vorgenommenen Änderungen verwalten. Die Tutorials bieten detaillierte Codebeispiele und klare Erklärungen, um Ihnen bei der Beherrschung dieser Funktionen zu helfen.
 

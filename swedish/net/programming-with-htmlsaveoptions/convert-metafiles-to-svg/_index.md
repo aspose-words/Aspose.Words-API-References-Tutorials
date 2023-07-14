@@ -1,7 +1,7 @@
 ---
 title: Konvertera metafiler till svg
 linktitle: Konvertera metafiler till svg
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att konvertera metafiler till SVG-format när du konverterar ett dokument till HTML med Aspose.Words för .NET.
 type: docs
 weight: 10

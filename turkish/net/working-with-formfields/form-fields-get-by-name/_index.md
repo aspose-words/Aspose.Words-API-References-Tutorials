@@ -1,7 +1,7 @@
 ---
 title: Form Alanları Ada Göre Alınır
 linktitle: Form Alanları Ada Göre Alınır
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerinde form alanlarını ada göre nasıl alacağınızı ve değiştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## 2. Adım: Form Alanlarını Alma
 
- Ardından, şuraya erişin:`FormFields` mülkiyeti`Range` tüm form alanlarını almak için belgedeki nesne:
+ Ardından, şuraya erişin:`FormFields`mülkiyeti`Range` tüm form alanlarını almak için belgedeki nesne:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

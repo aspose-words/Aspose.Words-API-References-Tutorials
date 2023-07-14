@@ -1,7 +1,7 @@
 ---
 title: Laden Sie die Noto-Fallback-Einstellungen
 linktitle: Laden Sie die Noto-Fallback-Einstellungen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie Noto-Überschreibungsparameter mit Aspose.Words für .NET in ein Word-Dokument laden.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ### Beispielquellcode für Noto-Fallback-Einstellungen mit Aspose.Words für .NET 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

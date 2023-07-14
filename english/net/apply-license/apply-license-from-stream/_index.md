@@ -1,7 +1,7 @@
 ---
 title: Apply License From Stream
 linktitle: Apply License From Stream
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to apply a license from a stream using Aspose.Words for .NET. Step-by-step guide
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Before we begin, ensure that you have the following prerequisites:
 - A valid license file for Aspose.Words.
 
 ## Step 1: Import the Required Namespaces
-To start, import the necessary namespaces in your C# code. These namespaces contain the classes and methods needed for working with Aspose.Words.
+To start, import the necessary namespaces in your C# code. These namespaces contain the classes and methods needed for Words Processing with Aspose.Words.
 
 ```csharp
 using Aspose.Words;

@@ -1,7 +1,7 @@
 ---
 title: İçeriğe Bağlantıyı Yapılandırma
 linktitle: İçeriğe Bağlantıyı Yapılandırma
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgedeki içeriğe bağlantı kurmak için adım adım kılavuz.
 type: docs
 weight: 10

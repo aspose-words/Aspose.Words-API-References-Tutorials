@@ -1,7 +1,7 @@
 ---
 title: 展开单元格的格式并从样式行
 linktitle: 展开单元格的格式并从样式行
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 将表格样式的格式扩展到单元格和行的分步指南。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Zwischen Maßeinheiten umrechnen
 linktitle: Zwischen Maßeinheiten umrechnen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Konvertieren zwischen Maßeinheiten in einem Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10

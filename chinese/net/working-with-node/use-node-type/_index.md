@@ -1,7 +1,7 @@
 ---
 title: 使用节点类型
 linktitle: 使用节点类型
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何通过 Aspose.Words for .NET 使用节点类型访问文档特定信息。
 type: docs
 weight: 10

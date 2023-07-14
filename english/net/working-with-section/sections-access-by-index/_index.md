@@ -1,7 +1,7 @@
 ---
 title: Sections Access By Index
 linktitle: Sections Access By Index
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to access sections of a Word document by index and change their settings with Aspose.Words for .NET.
 type: docs
 weight: 10

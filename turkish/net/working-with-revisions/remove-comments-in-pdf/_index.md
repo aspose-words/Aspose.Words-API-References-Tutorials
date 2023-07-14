@@ -1,7 +1,7 @@
 ---
 title: Pdf Dosyasındaki Yorumları Kaldır
 linktitle: Pdf Dosyasındaki Yorumları Kaldır
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir PDF dosyasındaki yorumları kaldırın.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### S: Aspose.Words for .NET ile oluşturulan PDF'de yorumlar nasıl gizlenir?
 
- C: Şunu kullanın:`CommentDisplayMode` mülkiyeti`LayoutOptions` PDF oluşturulurken yorumların nasıl görüntüleneceğini yapılandırmak için nesne. Yorumları gizlemek için bu özelliği şu şekilde ayarlayın:`CommentDisplayMode.Hide`.
+ C: Şunu kullanın:`CommentDisplayMode`mülkiyeti`LayoutOptions` PDF oluşturulurken yorumların nasıl görüntüleneceğini yapılandırmak için nesne. Yorumları gizlemek için bu özelliği şu şekilde ayarlayın:`CommentDisplayMode.Hide`.
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;

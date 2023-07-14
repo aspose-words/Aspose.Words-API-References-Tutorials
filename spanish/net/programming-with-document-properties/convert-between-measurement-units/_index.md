@@ -1,7 +1,7 @@
 ---
 title: Convertir entre unidades de medida
 linktitle: Convertir entre unidades de medida
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para convertir entre unidades de medida en un documento con Aspose.Words para .NET.
 type: docs
 weight: 10

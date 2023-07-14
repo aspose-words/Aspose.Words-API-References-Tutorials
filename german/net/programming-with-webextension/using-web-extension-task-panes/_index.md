@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Web Extension-Aufgabenbereichen
 linktitle: Verwenden von Web Extension-Aufgabenbereichen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zur Verwendung von Web Extension-Aufgabenbereichen mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibl
 
 ## Schritt 1: Definieren Sie das Dokumentenverzeichnis
 
-Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem Sie das generierte Dokument speichern möchten. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
+ Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem Sie das generierte Dokument speichern möchten. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

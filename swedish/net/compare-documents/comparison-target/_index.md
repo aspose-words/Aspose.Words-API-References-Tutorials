@@ -1,7 +1,7 @@
 ---
 title: Jämförelsemål
 linktitle: Jämförelsemål
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig jämför målfunktionen i Aspose.Words för .NET som låter dig jämföra dokument och skapa ett nytt dokument som innehåller de ändringar som gjorts.
 type: docs
 weight: 10

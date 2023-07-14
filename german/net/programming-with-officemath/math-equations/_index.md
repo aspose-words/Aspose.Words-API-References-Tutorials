@@ -1,7 +1,7 @@
 ---
 title: Mathematische Gleichungen
 linktitle: Mathematische Gleichungen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mathematische Gleichungen zu Ihren Word-Dokumenten hinzufügen.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbe
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 
-Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Arbeit mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten, einschließlich der Unterstützung mathematischer Gleichungen.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Textverarbeitung mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten, einschließlich der Unterstützung mathematischer Gleichungen.
 
 ## Laden des Word-Dokuments
 
@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## Abschluss
 
-In diesem Handbuch haben wir erläutert, wie Sie Aspose.Words für .NET verwenden, um mithilfe des bereitgestellten C#-Quellcodes mathematische Gleichungen zu einem Word-Dokument hinzuzufügen. Indem Sie die bereitgestellten Schritte befolgen, können Sie ganz einfach mathematische Gleichungen zu Ihren Word-Dokumenten in Ihrer C#-Anwendung hinzufügen. Aspose.Words bietet enorme Flexibilität und Leistungsfähigkeit für die Arbeit mit mathematischen Gleichungen und ermöglicht Ihnen die Erstellung professioneller, gut formatierter Dokumente.
+In diesem Handbuch haben wir erläutert, wie Sie Aspose.Words für .NET verwenden, um mithilfe des bereitgestellten C#-Quellcodes mathematische Gleichungen zu einem Word-Dokument hinzuzufügen. Indem Sie die bereitgestellten Schritte befolgen, können Sie ganz einfach mathematische Gleichungen zu Ihren Word-Dokumenten in Ihrer C#-Anwendung hinzufügen. Aspose.Words bietet enorme Flexibilität und Leistung für die Textverarbeitung mit mathematischen Gleichungen und ermöglicht Ihnen die Erstellung professioneller, gut formatierter Dokumente.

@@ -1,7 +1,7 @@
 ---
 title: Dönüştürülen Öğeleri Rasterleştir
 linktitle: Dönüştürülen Öğeleri Rasterleştir
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile PCL formatına dönüştürürken dönüştürülmüş öğelerin rasterleştirmesini nasıl devre dışı bırakacağınızı öğrenin.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, işleme
 
 ## Aspose.Words kitaplığını anlama
 
-Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle çalışmayı kolay ve verimli hale getiren popüler bir kitaplıktır. Dönüştürme sırasında dönüştürülen öğeleri rasterleştirme desteği de dahil olmak üzere, Word belgeleri oluşturmak, düzenlemek ve dönüştürmek için çok çeşitli özellikler sunar.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle Kelime İşlemeyi kolay ve verimli hale getiren popüler bir kütüphanedir. Dönüştürme sırasında dönüştürülen öğeleri rasterleştirme desteği de dahil olmak üzere, Word belgeleri oluşturmak, düzenlemek ve dönüştürmek için çok çeşitli özellikler sunar.
 
 ## Word belgesini yükleme
 

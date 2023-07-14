@@ -1,7 +1,7 @@
 ---
 title: Citation
 linktitle: Citation
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser la citation avec Aspose.Words pour .NET Guide étape par étape.
 type: docs
 weight: 10

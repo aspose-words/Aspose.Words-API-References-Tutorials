@@ -1,7 +1,7 @@
 ---
 title: 处理空间选项
 linktitle: 处理空间选项
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 管理 TXT 文档中的空格。删除不必要的空格并提高可读性。
 type: docs
 weight: 10

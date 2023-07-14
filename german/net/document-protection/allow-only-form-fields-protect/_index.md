@@ -1,14 +1,13 @@
 ---
-title: Nur den Schutz von Formularfeldern zulassen
-linktitle: Nur den Schutz von Formularfeldern zulassen
-second_title: Aspose.Words für .NET API-Referenz
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Dokumente schützen und nur die Bearbeitung von Formularfeldern zulassen.
+title: Nur den Schutz von Formularfeldern im Word-Dokument zulassen
+linktitle: Nur den Schutz von Formularfeldern im Word-Dokument zulassen
+second_title: Aspose.Words-Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie Aspose.Words für .NET verwenden, um Word-Dokumente zu schützen und nur die Bearbeitung von Formularfeldern zuzulassen.
 type: docs
 weight: 10
 url: /de/net/document-protection/allow-only-form-fields-protect/
 ---
-
-Der Dokumentenschutz ist eine wesentliche Funktion beim Arbeiten mit Dateien in Ihrer C#-Anwendung. Mit der Aspose.Words-Bibliothek für .NET können Sie Ihre Dokumente einfach schützen und nur die Bearbeitung von Formularfeldern zulassen. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von C#-Quellcode, um nur die Bearbeitung von Formularfeldern mithilfe der Funktion „Nur Formularfelder schützen“ von Aspose.Words für .NET zuzulassen.
+Der Dokumentenschutz ist eine wesentliche Funktion bei der Textverarbeitung mit Dateien in Ihrer C#-Anwendung. Mit der Aspose.Words-Bibliothek für .NET können Sie Ihre Dokumente einfach schützen und nur die Bearbeitung von Formularfeldern zulassen. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von C#-Quellcode, um nur die Bearbeitung von Formularfeldern mithilfe der Funktion „Nur Formularfelder schützen“ von Aspose.Words für .NET zuzulassen.
 
 ## Schritt 1: Festlegen des Dokumentenverzeichnisses
 
@@ -85,3 +84,33 @@ doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ## Abschluss
 
 In diesem Leitfaden haben wir untersucht, wie Sie die Aspose.Words-Bibliothek für .NET verwenden, um ein Dokument zu schützen und nur die Bearbeitung von Formularfeldern zuzulassen. Wenn Sie die bereitgestellten Schritte befolgen, können Sie diese Funktionalität problemlos in Ihrer C#-Anwendung implementieren. Dokumentenschutz ist unerlässlich, um die Sicherheit und Vertraulichkeit Ihrer Dokumente zu gewährleisten.
+
+### FAQs zum Schutz nur von Formularfeldern in Word-Dokumenten
+
+#### F: Was ist Dokumentenschutz in Aspose.Words für .NET?
+
+A: Der Dokumentenschutz in Aspose.Words für .NET ist eine Funktion, mit der Sie Ihre Dokumente schützen können, indem Sie bestimmte Aktionen wie Bearbeitung, Formatierung oder Inhaltsänderung einschränken. Es trägt dazu bei, die Integrität und Vertraulichkeit Ihrer Dokumente zu wahren, indem es unbefugte Änderungen verhindert.
+
+#### F: Wie kann ich ein Dokument schützen und zulassen, dass nur Formularfelder mit Aspose.Words für .NET bearbeitet werden?
+
+A: Um ein Dokument zu schützen und nur die Bearbeitung von Formularfeldern mit Aspose.Words für .NET zuzulassen, können Sie die folgenden Schritte ausführen:
+1. Definieren Sie den Verzeichnispfad für Ihr Dokument.
+2.  Fügen Sie mit dem Abschnitte und Text in Ihr Dokument ein`DocumentBuilder` Klasse.
+3.  Aktivieren Sie den Dokumentenschutz mithilfe von`Protect` Methode der`Document` Klasse, Angabe des Schutztyps als`AllowOnlyFormFields` und Bereitstellung eines Passworts.
+4.  Speichern Sie das geschützte Dokument mit`Save` Methode der`Document` Klasse.
+
+#### F: Kann ich mit Aspose.Words für .NET Formularfelder in ein geschütztes Dokument einfügen?
+
+A: Ja, Sie können Formularfelder mit Aspose.Words für .NET in ein geschütztes Dokument einfügen. Der Dokumentenschutz mit dem`AllowOnlyFormFields` Mit diesem Typ können Benutzer nur die Formularfelder bearbeiten und gleichzeitig den restlichen Inhalt des Dokuments schützen. Du kannst den ... benutzen`DocumentBuilder` Klasse, um Formularfelder in das Dokument einzufügen, bevor der Schutz aktiviert wird.
+
+#### F: Kann ich den Dokumentschutz von einem geschützten Dokument entfernen?
+
+ A: Ja, Sie können den Dokumentschutz von einem geschützten Dokument mit Aspose.Words für .NET entfernen. Um den Schutz zu entfernen, können Sie die verwenden`Unprotect` Methode der`Document` Klasse und geben Sie das richtige Passwort ein. Dadurch wird der Schutz aufgehoben und das Dokument kann uneingeschränkt bearbeitet werden.
+
+#### F: Ist es möglich, ein Dokument mit mehreren Schutzarten zu schützen?
+
+ A: Nein, mit Aspose.Words für .NET kann jeweils nur ein Schutztyp auf ein Dokument angewendet werden. Allerdings ist die`AllowOnlyFormFields` Der Schutztyp kann die Bearbeitung effektiv auf Formularfelder beschränken und gleichzeitig andere Schutztypen zulassen, z`AllowOnlyComments` oder`AllowOnlyRevisions`kombinierbar mit Formularfeldschutz.
+
+#### F: Kann ich für unterschiedliche Schutzarten in einem Dokument unterschiedliche Passwörter festlegen?
+
+A: Nein, mit Aspose.Words für .NET können Sie unabhängig vom Schutztyp ein einziges Passwort für den Dokumentenschutz festlegen. Das gleiche Passwort wird zum Aktivieren und Deaktivieren des Dokumentenschutzes verwendet.

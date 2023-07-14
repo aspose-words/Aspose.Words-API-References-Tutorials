@@ -1,7 +1,7 @@
 ---
 title: 固定文本标题
 linktitle: 固定文本标题
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 通过 Aspose.Words for .NET 分步指南了解如何使用 Setext 标题来格式化文档。
 type: docs
 weight: 10

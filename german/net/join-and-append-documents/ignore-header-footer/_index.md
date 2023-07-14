@@ -1,7 +1,7 @@
 ---
 title: Kopf- und Fußzeile ignorieren
 linktitle: Kopf- und Fußzeile ignorieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument anhängen und dabei Kopf- und Fußzeileninhalte ignorieren.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Importformatoptionen einrichten
 
- Erstellen Sie eine Instanz von`ImportFormatOptions` Klasse und legen Sie die fest`IgnoreHeaderFooter` Eigentum zu`false`. Dadurch wird sichergestellt, dass der Inhalt der Kopf- und Fußzeile beim Anhängevorgang einbezogen wird.
+ Erstellen Sie eine Instanz von`ImportFormatOptions`Klasse und legen Sie die fest`IgnoreHeaderFooter` Eigentum zu`false`. Dadurch wird sichergestellt, dass der Inhalt der Kopf- und Fußzeile beim Anhängevorgang einbezogen wird.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Schritt 4: Hängen Sie das Quelldokument an das Zieldokument an
 
- Benutzen Sie die`AppendDocument` Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.KeepSourceFormatting` als zweiten Parameter und die Importformatoptionen als dritten Parameter.
+ Benutzen Sie die`AppendDocument`Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.KeepSourceFormatting` als zweiten Parameter und die Importformatoptionen als dritten Parameter.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ Damit ist die Implementierung des Anhängens eines Dokuments unter Ignorieren de
 ### Beispielquellcode für „Kopfzeile und Fußzeile ignorieren“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

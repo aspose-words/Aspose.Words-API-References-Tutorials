@@ -1,7 +1,7 @@
 ---
 title: حل أسماء الخطوط
 linktitle: حل أسماء الخطوط
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لحل أسماء الخطوط المفقودة عند التحويل إلى HTML باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

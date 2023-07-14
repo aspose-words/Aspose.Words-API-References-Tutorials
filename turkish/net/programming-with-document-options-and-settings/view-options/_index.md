@@ -1,7 +1,7 @@
 ---
 title: Seçenekleri gör
 linktitle: Seçenekleri gör
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile belge görüntüleme seçeneklerini yapılandırmak için adım adım kılavuz.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Вставить поля формы
 linktitle: Вставить поля формы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставлять раскрывающиеся поля формы в документы Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

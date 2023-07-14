@@ -1,7 +1,7 @@
 ---
 title: Перейти к разделу
 linktitle: Перейти к разделу
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по использованию функции «Переместить в раздел» в Aspose.Words для .NET для управления разделами и абзацами в документах Word.
 type: docs
 weight: 10

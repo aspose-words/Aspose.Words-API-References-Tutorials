@@ -1,7 +1,7 @@
 ---
 title: Définir les paramètres de remplacement des polices
 linktitle: Définir les paramètres de remplacement des polices
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment définir les paramètres de substitution de police dans Aspose.Words pour .NET et personnaliser la substitution de police dans vos documents Word.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ### Exemple de code source pour définir les paramètres de remplacement des polices à l'aide d'Aspose.Words pour .NET 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

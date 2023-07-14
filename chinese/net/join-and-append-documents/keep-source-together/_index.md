@@ -1,7 +1,7 @@
 ---
 title: 将源代码放在一起
 linktitle: 将源代码放在一起
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 加入和附加 Word 文档，同时将源内容与目标文档保留在一起。
 type: docs
 weight: 10

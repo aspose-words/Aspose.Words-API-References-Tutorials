@@ -1,13 +1,13 @@
 ---
-title: Programmering med Txtsaveoptions
-linktitle: Programmering med Txtsaveoptions
-second_title: Aspose.Words för .NET API Referens
+title: Ordbehandling med Txtsaveoptions
+linktitle: Ordbehandling med Txtsaveoptions
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du programmerar med alternativ för att spara textfiler i Aspose.Words för .NET. Lär dig hur du anger kodning, formaterar text, hanterar radbrytningar och mer med steg-för-steg handledningar och exempelkod i C#.
 type: docs
 weight: 1700
 url: /sv/net/programming-with-txtsaveoptions/
 ---
-Aspose.Words för .NET tutorials leder dig genom de olika funktionerna och användningarna av biblioteket i samband med manipulering av Word-dokument. En av handledningarna fokuserar på programmering med TXT-sparalternativ, och visar hur du genererar textfiler från Word-dokument samtidigt som innehållsformatering och struktur bibehålls. Du kommer att lära dig hur du använder de olika tillgängliga alternativen för att anpassa konverteringen av dokument till textfiler, som att ange kolumnavgränsare och hantera blanksteg.
+Aspose.Words för .NET tutorials leder dig genom de olika funktionerna och användningarna av biblioteket i samband med manipulering av Word-dokument. En av handledningarna fokuserar på ordbehandling med TXT-sparalternativ, och visar dig hur du genererar textfiler från Word-dokument samtidigt som innehållsformatering och struktur bibehålls. Du kommer att lära dig hur du använder de olika tillgängliga alternativen för att anpassa konverteringen av dokument till textfiler, som att ange kolumnavgränsare och hantera blanksteg.
 
 Dessa handledningar ger steg-för-steg-instruktioner, tillsammans med exempel på C#-kod, för att hjälpa dig att förstå och öva på de begrepp som behandlas. Oavsett om du är nybörjare eller en erfaren utvecklare, hittar du detaljerad information om hur du använder Aspose.Words för .NET och hur du får ut det mesta av detta kraftfulla dokumentmanipuleringsbibliotek.
 

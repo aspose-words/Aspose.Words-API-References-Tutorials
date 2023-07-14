@@ -1,7 +1,7 @@
 ---
 title: Usar fuente de advertencia
 linktitle: Usar fuente de advertencia
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a usar la fuente de advertencia con Aspose.Words para la guía paso a paso de .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ En este ejemplo, le mostraremos cómo usar la fuente de advertencia con Aspose.W
 
 ## Paso 1: Cargar el documento
 
- Cargaremos un documento existente que contiene advertencias usando el`Load` metodo de la`Document` clase.
+ Cargaremos un documento existente que contenga advertencias usando el`Load` metodo de la`Document` clase.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

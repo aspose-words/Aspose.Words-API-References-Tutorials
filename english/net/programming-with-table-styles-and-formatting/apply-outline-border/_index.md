@@ -1,7 +1,7 @@
 ---
 title: Apply Outline Border
 linktitle: Apply Outline Border
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to applying an outline border to a table using Aspose.Words for .NET.
 type: docs
 weight: 10

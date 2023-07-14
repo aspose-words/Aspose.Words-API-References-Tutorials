@@ -1,8 +1,8 @@
 ---
 title: Acceso escrito
 linktitle: Acceso escrito
-second_title: Referencia de API de Aspose.Words para .NET
-description: Aprenda a usar el acceso escrito para manipular tablas en Aspose.Words para .NET.
+second_title: API de procesamiento de documentos de Aspose.Words
+description: Aprenda a usar el acceso con tipo para manipular tablas en Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-node/typed-access/
@@ -83,7 +83,7 @@ Este es un código de muestra completo para el acceso escrito a las tablas con A
 
 #### P: ¿Qué es el acceso escrito en Node.js?
 
-R: El acceso con tipo en Node.js se refiere al uso de tipos de nodos específicos para acceder a las propiedades y valores de los nodos en un documento XML. En lugar de utilizar propiedades genéricas, el acceso con tipo utiliza métodos específicos para acceder a tipos de nodos particulares, como nodos de texto, nodos de elementos, nodos de atributos, etc.
+R: El acceso con tipo en Node.js hace referencia al uso de tipos de nodos específicos para acceder a las propiedades y valores de los nodos en un documento XML. En lugar de utilizar propiedades genéricas, el acceso con tipo utiliza métodos específicos para acceder a tipos de nodos particulares, como nodos de texto, nodos de elementos, nodos de atributos, etc.
 
 #### P: ¿Cómo accedo a los nodos mediante el acceso con tipo?
 

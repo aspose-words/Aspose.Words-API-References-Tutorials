@@ -1,7 +1,7 @@
 ---
 title: Clone And Combine Documents
 linktitle: Clone And Combine Documents
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to clone and combine Word documents with Aspose.Words for .NET. Learn how to create copies of documents, merge multiple documents into one, manage sections, headers and footers.
 type: docs
 weight: 1470

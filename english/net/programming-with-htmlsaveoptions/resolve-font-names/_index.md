@@ -1,7 +1,7 @@
 ---
 title: Resolve Font Names
 linktitle: Resolve Font Names
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to resolve missing font names when converting to HTML with Aspose.Words for .NET.
 type: docs
 weight: 10

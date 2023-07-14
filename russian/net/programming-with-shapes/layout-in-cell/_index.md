@@ -1,7 +1,7 @@
 ---
 title: Макет в ячейке
 linktitle: Макет в ячейке
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как разместить фигуру в ячейке таблицы в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ url: /ru/net/programming-with-shapes/layout-in-cell/
 Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
 - Установлена библиотека Aspose.Words for .NET.
-- Базовые знания C# и работы с документами Word.
+- Базовые знания C# и Word Processing с документами Word.
 
 ## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
+ Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,7 +65,7 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 ```
 
 ## Шаг 5: Настройте форму
- Настройте внешний вид и текст формы водяного знака, установив такие свойства, как`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`и т. д.
+ Настройте внешний вид и текст формы водяного знака, установив такие свойства, как`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, и т. д.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Шаг 6: Вставьте фигуру в документ
- Вставьте форму водяного знака в документ, используя`InsertNode` метод`DocumentBuilder` объект. Расположите фигуру с помощью`MoveTo` метод, чтобы поместить его после последнего запуска в документе.
+Вставьте форму водяного знака в документ, используя`InsertNode` метод`DocumentBuilder` объект. Расположите фигуру с помощью`MoveTo` метод, чтобы поместить его после последнего запуска в документе.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -98,7 +98,7 @@ doc
 ### Пример исходного кода для макета в ячейке с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

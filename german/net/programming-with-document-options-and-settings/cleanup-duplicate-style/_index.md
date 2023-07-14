@@ -1,7 +1,7 @@
 ---
 title: Bereinigen Sie den doppelten Stil
 linktitle: Bereinigen Sie den doppelten Stil
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Bereinigen doppelter Stile in einem Dokument mit Aspose.Words für .NET. Vollständiger Quellcode enthalten.
 type: docs
 weight: 10

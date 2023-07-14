@@ -1,17 +1,17 @@
 ---
-title: Programación con estilos y temas
-linktitle: Programación con estilos y temas
-second_title: Referencia de API de Aspose.Words para .NET
-description: Obtenga información sobre estilos y temas de programación en Aspose.Words para .NET. Aprenda a crear, aplicar y personalizar estilos y temas en sus documentos de Word con tutoriales paso a paso y ejemplos de código C#.
+title: Uso de temas y estilos en documentos de Word
+linktitle: Procesamiento de textos con estilos y temas
+second_title: API de procesamiento de documentos de Aspose.Words
+description: Obtenga información sobre el uso de temas y estilos en documentos de Word con Aspose.Words para .NET. Aprenda a crear, aplicar y personalizar estilos y temas en sus documentos de Word con tutoriales paso a paso y ejemplos de código C#.
 type: docs
 weight: 1410
 url: /es/net/programming-with-styles-and-themes/
 ---
-Los tutoriales de Aspose.Words para .NET sobre programación con estilos y temas proporcionan un excelente recurso para aprender a trabajar con estilos y temas en documentos de Word. Estos tutoriales detallados lo llevan paso a paso a través de varios aspectos, como la creación, aplicación y modificación de estilos, así como el uso de los temas predefinidos. También aprenderá a personalizar estilos y temas modificando propiedades como fuente, tamaño, color, bordes y más.
+Los tutoriales de Aspose.Words para .NET sobre el uso de temas y estilos en documentos de Word proporcionan un excelente recurso para aprender a trabajar con estilos y temas en documentos de Word. Estos tutoriales detallados lo llevan paso a paso a través de varios aspectos, como la creación, aplicación y modificación de estilos, así como el uso de los temas predefinidos. También aprenderá a personalizar estilos y temas modificando propiedades como fuente, tamaño, color, bordes y más.
 
 Con estos tutoriales, puede comprender cómo usar estilos de manera efectiva para formatear texto, párrafos y secciones en su documento. También aprenderá a aplicar temas para darle a su documento una apariencia cohesiva y profesional. Además, estos tutoriales cubren temas avanzados como la administración de estilos heredados, el uso de estilos basados en condiciones y la modificación de estilos mediante programación.
 
-Ya sea un principiante o un desarrollador experimentado, los tutoriales de Aspose.Words para .NET sobre programación con estilos y temas le brindan el conocimiento y las habilidades para crear documentos de Word atractivos y bien formateados. Utilice estos valiosos recursos para dominar el arte de manipular estilos y temas, y dé a sus documentos un toque profesional.
+Ya sea un principiante o un desarrollador experimentado, los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con estilos y temas le brindan el conocimiento y las habilidades para crear documentos de Word atractivos y bien formateados. Utilice estos valiosos recursos para dominar el arte de manipular estilos y temas, y dé a sus documentos un toque profesional.
 
  ## Tutoriales
 | Título | Descripción |

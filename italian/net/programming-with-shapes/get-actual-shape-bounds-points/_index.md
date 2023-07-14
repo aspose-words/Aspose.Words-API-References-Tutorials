@@ -1,7 +1,7 @@
 ---
 title: Ottieni punti di limiti di forma effettivi
 linktitle: Ottieni punti di limiti di forma effettivi
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come recuperare i limiti effettivi di una forma in punti (unità di misura) in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Questo tutorial spiega come recuperare i limiti effettivi di una forma in punti 
 Per seguire questo tutorial, è necessario disporre di quanto segue:
 
 - Aspose.Words per la libreria .NET installata.
-- Conoscenza di base di C# e lavoro con documenti Word.
+- Conoscenza di base di C# e Word Processing con documenti Word.
 
 ## Passaggio 1: creare un nuovo documento e DocumentBuilder
  Crea una nuova istanza di`Document` classe e a`DocumentBuilder` opporsi a lavorare con il documento.
@@ -33,7 +33,7 @@ shape.AspectRatioLocked = false;
 ```
 
 ## Passaggio 3: Recupera i punti dei limiti di forma effettivi
- Accedi alle forme`ShapeRenderer` usando il`GetShapeRenderer`metodo. Quindi, recupera i limiti effettivi della forma in punti utilizzando il`BoundsInPoints` proprietà.
+ Accedi alle forme`ShapeRenderer` usando il`GetShapeRenderer` metodo. Quindi, recupera i limiti effettivi della forma in punti utilizzando il`BoundsInPoints` proprietà.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");

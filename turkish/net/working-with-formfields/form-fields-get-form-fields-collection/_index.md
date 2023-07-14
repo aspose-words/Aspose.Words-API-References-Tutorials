@@ -1,7 +1,7 @@
 ---
 title: Form Alanları Form Alanları Koleksiyonunu Alın
 linktitle: Form Alanları Form Alanları Koleksiyonunu Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerindeki form alanları koleksiyonunu nasıl alacağınızı ve değiştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## 2. Adım: Form Alanları Koleksiyonunu Alma
 
- Ardından, şuraya erişin:`FormFields` mülkiyeti`Range` form alanları koleksiyonunu almak için belgedeki nesne:
+ Ardından, şuraya erişin:`FormFields`mülkiyeti`Range` form alanları koleksiyonunu almak için belgedeki nesne:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

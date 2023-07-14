@@ -1,7 +1,7 @@
 ---
 title: 将图元文件转换为 Emf 或 Wmf
 linktitle: 将图元文件转换为 Emf 或 Wmf
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 将文档转换为 HTML 时将图元文件转换为 EMF 或 WMF 格式的分步指南。
 type: docs
 weight: 10

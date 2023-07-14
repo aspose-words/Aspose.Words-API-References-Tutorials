@@ -1,7 +1,7 @@
 ---
 title: Insertar campos de formulario
 linktitle: Insertar campos de formulario
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar campos de formulario desplegables en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10

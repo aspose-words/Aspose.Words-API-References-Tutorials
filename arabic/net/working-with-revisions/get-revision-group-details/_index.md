@@ -1,7 +1,7 @@
 ---
 title: احصل على تفاصيل مجموعة المراجعة
 linktitle: احصل على تفاصيل مجموعة المراجعة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: احصل على تفاصيل مجموعة المراجعة في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### س: كيف تتحقق مما إذا كانت المراجعة تنتمي إلى مجموعة في Aspose.Words for .NET؟
 
- ج: استخدم ملف`Group` ممتلكات`Revision` للتحقق مما إذا كانت المراجعة تنتمي إلى مجموعة. إذا كان`Group` الملكية`null`، فهذا يعني أن المراجعة لا تنتمي إلى أي مجموعة.
+ ج: استخدم ملف`Group`ممتلكات`Revision` للتحقق مما إذا كانت المراجعة تنتمي إلى مجموعة. إذا كان`Group` الملكية`null`، فهذا يعني أن المراجعة لا تنتمي إلى أي مجموعة.
 
 ```csharp
 if (revision.Group != null)

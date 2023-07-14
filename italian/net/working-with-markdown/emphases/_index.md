@@ -1,7 +1,7 @@
 ---
 title: Enfasi
 linktitle: Enfasi
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare le sottolineature (grassetto e corsivo) con Aspose.Words per la guida passo-passo .NET.
 type: docs
 weight: 10

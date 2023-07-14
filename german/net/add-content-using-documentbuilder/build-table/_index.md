@@ -1,7 +1,7 @@
 ---
 title: Tabelle erstellen
 linktitle: Tabelle erstellen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument erstellen.
 type: docs
 weight: 10

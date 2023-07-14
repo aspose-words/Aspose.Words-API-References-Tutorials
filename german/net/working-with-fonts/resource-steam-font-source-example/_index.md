@@ -1,7 +1,7 @@
 ---
 title: Beispiel für eine Quelle einer Steam-Schriftart
 linktitle: Beispiel für eine Quelle einer Steam-Schriftart
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Resource Stream Font Source verwenden, um benutzerdefinierte Schriftarten in Aspose.Words für .NET zu laden.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ### Beispielquellcode für Resource Steam Font Source Beispiel mit Aspose.Words für .NET 
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

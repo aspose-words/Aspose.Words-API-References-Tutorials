@@ -1,7 +1,7 @@
 ---
 title: Standardinstanz der Schriftarteinstellungen
 linktitle: Standardinstanz der Schriftarteinstellungen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Standardschriftarteinstellungen in einem Word-Dokument konfigurieren.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Beispielquellcode für die Standardinstanz der Schriftarteinstellungen mit Aspose.Words für .NET 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -76,11 +76,11 @@ In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET Standar
 
 #### F: Kann ich die Standardschriftgröße in Aspose.Words angeben?
 
- A: Ja, Sie können die Standardschriftgröße in Aspose.Words mithilfe von festlegen`DefaultFontSize` Eigentum der`FontSettings` Klasse. Sie können die gewünschte Punktgröße einstellen.
+ A: Ja, Sie können die Standardschriftgröße in Aspose.Words mithilfe von festlegen`DefaultFontSize`Eigentum der`FontSettings` Klasse. Sie können die gewünschte Punktgröße einstellen.
 
 #### F: Ist es möglich, die Standardschriftfarbe in Aspose.Words festzulegen?
 
- A: Ja, Sie können die Standardschriftfarbe in Aspose.Words mithilfe von festlegen`DefaultColor` Eigentum der`FontSettings` Klasse. Sie können die Farbe mithilfe von RGB-Werten oder vordefinierten Namen angeben.
+ A: Ja, Sie können die Standardschriftfarbe in Aspose.Words mithilfe von festlegen`DefaultColor`Eigentum der`FontSettings` Klasse. Sie können die Farbe mithilfe von RGB-Werten oder vordefinierten Namen angeben.
 
 #### F: Gilt die Standardschriftart für alle Dokumente?
 

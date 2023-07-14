@@ -1,7 +1,7 @@
 ---
 title: Hämta önskad breddtyp
 linktitle: Hämta önskad breddtyp
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du hämtar typen och önskat breddvärde för en cell i en Word-tabell med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ den här handledningen kommer vi att lära oss hur du hämtar den föredragna br
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Ladda dokumentet
-För att börja arbeta med dokumentet, följ dessa steg:
+Följ dessa steg för att starta ordbehandling med dokumentet:
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -50,7 +50,7 @@ Här använder vi dokumentet för att hämta den första tabellen, sedan aktiver
 ### Exempel på källkod för Hämta önskad breddtyp med Aspose.Words för .NET 
 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

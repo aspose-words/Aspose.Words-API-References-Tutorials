@@ -1,14 +1,14 @@
 ---
 title: Charger le PDF crypté
 linktitle: Charger le PDF crypté
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour charger un PDF crypté à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 
-Lorsque vous travaillez avec des documents PDF dans votre application .NET, il peut être nécessaire de charger des fichiers PDF protégés par un mot de passe. Aspose.Words pour .NET est une bibliothèque puissante qui fournit des fonctionnalités pour le chargement de documents PDF cryptés. Dans cet article, nous allons vous guider étape par étape pour comprendre et utiliser cette fonctionnalité.
+Lors du traitement de texte avec des documents PDF dans votre application .NET, il peut être nécessaire de charger des fichiers PDF protégés par un mot de passe. Aspose.Words pour .NET est une bibliothèque puissante qui fournit des fonctionnalités pour le chargement de documents PDF cryptés. Dans cet article, nous allons vous guider étape par étape pour comprendre et utiliser cette fonctionnalité.
 
 ## Comprendre la fonctionnalité de chargement de PDF crypté
 
@@ -85,6 +85,6 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## Conclusion
 
-Dans cet article, nous avons exploré comment utiliser la fonction Charger un PDF crypté d'Aspose.Words pour .NET. Vous avez appris à télécharger des fichiers PDF cryptés, à crypter un document PDF, à télécharger un PDF crypté avec un mot de passe et à générer une sortie au format Markdown. Cette fonctionnalité est extrêmement utile lorsque vous travaillez avec des documents PDF sécurisés.
+Dans cet article, nous avons exploré comment utiliser la fonction Charger un PDF crypté d'Aspose.Words pour .NET. Vous avez appris à télécharger des fichiers PDF cryptés, à crypter un document PDF, à télécharger un PDF crypté avec un mot de passe et à générer une sortie au format Markdown. Cette fonctionnalité est extrêmement utile lors du traitement de texte avec des documents PDF sécurisés.
 
 

@@ -1,7 +1,7 @@
 ---
 title: Rasterize Transformed Elements
 linktitle: Rasterize Transformed Elements
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to disable rasterization of transformed elements when converting to PCL format with Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words for .NET is a powerful library for creating, manipulating and conve
 
 ## Understanding the Aspose.Words library
 
-Before diving into the code, it's important to understand the Aspose.Words library for .NET. Aspose.Words is a popular library that makes working with Word documents easy and efficient. It offers a wide range of features for creating, editing, and converting Word documents, including support for rasterizing transformed elements during conversion.
+Before diving into the code, it's important to understand the Aspose.Words library for .NET. Aspose.Words is a popular library that makes Words Processing with Word documents easy and efficient. It offers a wide range of features for creating, editing, and converting Word documents, including support for rasterizing transformed elements during conversion.
 
 ## Loading the Word document
 

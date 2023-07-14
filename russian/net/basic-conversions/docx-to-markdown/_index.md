@@ -1,7 +1,7 @@
 ---
 title: Преобразование файла Docx в Markdown
 linktitle: Преобразование файла Docx в Markdown
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как конвертировать документы Word из формата Docx в формат Markdown с помощью Aspose.Words для .NET. Пошаговое руководство с примером исходного кода.
 type: docs
 weight: 10

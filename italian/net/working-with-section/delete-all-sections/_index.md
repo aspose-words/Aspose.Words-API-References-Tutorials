@@ -1,7 +1,7 @@
 ---
 title: Elimina tutte le sezioni
 linktitle: Elimina tutte le sezioni
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questo tutorial, scopri come rimuovere tutte le sezioni da un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

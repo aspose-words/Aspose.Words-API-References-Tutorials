@@ -1,7 +1,7 @@
 ---
 title: Dokumenttitel in der Titelleiste des Fensters anzeigen
 linktitle: Dokumenttitel in der Titelleiste des Fensters anzeigen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie beim Konvertieren in PDF mit Aspose.Words für .NET den Dokumenttitel in der Titelleiste des Fensters anzeigen.
 type: docs
 weight: 10

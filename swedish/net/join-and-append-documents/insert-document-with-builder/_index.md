@@ -1,7 +1,7 @@
 ---
 title: Infoga dokument med Builder
 linktitle: Infoga dokument med Builder
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar ett dokument i slutet av ett annat dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -67,7 +67,7 @@ Detta slutför implementeringen av att infoga ett dokument i ett annat dokument 
 ### Exempel på källkod för Infoga dokument med Builder med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

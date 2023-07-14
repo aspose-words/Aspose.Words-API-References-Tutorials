@@ -1,7 +1,7 @@
 ---
 title: Direzione del testo del documento
 linktitle: Direzione del testo del documento
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come specificare la direzione del testo nei tuoi documenti con Aspose.Words per .NET. Migliora la visualizzazione per le lingue da destra a sinistra.
 type: docs
 weight: 10
@@ -81,7 +81,7 @@ Questa funzione è essenziale per garantire che il testo venga visualizzato corr
 
 Con Aspose.Words, puoi facilmente manipolare la direzione del testo nei tuoi documenti, fornendo un'esperienza di lettura fluida e intuitiva per gli utenti.
 
-È importante notare che questa funzione è particolarmente utile quando si lavora con lingue che richiedono una specifica direzione del testo. Aspose.Words semplifica questo compito fornendo potenti strumenti per gestire la direzione del testo nei tuoi documenti.
+È importante notare che questa funzione è particolarmente utile durante l'elaborazione di testi con lingue che richiedono una specifica direzione del testo. Aspose.Words semplifica questo compito fornendo potenti strumenti per gestire la direzione del testo nei tuoi documenti.
 
 Ricorda di utilizzare le opzioni di caricamento appropriate, come l'impostazione della direzione automatica del testo, per ottenere i risultati desiderati nei tuoi documenti.
 

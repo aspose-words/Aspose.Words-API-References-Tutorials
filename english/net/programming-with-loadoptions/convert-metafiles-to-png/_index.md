@@ -1,13 +1,13 @@
 ---
 title: Convert Metafiles To Png
 linktitle: Convert Metafiles To Png
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to convert metafiles to PNG images when uploading documents with Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /net/programming-with-loadoptions/convert-metafiles-to-png/
 ---
-When working with documents in a C# application, it may be necessary to convert metafiles to PNG images for better compatibility and accurate rendering. With the Aspose.Words library for .NET, you can easily convert metafiles to PNG while loading a document. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a document with converting metafiles to PNG using the LoadOptions load options.
+When Words Processing with documents in a C# application, it may be necessary to convert metafiles to PNG images for better compatibility and accurate rendering. With the Aspose.Words library for .NET, you can easily convert metafiles to PNG while loading a document. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a document with converting metafiles to PNG using the LoadOptions load options.
 
 ## Understanding the Aspose.Words library
 

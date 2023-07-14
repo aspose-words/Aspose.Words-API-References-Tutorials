@@ -1,7 +1,7 @@
 ---
 title: Setext Rubrik
 linktitle: Setext Rubrik
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du använder Setext-rubriker för att formatera dina dokument med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10

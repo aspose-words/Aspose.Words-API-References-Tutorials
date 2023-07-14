@@ -1,7 +1,7 @@
 ---
 title: Accepter les révisions
 linktitle: Accepter les révisions
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à accepter les révisions d'un document Word à l'aide d'Aspose.Words pour .NET
 type: docs
 weight: 10

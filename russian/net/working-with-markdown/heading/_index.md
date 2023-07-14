@@ -1,7 +1,7 @@
 ---
 title: Заголовок
 linktitle: Заголовок
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как использовать заголовок с Aspose.Words для .NET. Пошаговое руководство.
 type: docs
 weight: 10

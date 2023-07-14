@@ -1,7 +1,7 @@
 ---
 title: Barré
 linktitle: Barré
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à appliquer le style de texte barré avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Étape 2 : Appliquer le style de texte barré
 
- Nous allons activer le style de texte barré en définissant le`StrikeThrough` propriété de la`Font` s'opposer à`true`.
+ Nous allons activer le style de texte barré en définissant le`StrikeThrough`propriété de la`Font` s'opposer à`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
@@ -53,7 +53,7 @@ Félicitation ! Vous avez maintenant appris à appliquer le style de texte barr�
 
 #### Q : Comment puis-je ajouter le texte barré dans Aspose.Words ?
 
- R : Pour ajouter le texte barré dans Aspose.Words, vous pouvez utiliser le`Font.StrikeThrough` propriété de la`Run`objet. Vous pouvez définir cette propriété sur`true` pour ajouter du texte barré à un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.StrikeThrough=true` pour ajouter le texte barré dans le`Run` objet.
+ R : Pour ajouter le texte barré dans Aspose.Words, vous pouvez utiliser le`Font.StrikeThrough`propriété de la`Run`objet. Vous pouvez définir cette propriété sur`true` pour ajouter du texte barré à un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.StrikeThrough=true` pour ajouter le texte barré dans le`Run` objet.
 
 #### Q : Est-il possible d'ajouter le texte barré à plusieurs parties de texte dans le même paragraphe ?
 
@@ -61,4 +61,4 @@ Félicitation ! Vous avez maintenant appris à appliquer le style de texte barr�
 
 #### Q : Puis-je ajouter du texte barré au texte qui se trouve dans un tableau ou une cellule dans Aspose.Words ?
 
- R : Oui, vous pouvez ajouter du texte barré au texte qui se trouve dans un tableau ou une cellule dans Aspose.Words. Vous pouvez accéder directement à la cellule ou au paragraphe de votre choix à l'aide des méthodes appropriées, puis appliquer la mise en forme du texte barré à l'aide de la`Font.StrikeThrough` propriété de la`Run` ou`Paragraph` objet.
+ R : Oui, vous pouvez ajouter du texte barré au texte qui se trouve dans un tableau ou une cellule dans Aspose.Words. Vous pouvez accéder directement à la cellule ou au paragraphe de votre choix à l'aide des méthodes appropriées, puis appliquer la mise en forme du texte barré à l'aide de la`Font.StrikeThrough`propriété de la`Run` ou`Paragraph` objet.

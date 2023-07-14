@@ -1,14 +1,14 @@
 ---
 title: Devolución de llamada de advertencia
 linktitle: Devolución de llamada de advertencia
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a manejar las advertencias al cargar un documento de Word usando la función de devolución de llamada con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/warning-callback/
 ---
 
-Cuando se trabaja con documentos de Word en una aplicación de C#, puede ser útil tener en cuenta las advertencias que se emiten al cargar el documento. Con la biblioteca Aspose.Words para .NET, puede especificar fácilmente una función de devolución de llamada para manejar las advertencias mientras carga el documento utilizando las opciones de carga de LoadOptions. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento usando una función de devolución de llamada para advertencias usando las opciones de carga de LoadOptions.
+Al procesar textos con documentos de Word en una aplicación de C#, puede ser útil tener en cuenta las advertencias emitidas al cargar el documento. Con la biblioteca Aspose.Words para .NET, puede especificar fácilmente una función de devolución de llamada para manejar las advertencias mientras carga el documento utilizando las opciones de carga de LoadOptions. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento usando una función de devolución de llamada para advertencias usando las opciones de carga de LoadOptions.
 
 ## Comprender la biblioteca Aspose.Words
 

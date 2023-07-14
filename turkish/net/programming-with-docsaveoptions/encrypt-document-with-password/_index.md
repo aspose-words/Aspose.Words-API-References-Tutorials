@@ -1,13 +1,13 @@
 ---
 title: Belgeyi Şifreyle Şifrele
 linktitle: Belgeyi Şifreyle Şifrele
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak belgeleri bir parolayla nasıl şifreleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-Bir C# uygulamasındaki dosyalarla çalışırken belge güvenliği çok önemlidir. .NET için Aspose.Words kitaplığı ile belgelerinizi bir parola ile şifreleyerek kolayca koruyabilirsiniz. Bu adım adım kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak bir belgeyi şifrelemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+Bir C# uygulamasındaki dosyalarla Sözcük İşleme yaparken belge güvenliği çok önemlidir. .NET için Aspose.Words kitaplığı ile belgelerinizi bir parola ile şifreleyerek kolayca koruyabilirsiniz. Bu adım adım kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak bir belgeyi şifrelemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 
@@ -83,4 +83,4 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 ## Çözüm
 
-Bu kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak bir belgeyi şifre ile şifrelemek için Aspose.Words library for .NET'in nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Belgeyi bir parolayla şifrelemek, belgeyi işlerken gizliliğini ve güvenliğini garanti eder.
+Bu kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak bir belgeyi parolayla şifrelemek için Aspose.Words kitaplığının .NET için nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Belgeyi bir parolayla şifrelemek, belgeyi işlerken gizliliğini ve güvenliğini garanti eder.

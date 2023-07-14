@@ -1,7 +1,7 @@
 ---
 title: Настройка страницы документа
 linktitle: Настройка страницы документа
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по настройке макета документа с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

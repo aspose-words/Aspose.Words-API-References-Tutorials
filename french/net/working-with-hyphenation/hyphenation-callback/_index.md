@@ -1,7 +1,7 @@
 ---
 title: Rappel de césure
 linktitle: Rappel de césure
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser le rappel de césure dans Aspose.Words pour .NET pour gérer la césure des mots.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Document document = new Document(dataDir + "German text.docx");
 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 ```
 
-## Étape 3 : Gestion des erreurs de dictionnaire manquantes
+## Étape 3 : Gérer les erreurs de dictionnaire manquantes
 
 S'il manque un dictionnaire de césure, nous intercepterons l'exception correspondante et afficherons un message d'erreur :
 

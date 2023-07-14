@@ -1,7 +1,7 @@
 ---
 title: Eliminar contenido de la sección
 linktitle: Eliminar contenido de la sección
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda a eliminar contenido de una sección específica de un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A continuación, cargaremos el documento de Word en una instancia del`Document` clase. Accederemos a la primera sección del documento utilizando el índice 0.
 
 ```csharp
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Document.docx");
 
 // Accede a la sección
@@ -45,7 +45,7 @@ section.ClearContent();
 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -73,7 +73,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  R: Para cargar el documento de Word en una instancia del`Document` clase llamada`doc` y acceda a la primera sección del documento usando el índice 0, puede usar el siguiente código:
 
 ```csharp
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Document.docx");
 
 // Accede a la sección
@@ -82,7 +82,7 @@ Section section = doc.Sections[0];
 
 #### P: ¿Cómo elimino el contenido de la sección en Aspose.Words para .NET?
 
- R: Para borrar el contenido de la sección, puede utilizar la sección`ClearContent` método:
+ R: Para borrar el contenido de la sección, puede usar la sección`ClearContent` método:
 
 ```csharp
 section.ClearContent();

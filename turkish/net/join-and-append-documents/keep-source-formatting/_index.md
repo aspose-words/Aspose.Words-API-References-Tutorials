@@ -1,7 +1,7 @@
 ---
 title: Kaynak biçimlendirmesini koruyun
 linktitle: Kaynak biçimlendirmesini koruyun
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak orijinal biçimlendirmeyi korurken bir kaynak belgeyi hedef belgeye nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## 3. Adım: Kaynak belgeyi hedef belgeye ekleyin
 
- Kullan`AppendDocument` kaynak belgeyi eklemek için hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` kaynak belgenin orijinal biçimlendirmesini korumak için içe aktarma biçimi modu olarak.
+ Kullan`AppendDocument`kaynak belgeyi eklemek için hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` kaynak belgenin orijinal biçimlendirmesini korumak için içe aktarma biçimi modu olarak.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -42,7 +42,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 4. Adım: Değiştirilen belgeyi kaydedin
 
-Değiştirilen belgeyi şunu kullanarak kaydedin:`Save` yöntemi`Document` nesne.
+ Değiştirilen belgeyi şunu kullanarak kaydedin:`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
@@ -53,7 +53,7 @@ Bu, Aspose.Words for .NET kullanarak orijinal biçimlendirmeyi korurken kaynak b
 ### Aspose.Words for .NET kullanarak Kaynak Biçimlendirmesini Koru için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();

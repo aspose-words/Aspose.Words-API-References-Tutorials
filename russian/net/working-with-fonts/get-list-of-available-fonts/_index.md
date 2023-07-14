@@ -1,7 +1,7 @@
 ---
 title: Получить список доступных шрифтов
 linktitle: Получить список доступных шрифтов
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого руководства вы узнаете, как получить список шрифтов, доступных в Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -56,7 +56,7 @@ Console.WriteLine("Path: " + fontInfo.FilePath);
 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

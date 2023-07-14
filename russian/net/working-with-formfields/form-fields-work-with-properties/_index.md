@@ -1,7 +1,7 @@
 ---
 title: Поля формы работают со свойствами
 linktitle: Поля формы работают со свойствами
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как работать со свойствами поля формы в документах Word, используя Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## Шаг 3: Работа со свойствами поля формы
+## Шаг 3: Обработка слов со свойствами поля формы
 
  Вы можете манипулировать различными свойствами поля формы в зависимости от его типа. В этом примере мы проверяем, имеет ли поле формы тип`FieldType.FieldFormTextInput` и установить его`Result` собственности соответственно:
 

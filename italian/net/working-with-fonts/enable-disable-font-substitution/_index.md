@@ -1,7 +1,7 @@
 ---
 title: Abilita Disabilita sostituzione carattere
 linktitle: Abilita Disabilita sostituzione carattere
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questo tutorial, scopri come abilitare o disabilitare la sostituzione dei caratteri in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Successivamente, caricheremo il documento Word di cui desideri eseguire il rendering e creeremo un'istanza del file`FontSettings` class per gestire le impostazioni dei caratteri. Imposteremo l'override del carattere predefinito specificando il nome del carattere in`DefaultFontName` e disabilitare l'override delle informazioni sui caratteri con`Enabled` impostato`false`.
 
 ```csharp
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Rendering.docx");
 
 // Configura le impostazioni dei caratteri
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -1,7 +1,7 @@
 ---
 title: Установить параметры страницы и форматирование раздела
 linktitle: Установить параметры страницы и форматирование раздела
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по настройке макета документа и форматирования разделов с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
