@@ -1,13 +1,12 @@
 ---
-title: Insert Floating Image
-linktitle: Insert Floating Image
+title: Insert Floating Image In Word Document
+linktitle: Insert Floating Image In Word Document
 second_title: Aspose.Words Document Processing API
 description: Learn how to insert floating images in Word documents using Aspose.Words for .NET. Step-by-step guide.
 type: docs
 weight: 10
 url: /net/add-content-using-documentbuilder/insert-floating-image/
 ---
-
 In this comprehensive example, you will learn how to insert a floating image into a Word document using Aspose.Words for .NET. We will guide you through the process and provide you with the necessary C# code snippets. By the end of this guide, you will be able to add images with customizable positioning and wrapping options to your documents.
 
 ## Prerequisites
@@ -68,4 +67,25 @@ Remember to adjust the code according to your specific requirements, including t
 ## Conclusion
 Congratulations! You have successfully learned how to insert a floating image into a Word document using Aspose.Words for .NET. By following the step-by-step guide and utilizing the provided source code, you can now enhance your documents with visually appealing and customizable floating images.
 
+### FAQs for insert floating image in word document
+
+#### Q: Can I insert multiple floating images in a single document?
+
+A: Certainly! You can insert as many floating images as needed in a Word document using Aspose.Words for .NET. Simply repeat the insertion process to add multiple visually appealing images.
+
+#### Q: What wrapping options are available for the floating image?
+
+A: Aspose.Words for .NET provides various wrapping options for floating images, including Square, Tight, Through, TopBottom, and None. These options determine how the text interacts with the floating image.
+
+#### Q: Can I adjust the size of the floating image?
+
+A: Absolutely! You can specify the width and height of the floating image using the respective parameters in the InsertImage method. This allows you to control the dimensions of the image according to your design preferences.
+
+#### Q: Can I position the floating image relative to a specific element in the document?
+
+A: Yes, Aspose.Words for .NET allows you to position the floating image relative to specific elements, such as the margin, page, paragraph, or table. You can choose the appropriate relative horizontal and vertical position parameters to achieve the desired placement.
+
+#### Q: Is Aspose.Words for .NET suitable for both desktop and web applications?
+
+A: Yes, Aspose.Words for .NET is a versatile library suitable for both desktop and web applications. Whether you're building a Windows application or a web-based system, you can integrate the library effortlessly.
 
