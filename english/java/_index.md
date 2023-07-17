@@ -26,3 +26,5 @@ Here are some of the benefits of using Aspose.Words Java Document Processing tut
 Learn word processing with Aspose.Words for Java. Create, edit, and manipulate documents programmatically. Enhance your document processing skills today.
 ### [Table Processing](./table-processing/)
 Learn Powerful table processing API for Java developers using Aspose.Word for Java. Create, manipulate, and format tables in Word documents. Enhance your document processing applications today.
+### [Document Styling](./document-styling/)
+Master document styling with Aspose.Words for Java tutorials. Learn advanced formatting techniques for visually appealing and efficient documents. 
