@@ -24,7 +24,7 @@ Here are some of the key benefits of using Aspose.Words for Java:
 * Support for a wide range of document formats
 * High performance and scalability
 
-## Tutorials
+## Word Processing Tutorials
 
 ### [Generate Word Document](./generate-word-document/)
 

@@ -22,6 +22,6 @@ Once you've acquired the essential document styling skills, we will move on to m
 
 In these tutorials, we will not only focus on creating visually appealing documents but also on optimizing the styling process for efficiency. Aspose.Words for Java provides a wide range of APIs that allow developers to automate document styling tasks. You will learn how to apply styles programmatically, dynamically generate document layouts based on data, and implement conditional formatting to highlight specific content. By leveraging these efficient styling techniques, you can drastically reduce manual efforts and create dynamic, customized documents that cater to your specific document processing needs.
 
-## Tutorials
+## Document Styling Tutorials
 ### [Word Document Styling](./word-document-styling/)
 Learn how to style and process documents with Aspose.Words for Java! Create visually stunning outputs with source code examples. 

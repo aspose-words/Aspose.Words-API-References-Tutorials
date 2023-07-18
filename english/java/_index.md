@@ -21,10 +21,18 @@ Here are some of the benefits of using Aspose.Words Java Document Processing tut
 * **Solid foundation for robust and scalable document processing solutions:** The tutorials provide a solid foundation for building robust and scalable document processing solutions. This is because the tutorials cover the essential concepts of document processing, such as table processing, document merging, and watermarking.
 
 
-## Tutorials
+## Document Processing Tutorials
 ### [Word Processing](./word-processing/) 
 Learn word processing with Aspose.Words for Java. Create, edit, and manipulate documents programmatically. Enhance your document processing skills today.
 ### [Table Processing](./table-processing/)
 Learn Powerful table processing API for Java developers using Aspose.Word for Java. Create, manipulate, and format tables in Word documents. Enhance your document processing applications today.
 ### [Document Styling](./document-styling/)
 Master document styling with Aspose.Words for Java tutorials. Learn advanced formatting techniques for visually appealing and efficient documents. 
+### [Document Merging](./document-merging/)
+Unlock the potential of document merging in Java using Aspose.Words! Learn efficient document merging, word processing and document processing with detailed tutorials. 
+### [Document Converting](./document-converting/)
+Streamline document converting in Java with Aspose.Words! Learn comprehensive guides for document converting, word processing and document processing.
+### [Document Printing](./document-printing/)
+Master document printing with Aspose.Words for Java! Automate printing settings, optimize performance, and achieve professional results effortlessly.
+### [Document Rendering](./document-rendering/)
+Efficiently render Word documents to various formats in Java with Aspose.Words! Master document rendering for professional outputs.

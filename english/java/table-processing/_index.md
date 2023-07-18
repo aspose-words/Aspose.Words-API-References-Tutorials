@@ -23,7 +23,7 @@ Here are some of the benefits of using Aspose.Words for Java for table processin
 * High performance and scalability
 
 
-## Tutorials
+## Table Processing Tutorials
 
 ### [Add Table in Word](./add-table-in-word/)
 
