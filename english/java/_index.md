@@ -36,3 +36,9 @@ Streamline document converting in Java with Aspose.Words! Learn comprehensive gu
 Master document printing with Aspose.Words for Java! Automate printing settings, optimize performance, and achieve professional results effortlessly.
 ### [Document Rendering](./document-rendering/)
 Efficiently render Word documents to various formats in Java with Aspose.Words! Master document rendering for professional outputs.
+### [Document Security](./document-security/)
+Enhance document security with Aspose.Words for Java! Implement protection, encryption, and digital signatures for robust data safeguarding. 
+### [Document Splitting](./document-splitting/)
+Split documents with ease using Aspose.Words for Java! Efficiently divide large files based on page range, paragraph count, or custom criteria.
+### [Document Revision](./document-revision/)
+Streamline document revisions with Aspose.Words for Java! Track changes, manage version control, and automate revision tasks effortlessly. 
