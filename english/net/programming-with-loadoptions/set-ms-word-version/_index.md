@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /net/programming-with-loadoptions/set-ms-word-version/
 ---
-
 When Words Processing with Word documents in a C# application, it may be necessary to specify the version of Microsoft Word to use when loading the document. With the Aspose.Words library for .NET, you can easily set which version of MS Word to use using LoadOptions. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a document with a specified version of MS Word using LoadOptions load options.
 
 ## Understanding the Aspose.Words library
@@ -54,3 +53,25 @@ doc.Save(dataDir + "WorkingWithLoadOptions.SetMsWordVersion.docx");
 
 In this guide, we have explained how to upload a document specifying a specific version of MS Word using the Aspose.Words library for .NET. By following the provided steps and using the code C# source provided, you can easily apply this functionality in your C# application. Loading a document with a specified version of MS Word allows you to ensure proper compatibility and processing of the document in your application.
 
+
+### FAQ's
+
+#### Q: Why would I need to specify the version of MS Word when loading a document in a C# application?
+
+Specifying the version of MS Word ensures that the document is loaded and processed correctly, especially when dealing with specific formatting or features that may vary between different versions.
+
+#### Q: What versions of MS Word does Aspose.Words support?
+
+A: Aspose.Words for .NET supports various versions of MS Word, including Word 97, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016, Word 2019, and more.
+
+#### Q: Can I load a document with a different version of MS Word than the one installed on my system?
+
+A: Yes, Aspose.Words allows you to specify a different version of MS Word when loading the document, ensuring compatibility even if the target system has a different MS Word version.
+
+#### Q: How does setting the MS Word version benefit my C# application?
+
+A: Setting the MS Word version ensures that the document is processed according to the intended formatting and features of that specific version, providing consistent output.
+
+#### Q: Is Aspose.Words limited to handling only DOCX documents?
+
+A: No, Aspose.Words supports various document formats, including DOC, RTF, HTML, PDF, and more, making it a versatile tool for handling different types of documents.
