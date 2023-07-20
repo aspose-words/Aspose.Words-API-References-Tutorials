@@ -114,7 +114,7 @@ A: The example source code demonstrates the use of the "Recognize And Substituti
 
 #### Q: Where can I find more information and examples on using regular expressions in Aspose.Words for .NET?
 
-A: For more information and examples on using regular expressions in Aspose.Words for .NET, you can refer to the official documentation and the Aspose.Words GitHub repository. The documentation provides detailed explanations and code examples for various scenarios involving regular expressions and text manipulation in Aspose.Words for .NET.
+A: For more information and examples on using regular expressions in Aspose.Words for .NET, you can refer to the [Aspose.Words for .NET API references](https://reference.aspose.com/words/net/). The documentation provides detailed explanations and code examples for various scenarios involving regular expressions and text manipulation in Aspose.Words for .NET.
 
 #### Q: Can I manipulate other aspects of the document based on the captured groups during text search and replace?
 

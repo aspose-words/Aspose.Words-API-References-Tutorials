@@ -88,4 +88,4 @@ A: The Untangle function presented in this article is specifically designed to u
 
 #### Q: Are there any other methods to untangle nested bookmarks in a Word document using Aspose.Words for .NET?
 
-A: The method presented in this article is a common method for untangling nested bookmarks in adjacent table rows. However, there may be other approaches or techniques depending on the specific needs of your project. You can check out the official Aspose.Words documentation to further explore the available features.
+A: The method presented in this article is a common method for untangling nested bookmarks in adjacent table rows. However, there may be other approaches or techniques depending on the specific needs of your project. You can check out the [Aspose.Words for .NET API references](https://reference.aspose.com/words/net/) to further explore the available features.

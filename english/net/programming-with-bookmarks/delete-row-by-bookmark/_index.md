@@ -61,7 +61,7 @@ A: If the specified bookmark doesn't exist in the document, the code snippet wil
 
 #### Q: Is Aspose.Words library free to use?
 
-A: Aspose.Words library is a commercial library, and you may require a valid license to use it in your projects. You can visit the official Aspose website to learn more about their licensing options and pricing.
+A: Aspose.Words library is a commercial library, and you may require a valid license to use it in your projects. You can visit the [Aspose.Words for .NET API references](https://reference.aspose.com/words/net/) to learn more about their licensing options and pricing.
 
 #### Q: Can I delete rows from a table in a specific section of the Word document?
 

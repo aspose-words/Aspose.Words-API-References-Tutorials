@@ -170,7 +170,7 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### Q: Is the Aspose.Words library free?
 
-A: The Aspose.Words library is a commercial library and requires a valid license to use in your projects. You can check Aspose's official website to learn more about licensing options and pricing.
+A: The Aspose.Words library is a commercial library and requires a valid license to use in your projects. You can check [Aspose.Words for .NET API references](https://reference.aspose.com/words/net/) to learn more about licensing options and pricing.
 
 #### Q: Are there other libraries available for Words Processing with Word documents in .NET?
 

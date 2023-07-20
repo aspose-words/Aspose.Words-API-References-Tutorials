@@ -10,7 +10,7 @@ url: /net/basic-conversions/pdf-to-jpeg/
 
 In this step-by-step tutorial, we will guide you on how to use Aspose.Words for .NET to convert a PDF document to JPEG images. We will explain the provided C# source code and show you how to implement it in your own projects.
 
-To get started, make sure you have Aspose.Words for .NET installed and set up in your development environment. If you haven't done so, download and install the library from the official website.
+To get started, make sure you have Aspose.Words for .NET installed and set up in your development environment. If you haven't done so, download and install the library from [Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Step 1: Initializing the Document Object
 
