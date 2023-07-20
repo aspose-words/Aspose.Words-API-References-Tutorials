@@ -10,17 +10,17 @@ url: /fr/net/working-with-hyphenation/hyphenation-callback/
 
 Dans ce tutoriel étape par étape, nous allons vous montrer comment utiliser la fonction de rappel de césure dans Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas déjà fait, téléchargez et installez la bibliothèque à partir du site officiel.
+ Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas déjà fait, téléchargez et installez la bibliothèque à partir de[Aspose.Releases] https://releases.aspose.com/words/net/.
 
 ## Étape 1 : Enregistrer le rappel de césure
 
- Tout d'abord, nous allons enregistrer le rappel de césure à l'aide d'un`CustomHyphenationCallback` classe. Cela nous permettra de gérer la césure des mots selon nos propres règles :
+Tout d'abord, nous allons enregistrer le rappel de césure à l'aide d'un`CustomHyphenationCallback` classe. Cela nous permettra de gérer la césure des mots selon nos propres règles :
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- Assurez-vous d'avoir implémenté le`CustomHyphenationCallback`classe selon vos besoins spécifiques.
+ Assurez-vous d'avoir implémenté le`CustomHyphenationCallback` classe selon vos besoins spécifiques.
 
 ## Étape 2 : Chargement du document et application de la césure
 
@@ -105,4 +105,4 @@ R : L'utilisation d'un booster de syllabation peut être utile dans plusieurs s
 
 #### Q : Comment puis-je tester la syllabisation personnalisée avec un rappel de syllabation dans Aspose.Words ?
 
-R : Pour tester la syllabation personnalisée avec un rappel de syllabation dans Aspose.Words, vous pouvez créer un document de test contenant des mots pour lesquels vous souhaitez appliquer des règles de syllabation personnalisées. Ensuite, vous pouvez définir votre rappel de syllabisation personnalisé, appeler le`Document.Range.Replace()` méthode pour remplacer les mots dans le document, et utilisez la méthode`Hyphenate()` méthode de la`Hyphenation` class pour obtenir la syllabation des mots. Vous pouvez ensuite formater les mots syllabés selon vos besoins, par exemple en ajoutant des tirets entre les syllabes.
+R : Pour tester la syllabation personnalisée avec un rappel de syllabation dans Aspose.Words, vous pouvez créer un document de test contenant des mots pour lesquels vous souhaitez appliquer des règles de syllabation personnalisées. Ensuite, vous pouvez définir votre rappel de syllabisation personnalisé, appeler le`Document.Range.Replace()` méthode pour remplacer les mots dans le document, et utilisez la méthode`Hyphenate()` méthode de la`Hyphenation` class pour obtenir la syllabation des mots. Vous pouvez ensuite mettre en forme les mots syllabés selon vos besoins, par exemple en ajoutant des traits d'union entre les syllabes.

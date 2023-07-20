@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/working-with-section/sections-access-by-index/
 ---
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET über einen Index auf Abschnitte eines Word-Dokuments zugreifen. Durch den Indexzugriff auf Abschnitte können Sie auf einen bestimmten Abschnitt in Ihrem Dokument zielen und dessen Einstellungen ändern. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET über einen Index auf Abschnitte eines Word-Dokuments zugreifen. Durch den Zugriff auf Abschnitte über den Index können Sie einen bestimmten Abschnitt in Ihrem Dokument gezielt auswählen und dessen Einstellungen ändern. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
 
 ## Voraussetzungen
 Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:

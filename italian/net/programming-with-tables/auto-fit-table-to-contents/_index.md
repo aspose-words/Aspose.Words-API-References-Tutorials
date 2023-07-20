@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 
-In questo tutorial impareremo come utilizzare Aspose.Words per .NET per adattare automaticamente una tabella al suo contenuto in un documento Word utilizzando C#. Passeremo attraverso il processo passo-passo di scrittura del codice per ottenere questa funzionalità. Alla fine di questo tutorial, avrai una chiara comprensione di come manipolare le tabelle nei documenti di Word a livello di programmazione.
+In questo tutorial impareremo come utilizzare Aspose.Words per .NET per adattare automaticamente una tabella al suo contenuto in un documento Word utilizzando C#. Passeremo attraverso il processo passo-passo di scrittura del codice per ottenere questa funzionalità. Alla fine di questo tutorial, avrai una chiara comprensione di come manipolare le tabelle nei documenti di Word a livello di codice.
 
 ## Passaggio 1: impostare il progetto
 1. Avvia Visual Studio e crea un nuovo progetto C#.

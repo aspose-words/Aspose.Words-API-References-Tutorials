@@ -14,7 +14,7 @@ url: /ar/net/join-and-append-documents/ignore-header-footer/
 
 تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
+- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases] https://releases.aspose.com/words/net/ أو استخدم مدير حزمة NuGet لتثبيته.
 - مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
 
 ## الخطوة 2: افتح مستندات المصدر والوجهة
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: إعداد خيارات تنسيق الاستيراد
 
- قم بإنشاء مثيل لـ`ImportFormatOptions`فئة وضبط`IgnoreHeaderFooter` ملكية ل`false`. يضمن ذلك تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
+ قم بإنشاء مثيل لـ`ImportFormatOptions`فئة وضبط`IgnoreHeaderFooter` الملكية ل`false`. يضمن ذلك تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };

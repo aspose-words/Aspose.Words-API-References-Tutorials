@@ -14,13 +14,13 @@ Dans ces didacticiels, vous apprendrez à utiliser LoadOptions pour charger des 
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Mettre à jour les champs modifiés](./update-dirty-fields/) | Apprenez à charger un document Word en mettant à jour les champs modifiés avec Aspose.Words pour .NET. |
-| [Charger le document chiffré](./load-encrypted-document/) | Apprenez à charger et enregistrer des documents chiffrés avec Aspose.Words pour .NET. |
+| [Mettre à jour les champs sales dans le document Word](./update-dirty-fields/) | Apprenez à charger un document Word en mettant à jour les champs modifiés avec Aspose.Words pour .NET. |
+| [Charger le document crypté dans Word](./load-encrypted-document/) | Apprenez à charger et à enregistrer des documents cryptés dans Word avec Aspose.Words pour .NET. |
 | [Convertir la forme en mathématiques de bureau](./convert-shape-to-office-math/) | Apprenez à convertir des formes en formules mathématiques Office lors du téléchargement de documents avec Aspose.Words pour .NET. |
 | [Définir la version de Mme Word](./set-ms-word-version/) | Apprenez à charger un document avec une version spécifiée de MS Word à l'aide d'Aspose.Words pour .NET. |
-| [Utiliser le dossier temporaire](./use-temp-folder/) | Apprenez à utiliser un dossier temporaire lors du téléchargement de documents avec Aspose.Words pour .NET. |
-| [Rappel d'avertissement](./warning-callback/) | Apprenez à gérer les avertissements lors du chargement d'un document Word à l'aide de la fonctionnalité de rappel avec Aspose.Words pour .NET. |
-| [Charger avec encodage](./load-with-encoding/) | Apprenez à charger un document avec un encodage spécifié à l'aide d'Aspose.Words pour .NET. |
+| [Utiliser le dossier temporaire dans le document Word](./use-temp-folder/) | Apprenez à utiliser un dossier temporaire lors du téléchargement de documents avec Aspose.Words pour .NET. |
+| [Rappel d'avertissement dans un document Word](./warning-callback/) | Apprenez à gérer les avertissements lors du chargement d'un document Word à l'aide de la fonctionnalité de rappel avec Aspose.Words pour .NET. |
+| [Charger avec l'encodage dans le document Word](./load-with-encoding/) | Apprenez à charger un document avec un encodage spécifié dans un document Word à l'aide d'Aspose.Words pour .NET. |
 | [Ignorer les images PDF](./skip-pdf-images/) | Apprenez à charger un document PDF sans charger les images PDF avec Aspose.Words pour .NET. |
 | [Convertir les métafichiers en Png](./convert-metafiles-to-png/) | Apprenez à convertir des métafichiers en images PNG lors du téléchargement de documents avec Aspose.Words pour .NET. |
-| [Chm de charge](./load-chm/) | Apprenez à charger des fichiers CHM avec Aspose.Words pour .NET. |
+| [Charger des fichiers Chm dans un document Word](./load-chm/) | Apprenez à charger des fichiers CHM dans un document Word avec Aspose.Words pour .NET. |

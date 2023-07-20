@@ -84,7 +84,7 @@ When you open or save a document with Aspose.Words, the digital signatures prese
 
 #### What other features of Aspose.Words for .NET can be used in conjunction with digital signature detection?
 
-Aspose.Words for .NET offers a variety of features for processing and manipulating Word documents. In addition to detecting digital signatures, you can use the library to extract text, images, or metadata from documents, apply formatting changes, merge documents, convert documents to different formats, and much more . You can explore the official documentation of Aspose.Words for .NET to discover all the features available and find the ones that best suit your needs.
+Aspose.Words for .NET offers a variety of features for processing and manipulating Word documents. In addition to detecting digital signatures, you can use the library to extract text, images, or metadata from documents, apply formatting changes, merge documents, convert documents to different formats, and much more . You can explore the [Aspose.Words for .NET API references](https://reference.aspose.com/words/net/) to discover all the features available and find the ones that best suit your needs.
 
 #### What are the limitations of detecting digital signatures with Aspose.Words for .NET?
 

@@ -14,7 +14,7 @@ Denna handledning visar hur man lägger till ett källdokument till ett måldoku
 
 Se till att du har följande förutsättningar:
 
-- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
 - En dokumentkatalogsökväg där käll- och måldokumenten kommer att sparas.
 
 ## Steg 2: Skapa mål- och källdokument

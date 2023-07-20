@@ -77,11 +77,11 @@ Vous pouvez désormais appliquer en toute confiance une licence à partir d'un f
 
 #### Q : Où puis-je trouver la documentation de licence pour Aspose.Words pour .NET ?
 
-R : Vous pouvez trouver la documentation de licence pour Aspose. Words for .NET sur le site officiel de documentation d'Aspose. La documentation fournit des instructions détaillées et des exemples d'application de licences, y compris l'application de licences à partir de fichiers.
+ R : Vous pouvez trouver la documentation de licence pour Aspose. Mots pour .NET sur le[Références API](https://reference.aspose.com/words/net/). La documentation fournit des instructions détaillées et des exemples d'application de licences, y compris l'application de licences à partir de fichiers.
 
 #### Q : Quels formats de fichiers Aspose.Words pour .NET prend-il en charge pour les fichiers de licence ?
 
-: Aspose.Words pour .NET prend en charge les fichiers de licence au format XML. Assurez-vous que votre fichier de licence est au format XML approprié reconnu par Aspose.Words pour .NET.
+R : Aspose.Words pour .NET prend en charge les fichiers de licence au format XML. Assurez-vous que votre fichier de licence est au format XML approprié reconnu par Aspose.Words pour .NET.
 
 #### Q : Puis-je appliquer une licence par programmation dans Aspose.Words pour .NET ?
 

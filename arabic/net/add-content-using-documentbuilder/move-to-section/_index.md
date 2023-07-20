@@ -1,14 +1,13 @@
 ---
-title: انتقل إلى القسم
-linktitle: انتقل إلى القسم
+title: الانتقال إلى قسم في مستند Word
+linktitle: الانتقال إلى قسم في مستند Word
 second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: دليل خطوة بخطوة لاستخدام Move To Section في Aspose.Words for .NET يعالج الأقسام والفقرات في مستندات Word.
+description: دليل خطوة بخطوة لاستخدام ميزة Move To Section في مستند Word في Aspose.Words for .NET يتعامل مع الأقسام والفقرات في مستندات Word.
 type: docs
 weight: 10
 url: /ar/net/add-content-using-documentbuilder/move-to-section/
 ---
-
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة Move To Section في Aspose.Words for .NET خطوة بخطوة باستخدام كود المصدر C # المقدم. تتيح لك هذه الميزة التنقل والتعامل مع الأقسام المختلفة داخل مستند Word. اتبع الخطوات أدناه لدمج هذه الوظيفة في تطبيقك.
+في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة Move To Section في مستند Word في Aspose.Words for .NET خطوة بخطوة باستخدام كود المصدر C # المقدم. تتيح لك هذه الميزة التنقل والتعامل مع الأقسام المختلفة داخل مستند Word. اتبع الخطوات أدناه لدمج هذه الوظيفة في تطبيقك.
 
 ## الخطوة 1: قم بإنشاء مستند جديد وإضافة قسم
 
@@ -43,7 +42,7 @@ ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 Assert.AreEqual(22, paragraphs.Count);
 ```
 
-يقوم هذا الرمز بتحميل المستند المحدد (استبدل "MyDir +" Paragraphs.docx""بالمسار الفعلي إلى المستند الخاص بك) والوصول إلى مجموعة الفقرات من القسم الأول من المستند. الخط`Assert.AreEqual(22, paragraphs.Count);` يتحقق من أن المستند يحتوي على 22 فقرة.
+يقوم هذا الرمز بتحميل المستند المحدد (استبدل "MyDir +" Paragraphs.docx"" بالمسار الفعلي إلى المستند الخاص بك) والوصول إلى مجموعة الفقرات من القسم الأول من المستند. الخط`Assert.AreEqual(22, paragraphs.Count);` يتحقق من أن المستند يحتوي على 22 فقرة.
 
 ## الخطوة 4: إنشاء DocumentBuilder لمستند
 
@@ -84,12 +83,12 @@ doc = new Document(MyDir + "Paragraphs.docx");
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 Assert.AreEqual(22, paragraphs.Count);
 
-//عندما نقوم بإنشاء DocumentBuilder لمستند ، يكون المؤشر في بداية المستند افتراضيًا ،
+// عندما نقوم بإنشاء DocumentBuilder لمستند ، يكون المؤشر في بداية المستند افتراضيًا ،
 // وسيتم إضافة أي محتوى مضاف بواسطة DocumentBuilder إلى المستند.
 builder = new DocumentBuilder(doc);
 Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 
-// يمكنك تحريك المؤشر إلى أي موضع في الفقرة.
+//يمكنك تحريك المؤشر إلى أي موضع في الفقرة.
 builder.MoveToParagraph(2, 10);
 Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
 builder.Writeln("This is a new third paragraph. ");
@@ -98,3 +97,28 @@ Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 
 هذا كل شئ ! لقد فهمت الآن كيفية استخدام وظيفة الانتقال إلى قسم Aspose.Words for .NET باستخدام كود المصدر المقدم. يمكنك الآن دمج هذه الوظيفة في التطبيق الخاص بك ومعالجة أقسام وفقرات مستندات Word بشكل ديناميكي.
 
+## خاتمة
+
+في هذا المثال ، استكشفنا ميزة Move To Section في Aspose.Words for .NET. لقد تعلمنا كيفية إنشاء مستند جديد وإضافة أقسام إليه واستخدام فئة DocumentBuilder للتنقل إلى أقسام وفقرات محددة داخل مستند Word. توفر هذه الميزة للمطورين أدوات قوية للتعامل مع محتوى وهيكل مستندات Word برمجيًا باستخدام Aspose.Words for .NET.
+
+### الأسئلة الشائعة للانتقال إلى قسم في مستند Word
+
+#### س: ما هو الغرض من ميزة "الانتقال إلى القسم" في Aspose.Words for .NET؟
+
+ج: تسمح ميزة Move To Section في Aspose.Words for .NET للمطورين بالانتقال إلى الأقسام المختلفة ومعالجتها داخل مستند Word برمجيًا. يوفر القدرة على إدراج المحتوى أو تعديله أو حذفه في أقسام معينة من المستند.
+
+#### س: كيف يمكنني نقل DocumentBuilder إلى قسم معين في مستند Word؟
+
+ج: لنقل DocumentBuilder إلى قسم معين في مستند Word ، يمكنك استخدام طريقة MoveToSection لفئة DocumentBuilder. تأخذ هذه الطريقة فهرس القسم الهدف كمعامل وتضع المؤشر في بداية هذا القسم.
+
+#### س: هل يمكنني إضافة أو تعديل المحتوى بعد الانتقال إلى قسم معين باستخدام ميزة النقل إلى القسم؟
+
+ج: نعم ، بمجرد وضع DocumentBuilder في القسم المطلوب باستخدام MoveToSection ، يمكنك استخدام طرق مختلفة لفئة DocumentBuilder ، مثل Writeln أو Write أو InsertHtml ، لإضافة محتوى ذلك القسم أو تعديله.
+
+#### س: كيف يمكنني العمل مع فقرات موجودة في مستند باستخدام ميزة "نقل إلى قسم"؟
+
+ج: يمكنك تحميل مستند موجود يحتوي على فقرات باستخدام مُنشئ المستند ثم الوصول إلى مجموعة الفقرات من القسم المطلوب باستخدام خاصية FirstSection.Body.Paragraphs.
+
+#### س: هل يمكنني نقل مؤشر DocumentBuilder إلى فقرة معينة داخل قسم باستخدام ميزة Move To Section؟
+
+ج: نعم ، يمكنك تحريك مؤشر DocumentBuilder إلى فقرة معينة داخل قسم باستخدام طريقة MoveToParagraph. تأخذ هذه الطريقة مؤشرات الفقرة الهدف وموضع الحرف (الإزاحة) داخل الفقرة كمعلمات.

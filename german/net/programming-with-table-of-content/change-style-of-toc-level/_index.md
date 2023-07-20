@@ -85,7 +85,7 @@ Dieser Codeausschnitt erstellt ein neues, leeres Word-Dokument.
 
 #### F: Wie kann ich mit Aspose.Words für .NET den Stil einer bestimmten Ebene im Inhaltsverzeichnis ändern?
 
- A: Sobald Sie ein Dokument geladen haben, können Sie den Stil einer bestimmten Ebene im Inhaltsverzeichnis ändern, indem Sie auf die Stile des Dokuments zugreifen und die erforderlichen Änderungen vornehmen. In Aspose.Words für .NET können Sie das verwenden`Styles`Eigentum der`Document` Klasse, um auf die Dokumentstile zuzugreifen, und ändern Sie dann den gewünschten Stil mithilfe seiner Eigenschaften. Um beispielsweise den Stil der ersten Ebene des Inhaltsverzeichnisses in Fettschrift zu ändern, können Sie den folgenden Code verwenden:
+ A: Sobald Sie ein Dokument geladen haben, können Sie den Stil einer bestimmten Ebene im Inhaltsverzeichnis ändern, indem Sie auf die Stile des Dokuments zugreifen und die erforderlichen Änderungen vornehmen. In Aspose.Words für .NET können Sie das verwenden`Styles` Eigentum der`Document` Klasse, um auf die Dokumentstile zuzugreifen, und ändern Sie dann den gewünschten Stil mithilfe seiner Eigenschaften. Um beispielsweise den Stil der ersten Ebene des Inhaltsverzeichnisses in Fettschrift zu ändern, können Sie den folgenden Code verwenden:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
@@ -113,7 +113,7 @@ A: Ja, zusätzlich zum Ändern des Stils können Sie mit Aspose.Words für .NET 
 
 #### F: Wie kann ich mit Aspose.Words für .NET einen benutzerdefinierten Stil für eine bestimmte Ebene im Inhaltsverzeichnis angeben?
 
- A: Um mit Aspose.Words für .NET einen benutzerdefinierten Stil für eine bestimmte Ebene im Inhaltsverzeichnis anzugeben, können Sie einen neuen erstellen`Style` Objekt, konfigurieren Sie seine Eigenschaften entsprechend Ihrem gewünschten Stil und weisen Sie es mithilfe von der entsprechenden Ebene des Inhaltsverzeichnisses zu`Styles`Eigentum der`Document` Klasse. Auf diese Weise können Sie basierend auf Ihren Anforderungen einen benutzerdefinierten Stil für eine bestimmte Ebene definieren.
+ A: Um mit Aspose.Words für .NET einen benutzerdefinierten Stil für eine bestimmte Ebene im Inhaltsverzeichnis anzugeben, können Sie einen neuen erstellen`Style` Objekt, konfigurieren Sie seine Eigenschaften entsprechend Ihrem gewünschten Stil und weisen Sie es mithilfe von der entsprechenden Ebene des Inhaltsverzeichnisses zu`Styles` Eigentum der`Document` Klasse. Auf diese Weise können Sie basierend auf Ihren Anforderungen einen benutzerdefinierten Stil für eine bestimmte Ebene definieren.
 
 #### F: Kann ich den Stil des Inhaltsverzeichnisses in einem vorhandenen Word-Dokument mit Aspose.Words für .NET ändern?
 

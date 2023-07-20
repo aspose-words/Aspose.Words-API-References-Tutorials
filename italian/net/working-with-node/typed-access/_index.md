@@ -87,7 +87,7 @@ R: L'accesso digitato in Node.js si riferisce all'uso di tipi di nodo specifici 
 
 #### D: Come si accede ai nodi utilizzando l'accesso digitato?
 
- R: Per accedere ai nodi utilizzando l'accesso digitato in Node.js, puoi utilizzare metodi specifici a seconda del tipo di nodo a cui desideri accedere. Ad esempio, puoi utilizzare il`getElementsByTagName` metodo per accedere a tutti i nodi di un tipo specifico, the`getAttribute` metodo per accedere al valore di un attributo, ecc.
+ R: Per accedere ai nodi utilizzando l'accesso digitato in Node.js, puoi utilizzare metodi specifici a seconda del tipo di nodo a cui vuoi accedere. Ad esempio, puoi utilizzare il`getElementsByTagName` metodo per accedere a tutti i nodi di un tipo specifico, the`getAttribute` metodo per accedere al valore di un attributo, ecc.
 
 #### D: Quali sono i vantaggi dell'accesso digitato rispetto all'accesso non digitato?
 
@@ -99,4 +99,4 @@ R: Con l'accesso digitato in Node.js, puoi accedere a diversi tipi di nodi, come
 
 #### D: Come gestire gli errori durante l'accesso digitato?
 
- R: Per gestire gli errori durante l'accesso digitato in Node.js, puoi utilizzare meccanismi di gestione degli errori come`try...catch` blocchi. Se si verifica un errore durante l'accesso a un nodo specifico, è possibile acquisire l'errore e intraprendere l'azione appropriata per gestirlo, ad esempio visualizzare un messaggio di errore o eseguire un'azione di salvataggio.
+ R: Per gestire gli errori durante l'accesso digitato in Node.js, puoi utilizzare meccanismi di gestione degli errori come`try...catch` blocchi. Se si verifica un errore durante l'accesso a un nodo specifico, è possibile acquisire l'errore e intraprendere l'azione appropriata per gestirlo, ad esempio visualizzare un messaggio di errore o eseguire un'azione di ripristino.

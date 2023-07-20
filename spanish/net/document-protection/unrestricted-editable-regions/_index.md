@@ -91,7 +91,7 @@ doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 Siguiendo estos pasos, puede crear fácilmente áreas editables sin restricciones en su documento de Word con Aspose.Words para .NET.
 
 ## Conclusión
-En este tutorial, aprendimos a crear regiones editables sin restricciones en un documento de Word usando Aspose.Words para .NET. Siguiendo los pasos provistos, puede definir áreas específicas dentro del documento donde los usuarios pueden editar libremente el contenido mientras mantienen el resto del documento de solo lectura. Aspose.Words para .NET ofrece potentes funciones para la protección y personalización de documentos, brindándole control sobre las capacidades de edición de sus documentos de Word.
+En este tutorial, aprendimos a crear regiones editables sin restricciones en un documento de Word usando Aspose.Words para .NET. Siguiendo los pasos provistos, puede definir áreas específicas dentro del documento donde los usuarios pueden editar libremente el contenido mientras mantienen el resto del documento de solo lectura. Aspose.Words para .NET ofrece potentes funciones para la protección y personalización de documentos, lo que le brinda control sobre las capacidades de edición de sus documentos de Word.
 
 ### Preguntas frecuentes sobre regiones editables sin restricciones en un documento de Word
 

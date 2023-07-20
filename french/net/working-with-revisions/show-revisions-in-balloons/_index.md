@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Q : Comment afficher les révisions dans des bulles avec Aspose.Words pour .NET ?
 
- R : Utilisez le`ShowInBalloons`propriété de la`RevisionOptions` objet pour configurer l'affichage des révisions dans les bulles. Vous pouvez définir cette propriété sur`ShowInBalloons.FormatAndDelete` pour afficher les révisions dans des bulles avec des révisions de suppression et de mise en forme.
+ R : Utilisez le`ShowInBalloons` propriété de la`RevisionOptions` objet pour configurer l'affichage des révisions dans les bulles. Vous pouvez définir cette propriété sur`ShowInBalloons.FormatAndDelete` pour afficher les révisions dans des bulles avec des révisions de suppression et de mise en forme.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

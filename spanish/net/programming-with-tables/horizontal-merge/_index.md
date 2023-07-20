@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Aquí usamos el generador de documentos para construir la tabla y establecer las propiedades de combinación horizontal de celdas. usamos el`HorizontalMerge`propiedad de la`CellFormat` objeto para especificar el tipo de combinación horizontal que se aplicará a cada celda. Usando`CellMerge.First` fusionamos la primera celda con la siguiente, mientras usamos`CellMerge.Previous` fusionamos la celda actual con la celda anterior.`CellMerge.None` indica que la celda no debe fusionarse.
+ Aquí usamos el generador de documentos para construir la tabla y establecer las propiedades de combinación horizontal de celdas. usamos el`HorizontalMerge` propiedad de la`CellFormat` objeto para especificar el tipo de combinación horizontal que se aplicará a cada celda. Usando`CellMerge.First` fusionamos la primera celda con la siguiente, mientras usamos`CellMerge.Previous` fusionamos la celda actual con la celda anterior.`CellMerge.None` indica que la celda no debe fusionarse.
 
 ## Paso 4: Guardar el documento modificado
 Finalmente, debemos guardar el documento modificado con las celdas fusionadas horizontalmente. Usa el siguiente código:

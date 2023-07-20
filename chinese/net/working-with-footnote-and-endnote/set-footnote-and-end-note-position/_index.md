@@ -10,7 +10,7 @@ url: /zh/net/working-with-footnote-and-endnote/set-footnote-and-end-note-positio
 
 在本分步教程中，我们将指导您如何使用 Aspose.Words for .NET 在 Word 文档中设置脚注和尾注的位置。我们将解释提供的 C# 源代码，并向您展示如何在您自己的项目中实现它。
 
-首先，请确保您已在开发环境中安装并设置了 Aspose.Words for .NET。如果您还没有这样做，请从官方网站下载并安装该库。
+首先，请确保您已在开发环境中安装并设置了 Aspose.Words for .NET。如果您还没有这样做，请从以下位置下载并安装该库[Aspose.Releases]https://releases.aspose.com/words/net/。
 
 ## 第 1 步：初始化文档对象
 
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 
 ### 常见问题解答
 
-#### 问：如何在 Aspose.Words 中放置脚注和尾注？
+#### 问：如何在 Aspose.Words 中定位脚注和尾注？
 
 答：要在 Aspose.Words 中定位脚注和尾注，您需要使用`FootnoteOptions`类和`Position`财产。您可以将此属性设置为您想要的任何值，例如`BottomOfPage`（在页面底部）或`EndOfSection`（在本节的末尾）。
 

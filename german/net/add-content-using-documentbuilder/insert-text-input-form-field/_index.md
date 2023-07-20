@@ -1,13 +1,12 @@
 ---
-title: Texteingabeformularfeld einfügen
-linktitle: Texteingabeformularfeld einfügen
+title: Fügen Sie ein Texteingabeformularfeld in ein Word-Dokument ein
+linktitle: Fügen Sie ein Texteingabeformularfeld in ein Word-Dokument ein
 second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Texteingabeformularfelder in Word-Dokumente einfügen.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
-
 In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie die Funktion „Texteingabeformularfeld einfügen“ in Aspose.Words für .NET verwenden, um Texteingabeformularfelder in Ihren Word-Dokumenten mithilfe von C#-Quellcode hinzuzufügen und zu bearbeiten. Texteingabeformularfelder ermöglichen Benutzern die Eingabe von benutzerdefiniertem Text in ein Dokument und eignen sich daher ideal für die Erstellung interaktiver Formulare und Fragebögen. Wenn Sie die folgenden Anweisungen befolgen, können Sie mühelos Texteingabeformularfelder in Ihre Dokumente einfügen und anpassen. Lass uns anfangen!
 
 ## Einführung in die Funktion „Texteingabeformularfeld einfügen“ in Aspose.Words für .NET
@@ -72,3 +71,32 @@ builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```
+
+## Abschluss
+
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET Texteingabeformularfelder in ein Word-Dokument einfügen und anpassen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Quellcode verwenden, können Sie Ihren Dokumenten jetzt interaktive Elemente hinzufügen, sodass Benutzer benutzerdefinierten Text oder Daten eingeben können.
+
+### FAQs zum Einfügen eines Texteingabeformularfelds in ein Word-Dokument
+
+#### F: Was ist der Zweck der Funktion „Texteingabeformularfeld einfügen“ in Aspose.Words für .NET?
+
+A: Mit der Funktion „Texteingabeformularfeld einfügen“ in Aspose.Words für .NET können Sie Texteingabeformularfelder programmgesteuert zu Ihren Word-Dokumenten hinzufügen. Diese Formularfelder ermöglichen es Benutzern, benutzerdefinierten Text oder Daten direkt in das Dokument einzugeben, wodurch sie sich ideal für die Erstellung interaktiver Formulare, Umfragen oder Fragebögen eignen.
+
+#### F: Was sind die Voraussetzungen für die Verwendung der Funktion „Texteingabeformularfeld einfügen“?
+
+A: Bevor Sie die Funktion „Texteingabeformularfeld einfügen“ implementieren, müssen Sie die folgenden Voraussetzungen sicherstellen:
+1. Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert.
+2. Grundkenntnisse der Programmiersprache C#.
+3. Ein vorhandenes Word-Dokument oder ein neues Dokument, in das Sie das Texteingabeformularfeld einfügen möchten.
+
+#### F: Wie kann ich das Texteingabeformularfeld anpassen?
+
+ A: Sie können das Texteingabeformularfeld anpassen, indem Sie beim Aufrufen des Formulars bestimmte Parameter angeben`InsertTextInput`Methode. Sie können beispielsweise den Namen, den Standardwert und die maximale Länge für das Formularfeld nach Bedarf festlegen.
+
+#### F: Kann ich mehrere Texteingabeformularfelder in ein einzelnes Dokument einfügen?
+
+ A: Ja, Sie können mehrere Texteingabeformularfelder in ein einzelnes Dokument einfügen. Rufen Sie einfach an`InsertTextInput` Methode mit unterschiedlichen Namen und Konfigurationen zum Hinzufügen mehrerer Formularfelder.
+
+#### F: Wie können Benutzer mit dem Texteingabeformularfeld im Dokument interagieren?
+
+A: Sobald das Texteingabeformularfeld in das Dokument eingefügt ist, können Benutzer auf das Formularfeld klicken und mit der Eingabe beginnen, um benutzerdefinierten Text einzugeben. Über das Formularfeld können sie den Inhalt direkt im Dokument bearbeiten.

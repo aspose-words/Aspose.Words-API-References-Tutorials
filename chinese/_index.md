@@ -8,7 +8,7 @@ url: /zh/
 is_root: true
 ---
 
-## Aspose.Words for .NET
+## .NET 的 Aspose.Words 文档处理教程
 {{% alert color="primary" %}}
 Aspose.Words for .NET 教程和代码片段，用于在应用程序中创建、编辑、转换、打印 Word 文档以及更多功能。 
 {{% /alert %}}
@@ -35,3 +35,20 @@ Aspose.Words for .NET 教程和代码片段，用于在应用程序中创建、�
 - [带水印编程](./net/programming-with-watermark/)    
 - [使用 Markdownsaveoptions 进行编程](./net/programming-with-markdownsaveoptions/)   
 - [基本换算](./net/basic-conversions/)   
+
+## Java 版 Aspose.Words 文档处理教程
+{{% alert color="primary" %}}
+使用 Aspose.Words Java 教程掌握文档处理。学习文字处理、表格处理、合并等。高效地自动化文档任务。 
+{{% /alert %}}
+
+这些是一些有用资源的链接：
+- [字处理](./java/word-processing/)  
+- [表处理](./java/table-processing/)
+- [文档样式](./java/document-styling/)
+- [文档合并](./java/document-merging/)
+- [文件转换](./java/document-converting/)
+- [文件打印](./java/document-printing/)
+- [文档渲染](./java/document-rendering/)
+- [文件安全](./java/document-security/)
+- [文件分割](./java/document-splitting/)
+- [文件修订](./java/document-revision/)

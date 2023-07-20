@@ -1,13 +1,12 @@
 ---
-title: Infoga innehållsförteckning
-linktitle: Infoga innehållsförteckning
+title: Infoga innehållsförteckning i Word-dokument
+linktitle: Infoga innehållsförteckning i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar en innehållsförteckning i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-
 I den här omfattande handledningen kommer du att lära dig hur du infogar en innehållsförteckning i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna skapa en innehållsförteckning med lämpliga rubriker och sidnummer.
 
 ## Förutsättningar
@@ -127,3 +126,29 @@ doc.UpdateFields();
 
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
+
+## Slutsats
+
+Grattis! Du har framgångsrikt lärt dig hur du infogar en innehållsförteckning i ett Word-dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och använda den medföljande källkoden kan du nu skapa en innehållsförteckning med lämpliga rubriker och sidnummer för dina dokument.
+
+### Vanliga frågor för att infoga innehållsförteckning i word-dokument
+
+#### F: Kan jag anpassa utseendet på innehållsförteckningen?
+
+ S: Ja, du kan anpassa utseendet på innehållsförteckningen genom att ändra formateringsalternativen som anges i`InsertTableOfContents` metod. Parametrarna låter dig styra sidnummer, indrag och andra stilar.
+
+#### F: Vad händer om jag vill inkludera specifika rubriknivåer i innehållsförteckningen?
+
+ S: Du kan ange önskade rubriknivåer som ska inkluderas i innehållsförteckningen genom att justera värdet inom`InsertTableOfContents` metod. Till exempel att använda`"\\o \"1-3\""` kommer att innehålla rubriknivåerna 1 till 3.
+
+#### F: Kan jag uppdatera innehållsförteckningen automatiskt om jag gör ändringar i dokumentets innehåll?
+
+ S: Ja, du kan uppdatera innehållsförteckningen automatiskt genom att ringa`UpdateFields` metod på dokumentet. Detta säkerställer att alla ändringar som görs i dokumentinnehållet, som att lägga till eller ta bort rubriker, återspeglas i innehållsförteckningen.
+
+#### F: Hur kan jag utforma rubriknivåerna i innehållsförteckningen annorlunda?
+
+ S: Du kan utforma rubriknivåerna olika genom att använda olika styckestilar för varje rubriknivå. Genom att tilldela olika`StyleIdentifier` värden till`ParagraphFormat` av`DocumentBuilder`, kan du skapa distinkta stilar för varje rubriknivå.
+
+#### F: Är det möjligt att lägga till ytterligare formatering till rubrikerna i innehållsförteckningen?
+
+ S: Ja, du kan lägga till ytterligare formatering till rubrikerna i innehållsförteckningen, som typsnittsstilar, färger eller andra egenskaper. Genom att justera`Font` egenskaper hos`DocumentBuilder`, kan du använda anpassad formatering på rubrikerna.

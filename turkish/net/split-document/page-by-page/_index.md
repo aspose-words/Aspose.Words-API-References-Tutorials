@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/split-document/page-by-page/
 ---
 
-Bu eğitimde, Aspose.Words for .NET'in belge işleme özelliğini kullanarak bir Word belgesini nasıl ayrı sayfalara böleceğinizi göstereceğiz. Kaynak kodunu anlamak ve her sayfa için ayrı belgeler almak için aşağıdaki adımları izleyin.
+Bu öğreticide, Aspose.Words for .NET'in belge işleme özelliğini kullanarak bir Word belgesini ayrı sayfalara nasıl böleceğinizi göstereceğiz. Kaynak kodunu anlamak ve her sayfa için ayrı belgeler almak için aşağıdaki adımları izleyin.
 
 ## 1. Adım: Belgeyi yükleme
 
@@ -64,7 +64,7 @@ Tebrikler! Aspose.Words for .NET'in Sayfa Sayfa özelliğini kullanarak bir Word
 
 Bir belgeyi sayfalara göre bölmek, belirli sayfalarla çalışmanız veya içeriği parçalı bir şekilde dağıtmanız gerektiğinde yararlı olabilir. Aspose.Words for .NET, belgeleri bölme sürecini basitleştirerek verimli ve kullanışlı hale getiren güçlü bir API sağlar.
 
-Aspose.Words for .NET tarafından belge işleme becerilerinizi geliştirmek ve iş akışınızı kolaylaştırmak için sunulan diğer özellikleri keşfetmekten çekinmeyin.
+Belge işleme becerilerinizi geliştirmek ve iş akışınızı kolaylaştırmak için Aspose.Words for .NET tarafından sunulan diğer özellikleri keşfetmekten çekinmeyin.
 
 ### SSS
 
@@ -80,6 +80,6 @@ Evet, Aspose.Words for .NET, bir belgeyi sayfa sayfa bölerken çeşitli çıkt�
 
 Kesinlikle! Aspose.Words for .NET, bir belgeyi belirli bir sayfa aralığına göre bölmenize izin verir. Başlangıç sayfasını ve ayıklanacak sayfa sayısını ayarlayarak, belgeyi bölmek için sayfa aralığını tam olarak tanımlayabilirsiniz.
 
-#### Bölünmüş belgeleri tekrar tek bir belgede birleştirmek mümkün mü?
+#### Bölünmüş belgeleri tekrar tek bir belgede birleştirmek mümkün müdür?
 
 Evet, Aspose.Words for .NET tarafından sağlanan birleştirme işlevini kullanarak bölünmüş belgeleri tekrar tek bir belgede birleştirebilirsiniz. Ayrı belgeleri birleştirerek, orijinal belgeyi yeniden oluşturabilir veya gerektiğinde farklı bir yapıya sahip yeni bir belge oluşturabilirsiniz.

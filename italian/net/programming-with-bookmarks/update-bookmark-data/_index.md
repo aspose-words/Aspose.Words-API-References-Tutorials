@@ -86,7 +86,7 @@ Questo codice salverà il documento modificato con il nome "UpdatedDocument.docx
 
 ## Conclusione
 
-Congratulazioni! Hai imparato con successo come aggiornare i dati dei segnalibri utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, ora dovresti essere in grado di incorporare questa funzionalità nelle tue applicazioni C# e manipolare i segnalibri all'interno dei documenti di Word a livello di programmazione.
+Congratulazioni! Hai imparato con successo come aggiornare i dati dei segnalibri utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, ora dovresti essere in grado di incorporare questa funzionalità nelle tue applicazioni C# e manipolare i segnalibri all'interno dei documenti di Word a livello di codice.
 
 ### Domande frequenti per l'aggiornamento dei dati dei segnalibri nel documento di Word
 
@@ -96,7 +96,7 @@ R: Sì, la funzione Aggiorna dati dei segnalibri è progettata specificamente pe
 
 #### D: Posso aggiornare altre proprietà dei segnalibri oltre al testo?
 
-R: Sì, oltre al testo, puoi anche aggiornare altre proprietà del segnalibro, come il nome del segnalibro, l'ambito del segnalibro, ecc. Usa le proprietà appropriate del`Bookmark` oggetto per aggiornare le proprietà desiderate.
+ R: Sì, oltre al testo, puoi anche aggiornare altre proprietà del segnalibro, come il nome del segnalibro, l'ambito del segnalibro, ecc. Usa le proprietà appropriate del`Bookmark` oggetto per aggiornare le proprietà desiderate.
 
 #### D: Posso aggiornare più segnalibri nello stesso documento?
 

@@ -10,7 +10,7 @@ url: /fr/net/working-with-formfields/insert-form-fields/
 
 Dans ce didacticiel étape par étape, nous vous expliquerons comment insérer des champs de formulaire, en particulier un champ de formulaire déroulant, dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
+ Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque à partir de[Aspose.Releases] https://releases.aspose.com/words/net/.
 
 ## Étape 1 : Initialisation des objets Document et DocumentBuilder
 

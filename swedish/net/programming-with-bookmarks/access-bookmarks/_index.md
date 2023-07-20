@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 #### F: Hur kommer jag åt bokmärken i ett Word-dokument?
 
- S: Du kan komma åt bokmärken i ett Word-dokument med hjälp av`Bookmarks`egendom av`Range` objekt. Du kan komma åt bokmärken efter index eller namn. Här är en exempelkod:
+ S: Du kan komma åt bokmärken i ett Word-dokument med hjälp av`Bookmarks` egendom av`Range` objekt. Du kan komma åt bokmärken efter index eller namn. Här är en exempelkod:
 
 - Åtkomst via index:
 
@@ -94,7 +94,7 @@ S: För att använda bokmärkesåtkomstfunktionen i Aspose.Words för .NET behö
 
 #### F: Finns det andra sätt att komma åt bokmärken i ett Word-dokument?
 
- S: Ja, förutom att komma åt bokmärken efter index eller namn, kan du också gå igenom alla bokmärken i dokumentet med en loop. Du kan få det totala antalet bokmärken i dokumentet med hjälp av`Count`egendom av`Bookmarks` samling. Sedan kan du komma åt varje bokmärke med hjälp av indexet. Här är en exempelkod:
+ S: Ja, förutom att komma åt bokmärken efter index eller namn, kan du också gå igenom alla bokmärken i dokumentet med en loop. Du kan få det totala antalet bokmärken i dokumentet med hjälp av`Count` egendom av`Bookmarks` samling. Sedan kan du komma åt varje bokmärke med hjälp av indexet. Här är en exempelkod:
 
 ```csharp
 int bookmarkCount = doc.Range.Bookmarks.Count;

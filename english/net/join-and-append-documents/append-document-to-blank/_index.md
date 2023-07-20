@@ -14,7 +14,7 @@ This tutorial explains how to use Aspose.Words for .NET to append the contents o
 
 Ensure that you have the following prerequisites:
 
-- Aspose.Words for .NET library installed. You can download it from the official Aspose website or use NuGet package manager to install it.
+- Aspose.Words for .NET library installed. You can download it from [Aspose.Releases]https://releases.aspose.com/words/net/ or use NuGet package manager to install it.
 - A document directory path where the source and destination documents are located.
 
 ## Step 2: Create a new destination document

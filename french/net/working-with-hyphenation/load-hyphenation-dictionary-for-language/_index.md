@@ -10,7 +10,7 @@ url: /fr/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 
 Dans ce tutoriel étape par étape, nous allons vous montrer comment charger un dictionnaire de césure pour une langue spécifique dans Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas déjà fait, téléchargez et installez la bibliothèque à partir du site officiel.
+ Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas déjà fait, téléchargez et installez la bibliothèque à partir de[Aspose.Releases] https://releases.aspose.com/words/net/.
 
 ## Étape 1 : Chargement du document
 
@@ -68,7 +68,7 @@ R : Vous pouvez trouver des fichiers de dictionnaire de syllabisation pour diff
 
 #### Q : Comment puis-je appliquer le dictionnaire syllabique chargé à un document dans Aspose.Words ?
 
- R : Pour appliquer le dictionnaire de syllabisation chargé à un document dans Aspose.Words, vous devez parcourir les mots du document et utiliser la`Hyphenate()` méthode de la`Hyphenation` classe pour obtenir la syllabation des mots. Vous pouvez ensuite formater les mots syllabés selon vos besoins, par exemple en ajoutant des tirets entre les syllabes.
+ R : Pour appliquer le dictionnaire de syllabisation chargé à un document dans Aspose.Words, vous devez parcourir les mots du document et utiliser la`Hyphenate()` méthode de la`Hyphenation` classe pour obtenir la syllabation des mots. Vous pouvez ensuite mettre en forme les mots syllabés selon vos besoins, par exemple en ajoutant des traits d'union entre les syllabes.
 
 #### Q : Quelles langues sont prises en charge pour la syllabation dans Aspose.Words ?
 

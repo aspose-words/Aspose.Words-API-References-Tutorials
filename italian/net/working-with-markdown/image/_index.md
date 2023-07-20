@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-markdown/image/
 ---
 
-In questo esempio, spiegheremo come utilizzare la funzione immagine con Aspose.Words per .NET. Le immagini consentono di inserire illustrazioni e grafici in un documento.
+In questo esempio, spiegheremo come utilizzare la funzione immagine con Aspose.Words per .NET. Le immagini consentono di inserire illustrazioni e grafica in un documento.
 
 ## Passaggio 1: utilizzo di un generatore di documenti
 

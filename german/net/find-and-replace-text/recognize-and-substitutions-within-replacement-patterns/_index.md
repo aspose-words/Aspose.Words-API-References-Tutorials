@@ -101,7 +101,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### F: Wie kann ich erfasste Gruppen im Ersetzungsmuster während der Textsuche und -ersetzung in Aspose.Words für .NET verwenden?
 
- A: Um erfasste Gruppen im Ersetzungsmuster während der Textsuche und -ersetzung in Aspose.Words für .NET zu verwenden, können Sie Folgendes aktivieren`UseSubstitutions`Eigentum der`FindReplaceOptions` Objekt. Dadurch können Sie auf die erfassten Gruppen verweisen`$1`, `$2`usw. im Ersetzungsmuster:
+ A: Um erfasste Gruppen im Ersetzungsmuster während der Textsuche und -ersetzung in Aspose.Words für .NET zu verwenden, können Sie Folgendes aktivieren`UseSubstitutions` Eigentum der`FindReplaceOptions` Objekt. Dadurch können Sie auf die erfassten Gruppen verweisen`$1`, `$2`usw. im Ersetzungsmuster:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
@@ -114,7 +114,7 @@ A: Der Beispielquellcode demonstriert die Verwendung der Funktion „Erkennen un
 
 #### F: Wo finde ich weitere Informationen und Beispiele zur Verwendung regulärer Ausdrücke in Aspose.Words für .NET?
 
-A: Weitere Informationen und Beispiele zur Verwendung regulärer Ausdrücke in Aspose.Words für .NET finden Sie in der offiziellen Dokumentation und im Aspose.Words GitHub-Repository. Die Dokumentation bietet detaillierte Erklärungen und Codebeispiele für verschiedene Szenarien mit regulären Ausdrücken und Textmanipulation in Aspose.Words für .NET.
+A: Weitere Informationen und Beispiele zur Verwendung regulärer Ausdrücke in Aspose.Words für .NET finden Sie im[Aspose.Words für .NET-API-Referenzen](https://reference.aspose.com/words/net/). Die Dokumentation bietet detaillierte Erklärungen und Codebeispiele für verschiedene Szenarien mit regulären Ausdrücken und Textmanipulation in Aspose.Words für .NET.
 
 #### F: Kann ich andere Aspekte des Dokuments basierend auf den erfassten Gruppen während der Textsuche und -ersetzung manipulieren?
 
@@ -124,6 +124,6 @@ A: Ja, Sie können andere Aspekte des Dokuments basierend auf den erfassten Grup
 
 A: Während reguläre Ausdrücke und erfasste Gruppen leistungsstarke Funktionen für die Textsuche und -ersetzung in Aspose.Words für .NET bieten, ist es wichtig, die Auswirkungen auf Komplexität und Leistung zu berücksichtigen. Hochkomplexe reguläre Ausdrücke und eine große Anzahl erfasster Gruppen können die Leistung beeinträchtigen. Es wird empfohlen, reguläre Ausdrücke für Ihre spezifischen Anwendungsfälle zu testen und zu optimieren, um eine effiziente Dokumentenbearbeitung sicherzustellen.
 
-#### F: Kann ich die Funktion „Erkennen und Ersetzen innerhalb von Ersetzungsmustern“ mit anderen Sprachen als Englisch verwenden?
+#### F: Kann ich die Funktion „Erkennung und Ersetzungen innerhalb von Ersetzungsmustern“ mit anderen Sprachen als Englisch verwenden?
 
 A: Ja, die Funktion „Erkennen und Ersetzen innerhalb von Ersetzungsmustern“ in Aspose.Words für .NET kann mit anderen Sprachen als Englisch verwendet werden. Reguläre Ausdrücke sind sprachunabhängig und können so erstellt werden, dass sie bestimmten Mustern in jeder Sprache entsprechen. Sie können das Muster für reguläre Ausdrücke an Ihre gewünschte Sprache und die spezifischen Textmuster anpassen, die Sie erkennen und ersetzen möchten.

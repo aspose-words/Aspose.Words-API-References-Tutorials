@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## الخطوة 3: استخدام وظيفة Ignore Text Inside Fields
 
- لتجاهل النص داخل الحقول في العمليات اللاحقة ، يمكننا استخدام`FindReplaceOptions` كائن وتعيين`IgnoreFields` ملكية ل`true`:
+ لتجاهل النص داخل الحقول في العمليات اللاحقة ، يمكننا استخدام`FindReplaceOptions` كائن وتعيين`IgnoreFields` الملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## الخطوة 6: تغيير الخيارات لتضمين الحقول
 
-نقوم بتضمين النص داخل الحقول في نتيجة الإخراج ، يمكننا تغيير الخيارات لعدم تجاهل الحقول. لهذا سنقوم بتعيين`IgnoreFields` ملكية ل`false`:
+نقوم بتضمين النص داخل الحقول في نتيجة الإخراج ، يمكننا تغيير الخيارات لعدم تجاهل الحقول. لهذا سنقوم بتعيين`IgnoreFields` الملكية ل`false`:
 
 ```csharp
 options.IgnoreFields = false;
@@ -128,7 +128,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 #### س: كيف يمكنني تجاهل النص الموجود داخل الحقول في Aspose.Words for .NET؟
 
-ج: لتجاهل النص داخل الحقول أثناء العمليات اللاحقة ، يمكنك استخدام ملف`FindReplaceOptions` كائن وتعيين`IgnoreFields` ملكية ل`true`:
+ج: لتجاهل النص داخل الحقول أثناء العمليات اللاحقة ، يمكنك استخدام ملف`FindReplaceOptions` كائن وتعيين`IgnoreFields` الملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -153,7 +153,7 @@ Console.WriteLine(doc.GetText());
 
 #### س: كيف يمكنني تضمين الحقول في نتيجة الإخراج في Aspose.Words for .NET؟
 
- ج: لتضمين النص داخل الحقول في نتيجة الإخراج ، يمكنك تغيير الخيارات لعدم تجاهل الحقول. لهذا ، يمكنك ضبط ملف`IgnoreFields`ممتلكات`FindReplaceOptions` يعترض على`false`:
+ ج: لتضمين النص داخل الحقول في نتيجة الإخراج ، يمكنك تغيير الخيارات لعدم تجاهل الحقول. لهذا ، يمكنك ضبط ملف`IgnoreFields` ممتلكات`FindReplaceOptions` يعترض على`false`:
 
 ```csharp
 options.IgnoreFields = false;

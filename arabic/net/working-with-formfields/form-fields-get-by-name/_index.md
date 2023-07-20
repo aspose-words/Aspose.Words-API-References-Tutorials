@@ -10,7 +10,7 @@ url: /ar/net/working-with-formfields/form-fields-get-by-name/
 
 في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لاسترداد حقول النماذج بالاسم من مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+ للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من[Aspose.Releases] https://releases.aspose.com/words/net/.
 
 ## الخطوة 1: تهيئة كائن المستند
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## الخطوة 2: استرجاع حقول النموذج
 
- بعد ذلك ، قم بالوصول إلى`FormFields`ممتلكات`Range` كائن في المستند لاسترداد جميع حقول النموذج:
+ بعد ذلك ، قم بالوصول إلى`FormFields` ممتلكات`Range` كائن في المستند لاسترداد جميع حقول النموذج:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

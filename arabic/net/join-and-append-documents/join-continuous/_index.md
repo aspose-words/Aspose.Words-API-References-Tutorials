@@ -14,7 +14,7 @@ url: /ar/net/join-and-append-documents/join-continuous/
 
 تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
+- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases] https://releases.aspose.com/words/net/ أو استخدم مدير حزمة NuGet لتثبيته.
 - مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
 
 ## الخطوة 2: افتح مستندات المصدر والوجهة
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: إعداد بداية القسم المستمر
 
- لجعل المستند المصدر يظهر مباشرة بعد محتوى المستند الوجهة ، قم بتعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.Continuous`.
+لجعل المستند المصدر يظهر مباشرة بعد محتوى المستند الوجهة ، قم بتعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;

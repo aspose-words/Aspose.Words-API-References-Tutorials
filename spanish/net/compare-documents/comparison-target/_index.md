@@ -1,14 +1,13 @@
 ---
-title: Objetivo de comparación
-linktitle: Objetivo de comparación
+title: Objetivo de comparación en documento de Word
+linktitle: Objetivo de comparación en documento de Word
 second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda la función de destino de comparación de Aspose.Words para .NET que le permite comparar documentos y generar un nuevo documento que contenga los cambios realizados.
+description: Aprenda a comparar objetivos en la función de documento de Word de Aspose.Words para .NET que le permite comparar documentos y generar un nuevo documento que contenga los cambios realizados.
 type: docs
 weight: 10
 url: /es/net/compare-documents/comparison-target/
 ---
-
-Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que usa la funcionalidad de destino de comparación de Aspose.Words para .NET.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que utiliza el objetivo de comparación en la funcionalidad de documento de Word de Aspose.Words para .NET.
 
 ## Paso 1: Introducción
 
@@ -57,7 +56,7 @@ Ahora compararemos los documentos y generaremos el resultado en un nuevo documen
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
- El`Compare` El método compara el documento A con el documento B y guarda los cambios en el documento A. Puede especificar el nombre de usuario y la fecha de comparación como referencia.
+ El`Compare`El método compara el documento A con el documento B y guarda los cambios en el documento A. Puede especificar el nombre de usuario y la fecha de comparación como referencia.
 
 ### Ejemplo de código fuente para el objetivo de comparación con Aspose.Words para .NET
 
@@ -79,3 +78,21 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
 En este artículo, exploramos la función de diff target de Aspose.Words para .NET. Esta función le permite comparar dos documentos y generar un nuevo documento que contenga los cambios realizados. Puede utilizar este conocimiento para realizar un seguimiento de los cambios entre diferentes versiones de sus documentos.
 
+### Preguntas frecuentes
+
+#### P: ¿Cuál es el propósito de usar Comparison Target en Aspose.Words para .NET?
+
+R: Comparación de destino en Aspose.Words para .NET le permite comparar dos documentos y generar un nuevo documento que contenga los cambios realizados en el documento de destino. Esta función es útil para realizar un seguimiento de los cambios realizados entre diferentes versiones de un documento y visualizar las diferencias en un documento separado.
+
+#### P: ¿Cómo uso el objetivo de comparación en Aspose.Words para .NET?
+
+R: Para usar el objetivo de comparación en Aspose.Words para .NET, siga estos pasos:
+1. Configure su entorno de desarrollo con la biblioteca Aspose.Words.
+2. Agregue los ensamblajes necesarios a su proyecto haciendo referencia a Aspose.Words.
+3.  Inicialice los documentos que desea comparar utilizando el`Document` clase o la`DocumentBuilder` clase.
+4.  Configure las opciones de comparación creando un`CompareOptions` objetos y propiedades de configuración, tales como`IgnoreFormatting` y`Target` (p.ej,`ComparisonTargetType.New` para el objetivo de comparación).
+5.  Utilizar el`Compare` método en un documento, pasando el otro documento y el`CompareOptions` objeto como parámetros. Este método comparará los documentos y guardará los cambios en el primer documento.
+
+####  P: ¿Cuál es el propósito de la`Target` property in the `CompareOptions` class?
+
+ R: El`Target` propiedad en el`CompareOptions` class le permite especificar el objetivo de comparación, que es similar a la opción "Mostrar cambios en" en el cuadro de diálogo "Comparar documentos" de Microsoft Word. El objetivo se puede establecer en`ComparisonTargetType.New` para mostrar los cambios en un nuevo documento,`ComparisonTargetType.Current` para mostrar cambios en el documento actual, o`ComparisonTargetType.Formatting` para mostrar solo los cambios de formato.

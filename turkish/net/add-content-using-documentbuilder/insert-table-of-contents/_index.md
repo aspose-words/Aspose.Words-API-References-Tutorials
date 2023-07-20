@@ -1,13 +1,12 @@
 ---
-title: İçindekiler Tablosu Ekle
-linktitle: İçindekiler Tablosu Ekle
+title: Word Belgesine İçindekiler Tablosu Ekleme
+linktitle: Word Belgesine İçindekiler Tablosu Ekleme
 second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerine içindekiler tablosunu nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-
 Bu kapsamlı öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine içindekiler tablosunu nasıl ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, uygun başlıklara ve sayfa numaralarına sahip bir içindekiler tablosu oluşturabileceksiniz.
 
 ## Önkoşullar
@@ -127,3 +126,29 @@ doc.UpdateFields();
 
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
+
+## Çözüm
+
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine içindekiler tablosunu nasıl ekleyeceğinizi başarıyla öğrendiniz. Bu adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık belgeleriniz için uygun başlıklara ve sayfa numaralarına sahip bir içindekiler tablosu oluşturabilirsiniz.
+
+### Word belgesine içindekiler tablosu eklemek için SSS
+
+#### S: İçindekiler tablosunun görünümünü özelleştirebilir miyim?
+
+ Y: Evet, içinde belirtilen biçimlendirme seçeneklerini değiştirerek içindekiler tablosunun görünümünü özelleştirebilirsiniz.`InsertTableOfContents` yöntem. Parametreler, sayfa numaralarını, girintiyi ve diğer stilleri kontrol etmenizi sağlar.
+
+#### S: İçindekiler tablosuna belirli başlık düzeylerini dahil etmek istersem ne olur?
+
+ C: İçindekiler tablosuna dahil edilmesini istediğiniz başlık düzeylerini, içindeki değeri ayarlayarak belirleyebilirsiniz.`InsertTableOfContents` yöntem. Örneğin, kullanarak`"\\o \"1-3\""` 1'den 3'e kadar olan başlık seviyelerini içerecektir.
+
+#### S: Belge içeriğinde değişiklik yaparsam içindekiler tablosunu otomatik olarak güncelleyebilir miyim?
+
+ C: Evet, içindekileri arayarak otomatik olarak güncelleyebilirsiniz.`UpdateFields` belge üzerindeki yöntem. Bu, başlık ekleme veya çıkarma gibi belge içeriğinde yapılan değişikliklerin içindekiler tablosuna yansıtılmasını sağlayacaktır.
+
+#### S: İçindekiler tablosundaki başlık düzeylerini nasıl farklı şekilde biçimlendirebilirim?
+
+ C: Her başlık düzeyi için farklı paragraf stilleri kullanarak başlık düzeylerine farklı stil verebilirsiniz. Farklı atayarak`StyleIdentifier` değerleri`ParagraphFormat` arasında`DocumentBuilder`, her başlık düzeyi için farklı stiller oluşturabilirsiniz.
+
+#### S: İçindekiler tablosundaki başlıklara ek biçimlendirme eklemek mümkün müdür?
+
+ C: Evet, içindekiler tablosundaki başlıklara yazı tipi stilleri, renkler veya diğer özellikler gibi ek biçimlendirmeler ekleyebilirsiniz. ayarlayarak`Font` özellikleri`DocumentBuilder`, başlıklara özel biçimlendirme uygulayabilirsiniz.

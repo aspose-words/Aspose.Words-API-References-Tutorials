@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## 3. Adım: Varsayılan yazı tipini ayarlayın
- Artık, örneğini oluşturarak, işleme sırasında kullanılacak varsayılan yazı tipini belirtebilirsiniz.`FontSettings` sınıf ve ayar`DefaultFontName`mülkiyeti`DefaultFontSubstitution` itiraz etmek`DefaultFontSubstitution` nesne`SubstitutionSettings` ile ilgili`FontSettings`.
+ Artık, örneğini oluşturarak, işleme sırasında kullanılacak varsayılan yazı tipini belirtebilirsiniz.`FontSettings` sınıf ve ayar`DefaultFontName` mülkiyeti`DefaultFontSubstitution` itiraz etmek`DefaultFontSubstitution` nesne`SubstitutionSettings` ile ilgili`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -74,7 +74,7 @@ C: Evet, uygun dönüştürme seçeneklerini kullanarak ve her biçim için kar�
 
 #### S: Aspose.Words'te belirtilen varsayılan yazı tipini nasıl kontrol edebilirim?
 
- C: Aspose.Words'te belirtilen varsayılan yazı tipini kontrol etmek için`DefaultFontName`mülkiyeti`PdfOptions` sınıflandırın ve yapılandırılan yazı tipinin adını alın.
+ C: Aspose.Words'te belirtilen varsayılan yazı tipini kontrol etmek için`DefaultFontName` mülkiyeti`PdfOptions` sınıflandırın ve yapılandırılan yazı tipinin adını alın.
 
 #### S: Belgenin her bölümü için farklı bir varsayılan yazı tipi belirlemek mümkün müdür?
 

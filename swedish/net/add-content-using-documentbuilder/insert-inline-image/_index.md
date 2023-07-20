@@ -1,13 +1,12 @@
 ---
-title: Infoga inbyggd bild
-linktitle: Infoga inbyggd bild
+title: Infoga inline bild i Word-dokument
+linktitle: Infoga inline bild i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar inline-bilder i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/insert-inline-image/
 ---
-
 I den här omfattande handledningen kommer du att lära dig hur du infogar inline-bilder i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna lägga till bilder direkt i texten i dina dokument.
 
 ## Förutsättningar
@@ -52,3 +51,25 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx")
 Grattis! Du har framgångsrikt lärt dig hur du infogar inline-bilder i ett Word-dokument med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden och använda den medföljande källkoden kan du nu lägga till bilder sömlöst i texten i dina dokument.
 
 Inline-bilder är användbara för olika scenarier, som att lägga till illustrationer, logotyper eller andra visuella element direkt i dokumentflödet.
+
+### Vanliga frågor för att infoga inline-bild i word-dokument
+
+#### F: Kan jag ändra storlek på inlinebilderna i Word-dokumentet?
+
+S: Ja, du kan ändra storlek på inline-bilderna med Aspose.Words för .NET. När du har infogat bilden kan du manipulera dess storlek genom att justera egenskaperna för bredd och höjd för Shape-objektet som representerar bilden.
+
+#### F: Är det möjligt att lägga till alt-text till inline-bilder för tillgänglighetssyften?
+
+S: Ja, du kan lägga till alt-text till inline-bilder för att förbättra tillgängligheten. Aspose.Words för .NET stöder tillägg av alt-text till bilder, vilket gör att skärmläsare och andra hjälpmedel kan beskriva bildinnehållet för synskadade användare.
+
+#### F: Kan jag använda formatering eller stilar på inline-bilderna?
+
+A: Absolut! Aspose.Words för .NET tillhandahåller omfattande formateringsalternativ för inline-bilder. Du kan använda olika stilar, ramar, effekter och andra formateringsattribut på bilderna för att matcha dokumentets visuella design.
+
+#### F: Har Aspose.Words för .NET stöd för att infoga bilder från en ström eller byte-array?
+
+S: Ja, du kan infoga inline-bilder från strömmar eller byte-arrayer med Aspose.Words för .NET. Detta gör att du kan arbeta med bilder som laddats från externa källor eller dynamiskt genererade bilder.
+
+#### F: Kan jag infoga bilder på specifika positioner i textinnehållet?
+
+S: Ja, klassen DocumentBuilder i Aspose.Words för .NET ger exakt kontroll över infogningspositionen för inline-bilder. Du kan ange den exakta platsen i texten där bilden ska infogas.

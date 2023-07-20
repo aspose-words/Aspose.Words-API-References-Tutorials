@@ -101,13 +101,13 @@ Esto completa la implementación del formato de la cantidad de etiquetas de dato
 
 ## Conclusión
 
-En este tutorial, aprendió cómo formatear la cantidad de etiquetas de datos en un gráfico usando Aspose.Words para .NET. Al seguir la guía paso a paso y usar el código fuente proporcionado, puede crear un gráfico, agregar datos de series y personalizar el formato numérico de las etiquetas de datos de acuerdo con sus requisitos.
+En este tutorial, aprendió cómo formatear la cantidad de etiquetas de datos en un gráfico usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, puede crear un gráfico, agregar datos de series y personalizar el formato numérico de las etiquetas de datos de acuerdo con sus requisitos.
 
  Aspose.Words para .NET proporciona una API completa para el procesamiento de textos con gráficos en documentos de Word, lo que le permite manipular varios aspectos del gráfico, incluidas las etiquetas de datos. Al acceder a la`DataLabels` colección asociada con una serie, puede personalizar el formato de número de las etiquetas de datos individuales.
 
 La API le permite controlar la visualización de valores, establecer diferentes formatos de número para cada etiqueta de datos y vincular el formato de número a una celda de origen. Esta flexibilidad le permite presentar datos numéricos en gráficos con el formato deseado, como símbolos de moneda, formatos de fecha y valores porcentuales.
 
-Al utilizar Aspose.Words para .NET, puede incorporar poderosas capacidades de creación de gráficos en sus aplicaciones .NET y generar documentos de aspecto profesional con etiquetas de datos y gráficos con formato completo.
+Al usar Aspose.Words para .NET, puede incorporar poderosas capacidades de creación de gráficos en sus aplicaciones .NET y generar documentos de aspecto profesional con gráficos y etiquetas de datos con formato completo.
 
 ### preguntas frecuentes
 

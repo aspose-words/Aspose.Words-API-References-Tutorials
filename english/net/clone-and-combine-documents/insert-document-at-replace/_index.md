@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /net/clone-and-combine-documents/insert-document-at-replace/
 ---
-
 In this tutorial, we will walk you through how to insert a document into another document when replacing using the Insert Document When Replacing feature of Aspose.Words for .NET. Follow the steps below to understand the source code and perform the document insertion.
 
 ## Step 1: Loading the main document
@@ -62,3 +61,28 @@ FindReplaceOptions options = new FindReplaceOptions
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+## Conclusion
+
+In this tutorial, we explored how to insert a document into another document during replace using the Insert Document When Replacing feature of Aspose.Words for .NET. By configuring the find and replace options and providing the necessary data, you can dynamically assemble documents by replacing specific placeholders with the contents of other document templates or sections. Aspose.Words for .NET offers a powerful and flexible way to manage complex document manipulation tasks, making it a valuable tool for automating document creation and content insertion scenarios.
+
+### FAQ's
+
+#### Q: What is the purpose of inserting a document into another document during replace?
+
+A: Inserting a document into another document during replace allows you to dynamically replace a specific placeholder with the contents of a separate document. This feature is particularly useful when you want to assemble a larger document by combining various pre-defined document templates or sections into specific placeholders.
+
+#### Q: How do I insert a document into another document during replace using Aspose.Words for .NET?
+
+A: To insert a document into another document during replace using Aspose.Words for .NET, follow these steps:
+1. Load the main document that contains the placeholders into a Document object.
+2. Configure the find and replace options, including the search direction and replace callback to handle the document insertion.
+3. Call the replace method with the appropriate search pattern, replacing the placeholders with an empty string, using the configured options.
+
+#### Q: Can I customize the insertion behavior during replace?
+
+A: Yes, you can customize the insertion behavior during replace by implementing a custom ReplacingCallback. By inheriting from the IReplacingCallback interface, you can control how the documents are inserted and merged based on your specific requirements when replacing the placeholders.
+
+#### Q: Can I replace multiple placeholders with different documents?
+
+A: Yes, you can replace multiple placeholders with different documents by specifying the appropriate search patterns for each placeholder and providing the corresponding documents to be inserted.

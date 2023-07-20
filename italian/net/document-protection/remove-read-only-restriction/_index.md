@@ -79,7 +79,7 @@ R: La restrizione di sola lettura in Aspose.Words per .NET si riferisce a una fu
 
 R: Per rimuovere la restrizione di sola lettura da un documento Word utilizzando Aspose.Words per .NET, puoi seguire questi passaggi:
 1.  Crea un'istanza di`Document` class e impostare una password per il documento utilizzando il file`SetPassword` metodo del`WriteProtection` oggetto.
-2.  Impostare il`ReadOnlyRecommended`proprietà del`WriteProtection` opporsi a`false` per rimuovere il consiglio di sola lettura.
+2.  Impostare il`ReadOnlyRecommended` proprietà del`WriteProtection` opporsi a`false` per rimuovere il consiglio di sola lettura.
 3.  Applica protezione illimitata al documento utilizzando il file`Protect` metodo del`Document` oggetto con il`NoProtection` tipo di protezione.
 4.  Salvare il documento senza la restrizione di sola lettura utilizzando il file`Save` metodo del`Document` oggetto.
 

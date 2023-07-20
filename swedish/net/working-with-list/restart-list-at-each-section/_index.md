@@ -10,7 +10,7 @@ url: /sv/net/working-with-list/restart-list-at-each-section/
 
 I denna steg för steg handledning kommer vi att visa dig hur du återställer en numrerad lista till varje avsnitt i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
+ För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Steg 1: Skapa dokumentet och listan
 

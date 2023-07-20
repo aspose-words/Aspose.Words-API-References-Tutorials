@@ -85,7 +85,7 @@ A: Um Schriftartteilmengen mithilfe von Aspose.Words für .NET in ein PDF-Dokume
 
  Speichern Sie das Dokument im PDF-Format mit den mithilfe von eingebetteten Schriftartteilsätzen`Save` Methode der`Document` -Objekt unter Angabe des Namens der Ausgabedatei und der zuvor konfigurierten Speicheroptionen.
 
-#### F: Welche Vorteile bietet das Einbetten von Schriftartteilmengen in ein PDF-Dokument?
+#### F: Welche Vorteile bietet das Einbetten von Schriftartteilsätzen in ein PDF-Dokument?
 A: Das Einbetten von Schriftartteilmengen in ein PDF-Dokument bietet folgende Vorteile:
 
 Reduzierte PDF-Dateigröße: Durch die Einbeziehung nur der im Dokument verwendeten Glyphen wird die PDF-Dateigröße im Vergleich zum Einbetten vollständiger Schriftarten reduziert.

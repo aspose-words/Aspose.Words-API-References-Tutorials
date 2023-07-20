@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Ladda käll- och måldokumenten
 
- Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktor enligt dina dokumentnamn.
+ Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Koppla bort sidhuvuden och sidfötter i källdokumentet
 
- För att koppla bort sidhuvuden och sidfötter i källdokumentet från att fortsätta måldokumentets sidhuvuden och sidfötter måste du ställa in`LinkToPrevious`egendom av`HeadersFooters` samling i det första avsnittet av källdokumentet till`false`.
+ För att koppla bort sidhuvuden och sidfötter i källdokumentet från att fortsätta måldokumentets sidhuvuden och sidfötter måste du ställa in`LinkToPrevious` egendom av`HeadersFooters` samling i det första avsnittet av källdokumentet till`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);

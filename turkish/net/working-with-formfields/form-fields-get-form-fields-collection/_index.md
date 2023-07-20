@@ -8,9 +8,9 @@ weight: 10
 url: /tr/net/working-with-formfields/form-fields-get-form-fields-collection/
 ---
 
-Bu adım adım eğitimde, form alanları koleksiyonunu bir Word belgesinden almak için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
+Bu adım adım öğreticide, bir Word belgesinden form alanları koleksiyonunu almak için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
+ Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı adresinden indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## 1. Adım: Belge Nesnesini Başlatma
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## 2. Adım: Form Alanları Koleksiyonunu Alma
 
- Ardından, şuraya erişin:`FormFields`mülkiyeti`Range` form alanları koleksiyonunu almak için belgedeki nesne:
+ Ardından, şuraya erişin:`FormFields` mülkiyeti`Range` form alanları koleksiyonunu almak için belgedeki nesne:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

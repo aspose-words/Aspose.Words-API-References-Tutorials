@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Burada tabloyu oluşturmak ve hücre yatay birleştirme özelliklerini ayarlamak için belge oluşturucuyu kullanıyoruz. biz kullanıyoruz`HorizontalMerge`mülkiyeti`CellFormat` Her hücreye uygulanacak yatay birleştirme türünü belirtmek için nesne. kullanma`CellMerge.First` kullanırken ilk hücreyi sonrakiyle birleştiriyoruz`CellMerge.Previous` mevcut hücreyi önceki hücreyle birleştiriyoruz.`CellMerge.None` hücrenin birleştirilmemesi gerektiğini belirtir.
+ Burada tabloyu oluşturmak ve hücre yatay birleştirme özelliklerini ayarlamak için belge oluşturucuyu kullanıyoruz. biz kullanıyoruz`HorizontalMerge` mülkiyeti`CellFormat` Her hücreye uygulanacak yatay birleştirme türünü belirtmek için nesne. kullanma`CellMerge.First` kullanırken ilk hücreyi sonrakiyle birleştiriyoruz`CellMerge.Previous` mevcut hücreyi önceki hücreyle birleştiriyoruz.`CellMerge.None` hücrenin birleştirilmemesi gerektiğini belirtir.
 
 ## 4. Adım: Değiştirilen belgeyi kaydetme
 Son olarak, değiştirilen belgeyi hücreler yatay olarak birleştirilmiş olarak kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:

@@ -60,7 +60,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-//Fügen Sie das ASK-Feld ein.
+// Fügen Sie das ASK-Feld ein.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 
 field.BookmarkName = "Test 1";

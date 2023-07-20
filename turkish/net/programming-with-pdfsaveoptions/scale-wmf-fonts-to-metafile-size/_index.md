@@ -49,7 +49,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = met
 
 ## 5. Adım: Belgeyi Meta Dosya Oluşturma Seçenekleriyle PDF Olarak Kaydedin
 
-Önceden yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF biçiminde kaydedin.
+Önceden yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
@@ -101,7 +101,7 @@ C: Aspose.Words for .NET kullanarak bir PDF belgesinde WMF yazı tiplerinin meta
 
  örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve daha önce yapılandırılan meta dosyası işleme seçeneklerini kullanma.
 
- kullanarak belgeyi PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
+ kullanarak belgeyi PDF biçiminde kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
 
 #### S: Bir PDF belgesinde WMF yazı tiplerini meta dosya boyutuna göre yeniden boyutlandırmanın faydaları nelerdir?
 Y: Bir PDF belgesinde WMF yazı tiplerini meta dosya boyutuna göre yeniden boyutlandırmanın avantajları şunlardır:

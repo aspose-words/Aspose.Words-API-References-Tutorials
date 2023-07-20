@@ -12,7 +12,7 @@ Dans ce didacticiel étape par étape, nous vous expliquerons comment couper des
 
 Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas déjà fait, téléchargez et installez la bibliothèque à partir du site officiel.
 
-## Étape 1 : Initialisation de l'objet Document
+## Étape 1 : Initialisation de l'objet document
 
  Tout d'abord, initialisez le`Document` objet en spécifiant le chemin d'accès à votre document source contenant du texte dans différentes langues :
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/replace-with-regex/
 ---
-Bu makalede, Aspose.Words for .NET kütüphanesinde Regex ile Değiştir işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, normal bir ifade tarafından tanımlanan belirli kalıplara dayalı olarak metin değiştirme gerçekleştirmenize olanak tanır.
+Bu makalede, Aspose.Words for .NET kitaplığında Regex ile Değiştir işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, normal bir ifade tarafından tanımlanan belirli kalıplara dayalı olarak metin değiştirme gerçekleştirmenize olanak tanır.
 
 ## Önkoşullar
 
@@ -123,7 +123,7 @@ C: Evet, Aspose.Words for .NET'te düzenli ifadeler kullanarak eşleşen kalıba
 
 #### S: Aspose.Words for .NET'te metin değişimi için normal ifadeler kullanırken herhangi bir sınırlama veya dikkat edilmesi gereken nokta var mı?
 
-C: Aspose.Words for .NET'te metin değişimi için normal ifadeler kullanırken, karmaşıklık ve performans etkilerinin farkında olmak önemlidir. Normal ifadeler güçlü olabilir, ancak karmaşık kalıplar arama ve değiştirme işleminin performansını etkileyebilir. Ek olarak, normal ifadelerinizin doğru olduğundan ve uç durumları veya belgenin içeriğiyle olası çatışmaları hesaba kattığından emin olun.
+Y: Aspose.Words for .NET'te metin değişimi için normal ifadeler kullanırken, karmaşıklık ve performans etkilerinin farkında olmak önemlidir. Normal ifadeler güçlü olabilir, ancak karmaşık kalıplar arama ve değiştirme işleminin performansını etkileyebilir. Ek olarak, normal ifadelerinizin doğru olduğundan emin olun ve her türlü önemli durumu veya belgenin içeriğiyle olası çatışmaları hesaba katın.
 
 #### S: Aspose.Words for .NET'te normal ifadeler kullanarak büyük/küçük harfe duyarsız metin değişimi yapabilir miyim?
 

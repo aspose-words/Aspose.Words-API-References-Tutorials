@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 
-Bu eğitimde, size Aspose.Words .NET kitaplığını kullanarak bir Word belgesinin tüm bölümlerinde kelime sayfası kurulumunu nasıl değiştireceğinizi göstereceğiz. Sayfa düzenini değiştirmek, kağıt boyutu, kenar boşlukları, yönlendirme vb. ayarları içerebilir. Kodu anlamanıza ve .NET projenizde uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
+Bu öğreticide, size Aspose.Words .NET kitaplığını kullanarak bir Word belgesinin tüm bölümlerinde kelime sayfası kurulumunu nasıl değiştireceğinizi göstereceğiz. Sayfa düzenini değiştirmek, kağıt boyutu, kenar boşlukları, yönlendirme vb. ayarları içerebilir. Kodu anlamanıza ve .NET projenizde uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
 ## Önkoşullar
 Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:

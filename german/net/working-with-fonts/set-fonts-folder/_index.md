@@ -61,7 +61,7 @@ Herzlichen Glückwunsch! Sie wissen jetzt, wie Sie das Schriftartenverzeichnis i
 
 #### F: Wie kann ich in Aspose.Words einen benutzerdefinierten Schriftartenordner festlegen?
 
- A: Um einen benutzerdefinierten Schriftartenordner in Aspose.Words festzulegen, können Sie den verwenden`FontsFolder` Klasse und die`SetFontsFolders` Methode, die den Pfad zu dem Ordner angibt, der Ihre Schriftarten enthält.
+ A: Um einen benutzerdefinierten Schriftartenordner in Aspose.Words festzulegen, können Sie den verwenden`FontsFolder` Klasse und die`SetFontsFolders` -Methode, die den Pfad zu dem Ordner angibt, der Ihre Schriftarten enthält.
 
 #### F: Kann ich in Aspose.Words mehrere Schriftartenordner festlegen?
 

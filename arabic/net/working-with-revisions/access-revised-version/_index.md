@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### س: كيف يمكنني الوصول إلى النسخة المنقحة من المستند في Aspose.Words for .NET؟
 
- ج: استخدم ملف`RevisionsView`ممتلكات`Document` على الوصول إلى النسخة المنقحة من المستند. يمكنك تعيين قيمة ملف`RevisionsView` ملكية ل`RevisionsView.Final` لإظهار النسخة النهائية بدون المراجعات.
+ ج: استخدم ملف`RevisionsView` ممتلكات`Document` على الوصول إلى النسخة المنقحة من المستند. يمكنك تعيين قيمة ملف`RevisionsView` الملكية ل`RevisionsView.Final` لإظهار النسخة النهائية بدون المراجعات.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### س: كيف أتصفح تنقيحات المستندات في Aspose.Words لـ .NET؟
 
- ج: استخدم أ`foreach` حلقة للتكرار خلال المراجعات الموجودة في المستند. يمكنك استخدام ال`Revisions`ممتلكات`Document` للحصول على مجموعة من كافة المراجعات للمستند.
+ ج: استخدم أ`foreach` حلقة للتكرار خلال المراجعات الموجودة في المستند. يمكنك استخدام ال`Revisions` ممتلكات`Document` للحصول على مجموعة من كافة المراجعات للمستند.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -106,7 +106,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### س: كيف تتحقق مما إذا كانت الفقرة هي عنصر قائمة في Aspose.Words for .NET؟
 
- ج: استخدم ملف`IsListItem`ممتلكات`Paragraph` للتحقق مما إذا كانت الفقرة عبارة عن عنصر قائمة. ال`IsListItem` إرجاع الممتلكات`true` إذا كانت الفقرة عنصر قائمة ، وإلا فإنها ستعود`false`.
+ ج: استخدم ملف`IsListItem` ممتلكات`Paragraph` للتحقق مما إذا كانت الفقرة عبارة عن عنصر قائمة. ال`IsListItem` إرجاع الممتلكات`true` إذا كانت الفقرة عنصر قائمة ، وإلا فإنها ستعود`false`.
 
 ```csharp
 if (paragraph.IsListItem)

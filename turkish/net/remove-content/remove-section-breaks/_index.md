@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/remove-content/remove-section-breaks/
 ---
-Bu öğreticide, Aspose.Words for .NET kitaplığını kullanarak bir Word belgesinden bölüm sonlarını kaldırma sürecinde size yol göstereceğiz. Bölüm sonları bazen biçimlendirme sorunlarına neden olabilir veya belgenizin akışını bozabilir ve bu kod parçacığı bunları etkili bir şekilde ortadan kaldırmanıza yardımcı olur. Kodu anlamanıza ve kendi .NET projenizde uygulamanıza yardımcı olacak adım adım bir kılavuz sağlayacağız.
+Bu öğreticide, Aspose.Words for .NET kitaplığını kullanarak bir Word belgesinden bölüm sonlarını kaldırma sürecinde size yol göstereceğiz. Bölüm sonları bazen biçimlendirme sorunlarına neden olabilir veya belgenizin akışını bozabilir ve bu kod parçacığı, bunları etkili bir şekilde ortadan kaldırmanıza yardımcı olur. Kodu anlamanıza ve kendi .NET projenizde uygulamanıza yardımcı olacak adım adım bir kılavuz sağlayacağız.
 
 ## Önkoşullar
 Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
@@ -100,7 +100,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 #### S: Aspose.Words kullanılarak bir belgedeki bölüm sonları nasıl kaldırılır?
 
-C: Bölüm sonlarını kaldırmak için, sondan önceki bölümden başlayıp ilk bölüme geçerek belgenin bölümlerini geriye doğru gitmeniz gerekir. Döngünün içinde, her bölümün içeriğini son bölümün başına öne eklemeniz ve ardından kopyalanan bölümü silmeniz gerekir. İşte örnek bir kod:
+A: Bölüm sonlarını kaldırmak için, sondan önceki bölümden başlayıp ilk bölüme geçerek belgenin bölümlerini geriye doğru gitmeniz gerekir. Döngünün içinde, her bölümün içeriğini son bölümün başına öne eklemeniz ve ardından kopyalanan bölümü silmeniz gerekir. İşte örnek bir kod:
 
 ```csharp
 //Son bölümden önceki bölümden başlayarak ve ilk bölüme geçerek tüm bölümler arasında geçiş yapın.

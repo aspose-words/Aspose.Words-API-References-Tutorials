@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 #### F: Wie kann ich auf Lesezeichen in einem Word-Dokument zugreifen?
 
- A: Sie können mit auf Lesezeichen in einem Word-Dokument zugreifen`Bookmarks`Eigentum der`Range` Objekt. Sie können auf Lesezeichen nach Index oder Namen zugreifen. Hier ist ein Beispielcode:
+ A: Sie können mit auf Lesezeichen in einem Word-Dokument zugreifen`Bookmarks` Eigentum der`Range` Objekt. Sie können auf Lesezeichen nach Index oder Namen zugreifen. Hier ist ein Beispielcode:
 
 - Zugriff per Index:
 
@@ -94,7 +94,7 @@ A: Um die Lesezeichenzugriffsfunktion in Aspose.Words für .NET nutzen zu könne
 
 #### F: Gibt es andere Möglichkeiten, auf Lesezeichen in einem Word-Dokument zuzugreifen?
 
- A: Ja, zusätzlich zum Zugriff auf Lesezeichen nach Index oder Name können Sie mithilfe einer Schleife auch alle Lesezeichen im Dokument durchlaufen. Sie können die Gesamtzahl der Lesezeichen im Dokument mithilfe von ermitteln`Count`Eigentum der`Bookmarks` Sammlung. Anschließend können Sie über den Index auf jedes Lesezeichen zugreifen. Hier ist ein Beispielcode:
+ A: Ja, zusätzlich zum Zugriff auf Lesezeichen nach Index oder Name können Sie mithilfe einer Schleife auch alle Lesezeichen im Dokument durchlaufen. Sie können die Gesamtzahl der Lesezeichen im Dokument mithilfe von ermitteln`Count` Eigentum der`Bookmarks` Sammlung. Anschließend können Sie über den Index auf jedes Lesezeichen zugreifen. Hier ist ein Beispielcode:
 
 ```csharp
 int bookmarkCount = doc.Range.Bookmarks.Count;

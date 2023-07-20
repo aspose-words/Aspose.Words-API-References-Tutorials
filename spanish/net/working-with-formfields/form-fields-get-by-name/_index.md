@@ -10,7 +10,7 @@ url: /es/net/working-with-formfields/form-fields-get-by-name/
 
 En este tutorial paso a paso, lo guiaremos sobre cómo usar Aspose.Words para .NET para recuperar campos de formulario por nombre de un documento de Word. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el sitio web oficial.
+ Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Paso 1: inicialización del objeto de documento
 
@@ -23,13 +23,13 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Paso 2: Recuperar campos de formulario
 
- A continuación, acceda a la`FormFields`propiedad de la`Range` objeto en el documento para recuperar todos los campos del formulario:
+ A continuación, acceda a la`FormFields` propiedad de la`Range` objeto en el documento para recuperar todos los campos del formulario:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;
 ```
 
-Puede recuperar campos de formulario por índice o por nombre. En este ejemplo, recuperamos un campo de formulario usando ambos métodos:
+Puede recuperar campos de formulario por índice o por nombre. En este ejemplo, recuperamos un campo de formulario utilizando ambos métodos:
 
 ```csharp
 FormField formField1 = documentFormFields[3]; //Recuperando por índice

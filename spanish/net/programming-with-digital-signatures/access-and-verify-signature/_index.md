@@ -92,18 +92,18 @@ R: A partir de una firma digital en un documento de Word, se puede acceder a div
 
 #### P: ¿Puedo verificar la validez de una firma digital en un documento de Word utilizando Aspose.Words para .NET?
 
- R: Sí, puede verificar la validez de una firma digital en un documento de Word usando Aspose.Words para .NET. Al acceder a la`IsValid`propiedad de la`DigitalSignature` objeto, puede determinar si la firma es válida o no.
+ R: Sí, puede verificar la validez de una firma digital en un documento de Word usando Aspose.Words para .NET. Al acceder a la`IsValid` propiedad de la`DigitalSignature` objeto, puede determinar si la firma es válida o no.
 
 #### P: ¿Cómo puedo verificar la validez de las firmas digitales en un documento de Word usando Aspose.Words para .NET?
 
 R: Para verificar la validez de las firmas digitales en un documento de Word utilizando Aspose.Words para .NET, puede seguir estos pasos:
 1.  Acceder al`DigitalSignatures` colección del documento.
 2.  Iterar a través de cada`DigitalSignature` objeto en la colección.
-3.  Utilizar el`IsValid`propiedad de la`DigitalSignature` objeto para comprobar si la firma es válida.
+3.  Utilizar el`IsValid` propiedad de la`DigitalSignature` objeto para comprobar si la firma es válida.
 
 #### P: ¿Puedo recuperar los comentarios del firmante o el motivo para firmar desde una firma digital en un documento de Word?
 
-R: Sí, puede recuperar los comentarios del firmante o el motivo de la firma a partir de una firma digital en un documento de Word. El`Comments`propiedad de la`DigitalSignature` El objeto proporciona acceso a los comentarios especificados por el firmante durante el proceso de firma.
+R: Sí, puede recuperar los comentarios del firmante o el motivo de la firma a partir de una firma digital en un documento de Word. El`Comments` propiedad de la`DigitalSignature` El objeto proporciona acceso a los comentarios especificados por el firmante durante el proceso de firma.
 
 #### P: ¿Qué tipo de documentos admite la función de verificación de firma en Aspose.Words para .NET?
 
@@ -111,7 +111,7 @@ R: La función de verificación de firmas en Aspose.Words para .NET admite la ve
 
 #### P: ¿Cómo puedo acceder a los detalles del certificado de una firma digital en un documento de Word usando Aspose.Words para .NET?
 
- R: Para acceder a los detalles del certificado de una firma digital en un documento de Word utilizando Aspose.Words para .NET, puede acceder a la`CertificateHolder`propiedad de la`DigitalSignature` objeto. Desde el`CertificateHolder` objeto, puede recuperar varios detalles del certificado, como el nombre del sujeto y el nombre del emisor.
+ R: Para acceder a los detalles del certificado de una firma digital en un documento de Word utilizando Aspose.Words para .NET, puede acceder a la`CertificateHolder` propiedad de la`DigitalSignature` objeto. Desde el`CertificateHolder` objeto, puede recuperar varios detalles del certificado, como el nombre del sujeto y el nombre del emisor.
 
 #### P: ¿Puedo personalizar la visualización o el procesamiento de firmas digitales en un documento de Word usando Aspose.Words para .NET?
 

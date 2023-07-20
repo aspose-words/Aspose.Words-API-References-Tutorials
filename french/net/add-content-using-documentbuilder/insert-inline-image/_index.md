@@ -1,13 +1,12 @@
 ---
-title: Insérer une image en ligne
-linktitle: Insérer une image en ligne
+title: Insérer une image en ligne dans un document Word
+linktitle: Insérer une image en ligne dans un document Word
 second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer des images en ligne dans des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-inline-image/
 ---
-
 Dans ce didacticiel complet, vous apprendrez à insérer des images en ligne dans un document Word à l'aide d'Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure d'ajouter des images directement dans le texte de vos documents.
 
 ## Conditions préalables
@@ -52,3 +51,25 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx")
 Toutes nos félicitations! Vous avez appris avec succès comment insérer des images en ligne dans un document Word en utilisant Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais ajouter des images de manière transparente dans le texte de vos documents.
 
 Les images en ligne sont utiles pour divers scénarios, tels que l'ajout d'illustrations, de logos ou d'autres éléments visuels directement dans le flux du document.
+
+### FAQ pour insérer une image en ligne dans un document Word
+
+#### Q : Puis-je redimensionner les images intégrées dans le document Word ?
+
+R : Oui, vous pouvez redimensionner les images en ligne à l'aide d'Aspose.Words pour .NET. Après avoir inséré l'image, vous pouvez manipuler sa taille en ajustant les propriétés width et height de l'objet Shape représentant l'image.
+
+#### Q : Est-il possible d'ajouter du texte alternatif aux images intégrées à des fins d'accessibilité ?
+
+R : Oui, vous pouvez ajouter du texte alternatif aux images intégrées pour améliorer l'accessibilité. Aspose.Words pour .NET prend en charge l'ajout de texte alternatif aux images, permettant aux lecteurs d'écran et autres technologies d'assistance de décrire le contenu de l'image aux utilisateurs malvoyants.
+
+#### Q : Puis-je appliquer une mise en forme ou des styles aux images intégrées ?
+
+R : Absolument ! Aspose.Words pour .NET fournit des options de formatage étendues pour les images en ligne. Vous pouvez appliquer divers styles, bordures, effets et autres attributs de mise en forme aux images pour correspondre à la conception visuelle de votre document.
+
+#### Q : Aspose.Words pour .NET prend-il en charge l'insertion d'images à partir d'un flux ou d'un tableau d'octets ?
+
+R : Oui, vous pouvez insérer des images en ligne à partir de flux ou de tableaux d'octets à l'aide d'Aspose.Words pour .NET. Cela vous permet de travailler avec des images chargées à partir de sources externes ou des images générées dynamiquement.
+
+#### Q : Puis-je insérer des images à des emplacements spécifiques dans le contenu du texte ?
+
+: Oui, la classe DocumentBuilder dans Aspose.Words pour .NET fournit un contrôle précis sur la position d'insertion des images en ligne. Vous pouvez spécifier l'emplacement exact dans le texte où l'image doit être insérée.

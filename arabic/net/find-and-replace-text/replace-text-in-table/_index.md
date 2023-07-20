@@ -17,7 +17,7 @@ url: /ar/net/find-and-replace-text/replace-text-in-table/
 
 ## الخطوة 1: قم بتحميل المستند
 
- قبل أن نبدأ في استخدام استبدال النص في جدول ، نحتاج إلى تحميل المستند إلى Aspose.Words for .NET. يمكن القيام بذلك باستخدام ملف`Document` فئة وتحديد مسار ملف المستند:
+ قبل أن نبدأ في استخدام استبدال النص في جدول ، نحتاج إلى تحميل المستند إلى Aspose.Words for .NET. يمكن القيام بذلك باستخدام ملف`Document` class وتحديد مسار ملف المستند:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -49,7 +49,7 @@ table.LastRow.LastCell.Range.Replace("50", "20", new FindReplaceOptions(FindRepl
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInTable.docx");
 ```
 
-Aspose.Words for .NET اتبعنا دليلًا تفصيليًا لتحميل مستند والوصول إلى الجدول وإجراء استبدال النص وحفظ المستند المعدل.
+Aspose.Words for .NET اتبعنا دليلاً مفصلاً خطوة بخطوة لتحميل مستند والوصول إلى الجدول وإجراء استبدال النص وحفظ المستند المعدل.
 
 ### مثال على شفرة المصدر لـ Replace Text In Table باستخدام Aspose.Words لـ .NET
 

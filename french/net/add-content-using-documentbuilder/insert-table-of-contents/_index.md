@@ -1,13 +1,12 @@
 ---
-title: Insérer la table des matières
-linktitle: Insérer la table des matières
+title: Insérer une table des matières dans un document Word
+linktitle: Insérer une table des matières dans un document Word
 second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer une table des matières dans des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-
 Dans ce didacticiel complet, vous apprendrez à insérer une table des matières dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure de générer une table des matières avec les titres et les numéros de page appropriés.
 
 ## Conditions préalables
@@ -127,3 +126,29 @@ doc.UpdateFields();
 
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
+
+## Conclusion
+
+Toutes nos félicitations! Vous avez appris avec succès comment insérer une table des matières dans un document Word en utilisant Aspose.Words pour .NET. En suivant ce guide étape par étape et en utilisant le code source fourni, vous pouvez maintenant générer une table des matières avec les titres et les numéros de page appropriés pour vos documents.
+
+### FAQ pour insérer une table des matières dans un document Word
+
+#### Q : Puis-je personnaliser l'apparence de la table des matières ?
+
+ R : Oui, vous pouvez personnaliser l'apparence de la table des matières en modifiant les options de mise en forme spécifiées dans le`InsertTableOfContents` méthode. Les paramètres vous permettent de contrôler les numéros de page, l'indentation et d'autres styles.
+
+#### Q : Que se passe-t-il si je souhaite inclure des niveaux de titre spécifiques dans la table des matières ?
+
+ R : Vous pouvez spécifier les niveaux de titre que vous souhaitez inclure dans la table des matières en ajustant la valeur dans`InsertTableOfContents` méthode. Par exemple, en utilisant`"\\o \"1-3\""` comprendra les titres des niveaux 1 à 3.
+
+#### Q : Puis-je mettre à jour automatiquement la table des matières si j'apporte des modifications au contenu du document ?
+
+ R : Oui, vous pouvez mettre à jour automatiquement la table des matières en appelant le`UpdateFields` méthode sur le document. Cela garantira que toutes les modifications apportées au contenu du document, telles que l'ajout ou la suppression de titres, sont reflétées dans la table des matières.
+
+#### Q : Comment puis-je styliser différemment les niveaux de titre dans la table des matières ?
+
+ R : Vous pouvez styliser les niveaux de titre différemment en utilisant différents styles de paragraphe pour chaque niveau de titre. En attribuant différents`StyleIdentifier` valeurs à la`ParagraphFormat` de la`DocumentBuilder`, vous pouvez créer des styles distincts pour chaque niveau de titre.
+
+#### Q : Est-il possible d'ajouter une mise en forme supplémentaire aux titres de la table des matières ?
+
+ R : Oui, vous pouvez ajouter une mise en forme supplémentaire aux titres de la table des matières, comme les styles de police, les couleurs ou d'autres propriétés. En ajustant le`Font` propriétés de la`DocumentBuilder`, vous pouvez appliquer une mise en forme personnalisée aux titres.

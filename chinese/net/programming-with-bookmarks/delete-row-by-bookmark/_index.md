@@ -61,7 +61,7 @@ row?.Remove();
 
 #### 问：Aspose.Words 库可以免费使用吗？
 
-答：Aspose.Words 库是一个商业库，您可能需要有效的许可证才能在项目中使用它。您可以访问 Aspose 官方网站，了解有关其许可选项和定价的更多信息。
+答：Aspose.Words 库是一个商业库，您可能需要有效的许可证才能在项目中使用它。您可以访问[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)了解有关其许可选项和定价的更多信息。
 
 #### 问：我可以从 Word 文档特定部分的表格中删除行吗？
 

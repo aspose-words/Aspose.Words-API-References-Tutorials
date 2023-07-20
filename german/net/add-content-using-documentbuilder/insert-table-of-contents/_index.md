@@ -1,13 +1,12 @@
 ---
-title: Inhaltsverzeichnis einfügen
-linktitle: Inhaltsverzeichnis einfügen
+title: Inhaltsverzeichnis in Word-Dokument einfügen
+linktitle: Inhaltsverzeichnis in Word-Dokument einfügen
 second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis in Word-Dokumente einfügen.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-
 In diesem umfassenden Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis in ein Word-Dokument einfügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Leitfadens werden Sie in der Lage sein, ein Inhaltsverzeichnis mit den entsprechenden Überschriften und Seitenzahlen zu erstellen.
 
 ## Voraussetzungen
@@ -127,3 +126,29 @@ doc.UpdateFields();
 
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
+
+## Abschluss
+
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis in ein Word-Dokument einfügen. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode nutzen, können Sie nun ein Inhaltsverzeichnis mit passenden Überschriften und Seitenzahlen für Ihre Dokumente erstellen.
+
+### FAQs zum Einfügen eines Inhaltsverzeichnisses in ein Word-Dokument
+
+#### F: Kann ich das Erscheinungsbild des Inhaltsverzeichnisses anpassen?
+
+ A: Ja, Sie können das Erscheinungsbild des Inhaltsverzeichnisses anpassen, indem Sie die im angegebenen Formatierungsoptionen ändern`InsertTableOfContents` Methode. Mit den Parametern können Sie die Seitenzahlen, Einrückungen und andere Stile steuern.
+
+#### F: Was passiert, wenn ich bestimmte Überschriftenebenen in das Inhaltsverzeichnis aufnehmen möchte?
+
+ A: Sie können die gewünschten Überschriftenebenen angeben, die in das Inhaltsverzeichnis aufgenommen werden sollen, indem Sie den Wert innerhalb anpassen`InsertTableOfContents` Methode. Zum Beispiel mit`"\\o \"1-3\""` umfasst die Überschriftenebenen 1 bis 3.
+
+#### F: Kann ich das Inhaltsverzeichnis automatisch aktualisieren, wenn ich Änderungen am Dokumentinhalt vornehme?
+
+ A: Ja, Sie können das Inhaltsverzeichnis automatisch aktualisieren, indem Sie die aufrufen`UpdateFields` Methode für das Dokument. Dadurch wird sichergestellt, dass alle am Dokumentinhalt vorgenommenen Änderungen, wie z. B. das Hinzufügen oder Entfernen von Überschriften, im Inhaltsverzeichnis widergespiegelt werden.
+
+#### F: Wie kann ich die Überschriftenebenen im Inhaltsverzeichnis unterschiedlich gestalten?
+
+ A: Sie können die Überschriftenebenen unterschiedlich gestalten, indem Sie für jede Überschriftenebene unterschiedliche Absatzstile verwenden. Durch die Zuweisung unterschiedlicher`StyleIdentifier` Werte zum`ParagraphFormat` des`DocumentBuilder`können Sie für jede Überschriftenebene unterschiedliche Stile erstellen.
+
+#### F: Ist es möglich, den Überschriften im Inhaltsverzeichnis zusätzliche Formatierungen hinzuzufügen?
+
+ A: Ja, Sie können den Überschriften im Inhaltsverzeichnis zusätzliche Formatierungen hinzufügen, z. B. Schriftarten, Farben oder andere Eigenschaften. Durch Anpassen der`Font` Eigenschaften der`DocumentBuilder`können Sie benutzerdefinierte Formatierungen auf die Überschriften anwenden.

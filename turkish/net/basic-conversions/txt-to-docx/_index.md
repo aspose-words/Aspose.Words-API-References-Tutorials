@@ -10,7 +10,7 @@ url: /tr/net/basic-conversions/txt-to-docx/
 
 Bu adım adım öğreticide, bir düz metin dosyasını (Txt) Docx formatında bir Word belgesine dönüştürmek için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
+ Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı adresinden indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## 1. Adım: Belge Nesnesini Başlatma
 
@@ -62,4 +62,4 @@ Dönüştürme işleminin sınırlamaları, kullandığınız araca veya kitapl�
 
 #### Aspose, metin dosyasını Word belgesine dönüştürmek için güvenilir bir araç mı?
 
-Evet, Aspose.Words for .NET, metin dosyasını Word belgesine dönüştürmek için güvenilir bir araçtır. Kalitesi, doğruluğu ve gelişmiş özellikleri nedeniyle endüstride yaygın olarak kullanılmaktadır. Kapsamlı dokümantasyon, düzenli güncellemeler ve özel teknik destek sunan araç, onu doküman dönüştürme görevleri için önerilen bir seçenek haline getiriyor.
+Evet, Aspose.Words for .NET, metin dosyasını Word belgesine dönüştürmek için güvenilir bir araçtır. Kalitesi, doğruluğu ve gelişmiş özellikleri nedeniyle endüstride yaygın olarak kullanılmaktadır. Araç, kapsamlı dokümantasyon, düzenli güncellemeler ve özel teknik destek sunarak, onu doküman dönüştürme görevleri için önerilen bir seçenek haline getiriyor.

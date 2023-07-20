@@ -61,7 +61,7 @@ A: Wenn das angegebene Lesezeichen im Dokument nicht vorhanden ist, gibt das Cod
 
 #### F: Ist die Nutzung der Aspose.Words-Bibliothek kostenlos?
 
-A: Die Aspose.Words-Bibliothek ist eine kommerzielle Bibliothek und Sie benötigen möglicherweise eine gültige Lizenz, um sie in Ihren Projekten verwenden zu können. Sie können die offizielle Aspose-Website besuchen, um mehr über die Lizenzoptionen und Preise zu erfahren.
+ A: Die Aspose.Words-Bibliothek ist eine kommerzielle Bibliothek und Sie benötigen möglicherweise eine gültige Lizenz, um sie in Ihren Projekten verwenden zu können. Sie können die besuchen[Aspose.Words für .NET-API-Referenzen](https://reference.aspose.com/words/net/) um mehr über ihre Lizenzoptionen und Preise zu erfahren.
 
 #### F: Kann ich Zeilen aus einer Tabelle in einem bestimmten Abschnitt des Word-Dokuments löschen?
 

@@ -10,7 +10,7 @@ url: /it/net/working-with-list/restart-list-at-each-section/
 
 In questo tutorial passo passo, ti mostreremo come reimpostare un elenco numerato in ogni sezione in un documento di Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria dal sito ufficiale.
+ Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria da[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Passaggio 1: creazione del documento e dell'elenco
 

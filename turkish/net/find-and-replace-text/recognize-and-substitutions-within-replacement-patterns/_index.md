@@ -71,7 +71,7 @@ Bu makalede, Aspose.Words for .NET'in Değiştirme Modelleri İçinde Tanı ve D
 
 #### S: Aspose.Words for .NET'teki "Değiştirme Kalıpları İçinde Tanınma ve Değiştirmeler" özelliği nedir?
 
-C: Aspose.Words for .NET'teki "Değiştirme Kalıpları İçinde Yer Değiştirmeleri Tanıyın" özelliği, düzenli ifadeler kullanarak karmaşık arama kalıplarını tanımanıza ve belge manipülasyonu sırasında yakalanan gruplara dayalı olarak değiştirmeler gerçekleştirmenize olanak tanır. Değiştirme modelinde yakalanan gruplara başvurarak eşleşen metni dinamik olarak dönüştürmenize olanak tanır.
+C: Aspose.Words for .NET'teki "Değiştirme Kalıpları İçinde Tanınma ve Değiştirmeler" özelliği, düzenli ifadeler kullanarak karmaşık arama kalıplarını tanımanıza ve belge manipülasyonu sırasında yakalanan gruplara dayalı olarak değiştirmeler gerçekleştirmenize olanak tanır. Değiştirme modelinde yakalanan gruplara başvurarak eşleşen metni dinamik olarak dönüştürmenize olanak tanır.
 
 #### S: Aspose.Words for .NET kullanarak nasıl yeni bir belge oluşturabilirim?
 
@@ -101,20 +101,20 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### S: Aspose.Words for .NET'te metin arama ve değiştirme sırasında yakalanan grupları değiştirme modelinde nasıl kullanabilirim?
 
- C: Aspose.Words for .NET'te metin arama ve değiştirme sırasında değiştirme modelinde yakalanan grupları kullanmak için`UseSubstitutions`mülkiyeti`FindReplaceOptions` nesne. Bu, kullanarak yakalanan gruplara başvurmanıza izin verir.`$1`, `$2`, vb.
+ C: Aspose.Words for .NET'te metin arama ve değiştirme sırasında değiştirme modelinde yakalanan grupları kullanmak için`UseSubstitutions` mülkiyeti`FindReplaceOptions` nesne. Bu, kullanarak yakalanan gruplara başvurmanıza izin verir.`$1`, `$2`, vb.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 doc.Range.Replace(regex, @"$2 takes money from $1", options);
 ```
 
-#### S: Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanınma ve Değiştirmeler" özelliği için örnek kaynak kodu neyi gösteriyor?
+#### S: Aspose.Words for .NET'teki "Değiştirme Kalıpları İçinde Tanınma ve Değiştirmeler" özelliği için örnek kaynak kodu neyi gösteriyor?
 
-Y: Örnek kaynak kodu, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanınma ve Değiştirmeler" özelliğinin kullanımını gösterir. Bir belgenin nasıl oluşturulacağını, metin ekleneceğini, normal ifadeler kullanılarak metin arama ve değiştirme işleminin nasıl gerçekleştirileceğini ve eşleşen metni dinamik olarak dönüştürmek için değiştirme modelinde yakalanan grupların nasıl kullanılacağını gösterir.
+C: Örnek kaynak kodu, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanınma ve Değiştirmeler" özelliğinin kullanımını gösterir. Bir belgenin nasıl oluşturulacağını, metin ekleneceğini, normal ifadeler kullanılarak metin arama ve değiştirme işleminin nasıl gerçekleştirileceğini ve eşleşen metni dinamik olarak dönüştürmek için değiştirme modelinde yakalanan grupların nasıl kullanılacağını gösterir.
 
 #### S: Aspose.Words for .NET'te düzenli ifadelerin kullanımına ilişkin daha fazla bilgiyi ve örneği nerede bulabilirim?
 
-C: Aspose.Words for .NET'te düzenli ifadelerin kullanımına ilişkin daha fazla bilgi ve örnek için resmi belgelere ve Aspose.Words GitHub deposuna başvurabilirsiniz. Dokümantasyon, Aspose.Words for .NET'te düzenli ifadeler ve metin manipülasyonu içeren çeşitli senaryolar için ayrıntılı açıklamalar ve kod örnekleri sağlar.
+C: Aspose.Words for .NET'te normal ifadelerin kullanımına ilişkin daha fazla bilgi ve örnekler için şu adrese başvurabilirsiniz:[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/). Dokümantasyon, Aspose.Words for .NET'te düzenli ifadeler ve metin manipülasyonu içeren çeşitli senaryolar için ayrıntılı açıklamalar ve kod örnekleri sağlar.
 
 #### S: Metin arama ve değiştirme sırasında yakalanan gruplara dayalı olarak belgenin diğer yönlerini değiştirebilir miyim?
 

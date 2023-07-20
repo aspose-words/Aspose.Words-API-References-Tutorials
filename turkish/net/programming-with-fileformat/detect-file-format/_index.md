@@ -14,7 +14,7 @@ Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzd
 
 ## 1. Adım: Dizinleri tanımlayın
 
- Başlamak için, dosyaları formatlarına göre depolamak istediğiniz dizinleri tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeler dizininize giden gerçek yolla. "Supported", "Unknown", "Encrypted" ve "Pre97" dizinleri mevcut değilse oluşturuyoruz.
+ Başlamak için, dosyaları formatlarına göre depolamak istediğiniz dizinleri tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla. "Supported", "Unknown", "Encrypted" ve "Pre97" dizinleri mevcut değilse oluşturuyoruz.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## 2. Adım: Dosyalara Göz Atın
 
- Sonra kullanırız`GetFiles` yöntemi`Directory` belirtilen dizindeki dosyaların listesini almak için sınıf. Ayrıca bir`Where` yan tümcesi "Bozuk belge.docx" adlı belirli bir dosyayı hariç tutmak için.
+ Sonra kullanırız`GetFiles` yöntemi`Directory` belirtilen dizindeki dosyaların listesini almak için sınıf. Ayrıca bir`Where`yan tümcesi "Bozuk belge.docx" adlı belirli bir dosyayı hariç tutmak için.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ Bu kadar ! Aspose.Words for .NET'i kullanarak farklı belge dosyalarının forma
 
 #### Aspose.Words for .NET kullanılarak bir belge dosyasının formatı nasıl belirlenir?
 
- Aspose.Words for .NET kullanarak bir belge dosyasının formatını algılamak için eğitimde verilen adımları takip edebilirsiniz. Kullanmak`DetectFileFormat` yöntemi`FileFormatUtil` class, belge dosyasının biçimini algılamanıza izin verecektir. Bu, Microsoft Word 97-2003 belgesi mi, şablon mu, Office Açık XML WordprocessingML belgesi mi yoksa desteklenen diğer biçimler mi olduğunu belirlemenize olanak tanır. Öğreticide sağlanan kod, bu özelliği uygularken size yol gösterecektir.
+ Aspose.Words for .NET kullanarak bir belge dosyasının formatını algılamak için eğitimde verilen adımları takip edebilirsiniz. Kullanmak`DetectFileFormat` yöntemi`FileFormatUtil`class, belge dosyasının biçimini algılamanıza izin verecektir. Bu, Microsoft Word 97-2003 belgesi mi, şablon mu, Office Açık XML WordprocessingML belgesi mi yoksa desteklenen diğer biçimler mi olduğunu belirlemenize olanak tanır. Öğreticide sağlanan kod, bu özelliği uygularken size yol gösterecektir.
 
 #### Aspose.Words for .NET hangi belge formatlarını destekliyor?
 
@@ -219,7 +219,7 @@ Aspose.Words for .NET, Microsoft Word 97-2003 belgeleri (DOC), Şablonlar (DOT),
 
 #### Biçim tespiti sırasında şifrelenmiş belge dosyaları nasıl işlenir?
 
- Bir belge dosyasının biçimini algılarken,`IsEncrypted`mülkiyeti`FileFormatInfo` dosyanın şifrelenip şifrelenmediğini kontrol etmek için nesne. Dosya şifrelenmişse, bu özel durumla başa çıkmak için dosyayı şifrelenmiş belgelere ayrılmış bir dizine kopyalamak gibi ek adımlar atabilirsiniz. kullanabilirsiniz`File.Copy` bunu yapmak için yöntem.
+ Bir belge dosyasının biçimini algılarken,`IsEncrypted` mülkiyeti`FileFormatInfo` dosyanın şifrelenip şifrelenmediğini kontrol etmek için nesne. Dosya şifrelenmişse, bu özel durumla başa çıkmak için dosyayı şifrelenmiş belgelere ayrılmış bir dizine kopyalamak gibi ek adımlar atabilirsiniz. kullanabilirsiniz`File.Copy` bunu yapmak için yöntem.
 
 #### Bir belgenin formatı bilinmediğinde hangi işlemler yapılmalıdır?
 

@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## Conclusión
 
-En esta guía, hemos cubierto cómo usar Aspose.Words para .NET para agregar ecuaciones matemáticas a un documento de Word usando el código fuente de C# proporcionado. Siguiendo los pasos proporcionados, puede agregar fácilmente ecuaciones matemáticas a sus documentos de Word en su aplicación C#. Aspose.Words ofrece una gran flexibilidad y potencia para el procesamiento de textos con ecuaciones matemáticas, lo que le permite crear documentos profesionales con un buen formato.
+En esta guía, hemos cubierto cómo usar Aspose.Words para .NET para agregar ecuaciones matemáticas a un documento de Word usando el código fuente de C# provisto. Siguiendo los pasos proporcionados, puede agregar fácilmente ecuaciones matemáticas a sus documentos de Word en su aplicación C#. Aspose.Words ofrece una gran flexibilidad y potencia para el procesamiento de textos con ecuaciones matemáticas, lo que le permite crear documentos profesionales con un buen formato.

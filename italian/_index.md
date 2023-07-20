@@ -8,7 +8,7 @@ url: /it/
 is_root: true
 ---
 
-## Aspose.Words per .NET
+## Aspose.Words Document Processing Tutorial per .NET
 {{% alert color="primary" %}}
 Tutorial Aspose.Words per .NET e frammenti di codice per creare, modificare, convertire, stampare e molte altre funzionalità per i documenti Word nella tua applicazione. 
 {{% /alert %}}
@@ -35,3 +35,20 @@ Questi sono i link ad alcune risorse utili:
 - [Programmazione con filigrana](./net/programming-with-watermark/)    
 - [Programmare con Markdownsaveoptions](./net/programming-with-markdownsaveoptions/)   
 - [Conversioni di base](./net/basic-conversions/)   
+
+## Aspose.Words Document Processing Tutorial per Java
+{{% alert color="primary" %}}
+Gestisci l'elaborazione dei documenti con i tutorial Java di Aspose.Words. Impara l'elaborazione di testi, l'elaborazione di tabelle, l'unione e altro ancora. Automatizza le attività relative ai documenti in modo efficiente. 
+{{% /alert %}}
+
+Questi sono i link ad alcune risorse utili:
+- [Elaborazione di testi](./java/word-processing/)  
+- [Elaborazione della tabella](./java/table-processing/)
+- [Stile del documento](./java/document-styling/)
+- [Unione di documenti](./java/document-merging/)
+- [Conversione di documenti](./java/document-converting/)
+- [Stampa di documenti](./java/document-printing/)
+- [Rendering del documento](./java/document-rendering/)
+- [Sicurezza dei documenti](./java/document-security/)
+- [Divisione del documento](./java/document-splitting/)
+- [Revisione del documento](./java/document-revision/)

@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Qui usiamo il generatore di documenti per costruire la tabella e impostare le proprietà di unione orizzontale delle celle. Noi usiamo il`HorizontalMerge`proprietà del`CellFormat` oggetto per specificare il tipo di unione orizzontale da applicare a ciascuna cella. Usando`CellMerge.First` uniamo la prima cella con quella successiva, durante l'utilizzo`CellMerge.Previous` uniamo la cella corrente con la cella precedente.`CellMerge.None` indica che la cella non deve essere unita.
+ Qui usiamo il generatore di documenti per costruire la tabella e impostare le proprietà di unione orizzontale delle celle. Noi usiamo il`HorizontalMerge` proprietà del`CellFormat` oggetto per specificare il tipo di unione orizzontale da applicare a ciascuna cella. Usando`CellMerge.First` uniamo la prima cella con quella successiva, durante l'utilizzo`CellMerge.Previous` uniamo la cella corrente con la cella precedente.`CellMerge.None` indica che la cella non deve essere unita.
 
 ## Passaggio 4: salvare il documento modificato
 Infine, dobbiamo salvare il documento modificato con le celle unite orizzontalmente. Usa il seguente codice:

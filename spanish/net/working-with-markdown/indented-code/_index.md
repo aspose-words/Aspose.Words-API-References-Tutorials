@@ -53,7 +53,7 @@ builder.Writeln("This is an indented code");
 
 #### P: ¿Qué es el código sangrado en Markdown?
 
-R: El código sangrado en Markdown es un método de formato que se usa para mostrar el código en un documento de Markdown. Consiste en sangrar cada línea de código con espacios o tabulaciones.
+R: El código sangrado en Markdown es un método de formato que se usa para mostrar el código en un documento de Markdown. Consiste en sangrar cada línea de código con espacios o tabuladores.
 
 #### P: ¿Cómo usar código sangrado en Markdown?
 

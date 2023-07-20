@@ -51,7 +51,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- Bu adımda, uyguladığımız`HandlePageSavingCallback` uygulayan sınıf`IPageSavingCallback` arayüz. Özel eylemlerinizi ekleyerek bu sınıfı özelleştirebilirsiniz.`PageSaving` yöntem. Sayfa bilgilerine şu adresten ulaşabilirsiniz:`args.PageIndex`mülkiyeti`PageSavingArgs` argüman olarak iletilen nesne.
+ Bu adımda, uyguladığımız`HandlePageSavingCallback` uygulayan sınıf`IPageSavingCallback` arayüz. Özel eylemlerinizi ekleyerek bu sınıfı özelleştirebilirsiniz.`PageSaving` yöntem. Sayfa bilgilerine şu adresten ulaşabilirsiniz:`args.PageIndex` mülkiyeti`PageSavingArgs` argüman olarak iletilen nesne.
 
 ## 5. Adım: Sayfaları resim olarak kaydetme
 

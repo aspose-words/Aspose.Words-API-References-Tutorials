@@ -2,7 +2,7 @@
 title: Word Belgesi Koruması
 linktitle: Word Belgesi Koruması
 second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile Word belgelerini nasıl koruyacağınızı öğrenin. Öğreticiler, değişiklikleri kilitleme, parola koruması, belge öğelerine erişimi kısıtlama ve çok daha fazlası gibi çeşitli koruma yöntemlerinde size rehberlik edecektir.
+description: Aspose.Words for .NET ile Word belgelerini nasıl koruyacağınızı öğrenin. Öğreticiler, değişiklikleri kilitleme, parola koruması, belge öğelerine erişimi kısıtlama ve çok daha fazlası gibi çeşitli koruma yöntemleri konusunda size rehberlik edecektir.
 type: docs
 weight: 1430
 url: /tr/net/document-protection/

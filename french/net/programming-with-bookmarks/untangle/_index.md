@@ -88,4 +88,4 @@ R : La fonction Démêler présentée dans cet article est spécialement conçue
 
 #### Q : Existe-t-il d'autres méthodes pour démêler les signets imbriqués dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
-R : La méthode présentée dans cet article est une méthode courante pour démêler les signets imbriqués dans les lignes de tableau adjacentes. Cependant, il peut y avoir d'autres approches ou techniques selon les besoins spécifiques de votre projet. Vous pouvez consulter la documentation officielle d'Aspose.Words pour explorer davantage les fonctionnalités disponibles.
+ R : La méthode présentée dans cet article est une méthode courante pour démêler les signets imbriqués dans les lignes de tableau adjacentes. Cependant, il peut y avoir d'autres approches ou techniques selon les besoins spécifiques de votre projet. Vous pouvez consulter le[Aspose.Words pour les références d'API .NET](https://reference.aspose.com/words/net/) pour explorer davantage les fonctionnalités disponibles.

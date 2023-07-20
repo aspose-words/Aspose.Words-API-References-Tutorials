@@ -61,7 +61,7 @@ Console.WriteLine(text);
 
 ## Çözüm
 
-Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesinden metin çıkarmak için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Sağlanan adımları izleyerek, C# uygulamanızdaki Word belgelerinizdeki belirli aralıklardan kolayca metin çıkarabilirsiniz. Aspose.Words, metni özel ihtiyaçlarınıza göre işlemenize ve kullanmanıza izin vererek belge içeriğiyle Kelime İşleme için muazzam esneklik ve güç sunar.
+Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesinden metin çıkarmak için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Sağlanan adımları izleyerek, C# uygulamanızdaki Word belgelerinizdeki belirli aralıklardan kolayca metin çıkarabilirsiniz. Aspose.Words, metni özel ihtiyaçlarınıza göre işlemenize ve kullanmanıza izin vererek belge içeriğiyle Kelime İşleme için muazzam bir esneklik ve güç sunar.
 
 ### Aralıklar için SSS'ler kelime belgesinde metin alır
 
@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 string text = doc.Range.Text;
 ```
 
- Bu kod, belgenin tüm aralığına erişir.`Range`mülkiyeti`Document` sınıfı kullanarak bu aralıkta bulunan metni alır ve alır.`Text` mülk.
+ Bu kod, belgenin tüm aralığına erişir.`Range` mülkiyeti`Document` sınıfı kullanarak bu aralıkta bulunan metni alır ve alır.`Text` mülk.
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesindeki birden çok aralıktan metin çıkarabilir miyim?
 

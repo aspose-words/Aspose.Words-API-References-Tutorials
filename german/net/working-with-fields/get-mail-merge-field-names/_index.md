@@ -114,6 +114,6 @@ A: Ja, Sie können die Serienbrieffelder aus einer externen Datenquelle wie eine
 
 A: Ja, es ist möglich, Serienbrieffelder nach bestimmten Kriterien zu filtern. Sie können reguläre Ausdrücke oder bestimmte Bedingungen verwenden, um Serienbrieffelder zu filtern und nur diejenigen abzurufen, die Ihren spezifischen Kriterien entsprechen.
 
-#### F: Wie kann ich Serienbrieffelder in Aspose.Words bearbeiten?
+#### F: Wie kann ich Seriendruckfelder in Aspose.Words bearbeiten?
 
 A: Um Serienbrieffelder in Aspose.Words zu bearbeiten, können Sie die Methoden und Eigenschaften verwenden, die von den Objekten Document und MailMergeField bereitgestellt werden. Sie können Serienbrieffelder hinzufügen, entfernen oder aktualisieren sowie mit Feldern verknüpfte Werte abrufen und bearbeiten.

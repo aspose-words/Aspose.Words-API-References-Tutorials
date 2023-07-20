@@ -66,7 +66,7 @@ R: Il nodo padre in Node.js si riferisce al successivo nodo superiore nella gera
 
 #### D: Come verificare se un nodo ha un nodo genitore?
 
- A: Per verificare se un nodo ha un nodo padre, puoi semplicemente verificare se il file`parentNode` proprietà del nodo è impostata. Se impostato, significa che il nodo ha un nodo genitore.
+ A: Per verificare se un nodo ha un nodo padre, puoi semplicemente verificare se il file`parentNode` proprietà del nodo è impostata. Se impostato, significa che il nodo ha un nodo padre.
 
 #### D: Possiamo cambiare il nodo padre di un nodo?
 

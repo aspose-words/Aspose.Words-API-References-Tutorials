@@ -1,13 +1,12 @@
 ---
-title: Insérer un champ de formulaire de saisie de texte
-linktitle: Insérer un champ de formulaire de saisie de texte
+title: Insérer un champ de formulaire de saisie de texte dans un document Word
+linktitle: Insérer un champ de formulaire de saisie de texte dans un document Word
 second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser Aspose.Words pour .NET pour insérer un champ de formulaire de saisie de texte dans des documents Word avec ce guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
-
 Dans ce guide étape par étape, nous allons explorer comment utiliser la fonctionnalité Insérer un champ de formulaire de saisie de texte dans Aspose.Words pour .NET pour ajouter et manipuler des champs de formulaire de saisie de texte dans vos documents Word à l'aide du code source C#. Les champs de formulaire de saisie de texte permettent aux utilisateurs de saisir du texte personnalisé dans un document, ce qui les rend idéaux pour créer des formulaires et des questionnaires interactifs. En suivant les instructions ci-dessous, vous pourrez facilement insérer et personnaliser des champs de formulaire de saisie de texte dans vos documents. Commençons!
 
 ## Introduction à la fonctionnalité Insérer un champ de formulaire de saisie de texte dans Aspose.Words pour .NET
@@ -24,7 +23,7 @@ Avant de procéder à la mise en œuvre, assurez-vous que vous remplissez les co
 
 Assurez-vous que ces conditions préalables sont en place pour procéder en douceur.
 
-## Guide étape par étape pour implémenter Insérer un champ de formulaire de saisie de texte à l'aide du code source C #
+## Guide étape par étape pour implémenter Insérer un champ de formulaire de saisie de texte à l'aide du code source C#
 
 Suivez les étapes ci-dessous pour implémenter la fonctionnalité Insérer un champ de formulaire de saisie de texte à l'aide du code source C# fourni :
 
@@ -72,3 +71,32 @@ builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```
+
+## Conclusion
+
+Toutes nos félicitations! Vous avez appris avec succès comment insérer et personnaliser des champs de formulaire de saisie de texte dans un document Word à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source C# fourni, vous pouvez désormais ajouter des éléments interactifs à vos documents, permettant aux utilisateurs de saisir du texte ou des données personnalisés.
+
+### FAQ pour insérer un champ de formulaire de saisie de texte dans un document Word
+
+#### Q : Quel est le but de la fonctionnalité Insérer un champ de saisie de texte dans Aspose.Words pour .NET ?
+
+R : La fonctionnalité Insérer un champ de formulaire de saisie de texte dans Aspose.Words pour .NET vous permet d'ajouter par programmation des champs de formulaire de saisie de texte à vos documents Word. Ces champs de formulaire permettent aux utilisateurs de saisir du texte ou des données personnalisés directement dans le document, ce qui les rend idéaux pour créer des formulaires interactifs, des enquêtes ou des questionnaires.
+
+#### Q : Quelles sont les conditions préalables à l'utilisation de la fonctionnalité Insérer un champ de saisie de texte ?
+
+R : Avant d'implémenter la fonctionnalité Insérer un champ de saisie de texte, vous devez vous assurer que les conditions préalables suivantes sont remplies :
+1. Bibliothèque Aspose.Words pour .NET installée dans votre projet.
+2. Connaissance de base du langage de programmation C#.
+3. Un document Word existant ou un nouveau document dans lequel vous souhaitez insérer le champ du formulaire de saisie de texte.
+
+#### Q : Comment personnaliser le champ du formulaire de saisie de texte ?
+
+ R : Vous pouvez personnaliser le champ du formulaire de saisie de texte en fournissant des paramètres spécifiques lors de l'appel du`InsertTextInput`méthode. Par exemple, vous pouvez définir le nom, la valeur par défaut et la longueur maximale du champ de formulaire selon vos besoins.
+
+#### Q : Puis-je insérer plusieurs champs de formulaire de saisie de texte dans un seul document ?
+
+ R : Oui, vous pouvez insérer plusieurs champs de formulaire de saisie de texte dans un seul document. Appelez simplement le`InsertTextInput` méthode avec différents noms et configurations pour ajouter plusieurs champs de formulaire.
+
+#### Q : Comment les utilisateurs peuvent-ils interagir avec le champ du formulaire de saisie de texte dans le document ?
+
+R : Une fois le champ du formulaire de saisie de texte inséré dans le document, les utilisateurs peuvent cliquer sur le champ du formulaire et commencer à taper pour saisir du texte personnalisé. Le champ de formulaire leur permet de modifier le contenu directement dans le document.

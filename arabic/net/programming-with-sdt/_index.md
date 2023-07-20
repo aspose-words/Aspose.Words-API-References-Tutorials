@@ -17,7 +17,7 @@ url: /ar/net/programming-with-sdt/
 | عنوان | وصف |
 | --- | --- |
 | [خانة اختيار اكتب Content Control](./check-box-type-content-control/) | تعرف على كيفية إنشاء عنصر تحكم في المحتوى من نوع خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. |
-| [خانة الاختيار الحالية](./current-state-of-check-box/) | تعرف على كيفية استرداد الحالة الحالية لعنصر تحكم محتوى خانة الاختيار وتعيينه في مستند Word باستخدام Aspose.Words for .NET. |
+| [خانة الاختيار الحالة الحالية](./current-state-of-check-box/) | تعرف على كيفية استرداد الحالة الحالية لعنصر تحكم محتوى خانة الاختيار وتعيينه في مستند Word باستخدام Aspose.Words for .NET. |
 | [تعديل عناصر التحكم في المحتوى](./modify-content-controls/) | تعرف على كيفية تعديل النص والقوائم المنسدلة والصور ضمن عناصر التحكم في المحتوى في مستند Word باستخدام Aspose.Words for .NET. |
 | [التحكم في محتوى صندوق التحرير والسرد](./combo-box-content-control/) | تعرف على كيفية إنشاء عنصر تحكم محتوى Combo Box في مستند Word باستخدام Aspose.Words for .NET. |
 | [التحكم في محتوى مربع نص منسق](./rich-text-box-content-control/) | تعرف على كيفية إنشاء عنصر تحكم في محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET مما يتيح تنسيق النص وتصميمه. |

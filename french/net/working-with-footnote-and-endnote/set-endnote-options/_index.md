@@ -10,9 +10,9 @@ url: /fr/net/working-with-footnote-and-endnote/set-endnote-options/
 
 Dans ce didacticiel étape par étape, nous vous expliquerons comment utiliser Aspose.Words pour .NET pour définir les options de note de fin dans un document Word. Nous vous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
+ Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque à partir de[Aspose.Releases] https://releases.aspose.com/words/net/.
 
-## Étape 1 : Initialisation de l'objet Document
+## Étape 1 : Initialisation de l'objet document
 
  Tout d'abord, initialisez le`Document` objet en fournissant le chemin d'accès à votre document source :
 
@@ -89,12 +89,12 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Comment positionner les notes de fin dans un document ?
 
- R : Pour positionner les notes de fin dans un document, vous pouvez utiliser le`Position`propriété de la`EndnoteOptions` classe. Vous pouvez spécifier si les notes de fin doivent être placées au bas de chaque page, à la fin de chaque section ou à la fin du document.
+ R : Pour positionner les notes de fin dans un document, vous pouvez utiliser le`Position` propriété de la`EndnoteOptions` classe. Vous pouvez spécifier si les notes de fin doivent être placées au bas de chaque page, à la fin de chaque section ou à la fin du document.
 
 #### Q : Puis-je personnaliser le format de numérotation des notes de fin ?
 
- R : Oui, vous pouvez personnaliser le format de numérotation des notes de fin dans Aspose.Words. Utilisez le`NumberFormat`propriété de la`EndnoteOptions` class pour définir le format souhaité, tel que les chiffres arabes, les chiffres romains, les lettres, etc.
+ R : Oui, vous pouvez personnaliser le format de numérotation des notes de fin dans Aspose.Words. Utilisez le`NumberFormat` propriété de la`EndnoteOptions` class pour définir le format souhaité, tel que les chiffres arabes, les chiffres romains, les lettres, etc.
 
 #### Q : Est-il possible de continuer la numérotation des notes de fin entre les sections d'un document ?
 
- R : Oui, il est possible de continuer la numérotation des notes de fin entre les sections d'un document. Utilisez le`RestartRule`propriété de la`EndnoteOptions` classe et réglez-le sur`RestartContinuous` pour permettre à la numérotation de continuer entre les sections.
+ R : Oui, il est possible de continuer la numérotation des notes de fin entre les sections d'un document. Utilisez le`RestartRule` propriété de la`EndnoteOptions` classe et réglez-le sur`RestartContinuous` pour permettre à la numérotation de continuer entre les sections.

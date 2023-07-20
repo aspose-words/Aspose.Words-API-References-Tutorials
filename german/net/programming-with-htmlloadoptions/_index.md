@@ -12,4 +12,4 @@ Die Aspose.Words für .NET-Tutorials zur Textverarbeitung mit HTMLLoadOptions si
  ## Tutorials
 | Titel | Beschreibung |
 | --- | --- |
-| [Bevorzugter Steuerungstyp](./preferred-control-type/) | Schritt-für-Schritt-Anleitung zum Festlegen des bevorzugten Steuerelementtyps beim Laden eines HTML-Dokuments mit Aspose.Words für .NET. |
+| [Bevorzugter Steuerelementtyp im Word-Dokument](./preferred-control-type/) | Schritt-für-Schritt-Anleitung zum Festlegen des bevorzugten Steuerelementtyps in einem Word-Dokument beim Laden eines HTML-Dokuments mit Aspose.Words für .NET. |

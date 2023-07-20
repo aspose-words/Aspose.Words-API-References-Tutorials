@@ -88,11 +88,11 @@ Yorum çözünürlüğü, bir belgedeki geri bildirimlerin izlenmesine ve yönet
 
 #### S: Çözümlenmiş yorumları Aspose.Words for .NET'te nasıl görüntülerim?
 
- C: Varsayılan olarak, çözümlenen yorumlar son belgede gizlenir. Ancak, bunları kullanarak gösterebilirsiniz.`CommentOptions.ShowResolvedComments`mülkiyeti`Document` nesne ve bunu ayarlamak`true`.
+ C: Varsayılan olarak, çözümlenen yorumlar son belgede gizlenir. Ancak, bunları kullanarak gösterebilirsiniz.`CommentOptions.ShowResolvedComments` mülkiyeti`Document` nesne ve bunu ayarlamak`true`.
 
 #### S: Aspose.Words for .NET'te yanıtlar dahil tüm yorumları nasıl gizleyebilirim?
 
- C: Aspose.Words for .NET'te yanıtlar dahil tüm yorumları gizlemek için`CommentOptions.CommentDisplayMode`mülkiyeti`Document` nesne ve onu ayarla`CommentDisplayMode.None`.
+ C: Aspose.Words for .NET'te yanıtlar dahil tüm yorumları gizlemek için`CommentOptions.CommentDisplayMode` mülkiyeti`Document` nesne ve onu ayarla`CommentDisplayMode.None`.
 
 #### S: Çözümlenmiş bir yorumun metnini Aspose.Words for .NET'te düzenleyebilir miyim?
 

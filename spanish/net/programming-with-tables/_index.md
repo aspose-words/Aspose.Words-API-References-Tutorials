@@ -24,7 +24,7 @@ Al seguir estos tutoriales, podrá aprovechar al máximo las funciones de manipu
 | [Crear tabla sencilla](./create-simple-table/) | Aprenda a crear una tabla simple en un documento de Word con Aspose.Words para .NET. |
 | [Tabla con formato](./formatted-table/) | Aprenda a crear una tabla con formato en un documento de Word con Aspose.Words para .NET. |
 | [Tabla anidada](./nested-table/) | Aprenda a crear una tabla anidada en un documento de Word con Aspose.Words para .NET. |
-| [Combinar filas](./combine-rows/) | Aprenda a combinar filas de tablas en un documento de Word con Aspose.Words para .NET. |
+| [Combinar Filas](./combine-rows/) | Aprenda a combinar filas de tablas en un documento de Word con Aspose.Words para .NET. |
 | [Tabla dividida](./split-table/) | Aprenda a dividir una tabla en un documento de Word usando Aspose.Words para .NET. |
 | [Formato de fila Desactivar división entre páginas](./row-format-disable-break-across-pages/) | Aprenda a deshabilitar el salto de línea para una tabla en varias páginas en un documento de Word con Aspose.Words para .NET. |
 | [Mantener la mesa unida](./keep-table-together/) | Aprenda a mantener unida una tabla en un documento de Word con Aspose.Words para .NET. |

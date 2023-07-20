@@ -12,4 +12,4 @@ url: /ar/net/programming-with-htmlloadoptions/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [نوع التحكم المفضل](./preferred-control-type/) | دليل تفصيلي خطوة بخطوة لتحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words for .NET. |
+| [نوع التحكم المفضل في مستند Word](./preferred-control-type/) | دليل تفصيلي خطوة بخطوة لتحديد نوع عنصر التحكم المفضل في مستند Word عند تحميل مستند HTML باستخدام Aspose.Words for .NET. |

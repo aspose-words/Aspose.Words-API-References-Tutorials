@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 #### P: ¿Cómo puedo acceder a los marcadores en un documento de Word?
 
- R: Puede acceder a los marcadores en un documento de Word usando el`Bookmarks`propiedad de la`Range` objeto. Puede acceder a los marcadores por índice o por nombre. Aquí hay un código de muestra:
+ R: Puede acceder a los marcadores en un documento de Word usando el`Bookmarks` propiedad de la`Range` objeto. Puede acceder a los marcadores por índice o por nombre. Aquí hay un código de muestra:
 
 - Acceso por índice:
 
@@ -94,7 +94,7 @@ R: Para usar la función de acceso a marcadores en Aspose.Words para .NET, neces
 
 #### P: ¿Hay otras formas de acceder a los marcadores en un documento de Word?
 
- R: Sí, además de acceder a los marcadores por índice o por nombre, también puede recorrer todos los marcadores del documento mediante un bucle. Puede obtener el número total de marcadores en el documento utilizando el`Count`propiedad de la`Bookmarks` recopilación. Luego puede acceder a cada marcador usando el índice. Aquí hay un código de muestra:
+ R: Sí, además de acceder a los marcadores por índice o por nombre, también puede recorrer todos los marcadores del documento mediante un bucle. Puede obtener el número total de marcadores en el documento utilizando el`Count` propiedad de la`Bookmarks` recopilación. Luego puede acceder a cada marcador usando el índice. Aquí hay un código de muestra:
 
 ```csharp
 int bookmarkCount = doc.Range.Bookmarks.Count;

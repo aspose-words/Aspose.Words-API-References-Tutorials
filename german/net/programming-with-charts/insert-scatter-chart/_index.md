@@ -81,7 +81,7 @@ Durch die Verwendung von Aspose.Words für .NET können Sie den Prozess der Doku
 #### Q1. Was ist ein Streudiagramm?
 Ein Streudiagramm ist eine Art Diagramm, das die Beziehung zwischen zwei numerischen Variablen anzeigt. Es besteht aus einer Reihe von Punkten, die auf einem Koordinatengitter aufgetragen sind, wobei eine Variable auf der X-Achse und die andere Variable auf der Y-Achse dargestellt wird. Streudiagramme werden verwendet, um Muster, Korrelationen oder Trends zwischen zwei Sätzen von Datenpunkten zu identifizieren.
 
-#### Q2. Kann ich dem Streudiagramm mehrere Reihen hinzufügen?
+#### Q2. Kann ich dem Streudiagramm mehrere Serien hinzufügen?
 Ja, Sie können mit Aspose.Words für .NET mehrere Reihen zum Streudiagramm hinzufügen. Jede Reihe stellt einen Satz von Datenpunkten mit ihren jeweiligen X- und Y-Koordinaten dar. Durch das Hinzufügen mehrerer Reihen können Sie verschiedene Datensätze innerhalb desselben Streudiagramms vergleichen und analysieren und so einen umfassenden Überblick über Ihre Daten erhalten.
 
 #### Q3. Kann ich das Erscheinungsbild des Streudiagramms anpassen?

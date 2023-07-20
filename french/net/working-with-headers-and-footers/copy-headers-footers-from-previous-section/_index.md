@@ -10,7 +10,7 @@ url: /fr/net/working-with-headers-and-footers/copy-headers-footers-from-previous
 
 Dans ce didacticiel étape par étape, nous vous expliquerons comment copier les en-têtes et les pieds de page de la section précédente dans un document Word à l'aide d'Aspose.Words pour .NET. Nous vous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
+ Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque à partir de[Aspose.Releases] https://releases.aspose.com/words/net/.
 
 ## Étape 1 : Accéder à la section précédente
 

@@ -13,7 +13,7 @@ Bölümlerle Kelime İşleme, Word belgelerindeki bölümlerle Kelime İşleme k
 
 Öğreticiler ayrıca mevcut bölümleri silmeye ve değiştirmeye odaklanır. Belirli bölümleri nasıl sileceğinizi, bölümleri yeniden düzenlemeyi, düzen ayarlarını değiştirmeyi ve Word belgelerinizi özel ihtiyaçlarınıza göre uyarlamak için diğer gelişmiş işlemleri gerçekleştirmeyi öğreneceksiniz.
 
-Bu eğitimleri takip ederek, Aspose.Words for .NET'i kullanarak Word belgelerinizdeki bölümleri kolaylıkla yönetebileceksiniz. İster yeni belgeler oluşturmak, ister var olan belgeleri değiştirmek veya bölümleri özelleştirmek isteyin, bu eğitimler size bu görevleri başarıyla gerçekleştirmeniz için gereken bilgi ve becerileri sağlayacaktır.
+Bu eğitimleri takip ederek, Aspose.Words for .NET'i kullanarak Word belgelerinizdeki bölümleri kolayca yönetebileceksiniz. İster yeni belgeler oluşturmak, ister var olan belgeleri değiştirmek veya bölümleri özelleştirmek isteyin, bu eğitimler size bu görevleri başarıyla gerçekleştirmeniz için gereken bilgi ve becerileri sağlayacaktır.
 
  ## Öğreticiler
 | Başlık | Tanım |

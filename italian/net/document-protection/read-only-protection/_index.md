@@ -98,8 +98,8 @@ R: Per applicare la protezione di sola lettura a un documento Word utilizzando A
 1.  Crea un'istanza di`Document` classe e a`DocumentBuilder` oggetto.
 2.  Usa il`DocumentBuilder` per scrivere il contenuto del documento.
 3.  Impostare una password per il documento utilizzando il file`SetPassword` metodo del`WriteProtection` oggetto.
-4.  Impostare il`ReadOnlyRecommended`proprietà del`WriteProtection` opporsi a`true` per consigliare di aprire il documento in sola lettura.
-5.  Applicare la protezione di sola lettura utilizzando il file`Protect` metodo del`Document` oggetto, specificando l'`ProtectionType` COME`ReadOnly`.
+4.  Impostare il`ReadOnlyRecommended` proprietà del`WriteProtection` opporsi a`true` per consigliare di aprire il documento in sola lettura.
+5.  Applicare la protezione di sola lettura utilizzando il`Protect` metodo del`Document` oggetto, specificando l'`ProtectionType` COME`ReadOnly`.
 6.  Salvare il documento protetto utilizzando il file`Save` metodo del`Document` oggetto.
 
 #### D: Posso rimuovere la protezione di sola lettura da un documento Word utilizzando Aspose.Words per .NET?

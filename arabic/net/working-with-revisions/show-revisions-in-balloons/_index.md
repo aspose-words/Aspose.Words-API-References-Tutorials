@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### س: كيف يتم عرض المراجعات في البالونات باستخدام Aspose.Words for .NET؟
 
- ج: استخدم ملف`ShowInBalloons`ممتلكات`RevisionOptions` كائن لتكوين عرض المراجعات في البالونات. يمكنك ضبط هذه الخاصية على`ShowInBalloons.FormatAndDelete` لإظهار المراجعات في البالونات مع تنقيحات الحذف والتنسيق.
+ ج: استخدم ملف`ShowInBalloons` ممتلكات`RevisionOptions` كائن لتكوين عرض المراجعات في البالونات. يمكنك ضبط هذه الخاصية على`ShowInBalloons.FormatAndDelete` لإظهار المراجعات في البالونات مع تنقيحات الحذف والتنسيق.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

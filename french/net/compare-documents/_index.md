@@ -13,7 +13,7 @@ Comparer des documents est un didacticiel complet sur la comparaison de document
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Comparer pour égal](./compare-for-equal/) | Guide étape par étape pour expliquer le code source C# de la fonctionnalité Compare for Equals avec Aspose.Words pour .NET. |
-| [Comparer les options](./compare-options/) | Guide étape par étape pour expliquer le code source C# de la fonctionnalité Options de comparaison avec Aspose.Words pour .NET. |
-| [Cible de comparaison](./comparison-target/) | Apprenez à comparer la fonction cible d'Aspose.Words pour .NET qui vous permet de comparer des documents et de générer un nouveau document contenant les modifications apportées. |
-| [Granularité de la comparaison](./comparison-granularity/) | Apprenez à comparer la fonction de granularité d'Aspose.Words pour .NET qui permet de comparer les documents caractère par caractère, en signalant les modifications apportées. |
+| [Comparer pour égal dans un document Word](./compare-for-equal/) | Guide étape par étape pour expliquer le code source C # de Compare for Equals dans la fonctionnalité de document Word avec Aspose.Words pour .NET. |
+| [Comparer les options dans un document Word](./compare-options/) | Guide étape par étape pour expliquer le code source C # des options de comparaison dans la fonctionnalité de document Word avec Aspose.Words pour .NET. |
+| [Cible de comparaison dans un document Word](./comparison-target/) | Apprenez à comparer la cible dans la fonction de document Word d'Aspose.Words pour .NET qui vous permet de comparer des documents et de générer un nouveau document contenant les modifications apportées. |
+| [Granularité de comparaison dans un document Word](./comparison-granularity/) | Apprenez à comparer la granularité dans la fonction de document Word d'Aspose.Words pour .NET qui permet de comparer les documents caractère par caractère, en signalant les modifications apportées. |

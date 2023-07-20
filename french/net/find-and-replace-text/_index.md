@@ -16,7 +16,7 @@ Que vous ayez besoin de remplacer des mots spécifiques, de mettre à jour des m
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Recherche et remplacement de texte simple dans Word](./simple-find-replace/) | Apprenez à effectuer une simple recherche et remplacement de texte dans un document Word à l'aide de Aspose.Words pour .NET. |
+| [Recherche et remplacement de texte simple dans Word](./simple-find-replace/) | Apprenez à effectuer une simple recherche et remplacement de texte dans un document Word à l'aide d'Aspose.Words pour .NET. |
 | [Méta-caractères dans le modèle de recherche](./meta-characters-in-search-pattern/) | Apprenez à utiliser les métacaractères dans le modèle de recherche avec Aspose.Words pour .NET pour manipuler des documents Word. |
 | [Word Remplacer le texte contenant des méta-caractères](./replace-text-containing-meta-characters/) | Apprenez à remplacer du texte contenant des métacaractères dans des documents Word à l'aide d'Aspose.Words pour .NET. |
 | [Ignorer le texte à l'intérieur des champs](./ignore-text-inside-fields/) | Apprenez à utiliser la fonctionnalité "Ignorer le texte à l'intérieur des champs" d'Aspose.Words pour .NET. |

@@ -67,7 +67,7 @@ Bu eğitimde, Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektle
 #### S: Bir PDF belgesinde 3B DML efektleri oluşturma nedir?
 Y: Bir PDF belgesinde 3B DML efektleri oluşturmak, bir belgeyi PDF biçimine dönüştürürken 3B efektleri koruma becerisini ifade eder. Bu, görsel efektleri korur ve oluşturulan PDF belgesinin orijinal belge gibi görünmesini sağlar.
 
-#### S: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin oluşturulmasını nasıl etkinleştirebilirim?
+#### S: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin oluşturulmasını nasıl sağlayabilirim?
 C: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işlenmesini etkinleştirmek için şu adımları izleyin:
 
  örneğini oluşturun`Document` Word belgesine giden yolu belirten sınıf.

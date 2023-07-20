@@ -157,7 +157,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 #### س: كيف يمكنني تعيين معرف الموفر لسطر التوقيع باستخدام Aspose.Words for .NET؟
 
 ج: لتعيين معرف الموفر لسطر التوقيع باستخدام Aspose.Words for .NET ، يمكنك اتباع الخطوات التالية:
-1.  بعد إدخال سطر التوقيع ، قم بالوصول إلى`ProviderId`ممتلكات`SignatureLine` هدف.
+1.  بعد إدخال سطر التوقيع ، قم بالوصول إلى`ProviderId` ممتلكات`SignatureLine` هدف.
 2.  تعيين`ProviderId` إلى قيمة معرف الموفر المطلوب باستخدام`Guid` نوع البيانات.
 
 #### س: هل يمكنني توقيع المستند بعد إنشاء سطر توقيع جديد وتعيين معرف الموفر؟

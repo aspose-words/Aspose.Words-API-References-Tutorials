@@ -31,7 +31,7 @@ FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Étape 4 : Enregistrer le document rendu
+## Étape 4 : Enregistrer le document rendu
  Enfin, vous pouvez enregistrer le document rendu dans un fichier à l'aide de la`Save()` méthode de la`Document` classe. Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects.
 
 ```csharp
@@ -56,7 +56,7 @@ Dans ce didacticiel, nous avons appris à définir le dossier de polices par dé
 
 #### Q : Comment puis-je définir des dossiers de polices par défaut dans Aspose.Words ?
 
- R : Pour définir des dossiers de polices par défaut dans Aspose.Words, vous devez utiliser le`Fonts` classe et la`SetFontsFolders` méthode pour spécifier les emplacements des dossiers de polices personnalisées.
+ R : Pour définir les dossiers de polices par défaut dans Aspose.Words, vous devez utiliser le`Fonts` classe et la`SetFontsFolders` méthode pour spécifier les emplacements des dossiers de polices personnalisées.
 
 #### Q : La définition des dossiers de polices par défaut affecte-t-elle tous les documents Word traités avec Aspose.Words ?
 

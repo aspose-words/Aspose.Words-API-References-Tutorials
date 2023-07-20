@@ -98,7 +98,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesine salt okunur koruma uygula
 1.  örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` nesne.
 2.  Kullan`DocumentBuilder` belgeye içerik yazmak için.
 3.  kullanarak belge için bir parola ayarlayın.`SetPassword` yöntemi`WriteProtection` nesne.
-4.  Yı kur`ReadOnlyRecommended`mülkiyeti`WriteProtection` itiraz etmek`true` belgeyi salt okunur olarak açmayı önermek için.
+4.  Yı kur`ReadOnlyRecommended` mülkiyeti`WriteProtection` itiraz etmek`true` belgeyi salt okunur olarak açmayı önermek için.
 5.  kullanarak salt okunur koruma uygulayın.`Protect` yöntemi`Document` nesne, belirterek`ProtectionType` gibi`ReadOnly`.
 6.  kullanarak korunan belgeyi kaydedin.`Save` yöntemi`Document` nesne.
 

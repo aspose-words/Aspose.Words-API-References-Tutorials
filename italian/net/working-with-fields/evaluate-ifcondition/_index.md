@@ -79,7 +79,7 @@ R: Per aggiornare una condizione IF in un documento Word con Aspose.Words, puoi 
 
 #### D: Che tipo di condizioni possono essere valutate in una condizione IF con Aspose.Words?
 
-R: Con Aspose.Words puoi valutare una varietà di condizioni in una condizione IF, inclusi confronti numerici (ad esempio se un numero è maggiore di un altro), confronti testuali (ad esempio se una stringa è uguale a un'altra) e molto altro. È inoltre possibile combinare più condizioni utilizzando operatori logici quali AND e OR.
+R: Con Aspose.Words puoi valutare una varietà di condizioni in una condizione IF, inclusi confronti numerici (ad esempio se un numero è maggiore di un altro), confronti testuali (ad esempio se una stringa è uguale a un'altra) e molto altro. È inoltre possibile combinare più condizioni utilizzando operatori logici come AND e OR.
 
 #### D: È possibile utilizzare condizioni IF nidificate in un documento Word con Aspose.Words?
 

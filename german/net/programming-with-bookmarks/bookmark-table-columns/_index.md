@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion „Bookmark Table Columns“ in der Aspose.Words for .NET-Bibliothek verwendet wird. Mit dieser Funktion können Sie eine bestimmte Spalte einer Tabelle in einem Word-Dokument mit einem Lesezeichen versehen und auf den Inhalt dieser Spalte zugreifen.
+In diesem Artikel untersuchen wir den obigen C#-Quellcode, um zu verstehen, wie die Funktion „Bookmark Table Columns“ in der Aspose.Words for .NET-Bibliothek verwendet wird. Mit dieser Funktion können Sie eine bestimmte Spalte einer Tabelle in einem Word-Dokument mit einem Lesezeichen versehen und auf den Inhalt dieser Spalte zugreifen.
 
 ## Voraussetzungen
 

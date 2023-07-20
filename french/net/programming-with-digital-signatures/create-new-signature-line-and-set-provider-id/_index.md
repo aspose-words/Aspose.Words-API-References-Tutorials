@@ -157,7 +157,7 @@ R : La définition de l'ID de fournisseur pour une ligne de signature permet d'
 #### Q : Comment puis-je définir l'ID du fournisseur pour une ligne de signature à l'aide d'Aspose.Words pour .NET ?
 
 R : Pour définir l'ID du fournisseur pour une ligne de signature à l'aide d'Aspose.Words pour .NET, vous pouvez suivre ces étapes :
-1.  Après avoir inséré la ligne de signature, accédez à la`ProviderId`propriété de la`SignatureLine` objet.
+1.  Après avoir inséré la ligne de signature, accédez à la`ProviderId` propriété de la`SignatureLine` objet.
 2.  Met le`ProviderId` propriété à la valeur d'ID de fournisseur souhaitée à l'aide de la`Guid` Type de données.
 
 #### Q : Puis-je signer le document après avoir créé une nouvelle ligne de signature et défini l'ID du fournisseur ?
@@ -176,6 +176,6 @@ R : Oui, vous pouvez spécifier un ID de fournisseur spécifique pour chaque li
 
 R : Aspose.Words pour .NET prend en charge la création et la signature de lignes de signature au format de fichier DOCX. Vous pouvez créer et signer des lignes de signature dans des fichiers DOCX à l'aide des méthodes et classes fournies.
 
-#### Q : Puis-je modifier l'identifiant du fournisseur ou d'autres options d'une ligne de signature une fois qu'elle a été signée ?
+#### Q : Puis-je modifier l'identifiant du fournisseur ou d'autres options d'une ligne de signature après qu'elle a été signée ?
 
 R : Une fois qu'une ligne de signature a été signée, elle fait partie du contenu du document et ne peut pas être modifiée séparément. Toute modification de la ligne de signature, telle que la modification de l'ID du fournisseur ou d'autres options, nécessiterait la suppression de la signature existante et la création d'une nouvelle ligne de signature.

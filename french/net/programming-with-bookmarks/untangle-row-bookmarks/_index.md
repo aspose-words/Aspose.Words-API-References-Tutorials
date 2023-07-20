@@ -62,7 +62,7 @@ Voici l'exemple de code source complet pour démêler les signets des lignes à 
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	// Cela exécute la tâche personnalisée consistant à placer les extrémités du signet de ligne dans la même ligne avec le début du signet.
+	//Cela exécute la tâche personnalisée consistant à placer les extrémités du signet de ligne dans la même ligne avec le début du signet.
 	Untangle(doc);
 
 	// Maintenant, nous pouvons facilement supprimer des lignes par un signet sans endommager les signets d'une autre ligne.
@@ -88,7 +88,7 @@ R : Oui, la fonctionnalité Démêler les signets de ligne est spécialement co
 
 #### Q : La fonction Déchiffrer les signets de ligne modifie-t-elle le contenu du document d'origine ?
 
-R : Oui, la fonction Déchiffrer les signets de ligne modifie le document original en déplaçant les fins de signets de ligne pour les placer sur la même ligne que les débuts de signets. Assurez-vous d'enregistrer une copie de sauvegarde du document avant d'appliquer cette fonctionnalité.
+: Oui, la fonction Déchiffrer les signets de ligne modifie le document original en déplaçant les fins de signets de ligne pour les placer sur la même ligne que les débuts de signets. Assurez-vous d'enregistrer une copie de sauvegarde du document avant d'appliquer cette fonctionnalité.
 
 #### Q : Comment puis-je identifier les signets de ligne dans mon document Word ?
 
@@ -96,8 +96,8 @@ R : Les signets de ligne sont généralement utilisés dans les tableaux pour ma
 
 #### Q : Est-il possible de démêler les signets de lignes dans des tableaux non adjacents ?
 
-: La fonction Démêler les signets de ligne telle que présentée dans cet article est conçue pour démêler les signets de ligne dans les tables adjacentes. Pour démêler les signets de lignes dans des tableaux non adjacents, des ajustements supplémentaires du code peuvent être nécessaires en fonction de la structure du document.
+R : La fonction Démêler les signets de ligne telle que présentée dans cet article est conçue pour démêler les signets de ligne dans les tables adjacentes. Pour démêler les signets de lignes dans des tableaux non adjacents, des ajustements supplémentaires du code peuvent être nécessaires en fonction de la structure du document.
 
 #### Q : Quelles autres manipulations puis-je effectuer sur les signets de ligne une fois qu'ils ont été démêlés ?
 
-R : Une fois les signets de ligne déroulés, vous pouvez effectuer différentes manipulations selon vos besoins. Cela peut inclure la modification, la suppression ou l'ajout de contenu aux lignes mises en signet. Assurez-vous de manipuler les signets de ligne avec soin pour éviter tout impact indésirable sur le reste du document.
+: Une fois les signets de ligne déroulés, vous pouvez effectuer différentes manipulations selon vos besoins. Cela peut inclure la modification, la suppression ou l'ajout de contenu aux lignes mises en signet. Assurez-vous de manipuler les signets de ligne avec soin pour éviter tout impact indésirable sur le reste du document.

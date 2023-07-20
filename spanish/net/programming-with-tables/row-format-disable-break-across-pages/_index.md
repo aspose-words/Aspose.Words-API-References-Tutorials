@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
 
-En este tutorial, aprenderemos cómo deshabilitar el salto de línea de una tabla de varias páginas en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá deshabilitar el salto de línea para todas las filas de su tabla en sus documentos de Word.
+En este tutorial, aprenderemos cómo deshabilitar el salto de línea de una tabla de varias páginas en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá deshabilitar el salto de línea para todas las filas de su tabla en sus documentos de Word.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.

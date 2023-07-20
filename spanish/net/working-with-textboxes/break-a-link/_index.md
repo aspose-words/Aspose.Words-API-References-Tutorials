@@ -73,7 +73,7 @@ textBox.Previous?.BreakForwardLink();
 
 #### P: ¿Cuál es la biblioteca que se usa para romper enlaces de redireccionamiento en un documento de Word usando Aspose.Words para .NET?
 
-R: Para romper enlaces de redirección en un documento de Word usando Aspose.Words para .NET, la biblioteca utilizada es Aspose.Words para .NET.
+R: Para romper enlaces de redireccionamiento en un documento de Word usando Aspose.Words para .NET, la biblioteca utilizada es Aspose.Words para .NET.
 
 #### P: ¿Cómo romper un enlace de redirección en un cuadro de texto?
 

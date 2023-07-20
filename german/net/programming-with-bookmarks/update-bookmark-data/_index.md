@@ -96,7 +96,7 @@ A: Ja, die Funktion „Lesezeichendaten aktualisieren“ wurde speziell für Les
 
 #### F: Kann ich außer Text auch andere Lesezeicheneigenschaften aktualisieren?
 
-A: Ja, zusätzlich zum Text können Sie auch andere Lesezeicheneigenschaften aktualisieren, z. B. den Lesezeichennamen, den Lesezeichenbereich usw. Verwenden Sie die entsprechenden Eigenschaften des`Bookmark` Objekt, um die gewünschten Eigenschaften zu aktualisieren.
+ A: Ja, zusätzlich zum Text können Sie auch andere Lesezeicheneigenschaften aktualisieren, z. B. den Lesezeichennamen, den Lesezeichenbereich usw. Verwenden Sie die entsprechenden Eigenschaften des`Bookmark` Objekt, um die gewünschten Eigenschaften zu aktualisieren.
 
 #### F: Kann ich mehrere Lesezeichen im selben Dokument aktualisieren?
 

@@ -181,7 +181,7 @@ Console.WriteLine(doc.GetText());
 
 #### F: Wie kann ich die Einfügungsrevisionen in das Ausgabeergebnis in Aspose.Words für .NET einbeziehen?
 
- A: Um den Text innerhalb der Einfügungsrevisionen in das Ausgabeergebnis einzubeziehen, können Sie die Optionen so ändern, dass die Einfügungsrevisionen nicht ignoriert werden. Hierfür können Sie die einstellen`IgnoreInserted`Eigentum der`FindReplaceOptions` widersprechen`false`:
+ A: Um den Text innerhalb der Einfügungsrevisionen in das Ausgabeergebnis einzubeziehen, können Sie die Optionen so ändern, dass die Einfügungsrevisionen nicht ignoriert werden. Hierfür können Sie die einstellen`IgnoreInserted` Eigentum der`FindReplaceOptions` widersprechen`false`:
 
 ```csharp
 options.IgnoreInserted = false;

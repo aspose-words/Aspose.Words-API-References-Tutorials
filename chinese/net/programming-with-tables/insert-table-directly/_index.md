@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 	//到某个文档。
 	Table table = new Table(doc);
 	doc.FirstSection.Body.AppendChild(table);
-	//在这里，我们可以调用 EnsureMinimum 为我们创建行和单元格。使用这个方法
+	//在这里，我们可以调用 EnsureMinimum 来为我们创建行和单元格。使用这个方法
 	//确保指定的节点有效。在这种情况下，有效的表格应至少具有一行和一个单元格。
 	//相反，我们将自己处理创建行和表。
 	//如果我们在算法中创建表，这将是最好的方法。

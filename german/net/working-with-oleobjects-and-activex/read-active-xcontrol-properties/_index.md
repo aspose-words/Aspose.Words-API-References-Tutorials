@@ -12,7 +12,7 @@ In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Wo
 
 ## Schritt 1: Dokumentinitialisierung
 
- Der erste Schritt besteht darin, das zu initialisieren`Document` Objekt durch Laden des Word-Dokuments, das die ActiveX-Steuerelemente enthält. Unbedingt ersetzen`MyDir` mit dem tatsächlichen Pfad zum Verzeichnis, das das Dokument enthält.
+ Der erste Schritt besteht darin, das zu initialisieren`Document` Objekt durch Laden des Word-Dokuments, das die ActiveX-Steuerelemente enthält. Unbedingt austauschen`MyDir` mit dem tatsächlichen Pfad zum Verzeichnis, das das Dokument enthält.
 
 ```csharp
 Document doc = new Document(MyDir + "ActiveX controls.docx");
@@ -92,7 +92,7 @@ Durch das Lesen der Eigenschaften von ActiveX-Steuerelementen können Sie wichti
 
 #### F: Was ist der erste Schritt, um Eigenschaften von ActiveX-Steuerelementen in einer Word-Datei zu lesen?
 
- A: Der erste Schritt besteht darin, das zu initialisieren`Document` Objekt durch Laden des Word-Dokuments, das die ActiveX-Steuerelemente enthält. Unbedingt ersetzen`MyDir` mit dem tatsächlichen Pfad zum Verzeichnis, das das Dokument enthält.
+ A: Der erste Schritt besteht darin, das zu initialisieren`Document` Objekt durch Laden des Word-Dokuments, das die ActiveX-Steuerelemente enthält. Unbedingt austauschen`MyDir` mit dem tatsächlichen Pfad zum Verzeichnis, das das Dokument enthält.
 
 #### F: Wie bekomme ich ActiveX-Steuerelemente in das Dokument?
 

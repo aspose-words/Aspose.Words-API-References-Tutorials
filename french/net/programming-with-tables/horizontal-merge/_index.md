@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Ici, nous utilisons le générateur de documents pour créer le tableau et définir les propriétés de fusion horizontale des cellules. Nous utilisons le`HorizontalMerge`propriété de la`CellFormat` objet pour spécifier le type de fusion horizontale à appliquer à chaque cellule. En utilisant`CellMerge.First` on fusionne la première cellule avec la suivante, tout en utilisant`CellMerge.Previous` nous fusionnons la cellule actuelle avec la cellule précédente.`CellMerge.None` indique que la cellule ne doit pas être fusionnée.
+ Ici, nous utilisons le générateur de documents pour créer le tableau et définir les propriétés de fusion horizontale des cellules. Nous utilisons le`HorizontalMerge` propriété de la`CellFormat` objet pour spécifier le type de fusion horizontale à appliquer à chaque cellule. En utilisant`CellMerge.First` on fusionne la première cellule avec la suivante, tout en utilisant`CellMerge.Previous` nous fusionnons la cellule actuelle avec la cellule précédente.`CellMerge.None` indique que la cellule ne doit pas être fusionnée.
 
 ## Étape 4 : Enregistrer le document modifié
 Enfin, nous devons enregistrer le document modifié avec les cellules fusionnées horizontalement. Utilisez le code suivant :

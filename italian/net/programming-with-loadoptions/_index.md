@@ -14,13 +14,13 @@ In questi tutorial imparerai come utilizzare LoadOptions per caricare documenti 
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Aggiorna campi sporchi](./update-dirty-fields/) | Scopri come caricare un documento Word aggiornando i campi sporchi con Aspose.Words per .NET. |
-| [Carica documento crittografato](./load-encrypted-document/) | Scopri come caricare e salvare documenti crittografati con Aspose.Words per .NET. |
+| [Aggiorna i campi sporchi nel documento di Word](./update-dirty-fields/) | Scopri come caricare un documento Word aggiornando i campi sporchi con Aspose.Words per .NET. |
+| [Carica crittografato nel documento di Word](./load-encrypted-document/) | Scopri come caricare e salvare documenti crittografati in Word con Aspose.Words per .NET. |
 | [Converti forma in Office Math](./convert-shape-to-office-math/) | Scopri come convertire le forme in formule matematiche di Office durante il caricamento di documenti con Aspose.Words per .NET. |
 | [Imposta la versione di MS Word](./set-ms-word-version/) | Scopri come caricare un documento con una versione specifica di MS Word utilizzando Aspose.Words per .NET. |
-| [Usa la cartella Temp](./use-temp-folder/) | Scopri come utilizzare una cartella temporanea durante il caricamento di documenti con Aspose.Words per .NET. |
-| [Avviso richiamata](./warning-callback/) | Scopri come gestire gli avvisi durante il caricamento di un documento Word utilizzando la funzionalità di richiamata con Aspose.Words per .NET. |
-| [Carica con codifica](./load-with-encoding/) | Scopri come caricare un documento con una codifica specifica utilizzando Aspose.Words per .NET. |
+| [Usa la cartella temporanea nel documento di Word](./use-temp-folder/) | Scopri come utilizzare una cartella temporanea durante il caricamento di documenti con Aspose.Words per .NET. |
+| [Richiamata di avviso nel documento di Word](./warning-callback/) | Scopri come gestire gli avvisi durante il caricamento di un documento Word utilizzando la funzionalità di richiamata con Aspose.Words per .NET. |
+| [Carica con la codifica nel documento di Word](./load-with-encoding/) | Scopri come caricare un documento con una codifica specificata nel documento word utilizzando Aspose.Words per .NET. |
 | [Salta immagini PDF](./skip-pdf-images/) | Scopri come caricare un documento PDF saltando il caricamento di immagini PDF con Aspose.Words per .NET. |
 | [Converti metafile in png](./convert-metafiles-to-png/) | Scopri come convertire i metafile in immagini PNG durante il caricamento di documenti con Aspose.Words per .NET. |
-| [Carica Chm](./load-chm/) | Scopri come caricare i file CHM con Aspose.Words per .NET. |
+| [Carica i file Chm nel documento di Word](./load-chm/) | Scopri come caricare i file CHM in un documento word con Aspose.Words per .NET. |

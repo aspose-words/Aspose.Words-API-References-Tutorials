@@ -10,7 +10,7 @@ url: /it/net/working-with-footnote-and-endnote/set-endnote-options/
 
 In questo tutorial passo-passo, ti guideremo su come utilizzare Aspose.Words per .NET per impostare le opzioni delle note di chiusura in un documento di Word. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
+ Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria da[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Passaggio 1: inizializzazione dell'oggetto documento
 
@@ -89,12 +89,12 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in
 
 #### D: Come posso posizionare le note di chiusura in un documento?
 
- R: Per posizionare le note di chiusura in un documento, puoi usare il`Position`proprietà del`EndnoteOptions` classe. È possibile specificare se le note di chiusura devono essere posizionate in fondo a ogni pagina, alla fine di ogni sezione o alla fine del documento.
+ R: Per posizionare le note di chiusura in un documento, puoi usare il`Position` proprietà del`EndnoteOptions` classe. È possibile specificare se le note di chiusura devono essere posizionate in fondo a ogni pagina, alla fine di ogni sezione o alla fine del documento.
 
 #### D: Posso personalizzare il formato di numerazione delle note di chiusura?
 
- R: Sì, puoi personalizzare il formato della numerazione delle note di chiusura in Aspose.Words. Usa il`NumberFormat`proprietà del`EndnoteOptions` class per impostare il formato desiderato, come numeri arabi, numeri romani, lettere, ecc.
+ R: Sì, puoi personalizzare il formato della numerazione delle note di chiusura in Aspose.Words. Usa il`NumberFormat` proprietà del`EndnoteOptions` class per impostare il formato desiderato, come numeri arabi, numeri romani, lettere, ecc.
 
 #### D: È possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento?
 
- R: Sì, è possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento. Usa il`RestartRule`proprietà del`EndnoteOptions` class e impostarlo su`RestartContinuous` per consentire la continuazione della numerazione tra le sezioni.
+ R: Sì, è possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento. Usa il`RestartRule` proprietà del`EndnoteOptions` class e impostarlo su`RestartContinuous` per consentire la continuazione della numerazione tra le sezioni.

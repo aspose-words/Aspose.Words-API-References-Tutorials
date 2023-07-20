@@ -21,7 +21,7 @@ TextBox textBox = shape.TextBox;
 
 ## Étape 2 : Vérification de la séquence TextBox
 
- Nous allons maintenant vérifier la séquence de la TextBox en utilisant`if` conditions. Le code source fourni contient trois conditions distinctes pour vérifier la position de TextBox par rapport aux formes précédentes et suivantes.
+ Nous allons maintenant vérifier la séquence du TextBox en utilisant`if` conditions. Le code source fourni contient trois conditions distinctes pour vérifier la position de TextBox par rapport aux formes précédentes et suivantes.
 
 ## Étape 3 : Vérification de la tête de séquence :
 
@@ -91,7 +91,7 @@ R : Pour vérifier la séquence des zones de texte à l'aide de Aspose.Words po
 
 #### Q : Comment déterminer si un TextBox est la tête de la séquence ?
 
-R : Pour déterminer si une zone de texte est la tête de la séquence, vous pouvez vérifier si elle a un formulaire suivant (`Next`) mais pas une forme précédente (`Previous`). Si c'est le cas, cela signifie qu'il est en tête de la série.
+R : Pour déterminer si une zone de texte est la tête de la séquence, vous pouvez vérifier si elle a un formulaire suivant (`Next`) mais pas une forme précédente (`Previous`). Si c'est le cas, cela signifie qu'il est en tête de la séquence.
 
 #### Q : Comment savoir si un TextBox est au milieu de la séquence ?
 

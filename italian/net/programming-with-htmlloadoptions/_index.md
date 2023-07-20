@@ -12,4 +12,4 @@ Le esercitazioni Aspose.Words per .NET sull'elaborazione di testi con HTMLLoadOp
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Tipo di controllo preferito](./preferred-control-type/) | Guida dettagliata per specificare il tipo di controllo preferito durante il caricamento di un documento HTML con Aspose.Words per .NET. |
+| [Tipo di controllo preferito nel documento di Word](./preferred-control-type/) | Guida dettagliata per specificare il tipo di controllo preferito nel documento word durante il caricamento di un documento HTML con Aspose.Words per .NET. |

@@ -10,7 +10,7 @@ url: /sv/net/basic-conversions/docx-to-markdown/
 
 denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att konvertera ett Word-dokument i Docx-format till Markdown. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
+ För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Steg 1: Initiera Document- och DocumentBuilder-objekten
 
@@ -34,7 +34,7 @@ Lägg gärna till mer komplext innehåll som rubriker, tabeller, listor eller fo
 
 ## Steg 3: Spara dokumentet i Markdown-format
 
- För att spara dokumentet i Markdown-format, använd`Save` metod på`Document` objekt och ange sökvägen och filnamnet för utdatadokumentet. I det här exemplet kommer vi att spara det som`"BaseConversions.DocxToMarkdown.md"`:
+ För att spara dokumentet i Markdown-format, använd`Save` metod på`Document`objekt och ange sökvägen och filnamnet för utdatadokumentet. I det här exemplet kommer vi att spara det som`"BaseConversions.DocxToMarkdown.md"`:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.DocxToMarkdown.md");

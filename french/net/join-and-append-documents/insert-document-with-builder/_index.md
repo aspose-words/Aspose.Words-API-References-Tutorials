@@ -14,7 +14,7 @@ url: /fr/net/join-and-append-documents/insert-document-with-builder/
 
 Assurez-vous que vous disposez des prérequis suivants :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger à partir du site Web officiel d'Aspose ou utiliser le gestionnaire de packages NuGet pour l'installer.
+- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
 - Un chemin d'accès au répertoire de documents où se trouvent les documents source et de destination.
 
 ## Étape 2 : Ouvrez les documents source et destination
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Étape 4 : positionner le DocumentBuilder
 
- Bouge le`DocumentBuilder` à la fin du document à l'aide de la`MoveToDocumentEnd` méthode. Insérez un saut de page pour séparer le contenu existant du document inséré.
+Bouge le`DocumentBuilder` à la fin du document à l'aide de la`MoveToDocumentEnd` méthode. Insérez un saut de page pour séparer le contenu existant du document inséré.
 
 ```csharp
 builder.MoveToDocumentEnd();

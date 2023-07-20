@@ -13,7 +13,7 @@ Belgeleri Karşılaştır, Aspose.Words for .NET kullanarak belgeleri karşıla�
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Eşit Karşılaştır](./compare-for-equal/) | Aspose.Words for .NET ile Compare for Equals özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz. |
-| [Seçenekleri Karşılaştır](./compare-options/) | Aspose.Words for .NET ile Seçenekleri Karşılaştır özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz. |
-| [Karşılaştırma Hedefi](./comparison-target/) | Aspose.Words for .NET'in belgeleri karşılaştırmanıza ve yapılan değişiklikleri içeren yeni bir belge oluşturmanıza olanak tanıyan hedef karşılaştırma özelliğini öğrenin. |
-| [Karşılaştırma Ayrıntı Düzeyi](./comparison-granularity/) | Aspose.Words for .NET'in belgelerin karakter karakter karşılaştırılmasına ve yapılan değişikliklerin raporlanmasına olanak tanıyan karşılaştırma ayrıntı düzeyini öğrenin. |
+| [Word Belgesinde Eşit Olarak Karşılaştırın](./compare-for-equal/) | Compare for Equals'ın C# kaynak kodunu Aspose.Words for .NET ile kelime belgesi özelliğine dönüştürmek için adım adım kılavuz. |
+| [Word Belgesindeki Seçenekleri Karşılaştırın](./compare-options/) | Aspose.Words for .NET ile sözcük belgesi özelliğinde Seçenekleri Karşılaştır özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz. |
+| [Word Belgesinde Karşılaştırma Hedefi](./comparison-target/) | Aspose.Words for .NET'in, belgeleri karşılaştırmanıza ve yapılan değişiklikleri içeren yeni bir belge oluşturmanıza olanak sağlayan sözcük belgesi özelliğinde karşılaştırma hedefi öğrenin. |
+| [Word Belgesinde Karşılaştırma Ayrıntı Düzeyi](./comparison-granularity/) | Aspose.Words for .NET'in, belgelerin karakter karakter karşılaştırılmasını ve yapılan değişikliklerin raporlanmasını sağlayan sözcük belgesi özelliğindeki karşılaştırma ayrıntı düzeyini öğrenin. |

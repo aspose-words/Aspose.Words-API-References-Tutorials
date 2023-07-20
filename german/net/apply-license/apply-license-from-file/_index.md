@@ -56,7 +56,7 @@ Hier ist der vollständige Quellcode zum Anwenden einer Lizenz aus einer Datei m
 ```csharp
 License license = new License();
 
-//Diese Zeile versucht, eine Lizenz von mehreren Stellen relativ zur ausführbaren Datei und Aspose.Words.dll festzulegen.
+// Diese Zeile versucht, eine Lizenz von mehreren Stellen relativ zur ausführbaren Datei und Aspose.Words.dll festzulegen.
 // Sie können die zusätzliche Überladung auch verwenden, um eine Lizenz aus einem Stream zu laden. Dies ist nützlich.
 // zum Beispiel, wenn die Lizenz als eingebettete Ressource gespeichert wird.
 try
@@ -78,7 +78,7 @@ Das Hinzufügen von FAQs zu Tutorials verbessert die Lernerfahrung für Benutzer
 
 #### F: Wo finde ich die Lizenzdokumentation für Aspose.Words für .NET?
 
-A: Sie finden die Lizenzdokumentation für Aspose. Wörter für .NET auf der offiziellen Aspose-Dokumentationswebsite. Die Dokumentation enthält detaillierte Anweisungen und Beispiele für die Anwendung von Lizenzen, einschließlich der Anwendung von Lizenzen aus Dateien.
+ A: Sie finden die Lizenzdokumentation für Aspose. Wörter für .NET auf der[API-Referenzen](https://reference.aspose.com/words/net/). Die Dokumentation enthält detaillierte Anweisungen und Beispiele für die Anwendung von Lizenzen, einschließlich der Anwendung von Lizenzen aus Dateien.
 
 #### F: Welche Dateiformate unterstützt Aspose.Words für .NET für Lizenzdateien?
 

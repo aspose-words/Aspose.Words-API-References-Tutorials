@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### F: Wie kann ich überprüfen, ob eine Revision zu einer Gruppe in Aspose.Words für .NET gehört?
 
- A: Benutzen Sie die`Group`Eigentum der`Revision` Objekt, um zu prüfen, ob eine Revision zu einer Gruppe gehört. Wenn die`Group` Eigentum ist`null`bedeutet dies, dass die Revision keiner Gruppe angehört.
+ A: Benutzen Sie die`Group` Eigentum der`Revision` Objekt, um zu prüfen, ob eine Revision zu einer Gruppe gehört. Wenn die`Group` Eigentum ist`null`bedeutet dies, dass die Revision keiner Gruppe angehört.
 
 ```csharp
 if (revision.Group != null)

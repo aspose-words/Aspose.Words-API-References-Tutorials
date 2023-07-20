@@ -88,7 +88,7 @@ En este tutorial, vimos cómo formatear fuentes en un documento de Word usando A
 
 #### P: ¿Es posible cambiar el tamaño de fuente de un texto específico en un documento de Word?
 
-R: Sí, con Aspose.Words puede cambiar fácilmente el tamaño de fuente de un texto específico en un documento de Word. Puede usar la API para seleccionar el texto deseado y aplicar el tamaño de fuente adecuado.
+R: Sí, con Aspose.Words puede cambiar fácilmente el tamaño de fuente de un texto específico en un documento de Word. Puede usar la API para seleccionar el texto deseado y aplicar el tamaño de fuente apropiado.
 
 #### P: ¿Puedo aplicar diferentes estilos de fuente a diferentes párrafos en un documento de Word?
 

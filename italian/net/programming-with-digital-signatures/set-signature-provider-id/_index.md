@@ -102,7 +102,7 @@ R: Per impostare l'ID del provider di firma per una riga della firma in un docum
 
 #### D: Qual è lo scopo dell'ID del fornitore della firma in un documento di Word?
 
-R: L'ID del fornitore della firma in un documento Word ha lo scopo di identificare l'entità o l'organizzazione responsabile della creazione e della gestione della firma digitale. Aiuta a stabilire l'autenticità e l'affidabilità della firma digitale associandola a un fornitore specifico.
+R: L'ID del fornitore della firma in un documento Word ha lo scopo di identificare l'entità o l'organizzazione responsabile della creazione e della gestione della firma digitale. Aiuta a stabilire l'autenticità e l'affidabilità della firma digitale associandola a un provider specifico.
 
 #### D: Che tipo di certificati digitali possono essere utilizzati per impostare l'ID del fornitore della firma in un documento Word?
 

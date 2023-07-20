@@ -10,7 +10,7 @@ url: /sv/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 
 I denna steg-för-steg handledning visar vi dig hur du laddar en avstavningsordlista för ett specifikt språk till Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
+ För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Steg 1: Ladda dokumentet
 

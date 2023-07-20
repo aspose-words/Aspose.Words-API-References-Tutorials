@@ -109,7 +109,7 @@ A: Um mit Aspose.Words für .NET uneingeschränkte Abschnitte in einem Word-Doku
 
 #### F: Kann ich in einem Word-Dokument mehrere uneingeschränkte Abschnitte haben?
 
- A: Ja, Sie können in einem Word-Dokument mehrere uneingeschränkte Abschnitte haben. Durch selektives Deaktivieren des Schutzes für bestimmte Abschnitte mithilfe von`ProtectedForForms`Eigentum der`Section`Objekt können Sie mehrere Abschnitte definieren, in denen Benutzer den Inhalt frei ändern können, während andere Abschnitte geschützt bleiben.
+ A: Ja, Sie können in einem Word-Dokument mehrere uneingeschränkte Abschnitte haben. Durch selektives Deaktivieren des Schutzes für bestimmte Abschnitte mithilfe von`ProtectedForForms` Eigentum der`Section`Objekt können Sie mehrere Abschnitte definieren, in denen Benutzer den Inhalt frei ändern können, während andere Abschnitte geschützt bleiben.
 
 #### Q4. Kann ich den Schutz von einem Abschnitt entfernen, der ursprünglich geschützt war?
  Ja, Sie können den Schutz von einem Abschnitt entfernen, der ursprünglich geschützt war, indem Sie Folgendes festlegen`ProtectedForForms` Eigentum des entsprechenden`Section` widersprechen`false`. Dadurch können Benutzer den Inhalt innerhalb dieses bestimmten Abschnitts ohne Einschränkungen bearbeiten.

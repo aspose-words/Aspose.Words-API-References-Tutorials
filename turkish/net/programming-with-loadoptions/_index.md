@@ -14,13 +14,13 @@ Bu eğitimlerde, Word belgelerini özel ayarlarla yüklemek için LoadOptions'ı
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Kirli Alanları Güncelle](./update-dirty-fields/) | Kirli alanları Aspose.Words for .NET ile güncelleyerek bir Word belgesini nasıl yükleyeceğinizi öğrenin. |
-| [Şifrelenmiş Belgeyi Yükle](./load-encrypted-document/) | Aspose.Words for .NET ile şifrelenmiş belgeleri nasıl yükleyeceğinizi ve kaydedeceğinizi öğrenin. |
+| [Word Belgesinde Kirli Alanları Güncelle](./update-dirty-fields/) | Kirli alanları Aspose.Words for .NET ile güncelleyerek bir Word belgesini nasıl yükleyeceğinizi öğrenin. |
+| [Word Belgesinde Şifreli Yükle](./load-encrypted-document/) | Aspose.Words for .NET ile word belgelerini nasıl şifreli olarak yükleyeceğinizi ve kaydedeceğinizi öğrenin. |
 | [Şekli Office Matematiğine Dönüştür](./convert-shape-to-office-math/) | Aspose.Words for .NET ile belgeleri yüklerken şekilleri Office matematik formüllerine nasıl dönüştüreceğinizi öğrenin. |
 | [Ms Word Sürümünü Ayarla](./set-ms-word-version/) | Aspose.Words for .NET kullanarak bir belgeyi belirli bir MS Word sürümüyle nasıl yükleyeceğinizi öğrenin. |
-| [Temp Klasörünü Kullan](./use-temp-folder/) | Aspose.Words for .NET ile belgeleri yüklerken geçici bir klasörü nasıl kullanacağınızı öğrenin. |
-| [Uyarı Geri Arama](./warning-callback/) | Aspose.Words for .NET ile geri çağırma işlevini kullanarak bir Word belgesi yüklerken uyarıları nasıl ele alacağınızı öğrenin. |
-| [Kodlama ile Yükle](./load-with-encoding/) | Aspose.Words for .NET kullanarak belirli bir kodlamaya sahip bir belgeyi nasıl yükleyeceğinizi öğrenin. |
+| [Word Belgesinde Temp Klasörünü Kullanın](./use-temp-folder/) | Aspose.Words for .NET ile belgeleri yüklerken geçici bir klasörü nasıl kullanacağınızı öğrenin. |
+| [Word Belgesinde Uyarı Geri Araması](./warning-callback/) | Aspose.Words for .NET ile geri çağırma işlevini kullanarak bir Word belgesi yüklerken uyarıları nasıl ele alacağınızı öğrenin. |
+| [Word Belgesinde Kodlamayla Yükle](./load-with-encoding/) | Aspose.Words for .NET kullanarak belirli bir kodlamaya sahip bir belgeyi word belgesine nasıl yükleyeceğinizi öğrenin. |
 | [Pdf Resimleri Atla](./skip-pdf-images/) | Aspose.Words for .NET ile PDF görüntülerini yüklemeyi atlayarak bir PDF belgesini nasıl yükleyeceğinizi öğrenin. |
 | [Meta Dosyalarını Png'ye Dönüştür](./convert-metafiles-to-png/) | Aspose.Words for .NET ile belgeleri yüklerken meta dosyalarını PNG resimlerine nasıl dönüştüreceğinizi öğrenin. |
-| [Chm'yi Yükle](./load-chm/) | Aspose.Words for .NET ile CHM dosyalarını nasıl yükleyeceğinizi öğrenin. |
+| [Chm Dosyalarını Word Belgesine Yükleyin](./load-chm/) | Aspose.Words for .NET ile CHM dosyalarını word belgesine nasıl yükleyeceğinizi öğrenin. |

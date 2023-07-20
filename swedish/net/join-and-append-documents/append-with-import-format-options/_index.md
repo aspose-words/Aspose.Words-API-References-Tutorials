@@ -14,7 +14,7 @@ Denna handledning förklarar hur man använder Aspose.Words för .NET för att l
 
 Se till att du har följande förutsättningar:
 
-- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
 - En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
 ## Steg 2: Öppna käll- och måldokumenten

@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : dissocier les en-têtes et les pieds de page du document source
 
- Pour dissocier les en-têtes et pieds de page du document source de la continuation des en-têtes et pieds de page du document de destination, vous devez définir le`LinkToPrevious`propriété de la`HeadersFooters` collection dans la première section du document source pour`false`.
+ Pour dissocier les en-têtes et pieds de page du document source de la continuation des en-têtes et pieds de page du document de destination, vous devez définir le`LinkToPrevious` propriété de la`HeadersFooters` collection dans la première section du document source pour`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);

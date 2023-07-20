@@ -55,7 +55,7 @@ labels.Separator = "/";
 ```
 
 ## Étape 5 : Enregistrer le document
- Enregistrez le document dans le répertoire spécifié à l'aide de la`Save`méthode. Indiquez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous "WorkingWithCharts.ChartDataLabel.docx".
+ Enregistrez le document dans le répertoire spécifié à l'aide de la`Save` méthode. Indiquez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous "WorkingWithCharts.ChartDataLabel.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");

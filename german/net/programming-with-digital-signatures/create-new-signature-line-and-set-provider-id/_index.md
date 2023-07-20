@@ -157,7 +157,7 @@ A: Das Festlegen der Anbieter-ID für eine Signaturzeile hilft dabei, die Quelle
 #### F: Wie kann ich mit Aspose.Words für .NET die Anbieter-ID für eine Signaturzeile festlegen?
 
 A: Um die Anbieter-ID für eine Signaturzeile mithilfe von Aspose.Words für .NET festzulegen, können Sie die folgenden Schritte ausführen:
-1.  Nachdem Sie die Signaturzeile eingefügt haben, greifen Sie auf zu`ProviderId`Eigentum der`SignatureLine` Objekt.
+1.  Nachdem Sie die Signaturzeile eingefügt haben, greifen Sie auf zu`ProviderId` Eigentum der`SignatureLine` Objekt.
 2.  Stellen Sie die ein`ProviderId` Eigenschaft mit dem gewünschten Anbieter-ID-Wert`Guid` Datentyp.
 
 #### F: Kann ich das Dokument signieren, nachdem ich eine neue Signaturzeile erstellt und die Anbieter-ID festgelegt habe?

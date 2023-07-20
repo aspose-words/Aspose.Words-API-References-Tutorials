@@ -10,7 +10,7 @@ url: /tr/net/basic-conversions/doc-to-docx/
 
 Bu öğreticide, .doc formatındaki bir Word belgesini Docx formatına dönüştürmek için Aspose.Words for .NET kullanma sürecini adım adım anlatacağız. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınız konusunda size rehberlik edeceğiz.
 
-Başlamak için, geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
+ Başlamak için, geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı şu adresten indirip yükleyin:[Aspose.Sürümler](https://releases.aspose.com/words/net/).
 
 ## 1. Adım: Geliştirme Ortamını Kurma
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 
 ## 3. Adım: Belge Nesnesini Başlatma
 
- Bu adımda,`Document`.doc biçimindeki kaynak belgenizin yolunu içeren nesne. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu gerçek dizin yolu ile ve`"Document.doc"` kaynak belgenizin adıyla. İşte kod parçacığı:
+ Bu adımda,`Document` .doc biçimindeki kaynak belgenizin yolunu içeren nesne. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu gerçek dizin yolu ile ve`"Document.doc"` kaynak belgenizin adıyla. İşte kod parçacığı:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -37,7 +37,7 @@ Document doc = new Document(dataDir + "Document.doc");
 
 ## Adım 4: Belgeyi Docx Formatına Dönüştürme
 
- Artık başlattığınıza göre`Document` nesne, dönüştürme işlemine devam edebilirsiniz. Aspose.Words for .NET, özelleştirme için çeşitli seçenekler ve ayarlar sunar, ancak temel dönüştürme için ek parametre gerekmez.
+ Artık başlattığınıza göre`Document`nesne, dönüştürme işlemine devam edebilirsiniz. Aspose.Words for .NET, özelleştirme için çeşitli seçenekler ve ayarlar sunar, ancak temel dönüştürme için ek parametre gerekmez.
 
 ## Adım 5: Dönüştürülen Belgeyi Kaydetme
 
@@ -77,7 +77,7 @@ DOC'yi DOCX'e dönüştürmek çeşitli avantajlar sunar. DOCX, Microsoft taraf�
 
 Aspose.Words for .NET kullanarak bir DOC dosyasını DOCX'e dönüştürmek için şu adımları takip edebilirsiniz:
 
-Aspose.Words for .NET'i kurun: Resmi web sitesinden veya NuGet aracılığıyla Aspose.Words for .NET'i indirip kurarak başlayın.
+ Aspose.Words for .NET'i kurun: Aspose.Words for .NET'i şu adresten indirip kurarak başlayın:[Aspose.Sürümler](https://releases.aspose.com/words/net/) veya NuGet aracılığıyla.
 
 DOC dosyasını yükleyin: DOC dosyasını belleğe yüklemek için Document sınıfını kullanın.
 

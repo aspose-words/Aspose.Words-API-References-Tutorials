@@ -55,7 +55,7 @@ labels.Separator = "/";
 ```
 
 ## الخطوة 5: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save`طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithCharts.ChartDataLabel.docx".
+ احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithCharts.ChartDataLabel.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");

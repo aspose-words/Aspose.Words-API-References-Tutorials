@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // قم بتحميل مستند Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-// تكوين خيارات النسخ الاحتياطي باستخدام ميزة "استخدام الخطوط من الجهاز الهدف"
+//تكوين خيارات النسخ الاحتياطي باستخدام ميزة "استخدام الخطوط من الجهاز الهدف"
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // تحويل المستند إلى HTML ثابت

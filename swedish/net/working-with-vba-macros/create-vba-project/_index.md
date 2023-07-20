@@ -98,7 +98,7 @@ S: Innan du kan skapa ett VBA-projekt i ett Word-dokument måste du ha praktiska
 
 #### F: Hur anger man makrokällkod i VBA-modulen?
 
- S: För att ange källkoden för makrot i VBA-modulen kan du använda`SourceCode`egendom av`VbaModule` klass genom att tilldela den en teckensträng som innehåller VBA-koden.
+ S: För att ange källkoden för makrot i VBA-modulen kan du använda`SourceCode` egendom av`VbaModule` klass genom att tilldela den en teckensträng som innehåller VBA-koden.
 
 #### F: Kan jag lägga till flera VBA-moduler till ett VBA-projekt i ett Word-dokument?
 

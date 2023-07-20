@@ -53,7 +53,7 @@ builder.Writeln("This text will be Bold");
 
 #### P: ¿Cómo puedo hacer que el texto esté en negrita en Aspose.Words?
 
- R: Para poner el texto en negrita en Aspose.Words, puede usar el`Font.Bold`propiedad de la`Run`objeto. Puede establecer esta propiedad en`true` al texto específico en negrita. Por ejemplo, puedes usar`run.Font.Bold=true` poner en negrita el texto dentro del`Run` objeto.
+ R: Para poner el texto en negrita en Aspose.Words, puede usar el`Font.Bold` propiedad de la`Run`objeto. Puede establecer esta propiedad en`true` al texto específico en negrita. Por ejemplo, puedes usar`run.Font.Bold=true` poner en negrita el texto dentro del`Run` objeto.
 
 #### P: ¿Es posible poner en negrita varios fragmentos de texto en el mismo párrafo?
 
@@ -61,4 +61,4 @@ builder.Writeln("This text will be Bold");
 
 #### P: ¿Puedo poner en negrita el texto que está en una tabla o celda en Aspose.Words?
 
- R: Sí, puede poner en negrita el texto que está en una tabla o celda en Aspose.Words. Puede navegar a la celda o párrafo que desee utilizando los métodos apropiados y luego aplicar el formato de negrita con el`Font.Bold`propiedad de la`Run` o`Paragraph` objeto.
+ R: Sí, puede poner en negrita el texto que está en una tabla o celda en Aspose.Words. Puede navegar a la celda o párrafo que desee utilizando los métodos apropiados y luego aplicar el formato de negrita con el`Font.Bold` propiedad de la`Run` o`Paragraph` objeto.

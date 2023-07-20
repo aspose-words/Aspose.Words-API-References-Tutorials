@@ -1,13 +1,12 @@
 ---
-title: Insérer un champ de formulaire de zone de liste déroulante
-linktitle: Insérer un champ de formulaire de zone de liste déroulante
+title: Insérer un champ de formulaire de zone de liste déroulante dans un document Word
+linktitle: Insérer un champ de formulaire de zone de liste déroulante dans un document Word
 second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer des champs de formulaire de zone de liste déroulante dans des documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
-
 Dans cet exemple complet, vous apprendrez à insérer un champ de formulaire de zone de liste déroulante dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure d'ajouter des champs de formulaire de zone de liste déroulante avec des propriétés personnalisables à vos documents.
 
 ## Conditions préalables
@@ -61,3 +60,25 @@ N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques et de l'
 
 ## Conclusion
 Toutes nos félicitations! Vous avez appris avec succès comment insérer un champ de formulaire de zone de liste déroulante dans un document Word à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais améliorer vos documents avec des champs de formulaire de zone de liste déroulante interactifs.
+
+### FAQ pour insérer un champ de formulaire de zone de liste déroulante dans un document Word
+
+#### Q : Puis-je insérer plusieurs champs de formulaire de zone de liste déroulante dans un seul document ?
+
+R : Certainement ! Vous pouvez insérer autant de champs de formulaire de zone de liste déroulante que nécessaire dans un document Word à l'aide de Aspose.Words pour .NET. Répétez simplement le processus d'insertion pour ajouter plusieurs listes déroulantes interactives.
+
+#### Q : Puis-je personnaliser la liste des éléments dans le champ de formulaire de la zone de liste déroulante ?
+
+R : Oui, vous avez un contrôle total sur la liste des éléments dans le champ de formulaire de la zone de liste déroulante. Vous pouvez définir les éléments sous la forme d'un tableau de chaînes, offrant aux utilisateurs différents choix parmi lesquels sélectionner.
+
+#### Q : Puis-je définir l'élément sélectionné par défaut dans le champ de formulaire de la zone de liste déroulante ?
+
+: Absolument ! En spécifiant le paramètre d'index sélectionné dans la méthode InsertComboBox, vous pouvez définir l'élément sélectionné par défaut dans le champ de formulaire de zone de liste déroulante. Les utilisateurs verront l'élément présélectionné lorsqu'ils ouvriront le document.
+
+#### Q : Les champs de formulaire de zone de liste déroulante sont-ils compatibles avec d'autres formats de fichier, tels que PDF ?
+
+R : Oui, les champs de formulaire de zone de liste déroulante insérés à l'aide d'Aspose.Words pour .NET sont compatibles avec divers formats de fichiers, y compris DOCX et PDF. Cela vous permet d'exporter vos documents dans différents formats tout en conservant les combos interactifs.
+
+#### Q : Aspose.Words pour .NET convient-il à la fois aux applications de bureau et Web ?
+
+R : Oui, Aspose.Words pour .NET est une bibliothèque polyvalente adaptée aux applications de bureau et Web. Que vous construisiez une application Windows ou un système basé sur le Web, vous pouvez intégrer la bibliothèque sans effort.

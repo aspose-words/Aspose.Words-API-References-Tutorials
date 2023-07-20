@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Schritt 2: Durchgestrichenen Textstil anwenden
 
- Wir aktivieren den durchgestrichenen Textstil, indem wir festlegen`StrikeThrough`Eigentum der`Font` widersprechen`true`.
+ Wir aktivieren den durchgestrichenen Textstil, indem wir festlegen`StrikeThrough` Eigentum der`Font` widersprechen`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
@@ -53,7 +53,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie den durchgestrichenen 
 
 #### F: Wie kann ich den durchgestrichenen Text in Aspose.Words hinzufügen?
 
- A: Um den durchgestrichenen Text in Aspose.Words hinzuzufügen, können Sie die verwenden`Font.StrikeThrough`Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf festlegen`true` um durchgestrichenen Text zu einem bestimmten Text hinzuzufügen. Sie können zum Beispiel verwenden`run.Font.StrikeThrough=true` um den durchgestrichenen Text in das einzufügen`Run` Objekt.
+ A: Um den durchgestrichenen Text in Aspose.Words hinzuzufügen, können Sie die verwenden`Font.StrikeThrough` Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf festlegen`true` um durchgestrichenen Text zu einem bestimmten Text hinzuzufügen. Sie können zum Beispiel verwenden`run.Font.StrikeThrough=true` um den durchgestrichenen Text in das einzufügen`Run` Objekt.
 
 #### F: Ist es möglich, den durchgestrichenen Text zu mehreren Textteilen im selben Absatz hinzuzufügen?
 
@@ -61,4 +61,4 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie den durchgestrichenen 
 
 #### F: Kann ich durchgestrichenen Text zu Text hinzufügen, der sich in einer Tabelle oder Zelle in Aspose.Words befindet?
 
- A: Ja, Sie können durchgestrichenen Text zu Text hinzufügen, der sich in einer Tabelle oder Zelle in Aspose.Words befindet. Sie können mit den entsprechenden Methoden zu der gewünschten Zelle oder dem gewünschten Absatz springen und dann die durchgestrichene Textformatierung mithilfe der anwenden`Font.StrikeThrough`Eigentum der`Run` oder`Paragraph` Objekt.
+ A: Ja, Sie können durchgestrichenen Text zu Text hinzufügen, der sich in einer Tabelle oder Zelle in Aspose.Words befindet. Sie können mit den entsprechenden Methoden zu der gewünschten Zelle oder dem gewünschten Absatz springen und dann die durchgestrichene Textformatierung mithilfe der anwenden`Font.StrikeThrough` Eigentum der`Run` oder`Paragraph` Objekt.

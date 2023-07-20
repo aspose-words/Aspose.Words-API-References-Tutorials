@@ -1,14 +1,13 @@
 ---
-title: Comparar opciones
-linktitle: Comparar opciones
+title: Comparar opciones en documento de Word
+linktitle: Comparar opciones en documento de Word
 second_title: API de procesamiento de documentos de Aspose.Words
-description: Guía paso a paso para explicar el código fuente de C# de la función Comparar opciones con Aspose.Words para .NET.
+description: Guía paso a paso para explicar el código fuente de C# de las opciones de comparación en la función de documentos de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/compare-documents/compare-options/
 ---
-
-En este tutorial, explicaremos cómo usar la función Comparar opciones con Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
+En este tutorial, explicaremos cómo usar la función Comparar opciones en documentos de Word con Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
 
 ## Paso 1: Compare documentos con opciones personalizadas
 
@@ -78,3 +77,37 @@ Aquí está el código fuente completo para la función Comparar opciones con As
 
 Con este código, puede comparar dos documentos usando opciones personalizadas para ignorar elementos específicos al comparar con Aspose.Words para .NET.
 
+## Conclusión
+
+En este tutorial, aprendimos a usar las Opciones de comparación en Aspose.Words para .NET para personalizar el proceso de comparación al comparar dos documentos. Al especificar diferentes opciones, puede ignorar elementos específicos y hacer que el proceso de comparación sea más flexible. Esta característica le permite tener un mayor control sobre el proceso de comparación, adaptándolo a sus requisitos específicos. Aspose.Words para .NET proporciona poderosas capacidades de comparación de documentos, lo que facilita la identificación de las diferencias entre los documentos mientras se ignoran ciertos elementos según sea necesario.
+
+### Preguntas frecuentes
+
+#### P: ¿Cuál es el propósito de usar las opciones de comparación en Aspose.Words para .NET?
+
+R: Las opciones de comparación en Aspose.Words para .NET le permiten personalizar el proceso de comparación al comparar dos documentos. Con estas opciones, puede especificar qué elementos ignorar durante la comparación, como cambios de formato, encabezados y pies de página, tablas, campos, comentarios, cuadros de texto y notas al pie.
+
+#### P: ¿Cómo uso las opciones de comparación en Aspose.Words para .NET?
+
+R: Para usar las opciones de comparación en Aspose.Words para .NET, siga estos pasos:
+1. Cargue los dos documentos que desea comparar en objetos Documento separados.
+2.  Utilizar el`Clone()` método para crear una copia del documento original.
+3.  Crear un`CompareOptions` objeto y establezca sus propiedades para personalizar el proceso de comparación. Puede especificar qué elementos ignorar durante la comparación.
+4.  Utilizar el`Compare()` método en uno de los documentos y pasar el otro documento y el`CompareOptions` objeto como parámetros. Este método comparará los documentos según las opciones especificadas y marcará los cambios en el documento original.
+5.  Comprobar el`Revisions` propiedad del documento original. Si el conteo es cero, significa que los documentos son idénticos, considerando las opciones especificadas.
+
+#### P: ¿Cuáles son las opciones comunes disponibles en CompareOptions?
+
+R: Las opciones comunes disponibles en CompareOptions incluyen:
+- `IgnoreFormatting`: Ignora los cambios en el formato.
+- `IgnoreHeadersAndFooters`: ignora los cambios en los encabezados y pies de página.
+- `IgnoreCaseChanges`: Ignora los cambios de mayúsculas y minúsculas.
+- `IgnoreTables`: Ignora los cambios en las tablas.
+- `IgnoreFields`: Ignora los cambios en los campos.
+- `IgnoreComments`: Ignora los cambios en los comentarios.
+- `IgnoreTextboxes`Ignora los cambios en los cuadros de texto.
+- `IgnoreFootnotes`: Ignora los cambios en las notas al pie.
+
+#### P: ¿Puedo usar opciones personalizadas para elementos específicos durante la comparación de documentos?
+
+ R: Sí, puede usar opciones personalizadas para elementos específicos durante la comparación de documentos. Al establecer las propiedades de la`CompareOptions` objeto en consecuencia, puede elegir qué elementos ignorar y cuáles considerar durante la comparación.

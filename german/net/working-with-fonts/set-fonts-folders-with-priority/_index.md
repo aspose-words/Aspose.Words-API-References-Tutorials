@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man Schriftartenordnern beim Rendern eines Dokuments mit Aspose.Words für .NET Priorität einräumt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie beim Rendern Ihrer Dokumente ganz einfach mehrere Schriftartenordner mit benutzerdefinierter Suchpriorität angeben. Aspose.Words bietet eine leistungsstarke und flexible API für die Textverarbeitung mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftartquellen steuern und an Ihre spezifischen Anforderungen anpassen.
+In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit Aspose.Words für .NET Schriftartenordner mit Priorität festlegt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie beim Rendern Ihrer Dokumente ganz einfach mehrere Schriftartenordner mit benutzerdefinierter Suchpriorität angeben. Aspose.Words bietet eine leistungsstarke und flexible API für die Textverarbeitung mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftartquellen steuern und an Ihre spezifischen Anforderungen anpassen.
 
 ### FAQs
 

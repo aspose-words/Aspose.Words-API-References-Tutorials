@@ -96,7 +96,7 @@ R: Sí, la función Actualizar datos de marcadores está diseñada específicame
 
 #### P: ¿Puedo actualizar otras propiedades de marcadores además del texto?
 
-R: Sí, además del texto, también puede actualizar otras propiedades del marcador, como el nombre del marcador, el alcance del marcador, etc. Utilice las propiedades apropiadas del`Bookmark` objeto para actualizar las propiedades deseadas.
+ R: Sí, además del texto, también puede actualizar otras propiedades del marcador, como el nombre del marcador, el alcance del marcador, etc. Utilice las propiedades apropiadas del`Bookmark` objeto para actualizar las propiedades deseadas.
 
 #### P: ¿Puedo actualizar varios marcadores en el mismo documento?
 

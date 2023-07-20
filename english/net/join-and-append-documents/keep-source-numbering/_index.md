@@ -14,7 +14,7 @@ This tutorial explains how to append a source document to a destination document
 
 Make sure you have the following prerequisites:
 
-- Aspose.Words for .NET library installed. You can download it from the official Aspose website or use NuGet package manager to install it.
+- Aspose.Words for .NET library installed. You can download it from [Aspose.Releases]https://releases.aspose.com/words/net/ or use NuGet package manager to install it.
 - A document directory path where the source and destination documents will be saved.
 
 ## Step 2: Create the destination and source documents

@@ -98,7 +98,7 @@ R : Pour appliquer la protection en lecture seule à un document Word à l'aide
 1.  Créer une instance de`Document` classe et une`DocumentBuilder` objet.
 2.  Utilisez le`DocumentBuilder` pour écrire du contenu dans le document.
 3.  Définissez un mot de passe pour le document à l'aide du`SetPassword` méthode de la`WriteProtection` objet.
-4.  Met le`ReadOnlyRecommended`propriété de la`WriteProtection` s'opposer à`true` pour recommander d'ouvrir le document en lecture seule.
+4.  Met le`ReadOnlyRecommended` propriété de la`WriteProtection` s'opposer à`true` pour recommander d'ouvrir le document en lecture seule.
 5.  Appliquez la protection en lecture seule à l'aide de la`Protect` méthode de la`Document` objet, en spécifiant le`ProtectionType` comme`ReadOnly`.
 6.  Enregistrez le document protégé à l'aide de la`Save` méthode de la`Document` objet.
 

@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 ---
 
-En este tutorial, exploraremos el código fuente de C# provisto para la función "Obtener rango de páginas JPEG" con Aspose.Words para .NET. Esta característica le permite convertir un rango específico de páginas de un documento en imágenes en formato JPEG.
+En este tutorial, exploraremos el código fuente de C# provisto para la característica "Obtener rango de páginas JPEG" con Aspose.Words para .NET. Esta característica le permite convertir un rango específico de páginas de un documento en imágenes en formato JPEG.
 
 ## Paso 1: Configuración del entorno
 

@@ -66,7 +66,7 @@ for (int i = 0; i < doc.Sections.Count; i++)
 }
 ```
 
-Con este código podrá dividir un documento de Word en secciones separadas utilizando Aspose.Words para .NET.
+Con este código podrá dividir un documento de Word en secciones separadas usando Aspose.Words para .NET.
 
 Ahora puedes trabajar fácilmente con secciones específicas.
 

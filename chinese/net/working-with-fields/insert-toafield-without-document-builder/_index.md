@@ -70,7 +70,7 @@ fieldToa.EntryCategory = "1";
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## 第 8 步：更新 TOA 字段
+## 步骤 8：更新 TOA 字段
 
 最后，我们调用`Update()`更新 TOA 字段的方法。
 

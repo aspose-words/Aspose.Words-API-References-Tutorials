@@ -88,4 +88,4 @@ R: La función Desenredar presentada en este artículo está específicamente di
 
 #### P: ¿Existen otros métodos para desenredar los marcadores anidados en un documento de Word utilizando Aspose.Words para .NET?
 
-R: El método presentado en este artículo es un método común para desenredar marcadores anidados en filas de tablas adyacentes. Sin embargo, puede haber otros enfoques o técnicas según las necesidades específicas de su proyecto. Puede consultar la documentación oficial de Aspose.Words para explorar más a fondo las funciones disponibles.
+ R: El método presentado en este artículo es un método común para desenredar marcadores anidados en filas de tablas adyacentes. Sin embargo, puede haber otros enfoques o técnicas según las necesidades específicas de su proyecto. Puedes consultar el[Referencias de Aspose.Words para la API de .NET](https://reference.aspose.com/words/net/) para explorar más a fondo las funciones disponibles.

@@ -44,7 +44,7 @@ builder.Write("Text");
 
 ## الخطوة 4: استخدام وظيفة Ignore Text Inside Insert Revisions
 
- لتجاهل النص داخل إدراج المراجعات في العمليات اللاحقة ، يمكننا استخدام ملف`FindReplaceOptions` كائن وتعيين`IgnoreInserted` ملكية ل`true`:
+ لتجاهل النص داخل إدراج المراجعات في العمليات اللاحقة ، يمكننا استخدام ملف`FindReplaceOptions` كائن وتعيين`IgnoreInserted` الملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -69,7 +69,7 @@ Console.WriteLine(doc.GetText());
 
 ## الخطوة 7: تغيير الخيارات لتضمين إدراج المراجعات
 
-إذا أردنا تضمين النص داخل مراجعات الإدراج في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل مراجعات الإدراج. لهذا سنقوم بتعيين`IgnoreInserted` ملكية ل`false`:
+إذا أردنا تضمين النص داخل مراجعات الإدراج في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل مراجعات الإدراج. لهذا سنقوم بتعيين`IgnoreInserted` الملكية ل`false`:
 
 ```csharp
 options.IgnoreInserted = false;
@@ -156,7 +156,7 @@ builder.Write("Text");
 
 #### س: كيف يمكنني تجاهل النص الموجود داخل مراجعات الإدراج في Aspose.Words for .NET؟
 
- ج: لتجاهل النص داخل إدخال المراجعات أثناء العمليات اللاحقة ، يمكنك استخدام ملف`FindReplaceOptions` كائن وتعيين`IgnoreInserted` ملكية ل`true`:
+ ج: لتجاهل النص داخل إدخال المراجعات أثناء العمليات اللاحقة ، يمكنك استخدام ملف`FindReplaceOptions` كائن وتعيين`IgnoreInserted` الملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -181,7 +181,7 @@ Console.WriteLine(doc.GetText());
 
 #### س: كيف يمكنني تضمين مراجعات الإدخال في نتيجة الإخراج في Aspose.Words for .NET؟
 
- ج: لتضمين النص داخل مراجعات الإدراج في نتيجة الإخراج ، يمكنك تغيير الخيارات لعدم تجاهل مراجعات الإدراج. لهذا ، يمكنك ضبط ملف`IgnoreInserted`ممتلكات`FindReplaceOptions` يعترض على`false`:
+ ج: لتضمين النص داخل مراجعات الإدراج في نتيجة الإخراج ، يمكنك تغيير الخيارات لعدم تجاهل مراجعات الإدراج. لهذا ، يمكنك ضبط ملف`IgnoreInserted` ممتلكات`FindReplaceOptions` يعترض على`false`:
 
 ```csharp
 options.IgnoreInserted = false;

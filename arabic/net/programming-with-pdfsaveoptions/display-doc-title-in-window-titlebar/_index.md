@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pd
 
  قم بتحميل المستند باستخدام ملف`Document` طريقة وتحديد مسار الملف للتحويل إلى PDF.
 
- قم بتكوين خيارات حفظ PDF عن طريق إنشاء مثيل لملف`PdfSaveOptions` الطبقة ووضع`DisplayDocTitle` ملكية ل`true`. يتيح ذلك عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF.
+ قم بتكوين خيارات حفظ PDF عن طريق إنشاء مثيل لملف`PdfSaveOptions` الطبقة ووضع`DisplayDocTitle` الملكية ل`true`. يتيح ذلك عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF.
 
  استخدم ال`Save` طريقة لتحويل المستند إلى PDF مع تحديد خيارات التحويل.
 

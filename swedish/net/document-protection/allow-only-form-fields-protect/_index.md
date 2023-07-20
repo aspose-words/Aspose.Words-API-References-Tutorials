@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
-I det här exemplet skapar vi ett nytt tomt dokument och använder sedan DocumentBuilder för att lägga till en textrad.
+det här exemplet skapar vi ett nytt tomt dokument och använder sedan DocumentBuilder för att lägga till en textrad.
 
 ## Steg 3: Aktivera dokumentskydd
 
@@ -55,7 +55,7 @@ Var noga med att ersätta "lösenord" med lösenordet du angav tidigare.
 
 ## Steg 5: Spara det skyddade dokumentet
 
-Slutligen kan du spara det skyddade dokumentet med hjälp av`Save` metoden för klassen Document. Ange den fullständiga sökvägen och önskat filnamn. Till exempel :
+ Slutligen kan du spara det skyddade dokumentet med hjälp av`Save` metoden för klassen Document. Ange den fullständiga sökvägen och önskat filnamn. Till exempel :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");

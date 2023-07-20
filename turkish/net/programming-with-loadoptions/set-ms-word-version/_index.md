@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/set-ms-word-version/
 ---
-
 Bir C# uygulamasında Word ile Kelime İşleme belgeleri hazırlanırken, belge yüklenirken kullanılacak Microsoft Word sürümünün belirtilmesi gerekebilir. .NET için Aspose.Words kitaplığıyla, LoadOptions'ı kullanarak hangi MS Word sürümünün kullanılacağını kolayca ayarlayabilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak MS Word'ün belirli bir sürümünü içeren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
@@ -53,3 +52,26 @@ doc.Save(dataDir + "WorkingWithLoadOptions.SetMsWordVersion.docx");
 ## Çözüm
 
 Bu kılavuzda, MS Word'ün belirli bir sürümünü belirten bir belgenin Aspose.Words .NET kitaplığı kullanılarak nasıl yükleneceğini açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynağını kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Bir belgeyi MS Word'ün belirli bir sürümüyle yüklemek, uygulamanızda belgenin uygun uyumluluğunu ve işlenmesini sağlamanıza olanak tanır.
+
+
+### SSS
+
+#### S: Bir C# uygulamasına belge yüklerken neden MS Word sürümünü belirtmem gerekiyor?
+
+MS Word sürümünün belirtilmesi, özellikle farklı sürümler arasında farklılık gösterebilen belirli biçimlendirme veya özelliklerle uğraşırken belgenin doğru şekilde yüklenmesini ve işlenmesini sağlar.
+
+#### S: Aspose.Words MS Word'ün hangi sürümlerini destekliyor?
+
+C: Aspose.Words for .NET, Word 97, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016, Word 2019 ve daha fazlası dahil olmak üzere MS Word'ün çeşitli sürümlerini destekler.
+
+#### S: Sistemimde kurulu olandan farklı bir MS Word sürümüne sahip bir belge yükleyebilir miyim?
+
+C: Evet, Aspose.Words, belgeyi yüklerken MS Word'ün farklı bir sürümünü belirtmenize izin vererek, hedef sistem farklı bir MS Word sürümüne sahip olsa bile uyumluluğu garanti eder.
+
+#### S: MS Word sürümünü ayarlamak C# uygulamama nasıl yarar sağlar?
+
+Y: MS Word sürümünün ayarlanması, belgenin söz konusu belirli sürümün amaçlanan biçimlendirmesine ve özelliklerine göre işlenmesini sağlayarak tutarlı çıktı sağlar.
+
+#### S: Aspose.Words yalnızca DOCX belgelerini işlemekle mi sınırlı?
+
+C: Hayır, Aspose.Words, DOC, RTF, HTML, PDF ve daha fazlasını içeren çeşitli belge formatlarını destekler ve bu da onu farklı türdeki belgeleri işlemek için çok yönlü bir araç haline getirir.

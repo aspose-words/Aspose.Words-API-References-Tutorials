@@ -14,7 +14,7 @@ Este tutorial explica cómo unir dos documentos continuamente usando Aspose.Word
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o use el administrador de paquetes NuGet para instalarlo.
 - Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
 ## Paso 2: Abra los documentos de origen y destino
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: Configure el inicio de la sección continua
 
- Para que el documento de origen aparezca justo después del contenido del documento de destino, configure el`SectionStart` propiedad de la primera sección en el documento fuente para`SectionStart.Continuous`.
+Para que el documento de origen aparezca justo después del contenido del documento de destino, configure el`SectionStart` propiedad de la primera sección en el documento fuente para`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;

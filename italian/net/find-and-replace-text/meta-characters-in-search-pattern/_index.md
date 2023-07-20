@@ -131,7 +131,7 @@ builder.Writeln("This is line 1");
 builder.Writeln("This is line 2");
 ```
 
-#### D: Come cercare e sostituire testo con metacaratteri in un documento usando Aspose.Words per .NET?
+#### D: Come cercare e sostituire testo con metacaratteri in un documento utilizzando Aspose.Words per .NET?
 
  R: Per cercare e sostituire il testo con metacaratteri, puoi utilizzare il file`Range.Replace` metodo. Nel nostro esempio, sostituiamo la frase "Questa è la riga 1&pQuesta è la riga 2" con "Questa riga è stata sostituita" utilizzando il`&p` metacarattere per rappresentare un'interruzione di paragrafo:
 

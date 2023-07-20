@@ -76,11 +76,11 @@ In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET Standar
 
 #### F: Kann ich die Standardschriftgröße in Aspose.Words angeben?
 
- A: Ja, Sie können die Standardschriftgröße in Aspose.Words mithilfe von festlegen`DefaultFontSize`Eigentum der`FontSettings` Klasse. Sie können die gewünschte Punktgröße einstellen.
+ A: Ja, Sie können die Standardschriftgröße in Aspose.Words mithilfe von festlegen`DefaultFontSize` Eigentum der`FontSettings` Klasse. Sie können die gewünschte Punktgröße einstellen.
 
 #### F: Ist es möglich, die Standardschriftfarbe in Aspose.Words festzulegen?
 
- A: Ja, Sie können die Standardschriftfarbe in Aspose.Words mithilfe von festlegen`DefaultColor`Eigentum der`FontSettings` Klasse. Sie können die Farbe mithilfe von RGB-Werten oder vordefinierten Namen angeben.
+ A: Ja, Sie können die Standardschriftfarbe in Aspose.Words mithilfe von festlegen`DefaultColor` Eigentum der`FontSettings` Klasse. Sie können die Farbe mithilfe von RGB-Werten oder vordefinierten Namen angeben.
 
 #### F: Gilt die Standardschriftart für alle Dokumente?
 

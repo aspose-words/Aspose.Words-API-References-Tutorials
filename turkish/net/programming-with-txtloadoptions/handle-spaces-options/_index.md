@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 
  Bu son adımda, ortaya çıkan belgeyi kullanarak .docx formatında kaydediyoruz.`Save` yöntemi ve yolu çıktı dosyasına geçirme.
 
-Artık boşluk işleme seçeneklerini belirterek metin belgesini yüklemek için kaynak kodunu çalıştırabilirsiniz. Elde edilen belge belirtilen dizine "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx" adıyla kaydedilecektir.
+Artık boşluk işleme seçeneklerini belirterek metin belgesini yüklemek için kaynak kodu çalıştırabilirsiniz. Elde edilen belge belirtilen dizine "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx" adıyla kaydedilecektir.
 
 ### Aspose.Words for .NET ile TXT Yükleme Seçenekleri ile Alan Yönetimi Özelliği için Örnek Kaynak Kodu*
 

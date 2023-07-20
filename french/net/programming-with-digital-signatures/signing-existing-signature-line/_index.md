@@ -101,7 +101,7 @@ R : Pour signer une ligne de signature existante dans un document Word à l'aid
 1.  Chargez le document à l'aide de la`Document` classe et spécifiez le chemin d'accès au fichier de document.
 2.  Accédez à la ligne de signature existante à l'aide de la méthode ou de la propriété appropriée. Par exemple, vous pouvez utiliser`GetChild` méthode pour récupérer la forme de la ligne de signature.
 3.  Créer une instance de`SignOptions`classe et définissez la`SignatureLineId` propriété à l'ID de la ligne de signature existante.
-4.  Met le`SignatureLineImage`propriété de la`SignOptions` classe à l'image représentant la signature numérique.
+4.  Met le`SignatureLineImage` propriété de la`SignOptions` classe à l'image représentant la signature numérique.
 5.  Chargez le certificat de signature à l'aide de la`CertificateHolder` classe et fournissez le certificat et le mot de passe nécessaires.
 6.  Utilisez le`DigitalSignatureUtil.Sign` méthode pour signer le document, en fournissant les paramètres nécessaires, y compris le`SignOptions` objet.
 
@@ -111,11 +111,11 @@ R : Pour signer une ligne de signature existante dans un document Word à l'aid
 
 #### Q : Puis-je personnaliser l'apparence de la signature numérique dans une ligne de signature existante ?
 
- : Oui, vous pouvez personnaliser l'apparence de la signature numérique dans une ligne de signature existante en fournissant un fichier image représentant la signature. L'image peut être un logo, une signature manuscrite ou toute autre représentation graphique de la signature. Vous pouvez régler le`SignatureLineImage`propriété de la`SignOptions` classe aux octets du fichier image.
+ : Oui, vous pouvez personnaliser l'apparence de la signature numérique dans une ligne de signature existante en fournissant un fichier image représentant la signature. L'image peut être un logo, une signature manuscrite ou toute autre représentation graphique de la signature. Vous pouvez régler le`SignatureLineImage` propriété de la`SignOptions` classe aux octets du fichier image.
 
 #### Q : Puis-je signer plusieurs lignes de signature existantes dans un document Word ?
  R : Oui, vous pouvez signer plusieurs lignes de signature existantes dans un document Word. Vous devez suivre les étapes pour chaque ligne de signature individuellement, en définissant le`SignatureLineId` et`SignatureLineImage` valeurs dans le`SignOptions` objet pour chaque ligne de signature.
 
 #### Q : Quel format doit avoir le fichier image pour la signature numérique dans une ligne de signature existante ?
 
- R : Le fichier image de la signature numérique dans une ligne de signature existante peut être dans différents formats, tels que PNG, JPEG, BMP ou GIF. Vous pouvez spécifier le chemin du fichier ou lire les octets du fichier image et l'affecter au`SignatureLineImage`propriété de la`SignOptions` classe.
+ R : Le fichier image de la signature numérique dans une ligne de signature existante peut être dans différents formats, tels que PNG, JPEG, BMP ou GIF. Vous pouvez spécifier le chemin du fichier ou lire les octets du fichier image et l'affecter au`SignatureLineImage` propriété de la`SignOptions` classe.

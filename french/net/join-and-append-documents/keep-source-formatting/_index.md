@@ -14,7 +14,7 @@ Ce didacticiel montre comment ajouter un document source à un document de desti
 
 Assurez-vous que vous disposez des prérequis suivants :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger à partir du site Web officiel d'Aspose ou utiliser le gestionnaire de packages NuGet pour l'installer.
+- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
 - Un chemin d'accès au répertoire de documents où les documents source et de destination seront enregistrés.
 
 ## Étape 2 : Créer les documents de destination et source

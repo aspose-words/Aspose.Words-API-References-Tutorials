@@ -62,7 +62,7 @@ Ecco il codice sorgente di esempio completo per districare i segnalibri dalle ri
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	// Questo esegue l'attività personalizzata di inserire la fine del segnalibro di riga nella stessa riga con l'inizio del segnalibro.
+	//Questo esegue l'attività personalizzata di inserire la fine del segnalibro di riga nella stessa riga con l'inizio del segnalibro.
 	Untangle(doc);
 
 	// Ora possiamo eliminare facilmente le righe da un segnalibro senza danneggiare i segnalibri di qualsiasi altra riga.

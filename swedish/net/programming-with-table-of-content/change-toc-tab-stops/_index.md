@@ -1,6 +1,6 @@
 ---
-title: Ändra Toc-flikstopp i Word-dokument
-linktitle: Ändra Toc-flikstopp i Word-dokument
+title: Ändra Toc-tabstopp i Word-dokument
+linktitle: Ändra Toc-tabstopp i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ändrar innehållsförteckningsflikar i ett Word-dokument med Aspose.Words för .NET.
 type: docs

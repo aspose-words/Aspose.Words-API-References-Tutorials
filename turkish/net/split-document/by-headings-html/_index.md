@@ -26,7 +26,7 @@ Document doc = new Document(MyDir + "Rendering.docx");
 ```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-// Belgeyi, bu durumda başlığa göre ayırarak daha küçük parçalara bölün.
+// Belgeyi, bu durumda başlığa göre ayırarak daha küçük parçalara ayırın.
 DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
 
@@ -60,7 +60,7 @@ Bu kodla, Aspose.Words for .NET kullanarak bir Word belgesini başlıklara göre
 
 Bir belgeyi başlıklara göre bölmek, özellikle birden çok bölümü olan büyük belgelerde içeriği düzenlemek ve yönetmek için yararlı olabilir. Aspose.Words for .NET, belge bölme işlemleri ve çeşitli biçimlerde çıktılar oluşturmak için güvenilir ve verimli bir çözüm sunar.
 
-Belge işleme becerilerinizi daha da geliştirmek ve iş akışınızı kolaylaştırmak için Aspose.Words for .NET tarafından sağlanan ek özellikleri ve seçenekleri keşfetmekten çekinmeyin.
+Aspose.Words for .NET tarafından belge işleme yeteneklerinizi daha da geliştirmek ve iş akışınızı kolaylaştırmak için sağlanan ek özellikleri ve seçenekleri keşfetmekten çekinmeyin.
 
 ### SSS
 

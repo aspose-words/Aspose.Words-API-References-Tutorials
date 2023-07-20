@@ -31,7 +31,7 @@ paraStyle.Font.Size = 8;
 paraStyle.Font.Name = "Arial";
 ```
 
-det här steget skapar vi en anpassad styckestil med namnet "MyParaStyle" och ställer in dess teckensnittsegenskaper.
+I det här steget skapar vi en anpassad styckestil med namnet "MyParaStyle" och ställer in dess teckensnittsegenskaper.
 
 ## Steg 4: Infoga stilavgränsaren
 
@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 
 ## Slutsats
 
-den här handledningen lärde vi oss hur man infogar en stilavgränsare i ett dokument med Aspose.Words för .NET. Vi skapade ett nytt dokument, definierade en anpassad stil och använde stilavgränsaren för att skilja textavsnitt med olika stilar.
+I den här handledningen lärde vi oss hur man infogar en stilavgränsare i ett dokument med Aspose.Words för .NET. Vi skapade ett nytt dokument, definierade en anpassad stil och använde stilavgränsaren för att skilja textavsnitt med olika stilar.
 
 Att använda stilavgränsare ger ytterligare flexibilitet när du formaterar dina dokument. Detta hjälper till att upprätthålla visuell konsistens samtidigt som det tillåter stilistisk variation.
 
@@ -98,7 +98,7 @@ För att ställa in miljön måste du se till att du har Aspose.Words för .NET 
 
 #### Hur skapar och konfigurerar jag en anpassad stil?
 
- För att skapa en anpassad stil kan du använda`Styles.Add` metod för`Document` objekt. Ange stiltyp (t.ex.`StyleType.Paragraph`) och ange ett namn för stilen. När du har skapat det kan du ändra teckensnittsegenskaperna för stilobjektet för att konfigurera dess utseende.
+ För att skapa en anpassad stil kan du använda`Styles.Add` metod för`Document` objekt. Ange stiltyp (t.ex.`StyleType.Paragraph`och ange ett namn för stilen. När du har skapat det kan du ändra teckensnittsegenskaperna för stilobjektet för att konfigurera dess utseende.
 
 #### Hur infogar jag en stilavgränsare?
 
@@ -106,7 +106,7 @@ För att ställa in miljön måste du se till att du har Aspose.Words för .NET 
 
 #### Hur kan jag tillämpa olika stilar på olika textavsnitt?
 
- Du kan använda olika stilar på olika textavsnitt genom att ställa in`ParagraphFormat.StyleName`egendom av`DocumentBuilder`objekt. Innan du skriver texten kan du ställa in stilnamnet till önskad stil, och den efterföljande texten kommer att formateras därefter.
+ Du kan använda olika stilar på olika textavsnitt genom att ställa in`ParagraphFormat.StyleName` egendom av`DocumentBuilder` objekt. Innan du skriver texten kan du ställa in stilnamnet till önskad stil, och den efterföljande texten kommer att formateras därefter.
 
 #### Kan jag spara dokumentet i olika format?
 

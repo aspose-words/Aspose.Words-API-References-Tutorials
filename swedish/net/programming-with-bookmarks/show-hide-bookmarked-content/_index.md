@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## Steg 2: Infoga sammanslagningsfälten
 
- Vi använder en dokumentbyggare`DocumentBuilder`för att infoga de nödvändiga sammanslagningsfälten. Dessa sammanslagningsfält kommer att ställa in ett villkor för att visa eller dölja bokmärkesinnehållet beroende på värdet på`showHide` variabel:
+ Vi använder en dokumentbyggare`DocumentBuilder` för att infoga de nödvändiga sammanslagningsfälten. Dessa sammanslagningsfält kommer att ställa in ett villkor för att visa eller dölja bokmärkesinnehållet beroende på värdet på`showHide` variabel:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -170,7 +170,7 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### F: Är Aspose.Words-biblioteket gratis?
 
-S: Aspose.Words-biblioteket är ett kommersiellt bibliotek och kräver en giltig licens för att kunna användas i dina projekt. Du kan kolla Asposes officiella webbplats för att lära dig mer om licensalternativ och prissättning.
+ S: Aspose.Words-biblioteket är ett kommersiellt bibliotek och kräver en giltig licens för att kunna användas i dina projekt. Du kan kolla[Aspose.Words för .NET API-referenser](https://reference.aspose.com/words/net/) för att lära dig mer om licensalternativ och priser.
 
 #### F: Finns det andra bibliotek tillgängliga för ordbehandling med Word-dokument i .NET?
 

@@ -2,13 +2,13 @@
 title: Combinar documentos de Word
 linktitle: Fusionar documentos
 second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a combinar varios documentos de Word con Aspose.Words para .NET. Esta poderosa API simplifica el proceso de combinación de documentos, haciéndolo eficiente y sencillo.
+description: Aprenda a combinar varios documentos de Word con Aspose.Words para .NET. Esta poderosa API simplifica el proceso de combinación de documentos, haciéndolo eficiente y directo.
 type: docs
 weight: 10
 url: /es/net/split-document/merge-documents/
 ---
 
-En este tutorial, lo guiaremos a través de cómo combinar varios documentos de Word utilizando la función Combinar documentos de Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y obtener un documento combinado que contenga todos los documentos fuente.
+En este tutorial, lo guiaremos a través de cómo fusionar varios documentos de Word utilizando la función Fusionar documentos de Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y obtener un documento combinado que contenga todos los documentos fuente.
 
 ## Paso 1: busque documentos para fusionar
 
@@ -88,7 +88,7 @@ mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 
 ¡Felicidades! Ha aprendido a combinar varios documentos de Word con la función Combinar documentos de Aspose.Words para .NET. Siguiendo el código fuente provisto, puede combinar documentos separados en un solo documento fusionado mientras conserva el formato de cada documento fuente.
 
-Combinar documentos puede ser útil cuando desea consolidar información de varias fuentes o crear un documento unificado a partir de partes individuales. Aspose.Words para .NET proporciona una potente API que simplifica el proceso de combinación de documentos, haciéndolo eficiente y directo.
+Combinar documentos puede ser útil cuando desea consolidar información de varias fuentes o crear un documento unificado a partir de partes individuales. Aspose.Words para .NET proporciona una potente API que simplifica el proceso de combinación de documentos, haciéndolo eficiente y sencillo.
 
 Siéntase libre de explorar otras características que ofrece Aspose.Words para .NET para mejorar sus capacidades de procesamiento de documentos y agilizar su flujo de trabajo.
 

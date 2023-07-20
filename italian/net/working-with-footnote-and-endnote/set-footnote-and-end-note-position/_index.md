@@ -10,7 +10,7 @@ url: /it/net/working-with-footnote-and-endnote/set-footnote-and-end-note-positio
 
 In questo tutorial passo-passo, ti guideremo su come utilizzare Aspose.Words per .NET per impostare la posizione delle note a piè di pagina e delle note di chiusura in un documento di Word. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
+ Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria da[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Passaggio 1: inizializzazione dell'oggetto documento
 

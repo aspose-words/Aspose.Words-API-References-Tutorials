@@ -1,14 +1,13 @@
 ---
-title: Cible de comparaison
-linktitle: Cible de comparaison
+title: Cible de comparaison dans un document Word
+linktitle: Cible de comparaison dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à comparer la fonction cible d'Aspose.Words pour .NET qui vous permet de comparer des documents et de générer un nouveau document contenant les modifications apportées.
+description: Apprenez à comparer la cible dans la fonction de document Word d'Aspose.Words pour .NET qui vous permet de comparer des documents et de générer un nouveau document contenant les modifications apportées.
 type: docs
 weight: 10
 url: /fr/net/compare-documents/comparison-target/
 ---
-
-Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité cible de comparaison d'Aspose.Words pour .NET.
+Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la cible de comparaison dans la fonctionnalité de document Word d'Aspose.Words pour .NET.
 
 ## Étape 1 : Présentation
 
@@ -57,7 +56,7 @@ Nous allons maintenant comparer les documents et générer le résultat dans un 
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
- Le`Compare` La méthode compare le document A au document B et enregistre les modifications apportées au document A. Vous pouvez spécifier le nom d'utilisateur et la date de comparaison pour référence.
+ Le`Compare`La méthode compare le document A au document B et enregistre les modifications apportées au document A. Vous pouvez spécifier le nom d'utilisateur et la date de comparaison pour référence.
 
 ### Exemple de code source pour la cible de comparaison à l'aide d'Aspose.Words pour .NET
 
@@ -79,3 +78,21 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
 Dans cet article, nous avons exploré la fonctionnalité de cible diff d'Aspose.Words pour .NET. Cette fonctionnalité permet de comparer deux documents et de générer un nouveau document contenant les modifications apportées. Vous pouvez utiliser ces connaissances pour suivre les modifications entre les différentes versions de vos documents.
 
+### FAQ
+
+#### Q : Quel est le but de l'utilisation de la cible de comparaison dans Aspose.Words pour .NET ?
+
+R : La cible de comparaison dans Aspose.Words pour .NET vous permet de comparer deux documents et de générer un nouveau document contenant les modifications apportées au document cible. Cette fonctionnalité est utile pour suivre les modifications apportées entre différentes versions d'un document et visualiser les différences dans un document distinct.
+
+#### Q : Comment utiliser la cible de comparaison dans Aspose.Words pour .NET ?
+
+R : Pour utiliser la cible de comparaison dans Aspose.Words pour .NET, suivez ces étapes :
+1. Configurez votre environnement de développement avec la bibliothèque Aspose.Words.
+2. Ajoutez les assemblys nécessaires à votre projet en faisant référence à Aspose.Words.
+3.  Initialisez les documents que vous souhaitez comparer à l'aide de la`Document` classe ou la`DocumentBuilder` classe.
+4.  Configurez les options de comparaison en créant un`CompareOptions` objet et propriétés de définition telles que`IgnoreFormatting` et`Target` (par exemple,`ComparisonTargetType.New` pour cible de comparaison).
+5.  Utilisez le`Compare` méthode sur un document, en passant l'autre document et le`CompareOptions` objet en tant que paramètres. Cette méthode comparera les documents et enregistrera les modifications dans le premier document.
+
+####  Q : Quel est le but du`Target` property in the `CompareOptions` class?
+
+ R : Le`Target` propriété dans le`CompareOptions` La classe vous permet de spécifier la cible de comparaison, qui est similaire à l'option "Afficher les modifications dans" de la boîte de dialogue "Comparer les documents" de Microsoft Word. L'objectif peut être fixé à`ComparisonTargetType.New` pour afficher les modifications dans un nouveau document,`ComparisonTargetType.Current` pour afficher les modifications dans le document actuel, ou`ComparisonTargetType.Formatting` pour afficher uniquement les changements de mise en forme.

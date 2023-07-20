@@ -14,7 +14,7 @@ Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words f
 
 ## Steg 1: Definiera kataloger
 
- För att börja måste du definiera katalogerna där du vill lagra filerna enligt deras format. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till din dokumentkatalog. Vi skapar katalogerna "Supported", "Okänd", "Encrypted" och "Pre97" om de inte redan finns.
+ För att börja måste du definiera katalogerna där du vill lagra filerna enligt deras format. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog. Vi skapar katalogerna "Supported", "Okänd", "Encrypted" och "Pre97" om de inte redan finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## Steg 2: Bläddra bland filer
 
- Då använder vi`GetFiles` metod för`Directory` klass för att få listan över filer i den angivna katalogen. Vi använder också en`Where` klausul för att utesluta en specifik fil med namnet "Corrupted document.docx".
+ Då använder vi`GetFiles` metod för`Directory` klass för att få listan över filer i den angivna katalogen. Vi använder också en`Where`klausul för att utesluta en specifik fil med namnet "Corrupted document.docx".
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ Det är allt ! Du har framgångsrikt upptäckt formatet för olika dokumentfiler
 
 #### Hur upptäcker man formatet på en dokumentfil med Aspose.Words för .NET?
 
- För att upptäcka formatet på en dokumentfil med Aspose.Words för .NET kan du följa stegen i handledningen. Använda`DetectFileFormat` metod för`FileFormatUtil` class låter dig upptäcka formatet på dokumentfilen. Detta gör att du kan avgöra om det är ett Microsoft Word 97-2003-dokument, en mall, ett Office Open XML WordprocessingML-dokument eller andra format som stöds. Koden som tillhandahålls i handledningen hjälper dig att implementera den här funktionen.
+ För att upptäcka formatet på en dokumentfil med Aspose.Words för .NET kan du följa stegen i handledningen. Använda`DetectFileFormat` metod för`FileFormatUtil`class låter dig upptäcka formatet på dokumentfilen. Detta gör att du kan avgöra om det är ett Microsoft Word 97-2003-dokument, en mall, ett Office Open XML WordprocessingML-dokument eller andra format som stöds. Koden som tillhandahålls i handledningen hjälper dig att implementera den här funktionen.
 
 #### Vilka dokumentformat stöder Aspose.Words för .NET?
 
@@ -219,7 +219,7 @@ Aspose.Words för .NET stöder en mängd olika dokumentformat inklusive Microsof
 
 #### Hur hanterar man krypterade dokumentfiler under formatdetektering?
 
- När du upptäcker formatet för en dokumentfil kan du använda`IsEncrypted`egendom av`FileFormatInfo` objekt för att kontrollera om filen är krypterad. Om filen är krypterad kan du vidta ytterligare åtgärder för att hantera det här specifika fallet, som att kopiera filen till en katalog avsedd för krypterade dokument. Du kan använda`File.Copy` metod för att göra detta.
+ När du upptäcker formatet för en dokumentfil kan du använda`IsEncrypted` egendom av`FileFormatInfo` objekt för att kontrollera om filen är krypterad. Om filen är krypterad kan du vidta ytterligare åtgärder för att hantera det här specifika fallet, som att kopiera filen till en katalog avsedd för krypterade dokument. Du kan använda`File.Copy` metod för att göra detta.
 
 #### Vilka åtgärder bör vidtas när formatet på ett dokument är okänt?
 

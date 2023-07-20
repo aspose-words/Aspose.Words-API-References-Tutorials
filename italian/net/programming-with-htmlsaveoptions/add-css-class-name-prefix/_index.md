@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Questo codice crea un'istanza di`HtmlSaveOptions` e set`CssStyleSheetType` A`CssStyleSheetType.External` per generare un foglio di stile CSS esterno, e`CssClassNamePrefix` A`"pfx_"`prefisso`"pfx_"` ai nomi delle classi CSS.
+ Questo codice crea un'istanza di`HtmlSaveOptions` e set`CssStyleSheetType` A`CssStyleSheetType.External`per generare un foglio di stile CSS esterno, e`CssClassNamePrefix` A`"pfx_"` prefisso`"pfx_"` ai nomi delle classi CSS.
 
 ## Passaggio 4: conversione e salvataggio del documento in HTML
 

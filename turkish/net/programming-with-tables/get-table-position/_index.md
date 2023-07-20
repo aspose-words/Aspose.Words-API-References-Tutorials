@@ -67,4 +67,4 @@ Console.WriteLine(table.Alignment);
 ```
 
 ## Çözüm
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun konumunu nasıl alacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak Word belgelerinizde programlı olarak tablo konumlandırma özellikleri elde edebilirsiniz. Bu özellik, dizileri belirli konumlarına göre analiz etmenize ve değiştirmenize olanak tanır.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun konumunu nasıl alacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak Word belgelerinizde programlı olarak tablo konumlandırma özellikleri elde edebilirsiniz. Bu özellik, dizileri belirli konumlarına göre analiz etmenize ve değiştirmenize olanak tanır.

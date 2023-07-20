@@ -112,5 +112,5 @@ Configurez votre environnement de développement en ajoutant les références n�
 #### Q : Quels autres caractères puis-je utiliser pour l'indentation de liste avec Aspose.Words pour .NET ?
  Outre les caractères de tabulation, vous pouvez également utiliser d'autres caractères pour l'indentation de la liste avec Aspose.Words pour .NET. Vous pouvez régler le`ListIndentation.Character` propriété à n'importe quel caractère souhaité, tel que l'espace (`' '`), pour l'indentation des listes.
 
-#### : Aspose.Words pour .NET offre-t-il d'autres fonctionnalités pour gérer les listes ?
+#### Q : Aspose.Words pour .NET offre-t-il d'autres fonctionnalités pour gérer les listes ?
 Oui, Aspose.Words pour .NET offre de nombreuses fonctionnalités pour gérer les listes dans les documents Word. Vous pouvez créer des listes numérotées ou à puces, définir des niveaux d'indentation, personnaliser le style des listes, ajouter des éléments de liste, etc.

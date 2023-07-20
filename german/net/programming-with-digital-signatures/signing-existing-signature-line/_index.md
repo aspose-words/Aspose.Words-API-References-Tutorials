@@ -101,7 +101,7 @@ A: Um eine vorhandene Signaturzeile in einem Word-Dokument mit Aspose.Words für
 1.  Laden Sie das Dokument mit`Document` Klasse und geben Sie den Pfad zur Dokumentdatei an.
 2.  Greifen Sie mit der entsprechenden Methode oder Eigenschaft auf die vorhandene Signaturzeile zu. Sie können zum Beispiel verwenden`GetChild` Methode zum Abrufen der Signaturlinienform.
 3.  Erstellen Sie eine Instanz von`SignOptions`Klasse und legen Sie die fest`SignatureLineId` Eigenschaft auf die ID der vorhandenen Signaturzeile.
-4.  Stellen Sie die ein`SignatureLineImage`Eigentum der`SignOptions` Klasse zum Bild, das die digitale Signatur darstellt.
+4.  Stellen Sie die ein`SignatureLineImage` Eigentum der`SignOptions` Klasse zum Bild, das die digitale Signatur darstellt.
 5.  Laden Sie das Signaturzertifikat mit`CertificateHolder` Klasse und geben Sie das erforderliche Zertifikat und Passwort an.
 6.  Benutzen Sie die`DigitalSignatureUtil.Sign` Methode zum Signieren des Dokuments unter Bereitstellung der erforderlichen Parameter, einschließlich der`SignOptions` Objekt.
 
@@ -111,11 +111,11 @@ A: Um eine vorhandene Signaturzeile in einem Word-Dokument mit Aspose.Words für
 
 #### F: Kann ich das Erscheinungsbild der digitalen Signatur in einer vorhandenen Signaturzeile anpassen?
 
-A: Ja, Sie können das Erscheinungsbild der digitalen Signatur in einer vorhandenen Signaturzeile anpassen, indem Sie eine Bilddatei bereitstellen, die die Signatur darstellt. Das Bild kann ein Logo, eine handschriftliche Unterschrift oder eine andere grafische Darstellung der Unterschrift sein. Sie können das einstellen`SignatureLineImage`Eigentum der`SignOptions` Klasse zu den Bytes der Bilddatei.
+A: Ja, Sie können das Erscheinungsbild der digitalen Signatur in einer vorhandenen Signaturzeile anpassen, indem Sie eine Bilddatei bereitstellen, die die Signatur darstellt. Das Bild kann ein Logo, eine handschriftliche Unterschrift oder eine andere grafische Darstellung der Unterschrift sein. Sie können das einstellen`SignatureLineImage` Eigentum der`SignOptions` Klasse zu den Bytes der Bilddatei.
 
 #### F: Kann ich in einem Word-Dokument mehrere vorhandene Signaturzeilen signieren?
  A: Ja, Sie können mehrere vorhandene Signaturzeilen in einem Word-Dokument signieren. Sie müssen die Schritte für jede Signaturzeile einzeln befolgen und die entsprechenden Einstellungen vornehmen`SignatureLineId` Und`SignatureLineImage` Werte in der`SignOptions` Objekt für jede Signaturzeile.
 
 #### F: Welches Format sollte die Bilddatei für die digitale Signatur in einer vorhandenen Signaturzeile haben?
 
- A: Die Bilddatei für die digitale Signatur in einer vorhandenen Signaturzeile kann in verschiedenen Formaten vorliegen, beispielsweise PNG, JPEG, BMP oder GIF. Sie können den Dateipfad angeben oder die Bytes der Bilddatei lesen und sie dem zuordnen`SignatureLineImage`Eigentum der`SignOptions` Klasse.
+ A: Die Bilddatei für die digitale Signatur in einer vorhandenen Signaturzeile kann in verschiedenen Formaten vorliegen, beispielsweise PNG, JPEG, BMP oder GIF. Sie können den Dateipfad angeben oder die Bytes der Bilddatei lesen und sie dem zuordnen`SignatureLineImage` Eigentum der`SignOptions` Klasse.

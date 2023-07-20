@@ -1,14 +1,13 @@
 ---
-title: Comparison Target
-linktitle: Comparison Target
+title: Comparison Target In Word Document
+linktitle: Comparison Target In Word Document
 second_title: Aspose.Words Document Processing API
-description: Learn compare target feature of Aspose.Words for .NET that allows you to compare documents and generate a new document containing the changes made.
+description: Learn compare target in word document feature of Aspose.Words for .NET that allows you to compare documents and generate a new document containing the changes made.
 type: docs
 weight: 10
 url: /net/compare-documents/comparison-target/
 ---
-
-Here is a step-by-step guide to explain the C# source code below, which uses the comparison target functionality of Aspose.Words for .NET.
+Here is a step-by-step guide to explain the C# source code below, which uses the comparison target in word document functionality of Aspose.Words for .NET.
 
 ## Step 1: Introduction
 
@@ -79,4 +78,21 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
 In this article, we explored the diff target feature of Aspose.Words for .NET. This feature allows you to compare two documents and generate a new document containing the changes made. You can use this knowledge to track changes between different versions of your documents.
 
+### FAQ's
 
+#### Q: What is the purpose of using Comparison Target in Aspose.Words for .NET?
+
+A: Comparison Target in Aspose.Words for .NET allows you to compare two documents and generate a new document containing the changes made to the target document. This feature is useful for tracking changes made between different versions of a document and visualizing the differences in a separate document.
+
+#### Q: How do I use Comparison Target in Aspose.Words for .NET?
+
+A: To use Comparison Target in Aspose.Words for .NET, follow these steps:
+1. Set up your development environment with the Aspose.Words library.
+2. Add the necessary assemblies to your project by referencing Aspose.Words.
+3. Initialize the documents that you want to compare using the `Document` class or the `DocumentBuilder` class.
+4. Configure the comparison options by creating a `CompareOptions` object and setting properties such as `IgnoreFormatting` and `Target` (e.g., `ComparisonTargetType.New` for comparison target).
+5. Use the `Compare` method on one document, passing the other document and the `CompareOptions` object as parameters. This method will compare the documents and save the changes in the first document.
+
+#### Q: What is the purpose of the `Target` property in the `CompareOptions` class?
+
+A: The `Target` property in the `CompareOptions` class allows you to specify the comparison target, which is similar to the "Show changes in" option in Microsoft Word's "Compare Documents" dialog box. The target can be set to `ComparisonTargetType.New` to show changes in a new document, `ComparisonTargetType.Current` to show changes in the current document, or `ComparisonTargetType.Formatting` to show only formatting changes.

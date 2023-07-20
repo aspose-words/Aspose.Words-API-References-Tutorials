@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Шаг 3: Установите шрифт по умолчанию
- Теперь вы можете указать шрифт по умолчанию для использования при рендеринге, создав экземпляр`FontSettings` класс и установка`DefaultFontName`собственность`DefaultFontSubstitution` возражать против`DefaultFontSubstitution` объект`SubstitutionSettings` из`FontSettings`.
+ Теперь вы можете указать шрифт по умолчанию для использования при рендеринге, создав экземпляр`FontSettings` класс и установка`DefaultFontName` собственность`DefaultFontSubstitution` возражать против`DefaultFontSubstitution` объект`SubstitutionSettings` из`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 
 #### Q: Как я могу проверить шрифт по умолчанию, указанный в Aspose.Words?
 
- A: Чтобы проверить шрифт по умолчанию, указанный в Aspose.Words, вы можете использовать`DefaultFontName`собственность`PdfOptions` class и получить имя настроенного шрифта.
+ A: Чтобы проверить шрифт по умолчанию, указанный в Aspose.Words, вы можете использовать`DefaultFontName` собственность`PdfOptions` class и получить имя настроенного шрифта.
 
 #### В: Можно ли указать разные шрифты по умолчанию для каждого раздела документа?
 

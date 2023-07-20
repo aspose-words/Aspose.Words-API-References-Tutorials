@@ -10,11 +10,11 @@ url: /de/net/basic-conversions/pdf-to-jpeg/
 
 In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET ein PDF-Dokument in JPEG-Bilder konvertieren. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
+ Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Schritt 1: Initialisieren des Dokumentobjekts
 
- Initialisieren Sie zunächst die`Document`Objekt, indem Sie den Pfad zu Ihrem PDF-Dokument angeben:
+ Initialisieren Sie zunächst die`Document` Objekt, indem Sie den Pfad zu Ihrem PDF-Dokument angeben:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -61,4 +61,4 @@ Die Einschränkungen des Konvertierungsprozesses hängen von dem spezifischen To
 
 #### Ist Aspose ein zuverlässiges Tool zum Konvertieren von PDF in JPEG?
 
-Ja, Aspose.Words für .NET ist ein zuverlässiges Tool zum Konvertieren von PDF in JPEG. Aufgrund seiner Qualität, Genauigkeit und fortschrittlichen Funktionen wird es in der Industrie häufig eingesetzt. Das Tool bietet umfassende Dokumentation, regelmäßige Updates und engagierten technischen Support, was es zu einer empfohlenen Wahl für Dokumentkonvertierungsaufgaben macht.
+Ja, Aspose.Words für .NET ist ein zuverlässiges Tool zum Konvertieren von PDF in JPEG. Aufgrund seiner Qualität, Genauigkeit und erweiterten Funktionen wird es in der Industrie häufig eingesetzt. Das Tool bietet umfassende Dokumentation, regelmäßige Updates und engagierten technischen Support, was es zu einer empfohlenen Wahl für Dokumentkonvertierungsaufgaben macht.

@@ -112,7 +112,7 @@ R : Pour insérer des champs imbriqués dans un document Word à l'aide d'Aspos
 
 #### Q : Puis-je avoir des champs imbriqués à plusieurs niveaux dans un document Word avec Aspose.Words pour .NET ?
 
- R : Oui, il est possible d'avoir des champs imbriqués à plusieurs niveaux dans un document Word avec Aspose.Words pour .NET. Vous pouvez créer des hiérarchies complexes de champs imbriqués en utilisant le`FieldStart.NextSibling` méthode pour ajouter des champs enfants aux champs parents existants.
+ R : Oui, il est possible d'avoir des champs imbriqués à plusieurs niveaux dans un document Word avec Aspose.Words pour .NET. Vous pouvez créer des hiérarchies complexes de champs imbriqués en utilisant le`FieldStart.NextSibling` méthode pour ajouter des champs enfants aux champs parents existants.
 
 #### Q : Comment puis-je personnaliser les propriétés des champs imbriqués dans un document Word avec Aspose.Words pour .NET ?
 

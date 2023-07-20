@@ -179,7 +179,7 @@ doc.StopTrackRevisions();
 
 #### D: Come posso eliminare un paragrafo rivisto in un documento con Aspose.Words per .NET?
 
- R: Per rimuovere un paragrafo rivisto in un documento, puoi usare il file`Remove` metodo di raccolta dei paragrafi.
+ R: Per rimuovere un paragrafo rivisto in un documento, puoi utilizzare il file`Remove` metodo di raccolta dei paragrafi.
 
 ```csharp
 ParagraphCollection paragraphs = body.Paragraphs;

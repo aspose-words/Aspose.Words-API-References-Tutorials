@@ -1,6 +1,6 @@
 ---
-title: قم بإنشاء مشروع Vba في مستند Word
-linktitle: قم بإنشاء مشروع Vba في مستند Word
+title: أنشئ مشروع Vba في مستند Word
+linktitle: أنشئ مشروع Vba في مستند Word
 second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية إنشاء مشروع VBA في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
@@ -98,7 +98,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 #### س: كيف تحدد شفرة مصدر الماكرو في وحدة VBA؟
 
- ج: لتحديد التعليمات البرمجية المصدر للماكرو في الوحدة النمطية لـ VBA ، يمكنك استخدام ملف`SourceCode`ممتلكات`VbaModule` class عن طريق تعيين سلسلة أحرف تحتوي على كود VBA.
+ ج: لتحديد التعليمات البرمجية المصدر للماكرو في الوحدة النمطية لـ VBA ، يمكنك استخدام ملف`SourceCode` ممتلكات`VbaModule` class عن طريق تعيين سلسلة أحرف تحتوي على كود VBA.
 
 #### س: هل يمكنني إضافة وحدات نمطية متعددة لـ VBA إلى مشروع VBA في مستند Word؟
 

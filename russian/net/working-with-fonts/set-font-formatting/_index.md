@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 2: Создайте и отформатируйте документ
- Создайте экземпляр`Document` класс и`DocumentBuilder` класс для создания документа. Использовать`Font`собственность`DocumentBuilder` для доступа к свойствам форматирования шрифта.
+ Создайте экземпляр`Document` класс и`DocumentBuilder` класс для создания документа. Использовать`Font` собственность`DocumentBuilder` для доступа к свойствам форматирования шрифта.
 
 ```csharp
 Document doc = new Document();
@@ -45,7 +45,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ```
 
-### Пример исходного кода для установки форматирования шрифта с использованием Aspose.Words для .NET 
+### Пример исходного кода для настройки форматирования шрифта с использованием Aspose.Words для .NET 
 ```csharp
 
 //Путь к вашему каталогу документов

@@ -100,7 +100,7 @@ Configure su entorno de desarrollo agregando las referencias necesarias e import
 
  Crear un nuevo`Document` objeto y un asociado`DocumentBuilder` objeto.
 
- Utilizar el`DocumentBuilder` para crear una lista con múltiples niveles de sangría usando los métodos`ApplyNumberDefault()` para aplicar el formato de número de lista predeterminado,`Writeln()` y`Write()` para agregar elementos a la lista, y`ListIndent()`para incrementar la sangría en cada nivel.
+ Utilizar el`DocumentBuilder` para crear una lista con múltiples niveles de sangría utilizando los métodos`ApplyNumberDefault()` para aplicar el formato de número de lista predeterminado,`Writeln()` y`Write()` para agregar elementos a la lista, y`ListIndent()`para incrementar la sangría en cada nivel.
 
  Configure las opciones de guardado creando un`TxtSaveOptions` objeto y establecer las propiedades`ListIndentation.Count` al número de caracteres de tabulación por nivel y`ListIndentation.Character` a`'\t'` para utilizar los caracteres de tabulación.
 

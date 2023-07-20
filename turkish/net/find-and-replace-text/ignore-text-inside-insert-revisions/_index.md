@@ -181,7 +181,7 @@ Console.WriteLine(doc.GetText());
 
 #### S: Aspose.Words for .NET'te çıktı sonucuna ekleme revizyonlarını nasıl dahil edebilirim?
 
- C: Çıktı sonucuna ekleme revizyonlarının içindeki metni dahil etmek için, ekleme revizyonlarını göz ardı etmemek için seçenekleri değiştirebilirsiniz. Bunun için ayarlayabilirsiniz`IgnoreInserted`mülkiyeti`FindReplaceOptions` itiraz etmek`false`:
+ C: Çıktı sonucuna ekleme revizyonlarının içindeki metni dahil etmek için, ekleme revizyonlarını göz ardı etmemek için seçenekleri değiştirebilirsiniz. Bunun için ayarlayabilirsiniz`IgnoreInserted` mülkiyeti`FindReplaceOptions` itiraz etmek`false`:
 
 ```csharp
 options.IgnoreInserted = false;

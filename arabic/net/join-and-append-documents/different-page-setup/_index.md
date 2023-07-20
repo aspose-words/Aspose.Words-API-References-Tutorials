@@ -14,7 +14,7 @@ url: /ar/net/join-and-append-documents/different-page-setup/
 
 تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
+- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases] https://releases.aspose.com/words/net/ أو استخدم مدير حزمة NuGet لتثبيته.
 - مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
 
 ## الخطوة 2: افتح مستندات المصدر والوجهة
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## الخطوة 4: تعديل تنسيق الفقرة
 
- للحفاظ على التنسيق الصحيح ، كرر عبر جميع الفقرات في المستند المصدر وقم بتعيين ملف`KeepWithNext` ملكية ل`true`. هذا يضمن بقاء الفقرات معًا أثناء عملية الإلحاق.
+ للحفاظ على التنسيق الصحيح ، كرر عبر جميع الفقرات في المستند المصدر وقم بتعيين ملف`KeepWithNext` الملكية ل`true`. هذا يضمن بقاء الفقرات معًا أثناء عملية الإلحاق.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

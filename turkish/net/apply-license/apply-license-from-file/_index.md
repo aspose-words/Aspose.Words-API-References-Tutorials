@@ -56,7 +56,7 @@ Aspose.Words for .NET kullanan bir dosyadan lisans uygulamak için eksiksiz kayn
 ```csharp
 License license = new License();
 
-//Bu satır yürütülebilir dosyaya ve Aspose.Words.dll'ye göre çeşitli konumlardan bir lisans ayarlamaya çalışır.
+// Bu satır yürütülebilir dosyaya ve Aspose.Words.dll'ye göre çeşitli konumlardan bir lisans ayarlamaya çalışır.
 // Bir akıştan lisans yüklemek için ek aşırı yüklemeyi de kullanabilirsiniz, bu kullanışlıdır,
 // örneğin, lisans katıştırılmış bir kaynak olarak depolandığında.
 try
@@ -78,7 +78,7 @@ catch (Exception e)
 
 #### S: Aspose.Words for .NET lisans belgelerini nerede bulabilirim?
 
-A: Aspose için lisans belgelerini bulabilirsiniz. Resmi Aspose dokümantasyon web sitesinde .NET için kelimeler. Belgeler, dosyalardan lisans uygulamak da dahil olmak üzere, lisans uygulamak için ayrıntılı talimatlar ve örnekler sağlar.
+ A: Aspose için lisans belgelerini bulabilirsiniz. .NET için kelimeler[API referansları](https://reference.aspose.com/words/net/). Belgeler, dosyalardan lisans uygulamak da dahil olmak üzere, lisans uygulamak için ayrıntılı talimatlar ve örnekler sağlar.
 
 #### S: Aspose.Words for .NET lisans dosyaları için hangi dosya formatlarını destekliyor?
 

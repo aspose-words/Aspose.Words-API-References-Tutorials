@@ -55,7 +55,7 @@ Assurez-vous de remplacer "mot de passe" par le mot de passe que vous avez défi
 
 ## Étape 5 : Enregistrer le document protégé
 
-Enfin, vous pouvez enregistrer le document protégé à l'aide de la`Save` méthode de la classe Document. Spécifiez le chemin d'accès complet au fichier et le nom de fichier souhaité. Par exemple :
+ Enfin, vous pouvez enregistrer le document protégé à l'aide de la`Save` méthode de la classe Document. Spécifiez le chemin d'accès complet au fichier et le nom de fichier souhaité. Par exemple :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
@@ -89,7 +89,7 @@ Dans ce guide, nous avons exploré comment utiliser la bibliothèque Aspose.Word
 
 #### Q : Qu'est-ce que la protection des documents dans Aspose.Words pour .NET ?
 
-R : La protection des documents dans Aspose.Words pour .NET est une fonctionnalité qui vous permet de sécuriser vos documents en restreignant certaines actions, telles que l'édition, le formatage ou la modification du contenu. Il aide à maintenir l'intégrité et la confidentialité de vos documents en empêchant les modifications non autorisées.
+: La protection des documents dans Aspose.Words pour .NET est une fonctionnalité qui vous permet de sécuriser vos documents en restreignant certaines actions, telles que l'édition, le formatage ou la modification du contenu. Il aide à maintenir l'intégrité et la confidentialité de vos documents en empêchant les modifications non autorisées.
 
 #### Q : Comment puis-je protéger un document et autoriser uniquement la modification des champs de formulaire à l'aide d'Aspose.Words pour .NET ?
 

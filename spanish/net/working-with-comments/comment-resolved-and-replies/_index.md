@@ -88,11 +88,11 @@ La resolución de comentarios ayuda a rastrear y administrar los comentarios den
 
 #### P: ¿Cómo veo los comentarios resueltos en Aspose.Words para .NET?
 
- R: De forma predeterminada, los comentarios resueltos están ocultos en el documento final. Sin embargo, puede mostrarlos usando el`CommentOptions.ShowResolvedComments`propiedad de la`Document` objeto y configurarlo en`true`.
+ R: De forma predeterminada, los comentarios resueltos están ocultos en el documento final. Sin embargo, puede mostrarlos usando el`CommentOptions.ShowResolvedComments` propiedad de la`Document` objeto y configurarlo en`true`.
 
 #### P: ¿Cómo puedo ocultar todos los comentarios, incluidas las respuestas, en Aspose.Words para .NET?
 
- R: Para ocultar todos los comentarios, incluidas las respuestas, en Aspose.Words para .NET, puede usar el`CommentOptions.CommentDisplayMode`propiedad de la`Document` objeto y establecerlo en`CommentDisplayMode.None`.
+ R: Para ocultar todos los comentarios, incluidas las respuestas, en Aspose.Words para .NET, puede usar el`CommentOptions.CommentDisplayMode` propiedad de la`Document` objeto y establecerlo en`CommentDisplayMode.None`.
 
 #### P: ¿Puedo editar el texto de un comentario resuelto en Aspose.Words para .NET?
 

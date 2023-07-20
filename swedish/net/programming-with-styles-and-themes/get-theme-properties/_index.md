@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- I det här steget använder vi`Theme`egendom av`Document`objekt för att få`Theme` objekt. Sedan kan vi komma åt de olika egenskaperna för temat som huvudteckensnitten (`MajorFonts`), de sekundära teckensnitten (`MinorFonts`) och accentfärgerna (`Colors`).
+ I det här steget använder vi`Theme` egendom av`Document`objekt för att få`Theme` objekt. Sedan kan vi komma åt de olika egenskaperna för temat som huvudteckensnitten (`MajorFonts`), de sekundära teckensnitten (`MinorFonts`) och accentfärgerna (`Colors`).
 
 ## Steg 4: Visa temaegenskaper
 
@@ -68,7 +68,7 @@ Utforska gärna fler funktioner i Aspose.Words för .NET för att förbättra di
 
 #### Hur kan jag komma åt temaegenskaperna för ett dokument med Aspose.Words för .NET?
 
- För att komma åt temaegenskaperna för ett dokument kan du använda`Theme`egendom av`Document` objekt. Den returnerar en`Theme` objekt som innehåller information om de primära och sekundära teckensnitten, samt accentfärgerna som används i dokumentets tema.
+ För att komma åt temaegenskaperna för ett dokument kan du använda`Theme` egendom av`Document` objekt. Den returnerar en`Theme` objekt som innehåller information om de primära och sekundära teckensnitten, samt accentfärgerna som används i dokumentets tema.
 
 #### Hur kan jag hämta de primära och sekundära teckensnitten för ett dokuments tema?
 
@@ -76,7 +76,7 @@ Du kan komma åt de primära och sekundära teckensnitten för ett dokuments tem
 
 #### Kan jag få accentfärgerna som används i ett dokuments tema?
 
- Ja, du kan få accentfärgerna som används i ett dokuments tema genom att gå till`Colors`egendom av`Theme` objekt. Denna egenskap ger tillgång till accentfärgerna, som t.ex`Accent1`, `Accent2`, `Accent3`, och så vidare, som du kan använda för anpassning eller analys.
+ Ja, du kan få accentfärgerna som används i ett dokuments tema genom att gå till`Colors` egendom av`Theme` objekt. Denna egenskap ger tillgång till accentfärgerna, som t.ex`Accent1`, `Accent2`, `Accent3`, och så vidare, som du kan använda för anpassning eller analys.
 
 #### Hur kan jag använda de hämtade temaegenskaperna?
 

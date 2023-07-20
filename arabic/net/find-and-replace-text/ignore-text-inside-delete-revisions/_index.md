@@ -20,7 +20,7 @@ url: /ar/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 
 ## الخطوة 1: إنشاء مستند جديد باستخدام Aspose.Words for .NET
 
- قبل أن نبدأ في معالجة النص في مستند ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن أن يتم ذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ قبل أن نبدأ في معالجة النص في مستند ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
 
 ```csharp
 Document doc = new Document();
@@ -48,7 +48,7 @@ doc.StopTrackRevisions();
 
 ## الخطوة 4: تطبيق ميزة "تجاهل النص داخل حذف المراجعات"
 
- الآن وقد أعددنا وثيقتنا عن طريق حذف فقرة ، يمكننا تمكين ميزة "تجاهل النص داخل حذف المراجعات" باستخدام`FindReplaceOptions` هدف. سنقوم بتعيين`IgnoreDeleted` ملكية ل`true`:
+ الآن وقد أعددنا وثيقتنا عن طريق حذف فقرة ، يمكننا تمكين ميزة "تجاهل النص داخل حذف المراجعات" باستخدام`FindReplaceOptions` هدف. سنقوم بتعيين`IgnoreDeleted` الملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -73,7 +73,7 @@ Console.WriteLine(doc.GetText());
 
 ## الخطوة 7: تعديل الخيارات لتضمين النص المحذوف
 
- إذا أردنا تضمين نص محذوف في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل النص المحذوف. لهذا سنقوم بتعيين`IgnoreDeleted` ملكية ل`false`:
+ إذا أردنا تضمين نص محذوف في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل النص المحذوف. لهذا سنقوم بتعيين`IgnoreDeleted` الملكية ل`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
@@ -164,7 +164,7 @@ doc.StopTrackRevisions();
 
 #### س: كيف يمكن تمكين ميزة "تجاهل النص الداخلي حذف المراجعات" في Aspose.Words for .NET؟
 
- ج: الآن بعد أن أعددنا وثيقتنا عن طريق حذف فقرة ، يمكننا تمكين ميزة "تجاهل النص داخل حذف المراجعات" باستخدام`FindReplaceOptions` هدف. سنقوم بتعيين`IgnoreDeleted` ملكية ل`true`:
+ ج: الآن بعد أن أعددنا وثيقتنا عن طريق حذف فقرة ، يمكننا تمكين ميزة "تجاهل النص داخل حذف المراجعات" باستخدام`FindReplaceOptions` هدف. سنقوم بتعيين`IgnoreDeleted` الملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -189,7 +189,7 @@ Console.WriteLine(doc.GetText());
 
 #### س: كيف يتم تضمين نص محذوف في نتيجة الإخراج في Aspose.Words for .NET؟
 
- ج: إذا أردنا تضمين نص محذوف في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل النص المحذوف. لهذا ، سنقوم بتعيين`IgnoreDeleted` ملكية ل`false`:
+ ج: إذا أردنا تضمين نص محذوف في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل النص المحذوف. لهذا ، سنقوم بتعيين`IgnoreDeleted` الملكية ل`false`:
 
 ```csharp
 options. IgnoreDeleted = false;

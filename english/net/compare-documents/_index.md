@@ -13,7 +13,7 @@ Compare Documents is a comprehensive tutorial on comparing documents using Aspos
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Compare For Equal](./compare-for-equal/) | Step-by-step guide to explain C# source code of Compare for Equals feature with Aspose.Words for .NET. |
-| [Compare Options](./compare-options/) | Step-by-step guide to explain C# source code of Compare Options feature with Aspose.Words for .NET. |
-| [Comparison Target](./comparison-target/) | Learn compare target feature of Aspose.Words for .NET that allows you to compare documents and generate a new document containing the changes made. |
-| [Comparison Granularity](./comparison-granularity/) | Learn compare granularity feature of Aspose.Words for .NET that allows documents to be compared character by character, reporting changes made. |
+| [Compare For Equal In Word Document](./compare-for-equal/) | Step-by-step guide to explain C# source code of Compare for Equals into word document feature with Aspose.Words for .NET. |
+| [Compare Options In Word Document](./compare-options/) | Step-by-step guide to explain C# source code of Compare Options in word document feature with Aspose.Words for .NET. |
+| [Comparison Target In Word Document](./comparison-target/) | Learn compare target in word document feature of Aspose.Words for .NET that allows you to compare documents and generate a new document containing the changes made. |
+| [Comparison Granularity In Word Document](./comparison-granularity/) | Learn compare granularity in word document feature of Aspose.Words for .NET that allows documents to be compared character by character, reporting changes made. |

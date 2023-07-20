@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/replace-with-string/
 ---
-Bu makalede, Aspose.Words for .NET kitaplığında replace with String işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir Word belgesindeki belirli bir karakter dizisine dayalı olarak metin değiştirme gerçekleştirmenizi sağlar.
+Bu makalede, Aspose.Words for .NET kitaplığındaki Dize İle Değiştir işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir Word belgesindeki belirli bir karakter dizisine dayalı olarak metin değiştirme gerçekleştirmenizi sağlar.
 
 ## Önkoşullar
 
@@ -113,7 +113,7 @@ C: Evet, varsayılan olarak Aspose.Words for .NET'teki "Dizeyle Değiştir" işl
 
 #### S: Aspose.Words for .NET'te "Dizeyle Değiştir" işlevini kullanırken herhangi bir sınırlama veya dikkat edilmesi gereken nokta var mı?
 
-C: Aspose.Words for .NET'te "Dize İle Değiştir" işlevini kullanırken, bağlamın farkında olmak ve değiştirmenin yalnızca istenildiği yerde uygulanmasını sağlamak önemlidir. Arama dizesinin, başka kelimelerin içinde veya özel biçimlendirmenin bir parçası olarak istenmeyen yerlerde görünmediğinden emin olun. Ek olarak, büyük belgelerle veya sık sık değiştirmelerle Sözcük İşleme yaparken performans üzerindeki etkileri göz önünde bulundurun.
+Y: Aspose.Words for .NET'te "Dize İle Değiştir" işlevini kullanırken, bağlamın farkında olmak ve değiştirmenin yalnızca istendiği yerde uygulanmasını sağlamak önemlidir. Arama dizesinin, başka kelimelerin içinde veya özel biçimlendirmenin bir parçası olarak istenmeyen yerlerde görünmediğinden emin olun. Ek olarak, büyük belgelerle veya sık sık değiştirmelerle Sözcük İşleme yaparken performans üzerindeki etkileri göz önünde bulundurun.
 
 #### S: Aspose.Words for .NET'teki "Replace With String" işlevini kullanarak farklı uzunluklardaki dizeleri değiştirebilir miyim?
 

@@ -33,7 +33,7 @@ fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
 ## Steg 4: Använd teckensnittsinställningar
- Därefter måste du tillämpa teckensnittsinställningarna på ditt dokument med hjälp av`FontSettings`egendom av`Document` klass.
+ Därefter måste du tillämpa teckensnittsinställningarna på ditt dokument med hjälp av`FontSettings` egendom av`Document` klass.
 
 ```csharp
 doc.FontSettings = fontSettings;

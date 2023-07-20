@@ -61,7 +61,7 @@ C: Belgede belirtilen yer imi yoksa, kod parçacığı yer imi nesnesi için bo�
 
 #### S: Aspose.Words kitaplığının kullanımı ücretsiz mi?
 
-Y: Aspose.Words kitaplığı ticari bir kitaplıktır ve onu projelerinizde kullanmak için geçerli bir lisansa ihtiyacınız olabilir. Lisanslama seçenekleri ve fiyatları hakkında daha fazla bilgi edinmek için resmi Aspose web sitesini ziyaret edebilirsiniz.
+ Y: Aspose.Words kitaplığı ticari bir kitaplıktır ve onu projelerinizde kullanmak için geçerli bir lisansa ihtiyacınız olabilir. ziyaret edebilirsiniz[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/) lisanslama seçenekleri ve fiyatlandırma hakkında daha fazla bilgi edinmek için.
 
 #### S: Word belgesinin belirli bir bölümündeki bir tablodan satırları silebilir miyim?
 

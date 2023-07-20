@@ -98,7 +98,7 @@ A: Um mithilfe von Aspose.Words für .NET den Leseschutz auf ein Word-Dokument a
 1.  Erstellen Sie eine Instanz von`Document` Klasse und a`DocumentBuilder` Objekt.
 2.  Benutzen Sie die`DocumentBuilder` um Inhalte in das Dokument zu schreiben.
 3.  Legen Sie mithilfe von ein Passwort für das Dokument fest`SetPassword` Methode der`WriteProtection` Objekt.
-4.  Stellen Sie die ein`ReadOnlyRecommended`Eigentum der`WriteProtection` widersprechen`true` Ich empfehle, das Dokument schreibgeschützt zu öffnen.
+4.  Stellen Sie die ein`ReadOnlyRecommended` Eigentum der`WriteProtection` widersprechen`true` Ich empfehle, das Dokument schreibgeschützt zu öffnen.
 5.  Wenden Sie einen schreibgeschützten Schutz mit an`Protect` Methode der`Document` Objekt, Angabe der`ProtectionType` als`ReadOnly`.
 6.  Speichern Sie das geschützte Dokument mit`Save` Methode der`Document` Objekt.
 

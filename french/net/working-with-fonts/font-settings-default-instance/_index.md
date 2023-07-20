@@ -76,11 +76,11 @@ Dans ce didacticiel, nous avons vu comment configurer les paramètres de police 
 
 #### Q : Puis-je spécifier la taille de police par défaut dans Aspose.Words ?
 
- R : Oui, vous pouvez spécifier la taille de police par défaut dans Aspose.Words à l'aide du`DefaultFontSize`propriété de la`FontSettings` classe. Vous pouvez définir la taille de point souhaitée.
+ R : Oui, vous pouvez spécifier la taille de police par défaut dans Aspose.Words à l'aide du`DefaultFontSize` propriété de la`FontSettings` classe. Vous pouvez définir la taille de point souhaitée.
 
 #### Q : Est-il possible de définir la couleur de police par défaut dans Aspose.Words ?
 
- R : Oui, vous pouvez définir la couleur de police par défaut dans Aspose.Words à l'aide du`DefaultColor`propriété de la`FontSettings` classe. Vous pouvez spécifier la couleur à l'aide de valeurs RVB ou de noms prédéfinis.
+ R : Oui, vous pouvez définir la couleur de police par défaut dans Aspose.Words à l'aide du`DefaultColor` propriété de la`FontSettings` classe. Vous pouvez spécifier la couleur à l'aide de valeurs RVB ou de noms prédéfinis.
 
 #### Q : Les paramètres de police par défaut s'appliquent-ils à tous les documents ?
 

@@ -61,7 +61,7 @@ S: Om det angivna bokmärket inte finns i dokumentet kommer kodavsnittet att ret
 
 #### F: Är Aspose.Words-biblioteket gratis att använda?
 
-S: Aspose.Words-biblioteket är ett kommersiellt bibliotek och du kan behöva en giltig licens för att använda det i dina projekt. Du kan besöka den officiella Aspose-webbplatsen för att lära dig mer om deras licensalternativ och prissättning.
+ S: Aspose.Words-biblioteket är ett kommersiellt bibliotek och du kan behöva en giltig licens för att använda det i dina projekt. Du kan besöka[Aspose.Words för .NET API-referenser](https://reference.aspose.com/words/net/) för att lära dig mer om deras licensalternativ och priser.
 
 #### F: Kan jag ta bort rader från en tabell i en specifik del av Word-dokumentet?
 

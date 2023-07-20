@@ -109,7 +109,7 @@ R: Per creare sezioni illimitate in un documento Word utilizzando Aspose.Words p
 
 #### D: Posso avere più sezioni senza restrizioni all'interno di un documento Word?
 
- A: Sì, puoi avere più sezioni senza restrizioni all'interno di un documento Word. Disabilitando in modo selettivo la protezione per sezioni specifiche utilizzando il file`ProtectedForForms`proprietà del`Section`oggetto, è possibile definire più sezioni in cui gli utenti possono modificare liberamente il contenuto mantenendo protette le altre sezioni.
+ A: Sì, puoi avere più sezioni senza restrizioni all'interno di un documento Word. Disabilitando in modo selettivo la protezione per sezioni specifiche utilizzando il file`ProtectedForForms` proprietà del`Section`oggetto, è possibile definire più sezioni in cui gli utenti possono modificare liberamente il contenuto mantenendo protette le altre sezioni.
 
 #### D4. Posso rimuovere la protezione da una sezione inizialmente protetta?
  Sì, è possibile rimuovere la protezione da una sezione inizialmente protetta impostando l'estensione`ProtectedForForms` proprietà del corrispondente`Section` opporsi a`false`. Ciò consente agli utenti di modificare il contenuto all'interno di quella specifica sezione senza alcuna restrizione.

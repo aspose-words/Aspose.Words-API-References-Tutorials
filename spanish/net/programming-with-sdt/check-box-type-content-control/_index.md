@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
 	doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);
 ```
 
-¡Eso es todo! Ha creado con éxito un control de contenido de tipo casilla de verificación en su documento de Word utilizando Aspose.Words para .NET.
+¡Eso es todo! Ha creado con éxito un control de contenido de tipo casilla de verificación en su documento de Word usando Aspose.Words para .NET.

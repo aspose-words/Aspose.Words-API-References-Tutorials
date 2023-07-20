@@ -75,7 +75,7 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şe
 
 #### S: Aspose.Words'te heceleme dilini belirtmek için hangi dil kodlarını kullanmalıyım?
 
-C: Aspose.Words'te heceleme dilini belirlemek için uygun dil kodlarını kullanmalısınız. Örneğin İngilizce için "en", Fransızca için "fr", İspanyolca için "es", Almanca için "de" vb. kullanabilirsiniz. Desteklenen dil kodlarının tam listesi için Aspose.Words belgelerine bakın.
+C: Aspose.Words'te heceleme dilini belirlemek için uygun dil kodlarını kullanmalısınız. Örneğin, İngilizce için "en", Fransızca için "fr", İspanyolca için "es", Almanca için "de" vb. kullanabilirsiniz. Desteklenen dil kodlarının tam listesi için Aspose.Words belgelerine bakın.
 
 #### S: Heceleme, Aspose.Words'taki tüm diller için çalışıyor mu?
 

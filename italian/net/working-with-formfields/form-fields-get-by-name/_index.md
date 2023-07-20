@@ -10,7 +10,7 @@ url: /it/net/working-with-formfields/form-fields-get-by-name/
 
 In questo tutorial passo-passo, ti guideremo su come utilizzare Aspose.Words per .NET per recuperare i campi modulo per nome da un documento Word. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
+ Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria da[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Passaggio 1: inizializzazione dell'oggetto documento
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Passaggio 2: recupero dei campi del modulo
 
- Successivamente, accedi al file`FormFields`proprietà del`Range` oggetto nel documento per recuperare tutti i campi del modulo:
+ Successivamente, accedi al file`FormFields` proprietà del`Range` oggetto nel documento per recuperare tutti i campi del modulo:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

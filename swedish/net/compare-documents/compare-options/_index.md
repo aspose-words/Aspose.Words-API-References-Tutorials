@@ -1,14 +1,13 @@
 ---
-title: Jämför alternativ
-linktitle: Jämför alternativ
+title: Jämför alternativ i Word-dokument
+linktitle: Jämför alternativ i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Steg-för-steg-guide för att förklara C#-källkoden för funktionen Jämför alternativ med Aspose.Words för .NET.
+description: Steg-för-steg-guide för att förklara C#-källkoden för funktionen Jämför alternativ i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/compare-documents/compare-options/
 ---
-
-I den här handledningen kommer vi att förklara hur du använder funktionen Jämför alternativ med Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och tillämpa ändringarna.
+I den här handledningen kommer vi att förklara hur man använder funktionen Jämför alternativ i word-dokument med Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och tillämpa ändringarna.
 
 ## Steg 1: Jämför dokument med anpassade alternativ
 
@@ -78,3 +77,37 @@ Här är den fullständiga källkoden för funktionen Jämför alternativ med As
 
 Med den här koden kan du jämföra två dokument med hjälp av anpassade alternativ för att ignorera specifika element när du jämför med Aspose.Words för .NET.
 
+## Slutsats
+
+den här handledningen lärde vi oss hur man använder jämförelsealternativ i Aspose.Words för .NET för att anpassa jämförelseprocessen när man jämför två dokument. Genom att ange olika alternativ kan du ignorera specifika element och göra jämförelseprocessen mer flexibel. Den här funktionen låter dig ha större kontroll över jämförelseprocessen och skräddarsy den efter dina specifika krav. Aspose.Words för .NET ger kraftfulla funktioner för dokumentjämförelse, vilket gör det enkelt att identifiera skillnader mellan dokument samtidigt som man ignorerar vissa element vid behov.
+
+### FAQ's
+
+#### F: Vad är syftet med att använda jämförelsealternativ i Aspose.Words för .NET?
+
+S: Jämför alternativ i Aspose.Words för .NET låter dig anpassa jämförelseprocessen när du jämför två dokument. Med dessa alternativ kan du ange vilka element som ska ignoreras under jämförelsen, såsom formateringsändringar, sidhuvuden och sidfötter, tabeller, fält, kommentarer, textrutor och fotnoter.
+
+#### F: Hur använder jag Compare Options i Aspose.Words för .NET?
+
+S: För att använda Jämför alternativ i Aspose.Words för .NET, följ dessa steg:
+1. Ladda de två dokument som du vill jämföra till separata dokumentobjekt.
+2.  Använd`Clone()` metod för att skapa en kopia av originaldokumentet.
+3.  Skapa en`CompareOptions` objekt och ställ in dess egenskaper för att anpassa jämförelseprocessen. Du kan ange vilka element som ska ignoreras under jämförelsen.
+4.  Använd`Compare()` metod på ett av dokumenten och skicka det andra dokumentet och`CompareOptions` objekt som parametrar. Denna metod kommer att jämföra dokumenten baserat på de angivna alternativen och markera ändringarna i originaldokumentet.
+5.  Kolla`Revisions` originalhandlingens egendom. Om antalet är noll betyder det att dokumenten är identiska, med tanke på de angivna alternativen.
+
+#### F: Vilka är de vanliga alternativen i CompareOptions?
+
+S: De vanliga alternativen i CompareOptions inkluderar:
+- `IgnoreFormatting`: Ignorerar ändringar i formateringen.
+- `IgnoreHeadersAndFooters`: Ignorerar ändringar i sidhuvuden och sidfötter.
+- `IgnoreCaseChanges`: Ignorerar ändringar av skiftläge (versaler/gemener).
+- `IgnoreTables`: Ignorerar ändringar i tabeller.
+- `IgnoreFields`: Ignorerar ändringar i fält.
+- `IgnoreComments`: Ignorerar ändringar i kommentarer.
+- `IgnoreTextboxes`Ignorerar ändringar i textrutor.
+- `IgnoreFootnotes`: Ignorerar ändringar i fotnoter.
+
+#### F: Kan jag använda anpassade alternativ för specifika element under dokumentjämförelse?
+
+ S: Ja, du kan använda anpassade alternativ för specifika element under dokumentjämförelse. Genom att ställa in egenskaperna för`CompareOptions` I enlighet med detta kan du välja vilka element som ska ignoreras och vilka som ska beaktas under jämförelsen.

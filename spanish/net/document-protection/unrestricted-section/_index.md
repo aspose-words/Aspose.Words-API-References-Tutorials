@@ -109,7 +109,7 @@ R: Para crear secciones sin restricciones en un documento de Word usando Aspose.
 
 #### P: ¿Puedo tener varias secciones sin restricciones dentro de un documento de Word?
 
- R: Sí, puede tener múltiples secciones sin restricciones dentro de un documento de Word. Deshabilitando selectivamente la protección para secciones específicas usando el`ProtectedForForms`propiedad de la`Section`objeto, puede definir múltiples secciones donde los usuarios pueden modificar libremente el contenido mientras mantienen protegidas otras secciones.
+ R: Sí, puede tener múltiples secciones sin restricciones dentro de un documento de Word. Deshabilitando selectivamente la protección para secciones específicas usando el`ProtectedForForms` propiedad de la`Section`objeto, puede definir múltiples secciones donde los usuarios pueden modificar libremente el contenido mientras mantienen protegidas otras secciones.
 
 #### Q4. ¿Puedo quitar la protección de una sección que estaba protegida inicialmente?
  Sí, puede eliminar la protección de una sección que inicialmente estaba protegida configurando el`ProtectedForForms` propiedad de la correspondiente`Section` oponerse a`false`. Esto permite a los usuarios editar el contenido dentro de esa sección específica sin ninguna restricción.

@@ -157,14 +157,14 @@ R: L'impostazione dell'ID del provider per una riga della firma consente di iden
 #### D: Come posso impostare l'ID del provider per una riga della firma utilizzando Aspose.Words per .NET?
 
 R: Per impostare l'ID del provider per una riga della firma utilizzando Aspose.Words per .NET, puoi seguire questi passaggi:
-1.  Dopo aver inserito la riga della firma, accedere al file`ProviderId`proprietà del`SignatureLine` oggetto.
+1.  Dopo aver inserito la riga della firma, accedere al file`ProviderId` proprietà del`SignatureLine` oggetto.
 2.  Impostare il`ProviderId` al valore dell'ID provider desiderato utilizzando il`Guid` tipo di dati.
 
 #### D: Posso firmare il documento dopo aver creato una nuova riga della firma e aver impostato l'ID del fornitore?
 
  R: Sì, dopo aver creato una nuova riga per la firma e aver impostato l'ID del fornitore, puoi firmare il documento. Per firmare il documento, è necessario impostare le opzioni di firma, inclusi l'ID della riga della firma, l'ID del provider, i commenti e l'ora della firma. Quindi, usa il`DigitalSignatureUtil.Sign` metodo per firmare il documento utilizzando un certificato digitale.
 
-#### D: Posso specificare un ID fornitore specifico per ciascuna riga della firma in un documento Word?
+#### D: Posso specificare un ID provider specifico per ciascuna riga della firma in un documento Word?
 
 R: Sì, puoi specificare un ID provider specifico per ciascuna riga della firma in un documento Word. Dopo aver inserito ciascuna riga della firma, è possibile impostare l'ID del provider per quella particolare riga della firma accedendo al file`ProviderId` proprietà del rispettivo`SignatureLine` oggetto.
 

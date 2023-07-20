@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Structured document tags.docx");
 foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
 {
-    // Führen Sie Aktionen basierend auf der Art der Inhaltskontrolle durch
+    // Führen Sie Aktionen basierend auf der Art der Inhaltskontrolle aus
 }
 ```
 

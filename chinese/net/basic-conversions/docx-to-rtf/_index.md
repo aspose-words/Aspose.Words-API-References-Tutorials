@@ -10,7 +10,7 @@ url: /zh/net/basic-conversions/docx-to-rtf/
 
 在本分步教程中，我们将指导您如何使用 Aspose.Words for .NET 将 Docx 格式的 Word 文档转换为 RTF。我们将解释提供的 C# 源代码，并向您展示如何在您自己的项目中实现它。
 
-首先，请确保您已在开发环境中安装并设置了 Aspose.Words for .NET。如果您还没有这样做，请从官方网站下载并安装该库。
+首先，请确保您已在开发环境中安装并设置了 Aspose.Words for .NET。如果您还没有这样做，请从以下位置下载并安装该库[Aspose.Releases]https://releases.aspose.com/words/net/。
 
 ## 第1步：从Stream中读取文档
 

@@ -85,7 +85,7 @@ Kommentarsvar möjliggör samarbetsdiskussioner och feedback i ett dokument. Exp
 
 #### F: Hur kan jag komma åt befintliga kommentarer i Aspose.Words för .NET?
 
- S: Du kan komma åt befintliga kommentarer i Aspose.Words för .NET med hjälp av`CommentCollection`egendom av`Document`objekt. Detta gör att du kan bläddra bland alla kommentarer som finns i dokumentet.
+ S: Du kan komma åt befintliga kommentarer i Aspose.Words för .NET med hjälp av`CommentCollection` egendom av`Document`objekt. Detta gör att du kan bläddra bland alla kommentarer som finns i dokumentet.
 
 #### F: Kan jag redigera kommentarstext i Aspose.Words för .NET?
 

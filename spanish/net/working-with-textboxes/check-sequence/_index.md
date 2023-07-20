@@ -95,7 +95,7 @@ R: Para determinar si un cuadro de texto es el encabezado de la secuencia, puede
 
 #### P: ¿Cómo saber si un cuadro de texto está en medio de la secuencia?
 
-R: Para determinar si un cuadro de texto está en el medio de la secuencia, debe verificar si tiene una forma siguiente (`Next`) y una forma anterior (`Previous`). Si es así, esto indica que está en medio de la secuencia.
+R: Para determinar si un cuadro de texto está en el medio de la secuencia, debe verificar si tiene una forma siguiente (`Next`) y una forma previa (`Previous`). Si es así, esto indica que está en medio de la secuencia.
 
 #### P: ¿Cómo verificar si un cuadro de texto es el final de la secuencia?
 

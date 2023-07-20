@@ -12,6 +12,6 @@ Clone And Combine Documents bietet Tutorials zum Klonen und Kombinieren von Doku
  ## Tutorials
 | Titel | Beschreibung |
 | --- | --- |
-| [Dokument klonen](./cloning-document/) | Erfahren Sie, wie Sie ein Word-Dokument mit Aspose.Words für .NET klonen. |
+| [Klonen Sie ein Word-Dokument](./cloning-document/) | Erfahren Sie, wie Sie ein Word-Dokument mit Aspose.Words für .NET klonen. |
 | [Dokument beim Ersetzen einfügen](./insert-document-at-replace/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument beim Ersetzen einfügen. |
 | [Dokument beim Seriendruck einfügen](./insert-document-at-mail-merge/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument beim Seriendruck in ein anderes einfügen. |

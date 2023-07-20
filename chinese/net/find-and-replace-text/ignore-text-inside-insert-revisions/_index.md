@@ -44,7 +44,7 @@ builder.Write("Text");
 
 ## 步骤 4：使用“忽略插入修订内的文本”功能
 
-要在后续操作中忽略插入修订内的文本，我们可以使用`FindReplaceOptions`对象并设置`IgnoreInserted`财产给`true`:
+要在后续操作中忽略插入修订内的文本，我们可以使用`FindReplaceOptions`对象并设置`IgnoreInserted`财产给`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -69,7 +69,7 @@ Console.WriteLine(doc.GetText());
 
 ## 步骤 7：更改选项以包括插入修订
 
-如果我们想在输出结果中包含插入修订内的文本，我们可以更改选项以不忽略插入修订。为此我们将设置`IgnoreInserted`财产给`false`:
+如果我们想在输出结果中包含插入修订内的文本，我们可以更改选项以不忽略插入修订。为此我们将设置`IgnoreInserted`财产给`false`：
 
 ```csharp
 options.IgnoreInserted = false;
@@ -156,7 +156,7 @@ builder.Write("Text");
 
 #### 问：如何忽略 Aspose.Words for .NET 中插入修订中的文本？
 
-答：要在后续操作中忽略插入修订内的文本，您可以使用`FindReplaceOptions`对象并设置`IgnoreInserted`财产给`true`:
+答：要在后续操作中忽略插入修订内的文本，您可以使用`FindReplaceOptions`对象并设置`IgnoreInserted`财产给`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -181,7 +181,7 @@ Console.WriteLine(doc.GetText());
 
 #### 问：如何在 Aspose.Words for .NET 的输出结果中包含插入修订？
 
-答：要在输出结果中包含插入修订内的文本，您可以更改选项以不忽略插入修订。为此，您可以设置`IgnoreInserted`的财产`FindReplaceOptions`反对`false`:
+答：要在输出结果中包含插入修订内的文本，您可以更改选项以不忽略插入修订。为此，您可以设置`IgnoreInserted`的财产`FindReplaceOptions`反对`false`：
 
 ```csharp
 options.IgnoreInserted = false;

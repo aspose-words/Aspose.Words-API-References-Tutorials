@@ -153,7 +153,7 @@ Console.WriteLine(doc.GetText());
 
 #### D: Come posso includere i campi nel risultato dell'output in Aspose.Words per .NET?
 
- R: Per includere il testo all'interno dei campi nel risultato di output, puoi modificare le opzioni per non ignorare i campi. Per questo, puoi impostare il`IgnoreFields`proprietà del`FindReplaceOptions` opporsi a`false`:
+ R: Per includere il testo all'interno dei campi nel risultato di output, puoi modificare le opzioni per non ignorare i campi. Per questo, puoi impostare il`IgnoreFields` proprietà del`FindReplaceOptions` opporsi a`false`:
 
 ```csharp
 options.IgnoreFields = false;

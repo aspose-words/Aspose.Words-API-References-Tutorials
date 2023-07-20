@@ -88,11 +88,11 @@ Kommentarsupplösning hjälper till att spåra och hantera feedback i ett dokume
 
 #### F: Hur ser jag lösta kommentarer i Aspose.Words för .NET?
 
- S: Som standard döljs lösta kommentarer i det slutliga dokumentet. Du kan dock visa dem genom att använda`CommentOptions.ShowResolvedComments`egendom av`Document` objekt och ställ in det på`true`.
+ S: Som standard döljs lösta kommentarer i det slutliga dokumentet. Du kan dock visa dem genom att använda`CommentOptions.ShowResolvedComments` egendom av`Document` objekt och ställ in det på`true`.
 
 #### F: Hur kan jag dölja alla kommentarer, inklusive svar, i Aspose.Words för .NET?
 
- S: För att dölja alla kommentarer, inklusive svar, i Aspose.Words för .NET kan du använda`CommentOptions.CommentDisplayMode`egendom av`Document` objekt och ställ in det på`CommentDisplayMode.None`.
+ S: För att dölja alla kommentarer, inklusive svar, i Aspose.Words för .NET kan du använda`CommentOptions.CommentDisplayMode` egendom av`Document` objekt och ställ in det på`CommentDisplayMode.None`.
 
 #### F: Kan jag redigera texten i en löst kommentar i Aspose.Words för .NET?
 

@@ -1,6 +1,6 @@
 ---
-title: قراءة Vba وحدات الماكرو من مستند Word
-linktitle: قراءة Vba وحدات الماكرو من مستند Word
+title: اقرأ Vba وحدات الماكرو من مستند Word
+linktitle: اقرأ Vba وحدات الماكرو من مستند Word
 second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية قراءة وحدات ماكرو VBA من مستند Word باستخدام Aspose.Words for .NET.
 type: docs

@@ -1,13 +1,12 @@
 ---
-title: Formato riga orizzontale
-linktitle: Formato riga orizzontale
+title: Formato regola orizzontale nel documento di Word
+linktitle: Formato regola orizzontale nel documento di Word
 second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come formattare le regole orizzontali nei documenti di Word utilizzando Aspose.Words per .NET. Guida passo dopo passo.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
-
 In questo esempio completo, imparerai come formattare una regola orizzontale in un documento di Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di personalizzare l'allineamento, la larghezza, l'altezza, il colore e altre proprietà di un filetto orizzontale.
 
 ## Prerequisiti
@@ -71,3 +70,25 @@ Ricorda di adattare il codice in base alle tue esigenze specifiche e di migliora
 Congratulazioni! Hai imparato con successo come formattare una regola orizzontale in un documento di Word utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata e utilizzando il codice sorgente fornito, ora puoi personalizzare l'aspetto delle righe orizzontali per migliorare il layout visivo del tuo documento.
 
 Sperimenta con diverse opzioni di formattazione per ottenere lo stile e l'effetto desiderati per i tuoi filetti orizzontali.
+
+### Domande frequenti per il formato della regola orizzontale nel documento word
+
+#### D: Posso applicare colori diversi al filetto orizzontale?
+
+R: Assolutamente! Con Aspose.Words per .NET, puoi facilmente personalizzare il colore della riga orizzontale impostando la proprietà Color sul valore del colore desiderato. Ciò ti consente di abbinare la regola orizzontale al design generale del tuo documento.
+
+#### D: È possibile regolare la larghezza e l'altezza del righello orizzontale?
+
+R: Sì, hai il pieno controllo sulla larghezza e l'altezza del righello orizzontale. Modificando le proprietà WidthPercent e Height, è possibile ottenere le dimensioni desiderate per il filetto orizzontale.
+
+#### D: Posso modificare l'allineamento del filetto orizzontale all'interno del documento?
+
+R: Certamente! Aspose.Words per .NET consente di specificare l'allineamento della regola orizzontale utilizzando la proprietà Alignment. Puoi scegliere tra varie opzioni come Centro, Sinistra, Destra e Giustificato.
+
+#### D: Posso applicare l'ombreggiatura o il colore di sfondo al filetto orizzontale?
+
+R: Sì, puoi aggiungere ombreggiatura o colore di sfondo al filetto orizzontale. Per impostazione predefinita, la proprietà NoShade è impostata su true, ma è possibile impostarla su false e definire l'ombreggiatura utilizzando i metodi appropriati.
+
+#### D: Posso inserire più filetti orizzontali in un unico documento?
+
+R: Assolutamente! È possibile inserire più regole orizzontali in un documento di Word utilizzando Aspose.Words per .NET. Ripeti semplicemente i passaggi del tutorial secondo necessità per aggiungere tutte le regole orizzontali di cui hai bisogno.

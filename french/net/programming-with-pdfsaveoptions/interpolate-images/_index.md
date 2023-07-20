@@ -28,7 +28,7 @@ Ensuite, nous devons charger le document que nous voulons traiter. Dans cet exem
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Étape 3 : Configurer les options d'enregistrement au format PDF avec interpolation d'image
+## Étape 3 : Configurer les options d'enregistrement au format PDF avec interpolation d'images
 
  Pour activer l'interpolation des images lors de la conversion en PDF, nous devons configurer le`PdfSaveOptions` objet en définissant le`InterpolateImages` propriété à`true`.
 
@@ -78,5 +78,5 @@ R : Pour activer l'interpolation d'image lors de la conversion au format PDF av
 
  Utilisez le`Save` méthode de la`Document`classe pour enregistrer le document au format PDF en spécifiant les options d'enregistrement.
 
-#### Q : Comment puis-je vérifier si l'interpolation de trame a été activée dans le document PDF généré ?
+#### Q : Comment puis-je vérifier si l'interpolation d'image a été activée dans le document PDF généré ?
 R : Pour vérifier si l'interpolation de trame a été activée dans le document PDF généré, ouvrez le fichier PDF avec un visualiseur PDF compatible, tel qu'Adobe Acrobat Reader, et examinez les images dans le document. Vous devriez remarquer que les images sont plus fluides et plus détaillées grâce à l'interpolation de trame.

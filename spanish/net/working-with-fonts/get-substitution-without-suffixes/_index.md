@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-En este tutorial, le mostraremos cómo obtener anulaciones sin sufijos en un documento de Word utilizando la biblioteca Aspose.Words para .NET. Las sustituciones sin sufijos se utilizan para resolver problemas de sustitución de fuentes al visualizar o imprimir documentos. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
+En este tutorial, le mostraremos cómo obtener anulaciones sin sufijos en un documento de Word utilizando la biblioteca Aspose.Words para .NET. Las sustituciones sin sufijos se utilizan para resolver problemas de sustitución de fuentes al mostrar o imprimir documentos. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
 
 ## requisitos previos
 Antes de comenzar, asegúrese de tener los siguientes elementos:

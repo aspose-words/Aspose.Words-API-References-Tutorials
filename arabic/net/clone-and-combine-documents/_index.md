@@ -12,6 +12,6 @@ url: /ar/net/clone-and-combine-documents/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [وثيقة الاستنساخ](./cloning-document/) | تعرف على كيفية استنساخ مستند Word باستخدام Aspose.Words for .NET. |
+| [استنساخ مستند Word](./cloning-document/) | تعرف على كيفية استنساخ مستند Word باستخدام Aspose.Words for .NET. |
 | [أدخل المستند عند الاستبدال](./insert-document-at-replace/) | تعرف على كيفية إدراج مستند عند الاستبدال باستخدام Aspose.Words for .NET. |
 | [إدراج مستند في دمج المراسلات](./insert-document-at-mail-merge/) | تعرف على كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET. |

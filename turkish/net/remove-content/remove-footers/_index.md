@@ -48,7 +48,7 @@ foreach (Section section in doc)
 
 ## 4. Adım: Altbilgileri Kaldır
 
-Artık belirli bir bölüme gittiğimize göre, altbilgileri o bölümden kaldırabiliriz. Aspose.Words'te "FooterFirst" (ilk sayfa için), "FooterPrimary" (tek sayfalar için) ve "FooterEven" (çift sayfalar için) gibi farklı tipte altbilgiler vardır. Tüm bu altbilgi türlerini kontrol etmemiz ve kaldırmamız gerekiyor.
+Artık belirli bir bölüme gittiğimize göre, altbilgileri o bölümden kaldırabiliriz. Aspose.Words'te, "FooterFirst" (ilk sayfa için), "FooterPrimary" (tek sayfalar için) ve "FooterEven" (çift sayfalar için) gibi farklı alt bilgi türleri vardır. Tüm bu altbilgi türlerini kontrol etmemiz ve kaldırmamız gerekiyor.
 
 ```csharp
 HeaderFooter footer = section.HeadersFooters[HeaderFooterType.Footer

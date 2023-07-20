@@ -14,7 +14,7 @@ Ce didacticiel explique comment utiliser Aspose.Words pour .NET pour ajouter un 
 
 Assurez-vous que vous disposez des prérequis suivants :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger à partir du site Web officiel d'Aspose ou utiliser le gestionnaire de packages NuGet pour l'installer.
+- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
 - Un chemin d'accès au répertoire de documents où se trouvent les documents source et de destination.
 
 ## Étape 2 : Ouvrez les documents source et destination
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : Configurer les options de format d'importation
 
- Créer une instance de`ImportFormatOptions`classe et définissez la`IgnoreHeaderFooter` propriété à`false`. Cela garantit que le contenu de l'en-tête et du pied de page est inclus lors du processus d'ajout.
+ Créer une instance de`ImportFormatOptions`classe et définissez la`IgnoreHeaderFooter` propriété à`false`. Cela garantit que le contenu de l'en-tête et du pied de page est inclus pendant le processus d'ajout.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };

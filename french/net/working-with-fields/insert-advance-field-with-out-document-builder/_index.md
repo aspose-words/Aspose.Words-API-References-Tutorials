@@ -100,6 +100,6 @@ R : Pour insérer un champ avancé dans un document Word sans utiliser Document
 
 R : Pour obtenir le résultat d'un champ avancé dans un document Word, vous pouvez utiliser la propriété Result disponible dans la classe Field. Cette propriété renvoie le résultat calculé du champ.
 
-#### : Puis-je modifier la formule d'un champ avancé après l'avoir inséré dans un document Word ?
+#### Q : Puis-je modifier la formule d'un champ avancé après l'avoir inséré dans un document Word ?
 
-R : Oui, vous pouvez modifier la formule d'un champ avancé après l'avoir inséré dans un document Word. Vous pouvez le faire en accédant à la propriété FieldCode de la classe Field et en mettant à jour la formule en modifiant le texte de la formule.
+: Oui, vous pouvez modifier la formule d'un champ avancé après l'avoir inséré dans un document Word. Vous pouvez le faire en accédant à la propriété FieldCode de la classe Field et en mettant à jour la formule en modifiant le texte de la formule.

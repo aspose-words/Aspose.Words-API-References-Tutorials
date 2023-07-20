@@ -119,6 +119,6 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 ج: للتحقق مما إذا كان حقل TOA قد تم إدراجه بنجاح ، يمكنك تصفح محتوى المستند والبحث عن مثيلات حقل TOA.
 
-#### س: هل إدراج حقل TOA بدون استخدام DocumentBuilder يؤثر على تنسيق مستند Word باستخدام Aspose.Words for .NET؟
+#### س: هل إدخال حقل TOA بدون استخدام DocumentBuilder يؤثر على تنسيق مستند Word باستخدام Aspose.Words for .NET؟
 
 ج: لا يؤثر إدخال حقل TOA بدون استخدام DocumentBuilder بشكل مباشر في تنسيق مستند Word. ومع ذلك ، يمكن أن تؤثر خيارات تنسيق الحقل TOA على التنسيق العام للمستند.

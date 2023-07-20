@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	// Это выполняет пользовательскую задачу по размещению концов закладки строки в той же строке, где начинается закладка.
+	//Это выполняет пользовательскую задачу по размещению концов закладки строки в той же строке, где начинается закладка.
 	Untangle(doc);
 
 	// Теперь мы можем легко удалять строки по закладке, не повреждая закладки других строк.

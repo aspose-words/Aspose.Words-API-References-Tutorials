@@ -98,7 +98,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 1.  قم بإنشاء مثيل لـ`Document` فئة وأ`DocumentBuilder` هدف.
 2.  استخدم ال`DocumentBuilder` لكتابة المحتوى إلى المستند.
 3.  قم بتعيين كلمة مرور للمستند باستخدام ملف`SetPassword` طريقة`WriteProtection` هدف.
-4.  تعيين`ReadOnlyRecommended`ممتلكات`WriteProtection` يعترض على`true` للتوصية بفتح المستند للقراءة فقط.
+4.  تعيين`ReadOnlyRecommended` ممتلكات`WriteProtection` يعترض على`true` للتوصية بفتح المستند للقراءة فقط.
 5.  قم بتطبيق الحماية للقراءة فقط باستخدام`Protect` طريقة`Document` الكائن ، مع تحديد`ProtectionType` مثل`ReadOnly`.
 6.  احفظ المستند المحمي باستخدام امتداد`Save` طريقة`Document` هدف.
 

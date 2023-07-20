@@ -47,7 +47,7 @@ ExportCidUrlsForMhtmlResources = true
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
 ```
 
-Этот код преобразует документ в формат MHTML и сохраняет его в файл с URL-адресами CID экспортированных ресурсов MHTML.
+Этот код преобразует документ в MHTML и сохраняет его в файл с URL-адресами CID экспортированных ресурсов MHTML.
 
 ### Пример исходного кода для экспорта URL-адресов Cid для ресурсов Mhtml с использованием Aspose.Words для .NET
 

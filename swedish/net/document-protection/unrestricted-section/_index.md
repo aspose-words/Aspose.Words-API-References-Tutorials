@@ -109,7 +109,7 @@ S: För att skapa obegränsade avsnitt i ett Word-dokument med Aspose.Words för
 
 #### F: Kan jag ha flera obegränsade sektioner i ett Word-dokument?
 
- S: Ja, du kan ha flera obegränsade sektioner i ett Word-dokument. Genom att selektivt inaktivera skydd för specifika sektioner med hjälp av`ProtectedForForms`egendom av`Section`objekt kan du definiera flera sektioner där användare fritt kan ändra innehållet samtidigt som andra sektioner skyddas.
+ S: Ja, du kan ha flera obegränsade sektioner i ett Word-dokument. Genom att selektivt inaktivera skydd för specifika sektioner med hjälp av`ProtectedForForms` egendom av`Section`objekt kan du definiera flera sektioner där användare fritt kan ändra innehållet samtidigt som andra sektioner skyddas.
 
 #### Q4. Kan jag ta bort skyddet från en sektion som ursprungligen var skyddad?
  Ja, du kan ta bort skyddet från en sektion som ursprungligen skyddades genom att ställa in`ProtectedForForms` motsvarande egendom`Section` invända mot`false`. Detta tillåter användare att redigera innehållet i det specifika avsnittet utan några begränsningar.

@@ -46,7 +46,7 @@ HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = Document
 doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
-Con questo codice sarai in grado di dividere un documento Word in sezioni separate in formato HTML usando Aspose.Words per .NET.
+Con questo codice sarai in grado di dividere un documento Word in sezioni separate in formato HTML utilizzando Aspose.Words per .NET.
 
 Ora puoi generare documenti HTML separati per ogni sezione del documento iniziale.
 

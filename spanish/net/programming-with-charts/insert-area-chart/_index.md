@@ -86,7 +86,7 @@ Esto completa la implementación de insertar un gráfico de área usando Aspose.
 
 ### Conclusión
 
-En este tutorial, ha aprendido a insertar un gráfico de áreas en un documento de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, puede crear un nuevo documento, insertar un gráfico de área, agregar datos de serie y guardar el documento con el gráfico.
+En este tutorial, ha aprendido a insertar un gráfico de área en un documento de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, puede crear un nuevo documento, insertar un gráfico de área, agregar datos de serie y guardar el documento con el gráfico.
 
 Aspose.Words para .NET proporciona una potente API para el procesamiento de textos con gráficos en documentos de Word. Con solo unas pocas líneas de código, puede crear gráficos de área de aspecto profesional y personalizarlos según sus requisitos. Los gráficos de área se usan comúnmente para mostrar la magnitud y las tendencias de los datos a lo largo del tiempo o las categorías.
 

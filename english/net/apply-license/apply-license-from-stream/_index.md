@@ -77,7 +77,7 @@ Now you can confidently apply a license from a stream and leverage the powerful 
 
 #### Q: Where can I find the licensing documentation for Aspose.Words for .NET?
 
-A: You can find the licensing documentation for Aspose. Words for .NET on the official Aspose documentation website. The documentation provides detailed instructions and examples for applying licenses, including applying licenses from files.
+A: You can find the licensing documentation for Aspose. Words for .NET on the [API references](https://reference.aspose.com/words/net/). The documentation provides detailed instructions and examples for applying licenses, including applying licenses from files.
 
 #### Q: What file formats does Aspose.Words for .NET support for license files?
 

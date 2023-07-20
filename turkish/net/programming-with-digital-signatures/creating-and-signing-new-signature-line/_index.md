@@ -117,7 +117,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesinde imza satırı oluşturma
 
 #### S: Belgeyi imzalamak için dijital imza görüntüsü kullanabilir miyim?
 
- Y: Evet, belgeyi imzalamak için dijital imza görüntüsü kullanabilirsiniz. Bunu yapmak için, görüntü dosyasını sağlamanız gerekir.`SignOptions` kullanarak nesne`SignatureLineImage`mülk. Görüntü, JPEG, PNG veya EMF gibi desteklenen herhangi bir görüntü formatında olabilir.
+ Y: Evet, belgeyi imzalamak için dijital imza görüntüsü kullanabilirsiniz. Bunu yapmak için, görüntü dosyasını sağlamanız gerekir.`SignOptions` kullanarak nesne`SignatureLineImage`mülk. Görüntü, JPEG, PNG veya EMF gibi desteklenen herhangi bir görüntü biçiminde olabilir.
 
 #### S: Bir Word belgesinde yeni bir imza satırı oluşturmanın ve imzalamanın amacı nedir?
 

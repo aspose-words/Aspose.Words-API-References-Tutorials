@@ -21,7 +21,7 @@ Words Processing with Markdown, Aspose.Words for .NET kitaplığını kullanarak
 | [Bağlantı](./link/) | Aspose.Words for .NET ile bağlantıları nasıl ekleyeceğinizi öğrenin. Adım adım rehber. |
 | [resim](./image/) | Aspose.Words for .NET Adım adım kılavuz ile görüntü eklemeyi ve özelleştirmeyi öğrenin. |
 | [Yatay kural](./horizontal-rule/) | Aspose.Words for .NET ile yatay bir kuralı nasıl ekleyeceğinizi adım adım öğrenin. |
-| [Başlık](./heading/) | Aspose.Words for .NET ile başlığı nasıl kullanacağınızı adım adım öğrenin. |
+| [başlık](./heading/) | Aspose.Words for .NET ile başlığı nasıl kullanacağınızı adım adım öğrenin. |
 | [Metin Başlığı](./setext-heading/) | Aspose.Words for .NET Adım adım kılavuz ile belgelerinizi biçimlendirmek için Setext başlıklarını nasıl kullanacağınızı öğrenin. |
 | [Girintili Kod](./indented-code/) | Aspose.Words for .NET ile girintili kodu nasıl kullanacağınızı adım adım öğrenin. |
 | [çitle çevrili kod](./fenced-code/) | Aspose.Words for .NET Adım adım kılavuzla çitle çevrili kod özelliğinin nasıl kullanılacağını öğrenin. |

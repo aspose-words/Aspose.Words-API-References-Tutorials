@@ -14,7 +14,7 @@ Ce tutoriel explique comment joindre deux documents sur une nouvelle page en uti
 
 Assurez-vous que vous disposez des prérequis suivants :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger à partir du site Web officiel d'Aspose ou utiliser le gestionnaire de packages NuGet pour l'installer.
+- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
 - Un chemin d'accès au répertoire de documents où se trouvent les documents source et de destination.
 
 ## Étape 2 : Ouvrez les documents source et destination

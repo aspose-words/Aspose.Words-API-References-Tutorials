@@ -10,7 +10,7 @@ url: /de/net/working-with-headers-and-footers/copy-headers-footers-from-previous
 
 In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Kopf- und Fußzeilen aus dem vorherigen Abschnitt in ein Word-Dokument kopieren. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
+ Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Schritt 1: Zugriff auf den vorherigen Abschnitt
 

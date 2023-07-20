@@ -72,7 +72,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 #### В: Как получить авторскую группу отзывов в Aspose.Words для .NET?
 
- О: Используйте`Author`собственность`RevisionGroup` объект, чтобы получить автора ревизионной группы.
+ О: Используйте`Author` собственность`RevisionGroup` объект, чтобы получить автора ревизионной группы.
 
 ```csharp
 string author = group.Author;
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### В: Как получить тип ревизии группы ревизий в Aspose.Words для .NET?
 
- О: Используйте`RevisionType`собственность`RevisionGroup`объект, чтобы получить тип ревизии группы.
+ О: Используйте`RevisionType` собственность`RevisionGroup`объект, чтобы получить тип ревизии группы.
 
 ```csharp
 string revisionType = group.RevisionType;

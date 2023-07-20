@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
 
-Cet article fournit un guide étape par étape sur la façon d'exporter les signets de pied de page d'en-tête de document Word vers la fonction de document PDF avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment exporter des signets à partir des en-têtes et des pieds de page d'un document et générer un PDF avec les signets appropriés.
+Cet article fournit un guide étape par étape sur la façon d'exporter les signets de pied de page d'en-tête de document Word vers la fonction de document PDF avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment exporter des signets à partir d'en-têtes et de pieds de page d'un document et générer un PDF avec les signets appropriés.
 
 Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words pour .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 

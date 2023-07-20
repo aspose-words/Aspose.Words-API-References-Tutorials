@@ -10,7 +10,7 @@ url: /zh/net/basic-conversions/doc-to-docx/
 
 在本教程中，我们将引导您逐步完成使用 Aspose.Words for .NET 将 .doc 格式的 Word 文档转换为 Docx 格式的过程。我们将解释提供的 C# 源代码并指导您如何在自己的项目中实现它。
 
-首先，请确保您已在开发环境中安装并设置了 Aspose.Words for .NET。如果您还没有这样做，请从官方网站下载并安装该库。
+首先，请确保您已在开发环境中安装并设置了 Aspose.Words for .NET。如果您还没有这样做，请从以下位置下载并安装该库：[Aspose. 发布](https://releases.aspose.com/words/net/).
 
 ## 第1步：搭建开发环境
 
@@ -67,9 +67,9 @@ doc.Save(dataDir + "BaseConversions.DocToDocx.docx");
 
 #### Q1：什么是 Aspose.Words for .NET？
 
-Aspose.Words for .NET 是一个功能强大的文档处理库，允许开发人员以编程方式创建、修改、转换和渲染 Microsoft Word 文档。它为各种 Word 文件格式提供广泛支持，包括 DOC 和 DOCX。
+Aspose.Words for .NET 是一个功能强大的文档处理库，允许开发人员以编程方式创建、修改、转换和呈现 Microsoft Word 文档。它为各种 Word 文件格式提供广泛支持，包括 DOC 和 DOCX。
 
-#### Q2: 为什么要将 DOC 转换为 DOCX？
+#### Q2: 为什么我应该将 DOC 转换为 DOCX？
 
 将 DOC 转换为 DOCX 有几个优点。 DOCX 是 Microsoft 推出的较新的文件格式，它提供了改进的兼容性、更好的数据恢复选项和增强的安全功能。此外，与 DOC 文件相比，DOCX 文件的文件大小更小，因此更易于共享和存储。
 
@@ -77,7 +77,7 @@ Aspose.Words for .NET 是一个功能强大的文档处理库，允许开发人�
 
 要使用 Aspose.Words for .NET 将 DOC 文件转换为 DOCX，您可以按照以下步骤操作：
 
-安装 Aspose.Words for .NET：首先从官方网站或通过 NuGet 下载并安装 Aspose.Words for .NET。
+安装 Aspose.Words for .NET：首先从以下位置下载并安装 Aspose.Words for .NET[Aspose. 发布](https://releases.aspose.com/words/net/)或通过 NuGet。
 
 加载DOC文件：使用Document类将DOC文件加载到内存中。
 

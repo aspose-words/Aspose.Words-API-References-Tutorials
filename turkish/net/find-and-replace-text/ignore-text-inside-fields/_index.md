@@ -153,7 +153,7 @@ Console.WriteLine(doc.GetText());
 
 #### S: Aspose.Words for .NET'te çıktı sonucundaki alanları nasıl dahil edebilirim?
 
- A: Çıktı sonucuna alanların içindeki metni dahil etmek için, alanları göz ardı etmemek için seçenekleri değiştirebilirsiniz. Bunun için ayarlayabilirsiniz`IgnoreFields`mülkiyeti`FindReplaceOptions` itiraz etmek`false`:
+ A: Çıktı sonucuna alanların içindeki metni dahil etmek için, alanları göz ardı etmemek için seçenekleri değiştirebilirsiniz. Bunun için ayarlayabilirsiniz`IgnoreFields` mülkiyeti`FindReplaceOptions` itiraz etmek`false`:
 
 ```csharp
 options.IgnoreFields = false;

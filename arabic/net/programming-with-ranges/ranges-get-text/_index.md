@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 string text = doc.Range.Text;
 ```
 
- يصل هذا الرمز إلى النطاق الكامل للمستند باستخدام امتداد`Range`ممتلكات`Document` class واسترداد النص الموجود في هذا النطاق باستخدام`Text` ملكية.
+ يصل هذا الرمز إلى النطاق الكامل للمستند باستخدام امتداد`Range` ممتلكات`Document` class واسترداد النص الموجود في هذا النطاق باستخدام`Text` ملكية.
 
 #### س: هل يمكنني استخراج نص من نطاقات متعددة في مستند Word باستخدام Aspose.Words for .NET؟
 

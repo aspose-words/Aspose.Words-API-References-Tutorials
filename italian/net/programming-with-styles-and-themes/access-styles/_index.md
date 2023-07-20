@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Conclusione
 
- In questo tutorial, abbiamo imparato come recuperare e accedere agli stili presenti in un documento Word utilizzando Aspose.Words per .NET. Utilizzando il`Styles`proprietà del`Document` oggetto, abbiamo ottenuto la raccolta di stili e li abbiamo esaminati in loop per visualizzare i loro nomi. Questa funzione fornisce preziose informazioni sugli stili utilizzati all'interno di un documento e consente ulteriori personalizzazioni e analisi.
+ In questo tutorial, abbiamo imparato come recuperare e accedere agli stili presenti in un documento Word utilizzando Aspose.Words per .NET. Utilizzando il`Styles` proprietà del`Document` oggetto, abbiamo ottenuto la raccolta di stili e li abbiamo esaminati in loop per visualizzare i loro nomi. Questa funzione fornisce preziose informazioni sugli stili utilizzati all'interno di un documento e consente ulteriori personalizzazioni e analisi.
 
 Sfruttando Aspose.Words per la potente API di .NET, gli sviluppatori possono facilmente manipolare e lavorare con gli stili dei documenti, offrendo un controllo avanzato sulla formattazione e sull'elaborazione dei documenti.
 

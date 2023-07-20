@@ -26,7 +26,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 }
 ```
 
-## 2. Adım: Yer işaretlerinden ana satırları alın
+## 2. Adım: Yer imlerinden ana satırları alın
 
  biz kullanıyoruz`GetAncestor`yer iminin başlangıç ve bitiş düğümlerinin ana satırlarını alma yöntemleri:
 
@@ -88,4 +88,4 @@ Y: Bu makalede sunulan Dolaştırmayı Çöz işlevi, bitişik tablo satırları
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesindeki iç içe yer imlerini çözmek için başka yöntemler var mı?
 
-C: Bu makalede sunulan yöntem, bitişik tablo satırlarındaki iç içe geçmiş yer imlerini çözmek için yaygın olarak kullanılan bir yöntemdir. Ancak, projenizin özel ihtiyaçlarına bağlı olarak başka yaklaşımlar veya teknikler olabilir. Mevcut özellikleri daha fazla keşfetmek için resmi Aspose.Words belgelerine göz atabilirsiniz.
+ C: Bu makalede sunulan yöntem, bitişik tablo satırlarındaki iç içe geçmiş yer imlerini çözmek için yaygın olarak kullanılan bir yöntemdir. Ancak, projenizin özel ihtiyaçlarına bağlı olarak başka yaklaşımlar veya teknikler olabilir. kontrol edebilirsiniz[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/) Mevcut özellikleri daha fazla keşfetmek için.

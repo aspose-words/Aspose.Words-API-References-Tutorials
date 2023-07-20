@@ -157,7 +157,7 @@ S: Att ställa in leverantörs-ID för en signaturlinje hjälper till att identi
 #### F: Hur kan jag ställa in leverantörs-ID för en signaturrad med Aspose.Words för .NET?
 
 S: För att ställa in leverantörs-ID för en signaturrad med Aspose.Words för .NET kan du följa dessa steg:
-1.  När du har infogat signaturraden, gå till`ProviderId`egendom av`SignatureLine` objekt.
+1.  När du har infogat signaturraden, gå till`ProviderId` egendom av`SignatureLine` objekt.
 2.  Ställ in`ProviderId` egendom till det önskade leverantörs-ID-värdet med hjälp av`Guid` data typ.
 
 #### F: Kan jag signera dokumentet efter att ha skapat en ny signaturrad och angett leverantörs-ID?

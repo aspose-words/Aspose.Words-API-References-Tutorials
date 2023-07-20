@@ -10,7 +10,7 @@ url: /es/net/working-with-list/restart-list-at-each-section/
 
 En este tutorial paso a paso, le mostraremos cómo restablecer una lista numerada en cada sección de un documento de Word utilizando Aspose.Words para .NET. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo ha hecho, descargue e instale la biblioteca desde el sitio oficial.
+ Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo ha hecho, descargue e instale la biblioteca desde[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Paso 1: crear el documento y la lista
 

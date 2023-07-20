@@ -55,7 +55,7 @@ doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
 ## Шаг 5: Сохранение защищенного документа
 
-Наконец, вы можете сохранить защищенный документ с помощью`Save` метод класса Document. Укажите полный путь к файлу и желаемое имя файла. Например :
+ Наконец, вы можете сохранить защищенный документ с помощью`Save` метод класса Document. Укажите полный путь к файлу и желаемое имя файла. Например :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");

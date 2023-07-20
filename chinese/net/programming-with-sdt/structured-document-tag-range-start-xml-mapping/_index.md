@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 第 2 步：加载文档并创建 XML 部件
-使用以下命令加载 Word 文档`Document`构造函数，将文档的路径作为参数传递。创建一个 XML 部件，其中包含要在结构化文档标记内显示的数据。
+使用以下命令加载 Word 文档`Document`构造函数，将文档的路径作为参数传递。创建一个 XML 部件，其中包含要在结构化文档标记中显示的数据。
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

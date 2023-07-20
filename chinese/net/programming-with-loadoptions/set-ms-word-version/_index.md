@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/set-ms-word-version/
 ---
-
 在 C# 应用程序中对 Word 文档进行文字处理时，可能需要指定加载文档时要使用的 Microsoft Word 版本。借助适用于 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 轻松设置要使用的 MS Word 版本。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码使用 LoadOptions 加载选项加载具有指定版本的 MS Word 的文档。
 
 ## 了解 Aspose.Words 库
@@ -53,3 +52,26 @@ doc.Save(dataDir + "WorkingWithLoadOptions.SetMsWordVersion.docx");
 ## 结论
 
 在本指南中，我们解释了如何使用 .NET 的 Aspose.Words 库上传指定 MS Word 特定版本的文档。通过遵循提供的步骤并使用提供的代码 C# 源代码，您可以轻松地在 C# 应用程序中应用此功能。使用指定版本的 MS Word 加载文档可以确保应用程序中文档的正确兼容性和处理。
+
+
+### 常见问题解答
+
+#### 问：为什么在 C# 应用程序中加载文档时需要指定 MS Word 的版本？
+
+指定 MS Word 的版本可确保正确加载和处理文档，尤其是在处理不同版本之间可能有所不同的特定格式或功能时。
+
+#### 问：Aspose.Words 支持哪些版本的 MS Word？
+
+答：Aspose.Words for .NET 支持各种版本的 MS Word，包括 Word 97、Word 2003、Word 2007、Word 2010、Word 2013、Word 2016、Word 2019 等。
+
+#### 问：我可以使用与我的系统上安装的版本不同的 MS Word 版本加载文档吗？
+
+答：是的，Aspose.Words 允许您在加载文档时指定不同的 MS Word 版本，即使目标系统具有不同的 MS Word 版本，也能确保兼容性。
+
+#### 问：设置 MS Word 版本对我的 C# 应用程序有何好处？
+
+答：设置 MS Word 版本可确保根据特定版本的预期格式和功能处理文档，从而提供一致的输出。
+
+#### 问：Aspose.Words 是否仅限于处理 DOCX 文档？
+
+答：不需要，Aspose.Words 支持多种文档格式，包括 DOC、RTF、HTML、PDF 等，使其成为处理不同类型文档的多功能工具。

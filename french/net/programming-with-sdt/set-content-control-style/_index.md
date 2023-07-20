@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Structured document tags.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## Étape 3 : Récupérer le style et l'appliquer au contrôle de contenu
+## Étape 3 : Récupérer le style et l'appliquer au contrôle du contenu
  Récupérez le style souhaité dans la collection de styles du document. Dans cet exemple, on récupère le style "Quote" en utilisant`StyleIdentifier.Quote` . Ensuite, affectez le style récupéré au`Style` propriété de la balise de document structuré.
 
 ```csharp

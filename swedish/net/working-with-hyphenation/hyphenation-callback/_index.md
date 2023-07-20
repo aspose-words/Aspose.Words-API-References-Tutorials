@@ -10,17 +10,17 @@ url: /sv/net/working-with-hyphenation/hyphenation-callback/
 
 I denna steg-för-steg handledning kommer vi att visa dig hur du använder avstavningsåteruppringningsfunktionen i Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
+ För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Steg 1: Spara avstavningspåminnelse
 
- Först registrerar vi avstavningsåteruppringningen med en anpassad`CustomHyphenationCallback` klass. Detta gör att vi kan hantera ordavstavning enligt våra egna regler:
+Först registrerar vi avstavningsåteruppringningen med en anpassad`CustomHyphenationCallback` klass. Detta gör att vi kan hantera ordavstavning enligt våra egna regler:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- Se till att du har implementerat`CustomHyphenationCallback`klass efter dina specifika behov.
+ Se till att du har implementerat`CustomHyphenationCallback` klass efter dina specifika behov.
 
 ## Steg 2: Ladda dokumentet och tillämpa avstavning
 

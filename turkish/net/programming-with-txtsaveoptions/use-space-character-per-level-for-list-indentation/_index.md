@@ -11,7 +11,7 @@ Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenl
 
 ## Aspose.Words kitaplığını anlama
 
-Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle Kelime İşlemeyi kolay ve verimli hale getiren popüler bir kütüphanedir. Listelerin ve girintilerin yönetimi de dahil olmak üzere Word belgeleri oluşturmak, değiştirmek ve işlemek için çok çeşitli işlevler sunar.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle Kelime İşlemeyi kolay ve verimli hale getiren popüler bir kütüphanedir. Listelerin ve girintilerin yönetimi de dahil olmak üzere Word belgelerini oluşturmak, değiştirmek ve işlemek için çok çeşitli işlevler sunar.
 
 ## Belge oluşturma ve içerik ekleme
 

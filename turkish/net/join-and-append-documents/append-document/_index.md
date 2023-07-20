@@ -14,7 +14,7 @@ Bu eğitim, bir belgenin içeriğini diğerine eklemek için Aspose.Words for .N
 
 Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Aspose.Words for .NET kitaplığı yüklendi. adresinden indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ veya yüklemek için NuGet paket yöneticisini kullanın.
 - Kaynak ve hedef belgelerin bulunduğu bir belge dizini yolu.
 
 ## 2. Adım: Kaynak ve hedef belgeleri açın

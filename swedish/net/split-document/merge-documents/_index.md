@@ -57,7 +57,7 @@ Här är den fullständiga källkoden för funktionen Merge Documents i Aspose.W
 ```csharp
 // Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Hitta dokument med hjälp av för sammanfogning.
+// Hitta dokument med för sammanfogning.
 FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
 	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
 string sourceDocumentPath =

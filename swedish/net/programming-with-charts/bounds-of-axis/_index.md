@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 Det är allt! Du har framgångsrikt angett gränserna för en axel i ett diagram med Aspose.Words för .NET.
 
 ## Slutsats
-den här handledningen har du lärt dig hur du ställer in gränserna för en axel i ett diagram med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden kan du infoga och konfigurera ett diagram, lägga till seriedata och definiera minimi- och maxvärden för axelskalningen. Aspose.Words för .NET tillhandahåller ett kraftfullt och flexibelt API för ordbehandling med Word-dokument, så att du enkelt kan skapa dynamiska och visuellt tilltalande diagram.
+I den här handledningen har du lärt dig hur du ställer in gränserna för en axel i ett diagram med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden kan du infoga och konfigurera ett diagram, lägga till seriedata och definiera minimi- och maxvärden för axelskalningen. Aspose.Words för .NET tillhandahåller ett kraftfullt och flexibelt API för ordbehandling med Word-dokument, så att du enkelt kan skapa dynamiska och visuellt tilltalande diagram.
 
 
 ### Vanliga frågor

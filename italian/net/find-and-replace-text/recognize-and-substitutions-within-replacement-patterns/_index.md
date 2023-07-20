@@ -101,7 +101,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### D: Come posso utilizzare i gruppi acquisiti nel modello di sostituzione durante la ricerca di testo e sostituirli in Aspose.Words per .NET?
 
- R: Per utilizzare i gruppi acquisiti nel modello di sostituzione durante la ricerca di testo e la sostituzione in Aspose.Words per .NET, è possibile abilitare il`UseSubstitutions`proprietà del`FindReplaceOptions` oggetto. Ciò consente di fare riferimento ai gruppi acquisiti utilizzando`$1`, `$2`, ecc. nel modello di sostituzione:
+ R: Per utilizzare i gruppi acquisiti nel modello di sostituzione durante la ricerca di testo e la sostituzione in Aspose.Words per .NET, è possibile abilitare il`UseSubstitutions` proprietà del`FindReplaceOptions` oggetto. Ciò consente di fare riferimento ai gruppi acquisiti utilizzando`$1`, `$2`, ecc. nel modello di sostituzione:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
@@ -114,7 +114,7 @@ R: Il codice sorgente di esempio dimostra l'uso della funzione "Riconoscimento e
 
 #### D: Dove posso trovare maggiori informazioni ed esempi sull'uso delle espressioni regolari in Aspose.Words per .NET?
 
-R: Per ulteriori informazioni ed esempi sull'utilizzo delle espressioni regolari in Aspose.Words per .NET, puoi fare riferimento alla documentazione ufficiale e al repository GitHub di Aspose.Words. La documentazione fornisce spiegazioni dettagliate ed esempi di codice per vari scenari che coinvolgono espressioni regolari e manipolazione del testo in Aspose.Words per .NET.
+R: Per ulteriori informazioni ed esempi sull'utilizzo delle espressioni regolari in Aspose.Words per .NET, puoi fare riferimento a[Aspose.Words per riferimenti API .NET](https://reference.aspose.com/words/net/). La documentazione fornisce spiegazioni dettagliate ed esempi di codice per vari scenari che coinvolgono espressioni regolari e manipolazione del testo in Aspose.Words per .NET.
 
 #### D: Posso manipolare altri aspetti del documento in base ai gruppi acquisiti durante la ricerca e la sostituzione del testo?
 

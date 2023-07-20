@@ -51,7 +51,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- In questo passaggio, implementiamo il`HandlePageSavingCallback` classe che implementa il`IPageSavingCallback` interfaccia. Puoi personalizzare questa classe aggiungendo le tue azioni specifiche nel file`PageSaving` metodo. È possibile accedere alle informazioni sulla pagina tramite il`args.PageIndex`proprietà del`PageSavingArgs` oggetto passato come argomento.
+ In questo passaggio, implementiamo il`HandlePageSavingCallback` classe che implementa il`IPageSavingCallback` interfaccia. Puoi personalizzare questa classe aggiungendo le tue azioni specifiche nel file`PageSaving` metodo. È possibile accedere alle informazioni sulla pagina tramite il`args.PageIndex` proprietà del`PageSavingArgs` oggetto passato come argomento.
 
 ## Passaggio 5: salvare le pagine come immagini
 

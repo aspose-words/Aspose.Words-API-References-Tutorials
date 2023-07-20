@@ -67,7 +67,7 @@ Eso es todo ! Configuró con éxito las opciones de esquema en un documento y ge
 
 ## Conclusión
 
-En este tutorial, explicamos cómo configurar las opciones de esquema en un documento PDF usando Aspose.Words para .NET. Siguiendo los pasos descritos, puede especificar fácilmente los niveles de título y esquema en su documento y generar un archivo PDF con las opciones de esquema correspondientes. Disfrute de los beneficios de la opción de esquema para mejorar la estructura y la navegación en sus documentos PDF utilizando Aspose.Words para .NET.
+En este tutorial, explicamos cómo configurar las opciones de esquema en un documento PDF utilizando Aspose.Words para .NET. Siguiendo los pasos descritos, puede especificar fácilmente los niveles de título y esquema en su documento y generar un archivo PDF con las opciones de esquema correspondientes. Disfrute de los beneficios de la opción de esquema para mejorar la estructura y la navegación en sus documentos PDF utilizando Aspose.Words para .NET.
 
 ### Preguntas frecuentes
 

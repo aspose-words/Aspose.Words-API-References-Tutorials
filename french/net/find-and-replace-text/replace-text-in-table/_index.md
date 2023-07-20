@@ -82,7 +82,7 @@ R : La fonctionnalité "Remplacer le texte dans le tableau" dans Aspose.Words p
 
 #### Q : Comment puis-je charger un document Word à l'aide d'Aspose.Words pour .NET ?
 
-R : Pour charger un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Document` classe et spécifiez le chemin du fichier de document. Voici un exemple de code C# pour charger un document :
+ : Pour charger un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Document` classe et spécifiez le chemin du fichier de document. Voici un exemple de code C# pour charger un document :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### Q : Comment puis-je accéder à un tableau dans un document à l'aide d'Aspose.Words pour .NET ?
 
-R : Une fois le document chargé, vous pouvez accéder au tableau dans lequel vous souhaitez effectuer un remplacement de texte. Dans Aspose.Words pour .NET, vous pouvez utiliser le`GetChild` méthode avec la`NodeType.Table` paramètre pour obtenir la table souhaitée. Par exemple:
+R : Une fois le document chargé, vous pouvez accéder au tableau dans lequel vous souhaitez effectuer un remplacement de texte. Dans Aspose.Words pour .NET, vous pouvez utiliser le`GetChild` méthode avec la`NodeType.Table` paramètre pour obtenir la table désirée. Par exemple:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

@@ -1,13 +1,12 @@
 ---
-title: Insertar tabla de contenido
-linktitle: Insertar tabla de contenido
+title: Insertar tabla de contenido en documento de Word
+linktitle: Insertar tabla de contenido en documento de Word
 second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar una tabla de contenido en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-
 En este completo tutorial, aprenderá cómo insertar una tabla de contenido en un documento de Word usando Aspose.Words para .NET. Lo guiaremos a través del proceso y le proporcionaremos los fragmentos de código C# necesarios. Al final de esta guía, podrá generar una tabla de contenido con encabezados y números de página apropiados.
 
 ## requisitos previos
@@ -127,3 +126,29 @@ doc.UpdateFields();
 
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
+
+## Conclusión
+
+¡Felicidades! Ha aprendido con éxito cómo insertar una tabla de contenido en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso y utilizar el código fuente provisto, ahora puede generar una tabla de contenido con encabezados y números de página apropiados para sus documentos.
+
+### Preguntas frecuentes para insertar una tabla de contenido en un documento de Word
+
+#### P: ¿Puedo personalizar la apariencia de la tabla de contenido?
+
+ R: Sí, puede personalizar la apariencia de la tabla de contenido modificando las opciones de formato especificadas en el`InsertTableOfContents` método. Los parámetros le permiten controlar los números de página, la sangría y otros estilos.
+
+#### P: ¿Qué pasa si quiero incluir niveles de títulos específicos en la tabla de contenido?
+
+ R: Puede especificar los niveles de encabezado deseados que se incluirán en la tabla de contenido ajustando el valor dentro del`InsertTableOfContents` método. Por ejemplo, usando`"\\o \"1-3\""` incluirá los niveles de encabezado 1 a 3.
+
+#### P: ¿Puedo actualizar la tabla de contenido automáticamente si realizo cambios en el contenido del documento?
+
+ R: Sí, puede actualizar la tabla de contenido automáticamente llamando al`UpdateFields` método en el documento. Esto garantizará que cualquier cambio realizado en el contenido del documento, como agregar o eliminar encabezados, se refleje en la tabla de contenido.
+
+#### P: ¿Cómo puedo cambiar el estilo de los niveles de encabezado en la tabla de contenido?
+
+ R: Puede diseñar los niveles de encabezado de manera diferente utilizando diferentes estilos de párrafo para cada nivel de encabezado. Al asignar diferentes`StyleIdentifier` valores a la`ParagraphFormat` del`DocumentBuilder`, puede crear estilos distintos para cada nivel de título.
+
+#### P: ¿Es posible agregar formato adicional a los encabezados en la tabla de contenido?
+
+ R: Sí, puede agregar formato adicional a los encabezados de la tabla de contenido, como estilos de fuente, colores u otras propiedades. Al ajustar el`Font` propiedades de la`DocumentBuilder`, puede aplicar un formato personalizado a los encabezados.

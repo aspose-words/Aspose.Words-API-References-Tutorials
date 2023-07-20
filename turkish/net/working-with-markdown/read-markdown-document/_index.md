@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-markdown/read-markdown-document/
 ---
 
-Bu örnekte, Aspose.Words for .NET kullanarak bir Markdown belgesini nasıl okuyacağınızı göstereceğiz. Markdown, düz metni biçimlendirmek için kullanılan hafif bir biçimlendirme dilidir.
+Bu örnekte, bir Markdown belgesini Aspose.Words for .NET kullanarak nasıl okuyacağınızı göstereceğiz. Markdown, düz metni biçimlendirmek için kullanılan hafif bir biçimlendirme dilidir.
 
 ## 1. Adım: Markdown belgesini okuma
 

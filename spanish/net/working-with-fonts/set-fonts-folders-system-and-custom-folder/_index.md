@@ -37,7 +37,7 @@ fontSettings.SetFontsSources(updatedFontSources);
 ```
 
 ## Paso 4: aplicar la configuración de fuente
- A continuación, debe aplicar la configuración de fuente a su documento utilizando el`FontSettings`propiedad de la`Document` clase.
+ A continuación, debe aplicar la configuración de fuente a su documento utilizando el`FontSettings` propiedad de la`Document` clase.
 
 ```csharp
 doc.FontSettings = fontSettings;

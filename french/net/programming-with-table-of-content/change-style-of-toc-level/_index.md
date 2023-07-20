@@ -85,7 +85,7 @@ Cet extrait de code crée un nouveau document Word vide.
 
 #### Q : Comment puis-je modifier le style d'un niveau spécifique dans la table des matières à l'aide d'Aspose.Words pour .NET ?
 
- R : Une fois que vous avez chargé un document, vous pouvez modifier le style d'un niveau spécifique dans la table des matières en accédant aux styles du document et en effectuant les modifications nécessaires. Dans Aspose.Words pour .NET, vous pouvez utiliser le`Styles`propriété de la`Document` class pour accéder aux styles du document, puis modifiez le style souhaité à l'aide de ses propriétés. Par exemple, pour changer le style du premier niveau de la table des matières en gras, vous pouvez utiliser le code suivant :
+ R : Une fois que vous avez chargé un document, vous pouvez modifier le style d'un niveau spécifique dans la table des matières en accédant aux styles du document et en effectuant les modifications nécessaires. Dans Aspose.Words pour .NET, vous pouvez utiliser le`Styles` propriété de la`Document` class pour accéder aux styles du document, puis modifiez le style souhaité à l'aide de ses propriétés. Par exemple, pour changer le style du premier niveau de la table des matières en gras, vous pouvez utiliser le code suivant :
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
@@ -109,11 +109,11 @@ Ce code enregistre le document modifié sous "WorkingWithChangeStyleOfTocLevel.M
 
 #### Q : Puis-je appliquer d'autres modifications de mise en forme à la table des matières à l'aide d'Aspose.Words pour .NET ?
 
-R : Oui, en plus de modifier le style, vous pouvez appliquer divers changements de mise en forme à la table des matières à l'aide d'Aspose.Words pour .NET. Par exemple, vous pouvez modifier la taille de police, la couleur, l'alignement ou ajouter des propriétés de mise en forme supplémentaires pour améliorer l'apparence de la table des matières.
+R : Oui, en plus de modifier le style, vous pouvez appliquer diverses modifications de mise en forme à la table des matières à l'aide d'Aspose.Words pour .NET. Par exemple, vous pouvez modifier la taille de police, la couleur, l'alignement ou ajouter des propriétés de mise en forme supplémentaires pour améliorer l'apparence de la table des matières.
 
 #### Q : Comment puis-je spécifier un style personnalisé pour un niveau spécifique dans la table des matières à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour spécifier un style personnalisé pour un niveau spécifique dans la table des matières à l'aide d'Aspose.Words pour .NET, vous pouvez créer un nouveau`Style` objet, configurez ses propriétés selon le style souhaité et affectez-le au niveau correspondant de la table des matières à l'aide de la`Styles`propriété de la`Document` classe. Cela vous permet de définir un style personnalisé pour un niveau spécifique en fonction de vos besoins.
+ R : Pour spécifier un style personnalisé pour un niveau spécifique dans la table des matières à l'aide d'Aspose.Words pour .NET, vous pouvez créer un nouveau`Style` objet, configurez ses propriétés selon le style souhaité et affectez-le au niveau correspondant de la table des matières à l'aide de la`Styles` propriété de la`Document` classe. Cela vous permet de définir un style personnalisé pour un niveau spécifique en fonction de vos besoins.
 
 #### Q : Puis-je modifier le style de la table des matières dans un document Word existant à l'aide d'Aspose.Words pour .NET ?
 

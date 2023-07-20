@@ -12,4 +12,4 @@ Aspose.Words for .NET öğreticilerinde HTMLLoadOptions ile Kelime İşleme, uyg
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Tercih Edilen Kontrol Tipi](./preferred-control-type/) | Aspose.Words for .NET ile bir HTML belgesi yüklerken tercih edilen kontrol tipini belirlemek için adım adım kılavuz. |
+| [Word Belgesinde Tercih Edilen Kontrol Türü](./preferred-control-type/) | Aspose.Words for .NET ile bir HTML belgesi yüklerken word belgesinde tercih edilen kontrol tipini belirlemek için adım adım kılavuz. |

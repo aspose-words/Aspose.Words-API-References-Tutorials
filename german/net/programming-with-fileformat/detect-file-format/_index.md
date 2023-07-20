@@ -14,7 +14,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibl
 
 ## Schritt 1: Verzeichnisse definieren
 
- Zunächst müssen Sie die Verzeichnisse definieren, in denen Sie die Dateien entsprechend ihrem Format speichern möchten. Ersetzen`"YOUR DOCUMENT DIRECTORY"`mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis. Wir erstellen die Verzeichnisse „Supported“, „Unknown“, „Encrypted“ und „Pre97“, sofern diese noch nicht vorhanden sind.
+ Zunächst müssen Sie die Verzeichnisse definieren, in denen Sie die Dateien entsprechend ihrem Format speichern möchten. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis. Wir erstellen die Verzeichnisse „Supported“, „Unknown“, „Encrypted“ und „Pre97“, sofern diese noch nicht vorhanden sind.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## Schritt 2: Dateien durchsuchen
 
- Dann verwenden wir die`GetFiles` Methode der`Directory` Klasse, um die Liste der Dateien im angegebenen Verzeichnis abzurufen. Wir verwenden auch a`Where` -Klausel, um eine bestimmte Datei mit dem Namen „Beschädigtes Dokument.docx“ auszuschließen.
+ Dann verwenden wir die`GetFiles` Methode der`Directory` Klasse, um die Liste der Dateien im angegebenen Verzeichnis abzurufen. Wir verwenden auch a`Where`-Klausel, um eine bestimmte Datei mit dem Namen „Beschädigtes Dokument.docx“ auszuschließen.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ Das ist alles ! Sie haben das Format verschiedener Dokumentdateien mit Aspose.Wo
 
 #### Wie erkennt man das Format einer Dokumentdatei mit Aspose.Words für .NET?
 
- Um das Format einer Dokumentdatei mit Aspose.Words für .NET zu erkennen, können Sie die im Tutorial bereitgestellten Schritte befolgen. Verwendung der`DetectFileFormat` Methode der`FileFormatUtil` Mit der Klasse können Sie das Format der Dokumentdatei erkennen. Dadurch können Sie feststellen, ob es sich um ein Microsoft Word 97-2003-Dokument, eine Vorlage, ein Office Open XML WordprocessingML-Dokument oder andere unterstützte Formate handelt. Der im Tutorial bereitgestellte Code führt Sie durch die Implementierung dieser Funktion.
+ Um das Format einer Dokumentdatei mit Aspose.Words für .NET zu erkennen, können Sie die im Tutorial bereitgestellten Schritte befolgen. Verwendung der`DetectFileFormat` Methode der`FileFormatUtil`Mit der Klasse können Sie das Format der Dokumentdatei erkennen. Dadurch können Sie feststellen, ob es sich um ein Microsoft Word 97-2003-Dokument, eine Vorlage, ein Office Open XML WordprocessingML-Dokument oder andere unterstützte Formate handelt. Der im Tutorial bereitgestellte Code führt Sie durch die Implementierung dieser Funktion.
 
 #### Welche Dokumentformate unterstützt Aspose.Words für .NET?
 
@@ -219,7 +219,7 @@ Aspose.Words für .NET unterstützt eine Vielzahl von Dokumentformaten, darunter
 
 #### Wie gehe ich bei der Formaterkennung mit verschlüsselten Dokumentdateien um?
 
- Wenn Sie das Format einer Dokumentdatei ermitteln möchten, können Sie Folgendes verwenden`IsEncrypted`Eigentum der`FileFormatInfo` Objekt, um zu überprüfen, ob die Datei verschlüsselt ist. Wenn die Datei verschlüsselt ist, können Sie zusätzliche Schritte unternehmen, um diesen speziellen Fall zu behandeln, z. B. das Kopieren der Datei in ein Verzeichnis, das für verschlüsselte Dokumente vorgesehen ist. Du kannst den ... benutzen`File.Copy` Methode, um dies zu tun.
+ Wenn Sie das Format einer Dokumentdatei ermitteln möchten, können Sie Folgendes verwenden`IsEncrypted` Eigentum der`FileFormatInfo` Objekt, um zu überprüfen, ob die Datei verschlüsselt ist. Wenn die Datei verschlüsselt ist, können Sie zusätzliche Schritte unternehmen, um diesen speziellen Fall zu behandeln, z. B. das Kopieren der Datei in ein Verzeichnis, das für verschlüsselte Dokumente vorgesehen ist. Du kannst den ... benutzen`File.Copy` Methode, um dies zu tun.
 
 #### Welche Maßnahmen sollten ergriffen werden, wenn das Format eines Dokuments unbekannt ist?
 

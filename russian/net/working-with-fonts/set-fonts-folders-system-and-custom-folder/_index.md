@@ -37,7 +37,7 @@ fontSettings.SetFontsSources(updatedFontSources);
 ```
 
 ## Шаг 4: Примените настройки шрифта
- Затем вам нужно применить настройки шрифта к вашему документу, используя`FontSettings`собственность`Document` сорт.
+ Затем вам нужно применить настройки шрифта к вашему документу, используя`FontSettings` собственность`Document` сорт.
 
 ```csharp
 doc.FontSettings = fontSettings;

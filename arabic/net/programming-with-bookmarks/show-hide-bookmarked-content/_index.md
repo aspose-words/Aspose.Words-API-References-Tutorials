@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## الخطوة 2: إدراج حقول الدمج
 
- نحن نستخدم منشئ المستندات`DocumentBuilder`لإدراج حقول الدمج الضرورية. ستعمل حقول الدمج هذه على تعيين شرط لإظهار أو إخفاء محتوى الإشارة المرجعية بناءً على قيمة`showHide` عامل:
+ نحن نستخدم منشئ المستندات`DocumentBuilder` لإدراج حقول الدمج الضرورية. ستعمل حقول الدمج هذه على تعيين شرط لإظهار أو إخفاء محتوى الإشارة المرجعية بناءً على قيمة`showHide` عامل:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -84,7 +84,7 @@ while (currentNode != null && flag)
 
 ## الخطوة 5: تنفيذ الدمج
 
- نحن نستخدم ال`Execute` طريقة الوثيقة`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `متغير showHide`:
+ نحن نستخدم ال`Execute` طريقة المستند`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `متغير showHide`:
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
@@ -170,7 +170,7 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### س: هل مكتبة Aspose.Words مجانية؟
 
-ج: مكتبة Aspose.Words مكتبة تجارية وتتطلب ترخيصًا صالحًا لاستخدامها في مشاريعك. يمكنك التحقق من موقع Aspose الرسمي لمعرفة المزيد حول خيارات الترخيص والأسعار.
+ ج: مكتبة Aspose.Words مكتبة تجارية وتتطلب ترخيصًا صالحًا لاستخدامها في مشاريعك. يمكنك التحقق[Aspose.Words لمراجع .NET API](https://reference.aspose.com/words/net/) لمعرفة المزيد حول خيارات الترخيص والأسعار.
 
 #### س: هل توجد مكتبات أخرى متاحة لمعالجة الكلمات باستخدام مستندات Word في .NET؟
 

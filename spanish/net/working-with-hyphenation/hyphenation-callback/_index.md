@@ -10,17 +10,17 @@ url: /es/net/working-with-hyphenation/hyphenation-callback/
 
 En este tutorial paso a paso, le mostraremos cómo usar la función de devolución de llamada de partición en Aspose.Words para .NET. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo ha hecho, descargue e instale la biblioteca desde el sitio oficial.
+ Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo ha hecho, descargue e instale la biblioteca desde[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Paso 1: Guarde el recordatorio de división de palabras
 
- Primero, registraremos la devolución de llamada de separación de palabras usando un`CustomHyphenationCallback` clase. Esto nos permitirá manejar la división de palabras según nuestras propias reglas:
+Primero, registraremos la devolución de llamada de separación de palabras usando un`CustomHyphenationCallback` clase. Esto nos permitirá manejar la división de palabras según nuestras propias reglas:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- Asegúrese de haber implementado el`CustomHyphenationCallback`clase de acuerdo a sus necesidades específicas.
+ Asegúrese de haber implementado el`CustomHyphenationCallback` clase de acuerdo a sus necesidades específicas.
 
 ## Paso 2: Cargar el documento y aplicar guiones
 

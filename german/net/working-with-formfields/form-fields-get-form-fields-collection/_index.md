@@ -10,7 +10,7 @@ url: /de/net/working-with-formfields/form-fields-get-form-fields-collection/
 
 In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET die Sammlung von Formularfeldern aus einem Word-Dokument abrufen. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
+ Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Schritt 1: Initialisieren des Dokumentobjekts
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Schritt 2: Abrufen der Formularfeldsammlung
 
- Als nächstes greifen Sie auf zu`FormFields`Eigentum der`Range` Objekt im Dokument, um die Sammlung von Formularfeldern abzurufen:
+ Als nächstes greifen Sie auf zu`FormFields` Eigentum der`Range` Objekt im Dokument, um die Sammlung von Formularfeldern abzurufen:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

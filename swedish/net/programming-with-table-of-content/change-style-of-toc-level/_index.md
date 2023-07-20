@@ -21,7 +21,7 @@ Det första steget är att skapa ett nytt Word-dokument där du vill ändra stil
 Document doc = new Document();
 ```
 
-det här exemplet skapar vi ett nytt tomt dokument.
+I det här exemplet skapar vi ett nytt tomt dokument.
 
 ## Ändra stilen på en innehållsförteckningsnivå
 
@@ -31,7 +31,7 @@ När dokumentet har skapats kan du komma åt dokumentstilar och ändra stilen so
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-I det här exemplet använder vi egenskapen Styles för klassen Document för att komma åt dokumentstilar. Därefter använder vi stilidentifieraren StyleIdentifier.Toc1 för att komma åt stilen som används för den första nivån i innehållsförteckningen. Slutligen ändrar vi egenskapen Font.Bold för stilen för att göra den fet.
+det här exemplet använder vi egenskapen Styles för klassen Document för att komma åt dokumentstilar. Därefter använder vi stilidentifieraren StyleIdentifier.Toc1 för att komma åt stilen som används för den första nivån i innehållsförteckningen. Slutligen ändrar vi egenskapen Font.Bold för stilen för att göra den fet.
 
 ## Spara ändrat dokument
 
@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Slutsats
 
-I den här guiden förklarade vi hur man använder Aspose.Words för .NET för att ändra stilen på en nivå i innehållsförteckningen i ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt anpassa stilen på innehållsförteckningen i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder enorm flexibilitet och kraft att arbeta med stilarna och formateringen av dina dokument, vilket gör att du kan skapa attraktiva och professionella Word-dokument.
+den här guiden förklarade vi hur man använder Aspose.Words för .NET för att ändra stilen på en nivå i innehållsförteckningen i ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt anpassa stilen på innehållsförteckningen i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder enorm flexibilitet och kraft att arbeta med stilarna och formateringen av dina dokument, vilket gör att du kan skapa attraktiva och professionella Word-dokument.
 
 ### Vanliga frågor för att ändra toc-stil i word-dokument
 
@@ -85,7 +85,7 @@ Detta kodavsnitt skapar ett nytt, tomt Word-dokument.
 
 #### F: Hur kan jag ändra stilen för en specifik nivå i innehållsförteckningen med Aspose.Words för .NET?
 
- S: När du har laddat ett dokument kan du ändra stilen för en specifik nivå i innehållsförteckningen genom att komma åt dokumentets stilar och göra nödvändiga ändringar. I Aspose.Words för .NET kan du använda`Styles`egendom av`Document` klass för att komma åt dokumentformaten och ändra sedan den önskade stilen med dess egenskaper. Till exempel, för att ändra stilen på den första nivån i innehållsförteckningen till fetstil, kan du använda följande kod:
+ S: När du har laddat ett dokument kan du ändra stilen för en specifik nivå i innehållsförteckningen genom att komma åt dokumentets stilar och göra nödvändiga ändringar. I Aspose.Words för .NET kan du använda`Styles` egendom av`Document` klass för att komma åt dokumentformaten och ändra sedan den önskade stilen med dess egenskaper. Till exempel, för att ändra stilen på den första nivån i innehållsförteckningen till fetstil, kan du använda följande kod:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
@@ -113,7 +113,7 @@ S: Ja, förutom att ändra stilen kan du tillämpa olika formateringsändringar 
 
 #### F: Hur kan jag specificera en anpassad stil för en specifik nivå i innehållsförteckningen med Aspose.Words för .NET?
 
- S: För att ange en anpassad stil för en specifik nivå i innehållsförteckningen med Aspose.Words för .NET, kan du skapa en ny`Style` objekt, konfigurera dess egenskaper enligt din önskade stil och tilldela det till motsvarande nivå i innehållsförteckningen med hjälp av`Styles`egendom av`Document` klass. Detta låter dig definiera en anpassad stil för en specifik nivå baserat på dina krav.
+ S: För att ange en anpassad stil för en specifik nivå i innehållsförteckningen med Aspose.Words för .NET, kan du skapa en ny`Style` objekt, konfigurera dess egenskaper enligt din önskade stil och tilldela det till motsvarande nivå i innehållsförteckningen med hjälp av`Styles` egendom av`Document` klass. Detta låter dig definiera en anpassad stil för en specifik nivå baserat på dina krav.
 
 #### F: Kan jag ändra stilen på innehållsförteckningen i ett befintligt Word-dokument med Aspose.Words för .NET?
 

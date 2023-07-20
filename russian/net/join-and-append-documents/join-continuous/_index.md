@@ -14,7 +14,7 @@ url: /ru/net/join-and-append-documents/join-continuous/
 
 Убедитесь, что у вас есть следующие предварительные условия:
 
-- Установлена библиотека Aspose.Words for .NET. Вы можете загрузить его с официального веб-сайта Aspose или использовать менеджер пакетов NuGet для его установки.
+- Установлена библиотека Aspose.Words for .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте диспетчер пакетов NuGet для его установки.
 - Путь к каталогу документов, в котором находятся исходный и конечный документы.
 
 ## Шаг 2. Откройте исходный и конечный документы
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте начало непрерывного участка
 
- Чтобы исходный документ отображался сразу после содержимого целевого документа, установите`SectionStart` свойство первого раздела в исходном документе на`SectionStart.Continuous`.
+Чтобы исходный документ отображался сразу после содержимого целевого документа, установите`SectionStart` свойство первого раздела в исходном документе на`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;

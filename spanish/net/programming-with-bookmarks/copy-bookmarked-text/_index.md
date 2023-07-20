@@ -32,7 +32,7 @@ Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
-## Paso 3: Creación del documento de destino
+## Paso 3: Crear el documento de destino
 
 Creamos un nuevo documento que servirá como documento de destino para copiar el contenido del marcador:
 
@@ -90,7 +90,7 @@ Aquí está el código fuente de ejemplo completo para demostrar cómo copiar te
 
 ## Conclusión
 
-En este artículo, exploramos el código fuente de C# para comprender cómo usar la función Copiar texto marcado de Aspose.Words para .NET. Seguimos una guía paso a paso para copiar el contenido de un marcador de un documento de origen a otro documento.
+En este artículo, exploramos el código fuente de C# para entender cómo usar la función Copiar texto marcado de Aspose.Words para .NET. Seguimos una guía paso a paso para copiar el contenido de un marcador de un documento de origen a otro documento.
 
 ### Preguntas frecuentes para copiar texto marcado en un documento de Word
 
@@ -124,7 +124,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 #### P: ¿Cómo importar y copiar texto de marcador del documento de origen al documento de destino usando Aspose.Words para .NET?
 
-R: Para importar y copiar texto de marcador de un documento de origen a un documento de destino usando Aspose.Words para .NET, puede usar el`NodeImporter` class que especifica el documento de origen, el documento de destino y el modo de formato que se debe conservar. Entonces puedes usar el`AppendBookmarkedText` para agregar el texto del marcador en el documento de destino. Aquí hay un código de muestra:
+R: Para importar y copiar texto de marcador de un documento de origen a un documento de destino usando Aspose.Words para .NET, puede usar el`NodeImporter` class que especifica el documento de origen, el documento de destino y el modo de formato que se debe mantener. Entonces puedes usar el`AppendBookmarkedText` para agregar el texto del marcador en el documento de destino. Aquí hay un código de muestra:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);

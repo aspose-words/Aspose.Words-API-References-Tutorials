@@ -62,7 +62,7 @@ Aquí está el código fuente de muestra completo para desenredar los marcadores
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	// Esto realiza la tarea personalizada de colocar los extremos del marcador de fila en la misma fila con los inicios del marcador.
+	//Esto realiza la tarea personalizada de colocar los extremos del marcador de fila en la misma fila con los inicios del marcador.
 	Untangle(doc);
 
 	// Ahora podemos eliminar fácilmente las filas de un marcador sin dañar los marcadores de ninguna otra fila.

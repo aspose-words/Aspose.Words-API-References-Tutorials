@@ -74,7 +74,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### S: Aspose.Words for .NET ile oluşturulan PDF'de yorumlar nasıl gizlenir?
 
- C: Şunu kullanın:`CommentDisplayMode`mülkiyeti`LayoutOptions` PDF oluşturulurken yorumların nasıl görüntüleneceğini yapılandırmak için nesne. Yorumları gizlemek için bu özelliği şu şekilde ayarlayın:`CommentDisplayMode.Hide`.
+ C: Şunu kullanın:`CommentDisplayMode` mülkiyeti`LayoutOptions` PDF oluşturulurken yorumların nasıl görüntüleneceğini yapılandırmak için nesne. Yorumları gizlemek için bu özelliği şu şekilde ayarlayın:`CommentDisplayMode.Hide`.
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;

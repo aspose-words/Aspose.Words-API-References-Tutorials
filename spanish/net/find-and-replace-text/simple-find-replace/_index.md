@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/find-and-replace-text/simple-find-replace/
 ---
-En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función Buscar y reemplazar texto simple en Word, la biblioteca Aspose.Words para .NET. Esta función le permite realizar un reemplazo de texto simple al buscar una cadena específica de caracteres y reemplazarla con otra cadena de caracteres en un documento de Word.
+En este artículo, exploraremos el código fuente de C# anterior para entender cómo usar la función Buscar y reemplazar texto simple en Word, la biblioteca Aspose.Words para .NET. Esta función le permite realizar un reemplazo de texto simple al buscar una cadena específica de caracteres y reemplazarla con otra cadena de caracteres en un documento de Word.
 
 ## requisitos previos
 

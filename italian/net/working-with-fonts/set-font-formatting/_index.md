@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: creare e formattare il documento
- Crea un'istanza di`Document` classe e il`DocumentBuilder` class per costruire il documento. Usa il`Font`proprietà del`DocumentBuilder` per accedere alle proprietà di formattazione dei caratteri.
+ Crea un'istanza di`Document` classe e il`DocumentBuilder` class per costruire il documento. Usa il`Font` proprietà del`DocumentBuilder` per accedere alle proprietà di formattazione dei caratteri.
 
 ```csharp
 Document doc = new Document();
@@ -73,7 +73,7 @@ Congratulazioni! Ora sai come impostare la formattazione dei caratteri in un doc
 
 #### D: Come posso applicare lo stile grassetto a un carattere in un documento di Word utilizzando Aspose.Words?
 
-R: Per applicare lo stile grassetto a un carattere in un documento Word utilizzando Aspose.Words, puoi utilizzare l'API per navigare fino al carattere desiderato e impostarne lo stile su "grassetto". Questo applicherà lo stile grassetto al carattere specificato.
+R: Per applicare lo stile grassetto a un carattere in un documento Word utilizzando Aspose.Words, puoi utilizzare l'API per navigare fino al carattere desiderato e impostarne lo stile su "grassetto". Questo applicherà lo stile grassetto al font specificato.
 
 #### D: È possibile applicare lo stile corsivo a una parte specifica del testo in un documento Word con Aspose.Words?
 

@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Schritt 3: Fügen Sie ein Textwasserzeichen mit bestimmten Optionen hinzu
 
- Wir werden eine Instanz davon erstellen`TextWatermarkOptions`Klasse und legen Sie die gewünschten Optionen für das Textwasserzeichen fest.
+ Wir werden eine Instanz davon erstellen`TextWatermarkOptions` Klasse und legen Sie die gewünschten Optionen für das Textwasserzeichen fest.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

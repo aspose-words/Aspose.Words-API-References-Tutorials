@@ -1,14 +1,13 @@
 ---
-title: Groupe de saut de ligne de typographie asiatique
-linktitle: Groupe de saut de ligne de typographie asiatique
+title: Groupe de saut de ligne de typographie asiatique dans un document Word
+linktitle: Groupe de saut de ligne de typographie asiatique dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à utiliser le groupe de saut de ligne Asian Typography avec Aspose.Words pour .NET.
+description: Apprenez à utiliser le groupe de sauts de ligne Asian Typography dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/document-formatting/asian-typography-line-break-group/
 ---
-
-Dans ce didacticiel, nous allons vous montrer comment utiliser la fonctionnalité de groupe de saut de ligne de typographie asiatique avec Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et appliquer les modifications de mise en forme.
+Dans ce didacticiel, nous allons vous montrer comment utiliser le groupe de sauts de ligne de typographie asiatique dans la fonctionnalité de document Word avec Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et appliquer les modifications de mise en forme.
 
 ## Étape 1 : Chargement du document
 
@@ -59,3 +58,20 @@ Voici le code source complet de la fonctionnalité Asian Typography Line Break G
 ```
 Avec ce code, vous pourrez appliquer un groupe de sauts de ligne de typographie asiatique en utilisant Aspose.Words pour .NET.
 
+## Conclusion
+
+ Dans ce didacticiel, nous avons exploré la fonctionnalité "Groupe de sauts de ligne de typographie asiatique" dans Aspose.Words pour .NET. En configurant le`FarEastLineBreakControl`, `WordWrap` , et`HangingPunctuation` propriétés de la`ParagraphFormat`, nous avons pu contrôler le comportement des sauts de ligne pour la typographie asiatique dans un document Word. Cette fonctionnalité est utile pour gérer les caractères asiatiques et garantir des sauts de ligne et des retours à la ligne appropriés dans les documents au contenu linguistique mixte.
+
+### FAQ
+
+#### Q : Qu'est-ce que la fonctionnalité "Groupe de sauts de ligne de typographie asiatique" dans Aspose.Words pour .NET ?
+
+R : La fonctionnalité "Groupe de sauts de ligne de typographie asiatique" dans Aspose.Words pour .NET vous permet de contrôler le comportement des sauts de ligne pour la typographie asiatique dans un document Word. Plus précisément, cela affecte la manière dont les lignes sont interrompues et renvoyées à la ligne lorsqu'il s'agit de caractères asiatiques dans les paragraphes.
+
+#### Q : Comment activer le "Groupe de saut de ligne de typographie asiatique" dans Aspose.Words pour .NET ?
+
+ R : Pour activer le « Groupe de sauts de ligne de typographie asiatique », vous devez configurer le`FarEastLineBreakControl`, `WordWrap` , et`HangingPunctuation` propriétés de la`ParagraphFormat` pour le(s) paragraphe(s) pertinent(s) de votre document. Paramètre`FarEastLineBreakControl` pour`false` garantit que les caractères asiatiques sont traités de la même manière que les caractères latins en ce qui concerne les sauts de ligne.`WordWrap` mis à`true` permet l'habillage de mots pour la typographie asiatique, et`HangingPunctuation` mis à`false` empêche la ponctuation de se bloquer dans le texte asiatique.
+
+#### Q : Puis-je appliquer le "Groupe de sauts de ligne de typographie asiatique" à des paragraphes spécifiques d'un document ?
+
+R : Oui, vous pouvez appliquer les paramètres "Groupe de sauts de ligne de typographie asiatique" à des paragraphes spécifiques d'un document Word. Dans l'exemple de code, les paramètres sont appliqués au premier paragraphe du document. Vous pouvez ajuster le code pour cibler d'autres paragraphes selon vos besoins en y accédant via le`Paragraphs` collection de la ou des sections pertinentes dans le document.

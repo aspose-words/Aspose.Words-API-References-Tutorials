@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Steg 3: Lägg till objekt i kombinationsrutan
- Lägg till objekt i kombinationsrutan med hjälp av`ListItems`egendom av`StructuredDocumentTag` Varje objekt representeras av en`SdtListItem` objekt, som tar en visningstext och ett värde. I det här exemplet lägger vi till tre objekt i kombinationsrutan.
+ Lägg till objekt i kombinationsrutan med hjälp av`ListItems` egendom av`StructuredDocumentTag` Varje objekt representeras av en`SdtListItem` objekt, som tar en visningstext och ett värde. I det här exemplet lägger vi till tre objekt i kombinationsrutan.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

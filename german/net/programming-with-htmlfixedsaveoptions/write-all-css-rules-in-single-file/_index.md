@@ -26,7 +26,7 @@ In diesem Beispiel laden wir das Dokument „Document.docx“, das sich im Dokum
 
 ## Backup-Optionen konfigurieren
 
-Der nächste Schritt besteht darin, die Speicheroptionen für die Konvertierung in festes HTML zu konfigurieren. Verwenden Sie die Klasse „HtmlFixedSaveOptions“ und setzen Sie die Eigenschaft „SaveFontFaceCssSeparately“ auf „false“, um alle CSS-Regeln in eine einzige Datei zu schreiben. So geht's:
+Der nächste Schritt besteht darin, die Speicheroptionen für die Konvertierung in festes HTML zu konfigurieren. Verwenden Sie die Klasse „HtmlFixedSaveOptions“ und legen Sie die Eigenschaft „SaveFontFaceCssSeparately“ auf „false“ fest, um alle CSS-Regeln in eine einzige Datei zu schreiben. So geht's:
 
 ```csharp
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };

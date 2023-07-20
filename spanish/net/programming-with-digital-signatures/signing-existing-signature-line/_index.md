@@ -101,7 +101,7 @@ R: Para firmar una línea de firma existente en un documento de Word usando Aspo
 1.  Cargue el documento utilizando el`Document` class y especifique la ruta al archivo del documento.
 2.  Acceda a la línea de firma existente mediante el método o la propiedad adecuados. Por ejemplo, puedes usar`GetChild` para recuperar la forma de la línea de la firma.
 3.  Crear una instancia de la`SignOptions`clase y establecer el`SignatureLineId` propiedad al ID de la línea de firma existente.
-4.  Selecciona el`SignatureLineImage`propiedad de la`SignOptions` clase a la imagen que representa la firma digital.
+4.  Selecciona el`SignatureLineImage` propiedad de la`SignOptions` clase a la imagen que representa la firma digital.
 5.  Cargue el certificado de firma usando el`CertificateHolder` clase y proporcione el certificado y la contraseña necesarios.
 6.  Utilizar el`DigitalSignatureUtil.Sign` método para firmar el documento, proporcionando los parámetros necesarios, incluido el`SignOptions` objeto.
 
@@ -111,11 +111,11 @@ R: Para firmar una línea de firma existente en un documento de Word usando Aspo
 
 #### P: ¿Puedo personalizar la apariencia de la firma digital en una línea de firma existente?
 
-R: Sí, puede personalizar la apariencia de la firma digital en una línea de firma existente proporcionando un archivo de imagen que represente la firma. La imagen puede ser un logotipo, una firma manuscrita o cualquier otra representación gráfica de la firma. Puede configurar el`SignatureLineImage`propiedad de la`SignOptions` clase a los bytes del archivo de imagen.
+R: Sí, puede personalizar la apariencia de la firma digital en una línea de firma existente proporcionando un archivo de imagen que represente la firma. La imagen puede ser un logotipo, una firma manuscrita o cualquier otra representación gráfica de la firma. Puede configurar el`SignatureLineImage` propiedad de la`SignOptions` clase a los bytes del archivo de imagen.
 
 #### P: ¿Puedo firmar varias líneas de firma existentes en un documento de Word?
  R: Sí, puede firmar varias líneas de firma existentes en un documento de Word. Debe seguir los pasos para cada línea de firma individualmente, configurando el`SignatureLineId` y`SignatureLineImage` valores en el`SignOptions` objeto para cada línea de firma.
 
 #### P: ¿Qué formato debe tener el archivo de imagen para la firma digital en una línea de firma existente?
 
- R: El archivo de imagen de la firma digital en una línea de firma existente puede estar en varios formatos, como PNG, JPEG, BMP o GIF. Puede especificar la ruta del archivo o leer los bytes del archivo de imagen y asignarlo al`SignatureLineImage`propiedad de la`SignOptions` clase.
+ R: El archivo de imagen de la firma digital en una línea de firma existente puede estar en varios formatos, como PNG, JPEG, BMP o GIF. Puede especificar la ruta del archivo o leer los bytes del archivo de imagen y asignarlo al`SignatureLineImage` propiedad de la`SignOptions` clase.

@@ -111,7 +111,7 @@ HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 
 #### P: ¿Cómo puedo configurar las opciones de búsqueda y reemplazo para el reemplazo de texto en el pie de página usando Aspose.Words para .NET?
 
- R: Para configurar las opciones de búsqueda y reemplazo para el reemplazo de texto en el pie de página usando Aspose.Words para .NET, puede crear un`FindReplaceOptions` objeto y establecer las propiedades deseadas. Por ejemplo, puede establecer`MatchCase` a`false` ignorar mayúsculas y minúsculas al buscar y`FindWholeWordsOnly` a`false` para permitir que se busquen y reemplacen partes de palabras:
+ R: Para configurar las opciones de búsqueda y reemplazo para el reemplazo de texto en el pie de página usando Aspose.Words para .NET, puede crear un`FindReplaceOptions` objeto y establecer las propiedades deseadas. Por ejemplo, puede configurar`MatchCase` a`false` ignorar mayúsculas y minúsculas al buscar y`FindWholeWordsOnly` a`false` para permitir que se busquen y reemplacen partes de palabras:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWholeWordsOnly = false };

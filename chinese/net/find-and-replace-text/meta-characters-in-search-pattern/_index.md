@@ -54,7 +54,7 @@ builder.Writeln("This is line 2");
 
 ## 步骤 5：查找并替换为另一个元字符
 
-现在我们将执行另一次搜索并使用`&m`表示分页符的元字符。我们将短语“这是第 1 行&m这是第 2 行”替换为“分页符已替换为新文本”。 :
+现在我们将执行另一次搜索并使用`&m`表示分页符的元字符。我们将短语“这是第 1 行&m这是第 2 行”替换为“分页符已替换为新文本”。 ：
 
 ```csharp
 doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
@@ -152,7 +152,7 @@ builder.Writeln("This is line 2");
 
 #### 问：如何使用 Aspose.Words for .NET 在文档中搜索并替换为另一个元字符？
 
-答：我们现在将使用以下命令执行另一次搜索和替换`&m`表示分页符的元字符。我们将短语“这是第 1 行&m这是第 2 行”替换为“分页符已替换为新文本”。 :
+答：我们现在将使用以下命令执行另一次搜索和替换`&m`表示分页符的元字符。我们将短语“这是第 1 行&m这是第 2 行”替换为“分页符已替换为新文本”。 ：
 
 ```csharp
 doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");

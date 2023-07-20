@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## 步骤 3：使用“忽略字段内的文本”功能
 
-要在后续操作中忽略字段内的文本，我们可以使用`FindReplaceOptions`对象并设置`IgnoreFields`财产给`true`:
+要在后续操作中忽略字段内的文本，我们可以使用`FindReplaceOptions`对象并设置`IgnoreFields`财产给`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## 第 6 步：更改选项以包含字段
 
-我们在输出结果中包含字段内的文本，我们可以更改选项以不忽略字段。为此我们将设置`IgnoreFields`财产给`false`:
+我们在输出结果中包含字段内的文本，我们可以更改选项以不忽略字段。为此我们将设置`IgnoreFields`财产给`false`：
 
 ```csharp
 options.IgnoreFields = false;
@@ -128,7 +128,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 #### 问：如何忽略 Aspose.Words for .NET 中字段内的文本？
 
-答：要在后续操作中忽略字段内的文本，您可以使用`FindReplaceOptions`对象并设置`IgnoreFields`财产给`true`:
+答：要在后续操作中忽略字段内的文本，您可以使用`FindReplaceOptions`对象并设置`IgnoreFields`财产给`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -153,7 +153,7 @@ Console.WriteLine(doc.GetText());
 
 #### 问：如何在 Aspose.Words for .NET 的输出结果中包含字段？
 
-答：要在输出结果中包含字段内的文本，您可以更改选项以不忽略字段。为此，您可以设置`IgnoreFields`的财产`FindReplaceOptions`反对`false`:
+答：要在输出结果中包含字段内的文本，您可以更改选项以不忽略字段。为此，您可以设置`IgnoreFields`的财产`FindReplaceOptions`反对`false`：
 
 ```csharp
 options.IgnoreFields = false;

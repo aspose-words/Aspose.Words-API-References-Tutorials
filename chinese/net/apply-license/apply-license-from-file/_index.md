@@ -78,7 +78,7 @@ catch (Exception e)
 
 #### 问：在哪里可以找到 Aspose.Words for .NET 的许可文档？
 
-答：您可以找到 Aspose 的许可文档。 Aspose 官方文档网站上的 .NET 词汇。该文档提供了应用许可证的详细说明和示例，包括从文件应用许可证。
+答：您可以找到 Aspose 的许可文档。 .NET 上的单词[API参考](https://reference.aspose.com/words/net/)。该文档提供了应用许可证的详细说明和示例，包括从文件应用许可证。
 
 #### 问：Aspose.Words for .NET 支持哪些文件格式的许可证文件？
 

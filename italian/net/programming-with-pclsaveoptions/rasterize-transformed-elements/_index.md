@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl",
 
 In questo esempio, salviamo il documento convertito come "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" utilizzando le opzioni di salvataggio specificate.
 
-### Esempio di codice sorgente per la funzionalità "Rasterizza elementi trasformati" con Aspose.Words per .NET
+### Esempio di codice sorgente per la funzione "Rasterizza elementi trasformati" con Aspose.Words per .NET
 
 ```csharp
 // Percorso della directory dei documenti

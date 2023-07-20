@@ -13,12 +13,12 @@ Il tutorial copre vari aspetti come la formattazione di testo, paragrafi, tabell
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Spazio tra testo asiatico e latino](./space-between-asian-and-latin-text/) | Scopri come regolare automaticamente lo spazio tra testo asiatico e latino nel tuo documento con Aspose.Words per .NET. |
-| [Gruppo di interruzioni di riga di tipografia asiatica](./asian-typography-line-break-group/) | Scopri come utilizzare il gruppo di interruzioni di riga di tipografia asiatica con Aspose.Words per .NET. |
-| [Formattazione del paragrafo](./paragraph-formatting/) | Scopri come applicare la formattazione personalizzata ai tuoi paragrafi con Aspose.Words per .NET. |
-| [Formattazione elenco multilivello](./multilevel-list-formatting/) | Scopri come creare un elenco multilivello e applicare la formattazione personalizzata con Aspose.Words per .NET. |
-| [Applica lo stile di paragrafo](./apply-paragraph-style/) | Scopri come applicare uno stile di paragrafo utilizzando Aspose.Words per .NET. |
-| [Applica bordi e ombreggiatura al paragrafo](./apply-borders-and-shading-to-paragraph/) | Scopri come applicare bordi e ombreggiatura a un paragrafo con Aspose.Words per .NET. |
-| [Modifica la spaziatura e i rientri dei paragrafi asiatici](./change-asian-paragraph-spacing-and-indents/) | Scopri come modificare la spaziatura e i rientri dei paragrafi asiatici con Aspose.Words per .NET. |
-| [Aggancia alla griglia](./snap-to-grid/) | Guida passo passo per spiegare il codice sorgente C# della funzione Snap to Grid con Aspose.Words per .NET. |
-| [Ottieni il separatore di stile di paragrafo](./get-paragraph-style-separator/) | Scopri come ottenere il separatore di stile di paragrafo con Aspose.Words per .NET. |
+| [Spazio tra testo asiatico e latino nel documento di Word](./space-between-asian-and-latin-text/) | Scopri come regolare automaticamente lo spazio tra testo asiatico e latino nel documento word con Aspose.Words per .NET. |
+| [Gruppo di interruzioni di riga di tipografia asiatica nel documento di Word](./asian-typography-line-break-group/) | Scopri come utilizzare il gruppo di interruzioni di riga di tipografia asiatica nel documento di Word con Aspose.Words per .NET. |
+| [Formattazione del paragrafo nel documento di Word](./paragraph-formatting/) | Scopri come applicare la formattazione personalizzata ai tuoi paragrafi nel documento word con Aspose.Words per .NET. |
+| [Formattazione dell'elenco multilivello nel documento di Word](./multilevel-list-formatting/) | Scopri come creare un elenco multilivello e applicare la formattazione personalizzata nel documento word con Aspose.Words per .NET. |
+| [Applicare lo stile di paragrafo nel documento di Word](./apply-paragraph-style/) | Scopri come applicare uno stile di paragrafo nel documento di Word utilizzando Aspose.Words per .NET. |
+| [Applica bordi e ombreggiatura al paragrafo nel documento di Word](./apply-borders-and-shading-to-paragraph/) | Scopri come applicare i bordi e l'ombreggiatura a un paragrafo in un documento word con Aspose.Words per .NET. |
+| [Cambia la spaziatura e i rientri dei paragrafi asiatici nel documento di Word](./change-asian-paragraph-spacing-and-indents/) | Scopri come modificare la spaziatura dei paragrafi asiatici e i rientri nel documento di Word con Aspose.Words per .NET. |
+| [Aggancia alla griglia nel documento di Word](./snap-to-grid/) | Guida passo passo per spiegare il codice sorgente C# di Snap to Grid nella funzione documento word con Aspose.Words per .NET. |
+| [Ottieni il separatore di stile del paragrafo nel documento di Word](./get-paragraph-style-separator/) | Scopri come ottenere il separatore di stile del paragrafo nel documento di Word con Aspose.Words per .NET. |

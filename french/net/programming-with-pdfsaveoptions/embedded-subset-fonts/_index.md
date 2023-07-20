@@ -64,7 +64,7 @@ C'est tout ! Vous avez intégré avec succès des sous-ensembles de polices dans
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons appris à incorporer des sous-ensembles de polices dans un document PDF à l'aide d'Aspose.Words pour .NET. L'intégration de sous-ensembles de polices permet de réduire la taille du fichier PDF tout en préservant l'aspect du document en n'utilisant que les caractères réellement utilisés. Cela garantit une meilleure compatibilité et de meilleures performances lors de la visualisation et de l'impression du PDF. N'hésitez pas à explorer davantage les fonctionnalités d'Aspose.Words pour .NET afin d'optimiser la génération de vos documents PDF avec des sous-ensembles de polices intégrés.
+Dans ce didacticiel, nous avons appris à incorporer des sous-ensembles de polices dans un document PDF à l'aide d'Aspose.Words pour .NET. L'intégration de sous-ensembles de polices permet de réduire la taille du fichier PDF tout en préservant l'apparence du document en n'utilisant que les caractères réellement utilisés. Cela garantit une meilleure compatibilité et de meilleures performances lors de la visualisation et de l'impression du PDF. N'hésitez pas à explorer davantage les fonctionnalités d'Aspose.Words pour .NET afin d'optimiser la génération de vos documents PDF avec des sous-ensembles de polices intégrés.
 
 ### Questions fréquemment posées
 

@@ -92,18 +92,18 @@ R : À partir d'une signature numérique dans un document Word, vous pouvez acc
 
 #### Q : Puis-je vérifier la validité d'une signature numérique dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
- R : Oui, vous pouvez vérifier la validité d'une signature numérique dans un document Word à l'aide d'Aspose.Words pour .NET. En accédant au`IsValid`propriété de la`DigitalSignature` objet, vous pouvez déterminer si la signature est valide ou non.
+ R : Oui, vous pouvez vérifier la validité d'une signature numérique dans un document Word à l'aide d'Aspose.Words pour .NET. En accédant au`IsValid` propriété de la`DigitalSignature` objet, vous pouvez déterminer si la signature est valide ou non.
 
 #### Q : Comment puis-je vérifier la validité des signatures numériques dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
 R : Pour vérifier la validité des signatures numériques dans un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez suivre ces étapes :
 1.  Accéder au`DigitalSignatures` collecte du document.
 2.  Parcourez chaque`DigitalSignature` objet dans la collection.
-3.  Utilisez le`IsValid`propriété de la`DigitalSignature` objet pour vérifier si la signature est valide.
+3.  Utilisez le`IsValid` propriété de la`DigitalSignature` objet pour vérifier si la signature est valide.
 
 #### Q : Puis-je récupérer les commentaires du signataire ou la raison de sa signature à partir d'une signature numérique dans un document Word ?
 
- : Oui, vous pouvez récupérer les commentaires du signataire ou la raison de sa signature à partir d'une signature numérique dans un document Word. Le`Comments`propriété de la`DigitalSignature` L'objet donne accès aux commentaires spécifiés par le signataire lors du processus de signature.
+ : Oui, vous pouvez récupérer les commentaires du signataire ou la raison de sa signature à partir d'une signature numérique dans un document Word. Le`Comments` propriété de la`DigitalSignature` L'objet donne accès aux commentaires spécifiés par le signataire lors du processus de signature.
 
 #### Q : Quel type de documents la fonctionnalité de vérification de signature prend-elle en charge dans Aspose.Words pour .NET ?
 
@@ -111,7 +111,7 @@ R : La fonctionnalité de vérification de signature dans Aspose.Words pour .NET
 
 #### Q : Comment puis-je accéder aux détails du certificat d'une signature numérique dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour accéder aux détails du certificat d'une signature numérique dans un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez accéder au`CertificateHolder`propriété de la`DigitalSignature` objet. Du`CertificateHolder` objet, vous pouvez récupérer diverses informations sur le certificat, telles que le nom du sujet et le nom de l'émetteur.
+ R : Pour accéder aux détails du certificat d'une signature numérique dans un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez accéder au`CertificateHolder` propriété de la`DigitalSignature` objet. Du`CertificateHolder` objet, vous pouvez récupérer diverses informations sur le certificat, telles que le nom du sujet et le nom de l'émetteur.
 
 #### Q : Puis-je personnaliser l'affichage ou le traitement des signatures numériques dans un document Word à l'aide d'Aspose.Words pour .NET ?
 

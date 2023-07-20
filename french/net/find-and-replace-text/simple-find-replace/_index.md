@@ -2,7 +2,7 @@
 title: Recherche et remplacement de texte simple dans Word
 linktitle: Recherche et remplacement de texte simple dans Word
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à effectuer une simple recherche et remplacement de texte dans un document Word à l'aide de Aspose.Words pour .NET.
+description: Apprenez à effectuer une simple recherche et remplacement de texte dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/find-and-replace-text/simple-find-replace/

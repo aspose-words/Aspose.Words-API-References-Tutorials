@@ -21,7 +21,7 @@ Aspose . İster yeni başlayan ister deneyimli bir geliştirici olun, bu öğret
 | [En Boy Oranı Kilitli](./aspect-ratio-locked/) | Aspose.Words for .NET kullanarak bir Word belgesindeki bir şeklin en boy oranını nasıl kilitleyeceğinizi veya kilidini açacağınızı öğrenin. |
 | [Hücre Düzeni](./layout-in-cell/) | Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablo hücresi içinde bir şekli nasıl düzenleyeceğinizi öğrenin. |
 | [Kesilen Köşeleri Ekle](./add-corners-snipped/) | Aspose.Words for .NET kullanarak bir Word belgesine köşeleri kırpılmış bir şekli nasıl ekleyeceğinizi öğrenin. |
-| [Gerçek Şekil Sınır Noktalarını Alın](./get-actual-shape-bounds-points/) | Aspose.Words for .NET kullanarak bir Word belgesindeki noktalar (ölçüm birimi) olarak bir şeklin gerçek sınırlarını nasıl alacağınızı öğrenin. |
+| [Gerçek Şekil Sınır Noktaları Alın](./get-actual-shape-bounds-points/) | Aspose.Words for .NET kullanarak bir Word belgesindeki noktalar (ölçüm birimi) olarak bir şeklin gerçek sınırlarını nasıl alacağınızı öğrenin. |
 | [Dikey Çapa](./vertical-anchor/) | Aspose.Words for .NET'teki dikey bağlantı özelliğini kullanarak bir şekli bir belge içinde dikey olarak konumlandırmayı öğrenin.|
 | [Akıllı Sanat Şeklini Algıla](./detect-smart-art-shape/) | Aspose.Words for .NET kullanarak bir Word belgesindeki Akıllı Sanat şekillerini nasıl algılayacağınızı öğrenin, grafik temsilleri tanımlayın. |
 | [Akıllı Sanat Çizimini Güncelle](./update-smart-art-drawing/) | Aspose.Words for .NET kullanarak bir Word belgesindeki Smart Art çizimini nasıl güncelleyeceğinizi öğrenin. |

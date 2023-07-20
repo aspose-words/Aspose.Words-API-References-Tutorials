@@ -164,7 +164,7 @@ count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 #### В: Как сохранить отредактированный документ в Aspose.Words для .NET?
 
- A: После того, как вы внесли изменения в документ, вы можете сохранить его в указанном каталоге с помощью`Save` метод:
+ О: После того, как вы внесли изменения в документ, вы можете сохранить его в указанном каталоге с помощью`Save` метод:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");

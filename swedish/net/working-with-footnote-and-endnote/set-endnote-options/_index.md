@@ -10,7 +10,7 @@ url: /sv/net/working-with-footnote-and-endnote/set-endnote-options/
 
 denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att ställa in slutnotalternativ i ett Word-dokument. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
+ För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Steg 1: Initiera dokumentobjektet
 
@@ -89,12 +89,12 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Hur kan jag placera slutnoter i ett dokument?
 
- S: För att placera slutnoter i ett dokument kan du använda`Position`egendom av`EndnoteOptions` klass. Du kan ange om slutanteckningar ska placeras längst ner på varje sida, i slutet av varje avsnitt eller i slutet av dokumentet.
+ S: För att placera slutnoter i ett dokument kan du använda`Position` egendom av`EndnoteOptions` klass. Du kan ange om slutanteckningar ska placeras längst ner på varje sida, i slutet av varje avsnitt eller i slutet av dokumentet.
 
 #### F: Kan jag anpassa slutnotens numreringsformat?
 
- S: Ja, du kan anpassa formatet för slutnotsnumrering i Aspose.Words. Använd`NumberFormat`egendom av`EndnoteOptions` klass för att ställa in önskat format, såsom arabiska siffror, romerska siffror, bokstäver, etc.
+ S: Ja, du kan anpassa formatet för slutnotsnumrering i Aspose.Words. Använd`NumberFormat` egendom av`EndnoteOptions` klass för att ställa in önskat format, såsom arabiska siffror, romerska siffror, bokstäver, etc.
 
 #### F: Är det möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument?
 
- S: Ja, det är möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument. Använd`RestartRule`egendom av`EndnoteOptions` klass och ställ in den på`RestartContinuous` för att låta numreringen fortsätta mellan avsnitten.
+ S: Ja, det är möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument. Använd`RestartRule` egendom av`EndnoteOptions` klass och ställ in den på`RestartContinuous` för att låta numreringen fortsätta mellan avsnitten.

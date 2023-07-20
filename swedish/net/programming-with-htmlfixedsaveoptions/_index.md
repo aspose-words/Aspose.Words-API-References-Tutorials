@@ -13,4 +13,4 @@ Handledningarna för Aspose.Words för .NET är utformade för att hjälpa dig a
 | Titel | Beskrivning |
 | --- | --- |
 | [Använd teckensnitt från målmaskin](./use-font-from-target-machine/) | Lär dig hur du konverterar ett Word-dokument till fast HTML med hjälp av målmaskinens teckensnitt med Aspose.Words för .NET. |
-| [Skriv alla Css-regler i en fil](./write-all-css-rules-in-single-file/) | Lär dig hur du konverterar ett Word-dokument till fast HTML genom att skriva alla CSS-regler i en enda fil med Aspose.Words för .NET. |
+| [Skriv alla CSS-regler i en fil](./write-all-css-rules-in-single-file/) | Lär dig hur du konverterar ett Word-dokument till fast HTML genom att skriva alla CSS-regler i en enda fil med Aspose.Words för .NET. |

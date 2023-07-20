@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Här använder vi dokumentbyggaren för att bygga tabellen och ställa in cellens horisontella sammanfogningsegenskaper. Vi använder`HorizontalMerge`egendom av`CellFormat` objekt för att ange vilken typ av horisontell sammanslagning som ska tillämpas på varje cell. Använder sig av`CellMerge.First` vi slår samman den första cellen med nästa, medan vi använder`CellMerge.Previous` vi slår samman den nuvarande cellen med den föregående cellen.`CellMerge.None` indikerar att cellen inte ska slås samman.
+ Här använder vi dokumentbyggaren för att bygga tabellen och ställa in cellens horisontella sammanfogningsegenskaper. Vi använder`HorizontalMerge` egendom av`CellFormat` objekt för att ange vilken typ av horisontell sammanslagning som ska tillämpas på varje cell. Använder sig av`CellMerge.First` vi slår samman den första cellen med nästa, medan vi använder`CellMerge.Previous` vi slår samman den nuvarande cellen med den föregående cellen.`CellMerge.None` indikerar att cellen inte ska slås samman.
 
 ## Steg 4: Spara det ändrade dokumentet
 Slutligen måste vi spara det modifierade dokumentet med cellerna sammanslagna horisontellt. Använd följande kod:

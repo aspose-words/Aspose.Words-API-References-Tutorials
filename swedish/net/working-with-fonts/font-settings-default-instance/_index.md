@@ -76,11 +76,11 @@ I den här handledningen såg vi hur man konfigurerar standardteckensnittsinstä
 
 #### F: Kan jag ange standard teckenstorlek i Aspose.Words?
 
- S: Ja, du kan ange standard teckenstorlek i Aspose.Words med hjälp av`DefaultFontSize`egendom av`FontSettings` klass. Du kan ställa in önskad punktstorlek.
+ S: Ja, du kan ange standard teckenstorlek i Aspose.Words med hjälp av`DefaultFontSize` egendom av`FontSettings` klass. Du kan ställa in önskad punktstorlek.
 
 #### F: Är det möjligt att ställa in standardtypsnittsfärgen i Aspose.Words?
 
- S: Ja, du kan ställa in standardtypsnittsfärgen i Aspose.Words med hjälp av`DefaultColor`egendom av`FontSettings` klass. Du kan ange färgen med RGB-värden eller fördefinierade namn.
+ S: Ja, du kan ställa in standardtypsnittsfärgen i Aspose.Words med hjälp av`DefaultColor` egendom av`FontSettings` klass. Du kan ange färgen med RGB-värden eller fördefinierade namn.
 
 #### F: Gäller standardteckensnittsinställningarna för alla dokument?
 

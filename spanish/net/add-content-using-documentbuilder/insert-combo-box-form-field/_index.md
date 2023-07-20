@@ -1,13 +1,12 @@
 ---
-title: Insertar campo de formulario de cuadro combinado
-linktitle: Insertar campo de formulario de cuadro combinado
+title: Insertar campo de formulario de cuadro combinado en documento de Word
+linktitle: Insertar campo de formulario de cuadro combinado en documento de Word
 second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar campos de formulario de cuadro combinado en documentos de Word usando Aspose.Words para .NET. Guía paso por paso.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
-
 En este ejemplo completo, aprenderá cómo insertar un campo de formulario de cuadro combinado en un documento de Word usando Aspose.Words para .NET. Lo guiaremos a través del proceso y le proporcionaremos los fragmentos de código C# necesarios. Al final de esta guía, podrá agregar campos de formulario de cuadro combinado con propiedades personalizables a sus documentos.
 
 ## requisitos previos
@@ -61,3 +60,25 @@ Recuerde ajustar el código de acuerdo con sus requisitos específicos y mejorar
 
 ## Conclusión
 ¡Felicidades! Ha aprendido con éxito cómo insertar un campo de formulario de cuadro combinado en un documento de Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede mejorar sus documentos con campos de formulario de cuadro combinado interactivo.
+
+### Preguntas frecuentes para insertar un campo de formulario de cuadro combinado en un documento de Word
+
+#### P: ¿Puedo insertar varios campos de formulario de cuadro combinado en un solo documento?
+
+R: ¡Ciertamente! Puede insertar tantos campos de formulario de cuadro combinado como sea necesario en un documento de Word utilizando Aspose.Words para .NET. Simplemente repita el proceso de inserción para agregar múltiples cuadros combinados interactivos.
+
+#### P: ¿Puedo personalizar la lista de elementos en el campo de formulario del cuadro combinado?
+
+R: Sí, tiene control total sobre la lista de elementos en el campo de formulario del cuadro combinado. Puede definir los elementos como una matriz de cadenas, proporcionando a los usuarios diferentes opciones para seleccionar.
+
+#### P: ¿Puedo configurar el elemento seleccionado predeterminado en el campo de formulario del cuadro combinado?
+
+R: ¡Absolutamente! Al especificar el parámetro de índice seleccionado en el método InsertComboBox, puede establecer el elemento seleccionado predeterminado en el campo de formulario del cuadro combinado. Los usuarios verán el elemento preseleccionado cuando abran el documento.
+
+#### P: ¿Los campos de formulario de cuadro combinado son compatibles con otros formatos de archivo, como PDF?
+
+R: Sí, los campos de formulario de cuadro combinado insertados con Aspose.Words para .NET son compatibles con varios formatos de archivo, incluidos DOCX y PDF. Esto le permite exportar sus documentos en diferentes formatos mientras conserva los cuadros combinados interactivos.
+
+#### P: ¿Es Aspose.Words para .NET adecuado para aplicaciones web y de escritorio?
+
+R: Sí, Aspose.Words for .NET es una biblioteca versátil adecuada tanto para aplicaciones web como de escritorio. Ya sea que esté creando una aplicación de Windows o un sistema basado en la web, puede integrar la biblioteca sin esfuerzo.

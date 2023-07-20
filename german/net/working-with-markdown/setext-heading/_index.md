@@ -106,7 +106,7 @@ A: Um Setext Markdown-Überschriften zu verwenden, platzieren Sie Unterstriche u
 
 #### F: Gibt es Einschränkungen bei der Verwendung von Setext Markdown-Headern?
 
-A: Markdown-Überschriften von Setext unterliegen Einschränkungen hinsichtlich der Überschriftenhierarchie und sind optisch nicht so deutlich erkennbar wie Standard-Markdown-Überschriften.
+A: Markdown-Überschriften von Setext unterliegen Einschränkungen hinsichtlich der Überschriftenhierarchie und sind optisch nicht so deutlich erkennbar wie standardmäßige Markdown-Überschriften.
 
 #### F: Kann ich das Erscheinungsbild von Setext Markdown-Headern anpassen?
 

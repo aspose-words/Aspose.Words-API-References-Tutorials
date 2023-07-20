@@ -37,7 +37,7 @@ fontSettings.SetFontsSources(updatedFontSources);
 ```
 
 ## 4. Adım: Yazı Tipi Ayarlarını Uygulayın
- Ardından, kullanarak yazı tipi ayarlarını belgenize uygulamanız gerekir.`FontSettings`mülkiyeti`Document` sınıf.
+ Ardından, kullanarak yazı tipi ayarlarını belgenize uygulamanız gerekir.`FontSettings` mülkiyeti`Document` sınıf.
 
 ```csharp
 doc.FontSettings = fontSettings;

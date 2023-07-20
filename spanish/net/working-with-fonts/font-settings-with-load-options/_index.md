@@ -1,6 +1,6 @@
 ---
-title: Configuración de fuentes con opciones de carga
-linktitle: Configuración de fuentes con opciones de carga
+title: Configuración de fuente con opciones de carga
+linktitle: Configuración de fuente con opciones de carga
 second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda a cargar un documento de Word con opciones de carga personalizadas y la configuración de fuente correspondiente.
 type: docs
@@ -22,7 +22,7 @@ Antes de comenzar, asegúrese de tener los siguientes elementos:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Paso 2: configure las opciones de carga con la configuración de fuentes
+## Paso 2: configure las opciones de carga con la configuración de fuente
  A continuación, crearemos una instancia de`LoadOptions` especifique la configuración de la fuente creando una nueva instancia de`FontSettings` y asignándolo a`loadOptions.FontSettings`.
 
 ```csharp

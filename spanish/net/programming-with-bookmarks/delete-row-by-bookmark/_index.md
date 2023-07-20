@@ -61,7 +61,7 @@ R: Si el marcador especificado no existe en el documento, el fragmento de códig
 
 #### P: ¿La biblioteca de Aspose.Words es de uso gratuito?
 
-R: La biblioteca Aspose.Words es una biblioteca comercial y es posible que necesite una licencia válida para usarla en sus proyectos. Puede visitar el sitio web oficial de Aspose para obtener más información sobre sus opciones de licencia y precios.
+ R: La biblioteca Aspose.Words es una biblioteca comercial y es posible que necesite una licencia válida para usarla en sus proyectos. Puedes visitar el[Referencias de Aspose.Words para la API de .NET](https://reference.aspose.com/words/net/) para obtener más información sobre sus opciones de licencia y precios.
 
 #### P: ¿Puedo eliminar filas de una tabla en una sección específica del documento de Word?
 

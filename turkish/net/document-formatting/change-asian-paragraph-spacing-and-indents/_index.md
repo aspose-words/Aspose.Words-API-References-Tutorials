@@ -1,13 +1,12 @@
 ---
-title: Asya Paragraf Aralığını ve Girintilerini Değiştirin
-linktitle: Asya Paragraf Aralığını ve Girintilerini Değiştirin
+title: Word Belgesinde Asya Paragraf Aralığını ve Girintilerini Değiştirme
+linktitle: Word Belgesinde Asya Paragraf Aralığını ve Girintilerini Değiştirme
 second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile Asya paragraf aralığını ve girintileri nasıl değiştireceğinizi öğrenin.
+description: Aspose.Words for .NET ile kelime belgesindeki Asya paragraf aralığını ve girintileri nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
-
 Bu eğitimde, Aspose.Words for .NET'i kullanarak bir Asya paragrafındaki boşlukları ve girintileri nasıl değiştireceğiniz konusunda size yol göstereceğiz. Kaynak kodunu anlamak ve değişiklikleri uygulamak için aşağıdaki adımları izleyin.
 
 ## 1. Adım: Belgeyi yükleme
@@ -28,7 +27,7 @@ Document doc = new Document(MyDir + "Asian typography.docx");
 ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
 format.CharacterUnitLeftIndent = 10; // ParagraphFormat.LeftIndent'i güncelleyin
 format.CharacterUnitRightIndent = 10; // ParagraphFormat.RightIndent'i güncelleyin
-format.CharacterUnitFirstLineIndent = 20; // ParagraphFormat.FirstLineIndent'i Güncelle
+format.CharacterUnitFirstLineIndent = 20; //ParagraphFormat.FirstLineIndent'i Güncelle
 format.LineUnitBefore = 5; // ParagraphFormat.SpaceBefore'u güncelleyin
 format.LineUnitAfter = 10; // ParagraphFormat.SpaceAfter'ı güncelleyin
 ```
@@ -54,7 +53,7 @@ Aspose.Words for .NET ile Asya Paragraf Aralığını ve Girintileri Düzenle ö
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
 	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent güncellenecek
 	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent güncellenecek
-	format.CharacterUnitFirstLineIndent = 20;  //ParagraphFormat.FirstLineIndent güncellenecek
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent güncellenecek
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore güncellenecek
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter güncellenecek
 
@@ -64,3 +63,20 @@ Aspose.Words for .NET ile Asya Paragraf Aralığını ve Girintileri Düzenle ö
 
 Bu kodla, Aspose.Words for .NET'i kullanarak bir Asya paragrafının boşluklarını ve girintilerini değiştirebileceksiniz.
 
+## Çözüm
+
+ Bu öğreticide, Aspose.Words for .NET'i kullanarak bir Asya paragrafının boşluklarını ve girintilerini nasıl değiştireceğimizi öğrendik. İlgili özellikleri değiştirerek`ParagraphFormat`bir Word belgesindeki Asya paragraflarının düzenini ve görünümünü kontrol edebiliriz. Bu özellik, metnin formatını Asya karakterleriyle özelleştirmek ve karışık dil içeriğine sahip belgelerde istenen görsel sunumu elde etmek için kullanışlıdır.
+
+### SSS
+
+#### S: Aspose.Words for .NET'teki "Asya Paragraf Aralığını ve Girintileri Değiştir" özelliği ne işe yarar?
+
+C: Aspose.Words for .NET'teki "Asya Paragraf Aralığını ve Girintilerini Değiştir" özelliği, bir Word belgesindeki Asya paragrafının aralık ve girinti özelliklerini değiştirmenize olanak tanır. Paragrafın düzenini ve görünümünü kontrol etmek için sol ve sağ girintileri, ilk satır girintisini, önceki boşluk ve sonraki boşluk değerlerini ayarlayabilirsiniz.
+
+#### S: Aspose.Words for .NET'i kullanarak Asyalı bir paragrafın boşluklarını ve girintilerini nasıl değiştiririm?
+
+ C: Asya kökenli bir paragrafın aralığını ve girintilerini değiştirmek için`ParagraphFormat`hedef paragrafı seçin ve ilgili özelliklerini değiştirin. Verilen örnek kodda, belgenin ilk paragrafına erişiyoruz ve`CharacterUnitLeftIndent`, `CharacterUnitRightIndent`, `CharacterUnitFirstLineIndent`, `LineUnitBefore` , Ve`LineUnitAfter` boşluk ve girintileri ayarlamak için özellikler.
+
+#### S: Bu değişiklikleri belgedeki diğer paragraflara uygulayabilir miyim?
+
+ C: Evet, bu değişiklikleri belgedeki diğer paragraflara, ilgili paragraflara erişerek uygulayabilirsiniz.`ParagraphFormat` nesneler. Örnek kod, belgenin ilk paragrafını hedefler, ancak dizindeki dizini ayarlayarak diğer paragrafları değiştirebilirsiniz.`Paragraphs` istenen paragrafları seçmek için toplama veya diğer kriterleri kullanma.

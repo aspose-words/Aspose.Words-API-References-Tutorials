@@ -10,7 +10,7 @@ url: /net/working-with-list/specify-list-level/
 
 In this step-by-step tutorial, we will show you how to specify the list level in a Word document using Aspose.Words for .NET. We'll explain the provided C# source code and show you how to implement it in your own projects.
 
-To get started, make sure you have Aspose.Words for .NET installed and configured in your development environment. If you haven't already, download and install the library from the official site.
+To get started, make sure you have Aspose.Words for .NET installed and configured in your development environment. If you haven't already, download and install the library from [Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Step 1: Creating the Document and Document Generator
 

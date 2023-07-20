@@ -62,7 +62,7 @@ Hier ist der vollständige Beispielquellcode zum Entwirren von Lesezeichen aus Z
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	// Dadurch wird die benutzerdefinierte Aufgabe ausgeführt, die Enden der Zeilenlesezeichen in derselben Zeile wie die Lesezeichenanfänge zu platzieren.
+	//Dadurch wird die benutzerdefinierte Aufgabe ausgeführt, die Enden der Zeilenlesezeichen in derselben Zeile wie die Lesezeichenanfänge zu platzieren.
 	Untangle(doc);
 
 	// Jetzt können wir ganz einfach Zeilen mit einem Lesezeichen löschen, ohne die Lesezeichen einer anderen Zeile zu beschädigen.

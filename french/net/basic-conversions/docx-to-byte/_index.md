@@ -10,11 +10,11 @@ url: /fr/net/basic-conversions/docx-to-byte/
 
 Dans ce didacticiel étape par étape, nous vous expliquerons comment utiliser Aspose.Words pour .NET pour convertir un document Word au format Docx en un tableau d'octets. Nous vous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
+ Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le[Aspose.Releases](https://releases.aspose.com/words/net/).
 
 ## Étape 1 : Initialisation du MemoryStream
 
- Tout d'abord, créez une instance de`MemoryStream`classe pour stocker le document converti sous forme de tableau d'octets :
+ Tout d'abord, créez une instance de`MemoryStream` classe pour stocker le document converti sous forme de tableau d'octets :
 
 ```csharp
 MemoryStream outStream = new MemoryStream();

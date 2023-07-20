@@ -60,7 +60,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-//Infoga fältet FRÅGA.
+// Infoga fältet FRÅGA.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 
 field.BookmarkName = "Test 1";
@@ -73,7 +73,7 @@ field. Update();
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-I det här exemplet skapade vi ett nytt dokument, infogade ett ASK-fält utan att använda DocumentBuilder, konfigurerade fältets olika egenskaper och sparade dokumentet med ett angivet filnamn.
+det här exemplet skapade vi ett nytt dokument, infogade ett ASK-fält utan att använda DocumentBuilder, konfigurerade fältets olika egenskaper och sparade dokumentet med ett angivet filnamn.
 
 Detta avslutar vår guide om hur du använder funktionen "Infoga ASK-fält utan DocumentBuilder" med Aspose.Words för .NET.
 
