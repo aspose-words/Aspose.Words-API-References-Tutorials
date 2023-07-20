@@ -44,3 +44,11 @@ Master document processing with Aspose.Words Java tutorials. Learn word processi
 These are links to some useful resources:
 - [Word Processing](./java/word-processing/)  
 - [Table Processing](./java/table-processing/)
+- [Document Styling](./java/document-styling/)
+- [Document Merging](./java/document-merging/)
+- [Document Converting](./java/document-converting/)
+- [Document Printing](./java/document-printing/)
+- [Document Rendering](./java/document-rendering/)
+- [Document Security](./java/document-security/)
+- [Document Splitting](./java/document-splitting/)
+- [Document Revision](./java/document-revision/)
