@@ -4,7 +4,7 @@ linktitle: Document Revision
 second_title: Aspose.Words Java Document Processing API
 description: Streamline document revisions with Aspose.Words for Java! Track changes, manage version control, and automate revision tasks effortlessly. 
 type: docs
-weight: 10
+weight: 19
 url: /java/document-revision/
 ---
 

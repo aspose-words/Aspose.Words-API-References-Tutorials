@@ -4,7 +4,7 @@ linktitle:  Document Splitting
 second_title: Aspose.Words Java Document Processing API
 description: 
 type: docs
-weight: 10
+weight: 18
 url: /java/document-splitting/
 ---
 
