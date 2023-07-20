@@ -85,7 +85,7 @@ Yorum yanıtları, bir belge içinde işbirlikçi tartışmalara ve geri bildiri
 
 #### S: Aspose.Words for .NET'te mevcut yorumlara nasıl erişebilirim?
 
- C: Aspose.Words for .NET'teki mevcut yorumlara şu şekilde erişebilirsiniz:`CommentCollection`mülkiyeti`Document`nesne. Bu, belgede bulunan tüm yorumlara göz atmanıza izin verecektir.
+ C: Aspose.Words for .NET'teki mevcut yorumlara şu şekilde erişebilirsiniz:`CommentCollection` mülkiyeti`Document`nesne. Bu, belgede bulunan tüm yorumlara göz atmanıza izin verecektir.
 
 #### S: Aspose.Words for .NET'te yorum metnini düzenleyebilir miyim?
 

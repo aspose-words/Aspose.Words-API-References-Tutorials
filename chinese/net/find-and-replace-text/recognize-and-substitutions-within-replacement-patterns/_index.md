@@ -25,7 +25,7 @@ Document doc = new Document();
 
 ## 步骤 2：将文本插入文档
 
-一旦我们有了文档，我们就可以使用`DocumentBuilder`目的。在我们的示例中，我们使用`Write`方法插入短语“Jason 给 Paul 一些钱”。 :
+一旦我们有了文档，我们就可以使用`DocumentBuilder`目的。在我们的示例中，我们使用`Write`方法插入短语“Jason 给 Paul 一些钱”。 ：
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -114,7 +114,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### 问：在哪里可以找到有关在 Aspose.Words for .NET 中使用正则表达式的更多信息和示例？
 
-答：有关在 Aspose.Words for .NET 中使用正则表达式的更多信息和示例，您可以参考官方文档和 Aspose.Words GitHub 存储库。该文档提供了 Aspose.Words for .NET 中涉及正则表达式和文本操作的各种场景的详细说明和代码示例。
+答：有关在 Aspose.Words for .NET 中使用正则表达式的更多信息和示例，您可以参考[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)。该文档提供了 Aspose.Words for .NET 中涉及正则表达式和文本操作的各种场景的详细说明和代码示例。
 
 #### 问：我可以在文本搜索和替换期间根据捕获的组操作文档的其他方面吗？
 

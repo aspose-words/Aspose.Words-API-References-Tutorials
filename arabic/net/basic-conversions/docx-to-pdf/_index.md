@@ -10,11 +10,11 @@ url: /ar/net/basic-conversions/docx-to-pdf/
 
 في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى PDF. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+ للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من ملف[الإطلاقات](https://releases.aspose.com/words/net/).
 
 ## الخطوة 1: تهيئة كائن المستند
 
- أولاً ، قم بتهيئة ملف`Document` كائن مع المسار إلى مستندك المصدر بتنسيق Docx:
+ أولاً ، قم بتهيئة ملف`Document`كائن مع المسار إلى مستندك المصدر بتنسيق Docx:
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");
@@ -42,7 +42,7 @@ doc.Save(MyDir + "BaseConversions.DocxToPdf.pdf");
 
 لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
 
-### الأسئلة الشائعة لتحويل Word إلى PDF
+### أسئلة وأجوبة لتحويل Word إلى PDF
 
 #### س 1. ما هي متطلبات إجراء تحويل DOCX إلى PDF باستخدام Aspose.Words for .NET؟
 لتشغيل تحويل DOCX إلى PDF باستخدام Aspose.Words for .NET ، فإنك تحتاج إلى:
@@ -78,4 +78,4 @@ DOCX إلى تنسيقات ملفات أخرى ، مثل DOC و RTF و HTML و X
 
 
 #### س 4. أين يمكنني العثور على المزيد من نماذج التعليمات البرمجية والموارد لمعالجة الكلمات باستخدام Aspose.Words for .NET؟
- يمكنك العثور على المزيد من نماذج التعليمات البرمجية والموارد في ملف[Aspose.Words لمرجع .NET API](https://reference.aspose.com/words/net/) و[Aspose.Words لدروس .NET API](https://reference.aspose.com/tutorials/words/net/). توفر هذه الموارد أدلة خطوة بخطوة ونموذج التعليمات البرمجية والبرامج التعليمية.
+ يمكنك العثور على المزيد من نماذج التعليمات البرمجية والموارد في ملف[Aspose.Words لمراجع .NET API](https://reference.aspose.com/words/net/) و[Aspose.Words لدروس .NET API](https://reference.aspose.com/tutorials/words/net/). توفر هذه الموارد أدلة خطوة بخطوة ونموذج التعليمات البرمجية والبرامج التعليمية.

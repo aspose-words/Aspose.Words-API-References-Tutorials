@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Passaggio 3: imposta il carattere predefinito
- Ora puoi specificare il carattere predefinito da utilizzare durante il rendering creando un'istanza del file`FontSettings` classe e l'impostazione del`DefaultFontName`proprietà del`DefaultFontSubstitution` opporsi al`DefaultFontSubstitution` oggetto`SubstitutionSettings` Di`FontSettings`.
+ Ora puoi specificare il carattere predefinito da utilizzare durante il rendering creando un'istanza del file`FontSettings` classe e l'impostazione del`DefaultFontName` proprietà del`DefaultFontSubstitution` opporsi al`DefaultFontSubstitution` oggetto`SubstitutionSettings` Di`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -70,11 +70,11 @@ R: Se il carattere predefinito specificato non è disponibile durante la convers
 
 #### D: Posso specificare un font predefinito per altri formati di output, come DOCX o HTML?
 
-R: Sì, puoi specificare un carattere predefinito per altri formati di output come DOCX o HTML utilizzando le opzioni di conversione appropriate e impostando la proprietà corrispondente per ogni formato.
+R: Sì, puoi specificare un carattere predefinito per altri formati di output come DOCX o HTML utilizzando le opzioni di conversione appropriate e impostando la proprietà corrispondente per ciascun formato.
 
 #### D: Come posso controllare il carattere predefinito specificato in Aspose.Words?
 
- R: Per verificare il carattere predefinito specificato in Aspose.Words, puoi utilizzare il file`DefaultFontName`proprietà del`PdfOptions` class e recuperare il nome del carattere configurato.
+ R: Per verificare il carattere predefinito specificato in Aspose.Words, puoi utilizzare il file`DefaultFontName` proprietà del`PdfOptions` class e recuperare il nome del carattere configurato.
 
 #### D: È possibile specificare un font predefinito diverso per ogni sezione del documento?
 

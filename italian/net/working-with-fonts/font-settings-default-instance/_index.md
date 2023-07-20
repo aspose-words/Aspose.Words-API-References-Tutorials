@@ -76,11 +76,11 @@ In questo tutorial, abbiamo visto come configurare le impostazioni predefinite d
 
 #### D: Posso specificare la dimensione del carattere predefinita in Aspose.Words?
 
- A: Sì, è possibile specificare la dimensione del carattere predefinita in Aspose.Words utilizzando il file`DefaultFontSize`proprietà del`FontSettings` classe. È possibile impostare la dimensione in punti desiderata.
+ A: Sì, è possibile specificare la dimensione del carattere predefinita in Aspose.Words utilizzando il file`DefaultFontSize` proprietà del`FontSettings` classe. È possibile impostare la dimensione in punti desiderata.
 
 #### D: È possibile impostare il colore del carattere predefinito in Aspose.Words?
 
- A: Sì, puoi impostare il colore del carattere predefinito in Aspose.Words usando il`DefaultColor`proprietà del`FontSettings` classe. È possibile specificare il colore utilizzando valori RGB o nomi predefiniti.
+ A: Sì, puoi impostare il colore del carattere predefinito in Aspose.Words usando il`DefaultColor` proprietà del`FontSettings` classe. È possibile specificare il colore utilizzando valori RGB o nomi predefiniti.
 
 #### D: Le impostazioni predefinite dei caratteri si applicano a tutti i documenti?
 

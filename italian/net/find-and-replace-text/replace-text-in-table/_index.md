@@ -123,7 +123,7 @@ R: Quando si sostituisce il testo in una tabella utilizzando Aspose.Words per .N
 
 #### D: Posso sostituire il testo in più tabelle all'interno di un documento utilizzando Aspose.Words per .NET?
 
-R: Sì, puoi sostituire il testo in più tabelle all'interno di un documento utilizzando Aspose.Words per .NET. È possibile scorrere le tabelle nel documento ed eseguire l'operazione di sostituzione del testo singolarmente su ciascuna tabella. Ciò consente di sostituire un testo specifico in tutte le tabelle presenti nel documento.
+R: Sì, puoi sostituire il testo in più tabelle all'interno di un documento utilizzando Aspose.Words per .NET. È possibile scorrere le tabelle nel documento ed eseguire l'operazione di sostituzione del testo singolarmente su ogni tabella. Ciò consente di sostituire un testo specifico in tutte le tabelle presenti nel documento.
 
 #### D: Cosa dimostra il codice sorgente di esempio per la funzionalità "Sostituisci testo nella tabella" in Aspose.Words per .NET?
 

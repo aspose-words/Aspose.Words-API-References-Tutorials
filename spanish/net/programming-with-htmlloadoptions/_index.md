@@ -12,4 +12,4 @@ Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con HTMLL
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Tipo de control preferido](./preferred-control-type/) | Guía paso a paso para especificar el tipo de control preferido al cargar un documento HTML con Aspose.Words para .NET. |
+| [Tipo de control preferido en documento de Word](./preferred-control-type/) | Guía paso a paso para especificar el tipo de control preferido en un documento de Word al cargar un documento HTML con Aspose.Words para .NET. |

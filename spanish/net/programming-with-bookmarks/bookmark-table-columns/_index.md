@@ -51,7 +51,7 @@ builder. EndTable();
 builder. StartBookmark("MyBookmark");
 ```
 
-## Paso 3: Acceda al contenido de la columna
+## Paso 3: Accede al contenido de la columna
 
  Revisamos todos los marcadores en el documento y mostramos sus nombres. Si un marcador es una columna, accedemos al contenido de esa columna usando el índice de la columna y el`GetText` método:
 

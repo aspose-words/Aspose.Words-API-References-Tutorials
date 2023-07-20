@@ -157,7 +157,7 @@ Y: Bir imza satırı için sağlayıcı kimliğinin ayarlanması, dijital imzada
 #### S: Aspose.Words for .NET kullanarak bir imza satırı için sağlayıcı kimliğini nasıl ayarlayabilirim?
 
 C: Aspose.Words for .NET kullanarak bir imza satırı için sağlayıcı kimliğini ayarlamak için şu adımları takip edebilirsiniz:
-1.  İmza satırını ekledikten sonra,`ProviderId`mülkiyeti`SignatureLine` nesne.
+1.  İmza satırını ekledikten sonra,`ProviderId` mülkiyeti`SignatureLine` nesne.
 2.  Yı kur`ProviderId` özelliğini kullanarak istenen sağlayıcı kimliği değerine`Guid` veri tipi.
 
 #### S: Yeni bir imza satırı oluşturduktan ve sağlayıcı kimliğini ayarladıktan sonra belgeyi imzalayabilir miyim?

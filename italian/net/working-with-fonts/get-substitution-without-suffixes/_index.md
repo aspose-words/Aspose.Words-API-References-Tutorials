@@ -70,7 +70,7 @@ In questo tutorial abbiamo visto come ottenere le sostituzioni senza suffissi in
 
 ### FAQ
 
-#### D: Perché Aspose.Words aggiunge suffissi alle sostituzioni dei caratteri?
+#### D: Perché Aspose.Words aggiunge suffissi alle sostituzioni dei font?
 
 R: Aspose.Words aggiunge suffissi alle sostituzioni dei font per evitare conflitti tra font originali e font sostituiti. Questo aiuta a garantire la massima compatibilità durante la conversione e la manipolazione dei documenti.
 

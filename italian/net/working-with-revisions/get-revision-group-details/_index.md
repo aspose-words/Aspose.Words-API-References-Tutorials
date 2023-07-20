@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### D: Come verificare se una revisione appartiene a un gruppo in Aspose.Words per .NET?
 
- R: Usa il`Group`proprietà del`Revision` oggetto per verificare se una revisione appartiene a un gruppo. Se la`Group` la proprietà è`null`significa che la revisione non appartiene a nessun gruppo.
+ R: Usa il`Group` proprietà del`Revision` oggetto per verificare se una revisione appartiene a un gruppo. Se la`Group` la proprietà è`null`significa che la revisione non appartiene a nessun gruppo.
 
 ```csharp
 if (revision.Group != null)

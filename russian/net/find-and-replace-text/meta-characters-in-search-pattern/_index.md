@@ -160,7 +160,7 @@ doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced 
 
 #### В: Как сохранить отредактированный документ в Aspose.Words для .NET?
 
- A: После того, как вы внесли изменения в документ, вы можете сохранить его в указанном каталоге с помощью`Save` метод:
+ О: После того, как вы внесли изменения в документ, вы можете сохранить его в указанном каталоге с помощью`Save` метод:
 
 ```csharp
 doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");

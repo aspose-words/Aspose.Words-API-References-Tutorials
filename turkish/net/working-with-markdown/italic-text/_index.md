@@ -46,7 +46,7 @@ Tebrikler! Artık italik metin özelliğini Aspose.Words for .NET ile nasıl kul
 
 #### S: Aspose.Words'te metni nasıl italik hale getirebilirim?
 
-C: Aspose.Words'te metni italik yapmak için`Font.Italic`mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` belirli bir metni italik yapmak için. Örneğin, kullanabilirsiniz`run.Font.Italic=true` içindeki metni italik yapmak için`Run` nesne.
+C: Aspose.Words'te metni italik yapmak için`Font.Italic` mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` belirli bir metni italik yapmak için. Örneğin, kullanabilirsiniz`run.Font.Italic=true` içindeki metni italik yapmak için`Run` nesne.
 
 #### S: Aynı paragrafta birkaç metni italik yapmak mümkün mü?
 
@@ -54,4 +54,4 @@ C: Aspose.Words'te metni italik yapmak için`Font.Italic`mülkiyeti`Run`nesne. B
 
 #### S: Aspose.Words'te bir tablo veya hücrede bulunan metni italik yapabilir miyim?
 
- C: Evet, Aspose.Words'te bir tablo veya hücredeki metni italik yapabilirsiniz. Uygun yöntemleri kullanarak istediğiniz hücreye veya paragrafa gidebilir ve ardından italik biçimlendirmeyi kullanarak uygulayabilirsiniz.`Font.Italic`mülkiyeti`Run` veya`Paragraph` nesne.
+ C: Evet, Aspose.Words'te bir tablo veya hücredeki metni italik yapabilirsiniz. Uygun yöntemleri kullanarak istediğiniz hücreye veya paragrafa gidebilir ve ardından italik biçimlendirmeyi kullanarak uygulayabilirsiniz.`Font.Italic` mülkiyeti`Run` veya`Paragraph` nesne.

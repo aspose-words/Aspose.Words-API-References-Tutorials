@@ -76,7 +76,7 @@ C: Şifrelenmiş bir Word belgesi, bir parola kullanılarak şifrelenmiş bir be
 
 #### S: Aspose.Words for .NET kullanarak şifreli bir Word belgesini nasıl imzalayabilirim?
 
-C: Aspose.Words for .NET kullanarak şifrelenmiş bir Word belgesini imzalamak için, imzalama sertifikasıyla birlikte şifre çözme parolasını da sağlamanız gerekir. Bu adımları takip et:
+C: Aspose.Words for .NET kullanarak şifrelenmiş bir Word belgesini imzalamak için, imzalama sertifikasıyla birlikte şifre çözme şifresini de sağlamanız gerekir. Bu adımları takip et:
 1.  şifre çözme şifresini ayarlayın.`SignOptions` nesne.
 2.  kullanarak imzalama sertifikasını yükleyin.`CertificateHolder` sınıf.
 3.  Kullan`DigitalSignatureUtil.Sign` gerekli parametreleri sağlayarak şifrelenmiş belgeyi imzalama yöntemi.

@@ -74,7 +74,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Wie verstecke ich Kommentare in PDFs, die mit Aspose.Words für .NET generiert wurden?
 
- A: Benutzen Sie die`CommentDisplayMode`Eigentum der`LayoutOptions` -Objekt, um zu konfigurieren, wie Kommentare beim Generieren der PDF-Datei angezeigt werden. Um Kommentare auszublenden, legen Sie diese Eigenschaft auf fest`CommentDisplayMode.Hide`.
+ A: Benutzen Sie die`CommentDisplayMode` Eigentum der`LayoutOptions` -Objekt, um zu konfigurieren, wie Kommentare beim Generieren der PDF-Datei angezeigt werden. Um Kommentare auszublenden, legen Sie diese Eigenschaft auf fest`CommentDisplayMode.Hide`.
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;

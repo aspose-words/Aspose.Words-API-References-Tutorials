@@ -21,7 +21,7 @@ Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su dir
 
 ## Paso 2: Inserción de secciones y texto
 
-continuación, debe insertar secciones y texto en su documento. Utilice la clase DocumentBuilder proporcionada por Aspose.Words para crear el contenido de su documento. Aquí hay un ejemplo simple:
+A continuación, debe insertar secciones y texto en su documento. Utilice la clase DocumentBuilder proporcionada por Aspose.Words para crear el contenido de su documento. Aquí hay un ejemplo simple:
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ En este ejemplo, creamos un nuevo documento en blanco y luego usamos DocumentBui
 
 ## Paso 3: habilitar la protección de documentos
 
- La protección de documentos solo funciona cuando la protección de documentos está habilitada. Puede habilitar la protección de documentos mediante el`Protect` método de la clase Documento. Así es cómo:
+ La protección de documentos solo funciona cuando la protección de documentos está habilitada. Puede habilitar la protección de documentos utilizando el`Protect` método de la clase Documento. Así es cómo:
 
 ```csharp
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
@@ -55,7 +55,7 @@ Asegúrese de reemplazar "contraseña" con la contraseña que configuró anterio
 
 ## Paso 5: Guardar el Documento Protegido
 
-Finalmente, puede guardar el documento protegido usando el`Save` método de la clase Documento. Especifique la ruta completa del archivo y el nombre de archivo deseado. Por ejemplo :
+ Finalmente, puede guardar el documento protegido usando el`Save` método de la clase Documento. Especifique la ruta completa del archivo y el nombre de archivo deseado. Por ejemplo :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
@@ -107,7 +107,7 @@ R: Sí, puede insertar campos de formulario en un documento protegido mediante A
 
  R: Sí, puede eliminar la protección de documentos de un documento protegido mediante Aspose.Words para .NET. Para eliminar la protección, puede utilizar el`Unprotect` metodo de la`Document` class y proporcione la contraseña correcta. Esto eliminará la protección y permitirá la edición sin restricciones del documento.
 
-#### P: ¿Es posible proteger un documento con varios tipos de protección?
+#### P: ¿Es posible proteger un documento con múltiples tipos de protección?
 
  R: No, Aspose.Words para .NET permite que solo se aplique un tipo de protección a un documento a la vez. sin embargo, el`AllowOnlyFormFields` El tipo de protección puede restringir efectivamente la edición de campos de formulario mientras permite otros tipos de protección, como`AllowOnlyComments` o`AllowOnlyRevisions`para combinar con la protección de campo de formulario.
 

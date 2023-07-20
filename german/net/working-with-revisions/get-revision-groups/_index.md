@@ -72,7 +72,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 #### F: Wie erhalte ich den Autor einer Überprüfungsgruppe in Aspose.Words für .NET?
 
- A: Benutzen Sie die`Author`Eigentum der`RevisionGroup` Objekt, um den Autor der Revisionsgruppe abzurufen.
+ A: Benutzen Sie die`Author` Eigentum der`RevisionGroup` Objekt, um den Autor der Revisionsgruppe abzurufen.
 
 ```csharp
 string author = group.Author;
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### F: Wie erhalte ich den Revisionstyp einer Revisionsgruppe in Aspose.Words für .NET?
 
- A: Benutzen Sie die`RevisionType`Eigentum der`RevisionGroup`Objekt, um den Revisionstyp der Gruppe abzurufen.
+ A: Benutzen Sie die`RevisionType` Eigentum der`RevisionGroup`Objekt, um den Revisionstyp der Gruppe abzurufen.
 
 ```csharp
 string revisionType = group.RevisionType;

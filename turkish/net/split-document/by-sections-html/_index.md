@@ -52,7 +52,7 @@ Artık ilk belgenin her bölümü için ayrı HTML belgeleri oluşturabilirsiniz
 
 ## Çözüm
 
-Bu öğreticide, Aspose.Words for .NET'in HTML Bölümlerine Göre özelliğini kullanarak bir Word belgesini HTML biçiminde ayrı bölümlere nasıl ayıracağımızı öğrendik. Sağlanan kaynak kodunu izleyerek, orijinal belgenin her bölümü için ayrı HTML belgeleri oluşturabilirsiniz.
+Bu öğreticide, Aspose.Words for .NET'in HTML Bölümlerine Göre özelliğini kullanarak bir Word belgesini HTML formatında ayrı bölümlere nasıl ayıracağımızı öğrendik. Sağlanan kaynak kodunu izleyerek, orijinal belgenin her bölümü için ayrı HTML belgeleri oluşturabilirsiniz.
 
 Bir belgeyi bölümlere ayırmak, web sayfaları oluşturmak, belirli içeriği çıkarmak veya bilgileri düzenlemek gibi çeşitli amaçlar için yararlı olabilir. Aspose.Words for .NET, Word belgelerini gereksinimlerinize göre değiştirmenize ve özelleştirmenize izin veren güçlü bir API sağlar.
 

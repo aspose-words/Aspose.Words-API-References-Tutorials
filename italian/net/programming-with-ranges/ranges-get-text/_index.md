@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 string text = doc.Range.Text;
 ```
 
- Questo codice accede all'intera gamma del documento utilizzando il file`Range`proprietà del`Document` class e recupera il testo contenuto in tale intervallo utilizzando l'`Text` proprietà.
+ Questo codice accede all'intera gamma del documento utilizzando il file`Range` proprietà del`Document` class e recupera il testo contenuto in tale intervallo utilizzando l'`Text` proprietà.
 
 #### D: Posso estrarre il testo da più intervalli in un documento di Word utilizzando Aspose.Words per .NET?
 

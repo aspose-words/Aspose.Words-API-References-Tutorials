@@ -8,7 +8,7 @@ url: /ru/
 is_root: true
 ---
 
-## Aspose.Words для .NET
+## Учебники по обработке документов Aspose.Words для .NET
 {{% alert color="primary" %}}
 Учебники Aspose.Words для .NET и фрагменты кода для создания, редактирования, преобразования, печати и многих других функций для документов Word в вашем приложении. 
 {{% /alert %}}
@@ -35,3 +35,20 @@ is_root: true
 - [Программирование с водяным знаком](./net/programming-with-watermark/)    
 - [Программирование с параметрами сохранения Markdown](./net/programming-with-markdownsaveoptions/)   
 - [Основные преобразования](./net/basic-conversions/)   
+
+## Учебники по обработке документов Aspose.Words для Java
+{{% alert color="primary" %}}
+Освойте обработку документов с помощью руководств Aspose.Words по Java. Изучите обработку текстов, обработку таблиц, слияние и многое другое. Эффективно автоматизируйте задачи по работе с документами. 
+{{% /alert %}}
+
+Это ссылки на некоторые полезные ресурсы:
+- [Обработка текстов](./java/word-processing/)  
+- [Обработка таблицы](./java/table-processing/)
+- [Стиль документа](./java/document-styling/)
+- [Объединение документов](./java/document-merging/)
+- [Преобразование документов](./java/document-converting/)
+- [Печать документов](./java/document-printing/)
+- [Рендеринг документа](./java/document-rendering/)
+- [Безопасность документов](./java/document-security/)
+- [Разделение документа](./java/document-splitting/)
+- [Редакция документа](./java/document-revision/)

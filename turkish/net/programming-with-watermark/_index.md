@@ -7,7 +7,7 @@ type: docs
 weight: 1570
 url: /tr/net/programming-with-watermark/
 ---
-Words Processing with Watermark, Aspose.Words for .NET kitaplığını kullanarak Word belgelerinde filigranlarla Sözcük İşleme sürecinde size yol gösteren kapsamlı bir kaynaktır. Öğreticiler, Word belgelerinize filigran eklemek, özelleştirmek ve yönetmek için adım adım açıklamalar, ayrıntılı kaynak kodu ve pratik örnekler sunar. Filigran olarak metin, resim, şekil veya grafik eklemeyi, bunların konumunu ve görünümünü ayarlamayı ve alanları kullanarak özel filigran ekleme gibi gelişmiş seçenekleri öğreneceksiniz. Bu kaynak, Aspose.Words for .NET kullanarak Word belgelerinde filigran yönetimini otomatikleştirmek isteyen geliştiriciler için gereklidir.
+Words Processing with Watermark, Aspose.Words for .NET kitaplığını kullanarak Word belgelerinde filigranlarla Sözcük İşleme sürecinde size yol gösteren kapsamlı bir kaynaktır. Öğreticiler, Word belgelerinize filigran eklemek, özelleştirmek ve yönetmek için adım adım açıklamalar, ayrıntılı kaynak kodu ve pratik örnekler sağlar. Filigran olarak metin, resim, şekil veya grafik eklemeyi, bunların konumunu ve görünümünü ayarlamayı ve alanları kullanarak özel filigran ekleme gibi gelişmiş seçenekleri öğreneceksiniz. Bu kaynak, Aspose.Words for .NET kullanarak Word belgelerinde filigran yönetimini otomatikleştirmek isteyen geliştiriciler için gereklidir.
 
  ## Öğreticiler
 | Başlık | Tanım |

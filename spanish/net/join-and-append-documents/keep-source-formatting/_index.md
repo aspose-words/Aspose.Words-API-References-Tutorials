@@ -14,7 +14,7 @@ Este tutorial demuestra cómo adjuntar un documento de origen a un documento de 
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o use el administrador de paquetes NuGet para instalarlo.
 - Una ruta de directorio de documentos donde se guardarán los documentos de origen y de destino.
 
 ## Paso 2: Crear los documentos de origen y de destino

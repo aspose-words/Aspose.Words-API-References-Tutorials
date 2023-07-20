@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Belgeyi oluşturun ve biçimlendirin
- örneğini oluşturun`Document` sınıf ve`DocumentBuilder` belgeyi oluşturmak için sınıf. Kullan`Font`mülkiyeti`DocumentBuilder` yazı tipi biçimlendirme özelliklerine erişmek için.
+ örneğini oluşturun`Document` sınıf ve`DocumentBuilder` belgeyi oluşturmak için sınıf. Kullan`Font` mülkiyeti`DocumentBuilder` yazı tipi biçimlendirme özelliklerine erişmek için.
 
 ```csharp
 Document doc = new Document();
@@ -75,7 +75,7 @@ Tebrikler! Artık Aspose.Words for .NET kullanarak bir Word belgesinde yazı tip
 
 C: Aspose.Words kullanarak bir Word belgesindeki bir yazı tipine kalın stil uygulamak için, istenen yazı tipine gitmek ve stilini "kalın" olarak ayarlamak için API'yi kullanabilirsiniz. Bu, kalın stili belirtilen yazı tipine uygulayacaktır.
 
-#### S: Aspose.Words ile bir Word belgesindeki metnin belirli bir bölümüne italik stil uygulamak mümkün müdür?
+#### S: Aspose.Words ile bir Word belgesindeki metnin belirli bir bölümüne italik stil uygulamak mümkün mü?
 
 C: Evet, Aspose.Words ile italik stili bir Word belgesindeki metnin belirli bir bölümüne uygulayabilirsiniz. İstenen metin aralığını seçmek ve stilini "italik" olarak ayarlamak için API'yi kullanabilirsiniz.
 

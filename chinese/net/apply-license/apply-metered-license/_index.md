@@ -13,7 +13,7 @@ url: /zh/net/apply-license/apply-metered-license/
 ## 先决条件
 在我们开始之前，请确保您满足以下先决条件：
 - Aspose.Words for .NET 库安装在您的系统上。
-- 计量许可的有效凭据。 
+- 计量许可的有效凭证。 
 
 ## 第 1 步：导入所需的命名空间
 首先，在 C# 代码中导入必要的命名空间。这些命名空间包含使用 Aspose.Words 进行文字处理所需的类和方法。

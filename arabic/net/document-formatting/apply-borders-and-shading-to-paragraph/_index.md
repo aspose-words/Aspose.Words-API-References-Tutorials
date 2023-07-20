@@ -1,14 +1,13 @@
 ---
-title: تطبيق الحدود والتظليل على الفقرة
-linktitle: تطبيق الحدود والتظليل على الفقرة
+title: تطبيق الحدود والتظليل على فقرة في مستند Word
+linktitle: تطبيق الحدود والتظليل على فقرة في مستند Word
 second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: تعرف على كيفية تطبيق الحدود والتظليل على فقرة باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
-
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية تطبيق الحدود والتظليل على فقرة باستخدام وظيفة Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر وتطبيق تغييرات التنسيق.
+في هذا البرنامج التعليمي ، سوف نوضح لك كيفية تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام وظيفة Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر وتطبيق تغييرات التنسيق.
 
 ## الخطوة 1: إنشاء وتكوين المستند
 
@@ -89,3 +88,26 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 	doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ```
+
+## خاتمة
+
+في هذا البرنامج التعليمي ، تعلمنا كيفية تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words for .NET. عن طريق تكوين الفقرة`Borders` و`Shading` الخصائص ، تمكنا من ضبط نمط الحدود ولون الخط ولون التعبئة للفقرة. يوفر Aspose.Words for .NET إمكانيات تنسيق قوية لتخصيص مظهر الفقرات وتحسين التمثيل المرئي لمستنداتك.
+
+### التعليمات
+
+#### س: كيف يمكنني تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words for .NET؟
+
+ج: لتطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words for .NET ، اتبع الخطوات التالية:
+1.  قم بإنشاء مستند جديد وملف`DocumentBuilder` هدف.
+2.  قم بتكوين حدود الفقرة بالوصول إلى ملف`Borders` ممتلكات`ParagraphFormat` وتعيين نمط الحدود لكل جانب.
+3.  تكوين تعبئة الفقرة عن طريق الوصول إلى`Shading` ممتلكات`ParagraphFormat` وتحديد النسيج وملء الألوان.
+4.  أضف محتوى إلى الفقرة باستخدام`Write` طريقة`DocumentBuilder`.
+5.  احفظ المستند باستخدام ملف`Save` طريقة.
+
+#### س: كيف يمكنني تعيين نمط الحد لكل جانب من جوانب الفقرة؟
+
+ ج: لتعيين نمط الحد لكل جانب من جوانب الفقرة ، يمكنك الوصول إلى ملف`Borders` ممتلكات`ParagraphFormat` وضبط`LineStyle` الممتلكات لكل منها`BorderType` (على سبيل المثال ،`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). يمكنك تحديد أنماط خطوط مختلفة مثل`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`، إلخ.
+
+#### س: كيف يمكنني تحديد ألوان النسيج والتعبئة لتظليل الفقرة؟
+
+ ج: لتحديد ألوان النسيج والتعبئة لتظليل الفقرة ، يمكنك الوصول إلى تنسيق`Shading` ممتلكات`ParagraphFormat` وضبط`Texture` الخاصية إلى فهرس النسيج المطلوب (على سبيل المثال ،`TextureIndex.TextureDiagonalCross` ). يمكنك أيضًا ضبط ملف`BackgroundPatternColor` و`ForegroundPatternColor` خصائص الألوان المرغوبة باستخدام`System.Drawing.Color` فصل.

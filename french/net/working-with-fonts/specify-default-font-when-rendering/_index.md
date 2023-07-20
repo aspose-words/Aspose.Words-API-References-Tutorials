@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Étape 3 : Définir la police par défaut
- Vous pouvez désormais spécifier la police par défaut à utiliser lors du rendu en créant une instance de`FontSettings` classe et la définition de la`DefaultFontName`propriété de la`DefaultFontSubstitution` s'opposer à la`DefaultFontSubstitution` objet`SubstitutionSettings` de`FontSettings`.
+ Vous pouvez désormais spécifier la police par défaut à utiliser lors du rendu en créant une instance de`FontSettings` classe et la définition de la`DefaultFontName` propriété de la`DefaultFontSubstitution` s'opposer à la`DefaultFontSubstitution` objet`SubstitutionSettings` de`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -33,7 +33,7 @@ fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Ari
 doc.FontSettings = fontSettings;
 ```
 
-## Étape 4 : Enregistrer le document rendu
+## Étape 4 : Enregistrer le document rendu
  Enfin, vous pouvez enregistrer le document rendu dans un fichier à l'aide de la`Save()` méthode de la`Document` classe. Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects.
 
 ```csharp
@@ -74,7 +74,7 @@ R : Si la police par défaut spécifiée n'est pas disponible lors de la conver
 
 #### Q : Comment puis-je vérifier la police par défaut spécifiée dans Aspose.Words ?
 
- R : Pour vérifier la police par défaut spécifiée dans Aspose.Words, vous pouvez utiliser le`DefaultFontName`propriété de la`PdfOptions` class et récupère le nom de la police configurée.
+ R : Pour vérifier la police par défaut spécifiée dans Aspose.Words, vous pouvez utiliser le`DefaultFontName` propriété de la`PdfOptions` class et récupère le nom de la police configurée.
 
 #### Q : Est-il possible de spécifier une police par défaut différente pour chaque section du document ?
 

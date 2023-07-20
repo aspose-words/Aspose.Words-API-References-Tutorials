@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### الحل 2:
 
- ج: يمكنك أيضًا تمكين تتبع المراجعة باستخدام ملف`Document` منشئ يقبل`trackRevisions` و`author` حدود.
+ ج: يمكنك أيضًا تمكين تتبع المراجعة باستخدام ملف`Document` المُنشئ الذي يقبل`trackRevisions` و`author` حدود.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

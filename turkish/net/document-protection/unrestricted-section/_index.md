@@ -40,7 +40,7 @@ Doğru koruma türünü belirttiğinizden ve istenen parolayı ayarladığınız
 
 ## 4. Adım: Belirli bir bölüm için korumayı devre dışı bırakma
 
-Varsayılan olarak, tüm bölümler korumalıdır, ancak Section nesnesinin ProtectedForForms özelliğini kullanarak belirli bir bölüm için korumayı seçerek devre dışı bırakabilirsiniz:
+Varsayılan olarak tüm bölümler korumalıdır, ancak Section nesnesinin ProtectedForForms özelliğini kullanarak belirli bir bölüm için korumayı seçerek devre dışı bırakabilirsiniz:
 
 ```csharp
 doc.Sections[0].ProtectedForForms = false;
@@ -109,7 +109,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesinde kısıtlanmamış bölü
 
 #### S: Bir Word belgesinde birden fazla kısıtlanmamış bölüme sahip olabilir miyim?
 
- C: Evet, bir Word belgesinde birden çok sınırsız bölümünüz olabilir. kullanarak belirli bölümler için korumayı seçerek devre dışı bırakarak`ProtectedForForms`mülkiyeti`Section`nesne, kullanıcıların diğer bölümleri korurken içeriği özgürce değiştirebileceği birden çok bölüm tanımlayabilirsiniz.
+ C: Evet, bir Word belgesinde birden çok sınırsız bölümünüz olabilir. kullanarak belirli bölümler için korumayı seçerek devre dışı bırakarak`ProtectedForForms` mülkiyeti`Section`nesne, kullanıcıların diğer bölümleri korurken içeriği özgürce değiştirebileceği birden çok bölüm tanımlayabilirsiniz.
 
 #### S4. Başlangıçta korunan bir bölümden korumayı kaldırabilir miyim?
  Evet, ayarlayarak başlangıçta korunan bir bölümden korumayı kaldırabilirsiniz.`ProtectedForForms` karşılık gelen özellik`Section` itiraz etmek`false`. Bu, kullanıcıların söz konusu bölümdeki içeriği herhangi bir kısıtlama olmaksızın düzenlemesine olanak tanır.

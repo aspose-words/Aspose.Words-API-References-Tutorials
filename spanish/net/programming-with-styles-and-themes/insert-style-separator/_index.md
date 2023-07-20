@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/programming-with-styles-and-themes/insert-style-separator/
 ---
-En este tutorial, exploraremos el código fuente de C# proporcionado para insertar un separador de estilo en un documento usando Aspose.Words para .NET. Crearemos un nuevo documento, definiremos estilos personalizados e insertaremos un separador de estilos.
+En este tutorial, exploraremos el código fuente de C# proporcionado para insertar un separador de estilo en un documento usando Aspose.Words para .NET. Crearemos un nuevo documento, definiremos estilos personalizados e insertaremos un separador de estilo.
 
 ## Paso 1: Configuración del entorno
 
@@ -98,7 +98,7 @@ Para configurar el entorno, debe asegurarse de tener Aspose.Words para .NET inst
 
 #### ¿Cómo creo y configuro un estilo personalizado?
 
- Para crear un estilo personalizado, puede utilizar el`Styles.Add` metodo de la`Document` objeto. Especifique el tipo de estilo (p. ej.,`StyleType.Paragraph`) y proporcione un nombre para el estilo. Una vez creado, puede modificar las propiedades de fuente del objeto de estilo para configurar su apariencia.
+ Para crear un estilo personalizado, puede utilizar el`Styles.Add` metodo de la`Document` objeto. Especifique el tipo de estilo (p. ej.,`StyleType.Paragraph`y proporcione un nombre para el estilo. Una vez creado, puede modificar las propiedades de fuente del objeto de estilo para configurar su apariencia.
 
 #### ¿Cómo inserto un separador de estilo?
 
@@ -106,7 +106,7 @@ Para configurar el entorno, debe asegurarse de tener Aspose.Words para .NET inst
 
 #### ¿Cómo puedo aplicar diferentes estilos a diferentes secciones de texto?
 
- Puede aplicar diferentes estilos a diferentes secciones de texto configurando el`ParagraphFormat.StyleName`propiedad de la`DocumentBuilder`objeto. Antes de escribir el texto, puede establecer el nombre del estilo en el estilo deseado, y el texto siguiente se formateará en consecuencia.
+ Puede aplicar diferentes estilos a diferentes secciones de texto configurando el`ParagraphFormat.StyleName` propiedad de la`DocumentBuilder` objeto. Antes de escribir el texto, puede establecer el nombre del estilo en el estilo deseado, y el texto siguiente se formateará en consecuencia.
 
 #### ¿Puedo guardar el documento en diferentes formatos?
 

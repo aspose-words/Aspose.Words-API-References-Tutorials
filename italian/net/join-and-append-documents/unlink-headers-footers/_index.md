@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: scollegare intestazioni e piè di pagina nel documento di origine
 
- Per scollegare le intestazioni e i piè di pagina nel documento di origine dalla continuazione delle intestazioni e dei piè di pagina del documento di destinazione, è necessario impostare il`LinkToPrevious`proprietà del`HeadersFooters` raccolta nella prima sezione del documento di origine a`false`.
+ Per scollegare le intestazioni e i piè di pagina nel documento di origine dalla continuazione delle intestazioni e dei piè di pagina del documento di destinazione, è necessario impostare il`LinkToPrevious` proprietà del`HeadersFooters` raccolta nella prima sezione del documento di origine a`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);

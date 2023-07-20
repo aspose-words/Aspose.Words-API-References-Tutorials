@@ -66,7 +66,7 @@ C: Aspose.Words kullanarak bir Word belgesindeki yazı tipi klasörlerini yapıl
 
 #### S: Aspose.Words ile bir Word belgesine özel yazı tipleri eklemek mümkün mü?
 
-C: Evet, Aspose.Words ile bir Word belgesine özel yazı tipleri ekleyebilirsiniz. API, belirli yazı tiplerini belgenize katıştırmanıza olanak tanır ve yazı tipleri son kullanıcının sisteminde yüklü olmasa bile doğru şekilde görüntülenmelerini sağlar.
+C: Evet, Aspose.Words ile bir Word belgesine özel yazı tipleri ekleyebilirsiniz. API, belirli yazı tiplerini belgenize katıştırmanıza izin vererek, yazı tipleri son kullanıcının sisteminde yüklü olmasa bile doğru görüntülenmelerini sağlar.
 
 #### S: Bir Word belgesinde gerekli yazı tipleri eksikse ne olur?
 

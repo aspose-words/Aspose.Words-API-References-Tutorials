@@ -12,4 +12,4 @@ Les didacticiels Aspose.Words pour .NET sur le traitement de mots avec HTMLLoadO
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Type de contrôle préféré](./preferred-control-type/) | Guide étape par étape pour spécifier le type de contrôle préféré lors du chargement d'un document HTML avec Aspose.Words pour .NET. |
+| [Type de contrôle préféré dans le document Word](./preferred-control-type/) | Guide étape par étape pour spécifier le type de contrôle préféré dans le document Word lors du chargement d'un document HTML avec Aspose.Words pour .NET. |

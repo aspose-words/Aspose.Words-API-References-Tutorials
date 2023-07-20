@@ -48,14 +48,14 @@ builder.Writeln("a");
 builder.InsertCell();
 builder.Writeln("b");
 
-// Ajoutez la deuxième rangée.
+// Ajoutez la deuxième ligne.
 builder.InsertCell();
 builder.Writeln("c");
 builder.InsertCell();
 builder.Writeln("d");
 ```
 
-Félicitation ! Vous avez maintenant appris à créer une table avec Aspose.Words pour .NET.
+Félicitation ! Vous avez maintenant appris à créer un tableau avec Aspose.Words pour .NET.
 
 ### FAQ
 

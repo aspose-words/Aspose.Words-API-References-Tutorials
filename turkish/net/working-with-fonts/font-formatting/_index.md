@@ -88,7 +88,7 @@ Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi bi
 
 #### S: Bir Word belgesindeki belirli bir metnin yazı tipi boyutunu değiştirmek mümkün müdür?
 
-C: Evet, Aspose.Words ile bir Word belgesindeki belirli metnin yazı tipi boyutunu kolayca değiştirebilirsiniz. İstediğiniz metni seçmek ve uygun yazı tipi boyutunu uygulamak için API'yi kullanabilirsiniz.
+C: Evet, Aspose.Words ile bir Word belgesindeki belirli metnin yazı tipi boyutunu kolaylıkla değiştirebilirsiniz. İstediğiniz metni seçmek ve uygun yazı tipi boyutunu uygulamak için API'yi kullanabilirsiniz.
 
 #### S: Bir Word belgesindeki farklı paragraflara farklı yazı tipi stilleri uygulayabilir miyim?
 

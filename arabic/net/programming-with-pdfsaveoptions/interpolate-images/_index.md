@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## الخطوة 3: قم بتكوين خيارات الحفظ بتنسيق PDF باستخدام إطار الإقحام
 
- لتمكين استيفاء الصور عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن عن طريق تعيين`InterpolateImages` ملكية ل`true`.
+ لتمكين استيفاء الصور عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن عن طريق تعيين`InterpolateImages` الملكية ل`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
@@ -74,9 +74,9 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOption
 
  قم بإنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`InterpolateImages` ملكية ل`true` لتمكين استيفاء الصور.
+ قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`InterpolateImages` الملكية ل`true` لتمكين استيفاء الصور.
 
  استخدم ال`Save` طريقة`Document`class لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
 
 #### س: كيف يمكنني التحقق مما إذا كان قد تم تمكين استيفاء الإطار في مستند PDF الذي تم إنشاؤه؟
-ج: للتحقق مما إذا كان قد تم تمكين إقحام الإطار في مستند PDF الذي تم إنشاؤه ، افتح ملف PDF باستخدام عارض PDF متوافق ، مثل Adobe Acrobat Reader ، وافحص الصور في المستند. يجب أن تلاحظ أن الصور أكثر سلاسة وتفصيلاً بفضل الاستيفاء الداخلي للإطار.
+ج: للتحقق مما إذا كان قد تم تمكين استيفاء الإطار في مستند PDF الذي تم إنشاؤه ، افتح ملف PDF باستخدام عارض PDF متوافق ، مثل Adobe Acrobat Reader ، وافحص الصور في المستند. يجب أن تلاحظ أن الصور أكثر سلاسة وتفصيلاً بفضل الاستيفاء الداخلي للإطار.

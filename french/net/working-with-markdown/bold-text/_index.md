@@ -53,7 +53,7 @@ Félicitation ! Vous avez maintenant appris à mettre du texte en gras avec Aspo
 
 #### Q : Comment puis-je mettre du texte en gras dans Aspose.Words ?
 
- R : Pour mettre du texte en gras dans Aspose.Words, vous pouvez utiliser le`Font.Bold`propriété de la`Run`objet. Vous pouvez définir cette propriété sur`true` au texte spécifique en gras. Par exemple, vous pouvez utiliser`run.Font.Bold=true` pour mettre en gras le texte à l'intérieur du`Run` objet.
+ R : Pour mettre du texte en gras dans Aspose.Words, vous pouvez utiliser le`Font.Bold` propriété de la`Run`objet. Vous pouvez définir cette propriété sur`true` au texte spécifique en gras. Par exemple, vous pouvez utiliser`run.Font.Bold=true` pour mettre en gras le texte à l'intérieur du`Run` objet.
 
 #### Q : Est-il possible de mettre en gras plusieurs éléments de texte dans le même paragraphe ?
 
@@ -61,4 +61,4 @@ Félicitation ! Vous avez maintenant appris à mettre du texte en gras avec Aspo
 
 #### Q : Puis-je mettre en gras du texte qui se trouve dans un tableau ou une cellule dans Aspose.Words ?
 
- R : Oui, vous pouvez mettre en gras le texte qui se trouve dans un tableau ou une cellule dans Aspose.Words. Vous pouvez accéder à la cellule ou au paragraphe de votre choix à l'aide des méthodes appropriées, puis appliquer la mise en forme en gras à l'aide de la`Font.Bold`propriété de la`Run` ou`Paragraph` objet.
+ R : Oui, vous pouvez mettre en gras le texte qui se trouve dans un tableau ou une cellule dans Aspose.Words. Vous pouvez accéder à la cellule ou au paragraphe de votre choix à l'aide des méthodes appropriées, puis appliquer la mise en forme en gras à l'aide de la`Font.Bold` propriété de la`Run` ou`Paragraph` objet.

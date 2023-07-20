@@ -101,7 +101,7 @@ R: Per firmare una riga della firma esistente in un documento Word utilizzando A
 1.  Caricare il documento utilizzando il`Document` class e specificare il percorso del file del documento.
 2.  Accedere alla riga della firma esistente utilizzando il metodo o la proprietà appropriati. Ad esempio, puoi usare`GetChild` metodo per recuperare la forma della linea della firma.
 3.  Crea un'istanza di`SignOptions`classe e impostare il`SignatureLineId` property all'ID della riga della firma esistente.
-4.  Impostare il`SignatureLineImage`proprietà del`SignOptions` class all'immagine che rappresenta la firma digitale.
+4.  Impostare il`SignatureLineImage` proprietà del`SignOptions` class all'immagine che rappresenta la firma digitale.
 5.  Carica il certificato di firma utilizzando il file`CertificateHolder` class e fornire il certificato e la password necessari.
 6.  Usa il`DigitalSignatureUtil.Sign` metodo per firmare il documento, fornendo i parametri necessari tra cui il`SignOptions` oggetto.
 
@@ -111,11 +111,11 @@ R: Per firmare una riga della firma esistente in un documento Word utilizzando A
 
 #### D: Posso personalizzare l'aspetto della firma digitale in una riga della firma esistente?
 
-R: Sì, è possibile personalizzare l'aspetto della firma digitale in una riga della firma esistente fornendo un file immagine che rappresenta la firma. L'immagine può essere un logo, una firma autografa o qualsiasi altra rappresentazione grafica della firma. Puoi impostare il`SignatureLineImage`proprietà del`SignOptions` class ai byte del file immagine.
+R: Sì, è possibile personalizzare l'aspetto della firma digitale in una riga della firma esistente fornendo un file immagine che rappresenta la firma. L'immagine può essere un logo, una firma autografa o qualsiasi altra rappresentazione grafica della firma. Puoi impostare il`SignatureLineImage` proprietà del`SignOptions` class ai byte del file immagine.
 
 #### D: Posso firmare più righe di firma esistenti in un documento Word?
  R: Sì, puoi firmare più righe di firma esistenti in un documento Word. È necessario seguire singolarmente i passaggi per ciascuna riga della firma, impostando l'appropriato`SignatureLineId` E`SignatureLineImage` valori in`SignOptions` oggetto per ogni riga della firma.
 
 #### D: Quale formato deve avere il file immagine per la firma digitale in una riga della firma esistente?
 
- R: Il file immagine per la firma digitale in una riga della firma esistente può essere in vari formati, come PNG, JPEG, BMP o GIF. È possibile specificare il percorso del file o leggere i byte del file immagine e assegnarlo al file`SignatureLineImage`proprietà del`SignOptions` classe.
+ R: Il file immagine per la firma digitale in una riga della firma esistente può essere in vari formati, come PNG, JPEG, BMP o GIF. È possibile specificare il percorso del file o leggere i byte del file immagine e assegnarlo al file`SignatureLineImage` proprietà del`SignOptions` classe.

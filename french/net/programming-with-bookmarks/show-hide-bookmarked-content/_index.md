@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## Étape 2 : Insertion des champs de fusion
 
- Nous utilisons un générateur de documents`DocumentBuilder`pour insérer les champs de fusion nécessaires. Ces champs de fusion définiront une condition pour afficher ou masquer le contenu du signet en fonction de la valeur du`showHide` variable:
+ Nous utilisons un générateur de documents`DocumentBuilder` pour insérer les champs de fusion nécessaires. Ces champs de fusion définiront une condition pour afficher ou masquer le contenu du signet en fonction de la valeur du`showHide` variable:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -170,7 +170,7 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### Q : La bibliothèque Aspose.Words est-elle gratuite ?
 
-R : La bibliothèque Aspose.Words est une bibliothèque commerciale et nécessite une licence valide pour être utilisée dans vos projets. Vous pouvez consulter le site Web officiel d'Aspose pour en savoir plus sur les options de licence et les prix.
+ R : La bibliothèque Aspose.Words est une bibliothèque commerciale et nécessite une licence valide pour être utilisée dans vos projets. Tu peux vérifier[Aspose.Words pour les références d'API .NET](https://reference.aspose.com/words/net/) pour en savoir plus sur les options de licence et les tarifs.
 
 #### Q : Existe-t-il d'autres bibliothèques disponibles pour le traitement de texte avec des documents Word dans .NET ?
 

@@ -100,7 +100,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
  C: Aspose.Words for .NET ile bir Word belgesindeki posta adresinin biçimini aşağıdaki özellikleri kullanarak özelleştirebilirsiniz:`FieldAddressBlock`nesne. İstenilen formatı elde etmek için adres stili, ayırıcılar, isteğe bağlı öğeler vb. gibi formatlama seçeneklerini ayarlayabilirsiniz.
 
-#### S: Aspose.Words for .NET'te posta adresi alanı için kaynak verileri nasıl belirtebilirim?
+#### S: Aspose.Words for .NET'te posta adresi alanı için kaynak verileri nasıl belirleyebilirim?
 
  C: Aspose.Words for .NET'te posta adresi alanı için kaynak verileri belirtmek üzere`FieldAddressBlock.StartAddress` Ve`FieldAddressBlock.EndAddress` özellikler. Bu özellikler, CSV dosyası, veritabanı vb. gibi harici veri kaynağındaki adres aralıklarını tanımlamak için kullanılır.
 

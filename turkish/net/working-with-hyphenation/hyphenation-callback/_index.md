@@ -10,17 +10,17 @@ url: /tr/net/working-with-hyphenation/hyphenation-callback/
 
 Bu adım adım öğreticide, size Aspose.Words for .NET'te heceleme geri arama özelliğini nasıl kullanacağınızı göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinize nasıl uygulayacağınızı göstereceğiz.
 
-Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kütüphaneyi resmi siteden indirip yükleyin.
+ Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı adresinden indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## 1. Adım: Tireleme Hatırlatıcısını Kaydet
 
- İlk olarak, özel bir kullanarak heceleme geri aramasını kaydedeceğiz.`CustomHyphenationCallback` sınıf. Bu, kelime hecelemesini kendi kurallarımıza göre ele almamıza izin verecektir:
+İlk olarak, özel bir kullanarak heceleme geri aramasını kaydedeceğiz.`CustomHyphenationCallback` sınıf. Bu, kelime hecelemesini kendi kurallarımıza göre ele almamıza izin verecektir:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- uyguladığınızdan emin olun.`CustomHyphenationCallback`özel ihtiyaçlarınıza göre sınıflandırın.
+ uyguladığınızdan emin olun.`CustomHyphenationCallback` özel ihtiyaçlarınıza göre sınıflandırın.
 
 ## 2. Adım: Belgeyi yükleme ve tireleme uygulama
 

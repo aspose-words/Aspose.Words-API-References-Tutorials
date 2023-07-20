@@ -1,13 +1,12 @@
 ---
-title: Kayan Resim Ekle
-linktitle: Kayan Resim Ekle
+title: Word Belgesine Kayan Görüntü Ekleme
+linktitle: Word Belgesine Kayan Görüntü Ekleme
 second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerine kayan görüntüleri nasıl ekleyeceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-floating-image/
 ---
-
 Bu kapsamlı örnekte, Aspose.Words for .NET kullanarak bir Word belgesine kayan bir görüntünün nasıl ekleneceğini öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, belgelerinize özelleştirilebilir konumlandırma ve kaydırma seçenekleriyle resimler ekleyebileceksiniz.
 
 ## Önkoşullar
@@ -68,3 +67,24 @@ Görüntü dosyası yolu ve istenen konumlandırma ve sarma seçenekleri dahil o
 ## Çözüm
 Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine kayan bir görüntünün nasıl ekleneceğini başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık belgelerinizi görsel olarak çekici ve özelleştirilebilir kayan görüntülerle geliştirebilirsiniz.
 
+### Word belgesine kayan resim eklemek için SSS
+
+#### S: Tek bir belgeye birden çok kayan görüntü ekleyebilir miyim?
+
+C: Kesinlikle! Aspose.Words for .NET'i kullanarak bir Word belgesine istediğiniz kadar kayan görüntü ekleyebilirsiniz. Birden fazla görsel olarak çekici görüntü eklemek için ekleme işlemini tekrarlamanız yeterlidir.
+
+#### S: Kayan görüntü için hangi kaydırma seçenekleri mevcuttur?
+
+Y: Aspose.Words for .NET, kayan görüntüler için Kare, Sıkı, Açık, TopBottom ve Yok gibi çeşitli kaydırma seçenekleri sunar. Bu seçenekler, metnin kayan görüntüyle nasıl etkileşime gireceğini belirler.
+
+#### S: Kayan görüntünün boyutunu ayarlayabilir miyim?
+
+C: Kesinlikle! InsertImage yöntemindeki ilgili parametreleri kullanarak kayan görüntünün genişliğini ve yüksekliğini belirleyebilirsiniz. Bu, tasarım tercihlerinize göre görüntünün boyutlarını kontrol etmenizi sağlar.
+
+#### S: Kayan görüntüyü belgedeki belirli bir öğeye göre konumlandırabilir miyim?
+
+C: Evet, Aspose.Words for .NET yüzen görüntüyü kenar boşluğu, sayfa, paragraf veya tablo gibi belirli öğelere göre konumlandırmanıza izin verir. İstenen yerleşimi elde etmek için uygun göreli yatay ve dikey konum parametrelerini seçebilirsiniz.
+
+#### S: Aspose.Words for .NET hem masaüstü hem de web uygulamaları için uygun mu?
+
+C: Evet, Aspose.Words for .NET hem masaüstü hem de web uygulamaları için uygun çok yönlü bir kitaplıktır. İster bir Windows uygulaması ister web tabanlı bir sistem oluşturuyor olun, kitaplığı zahmetsizce entegre edebilirsiniz.

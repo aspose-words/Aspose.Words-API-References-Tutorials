@@ -124,5 +124,5 @@ Daha sonra render uyarılarını kullanarak işleyebilirsiniz.`HandleDocumentWar
 #### S: PDF'ye dönüştürülürken ne tür işleme uyarıları oluşturulabilir?
 PDF'ye dönüştürürken oluşturulan uyarılar, mizanpaj, eksik yazı tipleri, desteklenmeyen resimler, uyumluluk sorunları vb. ile ilgili uyarıları içerebilir. Belirli uyarılar, kaynak belgenin içeriğine ve kullanılan dönüştürme seçeneklerine bağlı olacaktır.
 
-#### S: Oluşturma uyarılarını özel bir şekilde işlemek mümkün müdür?
+#### S: Oluşturma uyarılarını özel bir şekilde işlemek mümkün mü?
  Evet, oluşturma uyarısı işlemeyi özelleştirerek özelleştirebilirsiniz.`HandleDocumentWarnings`sınıf. Uygulamanıza özel uyarıları yönetmek için uyarıları günlüğe kaydetme, rapor oluşturma, uyarı gönderme ve daha fazlası gibi ek işlevler ekleyebilirsiniz.

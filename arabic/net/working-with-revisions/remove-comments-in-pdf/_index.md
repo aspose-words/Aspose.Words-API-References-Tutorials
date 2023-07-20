@@ -74,7 +74,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### س: كيف تخفي التعليقات في ملف PDF الذي تم إنشاؤه باستخدام Aspose.Words for .NET؟
 
- ج: استخدم ملف`CommentDisplayMode`ممتلكات`LayoutOptions` لتكوين كيفية عرض التعليقات عند إنشاء ملف PDF. لإخفاء التعليقات ، اضبط هذه الخاصية على`CommentDisplayMode.Hide`.
+ ج: استخدم ملف`CommentDisplayMode` ممتلكات`LayoutOptions` لتكوين كيفية عرض التعليقات عند إنشاء ملف PDF. لإخفاء التعليقات ، اضبط هذه الخاصية على`CommentDisplayMode.Hide`.
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;

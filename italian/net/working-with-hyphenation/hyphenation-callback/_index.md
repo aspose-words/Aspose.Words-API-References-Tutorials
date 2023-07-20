@@ -10,17 +10,17 @@ url: /it/net/working-with-hyphenation/hyphenation-callback/
 
 In questo tutorial passo-passo, ti mostreremo come utilizzare la funzione di callback della sillabazione in Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria dal sito ufficiale.
+ Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria da[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Passaggio 1: salva il promemoria di sillabazione
 
- Per prima cosa, registreremo il callback della sillabazione usando un custom`CustomHyphenationCallback` classe. Questo ci permetterà di gestire la sillabazione delle parole secondo le nostre regole:
+Per prima cosa, registreremo il callback della sillabazione usando un custom`CustomHyphenationCallback` classe. Questo ci permetterà di gestire la sillabazione delle parole secondo le nostre regole:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- Assicurati di aver implementato il`CustomHyphenationCallback`classe in base alle vostre specifiche esigenze.
+ Assicurati di aver implementato il`CustomHyphenationCallback` classe in base alle vostre specifiche esigenze.
 
 ## Passaggio 2: caricamento del documento e applicazione della sillabazione
 

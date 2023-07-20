@@ -10,7 +10,7 @@ url: /es/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 
 En este tutorial paso a paso, le mostraremos cómo cargar un diccionario de guiones para un idioma específico en Aspose.Words para .NET. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo ha hecho, descargue e instale la biblioteca desde el sitio oficial.
+ Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo ha hecho, descargue e instale la biblioteca desde[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Paso 1: Cargar el documento
 
@@ -60,7 +60,7 @@ Siéntase libre de usar este código en sus propios proyectos y modifíquelo par
 
 #### P: ¿Cómo cargar un diccionario de silabeo para un idioma específico en Aspose.Words?
 
- R: Para cargar un diccionario de silabeo para un idioma específico en Aspose.Words, puede usar el`Hyphenation` clase y el`LoadDictionary()` método. Crear una instancia de la`Hyphenation` clase y llamar al`LoadDictionary()` método que especifica la ruta al archivo del diccionario de silabeo para el idioma deseado. Esto cargará el diccionario de silabeo en Aspose.Words.
+ R: Para cargar un diccionario de silabeo para un idioma específico en Aspose.Words, puede usar el`Hyphenation` clase y el`LoadDictionary()` método. Crear una instancia de la`Hyphenation` clase y llamar al`LoadDictionary()` que especifica la ruta al archivo del diccionario de silabeo para el idioma deseado. Esto cargará el diccionario de silabeo en Aspose.Words.
 
 #### P: ¿Dónde puedo encontrar archivos de diccionarios de silabeo para diferentes idiomas?
 

@@ -50,7 +50,7 @@ den här artikeln förklarade vi hur du använder funktionen Get Protection Type
 
 S: För att hämta skyddstypen för ett dokument med Aspose.Words för .NET kan du följa dessa steg:
 1.  Ladda dokumentet med hjälp av`Document` klass.
-2.  Få tillgång till`ProtectionType`egendom av`Document` objekt för att hämta skyddstypen.
+2.  Få tillgång till`ProtectionType` egendom av`Document`objekt för att hämta skyddstypen.
 
 #### F: Kan jag avgöra om ett dokument är skyddat för formulär eller formulärfält med hjälp av egenskapen ProtectionType?
 

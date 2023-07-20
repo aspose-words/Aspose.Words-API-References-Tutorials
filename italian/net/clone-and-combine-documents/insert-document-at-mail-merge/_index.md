@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /it/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-
 In questo tutorial, ti illustreremo come inserire un documento in un altro documento durante la stampa unione utilizzando la funzione Inserisci documento durante la stampa unione di Aspose.Words per .NET. Seguire i passaggi seguenti per comprendere il codice sorgente ed eseguire l'inserimento del documento.
 
 ## Passaggio 1: caricamento del documento principale
@@ -57,5 +56,30 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc")
 
 Con questo codice sarai in grado di inserire un documento in un altro documento durante la stampa unione utilizzando Aspose.Words per .NET. Il documento risultante verrà salvato con un nuovo nome
 
+
+## Conclusione
+
+In questo tutorial, abbiamo esplorato come inserire un documento in un altro documento durante la stampa unione utilizzando la funzione Inserisci documento durante la stampa unione di Aspose.Words per .NET. Configurando la stampa unione e fornendo i dati necessari, è possibile assemblare dinamicamente i documenti unendo vari modelli o sezioni di documento. Aspose.Words per .NET fornisce un modo flessibile e potente per gestire complessi scenari di generazione di documenti, rendendolo uno strumento prezioso per automatizzare le attività di creazione e manipolazione dei documenti.
+
+### FAQ
+
+#### D: Qual è lo scopo dell'inserimento di un documento in un altro documento durante la stampa unione?
+
+R: L'inserimento di un documento in un altro documento durante la stampa unione consente di combinare dinamicamente diversi modelli o sezioni di documento in base ai dati forniti durante il processo di unione. Questa funzione è particolarmente utile quando si desidera assemblare documenti complessi unendo vari modelli o sezioni predefiniti in un documento finale.
+
+#### D: Come inserisco un documento in un altro documento durante la stampa unione utilizzando Aspose.Words per .NET?
+
+R: Per inserire un documento in un altro documento durante la stampa unione utilizzando Aspose.Words per .NET, attenersi alla seguente procedura:
+1. Carica il documento principale che fungerà da base in un oggetto Document.
+2. Configurare la stampa unione e specificare il callback di unione del campo per gestire l'inserimento del documento.
+3. Eseguire la stampa unione con i nomi dei campi di unione ei dati corrispondenti (percorso del documento da inserire).
+
+#### D: Come posso personalizzare il comportamento di inserimento durante la stampa unione?
+
+R: Per personalizzare il comportamento di inserimento durante la stampa unione, è possibile implementare una FieldMergingCallback personalizzata ereditando dall'interfaccia IFieldMergingCallback. Ciò ti consente di controllare come i documenti vengono inseriti e uniti in base ai tuoi requisiti specifici.
+
+#### D: Posso inserire più documenti durante la stampa unione?
+
+R: Sì, puoi inserire più documenti durante la stampa unione fornendo i dati appropriati per ogni campo di unione. Per ogni campo di unione che richiede l'inserimento di un documento, specificare il percorso del documento corrispondente come dati.
 
 

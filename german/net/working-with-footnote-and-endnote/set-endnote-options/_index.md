@@ -10,7 +10,7 @@ url: /de/net/working-with-footnote-and-endnote/set-endnote-options/
 
 In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Endnotenoptionen in einem Word-Dokument festlegen. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
+ Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Schritt 1: Initialisieren des Dokumentobjekts
 
@@ -89,12 +89,12 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprech
 
 #### F: Wie kann ich Endnoten in einem Dokument positionieren?
 
- A: Um Endnoten in einem Dokument zu positionieren, können Sie die verwenden`Position`Eigentum der`EndnoteOptions` Klasse. Sie können festlegen, ob Endnoten am Ende jeder Seite, am Ende jedes Abschnitts oder am Ende des Dokuments platziert werden sollen.
+ A: Um Endnoten in einem Dokument zu positionieren, können Sie die verwenden`Position` Eigentum der`EndnoteOptions` Klasse. Sie können festlegen, ob Endnoten am Ende jeder Seite, am Ende jedes Abschnitts oder am Ende des Dokuments platziert werden sollen.
 
 #### F: Kann ich das Format der Endnotennummerierung anpassen?
 
- A: Ja, Sie können das Format der Endnotennummerierung in Aspose.Words anpassen. Benutzen Sie die`NumberFormat`Eigentum der`EndnoteOptions` -Klasse, um das gewünschte Format festzulegen, z. B. arabische Ziffern, römische Ziffern, Buchstaben usw.
+ A: Ja, Sie können das Format der Endnotennummerierung in Aspose.Words anpassen. Benutzen Sie die`NumberFormat` Eigentum der`EndnoteOptions` -Klasse, um das gewünschte Format festzulegen, z. B. arabische Ziffern, römische Ziffern, Buchstaben usw.
 
 #### F: Ist es möglich, die Endnotennummerierung zwischen Abschnitten eines Dokuments fortzusetzen?
 
- A: Ja, es ist möglich, die Endnotennummerierung zwischen Abschnitten eines Dokuments fortzusetzen. Benutzen Sie die`RestartRule`Eigentum der`EndnoteOptions` Klasse und setzen Sie es auf`RestartContinuous` Damit die Nummerierung zwischen den Abschnitten fortgesetzt werden kann.
+ A: Ja, es ist möglich, die Endnotennummerierung zwischen Abschnitten eines Dokuments fortzusetzen. Benutzen Sie die`RestartRule` Eigentum der`EndnoteOptions` Klasse und setzen Sie es auf`RestartContinuous` Damit die Nummerierung zwischen den Abschnitten fortgesetzt werden kann.

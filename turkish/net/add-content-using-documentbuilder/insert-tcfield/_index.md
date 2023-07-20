@@ -1,13 +1,12 @@
 ---
-title: TCField'i ekle
-linktitle: TCField'i ekle
+title: TCField'i Word Belgesine Ekle
+linktitle: TCField'i Word Belgesine Ekle
 second_title: Aspose.Words Belge İşleme API'sı
 description: Bu adım adım kılavuzda C# ve Aspose.Words for .NET kullanarak Word belgelerine TCFields eklemeyi ve değiştirmeyi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-tcfield/
 ---
-
 Bu örnekte, Aspose.Words for .NET'in Insert TCField özelliğini kullanma sürecinde size rehberlik edeceğiz. TCField, bir Word belgesindeki bir içindekiler tablosu girişini temsil eder. Markdown formatında beklenen çıktıyla birlikte C# kaynak kodunun adım adım açıklamasını sağlayacağız. Başlayalım!
 
 ## 1. Adım: Belge ve belge oluşturucuyu başlatma
@@ -66,5 +65,30 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 
 Kodu gereksinimlerinize göre değiştirmekten ve Aspose.Words for .NET tarafından sağlanan diğer özellikleri keşfetmekten çekinmeyin.
 
-Bu kadar! Aspose.Words for .NET kullanarak bir TCField'in nasıl ekleneceğini başarıyla öğrendiniz.
+## Çözüm
 
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine TCField eklemeyi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık belgelerinize özel giriş metinleri içeren içindekiler tablosu girişleri ekleyebilirsiniz.
+
+TCField özelliği, Word belgelerinizde düzenli ve gezilebilir içindekiler tablosu oluşturmak için yararlı bir araçtır. Gezinmesi kolay, profesyonel ve yapılandırılmış belgeler oluşturmak için farklı giriş metinleri ve biçimlendirme seçenekleriyle denemeler yapın. Belgedeki en son içeriği yansıttığından emin olmak için değişiklikler yaptıktan sonra içindekiler tablosunu güncellemeyi unutmayın.
+
+### Word belgesine TCField eklemek için SSS
+
+#### S: Aspose.Words for .NET'te TCField nedir?
+
+C: Aspose.Words for .NET içindeki bir TCField, bir Word belgesindeki bir içindekiler tablosu (TOC) girişini temsil eder. Belge güncellendiğinde içindekiler tablosunu oluşturmak için kullanılacak, belirtilen giriş metniyle bir içindekiler tablosu girişi eklemenizi sağlar.
+
+#### S: TCField giriş metnini nasıl özelleştiririm?
+
+ C: TCField giriş metnini, istenen metni parametre olarak sağlayarak özelleştirebilirsiniz.`InsertField` yöntem. Örneğin,`builder.InsertField("TC \"Custom Entry\" \\f t");` belgeye "Özel Giriş" giriş metnine sahip bir TCField ekleyecektir.
+
+#### S: Belgeye birden fazla TCField ekleyebilir miyim?
+
+ C: Evet, belgeye birden fazla TCField ekleyebilirsiniz.`InsertField` yöntemi farklı giriş metinleriyle birden çok kez. Her TCField, içindekiler tablosunda ayrı bir girişi temsil edecektir.
+
+#### S: TCFields'i ekledikten sonra içindekiler tablosunu nasıl güncellerim?
+
+C: TCFields'i ekledikten sonra içindekiler tablosunu güncellemek için`UpdateFields` belge üzerindeki yöntem. Bu, TCFields veya belge içeriğinde yapılan herhangi bir değişikliğin içindekiler tablosuna yansıtılmasını sağlayacaktır.
+
+#### S: İçindekiler tablosunun görünümünü özelleştirebilir miyim?
+
+C: Evet, TCFields'ın biçimlendirme seçeneklerini ayarlayarak içindekiler tablosunun görünümünü özelleştirebilirsiniz. Görsel olarak çekici bir içindekiler tablosu oluşturmak için yazı tipi stillerini, renkleri ve diğer özellikleri değiştirebilirsiniz.

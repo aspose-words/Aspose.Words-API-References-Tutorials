@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
  In quest'ultimo passaggio, salviamo le immagini del documento nel formato PNG utilizzando il file`Save` metodo e passando il percorso al file di output, insieme alle opzioni di salvataggio specificate.
 
-Ora puoi eseguire il codice sorgente per formattare le immagini del documento nel formato PNG con una profondità di colore di 1 bpp indicizzato. Il file risultante verrà salvato nella directory specificata con il nome "WorkingWithImageSaveOptions.Format1BppIndexed.Png".
+Ora puoi eseguire il codice sorgente per formattare le immagini del documento nel formato PNG con una profondità di colore di 1 bpp indicizzata. Il file risultante verrà salvato nella directory specificata con il nome "WorkingWithImageSaveOptions.Format1BppIndexed.Png".
 
 ### Esempio di codice sorgente per il formato 1Bpp indicizzato utilizzando Aspose.Words per .NET
 

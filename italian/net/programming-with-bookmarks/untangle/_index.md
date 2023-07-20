@@ -88,4 +88,4 @@ R: La funzione Untangle presentata in questo articolo è specificamente progetta
 
 #### D: Esistono altri metodi per districare i segnalibri nidificati in un documento di Word utilizzando Aspose.Words per .NET?
 
-R: Il metodo presentato in questo articolo è un metodo comune per districare i segnalibri nidificati nelle righe adiacenti della tabella. Tuttavia, potrebbero esserci altri approcci o tecniche a seconda delle esigenze specifiche del progetto. Puoi consultare la documentazione ufficiale di Aspose.Words per esplorare ulteriormente le funzionalità disponibili.
+ R: Il metodo presentato in questo articolo è un metodo comune per districare i segnalibri nidificati nelle righe adiacenti della tabella. Tuttavia, potrebbero esserci altri approcci o tecniche a seconda delle esigenze specifiche del progetto. Puoi dare un'occhiata al[Aspose.Words per riferimenti API .NET](https://reference.aspose.com/words/net/) per esplorare ulteriormente le funzionalità disponibili.

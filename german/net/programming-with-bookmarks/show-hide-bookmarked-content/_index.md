@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## Schritt 2: Einfügen der Zusammenführungsfelder
 
- Wir verwenden einen Dokumenten-Builder`DocumentBuilder`um die erforderlichen Zusammenführungsfelder einzufügen. Diese Zusammenführungsfelder legen eine Bedingung fest, um den Inhalt des Lesezeichens je nach Wert anzuzeigen oder auszublenden`showHide` Variable:
+ Wir verwenden einen Document Builder`DocumentBuilder` um die erforderlichen Zusammenführungsfelder einzufügen. Diese Zusammenführungsfelder legen eine Bedingung fest, um den Inhalt des Lesezeichens je nach Wert anzuzeigen oder auszublenden`showHide` Variable:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -170,7 +170,7 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### F: Ist die Aspose.Words-Bibliothek kostenlos?
 
-A: Die Aspose.Words-Bibliothek ist eine kommerzielle Bibliothek und erfordert eine gültige Lizenz zur Verwendung in Ihren Projekten. Weitere Informationen zu Lizenzoptionen und Preisen finden Sie auf der offiziellen Website von Aspose.
+ A: Die Aspose.Words-Bibliothek ist eine kommerzielle Bibliothek und erfordert eine gültige Lizenz zur Verwendung in Ihren Projekten. Du kannst nachschauen[Aspose.Words für .NET-API-Referenzen](https://reference.aspose.com/words/net/) um mehr über Lizenzoptionen und Preise zu erfahren.
 
 #### F: Gibt es andere Bibliotheken für die Textverarbeitung mit Word-Dokumenten in .NET?
 

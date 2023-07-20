@@ -79,7 +79,7 @@ A: Die schreibgeschützte Beschränkung in Aspose.Words für .NET bezieht sich a
 
 A: Um die Lesebeschränkung aus einem Word-Dokument mithilfe von Aspose.Words für .NET zu entfernen, können Sie die folgenden Schritte ausführen:
 1.  Erstellen Sie eine Instanz von`Document` Klasse und legen Sie mit dem ein Passwort für das Dokument fest`SetPassword` Methode der`WriteProtection` Objekt.
-2.  Stellen Sie die ein`ReadOnlyRecommended`Eigentum der`WriteProtection` widersprechen`false` um die schreibgeschützte Empfehlung zu entfernen.
+2.  Stellen Sie die ein`ReadOnlyRecommended` Eigentum der`WriteProtection` widersprechen`false` um die schreibgeschützte Empfehlung zu entfernen.
 3.  Wenden Sie mit dem uneingeschränkten Schutz auf das Dokument an`Protect` Methode der`Document` Objekt mit dem`NoProtection` Schutzart.
 4.  Speichern Sie das Dokument ohne die Lesebeschränkung mit`Save` Methode der`Document` Objekt.
 

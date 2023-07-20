@@ -181,7 +181,7 @@ Console.WriteLine(doc.GetText());
 
 #### F: Hur kan jag inkludera insättningsrevisionerna i utdataresultatet i Aspose.Words för .NET?
 
- S: För att inkludera texten i infogningsrevisionerna i utdataresultatet, kan du ändra alternativen för att inte ignorera infogningsrevisionerna. För detta kan du ställa in`IgnoreInserted`egendom av`FindReplaceOptions` invända mot`false`:
+ S: För att inkludera texten i infogningsrevisionerna i utdataresultatet, kan du ändra alternativen för att inte ignorera infogningsrevisionerna. För detta kan du ställa in`IgnoreInserted` egendom av`FindReplaceOptions` invända mot`false`:
 
 ```csharp
 options.IgnoreInserted = false;

@@ -44,7 +44,7 @@ ProtectionType protectionType = doc.ProtectionType;
 
 #### 问：Aspose.Words for .NET 中的 ProtectionType 属性是什么？
 
-答： 的`ProtectionType`Aspose.Words for .NET 中的属性是一项允许您确定应用于 Word 文档的保护类型的功能。它提供有关文档保护级别的信息，例如文档是否受到评论、修订、表单或其他类型限制的保护。
+答： 的`ProtectionType` Aspose.Words for .NET 中的属性是一项允许您确定应用于 Word 文档的保护类型的功能。它提供有关文档保护级别的信息，例如文档是否受到评论、修订、表单或其他类型限制的保护。
 
 #### 问：如何使用 Aspose.Words for .NET 检索文档的保护类型？
 

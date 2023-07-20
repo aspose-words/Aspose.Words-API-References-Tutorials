@@ -10,11 +10,11 @@ url: /ar/net/basic-conversions/docx-to-mhtml-and-sending-email/
 
 في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى MHTML وإرساله كبريد إلكتروني باستخدام Aspose.Email. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
 
-للبدء ، تأكد من تثبيت وإعداد مكتبات Aspose.Words لكل من .NET و Aspose.Email في بيئة التطوير لديك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبات وتثبيتها من مواقعها الرسمية على الويب.
+ للبدء ، تأكد من تثبيت وإعداد مكتبات Aspose.Words لكل من .NET و Aspose.Email في بيئة التطوير لديك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل وتثبيت المكتبات من[الإطلاقات](https://releases.aspose.com/words/net/).
 
 ## الخطوة 1: تهيئة كائن المستند
 
- أولاً ، قم بتهيئة ملف`Document` كائن مع المسار إلى مستندك المصدر بتنسيق Docx:
+ أولاً ، قم بتهيئة ملف`Document`كائن مع المسار إلى مستندك المصدر بتنسيق Docx:
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");
@@ -73,7 +73,7 @@ client.Send(message);
 	Stream stream = new MemoryStream();
 	doc.Save(stream, SaveFormat.Mhtml);
 
-	// قم بإعادة البث إلى البداية حتى يتمكن Aspose.Email من قراءته.
+	//قم بإعادة البث إلى البداية حتى يتمكن Aspose.Email من قراءته.
 	stream.Position = 0;
 
 	// قم بإنشاء رسالة بريد إلكتروني Aspose.Email MIME من الدفق.

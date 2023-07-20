@@ -1,13 +1,13 @@
 ---
-title: Jämförelse Granularitet
-linktitle: Jämförelse Granularitet
+title: Jämförelsegranularitet i Word-dokument
+linktitle: Jämförelsegranularitet i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig Jämför granularitetsfunktionen i Aspose.Words för .NET som gör att dokument kan jämföras tecken för tecken, och rapporterar gjorda ändringar.
+description: Lär dig Jämför granularitet i word-dokumentfunktionen i Aspose.Words för .NET som gör att dokument kan jämföras tecken för tecken, och rapporterar gjorda ändringar.
 type: docs
 weight: 10
 url: /sv/net/compare-documents/comparison-granularity/
 ---
-Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som använder funktionen Compare Granularity i Aspose.Words för .NET.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som använder funktionen Jämför granularitet i word-dokument i Aspose.Words för .NET.
 
 ## Steg 1: Introduktion
 
@@ -56,7 +56,7 @@ Låt oss nu jämföra dokumenten med hjälp av metoden Compare för klassen Docu
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- De`Compare`metoden jämför dokument A med dokument B och sparar ändringarna i dokument A. Du kan ange författarens namn och datum för jämförelsen som referens.
+ De`Compare` metoden jämför dokument A med dokument B och sparar ändringarna i dokument A. Du kan ange författarens namn och datum för jämförelsen som referens.
 
 ## Slutsats
 
@@ -77,3 +77,33 @@ CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.C
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);            
         
 ```
+
+## Slutsats
+
+den här handledningen utforskade vi funktionen Comparison Granularity i Aspose.Words för .NET. Den här funktionen låter dig ange detaljnivån när du jämför dokument. Genom att välja olika granularitetsnivåer kan du utföra detaljerade jämförelser på tecken-, ord- eller blocknivå, beroende på dina specifika krav. Aspose.Words för .NET ger en flexibel och kraftfull dokumentjämförelsefunktion, vilket gör det enkelt att identifiera skillnader i dokument med varierande grad av granularitet.
+
+### FAQ's
+
+#### F: Vad är syftet med att använda Comparison Granularity i Aspose.Words för .NET?
+
+S: Jämförelsegranularitet i Aspose.Words för .NET låter dig specificera detaljnivån när du jämför dokument. Med den här funktionen kan du jämföra dokument på olika nivåer, till exempel teckennivå, ordnivå eller till och med blocknivå. Varje granularitetsnivå ger olika detaljnivåer i jämförelseresultaten.
+
+#### F: Hur använder jag Comparison Granularity i Aspose.Words för .NET?
+
+S: För att använda Comparison Granularity i Aspose.Words för .NET, följ dessa steg:
+1. Ställ in din utvecklingsmiljö med Aspose.Words-biblioteket.
+2. Lägg till de nödvändiga sammansättningarna till ditt projekt genom att referera till Aspose.Words.
+3.  Skapa de dokument som du vill jämföra med hjälp av`DocumentBuilder` klass.
+4.  Konfigurera jämförelsealternativen genom att skapa en`CompareOptions` objekt och ställa in`Granularity` egenskap till önskad nivå (t.ex.`Granularity.CharLevel` för jämförelse på teckennivå).
+5.  Använd`Compare` metod på ett dokument, passerar det andra dokumentet och`CompareOptions` objekt som parametrar. Denna metod kommer att jämföra dokumenten baserat på den specificerade granulariteten och spara ändringarna i det första dokumentet.
+
+#### F: Vilka är de tillgängliga nivåerna av jämförelsegranularitet i Aspose.Words för .NET?
+
+S: Aspose.Words för .NET tillhandahåller tre nivåer av jämförelsegranularitet:
+- `Granularity.CharLevel`: Jämför dokument på teckennivå.
+- `Granularity.WordLevel`: Jämför dokument på ordnivå.
+- `Granularity.BlockLevel`: Jämför dokument på blocknivå.
+
+#### F: Hur kan jag tolka jämförelseresultaten med granularitet på teckennivå?
+
+S: Med granularitet på teckennivå analyseras varje tecken i de jämförda dokumenten för skillnader. Jämförelseresultaten kommer att visa ändringar på individuell karaktärsnivå, inklusive tillägg, raderingar och ändringar.

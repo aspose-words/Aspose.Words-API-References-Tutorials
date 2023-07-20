@@ -10,7 +10,7 @@ url: /sv/net/working-with-formfields/insert-form-fields/
 
 I denna steg-för-steg handledning kommer vi att guida dig om hur du infogar formulärfält, särskilt ett rullgardinsfält, i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
+ För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Steg 1: Initiera Document- och DocumentBuilder-objekten
 

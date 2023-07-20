@@ -1,6 +1,6 @@
 ---
-title: Régions modifiables sans restriction dans un document Word
-linktitle: Régions modifiables sans restriction dans un document Word
+title: Régions modifiables sans restriction dans le document Word
+linktitle: Régions modifiables sans restriction dans le document Word
 second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer des zones modifiables sans restriction dans un document Word avec Aspose.Words pour .NET.
 type: docs

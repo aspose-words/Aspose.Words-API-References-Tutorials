@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 string text = doc.Range.Text;
 ```
 
- Den här koden kommer åt hela dokumentområdet med hjälp av`Range`egendom av`Document` klass och hämtar texten i det intervallet med hjälp av`Text` fast egendom.
+ Den här koden kommer åt hela dokumentområdet med hjälp av`Range` egendom av`Document` klass och hämtar texten i det intervallet med hjälp av`Text` fast egendom.
 
 #### F: Kan jag extrahera text från flera intervall i ett Word-dokument med Aspose.Words för .NET?
 

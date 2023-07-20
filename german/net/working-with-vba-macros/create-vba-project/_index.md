@@ -98,7 +98,7 @@ A: Bevor Sie ein VBA-Projekt in einem Word-Dokument erstellen können, müssen S
 
 #### F: Wie spezifiziere ich den Makroquellcode im VBA-Modul?
 
- A: Um den Quellcode des Makros im VBA-Modul anzugeben, können Sie das verwenden`SourceCode`Eigentum der`VbaModule` Klasse, indem Sie ihr eine Zeichenfolge zuweisen, die den VBA-Code enthält.
+ A: Um den Quellcode des Makros im VBA-Modul anzugeben, können Sie das verwenden`SourceCode` Eigentum der`VbaModule` Klasse, indem Sie ihr eine Zeichenfolge zuweisen, die den VBA-Code enthält.
 
 #### F: Kann ich einem VBA-Projekt in einem Word-Dokument mehrere VBA-Module hinzufügen?
 

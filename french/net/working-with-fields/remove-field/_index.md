@@ -25,7 +25,7 @@ Nous commençons par charger le document existant à partir du fichier spécifi�
 Document doc = new Document(dataDir + "Various fields.docx");
 ```
 
-## Étape 3 : suppression du champ
+## Étape 3 : Supprimer le champ
 
  Nous sélectionnons le premier champ de la plage de documents et utilisons le`Remove()` méthode pour le supprimer.
 

@@ -13,12 +13,12 @@ Handledningen täcker olika aspekter som formatering av text, stycken, tabeller,
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Utrymmet mellan asiatisk och latinsk text](./space-between-asian-and-latin-text/) | Lär dig hur du automatiskt justerar utrymmet mellan asiatisk och latinsk text i ditt dokument med Aspose.Words för .NET. |
-| [Asian Typography Line Break Group](./asian-typography-line-break-group/) | Lär dig hur du använder asiatisk typografi radbrytningsgrupp med Aspose.Words för .NET. |
-| [Styckeformatering](./paragraph-formatting/) | Lär dig hur du använder anpassad formatering på dina stycken med Aspose.Words för .NET. |
-| [Listformatering på flera nivåer](./multilevel-list-formatting/) | Lär dig hur du skapar en flernivålista och använder anpassad formatering med Aspose.Words för .NET. |
-| [Använd styckeformat](./apply-paragraph-style/) | Lär dig hur du använder en styckestil med Aspose.Words för .NET. |
-| [Applicera kanter och skuggning på stycke](./apply-borders-and-shading-to-paragraph/) | Lär dig hur du använder kanter och skuggning på ett stycke med Aspose.Words för .NET. |
-| [Ändra asiatiskt styckeavstånd och indrag](./change-asian-paragraph-spacing-and-indents/) | Lär dig hur du ändrar asiatiskt styckeavstånd och indrag med Aspose.Words för .NET. |
-| [Snap To Grid](./snap-to-grid/) | Steg för steg guide för att förklara C#-källkoden för Snap to Grid-funktionen med Aspose.Words för .NET. |
-| [Skaffa Paragraph Style Separator](./get-paragraph-style-separator/) | Lär dig hur du får styckestilseparatorn med Aspose.Words för .NET. |
+| [Utrymmet mellan asiatisk och latinsk text i Word-dokument](./space-between-asian-and-latin-text/) | Lär dig hur du automatiskt justerar utrymmet mellan asiatisk och latinsk text i word-dokument med Aspose.Words för .NET. |
+| [Asiatisk Typografi Linjebrytning Grupp I Word-dokument](./asian-typography-line-break-group/) | Lär dig hur du använder asiatisk typografi radbrytningsgrupp i word-dokument med Aspose.Words för .NET. |
+| [Styckeformatering i Word-dokument](./paragraph-formatting/) | Lär dig hur du använder anpassad formatering på dina stycken i word-dokument med Aspose.Words för .NET. |
+| [Listformatering på flera nivåer i Word-dokument](./multilevel-list-formatting/) | Lär dig hur du skapar en flernivålista och tillämpar anpassad formatering i word-dokument med Aspose.Words för .NET. |
+| [Använd styckeformat i Word-dokument](./apply-paragraph-style/) | Lär dig hur du använder en styckestil i Word-dokument med Aspose.Words för .NET. |
+| [Tillämpa kanter och skuggning på stycke i Word-dokument](./apply-borders-and-shading-to-paragraph/) | Lär dig hur du använder kanter och skuggning på ett stycke i Word-dokument med Aspose.Words för .NET. |
+| [Ändra asiatiskt styckeavstånd och indrag i Word-dokument](./change-asian-paragraph-spacing-and-indents/) | Lär dig hur du ändrar asiatiskt styckeavstånd och indrag i Word-dokument med Aspose.Words för .NET. |
+| [Fäst till rutnät i Word-dokument](./snap-to-grid/) | Steg för steg guide för att förklara C#-källkoden för Snap to Grid i Word-dokumentfunktionen med Aspose.Words för .NET. |
+| [Skaffa styckestilseparator i Word-dokument](./get-paragraph-style-separator/) | Lär dig hur du får styckestilseparatorn i word-dokument med Aspose.Words för .NET. |

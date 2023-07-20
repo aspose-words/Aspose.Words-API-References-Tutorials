@@ -1,14 +1,13 @@
 ---
-title: Déplacer vers la cellule du tableau
-linktitle: Déplacer vers la cellule du tableau
+title: Déplacer vers une cellule de tableau dans un document Word
+linktitle: Déplacer vers une cellule de tableau dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour utiliser Move To Table Cell dans Aspose.Words pour .NET
+description: Guide étape par étape pour l'utilisation de la fonction Déplacer vers une cellule de tableau dans un document Word d'Aspose.Words pour .NET
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
-
-Dans cet exemple, nous vous expliquerons comment utiliser la fonction Move To Table Cell de Aspose.Words pour .NET en utilisant étape par étape le code source C# fourni. Cette fonctionnalité vous permet de naviguer et de manipuler des cellules spécifiques à l'intérieur d'un tableau dans un document Word. Suivez les étapes ci-dessous pour intégrer cette fonctionnalité dans votre application.
+Dans cet exemple, nous vous expliquerons comment utiliser la fonctionnalité de document Move To Table Cell dans Word de Aspose.Words pour .NET en utilisant étape par étape le code source C# fourni. Cette fonctionnalité vous permet de naviguer et de manipuler des cellules spécifiques à l'intérieur d'un tableau dans un document Word. Suivez les étapes ci-dessous pour intégrer cette fonctionnalité dans votre application.
 
 ## Étape 1 : Chargez le document contenant le tableau
 
@@ -30,7 +29,7 @@ builder. MoveToCell(0, 2, 3, 0);
 builder.Write("\nCell content added by DocumentBuilder");
 ```
 
- Ce code crée un DocumentBuilder à partir du document existant, puis déplace le curseur du DocumentBuilder vers la cellule de tableau spécifiée. Enfin, il ajoute du contenu à cette cellule en utilisant le DocumentBuilder's`Write()` méthode.
+Ce code crée un DocumentBuilder à partir du document existant, puis déplace le curseur du DocumentBuilder vers la cellule de tableau spécifiée. Enfin, il ajoute du contenu à cette cellule en utilisant le DocumentBuilder's`Write()` méthode.
 
 ## Étape 3 : Vérifier le résultat
 
@@ -63,3 +62,25 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNode);
 Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
 ```
+
+## Conclusion
+
+Dans cet exemple, nous avons exploré la fonction Move To Table Cell de Aspose.Words pour .NET. Nous avons appris à charger un document contenant un tableau, à déplacer le DocumentBuilder vers une cellule de tableau spécifique et à ajouter du contenu à cette cellule. Cette fonctionnalité fournit aux développeurs des outils puissants pour naviguer et manipuler des cellules spécifiques dans les tableaux de documents Word par programmation à l'aide d'Aspose.Words pour .NET. Il peut être un ajout précieux à votre application pour le traitement dynamique des documents Word et la gestion du contenu des tableaux.
+
+### FAQ pour déplacer vers une cellule de tableau dans un document Word
+
+#### Q : Quel est l'objectif de la fonctionnalité Déplacer vers une cellule de tableau dans Aspose.Words pour .NET ?
+
+R : La fonctionnalité Déplacer vers une cellule de tableau dans Aspose.Words pour .NET permet aux développeurs de naviguer et de manipuler des cellules spécifiques à l'intérieur d'un tableau dans un document Word par programme. Il offre la possibilité d'insérer, de modifier ou de supprimer du contenu dans une cellule particulière.
+
+#### Q : Comment déplacer le DocumentBuilder vers une cellule de tableau spécifique dans un document Word ?
+
+: Pour déplacer le DocumentBuilder vers une cellule de tableau spécifique dans un document Word, vous pouvez utiliser la méthode MoveToCell de la classe DocumentBuilder. Cette méthode prend les indices de la ligne et de la cellule cible dans le tableau comme paramètres et place le curseur au début de cette cellule.
+
+#### Q : Puis-je ajouter ou modifier du contenu après être passé à une cellule de tableau spécifique à l'aide de la fonctionnalité Déplacer vers une cellule de tableau ?
+
+R : Oui, une fois que DocumentBuilder est positionné sur la cellule de tableau souhaitée à l'aide de MoveToCell, vous pouvez utiliser diverses méthodes de la classe DocumentBuilder, telles que Write, Writeln ou InsertHtml, pour ajouter ou modifier le contenu de cette cellule.
+
+#### Q : Comment puis-je vérifier que le déplacement vers la cellule du tableau a réussi ?
+
+: Vous pouvez vérifier le déplacement réussi vers la cellule du tableau en vérifiant la position du curseur de DocumentBuilder. Par exemple, vous pouvez comparer le nœud actuel du DocumentBuilder avec la cellule vers laquelle vous souhaitez vous déplacer et vérifier que le contenu ajouté par le DocumentBuilder est correctement enregistré dans la cellule du tableau.

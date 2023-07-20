@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Multi-section structured document tags.do
 NodeCollection tags = doc.GetChildNodes(NodeType.StructuredDocumentTagRangeStart, true);
 ```
 
-## Étape 3 : traiter les balises multi-sections
+## Étape 3 : Traiter les balises multi-sections
 Parcourez la collection de nœuds de début de plage de balises de document structuré. Dans cet exemple, nous imprimons simplement le titre de chaque balise sur la console. Vous pouvez effectuer un traitement supplémentaire en fonction de vos besoins.
 
 ```csharp

@@ -94,7 +94,7 @@ Tebrikler! Aspose.Words for .NET kullanarak Word belgelerinde yerel ayarı nası
 
 #### S: Aspose.Words, Microsoft Word'ün farklı sürümleriyle uyumlu mu?
 
-Y: Evet, Aspose.Words, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 ve Word 2019 dahil olmak üzere Microsoft Word'ün farklı sürümleriyle uyumludur.
+C: Evet, Aspose.Words, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 ve Word 2019 dahil olmak üzere Microsoft Word'ün farklı sürümleriyle uyumludur.
 
 #### S: Aspose.Words karmaşık alan yapılarını destekliyor mu?
 

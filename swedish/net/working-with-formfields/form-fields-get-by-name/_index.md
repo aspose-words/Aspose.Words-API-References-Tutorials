@@ -10,7 +10,7 @@ url: /sv/net/working-with-formfields/form-fields-get-by-name/
 
 I denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att hämta formulärfält efter namn från ett Word-dokument. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
+ För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Steg 1: Initiera dokumentobjektet
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Steg 2: Hämta formulärfält
 
- Gå sedan till`FormFields`egendom av`Range` objekt i dokumentet för att hämta alla formulärfält:
+ Gå sedan till`FormFields` egendom av`Range` objekt i dokumentet för att hämta alla formulärfält:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

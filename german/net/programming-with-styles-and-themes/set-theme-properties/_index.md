@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/programming-with-styles-and-themes/set-theme-properties/
 ---
-In diesem Tutorial untersuchen wir den bereitgestellten C#-Quellcode, um die Designeigenschaften eines Dokuments mithilfe von Aspose.Words für .NET festzulegen. Wir werden die sekundären Schriftarten und Designfarben ändern.
+In diesem Tutorial untersuchen wir den bereitgestellten C#-Quellcode, um die Designeigenschaften eines Dokuments mithilfe von Aspose.Words für .NET festzulegen. Wir werden die sekundären Schriftarten und Themenfarben ändern.
 
 ## Schritt 1: Einrichten der Umgebung
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- In diesem Schritt greifen wir auf die zu`Theme` Gegenstand der`Document`Objekt, um das Dokumentthema abzurufen. Als nächstes können wir Designeigenschaften wie sekundäre Schriftarten ändern (`MinorFonts.Latin`) und Farben (`Colors.Hyperlink`).
+ In diesem Schritt greifen wir auf die zu`Theme` Gegenstand der`Document` Objekt, um das Dokumentthema abzurufen. Als nächstes können wir Designeigenschaften wie sekundäre Schriftarten ändern (`MinorFonts.Latin`) und Farben (`Colors.Hyperlink`).
 
 ## Schritt 4: Speichern Sie das Dokument
 
@@ -67,7 +67,7 @@ Um die Umgebung einzurichten, müssen Sie sicherstellen, dass Aspose.Words für 
 
 #### Wie kann ich auf Designeigenschaften zugreifen und diese ändern?
 
- Um auf Designeigenschaften zuzugreifen und diese zu ändern, können Sie die verwenden`Theme` Gegenstand der`Document` Klasse. Durch den Zugriff auf`Theme` Objekt können Sie Eigenschaften wie sekundäre Schriftarten ändern (`MinorFonts.Latin`) und Farben (`Colors.Hyperlink`). Weisen Sie diesen Eigenschaften die gewünschten Werte zu, um das Thema Ihres Dokuments anzupassen.
+ Um auf Designeigenschaften zuzugreifen und diese zu ändern, können Sie die verwenden`Theme` Gegenstand der`Document` Klasse. Durch den Zugriff auf`Theme`Objekt können Sie Eigenschaften wie sekundäre Schriftarten ändern (`MinorFonts.Latin`) und Farben (`Colors.Hyperlink`). Weisen Sie diesen Eigenschaften die gewünschten Werte zu, um das Thema Ihres Dokuments anzupassen.
 
 #### Welche Vorteile bietet das Festlegen von Designeigenschaften in einem Word-Dokument?
 
@@ -79,4 +79,4 @@ Durch das Festlegen von Designeigenschaften in einem Word-Dokument können Sie d
 
 #### Kann ich das geänderte Dokument in verschiedenen Formaten speichern?
 
- Ja, Sie können das geänderte Dokument in verschiedenen Formaten speichern, die von Aspose.Words für .NET unterstützt werden. Der`Save` Methode der`Document` Mit dem Objekt können Sie das Ausgabedateiformat angeben, z. B. DOCX, PDF, HTML und mehr. Wählen Sie das passende Format entsprechend Ihren Anforderungen.
+Ja, Sie können das geänderte Dokument in verschiedenen Formaten speichern, die von Aspose.Words für .NET unterstützt werden. Der`Save` Methode der`Document` Mit dem Objekt können Sie das Ausgabedateiformat angeben, z. B. DOCX, PDF, HTML und mehr. Wählen Sie das passende Format entsprechend Ihren Anforderungen.

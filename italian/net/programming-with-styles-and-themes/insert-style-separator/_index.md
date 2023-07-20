@@ -98,7 +98,7 @@ Per impostare l'ambiente, devi assicurarti di avere Aspose.Words per .NET instal
 
 #### Come creo e configuro uno stile personalizzato?
 
- Per creare uno stile personalizzato, puoi utilizzare il file`Styles.Add` metodo del`Document` oggetto. Specifica il tipo di stile (ad es.`StyleType.Paragraph`) e fornire un nome per lo stile. Una volta creato, è possibile modificare le proprietà del carattere dell'oggetto stile per configurarne l'aspetto.
+ Per creare uno stile personalizzato, puoi utilizzare il file`Styles.Add` metodo del`Document` oggetto. Specifica il tipo di stile (ad es.`StyleType.Paragraph`e fornire un nome per lo stile. Una volta creato, è possibile modificare le proprietà del carattere dell'oggetto stile per configurarne l'aspetto.
 
 #### Come inserisco un separatore di stile?
 
@@ -106,7 +106,7 @@ Per impostare l'ambiente, devi assicurarti di avere Aspose.Words per .NET instal
 
 #### Come posso applicare stili diversi a diverse sezioni di testo?
 
- Puoi applicare stili diversi a diverse sezioni di testo impostando il file`ParagraphFormat.StyleName`proprietà del`DocumentBuilder`oggetto. Prima di scrivere il testo, puoi impostare il nome dello stile sullo stile desiderato e il testo che segue verrà formattato di conseguenza.
+ Puoi applicare stili diversi a diverse sezioni di testo impostando il file`ParagraphFormat.StyleName` proprietà del`DocumentBuilder` oggetto. Prima di scrivere il testo, puoi impostare il nome dello stile sullo stile desiderato e il testo che segue verrà formattato di conseguenza.
 
 #### Posso salvare il documento in diversi formati?
 

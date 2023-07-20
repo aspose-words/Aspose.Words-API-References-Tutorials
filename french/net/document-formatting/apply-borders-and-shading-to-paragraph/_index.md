@@ -1,14 +1,13 @@
 ---
-title: Appliquer les bordures et l'ombrage au paragraphe
-linktitle: Appliquer les bordures et l'ombrage au paragraphe
+title: Appliquer les bordures et l'ombrage au paragraphe dans le document Word
+linktitle: Appliquer les bordures et l'ombrage au paragraphe dans le document Word
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à appliquer des bordures et des ombres à un paragraphe avec Aspose.Words pour .NET.
+description: Apprenez à appliquer des bordures et des ombres à un paragraphe dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
-
-Dans ce didacticiel, nous allons vous montrer comment appliquer des bordures et un ombrage à un paragraphe à l'aide des fonctionnalités d'Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et appliquer les modifications de mise en forme.
+Dans ce didacticiel, nous allons vous montrer comment appliquer des bordures et des ombres à un paragraphe dans un document Word à l'aide de la fonctionnalité d'Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et appliquer les modifications de mise en forme.
 
 ## Étape 1 : Création et configuration du document
 
@@ -89,3 +88,26 @@ Voici le code source complet de la fonctionnalité Appliquer les bordures et l'o
 	doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ```
+
+## Conclusion
+
+Dans ce didacticiel, nous avons appris à appliquer des bordures et un ombrage à un paragraphe dans un document Word à l'aide de Aspose.Words pour .NET. En configurant les paragraphes`Borders` et`Shading` properties, nous avons pu définir le style de bordure, la couleur de ligne et la couleur de remplissage du paragraphe. Aspose.Words pour .NET fournit de puissantes capacités de formatage pour personnaliser l'apparence des paragraphes et améliorer la représentation visuelle de vos documents.
+
+### FAQ
+
+#### Q : Comment appliquer des bordures et des nuances à un paragraphe dans un document Word à l'aide d'Aspose.Words pour .NET ?
+
+R : Pour appliquer des bordures et un ombrage à un paragraphe dans un document Word à l'aide d'Aspose.Words pour .NET, suivez ces étapes :
+1.  Créer un nouveau document et un`DocumentBuilder` objet.
+2.  Configurez les bordures de paragraphe en accédant au`Borders` propriété de la`ParagraphFormat` et définir le style de bordure pour chaque côté.
+3.  Configurez le remplissage du paragraphe en accédant au`Shading` propriété de la`ParagraphFormat` et en spécifiant la texture et les couleurs de remplissage.
+4.  Ajoutez du contenu au paragraphe à l'aide de la`Write` méthode de la`DocumentBuilder`.
+5.  Enregistrez le document à l'aide de la`Save` méthode.
+
+#### Q : Comment définir le style de bordure pour chaque côté du paragraphe ?
+
+ R : Pour définir le style de bordure de chaque côté du paragraphe, vous pouvez accéder à la`Borders` propriété de la`ParagraphFormat` et réglez le`LineStyle` propriété pour chaque`BorderType` (par exemple,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Vous pouvez spécifier différents styles de ligne tels que`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, etc.
+
+#### Q : Comment spécifier la texture et les couleurs de remplissage pour l'ombrage des paragraphes ?
+
+ R : Pour spécifier la texture et les couleurs de remplissage de l'ombrage des paragraphes, vous pouvez accéder à la`Shading` propriété de la`ParagraphFormat` et réglez le`Texture` propriété à un indice de texture désiré (par exemple,`TextureIndex.TextureDiagonalCross` ). Vous pouvez également définir le`BackgroundPatternColor` et`ForegroundPatternColor` propriétés aux couleurs désirées en utilisant le`System.Drawing.Color` classe.

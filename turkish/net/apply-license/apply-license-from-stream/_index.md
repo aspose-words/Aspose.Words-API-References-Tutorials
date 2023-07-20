@@ -77,7 +77,7 @@ Artık bir akıştan güvenle lisans uygulayabilir ve Word belgelerini programl�
 
 #### S: Aspose.Words for .NET lisans belgelerini nerede bulabilirim?
 
-A: Aspose için lisans belgelerini bulabilirsiniz. Resmi Aspose dokümantasyon web sitesinde .NET için kelimeler. Belgeler, dosyalardan lisans uygulamak da dahil olmak üzere, lisans uygulamak için ayrıntılı talimatlar ve örnekler sağlar.
+ A: Aspose için lisans belgelerini bulabilirsiniz. .NET için kelimeler[API referansları](https://reference.aspose.com/words/net/). Belgeler, dosyalardan lisans uygulamak da dahil olmak üzere, lisans uygulamak için ayrıntılı talimatlar ve örnekler sağlar.
 
 #### S: Aspose.Words for .NET lisans dosyaları için hangi dosya formatlarını destekliyor?
 

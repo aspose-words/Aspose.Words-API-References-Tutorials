@@ -13,7 +13,7 @@ url: /zh/net/compare-documents/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [比较是否相等](./compare-for-equal/) | 分步指南解释 Aspose.Words for .NET 的 Compare for Equals 功能的 C# 源代码。 |
-| [比较选项](./compare-options/) | 分步指南解释 Aspose.Words for .NET 的比较选项功能的 C# 源代码。 |
-| [比较目标](./comparison-target/) | 了解 Aspose.Words for .NET 的比较目标功能，该功能允许您比较文档并生成包含所做更改的新文档。 |
-| [比较粒度](./comparison-granularity/) | 了解 Aspose.Words for .NET 的比较粒度功能，该功能允许逐字符比较文档，报告所做的更改。 |
+| [在 Word 文档中比较相等](./compare-for-equal/) | 使用 Aspose.Words for .NET 将 Compare for Equals 的 C# 源代码解释为 Word 文档功能的分步指南。 |
+| [比较 Word 文档中的选项](./compare-options/) | 分步指南解释使用 Aspose.Words for .NET 在 Word 文档功能中比较选项的 C# 源代码。 |
+| [Word文档中的比较目标](./comparison-target/) | 了解 Aspose.Words for .NET 的 Word 文档功能中的比较目标，该功能允许您比较文档并生成包含所做更改的新文档。 |
+| [Word文档中的比较粒度](./comparison-granularity/) | 了解 Aspose.Words for .NET 的 Word 文档功能中的比较粒度，该功能允许逐字符比较文档，报告所做的更改。 |

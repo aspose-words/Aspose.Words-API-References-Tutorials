@@ -55,7 +55,7 @@ Assicurati di sostituire "password" con la password che hai impostato in precede
 
 ## Passaggio 5: salvare il documento protetto
 
-Infine, puoi salvare il documento protetto utilizzando il file`Save` metodo della classe Document. Specificare il percorso file completo e il nome file desiderato. Per esempio :
+ Infine, puoi salvare il documento protetto utilizzando il file`Save` metodo della classe Document. Specificare il percorso file completo e il nome file desiderato. Per esempio :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");

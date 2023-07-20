@@ -10,17 +10,17 @@ url: /de/net/working-with-hyphenation/hyphenation-callback/
 
 In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie die Silbentrennungs-Rückruffunktion in Aspose.Words für .NET verwenden. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und konfiguriert ist. Wenn Sie es noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
+ Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und konfiguriert ist. Wenn Sie es noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie unter[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Schritt 1: Silbentrennungserinnerung speichern
 
- Zuerst registrieren wir den Silbentrennungsrückruf mithilfe einer benutzerdefinierten Funktion`CustomHyphenationCallback` Klasse. Dadurch können wir die Silbentrennung von Wörtern nach unseren eigenen Regeln handhaben:
+Zuerst registrieren wir den Silbentrennungsrückruf mithilfe einer benutzerdefinierten Funktion`CustomHyphenationCallback` Klasse. Dadurch können wir die Silbentrennung von Wörtern nach unseren eigenen Regeln handhaben:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- Stellen Sie sicher, dass Sie das implementiert haben`CustomHyphenationCallback`Unterricht nach Ihren spezifischen Bedürfnissen.
+ Stellen Sie sicher, dass Sie das implementiert haben`CustomHyphenationCallback` Unterricht nach Ihren spezifischen Bedürfnissen.
 
 ## Schritt 2: Laden des Dokuments und Anwenden der Silbentrennung
 

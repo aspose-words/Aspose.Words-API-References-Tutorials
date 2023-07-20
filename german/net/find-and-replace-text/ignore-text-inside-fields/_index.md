@@ -153,7 +153,7 @@ Console.WriteLine(doc.GetText());
 
 #### F: Wie kann ich die Felder in das Ausgabeergebnis in Aspose.Words für .NET einbeziehen?
 
- A: Um den Text in den Feldern in das Ausgabeergebnis einzubeziehen, können Sie die Optionen so ändern, dass die Felder nicht ignoriert werden. Hierfür können Sie die einstellen`IgnoreFields`Eigentum der`FindReplaceOptions` widersprechen`false`:
+ A: Um den Text in den Feldern in das Ausgabeergebnis einzubeziehen, können Sie die Optionen so ändern, dass die Felder nicht ignoriert werden. Hierfür können Sie die einstellen`IgnoreFields` Eigentum der`FindReplaceOptions` widersprechen`false`:
 
 ```csharp
 options.IgnoreFields = false;

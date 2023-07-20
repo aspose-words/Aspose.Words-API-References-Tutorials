@@ -2,7 +2,7 @@
 title: OleObjects ve ActiveX ile Kelime İşleme
 linktitle: OleObjects ve ActiveX ile Kelime İşleme
 second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile Word belgelerinde OLE ve ActiveX nesneleri ile nasıl çalışacağınızı öğrenin. Kod örnekleri ile ayrıntılı öğreticiler.
+description: Aspose.Words for .NET ile Word belgelerinde OLE ve ActiveX nesneleri ile nasıl çalışacağınızı öğrenin. Kod örnekleriyle ayrıntılı öğreticiler.
 type: docs
 weight: 1080
 url: /tr/net/working-with-oleobjects-and-activex/

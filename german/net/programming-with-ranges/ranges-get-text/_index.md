@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 string text = doc.Range.Text;
 ```
 
- Dieser Code greift über den gesamten Bereich des Dokuments zu`Range`Eigentum der`Document` Klasse und ruft den in diesem Bereich enthaltenen Text mithilfe von ab`Text` Eigentum.
+ Dieser Code greift über den gesamten Bereich des Dokuments zu`Range` Eigentum der`Document` Klasse und ruft den in diesem Bereich enthaltenen Text mithilfe von ab`Text` Eigentum.
 
 #### F: Kann ich mit Aspose.Words für .NET Text aus mehreren Bereichen in einem Word-Dokument extrahieren?
 

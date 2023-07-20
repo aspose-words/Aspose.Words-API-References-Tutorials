@@ -101,7 +101,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### Q : Comment puis-je utiliser des groupes capturés dans le modèle de remplacement lors de la recherche et du remplacement de texte dans Aspose.Words pour .NET ?
 
- R : Pour utiliser des groupes capturés dans le modèle de remplacement lors de la recherche et du remplacement de texte dans Aspose.Words pour .NET, vous pouvez activer le`UseSubstitutions`propriété de la`FindReplaceOptions` objet. Cela vous permet de référencer les groupes capturés en utilisant`$1`, `$2`, etc. dans le modèle de remplacement :
+ R : Pour utiliser des groupes capturés dans le modèle de remplacement lors de la recherche et du remplacement de texte dans Aspose.Words pour .NET, vous pouvez activer le`UseSubstitutions` propriété de la`FindReplaceOptions` objet. Cela vous permet de référencer les groupes capturés en utilisant`$1`, `$2`, etc. dans le modèle de remplacement :
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
@@ -114,7 +114,7 @@ R : L'exemple de code source illustre l'utilisation de la fonctionnalité "Reco
 
 #### Q : Où puis-je trouver plus d'informations et d'exemples sur l'utilisation des expressions régulières dans Aspose.Words pour .NET ?
 
-: Pour plus d'informations et d'exemples sur l'utilisation des expressions régulières dans Aspose.Words pour .NET, vous pouvez vous référer à la documentation officielle et au référentiel Aspose.Words GitHub. La documentation fournit des explications détaillées et des exemples de code pour divers scénarios impliquant des expressions régulières et la manipulation de texte dans Aspose.Words pour .NET.
+ : Pour plus d'informations et d'exemples sur l'utilisation des expressions régulières dans Aspose.Words pour .NET, vous pouvez vous référer au[Aspose.Words pour les références d'API .NET](https://reference.aspose.com/words/net/). La documentation fournit des explications détaillées et des exemples de code pour divers scénarios impliquant des expressions régulières et la manipulation de texte dans Aspose.Words pour .NET.
 
 #### Q : Puis-je manipuler d'autres aspects du document en fonction des groupes capturés lors de la recherche et du remplacement de texte ?
 
@@ -122,7 +122,7 @@ R : Oui, vous pouvez manipuler d'autres aspects du document en fonction des grou
 
 #### Q : Existe-t-il des limitations ou des considérations lors de l'utilisation d'expressions régulières et de groupes capturés dans Aspose.Words pour .NET ?
 
-R : Bien que les expressions régulières et les groupes capturés offrent de puissantes fonctionnalités de recherche et de remplacement de texte dans Aspose.Words pour .NET, il est important de prendre en compte la complexité et les implications en termes de performances. Des expressions régulières très complexes et un grand nombre de groupes capturés peuvent avoir un impact sur les performances. Il est recommandé de tester et d'optimiser les expressions régulières pour vos cas d'utilisation spécifiques afin d'assurer une manipulation efficace des documents.
+R : Bien que les expressions régulières et les groupes capturés offrent de puissantes fonctionnalités de recherche et de remplacement de texte dans Aspose.Words pour .NET, il est important de prendre en compte la complexité et les implications en termes de performances. Des expressions régulières très complexes et un grand nombre de groupes capturés peuvent avoir un impact sur les performances. Il est recommandé de tester et d'optimiser les expressions régulières pour vos cas d'utilisation spécifiques afin de garantir une manipulation efficace des documents.
 
 #### Q : Puis-je utiliser la fonctionnalité "Reconnaître et remplacer les modèles de remplacement" avec des langues autres que l'anglais ?
 

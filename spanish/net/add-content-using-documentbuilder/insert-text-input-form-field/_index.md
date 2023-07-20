@@ -1,13 +1,12 @@
 ---
-title: Insertar campo de formulario de entrada de texto
-linktitle: Insertar campo de formulario de entrada de texto
+title: Insertar campo de formulario de entrada de texto en documento de Word
+linktitle: Insertar campo de formulario de entrada de texto en documento de Word
 second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a usar Aspose.Words para .NET para insertar un campo de formulario de entrada de texto en documentos de Word con esta guía paso a paso.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
-
 En esta guía paso a paso, exploraremos cómo usar la función Insertar campo de formulario de entrada de texto en Aspose.Words para .NET para agregar y manipular campos de formulario de entrada de texto en sus documentos de Word usando el código fuente de C#. Los campos de formulario de ingreso de texto permiten a los usuarios ingresar texto personalizado dentro de un documento, lo que los hace ideales para crear formularios y cuestionarios interactivos. Siguiendo las instrucciones a continuación, podrá insertar y personalizar sin esfuerzo los campos de formulario de ingreso de texto en sus documentos. ¡Empecemos!
 
 ## Introducción a la función Insertar campo de formulario de entrada de texto en Aspose.Words para .NET
@@ -72,3 +71,32 @@ builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```
+
+## Conclusión
+
+¡Felicidades! Ha aprendido con éxito cómo insertar y personalizar campos de formulario de entrada de texto en un documento de Word utilizando Aspose.Words para .NET. Al seguir la guía paso a paso y utilizar el código fuente de C# provisto, ahora puede agregar elementos interactivos a sus documentos, lo que permite a los usuarios ingresar texto o datos personalizados.
+
+### Preguntas frecuentes para insertar un campo de formulario de entrada de texto en un documento de Word
+
+#### P: ¿Cuál es el propósito de la función Insertar campo de formulario de entrada de texto en Aspose.Words para .NET?
+
+R: La función Insertar campo de formulario de entrada de texto en Aspose.Words para .NET le permite agregar mediante programación campos de formulario de entrada de texto a sus documentos de Word. Estos campos de formulario permiten a los usuarios ingresar texto o datos personalizados directamente en el documento, lo que los hace ideales para crear formularios, encuestas o cuestionarios interactivos.
+
+#### P: ¿Cuáles son los requisitos previos para usar la función Insertar campo de formulario de entrada de texto?
+
+R: Antes de implementar la función Insertar campo de formulario de entrada de texto, debe asegurarse de los siguientes requisitos previos:
+1. Aspose.Words para la biblioteca .NET instalada en su proyecto.
+2. Conocimientos básicos del lenguaje de programación C#.
+3. Un documento de Word existente o un documento nuevo en el que desea insertar el campo de formulario de entrada de texto.
+
+#### P: ¿Cómo personalizo el campo del formulario de entrada de texto?
+
+ R: Puede personalizar el campo del formulario de entrada de texto proporcionando parámetros específicos al llamar al`InsertTextInput`método. Por ejemplo, puede establecer el nombre, el valor predeterminado y la longitud máxima del campo de formulario según sea necesario.
+
+#### P: ¿Puedo insertar varios campos de formulario de entrada de texto en un solo documento?
+
+ R: Sí, puede insertar varios campos de formulario de entrada de texto en un solo documento. Simplemente llame al`InsertTextInput` método con diferentes nombres y configuraciones para agregar múltiples campos de formulario.
+
+#### P: ¿Cómo pueden los usuarios interactuar con el campo de formulario de entrada de texto en el documento?
+
+R: Una vez que el campo de formulario de ingreso de texto se inserta en el documento, los usuarios pueden hacer clic en el campo de formulario y comenzar a escribir para ingresar texto personalizado. El campo de formulario les permite editar el contenido directamente dentro del documento.

@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Hier verwenden wir den Document Builder, um die Tabelle zu erstellen und die Eigenschaften für die horizontale Zusammenführung der Zellen festzulegen. Wir benutzen das`HorizontalMerge`Eigentum der`CellFormat` -Objekt, um den Typ der horizontalen Zusammenführung anzugeben, der auf jede Zelle angewendet werden soll. Benutzen`CellMerge.First` Wir verschmelzen die erste Zelle mit der nächsten, während wir sie verwenden`CellMerge.Previous` Wir verschmelzen die aktuelle Zelle mit der vorherigen Zelle.`CellMerge.None` gibt an, dass die Zelle nicht zusammengeführt werden soll.
+ Hier verwenden wir den Document Builder, um die Tabelle zu erstellen und die Eigenschaften für die horizontale Zusammenführung der Zellen festzulegen. Wir benutzen das`HorizontalMerge` Eigentum der`CellFormat` -Objekt, um den Typ der horizontalen Zusammenführung anzugeben, der auf jede Zelle angewendet werden soll. Benutzen`CellMerge.First` Wir verschmelzen die erste Zelle mit der nächsten, während wir sie verwenden`CellMerge.Previous` Wir verschmelzen die aktuelle Zelle mit der vorherigen Zelle.`CellMerge.None` gibt an, dass die Zelle nicht zusammengeführt werden soll.
 
 ## Schritt 4: Speichern des geänderten Dokuments
 Schließlich müssen wir das geänderte Dokument mit horizontal zusammengeführten Zellen speichern. Verwenden Sie den folgenden Code:

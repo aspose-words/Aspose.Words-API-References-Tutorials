@@ -88,4 +88,4 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 #### 问：是否有其他方法可以使用 Aspose.Words for .NET 来解开 Word 文档中的嵌套书签？
 
-答：本文介绍的方法是解开相邻表格行中嵌套书签的常用方法。但是，根据项目的具体需求，可能还有其他方法或技术。您可以查看官方 Aspose.Words 文档以进一步探索可用功能。
+答：本文介绍的方法是解开相邻表格行中嵌套书签的常用方法。但是，根据项目的具体需求，可能还有其他方法或技术。您可以查看[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)进一步探索可用的功能。

@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 #### Q : Comment puis-je accéder aux signets dans un document Word ?
 
- R : Vous pouvez accéder aux signets dans un document Word à l'aide du`Bookmarks`propriété de la`Range` objet. Vous pouvez accéder aux signets par index ou par nom. Voici un exemple de code :
+ R : Vous pouvez accéder aux signets dans un document Word à l'aide du`Bookmarks` propriété de la`Range` objet. Vous pouvez accéder aux signets par index ou par nom. Voici un exemple de code :
 
 - Accès par index :
 
@@ -94,7 +94,7 @@ R : Pour utiliser la fonctionnalité d'accès aux signets dans Aspose.Words pou
 
 #### Q : Existe-t-il d'autres moyens d'accéder aux signets dans un document Word ?
 
- R : Oui, en plus d'accéder aux signets par index ou par nom, vous pouvez également parcourir tous les signets du document à l'aide d'une boucle. Vous pouvez obtenir le nombre total de signets dans le document à l'aide de la`Count`propriété de la`Bookmarks` collection. Ensuite, vous pouvez accéder à chaque signet en utilisant l'index. Voici un exemple de code :
+ R : Oui, en plus d'accéder aux signets par index ou par nom, vous pouvez également parcourir tous les signets du document à l'aide d'une boucle. Vous pouvez obtenir le nombre total de signets dans le document à l'aide de la`Count` propriété de la`Bookmarks` collection. Ensuite, vous pouvez accéder à chaque signet en utilisant l'index. Voici un exemple de code :
 
 ```csharp
 int bookmarkCount = doc.Range.Bookmarks.Count;

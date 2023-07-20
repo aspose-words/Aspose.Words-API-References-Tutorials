@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 
-En este artículo, exploraremos el código fuente de C# anterior para entender cómo usar la función "Ignorar texto dentro de las revisiones de eliminación" en la biblioteca Aspose.Words para .NET. Esta característica es útil cuando queremos ignorar el texto dentro de las revisiones de eliminación cuando procesamos textos con documentos.
+En este artículo, exploraremos el código fuente de C# anterior para entender cómo usar la característica "Ignorar texto dentro de eliminar revisiones" en la biblioteca Aspose.Words para .NET. Esta característica es útil cuando queremos ignorar el texto dentro de las revisiones de eliminación cuando procesamos textos con documentos.
 
 ## Descripción general de la biblioteca Aspose.Words para .NET
 

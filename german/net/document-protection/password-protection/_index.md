@@ -83,4 +83,4 @@ A: Um mit Aspose.Words für .NET einen Passwortschutz auf ein Word-Dokument anzu
 
 #### F: Ist es möglich, in einem Word-Dokument unterschiedliche Passwörter für unterschiedliche Schutzarten festzulegen?
 
- A: Nein, es ist nicht möglich, mit Aspose.Words für .NET unterschiedliche Passwörter für unterschiedliche Schutzarten in einem Word-Dokument festzulegen. Das in der angegebene Passwort`Protect` Die Methode gilt für den gesamten Dokumentenschutz, unabhängig von der Schutzart. Wenn Sie unterschiedliche Passwörter für unterschiedliche Schutzarten anwenden möchten, müssen Sie diese Logik manuell verwalten.
+ A: Nein, es ist nicht möglich, mit Aspose.Words für .NET unterschiedliche Passwörter für unterschiedliche Schutztypen in einem Word-Dokument festzulegen. Das in der angegebene Passwort`Protect` Die Methode gilt für den gesamten Dokumentenschutz, unabhängig von der Schutzart. Wenn Sie unterschiedliche Passwörter für unterschiedliche Schutzarten anwenden möchten, müssen Sie diese Logik manuell verwalten.

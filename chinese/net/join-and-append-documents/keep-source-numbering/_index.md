@@ -14,7 +14,7 @@ url: /zh/net/join-and-append-documents/keep-source-numbering/
 
 确保您具备以下先决条件：
 
-- 已安装 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载它或使用 NuGet 包管理器来安装它。
+- 已安装 Aspose.Words for .NET 库。您可以从以下位置下载：[Aspose.Releases]https://releases.aspose.com/words/net/ 或使用 NuGet 包管理器来安装它。
 - 将保存源文档和目标文档的文档目录路径。
 
 ## 步骤 2：创建目标文档和源文档
@@ -29,7 +29,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 步骤 3：导入时保留来源编号
+## 步骤 3：导入时保留源编号
 
 要保留源文档中编号段落的编号格式，请创建一个实例`ImportFormatOptions`并设置`KeepSourceNumbering`到`true`。用一个`NodeImporter`要将节点从源文档导入到目标文档，请指定`ImportFormatMode.KeepSourceFormatting`和`importFormatOptions`.
 

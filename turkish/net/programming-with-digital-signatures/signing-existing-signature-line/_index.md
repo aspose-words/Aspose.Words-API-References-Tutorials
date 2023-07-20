@@ -101,7 +101,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesindeki mevcut bir imza satır
 1.  kullanarak belgeyi yükleyin.`Document` class ve belge dosyasının yolunu belirtin.
 2.  Uygun yöntemi veya özelliği kullanarak mevcut imza satırına erişin. Örneğin, kullanabilirsiniz`GetChild` imza çizgisi şeklini alma yöntemi.
 3.  örneğini oluşturun`SignOptions`sınıflandırın ve ayarlayın`SignatureLineId` özellik mevcut imza satırının kimliğine.
-4.  Yı kur`SignatureLineImage`mülkiyeti`SignOptions` dijital imzayı temsil eden görüntüye sınıf.
+4.  Yı kur`SignatureLineImage` mülkiyeti`SignOptions` dijital imzayı temsil eden görüntüye sınıf.
 5.  kullanarak imzalama sertifikasını yükleyin.`CertificateHolder` class ve gerekli sertifika ve şifreyi sağlayın.
 6.  Kullan`DigitalSignatureUtil.Sign` dahil olmak üzere gerekli parametreleri sağlayarak belgeyi imzalama yöntemi`SignOptions` nesne.
 
@@ -111,11 +111,11 @@ C: Aspose.Words for .NET kullanarak bir Word belgesindeki mevcut bir imza satır
 
 #### S: Dijital imzanın görünümünü mevcut bir imza satırında özelleştirebilir miyim?
 
-C: Evet, imzayı temsil eden bir görüntü dosyası sağlayarak dijital imzanın görünümünü mevcut bir imza satırında özelleştirebilirsiniz. Görüntü bir logo, el yazısı imza veya imzanın başka herhangi bir grafik gösterimi olabilir. ayarlayabilirsiniz`SignatureLineImage`mülkiyeti`SignOptions` görüntü dosyasının baytlarına sınıf.
+C: Evet, imzayı temsil eden bir görüntü dosyası sağlayarak dijital imzanın görünümünü mevcut bir imza satırında özelleştirebilirsiniz. Görüntü bir logo, el yazısı imza veya imzanın başka herhangi bir grafik gösterimi olabilir. ayarlayabilirsiniz`SignatureLineImage` mülkiyeti`SignOptions` görüntü dosyasının baytlarına sınıf.
 
 #### S: Bir Word belgesinde birden çok mevcut imza satırını imzalayabilir miyim?
  C: Evet, bir Word belgesinde birden çok mevcut imza satırını imzalayabilirsiniz. Her bir imza satırı için ayrı ayrı adımları izlemeniz ve uygun ayarı yapmanız gerekir.`SignatureLineId` Ve`SignatureLineImage` içindeki değerler`SignOptions` her imza satırı için nesne.
 
 #### S: Mevcut bir imza satırındaki dijital imza için resim dosyası hangi formatta olmalıdır?
 
- Y: Mevcut bir imza satırındaki dijital imza için görüntü dosyası PNG, JPEG, BMP veya GIF gibi çeşitli biçimlerde olabilir. Dosya yolunu belirtebilir veya görüntü dosyasının baytlarını okuyabilir ve onu`SignatureLineImage`mülkiyeti`SignOptions` sınıf.
+ Y: Mevcut bir imza satırındaki dijital imza için görüntü dosyası PNG, JPEG, BMP veya GIF gibi çeşitli biçimlerde olabilir. Dosya yolunu belirtebilir veya görüntü dosyasının baytlarını okuyabilir ve onu`SignatureLineImage` mülkiyeti`SignOptions` sınıf.

@@ -14,7 +14,7 @@ In diesem Tutorial wird gezeigt, wie Sie mit Aspose.Words für .NET ein Quelldok
 
 Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
 - Ein Dokumentverzeichnispfad, in dem die Quell- und Zieldokumente gespeichert werden.
 
 ## Schritt 2: Erstellen Sie die Ziel- und Quelldokumente

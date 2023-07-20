@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Schritt 3: Standardschriftart festlegen
- Jetzt können Sie die beim Rendern zu verwendende Standardschriftart angeben, indem Sie eine Instanz davon erstellen`FontSettings` Klasse und Einstellung der`DefaultFontName`Eigentum der`DefaultFontSubstitution` Einspruch gegen die`DefaultFontSubstitution` Objekt`SubstitutionSettings` von`FontSettings`.
+ Jetzt können Sie die beim Rendern zu verwendende Standardschriftart angeben, indem Sie eine Instanz davon erstellen`FontSettings` Klasse und Einstellung der`DefaultFontName` Eigentum der`DefaultFontSubstitution` Einspruch gegen die`DefaultFontSubstitution` Objekt`SubstitutionSettings` von`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -74,7 +74,7 @@ A: Ja, Sie können eine Standardschriftart für andere Ausgabeformate wie DOCX o
 
 #### F: Wie kann ich die in Aspose.Words angegebene Standardschriftart überprüfen?
 
- A: Um die in Aspose.Words angegebene Standardschriftart zu überprüfen, können Sie die verwenden`DefaultFontName`Eigentum der`PdfOptions` Klasse und rufen Sie den Namen der konfigurierten Schriftart ab.
+ A: Um die in Aspose.Words angegebene Standardschriftart zu überprüfen, können Sie die verwenden`DefaultFontName` Eigentum der`PdfOptions` Klasse und rufen Sie den Namen der konfigurierten Schriftart ab.
 
 #### F: Ist es möglich, für jeden Abschnitt des Dokuments eine andere Standardschriftart festzulegen?
 

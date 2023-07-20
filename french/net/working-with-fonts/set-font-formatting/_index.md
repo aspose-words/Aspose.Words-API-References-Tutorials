@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Créer et formater le document
- Créer une instance de`Document` classe et la`DocumentBuilder` classe pour construire le document. Utilisez le`Font`propriété de la`DocumentBuilder` pour accéder aux propriétés de formatage des polices.
+ Créer une instance de`Document` classe et la`DocumentBuilder` classe pour construire le document. Utilisez le`Font` propriété de la`DocumentBuilder` pour accéder aux propriétés de formatage des polices.
 
 ```csharp
 Document doc = new Document();

@@ -79,7 +79,7 @@ C: Aspose.Words for .NET'teki salt okunur kısıtlaması, bir Word belgesini sal
 
 C: Aspose.Words for .NET kullanarak bir Word belgesinden salt okunur kısıtlamasını kaldırmak için şu adımları izleyebilirsiniz:
 1.  örneğini oluşturun`Document` class ve kullanarak belge için bir parola ayarlayın.`SetPassword` yöntemi`WriteProtection` nesne.
-2.  Yı kur`ReadOnlyRecommended`mülkiyeti`WriteProtection` itiraz etmek`false` salt okunur tavsiyesini kaldırmak için.
+2.  Yı kur`ReadOnlyRecommended` mülkiyeti`WriteProtection` itiraz etmek`false` salt okunur tavsiyesini kaldırmak için.
 3.  kullanarak belgeye sınırsız koruma uygulayın.`Protect` yöntemi`Document` ile nesne`NoProtection` koruma türü.
 4.  kullanarak belgeyi salt okunur kısıtlaması olmadan kaydedin.`Save` yöntemi`Document` nesne.
 

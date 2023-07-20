@@ -79,7 +79,7 @@ Utilizzando Aspose.Words per .NET, puoi automatizzare il processo di generazione
 ### Domande frequenti
 
 #### Q1. Cos'è un istogramma?
-Un istogramma è un tipo di grafico che rappresenta i dati in barre o colonne verticali. Ogni colonna rappresenta in genere una categoria o un gruppo e l'altezza o la lunghezza della colonna indica il valore dei dati associati a quella categoria. I grafici a colonne sono comunemente usati per confrontare i dati tra diverse categorie o per tenere traccia delle modifiche nel tempo.
+Un istogramma è un tipo di grafico che rappresenta i dati in barre o colonne verticali. Ogni colonna rappresenta in genere una categoria o un gruppo e l'altezza o la lunghezza della colonna indica il valore dei dati associati a tale categoria. I grafici a colonne sono comunemente usati per confrontare i dati tra diverse categorie o per tenere traccia delle modifiche nel tempo.
 
 #### D2. Posso aggiungere più serie all'istogramma?
 Sì, puoi aggiungere più serie all'istogramma utilizzando Aspose.Words per .NET. Ogni serie rappresenta un insieme di punti dati con le rispettive categorie e valori. Aggiungendo più serie, puoi confrontare e analizzare diversi set di dati all'interno dello stesso grafico, fornendo una visione completa dei tuoi dati.

@@ -1,13 +1,12 @@
 ---
-title: 更新脏字段
-linktitle: 更新脏字段
+title: 更新Word文档中的脏字段
+linktitle: 更新Word文档中的脏字段
 second_title: Aspose.Words 文档处理 API
 description: 了解如何通过使用 Aspose.Words for .NET 更新脏字段来加载 Word 文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/update-dirty-fields/
 ---
-
 在 C# 应用程序中对 Word 文档进行文字处理时，可能需要更新脏字段以显示最新值。借助适用于 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 轻松更新文档加载时的脏字段。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码通过使用 LoadOptions 更新脏字段来加载文档。
 
 ## 了解 Aspose.Words 库
@@ -53,3 +52,26 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 ## 结论
 
 在本指南中，我们解释了如何使用 .NET 的 Aspose.Words 库通过更新脏字段来上传文档。通过遵循提供的步骤并使用提供的 C# 源代码，您可以轻松地在 C# 应用程序中应用此功能。文档加载时更新脏字段将显示 Word 文档中的最新值。
+
+
+### Word 文档中更新脏字段的常见问题解答
+
+#### 问：Word文档中的脏字段是什么？
+
+答：Word 文档中的脏字段是指已更改但尚未更新以反映最新值的字段。通过更新这些字段，您可以确保文档始终显示准确且最新的信息。
+
+#### 问：我可以自定义 Aspose.Words for .NET 中的加载选项吗？
+
+答：当然！ Aspose.Words 提供了一系列加载选项，可以根据您的具体要求进行定制，使其成为灵活而强大的文档处理工具。
+
+#### 问：更新脏字段对我的应用程序有何好处？
+
+答：更新脏字段可确保您的 C# 应用程序显示 Word 文档中的最新数据，从而提高整体用户体验和信息的准确性。
+
+#### 问：Aspose.Words 可以处理除 Word 之外的其他文档格式吗？
+
+答：是的，Aspose.Words 支持多种文档格式，包括 PDF、HTML、EPUB 等，使其成为跨不同平台文档操作的综合解决方案。
+
+#### 问：Aspose.Words 适合处理大型 Word 文档吗？
+
+答：当然！ Aspose.Words 旨在处理不同大小的文档，其性能针对高效处理大型 Word 文档进行了优化。

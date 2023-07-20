@@ -24,7 +24,7 @@ using Aspose.Words;
 ```
 
 ## Étape 2 : Initialiser l'objet de licence
-Ensuite, vous devez initialiser l'objet License, qui sera utilisé pour définir la licence pour Aspose.Words. Ajoutez le code suivant pour initialiser l'objet Licence :
+Ensuite, vous devez initialiser l'objet License, qui sera utilisé pour définir la licence pour Aspose.Words. Ajoutez le code suivant pour initialiser l'objet License :
 
 ```csharp
 License license = new License();
@@ -56,7 +56,7 @@ Voici le code source complet pour appliquer une licence à partir d'un fichier e
 ```csharp
 License license = new License();
 
-//Cette ligne tente de définir une licence à partir de plusieurs emplacements relatifs à l'exécutable et à Aspose.Words.dll.
+// Cette ligne tente de définir une licence à partir de plusieurs emplacements relatifs à l'exécutable et à Aspose.Words.dll.
 // Vous pouvez également utiliser la surcharge supplémentaire pour charger une licence à partir d'un flux, c'est utile,
 // par exemple, lorsque la licence est stockée en tant que ressource intégrée.
 try
@@ -78,11 +78,11 @@ L'ajout de FAQ aux didacticiels améliore considérablement l'expérience d'appr
 
 #### Q : Où puis-je trouver la documentation de licence pour Aspose.Words pour .NET ?
 
-R : Vous pouvez trouver la documentation de licence pour Aspose. Words for .NET sur le site officiel de documentation d'Aspose. La documentation fournit des instructions détaillées et des exemples d'application de licences, y compris l'application de licences à partir de fichiers.
+ R : Vous pouvez trouver la documentation de licence pour Aspose. Mots pour .NET sur le[Références API](https://reference.aspose.com/words/net/). La documentation fournit des instructions détaillées et des exemples d'application de licences, y compris l'application de licences à partir de fichiers.
 
 #### Q : Quels formats de fichiers Aspose.Words pour .NET prend-il en charge pour les fichiers de licence ?
 
-: Aspose.Words pour .NET prend en charge les fichiers de licence au format XML. Assurez-vous que votre fichier de licence est au format XML approprié reconnu par Aspose.Words pour .NET.
+R : Aspose.Words pour .NET prend en charge les fichiers de licence au format XML. Assurez-vous que votre fichier de licence est au format XML approprié reconnu par Aspose.Words pour .NET.
 
 #### Q : Puis-je appliquer une licence par programmation dans Aspose.Words pour .NET ?
 

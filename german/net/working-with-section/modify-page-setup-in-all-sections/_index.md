@@ -42,7 +42,7 @@ builder.Writeln("Hello45");
 ```
 
 ## Schritt 3: Bearbeiten Sie die Seiteneinrichtung in allen Abschnitten
- Um die Seiteneinrichtung in allen Abschnitten des Dokuments zu ändern, verwenden wir a`foreach` Schleife, um jeden Abschnitt zu durchlaufen und darauf zuzugreifen`PageSetup` Eigentum. In diesem Beispiel ändern wir die Papiergröße aller Abschnitte, indem wir den Wert auf setzen`PaperSize.Letter`.
+ Um die Seiteneinrichtung in allen Abschnitten des Dokuments zu ändern, verwenden wir a`foreach` Schleife, um jeden Abschnitt zu durchlaufen und darauf zuzugreifen`PageSetup` Eigentum. In diesem Beispiel ändern wir die Papiergröße aller Abschnitte, indem wir den Wert auf festlegen`PaperSize.Letter`.
 
 ```csharp
 foreach(Section section in doc.Sections)
@@ -109,7 +109,7 @@ builder.Writeln("Hello45");
 
 #### F: Wie ändere ich die Seiteneinrichtung in allen Abschnitten in Aspose.Words für .NET?
 
- A: Um die Seiteneinrichtung in allen Abschnitten des Dokuments zu ändern, können Sie a verwenden`foreach` Schleife, um jeden Abschnitt zu durchlaufen und darauf zuzugreifen`PageSetup` Eigentum. In diesem Beispiel ändern wir die Papiergröße aller Abschnitte, indem wir den Wert auf setzen`PaperSize.Letter`.
+ A: Um die Seiteneinrichtung in allen Abschnitten des Dokuments zu ändern, können Sie a verwenden`foreach` Schleife, um jeden Abschnitt zu durchlaufen und darauf zuzugreifen`PageSetup` Eigentum. In diesem Beispiel ändern wir die Papiergröße aller Abschnitte, indem wir den Wert auf festlegen`PaperSize.Letter`.
 
 ```csharp
 foreach(Section section in doc.Sections)

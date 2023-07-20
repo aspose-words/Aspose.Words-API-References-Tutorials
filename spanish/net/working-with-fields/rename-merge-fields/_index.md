@@ -100,7 +100,7 @@ R: Sí, es posible cambiar el nombre solo de ciertos campos combinados en un doc
 
 #### P: ¿Cuáles son las consecuencias de cambiar el nombre de un campo combinado en un documento de Word con Aspose.Words para .NET?
 
-R: Cuando cambia el nombre de un campo combinado en un documento de Word con Aspose.Words para .NET, cambia el nombre del campo en el documento, lo que puede afectar otras funciones o procesos que dependen del nombre del campo. Asegúrese de considerar estas posibles consecuencias antes de cambiar el nombre de los campos fusionados.
+R: Cuando cambia el nombre de un campo combinado en un documento de Word con Aspose.Words para .NET, cambia el nombre del campo en el documento, lo que puede afectar otras funciones o procesos que dependen del nombre del campo. Asegúrese de considerar estas posibles consecuencias antes de cambiar el nombre de los campos combinados.
 
 #### P: ¿Es posible restaurar el nombre original de un campo combinado después de cambiarle el nombre con Aspose.Words para .NET?
 

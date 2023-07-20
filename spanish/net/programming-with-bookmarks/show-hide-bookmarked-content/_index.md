@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## Paso 2: Insertar los campos de combinación
 
- Usamos un generador de documentos.`DocumentBuilder`para insertar los campos de combinación necesarios. Estos campos de combinación establecerán una condición para mostrar u ocultar el contenido del marcador según el valor del`showHide` variable:
+ Usamos un generador de documentos.`DocumentBuilder` para insertar los campos de combinación necesarios. Estos campos de combinación establecerán una condición para mostrar u ocultar el contenido del marcador según el valor del`showHide` variable:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -170,7 +170,7 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### P: ¿La biblioteca de Aspose.Words es gratuita?
 
-R: La biblioteca Aspose.Words es una biblioteca comercial y requiere una licencia válida para usarla en sus proyectos. Puede consultar el sitio web oficial de Aspose para obtener más información sobre las opciones de licencia y los precios.
+ R: La biblioteca Aspose.Words es una biblioteca comercial y requiere una licencia válida para usarla en sus proyectos. Puedes comprobar[Referencias de Aspose.Words para la API de .NET](https://reference.aspose.com/words/net/) para obtener más información sobre las opciones de licencia y los precios.
 
 #### P: ¿Hay otras bibliotecas disponibles para el procesamiento de textos con documentos de Word en .NET?
 

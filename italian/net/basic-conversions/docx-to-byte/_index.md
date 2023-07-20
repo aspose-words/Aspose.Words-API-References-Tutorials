@@ -10,11 +10,11 @@ url: /it/net/basic-conversions/docx-to-byte/
 
 In questo tutorial passo-passo, ti guideremo su come utilizzare Aspose.Words per .NET per convertire un documento Word in formato Docx in un array di byte. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
+ Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal file[Aspose.Rilasci](https://releases.aspose.com/words/net/).
 
 ## Passaggio 1: inizializzazione di MemoryStream
 
- Innanzitutto, crea un'istanza di`MemoryStream`class per memorizzare il documento convertito come un array di byte:
+ Innanzitutto, crea un'istanza di`MemoryStream` class per memorizzare il documento convertito come un array di byte:
 
 ```csharp
 MemoryStream outStream = new MemoryStream();

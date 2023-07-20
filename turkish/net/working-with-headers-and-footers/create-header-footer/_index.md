@@ -115,7 +115,7 @@ pageSetup.Orientation = Orientation.Landscape;
 // ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde tanımlanmıştır.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// Bu bölüm varsayılan olarak önceki bölümün üstbilgilerini/altbilgilerini görüntüler, bu bağlantıyı kesmek için currentSection.HeadersFooters.LinkToPrevious(false) öğesini çağırın,
+// Bu bölüm, önceki bölümün üstbilgilerini/altbilgilerini varsayılan olarak görüntüler, bu bağlantıyı kesmek için currentSection.HeadersFooters.LinkToPrevious(false) öğesini çağırın,
 // yeni bölüm için sayfa genişliği farklıdır, bu nedenle alt bilgi tablosu için farklı hücre genişlikleri ayarlamamız gerekir.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
@@ -245,7 +245,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### S: Aspose.Words'te belgeme nasıl alt bilgi ekleyebilirim?
 
- A: Aspose.Words'te belgenize bir alt bilgi eklemek için`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` yöntem. Bu yöntem, belgenizin ilk bölümüne bir birincil altbilgi ekler.
+ A: Aspose.Words'te belgenize bir alt bilgi eklemek için`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` yöntem. Bu yöntem, belgenizin ilk bölümüne bir birincil alt bilgi ekler.
 
 #### S: Aspose.Words'te üstbilgime veya altbilgime nasıl metin ekleyebilirim?
 

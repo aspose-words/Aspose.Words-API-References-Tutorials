@@ -1,13 +1,12 @@
 ---
-title: Belge Oluşturucu Yer İşareti Ekle
-linktitle: Belge Oluşturucu Yer İşareti Ekle
+title: Belge Oluşturucu Word Belgesine Yer İşareti Ekleme
+linktitle: Belge Oluşturucu Word Belgesine Yer İşareti Ekleme
 second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te DocumentBuilder'ı kullanarak Word belgelerine nasıl yer imleri ekleyeceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/document-builder-insert-bookmark/
 ---
-
 Bu kapsamlı örnekte, Aspose.Words for .NET'te DocumentBuilder sınıfını kullanarak bir Word belgesine nasıl yer imleri ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, belgelerinizde yer imleri oluşturabilecek ve yönetebileceksiniz.
 
 ## Önkoşullar
@@ -59,3 +58,24 @@ Yer imleri, büyük belgelerde gezinmek, belirli bölümlere başvurmak veya yer
 
 Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.
 
+### SSS
+
+#### S: Tek bir Word belgesinde birden çok yer imi olabilir mi?
+
+C: Kesinlikle! Aspose.Words for .NET'i kullanarak bir Word belgesine gerektiği kadar yer imi ekleyebilirsiniz. Çakışmaları önlemek için her yer imi için benzersiz adlar sağladığınızdan emin olun.
+
+#### S: Eklendikten sonra bir yer iminin içindeki içeriği değiştirebilir miyim?
+
+C: Evet, bir yer imini ekledikten sonra içindeki içeriği kolayca değiştirebilirsiniz. Yer imine adıyla gitmek için DocumentBuilder'ı kullanın ve ardından içeriği istediğiniz gibi değiştirin.
+
+#### S: Yer imleri, bir belgenin belirli bölümlerini programlı olarak ayıklamak için kullanılabilir mi?
+
+C: Kesinlikle! Yer imleri, bir belgenin belirli bölümlerini programlı olarak çıkarmak için değerlidir. Yer iminin adını kullanarak, o yer imi eklenmiş alandaki içeriği kolayca tanımlayabilir ve çıkarabilirsiniz.
+
+#### S: Aspose.Words for .NET kullanarak mevcut Word belgelerine yer imleri eklemek mümkün mü?
+
+C: Kesinlikle! Aspose.Words for .NET'i kullanarak hem yeni hem de mevcut Word belgelerine yer imleri ekleyebilirsiniz. Sadece mevcut belgeyi açın, yer imini bu eğitimde gösterildiği gibi ekleyin ve değişiklikleri kaydedin.
+
+#### S: Belgede yer imi eklenmiş bir bölüme programlı olarak gidebilir miyim?
+
+C: Evet, belgede yer imi eklenmiş belirli bir bölüme programlı olarak gidebilirsiniz. DocumentBuilder'ı kullanarak yer imini adına göre bulabilir ve yeni içerik eklemek veya biçimlendirme uygulamak gibi çeşitli eylemler gerçekleştirebilirsiniz.

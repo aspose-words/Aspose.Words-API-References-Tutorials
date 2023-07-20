@@ -55,7 +55,7 @@ doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
 ## 5. Adım: Korumalı Belgeyi Kaydetme
 
-Son olarak, korumalı belgeyi kullanarak kaydedebilirsiniz.`Save` Document sınıfının yöntemi. Tam dosya yolunu ve istenen dosya adını belirtin. Örneğin :
+ Son olarak, korumalı belgeyi kullanarak kaydedebilirsiniz.`Save` Document sınıfının yöntemi. Tam dosya yolunu ve istenen dosya adını belirtin. Örneğin :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
@@ -107,7 +107,7 @@ C: Evet, Aspose.Words for .NET'i kullanarak korumalı bir belgeye form alanları
 
  C: Evet, Aspose.Words for .NET kullanarak korumalı bir belgeden belge korumasını kaldırabilirsiniz. Korumayı kaldırmak için,`Unprotect` yöntemi`Document` sınıf ve doğru parolayı sağlayın. Bu, korumayı kaldıracak ve belgenin sınırsız şekilde düzenlenmesine izin verecektir.
 
-#### S: Bir belgeyi birden çok koruma türüyle korumak mümkün müdür?
+#### S: Bir belgeyi birden çok koruma türüyle korumak mümkün mü?
 
  C: Hayır, Aspose.Words for .NET bir defada bir belgeye yalnızca bir koruma türünün uygulanmasına izin verir. Ancak`AllowOnlyFormFields` koruma türü, diğer koruma türlerine izin verirken form alanlarını düzenlemeyi etkili bir şekilde kısıtlayabilir.`AllowOnlyComments` veya`AllowOnlyRevisions`form alanı korumasıyla birleştirilecek.
 

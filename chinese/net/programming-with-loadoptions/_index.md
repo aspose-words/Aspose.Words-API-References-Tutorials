@@ -14,13 +14,13 @@ Aspose.Words for .NET 教程为希望掌握使用 LoadOptions 进行文字处理
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [更新脏字段](./update-dirty-fields/) | 了解如何通过使用 Aspose.Words for .NET 更新脏字段来加载 Word 文档。 |
-| [加载加密文档](./load-encrypted-document/) | 了解如何使用 Aspose.Words for .NET 加载和保存加密文档。 |
+| [更新Word文档中的脏字段](./update-dirty-fields/) | 了解如何通过使用 Aspose.Words for .NET 更新脏字段来加载 Word 文档。 |
+| [加载加密的Word文档](./load-encrypted-document/) | 了解如何使用 Aspose.Words for .NET 加载和保存加密的 Word 文档。 |
 | [将形状转换为 Office 数学](./convert-shape-to-office-math/) | 了解使用 Aspose.Words for .NET 上传文档时如何将形状转换为 Office 数学公式。 |
 | [设置Ms Word版本](./set-ms-word-version/) | 了解如何使用 Aspose.Words for .NET 使用指定版本的 MS Word 加载文档。 |
-| [使用临时文件夹](./use-temp-folder/) | 了解使用 Aspose.Words for .NET 上传文档时如何使用临时文件夹。 |
-| [警告回调](./warning-callback/) | 了解如何使用 Aspose.Words for .NET 的回调功能加载 Word 文档时处理警告。 |
-| [加载编码](./load-with-encoding/) | 了解如何使用 Aspose.Words for .NET 加载具有指定编码的文档。 |
+| [在 Word 文档中使用临时文件夹](./use-temp-folder/) | 了解使用 Aspose.Words for .NET 上传文档时如何使用临时文件夹。 |
+| [Word文档中的警告回调](./warning-callback/) | 了解如何使用 Aspose.Words for .NET 的回调功能加载 Word 文档时处理警告。 |
+| [在 Word 文档中加载编码](./load-with-encoding/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中加载具有指定编码的文档。 |
 | [跳过 Pdf 图像](./skip-pdf-images/) | 了解如何使用 Aspose.Words for .NET 加载 PDF 文档，跳过加载 PDF 图像的过程。 |
 | [将图元文件转换为 Png](./convert-metafiles-to-png/) | 了解使用 Aspose.Words for .NET 上传文档时如何将图元文件转换为 PNG 图像。 |
-| [加载Chm](./load-chm/) | 了解如何使用 Aspose.Words for .NET 加载 CHM 文件。 |
+| [在Word文档中加载Chm文件](./load-chm/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中加载 CHM 文件。 |

@@ -12,4 +12,4 @@ url: /zh/net/programming-with-htmlloadoptions/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [首选控制类型](./preferred-control-type/) | 使用 Aspose.Words for .NET 加载 HTML 文档时指定首选控件类型的分步指南。 |
+| [Word 文档中的首选控件类型](./preferred-control-type/) | 使用 Aspose.Words for .NET 加载 HTML 文档时在 Word 文档中指定首选控件类型的分步指南。 |

@@ -85,7 +85,7 @@ Bu kod parçacığı yeni, boş bir Word belgesi oluşturur.
 
 #### S: Aspose.Words for .NET kullanarak içindekiler tablosundaki belirli bir düzeyin stilini nasıl değiştirebilirim?
 
- C: Bir belgeyi yükledikten sonra, belgenin stillerine erişerek ve gerekli değişiklikleri yaparak içindekiler tablosunda belirli bir düzeyin stilini değiştirebilirsiniz. Aspose.Words for .NET'te,`Styles`mülkiyeti`Document` Belge stillerine erişmek için sınıfı kullanın ve ardından özelliklerini kullanarak istenen stili değiştirin. Örneğin, içindekiler tablosunun ilk düzeyinin stilini kalın olarak değiştirmek için aşağıdaki kodu kullanabilirsiniz:
+ C: Bir belgeyi yükledikten sonra, belgenin stillerine erişerek ve gerekli değişiklikleri yaparak içindekiler tablosunda belirli bir düzeyin stilini değiştirebilirsiniz. Aspose.Words for .NET'te,`Styles` mülkiyeti`Document` Belge stillerine erişmek için sınıfı kullanın ve ardından özelliklerini kullanarak istenen stili değiştirin. Örneğin, içindekiler tablosunun ilk düzeyinin stilini kalın olarak değiştirmek için aşağıdaki kodu kullanabilirsiniz:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
@@ -113,7 +113,7 @@ C: Evet, stili değiştirmeye ek olarak, Aspose.Words for .NET'i kullanarak içi
 
 #### S: Aspose.Words for .NET kullanarak içindekiler tablosunda belirli bir seviye için nasıl özel bir stil belirtebilirim?
 
- C: Aspose.Words for .NET kullanarak içindekiler tablosunda belirli bir düzey için özel bir stil belirlemek için yeni bir stil oluşturabilirsiniz.`Style` nesneyi seçin, özelliklerini istediğiniz stile göre yapılandırın ve içindekiler tablosunun karşılık gelen düzeyine atayın.`Styles`mülkiyeti`Document` sınıf. Bu, gereksinimlerinize göre belirli bir seviye için özel bir stil tanımlamanıza olanak tanır.
+ C: Aspose.Words for .NET kullanarak içindekiler tablosunda belirli bir düzey için özel bir stil belirlemek için yeni bir stil oluşturabilirsiniz.`Style` nesneyi seçin, özelliklerini istediğiniz stile göre yapılandırın ve içindekiler tablosunun karşılık gelen düzeyine atayın.`Styles` mülkiyeti`Document` sınıf. Bu, gereksinimlerinize göre belirli bir seviye için özel bir stil tanımlamanıza olanak tanır.
 
 #### S: Aspose.Words for .NET kullanarak mevcut bir Word belgesindeki içindekiler tablosunun stilini değiştirebilir miyim?
 

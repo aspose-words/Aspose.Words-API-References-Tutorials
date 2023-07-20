@@ -88,11 +88,11 @@ La risoluzione dei commenti aiuta a tenere traccia e gestire il feedback all'int
 
 #### D: Come posso visualizzare i commenti risolti in Aspose.Words per .NET?
 
- R: Per impostazione predefinita, i commenti risolti sono nascosti nel documento finale. Tuttavia, puoi mostrarli utilizzando il file`CommentOptions.ShowResolvedComments`proprietà del`Document` oggetto e impostandolo su`true`.
+ R: Per impostazione predefinita, i commenti risolti sono nascosti nel documento finale. Tuttavia, puoi mostrarli utilizzando il file`CommentOptions.ShowResolvedComments` proprietà del`Document` oggetto e impostandolo su`true`.
 
 #### D: Come posso nascondere tutti i commenti, comprese le risposte, in Aspose.Words per .NET?
 
- R: Per nascondere tutti i commenti, comprese le risposte, in Aspose.Words per .NET, puoi utilizzare il`CommentOptions.CommentDisplayMode`proprietà del`Document` oggetto e impostarlo su`CommentDisplayMode.None`.
+ R: Per nascondere tutti i commenti, comprese le risposte, in Aspose.Words per .NET, puoi utilizzare il`CommentOptions.CommentDisplayMode` proprietà del`Document` oggetto e impostarlo su`CommentDisplayMode.None`.
 
 #### D: Posso modificare il testo di un commento risolto in Aspose.Words per .NET?
 

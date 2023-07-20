@@ -96,7 +96,7 @@ R : Oui, la fonctionnalité Mettre à jour les données des signets est spécial
 
 #### Q : Puis-je mettre à jour d'autres propriétés de signet en plus du texte ?
 
- : Oui, en plus du texte, vous pouvez également mettre à jour d'autres propriétés de signet, telles que le nom du signet, l'étendue du signet, etc. Utilisez les propriétés appropriées du`Bookmark` objet pour mettre à jour les propriétés souhaitées.
+ R : Oui, en plus du texte, vous pouvez également mettre à jour d'autres propriétés de signet, telles que le nom du signet, l'étendue du signet, etc. Utilisez les propriétés appropriées du`Bookmark` objet pour mettre à jour les propriétés souhaitées.
 
 #### Q : Puis-je mettre à jour plusieurs signets dans le même document ?
 
@@ -104,4 +104,4 @@ R : Oui, vous pouvez mettre à jour plusieurs signets dans le même document en 
 
 #### Q : La fonction de mise à jour des données des signets modifie-t-elle le document d'origine ?
 
-R : Oui, la fonction de mise à jour des données des signets modifie le document d'origine en mettant à jour les propriétés et le contenu des signets. Veillez à enregistrer une copie du document original avant d'appliquer cette fonctionnalité.
+: Oui, la fonction de mise à jour des données des signets modifie le document d'origine en mettant à jour les propriétés et le contenu des signets. Veillez à enregistrer une copie du document original avant d'appliquer cette fonctionnalité.

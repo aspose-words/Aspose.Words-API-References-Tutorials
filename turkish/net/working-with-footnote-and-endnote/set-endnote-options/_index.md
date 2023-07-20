@@ -10,7 +10,7 @@ url: /tr/net/working-with-footnote-and-endnote/set-endnote-options/
 
 Bu adım adım öğreticide, bir Word belgesinde son not seçeneklerini ayarlamak için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
+ Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı adresinden indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## 1. Adım: Belge Nesnesini Başlatma
 
@@ -89,12 +89,12 @@ Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimleriniz
 
 #### S: Son notları bir belgede nasıl konumlandırabilirim?
 
- C: Bir belgedeki son notları konumlandırmak için`Position`mülkiyeti`EndnoteOptions` sınıf. Son notların her sayfanın altına mı, her bölümün sonuna mı yoksa belgenin sonuna mı yerleştirileceğini belirleyebilirsiniz.
+ C: Bir belgedeki son notları konumlandırmak için`Position` mülkiyeti`EndnoteOptions` sınıf. Son notların her sayfanın altına mı, her bölümün sonuna mı yoksa belgenin sonuna mı yerleştirileceğini belirleyebilirsiniz.
 
 #### S: Son not numaralandırma formatını özelleştirebilir miyim?
 
- C: Evet, Aspose.Words'te son not numaralandırma formatını özelleştirebilirsiniz. Kullan`NumberFormat`mülkiyeti`EndnoteOptions` Arap rakamları, Romen rakamları, harfler vb. gibi istenen formatı ayarlamak için sınıf.
+ C: Evet, Aspose.Words'te son not numaralandırma formatını özelleştirebilirsiniz. Kullan`NumberFormat` mülkiyeti`EndnoteOptions` Arap rakamları, Romen rakamları, harfler vb. gibi istenen formatı ayarlamak için sınıf.
 
 #### S: Bir belgenin bölümleri arasında son not numaralandırmaya devam etmek mümkün müdür?
 
- C: Evet, bir belgenin bölümleri arasında son not numaralandırmaya devam etmek mümkündür. Kullan`RestartRule`mülkiyeti`EndnoteOptions` sınıflandırın ve ayarlayın`RestartContinuous` numaralandırmanın bölümler arasında devam etmesini sağlamak için.
+ C: Evet, bir belgenin bölümleri arasında son not numaralandırmaya devam etmek mümkündür. Kullan`RestartRule` mülkiyeti`EndnoteOptions` sınıflandırın ve ayarlayın`RestartContinuous` numaralandırmanın bölümler arasında devam etmesini sağlamak için.

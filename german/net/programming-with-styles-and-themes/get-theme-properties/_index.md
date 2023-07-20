@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- In diesem Schritt verwenden wir die`Theme`Eigentum der`Document`Objekt, um das zu bekommen`Theme` Objekt. Dann können wir auf die verschiedenen Eigenschaften des Themes zugreifen, wie zum Beispiel die Hauptschriftarten (`MajorFonts`), die sekundären Schriftarten (`MinorFonts`) und die Akzentfarben (`Colors`).
+ In diesem Schritt verwenden wir die`Theme` Eigentum der`Document`Objekt, um das zu bekommen`Theme` Objekt. Dann können wir auf die verschiedenen Eigenschaften des Themes zugreifen, wie zum Beispiel die Hauptschriftarten (`MajorFonts`), die sekundären Schriftarten (`MinorFonts`) und die Akzentfarben (`Colors`).
 
 ## Schritt 4: Theme-Eigenschaften anzeigen
 
@@ -68,7 +68,7 @@ Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um Ihren Arbe
 
 #### Wie kann ich mit Aspose.Words für .NET auf die Designeigenschaften eines Dokuments zugreifen?
 
- Um auf die Designeigenschaften eines Dokuments zuzugreifen, können Sie die verwenden`Theme`Eigentum der`Document` Objekt. Es gibt a zurück`Theme` Objekt, das Informationen über die primären und sekundären Schriftarten sowie die im Design des Dokuments verwendeten Akzentfarben enthält.
+ Um auf die Designeigenschaften eines Dokuments zuzugreifen, können Sie die verwenden`Theme` Eigentum der`Document` Objekt. Es gibt a zurück`Theme` Objekt, das Informationen über die primären und sekundären Schriftarten sowie die im Design des Dokuments verwendeten Akzentfarben enthält.
 
 #### Wie kann ich die primären und sekundären Schriftarten des Themas eines Dokuments abrufen?
 
@@ -76,7 +76,7 @@ Sie können auf die primären und sekundären Schriftarten des Themas eines Doku
 
 #### Kann ich die Akzentfarben erhalten, die im Design eines Dokuments verwendet werden?
 
- Ja, Sie können die im Thema eines Dokuments verwendeten Akzentfarben abrufen, indem Sie auf zugreifen`Colors`Eigentum der`Theme` Objekt. Diese Eigenschaft bietet Zugriff auf die Akzentfarben, z`Accent1`, `Accent2`, `Accent3`usw., die Sie für Anpassungs- oder Analysezwecke verwenden können.
+ Ja, Sie können die im Thema eines Dokuments verwendeten Akzentfarben abrufen, indem Sie auf zugreifen`Colors` Eigentum der`Theme` Objekt. Diese Eigenschaft bietet Zugriff auf die Akzentfarben, z`Accent1`, `Accent2`, `Accent3`usw., die Sie für Anpassungs- oder Analysezwecke verwenden können.
 
 #### Wie kann ich die abgerufenen Theme-Eigenschaften verwenden?
 

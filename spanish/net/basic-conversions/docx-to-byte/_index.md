@@ -10,11 +10,11 @@ url: /es/net/basic-conversions/docx-to-byte/
 
 En este tutorial paso a paso, lo guiaremos sobre cómo usar Aspose.Words para .NET para convertir un documento de Word en formato Docx a una matriz de bytes. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el sitio web oficial.
+ Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el[Aspose.Lanzamientos](https://releases.aspose.com/words/net/).
 
 ## Paso 1: inicialización de MemoryStream
 
- En primer lugar, cree una instancia de la`MemoryStream`clase para almacenar el documento convertido como una matriz de bytes:
+ En primer lugar, cree una instancia de la`MemoryStream` clase para almacenar el documento convertido como una matriz de bytes:
 
 ```csharp
 MemoryStream outStream = new MemoryStream();
@@ -52,7 +52,7 @@ MemoryStream inStream = new MemoryStream(docBytes);
 Document docFromBytes = new Document(inStream);
 ```
 
-¡Eso es todo! Ha convertido con éxito un documento de Word en formato Docx a una matriz de bytes usando Aspose.Words para .NET.
+¡Eso es todo! Ha convertido con éxito un documento de Word en formato Docx a una matriz de bytes utilizando Aspose.Words para .NET.
 
 ### Ejemplo de código fuente para Docx To Byte usando Aspose.Words para .NET
 

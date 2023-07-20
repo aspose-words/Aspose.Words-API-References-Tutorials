@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-den här handledningen kommer vi att gå igenom en steg-för-steg-guide för att förstå och implementera funktionen Uppdatera bokmärkesdata i Word-dokument i Aspose.Words för .NET. Den här funktionen låter dig uppdatera innehållet och egenskaperna för bokmärken i ett Word-dokument med hjälp av C#-källkoden.
+I den här handledningen kommer vi att gå igenom en steg-för-steg-guide för att förstå och implementera funktionen Uppdatera bokmärkesdata i Word-dokument i Aspose.Words för .NET. Den här funktionen låter dig uppdatera innehållet och egenskaperna för bokmärken i ett Word-dokument med hjälp av C#-källkoden.
 
 ## Krav
 
@@ -20,7 +20,7 @@ Innan du fortsätter med handledningen, se till att du har följande krav på pl
 
 ## Steg 1: Ladda dokumentet
 
-I det här steget kommer vi att ladda Word-dokumentet som innehåller de bokmärken vi vill uppdatera. Förutsatt att du har dokumentet lagrat i en specifik katalog, använd följande kod för att ladda dokumentet:
+det här steget kommer vi att ladda Word-dokumentet som innehåller de bokmärken vi vill uppdatera. Förutsatt att du har dokumentet lagrat i en specifik katalog, använd följande kod för att ladda dokumentet:
 
 ```csharp
 // Sökvägen till dokumentkatalogen.
@@ -38,7 +38,7 @@ För att uppdatera bokmärkesdata måste vi först komma åt det specifika bokm�
 Bookmark bookmark = doc.Range.Bookmarks["MyBookmark1"];
 ```
 
-Se till att bokmärkets namn matchar det i ditt dokument. Du kan ändra det enligt dina krav.
+Se till att bokmärkets namn matchar det i ditt dokument. Du kan ändra det enligt dina önskemål.
 
 ## Steg 3: Uppdatera bokmärkesegenskaper och innehåll
 
@@ -96,7 +96,7 @@ S: Ja, funktionen Uppdatera bokmärkesdata är speciellt utformad för bokmärke
 
 #### F: Kan jag uppdatera andra bokmärkesegenskaper förutom text?
 
-S: Ja, förutom text kan du även uppdatera andra bokmärkesegenskaper, såsom bokmärkesnamn, bokmärkes omfattning, etc. Använd lämpliga egenskaper för`Bookmark` objekt för att uppdatera de önskade egenskaperna.
+ S: Ja, förutom text kan du även uppdatera andra bokmärkesegenskaper, såsom bokmärkesnamn, bokmärkes omfattning, etc. Använd lämpliga egenskaper för`Bookmark` objekt för att uppdatera de önskade egenskaperna.
 
 #### F: Kan jag uppdatera flera bokmärken i samma dokument?
 

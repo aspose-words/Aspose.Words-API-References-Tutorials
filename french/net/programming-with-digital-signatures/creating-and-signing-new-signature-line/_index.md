@@ -58,7 +58,7 @@ Assurez-vous de spécifier les chemins d'accès corrects pour le document, l'ima
 
 ### Exemple de code source pour la création et la signature d'une nouvelle ligne de signature à l'aide de Aspose.Words pour .NET
 
-Voici le code source complet pour créer et signer une nouvelle ligne de signature avec Aspose.Words pour .NET :
+Voici le code source complet pour créer et signer une nouvelle ligne de signature avec Aspose.Words pour .NET :
 
 ```csharp
 

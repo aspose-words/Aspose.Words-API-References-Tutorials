@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 
 Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### Esempio di codice sorgente per Row Format Disabilita l'interruzione tra le pagine utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per il formato di riga Disabilita l'interruzione tra le pagine utilizzando Aspose.Words per .NET 
 
 ```csharp
 //Percorso della directory dei documenti

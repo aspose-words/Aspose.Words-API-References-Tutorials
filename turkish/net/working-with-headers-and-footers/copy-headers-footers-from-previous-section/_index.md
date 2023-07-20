@@ -10,7 +10,7 @@ url: /tr/net/working-with-headers-and-footers/copy-headers-footers-from-previous
 
 Bu adım adım öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki önceki bölümdeki üst bilgileri ve alt bilgileri nasıl kopyalayacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
+ Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı adresinden indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## 1. Adım: Önceki Bölüme Erişim
 
@@ -72,7 +72,7 @@ Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimleriniz
 
 #### S: Önceki bölümdeki üst bilgileri ve alt bilgileri Aspose.Words'e nasıl kopyalayabilirim?
 
- C: Önceki bölümden üstbilgileri ve altbilgileri Aspose.Words'e kopyalamak için`CopyHeadersFootersFromPreviousSection()` geçerli yöntem`Section`nesne. Bu, önceki bölümdeki üstbilgileri ve altbilgileri geçerli bölüme kopyalar.
+ C: Önceki bölümden üstbilgileri ve altbilgileri Aspose.Words'e kopyalamak için`CopyHeadersFootersFromPreviousSection()` geçerli yöntem`Section`nesne. Bu, önceki bölümdeki üstbilgileri ve altbilgileri geçerli bölüme kopyalayacaktır.
 
 #### S: Aspose.Words'te bir önceki bölümden sadece üst bilgiyi veya alt bilgiyi kopyalamak mümkün mü?
 

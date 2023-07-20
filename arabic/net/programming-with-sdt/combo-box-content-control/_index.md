@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## الخطوة 3: أضف عناصر إلى صندوق التحرير والسرد
- أضف عناصر إلى مربع التحرير والسرد باستخدام ملف`ListItems`ممتلكات`StructuredDocumentTag` يتم تمثيل كل عنصر بامتداد`SdtListItem` كائن ، والذي يأخذ نص عرض وقيمة. في هذا المثال ، نضيف ثلاثة عناصر إلى مربع التحرير والسرد.
+ أضف عناصر إلى مربع التحرير والسرد باستخدام ملف`ListItems` ممتلكات`StructuredDocumentTag` يتم تمثيل كل عنصر بامتداد`SdtListItem` كائن ، والذي يأخذ نص عرض وقيمة. في هذا المثال ، نضيف ثلاثة عناصر إلى مربع التحرير والسرد.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

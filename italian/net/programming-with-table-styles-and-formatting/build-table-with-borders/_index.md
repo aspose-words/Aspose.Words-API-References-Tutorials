@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/build-table-with-borders/
 ---
 
-In questo tutorial, ti guideremo attraverso il processo passo-passo per creare una tabella con bordi usando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come creare una tabella con bordi personalizzati nei tuoi documenti Word utilizzando Aspose.Words per .NET.
+In questo tutorial, ti guideremo attraverso il processo passo-passo per creare una tabella con bordi utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come creare una tabella con bordi personalizzati nei tuoi documenti Word utilizzando Aspose.Words per .NET.
 
 ## Passaggio 1: definire la directory dei documenti
 Innanzitutto, devi impostare il percorso della directory dei documenti. Qui è dove è memorizzato il tuo documento Word. Sostituisci "LA TUA CARTELLA DEI DOCUMENTI" con il percorso appropriato.

@@ -1,6 +1,6 @@
 ---
-title: Copier les styles de document Word
-linktitle: Copier les styles de document Word
+title: Copier les styles de documents Word
+linktitle: Copier les styles de documents Word
 second_title: API de traitement de documents Aspose.Words
 description: Copiez les styles de document Word d'un document à un autre avec Aspose.Words pour .NET. Maintenez efficacement la cohérence et la mise en forme de plusieurs documents.
 type: docs

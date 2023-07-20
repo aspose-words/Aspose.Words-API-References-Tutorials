@@ -14,7 +14,7 @@ url: /tr/net/join-and-append-documents/insert-document-with-builder/
 
 Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Aspose.Words for .NET kitaplığı yüklendi. adresinden indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ veya yüklemek için NuGet paket yöneticisini kullanın.
 - Kaynak ve hedef belgelerin bulunduğu bir belge dizini yolu.
 
 ## 2. Adım: Kaynak ve hedef belgeleri açın
@@ -29,7 +29,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. Adım: DocumentBuilder'ı Başlatın
+## Adım 3: DocumentBuilder'ı Başlatın
 
  Yeni bir örneğini oluştur`DocumentBuilder` sınıflandırın ve hedef belgeyi bir parametre olarak iletin.
 
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Adım 4: DocumentBuilder'ı Konumlandırın
 
- Taşı`DocumentBuilder` kullanarak belgenin sonuna`MoveToDocumentEnd` yöntem. Mevcut içeriği eklenen belgeden ayırmak için bir sayfa sonu ekleyin.
+Taşı`DocumentBuilder` kullanarak belgenin sonuna`MoveToDocumentEnd` yöntem. Mevcut içeriği eklenen belgeden ayırmak için bir sayfa sonu ekleyin.
 
 ```csharp
 builder.MoveToDocumentEnd();

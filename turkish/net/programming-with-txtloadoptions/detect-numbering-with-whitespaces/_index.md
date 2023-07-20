@@ -103,7 +103,7 @@ Artık liste numaralarını içeren metin belgesini beyaz boşluklarla yüklemek
 ## Çözüm
 Bu öğreticide, Aspose.Words for .NET'teki boşluk numaralandırma algılama özelliğini inceledik. Liste numaralarını ve ardından beyaz boşlukları içeren bir metin belgesinden listelerin nasıl oluşturulacağını öğrendik.
 
-Bu özellik, farklı şekillerde biçimlendirilmiş liste numaraları içeren belgeleri işlemek için son derece kullanışlıdır. Aspose.Words, uygun yükleme seçeneklerini kullanarak, bu liste numaralarını, ardından beyaz boşluklar gelse bile algılayabilir ve bunları son belgede yapılandırılmış listelere dönüştürebilir.
+Bu özellik, farklı şekillerde biçimlendirilmiş liste numaraları içeren belgeleri işlemek için son derece kullanışlıdır. Aspose.Words, uygun yükleme seçeneklerini kullanarak, bu liste numaralarını, ardından beyaz boşluklar gelse bile algılayabilir ve bunları nihai belgede yapılandırılmış listelere dönüştürebilir.
 
 Bu özelliği kullanmak size zaman kazandırabilir ve iş akışı verimliliğinizi artırabilir. Metin belgelerinden kolayca bilgi çıkarabilir ve bunları uygun listelerle iyi yapılandırılmış belgelere dönüştürebilirsiniz.
 

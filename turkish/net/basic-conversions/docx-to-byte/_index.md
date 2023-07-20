@@ -10,11 +10,11 @@ url: /tr/net/basic-conversions/docx-to-byte/
 
 Bu adım adım öğreticide, Docx formatındaki bir Word belgesini bayt dizisine dönüştürmek için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
+ Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı şu adresten indirip yükleyin:[Aspose.Sürümler](https://releases.aspose.com/words/net/).
 
 ## Adım 1: MemoryStream'i Başlatma
 
- İlk olarak, örneğini oluşturun`MemoryStream`dönüştürülen belgeyi bir bayt dizisi olarak depolamak için sınıf:
+ İlk olarak, örneğini oluşturun`MemoryStream` dönüştürülen belgeyi bir bayt dizisi olarak depolamak için sınıf:
 
 ```csharp
 MemoryStream outStream = new MemoryStream();
@@ -22,7 +22,7 @@ MemoryStream outStream = new MemoryStream();
 
 ## 2. Adım: Belgeyi MemoryStream'e Kaydetme
 
- Ardından,`Save` yöntemi`Document` belgeyi kaydetmek için sınıf`MemoryStream` Docx biçiminde:
+ Ardından,`Save` yöntemi`Document` belgeyi kaydetmek için sınıf`MemoryStream` Docx formatında:
 
 ```csharp
 doc.Save(outStream, SaveFormat.Docx);

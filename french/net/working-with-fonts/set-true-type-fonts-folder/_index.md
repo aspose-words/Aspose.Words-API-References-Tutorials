@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Étape 3 : Définir le dossier des polices True Type
-Vous pouvez désormais spécifier le dossier des polices True Type à utiliser lors du rendu en créant une instance de`FontSettings` classe et en utilisant la`SetFontsFolder()` méthode pour définir le dossier des polices. Vous pouvez spécifier un dossier personnalisé contenant vos polices True Type. Le deuxième paramètre à`SetFontsFolder()` indique si vous souhaitez également rechercher les sous-dossiers du dossier spécifié.
+Vous pouvez désormais spécifier le dossier des polices True Type à utiliser lors du rendu en créant une instance de`FontSettings` classe et en utilisant le`SetFontsFolder()` méthode pour définir le dossier des polices. Vous pouvez spécifier un dossier personnalisé contenant vos polices True Type. Le deuxième paramètre à`SetFontsFolder()` indique si vous souhaitez également rechercher les sous-dossiers du dossier spécifié.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -33,7 +33,7 @@ fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
 doc.FontSettings = fontSettings;
 ```
 
-## Étape 4 : Enregistrer le document rendu
+## Étape 4 : Enregistrer le document rendu
  Enfin, vous pouvez enregistrer le document rendu dans un fichier à l'aide de la`Save()` méthode de la`Document` classe. Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects.
 
 ```csharp

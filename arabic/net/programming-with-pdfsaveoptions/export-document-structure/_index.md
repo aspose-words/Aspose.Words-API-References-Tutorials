@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", save
 
  قم بإنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`ExportDocumentStructure` ملكية ل`true`. سيؤدي هذا إلى تصدير هيكل المستند وجعله مرئيًا في جزء التنقل "المحتوى" في Adobe Acrobat Pro عند تحرير ملف PDF.
+ قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`ExportDocumentStructure` الملكية ل`true`. سيؤدي هذا إلى تصدير هيكل المستند وجعله مرئيًا في جزء التنقل "المحتوى" في Adobe Acrobat Pro عند تحرير ملف PDF.
 
  استخدم ال`Save` طريقة`Document`class لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
 

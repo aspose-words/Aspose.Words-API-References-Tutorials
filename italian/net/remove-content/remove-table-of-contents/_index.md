@@ -143,7 +143,7 @@ In questo tutorial, abbiamo presentato una guida passo passo per rimuovere il so
 
 #### D: Perché dovrei usare Aspose.Words per rimuovere il sommario in un documento di Word?
 
-R: Aspose.Words è una libreria di classi potente e versatile per la manipolazione di documenti Word nelle applicazioni .NET. Usando Aspose.Words, puoi rimuovere efficacemente il sommario dai tuoi documenti, il che può essere utile se il sommario è ridondante o non necessario. Ciò consente di personalizzare il contenuto del documento e migliorarne la presentazione complessiva.
+R: Aspose.Words è una libreria di classi potente e versatile per la manipolazione di documenti Word nelle applicazioni .NET. Usando Aspose.Words, puoi rimuovere efficacemente il sommario dai tuoi documenti, il che può essere utile se il sommario è ridondante o non necessario. Ciò consente di personalizzare il contenuto del documento e migliorarne la presentazione generale.
 
 #### D: Come faccio a caricare un documento in Aspose.Words per .NET?
 

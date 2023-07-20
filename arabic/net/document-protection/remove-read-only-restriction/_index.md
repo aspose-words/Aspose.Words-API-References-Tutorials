@@ -79,7 +79,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ج: لإزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET ، يمكنك اتباع الخطوات التالية:
 1.  قم بإنشاء مثيل لـ`Document` class وتعيين كلمة مرور للمستند باستخدام`SetPassword` طريقة`WriteProtection` هدف.
-2.  تعيين`ReadOnlyRecommended`ممتلكات`WriteProtection` يعترض على`false` لإزالة توصية القراءة فقط.
+2.  تعيين`ReadOnlyRecommended` ممتلكات`WriteProtection` يعترض على`false` لإزالة توصية القراءة فقط.
 3.  قم بتطبيق حماية غير مقيدة على المستند باستخدام`Protect` طريقة`Document` كائن مع`NoProtection` نوع الحماية.
 4.  احفظ المستند بدون قيود القراءة فقط باستخدام ملف`Save` طريقة`Document` هدف.
 

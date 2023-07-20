@@ -85,7 +85,7 @@ Le risposte ai commenti consentono discussioni collaborative e feedback all'inte
 
 #### D: Come posso accedere ai commenti esistenti in Aspose.Words per .NET?
 
- R: Puoi accedere ai commenti esistenti in Aspose.Words per .NET utilizzando il file`CommentCollection`proprietà del`Document`oggetto. Questo ti permetterà di sfogliare tutti i commenti presenti nel documento.
+ R: Puoi accedere ai commenti esistenti in Aspose.Words per .NET utilizzando il file`CommentCollection` proprietà del`Document`oggetto. Questo ti permetterà di sfogliare tutti i commenti presenti nel documento.
 
 #### D: Posso modificare il testo del commento in Aspose.Words per .NET?
 

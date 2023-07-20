@@ -84,7 +84,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 #### Aspose.Words for .NET 的哪些其他功能可以与数字签名检测结合使用？
 
-Aspose.Words for .NET 提供了多种用于处理和操作 Word 文档的功能。除了检测数字签名之外，您还可以使用该库从文档中提取文本、图像或元数据、应用格式更改、合并文档、将文档转换为不同的格式等等。您可以浏览 Aspose.Words for .NET 的官方文档，以发现所有可用的功能并找到最适合您需求的功能。
+ Aspose.Words for .NET 提供了多种用于处理和操作 Word 文档的功能。除了检测数字签名之外，您还可以使用该库从文档中提取文本、图像或元数据、应用格式更改、合并文档、将文档转换为不同的格式等等。您可以探索[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)发现所有可用的功能并找到最适合您需求的功能。
 
 #### 使用 Aspose.Words for .NET 检测数字签名有哪些限制？
 

@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-tables/insert-table-directly/
 ---
 
-En este tutorial, aprenderemos cómo insertar directamente una tabla en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá insertar tablas directamente en sus documentos de Word mediante programación.
+En este tutorial, aprenderemos cómo insertar directamente una tabla en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá insertar tablas directamente en sus documentos de Word mediante programación.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.

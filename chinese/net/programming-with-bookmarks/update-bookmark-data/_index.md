@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-在本教程中，我们将逐步指导您了解和实现 Aspose.Words for .NET 的“更新 Word 文档中的书签数据”功能。此功能允许您使用 C# 源代码更新 Word 文档中书签的内容和属性。
+在本教程中，我们将逐步指导您了解和实现 Aspose.Words for .NET 的更新 Word 文档中的书签数据功能。此功能允许您使用 C# 源代码更新 Word 文档中书签的内容和属性。
 
 ## 要求
 
@@ -62,7 +62,7 @@ bookmark.Text = "This is a new bookmarked text.";
 doc.Save(dataDir + "UpdatedDocument.docx");
 ```
 
-此代码会将修改后的文档以“UpdatedDocument.docx”名称保存在与原始文档相同的目录中。
+此代码会将修改后的文档保存在与原始文档相同的目录中，名称为“UpdatedDocument.docx”。
 
 ### 使用 Aspose.Words for .NET 更新书签数据的示例源代码
 

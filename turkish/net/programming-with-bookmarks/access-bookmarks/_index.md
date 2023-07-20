@@ -59,7 +59,7 @@ Aspose.Words for .NET kullanarak yer imlerine erişimi gösteren tam örnek kayn
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Access Bookmarks özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Dizin ve ad kullanarak bir belge yüklemek ve yer imlerine erişmek için adım adım bir kılavuz izledik.
+Bu makalede, Aspose.Words for .NET'in Yer İşaretlerine Erişim özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Dizin ve ad kullanarak bir belge yüklemek ve yer imlerine erişmek için adım adım bir kılavuz izledik.
 
 ### Word belgesindeki yer imlerine erişim için SSS
 
@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 #### S: Bir Word belgesindeki yer imlerine nasıl erişebilirim?
 
- C: Bir Word belgesindeki yer imlerine,`Bookmarks`mülkiyeti`Range` nesne. Yer imlerine dizine veya ada göre erişebilirsiniz. İşte örnek bir kod:
+ C: Bir Word belgesindeki yer imlerine,`Bookmarks` mülkiyeti`Range` nesne. Yer imlerine dizine veya ada göre erişebilirsiniz. İşte örnek bir kod:
 
 - Dizine göre erişim:
 
@@ -94,7 +94,7 @@ C: Aspose.Words for .NET'teki yer imi erişim özelliğini kullanmak için Aspos
 
 #### S: Bir Word belgesindeki yer imlerine erişmenin başka yolları var mı?
 
- Y: Evet, yer imlerine dizine veya ada göre erişmenin yanı sıra, bir döngü kullanarak belgedeki tüm yer imleri arasında geçiş yapabilirsiniz. Belgedeki toplam yer imlerinin sayısını,`Count`mülkiyeti`Bookmarks` Toplamak. Ardından dizini kullanarak her yer imine erişebilirsiniz. İşte örnek bir kod:
+ Y: Evet, yer imlerine dizine veya ada göre erişmenin yanı sıra, bir döngü kullanarak belgedeki tüm yer imleri arasında geçiş yapabilirsiniz. Belgedeki toplam yer imlerinin sayısını,`Count` mülkiyeti`Bookmarks` Toplamak. Ardından dizini kullanarak her yer imine erişebilirsiniz. İşte örnek bir kod:
 
 ```csharp
 int bookmarkCount = doc.Range.Bookmarks.Count;

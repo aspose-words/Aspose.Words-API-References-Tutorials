@@ -1,13 +1,12 @@
 ---
-title: Horisontellt regelformat
-linktitle: Horisontellt regelformat
+title: Horisontellt regelformat i Word-dokument
+linktitle: Horisontellt regelformat i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du formaterar horisontella regler i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
-
 det här omfattande exemplet kommer du att lära dig hur du formaterar en horisontell regel i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna anpassa justering, bredd, höjd, färg och andra egenskaper för en horisontell regel.
 
 ## Förutsättningar
@@ -71,3 +70,25 @@ Kom ihåg att justera koden efter dina specifika krav och utöka den med ytterli
 Grattis! Du har framgångsrikt lärt dig hur man formaterar en horisontell regel i ett Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du nu anpassa utseendet på horisontella regler för att förbättra ditt dokuments visuella layout.
 
 Experimentera med olika formateringsalternativ för att uppnå önskad stil och effekt för dina horisontella regler.
+
+### Vanliga frågor om horisontellt regelformat i word-dokument
+
+#### F: Kan jag använda olika färger på den horisontella regeln?
+
+A: Absolut! Med Aspose.Words för .NET kan du enkelt anpassa färgen på den horisontella regeln genom att ställa in egenskapen Color till önskat färgvärde. Detta gör att du kan matcha den horisontella regeln med ditt dokuments övergripande design.
+
+#### F: Är det möjligt att justera bredden och höjden på den horisontella linjalen?
+
+S: Ja, du har full kontroll över den horisontella linjalens bredd och höjd. Genom att ändra egenskaperna WidthPercent och Height kan du uppnå önskade dimensioner för den horisontella regeln.
+
+#### F: Kan jag ändra justeringen av den horisontella regeln i dokumentet?
+
+A: Visst! Aspose.Words för .NET gör att du kan ange justeringen av den horisontella regeln med hjälp av egenskapen Alignment. Du kan välja mellan olika alternativ som Center, Left, Right och Justified.
+
+#### F: Kan jag använda skuggning eller bakgrundsfärg på den horisontella regeln?
+
+S: Ja, du kan lägga till skuggning eller bakgrundsfärg till den horisontella regeln. Som standard är egenskapen NoShade inställd på true, men du kan ställa in den på false och definiera skuggningen med lämpliga metoder.
+
+#### F: Kan jag infoga flera horisontella regler i ett enda dokument?
+
+A: Absolut! Du kan infoga flera horisontella regler i ett Word-dokument med Aspose.Words för .NET. Upprepa helt enkelt stegen i handledningen efter behov för att lägga till så många horisontella regler som du behöver.

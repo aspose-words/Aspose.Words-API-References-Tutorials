@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Этот код создает экземпляр`HtmlSaveOptions` и наборы`CssStyleSheetType` к`CssStyleSheetType.External` для создания внешней таблицы стилей CSS и`CssClassNamePrefix` к`"pfx_"`префикс`"pfx_"` для имен классов CSS.
+ Этот код создает экземпляр`HtmlSaveOptions` и наборы`CssStyleSheetType` к`CssStyleSheetType.External`для создания внешней таблицы стилей CSS и`CssClassNamePrefix` к`"pfx_"` префикс`"pfx_"` для имен классов CSS.
 
 ## Шаг 4: Преобразование и сохранение документа в формате HTML
 

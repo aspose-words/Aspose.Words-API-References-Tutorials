@@ -82,7 +82,7 @@ Section section = doc.Sections[0];
 
 #### P: ¿Cómo elimino el contenido de la sección en Aspose.Words para .NET?
 
- R: Para borrar el contenido de la sección, puede usar la sección`ClearContent` método:
+ R: Para borrar el contenido de la sección, puede utilizar la sección`ClearContent` método:
 
 ```csharp
 section.ClearContent();

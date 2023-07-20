@@ -77,7 +77,7 @@ Ora puoi tranquillamente applicare una licenza da un flusso e sfruttare le poten
 
 #### D: Dove posso trovare la documentazione di licenza per Aspose.Words per .NET?
 
-A: Puoi trovare la documentazione di licenza per Aspose. Parole per .NET sul sito Web ufficiale della documentazione di Aspose. La documentazione fornisce istruzioni dettagliate ed esempi per l'applicazione delle licenze, inclusa l'applicazione delle licenze dai file.
+ A: Puoi trovare la documentazione di licenza per Aspose. Parole per .NET sul[Riferimenti API](https://reference.aspose.com/words/net/). La documentazione fornisce istruzioni dettagliate ed esempi per l'applicazione delle licenze, inclusa l'applicazione delle licenze dai file.
 
 #### D: Quali formati di file supporta Aspose.Words per .NET per i file di licenza?
 

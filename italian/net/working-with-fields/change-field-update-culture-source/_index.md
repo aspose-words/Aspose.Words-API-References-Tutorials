@@ -23,7 +23,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 2: inserire contenuto con impostazioni locali specifiche
+## Passaggio 2: inserire contenuto con impostazioni internazionali specifiche
 Successivamente, imposta le impostazioni locali su tedesco e inserisci i campi con la formattazione della data:
 
 ```csharp

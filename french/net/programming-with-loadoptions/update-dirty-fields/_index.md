@@ -1,13 +1,12 @@
 ---
-title: Mettre à jour les champs modifiés
-linktitle: Mettre à jour les champs modifiés
+title: Mettre à jour les champs sales dans le document Word
+linktitle: Mettre à jour les champs sales dans le document Word
 second_title: API de traitement de documents Aspose.Words
 description: Apprenez à charger un document Word en mettant à jour les champs modifiés avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/update-dirty-fields/
 ---
-
 Lors du traitement de texte avec des documents Word dans une application C#, il peut être nécessaire de mettre à jour les champs modifiés pour afficher les valeurs les plus récentes. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement mettre à jour les champs modifiés lors du chargement du document à l'aide de LoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document en mettant à jour les champs modifiés à l'aide de LoadOptions.
 
 ## Comprendre la bibliothèque Aspose.Words
@@ -53,3 +52,26 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 ## Conclusion
 
 Dans ce guide, nous avons expliqué comment télécharger un document en mettant à jour les champs modifiés à l'aide de la bibliothèque Aspose.Words pour .NET. En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement appliquer cette fonctionnalité dans votre application C#. La mise à jour des champs modifiés lors du chargement du document affichera les valeurs les plus récentes dans votre document Word.
+
+
+### FAQ pour la mise à jour des champs modifiés dans un document Word
+
+#### Q : Que sont les champs modifiés dans un document Word ?
+
+R : Les champs modifiés dans un document Word font référence aux champs qui ont été modifiés mais qui n'ont pas été mis à jour pour refléter les dernières valeurs. En mettant à jour ces champs, vous vous assurez que le document affiche toujours des informations exactes et à jour.
+
+#### Q : Puis-je personnaliser les options de chargement dans Aspose.Words pour .NET ?
+
+R : Absolument ! Aspose.Words fournit une gamme d'options de chargement qui peuvent être personnalisées pour répondre à vos besoins spécifiques, ce qui en fait un outil flexible et puissant pour le traitement de documents.
+
+#### Q : Comment la mise à jour des champs modifiés profite-t-elle à mon application ?
+
+R : La mise à jour des champs modifiés garantit que votre application C# affiche les données les plus récentes dans les documents Word, améliorant ainsi l'expérience utilisateur globale et la précision des informations.
+
+#### Q : Aspose.Words peut-il gérer d'autres formats de document que Word ?
+
+R : Oui, Aspose.Words prend en charge divers formats de documents, notamment PDF, HTML, EPUB, etc., ce qui en fait une solution complète pour la manipulation de documents sur différentes plates-formes.
+
+#### Q : Aspose.Words est-il adapté à la gestion de documents Word volumineux ?
+
+R : Absolument ! Aspose.Words est conçu pour gérer des documents de différentes tailles et ses performances sont optimisées pour traiter efficacement des documents Word volumineux.

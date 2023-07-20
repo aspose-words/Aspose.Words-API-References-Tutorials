@@ -101,7 +101,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### P: ¿Cómo puedo usar grupos capturados en el patrón de reemplazo durante la búsqueda y reemplazo de texto en Aspose.Words para .NET?
 
- R: Para usar grupos capturados en el patrón de reemplazo durante la búsqueda y reemplazo de texto en Aspose.Words para .NET, puede habilitar el`UseSubstitutions`propiedad de la`FindReplaceOptions` objeto. Esto le permite hacer referencia a los grupos capturados usando`$1`, `$2`, etc. en el patrón de reemplazo:
+ R: Para usar grupos capturados en el patrón de reemplazo durante la búsqueda y reemplazo de texto en Aspose.Words para .NET, puede habilitar el`UseSubstitutions` propiedad de la`FindReplaceOptions` objeto. Esto le permite hacer referencia a los grupos capturados usando`$1`, `$2`, etc. en el patrón de reemplazo:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
@@ -114,7 +114,7 @@ R: El código fuente de ejemplo demuestra el uso de la función "Reconocer y sus
 
 #### P: ¿Dónde puedo encontrar más información y ejemplos sobre el uso de expresiones regulares en Aspose.Words para .NET?
 
-R: Para obtener más información y ejemplos sobre el uso de expresiones regulares en Aspose.Words para .NET, puede consultar la documentación oficial y el repositorio de GitHub de Aspose.Words. La documentación proporciona explicaciones detalladas y ejemplos de código para varios escenarios que involucran expresiones regulares y manipulación de texto en Aspose.Words para .NET.
+R: Para obtener más información y ejemplos sobre el uso de expresiones regulares en Aspose.Words para .NET, puede consultar el[Referencias de Aspose.Words para la API de .NET](https://reference.aspose.com/words/net/). La documentación proporciona explicaciones detalladas y ejemplos de código para varios escenarios que involucran expresiones regulares y manipulación de texto en Aspose.Words para .NET.
 
 #### P: ¿Puedo manipular otros aspectos del documento en función de los grupos capturados durante la búsqueda y reemplazo de texto?
 

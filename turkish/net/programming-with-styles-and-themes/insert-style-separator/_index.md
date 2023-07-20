@@ -98,15 +98,15 @@ Ortamı kurmak için, geliştirme ortamınızda Aspose.Words for .NET'in kurulu 
 
 #### Özel bir stili nasıl oluşturabilir ve yapılandırabilirim?
 
- Özel bir stil oluşturmak için,`Styles.Add` yöntemi`Document` nesne. Stil tipini belirtin (örn.`StyleType.Paragraph`) ve stil için bir ad girin. Oluşturulduktan sonra, görünümünü yapılandırmak için stil nesnesinin yazı tipi özelliklerini değiştirebilirsiniz.
+ Özel bir stil oluşturmak için,`Styles.Add` yöntemi`Document` nesne. Stil tipini belirtin (örn.`StyleType.Paragraph`ve stil için bir ad girin. Oluşturulduktan sonra, görünümünü yapılandırmak için stil nesnesinin yazı tipi özelliklerini değiştirebilirsiniz.
 
-#### Stil ayırıcıyı nasıl eklerim?
+#### Bir stil ayırıcıyı nasıl eklerim?
 
  Stil ayırıcı eklemek için`InsertStyleSeparator` yöntemi`DocumentBuilder` nesne. Bu yöntem, önceki paragrafın stilinin sonunu ve sonraki paragrafın stilinin başlangıcını işaretleyen bir ayırıcı ekler.
 
 #### Metnin farklı bölümlerine farklı stilleri nasıl uygulayabilirim?
 
- ayarlayarak metnin farklı bölümlerine farklı stiller uygulayabilirsiniz.`ParagraphFormat.StyleName`mülkiyeti`DocumentBuilder`nesne. Metni yazmadan önce, stil adını istediğiniz stile ayarlayabilirsiniz ve ardından gelen metin buna göre biçimlendirilecektir.
+ ayarlayarak metnin farklı bölümlerine farklı stiller uygulayabilirsiniz.`ParagraphFormat.StyleName` mülkiyeti`DocumentBuilder` nesne. Metni yazmadan önce, stil adını istediğiniz stile ayarlayabilirsiniz ve ardından gelen metin buna göre biçimlendirilecektir.
 
 #### Belgeyi farklı formatlarda kaydedebilir miyim?
 

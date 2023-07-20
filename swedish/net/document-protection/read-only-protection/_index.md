@@ -98,7 +98,7 @@ S: För att tillämpa skrivskyddat skydd på ett Word-dokument med Aspose.Words 
 1.  Skapa en instans av`Document` klass och a`DocumentBuilder` objekt.
 2.  Använd`DocumentBuilder` att skriva innehåll till dokumentet.
 3.  Ställ in ett lösenord för dokumentet med hjälp av`SetPassword` metod för`WriteProtection` objekt.
-4.  Ställ in`ReadOnlyRecommended`egendom av`WriteProtection` invända mot`true` att rekommendera att du öppnar dokumentet som skrivskyddat.
+4.  Ställ in`ReadOnlyRecommended` egendom av`WriteProtection` invända mot`true` att rekommendera att du öppnar dokumentet som skrivskyddat.
 5.  Tillämpa skrivskyddat med hjälp av`Protect` metod för`Document` objekt, som anger`ProtectionType` som`ReadOnly`.
 6.  Spara det skyddade dokumentet med hjälp av`Save` metod för`Document` objekt.
 

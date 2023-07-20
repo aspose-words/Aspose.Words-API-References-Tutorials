@@ -10,7 +10,7 @@ url: /tr/net/working-with-formfields/form-fields-get-by-name/
 
 Bu adım adım eğitimde, bir Word belgesinden form alanlarını ada göre almak için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
+ Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı adresinden indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## 1. Adım: Belge Nesnesini Başlatma
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## 2. Adım: Form Alanlarını Alma
 
- Ardından, şuraya erişin:`FormFields`mülkiyeti`Range` tüm form alanlarını almak için belgedeki nesne:
+ Ardından, şuraya erişin:`FormFields` mülkiyeti`Range` tüm form alanlarını almak için belgedeki nesne:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

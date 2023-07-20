@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Abschluss
 
- In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET die in einem Word-Dokument vorhandenen Stile abruft und darauf zugreift. Durch die Nutzung der`Styles`Eigentum der`Document` Objekt haben wir die Sammlung von Stilen abgerufen und sie durchlaufen, um ihre Namen anzuzeigen. Diese Funktion bietet wertvolle Einblicke in die in einem Dokument verwendeten Stile und ermöglicht weitere Anpassungen und Analysen.
+ In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET die in einem Word-Dokument vorhandenen Stile abruft und darauf zugreift. Durch die Nutzung der`Styles` Eigentum der`Document` Objekt haben wir die Sammlung von Stilen abgerufen und sie durchlaufen, um ihre Namen anzuzeigen. Diese Funktion bietet wertvolle Einblicke in die in einem Dokument verwendeten Stile und ermöglicht weitere Anpassungen und Analysen.
 
 Durch die Nutzung der leistungsstarken API von Aspose.Words für .NET können Entwickler Dokumentstile einfach manipulieren und damit arbeiten und bieten so eine verbesserte Kontrolle über Formatierung und Dokumentverarbeitung.
 

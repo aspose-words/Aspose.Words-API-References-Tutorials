@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Steg 3: Ställ in standardteckensnitt
- Nu kan du ange vilket standardteckensnitt som ska användas vid rendering genom att skapa en instans av`FontSettings` klass och ställa in`DefaultFontName`egendom av`DefaultFontSubstitution` invända mot`DefaultFontSubstitution` objekt`SubstitutionSettings` av`FontSettings`.
+ Nu kan du ange vilket standardteckensnitt som ska användas vid rendering genom att skapa en instans av`FontSettings` klass och ställa in`DefaultFontName` egendom av`DefaultFontSubstitution` invända mot`DefaultFontSubstitution` objekt`SubstitutionSettings` av`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -74,7 +74,7 @@ S: Ja, du kan ange ett standardteckensnitt för andra utdataformat som DOCX elle
 
 #### F: Hur kan jag kontrollera standardteckensnittet som anges i Aspose.Words?
 
- S: För att kontrollera standardteckensnittet som anges i Aspose.Words, kan du använda`DefaultFontName`egendom av`PdfOptions` klass och hämta namnet på det konfigurerade teckensnittet.
+ S: För att kontrollera standardteckensnittet som anges i Aspose.Words, kan du använda`DefaultFontName` egendom av`PdfOptions` klass och hämta namnet på det konfigurerade teckensnittet.
 
 #### F: Är det möjligt att ange olika standardteckensnitt för varje del av dokumentet?
 

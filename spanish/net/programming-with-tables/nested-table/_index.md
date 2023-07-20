@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-tables/nested-table/
 ---
 
-En este tutorial, aprenderemos cómo crear una tabla anidada en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá crear tablas anidadas en sus documentos de Word mediante programación.
+En este tutorial, aprenderemos cómo crear una tabla anidada en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá crear tablas anidadas en sus documentos de Word mediante programación.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.

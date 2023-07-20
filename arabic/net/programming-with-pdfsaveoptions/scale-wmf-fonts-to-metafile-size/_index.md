@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## الخطوة 3: تكوين خيارات عرض ملف التعريف
 
- لتمكين أو تعطيل تحجيم خط WMF إلى حجم ملف التعريف ، نحتاج إلى تكوين ملف`MetafileRenderingOptions`هدف. في هذا المثال ، نقوم بتعطيل تحجيم الخط عن طريق تعيين الامتداد`ScaleWmfFontsToMetafileSize` ملكية ل`false`.
+ لتمكين أو تعطيل تحجيم خط WMF إلى حجم ملف التعريف ، نحتاج إلى تكوين ملف`MetafileRenderingOptions`هدف. في هذا المثال ، نقوم بتعطيل تحجيم الخط عن طريق تعيين الامتداد`ScaleWmfFontsToMetafileSize` الملكية ل`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -97,7 +97,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 
  قم بتحميل المستند الذي تريد معالجته باستخدام ملف`Document` class وحدد المسار إلى مستند Word في دليل المستندات المحدد.
 
- قم بتكوين خيارات عرض ملف التعريف عن طريق إنشاء مثيل لملف`MetafileRenderingOptions` الطبقة ووضع`ScaleWmfFontsToMetafileSize` ملكية ل`true` لتمكين تحجيم خطوط WMF إلى حجم ملف التعريف ، أو إلى`false` لتعطيل هذه الميزة.
+ قم بتكوين خيارات عرض ملف التعريف عن طريق إنشاء مثيل لملف`MetafileRenderingOptions` الطبقة ووضع`ScaleWmfFontsToMetafileSize` الملكية ل`true` لتمكين تحجيم خطوط WMF إلى حجم ملف التعريف ، أو إلى`false` لتعطيل هذه الميزة.
 
  قم بتكوين خيارات الحفظ بتنسيق PDF بإنشاء مثيل لملف`PdfSaveOptions` فئة واستخدام خيارات عرض ملف التعريف التي تم تكوينها مسبقًا.
 

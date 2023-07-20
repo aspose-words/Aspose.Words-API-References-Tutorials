@@ -33,7 +33,7 @@ fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
 ## Étape 4 : Appliquer les paramètres de police
- Ensuite, vous devez appliquer les paramètres de police à votre document à l'aide de la`FontSettings`propriété de la`Document` classe.
+ Ensuite, vous devez appliquer les paramètres de police à votre document à l'aide de la`FontSettings` propriété de la`Document` classe.
 
 ```csharp
 doc.FontSettings = fontSettings;

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 
-I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder Untangle Row Bookmarks-funktionen i Aspose.Words för .NET-biblioteket. Denna funktion gör det möjligt att sätta slutet av bokmärken på rader på samma rad som början på bokmärken.
+den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder Untangle Row Bookmarks-funktionen i Aspose.Words för .NET-biblioteket. Denna funktion gör det möjligt att sätta slutet av bokmärken på rader på samma rad som början på bokmärken.
 
 ## Förutsättningar
 
@@ -62,7 +62,7 @@ Här är den fullständiga källkoden för att reda ut bokmärken från rader me
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	// Detta utför den anpassade uppgiften att sätta radbokmärkets ändar i samma rad som bokmärket börjar.
+	//Detta utför den anpassade uppgiften att sätta radbokmärkets ändar i samma rad som bokmärket börjar.
 	Untangle(doc);
 
 	// Nu kan vi enkelt ta bort rader efter ett bokmärke utan att skada någon annan rads bokmärken.

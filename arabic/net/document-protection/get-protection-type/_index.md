@@ -50,7 +50,7 @@ ProtectionType protectionType = doc.ProtectionType;
 
 ج: لاسترداد نوع الحماية لمستند باستخدام Aspose.Words for .NET ، يمكنك اتباع الخطوات التالية:
 1.  قم بتحميل المستند باستخدام ملف`Document` فصل.
-2.  الوصول إلى`ProtectionType`ممتلكات`Document` كائن لاسترداد نوع الحماية.
+2.  الوصول إلى`ProtectionType` ممتلكات`Document`كائن لاسترداد نوع الحماية.
 
 #### س: هل يمكنني تحديد ما إذا كان المستند محميًا للنماذج أو حقول النموذج باستخدام خاصية ProtectionType؟
 

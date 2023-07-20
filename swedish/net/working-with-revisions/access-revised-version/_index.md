@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Hur kommer jag åt den reviderade versionen av ett dokument i Aspose.Words för .NET?
 
- A: Använd`RevisionsView`egendom av`Document` objekt för att komma åt den reviderade versionen av dokumentet. Du kan ställa in värdet på`RevisionsView` egendom till`RevisionsView.Final` för att visa den slutliga versionen utan ändringarna.
+ A: Använd`RevisionsView` egendom av`Document` objekt för att komma åt den reviderade versionen av dokumentet. Du kan ställa in värdet på`RevisionsView` egendom till`RevisionsView.Final` för att visa den slutliga versionen utan ändringarna.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### F: Hur bläddrar jag i dokumentrevisioner i Aspose.Words för .NET?
 
- A: Använd a`foreach` loop för att iterera genom de versioner som finns i dokumentet. Du kan använda`Revisions`egendom av`Document` objekt för att få en samling av alla versioner av dokumentet.
+ A: Använd a`foreach` loop för att iterera genom de versioner som finns i dokumentet. Du kan använda`Revisions` egendom av`Document` objekt för att få en samling av alla versioner av dokumentet.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -106,7 +106,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### F: Hur kontrollerar man om ett stycke är ett listobjekt i Aspose.Words för .NET?
 
- A: Använd`IsListItem`egendom av`Paragraph` objekt för att kontrollera om ett stycke är ett listobjekt. De`IsListItem` egendom returnerar`true` om stycket är ett listobjekt, annars returneras det`false`.
+ A: Använd`IsListItem` egendom av`Paragraph` objekt för att kontrollera om ett stycke är ett listobjekt. De`IsListItem` egendom returnerar`true` om stycket är ett listobjekt, annars returneras det`false`.
 
 ```csharp
 if (paragraph.IsListItem)

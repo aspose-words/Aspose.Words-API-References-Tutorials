@@ -2,7 +2,7 @@
 title: Establecer el formato de fila de la tabla
 linktitle: Establecer el formato de fila de la tabla
 second_title: API de procesamiento de documentos de Aspose.Words
-description: Guía paso a paso para configurar el formato de fila de la tabla usando Aspose.Words para .NET.
+description: Guía paso a paso para configurar el formato de fila de la tabla con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
@@ -34,7 +34,7 @@ builder. InsertCell();
 ```
 
 ## Paso 4: Defina el formato de línea
- Ahora podemos establecer el formato de fila accediendo a la`RowFormat` objeto de la`DocumentBuilder` objeto. Podemos establecer la altura de la línea y los márgenes (rellenos) usando las propiedades correspondientes.
+ Ahora podemos establecer el formato de fila accediendo a la`RowFormat` objeto de la`DocumentBuilder` objeto. Podemos establecer la altura de la línea y los márgenes (rellenos) utilizando las propiedades correspondientes.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;

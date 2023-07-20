@@ -74,7 +74,7 @@ Bu kod, metin giriş formu alanlarını düz metin olarak dışa aktararak belge
 
 	Directory.CreateDirectory(imagesDir);
 
-	// Form alanlarını HTML giriş öğeleri olarak değil, düz metin olarak dışa aktarma seçeneğini ayarlayın.
+	// Form alanlarını HTML giriş öğeleri olarak değil, düz metin olarak dışa aktarma seçeneğini belirleyin.
 	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 	{
 		ExportTextInputFormFieldAsText = true, ImagesFolder = imagesDir

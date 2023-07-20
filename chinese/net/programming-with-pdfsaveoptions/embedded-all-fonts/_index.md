@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptio
 #### 问：在 PDF 文档中嵌入字体有什么好处？
 答：在 PDF 文档中嵌入字体的好处是：
 
-确保一致的文档外观：嵌入字体可确保文档完全按照设计显示，无论系统上可用的字体如何。
+确保文档外观一致：嵌入字体可确保文档完全按照设计显示，无论系统上可用的字体如何。
 
 格式保留：嵌入字体保留文档格式和布局，避免字体替换和外观变化。
 

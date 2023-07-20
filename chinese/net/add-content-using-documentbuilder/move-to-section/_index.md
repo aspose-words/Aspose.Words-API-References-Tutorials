@@ -1,14 +1,13 @@
 ---
-title: 移至部分
-linktitle: 移至部分
+title: 移至 Word 文档中的部分
+linktitle: 移至 Word 文档中的部分
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 中的“移至节”操作 Word 文档中的节和段落的分步指南。
+description: 使用 Aspose.Words for .NET 的 Word 文档中的“移至节”功能操作 Word 文档中的节和段落的分步指南。
 type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/move-to-section/
 ---
-
-在此示例中，我们将使用提供的 C# 源代码逐步引导您了解如何使用 Aspose.Words for .NET 的“移至部分”功能。此功能允许您导航和操作 Word 文档中的不同部分。请按照以下步骤将此功能集成到您的应用程序中。
+在此示例中，我们将使用提供的 C# 源代码逐步引导您了解如何使用 Aspose.Words for .NET 的 Word 文档中的移至部分功能。此功能允许您导航和操作 Word 文档中的不同部分。请按照以下步骤将此功能集成到您的应用程序中。
 
 ## 步骤 1：创建一个新文档并添加一个部分
 
@@ -98,3 +97,28 @@ Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 
 就这样 ！您现在已经了解了如何使用提供的源代码来使用 Aspose.Words for .NET 的移动到部分功能。您现在可以将此功能集成到您自己的应用程序中，并动态操作 Word 文档的部分和段落。
 
+## 结论
+
+在此示例中，我们探索了 Aspose.Words for .NET 的“移至部分”功能。我们学习了如何创建新文档、向其中添加部分以及使用 DocumentBuilder 类导航到 Word 文档中的特定部分和段落。此功能为开发人员提供了强大的工具，可以使用 Aspose.Words for .NET 以编程方式操作 Word 文档的内容和结构。
+
+### Word 文档中移动到部分的常见问题解答
+
+#### 问：Aspose.Words for .NET 中“移至部分”功能的用途是什么？
+
+答：Aspose.Words for .NET 中的“移至部分”功能允许开发人员以编程方式导航到并操作 Word 文档中的不同部分。它提供了在文档的特定部分插入、修改或删除内容的能力。
+
+#### 问：如何将 DocumentBuilder 移动到 Word 文档中的特定部分？
+
+答：要将 DocumentBuilder 移动到 Word 文档中的特定部分，可以使用 DocumentBuilder 类的 MoveToSection 方法。此方法将目标节的索引作为参数，并将光标置于该节的开头。
+
+#### 问：使用“移至部分”功能移至特定部分后，我可以添加或修改内容吗？
+
+答：是的，一旦使用 MoveToSection 将 DocumentBuilder 定位到所需的部分，您就可以使用 DocumentBuilder 类的各种方法（例如 Writeln、Write 或 InsertHtml）来添加或修改该部分的内容。
+
+#### 问：如何使用“移至节”功能处理文档中的现有段落？
+
+答：您可以使用 Document 构造函数加载包含段落的现有文档，然后使用 FirstSection.Body.Paragraphs 属性从所需部分访问段落集合。
+
+#### 问：我可以使用“移至节”功能将 DocumentBuilder 光标移至节中的特定段落吗？
+
+答：是的，您可以使用 MoveToParagraph 方法将 DocumentBuilder 光标移动到节中的特定段落。该方法以目标段落的索引和段落内的字符位置（偏移量）作为参数。

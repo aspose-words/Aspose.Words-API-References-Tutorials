@@ -51,7 +51,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- I detta steg implementerar vi`HandlePageSavingCallback` klass som implementerar`IPageSavingCallback` gränssnitt. Du kan anpassa den här klassen genom att lägga till dina specifika åtgärder i`PageSaving` metod. Du kan komma åt sidinformation via`args.PageIndex`egendom av`PageSavingArgs` objekt skickas som ett argument.
+ I detta steg implementerar vi`HandlePageSavingCallback` klass som implementerar`IPageSavingCallback` gränssnitt. Du kan anpassa den här klassen genom att lägga till dina specifika åtgärder i`PageSaving` metod. Du kan komma åt sidinformation via`args.PageIndex` egendom av`PageSavingArgs` objekt skickas som ett argument.
 
 ## Steg 5: Spara sidor som bilder
 

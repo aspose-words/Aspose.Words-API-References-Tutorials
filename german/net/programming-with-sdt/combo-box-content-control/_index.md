@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Schritt 3: Elemente zum Kombinationsfeld hinzufügen
- Fügen Sie Elemente zum Kombinationsfeld hinzu, indem Sie verwenden`ListItems`Eigentum der`StructuredDocumentTag` Jedes Element wird durch ein dargestellt`SdtListItem` Objekt, das einen Anzeigetext und einen Wert annimmt. In diesem Beispiel fügen wir drei Elemente zum Kombinationsfeld hinzu.
+ Fügen Sie Elemente zum Kombinationsfeld hinzu, indem Sie verwenden`ListItems` Eigentum der`StructuredDocumentTag` Jedes Element wird durch ein dargestellt`SdtListItem` Objekt, das einen Anzeigetext und einen Wert annimmt. In diesem Beispiel fügen wir drei Elemente zum Kombinationsfeld hinzu.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

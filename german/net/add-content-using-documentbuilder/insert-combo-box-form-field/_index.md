@@ -1,13 +1,12 @@
 ---
-title: Kombinationsfeld-Formularfeld einfügen
-linktitle: Kombinationsfeld-Formularfeld einfügen
+title: Kombinationsfeld-Formularfeld in Word-Dokument einfügen
+linktitle: Kombinationsfeld-Formularfeld in Word-Dokument einfügen
 second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Kombinationsfeld-Formularfelder in Word-Dokumente einfügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
-
 In diesem umfassenden Beispiel erfahren Sie, wie Sie mit Aspose.Words für .NET ein Kombinationsfeld-Formularfeld in ein Word-Dokument einfügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieser Anleitung werden Sie in der Lage sein, Ihren Dokumenten Kombinationsfeld-Formularfelder mit anpassbaren Eigenschaften hinzuzufügen.
 
 ## Voraussetzungen
@@ -61,3 +60,25 @@ Denken Sie daran, den Code an Ihre spezifischen Anforderungen anzupassen und ihn
 
 ## Abschluss
 Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET ein Kombinationsfeld-Formularfeld in ein Word-Dokument einfügen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie Ihre Dokumente jetzt mit interaktiven Kombinationsfeld-Formularfeldern erweitern.
+
+### FAQs zum Einfügen eines Kombinationsfeld-Formularfelds in ein Word-Dokument
+
+#### F: Kann ich mehrere Kombinationsfeld-Formularfelder in ein einzelnes Dokument einfügen?
+
+A: Auf jeden Fall! Mit Aspose.Words für .NET können Sie beliebig viele Kombinationsfeld-Formularfelder in ein Word-Dokument einfügen. Wiederholen Sie einfach den Einfügevorgang, um mehrere interaktive Kombinationsfelder hinzuzufügen.
+
+#### F: Kann ich die Liste der Elemente im Kombinationsfeld-Formularfeld anpassen?
+
+A: Ja, Sie haben die volle Kontrolle über die Liste der Elemente im Kombinationsfeld-Formularfeld. Sie können die Elemente als Array von Zeichenfolgen definieren und Benutzern verschiedene Auswahlmöglichkeiten bieten.
+
+#### F: Kann ich das standardmäßig ausgewählte Element im Kombinationsfeld-Formularfeld festlegen?
+
+A: Auf jeden Fall! Durch Angabe des ausgewählten Indexparameters in der InsertComboBox-Methode können Sie das standardmäßig ausgewählte Element im Kombinationsfeld-Formularfeld festlegen. Benutzer sehen das vorausgewählte Element, wenn sie das Dokument öffnen.
+
+#### F: Sind Kombinationsfeld-Formularfelder mit anderen Dateiformaten wie PDF kompatibel?
+
+A: Ja, mit Aspose.Words für .NET eingefügte Kombinationsfeld-Formularfelder sind mit verschiedenen Dateiformaten kompatibel, einschließlich DOCX und PDF. Dadurch können Sie Ihre Dokumente in verschiedenen Formaten exportieren und dabei die interaktiven Kombinationsfelder beibehalten.
+
+#### F: Ist Aspose.Words für .NET sowohl für Desktop- als auch für Webanwendungen geeignet?
+
+A: Ja, Aspose.Words für .NET ist eine vielseitige Bibliothek, die sowohl für Desktop- als auch für Webanwendungen geeignet ist. Unabhängig davon, ob Sie eine Windows-Anwendung oder ein webbasiertes System erstellen, können Sie die Bibliothek mühelos integrieren.

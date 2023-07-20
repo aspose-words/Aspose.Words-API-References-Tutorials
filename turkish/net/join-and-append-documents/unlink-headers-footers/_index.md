@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: Kaynak Belgedeki Üstbilgiler ve Altbilgilerin Bağlantısını Kaldırın
 
- Kaynak belgedeki üstbilgiler ve altbilgiler ile devam eden hedef belgenin üstbilgiler ve altbilgiler arasındaki bağlantıyı kaldırmak için,`LinkToPrevious`mülkiyeti`HeadersFooters` kaynak belgenin ilk bölümünde toplama`false`.
+ Kaynak belgedeki üstbilgiler ve altbilgiler ile devam eden hedef belgenin üstbilgiler ve altbilgiler arasındaki bağlantıyı kaldırmak için,`LinkToPrevious` mülkiyeti`HeadersFooters` kaynak belgenin ilk bölümünde toplama`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);

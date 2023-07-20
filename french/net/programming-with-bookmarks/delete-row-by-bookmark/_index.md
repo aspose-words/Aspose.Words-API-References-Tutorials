@@ -61,8 +61,8 @@ R : Si le signet spécifié n'existe pas dans le document, l'extrait de code re
 
 #### Q : La bibliothèque Aspose.Words est-elle gratuite ?
 
-R : La bibliothèque Aspose.Words est une bibliothèque commerciale, et vous pouvez avoir besoin d'une licence valide pour l'utiliser dans vos projets. Vous pouvez visiter le site Web officiel d'Aspose pour en savoir plus sur leurs options de licence et leurs tarifs.
+ R : La bibliothèque Aspose.Words est une bibliothèque commerciale, et vous pouvez avoir besoin d'une licence valide pour l'utiliser dans vos projets. Vous pouvez visiter le[Aspose.Words pour les références d'API .NET](https://reference.aspose.com/words/net/) pour en savoir plus sur leurs options de licence et leurs tarifs.
 
 #### Q : Puis-je supprimer des lignes d'un tableau dans une section spécifique du document Word ?
 
-R : Oui, vous pouvez supprimer des lignes d'un tableau dans une section spécifique d'un document Word. Vous pouvez modifier l'extrait de code fourni pour cibler une section spécifique en utilisant la plage ou le signet approprié dans cette section.
+: Oui, vous pouvez supprimer des lignes d'un tableau dans une section spécifique d'un document Word. Vous pouvez modifier l'extrait de code fourni pour cibler une section spécifique en utilisant la plage ou le signet approprié dans cette section.

@@ -13,12 +13,12 @@ url: /tr/net/document-formatting/
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Asya ve Latin Metinleri Arasındaki Boşluk](./space-between-asian-and-latin-text/) | Aspose.Words for .NET ile belgenizdeki Asya ve Latin metinleri arasındaki boşluğu otomatik olarak nasıl ayarlayacağınızı öğrenin. |
-| [Asya Tipografi Satır Sonu Grubu](./asian-typography-line-break-group/) | Asya Tipografisi satır sonu grubunu Aspose.Words for .NET ile nasıl kullanacağınızı öğrenin. |
-| [Paragraf Biçimlendirme](./paragraph-formatting/) | Aspose.Words for .NET ile paragraflarınıza nasıl özel biçimlendirme uygulayacağınızı öğrenin. |
-| [Çok Düzeyli Liste Biçimlendirme](./multilevel-list-formatting/) | Aspose.Words for .NET ile çok düzeyli bir liste oluşturmayı ve özel biçimlendirme uygulamayı öğrenin. |
-| [Paragraf Stili Uygula](./apply-paragraph-style/) | Aspose.Words for .NET kullanarak bir paragraf stilini nasıl uygulayacağınızı öğrenin. |
-| [Paragrafa Kenarlıklar ve Gölgelendirme Uygula](./apply-borders-and-shading-to-paragraph/) | Aspose.Words for .NET ile bir paragrafa kenarlık ve gölgeleme uygulamayı öğrenin. |
-| [Asya Paragraf Aralığını ve Girintilerini Değiştirin](./change-asian-paragraph-spacing-and-indents/) | Aspose.Words for .NET ile Asya paragraf aralığını ve girintileri nasıl değiştireceğinizi öğrenin. |
-| [Kılavuza Yapış](./snap-to-grid/) | Aspose.Words for .NET ile Grid'e Yapış özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz. |
-| [Paragraf Stili Ayırıcısını Alın](./get-paragraph-style-separator/) | Aspose.Words for .NET ile paragraf stili ayırıcıyı nasıl alacağınızı öğrenin. |
+| [Word Belgesinde Asya ve Latin Metinleri Arasındaki Boşluk](./space-between-asian-and-latin-text/) | Aspose.Words for .NET ile kelime belgesindeki Asya ve Latin metinleri arasındaki boşluğu otomatik olarak nasıl ayarlayacağınızı öğrenin. |
+| [Word Belgesinde Asya Tipografisi Satır Sonu Grubu](./asian-typography-line-break-group/) | Aspose.Words for .NET ile word belgesinde Asya Tipografisi satır sonu grubunu nasıl kullanacağınızı öğrenin. |
+| [Word Belgesinde Paragraf Biçimlendirme](./paragraph-formatting/) | Aspose.Words for .NET ile word belgesindeki paragraflarınıza nasıl özel biçimlendirme uygulayacağınızı öğrenin. |
+| [Word Belgesinde Çok Düzeyli Liste Biçimlendirme](./multilevel-list-formatting/) | Aspose.Words for .NET ile çok düzeyli bir liste oluşturmayı ve word belgesinde özel biçimlendirme uygulamayı öğrenin. |
+| [Word Belgesinde Paragraf Stili Uygula](./apply-paragraph-style/) | Aspose.Words for .NET kullanarak word belgesinde paragraf stilini nasıl uygulayacağınızı öğrenin. |
+| [Word Belgesinde Paragrafa Kenarlıklar ve Gölgelendirme Uygulayın](./apply-borders-and-shading-to-paragraph/) | Aspose.Words for .NET ile word belgesindeki bir paragrafa kenarlık ve gölgeleme uygulamayı öğrenin. |
+| [Word Belgesinde Asya Paragraf Aralığını ve Girintilerini Değiştirme](./change-asian-paragraph-spacing-and-indents/) | Aspose.Words for .NET ile kelime belgesindeki Asya paragraf aralığını ve girintileri nasıl değiştireceğinizi öğrenin. |
+| [Word Belgesinde Kılavuza Yapış](./snap-to-grid/) | Aspose.Words for .NET ile word belgesi özelliğinde Snap to Grid'in C# kaynak kodunu açıklayan adım adım kılavuz. |
+| [Word Belgesinde Paragraf Stili Ayırıcısını Alın](./get-paragraph-style-separator/) | Aspose.Words for .NET ile word belgesinde paragraf stili ayırıcıyı nasıl alacağınızı öğrenin. |

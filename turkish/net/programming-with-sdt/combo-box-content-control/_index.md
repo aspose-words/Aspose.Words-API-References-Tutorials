@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## 3. Adım: Açılan Kutuya Öğeler Ekleyin
- kullanarak birleşik giriş kutusuna öğe ekleyin.`ListItems`mülkiyeti`StructuredDocumentTag` Her öğe bir ile temsil edilir`SdtListItem` bir görüntüleme metni ve bir değer alan nesne. Bu örnekte, açılan kutuya üç öğe ekliyoruz.
+ kullanarak birleşik giriş kutusuna öğe ekleyin.`ListItems` mülkiyeti`StructuredDocumentTag` Her öğe bir ile temsil edilir`SdtListItem` bir görüntüleme metni ve bir değer alan nesne. Bu örnekte, açılan kutuya üç öğe ekliyoruz.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

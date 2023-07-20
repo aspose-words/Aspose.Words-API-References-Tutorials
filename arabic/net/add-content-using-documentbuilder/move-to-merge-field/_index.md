@@ -1,14 +1,13 @@
 ---
-title: نقل إلى دمج الحقل
-linktitle: نقل إلى دمج الحقل
+title: نقل إلى دمج الحقل في مستند Word
+linktitle: نقل إلى دمج الحقل في مستند Word
 second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: تعرف على كيفية تنفيذ ميزة Move To Merge Field في Aspose.Words for .NET باستخدام دليل خطوة بخطوة.
+description: تعرف على كيفية تنفيذ ميزة Move To Merge Field في مستند Word في Aspose.Words for .NET باستخدام دليل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
-
-في هذا المثال ، سوف نستكشف ميزة Move To Merge Field الخاصة بـ Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تمكن المطورين من إنشاء وتعديل وتحويل مستندات Word برمجيًا. تتيح لنا ميزة Move To Merge Field التنقل لدمج الحقول داخل مستند وتنفيذ عمليات مختلفة عليها.
+في هذا المثال ، سوف نستكشف ميزة Move To Merge Field in word document الخاصة بـ Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تمكن المطورين من إنشاء وتعديل وتحويل مستندات Word برمجيًا. تتيح لنا ميزة Move To Merge Field التنقل لدمج الحقول داخل مستند وتنفيذ عمليات مختلفة عليها.
 
 
 ## شرح شفرة المصدر خطوة بخطوة
@@ -81,3 +80,24 @@ builder.Write(" Text immediately after the field.");
 
 لقد اكتشفنا ميزة Move To Merge Field الخاصة بـ Aspose.Words for .NET. لقد تعلمنا كيفية التنقل لدمج الحقول داخل مستند باستخدام فئة DocumentBuilder وتنفيذ العمليات عليها. هذه الميزة مفيدة عند معالجة الكلمات برمجيًا مع الدمج
 
+### الأسئلة الشائعة للانتقال إلى حقل الدمج في مستند Word
+
+#### س: ما الغرض من ميزة Move To Merge Field في Aspose.Words for .NET؟
+
+ج: تتيح ميزة Move To Merge Field في Aspose.Words for .NET للمطورين التنقل لدمج الحقول داخل مستند Word وتنفيذ عمليات مختلفة عليها برمجيًا. حقول الدمج هي عناصر نائبة خاصة تُستخدم في مستندات Word لعمليات دمج المراسلات.
+
+#### س: كيف يمكنني إدراج حقل دمج في مستند Word باستخدام Aspose.Words for .NET؟
+
+ج: يمكنك استخدام أسلوب InsertField لفئة DocumentBuilder لإدراج حقل دمج في المستند. بعد إدراج حقل الدمج ، يمكنك إضافة محتوى ، مثل النص ، قبل الحقل أو بعده باستخدام أسلوب الكتابة.
+
+#### س: كيف يمكنني نقل مؤشر منشئ المستند إلى حقل دمج معين؟
+
+ج: لنقل مؤشر منشئ المستند إلى حقل دمج محدد ، استخدم طريقة MoveToField لفئة DocumentBuilder ومرر الحقل كمعامل. سيضع هذا المؤشر مباشرة بعد حقل الدمج.
+
+#### س: هل يمكنني إضافة نص داخل حقل دمج باستخدام ميزة Move To Merge Field؟
+
+ج: لا ، تضع ميزة Move To Merge Field مؤشر منشئ المستند مباشرةً بعد حقل الدمج. لإضافة نص داخل حقل الدمج ، يمكنك استخدام طريقة DocumentBuilder.MoveTo لتحريك المؤشر إلى عقدة FieldStart أو FieldSeparator لحقل الدمج.
+
+#### س: كيف يمكنني إجراء عمليات دمج البريد باستخدام Aspose.Words for .NET؟
+
+ج: يوفر Aspose.Words for .NET دعمًا شاملاً لعمليات دمج البريد. يمكنك استخدام فئة MailMerge لإجراء دمج البريد باستخدام بيانات من مصادر مختلفة مثل المصفوفات أو مجموعات البيانات أو مصادر البيانات المخصصة.

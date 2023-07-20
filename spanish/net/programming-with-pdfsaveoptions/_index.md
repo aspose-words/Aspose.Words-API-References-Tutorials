@@ -17,7 +17,7 @@ Ya sea que desee convertir documentos de Word a PDF para distribuirlos en línea
 | Título | Descripción |
 | --- | --- |
 | [Mostrar el título del documento en la barra de título de la ventana](./display-doc-title-in-window-titlebar/) | Aprenda a mostrar el título del documento en la barra de título de la ventana al convertir a PDF con Aspose.Words para .NET. |
-| [Advertencias de procesamiento de PDF](./pdf-render-warnings/) | Guía paso a paso para manejar las advertencias de procesamiento de PDF con Aspose.Words para .NET. |
+| [Advertencias de procesamiento de PDF](./pdf-render-warnings/) | Guía paso a paso para lidiar con las advertencias de procesamiento de PDF con Aspose.Words para .NET. |
 | [Agregar firma digital a PDF utilizando el titular del certificado](./digitally-signed-pdf-using-certificate-holder/) | Aprenda a firmar digitalmente un PDF con un titular de certificado con Aspose.Words para .NET. |
 | [Incrustar fuentes en documento PDF](./embedded-all-fonts/) | Guía paso a paso para incrustar todas las fuentes en un PDF usando Aspose.Words para .NET. |
 | [Incrustar fuentes de subconjunto en documento PDF](./embedded-subset-fonts/) | Guía paso a paso para incrustar subconjuntos de fuentes en un PDF usando Aspose.Words para .NET. |

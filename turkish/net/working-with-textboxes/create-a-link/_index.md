@@ -64,9 +64,9 @@ C: Aspose.Words for .NET kullanarak Word'deki metin kutularını bağlamak için
 
  A: İki metin kutusu arasında bir bağlantı oluşturmak için,`Next` birinci metin kutusunun özelliği ikinci metin kutusuna. kullanarak bağlantı hedefinin geçerliliğini önceden kontrol ettiğinizden emin olun.`IsValidLinkTarget()` yöntem.
 
-#### S: Metin kutuları dışındaki öğeler arasında bağlantılar oluşturmak mümkün mü?
+#### S: Metin kutuları dışındaki öğeler arasında bağlantılar oluşturmak mümkün müdür?
 
-C: Evet, .NET için Aspose.Words kütüphanesini kullanarak paragraflar, tablolar, resimler vb. gibi farklı öğeler arasında bağlantılar oluşturmak mümkündür. İşlem, bağlamak istediğiniz öğeye göre değişiklik gösterecektir.
+C: Evet, .NET için Aspose.Words kütüphanesini kullanarak paragraflar, tablolar, resimler vb. gibi farklı öğeler arasında bağlantılar oluşturmak mümkündür. İşlem, bağlamak istediğiniz belirli öğeye göre değişir.
 
 #### S: Aspose.Words for .NET kullanılarak Word'deki metin kutularına başka hangi işlevler eklenebilir?
 

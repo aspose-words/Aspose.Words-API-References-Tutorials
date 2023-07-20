@@ -98,4 +98,4 @@ R: Un nodo secundario en Node.js se refiere a un nodo que está contenido direct
 
 #### P: ¿Cómo examinar todos los nodos secundarios de un nodo?
 
- R: Para recorrer todos los nodos secundarios de un nodo específico en Node.js, puede usar un`for` bucle para iterar a través de la lista de nodos secundarios devueltos por el`childNodes` propiedad. Luego puede acceder a las propiedades y valores de cada nodo secundario dentro del bucle.
+ R: Para recorrer todos los nodos secundarios de un nodo específico en Node.js, puede usar un`for` bucle para iterar a través de la lista de nodos secundarios devueltos por el`childNodes` propiedad. Luego puede acceder a las propiedades y valores de cada nodo secundario dentro del ciclo.

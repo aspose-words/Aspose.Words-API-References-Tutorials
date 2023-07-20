@@ -31,7 +31,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 "BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
 ## 3. Adım: "KeepWithNext" seçeneğini etkinleştirin
-Tabloyu bir arada tutmak ve birden fazla sayfaya bölünmesini önlemek için tablonun son satırının son paragrafları hariç tablodaki her paragraf için "KeepWithNext" seçeneğini etkinleştirmemiz gerekiyor. Aşağıdaki kodu kullanın:
+Tabloyu bir arada tutmak ve birden fazla sayfaya bölünmesini önlemek için tablonun son satırının son paragrafları hariç tablodaki her paragraf için "KeepWithNext" seçeneğini etkinleştirmemiz gerekir. Aşağıdaki kodu kullanın:
 
 ```csharp
 foreach(Cell cell in table.GetChildNodes(NodeType.Cell, true))

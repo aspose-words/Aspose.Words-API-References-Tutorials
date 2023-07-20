@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## Passaggio 2: Inserimento dei campi di unione
 
- Usiamo un generatore di documenti`DocumentBuilder`per inserire i campi di unione necessari. Questi campi di unione imposteranno una condizione per mostrare o nascondere il contenuto del segnalibro a seconda del valore di`showHide` variabile:
+ Usiamo un generatore di documenti`DocumentBuilder` per inserire i campi di unione necessari. Questi campi di unione imposteranno una condizione per mostrare o nascondere il contenuto del segnalibro a seconda del valore di`showHide` variabile:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -170,7 +170,7 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### D: La libreria Aspose.Words è gratuita?
 
-R: La libreria Aspose.Words è una libreria commerciale e richiede una licenza valida per essere utilizzata nei tuoi progetti. Puoi controllare il sito Web ufficiale di Aspose per saperne di più sulle opzioni di licenza e sui prezzi.
+ R: La libreria Aspose.Words è una libreria commerciale e richiede una licenza valida per essere utilizzata nei tuoi progetti. Puoi controllare[Aspose.Words per riferimenti API .NET](https://reference.aspose.com/words/net/) per ulteriori informazioni sulle opzioni di licenza e sui prezzi.
 
 #### D: Sono disponibili altre librerie per l'elaborazione di testi con documenti Word in .NET?
 

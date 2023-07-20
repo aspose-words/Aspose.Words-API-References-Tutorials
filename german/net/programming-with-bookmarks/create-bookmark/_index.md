@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 2: Erstellen des Hauptlesezeichens
 
- Wir benutzen das`StartBookmark` Methode zum Starten eines Hauptlesezeichens und der`EndBookmark` Methode, um es zu beenden. Zwischendurch können wir Text und andere Lesezeichen hinzufügen:
+ Wir benutzen das`StartBookmark` Methode zum Starten eines Hauptlesezeichens und der`EndBookmark` Methode, um es zu beenden. Dazwischen können wir Text und andere Lesezeichen hinzufügen:
 
 ```csharp
 builder. StartBookmark("My Bookmark");

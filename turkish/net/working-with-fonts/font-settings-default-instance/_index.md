@@ -76,11 +76,11 @@ Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde varsayılan yazı ti
 
 #### S: Aspose.Words'te varsayılan yazı tipi boyutunu belirtebilir miyim?
 
- C: Evet, Aspose.Words'te varsayılan yazı tipi boyutunu şu şekilde belirleyebilirsiniz:`DefaultFontSize`mülkiyeti`FontSettings` sınıf. İstediğiniz nokta boyutunu ayarlayabilirsiniz.
+ C: Evet, Aspose.Words'te varsayılan yazı tipi boyutunu şu şekilde belirleyebilirsiniz:`DefaultFontSize` mülkiyeti`FontSettings` sınıf. İstediğiniz nokta boyutunu ayarlayabilirsiniz.
 
 #### S: Aspose.Words'te varsayılan yazı tipi rengini ayarlamak mümkün mü?
 
- C: Evet, Aspose.Words'te varsayılan yazı tipi rengini`DefaultColor`mülkiyeti`FontSettings` sınıf. Rengi, RGB değerlerini veya önceden tanımlanmış adları kullanarak belirleyebilirsiniz.
+ C: Evet, Aspose.Words'te varsayılan yazı tipi rengini`DefaultColor` mülkiyeti`FontSettings` sınıf. Rengi, RGB değerlerini veya önceden tanımlanmış adları kullanarak belirleyebilirsiniz.
 
 #### S: Varsayılan yazı tipi ayarları tüm belgeler için geçerli mi?
 

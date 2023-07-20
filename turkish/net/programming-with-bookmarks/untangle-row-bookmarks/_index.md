@@ -62,7 +62,7 @@ Aspose.Words for .NET kullanarak yer imlerini satırlardan çözmek için tam ö
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	// Bu, satır yer imi uçlarını yer imi başlangıçlarıyla aynı satıra yerleştirme özel görevini gerçekleştirir.
+	//Bu, satır yer imi uçlarını yer imi başlangıçlarıyla aynı satıra yerleştirme özel görevini gerçekleştirir.
 	Untangle(doc);
 
 	// Artık diğer satırların yer imlerine zarar vermeden bir yer imi ile satırları kolayca silebiliriz.

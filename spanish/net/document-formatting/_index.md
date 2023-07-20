@@ -13,12 +13,12 @@ El tutorial cubre varios aspectos, como formatear texto, párrafos, tablas, imá
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Espacio entre texto asiático y latino](./space-between-asian-and-latin-text/) | Aprenda a ajustar automáticamente el espacio entre el texto asiático y latino en su documento con Aspose.Words para .NET. |
-| [Grupo de salto de línea de tipografía asiática](./asian-typography-line-break-group/) | Aprenda a usar el grupo de salto de línea de tipografía asiática con Aspose.Words para .NET. |
-| [Formato de párrafo](./paragraph-formatting/) | Aprenda a aplicar formato personalizado a sus párrafos con Aspose.Words para .NET. |
-| [Formato de lista multinivel](./multilevel-list-formatting/) | Aprenda a crear una lista de varios niveles y aplicar formato personalizado con Aspose.Words para .NET. |
-| [Aplicar estilo de párrafo](./apply-paragraph-style/) | Aprenda a aplicar un estilo de párrafo con Aspose.Words para .NET. |
-| [Aplicar bordes y sombreado al párrafo](./apply-borders-and-shading-to-paragraph/) | Aprenda a aplicar bordes y sombreado a un párrafo con Aspose.Words para .NET. |
-| [Cambiar el espaciado y las sangrías de los párrafos asiáticos](./change-asian-paragraph-spacing-and-indents/) | Aprenda a cambiar el espacio entre párrafos asiáticos y las sangrías con Aspose.Words para .NET. |
-| [Encajar a la cuadricula](./snap-to-grid/) | Guía paso a paso para explicar el código fuente de C# de la función Snap to Grid con Aspose.Words para .NET. |
-| [Obtener separador de estilo de párrafo](./get-paragraph-style-separator/) | Aprenda a obtener el separador de estilo de párrafo con Aspose.Words para .NET. |
+| [Espacio entre texto asiático y latino en documento de Word](./space-between-asian-and-latin-text/) | Aprenda a ajustar automáticamente el espacio entre el texto asiático y latino en un documento de Word con Aspose.Words para .NET. |
+| [Grupo de salto de línea de tipografía asiática en documento de Word](./asian-typography-line-break-group/) | Aprenda a usar el grupo de salto de línea de tipografía asiática en un documento de Word con Aspose.Words para .NET. |
+| [Formato de párrafo en documento de Word](./paragraph-formatting/) | Aprenda a aplicar formato personalizado a sus párrafos en un documento de Word con Aspose.Words para .NET. |
+| [Formato de lista multinivel en documento de Word](./multilevel-list-formatting/) | Aprenda a crear una lista de varios niveles y aplicar formato personalizado en un documento de Word con Aspose.Words para .NET. |
+| [Aplicar estilo de párrafo en un documento de Word](./apply-paragraph-style/) | Aprenda a aplicar un estilo de párrafo en un documento de Word usando Aspose.Words para .NET. |
+| [Aplicar bordes y sombreado al párrafo en un documento de Word](./apply-borders-and-shading-to-paragraph/) | Aprenda a aplicar bordes y sombreado a un párrafo en un documento de Word con Aspose.Words para .NET. |
+| [Cambiar el espacio entre párrafos asiáticos y las sangrías en un documento de Word](./change-asian-paragraph-spacing-and-indents/) | Aprenda a cambiar el espacio entre párrafos asiáticos y las sangrías en un documento de Word con Aspose.Words para .NET. |
+| [Ajustar a la cuadrícula en un documento de Word](./snap-to-grid/) | Guía paso a paso para explicar el código fuente de C# de Ajustar a cuadrícula en la función de documento de Word con Aspose.Words para .NET. |
+| [Obtenga el separador de estilo de párrafo en un documento de Word](./get-paragraph-style-separator/) | Aprenda cómo obtener el separador de estilo de párrafo en un documento de Word con Aspose.Words para .NET. |

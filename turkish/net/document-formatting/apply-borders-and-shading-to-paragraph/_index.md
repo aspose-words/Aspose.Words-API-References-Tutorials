@@ -1,14 +1,13 @@
 ---
-title: Paragrafa Kenarlıklar ve Gölgelendirme Uygula
-linktitle: Paragrafa Kenarlıklar ve Gölgelendirme Uygula
+title: Word Belgesinde Paragrafa Kenarlıklar ve Gölgelendirme Uygulayın
+linktitle: Word Belgesinde Paragrafa Kenarlıklar ve Gölgelendirme Uygulayın
 second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile bir paragrafa kenarlık ve gölgeleme uygulamayı öğrenin.
+description: Aspose.Words for .NET ile word belgesindeki bir paragrafa kenarlık ve gölgeleme uygulamayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
-
-Bu öğreticide, size Aspose.Words for .NET'in işlevselliğini kullanarak bir paragrafa nasıl kenarlık ve gölgeleme uygulayacağınızı göstereceğiz. Kaynak kodunu anlamak ve biçimlendirme değişikliklerini uygulamak için aşağıdaki adımları izleyin.
+Bu eğitimde, Aspose.Words for .NET'in işlevselliğini kullanarak word belgesindeki bir paragrafa nasıl kenarlık ve gölgeleme uygulayacağınızı göstereceğiz. Kaynak kodunu anlamak ve biçimlendirme değişikliklerini uygulamak için aşağıdaki adımları izleyin.
 
 ## 1. Adım: Belgeyi oluşturma ve yapılandırma
 
@@ -89,3 +88,26 @@ Aspose.Words for .NET ile Apply Borders ve Shading to Paragraph özelliğinin ta
 	doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ```
+
+## Çözüm
+
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki bir paragrafa kenarlık ve gölgeleme uygulamayı öğrendik. Paragrafı yapılandırarak`Borders` Ve`Shading` özellikler, paragraf için kenarlık stilini, çizgi rengini ve dolgu rengini ayarlayabildik. Aspose.Words for .NET, paragrafların görünümünü özelleştirmek ve belgelerinizin görsel sunumunu geliştirmek için güçlü biçimlendirme yetenekleri sağlar.
+
+### SSS
+
+#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki bir paragrafa kenarlıkları ve gölgelendirmeyi nasıl uygularım?
+
+C: Aspose.Words for .NET kullanarak bir Word belgesindeki bir paragrafa kenarlıklar ve gölgeleme uygulamak için şu adımları izleyin:
+1.  Yeni bir belge oluşturun ve`DocumentBuilder` nesne.
+2.  erişerek paragraf kenarlıklarını yapılandırın.`Borders` mülkiyeti`ParagraphFormat` ve her bir taraf için kenarlık stilini ayarlama.
+3.  erişerek paragraf dolgusunu yapılandırın.`Shading` mülkiyeti`ParagraphFormat` ve doku ve dolgu renklerini belirleme.
+4.  kullanarak paragrafa içerik ekleyin.`Write` yöntemi`DocumentBuilder`.
+5.  kullanarak belgeyi kaydedin.`Save` yöntem.
+
+#### S: Paragrafın her bir tarafı için kenarlık stilini nasıl ayarlarım?
+
+ C: Paragrafın her bir tarafı için kenarlık stilini ayarlamak üzere`Borders` mülkiyeti`ParagraphFormat` ve ayarla`LineStyle` her biri için mülk`BorderType` (Örneğin,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). gibi farklı çizgi stilleri belirleyebilirsiniz.`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, vesaire.
+
+#### S: Paragraf gölgelendirmesi için doku ve dolgu renklerini nasıl belirlerim?
+
+ A: Paragraf gölgelendirmesi için doku ve dolgu renklerini belirtmek üzere`Shading` mülkiyeti`ParagraphFormat` ve ayarla`Texture` özelliğini istenen bir doku indeksine (örn.`TextureIndex.TextureDiagonalCross` ). Ayrıca ayarlayabilirsiniz`BackgroundPatternColor` Ve`ForegroundPatternColor` özellikleri kullanarak istenen renklere`System.Drawing.Color` sınıf.

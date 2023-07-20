@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 
-Bildpunkter är en vanlig funktion i Word-dokument för att lägga till anpassade punkter. I vissa fall kan det dock vara nödvändigt att inaktivera registrering av bildpunkter när du manipulerar dokument med Aspose.Words Library för .NET. I denna steg-för-steg-guide kommer vi att förklara hur man använder Aspose.Words C#-källkod för .NET för att inaktivera lagring av bildpunkter med hjälp av DocSaveOptions-sparalternativ.
+Bildpunkter är en vanlig funktion i Word-dokument för att lägga till anpassade punkter. I vissa fall kan det dock vara nödvändigt att inaktivera bildpunktsregistrering när du manipulerar dokument med Aspose.Words Library för .NET. I denna steg-för-steg-guide kommer vi att förklara hur man använder Aspose.Words C#-källkod för .NET för att inaktivera lagring av bildpunkter med hjälp av DocSaveOptions-sparalternativ.
 
 ## Förstå Aspose.Words-biblioteket
 

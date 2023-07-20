@@ -17,11 +17,14 @@ Document merging is the process of combining two or more separate Word documents
 
 Before we dive into document merging, let's ensure we have Aspose.Words for Java correctly set up in our project. Follow these steps to get started:
 
-1. **Obtain Aspose.Words for Java**: Visit the Aspose Releases (https://releases.aspose.com/words/java) to obtain the latest version of the library.
+### Obtain Aspose.Words for Java:
+ Visit the Aspose Releases (https://releases.aspose.com/words/java) to obtain the latest version of the library.
 
-2. **Add Aspose.Words Library**: Include the Aspose.Words JAR file in your Java project's classpath.
+### Add Aspose.Words Library:
+ Include the Aspose.Words JAR file in your Java project's classpath.
 
-3. **Initialize Aspose.Words**: In your Java code, import the necessary classes from Aspose.Words, and you're ready to start merging documents.
+### Initialize Aspose.Words:
+ In your Java code, import the necessary classes from Aspose.Words, and you're ready to start merging documents.
 
 ## 3. Merging Two Documents
 
@@ -56,11 +59,14 @@ In the above example, we loaded two documents using the `Document` class and the
 
 When merging documents, there might be cases where the styles and formatting of the source documents clash. Aspose.Words for Java offers several import format modes to handle such situations:
 
-- `ImportFormatMode.KEEP_SOURCE_FORMATTING`: Retains the formatting of the source document.
+- `ImportFormatMode.KEEP_SOURCE_FORMATTING`: 
+Retains the formatting of the source document.
 
-- `ImportFormatMode.USE_DESTINATION_STYLES`: Applies the styles of the destination document.
+- `ImportFormatMode.USE_DESTINATION_STYLES`: 
+Applies the styles of the destination document.
 
-- `ImportFormatMode.KEEP_DIFFERENT_STYLES`: Preserves styles that are different between the source and destination documents.
+- `ImportFormatMode.KEEP_DIFFERENT_STYLES`: 
+Preserves styles that are different between the source and destination documents.
 
 Choose the appropriate import format mode based on your merging requirements.
 
@@ -95,11 +101,14 @@ public class DocumentMerger {
 
 Sometimes, it's necessary to insert a page break or section break between merged documents to maintain proper document structure. Aspose.Words provides options to insert breaks during merging:
 
-- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`: Merges the documents without any breaks.
+- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`:
+Merges the documents without any breaks.
 
-- `doc1.appendDocument(doc2, ImportFormatMode.USE_DESTINATION_STYLES);`: Inserts a continuous break between the documents.
+- `doc1.appendDocument(doc2, ImportFormatMode.USE_DESTINATION_STYLES);`: 
+Inserts a continuous break between the documents.
 
-- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_DIFFERENT_STYLES);`: Inserts a page break when styles differ between documents.
+- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_DIFFERENT_STYLES);`: 
+Inserts a page break when styles differ between documents.
 
 Choose the appropriate method based on your specific requirements.
 
@@ -174,42 +183,42 @@ Aspose.Words for Java empowers Java developers with the ability to merge Word do
 
 ## 11. FAQs 
 
-1. **Can I merge documents with different formats and styles?**
+### Can I merge documents with different formats and styles?
 
    Yes, Aspose.Words for Java handles merging documents with varying formats and styles. The library intelligently resolves conflicts, allowing you to merge documents from different sources seamlessly.
 
-2. **Does Aspose.Words support merging large documents efficiently?**
+### Does Aspose.Words support merging large documents efficiently?
 
    Aspose.Words for Java is designed to handle large documents efficiently. It employs optimized algorithms for document merging, ensuring high performance even with extensive content.
 
-3. **Can I merge password-protected documents using Aspose.Words for Java?**
+### Can I merge password-protected documents using Aspose.Words for Java?
 
    Yes, Aspose.Words for Java supports merging password-protected documents. Ensure that you provide the correct passwords to access and merge these documents.
 
-4. **Is it possible to merge specific sections from multiple documents?**
+### Is it possible to merge specific sections from multiple documents?
 
    Yes, Aspose.Words allows you to selectively merge specific sections from different documents. This gives you granular control over the merging process.
 
-5. **Can I merge documents with tracked changes and comments?**
+### Can I merge documents with tracked changes and comments?
 
     Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
 
-6. **Does Aspose.Words preserve the original formatting of merged documents?**
+### Does Aspose.Words preserve the original formatting of merged documents?
 
     Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
 
-7. **Can I merge documents from non-Word file formats, such as PDF or RTF?**
+### Can I merge documents from non-Word file formats, such as PDF or RTF?
 
     Aspose.Words is primarily designed for working with Word documents. To merge documents from non-Word file formats, consider using the appropriate Aspose product for that specific format, such as Aspose.PDF or Aspose.RTF.
 
-8. **How can I handle document versioning during merging?**
+### How can I handle document versioning during merging?
 
     Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
 
-9. **Is Aspose.Words for Java compatible with Java 8 and newer versions?**
+### Is Aspose.Words for Java compatible with Java 8 and newer versions?
 
     Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
 
-10. **Does Aspose.Words support merging documents from remote sources like URLs?**
+### Does Aspose.Words support merging documents from remote sources like URLs?
 
     Yes, Aspose.Words for Java can load documents from various sources, including URLs, streams, and file paths. You can merge documents fetched from remote locations seamlessly.

@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- In questo passaggio, usiamo il`Theme`proprietà del`Document`oggetto per ottenere il`Theme` oggetto. Quindi possiamo accedere alle diverse proprietà del tema come i caratteri principali (`MajorFonts`), i caratteri secondari (`MinorFonts`) e i colori accentati (`Colors`).
+ In questo passaggio, usiamo il`Theme` proprietà del`Document`oggetto per ottenere il`Theme` oggetto. Quindi possiamo accedere alle diverse proprietà del tema come i caratteri principali (`MajorFonts`), i caratteri secondari (`MinorFonts`) e i colori accentati (`Colors`).
 
 ## Passaggio 4: visualizzare le proprietà del tema
 
@@ -68,7 +68,7 @@ Sentiti libero di esplorare più funzionalità di Aspose.Words per .NET per migl
 
 #### Come posso accedere alle proprietà del tema di un documento utilizzando Aspose.Words per .NET?
 
- Per accedere alle proprietà del tema di un documento, puoi utilizzare il file`Theme`proprietà del`Document` oggetto. Restituisce un`Theme` oggetto che contiene informazioni sui caratteri primari e secondari, nonché sui colori principali utilizzati nel tema del documento.
+ Per accedere alle proprietà del tema di un documento, puoi utilizzare il file`Theme` proprietà del`Document` oggetto. Restituisce un`Theme` oggetto che contiene informazioni sui caratteri primari e secondari, nonché sui colori principali utilizzati nel tema del documento.
 
 #### Come posso recuperare i caratteri primari e secondari del tema di un documento?
 
@@ -76,7 +76,7 @@ Puoi accedere ai caratteri primari e secondari del tema di un documento utilizza
 
 #### Posso ottenere i colori di accento utilizzati nel tema di un documento?
 
- Sì, puoi ottenere i colori di accento utilizzati nel tema di un documento accedendo al file`Colors`proprietà del`Theme` oggetto. Questa proprietà fornisce l'accesso ai colori principali, ad esempio`Accent1`, `Accent2`, `Accent3`e così via, che è possibile utilizzare per scopi di personalizzazione o analisi.
+ Sì, puoi ottenere i colori di accento utilizzati nel tema di un documento accedendo al file`Colors` proprietà del`Theme` oggetto. Questa proprietà fornisce l'accesso ai colori principali, ad esempio`Accent1`, `Accent2`, `Accent3`e così via, che è possibile utilizzare per scopi di personalizzazione o analisi.
 
 #### Come posso utilizzare le proprietà del tema recuperate?
 

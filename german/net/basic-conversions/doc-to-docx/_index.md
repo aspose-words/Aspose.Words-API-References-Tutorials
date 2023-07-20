@@ -10,7 +10,7 @@ url: /de/net/basic-conversions/doc-to-docx/
 
 In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess der Verwendung von Aspose.Words für .NET zum Konvertieren eines Word-Dokuments im .doc-Format in das Docx-Format. Wir erklären Ihnen den bereitgestellten C#-Quellcode und begleiten Sie bei der Implementierung in Ihren eigenen Projekten.
 
-Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
+ Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie[Aspose.Releases](https://releases.aspose.com/words/net/).
 
 ## Schritt 1: Einrichten der Entwicklungsumgebung
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 
 ## Schritt 3: Initialisieren des Dokumentobjekts
 
- In diesem Schritt initialisieren Sie die`Document`Objekt mit dem Pfad zu Ihrem Quelldokument im .doc-Format. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Verzeichnispfad, in dem sich Ihr Dokument befindet, und`"Document.doc"` mit dem Namen Ihres Quelldokuments. Hier ist der Codeausschnitt:
+ In diesem Schritt initialisieren Sie die`Document` Objekt mit dem Pfad zu Ihrem Quelldokument im .doc-Format. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Verzeichnispfad, in dem sich Ihr Dokument befindet, und`"Document.doc"` mit dem Namen Ihres Quelldokuments. Hier ist der Codeausschnitt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -37,7 +37,7 @@ Document doc = new Document(dataDir + "Document.doc");
 
 ## Schritt 4: Konvertieren des Dokuments in das Docx-Format
 
- Nachdem Sie nun das initialisiert haben`Document` Objekt, können Sie mit dem Konvertierungsprozess fortfahren. Aspose.Words für .NET bietet verschiedene Optionen und Einstellungen zur Anpassung, für eine grundlegende Konvertierung sind jedoch keine zusätzlichen Parameter erforderlich.
+ Nachdem Sie nun das initialisiert haben`Document`Objekt, können Sie mit dem Konvertierungsprozess fortfahren. Aspose.Words für .NET bietet verschiedene Optionen und Einstellungen zur Anpassung, für eine grundlegende Konvertierung sind jedoch keine zusätzlichen Parameter erforderlich.
 
 ## Schritt 5: Speichern des konvertierten Dokuments
 
@@ -77,7 +77,7 @@ Die Konvertierung von DOC in DOCX bietet mehrere Vorteile. DOCX ist das neuere D
 
 Um eine DOC-Datei mit Aspose.Words für .NET in DOCX zu konvertieren, können Sie die folgenden Schritte ausführen:
 
-Installieren Sie Aspose.Words für .NET: Beginnen Sie mit dem Herunterladen und Installieren von Aspose.Words für .NET von der offiziellen Website oder über NuGet.
+ Installieren Sie Aspose.Words für .NET: Beginnen Sie mit dem Herunterladen und Installieren von Aspose.Words für .NET von[Aspose.Releases](https://releases.aspose.com/words/net/) oder über NuGet.
 
 Laden Sie die DOC-Datei: Verwenden Sie die Document-Klasse, um die DOC-Datei in den Speicher zu laden.
 

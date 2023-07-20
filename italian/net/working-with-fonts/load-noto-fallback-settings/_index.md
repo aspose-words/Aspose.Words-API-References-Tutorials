@@ -61,7 +61,7 @@ In questo tutorial, abbiamo visto come caricare le impostazioni di sostituzione 
 
 ### Domande frequenti
 
-#### D: Come posso caricare le impostazioni di sostituzione dei font Noto in un documento Word con Aspose.Words?
+#### D: Come posso caricare le impostazioni di sostituzione dei caratteri Noto in un documento Word con Aspose.Words?
 
 R: Per caricare le impostazioni di sostituzione dei font Noto in un documento Word con Aspose.Words, devi prima scaricare i font Noto dalla fonte ufficiale. Quindi puoi utilizzare l'API Aspose.Words per caricare quei caratteri nel documento e configurarli per la sostituzione quando necessario.
 

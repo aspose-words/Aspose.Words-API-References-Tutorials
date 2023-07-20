@@ -92,18 +92,18 @@ S: Från en digital signatur i ett Word-dokument kan du komma åt olika informat
 
 #### F: Kan jag verifiera giltigheten av en digital signatur i ett Word-dokument med Aspose.Words för .NET?
 
- S: Ja, du kan verifiera giltigheten av en digital signatur i ett Word-dokument med Aspose.Words för .NET. Genom att komma åt`IsValid`egendom av`DigitalSignature` objekt kan du avgöra om signaturen är giltig eller inte.
+ S: Ja, du kan verifiera giltigheten av en digital signatur i ett Word-dokument med Aspose.Words för .NET. Genom att komma åt`IsValid` egendom av`DigitalSignature` objekt kan du avgöra om signaturen är giltig eller inte.
 
 #### F: Hur kan jag verifiera giltigheten av digitala signaturer i ett Word-dokument med Aspose.Words för .NET?
 
 S: För att verifiera giltigheten av digitala signaturer i ett Word-dokument med Aspose.Words för .NET kan du följa dessa steg:
 1.  Få tillgång till`DigitalSignatures` insamling av dokumentet.
 2.  Iterera genom varje`DigitalSignature` föremål i samlingen.
-3.  Använd`IsValid`egendom av`DigitalSignature` objekt för att kontrollera om signaturen är giltig.
+3.  Använd`IsValid` egendom av`DigitalSignature` objekt för att kontrollera om signaturen är giltig.
 
 #### F: Kan jag hämta undertecknarens kommentarer eller anledning till undertecknandet från en digital signatur i ett Word-dokument?
 
-S: Ja, du kan hämta undertecknarens kommentarer eller anledning till signering från en digital signatur i ett Word-dokument. De`Comments`egendom av`DigitalSignature` objekt ger tillgång till kommentarerna som anges av undertecknaren under signeringsprocessen.
+S: Ja, du kan hämta undertecknarens kommentarer eller anledning till signering från en digital signatur i ett Word-dokument. De`Comments` egendom av`DigitalSignature` objekt ger tillgång till kommentarerna som anges av undertecknaren under signeringsprocessen.
 
 #### F: Vilken typ av dokument stöder signaturverifieringsfunktionen i Aspose.Words för .NET?
 
@@ -111,7 +111,7 @@ S: Signaturverifieringsfunktionen i Aspose.Words för .NET stöder verifiering a
 
 #### F: Hur kan jag komma åt certifikatdetaljerna för en digital signatur i ett Word-dokument med Aspose.Words för .NET?
 
- S: För att komma åt certifikatdetaljerna för en digital signatur i ett Word-dokument med Aspose.Words för .NET kan du komma åt`CertificateHolder`egendom av`DigitalSignature` objekt. Från`CertificateHolder` objekt kan du hämta olika detaljer om certifikatet, såsom ämnesnamn och utfärdarens namn.
+ S: För att komma åt certifikatdetaljerna för en digital signatur i ett Word-dokument med Aspose.Words för .NET kan du komma åt`CertificateHolder` egendom av`DigitalSignature` objekt. Från`CertificateHolder` objekt kan du hämta olika detaljer om certifikatet, såsom ämnesnamn och utfärdarens namn.
 
 #### F: Kan jag anpassa visningen eller bearbetningen av digitala signaturer i ett Word-dokument med Aspose.Words för .NET?
 

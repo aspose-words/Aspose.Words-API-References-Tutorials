@@ -12,7 +12,7 @@ En este ejemplo, le mostraremos cómo usar la fuente de advertencia con Aspose.W
 
 ## Paso 1: Cargar el documento
 
- Cargaremos un documento existente que contenga advertencias usando el`Load` metodo de la`Document` clase.
+ Cargaremos un documento existente que contiene advertencias usando el`Load` metodo de la`Document` clase.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

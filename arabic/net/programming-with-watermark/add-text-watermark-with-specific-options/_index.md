@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## الخطوة 3: أضف علامة مائية نصية بخيارات محددة
 
- سنقوم بإنشاء مثيل لـ`TextWatermarkOptions`فئة وتعيين الخيارات المطلوبة للعلامة المائية النصية.
+ سنقوم بإنشاء مثيل لـ`TextWatermarkOptions` فئة وتعيين الخيارات المطلوبة للعلامة المائية النصية.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

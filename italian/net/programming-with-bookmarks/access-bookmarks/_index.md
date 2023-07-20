@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 #### D: Come posso accedere ai segnalibri in un documento di Word?
 
- R: Puoi accedere ai segnalibri in un documento Word utilizzando il file`Bookmarks`proprietà del`Range` oggetto. È possibile accedere ai segnalibri per indice o per nome. Ecco un codice di esempio:
+ R: Puoi accedere ai segnalibri in un documento Word utilizzando il file`Bookmarks` proprietà del`Range` oggetto. È possibile accedere ai segnalibri per indice o per nome. Ecco un codice di esempio:
 
 - Accesso per indice:
 
@@ -94,7 +94,7 @@ R: Per utilizzare la funzione di accesso ai segnalibri in Aspose.Words per .NET,
 
 #### D: Esistono altri modi per accedere ai segnalibri in un documento di Word?
 
- R: Sì, oltre ad accedere ai segnalibri per indice o per nome, puoi anche scorrere tutti i segnalibri nel documento utilizzando un ciclo. È possibile ottenere il numero totale di segnalibri nel documento utilizzando il file`Count`proprietà del`Bookmarks` collezione. Quindi puoi accedere a ciascun segnalibro utilizzando il file index. Ecco un codice di esempio:
+ R: Sì, oltre ad accedere ai segnalibri per indice o per nome, puoi anche scorrere tutti i segnalibri nel documento utilizzando un ciclo. È possibile ottenere il numero totale di segnalibri nel documento utilizzando il file`Count` proprietà del`Bookmarks` collezione. Quindi puoi accedere a ciascun segnalibro utilizzando il file index. Ecco un codice di esempio:
 
 ```csharp
 int bookmarkCount = doc.Range.Bookmarks.Count;

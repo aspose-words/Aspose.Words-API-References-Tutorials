@@ -1,14 +1,13 @@
 ---
-title: Aplicar bordes y sombreado al párrafo
-linktitle: Aplicar bordes y sombreado al párrafo
+title: Aplicar bordes y sombreado al párrafo en un documento de Word
+linktitle: Aplicar bordes y sombreado al párrafo en un documento de Word
 second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a aplicar bordes y sombreado a un párrafo con Aspose.Words para .NET.
+description: Aprenda a aplicar bordes y sombreado a un párrafo en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
-
-En este tutorial, le mostraremos cómo aplicar bordes y sombreado a un párrafo usando la funcionalidad de Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios de formato.
+En este tutorial, le mostraremos cómo aplicar bordes y sombreado a un párrafo en un documento de Word usando la funcionalidad de Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios de formato.
 
 ## Paso 1: Crear y configurar el documento
 
@@ -89,3 +88,26 @@ Aquí está el código fuente completo para la función Aplicar bordes y sombrea
 	doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ```
+
+## Conclusión
+
+En este tutorial, aprendimos cómo aplicar bordes y sombreado a un párrafo en un documento de Word usando Aspose.Words para .NET. Al configurar el párrafo`Borders` y`Shading` propiedades, pudimos establecer el estilo de borde, el color de línea y el color de relleno para el párrafo. Aspose.Words para .NET proporciona poderosas capacidades de formato para personalizar la apariencia de los párrafos y mejorar la representación visual de sus documentos.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo aplico bordes y sombreado a un párrafo en un documento de Word usando Aspose.Words para .NET?
+
+R: Para aplicar bordes y sombreado a un párrafo en un documento de Word utilizando Aspose.Words para .NET, siga estos pasos:
+1.  Crear un nuevo documento y un`DocumentBuilder` objeto.
+2.  Configure los bordes del párrafo accediendo a la`Borders` propiedad de la`ParagraphFormat` y establecer el estilo de borde para cada lado.
+3.  Configure el relleno de párrafos accediendo a la`Shading` propiedad de la`ParagraphFormat` y especificando la textura y los colores de relleno.
+4.  Agregue contenido al párrafo usando el`Write` metodo de la`DocumentBuilder`.
+5.  Guarde el documento usando el`Save` método.
+
+#### P: ¿Cómo configuro el estilo del borde para cada lado del párrafo?
+
+ R: Para establecer el estilo de borde para cada lado del párrafo, puede acceder a la`Borders` propiedad de la`ParagraphFormat` y establecer el`LineStyle` propiedad para cada`BorderType` (p.ej,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Puede especificar diferentes estilos de línea como`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, etc.
+
+#### P: ¿Cómo especifico la textura y los colores de relleno para el sombreado del párrafo?
+
+ R: Para especificar la textura y los colores de relleno para el sombreado del párrafo, puede acceder a la`Shading` propiedad de la`ParagraphFormat` y establecer el`Texture` propiedad a un índice de textura deseado (por ejemplo,`TextureIndex.TextureDiagonalCross` ). También puede configurar el`BackgroundPatternColor` y`ForegroundPatternColor` propiedades a los colores deseados usando el`System.Drawing.Color` clase.

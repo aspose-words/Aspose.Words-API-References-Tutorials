@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Yeni bir VBA belgesi ve projesi oluşturun
- Ardından, örnekleyerek yeni bir belge oluşturacağız.`Document` sınıfı ve boş bir VBA projesini başlatarak`VbaProject` sınıf.
+ Ardından, örnekleyerek yeni bir belge oluşturacağız.`Document` sınıf ve boş bir VBA projesi başlatarak`VbaProject` sınıf.
 
 ```csharp
 // Yeni bir belge oluştur
@@ -98,7 +98,7 @@ C: Bir Word belgesinde bir VBA projesi oluşturabilmeniz için önce C# programl
 
 #### S: VBA modülünde makro kaynak kodu nasıl belirlenir?
 
- C: Makronun kaynak kodunu VBA modülünde belirtmek için,`SourceCode`mülkiyeti`VbaModule` sınıfa VBA kodunu içeren bir karakter dizisi atayarak.
+ C: Makronun kaynak kodunu VBA modülünde belirtmek için,`SourceCode` mülkiyeti`VbaModule` sınıfa VBA kodunu içeren bir karakter dizisi atayarak.
 
 #### S: Bir Word belgesindeki bir VBA projesine birden fazla VBA modülü ekleyebilir miyim?
 

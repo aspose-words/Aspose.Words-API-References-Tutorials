@@ -101,7 +101,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### F: Hur kan jag använda fångade grupper i ersättningsmönstret under textsökning och ersätt i Aspose.Words för .NET?
 
- S: För att använda infångade grupper i ersättningsmönstret under textsökning och ersätt i Aspose.Words för .NET, kan du aktivera`UseSubstitutions`egendom av`FindReplaceOptions` objekt. Detta låter dig referera till de fångade grupperna med hjälp av`$1`, `$2`, etc. i ersättningsmönstret:
+ S: För att använda infångade grupper i ersättningsmönstret under textsökning och ersätt i Aspose.Words för .NET, kan du aktivera`UseSubstitutions` egendom av`FindReplaceOptions` objekt. Detta låter dig referera till de fångade grupperna med hjälp av`$1`, `$2`, etc. i ersättningsmönstret:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
@@ -114,7 +114,7 @@ S: Exempelkällkoden visar användningen av funktionen "Känn igen och ersättni
 
 #### F: Var kan jag hitta mer information och exempel på hur jag använder reguljära uttryck i Aspose.Words för .NET?
 
-S: För mer information och exempel på hur du använder reguljära uttryck i Aspose.Words för .NET, kan du hänvisa till den officiella dokumentationen och Aspose.Words GitHub-förvaret. Dokumentationen ger detaljerade förklaringar och kodexempel för olika scenarier som involverar reguljära uttryck och textmanipulation i Aspose.Words för .NET.
+S: För mer information och exempel på hur du använder reguljära uttryck i Aspose.Words för .NET, kan du se[Aspose.Words för .NET API-referenser](https://reference.aspose.com/words/net/). Dokumentationen ger detaljerade förklaringar och kodexempel för olika scenarier som involverar reguljära uttryck och textmanipulation i Aspose.Words för .NET.
 
 #### F: Kan jag manipulera andra aspekter av dokumentet baserat på de fångade grupperna under textsökning och ersättning?
 

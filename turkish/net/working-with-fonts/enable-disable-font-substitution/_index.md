@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/working-with-fonts/enable-disable-font-substitution/
 ---
-Bu eğitimde, bir Word belgesini Aspose.Words .NET kitaplığı kullanarak işlerken yazı tipi değiştirmeyi nasıl etkinleştireceğinizi veya devre dışı bırakacağınızı size göstereceğiz. Yazı tipi değiştirmeyi etkinleştirmek veya devre dışı bırakmak, eksik yazı tiplerinin otomatik olarak varsayılan bir yazı tipiyle değiştirilip değiştirilmeyeceğini kontrol etmenizi sağlar. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
+Bu öğreticide, bir Word belgesini Aspose.Words .NET kitaplığı kullanarak işlerken yazı tipi değiştirmeyi nasıl etkinleştireceğiniz veya devre dışı bırakacağınız konusunda size yol göstereceğiz. Yazı tipi değiştirmeyi etkinleştirmek veya devre dışı bırakmak, eksik yazı tiplerinin otomatik olarak varsayılan bir yazı tipiyle değiştirilip değiştirilmeyeceğini kontrol etmenizi sağlar. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
 ## Önkoşullar
 Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
@@ -70,7 +70,7 @@ Bu öğreticide, bir Word belgesini Aspose.Words for .NET ile işlerken yazı ti
 
 #### S: Aspose.Words ile bir Word belgesinde yazı tipi değiştirmeyi nasıl etkinleştirebilirim?
 
-C: Aspose.Words ile bir Word belgesinde yazı tipi değiştirmeyi etkinleştirmek için, gerekli yazı tipleri mevcut olmadığında kullanılacak değiştirme yazı tiplerini belirlemek için API'yi kullanabilirsiniz. Bu, orijinal yazı tipleri olmadan bile tutarlı metin görselleştirmesi sağlayacaktır.
+C: Aspose.Words ile bir Word belgesinde yazı tipi değiştirmeyi etkinleştirmek için, gerekli yazı tipleri mevcut olmadığında kullanılacak değiştirme yazı tiplerini belirtmek için API'yi kullanabilirsiniz. Bu, orijinal yazı tipleri olmadan bile tutarlı metin görselleştirmesi sağlayacaktır.
 
 #### S: Aspose.Words ile bir Word belgesinde yazı tipi değiştirmeyi devre dışı bırakmak mümkün mü?
 

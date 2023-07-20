@@ -10,11 +10,11 @@ url: /es/net/basic-conversions/docx-to-pdf/
 
 En este tutorial paso a paso, lo guiaremos sobre cómo usar Aspose.Words para .NET para convertir un documento de Word en formato Docx a PDF. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el sitio web oficial.
+ Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el[Aspose.Lanzamientos](https://releases.aspose.com/words/net/).
 
 ## Paso 1: inicialización del objeto de documento
 
- Primero, inicialice el`Document` objeto con la ruta a su documento de origen en formato Docx:
+ Primero, inicialice el`Document`objeto con la ruta a su documento de origen en formato Docx:
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");

@@ -14,7 +14,7 @@ url: /ar/net/join-and-append-documents/keep-source-numbering/
 
 تأكد من توفر لديك المتطلبات الأساسية التالية:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
+- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases] https://releases.aspose.com/words/net/ أو استخدم مدير حزمة NuGet لتثبيته.
 - مسار دليل المستند حيث سيتم حفظ مستندات المصدر والوجهة.
 
 ## الخطوة 2: قم بإنشاء الوجهة والمستندات المصدر

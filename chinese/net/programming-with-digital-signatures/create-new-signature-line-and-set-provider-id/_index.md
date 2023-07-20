@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
-在本教程中，我们将引导您完成使用 Aspose.Words for .NET 创建新签名行和设置提供商 ID 功能的步骤。此功能允许您在 Word 文档中插入签名行、设置自定义选项并签署文档。请按照以下步骤操作：
+在本教程中，我们将引导您完成通过 Aspose.Words for .NET 使用“创建新签名行”和“设置提供商 ID”功能的步骤。此功能允许您在 Word 文档中插入签名行、设置自定义选项并签署文档。请按照以下步骤操作：
 
 ## 第 1 步：创建文档和生成器
 

@@ -85,7 +85,7 @@ Questo frammento di codice crea un nuovo documento Word vuoto.
 
 #### D: Come posso modificare lo stile di un livello specifico nel sommario utilizzando Aspose.Words per .NET?
 
- R: Una volta caricato un documento, puoi modificare lo stile di un livello specifico dell'indice accedendo agli stili del documento e apportando le modifiche necessarie. In Aspose.Words per .NET, puoi utilizzare il file`Styles`proprietà del`Document` class per accedere agli stili del documento, quindi modificare lo stile desiderato utilizzando le sue proprietà. Ad esempio, per modificare lo stile del primo livello del sommario in grassetto, è possibile utilizzare il seguente codice:
+ R: Una volta caricato un documento, puoi modificare lo stile di un livello specifico dell'indice accedendo agli stili del documento e apportando le modifiche necessarie. In Aspose.Words per .NET, puoi utilizzare il file`Styles` proprietà del`Document` class per accedere agli stili del documento, quindi modificare lo stile desiderato utilizzando le sue proprietà. Ad esempio, per modificare lo stile del primo livello del sommario in grassetto, è possibile utilizzare il seguente codice:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
@@ -113,7 +113,7 @@ R: Sì, oltre a modificare lo stile, puoi applicare varie modifiche di formattaz
 
 #### D: Come posso specificare uno stile personalizzato per un livello specifico nel sommario utilizzando Aspose.Words per .NET?
 
- R: Per specificare uno stile personalizzato per un livello specifico nel sommario utilizzando Aspose.Words per .NET, puoi creare un nuovo`Style` oggetto, configurarne le proprietà in base allo stile desiderato e assegnarlo al livello corrispondente dell'indice utilizzando il file`Styles`proprietà del`Document` classe. Ciò consente di definire uno stile personalizzato per un livello specifico in base alle proprie esigenze.
+ R: Per specificare uno stile personalizzato per un livello specifico nel sommario utilizzando Aspose.Words per .NET, puoi creare un nuovo`Style` oggetto, configurarne le proprietà in base allo stile desiderato e assegnarlo al livello corrispondente dell'indice utilizzando il file`Styles` proprietà del`Document` classe. Ciò consente di definire uno stile personalizzato per un livello specifico in base alle proprie esigenze.
 
 #### D: Posso modificare lo stile del sommario in un documento Word esistente utilizzando Aspose.Words per .NET?
 

@@ -14,13 +14,13 @@ In diesen Tutorials erfahren Sie, wie Sie LoadOptions zum Laden von Word-Dokumen
  ## Tutorials
 | Titel | Beschreibung |
 | --- | --- |
-| [Aktualisieren Sie schmutzige Felder](./update-dirty-fields/) | Erfahren Sie, wie Sie ein Word-Dokument laden, indem Sie fehlerhafte Felder mit Aspose.Words für .NET aktualisieren. |
-| [Verschlüsseltes Dokument laden](./load-encrypted-document/) | Erfahren Sie, wie Sie verschlüsselte Dokumente mit Aspose.Words für .NET laden und speichern. |
+| [Aktualisieren Sie fehlerhafte Felder im Word-Dokument](./update-dirty-fields/) | Erfahren Sie, wie Sie ein Word-Dokument laden, indem Sie fehlerhafte Felder mit Aspose.Words für .NET aktualisieren. |
+| [Verschlüsseltes Word-Dokument laden](./load-encrypted-document/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET verschlüsselte Word-Dokumente laden und speichern. |
 | [Form in Office-Mathe umwandeln](./convert-shape-to-office-math/) | Erfahren Sie, wie Sie beim Hochladen von Dokumenten mit Aspose.Words für .NET Formen in Office-Matheformeln konvertieren. |
 | [Legen Sie die MS Word-Version fest](./set-ms-word-version/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit einer bestimmten Version von MS Word laden. |
-| [Verwenden Sie den Temp-Ordner](./use-temp-folder/) | Erfahren Sie, wie Sie beim Hochladen von Dokumenten mit Aspose.Words für .NET einen temporären Ordner verwenden. |
-| [Achtung, Rückruf](./warning-callback/) | Erfahren Sie, wie Sie mit Warnungen beim Laden eines Word-Dokuments mithilfe der Rückruffunktion von Aspose.Words für .NET umgehen. |
-| [Mit Codierung laden](./load-with-encoding/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit einer bestimmten Kodierung laden. |
+| [Verwenden Sie den temporären Ordner im Word-Dokument](./use-temp-folder/) | Erfahren Sie, wie Sie beim Hochladen von Dokumenten mit Aspose.Words für .NET einen temporären Ordner verwenden. |
+| [Warnrückruf im Word-Dokument](./warning-callback/) | Erfahren Sie, wie Sie mit Warnungen beim Laden eines Word-Dokuments mithilfe der Rückruffunktion von Aspose.Words für .NET umgehen. |
+| [Mit Kodierung in Word-Dokument laden](./load-with-encoding/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit einer bestimmten Kodierung in ein Word-Dokument laden. |
 | [PDF-Bilder überspringen](./skip-pdf-images/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein PDF-Dokument laden und dabei das Laden von PDF-Bildern überspringen. |
 | [Konvertieren Sie Metadateien in PNG](./convert-metafiles-to-png/) | Erfahren Sie, wie Sie beim Hochladen von Dokumenten mit Aspose.Words für .NET Metadateien in PNG-Bilder konvertieren. |
-| [Lade Chm](./load-chm/) | Erfahren Sie, wie Sie CHM-Dateien mit Aspose.Words für .NET laden. |
+| [Laden Sie CHM-Dateien in ein Word-Dokument](./load-chm/) | Erfahren Sie, wie Sie CHM-Dateien mit Aspose.Words für .NET in ein Word-Dokument laden. |

@@ -13,12 +13,12 @@ url: /ar/net/document-formatting/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [المسافة بين النص الآسيوي واللاتيني](./space-between-asian-and-latin-text/) | تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي واللاتيني في مستندك باستخدام Aspose.Words for .NET. |
-| [مجموعة فواصل خطوط الطباعة الآسيوية](./asian-typography-line-break-group/) | تعرف على كيفية استخدام مجموعة فواصل أسطر الطباعة الآسيوية مع Aspose.Words for .NET. |
-| [تنسيق الفقرة](./paragraph-formatting/) | تعرف على كيفية تطبيق التنسيق المخصص على فقراتك باستخدام Aspose.Words for .NET. |
-| [تنسيق قائمة متعددة المستويات](./multilevel-list-formatting/) | تعرف على كيفية إنشاء قائمة متعددة المستويات وتطبيق تنسيق مخصص باستخدام Aspose.Words for .NET. |
-| [تطبيق نمط الفقرة](./apply-paragraph-style/) | تعرف على كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET. |
-| [تطبيق الحدود والتظليل على الفقرة](./apply-borders-and-shading-to-paragraph/) | تعرف على كيفية تطبيق الحدود والتظليل على فقرة باستخدام Aspose.Words for .NET. |
-| [تغيير تباعد الفقرات الآسيوية والمسافات البادئة](./change-asian-paragraph-spacing-and-indents/) | تعرف على كيفية تغيير تباعد الفقرات الآسيوية والمسافات البادئة باستخدام Aspose.Words for .NET. |
-| [المفاجئة إلى الشبكة](./snap-to-grid/) | دليل خطوة بخطوة لشرح كود مصدر C # لميزة Snap to Grid باستخدام Aspose.Words for .NET. |
-| [احصل على فاصل نمط الفقرة](./get-paragraph-style-separator/) | تعرف على كيفية الحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET. |
+| [المسافة بين النص الآسيوي واللاتيني في مستند Word](./space-between-asian-and-latin-text/) | تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي واللاتيني في مستند Word باستخدام Aspose.Words for .NET. |
+| [مجموعة فواصل أسطر الطباعة الآسيوية في مستند Word](./asian-typography-line-break-group/) | تعرف على كيفية استخدام مجموعة فواصل أسطر الطباعة الآسيوية في مستند Word باستخدام Aspose.Words for .NET. |
+| [تنسيق الفقرة في مستند Word](./paragraph-formatting/) | تعرف على كيفية تطبيق التنسيق المخصص على فقراتك في مستند Word باستخدام Aspose.Words for .NET. |
+| [تنسيق قائمة متعددة المستويات في مستند Word](./multilevel-list-formatting/) | تعرف على كيفية إنشاء قائمة متعددة المستويات وتطبيق تنسيق مخصص في مستند Word باستخدام Aspose.Words for .NET. |
+| [قم بتطبيق نمط الفقرة في مستند Word](./apply-paragraph-style/) | تعرف على كيفية تطبيق نمط فقرة في مستند Word باستخدام Aspose.Words for .NET. |
+| [تطبيق الحدود والتظليل على فقرة في مستند Word](./apply-borders-and-shading-to-paragraph/) | تعرف على كيفية تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words for .NET. |
+| [تغيير تباعد الفقرات الآسيوية والمسافات البادئة في مستند Word](./change-asian-paragraph-spacing-and-indents/) | تعرف على كيفية تغيير تباعد الفقرات الآسيوية والمسافات البادئة في مستند Word باستخدام Aspose.Words for .NET. |
+| [انجذاب إلى الشبكة في مستند Word](./snap-to-grid/) | دليل خطوة بخطوة لشرح كود مصدر C # لـ Snap to Grid في ميزة مستند Word باستخدام Aspose.Words for .NET. |
+| [احصل على فاصل نمط الفقرة في مستند Word](./get-paragraph-style-separator/) | تعرف على كيفية الحصول على فاصل نمط الفقرة في مستند Word باستخدام Aspose.Words for .NET. |

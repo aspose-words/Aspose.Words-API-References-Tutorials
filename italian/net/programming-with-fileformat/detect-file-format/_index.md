@@ -14,7 +14,7 @@ Prima di iniziare, assicurati di aver installato e configurato la libreria Aspos
 
 ## Passaggio 1: definire le directory
 
- Per iniziare, è necessario definire le directory in cui si desidera archiviare i file in base al loro formato. Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo della directory dei documenti. Creiamo le directory "Supported", "Unknown", "Encrypted" e "Pre97" se non esistono già.
+ Per iniziare, è necessario definire le directory in cui si desidera archiviare i file in base al loro formato. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti. Creiamo le directory "Supported", "Unknown", "Encrypted" e "Pre97" se non esistono già.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## Passaggio 2: sfoglia i file
 
- Quindi usiamo il`GetFiles` metodo del`Directory` class per ottenere l'elenco dei file nella directory specificata. Usiamo anche a`Where` clausola per escludere un file specifico denominato "Corrupted document.docx".
+ Quindi usiamo il`GetFiles` metodo del`Directory` class per ottenere l'elenco dei file nella directory specificata. Usiamo anche a`Where`clausola per escludere un file specifico denominato "Corrupted document.docx".
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ break;
 
 #### Come rilevare il formato di un file di documento utilizzando Aspose.Words per .NET?
 
- Per rilevare il formato di un file di documento utilizzando Aspose.Words per .NET, è possibile seguire i passaggi forniti nel tutorial. Usando il`DetectFileFormat` metodo del`FileFormatUtil` class ti permetterà di rilevare il formato del file del documento. Ciò consentirà di determinare se si tratta di un documento Microsoft Word 97-2003, un modello, un documento Office Open XML WordprocessingML o altri formati supportati. Il codice fornito nel tutorial ti guiderà attraverso l'implementazione di questa funzionalità.
+ Per rilevare il formato di un file di documento utilizzando Aspose.Words per .NET, è possibile seguire i passaggi forniti nel tutorial. Usando il`DetectFileFormat` metodo del`FileFormatUtil`class ti permetterà di rilevare il formato del file del documento. Ciò consentirà di determinare se si tratta di un documento Microsoft Word 97-2003, un modello, un documento Office Open XML WordprocessingML o altri formati supportati. Il codice fornito nel tutorial ti guiderà attraverso l'implementazione di questa funzione.
 
 #### Quali formati di documento supporta Aspose.Words per .NET?
 
@@ -219,7 +219,7 @@ Aspose.Words per .NET supporta una varietà di formati di documenti inclusi docu
 
 #### Come gestire i file di documenti crittografati durante il rilevamento del formato?
 
- Quando si rileva il formato di un file di documento, è possibile utilizzare l'estensione`IsEncrypted`proprietà del`FileFormatInfo` oggetto per verificare se il file è crittografato. Se il file è crittografato, puoi eseguire ulteriori passaggi per gestire questo caso specifico, come copiare il file in una directory dedicata ai documenti crittografati. Puoi usare il`File.Copy` metodo per farlo.
+ Quando si rileva il formato di un file di documento, è possibile utilizzare l'estensione`IsEncrypted` proprietà del`FileFormatInfo` oggetto per verificare se il file è crittografato. Se il file è crittografato, puoi eseguire ulteriori passaggi per gestire questo caso specifico, come copiare il file in una directory dedicata ai documenti crittografati. Puoi usare il`File.Copy` metodo per farlo.
 
 #### Quali azioni dovrebbero essere intraprese quando il formato di un documento è sconosciuto?
 

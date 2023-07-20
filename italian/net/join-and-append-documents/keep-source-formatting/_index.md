@@ -14,7 +14,7 @@ Questo tutorial dimostra come aggiungere un documento di origine a un documento 
 
 Assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. Puoi scaricarlo dal sito Web ufficiale di Aspose o utilizzare il gestore di pacchetti NuGet per installarlo.
+- Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
 - Un percorso di directory dei documenti in cui verranno salvati i documenti di origine e di destinazione.
 
 ## Passaggio 2: crea i documenti di destinazione e di origine

@@ -74,7 +74,7 @@ In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie di
 
 A: Ja, die Entwirrungsfunktion wurde speziell dafür entwickelt, verschachtelte Lesezeichen zu entwirren, die sich in benachbarten Tabellenzeilen befinden. Wenn sich die Lesezeichen nicht in benachbarten Zeilen befinden, ist diese Funktion nicht anwendbar.
 
-#### F: Wie kann ich verschachtelte Lesezeichen in meinem Word-Dokument identifizieren?
+#### F: Wie kann ich verschachtelte Lesezeichen in meinem Word-Dokument erkennen?
 
 A: Sie können verschachtelte Lesezeichen identifizieren, indem Sie die Lesezeichen im Dokument durchlaufen und prüfen, ob sich das Start-Lesezeichen und das End-Lesezeichen in benachbarten Tabellenzeilen befinden. Sie können den in diesem Artikel bereitgestellten Quellcode als Ausgangspunkt für die Implementierung dieser Funktionalität verwenden.
 
@@ -88,4 +88,4 @@ A: Die in diesem Artikel vorgestellte Funktion „Untangle“ wurde speziell daf
 
 #### F: Gibt es andere Methoden, um verschachtelte Lesezeichen in einem Word-Dokument mithilfe von Aspose.Words für .NET zu entwirren?
 
-A: Die in diesem Artikel vorgestellte Methode ist eine gängige Methode zum Entwirren verschachtelter Lesezeichen in benachbarten Tabellenzeilen. Abhängig von den spezifischen Anforderungen Ihres Projekts kann es jedoch auch andere Ansätze oder Techniken geben. Weitere Informationen zu den verfügbaren Funktionen finden Sie in der offiziellen Aspose.Words-Dokumentation.
+ A: Die in diesem Artikel vorgestellte Methode ist eine gängige Methode zum Entwirren verschachtelter Lesezeichen in benachbarten Tabellenzeilen. Abhängig von den spezifischen Anforderungen Ihres Projekts kann es jedoch auch andere Ansätze oder Techniken geben. Sie können sich das ansehen[Aspose.Words für .NET-API-Referenzen](https://reference.aspose.com/words/net/) um die verfügbaren Funktionen weiter zu erkunden.

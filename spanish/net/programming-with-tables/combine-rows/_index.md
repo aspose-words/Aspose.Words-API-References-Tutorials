@@ -1,6 +1,6 @@
 ---
-title: Combinar filas
-linktitle: Combinar filas
+title: Combinar Filas
+linktitle: Combinar Filas
 second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a combinar filas de tablas en un documento de Word con Aspose.Words para .NET.
 type: docs

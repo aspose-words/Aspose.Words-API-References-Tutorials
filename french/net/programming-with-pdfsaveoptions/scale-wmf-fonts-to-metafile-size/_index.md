@@ -97,7 +97,7 @@ R : Pour activer ou désactiver le redimensionnement des polices WMF à la tail
 
  Chargez le document que vous souhaitez traiter à l'aide de la`Document` class et spécifiez le chemin d'accès au document Word dans le répertoire de documents spécifié.
 
- Configurez les options de rendu du métafichier en créant une instance de`MetafileRenderingOptions` classe et la définition de la`ScaleWmfFontsToMetafileSize` propriété à`true` pour activer la mise à l'échelle des polices WMF à la taille du métafichier, ou pour`false` pour désactiver cette fonctionnalité.
+ Configurez les options de rendu du métafichier en créant une instance de`MetafileRenderingOptions` classe et la définition de la`ScaleWmfFontsToMetafileSize` propriété à`true` pour activer la mise à l'échelle des polices WMF à la taille du métafichier, ou pour`false` pour désactiver cette fonction.
 
  Configurez les options d'enregistrement au format PDF en créant une instance du`PdfSaveOptions` classe et en utilisant les options de rendu de métafichier configurées précédemment.
 

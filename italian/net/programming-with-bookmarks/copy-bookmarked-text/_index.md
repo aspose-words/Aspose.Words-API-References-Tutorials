@@ -124,7 +124,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 #### D: Come importare e copiare il testo del segnalibro dal documento di origine al documento di destinazione utilizzando Aspose.Words per .NET?
 
-R: Per importare e copiare il testo del segnalibro da un documento di origine a un documento di destinazione utilizzando Aspose.Words per .NET, è possibile utilizzare il`NodeImporter` class specificando il documento di origine, il documento di destinazione e la modalità di formattazione da mantenere. Quindi puoi usare il`AppendBookmarkedText` metodo per aggiungere il testo del segnalibro nel documento di destinazione. Ecco un codice di esempio:
+R: Per importare e copiare il testo del segnalibro da un documento di origine a un documento di destinazione utilizzando Aspose.Words per .NET, è possibile utilizzare il`NodeImporter` class specificando il documento di origine, il documento di destinazione e la modalità di formattazione da conservare. Quindi puoi usare il`AppendBookmarkedText` metodo per aggiungere il testo del segnalibro nel documento di destinazione. Ecco un codice di esempio:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);

@@ -10,7 +10,7 @@ url: /zh/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 
 在本分步教程中，我们将向您展示如何将特定语言的连字符字典加载到 Aspose.Words for .NET 中。我们将解释提供的 C# 源代码并向您展示如何在您自己的项目中实现它。
 
-首先，请确保您已在开发环境中安装并配置了 Aspose.Words for .NET。如果您还没有安装该库，请从官方网站下载并安装该库。
+首先，请确保您已在开发环境中安装并配置了 Aspose.Words for .NET。如果您还没有安装该库，请从以下位置下载并安装该库：[Aspose.Releases]https://releases.aspose.com/words/net/。
 
 ## 第 1 步：加载文档
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## 第 2 步：加载连字符字典
 
-接下来，打开连字符字典文件的流并将其保存为所需的语言。在此示例中，我们加载瑞士德语 (de-CH) 词典：
+接下来，打开连字符字典文件的流并将其保存为所需的语言。在此示例中，我们加载瑞士德语 (de-CH) 字典：
 
 ```csharp
 Stream stream = File.OpenRead(dataDir + "hyph_de_CH.dic");

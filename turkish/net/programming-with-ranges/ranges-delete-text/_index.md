@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 
 ## Çözüm
 
-Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesinin belirli aralıklarındaki metni silmek için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Verilen adımları izleyerek, C# uygulamanızdaki Word belgelerinizdeki tanımlı aralıklardaki metni kolayca silebilirsiniz. Aspose.Words, Word belgelerini hassas ve amaca uygun şekilde oluşturmanıza ve düzenlemenize imkan vererek, metin aralıklarıyla Words Processing için muazzam bir esneklik ve güç sunar.
+Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesinin belirli aralıklarındaki metni silmek için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Verilen adımları izleyerek, C# uygulamanızdaki Word belgelerinizdeki tanımlı aralıklardaki metni kolayca silebilirsiniz. Aspose.Words, Word belgelerini kesin ve amaca uygun şekilde oluşturmanıza ve düzenlemenize imkan vererek, metin aralıklarıyla Words Processing için muazzam bir esneklik ve güç sunar.
 
 ### Aralıklar için SSS'ler word belgesindeki metni silin
 

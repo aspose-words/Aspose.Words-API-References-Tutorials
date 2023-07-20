@@ -8,7 +8,7 @@ url: /ar/
 is_root: true
 ---
 
-## Aspose.Words for .NET
+## برامج Aspose.Words معالجة المستندات لـ .NET
 {{% alert color="primary" %}}
 برامج Aspose.Words for .NET التعليمية ومقتطفات التعليمات البرمجية لإنشاء وتحرير وتحويل وطباعة والعديد من الميزات الأخرى لمستندات Word في تطبيقك. 
 {{% /alert %}}
@@ -35,3 +35,20 @@ is_root: true
 - [البرمجة بالعلامة المائية](./net/programming-with-watermark/)    
 - [البرمجة باستخدام Markdownsaveoptions](./net/programming-with-markdownsaveoptions/)   
 - [التحويلات الأساسية](./net/basic-conversions/)   
+
+## دروس معالجة المستندات Aspose.Words لجافا
+{{% alert color="primary" %}}
+إتقان معالجة المستندات باستخدام برامج Java التعليمية Aspose.Words. تعلم معالجة الكلمات ومعالجة الجداول والدمج والمزيد. أتمتة مهام المستندات بكفاءة. 
+{{% /alert %}}
+
+هذه روابط لبعض المصادر المفيدة:
+- [معالجة الكلمة](./java/word-processing/)  
+- [معالجة الجدول](./java/table-processing/)
+- [تنسيق المستند](./java/document-styling/)
+- [دمج الوثيقة](./java/document-merging/)
+- [تحويل المستندات](./java/document-converting/)
+- [طباعة الوثيقة](./java/document-printing/)
+- [تقديم المستند](./java/document-rendering/)
+- [أمن الوثيقة](./java/document-security/)
+- [تقسيم المستند](./java/document-splitting/)
+- [مراجعة الوثيقة](./java/document-revision/)

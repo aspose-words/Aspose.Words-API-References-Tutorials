@@ -98,7 +98,7 @@ En utilisant Aspose.Words pour .NET, vous pouvez facilement intégrer des foncti
 ### FAQ
 
 #### Q1. Qu'est-ce qu'Aspose.Words pour .NET ?
-Aspose.Words pour .NET est une puissante bibliothèque de traitement de documents qui permet aux développeurs de créer, manipuler et enregistrer des documents Word par programmation dans des applications .NET. Il fournit un large éventail de fonctionnalités pour le traitement de texte avec des éléments de document, y compris des graphiques et des axes de graphique.
+Aspose.Words pour .NET est une puissante bibliothèque de traitement de documents qui permet aux développeurs de créer, manipuler et enregistrer des documents Word par programme dans des applications .NET. Il fournit un large éventail de fonctionnalités pour le traitement de texte avec des éléments de document, y compris des graphiques et des axes de graphique.
 
 #### Q2. Comment puis-je installer Aspose.Words pour .NET ?
 Vous pouvez installer Aspose.Words pour .NET en le téléchargeant à l'aide du gestionnaire de packages NuGet dans Visual Studio. Recherchez simplement "Aspose.Words" dans le gestionnaire de packages NuGet et installez-le dans votre projet.

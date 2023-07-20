@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### S: Aspose.Words for .NET'te bir revizyonun bir gruba ait olup olmadığı nasıl kontrol edilir?
 
- C: Şunu kullanın:`Group`mülkiyeti`Revision` Bir revizyonun bir gruba ait olup olmadığını kontrol etmek için nesne. Eğer`Group` özellik`null`revizyonun herhangi bir gruba ait olmadığı anlamına gelir.
+ C: Şunu kullanın:`Group` mülkiyeti`Revision` Bir revizyonun bir gruba ait olup olmadığını kontrol etmek için nesne. Eğer`Group` özellik`null`revizyonun herhangi bir gruba ait olmadığı anlamına gelir.
 
 ```csharp
 if (revision.Group != null)

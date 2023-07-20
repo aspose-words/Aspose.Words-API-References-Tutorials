@@ -10,7 +10,7 @@ url: /zh/net/working-with-hyphenation/hyphenation-callback/
 
 在本分步教程中，我们将向您展示如何使用 Aspose.Words for .NET 中的连字符回调功能。我们将解释提供的 C# 源代码并向您展示如何在您自己的项目中实现它。
 
-首先，请确保您已在开发环境中安装并配置了 Aspose.Words for .NET。如果您还没有安装该库，请从官方网站下载并安装该库。
+首先，请确保您已在开发环境中安装并配置了 Aspose.Words for .NET。如果您还没有安装该库，请从以下位置下载并安装该库：[Aspose.Releases]https://releases.aspose.com/words/net/。
 
 ## 第 1 步：保存连字提醒
 
@@ -54,7 +54,7 @@ finally
 }
 ```
 
-这将在完成处理后清除并禁用连字提醒。
+这将在完成处理后清理并禁用连字提醒。
 
 所以 ！您已成功在 Aspose.Words for .NET 中使用连字符回调。
 

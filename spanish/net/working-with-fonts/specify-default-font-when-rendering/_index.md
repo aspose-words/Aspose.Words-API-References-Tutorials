@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Paso 3: Establecer fuente predeterminada
- Ahora puede especificar la fuente predeterminada que se usará al renderizar creando una instancia de la`FontSettings` clase y establecer el`DefaultFontName`propiedad de la`DefaultFontSubstitution` objetar a la`DefaultFontSubstitution` objeto`SubstitutionSettings` de`FontSettings`.
+ Ahora puede especificar la fuente predeterminada que se usará al renderizar creando una instancia de la`FontSettings` clase y establecer el`DefaultFontName` propiedad de la`DefaultFontSubstitution` objetar a la`DefaultFontSubstitution` objeto`SubstitutionSettings` de`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -74,7 +74,7 @@ R: Sí, puede especificar una fuente predeterminada para otros formatos de salid
 
 #### P: ¿Cómo puedo verificar la fuente predeterminada especificada en Aspose.Words?
 
- R: Para verificar la fuente predeterminada especificada en Aspose.Words, puede usar el`DefaultFontName`propiedad de la`PdfOptions` class y recuperar el nombre de la fuente configurada.
+ R: Para verificar la fuente predeterminada especificada en Aspose.Words, puede usar el`DefaultFontName` propiedad de la`PdfOptions` class y recuperar el nombre de la fuente configurada.
 
 #### P: ¿Es posible especificar una fuente predeterminada diferente para cada sección del documento?
 

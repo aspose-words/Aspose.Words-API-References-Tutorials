@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Çözüm
 
- Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde bulunan stillerin nasıl alınacağını ve bunlara erişileceğini öğrendik. kullanarak`Styles`mülkiyeti`Document` nesne, stiller koleksiyonunu elde ettik ve adlarını görüntülemek için aralarında döngü oluşturduk. Bu özellik, bir belgede kullanılan stiller hakkında değerli bilgiler sağlar ve daha fazla özelleştirme ve analiz sağlar.
+ Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde bulunan stillerin nasıl alınacağını ve bunlara erişileceğini öğrendik. kullanarak`Styles` mülkiyeti`Document` nesne, stiller koleksiyonunu elde ettik ve adlarını görüntülemek için aralarında döngü oluşturduk. Bu özellik, bir belgede kullanılan stiller hakkında değerli bilgiler sağlar ve daha fazla özelleştirme ve analiz sağlar.
 
 Aspose.Words for .NET'in güçlü API'sinden yararlanan geliştiriciler, biçimlendirme ve belge işleme üzerinde gelişmiş kontrol sunarak belge stillerini kolayca manipüle edebilir ve bunlarla çalışabilir.
 

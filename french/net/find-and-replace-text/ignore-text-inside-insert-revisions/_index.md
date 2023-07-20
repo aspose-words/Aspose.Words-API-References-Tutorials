@@ -181,7 +181,7 @@ Console.WriteLine(doc.GetText());
 
 #### Q : Comment puis-je inclure les révisions d'insertion dans le résultat de sortie dans Aspose.Words pour .NET ?
 
- R : Pour inclure le texte à l'intérieur des révisions d'insertion dans le résultat de sortie, vous pouvez modifier les options pour ne pas ignorer les révisions d'insertion. Pour cela, vous pouvez définir le`IgnoreInserted`propriété de la`FindReplaceOptions` s'opposer à`false`:
+ R : Pour inclure le texte à l'intérieur des révisions d'insertion dans le résultat de sortie, vous pouvez modifier les options pour ne pas ignorer les révisions d'insertion. Pour cela, vous pouvez définir le`IgnoreInserted` propriété de la`FindReplaceOptions` s'opposer à`false`:
 
 ```csharp
 options.IgnoreInserted = false;

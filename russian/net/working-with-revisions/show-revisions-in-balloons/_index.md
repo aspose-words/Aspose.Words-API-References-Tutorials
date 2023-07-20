@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### В: Как отображать версии во всплывающих подсказках с помощью Aspose.Words для .NET?
 
- О: Используйте`ShowInBalloons`собственность`RevisionOptions` object для настройки отображения ревизий во всплывающих подсказках. Вы можете установить это свойство на`ShowInBalloons.FormatAndDelete` для отображения ревизий во всплывающих подсказках с исправлениями удаления и форматирования.
+ О: Используйте`ShowInBalloons` собственность`RevisionOptions` object для настройки отображения ревизий во всплывающих подсказках. Вы можете установить это свойство на`ShowInBalloons.FormatAndDelete` для отображения ревизий во всплывающих подсказках с исправлениями удаления и форматирования.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Denna kod skapar en instans av`HtmlSaveOptions` och uppsättningar`CssStyleSheetType` till`CssStyleSheetType.External` för att generera en extern CSS-stilmall, och`CssClassNamePrefix` till`"pfx_"`till prefix`"pfx_"` att namnge CSS-klass.
+ Denna kod skapar en instans av`HtmlSaveOptions` och uppsättningar`CssStyleSheetType` till`CssStyleSheetType.External`för att generera en extern CSS-stilmall, och`CssClassNamePrefix` till`"pfx_"` till prefix`"pfx_"` att namnge CSS-klass.
 
 ## Steg 4: Konvertera och spara dokumentet till HTML
 

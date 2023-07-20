@@ -21,7 +21,7 @@ doc.WriteProtection.SetPassword("MyPassword");
 
 Ställ in ett lösenord för dokumentet med egenskapen SetPassword() för WriteProtection-objektet:
 
-Se till att ersätta "MyPassword" med det faktiska lösenordet du använde för att skydda dokumentet.
+Var noga med att ersätta "MyPassword" med det faktiska lösenordet du använde för att skydda dokumentet.
 
 ## Steg 2: Ta bort skrivskyddad begränsning
 
@@ -79,7 +79,7 @@ S: Den skrivskyddade begränsningen i Aspose.Words för .NET hänvisar till en f
 
 S: För att ta bort skrivskyddet från ett Word-dokument med Aspose.Words för .NET kan du följa dessa steg:
 1.  Skapa en instans av`Document` klass och ställ in ett lösenord för dokumentet med hjälp av`SetPassword` metod för`WriteProtection` objekt.
-2.  Ställ in`ReadOnlyRecommended`egendom av`WriteProtection` invända mot`false` för att ta bort den skrivskyddade rekommendationen.
+2.  Ställ in`ReadOnlyRecommended` egendom av`WriteProtection` invända mot`false` för att ta bort den skrivskyddade rekommendationen.
 3.  Tillämpa obegränsat skydd på dokumentet med hjälp av`Protect` metod för`Document` objekt med`NoProtection` skyddstyp.
 4.  Spara dokumentet utan skrivskyddad begränsning med hjälp av`Save` metod för`Document` objekt.
 

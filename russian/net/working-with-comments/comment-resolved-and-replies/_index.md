@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 
 #### В: Как разрешить комментарий в Aspose.Words для .NET?
 
- О: Чтобы разрешить комментарий в Aspose.Words для .NET, вы можете использовать`Comment.Resolve` метод, определяющий`Comment` объект, который вы хотите решить. Это пометит комментарий как решенный и скроет его в итоговом документе.
+ О: Чтобы разрешить комментарий в Aspose.Words для .NET, вы можете использовать`Comment.Resolve` метод, определяющий`Comment` объект, который вы хотите разрешить. Это пометит комментарий как решенный и скроет его в итоговом документе.
 
 #### В: Как добавить ответ на разрешенный комментарий в Aspose.Words для .NET?
 
@@ -88,11 +88,11 @@ doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 
 #### В: Как просмотреть решенные комментарии в Aspose.Words для .NET?
 
- О: По умолчанию решенные комментарии скрыты в итоговом документе. Тем не менее, вы можете показать их с помощью`CommentOptions.ShowResolvedComments`собственность`Document` объект и установка его в`true`.
+ О: По умолчанию решенные комментарии скрыты в итоговом документе. Тем не менее, вы можете показать их с помощью`CommentOptions.ShowResolvedComments` собственность`Document` объект и установка его в`true`.
 
 #### В: Как скрыть все комментарии, включая ответы, в Aspose.Words для .NET?
 
- О: Чтобы скрыть все комментарии, включая ответы, в Aspose.Words for .NET, вы можете использовать`CommentOptions.CommentDisplayMode`собственность`Document` объект и установить его на`CommentDisplayMode.None`.
+ О: Чтобы скрыть все комментарии, включая ответы, в Aspose.Words for .NET, вы можете использовать`CommentOptions.CommentDisplayMode` собственность`Document` объект и установить его на`CommentDisplayMode.None`.
 
 #### В: Могу ли я отредактировать текст разрешенного комментария в Aspose.Words для .NET?
 

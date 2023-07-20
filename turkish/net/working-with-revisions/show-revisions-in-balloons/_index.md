@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### S: Aspose.Words for .NET ile revizyonları balonlarda nasıl gösterebilirim?
 
- C: Şunu kullanın:`ShowInBalloons`mülkiyeti`RevisionOptions` revizyonların balonlarda görüntülenmesini yapılandırmak için nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`ShowInBalloons.FormatAndDelete` revizyonları silme ve biçimlendirme revizyonları ile balonlarda göstermek için.
+ C: Şunu kullanın:`ShowInBalloons` mülkiyeti`RevisionOptions` revizyonların balonlarda görüntülenmesini yapılandırmak için nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`ShowInBalloons.FormatAndDelete` revizyonları silme ve biçimlendirme revizyonları ile balonlarda göstermek için.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

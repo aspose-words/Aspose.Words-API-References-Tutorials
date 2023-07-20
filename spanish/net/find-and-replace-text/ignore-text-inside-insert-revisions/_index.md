@@ -119,7 +119,7 @@ Aquí está el código fuente de muestra completo para demostrar el uso de la fu
 
 ## Conclusión
 
-En este artículo, exploramos el código fuente de C# para entender cómo usar la función Ignorar texto interior Insertar revisiones en Aspose.Words para .NET. Seguimos una guía paso a paso para crear un documento, insertar texto con seguimiento de revisiones y texto no revisado, usar la función Ignorar texto dentro de insertar revisiones, realizar operaciones de búsqueda y reemplazo con expresiones regulares y mostrar el documento modificado.
+En este artículo, exploramos el código fuente de C# para entender cómo usar la función Ignorar texto interior Insertar revisiones en Aspose.Words para .NET. Seguimos una guía paso a paso para crear un documento, insertar texto con revisiones de seguimiento y texto no revisado, usar la función Ignorar texto dentro de insertar revisiones, realizar operaciones de búsqueda y reemplazo con expresiones regulares y mostrar el documento modificado.
 
 ### Preguntas frecuentes
 
@@ -181,7 +181,7 @@ Console.WriteLine(doc.GetText());
 
 #### P: ¿Cómo puedo incluir las revisiones de inserción en el resultado de salida en Aspose.Words para .NET?
 
- R: Para incluir el texto dentro de las revisiones de inserción en el resultado de salida, puede cambiar las opciones para no ignorar las revisiones de inserción. Para ello, puede configurar el`IgnoreInserted`propiedad de la`FindReplaceOptions` oponerse a`false`:
+ R: Para incluir el texto dentro de las revisiones de inserción en el resultado de salida, puede cambiar las opciones para no ignorar las revisiones de inserción. Para ello, puede configurar el`IgnoreInserted` propiedad de la`FindReplaceOptions` oponerse a`false`:
 
 ```csharp
 options.IgnoreInserted = false;

@@ -88,4 +88,4 @@ S: Funktionen Untangle som presenteras i den här artikeln är speciellt utforma
 
 #### F: Finns det några andra metoder för att reda ut kapslade bokmärken i ett Word-dokument med Aspose.Words för .NET?
 
-S: Metoden som presenteras i den här artikeln är en vanlig metod för att reda ut kapslade bokmärken i intilliggande tabellrader. Det kan dock finnas andra tillvägagångssätt eller tekniker beroende på de specifika behoven i ditt projekt. Du kan kolla in den officiella Aspose.Words-dokumentationen för att ytterligare utforska de tillgängliga funktionerna.
+ S: Metoden som presenteras i den här artikeln är en vanlig metod för att reda ut kapslade bokmärken i intilliggande tabellrader. Det kan dock finnas andra tillvägagångssätt eller tekniker beroende på de specifika behoven i ditt projekt. Du kan kolla in[Aspose.Words för .NET API-referenser](https://reference.aspose.com/words/net/) för att ytterligare utforska de tillgängliga funktionerna.

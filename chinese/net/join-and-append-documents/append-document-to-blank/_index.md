@@ -14,7 +14,7 @@ url: /zh/net/join-and-append-documents/append-document-to-blank/
 
 确保您具备以下先决条件：
 
-- 已安装 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载它或使用 NuGet 包管理器来安装它。
+- 已安装 Aspose.Words for .NET 库。您可以从以下位置下载：[Aspose.Releases]https://releases.aspose.com/words/net/ 或使用 NuGet 包管理器来安装它。
 - 源文档和目标文档所在的文档目录路径。
 
 ## 第 2 步：创建新的目标文档

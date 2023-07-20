@@ -153,7 +153,7 @@ Console.WriteLine(doc.GetText());
 
 #### F: Hur kan jag inkludera fälten i utdataresultatet i Aspose.Words för .NET?
 
- S: För att inkludera texten i fälten i utdataresultatet kan du ändra alternativen så att fälten inte ignoreras. För detta kan du ställa in`IgnoreFields`egendom av`FindReplaceOptions` invända mot`false`:
+ S: För att inkludera texten i fälten i utdataresultatet kan du ändra alternativen så att fälten inte ignoreras. För detta kan du ställa in`IgnoreFields` egendom av`FindReplaceOptions` invända mot`false`:
 
 ```csharp
 options.IgnoreFields = false;

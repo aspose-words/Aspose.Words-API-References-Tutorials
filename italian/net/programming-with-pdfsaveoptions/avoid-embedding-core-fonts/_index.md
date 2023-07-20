@@ -12,7 +12,7 @@ In questo tutorial, ti guideremo attraverso i passaggi su come ridurre le dimens
 
 ## Passaggio 1: caricamento del documento
 
-Inizia caricando il documento Word che vuoi convertire in PDF:
+Inizia caricando il documento Word che desideri convertire in PDF:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

@@ -58,7 +58,7 @@ Bu, Aspose.Words for .NET ile belirli bir düğümün ana düğümünü almak i�
 
 #### S: Node.js'deki ana düğüm nedir?
 
-C: Node.js'deki üst düğüm, bir XML belgesinin hiyerarşisindeki bir sonraki üst düğümü ifade eder. Bu, belirtilen düğümü içeren düğümdür.
+C: Node.js'deki üst düğüm, bir XML belgesinin hiyerarşisindeki bir sonraki daha yüksek düğümü ifade eder. Bu, belirtilen düğümü içeren düğümdür.
 
 #### S: Belirli bir düğümün üst düğümü nasıl elde edilir?
 

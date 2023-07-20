@@ -74,14 +74,14 @@ Artık belirli bölümlerle kolayca çalışabilirsiniz.
 
 Bu öğreticide, Aspose.Words for .NET'in Belgeyi Bölümlere Göre Böl işlevini inceledik. Bir Word belgesini ayrı bölümlere ayırarak her bölüm için ayrı belgeler oluşturmayı öğrendik. Belgeyi yükleyerek, her bölümü yineleyerek ve bunları ayrı belgeler olarak kaydederek, belirli bölümlerle etkili bir şekilde çalışabildik.
 
-Belgeyi Bölümlere Göre Böl özelliğini kullanmak, bir belgenin bölümler, kısımlar veya diğer bölümler gibi belirli kısımlarını değiştirmeniz veya analiz etmeniz gerektiğinde avantajlı olabilir. Aspose.Words for .NET, verimli belge işlemeyi mümkün kılarak bölüm ayrımını işlemek için güvenilir ve basit bir çözüm sunar.
+Belgeyi Bölümlere Göre Böl özelliğini kullanmak, bir belgenin bölümler, kısımlar veya diğer bölümler gibi belirli kısımlarını değiştirmeniz veya analiz etmeniz gerektiğinde avantajlı olabilir. Aspose.Words for .NET, verimli belge işlemeyi mümkün kılarak, bölüm ayrımının üstesinden gelmek için güvenilir ve basit bir çözüm sunar.
 
 Aspose.Words for .NET tarafından belge işleme becerilerinizi geliştirmek ve iş akışınızı kolaylaştırmak için sunulan diğer güçlü özellikleri keşfetmekten çekinmeyin.
 
 ### SSS
 
 #### S1: Bir Word belgesini bölüm sonu dışında belirli ölçütlere göre bölümlere ayırabilir miyim?
-Evet, bölme kriterlerini özel ihtiyaçlarınıza göre özelleştirebilirsiniz. Bölüm sonlarının yanı sıra, Aspose.Words for .NET tarafından sağlanan çeşitli özellikleri ve yöntemleri kullanarak belgeyi başlıklar, yer işaretleri veya belirli içerik gibi diğer öğelere göre bölebilirsiniz.
+Evet, bölme kriterlerini özel ihtiyaçlarınıza göre özelleştirebilirsiniz. Bölüm sonlarının yanı sıra, Aspose.Words for .NET tarafından sağlanan çeşitli özellikleri ve yöntemleri kullanarak belgeyi başlıklar, yer imleri veya belirli içerik gibi diğer öğelere göre bölebilirsiniz.
 
 #### S2: Bölümleri tekrar tek bir belgede birleştirmek mümkün mü?
  Evet, kullanarak birden çok belgeden bölümleri içe aktarıp birleştirerek ayrı bölümleri tek bir belgede birleştirebilirsiniz.`ImportNode` Ve`Sections.Add` yöntemler. Bu, bölme işlemini tersine çevirmenize ve orijinal belgeyi yeniden oluşturmanıza olanak tanır.

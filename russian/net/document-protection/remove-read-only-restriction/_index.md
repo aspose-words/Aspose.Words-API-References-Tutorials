@@ -79,7 +79,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 О: Чтобы удалить ограничение только для чтения из документа Word с помощью Aspose.Words for .NET, вы можете выполнить следующие действия:
 1.  Создайте экземпляр`Document` class и установить пароль для документа с помощью`SetPassword` метод`WriteProtection` объект.
-2.  Установить`ReadOnlyRecommended`собственность`WriteProtection` Возражать`false` чтобы удалить рекомендацию только для чтения.
+2.  Установить`ReadOnlyRecommended` собственность`WriteProtection` Возражать`false` чтобы удалить рекомендацию только для чтения.
 3.  Примените неограниченную защиту к документу с помощью`Protect` метод`Document` объект с`NoProtection` тип защиты.
 4.  Сохраните документ без ограничения только для чтения, используя`Save` метод`Document` объект.
 

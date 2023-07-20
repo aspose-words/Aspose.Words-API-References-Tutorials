@@ -75,7 +75,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 #### 问：如何调整整个Word文档的行距？
 
-答：使用Aspose.Words，您可以轻松调整整个Word文档的行距。使用 API 提供的方法指定整个文档所需的行距。
+答：使用Aspose.Words，您可以轻松调整整个Word文档的行间距。使用 API 提供的方法指定整个文档所需的行间距。
 
 #### 问：Aspose.Words 支持多行间距吗？
 

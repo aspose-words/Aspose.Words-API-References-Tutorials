@@ -17,4 +17,4 @@ Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa tutorials
 | Titel | Beskrivning |
 | --- | --- |
 | [Ändra Toc-stil i Word-dokument](./change-style-of-toc-level/) | Lär dig hur du enkelt ändrar stilen på en innehållsförteckningsnivå i ett Word-dokument med Aspose.Words för .NET. |
-| [Ändra Toc-flikstopp i Word-dokument](./change-toc-tab-stops/) | Lär dig hur du ändrar innehållsförteckningsflikar i ett Word-dokument med Aspose.Words för .NET. |
+| [Ändra Toc-tabstopp i Word-dokument](./change-toc-tab-stops/) | Lär dig hur du ändrar innehållsförteckningsflikar i ett Word-dokument med Aspose.Words för .NET. |

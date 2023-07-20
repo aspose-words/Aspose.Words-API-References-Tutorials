@@ -94,14 +94,14 @@ shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-// Yalnızca eklediğimiz iki şekli içeren belgenin şekil koleksiyonunu alın.
+// Yalnızca eklediğimiz iki şekli içeren belgenin şekil koleksiyonunu edinin.
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
 Assert.AreEqual(2, shapes.Count);
 
 // İlk şekli çıkarın.
 shapes[0].Remove();
 
-// Değişiklikler izlenirken bu şekli kaldırdığımız için, şekil bir silme revizyonu olarak sayılır.
+// Değişiklikler izlenirken bu şekli kaldırdığımız için, şekil bir silme düzeltmesi olarak sayılır.
 Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
 Assert.True(shapes[0].IsDeleteRevision);
 

@@ -10,9 +10,9 @@ url: /fr/net/working-with-formfields/form-fields-work-with-properties/
 
 Dans ce didacticiel étape par étape, nous vous expliquerons comment utiliser les propriétés de champ de formulaire dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
+ Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque à partir de[Aspose.Releases] https://releases.aspose.com/words/net/.
 
-## Étape 1 : Initialisation de l'objet Document
+## Étape 1 : Initialisation de l'objet document
 
  Tout d'abord, initialisez le`Document` objet en fournissant le chemin d'accès à votre document source contenant les champs de formulaire :
 

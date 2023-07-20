@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### س: كيف يمكنني الوصول إلى التعليقات الموجودة في Aspose.Words for .NET؟
 
- ج: يمكنك الوصول إلى التعليقات الموجودة في Aspose.Words for .NET باستخدام`CommentCollection`ممتلكات`Document`هدف. سيسمح لك ذلك بتصفح جميع التعليقات الموجودة في المستند.
+ ج: يمكنك الوصول إلى التعليقات الموجودة في Aspose.Words for .NET باستخدام`CommentCollection` ممتلكات`Document`هدف. سيسمح لك ذلك بتصفح جميع التعليقات الموجودة في المستند.
 
 #### س: هل يمكنني تعديل نص التعليق في Aspose.Words for .NET؟
 

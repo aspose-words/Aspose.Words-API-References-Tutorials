@@ -88,11 +88,11 @@ doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 
 #### س: كيف يمكنني عرض التعليقات التي تم حلها في Aspose.Words for .NET؟
 
- ج: بشكل افتراضي ، يتم إخفاء التعليقات التي تم حلها في المستند النهائي. ومع ذلك ، يمكنك إظهارها باستخدام ملف`CommentOptions.ShowResolvedComments`ممتلكات`Document` الاعتراض وضبطه على`true`.
+ ج: بشكل افتراضي ، يتم إخفاء التعليقات التي تم حلها في المستند النهائي. ومع ذلك ، يمكنك إظهارها باستخدام ملف`CommentOptions.ShowResolvedComments` ممتلكات`Document` الاعتراض وضبطه على`true`.
 
 #### س: كيف يمكنني إخفاء كل التعليقات ، بما في ذلك الردود ، في Aspose.Words for .NET؟
 
- ج: لإخفاء جميع التعليقات ، بما في ذلك الردود ، في Aspose.Words for .NET ، يمكنك استخدام`CommentOptions.CommentDisplayMode`ممتلكات`Document` كائن وضبطه على`CommentDisplayMode.None`.
+ ج: لإخفاء جميع التعليقات ، بما في ذلك الردود ، في Aspose.Words for .NET ، يمكنك استخدام`CommentOptions.CommentDisplayMode` ممتلكات`Document` كائن وضبطه على`CommentDisplayMode.None`.
 
 #### س: هل يمكنني تعديل نص تعليق تم حله في Aspose.Words for .NET؟
 

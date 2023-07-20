@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Étape 3 : Ajouter des éléments à la zone de liste déroulante
- Ajoutez des éléments à la zone de liste déroulante à l'aide de la`ListItems`propriété de la`StructuredDocumentTag` Chaque élément est représenté par un`SdtListItem` objet, qui prend un texte d'affichage et une valeur. Dans cet exemple, nous ajoutons trois éléments à la zone de liste déroulante.
+ Ajoutez des éléments à la zone de liste déroulante à l'aide de la`ListItems` propriété de la`StructuredDocumentTag` Chaque élément est représenté par un`SdtListItem` objet, qui prend un texte d'affichage et une valeur. Dans cet exemple, nous ajoutons trois éléments à la zone de liste déroulante.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

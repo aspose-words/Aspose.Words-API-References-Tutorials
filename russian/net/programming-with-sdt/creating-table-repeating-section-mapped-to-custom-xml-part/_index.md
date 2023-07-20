@@ -31,7 +31,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Шаг 3. Добавьте пользовательские XML-данные в CustomXmlPart
+## Шаг 3. Добавьте пользовательские данные XML в CustomXmlPart
  Создать`CustomXmlPart` и добавьте к нему пользовательские XML-данные. В этом примере мы создаем строку XML, представляющую набор книг с их названиями и авторами.
 
 ```csharp

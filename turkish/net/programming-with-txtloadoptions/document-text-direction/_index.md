@@ -79,7 +79,7 @@ Bu öğreticide, Aspose.Words for .NET'teki belge metni yönü özelliğini ince
 
 Bu özellik, metnin çok dilli belgelerde doğru şekilde görüntülenmesini sağlamak için gereklidir. Aspose.Words, uygun yükleme seçeneklerini kullanarak metnin yönünü otomatik olarak algılayabilir ve bunu belgeye uygulayabilir.
 
-Aspose.Words ile belgelerinizdeki metnin yönünü kolayca değiştirebilir, kullanıcılara akıcı ve sezgisel bir okuma deneyimi sunabilirsiniz.
+Aspose.Words ile belgelerinizdeki metnin yönünü kolayca değiştirerek kullanıcılara sorunsuz ve sezgisel bir okuma deneyimi sağlayabilirsiniz.
 
 Bu özelliğin, özellikle belirli metin yönü gerektiren dillerle Sözcük İşleme yaparken kullanışlı olduğuna dikkat etmek önemlidir. Aspose.Words, belgelerinizdeki metnin yönünü yönetmek için güçlü araçlar sağlayarak bu görevi kolaylaştırır.
 

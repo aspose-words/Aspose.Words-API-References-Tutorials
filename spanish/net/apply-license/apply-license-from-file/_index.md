@@ -56,7 +56,7 @@ Aquí está el código fuente completo para aplicar una licencia desde un archiv
 ```csharp
 License license = new License();
 
-//Esta línea intenta establecer una licencia desde varias ubicaciones en relación con el ejecutable y Aspose.Words.dll.
+// Esta línea intenta establecer una licencia desde varias ubicaciones en relación con el ejecutable y Aspose.Words.dll.
 // También puede usar la sobrecarga adicional para cargar una licencia desde una transmisión, esto es útil,
 // por ejemplo, cuando la licencia se almacena como un recurso incrustado.
 try
@@ -78,7 +78,7 @@ Agregar preguntas frecuentes a los tutoriales mejora enormemente la experiencia 
 
 #### P: ¿Dónde puedo encontrar la documentación de licencia de Aspose.Words para .NET?
 
-R: Puede encontrar la documentación de licencia de Aspose. Words para .NET en el sitio web oficial de documentación de Aspose. La documentación proporciona instrucciones detalladas y ejemplos para aplicar licencias, incluida la aplicación de licencias desde archivos.
+ R: Puede encontrar la documentación de licencia de Aspose. Palabras para .NET en el[Referencias de API](https://reference.aspose.com/words/net/). La documentación proporciona instrucciones detalladas y ejemplos para aplicar licencias, incluida la aplicación de licencias desde archivos.
 
 #### P: ¿Qué formatos de archivo admite Aspose.Words para .NET para los archivos de licencia?
 

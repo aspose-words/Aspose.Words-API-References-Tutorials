@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: Desvincular encabezados y pies de página en el documento de origen
 
- Para desvincular los encabezados y pies de página en el documento de origen de continuar con los encabezados y pies de página del documento de destino, debe configurar el`LinkToPrevious`propiedad de la`HeadersFooters` colección en la primera sección del documento fuente para`false`.
+ Para desvincular los encabezados y pies de página en el documento de origen de continuar con los encabezados y pies de página del documento de destino, debe configurar el`LinkToPrevious` propiedad de la`HeadersFooters` colección en la primera sección del documento fuente para`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);

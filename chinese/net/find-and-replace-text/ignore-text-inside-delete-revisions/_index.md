@@ -48,7 +48,7 @@ doc.StopTrackRevisions();
 
 ## 步骤 4：应用“忽略删除修订内的文本”功能
 
-现在我们已经通过删除段落准备了文档，我们可以使用以下命令启用“忽略删除修订内的文本”功能`FindReplaceOptions`目的。我们将设置`IgnoreDeleted`财产给`true`:
+现在我们已经通过删除段落准备了文档，我们可以使用以下命令启用“忽略删除修订内的文本”功能`FindReplaceOptions`目的。我们将设置`IgnoreDeleted`财产给`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -73,7 +73,7 @@ Console.WriteLine(doc.GetText());
 
 ## 步骤 7：修改选项以包含已删除的文本
 
-如果我们想在输出结果中包含已删除的文本，我们可以更改选项以不忽略已删除的文本。为此我们将设置`IgnoreDeleted`财产给`false`:
+如果我们想在输出结果中包含已删除的文本，我们可以更改选项以不忽略已删除的文本。为此我们将设置`IgnoreDeleted`财产给`false`：
 
 ```csharp
 options. IgnoreDeleted = false;
@@ -164,7 +164,7 @@ doc.StopTrackRevisions();
 
 #### 问：如何在 Aspose.Words for .NET 中启用“忽略删除修订内的文本”功能？
 
-答：现在我们已经通过删除段落准备好了文档，我们可以使用以下命令启用“忽略删除修订内的文本”功能：`FindReplaceOptions`目的。我们将设置`IgnoreDeleted`财产给`true`:
+答：现在我们已经通过删除段落准备好了文档，我们可以使用以下命令启用“忽略删除修订内的文本”功能：`FindReplaceOptions`目的。我们将设置`IgnoreDeleted`财产给`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -189,7 +189,7 @@ Console.WriteLine(doc.GetText());
 
 #### 问：如何在 Aspose.Words for .NET 的输出结果中包含删除的文本？
 
-答：如果我们想在输出结果中包含已删除的文本，我们可以更改选项以不忽略已删除的文本。为此，我们将设置`IgnoreDeleted`财产给`false`:
+答：如果我们想在输出结果中包含已删除的文本，我们可以更改选项以不忽略已删除的文本。为此，我们将设置`IgnoreDeleted`财产给`false`：
 
 ```csharp
 options. IgnoreDeleted = false;

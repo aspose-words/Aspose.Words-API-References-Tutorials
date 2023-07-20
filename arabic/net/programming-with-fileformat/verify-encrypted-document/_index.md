@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## الخطوة 3: تحقق مما إذا كان المستند مشفرًا
 
- نحن نستخدم ال`IsEncrypted`ممتلكات`FileFormatInfo` للتحقق مما إذا كان المستند مشفرًا. تعود هذه الخاصية`true` إذا تم تشفير المستند ، وإلا فإنه يعود`false`. نعرض النتيجة في وحدة التحكم.
+ نحن نستخدم ال`IsEncrypted` ممتلكات`FileFormatInfo`للتحقق مما إذا كان المستند مشفرًا. تعود هذه الخاصية`true` إذا تم تشفير المستند ، وإلا فإنه يعود`false`. نعرض النتيجة في وحدة التحكم.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### س: كيف تكتشف تنسيق الملف؟
- يمكنك استخدام ال`DetectFileFormat` طريقة`FileFormatUtil` فئة للكشف عن معلومات تنسيق الملف. في المثال التالي ، نفترض أن المستند المشفر يسمى "Encrypted.docx" وموجود في دليل المستندات المحدد:
+ يمكنك استخدام ال`DetectFileFormat` طريقة`FileFormatUtil`فئة للكشف عن معلومات تنسيق الملف. في المثال التالي ، نفترض أن المستند المشفر يسمى "Encrypted.docx" وموجود في دليل المستندات المحدد:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### س: كيف تتحقق مما إذا كان المستند مشفرًا؟
- يمكنك استخدام ال`IsEncrypted`ممتلكات`FileFormatInfo` للتحقق مما إذا كان المستند مشفرًا. تعود هذه الخاصية`true` إذا تم تشفير المستند ، وإلا فإنه يعود`false`. يتم عرض النتيجة في وحدة التحكم:
+ يمكنك استخدام ال`IsEncrypted` ممتلكات`FileFormatInfo`للتحقق مما إذا كان المستند مشفرًا. تعود هذه الخاصية`true` إذا تم تشفير المستند ، وإلا فإنه يعود`false`. يتم عرض النتيجة في وحدة التحكم:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

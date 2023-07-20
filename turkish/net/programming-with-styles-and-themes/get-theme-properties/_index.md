@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- Bu adımda,`Theme`mülkiyeti`Document`almak için nesne`Theme` nesne. Ardından temanın ana yazı tipleri gibi farklı özelliklerine erişebiliriz (`MajorFonts`), ikincil yazı tipleri (`MinorFonts`) ve vurgu renkleri (`Colors`).
+ Bu adımda,`Theme` mülkiyeti`Document`almak için nesne`Theme` nesne. Ardından temanın ana yazı tipleri gibi farklı özelliklerine erişebiliriz (`MajorFonts`), ikincil yazı tipleri (`MinorFonts`) ve vurgu renkleri (`Colors`).
 
 ## 4. Adım: Tema özelliklerini görüntüleyin
 
@@ -68,7 +68,7 @@ Aspose.Words for .NET, belge temalarınızı işlemek için güçlü bir API sun
 
 #### Aspose.Words for .NET kullanarak bir belgenin tema özelliklerine nasıl erişebilirim?
 
- Bir belgenin tema özelliklerine erişmek için,`Theme`mülkiyeti`Document` nesne. bir döndürür`Theme` birincil ve ikincil yazı tiplerinin yanı sıra belgenin temasında kullanılan vurgu renkleri hakkında bilgi içeren nesne.
+ Bir belgenin tema özelliklerine erişmek için,`Theme` mülkiyeti`Document` nesne. bir döndürür`Theme` birincil ve ikincil yazı tiplerinin yanı sıra belgenin temasında kullanılan vurgu renkleri hakkında bilgi içeren nesne.
 
 #### Bir belgenin temasının birincil ve ikincil yazı tiplerini nasıl alabilirim?
 
@@ -76,7 +76,7 @@ Bir belgenin temasının birincil ve ikincil yazı tiplerine,`MajorFonts` Ve`Min
 
 #### Bir belgenin temasında kullanılan vurgu renklerini alabilir miyim?
 
- Evet, bir belgenin temasında kullanılan vurgu renklerini şu adrese erişerek alabilirsiniz:`Colors`mülkiyeti`Theme` nesne. Bu özellik, vurgu renkleri gibi erişim sağlar.`Accent1`, `Accent2`, `Accent3`özelleştirme veya analiz amacıyla kullanabileceğiniz vb.
+ Evet, bir belgenin temasında kullanılan vurgu renklerini şu adrese erişerek alabilirsiniz:`Colors` mülkiyeti`Theme` nesne. Bu özellik, vurgu renkleri gibi erişim sağlar.`Accent1`, `Accent2`, `Accent3`özelleştirme veya analiz amacıyla kullanabileceğiniz vb.
 
 #### Alınan tema özelliklerini nasıl kullanabilirim?
 

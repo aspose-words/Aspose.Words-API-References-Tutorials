@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## 2. Adım: Birleştirme alanlarını ekleme
 
- Bir belge oluşturucu kullanıyoruz`DocumentBuilder`gerekli birleştirme alanlarını eklemek için. Bu birleştirme alanları, değerine bağlı olarak yer imi içeriğini göstermek veya gizlemek için bir koşul ayarlar.`showHide` değişken:
+ Bir belge oluşturucu kullanıyoruz`DocumentBuilder` gerekli birleştirme alanlarını eklemek için. Bu birleştirme alanları, değerine bağlı olarak yer imi içeriğini göstermek veya gizlemek için bir koşul ayarlar.`showHide` değişken:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -170,8 +170,8 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### S: Aspose.Words kütüphanesi ücretsiz mi?
 
-Y: Aspose.Words kitaplığı ticari bir kitaplıktır ve projelerinizde kullanmak için geçerli bir lisans gerektirir. Lisanslama seçenekleri ve fiyatlandırma hakkında daha fazla bilgi edinmek için Aspose'un resmi web sitesine bakabilirsiniz.
+ Y: Aspose.Words kitaplığı ticari bir kitaplıktır ve projelerinizde kullanmak için geçerli bir lisans gerektirir. Kontrol edebilirsin[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/) lisanslama seçenekleri ve fiyatlandırma hakkında daha fazla bilgi edinmek için.
 
 #### S: .NET'te Word belgeleriyle Sözcük İşleme için kullanılabilen başka kitaplıklar var mı?
 
-Y: Evet, .NET'te Word belgeleriyle Sözcük İşleme için Open XML SDK ve GemBox.Document gibi başka kitaplıklar da vardır. Özel ihtiyaçlarınıza ve tercihlerinize göre bu kütüphaneleri Aspose.Words'a alternatif olarak keşfedebilirsiniz.
+Y: Evet, .NET'te Word belgeleriyle Sözcük İşleme için Open XML SDK ve GemBox.Document gibi başka kitaplıklar da mevcuttur. Özel ihtiyaçlarınıza ve tercihlerinize göre bu kütüphaneleri Aspose.Words'a alternatif olarak keşfedebilirsiniz.

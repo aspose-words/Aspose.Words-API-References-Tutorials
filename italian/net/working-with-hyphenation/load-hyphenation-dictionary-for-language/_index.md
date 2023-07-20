@@ -10,7 +10,7 @@ url: /it/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 
 In questo tutorial passo-passo, ti mostreremo come caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria dal sito ufficiale.
+ Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria da[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Passaggio 1: caricamento del documento
 

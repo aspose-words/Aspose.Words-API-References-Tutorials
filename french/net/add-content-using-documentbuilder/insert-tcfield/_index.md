@@ -1,13 +1,12 @@
 ---
-title: Insérer le champ TCField
-linktitle: Insérer le champ TCField
+title: Insérer TCField dans un document Word
+linktitle: Insérer TCField dans un document Word
 second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment insérer et manipuler des TCFields dans des documents Word à l'aide de C# et Aspose.Words pour .NET dans ce guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-tcfield/
 ---
-
 Dans cet exemple, nous vous guiderons tout au long du processus d'utilisation de la fonction Insérer TCField d'Aspose.Words pour .NET. Le TCField représente une entrée de table des matières dans un document Word. Nous fournirons une explication étape par étape du code source C #, ainsi que la sortie attendue au format Markdown. Commençons!
 
 ## Étape 1 : Initialisation du document et du générateur de documents
@@ -66,5 +65,30 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 
 N'hésitez pas à modifier le code en fonction de vos besoins et à explorer d'autres fonctionnalités fournies par Aspose.Words pour .NET.
 
-C'est ça! Vous avez appris avec succès comment insérer un TCField en utilisant Aspose.Words pour .NET.
+## Conclusion
 
+Toutes nos félicitations! Vous avez appris avec succès comment insérer un TCField dans un document Word en utilisant Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais ajouter des entrées de table des matières avec des textes d'entrée personnalisés à vos documents.
+
+La fonctionnalité TCField est un outil utile pour créer une table des matières organisée et navigable dans vos documents Word. Expérimentez avec différents textes d'entrée et options de mise en forme pour créer des documents professionnels et structurés faciles à parcourir. N'oubliez pas de mettre à jour la table des matières après avoir apporté des modifications pour vous assurer qu'elle reflète le contenu le plus récent du document.
+
+### FAQ pour insérer TCField dans un document Word
+
+#### Q : Qu'est-ce qu'un TCField dans Aspose.Words pour .NET ?
+
+R : Un TCField dans Aspose.Words pour .NET représente une entrée de table des matières (TOC) dans un document Word. Il vous permet d'ajouter une entrée de table des matières avec le texte d'entrée spécifié, qui sera utilisée pour générer la table des matières lors de la mise à jour du document.
+
+#### Q : Comment personnaliser le texte d'entrée de TCField ?
+
+ R : Vous pouvez personnaliser le texte d'entrée TCField en fournissant le texte souhaité comme argument au`InsertField` méthode. Par exemple,`builder.InsertField("TC \"Custom Entry\" \\f t");` insérera un TCField avec le texte d'entrée "Entrée personnalisée" dans le document.
+
+#### Q : Puis-je ajouter plusieurs TCFields au document ?
+
+ R : Oui, vous pouvez ajouter plusieurs TCFields au document en appelant le`InsertField` méthode plusieurs fois avec des textes d'entrée différents. Chaque TCField représentera une entrée distincte dans la table des matières.
+
+#### Q : Comment mettre à jour la table des matières après avoir inséré TCFields ?
+
+ : Pour mettre à jour la table des matières après avoir inséré TCFields, vous pouvez appeler le`UpdateFields` méthode sur le document. Cela garantira que toutes les modifications apportées aux TCFields ou au contenu du document sont reflétées dans la table des matières.
+
+#### Q : Puis-je personnaliser l'apparence de la table des matières ?
+
+R : Oui, vous pouvez personnaliser l'apparence de la table des matières en ajustant les options de formatage des TCFields. Vous pouvez modifier les styles de police, les couleurs et d'autres propriétés pour créer une table des matières visuellement attrayante.

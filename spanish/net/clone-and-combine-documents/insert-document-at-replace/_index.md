@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /es/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-
 En este tutorial, lo guiaremos a través de cómo insertar un documento en otro documento al reemplazarlo usando la función Insertar documento al reemplazar de Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y realizar la inserción del documento.
 
 ## Paso 1: Cargar el documento principal
@@ -62,3 +61,28 @@ FindReplaceOptions options = new FindReplaceOptions
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+## Conclusión
+
+En este tutorial, exploramos cómo insertar un documento en otro documento durante el reemplazo usando la función Insertar documento al reemplazar de Aspose.Words para .NET. Al configurar las opciones de buscar y reemplazar y proporcionar los datos necesarios, puede ensamblar documentos dinámicamente al reemplazar marcadores de posición específicos con el contenido de otras plantillas o secciones de documentos. Aspose.Words para .NET ofrece una forma poderosa y flexible de administrar tareas complejas de manipulación de documentos, lo que la convierte en una herramienta valiosa para automatizar la creación de documentos y los escenarios de inserción de contenido.
+
+### Preguntas frecuentes
+
+#### P: ¿Cuál es el propósito de insertar un documento en otro documento durante la sustitución?
+
+R: Insertar un documento en otro documento durante el reemplazo le permite reemplazar dinámicamente un marcador de posición específico con el contenido de un documento separado. Esta característica es particularmente útil cuando desea ensamblar un documento más grande combinando varias secciones o plantillas de documentos predefinidas en marcadores de posición específicos.
+
+#### P: ¿Cómo inserto un documento en otro documento durante la sustitución usando Aspose.Words para .NET?
+
+R: Para insertar un documento en otro documento durante la sustitución mediante Aspose.Words para .NET, siga estos pasos:
+1. Cargue el documento principal que contiene los marcadores de posición en un objeto Documento.
+2. Configure las opciones de búsqueda y reemplazo, incluida la dirección de búsqueda y la devolución de llamada de reemplazo para manejar la inserción del documento.
+3. Llame al método de reemplazo con el patrón de búsqueda apropiado, reemplazando los marcadores de posición con una cadena vacía, usando las opciones configuradas.
+
+#### P: ¿Puedo personalizar el comportamiento de inserción durante la sustitución?
+
+R: Sí, puede personalizar el comportamiento de inserción durante el reemplazo implementando un Reemplazo de llamada personalizado. Al heredar de la interfaz IReplacingCallback, puede controlar cómo se insertan y combinan los documentos según sus requisitos específicos al reemplazar los marcadores de posición.
+
+#### P: ¿Puedo reemplazar varios marcadores de posición con diferentes documentos?
+
+R: Sí, puede reemplazar varios marcadores de posición con diferentes documentos especificando los patrones de búsqueda apropiados para cada marcador de posición y proporcionando los documentos correspondientes para insertar.

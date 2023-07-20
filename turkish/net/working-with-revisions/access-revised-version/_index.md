@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### S: Aspose.Words for .NET'te bir belgenin revize edilmiş versiyonuna nasıl erişebilirim?
 
- C: Şunu kullanın:`RevisionsView`mülkiyeti`Document` Belgenin revize edilmiş versiyonuna erişmek için itiraz edin. değerini ayarlayabilirsiniz.`RevisionsView` mülkiyet`RevisionsView.Final` revizyonlar olmadan son versiyonu göstermek için.
+ C: Şunu kullanın:`RevisionsView` mülkiyeti`Document` Belgenin revize edilmiş versiyonuna erişmek için itiraz edin. değerini ayarlayabilirsiniz.`RevisionsView` mülkiyet`RevisionsView.Final` revizyonlar olmadan son versiyonu göstermek için.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### S: Aspose.Words for .NET'te belge revizyonlarına nasıl göz atabilirim?
 
- A: Bir kullanın`foreach` belgede bulunan revizyonları yinelemek için döngü. kullanabilirsiniz`Revisions`mülkiyeti`Document` belgenin tüm revizyonlarının bir koleksiyonunu almak için nesne.
+ C: Bir kullanın`foreach` belgede bulunan revizyonları yinelemek için döngü. kullanabilirsiniz`Revisions` mülkiyeti`Document` belgenin tüm revizyonlarının bir koleksiyonunu almak için nesne.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -106,7 +106,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### S: Aspose.Words for .NET'te bir paragrafın bir liste öğesi olup olmadığı nasıl kontrol edilir?
 
- C: Şunu kullanın:`IsListItem`mülkiyeti`Paragraph` paragrafın bir liste öğesi olup olmadığını kontrol etmek için nesne. bu`IsListItem` mülkiyet iadeleri`true` paragraf bir liste öğesiyse, aksi halde döndürür`false`.
+ C: Şunu kullanın:`IsListItem` mülkiyeti`Paragraph` paragrafın bir liste öğesi olup olmadığını kontrol etmek için nesne. bu`IsListItem` mülkiyet iadeleri`true` paragraf bir liste öğesiyse, aksi halde döndürür`false`.
 
 ```csharp
 if (paragraph.IsListItem)

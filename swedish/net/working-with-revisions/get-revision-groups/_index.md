@@ -72,7 +72,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 #### F: Hur får man fram författaren till en recensionsgrupp i Aspose.Words för .NET?
 
- A: Använd`Author`egendom av`RevisionGroup` objekt för att hämta författaren till revisionsgruppen.
+ A: Använd`Author` egendom av`RevisionGroup` objekt för att hämta författaren till revisionsgruppen.
 
 ```csharp
 string author = group.Author;
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### F: Hur får man revisionstypen för en revisionsgrupp i Aspose.Words för .NET?
 
- A: Använd`RevisionType`egendom av`RevisionGroup`objekt för att få gruppens revisionstyp.
+ A: Använd`RevisionType` egendom av`RevisionGroup`objekt för att få gruppens revisionstyp.
 
 ```csharp
 string revisionType = group.RevisionType;

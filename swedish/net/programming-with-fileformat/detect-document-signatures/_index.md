@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signe
 
 ## Steg 3: Sök efter digitala signaturer
 
- Vi kontrollerar om dokumentet innehåller digitala signaturer med hjälp av`HasDigitalSignature`egendom av`FileFormatInfo` objekt. Om digitala signaturer upptäcks visar vi ett meddelande som indikerar att signaturerna kommer att gå förlorade om dokumentet öppnas/sparas med Aspose.Words.
+ Vi kontrollerar om dokumentet innehåller digitala signaturer med hjälp av`HasDigitalSignature` egendom av`FileFormatInfo` objekt. Om digitala signaturer upptäcks visar vi ett meddelande som indikerar att signaturerna kommer att gå förlorade om dokumentet öppnas/sparas med Aspose.Words.
 
 ```csharp
 if (info.HasDigitalSignature)
@@ -68,7 +68,7 @@ Denna handledning har gett dig en steg-för-steg-guide om hur du upptäcker digi
 
 #### Hur upptäcker man närvaron av en digital signatur på ett Word-dokument med Aspose.Words för .NET?
 
- För att upptäcka närvaron av en digital signatur på ett Word-dokument med Aspose.Words för .NET kan du följa stegen i handledningen. Använda`DetectFileFormat` metod för`FileFormatUtil` klass låter dig upptäcka filformatinformation. Då kan du kontrollera`HasDigitalSignature`egendom av`FileFormatInfo`objekt för att avgöra om dokumentet innehåller en digital signatur. Om en digital signatur upptäcks kan du visa ett meddelande som säger att signaturer kommer att gå förlorade om dokumentet öppnas/sparas med Aspose.Words.
+ För att upptäcka närvaron av en digital signatur på ett Word-dokument med Aspose.Words för .NET kan du följa stegen i handledningen. Använda`DetectFileFormat` metod för`FileFormatUtil` klass låter dig upptäcka filformatinformation. Då kan du kontrollera`HasDigitalSignature` egendom av`FileFormatInfo`objekt för att avgöra om dokumentet innehåller en digital signatur. Om en digital signatur upptäcks kan du visa ett meddelande som säger att signaturer kommer att gå förlorade om dokumentet öppnas/sparas med Aspose.Words.
 
 #### Hur anger man katalogen som innehåller dokumenten där man ska söka efter den digitala signaturen?
 
@@ -84,7 +84,7 @@ När du öppnar eller sparar ett dokument med Aspose.Words kommer de digitala si
 
 #### Vilka andra funktioner i Aspose.Words för .NET kan användas i samband med upptäckt av digital signatur?
 
-Aspose.Words för .NET erbjuder en mängd olika funktioner för att bearbeta och manipulera Word-dokument. Förutom att upptäcka digitala signaturer kan du använda biblioteket för att extrahera text, bilder eller metadata från dokument, tillämpa formateringsändringar, slå samman dokument, konvertera dokument till olika format och mycket mer. Du kan utforska den officiella dokumentationen av Aspose.Words för .NET för att upptäcka alla tillgängliga funktioner och hitta de som bäst passar dina behov.
+ Aspose.Words för .NET erbjuder en mängd olika funktioner för att bearbeta och manipulera Word-dokument. Förutom att upptäcka digitala signaturer kan du använda biblioteket för att extrahera text, bilder eller metadata från dokument, tillämpa formateringsändringar, slå samman dokument, konvertera dokument till olika format och mycket mer. Du kan utforska[Aspose.Words för .NET API-referenser](https://reference.aspose.com/words/net/) för att upptäcka alla tillgängliga funktioner och hitta de som bäst passar dina behov.
 
 #### Vilka är begränsningarna för att upptäcka digitala signaturer med Aspose.Words för .NET?
 

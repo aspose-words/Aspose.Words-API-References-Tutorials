@@ -72,7 +72,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 #### S: Aspose.Words for .NET'te bir inceleme grubunun yazarını nasıl edinebilirim?
 
- C: Şunu kullanın:`Author`mülkiyeti`RevisionGroup` revizyon grubunun yazarını almak için nesne.
+ C: Şunu kullanın:`Author` mülkiyeti`RevisionGroup` revizyon grubunun yazarını almak için nesne.
 
 ```csharp
 string author = group.Author;
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### S: Aspose.Words for .NET'te bir revizyon grubunun revizyon türü nasıl elde edilir?
 
- C: Şunu kullanın:`RevisionType`mülkiyeti`RevisionGroup`grubun revizyon türünü almak için nesne.
+ C: Şunu kullanın:`RevisionType` mülkiyeti`RevisionGroup`grubun revizyon türünü almak için nesne.
 
 ```csharp
 string revisionType = group.RevisionType;

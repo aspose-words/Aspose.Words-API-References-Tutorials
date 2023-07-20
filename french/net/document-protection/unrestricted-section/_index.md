@@ -40,7 +40,7 @@ Assurez-vous de spécifier le bon type de protection et de définir le mot de pa
 
 ## Étape 4 : Désactivation de la protection pour une section spécifique
 
-Par défaut, toutes les sections sont protégées, mais vous pouvez désactiver la protection de manière sélective pour une section spécifique à l'aide de la propriété ProtectedForForms de l'objet Section :
+Par défaut, toutes les sections sont protégées, mais vous pouvez désactiver la protection de manière sélective pour une section spécifique à l'aide de la propriété ProtectedForForms de l'objet Section :
 
 ```csharp
 doc.Sections[0].ProtectedForForms = false;
@@ -109,7 +109,7 @@ R : Pour créer des sections sans restriction dans un document Word à l'aide d
 
 #### Q : Puis-je avoir plusieurs sections sans restriction dans un document Word ?
 
- R : Oui, vous pouvez avoir plusieurs sections sans restriction dans un document Word. En désactivant sélectivement la protection de sections spécifiques à l'aide de`ProtectedForForms`propriété de la`Section`objet, vous pouvez définir plusieurs sections dans lesquelles les utilisateurs peuvent librement modifier le contenu tout en protégeant les autres sections.
+ R : Oui, vous pouvez avoir plusieurs sections sans restriction dans un document Word. En désactivant sélectivement la protection de sections spécifiques à l'aide de`ProtectedForForms` propriété de la`Section`objet, vous pouvez définir plusieurs sections dans lesquelles les utilisateurs peuvent librement modifier le contenu tout en protégeant les autres sections.
 
 #### Q4. Puis-je supprimer la protection d'une section initialement protégée ?
  Oui, vous pouvez supprimer la protection d'une section initialement protégée en définissant la`ProtectedForForms` propriété du correspondant`Section` s'opposer à`false`. Cela permet aux utilisateurs de modifier le contenu de cette section spécifique sans aucune restriction.

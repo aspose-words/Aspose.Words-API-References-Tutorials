@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## الخطوة 3: تعيين الخط الافتراضي
- يمكنك الآن تحديد الخط الافتراضي لاستخدامه عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة ووضع`DefaultFontName`ممتلكات`DefaultFontSubstitution` يعترض على`DefaultFontSubstitution` هدف`SubstitutionSettings` ل`FontSettings`.
+ يمكنك الآن تحديد الخط الافتراضي لاستخدامه عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة ووضع`DefaultFontName` ممتلكات`DefaultFontSubstitution` يعترض على`DefaultFontSubstitution` هدف`SubstitutionSettings` ل`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 
 #### س: كيف يمكنني التحقق من الخط الافتراضي المحدد في Aspose.Words؟
 
- ج: للتحقق من الخط الافتراضي المحدد في Aspose.Words ، يمكنك استخدام`DefaultFontName`ممتلكات`PdfOptions` class واسترداد اسم الخط الذي تم تكوينه.
+ ج: للتحقق من الخط الافتراضي المحدد في Aspose.Words ، يمكنك استخدام`DefaultFontName` ممتلكات`PdfOptions` class واسترداد اسم الخط الذي تم تكوينه.
 
 #### س: هل من الممكن تحديد خط افتراضي مختلف لكل قسم من المستند؟
 

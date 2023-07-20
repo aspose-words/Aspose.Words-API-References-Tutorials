@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
 
-Bu eğitimde, Aspose.Words for .NET ile PDF'ye dönüştürürken görüntüleri altörnekleyerek pdf belge boyutunu küçültme adımlarında size yol göstereceğiz. Bu, oluşturulan PDF dosyasının boyutunu azaltır. Aşağıdaki adımları takip et:
+Bu öğreticide, Aspose.Words for .NET ile PDF'ye dönüştürürken görüntüleri altörnekleyerek pdf belge boyutunu küçültme adımlarında size yol göstereceğiz. Bu, oluşturulan PDF dosyasının boyutunu azaltır. Aşağıdaki adımları takip et:
 
 ## 1. Adım: Belgeyi yükleme
 
@@ -72,7 +72,7 @@ Bu eğitimde, Aspose.Words for .NET kullanarak PDF'ye dönüştürürken görün
 ### Sıkça Sorulan Sorular
 
 #### S: Görüntü örneklemeyle PDF belgesinin boyutunu küçülten nedir?
-Y: Görüntü Örnekleme ile PDF belge boyutunu küçültmek, PDF'ye dönüştürürken görüntülerin çözünürlüğünü azaltarak oluşturulan PDF dosyasının boyutunu küçültmek içindir. Bu, depolama alanı kullanımını optimize eder ve PDF dosyasını paylaşmayı ve aktarmayı kolaylaştırır.
+C: Görüntü Örnekleme ile PDF belge boyutunu küçültmek, PDF'ye dönüştürürken görüntülerin çözünürlüğünü azaltarak oluşturulan PDF dosyasının boyutunu azaltmaktır. Bu, depolama alanı kullanımını optimize eder ve PDF dosyasını paylaşmayı ve aktarmayı kolaylaştırır.
 
 #### S: Aspose.Words for .NET kullanarak görüntü örneklemeyle PDF belge boyutunu nasıl küçültebilirim?
 C: Aspose.Words for .NET kullanarak görüntü örneklemeyle PDF belge boyutunu küçültmek için şu adımları izleyin:
@@ -83,7 +83,7 @@ C: Aspose.Words for .NET kullanarak görüntü örneklemeyle PDF belge boyutunu 
 
  örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` kullanarak görüntü örnekleme seçeneklerini ayarlayın ve`DownsampleOptions` mülk. kullanarak görüntülerin hedef çözünürlüğünü belirleyebilirsiniz.`Resolution` özelliğini kullanarak görüntülerin ölçeğinin küçültülmeyeceği bir minimum çözünürlük eşiği ayarlayın.`ResolutionThreshold` mülk.
 
- kullanarak belgeyi PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
+ kullanarak belgeyi PDF biçiminde kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
 
 #### S: Görüntü örneklemeyle PDF belge boyutunu küçültmenin faydaları nelerdir?
 C: Görüntü örneklemeyle PDF belge boyutunu küçültmenin faydaları şunlardır:

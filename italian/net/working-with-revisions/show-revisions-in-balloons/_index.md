@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### D: Come visualizzare le revisioni nei fumetti con Aspose.Words per .NET?
 
- R: Usa il`ShowInBalloons`proprietà del`RevisionOptions` oggetto per configurare la visualizzazione delle revisioni nei fumetti. Puoi impostare questa proprietà su`ShowInBalloons.FormatAndDelete` per mostrare le revisioni nei fumetti con l'eliminazione e le revisioni di formattazione.
+ R: Usa il`ShowInBalloons` proprietà del`RevisionOptions` oggetto per configurare la visualizzazione delle revisioni nei fumetti. Puoi impostare questa proprietà su`ShowInBalloons.FormatAndDelete` per mostrare le revisioni nei fumetti con l'eliminazione e le revisioni di formattazione.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

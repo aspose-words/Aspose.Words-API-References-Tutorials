@@ -1,6 +1,6 @@
 ---
-title: Başlık
-linktitle: Başlık
+title: başlık
+linktitle: başlık
 second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile başlığı nasıl kullanacağınızı adım adım öğrenin.
 type: docs

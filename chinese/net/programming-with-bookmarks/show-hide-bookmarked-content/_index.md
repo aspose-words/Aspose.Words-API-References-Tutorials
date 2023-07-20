@@ -170,7 +170,7 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### 问：Aspose.Words 库是免费的吗？
 
-答：Aspose.Words 库是一个商业库，需要有效的许可证才能在您的项目中使用。您可以查看 Aspose 的官方网站，了解有关许可选项和定价的更多信息。
+答：Aspose.Words 库是一个商业库，需要有效的许可证才能在您的项目中使用。你可以检查[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)了解有关许可选项和定价的更多信息。
 
 #### 问：是否还有其他库可用于在 .NET 中对 Word 文档进行文字处理？
 

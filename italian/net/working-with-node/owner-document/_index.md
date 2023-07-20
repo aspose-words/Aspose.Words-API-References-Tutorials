@@ -56,7 +56,7 @@ doc.FirstSection.Body.AppendChild(para);
 ```
 
 ## Passaggio 7: verifica il nodo padre dopo l'aggiunta
-Dopo aver aggiunto il paragrafo al documento, controlliamo di nuovo se ora ha un nodo padre.
+Dopo aver aggiunto il paragrafo al documento, controlliamo di nuovo se ora ha un nodo genitore.
 
 ```csharp
 Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null));

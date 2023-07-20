@@ -96,7 +96,7 @@ Y: Evet, Yer İşareti Verilerini Güncelle özelliği özellikle Word belgeleri
 
 #### S: Metnin yanı sıra diğer yer imi özelliklerini güncelleyebilir miyim?
 
-C: Evet, metne ek olarak, yer imi adı, yer imi kapsamı vb. gibi diğer yer imi özelliklerini de güncelleyebilirsiniz.`Bookmark` istenen özellikleri güncellemek için nesne.
+ C: Evet, metne ek olarak, yer imi adı, yer imi kapsamı vb. gibi diğer yer imi özelliklerini de güncelleyebilirsiniz.`Bookmark` istenen özellikleri güncellemek için nesne.
 
 #### S: Aynı belgede birden fazla yer imini güncelleyebilir miyim?
 

@@ -75,7 +75,7 @@ R : La fonctionnalité « Plages Get Text In Word Document » dans Aspose.Wor
 
 #### Q : Comment charger un document Word à l'aide d'Aspose.Words pour .NET ?
 
-R : Pour charger un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Document` classe et son constructeur. Vous devez fournir le chemin d'accès au fichier ou le flux du document en tant que paramètre. Voici un exemple :
+ : Pour charger un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Document` classe et son constructeur. Vous devez fournir le chemin d'accès au fichier ou le flux du document en tant que paramètre. Voici un exemple :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 string text = doc.Range.Text;
 ```
 
- Ce code accède à l'ensemble du document à l'aide de la`Range`propriété de la`Document` classe et récupère le texte contenu dans cette plage à l'aide de la`Text` propriété.
+ Ce code accède à l'ensemble du document à l'aide de la`Range` propriété de la`Document` classe et récupère le texte contenu dans cette plage à l'aide de la`Text` propriété.
 
 #### Q : Puis-je extraire du texte de plusieurs plages dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
@@ -101,7 +101,7 @@ string text = doc.Range.Text;
 
 #### Q : Comment gérer la mise en forme et la structure lors de l'extraction de texte à partir de plages à l'aide d'Aspose.Words pour .NET ?
 
-R : Lors de l'extraction de texte à partir de plages à l'aide d'Aspose.Words pour .NET, la mise en forme et la structure du texte extrait sont conservées. Le texte extrait conservera sa mise en forme d'origine, telle que les styles de police, les tailles, les couleurs et d'autres attributs de mise en forme. Cependant, notez que le texte extrait peut ne pas inclure certains éléments ou propriétés non visibles associés au contenu d'origine, tels que le texte masqué ou les modifications suivies.
+R : Lors de l'extraction de texte à partir de plages à l'aide d'Aspose.Words pour .NET, la mise en forme et la structure du texte extrait sont conservées. Le texte extrait conservera sa mise en forme d'origine, telle que les styles de police, les tailles, les couleurs et d'autres attributs de mise en forme. Toutefois, notez que le texte extrait peut ne pas inclure certains éléments ou propriétés non visibles associés au contenu d'origine, tels que le texte masqué ou les modifications suivies.
 
 #### Q : Puis-je extraire uniquement une partie spécifique du texte dans une plage à l'aide d'Aspose.Words pour .NET ?
 

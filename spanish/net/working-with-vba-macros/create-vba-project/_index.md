@@ -98,7 +98,7 @@ R: Antes de poder crear un proyecto de VBA en un documento de Word, debe tener u
 
 #### P: ¿Cómo especificar el código fuente de la macro en el módulo VBA?
 
- R: Para especificar el código fuente de la macro en el módulo VBA, puede usar el`SourceCode`propiedad de la`VbaModule` clase asignándole una cadena de caracteres que contiene el código VBA.
+ R: Para especificar el código fuente de la macro en el módulo VBA, puede usar el`SourceCode` propiedad de la`VbaModule` clase asignándole una cadena de caracteres que contiene el código VBA.
 
 #### P: ¿Puedo agregar varios módulos de VBA a un proyecto de VBA en un documento de Word?
 

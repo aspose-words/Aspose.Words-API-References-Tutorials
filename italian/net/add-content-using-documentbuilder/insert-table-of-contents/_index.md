@@ -1,13 +1,12 @@
 ---
-title: Inserisci sommario
-linktitle: Inserisci sommario
+title: Inserisci il sommario nel documento di Word
+linktitle: Inserisci il sommario nel documento di Word
 second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire un sommario nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-
 In questo tutorial completo imparerai come inserire un sommario in un documento Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di generare un sommario con intestazioni e numeri di pagina appropriati.
 
 ## Prerequisiti
@@ -127,3 +126,29 @@ doc.UpdateFields();
 
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
+
+## Conclusione
+
+Congratulazioni! Hai imparato con successo come inserire un sommario in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida passo-passo e utilizzando il codice sorgente fornito, ora puoi generare un sommario con intestazioni e numeri di pagina appropriati per i tuoi documenti.
+
+### Domande frequenti per inserire il sommario nel documento word
+
+#### D: Posso personalizzare l'aspetto del sommario?
+
+ R: Sì, puoi personalizzare l'aspetto del sommario modificando le opzioni di formattazione specificate nel file`InsertTableOfContents` metodo. I parametri consentono di controllare i numeri di pagina, il rientro e altri stili.
+
+#### D: Cosa succede se desidero includere livelli di intestazione specifici nel sommario?
+
+ R: È possibile specificare i livelli di intestazione desiderati da includere nel sommario regolando il valore all'interno di`InsertTableOfContents` metodo. Ad esempio, utilizzando`"\\o \"1-3\""` includerà i livelli di intestazione da 1 a 3.
+
+#### D: Posso aggiornare automaticamente il sommario se apporto modifiche al contenuto del documento?
+
+ R: Sì, puoi aggiornare automaticamente il sommario chiamando il`UpdateFields` metodo sul documento. Ciò assicurerà che eventuali modifiche apportate al contenuto del documento, come l'aggiunta o la rimozione di intestazioni, si riflettano nel sommario.
+
+#### D: Come posso applicare uno stile diverso ai livelli delle intestazioni nel sommario?
+
+ R: Puoi modellare i livelli di intestazione in modo diverso utilizzando diversi stili di paragrafo per ogni livello di intestazione. Assegnando diversi`StyleIdentifier` valori al`ParagraphFormat` del`DocumentBuilder`, puoi creare stili distinti per ogni livello di intestazione.
+
+#### D: È possibile aggiungere ulteriore formattazione alle intestazioni nel sommario?
+
+ R: Sì, puoi aggiungere ulteriore formattazione alle intestazioni nel sommario, come stili di carattere, colori o altre proprietà. Regolando il`Font` proprietà del`DocumentBuilder`, puoi applicare una formattazione personalizzata alle intestazioni.

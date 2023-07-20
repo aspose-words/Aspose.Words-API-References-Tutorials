@@ -90,6 +90,6 @@ C: Word belgelerinizdeki eksik yazı tipleriyle başa çıkmak için farklı str
 
  C: Evet, Aspose.Words'te değiştirilen yazı tipi bildirimlerini almak mümkündür. Belge işleme sırasında yazı tipleri değiştirildiğinde,`FontSubstitutionCallback` olay ve metnin görünümünü ayarlamak için uygun eylemi gerçekleştirin.
 
-#### S: Aspose.Words'ta yazı tipleri değiştirildiğinde metin görünümünü nasıl tutarlı tutabilirim?
+#### S: Aspose.Words'te yazı tipleri değiştirildiğinde metin görünümünü nasıl tutarlı tutabilirim?
 
 Y: Yazı tipleri değiştirildiğinde metnin görünümünde tutarlılığı korumak için yazı tipi boyutu, stili ve rengi gibi metin biçimlendirme özelliklerini ayarlayabilirsiniz. Orijinal yazı tiplerine görsel olarak benzeyen yedek yazı tiplerini kullanmayı da düşünebilirsiniz.

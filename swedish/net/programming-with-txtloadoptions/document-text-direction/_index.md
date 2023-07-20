@@ -2,7 +2,7 @@
 title: Dokumenttextriktning
 linktitle: Dokumenttextriktning
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du anger textriktning i dina dokument med Aspose.Words för .NET. Förbättra displayen för höger-till-vänster-språk.
+description: Lär dig hur du anger textriktning i dina dokument med Aspose.Words för .NET. Förbättra visningen för höger-till-vänster-språk.
 type: docs
 weight: 10
 url: /sv/net/programming-with-txtloadoptions/document-text-direction/

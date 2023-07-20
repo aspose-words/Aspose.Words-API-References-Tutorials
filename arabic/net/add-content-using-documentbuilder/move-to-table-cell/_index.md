@@ -1,14 +1,13 @@
 ---
-title: الانتقال إلى خلية الجدول
-linktitle: الانتقال إلى خلية الجدول
+title: الانتقال إلى خلية الجدول في مستند Word
+linktitle: الانتقال إلى خلية الجدول في مستند Word
 second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: دليل خطوة بخطوة لاستخدام Move To Table Cell في Aspose.Words for .NET
+description: دليل خطوة بخطوة لاستخدام ميزة Move To Table Cell في مستند Word في Aspose.Words for .NET
 type: docs
 weight: 10
 url: /ar/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
-
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة Move To Table Cell في Aspose.Words for .NET باستخدام كود المصدر C # المقدم خطوة بخطوة. تتيح لك هذه الميزة التنقل والتعامل مع خلايا معينة داخل جدول في مستند Word. اتبع الخطوات أدناه لدمج هذه الوظيفة في تطبيقك.
+في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة Move To Table Cell في مستند Word في Aspose.Words for .NET باستخدام كود المصدر C # المقدم خطوة بخطوة. تتيح لك هذه الميزة التنقل والتعامل مع خلايا معينة داخل جدول في مستند Word. اتبع الخطوات أدناه لدمج هذه الوظيفة في تطبيقك.
 
 ## الخطوة 1: قم بتحميل المستند الذي يحتوي على الجدول
 
@@ -30,7 +29,7 @@ builder. MoveToCell(0, 2, 3, 0);
 builder.Write("\nCell content added by DocumentBuilder");
 ```
 
- ينشئ هذا الرمز DocumentBuilder من المستند الموجود ثم ينقل المؤشر من DocumentBuilder إلى خلية الجدول المحددة. أخيرًا ، يضيف محتوى إلى تلك الخلية باستخدام ملف DocumentBuilder`Write()` طريقة.
+ينشئ هذا الرمز DocumentBuilder من المستند الموجود ثم ينقل المؤشر من DocumentBuilder إلى خلية الجدول المحددة. أخيرًا ، يضيف محتوى إلى تلك الخلية باستخدام ملف DocumentBuilder`Write()` طريقة.
 
 ## الخطوة 3: تحقق من النتيجة
 
@@ -63,3 +62,25 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNode);
 Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
 ```
+
+## خاتمة
+
+في هذا المثال ، استكشفنا ميزة Move To Table Cell في Aspose.Words for .NET. لقد تعلمنا كيفية تحميل مستند يحتوي على جدول ، ونقل DocumentBuilder إلى خلية جدول معينة ، وإضافة محتوى إلى تلك الخلية. توفر هذه الميزة للمطورين أدوات قوية للتنقل والتعامل مع خلايا معينة داخل جداول مستندات Word برمجيًا باستخدام Aspose.Words for .NET. يمكن أن يكون إضافة قيمة لتطبيقك من أجل المعالجة الديناميكية لمستندات Word وإدارة محتوى الجدول.
+
+### الأسئلة الشائعة للانتقال إلى خلية الجدول في مستند Word
+
+#### س: ما هو الغرض من ميزة "الانتقال إلى خلية الجدول" في Aspose.Words for .NET؟
+
+ج: تسمح ميزة Move To Table Cell في Aspose.Words for .NET للمطورين بالانتقال إلى خلايا معينة ومعالجتها داخل جدول في مستند Word برمجيًا. يوفر القدرة على إدراج محتوى أو تعديله أو حذفه داخل خلية معينة.
+
+#### س: كيف يمكنني نقل DocumentBuilder إلى خلية جدول معينة في مستند Word؟
+
+ج: لنقل DocumentBuilder إلى خلية جدول معينة في مستند Word ، يمكنك استخدام طريقة MoveToCell لفئة DocumentBuilder. تأخذ هذه الطريقة مؤشرات الصف والخلية الهدف داخل الجدول كمعلمات وتضع المؤشر في بداية تلك الخلية.
+
+#### س: هل يمكنني إضافة محتوى أو تعديله بعد الانتقال إلى خلية جدول معينة باستخدام ميزة "نقل إلى خلية الجدول"؟
+
+ج: نعم ، بمجرد وضع DocumentBuilder في خلية الجدول المطلوبة باستخدام MoveToCell ، يمكنك استخدام طرق مختلفة لفئة DocumentBuilder ، مثل Write أو Writeln أو InsertHtml ، لإضافة محتوى تلك الخلية أو تعديله.
+
+#### س: كيف يمكنني التحقق من نجاح الانتقال إلى خلية الجدول؟
+
+ج: يمكنك التحقق من الانتقال الناجح إلى خلية الجدول عن طريق التحقق من موضع مؤشر DocumentBuilder. على سبيل المثال ، يمكنك مقارنة العقدة الحالية لـ DocumentBuilder بالخلية التي تنوي الانتقال إليها والتحقق من حفظ المحتوى المضاف بواسطة DocumentBuilder بشكل صحيح في خلية الجدول.

@@ -69,7 +69,7 @@ Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde VBA makrolar�
 
 #### S: Word belgesindeki VBA makrosu nedir?
 
-Y: Bir Word belgesindeki VBA makrosu, belgede belirli eylemleri gerçekleştirmek için çalıştırılabilen bir kod parçasıdır. VBA makroları, görevleri otomatikleştirmenize, özel işlevler eklemenize ve belge içeriğiyle etkileşim kurmanıza olanak tanır.
+Y: Word belgesindeki VBA makrosu, belgede belirli eylemleri gerçekleştirmek için çalıştırılabilen bir kod parçasıdır. VBA makroları, görevleri otomatikleştirmenize, özel işlevler eklemenize ve belge içeriğiyle etkileşim kurmanıza olanak tanır.
 
 #### S: Bir Word belgesinde VBA makrolarını düzenlemek için ön koşullar nelerdir?
 

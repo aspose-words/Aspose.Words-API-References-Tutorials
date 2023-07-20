@@ -10,7 +10,7 @@ url: /es/net/working-with-footnote-and-endnote/set-endnote-options/
 
 En este tutorial paso a paso, lo guiaremos sobre cómo usar Aspose.Words para .NET para configurar las opciones de notas finales en un documento de Word. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el sitio web oficial.
+ Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Paso 1: inicialización del objeto de documento
 
@@ -89,12 +89,12 @@ Siéntase libre de usar este código en sus propios proyectos y modifíquelo de 
 
 #### P: ¿Cómo puedo colocar las notas finales en un documento?
 
- R: Para colocar las notas finales en un documento, puede usar el`Position`propiedad de la`EndnoteOptions` clase. Puede especificar si las notas al final deben colocarse al final de cada página, al final de cada sección o al final del documento.
+ R: Para colocar las notas finales en un documento, puede usar el`Position` propiedad de la`EndnoteOptions` clase. Puede especificar si las notas al final deben colocarse al final de cada página, al final de cada sección o al final del documento.
 
 #### P: ¿Puedo personalizar el formato de numeración de las notas finales?
 
- R: Sí, puede personalizar el formato de la numeración de las notas finales en Aspose.Words. Utilizar el`NumberFormat`propiedad de la`EndnoteOptions` class para establecer el formato deseado, como números arábigos, números romanos, letras, etc.
+ R: Sí, puede personalizar el formato de la numeración de las notas finales en Aspose.Words. Utilizar el`NumberFormat` propiedad de la`EndnoteOptions` class para establecer el formato deseado, como números arábigos, números romanos, letras, etc.
 
 #### P: ¿Es posible continuar con la numeración de notas finales entre secciones de un documento?
 
- R: Sí, es posible continuar con la numeración de notas al final entre las secciones de un documento. Utilizar el`RestartRule`propiedad de la`EndnoteOptions` clase y configúrelo en`RestartContinuous` para permitir que la numeración continúe entre las secciones.
+ R: Sí, es posible continuar con la numeración de notas al final entre las secciones de un documento. Utilizar el`RestartRule` propiedad de la`EndnoteOptions` clase y configúrelo en`RestartContinuous` para permitir que la numeración continúe entre las secciones.
