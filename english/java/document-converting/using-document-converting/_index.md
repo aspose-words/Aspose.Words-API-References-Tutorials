@@ -105,7 +105,7 @@ options.setJpegQuality(300);
 
 To ensure a smooth and efficient document converting process, consider the following tips:
 
-1. **Document Format Compatibility:** Ensure that the source and target formats are compatible with Aspose.Words. Check the official documentation for the supported formats.
+1. **Document Format Compatibility:** Ensure that the source and target formats are compatible with Aspose.Words. [Aspose.Words Java API Reference](https://reference.aspose.com/words/java/) for the supported formats.
 
 2. **Handling Exceptions:** When dealing with a large number of documents, errors might occur during the conversion process. Implement proper exception handling to identify and address these issues gracefully.
 

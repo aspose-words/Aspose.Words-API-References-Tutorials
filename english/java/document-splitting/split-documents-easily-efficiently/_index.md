@@ -150,7 +150,7 @@ Yes, Aspose.Words for Java supports splitting password-protected documents as lo
 
 ### Q4. How can I get started with Aspose.Words for Java if I am new to the library?
 
-You can start by exploring the official documentation and code examples provided by Aspose.Words for Java. The documentation contains detailed information about the library's features and how to use them effectively.
+You can start by exploring the [Aspose.Words for Java API Reference](https://reference.aspose.com/words/java/) and code examples provided by Aspose.Words for Java. The documentation contains detailed information about the library's features and how to use them effectively.
 
 ### Q5. Is Aspose.Words for Java suitable for enterprise-level document processing?
 
