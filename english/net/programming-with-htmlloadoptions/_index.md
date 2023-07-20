@@ -12,4 +12,4 @@ The Aspose.Words for .NET tutorials on Words Processing with HTMLLoadOptions are
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Preferred Control Type](./preferred-control-type/) | Step-by-step guide to specifying the preferred control type when loading an HTML document with Aspose.Words for .NET. |
+| [Preferred Control Type In Word Document](./preferred-control-type/) | Step-by-step guide to specifying the preferred control type in word document when loading an HTML document with Aspose.Words for .NET. |
