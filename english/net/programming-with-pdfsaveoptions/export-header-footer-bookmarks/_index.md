@@ -68,7 +68,7 @@ That's all ! You have successfully exported header and footer bookmarks from a d
 
 In this tutorial, we explained how to export header and footer bookmarks from a Word document to a PDF document using Aspose.Words for .NET. Exported bookmarks allow easy navigation and quick reference to corresponding headers and footers in the generated PDF document. Follow the steps described to export header and footer bookmarks from a document and generate a PDF with the appropriate bookmarks using Aspose.Words for .NET. Be sure to specify the correct path to your documents and configure save options as needed.
 
-# Frequently Asked Questions
+### Frequently Asked Questions
 
 ### Q: What is exporting header and footer bookmarks from a Word document to a PDF document?
 A: Exporting header and footer bookmarks from Word document to PDF document is a feature to keep and generate bookmarks in the PDF document from the headers and footers. footers of the original Word document. This allows users to quickly and easily navigate through the PDF document by using bookmarks corresponding to headers and footers.
