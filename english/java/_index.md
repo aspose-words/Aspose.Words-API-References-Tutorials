@@ -22,8 +22,6 @@ The tutorials cover a wide range of Aspose.Words features, from basic table proc
 The tutorials focus on practical implementation, so you can learn how to use Aspose.Words to solve real-world document processing problems. This helps you to quickly get up to speed and start using Aspose.Words to automate your document processing tasks.
 ### Solid foundation for robust and scalable document processing solutions:
 The tutorials provide a solid foundation for building robust and scalable document processing solutions. This is because the tutorials cover the essential concepts of document processing, such as table processing, document merging, and watermarking.
-
-
 ## Document Processing Tutorials
 ### [Word Processing](./word-processing/) 
 Learn word processing with Aspose.Words for Java. Create, edit, and manipulate documents programmatically. Enhance your document processing skills today.
