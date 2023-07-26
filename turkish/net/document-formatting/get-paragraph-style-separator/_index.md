@@ -53,7 +53,7 @@ Bu kodla, Aspose.Words for .NET kullanan bir belgede paragraf stili ayırıcıla
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET ile Word belgelerinde "Paragraf Stili Ayırıcıyı Al" özelliğini kullanma sürecini inceledik. Belirtilen adımları izleyerek bir belge yükleyebilir, paragraf stili ayırıcıları bulabilir ve gereksinimlerinize göre gerekli değişiklikleri dahil edebilirsiniz. Aspose.Words for .NET ile bugün belge işleme becerilerinizi geliştirin!
+Bu eğitimde, Aspose.Words for .NET ile Word belgelerinde "Paragraf Stili Ayırıcı Al" özelliğini kullanma sürecini inceledik. Belirtilen adımları izleyerek bir belge yükleyebilir, paragraf stili ayırıcıları bulabilir ve gereksinimlerinize göre gerekli değişiklikleri dahil edebilirsiniz. Aspose.Words for .NET ile bugün belge işleme becerilerinizi geliştirin!
 
 ### SSS
 

@@ -91,7 +91,7 @@ namespace Example
 
 ## Çözüm
 
-Bu kılavuzda, "Liste girintisi için düzey başına bir boşluk karakteri kullan" işlevini uygulamak için Aspose.Words for .NET'in nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak, Word belgelerinizdeki listelerin girintisini düzey başına bir boşluk karakteri kullanarak kolayca yapılandırabilirsiniz. Aspose.Words, C# uygulamanızda iyi yapılandırılmış belgeler oluşturmanıza izin vererek, metin biçimlendirme ve liste yönetimi ile Kelime İşleme için muazzam esneklik ve güç sunar.
+Bu kılavuzda, "Liste girintisi için düzey başına bir boşluk karakteri kullan" işlevini uygulamak için Aspose.Words for .NET'in nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak, Word belgelerinizdeki listelerin girintisini düzey başına bir boşluk karakteri kullanarak kolayca yapılandırabilirsiniz. Aspose.Words, C# uygulamanızda iyi yapılandırılmış belgeler oluşturmanıza izin vererek, metin biçimlendirme ve liste yönetimi ile Kelime İşleme için muazzam bir esneklik ve güç sunar.
 
 ### Sıkça Sorulan Sorular
 

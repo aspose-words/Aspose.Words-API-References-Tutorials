@@ -19,7 +19,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 ```
 
-## Adım 2: Adres Mektup Birleştirmeyi Yapılandırın
+## 2. Adım: Adres Mektup Birleştirmeyi Yapılandırın
 
 Şimdi adres mektup birleştirmeyi yapılandıralım ve başka bir belgeye belge eklemek için alan birleştirme geri aramasını belirleyelim. İşte nasıl:
 

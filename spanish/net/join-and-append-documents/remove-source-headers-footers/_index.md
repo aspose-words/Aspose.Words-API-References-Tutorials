@@ -86,7 +86,7 @@ Aquí está el código fuente completo para la función "Eliminar encabezados y 
 		section.ClearHeadersFooters();
 	}
 	// Incluso después de borrar los encabezados y pies de página del documento de origen, la configuración "Enlace a anterior"
-	// para encabezados y pies de página todavía se pueden configurar. Esto hará que los encabezados y pies de página continúen desde el destino.
+	// para encabezados y pies de página todavía se pueden establecer. Esto hará que los encabezados y pies de página continúen desde el destino.
 	// documento. Esto debe establecerse en falso para evitar este comportamiento.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

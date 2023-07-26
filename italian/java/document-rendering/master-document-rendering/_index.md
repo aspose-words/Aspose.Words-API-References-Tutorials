@@ -26,7 +26,7 @@ Per utilizzare Aspose.Words per Java, è necessario includere il file JAR Aspose
 
 ### Licenza Aspose.Words per Java
 
- Per utilizzare Aspose.Words per Java in un ambiente di produzione, è necessario acquisire una licenza valida. Senza licenza, la libreria funzionerà in modalità di valutazione, con alcune limitazioni. Puoi ottenere un[licenza](https://purchase.aspose.com/pricing) e applicarlo per sbloccare il pieno potenziale della biblioteca.
+ Per utilizzare Aspose.Words per Java in un ambiente di produzione, è necessario acquisire una licenza valida. Senza licenza, la libreria funzionerà in modalità di valutazione, con alcune limitazioni. Puoi ottenere un[licenza](https://purchase.aspose.com/pricing) e applicarlo per sbloccare il pieno potenziale della libreria.
 
 ## Caricamento e manipolazione di documenti
 

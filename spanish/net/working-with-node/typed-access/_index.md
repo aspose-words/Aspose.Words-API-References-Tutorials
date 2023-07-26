@@ -2,7 +2,7 @@
 title: Acceso escrito
 linktitle: Acceso escrito
 second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a usar el acceso con tipo para manipular tablas en Aspose.Words para .NET.
+description: Aprenda a usar el acceso escrito para manipular tablas en Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-node/typed-access/

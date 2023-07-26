@@ -78,7 +78,7 @@ A: Sie können die MoveToParagraph-Methode der DocumentBuilder-Klasse verwenden.
 
 A: Ja, sobald der DocumentBuilder mit MoveToParagraph am gewünschten Absatz positioniert ist, können Sie verschiedene Methoden der DocumentBuilder-Klasse wie Writeln, Write oder InsertHtml verwenden, um den Inhalt dieses Absatzes hinzuzufügen oder zu ändern.
 
-#### F: Was passiert, wenn der angegebene Absatzindex im Dokument außerhalb des gültigen Bereichs liegt?
+#### F: Was passiert, wenn der angegebene Absatzindex im Dokument außerhalb des zulässigen Bereichs liegt?
 
 A: Wenn der angegebene Absatzindex außerhalb des zulässigen Bereichs liegt (z. B. negativ oder größer als die Gesamtzahl der Absätze im Dokument), wird eine Ausnahme ausgelöst. Es ist wichtig, sicherzustellen, dass der Absatzindex gültig ist, bevor Sie zu ihm wechseln.
 

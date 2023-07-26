@@ -26,7 +26,7 @@ Document doc = new Document(MyDir + "Rendering.docx");
 ```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-// Belgeyi, bu durumda başlığa göre ayırarak daha küçük parçalara ayırın.
+// Belgeyi, bu durumda başlığa göre ayırarak daha küçük parçalara bölün.
 DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
 

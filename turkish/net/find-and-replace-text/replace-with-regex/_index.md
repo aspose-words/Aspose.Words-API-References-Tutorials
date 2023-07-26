@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/replace-with-regex/
 ---
-Bu makalede, Aspose.Words for .NET kitaplığında Regex ile Değiştir işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, normal bir ifade tarafından tanımlanan belirli kalıplara dayalı olarak metin değiştirme gerçekleştirmenize olanak tanır.
+Bu makalede, Aspose.Words for .NET kütüphanesinde Regex ile Değiştir işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, normal bir ifade tarafından tanımlanan belirli kalıplara dayalı olarak metin değiştirme gerçekleştirmenize olanak tanır.
 
 ## Önkoşullar
 

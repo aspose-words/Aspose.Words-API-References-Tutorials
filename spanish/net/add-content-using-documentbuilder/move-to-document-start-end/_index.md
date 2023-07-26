@@ -71,7 +71,7 @@ En este ejemplo, hemos explorado la función Mover al inicio/fin del documento d
 
 #### P: ¿Cuál es el propósito de la función Mover al inicio/fin del documento en Aspose.Words para .NET?
 
-R: La función Mover al inicio/final del documento en Aspose.Words para .NET permite a los desarrolladores navegar hasta el principio o el final de un documento de Word usando la clase DocumentBuilder. Es útil para manipular o insertar contenido mediante programación en posiciones específicas dentro del documento.
+R: La función Mover al inicio/final del documento en Aspose.Words para .NET permite a los desarrolladores navegar hasta el principio o el final de un documento de Word utilizando la clase DocumentBuilder. Es útil para manipular o insertar contenido mediante programación en posiciones específicas dentro del documento.
 
 #### P: ¿Puedo usar esta función con un documento de Word existente?
 

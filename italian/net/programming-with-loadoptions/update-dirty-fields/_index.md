@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/update-dirty-fields/
 ---
-Quando l'elaborazione di testi con documenti Word in un'applicazione C#, potrebbe essere necessario aggiornare i campi dirty per visualizzare i valori più recenti. Con la libreria Aspose.Words per .NET, puoi aggiornare facilmente i campi dirty al caricamento del documento utilizzando LoadOptions. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per caricare un documento aggiornando i campi sporchi utilizzando LoadOptions.
+Quando l'elaborazione di testi con documenti Word in un'applicazione C#, potrebbe essere necessario aggiornare i campi dirty per mostrare i valori più recenti. Con la libreria Aspose.Words per .NET, puoi aggiornare facilmente i campi dirty al caricamento del documento utilizzando LoadOptions. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per caricare un documento aggiornando i campi sporchi utilizzando LoadOptions.
 
 ## Comprensione della libreria Aspose.Words
 

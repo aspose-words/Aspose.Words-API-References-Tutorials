@@ -11,7 +11,7 @@ url: /es/net/programming-with-table-styles-and-formatting/get-distance-between-t
 En este tutorial, lo guiaremos a través del proceso paso a paso para obtener la distancia entre el texto circundante en una tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, sabrá cómo acceder a las distintas distancias entre una tabla y el texto que la rodea en sus documentos de Word utilizando Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se encuentra su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
+Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se encuentra su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

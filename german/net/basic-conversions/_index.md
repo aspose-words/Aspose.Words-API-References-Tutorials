@@ -23,4 +23,4 @@ url: /de/net/basic-conversions/
 | [Konvertieren Sie Docx in Txt](./docx-to-txt/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Dokumente von Docx in einfachen Text (Txt) konvertieren. |
 | [Konvertieren Sie eine Textdatei in ein Word-Dokument](./txt-to-docx/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET reine Textdateien (Txt) in Word-Dokumente (Docx) konvertieren. | 
 | [PDF als JPEG speichern](./pdf-to-jpeg/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET PDF-Dokumente in JPEG-Bilder konvertieren. |
-| [PDF im Word-Format (Docx) speichern](./pdf-to-docx/) | Erfahren Sie, wie Sie PDF-Dokumente mit Aspose.Words für .NET in das Docx-Format konvertieren.  |
+| [PDF im Word-Format speichern (Docx)](./pdf-to-docx/) | Erfahren Sie, wie Sie PDF-Dokumente mit Aspose.Words für .NET in das Docx-Format konvertieren.  |

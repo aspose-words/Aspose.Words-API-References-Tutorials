@@ -60,7 +60,7 @@ Här är det fullständiga exemplet på källkoden för att visa eller dölja et
 
 den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Visa göm bokmärken i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att visa eller dölja ett specifikt bokmärke i ett dokument.
 
-### Vanliga frågor för att visa gömma bokmärken i word-dokument
+### Vanliga frågor för att visa gömma bokmärken i Word-dokument
 
 #### F: Kan jag visa eller dölja flera bokmärken i samma dokument?
 

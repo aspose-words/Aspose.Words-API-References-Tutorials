@@ -66,7 +66,7 @@ R: Sì, assolutamente! Aspose.Words per .NET offre funzionalità estese per modi
 
 R: Sì, Aspose.Words per .NET supporta un'ampia gamma di formati di file, tra cui DOCX, DOC, RTF, HTML, PDF e altro. Offre una conversione senza soluzione di continuità tra questi formati, rendendolo uno strumento versatile per l'elaborazione dei documenti.
 
-#### D: Posso aggiungere tabelle e grafici ai miei documenti Word a livello di codice?
+#### D: Posso aggiungere tabelle e grafici ai miei documenti Word a livello di programmazione?
 
 R: Sì, con Aspose.Words per .NET, puoi creare e inserire dinamicamente tabelle, grafici e altri elementi grafici nei tuoi documenti Word utilizzando il codice C#. Ciò consente di generare facilmente report complessi e ricchi di dati.
 

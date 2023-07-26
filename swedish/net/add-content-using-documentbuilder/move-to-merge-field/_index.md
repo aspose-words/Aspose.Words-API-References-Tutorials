@@ -80,7 +80,7 @@ builder.Write(" Text immediately after the field.");
 
 vi har utforskat funktionen Move To Merge Field i Aspose.Words för .NET. Vi lärde oss hur man navigerar för att slå samman fält i ett dokument med klassen DocumentBuilder och utföra operationer på dem. Den här funktionen är användbar när du programmerar ordbehandling med sammanfogning
 
-### Vanliga frågor för att flytta till sammanslagningsfält i Word-dokument
+### Vanliga frågor för att flytta till sammanfogningsfält i Word-dokument
 
 #### F: Vad är syftet med funktionen Move To Merge Field i Aspose.Words för .NET?
 

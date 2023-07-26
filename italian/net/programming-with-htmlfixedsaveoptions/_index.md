@@ -13,4 +13,4 @@ Le esercitazioni Aspose.Words per .NET sono progettate per aiutarti a padroneggi
 | Titolo | Descrizione |
 | --- | --- |
 | [Usa carattere dalla macchina di destinazione](./use-font-from-target-machine/) | Scopri come convertire un documento Word in HTML fisso utilizzando i caratteri della macchina di destinazione con Aspose.Words per .NET. |
-| [Scrivi tutte le regole CSS in un unico file](./write-all-css-rules-in-single-file/) | Scopri come convertire un documento Word in HTML fisso scrivendo tutte le regole CSS in un singolo file con Aspose.Words per .NET. |
+| [Scrivi tutte le regole CSS in un unico file](./write-all-css-rules-in-single-file/) | Scopri come convertire un documento Word in HTML fisso scrivendo tutte le regole CSS in un unico file con Aspose.Words per .NET. |

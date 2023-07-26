@@ -110,4 +110,4 @@ Aspose.Words for .NET 提供了强大的 API 来管理文档中的样式。您�
 
 #### 我可以将文档保存为不同的格式吗？
 
-是的，您可以将文档保存为 Aspose.Words for .NET 支持的各种格式。这`Save`的方法`Document`对象允许您指定输出文件格式，例如 DOCX、PDF、HTML 等。根据您的要求选择合适的格式。
+是的，您可以将文档保存为 Aspose.Words for .NET 支持的各种格式。这`Save`的方法`Document`对象允许您指定输出文件格式，例如 DOCX、PDF、HTML 等。根据您的要求选择适当的格式。

@@ -68,7 +68,7 @@ S: Du kan hitta ordbokfiler för olika språk på olika onlineresurser. Dessa fi
 
 #### F: Hur kan jag tillämpa den inlästa stavelseordboken på ett dokument i Aspose.Words?
 
- S: För att tillämpa den laddade ordboken för stavning på ett dokument i Aspose.Words, måste du iterera över orden i dokumentet och använda`Hyphenate()` metod för`Hyphenation` klass för att få stavningen av orden. Du kan sedan formatera de stavelseordnade orden efter behov, till exempel genom att lägga till bindestreck mellan stavelserna.
+ S: För att tillämpa den laddade ordboken för stavning på ett dokument i Aspose.Words, måste du iterera över orden i dokumentet och använda`Hyphenate()` metod för`Hyphenation` klass för att få stavning av orden. Du kan sedan formatera de stavelseordnade orden efter behov, till exempel genom att lägga till bindestreck mellan stavelserna.
 
 #### F: Vilka språk stöds för stavning i Aspose.Words?
 

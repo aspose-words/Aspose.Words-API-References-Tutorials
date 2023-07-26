@@ -70,7 +70,7 @@ R : Oui, vous pouvez facilement modifier le contenu d'un signet après l'avoir 
 
 #### Q : Les signets peuvent-ils être utilisés pour extraire par programmation des sections spécifiques d'un document ?
 
-R : Certainement ! Les signets sont utiles pour extraire par programmation des sections spécifiques d'un document. En utilisant le nom du signet, vous pouvez facilement identifier et extraire le contenu de cette zone de signet.
+R : Certainement ! Les signets sont utiles pour extraire par programme des sections spécifiques d'un document. En utilisant le nom du signet, vous pouvez facilement identifier et extraire le contenu de cette zone de signet.
 
 #### Q : Est-il possible d'ajouter des signets à des documents Word existants à l'aide d'Aspose.Words pour .NET ?
 

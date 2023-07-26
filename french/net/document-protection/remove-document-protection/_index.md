@@ -41,7 +41,7 @@ Assurez-vous de remplacer "newPassword" par le mot de passe correct du document.
 
 ## Étape 4 : Enregistrez le document sans protection
 
-Enfin, enregistrez le document sans protection en utilisant la méthode Save() de l'objet Document :
+Enfin, enregistrez le document sans protection en utilisant la méthode Save() de l'objet Document :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");

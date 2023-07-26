@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Steg 3: Ställ in system- och anpassade teckensnittsmappar
- Nu kan du ställa in systemfontmappar och en anpassad mapp med hjälp av`FontSettings` klass och`SetFontsSources()` metod. Först måste du hämta listan över miljöberoende teckensnittskällor som använder`GetFontsSources()` och lagra det i en lista. Sedan kan du skapa en ny instans av`FolderFontSource` ange sökvägen till den anpassade mappen som innehåller dina teckensnitt. Lägg till den här instansen i listan över befintliga teckensnittskällor. Slutligen, använd`SetFontsSources()` för att uppdatera teckensnittskällorna med den nya listan.
+ Nu kan du ställa in systemfontmappar och en anpassad mapp med hjälp av`FontSettings` klass och`SetFontsSources()` metod. Först måste du hämta listan över miljöberoende teckensnittskällor som använder`GetFontsSources()` och lagra den i en lista. Sedan kan du skapa en ny instans av`FolderFontSource` ange sökvägen till den anpassade mappen som innehåller dina teckensnitt. Lägg till den här instansen i listan över befintliga teckensnittskällor. Slutligen, använd`SetFontsSources()` för att uppdatera teckensnittskällorna med den nya listan.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

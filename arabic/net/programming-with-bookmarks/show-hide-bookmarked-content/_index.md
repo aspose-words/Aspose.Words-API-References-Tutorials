@@ -84,7 +84,7 @@ while (currentNode != null && flag)
 
 ## الخطوة 5: تنفيذ الدمج
 
- نحن نستخدم ال`Execute` طريقة المستند`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `متغير showHide`:
+ نحن نستخدم ال`Execute` طريقة الوثيقة`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `متغير showHide`:
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });

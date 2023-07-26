@@ -97,6 +97,6 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şe
 
  C: Evet, listelerin numaralandırma formatını Aspose.Words'te özelleştirebilirsiniz. bu`List` class bunun için çeşitli özellikler sunar, örneğin`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`vb. Liste türünü (numaralı, madde işaretli vb.), numaralandırma biçimini (Arap rakamları, Romen rakamları, harfler vb.) ve diğer numaralandırma biçimlendirme seçeneklerini ayarlamak için bu özellikleri kullanabilirsiniz.
 
-#### S: Aspose.Words'te numaralı bir listeye ek seviyeler eklemek mümkün mü?
+#### S: Aspose.Words'te numaralı bir listeye ek seviyeler eklemek mümkün müdür?
 
  C: Evet, Aspose.Words'te numaralı bir listeye ek seviyeler eklemek mümkündür. bu`ListLevel` class, listenin her düzeyi için biçimlendirme özelliklerini ayarlamanıza olanak tanır. Önek, sonek, hizalama, girinti vb. seçenekleri ayarlayabilirsiniz. Bu, birden çok hiyerarşi düzeyine sahip listeler oluşturmanıza olanak tanır.

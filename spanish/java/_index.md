@@ -22,8 +22,6 @@ Los tutoriales cubren una amplia gama de características de Aspose.Words, desde
 Los tutoriales se centran en la implementación práctica, para que pueda aprender a usar Aspose.Words para resolver problemas de procesamiento de documentos del mundo real. Esto lo ayuda a ponerse al día rápidamente y comenzar a usar Aspose.Words para automatizar sus tareas de procesamiento de documentos.
 ### Base sólida para soluciones de procesamiento de documentos robustas y escalables:
 Los tutoriales proporcionan una base sólida para crear soluciones de procesamiento de documentos robustas y escalables. Esto se debe a que los tutoriales cubren los conceptos esenciales del procesamiento de documentos, como el procesamiento de tablas, la combinación de documentos y las marcas de agua.
-
-
 ## Tutoriales de procesamiento de documentos
 ### [Procesamiento de textos](./word-processing/) 
 Aprende procesamiento de textos con Aspose.Words para Java. Cree, edite y manipule documentos mediante programación. Mejore sus habilidades de procesamiento de documentos hoy.

@@ -112,7 +112,7 @@ Toutes nos félicitations! Vous avez appris avec succès à créer un tableau da
 
 #### Q : Qu'est-ce qu'Aspose.Words pour .NET ?
 
-R : Aspose.Words pour .NET est une puissante bibliothèque de traitement de documents qui permet aux développeurs de créer, lire, modifier et convertir des documents Microsoft Word par programme dans des applications .NET. Il fournit un large éventail de fonctionnalités pour travailler avec des documents Word, telles que la manipulation de texte, la création de tableaux, la protection de documents, le formatage, etc.
+R : Aspose.Words pour .NET est une puissante bibliothèque de traitement de documents qui permet aux développeurs de créer, lire, modifier et convertir des documents Microsoft Word par programmation dans des applications .NET. Il fournit un large éventail de fonctionnalités pour travailler avec des documents Word, telles que la manipulation de texte, la création de tableaux, la protection de documents, le formatage, etc.
 
 #### Q : Comment créer un tableau dans un document Word à l'aide d'Aspose.Words pour .NET ?
 

@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Paso 3: agregue una marca de agua de texto con opciones específicas
 
- Vamos a crear una instancia de la`TextWatermarkOptions` clase y configure las opciones deseadas para la marca de agua de texto.
+ Vamos a crear una instancia de la`TextWatermarkOptions` clase y establezca las opciones deseadas para la marca de agua de texto.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

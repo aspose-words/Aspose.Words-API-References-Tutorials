@@ -84,7 +84,7 @@ Lorsque vous ouvrez ou enregistrez un document avec Aspose.Words, les signatures
 
 #### Quelles autres fonctionnalités d'Aspose.Words pour .NET peuvent être utilisées conjointement avec la détection de signature numérique ?
 
- Aspose.Words pour .NET offre une variété de fonctionnalités pour le traitement et la manipulation de documents Word. En plus de détecter les signatures numériques, vous pouvez utiliser la bibliothèque pour extraire du texte, des images ou des métadonnées de documents, appliquer des modifications de mise en forme, fusionner des documents, convertir des documents dans différents formats, et bien plus encore. Vous pouvez explorer le[Aspose.Words pour les références d'API .NET](https://reference.aspose.com/words/net/) pour découvrir toutes les fonctionnalités disponibles et trouver celles qui correspondent le mieux à vos besoins.
+ Aspose.Words pour .NET offre une variété de fonctionnalités pour le traitement et la manipulation de documents Word. En plus de détecter les signatures numériques, vous pouvez utiliser la bibliothèque pour extraire du texte, des images ou des métadonnées de documents, appliquer des modifications de formatage, fusionner des documents, convertir des documents dans différents formats, et bien plus encore. Vous pouvez explorer le[Aspose.Words pour les références d'API .NET](https://reference.aspose.com/words/net/) pour découvrir toutes les fonctionnalités disponibles et trouver celles qui correspondent le mieux à vos besoins.
 
 #### Quelles sont les limites de la détection des signatures numériques avec Aspose.Words pour .NET ?
 

@@ -15,7 +15,7 @@ Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine doğrudan t
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## Adım 2: Belge ve Tabloyu Oluşturma
-Dizi ile Sözcük İşlemeyi başlatmak için yeni bir belge oluşturmamız ve diziyi başlatmamız gerekiyor. Bu adımları takip et:
+Dizi ile Sözcük İşlemeyi başlatmak için yeni bir belge oluşturmamız ve diziyi başlatmamız gerekir. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu

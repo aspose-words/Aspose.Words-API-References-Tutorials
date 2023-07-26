@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", 
 
 In questo tutorial, abbiamo spiegato come esportare i segnalibri di intestazione e piè di pagina da un documento Word a un documento PDF utilizzando Aspose.Words per .NET. I segnalibri esportati consentono una facile navigazione e un rapido riferimento alle intestazioni e ai piè di pagina corrispondenti nel documento PDF generato. Segui i passaggi descritti per esportare i segnalibri di intestazione e piè di pagina da un documento e generare un PDF con i segnalibri appropriati utilizzando Aspose.Words per .NET. Assicurati di specificare il percorso corretto per i tuoi documenti e configura le opzioni di salvataggio secondo necessità.
 
-# Domande frequenti
+### Domande frequenti
 
 ### D: Cosa significa esportare i segnalibri di intestazione e piè di pagina da un documento Word a un documento PDF?
 R: L'esportazione di segnalibri di intestazione e piè di pagina da un documento Word a un documento PDF è una funzione per mantenere e generare segnalibri nel documento PDF dalle intestazioni e dai piè di pagina. piè di pagina del documento Word originale. Ciò consente agli utenti di navigare rapidamente e facilmente attraverso il documento PDF utilizzando i segnalibri corrispondenti a intestazioni e piè di pagina.

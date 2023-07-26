@@ -75,7 +75,7 @@ R: La funzione Sposta nella cella della tabella in Aspose.Words per .NET consent
 
 #### D: Come posso spostare DocumentBuilder in una cella di tabella specifica in un documento di Word?
 
-R: Per spostare il DocumentBuilder in una specifica cella della tabella in un documento Word, puoi utilizzare il metodo MoveToCell della classe DocumentBuilder. Questo metodo prende gli indici della riga e della cella di destinazione all'interno della tabella come parametri e posiziona il cursore all'inizio di tale cella.
+R: Per spostare il DocumentBuilder in una specifica cella della tabella in un documento Word, puoi utilizzare il metodo MoveToCell della classe DocumentBuilder. Questo metodo prende gli indici della riga e della cella di destinazione all'interno della tabella come parametri e posiziona il cursore all'inizio di quella cella.
 
 #### D: Posso aggiungere o modificare il contenuto dopo essermi spostato in una specifica cella della tabella utilizzando la funzione Sposta nella cella della tabella?
 

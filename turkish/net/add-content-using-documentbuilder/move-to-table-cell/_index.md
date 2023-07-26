@@ -71,7 +71,7 @@ Bu örnekte Aspose.Words for .NET'in Tablo Hücresine Taşı özelliğini incele
 
 #### S: Aspose.Words for .NET'teki Tablo Hücresine Taşı özelliğinin amacı nedir?
 
-C: Aspose.Words for .NET'teki Tablo Hücresine Taşı özelliği, geliştiricilerin bir Word belgesindeki bir tablo içindeki belirli hücrelere programlı olarak gitmesine ve bu hücreleri değiştirmesine olanak tanır. Belirli bir hücreye içerik ekleme, değiştirme veya silme yeteneği sağlar.
+C: Aspose.Words for .NET'teki Tablo Hücresine Taşı özelliği, geliştiricilerin bir Word belgesindeki bir tablo içindeki belirli hücrelere programlı olarak gitmesine ve bunlarda değişiklik yapmasına olanak tanır. Belirli bir hücreye içerik ekleme, değiştirme veya silme yeteneği sağlar.
 
 #### S: DocumentBuilder'ı bir Word belgesindeki belirli bir tablo hücresine nasıl taşırım?
 

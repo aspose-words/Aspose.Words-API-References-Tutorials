@@ -77,4 +77,4 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 
 #### 问：在Aspose.Words中设置优先字体文件夹有什么用？
 
-答：在Aspose.Words中设置优先字体文件夹可以让您控制Word文档中字体的搜索顺序。这有助于您确保使用所需的字体并避免出现不需要的字体替换问题。
+答：在Aspose.Words中设置优先字体文件夹可以让您控制Word文档中字体的搜索顺序。这有助于您确保使用所需的字体并避免不必要的字体替换问题。

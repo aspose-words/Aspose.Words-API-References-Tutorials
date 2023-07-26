@@ -10,7 +10,7 @@ is_root: true
 
 ## Handledning för Aspose.Words-dokumentbearbetning för .NET
 {{% alert color="primary" %}}
-Aspose.Words för .NET tutorials och kodsnuttar för att skapa, redigera, konvertera, skriva ut och många fler funktioner för Word-dokument i din applikation. 
+Dessa handledningar erbjuder tydliga och detaljerade instruktioner om hur du arbetar med Microsoft Word-dokument programmatiskt, och täcker ett brett utbud av funktioner. Från enkla uppgifter som att skapa och redigera dokument till mer avancerade funktioner som sammanslagning, dokumentkonvertering och dokumentkryptering, kan utvecklare hitta praktiska exempel och kodavsnitt att implementera i sina projekt. Genom att följa dessa tutorials kan .NET-utvecklare förbättra sina applikationer med kraftfulla dokumentbehandlingsmöjligheter, vilket säkerställer effektiv och sömlös hantering av Word-dokument i sina mjukvarulösningar. 
 {{% /alert %}}
 
 Det här är länkar till några användbara resurser:
@@ -38,7 +38,7 @@ Det här är länkar till några användbara resurser:
 
 ## Handledning för Aspose.Words-dokumentbearbetning för Java
 {{% alert color="primary" %}}
-Bemästra dokumentbearbetning med Aspose.Words Java tutorials. Lär dig ordbehandling, tabellbehandling, sammanslagning och mer. Automatisera dokumentuppgifter effektivt. 
+Den här omfattande samlingen av självstudiekurser ger steg-för-steg-vägledning om hur du effektivt arbetar med Microsoft Word-dokument programmatiskt. Från skapande och manipulering av dokument till avancerade funktioner som sammanslagning, tabellformatering och dokumentkryptering, dessa handledningar täcker ett brett utbud av funktioner. Genom att följa dessa handledningar kan utvecklare sömlöst integrera Aspose.Words i sina Java-projekt, vilket möjliggör effektiv dokumentbearbetning och förbättrar sina applikationer med dokumenthanteringsfunktioner av professionell kvalitet. 
 {{% /alert %}}
 
 Det här är länkar till några användbara resurser:
@@ -52,3 +52,15 @@ Det här är länkar till några användbara resurser:
 - [Dokumentsäkerhet](./java/document-security/)
 - [Dokumentdelning](./java/document-splitting/)
 - [Dokumentrevision](./java/document-revision/)
+
+## Handledning för Aspose.Words Dokumenthantering för Python
+{{% alert color="primary" %}}
+Dessa handledningar erbjuder steg-för-steg-vägledning om hur du arbetar med Microsoft Word-dokument programmatiskt, inklusive skapande av dokument, manipulering och olika säkerhetsfunktioner som kryptering och lösenordsskydd. Med hjälp av denna resurs kan utvecklare effektivt implementera dokumentbehandlingsfunktioner i sina Python-applikationer med Aspose.Words, vilket ökar produktiviteten och säkerställer dokumentsäkerhet. 
+{{% /alert %}}
+
+Det här är länkar till några användbara resurser:
+- [Skapande av dokument](./python-net/document-creation/)  
+- [Ordautomatisering](./python-net/word-automation/)
+- [Dokumentintelligens](./python-net/document-intelligence/)
+- [Dokumentkonvertering](./python-net/document-conversion/)
+- [Dokumentskydd](./python-net/document-protection/)

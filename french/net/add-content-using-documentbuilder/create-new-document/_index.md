@@ -29,7 +29,7 @@ builder.Writeln("Hello World!");
 ```
 
 ## Étape 3 : Enregistrer le document
-Après avoir ajouté le contenu souhaité, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir ajouté le contenu souhaité, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");

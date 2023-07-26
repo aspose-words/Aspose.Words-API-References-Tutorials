@@ -91,7 +91,7 @@ C: Node.js'de yazılan erişim, bir XML belgesindeki düğüm özelliklerine ve 
 
 #### S: Yazılı erişimin türsüz erişime göre avantajları nelerdir?
 
-C: Yazılı erişimin, yazısız erişime göre çeşitli avantajları vardır. İlk olarak, düğümlere erişirken daha iyi özgüllük sağlar, bu da bir XML belgesindeki düğümlerin manipüle edilmesini ve yönetilmesini kolaylaştırır. Ek olarak, yazılan erişim, düğüm özelliklerine ve değerlerine erişirken yazım hatalarını önleyerek daha iyi güvenlik sağlar.
+C: Yazılı erişimin, yazısız erişime göre çeşitli avantajları vardır. İlk olarak, düğümlere erişirken daha iyi özgüllük sağlar ve bir XML belgesindeki düğümlerin manipüle edilmesini ve yönetilmesini kolaylaştırır. Ek olarak, yazılan erişim, düğüm özelliklerine ve değerlerine erişirken yazım hatalarını önleyerek daha iyi güvenlik sağlar.
 
 #### S: Yazılı erişimle ne tür düğümlere erişilebilir?
 

@@ -116,7 +116,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### D: Come specificare la posizione della copia del testo del segnalibro in un documento di destinazione utilizzando Aspose.Words per .NET?
 
- R: Per specificare dove si desidera aggiungere il testo del segnalibro copiato in un documento di destinazione utilizzando Aspose.Words per .NET, è possibile navigare nel corpo dell'ultima sezione del documento di destinazione. Puoi usare il`LastSection` property per accedere all'ultima sezione e al file`Body` property per accedere al corpo di quella sezione. Ecco un codice di esempio:
+ R: Per specificare dove si desidera aggiungere il testo del segnalibro copiato in un documento di destinazione utilizzando Aspose.Words per .NET, è possibile navigare nel corpo dell'ultima sezione del documento di destinazione. Puoi usare il`LastSection` property per accedere all'ultima sezione e al file`Body` property per accedere al corpo di tale sezione. Ecco un codice di esempio:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
@@ -124,7 +124,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 #### D: Come importare e copiare il testo del segnalibro dal documento di origine al documento di destinazione utilizzando Aspose.Words per .NET?
 
-R: Per importare e copiare il testo del segnalibro da un documento di origine a un documento di destinazione utilizzando Aspose.Words per .NET, è possibile utilizzare il`NodeImporter` class specificando il documento di origine, il documento di destinazione e la modalità di formattazione da conservare. Quindi puoi usare il`AppendBookmarkedText` metodo per aggiungere il testo del segnalibro nel documento di destinazione. Ecco un codice di esempio:
+R: Per importare e copiare il testo del segnalibro da un documento di origine a un documento di destinazione utilizzando Aspose.Words per .NET, è possibile utilizzare il`NodeImporter` class specificando il documento di origine, il documento di destinazione e la modalità di formattazione da mantenere. Quindi puoi usare il`AppendBookmarkedText` metodo per aggiungere il testo del segnalibro nel documento di destinazione. Ecco un codice di esempio:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);

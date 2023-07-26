@@ -98,7 +98,7 @@ R: Para aplicar la protección de solo lectura a un documento de Word usando Asp
 1.  Crear una instancia de la`Document` clase y un`DocumentBuilder` objeto.
 2.  Utilizar el`DocumentBuilder` para escribir contenido en el documento.
 3.  Establezca una contraseña para el documento mediante el`SetPassword` metodo de la`WriteProtection` objeto.
-4.  Selecciona el`ReadOnlyRecommended` propiedad de la`WriteProtection` oponerse a`true` para recomendar abrir el documento como de sólo lectura.
+4.  Selecciona el`ReadOnlyRecommended` propiedad de la`WriteProtection` oponerse a`true` para recomendar abrir el documento como de solo lectura.
 5.  Aplicar protección de solo lectura mediante el`Protect` metodo de la`Document` objeto, especificando el`ProtectionType` como`ReadOnly`.
 6.  Guarde el documento protegido utilizando el`Save` metodo de la`Document` objeto.
 

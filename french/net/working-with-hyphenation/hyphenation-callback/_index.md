@@ -32,7 +32,7 @@ Document document = new Document(dataDir + "German text.docx");
 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 ```
 
-## Étape 3 : Gérer les erreurs de dictionnaire manquantes
+## Étape 3 : Gestion des erreurs de dictionnaire manquantes
 
 S'il manque un dictionnaire de césure, nous intercepterons l'exception correspondante et afficherons un message d'erreur :
 
@@ -105,4 +105,4 @@ R : L'utilisation d'un booster de syllabation peut être utile dans plusieurs s
 
 #### Q : Comment puis-je tester la syllabisation personnalisée avec un rappel de syllabation dans Aspose.Words ?
 
-R : Pour tester la syllabation personnalisée avec un rappel de syllabation dans Aspose.Words, vous pouvez créer un document de test contenant des mots pour lesquels vous souhaitez appliquer des règles de syllabation personnalisées. Ensuite, vous pouvez définir votre rappel de syllabisation personnalisé, appeler le`Document.Range.Replace()` méthode pour remplacer les mots dans le document, et utilisez la méthode`Hyphenate()` méthode de la`Hyphenation` class pour obtenir la syllabation des mots. Vous pouvez ensuite mettre en forme les mots syllabés selon vos besoins, par exemple en ajoutant des traits d'union entre les syllabes.
+R : Pour tester la syllabation personnalisée avec un rappel de syllabation dans Aspose.Words, vous pouvez créer un document de test contenant des mots pour lesquels vous souhaitez appliquer des règles de syllabation personnalisées. Ensuite, vous pouvez définir votre rappel de syllabisation personnalisé, appeler le`Document.Range.Replace()` méthode pour remplacer les mots dans le document, et utilisez la méthode`Hyphenate()` méthode de la`Hyphenation` class pour obtenir la syllabation des mots. Vous pouvez ensuite formater les mots syllabés selon vos besoins, par exemple en ajoutant des tirets entre les syllabes.

@@ -31,7 +31,7 @@ Ces didacticiels Aspose.Words pour .NET vous fournissent des ressources précieu
 | [Liste Utiliser les styles de destination](./list-use-destination-styles/) | Apprenez à joindre et à ajouter des documents Word tout en préservant les styles de liste du document de destination à l'aide d'Aspose.Words pour .NET. |
 | [Redémarrer la numérotation des pages](./restart-page-numbering/) | Apprenez à redémarrer la numérotation des pages tout en joignant et en ajoutant des documents Word à l'aide d'Aspose.Words pour .NET. |
 | [Mettre à jour la mise en page](./update-page-layout/) | Découvrez comment mettre à jour la mise en page lors de la jointure et de l'ajout de documents Word à l'aide d'Aspose.Words pour .NET. |
-| [Utiliser les styles de destination](./use-destination-styles/) | Découvrez comment joindre et ajouter des documents Word tout en appliquant des styles de document de destination à l'aide d'Aspose.Words pour .NET. |
+| [Utiliser les styles de destinations](./use-destination-styles/) | Découvrez comment joindre et ajouter des documents Word tout en appliquant des styles de document de destination à l'aide d'Aspose.Words pour .NET. |
 | [Comportement de style intelligent](./smart-style-behavior/) | Apprenez à conserver un comportement de style intelligent lors de la jointure et de l'ajout de documents Word à l'aide d'Aspose.Words pour .NET. |
 | [Insérer un document avec le constructeur](./insert-document-with-builder/) | Apprenez à insérer un document à la fin d'un autre document en utilisant Aspose.Words pour .NET. |
 | [Conserver la numérotation des sources](./keep-source-numbering/) | Apprenez à ajouter un document tout en préservant la mise en forme de la numérotation source dans Aspose.Words pour .NET. |

@@ -69,7 +69,7 @@ builder.Writeln("This is a bookmark.");
 
 ## Conclusión
 
-exploramos la función Mover al final del marcador de Aspose.Words para .NET. Aprendimos cómo navegar hasta el final de un marcador y agregar contenido mediante programación usando el código fuente provisto. Esta característica brinda flexibilidad en la manipulación de documentos de Word usando Aspose.Words para .NET.
+exploramos la función Mover al final del marcador de Aspose.Words para .NET. Aprendimos cómo navegar hasta el final de un marcador y agregar contenido mediante programación usando el código fuente proporcionado. Esta característica brinda flexibilidad en la manipulación de documentos de Word utilizando Aspose.Words para .NET.
 
 ### Preguntas frecuentes sobre mover al final del marcador en un documento de Word
 

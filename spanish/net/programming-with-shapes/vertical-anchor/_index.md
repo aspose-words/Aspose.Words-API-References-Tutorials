@@ -1,6 +1,6 @@
 ---
-title: Anclaje vertical
-linktitle: Anclaje vertical
+title: Anclaje Vertical
+linktitle: Anclaje Vertical
 second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a colocar una forma verticalmente dentro de un documento utilizando la función de anclaje vertical en Aspose.Words para .NET.
 type: docs

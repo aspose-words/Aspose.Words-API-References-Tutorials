@@ -62,4 +62,4 @@ double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
 ## Conclusion
-Dans ce didacticiel, nous avons appris à récupérer le type de largeur préféré et sa valeur à partir d'une cellule de tableau dans un document Word à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez récupérer ces informations pour des cellules spécifiques dans vos tableaux de documents Word.
+Dans ce didacticiel, nous avons appris à récupérer le type de largeur préféré et sa valeur à partir d'une cellule de tableau dans un document Word à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez récupérer ces informations pour des cellules spécifiques dans vos tableaux de document Word.

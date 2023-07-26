@@ -61,7 +61,7 @@ Console.WriteLine(text);
 
 ## Conclusión
 
-En esta guía, hemos cubierto cómo usar Aspose.Words para .NET para extraer texto de un documento de Word usando el código fuente de C# proporcionado. Siguiendo los pasos proporcionados, puede extraer fácilmente texto de rangos específicos en sus documentos de Word en su aplicación C#. Aspose.Words ofrece una gran flexibilidad y potencia para el procesamiento de textos con contenido de documentos, lo que le permite procesar y utilizar el texto de acuerdo con sus necesidades específicas.
+En esta guía, hemos cubierto cómo usar Aspose.Words para .NET para extraer texto de un documento de Word usando el código fuente de C# provisto. Siguiendo los pasos proporcionados, puede extraer fácilmente texto de rangos específicos en sus documentos de Word en su aplicación C#. Aspose.Words ofrece una gran flexibilidad y potencia para el procesamiento de textos con contenido de documentos, lo que le permite procesar y utilizar el texto de acuerdo con sus necesidades específicas.
 
 ### Las preguntas frecuentes sobre los rangos obtienen texto en un documento de Word
 

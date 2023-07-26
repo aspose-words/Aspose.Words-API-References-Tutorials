@@ -29,7 +29,7 @@ Document doc = new Document(MyDir + "English text.txt");
 doc.Save(dataDir + "BaseConversions.TxtToDocx.docx");
 ```
 
-C'est ça! Vous avez réussi à convertir un fichier texte brut (Txt) en un document Word au format Docx à l'aide de Aspose.Words pour .NET.
+C'est ça! Vous avez converti avec succès un fichier texte brut (Txt) en un document Word au format Docx à l'aide de Aspose.Words pour .NET.
 
 ### Exemple de code source pour Txt To Docx en utilisant Aspose.Words pour .NET
 

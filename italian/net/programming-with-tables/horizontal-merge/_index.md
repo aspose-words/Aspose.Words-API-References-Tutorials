@@ -88,4 +88,4 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come unire orizzontalmente le celle in una tabella in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile applicare l'unione di celle orizzontali nelle tabelle di Word a livello di programmazione. Questa funzione ti consente di creare layout di tabella più complessi e di organizzare meglio i tuoi dati.
+In questo tutorial, abbiamo imparato come unire orizzontalmente le celle in una tabella in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile applicare l'unione di celle orizzontali nelle tabelle di Word a livello di codice. Questa funzione ti consente di creare layout di tabella più complessi e di organizzare meglio i tuoi dati.

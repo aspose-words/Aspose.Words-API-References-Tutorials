@@ -72,7 +72,7 @@ R: El uso de flujos de recursos para especificar fuentes de fuentes tiene varias
 
  R: Para agregar fuentes a un flujo de recursos en su aplicación .NET, debe incrustar los archivos de fuentes en los recursos de su proyecto. Luego puede acceder a estos archivos de fuentes utilizando métodos específicos para su plataforma de desarrollo (por ejemplo,`GetManifestResourceStream` utilizando el`System.Reflection` espacio de nombres).
 
-#### P: ¿Es posible cargar varias fuentes de diferentes flujos de recursos en un solo documento de Aspose.Words?
+#### P: ¿Es posible cargar varias fuentes de diferentes flujos de recursos en un único documento de Aspose.Words?
 
  R: Sí, es totalmente posible cargar varias fuentes de diferentes flujos de recursos en un solo documento de Aspose.Words. Puede especificar varias fuentes de fuentes utilizando el`SetFontsSources` metodo de la`FontSettings` clase, proporcionando los flujos de recursos apropiados para cada fuente.
 

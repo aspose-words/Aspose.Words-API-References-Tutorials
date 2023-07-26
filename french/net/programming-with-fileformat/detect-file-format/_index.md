@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-fileformat/detect-file-format/
 ---
 
-Cet article fournit un guide étape par étape sur la façon d'utiliser la fonction de détection de format de fichier de document avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. A la fin de ce tutoriel, vous serez en mesure de comprendre comment détecter le format des différents fichiers de documents.
+Cet article fournit un guide étape par étape sur la façon d'utiliser la fonctionnalité de détection de format de fichier de document avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. A la fin de ce tutoriel, vous serez en mesure de comprendre comment détecter le format des différents fichiers de documents.
 
 Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words pour .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 

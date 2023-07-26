@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-In questo articolo, esploreremo il codice sorgente C# sopra per capire come usare la funzione Bookmark Table Columns nella libreria Aspose.Words per .NET. Questa funzione consente di aggiungere un segnalibro a una colonna specifica di una tabella in un documento di Word e accedere al contenuto di tale colonna.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come usare la funzione Bookmark Table Columns nella libreria Aspose.Words per .NET. Questa funzione consente di aggiungere un segnalibro a una colonna specifica di una tabella in un documento di Word e accedere al contenuto di quella colonna.
 
 ## Prerequisiti
 

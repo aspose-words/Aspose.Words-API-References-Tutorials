@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## الخطوة 3: تعيين مجلدات الخطوط
- يمكنك الآن تعيين مجلدات خطوط متعددة باستخدام امتداد`FontSettings` الطبقة و`SetFontsFolders()` طريقة. يمكنك تحديد مسارات مجلدات الخطوط التي تريد استخدامها في مصفوفة. في هذا المثال ، حددنا مجلدين للخط: "C: \ MyFonts\"و" D: \ Misc \ Fonts\".
+ الآن يمكنك تعيين مجلدات خطوط متعددة باستخدام ملف`FontSettings` الطبقة و`SetFontsFolders()` طريقة. يمكنك تحديد مسارات مجلدات الخطوط التي تريد استخدامها في مصفوفة. في هذا المثال ، حددنا مجلدين للخط: "C: \ MyFonts\"و" D: \ Misc \ Fonts\".
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

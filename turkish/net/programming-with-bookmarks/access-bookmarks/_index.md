@@ -59,7 +59,7 @@ Aspose.Words for .NET kullanarak yer imlerine erişimi gösteren tam örnek kayn
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Yer İşaretlerine Erişim özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Dizin ve ad kullanarak bir belge yüklemek ve yer imlerine erişmek için adım adım bir kılavuz izledik.
+Bu makalede, Aspose.Words for .NET'in Access Bookmarks özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Dizin ve ad kullanarak bir belge yüklemek ve yer imlerine erişmek için adım adım bir kılavuz izledik.
 
 ### Word belgesindeki yer imlerine erişim için SSS
 

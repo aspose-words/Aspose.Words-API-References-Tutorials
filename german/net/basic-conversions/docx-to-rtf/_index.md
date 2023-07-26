@@ -39,7 +39,7 @@ stream.Close();
 
 ## Schritt 4: Durchführen von Vorgängen am Dokument
 
-An dieser Stelle können Sie alle gewünschten Vorgänge am Dokument ausführen.
+An dieser Stelle können Sie alle gewünschten Vorgänge am Dokument durchführen.
 
 ## Schritt 5: Speichern des Dokuments im RTF-Format
 

@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Conclusión
 
- En este tutorial, exploramos la funcionalidad de obtener las propiedades del tema de un documento con Aspose.Words para .NET. Utilizando el`Theme` objeto y sus propiedades asociadas, pudimos acceder a información sobre las fuentes primarias y secundarias, así como los colores de énfasis utilizados en el tema del documento.
+ En este tutorial, exploramos la funcionalidad de obtener las propiedades del tema de un documento con Aspose.Words para .NET. Utilizando el`Theme` objeto y sus propiedades asociadas, pudimos acceder a información sobre las fuentes primarias y secundarias, así como los colores de acento utilizados en el tema del documento.
 
 La capacidad de obtener propiedades de temas le permite analizar y personalizar los estilos y diseños de sus documentos. Puede usar esta información para aplicar cambios específicos, crear informes o realizar análisis sobre el uso de fuentes y colores en sus documentos.
 
@@ -74,7 +74,7 @@ Siéntase libre de explorar más características de Aspose.Words para .NET para
 
 Puede acceder a las fuentes primarias y secundarias del tema de un documento mediante el`MajorFonts` y`MinorFonts` propiedades de la`Theme` objeto, respectivamente. Estas propiedades brindan acceso a los nombres de las fuentes utilizadas en el tema del documento para diferentes idiomas o regiones.
 
-#### ¿Puedo obtener los colores de énfasis utilizados en el tema de un documento?
+#### ¿Puedo obtener los colores de acento utilizados en el tema de un documento?
 
  Sí, puede obtener los colores de acento utilizados en el tema de un documento accediendo a la`Colors` propiedad de la`Theme` objeto. Esta propiedad proporciona acceso a los colores de énfasis, como`Accent1`, `Accent2`, `Accent3`, etc., que puede utilizar con fines de personalización o análisis.
 

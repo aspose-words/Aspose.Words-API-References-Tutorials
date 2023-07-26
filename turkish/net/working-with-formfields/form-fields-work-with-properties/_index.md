@@ -71,7 +71,7 @@ Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimleriniz
 
  C: Aspose.Words'te bir form alanının adını değiştirmek için`FormField.Name` özellik ve ona yeni bir değer atayın.
 
-#### S: Bir form alanının varsayılan değerini değiştirmek mümkün mü?
+#### S: Bir form alanının varsayılan değerini değiştirmek mümkün müdür?
 
  C: Evet, Aspose.Words'te bir form alanının varsayılan değerini değiştirmek mümkündür. Kullan`FormField.Result` yeni varsayılanı belirtmek için özellik.
 

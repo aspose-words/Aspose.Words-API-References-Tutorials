@@ -38,7 +38,7 @@ document. UpdateFields();
 
 Bu adım önemlidir, çünkü saha sonuçlarının doğru bir şekilde görüntülenmesini sağlar.
 
-## Adım 4: Alan Sonuçlarını Görüntüleme
+## 4. Adım: Alan Sonuçlarını Görüntüleme
 
  biz bir`foreach` belgedeki tüm alanlar arasında geçiş yapmak ve bunların sonuçlarını görüntülemek için döngü.
 

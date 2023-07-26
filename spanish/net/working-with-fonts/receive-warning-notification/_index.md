@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 // Cuando llama a UpdatePageLayout, el documento se procesa en la memoria. Cualquier advertencia que haya ocurrido durante el renderizado
-//se almacenan hasta que se guarda el documento y luego se envían al WarningCallback apropiado.
+//se almacenan hasta que se guarda el documento y luego se envían al WarningCallback correspondiente.
 doc.UpdatePageLayout();
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;

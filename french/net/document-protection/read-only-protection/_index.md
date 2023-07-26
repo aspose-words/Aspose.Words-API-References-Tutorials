@@ -68,7 +68,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.Write("Open document as read-only");
 
-// Entrez un mot de passe de 15 caractères maximum.
+// Saisissez un mot de passe comportant jusqu'à 15 caractères.
 doc.WriteProtection.SetPassword("MyPassword");
 
 // Rendez le document en lecture seule.

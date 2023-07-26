@@ -53,7 +53,7 @@ chart.Series.Add("Aspose Series 1",
 	new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
 ```
 
-## Adım 5: Ekseni Yapılandırın
+## 5. Adım: Ekseni Yapılandırın
 Tarih saat değerlerini görüntülemek için grafiğin X eksenini yapılandırın.
 
 ```csharp

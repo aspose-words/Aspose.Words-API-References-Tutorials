@@ -64,7 +64,7 @@ R : Un en-tête Markdown est un élément utilisé pour créer des titres et de
 
 R : Pour utiliser les différents niveaux d'en-têtes Markdown, vous pouvez ajouter un nombre variable de symboles dièse (#) avant le texte de l'en-tête.
 
-#### Q : Y a-t-il des limites à l'utilisation des en-têtes Markdown ?
+#### Q : Existe-t-il des limites à l'utilisation des en-têtes Markdown ?
 
 R : Il n'y a pas de limites strictes, mais il est recommandé de maintenir une structure de rapport claire et concise.
 

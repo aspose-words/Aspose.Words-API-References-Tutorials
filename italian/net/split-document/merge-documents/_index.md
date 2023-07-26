@@ -104,7 +104,7 @@ Sì, Aspose.Words per .NET supporta l'unione di documenti in vari formati, tra c
 
 #### Posso unire documenti con strutture complesse, come tabelle e immagini?
 
-Assolutamente! Aspose.Words per .NET è in grado di unire documenti con strutture complesse, incluse tabelle, immagini, intestazioni, piè di pagina e altro. L'API gestisce il processo di unione preservando l'integrità e il layout del contenuto in ciascun documento.
+Assolutamente! Aspose.Words per .NET è in grado di unire documenti con strutture complesse, incluse tabelle, immagini, intestazioni, piè di pagina e altro. L'API gestisce il processo di unione preservando l'integrità e il layout del contenuto in ogni documento.
 
 #### È possibile unire documenti con orientamenti o dimensioni della pagina diversi?
 

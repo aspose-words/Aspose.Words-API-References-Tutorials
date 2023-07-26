@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Yeni bir VBA belgesi ve projesi oluşturun
- Ardından, örnekleyerek yeni bir belge oluşturacağız.`Document` sınıf ve boş bir VBA projesi başlatarak`VbaProject` sınıf.
+ Ardından, örnekleyerek yeni bir belge oluşturacağız.`Document` sınıfı ve boş bir VBA projesini başlatarak`VbaProject` sınıf.
 
 ```csharp
 // Yeni bir belge oluştur

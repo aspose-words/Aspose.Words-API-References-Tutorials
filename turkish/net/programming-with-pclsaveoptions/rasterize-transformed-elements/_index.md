@@ -46,7 +46,7 @@ Artık kaydetme seçeneklerini yapılandırdığımıza göre, belgeyi PCL forma
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
-Bu örnekte, belirtilen kaydetme seçeneklerini kullanarak dönüştürülen belgeyi "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" olarak kaydediyoruz.
+Bu örnekte, dönüştürülen belgeyi belirtilen kaydetme seçeneklerini kullanarak "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" olarak kaydediyoruz.
 
 ### Aspose.Words for .NET ile "Dönüştürülmüş Öğeleri Rasterleştir" özelliği için örnek kaynak kodu
 

@@ -121,4 +121,4 @@ R: Per verificare se un campo TOA è stato inserito correttamente, puoi sfogliar
 
 #### D: L'inserimento di un campo TOA senza utilizzare DocumentBuilder influisce sulla formattazione del documento Word con Aspose.Words per .NET?
 
-R: L'inserimento di un campo TOA senza utilizzare DocumentBuilder non influisce direttamente sulla formattazione del documento Word. Tuttavia, le opzioni di formattazione del campo TOA possono influire sulla formattazione complessiva del documento.
+R: L'inserimento di un campo TOA senza utilizzare DocumentBuilder non influisce direttamente sulla formattazione del documento Word. Tuttavia, le opzioni di formattazione del campo TOA possono influire sulla formattazione generale del documento.

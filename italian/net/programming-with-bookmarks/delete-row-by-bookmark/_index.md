@@ -61,7 +61,7 @@ R: Se il segnalibro specificato non esiste nel documento, lo snippet di codice r
 
 #### D: La libreria Aspose.Words è gratuita?
 
- R: La libreria Aspose.Words è una libreria commerciale e potresti aver bisogno di una licenza valida per utilizzarla nei tuoi progetti. Puoi visitare il[Aspose.Words per riferimenti API .NET](https://reference.aspose.com/words/net/) per saperne di più sulle opzioni di licenza e sui prezzi.
+ R: La libreria Aspose.Words è una libreria commerciale e potresti aver bisogno di una licenza valida per usarla nei tuoi progetti. Puoi visitare il[Aspose.Words per riferimenti API .NET](https://reference.aspose.com/words/net/) per saperne di più sulle opzioni di licenza e sui prezzi.
 
 #### D: Posso eliminare righe da una tabella in una sezione specifica del documento Word?
 

@@ -67,7 +67,7 @@ Bu adımları izleyerek bir Word belgesindeki salt okunur kısıtlamasını Aspo
 
 ## Çözüm
 
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinden salt okunur kısıtlamasının nasıl kaldırılacağını öğrendik. Sağlanan adımları izleyerek kısıtlamayı kolayca kaldırabilir ve belgeyi tekrar düzenlenebilir hale getirebilirsiniz. Aspose.Words for .NET, Word belgelerinizin güvenlik ve düzenleme yetenekleri üzerinde size esneklik ve kontrol sağlayarak, belge korumasını ve kısıtlamalarını yönetmek için kapsamlı bir dizi özellik sunar.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinden salt okunur kısıtlamasının nasıl kaldırılacağını öğrendik. Sağlanan adımları izleyerek kısıtlamayı kolayca kaldırabilir ve belgeyi yeniden düzenlenebilir hale getirebilirsiniz. Aspose.Words for .NET, Word belgelerinizin güvenlik ve düzenleme yetenekleri üzerinde size esneklik ve kontrol sağlayarak, belge korumasını ve kısıtlamalarını yönetmek için kapsamlı bir dizi özellik sunar.
 
 ### SSS
 

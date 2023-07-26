@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Paso 6: Deja de formatear la lista
 
- Para detener el formato de la lista, configure`null` hacia`List` propiedad del generador de documentos:
+ Para detener el formato de la lista, establezca`null` hacia`List` propiedad del generador de documentos:
 
 ```csharp
 builder. ListFormat. List = null;

@@ -65,7 +65,7 @@ builder.Writeln("This is a new third paragraph.");
 Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
-Bu kod, DocumentBuilder'ın imlecini ikinci bölümün üçüncü paragrafına (paragraf 2'deki paragraf) ve 10. konuma taşır. Ardından, bazı metinlerle yeni bir paragraf ekler ve imlecin bu yeni paragrafta iyi konumlandırıldığını kontrol eder.
+Bu kod, DocumentBuilder'ın imlecini ikinci bölümün üçüncü paragrafına (paragraf 2'deki indeks) ve 10. konuma taşır. Ardından, biraz metin içeren yeni bir paragraf ekler ve imlecin bu yeni paragrafta iyi konumlandırıldığını kontrol eder.
 
 ### Aspose.Words for .NET kullanarak Move To Move To Section için örnek kaynak kodu
 

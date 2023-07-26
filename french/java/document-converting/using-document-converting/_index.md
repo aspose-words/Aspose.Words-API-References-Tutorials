@@ -16,7 +16,7 @@ Aspose.Words pour Java est une puissante bibliothèque de traitement de document
 
 ## Pourquoi choisir Aspose.Words pour la conversion de documents ?
 
-La conversion de documents peut être un processus complexe, en particulier lorsqu'il s'agit de divers formats, polices, mises en page et styles. Aspose.Words pour Java offre plusieurs raisons convaincantes pour lesquelles c'est le choix idéal pour la conversion de documents :
+La conversion de documents peut être un processus complexe, en particulier lorsqu'il s'agit de divers formats, polices, mises en page et styles. Aspose.Words pour Java offre plusieurs raisons convaincantes pour lesquelles il s'agit du choix idéal pour la conversion de documents :
 
 ### Prise en charge étendue des formats : 
 Aspose.Words prend en charge un large éventail de formats de documents, notamment DOCX, DOC, RTF, PDF, EPUB, HTML, etc. Cela signifie que vous pouvez convertir des documents vers et à partir de différents formats sans effort.
@@ -86,7 +86,7 @@ doc.save("output.epub", SaveFormat.EPUB);
 
 ### Étape 5 : gestion de la substitution de polices
 
-La substitution de polices est un défi courant lors de la conversion de documents. Aspose.Words fournit un mécanisme pour gérer la substitution de polices afin d'assurer la cohérence visuelle du document converti :
+La substitution de polices est un défi courant lors de la conversion de documents. Aspose.Words fournit un mécanisme pour gérer la substitution de polices afin d'assurer la cohérence visuelle du document converti :
 
 ```java
 // Activer la substitution de police

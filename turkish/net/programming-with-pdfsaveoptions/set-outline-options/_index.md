@@ -83,7 +83,7 @@ C: Aspose.Words for .NET kullanarak bir PDF belgesinde ana hat seçeneklerini ay
 
  örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve kullanarak`OutlineOptions` anahat seçeneklerini ayarlamak için özelliği. Anahatta dahil edilecek başlık düzeylerinin sayısını belirtebilirsiniz.`HeadingsOutlineLevels` özelliği ve genişletilmiş anahat düzeylerinin sayısı`ExpandedOutlineLevels` mülk.
 
- kullanarak belgeyi PDF biçiminde kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
+ kullanarak belgeyi PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
 
 #### S: Bir PDF belgesinde plan seçeneği nedir?
-Y: Bir PDF belgesindeki anahat seçeneği, belgede gezinmeyi ve farklı bölümlere erişmeyi kolaylaştıran, içeriğin hiyerarşik bir yapısını oluşturmanıza olanak tanır. Bu, kullanıcıların içindekiler tablosundaki veya ana hatlardaki girişleri tıklatarak belgenin belirli bölümlerine hızlı bir şekilde atlamalarına olanak tanır. Anahat seçeneği, genel belge yapısına genel bir bakış sunarak okuma deneyimini de geliştirir.
+C: Bir PDF belgesindeki anahat seçeneği, belgede gezinmeyi ve farklı bölümlere erişmeyi kolaylaştıran, içeriğin hiyerarşik bir yapısını oluşturmanıza olanak tanır. Bu, kullanıcıların içindekiler tablosundaki veya ana hatlardaki girişleri tıklatarak belgenin belirli bölümlerine hızlı bir şekilde atlamalarına olanak tanır. Anahat seçeneği, genel belge yapısına genel bir bakış sunarak okuma deneyimini de geliştirir.

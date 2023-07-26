@@ -106,7 +106,7 @@ En este tutorial, hemos aprendido cómo eliminar saltos de página de un documen
 
 #### P: ¿Por qué debo usar Aspose.Words para eliminar saltos de página en un documento de Word?
 
-R: Aspose.Words es una biblioteca de clases poderosa y versátil para manipular documentos de Word en aplicaciones .NET. Al usar Aspose.Words, obtiene una solución efectiva y fácil para eliminar los saltos de página de sus documentos. Esto le permite personalizar el diseño de sus documentos, eliminar los saltos de página no deseados y mantener una presentación coherente.
+R: Aspose.Words es una biblioteca de clases poderosa y versátil para manipular documentos de Word en aplicaciones .NET. Al usar Aspose.Words, obtiene una solución efectiva y fácil para eliminar los saltos de página de sus documentos. Esto le permite personalizar el diseño de sus documentos, eliminar los saltos de página no deseados y mantener una presentación uniforme.
 
 #### P: ¿Cómo cargo un documento en Aspose.Words para .NET?
 

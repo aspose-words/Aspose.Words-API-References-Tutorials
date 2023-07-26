@@ -71,7 +71,7 @@ C: Evet, Aspose.Words for .NET'i kullanarak çeşitli etiketler ve stillerle kar
 
 C: Evet, Aspose.Words for .NET, eklenen HTML içeriğinde bulunan CSS stillerini işleyebilir ve uygulayabilir. Bu, HTML öğelerinin biçimlendirmesinin ve stilinin Word belgesinde doğru bir şekilde oluşturulmasını sağlar.
 
-#### S: Word belgesine dinamik HTML içeriği eklemek mümkün müdür?
+#### S: Word belgesine dinamik HTML içeriği eklemek mümkün mü?
 
 C: Kesinlikle! C# kodunu kullanarak dinamik olarak HTML içeriği oluşturabilir ve ardından bunu InsertHtml yöntemini kullanarak Word belgesine ekleyebilirsiniz. Bu, dinamik ve veri odaklı Word belgelerini zahmetsizce oluşturmanıza olanak tanır.
 

@@ -87,7 +87,7 @@ yAxis.Scaling.Maximum = new AxisBound(700);
 doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-Esto completa la implementación de la definición de las propiedades del eje XY en un gráfico utilizando Aspose.Words para .NET.
+Esto completa la implementación de la definición de las propiedades del eje XY en un gráfico usando Aspose.Words para .NET.
 
 ### Código fuente de ejemplo para Definir propiedades XYAxis usando Aspose.Words para .NET 
 

@@ -49,7 +49,7 @@ chart.Series.Add("Aspose Series 1",
 
 ## Étape 4 : Personnalisez les libellés des axes
 
- Pour définir l'unité d'intervalle entre les étiquettes sur l'axe X, accédez à la`AxisX` propriété du graphique et définissez la`TickLabelSpacing` propriété à la valeur désirée. Dans cet exemple, nous avons défini l'espacement sur 2.
+ Pour définir l'unité d'intervalle entre les étiquettes sur l'axe X, accédez à la`AxisX` propriété du graphique et définissez la`TickLabelSpacing` propriété à la valeur souhaitée. Dans cet exemple, nous avons défini l'espacement sur 2.
 
 ```csharp
 chart.AxisX.TickLabelSpacing = 2;

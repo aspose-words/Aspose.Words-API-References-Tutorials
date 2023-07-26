@@ -37,7 +37,7 @@ La crittografia dei documenti fornisce un ulteriore livello di sicurezza, renden
 
 ## 3. Iniziare con Aspose.Words per Java
 
-Prima di procedere con la sicurezza dei documenti, prendiamo familiarità con Aspose.Words per Java. È una libreria ricca di funzionalità che consente agli sviluppatori Java di creare, modificare e convertire documenti Word a livello di codice. Per iniziare:
+Prima di procedere con la sicurezza dei documenti, prendiamo familiarità con Aspose.Words per Java. È una libreria ricca di funzionalità che consente agli sviluppatori Java di creare, modificare e convertire documenti Word a livello di programmazione. Per iniziare:
 
 1. ### Scarica Aspose.Words per Java:
   Visitare il[Aspose.Rilasci](https://releases.aspose.com/words/java/) e scarica l'ultima versione di Aspose.Words per Java.

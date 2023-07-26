@@ -38,7 +38,7 @@ För att uppdatera bokmärkesdata måste vi först komma åt det specifika bokm�
 Bookmark bookmark = doc.Range.Bookmarks["MyBookmark1"];
 ```
 
-Se till att bokmärkets namn matchar det i ditt dokument. Du kan ändra det enligt dina önskemål.
+Se till att bokmärkets namn matchar det i ditt dokument. Du kan ändra det enligt dina krav.
 
 ## Steg 3: Uppdatera bokmärkesegenskaper och innehåll
 

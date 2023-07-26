@@ -75,7 +75,7 @@ abbiamo esplorato la funzione Move To Bookmark End di Aspose.Words per .NET. Abb
 
 #### D: Qual è lo scopo della funzione Sposta alla fine del segnalibro in Aspose.Words per .NET?
 
-R: La funzione Sposta alla fine del segnalibro in Aspose.Words per .NET consente agli sviluppatori di navigare fino alla fine di un segnalibro specifico all'interno di un documento Word a livello di programmazione. Questa funzione è utile quando si desidera aggiungere contenuto dopo un particolare segnalibro nel documento.
+R: La funzione Sposta alla fine del segnalibro in Aspose.Words per .NET consente agli sviluppatori di navigare fino alla fine di un segnalibro specifico all'interno di un documento Word a livello di codice. Questa funzione è utile quando si desidera aggiungere contenuto dopo un particolare segnalibro nel documento.
 
 #### D: Quali sono i prerequisiti per l'utilizzo della funzione Sposta alla fine del segnalibro?
 

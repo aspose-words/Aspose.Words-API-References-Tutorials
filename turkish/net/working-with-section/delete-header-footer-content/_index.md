@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-section/delete-header-footer-content/
 ---
 
-Bu öğreticide, size Aspose.Words library for .NET kullanarak üstbilgi ve altbilgi içeriğini Word belgesinden nasıl kaldıracağınızı göstereceğiz. Üst bilgilerden ve alt bilgilerden içerik kaldırmak, bu öğeleri belgenizden sıfırlamak veya kaldırmak istediğinizde faydalı olabilir. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
+Bu öğreticide, size Aspose.Words library for .NET kullanarak üstbilgi ve altbilgi içeriğini Word belgesinden nasıl kaldıracağınızı göstereceğiz. Üst bilgilerden ve alt bilgilerden içerik kaldırmak, bu öğeleri belgenizden sıfırlamak veya kaldırmak istediğinizde yararlı olabilir. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
 ## Önkoşullar
 Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:

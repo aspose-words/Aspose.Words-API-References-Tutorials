@@ -74,7 +74,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in
 
 ### Come convertire un file DOCX in byte?
 
-Per convertire un file DOCX in byte, puoi utilizzare diversi strumenti software o librerie che forniscono questa funzionalità. Uno strumento affidabile come Aspose.Words per .NET può convertire facilmente i file DOCX in byte a livello di programmazione. È possibile utilizzare l'API della libreria per caricare il file DOCX e salvarlo nel formato byte desiderato.
+Per convertire un file DOCX in byte, puoi utilizzare diversi strumenti software o librerie che forniscono questa funzionalità. Uno strumento affidabile come Aspose.Words per .NET può convertire facilmente i file DOCX in byte a livello di codice. È possibile utilizzare l'API della libreria per caricare il file DOCX e salvarlo nel formato byte desiderato.
 
 #### Quali sono i limiti del processo di conversione?
 

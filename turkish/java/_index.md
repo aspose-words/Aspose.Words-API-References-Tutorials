@@ -22,8 +22,6 @@ Eğitimler, temel tablo işlemeden gelişmiş belge birleştirme ve filigranlama
 Öğreticiler pratik uygulamaya odaklanır, böylece gerçek dünyadaki belge işleme sorunlarını çözmek için Aspose.Words'ü nasıl kullanacağınızı öğrenebilirsiniz. Bu, hızlı bir şekilde hızlanmanıza ve belge işleme görevlerinizi otomatikleştirmek için Aspose.Words'ü kullanmaya başlamanıza yardımcı olur.
 ### Sağlam ve ölçeklenebilir belge işleme çözümleri için sağlam temel:
 Öğreticiler, sağlam ve ölçeklenebilir belge işleme çözümleri oluşturmak için sağlam bir temel sağlar. Bunun nedeni, öğreticilerin tablo işleme, belge birleştirme ve filigran ekleme gibi belge işlemenin temel kavramlarını kapsamasıdır.
-
-
 ## Belge İşleme Eğitimleri
 ### [kelime işlemci](./word-processing/) 
 Aspose.Words for Java ile kelime işlemeyi öğrenin. Belgeleri programlı olarak oluşturun, düzenleyin ve değiştirin. Belge işleme becerilerinizi bugün geliştirin.

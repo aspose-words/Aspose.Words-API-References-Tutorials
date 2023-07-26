@@ -17,7 +17,7 @@ Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubica
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Paso 2: Establecer fuentes de fuentes
+## Paso 2: Establecer fuentes de fuente
  A continuación, puede establecer las fuentes de fuente utilizando el`FontSettings.DefaultInstance` clase y el`SetFontsSources()` método. En este ejemplo, estamos usando una fuente de fuente del sistema y una fuente de fuente de carpeta personalizada. Asegúrese de ajustar la ruta a la carpeta de fuentes personalizadas según sus necesidades.
 
 ```csharp

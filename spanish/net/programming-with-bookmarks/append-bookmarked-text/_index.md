@@ -118,4 +118,4 @@ Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
 
 #### P3: ¿Qué sucede si los párrafos inicial y final no tienen padres válidos?
 
-R: Si los párrafos inicial y final no tienen padres válidos, es decir, no son realmente párrafos, se generará una excepción. Esta situación no se puede manejar en este momento.
+R: Si los párrafos inicial y final no tienen padres válidos, es decir, no son realmente párrafos, se lanzará una excepción. Esta situación no se puede manejar en este momento.

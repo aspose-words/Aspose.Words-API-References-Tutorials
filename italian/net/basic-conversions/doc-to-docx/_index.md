@@ -67,7 +67,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in
 
 #### D1: Cos'è Aspose.Words per .NET?
 
-Aspose.Words per .NET è una potente libreria di elaborazione dei documenti che consente agli sviluppatori di creare, modificare, convertire e rendere i documenti di Microsoft Word a livello di programmazione. Fornisce un ampio supporto per vari formati di file Word, inclusi DOC e DOCX.
+Aspose.Words per .NET è una potente libreria di elaborazione dei documenti che consente agli sviluppatori di creare, modificare, convertire e rendere i documenti di Microsoft Word a livello di codice. Fornisce un ampio supporto per vari formati di file Word, inclusi DOC e DOCX.
 
 #### D2: Perché dovrei convertire DOC in DOCX?
 

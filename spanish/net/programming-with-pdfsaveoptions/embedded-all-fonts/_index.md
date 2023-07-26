@@ -79,7 +79,7 @@ R: Para incrustar todas las fuentes en un documento PDF usando Aspose.Words para
 
  Configure las opciones de guardado de PDF creando una instancia del`PdfSaveOptions` clase y establecer el`EmbedFullFonts` propiedad a`true`. Esto garantiza que todas las fuentes utilizadas en el documento se incrustarán en el archivo PDF generado.
 
- Guarde el documento en formato PDF con fuentes incrustadas usando el`Save` metodo de la`Document`objeto, especificando el nombre del archivo de salida y las opciones de guardado configuradas previamente.
+ Guarde el documento en formato PDF con fuentes incrustadas utilizando el`Save` metodo de la`Document`objeto, especificando el nombre del archivo de salida y las opciones de guardado configuradas previamente.
 
 #### P: ¿Por qué es importante incrustar todas las fuentes en un documento PDF?
 R: Es importante incrustar todas las fuentes en un documento PDF para garantizar que el documento se muestre correctamente, incluso si las fuentes especificadas no están disponibles en el sistema donde se abre el PDF. Esto ayuda a preservar el aspecto, el formato y la legibilidad del documento, lo que garantiza que las fuentes utilizadas se reproduzcan de manera uniforme en diferentes dispositivos y plataformas.

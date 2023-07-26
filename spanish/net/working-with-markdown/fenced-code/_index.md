@@ -37,7 +37,7 @@ builder.Writeln("This is an fenced code");
 
 ## Paso 4: Agregar código delimitado con cadena de información
 
-También podemos agregar un bloque de código delimitado con una cadena de información utilizando otro estilo personalizado. En este ejemplo, estamos creando un estilo llamado "FencedCode.C#" para representar un bloque de código C#.
+También podemos agregar un bloque de código delimitado con una cadena de información usando otro estilo personalizado. En este ejemplo, estamos creando un estilo llamado "FencedCode.C#" para representar un bloque de código C#.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");

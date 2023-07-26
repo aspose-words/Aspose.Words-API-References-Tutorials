@@ -82,7 +82,7 @@ R : La fonctionnalité "Remplacer le texte dans le tableau" dans Aspose.Words p
 
 #### Q : Comment puis-je charger un document Word à l'aide d'Aspose.Words pour .NET ?
 
- : Pour charger un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Document` classe et spécifiez le chemin du fichier de document. Voici un exemple de code C# pour charger un document :
+R : Pour charger un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Document` classe et spécifiez le chemin du fichier de document. Voici un exemple de code C# pour charger un document :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

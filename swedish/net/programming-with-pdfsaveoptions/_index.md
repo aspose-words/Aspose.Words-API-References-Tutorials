@@ -16,7 +16,7 @@ Oavsett om du vill konvertera Word-dokument till PDF för onlinedistribution, ar
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Visa dokumenttitel i fönstrets titelrad](./display-doc-title-in-window-titlebar/) | Lär dig hur du visar dokumenttitel i fönstrets namnlist när du konverterar till PDF med Aspose.Words för .NET. |
+| [Visa dokumentets titel i fönstrets titelrad](./display-doc-title-in-window-titlebar/) | Lär dig hur du visar dokumenttitel i fönstrets namnlist när du konverterar till PDF med Aspose.Words för .NET. |
 | [Pdf-rendering varningar](./pdf-render-warnings/) | Steg-för-steg-guide för att hantera PDF-renderingsvarningar med Aspose.Words för .NET. |
 | [Lägg till digital signatur till PDF med certifikathållare](./digitally-signed-pdf-using-certificate-holder/) | Lär dig hur du signerar en PDF digitalt med en certifikatinnehavare med Aspose.Words för .NET. |
 | [Bädda in teckensnitt i PDF-dokument](./embedded-all-fonts/) | Steg för steg guide för att bädda in alla typsnitt i en PDF med Aspose.Words för .NET. |

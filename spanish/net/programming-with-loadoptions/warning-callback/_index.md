@@ -91,7 +91,7 @@ R: El uso de una devolución de llamada de advertencia le permite estar al tanto
 
 #### P: ¿Puedo usar la misma devolución de llamada de advertencia para varias operaciones de carga de documentos?
 
-R: Sí, puede reutilizar la misma devolución de llamada de advertencia para múltiples operaciones de carga de documentos. Es una buena práctica tener un enfoque consistente para manejar las advertencias en su aplicación.
+R: Sí, puede reutilizar la misma devolución de llamada de advertencia para varias operaciones de carga de documentos. Es una buena práctica tener un enfoque consistente para manejar las advertencias en su aplicación.
 
 #### P: ¿Es obligatorio utilizar una devolución de llamada de advertencia para la carga de documentos?
 

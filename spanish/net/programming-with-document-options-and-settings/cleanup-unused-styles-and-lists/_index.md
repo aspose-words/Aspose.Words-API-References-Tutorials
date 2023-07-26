@@ -88,5 +88,5 @@ Estas instrucciones muestran la cantidad de estilos y listas que quedan después
 
  Asegúrese de especificar la ruta correcta del documento en el`dataDir` variable.
 
-Ahora ha aprendido a limpiar estilos y listas no utilizados de un documento mediante Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede aplicar fácilmente esta función a sus propios documentos.
+Ahora ha aprendido a limpiar estilos y listas no utilizados de un documento mediante Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede aplicar fácilmente esta característica a sus propios documentos.
 

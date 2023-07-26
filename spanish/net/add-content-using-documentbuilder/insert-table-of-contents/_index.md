@@ -129,7 +129,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 
 ## Conclusión
 
-¡Felicidades! Ha aprendido con éxito cómo insertar una tabla de contenido en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso y utilizar el código fuente provisto, ahora puede generar una tabla de contenido con encabezados y números de página apropiados para sus documentos.
+¡Felicidades! Ha aprendido con éxito cómo insertar una tabla de contenido en un documento de Word utilizando Aspose.Words para .NET. Al seguir esta guía paso a paso y utilizar el código fuente provisto, ahora puede generar una tabla de contenido con encabezados y números de página apropiados para sus documentos.
 
 ### Preguntas frecuentes para insertar una tabla de contenido en un documento de Word
 

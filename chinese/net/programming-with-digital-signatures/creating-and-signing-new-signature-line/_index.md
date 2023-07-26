@@ -135,6 +135,6 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 答：是的，Aspose.Words for .NET 提供了验证包含签名行的文档的数字签名的功能。您可以使用`DigitalSignatureUtil.Verify`验证数字签名的有效性和真实性的方法。
 
-#### 问：Aspose.Words for .NET 支持什么文件格式来创建和签名签名行？
+#### 问：Aspose.Words for .NET 支持什么文件格式来创建和签署签名行？
 
-答：Aspose.Words for .NET 支持以 DOCX 文件格式创建和签名签名行。您可以使用提供的方法和类在 DOCX 文件中创建和签署签名行。
+答：Aspose.Words for .NET 支持以 DOCX 文件格式创建和签署签名行。您可以使用提供的方法和类在 DOCX 文件中创建和签署签名行。

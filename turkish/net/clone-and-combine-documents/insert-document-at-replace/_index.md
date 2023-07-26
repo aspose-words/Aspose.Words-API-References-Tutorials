@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-Bu eğitimde, Aspose.Words for .NET'in Insert Document When Changeing özelliğini kullanarak değiştirirken bir belgeyi başka bir belgeye nasıl ekleyeceğinizi size göstereceğiz. Kaynak kodunu anlamak ve belge ekleme işlemini gerçekleştirmek için aşağıdaki adımları izleyin.
+Bu öğreticide, Aspose.Words for .NET'in Insert Document When Changeing özelliğini kullanarak değiştirirken bir belgeyi başka bir belgeye nasıl ekleyeceğinizi size göstereceğiz. Kaynak kodunu anlamak ve belge ekleme işlemini gerçekleştirmek için aşağıdaki adımları izleyin.
 
 ## 1. Adım: Ana belgenin yüklenmesi
 
@@ -64,7 +64,7 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 
 ## Çözüm
 
-Bu öğreticide, Aspose.Words for .NET'in Insert Document When Changeing özelliğini kullanarak değiştirme sırasında başka bir belgeye nasıl belge ekleneceğini inceledik. Bul ve değiştir seçeneklerini yapılandırarak ve gerekli verileri sağlayarak, belirli yer tutucuları diğer belge şablonlarının veya bölümlerinin içerikleriyle değiştirerek belgeleri dinamik olarak bir araya getirebilirsiniz. Aspose.Words for .NET, karmaşık belge işleme görevlerini yönetmek için güçlü ve esnek bir yol sunarak, belge oluşturma ve içerik ekleme senaryolarını otomatikleştirmek için onu değerli bir araç haline getirir.
+Bu öğreticide, Aspose.Words for .NET'in Insert Document When Changeing özelliğini kullanarak değiştirme sırasında başka bir belgeye nasıl belge ekleneceğini inceledik. Bul ve değiştir seçeneklerini yapılandırarak ve gerekli verileri sağlayarak, belirli yer tutucuları diğer belge şablonlarının veya bölümlerinin içerikleriyle değiştirerek belgeleri dinamik olarak bir araya getirebilirsiniz. Aspose.Words for .NET, karmaşık belge işleme görevlerini yönetmenin güçlü ve esnek bir yolunu sunarak, onu belge oluşturma ve içerik ekleme senaryolarını otomatikleştirmek için değerli bir araç haline getirir.
 
 ### SSS
 

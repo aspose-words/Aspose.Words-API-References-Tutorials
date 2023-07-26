@@ -32,7 +32,7 @@ Si aún no ha instalado JDK, diríjase al sitio web oficial de Oracle y descargu
 
 ### Agregar Aspose.Words para Java a su proyecto
 
- Puede agregar Aspose.Words para Java a su proyecto utilizando Maven o la instalación manual. Para Maven, incluya la dependencia apropiada en su proyecto`pom.xml`archivo. Si prefiere la instalación manual, descargue la biblioteca del sitio web de Aspose y agréguela a la ruta de clase de su proyecto.
+ Puede agregar Aspose.Words para Java a su proyecto utilizando Maven o la instalación manual. Para Maven, incluya la dependencia apropiada en su proyecto`pom.xml`archivo. Si prefiere la instalación manual, descargue la biblioteca del sitio web de Aspose y agréguela a la ruta de clases de su proyecto.
 
 ## Crear un documento de Word simple
 

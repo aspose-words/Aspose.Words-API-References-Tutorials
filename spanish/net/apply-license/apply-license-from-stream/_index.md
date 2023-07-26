@@ -69,7 +69,7 @@ catch (Exception e)
 ```
 
 ## Conclusión
-En este tutorial, aprendió a aplicar una licencia desde un flujo usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, puede configurar fácilmente la licencia y desbloquear todo el potencial de Aspose.Words para sus tareas de procesamiento de documentos.
+En este tutorial, aprendió a aplicar una licencia desde un flujo usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, puede configurar fácilmente la licencia y desbloquear todo el potencial de Aspose.Words para sus tareas de procesamiento de documentos.
 
 Ahora puede aplicar con confianza una licencia de una secuencia y aprovechar las potentes funciones de Aspose.Words para crear, modificar y convertir documentos de Word mediante programación.
 

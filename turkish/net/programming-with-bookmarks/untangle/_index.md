@@ -26,7 +26,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 }
 ```
 
-## 2. Adım: Yer imlerinden ana satırları alın
+## 2. Adım: Yer işaretlerinden ana satırları alın
 
  biz kullanıyoruz`GetAncestor`yer iminin başlangıç ve bitiş düğümlerinin ana satırlarını alma yöntemleri:
 

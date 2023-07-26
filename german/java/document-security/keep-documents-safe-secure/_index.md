@@ -150,7 +150,7 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Schwärzen vertraulicher Informationen
+## 10. Schwärzen sensibler Informationen
 
 Beim Teilen von Dokumenten möchten Sie möglicherweise vertrauliche Informationen dauerhaft entfernen, um sicherzustellen, dass sie nicht in die falschen Hände geraten. Mit Aspose.Words für Java können Sie vertrauliche Inhalte schwärzen:
 

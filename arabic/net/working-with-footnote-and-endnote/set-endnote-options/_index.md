@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 3: إضافة نص وتعليق ختامي
 
- استخدم ال`Write` طريقة`DocumentBuilder` كائن لإضافة نص إلى المستند ، و`InsertFootnote` طريقة لإدراج تعليق ختامي:
+ استخدم ال`Write` طريقة`DocumentBuilder` كائن لإضافة نص إلى المستند ، و`InsertFootnote` طريقة إدراج تعليق ختامي:
 
 ```csharp
 builder.Write("Some text");

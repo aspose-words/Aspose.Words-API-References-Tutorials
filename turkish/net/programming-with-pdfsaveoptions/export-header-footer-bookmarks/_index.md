@@ -46,7 +46,7 @@ Son olarak, daha önce yapılandırılmış kaydetme seçeneklerini kullanarak b
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-Bu kadar ! Aspose.Words for .NET kullanarak bir belgeden üstbilgi ve altbilgi yer imlerini başarıyla dışa aktardınız ve uygun yer imleriyle bir PDF oluşturdunuz.
+Bu kadar ! Aspose.Words for .NET'i kullanarak bir belgeden üstbilgi ve altbilgi yer imlerini başarıyla dışa aktardınız ve uygun yer imleriyle bir PDF oluşturdunuz.
 
 ### Aspose.Words for .NET ile üstbilgi ve altbilgi yer imlerini dışa aktarmak için örnek kaynak kodu
 
@@ -68,7 +68,7 @@ Bu kadar ! Aspose.Words for .NET kullanarak bir belgeden üstbilgi ve altbilgi y
 
 Bu eğitimde, Aspose.Words for .NET kullanarak üstbilgi ve altbilgi yer imlerinin bir Word belgesinden bir PDF belgesine nasıl aktarılacağını açıkladık. Dışa aktarılan yer imleri, oluşturulan PDF belgesinde kolay gezinmeye ve karşılık gelen üstbilgilere ve altbilgilere hızlı başvuruya olanak tanır. Aspose.Words for .NET kullanarak bir belgeden üstbilgi ve altbilgi yer imlerini dışa aktarmak ve uygun yer imleriyle bir PDF oluşturmak için açıklanan adımları izleyin. Belgelerinize giden doğru yolu belirttiğinizden ve kaydetme seçeneklerini gerektiği gibi yapılandırdığınızdan emin olun.
 
-# Sıkça Sorulan Sorular
+### Sıkça Sorulan Sorular
 
 ### S: Üstbilgi ve altbilgi yer imlerini bir Word belgesinden PDF belgesine dışa aktarmak nedir?
 Y: Üstbilgi ve altbilgi yer imlerini Word belgesinden PDF belgesine dışa aktarmak, PDF belgesinde üstbilgilerden ve altbilgilerden yer imleri tutmaya ve oluşturmaya yönelik bir özelliktir. orijinal Word belgesinin altbilgileri. Bu, kullanıcıların üstbilgilere ve altbilgilere karşılık gelen yer imlerini kullanarak PDF belgesinde hızlı ve kolay bir şekilde gezinmesine olanak tanır.
@@ -82,7 +82,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesinden üstbilgi ve altbilgi y
 
  örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıfı ve uygun üstbilgi ve altbilgi yer imi seçeneklerini ayarlama.
 
- kullanarak belgeyi PDF biçiminde kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
+ kullanarak belgeyi PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
 
 ### S: Üst bilgi ve alt bilgi yer imlerini bir PDF belgesine dışa aktarmanın faydaları nelerdir?
 C: Üst bilgi ve alt bilgi yer imlerini bir PDF belgesine dışa aktarmanın avantajları şunlardır:

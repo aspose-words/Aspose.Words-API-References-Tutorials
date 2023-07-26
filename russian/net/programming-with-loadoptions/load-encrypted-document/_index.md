@@ -69,6 +69,6 @@ doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new Odt
 
 О: Aspose.Words поддерживает различные алгоритмы шифрования, в том числе Advanced Encryption Standard (AES), что обеспечивает надежную защиту данных.
 
-#### В: Совместим ли Aspose.Words с другими форматами документов, помимо Word?
+#### В: Совместим ли Aspose.Words с другими форматами документов, кроме Word?
 
 О: Да, Aspose.Words поддерживает широкий спектр форматов документов, включая PDF, HTML, EPUB и другие, что делает его универсальным решением для обработки документов.

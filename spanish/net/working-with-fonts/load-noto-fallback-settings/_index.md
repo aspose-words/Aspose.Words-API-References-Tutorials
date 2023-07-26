@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/working-with-fonts/load-noto-fallback-settings/
 ---
-En este tutorial, lo guiaremos a través de cómo cargar la configuración de sustitución de fuentes Noto en un documento de Word utilizando la biblioteca Aspose.Words para .NET. La configuración de sustitución de fuentes de Noto le permite gestionar la sustitución de fuentes al visualizar o imprimir documentos. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
+En este tutorial, lo guiaremos a través de cómo cargar la configuración de sustitución de fuentes Noto en un documento de Word utilizando la biblioteca Aspose.Words para .NET. La configuración de sustitución de fuentes de Noto le permite gestionar la sustitución de fuentes al mostrar o imprimir documentos. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
 
 ## requisitos previos
 Antes de comenzar, asegúrese de tener los siguientes elementos:
@@ -65,9 +65,9 @@ En este tutorial, vimos cómo cargar la configuración de sustitución de fuente
 
 R: Para cargar la configuración de sustitución de fuentes Noto en un documento de Word con Aspose.Words, primero debe descargar las fuentes Noto de la fuente oficial. Luego puede usar la API de Aspose.Words para cargar esas fuentes en el documento y configurarlas para sustituirlas cuando sea necesario.
 
-#### P: ¿El uso de fuentes Noto para sustitución en documentos de Word garantiza una visualización de texto consistente?
+#### P: ¿El uso de fuentes Noto para sustitución en documentos de Word garantiza una visualización de texto uniforme?
 
-R: Sí, el uso de fuentes Noto para sustitución en documentos de Word garantiza una visualización de texto coherente. Las fuentes de Noto están diseñadas para admitir muchos idiomas y caracteres, lo que ayuda a mantener una apariencia uniforme incluso cuando las fuentes requeridas no están disponibles.
+R: Sí, el uso de fuentes Noto para sustitución en documentos de Word garantiza una visualización de texto uniforme. Las fuentes de Noto están diseñadas para admitir muchos idiomas y caracteres, lo que ayuda a mantener una apariencia uniforme incluso cuando las fuentes requeridas no están disponibles.
 
 #### P: ¿Las fuentes Noto son gratuitas?
 

@@ -30,7 +30,7 @@ Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 ```
 
-Убедитесь, что в вашем каталоге данных есть соответствующие файлы словаря.
+Убедитесь, что в вашем каталоге данных есть соответствующие файлы словарей.
 
 ## Шаг 3: Обработка слов по переносу
 

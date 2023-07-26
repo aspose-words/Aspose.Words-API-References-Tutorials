@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-tables/set-relative-horizontal-or-vertical-position/
 ---
 
-En este tutorial, vamos a aprender cómo establecer la posición horizontal o vertical relativa de una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá establecer la posición horizontal o vertical relativa de su tabla en sus documentos de Word.
+En este tutorial, vamos a aprender cómo establecer la posición horizontal o vertical relativa de una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá establecer la posición horizontal o vertical relativa de su tabla en sus documentos de Word.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.

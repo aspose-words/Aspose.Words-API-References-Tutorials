@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
 
-In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET die Ausrichtung von mehrzeiligen Markierungen in einer Diagrammachse festlegen. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, auf die Achse zugreifen und die Ausrichtung der Teilstrichbeschriftung ändern.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET die Ausrichtung von mehrzeiligen Markierungsbeschriftungen in einer Diagrammachse festlegen. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, auf die Achse zugreifen und die Ausrichtung der Teilstrichbeschriftung ändern.
 
 ## Schritt 1: Richten Sie das Projekt ein
 

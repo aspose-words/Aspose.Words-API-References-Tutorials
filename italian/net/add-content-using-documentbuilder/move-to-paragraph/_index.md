@@ -72,7 +72,7 @@ R: La funzione Sposta in paragrafo in Aspose.Words per .NET consente agli svilup
 
 #### D: Come posso spostare DocumentBuilder in un paragrafo specifico in un documento Word?
 
-R: Puoi utilizzare il metodo MoveToParagraph della classe DocumentBuilder. Questo metodo accetta due parametri: l'indice del paragrafo di destinazione e la posizione del carattere all'interno di tale paragrafo (0 rappresenta l'inizio del paragrafo).
+R: Puoi utilizzare il metodo MoveToParagraph della classe DocumentBuilder. Questo metodo accetta due parametri: l'indice del paragrafo di destinazione e la posizione del carattere all'interno di quel paragrafo (0 rappresenta l'inizio del paragrafo).
 
 #### D: Posso modificare il contenuto di un paragrafo utilizzando la funzione Sposta in paragrafo?
 

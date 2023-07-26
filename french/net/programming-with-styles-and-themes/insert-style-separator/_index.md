@@ -98,7 +98,7 @@ Pour configurer l'environnement, vous devez vous assurer que Aspose.Words pour .
 
 #### Comment créer et configurer un style personnalisé ?
 
- Pour créer un style personnalisé, vous pouvez utiliser le`Styles.Add` méthode de la`Document` objet. Spécifiez le type de style (par exemple,`StyleType.Paragraph`et attribuez un nom au style. Une fois créé, vous pouvez modifier les propriétés de police de l'objet de style pour configurer son apparence.
+ Pour créer un style personnalisé, vous pouvez utiliser le`Styles.Add` méthode de la`Document` objet. Spécifiez le type de style (par exemple,`StyleType.Paragraph`et indiquez un nom pour le style. Une fois créé, vous pouvez modifier les propriétés de police de l'objet de style pour configurer son apparence.
 
 #### Comment insérer un séparateur de style ?
 

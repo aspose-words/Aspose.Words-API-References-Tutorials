@@ -60,7 +60,7 @@ ProtectionType protectionType = doc.ProtectionType;
 
  А:`ProtectionType` Свойство в Aspose.Words для .NET может возвращать различные типы защиты, в том числе:
 - `NoProtection`: документ не защищен.
-- `AllowOnlyRevisions`: документ защищен, и в него можно вносить только изменения.
+- `AllowOnlyRevisions`: документ защищен, и в него можно вносить только исправления.
 - `AllowOnlyComments`: документ защищен, и к нему можно добавлять только комментарии.
 - `AllowOnlyFormFields`: документ защищен, и редактировать можно только поля формы.
 - `ReadOnly`: документ защищен и доступен только для чтения.

@@ -38,7 +38,7 @@ format. HangingPunctuation = false;
 doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 ```
 
-### مثال على شفرة المصدر لمجموعة Asian Typography Line Break Group باستخدام Aspose.Words for .NET
+### مثال على شفرة المصدر لمجموعة خطوط الطباعة الآسيوية باستخدام Aspose.Words for .NET
 
 فيما يلي شفرة المصدر الكاملة لميزة Asian Typography Line Break Group مع Aspose.Words for .NET:
 
@@ -66,7 +66,7 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 
 #### س: ما هي ميزة "Asian Typography Line Break Group" في Aspose.Words for .NET؟
 
-ج: تتيح لك ميزة "Asian Typography Line Break Group" في Aspose.Words for .NET التحكم في سلوك فصل الأسطر للطباعة الآسيوية في مستند Word. على وجه التحديد ، فإنه يؤثر على كيفية كسر الأسطر ولفها عند التعامل مع الأحرف الآسيوية في الفقرات.
+ج: تسمح لك ميزة "Asian Typography Line Break Group" في Aspose.Words for .NET بالتحكم في سلوك فصل الأسطر للطباعة الآسيوية في مستند Word. على وجه التحديد ، فإنه يؤثر على كيفية كسر الأسطر ولفها عند التعامل مع الأحرف الآسيوية في الفقرات.
 
 #### س: كيف يمكنني تمكين "Asian Typography Line Break Group" في Aspose.Words for .NET؟
 

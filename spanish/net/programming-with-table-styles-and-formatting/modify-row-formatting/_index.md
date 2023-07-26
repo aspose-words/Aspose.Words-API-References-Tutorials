@@ -8,10 +8,10 @@ weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 ---
 
-En este tutorial, lo guiaremos a través del proceso paso a paso para cambiar el formato de una fila de tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, sabrá cómo cambiar los bordes, la altura y el salto de línea de una fila de tabla en sus documentos de Word usando Aspose.Words para .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para cambiar el formato de una fila de tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo cambiar los bordes, la altura y el salto de línea de una fila de tabla en sus documentos de Word usando Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se encuentra su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
+Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se encuentra su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

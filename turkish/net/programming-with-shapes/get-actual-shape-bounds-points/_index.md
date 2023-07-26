@@ -1,6 +1,6 @@
 ---
-title: Gerçek Şekil Sınır Noktaları Alın
-linktitle: Gerçek Şekil Sınır Noktaları Alın
+title: Gerçek Şekil Sınır Noktalarını Alın
+linktitle: Gerçek Şekil Sınır Noktalarını Alın
 second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki noktalar (ölçüm birimi) olarak bir şeklin gerçek sınırlarını nasıl alacağınızı öğrenin.
 type: docs

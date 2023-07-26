@@ -68,7 +68,7 @@ Das ist alles ! Sie haben erfolgreich Kopf- und Fußzeilen-Lesezeichen aus einem
 
 In diesem Tutorial haben wir erklärt, wie Sie mit Aspose.Words für .NET Kopf- und Fußzeilen-Lesezeichen aus einem Word-Dokument in ein PDF-Dokument exportieren. Exportierte Lesezeichen ermöglichen eine einfache Navigation und einen schnellen Verweis auf entsprechende Kopf- und Fußzeilen im generierten PDF-Dokument. Befolgen Sie die beschriebenen Schritte, um Kopf- und Fußzeilen-Lesezeichen aus einem Dokument zu exportieren und mit Aspose.Words für .NET eine PDF-Datei mit den entsprechenden Lesezeichen zu generieren. Stellen Sie sicher, dass Sie den richtigen Pfad zu Ihren Dokumenten angeben und die Speicheroptionen nach Bedarf konfigurieren.
 
-# Häufig gestellte Fragen
+### Häufig gestellte Fragen
 
 ### F: Was bedeutet der Export von Kopf- und Fußzeilen-Lesezeichen aus einem Word-Dokument in ein PDF-Dokument?
 A: Das Exportieren von Kopf- und Fußzeilen-Lesezeichen aus einem Word-Dokument in ein PDF-Dokument ist eine Funktion zum Beibehalten und Generieren von Lesezeichen im PDF-Dokument aus den Kopf- und Fußzeilen. Fußzeilen des ursprünglichen Word-Dokuments. Dadurch können Benutzer schnell und einfach durch das PDF-Dokument navigieren, indem sie Lesezeichen für Kopf- und Fußzeilen verwenden.

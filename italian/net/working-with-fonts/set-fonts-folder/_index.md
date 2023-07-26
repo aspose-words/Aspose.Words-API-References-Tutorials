@@ -30,7 +30,7 @@ fontSettings.SetFontsFolder(dataDir + "Fonts", false);
 ```
 
 ## Passaggio 3: caricare il documento con le impostazioni dei caratteri
- Usa il`LoadOptions` class per specificare le impostazioni dei caratteri nel file`FontSettings` opzione. Quindi usa il`Document` class per caricare il documento utilizzando queste opzioni.
+ Usa il`LoadOptions` class per specificare le impostazioni dei caratteri nel file`FontSettings` opzione. Quindi usa il`Document` class per caricare il documento usando queste opzioni.
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
@@ -69,7 +69,7 @@ Congratulazioni! Ora sai come impostare la directory dei caratteri in Aspose.Wor
 
 #### D: Cosa succede se un font utilizzato nel documento non è presente nelle cartelle dei font definite?
 
-R: Se un font utilizzato nel documento non è presente nelle cartelle dei font definite in Aspose.Words, verrà utilizzato un font sostitutivo. Ciò garantisce che il testo nel documento venga sempre visualizzato correttamente, anche se il font originale non è disponibile.
+R: Se un font utilizzato nel documento non è presente nelle cartelle dei font definite in Aspose.Words, verrà utilizzato un font sostitutivo. Ciò garantisce che il testo nel documento venga sempre visualizzato correttamente, anche se il carattere originale non è disponibile.
 
 #### D: Le cartelle dei font definite in Aspose.Words hanno la priorità sui font installati nel sistema?
 

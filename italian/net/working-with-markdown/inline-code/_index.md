@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-markdown/inline-code/
 ---
 
-In questo esempio, ti illustreremo come utilizzare la funzione di codice inline con Aspose.Words per .NET. Il codice in linea viene utilizzato per rappresentare visivamente parti di codice all'interno di un paragrafo.
+In questo esempio, ti illustreremo come utilizzare la funzione di codice in linea con Aspose.Words per .NET. Il codice in linea viene utilizzato per rappresentare visivamente parti di codice all'interno di un paragrafo.
 
 ## Passaggio 1: utilizzo di un generatore di documenti
 
@@ -66,11 +66,11 @@ Congratulazioni! Ora hai imparato come utilizzare la funzionalità del codice in
 
 #### D: Come posso utilizzare il codice inline in Aspose.Words?
 
- A: Per utilizzare il codice in linea in Aspose.Words, è possibile utilizzare tag appropriati per racchiudere il testo da formattare come codice in linea. Ad esempio, puoi utilizzare il`<code>` O`<kbd>` tag per racchiudere il testo da formattare come codice inline.
+ A: Per utilizzare il codice in linea in Aspose.Words, è possibile utilizzare tag appropriati per racchiudere il testo da formattare come codice in linea. Ad esempio, puoi utilizzare il`<code>` O`<kbd>` tag per racchiudere il testo da formattare come codice in linea.
 
 #### D: È possibile specificare il carattere o il colore del codice in linea in Aspose.Words?
 
- A: Sì, puoi specificare il carattere o il colore del codice inline in Aspose.Words. Puoi usare il`Font.Name` E`Font.Color` proprietà del`Run` oggetto per impostare il carattere e il colore del codice inline. Ad esempio, puoi usare`run.Font.Name = "Courier New"` per specificare il carattere per il codice inline e`run.Font.Color = Color.Blue`per specificare il colore.
+ A: Sì, puoi specificare il carattere o il colore del codice inline in Aspose.Words. Puoi usare il`Font.Name` E`Font.Color` proprietà del`Run` oggetto per impostare il carattere e il colore del codice in linea. Ad esempio, puoi usare`run.Font.Name = "Courier New"` per specificare il carattere per il codice inline e`run.Font.Color = Color.Blue`per specificare il colore.
 
 #### D: Posso utilizzare il codice in linea in un paragrafo contenente altri elementi di testo?
 

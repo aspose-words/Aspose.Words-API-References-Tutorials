@@ -47,7 +47,7 @@ saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- Bu adımda, belgeyi kaydetme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`TxtSaveOptions` nesne ve ayarlayın`ListIndentation.Count` girinti düzeyi başına sekme karakteri sayısını belirtmek için özelliği 1 olarak değiştirin. biz de ayarlıyoruz`ListIndentation.Character` sekme karakterlerini kullanmak istediğimizi belirtmek için özelliği '\t' olarak değiştirin.
+ Bu adımda, belgeyi kaydetme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`TxtSaveOptions` nesne ve ayarlayın`ListIndentation.Count` girinti düzeyi başına sekme karakteri sayısını belirtmek için özelliği 1 olarak ayarlayın. biz de ayarlıyoruz`ListIndentation.Character` sekme karakterlerini kullanmak istediğimizi belirtmek için özelliği '\t' olarak değiştirin.
 
 ## 5. Adım: Belgeyi kaydedin
 

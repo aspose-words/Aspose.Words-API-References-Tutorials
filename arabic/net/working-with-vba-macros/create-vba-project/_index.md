@@ -1,6 +1,6 @@
 ---
-title: أنشئ مشروع Vba في مستند Word
-linktitle: أنشئ مشروع Vba في مستند Word
+title: قم بإنشاء مشروع Vba في مستند Word
+linktitle: قم بإنشاء مشروع Vba في مستند Word
 second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية إنشاء مشروع VBA في مستند Word باستخدام Aspose.Words for .NET.
 type: docs

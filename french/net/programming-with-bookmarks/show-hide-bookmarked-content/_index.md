@@ -154,7 +154,7 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 #### Q : Comment puis-je ajouter d'autres conditions pour afficher ou masquer le contenu des favoris ?
 
- R : Pour ajouter d'autres conditions, vous pouvez utiliser des opérateurs logiques tels que`AND` et`OR` dans le code d'insertion des champs de fusion à l'étape 2. Modifiez la condition dans le code suivant pour ajouter des conditions supplémentaires :
+ R : Pour ajouter d'autres conditions, vous pouvez utiliser des opérateurs logiques tels que`AND` et`OR` dans le code d'insertion des champs de fusion à l'étape 2. Modifiez la condition dans le code suivant pour ajouter des conditions supplémentaires :
 
 ```csharp
 builder. Write("\" = \"true\" ");

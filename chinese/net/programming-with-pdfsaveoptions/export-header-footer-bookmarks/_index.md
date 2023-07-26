@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", 
 
 在本教程中，我们解释了如何使用 Aspose.Words for .NET 将页眉和页脚书签从 Word 文档导出到 PDF 文档。导出的书签可以轻松导航并快速引用生成的 PDF 文档中相应的页眉和页脚。按照描述的步骤从文档导出页眉和页脚书签，并使用 Aspose.Words for .NET 生成带有适当书签的 PDF。请务必指定文档的正确路径并根据需要配置保存选项。
 
-# 经常问的问题
+### 经常问的问题
 
 ### 问：什么是将页眉和页脚书签从 Word 文档导出到 PDF 文档？
 答：将Word文档中的页眉和页脚书签导出到PDF文档是一项功能，可以从页眉和页脚中保留并生成PDF文档中的书签。原始 Word 文档的页脚。这使得用户可以使用与页眉和页脚相对应的书签快速轻松地浏览 PDF 文档。

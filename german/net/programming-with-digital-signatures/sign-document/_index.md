@@ -78,7 +78,7 @@ DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/docume
 
 Stellen Sie sicher, dass Sie die richtigen Pfade für das Quelldokument und das signierte Dokument (Ausgabe) angeben.
 
-#### F: Was ist der Zweck der Dokumentensignatur?
+#### F: Was ist der Zweck der Dokumentensignierung?
 
 A: Das Signieren von Dokumenten dient als Methode zur Sicherstellung der Authentizität und Integrität eines Dokuments. Durch die digitale Signatur eines Dokuments können Sie dessen Herkunft nachweisen, sicherstellen, dass der Inhalt nicht verändert wurde, und die Unbestreitbarkeit feststellen. Das Signieren von Dokumenten wird häufig für rechtliche, finanzielle und sensible Dokumente verwendet.
 

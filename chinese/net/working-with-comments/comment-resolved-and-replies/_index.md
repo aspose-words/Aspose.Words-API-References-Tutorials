@@ -15,7 +15,7 @@ url: /zh/net/working-with-comments/comment-resolved-and-replies/
 - Aspose.Words for .NET 库安装在您的系统上。
 
 ## 第 1 步：加载文档并访问评论
-首先，使用 Document 类加载包含注释的文档并访问注释集合：
+首先，使用 Document 类加载包含评论的文档并访问评论集合：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

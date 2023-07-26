@@ -92,7 +92,7 @@ R: A partir de una firma digital en un documento de Word, se puede acceder a div
 
 #### P: ¿Puedo verificar la validez de una firma digital en un documento de Word utilizando Aspose.Words para .NET?
 
- R: Sí, puede verificar la validez de una firma digital en un documento de Word usando Aspose.Words para .NET. Al acceder a la`IsValid` propiedad de la`DigitalSignature` objeto, puede determinar si la firma es válida o no.
+ R: Sí, puede verificar la validez de una firma digital en un documento de Word utilizando Aspose.Words para .NET. Al acceder a la`IsValid` propiedad de la`DigitalSignature` objeto, puede determinar si la firma es válida o no.
 
 #### P: ¿Cómo puedo verificar la validez de las firmas digitales en un documento de Word usando Aspose.Words para .NET?
 

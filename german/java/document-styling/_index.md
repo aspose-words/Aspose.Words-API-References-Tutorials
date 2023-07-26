@@ -12,7 +12,7 @@ Aspose.Words für Java bietet leistungsstarke Tools für die Dokumentgestaltung,
 
 ## Grundlegendes zum Dokumentstil
 
-Bevor Sie sich mit fortgeschrittenen Dokumentenstiltechniken befassen, ist es wichtig, die Grundlagen zu verstehen. In diesen Tutorials behandeln wir die Grundlagen der Dokumentenverarbeitung und -gestaltung und erkunden die verschiedenen Elemente, die zur Dokumentästhetik beitragen. Sie erfahren, wie Sie eine Dokumentstruktur einrichten, verschiedene Überschriftenstile anwenden und Absätze formatieren, um klare und organisierte Inhalte zu erstellen. Darüber hinaus werden wir die Verwendung von Listen, Tabellen und anderen Elementen untersuchen, um Daten effizient und optisch ansprechend darzustellen. Diese grundlegenden Fähigkeiten dienen als solide Grundlage für die Beherrschung der Kunst der Dokumentgestaltung mit Aspose.Words für Java.
+Bevor Sie sich mit fortgeschrittenen Dokumentenstiltechniken befassen, ist es wichtig, die Grundlagen zu verstehen. In diesen Tutorials behandeln wir die Grundlagen der Dokumentenverarbeitung und -gestaltung und erkunden die verschiedenen Elemente, die zur Dokumentästhetik beitragen. Sie erfahren, wie Sie eine Dokumentstruktur einrichten, verschiedene Überschriftenstile anwenden und Absätze formatieren, um klare und organisierte Inhalte zu erstellen. Darüber hinaus werden wir die Verwendung von Listen, Tabellen und anderen Elementen untersuchen, um Daten effizient und optisch ansprechend darzustellen. Diese grundlegenden Fähigkeiten dienen als solide Grundlage für die Beherrschung der Kunst der Dokumentengestaltung mit Aspose.Words für Java.
 
 ## Nutzung erweiterter Styling-Funktionen
 

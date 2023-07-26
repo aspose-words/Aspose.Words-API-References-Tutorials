@@ -44,7 +44,7 @@ doc.Save(MyDir + "BaseConversions.DocxToPdf.pdf");
 
 ### Часто задаваемые вопросы о преобразовании Word в PDF
 
-#### Q1. Каковы требования для преобразования DOCX в PDF с помощью Aspose.Words для .NET?
+#### Q1. Каковы требования для преобразования DOCX в PDF с помощью Aspose.Words for .NET?
 Чтобы выполнить преобразование DOCX в PDF с помощью Aspose.Words for .NET, вам необходимо:
 Aspose.Words для .NET установлен на вашем компьютере
 Действительный файл DOCX для преобразования

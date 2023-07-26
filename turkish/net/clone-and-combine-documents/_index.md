@@ -2,7 +2,7 @@
 title: Belgeleri Klonlayın ve Birleştirin
 linktitle: Belgeleri Klonlayın ve Birleştirin
 second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile Word belgelerini nasıl klonlayacağınızı ve birleştireceğinizi öğrenin. Belgelerin kopyalarını oluşturmayı, birden çok belgeyi tek bir belgede birleştirmeyi, bölümleri, üst bilgileri ve alt bilgileri yönetmeyi öğrenin.
+description: Aspose.Words for .NET ile Word belgelerini nasıl kopyalayacağınızı ve birleştireceğinizi öğrenin. Belgelerin kopyalarını oluşturmayı, birden çok belgeyi tek bir belgede birleştirmeyi, bölümleri, üst bilgileri ve alt bilgileri yönetmeyi öğrenin.
 type: docs
 weight: 1470
 url: /tr/net/clone-and-combine-documents/

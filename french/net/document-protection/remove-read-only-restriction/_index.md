@@ -51,7 +51,7 @@ Voici le code source complet pour supprimer la restriction en lecture seule à l
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
-// Entrez un mot de passe de 15 caractères maximum.
+// Saisissez un mot de passe comportant jusqu'à 15 caractères.
 doc.WriteProtection.SetPassword("MyPassword");
 
 //Supprimez l'option de lecture seule.

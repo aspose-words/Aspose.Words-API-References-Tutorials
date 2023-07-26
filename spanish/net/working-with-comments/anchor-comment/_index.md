@@ -37,7 +37,7 @@ doc.FirstSection.Body.AppendChild(para2);
 ```
 
 ## Paso 2: cree un comentario y agregue un rango de comentarios
-continuación, cree un comentario y asócielo con un texto específico utilizando los objetos CommentRangeStart y CommentRangeEnd:
+continuación, cree un comentario y asócielo con un texto específico usando los objetos CommentRangeStart y CommentRangeEnd:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 Aquí está el código fuente completo para anclar una respuesta de comentario usando Aspose.Words para .NET:
 
 ```csharp
-// Cree una instancia del Documento.
+// Cree una instancia del documento.
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document();
 

@@ -90,7 +90,7 @@ C: Aspose.Words'taki Heceleme Hatırlatıcısı, sözcüklerin belgelerinizde na
 
 #### S: Aspose.Words'ta bir heceleme hatırlatıcısı nasıl ayarlanır?
 
- A: Aspose.Words'te bir heceleme geri araması tanımlamak için,`HyphenationCallback` arayüz ve uygulama`HandleWord()` yöntem. Bu yöntem, heceleme sırasında karşılaşılan her kelime için çağrılacaktır. Ona özel heceleme kuralları uygulayabilir ve hecelenmiş kelimeyi geri verebilirsiniz. Ardından, heceleme geri aramanızı kullanarak bağlayabilirsiniz.`Document.HyphenationCallback` belgenizin özelliği.
+ C: Aspose.Words'te bir heceleme geri araması tanımlamak için,`HyphenationCallback` arayüz ve uygulama`HandleWord()` yöntem. Bu yöntem, heceleme sırasında karşılaşılan her kelime için çağrılacaktır. Ona özel heceleme kuralları uygulayabilir ve hecelenmiş kelimeyi geri verebilirsiniz. Ardından, heceleme geri aramanızı kullanarak bağlayabilirsiniz.`Document.HyphenationCallback` belgenizin özelliği.
 
 #### S: Aspose.Words'te bir heceleme hatırlatıcısı kullanmanın avantajı nedir?
 

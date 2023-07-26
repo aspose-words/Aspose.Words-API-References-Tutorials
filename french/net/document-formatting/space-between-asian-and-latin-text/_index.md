@@ -84,7 +84,7 @@ R : Il est essentiel d'ajuster l'espace entre le texte asiatique et le texte la
 
 #### Q : Aspose.Words pour .NET prend-il en charge d'autres fonctionnalités de formatage de document ?
 
-: Oui, Aspose.Words pour .NET offre une prise en charge étendue de diverses fonctionnalités de formatage de document. Il inclut des fonctionnalités pour les styles de police, les paragraphes, les tableaux, les images, etc. Vous pouvez manipuler et formater efficacement vos documents Word par programmation.
+: Oui, Aspose.Words pour .NET offre une prise en charge étendue de diverses fonctionnalités de formatage de document. Il inclut des fonctionnalités pour les styles de police, les paragraphes, les tableaux, les images, etc. Vous pouvez manipuler et formater efficacement vos documents Word par programme.
 
 #### Q : Où puis-je trouver des ressources et de la documentation supplémentaires pour Aspose.Words pour .NET ?
 

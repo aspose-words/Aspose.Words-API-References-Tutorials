@@ -38,7 +38,7 @@ FormField formField2 = documentFormFields["Text2"]; // Hämtar med namn
 
 ## Steg 3: Ändra formulärfältegenskaper
 
- När du har hämtat formulärfälten kan du ändra deras egenskaper efter behov. I det här exemplet ändrar vi teckensnittsstorleken på`formField1` till 20 och teckensnittsfärgen på`formField2` till rött:
+ När du har hämtat formulärfälten kan du ändra deras egenskaper efter behov. I det här exemplet ändrar vi teckenstorleken på`formField1` till 20 och teckensnittsfärgen på`formField2` till rött:
 
 ```csharp
 formField1.Font.Size = 20;

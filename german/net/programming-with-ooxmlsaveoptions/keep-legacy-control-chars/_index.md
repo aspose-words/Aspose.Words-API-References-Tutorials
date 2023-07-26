@@ -66,4 +66,4 @@ In diesem Tutorial haben wir die Funktionalität der Beibehaltung älterer Steue
 
 Aspose.Words für .NET bietet eine Reihe flexibler und leistungsstarker Sicherungsoptionen, um Ihre Anforderungen an die Dokumentenbearbeitung zu erfüllen. Mithilfe der entsprechenden Optionen können Sie den Backup-Prozess so anpassen, dass die spezifischen Eigenschaften Ihrer Dokumente erhalten bleiben.
 
-Integrieren Sie diese Funktionalität gerne in Ihre Aspose.Words für .NET-Projekte, um die Integrität und Beibehaltung älterer Steuerzeichen in Ihren Dokumenten sicherzustellen.
+Integrieren Sie diese Funktionalität gerne in Ihre Aspose.Words für .NET-Projekte, um die Integrität und Erhaltung älterer Steuerzeichen in Ihren Dokumenten sicherzustellen.

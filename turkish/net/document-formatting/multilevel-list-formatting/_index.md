@@ -101,7 +101,7 @@ Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde çok düzeyli liste 
 
 #### S: Word belgesindeki çok düzeyli liste nedir?
 
-C: Bir Word belgesindeki çok düzeyli bir liste, öğeleri çeşitli alt öğe düzeyleri halinde düzenlemenizi sağlayan hiyerarşik bir listedir. Bilginin yapılandırılmış bir şekilde sunulmasına yardımcı olur ve okuyucuların içeriği anlamasını kolaylaştırır.
+C: Bir Word belgesindeki çok düzeyli bir liste, öğeleri çeşitli alt öğe düzeyleri halinde düzenlemenizi sağlayan hiyerarşik bir listedir. Bilginin yapılandırılmış bir şekilde sunulmasına yardımcı olarak okuyucuların içeriği anlamasını kolaylaştırır.
 
 #### S: Çok düzeyli listenin görünümünü özelleştirebilir miyim?
 

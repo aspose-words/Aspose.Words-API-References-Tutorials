@@ -1,6 +1,6 @@
 ---
-title: Reemplazar con expresiones regulares
-linktitle: Reemplazar con expresiones regulares
+title: Reemplazar con expresión regular
+linktitle: Reemplazar con expresión regular
 second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a realizar el reemplazo de texto basado en expresiones regulares en un documento de Word con Aspose.Words para .NET.
 type: docs

@@ -72,7 +72,7 @@ Ora puoi facilmente lavorare con sezioni specifiche.
 
 ### Conclusione
 
-In questo tutorial, abbiamo esplorato la funzionalità Dividi documento per sezioni di Aspose.Words per .NET. Abbiamo imparato come suddividere un documento Word in sezioni separate, creando singoli documenti per ciascuna sezione. Caricando il documento, scorrendo ogni sezione e salvandoli come documenti separati, siamo stati in grado di lavorare efficacemente con sezioni specifiche.
+In questo tutorial, abbiamo esplorato la funzionalità Dividi documento per sezioni di Aspose.Words per .NET. Abbiamo imparato come suddividere un documento Word in sezioni separate, creando singoli documenti per ogni sezione. Caricando il documento, scorrendo ogni sezione e salvandoli come documenti separati, siamo stati in grado di lavorare efficacemente con sezioni specifiche.
 
 L'utilizzo della funzione Dividi documento per sezioni può essere vantaggioso quando è necessario manipolare o analizzare parti specifiche di un documento, come capitoli, sezioni o altre divisioni. Aspose.Words per .NET fornisce una soluzione affidabile e semplice per gestire la separazione delle sezioni, consentendo un'elaborazione efficiente dei documenti.
 

@@ -83,7 +83,7 @@ Bu, Aspose.Words for .NET ile "Insert a FieldIncludeText" özelliğini kullanma 
 
 ### SSS
 
-#### S: Aspose.Words for .NET'te metin ekleme alanı için kaynak dosyayı nasıl belirtebilirim?
+#### S: Aspose.Words for .NET'te metin ekleme alanı için kaynak dosyayı nasıl belirleyebilirim?
 
  C: Aspose.Words for .NET'teki metin ekleme alanı için kaynak dosyayı belirtmek üzere`FieldIncludeText.SourceFullName`kaynak dosyanın tam yolunu ayarlamak için özellik. Kaynak dosyanın erişilebilir olduğundan ve metin ekleme alanına eklemek istediğiniz içeriği içerdiğinden emin olun.
 

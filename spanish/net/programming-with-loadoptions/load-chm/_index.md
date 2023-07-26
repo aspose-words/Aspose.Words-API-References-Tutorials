@@ -52,7 +52,7 @@ En esta guía, explicamos cómo cargar un archivo CHM usando la biblioteca Aspos
 
 ### Preguntas frecuentes
 
-#### P: ¿Qué son los archivos CHM y por qué se usan?
+#### P: ¿Qué son los archivos CHM y por qué se utilizan?
 
 R: Los archivos CHM, abreviatura de archivos de ayuda HTML compilados, son un tipo de formato de archivo de ayuda comúnmente utilizado para proporcionar documentación y asistencia para aplicaciones de software. A menudo se utilizan para brindar ayuda y soporte contextual a los usuarios.
 

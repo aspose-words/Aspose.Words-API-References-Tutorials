@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-fields/change-field-update-culture-source/
 ---
 
-Bu öğreticide, Aspose.Words for .NET kullanarak Word belgelerindeki alan güncelleme kültürü kaynağını değiştirme sürecinde size rehberlik edeceğiz. Kültür kaynağını değiştirerek, alan güncelleme ve adres mektup birleştirme işlemleri sırasında tarih biçimlendirmesini kontrol edebilirsiniz. Bunu başarmak için size gerekli C# kaynak kodunu ve adım adım yönergeleri sağlayacağız.
+Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerindeki alan güncelleme kültürü kaynağını değiştirme sürecinde size rehberlik edeceğiz. Kültür kaynağını değiştirerek, alan güncelleme ve adres mektup birleştirme işlemleri sırasında tarih biçimlendirmesini kontrol edebilirsiniz. Bunu başarmak için size gerekli C# kaynak kodunu ve adım adım yönergeleri sağlayacağız.
 
 ## Önkoşullar
 Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:

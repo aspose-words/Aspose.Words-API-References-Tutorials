@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 Remplacez "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents.
 
-## Étape 3 : Conversion des champs en texte
+## Étape 3 : Conversion des champs en texte
 
 Maintenant que le document est chargé, nous pouvons procéder à la conversion des champs de type en texte brut. Dans cet exemple, nous ciblons uniquement les champs présents dans le dernier paragraphe du document. Voici le code qui effectue cette conversion :
 

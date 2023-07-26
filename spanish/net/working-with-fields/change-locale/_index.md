@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
 ## Conclusión
-¡Felicidades! Ha aprendido con éxito cómo cambiar la configuración regional en documentos de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede controlar el formato de fechas y números durante las operaciones de combinación de correspondencia. Personalice la configuración regional de acuerdo con sus requisitos para garantizar un formato preciso y uniforme en sus documentos.
+¡Felicidades! Ha aprendido con éxito cómo cambiar la configuración regional en documentos de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, ahora puede controlar el formato de fechas y números durante las operaciones de combinación de correspondencia. Personalice la configuración regional de acuerdo con sus requisitos para garantizar un formato preciso y uniforme en sus documentos.
 
 ### Preguntas frecuentes
 
@@ -104,7 +104,7 @@ R: ¡Absolutamente! Aspose.Words ofrece un amplio soporte para estructuras de ca
 
 R: Sí, Aspose.Words le permite actualizar campos de forma programada. Puede actualizar fácilmente los valores de los campos, actualizar los cálculos y realizar otras operaciones relacionadas con los campos mediante la API.
 
-#### P: ¿Es posible convertir campos en texto sin formato usando Aspose.Words?
+#### P: ¿Es posible convertir campos en texto sin formato con Aspose.Words?
 
 R: ¡Ciertamente! Aspose.Words proporciona métodos para convertir campos en texto sin formato. Esto puede ser útil cuando necesita extraer el contenido sin ningún formato o funcionalidad relacionada con el campo.
 

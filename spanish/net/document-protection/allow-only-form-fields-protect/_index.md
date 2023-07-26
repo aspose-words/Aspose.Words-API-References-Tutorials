@@ -107,7 +107,7 @@ R: Sí, puede insertar campos de formulario en un documento protegido mediante A
 
  R: Sí, puede eliminar la protección de documentos de un documento protegido mediante Aspose.Words para .NET. Para eliminar la protección, puede utilizar el`Unprotect` metodo de la`Document` class y proporcione la contraseña correcta. Esto eliminará la protección y permitirá la edición sin restricciones del documento.
 
-#### P: ¿Es posible proteger un documento con múltiples tipos de protección?
+#### P: ¿Es posible proteger un documento con varios tipos de protección?
 
  R: No, Aspose.Words para .NET permite que solo se aplique un tipo de protección a un documento a la vez. sin embargo, el`AllowOnlyFormFields` El tipo de protección puede restringir efectivamente la edición de campos de formulario mientras permite otros tipos de protección, como`AllowOnlyComments` o`AllowOnlyRevisions`para combinar con la protección de campo de formulario.
 

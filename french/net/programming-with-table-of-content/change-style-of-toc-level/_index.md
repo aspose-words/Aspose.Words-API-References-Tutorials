@@ -109,7 +109,7 @@ Ce code enregistre le document modifié sous "WorkingWithChangeStyleOfTocLevel.M
 
 #### Q : Puis-je appliquer d'autres modifications de mise en forme à la table des matières à l'aide d'Aspose.Words pour .NET ?
 
-R : Oui, en plus de modifier le style, vous pouvez appliquer diverses modifications de mise en forme à la table des matières à l'aide d'Aspose.Words pour .NET. Par exemple, vous pouvez modifier la taille de police, la couleur, l'alignement ou ajouter des propriétés de mise en forme supplémentaires pour améliorer l'apparence de la table des matières.
+R : Oui, en plus de modifier le style, vous pouvez appliquer divers changements de mise en forme à la table des matières à l'aide d'Aspose.Words pour .NET. Par exemple, vous pouvez modifier la taille de police, la couleur, l'alignement ou ajouter des propriétés de mise en forme supplémentaires pour améliorer l'apparence de la table des matières.
 
 #### Q : Comment puis-je spécifier un style personnalisé pour un niveau spécifique dans la table des matières à l'aide d'Aspose.Words pour .NET ?
 

@@ -22,6 +22,6 @@ Al usar Aspose.Words para .NET y seguir estos tutoriales, podrá dominar la mani
 | [Diseño en celda](./layout-in-cell/) | Aprenda a diseñar una forma dentro de una celda de tabla en un documento de Word usando Aspose.Words para .NET. |
 | [Añadir esquinas cortadas](./add-corners-snipped/) | Aprenda a agregar una forma con esquinas recortadas a un documento de Word usando Aspose.Words para .NET. |
 | [Obtener puntos de límites de forma reales](./get-actual-shape-bounds-points/) | Aprenda a recuperar los límites reales de una forma en puntos (unidad de medida) en un documento de Word usando Aspose.Words para .NET. |
-| [Anclaje vertical](./vertical-anchor/) | Aprenda a colocar una forma verticalmente dentro de un documento utilizando la función de anclaje vertical en Aspose.Words para .NET.|
+| [Anclaje Vertical](./vertical-anchor/) | Aprenda a colocar una forma verticalmente dentro de un documento utilizando la función de anclaje vertical en Aspose.Words para .NET.|
 | [Detectar forma de arte inteligente](./detect-smart-art-shape/) | Aprenda a detectar formas Smart Art en un documento de Word usando Aspose.Words para .NET, identificando representaciones gráficas. |
 | [Actualizar dibujo artístico inteligente](./update-smart-art-drawing/) | Aprenda a actualizar el dibujo de Smart Art en un documento de Word usando Aspose.Words para .NET. |

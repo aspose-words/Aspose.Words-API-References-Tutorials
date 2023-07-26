@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/working-with-list/restart-list-at-each-section/
 ---
 
-Dans ce didacticiel étape par étape, nous vous montrerons comment réinitialiser une liste numérotée pour chaque section d'un document Word à l'aide de Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
+Dans ce didacticiel étape par étape, nous allons vous montrer comment réinitialiser une liste numérotée pour chaque section d'un document Word à l'aide de Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
  Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas déjà fait, téléchargez et installez la bibliothèque à partir de[Aspose.Releases] https://releases.aspose.com/words/net/.
 

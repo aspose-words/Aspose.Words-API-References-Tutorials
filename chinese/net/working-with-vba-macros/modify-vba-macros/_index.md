@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
 
 #### 问：Word 文档中的 VBA 宏是什么？
 
-答：Word 文档中的 VBA 宏是一段可以运行以执行文档中特定操作的代码。 VBA 宏允许您自动执行任务、添加自定义功能以及与文档内容交互。
+答：Word 文档中的 VBA 宏是一段代码，可以运行该代码来执行文档中的特定操作。 VBA 宏允许您自动执行任务、添加自定义功能以及与文档内容交互。
 
 #### 问：在Word文档中编辑VBA宏的先决条件是什么？
 

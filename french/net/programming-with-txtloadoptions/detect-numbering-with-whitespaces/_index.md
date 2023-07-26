@@ -103,7 +103,7 @@ Vous pouvez maintenant exécuter le code source pour charger le document texte c
 ## Conclusion
 Dans ce didacticiel, nous avons exploré la fonctionnalité de détection de numérotation des espaces dans Aspose.Words pour .NET. Nous avons appris à créer des listes à partir d'un document texte contenant des numéros de liste suivis d'espaces blancs.
 
-Cette fonctionnalité est extrêmement utile pour traiter des documents contenant des numéros de liste formatés de différentes manières. En utilisant les options de chargement appropriées, Aspose.Words est capable de détecter ces numéros de liste, même s'ils sont suivis d'espaces blancs, et de les convertir en listes structurées dans le document final.
+Cette fonction est extrêmement utile pour traiter des documents contenant des numéros de liste formatés de différentes manières. En utilisant les options de chargement appropriées, Aspose.Words est capable de détecter ces numéros de liste, même s'ils sont suivis d'espaces blancs, et de les convertir en listes structurées dans le document final.
 
 L'utilisation de cette fonctionnalité peut vous faire gagner du temps et améliorer l'efficacité de votre flux de travail. Vous pouvez facilement extraire des informations de documents texte et les convertir en documents bien structurés avec des listes appropriées.
 

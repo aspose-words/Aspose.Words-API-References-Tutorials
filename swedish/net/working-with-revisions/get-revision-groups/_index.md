@@ -66,7 +66,7 @@ Document doc = new Document("path/to/the/document.docx");
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
 {
-     // Bearbeta varje granskningsgrupp här
+     // Behandla varje granskningsgrupp här
 }
 ```
 

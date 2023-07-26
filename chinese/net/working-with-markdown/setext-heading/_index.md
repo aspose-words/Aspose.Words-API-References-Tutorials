@@ -39,7 +39,7 @@ builder.Font.Italic = false;
 
 ## 第 4 步：自定义 Setext 标题级别
 
-我们可以通过基于现有标题样式添加新的段落样式来自定义 Setext 标题级别。在此示例中，我们基于“Heading 1”样式创建“SetextHeading1”样式，以表示 Setext 格式中的 1 级标题。
+我们可以通过基于现有标题样式添加新的段落样式来自定义 Setext 标题级别。在此示例中，我们将基于“Heading 1”样式创建“SetextHeading1”样式，以表示 Setext 格式中的 1 级标题。
 
 ```csharp
 Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");

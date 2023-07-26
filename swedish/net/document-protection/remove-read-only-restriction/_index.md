@@ -21,7 +21,7 @@ doc.WriteProtection.SetPassword("MyPassword");
 
 Ställ in ett lösenord för dokumentet med egenskapen SetPassword() för WriteProtection-objektet:
 
-Var noga med att ersätta "MyPassword" med det faktiska lösenordet du använde för att skydda dokumentet.
+Se till att ersätta "MyPassword" med det faktiska lösenordet du använde för att skydda dokumentet.
 
 ## Steg 2: Ta bort skrivskyddad begränsning
 
@@ -54,7 +54,7 @@ Document doc = new Document();
 // Ange ett lösenord som är upp till 15 tecken långt.
 doc.WriteProtection.SetPassword("MyPassword");
 
-//Ta bort det skrivskyddade alternativet.
+//Ta bort alternativet skrivskyddat.
 doc.WriteProtection.ReadOnlyRecommended = false;
 
 // Använd skrivskydd utan något skydd.

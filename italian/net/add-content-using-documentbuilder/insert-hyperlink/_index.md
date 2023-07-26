@@ -76,7 +76,7 @@ R: Sì, Aspose.Words per .NET consente di inserire collegamenti ipertestuali che
 
 #### D: Posso formattare l'aspetto dei collegamenti ipertestuali, ad esempio cambiando il colore o lo stile?
 
-R: Assolutamente! Aspose.Words per .NET fornisce ampie opzioni di formattazione per i collegamenti ipertestuali. È possibile modificare il colore, lo stile della sottolineatura, il carattere e altre proprietà per personalizzare l'aspetto dei collegamenti ipertestuali in modo che corrispondano allo stile del documento.
+R: Assolutamente! Aspose.Words per .NET offre ampie opzioni di formattazione per i collegamenti ipertestuali. È possibile modificare il colore, lo stile della sottolineatura, il carattere e altre proprietà per personalizzare l'aspetto dei collegamenti ipertestuali in modo che corrispondano allo stile del documento.
 
 #### D: È possibile creare collegamenti ipertestuali a indirizzi e-mail?
 

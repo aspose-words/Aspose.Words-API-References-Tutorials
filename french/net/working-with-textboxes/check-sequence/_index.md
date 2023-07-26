@@ -21,7 +21,7 @@ TextBox textBox = shape.TextBox;
 
 ## Étape 2 : Vérification de la séquence TextBox
 
- Nous allons maintenant vérifier la séquence du TextBox en utilisant`if` conditions. Le code source fourni contient trois conditions distinctes pour vérifier la position de TextBox par rapport aux formes précédentes et suivantes.
+ Nous allons maintenant vérifier la séquence de la TextBox en utilisant`if` conditions. Le code source fourni contient trois conditions distinctes pour vérifier la position de TextBox par rapport aux formes précédentes et suivantes.
 
 ## Étape 3 : Vérification de la tête de séquence :
 

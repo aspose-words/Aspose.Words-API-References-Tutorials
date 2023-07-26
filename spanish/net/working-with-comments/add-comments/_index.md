@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
 ## Conclusión
-¡Felicidades! Ha aprendido con éxito cómo agregar comentarios a un documento de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, ahora puede insertar comentarios y personalizar su contenido en sus documentos.
+¡Felicidades! Ha aprendido con éxito cómo agregar comentarios a un documento de Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, ahora puede insertar comentarios y personalizar su contenido en sus documentos.
 
 Los comentarios son útiles para colaborar, proporcionar información adicional o tomar notas dentro de un documento. Experimente con diferentes nombres de autores, iniciales y contenidos de comentarios para cumplir con sus requisitos específicos.
 

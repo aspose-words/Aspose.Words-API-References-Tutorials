@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/build-table-with-style/
 ---
 
-Bu öğreticide, Aspose.Words for .NET kullanarak stil sahibi bir tablo oluşturma sürecini adım adım anlatacağız. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak Word belgelerinizde özel stile sahip bir tabloyu nasıl oluşturacağınızı öğreneceksiniz.
+Bu eğitimde, Aspose.Words for .NET kullanarak stil sahibi bir tablo oluşturma sürecini adım adım anlatacağız. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak Word belgelerinizde özel stile sahip bir tabloyu nasıl oluşturacağınızı öğreneceksiniz.
 
 ## 1. Adım: Belge dizinini tanımlayın
 Öncelikle, belgeler dizininize giden yolu ayarlamanız gerekir. Bu, düzenlenmiş Word belgenizi kaydetmek istediğiniz konumdur. "BELGELER DİZİNİNİZİ" uygun yolla değiştirin.

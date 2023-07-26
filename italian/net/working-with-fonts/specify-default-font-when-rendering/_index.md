@@ -70,7 +70,7 @@ R: Se il carattere predefinito specificato non è disponibile durante la convers
 
 #### D: Posso specificare un font predefinito per altri formati di output, come DOCX o HTML?
 
-R: Sì, puoi specificare un carattere predefinito per altri formati di output come DOCX o HTML utilizzando le opzioni di conversione appropriate e impostando la proprietà corrispondente per ciascun formato.
+R: Sì, puoi specificare un carattere predefinito per altri formati di output come DOCX o HTML utilizzando le opzioni di conversione appropriate e impostando la proprietà corrispondente per ogni formato.
 
 #### D: Come posso controllare il carattere predefinito specificato in Aspose.Words?
 

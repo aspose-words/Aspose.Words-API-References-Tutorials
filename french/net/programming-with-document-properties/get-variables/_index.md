@@ -16,7 +16,7 @@ Pour commencer, créez un nouveau projet C# dans votre IDE préféré. Assurez-v
 
 ## Étape 2 : Chargement du document
 
-Dans cette étape, nous allons charger le document Word dont nous souhaitons récupérer les variables. Utilisez le code suivant pour charger le document :
+Dans cette étape, nous allons charger le document Word dont nous voulons récupérer les variables. Utilisez le code suivant pour charger le document :
 
 ```csharp
 // Chemin d'accès au répertoire des documents.

@@ -80,4 +80,4 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ```
 
 ## Conclusion
-Dans ce didacticiel, nous avons appris à insérer un tableau dans un document Word à partir de HTML en utilisant Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez insérer des tableaux HTML dans vos documents Word par programmation. Cette fonctionnalité vous permet de convertir et d'importer des données tabulaires à partir de sources HTML dans vos documents Word.
+Dans ce didacticiel, nous avons appris à insérer un tableau dans un document Word à partir de HTML à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez insérer des tableaux HTML dans vos documents Word par programmation. Cette fonctionnalité vous permet de convertir et d'importer des données tabulaires à partir de sources HTML dans vos documents Word.

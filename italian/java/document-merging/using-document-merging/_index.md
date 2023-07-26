@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/java/document-merging/using-document-merging/
 ---
-Aspose.Words per Java fornisce una soluzione affidabile per gli sviluppatori che hanno bisogno di unire più documenti di Word a livello di programmazione. L'unione di documenti è un requisito comune in varie applicazioni, come la generazione di report, l'unione di posta e l'assemblaggio di documenti. In questa guida dettagliata, esploreremo come realizzare l'unione di documenti con Aspose.Words per Java.
+Aspose.Words per Java fornisce una soluzione affidabile per gli sviluppatori che hanno bisogno di unire più documenti di Word a livello di codice. L'unione di documenti è un requisito comune in varie applicazioni, come la generazione di report, l'unione di posta e l'assemblaggio di documenti. In questa guida dettagliata, esploreremo come realizzare l'unione di documenti con Aspose.Words per Java.
 
 ## 1. Introduzione alla fusione dei documenti
 

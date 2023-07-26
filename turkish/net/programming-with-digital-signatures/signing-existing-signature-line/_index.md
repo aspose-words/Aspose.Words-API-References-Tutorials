@@ -111,7 +111,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesindeki mevcut bir imza satır
 
 #### S: Dijital imzanın görünümünü mevcut bir imza satırında özelleştirebilir miyim?
 
-C: Evet, imzayı temsil eden bir görüntü dosyası sağlayarak dijital imzanın görünümünü mevcut bir imza satırında özelleştirebilirsiniz. Görüntü bir logo, el yazısı imza veya imzanın başka herhangi bir grafik gösterimi olabilir. ayarlayabilirsiniz`SignatureLineImage` mülkiyeti`SignOptions` görüntü dosyasının baytlarına sınıf.
+C: Evet, imzayı temsil eden bir görüntü dosyası sağlayarak dijital imzanın mevcut bir imza satırındaki görünümünü özelleştirebilirsiniz. Görüntü bir logo, el yazısı imza veya imzanın başka herhangi bir grafik gösterimi olabilir. ayarlayabilirsiniz`SignatureLineImage` mülkiyeti`SignOptions` görüntü dosyasının baytlarına sınıf.
 
 #### S: Bir Word belgesinde birden çok mevcut imza satırını imzalayabilir miyim?
  C: Evet, bir Word belgesinde birden çok mevcut imza satırını imzalayabilirsiniz. Her bir imza satırı için ayrı ayrı adımları izlemeniz ve uygun ayarı yapmanız gerekir.`SignatureLineId` Ve`SignatureLineImage` içindeki değerler`SignOptions` her imza satırı için nesne.

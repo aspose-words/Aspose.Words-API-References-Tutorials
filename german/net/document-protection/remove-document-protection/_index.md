@@ -81,7 +81,7 @@ In diesem Tutorial haben wir untersucht, wie Sie den Dokumentschutz in einem Wor
 
 #### F: Was ist Dokumentenschutz in Aspose.Words für .NET?
 
-A: Der Dokumentschutz in Aspose.Words für .NET bezieht sich auf die Funktion, mit der Sie Sicherheitsmaßnahmen auf ein Word-Dokument anwenden können, um Bearbeitung, Formatierung und Inhaltsänderungen einzuschränken. Es trägt dazu bei, die Integrität und Vertraulichkeit des Dokuments sicherzustellen.
+A: Der Dokumentenschutz in Aspose.Words für .NET bezieht sich auf die Funktion, mit der Sie Sicherheitsmaßnahmen auf ein Word-Dokument anwenden können, um Bearbeitung, Formatierung und Inhaltsänderungen einzuschränken. Es trägt dazu bei, die Integrität und Vertraulichkeit des Dokuments sicherzustellen.
 
 #### F: Wie kann ich den Dokumentenschutz mit Aspose.Words für .NET entfernen?
 

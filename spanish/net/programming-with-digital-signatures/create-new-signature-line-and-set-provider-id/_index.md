@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: Configuración de las opciones de la línea de firma
 
-Cree una instancia de la clase SignatureLineOptions y configure las opciones deseadas:
+Cree una instancia de la clase SignatureLineOptions y establezca las opciones deseadas:
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions
@@ -141,7 +141,7 @@ R: Una ID de proveedor en una línea de firma es un identificador único que rep
 
 #### P: ¿Cómo puedo crear una nueva línea de firma en un documento de Word usando Aspose.Words para .NET?
 
-R: Para crear una nueva línea de firma en un documento de Word utilizando Aspose.Words para .NET, puede seguir estos pasos:
+R: Para crear una nueva línea de firma en un documento de Word usando Aspose.Words para .NET, puede seguir estos pasos:
 1.  Crear una instancia de la`Document` clase y un`DocumentBuilder` objeto.
 2.  Crear una instancia de la`SignatureLineOptions` clase y establezca las opciones de línea de firma deseadas.
 3.  Utilizar el`InsertSignatureLine` metodo de la`DocumentBuilder` objeto para insertar la línea de firma en el documento.

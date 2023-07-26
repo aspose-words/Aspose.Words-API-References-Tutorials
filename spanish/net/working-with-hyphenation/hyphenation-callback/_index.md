@@ -101,7 +101,7 @@ R: El beneficio de usar un recordatorio de silabeo en Aspose.Words es la capacid
 R: El uso de un refuerzo de sílabas puede ser útil en varios escenarios, como:
 - Silabeo de palabras en idiomas específicos que tienen reglas particulares de silabeo.
 - La aplicación de reglas de silabeo personalizadas para siglas o palabras técnicas.
-- Adaptación del silabeo según preferencias estilísticas o normas tipográficas.
+- Adaptación del silabeo según preferencias estilísticas o estándares tipográficos.
 
 #### P: ¿Cómo puedo probar el silabeo personalizado con un recordatorio de silabeo en Aspose.Words?
 

@@ -360,7 +360,7 @@ Aspose.Words for Java es una poderosa herramienta que permite a los desarrollado
 
 ### ¿Puedo usar Aspose.Words for Java en un proyecto comercial?
 
-   Sí, puede usar Aspose.Words for Java en proyectos comerciales obteniendo la licencia correspondiente.
+   Sí, puede usar Aspose.Words for Java en proyectos comerciales obteniendo la licencia adecuada.
 
 ### ¿Admite Aspose.Words para Java el cifrado de documentos?
 

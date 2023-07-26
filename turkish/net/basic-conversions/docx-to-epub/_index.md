@@ -53,7 +53,7 @@ Bir DOCX dosyasını EPUB'a dönüştürmek için bu işlevi sağlayan farklı y
 
 #### Dönüştürme işleminin sınırlamaları nelerdir?
 
-Dönüştürme işleminin sınırlamaları, kullandığınız araca veya kitaplığa bağlıdır. Bazı araçların girdi belgesinin boyutu veya karmaşıklığı ile ilgili kısıtlamaları olabilir. Dönüştürme görevinizin taleplerini karşılayabilecek bir araç seçmek önemlidir.
+Dönüştürme işleminin sınırlamaları, kullandığınız araca veya kitaplığa bağlıdır. Bazı araçların girdi belgesinin boyutu veya karmaşıklığıyla ilgili kısıtlamaları olabilir. Dönüştürme görevinizin taleplerini karşılayabilecek bir araç seçmek önemlidir.
 
 #### Orijinal belgenin biçimlendirmesini koruyabilir miyim?
 
@@ -61,4 +61,4 @@ Evet, doğru araçla dönüştürme işlemi sırasında orijinal belgenin biçim
 
 #### Aspose, DOCX'ten EPUB'a dönüştürme için güvenilir bir araç mı?
 
-Evet, Aspose.Words for .NET, DOCX'ten EPUB'a dönüştürme için güvenilir bir araçtır. Kalitesi ve güvenilirliği nedeniyle dünya çapında geliştiriciler ve profesyoneller tarafından yaygın olarak kullanılmaktadır. Araç, kapsamlı dokümantasyon, düzenli güncellemeler ve özel teknik destek sunarak, onu doküman dönüştürme görevleri için önerilen bir seçenek haline getiriyor.
+Evet, Aspose.Words for .NET, DOCX'ten EPUB'a dönüştürme için güvenilir bir araçtır. Kalitesi ve güvenilirliği nedeniyle dünya çapında geliştiriciler ve profesyoneller tarafından yaygın olarak kullanılmaktadır. Kapsamlı dokümantasyon, düzenli güncellemeler ve özel teknik destek sunan araç, onu doküman dönüştürme görevleri için önerilen bir seçenek haline getiriyor.

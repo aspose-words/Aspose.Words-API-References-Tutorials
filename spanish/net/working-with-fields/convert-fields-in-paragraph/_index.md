@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 
 #### P: ¿Qué es un campo de conversión en Aspose.Words?
 
-R: Un campo de conversión en Aspose.Words es un tipo de campo que convierte un valor o una expresión en otro formato o tipo de datos. Por ejemplo, puede usar un campo de conversión para convertir una fecha a un formato específico, un número a texto o realizar otros tipos de conversiones.
+R: Un campo de conversión en Aspose.Words es un tipo de campo que convierte un valor o una expresión a otro formato o tipo de datos. Por ejemplo, puede usar un campo de conversión para convertir una fecha a un formato específico, un número a texto o realizar otros tipos de conversiones.
 
 #### P: ¿Cómo insertar un campo de conversión en un párrafo con Aspose.Words?
 

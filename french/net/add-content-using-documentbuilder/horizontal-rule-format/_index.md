@@ -40,7 +40,7 @@ horizontalRuleFormat.NoShade = true;
 ```
 
 ## Étape 4 : Enregistrer le document
-Après avoir formaté la règle horizontale, enregistrez le document dans un fichier à l'aide de la méthode Save de l'objet Document :
+Après avoir formaté la règle horizontale, enregistrez le document dans un fichier à l'aide de la méthode Save de l'objet Document :
 
 ```csharp
 builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");

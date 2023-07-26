@@ -76,4 +76,4 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come adattare automaticamente una tabella alla larghezza della pagina in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi manipolare le tabelle nei documenti di Word a livello di programmazione. Questa funzionalità consente di adattare dinamicamente la larghezza della tabella in base alla pagina, offrendo così un documento professionale e visivamente accattivante.
+In questo tutorial, abbiamo imparato come adattare automaticamente una tabella alla larghezza della pagina in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi manipolare le tabelle nei documenti di Word a livello di codice. Questa funzionalità consente di adattare dinamicamente la larghezza della tabella in base alla pagina, offrendo così un documento professionale e visivamente accattivante.

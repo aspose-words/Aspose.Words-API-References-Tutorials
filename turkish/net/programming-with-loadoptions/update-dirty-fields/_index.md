@@ -58,7 +58,7 @@ Bu kılavuzda, .NET için Aspose.Words kitaplığını kullanarak kirli alanlar�
 
 #### S: Bir Word belgesindeki kirli alanlar nelerdir?
 
-Y: Bir Word belgesindeki kirli alanlar, değişen ancak en son değerleri yansıtacak şekilde güncelleştirilmemiş alanları ifade eder. Bu alanları güncelleyerek belgenin her zaman doğru ve güncel bilgiler göstermesini sağlarsınız.
+C: Bir Word belgesindeki kirli alanlar, değiştirilmiş ancak en son değerleri yansıtacak şekilde güncellenmemiş alanları ifade eder. Bu alanları güncelleyerek belgenin her zaman doğru ve güncel bilgiler göstermesini sağlarsınız.
 
 #### S: Aspose.Words for .NET'te yükleme seçeneklerini özelleştirebilir miyim?
 

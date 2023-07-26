@@ -10,7 +10,7 @@ is_root: true
 
 ## Aspose.Words Document Processing Tutorial per .NET
 {{% alert color="primary" %}}
-Tutorial Aspose.Words per .NET e frammenti di codice per creare, modificare, convertire, stampare e molte altre funzionalità per i documenti Word nella tua applicazione. 
+Questi tutorial offrono istruzioni chiare e dettagliate su come lavorare con i documenti Microsoft Word a livello di programmazione, coprendo un'ampia gamma di funzionalità. Da attività semplici come la creazione e la modifica di documenti a funzionalità più avanzate come la stampa unione, la conversione di documenti e la crittografia dei documenti, gli sviluppatori possono trovare esempi pratici e frammenti di codice da implementare nei loro progetti. Seguendo questi tutorial, gli sviluppatori .NET possono potenziare le loro applicazioni con potenti capacità di elaborazione dei documenti, garantendo una gestione efficiente e senza interruzioni dei documenti Word nelle loro soluzioni software. 
 {{% /alert %}}
 
 Questi sono i link ad alcune risorse utili:
@@ -38,7 +38,7 @@ Questi sono i link ad alcune risorse utili:
 
 ## Aspose.Words Document Processing Tutorial per Java
 {{% alert color="primary" %}}
-Gestisci l'elaborazione dei documenti con i tutorial Java di Aspose.Words. Impara l'elaborazione di testi, l'elaborazione di tabelle, l'unione e altro ancora. Automatizza le attività relative ai documenti in modo efficiente. 
+Questa raccolta completa di esercitazioni fornisce indicazioni dettagliate su come lavorare in modo efficace con i documenti di Microsoft Word a livello di programmazione. Dalla creazione e manipolazione dei documenti alle funzionalità avanzate come la stampa unione, la formattazione delle tabelle e la crittografia dei documenti, questi tutorial coprono un'ampia gamma di funzionalità. Seguendo questi tutorial, gli sviluppatori possono integrare perfettamente Aspose.Words nei loro progetti Java, consentendo un'elaborazione efficiente dei documenti e migliorando le loro applicazioni con funzionalità di gestione dei documenti di livello professionale. 
 {{% /alert %}}
 
 Questi sono i link ad alcune risorse utili:
@@ -52,3 +52,15 @@ Questi sono i link ad alcune risorse utili:
 - [Sicurezza dei documenti](./java/document-security/)
 - [Divisione del documento](./java/document-splitting/)
 - [Revisione del documento](./java/document-revision/)
+
+## Aspose.Words Tutorial sulla gestione dei documenti per Python
+{{% alert color="primary" %}}
+Questi tutorial offrono una guida dettagliata su come lavorare con i documenti di Microsoft Word a livello di codice, inclusa la creazione e la manipolazione dei documenti e varie funzionalità di sicurezza come la crittografia e la protezione tramite password. Con l'aiuto di questa risorsa, gli sviluppatori possono implementare in modo efficiente le funzionalità di elaborazione dei documenti nelle loro applicazioni Python utilizzando Aspose.Words, migliorando la produttività e garantendo la sicurezza dei documenti. 
+{{% /alert %}}
+
+Questi sono i link ad alcune risorse utili:
+- [Creazione di documenti](./python-net/document-creation/)  
+- [Automazione delle parole](./python-net/word-automation/)
+- [Intelligenza documentale](./python-net/document-intelligence/)
+- [Conversione documenti](./python-net/document-conversion/)
+- [Protezione dei documenti](./python-net/document-protection/)

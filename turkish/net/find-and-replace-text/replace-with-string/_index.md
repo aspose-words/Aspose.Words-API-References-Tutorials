@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/replace-with-string/
 ---
-Bu makalede, Aspose.Words for .NET kitaplığındaki Dize İle Değiştir işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir Word belgesindeki belirli bir karakter dizisine dayalı olarak metin değiştirme gerçekleştirmenizi sağlar.
+Bu makalede, Aspose.Words for .NET kitaplığında replace with String işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir Word belgesindeki belirli bir karakter dizisine dayalı olarak metin değiştirme gerçekleştirmenizi sağlar.
 
 ## Önkoşullar
 

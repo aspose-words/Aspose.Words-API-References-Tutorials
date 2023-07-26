@@ -37,7 +37,7 @@ ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
 
  Dans cette étape, nous configurons les options d'enregistrement d'image en créant un nouveau`ImageSaveOptions` objet. On précise le format de sauvegarde souhaité, ici "Png" pour le format PNG. Nous utilisons`PageSet` de spécifier la plage de pages à enregistrer, ici de la première page à la dernière page du document (`doc.PageCount - 1`). Nous fixons également`PageSavingCallback` à une instance de`HandlePageSavingCallback`, qui est une classe personnalisée pour gérer le rappel d'enregistrement de page.
 
-## Étape 4 : Implémentation du rappel de la page de sauvegarde
+## Étape 4 : Implémenter le rappel de la page de sauvegarde
 
 ```csharp
 public class HandlePageSavingCallback : IPageSavingCallback

@@ -76,4 +76,4 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx")
 
 #### В: Требуется ли для Aspose.Words for .NET установленный в системе Microsoft Word?
 
-О: Нет, Aspose.Words for .NET — это независимая библиотека и не требует установки Microsoft Word в вашей системе. Он предоставляет все функции, необходимые для работы с документами Word в коде C#.
+О: Нет, Aspose.Words for .NET — это независимая библиотека, которая не требует установки Microsoft Word в вашей системе. Он предоставляет все функции, необходимые для работы с документами Word в коде C#.

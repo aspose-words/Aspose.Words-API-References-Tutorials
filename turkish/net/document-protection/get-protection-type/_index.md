@@ -69,7 +69,7 @@ C: Aspose.Words for .NET kullanarak bir belgenin koruma türünü almak için ş
 
  C: Hayır,`ProtectionType`Aspose.Words for .NET'teki özellik salt okunur bir özelliktir. Bir belgenin geçerli koruma türünü almanıza izin verir, ancak koruma türünü değiştirmek için doğrudan araçlar sağlamaz. Koruma türünü değiştirmek için, diğer yöntemleri ve özellikleri kullanmanız gerekir.`Document` gibi sınıf`Protect` veya`Unprotect`.
 
-#### S: Bir belgeyi aynı anda birden çok koruma türüyle korumak mümkün müdür?
+#### S: Bir belgeyi aynı anda birden çok koruma türüyle korumak mümkün mü?
 
 C: Hayır, Aspose.Words for .NET bir defada bir belgeye yalnızca bir koruma türünün uygulanmasına izin verir. Ancak, korumayı etkinleştirerek, bir türü ayarlayarak, korumayı devre dışı bırakarak ve ardından başka bir türle yeniden etkinleştirerek farklı koruma türlerini birleştirebilirsiniz.
 

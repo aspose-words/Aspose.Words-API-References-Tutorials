@@ -43,7 +43,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), load
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### مثال على كود المصدر لنوع التحكم المفضل مع Aspose.Words for .NET
+### مثال على شفرة المصدر لنوع التحكم المفضل مع Aspose.Words for .NET
 
 ```csharp
 	

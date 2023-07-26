@@ -74,7 +74,7 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 ### Comment convertir un fichier DOCX en octets ?
 
-Pour convertir un fichier DOCX en octets, vous pouvez utiliser différents outils logiciels ou bibliothèques qui fournissent cette fonctionnalité. Un outil fiable comme Aspose.Words pour .NET peut facilement convertir des fichiers DOCX en octets par programme. Vous pouvez utiliser l'API de la bibliothèque pour charger le fichier DOCX et l'enregistrer au format d'octet souhaité.
+Pour convertir un fichier DOCX en octets, vous pouvez utiliser différents outils logiciels ou bibliothèques qui fournissent cette fonctionnalité. Un outil fiable comme Aspose.Words pour .NET peut facilement convertir des fichiers DOCX en octets par programmation. Vous pouvez utiliser l'API de la bibliothèque pour charger le fichier DOCX et l'enregistrer au format d'octet souhaité.
 
 #### Quelles sont les limites du processus de conversion ?
 

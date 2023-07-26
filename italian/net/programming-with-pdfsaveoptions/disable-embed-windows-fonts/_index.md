@@ -78,7 +78,7 @@ R: Per disabilitare l'incorporamento dei caratteri Windows in un documento PDF u
 
  Usa il`Save` metodo del`Document` oggetto per convertire il documento in PDF specificando le opzioni di conversione configurate in precedenza.
 
-#### D: Quali sono i vantaggi della disabilitazione dell'incorporamento dei caratteri di Windows in un documento PDF?
+#### D: Quali sono i vantaggi della disabilitazione dell'incorporamento dei font di Windows in un documento PDF?
 R: I vantaggi della disabilitazione dell'incorporamento dei caratteri di Windows in un documento PDF sono:
 
 Dimensioni file PDF ridotte: disabilitando l'incorporamento dei caratteri Windows, i dati dei caratteri Windows incorporati vengono rimossi, riducendo le dimensioni del file PDF generato.

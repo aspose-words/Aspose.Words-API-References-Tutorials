@@ -100,7 +100,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in
 
 #### Come posso convertire un file DOCX in formato RTF?
 
-Per convertire un file DOCX in formato RTF, è possibile utilizzare vari strumenti software o librerie che forniscono questa funzionalità. Uno di questi strumenti affidabili è Aspose.Words per .NET. Offre un modo semplice ed efficiente per convertire i file DOCX in formato RTF a livello di programmazione. È possibile utilizzare l'API della libreria per caricare il file DOCX e salvarlo nel formato RTF desiderato.
+Per convertire un file DOCX in formato RTF, è possibile utilizzare vari strumenti software o librerie che forniscono questa funzionalità. Uno di questi strumenti affidabili è Aspose.Words per .NET. Offre un modo semplice ed efficiente per convertire i file DOCX in formato RTF a livello di codice. È possibile utilizzare l'API della libreria per caricare il file DOCX e salvarlo nel formato RTF desiderato.
 
 #### Ci sono limitazioni al processo di conversione?
 

@@ -63,7 +63,7 @@ Détecter le format de fichier.
 Vérifiez si le document est crypté.
 
 ### Q : Comment puis-je définir le répertoire de documents ?
- Pour définir le répertoire des documents, vous devez remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire de documents dans le code suivant :
+ Pour définir le répertoire des documents, vous devez remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire de documents dans le code suivant :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

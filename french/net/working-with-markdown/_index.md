@@ -30,5 +30,5 @@ Le traitement de mots avec Markdown fournit une ressource complète pour apprend
 | [Liste ordonnée](./ordered-list/) | Apprenez à créer une liste ordonnée avec le guide étape par étape Aspose.Words pour .NET. |
 | [Tableauau](./table/) | Apprenez à créer un tableau avec le guide pas à pas Aspose.Words pour .NET. |
 | [Lire le document Markdown](./read-markdown-document/) | Apprenez à lire un document Markdown avec le guide étape par étape Aspose.Words pour .NET. |
-| [Accents](./emphases/) | Apprenez à utiliser les accents (gras et italique) avec Aspose.Words pour le guide étape par étape .NET. |
+| [Accents](./emphases/) | Apprenez à utiliser les emphases (gras et italique) avec Aspose.Words pour le guide étape par étape .NET. |
 | [Utiliser la source d'avertissement](./use-warning-source/) | Apprenez à utiliser la source d'avertissement avec le guide étape par étape Aspose.Words pour .NET. |

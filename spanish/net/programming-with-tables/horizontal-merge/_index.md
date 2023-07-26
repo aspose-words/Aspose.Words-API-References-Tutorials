@@ -1,6 +1,6 @@
 ---
-title: Fusión Horizontal
-linktitle: Fusión Horizontal
+title: Fusión horizontal
+linktitle: Fusión horizontal
 second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a fusionar celdas horizontalmente en una tabla de Word con Aspose.Words para .NET.
 type: docs

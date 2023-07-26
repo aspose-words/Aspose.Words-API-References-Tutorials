@@ -110,7 +110,7 @@ C: Bir Word belgesinde bulunan adres-mektup birleştirme alanlarının listesini
 
 C: Evet, adres mektup birleştirme alanlarını Excel elektronik tablosu gibi harici bir veri kaynağından alabilirsiniz. Bunun için Aspose.Words'ün veri bağlama özelliklerini kullanarak veri kaynağı ile bağlantı kurabilir ve mevcut alanların isimlerini alabilirsiniz.
 
-#### S: Adres mektup birleştirme alanlarını belirli kriterlere göre filtrelemek mümkün mü?
+#### S: Adres mektup birleştirme alanlarını belirli kriterlere göre filtrelemek mümkün müdür?
 
 C: Evet, adres-mektup birleştirme alanlarını belirli kriterlere göre filtrelemek mümkündür. Adres mektup birleştirme alanlarını filtrelemek ve yalnızca belirli ölçütlerinizi karşılayanları almak için normal ifadeleri veya belirli koşulları kullanabilirsiniz.
 

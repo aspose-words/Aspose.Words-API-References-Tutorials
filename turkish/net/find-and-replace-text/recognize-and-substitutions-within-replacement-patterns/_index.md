@@ -108,9 +108,9 @@ FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 doc.Range.Replace(regex, @"$2 takes money from $1", options);
 ```
 
-#### S: Aspose.Words for .NET'teki "Değiştirme Kalıpları İçinde Tanınma ve Değiştirmeler" özelliği için örnek kaynak kodu neyi gösteriyor?
+#### S: Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanınma ve Değiştirmeler" özelliği için örnek kaynak kodu neyi gösteriyor?
 
-C: Örnek kaynak kodu, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanınma ve Değiştirmeler" özelliğinin kullanımını gösterir. Bir belgenin nasıl oluşturulacağını, metin ekleneceğini, normal ifadeler kullanılarak metin arama ve değiştirme işleminin nasıl gerçekleştirileceğini ve eşleşen metni dinamik olarak dönüştürmek için değiştirme modelinde yakalanan grupların nasıl kullanılacağını gösterir.
+Y: Örnek kaynak kodu, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanınma ve Değiştirmeler" özelliğinin kullanımını gösterir. Bir belgenin nasıl oluşturulacağını, metin ekleneceğini, normal ifadeler kullanılarak metin arama ve değiştirme işleminin nasıl gerçekleştirileceğini ve eşleşen metni dinamik olarak dönüştürmek için değiştirme modelinde yakalanan grupların nasıl kullanılacağını gösterir.
 
 #### S: Aspose.Words for .NET'te düzenli ifadelerin kullanımına ilişkin daha fazla bilgiyi ve örneği nerede bulabilirim?
 

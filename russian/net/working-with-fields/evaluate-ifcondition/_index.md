@@ -50,7 +50,7 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 // Оцените условие ЕСЛИ.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
-// Отобразите результат оценки.
+// Отобразить результат оценки.
 Console.WriteLine(actualResult);
 ```
 

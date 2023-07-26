@@ -66,7 +66,7 @@ Con este código podrá ajustar automáticamente el espacio entre el texto asiá
 
 ## Conclusión
 
-En este tutorial, exploramos el proceso de usar la función de espacio para ajustar el espaciado entre texto asiático y latino en un documento de Word con Aspose.Words para .NET. Si sigue los pasos descritos, puede garantizar el espaciado y la alineación adecuados, lo que resulta particularmente útil cuando se trata de contenido mixto asiático y latino.
+En este tutorial, exploramos el proceso de usar la función Espacio para ajustar el espacio entre el texto asiático y latino en un documento de Word con Aspose.Words para .NET. Al seguir los pasos descritos, puede garantizar el espaciado y la alineación adecuados, lo que es particularmente útil cuando se trata de contenido mixto asiático y latino.
 
 ### Preguntas frecuentes
 

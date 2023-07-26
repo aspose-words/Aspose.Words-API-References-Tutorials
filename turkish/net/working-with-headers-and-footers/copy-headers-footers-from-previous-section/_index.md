@@ -72,7 +72,7 @@ Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimleriniz
 
 #### S: Önceki bölümdeki üst bilgileri ve alt bilgileri Aspose.Words'e nasıl kopyalayabilirim?
 
- C: Önceki bölümden üstbilgileri ve altbilgileri Aspose.Words'e kopyalamak için`CopyHeadersFootersFromPreviousSection()` geçerli yöntem`Section`nesne. Bu, önceki bölümdeki üstbilgileri ve altbilgileri geçerli bölüme kopyalayacaktır.
+ C: Önceki bölümden üstbilgileri ve altbilgileri Aspose.Words'e kopyalamak için`CopyHeadersFootersFromPreviousSection()` geçerli yöntem`Section`nesne. Bu, önceki bölümdeki üstbilgileri ve altbilgileri geçerli bölüme kopyalar.
 
 #### S: Aspose.Words'te bir önceki bölümden sadece üst bilgiyi veya alt bilgiyi kopyalamak mümkün mü?
 

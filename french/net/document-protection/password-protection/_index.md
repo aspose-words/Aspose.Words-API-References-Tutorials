@@ -40,7 +40,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 
 ### Exemple de code source pour la protection par mot de passe à l'aide d'Aspose.Words pour .NET
 
-Voici le code source complet pour la protection par mot de passe en utilisant Aspose.Words pour .NET :
+Voici le code source complet pour la protection par mot de passe en utilisant Aspose.Words pour .NET :
 
 ```csharp
 // Chemin d'accès au répertoire des documents.

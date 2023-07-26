@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
-Dans cet exemple, nous allons explorer la fonctionnalité Move To Headers Footers de Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programmation. La fonction Déplacer vers les en-têtes/pieds de page nous permet de naviguer vers différents en-têtes et pieds de page dans un document et d'y ajouter du contenu.
+Dans cet exemple, nous allons explorer la fonctionnalité Move To Headers Footers de Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programme. La fonction Déplacer vers les en-têtes/pieds de page nous permet de naviguer vers différents en-têtes et pieds de page dans un document et d'y ajouter du contenu.
 
 Passons en revue le code source étape par étape pour comprendre comment utiliser la fonctionnalité Déplacer vers les en-têtes/pieds de page à l'aide de Aspose.Words pour .NET.
 

@@ -78,7 +78,7 @@ doc.save(""output.docx"");
 
 ## Étape 9 : complétez le code
 
-Voici le code complet pour ajouter une table dans Word en utilisant Aspose.Words pour Java :
+Voici le code complet pour ajouter une table dans Word en utilisant Aspose.Words pour Java :
 
 ```java
 import com.aspose.words.*;

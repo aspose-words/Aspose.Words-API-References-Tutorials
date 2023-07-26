@@ -58,7 +58,7 @@ Comprender la posición del cursor es útil para varios escenarios, como la mani
 
 #### P: ¿Cuál es el propósito de comprender la posición del cursor en un documento de Word usando Aspose.Words para .NET?
 
-R: Comprender la posición del cursor en un documento de Word con Aspose.Words para .NET permite a los desarrolladores recuperar información sobre el nodo y el párrafo actual donde se encuentra el cursor. Esta información se puede utilizar para varios escenarios, como la manipulación del contenido del documento en función de la ubicación del cursor o la implementación de funciones de edición personalizadas.
+R: Comprender la posición del cursor en un documento de Word con Aspose.Words para .NET permite a los desarrolladores recuperar información sobre el nodo y el párrafo actuales donde se encuentra el cursor. Esta información se puede utilizar para varios escenarios, como la manipulación del contenido del documento en función de la ubicación del cursor o la implementación de funciones de edición personalizadas.
 
 #### P: ¿Cómo puedo acceder al nodo y párrafo actual donde se encuentra el cursor en un documento de Word?
 

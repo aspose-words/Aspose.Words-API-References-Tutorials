@@ -24,7 +24,7 @@ using Aspose.Words;
 ```
 
 ## Étape 2 : Initialiser l'objet de licence
-Ensuite, vous devez initialiser l'objet License, qui sera utilisé pour définir la licence pour Aspose.Words. Ajoutez le code suivant pour initialiser l'objet License :
+Ensuite, vous devez initialiser l'objet License, qui sera utilisé pour définir la licence pour Aspose.Words. Ajoutez le code suivant pour initialiser l'objet Licence :
 
 ```csharp
 License license = new License();

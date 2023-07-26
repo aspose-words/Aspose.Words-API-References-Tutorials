@@ -156,7 +156,7 @@ doc.StartTrackRevisions("John Doe");
 
 #### Q : Comment puis-je vérifier les révisions associées à chaque forme dans un document Aspose.Words pour .NET ?
 
-R : Pour vérifier les révisions associées à chaque forme dans un document Aspose.Words pour .NET, vous pouvez obtenir la collection de formes du document à l'aide de la commande`GetChildNodes` méthode avec la`NodeType.Shape` type de nœud. Ensuite, vous pouvez accéder à chaque forme`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , et`IsMoveToRevision` properties pour déterminer quel type de révision est associé à la forme :
+R : Pour vérifier les révisions associées à chaque forme dans un document Aspose.Words pour .NET, vous pouvez obtenir la collection de formes du document à l'aide de la commande`GetChildNodes` méthode avec la`NodeType.Shape` type de nœud. Ensuite, vous pouvez accéder à chaque forme`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , et`IsMoveToRevision` properties pour déterminer quel type de révision est associé à la forme :
 
 ```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();

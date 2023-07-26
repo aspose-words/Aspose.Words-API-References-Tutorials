@@ -109,7 +109,7 @@ Bireysel veri noktalarını özelleştirmek, grafiğinizdeki önemli verileri ve
 ### SSS
 
 #### S1. Bir grafikte birden fazla veri noktasını özelleştirebilir miyim?
- Evet, Aspose.Words for .NET'i kullanarak bir grafikte birden çok veri noktasını özelleştirebilirsiniz. erişerek`ChartDataPointCollection`bir serinin birden çok veri noktasını indekslerine göre seçebilir ve değiştirebilirsiniz. Her veri noktası için istenen özellikleri değiştirmek üzere bir döngü veya bireysel atamalar kullanın. Bu şekilde, aynı grafikteki birden çok veri noktasına farklı özelleştirmeler uygulayabilirsiniz.
+ Evet, Aspose.Words for .NET'i kullanarak bir grafikte birden çok veri noktasını özelleştirebilirsiniz. erişerek`ChartDataPointCollection`bir serinin birden çok veri noktasını indekslerine göre seçebilir ve değiştirebilirsiniz. Her veri noktası için istenen özellikleri değiştirmek üzere bir döngü veya bireysel atamalar kullanın. Bu şekilde, aynı grafikteki birden fazla veri noktasına farklı özelleştirmeler uygulayabilirsiniz.
 
 #### S2. Bir veri noktası için işaretçi sembolünü nasıl değiştirebilirim?
  Aspose.Words for .NET kullanarak bir grafikteki bir veri noktası için işaretçi sembolünü değiştirmek için şuraya erişmeniz gerekir:`Marker` mülkiyeti`ChartDataPoint` nesne ve ayarlayın`Symbol` özelliğini istediğiniz işaretleyici sembolüne değiştirin. İşaret sembolleri, grafikteki her bir veri noktasını temsil etmek için kullanılan şekli veya simgeyi temsil eder. Daire, kare, baklava, üçgen, yıldız ve daha fazlası gibi çeşitli yerleşik işaretçi sembolleri arasından seçim yapabilirsiniz.

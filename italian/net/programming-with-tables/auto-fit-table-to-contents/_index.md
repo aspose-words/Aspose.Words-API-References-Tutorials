@@ -63,4 +63,4 @@ Assicurarsi di specificare il percorso e il nome file corretti per il documento 
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come adattare automaticamente una tabella al suo contenuto in un documento Word utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata e implementando il codice C# fornito, è possibile manipolare le tabelle nei documenti di Word a livello di programmazione. Ciò consente di regolare dinamicamente la larghezza della tabella in base al suo contenuto, fornendo un documento più professionale e visivamente accattivante.
+In questo tutorial, abbiamo imparato come adattare automaticamente una tabella al suo contenuto in un documento Word utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata e implementando il codice C# fornito, è possibile manipolare le tabelle nei documenti di Word a livello di codice. Ciò consente di regolare dinamicamente la larghezza della tabella in base al suo contenuto, fornendo un documento più professionale e visivamente accattivante.

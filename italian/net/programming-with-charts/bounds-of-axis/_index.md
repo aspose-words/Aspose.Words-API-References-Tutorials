@@ -92,7 +92,7 @@ In questo tutorial, hai imparato come impostare i limiti di un asse in un grafic
 ### Domande frequenti
 
 #### Q1. Cos'è Aspose.Words per .NET?
-Aspose.Words per .NET è una libreria che consente agli sviluppatori di lavorare con i documenti di Word a livello di programmazione. Fornisce una vasta gamma di caratteristiche e funzionalità per la creazione, la manipolazione e il salvataggio di documenti Word.
+Aspose.Words per .NET è una libreria che consente agli sviluppatori di lavorare con i documenti di Word a livello di codice. Fornisce una vasta gamma di caratteristiche e funzionalità per la creazione, la manipolazione e il salvataggio di documenti Word.
 
 #### D2. Come posso installare Aspose.Words per .NET?
 Per installare Aspose.Words per .NET, puoi usare NuGet Package Manager in Visual Studio. Cerca semplicemente "Aspose.Words" nel gestore pacchetti NuGet e installalo nel tuo progetto.

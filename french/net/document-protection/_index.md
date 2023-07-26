@@ -19,7 +19,7 @@ Les didacticiels de protection de documents Aspose.Words pour .NET vous guident 
 | [Protection par mot de passe dans un document Word](./password-protection/) | Apprenez à protéger par mot de passe les documents Word à l'aide d'Aspose.Words pour .NET. |
 | [Autoriser uniquement la protection des champs de formulaire dans le document Word](./allow-only-form-fields-protect/) | Apprenez à utiliser Aspose.Words pour .NET pour protéger un document Word et autoriser uniquement la modification des champs de formulaire. |
 | [Supprimer la protection du document dans le document Word](./remove-document-protection/) | Découvrez comment supprimer la protection dans un document Word avec Aspose.Words pour .NET. |
-| [Régions modifiables sans restriction dans le document Word](./unrestricted-editable-regions/) | Apprenez à créer des zones modifiables sans restriction dans un document Word avec Aspose.Words pour .NET. |
+| [Régions modifiables sans restriction dans un document Word](./unrestricted-editable-regions/) | Apprenez à créer des zones modifiables sans restriction dans un document Word avec Aspose.Words pour .NET. |
 | [Section non restreinte dans un document Word](./unrestricted-section/) | Apprenez à définir des sections sans restriction dans un document Word avec Aspose.Words pour .NET. |
 | [Obtenir le type de protection dans un document Word](./get-protection-type/) | Apprenez à utiliser la fonction Obtenir le type de protection dans le document Word d'Aspose.Words pour .NET pour déterminer le type de protection d'un document. |
 | [Protection en lecture seule dans un document Word](./read-only-protection/) | Apprenez à protéger vos documents en lecture seule dans Word avec Aspose.Words pour .NET. |

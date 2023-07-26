@@ -61,7 +61,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 FormFieldCollection formFields = doc.Range.FormFields;
 
-// قم بالوصول إلى حقول النموذج ومعالجتها حسب الحاجة
+// الوصول إلى حقول النموذج ومعالجتها حسب الحاجة
 // ...
 
 doc.Save(dataDir + "ModifiedFormFields.docx");

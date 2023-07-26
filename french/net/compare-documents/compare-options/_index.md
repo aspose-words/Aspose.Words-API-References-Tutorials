@@ -48,7 +48,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal": "Documents are not equal");
 ```
 
-### Exemple de code source pour les options de comparaison à l'aide d'Aspose.Words pour .NET
+### Exemple de code source pour les options de comparaison à l'aide de Aspose.Words pour .NET
 
 Voici le code source complet de la fonctionnalité Comparer les options avec Aspose.Words pour .NET :
 

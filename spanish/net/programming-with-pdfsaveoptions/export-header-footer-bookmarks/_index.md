@@ -68,7 +68,7 @@ Eso es todo ! Ha exportado con éxito los marcadores de encabezado y pie de pág
 
 En este tutorial, explicamos cómo exportar marcadores de encabezado y pie de página de un documento de Word a un documento PDF usando Aspose.Words para .NET. Los marcadores exportados permiten una navegación fácil y una referencia rápida a los encabezados y pies de página correspondientes en el documento PDF generado. Siga los pasos descritos para exportar marcadores de encabezado y pie de página de un documento y generar un PDF con los marcadores apropiados usando Aspose.Words para .NET. Asegúrese de especificar la ruta correcta a sus documentos y configure las opciones de guardado según sea necesario.
 
-# Preguntas frecuentes
+### Preguntas frecuentes
 
 ### P: ¿Qué es exportar marcadores de encabezado y pie de página de un documento de Word a un documento PDF?
 R: La exportación de marcadores de encabezado y pie de página de un documento de Word a un documento PDF es una función para mantener y generar marcadores en el documento PDF a partir de los encabezados y pies de página. pies de página del documento original de Word. Esto permite a los usuarios navegar rápida y fácilmente por el documento PDF mediante el uso de marcadores correspondientes a encabezados y pies de página.

@@ -17,7 +17,7 @@ url: /ar/net/find-and-replace-text/replace-text-in-footer/
 
 ## الخطوة 1: قم بتحميل المستند
 
-قبل أن نبدأ في استخدام استبدال النص في التذييل ، نحتاج إلى تحميل المستند إلى Aspose.Words for .NET. يمكن القيام بذلك باستخدام ملف`Document` class وتحديد مسار ملف المستند:
+قبل أن نبدأ في استخدام استبدال النص في التذييل ، نحتاج إلى تحميل المستند إلى Aspose.Words for .NET. يمكن القيام بذلك باستخدام ملف`Document` فئة وتحديد مسار ملف المستند:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

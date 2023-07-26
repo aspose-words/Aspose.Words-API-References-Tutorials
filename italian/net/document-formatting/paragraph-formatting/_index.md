@@ -91,7 +91,7 @@ R: La formattazione dei paragrafi si riferisce alla personalizzazione visiva dei
 
 #### D: Aspose.Words per .NET supporta altre opzioni di formattazione del testo?
 
-R: Sì, Aspose.Words per .NET offre un ampio supporto per la formattazione del testo. Include funzionalità per modificare stili di carattere, dimensioni, colori e vari altri attributi del testo. È possibile migliorare la rappresentazione visiva del testo nei documenti di Word a livello di programmazione.
+R: Sì, Aspose.Words per .NET offre un ampio supporto per la formattazione del testo. Include funzionalità per modificare stili di carattere, dimensioni, colori e vari altri attributi del testo. È possibile migliorare la rappresentazione visiva del testo nei documenti di Word a livello di codice.
 
 #### D: Aspose.Words per .NET è compatibile con altri formati di documenti?
 

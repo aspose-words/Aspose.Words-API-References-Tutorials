@@ -81,7 +81,7 @@ R : Pour définir les options de plan dans un document PDF à l'aide d'Aspose.W
 
  Chargez le document que vous souhaitez convertir en PDF à l'aide du`Document` class et spécifiez le chemin d'accès au document dans le répertoire de documents spécifié.
 
- Configurez les options d'enregistrement au format PDF en créant une instance du`PdfSaveOptions` classe et en utilisant le`OutlineOptions` propriété pour définir les options de contour. Vous pouvez spécifier le nombre de niveaux de titre à inclure dans le plan à l'aide de la`HeadingsOutlineLevels` propriété et le nombre de niveaux hiérarchiques développés à l'aide de la`ExpandedOutlineLevels` propriété.
+ Configurez les options d'enregistrement au format PDF en créant une instance du`PdfSaveOptions` classe et en utilisant la`OutlineOptions` propriété pour définir les options de contour. Vous pouvez spécifier le nombre de niveaux de titre à inclure dans le plan à l'aide de la`HeadingsOutlineLevels` propriété et le nombre de niveaux hiérarchiques développés à l'aide de la`ExpandedOutlineLevels` propriété.
 
  Enregistrez le document au format PDF à l'aide de la`Save` méthode de la`Document`classe spécifiant le chemin et les options d'enregistrement.
 

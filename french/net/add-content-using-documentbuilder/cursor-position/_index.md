@@ -37,7 +37,7 @@ Console.WriteLine("\nCursor move to paragraph: " + curParagraph.GetText());
 ```
 
 ### Exemple de code source pour la position du curseur à l'aide de Aspose.Words pour .NET
-Voici le code source complet pour comprendre la position du curseur en utilisant Aspose.Words pour .NET :
+Voici le code source complet pour comprendre la position du curseur en utilisant Aspose.Words pour .NET :
 
 ```csharp
 Document doc = new Document();

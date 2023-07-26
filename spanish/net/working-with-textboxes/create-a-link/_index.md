@@ -31,7 +31,7 @@ if (textBox1.IsValidLinkTarget(textBox2))
      textBox1. Next = textBox2;
 ```
 
- El`IsValidLinkTarget()` El método comprueba si el segundo TextBox puede ser un objetivo válido para el enlace del primer TextBox. Si la validación tiene éxito, el`Next` La propiedad del primer TextBox se establece en el segundo TextBox, creando un vínculo entre los dos.
+ El`IsValidLinkTarget()` El método comprueba si el segundo TextBox puede ser un destino válido para el enlace del primer TextBox. Si la validación tiene éxito, el`Next` La propiedad del primer TextBox se establece en el segundo TextBox, creando un vínculo entre los dos.
 
 ### Ejemplo de código fuente para vincular con Aspose.Words para .NET
 

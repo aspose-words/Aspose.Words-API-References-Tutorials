@@ -78,7 +78,7 @@ Bir DOCX dosyasını bayta dönüştürmek için bu işlevi sağlayan farklı ya
 
 #### Dönüştürme işleminin sınırlamaları nelerdir?
 
-Dönüştürme işleminin sınırlamaları, kullandığınız araca veya kitaplığa bağlıdır. Bazı araçların girdi belgesinin boyutu veya karmaşıklığı ile ilgili kısıtlamaları olabilir. Dönüştürme görevinizin taleplerini karşılayabilecek bir araç seçmek önemlidir.
+Dönüştürme işleminin sınırlamaları, kullandığınız araca veya kitaplığa bağlıdır. Bazı araçların girdi belgesinin boyutu veya karmaşıklığıyla ilgili kısıtlamaları olabilir. Dönüştürme görevinizin taleplerini karşılayabilecek bir araç seçmek önemlidir.
 
 ### Orijinal belgenin biçimlendirmesini koruyabilir miyim?
 

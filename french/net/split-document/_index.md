@@ -1,6 +1,6 @@
 ---
-title: Fractionnement de document Word
-linktitle: Fractionnement de document Word
+title: Fractionnement de documents Word
+linktitle: Fractionnement de documents Word
 second_title: API de traitement de documents Aspose.Words
 description: Apprenez à diviser un document Word en parties distinctes à l'aide d'Aspose.Words pour .NET. Cette ressource complète fournit des didacticiels détaillés, des exemples de code source et des conseils pratiques pour fractionner des documents en fonction de différentes conditions.
 type: docs

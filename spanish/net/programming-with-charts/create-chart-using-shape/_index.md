@@ -90,4 +90,4 @@ Sí, con Aspose.Words para .NET, puede crear gráficos en un documento de Word m
 Aspose.Words para .NET admite una amplia gama de tipos de gráficos, incluidos gráficos de líneas, gráficos de barras, gráficos circulares, gráficos de áreas, gráficos de dispersión y más. Puede elegir el tipo de gráfico adecuado en función de sus datos y requisitos de visualización.
 
 #### Q3. ¿Puedo personalizar la apariencia del gráfico creado?
-Sí, puede personalizar la apariencia del gráfico creado usando Aspose.Words para .NET. Puede modificar propiedades como el título del gráfico, la posición de la leyenda, las etiquetas de datos, las etiquetas de los ejes, los colores y otros elementos visuales para satisfacer sus necesidades específicas de diseño y formato.
+Sí, puede personalizar la apariencia del gráfico creado con Aspose.Words para .NET. Puede modificar propiedades como el título del gráfico, la posición de la leyenda, las etiquetas de datos, las etiquetas de los ejes, los colores y otros elementos visuales para satisfacer sus necesidades específicas de diseño y formato.

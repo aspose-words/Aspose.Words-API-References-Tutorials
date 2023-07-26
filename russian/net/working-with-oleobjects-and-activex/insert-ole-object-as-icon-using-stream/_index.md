@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте объект OLE в качестве значка из потока
- Используйте конструктор документов`InsertOleObjectAsIcon` метод для вставки объекта OLE в качестве значка из потока в документ. Укажите поток данных, тип объекта, путь к значку и имя внедренного объекта.
+ Используйте конструктор документов`InsertOleObjectAsIcon` метод для вставки объекта OLE в качестве значка из потока в документ. Укажите поток данных, тип объекта, путь к значку и имя встроенного объекта.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))

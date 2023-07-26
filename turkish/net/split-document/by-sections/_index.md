@@ -74,7 +74,7 @@ Artık belirli bölümlerle kolayca çalışabilirsiniz.
 
 Bu öğreticide, Aspose.Words for .NET'in Belgeyi Bölümlere Göre Böl işlevini inceledik. Bir Word belgesini ayrı bölümlere ayırarak her bölüm için ayrı belgeler oluşturmayı öğrendik. Belgeyi yükleyerek, her bölümü yineleyerek ve bunları ayrı belgeler olarak kaydederek, belirli bölümlerle etkili bir şekilde çalışabildik.
 
-Belgeyi Bölümlere Göre Böl özelliğini kullanmak, bir belgenin bölümler, kısımlar veya diğer bölümler gibi belirli kısımlarını değiştirmeniz veya analiz etmeniz gerektiğinde avantajlı olabilir. Aspose.Words for .NET, verimli belge işlemeyi mümkün kılarak, bölüm ayrımının üstesinden gelmek için güvenilir ve basit bir çözüm sunar.
+Belgeyi Bölümlere Göre Böl özelliğini kullanmak, bir belgenin bölümler, kısımlar veya diğer bölümler gibi belirli kısımlarını değiştirmeniz veya analiz etmeniz gerektiğinde avantajlı olabilir. Aspose.Words for .NET, verimli belge işlemeyi mümkün kılarak bölüm ayrımını işlemek için güvenilir ve basit bir çözüm sunar.
 
 Aspose.Words for .NET tarafından belge işleme becerilerinizi geliştirmek ve iş akışınızı kolaylaştırmak için sunulan diğer güçlü özellikleri keşfetmekten çekinmeyin.
 

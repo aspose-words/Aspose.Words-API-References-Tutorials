@@ -78,7 +78,7 @@ C: Bir XML belgesindeki bir paragraf düğümü, bir metin paragrafını temsil 
 
 #### S: Mevcut bir XML belgesine nasıl paragraf düğümü eklenir?
 
- C: Mevcut bir XML belgesine bir paragraf düğümü eklemek için`appendChild` XML belgesindeki başka bir öğenin alt öğesi olarak paragraf düğümü ekleme yöntemi. Örneğin, belge kök öğesinin alt öğesi olarak ekleyebilirsiniz.
+ Y: Mevcut bir XML belgesine bir paragraf düğümü eklemek için`appendChild` XML belgesindeki başka bir öğenin alt öğesi olarak paragraf düğümü ekleme yöntemi. Örneğin, belge kök öğesinin alt öğesi olarak ekleyebilirsiniz.
 
 #### S: Bir paragraf düğümünün içeriği nasıl tanımlanır?
 

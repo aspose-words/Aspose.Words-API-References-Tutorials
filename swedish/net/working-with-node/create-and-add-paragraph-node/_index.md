@@ -31,7 +31,7 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## Steg 4: Öppna dokumentsektionen
+## Steg 4: Gå till dokumentsektionen
  För att lägga till stycket i dokumentet måste vi komma åt den sista delen av dokumentet med hjälp av`LastSection` fast egendom.
 
 ```csharp

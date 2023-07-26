@@ -84,4 +84,4 @@ Les propriétés de thème récupérées peuvent être utilisées à diverses fi
 
 #### Puis-je modifier les propriétés du thème en utilisant Aspose.Words pour .NET ?
 
-Aspose.Words pour .NET se concentre principalement sur la génération et la manipulation de documents plutôt que sur la modification de thèmes. Bien que vous puissiez récupérer les propriétés du thème à l'aide de l'API, la modification directe des propriétés du thème n'est pas prise en charge. Pour modifier le thème lui-même, vous devrez peut-être utiliser d'autres outils ou logiciels.
+Aspose.Words pour .NET se concentre principalement sur la génération et la manipulation de documents plutôt que sur la modification de thème. Bien que vous puissiez récupérer les propriétés du thème à l'aide de l'API, la modification directe des propriétés du thème n'est pas prise en charge. Pour modifier le thème lui-même, vous devrez peut-être utiliser d'autres outils ou logiciels.

@@ -105,7 +105,7 @@ In questo esempio, abbiamo esplorato la funzione Sposta in sezione di Aspose.Wor
 
 #### D: Qual è lo scopo della funzione Sposta in sezione in Aspose.Words per .NET?
 
-R: La funzione Sposta in sezione in Aspose.Words per .NET consente agli sviluppatori di navigare e manipolare diverse sezioni all'interno di un documento Word a livello di codice. Fornisce la possibilità di inserire, modificare o eliminare il contenuto in sezioni specifiche del documento.
+R: La funzione Sposta in sezione in Aspose.Words per .NET consente agli sviluppatori di navigare e manipolare diverse sezioni all'interno di un documento Word a livello di programmazione. Fornisce la possibilità di inserire, modificare o eliminare il contenuto in sezioni specifiche del documento.
 
 #### D: Come posso spostare DocumentBuilder in una sezione specifica in un documento Word?
 

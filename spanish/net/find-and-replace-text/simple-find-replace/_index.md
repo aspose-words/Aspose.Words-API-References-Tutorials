@@ -34,7 +34,7 @@ builder.Writeln("Hello _CustomerName_,");
 
 ## Paso 3: reemplazo de texto simple
 
- usamos el`Range.Replace` método para realizar el reemplazo de texto simple. En nuestro ejemplo, reemplazamos todas las apariciones de la cadena "_ClientName_ " con "James Bond" usando el`FindReplaceOptions` opción con el`FindReplaceDirection.Forward` dirección de búsqueda:
+ usamos el`Range.Replace` método para realizar el reemplazo de texto simple. En nuestro ejemplo, reemplazamos todas las apariciones de la cadena "_ClientName_ " con "James Bond" usando el`FindReplaceOptions` opción con la`FindReplaceDirection.Forward` dirección de búsqueda:
 
 ```csharp
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
@@ -101,7 +101,7 @@ builder.Writeln("Hello _CustomerName_:");
 
 #### P: ¿Cómo realizo el reemplazo de texto simple en un documento usando Aspose.Words para .NET?
 
- R: Para realizar un reemplazo de texto simple, puede usar el`Range.Replace` método. En nuestro ejemplo, reemplazamos todas las apariciones de la cadena "_ClientName_ " con "James Bond" usando el`FindReplaceOptions` opción con el`FindReplaceDirection.Forward` dirección de búsqueda:
+ R: Para realizar un reemplazo de texto simple, puede usar el`Range.Replace` método. En nuestro ejemplo, reemplazamos todas las apariciones de la cadena "_ClientName_ " con "James Bond" usando el`FindReplaceOptions` opción con la`FindReplaceDirection.Forward` dirección de búsqueda:
 
 ```csharp
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));

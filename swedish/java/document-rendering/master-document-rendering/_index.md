@@ -48,7 +48,7 @@ Document doc = new Document(stream);
 Document doc = new Document("https://example.com/document.docx");
 ```
 
-### Åtkomst till dokumentinnehåll
+### Få åtkomst till dokumentinnehåll
 
 När dokumentet har laddats kan du komma åt dess innehåll, stycken, tabeller, bilder och andra element med hjälp av Aspose.Words rika API.
 

@@ -41,7 +41,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 
 Yukarıdaki kod, belgeyi TCField ile belirtilen dizine kaydedecektir.
 
-## Çıktı İşaretleme Formatları
+## Çıktı İşaretleme Biçimleri
 
 Kod başarıyla yürütüldüğünde, çıktı belgesi, belirtilen giriş metniyle bir içindekiler tablosu girişi içerecektir. TCField, Word belgesinde bir alan olarak temsil edilir ve ortaya çıkan işaretleme biçimi, belgenin nasıl işlendiğine bağlı olacaktır.
 
@@ -79,7 +79,7 @@ C: Aspose.Words for .NET içindeki bir TCField, bir Word belgesindeki bir içind
 
 #### S: TCField giriş metnini nasıl özelleştiririm?
 
- C: TCField giriş metnini, istenen metni parametre olarak sağlayarak özelleştirebilirsiniz.`InsertField` yöntem. Örneğin,`builder.InsertField("TC \"Custom Entry\" \\f t");` belgeye "Özel Giriş" giriş metnine sahip bir TCField ekleyecektir.
+ A: TCField giriş metnini, istenen metni parametre olarak sağlayarak özelleştirebilirsiniz.`InsertField` yöntem. Örneğin,`builder.InsertField("TC \"Custom Entry\" \\f t");` belgeye "Özel Giriş" giriş metnine sahip bir TCField ekleyecektir.
 
 #### S: Belgeye birden fazla TCField ekleyebilir miyim?
 

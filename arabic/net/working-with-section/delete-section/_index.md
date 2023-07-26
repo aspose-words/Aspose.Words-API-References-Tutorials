@@ -16,7 +16,7 @@ url: /ar/net/working-with-section/delete-section/
 - تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
 
 ## الخطوة 1: قم بإنشاء مستند ومنشئ
- أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` منشئ لبناء المستند.
+ أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لبناء المستند.
 
 ```csharp
 Document doc = new Document();

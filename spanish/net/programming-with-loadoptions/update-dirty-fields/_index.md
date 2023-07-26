@@ -21,7 +21,7 @@ El primer paso es configurar las opciones de carga de nuestro documento. Utilice
 LoadOptions loadOptions = new LoadOptions { UpdateDirtyFields = true };
 ```
 
-Creamos un nuevo objeto LoadOptions y establecemos la propiedad UpdateDirtyFields en verdadero para actualizar los campos sucios al cargar el documento.
+Creamos un nuevo objeto LoadOptions y establecemos la propiedad UpdateDirtyFields en true para actualizar los campos sucios al cargar el documento.
 
 ## Cargando documento actualizando campos sucios
 

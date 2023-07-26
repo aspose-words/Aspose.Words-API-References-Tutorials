@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/working-with-markdown/setext-heading/
 ---
 
-Dans ce didacticiel, nous vous expliquerons comment utiliser la fonctionnalité Setext Heading avec Aspose.Words pour .NET. Setext Heading est une méthode alternative de formatage des titres dans les documents Markdown.
+Dans ce didacticiel, nous vous expliquerons comment utiliser la fonction Setext Heading avec Aspose.Words pour .NET. Setext Heading est une méthode alternative de formatage des titres dans les documents Markdown.
 
 ## Étape 1 : Utiliser un générateur de documents
 

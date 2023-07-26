@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 第 2 步：加载文档并检索多节标签
-使用以下命令加载 Word 文档`Document`构造函数，将文档的路径作为参数传递。使用以下命令检索文档中所有结构化文档标签范围起始节点`GetChildNodes`方法。
+使用以下命令加载 Word 文档`Document`构造函数，将文档的路径作为参数传递。使用以下命令检索文档中所有结构化文档标记范围起始节点`GetChildNodes`方法。
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

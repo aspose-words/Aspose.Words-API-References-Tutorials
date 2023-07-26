@@ -32,7 +32,7 @@ Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
-## Paso 3: Crear el documento de destino
+## Paso 3: Creación del documento de destino
 
 Creamos un nuevo documento que servirá como documento de destino para copiar el contenido del marcador:
 

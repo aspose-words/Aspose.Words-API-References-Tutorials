@@ -2,7 +2,7 @@
 title: Разделить документ Word по заголовкам Html
 linktitle: По заголовкам HTML
 second_title: API обработки документов Aspose.Words
-description: Пошаговое руководство по объяснению исходного кода C# документа с разделенным словом By Heading HTML-функции Aspose.Words для .NET
+description: Пошаговое руководство по объяснению исходного кода C# документа с разделенным словом By Heading HTML-функция Aspose.Words для .NET
 type: docs
 weight: 10
 url: /ru/net/split-document/by-headings-html/

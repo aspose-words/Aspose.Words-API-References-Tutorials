@@ -148,7 +148,7 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 
 #### Q : Comment remplacer du texte contenant des métacaractères dans un document à l'aide d'Aspose.Words pour .NET ?
 
- R : Nous utilisons le`Range.Replace` méthode pour effectuer le remplacement du texte contenant des méta-caractères. Dans notre exemple, nous remplaçons chaque occurrence du mot "section" suivi d'un saut de paragraphe par le même mot suivi de plusieurs tirets et d'un nouveau saut de paragraphe :
+ R : Nous utilisons le`Range.Replace` méthode pour effectuer le remplacement du texte contenant des méta-caractères. Dans notre exemple, nous remplaçons chaque occurrence du mot "section" suivi d'un saut de paragraphe par le même mot suivi de plusieurs tirets et d'un nouveau saut de paragraphe :
 
 ```csharp
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);

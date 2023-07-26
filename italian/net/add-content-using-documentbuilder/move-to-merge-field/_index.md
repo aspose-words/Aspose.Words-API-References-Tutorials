@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
-In questo esempio, esploreremo il campo Sposta per unire nella funzionalità del documento di Word di Aspose.Words per .NET. Aspose.Words è una potente libreria di manipolazione dei documenti che consente agli sviluppatori di creare, modificare e convertire i documenti di Word a livello di programmazione. La funzione Sposta per unire campo ci consente di navigare per unire i campi all'interno di un documento ed eseguire varie operazioni su di essi.
+In questo esempio, esploreremo il campo Sposta per unire nella funzionalità del documento di Word di Aspose.Words per .NET. Aspose.Words è una potente libreria di manipolazione dei documenti che consente agli sviluppatori di creare, modificare e convertire i documenti di Word a livello di codice. La funzione Sposta per unire campo ci consente di navigare per unire i campi all'interno di un documento ed eseguire varie operazioni su di essi.
 
 
 ## Spiegando il codice sorgente passo dopo passo

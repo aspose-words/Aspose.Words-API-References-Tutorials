@@ -77,7 +77,7 @@ Bu kodla, Aspose.Words for .NET kullanarak paragraflarınıza farklı biçimlend
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde paragraf biçimlendirme özelliğini kullanma sürecini inceledik. Belirtilen adımları izleyerek, görsel olarak çekici ve iyi yapılandırılmış belgeler oluşturmak için hizalamalarını, girintilerini ve boşluklarını ayarlayarak paragraflarınızı etkili bir şekilde biçimlendirebilirsiniz.
+Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde paragraf biçimlendirme özelliğini kullanma sürecini inceledik. Ana hatlarıyla belirtilen adımları izleyerek, görsel olarak çekici ve iyi yapılandırılmış belgeler oluşturmak için hizalamalarını, girintilerini ve boşluklarını ayarlayarak paragraflarınızı etkili bir şekilde biçimlendirebilirsiniz.
 
 ### SSS
 

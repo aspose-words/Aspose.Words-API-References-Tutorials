@@ -2,7 +2,7 @@
 title: Accents
 linktitle: Accents
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à utiliser les accents (gras et italique) avec Aspose.Words pour le guide étape par étape .NET.
+description: Apprenez à utiliser les emphases (gras et italique) avec Aspose.Words pour le guide étape par étape .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/emphases/

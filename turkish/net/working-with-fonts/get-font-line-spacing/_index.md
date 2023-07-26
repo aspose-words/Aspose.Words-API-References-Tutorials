@@ -69,7 +69,7 @@ Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde yazı tipi satır
 
 C: Aspose.Words ile bir Word belgesindeki belirli bir metnin satır aralığını kolayca değiştirebilirsiniz. İstenen metni seçmek için API'yi kullanın ve uygun değeri belirterek satırlar arasındaki boşluğu ayarlayın.
 
-#### S: Bir Word belgesinde satırlar arasında tam aralık uygulamak mümkün mü?
+#### S: Bir Word belgesinde satırlar arasında tam aralık uygulamak mümkün müdür?
 
 C: Evet, Aspose.Words, bir Word belgesindeki satırlar arasında tam aralık uygulamanıza izin verir. API'yi kullanarak satır aralığı için kesin bir değer belirleyebilirsiniz.
 

@@ -80,7 +80,7 @@ R: Sí, una vez que DocumentBuilder se coloca en el párrafo deseado usando Move
 
 #### P: ¿Qué sucede si el índice de párrafo especificado está fuera de rango en el documento?
 
-R: Si el índice de párrafo especificado está fuera de rango (por ejemplo, negativo o mayor que el número total de párrafos en el documento), se lanzará una excepción. Es esencial asegurarse de que el índice del párrafo sea válido antes de pasar a él.
+R: Si el índice de párrafo especificado está fuera de rango (por ejemplo, negativo o mayor que el número total de párrafos en el documento), se generará una excepción. Es esencial asegurarse de que el índice del párrafo sea válido antes de pasar a él.
 
 #### P: ¿Puedo usar la función Mover a párrafo para navegar hasta el último párrafo en un documento de Word?
 

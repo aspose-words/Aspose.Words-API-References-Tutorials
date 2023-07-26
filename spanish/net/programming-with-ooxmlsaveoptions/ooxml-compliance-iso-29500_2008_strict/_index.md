@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
 
 En este tutorial, exploramos la función de cumplimiento estricto de Ooxml Iso 29500_2008_al guardar un documento con Aspose.Words para .NET. Al especificar Iso29500_2008_Cumplimiento estricto con las opciones de guardado de Ooxml, nos aseguramos de que el documento generado cumpla con los estándares ISO 29500_2008_Estricto.
 
-El cumplimiento estricto de Ooxml Iso 29500_2008_ garantiza una mejor compatibilidad con las versiones más recientes de Microsoft Word, lo que garantiza que se conserven el formato, los estilos y la funcionalidad de los documentos. Esto es particularmente importante al intercambiar documentos con otros usuarios o al archivar a largo plazo.
+Ooxml Iso 29500_2008_El cumplimiento estricto garantiza una mejor compatibilidad con las versiones más recientes de Microsoft Word, lo que garantiza que se conserven el formato, los estilos y la funcionalidad de los documentos. Esto es particularmente importante al intercambiar documentos con otros usuarios o al archivar a largo plazo.
 
 Aspose.Words para .NET facilita el cumplimiento de Ooxml Iso 29500_2008_Strict al proporcionar opciones de copia de seguridad flexibles y potentes. Puede integrar esta funcionalidad en sus proyectos para garantizar que los documentos generados cumplan con los estándares más recientes.
 

@@ -74,7 +74,7 @@ Con questo codice sarai in grado di allineare il tuo testo alla griglia e ottimi
 
 ## Conclusione
 
-In questo tutorial, abbiamo esplorato il processo di utilizzo della funzione Blocca sulla griglia in un documento di Word con Aspose.Words per .NET. Seguendo i passaggi descritti, è possibile abilitare l'allineamento della griglia per paragrafi e caratteri, garantendo un layout del documento visivamente gradevole e ben organizzato.
+In questo tutorial, abbiamo esplorato il processo di utilizzo della funzione Blocca sulla griglia in un documento di Word con Aspose.Words per .NET. Seguendo i passaggi descritti, è possibile abilitare l'allineamento della griglia per paragrafi e caratteri, garantendo un layout del documento visivamente piacevole e ben organizzato.
 
 ### FAQ
 

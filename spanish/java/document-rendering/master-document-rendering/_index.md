@@ -184,7 +184,7 @@ saveOptions.setPageSet(new PageSet(startPage, endPage));
 doc.save("output.png", saveOptions);
 ```
 
-### Renderizar rango de documentos
+### Renderizar rango de documento
 
 Si desea representar solo partes específicas de un documento, como párrafos o secciones, Aspose.Words ofrece la posibilidad de hacerlo.
 

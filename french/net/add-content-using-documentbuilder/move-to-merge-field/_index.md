@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
-Dans cet exemple, nous allons explorer la fonction Déplacer vers le champ de fusion dans le document Word d'Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programmation. La fonction Déplacer vers le champ de fusion nous permet de naviguer pour fusionner des champs dans un document et d'effectuer diverses opérations dessus.
+Dans cet exemple, nous allons explorer la fonction Déplacer vers le champ de fusion dans le document Word d'Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programme. La fonction Déplacer vers le champ de fusion nous permet de naviguer pour fusionner des champs dans un document et d'effectuer diverses opérations dessus.
 
 
 ## Expliquer le code source étape par étape
@@ -47,7 +47,7 @@ builder.MoveToField(field, true);
 
 ## Ajouter du texte immédiatement après le champ de fusion
 
-Une fois que le curseur du générateur de document se trouve dans le champ de fusion, vous pouvez ajouter du texte immédiatement après en utilisant la méthode Write :
+Une fois que le curseur du générateur de document se trouve dans le champ de fusion, vous pouvez ajouter du texte immédiatement après en utilisant la méthode Write :
 
 ```csharp
 Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
@@ -78,7 +78,7 @@ builder.Write(" Text immediately after the field.");
 
 ## Conclusion
 
-nous avons exploré la fonctionnalité Move To Merge Field de Aspose.Words pour .NET. Nous avons appris à naviguer pour fusionner des champs dans un document à l'aide de la classe DocumentBuilder et à effectuer des opérations dessus. Cette fonctionnalité est utile lors du traitement de mots par programme avec fusion
+nous avons exploré la fonctionnalité Move To Merge Field de Aspose.Words pour .NET. Nous avons appris à naviguer pour fusionner des champs dans un document à l'aide de la classe DocumentBuilder et à effectuer des opérations dessus. Cette fonctionnalité est utile lors du traitement de mots par programmation avec fusion
 
 ### FAQ pour déplacer vers un champ de fusion dans un document Word
 

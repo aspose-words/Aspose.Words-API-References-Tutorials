@@ -103,7 +103,7 @@ R: La función Mover a encabezados/pies de página en Aspose.Words para .NET per
 
 #### P: ¿Puedo tener diferentes encabezados y pies de página para diferentes páginas del documento?
 
-R: Sí, puede especificar diferentes encabezados y pies de página para la primera página, las páginas pares y las impares mediante las propiedades PageSetup.DifferentFirstPageHeaderFooter y PageSetup.OddAndEvenPagesHeaderFooter, respectivamente.
+R: Sí, puede especificar diferentes encabezados y pies de página para la primera página, las páginas pares y las páginas impares mediante las propiedades PageSetup.DifferentFirstPageHeaderFooter y PageSetup.OddAndEvenPagesHeaderFooter, respectivamente.
 
 #### P: ¿Cómo puedo agregar contenido a encabezados y pies de página específicos?
 

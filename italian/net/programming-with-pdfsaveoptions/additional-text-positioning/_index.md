@@ -12,7 +12,7 @@ In questo tutorial, ti guideremo attraverso i passaggi per migliorare il posizio
 
 ## Passaggio 1: caricamento del documento
 
-Inizia caricando il documento Word che desideri convertire in PDF:
+Inizia caricando il documento Word che vuoi convertire in PDF:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
