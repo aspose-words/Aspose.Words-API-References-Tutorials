@@ -2,7 +2,7 @@
 title: Aspose.Words Tutorials
 additionalTitle: Aspose API References
 description: Tutorials and code-snippets of Aspose.Words product family. It includes basic and advance tutorials of usage of Aspose.Words.
-type: docs
+type: docs_root
 weight: 10
 url: /
 is_root: true
