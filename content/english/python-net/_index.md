@@ -35,14 +35,14 @@ Secure your documents with Aspose.Words for Python! Implement password encryptio
 ### [Document Structure and Content Manipulation](./document-structure-and-content-manipulation/)
 Explore Aspose.Words tutorials for Python and .NET, focusing on document structure and content manipulation. Learn how to navigate, extract, and modify document elements efficiently. Source code examples provided.
 ### [Content Extraction and Manipulation](./content-extraction-and-manipulation/)
-
+Discover the world of content extraction and manipulation with Aspose.Words tutorials. Learn how to efficiently extract and manipulate content using Python and .NET, enhancing your document processing capabilities.
 ### [Document Combining and Comparison](./document-combining-and-comparison/)
 
 ### [Document Splitting and Formatting](./document-splitting-and-formatting/)
-
+Explore the Aspose.Words tutorials on document splitting and formatting in Python and .NET. Learn to split and format documents efficiently, enhancing your document processing tasks. 
 ### [Document Options and Settings](./document-options-and-settings/)
 
 ### [Data Visualization and Formatting](./data-visualization-and-formatting/)
-
+Discover Aspose.Words tutorials on data visualization and formatting in Python and .NET. Learn to present data effectively, create stunning reports, and format documents programmatically.
 ### [Tables and Formatting](./tables-and-formatting/)
 Dive into Aspose.Words tutorials on tables and formatting in Python and .NET applications. Learn to create, customize, and style tables for visually compelling documents. 
