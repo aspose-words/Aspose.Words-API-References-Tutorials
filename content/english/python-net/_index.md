@@ -45,3 +45,4 @@ Secure your documents with Aspose.Words for Python! Implement password encryptio
 ### [Data Visualization and Formatting](./data-visualization-and-formatting/)
 
 ### [Tables and Formatting](./tables-and-formatting/)
+Dive into Aspose.Words tutorials on tables and formatting in Python and .NET applications. Learn to create, customize, and style tables for visually compelling documents. 
