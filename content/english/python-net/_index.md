@@ -32,3 +32,16 @@ Unlock valuable insights from your documents with Aspose.Words for Python's Docu
 Efficiently convert documents between formats with Aspose.Words for Python. Streamline word document processing and simplify your document management tasks. 
 ### [Document Protection](./document-protection/)
 Secure your documents with Aspose.Words for Python! Implement password encryption, user permissions, and digital signatures for robust document protection.
+### [Document Structure and Content Manipulation](./document-structure-and-content-manipulation/)
+
+### [Content Extraction and Manipulation](./content-extraction-and-manipulation/)
+
+### [Document Combining and Comparison](./document-combining-and-comparison/)
+
+### [Document Splitting and Formatting](./document-splitting-and-formatting/)
+
+### [Document Options and Settings](./document-options-and-settings/)
+
+### [Data Visualization and Formatting](./data-visualization-and-formatting/)
+
+### [Tables and Formatting](./tables-and-formatting/)
