@@ -186,14 +186,12 @@ Incorporate headers and footers into your tables for better context:
 
 2. Table Footer: Create a footer row for additional information
 
-.
-
     ```python
     footer_row = table.append_row()
     footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
-
+	
 ## Automatically Adjusting Table Layout
 
 Ensure that your table layout adjusts automatically based on content:
