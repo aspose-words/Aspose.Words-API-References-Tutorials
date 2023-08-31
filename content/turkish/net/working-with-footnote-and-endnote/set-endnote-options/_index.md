@@ -1,29 +1,29 @@
 ---
-title: Son Not Seçeneklerini Ayarla
-linktitle: Son Not Seçeneklerini Ayarla
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak Word belgelerinde son not seçeneklerini nasıl ayarlayacağınızı öğrenin. Örnek kaynak koduyla adım adım öğretici.
+title: Son Not Seçeneklerini Ayarlayın
+linktitle: Son Not Seçeneklerini Ayarlayın
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak Word belgelerinde son not seçeneklerini nasıl ayarlayacağınızı öğrenin. Örnek kaynak koduyla adım adım eğitim.
 type: docs
 weight: 10
 url: /tr/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
 
-Bu adım adım öğreticide, bir Word belgesinde son not seçeneklerini ayarlamak için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
+Bu adım adım eğitimde, bir Word belgesinde son not seçeneklerini ayarlamak için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
- Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı adresinden indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
+ Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve kurulu olduğundan emin olun. Henüz yapmadıysanız, kitaplığı şuradan indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
 
-## 1. Adım: Belge Nesnesini Başlatma
+## Adım 1: Belge Nesnesini Başlatma
 
- İlk olarak,`Document` kaynak belgenizin yolunu sağlayarak itiraz edin:
+ İlk olarak, başlat`Document` kaynak belgenizin yolunu sağlayarak nesneyi:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## 2. Adım: DocumentBuilder Nesnesini Başlatma
+## Adım 2: DocumentBuilder Nesnesini Başlatma
 
- Ardından,`DocumentBuilder` belge üzerinde işlem gerçekleştirmek için nesne:
+ Daha sonra, başlat`DocumentBuilder` belge üzerinde işlem gerçekleştirecek nesne:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -38,9 +38,9 @@ builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## 4. Adım: Son Not Seçeneklerini Ayarlama
+## Adım 4: Son Not Seçeneklerini Ayarlama
 
- Erişmek`EndnoteOptions` Son not seçeneklerini değiştirmek için belgenin özelliği. Bu örnekte, yeniden başlatma kuralını her sayfada yeniden başlayacak ve konumu bölümün sonuna ayarlayacağız:
+ Erişmek`EndnoteOptions` Son not seçeneklerini değiştirmek için belgenin özelliği. Bu örnekte, yeniden başlatma kuralını her sayfada yeniden başlayacak ve konumu bölümün sonuna ayarlayacak şekilde ayarladık:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -48,17 +48,17 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## 5. Adım: Belgeyi Kaydetme
+## Adım 5: Belgeyi Kaydetme
 
-Son olarak, değiştirilen belgeyi kaydedin:
+Son olarak değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-Bu kadar! Aspose.Words for .NET kullanarak bir Word belgesinde son not seçeneklerini başarıyla ayarladınız.
+Bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesinde son not seçeneklerini başarıyla ayarladınız.
 
-### Aspose.Words for .NET kullanarak Set Endnote Options için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak Son Not Seçeneklerini Ayarlama için örnek kaynak kodu
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";	
@@ -75,26 +75,26 @@ option.Position = EndnotePosition.EndOfSection;
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.
+Bu kodu kendi projelerinizde kullanmaktan ve özel gereksinimlerinize göre değiştirmekten çekinmeyin.
 
-### SSS
+### SSS'ler
 
-#### S: Aspose.Words'te son notları nasıl biçimlendirebilirim?
+#### S: Aspose.Words'te son notları nasıl stillendirebilirim?
 
- C: Aspose.Words'te son notlara stil vermek için`EndnoteOptions` sınıf ve`SeparatorNoteTextStyle` mülk. Bu özelliği kullanarak son notlar için yazı tipi stilini, boyutunu, rengini vb. belirtebilirsiniz.
+ C: Aspose.Words'te son notlara stil vermek için`EndnoteOptions` sınıf ve`SeparatorNoteTextStyle` mülk. Bu özelliği kullanarak son notlar için yazı tipi stili, boyutu, rengi vb. belirtebilirsiniz.
 
-#### S: Bir belgedeki son notların numaralandırılmasını özelleştirmek mümkün müdür?
+#### S: Bir belgedeki son notların numaralandırmasını özelleştirmek mümkün mü?
 
- C: Evet, bir belgedeki son notların numaralandırılmasını özelleştirmek mümkündür. kullanabilirsiniz`RestartRule` Ve`NumberStyle` özellikleri`EndnoteOptions` belirli yeniden başlatma kurallarını ve numaralandırma stillerini tanımlamak için sınıf.
+ C: Evet, bir belgedeki son notların numaralandırmasını özelleştirmek mümkündür. Şunu kullanabilirsiniz:`RestartRule` Ve`NumberStyle` özellikleri`EndnoteOptions` Belirli yeniden başlatma kurallarını ve numaralandırma stillerini tanımlamak için sınıf.
 
 #### S: Son notları bir belgede nasıl konumlandırabilirim?
 
- C: Bir belgedeki son notları konumlandırmak için`Position` mülkiyeti`EndnoteOptions` sınıf. Son notların her sayfanın altına mı, her bölümün sonuna mı yoksa belgenin sonuna mı yerleştirileceğini belirleyebilirsiniz.
+ C: Son notları bir belgeye yerleştirmek için`Position` mülkiyeti`EndnoteOptions` sınıf. Son notların her sayfanın altına mı, her bölümün sonuna mı yoksa belgenin sonuna mı yerleştirileceğini belirtebilirsiniz.
 
-#### S: Son not numaralandırma formatını özelleştirebilir miyim?
+#### S: Son not numaralandırma biçimini özelleştirebilir miyim?
 
  C: Evet, Aspose.Words'te son not numaralandırma formatını özelleştirebilirsiniz. Kullan`NumberFormat` mülkiyeti`EndnoteOptions` Arap rakamları, Romen rakamları, harfler vb. gibi istenen formatı ayarlamak için sınıf.
 
 #### S: Bir belgenin bölümleri arasında son not numaralandırmaya devam etmek mümkün müdür?
 
- C: Evet, bir belgenin bölümleri arasında son not numaralandırmaya devam etmek mümkündür. Kullan`RestartRule` mülkiyeti`EndnoteOptions` sınıflandırın ve ayarlayın`RestartContinuous` numaralandırmanın bölümler arasında devam etmesini sağlamak için.
+ C: Evet, bir belgenin bölümleri arasında son not numaralandırmaya devam etmek mümkündür. Kullan`RestartRule` mülkiyeti`EndnoteOptions` sınıfa girin ve buna ayarlayın`RestartContinuous` numaralandırmanın bölümler arasında devam etmesine izin vermek için.

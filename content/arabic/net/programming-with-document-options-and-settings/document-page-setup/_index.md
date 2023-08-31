@@ -1,22 +1,22 @@
 ---
-title: وثيقة إعداد الصفحة
-linktitle: وثيقة إعداد الصفحة
-second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: دليل خطوة بخطوة لإعداد تخطيط مستند باستخدام Aspose.Words for .NET.
+title: إعداد صفحة المستند
+linktitle: إعداد صفحة المستند
+second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
+description: دليل خطوة بخطوة لإعداد تخطيط مستند باستخدام Aspose.Words لـ .NET.
 type: docs
 weight: 10
 url: /ar/net/programming-with-document-options-and-settings/document-page-setup/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتكوين تخطيط المستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة ضبط وضع التخطيط وعدد الأحرف في كل سطر وعدد الأسطر في كل صفحة.
+في هذا البرنامج التعليمي، سنرشدك خلال التعليمات البرمجية المصدر لـ C# لتكوين تخطيط المستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة ضبط وضع التخطيط وعدد الأحرف في كل سطر وعدد الأسطر في كل صفحة.
 
 ## الخطوة 1: إعداد المشروع
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+للبدء، قم بإنشاء مشروع C# جديد في بيئة التطوير المتكاملة (IDE) المفضلة لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
 
-## الخطوة الثانية: تحميل المستند
+## الخطوة 2: تحميل الوثيقة
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تهيئته. استخدم الكود التالي لتحميل المستند:
+في هذه الخطوة، سنقوم بتحميل مستند Word الذي نريد تكوينه. استخدم الكود التالي لتحميل المستند:
 
 ```csharp
 // المسار إلى دليل المستندات.
@@ -24,11 +24,11 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ يستبدل`"YOUR DOCUMENTS DIRECTORY"` بالمسار الفعلي للدليل الذي يوجد به المستند الخاص بك.
 
 ## الخطوة 3: إعداد التخطيط
 
-لنقم الآن بتهيئة تخطيط المستند. استخدم الكود التالي لضبط وضع التخطيط ، وعدد الأحرف في كل سطر ، وعدد الأسطر في كل صفحة:
+الآن دعونا نقوم بتكوين تخطيط المستند. استخدم الكود التالي لتعيين وضع التخطيط، وعدد الأحرف في كل سطر، وعدد الأسطر في كل صفحة:
 
 ```csharp
 doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
@@ -40,7 +40,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 
 يقوم هذا الرمز بتعيين وضع التخطيط على "الشبكة" ثم يحدد عدد الأحرف في كل سطر وعدد الأسطر في كل صفحة.
 
-### مثال على الكود المصدري لإعداد صفحة المستند باستخدام Aspose.Words for .NET
+### مثال للتعليمة البرمجية المصدر لإعداد صفحة المستند باستخدام Aspose.Words لـ .NET
 
 
 ```csharp
@@ -49,8 +49,8 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
-	// اضبط وضع التخطيط لقسم يسمح بتعريف سلوك شبكة الوثيقة.
-	// لاحظ أن علامة التبويب Document Grid تصبح مرئية في مربع حوار إعداد الصفحة في MS Word
+	// قم بتعيين وضع التخطيط لقسم يسمح بتحديد سلوك شبكة المستند.
+	// لاحظ أن علامة التبويب "شبكة المستند" تصبح مرئية في مربع حوار "إعداد الصفحة" في برنامج MS Word
 	// إذا تم تعريف أي لغة آسيوية على أنها لغة تحرير.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;
@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 
  تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
 
-لقد تعلمت الآن كيفية تكوين تخطيط المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تخصيص تخطيط المستندات الخاصة بك.
+لقد تعلمت الآن كيفية تكوين تخطيط المستند باستخدام Aspose.Words لـ .NET. باتباع الدليل التفصيلي المقدم في هذا البرنامج التعليمي، يمكنك بسهولة تخصيص تخطيط مستنداتك الخاصة.

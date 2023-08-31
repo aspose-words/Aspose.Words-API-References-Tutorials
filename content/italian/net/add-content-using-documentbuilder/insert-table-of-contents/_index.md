@@ -1,19 +1,19 @@
 ---
 title: Inserisci il sommario nel documento di Word
 linktitle: Inserisci il sommario nel documento di Word
-second_title: Aspose.Words API di elaborazione dei documenti
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come inserire un sommario nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-In questo tutorial completo imparerai come inserire un sommario in un documento Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di generare un sommario con intestazioni e numeri di pagina appropriati.
+In questo tutorial completo imparerai come inserire un sommario in un documento Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo gli snippet di codice C# necessari. Al termine di questa guida sarai in grado di generare un sommario con titoli e numeri di pagina appropriati.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+Prima di iniziare, assicurati di possedere i seguenti prerequisiti:
 - Aspose.Words per la libreria .NET installata sul tuo sistema.
 
-## Passaggio 1: creare un nuovo documento e DocumentBuilder
+## Passaggio 1: crea un nuovo documento e DocumentBuilder
 Per iniziare, crea un nuovo documento utilizzando la classe Document e inizializza un oggetto DocumentBuilder:
 
 ```csharp
@@ -60,20 +60,20 @@ builder.Writeln("Heading 3.3");
 ```
 
 ## Passaggio 4: aggiorna il sommario
-Il sommario appena inserito sarà inizialmente vuoto. Per popolarlo, aggiorna i campi nel documento:
+Il sommario appena inserito sarà inizialmente vuoto. Per compilarlo, aggiorna i campi nel documento:
 
 ```csharp
 doc.UpdateFields();
 ```
 
-## Passaggio 5: salvare il documento
-Dopo aver inserito il sommario e aggiornato i campi, salvare il documento in un file utilizzando il metodo Save della classe Document:
+## Passaggio 5: salva il documento
+Dopo aver inserito il sommario e aggiornato i campi, salva il documento su un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
 
-### Esempio di codice sorgente per Inserisci sommario utilizzando Aspose.Words per .NET
+### Esempio di codice sorgente per inserire il sommario utilizzando Aspose.Words per .NET
 Ecco il codice sorgente completo per l'inserimento di un sommario utilizzando Aspose.Words per .NET:
 
 ```csharp
@@ -83,10 +83,10 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Inserisci la tabella dei contenutia
+// Inserisci il sommario
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-// Avviare il contenuto effettivo del documento nella seconda pagina.
+// Inizia il contenuto effettivo del documento nella seconda pagina.
 builder.InsertBreak(BreakType.PageBreak);
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
@@ -129,9 +129,9 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 
 ## Conclusione
 
-Congratulazioni! Hai imparato con successo come inserire un sommario in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida passo-passo e utilizzando il codice sorgente fornito, ora puoi generare un sommario con intestazioni e numeri di pagina appropriati per i tuoi documenti.
+Congratulazioni! Hai imparato con successo come inserire un sommario in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo e utilizzando il codice sorgente fornito, ora puoi generare un sommario con intestazioni e numeri di pagina appropriati per i tuoi documenti.
 
-### Domande frequenti per inserire il sommario nel documento word
+### Domande frequenti sull'inserimento del sommario nel documento Word
 
 #### D: Posso personalizzare l'aspetto del sommario?
 
@@ -143,12 +143,12 @@ Congratulazioni! Hai imparato con successo come inserire un sommario in un docum
 
 #### D: Posso aggiornare automaticamente il sommario se apporto modifiche al contenuto del documento?
 
- R: Sì, puoi aggiornare automaticamente il sommario chiamando il`UpdateFields` metodo sul documento. Ciò assicurerà che eventuali modifiche apportate al contenuto del documento, come l'aggiunta o la rimozione di intestazioni, si riflettano nel sommario.
+ R: Sì, puoi aggiornare automaticamente il sommario chiamando il`UpdateFields` metodo sul documento. Ciò garantirà che qualsiasi modifica apportata al contenuto del documento, come l'aggiunta o la rimozione di intestazioni, si rifletta nel sommario.
 
-#### D: Come posso applicare uno stile diverso ai livelli delle intestazioni nel sommario?
+#### D: Come posso definire diversamente i livelli di intestazione nel sommario?
 
- R: Puoi modellare i livelli di intestazione in modo diverso utilizzando diversi stili di paragrafo per ogni livello di intestazione. Assegnando diversi`StyleIdentifier` valori al`ParagraphFormat` del`DocumentBuilder`, puoi creare stili distinti per ogni livello di intestazione.
+ R: Puoi applicare stili diversi ai livelli di intestazione utilizzando stili di paragrafo diversi per ciascun livello di intestazione. Assegnando diversi`StyleIdentifier` valori al`ParagraphFormat` del`DocumentBuilder`, puoi creare stili distinti per ciascun livello di intestazione.
 
-#### D: È possibile aggiungere ulteriore formattazione alle intestazioni nel sommario?
+#### D: È possibile aggiungere ulteriore formattazione alle intestazioni del sommario?
 
- R: Sì, puoi aggiungere ulteriore formattazione alle intestazioni nel sommario, come stili di carattere, colori o altre proprietà. Regolando il`Font` proprietà del`DocumentBuilder`, puoi applicare una formattazione personalizzata alle intestazioni.
+ R: Sì, puoi aggiungere ulteriore formattazione alle intestazioni del sommario, come stili di carattere, colori o altre proprietà. Regolando il`Font` proprietà del`DocumentBuilder`, puoi applicare una formattazione personalizzata alle intestazioni.

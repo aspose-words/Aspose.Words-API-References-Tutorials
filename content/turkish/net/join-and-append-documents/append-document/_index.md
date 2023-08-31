@@ -1,25 +1,25 @@
 ---
 title: Belge Ekle
 linktitle: Belge Ekle
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bir belgenin içeriğini diğerine nasıl ekleyeceğinizi öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'i kullanarak bir belgenin içeriğini diğerine nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/append-document/
 ---
 
-Bu eğitim, bir belgenin içeriğini diğerine eklemek için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, kaynak ve hedef belgelerin nasıl açılacağını, kaynak belgeden bölümlerin nasıl alınacağını ve hedef belgeye nasıl ekleneceğini gösterir.
+Bu eğitimde Aspose.Words for .NET'in bir belgenin içeriğini diğerine eklemek için nasıl kullanılacağı açıklanmaktadır. Sağlanan kaynak kodu, kaynak ve hedef belgelerin nasıl açılacağını, kaynak belgeden bölümlerin hedef belgeye nasıl aktarılacağını ve ekleneceğini gösterir.
 
-## 1. Adım: Projeyi kurun
+## 1. Adım: Projeyi ayarlayın
 
-Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kitaplığı yüklendi. adresinden indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ veya yüklemek için NuGet paket yöneticisini kullanın.
-- Kaynak ve hedef belgelerin bulunduğu bir belge dizini yolu.
+- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+- Kaynak ve hedef belgelerin bulunduğu belge dizini yolu.
 
 ## 2. Adım: Kaynak ve hedef belgeleri açın
 
- kullanarak kaynak ve hedef belgeleri açın.`Document` sınıf oluşturucu Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+ Kaynak ve hedef belgeleri kullanarak açın.`Document` sınıf yapıcısı. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
 
 ```csharp
 // Belge dizininizin yolu
@@ -29,9 +29,9 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. Adım: Kaynak belgeden hedef belgeye bölümler ekleyin
+## 3. Adım: Kaynak belgedeki bölümleri hedef belgeye ekleyin
 
- Kaynak belgedeki tüm bölümler arasında dolaşın ve her bölümü hedef belgeye içe aktarın.`ImportNode` yöntem. Ardından, içe aktarılan bölümü hedef belgeye ekleyin.
+ Kaynak belgedeki tüm bölümler arasında dolaşın ve her bölümü hedef belgeye aktarın.`ImportNode` yöntem. Daha sonra içe aktarılan bölümü hedef belgeye ekleyin.
 
 ```csharp
 foreach (Section srcSection in srcDoc)
@@ -49,9 +49,9 @@ foreach (Section srcSection in srcDoc)
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanarak belge ekleme uygulamasını tamamlar.
+Bu, Aspose.Words for .NET kullanarak belge ekleme işlemini tamamlar.
 
-### Aspose.Words for .NET kullanan Append Document için örnek kaynak kodu 
+### Aspose.Words for .NET kullanarak Belge Ekleme için örnek kaynak kodu 
 
 ```csharp
 	//Belge dizininizin yolu
@@ -59,16 +59,16 @@ Bu, Aspose.Words for .NET kullanarak belge ekleme uygulamasını tamamlar.
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Kaynak belgedeki tüm bölümler arasında geçiş yapın.
-	// Bölüm düğümleri, Belge düğümünün doğrudan çocuklarıdır, bu nedenle Belgeyi numaralandırabiliriz.
+	// Kaynak belgedeki tüm bölümler arasında dolaşın.
+	// Bölüm düğümleri Belge düğümünün doğrudan alt öğeleridir, dolayısıyla Belgeyi yalnızca numaralandırabiliriz.
 	foreach (Section srcSection in srcDoc)
 	{
 		// Bir bölümü bir belgeden diğerine kopyaladığımız için,
-		// Bölüm düğümünü hedef belgeye aktarmak gerekir.
-		// Bu, stillere, listelere vb. belgeye özgü referansları ayarlar.
+		// Bölüm düğümünün hedef belgeye aktarılması gerekir.
+		// Bu, stillere, listelere vb. yönelik belgeye özgü referansları ayarlar.
 		//
-		// Bir düğümün içe aktarılması, orijinal düğümün bir kopyasını oluşturur, ancak kopya
-		// hedef belgeye eklenmeye hazır.
+		// Bir düğümün içe aktarılması orijinal düğümün bir kopyasını oluşturur, ancak kopya
+		// Hedef belgeye eklenmeye hazır ss.
 		Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
 		// Artık yeni bölüm düğümü hedef belgeye eklenebilir.
 		dstDoc.AppendChild(dstSection);

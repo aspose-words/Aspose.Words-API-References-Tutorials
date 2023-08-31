@@ -1,7 +1,7 @@
 ---
-title: Rileva la forma artistica intelligente
-linktitle: Rileva la forma artistica intelligente
-second_title: Aspose.Words API di elaborazione dei documenti
+title: Rileva forme artistiche intelligenti
+linktitle: Rileva forme artistiche intelligenti
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come rilevare le forme Smart Art in un documento Word utilizzando Aspose.Words per .NET, identificando le rappresentazioni grafiche.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Questo tutorial spiega come rilevare le forme Smart Art in un documento Word uti
 Per seguire questo tutorial, è necessario disporre di quanto segue:
 
 - Aspose.Words per la libreria .NET installata.
-- Conoscenza di base di C# e Word Processing con documenti Word.
+- Conoscenza base di C# ed elaborazione testi con documenti Word.
 
 ## Passaggio 1: impostare la directory dei documenti
  Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
@@ -24,27 +24,27 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Passaggio 2: caricare il documento
- Carica il documento Word usando il file`Document` costruttore, passando il percorso al documento come parametro.
+ Caricare il documento Word utilizzando il file`Document` costruttore, passando il percorso del documento come parametro.
 
 ```csharp
 Document doc = new Document(dataDir + "Smart Art.docx");
 ```
 
 ## Passaggio 3: rileva le forme artistiche intelligenti
- Scorrere i nodi figlio di type`Shape` nel documento utilizzando il`GetChildNodes`metodo. Controlla se ogni forma ha Smart Art usando il`HasSmart Art` proprietà.
+ Scorrere i nodi figlio di tipo`Shape` nel documento utilizzando il file`GetChildNodes`metodo. Controlla se ogni forma ha Smart Art utilizzando il file`HasSmart Art` proprietà.
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmart Art);
 ```
 
-## Passaggio 4: emettere il risultato
+## Passaggio 4: output del risultato
 Stampa il conteggio delle forme con Smart Art rilevate nel documento.
 
 ```csharp
 Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ```
 
-### Esempio di codice sorgente per Rileva Smart Art Shape utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per Rileva Smart Art Shape utilizzando Aspose.Words per .NET 
 
 ```csharp
 	//Percorso della directory dei documenti
@@ -55,4 +55,4 @@ Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 	Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ```
 
-Questo è tutto! Hai rilevato correttamente le forme Smart Art nel tuo documento Word utilizzando Aspose.Words per .NET.
+Questo è tutto! Hai rilevato con successo forme Smart Art nel tuo documento Word utilizzando Aspose.Words per .NET.

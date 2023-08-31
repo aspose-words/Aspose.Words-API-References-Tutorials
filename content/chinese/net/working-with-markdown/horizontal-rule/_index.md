@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/working-with-markdown/horizontal-rule/
 ---
 
-在此示例中，我们将向您展示如何将水平标尺功能与 Aspose.Words for .NET 结合使用。水平线用于在视觉上分隔文档的各个部分。
+在此示例中，我们将向您展示如何将水平标尺功能与 Aspose.Words for .NET 一起使用。水平线用于在视觉上分隔文档的各个部分。
 
 ## 第 1 步：使用文档生成器
 

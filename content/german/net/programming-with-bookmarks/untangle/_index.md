@@ -74,7 +74,7 @@ In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie di
 
 A: Ja, die Entwirrungsfunktion wurde speziell dafür entwickelt, verschachtelte Lesezeichen zu entwirren, die sich in benachbarten Tabellenzeilen befinden. Wenn sich die Lesezeichen nicht in benachbarten Zeilen befinden, ist diese Funktion nicht anwendbar.
 
-#### F: Wie kann ich verschachtelte Lesezeichen in meinem Word-Dokument identifizieren?
+#### F: Wie kann ich verschachtelte Lesezeichen in meinem Word-Dokument erkennen?
 
 A: Sie können verschachtelte Lesezeichen identifizieren, indem Sie die Lesezeichen im Dokument durchlaufen und prüfen, ob sich das Start-Lesezeichen und das End-Lesezeichen in benachbarten Tabellenzeilen befinden. Sie können den in diesem Artikel bereitgestellten Quellcode als Ausgangspunkt für die Implementierung dieser Funktionalität verwenden.
 

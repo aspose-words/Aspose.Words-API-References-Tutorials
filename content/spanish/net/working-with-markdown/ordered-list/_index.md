@@ -1,14 +1,14 @@
 ---
 title: Lista ordenada
 linktitle: Lista ordenada
-second_title: API de procesamiento de documentos de Aspose.Words
+second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda a crear una lista ordenada con Aspose.Words para la guía paso a paso de .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-markdown/ordered-list/
 ---
 
-En este ejemplo, explicaremos cómo usar la función de lista ordenada con Aspose.Words para .NET. La lista ordenada le permite organizar elementos secuencialmente con números.
+En este ejemplo, explicaremos cómo utilizar la funcionalidad de lista ordenada con Aspose.Words para .NET. La Lista ordenada le permite organizar elementos secuencialmente con números.
 
 ## Paso 1: usar un generador de documentos
 
@@ -19,9 +19,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 2: Aplicar el formato de lista ordenada
+## Paso 2: aplicar el formato de lista ordenada
 
- Aplicaremos el formato de lista ordenada usando el generador de documentos`ApplyBulletDefault`método. También podemos personalizar el formato de numeración yendo a los niveles de la lista y configurando el formato que queramos.
+ Aplicaremos el formato de lista ordenada usando el generador de documentos.`ApplyBulletDefault`método. También podemos personalizar el formato de numeración yendo a los niveles de la lista y configurando el formato que queramos.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
@@ -31,16 +31,16 @@ builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
 
 ## Paso 3: agregar elementos a la lista
 
- Podemos agregar elementos a la lista usando el generador de documentos`Writeln` método.
+ Podemos agregar elementos a la lista usando el generador de documentos.`Writeln` método.
 
 ```csharp
 builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## Paso 4: Aplicar sangría a la lista
+## Paso 4: sangrar la lista
 
- Podemos sangrar la lista usando el generador de documentos`ListIndent` método.
+ Podemos sangrar la lista usando el botón del generador de documentos.`ListIndent` método.
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -48,11 +48,11 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-## Paso 5: Guardar el documento
+## Paso 5: guardar el documento
 
-Finalmente, podemos guardar el documento en el formato deseado.
+Finalmente, podremos guardar el documento en el formato deseado.
 
-### Código fuente de ejemplo para lista ordenada con Aspose.Words para .NET
+### Código fuente de ejemplo para una lista ordenada con Aspose.Words para .NET
 
 ```csharp
 Document doc = new Document();
@@ -71,7 +71,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-¡Felicidades! Ahora ha aprendido a usar la función de lista ordenada con Aspose.Words para .NET.
+¡Enhorabuena! Ahora ha aprendido a utilizar la función de lista ordenada con Aspose.Words para .NET.
 
 
 ### Preguntas frecuentes
@@ -82,15 +82,15 @@ R: Para crear una lista ordenada en Markdown, comience cada elemento de la lista
 
 #### P: ¿Podemos anidar listas ordenadas en Markdown?
 
-R: Sí, es posible anidar listas ordenadas en Markdown agregando cuatro espacios de compensación delante de cada elemento de la lista anidada.
+R: Sí, es posible anidar listas ordenadas en Markdown agregando cuatro espacios de desplazamiento delante de cada elemento de la lista anidada.
 
 #### P: ¿Cómo personalizar la numeración de listas ordenadas?
 
-R: En Markdown estándar, la numeración de lista ordenada se genera automáticamente. Sin embargo, algunos editores de Markdown te permiten personalizarlo usando extensiones específicas.
+R: En Markdown estándar, la numeración de listas ordenadas se genera automáticamente. Sin embargo, algunos editores de Markdown te permiten personalizarlo usando extensiones específicas.
 
 #### P: ¿Las listas ordenadas en Markdown admiten sangría?
 
-R: Sí, las listas ordenadas en Markdown admiten la sangría. Puede agregar un desplazamiento a la izquierda usando espacios o tabulaciones.
+R: Sí, las listas ordenadas en Markdown admiten sangría. Puede agregar un desplazamiento a la izquierda usando espacios o tabulaciones.
 
 #### P: ¿Se pueden agregar enlaces o texto en línea a los elementos de la lista?
 

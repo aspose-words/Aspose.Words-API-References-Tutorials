@@ -2,7 +2,7 @@
 title: 用连字符连接语言单词
 linktitle: 用连字符连接语言单词
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中用连字符连接不同语言的单词。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中对不同语言的单词进行连字符。
 type: docs
 weight: 10
 url: /zh/net/working-with-hyphenation/hyphenate-words-of-languages/

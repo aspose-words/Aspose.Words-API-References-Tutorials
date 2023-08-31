@@ -1,14 +1,14 @@
 ---
 title: Mostra Nascondi contenuto con segnalibro nel documento di Word
 linktitle: Mostra Nascondi contenuto con segnalibro nel documento di Word
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come mostrare o nascondere il contenuto dei segnalibri nel documento di Word utilizzando Aspose.Words per .NET.
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come mostrare o nascondere il contenuto dei segnalibri nel documento Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Mostra Nascondi contenuto con segnalibro nella libreria Aspose.Words per .NET. Questa funzione consente di mostrare o nascondere il contenuto di un segnalibro nel documento di Word in base a una condizione specifica durante l'unione dei dati.
+In questo articolo, esploreremo il codice sorgente C# sopra riportato per capire come utilizzare la funzione Mostra Nascondi contenuto con segnalibri nella libreria Aspose.Words per .NET. Questa funzionalità consente di mostrare o nascondere il contenuto di un segnalibro in un documento Word in base a una condizione specifica durante l'unione dei dati.
 
 ## Prerequisiti
 
@@ -23,7 +23,7 @@ In questo articolo, esploreremo il codice sorgente C# sopra per capire come util
 Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## Passaggio 2: Inserimento dei campi di unione
+## Passaggio 2: inserimento dei campi di unione
 
  Usiamo un generatore di documenti`DocumentBuilder` per inserire i campi di unione necessari. Questi campi di unione imposteranno una condizione per mostrare o nascondere il contenuto del segnalibro a seconda del valore di`showHide` variabile:
 
@@ -40,11 +40,11 @@ builder. Write("\"");
 builder. Write(" \"\"");
 ```
 
-## Passaggio 3: spostamento del contenuto dei segnalibri
+## Passaggio 3: spostare il contenuto dei segnalibri
 
 Esaminiamo il contenuto del segnalibro e lo spostiamo in modo che appaia
 
-isse prima del segnalibro. Questo controllerà la visualizzazione o l'occultamento del contenuto in base alla condizione specificata:
+isse prima del segnalibro. Ciò controllerà la visualizzazione o l'occultamento del contenuto in base alla condizione specificata:
 
 ```csharp
 Node currentNode = field. Start;
@@ -82,17 +82,17 @@ while (currentNode != null && flag)
 }
 ```
 
-## Passaggio 5: eseguire l'unione
+## Passaggio 5: esecuzione dell'unione
 
- Noi usiamo il`Execute` metodo del documento`s `Stampa unione` object to execute the merge using the bookmark name and the value of the `mostraNascondi` variabile:
+ Noi usiamo il`Execute` metodo del documento`s `Stampa unione` object to execute the merge using the bookmark name and the value of the `mostraHide` variabile:
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 ```
 
-### Codice sorgente di esempio per Mostra Nascondi contenuto con segnalibro utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per Mostra Nascondi contenuto con segnalibri utilizzando Aspose.Words per .NET
 
-Ecco l'esempio completo del codice sorgente per mostrare o nascondere il contenuto dei segnalibri utilizzando Aspose.Words per .NET:
+Ecco l'esempio completo del codice sorgente per dimostrare come mostrare o nascondere il contenuto dei segnalibri utilizzando Aspose.Words per .NET:
 
 ```csharp
 
@@ -101,7 +101,7 @@ Ecco l'esempio completo del codice sorgente per mostrare o nascondere il contenu
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToDocumentEnd();
 
-	// {IF "{MERGEFIELD segnalibro}" = "vero" "" ""}
+	// {IF "{MERGEFIELD segnalibro}" = "true" "" ""}
 	Field field = builder.InsertField("IF \"", null);
 	builder.MoveTo(field.Start.NextSibling);
 	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
@@ -144,25 +144,25 @@ Ecco l'esempio completo del codice sorgente per mostrare o nascondere il contenu
 
 ## Conclusione
 
-In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzionalità Mostra Nascondi contenuto con segnalibro di Aspose.Words per .NET. Abbiamo seguito una guida dettagliata per mostrare o nascondere il contenuto di un segnalibro in base a una condizione specifica durante l'unione dei dati.
+In questo articolo, abbiamo esplorato il codice sorgente C# per comprendere come utilizzare la funzionalità Mostra Nascondi contenuto con segnalibri di Aspose.Words per .NET. Abbiamo seguito una guida passo passo per mostrare o nascondere il contenuto di un segnalibro in base a una condizione specifica durante l'unione dei dati.
 
-### Le domande frequenti per mostrare nascondono il contenuto con segnalibro nel documento di Word
+### Domande frequenti su Mostra nascondi contenuto con segnalibri nel documento Word
 
 #### D: Posso utilizzare la stessa condizione per più segnalibri nello stesso documento?
 
- R: Sì, puoi utilizzare la stessa condizione per più segnalibri nello stesso documento. Basta ripetere i passaggi 2-5 per ogni segnalibro, regolando il nome del segnalibro e facoltativamente il valore del file`showhide` variabile secondo necessità.
+ R: Sì, puoi utilizzare la stessa condizione per più segnalibri nello stesso documento. Basta ripetere i passaggi 2-5 per ciascun segnalibro, modificando il nome del segnalibro e facoltativamente il valore del file`showhide` variabile secondo necessità.
 
 #### D: Come posso aggiungere ulteriori condizioni per mostrare o nascondere il contenuto dei segnalibri?
 
- R: Per aggiungere più condizioni, puoi utilizzare operatori logici come`AND` E`OR` nel codice per l'inserimento dei campi di unione nel passaggio 2. Modificare la condizione nel codice seguente per aggiungere ulteriori condizioni:
+ R: Per aggiungere più condizioni, puoi utilizzare operatori logici come`AND` E`OR` nel codice per inserire i campi di unione nel passaggio 2. Modifica la condizione nel codice seguente per aggiungere ulteriori condizioni:
 
 ```csharp
 builder. Write("\" = \"true\" ");
 ```
 
-#### D: Come posso eliminare un segnalibro in un documento di Word utilizzando Aspose.Words per .NET?
+#### D: Come posso eliminare un segnalibro in un documento Word utilizzando Aspose.Words per .NET?
 
-A: Per rimuovere un segnalibro in un documento di Word utilizzando Aspose.Words per .NET, è possibile utilizzare il`Remove` metodo dal`Bookmarks` raccolta della gamma di documenti. Ecco un codice di esempio per l'eliminazione di un segnalibro specifico:
+R: Per rimuovere un segnalibro in un documento Word utilizzando Aspose.Words per .NET, è possibile utilizzare il file`Remove` metodo da`Bookmarks` raccolta della gamma di documenti. Ecco un codice di esempio per eliminare un segnalibro specifico:
 
 ```csharp
 doc.Range.Bookmarks.Remove(bookmarkName);
@@ -170,8 +170,8 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### D: La libreria Aspose.Words è gratuita?
 
- R: La libreria Aspose.Words è una libreria commerciale e richiede una licenza valida per essere utilizzata nei tuoi progetti. Puoi controllare[Aspose.Words per riferimenti API .NET](https://reference.aspose.com/words/net/) per ulteriori informazioni sulle opzioni di licenza e sui prezzi.
+ R: La libreria Aspose.Words è una libreria commerciale e richiede una licenza valida per l'utilizzo nei tuoi progetti. Puoi controllare[Aspose.Words per riferimenti API .NET](https://reference.aspose.com/words/net/) per saperne di più sulle opzioni di licenza e sui prezzi.
 
 #### D: Sono disponibili altre librerie per l'elaborazione di testi con documenti Word in .NET?
 
-R: Sì, sono disponibili altre librerie per l'elaborazione di testi con documenti Word in .NET, come Open XML SDK e GemBox.Document. Puoi esplorare queste librerie come alternative ad Aspose.Words in base alle tue esigenze e preferenze specifiche.
+R: Sì, sono disponibili altre librerie per l'elaborazione di parole con documenti Word in .NET, come Open XML SDK e GemBox.Document. Puoi esplorare queste librerie come alternative ad Aspose.Words in base alle tue esigenze e preferenze specifiche.

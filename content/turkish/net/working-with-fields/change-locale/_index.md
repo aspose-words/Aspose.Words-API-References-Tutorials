@@ -1,21 +1,21 @@
 ---
 title: Yerel Ayarı Değiştir
 linktitle: Yerel Ayarı Değiştir
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak Word belgelerinde tarih ve sayı biçimlendirmesi için yerel ayarı nasıl değiştireceğinizi öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak Word belgelerinde tarih ve sayı formatının yerel ayarını nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/change-locale/
 ---
 
-Bu öğreticide, Aspose.Words for .NET kullanarak Word belgelerinde yerel ayarı değiştirme sürecinde size rehberlik edeceğiz. Yerel ayarı değiştirerek, adres mektup birleştirme işlemleri sırasında tarih ve sayıların biçimlendirmesini kontrol edebilirsiniz. Bunu başarmak için size gerekli C# kaynak kodunu ve adım adım yönergeleri sağlayacağız.
+Bu eğitimde, Aspose.Words for .NET'i kullanarak Word belgelerindeki yerel ayarı değiştirme sürecinde size rehberlik edeceğiz. Yerel ayarı değiştirerek, adres-mektup birleştirme işlemleri sırasında tarihlerin ve sayıların biçimlendirmesini denetleyebilirsiniz. Bunu başarmak için size gerekli C# kaynak kodunu ve adım adım talimatları sağlayacağız.
 
 ## Önkoşullar
-Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
-- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
+Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kütüphanesi sisteminizde kuruludur.
 
-## 1. Adım: Bir Belge ve DocumentBuilder Oluşturun
-Başlamak için Document sınıfının bir örneğini ve DocumentBuilder nesnesini oluşturun:
+## 1. Adım: Bir Document ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfının bir örneğini ve bir DocumentBuilder nesnesini oluşturun:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,36 +23,36 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Bir Alan Ekleyin
-Ardından, InsertField yöntemini kullanarak belgeye bir birleştirme alanı ekleyin:
+## 2. Adım: Alan Ekleme
+Daha sonra InsertField yöntemini kullanarak belgeye bir birleştirme alanı ekleyin:
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-Yukarıdaki kodda, belgeye "Tarih" adlı bir birleştirme alanı ekliyoruz.
+Yukarıdaki kodda belgeye "Tarih" adında bir birleştirme alanı ekliyoruz.
 
 ## 3. Adım: Yerel Ayarı Değiştirin
-Tarih ve sayı biçimlendirmesi için yerel ayarı değiştirmek için, iş parçacığının geçerli kültürünü değiştirebilirsiniz. Bu örnekte, yerel ayarı Almanca ("de-DE") olarak ayarlayacağız:
+Tarih ve sayı biçimlendirmesinin yerel ayarını değiştirmek için, iş parçacığının geçerli kültürünü değiştirebilirsiniz. Bu örnekte yerel ayarı Almanca ("de-DE") olarak ayarlayacağız:
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-Yukarıdaki kodda, mevcut kültürü saklıyoruz ve ardından mevcut iş parçacığının kültürünü Almanca olarak ayarlıyoruz.
+Yukarıdaki kodda mevcut kültürü saklıyoruz ve ardından mevcut iş parçacığının kültürünü Almanca olarak ayarlıyoruz.
 
-## Adım 4: Adres Mektup Birleştirme Gerçekleştirin
-Bir adres-mektup birleştirme işlemi gerçekleştirin ve "Tarih" alanı için tarih değerini girin:
+## 4. Adım: Adres Mektup Birleştirmeyi Gerçekleştirin
+Adres-mektup birleştirme işlemi gerçekleştirin ve "Tarih" alanına tarih değerini girin:
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-Bu kod parçasında adres-mektup birleştirme işlemini yürütüyoruz ve "Tarih" alanı için geçerli tarihi değer olarak giriyoruz.
+Bu kod parçasında adres-mektup birleştirme işlemini gerçekleştirip "Tarih" alanına değer olarak güncel tarihi veriyoruz.
 
 ## 5. Adım: Orijinal Yerel Ayarı Geri Yükleyin
-Adres mektup birleştirme tamamlandıktan sonra, ileti dizisi için özgün kültürü geri yükleyin:
+Adres-mektup birleştirme tamamlandıktan sonra, iş parçacığının özgün kültürünü geri yükleyin:
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
@@ -60,15 +60,15 @@ Thread.CurrentThread.CurrentCulture = currentCulture;
 
 Yukarıdaki kodda, iş parçacığının orijinal kültürünü geri yüklüyoruz.
 
-## 6. Adım: Belgeyi Kaydedin
-Değiştirilen belgeyi Document sınıfının Save yöntemini kullanarak bir dosyaya kaydedin:
+## Adım 6: Belgeyi Kaydedin
+Değiştirilen belgeyi, Document sınıfının Save yöntemini kullanarak bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### Aspose.Words for .NET kullanarak Yerel Ayarı Değiştirmek için Örnek Kaynak Kodu
-Aspose.Words for .NET kullanarak Word belgelerinde yerel ayarı değiştirmek için eksiksiz kaynak kodu burada:
+### Aspose.Words for .NET Kullanarak Yerel Ayarı Değiştirmek için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak Word belgelerindeki yerel ayarı değiştirmek için tam kaynak kodu:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -88,11 +88,11 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
 ## Çözüm
-Tebrikler! Aspose.Words for .NET kullanarak Word belgelerinde yerel ayarı nasıl değiştireceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, adres mektup birleştirme işlemleri sırasında tarihlerin ve sayıların biçimlendirmesini artık kontrol edebilirsiniz. Belgelerinizde doğru ve tutarlı biçimlendirme sağlamak için yerel ayarı gereksinimlerinize göre özelleştirin.
+Tebrikler! Aspose.Words for .NET'i kullanarak Word belgelerindeki yerel ayarı nasıl değiştireceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve verilen kaynak kodunu kullanarak, artık adres-mektup birleştirme işlemleri sırasında tarih ve sayıların biçimlendirmesini kontrol edebilirsiniz. Belgelerinizde doğru ve tutarlı biçimlendirme sağlamak için yerel ayarı gereksinimlerinize göre özelleştirin.
 
-### SSS
+### SSS'ler
 
-#### S: Aspose.Words, Microsoft Word'ün farklı sürümleriyle uyumlu mu?
+#### S: Aspose.Words, Microsoft Word'ün farklı sürümleriyle uyumlu mudur?
 
 C: Evet, Aspose.Words, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 ve Word 2019 dahil olmak üzere Microsoft Word'ün farklı sürümleriyle uyumludur.
 
@@ -102,12 +102,12 @@ C: Kesinlikle! Aspose.Words, iç içe alanlar, hesaplamalar ve koşullu ifadeler
 
 #### S: Aspose.Words alan güncelleme işlemlerini destekliyor mu?
 
-C: Evet, Aspose.Words alanları bir programa göre güncellemenizi sağlar. API'yi kullanarak alan değerlerini kolayca güncelleyebilir, hesaplamaları yenileyebilir ve alanla ilgili diğer işlemleri gerçekleştirebilirsiniz.
+C: Evet, Aspose.Words alanları belirli bir programa göre güncellemenize olanak sağlar. API'yi kullanarak alan değerlerini kolayca güncelleyebilir, hesaplamaları yenileyebilir ve alanla ilgili diğer işlemleri gerçekleştirebilirsiniz.
 
-#### S: Aspose.Words kullanarak alanları düz metne dönüştürmek mümkün mü?
+#### S: Aspose.Words'ü kullanarak alanları düz metne dönüştürmek mümkün mü?
 
-C: Kesinlikle! Aspose.Words, alanları düz metne dönüştürmek için yöntemler sağlar. Bu, herhangi bir biçimlendirme veya alanla ilgili işlevsellik olmadan içeriği çıkarmanız gerektiğinde yararlı olabilir.
+C: Kesinlikle! Aspose.Words, alanları düz metne dönüştürmek için yöntemler sağlar. Bu, içeriği herhangi bir biçimlendirme veya alanla ilgili işlevsellik olmadan çıkarmanız gerektiğinde yararlı olabilir.
 
-#### S: Aspose.Words kullanarak dinamik alanlarla Word belgeleri oluşturmak mümkün mü?
+#### S: Aspose.Words'ü kullanarak dinamik alanlara sahip Word belgeleri oluşturmak mümkün müdür?
 
-C: Kesinlikle! Aspose.Words, dinamik alanlarla Word belgeleri oluşturmak için sağlam işlevsellik sunar. Belge üretimi için esnek ve verimli bir çözüm sağlayarak, önceden tanımlanmış alanlarla şablonlar oluşturabilir ve bunları dinamik olarak verilerle doldurabilirsiniz.
+C: Kesinlikle! Aspose.Words, dinamik alanlarla Word belgeleri oluşturmak için güçlü işlevsellik sunar. Önceden tanımlanmış alanlara sahip şablonlar oluşturabilir ve bunları dinamik olarak verilerle doldurarak belge oluşturma için esnek ve etkili bir çözüm sağlayabilirsiniz.

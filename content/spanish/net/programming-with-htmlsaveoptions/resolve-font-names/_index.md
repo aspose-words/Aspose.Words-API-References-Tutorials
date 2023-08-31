@@ -1,22 +1,22 @@
 ---
 title: Resolver nombres de fuentes
 linktitle: Resolver nombres de fuentes
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Guía paso a paso para resolver nombres de fuentes faltantes al convertir a HTML con Aspose.Words para .NET.
+second_title: API de procesamiento de documentos Aspose.Words
+description: Guía paso a paso para resolver nombres de fuentes que faltan al convertir a HTML con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 
-En este tutorial, lo guiaremos a través del código fuente de C# para resolver los nombres de fuentes faltantes con Aspose.Words para .NET. Esta característica le permite resolver automáticamente los nombres de fuentes faltantes al convertir un documento a HTML.
+En este tutorial, lo guiaremos a través del código fuente de C# para resolver los nombres de fuentes que faltan con Aspose.Words para .NET. Esta función le permite resolver automáticamente los nombres de fuentes que faltan al convertir un documento a HTML.
 
-## Paso 1: Configuración del proyecto
+## Paso 1: configuración del proyecto
 
-Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que en su proyecto se haga referencia a la biblioteca Aspose.Words para .NET.
 
-## Paso 2: Cargar el documento
+## Paso 2: cargar el documento
 
-En este paso cargaremos el documento a procesar. Use el siguiente código para cargar el documento desde un directorio específico:
+En este paso cargaremos el documento a procesar. Utilice el siguiente código para cargar el documento desde un directorio específico:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -25,9 +25,9 @@ Document doc = new Document(dataDir + "Missing font.docx");
 
  Este código crea una instancia de`Document` cargando el documento desde el directorio especificado.
 
-## Paso 3: Configuración de las opciones de copia de seguridad de HTML
+## Paso 3: configurar las opciones de copia de seguridad HTML
 
-Ahora configuraremos las opciones de guardado de HTML para resolver los nombres de fuentes faltantes durante la conversión. Usa el siguiente código:
+Ahora configuraremos las opciones de guardado de HTML para resolver los nombres de fuentes que faltan durante la conversión. Utilice el siguiente código:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
@@ -37,11 +37,11 @@ ResolveFontNames=true
 };
 ```
 
- Este código crea una instancia de`HtmlSaveOptions` establece el`ResolveFontNames` opción a`true` para resolver los nombres de fuentes que faltan al convertir a HTML. También el`PrettyFormat` la opción está configurada para`true` para obtener un código HTML bien formateado.
+ Este código crea una instancia de`HtmlSaveOptions` establece el`ResolveFontNames` opción de`true` para resolver nombres de fuentes que faltan al convertir a HTML. También el`PrettyFormat` La opción está configurada en`true` para obtener un código HTML con un buen formato.
 
-## Paso 4: Convertir y guardar el documento a HTML
+## Paso 4: convertir y guardar el documento a HTML
 
-Finalmente, convertiremos el documento a HTML utilizando las opciones de guardado de HTML configuradas anteriormente. Usa el siguiente código:
+Finalmente, convertiremos el documento a HTML usando las opciones de guardado de HTML configuradas anteriormente. Utilice el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptio
 
 Este código convierte el documento a HTML resolviendo automáticamente los nombres de fuentes que faltan y guarda el archivo HTML convertido en el directorio especificado.
 
-### Ejemplo de código fuente para resolver nombres de fuentes usando Aspose.Words para .NET
+### Código fuente de ejemplo para resolver nombres de fuentes usando Aspose.Words para .NET
 
 ```csharp
 

@@ -1,22 +1,22 @@
 ---
-title: Meta Dosyalarını Emf veya Wmf'ye Dönüştür
-linktitle: Meta Dosyalarını Emf veya Wmf'ye Dönüştür
-second_title: Aspose.Words Belge İşleme API'sı
+title: Meta Dosyalarını Emf veya Wmf'ye Dönüştürme
+linktitle: Meta Dosyalarını Emf veya Wmf'ye Dönüştürme
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile bir belgeyi HTML'ye dönüştürürken meta dosyalarını EMF veya WMF formatlarına dönüştürmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 ---
 
-Bu eğitimde, Aspose.Words for .NET ile meta dosyalarını EMF veya WMF formatına dönüştürmek için C# kaynak kodunda size yol göstereceğiz. Bu özellik, bir belgeyi HTML'ye dönüştürürken meta dosyası biçimindeki görüntüleri EMF veya WMF gibi daha uyumlu biçimlere dönüştürmenize olanak tanır.
+Bu eğitimde, Aspose.Words for .NET ile meta dosyalarını EMF veya WMF formatına dönüştürmek için C# kaynak kodunu anlatacağız. Bu özellik, bir belgeyi HTML'ye dönüştürürken meta dosyası biçimindeki görüntüleri EMF veya WMF gibi daha uyumlu biçimlere dönüştürmenize olanak tanır.
 
 ## Adım 1: Proje Kurulumu
 
-Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Projenizde Aspose.Words for .NET kütüphanesine başvurulduğundan emin olun.
 
-## 2. Adım: Belgeye bir resim ekleme
+## Adım 2: Belgeye resim ekleme
 
-Bu adımda, dönüştürülecek belgeye bir resim ekleyeceğiz. Bir HTML etiketi kullanarak bir veri kaynağından resim eklemek için aşağıdaki kodu kullanın:
+Bu adımda dönüştürülecek belgeye bir resim ekleyeceğiz. HTML etiketi kullanarak veri kaynağından resim eklemek için aşağıdaki kodu kullanın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -34,19 +34,19 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Bu kod, örneğini oluşturur`Document` Ve`DocumentBuilder` belgeyi oluşturmak için. bir ekler`<img>` base64 kodlu görüntü ile belgeye etiketleyin.
+ Bu kod bir örneğini oluşturur`Document` Ve`DocumentBuilder` belgeyi oluşturmak için. Bir ekler`<img>` belgeyi base64 kodlu bir görüntüyle etiketleyin.
 
 ## 3. Adım: HTML kaydetme seçeneklerini ayarlayın
 
-Şimdi, resimler için kullanılacak meta dosyası formatı da dahil olmak üzere HTML kaydetme seçeneklerini ayarlayacağız. Aşağıdaki kodu kullanın:
+Şimdi görüntüler için kullanılacak meta dosya formatı da dahil olmak üzere HTML kaydetme seçeneklerini ayarlayacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
 ```
 
- Bu kod, örneğini oluşturur`HtmlSaveOptions` ve ayarlar`MetafileFormat` ile`HtmlMetafileFormat.EmfOrWmf` HTML'ye dönüştürülürken meta dosyalarının EMF veya WMF biçimine dönüştürülmesi gerektiğini belirtmek için.
+ Bu kod bir örneğini oluşturur`HtmlSaveOptions` ve setler`MetafileFormat` ile`HtmlMetafileFormat.EmfOrWmf` HTML'ye dönüştürürken meta dosyalarının EMF veya WMF biçimine dönüştürülmesi gerektiğini belirtmek için.
 
-## 4. Adım: Belgeyi HTML'ye dönüştürme ve kaydetme
+## Adım 4: Belgeyi HTML'ye dönüştürme ve kaydetme
 
 Son olarak, daha önce tanımlanan HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
 
@@ -54,9 +54,9 @@ Son olarak, daha önce tanımlanan HTML kaydetme seçeneklerini kullanarak belge
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
 ```
 
-Bu kod, belgeyi HTML'ye dönüştürür ve ayarlanan kaydetme seçeneklerine bağlı olarak, dönüştürülen meta dosyalarıyla EMF veya WMF biçiminde bir dosyaya kaydeder.
+Bu kod, belgeyi HTML'ye dönüştürür ve ayarlanan kaydetme seçeneklerine bağlı olarak dönüştürülen meta dosyaları içeren EMF veya WMF formatında bir dosyaya kaydeder.
 
-### Aspose.Words for .NET kullanarak Meta Dosyalarını Emf veya Wmf'ye Dönüştürmek için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak Meta Dosyalarını Emf veya Wmf'ye Dönüştürme için örnek kaynak kodu
 
 ```csharp
 
@@ -81,6 +81,6 @@ Bu kod, belgeyi HTML'ye dönüştürür ve ayarlanan kaydetme seçeneklerine ba�
 
 ```
 
- içindeki belgeler dizinine giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.
+ Belgeler dizininin doğru yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-Artık bir belgeyi Aspose.Words for .NET kullanarak HTML'ye dönüştürürken meta dosyalarını EMF veya WMF formatlarına nasıl dönüştüreceğinizi öğrendiniz. Bu öğreticide sağlanan adım adım kılavuzu izleyerek, dönüştürülen HTML belgelerinizdeki meta dosyalarını kolayca yönetebilirsiniz.
+Artık Aspose.Words for .NET kullanarak bir belgeyi HTML'ye dönüştürürken meta dosyalarını EMF veya WMF formatlarına nasıl dönüştüreceğinizi öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek, dönüştürülen HTML belgelerinizdeki meta dosyaları kolayca yönetebilirsiniz.

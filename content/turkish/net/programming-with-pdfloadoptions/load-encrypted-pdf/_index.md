@@ -1,34 +1,34 @@
 ---
-title: Şifreli Pdf Yükle
-linktitle: Şifreli Pdf Yükle
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak şifreli bir PDF yüklemek için adım adım kılavuz.
+title: Şifreli PDF Yükle
+linktitle: Şifreli PDF Yükle
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak şifrelenmiş bir PDF yüklemek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 
-.NET uygulamanızda PDF belgeleriyle Kelime İşleme yaparken, parola korumalı PDF dosyalarını yüklemeniz gerekebilir. Aspose.Words for .NET, şifreli PDF belgelerini yüklemek için işlevsellik sağlayan güçlü bir kitaplıktır. Bu yazıda, bu özelliği anlamanız ve kullanmanız için size adım adım rehberlik edeceğiz.
+.NET uygulamanızda PDF belgeleriyle Kelime İşleme yaparken, parola korumalı PDF dosyalarını yüklemeniz gerekebilir. Aspose.Words for .NET, şifrelenmiş PDF belgelerinin yüklenmesine yönelik işlevsellik sağlayan güçlü bir kitaplıktır. Bu yazımızda bu özelliği anlamanız ve kullanmanız için size adım adım yol göstereceğiz.
 
-## Şifreli PDF Özelliğini Yüklemeyi Anlama
+## Şifreli PDF Yükleme Özelliğini Anlama
 
-Aspose.Words for .NET'in Şifreli PDF'yi Yükle özelliği, parola korumalı PDF dosyalarını yüklemenizi sağlar. İçeriğine erişebilmek ve gerektiği gibi değiştirebilmek için belgeyi yüklerken parolayı belirtebilirsiniz.
+Aspose.Words for .NET'in Şifreli PDF Yükle özelliği, şifre korumalı PDF dosyalarını yüklemenize olanak tanır. İçeriğine erişebilmeniz ve gerektiği gibi değiştirebilmeniz için belgeyi yüklerken parolayı belirleyebilirsiniz.
 
-## 1. Adım: Şifrelenmiş PDF Belgesini Yükleme
+## Adım 1: Şifreli PDF Belgesini Yükleme
 
 İlk adım, şifrelenmiş PDF belgesini uygulamanıza yüklemektir. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
-// Belgeler dizinine giden yol.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```
 
- Şifreli PDF dosyasına giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.
+ Şifrelenmiş PDF dosyasının doğru yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-## 2. Adım: PDF Belgesini Şifreleme
+## Adım 2: PDF Belgesini Şifreleme
 
- PDF belgenizi de şifrelemek istiyorsanız, bunu`PdfSaveOptions` sınıf ve şifreleme ayrıntılarını belirterek:
+ Ayrıca PDF belgenizi şifrelemek istiyorsanız, bunu kullanarak yapabilirsiniz.`PdfSaveOptions` sınıf ve şifreleme ayrıntılarını belirtme:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -38,21 +38,21 @@ EncryptionDetails = new PdfEncryptionDetails("Aspose", null)
 
 ```
 
-Bu, belirtilen dizinde PDF belgesinin şifreli bir sürümünü oluşturacaktır.
+Bu, belirtilen dizinde PDF belgesinin şifrelenmiş bir sürümünü oluşturacaktır.
 
-## 3. Adım: Şifrelenmiş PDF Belgesini Kaydetme
+## Adım 3: Şifrelenmiş PDF Belgesini Kaydetme
 
-PDF belgesini yükledikten ve isteğe bağlı olarak şifreledikten sonra, başka bir biçimde kaydedebilir veya özel ihtiyaçlarınıza göre daha fazla işleyebilirsiniz.
+PDF belgesini yükledikten ve isteğe bağlı olarak şifreledikten sonra, onu başka bir formatta kaydedebilir veya özel ihtiyaçlarınıza göre daha fazla işleyebilirsiniz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions);
 ```
 
-## 5. Adım: Şifreli PDF Belgesini Parolayla Yükleme
+## Adım 5: Şifreli PDF Belgesini Şifreyle Yükleme
 
-bakım
+Bakım
 
- Ancak, şifreli PDF belgesini bir parola ile yüklemek istiyorsanız,`PdfLoadOptions` class ve belgeyi yüklerken parolayı belirtin:
+ Ancak şifrelenmiş PDF belgesini bir parolayla yüklemek istiyorsanız,`PdfLoadOptions` belgeyi yüklerken sınıfı seçin ve şifreyi belirtin:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadFormat = LoadFormat.Pdf };
@@ -60,9 +60,9 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadForma
 doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", loadOptions);
 ```
 
- bölümünde doğru parolayı girdiğinizden emin olun.`Password` değişken.
+ Doğru şifreyi girdiğinizden emin olun.`Password` değişken.
 
-### Aspose.Words for .NET kullanarak Şifreli PDF Yükleme için Örnek Kaynak Kodu
+### Aspose.Words for .NET kullanarak Şifreli PDF Yüklemek için Örnek Kaynak Kodu
 
 ```csharp
 
@@ -85,6 +85,6 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Şifreli PDF Yükle özelliğinin nasıl kullanılacağını inceledik. Şifreli PDF dosyalarının nasıl yükleneceğini, bir PDF belgesinin nasıl şifreleneceğini, şifreli bir PDF'nin nasıl yükleneceği ve Markdown formatında nasıl çıktı alınacağını öğrendiniz. Bu özellik, güvenli PDF belgeleriyle Sözcük İşleme yaparken son derece kullanışlıdır.
+Bu yazıda Aspose.Words for .NET'in Şifreli PDF Yükle özelliğinin nasıl kullanılacağını araştırdık. Şifrelenmiş PDF dosyalarının nasıl yükleneceğini, bir PDF belgesinin nasıl şifreleneceğini, şifreli bir PDF'nin şifreyle nasıl yükleneceğini ve Markdown formatında nasıl çıktı oluşturulacağını öğrendiniz. Bu özellik, güvenli PDF belgeleriyle Kelime İşleme yaparken son derece kullanışlıdır.
 
 

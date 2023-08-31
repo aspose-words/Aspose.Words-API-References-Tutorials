@@ -1,22 +1,22 @@
 ---
-title: Convertir Metarchivos a Svg
-linktitle: Convertir Metarchivos a Svg
-second_title: API de procesamiento de documentos de Aspose.Words
+title: Convertir metarchivos a SVG
+linktitle: Convertir metarchivos a SVG
+second_title: API de procesamiento de documentos Aspose.Words
 description: Guía paso a paso para convertir metarchivos a formato SVG al convertir un documento a HTML con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
 
-En este tutorial, lo guiaremos a través del código fuente de C# para convertir metarchivos al formato SVG con Aspose.Words para .NET. Esta función le permite convertir metarchivos a formato SVG al convertir un documento a HTML.
+En este tutorial, lo guiaremos a través del código fuente de C# para convertir metarchivos al formato SVG con Aspose.Words para .NET. Esta función le permite convertir metarchivos al formato SVG al convertir un documento a HTML.
 
-## Paso 1: Configuración del proyecto
+## Paso 1: configuración del proyecto
 
-Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que en su proyecto se haga referencia a la biblioteca Aspose.Words para .NET.
 
-## Paso 2: Insertar una imagen SVG en el documento
+## Paso 2: insertar una imagen SVG en el documento
 
-En este paso, insertaremos una imagen SVG en el documento a convertir. Use el siguiente código para insertar una imagen SVG usando una etiqueta HTML:
+En este paso, insertaremos una imagen SVG en el documento a convertir. Utilice el siguiente código para insertar una imagen SVG usando una etiqueta HTML:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -33,19 +33,19 @@ builder.InsertHtml(
 
  Este código crea una instancia de`Document` y`DocumentBuilder` para construir el documento. Se inserta un`<svg>` etiqueta que contiene un`<polygon>` elemento con atributos para definir la forma y el estilo de la imagen SVG.
 
-## Paso 3: establece las opciones de guardado de HTML
+## Paso 3: configurar las opciones de guardado de HTML
 
-Ahora configuraremos las opciones de guardado de HTML, especificando que los metarchivos deben convertirse al formato SVG. Usa el siguiente código:
+Ahora configuraremos las opciones de guardado de HTML, especificando que los metarchivos deben convertirse al formato SVG. Utilice el siguiente código:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Svg };
 ```
 
- Este código crea una instancia de`HtmlSaveOptions` y conjuntos`MetafileFormat` a`HtmlMetafileFormat.Svg` para especificar que los metarchivos deben convertirse a formato SVG al convertirlos a HTML.
+ Este código crea una instancia de`HtmlSaveOptions` y conjuntos`MetafileFormat` a`HtmlMetafileFormat.Svg` para especificar que los metarchivos deben convertirse al formato SVG al convertir a HTML.
 
-## Paso 4: Convertir y guardar el documento a HTML
+## Paso 4: convertir y guardar el documento a HTML
 
-Finalmente, convertiremos el documento a HTML utilizando las opciones de guardado de HTML definidas anteriormente. Usa el siguiente código:
+Finalmente, convertiremos el documento a HTML usando las opciones de guardar HTML definidas anteriormente. Utilice el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
@@ -53,7 +53,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", save
 
 Este código convierte el documento a HTML y lo guarda en un archivo con los metarchivos convertidos a SVG.
 
-### Ejemplo de código fuente para convertir metarchivos a Svg usando Aspose.Words para .NET
+### Código fuente de ejemplo para convertir metarchivos a SVG usando Aspose.Words para .NET
 
 ```csharp
 

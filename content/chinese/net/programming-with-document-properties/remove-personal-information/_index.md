@@ -44,7 +44,7 @@ doc.RemovePersonalInformation = true;
 doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.docx");
 ```
 
-此代码将删除个人信息的文档保存到新文件中。
+此代码将删除了个人信息的文档保存到新文件中。
 
 ### 使用 Aspose.Words for .NET 删除个人信息的示例源代码
 

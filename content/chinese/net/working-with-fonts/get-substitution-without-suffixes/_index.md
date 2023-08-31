@@ -82,6 +82,6 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 答：不，无法在 Aspose.Words 中禁用为字体替换添加后缀。默认添加后缀以确保文档兼容性和一致性。
 
-#### 问：如何在 Aspose.Words 中的字体替换中过滤掉不需要的后缀？
+#### 问：如何在 Aspose.Words 中过滤掉字体替换中不需要的后缀？
 
 答：要过滤掉 Aspose.Words 中字体替换中不需要的后缀，可以使用字符串处理技术，例如使用`Replace`或者`Substring`删除您不想包含的特定后缀的方法。

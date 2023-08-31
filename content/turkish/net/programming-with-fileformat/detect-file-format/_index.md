@@ -1,20 +1,20 @@
 ---
-title: Belge Dosya Biçimini Algıla
-linktitle: Belge Dosya Biçimini Algıla
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile belge dosyası biçimini algılamak için adım adım kılavuz.
+title: Belge Dosya Formatını Algıla
+linktitle: Belge Dosya Formatını Algıla
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile belge dosya formatını algılamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-fileformat/detect-file-format/
 ---
 
-Bu makale, belge dosyası biçimi algılama özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, farklı belge dosyalarının biçimini nasıl tespit edeceğinizi anlayabileceksiniz.
+Bu makale, belge dosyası formatı algılama özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına ilişkin adım adım bir kılavuz sağlar. Kodun her bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda farklı belge dosyalarının formatının nasıl tespit edileceğini anlayabileceksiniz.
 
-Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
+Başlamadan önce projenize Aspose.Words for .NET kütüphanesini kurup yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
 ## 1. Adım: Dizinleri tanımlayın
 
- Başlamak için, dosyaları formatlarına göre depolamak istediğiniz dizinleri tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla. "Supported", "Unknown", "Encrypted" ve "Pre97" dizinleri mevcut değilse oluşturuyoruz.
+ Başlamak için, dosyaları formatlarına göre saklamak istediğiniz dizinleri tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile. Henüz mevcut değilse "Desteklenen", "Bilinmeyen", "Şifrelenmiş" ve "Pre97" dizinlerini oluşturuyoruz.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,7 +23,7 @@ string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-// Zaten yoksa dizinleri oluşturun.
+// Henüz mevcut değilse dizinleri oluşturun.
 if (Directory.Exists(supportedDir) == false)
 Directory.CreateDirectory(supportedDir);
 if (Directory.Exists(unknownDir) == false)
@@ -36,15 +36,15 @@ Directory.CreateDirectory(pre97Dir);
 
 ## 2. Adım: Dosyalara Göz Atın
 
- Sonra kullanırız`GetFiles` yöntemi`Directory` belirtilen dizindeki dosyaların listesini almak için sınıf. Ayrıca bir`Where`yan tümcesi "Bozuk belge.docx" adlı belirli bir dosyayı hariç tutmak için.
+ Daha sonra şunu kullanırız:`GetFiles` yöntemi`Directory` Belirtilen dizindeki dosyaların listesini almak için sınıf. Ayrıca bir tane kullanıyoruz`Where`"Bozuk belge.docx" adlı belirli bir dosyayı hariç tutmak için yan tümce.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## 3. Adım: Her dosyanın biçimini algılayın
+## 3. Adım: Her dosyanın formatını tespit edin
 
- Listedeki her dosya arasında dolaşıyoruz ve`DetectFileFormat` yöntemi`FileFormatUtil` dosyanın biçimini algılamak için sınıf. Ayrıca algılanan belge türünü de görüntüleriz.
+ Listedeki her dosyanın üzerinden geçiyoruz ve`DetectFileFormat` yöntemi`FileFormatUtil` Dosyanın biçimini algılamak için sınıf. Ayrıca tespit edilen belge türünü de görüntüleriz.
 
 ```csharp
 foreach (string fileName in fileList)
@@ -54,7 +54,7 @@ Console.Write(nameOnly);
 
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-// Belge türünü göster
+// Belge türünü görüntüle
 switch (info.LoadFormat)
 {
 LoadFormat.Doc box:
@@ -66,7 +66,7 @@ break;
 LoadFormat.Docx box:
 Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
 break;
-// ... Desteklenen diğer belge biçimleri için servis talepleri ekleyin
+// ... Desteklenen diğer belge biçimleri için vakalar ekleyin
 LoadFormat.Unknown case:
 Console.WriteLine("\tFormat in
 
@@ -99,7 +99,7 @@ break;
 
 Bu kadar ! Aspose.Words for .NET'i kullanarak farklı belge dosyalarının formatını başarıyla tespit ettiniz.
 
-### Aspose.Words for .NET ile dosya biçimi tespiti için örnek kaynak kodu
+### Aspose.Words for .NET ile dosya formatı tespiti için örnek kaynak kodu
 
 ```csharp
 
@@ -110,7 +110,7 @@ Bu kadar ! Aspose.Words for .NET'i kullanarak farklı belge dosyalarının forma
 	string encryptedDir = dataDir + "Encrypted";
 	string pre97Dir = dataDir + "Pre97";
 
-	// Zaten yoksa dizinleri oluşturun.
+	// Henüz mevcut değilse dizinleri oluşturun.
 	if (Directory.Exists(supportedDir) == false)
 		Directory.CreateDirectory(supportedDir);
 	if (Directory.Exists(unknownDir) == false)
@@ -131,7 +131,7 @@ Bu kadar ! Aspose.Words for .NET'i kullanarak farklı belge dosyalarının forma
 		
 		FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-		// Belge türünü göster
+		// Belge türünü görüntüle
 		switch (info.LoadFormat)
 		{
 			case LoadFormat.Doc:
@@ -209,22 +209,22 @@ Bu kadar ! Aspose.Words for .NET'i kullanarak farklı belge dosyalarının forma
 
 ### Belge dosyası formatı tespiti için SSS
 
-#### Aspose.Words for .NET kullanılarak bir belge dosyasının formatı nasıl belirlenir?
+#### Aspose.Words for .NET kullanılarak bir belge dosyasının formatı nasıl tespit edilir?
 
- Aspose.Words for .NET kullanarak bir belge dosyasının formatını algılamak için eğitimde verilen adımları takip edebilirsiniz. Kullanmak`DetectFileFormat` yöntemi`FileFormatUtil`class, belge dosyasının biçimini algılamanıza izin verecektir. Bu, Microsoft Word 97-2003 belgesi mi, şablon mu, Office Açık XML WordprocessingML belgesi mi yoksa desteklenen diğer biçimler mi olduğunu belirlemenize olanak tanır. Öğreticide sağlanan kod, bu özelliği uygularken size yol gösterecektir.
+ Aspose.Words for .NET kullanarak bir belge dosyasının formatını tespit etmek için eğitimde verilen adımları takip edebilirsiniz. Kullanmak`DetectFileFormat` yöntemi`FileFormatUtil`class belge dosyasının formatını tespit etmenize izin verecektir. Bu, bunun bir Microsoft Word 97-2003 belgesi mi, bir şablon mu, bir Office Açık XML WordprocessingML belgesi mi yoksa desteklenen diğer formatlar mı olduğunu belirlemenize olanak tanır. Eğitimde sağlanan kod, bu özelliğin uygulanmasında size yol gösterecektir.
 
 #### Aspose.Words for .NET hangi belge formatlarını destekliyor?
 
-Aspose.Words for .NET, Microsoft Word 97-2003 belgeleri (DOC), Şablonlar (DOT), Office Open XML WordprocessingML belgeleri (DOCX), Office Open XML WordprocessingML belgeleri (DOCM), Office Open gibi çeşitli belge biçimlerini destekler. Makrosuz XML WordprocessingML şablonları (DOTX), Makrolu Office Open XML WordprocessingML şablonları (DOTM), Flat OPC belgeleri, RTF belgeleri, Microsoft Word 2003 WordprocessingML belgeleri, HTML belgeleri, MHTML (Web arşivi) belgeleri, OpenDocument Text (ODT) belgeleri, OpenDocument Metin (OTT) şablonları, MS Word 6 veya Word 95 belgeleri ve bilinmeyen belge biçimleri.
+Aspose.Words for .NET, Microsoft Word 97-2003 belgeleri (DOC), Şablonlar (DOT), Office Açık XML Kelime İşlemeML belgeleri (DOCX), Makrolu Office Açık XML Kelime İşlemeML belgeleri (DOCM), Office Open dahil olmak üzere çeşitli belge formatlarını destekler XML Kelime İşlemeMakro içermeyen ML şablonları (DOTX), Makrolu Office Açık XML Kelime İşlemeML şablonları (DOTM), Düz OPC belgeleri, RTF belgeleri, Microsoft Word 2003 Kelime İşlemeML belgeleri, HTML belgeleri, MHTML (Web arşivi) belgeleri, OpenDocument Metni (ODT) belgeleri, OpenDocument Metni (OTT) şablonları, MS Word 6 veya Word 95 belgeleri ve bilinmeyen belge biçimleri.
 
-#### Biçim tespiti sırasında şifrelenmiş belge dosyaları nasıl işlenir?
+#### Biçim algılama sırasında şifrelenmiş belge dosyaları nasıl işlenir?
 
- Bir belge dosyasının biçimini algılarken,`IsEncrypted` mülkiyeti`FileFormatInfo` dosyanın şifrelenip şifrelenmediğini kontrol etmek için nesne. Dosya şifrelenmişse, bu özel durumla başa çıkmak için dosyayı şifrelenmiş belgelere ayrılmış bir dizine kopyalamak gibi ek adımlar atabilirsiniz. kullanabilirsiniz`File.Copy` bunu yapmak için yöntem.
+ Bir belge dosyasının formatını tespit ederken,`IsEncrypted` mülkiyeti`FileFormatInfo` Dosyanın şifrelenip şifrelenmediğini kontrol etmek için nesne. Dosya şifrelenmişse, bu özel durumu ele almak için dosyayı şifrelenmiş belgelere ayrılmış bir dizine kopyalamak gibi ek adımlar uygulayabilirsiniz. Şunu kullanabilirsiniz:`File.Copy` bunu yapmanın yöntemi.
 
-#### Bir belgenin formatı bilinmediğinde hangi işlemler yapılmalıdır?
+#### Bir belgenin formatı bilinmediğinde ne gibi işlemler yapılmalıdır?
 
-Bir belgenin biçimi bilinmediğinde, onu uygulamanıza özel bir şekilde işlemeye karar verebilirsiniz. Öğreticide verilen örnekte, belge, biçimi bilinmeyen belgelere ayrılmış belirli bir dizine kopyalanmıştır. Bu eylemi özel ihtiyaçlarınıza uyacak şekilde özelleştirebilirsiniz.
+Bir belgenin formatı bilinmiyorsa, onu uygulamanıza özel bir şekilde ele almaya karar verebilirsiniz. Eğitimde verilen örnekte belge, bilinmeyen formattaki belgelere ayrılmış belirli bir dizine kopyalanır. Bu eylemi özel ihtiyaçlarınıza uyacak şekilde özelleştirebilirsiniz.
 
-#### Aspose.Words for .NET'in belge formatı tespiti ile birlikte kullanılabilecek başka özellikleri var mı?
+#### Aspose.Words for .NET'in belge formatı algılamayla birlikte kullanılabilecek başka özellikleri var mı?
 
-Evet, Aspose.Words for .NET, Word belgelerini işlemek ve değiştirmek için birçok başka özellik sunar. Örneğin, belgelerden metin, resim veya meta veri ayıklamak, biçimlendirme değişiklikleri uygulamak, belgeleri birleştirmek, belgeleri farklı biçimlere dönüştürmek ve daha fazlası için kitaplığı kullanabilirsiniz.
+Evet, Aspose.Words for .NET, Word belgelerinin işlenmesi ve işlenmesi için birçok başka özellik sunar. Örneğin, belgelerden metin, görüntü veya meta veriler çıkarmak, biçimlendirme değişiklikleri uygulamak, belgeleri birleştirmek, belgeleri farklı biçimlere dönüştürmek ve daha fazlası için kitaplığı kullanabilirsiniz.

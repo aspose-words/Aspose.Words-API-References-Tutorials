@@ -1,6 +1,6 @@
 ---
-title: Skriv alla Css-regler i en fil
-linktitle: Skriv alla Css-regler i en fil
+title: Skriv alla CSS-regler i en fil
+linktitle: Skriv alla CSS-regler i en fil
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du konverterar ett Word-dokument till fast HTML genom att skriva alla CSS-regler i en enda fil med Aspose.Words för .NET.
 type: docs

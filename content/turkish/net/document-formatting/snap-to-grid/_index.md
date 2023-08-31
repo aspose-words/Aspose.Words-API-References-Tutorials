@@ -1,35 +1,35 @@
 ---
-title: Word Belgesinde Kılavuza Yapış
-linktitle: Word Belgesinde Kılavuza Yapış
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile word belgesi özelliğinde Snap to Grid'in C# kaynak kodunu açıklayan adım adım kılavuz.
+title: Word Belgesinde Izgaraya Yapış
+linktitle: Word Belgesinde Izgaraya Yapış
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile Word belgesindeki Snap to Grid özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/document-formatting/snap-to-grid/
 ---
-Bu eğitimde, Aspose.Words for .NET ile Word belgesinde Grid'e Sığdır özelliğini nasıl kullanacağınız konusunda size yol göstereceğiz. Kaynak kodunu anlamak ve değişiklikleri uygulamak için aşağıdaki adımları izleyin.
+Bu eğitimde, Aspose.Words for .NET ile Word belgesinde Grid'e Yapış özelliğini nasıl kullanacağınız konusunda size yol göstereceğiz. Kaynak kodunu anlamak ve değişiklikleri uygulamak için aşağıdaki adımları izleyin.
 
 ## 1. Adım: Belgeyi oluşturma ve yapılandırma
 
 Başlamak için yeni bir belge ve ilişkili bir DocumentBuilder nesnesi oluşturun. İşte nasıl:
 
 ```csharp
-// Belgeler dizinine giden yol.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Izgara Hizalaması
+## Adım 2: Izgara Hizalaması
 
-Şimdi ızgara hizalamasını belirli bir paragrafa ve paragrafta kullanılan yazı tipine uygulayacağız. İşte nasıl:
+Şimdi belirli bir paragrafa ve paragrafta kullanılan yazı tipine ızgara hizalamasını uygulayacağız. İşte nasıl:
 
 ```csharp
 // Paragraf için ızgara hizalamasını etkinleştir
 Paragraph by = doc.FirstSection.Body.FirstParagraph;
 par.ParagraphFormat.SnapToGrid = true;
 
-// Paragrafta metin yaz
+// Paragraftaki metni yazın
 builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" +
                  "tempor incident ut labore et dolore magna aliqua.");
 
@@ -39,15 +39,15 @@ par.Runs[0].Font.SnapToGrid = true;
 
 ## 3. Adım: Belgeyi kaydetme
 
- Metin giriş formu alanını ekledikten sonra, belgeyi istenen konuma kaydedin.`Save` yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
+ Metin giriş formu alanını ekledikten sonra, belgeyi kullanarak belgeyi istediğiniz konuma kaydedin.`Save` yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
 
 ```csharp
 doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 ```
 
-### Aspose.Words for .NET kullanan Grid'e Yapış için örnek kaynak kodu
+### Aspose.Words for .NET kullanan Snap To Grid için örnek kaynak kodu
 
-Aspose.Words for .NET ile Izgaraya Sığdır özelliğinin tam kaynak kodu burada:
+Aspose.Words for .NET ile Grid'e Yapış özelliğinin tam kaynak kodunu burada bulabilirsiniz:
 
 ```csharp
 
@@ -69,30 +69,30 @@ Aspose.Words for .NET ile Izgaraya Sığdır özelliğinin tam kaynak kodu burad
 
 ```
 
-Bu kodla, Aspose.Words for .NET kullanarak metninizi ızgaraya hizalayabilecek ve belgenizin görünümünü optimize edebileceksiniz.
+Bu kodla metninizi ızgaraya göre hizalayabilecek ve Aspose.Words for .NET'i kullanarak belgenizin görünümünü optimize edebileceksiniz.
 
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde Kılavuza Yapış özelliğini kullanma sürecini inceledik. Belirtilen adımları izleyerek paragraflar ve yazı tipleri için ızgara hizalamasını etkinleştirebilir, görsel olarak hoş ve iyi organize edilmiş bir belge düzeni sağlayabilirsiniz.
+Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde Izgaraya Yapış özelliğini kullanma sürecini inceledik. Özetlenen adımları izleyerek paragraflar ve yazı tipleri için ızgara hizalamasını etkinleştirerek görsel olarak hoş ve iyi organize edilmiş bir belge düzeni sağlayabilirsiniz.
 
-### SSS
+### SSS'ler
 
-#### S: Bir Word belgesinde Kılavuza Yapış nedir?
+#### S: Word belgesinde Izgaraya Yapış nedir?
 
-C: Kılavuza Yapış, Word belgelerinde metin ve resimler gibi nesneleri bir ızgara sistemine hizalayan bir özelliktir. Bu, özellikle karmaşık mizanpajlar veya Asya karakterleriyle uğraşırken yararlı olan hassas konumlandırma ve düzgün hizalama sağlar.
+C: Izgaraya Yapış, Word belgelerinde metin ve görüntüler gibi nesneleri bir ızgara sistemine hizalayan bir özelliktir. Bu, hassas konumlandırma ve düzgün hizalama sağlar; özellikle karmaşık düzenler veya Asya karakterleriyle uğraşırken faydalıdır.
 
-#### S: Izgaraya Yasla belgenin görünümünü nasıl iyileştirir?
+#### S: Izgaraya Yapış bir belgenin görünümünü nasıl iyileştirir?
 
-C: Kılavuza Yapış, nesneler için tutarlı hizalamayı koruyarak bir belgenin görünümünü iyileştirir. Metnin ve diğer öğelerin yanlış hizalanmış veya üst üste binmiş görünmesini engelleyerek profesyonel ve gösterişli bir düzen sağlar.
+C: Izgaraya Yapış, nesneler için tutarlı hizalamayı koruyarak belgenin görünümünü iyileştirir. Metnin ve diğer öğelerin yanlış hizalanmış veya üst üste binmiş görünmesini önleyerek profesyonel ve gösterişli bir düzen sağlar.
 
-#### S: Belgemdeki belirli paragraflara veya yazı tiplerine Kılavuza Yasla uygulayabilir miyim?
+#### S: Belgemdeki belirli paragraflara veya yazı tiplerine Izgaraya Yasla uygulayabilir miyim?
 
- C: Evet, belgenizdeki belirli paragraflara veya yazı tiplerine Kılavuza Yasla uygulayabilirsiniz. etkinleştirerek`ParagraphFormat.SnapToGrid` Ve`Font.SnapToGrid` özellikler, ızgara hizalamasını paragraf başına veya yazı tipi bazında kontrol edebilirsiniz.
+ C: Evet, Izgaraya Yasla özelliğini belgenizdeki belirli paragraflara veya yazı tiplerine uygulayabilirsiniz. Etkinleştirerek`ParagraphFormat.SnapToGrid` Ve`Font.SnapToGrid` özelliklerinde, ızgara hizalamasını paragraf başına veya yazı tipi başına kontrol edebilirsiniz.
 
-#### S: Aspose.Words for .NET, Word belgelerinde Grid'e Yapış için tek çözüm mü?
+#### S: Aspose.Words for .NET, Word belgelerinde Grid'e Snap için tek çözüm mü?
 
-Y: Aspose.Words for .NET, Word belgelerinde Grid'e Yapış uygulamak için mevcut çözümlerden biridir. Başka yöntemler ve araçlar da var ama Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için güçlü API'ler ve özellikler sağlıyor.
+C: Aspose.Words for .NET, Word belgelerinde Grid'e Snap uygulamak için mevcut çözümlerden biridir. Başka yöntemler ve araçlar da var, ancak Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için güçlü API'ler ve özellikler sağlıyor.
 
 #### S: Aspose.Words for .NET'i diğer belge özellikleriyle çalışmak için kullanabilir miyim?
 

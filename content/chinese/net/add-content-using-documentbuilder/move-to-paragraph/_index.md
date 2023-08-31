@@ -76,7 +76,7 @@ builder.Writeln("This is the 3rd paragraph.");
 
 #### 问：我可以使用“移至段落”功能修改段落内容吗？
 
-答：是的，一旦使用 MoveToParagraph 将 DocumentBuilder 定位到所需的段落，您就可以使用 DocumentBuilder 类的各种方法（例如 Writeln、Write 或 InsertHtml）来添加或修改该段落的内容。
+答：是的，一旦使用 MoveToParagraph 将 DocumentBuilder 定位到所需段落，您就可以使用 DocumentBuilder 类的各种方法（例如 Writeln、Write 或 InsertHtml）来添加或修改该段落的内容。
 
 #### 问：如果指定的段落索引超出文档范围会怎样？
 

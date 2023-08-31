@@ -1,14 +1,14 @@
 ---
-title: Word Belgesini PDF 1.7'ye Dönüştür
-linktitle: Word Belgesini PDF 1.7'ye Dönüştür
-second_title: Aspose.Words Belge İşleme API'sı
+title: Word Belgesini PDF'ye Dönüştürme 1.7
+linktitle: Word Belgesini PDF'ye Dönüştürme 1.7
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile word belgesini PDF 1.7'ye nasıl dönüştüreceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/conversion-to-pdf-17/
 ---
 
-Bu eğitimde, Aspose.Words for .NET ile word belgesini PDF 1.7'ye dönüştürme adımlarında size yol göstereceğiz. PDF 1.7'ye dönüştürmek, PDF 1.7 standardına uygun PDF dosyaları oluşturmanıza olanak tanır. Aşağıdaki adımları takip et:
+Bu eğitimde, Aspose.Words for .NET ile word belgesini PDF 1.7'ye nasıl dönüştüreceğiniz adımlarında size yol göstereceğiz. PDF 1.7'ye dönüştürme, PDF 1.7 standardına uygun PDF dosyaları oluşturmanıza olanak tanır. Aşağıdaki adımları takip et:
 
 ## 1. Adım: Belgeyi yükleme
 
@@ -19,9 +19,9 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Belgenize giden doğru yolu belirttiğinizden emin olun.
+Belgenizin doğru yolunu belirttiğinizden emin olun.
 
-## 2. Adım: PDF Dönüştürme Seçeneklerini Ayarlayın
+## Adım 2: PDF Dönüştürme Seçeneklerini Ayarlayın
 
 PdfSaveOptions sınıfının bir örneğini oluşturun ve kullanmak istediğiniz PDF standardının sürümünü belirtin:
 
@@ -33,7 +33,7 @@ Bu seçenek, oluşturulan PDF dosyasının PDF 1.7 standardına uygun olmasını
 
 ## 3. Adım: Belgeyi PDF'ye Dönüştürün
 
- Kullan`Save` dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi:
+ Kullan`Save` Dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOptions);
@@ -41,9 +41,9 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOption
 
 Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
 
-### Aspose.Words for .NET kullanarak PDF 17'ye Dönüştürme için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak Pdf 17'ye Dönüştürme için örnek kaynak kodu
 
-Aspose.Words for .NET ile PDF 1.7'ye dönüştürmek için kaynak kodun tamamı burada:
+Aspose.Words for .NET ile PDF 1.7'ye dönüştürmek için gereken kaynak kodun tamamı burada:
 
 ```csharp
 
@@ -57,32 +57,32 @@ Aspose.Words for .NET ile PDF 1.7'ye dönüştürmek için kaynak kodun tamamı 
 
 ```
 
-Bu adımları izleyerek Aspose.Words for .NET ile kolayca PDF 1.7'ye dönüştürebilirsiniz.
+Bu adımları takip ederek Aspose.Words for .NET ile kolayca PDF 1.7'ye dönüştürebilirsiniz.
 
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinin PDF 1.7'ye nasıl dönüştürüleceğini açıkladık. Açıklanan adımları izleyerek, PDF 1.7 standardına uygun PDF dosyalarını kolayca oluşturabilirsiniz. Word belgenize giden doğru yolu belirttiğinizden ve gerektiğinde PDF'ye dönüştürme seçeneklerini yapılandırdığınızdan emin olun. PDF 1.7'ye dönüştürme, farklı platformlarda optimum uyumluluk ve okunabilirlik sağlar.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinin PDF 1.7'ye nasıl dönüştürüleceğini açıkladık. Açıklanan adımları takip ederek PDF 1.7 standardına uygun PDF dosyalarını kolaylıkla oluşturabilirsiniz. Word belgenizin doğru yolunu belirttiğinizden ve PDF'ye dönüştürme seçeneklerini gerektiği gibi yapılandırdığınızdan emin olun. PDF 1.7'ye dönüştürme, farklı platformlarda optimum uyumluluk ve okunabilirlik sağlar.
 
 ### Sıkça Sorulan Sorular
 
 #### S: Word'den PDF 1.7'ye dönüştürme nedir?
-Y: Word belgelerini PDF 1.7'ye dönüştürmek, PDF 1.7 standardına uygun PDF dosyaları oluşturmaktır. Bu standart, farklı platformlarda optimum uyumluluk ve okunabilirlik sağlayan PDF dosyaları için özellikleri ve gereksinimleri belirtir.
+C: Word belgelerini PDF 1.7'ye dönüştürmek, PDF 1.7 standardına uygun PDF dosyaları oluşturmaktır. Bu standart, farklı platformlarda optimum uyumluluk ve okunabilirliği mümkün kılan PDF dosyalarının özelliklerini ve gereksinimlerini belirtir.
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesini PDF 1.7'ye nasıl dönüştürebilirim?
 C: Aspose.Words for .NET kullanarak bir Word belgesini PDF 1.7'ye dönüştürmek için şu adımları izleyin:
 
- Değiştirerek belgelerinizin bulunduğu dizin yolunu ayarlayın.`"YOUR DOCUMENTS DIRECTORY"` belgeler dizininizin gerçek yolu ile.
+ Belgelerinizin bulunduğu dizin yolunu değiştirerek ayarlayın.`"YOUR DOCUMENTS DIRECTORY"` belge dizininizin gerçek yolu ile.
 
- kullanarak PDF'ye dönüştürmek istediğiniz Word belgesini yükleyin.`Document` sınıfı ve belirtilen belgeler dizinindeki Word belgesinin yolunu belirtin.
+ PDF'ye dönüştürmek istediğiniz Word belgesini kullanarak yükleyin.`Document` sınıfını seçin ve belirtilen belgeler dizinindeki Word belgesinin yolunu belirtin.
 
- örneğini oluşturarak dönüştürmeyi PDF seçenekleri olarak yapılandırın.`PdfSaveOptions`kullanarak kullanmak istediğiniz PDF standardının sürümünü belirtin ve belirtin.`Compliance` değeri olan özellik`PdfCompliance. Pdf17` PDF 1.7 standardına uygun bir PDF dosyası oluşturmak için.
+ Bir örneğini oluşturarak dönüştürmeyi PDF olarak yapılandırma seçenekleri`PdfSaveOptions`sınıfını seçin ve kullanmak istediğiniz PDF standardının sürümünü belirtin.`Compliance` değeri olan mülk`PdfCompliance. Pdf17` PDF 1.7 standardına uygun bir PDF dosyası oluşturmak için.
 
- kullanarak belgeyi PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
+ Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
 
 #### S: Aspose.Words for .NET ile PDF 1.7'ye dönüştürmenin faydaları nelerdir?
 C: Aspose.Words for .NET ile PDF 1.7'ye dönüştürmenin avantajları şunlardır:
 
 PDF 1.7 Uyumlu: PDF 1.7'ye dönüştürmek, oluşturulan PDF dosyasının PDF 1.7 uyumlu olmasını sağlayarak farklı platformlarda uyumluluk ve okunabilirlik sağlar.
 
-Belge Biçimlendirme Koruması: Aspose.Words for .NET, biçimlendirmeyi, görüntüleri ve stilleri koruyarak doğru Word belgesi dönüştürmesini sağlar ve sonuçta orijinaline sadık bir PDF dosyası elde edilir.
+Belge Formatının Korunması: Aspose.Words for .NET, formatı, görüntüleri ve stilleri koruyarak Word belgesinin doğru dönüştürülmesini sağlar ve sonuçta orijinaline sadık bir PDF dosyası elde edilir.

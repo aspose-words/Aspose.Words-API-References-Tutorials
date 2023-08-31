@@ -1,14 +1,14 @@
 ---
-title: Código cercado
-linktitle: Código cercado
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a usar la función de código delimitado con Aspose.Words para la guía paso a paso de .NET.
+title: Código vallado
+linktitle: Código vallado
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda a utilizar la función de código delimitado con la guía paso a paso de Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-markdown/fenced-code/
 ---
 
-En este ejemplo, lo guiaremos a través de cómo usar la función de código delimitado con Aspose.Words para .NET. El código delimitado se utiliza para representar bloques de código con un formato específico.
+En este ejemplo, le explicaremos cómo utilizar la función de código delimitado con Aspose.Words para .NET. El código delimitado se utiliza para representar bloques de código con un formato específico.
 
 ## Paso 1: usar un generador de documentos
 
@@ -20,22 +20,22 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Paso 2: agregar un estilo para el código delimitado
 
- Agregaremos un estilo personalizado para el código delimitado usando el`Styles.Add` metodo de la`Document` objeto. En este ejemplo, estamos creando un estilo llamado "FencedCode" para el código delimitado.
+ Agregaremos un estilo personalizado para el código cercado usando el`Styles.Add` método de la`Document` objeto. En este ejemplo, estamos creando un estilo llamado "FencedCode" para el código delimitado.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
 builder.ParagraphFormat.Style = fencedCode;
 ```
 
-## Paso 3: Agregar código delimitado sin información
+## Paso 3: agregar código delimitado sin información
 
-Ahora podemos agregar un bloque de código cercado sin una cadena de información usando el estilo personalizado "FencedCode".
+Ahora podemos agregar un bloque de código delimitado sin cadena de información utilizando el estilo personalizado "FencedCode".
 
 ```csharp
 builder.Writeln("This is an fenced code");
 ```
 
-## Paso 4: Agregar código delimitado con cadena de información
+## Paso 4: agregue código delimitado con cadena de información
 
 También podemos agregar un bloque de código delimitado con una cadena de información usando otro estilo personalizado. En este ejemplo, estamos creando un estilo llamado "FencedCode.C#" para representar un bloque de código C#.
 
@@ -45,10 +45,10 @@ builder.ParagraphFormat.Style = fencedCodeWithInfo;
 builder.Writeln("This is a fenced code with info string");
 ```
 
-### Código fuente de ejemplo para Código cercado usando Aspose.Words para .NET
+### Código fuente de ejemplo para código protegido usando Aspose.Words para .NET
 
 ```csharp
-// Use un generador de documentos para agregar contenido al documento.
+// Utilice un generador de documentos para agregar contenido al documento.
 DocumentBuilder builder = new DocumentBuilder();
 
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
@@ -64,17 +64,17 @@ builder.Writeln("This is a fenced code with info string");
 
 #### P: ¿Qué es el código delimitado en Markdown?
 
-R: El código delimitado en Markdown es un método de formato que se utiliza para mostrar el código en un documento de Markdown. Consiste en enmarcar el código con delimitadores específicos.
+R: El código delimitado en Markdown es un método de formato utilizado para mostrar código en un documento de Markdown. Consiste en enmarcar el código con delimitadores específicos.
 
 #### P: ¿Cuáles son los beneficios del código delimitado en Markdown?
 
-R: El código delimitado en Markdown mejora la legibilidad del código y facilita la comprensión de los lectores. También permite conservar el resaltado de sintaxis en algunos editores de Markdown.
+R: El código delimitado en Markdown mejora la legibilidad del código y lo hace más fácil de entender para los lectores. También permite preservar el resaltado de sintaxis en algunos editores de Markdown.
 
-#### P: ¿Cuál es la diferencia entre el código delimitado y el sangrado en Markdown?
+#### P: ¿Cuál es la diferencia entre código delimitado y con sangría en Markdown?
 
-R: El código delimitado usa delimitadores específicos para encerrar el código, mientras que el código sangrado implica sangrar cada línea de código con espacios o tabulaciones.
+R: El código delimitado utiliza delimitadores específicos para encerrar el código, mientras que el código sangrado implica sangrar cada línea de código con espacios o tabulaciones.
 
-#### P: ¿El código delimitado en Markdown es compatible con todos los editores de Markdown?
+#### P: ¿Todos los editores de Markdown admiten el código delimitado en Markdown?
 
-R: La compatibilidad con el código delimitado en Markdown puede variar entre los editores de Markdown. Consulte la documentación específica de su editor para estar seguro.
+R: La compatibilidad con código delimitado en Markdown puede variar entre los editores de Markdown. Consulte la documentación específica de su editor para estar seguro.
 

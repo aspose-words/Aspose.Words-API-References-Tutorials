@@ -1,21 +1,21 @@
 ---
-title: Copia Sezione
-linktitle: Copia Sezione
-second_title: Aspose.Words API di elaborazione dei documenti
+title: Sezione Copia
+linktitle: Sezione Copia
+second_title: API di elaborazione dei documenti Aspose.Words
 description: In questo tutorial, scopri come copiare una sezione da un documento Word a un altro documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-section/copy-section/
 ---
 
-In questo tutorial, spiegheremo come copiare una sezione da un documento Word a un altro documento utilizzando la libreria Aspose.Words per .NET. La copia di una sezione consente di trasferire una sezione specifica da un documento di origine a un documento di destinazione. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
+In questo tutorial spiegheremo come copiare una sezione da un documento Word a un altro documento utilizzando la libreria Aspose.Words per .NET. La copia di una sezione consente di trasferire una sezione specifica da un documento di origine a un documento di destinazione. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
 
 ## Prerequisiti
 Prima di iniziare, assicurati di avere i seguenti elementi:
-- Conoscenza operativa del linguaggio di programmazione C#
+- Una conoscenza pratica del linguaggio di programmazione C#
 - La libreria Aspose.Words per .NET installata nel tuo progetto
 - Un documento di origine contenente la sezione che desideri copiare
-- Un documento di destinazione vuoto in cui si desidera copiare la sezione
+- Un documento di destinazione vuoto in cui desideri copiare la sezione
 
 ## Passaggio 1: definire la directory dei documenti
  Innanzitutto, devi impostare il percorso della directory in cui si trovano i tuoi documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: caricare i documenti di origine e di destinazione
- Successivamente, caricheremo il documento di origine in un'istanza di`Document` classe chiamata`srcDoc` . Creeremo anche un'istanza vuota del file`Document` classe chiamata`dstDoc` per il documento di destinazione.
+ Successivamente, caricheremo il documento sorgente in un'istanza del file`Document` classe chiamata`srcDoc` . Creeremo anche un'istanza vuota del file`Document` classe chiamata`dstDoc` per il documento di destinazione.
 
 ```csharp
 // Carica il documento di origine
@@ -48,14 +48,14 @@ Section newSection = (Section)dstDoc.ImportNode(sourceSection, true);
 dstDoc.Sections.Add(newSection);
 ```
 
-## Passaggio 4: salvare il documento di destinazione
+## Passaggio 4: salva il documento di destinazione
 Infine, salveremo il documento di destinazione con la sezione copiata in un file.
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 ```
 
-### Esempio di codice sorgente per Copia sezione utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per Copia sezione utilizzando Aspose.Words per .NET 
 
 ```csharp
 
@@ -72,17 +72,17 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 ```
 
 ## Conclusione
-In questo tutorial abbiamo visto come copiare una sezione da un documento Word ad un altro documento utilizzando Aspose.Words per .NET. La copia di sezioni consente di trasferire facilmente sezioni specifiche da un documento di origine a un documento di destinazione. Sentiti libero di utilizzare questo metodo per organizzare e manipolare in modo efficiente le sezioni dei tuoi documenti.
+In questo tutorial, abbiamo visto come copiare una sezione da un documento Word a un altro documento utilizzando Aspose.Words per .NET. La copia delle sezioni consente di trasferire facilmente sezioni specifiche da un documento di origine a un documento di destinazione. Sentiti libero di utilizzare questo metodo per organizzare e manipolare in modo efficiente le sezioni dei tuoi documenti.
 
-### FAQ
+### Domande frequenti
 
-#### D: Quali sono i prerequisiti per copiare una sezione da un documento Word a un altro documento utilizzando Aspose.Words per .NET?
+#### D: Quali sono i prerequisiti per copiare una sezione da un documento di Word a un altro documento utilizzando Aspose.Words per .NET?
 
 R: Prima di iniziare, assicurati di avere i seguenti elementi:
-- Conoscenza operativa del linguaggio di programmazione C#
-- La libreria Aspose.Words per .NET installata nel progetto
+- Una conoscenza pratica del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
 - Un documento di origine contenente la sezione che desideri copiare
-- Un documento di destinazione vuoto in cui si desidera copiare la sezione
+- Un documento di destinazione vuoto in cui desideri copiare la sezione
 
 #### D: Come impostare la directory dei documenti in Aspose.Words per .NET?
 
@@ -93,7 +93,7 @@ R: Prima di iniziare, assicurati di avere i seguenti elementi:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-#### D: Come caricare documenti di origine e destinazione in Aspose.Words per .NET?
+#### D: Come caricare i documenti di origine e di destinazione in Aspose.Words per .NET?
 
  R: Per caricare il documento di origine in un'istanza del file`Document` classe chiamata`srcDoc` e creare un'istanza vuota di`Document` classe chiamata`dstDoc` per il documento di destinazione è possibile utilizzare il seguente codice:
 

@@ -1,22 +1,22 @@
 ---
 title: Meta Dosyalarını Svg'ye Dönüştür
 linktitle: Meta Dosyalarını Svg'ye Dönüştür
-second_title: Aspose.Words Belge İşleme API'sı
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile bir belgeyi HTML'ye dönüştürürken meta dosyalarını SVG formatına dönüştürmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
 
-Bu eğitimde, Aspose.Words for .NET ile meta dosyalarını SVG formatına dönüştürmek için C# kaynak kodunda size yol göstereceğiz. Bu özellik, bir belgeyi HTML'ye dönüştürürken meta dosyalarını SVG formatına dönüştürmenizi sağlar.
+Bu eğitimde, Aspose.Words for .NET ile meta dosyalarını SVG formatına dönüştürmek için C# kaynak kodunu anlatacağız. Bu özellik, bir belgeyi HTML'ye dönüştürürken meta dosyalarını SVG formatına dönüştürmenize olanak tanır.
 
 ## Adım 1: Proje Kurulumu
 
-Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Projenizde Aspose.Words for .NET kütüphanesine başvurulduğundan emin olun.
 
-## 2. Adım: Belgeye bir SVG görüntüsü ekleme
+## 2. Adım: Belgeye bir SVG resmi ekleme
 
-Bu adımda, dönüştürülecek belgeye bir SVG görüntüsü ekleyeceğiz. Bir HTML etiketi kullanarak bir SVG resmi eklemek için aşağıdaki kodu kullanın:
+Bu adımda dönüştürülecek belgeye bir SVG resmi ekleyeceğiz. HTML etiketi kullanarak bir SVG resmi eklemek için aşağıdaki kodu kullanın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -31,29 +31,29 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Bu kod, örneğini oluşturur`Document` Ve`DocumentBuilder` belgeyi oluşturmak için. bir ekler`<svg>` içeren etiket`<polygon>` SVG görüntüsünün şeklini ve stilini tanımlayan niteliklere sahip öğe.
+ Bu kod bir örneğini oluşturur`Document` Ve`DocumentBuilder` belgeyi oluşturmak için. Bir ekler`<svg>` içeren etiket`<polygon>` SVG görüntüsünün şeklini ve stilini tanımlayan niteliklere sahip öğe.
 
 ## 3. Adım: HTML kaydetme seçeneklerini ayarlayın
 
-Şimdi meta dosyaların SVG biçimine dönüştürülmesi gerektiğini belirterek HTML kaydetme seçeneklerini ayarlayacağız. Aşağıdaki kodu kullanın:
+Şimdi meta dosyalarının SVG formatına dönüştürülmesi gerektiğini belirterek HTML kaydetme seçeneklerini ayarlayacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Svg };
 ```
 
- Bu kod, örneğini oluşturur`HtmlSaveOptions` ve ayarlar`MetafileFormat` ile`HtmlMetafileFormat.Svg` meta dosyalarının HTML'ye dönüştürülürken SVG biçimine dönüştürülmesi gerektiğini belirtmek için.
+ Bu kod bir örneğini oluşturur`HtmlSaveOptions` ve setler`MetafileFormat` ile`HtmlMetafileFormat.Svg` HTML'ye dönüştürürken meta dosyalarının SVG formatına dönüştürülmesi gerektiğini belirtmek için.
 
-## 4. Adım: Belgeyi HTML'ye dönüştürme ve kaydetme
+## Adım 4: Belgeyi HTML'ye dönüştürme ve kaydetme
 
-Son olarak, daha önce tanımlanan HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
+Son olarak, daha önce tanımladığımız HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 ```
 
-Bu kod, belgeyi HTML'ye dönüştürür ve meta dosyalarının SVG'ye dönüştürüldüğü bir dosyaya kaydeder.
+Bu kod, belgeyi HTML'ye dönüştürür ve meta dosyaların SVG'ye dönüştürüldüğü bir dosyaya kaydeder.
 
-### Aspose.Words for .NET kullanarak Meta Dosyalarını Svg'ye Dönüştürmek için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak Meta Dosyalarını Svg'ye Dönüştürme için örnek kaynak kodu
 
 ```csharp
 

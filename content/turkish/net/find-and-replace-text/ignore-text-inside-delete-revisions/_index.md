@@ -1,34 +1,34 @@
 ---
-title: İçindeki Metni Yoksay Düzeltmeleri Sil
-linktitle: İçindeki Metni Yoksay Düzeltmeleri Sil
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET'in "İçindeki Metni Yoksay Revizyonları Sil" özelliğini nasıl kullanacağınızı öğrenin.
+title: İçerideki Metni Yoksay Revizyonları Sil
+linktitle: İçerideki Metni Yoksay Revizyonları Sil
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'in "Düzeltmelerin İçindeki Metni Yoksay, Düzeltmeleri Yoksay" özelliğini nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 
-Bu makalede, Aspose.Words for .NET kitaplığındaki "İçerideki Metni Yoksay, Düzeltmeleri Sil" özelliğinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belgelerle Kelime İşleme yaparken silme revizyonlarındaki metni yok saymak istediğimizde kullanışlıdır.
+Bu makalede, Aspose.Words for .NET kütüphanesindeki "İçerdeki Metni Silme Düzeltmelerini Yoksay" özelliğinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belgelerle Kelime İşleme sırasında silme revizyonlarının içindeki metni göz ardı etmek istediğimizde kullanışlıdır.
 
-## Aspose.Words for .NET kitaplığına genel bakış
+## Aspose.Words for .NET kütüphanesine genel bakış
 
-Kod detaylarına geçmeden önce Aspose.Words for .NET kütüphanesini kısaca tanıtmama izin verin. .NET uygulamalarında Word belgeleri oluşturmaya, değiştirmeye ve dönüştürmeye olanak sağlayan güçlü bir kitaplıktır. Revizyon yönetimi de dahil olmak üzere belgelerle Kelime İşleme için birçok gelişmiş özellik sunar.
+Kod detaylarına girmeden önce Aspose.Words for .NET kütüphanesini kısaca tanıtayım. .NET uygulamalarında Word belgelerinin oluşturulmasına, değiştirilmesine ve dönüştürülmesine olanak tanıyan güçlü bir kütüphanedir. Revizyon yönetimi de dahil olmak üzere belgelerle Kelime İşleme için birçok gelişmiş özellik sunar.
 
-## "İçindeki Metni Yoksay, Düzeltmeleri Sil" özelliğini anlama
+## "Düzeltmelerin İçindeki Metni Yoksay Silme" özelliğini anlama
 
-Aspose.Words for .NET'teki "Revizyonların İçindeki Metni Yoksay" özelliği, metin bulma ve değiştirme gibi belirli işlemler sırasında silme revizyonlarının içindeki metnin göz ardı edilip edilmeyeceğini belirlemenizi sağlar. Bu özellik etkinleştirildiğinde, revizyonların içindeki silinen metinler işlemler sırasında dikkate alınmaz.
+Aspose.Words for .NET'teki "Silme Düzeltmelerinin İçindeki Metni Yoksay" özelliği, metni bulma ve değiştirme gibi belirli işlemler sırasında revizyon silme içindeki metnin göz ardı edilip edilmeyeceğini belirlemenize olanak tanır. Bu özellik etkinleştirildiğinde, revizyonların içindeki silinen metinler işlemler sırasında dikkate alınmaz.
 
-## 1. Adım: Aspose.Words for .NET kullanarak yeni bir belge oluşturma
+## Adım 1: Aspose.Words for .NET kullanarak yeni bir belge oluşturma
 
- Bir belgedeki metni değiştirmeye başlamadan önce Aspose.Words for .NET kullanarak yeni bir belge oluşturmamız gerekiyor. Bir örneğini oluşturarak yapılabilir`Document` nesne:
+ Bir belgedeki metni değiştirmeye başlamadan önce Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmamız gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` nesne:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## 2. Adım: Düzeltilmemiş metni belgeye ekleme
+## Adım 2: Düzeltilmemiş metni belgeye ekleme
 
- Bir belgemiz olduğunda, incelenmemiş metni bir a kullanarak ekleyebiliriz.`DocumentBuilder` nesne. Örneğin, "Silinmiş Metin" metnini eklemek için şunu kullanabiliriz:`Writeln` Ve`Write` yöntemler:
+ Bir belgeye sahip olduğumuzda, incelenmemiş metni bir`DocumentBuilder` nesne. Örneğin, "Silinmiş Metin" metnini eklemek için şunu kullanabiliriz:`Writeln` Ve`Write` yöntemler:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -36,9 +36,9 @@ builder. Writen("Deleted");
 builder. Write("Text");
 ```
 
-## 3. Adım: Düzeltmeleri izleyerek bir paragrafı kaldırma
+## 3. Adım: Düzeltmeleri takip ederek bir paragrafı kaldırma
 
-"Revizyonların İçindeki Metni Yoksay Sil" özelliğinin kullanımını göstermek için, revizyon izlemeyi kullanarak belgeden bir paragraf sileceğiz. Bu, bu özelliğin sonraki işlemleri nasıl etkilediğini görmemizi sağlayacaktır.
+"Revizyonları Sil İçerdeki Metni Yoksay" özelliğinin kullanımını göstermek için, revizyon izlemeyi kullanarak belgeden bir paragrafı sileceğiz. Bu, bu özelliğin sonraki işlemleri nasıl etkilediğini görmemizi sağlayacaktır.
 
 ```csharp
 doc.StartTrackRevisions("author", DateTime.Now);
@@ -46,9 +46,9 @@ doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## Adım 4: "İçindeki Metni Yoksay Düzeltmeleri Sil" özelliğini uygulama
+## 4. Adım: "Düzeltmelerin İçindeki Metni Yoksay Silme" özelliğini uygulama
 
- Artık bir paragrafı silerek belgemizi hazırladığımıza göre, "Ignore Text Inside Delete Revizyonları" özelliğini bir paragraf silerek etkinleştirebiliriz.`FindReplaceOptions` nesne. biz ayarlayacağız`IgnoreDeleted` mülkiyet`true`:
+ Artık bir paragrafı silerek belgemizi hazırladığımıza göre, "İçerdeki Metni Sil Revizyonları Yoksay" özelliğini kullanarak etkinleştirebiliriz.`FindReplaceOptions` nesne. biz ayarlayacağız`IgnoreDeleted` mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -56,7 +56,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
 ## 5. Adım: Bul ve değiştir için normal ifadeleri kullanma
 
-Belge metni üzerinde arama ve değiştirme işlemlerini gerçekleştirmek için normal ifadeler kullanacağız. Örneğimizde, "e" harfinin geçtiği tüm yerleri arayacağız ve bunları bir yıldız işaretiyle değiştireceğiz "* ". .AÇIK`Regex` sınıf bunun için kullanılır:
+Belge metni üzerinde arama ve değiştirme işlemlerini gerçekleştirmek için normal ifadeleri kullanacağız. Örneğimizde "e" harfinin geçtiği tüm yerleri arayacağız ve bunları yıldız işaretiyle değiştireceğiz "* ". .AÇIK`Regex` Bunun için sınıf kullanılır:
 
 ```csharp
 Regex regex = new Regex("e");
@@ -65,43 +65,43 @@ doc.Range.Replace(regex, "*", options);
 
 ## Adım 6: Değiştirilen belge çıktısının görüntülenmesi
 
-Ara ve değiştir işlemini uyguladıktan sonra, belgenin değişen içeriğini kullanarak görüntüleyebiliriz.`GetText` yöntem:
+Arama ve değiştirmeyi uyguladıktan sonra, belgenin değişen içeriğini aşağıdaki komutu kullanarak görüntüleyebiliriz:`GetText` yöntem:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## 7. Adım: Silinmiş metni dahil etmek için seçenekleri değiştirme
+## 7. Adım: Silinen metni içerecek şekilde seçenekleri değiştirme
 
- Çıktı sonucuna silinen metni dahil etmek istiyorsak, silinen metni yok saymamak için seçenekleri değiştirebiliriz. Bunun için ayarlayacağımız`IgnoreDeleted` mülkiyet`false`:
+ Silinen metni çıktı sonucuna dahil etmek istiyorsak, seçenekleri silinen metni göz ardı etmeyecek şekilde değiştirebiliriz. Bunun için ayarlayacağız`IgnoreDeleted` mülkiyet`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
 ```
 
-## Adım 8: Değiştirilen belgenin silinmiş metinle çıktısını alma
+## Adım 8: Değiştirilen belgenin silinmiş metinle çıktısının alınması
 
-Seçenekleri değiştirdikten sonra, silinen metnin dahil olduğu sonucu almak için aramayı gerçekleştirebilir ve tekrar değiştirebiliriz:
+Seçenekleri değiştirdikten sonra, aramayı gerçekleştirebilir ve silinen metnin dahil olduğu sonucu elde etmek için tekrar değiştirebiliriz:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-### Aspose.Words for .NET kullanan Revizyonları Sil İçerideki Metni Yoksay için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak İçerdeki Metni Yoksay Revizyonları Silme için örnek kaynak kodu
 
-Aspose.Words for .NET ile "İçerideki Metni Yoksay, Revizyonları Sil" özelliğinin kullanımını gösteren tam örnek kaynak kodunu burada bulabilirsiniz:
+Aspose.Words for .NET ile "İçerdeki Metni Silme Düzeltmelerini Yoksay" özelliğinin kullanımını gösteren tam örnek kaynak kodunu burada bulabilirsiniz:
 
 ```csharp
         
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// Düzeltilmemiş metin ekleyin.
+	// Düzeltilmemiş metni ekleyin.
 	builder.Writeln("Deleted");
 	builder.Write("Text");
 
-	// İzleme revizyonları ile ilk paragrafı kaldırın.
+	// Düzeltmeleri takip ederek ilk paragrafı kaldırın.
 	doc.StartTrackRevisions("author", DateTime.Now);
 	doc.FirstSection.Body.FirstParagraph.Remove();
 	doc.StopTrackRevisions();
@@ -122,29 +122,29 @@ Aspose.Words for .NET ile "İçerideki Metni Yoksay, Revizyonları Sil" özelli�
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'te "İçerideki Metni Yoksay, Düzeltmeleri Sil" özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bu özellik, belgeleri işlerken silme revizyonlarının içindeki metni yok saymak için kullanışlıdır. Belge oluşturmak, metin eklemek, revizyon izleme ile paragraf silmek, "İçerideki Metni Yoksay Revizyonları Sil" özelliğini uygulamak, bul ve değiştir işlemlerini gerçekleştirmek için adım adım bir kılavuz izledik.
+Bu makalede, Aspose.Words for .NET'te "İçerdeki Metni Silme Düzeltmelerini Yoksay" özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bu özellik, belgeleri düzenlerken silme revizyonlarının içindeki metni göz ardı etmek için kullanışlıdır. Bir belge oluşturmak, metin eklemek, revizyon takibi ile bir paragrafı silmek, "Revizyonları Silme İçindeki Metni Yoksay" özelliğini uygulamak ve bul ve değiştir işlemlerini gerçekleştirmek için adım adım bir kılavuz izledik.
 
-### SSS
+### SSS'ler
 
-#### S: Aspose.Words for .NET'te "İçerideki Metni Yoksay, Revizyonları Sil" işlevi nedir?
+#### S: Aspose.Words for .NET'teki "Revizyonları Sil İçerdeki Metni Yoksay" işlevi nedir?
 
-A: Aspose.Words for .NET'teki "Revizyonların İçindeki Metni Yoksay" işlevi, metin bulma ve değiştirme gibi belirli işlemler sırasında silme revizyonlarının içindeki metnin göz ardı edilip edilmeyeceğini belirlemenizi sağlar. Bu özellik etkinleştirildiğinde, revizyonların içindeki silinen metinler işlemler sırasında dikkate alınmaz.
+C: Aspose.Words for .NET'teki "Silme Düzeltmelerinin İçindeki Metni Yoksay" işlevi, metin bulma ve değiştirme gibi belirli işlemler sırasında revizyon silme içindeki metnin göz ardı edilip edilmeyeceğini belirlemenize olanak tanır. Bu özellik etkinleştirildiğinde, revizyonların içindeki silinen metinler işlemler sırasında dikkate alınmaz.
 
 #### S: Aspose.Words for .NET nedir?
 
-Y: Aspose.Words for .NET, Word belgelerini oluşturmak, düzenlemek ve .NET uygulamalarına dönüştürmek için güçlü bir kitaplıktır. Revizyon yönetimi de dahil olmak üzere belgelerle Kelime İşleme için birçok gelişmiş özellik sunar.
+C: Aspose.Words for .NET, Word belgelerini oluşturmak, düzenlemek ve .NET uygulamalarına dönüştürmek için kullanılan güçlü bir kütüphanedir. Revizyon yönetimi de dahil olmak üzere belgelerle Kelime İşleme için birçok gelişmiş özellik sunar.
 
 #### S: Aspose.Words for .NET'te yeni bir belge nasıl oluşturulur?
 
- C: Bir belgedeki metni değiştirmeye başlamadan önce, Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmanız gerekir. Bu, bir örneği başlatarak yapılabilir.`Document` nesne. İşte yeni bir belge oluşturmak için örnek bir kod:
+ C: Bir belgedeki metni değiştirmeye başlamadan önce Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmanız gerekir. Bu, bir örneği başlatarak yapılabilir.`Document` nesne. Yeni bir belge oluşturmak için örnek kod aşağıda verilmiştir:
 
 ```csharp
 Document doc = new Document();
 ```
 
-#### S: Düzenlenmemiş metni Aspose.Words for .NET kullanarak bir belgeye nasıl ekleyebilirim?
+#### S: Aspose.Words for .NET kullanarak bir belgeye düzenlenmemiş metin nasıl eklenir?
 
- Y: Bir belgeniz olduğunda, incelenmemiş metni`DocumentBuilder` nesne. Örneğin, "Silinmiş Metin" metnini eklemek için`Writeln` Ve`Write` yöntemler:
+ C: Bir belgeye sahip olduğunuzda, incelenmemiş metni bir`DocumentBuilder` nesne. Örneğin, "Silinmiş Metin" metnini eklemek için`Writeln` Ve`Write` yöntemler:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -152,9 +152,9 @@ builder.Writen("Deleted");
 builder.Write("Text");
 ```
 
-#### S: Aspose.Words for .NET'te revizyon takibi olan bir paragrafı nasıl silerim?
+#### S: Aspose.Words for .NET'te revizyon izlemeli bir paragrafı nasıl silebilirim?
 
-C: "Revizyonların İçindeki Metni Yoksay Sil" işlevinin kullanımını göstermek için, revizyon izlemeyi kullanarak belgeden bir paragraf sileceğiz. Bu, bu fonksiyonun sonraki işlemleri nasıl etkilediğini görmemizi sağlayacaktır.
+C: "Revizyonları Sil İçerdeki Metni Yoksay" işlevinin kullanımını göstermek için, revizyon izlemeyi kullanarak belgeden bir paragrafı sileceğiz. Bu, bu fonksiyonun sonraki işlemleri nasıl etkilediğini görmemizi sağlayacaktır.
 
 ```csharp
 doc.StartTrackRevisions("author", DateTime.Now);
@@ -162,17 +162,17 @@ doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-#### S: Aspose.Words for .NET'te "İçerideki Metni Yoksay, Revizyonları Sil" özelliği nasıl etkinleştirilir?
+#### S: Aspose.Words for .NET'te "Revizyonların İçindeki Metni Yoksay, Düzeltmeleri Yoksay" özelliği nasıl etkinleştirilir?
 
- C: Artık bir paragrafı silerek belgemizi hazırladığımıza göre, "İçerideki Metni Sil Düzeltmeleri Sil" özelliğini bir paragraf silerek etkinleştirebiliriz.`FindReplaceOptions` nesne. biz ayarlayacağız`IgnoreDeleted` mülkiyet`true`:
+ C: Artık belgemizi bir paragrafı silerek hazırladığımıza göre, "İçerdeki Metni Düzeltmeleri Silmede Yoksay" özelliğini kullanarak etkinleştirebiliriz.`FindReplaceOptions` nesne. biz ayarlayacağız`IgnoreDeleted` mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 ```
 
-#### S: Aspose.Words for .NET'te normal ifadeler kullanarak nasıl arama ve değiştirme yapılır?
+#### S: Aspose.Words for .NET'te normal ifadeler kullanılarak nasıl arama ve değiştirme yapılır?
 
-A: Belge metninde arama ve değiştirme işlemleri yapmak için normal ifadeler kullanacağız. Örneğimizde, "e" harfinin geçtiği tüm yerleri arayacağız ve bunları bir yıldız işaretiyle değiştireceğiz "* ".NET'i kullanacağız`Regex` Bunun için sınıf:
+C: Belgenin metninde arama ve değiştirme işlemlerini gerçekleştirmek için normal ifadeleri kullanacağız. Örneğimizde "e" harfinin geçtiği tüm yerleri arayacağız ve bunları yıldız işaretiyle değiştireceğiz "* ". .NET'i kullanacağız`Regex` bunun için sınıf:
 
 ```csharp
 Regex regex = new Regex("e");
@@ -181,23 +181,23 @@ doc.Range.Replace(regex, "*", options);
 
 #### S: Aspose.Words for .NET'te değişen belge içeriği nasıl görüntülenir?
 
-C: Arama ve değiştirmeyi uyguladıktan sonra, belgenin değişen içeriğini`GetText` yöntem:
+C: Arama ve değiştirmeyi uyguladıktan sonra, belgenin değişen içeriğini şu düğmeyi kullanarak görüntüleyebiliriz:`GetText` yöntem:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-#### S: Aspose.Words for .NET'te çıktı sonucuna silinen metin nasıl dahil edilir?
+#### S: Silinen metni Aspose.Words for .NET'te çıktı sonucuna nasıl dahil edebilirim?
 
- C: Çıktı sonucuna silinen metni dahil etmek istiyorsak, silinen metni yok saymamak için seçenekleri değiştirebiliriz. Bunun için ayarlayacağımız`IgnoreDeleted` mülkiyet`false`:
+ C: Silinen metni çıktı sonucuna dahil etmek istiyorsak, seçenekleri silinen metni göz ardı etmeyecek şekilde değiştirebiliriz. Bunun için ayarlayacağız`IgnoreDeleted` mülkiyet`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
 ```
 
-#### S: Aspose.Words for .NET'te silinmiş metinle düzenlenmiş belge nasıl gösterilir?
+#### S: Aspose.Words for .NET'te metni silinmiş olan düzenlenmiş belge nasıl gösterilir?
 
-A: Seçenekleri değiştirdikten sonra, yeni bir arama yapabilir ve silinen metnin dahil olduğu sonucu almak için değiştirebiliriz:
+C: Seçenekleri değiştirdikten sonra, yeni bir arama yapabilir ve sonucu silinen metnin dahil olduğu şekilde elde etmek için değiştirebiliriz:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);

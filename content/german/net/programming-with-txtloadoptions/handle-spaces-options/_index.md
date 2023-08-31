@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- In diesem Schritt konfigurieren wir die Optionen zum Laden des TXT-Dokuments. Wir schaffen ein Neues`TxtLoadOptions` Objekt und legen Sie das fest`LeadingSpacesOptions` Und`TrailingSpacesOptions` Eigenschaften zu`TxtLeadingSpacesOptions.Trim` Und`TxtTrailingSpacesOptions.Trim` bzw. Dadurch wird Aspose.Words angewiesen, beim Laden des Dokuments führende und nachgestellte Leerzeichen aus Zeilen zu entfernen.
+ In diesem Schritt konfigurieren wir die Optionen zum Laden des TXT-Dokuments. Wir schaffen ein Neues`TxtLoadOptions` Objekt und legen Sie das fest`LeadingSpacesOptions` Und`TrailingSpacesOptions` Eigenschaften zu`TxtLeadingSpacesOptions.Trim` Und`TxtTrailingSpacesOptions.Trim` jeweils. Dadurch wird Aspose.Words angewiesen, beim Laden des Dokuments führende und nachgestellte Leerzeichen aus Zeilen zu entfernen.
 
 ## Schritt 4: Laden des Dokuments
 

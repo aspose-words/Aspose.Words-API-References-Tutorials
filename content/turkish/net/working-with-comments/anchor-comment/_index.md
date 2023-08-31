@@ -1,18 +1,18 @@
 ---
-title: Çapa Yorumu
-linktitle: Çapa Yorumu
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak Word belgelerindeki belirli metinlere yorum yanıtlarını nasıl tutturacağınızı öğrenin.
+title: Bağlantı Yorumu
+linktitle: Bağlantı Yorumu
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak yorum yanıtlarını Word belgelerindeki belirli metne nasıl bağlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-comments/anchor-comment/
 ---
 
-Bu kapsamlı öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki belirli bir metne yorum yanıtlarını nasıl tutturacağınızı öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, yorumları belgelerinizdeki belirli metinlerle ilişkilendirebileceksiniz.
+Bu kapsamlı eğitimde, Aspose.Words for .NET kullanarak yorum yanıtlarını bir Word belgesindeki belirli bir metne nasıl bağlayacağınızı öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda yorumları belgelerinizdeki belirli metinlerle ilişkilendirebileceksiniz.
 
 ## Önkoşullar
-Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
-- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
+Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kütüphanesi sisteminizde kuruludur.
 
 ## 1. Adım: Yeni Bir Belge Oluşturun ve Metin Ekleyin
 Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve istediğiniz metni ekleyin:
@@ -36,8 +36,8 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
-## 2. Adım: Bir Yorum Oluşturun ve Yorum Aralığı Ekleyin
-Ardından, bir yorum oluşturun ve bunu CommentRangeStart ve CommentRangeEnd nesnelerini kullanarak belirli bir metinle ilişkilendirin:
+## 2. Adım: Yorum Oluşturun ve Yorum Aralığı Ekleyin
+Ardından, bir yorum oluşturun ve CommentRangeStart ve CommentRangeEnd nesnelerini kullanarak bunu belirli bir metinle ilişkilendirin:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
@@ -53,22 +53,22 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
 ## 3. Adım: Belgeyi Kaydedin
-Yorumu belirli bir metne sabitledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
+Yorumu belirli bir metne bağladıktan sonra, Document sınıfının Kaydet yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 ```
 
-### Aspose.Words for .NET kullanarak Anchor Comment Reply için Örnek Kaynak Kodu
-Aspose.Words for .NET kullanarak bir yorum yanıtını sabitlemek için eksiksiz kaynak kodu burada:
+### Bağlantı Yorumu için Örnek Kaynak Kodu Aspose.Words for .NET kullanarak yanıtlama
+Aspose.Words for .NET kullanarak bir yorum yanıtını sabitlemek için gereken kaynak kodun tamamı burada:
 
 ```csharp
 // Belgenin bir örneğini oluşturun.
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document();
 
-// Üç Çalıştır nesnesi oluşturun.
-// İlk ikisi biraz metin çalıştırırken, üçüncüsü bir Yorum çalıştırır.
+// Üç Çalıştırma nesnesi oluşturun.
+// İlk ikisi bir metin çalıştırırken üçüncüsü bir Yorum çalıştırır
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -100,25 +100,25 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
 
-### SSS
+### SSS'ler
 
-#### S: Aspose.Words for .NET'te yorum çapası nedir?
+#### S: Aspose.Words for .NET'te yorum bağlantısı nedir?
 
-Y: Aspose.Words for .NET'te, bir yorum bağlantısı, bir yorumu bir belgedeki belirli bir konuma bağlayan bir işaretleyicidir.
+C: Aspose.Words for .NET'te yorum bağlantısı, bir yorumu belgedeki belirli bir konuma bağlayan bir işaretleyicidir.
 
-#### S: Bir Aspose.Words for .NET belgesine nasıl yorum çapası ekleyebilirim?
+#### S: Aspose.Words for .NET belgesine nasıl yorum bağlantısı ekleyebilirim?
 
-C: Bir Aspose.Words for .NET belgesine yorum bağlantısı eklemek için eğitimde belirtilen adımları izleyin.
+C: Aspose.Words for .NET belgesine yorum bağlantısı eklemek için eğitimde belirtilen adımları izleyin.
 
 #### S: Aspose.Words for .NET'te mevcut bir yorum bağlantısına nasıl erişebilirim?
 
- C: Aspose.Words for .NET'te varolan bir yorum bağlantısına şu şekilde erişebilirsiniz:`Comment.Anchor` mülk.
+ C: Aspose.Words for .NET'te mevcut bir yorum bağlantısına aşağıdaki komutu kullanarak erişebilirsiniz:`Comment.Anchor` mülk.
 
-#### S: Aspose.Words for .NET'te bir yorum çapası ekleyebilir miyim?
+#### S: Aspose.Words for .NET'te bir yorum bağlantısını destekleyebilir miyim?
 
- C: Evet, Aspose.Words for .NET'te bir yorum bağlantısını kaldırabilirsiniz.`Comment.Remove` yöntem.
+ C: Evet, Aspose.Words for .NET'teki bir yorum bağlantısını aşağıdaki komutu kullanarak kaldırabilirsiniz:`Comment.Remove` yöntem.
 
 #### S: Aspose.Words for .NET'te bir yorum bağlantısına bağlı bir yorumun metnini nasıl düzenleyebilirim?
 
- C: Aspose.Words for .NET'te bir yorum bağlantısına bağlı bir yorumun metnini değiştirmek için şuraya erişebilirsiniz:`Comment.Text` karşılık gelen özellik`Comment` nesne ve metni gerektiği gibi değiştirin.
+ C: Aspose.Words for .NET'te bir yorum bağlantısına bağlı yorumun metnini değiştirmek için`Comment.Text` karşılık gelen mülk`Comment` nesneyi seçin ve metni gerektiği gibi değiştirin.
 

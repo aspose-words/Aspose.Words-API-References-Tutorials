@@ -1,14 +1,14 @@
 ---
 title: Énfasis
 linktitle: Énfasis
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a usar énfasis (negrita y cursiva) con la guía paso a paso de Aspose.Words para .NET.
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda a utilizar énfasis (negrita y cursiva) con la guía paso a paso de Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-markdown/emphases/
 ---
 
-En este ejemplo, explicaremos cómo usar énfasis con Aspose.Words para .NET. énfasis se utiliza para enfatizar ciertas partes del texto, como negrita y cursiva.
+En este ejemplo, explicaremos cómo usar énfasis con Aspose.Words para .NET. El énfasis se utiliza para enfatizar ciertas partes del texto, como negrita y cursiva.
 
 ## Paso 1: inicialización del documento
 
@@ -27,9 +27,9 @@ A continuación, usaremos un generador de documentos para agregar contenido a nu
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 3: Agrega texto con Énfasis
+## Paso 3: agregue texto con énfasis
 
-Podemos agregar texto de énfasis cambiando las propiedades de fuente del generador de documentos. En este ejemplo, usamos negrita y cursiva para enfatizar diferentes partes del texto.
+Podemos agregar texto con énfasis cambiando las propiedades de fuente del generador de documentos. En este ejemplo, utilizamos negrita y cursiva para enfatizar diferentes partes del texto.
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as emphases indicators.");
@@ -59,17 +59,17 @@ builder. Write(".");
 
 ```
 
-## Paso 4: Guardar el documento
+## Paso 4: guardar el documento
 
- Finalmente, podemos guardar el documento en el formato deseado. En este ejemplo, estamos usando el`.md` extensión para un formato Markdown.
+ Finalmente, podremos guardar el documento en el formato deseado. En este ejemplo, estamos usando el`.md` extensión para un formato Markdown.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-¡Felicidades! Ahora ha aprendido a usar énfasis con Aspose.Words para .NET.
+¡Enhorabuena! Ahora ha aprendido a utilizar énfasis con Aspose.Words para .NET.
 
-### Ejemplo de código fuente para Énfasis usando Aspose.Words para .NET
+### Código fuente de ejemplo para Emphases usando Aspose.Words para .NET
 
 
 ```csharp
@@ -111,9 +111,9 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 R: Para resaltar texto usando Markdown, simplemente rodee el texto con los símbolos apropiados. Usar`*` o`_` para cursiva,`**` o`__` por negrita, y`~~` para tachado.
 
-#### P: ¿Podemos combinar diferentes resaltados en un mismo texto?
+#### P: ¿Podemos combinar diferentes destacados en un mismo texto?
 
- R: Sí, es posible combinar diferentes resaltados en el mismo texto. Por ejemplo, puede poner una palabra en negrita y cursiva usando ambas`**` y`*` alrededor del mundo.
+ R: Sí, es posible combinar diferentes resaltados en un mismo texto. Por ejemplo, puede poner en negrita y cursiva una palabra usando ambos`**` y`*` alrededor del mundo.
 
 #### P: ¿Qué opciones de resaltado están disponibles en Markdown?
 
@@ -121,7 +121,7 @@ R: Las opciones de resaltado disponibles en Markdown están en cursiva (`*` o`_`
 
 #### P: ¿Cómo manejo los casos en los que el texto contiene caracteres especiales utilizados por Markdown para resaltar?
 
- R: Si su texto contiene caracteres especiales utilizados por Markdown para resaltar, puede escaparlos precediéndolos con un`\` . Por ejemplo,`\*` mostrará un asterisco literal.
+ R: Si su texto contiene caracteres especiales utilizados por Markdown para resaltar, puede escapar de ellos precediéndolos con un`\` . Por ejemplo,`\*` mostrará un asterisco literal.
 
 #### P: ¿Podemos personalizar la apariencia del resaltado usando CSS?
 

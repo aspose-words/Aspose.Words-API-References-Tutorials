@@ -1,8 +1,8 @@
 ---
 title: Establecer configuración de página y formato de sección
 linktitle: Establecer configuración de página y formato de sección
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Guía paso a paso para configurar el formato de la sección y el diseño de un documento con Aspose.Words para .NET.
+second_title: API de procesamiento de documentos Aspose.Words
+description: Guía paso a paso para configurar el diseño y el formato de sección de un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-document-options-and-settings/set-page-setup-and-section-formatting/
@@ -10,13 +10,13 @@ url: /es/net/programming-with-document-options-and-settings/set-page-setup-and-s
 
 En este tutorial, lo guiaremos a través del código fuente de C# para configurar el diseño y el formato de sección con Aspose.Words para .NET. Esta función le permite configurar la orientación de la página, los márgenes y el tamaño del papel.
 
-## Paso 1: Configuración del proyecto
+## Paso 1: configuración del proyecto
 
-Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que en su proyecto se haga referencia a la biblioteca Aspose.Words para .NET.
 
-## Paso 2: Crear el documento
+## Paso 2: crear el documento
 
-En este paso, crearemos un nuevo documento. Use el siguiente código para crear el documento e inicializar el constructor:
+En este paso, crearemos un nuevo documento. Utilice el siguiente código para crear el documento e inicializar el constructor:
 
 ```csharp
 // Ruta al directorio de documentos.
@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 3: configurar el diseño y guardar el documento
 
-Ahora vamos a configurar el diseño del documento. Utilice el siguiente código para establecer la orientación, los márgenes y el tamaño del papel:
+Ahora configuremos el diseño del documento. Utilice el siguiente código para establecer la orientación, los márgenes y el tamaño del papel:
 
 ```csharp
 builder.PageSetup.Orientation = Orientation.Landscape;
@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
 
 Este código establecerá la orientación de la página en horizontal, el margen izquierdo en 50 y el tamaño del papel en 10x14.
 
-### Ejemplo de código fuente para establecer la configuración de página y el formato de sección usando Aspose.Words para .NET
+### Código fuente de ejemplo para configurar la configuración de página y el formato de sección usando Aspose.Words para .NET
 
 ```csharp
 
@@ -60,4 +60,4 @@ Este código establecerá la orientación de la página en horizontal, el margen
 
 Asegúrese de especificar la ruta correcta al directorio donde desea guardar el documento en el`dataDir` variable.
 
-Ahora ha aprendido a configurar el diseño y el formato de sección de un documento utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede personalizar fácilmente el diseño y el formato de sus propios documentos.
+Ahora ha aprendido cómo configurar el diseño y el formato de sección de un documento usando Aspose.Words para .NET. Si sigue la guía paso a paso proporcionada en este tutorial, podrá personalizar fácilmente el diseño y el formato de sus propios documentos.

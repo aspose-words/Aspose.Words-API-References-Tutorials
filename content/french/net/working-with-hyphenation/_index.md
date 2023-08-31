@@ -2,16 +2,16 @@
 title: Traitement de mots avec césure
 linktitle: Traitement de mots avec césure
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à gérer la césure des mots dans les documents Word avec Aspose.Words pour .NET. Tutoriels complets et exemples pratiques inclus.
+description: Découvrez comment gérer la césure des mots dans les documents Word avec Aspose.Words pour .NET. Tutoriels complets et exemples pratiques inclus.
 type: docs
 weight: 750
 url: /fr/net/working-with-hyphenation/
 ---
-Le traitement de mots avec césure est une ressource complète qui vous guide tout au long de l'utilisation de la césure dans vos documents Word à l'aide de la bibliothèque Aspose.Words pour .NET. . Les didacticiels fournissent des explications étape par étape, un code source complet et des exemples pratiques pour comprendre et gérer efficacement la césure dans vos documents. Vous apprendrez à activer la césure automatique, à personnaliser les dictionnaires de césure, à appliquer la césure à des paragraphes spécifiques, à gérer les exceptions de césure, etc. Cette ressource est essentielle pour les développeurs qui souhaitent améliorer la lisibilité et la mise en page de leurs documents Word en utilisant la césure avec Aspose.Words pour .NET.
+Le traitement des mots avec césure est une ressource complète qui vous guide dans l'utilisation de la césure dans vos documents Word à l'aide de la bibliothèque Aspose.Words pour .NET. . Les didacticiels fournissent des explications étape par étape, un code source complet et des exemples pratiques pour comprendre et gérer efficacement la césure dans vos documents. Vous apprendrez comment activer la césure automatique, personnaliser les dictionnaires de césure, appliquer la césure à des paragraphes spécifiques, gérer les exceptions de césure, et bien plus encore. Cette ressource est essentielle pour les développeurs qui souhaitent améliorer la lisibilité et la mise en page de leurs documents Word en utilisant la césure avec Aspose.Words pour .NET.
 
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Césure des mots des langues](./hyphenate-words-of-languages/) | Apprenez à couper des mots dans différentes langues dans des documents Word à l'aide d'Aspose.Words pour .NET. |
-| [Charger le dictionnaire de césure pour la langue](./load-hyphenation-dictionary-for-language/) |Apprenez à charger un dictionnaire de césure pour une langue spécifique dans Aspose.Words pour .NET. |
-| [Rappel de césure](./hyphenation-callback/) | Apprenez à utiliser le rappel de césure dans Aspose.Words pour .NET pour gérer la césure des mots. |
+| [Césure de mots de langues](./hyphenate-words-of-languages/) | Apprenez à couper des mots dans différentes langues dans des documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Charger le dictionnaire de césure pour la langue](./load-hyphenation-dictionary-for-language/) |Découvrez comment charger un dictionnaire de césure pour une langue spécifique dans Aspose.Words for .NET. |
+| [Rappel de césure](./hyphenation-callback/) | Découvrez comment utiliser le rappel de césure dans Aspose.Words for .NET pour gérer la césure des mots. |

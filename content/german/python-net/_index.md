@@ -32,3 +32,17 @@ Gewinnen Sie wertvolle Erkenntnisse aus Ihren Dokumenten mit Aspose.Words für P
 Konvertieren Sie Dokumente effizient zwischen Formaten mit Aspose.Words für Python. Optimieren Sie die Verarbeitung von Word-Dokumenten und vereinfachen Sie Ihre Dokumentenverwaltungsaufgaben. 
 ### [Dokumentenschutz](./document-protection/)
 Sichern Sie Ihre Dokumente mit Aspose.Words für Python! Implementieren Sie Passwortverschlüsselung, Benutzerberechtigungen und digitale Signaturen für einen robusten Dokumentenschutz.
+### [Dokumentstruktur und Inhaltsmanipulation](./document-structure-and-content-manipulation/)
+Entdecken Sie Aspose.Words-Tutorials für Python und .NET mit Schwerpunkt auf Dokumentstruktur und Inhaltsmanipulation. Erfahren Sie, wie Sie Dokumentelemente effizient navigieren, extrahieren und ändern. Quellcode-Beispiele bereitgestellt.
+### [Inhaltsextraktion und -manipulation](./content-extraction-and-manipulation/)
+Entdecken Sie die Welt der Inhaltsextraktion und -bearbeitung mit Aspose.Words-Tutorials. Erfahren Sie, wie Sie Inhalte mit Python und .NET effizient extrahieren und bearbeiten und so Ihre Dokumentverarbeitungsfähigkeiten verbessern.
+### [Kombinieren und Vergleichen von Dokumenten](./document-combining-and-comparison/)
+Entdecken Sie umfassende Tutorials zum Kombinieren und Vergleichen von Dokumenten mit Aspose.Words für Python und .NET. Erfahren Sie, wie Sie Dokumente nahtlos zusammenführen und vergleichen und so Ihre Dokumentenverarbeitungsabläufe verbessern.
+### [Aufteilen und Formatieren von Dokumenten](./document-splitting-and-formatting/)
+Entdecken Sie die Aspose.Words-Tutorials zum Aufteilen und Formatieren von Dokumenten in Python und .NET. Erfahren Sie, wie Sie Dokumente effizient aufteilen und formatieren und so Ihre Dokumentenverarbeitungsaufgaben verbessern. 
+### [Dokumentoptionen und -einstellungen](./document-options-and-settings/)
+Entdecken Sie Aspose.Words-Tutorials zu Dokumentoptionen und -einstellungen in Python und .NET. Erfahren Sie anhand von Schritt-für-Schritt-Anleitungen und Quellcode-Beispielen, wie Sie die Erstellung und Formatierung von Dokumenten optimieren.
+### [Datenvisualisierung und Formatierung](./data-visualization-and-formatting/)
+Entdecken Sie Aspose.Words-Tutorials zur Datenvisualisierung und -formatierung in Python und .NET. Lernen Sie, Daten effektiv zu präsentieren, beeindruckende Berichte zu erstellen und Dokumente programmgesteuert zu formatieren.
+### [Tabellen und Formatierung](./tables-and-formatting/)
+Tauchen Sie ein in die Aspose.Words-Tutorials zu Tabellen und Formatierung in Python- und .NET-Anwendungen. Erfahren Sie, wie Sie Tabellen für optisch ansprechende Dokumente erstellen, anpassen und formatieren. 

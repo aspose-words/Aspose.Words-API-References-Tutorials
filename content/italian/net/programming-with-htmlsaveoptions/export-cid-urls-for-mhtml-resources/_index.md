@@ -1,22 +1,22 @@
 ---
 title: Esporta URL Cid per risorse Mhtml
 linktitle: Esporta URL Cid per risorse Mhtml
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Guida dettagliata per esportare gli URL CID delle risorse MHTML durante il salvataggio di un documento con Aspose.Words per .NET.
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Guida passo passo per esportare URL CID di risorse MHTML quando si salva un documento con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-htmlsaveoptions/export-cid-urls-for-mhtml-resources/
 ---
 
-In questo tutorial, ti guideremo attraverso il codice sorgente C# per esportare gli URL CID per le risorse MHTML con Aspose.Words per .NET. Questa funzione consente di esportare gli URL CID delle risorse MHTML quando si salva un documento in formato MHTML.
+In questo tutorial ti guideremo attraverso il codice sorgente C# per esportare URL CID per risorse MHTML con Aspose.Words per .NET. Questa funzionalità consente di esportare URL CID di risorse MHTML quando si salva un documento in formato MHTML.
 
 ## Passaggio 1: impostazione del progetto
 
-Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurarsi che nel progetto si faccia riferimento alla libreria Aspose.Words per .NET.
+Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurati che nel tuo progetto venga fatto riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: caricamento del documento
 
-In questo passaggio, caricheremo il documento da esportare. Utilizzare il codice seguente per caricare il documento da una directory specificata:
+In questo passaggio caricheremo il documento da esportare. Utilizzare il codice seguente per caricare il documento da una directory specificata:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -27,7 +27,7 @@ Document doc = new Document(dataDir + "Content-ID.docx");
 
 ## Passaggio 3: configurazione delle opzioni di backup HTML
 
-Ora configureremo le opzioni di salvataggio HTML per esportare gli URL CID delle risorse MHTML. Usa il seguente codice:
+Ora configureremo le opzioni di salvataggio HTML per esportare gli URL CID delle risorse MHTML. Utilizza il seguente codice:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Mhtml)
@@ -37,11 +37,11 @@ ExportCidUrlsForMhtmlResources = true
 };
 ```
 
- Questo codice crea un'istanza di`HtmlSaveOptions` con il formato di salvataggio impostato su MHTML. Consente inoltre l'esportazione di URL CID di risorse MHTML tramite l'impostazione`ExportCidUrlsForMhtmlResources` A`true`.
+ Questo codice crea un'istanza di`HtmlSaveOptions` con il formato di salvataggio impostato su MHTML. Abilita inoltre l'esportazione degli URL CID delle risorse MHTML impostando`ExportCidUrlsForMhtmlResources` A`true`.
 
-## Passaggio 4: conversione e salvataggio del documento in MHTML
+## Passaggio 4: convertire e salvare il documento in MHTML
 
-Infine, convertiremo il documento in MHTML utilizzando le opzioni di salvataggio HTML configurate in precedenza. Usa il seguente codice:
+Infine, convertiremo il documento in MHTML utilizzando le opzioni di salvataggio HTML configurate in precedenza. Utilizza il seguente codice:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 
 Questo codice converte il documento in MHTML e lo salva in un file con gli URL CID delle risorse MHTML esportate.
 
-### Codice sorgente di esempio per l'esportazione di URL Cid per risorse Mhtml utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per Export Cid URLs For Mhtml Resources utilizzando Aspose.Words per .NET
 
 ```csharp
 
@@ -68,5 +68,5 @@ Questo codice converte il documento in MHTML e lo salva in un file con gli URL C
 
  Assicurati di specificare il percorso corretto della directory dei documenti nel file`dataDir` variabile.
 
-Ora hai imparato come esportare gli URL CID delle risorse MHTML durante il salvataggio di un documento in formato MHTML utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, puoi gestire facilmente gli URL CID nei tuoi documenti MHTML esportati.
+Ora hai imparato come esportare gli URL CID delle risorse MHTML quando salvi un documento in formato MHTML utilizzando Aspose.Words per .NET. Seguendo la guida passo passo fornita in questo tutorial, puoi gestire facilmente gli URL CID nei tuoi documenti MHTML esportati.
 

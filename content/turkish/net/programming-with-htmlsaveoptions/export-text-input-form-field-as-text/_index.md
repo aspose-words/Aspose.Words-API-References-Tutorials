@@ -1,29 +1,29 @@
 ---
 title: Metin Giriş Formu Alanını Metin Olarak Dışa Aktar
 linktitle: Metin Giriş Formu Alanını Metin Olarak Dışa Aktar
-second_title: Aspose.Words Belge İşleme API'sı
-description: Metin giriş formu alanlarını Aspose.Words for .NET ile düz metin olarak dışa aktarmak için adım adım kılavuz.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile metin girişi form alanlarını düz metin olarak dışa aktarmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-text/
 ---
 
-Bu eğitimde, metin giriş formu alanlarını Aspose.Words for .NET ile düz metin olarak dışa aktarmak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, metin girişi form alanlarını HTML giriş öğeleri olarak dışa aktarmak yerine okunabilir metin olarak dışa aktarmanıza olanak tanır.
+Bu eğitimde, Aspose.Words for .NET ile metin giriş formu alanlarını düz metin olarak dışa aktarmak için C# kaynak kodunu size anlatacağız. Bu özellik, metin girişi form alanlarını HTML giriş öğeleri olarak dışa aktarmak yerine okunabilir metin olarak dışa aktarmanıza olanak tanır.
 
 ## Adım 1: Proje Kurulumu
 
-Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Projenizde Aspose.Words for .NET kütüphanesine başvurulduğundan emin olun.
 
-## 2. Adım: Belgeyi yükleme
+## Adım 2: Belgeyi yükleme
 
-Bu adımda, dışa aktarılacak belgeyi yükleyeceğiz. Belgeyi belirli bir dizinden yüklemek için aşağıdaki kodu kullanın:
+Bu adımda dışa aktarılacak belgeyi yükleyeceğiz. Belgeyi belirtilen dizinden yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Bu kod, örneğini oluşturur`Document` belgeyi belirtilen dizinden yükleyerek.
+ Bu kod bir örneğini oluşturur`Document` Belgeyi belirtilen dizinden yükleyerek.
 
 ## 3. Adım: HTML yedekleme seçeneklerini yapılandırma
 
@@ -45,17 +45,17 @@ ImagesFolder = imagesDir
 };
 ```
 
- Bu kod, örneğini oluşturur`HtmlSaveOptions`ve ayarlar`ExportTextInputFormFieldAsText` seçeneği`true`metin giriş formu alanlarını düz metin olarak dışa aktarmak için. Ayrıca çıkarılan görüntülerin kaydedileceği klasörü belirtir.
+ Bu kod bir örneğini oluşturur`HtmlSaveOptions`ve ayarlar`ExportTextInputFormFieldAsText` seçeneği`true`metin giriş formu alanlarını düz metin olarak dışa aktarmak için. Ayrıca çıkarılan görsellerin kaydedileceği klasörü de belirtir.
 
-## 4. Adım: Belgeyi HTML'ye dönüştürme ve kaydetme
+## Adım 4: Belgeyi HTML'ye dönüştürme ve kaydetme
 
-Son olarak, daha önce yapılandırılmış HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
+Son olarak, daha önce yapılandırılan HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
 ```
 
-Bu kod, metin giriş formu alanlarını düz metin olarak dışa aktararak belgeyi HTML'ye dönüştürür ve dışa aktarılan HTML dosyasını belirtilen dizine kaydeder.
+Bu kod, metin girişi form alanlarını düz metin olarak dışa aktararak belgeyi HTML'ye dönüştürür ve dışa aktarılan HTML dosyasını belirtilen dizine kaydeder.
 
 ### Aspose.Words for .NET kullanarak Metin Giriş Formu Alanını Metin Olarak Dışa Aktarma için örnek kaynak kodu
 
@@ -68,7 +68,7 @@ Bu kod, metin giriş formu alanlarını düz metin olarak dışa aktararak belge
 
 	string imagesDir = Path.Combine(ArtifactsDir, "Images");
 
-	// Belirtilen klasörün var olması ve boş olması gerekir.
+	// Belirtilen klasörün mevcut olması ve boş olması gerekir.
 	if (Directory.Exists(imagesDir))
 		Directory.Delete(imagesDir, true);
 
@@ -84,4 +84,4 @@ Bu kod, metin giriş formu alanlarını düz metin olarak dışa aktararak belge
 
 ```
 
- içindeki belgeler dizinine giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.
+ Belgeler dizininin doğru yolunu belirttiğinizden emin olun.`dataDir` değişken.

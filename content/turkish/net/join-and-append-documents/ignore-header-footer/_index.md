@@ -1,25 +1,25 @@
 ---
-title: Üstbilgi Altbilgiyi Yoksay
-linktitle: Üstbilgi Altbilgiyi Yoksay
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak üstbilgi ve altbilgi içeriğini yok sayarken bir belgeyi nasıl ekleyeceğinizi öğrenin.
+title: Üstbilgi Altbilgisini Yoksay
+linktitle: Üstbilgi Altbilgisini Yoksay
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak üstbilgi ve altbilgi içeriğini göz ardı ederek bir belgeye nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/ignore-header-footer/
 ---
 
-Bu öğretici, üstbilgi ve altbilgi içeriğini yok sayarak bir belgeyi eklemek için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, ekleme işlemi sırasında üstbilgi ve altbilgiyi hariç tutmak için içe aktarma biçimi seçeneklerinin nasıl ayarlanacağını gösterir.
+Bu eğitimde, üstbilgi ve altbilgi içeriğini göz ardı ederek bir belge eklemek için Aspose.Words for .NET'in nasıl kullanılacağı açıklanmaktadır. Sağlanan kaynak kodu, ekleme işlemi sırasında üstbilgi ve altbilgiyi hariç tutmak için içe aktarma formatı seçeneklerinin nasıl ayarlanacağını gösterir.
 
-## 1. Adım: Projeyi kurun
+## 1. Adım: Projeyi ayarlayın
 
-Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kitaplığı yüklendi. adresinden indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ veya yüklemek için NuGet paket yöneticisini kullanın.
-- Kaynak ve hedef belgelerin bulunduğu bir belge dizini yolu.
+- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+- Kaynak ve hedef belgelerin bulunduğu belge dizini yolu.
 
 ## 2. Adım: Kaynak ve hedef belgeleri açın
 
- kullanarak kaynak ve hedef belgeleri açın.`Document` sınıf oluşturucu Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+ Kaynak ve hedef belgeleri kullanarak açın.`Document` sınıf yapıcısı. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
 
 ```csharp
 // Belge dizininizin yolu
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: İçe aktarma biçimi seçeneklerini ayarlayın
 
- örneğini oluşturun`ImportFormatOptions`sınıflandırın ve ayarlayın`IgnoreHeaderFooter` mülkiyet`false`. Bu, üstbilgi ve altbilgi içeriğinin ekleme işlemi sırasında dahil edilmesini sağlar.
+ Bir örneğini oluşturun`ImportFormatOptions`sınıfı seçin ve ayarlayın`IgnoreHeaderFooter` mülkiyet`false`. Bu, ekleme işlemi sırasında üstbilgi ve altbilgi içeriğinin dahil edilmesini sağlar.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## 4. Adım: Kaynak belgeyi hedef belgeye ekleyin
 
- Kullan`AppendDocument`kaynak belgeyi eklemek için hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` ikinci parametre olarak ve içe aktarma biçimi seçeneklerini üçüncü parametre olarak.
+ Kullan`AppendDocument`Kaynak belgenin ekleneceği hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` ikinci parametre olarak içe aktarma formatı seçeneklerini ve üçüncü parametre olarak içe aktarma formatı seçeneklerini seçin.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,9 +53,9 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanarak üst bilgi ve alt bilgi içeriğini yok sayarak belge ekleme uygulamasını tamamlar.
+Bu, Aspose.Words for .NET kullanarak üstbilgi ve altbilgi içeriğini göz ardı ederek belge ekleme uygulamasını tamamlar.
 
-### Aspose.Words for .NET kullanan Üstbilgi Altbilgiyi Yoksay için örnek kaynak kodu 
+### Aspose.Words for .NET kullanarak Üst Bilgi Alt Bilgisini Yoksay için örnek kaynak kodu 
 
 ```csharp
 	//Belge dizininizin yolu

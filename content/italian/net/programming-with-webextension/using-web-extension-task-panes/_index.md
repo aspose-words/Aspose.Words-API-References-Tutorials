@@ -1,16 +1,16 @@
 ---
 title: Utilizzo dei riquadri attività delle estensioni Web
 linktitle: Utilizzo dei riquadri attività delle estensioni Web
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Guida dettagliata all'utilizzo dei riquadri attività delle estensioni Web con Aspose.Words per .NET.
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Guida dettagliata all'utilizzo dei pannelli attività delle estensioni Web con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 
-Questo articolo fornisce una guida passo passo su come utilizzare i riquadri attività dell'estensione Web con Aspose.Words per .NET. Spiegheremo ogni parte del codice in dettaglio. Alla fine di questo tutorial, sarai in grado di capire come aggiungere e configurare i riquadri attività per le estensioni web.
+Questo articolo fornisce una guida passo passo su come utilizzare i riquadri attività delle estensioni Web con Aspose.Words per .NET. Spiegheremo ogni parte del codice in dettaglio. Alla fine di questo tutorial sarai in grado di capire come aggiungere e configurare i riquadri attività per le estensioni web.
 
-Prima di iniziare, assicurati di aver installato e configurato la libreria Aspose.Words per .NET nel tuo progetto. Puoi trovare la libreria e le istruzioni di installazione sul sito web di Aspose.
+Prima di iniziare, assicurati di aver installato e configurato la libreria Aspose.Words per .NET nel tuo progetto. È possibile trovare la libreria e le istruzioni di installazione sul sito Web Aspose.
 
 ## Passaggio 1: definire la directory dei documenti
 
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Passaggio 2: creare e configurare un riquadro attività
 
- Creiamo un`TaskPane` oggetto e aggiungerlo al documento`s `Raccolta di WebExtensionTaskPanes. Successivamente, configuriamo le proprietà del riquadro delle attività, come lo stato ancorato, la visibilità e la larghezza.
+ Creiamo un`TaskPane` oggetto e aggiungerlo al documento`s `Raccolta WebExtensionTaskPanes. Successivamente, configuriamo le proprietà del riquadro attività, ad esempio lo stato ancorato, la visibilità e la larghezza.
 
 ```csharp
 Document doc = new Document();
@@ -35,7 +35,7 @@ taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-Impostiamo anche le credenziali dell'estensione Web, inclusi ID catalogo, versione e tipo di negozio.
+Impostiamo anche le credenziali dell'estensione web, inclusi ID catalogo, versione e tipo di negozio.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -52,7 +52,7 @@ taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_150
 	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## Passaggio 3: salvare e caricare il documento
+## Passaggio 3: salva e carica il documento
 
 Salviamo il documento con i riquadri attività configurati nella directory specificata.
 
@@ -60,9 +60,9 @@ Salviamo il documento con i riquadri attività configurati nella directory speci
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## Passaggio 4: visualizzare le informazioni sui riquadri delle attività
+## Passaggio 4: visualizzare le informazioni sui riquadri attività
 
-Successivamente, carichiamo il documento e visualizziamo le informazioni sull'origine del riquadro delle attività.
+Successivamente, carichiamo il documento e visualizziamo le informazioni sull'origine del riquadro attività.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -77,7 +77,7 @@ Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version
 }
 ```
 
-È tutto ! Hai utilizzato correttamente i riquadri attività dell'estensione Web con Aspose.Words per .NET.
+È tutto ! Hai utilizzato con successo i riquadri attività dell'estensione Web con Aspose.Words per .NET.
 
 ### Codice sorgente di esempio per l'utilizzo dei riquadri attività delle estensioni Web con Aspose.Words per .NET
 

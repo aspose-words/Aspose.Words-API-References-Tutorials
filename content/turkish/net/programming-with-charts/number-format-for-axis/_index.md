@@ -1,23 +1,23 @@
 ---
-title: Grafikteki Eksen İçin Sayı Biçimi
-linktitle: Grafikteki Eksen İçin Sayı Biçimi
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bir grafikte bir eksen için sayı biçimini nasıl ayarlayacağınızı öğrenin.
+title: Grafikteki Eksen İçin Sayı Formatı
+linktitle: Grafikteki Eksen İçin Sayı Formatı
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak bir grafikteki eksen için sayı formatını nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/number-format-for-axis/
 ---
 
-Bu öğretici, Aspose.Words for .NET'in grafikteki bir eksen için sayı formatını ayarlamak üzere nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve eksen etiketlerinin nasıl biçimlendirileceğini gösterir.
+Bu eğitimde Aspose.Words for .NET'in grafikteki bir eksenin sayı formatını ayarlamak için nasıl kullanılacağı açıklanmaktadır. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve eksen etiketlerinin nasıl biçimlendirileceğini gösterir.
 
-## 1. Adım: Projeyi kurun
+## 1. Adım: Projeyi ayarlayın
 
-Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kitaplığı yüklendi. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
-- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
+- Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
+- Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
+## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -29,16 +29,16 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ardından,`InsertChart` yöntemi`DocumentBuilder` belgeye bir sütun grafiği eklemek için.
+ Daha sonra şunu kullanın:`InsertChart` yöntemi`DocumentBuilder` Belgeye bir sütun grafiği eklemek için.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. Adım: Seri verilerini grafiğe ekleyin
+## 3. Adım: Grafiğe seri verilerini ekleyin
 
-Grafiğe seri verileri ekleyin. Bu örnekte, karşılık gelen değerleri ile beş öğe ekleyeceğiz.
+Grafiğe seri verileri ekleyin. Bu örnekte, karşılık gelen değerleriyle birlikte beş öğe ekleyeceğiz.
 
 ```csharp
 chart.Series.Clear();
@@ -49,7 +49,7 @@ chart.Series.Add("Aspose Series 1",
 
 ## 4. Adım: Eksen etiketlerini biçimlendirin
 
- Y ekseni etiketlerinin sayı biçimini ayarlamak için şuraya erişin:`AxisY` grafiğin özelliğini ayarlayın ve`NumberFormat.FormatCode` özelliğini istediğiniz biçime getirin. Bu örnekte, sayıları binlik ayırıcılarla görüntülemek için biçimi "#,##0" olarak ayarladık.
+ Y ekseni etiketlerinin sayı biçimini ayarlamak için`AxisY` Grafiğin özelliğini seçin ve`NumberFormat.FormatCode` özelliği istenilen formata getirir. Bu örnekte, sayıları binlik ayırıcılarla görüntülemek için formatı "#,##0" olarak ayarladık.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
@@ -63,9 +63,9 @@ chart.AxisY.NumberFormat.FormatCode = "#,##0";
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanılarak eksen için sayı biçimini ayarlama uygulamasını tamamlar.
+Bu, Aspose.Words for .NET kullanılarak eksen için sayı formatının ayarlanması işlemini tamamlar.
 
-### Aspose.Words for .NET kullanan Number Format For Axis için örnek kaynak kodu 
+### Aspose.Words for .NET kullanan Eksen İçin Sayı Formatı için örnek kaynak kodu 
 
 ```csharp
 	//Belge dizininizin yolu
@@ -85,33 +85,33 @@ Bu, Aspose.Words for .NET kullanılarak eksen için sayı biçimini ayarlama uyg
 
 ## Çözüm
 
-Bu öğreticide, Aspose.Words for .NET kullanarak bir grafikte bir eksen için sayı biçimini nasıl ayarlayacağınızı öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak yeni bir belge oluşturabilir, sütun grafiği ekleyebilir, seri verileri ekleyebilir ve sayıları belirli bir biçimde görüntülemek için eksen etiketlerini biçimlendirebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir grafikteki eksen için sayı formatını nasıl ayarlayacağınızı öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak yeni bir belge oluşturabilir, sütun grafiği ekleyebilir, seri verileri ekleyebilir ve eksen etiketlerini, sayıları belirli bir biçimde görüntüleyecek şekilde biçimlendirebilirsiniz.
 
 Aspose.Words for .NET, Word belgelerindeki grafiklerin görünümünü özelleştirmek için güçlü özellikler sağlar. Eksen etiketleri için sayı biçimini ayarlayarak, ondalık basamaklar, binlik ayırıcılar, para birimi simgeleri ve daha fazlası gibi seçenekler de dahil olmak üzere sayıların nasıl görüntüleneceğini kontrol edebilirsiniz. Bu, sayısal verileri açık ve anlamlı bir şekilde sunmanıza olanak tanır.
 
-Aspose.Words for .NET ile eksen etiketleri de dahil olmak üzere grafiğin çeşitli yönlerini biçimlendirme esnekliğine sahipsiniz. Eksen için sayı biçimini ayarlayarak tutarlılığı sağlayabilir ve grafiğin okunabilirliğini geliştirerek kullanıcıların temsil edilen değerleri yorumlamasını kolaylaştırabilirsiniz.
+Aspose.Words for .NET ile eksen etiketleri de dahil olmak üzere grafiğin çeşitli yönlerini biçimlendirme esnekliğine sahip olursunuz. Eksen için sayı formatını ayarlayarak tutarlılık sağlayabilir ve grafiğin okunabilirliğini geliştirebilir, böylece kullanıcıların temsil edilen değerleri yorumlamasını kolaylaştırabilirsiniz.
 
 ### SSS
 
 #### S1. Grafikteki bir eksenin sayı biçimi nedir?
-Grafikteki bir eksen için sayı biçimi, eksende görüntülenen sayısal değerlere uygulanan biçimlendirmeyi ifade eder. Ondalık basamaklar, binlik ayırıcılar, para birimi simgeleri, yüzde işaretleri ve daha fazlası gibi seçenekler de dahil olmak üzere sayıların nasıl sunulacağını kontrol etmenizi sağlar. Sayı biçimini ayarlayarak, grafikteki sayısal verilerin görünümünü özel gereksinimlerinize uyacak şekilde özelleştirebilirsiniz.
+Grafikteki bir eksenin sayı biçimi, eksende görüntülenen sayısal değerlere uygulanan biçimlendirmeyi ifade eder. Ondalık basamaklar, binlik ayırıcılar, para birimi simgeleri, yüzde işaretleri ve daha fazlası gibi seçenekler de dahil olmak üzere sayıların nasıl sunulacağını kontrol etmenize olanak tanır. Sayı biçimini ayarlayarak, grafikteki sayısal verilerin görünümünü özel gereksinimlerinize uyacak şekilde özelleştirebilirsiniz.
 
-#### S2. Eksen etiketleri için sayı biçimini nasıl ayarlayabilirim?
- Aspose.Words for .NET kullanarak bir tablodaki eksen etiketlerinin sayı biçimini ayarlamak için`AxisY` grafiğin özelliğini ayarlayın ve`NumberFormat.FormatCode`özelliğini istediğiniz format koduna değiştirin. Biçim kodu, standart sayısal biçimlendirme kalıplarının sözdizimini izler ve sayıların nasıl görüntüleneceğini belirler. Örneğin, sayıları iki ondalık basamaklı ve binlik ayırıcılarla görüntülemek için "#,##0.00" kullanabilirsiniz.
+#### Q2. Eksen etiketleri için sayı formatını nasıl ayarlayabilirim?
+ Aspose.Words for .NET kullanarak bir grafikteki eksen etiketlerinin sayı formatını ayarlamak için şuraya erişebilirsiniz:`AxisY` Grafiğin özelliğini seçin ve`NumberFormat.FormatCode`özelliği istenilen format koduna ayarlayın. Biçim kodu, standart sayısal biçimlendirme kalıplarının sözdizimini takip eder ve sayıların nasıl görüntüleneceğini belirler. Örneğin, iki ondalık basamaklı ve binlik ayırıcılı sayıları görüntülemek için "#,##0.00" komutunu kullanabilirsiniz.
 
-#### S3. X ekseni ve Y ekseni etiketleri için farklı sayı biçimleri ayarlayabilir miyim?
-Evet, Aspose.Words for .NET'i kullanarak X ekseni ve Y ekseni etiketleri için farklı sayı biçimleri ayarlayabilirsiniz. İlgili eksene erişin (`AxisX` X ekseni için veya`AxisY` grafiğin Y ekseni için) ve değiştirin`NumberFormat.FormatCode` her eksen için ayrı ayrı özellik. Bu, özel gereksinimlerinize göre her eksendeki etiketlere farklı sayı biçimleri uygulamanıza olanak tanır.
+#### S3. X ekseni ve Y ekseni etiketleri için farklı sayı formatları ayarlayabilir miyim?
+Evet, Aspose.Words for .NET'i kullanarak X ekseni ve Y ekseni etiketleri için farklı sayı formatları ayarlayabilirsiniz. İlgili eksene erişin (`AxisX` X ekseni için veya`AxisY` Grafiğin Y ekseni için) ve`NumberFormat.FormatCode` Her eksen için ayrı ayrı özellik. Bu, özel gereksinimlerinize göre her eksendeki etiketlere farklı sayı formatları uygulamanıza olanak tanır.
 
 #### S4. Kullanabileceğim bazı yaygın sayı biçimi kodları nelerdir?
-Aspose.Words for .NET, bir grafikteki eksen etiketlerini formatlamak için kullanabileceğiniz çok çeşitli sayı formatı kodlarını destekler. Bazı yaygın format kodları şunları içerir:
+Aspose.Words for .NET, bir grafikteki eksen etiketlerini formatlamak için kullanabileceğiniz çok çeşitli sayı formatı kodlarını destekler. Bazı yaygın biçim kodları şunları içerir:
 
 - `0` veya`#` - Sayıyı ondalık basamak olmadan görüntüler.
 - `0.00` veya`#.00` - Sayıyı iki ondalık basamakla görüntüler.
 - `#,##0` Sayıyı binlik ayırıcılarla görüntüler.
-- `"€"0.00` - Sayıyı Euro para birimi simgesi ve iki ondalık basamakla görüntüler.
+- `"€"0.00` - Sayıyı Euro para birimi simgesiyle ve iki ondalık basamakla görüntüler.
 - `"%"0` - Sayıyı yüzde olarak görüntüler.
 
- Numara hakkında daha fazla bilgi bulabilirsiniz.[biçim kodları](https://reference.aspose.com/words/net/aspose.words.drawing.charts/chartnumberformat/formatcode/) Aspose.Words for .NET'in API Referansında.
+ Numara hakkında daha fazla bilgi bulabilirsiniz[format kodları](https://reference.aspose.com/words/net/aspose.words.drawing.charts/chartnumberformat/formatcode/) Aspose.Words for .NET'in API Referansında.
 
 #### S5. Eksen etiketlerinin diğer özelliklerini özelleştirebilir miyim?
-Evet, Aspose.Words for .NET, eksen etiketlerinin görünümünü ve davranışını özelleştirmek için çok çeşitli özellikler sunar. Sayı biçimine ek olarak, yazı tipi, boyut, renk, yön, hizalama ve daha fazlası gibi özellikleri değiştirebilirsiniz. Bu, eksen etiketlerini istediğiniz tarza ve sunum gereksinimlerinize uyacak şekilde tamamen özelleştirmenize olanak tanır.
+Evet, Aspose.Words for .NET eksen etiketlerinin görünümünü ve davranışını özelleştirmek için geniş bir özellik yelpazesi sunar. Sayı biçimine ek olarak yazı tipi, boyut, renk, yön, hizalama ve daha fazlası gibi özellikleri değiştirebilirsiniz. Bu, eksen etiketlerini istediğiniz stil ve sunum gereksinimlerinize uyacak şekilde tamamen özelleştirmenize olanak tanır.

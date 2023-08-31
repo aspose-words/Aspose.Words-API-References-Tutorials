@@ -1,23 +1,23 @@
 ---
-title: Bir Grafikte XY Ekseni Özelliklerini Tanımlama
-linktitle: Bir Grafikte XY Ekseni Özelliklerini Tanımlama
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bir grafikte XY ekseni özelliklerini nasıl tanımlayacağınızı öğrenin. X ve Y eksenleri için özelleştirme seçenekleri gösterilmektedir.
+title: Grafikte XY Ekseni Özelliklerini Tanımlama
+linktitle: Grafikte XY Ekseni Özelliklerini Tanımlama
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak bir grafikte XY ekseni özelliklerini nasıl tanımlayacağınızı öğrenin. X ve Y eksenleri için özelleştirme seçenekleri gösterilmiştir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/define-xyaxis-properties/
 ---
 
-Bu eğitim, bir grafikte X ve Y eksenlerinin özelliklerini tanımlamak için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve eksen özelliklerinin nasıl özelleştirileceğini gösterir.
+Bu eğitimde bir grafikteki X ve Y eksenlerinin özelliklerini tanımlamak için Aspose.Words for .NET'in nasıl kullanılacağı açıklanmaktadır. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve eksen özelliklerinin nasıl özelleştirileceğini gösterir.
 
-## 1. Adım: Projeyi kurun
+## 1. Adım: Projeyi ayarlayın
 
-Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kitaplığı yüklendi. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
-- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
+- Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
+- Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
+## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -29,16 +29,16 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ardından, kullanarak belgeye bir grafik ekleyin.`InsertChart` yöntemi`DocumentBuilder`. Bu örnekte, bir alan grafiği ekleyeceğiz.
+ Daha sonra belgeye bir grafik ekleyin.`InsertChart` yöntemi`DocumentBuilder`. Bu örnekte bir alan grafiği ekleyeceğiz.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. Adım: Seri verilerini grafiğe ekleyin
+## 3. Adım: Grafiğe seri verilerini ekleyin
 
-Grafiğe seri verileri ekleyin. Bu örnekte, karşılık gelen tarihler ve değerlerle birlikte beş veri noktası ekleyeceğiz.
+Grafiğe seri verileri ekleyin. Bu örnekte, karşılık gelen tarih ve değerlere sahip beş veri noktası ekleyeceğiz.
 
 ```csharp
 chart.Series.Clear();
@@ -53,14 +53,14 @@ chart.Series.Add("Aspose Series 1",
 
 ## 4. Adım: X ve Y ekseni özelliklerini özelleştirin
 
- X ve Y eksenlerinin özelliklerini özelleştirmek için şuraya erişin:`ChartAxis` grafikle ilişkili nesneler.
+ X ve Y eksenlerinin özelliklerini özelleştirmek için`ChartAxis` grafikle ilişkili nesneler.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
 ChartAxis yAxis = chart.AxisY;
 ```
 
- Özelliklerini değiştirin`xAxis` Ve`yAxis` ve Y eksenleri için istenen seçenekleri ayarlamak için nesneler. Bu örnekte, özelleştirilebilen bazı genel özellikleri göstereceğiz.
+ Özelliklerini değiştirin`xAxis` Ve`yAxis` ve Y eksenleri için istenen seçenekleri ayarlamak için nesneleri kullanın. Bu örnekte özelleştirilebilecek bazı ortak özellikleri göstereceğiz.
 
 ```csharp
 xAxis.CategoryType = AxisCategoryType.Category;
@@ -87,7 +87,7 @@ yAxis.Scaling.Maximum = new AxisBound(700);
 doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanan bir grafikte XY ekseni özelliklerini tanımlama uygulamasını tamamlar.
+Bu, Aspose.Words for .NET kullanılarak bir grafikte XY ekseni özelliklerinin tanımlanmasının uygulanmasını tamamlar.
 
 ### Aspose.Words for .NET kullanarak XYAxis Özelliklerini Tanımlamak için örnek kaynak kodu 
 
@@ -110,10 +110,10 @@ Bu, Aspose.Words for .NET kullanan bir grafikte XY ekseni özelliklerini tanıml
 		new double[] { 640, 320, 280, 120, 150 });
 	ChartAxis xAxis = chart.AxisX;
 	ChartAxis yAxis = chart.AxisY;
-	// X eksenini tarih yerine kategori olacak şekilde değiştirin, böylece tüm noktalar X eksenine eşit aralıklarla konulacaktır.
+	// X eksenini tarih yerine kategori olacak şekilde değiştirin, böylece tüm noktalar X eksenine eşit aralıklarla yerleştirilecektir.
 	xAxis.CategoryType = AxisCategoryType.Category;
 	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; // Y ekseninin gösterge birimleriyle ölçülmüştür (yüzlerce).
+	xAxis.CrossesAt = 3; // Y ekseninin görüntü birimleri (yüzlerce) cinsinden ölçülür.
 	xAxis.ReverseOrder = true;
 	xAxis.MajorTickMark = AxisTickMark.Cross;
 	xAxis.MinorTickMark = AxisTickMark.Outside;
@@ -129,28 +129,28 @@ Bu, Aspose.Words for .NET kullanan bir grafikte XY ekseni özelliklerini tanıml
 
 ## Çözüm
 
-Bu öğreticide, Aspose.Words for .NET kullanarak bir grafikte X ve Y eksenleri için özelliklerin nasıl tanımlanacağını öğrendiniz. Adım adım kılavuzu izleyerek bir grafik oluşturabilir, seri verileri ekleyebilir ve eksen özelliklerini özel gereksinimlerinizi karşılayacak şekilde özelleştirebilirsiniz. Aspose.Words for .NET, Word belgelerindeki grafiklerle Word Processing için kapsamlı bir API sağlar ve eksenler dahil olmak üzere grafiğin çeşitli yönlerini değiştirmenize olanak tanır.
+Bu eğitimde Aspose.Words for .NET kullanarak bir grafikte X ve Y eksenleri için özelliklerin nasıl tanımlanacağını öğrendiniz. Adım adım kılavuzu izleyerek bir grafik oluşturabilir, seri verileri ekleyebilir ve eksen özelliklerini özel gereksinimlerinizi karşılayacak şekilde özelleştirebilirsiniz. Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için kapsamlı bir API sağlar ve eksenler de dahil olmak üzere grafiğin çeşitli yönlerini değiştirmenize olanak tanır.
 
- erişerek`ChartAxis` grafikle ilişkilendirilmiş nesneler, kategori türü, eksen geçişleri, onay işaretleri, etiket konumları, ölçekleme ve daha fazlası gibi özellikleri değiştirebilirsiniz. Bu esneklik, verilerinizi etkili bir şekilde sunmak için grafiğin eksenlerinin görünümünü ve davranışını uyarlamanıza olanak tanır.
+ Erişerek`ChartAxis` Grafikle ilişkili nesnelerde kategori türü, eksen kesişimleri, onay işaretleri, etiket konumları, ölçekleme ve daha fazlası gibi özellikleri değiştirebilirsiniz. Bu esneklik, verilerinizi etkili bir şekilde sunmak için grafiğin eksenlerinin görünümünü ve davranışını uyarlamanıza olanak tanır.
 
-Aspose.Words for .NET'i kullanarak, grafik oluşturma ve özelleştirme yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir ve zengin görselleştirmelerle profesyonel görünümlü belgelerin oluşturulmasını otomatikleştirebilirsiniz.
+Aspose.Words for .NET'i kullanarak grafik oluşturma ve özelleştirme yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir ve zengin görselleştirmelerle profesyonel görünümlü belgelerin oluşturulmasını otomatikleştirebilirsiniz.
 
 ### SSS
 
 #### S1. Aspose.Words for .NET nedir?
-Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında programlı olarak Word belgeleri oluşturmasına, değiştirmesine ve kaydetmesine olanak sağlayan güçlü bir belge işleme kitaplığıdır. Grafikler de dahil olmak üzere belge öğeleriyle Kelime İşleme için çok çeşitli özellikler sağlar.
+Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgelerini programlı olarak oluşturmasına, yönetmesine ve kaydetmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır. Grafikler de dahil olmak üzere belge öğeleriyle Kelime İşleme için geniş bir özellik yelpazesi sunar.
 
-#### S2. Aspose.Words for .NET'i nasıl kurabilirim?
-Aspose.Words for .NET'i Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini arayın ve onu projenize kurun.
+#### Q2. Aspose.Words for .NET'i nasıl kurabilirim?
+Aspose.Words for .NET'i, Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini arayın ve projenize yükleyin.
 
-#### S3. Aspose.Words for .NET'i kullanarak grafiğin diğer özelliklerini özelleştirebilir miyim?
-Evet, Aspose.Words for .NET, bir grafiğin çeşitli yönlerini özelleştirmek için kapsamlı yetenekler sağlar. Eksen özelliklerini tanımlamaya ek olarak, grafik tipini, veri serisini, açıklamayı, başlığı, çizim alanını, veri etiketlerini ve grafiğin diğer birçok öğesini değiştirebilirsiniz. API, grafik görünümü ve davranışı üzerinde ayrıntılı kontrol sunar.
+#### S3. Aspose.Words for .NET'i kullanarak grafiğin diğer yönlerini özelleştirebilir miyim?
+Evet, Aspose.Words for .NET bir grafiğin çeşitli yönlerini özelleştirmek için kapsamlı yetenekler sağlar. Eksen özelliklerini tanımlamanın yanı sıra grafik türünü, veri serisini, açıklamayı, başlığı, çizim alanını, veri etiketlerini ve grafiğin diğer birçok öğesini değiştirebilirsiniz. API, grafiğin görünümü ve davranışı üzerinde ayrıntılı kontrol sunar.
 
-#### S4. Aspose.Words for .NET kullanarak farklı türde grafikler oluşturabilir miyim?
-Evet, Aspose.Words for .NET, alan, çubuk, çizgi, pasta, dağılım ve daha fazlasını içeren çok çeşitli grafik türlerini destekler. kullanabilirsiniz`ChartType` bir Word belgesine grafik şekli eklerken istenen grafik türünü belirtmek için numaralandırma.
+#### S4. Aspose.Words for .NET'i kullanarak farklı türde grafikler oluşturabilir miyim?
+Evet, Aspose.Words for .NET alan, çubuk, çizgi, pasta, dağılım ve daha fazlasını içeren çok çeşitli grafik türlerini destekler. Şunu kullanabilirsiniz:`ChartType` Word belgesine grafik şekli eklerken istenen grafik türünü belirtmek için numaralandırma.
 
 #### S5. Grafiği farklı formatlarda kaydedebilir miyim?
- Evet, Aspose.Words for .NET, grafiği içeren belgeyi DOCX, PDF, HTML ve daha fazlası gibi çeşitli biçimlerde kaydetmenize olanak tanır. Gereksinimlerinize göre uygun formatı seçebilir ve`Save` yöntemi`Document` belgeyi kaydetmek için nesne.
+ Evet, Aspose.Words for .NET, grafiği içeren belgeyi DOCX, PDF, HTML ve daha fazlası gibi çeşitli formatlarda kaydetmenize olanak tanır. Gereksinimlerinize göre uygun formatı seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne.
 
-#### S6. Bu teknikleri bir belgedeki birden çok grafiğe uygulayabilir miyim?
- Evet, her grafik için gerekli adımları tekrarlayarak bu teknikleri bir belgedeki birden çok grafiğe uygulayabilirsiniz. ayrı oluşturabilirsiniz`Chart` Ve`ChartAxis` her grafik için nesneler ve özelliklerini buna göre özelleştirin. Aspose.Words for .NET, tek bir belgede birden çok grafikle Kelime İşleme için tam destek sağlar.
+#### S6. Bu teknikleri bir belgedeki birden fazla grafiğe uygulayabilir miyim?
+ Evet, her grafik için gerekli adımları tekrarlayarak bu teknikleri bir belgedeki birden fazla grafiğe uygulayabilirsiniz. Ayrı oluşturabilirsiniz`Chart` Ve`ChartAxis` Her grafik için nesneleri seçin ve özelliklerini buna göre özelleştirin. Aspose.Words for .NET, tek bir belgede birden fazla grafikle Kelime İşleme için tam destek sağlar.

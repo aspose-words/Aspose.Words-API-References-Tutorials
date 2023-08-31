@@ -1,32 +1,32 @@
 ---
 title: Yer İşaretli Metni Word Belgesine Ekle
 linktitle: Yer İşaretli Metni Word Belgesine Ekle
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bir Word belgesindeki bir yer iminden nasıl metin ekleyeceğinizi öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki yer iminden nasıl metin ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 
-Bu makalede, Aspose.Words for .NET kitaplığında Append Bookmarked Text işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir Word belgesinin belirli bir yer iminde bulunan metni başka bir belgeye eklemenizi sağlar.
+Bu makalede, Aspose.Words for .NET kütüphanesinde Yer İşaretli Metni Ekle fonksiyonunun nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir Word belgesinin belirli bir yer iminde bulunan metni başka bir belgeye eklemenizi sağlar.
 
 ## Önkoşullar
 
 - C# dili hakkında temel bilgi.
 - Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## 1. Adım: Yer İşaretinden Paragrafları Alma
+## Adım 1: Yer İminden Paragraf Alma
 
- Yer imi metnini eklemeye başlamadan önce yer imi başlangıç ve bitişini içeren paragrafları almamız gerekiyor. Bu, şu adrese erişerek yapılabilir:`BookmarkStart` Ve`BookmarkEnd` yer iminin özellikleri:
+ Yer imi metnini eklemeye başlamadan önce yer iminin başlangıcını ve sonunu içeren paragrafları almamız gerekir. Bu, şuraya erişilerek yapılabilir:`BookmarkStart` Ve`BookmarkEnd` yer iminin özellikleri:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
 Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
 ```
 
-## 2. Adım: Ana Paragrafları Kontrol Edin
+## Adım 2: Ana Paragrafları Kontrol Edin
 
-Başlangıç ve bitiş paragraflarının geçerli ebeveynleri olup olmadığını, yani gerçekten bir paragrafa ait olup olmadıklarını kontrol ederiz. Değilse, bir istisna oluştururuz:
+Başlangıç ve bitiş paragraflarının geçerli üst öğelerinin olup olmadığını, yani gerçekten bir paragrafa ait olup olmadıklarını kontrol ederiz. Değilse, bir istisna oluştururuz:
 
 ```csharp
 if (startPara == null || endPara == null)
@@ -36,7 +36,7 @@ throw new InvalidOperationException(
 hey, this situation can't be handled yet.");
 ```
 
-## 3. Adım: Paragrafların Üst Öğelerini Kontrol Edin
+## Adım 3: Paragrafların Ana Öğelerini Kontrol Edin
 
 Başlangıç ve bitiş paragraflarının aynı ebeveyne sahip olup olmadığını kontrol ederiz. Değilse, bu, paragrafların aynı bölümde veya belgede yer almadığı anlamına gelir ve bir istisna atıyoruz:
 
@@ -48,7 +48,7 @@ throw new InvalidOperationException(
 
 ## 4. Adım: Paragrafları kopyalayın
 
-Başlangıç paragrafından bitiş paragrafına kadar düğümler (paragraflar) boyunca yineliyoruz. Her düğüm için bir kopya oluşturur ve bunu hedef belgenin bağlamına aktarırız:
+Başlangıç paragrafından bitiş paragrafına kadar düğümler (paragraflar) arasında yineleniriz. Her düğüm için bir kopya oluşturup bunu hedef belgenin bağlamına aktarıyoruz:
 
 ```csharp
 Node endNode = endPara.NextSibling;
@@ -61,9 +61,9 @@ dstNode.AppendChild(newNode);
 }
 ```
 
-### Aspose.Words for .NET kullanarak Bookmarked Text Append için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak Yer İşaretli Metni Ekleme için örnek kaynak kodu
 
-Aspose.Words for .NET kullanarak bir yer iminden metin eklemeyi gösteren tam örnek kaynak kodu burada:
+Aspose.Words for .NET kullanarak bir yer iminden metin eklemeyi gösteren tam örnek kaynak kodunu burada bulabilirsiniz:
 
 ```csharp
 
@@ -77,19 +77,19 @@ Aspose.Words for .NET kullanarak bir yer iminden metin eklemeyi gösteren tam ö
 		throw new InvalidOperationException(
 			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 
-	// Kendimizi oldukça basit bir senaryo ile sınırlayın.
+	// Kendimizi oldukça basit bir senaryoyla sınırlayalım.
 	if (startPara.ParentNode != endPara.ParentNode)
 		throw new InvalidOperationException(
 			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
 
-	// Başlangıç paragrafından bitiş paragrafına kadar (ve dahil) tüm paragrafları kopyalamak istiyoruz,
-	// bu nedenle durduğumuz düğüm, son paragraftan sonradır.
+	// Tüm paragrafları başlangıç paragrafından bitiş paragrafına kadar (ve dahil) kopyalamak istiyoruz,
+	// dolayısıyla duracağımız düğüm son paragraftan sonraki düğümdür.
 	Node endNode = endPara.NextSibling;
 
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
-		// Bu, geçerli düğümün bir kopyasını oluşturur ve onu bağlamda içe aktarır (geçerli kılar)
-		// hedef belgenin İçe aktarma, stilleri ve liste tanımlayıcılarını doğru şekilde ayarlamak anlamına gelir.
+		// Bu, mevcut düğümün bir kopyasını oluşturur ve onu bağlamda içe aktarır (geçerli kılar)
+		// hedef belgenin. İçe aktarma, stilleri ve liste tanımlayıcılarını doğru şekilde ayarlamak anlamına gelir.
 		Node newNode = importer.ImportNode(curNode, true);
 
 		dstNode.AppendChild(newNode);
@@ -99,23 +99,23 @@ Aspose.Words for .NET kullanarak bir yer iminden metin eklemeyi gösteren tam ö
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Append Bookmarked Text işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir yer iminden paragrafları almak, ebeveynleri doğrulamak ve paragrafları başka bir belgeye kopyalamak için adım adım bir kılavuz izledik.
+Bu makalede, Aspose.Words for .NET'in Yer İşaretli Metni Ekle işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir yer iminden paragraf alma, üst öğeleri doğrulama ve paragrafları başka bir belgeye kopyalama konusunda adım adım bir kılavuz izledik.
 
-### Word belgesinde yer imi eklenmiş metin eklemeyle ilgili SSS
+### Word belgesine yer imli metin eklemeyle ilgili SSS
 
-#### S1: Aspose.Words for .NET'te "Yer işaretli metin ekle" özelliğini kullanmanın ön koşulları nelerdir?
+#### S1: Aspose.Words for .NET'te "Yer işaretleriyle metin ekle" özelliğini kullanmanın önkoşulları nelerdir?
 
-C: Aspose.Words for .NET'te "Yer işaretli metin ekle" işlevini kullanmak için temel C# dili bilgisine sahip olmanız gerekir. Ayrıca Aspose.Words kütüphanesinin kurulu olduğu bir .NET geliştirme ortamına ihtiyacınız var.
+C: Aspose.Words for .NET'te "Yer işaretleriyle metin ekle" işlevini kullanmak için temel C# dili bilgisine sahip olmanız gerekir. Ayrıca Aspose.Words kütüphanesinin kurulu olduğu bir .NET geliştirme ortamına da ihtiyacınız var.
 
-#### S2: Bir Word belgesinde yer iminin başlangıcını ve sonunu içeren paragraflar nasıl elde edilir?
+#### S2: Bir Word belgesinde yer işaretinin başlangıcını ve sonunu içeren paragraflar nasıl alınır?
 
- C: Bir Word belgesindeki bir yer iminin başlangıcını ve sonunu içeren paragrafları almak için,`BookmarkStart` Ve`BookmarkEnd` yer iminin özellikleri. İşte örnek bir kod:
+ C: Bir Word belgesindeki yer iminin başlangıcını ve sonunu içeren paragraflara ulaşmak için`BookmarkStart` Ve`BookmarkEnd` yer iminin özellikleri. İşte örnek bir kod:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
 Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
 ```
 
-#### S3: Başlangıç ve bitiş paragraflarının geçerli ebeveynleri yoksa ne olur?
+#### S3: Başlangıç ve bitiş paragraflarının geçerli üst öğeleri yoksa ne olur?
 
-C: Başlangıç ve bitiş paragraflarının geçerli ebeveynleri yoksa, yani gerçekten paragraf değillerse, bir istisna atılır. Bu durum şu anda yönetilemez.
+C: Başlangıç ve bitiş paragraflarının geçerli üst öğeleri yoksa, yani bunlar gerçekten paragraf değilse bir istisna oluşturulacaktır. Bu durum şu anda yönetilemez.

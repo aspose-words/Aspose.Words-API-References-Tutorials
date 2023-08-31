@@ -1,26 +1,26 @@
 ---
-title: Word'de Belge Stillerini Alın
-linktitle: Word'de Belge Stillerini Alın
-second_title: Aspose.Words Belge İşleme API'sı
+title: Word'de Belge Stillerini Alma
+linktitle: Word'de Belge Stillerini Alma
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile Word'de belge stillerini nasıl alacağınızı öğrenin. Belgelerinizin stillerini değiştirmek için öğreticiyi tamamlayın.
 type: docs
 weight: 10
 url: /tr/net/programming-with-styles-and-themes/access-styles/
 ---
 
-Bu eğitimde, Aspose.Words for .NET kullanarak Word'de belge stilleri almak için sağlanan C# kaynak kodunu keşfedeceğiz. Bu özellik, belgede bulunan tüm stil koleksiyonunu elde etmenizi sağlar.
+Bu eğitimde, Aspose.Words for .NET kullanarak Word'de belge stilleri almak için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, belgede bulunan stillerin tam koleksiyonunu almanızı sağlar.
 
 ## 1. Adım: Ortamı ayarlama
 
-Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
+Başlamadan önce Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## 2. Adım: Belgeyi oluşturma
+## Adım 2: Belgeyi oluşturma
 
 ```csharp
 Document doc = new Document();
 ```
 
- Bu adımda yeni bir boş oluşturuyoruz`Document` nesne.
+ Bu adımda yeni bir boş yaratıyoruz`Document` nesne.
 
 ## 3. Adım: Stil koleksiyonuna erişme
 
@@ -30,7 +30,7 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- Bu adımda, kullanarak belgenin stil koleksiyonuna erişiyoruz.`Styles` mülk. Bu koleksiyon, belgede bulunan tüm stilleri içerir.
+ Bu adımda belgenin stil koleksiyonuna şu komutu kullanarak erişiyoruz:`Styles` mülk. Bu koleksiyon, belgede bulunan tüm stilleri içerir.
 
 ## 4. Adım: Stillere Göz Atın
 
@@ -50,11 +50,11 @@ foreach(Style style in styles)
 }
 ```
 
- Bu son adımda, koleksiyondaki her bir stili bir`foreach`döngü. Her stilin adını daha iyi okunabilirlik için virgüllerle birleştirerek konsola gösteriyoruz.
+ Bu son adımda, koleksiyondaki her stilin üzerinden bir döngü kullanarak geçiyoruz.`foreach`döngü. Daha iyi okunabilirlik için her stilin adını virgüllerle birleştirerek konsolda görüntüleriz.
 
-Artık bir belgedeki stillere erişmek ve adlarını konsolda görüntülemek için kaynak kodunu çalıştırabilirsiniz. Bu özellik, bir belgedeki stilleri analiz etmek, belirli stiller üzerinde belirli işlemler gerçekleştirmek veya sadece mevcut stiller hakkında bilgi almak için yararlı olabilir.
+Artık bir belgedeki stillere erişmek ve adlarını konsolda görüntülemek için kaynak kodunu çalıştırabilirsiniz. Bu özellik, bir belgedeki stilleri analiz etmek, belirli stiller üzerinde belirli işlemleri gerçekleştirmek veya yalnızca mevcut stiller hakkında bilgi almak için yararlı olabilir.
 
-### Aspose.Words for .NET kullanan Access Styles için örnek kaynak kodu 
+### Aspose.Words for .NET kullanan Erişim Stilleri için örnek kaynak kodu 
 ```csharp
 
 Document doc = new Document();
@@ -82,9 +82,9 @@ foreach (Style style in styles)
 
 ## Çözüm
 
- Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde bulunan stillerin nasıl alınacağını ve bunlara erişileceğini öğrendik. kullanarak`Styles` mülkiyeti`Document` nesne, stiller koleksiyonunu elde ettik ve adlarını görüntülemek için aralarında döngü oluşturduk. Bu özellik, bir belgede kullanılan stiller hakkında değerli bilgiler sağlar ve daha fazla özelleştirme ve analiz sağlar.
+ Bu eğitimde Aspose.Words for .NET'i kullanarak bir Word belgesinde bulunan stilleri nasıl elde edeceğimizi ve bunlara nasıl erişeceğimizi öğrendik. Kullanarak`Styles` mülkiyeti`Document` nesne, stil koleksiyonunu elde ettik ve adlarını görüntülemek için bunlar arasında dolaştık. Bu özellik, bir belgede kullanılan stillere ilişkin değerli bilgiler sağlar ve daha fazla özelleştirme ve analiz yapılmasına olanak tanır.
 
-Aspose.Words for .NET'in güçlü API'sinden yararlanan geliştiriciler, biçimlendirme ve belge işleme üzerinde gelişmiş kontrol sunarak belge stillerini kolayca manipüle edebilir ve bunlarla çalışabilir.
+Geliştiriciler, Aspose.Words for .NET'in güçlü API'sinden yararlanarak belge stillerini kolayca yönetebilir ve bunlarla çalışabilir, bu da biçimlendirme ve belge işleme üzerinde gelişmiş kontrol sunar.
 
 ### SSS
 
@@ -92,13 +92,13 @@ Aspose.Words for .NET'in güçlü API'sinden yararlanan geliştiriciler, biçiml
 
 Bir Word belgesindeki stillere erişmek için şu adımları izleyin:
 1.  Yeni bir tane oluştur`Document` nesne.
-2.  Al`StyleCollection` erişerek`Styles` belgenin özelliği.
-3. Her stile ayrı ayrı erişmek ve işlemek için bir döngü kullanarak stiller arasında yineleme yapın.
+2.  Geri al`StyleCollection` erişerek`Styles` belgenin özelliği.
+3. Her stile ayrı ayrı erişmek ve bunları işlemek için bir döngü kullanarak stiller arasında yineleme yapın.
 
-#### Aspose.Words for .NET kullanılarak elde edilen stil koleksiyonu ile ne yapabilirim?
+#### Aspose.Words for .NET kullanılarak elde edilen stil koleksiyonuyla ne yapabilirim?
 
-Stil koleksiyonuna sahip olduğunuzda, bir belgede kullanılan stilleri analiz etmek, belirli stilleri değiştirmek, belge öğelerine stiller uygulamak veya mevcut stiller hakkında bilgi çıkarmak gibi çeşitli işlemleri gerçekleştirebilirsiniz. Belge stili ve biçimlendirmesi üzerinde size esneklik ve kontrol sağlar.
+Stil koleksiyonuna sahip olduğunuzda, belgede kullanılan stilleri analiz etmek, belirli stilleri değiştirmek, belge öğelerine stiller uygulamak veya mevcut stiller hakkında bilgi çıkarmak gibi çeşitli işlemleri gerçekleştirebilirsiniz. Belge stili ve biçimlendirmesi üzerinde size esneklik ve kontrol sağlar.
 
-#### Elde ettiğim stil bilgilerini uygulamamda nasıl kullanabilirim?
+#### Elde edilen stil bilgisini uygulamamda nasıl kullanabilirim?
 
-Belge işlemeyi özelleştirmek, tutarlı biçimlendirme uygulamak, raporlar oluşturmak veya belirli stillere dayalı veri analizi yapmak için elde edilen stil bilgilerini kullanabilirsiniz. Stil bilgileri, belgeyle ilgili görevleri otomatikleştirmek ve istenen biçimlendirme sonuçlarını elde etmek için bir temel işlevi görebilir.
+Elde edilen stil bilgilerini belge işlemeyi özelleştirmek, tutarlı biçimlendirme uygulamak, raporlar oluşturmak veya belirli stillere dayalı olarak veri analizi gerçekleştirmek için kullanabilirsiniz. Stil bilgileri, belgeyle ilgili görevlerin otomatikleştirilmesi ve istenen biçimlendirme sonuçlarının elde edilmesi için bir temel görevi görebilir.

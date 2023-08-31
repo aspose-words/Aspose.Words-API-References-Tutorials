@@ -143,7 +143,7 @@ Word Automation 涉及以编程方式与 Word 文档进行交互。 Aspose.Words
 是的，Aspose.Words for Python 与各种操作系统兼容，包括 Windows、macOS 和 Linux，使其适用于不同的开发环境。
 
 ### Aspose.Words 能够处理复杂的文档格式吗？
-绝对地！ Aspose.Words 为文档格式提供全面的支持，使您能够应用样式、字体、颜色和其他格式选项来创建具有视觉吸引力的文档。
+绝对地！ Aspose.Words 提供对文档格式的全面支持，使您能够应用样式、字体、颜色和其他格式选项来创建具有视觉吸引力的文档。
 
 ### Aspose.Words 可以自动创建和操作表格吗
 是的，Aspose.Words 允许您以编程方式创建、添加行和单元格以及将格式应用于表格，从而简化了表格管理。

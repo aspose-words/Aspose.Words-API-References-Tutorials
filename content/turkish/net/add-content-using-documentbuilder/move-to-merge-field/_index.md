@@ -1,31 +1,31 @@
 ---
 title: Word Belgesinde Alanı Birleştirmek İçin Taşı
 linktitle: Word Belgesinde Alanı Birleştirmek İçin Taşı
-second_title: Aspose.Words Belge İşleme API'sı
-description: Adım adım kılavuz kullanarak Aspose.Words for .NET'in word belgesinde Birleştirme Alanına Taşı özelliğini nasıl uygulayacağınızı öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'in Word belgesinde Birleştirme Alanına Taşı özelliğini adım adım kılavuzu kullanarak nasıl uygulayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
-Bu örnekte, Aspose.Words for .NET'in word belgesinde Birleştirme Alanına Taşı özelliğini inceleyeceğiz. Aspose.Words, geliştiricilerin Word belgelerini program aracılığıyla oluşturmasına, değiştirmesine ve dönüştürmesine olanak sağlayan güçlü bir belge işleme kitaplığıdır. Birleştirme Alanına Taşı özelliği, bir belgedeki alanları birleştirmek için gezinmemize ve bunlar üzerinde çeşitli işlemler gerçekleştirmemize olanak tanır.
+Bu örnekte Aspose.Words for .NET'in word belgesindeki Birleştirme Alanına Taşı özelliğini inceleyeceğiz. Aspose.Words, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır. Alanı Birleştirmeye Taşı özelliği, bir belge içindeki alanları birleştirmeye gitmemize ve bunlar üzerinde çeşitli işlemler gerçekleştirmemize olanak tanır.
 
 
-## Kaynak kodunu adım adım açıklama
+## Kaynak kodunun adım adım açıklanması
 
-Aspose.Words for .NET kullanarak Birleştirme Alanına Taşı özelliğinin nasıl kullanılacağını anlamak için kaynak kodunu adım adım inceleyelim.
+Aspose.Words for .NET kullanarak Alanı Birleştirmeye Taşı özelliğinin nasıl kullanılacağını anlamak için kaynak kodunu adım adım inceleyelim.
 
-## 1. Adım: Belge ve belge oluşturucuyu başlatma
+## 1. Adım: Belgeyi ve belge oluşturucuyu başlatma
 
-Önce Document ve DocumentBuilder nesnelerini başlatın:
+Öncelikle Document ve DocumentBuilder nesnelerini başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım Bir birleştirme alanı ekleme ve ardından metin ekleme
+## 2. Adım Birleştirme alanı ekleme ve ardından metin ekleme
 
-Bir birleştirme alanı eklemek için DocumentBuilder sınıfının InsertField yöntemini kullanın ve ardından bundan sonra metin ekleyin:
+Birleştirme alanı eklemek için DocumentBuilder sınıfının InsertField yöntemini kullanın ve ardından bunun arkasına metin ekleyin:
 
 ```csharp
 Field field = builder.InsertField("MERGEFIELD field");
@@ -45,9 +45,9 @@ Belge oluşturucu imlecini birleştirme alanına taşımak için DocumentBuilder
 builder.MoveToField(field, true);
 ```
 
-## Birleştirme alanından hemen sonra metin ekleme
+## Birleştirme alanının hemen sonrasına metin ekleme
 
-Belge oluşturucu imleci birleştirme alanının içine girdikten sonra, Write yöntemini kullanarak hemen arkasına metin ekleyebilirsiniz:
+Belge oluşturucu imleci birleştirme alanının içine geldiğinde, Write yöntemini kullanarak hemen arkasına metin ekleyebilirsiniz:
 
 ```csharp
 Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
@@ -60,44 +60,44 @@ builder.Write(" Text immediately after the field.");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// DocumentBuilder'ı kullanarak bir alan ekleyin ve ardından bir dizi metin ekleyin.
+// DocumentBuilder'ı kullanarak bir alan ekleyin ve arkasına bir metin dizisi ekleyin.
 Field field = builder.InsertField("MERGEFIELD field");
 builder.Write(" Text after the field.");
 
 // Oluşturucunun imleci şu anda belgenin sonundadır.
 Assert.Null(builder.CurrentNode);
-// İmleci alanın hemen sonrasına getirerek oluşturucuyu böyle bir alana taşıyabiliriz.
+// İmleci alanın hemen sonrasına yerleştirerek oluşturucuyu bunun gibi bir alana taşıyabiliriz.
 builder.MoveToField(field, true);
 
-// İmlecin, alanın FieldEnd düğümünü geçen bir yerde olduğuna, yani aslında alanın içinde olmadığımıza dikkat edin.
-// DocumentBuilder'ı bir alanın içine taşımak istersek,
-// onu DocumentBuilder.MoveTo() yöntemini kullanarak bir alanın FieldStart veya FieldSeparator düğümüne taşımamız gerekecek.
+// İmlecin alanın FieldEnd düğümünü geçen bir yerde olduğunu, yani aslında alanın içinde olmadığımızı unutmayın.
+// DocumentBuilder'ı bir alanın içine taşımak istiyorsak,
+// DocumentBuilder.MoveTo() yöntemini kullanarak onu alanın FieldStart veya FieldSeparator düğümüne taşımamız gerekecek.
 Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
 builder.Write(" Text immediately after the field.");
 ```
 
 ## Çözüm
 
-Aspose.Words for .NET'in Birleştirme Alanına Taşı özelliğini inceledik. DocumentBuilder sınıfını kullanarak bir belgedeki alanları birleştirmek için nasıl gezineceğimizi ve bunlar üzerinde işlemler yapmayı öğrendik. Bu özellik, birleştirme ile programlı olarak Sözcük İşleme yapıldığında kullanışlıdır.
+Aspose.Words for .NET'in Birleştirme Alanına Taşı özelliğini inceledik. DocumentBuilder sınıfını kullanarak bir belge içindeki alanları birleştirmek için nasıl gezineceğimizi ve bunlar üzerinde işlemler yapmayı öğrendik. Bu özellik, programlı olarak birleştirme ile Kelime İşleme sırasında kullanışlıdır.
 
-### Word belgesinde birleştirme alanını taşımak için SSS
+### Word belgesindeki birleştirme alanına geçişle ilgili SSS
 
 #### S: Aspose.Words for .NET'teki Birleştirme Alanına Taşı özelliğinin amacı nedir?
 
-C: Aspose.Words for .NET'teki Birleştirme Alanına Taşı özelliği, geliştiricilerin bir Word belgesi içindeki alanları birleştirmek için gezinmesine ve bunlar üzerinde programlı olarak çeşitli işlemler gerçekleştirmesine olanak tanır. Birleştirme alanları, adres mektup birleştirme işlemleri için Word belgelerinde kullanılan özel yer tutuculardır.
+C: Aspose.Words for .NET'teki Alanı Birleştirmek İçin Taşı özelliği, geliştiricilerin bir Word belgesi içindeki alanları birleştirmesine ve bunlar üzerinde programlı olarak çeşitli işlemler gerçekleştirmesine olanak tanır. Birleştirme alanları, Word belgelerinde adres-mektup birleştirme işlemleri için kullanılan özel yer tutuculardır.
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesine nasıl birleştirme alanı ekleyebilirim?
 
-Y: Belgeye bir birleştirme alanı eklemek için DocumentBuilder sınıfının InsertField yöntemini kullanabilirsiniz. Birleştirme alanını ekledikten sonra, Write yöntemini kullanarak alanın önüne veya arkasına metin gibi içerik ekleyebilirsiniz.
+C: Belgeye birleştirme alanı eklemek için DocumentBuilder sınıfının InsertField yöntemini kullanabilirsiniz. Birleştirme alanını ekledikten sonra Write yöntemini kullanarak alanın önüne veya arkasına metin gibi içerikler ekleyebilirsiniz.
 
-#### S: Belge oluşturucu imlecini belirli bir birleştirme alanına nasıl taşırım?
+#### S: Belge oluşturucu imlecini belirli bir birleştirme alanına nasıl taşıyabilirim?
 
-Y: Belge oluşturucu imlecini belirli bir birleştirme alanına taşımak için DocumentBuilder sınıfının MoveToField yöntemini kullanın ve alanı bir parametre olarak iletin. Bu, imleci birleştirme alanının hemen sonrasına yerleştirir.
+C: Belge oluşturucu imlecini belirli bir birleştirme alanına taşımak için DocumentBuilder sınıfının MoveToField yöntemini kullanın ve alanı parametre olarak iletin. Bu, imleci birleştirme alanının hemen sonrasına yerleştirecektir.
 
-#### S: Birleştirme Alanına Taşı özelliğini kullanarak bir birleştirme alanına metin ekleyebilir miyim?
+#### S: Birleştirme Alanına Taşı özelliğini kullanarak birleştirme alanının içine metin ekleyebilir miyim?
 
-C: Hayır, Birleştirme Alanına Taşı özelliği, belge oluşturucu imlecini birleştirme alanının hemen sonrasına yerleştirir. Birleştirme alanına metin eklemek için, imleci birleştirme alanının FieldStart veya FieldSeparator düğümüne taşımak için DocumentBuilder.MoveTo yöntemini kullanabilirsiniz.
+C: Hayır, Birleştirme Alanına Taşı özelliği, belge oluşturucu imlecini birleştirme alanının hemen sonrasına yerleştirir. Birleştirme alanının içine metin eklemek için, imleci birleştirme alanının FieldStart veya FieldSeparator düğümüne taşımak üzere DocumentBuilder.MoveTo yöntemini kullanabilirsiniz.
 
-#### S: Adres mektup birleştirme işlemlerini Aspose.Words for .NET kullanarak nasıl gerçekleştirebilirim?
+#### S: Aspose.Words for .NET'i kullanarak adres-mektup birleştirme işlemlerini nasıl gerçekleştirebilirim?
 
-Y: Aspose.Words for .NET adres mektup birleştirme işlemleri için kapsamlı destek sağlar. Diziler, veri kümeleri veya özel veri kaynakları gibi çeşitli kaynaklardan gelen verileri kullanarak adres mektup birleştirme gerçekleştirmek için MailMerge sınıfını kullanabilirsiniz.
+C: Aspose.Words for .NET, adres-mektup birleştirme işlemleri için kapsamlı destek sağlar. Diziler, veri kümeleri veya özel veri kaynakları gibi çeşitli kaynaklardan gelen verileri kullanarak adres-mektup birleştirme gerçekleştirmek için MailMerge sınıfını kullanabilirsiniz.

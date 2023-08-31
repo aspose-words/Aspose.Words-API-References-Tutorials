@@ -1,21 +1,21 @@
 ---
 title: Ripeti le righe nelle pagine successive
 linktitle: Ripeti le righe nelle pagine successive
-second_title: Aspose.Words API di elaborazione dei documenti
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come ripetere le righe della tabella nelle pagine successive in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-In questo tutorial impareremo come ripetere le righe di una tabella nelle pagine successive di un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di specificare le righe da ripetere nelle pagine successive della tua tabella nei tuoi documenti Word.
+In questo tutorial impareremo come ripetere le righe di una tabella nelle pagine successive di un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzionalità. Alla fine di questo tutorial sarai in grado di specificare le righe da ripetere nelle pagine successive della tabella nei tuoi documenti Word.
 
 ## Passaggio 1: impostazione del progetto
 1. Avvia Visual Studio e crea un nuovo progetto C#.
-2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
+2. Aggiungi un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: creazione del documento e inizializzazione del generatore di documenti
-Per avviare l'elaborazione di testi con il documento e il generatore di documenti, attenersi alla seguente procedura:
+Per avviare l'elaborazione parole con il documento e il generatore di documenti, attenersi alla seguente procedura:
 
 ```csharp
 // Percorso della directory dei documenti
@@ -28,16 +28,16 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
+Assicurati di sostituire "LA TUA DIRECTORY DOCUMENTI" con il percorso effettivo della directory dei documenti.
 
-## Passaggio 3: costruire la tabella con righe ripetute
-Successivamente, costruiremo una tabella con righe ripetute nelle pagine successive. Usa il seguente codice:
+## Passaggio 3: costruzione della tabella con righe ripetute
+Successivamente, creeremo una tabella con righe ripetute nelle pagine successive. Utilizza il seguente codice:
 
 ```csharp
-// Inizio del tavolo
+// Inizio della tavola
 builder. StartTable();
 
-// Configurazione dei parametri di prima riga (righe di intestazione)
+// Configurazione dei parametri della prima riga (righe di intestazione)
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
@@ -52,11 +52,11 @@ builder. InsertCell();
 builder.Writeln("Header line 2");
 builder. EndRow();
 
-// Configurare i parametri delle seguenti righe
+// Configurare i parametri delle righe successive
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 
-// Loop per inserire le celle nelle righe successive
+// Ciclo per inserire le celle nelle righe successive
 for (int i = 0; i < 50; i++)
 {
 builder. InsertCell();
@@ -71,12 +71,12 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Qui usiamo il generatore di documenti per creare una tabella con due righe di intestazione e più righe di dati. IL`RowFormat.HeadingFormat` parametri vengono utilizzati per contrassegnare le righe di intestazione che devono essere ripetute nelle pagine successive.
+ Qui utilizziamo il generatore di documenti per creare una tabella con due righe di intestazione e più righe di dati. IL`RowFormat.HeadingFormat` parametri vengono utilizzati per contrassegnare le righe di intestazione che dovrebbero essere ripetute nelle pagine successive.
 
-## Passaggio 4: salvare il documento modificato
-Infine NOI
+## Passaggio 4: salvataggio del documento modificato
+Infine gli Stati Uniti
 
-  necessità di salvare il documento modificato con le righe di intestazione ripetute nelle pagine successive della tabella. Usa il seguente codice:
+  è necessario salvare il documento modificato con le righe di intestazione ripetute nelle pagine successive della tabella. Utilizza il seguente codice:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 
 Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### Esempio di codice sorgente per Ripeti righe nelle pagine successive utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per Ripeti righe su pagine successive utilizzando Aspose.Words per .NET 
 
 ```csharp
 //Percorso della directory dei documenti
@@ -117,4 +117,4 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato a ripetere le righe di una tabella nelle pagine successive di un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida passo-passo e implementando il codice C# fornito, puoi specificare quali righe ripetere in base alle tue esigenze specifiche nei tuoi documenti Word.
+In questo tutorial, abbiamo imparato come ripetere le righe di una tabella nelle pagine successive di un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo e implementando il codice C# fornito, puoi specificare quali righe ripetere in base alle tue esigenze specifiche nei tuoi documenti Word.

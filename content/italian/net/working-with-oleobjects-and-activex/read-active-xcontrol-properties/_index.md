@@ -1,14 +1,14 @@
 ---
-title: Leggi le proprietà di Active XControl dal file di Word
-linktitle: Leggi le proprietà di Active XControl dal file di Word
-second_title: Aspose.Words API di elaborazione dei documenti
+title: Leggi le proprietà XControl attive dal file Word
+linktitle: Leggi le proprietà XControl attive dal file Word
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Leggi le proprietà dei controlli ActiveX in un file Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
 
-In questa guida dettagliata, ti mostreremo come leggere le proprietà dei controlli ActiveX in un file Word utilizzando Aspose.Words per .NET. Ti forniremo il codice sorgente completo e ti mostreremo come formattare l'output del markdown.
+In questa guida passo passo, ti mostreremo come leggere le proprietà dei controlli ActiveX in un file Word utilizzando Aspose.Words per .NET. Ti forniremo il codice sorgente completo e ti mostreremo come formattare l'output di markdown.
 
 ## Passaggio 1: inizializzazione del documento
 
@@ -18,9 +18,9 @@ In questa guida dettagliata, ti mostreremo come leggere le proprietà dei contro
 Document doc = new Document(MyDir + "ActiveX controls.docx");
 ```
 
-## Passaggio 2: ripristinare i controlli ActiveX
+## Passaggio 2: ripristina i controlli ActiveX
 
- In questo passaggio, itereremo attraverso ciascuno`Shape` del documento per recuperare i controlli ActiveX e leggerne le proprietà.
+ In questo passaggio, ripeteremo ciascuno di essi`Shape` del documento per recuperare i controlli ActiveX e leggerne le proprietà.
 
 ```csharp
 string properties = "";
@@ -49,7 +49,7 @@ properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes
 Console.WriteLine("\n" + properties);
 ```
 
-### Codice sorgente di esempio per la lettura delle proprietà di Active XControl utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per la lettura delle proprietà Active XControl utilizzando Aspose.Words per .NET
 
 Ecco il codice sorgente completo per leggere le proprietà dei controlli ActiveX utilizzando Aspose.Words per .NET:
 
@@ -84,9 +84,9 @@ Ecco il codice sorgente completo per leggere le proprietà dei controlli ActiveX
 
 ## Conclusione
 
-Questa guida ti ha mostrato come leggere le proprietà dei controlli ActiveX in un file Word usando Aspose.Words per .NET. Seguendo i passaggi descritti, è possibile inizializzare il documento, recuperare i controlli ActiveX e leggerne le proprietà. Usa il codice di esempio fornito come punto di partenza e personalizzalo in base alle tue esigenze specifiche.
+Questa guida ti ha mostrato come leggere le proprietà dei controlli ActiveX in un file Word utilizzando Aspose.Words per .NET. Seguendo i passaggi descritti è possibile inizializzare il documento, recuperare i controlli ActiveX e leggerne le proprietà. Utilizza il codice di esempio fornito come punto di partenza e personalizzalo in base alle tue esigenze specifiche.
 
-La lettura delle proprietà dei controlli ActiveX consente di estrarre informazioni importanti dai file di Word che contengono questi controlli. Aspose.Words per .NET offre potenti funzionalità per l'elaborazione di testi con controlli ActiveX e l'automazione dell'elaborazione dei documenti.
+La lettura delle proprietà dei controlli ActiveX consente di estrarre informazioni importanti dai file Word contenenti questi controlli. Aspose.Words per .NET offre potenti funzionalità per l'elaborazione di parole con controlli ActiveX e automatizzando l'elaborazione dei documenti.
 
 ### Domande frequenti
 
@@ -94,14 +94,14 @@ La lettura delle proprietà dei controlli ActiveX consente di estrarre informazi
 
  R: Il primo passo è inizializzare il file`Document` oggetto caricando il documento Word contenente i controlli ActiveX. Assicurati di sostituire`MyDir` con il percorso effettivo della directory contenente il documento.
 
-#### D: Come si inseriscono i controlli ActiveX nel documento?
+#### D: Come posso inserire i controlli ActiveX nel documento?
 
  R: Per recuperare i controlli ActiveX, è necessario scorrere ciascuno di essi`Shape` del documento e verificare se si tratta di un controllo ActiveX. Usa il`OleFormat` proprietà di`Shape` per accedere al`OleControl` oggetto e recuperare le proprietà necessarie.
 
-#### D: Quali proprietà dei controlli ActiveX posso leggere?
+#### D: quali proprietà dei controlli ActiveX posso leggere?
 
-R: Puoi leggere varie proprietà dei controlli ActiveX, come didascalia, valore, stato abilitato o disabilitato, tipo e childNodes associati al controllo.
+R: Puoi leggere varie proprietà dei controlli ActiveX, come didascalia, valore, stato abilitato o disabilitato, tipo e childNode associati al controllo.
 
 #### D: Come posso ottenere il numero totale di controlli ActiveX nel documento?
 
- R: Per ottenere il numero totale di controlli ActiveX nel documento, puoi utilizzare il file`GetChildNodes` metodo del`Document` oggetto specificando il`NodeType.Shape` type e includendo i nodi figlio.
+ R: Per ottenere il numero totale di controlli ActiveX nel documento, puoi utilizzare il file`GetChildNodes` metodo del`Document` oggetto che specifica il`NodeType.Shape` digitare e includere i nodi figlio.

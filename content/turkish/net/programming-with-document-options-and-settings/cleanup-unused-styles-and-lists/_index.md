@@ -1,25 +1,25 @@
 ---
 title: Kullanılmayan Stilleri ve Listeleri Temizleme
 linktitle: Kullanılmayan Stilleri ve Listeleri Temizleme
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile bir belgedeki kullanılmayan stilleri ve listeleri temizlemek için adım adım kılavuz.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile bir belgedeki kullanılmayan stilleri ve listeleri temizlemeye yönelik adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
 
-Bu eğitimde, Aspose.Words for .NET ile kullanılmayan stilleri ve listeleri temizlemek için C# kaynak kodunda size yol göstereceğiz. Bu özellik, bir belgede kullanılmayan stilleri ve listeleri kaldırmanıza olanak tanır.
+Bu eğitimde, kullanılmayan stilleri ve listeleri Aspose.Words for .NET ile temizlemek için C# kaynak kodunu size anlatacağız. Bu özellik, bir belgede kullanılmayan stilleri ve listeleri kaldırmanıza olanak tanır.
 
 ## Adım 1: Proje Kurulumu
 
-Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Projenizde Aspose.Words for .NET kütüphanesine başvurulduğundan emin olun.
 
-## 2. Adım: Belgeyi yükleme
+## Adım 2: Belgeyi yükleme
 
 Bu adımda, temizlemek istediğimiz kullanılmayan stilleri ve listeleri içeren Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// Belgeler dizinine giden yol.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
@@ -28,29 +28,29 @@ Document doc = new Document(dataDir + "Unused styles.docx");
 
 ## 3. Adım: Temizlemeden önce stilleri ve listeleri sayın
 
-Temizlemeden önce, belgede bulunan stil ve listelerin sayısını sayacağız. Sayaçları görüntülemek için aşağıdaki kodu kullanın:
+Temizlemeden önce belgede bulunan stil ve liste sayısını sayacağız. Sayaçları görüntülemek için aşağıdaki kodu kullanın:
 
 ```csharp
 Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
 $"Number of lists before cleaning: {doc.Lists.Count}");
 ```
 
-Bu talimatlar, temizlemeden önce belgede bulunan stillerin ve listelerin sayısını gösterir.
+Bu talimatlar, temizlemeden önce belgede bulunan stil ve listelerin sayısını gösterir.
 
 ## 4. Adım: Kullanılmayan stilleri ve listeleri temizleyin
 
-Şimdi kullanılmayan stilleri ve listeleri belgeden temizleyelim. Temizlemeyi gerçekleştirmek için aşağıdaki kodu kullanın:
+Şimdi belgedeki kullanılmayan stilleri ve listeleri temizleyelim. Temizleme işlemini gerçekleştirmek için aşağıdaki kodu kullanın:
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 doc. Cleanup(cleanupOptions);
 ```
 
- Bu kod, belirtilen seçenekleri kullanarak kullanılmayan stilleri ve listeleri belgeden temizler. Bu örnekte,`UnusedStyles` kullanılmayan stilleri kaldırma ve devre dışı bırakma seçeneği`UnusedLists` listeleri kullanılmasalar bile saklama seçeneği.
+ Bu kod, belirtilen seçenekleri kullanarak kullanılmayan stilleri ve listeleri belgeden temizler. Bu örnekte, etkinleştirdik`UnusedStyles` kullanılmayan stilleri kaldırma seçeneği ve devre dışı bırakma seçeneği`UnusedLists` Listeleri kullanılmasalar bile saklama seçeneği.
 
 ## 5. Adım: Temizledikten sonra stilleri ve listeleri sayın
 
-Temizlemeyi yaptıktan sonra, daraltılmış olup olmadıklarını kontrol etmek için stilleri ve listeleri tekrar sayacağız. Yeni sayaçları görüntülemek için aşağıdaki kodu kullanın:
+Temizleme işlemini yaptıktan sonra, daraltılmış olup olmadıklarını kontrol etmek için stilleri ve listeleri tekrar sayacağız. Yeni sayaçları görüntülemek için aşağıdaki kodu kullanın:
 
 ```csharp
 Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
@@ -59,7 +59,7 @@ Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Cou
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
 ```
 
-Bu talimatlar, temizlikten sonra kalan stil ve liste sayısını gösterir.
+Bu talimatlar temizlikten sonra kalan stil ve liste sayısını gösterir.
 
 ### Aspose.Words for .NET kullanarak Kullanılmayan Stilleri ve Listeleri Temizlemek için örnek kaynak kodu
 
@@ -69,8 +69,8 @@ Bu talimatlar, temizlikten sonra kalan stil ve liste sayısını gösterir.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Unused styles.docx");
 
-	// Yerleşik stillerle birleştiğinde, belgenin artık sekiz stili vardır.
-	// Belgede herhangi bir metin varken özel bir stil "kullanılmış" olarak işaretlenir
+	// Yerleşik stillerle birleştirildiğinde belge artık sekiz stile sahiptir.
+	// Belgede herhangi bir metin varken özel stil "kullanılmış" olarak işaretlenir
 	// bu tarzda biçimlendirilmiştir. Bu, eklediğimiz 4 stilin şu anda kullanılmadığı anlamına gelir.
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
@@ -86,7 +86,7 @@ Bu talimatlar, temizlikten sonra kalan stil ve liste sayısını gösterir.
     
 ```
 
- bölümünde doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
+ Doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-Artık Aspose.Words for .NET kullanarak bir belgeden kullanılmayan stilleri ve listeleri nasıl temizleyeceğinizi öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek bu özelliği kendi belgelerinize kolayca uygulayabilirsiniz.
+Artık Aspose.Words for .NET kullanarak bir belgedeki kullanılmayan stilleri ve listeleri nasıl temizleyeceğinizi öğrendiniz. Bu eğitimde verilen adım adım kılavuzu takip ederek bu özelliği kendi belgelerinize kolayca uygulayabilirsiniz.
 

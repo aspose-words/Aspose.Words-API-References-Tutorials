@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", save
 
 请务必将“dataDir”替换为文档的目录路径。
 
-## 使用 Aspose.Words for .NET 的 DocSaveOptions 保存选项以及“不保存图片项目符号”功能的示例源代码
+## 使用 Aspose.Words for .NET 的 DocSaveOptions 保存选项和“不保存图片项目符号”功能的示例源代码
 
 ```csharp
 //文档目录的路径

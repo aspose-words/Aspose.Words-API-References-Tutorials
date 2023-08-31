@@ -1,18 +1,18 @@
 ---
-title: Inserisci campo avanzato senza il generatore di documenti
-linktitle: Inserisci campo avanzato senza il generatore di documenti
-second_title: Aspose.Words API di elaborazione dei documenti
+title: Inserisci campo avanzato senza generatore di documenti
+linktitle: Inserisci campo avanzato senza generatore di documenti
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come inserire un campo avanzato nei tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
 
-Ecco una guida dettagliata per spiegare il codice sorgente C# di seguito, che utilizza la funzione "Inserimento avanzato di campi senza DocumentBuilder" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
+Ecco una guida passo passo per spiegare il codice sorgente C# di seguito, che utilizza la funzionalità "Inserimento campo avanzato senza DocumentBuilder" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
 
 ## Passaggio 1: impostazione della directory dei documenti
 
-Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "YOUR DOCUMENT DIRECTORY" con il percorso appropriato alla directory dei tuoi documenti.
+Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "LA TUA DIRECTORY DOCUMENTI" con il percorso appropriato della directory dei tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -35,7 +35,7 @@ Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-Configuriamo quindi le varie proprietà del campo avanzato specificando i valori desiderati.
+Configuriamo poi le varie proprietà del campo avanzato specificando i valori desiderati.
 
 ```csharp
 field. DownOffset = "10";
@@ -79,20 +79,20 @@ doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 
 In questo esempio, abbiamo creato un nuovo documento, inserito un campo avanzato senza utilizzare DocumentBuilder, configurato le varie proprietà del campo e salvato il documento con un nome file specificato.
 
-Questo conclude la nostra guida su come utilizzare la funzione "Inserisci campo avanzato senza DocumentBuilder" con Aspose.Words per .NET.
+Questo conclude la nostra guida su come utilizzare la funzionalità "Inserisci campo avanzato senza DocumentBuilder" con Aspose.Words per .NET.
 
-### FAQ
+### Domande frequenti
 
 #### D: Cos'è un campo avanzato in Aspose.Words?
 
-R: Un campo Advance in Aspose.Words è un tipo speciale di campo che consente di eseguire calcoli, includere condizioni ed eseguire operazioni complesse in un documento Word. Offre una grande flessibilità per creare campi dinamici e personalizzati.
+R: Un campo avanzato in Aspose.Words è un tipo speciale di campo che consente di eseguire calcoli, includere condizioni ed eseguire operazioni complesse in un documento di Word. Offre grande flessibilità per creare campi dinamici e personalizzati.
 
-#### D: Come inserire un campo avanzato in un documento Word senza utilizzare Document Builder in Aspose.Words?
+#### D: Come inserire un campo avanzato in un documento di Word senza utilizzare Document Builder in Aspose.Words?
 
-R: Per inserire un campo avanzato in un documento Word senza utilizzare Document Builder in Aspose.Words, puoi seguire questi passaggi:
+R: Per inserire un campo avanzato in un documento di Word senza utilizzare Document Builder in Aspose.Words, puoi seguire questi passaggi:
 
 1. Importa la classe Document e Field dallo spazio dei nomi Aspose.Words.Fields.
-2. Crea un'istanza di Documento caricando il tuo documento esistente.
+2. Crea un'istanza di Document caricando il tuo documento esistente.
 3. Utilizzare il metodo InsertField per inserire un campo avanzato specificando il codice del campo avanzato.
 4. Salva il documento.
 

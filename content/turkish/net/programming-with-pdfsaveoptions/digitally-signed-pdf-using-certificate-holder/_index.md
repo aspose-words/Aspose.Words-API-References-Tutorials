@@ -1,7 +1,7 @@
 ---
 title: Sertifika Sahibini Kullanarak PDF'ye Dijital İmza Ekleme
 linktitle: Sertifika Sahibini Kullanarak PDF'ye Dijital İmza Ekleme
-second_title: Aspose.Words Belge İşleme API'sı
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile Sertifika Sahibini kullanarak PDF'ye Dijital İmza eklemeyi öğrenin.
 type: docs
 weight: 10
@@ -22,7 +22,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. Adım: Belgeye içerik ekleyin
 
- Daha sonra`DocumentBuilder`belgeye içerik eklemek için. Örneğin, "İmzalanmış PDF'yi Test Et" metnini içeren bir paragraf eklemek için`Writeln` yöntem:
+ Daha sonra şunu kullanın:`DocumentBuilder`Belgeye içerik eklemek için. Örneğin, "İmzalı PDF'yi Test Et" metnini içeren bir paragraf eklemek için`Writeln` yöntem:
 
 ```csharp
 builder.Writeln("Test Signed PDF.");
@@ -43,11 +43,11 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-Sertifikanızın ve ilişkili parolanızın doğru yolunu belirttiğinizden emin olun. İmza nedenini ve konumunu da özelleştirebilirsiniz.
+Sertifikanızın ve ilişkili şifrenizin doğru yolunu belirttiğinizden emin olun. İmza nedenini ve konumunu da özelleştirebilirsiniz.
 
-## 4. Adım: Belgeyi Dijital Olarak İmzalanmış PDF Olarak Kaydet
+## Adım 4: Belgeyi Dijital İmzalı PDF Olarak Kaydetme
 
- Kullan`Save` kaydetme seçeneklerini belirterek belgeyi PDF olarak kaydetme yöntemi:
+ Kullan`Save` Kaydetme seçeneklerini belirterek belgeyi PDF olarak kaydetme yöntemi:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
@@ -55,11 +55,11 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificate
 
 Dijital olarak imzalanmış PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
 
-Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir sertifikayla kolayca dijital olarak imzalanmış bir PDF oluşturabilirsiniz.
+Bu adımları izleyerek Aspose.Words for .NET'i kullanarak kolayca dijital imzalı bir sertifika içeren PDF oluşturabilirsiniz.
 
-### Aspose.Words for .NET kullanan Sertifika Sahibini Kullanan Dijital Olarak İmzalanmış Pdf için örnek kaynak kodu
+### Aspose.Words for .NET kullanan Sertifika Sahibini Kullanan Dijital İmzalı PDF için örnek kaynak kodu
 
-Aspose.Words for .NET kullanan bir belgeden sertifika sahibini kullanarak dijital olarak imzalanmış Pdf'nin tam kaynak kodu:
+Aspose.Words for .NET kullanan bir belgeden, sertifika sahibini kullanarak dijital olarak imzalanmış PDF'nin tam kaynak kodunu burada bulabilirsiniz:
 
 ```csharp
 
@@ -83,26 +83,26 @@ Aspose.Words for .NET kullanan bir belgeden sertifika sahibini kullanarak dijita
 ```
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET ile bir sertifika kullanarak bir PDF belgesine dijital imza ekleme adımlarını inceledik. Dijital imza, belgeye bir güvenlik ve bütünlük katmanı ekler, böylece orijinalliğini garanti eder ve sonraki herhangi bir değişikliğin tespit edilmesini mümkün kılar. Verilen adımları izleyerek, Aspose.Words for .NET ile bir sertifika kullanarak kolayca dijital olarak imzalanmış bir PDF oluşturabilirsiniz.
+Bu eğitimde Aspose.Words for .NET ile sertifika kullanarak bir PDF belgesine dijital imza ekleme adımlarını inceledik. Dijital imza, belgeye bir güvenlik ve bütünlük katmanı ekleyerek belgenin orijinalliğini garanti eder ve daha sonra yapılacak herhangi bir değişikliğin tespit edilmesini mümkün kılar. Verilen adımları takip ederek Aspose.Words for .NET ile bir sertifika kullanarak kolayca dijital imzalı bir PDF oluşturabilirsiniz.
 
 ### Sıkça Sorulan Sorular
 
 #### S: Dijital imza nedir ve bir PDF belgesinde neden önemlidir?
-Y: Dijital imza, PDF dosyası gibi bir elektronik belgenin orijinalliğini, bütünlüğünü ve reddedilemezliğini sağlamaya yardımcı olan bir güvenlik tekniğidir. Belgeye, yazarın kimliğini doğrulamaya ve içerikte daha sonra yapılan değişiklikleri algılamaya yardımcı olan bir güvenlik katmanı eklemek için bir dijital sertifika kullanır.
+C: Dijital imza, PDF dosyası gibi elektronik bir belgenin orijinalliğini, bütünlüğünü ve inkar edilemezliğini sağlamaya yardımcı olan bir güvenlik tekniğidir. Belgeye bir güvenlik katmanı eklemek için dijital bir sertifika kullanır; bu, yazarın kimliğinin doğrulanmasına ve içerikte sonradan yapılacak değişikliklerin tespit edilmesine yardımcı olur.
 
-#### S: Aspose.Words for .NET ile bir sertifika kullanarak bir PDF belgesine nasıl dijital imza ekleyebilirim?
-C: Aspose.Words for .NET ile bir sertifika kullanarak bir PDF belgesine dijital imza eklemek için şu adımları izleyin:
+#### S: Aspose.Words for .NET ile sertifika kullanarak bir PDF belgesine nasıl dijital imza ekleyebilirim?
+C: Aspose.Words for .NET ile bir sertifika kullanarak PDF belgesine dijital imza eklemek için şu adımları izleyin:
 
- örneğini oluşturun`Document` belgeyi temsil eden sınıf.
+ Bir örneğini oluşturun`Document` belgeyi temsil edecek sınıf.
 
- Kullan`DocumentBuilder` İstenen içeriği belgeye eklemek için sınıf.
+ Kullan`DocumentBuilder` İstenilen içeriği belgeye eklemek için sınıf.
 
- örneğini oluşturun`PdfSaveOptions` kullanarak dijital imza ayrıntılarını belirtin ve belirtin.`PdfDigitalSignatureDetails` sınıf. Sertifikanın yolunu sağlamanız gerekecek (`CertificateHolder.Create`), ilişkili parola ve imzalama nedeni ve konumu.
+ Bir örneğini oluşturun`PdfSaveOptions` sınıfını seçin ve dijital imza ayrıntılarını belirtin.`PdfDigitalSignatureDetails` sınıf. Sertifikanın yolunu sağlamanız gerekecek (`CertificateHolder.Create`), ilişkili şifreyi ve imzalama nedenini ve konumunu belirtin.
 
- Kullan`Save` kaydetme seçeneklerini belirterek belgeyi PDF biçiminde kaydetme yöntemi.
+ Kullan`Save` Kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetme yöntemini seçin.
 
-#### S: Bir PDF belgesine dijital imza eklemek için nasıl sertifika alabilirim?
-Y: Bir PDF belgesine dijital imza eklemek üzere bir sertifika almak için genellikle bir sertifika yetkilisine (CA) veya bir güvenilir hizmet sağlayıcıya başvurabilirsiniz. Bu varlıklar, kimliğinizi doğruladıktan ve talebinizi doğruladıktan sonra dijital sertifikalar verir. Bir sertifika aldıktan sonra, bunu uygulamanızda PDF belgelerine dijital imzalar eklemek için kullanabilirsiniz.
+#### S: PDF belgesine dijital imza eklemek için nasıl sertifika alabilirim?
+C: Bir PDF belgesine dijital imza eklemek üzere bir sertifika almak için genellikle bir sertifika yetkilisine (CA) veya bir güven hizmet sağlayıcısına başvurabilirsiniz. Bu kuruluşlar, kimliğinizi doğruladıktan ve isteğinizi doğruladıktan sonra dijital sertifikalar verir. Sertifikayı aldıktan sonra, bunu uygulamanızda PDF belgelerine dijital imza eklemek için kullanabilirsiniz.
 
-#### S: Neden ve konum gibi dijital imza ayrıntılarını özelleştirmek mümkün müdür?
- C: Evet, imzanın nedenini ve yerini belirterek dijital imza ayrıntılarını özelleştirebilirsiniz. Sağlanan örnek kodda, değerleri değiştirebilirsiniz.`reason` Ve`location` parametreleri oluştururken`PdfDigitalSignatureDetails` nesne. PDF belgenizdeki imzanın nedenini ve konumunu yansıtmak için her parametre için uygun bilgileri sağladığınızdan emin olun.
+#### S: Dijital imzanın nedeni ve konumu gibi ayrıntılarını özelleştirmek mümkün müdür?
+ C: Evet, imzanın nedenini ve yerini belirterek dijital imza ayrıntılarını özelleştirebilirsiniz. Sağlanan örnek kodda, değerleri değiştirebilirsiniz.`reason` Ve`location` oluştururken parametreler`PdfDigitalSignatureDetails` nesne. PDF belgenizdeki imzanın nedenini ve konumunu yansıtacak şekilde her parametre için uygun bilgileri sağladığınızdan emin olun.

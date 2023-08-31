@@ -66,7 +66,7 @@ Mit diesem Code können Sie die Zeilenumbruchgruppe „Asiatische Typografie“ 
 
 #### F: Was ist die Funktion „Zeilenumbruchgruppe für asiatische Typografie“ in Aspose.Words für .NET?
 
-A: Mit der Funktion „Zeilenumbruchgruppe für asiatische Typografie“ in Aspose.Words für .NET können Sie das Zeilenumbruchverhalten für asiatische Typografie in einem Word-Dokument steuern. Insbesondere wirkt es sich darauf aus, wie Zeilen unterbrochen und umbrochen werden, wenn in Absätzen asiatische Zeichen verarbeitet werden.
+A: Mit der Funktion „Zeilenumbruchgruppe für asiatische Typografie“ in Aspose.Words für .NET können Sie das Zeilenumbruchverhalten für asiatische Typografie in einem Word-Dokument steuern. Insbesondere wirkt es sich darauf aus, wie Zeilen unterbrochen und umbrochen werden, wenn in Absätzen asiatische Zeichen verwendet werden.
 
 #### F: Wie aktiviere ich die „Zeilenumbruchgruppe für asiatische Typografie“ in Aspose.Words für .NET?
 

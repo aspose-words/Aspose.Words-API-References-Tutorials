@@ -1,28 +1,28 @@
 ---
-title: Utilisation des volets des tâches de l'extension Web
-linktitle: Utilisation des volets des tâches de l'extension Web
+title: Utilisation des volets de tâches d'extension Web
+linktitle: Utilisation des volets de tâches d'extension Web
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour l'utilisation des volets de tâches d'extension Web avec Aspose.Words pour .NET.
+description: Guide étape par étape pour utiliser les volets de tâches d’extension Web avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 
-Cet article fournit un guide étape par étape sur l'utilisation des volets de tâches de l'extension Web avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment ajouter et configurer des volets de tâches pour les extensions Web.
+Cet article fournit un guide étape par étape sur la façon d'utiliser les volets de tâches de l'extension Web avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. A la fin de ce tutoriel, vous pourrez comprendre comment ajouter et configurer des volets de tâches pour les extensions Web.
 
-Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words pour .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
+Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words for .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 
-## Étape 1 : Définir le répertoire des documents
+## Étape 1 : Définir le répertoire des documents
 
- Pour commencer, vous devez définir le chemin vers le répertoire où vous souhaitez enregistrer le document généré. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel à votre répertoire de documents.
+ Pour commencer, vous devez définir le chemin d'accès au répertoire dans lequel vous souhaitez enregistrer le document généré. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Étape 2 : créer et configurer un volet des tâches
+## Étape 2 : Créer et configurer un volet de tâches
 
- Nous créons un`TaskPane` objet et l'ajouter au document`s `Collection WebExtensionTaskPanes. Ensuite, nous configurons les propriétés du volet Office, telles que son état ancré, sa visibilité et sa largeur.
+ Nous créons un`TaskPane` objet et ajoutez-le au document`s `Collection WebExtensionTaskPanes. Ensuite, nous configurons les propriétés du volet des tâches, telles que son état ancré, sa visibilité et sa largeur.
 
 ```csharp
 Document doc = new Document();
@@ -35,7 +35,7 @@ taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-Nous définissons également les informations d'identification de l'extension Web, y compris l'identifiant du catalogue, la version et le type de magasin.
+Nous définissons également les informations d'identification de l'extension Web, notamment l'identifiant du catalogue, la version et le type de magasin.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -52,7 +52,7 @@ taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_150
 	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## Étape 3 : Enregistrer et charger le document
+## Étape 3 : Enregistrez et chargez le document
 
 Nous enregistrons le document avec les volets de tâches configurés dans le répertoire spécifié.
 
@@ -60,9 +60,9 @@ Nous enregistrons le document avec les volets de tâches configurés dans le ré
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## Étape 4 : Afficher les informations des volets de tâches
+## Étape 4 : Afficher les informations sur les volets de tâches
 
-Ensuite, nous chargeons le document et affichons les informations sur la source du volet Office.
+Ensuite, nous chargeons le document et affichons les informations sources du volet des tâches.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -79,12 +79,12 @@ Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version
 
 C'est tout ! Vous avez utilisé avec succès les volets de tâches de l'extension Web avec Aspose.Words pour .NET.
 
-### Exemple de code source pour l'utilisation des volets de tâches d'extension Web avec Aspose.Words pour .NET
+### Exemple de code source pour l'utilisation des volets de tâches d'extension Web avec Aspose.Words for .NET
 
 
 ```csharp
 
-	// Chemin d'accès au répertoire des documents.
+	// Le chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 

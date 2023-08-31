@@ -25,7 +25,7 @@ Words Processing with Markdown bietet eine umfassende Ressource zum Erlernen der
 | [Settext-Überschrift](./setext-heading/) | Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Setext-Überschriften zum Formatieren Ihrer Dokumente mit Aspose.Words für .NET verwenden. |
 | [Eingerückter Code](./indented-code/) | Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie eingerückten Code mit Aspose.Words für .NET verwenden. |
 | [Eingezäunter Code](./fenced-code/) | Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie die Funktion „Eingezäunter Code“ mit Aspose.Words für .NET verwenden. |
-| [Zitieren](./quote/) | Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Zitate mit Aspose.Words für .NET verwenden. |
+| [Zitat](./quote/) | Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Zitate mit Aspose.Words für .NET verwenden. |
 | [Aufzählungsliste](./bulleted-list/) | Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET eine Aufzählungsliste erstellen. |
 | [Bestellliste](./ordered-list/) | Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET eine geordnete Liste erstellen. |
 | [Tisch](./table/) | Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET eine Tabelle erstellen. |

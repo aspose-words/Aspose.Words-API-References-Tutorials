@@ -46,7 +46,7 @@ MemoryStream inStream = new MemoryStream(docBytes);
 
 ## 第 5 步：从 MemoryStream 创建文档
 
-最后，创建一个新的`Document`对象从`MemoryStream`：
+最后，创建一个新的`Document`对象从`MemoryStream`:
 
 ```csharp
 Document docFromBytes = new Document(inStream);

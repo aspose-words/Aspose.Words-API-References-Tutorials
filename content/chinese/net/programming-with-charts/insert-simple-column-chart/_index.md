@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 
 在本教程中，您学习了如何使用 Aspose.Words for .NET 将简单的柱形图插入到 Word 文档中。通过遵循分步指南并使用提供的源代码，您可以创建一个新文档、插入柱形图、添加多个包含类别和相应值的系列，并使用图表保存文档。
 
-Aspose.Words for .NET 为 Word 文档中的图表进行文字处理提供了强大而灵活的 API。简单的柱形图是表示和比较不同类别数据的有效方法。使用 Aspose.Words for .NET，您可以轻松创建具有自定义数据的柱形图、添加多个系列进行视觉比较，并根据您的要求自定义图表的外观。
+Aspose.Words for .NET 为 Word 文档中的图表进行文字处理提供了强大而灵活的 API。简单的柱形图是表示和比较不同类别数据的有效方法。使用 Aspose.Words for .NET，您可以轻松创建具有自定义数据的柱形图，添加多个系列进行视觉比较，并根据您的要求自定义图表的外观。
 
 通过使用 Aspose.Words for .NET，您可以自动生成带有柱形图的文档的过程，从而节省手动文档创建的时间和精力。该库提供了多种图表类型，包括简单的柱形图，并提供了各种自定义选项来定制图表的外观以满足您的需求。
 

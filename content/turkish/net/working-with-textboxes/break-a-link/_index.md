@@ -1,22 +1,22 @@
 ---
-title: Word Belgesinde İleri Bağlantıyı Kır
-linktitle: Word Belgesinde İleri Bağlantıyı Kır
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile bir Word belgesindeki ileri bağlantıları nasıl kıracağınızı öğrenin.
+title: Word Belgesinde İleri Bağlantıyı Kes
+linktitle: Word Belgesinde İleri Bağlantıyı Kes
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile bir Word belgesindeki ileri bağlantıları nasıl keseceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words for .NET, programlı olarak Microsoft Word belgeleriyle Kelime İşleme için çeşitli özellikler sunan güçlü bir kitaplıktır. Yararlı özelliklerinden biri, bir kelime belgesindeki bağlantıları ileriye doğru kırabilme yeteneğidir. Bu öğreticide, Aspose.Words for .NET kullanarak word belgesindeki ileri bağlantının nasıl kırılacağını gösteren C# kaynak kodunu keşfedeceğiz.
+Aspose.Words for .NET, program aracılığıyla Microsoft Word belgeleriyle Kelime İşleme için çeşitli özellikler sunan güçlü bir kütüphanedir. Yararlı özelliklerinden biri, bir word belgesindeki ileri bağlantıları kesme yeteneğidir. Bu eğitimde, Aspose.Words for .NET kullanarak word belgesinde ileri bağlantının nasıl kesileceğini gösteren C# kaynak kodunu inceleyeceğiz.
 
-## 1. Adım: C# Kaynak Kodu Önizlemesi
+## Adım 1: C# Kaynak Kodu Önizlemesi
 
-Sağlanan C# kaynak kodu, Aspose.Words for .NET'in "Break A Link" özelliğine odaklanır. Bir belgenin içindeki Metin Kutusu şeklindeki bir bağlantının nasıl kesileceğini gösterir. Kod, bağlantıları kesmek için farklı senaryolar sunar ve istenen sonuçların nasıl elde edileceğine dair net talimatlar sağlar.
+Sunulan C# kaynak kodu Aspose.Words for .NET'in "Bağlantıyı Kes" özelliğine odaklanıyor. Bir belgenin içindeki TextBox şeklindeki bir bağlantının nasıl kesileceğini gösterir. Kod, bağlantıların kopmasına yönelik farklı senaryolar sunar ve istenen sonuçların nasıl elde edileceğine dair net talimatlar sağlar.
 
-## 2. Adım: Belgeyi ayarlama ve bir Metin Kutusu şekli oluşturma
+## Adım 2: Belgeyi ayarlama ve TextBox şekli oluşturma
 
- Başlamak için, belgeyi kurmamız ve bir TextBox şekli oluşturmamız gerekiyor. Aşağıdaki kod, yeni bir örneğini başlatır.`Document` class ve bir metin kutusu şekli oluşturur:
+ Başlamak için belgeyi ayarlamamız ve bir TextBox şekli oluşturmamız gerekiyor. Aşağıdaki kod, yeni bir örneğini başlatır.`Document` sınıfını açar ve bir metin kutusu şekli oluşturur:
 
 ```csharp
 Document doc = new Document();
@@ -24,31 +24,31 @@ Shape shape = new Shape(doc, ShapeType.TextBox);
 TextBox textBox = shape.TextBox;
 ```
 
-## 3. Adım: TextBox'ta ileri bağlantıyı kes
+## 3. Adım: TextBox'ta ileri bağlantıyı kesin
 
- TextBox'ta bir yönlendirme bağlantısını kesmek için şunu kullanabiliriz:`BreakForwardLink()` yöntem. Bu yöntem, dizideki bir sonraki şekle olan bağlantıyı keser. Aşağıdaki kod, bir ileri bağlantının nasıl kesileceğini gösterir:
+ TextBox'ta ileri bağlantıyı kesmek için şunu kullanabiliriz:`BreakForwardLink()` yöntem. Bu yöntem, sıradaki bir sonraki şekle olan bağlantıyı keser. Aşağıdaki kod, ileri bağlantının nasıl kesileceğini gösterir:
 
 ```csharp
 textBox.BreakForwardLink();
 ```
 
-## 4. Adım: Boş bir değer ayarlayarak ileri bağlantıyı kesin
+## Adım 4: Boş bir değer ayarlayarak ileri bağlantıyı kesin
 
- Alternatif olarak, TextBox'ları ayarlayarak bir ileri bağlantıyı kesebiliriz.`Next` mülkiyet`null`. Bu, sonraki şekle olan bağlantıyı etkili bir şekilde kaldırır. Aşağıdaki kod bu yaklaşımı göstermektedir:
+ Alternatif olarak, TextBox'un ayarını yaparak ileri bağlantıyı kesebiliriz.`Next` mülkiyet`null`. Bu, bir sonraki şekle olan bağlantıyı etkili bir şekilde ortadan kaldırır. Aşağıdaki kod bu yaklaşımı göstermektedir:
 
 ```csharp
 textBox. Next = null;
 ```
 
-## 5. Adım: TextBox'a yönlendiren bir bağlantıyı kesin
+## Adım 5: TextBox'a giden bağlantıyı kesin
 
- Bazı durumlarda, TextBox şekline götüren bir bağlantıyı kesmemiz gerekir. Bunu çağırarak elde edebiliriz.`BreakForwardLink()` yöntemi`Previous` TextBox bağlantısını kesen form. İşte böyle bir bağlantının nasıl kırılacağına dair bir örnek:
+ Bazı durumlarda TextBox şekline giden bağlantıyı kesmemiz gerekir. Bunu arayarak başarabiliriz.`BreakForwardLink()` konusundaki yöntem`Previous` TextBox bağlantısını kesen form. Böyle bir bağlantının nasıl kırılacağına dair bir örnek:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
 ```
 
-### Aspose.Words for .NET ile bir bağlantıyı kesmek için örnek kaynak kodu
+### Aspose.Words for .NET ile bağlantıyı kesmek için örnek kaynak kodu
 
 ```csharp
 Document doc = new Document();
@@ -61,32 +61,32 @@ textBox.BreakForwardLink();
 // Boş bir değer ayarlayarak ileri bağlantıyı kesin.
 textBox. Next = null;
 
-// Bu metin kutusuna yönlendiren bir bağlantıyı koparın.
+// Bu metin kutusuna yönlendiren bağlantıyı kesin.
 textBox.Previous?.BreakForwardLink();
 ```
 
 ## Çözüm
 
-Tebrikler! Artık, Aspose.Words .NET kitaplığını kullanarak bir Word belgesindeki yeniden yönlendirme bağlantılarını nasıl kıracağınızı öğrendiniz. Bu kılavuzdaki adımları izleyerek belgeyi ayarlayabildiniz, bir TextBox şekli oluşturabildiniz ve farklı yöntemler kullanarak yönlendirme bağlantılarını kırabildiniz.
+Tebrikler! Artık .NET için Aspose.Words kütüphanesini kullanarak bir Word belgesindeki yönlendirme bağlantılarını nasıl keseceğinizi öğrendiniz. Bu kılavuzdaki adımları izleyerek belgeyi ayarlayabildiniz, bir TextBox şekli oluşturabildiniz ve farklı yöntemler kullanarak yönlendirme bağlantılarını kesebildiniz.
 
-### Word belgesinde ileriye dönük bağlantı için SSS
+### Word belgesindeki ileri bağlantı bağlantısı için SSS
 
-#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki yeniden yönlendirme bağlantılarını kesmek için kullanılan kitaplık nedir?
+#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki yönlendirme bağlantılarını kırmak için kullanılan kitaplık nedir?
 
-C: Aspose.Words for .NET kullanarak bir Word belgesindeki yeniden yönlendirme bağlantılarını kırmak için kullanılan kitaplık Aspose.Words for .NET'tir.
+C: Aspose.Words for .NET kullanarak bir Word belgesindeki yönlendirme bağlantılarını kırmak için kullanılan kütüphane Aspose.Words for .NET'tir.
 
-#### S: Bir TextBox'ta yönlendirme bağlantısı nasıl bozulur?
+#### S: TextBox'taki yönlendirme bağlantısı nasıl kesilir?
 
- C: Bir Metin Kutusundaki bir iletme bağlantısını kesmek için şunu kullanabilirsiniz:`BreakForwardLink()` yöntem. Bu yöntem, dizideki bir sonraki şekle olan bağlantıyı keser.
+ C: Bir TextBox'taki ileri bağlantıyı kesmek için şunu kullanabilirsiniz:`BreakForwardLink()` yöntem. Bu yöntem, sıradaki bir sonraki şekle olan bağlantıyı keser.
 
-#### S: Boş bir değer ayarlayarak bir yönlendirme bağlantısını nasıl kesebilirim?
+#### S: Boş bir değer ayarlayarak yönlendirme bağlantısını nasıl kesebilirim?
 
-A: Alternatif olarak, ayarlayarak bir yönlendirme bağlantısını kesebilirsiniz.`Next` TextBox özelliği`null`. Bu, sonraki şekle olan bağlantıyı etkili bir şekilde kaldırır.
+C: Alternatif olarak, yönlendirme bağlantısını ayarlayarak da kesebilirsiniz.`Next` TextBox'un özelliği`null`. Bu, bir sonraki şekle olan bağlantıyı etkili bir şekilde ortadan kaldırır.
 
-#### S: TextBox'a giden bir bağlantı nasıl kesilir?
+#### S: TextBox'a giden bir bağlantı nasıl koparılır?
 
- C: Bazı durumlarda, TextBox'a giden bir bağlantıyı kesmeniz gerekir. Bunu arayarak başarabilirsiniz.`BreakForwardLink()` yöntemi`Previous` TextBox bağlantısını kesen form.
+ C: Bazı durumlarda TextBox'a giden bağlantıyı kesmeniz gerekir. Bunu arayarak başarabilirsiniz.`BreakForwardLink()` konusundaki yöntem`Previous` TextBox bağlantısını kesen form.
 
-#### S: Metin Kutuları dışındaki öğelerde yönlendirme bağlantılarını kesebilir miyiz?
+#### S: TextBox'lar dışındaki öğelerdeki yönlendirme bağlantılarını kesebilir miyiz?
 
-C: Evet, Aspose.Words for .NET ile paragraflar, tablolar, resimler vb. farklı öğelerdeki yönlendirme bağlantılarını kırmak mümkündür. İşlem, bağlantıyı kesmek istediğiniz belirli öğeye bağlı olarak değişebilir.
+C: Evet, Aspose.Words for .NET ile paragraflar, tablolar, resimler vb. farklı öğelerdeki yönlendirme bağlantılarını kırmak mümkündür. Bu süreç, bağlantıyı kesmek istediğiniz belirli öğeye bağlı olarak değişebilir.

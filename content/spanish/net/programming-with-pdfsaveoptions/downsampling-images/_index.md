@@ -1,16 +1,16 @@
 ---
-title: Reduzca el tamaño del documento PDF con imágenes de reducción de resolución
-linktitle: Reduzca el tamaño del documento PDF con imágenes de reducción de resolución
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a reducir el tamaño de un documento PDF reduciendo la resolución de imágenes al convertir a PDF con Aspose.Words para .NET.
+title: Reduzca el tamaño del documento PDF reduciendo la resolución de las imágenes
+linktitle: Reduzca el tamaño del documento PDF reduciendo la resolución de las imágenes
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda cómo reducir el tamaño del documento PDF reduciendo la resolución de las imágenes al convertir a PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
 
-En este tutorial, lo guiaremos a través de los pasos para reducir el tamaño del documento PDF con imágenes de resolución reducida al convertir a PDF con Aspose.Words para .NET. Esto reduce el tamaño del archivo PDF generado. Siga los pasos a continuación:
+En este tutorial, lo guiaremos a través de los pasos para reducir el tamaño del documento PDF reduciendo la resolución de las imágenes al convertir a PDF con Aspose.Words para .NET. Esto reduce el tamaño del archivo PDF generado. Siga los pasos a continuación:
 
-## Paso 1: Cargar el documento
+## Paso 1: cargar el documento
 
 Comience cargando el documento que desea convertir a PDF:
 
@@ -21,9 +21,9 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 Asegúrese de especificar la ruta correcta a su documento.
 
-## Paso 2: Configure las opciones de guardado de PDF
+## Paso 2: configurar las opciones para guardar PDF
 
-Cree una instancia de la clase PdfSaveOptions y establezca las opciones de reducción de escala de la imagen:
+Cree una instancia de la clase PdfSaveOptions y configure las opciones de reducción de escala de la imagen:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -32,11 +32,11 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- El`Resolution` propiedad especifica la resolución de destino de las imágenes y la`ResolutionThreshold`La propiedad especifica la resolución mínima por debajo de la cual las imágenes no se reducirán.
+ El`Resolution` La propiedad especifica la resolución objetivo de las imágenes y la`ResolutionThreshold`La propiedad especifica la resolución mínima por debajo de la cual las imágenes no se reducirán.
 
-## Paso 3: Convertir documento a PDF
+## Paso 3: convertir documento a PDF
 
- Utilizar el`Save` método para convertir el documento a PDF especificando las opciones de guardado:
+ Utilizar el`Save` Método para convertir el documento a PDF especificando opciones de guardado:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 
 Asegúrese de especificar la ruta correcta para guardar el PDF convertido.
 
-### Código fuente de ejemplo para reducción de resolución de imágenes usando Aspose.Words para .NET
+### Código fuente de ejemplo para reducir la resolución de imágenes usando Aspose.Words para .NET
 
 ```csharp
 
@@ -53,7 +53,7 @@ Asegúrese de especificar la ruta correcta para guardar el PDF convertido.
 	Document doc = new Document(dataDir + "Rendering.docx");
 
 	// Podemos establecer un umbral mínimo para la reducción de resolución.
-	// Este valor evitará que se reduzca la resolución de la segunda imagen en el documento de entrada.
+	// Este valor evitará que se reduzca la resolución de la segunda imagen del documento de entrada.
 	PdfSaveOptions saveOptions = new PdfSaveOptions
 	{
 		DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
@@ -63,32 +63,32 @@ Asegúrese de especificar la ruta correcta para guardar el PDF convertido.
 
 ```
 
-Siguiendo estos pasos, puede reducir fácilmente la resolución de la imagen al convertir a PDF con Aspose.Words para .NET.
+Si sigue estos pasos, puede reducir fácilmente la resolución de la imagen al convertir a PDF con Aspose.Words para .NET.
 
 ## Conclusión
 
-En este tutorial, hemos explicado cómo reducir el tamaño de un documento PDF con muestreo de imágenes al convertirlo a PDF usando Aspose.Words para .NET. Siguiendo los pasos descritos, puede reducir fácilmente la resolución de las imágenes y el tamaño del archivo PDF generado. Asegúrese de especificar la ruta correcta a su documento y configure las opciones de muestreo de imágenes según sea necesario. Reducir el tamaño del archivo PDF facilita compartir, almacenar y cargar rápidamente el archivo en diferentes plataformas. Disfrute de los beneficios de reducir el tamaño del documento PDF con el muestreo de imágenes usando Aspose.Words para .NET.
+En este tutorial, explicamos cómo reducir el tamaño de un documento PDF con muestreo de imágenes al convertirlo a PDF usando Aspose.Words para .NET. Siguiendo los pasos descritos, podrá reducir fácilmente la resolución de las imágenes y el tamaño del archivo PDF generado. Asegúrese de especificar la ruta correcta a su documento y configurar las opciones de muestreo de imágenes según sea necesario. Reducir el tamaño del archivo PDF hace que sea más fácil compartir, almacenar y cargar rápidamente el archivo en diferentes plataformas. Disfrute de los beneficios de reducir el tamaño del documento PDF con muestreo de imágenes utilizando Aspose.Words para .NET.
 
 ### Preguntas frecuentes
 
-#### P: ¿Qué es reducir el tamaño del documento PDF con el muestreo de imágenes?
-R: Reducir el tamaño del documento PDF con Image Sampling es disminuir el tamaño del archivo PDF generado al reducir la resolución de las imágenes al convertirlas a PDF. Esto optimiza el uso del espacio de almacenamiento y facilita compartir y transferir el archivo PDF.
+#### P: ¿Qué significa reducir el tamaño del documento PDF con muestreo de imágenes?
+R: Reducir el tamaño del documento PDF con Image Sampling consiste en disminuir el tamaño del archivo PDF generado reduciendo la resolución de las imágenes al convertir a PDF. Esto optimiza el uso del espacio de almacenamiento y facilita compartir y transferir el archivo PDF.
 
-#### P: ¿Cómo puedo reducir el tamaño del documento PDF con el muestreo de imágenes usando Aspose.Words para .NET?
+#### P: ¿Cómo puedo reducir el tamaño del documento PDF con muestreo de imágenes usando Aspose.Words para .NET?
 R: Para reducir el tamaño del documento PDF con muestreo de imágenes usando Aspose.Words para .NET, siga estos pasos:
 
  Establezca la ruta del directorio donde se encuentran sus documentos reemplazando`"YOUR DOCUMENTS DIRECTORY"` con la ruta real de su directorio de documentos.
 
- Cargue el documento que desea convertir a PDF usando el`Document` class y especifique la ruta al documento en el directorio de documentos especificado.
+ Cargue el documento que desea convertir a PDF usando el`Document` clase y especifique la ruta al documento en el directorio de documentos especificado.
 
- Configure las opciones de guardar como PDF creando una instancia del`PdfSaveOptions` clase y configurando las opciones de muestreo de imagen usando el`DownsampleOptions` propiedad. Puede especificar la resolución de destino de las imágenes mediante el`Resolution` propiedad y establezca un umbral de resolución mínimo por encima del cual las imágenes no se reducirán utilizando la`ResolutionThreshold` propiedad.
+ Configure las opciones de guardar como PDF creando una instancia del`PdfSaveOptions` clase y configurar las opciones de muestreo de imágenes usando el`DownsampleOptions` propiedad. Puede especificar la resolución objetivo de las imágenes utilizando el`Resolution` propiedad y establezca un umbral de resolución mínimo por encima del cual las imágenes no se reducirán utilizando el`ResolutionThreshold` propiedad.
 
- Guarde el documento en formato PDF usando el`Save` metodo de la`Document`class especificando la ruta y las opciones de guardado.
+ Guarde el documento en formato PDF utilizando el`Save` método de la`Document`clase que especifica la ruta y las opciones de guardado.
 
-#### P: ¿Cuáles son los beneficios de reducir el tamaño del documento PDF con el muestreo de imágenes?
-R: Los beneficios de reducir el tamaño del documento PDF con el muestreo de imágenes son:
+#### P: ¿Cuáles son los beneficios de reducir el tamaño del documento PDF con muestreo de imágenes?
+R: Los beneficios de reducir el tamaño del documento PDF con muestreo de imágenes son:
 
-Tamaño de archivo PDF reducido: el muestreo de imágenes reduce la resolución de las imágenes en el documento PDF, lo que resulta en una disminución significativa del tamaño del archivo PDF. Esto facilita compartir y transferir el archivo, especialmente por correo electrónico o en línea.
+Tamaño de archivo PDF reducido: el muestreo de imágenes reduce la resolución de las imágenes en el documento PDF, lo que resulta en una disminución significativa en el tamaño del archivo PDF. Esto facilita compartir y transferir el archivo, especialmente por correo electrónico o en línea.
 
 Optimización del espacio de almacenamiento: Reducir el tamaño del archivo PDF ayuda a optimizar el uso del espacio de almacenamiento, especialmente cuando tiene muchos archivos PDF que contienen imágenes de alta resolución.
 

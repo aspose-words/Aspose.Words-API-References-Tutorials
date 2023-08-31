@@ -2,23 +2,23 @@
 title: Insérer un champ TOA sans Document Builder
 linktitle: Insérer un champ TOA sans Document Builder
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour insérer un champ TOA sans Document Builder en utilisant Aspose.Words pour .NET.
+description: Guide étape par étape pour insérer un champ TOA sans Document Builder à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/insert-toafield-without-document-builder/
 ---
 
-Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité "TOA Field Insertion" d'Aspose.Words pour .NET. Suivez attentivement chaque étape pour obtenir les résultats souhaités.
+Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité « TOA Field Insertion » d'Aspose.Words pour .NET. Suivez attentivement chaque étape pour obtenir les résultats souhaités.
 
-## Étape 1 : configuration du répertoire de documents
+## Étape 1 : configuration du répertoire de documents
 
-Dans le code fourni, vous devez spécifier le répertoire de vos documents. Remplacez la valeur "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin approprié vers votre répertoire de documents.
+Dans le code fourni, vous devez préciser le répertoire de vos documents. Remplacez la valeur « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin approprié vers votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Étape 2 : Création du document et du paragraphe
+## Étape 2 : Création du document et du paragraphe
 
 Nous commençons par créer un nouveau document et initialiser un paragraphe.
 
@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## Étape 3 : Insertion du champ TA
+## Étape 3 : Insérer le champ TA
 
 Nous utilisons la classe FieldTA pour insérer un champ TA dans le paragraphe.
 
@@ -37,7 +37,7 @@ fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 ```
 
-## Étape 4 : Ajouter le paragraphe au corps du document
+## Étape 4 : Ajout du paragraphe au corps du document
 
 Nous ajoutons le paragraphe contenant le champ TA au corps du document.
 
@@ -45,7 +45,7 @@ Nous ajoutons le paragraphe contenant le champ TA au corps du document.
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## Étape 5 : Création du paragraphe pour le champ TOA
+## Étape 5 : Création du paragraphe pour le champ TOA
 
 Nous créons un nouveau paragraphe pour le champ TOA.
 
@@ -62,7 +62,7 @@ FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 ```
 
-## Étape 7 : Ajouter le paragraphe au corps du document
+## Étape 7 : Ajout du paragraphe au corps du document
 
 Nous ajoutons le paragraphe contenant le champ TOA au corps du document.
 
@@ -70,7 +70,7 @@ Nous ajoutons le paragraphe contenant le champ TOA au corps du document.
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## Étape 8 : Mettre à jour le champ TOA
+## Étape 8 : Mettre à jour le champ TOA
 
  Enfin, nous appelons le`Update()` méthode pour mettre à jour le champ TOA.
 
@@ -78,13 +78,13 @@ doc.FirstSection.Body.AppendChild(para);
 fieldToa.Update();
 ```
 
-### Exemple de code source pour l'insertion de champ TOA sans Document Builder avec Aspose.Words pour .NET
+### Exemple de code source pour l'insertion de champs TOA sans Document Builder avec Aspose.Words pour .NET
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-// Nous voulons insérer les champs TA et TOA comme ceci :
+// Nous souhaitons insérer les champs TA et TOA comme ceci :
 // { TA \c 1 \l "Valeur 0" }
 // { TOA \c 1 }
 
@@ -107,18 +107,18 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 ### FAQ
 
-#### Q : Comment personnaliser l'apparence du champ TOA inséré dans le document Word avec Aspose.Words pour .NET ?
+#### Q : Comment personnaliser l'apparence du champ TOA inséré dans le document Word avec Aspose.Words pour .NET ?
 
- : Vous pouvez personnaliser l'apparence du champ TOA inséré en utilisant les propriétés du`FieldTOA` objet pour spécifier les options de formatage.
+R : Vous pouvez personnaliser l'apparence du champ TOA inséré en utilisant les propriétés du`FieldTOA` objet pour spécifier les options de formatage.
 
 #### Q : Puis-je ajouter plusieurs champs TOA dans un seul document Word à l'aide d'Aspose.Words pour .NET ?
 
-R : Oui, vous pouvez ajouter plusieurs champs TOA dans un seul document Word à l'aide d'Aspose.Words pour .NET. Répétez simplement les étapes d'insertion pour chaque champ.
+R : Oui, vous pouvez ajouter plusieurs champs TOA dans un seul document Word à l'aide d'Aspose.Words pour .NET. Répétez simplement les étapes d'insertion pour chaque champ.
 
-#### Q : Comment puis-je vérifier si un champ TOA a été correctement inséré dans un document Word avec Aspose.Words pour .NET ?
+#### Q : Comment puis-je vérifier si un champ TOA a été inséré avec succès dans un document Word avec Aspose.Words pour .NET ?
 
 R : Pour vérifier si un champ TOA a été inséré avec succès, vous pouvez parcourir le contenu du document et rechercher des instances de champ TOA.
 
-#### Q : L'insertion d'un champ TOA sans utiliser DocumentBuilder affecte-t-elle la mise en forme du document Word avec Aspose.Words pour .NET ?
+#### Q : L'insertion d'un champ TOA sans utiliser DocumentBuilder affecte-t-elle le formatage des documents Word avec Aspose.Words pour .NET ?
 
-R : L'insertion d'un champ TOA sans utiliser DocumentBuilder n'affecte pas directement la mise en forme du document Word. Cependant, les options de mise en forme du champ TOA peuvent avoir un impact sur la mise en forme globale du document.
+R : L'insertion d'un champ TOA sans utiliser DocumentBuilder n'affecte pas directement le formatage du document Word. Cependant, les options de formatage du champ TOA peuvent avoir un impact sur le formatage global du document.

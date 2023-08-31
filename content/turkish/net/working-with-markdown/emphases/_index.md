@@ -1,16 +1,16 @@
 ---
 title: Vurgular
 linktitle: Vurgular
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET Adım adım kılavuz ile vurguları (kalın ve italik) nasıl kullanacağınızı öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile vurguları (kalın ve italik) nasıl kullanacağınızı öğrenin. Adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/emphases/
 ---
 
-Bu örnekte vurguların Aspose.Words for .NET ile nasıl kullanılacağını açıklayacağız. vurgular, metnin kalın ve italik gibi belirli kısımlarını vurgulamak için kullanılır.
+Bu örnekte Aspose.Words for .NET ile vurguların nasıl kullanılacağını açıklayacağız. Vurgu, metnin kalın ve italik gibi belirli kısımlarını vurgulamak için kullanılır.
 
-## 1. Adım: Belge başlatma
+## 1. Adım: Belgenin başlatılması
 
  İlk olarak, bir örneğini oluşturarak belgeyi başlatacağız.`Document` sınıf.
 
@@ -19,9 +19,9 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## 2. Adım: Bir belge oluşturucu kullanma
+## Adım 2: Belge oluşturucuyu kullanma
 
-Ardından, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
+Daha sonra belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. Adım: Vurgularla metin ekleyin
 
-Belge oluşturucunun yazı tipi özelliklerini değiştirerek vurgu metni ekleyebiliriz. Bu örnekte, metnin farklı kısımlarını vurgulamak için kalın ve italik yazılar kullanıyoruz.
+Belge oluşturucunun yazı tipi özelliklerini değiştirerek vurgulu metin ekleyebiliriz. Bu örnekte metnin farklı bölümlerini vurgulamak için kalın ve italik yazı tipini kullanıyoruz.
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as emphases indicators.");
@@ -61,15 +61,15 @@ builder. Write(".");
 
 ## 4. Adım: Belgeyi kaydetme
 
- Son olarak belgeyi istediğimiz formatta kaydedebiliriz. Bu örnekte,`.md` Markdown formatı için uzantı.
+ Son olarak belgeyi istediğimiz formatta kaydedebiliriz. Bu örnekte, şunu kullanıyoruz:`.md` Markdown formatının uzantısı.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-Tebrikler! Artık Aspose.Words for .NET ile vurguları nasıl kullanacağınızı öğrendiniz.
+Tebrikler! Artık Aspose.Words for .NET ile vurguların nasıl kullanılacağını öğrendiniz.
 
-### Aspose.Words for .NET kullanan Emphases için örnek kaynak kodu
+### Aspose.Words for .NET kullanan Emphase'ler için örnek kaynak kodu
 
 
 ```csharp
@@ -105,24 +105,24 @@ builder.Write("text.");
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-### SSS
+### SSS'ler
 
-#### S: Markdown kullanarak metni nasıl vurgularım?
+#### S: Markdown'ı kullanarak metni nasıl vurgularım?
 
-C: Markdown'ı kullanarak metni vurgulamak için, metni uygun simgelerle çevreleyin. Kullanmak`*` veya`_` italikler için,`**` veya`__` kalın için ve`~~` üstü çizili için.
+C: Markdown'ı kullanarak metni vurgulamak için metni uygun sembollerle çevrelemeniz yeterlidir. Kullanmak`*` veya`_` italikler için,`**` veya`__` kalın için ve`~~` üstü çizili için.
 
 #### S: Farklı vurguları aynı metinde birleştirebilir miyiz?
 
- C: Evet, farklı vurguları aynı metinde birleştirmek mümkündür. Örneğin, her ikisini de kullanarak bir kelimeyi kalın ve italik yapabilirsiniz.`**` Ve`*` kelimenin etrafında.
+ C: Evet, aynı metinde farklı vurguları birleştirmek mümkündür. Örneğin, her ikisini de kullanarak bir kelimeyi kalın ve italik hale getirebilirsiniz.`**` Ve`*` kelimenin etrafında.
 
-#### S: Markdown'da hangi vurgulama seçenekleri mevcuttur?
+#### S: Markdown'da hangi vurgulama seçenekleri mevcut?
 
-C: Markdown'da bulunan vurgulama seçenekleri italiktir (`*` veya`_`), gözü pek (`**` veya`__`) ve üstü çizili (`~~`).
+C: Markdown'da mevcut olan vurgulama seçenekleri italiktir (`*` veya`_`), gözü pek (`**` veya`__`) ve üstü çizili (`~~`).
 
-#### S: Metnin Markdown tarafından vurgulamak için kullanılan özel karakterler içerdiği durumları nasıl ele alabilirim?
+#### S: Metnin Markdown tarafından vurgulamak için kullanılan özel karakterleri içerdiği durumları nasıl ele alacağım?
 
- A: Metniniz, Markdown tarafından vurgulamak için kullanılan özel karakterler içeriyorsa, önlerine bir`\` . Örneğin,`\*` değişmez bir yıldız işareti gösterecektir.
+ C: Metniniz Markdown tarafından vurgulamak için kullanılan özel karakterler içeriyorsa, önüne bir karakter koyarak bunlardan kurtulabilirsiniz.`\` . Örneğin,`\*` gerçek bir yıldız işareti gösterecektir.
 
-#### S: Vurgulamanın görünümünü CSS kullanarak özelleştirebilir miyiz?
+#### S: CSS kullanarak vurgulamanın görünümünü özelleştirebilir miyiz?
 
-C: Markdown'da vurgulama genellikle tarayıcının varsayılan stilleri kullanılarak oluşturulur. Markdown'ınızı HTML'ye dönüştürürseniz, CSS kurallarını kullanarak vurgulamanın görünümünü özelleştirebilirsiniz.
+C: Markdown'da vurgulama genellikle tarayıcının varsayılan stilleri kullanılarak oluşturulur. Markdown'ınızı HTML'ye dönüştürürseniz CSS kurallarını kullanarak vurgulamanın görünümünü özelleştirebilirsiniz.

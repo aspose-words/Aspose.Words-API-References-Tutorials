@@ -1,7 +1,7 @@
 ---
-title: Rinomina campi di unione
-linktitle: Rinomina campi di unione
-second_title: Aspose.Words API di elaborazione dei documenti
+title: Rinominare i campi unione
+linktitle: Rinominare i campi unione
+second_title: API di elaborazione dei documenti Aspose.Words
 description: In questo tutorial imparerai come rinominare i campi di unione in un documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Ecco una guida passo passo per spiegare il codice sorgente C# di seguito che uti
 
 ## Passaggio 1: impostazione della directory dei documenti
 
-Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "YOUR DOCUMENT DIRECTORY" con il percorso appropriato alla directory dei tuoi documenti.
+Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "LA TUA DIRECTORY DOCUMENTI" con il percorso appropriato della directory dei tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -30,9 +30,9 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
-## Passaggio 3: ridenominazione dei campi di unione
+## Passaggio 3: rinominare i campi unione
 
-Esaminiamo ogni campo nell'intervallo del documento e, se si tratta di un campo di unione, rinominiamo il campo aggiungendo "_Suffisso "rinominato".
+Esaminiamo ogni campo nell'intervallo del documento e, se si tratta di un campo di unione, rinominiamo il campo aggiungendo il "_Suffisso "rinominato".
 
 ```csharp
 foreach(Field f in doc.Range.Fields)
@@ -46,7 +46,7 @@ foreach(Field f in doc.Range.Fields)
 }
 ```
 
-## Passaggio 4: salvare il documento
+## Passaggio 4: salvataggio del documento
 
  Infine, chiamiamo il`Save()` metodo per salvare il documento modificato.
 
@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 // Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Creare il documento e inserire i campi di unione.
+// Crea il documento e inserisci i campi di unione.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
@@ -84,24 +84,24 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 
 Segui questi passaggi per rinominare i campi di unione nel documento utilizzando Aspose.Words per .NET.
 
-### FAQ
+### Domande frequenti
 
 #### D: Come posso rinominare i campi uniti in un documento Word utilizzando Aspose.Words per .NET?
 
- R: Per rinominare i campi uniti in un documento Word utilizzando Aspose.Words per .NET, puoi scorrere i campi nel documento utilizzando il`FieldMergingArgs` classe e utilizzare il`FieldMergingArgs.FieldName` metodo per rinominare il campo.
+ R: Per rinominare i campi uniti in un documento Word utilizzando Aspose.Words per .NET, è possibile scorrere i campi nel documento utilizzando il comando`FieldMergingArgs` classe e utilizzare il file`FieldMergingArgs.FieldName` metodo per rinominare il campo.
 
-#### D: È possibile rinominare solo determinati campi uniti in un documento Word con Aspose.Words per .NET?
+#### D: È possibile rinominare solo alcuni campi uniti in un documento Word con Aspose.Words per .NET?
 
-R: Sì, è possibile rinominare solo determinati campi uniti in un documento Word con Aspose.Words per .NET. Puoi filtrare i campi da rinominare utilizzando criteri specifici, come il nome del campo o altre proprietà pertinenti. Quindi puoi rinominare i campi corrispondenti utilizzando il file`FieldMergingArgs.FieldName` metodo.
+R: Sì, è possibile rinominare solo alcuni campi uniti in un documento Word con Aspose.Words per .NET. Puoi filtrare quali campi rinominare utilizzando criteri specifici, come il nome del campo o altre proprietà pertinenti. Quindi puoi rinominare i campi corrispondenti utilizzando il file`FieldMergingArgs.FieldName` metodo.
 
 #### D: Come posso verificare se un campo unito è stato rinominato correttamente in un documento Word con Aspose.Words per .NET?
 
- R: Per verificare se un campo unito è stato rinominato correttamente in un documento Word con Aspose.Words per .NET, puoi utilizzare il`FieldMergedArgs` classe e accedere al`FieldMergedArgs.IsMerged` proprietà per determinare se il campo è stato rinominato con hit.
+ R: Per verificare se un campo unito è stato rinominato con successo in un documento Word con Aspose.Words per .NET, puoi utilizzare il comando`FieldMergedArgs` classe e accedi al`FieldMergedArgs.IsMerged` proprietà per determinare se il campo è stato rinominato con hit.
 
-#### D: Quali sono le conseguenze della ridenominazione di un campo unito in un documento Word con Aspose.Words per .NET?
+#### D: Quali sono le conseguenze della ridenominazione di un campo unito in un documento di Word con Aspose.Words per .NET?
 
-R: Quando si rinomina un campo unito in un documento Word con Aspose.Words per .NET, cambia il nome del campo nel documento, il che può influire su altre funzionalità o processi che dipendono dal nome del campo. Assicurati di considerare queste potenziali conseguenze prima di rinominare i campi uniti.
+R: Quando si rinomina un campo unito in un documento di Word con Aspose.Words per .NET, cambia il nome del campo nel documento, che potrebbe influire su altre funzionalità o processi che dipendono dal nome del campo. Assicurati di considerare queste potenziali conseguenze prima di rinominare i campi uniti.
 
 #### D: È possibile ripristinare il nome originale di un campo unito dopo averlo rinominato con Aspose.Words per .NET?
 
-R: Sì, è possibile ripristinare il nome originale di un campo unito dopo averlo rinominato con Aspose.Words per .NET. È possibile memorizzare il nome originale del campo in una variabile o in un elenco e quindi utilizzare tali informazioni per ripristinare il nome originale, se necessario.
+R: Sì, è possibile ripristinare il nome originale di un campo unito dopo averlo rinominato con Aspose.Words per .NET. Puoi memorizzare il nome originale del campo in una variabile o in un elenco e quindi utilizzare tali informazioni per ripristinare il nome originale, se necessario.

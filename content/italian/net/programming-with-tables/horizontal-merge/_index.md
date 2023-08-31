@@ -1,21 +1,21 @@
 ---
 title: Unione orizzontale
 linktitle: Unione orizzontale
-second_title: Aspose.Words API di elaborazione dei documenti
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come unire orizzontalmente le celle in una tabella di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/horizontal-merge/
 ---
 
-In questo tutorial impareremo come unire orizzontalmente le celle in una tabella in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di unire le celle orizzontalmente nelle tabelle di Word a livello di programmazione.
+In questo tutorial impareremo come unire orizzontalmente le celle in una tabella in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzionalità. Entro la fine di questo tutorial, sarai in grado di unire le celle orizzontalmente nelle tue tabelle di Word a livello di codice.
 
 ## Passaggio 1: impostazione del progetto
 1. Avvia Visual Studio e crea un nuovo progetto C#.
-2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
+2. Aggiungi un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: creazione del documento e inizializzazione del generatore di documenti
-Per avviare l'elaborazione di parole con la tabella e le celle, dobbiamo creare un nuovo documento e inizializzare il generatore di documenti. Segui questi passi:
+Per avviare l'elaborazione delle parole con la tabella e le celle, dobbiamo creare un nuovo documento e inizializzare il generatore di documenti. Segui questi passi:
 
 ```csharp
 // Percorso della directory dei documenti
@@ -26,10 +26,10 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
+Assicurati di sostituire "LA TUA DIRECTORY DOCUMENTI" con il percorso effettivo della directory dei documenti.
 
-## Passaggio 3: creazione della tabella con l'unione orizzontale delle celle
-Successivamente, creeremo la tabella e applicheremo l'unione di celle orizzontali utilizzando le proprietà fornite da Aspose.Words per .NET. Usa il seguente codice:
+## Passaggio 3: costruzione della tabella con l'unione orizzontale delle celle
+Successivamente, costruiremo la tabella e applicheremo l'unione orizzontale delle celle utilizzando le proprietà fornite da Aspose.Words per .NET. Utilizza il seguente codice:
 
 ```csharp
 builder. InsertCell();
@@ -49,10 +49,10 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Qui usiamo il generatore di documenti per costruire la tabella e impostare le proprietà di unione orizzontale delle celle. Noi usiamo il`HorizontalMerge` proprietà del`CellFormat` oggetto per specificare il tipo di unione orizzontale da applicare a ciascuna cella. Usando`CellMerge.First` uniamo la prima cella con quella successiva, durante l'utilizzo`CellMerge.Previous` uniamo la cella corrente con la cella precedente.`CellMerge.None` indica che la cella non deve essere unita.
+ Qui utilizziamo il generatore di documenti per creare la tabella e impostare le proprietà di unione orizzontale delle celle. Noi usiamo il`HorizontalMerge` proprietà del`CellFormat` oggetto per specificare il tipo di unione orizzontale da applicare a ciascuna cella. Utilizzando`CellMerge.First` uniamo la prima cella con quella successiva, durante l'utilizzo`CellMerge.Previous` uniamo la cella corrente con la cella precedente.`CellMerge.None` indica che la cella non deve essere unita.
 
-## Passaggio 4: salvare il documento modificato
-Infine, dobbiamo salvare il documento modificato con le celle unite orizzontalmente. Usa il seguente codice:
+## Passaggio 4: salvataggio del documento modificato
+Infine, dobbiamo salvare il documento modificato con le celle unite orizzontalmente. Utilizza il seguente codice:
 
 ```csharp
 doc.Save(data
@@ -88,4 +88,4 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come unire orizzontalmente le celle in una tabella in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile applicare l'unione di celle orizzontali nelle tabelle di Word a livello di codice. Questa funzione ti consente di creare layout di tabella più complessi e di organizzare meglio i tuoi dati.
+In questo tutorial, abbiamo imparato come unire orizzontalmente le celle in una tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile applicare l'unione orizzontale delle celle nelle tabelle di Word a livello di codice. Questa funzionalità ti consente di creare layout di tabella più complessi e organizzare meglio i tuoi dati.

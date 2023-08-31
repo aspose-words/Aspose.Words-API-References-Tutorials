@@ -1,23 +1,23 @@
 ---
 title: Word Belgesinde Yer İşaretli İçeriği Gizle'yi Göster
 linktitle: Word Belgesinde Yer İşaretli İçeriği Gizle'yi Göster
-second_title: Aspose.Words Belge İşleme API'sı
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET'i kullanarak word belgesindeki yer imi içeriğini nasıl göstereceğinizi veya gizleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-Bu makalede, Aspose.Words for .NET kitaplığında Show Hide Bookmarked Content işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, verileri birleştirirken belirli bir koşula dayalı olarak bir yer iminin içeriğini word belgesinde göstermenizi veya gizlemenizi sağlar.
+Bu makalede, Aspose.Words for .NET kütüphanesinde Yer İşaretli İçeriği Gizle Göster fonksiyonunun nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, verileri birleştirirken belirli bir koşula göre word belgesindeki bir yer işaretinin içeriğini göstermenize veya gizlemenize olanak tanır.
 
 ## Önkoşullar
 
 - C# dili hakkında temel bilgi.
 - Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## 1. Adım: Yer imini alma
+## 1. Adım: Yer işaretini alma
 
- biz kullanıyoruz`Bookmarks` İçeriği göstermek veya gizlemek istediğimiz belirli yer işaretini almak için belge aralığının özelliği:
+ biz kullanıyoruz`Bookmarks` İçeriği göstermek veya gizlemek istediğimiz belirli yer imini almak için belge aralığının özelliği:
 
 ```csharp
 Bookmark bm = doc.Range.Bookmarks[bookmarkName];
@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## 2. Adım: Birleştirme alanlarını ekleme
 
- Bir belge oluşturucu kullanıyoruz`DocumentBuilder` gerekli birleştirme alanlarını eklemek için. Bu birleştirme alanları, değerine bağlı olarak yer imi içeriğini göstermek veya gizlemek için bir koşul ayarlar.`showHide` değişken:
+ Bir belge oluşturucu kullanıyoruz`DocumentBuilder` gerekli birleştirme alanlarını eklemek için. Bu birleştirme alanları, yer imi içeriğinin değerine bağlı olarak yer imi içeriğini göstermek veya gizlemek için bir koşul belirleyecektir.`showHide` değişken:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -42,9 +42,9 @@ builder. Write(" \"\"");
 
 ## 3. Adım: Yer imi içeriğini taşıma
 
-Yer iminin içeriğinde dolaşıyoruz ve görünmesi için hareket ettiriyoruz
+Yer iminin içeriğinde dolaşıyoruz ve görünecek şekilde hareket ettiriyoruz
 
-yer iminden önce. Bu, belirtilen koşula göre içeriğin gösterilmesini veya gizlenmesini kontrol eder:
+yer iminden önce gelir. Bu, belirtilen koşula göre içeriğin gösterilmesini veya gizlenmesini kontrol edecektir:
 
 ```csharp
 Node currentNode = field. Start;
@@ -64,7 +64,7 @@ while (currentNode != null && flag)
 
 ## 4. Adım: Yer imi içeriğinin geri kalanını taşıma
 
-Yer işaretinin son düğümünü ekleme noktası olarak kullanarak, yer işareti içeriğinin geri kalanını yer işaretinden sonra taşırız:
+Yer imi içeriğinin geri kalanını, yer iminin son düğümünü ekleme noktası olarak kullanarak yer iminden sonra taşırız:
 
 ```csharp
 Node endNode = bm.BookmarkEnd;
@@ -84,15 +84,15 @@ while (currentNode != null && flag)
 
 ## Adım 5: Birleştirmenin gerçekleştirilmesi
 
- biz kullanıyoruz`Execute` belge yöntemi`s `Posta birleştirme` object to execute the merge using the bookmark name and the value of the `showHide` değişkeni:
+ biz kullanıyoruz`Execute` belgenin yöntemi`s `Posta birleştirme` object to execute the merge using the bookmark name and the value of the `showHide` değişkeni:
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 ```
 
-### Aspose.Words for .NET kullanarak Yer İşaretli İçeriği Gizle Göster için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak Yer İşaretli İçeriği Gösterme ve Gizleme için örnek kaynak kodu
 
-Aspose.Words for .NET kullanarak yer imi içeriğinin gösterilmesini veya gizlenmesini gösteren Kaynak kodunun tam örneği burada:
+Aspose.Words for .NET kullanarak yer imi içeriğini göstermeyi veya gizlemeyi gösteren Kaynak kodunun tam örneği:
 
 ```csharp
 
@@ -101,7 +101,7 @@ Aspose.Words for .NET kullanarak yer imi içeriğinin gösterilmesini veya gizle
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToDocumentEnd();
 
-	// {IF "{MERGEFIELD bookmark}" = "true" "" ""}
+	// {IF "{MERGEFIELD yer imi}" = "true" "" ""}
 	Field field = builder.InsertField("IF \"", null);
 	builder.MoveTo(field.Start.NextSibling);
 	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
@@ -144,25 +144,25 @@ Aspose.Words for .NET kullanarak yer imi içeriğinin gösterilmesini veya gizle
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Show Hide Bookmarked Content özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Verileri birleştirirken belirli bir koşula bağlı olarak bir yer iminin içeriğini göstermek veya gizlemek için adım adım bir kılavuz izledik.
+Bu makalede, Aspose.Words for .NET'in Yer İşaretli İçeriği Göster Göster Gizle özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Verileri birleştirirken belirli bir duruma göre yer işaretinin içeriğini göstermek veya gizlemek için adım adım bir kılavuz izledik.
 
-### Word belgesinde yer imi eklenmiş içeriğin gösterilmesi ile ilgili SSS
+### Word belgesinde yer imlerine eklenen içeriği gizlemeyi gösteren SSS'ler
 
-#### S: Aynı koşulu aynı belgede birden fazla yer imi için kullanabilir miyim?
+#### S: Aynı koşulu, aynı belgedeki birden fazla yer imi için kullanabilir miyim?
 
- C: Evet, aynı koşulu aynı belgede birden çok yer imi için kullanabilirsiniz. Yer imi adını ve isteğe bağlı olarak değerini ayarlayarak her yer imi için 2-5 arasındaki adımları tekrarlayın.`showhide` gerektiği gibi değişken.
+ C: Evet, aynı koşulu aynı belgedeki birden fazla yer imi için kullanabilirsiniz. Yer imi adını ve isteğe bağlı olarak yer imi değerini ayarlayarak her yer imi için 2-5 arasındaki adımları tekrarlayın.`showhide` gerektiği gibi değişken.
 
 #### S: Yer imi içeriğini göstermek veya gizlemek için nasıl daha fazla koşul ekleyebilirim?
 
- C: Daha fazla koşul eklemek için aşağıdaki gibi mantıksal işleçler kullanabilirsiniz:`AND` Ve`OR` adım 2'de birleştirme alanlarını ekleme kodunda. Ek koşullar eklemek için aşağıdaki koddaki koşulu düzenleyin :
+ C: Daha fazla koşul eklemek için aşağıdaki gibi mantıksal operatörleri kullanabilirsiniz:`AND` Ve`OR` 2. adımdaki birleştirme alanlarını ekleme kodunda. Ek koşullar eklemek için aşağıdaki koddaki koşulu düzenleyin:
 
 ```csharp
 builder. Write("\" = \"true\" ");
 ```
 
-#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki yer imini nasıl silebilirim?
+#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini nasıl silebilirim?
 
-C: Aspose.Words for .NET kullanarak bir Word belgesindeki yer imini kaldırmak için`Remove` gelen yöntem`Bookmarks` belge aralığının toplanması. Belirli bir yer imini silmek için örnek kod aşağıda verilmiştir:
+C: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini kaldırmak için şu komutu kullanabilirsiniz:`Remove` gelen yöntem`Bookmarks` belge aralığının toplanması. Belirli bir yer imini silmek için örnek kod:
 
 ```csharp
 doc.Range.Bookmarks.Remove(bookmarkName);
@@ -170,8 +170,8 @@ doc.Range.Bookmarks.Remove(bookmarkName);
 
 #### S: Aspose.Words kütüphanesi ücretsiz mi?
 
- Y: Aspose.Words kitaplığı ticari bir kitaplıktır ve projelerinizde kullanmak için geçerli bir lisans gerektirir. Kontrol edebilirsin[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/) lisanslama seçenekleri ve fiyatlandırma hakkında daha fazla bilgi edinmek için.
+ C: Aspose.Words kütüphanesi ticari bir kütüphanedir ve projelerinizde kullanmak için geçerli bir lisans gerektirir. Kontrol edebilirsin[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/) Lisanslama seçenekleri ve fiyatlandırma hakkında daha fazla bilgi edinmek için.
 
-#### S: .NET'te Word belgeleriyle Sözcük İşleme için kullanılabilen başka kitaplıklar var mı?
+#### S: .NET'te Word belgeleriyle Kelime İşleme için kullanılabilen başka kitaplıklar var mı?
 
-Y: Evet, .NET'te Word belgeleriyle Sözcük İşleme için Open XML SDK ve GemBox.Document gibi başka kitaplıklar da mevcuttur. Özel ihtiyaçlarınıza ve tercihlerinize göre bu kütüphaneleri Aspose.Words'a alternatif olarak keşfedebilirsiniz.
+C: Evet, .NET'te Word belgeleriyle Kelime İşleme için Open XML SDK ve GemBox.Document gibi başka kitaplıklar da mevcuttur. Özel ihtiyaçlarınıza ve tercihlerinize göre Aspose.Words'e alternatif olarak bu kütüphaneleri inceleyebilirsiniz.

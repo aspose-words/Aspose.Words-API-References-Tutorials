@@ -1,21 +1,21 @@
 ---
-title: تعليق المرساة
-linktitle: تعليق المرساة
-second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: تعرف على كيفية إرساء ردود التعليقات على نص معين في مستندات Word باستخدام Aspose.Words for .NET.
+title: تعليق مرساة
+linktitle: تعليق مرساة
+second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
+description: تعرف على كيفية ربط ردود التعليقات على نص محدد في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/working-with-comments/anchor-comment/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إرساء ردود التعليقات على نص معين في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من ربط التعليقات بنص محدد في مستنداتك.
+في هذا البرنامج التعليمي الشامل، ستتعلم كيفية ربط ردود التعليقات على نص معين في مستند Word باستخدام Aspose.Words for .NET. سنرشدك خلال العملية ونزودك بمقتطفات التعليمات البرمجية اللازمة لـ C#. بحلول نهاية هذا الدليل، ستتمكن من ربط التعليقات بنص محدد في مستنداتك.
 
 ## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
+- Aspose.Words لمكتبة .NET المثبتة على نظامك.
 
 ## الخطوة 1: إنشاء مستند جديد وإضافة نص
-للبدء ، أنشئ مستندًا جديدًا باستخدام فئة المستند وأضف النص المطلوب:
+للبدء، قم بإنشاء مستند جديد باستخدام فئة المستند وأضف النص المطلوب:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,8 +36,8 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
-## الخطوة 2: قم بإنشاء تعليق وإضافة نطاق تعليق
-بعد ذلك ، قم بإنشاء تعليق واربطه بنص معين باستخدام كائني CommentRangeStart و CommentRangeEnd:
+## الخطوة 2: إنشاء تعليق وإضافة نطاق التعليق
+بعد ذلك، قم بإنشاء تعليق وربطه بنص محدد باستخدام كائنات CommentRangeStart وCommentRangeEnd:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
@@ -53,22 +53,22 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
 ## الخطوة 3: احفظ المستند
-بعد إرساء التعليق على نص معين ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+بعد ربط التعليق بنص محدد، احفظ المستند في ملف باستخدام طريقة الحفظ لفئة المستند:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 ```
 
-### مثال رمز مصدر للتعليق المرساة الرد باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لترسيخ الرد على التعليق باستخدام Aspose.Words for .NET:
+### مثال على الكود المصدري للرد على تعليق الارتساء باستخدام Aspose.Words لـ .NET
+فيما يلي كود المصدر الكامل لتثبيت الرد على التعليق باستخدام Aspose.Words for .NET:
 
 ```csharp
-// قم بإنشاء مثيل من المستند.
+// إنشاء مثيل للمستند.
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document();
 
-// إنشاء ثلاثة كائنات تشغيل.
-// يقوم أول اثنان بتشغيل بعض النصوص ، بينما يقوم الثالث بتشغيل تعليق
+// قم بإنشاء ثلاثة كائنات تشغيل.
+// يقوم الأولان بتشغيل بعض النصوص، بينما يقوم الثالث بتشغيل تعليق
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -88,7 +88,7 @@ Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-// يحتوي كل كائن تشغيل على كائن CommentRangeStart و CommentRangeEnd مرتبط.
+// يحتوي كل كائن من كائنات التشغيل على كائنين CommentRangeStart وCommentRangeEnd مقترنين.
 
 CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
 CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
@@ -100,25 +100,25 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
 
-### التعليمات
+### الأسئلة الشائعة
 
-#### س: ما هو تعليق التعليق في Aspose.Words لـ .NET؟
+#### س: ما هو مرساة التعليق في Aspose.Words لـ .NET؟
 
-ج: في Aspose.Words for .NET ، رابط التعليق هو علامة تربط تعليق بموقع معين في مستند.
+ج: في Aspose.Words for .NET، يعتبر رابط التعليق بمثابة علامة تربط التعليق بموقع محدد في المستند.
 
 #### س: كيف يمكنني إضافة رابط تعليق في مستند Aspose.Words for .NET؟
 
-ج: لإضافة رابط تعليق في مستند Aspose.Words for .NET ، اتبع الخطوات المذكورة في البرنامج التعليمي.
+ج: لإضافة رابط تعليق في مستند Aspose.Words for .NET، اتبع الخطوات المذكورة في البرنامج التعليمي.
 
-#### س: كيف يمكنني الوصول إلى رابط تعليق موجود في Aspose.Words for .NET؟
+#### س: كيف يمكنني الوصول إلى نقطة ارتساء التعليق الموجودة في Aspose.Words لـ .NET؟
 
- ج: يمكنك الوصول إلى رابط تعليق موجود في Aspose.Words for .NET باستخدام`Comment.Anchor` ملكية.
+ ج: يمكنك الوصول إلى رابط التعليق الموجود في Aspose.Words لـ .NET باستخدام`Comment.Anchor` ملكية.
 
-#### س: هل يمكنني توفير مذيع تعليق في Aspose.Words for .NET؟
+#### س: هل يمكنني إضافة رابط تعليق في Aspose.Words لـ .NET؟
 
- ج: نعم ، يمكنك إزالة رابط التعليق في Aspose.Words for .NET باستخدام`Comment.Remove` طريقة.
+ ج: نعم، يمكنك إزالة رابط التعليق في Aspose.Words لـ .NET باستخدام`Comment.Remove` طريقة.
 
-#### س: كيف يمكنني تعديل نص تعليق مرتبط بأحد ارتساء التعليقات في Aspose.Words for .NET؟
+#### س: كيف يمكنني تحرير نص التعليق المرتبط بنقطة ارتساء التعليق في Aspose.Words لـ .NET؟
 
- ج: لتعديل نص تعليق مرتبط بإرساء تعليق في Aspose.Words for .NET ، يمكنك الوصول إلى`Comment.Text` الممتلكات المقابلة`Comment` الكائن وتعديل النص حسب الحاجة.
+ ج: لتعديل نص التعليق المنضم إلى رابط التعليق في Aspose.Words لـ .NET، يمكنك الوصول إلى`Comment.Text` خاصية المقابلة`Comment` كائن وتعديل النص حسب الحاجة.
 

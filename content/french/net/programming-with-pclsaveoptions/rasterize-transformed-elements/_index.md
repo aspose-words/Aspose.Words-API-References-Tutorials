@@ -8,11 +8,11 @@ weight: 10
 url: /fr/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
 
-Aspose.Words pour .NET est une bibliothèque puissante pour créer, manipuler et convertir des documents Word dans une application C#. Parmi les fonctionnalités offertes par Aspose.Words figure la possibilité de pixelliser les éléments transformés lors de la conversion de documents en différents formats. Dans ce guide, nous allons vous montrer comment utiliser le code source C# de Aspose.Words pour .NET pour désactiver la rastérisation des éléments transformés lors de la conversion d'un document au format PCL.
+Aspose.Words for .NET est une bibliothèque puissante permettant de créer, manipuler et convertir des documents Word dans une application C#. Parmi les fonctionnalités offertes par Aspose.Words figure la possibilité de rastériser les éléments transformés lors de la conversion de documents vers différents formats. Dans ce guide, nous allons vous montrer comment utiliser le code source C# d'Aspose.Words for .NET pour désactiver la rastérisation des éléments transformés lors de la conversion d'un document au format PCL.
 
 ## Comprendre la bibliothèque Aspose.Words
 
-Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque populaire qui rend le traitement de mots avec des documents Word simple et efficace. Il offre un large éventail de fonctionnalités pour la création, l'édition et la conversion de documents Word, y compris la prise en charge de la pixellisation des éléments transformés lors de la conversion.
+Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque populaire qui rend le traitement de mots avec des documents Word facile et efficace. Il offre un large éventail de fonctionnalités pour créer, éditer et convertir des documents Word, notamment la prise en charge de la rastérisation des éléments transformés lors de la conversion.
 
 ## Chargement du document Word
 
@@ -22,7 +22,7 @@ La première étape consiste à charger le document Word que vous souhaitez conv
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Dans cet exemple, nous chargeons le document "Rendering.docx" situé dans le répertoire des documents.
+Dans cet exemple, nous chargeons le document "Rendering.docx" situé dans le répertoire documents.
 
 ## Configuration des options de sauvegarde
 
@@ -36,7 +36,7 @@ PclSaveOptions saveOptions = new PclSaveOptions
 };
 ```
 
-Nous créons un nouvel objet PclSaveOptions et définissons la propriété SaveFormat sur SaveFormat.Pcl pour spécifier que nous voulons enregistrer le document au format PCL. Ensuite, nous définissons la propriété RasterizeTransformedElements sur false pour désactiver la rastérisation des éléments transformés.
+Nous créons un nouvel objet PclSaveOptions et définissons la propriété SaveFormat sur SaveFormat.Pcl pour spécifier que nous souhaitons enregistrer le document au format PCL. Ensuite, nous définissons la propriété RasterizeTransformedElements sur false pour désactiver la rastérisation des éléments transformés.
 
 ## Conversion du document au format PCL
 
@@ -46,9 +46,9 @@ Maintenant que nous avons configuré les options de sauvegarde, nous pouvons pro
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
-Dans cet exemple, nous enregistrons le document converti sous "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" en utilisant les options d'enregistrement spécifiées.
+Dans cet exemple, nous enregistrons le document converti sous le nom « WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl » en utilisant les options d'enregistrement spécifiées.
 
-### Exemple de code source pour la fonctionnalité "Rasterize Transformed Elements" avec Aspose.Words pour .NET
+### Exemple de code source pour la fonctionnalité « Pixelliser les éléments transformés » avec Aspose.Words pour .NET
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
@@ -72,4 +72,4 @@ doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl",
 
 ## Conclusion
 
-Dans ce guide, nous avons expliqué comment utiliser Aspose.Words pour .NET pour désactiver la rastérisation des éléments transformés lors de la conversion d'un document au format PCL à l'aide du code source C# fourni. En suivant les étapes fournies, vous pouvez facilement contrôler le comportement de pixellisation des éléments transformés lors de la conversion de vos documents Word en différents formats. Aspose.Words offre une flexibilité et une puissance considérables pour travailler avec les éléments transformés, vous permettant de créer des documents convertis précisément selon vos besoins spécifiques.
+Dans ce guide, nous avons expliqué comment utiliser Aspose.Words pour .NET pour désactiver la rastérisation des éléments transformés lors de la conversion d'un document au format PCL à l'aide du code source C# fourni. En suivant les étapes fournies, vous pouvez facilement contrôler le comportement de rastérisation des éléments transformés lors de la conversion de vos documents Word vers différents formats. Aspose.Words offre une flexibilité et une puissance considérables pour travailler avec les éléments transformés, vous permettant de créer des documents convertis précisément selon vos besoins spécifiques.

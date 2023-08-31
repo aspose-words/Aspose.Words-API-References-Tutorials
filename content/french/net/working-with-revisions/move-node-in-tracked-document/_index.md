@@ -2,13 +2,13 @@
 title: Déplacer le nœud dans le document suivi
 linktitle: Déplacer le nœud dans le document suivi
 second_title: API de traitement de documents Aspose.Words
-description: Déplacez les nœuds dans un document suivi avec Aspose.Words pour .NET.
+description: Déplacez les nœuds dans un document suivi avec Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-revisions/move-node-in-tracked-document/
 ---
 
-Dans ce guide étape par étape, nous vous expliquerons comment déplacer un nœud dans un document Word suivi à l'aide de Aspose.Words pour .NET. Nous vous fournirons le code source complet et vous montrerons comment formater la sortie Markdown.
+Dans ce guide étape par étape, nous vous expliquerons comment déplacer un nœud dans un document Word suivi à l'aide d'Aspose.Words pour .NET. Nous vous fournirons le code source complet et vous montrerons comment formater la sortie markdown.
 
 ## Étape 1 : Création du document
 
@@ -28,7 +28,7 @@ Body body = doc.FirstSection.Body;
 Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
 ```
 
-## Étape 2 : Suivre les révisions
+## Étape 2 : Suivre les révisions
 
 Nous allons activer le suivi des révisions dans le document.
 
@@ -36,7 +36,7 @@ Nous allons activer le suivi des révisions dans le document.
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 ```
 
-## Étape 3 : Déplacer un nœud
+## Étape 3 : Déplacer un nœud
 
 Nous allons déplacer un nœud (paragraphe) d'une position à une autre tout en générant des révisions.
 
@@ -52,17 +52,17 @@ while (node != endNode)
 }
 ```
 
-## Étape 4 : Arrêtez de suivre les avis
+## Étape 4 : Arrêtez de suivre les avis
 
-Nous arrêterons de suivre les révisions dans le document.
+Nous cesserons de suivre les révisions dans le document.
 
 ```csharp
 doc.StopTrackRevisions();
 ```
 
-## Étape 5 : Enregistrer le document
+## Étape 5 : Sauvegarde du document
 
- Après avoir inséré le champ du formulaire de saisie de texte, enregistrez le document à l'emplacement souhaité à l'aide de la`Save` méthode. Assurez-vous de fournir le chemin d'accès au fichier approprié :
+ Après avoir inséré le champ du formulaire de saisie de texte, enregistrez le document à l'emplacement souhaité à l'aide du`Save` méthode. Assurez-vous de fournir le chemin de fichier approprié :
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -70,13 +70,13 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 
 
-### Exemple de code source pour Déplacer le nœud dans le document suivi à l'aide d'Aspose.Words pour .NET
+### Exemple de code source pour déplacer un nœud dans un document suivi à l'aide d'Aspose.Words pour .NET
 
-Voici le code source complet pour déplacer un nœud dans un document suivi à l'aide d'Aspose.Words pour .NET :
+Voici le code source complet pour déplacer un nœud dans un document suivi à l'aide d'Aspose.Words for .NET :
 
 
 ```csharp
-// Chemin d'accès au répertoire des documents.
+// Le chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -113,13 +113,13 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons appris à déplacer un nœud dans un document Word suivi à l'aide de Aspose.Words pour .NET. En suivant les étapes de création du document, d'activation du suivi des révisions, de déplacement du nœud et d'arrêt du suivi des révisions, nous avons pu effectuer cette manipulation avec succès. Aspose.Words pour .NET est un outil puissant pour le traitement de mots avec des documents Word et offre des fonctionnalités avancées pour la gestion des révisions. Vous pouvez désormais utiliser ces connaissances pour déplacer des nœuds dans vos propres documents Word tout en suivant les révisions à l'aide d'Aspose.Words pour .NET.
+Dans ce didacticiel, nous avons appris à déplacer un nœud dans un document Word suivi à l'aide d'Aspose.Words pour .NET. En suivant les étapes de création du document, d'activation du suivi des révisions, de déplacement du nœud et d'arrêt du suivi des révisions, nous avons pu effectuer cette manipulation avec succès. Aspose.Words for .NET est un outil puissant pour le traitement de mots avec des documents Word et offre des fonctionnalités avancées pour gérer les révisions. Vous pouvez désormais utiliser ces connaissances pour déplacer des nœuds dans vos propres documents Word tout en suivant les révisions à l'aide d'Aspose.Words pour .NET.
 
 ### FAQ
 
-#### Q : Comment puis-je activer le suivi des révisions dans un document Aspose.Words pour .NET ?
+#### Q : Comment puis-je activer le suivi des révisions dans un document Aspose.Words for .NET ?
 
- : Pour activer le suivi des révisions dans un document Aspose.Words pour .NET, vous pouvez utiliser le`StartTrackRevisions` méthode de la`Document` objet. Cette méthode prend comme paramètres le nom de l'auteur des révisions et la date de début du suivi des révisions.
+R : Pour activer le suivi des révisions dans un document Aspose.Words for .NET, vous pouvez utiliser l'outil`StartTrackRevisions` méthode du`Document` objet. Cette méthode prend en paramètres le nom de l'auteur des révisions et la date de début du suivi des révisions.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### Q : Comment puis-je déplacer un nœud dans un document suivi sans générer de révisions ?
 
- R : Si vous souhaitez déplacer un nœud dans un document suivi sans générer de révisions, vous pouvez utiliser l'outil`Remove` et`InsertAfter` ou`InsertBefore` méthodes de la`Node` objet. Par exemple, pour déplacer un paragraphe après un autre paragraphe, vous pouvez utiliser le code suivant :
+ R : Si vous souhaitez déplacer un nœud dans un document suivi sans générer de révisions, vous pouvez utiliser l'option`Remove` et`InsertAfter` ou`InsertBefore` méthodes du`Node` objet. Par exemple, pour déplacer un paragraphe après un autre paragraphe, vous pouvez utiliser le code suivant :
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
@@ -136,9 +136,9 @@ nodeToMove.Remove();
 document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
 ```
 
-#### Q : Comment puis-je arrêter le suivi des révisions dans un document Aspose.Words pour .NET ?
+#### Q : Comment puis-je arrêter le suivi des révisions dans un document Aspose.Words for .NET ?
 
- R : Pour arrêter le suivi des révisions dans un document Aspose.Words pour .NET, vous pouvez utiliser le`StopTrackRevisions` méthode de la`Document` objet.
+ R : Pour arrêter le suivi des révisions dans un document Aspose.Words for .NET, vous pouvez utiliser l'outil`StopTrackRevisions` méthode du`Document` objet.
 
 ```csharp
 doc.StopTrackRevisions();

@@ -1,18 +1,18 @@
 ---
-title: otomatik bağlantı
-linktitle: otomatik bağlantı
-second_title: Aspose.Words Belge İşleme API'sı
+title: Otomatik bağlantı
+linktitle: Otomatik bağlantı
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile otomatik bağlantı eklemeyi öğrenin Adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/autolink/
 ---
 
-Bu örnekte "Autolink" özelliğinin Aspose.Words for .NET ile nasıl kullanılacağını açıklayacağız. Bu özellik, belgenize otomatik olarak köprüler eklemenizi sağlar.
+Bu örnekte Aspose.Words for .NET ile "Otomatik Bağlantı" özelliğinin nasıl kullanılacağını açıklayacağız. Bu özellik, belgenize otomatik olarak köprüler eklemenizi sağlar.
 
-## 1. Adım: Bir belge oluşturucu kullanma
+## 1. Adım: Belge oluşturucuyu kullanma
 
-İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
+Öncelikle belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
@@ -20,15 +20,15 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. Adım: Köprü ekleme
 
- kullanarak bir köprü ekleyebiliriz.`InsertHyperlink` belge üreteci yöntemi. Bağlantı için görüntülenecek URL'yi ve metni belirliyoruz.
+ kullanarak bir köprü ekleyebiliriz.`InsertHyperlink` belge oluşturucu yöntemi. Bağlantı için görüntülenecek URL'yi ve metni belirtiyoruz.
 
 ```csharp
-builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", yanlış);
+builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 ```
 
 ## 3. Adım: Bağlantı olarak bir e-posta adresi ekleme
 
-Ayrıca "mailto:" önekini kullanarak bir e-posta adresini bağlantı olarak ekleyebiliriz. Bu, kullanıcıların varsayılan e-posta istemcilerini açmak için bağlantıyı tıklamasına olanak tanır.
+Ayrıca "mailto:" önekini kullanarak bağlantı olarak bir e-posta adresi de ekleyebiliriz. Bu, kullanıcıların varsayılan e-posta istemcilerini açmak için bağlantıya tıklamalarına olanak tanır.
 
 ```csharp
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
@@ -42,28 +42,28 @@ Son olarak belgeyi istediğimiz formatta kaydedebiliriz.
 
 
 ```csharp
-// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+// Belgeye içerik eklemek için belge oluşturucuyu kullanın.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Köprü ekle.
-builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", yanlış);
+builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
 
-Tebrikler! Artık "Autolink" özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
+Tebrikler! Artık Aspose.Words for .NET ile "Otomatik Bağlantı" özelliğini nasıl kullanacağınızı öğrendiniz.
 
 
-### SSS
+### SSS'ler
 
 #### S: Aspose.Words'te bir URL adresine nasıl otomatik bağlantı oluşturabilirim?
 
- Y: Aspose.Words'te bir URL adresine otomatik bağlantı oluşturmak için`<a>` ile etiketle`href` URL adresini içeren özellik. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com">https://www.aspose.com</a>` "https://www.aspose.com"a otomatik olarak bağlanmak için.
+ C: Aspose.Words'te bir URL adresine otomatik bağlantı oluşturmak için`<a>` ile etiketleyin`href` URL adresini içeren özellik. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com">https://www.aspose.com</a>` "https: //www.aspose.com" adresine otomatik olarak bağlanmak için.
 
-#### S: Aspose.Words'te bir otomatik bağlantının ekran metnini özelleştirmek mümkün mü?
+#### S: Aspose.Words'te otomatik bir bağlantının görüntü metnini özelleştirmek mümkün mü?
 
- C: Evet, Aspose.Words'te bir otomatik bağlantının görüntü metnini özelleştirebilirsiniz. Görünen metin olarak URL adresini kullanmak yerine, URL adresleri arasındaki içeriği değiştirerek başka herhangi bir metni kullanabilirsiniz.`<a>` etiketler. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com">Click here</a>` "Buraya tıklayın" metnini otomatik bağlantı olarak görüntülemek için.
+ C: Evet, Aspose.Words'te otomatik bağlantının görüntü metnini özelleştirebilirsiniz. Görünen metin olarak URL adresini kullanmak yerine, içeriği aşağıdaki metinle değiştirerek başka bir metni kullanabilirsiniz:`<a>` Etiketler. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com">Click here</a>` "Buraya tıklayın" metnini otomatik bağlantı olarak görüntülemek için.
 
-#### S: Aspose.Words'ta bir otomatik bağlantıya nasıl ek nitelikler ekleyebilirim?
+#### S: Aspose.Words'teki bir otomatik bağlantıya nasıl ek özellikler ekleyebilirim?
 
-C: Aspose.Words'te bir otomatik bağlantıya ek nitelikler eklemek için, ek HTML niteliklerini Aspose.Words içinde kullanabilirsiniz.`<a>` etiket. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com" target="_blank">Link</a>` kullanarak bağlantıyı yeni bir pencerede veya sekmede açmak için` attribute target="_blank"`.
+C: Aspose.Words'te otomatik bir bağlantıya ek özellikler eklemek için, ek HTML özelliklerini kullanabilirsiniz.`<a>` etiket. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com" target="_blank">Link</a>` Bağlantıyı yeni bir pencerede veya sekmede açmak için` attribute target="_blank"`.

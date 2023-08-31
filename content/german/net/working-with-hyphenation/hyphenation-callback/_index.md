@@ -56,7 +56,7 @@ finally
 
 Dadurch wird die Silbentrennungserinnerung nach Abschluss der Verarbeitung bereinigt und deaktiviert.
 
-So ! Sie haben den Silbentrennungs-Callback in Aspose.Words für .NET erfolgreich verwendet.
+Also ! Sie haben den Silbentrennungs-Callback in Aspose.Words für .NET erfolgreich verwendet.
 
 ### Beispielquellcode für Silbentrennungsrückruf mit Aspose.Words für .NET
 

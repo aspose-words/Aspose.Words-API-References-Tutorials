@@ -1,19 +1,19 @@
 ---
-title: Biçim 1Bpp Dizine Alınmış
-linktitle: Biçim 1Bpp Dizine Alınmış
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile indekslenen 1 bpp'lik görüntülerin nasıl formatlanacağını öğrenin. Düşük renk derinliğine sahip görüntüler için eksiksiz öğretici.
+title: 1Bpp Dizine Alınmış Biçim
+linktitle: 1Bpp Dizine Alınmış Biçim
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile indekslenmiş görüntüleri 1 bpp'lik formatta nasıl formatlayacağınızı öğrenin. Düşük renk derinliğine sahip görüntüler için eğitimi tamamlayın.
 type: docs
 weight: 10
 url: /tr/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
-Bu eğitimde, Aspose.Words for .NET ile "Format 1Bpp Indexed" işlevi için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, bir belgedeki görüntüleri piksel başına 1 bit (1 bpp) renk derinliği ve dizinlenmiş renk modu ile PNG biçiminde biçimlendirmenize olanak tanır.
+Bu eğitimde Aspose.Words for .NET ile "Format 1Bpp Indexed" işlevi için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, bir belgedeki görüntüleri piksel başına 1 bit (1 bpp) renk derinliği ve indekslenmiş renk modu ile PNG formatında formatlamanıza olanak tanır.
 
 ## 1. Adım: Ortamı ayarlama
 
-Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
+Başlamadan önce Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## 2. Adım: Belgeyi yükleme
+## Adım 2: Belgeyi yükleme
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Bu adımda, kullanarak belgeyi yüklüyoruz`Document` yöntemi ve yolu yüklenecek DOCX dosyasına geçirme.
+ Bu adımda belgeyi aşağıdaki komutu kullanarak yüklüyoruz:`Document` yöntemi ve yüklenecek DOCX dosyasının yolunu iletme.
 
 ## 3. Adım: Görüntü yedekleme seçeneklerini yapılandırın
 
@@ -35,7 +35,7 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
 };
 ```
 
- Bu adımda, görüntüler için yedekleme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`ImageSaveOptions`istenen kaydetme biçimini belirten nesne, PNG biçimi için burada "Png". Ayrıca görüntüye dahil edilecek sayfayı, siyah beyaz renk modunu ve indekslenmiş 1 bpp piksel formatını da tanımlıyoruz.
+ Bu adımda imajlar için yedekleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`ImageSaveOptions`İstenilen kaydetme biçimini belirten nesne, burada PNG biçimi için "Png" bulunur. Ayrıca görsele dahil edilecek sayfayı, siyah beyaz renk modunu ve indekslenmiş 1 bpp piksel formatını da tanımlıyoruz.
 
 ## 4. Adım: Görüntüleri yedekleme
 
@@ -43,11 +43,11 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
 doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);
 ```
 
- Bu son adımda, belge resimlerini kullanarak PNG formatında kaydediyoruz.`Save` yöntemi ve yolu, belirtilen kaydetme seçenekleriyle birlikte çıktı dosyasına geçirme.
+ Bu son adımda belge görsellerini PNG formatında kaydediyoruz.`Save` yöntemini kullanarak ve belirtilen kaydetme seçenekleriyle birlikte çıktı dosyasına giden yolu iletebilirsiniz.
 
-Artık belge görüntülerini PNG biçiminde, 1 bpp'lik bir renk derinliğiyle dizine eklenmiş olarak biçimlendirmek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithImageSaveOptions.Format1BppIndexed.Png" adıyla belirtilen dizine kaydedilecektir.
+Artık belge görüntülerini PNG formatında, indekslenmiş 1 bpp renk derinliğiyle biçimlendirmek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithImageSaveOptions.Format1BppIndexed.Png" adıyla belirtilen dizine kaydedilecektir.
 
-### Aspose.Words for .NET kullanılarak İndekslenen Format 1Bpp için örnek kaynak kodu
+### Aspose.Words for .NET kullanılarak İndekslenmiş Format 1Bpp için örnek kaynak kodu
 
 ```csharp 
  
@@ -70,8 +70,8 @@ Artık belge görüntülerini PNG biçiminde, 1 bpp'lik bir renk derinliğiyle d
 
 ### Çözüm
 
-Bu eğitimde, Aspose.Words for .NET ile 1Bpp Dizinlenmiş biçim özelliğini inceledik. Bir belgedeki görüntüleri piksel başına 1 bit (1 bpp) renk derinliği ve dizinlenmiş renk modu ile PNG biçiminde nasıl biçimlendireceğimizi öğrendik.
+Bu eğitimde Aspose.Words for .NET ile 1Bpp Indexed format özelliğini inceledik. PNG formatındaki bir belgedeki görüntüleri piksel başına 1 bit (1 bpp) renk derinliği ve indekslenmiş renk modu ile nasıl formatlayacağımızı öğrendik.
 
-Bu özellik, düşük renk derinliğine ve küçük dosya boyutuna sahip görüntüler elde etmek istediğinizde kullanışlıdır. 1Bpp İndekslenmiş format, bazı özel uygulamalar için faydalı olabilecek indekslenmiş bir renk paleti kullanılarak görüntülerin temsil edilmesini sağlar.
+Bu özellik, düşük renk derinliğine ve küçük dosya boyutuna sahip görüntüler elde etmek istediğinizde kullanışlıdır. 1Bpp İndekslenmiş format, görüntülerin indekslenmiş bir renk paleti kullanılarak temsil edilmesine olanak tanır ve bu, bazı özel uygulamalar için yararlı olabilir.
 
-Aspose.Words for .NET, belge işleme ve oluşturma için çok çeşitli gelişmiş özellikler sunar. 1Bpp Dizinlenmiş format, kullanımınıza sunduğu birçok güçlü araçtan biridir.
+Aspose.Words for .NET, belge işleme ve oluşturma için çok çeşitli gelişmiş özellikler sunar. 1Bpp İndekslenmiş format, kullanımınıza sunduğu birçok güçlü araçtan biridir.

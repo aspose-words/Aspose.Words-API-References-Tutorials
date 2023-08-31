@@ -72,7 +72,7 @@ catch (Exception e)
 
 ## Slutsats
 
-Att lägga till vanliga frågor i handledningar förbättrar inlärningsupplevelsen för användarna avsevärt. Den tar upp vanliga frågor, förbättrar användarens engagemang och hjälper till att klargöra tvivel och missuppfattningar. Genom att inkludera vanliga frågor i handledningarna, t
+Att lägga till vanliga frågor i handledningar förbättrar inlärningsupplevelsen för användarna avsevärt. Den tar upp vanliga frågor, förbättrar användarens engagemang och hjälper till att klargöra tvivel och missuppfattningar. Genom att inkludera vanliga frågor i tutorials, t
 
 ### FAQ's
 

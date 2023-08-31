@@ -8,11 +8,11 @@ weight: 10
 url: /fr/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
 
-Dans ce didacticiel, nous vous guiderons à travers le code source C # pour exporter des informations aller-retour à partir d'un document avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'inclure des informations aller-retour dans le fichier HTML exporté, ce qui facilite la récupération des modifications apportées au document d'origine.
+Dans ce didacticiel, nous vous guiderons à travers le code source C# pour exporter les informations aller-retour à partir d'un document avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'inclure des informations aller-retour dans le fichier HTML exporté, ce qui facilite la récupération des modifications apportées au document d'origine.
 
-## Étape 1 : configuration du projet
+## Étape 1 : Configuration du projet
 
-Pour commencer, créez un nouveau projet C# dans votre IDE préféré. Assurez-vous que la bibliothèque Aspose.Words pour .NET est référencée dans votre projet.
+Pour commencer, créez un nouveau projet C# dans votre IDE préféré. Assurez-vous que la bibliothèque Aspose.Words for .NET est référencée dans votre projet.
 
 ## Étape 2 : Chargement du document
 
@@ -23,17 +23,17 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Ce code crée une instance de`Document` en chargeant le document depuis le répertoire spécifié.
+ Ce code crée une instance de`Document` en chargeant le document à partir du répertoire spécifié.
 
-## Étape 3 : Configuration des options de sauvegarde HTML
+## Étape 3 : Configuration des options de sauvegarde HTML
 
-Nous allons maintenant configurer les options d'enregistrement HTML pour exporter les informations d'aller-retour du document. Utilisez le code suivant :
+Nous allons maintenant configurer les options de sauvegarde HTML pour exporter les informations aller-retour du document. Utilisez le code suivant :
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Ce code crée une instance de`HtmlSaveOptions`et fixe le`ExportRoundtripInformation` possibilité de`true` pour inclure les informations d'aller-retour lors de l'exportation.
+ Ce code crée une instance de`HtmlSaveOptions`et définit le`ExportRoundtripInformation` possibilité de`true` pour inclure des informations aller-retour lors de l’exportation.
 
 ## Étape 4 : Conversion et enregistrement du document au format HTML
 
@@ -43,14 +43,14 @@ Enfin, nous convertirons le document en HTML en utilisant les options d'enregist
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
 ```
 
-Ce code convertit le document au format HTML, y compris les informations d'aller-retour, et enregistre le fichier HTML exporté dans le répertoire spécifié.
+Ce code convertit le document en HTML, y compris les informations aller-retour, et enregistre le fichier HTML exporté dans le répertoire spécifié.
 
-### Exemple de code source pour l'exportation d'informations aller-retour à l'aide d'Aspose.Words pour .NET
+### Exemple de code source pour exporter des informations aller-retour à l'aide d'Aspose.Words pour .NET
 
 
 ```csharp
 
-	// Chemin d'accès au répertoire des documents.
+	// Le chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -60,4 +60,4 @@ Ce code convertit le document au format HTML, y compris les informations d'aller
 
 ```
 
- Assurez-vous de spécifier le chemin d'accès correct au répertoire de documents dans le`dataDir` variable.
+ Assurez-vous de spécifier le chemin correct vers le répertoire des documents dans le`dataDir` variable.

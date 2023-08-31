@@ -59,13 +59,13 @@ public class DocumentMerger {
 
 合并文档时，可能会出现源文档的样式和格式冲突的情况。 Aspose.Words for Java 提供了几种导入格式模式来处理此类情况：
 
-- `ImportFormatMode.KEEP_SOURCE_FORMATTING`： 
+- `ImportFormatMode.KEEP_SOURCE_FORMATTING`: 
 保留源文档的格式。
 
-- `ImportFormatMode.USE_DESTINATION_STYLES`： 
+- `ImportFormatMode.USE_DESTINATION_STYLES`: 
 应用目标文档的样式。
 
-- `ImportFormatMode.KEEP_DIFFERENT_STYLES`： 
+- `ImportFormatMode.KEEP_DIFFERENT_STYLES`: 
 保留源文档和目标文档之间不同的样式。
 
 根据您的合并需求选择合适的导入格式模式。
@@ -101,13 +101,13 @@ public class DocumentMerger {
 
 有时，有必要在合并的文档之间插入分页符或分节符以保持正确的文档结构。 Aspose.Words 提供了在合并期间插入分隔符的选项：
 
-- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`：
+- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`:
 合并文档，没有任何中断。
 
-- `doc1.appendDocument(doc2, ImportFormatMode.USE_DESTINATION_STYLES);`： 
+- `doc1.appendDocument(doc2, ImportFormatMode.USE_DESTINATION_STYLES);`: 
 在文档之间插入连续分隔符。
 
-- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_DIFFERENT_STYLES);`： 
+- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_DIFFERENT_STYLES);`: 
 当文档之间的样式不同时插入分页符。
 
 根据您的具体要求选择合适的方法。

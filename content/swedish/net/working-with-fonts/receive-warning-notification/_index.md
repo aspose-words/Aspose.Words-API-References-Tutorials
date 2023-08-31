@@ -32,7 +32,7 @@ doc. WarningCallback = callback;
 ```
 
 ## Steg 3: Uppdatera layouten och spara dokumentet
- Uppdatera dokumentlayouten genom att anropa`UpdatePageLayout()` metod. Detta utlöser eventuella varningar. Spara sedan dokumentet.
+ Uppdatera dokumentlayouten genom att anropa`UpdatePageLayout()` metod. Detta kommer att utlösa varningarna, om några. Spara sedan dokumentet.
 
 ```csharp
 doc.UpdatePageLayout();

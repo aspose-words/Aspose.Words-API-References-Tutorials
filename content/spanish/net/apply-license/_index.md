@@ -1,7 +1,7 @@
 ---
 title: Aplicar licencia
 linktitle: Aplicar licencia
-second_title: API de procesamiento de documentos de Aspose.Words
+second_title: API de procesamiento de documentos Aspose.Words
 description: Obtenga instrucciones paso a paso para aplicar una licencia de Aspose.Words en sus proyectos .NET. Siga los pasos para habilitar la funcionalidad completa de la biblioteca Aspose.Words.
 type: docs
 weight: 10
@@ -13,6 +13,6 @@ Esta página proporciona una guía detallada sobre cómo aplicar una licencia en
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Aplicar licencia desde archivo](./apply-license-from-file/) | Aprenda a aplicar una licencia desde un archivo usando Aspose.Words para .NET.|
-| [Aplicar licencia desde flujo](./apply-license-from-stream/) | Aprenda a aplicar una licencia desde una transmisión usando Aspose.Words para .NET.|
-| [Aplicar licencia medida](./apply-metered-license/) | Aprenda a aplicar una licencia medida usando Aspose.Words para .NET. |
+| [Aplicar licencia desde archivo](./apply-license-from-file/) | Aprenda cómo aplicar una licencia desde un archivo usando Aspose.Words para .NET.|
+| [Aplicar licencia desde Stream](./apply-license-from-stream/) | Aprenda cómo aplicar una licencia desde una secuencia usando Aspose.Words para .NET.|
+| [Aplicar licencia medida](./apply-metered-license/) | Aprenda cómo aplicar una licencia medida usando Aspose.Words para .NET. |

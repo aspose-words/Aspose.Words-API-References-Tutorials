@@ -1,24 +1,24 @@
 ---
-title: Costruisci tavolo con stile
-linktitle: Costruisci tavolo con stile
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Guida dettagliata alla creazione di una tabella con uno stile personalizzato utilizzando Aspose.Words per .NET.
+title: Costruisci un tavolo con stile
+linktitle: Costruisci un tavolo con stile
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Guida passo passo per creare una tabella con uno stile personalizzato utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/build-table-with-style/
 ---
 
-In questo tutorial, ti guideremo attraverso il processo passo-passo per creare una tabella con stili utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come creare una tabella con uno stile personalizzato nei tuoi documenti Word utilizzando Aspose.Words per .NET.
+In questo tutorial ti guideremo attraverso il processo passo passo per creare una tabella con stili utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come creare una tabella con uno stile personalizzato nei tuoi documenti Word utilizzando Aspose.Words per .NET.
 
 ## Passaggio 1: definire la directory dei documenti
-Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento Word modificato. Sostituisci "LA TUA CARTELLA DEI DOCUMENTI" con il percorso appropriato.
+Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento Word modificato. Sostituisci "DIRECTORY DOCUMENTI" con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Passaggio 2: creare un nuovo documento e un generatore di documenti
- Successivamente, è necessario creare una nuova istanza del file`Document` class e un costruttore di documenti per quel documento.
+## Passaggio 2: crea un nuovo documento e un generatore di documenti
+ Successivamente, è necessario creare una nuova istanza del file`Document` classe e un costruttore di documenti per quel documento.
 
 ```csharp
 Document doc = new Document();
@@ -26,15 +26,15 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Passaggio 3: inizia una nuova tabella e inserisci una cella
- Per iniziare a costruire la tabella, usiamo il`StartTable()` metodo del generatore di documenti, quindi inseriamo una cella nella tabella utilizzando il`InsertCell()` metodo.
+ Per iniziare a costruire la tabella, usiamo il file`StartTable()` del generatore di documenti, quindi inseriamo una cella nella tabella utilizzando il metodo`InsertCell()` metodo.
 
 ```csharp
 Table table = builder. StartTable();
 builder. InsertCell();
 ```
 
-## Passaggio 4: definire lo stile della tabella
- Ora possiamo impostare lo stile della tabella usando il`StyleIdentifier` proprietà. In questo esempio, stiamo usando lo stile "MediumShading1Accent1".
+## Passaggio 4: Definire lo stile della tabella
+ Ora possiamo impostare lo stile della tabella utilizzando il comando`StyleIdentifier` proprietà. In questo esempio utilizziamo lo stile "MediumShading1Accent1".
 
 ```csharp
 table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
@@ -47,17 +47,17 @@ table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
 table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
 ```
 
-## Passaggio 6: regola automaticamente le dimensioni del tavolo
- Per regolare automaticamente la dimensione dell'array in base al suo contenuto, usiamo il file`AutoFit()` metodo con il`AutoFitBehavior.AutoFitToContents` comportamento.
+## Passaggio 6: regola automaticamente le dimensioni della tabella
+ Per regolare automaticamente la dimensione dell'array in base al suo contenuto, utilizziamo il file`AutoFit()` metodo con il`AutoFitBehavior.AutoFitToContents` comportamento.
 
 ```csharp
 table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Passaggio 7: aggiungi contenuto alle celle
- Ora possiamo aggiungere contenuto alle celle usando il`Writeln()` E`InsertCell()` metodi del costruttore di documenti. In questo esempio, aggiungiamo le intestazioni per "Articolo" e "Quantità (
+ Ora possiamo aggiungere contenuto alle celle utilizzando il file`Writeln()` E`InsertCell()` metodi del costruttore di documenti. In questo esempio aggiungiamo le intestazioni per "Articolo" e "Quantità (
 
-kg)" e i relativi dati.
+kg)" e i dati corrispondenti.
 
 ```csharp
 builder.Writeln("Item");
@@ -82,16 +82,16 @@ builder.Writeln("50");
 builder. EndRow();
 ```
 
-## Passaggio 8: salvare il documento modificato
+## Passaggio 8: salva il documento modificato
 Infine, salviamo il documento modificato in un file. È possibile scegliere un nome e una posizione appropriati per il documento di output.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
-Congratulazioni! Ora hai creato una tabella con uno stile personalizzato utilizzando Aspose.Words per .NET.
+Congratulazioni! Ora hai creato una tabella con stile personalizzato utilizzando Aspose.Words per .NET.
 
-### Esempio di codice sorgente per Build Table With Style utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per Crea tabella con stile utilizzando Aspose.Words per .NET 
 
 ```csharp
 	//Percorso della directory dei documenti
@@ -104,7 +104,7 @@ Congratulazioni! Ora hai creato una tabella con uno stile personalizzato utilizz
 	builder.InsertCell();
 	// Imposta lo stile della tabella utilizzato in base all'identificatore di stile univoco.
 	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	// Applicare quali funzionalità devono essere formattate dallo stile.
+	// Applica le funzionalità che devono essere formattate in base allo stile.
 	table.StyleOptions =
 		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
 	table.AutoFit(AutoFitBehavior.AutoFitToContents);
@@ -132,4 +132,4 @@ Congratulazioni! Ora hai creato una tabella con uno stile personalizzato utilizz
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come creare una tabella con stili utilizzando Aspose.Words per .NET. Seguendo questa guida passo-passo, puoi facilmente personalizzare lo stile delle tue tabelle nei tuoi documenti Word. Aspose.Words offre un'API potente e flessibile per la manipolazione e la formattazione delle tabelle nei tuoi documenti. Con questa conoscenza, puoi migliorare la presentazione visiva dei tuoi documenti Word e soddisfare esigenze specifiche.
+In questo tutorial, abbiamo imparato come creare una tabella con stile utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo, puoi personalizzare facilmente lo stile delle tabelle nei tuoi documenti Word. Aspose.Words offre un'API potente e flessibile per manipolare e formattare le tabelle nei tuoi documenti. Con questa conoscenza, puoi migliorare la presentazione visiva dei tuoi documenti Word e soddisfare esigenze specifiche.

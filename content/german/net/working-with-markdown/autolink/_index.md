@@ -66,4 +66,4 @@ Herzlichen Glückwunsch! Sie haben nun gelernt, wie Sie die Funktion „Autolink
 
 #### F: Wie kann ich einem Autolink in Aspose.Words zusätzliche Attribute hinzufügen?
 
-A: Um einem automatischen Link in Aspose.Words zusätzliche Attribute hinzuzufügen, können Sie zusätzliche HTML-Attribute innerhalb von verwenden`<a>` Schild. Sie können zum Beispiel verwenden`<a href="https://www.aspose.com" target="_blank">Link</a>` um den Link in einem neuen Fenster oder Tab zu öffnen` attribute target="_blank"`.
+A: Um einem automatischen Link in Aspose.Words zusätzliche Attribute hinzuzufügen, können Sie zusätzliche HTML-Attribute innerhalb von verwenden`<a>` Etikett. Sie können zum Beispiel verwenden`<a href="https://www.aspose.com" target="_blank">Link</a>` um den Link in einem neuen Fenster oder Tab zu öffnen` attribute target="_blank"`.

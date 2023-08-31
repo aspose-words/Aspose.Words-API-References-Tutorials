@@ -1,24 +1,24 @@
 ---
 title: Alan Görüntüleme Sonuçları
 linktitle: Alan Görüntüleme Sonuçları
-second_title: Aspose.Words Belge İşleme API'sı
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile Word belgelerinizde alan sonuçlarını görüntülemek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/field-display-results/
 ---
 
-Aspose.Words for .NET'in "Alan Sonuçlarını Göster" özelliğini kullanan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
+Aşağıda Aspose.Words for .NET'in "Alan Sonuçlarını Göster" özelliğini kullanan C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. İstediğiniz sonuçları elde etmek için her adımı dikkatlice takip ettiğinizden emin olun.
 
-## 1. Adım: Belge Dizini Kurulumu
+## Adım 1: Belge Dizini Kurulumu
 
-Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
+Verilen kodda belgelerinizin dizinini belirtmelisiniz. "BELGE DİZİNİNİZ" değerini, belge dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## 2. Adım: Belgeyi yükleme
+## Adım 2: Belgeyi yükleme
 
 İlk adım, alan sonuçlarını görüntülemek istediğiniz belgeyi yüklemektir.
 
@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document document = new Document(dataDir + "Miscellaneous fields.docx");
 ```
 
-"Miscellaneous Fields.docx" dosyasını kendi dosyanızın adıyla değiştirdiğinizden emin olun.
+"Çeşitli Alanlar.docx" dosyasını kendi dosyanızın adıyla değiştirdiğinizden emin olun.
 
 ## 3. Adım: Alanları güncelleyin
 
@@ -36,18 +36,18 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 document. UpdateFields();
 ```
 
-Bu adım önemlidir, çünkü saha sonuçlarının doğru bir şekilde görüntülenmesini sağlar.
+Bu adım önemlidir çünkü saha sonuçlarının doğru şekilde görüntülenmesini sağlar.
 
-## 4. Adım: Alan Sonuçlarını Görüntüleme
+## Adım 4: Alan Sonuçlarını Görüntüleme
 
- biz bir`foreach` belgedeki tüm alanlar arasında geçiş yapmak ve bunların sonuçlarını görüntülemek için döngü.
+ Bir kullanıyoruz`foreach` Belgedeki tüm alanlar arasında geçiş yapmak ve sonuçlarını görüntülemek için döngü.
 
 ```csharp
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
- Döngünün her yinelemesinde,`DisplayResult` Görüntülenen sonucu almak için alanın özelliği.
+ Döngünün her yinelemesinde, şuraya erişiriz:`DisplayResult` Görüntülenen sonucu almak için alanın özelliğini kullanın.
 
 ### Aspose.Words for .NET ile Alan Sonuçlarını Görüntülemek için Kaynak Kodu Örneği
 
@@ -66,24 +66,24 @@ foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
-Bu örnekte, bir belge yükledik, tüm alanları güncelledik ve ardından sonuçlarını görüntülemek için alanlar arasında geçiş yaptık. Saha sonuçlarını işlemek için kendi mantığınızı kullanarak bu adımı özelleştirebilirsiniz.
+Bu örnekte, bir belge yükledik, tüm alanları güncelledik ve ardından sonuçları görüntülemek için alanlar arasında dolaştık. Saha sonuçlarını işlemek için bu adımı kendi mantığınızı kullanarak özelleştirebilirsiniz.
 
-Bu, "Alan Sonuçlarını Göster" özelliğini Aspose.Words for .NET ile kullanma kılavuzumuzu sonlandırıyor.
+Bu, Aspose.Words for .NET ile "Alan Sonuçlarını Göster" özelliğini kullanma kılavuzumuzu tamamlıyor.
 
-### SSS
+### SSS'ler
 
 #### S: Aspose.Words'te sonuç görüntüleme alanı nedir?
 
-C: Aspose.Words'teki bir sonuç görüntüleme alanı, bir Word belgesindeki bir işlemin veya hesaplamanın sonucunu görüntüleyen bir alan türüdür. Örneğin, birkaç değerin toplamını veya bir matematiksel formülün sonucunu görüntülemek için bir sonuç görüntüleme alanı kullanılabilir.
+C: Aspose.Words'teki sonuç görüntüleme alanı, Word belgesindeki bir işlemin veya hesaplamanın sonucunu görüntüleyen bir alan türüdür. Örneğin, bir sonuç görüntüleme alanı, birkaç değerin toplamını veya bir matematiksel formülün sonucunu görüntülemek için kullanılabilir.
 
 #### S: Aspose.Words ile bir Word belgesindeki sonuç görüntüleme alanı nasıl güncellenir?
 
-C: Bir Word belgesindeki sonuç görüntüleme alanını Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem, belgede döngü halinde dolaşır ve sonuç görüntüleme alanları da dahil olmak üzere tüm alanları güncelleyerek değerleri mevcut verilere göre yeniden hesaplar.
+C: Bir Word belgesindeki sonuç görüntüleme alanını Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem belgede döngü yapar ve sonuç görüntüleme alanları da dahil olmak üzere tüm alanları günceller ve değerleri mevcut verilere göre yeniden hesaplar.
 
-#### S: Sonuç görüntüleme alanında görüntülenen sonucu biçimlendirebilir miyim?
+#### S: Sonuç görüntüleme alanı tarafından görüntülenen sonucu biçimlendirebilir miyim?
 
-C: Evet, biçimi belirtmek için uygun sözdizimini kullanarak bir sonuç görüntüleme alanı tarafından görüntülenen sonucu biçimlendirebilirsiniz. Örneğin, sayıları belirli sayıda ondalık basamakla biçimlendirebilir veya özel tarih biçimleri kullanabilirsiniz.
+C: Evet, bir sonuç görüntüleme alanı tarafından görüntülenen sonucu, formatı belirlemek için uygun sözdizimini kullanarak formatlayabilirsiniz. Örneğin, sayıları belirli sayıda ondalık basamakla biçimlendirebilir veya özel tarih biçimlerini kullanabilirsiniz.
 
-#### S: Bir sonuç görüntüleme alanını Aspose.Words ile bir Word belgesinden nasıl kaldırabilirim?
+#### S: Aspose.Words ile bir Word belgesinden sonuç görüntüleme alanını nasıl kaldırabilirim?
 
-C: Bir sonuç görüntüleme alanını Aspose.Words ile bir Word belgesinden kaldırmak için Remove yöntemini kullanabilirsiniz. Bu yöntem, alanı kaldırır ve statik sonucuyla değiştirir.
+C: Aspose.Words ile bir Word belgesinden sonuç görüntüleme alanını kaldırmak için Kaldır yöntemini kullanabilirsiniz. Bu yöntem alanı kaldırır ve onu statik sonucuyla değiştirir.

@@ -1,14 +1,14 @@
 ---
 title: Belge Başlığını Pencere Başlık Çubuğunda Görüntüle
 linktitle: Belge Başlığını Pencere Başlık Çubuğunda Görüntüle
-second_title: Aspose.Words Belge İşleme API'sı
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile PDF'ye dönüştürürken belge başlığını pencere başlık çubuğunda nasıl görüntüleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titlebar/
 ---
 
-Bu öğreticide, Aspose.Words for .NET ile belge başlığını pencere başlık çubuğunda görüntüleme adımlarında size rehberlik edeceğiz. Bu özellik, oluşturulan PDF belgesini açtığınızda belge başlığını pencere başlık çubuğunda görüntülemenizi sağlar. Aşağıdaki adımları takip et:
+Bu eğitimde, Aspose.Words for .NET ile belge başlığını pencere başlık çubuğunda görüntüleme adımlarında size rehberlik edeceğiz. Bu özellik, oluşturulan PDF belgesini açtığınızda belge başlığını pencere başlık çubuğunda görüntülemenize olanak tanır. Aşağıdaki adımları takip et:
 
 ## 1. Adım: Belgeyi yükleme
 
@@ -19,7 +19,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Belgenize giden doğru yolu belirttiğinizden emin olun.
+Belgenizin doğru yolunu belirttiğinizden emin olun.
 
 ## 2. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
 
@@ -33,7 +33,7 @@ Bu seçenek, PDF'ye dönüştürürken belge başlığının pencere başlık ç
 
 ## 3. Adım: Belgeyi PDF'ye Dönüştürün
 
- Kullan`Save` dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi:
+ Kullan`Save` Dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
@@ -41,9 +41,9 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pd
 
 Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
 
-### Aspose.Words for .NET kullanarak Belge Başlığını Pencere Başlık Çubuğunda Göster için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak Belge Başlığını Pencere Başlık Çubuğunda Görüntülemek için örnek kaynak kodu
 
-Aspose.Words for .NET ile bir PDF belgesinde belge başlığını pencere başlık çubuğunda görüntülemek için tam kaynak kodu burada:
+Aspose.Words for .NET ile bir PDF belgesinde belge başlığını pencere başlık çubuğunda görüntülemek için tam kaynak kodu:
 
 ```csharp
 
@@ -56,27 +56,27 @@ Aspose.Words for .NET ile bir PDF belgesinde belge başlığını pencere başl�
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
         
 ```
-Bu adımları izleyerek, Aspose.Words for .NET ile PDF'ye dönüştürürken belge başlığını pencere başlık çubuğunda kolayca görüntüleyebilirsiniz.
+Bu adımları izleyerek Aspose.Words for .NET ile PDF'ye dönüştürürken belge başlığını pencere başlık çubuğunda kolayca görüntüleyebilirsiniz.
 
 ### Sıkça Sorulan Sorular
 
-#### S: Aspose.Words for .NET ile "Belge başlığını pencere başlık çubuğunda göster" özelliği nedir?
-Aspose.Words for .NET ile "Belge başlığını pencere başlık çubuğunda göster" özelliği, oluşturulan PDF belgesini açtığınızda belge başlığını pencere başlık çubuğunda görüntülemenizi sağlar. Bu, okuma ortamınızda PDF belgelerini tanımlamayı ve ayırt etmeyi kolaylaştırır.
+#### S: Aspose.Words for .NET'in "Pencere başlık çubuğunda belge başlığını göster" özelliği nedir?
+Aspose.Words for .NET'in "Belge başlığını pencere başlık çubuğunda göster" özelliği, oluşturulan PDF belgesini açtığınızda belge başlığını pencere başlık çubuğunda görüntülemenize olanak tanır. Bu, okuma ortamınızdaki PDF belgelerini tanımlamanızı ve ayırt etmenizi kolaylaştırır.
 
 #### S: Bu özelliği Aspose.Words for .NET ile nasıl kullanabilirim?
 Bu özelliği Aspose.Words for .NET ile kullanmak için şu adımları izleyin:
 
- kullanarak belgeyi yükleyin.`Document` yöntemi ve PDF'ye dönüştürülecek dosyanın yolunu belirleme.
+ Belgeyi kullanarak yükleyin`Document` yöntemi ve PDF'ye dönüştürülecek dosyanın yolunu belirtme.
 
- örneğini oluşturarak PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve ayar`DisplayDocTitle` mülkiyet`true`. Bu, PDF'ye dönüştürürken belge başlığının pencere başlık çubuğunda görüntülenmesini sağlar.
+ Bir örneğini oluşturarak PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve ayarlama`DisplayDocTitle` mülkiyet`true`. Bu, PDF'ye dönüştürürken belge başlığının pencere başlık çubuğunda görüntülenmesini sağlar.
 
- Kullan`Save` dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi.
+ Kullan`Save` Dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemini seçin.
 
-#### S: Bu özellik belgenin içeriğini değiştiriyor mu?
-Hayır, bu özellik belgenin içeriğini değiştirmez. Yalnızca PDF belgesi olarak açıldığında belge başlığının pencere başlık çubuğunda görüntülenmesini etkiler. Belgenin içeriği değişmeden kalır.
+#### S: Bu özellik belgenin içeriğini değiştirir mi?
+Hayır, bu özellik belgenin içeriğini değiştirmez. Yalnızca PDF belgesi olarak açıldığında belge başlığının pencere başlık çubuğundaki görünümünü etkiler. Belgenin içeriği değişmeden kalır.
 
 #### S: Pencerenin başlık çubuğunda görüntülenen belgenin başlığını özelleştirmek mümkün müdür?
- Evet, pencere başlık çubuğunda görüntülenen belge başlığını değiştirerek özelleştirebilirsiniz.`Document.Title` PDF'ye dönüştürmeden önce belgenin özelliği. Bir dize kullanarak istediğiniz başlığı ayarlayabilirsiniz. Aramadan önce başlığı ayarladığınızdan emin olun.`Save` PDF'ye dönüştürme yöntemi.
+ Evet, pencere başlık çubuğunda görüntülenen belge başlığını değiştirerek özelleştirebilirsiniz.`Document.Title` PDF'ye dönüştürmeden önce belgenin özelliğini kullanın. Bir dize kullanarak istediğiniz başlığı ayarlayabilirsiniz. Çağrı yapmadan önce başlığı ayarladığınızdan emin olun.`Save` PDF'ye dönüştürme yöntemi.
 
-#### S: Aspose.Words belge dönüştürme için başka hangi çıktı biçimlerini destekliyor?
-Aspose.Words for .NET, belge dönüştürme için PDF, XPS, HTML, EPUB, MOBI, görüntü (JPEG, PNG, BMP, TIFF, GIF) ve çok daha fazlası gibi birçok çıktı biçimini destekler. hala diğerleri. Özel ihtiyaçlarınıza göre uygun çıktı biçimini seçebilirsiniz.
+#### S: Aspose.Words belge dönüştürme için başka hangi çıktı formatlarını destekliyor?
+Aspose.Words for .NET, belge dönüştürme için PDF, XPS, HTML, EPUB, MOBI, resim (JPEG, PNG, BMP, TIFF, GIF) ve çok daha fazlası gibi birçok çıktı formatını destekler. hala diğerleri. Özel ihtiyaçlarınıza göre uygun çıktı formatını seçebilirsiniz.

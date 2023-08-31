@@ -117,7 +117,7 @@ A: Um mit Aspose.Words für .NET eine Signaturzeile in einem Word-Dokument zu er
 
 #### F: Kann ich ein digitales Signaturbild zum Signieren des Dokuments verwenden?
 
- A: Ja, Sie können ein digitales Signaturbild zum Signieren des Dokuments verwenden. Dazu müssen Sie die Bilddatei im bereitstellen`SignOptions` Objekt mit der`SignatureLineImage`Eigentum. Das Bild kann in jedem unterstützten Bildformat vorliegen, z. B. JPEG, PNG oder EMF.
+ A: Ja, Sie können ein digitales Signaturbild zum Signieren des Dokuments verwenden. Dazu müssen Sie die Bilddatei im bereitstellen`SignOptions` Objekt mit dem`SignatureLineImage`Eigentum. Das Bild kann in jedem unterstützten Bildformat vorliegen, z. B. JPEG, PNG oder EMF.
 
 #### F: Wozu dient das Erstellen und Signieren einer neuen Signaturzeile in einem Word-Dokument?
 

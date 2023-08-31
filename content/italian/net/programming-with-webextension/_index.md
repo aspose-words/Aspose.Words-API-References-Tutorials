@@ -1,19 +1,19 @@
 ---
-title: Elaborazione di testi con estensione Web
-linktitle: Elaborazione di testi con estensione Web
-second_title: Aspose.Words API di elaborazione dei documenti
+title: Elaborazione di parole con estensione Web
+linktitle: Elaborazione di parole con estensione Web
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come sviluppare estensioni web per documenti Word con Aspose.Words per .NET. Scopri come creare, modificare e personalizzare le estensioni web, integrandole nei tuoi documenti Word.
 type: docs
 weight: 1530
 url: /it/net/programming-with-webextension/
 ---
-Le esercitazioni di Aspose.Words per .NET sull'elaborazione di testi con WebExtensions ti guidano attraverso le funzionalità avanzate di elaborazione di testi con estensioni Web nei tuoi documenti Word. I tutorial descrivono in dettaglio come utilizzare le API di Aspose.Words per creare, modificare ed eliminare estensioni Web, nonché interagire con il codice JavaScript incorporato nei documenti di Word.
+I tutorial Aspose.Words per .NET sull'elaborazione delle parole con le estensioni Web ti guidano attraverso le funzionalità avanzate dell'elaborazione delle parole con le estensioni Web nei tuoi documenti Word. I tutorial descrivono in dettaglio come utilizzare le API Aspose.Words per creare, modificare ed eliminare estensioni web, nonché interagire con il codice JavaScript incorporato nei documenti Word.
 
-Questi tutorial forniscono istruzioni dettagliate per comprendere e utilizzare la funzionalità di WebExtensions con Aspose.Words per .NET. Imparerai come accedere agli oggetti delle estensioni web, gestire gli eventi, valutare il codice JavaScript, aggiungere funzionalità personalizzate e altro ancora. Che tu sia un principiante o uno sviluppatore esperto, questi tutorial ti aiuteranno a padroneggiare le tecniche di programmazione con WebExtensions.
+Queste esercitazioni forniscono istruzioni dettagliate per comprendere e utilizzare la funzionalità delle estensioni Web con Aspose.Words per .NET. Imparerai come accedere agli oggetti delle estensioni web, gestire eventi, valutare il codice JavaScript, aggiungere funzionalità personalizzate e altro ancora. Che tu sia un principiante o uno sviluppatore esperto, questi tutorial ti aiuteranno a padroneggiare le tecniche di programmazione con WebExtensions.
 
-Seguendo questi tutorial, sarai in grado di sfruttare appieno le capacità delle estensioni web nei tuoi documenti Word, dando loro funzionalità interattive e dinamiche. I tutorial forniscono esempi di codice passo passo e spiegazioni chiare per aiutarti a ottenere il massimo da queste funzionalità e creare documenti Word innovativi e interattivi.
+Seguendo questi tutorial potrai sfruttare appieno le funzionalità delle estensioni web nei tuoi documenti Word, conferendo loro funzionalità interattive e dinamiche. Le esercitazioni forniscono esempi di codice passo passo e spiegazioni chiare per aiutarti a ottenere il massimo da queste funzionalità e creare documenti Word innovativi e interattivi.
 
 ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Utilizzo dei riquadri attività delle estensioni Web](./using-web-extension-task-panes/) | Guida dettagliata all'utilizzo dei riquadri attività delle estensioni Web con Aspose.Words per .NET. |
+| [Utilizzo dei riquadri attività delle estensioni Web](./using-web-extension-task-panes/) | Guida dettagliata all'utilizzo dei pannelli attività delle estensioni Web con Aspose.Words per .NET. |

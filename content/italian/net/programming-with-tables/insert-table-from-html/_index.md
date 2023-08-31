@@ -1,21 +1,21 @@
 ---
 title: Inserisci tabella da Html
 linktitle: Inserisci tabella da Html
-second_title: Aspose.Words API di elaborazione dei documenti
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come inserire una tabella da HTML in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/insert-table-from-html/
 ---
 
-In questo tutorial impareremo come inserire una tabella in un documento Word da HTML utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di inserire tabelle da HTML nei tuoi documenti Word in modo programmatico.
+In questo tutorial impareremo come inserire una tabella in un documento Word da HTML utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzionalità. Alla fine di questo tutorial sarai in grado di inserire tabelle da HTML nei tuoi documenti Word a livello di codice.
 
 ## Passaggio 1: impostazione del progetto
 1. Avvia Visual Studio e crea un nuovo progetto C#.
-2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
+2. Aggiungi un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: creazione del documento e inizializzazione del generatore di documenti
-Per avviare l'elaborazione di testi con il documento e il generatore di documenti, attenersi alla seguente procedura:
+Per avviare l'elaborazione parole con il documento e il generatore di documenti, attenersi alla seguente procedura:
 
 ```csharp
 // Percorso della directory dei documenti
@@ -28,10 +28,10 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
+Assicurati di sostituire "LA TUA DIRECTORY DOCUMENTI" con il percorso effettivo della directory dei documenti.
 
-## Passaggio 3: Inserimento della tabella da HTML
-Successivamente, inseriremo la tabella nel documento utilizzando il codice HTML. Usa il seguente codice:
+## Passaggio 3: inserimento della tabella da HTML
+Successivamente, inseriremo la tabella nel documento utilizzando il codice HTML. Utilizza il seguente codice:
 
 ```csharp
 builder.InsertHtml("<table>" +
@@ -46,10 +46,10 @@ builder.InsertHtml("<table>" +
 "</table>");
 ```
 
- Qui usiamo il`InsertHtml` metodo del generatore di documenti per inserire l'HTML contenente la tabella. L'HTML specificato crea una tabella con due righe e due celle in ogni riga. Puoi personalizzare il contenuto della tabella modificando il codice HTML in base alle tue esigenze.
+ Qui usiamo il`InsertHtml` metodo del generatore di documenti per inserire l'HTML contenente la tabella. L'HTML specificato crea una tabella con due righe e due celle in ciascuna riga. Puoi personalizzare il contenuto della tabella modificando il codice HTML in base alle tue esigenze.
 
-## Passaggio 4: salvare il documento modificato
-Infine, dobbiamo salvare il documento modificato con la tabella inserita da HTML. Usa il seguente codice:
+## Passaggio 4: salvataggio del documento modificato
+Infine, dobbiamo salvare il documento modificato con la tabella inserita da HTML. Utilizza il seguente codice:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 
 Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### Esempio di codice sorgente per Inserisci tabella da Html utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per Inserisci tabella da Html utilizzando Aspose.Words per .NET 
 
 ```csharp
 	//Percorso della directory dei documenti
@@ -65,7 +65,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Si noti che AutoFitSettings non si applica alle tabelle inserite da HTML.
+	// Tieni presente che AutoFitSettings non si applica alle tabelle inserite da HTML.
 	builder.InsertHtml("<table>" +
 					   "<tr>" +
 					   "<td>Row 1, Cell 1</td>" +
@@ -80,4 +80,4 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come inserire una tabella in un documento Word da HTML utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi inserire tabelle da HTML nei tuoi documenti Word a livello di codice. Questa funzione ti consente di convertire e importare dati tabulari da sorgenti HTML nei tuoi documenti Word.
+In questo tutorial, abbiamo imparato come inserire una tabella in un documento Word da HTML utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo e implementando il codice C# fornito, puoi inserire tabelle da HTML nei tuoi documenti Word a livello di codice. Questa funzionalità ti consente di convertire e importare dati tabulari da origini HTML nei tuoi documenti Word.

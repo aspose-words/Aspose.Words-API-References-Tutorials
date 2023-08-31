@@ -80,7 +80,7 @@ Speichern Sie das geänderte Dokument:
 builder.Document.Save(dataDir + "SpecifyListLevel.docx");
 ```
 
-So ! Sie haben die Listenebene in einem Word-Dokument mit Aspose.Words für .NET erfolgreich angegeben.
+Also ! Sie haben die Listenebene in einem Word-Dokument mit Aspose.Words für .NET erfolgreich angegeben.
 
 ### Beispielquellcode zur Angabe der Listenebene
 

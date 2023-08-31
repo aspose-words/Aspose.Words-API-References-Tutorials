@@ -77,7 +77,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 
 #### 问：以不同文件格式保存文档时，分页符会保留吗？
 
-答：是的，当以不同的文件格式（例如 DOCX、PDF 或 RTF）保存文档时，使用 Aspose.Words for .NET 插入的分页符会被保留。这可确保不同文件格式的分页和布局保持一致。
+答：是的，当以不同的文件格式（例如 DOCX、PDF 或 RTF）保存文档时，会保留使用 Aspose.Words for .NET 插入的分页符。这可确保不同文件格式的分页和布局保持一致。
 
 #### 问：我可以自定义分页符的外观吗？
 

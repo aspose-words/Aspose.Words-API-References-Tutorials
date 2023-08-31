@@ -1,35 +1,35 @@
 ---
 title: Alan Ekle Yok
 linktitle: Alan Ekle Yok
-second_title: Aspose.Words Belge İşleme API'sı
-description: Word ve Aspose.Words'ün .NET'teki belgelerine AUCUN şampiyonu eklemeyi öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Word ve Aspose.Words belgelerine .NET'e nasıl şampiyon AUCUN ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-field-none/
 ---
 
-Aşağıda, Aspose.Words for .NET'in "Insert NONE Field" özelliğini kullanan C# kaynak kodunu adım adım açıklayan bir kılavuz bulunmaktadır. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
+Burada, Aspose.Words for .NET'in "HİÇBİRİ Alanını Ekle" özelliğini kullanan C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. İstediğiniz sonuçları elde etmek için her adımı dikkatlice takip ettiğinizden emin olun.
 
-## 1. Adım: Belge Dizini Kurulumu
+## Adım 1: Belge Dizini Kurulumu
 
-Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
+Verilen kodda belgelerinizin dizinini belirtmelisiniz. "BELGE DİZİNİNİZ" değerini, belge dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## 2. Adım: Document ve DocumentBuilder'ı Oluşturma
+## Adım 2: Document ve DocumentBuilder'ı Oluşturma
 
-Yeni bir belge oluşturarak ve bir DocumentBuilder başlatarak başlıyoruz.
+Yeni bir belge oluşturup DocumentBuilder'ı başlatarak başlıyoruz.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: HİÇBİR alanını ekleme
+## 3. Adım: NONE alanını ekleme
 
- biz kullanıyoruz`InsertField()` Belgeye bir NONE alanı eklemek için DocumentBuilder yöntemi.
+ biz kullanıyoruz`InsertField()` DocumentBuilder'ın belgeye NONE alanı ekleme yöntemi.
 
 ```csharp
 FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, false);
@@ -45,26 +45,26 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// HİÇBİRİ alanını girin.
+// NONE alanını ekleyin.
 FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, false);
 
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-Bu örnekte, yeni bir belge oluşturduk, bir DocumentBuilder başlattık ve ardından bir NONE alanı ekledik. Belge daha sonra belirtilen dosya adıyla kaydedilir.
+Bu örnekte yeni bir belge oluşturduk, DocumentBuilder'ı başlattık ve ardından bir NONE alanı ekledik. Belge daha sonra belirtilen bir dosya adıyla kaydedilir.
 
-Bu, Aspose.Words for .NET ile "Insert NONE Field" özelliğini kullanma konusundaki kılavuzumuzu sonlandırıyor.
+Bu, Aspose.Words for .NET ile "HİÇBİRİ Alanını Ekle" özelliğinin kullanımına ilişkin kılavuzumuzu tamamlıyor.
 
-### SSS
+### SSS'ler
 
-#### S: "Alanlarla Sözcük İşleme: Alan Gir Yok" öğreticisi neleri kapsıyor?
+#### S: "Alanlarla Kelime İşleme: Alan Yok Ekle" eğitimi neleri kapsıyor?
 
-C: Bu öğretici, Aspose Words for .NET'teki alan manipülasyonunu, özellikle "Hiçbiri" alanını eklemeye odaklanarak kapsar. Alanlar, verileri görüntülemek veya hesaplamak için kullanılabilen bir Word belgesindeki dinamik öğelerdir. Öğretici, "Hiçbiri" alanının nasıl ekleneceğini ve uygun şekilde nasıl kullanılacağını açıklar.
+C: Bu eğitim, Aspose Words for .NET'te alan düzenlemeyi ele alıyor ve özellikle "Yok" alanının eklenmesine odaklanıyor. Alanlar, bir Word belgesindeki verileri görüntülemek veya hesaplamak için kullanılabilen dinamik öğelerdir. Eğitimde "Yok" alanının nasıl ekleneceği ve uygun şekilde nasıl kullanılacağı açıklanmaktadır.
 
-#### S: Neden Aspose Words'de "Hiçbiri" alanını kullanıyorsunuz?
+#### S: Neden Aspose Words'de "Yok" alanını kullanmalıyım?
 
-C: Aspose Words'deki "Yok" alanı, bir belgeye herhangi bir özel efekt veya hesaplama olmaksızın bir yer tutucu veya işaretleyici eklemek istediğinizde kullanışlıdır. Belgede daha sonra veri eklemek istediğiniz yerleri işaretlemek veya içeriğin geri kalanını bozmadan özel notlar eklemek için kullanılabilir.
+C: Aspose Words'teki "Yok" alanı, bir belgeye herhangi bir özel efekt veya hesaplama olmadan bir yer tutucu veya işaretleyici eklemek istediğinizde kullanışlıdır. Belgede daha sonra veri eklemek istediğiniz yerleri işaretlemek veya içeriğin geri kalanını bozmadan özel notlar eklemek için kullanılabilir.
 
-#### S: "Hiçbiri" alanını ek parametrelerle özelleştirebilir miyim?
+#### S: "Yok" alanını ek parametrelerle özelleştirebilir miyim?
 
-A: Hayır, "Hiçbiri" alanı ek parametreleri kabul etmez. Öncelikle bir işaretleyici veya yer tutucu olarak kullanılır ve belirli bir işlevi yoktur. Ancak, daha gelişmiş işlemler gerçekleştirmek için Aspose Words'deki diğer alan türlerini kullanabilirsiniz.
+C: Hayır, "Yok" alanı ek parametreleri kabul etmez. Öncelikle işaretleyici veya yer tutucu olarak kullanılır ve belirli bir işlevi yoktur. Ancak daha gelişmiş işlemler gerçekleştirmek için Aspose Words'deki diğer alan türlerini kullanabilirsiniz.

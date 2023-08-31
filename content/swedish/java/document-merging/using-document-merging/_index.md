@@ -53,7 +53,7 @@ public class DocumentMerger {
 }
 ```
 
- I exemplet ovan laddade vi två dokument med hjälp av`Document` klass och använde sedan`appendDocument()`metod för att slå samman innehållet i "document2.docx" till "document1.docx" samtidigt som formateringen av källdokumentet bevaras.
+ exemplet ovan laddade vi två dokument med hjälp av`Document` klass och använde sedan`appendDocument()` metod för att slå samman innehållet i "document2.docx" till "document1.docx" samtidigt som formateringen av källdokumentet bevaras.
 
 ## 4. Hantera dokumentformatering
 

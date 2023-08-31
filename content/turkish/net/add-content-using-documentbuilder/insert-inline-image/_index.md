@@ -1,28 +1,28 @@
 ---
 title: Word Belgesine Satır İçi Görüntü Ekleme
 linktitle: Word Belgesine Satır İçi Görüntü Ekleme
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak Word belgelerine satır içi görüntüleri nasıl ekleyeceğinizi öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak Word belgelerine satır içi görsellerin nasıl eklendiğini öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-inline-image/
 ---
-Bu kapsamlı öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine satır içi görüntülerin nasıl ekleneceğini öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, belgelerinizin metnine doğrudan resim ekleyebileceksiniz.
+Bu kapsamlı eğitimde, Aspose.Words for .NET kullanarak satır içi görüntüleri bir Word belgesine nasıl ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, görselleri doğrudan belgelerinizin metnine ekleyebileceksiniz.
 
 ## Önkoşullar
-Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
-- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
+Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kütüphanesi sisteminizde kuruludur.
 
 ## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
-Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesini başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Bir Satır İçi Görüntü Ekleyin
-Ardından, belgeye bir satır içi görüntü eklemek için DocumentBuilder sınıfının InsertImage yöntemini kullanın. Görüntü dosyası yolunu bir parametre olarak sağlayın:
+## 2. Adım: Satır İçi Resim Ekleme
+Daha sonra, belgeye satır içi görüntü eklemek için DocumentBuilder sınıfının InsertImage yöntemini kullanın. Görüntü dosyası yolunu parametre olarak belirtin:
 
 ```csharp
 builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -35,8 +35,8 @@ Satır içi görüntüyü ekledikten sonra, Document sınıfının Save yöntemi
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
 ```
 
-### Aspose.Words for .NET kullanarak Satır İçi Görüntü Ekleme için Örnek Kaynak Kodu
-Aspose.Words for .NET kullanarak bir satır içi görüntü eklemek için eksiksiz kaynak kodu burada:
+### Aspose.Words for .NET kullanarak Satır İçi Görüntü Eklemek için Örnek Kaynak Kodu
+Aspose.Words for .NET'i kullanarak satır içi görüntü eklemek için tam kaynak kodunu burada bulabilirsiniz:
 
 ```csharp
 Document doc = new Document();
@@ -48,28 +48,28 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx")
 ```
 
 ## Çözüm
-Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine satır içi görüntülerin nasıl ekleneceğini başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık belgelerinizin metnine sorunsuz bir şekilde resim ekleyebilirsiniz.
+Tebrikler! Aspose.Words for .NET'i kullanarak satır içi görüntüleri bir Word belgesine nasıl ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak artık belgelerinizin metnine sorunsuz bir şekilde görseller ekleyebilirsiniz.
 
-Satır içi görüntüler, doğrudan belgenin akışına çizimler, logolar veya diğer görsel öğeler eklemek gibi çeşitli senaryolar için kullanışlıdır.
+Satır içi görüntüler, illüstrasyonların, logoların veya diğer görsel öğelerin doğrudan belge akışına eklenmesi gibi çeşitli senaryolar için kullanışlıdır.
 
-### Word belgesine satır içi resim eklemek için SSS
+### Word belgesine satır içi resim eklemeyle ilgili SSS
 
 #### S: Word belgesindeki satır içi görüntüleri yeniden boyutlandırabilir miyim?
 
-C: Evet, Aspose.Words for .NET'i kullanarak satır içi görüntüleri yeniden boyutlandırabilirsiniz. Görüntüyü ekledikten sonra, görüntüyü temsil eden Shape nesnesinin genişlik ve yükseklik özelliklerini ayarlayarak boyutunu değiştirebilirsiniz.
+C: Evet, Aspose.Words for .NET'i kullanarak satır içi görselleri yeniden boyutlandırabilirsiniz. Görüntüyü ekledikten sonra, görüntüyü temsil eden Shape nesnesinin genişlik ve yükseklik özelliklerini ayarlayarak boyutunu değiştirebilirsiniz.
 
-#### S: Erişilebilirlik amacıyla satır içi resimlere alternatif metin eklemek mümkün müdür?
+#### S: Erişilebilirlik amacıyla satır içi görsellere alternatif metin eklemek mümkün müdür?
 
-C: Evet, erişilebilirliği artırmak için satır içi resimlere alternatif metin ekleyebilirsiniz. Aspose.Words for .NET, görsellere alternatif metin eklenmesini destekleyerek ekran okuyucuların ve diğer yardımcı teknolojilerin görsel içeriği görme engelli kullanıcılara tanımlamasına olanak tanır.
+C: Evet, erişilebilirliği artırmak için satır içi görsellere alternatif metin ekleyebilirsiniz. Aspose.Words for .NET, görsellere alternatif metin eklenmesini destekleyerek ekran okuyucuların ve diğer yardımcı teknolojilerin görsel içeriğini görme engelli kullanıcılara tanımlamasına olanak tanır.
 
-#### S: Satır içi görüntülere biçimlendirme veya stiller uygulayabilir miyim?
+#### S: Satır içi görsellere format veya stil uygulayabilir miyim?
 
-C: Kesinlikle! Aspose.Words for .NET, satır içi görüntüler için kapsamlı biçimlendirme seçenekleri sunar. Belgenizin görsel tasarımına uyması için görüntülere çeşitli stiller, kenarlıklar, efektler ve diğer biçimlendirme niteliklerini uygulayabilirsiniz.
+C: Kesinlikle! Aspose.Words for .NET, satır içi görüntüler için kapsamlı formatlama seçenekleri sunar. Belgenizin görsel tasarımına uyacak şekilde görüntülere çeşitli stiller, kenarlıklar, efektler ve diğer biçimlendirme nitelikleri uygulayabilirsiniz.
 
-#### S: Aspose.Words for .NET, bir akıştan veya bayt dizisinden görüntülerin eklenmesini destekliyor mu?
+#### S: Aspose.Words for .NET bir akıştan veya bayt dizisinden görüntü eklemeyi destekliyor mu?
 
-C: Evet, Aspose.Words for .NET kullanarak akışlardan veya bayt dizilerinden satır içi görüntüler ekleyebilirsiniz. Bu, harici kaynaklardan yüklenen görüntülerle veya dinamik olarak oluşturulmuş görüntülerle çalışmanıza olanak tanır.
+C: Evet, Aspose.Words for .NET'i kullanarak akışlardan veya bayt dizilerinden satır içi görüntüler ekleyebilirsiniz. Bu, harici kaynaklardan yüklenen görüntülerle veya dinamik olarak oluşturulan görüntülerle çalışmanıza olanak tanır.
 
-#### S: Metin içeriğinde belirli konumlara resim ekleyebilir miyim?
+#### S: Metin içeriğinin belirli konumlarına resim ekleyebilir miyim?
 
-C: Evet, Aspose.Words for .NET içindeki DocumentBuilder sınıfı, satır içi görüntülerin ekleme konumu üzerinde hassas kontrol sağlar. Metin içinde görüntünün eklenmesi gereken tam konumu belirtebilirsiniz.
+C: Evet, Aspose.Words for .NET'teki DocumentBuilder sınıfı, satır içi görüntülerin ekleme konumu üzerinde hassas kontrol sağlar. Metin içinde görüntünün eklenmesi gereken tam konumu belirtebilirsiniz.

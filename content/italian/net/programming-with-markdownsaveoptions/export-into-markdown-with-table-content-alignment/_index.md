@@ -1,15 +1,15 @@
 ---
-title: Esporta in markdown con allineamento del contenuto della tabella
-linktitle: Esporta in markdown con allineamento del contenuto della tabella
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come esportare il contenuto della tabella con diversi allineamenti in file Markdown utilizzando Aspose.Words per .NET.
+title: Esporta in Markdown con allineamento del contenuto della tabella
+linktitle: Esporta in Markdown con allineamento del contenuto della tabella
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come esportare il contenuto della tabella con allineamenti diversi nei file Markdown utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-Ecco una guida dettagliata per spiegare il seguente codice sorgente C# che consente di esportare il contenuto in un file Markdown con l'allineamento del contenuto della tabella utilizzando la libreria Aspose.Words per .NET. Assicurati di aver incluso la libreria Aspose.Words nel tuo progetto prima di utilizzare questo codice.
+Ecco una guida passo passo per spiegare il seguente codice sorgente C# che aiuta a esportare il contenuto in un file Markdown con allineamento del contenuto della tabella utilizzando la libreria Aspose.Words per .NET. Assicurati di aver incluso la libreria Aspose.Words nel tuo progetto prima di utilizzare questo codice.
 
-## Passaggio 1: impostare il percorso della directory del documento
+## Passaggio 1: imposta il percorso della directory del documento
 
 ```csharp
 // Il percorso della directory dei documenti.
@@ -18,16 +18,16 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 Assicurati di specificare il percorso corretto della directory dei documenti in cui verrà salvato il documento modificato.
 
-## Passaggio 2: creare un documento e un generatore di documenti
+## Passaggio 2: crea un documento e un generatore di documenti
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Qui creiamo un'istanza di`Document` class e un'istanza di`DocumentBuilder` class che ci permetterà di manipolare il documento e aggiungere elementi.
+ Qui creiamo un'istanza di`Document` classe e un'istanza di`DocumentBuilder` classe che ci permetterà di manipolare il documento e aggiungere elementi.
 
-## Passaggio 3: inserisci le celle nella tabella con diversi allineamenti di paragrafo
+## Passaggio 3: inserisci celle nella tabella con allineamenti di paragrafo diversi
 
 ```csharp
 builder. InsertCell();
@@ -38,7 +38,7 @@ builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.Write("Cell2");
 ```
 
-Usiamo il Document Builder per inserire celle nella tabella e impostare diversi allineamenti di paragrafo per ogni cella.
+Utilizziamo il Generatore di documenti per inserire celle nella tabella e impostare diversi allineamenti di paragrafo per ciascuna cella.
 
 ## Passaggio 4: imposta le opzioni di esportazione Markdown e salva il documento modificato
 
@@ -61,7 +61,7 @@ doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 
 Impostiamo le opzioni di esportazione Markdown con diversi allineamenti del contenuto della tabella, quindi salviamo il documento modificato utilizzando ciascuna opzione di allineamento.
 
-### Esempio di codice sorgente da esportare in Markdown con l'allineamento del contenuto della tabella utilizzando Aspose.Words per .NET
+### Esempio di codice sorgente da esportare in Markdown con allineamento del contenuto della tabella utilizzando Aspose.Words per .NET
 
 ```csharp
 
@@ -79,7 +79,7 @@ Impostiamo le opzioni di esportazione Markdown con diversi allineamenti del cont
 	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 	builder.Write("Cell2");
 
-	// Rende allineati tutti i paragrafi all'interno della tabella.
+	// Fa sì che tutti i paragrafi all'interno della tabella siano allineati.
 	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 	{
 		TableContentAlignment = TableContentAlignment.Left
@@ -92,7 +92,7 @@ Impostiamo le opzioni di esportazione Markdown con diversi allineamenti del cont
 	saveOptions.TableContentAlignment = TableContentAlignment.Center;
 	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
 
-	// L'allineamento in questo caso verrà preso dal primo paragrafo nella corrispondente colonna della tabella.
+	// L'allineamento in questo caso verrà preso dal primo paragrafo nella colonna corrispondente della tabella.
 	saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 	
 	// Salva il documento modificato

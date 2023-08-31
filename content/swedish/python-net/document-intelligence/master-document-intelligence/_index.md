@@ -25,7 +25,7 @@ Aspose.Words är ett ledande Python-bibliotek som tillhandahåller ett brett utb
 pip install aspose-words
 ```
 
-## Grundläggande dokumentbehandling
+## Grundläggande dokumenthantering
 
 ### Skapa och redigera Word-dokument
 
@@ -289,7 +289,7 @@ Ja, medan Aspose.Words främst fokuserar på Word-dokument (DOCX), kan den även
 Ja, Aspose.Words är helt kompatibelt med Python 3.x-versioner, vilket säkerställer att användare kan utnyttja de senaste funktionerna och förbättringarna som erbjuds av Python.
 
 ### Hur ofta uppdaterar Aspose sina bibliotek?
-Aspose uppdaterar regelbundet sina bibliotek för att lägga till nya funktioner, förbättra prestanda och åtgärda eventuella rapporterade problem. Användare kan hålla sig uppdaterade med de senaste förbättringarna genom att söka efter uppdateringar från den officiella Aspose-webbplatsen.
+Aspose uppdaterar regelbundet sina bibliotek för att lägga till nya funktioner, förbättra prestanda och åtgärda eventuella rapporterade problem. Användare kan hålla sig uppdaterade med de senaste förbättringarna genom att söka efter uppdateringar från Aspose-webbplatsen.
 
 ### Kan Aspose.Words användas för dokumentöversättning?
 Medan Aspose.Words främst fokuserar på dokumentbearbetningsuppgifter, kan det integreras med andra översättnings-API:er eller bibliotek för att uppnå dokumentöversättningsfunktionalitet.

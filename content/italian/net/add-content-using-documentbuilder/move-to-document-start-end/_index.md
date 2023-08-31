@@ -1,17 +1,17 @@
 ---
-title: Sposta nel documento Inizio Fine nel documento di Word
-linktitle: Sposta nel documento Inizio Fine nel documento di Word
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come utilizzare Aspose.Words per .NET per passare all'inizio e alla fine del documento nei documenti di Word con questa guida dettagliata.
+title: Sposta all'inizio del documento Fine nel documento di Word
+linktitle: Sposta all'inizio del documento Fine nel documento di Word
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come utilizzare Aspose.Words per .NET per passare all'inizio e alla fine del documento nei documenti Word con questa guida passo passo.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
-In questo esempio, esploreremo la funzione Move To Document Start/End di Aspose.Words per .NET. Aspose.Words è una potente libreria di manipolazione dei documenti che consente agli sviluppatori di creare, modificare e convertire i documenti di Word a livello di codice. La funzione Move To Document Start/End ci consente di navigare all'inizio o alla fine di un documento utilizzando la classe DocumentBuilder.
+In questo esempio, esploreremo la funzionalità Sposta all'inizio/fine del documento di Aspose.Words per .NET. Aspose.Words è una potente libreria di manipolazione di documenti che consente agli sviluppatori di creare, modificare e convertire documenti Word a livello di codice. La funzionalità Sposta all'inizio/fine del documento ci consente di navigare all'inizio o alla fine di un documento utilizzando la classe DocumentBuilder.
 
-## Spiegando il codice sorgente passo dopo passo
+## Spiegare il codice sorgente passo dopo passo
 
-Esaminiamo il codice sorgente passo dopo passo per capire come utilizzare la funzionalità Sposta in inizio/fine documento utilizzando Aspose.Words per .NET.
+Esaminiamo passo dopo passo il codice sorgente per capire come utilizzare la funzione Sposta nell'inizio/fine del documento utilizzando Aspose.Words per .NET.
 
 
 ## Passaggio 1: inizializzazione del documento e del generatore di documenti
@@ -23,7 +23,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 2: passare all'inizio del documento
+## Passaggio 2: passaggio all'inizio del documento
 
 Per spostare la posizione del cursore all'inizio del documento, utilizzare il metodo MoveToDocumentStart della classe DocumentBuilder:
 
@@ -41,14 +41,14 @@ builder.MoveToDocumentEnd();
 
 ## Passaggio 4: emissione della posizione del cursore
 
-È possibile emettere la posizione del cursore utilizzando Console.WriteLine o qualsiasi altro metodo desiderato. Per esempio:
+È possibile visualizzare la posizione del cursore utilizzando Console.WriteLine o qualsiasi altro metodo desiderato. Per esempio:
 
 ```csharp
 Console.WriteLine("\nThis is the beginning of the document.");
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-### Esempio di codice sorgente per Move To Document Start/End utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per Sposta all'inizio/fine del documento utilizzando Aspose.Words per .NET
 
 ```csharp
 Document doc = new Document();
@@ -65,25 +65,25 @@ Console.WriteLine("\nThis is the end of the document.");
 
 ## Conclusione
 
-In questo esempio, abbiamo esplorato la funzionalità Move To Document Start/End di Aspose.Words per .NET. Abbiamo imparato come navigare all'inizio e alla fine di un documento utilizzando la classe DocumentBuilder. Questa funzione è utile durante l'elaborazione di parole a livello di codice con documenti Word e la necessità di manipolare o inserire contenuto in posizioni specifiche all'interno del documento.
+In questo esempio, abbiamo esplorato la funzionalità Sposta all'inizio/fine del documento di Aspose.Words per .NET. Abbiamo imparato come navigare all'inizio e alla fine di un documento utilizzando la classe DocumentBuilder. Questa funzionalità è utile quando si elaborano parole a livello di codice con documenti Word e si ha la necessità di manipolare o inserire contenuto in posizioni specifiche all'interno del documento.
 
 ### Domande frequenti
 
-#### D: Qual è lo scopo della funzione Move To Document Start/End in Aspose.Words per .NET?
+#### D: Qual è lo scopo della funzione Sposta all'inizio/fine del documento in Aspose.Words per .NET?
 
-R: La funzione Move To Document Start/End in Aspose.Words per .NET consente agli sviluppatori di navigare all'inizio o alla fine di un documento Word utilizzando la classe DocumentBuilder. È utile per manipolare a livello di codice o inserire contenuto in posizioni specifiche all'interno del documento.
+R: La funzionalità Sposta all'inizio/fine del documento in Aspose.Words per .NET consente agli sviluppatori di spostarsi all'inizio o alla fine di un documento Word utilizzando la classe DocumentBuilder. È utile per manipolare o inserire a livello di codice contenuto in posizioni specifiche all'interno del documento.
 
-#### D: Posso utilizzare questa funzione con un documento Word esistente?
+#### D: posso utilizzare questa funzionalità con un documento Word esistente?
 
-R: Sì, puoi utilizzare la funzione Sposta in inizio/fine documento con documenti Word sia nuovi che esistenti. È sufficiente inizializzare DocumentBuilder con l'oggetto Document appropriato, quindi utilizzare i metodi MoveToDocumentStart e MoveToDocumentEnd come mostrato nel codice sorgente di esempio.
+R: Sì, puoi utilizzare la funzione Sposta all'inizio/fine del documento sia con documenti Word nuovi che esistenti. È sufficiente inizializzare DocumentBuilder con l'oggetto Document appropriato e quindi utilizzare i metodi MoveToDocumentStart e MoveToDocumentEnd come illustrato nel codice sorgente di esempio.
 
 #### D: In che modo il metodo DocumentBuilder.MoveToDocumentStart/MoveToDocumentEnd influisce sul contenuto del documento?
 
-R: Il metodo DocumentBuilder.MoveToDocumentStart sposta il cursore all'inizio del documento senza modificare il contenuto esistente. Analogamente, il metodo DocumentBuilder.MoveToDocumentEnd sposta il cursore alla fine del documento senza alterarne il contenuto.
+R: Il metodo DocumentBuilder.MoveToDocumentStart sposta il cursore all'inizio del documento senza modificare il contenuto esistente. Allo stesso modo, il metodo DocumentBuilder.MoveToDocumentEnd sposta il cursore alla fine del documento senza alterarne il contenuto.
 
 #### D: Posso eseguire altre operazioni dopo aver spostato il cursore alla fine del documento?
 
-R: Sì, dopo aver spostato il cursore alla fine del documento, puoi continuare a utilizzare DocumentBuilder per aggiungere o modificare il contenuto in quella posizione. La posizione del cursore rimane alla fine del documento finché non viene spostata in modo esplicito.
+R: Sì, dopo aver spostato il cursore alla fine del documento, puoi continuare a utilizzare DocumentBuilder per aggiungere o modificare il contenuto in quella posizione. La posizione del cursore rimane alla fine del documento finché non viene spostata esplicitamente.
 
 #### D: Come posso visualizzare la posizione del cursore utilizzando Aspose.Words per .NET?
 

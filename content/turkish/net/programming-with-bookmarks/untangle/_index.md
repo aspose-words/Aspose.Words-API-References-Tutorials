@@ -1,14 +1,14 @@
 ---
-title: Word Belgesinde Çöz
-linktitle: Word Belgesinde Çöz
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bitişik tablo satırlarındaki iç içe geçmiş yer imlerini word belgesinde nasıl çözeceğinizi öğrenin.
+title: Word Belgesinde Karışmayı Çözme
+linktitle: Word Belgesinde Karışmayı Çözme
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'i kullanarak word belgesindeki bitişik tablo satırlarındaki iç içe geçmiş yer işaretlerini nasıl çözeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/untangle/
 ---
 
-Bu makalede, Aspose.Words for .NET kitaplığında Untangle işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu işlev, bitişik tablo satırlarında bulunan iç içe yer imlerini çözer.
+Bu makalede, Aspose.Words for .NET kütüphanesinde Untangle fonksiyonunun nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu işlev, bitişik tablo satırlarında bulunan iç içe geçmiş yer imlerini çözer.
 
 ## Önkoşullar
 
@@ -17,27 +17,27 @@ Bu makalede, Aspose.Words for .NET kitaplığında Untangle işlevinin nasıl ku
 
 ## 1. Adım: Belge Yer İşaretlerine Göz Atın
 
-Belgede bulunan tüm yer imleri arasında dolaşmak için bir foreach döngüsü kullanıyoruz:
+Belgede bulunan tüm yer imleri arasında geçiş yapmak için foreach döngüsünü kullanırız:
 
 ```csharp
 foreach(Bookmark bookmark in doc.Range.Bookmarks)
 {
-     // Burada yer imlerini işlemek için kod
+     // Yer imlerini işlemek için kod burada
 }
 ```
 
-## 2. Adım: Yer işaretlerinden ana satırları alın
+## 2. Adım: Yer işaretlerinden üst satırları alın
 
- biz kullanıyoruz`GetAncestor`yer iminin başlangıç ve bitiş düğümlerinin ana satırlarını alma yöntemleri:
+ biz kullanıyoruz`GetAncestor`yer iminin başlangıç ve bitiş düğümlerinin üst satırlarını alma yöntemleri:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-## 3. Adım: İç İçe Yer İşaretlerini Çözün
+## 3. Adım: İç İçe Yerleştirilmiş Yer İmlerini Çözün
 
-Her iki ana satır da bulunursa ve yer imi bitişik satırlarda başlar ve biterse, yer işaretinin bitiş düğümünü üst satırdaki son hücrenin son paragrafının sonuna taşırız:
+Her iki ana satır da bulunursa ve yer işareti bitişik satırlarda başlayıp bitiyorsa, yer işaretinin son düğümünü üst satırdaki son hücrenin son paragrafının sonuna taşırız:
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
@@ -46,17 +46,17 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 ### Aspose.Words for .NET kullanarak Untangle için örnek kaynak kodu
 
-İşte Aspose.Words for .NET kullanarak iç içe yer imlerini çözmek için tam kaynak kodu örneği:
+Aspose.Words for .NET kullanarak iç içe geçmiş yer imlerini çözmek için tam kaynak kodu örneği:
 
 ```csharp
 
 	foreach (Bookmark bookmark in doc.Range.Bookmarks)
 	{
-		// Hem yer imi hem de yer imi bitiş düğümünün ana satırını alın.
+		// Hem yer işaretinin hem de yer işareti bitiş düğümünün üst satırını alın.
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		// Her iki satır da uygun bulunursa ve yer imi başlangıcı ve bitişi bitişik satırlarda yer alıyorsa,
+		// Her iki satır da uygun bulunursa ve yer işaretinin başlangıcı ve bitişi bitişik satırlarda yer alıyorsa,
 		// yer imi bitiş düğümünü üst satırın son hücresindeki son paragrafın sonuna taşıyın.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
@@ -66,26 +66,26 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Untangle işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bitişik tablo satırlarındaki iç içe yer imlerini çözmek için adım adım bir kılavuz izledik.
+Bu makalede Aspose.Words for .NET'in Untangle fonksiyonunun nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bitişik tablo satırlarındaki iç içe yer işaretlerini çözmek için adım adım bir kılavuz izledik.
 
-### SSS
+### SSS'ler
 
 #### S: Çözme işlevi yalnızca bitişik tablo satırlarındaki iç içe geçmiş yer imleriyle mi çalışır?
 
-Y: Evet, Çözme özelliği özellikle bitişik tablo satırlarında bulunan iç içe geçmiş yer imlerini çözmek için tasarlanmıştır. Yer işaretleri bitişik satırlarda değilse, bu işlev geçerli olmayacaktır.
+C: Evet, Karışıklığı Çözme özelliği, özellikle bitişik tablo satırlarında bulunan iç içe geçmiş yer işaretlerini çözmek için tasarlanmıştır. Yer imleri bitişik satırlarda değilse bu işlev geçerli olmayacaktır.
 
-#### S: Word belgemdeki iç içe geçmiş yer imlerini nasıl belirleyebilirim?
+#### S: Word belgemde iç içe geçmiş yer imlerini nasıl tanımlayabilirim?
 
-Y: İç içe yer imlerini, belgedeki yer imleri arasında dolaşarak ve başlangıç yer imi ile bitiş yer iminin bitişik tablo satırlarında olup olmadığını kontrol ederek belirleyebilirsiniz. Bu işlevi uygulamak için bu makalede sağlanan kaynak kodunu bir başlangıç noktası olarak kullanabilirsiniz.
+C: Belgedeki yer imleri arasında dolaşıp başlangıç ve bitiş yer imlerinin bitişik tablo satırlarında olup olmadığını kontrol ederek iç içe geçmiş yer imlerini tanımlayabilirsiniz. Bu işlevselliği uygulamak için bu makalede sağlanan kaynak kodunu bir başlangıç noktası olarak kullanabilirsiniz.
 
-#### S: Şifreyi Çöz işlevi orijinal belgenin içeriğini değiştirir mi?
+#### S: Çözme işlevi orijinal belgenin içeriğini değiştirir mi?
 
-C: Evet, Çözme işlevi, yer iminin son düğümünü üst satırdaki son hücrenin son paragrafının sonuna taşıyarak orijinal belgeyi değiştirir. Bu özelliği uygulamadan önce belgenin yedek bir kopyasını kaydettiğinizden emin olun.
+C: Evet, Çözme işlevi, yer iminin uç düğümünü üst satırdaki son hücrenin son paragrafının sonuna taşıyarak orijinal belgeyi değiştirir. Bu özelliği uygulamadan önce belgenin yedek bir kopyasını kaydettiğinizden emin olun.
 
-#### S: Bölümler veya paragraflar gibi diğer belge öğesi türlerindeki iç içe yer imlerini nasıl çözebilirim?
+#### S: Bölümler veya paragraflar gibi diğer belge öğesi türlerindeki iç içe geçmiş yer imlerini nasıl çözebilirim?
 
-Y: Bu makalede sunulan Dolaştırmayı Çöz işlevi, bitişik tablo satırlarındaki iç içe geçmiş yer imlerini çözmek için özel olarak tasarlanmıştır. Diğer belge öğelerindeki iç içe yer imlerini çözmek istiyorsanız, kodu buna göre uyarlamanız ve istenen öğelere erişmek için uygun yöntemleri kullanmanız gerekecektir.
+C: Bu makalede sunulan Dolaşmışlığı Çöz işlevi, özellikle bitişik tablo satırlarındaki iç içe geçmiş yer imlerini çözmek için tasarlanmıştır. Diğer belge öğelerindeki iç içe geçmiş yer imlerini çözmek istiyorsanız, kodu buna göre uyarlamanız ve istediğiniz öğelere erişmek için uygun yöntemleri kullanmanız gerekecektir.
 
-#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki iç içe yer imlerini çözmek için başka yöntemler var mı?
+#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki iç içe geçmiş yer işaretlerini çözmenin başka yöntemleri var mı?
 
- C: Bu makalede sunulan yöntem, bitişik tablo satırlarındaki iç içe geçmiş yer imlerini çözmek için yaygın olarak kullanılan bir yöntemdir. Ancak, projenizin özel ihtiyaçlarına bağlı olarak başka yaklaşımlar veya teknikler olabilir. kontrol edebilirsiniz[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/) Mevcut özellikleri daha fazla keşfetmek için.
+ C: Bu makalede sunulan yöntem, bitişik tablo satırlarındaki iç içe yer imlerinin çözülmesine yönelik yaygın bir yöntemdir. Ancak projenizin özel ihtiyaçlarına bağlı olarak başka yaklaşımlar veya teknikler de olabilir. Şunu kontrol edebilirsiniz:[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/) Mevcut özellikleri daha fazla keşfetmek için.

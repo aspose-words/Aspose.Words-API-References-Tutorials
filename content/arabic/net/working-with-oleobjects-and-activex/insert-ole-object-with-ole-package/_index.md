@@ -1,17 +1,17 @@
 ---
-title: قم بإدراج كائن Ole في Word باستخدام حزمة Ole
-linktitle: قم بإدراج كائن Ole في Word باستخدام حزمة Ole
-second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
+title: إدراج كائن Ole في Word باستخدام حزمة Ole
+linktitle: إدراج كائن Ole في Word باستخدام حزمة Ole
+second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
 description: تعرف على كيفية إدراج كائن OLE مع حزمة OLE في مستند باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # أدناه والذي يوضح كيفية إدراج كائن OLE في كلمة مع حزمة OLE باستخدام Aspose.Words for .NET.
+فيما يلي دليل خطوة بخطوة لشرح التعليمات البرمجية المصدر لـ C# أدناه والتي توضح كيفية إدراج كائن OLE في Word باستخدام حزمة OLE باستخدام Aspose.Words for .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## الخطوة 1: استيراد المراجع اللازمة
+قبل أن تبدأ، تأكد من استيراد المراجع اللازمة لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملفك المصدر.
 
 ```csharp
 using Aspose.Words;
@@ -19,16 +19,16 @@ using Aspose.Words.Drawing;
 using System.IO;
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد مستندات
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` class ومُنشئ المستندات باستخدام امتداد`DocumentBuilder` فصل.
+## الخطوة 2: إنشاء مستند جديد ومولد المستندات
+ في هذه الخطوة، سنقوم بإنشاء مستند جديد باستخدام الملف`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder` فصل.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج كائن OLE مع حزمة OLE
- استخدم أداة إنشاء المستندات`InsertOleObject`أسلوب لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
+## الخطوة 3: قم بإدراج كائن OLE مع حزمة OLE
+ استخدم منشئ المستندات`InsertOleObject`طريقة لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -42,13 +42,13 @@ using (Stream stream = new MemoryStream(bs))
 ```
 
 ## الخطوة 4: احفظ المستند
- استخدم ملف`Save` طريقة لحفظ المستند في ملف.
+ استخدم الوثيقة`Save` طريقة حفظ المستند في ملف .
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدراج كائن OLE مع حزمة OLE مع Aspose.Words for .NET
+### نموذج التعليمات البرمجية المصدر لإدراج كائن OLE مع حزمة OLE مع Aspose.Words لـ .NET
 
 ```csharp
 Document doc = new Document();
@@ -66,19 +66,19 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-هذا نموذج رمز كامل لإدخال كائن OLE مع حزمة OLE مع Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+هذا نموذج تعليمات برمجية كامل لإدراج كائن OLE مع حزمة OLE مع Aspose.Words لـ .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
 
 ## خاتمة
 
-في الختام ، لقد راجعنا دليلًا تفصيليًا خطوة بخطوة لإدراج كائن OLE في مستند Word مع حزمة OLE باستخدام Aspose.Words for .NET.
+في الختام، لقد مررنا بدليل خطوة بخطوة لإدراج كائن OLE في مستند Word باستخدام حزمة OLE باستخدام Aspose.Words for .NET.
 
-باتباع هذه الخطوات ، ستتمكن من إدراج كائنات OLE بنجاح مع حزم OLE في مستندات Word باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع اللازمة واتبع التعليمات بعناية للحصول على النتائج المرجوة.
+باتباع هذه الخطوات، ستتمكن من إدراج كائنات OLE مع حزم OLE بنجاح في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع اللازمة واتبع التعليمات بعناية للحصول على النتائج المرجوة.
 
-### الأسئلة الشائعة حول إدراج كائن أولي في كلمة مع حزمة أولي
+### الأسئلة الشائعة حول إدراج كائن ole في Word باستخدام حزمة ole
 
-#### س: ما هي أوراق الاعتماد التي أحتاجها لاستيرادها لاستخدام Aspose.Words for .NET؟
+#### س: ما هي بيانات الاعتماد التي أحتاج إلى استيرادها لاستخدام Aspose.Words لـ .NET؟
 
-ج: لاستخدام Aspose.Words مع .NET ، يلزمك استيراد المراجع التالية:
+ج: لاستخدام Aspose.Words لـ .NET، تحتاج إلى استيراد المراجع التالية:
 
 ```csharp
 using Aspose.Words;
@@ -86,9 +86,9 @@ using Aspose.Words.Drawing;
 using System.IO;
 ```
 
-#### س: كيف يتم إنشاء مستند جديد ومولد مستندات؟
+#### س: كيفية إنشاء مستند جديد ومولد المستندات؟
 
- ج: يمكنك إنشاء مستند جديد باستخدام ملف`Document` class ومُنشئ المستندات باستخدام امتداد`DocumentBuilder` الصف ، كما هو موضح أدناه:
+ ج: يمكنك إنشاء مستند جديد باستخدام`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder` الصف، كما هو موضح أدناه:
 
 ```csharp
 Document doc = new Document();
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### س: كيفية إدراج كائن OLE مع حزمة OLE في المستند؟
 
- ج: استخدم ملف`InsertOleObject` طريقة منشئ الوثيقة (`DocumentBuilder`) لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى. هنا مثال :
+ ج: استخدم`InsertOleObject` طريقة منشئ المستندات (`DocumentBuilder`) لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى. هنا مثال :
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -110,17 +110,17 @@ using (Stream stream = new MemoryStream(bs))
 }
 ```
 
-#### س: كيف تحفظ المستند؟
+#### س: كيفية حفظ الوثيقة؟
 
- ج: استخدم الوثيقة`Save`طريقة لحفظ المستند في ملف. هنا مثال :
+ ج: استخدم الوثيقة`Save`طريقة حفظ المستند في ملف . هنا مثال :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-#### س: هل يمكنك تقديم مثال كامل لإدخال كائن OLE مع حزمة OLE مع Aspose.Words for .NET؟
+#### س: هل يمكنك تقديم مثال كامل لإدراج كائن OLE مع حزمة OLE مع Aspose.Words for .NET؟
 
-ج: إليك نموذج تعليمة برمجية كاملة لإدراج كائن OLE مع حزمة OLE باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك:
+ج: إليك نموذج التعليمات البرمجية الكامل لإدراج كائن OLE مع حزمة OLE باستخدام Aspose.Words لـ .NET. تأكد من استيراد المراجع اللازمة واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك:
 
 ```csharp
 Document doc = new Document();
@@ -138,4 +138,4 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-يُختتم هذا البرنامج التعليمي الخاص بنا حول إدخال كائن OLE مع حزمة OLE في مستند Word باستخدام Aspose.Words for .NET. لا تتردد في استيراد المراجع الضرورية واتبع الخطوات الموضحة لدمج هذا الرمز في مشروعك. إذا كانت لديك أي أسئلة أخرى ، فلا تتردد في الاتصال بنا.
+بهذا نختتم برنامجنا التعليمي حول إدراج كائن OLE مع حزمة OLE في مستند Word باستخدام Aspose.Words for .NET. لا تتردد في استيراد المراجع اللازمة واتبع الخطوات الموضحة لدمج هذا الرمز في مشروعك. إذا كان لديك أي أسئلة أخرى، فلا تتردد في الاتصال بنا.

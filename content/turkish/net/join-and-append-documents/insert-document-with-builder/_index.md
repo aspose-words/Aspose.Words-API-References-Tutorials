@@ -1,25 +1,25 @@
 ---
-title: Builder ile Belge Ekle
-linktitle: Builder ile Belge Ekle
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak başka bir belgenin sonuna nasıl belge ekleyeceğinizi öğrenin.
+title: Oluşturucuyla Belge Ekle
+linktitle: Oluşturucuyla Belge Ekle
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak bir belgeyi başka bir belgenin sonuna nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/insert-document-with-builder/
 ---
 
- Bu eğitim, Aspose.Words for .NET'i kullanarak başka bir belgeye belge eklemek için nasıl kullanılacağını açıklar.`DocumentBuilder` sınıf. Sağlanan kaynak kodu, kaynak biçimlendirmesini koruyarak başka bir belgenin sonuna bir belgenin nasıl ekleneceğini gösterir.
+ Bu eğitimde Aspose.Words for .NET kullanılarak bir belgenin başka bir belgeye nasıl ekleneceği açıklanmaktadır.`DocumentBuilder` sınıf. Sağlanan kaynak kodu, kaynak formatını korurken bir belgenin başka bir belgenin sonuna nasıl ekleneceğini gösterir.
 
-## 1. Adım: Projeyi kurun
+## 1. Adım: Projeyi ayarlayın
 
-Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kitaplığı yüklendi. adresinden indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ veya yüklemek için NuGet paket yöneticisini kullanın.
-- Kaynak ve hedef belgelerin bulunduğu bir belge dizini yolu.
+- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+- Kaynak ve hedef belgelerin bulunduğu belge dizini yolu.
 
 ## 2. Adım: Kaynak ve hedef belgeleri açın
 
- kullanarak kaynak ve hedef belgeleri açın.`Document` sınıf oluşturucu Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+ Kaynak ve hedef belgeleri kullanarak açın.`Document` sınıf yapıcısı. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
 
 ```csharp
 // Belge dizininizin yolu
@@ -29,17 +29,17 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Adım 3: DocumentBuilder'ı Başlatın
+## 3. Adım: DocumentBuilder'ı başlatın
 
- Yeni bir örneğini oluştur`DocumentBuilder` sınıflandırın ve hedef belgeyi bir parametre olarak iletin.
+ Yeni bir örneğini oluşturun`DocumentBuilder` sınıfa girin ve hedef belgeyi parametre olarak iletin.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
-## Adım 4: DocumentBuilder'ı Konumlandırın
+## Adım 4: DocumentBuilder'ı konumlandırın
 
-Taşı`DocumentBuilder` kullanarak belgenin sonuna`MoveToDocumentEnd` yöntem. Mevcut içeriği eklenen belgeden ayırmak için bir sayfa sonu ekleyin.
+Taşı`DocumentBuilder` kullanarak belgenin sonuna kadar`MoveToDocumentEnd` yöntem. Mevcut içeriği eklenen belgeden ayırmak için sayfa sonu ekleyin.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -48,13 +48,13 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## 5. Adım: Kaynak belgeyi ekleyin
 
- Kullan`InsertDocument` yöntemi`DocumentBuilder` kaynak belgeyi hedef belgeye eklemek için sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak biçimlendirmesini korumak için.
+ Kullan`InsertDocument` yöntemi`DocumentBuilder` Kaynak belgeyi hedef belgeye eklemek için sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak biçimlendirmesini korumak için.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 6. Adım: Değiştirilen belgeyi kaydedin
+## Adım 6: Değiştirilen belgeyi kaydedin
 
  Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
@@ -62,9 +62,9 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanılarak başka bir belgeye belge ekleme uygulamasını tamamlar.
+Bu, Aspose.Words for .NET kullanarak bir belgenin başka bir belgeye eklenmesi işlemini tamamlar.
 
-### Aspose.Words for .NET kullanarak Document With Builder için örnek kaynak kodu 
+### Aspose.Words for .NET kullanarak Insert Document With Builder için örnek kaynak kodu 
 
 ```csharp
 	//Belge dizininizin yolu

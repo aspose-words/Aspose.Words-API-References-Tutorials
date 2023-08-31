@@ -104,7 +104,7 @@ In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET einen e
 
 Aspose.Words für .NET bietet leistungsstarke Funktionen zum Bearbeiten von Diagrammen in Word-Dokumenten. Durch den Zugriff auf einzelne Datenpunkte innerhalb einer Diagrammreihe können Sie spezifische Änderungen vornehmen, um deren Erscheinungsbild und Verhalten anzupassen. Dadurch können Sie bestimmte Datenpunkte hervorheben, Markierungssymbole ändern, Markierungsgrößen anpassen und vieles mehr, um die visuelle Darstellung Ihres Diagramms zu verbessern.
 
-Durch das Anpassen einzelner Datenpunkte haben Sie die Flexibilität, wichtige Daten hervorzuheben oder bestimmte Trends in Ihrem Diagramm hervorzuheben. Mit Aspose.Words für .NET können Sie problemlos auf Datenpunkte in verschiedenen Diagrammtypen zugreifen und diese ändern, sodass Sie optisch ansprechende und informative Diagramme in Ihren Word-Dokumenten erstellen können.
+Durch das Anpassen einzelner Datenpunkte haben Sie die Flexibilität, wichtige Daten hervorzuheben oder bestimmte Trends in Ihrem Diagramm hervorzuheben. Mit Aspose.Words für .NET können Sie problemlos auf Datenpunkte in verschiedenen Diagrammtypen zugreifen und diese ändern, sodass Sie in Ihren Word-Dokumenten optisch ansprechende und informative Diagramme erstellen können.
 
 ### FAQs
 

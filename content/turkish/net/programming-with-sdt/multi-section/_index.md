@@ -1,38 +1,38 @@
 ---
 title: Çoklu Bölüm
 linktitle: Çoklu Bölüm
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bir Word belgesindeki çok bölümlü yapılandırılmış belge etiketlerini nasıl alacağınızı ve işleyeceğinizi öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'i kullanarak bir Word belgesinde çok bölümlü yapılandırılmış belge etiketlerini nasıl alacağınızı ve işleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/multi-section/
 ---
 
-Bu öğretici, Aspose.Words for .NET kullanarak bir Word belgesinde çok bölümlü yapılandırılmış belge etiketleriyle nasıl çalışılacağını açıklar. Belgede bulunan bölüm etiketlerini alabilir ve işleyebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanılarak bir Word belgesinde çok bölümlü yapılandırılmış belge etiketleriyle nasıl çalışılacağı açıklanmaktadır. Belgede bulunan bölüm etiketlerini alıp işleyebilirsiniz.
 
 ## Önkoşullar
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- Aspose.Words for .NET kitaplığı yüklendi.
+- Aspose.Words for .NET kütüphanesi kuruldu.
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
-## 1. Adım: Belge Dizinini kurun
- Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
+## 1. Adım: Belge Dizinini Ayarlayın
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 2. Adım: Belgeyi Yükleyin ve Çok Bölümlü Etiketleri Alın
- kullanarak Word belgesini yükleyin.`Document` yapıcı, belgenin yolunu bir parametre olarak iletir. kullanarak belgedeki tüm yapılandırılmış belge etiketi aralığı başlangıç düğümlerini alın.`GetChildNodes` yöntem.
+## Adım 2: Belgeyi Yükleyin ve Çok Bölümlü Etiketleri Alın
+ Word belgesini kullanarak yükleyin`Document` yapıcı, belgenin yolunu parametre olarak iletir. kullanarak belgedeki tüm yapılandırılmış belge etiketi aralığı başlangıç düğümlerini alın.`GetChildNodes` yöntem.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
 NodeCollection tags = doc.GetChildNodes(NodeType.StructuredDocumentTagRangeStart, true);
 ```
 
-## 3. Adım: Çok Bölümlü Etiketleri İşleyin
-Yapılandırılmış belge etiketi aralığı başlangıç düğümlerinin koleksiyonunu yineleyin. Bu örnekte, her etiketin başlığını konsola yazdırıyoruz. Gereksinimlerinize göre daha fazla işlem yapabilirsiniz.
+## Adım 3: Çok Bölümlü Etiketleri İşleyin
+Yapılandırılmış belge etiketi aralığı başlangıç düğümlerinin koleksiyonunu yineleyin. Bu örnekte, her etiketin başlığını konsola yazdırıyoruz. Gereksinimlerinize göre daha fazla işlem gerçekleştirebilirsiniz.
 
 ```csharp
 foreach (StructuredDocumentTagRangeStart tag in tags)

@@ -1,17 +1,17 @@
 ---
-title: Cambiar el espacio entre párrafos asiáticos y las sangrías en un documento de Word
-linktitle: Cambiar el espacio entre párrafos asiáticos y las sangrías en un documento de Word
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a cambiar el espacio entre párrafos asiáticos y las sangrías en un documento de Word con Aspose.Words para .NET.
+title: Cambiar el espaciado y la sangría de los párrafos asiáticos en un documento de Word
+linktitle: Cambiar el espaciado y la sangría de los párrafos asiáticos en un documento de Word
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda a cambiar el espaciado y las sangrías de los párrafos asiáticos en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
-En este tutorial, lo guiaremos a través de cómo cambiar el espaciado y las sangrías de un párrafo asiático usando Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
+En este tutorial, le explicaremos cómo cambiar el espaciado y las sangrías de un párrafo asiático usando Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
 
-## Paso 1: Cargar el documento
+## Paso 1: cargar el documento
 
-Para comenzar, especifique el directorio para sus documentos y cargue el documento que contiene la tipografía asiática en un objeto Documento. Así es cómo:
+Para comenzar, especifique el directorio de sus documentos y cargue el documento que contiene la tipografía asiática en un objeto Documento. Así es cómo:
 
 ```csharp
 // Ruta al directorio de documentos.
@@ -19,9 +19,9 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Asian typography.docx");
 ```
 
-## Paso 2: cambiar el espacio entre párrafos y las sangrías
+## Paso 2: cambiar el espaciado y la sangría de los párrafos
 
-Ahora modificaremos el espaciado y las sangrías del primer párrafo del documento asiático. Así es cómo:
+Modificaremos ahora el espaciado y las sangrías del primer párrafo del documento asiático. Así es cómo:
 
 ```csharp
 ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
@@ -32,17 +32,17 @@ format.LineUnitBefore = 5; // Actualizar ParagraphFormat.SpaceBefore
 format.LineUnitAfter = 10; // Actualizar ParagraphFormat.SpaceAfter
 ```
 
-## Paso 3: Guardar el documento
+## Paso 3: guardar el documento
 
- Después de insertar el campo de formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
+ Después de insertar el campo del formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc");
 ```
 
-### Ejemplo de código fuente para cambiar el espaciado y las sangrías de los párrafos asiáticos usando Aspose.Words para .NET
+### Código fuente de ejemplo para cambiar el espaciado y sangría de párrafos asiáticos usando Aspose.Words para .NET
 
-Aquí está el código fuente completo para la función Editar espaciado entre párrafos asiáticos y sangrías con Aspose.Words para .NET:
+Aquí está el código fuente completo para la función Editar sangrías y espaciado de párrafos asiáticos con Aspose.Words para .NET:
 
 ```csharp
 
@@ -61,22 +61,22 @@ Aquí está el código fuente completo para la función Editar espaciado entre p
 
 ```
 
-Con este código podrá cambiar el espaciado y las sangrías de un párrafo asiático usando Aspose.Words para .NET.
+Con este código podrás cambiar el espaciado y las sangrías de un párrafo asiático usando Aspose.Words para .NET.
 
 ## Conclusión
 
- En este tutorial, aprendimos cómo cambiar el espaciado y las sangrías de un párrafo asiático usando Aspose.Words para .NET. Al modificar las propiedades relevantes de la`ParagraphFormat`podemos controlar el diseño y la apariencia de los párrafos asiáticos en un documento de Word. Esta característica es útil para personalizar el formato de texto con caracteres asiáticos y lograr la presentación visual deseada en documentos con contenido de idiomas mixtos.
+ En este tutorial, aprendimos cómo cambiar el espaciado y las sangrías de un párrafo asiático usando Aspose.Words para .NET. Modificando las propiedades relevantes del`ParagraphFormat`podemos controlar el diseño y la apariencia de los párrafos asiáticos en un documento de Word. Esta característica es útil para personalizar el formato del texto con caracteres asiáticos y lograr la presentación visual deseada en documentos con contenido de idiomas mixtos.
 
 ### Preguntas frecuentes
 
-#### P: ¿Qué hace la función "Cambiar el espaciado y las sangrías de los párrafos asiáticos" en Aspose.Words para .NET?
+#### P: ¿Qué hace la función "Cambiar sangrías y espaciado de párrafos asiáticos" en Aspose.Words para .NET?
 
-R: La función "Cambiar espaciado y sangría de párrafo asiático" en Aspose.Words para .NET le permite modificar las propiedades de espaciado y sangría de un párrafo asiático en un documento de Word. Puede ajustar las sangrías izquierda y derecha, la sangría de la primera línea, el espacio antes y el espacio después de los valores para controlar el diseño y la apariencia del párrafo.
+R: La función "Cambiar sangrías y espaciado de párrafos asiáticos" en Aspose.Words para .NET le permite modificar las propiedades de espaciado y sangría de un párrafo asiático en un documento de Word. Puede ajustar los valores de sangría izquierda y derecha, sangría de primera línea, espacio antes y espacio después para controlar el diseño y la apariencia del párrafo.
 
 #### P: ¿Cómo cambio el espaciado y las sangrías de un párrafo asiático usando Aspose.Words para .NET?
 
- R: Para cambiar el espaciado y las sangrías de un párrafo asiático, debe acceder a la`ParagraphFormat`del párrafo de destino y modificar sus propiedades relevantes. En el código de ejemplo proporcionado, accedemos al primer párrafo del documento y establecemos el`CharacterUnitLeftIndent`, `CharacterUnitRightIndent`, `CharacterUnitFirstLineIndent`, `LineUnitBefore` , y`LineUnitAfter` propiedades para ajustar el espaciado y las sangrías.
+ R: Para cambiar el espaciado y las sangrías de un párrafo asiático, debe acceder a la`ParagraphFormat`del párrafo de destino y modificar sus propiedades relevantes. En el código de ejemplo proporcionado, accedemos al primer párrafo del documento y configuramos el`CharacterUnitLeftIndent`, `CharacterUnitRightIndent`, `CharacterUnitFirstLineIndent`, `LineUnitBefore` , y`LineUnitAfter` propiedades para ajustar el espaciado y las sangrías.
 
 #### P: ¿Puedo aplicar estos cambios a otros párrafos del documento?
 
- R: Sí, puede aplicar estos cambios a otros párrafos del documento accediendo a sus respectivos`ParagraphFormat` objetos. El código de ejemplo apunta al primer párrafo del documento, pero puede modificar otros párrafos ajustando el índice en el`Paragraphs` colección o utilizando otros criterios para seleccionar los párrafos deseados.
+ R: Sí, puedes aplicar estos cambios a otros párrafos del documento accediendo a sus respectivos`ParagraphFormat` objetos. El código de ejemplo se dirige al primer párrafo del documento, pero puede modificar otros párrafos ajustando el índice en el`Paragraphs` colección o utilizando otros criterios para seleccionar los párrafos deseados.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/move-to-section/
 ---
-在此示例中，我们将使用提供的 C# 源代码逐步引导您了解如何使用 Aspose.Words for .NET 的 Word 文档中的移至部分功能。此功能允许您导航和操作 Word 文档中的不同部分。请按照以下步骤将此功能集成到您的应用程序中。
+在此示例中，我们将使用提供的 C# 源代码逐步引导您了解如何使用 Aspose.Words for .NET 的“移至 Word 文档中的部分”功能。此功能允许您导航和操作 Word 文档中的不同部分。请按照以下步骤将此功能集成到您的应用程序中。
 
 ## 步骤 1：创建一个新文档并添加一个部分
 

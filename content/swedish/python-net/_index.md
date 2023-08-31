@@ -17,7 +17,7 @@ Utforska kraften i Python Document API med Aspose.Words tutorials. Utvecklare ko
 
 Aspose.Words tutorials för Python vägleder utvecklare i att automatisera arbetsflöden för dokumentbearbetning. Lär dig att skapa dynamiska dokument från mallar, utföra kopplingsoperationer och hantera avancerade dokumentmanipulationer. Öka produktiviteten och effektiviteten i dokumentbearbetningsuppgifter.
 
-## Lyft Word-dokumentbehandling med Python
+## Höj Word-dokumentbehandling med Python
 
 Bemästra orddokumentbehandling med Aspose.Words för Python. Handledningar erbjuder praktiska exempel och steg-för-steg-instruktioner för att skapa professionella dokument. Omfamna Aspose.Words tutorials för att utnyttja den fulla potentialen hos Python Document API för sömlös dokumenthantering och bearbetning.
 
@@ -32,3 +32,17 @@ Lås upp värdefulla insikter från dina dokument med Aspose.Words för Pythons 
 Konvertera effektivt dokument mellan format med Aspose.Words för Python. Effektivisera orddokumentbehandlingen och förenkla dina dokumenthanteringsuppgifter. 
 ### [Dokumentskydd](./document-protection/)
 Säkra dina dokument med Aspose.Words för Python! Implementera lösenordskryptering, användarbehörigheter och digitala signaturer för robust dokumentskydd.
+### [Dokumentstruktur och innehållshantering](./document-structure-and-content-manipulation/)
+Utforska Aspose.Words tutorials för Python och .NET, med fokus på dokumentstruktur och innehållsmanipulation. Lär dig hur du navigerar, extraherar och modifierar dokumentelement effektivt. Exempel på källkod tillhandahålls.
+### [Innehållsextraktion och manipulation](./content-extraction-and-manipulation/)
+Upptäck en värld av innehållsextraktion och manipulation med Aspose.Words tutorials. Lär dig hur du effektivt extraherar och manipulerar innehåll med Python och .NET, vilket förbättrar dina dokumentbearbetningsmöjligheter.
+### [Dokumentkombination och jämförelse](./document-combining-and-comparison/)
+Upptäck omfattande självstudier om dokumentkombination och jämförelse med Aspose.Words för Python och .NET. Lär dig hur du sammanfogar och jämför dokument sömlöst, vilket förbättrar dina dokumentbearbetningsarbetsflöden.
+### [Dokumentdelning och formatering](./document-splitting-and-formatting/)
+Utforska Aspose.Words-handledningarna om dokumentdelning och formatering i Python och .NET. Lär dig att dela och formatera dokument effektivt, vilket förbättrar dina dokumentbearbetningsuppgifter. 
+### [Dokumentalternativ och inställningar](./document-options-and-settings/)
+Utforska Aspose.Words tutorials om dokumentalternativ och inställningar i Python och .NET. Lär dig att optimera dokumentskapande och formatering med hjälp av steg-för-steg-vägledning och källkodsexempel.
+### [Datavisualisering och formatering](./data-visualization-and-formatting/)
+Upptäck Aspose.Words-handledningar om datavisualisering och formatering i Python och .NET. Lär dig att presentera data effektivt, skapa fantastiska rapporter och formatera dokument programmatiskt.
+### [Tabeller och formatering](./tables-and-formatting/)
+Dyk in i Aspose.Words-handledningar om tabeller och formatering i Python- och .NET-applikationer. Lär dig att skapa, anpassa och utforma tabeller för visuellt övertygande dokument. 

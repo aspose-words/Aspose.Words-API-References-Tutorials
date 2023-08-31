@@ -1,58 +1,58 @@
 ---
 title: En Boy Oranı Kilitli
 linktitle: En Boy Oranı Kilitli
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bir Word belgesindeki bir şeklin en boy oranını nasıl kilitleyeceğinizi veya kilidini açacağınızı öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir şeklin en boy oranını nasıl kilitleyeceğinizi veya kilidini açacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-shapes/aspect-ratio-locked/
 ---
 
-Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesindeki bir şeklin en boy oranının nasıl kilitleneceğini veya kilidinin nasıl açılacağını açıklar. En boy oranını kilitleyerek, yeniden boyutlandırırken şeklin orijinal oranlarını koruyabilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanılarak bir Word belgesindeki bir şeklin en boy oranının nasıl kilitleneceği veya kilidinin açılacağı açıklanmaktadır. En boy oranını kilitleyerek, şekli yeniden boyutlandırırken şeklin orijinal oranlarını koruyabilirsiniz.
 
 ## Önkoşullar
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- Aspose.Words for .NET kitaplığı yüklendi.
+- Aspose.Words for .NET kütüphanesi kuruldu.
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
-## 1. Adım: Belge Dizinini kurun
- Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
+## 1. Adım: Belge Dizinini Ayarlayın
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 2. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluştur`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmak için nesne.
+## Adım 2: Yeni Bir Belge ve DocumentBuilder Oluşturun
+ Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmaya itiraz edin.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Bir Görüntü Şekli Ekleyin
- Kullan`InsertImage` yöntemi`DocumentBuilder` belgeye bir görüntü şekli eklemek için nesne. Görüntü dosyasının yolunu bir parametre olarak sağlayın.
+## 3. Adım: Bir Görüntü Şekli Ekleme
+ Kullan`InsertImage` yöntemi`DocumentBuilder` Belgeye bir görüntü şekli eklemek için nesne. Görüntü dosyasının yolunu parametre olarak belirtin.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
 ```
 
-## 4. Adım: En Boy Oranını Kilitleyin veya Açın
- Yı kur`AspectRatioLocked` şeklin özelliği`true` veya`false` sırasıyla en boy oranını kilitlemek veya kilidini açmak için.
+## 4. Adım: En Boy Oranını Kilitleyin veya Kilidini Açın
+ Yı kur`AspectRatioLocked` şeklin özelliği`true` veya`false` En boy oranını sırasıyla kilitlemek veya kilidini açmak için.
 
 ```csharp
-shape.AspectRatioLocked = false; //En boy oranının kilidini aç
+shape.AspectRatioLocked = false; //En boy oranının kilidini açın
 ```
 
-## 5. Adım: Belgeyi Kaydedin
- kullanarak belgeyi belirtilen dizine kaydedin.`Save` yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte, belgeyi "WorkingWithShapes.AspectRatioLocked.docx" olarak kaydediyoruz.
+## Adım 5: Belgeyi Kaydedin
+ Belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithShapes.AspectRatioLocked.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ```
 
-### Aspose.Words for .NET kullanılarak En Boy Oranı Kilitli için örnek kaynak kodu 
+### Aspose.Words for .NET kullanılarak Kilitlenen En Boy Oranı için örnek kaynak kodu 
 
 ```csharp
 	//Belge dizininizin yolu
