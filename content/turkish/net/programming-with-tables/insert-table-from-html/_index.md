@@ -1,21 +1,21 @@
 ---
 title: Html'den Tablo Ekle
 linktitle: Html'den Tablo Ekle
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile HTML'den bir Word belgesine tablo eklemeyi öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile HTML'den Word belgesine nasıl tablo ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/insert-table-from-html/
 ---
 
-Bu öğreticide, Aspose.Words for .NET kullanarak HTML'den bir Word belgesine tablo eklemeyi öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, HTML'den Word belgelerinize programlı olarak tablolar ekleyebileceksiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak HTML'den bir Word belgesine nasıl tablo ekleyeceğimizi öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda HTML'den tabloları Word belgelerinize programlı olarak ekleyebileceksiniz.
 
 ## Adım 1: Proje Kurulumu
 1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
-Belge ve belge oluşturucu ile Sözcük İşleme'yi başlatmak için şu adımları izleyin:
+Belge ve belge oluşturucuyla Sözcük İşleme'yi başlatmak için şu adımları izleyin:
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -28,10 +28,10 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
+"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
 ## 3. Adım: Tabloyu HTML'den ekleme
-Ardından, HTML kodunu kullanarak tabloyu belgeye ekleyeceğiz. Aşağıdaki kodu kullanın:
+Daha sonra tabloyu HTML kodunu kullanarak belgeye ekleyeceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 builder.InsertHtml("<table>" +
@@ -46,10 +46,10 @@ builder.InsertHtml("<table>" +
 "</table>");
 ```
 
- Burada kullandığımız`InsertHtml` tabloyu içeren HTML'yi eklemek için belge oluşturucunun yöntemi. Belirtilen HTML, iki satır ve her satırda iki hücre içeren bir tablo oluşturur. HTML kodunu ihtiyaçlarınıza göre değiştirerek tablonun içeriğini özelleştirebilirsiniz.
+ Burada şunu kullanıyoruz:`InsertHtml` Tabloyu içeren HTML'yi eklemek için belge oluşturucunun yöntemi. Belirtilen HTML, iki satır ve her satırda iki hücre içeren bir tablo oluşturur. HTML kodunu ihtiyaçlarınıza göre değiştirerek tablonun içeriğini özelleştirebilirsiniz.
 
-## 4. Adım: Değiştirilen belgeyi kaydetme
-Son olarak, değiştirilen belgeyi HTML'den eklenen tablo ile kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
+## Adım 4: Değiştirilen belgeyi kaydetme
+Son olarak, değiştirilen belgeyi HTML'den eklenen tabloyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 
 Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### Aspose.Words for .NET kullanarak Html'den Tablo Ekle için örnek kaynak kodu 
+### Aspose.Words for .NET kullanarak Html'den Tablo Ekleme için örnek kaynak kodu 
 
 ```csharp
 	//Belge dizininizin yolu
@@ -80,4 +80,4 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
 ## Çözüm
-Bu öğreticide, Aspose.Words for .NET kullanarak HTML'den bir Word belgesine tablo eklemeyi öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, HTML'den Word belgelerinize programlı olarak tablolar ekleyebilirsiniz. Bu özellik, tablo verilerini HTML kaynaklarından Word belgelerinize dönüştürmenize ve içe aktarmanıza olanak tanır.
+Bu eğitimde Aspose.Words for .NET kullanarak HTML'den bir Word belgesine nasıl tablo ekleneceğini öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, HTML'den tabloları program aracılığıyla Word belgelerinize ekleyebilirsiniz. Bu özellik, HTML kaynaklarından tablo verilerini Word belgelerinize dönüştürmenize ve içe aktarmanıza olanak tanır.

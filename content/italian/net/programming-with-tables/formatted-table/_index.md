@@ -1,18 +1,18 @@
 ---
 title: Tabella formattata
 linktitle: Tabella formattata
-second_title: Aspose.Words API di elaborazione dei documenti
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come creare una tabella formattata in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/formatted-table/
 ---
 
-In questo tutorial impareremo come creare una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di creare tabelle con formattazione personalizzata nei tuoi documenti Word a livello di codice.
+In questo tutorial impareremo come creare una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzionalità. Alla fine di questo tutorial, sarai in grado di creare tabelle con formattazione personalizzata nei tuoi documenti Word a livello di codice.
 
 ## Passaggio 1: impostazione del progetto
 1. Avvia Visual Studio e crea un nuovo progetto C#.
-2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
+2. Aggiungi un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: creazione del documento e inizializzazione del generatore di documenti
 Per iniziare a costruire la tabella formattata, dobbiamo creare un nuovo documento e inizializzare il generatore di documenti. Segui questi passi:
@@ -26,10 +26,10 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
+Assicurati di sostituire "LA TUA DIRECTORY DOCUMENTI" con il percorso effettivo della directory dei documenti.
 
 ## Passaggio 3: creazione della tabella formattata
-Successivamente, costruiremo la tabella formattata utilizzando i metodi forniti dal generatore di documenti. Usa il seguente codice:
+Successivamente, creeremo la tabella formattata utilizzando i metodi forniti dal generatore di documenti. Utilizza il seguente codice:
 
 ```csharp
 // Inizia la costruzione dell'array
@@ -97,10 +97,10 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Qui usiamo il generatore di documenti per costruire la tabella passo dopo passo. Iniziamo chiamando`StartTable()` per inizializzare la tabella. Quindi usiamo`InsertCell()` per inserire celle e`Write()` per aggiungere contenuto a ciascuna cella. Utilizziamo anche diverse proprietà di formattazione per definire la formattazione di righe, celle e testo della tabella.
+ Qui utilizziamo il generatore di documenti per costruire la tabella passo dopo passo. Iniziamo chiamando`StartTable()` per inizializzare la tabella. Quindi usiamo`InsertCell()` per inserire celle e`Write()` per aggiungere contenuto a ciascuna cella. Utilizziamo anche diverse proprietà di formattazione per definire la formattazione di righe, celle e testo della tabella.
 
-## Passaggio 4: salvare il documento
-Infine, dobbiamo salvare il documento contenente la tabella formattata. Usa il seguente codice:
+## Passaggio 4: salva il documento
+Infine, dobbiamo salvare il documento contenente la tabella formattata. Utilizza il seguente codice:
 
 ```csharp
 // Salva il documento
@@ -109,7 +109,7 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 
 Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### Esempio di codice sorgente per la tabella formattata utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per tabella formattata utilizzando Aspose.Words per .NET 
 
 ```csharp
 	//Percorso della directory dei documenti
@@ -119,7 +119,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Table table = builder.StartTable();
 	builder.InsertCell();
-	// La formattazione a livello di tabella deve essere applicata dopo che almeno una riga è presente nella tabella.
+	// La formattazione estesa della tabella deve essere applicata dopo che nella tabella è presente almeno una riga.
 	table.LeftIndent = 20.0;
 	// Imposta l'altezza e definisci la regola dell'altezza per la riga di intestazione.
 	builder.RowFormat.Height = 40.0;
@@ -131,7 +131,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 	builder.Font.Bold = true;
 	builder.CellFormat.Width = 100.0;
 	builder.Write("Header Row,\n Cell 1");
-	// Non abbiamo bisogno di specificare la larghezza di questa cella perché è ereditata dalla cella precedente.
+	// Non è necessario specificare la larghezza di questa cella perché è ereditata dalla cella precedente.
 	builder.InsertCell();
 	builder.Write("Header Row,\n Cell 2");
 	builder.InsertCell();
@@ -145,7 +145,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 	builder.RowFormat.Height = 30.0;
 	builder.RowFormat.HeightRule = HeightRule.Auto;
 	builder.InsertCell();
-	// Ripristina la formattazione dei caratteri.
+	// Reimposta la formattazione dei caratteri.
 	builder.Font.Size = 12;
 	builder.Font.Bold = false;
 	builder.Write("Row 1, Cell 1 Content");
@@ -169,4 +169,4 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come creare una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi creare tabelle personalizzate con una formattazione specifica nei documenti di Word a livello di codice. Questa funzione ti consente di presentare e strutturare i tuoi dati in modo visivamente accattivante e organizzato.
+In questo tutorial, abbiamo imparato come creare una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo e implementando il codice C# fornito, puoi creare tabelle personalizzate con formattazione specifica nei tuoi documenti Word a livello di codice. Questa funzionalità ti consente di presentare e strutturare i tuoi dati in modo visivamente accattivante e organizzato.

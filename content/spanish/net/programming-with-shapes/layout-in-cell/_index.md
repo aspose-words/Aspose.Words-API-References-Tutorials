@@ -1,20 +1,20 @@
 ---
 title: Diseño en celda
 linktitle: Diseño en celda
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a diseñar una forma dentro de una celda de tabla en un documento de Word usando Aspose.Words para .NET.
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda a diseñar una forma dentro de una celda de una tabla en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-shapes/layout-in-cell/
 ---
 
-Este tutorial explica cómo diseñar una forma dentro de una celda de tabla en un documento de Word usando Aspose.Words para .NET. Al ajustar las propiedades de la forma y usar las opciones de diseño, puede controlar el posicionamiento y la apariencia de la forma dentro de la celda.
+Este tutorial explica cómo diseñar una forma dentro de una celda de una tabla en un documento de Word usando Aspose.Words para .NET. Al ajustar las propiedades de la forma y utilizar las opciones de diseño, puede controlar la posición y la apariencia de la forma dentro de la celda.
 
-## requisitos previos
+## Requisitos previos
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
+- Conocimientos básicos de C# y procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
  Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
@@ -23,8 +23,8 @@ Para seguir este tutorial, necesita tener lo siguiente:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Paso 2: Cree un nuevo documento y DocumentBuilder
- Crear una nueva instancia de la`Document` clase y un`DocumentBuilder` objeto de trabajar con el documento.
+## Paso 2: cree un nuevo documento y DocumentBuilder
+ Crear una nueva instancia del`Document` clase y un`DocumentBuilder` objeto de trabajar con el documento.
 
 ```csharp
 Document doc = new Document();
@@ -48,7 +48,7 @@ builder.EndTable();
 ```
 
 ## Paso 4: crea y formatea la forma
- Crear un`Shape` objeto y configurar sus propiedades para definir la marca de agua. Establezca la forma que se distribuirá dentro de una celda usando el`IsLayoutInCell` propiedad.
+ Crear un`Shape` objeto y configurar sus propiedades para definir la marca de agua. Establezca la forma que se presentará dentro de una celda usando el`IsLayoutInCell` propiedad.
 
 ```csharp
 Shape watermark = new Shape(doc, ShapeType.TextPlainText)
@@ -64,8 +64,8 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 };
 ```
 
-## Paso 5: Personaliza la forma
- Personalice la apariencia y el texto de la forma de la marca de agua configurando propiedades como`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, etc.
+## Paso 5: personaliza la forma
+ Personalice la apariencia y el texto de la forma de la marca de agua estableciendo propiedades como`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, etc.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Paso 6: inserte la forma en el documento
-Inserte la forma de marca de agua en el documento usando el`InsertNode` metodo de la`DocumentBuilder` objeto. Coloque la forma usando el`MoveTo` para colocarlo después de la última ejecución en el documento.
+Inserte la forma de la marca de agua en el documento usando el`InsertNode` método de la`DocumentBuilder` objeto. Coloque la forma usando el`MoveTo` método para colocarlo después de la última ejecución en el documento.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -85,8 +85,8 @@ builder.MoveTo(run);
 builder.InsertNode(watermark);
 ```
 
-## Paso 7: Guarde el documento
- Guarde el documento en el directorio especificado usando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithShapes.LayoutInCell.docx".
+## Paso 7: guarde el documento
+ Guarde el documento en el directorio especificado utilizando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithShapes.LayoutInCell.docx".
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
@@ -95,7 +95,7 @@ doc
 .Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-### Ejemplo de código fuente para Layout In Cell usando Aspose.Words para .NET 
+### Código fuente de ejemplo para Layout In Cell usando Aspose.Words para .NET 
 
 ```csharp
 	//Ruta a su directorio de documentos
@@ -137,4 +137,4 @@ doc
 	doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-¡Eso es todo! Ha diseñado con éxito una forma dentro de una celda de tabla en un documento de Word utilizando Aspose.Words para .NET.
+¡Eso es todo! Ha diseñado con éxito una forma dentro de una celda de una tabla en un documento de Word utilizando Aspose.Words para .NET.

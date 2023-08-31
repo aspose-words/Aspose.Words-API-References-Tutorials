@@ -2,19 +2,19 @@
 title: Ajuster automatiquement le tableau au contenu
 linktitle: Ajuster automatiquement le tableau au contenu
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment ajuster automatiquement un tableau à son contenu dans un document Word à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment adapter automatiquement un tableau à son contenu dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 
-Dans ce didacticiel, nous apprendrons à utiliser Aspose.Words pour .NET pour adapter automatiquement un tableau à son contenu dans un document Word à l'aide de C#. Nous allons passer par le processus étape par étape d'écriture de code pour réaliser cette fonctionnalité. À la fin de ce didacticiel, vous comprendrez clairement comment manipuler des tableaux dans des documents Word par programme.
+Dans ce didacticiel, nous allons apprendre à utiliser Aspose.Words for .NET pour ajuster automatiquement un tableau à son contenu dans un document Word à l'aide de C#. Nous passerons en revue le processus étape par étape d’écriture de code pour obtenir cette fonctionnalité. À la fin de ce didacticiel, vous comprendrez clairement comment manipuler par programmation les tableaux dans les documents Word.
 
 ## Étape 1 : Configurer le projet
 1. Lancez Visual Studio et créez un nouveau projet C#.
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
-## Étape 2 : Chargez le document Word
+## Étape 2 : Chargez le document Word
 Pour démarrer le traitement de texte avec le tableau, nous devons charger le document Word qui contient le tableau. Suivez ces étapes:
 
 ```csharp
@@ -25,9 +25,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-Assurez-vous de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre document.
+Assurez-vous de remplacer « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin réel d'accès à votre document.
 
-## Étape 3 : Accédez au tableau et adaptez-le automatiquement au contenu
+## Étape 3 : accédez au tableau et ajustez-le automatiquement au contenu
 Ensuite, nous devons accéder au tableau dans le document et appliquer le comportement d'ajustement automatique. Utilisez le code suivant :
 
 ```csharp
@@ -38,19 +38,19 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
- Ici, nous coulons le premier nœud enfant de type`Table` à partir du document, puis à l'aide de la`AutoFit` méthode avec la`AutoFitToContents` comportement pour ajuster la largeur du tableau en fonction de son contenu.
+ Ici, nous castons le premier nœud enfant de type`Table` à partir du document, puis en utilisant le`AutoFit` méthode avec le`AutoFitToContents` comportement pour ajuster la largeur du tableau en fonction de son contenu.
 
-## Étape 4 : Enregistrer le document modifié
-Enfin, nous devons enregistrer le document modifié avec le tableau ajusté automatiquement. Utilisez le code suivant :
+## Étape 4 : Enregistrez le document modifié
+Enfin, nous devons enregistrer le document modifié avec le tableau auto-ajusté. Utilisez le code suivant :
 
 ```csharp
-// Enregistrer le document modifié
+// Enregistrez le document modifié
 doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 ```
 
 Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour le document de sortie.
 
-### Exemple de code source pour l'ajustement automatique du tableau au contenu à l'aide d'Aspose.Words pour .NET 
+### Exemple de code source pour Ajuster automatiquement la table au contenu à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
 	//Chemin d'accès à votre répertoire de documents
@@ -63,4 +63,4 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ```
 
 ## Conclusion
-Dans ce didacticiel, nous avons appris à ajuster automatiquement un tableau à son contenu dans un document Word à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape et en implémentant le code C# fourni, vous pouvez manipuler des tableaux dans vos documents Word par programmation. Cela vous permet d'ajuster dynamiquement la largeur du tableau en fonction de son contenu, fournissant un document plus professionnel et visuellement attrayant.
+Dans ce didacticiel, nous avons appris à ajuster automatiquement un tableau à son contenu dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en implémentant le code C# fourni, vous pouvez manipuler les tableaux de vos documents Word par programme. Cela vous permet d'ajuster dynamiquement la largeur du tableau en fonction de son contenu, fournissant ainsi un document plus professionnel et visuellement attrayant.

@@ -1,22 +1,22 @@
 ---
-title: Convertir metarchivos a emf o wmf
-linktitle: Convertir metarchivos a emf o wmf
-second_title: API de procesamiento de documentos de Aspose.Words
+title: Convertir metarchivos a Emf o Wmf
+linktitle: Convertir metarchivos a Emf o Wmf
+second_title: API de procesamiento de documentos Aspose.Words
 description: Guía paso a paso para convertir metarchivos a formatos EMF o WMF al convertir un documento a HTML con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 ---
 
-En este tutorial, lo guiaremos a través del código fuente de C# para convertir metarchivos a formato EMF o WMF con Aspose.Words para .NET. Esta función le permite convertir imágenes en formato de metarchivo a formatos más compatibles, como EMF o WMF, al convertir un documento a HTML.
+En este tutorial, lo guiaremos a través del código fuente de C# para convertir metarchivos al formato EMF o WMF con Aspose.Words para .NET. Esta función le permite convertir imágenes en formato metarchivo a formatos más compatibles, como EMF o WMF, al convertir un documento a HTML.
 
-## Paso 1: Configuración del proyecto
+## Paso 1: configuración del proyecto
 
-Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que en su proyecto se haga referencia a la biblioteca Aspose.Words para .NET.
 
-## Paso 2: Insertar una imagen en el documento
+## Paso 2: insertar una imagen en el documento
 
-En este paso, insertaremos una imagen en el documento a convertir. Use el siguiente código para insertar una imagen de una fuente de datos usando una etiqueta HTML:
+En este paso, insertaremos una imagen en el documento a convertir. Utilice el siguiente código para insertar una imagen de una fuente de datos utilizando una etiqueta HTML:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,27 +36,27 @@ builder.InsertHtml(
 
  Este código crea una instancia de`Document` y`DocumentBuilder` para construir el documento. Se inserta un`<img>` etiqueta en el documento con una imagen codificada en base64.
 
-## Paso 3: establece las opciones de guardado de HTML
+## Paso 3: configurar las opciones de guardado de HTML
 
-Ahora configuraremos las opciones de guardado de HTML, incluido el formato de metarchivo que se usará para las imágenes. Usa el siguiente código:
+Ahora configuraremos las opciones de guardado de HTML, incluido el formato de metarchivo que se usará para las imágenes. Utilice el siguiente código:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
 ```
 
- Este código crea una instancia de`HtmlSaveOptions` y conjuntos`MetafileFormat` a`HtmlMetafileFormat.EmfOrWmf` para especificar que los metarchivos deben convertirse a formato EMF o WMF al convertirlos a HTML.
+ Este código crea una instancia de`HtmlSaveOptions` y conjuntos`MetafileFormat` a`HtmlMetafileFormat.EmfOrWmf` para especificar que los metarchivos deben convertirse al formato EMF o WMF al convertir a HTML.
 
-## Paso 4: Convertir y guardar el documento a HTML
+## Paso 4: convertir y guardar el documento a HTML
 
-Finalmente convertiremos el documento a HTML utilizando las opciones de guardar HTML previamente definidas. Usa el siguiente código:
+Finalmente convertiremos el documento a HTML usando las opciones de guardar HTML definidas previamente. Utilice el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
 ```
 
-Este código convierte el documento a HTML y lo guarda en un archivo con los metarchivos convertidos en formato EMF o WMF, según las opciones de guardado establecidas.
+Este código convierte el documento a HTML y lo guarda en un archivo con los metarchivos convertidos en formato EMF o WMF, según las opciones de guardado configuradas.
 
-### Ejemplo de código fuente para convertir metarchivos a Emf o Wmf usando Aspose.Words para .NET
+### Código fuente de ejemplo para convertir metarchivos a Emf o Wmf usando Aspose.Words para .NET
 
 ```csharp
 
@@ -83,4 +83,4 @@ Este código convierte el documento a HTML y lo guarda en un archivo con los met
 
  Asegúrese de especificar la ruta correcta al directorio de documentos en el`dataDir` variable.
 
-Ahora ha aprendido cómo convertir metarchivos a formatos EMF o WMF al convertir un documento a HTML usando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede administrar fácilmente metarchivos en sus documentos HTML convertidos.
+Ahora ha aprendido cómo convertir metarchivos a formatos EMF o WMF al convertir un documento a HTML usando Aspose.Words para .NET. Si sigue la guía paso a paso proporcionada en este tutorial, podrá administrar fácilmente metarchivos en sus documentos HTML convertidos.

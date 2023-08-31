@@ -100,6 +100,6 @@ Yes, you can apply different formatting, styles, and fonts to each section using
 ### Is Aspose.Words suitable for generating reports?
 Absolutely! Aspose.Words for Python is widely used for generating various types of reports and documents with precise formatting.
 
-### Where can I access the official documentation and downloads?
+### Where can I access the  documentation and downloads?
 Visit the [Aspose.Words for Python documentation](https://reference.aspose.com/words/python-net/) and download the library from [Aspose.Words Python Releases](https://releases.aspose.com/words/python/).
 

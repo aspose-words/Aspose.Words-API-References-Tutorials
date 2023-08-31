@@ -1,28 +1,28 @@
 ---
-title: Word Belgesinde Üstbilgi Altbilgilere Taşı
-linktitle: Word Belgesinde Üstbilgi Altbilgilere Taşı
-second_title: Aspose.Words Belge İşleme API'sı
-description: Bu adım adım kılavuz ile Word belgelerinde üst bilgiler ve alt bilgilerde gezinmek ve bunları değiştirmek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
+title: Word Belgesinde Üst Bilgilere Alt Bilgilere Taşı
+linktitle: Word Belgesinde Üst Bilgilere Alt Bilgilere Taşı
+second_title: Aspose.Words Belge İşleme API'si
+description: Bu adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerinde üstbilgi ve altbilgilerde gezinmeyi ve bunları değiştirmeyi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
-Bu örnekte, Aspose.Words for .NET'in Üst Bilgilere Alt Bilgilere Taşı özelliğini inceleyeceğiz. Aspose.Words, geliştiricilerin Word belgelerini program aracılığıyla oluşturmasına, değiştirmesine ve dönüştürmesine olanak sağlayan güçlü bir belge işleme kitaplığıdır. Üstbilgilere/Altbilgilere Taşı özelliği, bir belge içindeki farklı üstbilgilere ve altbilgilere gitmemizi ve bunlara içerik eklememizi sağlar.
+Bu örnekte Aspose.Words for .NET'in Başlıklara Alt Bilgilere Taşı özelliğini inceleyeceğiz. Aspose.Words, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır. Üstbilgilere/Altbilgilere Taşı özelliği, bir belgedeki farklı üstbilgilere ve altbilgilere gitmemize ve bunlara içerik eklememize olanak tanır.
 
-Aspose.Words for .NET kullanarak Üstbilgilere/Altbilgilere Taşı özelliğinin nasıl kullanılacağını anlamak için kaynak kodunu adım adım inceleyelim.
+Aspose.Words for .NET kullanarak Üst Bilgilere/Alt Bilgilere Taşı özelliğinin nasıl kullanılacağını anlamak için kaynak kodunu adım adım inceleyelim.
 
-## 1. Adım: Belge ve belge oluşturucuyu başlatma
+## 1. Adım: Belgeyi ve belge oluşturucuyu başlatma
 
-Önce Document ve DocumentBuilder nesnelerini başlatın:
+Öncelikle Document ve DocumentBuilder nesnelerini başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Üst bilgileri ve alt bilgileri yapılandırma
+## 2. Adım: Üstbilgileri ve altbilgileri yapılandırma
 
-Belge için üstbilgi/altbilgi ayarlarını belirtin. Bu örnekte, üst bilgileri ve alt bilgileri ilk sayfa ve tek/çift sayfalar için farklı olacak şekilde ayarladık:
+Belgenin üstbilgi/altbilgi ayarlarını belirtin. Bu örnekte, üstbilgi ve altbilgileri ilk sayfa ve tek/çift sayfalar için farklı olacak şekilde ayarladık:
 
 ```csharp
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
@@ -31,7 +31,7 @@ builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
 ## 3. Adım: Farklı sayfalar için başlıklar oluşturma
 
-Her başlık türüne gidin ve bunlara içerik ekleyin. Bu örnekte, ilk sayfa, çift sayfalar ve diğer tüm sayfalar için başlıklar oluşturuyoruz:
+Her başlık türüne gidin ve bunlara içerik ekleyin. Bu örnekte ilk sayfa, çift sayfalar ve diğer tüm sayfalar için başlıklar oluşturuyoruz:
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
@@ -45,7 +45,7 @@ builder.Write("Header for all other pages");
 ```
 
 ## 4. Adım: Belgede sayfalar oluşturma
-Birden çok sayfa oluşturmak için belgeye içerik ekleyin. Örneğin:
+Birden fazla sayfa oluşturmak için belgeye içerik ekleyin. Örneğin:
 
 ```csharp
 // Belgede iki sayfa oluşturun.
@@ -54,15 +54,15 @@ builder.Writeln("Page1");
 builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("Page2");
 ```
-## 5. Adım: Belgeyi kaydetme
+## Adım 5: Belgeyi kaydetme
 
-Değiştirilen belgeyi istediğiniz bir konuma kaydedin:
+Değiştirilen belgeyi istediğiniz konuma kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```
 
-Uygun dosya yolunu ve biçimini (ör. DOCX) belirttiğinizden emin olun.
+Uygun dosya yolunu ve formatını (örn. DOCX) belirttiğinizden emin olun.
 
 ### Aspose.Words for .NET kullanarak Üst Bilgilere/Alt Bilgilere Taşı için örnek kaynak kodu
 
@@ -70,7 +70,7 @@ Uygun dosya yolunu ve biçimini (ör. DOCX) belirttiğinizden emin olun.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//İlk, çift ve tek sayfalar için farklı üstbilgiler ve altbilgiler istediğimizi belirtin.
+//İlk, çift ve tek sayfalar için üstbilgi ve altbilgilerin farklı olmasını istediğimizi belirtin.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
@@ -93,26 +93,26 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 
 ## Çözüm
 
-Bu örnekte, Aspose.Words for .NET'in Üst Bilgilere/Alt Bilgilere Taşı özelliğini inceledik. DocumentBuilder sınıfını kullanarak bir Word belgesinde farklı üstbilgilere ve altbilgilere nasıl gidileceğini ve bunlara içerik ekleneceğini öğrendik. Bu özellik, geliştiricilerin üstbilgileri ve altbilgileri belirli sayfalar veya bölümler için özelleştirmesine olanak tanıyarak profesyonel ve yapılandırılmış belgeler oluşturmada esneklik sağlar. Aspose.Words for .NET, Word belgelerini program aracılığıyla manipüle etmek için güçlü bir araç seti sağlar ve bu da onu belge işleme uygulamaları için temel bir kitaplık haline getirir.
+Bu örnekte Aspose.Words for .NET'in Üst Bilgilere/Alt Bilgilere Taşı özelliğini inceledik. DocumentBuilder sınıfını kullanarak bir Word belgesindeki farklı üstbilgilere ve altbilgilere nasıl gezineceğimizi ve bunlara nasıl içerik ekleyeceğimizi öğrendik. Bu özellik, geliştiricilerin belirli sayfalar veya bölümler için üstbilgileri ve altbilgileri özelleştirmesine olanak tanıyarak profesyonel ve yapılandırılmış belgeler oluşturmada esneklik sağlar. Aspose.Words for .NET, Word belgelerinin programlı olarak işlenmesi için güçlü bir araç seti sağlar ve bu da onu belge işleme uygulamaları için önemli bir kütüphane haline getirir.
 
-### Word belgesinde üstbilgi altbilgilerine geçiş için SSS
+### Word belgesindeki üstbilgi altbilgilerine geçişle ilgili SSS'ler
 
 #### S: Aspose.Words for .NET'teki Üst Bilgilere/Alt Bilgilere Taşı özelliğinin amacı nedir?
 
-C: Aspose.Words for .NET'teki Üstbilgilere/Altbilgilere Taşı özelliği, geliştiricilerin bir Word belgesi içindeki farklı üstbilgilere ve altbilgilere gitmesine ve bunlara program aracılığıyla içerik eklemesine olanak tanır. Belgedeki farklı sayfalar veya bölümler için üst bilgileri ve alt bilgileri özelleştirmeniz gerektiğinde kullanışlıdır.
+C: Aspose.Words for .NET'teki Üstbilgilere/Altbilgilere Taşı özelliği, geliştiricilerin bir Word belgesi içindeki farklı üstbilgilere ve altbilgilere gitmesine ve bunlara programlı olarak içerik eklemesine olanak tanır. Belgedeki farklı sayfalar veya bölümler için üstbilgileri ve altbilgileri özelleştirmeniz gerektiğinde kullanışlıdır.
 
-#### S: Belgedeki farklı sayfalar için farklı üstbilgiler ve altbilgiler alabilir miyim?
+#### S: Belgedeki farklı sayfalar için farklı üstbilgi ve altbilgilere sahip olabilir miyim?
 
-C: Evet, sırasıyla PageSetup.DifferentFirstPageHeaderFooter ve PageSetup.OddAndEvenPagesHeaderFooter özelliklerini kullanarak ilk sayfa, çift sayfalar ve tek sayfalar için farklı üst bilgiler ve alt bilgiler belirtebilirsiniz.
+C: Evet, sırasıyla PageSetup.DifferentFirstPageHeaderFooter ve PageSetup.OddAndEvenPagesHeaderFooter özelliklerini kullanarak ilk sayfa, çift sayfalar ve tek sayfalar için farklı üstbilgiler ve altbilgiler belirtebilirsiniz.
 
 #### S: Belirli üstbilgilere ve altbilgilere nasıl içerik ekleyebilirim?
 
-Y: Belirli üstbilgilere ve altbilgilere içerik eklemek için DocumentBuilder sınıfının MoveToHeaderFooter yöntemini kullanın. Gereksiniminize göre HeaderFirst, HeaderEven ve HeaderPrimary üstbilgilerine veya FooterFirst, FooterEven ve FooterPrimary altbilgilerine gidebilirsiniz.
+C: Belirli üstbilgilere ve altbilgilere içerik eklemek için DocumentBuilder sınıfının MoveToHeaderFooter yöntemini kullanın. Gereksiniminize bağlı olarak HeaderFirst, HeaderEven ve HeaderPrimary üstbilgilerine veya FooterFirst, FooterEven ve FooterPrimary altbilgilerine gidebilirsiniz.
 
-#### S: Belgedeki belirli bir bölüm için üst bilgiler ve alt bilgiler oluşturabilir miyim?
+#### S: Belgedeki belirli bir bölüm için üstbilgi ve altbilgi oluşturabilir miyim?
 
-Y: Evet, DocumentBuilder sınıfının MoveToSection yöntemini kullanarak belgede belirli bir bölüme gidebilir ve ardından bu bölümde üst bilgiler ve alt bilgiler oluşturabilirsiniz.
+C: Evet, belgedeki belirli bir bölüme gitmek ve ardından o bölüm içinde üstbilgiler ve altbilgiler oluşturmak için DocumentBuilder sınıfının MoveToSection yöntemini kullanabilirsiniz.
 
 #### S: Değiştirilen belgeyi Aspose.Words for .NET kullanarak bir dosyaya nasıl kaydedebilirim?
 
-A: Değiştirilen belgeyi, Document sınıfının Save yöntemini kullanarak istediğiniz bir konuma ve formata kaydedebilirsiniz. Uygun dosya yolunu ve dosya biçimini (ör. DOCX) belirttiğinizden emin olun.
+C: Değiştirilen belgeyi, Document sınıfının Save yöntemini kullanarak istediğiniz konuma ve formata kaydedebilirsiniz. Uygun dosya yolunu ve dosya biçimini (örn. DOCX) belirttiğinizden emin olun.

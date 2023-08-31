@@ -1,18 +1,18 @@
 ---
-title: Belge Metin Yönü
-linktitle: Belge Metin Yönü
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile belgelerinizde metin yönünü nasıl belirleyeceğinizi öğrenin. Sağdan sola yazılan diller için ekranı iyileştirin.
+title: Belge Metni Yönü
+linktitle: Belge Metni Yönü
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile belgelerinizdeki metin yönünü nasıl belirleyeceğinizi öğrenin. Sağdan sola yazılan diller için ekranı iyileştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-Bu öğreticide, Aspose.Words for .NET ile "Belge Metni Yönü" özelliği için sağlanan C# kaynak kodunu keşfedeceğiz. Bu özellik, özellikle İbranice veya Arapça gibi sağdan sola yazılan diller için kullanışlı olan bir belgedeki metnin yönünü belirlemenizi sağlar.
+Bu eğitimde Aspose.Words for .NET ile "Belge Metni Yönü" özelliği için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, bir belgedeki metnin yönünü belirtmenize olanak tanır; bu, özellikle İbranice veya Arapça gibi sağdan sola yazılan diller için kullanışlıdır.
 
 ## 1. Adım: Ortamı ayarlama
 
-Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
+Başlamadan önce Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
 ## 2. Adım: Yükleme seçeneklerini yapılandırma
 
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection. Auto };
 ```
 
- Bu adımda, belge yükleme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`TxtLoadOptions` nesne ve ayarlayın`DocumentDirection` mülkiyet`DocumentDirection.Auto`. Bu değer, Aspose.Words'e belgenin içeriğine göre metin yönünü otomatik olarak belirlemesini söyler.
+ Bu adımda belge yükleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`TxtLoadOptions` nesneyi ayarlayın ve`DocumentDirection` mülkiyet`DocumentDirection.Auto`. Bu değer Aspose.Words'e belgenin içeriğine göre metnin yönünü otomatik olarak belirlemesini söyler.
 
 ## 3. Adım: Belgeyi yükleme
 
@@ -31,16 +31,16 @@ TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDi
 Document doc = new Document(dataDir + "Hebrew text.txt", loadOptions);
 ```
 
- Bu adımda, kullanarak belgeyi yüklüyoruz`Document` yöntemi ve yolu yüklenecek metin dosyasına geçirme. Belirtilen yükleme seçeneklerini de kullanıyoruz.
+ Bu adımda belgeyi aşağıdaki komutu kullanarak yüklüyoruz:`Document` yöntemi ve yüklenecek metin dosyasının yolunu iletme. Belirtilen yükleme seçeneklerini de kullanıyoruz.
 
-## 4. Adım: Paragrafı değiştirin ve metin yönünü görüntüleyin
+## Adım 4: Paragrafı düzenleyin ve metnin yönünü görüntüleyin
 
 ```csharp
 Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- Bu adımda, kullanarak belgenin ilk paragrafına erişiyoruz.`FirstSection` Ve`Body` özellikler. Ardından,`ParagraphFormat.Bidi` özelliği paragrafın metin yönünü almak için. Daha sonra bu değeri konsolda gösteriyoruz.
+ Bu adımda belgenin ilk paragrafına şu komutu kullanarak erişiyoruz:`FirstSection` Ve`Body` özellikler. Daha sonra şuraya erişiyoruz:`ParagraphFormat.Bidi` Paragrafın metin yönünü alma özelliği. Daha sonra bu değeri konsolda gösteriyoruz.
 
 ## 5. Adım: Belgeyi kaydedin
 
@@ -50,9 +50,9 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
  Bu son adımda, ortaya çıkan belgeyi kullanarak .docx formatında kaydediyoruz.`Save` yöntemi ve yolu çıktı dosyasına geçirme.
 
-Artık metin belgesini yüklemek ve metin yönünü belirlemek için kaynak kodunu çalıştırabilirsiniz. Elde edilen belge belirtilen dizine "WorkingWithTxtLoadOptions.DocumentTextDirection.docx" adıyla kaydedilecektir.
+Artık metin belgesini yüklemek ve metnin yönünü belirlemek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan belge, "WorkingWithTxtLoadOptions.DocumentTextDirection.docx" adıyla belirtilen dizine kaydedilecektir.
 
-### Aspose.Words for .NET ile belge metin yönü işlevselliği için örnek kaynak kodu.
+### Aspose.Words for .NET ile belge metni yönlendirme işlevi için örnek kaynak kodu.
 
 
 ```csharp
@@ -75,16 +75,16 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## Çözüm
 
-Bu öğreticide, Aspose.Words for .NET'teki belge metni yönü özelliğini inceledik. Özellikle İbranice veya Arapça gibi sağdan sola yazılan diller için bir belgedeki metnin yönünü nasıl belirleyeceğimizi öğrendik.
+Bu eğitimde Aspose.Words for .NET'teki belge metni yönü özelliğini inceledik. Özellikle İbranice veya Arapça gibi sağdan sola yazılan dillerde, bir belgedeki metnin yönünü nasıl belirleyeceğimizi öğrendik.
 
 Bu özellik, metnin çok dilli belgelerde doğru şekilde görüntülenmesini sağlamak için gereklidir. Aspose.Words, uygun yükleme seçeneklerini kullanarak metnin yönünü otomatik olarak algılayabilir ve bunu belgeye uygulayabilir.
 
-Aspose.Words ile belgelerinizdeki metnin yönünü kolayca değiştirerek kullanıcılara sorunsuz ve sezgisel bir okuma deneyimi sunabilirsiniz.
+Aspose.Words ile belgelerinizdeki metnin yönünü kolayca değiştirebilir, kullanıcılara sorunsuz ve sezgisel bir okuma deneyimi sunabilirsiniz.
 
-Bu özelliğin, özellikle belirli metin yönü gerektiren dillerle Sözcük İşleme yaparken kullanışlı olduğuna dikkat etmek önemlidir. Aspose.Words, belgelerinizdeki metnin yönünü yönetmek için güçlü araçlar sağlayarak bu görevi kolaylaştırır.
+Bu özelliğin özellikle belirli metin yönü gerektiren dillerde Kelime İşleme yaparken kullanışlı olduğunu unutmamak önemlidir. Aspose.Words, belgelerinizdeki metnin yönünü yönetmek için güçlü araçlar sağlayarak bu görevi kolaylaştırır.
 
-Belgelerinizde istediğiniz sonuçları elde etmek için otomatik metin yönünü ayarlamak gibi uygun yükleme seçeneklerini kullanmayı unutmayın.
+Belgelerinizde istediğiniz sonuçları elde etmek için otomatik metin yönünü ayarlama gibi uygun yükleme seçeneklerini kullanmayı unutmayın.
 
-Aspose.Words for .NET, belge işleme ve oluşturma için birçok gelişmiş özellik sunar. Aspose.Words tarafından sağlanan belgeleri ve örnekleri daha fazla keşfederek, bu güçlü kitaplığın yeteneklerinden tam anlamıyla yararlanabileceksiniz.
+Aspose.Words for .NET, belge işleme ve oluşturma için birçok gelişmiş özellik sunar. Aspose.Words tarafından sağlanan belgeleri ve örnekleri daha fazla inceleyerek bu güçlü kütüphanenin özelliklerinden tam olarak yararlanabileceksiniz.
 
-Bu nedenle, belge metni yönünü Aspose.Words for .NET projelerinize entegre etmekten çekinmeyin ve çekici ve yüksek kaliteli çok dilli belgeler oluşturmak için avantajlarından yararlanın.
+Bu nedenle, belge metni yönünü Aspose.Words for .NET projelerinize entegre etmekten çekinmeyin ve ilgi çekici ve yüksek kalitede çok dilli belgeler oluşturmak için bunun avantajlarından yararlanın.

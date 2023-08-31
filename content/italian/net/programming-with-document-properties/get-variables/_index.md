@@ -1,22 +1,22 @@
 ---
 title: Ottieni variabili
 linktitle: Ottieni variabili
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Guida dettagliata per recuperare le variabili del documento con Aspose.Words per .NET.
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Guida passo passo per recuperare le variabili del documento con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/get-variables/
 ---
 
-In questo tutorial, ti guideremo attraverso il codice sorgente C# per recuperare le variabili da un documento con Aspose.Words per .NET. Questa funzione consente di accedere alle variabili definite in un documento.
+In questo tutorial ti guideremo attraverso il codice sorgente C# per recuperare variabili da un documento con Aspose.Words per .NET. Questa funzionalità consente di accedere alle variabili definite in un documento.
 
 ## Passaggio 1: impostazione del progetto
 
-Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurarsi che nel progetto si faccia riferimento alla libreria Aspose.Words per .NET.
+Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurati che nel tuo progetto venga fatto riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: caricamento del documento
 
-In questo passaggio, caricheremo il documento Word da cui vogliamo recuperare le variabili. Utilizzare il seguente codice per caricare il documento:
+In questo passaggio caricheremo il documento Word da cui vogliamo recuperare le variabili. Utilizzare il seguente codice per caricare il documento:
 
 ```csharp
 // Percorso della directory dei documenti.
@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Passaggio 3: recupero delle variabili
 
-Ora recupereremo le variabili definite nel documento. Usa il seguente codice:
+Ora recupereremo le variabili definite nel documento. Utilizza il seguente codice:
 
 ```csharp
 string variables = "";
@@ -49,9 +49,9 @@ foreach(KeyValuePair<string, string> entry in doc.Variables)
 Console.WriteLine("\nThe document contains the following variables:\n" + variables);
 ```
 
-Questo codice itera su ciascuna coppia chiave-valore nelle variabili del documento e recupera il nome e il valore di ciascuna variabile. Le variabili vengono quindi concatenate per visualizzare le informazioni per ogni variabile.
+Questo codice esegue un'iterazione su ciascuna coppia chiave-valore nelle variabili del documento e recupera il nome e il valore di ciascuna variabile. Le variabili vengono quindi concatenate per visualizzare le informazioni per ciascuna variabile.
 
-### Codice sorgente di esempio per ottenere variabili utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per Ottieni variabili utilizzando Aspose.Words per .NET
 
 ```csharp
 
@@ -79,6 +79,6 @@ Questo codice itera su ciascuna coppia chiave-valore nelle variabili del documen
 
 ```
 
- Assicurarsi di specificare il percorso del documento corretto nel file`dataDir` variabile.
+ Assicurati di specificare il percorso corretto del documento nel file`dataDir` variabile.
 
-Ora hai imparato come recuperare le variabili da un documento usando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, puoi facilmente accedere e visualizzare le variabili dai tuoi documenti.
+Ora hai imparato come recuperare variabili da un documento utilizzando Aspose.Words per .NET. Seguendo la guida passo passo fornita in questo tutorial, puoi accedere e visualizzare facilmente le variabili dai tuoi documenti.

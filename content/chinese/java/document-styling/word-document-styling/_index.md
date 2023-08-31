@@ -142,7 +142,7 @@ font.setItalic(true);
 font.setUnderline(Underline.SINGLE);
 ```
 
-### 3. 使用颜色和文字效果
+### 3. 使用颜色和文本效果
 
 要应用颜色和其他文本效果，还可以使用 Font 类。
 

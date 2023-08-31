@@ -52,7 +52,7 @@ Grattis! Du har framgångsrikt lärt dig hur du infogar inline-bilder i ett Word
 
 Inline-bilder är användbara för olika scenarier, som att lägga till illustrationer, logotyper eller andra visuella element direkt i dokumentflödet.
 
-### Vanliga frågor för att infoga inline bild i word-dokument
+### Vanliga frågor för att infoga inline-bild i word-dokument
 
 #### F: Kan jag ändra storlek på inlinebilderna i Word-dokumentet?
 

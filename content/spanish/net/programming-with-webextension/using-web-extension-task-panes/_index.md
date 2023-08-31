@@ -1,18 +1,18 @@
 ---
-title: Uso de los paneles de tareas de Web Extension
-linktitle: Uso de los paneles de tareas de Web Extension
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Guía paso a paso para usar los paneles de tareas de Web Extension con Aspose.Words para .NET.
+title: Uso de paneles de tareas de extensiones web
+linktitle: Uso de paneles de tareas de extensiones web
+second_title: API de procesamiento de documentos Aspose.Words
+description: Guía paso a paso para usar los paneles de tareas de extensiones web con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 
-Este artículo proporciona una guía paso a paso sobre cómo usar los paneles de tareas de la extensión web con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo agregar y configurar paneles de tareas para extensiones web.
+Este artículo proporciona una guía paso a paso sobre cómo utilizar los paneles de tareas de la extensión web con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo agregar y configurar paneles de tareas para extensiones web.
 
 Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
 
-## Paso 1: Definir el directorio de documentos
+## Paso 1: definir el directorio de documentos
 
  Para comenzar, debe definir la ruta al directorio donde desea guardar el documento generado. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Paso 2: crear y configurar un panel de tareas
 
- Creamos un`TaskPane` objeto y agregarlo al documento`s `Colección WebExtensionTaskPanes`. A continuación, configuramos las propiedades del panel de tareas, como su estado acoplado, visibilidad y ancho.
+ Creamos un`TaskPane` objeto y agregarlo al documento`s `Colección WebExtensionTaskPanes. A continuación, configuramos las propiedades del panel de tareas, como su estado acoplado, visibilidad y ancho.
 
 ```csharp
 Document doc = new Document();
@@ -52,7 +52,7 @@ taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_150
 	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## Paso 3: Guarda y carga el documento
+## Paso 3: guarde y cargue el documento
 
 Guardamos el documento con los paneles de tareas configurados en el directorio especificado.
 
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 
 ## Paso 4: mostrar la información de los paneles de tareas
 
-A continuación, cargamos el documento y mostramos la información de origen del panel de tareas.
+A continuación, cargamos el documento y mostramos la información fuente del panel de tareas.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -79,7 +79,7 @@ Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version
 
 Eso es todo ! Ha utilizado con éxito los paneles de tareas de la extensión web con Aspose.Words para .NET.
 
-### Ejemplo de código fuente para usar paneles de tareas de extensión web con Aspose.Words para .NET
+### Código fuente de ejemplo para usar paneles de tareas de extensión web con Aspose.Words para .NET
 
 
 ```csharp

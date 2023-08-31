@@ -1,21 +1,21 @@
 ---
 title: Tabloyu İçeriğe Otomatik Sığdır
 linktitle: Tabloyu İçeriğe Otomatik Sığdır
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bir Word belgesindeki tabloyu içeriğine otomatik olarak sığdırmayı öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir tabloyu içeriğine nasıl otomatik olarak sığdıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 
-Bu öğreticide, C# kullanarak bir Word belgesindeki bir tabloyu içeriğine otomatik olarak sığdırmak için Aspose.Words for .NET'i nasıl kullanacağımızı öğreneceğiz. Bu işlevselliğe ulaşmak için adım adım kod yazma sürecinden geçeceğiz. Bu eğitimin sonunda, Word belgelerindeki tabloları programlı olarak nasıl değiştireceğinizi net bir şekilde anlayacaksınız.
+Bu eğitimde, C# kullanarak bir Word belgesindeki bir tabloyu içeriğine otomatik olarak sığdırmak için Aspose.Words for .NET'i nasıl kullanacağımızı öğreneceğiz. Bu işlevselliğe ulaşmak için kod yazma sürecini adım adım gerçekleştireceğiz. Bu eğitimin sonunda, Word belgelerindeki tabloları programlı olarak nasıl değiştireceğiniz konusunda net bir anlayışa sahip olacaksınız.
 
-## 1. Adım: Projeyi kurun
+## 1. Adım: Projeyi ayarlayın
 1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Word belgesini yükleyin
-Tablo ile Kelime İşleme başlatmak için tabloyu içeren Word belgesini yüklememiz gerekir. Bu adımları takip et:
+Kelime İşleme'yi tabloyla başlatmak için tabloyu içeren Word belgesini yüklememiz gerekir. Bu adımları takip et:
 
 ```csharp
 // Belge dizininizin yolu
@@ -25,23 +25,23 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-"BELGE DİZİNİNİZİ" belgenizin gerçek yolu ile değiştirdiğinizden emin olun.
+"BELGE DİZİNİ"ni belgenizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## 3. Adım: Tabloya erişin ve tabloyu içeriğe otomatik olarak sığdırın
-Ardından, belge içindeki tabloya erişmemiz ve otomatik sığdırma davranışını uygulamamız gerekiyor. Aşağıdaki kodu kullanın:
+## 3. Adım: Tabloya erişin ve onu içeriğe otomatik olarak sığdırın
+Daha sonra belge içindeki tabloya erişmemiz ve otomatik sığdırma davranışını uygulamamız gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
-// Tabloya erişin
+// Tabloya erişme
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
-// Tabloyu içeriğine otomatik sığdır
+// Tabloyu içeriğine otomatik olarak sığdır
 table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
- Burada, türün ilk alt düğümünü yayınlıyoruz`Table` belgeden ve ardından kullanarak`AutoFit` ile yöntem`AutoFitToContents` tablo genişliğini içeriğine uyacak şekilde ayarlama davranışı.
+ Burada türün ilk alt düğümünü yayınlıyoruz`Table` belgeden ve ardından kullanarak`AutoFit` yöntemi ile`AutoFitToContents` Tablo genişliğini içeriğine uyacak şekilde ayarlama davranışı.
 
 ## 4. Adım: Değiştirilen belgeyi kaydedin
-Son olarak, değiştirilen belgeyi otomatik sığdırılan tabloyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
+Son olarak, değiştirilen belgeyi otomatik takılan tabloyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 // Değiştirilen belgeyi kaydet
@@ -63,4 +63,4 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 ```
 
 ## Çözüm
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tabloyu içeriğine otomatik olarak sığdırmayı öğrendik. Adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki tabloları programlı olarak değiştirebilirsiniz. Bu, tablo genişliğini içeriğine göre dinamik olarak ayarlamanıza olanak tanıyarak daha profesyonel ve görsel olarak çekici bir belge sağlar.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tabloyu içeriğine nasıl otomatik olarak sığdıracağımızı öğrendik. Adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki tabloları programlı olarak değiştirebilirsiniz. Bu, tablonun genişliğini içeriğe göre dinamik olarak ayarlamanıza olanak tanıyarak daha profesyonel ve görsel açıdan çekici bir belge sunar.

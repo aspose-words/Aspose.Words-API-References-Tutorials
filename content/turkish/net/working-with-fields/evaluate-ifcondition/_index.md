@@ -1,26 +1,26 @@
 ---
-title: IF Koşulunu Değerlendir
-linktitle: IF Koşulunu Değerlendir
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile Word belgelerinizdeki IF koşulunu değerlendirmek için adım adım kılavuz.
+title: IF Durumunu Değerlendirin
+linktitle: IF Durumunu Değerlendirin
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile Word belgelerinizdeki IF durumunu değerlendirmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/evaluate-ifcondition/
 ---
 
-Aspose.Words for .NET'in "IF Koşulunu Değerlendir" özelliğini kullanan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
+Aşağıda Aspose.Words for .NET'in "Evaluate IF Condition" özelliğini kullanan C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. İstediğiniz sonuçları elde etmek için her adımı dikkatlice takip ettiğinizden emin olun.
 
 ## 1. Adım: Belge oluşturucuyu oluşturma
 
-Sağlanan kodda, bir belge oluşturucu oluşturarak başlıyoruz.
+Verilen kodda bir belge oluşturucu oluşturarak başlıyoruz.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. Adım: EĞER alanını girin
+## 2. Adım: IF alanını ekleyin
 
- biz kullanıyoruz`InsertField()` değerlendirilecek koşulu belirten belgeye IF alanını ekleme yöntemi.
+ biz kullanıyoruz`InsertField()` Değerlendirilecek koşulu belirten IF alanını belgeye ekleme yöntemi.
 
 ```csharp
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
@@ -28,41 +28,41 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
 Burada örnek olarak "1=1" koşulunu kullandık, ancak koşulu gerektiği gibi özelleştirebilirsiniz.
 
-## 3. Adım: IF koşulunu değerlendirin
+## Adım 3: IF koşulunu değerlendirin
 
- bu`EvaluateCondition()` yöntemi, IF alanının durumunu değerlendirmek için kullanılır.
+`EvaluateCondition()` IF alanının durumunu değerlendirmek için yöntem kullanılır.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- bu`actualResult` değişken, koşul değerlendirmesinin sonucunu içerir.
+`actualResult` değişken koşul değerlendirmesinin sonucunu içerir.
 
-### Aspose.Words for .NET ile IF Koşulu Değerlendir için Örnek Kaynak Kodu
+### Aspose.Words for .NET ile IF Durumunu Değerlendirmek için Örnek Kaynak Kodu
 
 ```csharp
 // Belge oluşturucunun oluşturulması.
 DocumentBuilder builder = new DocumentBuilder();
 
-// EĞER alanını belgeye ekleyin.
+// IF alanını belgeye ekleyin.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
 // IF koşulunu değerlendirin.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
-// Değerlendirmenin sonucunu görüntüleyin.
+// Değerlendirme sonucunu görüntüleyin.
 Console.WriteLine(actualResult);
 ```
 
-Bu örnekte, bir belge oluşturucu oluşturduk, belirtilen koşulla bir EĞER alanı ekledik ve ardından koşulu değerlendirdik. Değerlendirmenin sonucu daha sonra konsolda görüntülenir.
+Bu örnekte, bir belge oluşturucu oluşturduk, koşulun belirtildiği bir IF alanı ekledik ve ardından koşulu değerlendirdik. Değerlendirmenin sonucu daha sonra konsolda görüntülenir.
 
-Bu, Aspose.Words for .NET ile "Evaluate IF Condition" özelliğini kullanma konusundaki kılavuzumuzu sonlandırıyor.
+Böylece Aspose.Words for .NET ile "EĞER Koşullarını Değerlendir" özelliğini kullanma kılavuzumuzu sonlandırıyoruz.
 
-### SSS
+### SSS'ler
 
-#### S: Aspose.Words'te bir IF koşulu nedir?
+#### S: Aspose.Words'te IF koşulu nedir?
 
-C: Aspose.Words'teki bir IF koşulu, bir mantıksal koşulu değerlendirmenize ve koşulun sonucuna bağlı olarak farklı içerikler görüntülemenize olanak sağlayan bir özelliktir. Örneğin, önceden tanımlanmış belirli koşullara dayalı olarak bir belgede farklı metinleri görüntülemek için bir EĞER koşulu kullanabilirsiniz.
+C: Aspose.Words'teki IF koşulu, mantıksal bir koşulu değerlendirmenize ve koşulun sonucuna bağlı olarak farklı içerikleri görüntülemenize olanak tanıyan bir özelliktir. Örneğin, önceden tanımlanmış belirli koşullara göre bir belgede farklı metin görüntülemek için bir EĞER koşulunu kullanabilirsiniz.
 
 #### S: Aspose.Words ile bir Word belgesine IF koşulu nasıl eklenir?
 
@@ -70,17 +70,17 @@ C: Aspose.Words ile bir Word belgesine IF koşulu eklemek için şu adımları t
 
 1. Aspose.Words ad alanından Document sınıfını içe aktarın.
 2. Mevcut belgenizi yükleyerek bir Belge örneği oluşturun.
-3. Uygun söz dizimiyle bir IF koşulu eklemek için InsertField yöntemini kullanın.
+3. Uygun sözdizimi ile bir IF koşulu eklemek için InsertField yöntemini kullanın.
 
 
-#### S: Bir Word belgesindeki bir IF koşulunu Aspose.Words ile nasıl güncelleyebilirim?
+#### S: Aspose.Words ile bir Word belgesindeki IF koşulu nasıl güncellenir?
 
-C: Bir Word belgesindeki bir IF koşulunu Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem, belgede döngü halinde dolaşır ve IF koşulları da dahil olmak üzere tüm alanları geçerli verilerle günceller.
+C: Bir Word belgesindeki bir IF koşulunu Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem belgede döngü yapar ve IF koşulları da dahil olmak üzere tüm alanları geçerli verilerle günceller.
 
-#### S: Aspose.Words ile bir IF koşulunda ne tür koşullar değerlendirilebilir?
+#### S: Aspose.Words ile IF koşulunda ne tür koşullar değerlendirilebilir?
 
-C: Aspose.Words ile bir EĞER koşulundaki sayısal karşılaştırmalar (örneğin bir sayı diğerinden büyükse), metin karşılaştırmaları (örneğin bir dize diğerine eşitse) ve çok daha fazlasını içeren çeşitli koşulları değerlendirebilirsiniz. AND ve OR gibi mantıksal işleçleri kullanarak birden çok koşulu birleştirebilirsiniz.
+C: Aspose.Words ile sayısal karşılaştırmalar (örneğin bir sayı diğerinden büyükse), metin karşılaştırmaları (örneğin bir dize diğerine eşitse) ve çok daha fazlasını içeren bir IF koşulundaki çeşitli koşulları değerlendirebilirsiniz. Ayrıca AND ve OR gibi mantıksal operatörleri kullanarak birden çok koşulu birleştirebilirsiniz.
 
-#### S: Aspose.Words ile bir Word belgesinde iç içe geçmiş IF koşulları kullanmak mümkün mü?
+#### S: Aspose.Words ile bir Word belgesinde iç içe IF koşullarını kullanmak mümkün müdür?
 
-C: Evet, Aspose.Words ile bir Word belgesinde iç içe geçmiş IF koşulları kullanmak mümkündür. Bu, daha karmaşık bir mantık oluşturmak için bir EĞER koşulunu başka bir EĞER koşulu içinde değerlendirebileceğiniz anlamına gelir.
+C: Evet, Aspose.Words ile bir Word belgesinde iç içe IF koşullarını kullanmak mümkündür. Bu, daha karmaşık bir mantık oluşturmak için bir IF koşulunu başka bir IF koşulu içinde değerlendirebileceğiniz anlamına gelir.

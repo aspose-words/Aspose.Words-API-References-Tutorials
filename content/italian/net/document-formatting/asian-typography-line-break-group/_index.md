@@ -1,13 +1,13 @@
 ---
-title: Gruppo di interruzioni di riga di tipografia asiatica nel documento di Word
-linktitle: Gruppo di interruzioni di riga di tipografia asiatica nel documento di Word
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come utilizzare il gruppo di interruzioni di riga di tipografia asiatica nel documento di Word con Aspose.Words per .NET.
+title: Gruppo di interruzione di riga di tipografia asiatica nel documento di Word
+linktitle: Gruppo di interruzione di riga di tipografia asiatica nel documento di Word
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come utilizzare il gruppo di interruzioni di riga della tipografia asiatica nel documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/document-formatting/asian-typography-line-break-group/
 ---
-In questo tutorial, ti mostreremo come utilizzare il gruppo di interruzioni di riga di tipografia asiatica nella funzionalità del documento di Word con Aspose.Words per .NET. Segui i passaggi seguenti per comprendere il codice sorgente e applicare le modifiche alla formattazione.
+In questo tutorial, ti mostreremo come utilizzare il gruppo di interruzioni di riga della tipografia asiatica nella funzionalità dei documenti Word con Aspose.Words per .NET. Segui i passaggi seguenti per comprendere il codice sorgente e applicare le modifiche alla formattazione.
 
 ## Passaggio 1: caricamento del documento
 
@@ -19,9 +19,9 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Asian typography.docx");
 ```
 
-## Passaggio 2: configurazione della tipografia asiatica
+## Passaggio 2: impostazione della tipografia asiatica
 
-Ora configureremo le impostazioni tipografiche asiatiche per il primo paragrafo del documento. Ecco come:
+Configureremo ora le impostazioni della tipografia asiatica per il primo paragrafo del documento. Ecco come:
 
 ```csharp
 ParagraphFormat format = doc.FirstSection.Body.Paragraphs[0].ParagraphFormat;
@@ -30,7 +30,7 @@ format. WordWrap = true;
 format. HangingPunctuation = false;
 ```
 
-## Passaggio 3: salvare il documento
+## Passaggio 3: salvataggio del documento
 
  Dopo aver inserito il campo del modulo di immissione del testo, salvare il documento nella posizione desiderata utilizzando il file`Save` metodo. Assicurati di fornire il percorso file appropriato:
 
@@ -38,9 +38,9 @@ format. HangingPunctuation = false;
 doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 ```
 
-### Codice sorgente di esempio per Asian Typography Line Break Group utilizzando Aspose.Words per .NET
+### Esempio di codice sorgente per il gruppo di interruzioni di riga di tipografia asiatica utilizzando Aspose.Words per .NET
 
-Ecco il codice sorgente completo per la funzione Asian Typography Line Break Group con Aspose.Words per .NET:
+Ecco il codice sorgente completo per la funzione Line Break Group di tipografia asiatica con Aspose.Words per .NET:
 
 ```csharp
 
@@ -56,22 +56,22 @@ Ecco il codice sorgente completo per la funzione Asian Typography Line Break Gro
 	doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 	
 ```
-Con questo codice sarai in grado di applicare il gruppo di interruzioni di riga di tipografia asiatica utilizzando Aspose.Words per .NET.
+Con questo codice sarai in grado di applicare il gruppo di interruzioni di riga della tipografia asiatica utilizzando Aspose.Words per .NET.
 
 ## Conclusione
 
- In questo tutorial, abbiamo esplorato la funzionalità "Asian Typography Line Break Group" in Aspose.Words per .NET. Configurando il`FarEastLineBreakControl`, `WordWrap` , E`HangingPunctuation` proprietà del`ParagraphFormat`, siamo stati in grado di controllare il comportamento di interruzione di riga per la tipografia asiatica in un documento di Word. Questa funzione è utile per gestire i caratteri asiatici e garantire interruzioni di riga e ritorno a capo corretti nei documenti con contenuti in lingue miste.
+ In questo tutorial, abbiamo esplorato la funzionalità "Gruppo di interruzione della linea di tipografia asiatica" in Aspose.Words per .NET. Configurando il`FarEastLineBreakControl`, `WordWrap` , E`HangingPunctuation` proprietà del`ParagraphFormat`, siamo riusciti a controllare il comportamento dell'interruzione di riga per la tipografia asiatica in un documento Word. Questa funzionalità è utile per gestire i caratteri asiatici e garantire interruzioni di riga e a capo automatico corretti nei documenti con contenuti in lingue miste.
 
-### FAQ
+### Domande frequenti
 
-#### D: Che cos'è la funzione "Gruppo di interruzioni di riga di tipografia asiatica" in Aspose.Words per .NET?
+#### D: Qual è la funzionalità "Gruppo di interruzione riga di tipografia asiatica" in Aspose.Words per .NET?
 
-R: La funzione "Gruppo di interruzioni di riga di tipografia asiatica" in Aspose.Words per .NET consente di controllare il comportamento di interruzione di riga per la tipografia asiatica in un documento di Word. In particolare, influisce sul modo in cui le righe vengono interrotte e avvolte quando si tratta di caratteri asiatici nei paragrafi.
+A: La funzione "Gruppo di interruzione di riga di tipografia asiatica" in Aspose.Words per .NET consente di controllare il comportamento di interruzione di riga per la tipografia asiatica in un documento di Word. Nello specifico, influisce sul modo in cui le righe vengono interrotte e mandate a capo quando si tratta di caratteri asiatici nei paragrafi.
 
-#### D: Come abilito il "Gruppo di interruzione riga di tipografia asiatica" in Aspose.Words per .NET?
+#### D: Come posso abilitare il "Gruppo di interruzione della linea di tipografia asiatica" in Aspose.Words per .NET?
 
- R: Per abilitare il "Gruppo di interruzione di riga di tipografia asiatica", è necessario configurare il file`FarEastLineBreakControl`, `WordWrap` , E`HangingPunctuation` proprietà del`ParagraphFormat` per il paragrafo o i paragrafi pertinenti nel documento. Collocamento`FarEastLineBreakControl` A`false` garantisce che i caratteri asiatici vengano trattati in modo simile ai caratteri latini per quanto riguarda l'interruzione di riga.`WordWrap` impostato`true` abilita il ritorno a capo automatico per la tipografia asiatica e`HangingPunctuation` impostato`false` impedisce la punteggiatura nel testo asiatico.
+ R: Per abilitare il "Gruppo interruzioni di riga tipografia asiatica", è necessario configurare il file`FarEastLineBreakControl`, `WordWrap` , E`HangingPunctuation` proprietà del`ParagraphFormat` per i paragrafi pertinenti nel documento. Collocamento`FarEastLineBreakControl` A`false` garantisce che i caratteri asiatici vengano trattati in modo simile ai caratteri latini per quanto riguarda l'interruzione di riga.`WordWrap` impostato`true` abilita il ritorno a capo per la tipografia asiatica e`HangingPunctuation` impostato`false` impedisce alla punteggiatura di rimanere bloccata nel testo asiatico.
 
-#### D: Posso applicare il "Gruppo di interruzioni di riga di tipografia asiatica" a paragrafi specifici in un documento?
+#### D: Posso applicare il "Gruppo di interruzioni di riga di tipografia asiatica" a paragrafi specifici di un documento?
 
-R: Sì, puoi applicare le impostazioni "Gruppo di interruzioni di riga di tipografia asiatica" a paragrafi specifici in un documento di Word. Nel codice di esempio, le impostazioni vengono applicate al primo paragrafo del documento. È possibile modificare il codice per indirizzare altri paragrafi in base alle esigenze accedendovi tramite il file`Paragraphs` raccolta della/e sezione/i pertinente/i nel documento.
+R: Sì, puoi applicare le impostazioni del "Gruppo interruzioni di riga tipografia asiatica" a paragrafi specifici in un documento Word. Nel codice di esempio le impostazioni vengono applicate al primo paragrafo del documento. Puoi modificare il codice per indirizzare altri paragrafi secondo necessità accedendovi tramite il file`Paragraphs` raccolta delle sezioni pertinenti del documento.

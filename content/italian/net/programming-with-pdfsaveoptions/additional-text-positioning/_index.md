@@ -1,18 +1,18 @@
 ---
-title: Migliora il posizionamento del testo PDF con il posizionamento del testo aggiuntivo
-linktitle: Migliora il posizionamento del testo PDF con il posizionamento del testo aggiuntivo
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come migliorare il posizionamento del testo PDF con il posizionamento del testo aggiuntivo durante la conversione di documenti Word in PDF con Aspose.Words per .NET.
+title: Migliora il posizionamento del testo PDF con un posizionamento del testo aggiuntivo
+linktitle: Migliora il posizionamento del testo PDF con un posizionamento del testo aggiuntivo
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come migliorare il posizionamento del testo PDF con un posizionamento del testo aggiuntivo durante la conversione di documenti Word in PDF con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/additional-text-positioning/
 ---
 
-In questo tutorial, ti guideremo attraverso i passaggi per migliorare il posizionamento del testo PDF con funzionalità di posizionamento del testo aggiuntive con Aspose.Words per .NET. Questa funzione consente di controllare il posizionamento del testo aggiuntivo durante la conversione di un documento Word in PDF. Segui i passaggi seguenti:
+In questo tutorial, ti guideremo attraverso i passaggi per migliorare il posizionamento del testo PDF con funzionalità aggiuntive di posizionamento del testo con Aspose.Words per .NET. Questa funzionalità consente di controllare il posizionamento del testo aggiuntivo durante la conversione di un documento Word in PDF. Seguire i passaggi seguenti:
 
 ## Passaggio 1: caricamento del documento
 
-Inizia caricando il documento Word che vuoi convertire in PDF:
+Inizia caricando il documento Word che desideri convertire in PDF:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -23,7 +23,7 @@ Assicurati di specificare il percorso corretto del tuo documento Word.
 
 ## Passaggio 2: imposta le opzioni di conversione PDF
 
-Crea un'istanza della classe PdfSaveOptions e abilita il posizionamento del testo aggiuntivo:
+Crea un'istanza della classe PdfSaveOptions e abilita il posizionamento aggiuntivo del testo:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { AdditionalTextPositioning = true };
@@ -31,7 +31,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { AdditionalTextPositioning = tr
 
 Questa opzione controlla il posizionamento preciso del testo aggiuntivo nel PDF.
 
-## Passo 3: Converti documento in PDF
+## Passaggio 3: converti il documento in PDF
 
  Usa il`Save` metodo per convertire il documento Word in PDF specificando le opzioni di conversione:
 
@@ -66,8 +66,8 @@ In questo tutorial, abbiamo spiegato come migliorare il posizionamento del testo
 
 ### Domande frequenti
 
-#### D: Qual è la funzione aggiuntiva di posizionamento del testo in un file PDF?
-R: La funzione Posiziona testo extra in PDF aiuta a controllare il posizionamento preciso del testo extra durante la conversione di un documento Word in PDF. Quando questa funzione è abilitata, puoi specificare la posizione esatta del testo aggiuntivo nel file PDF.
+#### D: Qual è la funzionalità aggiuntiva di posizionamento del testo in un file PDF?
+R: La funzione Inserisci testo aggiuntivo nel PDF aiuta a controllare il posizionamento preciso del testo aggiuntivo durante la conversione di un documento Word in PDF. Quando questa funzione è abilitata, puoi specificare la posizione esatta del testo aggiuntivo nel file PDF.
 
 #### D: Come posso utilizzare Aspose.Words per .NET per migliorare il posizionamento del testo in un file PDF aggiungendo testo aggiuntivo?
 R: Per migliorare il posizionamento del testo in un file PDF aggiungendo testo aggiuntivo utilizzando Aspose.Words per .NET, attenersi alla seguente procedura:
@@ -76,14 +76,14 @@ R: Per migliorare il posizionamento del testo in un file PDF aggiungendo testo a
 
  Carica il documento Word che desideri convertire in PDF utilizzando il file`Document` class e specificare il percorso del documento Word nella directory dei documenti specificata.
 
- Configura le opzioni per la conversione in PDF creando un'istanza del file`PdfSaveOptions` classe e abilitando il`AdditionalTextPositioning` opzione per abilitare precise 
+ Configura le opzioni per la conversione in PDF creando un'istanza del file`PdfSaveOptions` classe e abilitando il`AdditionalTextPositioning` opzione per abilitare l'opzione precisa 
 posizionamento di testo aggiuntivo nel file PDF.
 
- Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document`class specificando il percorso e le opzioni di salvataggio.
+ Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document`classe specificando il percorso e le opzioni di salvataggio.
 
-#### D: Quali sono i vantaggi di migliorare il posizionamento del testo in un file PDF aggiungendo testo aggiuntivo?
+#### D: Quali sono i vantaggi derivanti dal miglioramento del posizionamento del testo in un file PDF aggiungendo testo aggiuntivo?
 R: I vantaggi di migliorare il posizionamento del testo in un file PDF aggiungendo testo aggiuntivo sono:
 
-Controllo preciso della posizione del testo aggiuntivo: è possibile specificare la posizione esatta del testo aggiuntivo nel file PDF, consentendo di ottenere un posizionamento preciso del testo.
+Controllo preciso della posizione del testo aggiuntivo: puoi specificare la posizione esatta del testo aggiuntivo nel file PDF, consentendoti di ottenere un posizionamento preciso del testo.
 
-Layout del documento migliorato: controllando il posizionamento del testo aggiuntivo, è possibile migliorare il layout del documento PDF e ottenere un risultato finale più preciso ed estetico.
+Layout del documento migliorato: controllando il posizionamento del testo aggiuntivo, puoi migliorare il layout del documento PDF e ottenere un risultato finale più preciso ed estetico.

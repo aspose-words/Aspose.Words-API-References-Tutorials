@@ -1,8 +1,8 @@
 ---
 title: Inserisci forma
 linktitle: Inserisci forma
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come inserire forme in un documento di Word utilizzando Aspose.Words per .NET.
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come inserire forme in un documento Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-shapes/insert-shape/
@@ -14,25 +14,25 @@ Questo tutorial spiega come inserire forme in un documento Word utilizzando Aspo
 Per seguire questo tutorial, è necessario disporre di quanto segue:
 
 - Aspose.Words per la libreria .NET installata.
-- Conoscenza di base di C# e Word Processing con documenti Word.
+- Conoscenza base di C# ed elaborazione testi con documenti Word.
 
 ## Passaggio 1: impostare la directory dei documenti
- Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si desidera salvare il documento.
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui desideri salvare il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Passaggio 2: creare un nuovo documento e DocumentBuilder
- Crea una nuova istanza di`Document` classe e a`DocumentBuilder` opporsi a lavorare con il documento.
+## Passaggio 2: crea un nuovo documento e DocumentBuilder
+ Crea una nuova istanza di`Document` classe e a`DocumentBuilder` oggetto di lavorare con il documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 3: inserire le forme
- Usa il`InsertShape` metodo del`DocumentBuilder` oggetto per inserire forme nel documento. Specificare il tipo di forma, le relative posizioni orizzontali e verticali, le dimensioni della pagina, le dimensioni e il tipo di ritorno a capo. È inoltre possibile impostare l'angolo di rotazione delle forme, se lo si desidera.
+## Passaggio 3: inserisci forme
+ Usa il`InsertShape` metodo del`DocumentBuilder` oggetto per inserire forme nel documento. Specificare il tipo di forma, le relative posizioni orizzontali e verticali, le dimensioni della pagina, le dimensioni e il tipo di disposizione. Se lo desideri, puoi anche impostare l'angolo di rotazione delle forme.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
@@ -43,7 +43,7 @@ shape = builder.InsertShape(ShapeType.TextBox, 50, 50);
 shape.Rotation = 30.0;
 ```
 
-## Passaggio 4: salvare il documento
+## Passaggio 4: salva il documento
  Salvare il documento nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithShapes.InsertShape.docx".
 
 ```csharp
@@ -54,7 +54,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-### Esempio di codice sorgente per Insert Shape utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per Inserisci forma utilizzando Aspose.Words per .NET 
 
 ```csharp
 	//Percorso della directory dei documenti
@@ -75,4 +75,4 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 	doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-Questo è tutto! Hai inserito correttamente le forme nel tuo documento Word utilizzando Aspose.Words per .NET.
+Questo è tutto! Hai inserito con successo forme nel tuo documento Word utilizzando Aspose.Words per .NET.

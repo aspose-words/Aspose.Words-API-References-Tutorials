@@ -62,7 +62,7 @@ bookmark.Text = "This is a new bookmarked text.";
 doc.Save(dataDir + "UpdatedDocument.docx");
 ```
 
-此代码会将修改后的文档保存在与原始文档相同的目录中，名称为“UpdatedDocument.docx”。
+此代码会将修改后的文档以“UpdatedDocument.docx”名称保存在与原始文档相同的目录中。
 
 ### 使用 Aspose.Words for .NET 更新书签数据的示例源代码
 

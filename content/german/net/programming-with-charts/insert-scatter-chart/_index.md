@@ -74,14 +74,14 @@ In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET ein Str
 
 Aspose.Words für .NET bietet eine umfassende API für die Textverarbeitung mit Diagrammen in Word-Dokumenten. Streudiagramme eignen sich zur Visualisierung und Analyse von Daten mit zwei numerischen Variablen. Mit Aspose.Words für .NET können Sie ganz einfach Streudiagramme erstellen, die die Beziehung zwischen X- und Y-Werten darstellen und Muster oder Trends in den Daten erkennen.
 
-Durch die Verwendung von Aspose.Words für .NET können Sie den Prozess der Dokumentenerstellung mit Streudiagrammen automatisieren und so Zeit und Aufwand bei der manuellen Dokumentenerstellung sparen. Die Bibliothek bietet eine breite Palette an Diagrammtypen, einschließlich Streudiagrammen, und bietet verschiedene Anpassungsoptionen, um das Erscheinungsbild des Diagramms an Ihre Bedürfnisse anzupassen.
+Durch die Verwendung von Aspose.Words für .NET können Sie den Prozess der Dokumentenerstellung mit Streudiagrammen automatisieren und so Zeit und Aufwand bei der manuellen Dokumenterstellung sparen. Die Bibliothek bietet eine breite Palette an Diagrammtypen, einschließlich Streudiagrammen, und bietet verschiedene Anpassungsoptionen, um das Erscheinungsbild des Diagramms an Ihre Bedürfnisse anzupassen.
 
 ### FAQs
 
 #### Q1. Was ist ein Streudiagramm?
 Ein Streudiagramm ist eine Art Diagramm, das die Beziehung zwischen zwei numerischen Variablen anzeigt. Es besteht aus einer Reihe von Punkten, die auf einem Koordinatengitter aufgetragen sind, wobei eine Variable auf der X-Achse und die andere Variable auf der Y-Achse dargestellt wird. Streudiagramme werden verwendet, um Muster, Korrelationen oder Trends zwischen zwei Sätzen von Datenpunkten zu identifizieren.
 
-#### Q2. Kann ich dem Streudiagramm mehrere Serien hinzufügen?
+#### Q2. Kann ich dem Streudiagramm mehrere Reihen hinzufügen?
 Ja, Sie können mit Aspose.Words für .NET mehrere Reihen zum Streudiagramm hinzufügen. Jede Reihe stellt einen Satz von Datenpunkten mit ihren jeweiligen X- und Y-Koordinaten dar. Durch das Hinzufügen mehrerer Reihen können Sie verschiedene Datensätze innerhalb desselben Streudiagramms vergleichen und analysieren und so einen umfassenden Überblick über Ihre Daten erhalten.
 
 #### Q3. Kann ich das Erscheinungsbild des Streudiagramms anpassen?

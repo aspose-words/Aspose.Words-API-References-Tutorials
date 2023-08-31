@@ -33,7 +33,7 @@ Automatic hyphenation is the preferred method in most cases, as it dynamically a
 
 ### Installation
 
-Before we dive into the implementation, make sure you have Aspose.Words for Python installed. You can download and install it from the official website or use the following pip command:
+Before we dive into the implementation, make sure you have Aspose.Words for Python installed. You can download and install it from the  website or use the following pip command:
 
 ```python
 pip install aspose-words

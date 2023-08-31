@@ -1,20 +1,20 @@
 ---
 title: Modifica i controlli del contenuto
 linktitle: Modifica i controlli del contenuto
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come modificare testo, elenchi a discesa e immagini all'interno dei controlli del contenuto in un documento di Word utilizzando Aspose.Words per .NET.
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come modificare testo, elenchi a discesa e immagini all'interno dei controlli contenuto in un documento Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-sdt/modify-content-controls/
 ---
 
-Questo tutorial spiega come modificare diversi tipi di controlli del contenuto in un documento di Word utilizzando Aspose.Words per .NET. È possibile aggiornare il testo, il valore selezionato di un elenco a discesa o sostituire un'immagine all'interno dei controlli del contenuto.
+Questo tutorial spiega come modificare diversi tipi di controlli del contenuto in un documento di Word utilizzando Aspose.Words per .NET. Puoi aggiornare il testo, il valore selezionato di un elenco a discesa o sostituire un'immagine all'interno dei controlli del contenuto.
 
 ## Prerequisiti
 Per seguire questo tutorial, è necessario disporre di quanto segue:
 
 - Aspose.Words per la libreria .NET installata.
-- Conoscenza di base di C# e Word Processing con documenti Word.
+- Conoscenza base di C# ed elaborazione testi con documenti Word.
 
 ## Passaggio 1: impostare la directory dei documenti
  Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
@@ -23,18 +23,18 @@ Per seguire questo tutorial, è necessario disporre di quanto segue:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Passaggio 2: caricare il documento e iterare sui controlli del contenuto
- Carica il documento Word usando il file`Document`costruttore, passando il percorso al documento come parametro. Iterare su tutti i tag del documento strutturato nel documento utilizzando a`foreach` ciclo continuo.
+## Passaggio 2: caricare il documento e ripetere i controlli del contenuto
+ Caricare il documento Word utilizzando il file`Document`costruttore, passando il percorso del documento come parametro. Itera su tutti i tag del documento strutturato nel documento utilizzando a`foreach` ciclo continuo.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
 {
-    // Eseguire azioni in base al tipo di controllo del contenuto
+    // Esegui azioni in base al tipo di controllo del contenuto
 }
 ```
 
-## Passaggio 3: modifica del controllo del contenuto in testo normale
+## Passaggio 3: modificare il controllo del contenuto in testo semplice
  Per i controlli del contenuto di tipo`SdtType.PlainText`, rimuovi tutti i figli esistenti, crea un nuovo paragrafo e aggiungi una sequenza con il testo desiderato.
 
 ```csharp
@@ -49,7 +49,7 @@ case SdtType.PlainText:
 ```
 
 ## Passaggio 4: modificare il controllo del contenuto dell'elenco a discesa
- Per i controlli del contenuto di tipo`SdtType.DropDownList` , aggiornare il valore selezionato impostandolo su un valore specifico`SdtListItem`.
+ Per i controlli del contenuto di tipo`SdtType.DropDownList` , aggiorna il valore selezionato impostandolo su uno specifico`SdtListItem`.
 
 ```csharp
 case SdtType.DropDownList:
@@ -61,7 +61,7 @@ case SdtType.DropDownList:
 ```
 
 ## Passaggio 5: modificare il controllo del contenuto dell'immagine
- Per i controlli del contenuto di tipo`SdtType.Picture`, recuperare la forma all'interno del controllo contenuto e sostituirne l'immagine con una nuova.
+ Per i controlli del contenuto di tipo`SdtType.Picture`, recupera la forma all'interno del controllo contenuto e sostituisci la relativa immagine con una nuova.
 
 ```csharp
 case SdtType.Picture:
@@ -75,14 +75,14 @@ case SdtType.Picture:
 }
 ```
 
-## Passaggio 6: salvare il documento modificato
+## Passaggio 6: salva il documento modificato
  Salvare il documento modificato nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithSdt.ModifyContentControls.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ```
 
-### Codice sorgente di esempio per modificare i controlli del contenuto utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per Modifica controlli contenuto utilizzando Aspose.Words per .NET 
 
 ```csharp
 	//Percorso della directory dei documenti
@@ -122,4 +122,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-Questo è tutto! Hai modificato correttamente diversi tipi di controlli del contenuto nel documento di Word utilizzando Aspose.Words per .NET.
+Questo è tutto! Hai modificato con successo diversi tipi di controlli del contenuto nel tuo documento Word utilizzando Aspose.Words per .NET.

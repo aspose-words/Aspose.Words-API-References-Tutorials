@@ -1,20 +1,20 @@
 ---
 title: Estado actual de la casilla de verificación
 linktitle: Estado actual de la casilla de verificación
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a recuperar y establecer el estado actual de un control de contenido de casilla de verificación en un documento de Word usando Aspose.Words para .NET.
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda a recuperar y configurar el estado actual de un control de contenido de casilla de verificación en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-sdt/current-state-of-check-box/
 ---
 
-Este tutorial explica cómo recuperar y establecer el estado actual de un control de contenido de casilla de verificación en un documento de Word usando Aspose.Words para .NET. Puede marcar o desmarcar la casilla de verificación según su estado actual.
+Este tutorial explica cómo recuperar y configurar el estado actual de un control de contenido de casilla de verificación en un documento de Word usando Aspose.Words para .NET. Puede marcar o desmarcar la casilla de verificación según su estado actual.
 
-## requisitos previos
+## Requisitos previos
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
+- Conocimientos básicos de C# y procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
  Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde se encuentra su documento.
@@ -23,8 +23,8 @@ Para seguir este tutorial, necesita tener lo siguiente:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Paso 2: Cargue el documento y recupere el control de contenido de la casilla de verificación
- Cargue el documento de Word usando el`Document` constructor, pasando la ruta al documento como parámetro. Luego, recupere el control de contenido de casilla de verificación deseado del documento. En este ejemplo, asumimos que la casilla de verificación es la primera etiqueta de documento estructurado en el documento.
+## Paso 2: cargar el documento y recuperar el control de contenido de la casilla de verificación
+ Cargue el documento de Word usando el`Document` constructor, pasando la ruta al documento como parámetro. Luego, recupere el control de contenido de la casilla de verificación deseada del documento. En este ejemplo, asumimos que la casilla de verificación es la primera etiqueta de documento estructurado del documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -33,21 +33,21 @@ StructuredDocumentTag sdtCheckBox =
 ```
 
 ## Paso 3: marque o desmarque la casilla de verificación según su estado actual
- Compruebe si la etiqueta del documento estructurado recuperado es del tipo`SdtType.Checkbox` . Si es así, configure el`Checked` propiedad del control de contenido para`true` para marcar la casilla. De lo contrario, puede dejarlo sin marcar.
+ Compruebe si la etiqueta del documento estructurado recuperado es de tipo`SdtType.Checkbox` . Si es así, configure el`Checked` propiedad del control de contenido para`true` para marcar la casilla. De lo contrario, puedes dejarlo sin marcar.
 
 ```csharp
 if (sdtCheckBox.SdtType == SdtType.Checkbox)
 	sdtCheckBox.Checked = true;
 ```
 
-## Paso 4: Guarde el documento
- Guarde el documento modificado en el directorio especificado usando el`Save`método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithSdt.CurrentStateOfCheckBox.docx".
+## Paso 4: guarde el documento
+ Guarde el documento modificado en el directorio especificado utilizando el`Save`método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithSdt.CurrentStateOfCheckBox.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-### Ejemplo de código fuente para el estado actual de la casilla de verificación usando Aspose.Words para .NET 
+### Código fuente de ejemplo para el estado actual de la casilla de verificación usando Aspose.Words para .NET 
 
 ```csharp
 	//Ruta a su directorio de documentos
@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 	doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-¡Eso es todo! Ha recuperado y establecido con éxito el estado actual de un control de contenido de casilla de verificación en su documento de Word usando Aspose.Words para .NET.
+¡Eso es todo! Ha recuperado y configurado con éxito el estado actual de un control de contenido de casilla de verificación en su documento de Word usando Aspose.Words para .NET.

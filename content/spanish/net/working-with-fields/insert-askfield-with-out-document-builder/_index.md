@@ -1,41 +1,41 @@
 ---
 title: Insertar ASKField sin Document Builder
 linktitle: Insertar ASKField sin Document Builder
-second_title: API de procesamiento de documentos de Aspose.Words
+second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda a insertar un campo ASK en sus documentos de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
 
-Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que usa la función "Insertar un campo ASK sin DocumentBuilder" de Aspose.Words para .NET. Asegúrese de seguir cada paso cuidadosamente para obtener los resultados deseados.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que utiliza la función "Insertar un campo ASK sin DocumentBuilder" de Aspose.Words para .NET. Asegúrese de seguir cada paso cuidadosamente para obtener los resultados deseados.
 
 ## Paso 1: Configuración del directorio de documentos
 
-En el código provisto, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
+En el código proporcionado, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Paso 2: Creando el Documento y el Párrafo
+## Paso 2: crear el documento y el párrafo
 
-Comenzamos creando un nuevo documento y recuperando el primer párrafo.
+Comenzamos creando un nuevo documento y buscando el primer párrafo.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Paso 3: Inserción del campo ASK
+## Paso 3: Insertar el campo PREGUNTAR
 
- usamos el`AppendField()` para insertar un campo ASK en el párrafo.
+ Usamos el`AppendField()` Método para insertar un campo ASK en el párrafo.
 
 ```csharp
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 ```
 
-Luego configuramos las diversas propiedades del campo ASK especificando los valores deseados.
+Luego configuramos las diversas propiedades del campo PREGUNTAR especificando los valores deseados.
 
 ```csharp
 field.BookmarkName = "Test 1";
@@ -44,7 +44,7 @@ field. DefaultResponse = "Test3";
 field. PromptOnceOnMailMerge = true;
 ```
 
- Finalmente, llamamos a la`Update()` método para actualizar el campo.
+ Finalmente llamamos al`Update()` método para actualizar el campo.
 
 ```csharp
 field. Update();
@@ -60,7 +60,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// Inserte el campo ASK.
+// Inserte el campo PREGUNTAR.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 
 field.BookmarkName = "Test 1";
@@ -75,27 +75,27 @@ doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 
 En este ejemplo, creamos un nuevo documento, insertamos un campo ASK sin usar DocumentBuilder, configuramos las diversas propiedades del campo y guardamos el documento con un nombre de archivo específico.
 
-Esto concluye nuestra guía sobre el uso de la función "Insertar campo ASK sin DocumentBuilder" con Aspose.Words para .NET.
+Con esto concluye nuestra guía sobre el uso de la función "Insertar campo ASK sin DocumentBuilder" con Aspose.Words para .NET.
 
 ### Preguntas frecuentes
 
 #### P: ¿Qué es un campo ASK en Aspose.Words?
 
-R: Un campo ASK en Aspose.Words se usa para hacerle una pregunta al usuario al abrir un documento. A menudo se usa para solicitar información o comentarios específicos que pueden variar de un usuario a otro.
+R: Un campo PREGUNTAR en Aspose.Words se utiliza para hacerle una pregunta al usuario al abrir un documento. A menudo se utiliza para solicitar información o comentarios específicos que pueden variar de un usuario a otro.
 
-#### P: ¿Cómo insertar el campo ASK en un documento de Word sin utilizar Document Builder en Aspose.Words?
+#### P: ¿Cómo insertar el campo PREGUNTAR en un documento de Word sin utilizar el Generador de documentos en Aspose.Words?
 
-R: Para insertar un campo ASK en un documento de Word sin utilizar Document Builder en Aspose.Words, puede seguir estos pasos:
+R: Para insertar un campo PREGUNTAR en un documento de Word sin usar el Generador de documentos en Aspose.Words, puede seguir estos pasos:
 
 1. Importe la clase Documento y Campo desde el espacio de nombres Aspose.Words.Fields.
 2. Cree una instancia de Documento cargando su documento existente.
 3. Utilice el método InsertField para insertar un campo ASK especificando el nombre de la pregunta.
 4. Guarde el documento.
 
-#### P: ¿Cómo obtengo la respuesta del usuario para un campo ASK en un documento de Word?
+#### P: ¿Cómo obtengo la respuesta del usuario para un campo PREGUNTAR en un documento de Word?
 
-R: Para obtener la respuesta del usuario para un campo ASK en un documento de Word, puede usar el método GetFieldNames disponible en la clase Documento. Este método devuelve una lista de los nombres de los campos presentes en el documento. A continuación, puede comprobar si el nombre del campo ASK está presente en la lista y recuperar la respuesta asociada.
+R: Para obtener la respuesta del usuario para un campo ASK en un documento de Word, puede usar el método GetFieldNames disponible en la clase Documento. Este método devuelve una lista de los nombres de los campos presentes en el documento. Luego puede verificar si el nombre del campo PREGUNTAR está presente en la lista y recuperar la respuesta asociada.
 
-#### P: ¿Se puede usar el campo ASK para solicitar más información al usuario?
+#### P: ¿Se puede utilizar el campo PREGUNTAR para solicitar más información al usuario?
 
-R: Sí, el campo ASK se puede usar para solicitar múltiples datos del usuario. Puede insertar múltiples campos ASK en su documento, cada uno con una pregunta diferente. Cuando se abre el documento, se le solicitará al usuario las respuestas correspondientes.
+R: Sí, el campo PREGUNTAR se puede utilizar para solicitar varios datos al usuario. Puede insertar varios campos PREGUNTAR en su documento, cada uno con una pregunta diferente. Cuando se abre el documento, se le solicitarán al usuario las respuestas correspondientes.

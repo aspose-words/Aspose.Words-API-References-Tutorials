@@ -1,22 +1,22 @@
 ---
-title: Yazı Tiplerinin Bildirimlerini Alın
-linktitle: Yazı Tiplerinin Bildirimlerini Alın
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanırken eksik veya değiştirilmiş yazı tipi bildirimlerini nasıl alacağınızı öğrenin.
+title: Yazı Tipleriyle İlgili Bildirimleri Alın
+linktitle: Yazı Tipleriyle İlgili Bildirimleri Alın
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'i kullanırken eksik veya değiştirilmiş yazı tipi bildirimlerini nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
-Bu öğreticide, Aspose.Words for .NET kullanırken yazı tipi bildirimlerini nasıl alacağınız konusunda size yol göstereceğiz. Yazı tipi bildirimleri, belgelerinizdeki eksik veya değiştirilen yazı tiplerini tespit etmenize ve yönetmenize olanak tanır. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
+Bu eğitimde Aspose.Words for .NET'i kullanırken yazı tipi bildirimlerini nasıl alacağınız konusunda size yol göstereceğiz. Yazı tipi bildirimleri, belgelerinizdeki eksik veya değiştirilmiş yazı tiplerini tespit etmenize ve yönetmenize olanak tanır. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
 ## Önkoşullar
-Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
 - C# programlama dili hakkında çalışma bilgisi
-- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
+- .NET için Aspose.Words kütüphanesi projenizde yüklü
 
 ## 1. Adım: Belge dizinini tanımlayın
- Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
+ Öncelikle, Word belgenizin konumuna giden dizin yolunu ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Belgeyi yükleyin ve yazı tipi ayarlarını yapılandırın
- Ardından, kullanarak belgeyi yükleyeceğiz`Document` kullanarak yazı tipi ayarlarını sınıflandırın ve yapılandırın.`FontSettings` sınıf. Eksik yazı tipi olması durumunda kullanılacak varsayılan yazı tipini ayarlayacağız.
+ Daha sonra belgeyi kullanarak yükleyeceğiz.`Document` kullanarak yazı tipi ayarlarını sınıflandırın ve yapılandırın.`FontSettings` sınıf. Fontların eksik olması durumunda kullanılacak varsayılan fontu ayarlayacağız.
 
 ```csharp
 // Belgeyi yükleyin ve yazı tipi ayarlarını yapılandırın
@@ -33,8 +33,8 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 ```
 
-## 3. Adım: Bildirim işleyiciyi ayarlayın
-Ardından, uygulayarak bir bildirim işleyicisi tanımlayacağız.`IWarningCallback` arayüz. Bu, belgeyi kaydederken yazı tipi uyarılarını toplamamıza izin verecektir.
+## 3. Adım: Bildirim işleyicisini ayarlayın
+Daha sonra, aşağıdakileri uygulayarak bir bildirim işleyicisi tanımlayacağız:`IWarningCallback` arayüz. Bu, belgeyi kaydederken yazı tipi uyarılarını toplamamıza olanak tanır.
 
 ```csharp
 // Bildirim işleyicisini tanımlayın
@@ -51,7 +51,7 @@ doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ```
 
-### Aspose.Words for .NET kullanarak Yazı Tipi Bildirimlerini Almak için örnek kaynak kodu 
+### Aspose.Words for .NET kullanarak Yazı Tiplerinin Bildirimlerini Alma için örnek kaynak kodu 
 ```csharp
 
 //Belge dizininizin yolu
@@ -61,11 +61,11 @@ Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 // Eksik yazı tipi olması durumunda kullanılacak varsayılan yazı tipini seçebiliriz.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-// Test için Aspose.Words'ü sadece var olmayan bir klasördeki yazı tiplerini arayacak şekilde ayarlayacağız. Aspose.Words olmadığı için
-// Belirtilen dizinde herhangi bir yazı tipi bulun, ardından oluşturma sırasında belgedeki yazı tipleri varsayılan ile alt uygun hale getirilecektir.
-// FontSettings.DefaultFontName altında belirtilen yazı tipi. Geri aramamızı kullanarak bu subsuition'ı yakalayabiliriz.
+// Test için Aspose.Words'ü yalnızca mevcut olmayan bir klasördeki yazı tiplerini arayacak şekilde ayarlayacağız. Aspose.Words olmayacağından beri
+// belirtilen dizinde herhangi bir yazı tipi bulun, ardından belgedeki yazı tipleri oluşturulurken varsayılan yazı tiplerine uygun olacaktır
+// FontSettings.DefaultFontName altında belirtilen yazı tipi. Geri aramamızı kullanarak bu alt dizilimi yakalayabiliriz.
 fontSettings.SetFontsFolder(string.Empty, false);
-//Belge kaydetme sırasında üretilen tüm uyarıları toplayan IWarningCallback'i uygulayan yeni bir sınıf oluşturun.
+//Belge kaydetme sırasında üretilen uyarıları toplayan IWarningCallback'i uygulayan yeni bir sınıf oluşturun.
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 doc.FontSettings = fontSettings;
@@ -74,22 +74,22 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ```
 
 ## Çözüm
-Bu eğitimde, Aspose.Words for .NET kullanırken yazı tipi bildirimlerinin nasıl alınacağını gördük. Yazı tipi bildirimleri, belgelerinizdeki eksik veya değiştirilen yazı tiplerini tespit etmenize ve yönetmenize olanak tanır. Belgelerinizde yazı tipi tutarlılığını sağlamak ve eksik yazı tipleri olması durumunda uygun eylemi gerçekleştirmek için bu özelliği kullanın.
+Bu eğitimde Aspose.Words for .NET kullanırken yazı tipi bildirimlerinin nasıl alınacağını gördük. Yazı tipi bildirimleri, belgelerinizdeki eksik veya değiştirilmiş yazı tiplerini tespit etmenize ve yönetmenize olanak tanır. Belgelerinizde yazı tipi tutarlılığını sağlamak ve eksik yazı tipleri olması durumunda uygun eylemi gerçekleştirmek için bu özelliği kullanın.
 
-### SSS
+### SSS'ler
 
-#### S: Aspose.Words'ta eksik yazı tipleriyle ilgili bildirimleri nasıl alabilirim?
+#### S: Aspose.Words'te eksik yazı tipleriyle ilgili bildirimleri nasıl alabilirim?
 
- C: Aspose.Words'te eksik yazı tipleriyle ilgili bildirimler almak için`FontSettings` sınıf ve`FontSubstitutionCallback` etkinlik. Belgeleri işlerken eksik yazı tipleriyle karşılaşıldığında bildirim almak için bir geri arama yöntemi ayarlayabilirsiniz.
+ C: Aspose.Words'te eksik fontlarla ilgili bildirim almak için`FontSettings` sınıf ve`FontSubstitutionCallback` etkinlik. Belgeleri işlerken eksik yazı tipleriyle karşılaşıldığında bilgilendirilecek bir geri arama yöntemi ayarlayabilirsiniz.
 
 #### S: Word belgelerimdeki eksik yazı tipleriyle nasıl başa çıkabilirim?
 
-C: Word belgelerinizdeki eksik yazı tipleriyle başa çıkmak için farklı stratejiler kullanabilirsiniz. Eksik yazı tiplerini Aspose.Words uygulamanızı çalıştırdığınız sisteme yükleyebilir veya eksik yazı tiplerini mevcut alternatif yazı tipleriyle değiştirebilirsiniz.
+C: Word belgelerinizdeki eksik yazı tipleriyle başa çıkmak için farklı stratejiler kullanabilirsiniz. Eksik fontları Aspose.Words uygulamanızı çalıştırdığınız sisteme yükleyebilir veya eksik fontları mevcut alternatif fontlarla değiştirebilirsiniz.
 
-#### S: Aspose.Words'te değiştirilen yazı tipi bildirimlerini almak mümkün müdür?
+#### S: Aspose.Words'te değiştirilen yazı tipi bildirimlerini almak mümkün mü?
 
  C: Evet, Aspose.Words'te değiştirilen yazı tipi bildirimlerini almak mümkündür. Belge işleme sırasında yazı tipleri değiştirildiğinde,`FontSubstitutionCallback` olay ve metnin görünümünü ayarlamak için uygun eylemi gerçekleştirin.
 
-#### S: Aspose.Words'te yazı tipleri değiştirildiğinde metin görünümünü nasıl tutarlı tutabilirim?
+#### S: Aspose.Words'te yazı tipleri değiştirildiğinde metnin görünümünü nasıl tutarlı tutabilirim?
 
-Y: Yazı tipleri değiştirildiğinde metnin görünümünde tutarlılığı korumak için yazı tipi boyutu, stili ve rengi gibi metin biçimlendirme özelliklerini ayarlayabilirsiniz. Orijinal yazı tiplerine görsel olarak benzeyen yedek yazı tiplerini kullanmayı da düşünebilirsiniz.
+C: Yazı tipleri değiştirildiğinde metnin görünümünde tutarlılığı korumak için yazı tipi boyutu, stili ve rengi gibi metin biçimlendirme özelliklerini ayarlayabilirsiniz. Ayrıca orijinal yazı tiplerine görsel olarak benzeyen yedek yazı tiplerini kullanmayı da düşünebilirsiniz.

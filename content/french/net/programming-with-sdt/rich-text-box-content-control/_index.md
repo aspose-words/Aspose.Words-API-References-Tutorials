@@ -2,37 +2,37 @@
 title: Contrôle du contenu de la zone de texte enrichi
 linktitle: Contrôle du contenu de la zone de texte enrichi
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à créer un contrôle de contenu de zone de texte enrichi dans un document Word à l'aide d'Aspose.Words pour .NET permettant la mise en forme et le style du texte.
+description: Découvrez comment créer un contrôle de contenu de zone de texte enrichi dans un document Word à l'aide d'Aspose.Words for .NET, permettant le formatage et le style du texte.
 type: docs
 weight: 10
 url: /fr/net/programming-with-sdt/rich-text-box-content-control/
 ---
 
-Ce didacticiel montre comment créer un contrôle de contenu de zone de texte enrichi dans un document Word à l'aide de Aspose.Words pour .NET. Les contrôles de contenu de zone de texte enrichi permettent aux utilisateurs de saisir et de formater du texte avec différents styles et options de formatage.
+Ce didacticiel montre comment créer un contrôle de contenu de zone de texte enrichi dans un document Word à l'aide d'Aspose.Words pour .NET. Les contrôles de contenu des zones de texte enrichi permettent aux utilisateurs de saisir et de formater du texte avec différents styles et options de formatage.
 
 ## Conditions préalables
-Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
+Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
 - Bibliothèque Aspose.Words pour .NET installée.
-- Connaissance de base de C# et du traitement de texte avec des documents Word.
+- Connaissance de base de C# et du traitement de mots avec des documents Word.
 
-## Étape 1 : Configurer le répertoire de documents
- Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
+## Étape 1 : configurer le répertoire de documents
+ Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Étape 2 : Créer un document et une balise StructuredDocumentTag
- Créez une nouvelle instance de`Document` classe et une`StructuredDocumentTag` pour représenter le contrôle du contenu de la zone de texte enrichi. Spécifier`SdtType.RichText` comme type et`MarkupLevel.Block` comme niveau de balisage pour créer une zone de texte enrichi au niveau du bloc.
+## Étape 2 : Créer un document et un StructuredDocumentTag
+ Créez une nouvelle instance du`Document` classe et un`StructuredDocumentTag` pour représenter le contrôle de contenu de la zone de texte enrichi. Spécifier`SdtType.RichText` comme le type et`MarkupLevel.Block` comme niveau de balisage pour créer une zone de texte enrichi au niveau du bloc.
 
 ```csharp
 Document doc = new Document();
 StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichText, MarkupLevel.Block);
 ```
 
-## Étape 3 : créer et mettre en forme le contenu en texte enrichi
-Créez un paragraphe et exécutez-le pour représenter le contenu du texte enrichi. Définissez le texte et les options de mise en forme telles que la couleur, la police, etc.
+## Étape 3 : Créer et formater le contenu de texte enrichi
+Créez un paragraphe et exécutez-le pour représenter le contenu du texte enrichi. Définissez le texte et les options de formatage telles que la couleur, la police, etc.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
@@ -42,28 +42,28 @@ run.Font.Color = Color.Green;
 para.Runs.Add(run);
 ```
 
-## Étape 4 : Ajoutez le contenu de texte enrichi au contrôle de contenu
-Ajoutez le paragraphe avec le contenu de texte enrichi à la`ChildNodes` collection du contrôle de contenu de la zone de texte enrichi.
+## Étape 4 : ajouter le contenu de texte enrichi au contrôle de contenu
+Ajoutez le paragraphe avec le contenu en texte enrichi au`ChildNodes` collection du contrôle de contenu de la zone de texte enrichi.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);
 ```
 
-## Étape 5 : Ajouter le contrôle de contenu au document
- Ajoutez le contrôle de contenu de la zone de texte enrichi au corps du document à l'aide de la`AppendChild` méthode du corps de la première section du document.
+## Étape 5 : ajouter le contrôle de contenu au document
+ Ajoutez le contrôle de contenu de la zone de texte enrichi au corps du document à l'aide de l'option`AppendChild` méthode du corps de la première section du document.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);
 ```
 
-## Étape 6 : Enregistrer le document
- Enregistrez le document dans le répertoire spécifié à l'aide de la`Save` méthode. Indiquez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous "WorkingWithSdt.RichTextBoxContentControl.docx".
+## Étape 6 : Enregistrez le document
+ Enregistrez le document dans le répertoire spécifié à l'aide du`Save` méthode. Fournissez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous le nom « WorkingWithSdt.RichTextBoxContentControl.docx ».
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-### Exemple de code source pour le contrôle du contenu de la zone de texte enrichi à l'aide de Aspose.Words pour .NET 
+### Exemple de code source pour le contrôle de contenu de zone de texte enrichi à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
 	//Chemin d'accès à votre répertoire de documents
@@ -81,4 +81,4 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 	doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-C'est ça! Vous avez créé avec succès un contrôle de contenu de zone de texte enrichi dans votre document Word à l'aide de Aspose.Words pour .NET.
+C'est ça! Vous avez créé avec succès un contrôle de contenu de zone de texte enrichi dans votre document Word à l'aide d'Aspose.Words pour .NET.

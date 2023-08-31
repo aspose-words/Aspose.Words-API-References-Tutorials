@@ -1,18 +1,18 @@
 ---
-title: Crea una tabella semplice
-linktitle: Crea una tabella semplice
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come creare una semplice tabella in un documento Word con Aspose.Words per .NET.
+title: Crea tabella semplice
+linktitle: Crea tabella semplice
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come creare una tabella semplice in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/create-simple-table/
 ---
 
-In questo tutorial impareremo come creare una semplice tabella in un documento Word usando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di creare tabelle personalizzate nei tuoi documenti Word a livello di codice.
+In questo tutorial impareremo come creare una semplice tabella in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzionalità. Alla fine di questo tutorial, sarai in grado di creare tabelle personalizzate nei tuoi documenti Word a livello di codice.
 
 ## Passaggio 1: impostazione del progetto
 1. Avvia Visual Studio e crea un nuovo progetto C#.
-2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
+2. Aggiungi un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: creazione del documento e inizializzazione del generatore di documenti
 Per iniziare a costruire la tabella, dobbiamo creare un nuovo documento e inizializzare il generatore di documenti. Segui questi passi:
@@ -26,16 +26,16 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
+Assicurati di sostituire "LA TUA DIRECTORY DOCUMENTI" con il percorso effettivo della directory dei documenti.
 
 ## Passaggio 3: creazione dell'array
-Successivamente, costruiremo la tabella utilizzando i metodi forniti dal generatore di documenti. Usa il seguente codice:
+Successivamente, costruiremo la tabella utilizzando i metodi forniti dal generatore di documenti. Utilizza il seguente codice:
 
 ```csharp
 // Inizia la costruzione dell'array
 builder. StartTable();
 
-// Costruzione della prima cella della prima fila
+// Costruzione della prima cella della prima riga
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 1.");
 
@@ -54,19 +54,19 @@ builder.Write("Contents of cell 1 of row 2.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 2.");
 
-// Chiama il metodo next per terminare la seconda riga
+// Chiama il metodo successivo per terminare la seconda riga
 builder. EndRow();
 
-// Indica che la costruzione del tavolo è terminata
+// Indicazione che la costruzione del tavolo è terminata
 builder. EndTable();
 ```
 
- Qui usiamo il generatore di documenti per costruire la tabella passo dopo passo. Iniziamo chiamando`StartTable()` per inizializzare la tabella, quindi utilizzare`InsertCell()` per inserire celle e`Write()` per aggiungere contenuto a ciascuna cella. Usiamo anche`EndRow()` per terminare una riga e iniziare una nuova riga. Infine chiamiamo`EndTable()` per indicare che la costruzione della tavola è completa.
+ Qui utilizziamo il generatore di documenti per costruire la tabella passo dopo passo. Iniziamo chiamando`StartTable()` per inizializzare la tabella, quindi utilizzare`InsertCell()` per inserire celle e`Write()` per aggiungere contenuto a ciascuna cella. Usiamo anche`EndRow()` per terminare una riga e iniziare una nuova riga. Infine chiamiamo`EndTable()` per indicare che la costruzione della tabella è completa.
 
-## Passaggio 4: salvare il documento
-Infine, dobbiamo salvare
+## Passaggio 4: salva il documento
+Infine, dobbiamo risparmiare
 
-  il documento con la tabella creata. Usa il seguente codice:
+  il documento con la tabella creata. Utilizza il seguente codice:
 
 ```csharp
 // Salva il documento
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 
 Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### Esempio di codice sorgente per Crea tabella semplice utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per Crea tabella semplice utilizzando Aspose.Words per .NET 
 
 ```csharp
 	//Percorso della directory dei documenti
@@ -83,7 +83,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Inizia a costruire il tavolo.
+	// Inizia a costruire la tabella.
 	builder.StartTable();
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 1 Content.");
@@ -105,4 +105,4 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come creare una semplice tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi creare tabelle personalizzate nei tuoi documenti Word a livello di programmazione. Questa funzione ti consente di formattare e organizzare i tuoi dati in modo strutturato e chiaro.
+In questo tutorial, abbiamo imparato come creare una semplice tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo e implementando il codice C# fornito, puoi creare tabelle personalizzate nei tuoi documenti Word a livello di codice. Questa funzionalità ti consente di formattare e organizzare i tuoi dati in modo strutturato e chiaro.

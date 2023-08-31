@@ -1,14 +1,14 @@
 ---
-title: Carica l'intervallo di pagine del Pdf
-linktitle: Carica l'intervallo di pagine del Pdf
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Guida dettagliata per caricare un intervallo di pagine PDF specifico con Aspose.Words per .NET.
+title: Carica intervallo di pagine del PDF
+linktitle: Carica intervallo di pagine del PDF
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Guida passo passo per caricare un intervallo di pagine PDF specifico con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ---
 
-In questo tutorial, ti illustreremo come caricare un intervallo di pagine specifico da un documento PDF utilizzando Aspose.Words per .NET. Segui i passaggi seguenti:
+In questo tutorial ti spiegheremo come caricare un intervallo di pagine specifico da un documento PDF utilizzando Aspose.Words per .NET. Seguire i passaggi seguenti:
 
 ## Passaggio 1: caricamento di un intervallo di pagine PDF
 
@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
  In questo esempio, stiamo caricando la prima pagina del documento PDF. È possibile modificare i valori di`PageIndex` E`PageCount` all'intervallo di pagine desiderato.
 
-## Passaggio 2: salvare il documento
+## Passaggio 2: salvataggio del documento
 
  Infine, puoi salvare il documento contenente l'intervallo di pagine specifico utilizzando il file`Save` metodo:
 
@@ -37,7 +37,7 @@ Assicurati di specificare il percorso corretto per salvare il documento modifica
 
 È tutto ! Ora hai caricato un intervallo di pagine specifico da un documento PDF utilizzando Aspose.Words per .NET.
 
-### Esempio di codice sorgente per Load Page Range Of Pdf using Aspose.Words for .NET
+### Codice sorgente di esempio per Carica intervallo di pagine di Pdf utilizzando Aspose.Words per .NET
 
 ```csharp
 

@@ -1,8 +1,8 @@
 ---
-title: Ooxml Uyumluluk Iso 29500_2008_Strict
-linktitle: Ooxml Uyumluluk Iso 29500_2008_Strict
-second_title: Aspose.Words Belge İşleme API'sı
-description: Belgeleri Aspose.Words for .NET ile kaydederken Ooxml Iso 29500_2008_Strict uyumluluğunu nasıl sağlayacağınızı öğrenin.
+title: Ooxml Uyumluluğu Iso 29500_2008_Strict
+linktitle: Ooxml Uyumluluğu Iso 29500_2008_Strict
+second_title: Aspose.Words Belge İşleme API'si
+description: Belgeleri Aspose.Words for .NET ile kaydederken Ooxml Iso 29500_2008_Strict uyumluluğunun nasıl sağlanacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_strict/
@@ -12,9 +12,9 @@ Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi kaydederken Ooxml Iso
 
 ## 1. Adım: Ortamı ayarlama
 
-Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
+Başlamadan önce Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## 2. Adım: Belgeyi yükleme
+## Adım 2: Belgeyi yükleme
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Bu adımda, kullanarak belgeyi yüklüyoruz`Document` yöntemi ve yolu yüklenecek DOCX dosyasına geçirme.
+ Bu adımda belgeyi aşağıdaki komutu kullanarak yüklüyoruz:`Document` yöntemi ve yüklenecek DOCX dosyasının yolunu iletme.
 
 ## 3. Adım: OOXML yedekleme seçeneklerini yapılandırma
 
@@ -35,13 +35,13 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompli
 
  Bu adımda, OOXML kaydetme seçeneklerini kullanarak yapılandırıyoruz.`OptimizeFor` Ve`OoxmlSaveOptions`yöntemler. Kullanarak Word 2016 sürümü için belge uyumluluğunu optimize ediyoruz`OptimizeFor` ve uyumluluğu ayarlayın`Iso29500_2008_Strict` kullanarak`Compliance`.
 
-## 4. Adım: Belgeyi Ooxml Iso 29500_2008_Strict uyumluluğu ile kaydetme
+## Adım 4: Belgeyi Ooxml Iso 29500_2008_Strict uyumluluğuyla kaydetme
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx", saveOptions);
 ```
 
- Bu son adımda, belgeyi kullanarak kaydediyoruz.`Save` yöntemi ve yolu çıkış dosyasına iletmek`.docx` uzantı, belirtilen kaydetme seçenekleriyle birlikte.
+ Bu son adımda, belgeyi kullanarak kaydediyoruz.`Save` yöntemi ve çıktı dosyasına giden yolu iletmek`.docx` uzantı, belirtilen kaydetme seçenekleriyle birlikte.
 
 Artık bir belgeyi kaydederken Ooxml Iso 29500_2008_Strict uyumluluğunu sağlamak için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx" adıyla belirtilen dizine kaydedilecektir.
 
@@ -64,10 +64,10 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi kaydederken Ooxml Iso 29500_2008_Strict uyumluluk özelliğini inceledik. Ooxml kaydetme seçenekleriyle Iso29500_2008_Strict uyumluluğunu belirterek, oluşturulan belgenin ISO 29500_2008_Strict standartlarını karşılamasını sağlıyoruz.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi kaydederken Ooxml Iso 29500_2008_Strict uyumluluk özelliğini araştırdık. Ooxml kaydetme seçenekleriyle Iso29500_2008_Strict uyumluluğunu belirterek, oluşturulan belgenin ISO 29500_2008_Strict standartlarını karşılamasını sağlıyoruz.
 
-Ooxml Iso 29500_2008_Strict uyumluluğu, Microsoft Word'ün daha yeni sürümleriyle daha iyi uyumluluk sağlayarak belge biçimlendirmesinin, stillerin ve işlevselliğin korunmasını sağlar. Bu, özellikle diğer kullanıcılarla belge alışverişinde bulunurken veya uzun vadeli arşivlerken önemlidir.
+Ooxml Iso 29500_2008_Sıkı uyumluluk, Microsoft Word'ün daha yeni sürümleriyle daha iyi uyumluluk sağlayarak belge formatının, stillerinin ve işlevselliğinin korunmasını sağlar. Bu, özellikle diğer kullanıcılarla belge alışverişinde bulunurken veya uzun süreli arşivleme yaparken önemlidir.
 
-Aspose.Words for .NET, esnek ve güçlü yedekleme seçenekleri sunarak Ooxml Iso 29500_2008_Strict uyumluluğunu sağlamayı kolaylaştırır. Oluşturulan belgelerin en son standartları karşılamasını sağlamak için bu işlevi projelerinize entegre edebilirsiniz.
+Aspose.Words for .NET, esnek ve güçlü yedekleme seçenekleri sunarak Ooxml Iso 29500_2008_Strict uyumluluğunu sağlamayı kolaylaştırır. Oluşturulan belgelerin en son standartları karşıladığından emin olmak için bu işlevselliği projelerinize entegre edebilirsiniz.
 
-Belge işlemenizi iyileştirmek ve iş akışınızı optimize etmek için Aspose.Words for .NET tarafından sunulan diğer özellikleri keşfetmekten çekinmeyin.
+Belge işlemenizi geliştirmek ve iş akışınızı optimize etmek için Aspose.Words for .NET tarafından sunulan diğer özellikleri keşfetmekten çekinmeyin.

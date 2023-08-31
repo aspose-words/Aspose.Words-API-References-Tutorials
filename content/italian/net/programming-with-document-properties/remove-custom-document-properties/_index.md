@@ -1,22 +1,22 @@
 ---
 title: Rimuovi proprietà documento personalizzate
 linktitle: Rimuovi proprietà documento personalizzate
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Guida dettagliata per rimuovere le proprietà personalizzate da un documento con Aspose.Words per .NET.
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Guida passo passo per rimuovere proprietà personalizzate da un documento con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/remove-custom-document-properties/
 ---
 
-In questo tutorial, ti guideremo attraverso il codice sorgente C# per rimuovere le proprietà personalizzate da un documento con Aspose.Words per .NET. Questa funzione consente di rimuovere una specifica proprietà personalizzata da un documento.
+In questo tutorial ti guideremo attraverso il codice sorgente C# per rimuovere le proprietà personalizzate da un documento con Aspose.Words per .NET. Questa funzionalità consente di rimuovere una proprietà personalizzata specifica da un documento.
 
 ## Passaggio 1: impostazione del progetto
 
-Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurarsi che nel progetto si faccia riferimento alla libreria Aspose.Words per .NET.
+Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurati che nel tuo progetto venga fatto riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: caricamento del documento
 
-In questo passaggio, caricheremo il documento Word da cui vogliamo rimuovere le proprietà personalizzate. Utilizzare il seguente codice per caricare il documento:
+In questo passaggio caricheremo il documento Word da cui vogliamo rimuovere le proprietà personalizzate. Utilizzare il seguente codice per caricare il documento:
 
 ```csharp
 // Percorso della directory dei documenti.
@@ -28,15 +28,15 @@ Document doc = new Document(dataDir + "Properties.docx");
 
 ## Passaggio 3: eliminazione delle proprietà personalizzate
 
-Ora rimuoviamo una specifica proprietà personalizzata dal documento. Usa il seguente codice:
+Ora rimuoviamo una proprietà personalizzata specifica dal documento. Utilizza il seguente codice:
 
 ```csharp
 doc.CustomDocumentProperties.Remove("Authorized Date");
 ```
 
-Questo codice rimuove la proprietà personalizzata "Data di autorizzazione" dal documento. Puoi sostituire "Data di autorizzazione" con il nome della proprietà personalizzata che desideri rimuovere.
+Questo codice rimuove la proprietà personalizzata "Data autorizzata" dal documento. Puoi sostituire "Data autorizzata" con il nome della proprietà personalizzata che desideri rimuovere.
 
-### Esempio di codice sorgente per Rimuovi proprietà documento personalizzate utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per rimuovere le proprietà del documento personalizzato utilizzando Aspose.Words per .NET
 
 ```csharp
 
@@ -47,6 +47,6 @@ Questo codice rimuove la proprietà personalizzata "Data di autorizzazione" dal 
 	
 ```
 
- Assicurarsi di specificare il percorso del documento corretto nel file`dataDir` variabile.
+ Assicurati di specificare il percorso corretto del documento nel file`dataDir` variabile.
 
-Ora hai imparato come rimuovere le proprietà personalizzate da un documento utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, puoi rimuovere facilmente le proprietà personalizzate dai tuoi documenti.
+Ora hai imparato come rimuovere le proprietà personalizzate da un documento utilizzando Aspose.Words per .NET. Seguendo la guida passo passo fornita in questo tutorial, puoi rimuovere facilmente le proprietà personalizzate dai tuoi documenti.

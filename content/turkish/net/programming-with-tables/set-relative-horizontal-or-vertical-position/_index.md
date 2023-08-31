@@ -1,50 +1,50 @@
 ---
-title: Göreceli Yatay veya Dikey Konumu Ayarla
-linktitle: Göreceli Yatay veya Dikey Konumu Ayarla
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile bir Word belgesindeki bir tablonun göreli yatay veya dikey konumunu nasıl ayarlayacağınızı öğrenin.
+title: Göreli Yatay veya Dikey Konumu Ayarla
+linktitle: Göreli Yatay veya Dikey Konumu Ayarla
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile bir Word belgesinde bir tablonun göreceli yatay veya dikey konumunu nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/set-relative-horizontal-or-vertical-position/
 ---
 
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun göreli yatay veya dikey konumunu nasıl ayarlayacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizde tablonuzun göreli yatay veya dikey konumunu ayarlayabileceksiniz.
+Bu derste, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun göreceli yatay veya dikey konumunun nasıl ayarlanacağını öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablonuzun göreceli yatay veya dikey konumunu ayarlayabileceksiniz.
 
 ## Adım 1: Proje Kurulumu
 1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## 2. Adım: Belgeyi yükleme
-Sözcük İşlemeyi belgeyle başlatmak için şu adımları izleyin:
+## Adım 2: Belgeyi yükleme
+Belgeyle Sözcük İşleme'yi başlatmak için şu adımları izleyin:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// belgeyi yükle
+// Belgeyi yükleyin
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden ve doğru dosya adını girdiğinizden emin olun.
+"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden ve doğru dosya adını girdiğinizden emin olun.
 
-## 3. Adım: Tablonun göreli konumunun ayarlanması
-Ardından, tablonun göreli yatay veya dikey konumunu ayarlayacağız. Aşağıdaki kodu kullanın:
+## Adım 3: Tablonun göreceli konumunu ayarlama
+Daha sonra tablonun göreceli yatay veya dikey konumunu ayarlayacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// tabloyu al
+// Masayı geri al
 Table table = doc.FirstSection.Body.Tables[0];
 
-//Tablonun göreli yatay konumunun tanımı
+//Tablonun göreceli yatay konumunun tanımı
 table.HorizontalAnchor = RelativeHorizontalPosition.Column;
 
-// Tablonun göreli dikey konumunu tanımlayın
+// Tablonun göreceli dikey konumunu tanımlayın
 table.VerticalAnchor = RelativeVerticalPosition.Page;
 ```
 
- Burada, ilk bölümün gövdesinden ilk tabloyu almak için belgeyi kullanıyoruz. Ardından, tablonun göreli yatay konumunu`HorizontalAnchor` özelliğini kullanan`RelativeHorizontalPosition.Column` değer. Benzer şekilde, tablonun göreli dikey konumunu`VerticalAnchor` özelliğini kullanan`RelativeVerticalPosition.Page` değer.
+ Burada belgeyi, ilk bölümün gövdesinden ilk tabloyu almak için kullanıyoruz. Daha sonra tablonun göreceli yatay konumunu şu şekilde ayarlıyoruz:`HorizontalAnchor` özelliğini kullanarak`RelativeHorizontalPosition.Column` değer. Benzer şekilde, tablonun göreceli dikey konumunu da şu şekilde belirleriz:`VerticalAnchor` özelliğini kullanarak`RelativeVerticalPosition.Page` değer.
 
-## 4. Adım: Değiştirilen belgeyi kaydetme
-Son olarak, değiştirilmiş belgeyi tanımlanmış tablonun göreli konumu ile kaydetmemiz gerekir. Aşağıdaki kodu kullanın:
+## Adım 4: Değiştirilen belgeyi kaydetme
+Son olarak, değiştirilen belgeyi, tanımlanan tablonun göreceli konumuyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 
 Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### Aspose.Words for .NET kullanarak Göreceli Yatay Veya Dikey Konum Belirlemek için örnek kaynak kodu 
+### Aspose.Words for .NET kullanarak Göreceli Yatay veya Dikey Konumu Ayarlama için örnek kaynak kodu 
 
 ```csharp
 //Belge dizininizin yolu
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ```
 
 ## Çözüm
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun göreli yatay veya dikey konumunu nasıl ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, bu göreli konumu Word belgelerinizdeki tablolarınıza uygulayabilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun göreceli yatay veya dikey konumunun nasıl ayarlanacağını öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, bu göreceli konumu Word belgelerinizdeki tablolarınıza uygulayabilirsiniz.

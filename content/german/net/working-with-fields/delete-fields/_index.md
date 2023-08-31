@@ -54,7 +54,7 @@ Unser Leitfaden zur Implementierung der Funktion „Felder löschen“ über Asp
 
 #### F: Was ist ein Feld in Aspose.Words?
 
-A: Ein Feld in Aspose.Words ist eine Dokumentstruktur, die automatisch generierten Text oder einen berechneten Wert darstellt. Felder werden verwendet, um dynamische Informationen in einem Dokument anzuzeigen, wie z. B. Seitenzahlen, Datumsangaben, Seriendruckfelder usw.
+A: Ein Feld in Aspose.Words ist eine Dokumentstruktur, die automatisch generierten Text oder einen berechneten Wert darstellt. Felder werden verwendet, um dynamische Informationen in einem Dokument anzuzeigen, wie z. B. Seitenzahlen, Datumsangaben, Serienbrieffelder usw.
 
 #### F: Wie lösche ich ein Feld in einem Word-Dokument mit Aspose.Words?
 

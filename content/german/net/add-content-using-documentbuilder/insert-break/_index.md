@@ -81,7 +81,7 @@ A: Ja, mit Aspose.Words für .NET eingefügte Seitenumbrüche bleiben erhalten, 
 
 #### F: Kann ich das Erscheinungsbild von Seitenumbrüchen anpassen?
 
-A: Seitenumbrüche sind im Dokument selbst nicht sichtbar, Sie können jedoch die Formatierung und das Layout des Inhalts vor und nach den Seitenumbrüchen anpassen, um das Erscheinungsbild des Dokuments zu steuern.
+A: Seitenumbrüche sind im Dokument selbst nicht sichtbar, aber Sie können die Formatierung und das Layout des Inhalts vor und nach den Seitenumbrüchen anpassen, um das Erscheinungsbild des Dokuments zu steuern.
 
 #### F: Ist Aspose.Words für .NET sowohl für Desktop- als auch für Webanwendungen geeignet?
 

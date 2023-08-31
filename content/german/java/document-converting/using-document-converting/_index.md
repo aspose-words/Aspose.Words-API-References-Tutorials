@@ -1,6 +1,6 @@
 ---
-title: Verwenden der Dokumentkonvertierung
-linktitle: Verwenden der Dokumentkonvertierung
+title: Verwenden der Dokumentenkonvertierung
+linktitle: Verwenden der Dokumentenkonvertierung
 second_title: Aspose.Words Java-Dokumentverarbeitungs-API
 description: Lernen Sie die effiziente Dokumentenkonvertierung mit Aspose.Words für Java. Dateien fehlerfrei konvertieren, zusammenführen und verarbeiten. Vereinfachen Sie Ihren Workflow in einer leistungsstarken Bibliothek.
 type: docs
@@ -102,7 +102,7 @@ Aspose.Words bietet zahlreiche Optionen zur individuellen Anpassung des Dokument
 PdfSaveOptions options = new PdfSaveOptions();
 options.setPageSet(new PageSet(1, 3));
 
-//Stellen Sie die Bildauflösung auf 300 DPI ein
+// Stellen Sie die Bildauflösung auf 300 DPI ein
 options.setJpegQuality(300);
 ```
 

@@ -17,7 +17,7 @@ In today's digital landscape, managing and processing Word documents efficiently
 
 ## Getting Started with Aspose.Words for Python
 
-To embark on this automation journey, you need to have Aspose.Words for Python installed. You can download it from the official [Aspose website](https://releases.aspose.com/words/python/). Once installed, you can initiate your Python project and import the necessary modules.
+To embark on this automation journey, you need to have Aspose.Words for Python installed. You can download it from the  [Aspose website](https://releases.aspose.com/words/python/). Once installed, you can initiate your Python project and import the necessary modules.
 
 ```python
 import aspose.words

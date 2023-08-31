@@ -1,23 +1,23 @@
 ---
-title: Bir Word Belgesine Alan Grafiği Ekleme
-linktitle: Bir Word Belgesine Alan Grafiği Ekleme
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bir belgeye alan grafiği eklemeyi öğrenin. Seri verilerini ekleyin ve belgeyi grafikle birlikte kaydedin.
+title: Alan Grafiğini Bir Word Belgesine Ekleme
+linktitle: Alan Grafiğini Bir Word Belgesine Ekleme
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak bir belgeye nasıl alan grafiği ekleyeceğinizi öğrenin. Seri verilerini ekleyin ve belgeyi grafikle birlikte kaydedin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/insert-area-chart/
 ---
 
-Bu eğitim, bir belgeye alan grafiği eklemek için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve belgenin nasıl kaydedileceğini gösterir.
+Bu eğitimde Aspose.Words for .NET'in bir belgeye alan grafiği eklemek için nasıl kullanılacağı anlatılmaktadır. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve belgenin nasıl kaydedileceğini gösterir.
 
-## 1. Adım: Projeyi kurun
+## 1. Adım: Projeyi ayarlayın
 
-Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kitaplığı yüklendi. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
-- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
+- Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
+- Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
+## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -29,16 +29,16 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ardından,`InsertChart` yöntemi`DocumentBuilder` belgeye bir alan grafiği eklemek için.
+ Daha sonra şunu kullanın:`InsertChart` yöntemi`DocumentBuilder` Belgeye bir alan grafiği eklemek için.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. Adım: Seri verilerini grafiğe ekleyin
+## 3. Adım: Grafiğe seri verilerini ekleyin
 
-Grafiğe seri verileri ekleyin. Bu örnekte, karşılık gelen tarihler ve değerlerle birlikte beş veri noktası ekleyeceğiz.
+Grafiğe seri verileri ekleyin. Bu örnekte, karşılık gelen tarih ve değerlere sahip beş veri noktası ekleyeceğiz.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new []
@@ -60,7 +60,7 @@ new double[] { 32, 32, 28, 12, 15 });
 doc.Save(dataDir + "WorkingWithCharts.InsertAreaChart.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanarak bir alan grafiği ekleme uygulamasını tamamlar.
+Bu, Aspose.Words for .NET kullanarak alan grafiği ekleme işlemini tamamlar.
 
 ### Aspose.Words for .NET kullanarak Alan Grafiği Ekleme için örnek kaynak kodu 
 
@@ -86,19 +86,19 @@ Bu, Aspose.Words for .NET kullanarak bir alan grafiği ekleme uygulamasını tam
 
 ### Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesine alan grafiği eklemeyi öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak yeni bir belge oluşturabilir, alan grafiği ekleyebilir, seri verileri ekleyebilir ve belgeyi grafikle birlikte kaydedebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine alan grafiğinin nasıl ekleneceğini öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak yeni bir belge oluşturabilir, alan grafiği ekleyebilir, seri verileri ekleyebilir ve belgeyi grafikle birlikte kaydedebilirsiniz.
 
-Aspose.Words for .NET, Word belgelerindeki grafiklerle Word Processing için güçlü bir API sağlar. Yalnızca birkaç satır kodla profesyonel görünümlü alan grafikleri oluşturabilir ve bunları gereksinimlerinize göre özelleştirebilirsiniz. Alan çizelgeleri, verilerin zaman veya kategoriler üzerindeki büyüklüğünü ve eğilimlerini görüntülemek için yaygın olarak kullanılır.
+Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için güçlü bir API sağlar. Yalnızca birkaç satır kodla profesyonel görünümlü alan grafikleri oluşturabilir ve bunları ihtiyaçlarınıza göre özelleştirebilirsiniz. Alan grafikleri, verilerin zaman veya kategoriler içindeki büyüklüğünü ve eğilimlerini görüntülemek için yaygın olarak kullanılır.
 
-Aspose.Words for .NET'i kullanarak alan grafikleriyle belge oluşturma sürecini otomatikleştirebilir, manuel belge oluşturmada zamandan ve emekten tasarruf edebilirsiniz. Kitaplık, Word belgelerinizde görsel olarak çekici ve bilgilendirici grafikler oluşturmanıza olanak tanıyan çok çeşitli grafik türleri ve özelleştirme seçenekleri sunar.
+Aspose.Words for .NET'i kullanarak, alan grafikleriyle belge oluşturma sürecini otomatikleştirebilir, manuel belge oluşturmada zamandan ve emekten tasarruf edebilirsiniz. Kitaplık, Word belgelerinizde görsel olarak çekici ve bilgilendirici grafikler oluşturmanıza olanak tanıyan çok çeşitli grafik türleri ve özelleştirme seçenekleri sunar.
 
 ### SSS
 
 #### S1. Aspose.Words for .NET nedir?
-Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında programlı olarak Word belgeleri oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır. Grafikler, paragraflar, tablolar ve daha fazlası dahil olmak üzere belge öğeleriyle Kelime İşleme için kapsamlı bir API seti sağlar.
+Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır. Grafikler, paragraflar, tablolar ve daha fazlasını içeren belge öğeleriyle Kelime İşleme için kapsamlı bir API seti sağlar.
 
-#### S2. Aspose.Words for .NET'i nasıl kurarım?
-Aspose.Words for .NET'i kurmak için Visual Studio'daki NuGet paket yöneticisini kullanarak kütüphaneyi doğrudan projenize kurabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini aratın ve paketi kurun.
+#### Q2. Aspose.Words for .NET'i nasıl yüklerim?
+Aspose.Words for .NET'i kurmak için kütüphaneyi doğrudan projenize kurmak amacıyla Visual Studio'daki NuGet paket yöneticisini kullanabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini aramanız ve paketi yüklemeniz yeterlidir.
 
 #### S3. Alan grafiğinin görünümünü özelleştirebilir miyim?
 Evet, Aspose.Words for .NET'i kullanarak alan grafiğinin görünümünün çeşitli yönlerini özelleştirebilirsiniz. Grafik başlığı, seri rengi, eksen etiketleri ve grafik alanı biçimlendirmesi gibi özellikleri değiştirebilirsiniz. Kitaplık, grafiğin görsel öğelerini kontrol etmek ve ihtiyaçlarınıza uygun özelleştirilmiş bir görünüm oluşturmak için zengin bir API seti sağlar.
@@ -106,8 +106,8 @@ Evet, Aspose.Words for .NET'i kullanarak alan grafiğinin görünümünün çeş
 #### S4. Alan grafiğine birden fazla seri ekleyebilir miyim?
 Evet, Aspose.Words for .NET'i kullanarak alan grafiğine birden fazla seri ekleyebilirsiniz. Her seri, grafikte çizilen bir dizi veri noktasını temsil eder. Farklı veri kümelerine sahip seriler ekleyebilir ve her seriyi adı, veri noktaları ve görünümü dahil olmak üzere ayrı ayrı özelleştirebilirsiniz.
 
-#### S5. Alan grafiği eklenmiş belgeyi farklı formatlarda kaydedebilir miyim?
- Evet, Aspose.Words for .NET, eklenmiş alan grafiği içeren belgeyi DOCX, PDF, HTML ve daha fazlası gibi çeşitli biçimlerde kaydetmenize olanak tanır. Gereksinimlerinize göre istediğiniz çıktı formatını seçebilir ve`Save` yöntemi`Document` belgeyi kaydetmek için nesne. Eklenen alan grafiği kaydedilen belgede korunacaktır.
+#### S5. Alan grafiğinin eklendiği belgeyi farklı formatlarda kaydedebilir miyim?
+ Evet, Aspose.Words for .NET, belgeyi alan grafiği eklenmiş olarak DOCX, PDF, HTML ve daha fazlası gibi çeşitli formatlarda kaydetmenize olanak tanır. Gereksinimlerinize göre istediğiniz çıktı formatını seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne. Eklenen alan grafiği kaydedilen belgede korunacaktır.
 
 #### S6. Alan grafiğini ekledikten sonra verilerini ve görünümünü değiştirebilir miyim?
 Evet, alan grafiğini belgeye ekledikten sonra Aspose.Words for .NET tarafından sağlanan API'leri kullanarak verilerini ve görünümünü değiştirebilirsiniz. Word belgelerinizde dinamik ve etkileşimli grafikler oluşturmak için seri verilerini güncelleyebilir, grafik türünü değiştirebilir, eksen özelliklerini özelleştirebilir ve biçimlendirme seçeneklerini uygulayabilirsiniz.

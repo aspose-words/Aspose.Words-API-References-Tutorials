@@ -150,5 +150,5 @@ Yes, you can clear the content of headers and footers to effectively remove them
 
 ### Where can I learn more about Aspose.Words for Python?
 
-For more detailed documentation and examples, visit the [official Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).
+For more detailed documentation and examples, visit the [Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).
 

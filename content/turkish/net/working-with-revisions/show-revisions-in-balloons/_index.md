@@ -1,14 +1,14 @@
 ---
-title: Revizyonları Balonlarda Göster
-linktitle: Revizyonları Balonlarda Göster
-second_title: Aspose.Words Belge İşleme API'sı
+title: Düzeltmeleri Balonlarda Göster
+linktitle: Düzeltmeleri Balonlarda Göster
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile revizyonları balonlarda gösterin.
 type: docs
 weight: 10
 url: /tr/net/working-with-revisions/show-revisions-in-balloons/
 ---
 
-Bu adım adım kılavuzda, size Aspose.Words for .NET kullanarak bir Word belgesinde balonlardaki revizyonları nasıl göstereceğinizi göstereceğiz. Size tam kaynak kodunu sağlayacağız ve işaretleme çıktısını nasıl biçimlendireceğinizi göstereceğiz.
+Bu adım adım kılavuzda, Aspose.Words for .NET kullanarak bir Word belgesindeki balonlardaki revizyonların nasıl gösterileceğini size göstereceğiz. Size kaynak kodunun tamamını sağlayacağız ve işaretleme çıktısını nasıl biçimlendireceğinizi göstereceğiz.
 
 ## 1. Adım: Belgeyi yükleme
 
@@ -19,9 +19,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## 2. Adım: İnceleme gösterme seçeneklerini yapılandırın
+## 2. Adım: İnceleme gösterisi seçeneklerini yapılandırın
 
-Revizyonları balonlarda görünür kılmak için göster seçeneklerini yapılandıracağız.
+Gösteri seçeneklerini, revizyonların balonlarda görünür olmasını sağlayacak şekilde yapılandıracağız.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
@@ -29,9 +29,9 @@ doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
 ```
 
-## 3. Adım: Belgeyi PDF biçiminde kaydedin
+## 3. Adım: Belgeyi PDF formatında kaydedin
 
-Son olarak, Balonlarda Gösterilen düzeltmelerle belgeyi PDF olarak kaydedeceğiz.
+Son olarak, belgeyi balonlarla gösterilen düzeltmelerle birlikte PDF olarak kaydedeceğiz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
@@ -39,7 +39,7 @@ doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 
 ## Markdown çıktı formatları
 
-Çıktı, okunabilirliği artırmak için işaretlemede biçimlendirilebilir. Örneğin :
+Çıktı, okunabilirliği artırmak için işaretleme biçiminde biçimlendirilebilir. Örneğin :
 
 ```markdown
 - Revisions are Showed in bubbles with revision bars on the right side.
@@ -47,17 +47,17 @@ doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 
 ### Aspose.Words for .NET kullanarak Revizyonları Balonlarda Göster için örnek kaynak kodu
 
-Aspose.Words for .NET kullanan bir belgede balonlardaki revizyonları gösteren eksiksiz kaynak kodu burada:
+Aspose.Words for .NET kullanan bir belgedeki balonlardaki revizyonları gösteren kaynak kodun tamamı burada:
 
 ```csharp
 // Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";	
 Document doc = new Document(MyDir + "Revisions.docx");
 
-// Render'lar revizyonları satır içine ekler, revizyonları balonlarda siler ve biçimlendirir.
+// Revizyonları satır içi olarak ekler, revizyonları balonlara siler ve biçimlendirir.
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-// Bir sayfanın sağ tarafında revizyon çubukları oluşturur.
+// Revizyon çubuklarını sayfanın sağ tarafında oluşturur.
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
 
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
@@ -65,30 +65,30 @@ doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 
 ## Çözüm
 
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki balonlardaki revizyonları nasıl görüntüleyeceğimizi öğrendik. Uygun görüntüleme seçeneklerini kullanarak, revizyonları sağ tarafta revizyon çubukları ile baloncuklarda görünür hale getirebildik. Aspose.Words for .NET, revizyon yönetimi de dahil olmak üzere Word belgelerini işlemek için birçok güçlü özellik sunar. Artık Aspose.Words for .NET'i kullanarak kendi Word belgelerinizdeki balonlardaki revizyonları göstermek için bu bilgiyi kullanabilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki balonlardaki revizyonların nasıl görüntüleneceğini öğrendik. Uygun görüntüleme seçeneklerini kullanarak, sağ tarafta revizyon çubukları bulunan baloncuklar halinde revizyonları görünür hale getirmeyi başardık. Aspose.Words for .NET, revizyon yönetimi de dahil olmak üzere Word belgelerinin işlenmesi için birçok güçlü özellik sunar. Artık bu bilgiyi Aspose.Words for .NET kullanarak kendi Word belgelerinizdeki balonlardaki revizyonları göstermek için kullanabilirsiniz.
 
 
-### SSS
+### SSS'ler
 
-#### S: Aspose.Words for .NET'te bir belge nasıl yüklenir?
+#### S: Aspose.Words for .NET'e belge nasıl yüklenir?
 
- C: Şunu kullanın:`Document` bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirleyebilirsiniz.
+ C: Kullan`Document` Bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirtebilirsiniz.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
 ```
 
-#### S: Aspose.Words for .NET ile revizyonları balonlarda nasıl gösterebilirim?
+#### S: Aspose.Words for .NET ile balonlardaki revizyonlar nasıl görüntülenir?
 
- C: Şunu kullanın:`ShowInBalloons` mülkiyeti`RevisionOptions` revizyonların balonlarda görüntülenmesini yapılandırmak için nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`ShowInBalloons.FormatAndDelete` revizyonları silme ve biçimlendirme revizyonları ile balonlarda göstermek için.
+ C: Kullan`ShowInBalloons` mülkiyeti`RevisionOptions` Balonlardaki revizyonların görünümünü yapılandırmak için nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`ShowInBalloons.FormatAndDelete` balonlardaki revizyonları silme ve biçimlendirme revizyonlarıyla göstermek için.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 ```
 
-#### S: Aspose.Words for .NET ile bir belgeyi PDF formatında nasıl kaydedebilirim?
+#### S: Aspose.Words for .NET ile bir belge PDF formatında nasıl kaydedilir?
 
- C: Şunu kullanın:`Save` yöntemi`Document` Belgeyi PDF biçiminde kaydetmek için nesne. ".pdf" uzantılı tam hedef yolu belirtmelisiniz.
+ C: Kullan`Save` yöntemi`Document` Belgeyi PDF formatında kaydetmek için nesne. Tam hedef yolunu ".pdf" uzantısıyla belirtmeniz gerekir.
 
 ```csharp
 doc.Save("path/to/destination/document.pdf");

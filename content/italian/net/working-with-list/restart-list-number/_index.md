@@ -1,13 +1,13 @@
 ---
-title: Riavvia il numero dell'elenco
-linktitle: Riavvia il numero dell'elenco
-second_title: Aspose.Words API di elaborazione dei documenti
+title: Numero elenco riavvio
+linktitle: Numero elenco riavvio
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come reimpostare il numero di un elenco in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-list/restart-list-number/
 ---
-In questo tutorial passo-passo, ti mostreremo come reimpostare il numero di un elenco in un documento di Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
+In questo tutorial passo passo, ti mostreremo come reimpostare il numero di un elenco in un documento Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
  Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria da[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -33,7 +33,7 @@ list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 
 ## Passaggio 3: aggiunta di elementi al primo elenco
 
-Utilizza il generatore di documenti per aggiungere elementi al primo elenco e rimuovere i numeri di elenco:
+Utilizza il generatore di documenti per aggiungere elementi al primo elenco e rimuovere i numeri dell'elenco:
 
 ```csharp
 builder.Writeln("List 1 starts below:");
@@ -52,7 +52,7 @@ List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-È inoltre possibile apportare ulteriori modifiche al secondo elenco, se necessario.
+Se necessario, puoi anche apportare ulteriori modifiche al secondo elenco.
 
 ## Passaggio 5: aggiunta di elementi al secondo elenco
 
@@ -66,7 +66,7 @@ builder. Writen("Element 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## Passaggio 6: salvare il documento modificato
+## Passaggio 6: salva il documento modificato
 
 Infine, salva il documento modificato:
 
@@ -74,9 +74,9 @@ Infine, salva il documento modificato:
 builder.Document.Save(dataDir + "ResetListNumber.docx");
 ```
 
-COSÌ ! Hai reimpostato correttamente il numero di un elenco in un documento di Word utilizzando Aspose.Words per .NET.
+COSÌ ! Hai reimpostato con successo il numero di un elenco in un documento di Word utilizzando Aspose.Words per .NET.
 
-### Esempio di codice sorgente per il ripristino del numero di elenco
+### Codice sorgente di esempio per la reimpostazione del numero di elenco
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -94,10 +94,10 @@ builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 
-// Per riutilizzare il primo elenco, è necessario riavviare la numerazione creando una copia della formattazione originale dell'elenco.
+// Per riutilizzare il primo elenco è necessario riavviare la numerazione creando una copia della formattazione dell'elenco originale.
 List list2 = doc.Lists.AddCopy(list1);
 
-//Possiamo modificare la nuova lista in qualsiasi modo, inclusa l'impostazione di un nuovo pettorale.
+//Possiamo modificare il nuovo elenco in qualsiasi modo, anche impostando un nuovo numero di partenza.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -110,23 +110,23 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
             
 ```
 
-### FAQ
+### Domande frequenti
 
 #### D: Come posso riavviare la numerazione di un elenco in Aspose.Words?
 
- R: Per riavviare la numerazione di un elenco in Aspose.Words, puoi utilizzare il`ListRestartAtNumber` metodo del`List` classe. Questo metodo consente di impostare un nuovo valore di chiamata da cui riavviare l'elenco. Ad esempio, puoi usare`list.ListRestartAtNumber(1)` per ricominciare la numerazione da 1.
+ R: Per riavviare la numerazione di un elenco in Aspose.Words, è possibile utilizzare il file`ListRestartAtNumber` metodo del`List` classe. Questo metodo consente di impostare un nuovo valore di composizione da cui riavviare l'elenco. Ad esempio, puoi usare`list.ListRestartAtNumber(1)` per ricominciare la numerazione da 1.
 
 #### D: È possibile personalizzare il prefisso e il suffisso della numerazione dell'elenco riavviato in Aspose.Words?
 
- A: Sì, puoi personalizzare il prefisso e il suffisso della numerazione dell'elenco riavviato in Aspose.Words. IL`ListLevel` class offre proprietà come`ListLevel.NumberPrefix` E`ListLevel.NumberSuffix` che consentono di specificare il prefisso e il suffisso per ogni livello nell'elenco. È possibile utilizzare queste proprietà per personalizzare il prefisso e il suffisso secondo necessità.
+ R: Sì, puoi personalizzare il prefisso e il suffisso della numerazione dell'elenco riavviato in Aspose.Words. IL`ListLevel` class offre proprietà come`ListLevel.NumberPrefix` E`ListLevel.NumberSuffix` che consentono di specificare il prefisso e il suffisso per ciascun livello nell'elenco. È possibile utilizzare queste proprietà per personalizzare il prefisso e il suffisso secondo necessità.
 
 #### D: Come posso specificare un valore di numerazione specifico da cui riavviare l'elenco?
 
- R: Per specificare un valore numerico specifico da cui riavviare l'elenco, è possibile utilizzare il file`ListRestartAtNumber`metodo passando il valore desiderato come argomento. Ad esempio, per riavviare la numerazione da 5, puoi utilizzare`list.ListRestartAtNumber(5)`.
+ R: Per specificare un valore numerico specifico da cui riavviare l'elenco, è possibile utilizzare il comando`ListRestartAtNumber`metodo che passa il valore desiderato come argomento. Ad esempio, per riavviare la numerazione da 5, è possibile utilizzare`list.ListRestartAtNumber(5)`.
 
-#### D: È possibile riavviare la numerazione di elenchi multilivello in Aspose.Words?
+#### D: È possibile riavviare la numerazione degli elenchi a più livelli in Aspose.Words?
 
- A: Sì, Aspose.Words supporta il riavvio della numerazione di più livelli di elenco. Puoi applicare il`ListRestartAtNumber` metodo a ogni livello di elenco per riavviare la numerazione individualmente. Ad esempio, puoi usare`list.Levels[0].ListRestartAtNumber(1)` per riavviare il primo livello di elenco da 1, e`list.Levels[1].ListRestartAtNumber(1)` per riavviare la lista di secondo livello partendo da 1, e così via.
+ R: Sì, Aspose.Words supporta il riavvio della numerazione di più livelli di elenco. Puoi applicare il`ListRestartAtNumber` metodo a ogni livello di elenco per riavviare la numerazione individualmente. Ad esempio, puoi usare`list.Levels[0].ListRestartAtNumber(1)` per riavviare il primo livello dell'elenco da 1 e`list.Levels[1].ListRestartAtNumber(1)` per riavviare la lista di secondo livello partendo da 1, e così via.
 
 
 

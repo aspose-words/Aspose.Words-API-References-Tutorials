@@ -1,28 +1,28 @@
 ---
-title: قم بإدراج مستند باستخدام Builder
-linktitle: قم بإدراج مستند باستخدام Builder
-second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
+title: إدراج مستند مع منشئ
+linktitle: إدراج مستند مع منشئ
+second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
 description: تعرف على كيفية إدراج مستند في نهاية مستند آخر باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/join-and-append-documents/insert-document-with-builder/
 ---
 
- يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مستند في مستند آخر باستخدام`DocumentBuilder` فصل. يوضح كود المصدر المقدم كيفية إدراج مستند في نهاية مستند آخر مع الحفاظ على تنسيق المصدر.
+ يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words لـ .NET لإدراج مستند في مستند آخر باستخدام`DocumentBuilder` فصل. يوضح كود المصدر المقدم كيفية إدراج مستند في نهاية مستند آخر مع الحفاظ على تنسيق المصدر.
 
-## الخطوة 1: قم بإعداد المشروع
+## الخطوة 1: إعداد المشروع
 
 تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases] https://releases.aspose.com/words/net/ أو استخدم مدير حزمة NuGet لتثبيته.
+- تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
 - مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## الخطوة 2: افتح المستندات المصدر والوجهة
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ افتح المستندات المصدر والوجهة باستخدام`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى دليل المستندات الخاص بك.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -31,15 +31,15 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: تهيئة DocumentBuilder
 
- قم بإنشاء مثيل جديد لملف`DocumentBuilder` فئة وتمرير المستند الوجهة كمعامل.
+ إنشاء مثيل جديد لـ`DocumentBuilder` فئة وتمرير المستند الوجهة كمعلمة.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
-## الخطوة 4: ضع مُنشئ المستند
+## الخطوة 4: ضع DocumentBuilder
 
-حرك ال`DocumentBuilder` إلى نهاية المستند باستخدام امتداد`MoveToDocumentEnd` طريقة. أدخل فاصل صفحات لفصل المحتوى الموجود عن المستند المدرج.
+حرك ال`DocumentBuilder` إلى نهاية المستند باستخدام`MoveToDocumentEnd` طريقة. قم بإدراج فاصل صفحات لفصل المحتوى الموجود عن المستند المدرج.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,18 +56,18 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## الخطوة 6: احفظ المستند المعدل
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ وأخيرًا، احفظ مستند الوجهة المعدل باستخدام الملف`Save` طريقة`Document` هدف.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مستند في مستند آخر باستخدام Aspose.Words for .NET.
+يكمل هذا تنفيذ إدراج مستند في مستند آخر باستخدام Aspose.Words لـ .NET.
 
-### مثال على شفرة المصدر لـ Insert Document With Builder باستخدام Aspose.Words for .NET 
+### مثال على التعليمات البرمجية المصدر لـ Insert Document With Builder باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

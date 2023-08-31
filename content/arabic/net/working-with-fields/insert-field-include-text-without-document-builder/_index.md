@@ -1,24 +1,24 @@
 ---
-title: إدراج حقل تضمين نص بدون منشئ المستند
-linktitle: قم بإدراج FieldIncludeText بدون Document Builder
-second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: تعرف على كيفية إدراج حقل FieldIncludeText في مستندات Word باستخدام Aspose.Words for .NET.
+title: إدراج حقل يتضمن نصًا بدون أداة إنشاء المستندات
+linktitle: قم بإدراج FieldIncludeText بدون منشئ المستندات
+second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
+description: تعرف على كيفية إدراج حقل FieldIncludeText في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # أدناه ، والذي يستخدم وظيفة "إدراج حقل FieldIncludeText" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+فيما يلي دليل خطوة بخطوة لشرح التعليمات البرمجية المصدر لـ C# أدناه، والتي تستخدم وظيفة "إدراج حقل FieldIncludeText" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
 
-## الخطوة 1: إعداد دليل المستند
+## الخطوة 1: إعداد دليل المستندات
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+في الكود المقدم، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب لدليل المستندات الخاص بك.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## الخطوة 2: إنشاء الوثيقة والفقرة
 
 نبدأ بإنشاء مستند جديد وتهيئة فقرة.
 
@@ -35,26 +35,26 @@ Paragraph para = new Paragraph(doc);
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
 ```
 
-ثم نقوم بتكوين خصائص حقل FieldIncludeText عن طريق تحديد اسم الإشارة المرجعية واسم الملف المصدر.
+نقوم بعد ذلك بتكوين خصائص حقل FieldIncludeText عن طريق تحديد اسم الإشارة المرجعية واسم الملف المصدر.
 
 ```csharp
 fieldIncludeText.BookmarkName = "bookmark";
 fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
 ```
 
-بعد ذلك ، نضيف الفقرة إلى نص المستند.
+بعد ذلك، نضيف الفقرة إلى نص الوثيقة.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ وأخيراً نسمي`Update()` طريقة تحديث الحقل
 
 ```csharp
 fieldIncludeText.Update();
 ```
 
-### مثال على شفرة المصدر لإدخال حقل FieldIncludeText مع Aspose.Words for .NET
+### مثال على التعليمات البرمجية المصدر لإدراج حقل FieldIncludeText باستخدام Aspose.Words لـ .NET
 
 ```csharp
 // المسار إلى دليل المستندات.
@@ -64,7 +64,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-// أدخل الحقل FieldIncludeText.
+// أدخل حقل FieldIncludeText.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
 
 fieldIncludeText.BookmarkName = "bookmark";
@@ -77,24 +77,24 @@ fieldIncludeText.Update();
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأعدنا فقرة ، وأدخلنا FieldIncludeTexten يحدد اسم الإشارة المرجعية واسم الملف المصدر ، وحفظنا المستند باسم ملف محدد.
+في هذا المثال، قمنا بإنشاء مستند جديد، وقمنا بتهيئة فقرة، وإدراج FieldIncludeTexten لتحديد اسم الإشارة المرجعية واسم الملف المصدر، وحفظنا المستند باسم ملف محدد.
 
-بهذا يختتم دليلنا حول استخدام ميزة "Insert a FieldIncludeText" مع Aspose.Words for .NET.
+بهذا نختتم دليلنا حول استخدام ميزة "إدراج ملف FieldIncludeText" مع Aspose.Words لـ .NET.
 
-### التعليمات
+### الأسئلة الشائعة
 
-#### س: كيف يمكنني تحديد الملف المصدر لحقل تضمين النص في Aspose.Words for .NET؟
+#### س: كيف يمكنني تحديد الملف المصدر لحقل تضمين النص في Aspose.Words لـ .NET؟
 
- ج: لتحديد الملف المصدر لحقل تضمين النص في Aspose.Words for .NET ، يمكنك استخدام`FieldIncludeText.SourceFullName`لتعيين المسار الكامل للملف المصدر. تأكد من إمكانية الوصول إلى الملف المصدر وأنه يحتوي على المحتوى الذي تريد تضمينه في حقل تضمين النص.
+ ج: لتحديد الملف المصدر لحقل تضمين النص في Aspose.Words لـ .NET، يمكنك استخدام`FieldIncludeText.SourceFullName`الخاصية لتعيين المسار الكامل للملف المصدر. تأكد من إمكانية الوصول إلى الملف المصدر وأنه يحتوي على المحتوى الذي تريد تضمينه في حقل تضمين النص.
 
-#### س: هل يمكنني تضمين نص من وحدة ماكرو في حقل تضمين النص باستخدام Aspose.Words for .NET؟
+#### س: هل يمكنني تضمين نص من ماكرو في حقل تضمين النص باستخدام Aspose.Words لـ .NET؟
 
- ج: نعم ، يمكنك تضمين نص من وحدة ماكرو في حقل تضمين النص باستخدام Aspose.Words for .NET. يمكنك استخدام ال`FieldIncludeText.IncludeText` الخاصية لتحديد اسم الماكرو الذي يجب تضمين محتواه في الحقل.
+ ج: نعم، يمكنك تضمين نص من ماكرو في حقل تضمين النص باستخدام Aspose.Words لـ .NET. يمكنك استخدام ال`FieldIncludeText.IncludeText` الخاصية لتحديد اسم الماكرو الذي يجب تضمين محتواه في الحقل.
 
-#### س: هل إدراج حقل يتضمن نصًا بدون منشئ المستندات يؤثر على بنية مستند Word باستخدام Aspose.Words for .NET؟
+#### س: هل يؤثر إدراج حقل تضمين النص بدون أداة إنشاء المستندات على بنية مستند Word مع Aspose.Words for .NET؟
 
-ج: إدراج حقل تضمين النص بدون منشئ المستندات لا يؤثر بشكل مباشر على بنية مستند Word. ومع ذلك ، فإنه يضيف عنصر حقل جديدًا إلى محتوى المستند. يمكنك معالجة هيكل المستند عن طريق إضافة أو حذف أو تعديل العناصر الموجودة وفقًا لاحتياجاتك.
+ج: إن إدراج حقل تضمين نص بدون أداة إنشاء المستندات لا يؤثر بشكل مباشر على بنية مستند Word. ومع ذلك، فإنه يضيف عنصر حقل جديد إلى محتوى المستند. يمكنك التعامل مع بنية المستند عن طريق إضافة العناصر الموجودة أو حذفها أو تعديلها وفقًا لاحتياجاتك.
 
-#### س: هل يمكنني تخصيص مظهر حقل تضمين النص في مستند Word باستخدام Aspose.Words for .NET؟
+#### س: هل يمكنني تخصيص مظهر حقل تضمين النص في مستند Word باستخدام Aspose.Words لـ .NET؟
 
-ج: لا يقوم حقل تضمين النص بتخصيص مظهره في مستند Word بشكل مباشر. ومع ذلك ، يمكنك تنسيق النص المضمن باستخدام خصائص الفقرة وخصائص الخط وكائنات التنسيق الأخرى المتوفرة في Aspose.Words for .NET.
+ج: لا يقوم حقل تضمين النص بتخصيص مظهره مباشرة في مستند Word. ومع ذلك، يمكنك تنسيق النص المضمن باستخدام خصائص الفقرة، وخصائص الخط، وكائنات التنسيق الأخرى المتوفرة في Aspose.Words for .NET.

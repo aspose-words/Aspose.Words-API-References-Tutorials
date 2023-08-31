@@ -1,17 +1,17 @@
 ---
-title: Ole Paketi ile Word'de Ole Nesnesi Ekleme
-linktitle: Ole Paketi ile Word'de Ole Nesnesi Ekleme
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bir OLE paketi ile bir OLE nesnesini bir belgeye nasıl ekleyeceğinizi öğrenin.
+title: Ole Paketi ile Word'e Ole Nesnesi Ekleme
+linktitle: Ole Paketi ile Word'e Ole Nesnesi Ekleme
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak OLE paketi içeren bir OLE nesnesini bir belgeye nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
 
-Aşağıda, Aspose.Words for .NET kullanılarak bir OLE paketiyle bir OLE nesnesinin word'e nasıl ekleneceğini gösteren C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır.
+Aşağıda, Aspose.Words for .NET kullanılarak bir OLE paketiyle bir OLE nesnesinin word'e nasıl ekleneceğini gösteren, C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır.
 
 ## 1. Adım: Gerekli referansları içe aktarın
-Başlamadan önce, Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Bu, Aspose.Words kitaplığının içe aktarılmasını ve gerekli ad alanlarının kaynak dosyanıza eklenmesini içerir.
+Başlamadan önce Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Buna Aspose.Words kütüphanesinin içe aktarılması ve gerekli ad alanlarının kaynak dosyanıza eklenmesi de dahildir.
 
 ```csharp
 using Aspose.Words;
@@ -20,7 +20,7 @@ using System.IO;
 ```
 
 ## 2. Adım: Yeni bir belge ve belge oluşturucu oluşturun
- Bu adımda, kullanarak yeni bir belge oluşturacağız.`Document` sınıfını ve bir belge oluşturucuyu kullanarak`DocumentBuilder` sınıf.
+ Bu adımda yeni bir belge oluşturacağız.`Document` sınıf ve bir belge oluşturucu kullanarak`DocumentBuilder` sınıf.
 
 ```csharp
 Document doc = new Document();
@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. Adım: OLE paketiyle bir OLE nesnesi ekleyin
- Belge Oluşturucu'nun`InsertOleObject`belgeye OLE paketi içeren bir OLE nesnesi ekleme yöntemi. Veri akışını, nesne tipini, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin.
+ Belge Oluşturucuyu kullanın`InsertOleObject`OLE paketi içeren bir OLE nesnesini belgeye ekleme yöntemi. Veri akışını, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -48,7 +48,7 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### Aspose.Words for .NET ile bir OLE paketine OLE nesnesi eklemek için örnek kaynak kodu
+### Aspose.Words for .NET ile OLE paketine OLE nesnesi eklemek için örnek kaynak kodu
 
 ```csharp
 Document doc = new Document();
@@ -66,17 +66,17 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-Bu, Aspose.Words for .NET ile bir OLE paketine bir OLE nesnesi eklemek için eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun.
+Bu, Aspose.Words for .NET ile OLE paketine bir OLE nesnesi eklemek için eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun.
 
 ## Çözüm
 
-Sonuç olarak, Aspose.Words for .NET kullanarak bir OLE paketi ile bir OLE nesnesini bir Word belgesine eklemek için adım adım bir kılavuz inceledik.
+Sonuç olarak, Aspose.Words for .NET kullanarak OLE paketiyle bir Word belgesine OLE nesnesi eklemek için adım adım kılavuzu inceledik.
 
-Bu adımları izleyerek, Aspose.Words for .NET kullanarak OLE nesnelerini OLE paketleri ile Word belgelerinize başarıyla ekleyebileceksiniz. Gerekli referansları içe aktardığınızdan emin olun ve istenen sonuçları elde etmek için talimatları dikkatle izleyin.
+Bu adımları takip ederek, Aspose.Words for .NET'i kullanarak OLE paketlerini içeren OLE nesnelerini Word belgelerinize başarıyla ekleyebileceksiniz. İstediğiniz sonuçları elde etmek için gerekli referansları içe aktardığınızdan ve talimatları dikkatlice uyguladığınızdan emin olun.
 
-### ole paketiyle kelimeye ole nesnesi eklemek için SSS
+### Ole paketiyle Word'e ole nesnesi eklemeyle ilgili SSS
 
-#### S: Aspose.Words for .NET'i kullanmak için hangi kimlik bilgilerine ihtiyacım var?
+#### S: Aspose.Words for .NET'i kullanmak için hangi kimlik bilgilerini içe aktarmam gerekiyor?
 
 C: Aspose.Words for .NET'i kullanmak için aşağıdaki referansları içe aktarmanız gerekir:
 
@@ -88,16 +88,16 @@ using System.IO;
 
 #### S: Yeni bir belge ve belge oluşturucu nasıl oluşturulur?
 
- A: kullanarak yeni bir belge oluşturabilirsiniz.`Document` sınıfını ve bir belge oluşturucuyu kullanarak`DocumentBuilder` sınıf, aşağıda gösterildiği gibi:
+ C: Kullanarak yeni bir belge oluşturabilirsiniz.`Document` sınıf ve bir belge oluşturucu kullanarak`DocumentBuilder` aşağıda gösterildiği gibi sınıf:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-#### S: Belgeye OLE paketi içeren bir OLE nesnesi nasıl eklenir?
+#### S: OLE paketine sahip bir OLE nesnesi belgeye nasıl eklenir?
 
- C: Şunu kullanın:`InsertOleObject` belge oluşturucunun yöntemi (`DocumentBuilder`) belgeye OLE paketi içeren bir OLE nesnesi eklemek için. Veri akışını, nesne tipini, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin. İşte bir örnek :
+ C: Kullan`InsertOleObject` belge oluşturucunun yöntemi (`DocumentBuilder`) belgeye OLE paketi içeren bir OLE nesnesi eklemek için. Veri akışını, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin. İşte bir örnek :
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -118,9 +118,9 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-#### S: Aspose.Words for .NET ile bir OLE paketine OLE nesnesi eklemenin tam bir örneğini verebilir misiniz?
+#### S: Aspose.Words for .NET ile OLE paketine OLE nesnesi eklemenin tam bir örneğini verebilir misiniz?
 
-C: İşte Aspose.Words for .NET kullanarak bir OLE paketi ile bir OLE nesnesi eklemek için eksiksiz bir örnek kod. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun:
+C: Burada Aspose.Words for .NET kullanarak bir OLE paketiyle bir OLE nesnesi eklemek için tam bir örnek kod bulabilirsiniz. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun:
 
 ```csharp
 Document doc = new Document();
@@ -138,4 +138,4 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanarak bir OLE paketine sahip bir OLE nesnesini bir Word belgesine ekleme konusundaki eğitimimizi sonlandırıyor. Gerekli referansları içe aktarmaktan çekinmeyin ve bu kodu projenize entegre etmek için açıklanan adımları izleyin. Başka sorunuz varsa, lütfen bizimle iletişime geçmekten çekinmeyin.
+Bu, Aspose.Words for .NET kullanarak bir Word belgesine OLE paketi içeren bir OLE nesnesi ekleme konusundaki eğitimimizin sonuncusudur. Bu kodu projenize entegre etmek için gerekli referansları içe aktarmaktan ve açıklanan adımları takip etmekten çekinmeyin. Başka sorularınız varsa lütfen bizimle iletişime geçmekten çekinmeyin.

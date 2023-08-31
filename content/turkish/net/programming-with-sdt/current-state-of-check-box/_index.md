@@ -1,30 +1,30 @@
 ---
 title: Onay Kutusunun Mevcut Durumu
 linktitle: Onay Kutusunun Mevcut Durumu
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak bir Word belgesindeki bir onay kutusu içerik kontrolünün mevcut durumunu nasıl alacağınızı ve ayarlayacağınızı öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'i kullanarak bir Word belgesindeki onay kutusu içerik kontrolünün mevcut durumunu nasıl alacağınızı ve ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/current-state-of-check-box/
 ---
 
-Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesindeki bir onay kutusu içerik kontrolünün mevcut durumunun nasıl alınacağını ve ayarlanacağını açıklar. Geçerli durumuna göre onay kutusunu işaretleyebilir veya işaretini kaldırabilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanılarak bir Word belgesindeki onay kutusu içerik kontrolünün mevcut durumunun nasıl alınacağı ve ayarlanacağı açıklanmaktadır. Geçerli durumuna göre onay kutusunu işaretleyebilir veya işaretini kaldırabilirsiniz.
 
 ## Önkoşullar
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- Aspose.Words for .NET kitaplığı yüklendi.
+- Aspose.Words for .NET kütüphanesi kuruldu.
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
-## 1. Adım: Belge Dizinini kurun
- Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
+## 1. Adım: Belge Dizinini Ayarlayın
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 2. Adım: Belgeyi Yükleyin ve Onay Kutusu İçerik Denetimini Alın
- kullanarak Word belgesini yükleyin.`Document` yapıcı, belgenin yolunu bir parametre olarak iletir. Ardından, istenen onay kutusu içerik kontrolünü belgeden alın. Bu örnekte, onay kutusunun belgedeki ilk yapılandırılmış belge etiketi olduğunu varsayıyoruz.
+## Adım 2: Belgeyi Yükleyin ve Onay Kutusu İçerik Denetimini Alın
+ Word belgesini kullanarak yükleyin`Document` yapıcı, belgenin yolunu parametre olarak iletir. Daha sonra belgeden istenen onay kutusu içerik denetimini alın. Bu örnekte onay kutusunun belgedeki ilk yapılandırılmış belge etiketi olduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -32,29 +32,29 @@ StructuredDocumentTag sdtCheckBox =
 	(StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## 3. Adım: Mevcut Durumuna Göre Onay Kutusunu İşaretleyin veya İşaretini Kaldırın
- Alınan yapılandırılmış belge etiketinin türünde olup olmadığını kontrol edin`SdtType.Checkbox` . Eğer öyleyse,`Checked` içerik kontrolünün özelliği`true` kutuyu işaretlemek için Aksi takdirde, işaretlemeden bırakabilirsiniz.
+## Adım 3: Mevcut Durumuna Göre Onay Kutusunu İşaretleyin veya İşaretini Kaldırın
+ Alınan yapılandırılmış belge etiketinin türünde olup olmadığını kontrol edin`SdtType.Checkbox` . Eğer öyleyse, ayarlayın`Checked` içerik kontrolünün özelliği`true` kutuyu işaretlemek için. Aksi halde işaretlemeden bırakabilirsiniz.
 
 ```csharp
 if (sdtCheckBox.SdtType == SdtType.Checkbox)
 	sdtCheckBox.Checked = true;
 ```
 
-## 4. Adım: Belgeyi Kaydedin
- Değiştirilen belgeyi belirtilen dizine kaydedin.`Save`yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.CurrentStateOfCheckBox.docx" olarak kaydediyoruz.
+## Adım 4: Belgeyi Kaydedin
+ Değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydedin:`Save`yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.CurrentStateOfCheckBox.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-### Aspose.Words for .NET kullanan Current State Of Check Box için örnek kaynak kodu 
+### Aspose.Words for .NET kullanan Mevcut Onay Kutusu Durumu için örnek kaynak kodu 
 
 ```csharp
 	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");
-	// Belgeden ilk içerik denetimini alın.
+	// Belgeden ilk içerik kontrolünü alın.
 	StructuredDocumentTag sdtCheckBox =
 		(StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 	if (sdtCheckBox.SdtType == SdtType.Checkbox)
@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 	doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizdeki bir onay kutusu içerik kontrolünü başarıyla aldınız ve mevcut durumunu ayarladınız.
+Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizdeki onay kutusu içerik kontrolünü başarıyla aldınız ve mevcut durumunu ayarladınız.

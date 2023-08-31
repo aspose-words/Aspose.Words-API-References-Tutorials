@@ -21,7 +21,7 @@ Um die Textverarbeitung mit der Tabelle und den Zellen zu starten, müssen wir e
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Erstellen Sie das Dokument und initialisieren Sie den Dokumentgenerator
+// Erstellen Sie das Dokument und initialisieren Sie den Dokumentengenerator
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

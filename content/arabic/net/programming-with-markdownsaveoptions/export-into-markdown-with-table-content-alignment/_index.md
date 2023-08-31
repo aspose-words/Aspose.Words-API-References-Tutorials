@@ -1,15 +1,15 @@
 ---
-title: تصدير إلى Markdown مع محاذاة محتوى الجدول
-linktitle: تصدير إلى Markdown مع محاذاة محتوى الجدول
-second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: تعرف على كيفية تصدير محتوى الجدول بمحاذاة مختلفة لملفات Markdown باستخدام Aspose.Words for .NET.
+title: تصدير إلى تخفيض السعر مع محاذاة محتوى الجدول
+linktitle: تصدير إلى تخفيض السعر مع محاذاة محتوى الجدول
+second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
+description: تعرف على كيفية تصدير محتوى الجدول بمحاذاة مختلفة إلى ملفات Markdown باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية التي تساعد في تصدير المحتوى إلى ملف Markdown مع محاذاة محتوى الجدول باستخدام مكتبة Aspose.Words لـ .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+فيما يلي دليل خطوة بخطوة لشرح كود مصدر C# التالي الذي يساعد على تصدير المحتوى إلى ملف Markdown مع محاذاة محتوى الجدول باستخدام مكتبة Aspose.Words لـ .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## الخطوة 1: قم بتعيين مسار دليل المستند
 
 ```csharp
 // المسار إلى دليل المستندات.
@@ -18,16 +18,16 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
 
-## الخطوة 2: قم بإنشاء مستند ومولد مستندات
+## الخطوة 2: إنشاء مستند ومولد المستندات
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثيل`DocumentBuilder` فئة تسمح لنا بمعالجة المستند وإضافة عناصر.
+ هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثال على`DocumentBuilder` فئة والتي سوف تسمح لنا بمعالجة الوثيقة وإضافة عناصر.
 
-## الخطوة 3: أدخل خلايا في الجدول بمحاذاة فقرات مختلفة
+## الخطوة 3: قم بإدراج خلايا في الجدول بمحاذاة فقرات مختلفة
 
 ```csharp
 builder. InsertCell();
@@ -38,9 +38,9 @@ builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.Write("Cell2");
 ```
 
-نستخدم Document Builder لإدراج خلايا في الجدول وتعيين محاذاة فقرة مختلفة لكل خلية.
+نستخدم منشئ المستندات لإدراج الخلايا في الجدول وتعيين محاذاة فقرات مختلفة لكل خلية.
 
-## الخطوة 4: قم بتعيين خيارات تصدير Markdown وحفظ المستند المعدل
+## الخطوة 4: قم بتعيين خيارات تصدير Markdown واحفظ المستند المعدل
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
@@ -59,9 +59,9 @@ saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 ```
 
-قمنا بتعيين خيارات تصدير Markdown بمحاذاة محتوى جدول مختلفة ، ثم احفظنا المستند المعدل باستخدام كل خيار محاذاة.
+نقوم بتعيين خيارات تصدير Markdown بمحاذاة مختلفة لمحتوى الجدول، ثم نحفظ المستند المعدل باستخدام كل خيار محاذاة.
 
-### مثال على شفرة المصدر للتصدير إلى Markdown مع محاذاة محتوى الجدول باستخدام Aspose.Words for .NET
+### مثال على التعليمات البرمجية المصدر للتصدير إلى Markdown مع محاذاة محتوى الجدول باستخدام Aspose.Words لـ .NET
 
 ```csharp
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 	builder.Write("Cell2");
 
-	// يجعل كل الفقرات الموجودة داخل الجدول محاذاة.
+	// جعل جميع الفقرات الموجودة داخل الجدول تتم محاذاتها.
 	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 	{
 		TableContentAlignment = TableContentAlignment.Left

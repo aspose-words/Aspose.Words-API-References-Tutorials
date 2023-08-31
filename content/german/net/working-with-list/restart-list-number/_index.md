@@ -74,7 +74,7 @@ Speichern Sie abschließend das geänderte Dokument:
 builder.Document.Save(dataDir + "ResetListNumber.docx");
 ```
 
-So ! Sie haben die Nummer einer Liste in einem Word-Dokument mit Aspose.Words für .NET erfolgreich zurückgesetzt.
+Also ! Sie haben die Nummer einer Liste in einem Word-Dokument mit Aspose.Words für .NET erfolgreich zurückgesetzt.
 
 ### Beispielquellcode für das Zurücksetzen der Listennummer
 

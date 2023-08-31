@@ -1,32 +1,32 @@
 ---
-title: حدد التنسيق الشرطي
-linktitle: حدد التنسيق الشرطي
-second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: دليل خطوة بخطوة لتحديد التنسيق الشرطي في جدول باستخدام Aspose.Words for .NET.
+title: تعريف التنسيق الشرطي
+linktitle: تعريف التنسيق الشرطي
+second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
+description: دليل خطوة بخطوة لتحديد التنسيق الشرطي في الجدول باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/programming-with-table-styles-and-formatting/define-conditional-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتحديد التنسيق الشرطي باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تطبيق التنسيق الشرطي على جدول في مستندات Word باستخدام Aspose.Words for .NET.
+في هذا البرنامج التعليمي، سنرشدك خلال العملية خطوة بخطوة لتحديد التنسيق الشرطي باستخدام Aspose.Words for .NET. سنشرح لك التعليمات البرمجية المصدرية المجمعة لـ C# ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي، ستعرف كيفية تطبيق التنسيق الشرطي على جدول في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
 
 ## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو الموقع الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات الخاصة بك" بالمسار المناسب.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## الخطوة 2: إنشاء مستند جديد ومنشئ المستندات
+ بعد ذلك، تحتاج إلى إنشاء مثيل جديد لـ`Document` فئة ومنشئ مستند لتلك الوثيقة.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلايا
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستندات ، ثم نضيف خلايا إلى الجدول باستخدام الامتداد`InsertCell()` الطريقة ونكتب محتويات الخلايا إلى ملف`Write()` طريقة.
+## الخطوة 3: ابدأ جدولاً جديدًا وأضف الخلايا
+للبدء في إنشاء الجدول، نستخدم`StartTable()` طريقة منشئ المستندات، ثم نضيف خلايا إلى الجدول باستخدام`InsertCell()` الطريقة ونكتب محتويات الخلايا باستخدام`Write()` طريقة.
 
 ```csharp
 Table table = builder. StartTable();
@@ -41,7 +41,7 @@ builder. EndTable();
 ```
 
 ## الخطوة 4: إنشاء نمط جدول وتعيين التنسيق الشرطي
- الآن يمكننا إنشاء نمط جدول باستخدام امتداد`TableStyle` الطبقة و`Add()` طريقة من الوثيقة`s `الأنماط` collection. We can then set the conditional formatting for the first row of the table by accessing the `الأنماط الشرطية` property of the table style and using the `FirstRow`.
+ الآن يمكننا إنشاء نمط الجدول باستخدام`TableStyle` الطبقة و`Add()` الطريقة من الوثيقة`s `الأنماط` collection. We can then set the conditional formatting for the first row of the table by accessing the `ConditionalStyles` property of the table style and using the `خاصية الصف الأول.
 
 ```csharp
 TableStyle tableStyle = (TableStyle)doc.Styles.Add(StyleType.Table, "MyTableStyle1");
@@ -49,8 +49,8 @@ tableStyle.ConditionalStyles.FirstRow.Shading.BackgroundPatternColor = Color.Gre
 tableStyle.ConditionalStyles.FirstRow.Shading.Texture = TextureIndex.TextureNone;
 ```
 
-## الخطوة 5: قم بتطبيق نمط الجدول على الجدول
- أخيرًا ، نطبق نمط الجدول الذي أنشأناه على الجدول باستخدام`Style` خاصية الجدول.
+## الخطوة 5: تطبيق نمط الجدول على الجدول
+ وأخيرًا، نقوم بتطبيق نمط الجدول الذي أنشأناه على الجدول باستخدام ملف`Style` خاصية الجدول.
 
 ```csharp
 table.Style = tableStyle;
@@ -59,18 +59,18 @@ table.Style = tableStyle;
 ## الخطوة 6: احفظ المستند المعدل
 أخيرًا احفظ المستند المعدل في ملف. يمكنك اختيار اسم و
 
-  موقع مناسب لمستند الإخراج.
+  الموقع المناسب للمستند الناتج.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");
 ```
 
-تهنئة ! لقد قمت الآن بتعريف التنسيق الشرطي لجدولك باستخدام Aspose.Words for .NET.
+تهنئة ! لقد قمت الآن بتعريف التنسيق الشرطي لجدولك باستخدام Aspose.Words لـ .NET.
 
-### نموذج التعليمات البرمجية المصدر لـ Define Conditional Formatting باستخدام Aspose.Words for .NET 
+### نموذج التعليمات البرمجية المصدر لتحديد التنسيق الشرطي باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -92,4 +92,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 ```
 
 ## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين التنسيق الشرطي باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تطبيق التنسيق الشرطي على الجداول الخاصة بك في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات الخاصة.
+في هذا البرنامج التعليمي، تعلمنا كيفية تعيين التنسيق الشرطي باستخدام Aspose.Words لـ .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة، يمكنك بسهولة تطبيق التنسيق الشرطي على جداولك في مستندات Word. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات المحددة.

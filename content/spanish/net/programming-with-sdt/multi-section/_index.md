@@ -1,8 +1,8 @@
 ---
 title: Sección múltiple
 linktitle: Sección múltiple
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a recuperar y procesar etiquetas de documentos estructurados de varias secciones en un documento de Word usando Aspose.Words para .NET.
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda a recuperar y procesar etiquetas de documentos estructurados de varias secciones en un documento de Word utilizando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-sdt/multi-section/
@@ -10,11 +10,11 @@ url: /es/net/programming-with-sdt/multi-section/
 
 Este tutorial explica cómo trabajar con etiquetas de documentos estructurados de varias secciones en un documento de Word usando Aspose.Words para .NET. Puede recuperar y procesar las etiquetas de sección presentes en el documento.
 
-## requisitos previos
+## Requisitos previos
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
+- Conocimientos básicos de C# y procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
  Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde se encuentra su documento.
@@ -23,23 +23,23 @@ Para seguir este tutorial, necesita tener lo siguiente:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Paso 2: Cargue el documento y recupere las etiquetas de varias secciones
- Cargue el documento de Word usando el`Document` constructor, pasando la ruta al documento como parámetro. Recupere todos los nodos de inicio de rango de etiqueta de documento estructurado en el documento usando el`GetChildNodes` método.
+## Paso 2: cargue el documento y recupere etiquetas de varias secciones
+ Cargue el documento de Word usando el`Document` constructor, pasando la ruta al documento como parámetro. Recupere todos los nodos de inicio del rango de etiquetas de documentos estructurados en el documento utilizando el`GetChildNodes` método.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
 NodeCollection tags = doc.GetChildNodes(NodeType.StructuredDocumentTagRangeStart, true);
 ```
 
-## Paso 3: Procese las etiquetas de varias secciones
-Iterar a través de la colección de nodos de inicio de rango de etiquetas de documentos estructurados. En este ejemplo, simplemente imprimimos el título de cada etiqueta en la consola. Puede realizar un procesamiento adicional en función de sus requisitos.
+## Paso 3: procese las etiquetas de varias secciones
+Itere a través de la colección de nodos de inicio del rango de etiquetas de documentos estructurados. En este ejemplo, simplemente imprimimos el título de cada etiqueta en la consola. Puede realizar un procesamiento adicional según sus requisitos.
 
 ```csharp
 foreach (StructuredDocumentTagRangeStart tag in tags)
     Console.WriteLine(tag.Title);
 ```
 
-### Ejemplo de código fuente para varias secciones usando Aspose.Words para .NET 
+### Código fuente de ejemplo para varias secciones usando Aspose.Words para .NET 
 
 ```csharp
 	//Ruta a su directorio de documentos

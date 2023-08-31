@@ -1,23 +1,23 @@
 ---
-title: Columnas de la tabla de marcadores en un documento de Word
-linktitle: Columnas de la tabla de marcadores en un documento de Word
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a marcar una columna de tabla en un documento de Word usando Aspose.Words para .NET.
+title: Marcar columnas de tabla en un documento de Word
+linktitle: Marcar columnas de tabla en un documento de Word
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda a marcar una columna de una tabla en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función de columnas de la tabla de marcadores en la biblioteca Aspose.Words para .NET. Esta función le permite marcar una columna específica de una tabla en un documento de Word y acceder al contenido de esa columna.
+En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función Marcar columnas de tabla en la biblioteca Aspose.Words para .NET. Esta función le permite marcar una columna específica de una tabla en un documento de Word y acceder al contenido de esa columna.
 
-## requisitos previos
+## Requisitos previos
 
 - Conocimientos básicos del lenguaje C#.
 - Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## Paso 1: Crear la tabla
+## Paso 1: crear la tabla
 
- Antes de crear un marcador en una columna de tabla, primero debemos crear la tabla usando un`DocumentBuilder` objeto. En nuestro ejemplo, creamos una tabla con dos filas y dos columnas:
+ Antes de crear un marcador en una columna de la tabla, primero debemos crear la tabla usando un`DocumentBuilder` objeto. En nuestro ejemplo, creamos una tabla con dos filas y dos columnas:
 
 ```csharp
 builder. StartTable();
@@ -43,17 +43,17 @@ builder. EndRow();
 builder. EndTable();
 ```
 
-## Paso 2: Crear el marcador de columna
+## Paso 2: crear el marcador de columna
 
- usamos el`StartBookmark` método para crear un marcador en una columna específica de la tabla. En nuestro ejemplo, usamos el nombre "MyBookmark" para el marcador:
+ Usamos el`StartBookmark` Método para crear un marcador en una columna específica de la tabla. En nuestro ejemplo, utilizamos el nombre "MyBookmark" para el marcador:
 
 ```csharp
 builder. StartBookmark("MyBookmark");
 ```
 
-## Paso 3: Acceda al contenido de la columna
+## Paso 3: acceda al contenido de la columna
 
- Revisamos todos los marcadores en el documento y mostramos sus nombres. Si un marcador es una columna, accedemos al contenido de esa columna usando el índice de la columna y el`GetText` método:
+ Revisamos todos los marcadores del documento y mostramos sus nombres. Si un marcador es una columna, accedemos al contenido de esa columna utilizando el índice de la columna y el`GetText` método:
 
 ```csharp
 foreach (Bookmark
@@ -70,9 +70,9 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 }
 ```
 
-### Ejemplo de código fuente para las columnas de la tabla de marcadores usando Aspose.Words para .NET
+### Código fuente de ejemplo para columnas de tabla de marcadores usando Aspose.Words para .NET
 
-Aquí está el código fuente de muestra completo para demostrar cómo crear un marcador en una columna de tabla usando Aspose.Words para .NET:
+Aquí está el código fuente de muestra completo para demostrar la creación de un marcador en una columna de la tabla usando Aspose.Words para .NET:
 
 ```csharp
 
@@ -122,13 +122,13 @@ Aquí está el código fuente de muestra completo para demostrar cómo crear un 
 
 ## Conclusión
 
-En este artículo, exploramos el código fuente de C# para entender cómo usar la función de columnas de la tabla de marcadores de Aspose.Words para .NET. Seguimos una guía paso a paso para marcar una columna específica de una tabla en un documento de Word y saltar al contenido de esa columna.
+En este artículo, exploramos el código fuente de C# para comprender cómo utilizar la función Columnas de tabla de marcadores de Aspose.Words para .NET. Seguimos una guía paso a paso para marcar una columna específica de una tabla en un documento de Word y saltar al contenido de esa columna.
 
 ### Preguntas frecuentes sobre las columnas de la tabla de marcadores en un documento de Word
 
-#### P: ¿Cuáles son los requisitos previos para usar la función "Marcadores para columnas de tabla" en Aspose.Words para .NET?
+#### P: ¿Cuáles son los requisitos previos para utilizar la función "Marcadores para columnas de tabla" en Aspose.Words para .NET?
 
-R: Para usar la función "Marcadores para columnas de tabla" en Aspose.Words para .NET, debe tener conocimientos básicos del lenguaje C#. También necesita un entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
+R: Para utilizar la función "Marcadores para columnas de tabla" en Aspose.Words para .NET, debe tener conocimientos básicos del lenguaje C#. También necesita un entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
 #### P: ¿Cómo crear una tabla con columnas en un documento de Word usando Aspose.Words para .NET?
 
@@ -156,17 +156,17 @@ builder. EndRow();
 builder. EndTable();
 ```
 
-#### P: ¿Cómo marcar una columna de tabla usando Aspose.Words para .NET?
+#### P: ¿Cómo marcar una columna de una tabla usando Aspose.Words para .NET?
 
- R: Para crear un marcador en una columna de tabla usando Aspose.Words para .NET, puede usar el`StartBookmark` metodo de la`DocumentBuilder` objeto para iniciar el marcador en una columna de tabla específica. Aquí hay un código de muestra:
+ R: Para crear un marcador en una columna de la tabla usando Aspose.Words para .NET, puede usar el`StartBookmark` método de la`DocumentBuilder` objeto para iniciar el marcador en una columna de tabla específica. Aquí hay un código de muestra:
 
 ```csharp
 builder.StartBookmark("MyBookmark");
 ```
 
-#### P: ¿Cómo acceder al contenido de la columna de la tabla desde el marcador usando Aspose.Words para .NET?
+#### P: ¿Cómo acceder al contenido de las columnas de la tabla desde el marcador usando Aspose.Words para .NET?
 
-R: Para acceder al contenido de una columna de tabla desde un marcador usando Aspose.Words para .NET, puede recorrer todos los marcadores en el documento, verificar si un marcador es una columna y usar el índice de la columna para acceder al contenido de esa columna Aquí hay un código de muestra:
+R: Para acceder al contenido de una columna de la tabla desde un marcador usando Aspose.Words para .NET, puede recorrer todos los marcadores en el documento, verificar si un marcador es una columna y usar el índice de la columna para acceder al contenido de esa columna. Aquí hay un código de muestra:
 
 ```csharp
 foreach(Bookmark bookmark in doc.Range.Bookmarks)
@@ -184,4 +184,4 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 #### P: ¿Existe un límite en la cantidad de columnas que puedo crear en una tabla con marcadores de columna?
 
-R: No hay un límite específico para la cantidad de columnas que puede crear en una tabla con marcadores de columnas usando Aspose.Words para .NET. El límite depende principalmente de los recursos disponibles en su sistema y las especificaciones del formato de archivo de Word que está utilizando. Sin embargo, se recomienda no crear una cantidad excesiva de columnas, ya que esto puede afectar el rendimiento y la legibilidad del documento final.
+R: No existe un límite específico para la cantidad de columnas que puede crear en una tabla con marcadores de columna usando Aspose.Words para .NET. El límite depende principalmente de los recursos disponibles en su sistema y de las especificaciones del formato de archivo de Word que esté utilizando. Sin embargo, se recomienda no crear una cantidad excesiva de columnas, ya que esto puede afectar el rendimiento y la legibilidad del documento final.

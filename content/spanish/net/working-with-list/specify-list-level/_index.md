@@ -1,18 +1,18 @@
 ---
 title: Especificar nivel de lista
 linktitle: Especificar nivel de lista
-second_title: API de procesamiento de documentos de Aspose.Words
+second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda a especificar el nivel de lista en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-list/specify-list-level/
 ---
 
-En este tutorial paso a paso, le mostraremos cómo especificar el nivel de lista en un documento de Word utilizando Aspose.Words para .NET. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
+En este tutorial paso a paso, le mostraremos cómo especificar el nivel de lista en un documento de Word usando Aspose.Words para .NET. Explicaremos el código fuente C# proporcionado y le mostraremos cómo implementarlo en sus propios proyectos.
 
- Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo ha hecho, descargue e instale la biblioteca desde[Aspose.Releases]https://releases.aspose.com/words/net/.
+ Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo has hecho, descarga e instala la biblioteca desde[Aspose.Releases]https://releases.aspose.com/words/net/.
 
-## Paso 1: Crear el Documento y el Generador de Documentos
+## Paso 1: Crear el documento y el generador de documentos
 
 Primero, cree un nuevo documento y un generador de documentos asociado:
 
@@ -24,13 +24,13 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: crear y aplicar una lista numerada
 
-continuación, cree una lista numerada basada en una de las plantillas de lista de Microsoft Word y aplíquela al párrafo actual en el generador de documentos:
+continuación, cree una lista numerada basada en una de las plantillas de listas de Microsoft Word y aplíquela al párrafo actual en el generador de documentos:
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## Paso 3: Especificación de nivel de lista
+## Paso 3: Especificación del nivel de lista
 
  Utilice el generador de documentos`ListLevelNumber` propiedad para especificar el nivel de la lista y agregar texto al párrafo:
 
@@ -46,15 +46,15 @@ Repita estos pasos para especificar niveles de lista y agregar texto en cada niv
 
 ## Paso 4: crear y aplicar una lista con viñetas
 
-También puede crear y aplicar una lista con viñetas usando una de las plantillas de lista de Microsoft Word:
+También puede crear y aplicar una lista con viñetas utilizando una de las plantillas de listas de Microsoft Word:
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## Paso 5: agregar texto a los niveles de la lista con viñetas
+## Paso 5: Agregar texto a los niveles de la lista con viñetas
 
- Utilizar el`ListLevelNumber` propiedad de nuevo para especificar el nivel de la lista con viñetas y agregar texto:
+ Utilizar el`ListLevelNumber` propiedad nuevamente para especificar el nivel de la lista con viñetas y agregar texto:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -64,15 +64,15 @@ for (int i = 0; i < 9; i++)
 }
 ```
 
-## Paso 6: Deja de formatear la lista
+## Paso 6: dejar de formatear la lista
 
- Para detener el formato de la lista, establezca`null` hacia`List` propiedad del generador de documentos:
+ Para detener el formato de la lista, configure`null` hacia`List` propiedad del generador de documentos:
 
 ```csharp
 builder. ListFormat. List = null;
 ```
 
-## Paso 7: Guardar el documento modificado
+## Paso 7: guardar el documento modificado
 
 Guarde el documento modificado:
 
@@ -82,18 +82,18 @@ builder.Document.Save(dataDir + "SpecifyListLevel.docx");
 
 Entonces ! Ha especificado correctamente el nivel de lista en un documento de Word utilizando Aspose.Words para .NET.
 
-### Ejemplo de código fuente para especificar el nivel de la lista
+### Código fuente de muestra para especificar el nivel de lista
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Cree una lista numerada basada en una de las plantillas de lista de Microsoft Word
-// y aplicarlo al párrafo actual del generador de documentos.
+//Cree una lista numerada basada en una de las plantillas de listas de Microsoft Word
+// y aplicarlo al párrafo actual del creador de documentos.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
-// Hay nueve niveles en esta lista, vamos a probarlos todos.
+// Hay nueve niveles en esta lista, probémoslos todos.
 for (int i = 0; i < 9; i++)
 {
 	builder.ListFormat.ListLevelNumber = i;
@@ -101,7 +101,7 @@ for (int i = 0; i < 9; i++)
 }
 
 // Cree una lista con viñetas basada en una de las plantillas de lista de Microsoft Word
-// y aplicarlo al párrafo actual del generador de documentos.
+// y aplicarlo al párrafo actual del creador de documentos.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
 for (int i = 0; i < 9; i++)
@@ -121,14 +121,14 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### P: ¿Cómo puedo especificar el nivel de lista en Aspose.Words?
 
- R: Para especificar el nivel de la lista en Aspose.Words, debe crear una instancia del`List` clase y darle una lista numerada. Entonces puedes usar el`Paragraph.ListFormat.ListLevelNumber` propiedad para especificar el nivel de cada elemento de la lista. Puede asociar esta lista con una sección de su documento para que los elementos de la lista tengan el nivel deseado.
+ R: Para especificar el nivel de lista en Aspose.Words, necesita crear una instancia del`List` clase y dale una lista numerada. Entonces puedes usar el`Paragraph.ListFormat.ListLevelNumber` propiedad para especificar el nivel de cada elemento de la lista. Puede asociar esta lista con una sección de su documento para que los elementos de la lista tengan el nivel deseado.
 
 #### P: ¿Es posible cambiar el formato de numeración de los elementos de la lista en Aspose.Words?
 
- R: Sí, puede cambiar el formato de numeración de los elementos de la lista en Aspose.Words. El`ListLevel` class ofrece varias propiedades para esto, como`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, etc. Puede utilizar estas propiedades para establecer el formato de numeración de los elementos de la lista, como números arábigos, números romanos, letras, etc.
+ R: Sí, puede cambiar el formato de numeración de los elementos de la lista en Aspose.Words. El`ListLevel` La clase ofrece varias propiedades para esto, como por ejemplo`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, etc. Puede utilizar estas propiedades para establecer el formato de numeración de los elementos de la lista, como números arábigos, números romanos, letras, etc.
 
 #### P: ¿Puedo agregar niveles adicionales a una lista numerada en Aspose.Words?
 
- R: Sí, es posible agregar niveles adicionales a una lista numerada en Aspose.Words. El`ListLevel` class le permite establecer propiedades de formato para cada nivel de la lista. Puede configurar opciones como prefijo, sufijo, alineación, sangría, etc. Esto le permite crear listas con múltiples niveles de jerarquía.
+ R: Sí, es posible agregar niveles adicionales a una lista numerada en Aspose.Words. El`ListLevel` La clase le permite establecer propiedades de formato para cada nivel de la lista. Puede configurar opciones como prefijo, sufijo, alineación, sangría, etc. Esto le permite crear listas con múltiples niveles de jerarquía.
 
 

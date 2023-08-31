@@ -1,21 +1,21 @@
 ---
 title: Sayfa Genişliğine Otomatik Sığdır
 linktitle: Sayfa Genişliğine Otomatik Sığdır
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile bir Word belgesinde tabloyu sayfa genişliğine otomatik sığdırmayı öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile bir Word belgesinde bir tabloyu sayfa genişliğine nasıl otomatik olarak sığdıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/auto-fit-to-page-width/
 ---
 
-Bu eğitimde, bir Word belgesinde bir tabloyu sayfa genişliğine otomatik olarak sığdırmak için Aspose.Words for .NET'i nasıl kullanacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerindeki tabloları programlı olarak değiştirebileceksiniz.
+Bu eğitimde, bir Word belgesindeki tabloyu sayfa genişliğine otomatik olarak sığdırmak için Aspose.Words for .NET'in nasıl kullanılacağını öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word belgelerindeki tabloları programlı olarak değiştirebileceksiniz.
 
 ## Adım 1: Proje Kurulumu
 1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## 2. Adım: Belgeyi Oluşturma ve Yapılandırma
-Kelime İşleme'yi tablo ile başlatmak için bir belge oluşturmamız ve belge oluşturucuyu yapılandırmamız gerekiyor. Bu adımları takip et:
+## Adım 2: Belgeyi Oluşturma ve Yapılandırma
+Kelime İşleme'yi tabloyla başlatmak için bir belge oluşturmamız ve belge oluşturucuyu yapılandırmamız gerekir. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -26,10 +26,10 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
+"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## 3. Adım: Tabloyu Ekleme ve Yapılandırma
-Ardından, belgeye, sayfanın genişliğinin yarısını kaplayan bir genişliğe sahip bir tablo ekleyeceğiz. Aşağıdaki kodu kullanın:
+## Adım 3: Tabloyu Ekleme ve Yapılandırma
+Daha sonra belgeye sayfanın genişliğinin yarısını kaplayan genişliğe sahip bir tablo ekleyeceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 // Tabloyu ekleyin ve genişliğini yapılandırın
@@ -43,10 +43,10 @@ builder. InsertCell();
 builder.Writeln("Cell #3");
 ```
 
-Burada tabloyu oluşturmaya başlamak, hücreleri eklemek ve tablonun tercih edilen genişliğini sayfa genişliğinin %50'si olarak ayarlamak için belge oluşturucuyu kullanıyoruz. Sonra her hücreye metin ekliyoruz.
+Burada tabloyu oluşturmaya başlamak, hücreleri eklemek ve tablonun tercih edilen genişliğini sayfa genişliğinin %50'sine ayarlamak için belge oluşturucuyu kullanıyoruz. Daha sonra her hücreye metin ekliyoruz.
 
-## 4. Adım: Değiştirilen belgeyi kaydetme
-Son olarak, değiştirilen belgeyi tablonun sayfa genişliğine göre ayarlanmış olarak kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
+## Adım 4: Değiştirilen belgeyi kaydetme
+Son olarak, değiştirilen belgeyi, sayfanın genişliğine göre ayarlanmış tabloyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 // Değiştirilen belgeyi kaydet
@@ -76,4 +76,4 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
 ## Çözüm
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde bir tabloyu sayfa genişliğine otomatik olarak sığdırmayı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki tabloları programlı olarak değiştirebilirsiniz. Bu özellik, tablonun genişliğini sayfaya göre dinamik olarak uyarlamanıza olanak tanır, böylece profesyonel ve görsel olarak çekici bir belge sunar.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde bir tabloyu sayfa genişliğine otomatik olarak nasıl sığdıracağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, Word belgelerinizdeki tabloları programlı olarak değiştirebilirsiniz. Bu özellik, tablonun genişliğini sayfaya göre dinamik olarak uyarlamanıza olanak tanır, böylece profesyonel ve görsel olarak çekici bir belge sunar.

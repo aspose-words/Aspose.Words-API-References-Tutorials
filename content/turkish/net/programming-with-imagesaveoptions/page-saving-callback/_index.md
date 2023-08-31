@@ -1,20 +1,20 @@
 ---
-title: Sayfa Tasarruflu Geri Arama
-linktitle: Sayfa Tasarruflu Geri Arama
-second_title: Aspose.Words Belge İşleme API'sı
+title: Sayfa Kaydederek Geri Arama
+linktitle: Sayfa Kaydederek Geri Arama
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile belge sayfalarını görüntülere kaydetmeyi nasıl özelleştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 
-Bu öğreticide, .NET için Aspose.Words görüntü kaydetme seçenekleriyle sayfa kaydetme geri aramasını kullanmak için sağlanan C# kaynak kodunu keşfedeceğiz. Bu özellik, bir belgenin her sayfasını görüntü olarak kaydederken özel eylemler gerçekleştirmenizi sağlar.
+Bu eğitimde, .NET için Aspose.Words görüntü kaydetme seçenekleriyle sayfa kaydetme geri çağırma işlevini kullanmak için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, bir belgenin her sayfasını resim olarak kaydederken özel eylemler gerçekleştirmenize olanak tanır.
 
 ## 1. Adım: Ortamı ayarlama
 
-Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
+Başlamadan önce Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## 2. Adım: Belgeyi yükleme
+## Adım 2: Belgeyi yükleme
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Bu adımda, kullanarak belgeyi yüklüyoruz`Document` yöntemi ve yolu yüklenecek DOCX dosyasına geçirme.
+ Bu adımda belgeyi aşağıdaki komutu kullanarak yüklüyoruz:`Document` yöntemi ve yüklenecek DOCX dosyasının yolunu iletme.
 
 ## 3. Adım: Görüntü yedekleme seçeneklerini yapılandırın
 
@@ -35,9 +35,9 @@ ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
 };
 ```
 
- Bu adımda, yeni bir görüntü oluşturarak görüntü kaydetme seçeneklerini yapılandırıyoruz.`ImageSaveOptions` nesne. İstenilen yedekleme formatını burada PNG formatı için "Png" olarak belirtiyoruz. Kullanırız`PageSet` burada belgenin ilk sayfasından son sayfasına kadar kaydedilecek sayfa aralığını belirtmek için (`doc.PageCount - 1`). biz de ayarladık`PageSavingCallback` örneğine`HandlePageSavingCallback`, sayfa kaydetme geri aramasını işlemek için özel bir sınıftır.
+ Bu adımda yeni bir dosya oluşturarak görsel kaydetme seçeneklerini yapılandırıyoruz.`ImageSaveOptions` nesne. İstediğiniz yedekleme formatını belirtiyoruz, burada PNG formatı için "Png" var. Kullanırız`PageSet` Kaydedilecek sayfa aralığını belirtmek için burada belgenin ilk sayfasından son sayfasına kadar (`doc.PageCount - 1`). Biz de belirledik`PageSavingCallback` bir örneğine`HandlePageSavingCallback`, sayfa kaydetme geri aramasını işlemek için özel bir sınıftır.
 
-## 4. Adım: Sayfayı Kaydet Geri Aramasını Uygulama
+## Adım 4: Kaydetme Sayfasını Geri Aramayı Uygulama
 
 ```csharp
 public class HandlePageSavingCallback : IPageSavingCallback
@@ -51,7 +51,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- Bu adımda, uyguladığımız`HandlePageSavingCallback` uygulayan sınıf`IPageSavingCallback` arayüz. Özel eylemlerinizi ekleyerek bu sınıfı özelleştirebilirsiniz.`PageSaving` yöntem. Sayfa bilgilerine şu adresten ulaşabilirsiniz:`args.PageIndex` mülkiyeti`PageSavingArgs` argüman olarak iletilen nesne.
+ Bu adımda şunları uyguluyoruz:`HandlePageSavingCallback` uygulayan sınıf`IPageSavingCallback` arayüz. Özel eylemlerinizi ekleyerek bu sınıfı özelleştirebilirsiniz.`PageSaving` yöntem. sayfa bilgilerine şuradan ulaşabilirsiniz:`args.PageIndex` mülkiyeti`PageSavingArgs` nesne argüman olarak iletildi.
 
 ## 5. Adım: Sayfaları resim olarak kaydetme
 
@@ -59,11 +59,11 @@ public class HandlePageSavingCallback : IPageSavingCallback
 doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSaveOptions);
 ```
 
- Bu son adımda, belgenin her sayfasını kullanarak bir görüntü olarak kaydediyoruz.`Save` yöntemi ve yolu çıkış dosyasına iletmek`.png` uzantı, belirtilen kaydetme seçenekleriyle birlikte.
+ Bu son adımda, belgenin her sayfasını kullanarak resim olarak kaydediyoruz.`Save` yöntemi ve çıktı dosyasına giden yolu iletmek`.png` uzantı, belirtilen kaydetme seçenekleriyle birlikte.
 
-Artık belgenin her sayfasını bir görüntü olarak kaydederken özel eylemler gerçekleştirmek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithImageSaveOptions.PageSavingCallback.png" adıyla belirtilen dizine kaydedilecektir.
+Artık belgenin her sayfasını görüntü olarak kaydederken özel eylemler gerçekleştirmek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithImageSaveOptions.PageSavingCallback.png" adıyla belirtilen dizine kaydedilecektir.
 
-### Aspose.Words for .NET kullanan Sayfa Kaydetme Geri Çağırması için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak Sayfa Kaydederek Geri Arama için örnek kaynak kodu
 
 
 ```csharp 
@@ -85,8 +85,8 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 ## Çözüm
 
-Bu öğreticide, .NET için Aspose.Words görüntü kaydetme seçenekleriyle sayfa kaydetme geri çağırma işlevini inceledik. Bir belgenin her sayfasını resim olarak kaydederken özel eylemlerin nasıl gerçekleştirileceğini öğrendik.
+Bu eğitimde, .NET için Aspose.Words görüntü kaydetme seçenekleriyle sayfa kaydetme geri çağırma işlevini araştırdık. Bir belgenin her sayfasını resim olarak kaydederken özel eylemlerin nasıl gerçekleştirileceğini öğrendik.
 
-Bu özellik, görüntülere dönüştürürken her sayfada belirli işlemler yapmak istediğinizde kullanışlıdır. Sayfa bilgilerine erişebilir ve bunu yedekleme seçeneklerini özelleştirmek veya sayfaya özgü diğer işlemleri gerçekleştirmek için kullanabilirsiniz.
+Bu özellik, görüntülere dönüştürürken her sayfada belirli işlemler gerçekleştirmek istediğinizde kullanışlıdır. Sayfa bilgilerine erişebilir ve bunu yedekleme seçeneklerini özelleştirmek veya sayfaya özel diğer işlemleri gerçekleştirmek için kullanabilirsiniz.
 
-Aspose.Words for .NET, belge işleme ve oluşturma için çok çeşitli gelişmiş özellikler sunar. Sayfayı Kaydet Hatırlatıcı, sayfaları resimlere kaydetme sürecini özelleştirmeniz için size sunduğu birçok güçlü araçtan biridir.
+Aspose.Words for .NET, belge işleme ve oluşturma için çok çeşitli gelişmiş özellikler sunar. Sayfayı Kaydetme Hatırlatıcısı, sayfaları resimlere kaydetme işlemini özelleştirmenizi sağlayan birçok güçlü araçtan biridir.

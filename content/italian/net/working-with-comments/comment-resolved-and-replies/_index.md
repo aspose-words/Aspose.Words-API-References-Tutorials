@@ -1,17 +1,17 @@
 ---
 title: Commento risolto e risposte
 linktitle: Commento risolto e risposte
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come risolvere i commenti e le loro risposte nei documenti di Word utilizzando Aspose.Words per .NET.
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come risolvere i commenti e le relative risposte nei documenti Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-comments/comment-resolved-and-replies/
 ---
 
-In questo tutorial completo imparerai come risolvere i commenti e le loro risposte in un documento di Word usando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di gestire la risoluzione dei commenti e aggiornare lo stato dei commenti e le relative risposte.
+In questo tutorial completo imparerai come risolvere i commenti e le loro risposte in un documento Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo gli snippet di codice C# necessari. Al termine di questa guida sarai in grado di gestire la risoluzione dei commenti e aggiornare lo stato dei commenti e le relative risposte.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+Prima di iniziare, assicurati di possedere i seguenti prerequisiti:
 - Aspose.Words per la libreria .NET installata sul tuo sistema.
 
 ## Passaggio 1: caricare il documento e accedere ai commenti
@@ -25,7 +25,7 @@ NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
 ## Passaggio 2: risolvere i commenti e le relative risposte
-Successivamente, scorrere i commenti e le relative risposte per contrassegnarli come risolti:
+Successivamente, scorri i commenti e le relative risposte per contrassegnarli come risolti:
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
@@ -39,10 +39,10 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-Nel codice sopra, accediamo al commento principale e iteriamo attraverso le sue risposte. Possiamo recuperare l'ID del commento principale e il suo stato di risoluzione. Quindi, aggiorniamo il segno "Fatto" di ogni risposta al commento per indicare la risoluzione.
+Nel codice precedente, accediamo al commento genitore e iteriamo attraverso le sue risposte. Possiamo recuperare l'ID del commento principale e il suo stato di risoluzione. Quindi, aggiorniamo il segno "Fine" di ciascuna risposta al commento per indicare la risoluzione.
 
-## Passaggio 3: salvare il documento
-Dopo aver risolto i commenti e aggiornato il loro stato, salvare il documento modificato in un file utilizzando il metodo Save della classe Document:
+## Passaggio 3: salva il documento
+Dopo aver risolto i commenti e aggiornato il loro stato, salva il documento modificato in un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
@@ -69,22 +69,22 @@ foreach (Comment childComment in parentComment.Replies)
 
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
-Ricorda di regolare il codice in base ai tuoi requisiti specifici, incluso il percorso del file del documento e la personalizzazione aggiuntiva
+Ricorda di modificare il codice in base alle tue esigenze specifiche, incluso il percorso del file del documento e ulteriori personalizzazioni
 
 ## Conclusione
-Congratulazioni! Hai imparato con successo come risolvere i commenti e le loro risposte in un documento di Word utilizzando Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, ora puoi gestire la risoluzione dei commenti e aggiornare lo stato dei commenti e le relative risposte in base alle tue esigenze.
+Congratulazioni! Hai imparato con successo come risolvere i commenti e le loro risposte in un documento Word utilizzando Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, ora puoi gestire la risoluzione dei commenti e aggiornare lo stato dei commenti e le relative risposte in base alle tue esigenze.
 
-La risoluzione dei commenti aiuta a tenere traccia e gestire il feedback all'interno di un documento. Sperimenta con diversi stati dei commenti e personalizzali per migliorare la collaborazione e i processi di revisione nei tuoi documenti.
+La risoluzione dei commenti aiuta a tenere traccia e gestire il feedback all'interno di un documento. Sperimenta diversi stati dei commenti e personalizzali per migliorare i processi di collaborazione e revisione nei tuoi documenti.
 
-### FAQ
+### Domande frequenti
 
 #### D: Come posso risolvere un commento in Aspose.Words per .NET?
 
- R: Per risolvere un commento in Aspose.Words per .NET, puoi utilizzare il file`Comment.Resolve` metodo che specifica il`Comment` oggetto che vuoi risolvere. Questo contrassegnerà il commento come risolto e lo nasconderà nel documento finale.
+ R: Per risolvere un commento in Aspose.Words per .NET, puoi utilizzare il file`Comment.Resolve` metodo che specifica il`Comment` oggetto che vuoi risolvere. Ciò contrassegnerà il commento come risolto e lo nasconderà nel documento finale.
 
 #### D: Come posso aggiungere una risposta a un commento risolto in Aspose.Words per .NET?
 
- R: Sebbene i commenti risolti siano nascosti per impostazione predefinita nel documento finale, puoi comunque aggiungere una risposta a un commento risolto utilizzando il`Comment.AddReply` metodo specificando il testo della risposta e dove si desidera aggiungerlo .
+ R: Sebbene i commenti risolti siano nascosti per impostazione predefinita nel documento finale, puoi comunque aggiungere una risposta a un commento risolto utilizzando il file`Comment.AddReply` metodo specificando il testo della risposta e dove vuoi aggiungerlo.
 
 #### D: Come posso visualizzare i commenti risolti in Aspose.Words per .NET?
 
@@ -92,7 +92,7 @@ La risoluzione dei commenti aiuta a tenere traccia e gestire il feedback all'int
 
 #### D: Come posso nascondere tutti i commenti, comprese le risposte, in Aspose.Words per .NET?
 
- R: Per nascondere tutti i commenti, comprese le risposte, in Aspose.Words per .NET, puoi utilizzare il`CommentOptions.CommentDisplayMode` proprietà del`Document` oggetto e impostarlo su`CommentDisplayMode.None`.
+ R: Per nascondere tutti i commenti, comprese le risposte, in Aspose.Words per .NET, puoi utilizzare il file`CommentOptions.CommentDisplayMode` proprietà del`Document` oggetto e impostarlo su`CommentDisplayMode.None`.
 
 #### D: Posso modificare il testo di un commento risolto in Aspose.Words per .NET?
 

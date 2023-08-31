@@ -16,7 +16,7 @@ Collaboration is a fundamental aspect of document creation, and comments provide
 
 ## Setting Up Aspose.Words for Python
 
-To get started, you need to install Aspose.Words for Python. You can download the library from the official [Aspose.Words for Python](https://releases.aspose.com/words/python/) download link. Once downloaded, you can install it using pip:
+To get started, you need to install Aspose.Words for Python. You can download the library from the  [Aspose.Words for Python](https://releases.aspose.com/words/python/) download link. Once downloaded, you can install it using pip:
 
 ```python
 pip install aspose-words

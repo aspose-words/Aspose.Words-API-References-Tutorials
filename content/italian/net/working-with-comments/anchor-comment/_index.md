@@ -1,17 +1,17 @@
 ---
-title: Commento di ancoraggio
-linktitle: Commento di ancoraggio
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come ancorare le risposte ai commenti a testo specifico nei documenti di Word utilizzando Aspose.Words per .NET.
+title: Commento dell'ancora
+linktitle: Commento dell'ancora
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come ancorare le risposte ai commenti a testo specifico nei documenti Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-comments/anchor-comment/
 ---
 
-In questo tutorial completo, imparerai come ancorare le risposte ai commenti a un testo specifico in un documento di Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di associare commenti a testo specifico nei tuoi documenti.
+In questo tutorial completo imparerai come ancorare le risposte ai commenti a testo specifico in un documento Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo gli snippet di codice C# necessari. Al termine di questa guida sarai in grado di associare i commenti a testo specifico nei tuoi documenti.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+Prima di iniziare, assicurati di possedere i seguenti prerequisiti:
 - Aspose.Words per la libreria .NET installata sul tuo sistema.
 
 ## Passaggio 1: crea un nuovo documento e aggiungi testo
@@ -36,7 +36,7 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
-## Passaggio 2: creare un commento e aggiungere un intervallo di commenti
+## Passaggio 2: crea un commento e aggiungi un intervallo di commenti
 Successivamente, crea un commento e associalo a un testo specifico utilizzando gli oggetti CommentRangeStart e CommentRangeEnd:
 
 ```csharp
@@ -52,22 +52,22 @@ run3.ParentNode.InsertAfter(commentRangeEnd, run3);
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
-## Passaggio 3: salvare il documento
-Dopo aver ancorato il commento a un testo specifico, salvare il documento in un file utilizzando il metodo Save della classe Document:
+## Passaggio 3: salva il documento
+Dopo aver ancorato il commento a un testo specifico, salva il documento in un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 ```
 
-### Esempio di codice sorgente per Anchor Comment Reply utilizzando Aspose.Words per .NET
-Ecco il codice sorgente completo per l'ancoraggio di una risposta al commento utilizzando Aspose.Words per .NET:
+### Esempio di codice sorgente per la risposta al commento di ancoraggio utilizzando Aspose.Words per .NET
+Ecco il codice sorgente completo per ancorare una risposta al commento utilizzando Aspose.Words per .NET:
 
 ```csharp
 // Creare un'istanza del documento.
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document();
 
-// Crea tre oggetti Run.
+// Crea tre oggetti Esegui.
 // I primi due eseguono del testo, mentre il terzo esegue un commento
 
 Paragraph para1 = new Paragraph(doc);
@@ -100,7 +100,7 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
 
-### FAQ
+### Domande frequenti
 
 #### D: Cos'è un'ancora di commento in Aspose.Words per .NET?
 
@@ -110,15 +110,15 @@ R: In Aspose.Words per .NET, un'ancora di commento è un indicatore che collega 
 
 R: Per aggiungere un'ancora di commento in un documento Aspose.Words per .NET, seguire i passaggi indicati nel tutorial.
 
-#### D: Come posso accedere a un'ancora di commento esistente in Aspose.Words per .NET?
+#### D: Come posso accedere a un ancoraggio di commento esistente in Aspose.Words per .NET?
 
- R: È possibile accedere a un'ancora di commento esistente in Aspose.Words per .NET utilizzando il file`Comment.Anchor` proprietà.
+ R: È possibile accedere a un ancoraggio di commento esistente in Aspose.Words per .NET utilizzando il file`Comment.Anchor` proprietà.
 
-#### D: Posso sopprimere un ancoraggio di commento in Aspose.Words per .NET?
+#### D: Posso sopprimere un'ancora di commento in Aspose.Words per .NET?
 
- R: Sì, puoi rimuovere un ancoraggio di commento in Aspose.Words per .NET utilizzando il file`Comment.Remove` metodo.
+ R: Sì, puoi rimuovere un'ancora di commento in Aspose.Words per .NET utilizzando il file`Comment.Remove` metodo.
 
 #### D: Come posso modificare il testo di un commento collegato a un'ancora di commento in Aspose.Words per .NET?
 
- R: Per modificare il testo di un commento associato a un commento di ancoraggio in Aspose.Words per .NET, è possibile accedere al`Comment.Text` proprietà del corrispondente`Comment` oggetto e modificare il testo secondo necessità.
+ A: Per modificare il testo di un commento associato a un'ancora di commento in Aspose.Words per .NET, puoi accedere a`Comment.Text` proprietà del corrispondente`Comment` oggetto e modificare il testo secondo necessità.
 

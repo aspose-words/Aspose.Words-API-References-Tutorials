@@ -1,38 +1,38 @@
 ---
 title: جدول منسق
 linktitle: جدول منسق
-second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: تعرف على كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET.
+second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
+description: تعرف على كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words لـ .NET.
 type: docs
 weight: 10
 url: /ar/net/programming-with-tables/formatted-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول بتنسيق مخصص في مستندات Word الخاصة بك برمجيًا.
+في هذا البرنامج التعليمي، سوف نتعلم كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. سنتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي، ستتمكن من إنشاء جداول ذات تنسيق مخصص في مستندات Word الخاصة بك برمجيًا.
 
 ## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+1. قم بتشغيل Visual Studio وقم بإنشاء مشروع C# جديد.
+2. قم بإضافة مرجع إلى مكتبة Aspose.Words for .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء بناء الجدول المنسق ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## الخطوة 2: إنشاء المستند وتهيئة منشئ المستندات
+للبدء في إنشاء الجدول المنسق، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع الخطوات التالية:
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+// قم بإنشاء المستند وتهيئة منشئ المستندات
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+تأكد من استبدال "دليل مستنداتك" بالمسار الفعلي لدليل مستنداتك.
 
 ## الخطوة 3: بناء الجدول المنسق
-بعد ذلك ، سنقوم ببناء الجدول المنسق باستخدام الطرق التي يوفرها منشئ المستندات. استخدم الكود التالي:
+بعد ذلك، سنقوم ببناء الجدول المنسق باستخدام الطرق التي يوفرها منشئ المستندات. استخدم الكود التالي:
 
 ```csharp
-// ابدأ بناء المصفوفة
+// البدء في بناء المصفوفة
 Table table = builder. StartTable();
 
 // بناء صف رأس الجدول
@@ -57,7 +57,7 @@ builder.Write("Header Row,\n Cell 3");
 
 builder. EndRow();
 
-// بناء الجسم المصفوفة
+// بناء جسم المصفوفة
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
@@ -97,10 +97,10 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول خطوة بخطوة. نبدأ بالاتصال`StartTable()` لتهيئة الجدول. ثم نستخدم`InsertCell()` لإدراج الخلايا و`Write()` لإضافة محتوى إلى كل خلية. نستخدم أيضًا خصائص تنسيق مختلفة لتحديد تنسيق صفوف الجدول والخلايا والنص.
+ نستخدم هنا أداة إنشاء المستندات لبناء الجدول خطوة بخطوة. نبدأ بالدعوة`StartTable()` لتهيئة الجدول. ثم نستخدم`InsertCell()` لإدراج الخلايا و`Write()` لإضافة محتوى إلى كل خلية. نستخدم أيضًا خصائص تنسيق مختلفة لتحديد تنسيق صفوف الجدول وخلاياه ونصه.
 
 ## الخطوة 4: احفظ المستند
-أخيرًا ، نحتاج إلى حفظ المستند الذي يحتوي على الجدول المنسق. استخدم الكود التالي:
+وأخيرًا، نحتاج إلى حفظ المستند الذي يحتوي على الجدول المنسق. استخدم الكود التالي:
 
 ```csharp
 // احفظ المستند
@@ -109,19 +109,19 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 
 تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
 
-### نموذج التعليمات البرمجية المصدر للجدول المنسق باستخدام Aspose.Words for .NET 
+### نموذج التعليمات البرمجية المصدر للجدول المنسق باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Table table = builder.StartTable();
 	builder.InsertCell();
-	// يجب تطبيق التنسيق الواسع للجدول بعد وجود صف واحد على الأقل في الجدول.
+	// يجب تطبيق التنسيق على مستوى الجدول بعد وجود صف واحد على الأقل في الجدول.
 	table.LeftIndent = 20.0;
-	// عيّن الارتفاع وحدد قاعدة الارتفاع لصف الرأس.
+	// قم بتعيين الارتفاع وحدد قاعدة الارتفاع لصف الرأس.
 	builder.RowFormat.Height = 40.0;
 	builder.RowFormat.HeightRule = HeightRule.AtLeast;
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -141,11 +141,11 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 	builder.CellFormat.Width = 100.0;
 	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// إعادة تعيين الارتفاع وتحديد قاعدة ارتفاع مختلفة لجسم الجدول.
+	// إعادة تعيين الارتفاع وتحديد قاعدة ارتفاع مختلفة لنص الجدول.
 	builder.RowFormat.Height = 30.0;
 	builder.RowFormat.HeightRule = HeightRule.Auto;
 	builder.InsertCell();
-	// إعادة تعيين تنسيق الخط.
+	// إعادة ضبط تنسيق الخط.
 	builder.Font.Size = 12;
 	builder.Font.Bold = false;
 	builder.Write("Row 1, Cell 1 Content");
@@ -169,4 +169,4 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
 ## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك إنشاء جداول مخصصة بتنسيق محدد في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تقديم بياناتك وتنظيمها بطريقة جذابة بصريًا ومنظمة.
+في هذا البرنامج التعليمي، تعلمنا كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words لـ .NET. باتباع هذا الدليل التفصيلي وتنفيذ كود C# المقدم، يمكنك إنشاء جداول مخصصة بتنسيق محدد في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة عرض بياناتك وتنظيمها بطريقة جذابة ومنظمة.

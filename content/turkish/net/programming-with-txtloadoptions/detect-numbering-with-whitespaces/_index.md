@@ -1,19 +1,19 @@
 ---
-title: Boşluklu Numaralandırmayı Algıla
-linktitle: Boşluklu Numaralandırmayı Algıla
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET'te beyaz boşluklu liste numaralarının nasıl algılanacağını öğrenin. Belgelerinizin yapısını kolaylıkla geliştirin.
+title: Boşluklarla Numaralandırmayı Algıla
+linktitle: Boşluklarla Numaralandırmayı Algıla
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'te boşluklu liste numaralarını nasıl tespit edeceğinizi öğrenin. Belgelerinizin yapısını kolaylıkla geliştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-Bu öğreticide, Aspose.Words for .NET ile "Beyaz boşluklarla numaralandırmanın algılanması" özelliği için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, liste numaralarını ve ardından beyaz boşlukları içeren bir metin belgesinden listeleri algılamanıza ve oluşturmanıza olanak tanır.
+Bu eğitimde Aspose.Words for .NET ile "Boşluklarla numaralandırmanın tespiti" özelliği için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, liste numaralarını ve ardından beyaz boşlukları içeren bir metin belgesinden listeleri algılamanıza ve oluşturmanıza olanak tanır.
 
 ## 1. Adım: Ortamı ayarlama
 
-Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
+Başlamadan önce Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## 2. Adım: Metin belgesini oluşturma
+## Adım 2: Metin belgesini oluşturma
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -37,7 +37,7 @@ string textDoc = "Full stop delimiters:\n" +
                   "3 Fourth list item 3";
 ```
 
-Bu adımda, liste numaralarını ve ardından beyaz boşlukları içeren bir metin belgesini simüle eden bir metin dizesi yaratıyoruz. Nokta, sağ parantez, madde işareti simgesi ve beyaz boşluklar gibi farklı liste sınırlayıcıları kullanıyoruz.
+Bu adımda, beyaz boşlukların takip ettiği liste numaralarını içeren bir metin belgesini simüle eden bir metin dizesi oluşturuyoruz. Nokta, sağ köşeli parantez, madde işareti simgesi ve beyaz boşluklar gibi farklı liste sınırlayıcıları kullanıyoruz.
 
 ## 3. Adım: Yükleme seçeneklerini yapılandırma
 
@@ -45,9 +45,9 @@ Bu adımda, liste numaralarını ve ardından beyaz boşlukları içeren bir met
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- Bu adımda, belge yükleme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`TxtLoadOptions` nesne ve ayarlayın`DetectNumberingWithWhitespaces` mülkiyet`true`. Bu, Aspose.Words'ün liste numaralarını, ardından beyaz boşluklar gelse bile algılamasını sağlayacaktır.
+ Bu adımda belge yükleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`TxtLoadOptions` nesneyi ayarlayın ve`DetectNumberingWithWhitespaces` mülkiyet`true`. Bu, Aspose.Words'ün, arkasında boşluklar olsa bile liste numaralarını algılamasına olanak tanır.
 
-## 4. Adım: Belgeyi yükleme ve kaydetme
+## Adım 4: Belgeyi yükleme ve kaydetme
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
@@ -55,9 +55,9 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
 ```
 
- Bu adımda, belirtilen metin dizisini ve yükleme seçeneklerini kullanarak belgeyi yüklüyoruz. biz bir`MemoryStream` metin dizesini bir bellek akışına dönüştürmek için. Ardından ortaya çıkan belgeyi .docx formatında kaydediyoruz.
+ Bu adımda, belirtilen metin dizesini ve yükleme seçeneklerini kullanarak belgeyi yüklüyoruz. Bir kullanıyoruz`MemoryStream` metin dizesini bir bellek akışına dönüştürmek için. Daha sonra ortaya çıkan belgeyi .docx formatında kaydediyoruz.
 
-### Aspose.Words for .NET ile White Space Numbering Detection özelliği için örnek kaynak kodu.
+### Aspose.Words for .NET ile Beyaz Boşluk Numaralandırma Algılama özelliği için örnek kaynak kodu.
 
 ```csharp
 
@@ -65,9 +65,9 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 			
-// Listeler olarak yorumlanabilecek bölümleri olan bir dize biçiminde bir düz metin belgesi oluşturun.
-// Yüklemenin ardından ilk üç liste Aspose.Words tarafından her zaman algılanacaktır,
-// ve yüklemeden sonra onlar için Liste nesneleri oluşturulacaktır.
+// Liste olarak yorumlanabilecek parçaları içeren bir dize biçiminde düz metin belgesi oluşturun.
+// Yükleme sonrasında ilk üç liste her zaman Aspose.Words tarafından algılanacaktır.
+// ve yükleme sonrasında onlar için List nesneleri oluşturulacaktır.
 const string textDoc = "Full stop delimiters:\n" +
 					   "1. First list item 1\n" +
 					   "2. First list item 2\n" +
@@ -85,9 +85,9 @@ const string textDoc = "Full stop delimiters:\n" +
 					   "2 Fourth list item 2\n" +
 					   "3 Fourth list item 3";
 
-// Liste numarası ile liste öğesi içerikleri arasında boşluk bulunan dördüncü liste,
-// yalnızca bir LoadOptions nesnesindeki "DetectNumberingWithWhitespaces" true olarak ayarlanmışsa bir liste olarak algılanır,
-// sayılarla başlayan paragrafların yanlışlıkla liste olarak algılanmasını önlemek için.
+// Liste numarası ile liste öğesi içeriği arasında boşluk bulunan dördüncü liste,
+// Yalnızca LoadOptions nesnesindeki "DetectNumberingWithWhitespaces" true olarak ayarlandığında liste olarak algılanacaktır,
+// Sayılarla başlayan paragrafların yanlışlıkla liste olarak algılanmasını önlemek için.
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 
 // LoadOptions'ı parametre olarak uygularken belgeyi yükleyin ve sonucu doğrulayın.
@@ -98,19 +98,19 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
         
 ```
 
-Artık liste numaralarını içeren metin belgesini beyaz boşluklarla yüklemek için kaynak kodunu çalıştırabilir, ardından algılanan listelerle bir .docx belgesi oluşturabilirsiniz. Çıktı dosyası belirtilen dizine "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx" adıyla kaydedilecektir.
+Artık beyaz boşluklu liste numaralarını içeren metin belgesini yüklemek için kaynak kodunu çalıştırabilir ve ardından algılanan listelerle bir .docx belgesi oluşturabilirsiniz. Çıktı dosyası, "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx" adıyla belirtilen dizine kaydedilecektir.
 
 ## Çözüm
-Bu öğreticide, Aspose.Words for .NET'teki boşluk numaralandırma algılama özelliğini inceledik. Liste numaralarını ve ardından beyaz boşlukları içeren bir metin belgesinden listelerin nasıl oluşturulacağını öğrendik.
+Bu eğitimde Aspose.Words for .NET'teki boşluk numaralandırma algılama özelliğini inceledik. Liste numaralarını ve ardından boşlukları içeren bir metin belgesinden listelerin nasıl oluşturulacağını öğrendik.
 
-Bu özellik, farklı şekillerde biçimlendirilmiş liste numaraları içeren belgeleri işlemek için son derece kullanışlıdır. Aspose.Words, uygun yükleme seçeneklerini kullanarak, bu liste numaralarını, ardından beyaz boşluklar gelse bile algılayabilir ve bunları nihai belgede yapılandırılmış listelere dönüştürebilir.
+Bu özellik, farklı şekillerde biçimlendirilmiş liste numaralarını içeren belgeleri işlemek için son derece kullanışlıdır. Aspose.Words, uygun yükleme seçeneklerini kullanarak bu liste numaralarını, arkalarında beyaz boşluklar olsa bile algılayabilir ve bunları nihai belgede yapılandırılmış listelere dönüştürebilir.
 
 Bu özelliği kullanmak size zaman kazandırabilir ve iş akışı verimliliğinizi artırabilir. Metin belgelerinden kolayca bilgi çıkarabilir ve bunları uygun listelerle iyi yapılandırılmış belgelere dönüştürebilirsiniz.
 
-İstenen sonuçları elde etmek için boşluk çevirme algılamayı yapılandırma gibi yükleme seçeneklerini göz önünde bulundurmayı unutmayın.
+İstenilen sonuçları elde etmek için beyaz alan arama algılamasını yapılandırmak gibi yükleme seçeneklerini dikkate almayı unutmayın.
 
-Aspose.Words for .NET, belge işleme ve oluşturma için birçok gelişmiş özellik sunar. Aspose.Words tarafından sağlanan belgeleri ve örnekleri daha fazla keşfederek, bu güçlü kitaplığın yeteneklerinden tam anlamıyla yararlanabileceksiniz.
+Aspose.Words for .NET, belge işleme ve oluşturma için birçok gelişmiş özellik sunar. Aspose.Words tarafından sağlanan belgeleri ve örnekleri daha fazla inceleyerek bu güçlü kütüphanenin özelliklerinden tam olarak yararlanabileceksiniz.
 
-Bu nedenle, boşluk numaralandırma tespitini Aspose.Words for .NET projelerinize entegre etmekten çekinmeyin ve iyi yapılandırılmış ve okunabilir belgeler oluşturmak için onun avantajlarından yararlanın.
+Bu nedenle, boşluk numaralandırma tespitini Aspose.Words for .NET projelerinize entegre etmekten çekinmeyin ve iyi yapılandırılmış ve okunabilir belgeler oluşturmak için bunun avantajlarından yararlanın.
 
 

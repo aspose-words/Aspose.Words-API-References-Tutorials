@@ -1,24 +1,24 @@
 ---
-title: Field Builder'ı Kullanarak Alan Ekleme
-linktitle: Field Builder'ı Kullanarak Alan Ekleme
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile Word belgelerinize nasıl özel alanlar ekleyeceğinizi öğrenin.
+title: Field Builder'ı Kullanarak Alan Ekle
+linktitle: Field Builder'ı Kullanarak Alan Ekle
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile Word belgelerinize özel alanları nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-field-using-field-builder/
 ---
 
-Aspose.Words for .NET'in "FieldBuilder'ı kullanarak Alan Ekle" özelliğini kullanan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
+Aşağıda Aspose.Words for .NET'in "FieldBuilder Kullanarak Alan Ekle" özelliğini kullanan C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. İstediğiniz sonuçları elde etmek için her adımı dikkatlice takip ettiğinizden emin olun.
 
-## 1. Adım: Belge Dizini Kurulumu
+## Adım 1: Belge Dizini Kurulumu
 
-Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
+Verilen kodda belgelerinizin dizinini belirtmelisiniz. "BELGE DİZİNİNİZ" değerini, belge dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## 2. Adım: Belgeyi oluşturma
+## Adım 2: Belgeyi oluşturma
 
 Yeni bir belge oluşturarak başlıyoruz.
 
@@ -26,9 +26,9 @@ Yeni bir belge oluşturarak başlıyoruz.
 Document doc = new Document();
 ```
 
-## 3. Adım: FieldBuilder kullanarak IF alanını oluşturma
+## 3. Adım: FieldBuilder'ı kullanarak IF alanını oluşturma
 
-FieldBuilder sınıfını, iç içe geçmiş iki MERGFIELD alanıyla bir EĞER alanı oluşturmak için kullanıyoruz. Bu örnekte, EĞER alanı bir koşula göre adı ve soyadı görüntüler.
+İç içe geçmiş iki MERGEFIELD alanına sahip bir IF alanı oluşturmak için FieldBuilder sınıfını kullanırız. Bu örnekte, EĞER alanı bir koşula göre ad ve soyadı görüntüler.
 
 ```csharp
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
@@ -45,9 +45,9 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
              .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
 ```
 
-## Adım 4: EĞER alanını belgeye ekleme
+## Adım 4: IF alanını belgeye ekleme
 
- biz kullanıyoruz`BuildAndInsert()` EĞER alanını belgede belirli bir konuma oluşturma ve ekleme yöntemi.
+ biz kullanıyoruz`BuildAndInsert()` IF alanını belgede belirli bir konuma oluşturma ve ekleme yöntemi.
 
 ```csharp
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
@@ -77,32 +77,32 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
              .AddText("Lastname: ")
              .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
 
-// EĞER alanını belgeye ekleyin.
+// IF alanını belgeye ekleyin.
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
 field. Update();
 
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-Bu örnekte, yeni bir belge oluşturduk, iç içe geçmiş MERGFIELD alanlarıyla bir IF alanı oluşturduk ve ardından bu alanı belgenin belirli bir konumuna ekledik. Belge daha sonra belirli bir dosya adıyla kaydedilir.
+Bu örnekte yeni bir belge oluşturduk, iç içe geçmiş MERGEFIELD alanlarıyla bir IF alanı oluşturduk ve ardından bu alanı belgenin belirli bir konumuna ekledik. Belge daha sonra belirli bir dosya adıyla kaydedilir.
 
-### SSS
+### SSS'ler
 
-#### S: Aspose.Words'te alan oluşturucu nedir?
+#### S: Aspose.Words'te alan yapıcı nedir?
 
-C: Aspose.Words'ta bir Alan Oluşturucu, bir Word belgesinde alanlar oluşturmak ve değiştirmek için güçlü bir araçtır. Alan kodları ekleme ve biçimlendirme seçeneklerini yönetme dahil olmak üzere alanları oluşturmak ve özelleştirmek için gelişmiş özellikler sunar.
+C: Aspose.Words'teki Field Builder, bir Word belgesinde alanlar oluşturmak ve değiştirmek için güçlü bir araçtır. Alan kodları ekleme ve biçimlendirme seçeneklerini yönetme de dahil olmak üzere, alanları oluşturmak ve özelleştirmek için gelişmiş özellikler sunar.
 
 #### S: Alan oluşturucu kullanılarak ne tür alanlar eklenebilir?
 
-C: Aspose.Words'deki alan oluşturucu, bir Word belgesine farklı türde alanlar eklemenize izin verir. Yaygın olarak kullanılan alan türlerine ilişkin bazı örnekler aşağıda verilmiştir:
+C: Aspose.Words'teki alan oluşturucu, bir Word belgesine farklı türde alanlar eklemenizi sağlar. Yaygın olarak kullanılan alan türlerine bazı örnekler:
 
-- MERGFIELD: Dış kaynaklardan gelen verileri birleştirmek için kullanılır.
-- TARİH: geçerli tarihi görüntüler.
+- MERGEFIELD: harici kaynaklardan gelen verileri birleştirmek için kullanılır.
+- TARİH: Geçerli tarihi görüntüler.
 - SAYFA: geçerli sayfa numarasını görüntüler.
-- IF: bir içeriğin görüntülenmesini bir koşula göre koşullandırmaya izin verir.
+- IF: bir içeriğin görüntülenmesini bir koşula göre koşullandırmayı sağlar.
 - TOC: belge başlık stillerine göre otomatik olarak bir içindekiler tablosu oluşturur.
 
-#### S: Alan oluşturucu ile eklenen alanlar nasıl özelleştirilir?
+#### S: Alan oluşturucuyla eklenen alanlar nasıl özelleştirilir?
 
-A: Alan oluşturucu, eklenen alanlar için özelleştirme seçenekleri sunar. Alan biçimlendirmesi, bağımsız değişkenler, anahtarlar ve varsayılan değerler gibi seçenekleri ayarlamak için alan oluşturucu yöntemlerini ve özelliklerini kullanabilirsiniz. Örneğin, tarih biçimini, sayı biçimini, binler ayırıcısını vb. ayarlayabilirsiniz.
+C: Alan oluşturucu, eklenen alanlar için özelleştirme seçenekleri sunar. Alan biçimlendirmesi, bağımsız değişkenler, anahtarlar ve varsayılan değerler gibi seçenekleri ayarlamak için alan oluşturucu yöntemlerini ve özelliklerini kullanabilirsiniz. Örneğin tarih biçimini, sayı biçimini, binlik ayırıcıyı vb. ayarlayabilirsiniz.
   

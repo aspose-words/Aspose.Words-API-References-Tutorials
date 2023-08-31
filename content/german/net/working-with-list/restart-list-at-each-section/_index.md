@@ -55,7 +55,7 @@ OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.I
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-So ! Sie haben mit Aspose.Words für .NET erfolgreich eine nummerierte Liste für jeden Abschnitt in einem Word-Dokument zurückgesetzt.
+Also ! Sie haben mit Aspose.Words für .NET erfolgreich eine nummerierte Liste für jeden Abschnitt in einem Word-Dokument zurückgesetzt.
 
 ### Beispielquellcode zum Zurücksetzen der Liste in jedem Abschnitt
 

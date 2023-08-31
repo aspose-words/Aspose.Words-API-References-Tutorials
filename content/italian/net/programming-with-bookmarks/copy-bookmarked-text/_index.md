@@ -1,14 +1,14 @@
 ---
-title: Copia il testo con segnalibro nel documento di Word
-linktitle: Copia il testo con segnalibro nel documento di Word
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come copiare il testo del segnalibro nel documento di Word in un altro documento utilizzando Aspose.Words per .NET.
+title: Copia il testo con segnalibro nel documento Word
+linktitle: Copia il testo con segnalibro nel documento Word
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come copiare il testo dei segnalibri nel documento Word in un altro documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 
-In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Copia testo con segnalibro nella libreria Aspose.Words per .NET. Questa funzione consente di copiare il contenuto di un segnalibro specifico da un documento di origine a un altro documento.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Copia testo con segnalibro nella libreria Aspose.Words per .NET. Questa funzionalità consente di copiare il contenuto di un segnalibro specifico da un documento di origine a un altro documento.
 
 ## Prerequisiti
 
@@ -17,7 +17,7 @@ In questo articolo, esploreremo il codice sorgente C# sopra per capire come util
 
 ## Passaggio 1: caricamento del documento di origine
 
- Prima di copiare il testo del segnalibro, dobbiamo caricare il documento di origine in a`Document` oggetto utilizzando il percorso del file:
+ Prima di copiare il testo del segnalibro, dobbiamo caricare il documento sorgente in un file`Document` oggetto utilizzando il percorso del file:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,15 +42,15 @@ Document dstDoc = new Document();
 
 ## Passaggio 4: specificare la posizione della copia
 
-Specifichiamo la posizione in cui vogliamo aggiungere il testo copiato. Nel nostro esempio, aggiungiamo il testo alla fine del corpo dell'ultima sezione del documento di destinazione:
+Specifichiamo la posizione in cui vogliamo aggiungere il testo copiato. Nel nostro esempio aggiungiamo il testo alla fine del corpo dell'ultima sezione del documento di destinazione:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## Passaggio 5: importa e copia il testo del segnalibro
+## Passaggio 5: importa e copia il testo dei segnalibri
 
- Usiamo un`NodeImporter` oggetto per importare e copiare il testo del segnalibro da un documento di origine al documento di destinazione:
+ Usiamo a`NodeImporter` oggetto per importare e copiare il testo del segnalibro da un documento di origine al documento di destinazione:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -60,7 +60,7 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-### Codice sorgente di esempio per copiare il testo con segnalibro utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per copiare testo con segnalibro utilizzando Aspose.Words per .NET
 
 Ecco il codice sorgente di esempio completo per dimostrare la copia del testo da un segnalibro utilizzando Aspose.Words per .NET:
 
@@ -92,15 +92,15 @@ Ecco il codice sorgente di esempio completo per dimostrare la copia del testo da
 
 In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzione Copia testo con segnalibro da Aspose.Words per .NET. Abbiamo seguito una guida passo passo per copiare il contenuto di un segnalibro da un documento di origine a un altro documento.
 
-### Domande frequenti per copiare il testo con segnalibro nel documento di Word
+### Domande frequenti per copiare il testo con segnalibro in un documento Word
 
-#### D: Quali sono i requisiti per utilizzare la funzione "Copia testo con segnalibri" in Aspose.Words per .NET?
+#### D: Quali sono i requisiti per utilizzare la funzionalità "Copia testo con segnalibri" in Aspose.Words per .NET?
 
-R: Per utilizzare la funzionalità "Copia testo con segnalibri" in Aspose.Words per .NET, è necessario avere una conoscenza di base del linguaggio C#. È inoltre necessario un ambiente di sviluppo .NET con la libreria Aspose.Words installata.
+R: Per utilizzare la funzione "Copia testo con segnalibri" in Aspose.Words per .NET, è necessario avere una conoscenza di base del linguaggio C#. È inoltre necessario un ambiente di sviluppo .NET con la libreria Aspose.Words installata.
 
-#### D: Come faccio a caricare un documento sorgente in Aspose.Words per .NET?
+#### D: Come carico un documento sorgente in Aspose.Words per .NET?
 
- R: Per caricare un documento di origine in Aspose.Words per .NET, puoi utilizzare il file`Document`class specificando il percorso del file del documento. Ecco un codice di esempio:
+ R: Per caricare un documento sorgente in Aspose.Words per .NET, è possibile utilizzare il file`Document`classe specificando il percorso del file del documento. Ecco un codice di esempio:
 
 ```csharp
 Document srcDoc = new Document("path/to/your/document.docx");
@@ -108,7 +108,7 @@ Document srcDoc = new Document("path/to/your/document.docx");
 
 #### D: Come ottenere il contenuto di un segnalibro specifico in un documento di origine utilizzando Aspose.Words per .NET?
 
- R: Per ottenere il contenuto di un segnalibro specifico in un documento di origine utilizzando Aspose.Words per .NET, è possibile accedere al`Bookmarks` proprietà dell'intervallo del documento di origine e utilizzare il nome del segnalibro per recuperare il segnalibro specifico. Ecco un codice di esempio:
+ R: Per ottenere il contenuto di un segnalibro specifico in un documento di origine utilizzando Aspose.Words per .NET, puoi accedere a`Bookmarks` proprietà dell'intervallo del documento di origine e utilizzare il nome del segnalibro per recuperare il segnalibro specifico. Ecco un codice di esempio:
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
@@ -116,15 +116,15 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### D: Come specificare la posizione della copia del testo del segnalibro in un documento di destinazione utilizzando Aspose.Words per .NET?
 
- R: Per specificare dove si desidera aggiungere il testo del segnalibro copiato in un documento di destinazione utilizzando Aspose.Words per .NET, è possibile navigare nel corpo dell'ultima sezione del documento di destinazione. Puoi usare il`LastSection` property per accedere all'ultima sezione e al file`Body` property per accedere al corpo di tale sezione. Ecco un codice di esempio:
+ R: Per specificare dove si desidera aggiungere il testo del segnalibro copiato in un documento di destinazione utilizzando Aspose.Words per .NET, è possibile accedere al corpo dell'ultima sezione del documento di destinazione. Puoi usare il`LastSection` property per accedere all'ultima sezione e al`Body` property per accedere al corpo di quella sezione. Ecco un codice di esempio:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-#### D: Come importare e copiare il testo del segnalibro dal documento di origine al documento di destinazione utilizzando Aspose.Words per .NET?
+#### D: Come importare e copiare il testo dei segnalibri dal documento di origine al documento di destinazione utilizzando Aspose.Words per .NET?
 
-R: Per importare e copiare il testo del segnalibro da un documento di origine a un documento di destinazione utilizzando Aspose.Words per .NET, è possibile utilizzare il`NodeImporter` class specificando il documento di origine, il documento di destinazione e la modalità di formattazione da mantenere. Quindi puoi usare il`AppendBookmarkedText` metodo per aggiungere il testo del segnalibro nel documento di destinazione. Ecco un codice di esempio:
+A: Per importare e copiare il testo dei segnalibri da un documento di origine a un documento di destinazione utilizzando Aspose.Words per .NET, è possibile utilizzare il`NodeImporter` classe specificando il documento di origine, il documento di destinazione e la modalità di formattazione da conservare. Quindi puoi usare il`AppendBookmarkedText` metodo per aggiungere il testo del segnalibro nel documento di destinazione. Ecco un codice di esempio:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -133,7 +133,7 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 
 #### D: Come salvare un documento di destinazione dopo aver copiato il testo del segnalibro utilizzando Aspose.Words per .NET?
 
- R: Per salvare un documento di destinazione dopo aver copiato il testo da un segnalibro utilizzando Aspose.Words per .NET, è possibile utilizzare il`Save` metodo del`Document` oggetto che specifica il percorso del file di destinazione. Ecco un codice di esempio:
+ R: Per salvare un documento di destinazione dopo aver copiato il testo da un segnalibro utilizzando Aspose.Words per .NET, è possibile utilizzare`Save` metodo del`Document` oggetto che specifica il percorso del file di destinazione. Ecco un codice di esempio:
 
 ```csharp
 dstDoc.Save("path/to/your/destination-document.docx");

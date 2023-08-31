@@ -1,27 +1,27 @@
 ---
 title: Sıralı Liste
 linktitle: Sıralı Liste
-second_title: Aspose.Words Belge İşleme API'sı
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile sıralı liste oluşturmayı öğrenin Adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/ordered-list/
 ---
 
-Bu örnekte, sıralı liste işlevinin Aspose.Words for .NET ile nasıl kullanılacağını açıklayacağız. Sıralı Liste, öğeleri sıralı olarak numaralarla düzenlemenizi sağlar.
+Bu örnekte Aspose.Words for .NET ile sıralı liste fonksiyonunun nasıl kullanılacağını açıklayacağız. Sıralı Liste, öğeleri sayılarla sırayla düzenlemenize olanak tanır.
 
-## 1. Adım: Bir belge oluşturucu kullanma
+## 1. Adım: Belge oluşturucuyu kullanma
 
-İlk olarak, yeni bir belge oluşturmak için bir belge oluşturucu kullanacağız.
+Öncelikle yeni bir belge oluşturmak için belge oluşturucuyu kullanacağız.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Sıralı liste biçimini uygulama
+## 2. Adım: Sıralı liste formatını uygulama
 
- Belge oluşturucuyu kullanarak sıralı liste biçimini uygulayacağız.`ApplyBulletDefault`yöntem. Ayrıca liste seviyelerine gidip istediğimiz formatı ayarlayarak numaralandırma formatını özelleştirebiliriz.
+ Belge oluşturucuyu kullanarak sıralı liste formatını uygulayacağız.`ApplyBulletDefault`yöntem. Ayrıca liste seviyelerine gidip istediğimiz formatı ayarlayarak numaralandırma formatını da özelleştirebiliriz.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
@@ -38,9 +38,9 @@ builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## 4. Adım: Listeyi girintilendirin
+## 4. Adım: Listeye girinti ekleyin
 
- Belge oluşturucuyu kullanarak listeyi girintilendirebiliriz.`ListIndent` yöntem.
+ Belge oluşturucuyu kullanarak listeyi girintili hale getirebiliriz`ListIndent` yöntem.
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -48,7 +48,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-## 5. Adım: Belgeyi kaydetme
+## Adım 5: Belgeyi kaydetme
 
 Son olarak belgeyi istediğimiz formatta kaydedebiliriz.
 
@@ -71,26 +71,26 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Tebrikler! Artık sıralı liste özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
+Tebrikler! Artık Aspose.Words for .NET ile sıralı liste özelliğini nasıl kullanacağınızı öğrendiniz.
 
 
-### SSS
+### SSS'ler
 
 #### S: Markdown'da sıralı bir liste nasıl oluşturulur?
 
-A: Markdown'da sıralı bir liste oluşturmak için, her liste öğesini bir sayı ve ardından bir nokta (`1.`, `2.`, `3.`), ardından bir boşluk gelir.
+C: Markdown'da sıralı bir liste oluşturmak için her liste öğesine bir sayı ve ardından bir nokta (`1.`, `2.`, `3.`), ardından bir boşluk gelir.
 
 #### S: Sıralı listeleri Markdown'da iç içe geçirebilir miyiz?
 
-C: Evet, sıralı listeleri Markdown'da iç içe geçmiş her liste öğesinin önüne dört ofset boşluk ekleyerek iç içe yerleştirmek mümkündür.
+C: Evet, Markdown'da sıralı listeleri iç içe geçmiş her liste öğesinin önüne dört boşluk ekleyerek iç içe yerleştirmek mümkündür.
 
-#### S: Sıralı listelerin numaralandırılması nasıl özelleştirilir?
+#### S: Sıralı listelerin numaralandırması nasıl özelleştirilir?
 
-C: Standart Markdown'da sıralı liste numaralandırması otomatik olarak oluşturulur. Ancak, bazı Markdown düzenleyicileri, belirli uzantıları kullanarak özelleştirmenize izin verir.
+C: Standart Markdown'da sıralı liste numaralandırması otomatik olarak oluşturulur. Ancak bazı Markdown düzenleyicileri, belirli uzantıları kullanarak onu özelleştirmenize izin verir.
 
-#### S: Markdown'daki sıralı listeler girintilemeyi destekliyor mu?
+#### S: Markdown'daki sıralı listeler girintiyi destekliyor mu?
 
-C: Evet, Markdown destek girintisindeki sıralı listeler. Boşlukları veya sekmeleri kullanarak sola kaydırma ekleyebilirsiniz.
+C: Evet, Markdown'daki sıralı listeler girintiyi destekler. Boşlukları veya sekmeleri kullanarak sola kaydırma ekleyebilirsiniz.
 
 #### S: Liste öğelerine bağlantılar veya satır içi metin eklenebilir mi?
 

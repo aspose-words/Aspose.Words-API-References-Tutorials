@@ -1,14 +1,14 @@
 ---
-title: Specifica livello elenco
-linktitle: Specifica livello elenco
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come specificare il livello di elenco in un documento di Word con Aspose.Words per .NET.
+title: Specificare il livello dell'elenco
+linktitle: Specificare il livello dell'elenco
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come specificare il livello dell'elenco in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-list/specify-list-level/
 ---
 
-In questo tutorial passo-passo, ti mostreremo come specificare il livello di elenco in un documento di Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
+In questo tutorial passo passo, ti mostreremo come specificare il livello dell'elenco in un documento Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
  Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria da[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -30,9 +30,9 @@ Successivamente, crea un elenco numerato basato su uno dei modelli di elenco di 
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## Passaggio 3: Specifica del livello di elenco
+## Passaggio 3: specifica del livello di elenco
 
- Usa il generatore di documenti`ListLevelNumber` proprietà per specificare il livello di elenco e aggiungere testo al paragrafo:
+ Utilizza il generatore di documenti`ListLevelNumber` proprietà per specificare il livello dell'elenco e aggiungere testo al paragrafo:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -42,7 +42,7 @@ for (int i = 0; i < 9; i++)
 }
 ```
 
-Ripetere questi passaggi per specificare i livelli di elenco e aggiungere testo a ciascun livello.
+Ripetere questi passaggi per specificare i livelli dell'elenco e aggiungere testo a ciascun livello.
 
 ## Passaggio 4: creazione e applicazione di un elenco puntato
 
@@ -52,9 +52,9 @@ Puoi anche creare e applicare un elenco puntato utilizzando uno dei modelli di e
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## Passaggio 5: aggiunta di testo ai livelli di elenchi puntati
+## Passaggio 5: aggiunta di testo ai livelli dell'elenco puntato
 
- Usa il`ListLevelNumber` proprietà di nuovo per specificare il livello dell'elenco puntato e aggiungere il testo:
+ Usa il`ListLevelNumber` proprietà nuovamente per specificare il livello dell'elenco puntato e aggiungere testo:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -72,7 +72,7 @@ for (int i = 0; i < 9; i++)
 builder. ListFormat. List = null;
 ```
 
-## Passaggio 7: salvare il documento modificato
+## Passaggio 7: salvataggio del documento modificato
 
 Salva il documento modificato:
 
@@ -80,9 +80,9 @@ Salva il documento modificato:
 builder.Document.Save(dataDir + "SpecifyListLevel.docx");
 ```
 
-COSÌ ! Hai specificato correttamente il livello di elenco in un documento di Word utilizzando Aspose.Words per .NET.
+COSÌ ! Hai specificato con successo il livello dell'elenco in un documento Word utilizzando Aspose.Words per .NET.
 
-### Esempio di codice sorgente per specificare il livello di elenco
+### Codice sorgente di esempio per specificare il livello dell'elenco
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -117,18 +117,18 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
             
 ```
 
-### FAQ
+### Domande frequenti
 
-#### D: Come posso specificare il livello di elenco in Aspose.Words?
+#### D: Come posso specificare il livello dell'elenco in Aspose.Words?
 
- R: Per specificare il livello di elenco in Aspose.Words, è necessario creare un'istanza di`List` class e dargli un elenco numerato. Quindi puoi usare il`Paragraph.ListFormat.ListLevelNumber` proprietà per specificare il livello di ogni elemento dell'elenco. Puoi associare questo elenco a una sezione del tuo documento in modo che gli elementi dell'elenco abbiano il livello desiderato.
+ R: Per specificare il livello dell'elenco in Aspose.Words, è necessario creare un'istanza di`List` classe e fornirgli un elenco numerato. Quindi puoi usare il`Paragraph.ListFormat.ListLevelNumber` proprietà per specificare il livello di ciascun elemento dell'elenco. Puoi associare questo elenco a una sezione del tuo documento in modo che gli elementi dell'elenco abbiano il livello desiderato.
 
 #### D: È possibile modificare il formato di numerazione degli elementi dell'elenco in Aspose.Words?
 
- A: Sì, è possibile modificare il formato di numerazione degli elementi dell'elenco in Aspose.Words. IL`ListLevel` class offre diverse proprietà per questo, come ad esempio`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, ecc. È possibile utilizzare queste proprietà per impostare il formato di numerazione per gli elementi dell'elenco, ad esempio numeri arabi, numeri romani, lettere e così via.
+ R: Sì, puoi modificare il formato di numerazione degli elementi dell'elenco in Aspose.Words. IL`ListLevel` class offre diverse proprietà per questo, come ad esempio`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, ecc. È possibile utilizzare queste proprietà per impostare il formato di numerazione per gli elementi dell'elenco, ad esempio numeri arabi, numeri romani, lettere, ecc.
 
 #### D: Posso aggiungere ulteriori livelli a un elenco numerato in Aspose.Words?
 
- R: Sì, è possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words. IL`ListLevel` class consente di impostare le proprietà di formattazione per ogni livello dell'elenco. Puoi impostare opzioni come prefisso, suffisso, allineamento, rientro, ecc. Ciò ti consente di creare elenchi con più livelli di gerarchia.
+ R: Sì, è possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words. IL`ListLevel` La classe consente di impostare le proprietà di formattazione per ciascun livello dell'elenco. Puoi impostare opzioni come prefisso, suffisso, allineamento, rientro, ecc. Ciò ti consente di creare elenchi con più livelli di gerarchia.
 
 

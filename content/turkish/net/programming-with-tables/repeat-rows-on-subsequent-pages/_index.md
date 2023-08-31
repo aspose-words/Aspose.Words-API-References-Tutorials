@@ -1,21 +1,21 @@
 ---
 title: Sonraki Sayfalarda Satırları Tekrarla
 linktitle: Sonraki Sayfalarda Satırları Tekrarla
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile bir Word belgesindeki sonraki sayfalarda tablo satırlarının nasıl tekrarlanacağını öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile bir Word belgesinin sonraki sayfalarında tablo satırlarını nasıl tekrarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinin sonraki sayfalarında bir tablonun satırlarını nasıl tekrarlayacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablonuzun sonraki sayfalarında tekrarlanacak satırları belirtebileceksiniz.
+Bu derste, Aspose.Words for .NET kullanarak bir Word belgesinin sonraki sayfalarında bir tablonun satırlarını nasıl tekrarlayacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablonuzun sonraki sayfalarında tekrarlanacak satırları belirtebileceksiniz.
 
 ## Adım 1: Proje Kurulumu
 1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
-Belge ve belge oluşturucu ile Sözcük İşleme'yi başlatmak için şu adımları izleyin:
+Belge ve belge oluşturucuyla Sözcük İşleme'yi başlatmak için şu adımları izleyin:
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -28,13 +28,13 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
+"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## 3. Adım: Tabloyu tekrarlanan satırlarla oluşturma
-Ardından, sonraki sayfalarda yinelenen satırlar içeren bir tablo oluşturacağız. Aşağıdaki kodu kullanın:
+## Adım 3: Tekrarlanan satırlardan oluşan tabloyu oluşturma
+Daha sonra, sonraki sayfalarda tekrarlanan satırlardan oluşan bir tablo oluşturacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// tablonun başlangıcı
+// Tablonun başlangıcı
 builder. StartTable();
 
 // İlk satır parametrelerinin konfigürasyonu (başlık satırları)
@@ -47,7 +47,7 @@ builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
 
-// İlk satırın ikinci hücresini ekle
+// İlk satırın ikinci hücresini ekleyin
 builder. InsertCell();
 builder.Writeln("Header line 2");
 builder. EndRow();
@@ -56,7 +56,7 @@ builder. EndRow();
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 
-// Hücreleri aşağıdaki satırlara eklemek için döngü yapın
+// Aşağıdaki satırlara hücreleri eklemek için döngü
 for (int i = 0; i < 50; i++)
 {
 builder. InsertCell();
@@ -67,16 +67,16 @@ builder.Write("Text column 2");
 builder. EndRow();
 }
 
-// tablonun sonu
+// Tablonun sonu
 builder. EndTable();
 ```
 
- Burada, iki başlık satırı ve birden çok veri satırı içeren bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz. bu`RowFormat.HeadingFormat`parametreler, sonraki sayfalarda tekrarlanması gereken başlık satırlarını işaretlemek için kullanılır.
+ Burada, iki başlık satırı ve birden fazla veri satırı içeren bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz.`RowFormat.HeadingFormat`parametreler sonraki sayfalarda tekrarlanması gereken başlık satırlarını işaretlemek için kullanılır.
 
-## 4. Adım: Değiştirilen belgeyi kaydetme
-Sonunda ABD
+## Adım 4: Değiştirilen belgeyi kaydetme
+Nihayet ABD
 
-  değiştirilen belgeyi, tablonun sonraki sayfalarında tekrarlanan başlık satırları ile kaydetmeniz gerekir. Aşağıdaki kodu kullanın:
+  Değiştirilen belgeyi, tablonun sonraki sayfalarında tekrarlanan başlık satırlarıyla birlikte kaydetmeniz gerekir. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 
 Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### Aspose.Words for .NET kullanarak Sonraki Sayfalarda Satırları Tekrarlamak için örnek kaynak kodu 
+### Aspose.Words for .NET kullanarak Sonraki Sayfalarda Satırları Tekrarla için örnek kaynak kodu 
 
 ```csharp
 //Belge dizininizin yolu
@@ -117,4 +117,4 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
 ## Çözüm
-Bu eğitimde, Aspose.Words for .NET kullanarak bir tablonun satırlarını bir Word belgesinin sonraki sayfalarında nasıl tekrarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizde özel ihtiyaçlarınıza göre hangi satırların tekrarlanacağını belirleyebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinin sonraki sayfalarında bir tablonun satırlarını nasıl tekrarlayacağımızı öğrendik. Bu adım adım kılavuzu takip ederek ve verilen C# kodunu uygulayarak, Word belgelerinizde özel ihtiyaçlarınıza göre hangi satırların tekrarlanacağını belirleyebilirsiniz.

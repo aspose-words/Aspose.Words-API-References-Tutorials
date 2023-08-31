@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/convert-shape-to-office-math/
 ---
-Bei der Textverarbeitung mit Dokumenten, die mathematische Formen in einer C#-Anwendung enthalten, müssen Sie diese möglicherweise zur besseren Kompatibilität und Präsentation in Office-Matheformeln konvertieren. Mit der Aspose.Words-Bibliothek für .NET können Sie beim Laden eines Dokuments problemlos Formen in Office-Matheformeln konvertieren. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung des Aspose.Words für .NET C#-Quellcodes zum Laden eines Dokuments mit der Konvertierung von Formen in Office-Matheformeln mithilfe von LoadOptions.
+Bei der Textverarbeitung mit Dokumenten, die mathematische Formen in einer C#-Anwendung enthalten, müssen Sie diese möglicherweise zur besseren Kompatibilität und Präsentation in Office-Matheformeln konvertieren. Mit der Aspose.Words-Bibliothek für .NET können Sie beim Laden eines Dokuments problemlos Formen in Office-Matheformeln konvertieren. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Laden eines Dokuments mit der Konvertierung von Formen in Office-Matheformeln mithilfe von LoadOptions.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 

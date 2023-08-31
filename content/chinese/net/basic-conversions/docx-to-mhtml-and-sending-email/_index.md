@@ -39,7 +39,7 @@ stream.Position = 0;
 
 ## 步骤 4：创建 Aspose.Email MIME 消息
 
-创建一个`MailMessage`使用流中的对象`MhtmlLoadOptions`：
+创建一个`MailMessage`使用流中的对象`MhtmlLoadOptions`:
 
 ```csharp
 MailMessage message = MailMessage.Load(stream, new MhtmlLoadOptions());

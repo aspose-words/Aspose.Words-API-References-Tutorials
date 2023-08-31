@@ -1,14 +1,14 @@
 ---
-title: Word Belgesinde Satır Yer İşaretlerini Çöz
-linktitle: Word Belgesinde Satır Yer İşaretlerini Çöz
-second_title: Aspose.Words Belge İşleme API'sı
-description: Diğer yer işaretlerini etkilemeden belirli satırları kaldırmak için iç içe geçmiş satır yer işaretlerini word belgesinde nasıl çözeceğinizi öğrenin.
+title: Word Belgesindeki Satır Yer İmlerini Çözme
+linktitle: Word Belgesindeki Satır Yer İmlerini Çözme
+second_title: Aspose.Words Belge İşleme API'si
+description: Diğer yer imlerini etkilemeden belirli satırları kaldırmak için word belgesindeki iç içe geçmiş satır yer imlerini nasıl çözeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 
-Bu makalede, Aspose.Words for .NET kitaplığında Untangle Row Bookmarks işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu işlev, satırların yer imlerinin sonlarını yer imlerinin başlangıçlarıyla aynı satıra koymayı mümkün kılar.
+Bu makalede, Aspose.Words for .NET kütüphanesinde Untangle Row Bookmarks fonksiyonunun nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu işlev, satırların yer imlerinin sonlarının, yer imlerinin başlangıçlarıyla aynı satıra yerleştirilmesini mümkün kılar.
 
 ## Önkoşullar
 
@@ -17,32 +17,32 @@ Bu makalede, Aspose.Words for .NET kitaplığında Untangle Row Bookmarks işlev
 
 ## 1. Adım: Belgeyi yükleme
 
- biz kullanıyoruz`Document` varolan belgeyi bir dosyadan yüklemek için sınıf:
+ biz kullanıyoruz`Document` Mevcut belgeyi bir dosyadan yüklemek için sınıf:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## 2. Adım: Satır Yer İşaretlerini Çözün
+## Adım 2: Satır Yer İmlerini Çözün
 
- biz kullanıyoruz`Untangle` yer imlerini satırlardan çözme işlevi. Bu işlev, satırların yer imi sonlarını yer imi başladığında aynı satıra koyma özel görevini gerçekleştirir:
+ biz kullanıyoruz`Untangle` yer imlerini satırlardan ayırma işlevi. Bu işlev, satırların yer imi uçlarını yer iminin başladığı satırla aynı satıra yerleştirme özel görevini gerçekleştirir:
 
 ```csharp
 Untangle(doc);
 ```
 
-## 3. Adım: Yer imine göre satırı silin
+## 3. Adım: Satırı yer imine göre silin
 
- biz kullanıyoruz`DeleteRowByBookmark` belirli bir satırı yer işaretine göre silme işlevi:
+ biz kullanıyoruz`DeleteRowByBookmark` Belirli bir satırı yer imine göre silme işlevi:
 
 ```csharp
 DeleteRowByBookmark(doc, "ROW2");
 ```
 
-## 4. Adım: Diğer yer imlerinin bütünlüğünü kontrol edin
+## 4. Adım: Diğer yer işaretlerinin bütünlüğünü kontrol edin
 
-Yer iminin sonunun hala mevcut olup olmadığını kontrol ederek diğer yer imlerinin zarar görmediğini doğrularız:
+Yer iminin sonunun hala mevcut olup olmadığını kontrol ederek diğer yer imlerinin hasar görmediğini doğrularız:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -51,9 +51,9 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Aspose.Words for .NET kullanan Untangle Row Bookmarks için örnek kaynak kodu**
+### Aspose.Words for .NET kullanarak Satır Yer İmlerini Çözmek için örnek kaynak kodu**
 
-Aspose.Words for .NET kullanarak yer imlerini satırlardan çözmek için tam örnek kaynak kodunu burada bulabilirsiniz:
+Aspose.Words for .NET kullanarak satırlardaki yer işaretlerini çözmek için tam örnek kaynak kodunu burada bulabilirsiniz:
 
 
 ```csharp
@@ -62,10 +62,10 @@ Aspose.Words for .NET kullanarak yer imlerini satırlardan çözmek için tam ö
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	//Bu, satır yer imi uçlarını yer imi başlangıçlarıyla aynı satıra yerleştirme özel görevini gerçekleştirir.
+	//Bu, satır yer işareti uçlarını yer işareti başlangıçlarıyla aynı satıra yerleştirme özel görevini gerçekleştirir.
 	Untangle(doc);
 
-	// Artık diğer satırların yer imlerine zarar vermeden bir yer imi ile satırları kolayca silebiliriz.
+	// Artık başka herhangi bir satırın yer imlerine zarar vermeden bir yer imine göre satırları kolayca silebiliriz.
 	DeleteRowByBookmark(doc, "ROW2");
 
 	// Bu sadece diğer yer iminin hasar görüp görmediğini kontrol etmek içindir.
@@ -78,26 +78,26 @@ Aspose.Words for .NET kullanarak yer imlerini satırlardan çözmek için tam ö
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Untangle Row Bookmarks özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Satır yer imlerini çözmek ve diğer yer imlerine zarar vermeden belirli bir satırı silmek için adım adım bir kılavuz izledik.
+Bu makalede, Aspose.Words for .NET'in Satır Yer İmlerini Çöz özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Satır yer imlerini çözmek ve diğer yer imlerine zarar vermeden belirli bir satırı silmek için adım adım bir kılavuz izledik.
 
-### Word belgesinde satır yer imlerini çözmek için SSS
+### Word belgesindeki satır yer işaretlerini çözmek için SSS
 
-#### S: Satır Yer İşaretlerini Çöz, yalnızca tablolardaki satır yer işaretleriyle mi çalışır?
+#### S: Satır Yer İmlerini Çözme yalnızca tablolardaki satır yer imleriyle mi çalışır?
 
-C: Evet, Satır Yer İşaretlerini Çöz özelliği tablolardaki satır yer işaretlerini çözmek için özel olarak tasarlanmıştır. Bu işlev, dizilerdeki satır yer imlerini işlemek ve yer imi sonlarının yer imi başlangıçlarıyla aynı satırda olmasını sağlamak için kullanılabilir.
+C: Evet, Satır Yer İmlerini Çözme özelliği, tablolardaki satır yer imlerini çözmek için özel olarak tasarlanmıştır. Bu işlev, dizilerdeki satır yer işaretlerini işlemek ve yer işareti uçlarının yer işareti başlangıçlarıyla aynı satırda olmasını sağlamak için kullanılabilir.
 
-#### S: Satır Yer İmlerini Çöz işlevi orijinal belgenin içeriğini değiştirir mi?
+#### S: Satır Yer İmlerini Çözme işlevi orijinal belgenin içeriğini değiştirir mi?
 
-C: Evet, Satır yer imlerini Çöz işlevi, satır yer imlerinin uçlarını yer imlerinin başlangıçlarıyla aynı satıra yerleştirmek için hareket ettirerek orijinal belgeyi değiştirir. Bu özelliği uygulamadan önce belgenin yedek bir kopyasını kaydettiğinizden emin olun.
+C: Evet, Satır yer imlerinin şifresini çözme işlevi, satır yer imlerinin uçlarını yer imlerinin başlangıçlarıyla aynı satıra yerleştirecek şekilde hareket ettirerek orijinal belgeyi değiştirir. Bu özelliği uygulamadan önce belgenin yedek bir kopyasını kaydettiğinizden emin olun.
 
-#### S: Word belgemdeki satır yer imlerini nasıl belirleyebilirim?
+#### S: Word belgemdeki satır yer işaretlerini nasıl tanımlayabilirim?
 
-C: Satır yer imleri genellikle tablolarda belirli bölümleri işaretlemek için kullanılır. Belgedeki yer imlerine göz atarak ve yer imlerinin tablo satırlarında olup olmadığını kontrol ederek satır yer imlerini belirleyebilirsiniz.
+C: Satır yer imleri genellikle tablolarda belirli bölümleri işaretlemek için kullanılır. Belgedeki yer imlerine göz atarak ve yer imlerinin tablo satırlarında olup olmadığını kontrol ederek satır yer imlerini tanımlayabilirsiniz.
 
-#### S: Bitişik olmayan tablolardaki satır yer imlerini çözmek mümkün müdür?
+#### S: Bitişik olmayan tablolardaki satır yer işaretlerini çözmek mümkün mü?
 
-A: Bu makalede sunulan Satır Yer İşaretlerini Çöz işlevi, bitişik tablolardaki satır yer işaretlerini çözmek için tasarlanmıştır. Bitişik olmayan tablolardaki satır yer imlerini çözmek için, belgenin yapısına bağlı olarak kodda ek ayarlamalar gerekebilir.
+C: Bu makalede sunulan Satır Yer İmlerini Çöz işlevi, bitişik tablolardaki satır yer imlerini çözmek için tasarlanmıştır. Bitişik olmayan tablolardaki satır yer işaretlerini çözmek için belgenin yapısına bağlı olarak kodda ek ayarlamalar yapılması gerekebilir.
 
-#### S: Çözüldükten sonra satır yer imleri üzerinde başka hangi manipülasyonları yapabilirim?
+#### S: Çözüldükten sonra satır yer imleri üzerinde başka hangi işlemleri yapabilirim?
 
-C: Satır yer imleri çözüldükten sonra, gerektiği gibi farklı manipülasyonlar gerçekleştirebilirsiniz. Bu, yer imi eklenmiş satırları düzenlemeyi, silmeyi veya bunlara içerik eklemeyi içerebilir. Belgenin geri kalanı üzerinde herhangi bir istenmeyen etkiyi önlemek için satır yer imlerini dikkatli bir şekilde kullandığınızdan emin olun.
+C: Satır yer imleri çözüldükten sonra, gerektiği gibi farklı manipülasyonlar gerçekleştirebilirsiniz. Bu, yer imli satırlara içerik eklenmesini, silinmesini veya düzenlenmesini içerebilir. Belgenin geri kalanında istenmeyen etkiler oluşmasını önlemek için satır yer imlerini dikkatli bir şekilde kullandığınızdan emin olun.

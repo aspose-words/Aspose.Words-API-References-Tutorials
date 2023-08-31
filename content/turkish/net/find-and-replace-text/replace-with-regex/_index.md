@@ -1,22 +1,22 @@
 ---
-title: Regex ile değiştir
-linktitle: Regex ile değiştir
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile bir Word belgesinde normal ifade tabanlı metin değiştirmeyi nasıl yapacağınızı öğrenin.
+title: Regex ile Değiştir
+linktitle: Regex ile Değiştir
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile bir Word belgesinde normal ifadeye dayalı metin değişiminin nasıl gerçekleştirileceğini öğrenin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/replace-with-regex/
 ---
-Bu makalede, Aspose.Words for .NET kütüphanesinde Regex ile Değiştir işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, normal bir ifade tarafından tanımlanan belirli kalıplara dayalı olarak metin değiştirme gerçekleştirmenize olanak tanır.
+Bu makalede, Aspose.Words for .NET kütüphanesinde Change With Regex fonksiyonunun nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, normal ifadeyle tanımlanan belirli kalıplara dayalı olarak metin değiştirme işlemi gerçekleştirmenize olanak tanır.
 
 ## Önkoşullar
 
 - C# dili hakkında temel bilgi.
 - Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## 1. Adım: Yeni Belge Oluşturma
+## Adım 1: Yeni Bir Belge Oluşturma
 
- Düzenli ifade değiştirmeyi kullanmaya başlamadan önce Aspose.Words for .NET kullanarak yeni bir belge oluşturmamız gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` nesne:
+ Düzenli ifade değişimini kullanmaya başlamadan önce Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmamız gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` nesne:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -25,7 +25,7 @@ Document doc = new Document();
 
 ## 2. Adım: Belgeye metin ekleyin
 
- Bir belgemiz olduğunda, bir metin kullanarak metin ekleyebiliriz.`DocumentBuilder` nesne. Örneğimizde,`Writeln` "üzgün, çılgın, kötü" ifadesini ekleme yöntemi:
+ Bir belgeye sahip olduğumuzda, bir kullanarak metin ekleyebiliriz.`DocumentBuilder` nesne. Örneğimizde, şunu kullanıyoruz:`Writeln` "Üzgün, çılgın, kötü" ifadesini ekleme yöntemi:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -34,7 +34,7 @@ builder.Writeln("sad mad bad");
 
 ## 3. Adım: Bul ve Değiştir Seçeneklerini Yapılandırma
 
- Şimdi bul ve değiştir seçeneklerini bir a kullanarak yapılandıracağız.`FindReplaceOptions`nesne. Örneğimizde, varsayılan seçenekleri kullanıyoruz:
+ Şimdi bulma ve değiştirme seçeneklerini bir kullanarak yapılandıracağız.`FindReplaceOptions`nesne. Örneğimizde varsayılan seçenekleri kullanıyoruz:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions();
@@ -42,7 +42,7 @@ FindReplaceOptions options = new FindReplaceOptions();
 
 ## 4. Adım: Normal ifadeyle değiştirin
 
- biz kullanıyoruz`Range.Replace` normal bir ifade kullanarak metin değiştirme gerçekleştirme yöntemi. Örneğimizde, normal ifadeyi kullanıyoruz "[S|m]ad" to find the words "sad" and "mad" and replace them with the word "bad":
+ biz kullanıyoruz`Range.Replace` Normal ifade kullanarak metin değiştirme gerçekleştirme yöntemi. Örneğimizde "normal ifadeyi kullanıyoruz"[S|m]ad" to find the words "sad" and "mad" and replace them with the word "bad":
 
 ```csharp
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
@@ -50,15 +50,15 @@ doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 
 ## Adım 5: Değiştirilen belgeyi kaydetme
 
- Son olarak, değiştirilmiş belgeyi kullanarak belirtilen bir dizine kaydediyoruz.`Save` yöntem:
+ Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydederiz:`Save` yöntem:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 ```
 
-### Aspose.Words for .NET kullanarak Change With Regex için örnek kaynak kodu
+### Aspose.Words for .NET kullanan Regex ile Değiştir için örnek kaynak kodu
 
-Aspose.Words for .NET ile normal ifade değişiminin kullanımını gösteren tam örnek kaynak kodu burada:
+Aspose.Words for .NET ile normal ifade değiştirmenin kullanımını gösteren tam örnek kaynak kodu burada bulabilirsiniz:
 
 ```csharp
 
@@ -79,17 +79,17 @@ Aspose.Words for .NET ile normal ifade değişiminin kullanımını gösteren ta
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Regex ile Değiştir işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, metin eklemek, normal bir ifadeyle değiştirmeyi gerçekleştirmek ve değiştirilen belgeyi kaydetmek için adım adım bir kılavuz izledik.
+Bu makalede, Aspose.Words for .NET'in Regex ile Değiştir fonksiyonunun nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, metin eklemek, normal ifadeyle değiştirme işlemi gerçekleştirmek ve değiştirilen belgeyi kaydetmek için adım adım bir kılavuz izledik.
 
-### SSS
+### SSS'ler
 
 #### S: Aspose.Words for .NET'teki "Replace With Regex" işlevi nedir?
 
-C: Aspose.Words for .NET'teki "Replace With Regex" işlevi, düzenli bir ifade tarafından tanımlanan belirli kalıplara dayalı olarak metin değiştirme gerçekleştirmenize olanak tanır. Düzenli ifadeler kullanarak karmaşık arama kalıpları belirleyerek bir belgedeki metni bulmanızı ve değiştirmenizi sağlar.
+C: Aspose.Words for .NET'teki "Replace With Regex" işlevi, normal bir ifadeyle tanımlanan belirli kalıplara dayalı olarak metin değiştirme işlemi gerçekleştirmenize olanak tanır. Düzenli ifadeler kullanarak karmaşık arama kalıplarını belirleyerek bir belgedeki metni bulmanıza ve değiştirmenize olanak tanır.
 
-#### S: Aspose.Words for .NET kullanarak nasıl yeni bir belge oluşturabilirim?
+#### S: Aspose.Words for .NET'i kullanarak nasıl yeni bir belge oluşturabilirim?
 
- C: Aspose.Words for .NET kullanarak yeni bir belge oluşturmak için`Document` nesne. İşte yeni bir belge oluşturmak için bir C# kodu örneği:
+ C: Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmak için,`Document` nesne. Yeni bir belge oluşturmak için C# koduna bir örnek:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -98,7 +98,7 @@ Document doc = new Document();
 
 #### S: Aspose.Words for .NET kullanarak bir belgeye nasıl metin ekleyebilirim?
 
- C: Bir belgeniz olduğunda, bir metin kullanarak metin ekleyebilirsiniz.`DocumentBuilder` nesne. Aspose.Words for .NET'te çeşitli yöntemleri kullanabilirsiniz.`DocumentBuilder` Farklı konumlara metin eklemek için sınıf. Örneğin,`Writeln` yeni bir satıra metin ekleme yöntemi. İşte bir örnek:
+ C: Bir belgeye sahip olduğunuzda, bir metin ekleyebilirsiniz.`DocumentBuilder` nesne. Aspose.Words for .NET'te çeşitli yöntemleri kullanabilirsiniz.`DocumentBuilder` farklı konumlara metin eklemek için sınıf. Örneğin, şunları kullanabilirsiniz:`Writeln` Yeni bir satıra metin ekleme yöntemi. İşte bir örnek:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -107,28 +107,28 @@ builder.Writeln("sad mad bad");
 
 #### S: Aspose.Words for .NET'teki Bul ve Değiştir seçenekleri nelerdir?
 
- C: Aspose'daki Bul ve Değiştir seçenekleri. .NET için sözcükler, arama ve değiştirme işleminin nasıl gerçekleştirileceğini yapılandırmanıza izin verir. Yaygın olarak kullanılan bazı seçenekler şunları içerir:`MatchCase` (aramanın büyük/küçük harfe duyarlı olup olmadığını belirtmek için),`FindWholeWordsOnly` (yalnızca tüm sözcükleri eşleştirmek için) ve`Direction` (arama yönünü belirtmek için). Bu seçenekleri özel gereksinimlerinize göre özelleştirebilirsiniz.
+ C: Aspose'daki Bul ve Değiştir seçenekleri. .NET için Words, arama ve değiştirme işleminin nasıl gerçekleştirileceğini yapılandırmanıza olanak tanır. Yaygın olarak kullanılan bazı seçenekler şunları içerir:`MatchCase` (aramanın büyük/küçük harfe duyarlı olup olmadığını belirtmek için),`FindWholeWordsOnly` (yalnızca tam sözcükleri eşleştirmek için) ve`Direction` (arama yönünü belirtmek için). Bu seçenekleri özel gereksinimlerinize göre özelleştirebilirsiniz.
 
-#### S: Aspose.Words for .NET'te normal bir ifade kullanarak metin değiştirmeyi nasıl yapabilirim?
+#### S: Aspose.Words for .NET'te normal ifadeyi kullanarak metin değiştirme işlemini nasıl gerçekleştirebilirim?
 
- C: Aspose.Words for .NET'te normal bir ifade kullanarak metin değiştirmeyi gerçekleştirmek için`Range.Replace` yöntem ve geçmek`Regex` arama deseni olarak nesne. Bu, düzenli ifadeler kullanarak karmaşık arama kalıpları tanımlamanıza olanak tanır. İşte bir örnek:
+ C: Aspose.Words for .NET'te normal ifade kullanarak metin değiştirme işlemi gerçekleştirmek için`Range.Replace` yöntem ve geçiş`Regex` nesneyi arama modeli olarak kullanın. Bu, normal ifadeleri kullanarak karmaşık arama modellerini tanımlamanıza olanak tanır. İşte bir örnek:
 
 ```csharp
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 ```
 
-#### S: Aspose.Words for .NET'te düzenli ifadeler kullanarak eşleşen kalıba dayalı olarak metni farklı içerikle değiştirebilir miyim?
+#### S: Aspose.Words for .NET'te düzenli ifadeler kullanarak metni eşleşen desene göre farklı içerikle değiştirebilir miyim?
 
-C: Evet, Aspose.Words for .NET'te düzenli ifadeler kullanarak eşleşen kalıba dayalı olarak metni farklı içerikle değiştirebilirsiniz. Normal ifade kalıbınızdaki grupları yakalayarak, yedek dizede yakalanan gruplara başvurabilir ve bunları kullanabilirsiniz. Bu, eşleşen kalıba dayalı dinamik ikamelere izin verir.
+C: Evet, Aspose.Words for .NET'teki normal ifadeleri kullanarak metni eşleşen desene göre farklı içerikle değiştirebilirsiniz. Normal ifade kalıbınızdaki grupları yakalayarak, yedek dizede yakalanan gruplara başvurabilir ve bunları kullanabilirsiniz. Bu, eşleşen modele göre dinamik değişikliklere olanak tanır.
 
-#### S: Aspose.Words for .NET'te metin değişimi için normal ifadeler kullanırken herhangi bir sınırlama veya dikkat edilmesi gereken nokta var mı?
+#### S: Aspose.Words for .NET'te metin değişimi için normal ifadeleri kullanırken herhangi bir sınırlama veya dikkate alınması gereken noktalar var mı?
 
-Y: Aspose.Words for .NET'te metin değişimi için normal ifadeler kullanırken, karmaşıklık ve performans etkilerinin farkında olmak önemlidir. Normal ifadeler güçlü olabilir, ancak karmaşık kalıplar arama ve değiştirme işleminin performansını etkileyebilir. Ek olarak, normal ifadelerinizin doğru olduğundan emin olun ve her türlü önemli durumu veya belgenin içeriğiyle olası çatışmaları hesaba katın.
+C: Aspose.Words for .NET'te metin değişimi için normal ifadeler kullanırken karmaşıklık ve performans sonuçlarına dikkat etmek önemlidir. Düzenli ifadeler güçlü olabilir ancak karmaşık modeller, arama ve değiştirme işleminin performansını etkileyebilir. Ayrıca normal ifadelerinizin doğru olduğundan ve belgenin içeriğiyle ilgili her türlü uç durumu veya olası çatışmayı hesaba kattığından emin olun.
 
-#### S: Aspose.Words for .NET'te normal ifadeler kullanarak büyük/küçük harfe duyarsız metin değişimi yapabilir miyim?
+#### S: Aspose.Words for .NET'te normal ifadeleri kullanarak büyük/küçük harfe duyarlı olmayan metin değişimi gerçekleştirebilir miyim?
 
-C: Evet, Aspose.Words for .NET'te normal ifadeleri kullanarak büyük/küçük harfe duyarsız metin değişimi gerçekleştirebilirsiniz. Varsayılan olarak, .NET'teki normal ifadeler büyük/küçük harfe duyarlıdır. Ancak, Regex nesnenizi oluştururken uygun RegexOptions.IgnoreCase bayrağını kullanarak davranışı değiştirebilirsiniz.
+C: Evet, Aspose.Words for .NET'te normal ifadeleri kullanarak büyük/küçük harfe duyarlı olmayan metin değişimi gerçekleştirebilirsiniz. Varsayılan olarak, .NET'teki normal ifadeler büyük/küçük harfe duyarlıdır. Ancak Regex nesnenizi oluştururken uygun RegexOptions.IgnoreCase bayrağını kullanarak davranışı değiştirebilirsiniz.
 
-#### S: Aspose.Words for .NET'teki "Replace With Regex" işlevini kullanarak birden çok belgedeki metni değiştirebilir miyim?
+#### S: Aspose.Words for .NET'teki "Replace With Regex" fonksiyonunu kullanarak birden fazla belgedeki metni değiştirebilir miyim?
 
-C: Evet, Aspose.Words for .NET'teki "Replace With Regex" işlevini kullanarak birden çok belgedeki metni değiştirebilirsiniz. İşlemek istediğiniz her belge için adımları tekrarlamanız yeterlidir. Her belgeyi yükleyin, belirtilen normal ifadeyi kullanarak metin değiştirmeyi gerçekleştirin ve değiştirilen belgeyi kaydedin. Bu işlemi, bir döngü içindeki birden çok belge için veya bir belge dosyası yolu listesi üzerinde yineleyerek otomatikleştirebilirsiniz.
+C: Evet, Aspose.Words for .NET'teki "Replace With Regex" fonksiyonunu kullanarak birden fazla belgedeki metni değiştirebilirsiniz. İşlemek istediğiniz her belge için adımları tekrarlamanız yeterlidir. Her belgeyi yükleyin, belirtilen normal ifadeyi kullanarak metin değiştirme işlemini gerçekleştirin ve değiştirilen belgeyi kaydedin. Bu işlemi bir döngü içindeki birden fazla belge için veya belge dosya yolları listesi üzerinde yineleyerek otomatikleştirebilirsiniz.

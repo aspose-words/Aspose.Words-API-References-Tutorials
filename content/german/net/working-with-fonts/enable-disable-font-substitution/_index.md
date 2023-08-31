@@ -82,7 +82,7 @@ A: Wenn beim Ersetzen in einem Word-Dokument erforderliche Schriftarten fehlen, 
 
 #### F: Wie kann ich mit fehlenden Schriftarten umgehen, wenn ich sie in einem Word-Dokument mit Aspose.Words ersetze?
 
-A: Um fehlende Schriftarten beim Ersetzen in einem Word-Dokument mit Aspose.Words zu behandeln, können Sie die API verwenden, um fehlende Schriftarten zu erkennen und Auflösungsoptionen bereitzustellen. Je nach Bedarf können Sie fehlende Schriftarten durch alternative Schriftarten ersetzen oder fehlende Schriftarten in das Dokument aufnehmen.
+A: Um fehlende Schriftarten beim Ersetzen in einem Word-Dokument mit Aspose.Words zu behandeln, können Sie die API verwenden, um fehlende Schriftarten zu erkennen und Auflösungsoptionen bereitzustellen. Je nach Bedarf können Sie fehlende Schriftarten durch alternative Schriftarten ersetzen oder fehlende Schriftarten in das Dokument einfügen.
 
 #### F: Ist es wichtig, die Schriftartersetzung in einem Word-Dokument zu steuern?
 

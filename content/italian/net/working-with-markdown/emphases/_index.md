@@ -1,18 +1,18 @@
 ---
-title: Enfasi
-linktitle: Enfasi
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come utilizzare le sottolineature (grassetto e corsivo) con Aspose.Words per la guida passo-passo .NET.
+title: Sottolinea
+linktitle: Sottolinea
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come utilizzare l'enfasi (grassetto e corsivo) con Aspose.Words per .NET Guida passo passo.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/emphases/
 ---
 
-In questo esempio, spiegheremo come utilizzare le sottolineature con Aspose.Words per .NET. l'enfasi viene utilizzata per enfatizzare alcune parti del testo, come il grassetto e il corsivo.
+In questo esempio, spiegheremo come utilizzare l'enfasi con Aspose.Words per .NET. l'enfasi viene utilizzata per enfatizzare alcune parti del testo, come il grassetto e il corsivo.
 
 ## Passaggio 1: inizializzazione del documento
 
- Innanzitutto, inizializzeremo il documento creando un'istanza di`Document` classe.
+ Per prima cosa inizializzeremo il documento creando un'istanza del file`Document` classe.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -27,9 +27,9 @@ Successivamente, utilizzeremo un generatore di documenti per aggiungere contenut
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 3: aggiungi testo con Enfasi
+## Passaggio 3: aggiungi testo con Emphases
 
-Possiamo aggiungere testo di enfasi modificando le proprietà del carattere del generatore di documenti. In questo esempio, usiamo il grassetto e il corsivo per enfatizzare diverse parti del testo.
+Possiamo aggiungere testo in enfasi modificando le proprietà del carattere del generatore di documenti. In questo esempio utilizziamo il grassetto e il corsivo per enfatizzare diverse parti del testo.
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as emphases indicators.");
@@ -59,17 +59,17 @@ builder. Write(".");
 
 ```
 
-## Passaggio 4: salvare il documento
+## Passaggio 4: salvataggio del documento
 
- Infine, possiamo salvare il documento nel formato desiderato. In questo esempio, stiamo usando il`.md` estensione per un formato Markdown.
+ Infine, possiamo salvare il documento nel formato desiderato. In questo esempio, stiamo utilizzando il file`.md` estensione per un formato Markdown.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-Congratulazioni! Ora hai imparato come utilizzare le sottolineature con Aspose.Words per .NET.
+Congratulazioni! Ora hai imparato come utilizzare l'enfasi con Aspose.Words per .NET.
 
-### Esempio di codice sorgente per Emphases utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per Emphases utilizzando Aspose.Words per .NET
 
 
 ```csharp
@@ -105,24 +105,24 @@ builder.Write("text.");
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-### FAQ
+### Domande frequenti
 
-#### D: Come faccio a evidenziare il testo usando Markdown?
+#### D: Come evidenzio il testo utilizzando Markdown?
 
-R: Per evidenziare il testo utilizzando Markdown, racchiudi semplicemente il testo con i simboli appropriati. Utilizzo`*` O`_` per il corsivo,`**` O`__` per grassetto, e`~~` per barrato.
+R: Per evidenziare il testo utilizzando Markdown, circonda semplicemente il testo con i simboli appropriati. Utilizzo`*` O`_` per il corsivo,`**` O`__` per grassetto e`~~` per barrato.
 
-#### D: Possiamo combinare punti salienti diversi nello stesso testo?
+#### D: Possiamo combinare diversi punti salienti nello stesso testo?
 
- R: Sì, è possibile combinare diverse evidenziazioni nello stesso testo. Ad esempio, puoi mettere in grassetto e in corsivo una parola utilizzando entrambi`**` E`*` intorno alla parola.
+ R: Sì, è possibile combinare diversi punti salienti nello stesso testo. Ad esempio, puoi mettere in grassetto e in corsivo una parola utilizzando entrambi`**` E`*` intorno alla parola.
 
 #### D: Quali opzioni di evidenziazione sono disponibili in Markdown?
 
 R: Le opzioni di evidenziazione disponibili in Markdown sono in corsivo (`*` O`_`), grassetto (`**` O`__`) e barrato (`~~`).
 
-#### D: Come gestisco i casi in cui il testo contiene caratteri speciali utilizzati da Markdown per l'evidenziazione?
+#### D: Come posso gestire i casi in cui il testo contiene caratteri speciali utilizzati da Markdown per l'evidenziazione?
 
- R: Se il testo contiene caratteri speciali utilizzati da Markdown per l'evidenziazione, puoi eseguirne l'escape facendoli precedere da a`\` . Per esempio,`\*` visualizzerà un asterisco letterale.
+ R: Se il tuo testo contiene caratteri speciali utilizzati da Markdown per l'evidenziazione, puoi eseguirne l'escape facendoli precedere da a`\` . Per esempio,`\*` verrà visualizzato un asterisco letterale.
 
-#### D: Possiamo personalizzare l'aspetto dell'evidenziazione usando i CSS?
+#### D: Possiamo personalizzare l'aspetto dell'evidenziazione utilizzando i CSS?
 
-R: L'evidenziazione in Markdown viene solitamente resa utilizzando gli stili predefiniti del browser. Se converti il tuo Markdown in HTML, puoi personalizzare l'aspetto dell'evidenziazione utilizzando le regole CSS.
+R: L'evidenziazione in Markdown viene solitamente renderizzata utilizzando gli stili predefiniti del browser. Se converti il tuo Markdown in HTML, puoi personalizzare l'aspetto dell'evidenziazione utilizzando le regole CSS.

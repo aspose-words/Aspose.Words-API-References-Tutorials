@@ -1,17 +1,17 @@
 ---
-title: تطبيق الحدود والتظليل على فقرة في مستند Word
-linktitle: تطبيق الحدود والتظليل على فقرة في مستند Word
-second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: تعرف على كيفية تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words for .NET.
+title: تطبيق الحدود والتظليل على الفقرة في مستند Word
+linktitle: تطبيق الحدود والتظليل على الفقرة في مستند Word
+second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
+description: تعرف على كيفية تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words لـ .NET.
 type: docs
 weight: 10
 url: /ar/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام وظيفة Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر وتطبيق تغييرات التنسيق.
+سنوضح لك في هذا البرنامج التعليمي كيفية تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام وظيفة Aspose.Words for .NET. اتبع الخطوات أدناه لفهم الكود المصدري وتطبيق تغييرات التنسيق.
 
 ## الخطوة 1: إنشاء وتكوين المستند
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+للبدء، قم بإنشاء مستند جديد وكائن DocumentBuilder مرتبط. إليك الطريقة:
 
 ```csharp
 // المسار إلى دليل المستندات.
@@ -33,9 +33,9 @@ borders[BorderType.Top].LineStyle = LineStyle.Double;
 borders[BorderType.Bottom].LineStyle = LineStyle.Double;
 ```
 
-## الخطوة 3: إعداد الملء
+## الخطوة 3: ملء الإعداد
 
-سنقوم الآن بتكوين تعبئة الفقرة عن طريق تحديد النسيج وألوان التعبئة. إليك الطريقة:
+سنقوم الآن بتكوين تعبئة الفقرة عن طريق تحديد الملمس وألوان التعبئة. إليك الطريقة:
 
 ```csharp
 Shading shading = builder.ParagraphFormat.Shading;
@@ -44,7 +44,7 @@ shading.BackgroundPatternColor = System.Drawing.Color.LightCoral;
 shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 ```
 
-## الخطوة 4: أضف محتوى
+## الخطوة 4: إضافة المحتوى
 
 سنقوم بإضافة بعض المحتوى المنسق إلى الفقرة. إليك الطريقة:
 
@@ -52,17 +52,17 @@ shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 builder.Write("I'm a formatted paragraph with a double border and a nice shading.");
 ```
 
-## الخطوة 3: حفظ المستند
+## الخطوة 3: حفظ الوثيقة
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ بعد إدراج حقل نموذج إدخال النص، احفظ المستند في الموقع المطلوب باستخدام الزر`Save` طريقة. تأكد من توفير مسار الملف المناسب:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ```
 
-### مثال على الكود المصدري لتطبيق الحدود والتظليل على الفقرة باستخدام Aspose.Words for .NET
+### مثال على التعليمات البرمجية المصدر لتطبيق الحدود والتظليل على الفقرة باستخدام Aspose.Words لـ .NET
 
-فيما يلي رمز المصدر الكامل لميزة "تطبيق الحدود والتظليل على الفقرة" باستخدام Aspose.Words for .NET:
+فيما يلي الكود المصدري الكامل لميزة تطبيق الحدود والتظليل على الفقرة باستخدام Aspose.Words لـ .NET:
 
 ```csharp
 
@@ -91,23 +91,23 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## خاتمة
 
-في هذا البرنامج التعليمي ، تعلمنا كيفية تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words for .NET. عن طريق تكوين الفقرة`Borders` و`Shading` الخصائص ، تمكنا من ضبط نمط الحدود ولون الخط ولون التعبئة للفقرة. يوفر Aspose.Words for .NET إمكانيات تنسيق قوية لتخصيص مظهر الفقرات وتحسين التمثيل المرئي لمستنداتك.
+في هذا البرنامج التعليمي، تعلمنا كيفية تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words for .NET. من خلال تكوين الفقرة`Borders` و`Shading` الخصائص، تمكنا من تعيين نمط الحدود ولون الخط ولون التعبئة للفقرة. يوفر Aspose.Words for .NET إمكانيات تنسيق قوية لتخصيص مظهر الفقرات وتحسين التمثيل المرئي لمستنداتك.
 
-### التعليمات
+### الأسئلة الشائعة
 
 #### س: كيف يمكنني تطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words for .NET؟
 
-ج: لتطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words for .NET ، اتبع الخطوات التالية:
-1.  قم بإنشاء مستند جديد وملف`DocumentBuilder` هدف.
-2.  قم بتكوين حدود الفقرة بالوصول إلى ملف`Borders` ممتلكات`ParagraphFormat` وتعيين نمط الحدود لكل جانب.
-3.  تكوين تعبئة الفقرة عن طريق الوصول إلى`Shading` ممتلكات`ParagraphFormat` وتحديد النسيج وملء الألوان.
+ج: لتطبيق الحدود والتظليل على فقرة في مستند Word باستخدام Aspose.Words لـ .NET، اتبع الخطوات التالية:
+1.  إنشاء مستند جديد و`DocumentBuilder` هدف.
+2.  قم بتكوين حدود الفقرة عن طريق الوصول إلى`Borders` ملكية`ParagraphFormat` وتحديد نمط الحدود لكل جانب.
+3.  قم بتكوين تعبئة الفقرة عن طريق الوصول إلى`Shading` ملكية`ParagraphFormat` وتحديد الملمس وألوان التعبئة.
 4.  أضف محتوى إلى الفقرة باستخدام`Write` طريقة`DocumentBuilder`.
-5.  احفظ المستند باستخدام ملف`Save` طريقة.
+5.  احفظ المستند باستخدام`Save` طريقة.
 
-#### س: كيف يمكنني تعيين نمط الحد لكل جانب من جوانب الفقرة؟
+#### س: كيف أقوم بتعيين نمط الحدود لكل جانب من الفقرة؟
 
- ج: لتعيين نمط الحد لكل جانب من جوانب الفقرة ، يمكنك الوصول إلى ملف`Borders` ممتلكات`ParagraphFormat` وضبط`LineStyle` الممتلكات لكل منها`BorderType` (على سبيل المثال ،`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). يمكنك تحديد أنماط خطوط مختلفة مثل`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`، إلخ.
+ ج: لتعيين نمط الحدود لكل جانب من جوانب الفقرة، يمكنك الوصول إلى`Borders` ملكية`ParagraphFormat` وتعيين`LineStyle` الملكية لكل`BorderType` (على سبيل المثال،`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). يمكنك تحديد أنماط خطوط مختلفة مثل`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`، إلخ.
 
-#### س: كيف يمكنني تحديد ألوان النسيج والتعبئة لتظليل الفقرة؟
+#### س: كيف يمكنني تحديد الملمس وألوان التعبئة لتظليل الفقرة؟
 
- ج: لتحديد ألوان النسيج والتعبئة لتظليل الفقرة ، يمكنك الوصول إلى تنسيق`Shading` ممتلكات`ParagraphFormat` وضبط`Texture` الخاصية إلى فهرس النسيج المطلوب (على سبيل المثال ،`TextureIndex.TextureDiagonalCross` ). يمكنك أيضًا ضبط ملف`BackgroundPatternColor` و`ForegroundPatternColor` خصائص الألوان المرغوبة باستخدام`System.Drawing.Color` فصل.
+ ج: لتحديد الملمس وألوان التعبئة لتظليل الفقرة، يمكنك الوصول إلى`Shading` ملكية`ParagraphFormat` وتعيين`Texture` الخاصية إلى فهرس الملمس المطلوب (على سبيل المثال،`TextureIndex.TextureDiagonalCross` ). يمكنك أيضًا ضبط`BackgroundPatternColor` و`ForegroundPatternColor` خصائص الألوان المطلوبة باستخدام`System.Drawing.Color` فصل.

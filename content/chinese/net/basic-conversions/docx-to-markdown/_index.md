@@ -34,7 +34,7 @@ builder.Writeln("Some text!");
 
 ## 步骤 3：将文档保存为 Markdown 格式
 
-要将文档保存为 Markdown 格式，请使用`Save`方法上的`Document`对象并提供输出文档的路径和文件名。在本例中，我们将其另存为`"BaseConversions.DocxToMarkdown.md"`：
+要将文档保存为 Markdown 格式，请使用`Save`方法上的`Document`对象并提供输出文档的路径和文件名。在本例中，我们将其另存为`"BaseConversions.DocxToMarkdown.md"`:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.DocxToMarkdown.md");

@@ -1,20 +1,20 @@
 ---
-title: تحويل ملف Word إلى PDF
-linktitle: تحويل ملف Word إلى PDF
-second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
-description: تعرف على كيفية تحويل مستندات Word من Docx إلى PDF باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: تحويل ملف الوورد إلى PDF
+linktitle: تحويل ملف الوورد إلى PDF
+second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
+description: تعرف على كيفية تحويل مستندات Word من Docx إلى PDF باستخدام Aspose.Words لـ .NET. البرنامج التعليمي خطوة بخطوة مع مثال التعليمات البرمجية المصدر.
 type: docs
 weight: 10
 url: /ar/net/basic-conversions/docx-to-pdf/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى PDF. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+في هذا البرنامج التعليمي خطوة بخطوة، سنرشدك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى PDF. سنشرح لك كود مصدر C# المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
 
- للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من ملف[الإطلاقات](https://releases.aspose.com/words/net/).
+ للبدء، تأكد من تثبيت Aspose.Words for .NET وإعداده في بيئة التطوير لديك. إذا لم تكن قد قمت بذلك، فقم بتنزيل المكتبة وتثبيتها من ملف[Aspose.Releases](https://releases.aspose.com/words/net/).
 
 ## الخطوة 1: تهيئة كائن المستند
 
- أولاً ، قم بتهيئة ملف`Document`كائن مع المسار إلى مستندك المصدر بتنسيق Docx:
+ أولاً، قم بتهيئة`Document`الكائن بالمسار إلى مستندك المصدر بتنسيق Docx:
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");
@@ -22,7 +22,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## الخطوة 2: حفظ المستند بتنسيق PDF
 
- بعد ذلك ، احفظ المستند بتنسيق PDF عن طريق استدعاء ملف`Save` طريقة على`Document` كائن وتوفير المسار واسم الملف لمستند PDF الناتج:
+ بعد ذلك، احفظ المستند بتنسيق PDF عن طريق الاتصال بـ`Save` الطريقة على`Document` الكائن وتوفير المسار واسم الملف لمستند PDF الناتج:
 
 ```csharp
 doc.Save(MyDir + "BaseConversions.DocxToPdf.pdf");
@@ -30,7 +30,7 @@ doc.Save(MyDir + "BaseConversions.DocxToPdf.pdf");
 
 هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى PDF باستخدام Aspose.Words for .NET.
 
-### مثال على شفرة المصدر لـ Docx To Pdf باستخدام Aspose.Words for .NET
+### مثال على التعليمات البرمجية المصدر لـ Docx To Pdf باستخدام Aspose.Words لـ .NET
 
 ```csharp
 
@@ -40,42 +40,42 @@ doc.Save(MyDir + "BaseConversions.DocxToPdf.pdf");
 	
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك المحددة.
 
-### أسئلة وأجوبة لتحويل Word إلى PDF
+### الأسئلة الشائعة حول تحويل Word إلى PDF
 
-#### س 1. ما هي متطلبات إجراء تحويل DOCX إلى PDF باستخدام Aspose.Words for .NET؟
-لتشغيل تحويل DOCX إلى PDF باستخدام Aspose.Words for .NET ، فإنك تحتاج إلى:
-Aspose.Words for .NET مثبتة على جهازك
+#### س1. ما هي المتطلبات اللازمة لإجراء تحويل DOCX إلى PDF باستخدام Aspose.Words لـ .NET؟
+لتشغيل تحويل DOCX إلى PDF باستخدام Aspose.Words لـ .NET، تحتاج إلى:
+Aspose.Words for .NET مثبت على جهازك
 ملف DOCX صالح للتحويل
-ترخيص صالح لاستخدام Aspose.Words for .NET (أو يمكنك استخدام الإصدار التجريبي المجاني)
+ترخيص صالح لاستخدام Aspose.Words لـ .NET (أو يمكنك استخدام الإصدار التجريبي المجاني)
 
-#### س 2. كيف يمكنني تثبيت Aspose.Words for .NET؟
-يمكنك تثبيت Aspose.Words for .NET باتباع الخطوات التالية:
+#### س2. كيف يمكنني تثبيت Aspose.Words لـ .NET؟
+يمكنك تثبيت Aspose.Words لـ .NET باتباع الخطوات التالية:
 
 افتح Visual Studio أو بيئة التطوير المفضلة لديك.
 
-أنشئ مشروعًا جديدًا أو افتح مشروعًا موجودًا.
+إنشاء مشروع جديد أو فتح مشروع موجود.
 
-انقر بزر الماوس الأيمن فوق المشروع في "مستكشف الحلول".
+انقر بزر الماوس الأيمن فوق المشروع في Solution Explorer.
 
 حدد "إدارة حزم NuGet" من قائمة السياق.
 
 ابحث عن "Aspose.Words" في مربع البحث.
 
-حدد أحدث إصدار من Aspose.Words for .NET.
+حدد أحدث إصدار من Aspose.Words لـ .NET.
 
 انقر فوق "تثبيت" لإضافة المرجع إلى مشروعك.
 
-#### س 3. ما هي خيارات التحويل الأخرى المتاحة مع Aspose.Words for .NET؟
-بالإضافة إلى تحويل DOCX إلى PDF ، يدعم Aspose.Words for .NET العديد من التحويلات الأخرى ، مثل:
+#### س3. ما هي خيارات التحويل الأخرى المتوفرة مع Aspose.Words لـ .NET؟
+بالإضافة إلى تحويل DOCX إلى PDF، يدعم Aspose.Words for .NET العديد من التحويلات الأخرى، مثل:
 
-DOCX إلى تنسيقات ملفات أخرى ، مثل DOC و RTF و HTML و XML وما إلى ذلك.
+DOCX إلى تنسيقات الملفات الأخرى، مثل DOC، RTF، HTML، XML، إلخ.
 
-قم بتحويل ملفات PDF إلى تنسيقات مثل DOCX و DOC و HTML وما إلى ذلك.
+تحويل ملفات PDF إلى صيغ مثل DOCX، DOC، HTML، إلخ.
 
-تحويل ملفات EPUB و ODT و OTT و TXT وما إلى ذلك. لتنسيقات أخرى.
+تحويل ملفات EPUB وODT وOTT وTXT وما إلى ذلك. إلى صيغ أخرى.
 
 
-#### س 4. أين يمكنني العثور على المزيد من نماذج التعليمات البرمجية والموارد لمعالجة الكلمات باستخدام Aspose.Words for .NET؟
- يمكنك العثور على المزيد من نماذج التعليمات البرمجية والموارد في ملف[Aspose.Words لمراجع .NET API](https://reference.aspose.com/words/net/) و[Aspose.Words لدروس .NET API](https://reference.aspose.com/tutorials/words/net/). توفر هذه الموارد أدلة خطوة بخطوة ونموذج التعليمات البرمجية والبرامج التعليمية.
+#### س 4. أين يمكنني العثور على المزيد من نماذج التعليمات البرمجية والموارد الخاصة بمعالجة الكلمات باستخدام Aspose.Words لـ .NET؟
+ يمكنك العثور على المزيد من نماذج التعليمات البرمجية والموارد في[Aspose.Words لمرجع .NET API](https://reference.aspose.com/words/net/) و[Aspose.Words لبرامج .NET API التعليمية](https://reference.aspose.com/tutorials/words/net/). توفر هذه الموارد إرشادات خطوة بخطوة ونموذج التعليمات البرمجية والبرامج التعليمية.

@@ -1,20 +1,20 @@
 ---
-title: Her Bölümde Listeyi Yeniden Başlat
-linktitle: Her Bölümde Listeyi Yeniden Başlat
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile bir Word belgesindeki her bölüme numaralı bir listeyi nasıl sıfırlayacağınızı öğrenin.
+title: Listeyi Her Bölümde Yeniden Başlatın
+linktitle: Listeyi Her Bölümde Yeniden Başlatın
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile bir Word belgesindeki her bölüme numaralandırılmış listeyi nasıl sıfırlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-list/restart-list-at-each-section/
 ---
 
-Bu adım adım öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki her bölüme numaralı bir listeyi nasıl sıfırlayacağınızı göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinize nasıl uygulayacağınızı göstereceğiz.
+Bu adım adım eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki her bölüme numaralandırılmış listeyi nasıl sıfırlayacağınızı göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
- Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı adresinden indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
+ Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı şuradan indirip yükleyin:[Aspose.Releases]https://releases.aspose.com/words/net/.
 
-## Adım 1: Belge ve Listeyi Oluşturma
+## Adım 1: Belge ve Liste Oluşturma
 
-İlk olarak, yeni bir belge oluşturun ve varsayılan bir numaralı liste ekleyin:
+Öncelikle yeni bir belge oluşturun ve varsayılan numaralandırılmış bir liste ekleyin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -28,7 +28,7 @@ list. IsRestartAtEachSection = true;
 
 ## 2. Adım: Listeye öğe ekleme
 
- Daha sonra bir`DocumentBuilder` Listeye öğe eklemek için. Listeye birden çok öğe eklemek için bir döngü kullanabilirsiniz:
+ Sonra bir kullanın`DocumentBuilder` Listeye öğe eklemek için. Listeye birden fazla öğe eklemek için döngü kullanabilirsiniz:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -47,7 +47,7 @@ Bu örnekte, yeniden numaralandırmayı göstermek için 15. liste öğesinden s
 
 ## 3. Adım: Değiştirilen belgeyi kaydedin
 
-Son olarak, değiştirilen belgeyi kaydedin:
+Son olarak değiştirilen belgeyi kaydedin:
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
@@ -57,7 +57,7 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 
 Bu yüzden ! Aspose.Words for .NET'i kullanarak bir Word belgesindeki her bölüme numaralandırılmış bir listeyi başarıyla sıfırladınız.
 
-### Her bölümde listeyi sıfırlamak için örnek kaynak kodu
+### Her bölümdeki listeyi sıfırlamak için örnek kaynak kodu
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -87,16 +87,16 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 
 Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şekilde değiştirmekten çekinmeyin.
 
-### SSS
+### SSS'ler
 
-#### S: Aspose.Words'te her bölümde bir listeyi nasıl yeniden başlatabilirim?
+#### S: Aspose.Words'ün her bölümündeki bir listeyi nasıl yeniden başlatabilirim?
 
- C: Aspose.Words'teki her bölümde bir listeyi yeniden başlatmak için,`List` sınıf ve ona numaralı bir liste atayın. Sonra kullanabilirsiniz`List.IsRestartAtEachSection` numaralandırmanın her bölümde yeniden başlatılması gerektiğini belirtmek için özellik. Numaralandırmanın her bölümde doğru şekilde yeniden başlaması için bu listeyi belgenizin bir veya daha fazla bölümüyle ilişkilendirebilirsiniz.
+ C: Aspose.Words'ün her bölümünde bir listeyi yeniden başlatmak için listenin bir örneğini oluşturmanız gerekir.`List` sınıfa numaralandırılmış bir liste atayın. Daha sonra şunu kullanabilirsiniz:`List.IsRestartAtEachSection` Numaralandırmanın her bölümde yeniden başlatılması gerektiğini belirten özellik. Numaralandırmanın her bölümde doğru şekilde yeniden başlatılması için bu listeyi belgenizin bir veya daha fazla bölümüyle ilişkilendirebilirsiniz.
 
 #### S: Aspose.Words'te listelerin numaralandırma formatını özelleştirebilir miyim?
 
- C: Evet, listelerin numaralandırma formatını Aspose.Words'te özelleştirebilirsiniz. bu`List` class bunun için çeşitli özellikler sunar, örneğin`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`vb. Liste türünü (numaralı, madde işaretli vb.), numaralandırma biçimini (Arap rakamları, Romen rakamları, harfler vb.) ve diğer numaralandırma biçimlendirme seçeneklerini ayarlamak için bu özellikleri kullanabilirsiniz.
+ C: Evet, Aspose.Words'te listelerin numaralandırma formatını özelleştirebilirsiniz.`List` class bunun için çeşitli özellikler sunar, örneğin`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`Liste türünü (numaralandırılmış, madde işaretli vb.), numaralandırma biçimini (Arap rakamları, Romen rakamları, harfler vb.) ve diğer numaralandırma biçimlendirme seçeneklerini ayarlamak için bu özellikleri kullanabilirsiniz.
 
-#### S: Aspose.Words'te numaralı bir listeye ek seviyeler eklemek mümkün müdür?
+#### S: Aspose.Words'te numaralandırılmış bir listeye ek seviyeler eklemek mümkün müdür?
 
- C: Evet, Aspose.Words'te numaralı bir listeye ek seviyeler eklemek mümkündür. bu`ListLevel` class, listenin her düzeyi için biçimlendirme özelliklerini ayarlamanıza olanak tanır. Önek, sonek, hizalama, girinti vb. seçenekleri ayarlayabilirsiniz. Bu, birden çok hiyerarşi düzeyine sahip listeler oluşturmanıza olanak tanır.
+ C: Evet, Aspose.Words'te numaralandırılmış bir listeye ek seviyeler eklemek mümkündür.`ListLevel` class, listenin her düzeyi için biçimlendirme özelliklerini ayarlamanıza olanak tanır. Önek, sonek, hizalama, girinti vb. seçenekleri ayarlayabilirsiniz. Bu, birden fazla hiyerarşi düzeyine sahip listeler oluşturmanıza olanak tanır.

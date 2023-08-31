@@ -55,4 +55,4 @@ A: Um den Anzeigetext eines Links in Aspose.Words anzupassen, können Sie den In
 
 #### F: Kann ich in Aspose.Words ein Ziel für einen Link angeben?
 
- A: Ja, Sie können in Aspose.Words mithilfe von ein Ziel für einen Link angeben`target` Attribut der`<a>` Schild. Zum Beispiel,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` öffnet den Link in einem neuen Fenster oder Tab.
+ A: Ja, Sie können in Aspose.Words mithilfe von ein Ziel für einen Link angeben`target` Attribut der`<a>` Etikett. Zum Beispiel,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` öffnet den Link in einem neuen Fenster oder Tab.

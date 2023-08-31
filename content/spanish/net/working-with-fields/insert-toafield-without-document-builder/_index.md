@@ -1,7 +1,7 @@
 ---
-title: Insertar campo TOA sin el generador de documentos
-linktitle: Insertar campo TOA sin el generador de documentos
-second_title: API de procesamiento de documentos de Aspose.Words
+title: Insertar campo TOA sin generador de documentos
+linktitle: Insertar campo TOA sin generador de documentos
+second_title: API de procesamiento de documentos Aspose.Words
 description: Guía paso a paso para insertar el campo TOA sin Document Builder usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -12,13 +12,13 @@ Aquí hay una guía paso a paso para explicar el código fuente de C# a continua
 
 ## Paso 1: Configuración del directorio de documentos
 
-En el código provisto, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
+En el código proporcionado, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Paso 2: Creando el Documento y el Párrafo
+## Paso 2: crear el documento y el párrafo
 
 Comenzamos creando un nuevo documento e inicializando un párrafo.
 
@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## Paso 3: Inserción del campo TA
+## Paso 3: Insertar el campo TA
 
 Usamos la clase FieldTA para insertar un campo TA en el párrafo.
 
@@ -53,7 +53,7 @@ Creamos un nuevo párrafo para el campo TOA.
 para = new Paragraph(doc);
 ```
 
-## Paso 6: Inserción del campo TOA
+## Paso 6: Insertar el campo TOA
 
 Usamos la clase FieldToa para insertar un campo TOA en el párrafo.
 
@@ -70,15 +70,15 @@ Agregamos el párrafo que contiene el campo TOA al cuerpo del documento.
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## Paso 8: Actualizar el campo TOA
+## Paso 8: actualice el campo TOA
 
- Finalmente, llamamos a la`Update()` método para actualizar el campo TOA.
+ Finalmente llamamos al`Update()` método para actualizar el campo TOA.
 
 ```csharp
 fieldToa.Update();
 ```
 
-### Ejemplo de código fuente para la inserción de campos TOA sin Document Builder con Aspose.Words para .NET
+### Ejemplo de código fuente para inserción de campos TOA sin Document Builder con Aspose.Words para .NET
 
 ```csharp
 Document doc = new Document();
@@ -109,16 +109,16 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### P: ¿Cómo personalizar la apariencia del campo TOA insertado en el documento de Word con Aspose.Words para .NET?
 
-R: Puede personalizar la apariencia del campo TOA insertado usando las propiedades del`FieldTOA` objeto para especificar las opciones de formato.
+R: Puede personalizar la apariencia del campo TOA insertado utilizando las propiedades del`FieldTOA` objeto para especificar opciones de formato.
 
-#### P: ¿Puedo agregar múltiples campos TOA en un solo documento de Word usando Aspose.Words para .NET?
+#### P: ¿Puedo agregar varios campos TOA en un solo documento de Word usando Aspose.Words para .NET?
 
 R: Sí, puede agregar varios campos TOA en un solo documento de Word usando Aspose.Words para .NET. Simplemente repita los pasos de inserción para cada campo.
 
-#### P: ¿Cómo puedo verificar si un campo TOA se insertó correctamente en un documento de Word con Aspose.Words para .NET?
+#### P: ¿Cómo puedo comprobar si un campo TOA se insertó correctamente en un documento de Word con Aspose.Words para .NET?
 
-R: Para verificar si un campo TOA se insertó correctamente, puede explorar el contenido del documento y buscar instancias de campos TOA.
+R: Para comprobar si un campo TOA se insertó correctamente, puede explorar el contenido del documento y buscar instancias de campo TOA.
 
-#### P: ¿La inserción de un campo TOA sin usar DocumentBuilder afecta el formato de documentos de Word con Aspose.Words para .NET?
+#### P: ¿La inserción de un campo TOA sin utilizar DocumentBuilder afecta el formato de documentos de Word con Aspose.Words para .NET?
 
 R: Insertar un campo TOA sin usar DocumentBuilder no afecta directamente el formato del documento de Word. Sin embargo, las opciones de formato del campo TOA pueden afectar el formato general del documento.

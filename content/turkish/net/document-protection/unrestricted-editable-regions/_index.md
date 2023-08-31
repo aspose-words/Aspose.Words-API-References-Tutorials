@@ -1,13 +1,13 @@
 ---
-title: Word Belgesinde Kısıtlanmamış Düzenlenebilir Bölgeler
-linktitle: Word Belgesinde Kısıtlanmamış Düzenlenebilir Bölgeler
-second_title: Aspose.Words Belge İşleme API'sı
+title: Word Belgesinde Sınırsız Düzenlenebilir Bölgeler
+linktitle: Word Belgesinde Sınırsız Düzenlenebilir Bölgeler
+second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile bir Word belgesinde sınırsız düzenlenebilir alanların nasıl oluşturulacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-protection/unrestricted-editable-regions/
 ---
-Bu öğreticide, Aspose.Words for .NET'in sınırsız düzenlenebilir alanlar özelliğini kullanma adımlarında size rehberlik edeceğiz. Bu özellik, bir Word belgesinde, belgenin geri kalanı salt okunur olsa bile içeriğin kısıtlama olmadan düzenlenebileceği alanları tanımlamanıza olanak tanır. Aşağıdaki adımları takip et:
+Bu eğitimde Aspose.Words for .NET'in sınırsız düzenlenebilir alanlar özelliğini kullanma adımlarında size rehberlik edeceğiz. Bu özellik, bir Word belgesinde, belgenin geri kalanı salt okunur olsa bile içeriğin kısıtlama olmaksızın düzenlenebileceği alanları tanımlamanıza olanak tanır. Aşağıdaki adımları takip et:
 
 ## 1. Adım: Belgeyi yükleme ve korumayı ayarlama
 
@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 doc.Protect(ProtectionType.ReadOnly, "MyPassword");
 ```
 
-Salt okunur koruma türü ve parola ayarlayarak belgeyi koruyun
+Salt okunur koruma türünü ve parolayı ayarlayarak belgeyi koruyun
 
 ## 2. Adım: Düzenlenebilir bir alan oluşturma
 
@@ -28,20 +28,20 @@ EditableRangeStart ve EditableRangeEnd nesnelerini kullanarak düzenlenebilir bi
 
 ```csharp
 EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Az önce oluşturduğumuz EditableRangeStart için bir EditableRange nesnesi oluşturulur.
+// Az önce yaptığımız EditableRangeStart için bir EditableRange nesnesi oluşturulur.
 EditableRange editableRange = edRangeStart.EditableRange;
 
-// Düzenlenebilir aralığın içine bir şey koyun.
+// Düzenlenebilir aralığa bir şey koyun.
 builder.Writeln("Paragraph inside first editable range");
 
-// Düzenlenebilir bir aralık, bir başlangıcı ve bir sonu varsa iyi biçimlendirilmiştir.
+// Düzenlenebilir bir aralık, bir başlangıcı ve bitişi varsa iyi biçimlendirilmiş demektir.
 EditableRangeEnd edRangeEnd = builder.EndEditableRange();
 
 ```
 
-## 3. Adım: Düzenlenebilir alanların dışında içerik ekleyin
+## 3. Adım: Düzenlenebilir alanların dışına içerik ekleyin
 
-Salt okunur olarak kalacak olan düzenlenebilir alanların dışına içerik ekleyebilirsiniz:
+Düzenlenebilir alanların dışında salt okunur kalacak içerik ekleyebilirsiniz:
 
 ```csharp
 builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
@@ -49,7 +49,7 @@ builder.Writeln("This paragraph is outside of all editable areas and cannot be e
 
 ## 4. Adım: Belgeyi kaydedin
 
-Son olarak, değiştirilen belgeyi kaydedin:
+Son olarak değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
@@ -57,9 +57,9 @@ doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 
 Belgeyi düzenlenebilir alanlarla kaydetmek için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### Aspose.Words for .NET kullanan Sınırsız Düzenlenebilir Bölgeler için örnek kaynak kodu
+### Aspose.Words for .NET kullanan Kısıtlanmamış Düzenlenebilir Bölgeler için örnek kaynak kodu
 
-Aspose.Words for .NET kullanan sınırsız düzenlenebilir alanlar için eksiksiz kaynak kodu burada:
+Aspose.Words for .NET kullanan sınırsız düzenlenebilir alanlar için tam kaynak kodu:
 
 ```csharp
 // Belgeler dizininin yolu.
@@ -74,13 +74,13 @@ builder.Writeln("Hello world! Since we have set the document's protection level 
 
 // Düzenlenebilir bir aralık başlatın.
 EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Az önce oluşturduğumuz EditableRangeStart için bir EditableRange nesnesi oluşturulur.
+// Az önce yaptığımız EditableRangeStart için bir EditableRange nesnesi oluşturulur.
 EditableRange editableRange = edRangeStart.EditableRange;
 
-// Düzenlenebilir aralığın içine bir şey koyun.
+// Düzenlenebilir aralığa bir şey koyun.
 builder.Writeln("Paragraph inside first editable range");
 
-// Düzenlenebilir bir aralık, bir başlangıcı ve bir sonu varsa iyi biçimlendirilmiştir.
+// Düzenlenebilir bir aralık, bir başlangıcı ve bitişi varsa iyi biçimlendirilmiş demektir.
 EditableRangeEnd edRangeEnd = builder.EndEditableRange();
 
 builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
@@ -88,34 +88,34 @@ builder.Writeln("This paragraph is outside any editable ranges, and cannot be ed
 doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 
 ```
-Bu adımları izleyerek, Aspose.Words for .NET ile Word belgenizde kolayca sınırsız düzenlenebilir alanlar oluşturabilirsiniz.
+Bu adımları takip ederek Aspose.Words for .NET ile Word belgenizde kolayca sınırsız düzenlenebilir alanlar oluşturabilirsiniz.
 
 ## Çözüm
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde kısıtlanmamış düzenlenebilir bölgelerin nasıl oluşturulacağını öğrendik. Sağlanan adımları izleyerek, belge içinde, kullanıcıların belgenin geri kalanını salt okunur tutarken içeriği serbestçe düzenleyebileceği belirli alanlar tanımlayabilirsiniz. Aspose.Words for .NET, belge koruma ve özelleştirme için güçlü özellikler sunarak Word belgelerinizin düzenleme yetenekleri üzerinde kontrol sahibi olmanızı sağlar.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde sınırsız düzenlenebilir bölgelerin nasıl oluşturulacağını öğrendik. Sağlanan adımları izleyerek, belgenin geri kalanını salt okunur olarak tutarken kullanıcıların içeriği serbestçe düzenleyebileceği belge içinde belirli alanlar tanımlayabilirsiniz. Aspose.Words for .NET, belge koruma ve özelleştirme için güçlü özellikler sunarak Word belgelerinizin düzenleme özellikleri üzerinde kontrol sahibi olmanızı sağlar.
 
-### Word belgesindeki kısıtlanmamış düzenlenebilir bölgeler için SSS
+### Word belgesindeki sınırsız düzenlenebilir bölgeler için SSS
 
 #### S: Aspose.Words for .NET'te sınırsız düzenlenebilir bölgeler nelerdir?
 
-C: Aspose.Words for .NET'teki sınırsız düzenlenebilir bölgeler, bir Word belgesinde, belgenin geri kalanı salt okunur olarak ayarlanmış olsa bile içeriğin herhangi bir kısıtlama olmadan düzenlenebildiği alanlardır. Bu bölgeler, kullanıcıların genel belge korumasını korurken değiştirebilecekleri belgenin belirli bölümlerini tanımlamanın bir yolunu sağlar.
+C: Aspose.Words for .NET'teki sınırsız düzenlenebilir bölgeler, bir Word belgesi içindeki, belgenin geri kalanı salt okunur olarak ayarlanmış olsa bile içeriğin herhangi bir kısıtlama olmaksızın düzenlenebildiği alanlardır. Bu bölgeler, genel belge korumasını korurken kullanıcıların değiştirebileceği belgenin belirli bölümlerini tanımlamanın bir yolunu sağlar.
 
-#### S: Aspose.Words for .NET kullanarak kısıtlamasız düzenlenebilir bölgeleri nasıl oluşturabilirim?
+#### S: Aspose.Words for .NET'i kullanarak nasıl sınırsız düzenlenebilir bölgeler oluşturabilirim?
 
-C: Aspose.Words for .NET kullanarak bir Word belgesinde kısıtlanmamış düzenlenebilir bölgeler oluşturmak için şu adımları takip edebilirsiniz:
-1.  kullanarak mevcut belgeyi yükleyin.`Document` sınıf.
-2.  kullanarak belge korumasını salt okunur olarak ayarlayın.`Protect` yöntemi`Document` nesne.
+C: Aspose.Words for .NET kullanarak bir Word belgesinde sınırsız düzenlenebilir bölgeler oluşturmak için şu adımları takip edebilirsiniz:
+1.  Mevcut belgeyi kullanarak yükleyin.`Document` sınıf.
+2.  Belge korumasını salt okunur olarak ayarlayın.`Protect` yöntemi`Document` nesne.
 3.  Kullan`DocumentBuilder` ekleyerek düzenlenebilir bir aralık oluşturmak için sınıf`EditableRangeStart` nesne ve bir`EditableRangeEnd` nesne.
-4.  kullanarak düzenlenebilir aralık içinde içerik ekleyin.`DocumentBuilder`.
-5.  Değiştirilen belgeyi şunu kullanarak kaydedin:`Save` yöntemi`Document` nesne.
+4.  Kullanarak düzenlenebilir aralıktaki içeriği ekleyin`DocumentBuilder`.
+5.  Değiştirilen belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
-#### S: Bir Word belgesinde birden fazla kısıtlanmamış düzenlenebilir bölgeye sahip olabilir miyim?
+#### S: Bir Word belgesinde birden çok sınırsız düzenlenebilir bölgeye sahip olabilir miyim?
 
-C: Evet, bir Word belgesinde birden çok sınırsız düzenlenebilir bölgeye sahip olabilirsiniz. Bunu başarmak için birden fazla set oluşturabilirsiniz.`EditableRangeStart` Ve`EditableRangeEnd` kullanan nesneler`DocumentBuilder` sınıf. Her nesne grubu, kullanıcıların herhangi bir kısıtlama olmaksızın içeriği değiştirebileceği ayrı bir düzenlenebilir bölge tanımlayacaktır.
+C: Evet, bir Word belgesinde birden fazla sınırsız düzenlenebilir bölgeye sahip olabilirsiniz. Bunu başarmak için birden fazla set oluşturabilirsiniz.`EditableRangeStart` Ve`EditableRangeEnd` kullanarak nesneler`DocumentBuilder` sınıf. Her nesne kümesi, kullanıcıların içeriği herhangi bir kısıtlama olmaksızın değiştirebileceği ayrı bir düzenlenebilir bölge tanımlayacaktır.
 
 #### S: Düzenlenebilir bölgeleri iç içe yerleştirebilir miyim?
 
- C: Hayır, düzenlenebilir bölgeleri Aspose.Words for .NET kullanarak iç içe geçiremezsiniz. tarafından tanımlanan her bir düzenlenebilir bölge`EditableRangeStart` Ve`EditableRangeEnd` çifti bağımsız olmalı ve başka bir düzenlenebilir bölge içinde çakışmamalı veya iç içe olmamalıdır. İç içe düzenlenebilir bölgeler desteklenmez.
+ C: Hayır, Aspose.Words for .NET'i kullanarak düzenlenebilir bölgeleri iç içe yerleştiremezsiniz. Bir tarafından tanımlanan her düzenlenebilir bölge`EditableRangeStart` Ve`EditableRangeEnd` çifti bağımsız olmalı ve çakışmamalı veya başka bir düzenlenebilir bölge içinde yuvalanmamalıdır. İç içe düzenlenebilir bölgeler desteklenmez.
 
-#### S: Düzenlenebilir bir bölge içinde belgeden salt okunur korumayı kaldırabilir miyim?
+#### S: Düzenlenebilir bir bölge içindeki belgeden salt okunur korumayı kaldırabilir miyim?
 
-C: Hayır, düzenlenebilir bir bölge içinde belgeden salt okunur korumayı kaldıramazsınız. Salt okunur koruma belgenin tamamına uygulanır ve belirli düzenlenebilir bölgelerden seçilerek kaldırılamaz. Düzenlenebilir bölgelerin amacı, genel belgeyi salt okunur tutarken içerik değişikliğine izin vermektir.
+C: Hayır, düzenlenebilir bir bölge içindeki belgeden salt okunur korumayı kaldıramazsınız. Salt okunur koruma belgenin tamamına uygulanır ve belirli düzenlenebilir bölgeler içerisinde seçime bağlı olarak kaldırılamaz. Düzenlenebilir bölgelerin amacı, belgenin tamamını salt okunur halde tutarken içerik değişikliğine izin vermektir.

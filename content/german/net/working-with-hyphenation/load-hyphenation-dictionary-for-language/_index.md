@@ -40,7 +40,7 @@ Speichern Sie abschließend das geänderte Dokument:
 doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
-So ! Sie haben erfolgreich ein Silbentrennungswörterbuch für eine bestimmte Sprache in Aspose.Words für .NET geladen.
+Also ! Sie haben erfolgreich ein Silbentrennungswörterbuch für eine bestimmte Sprache in Aspose.Words für .NET geladen.
 
 ### Beispielquellcode für das Laden eines Silbentrennungswörterbuchs für eine Sprache mit Aspose.Words für .NET
 

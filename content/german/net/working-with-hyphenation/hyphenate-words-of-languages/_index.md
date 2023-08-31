@@ -51,7 +51,7 @@ Speichern Sie abschließend das geänderte Dokument:
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-So ! Sie haben Wörter erfolgreich verarbeitet, indem Sie sie in verschiedenen Sprachen in einem Word-Dokument mit Aspose.Words für .NET getrennt haben.
+Also ! Sie haben Wörter erfolgreich verarbeitet, indem Sie sie in verschiedenen Sprachen in einem Word-Dokument mit Aspose.Words für .NET getrennt haben.
 
 ### Beispielquellcode für die Worttrennung mit Aspose.Words für .NET
 

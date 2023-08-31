@@ -1,22 +1,22 @@
 ---
 title: Matematik Denklemleri
 linktitle: Matematik Denklemleri
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak Word belgelerinize nasıl matematik denklemleri ekleyeceğinizi öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET'i kullanarak Word belgelerinize matematik denklemlerini nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-officemath/math-equations/
 ---
 
-Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenlemek ve değiştirmek için güçlü bir kitaplıktır. Aspose.Words'ün sunduğu özellikler arasında, belgelerinize matematiksel denklemler ekleme imkanı vardır. Bu kılavuzda, bir Word belgesine matematik denklemleri eklemek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
+Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmaya, düzenlemeye ve işlemeye yönelik güçlü bir kitaplıktır. Aspose.Words'ün sunduğu özellikler arasında belgelerinize matematiksel denklemler ekleme olanağı da vardır. Bu kılavuzda, bir Word belgesine matematik denklemleri eklemek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
-## Aspose.Words kitaplığını anlama
+## Aspose.Words kütüphanesini anlama
 
-Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle Kelime İşlemeyi kolay ve verimli hale getiren popüler bir kütüphanedir. Matematiksel denklemler için destek de dahil olmak üzere Word belgeleri oluşturmak, düzenlemek ve değiştirmek için çok çeşitli özellikler sunar.
+Koda dalmadan önce .NET için Aspose.Words kütüphanesini anlamak önemlidir. Aspose.Words, Word belgeleriyle Kelime İşlemeyi kolay ve verimli hale getiren popüler bir kütüphanedir. Matematiksel denklem desteği de dahil olmak üzere Word belgelerini oluşturmak, düzenlemek ve değiştirmek için çok çeşitli özellikler sunar.
 
 ## Word belgesini yükleme
 
-İlk adım, bir matematik denklemi eklemek istediğiniz Word belgesini yüklemektir. Belgeyi kaynak dosyadan yüklemek için Document sınıfını kullanın. İşte bir örnek :
+İlk adım, matematik denklemi eklemek istediğiniz Word belgesini yüklemektir. Belgeyi kaynak dosyadan yüklemek için Document sınıfını kullanın. İşte bir örnek :
 
 ```csharp
 Document doc = new Document(dataDir + "Office math.docx");
@@ -32,29 +32,29 @@ Belge yüklendikten sonra belgedeki OfficeMath öğesine erişebilirsiniz. Offic
 OfficeMath officeMath = (OfficeMath)doc.GetChild(NodeType.OfficeMath, 0, true);
 ```
 
-Bu örnekte, belgedeki ilk OfficeMath öğesini alıyoruz.
+Bu örnekte belgedeki ilk OfficeMath öğesini alıyoruz.
 
-## Matematik Denklem Özelliklerini Yapılandırma
+## Matematik Denklemi Özelliklerini Yapılandırma
 
-OfficeMath nesne özelliklerini kullanarak matematik denkleminin çeşitli özelliklerini yapılandırabilirsiniz. Örneğin, matematik denkleminin görüntülenme tipini DisplayType özelliğini kullanarak ayarlayabilirsiniz. İşte bir örnek :
+OfficeMath nesne özelliklerini kullanarak matematik denkleminin çeşitli özelliklerini yapılandırabilirsiniz. Örneğin, DisplayType özelliğini kullanarak matematik denkleminin görüntüleme türünü ayarlayabilirsiniz. İşte bir örnek :
 
 ```csharp
 officeMath.DisplayType = OfficeMathDisplayType.Display;
 ```
 
-Bu örnekte, matematik denkleminin görüntü tipini "Ekran" olarak ayarladık, bu, denklemin kendi satırında görüntüleneceği anlamına gelir.
+Bu örnekte matematik denkleminin görüntü tipini "Görüntüle" olarak ayarladık, bu da denklemin kendi satırında görüntüleneceği anlamına geliyor.
 
-Benzer şekilde, Yaslama özelliğini kullanarak matematik denkleminin hizalamasını ayarlayabilirsiniz. İşte bir örnek :
+Benzer şekilde Gerekçe özelliğini kullanarak matematik denkleminin hizalamasını ayarlayabilirsiniz. İşte bir örnek :
 
 ```csharp
 officeMath.Justification = OfficeMathJustification.Left;
 ```
 
-Bu örnekte, matematik denkleminin hizalamasını sola ayarladık.
+Bu örnekte matematik denkleminin hizalamasını sola ayarladık.
 
 ## Belgeyi matematiksel denklemle kaydetme
 
-Matematiksel denklemin özelliklerini yapılandırdıktan sonra, değiştirilen belgeyi Document sınıfının Save yöntemini kullanarak kaydedebilirsiniz. İşte bir örnek :
+Matematiksel denklemin özelliklerini yapılandırdıktan sonra, değiştirilen belgeyi Document sınıfının Kaydet yöntemini kullanarak kaydedebilirsiniz. İşte bir örnek :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx
@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## Çözüm
 
-Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesine matematik denklemleri eklemek için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Sağlanan adımları izleyerek, C# uygulamanızda Word belgelerinize kolayca matematik denklemleri ekleyebilirsiniz. Aspose.Words, profesyonel, iyi biçimlendirilmiş belgeler oluşturmanıza izin vererek matematiksel denklemlerle Kelime İşleme için muazzam esneklik ve güç sunar.
+Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesine matematik denklemleri eklemek için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Verilen adımları takip ederek C# uygulamanızdaki Word belgelerinize kolaylıkla matematik denklemleri ekleyebilirsiniz. Aspose.Words, matematiksel denklemlerle Kelime İşleme için muazzam bir esneklik ve güç sunarak profesyonel, iyi biçimlendirilmiş belgeler oluşturmanıza olanak tanır.

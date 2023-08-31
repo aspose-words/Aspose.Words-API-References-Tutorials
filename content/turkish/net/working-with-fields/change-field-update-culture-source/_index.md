@@ -1,21 +1,21 @@
 ---
-title: Alanı Değiştir Kültür Kaynağını Güncelle
-linktitle: Alanı Değiştir Kültür Kaynağını Güncelle
-second_title: Aspose.Words Belge İşleme API'sı
-description: Alanı Değiştir Kültür Kaynağını Güncelle, Aspose.Words for .NET'te kültür kaynağını değiştirmek için adım adım kılavuz.
+title: Alan Güncelleme Kültür Kaynağını Değiştir
+linktitle: Alan Güncelleme Kültür Kaynağını Değiştir
+second_title: Aspose.Words Belge İşleme API'si
+description: Alan Güncelleme Kültür Kaynağını Değiştir, Aspose.Words for .NET'te kültür kaynağını değiştirmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/change-field-update-culture-source/
 ---
 
-Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerindeki alan güncelleme kültürü kaynağını değiştirme sürecinde size rehberlik edeceğiz. Kültür kaynağını değiştirerek, alan güncelleme ve adres mektup birleştirme işlemleri sırasında tarih biçimlendirmesini kontrol edebilirsiniz. Bunu başarmak için size gerekli C# kaynak kodunu ve adım adım yönergeleri sağlayacağız.
+Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerindeki alan güncelleme kültürü kaynağını değiştirme sürecinde size rehberlik edeceğiz. Kültür kaynağını değiştirerek, alan güncelleme ve adres-mektup birleştirme işlemleri sırasında tarih formatını kontrol edebilirsiniz. Bunu başarmak için size gerekli C# kaynak kodunu ve adım adım talimatları sağlayacağız.
 
 ## Önkoşullar
-Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
-- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
+Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kütüphanesi sisteminizde kuruludur.
 
-## 1. Adım: Bir Belge ve DocumentBuilder Oluşturun
-Başlamak için Document sınıfının bir örneğini ve DocumentBuilder nesnesini oluşturun:
+## 1. Adım: Bir Document ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfının bir örneğini ve bir DocumentBuilder nesnesini oluşturun:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,8 +23,8 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Belirli Yerel Ayarla İçeriği Ekleyin
-Ardından, yerel ayarı Almanca olarak ayarlayın ve tarih biçimlendirmeli alanlar ekleyin:
+## 2. Adım: Belirli Yerel Ayara Sahip İçerik Ekleme
+Daha sonra yerel ayarı Almanca olarak ayarlayın ve tarih biçimlendirmesine sahip alanlar ekleyin:
 
 ```csharp
 builder.Font.LocaleId = 1031;
@@ -33,35 +33,35 @@ builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-Yukarıdaki kodda, yazı tipi yerel ayarını Almanca (yerel ayar kimliği 1031) olarak ayarlıyoruz ve belirli tarih biçimlendirmesiyle iki alan ekliyoruz.
+Yukarıdaki kodda yazı tipi yerel ayarını Almanca (yerel ayar ID 1031) olarak ayarladık ve belirli tarih formatına sahip iki alan ekledik.
 
-## 3. Adım: Alanı Değiştir Kültür Kaynağını Güncelleyin
+## 3. Adım: Alan Güncelleme Kültürü Kaynağını Değiştirin
 Alan güncelleme kültürü kaynağını değiştirmek için FieldOptions sınıfını kullanın:
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
 
-Bu örnekte, alan tarafından kullanılan kültürden seçilecek alan güncellemesi sırasında kullanılan kültürü ayarladık.
+Bu örnekte, alan güncellemesi sırasında kullanılan kültürü, alanın kullandığı kültürden seçilecek şekilde ayarladık.
 
-## Adım 4: Adres Mektup Birleştirme Gerçekleştirin
-Bir adres-mektup birleştirme işlemi gerçekleştirin ve "Tarih2" alanı için tarih değerini belirtin:
+## 4. Adım: Adres Mektup Birleştirmeyi Gerçekleştirin
+Adres-mektup birleştirme işlemi gerçekleştirin ve "Tarih2" alanı için tarih değerini belirtin:
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
 
-Bu kod parçacığında adres-mektup birleştirme işlemini yürütüyoruz ve "Date2" alanı için bir DateTime değeri veriyoruz.
+Bu kod parçasında adres-mektup birleştirme işlemini gerçekleştirip "Date2" alanına DateTime değeri sağlıyoruz.
 
-## 5. Adım: Belgeyi Kaydedin
-Değiştirilen belgeyi Document sınıfının Save yöntemini kullanarak bir dosyaya kaydedin:
+## Adım 5: Belgeyi Kaydedin
+Değiştirilen belgeyi, Document sınıfının Save yöntemini kullanarak bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
-### Aspose.Words for .NET kullanarak Alan Güncelleme Kültür Kaynağını Değiştirmek için Örnek Kaynak Kodu
-Aspose.Words for .NET kullanarak Word belgelerinde alan güncelleme kültürü kaynağını değiştirmek için eksiksiz kaynak kodu burada:
+### Aspose.Words for .NET Kullanarak Alan Güncelleme Kültürü Kaynağını Değiştirmek için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak Word belgelerindeki alan güncelleme kültürü kaynağını değiştirmek için tam kaynak kodu:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -81,22 +81,22 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## Çözüm
-Tebrikler! Aspose.Words for .NET kullanarak Word belgelerinde alan güncelleme kültürü kaynağını nasıl değiştireceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak, alan güncelleme ve adres mektup birleştirme işlemleri sırasında tarih biçimlendirme için kullanılan kültürü artık kontrol edebilirsiniz. Doğru ve tutarlı tarih sağlamak için kültür kaynağını gereksinimlerinize göre özelleştirin.
+Tebrikler! Aspose.Words for .NET'i kullanarak Word belgelerindeki alan güncelleme kültürü kaynağını nasıl değiştireceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak, artık alan güncelleme ve adres-mektup birleştirme işlemleri sırasında tarih biçimlendirmesi için kullanılan kültürü kontrol edebilirsiniz. Doğru ve tutarlı tarih sağlamak için kültür kaynağını gereksinimlerinize göre özelleştirin.
 
-### SSS
+### SSS'ler
 
 #### S: Aspose.Words for .NET'te alan güncelleme kültürü kaynağını nasıl değiştirebilirim?
 
- Y: Aspose.Words for .NET'te alan güncelleme kültürü kaynağını değiştirmek için`Document.FieldOptions.CultureSource` özellik ve değerini olarak ayarlayın`FieldCultureSource.FieldCode` veya`FieldCultureSource.CurrentThread` . Örneğin, kullanabilirsiniz`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` alan kodunda tanımlanan kültürü kullanmak için.
+ C: Aspose.Words for .NET'te alan güncelleme kültürü kaynağını değiştirmek için`Document.FieldOptions.CultureSource` özelliği ve değerini şu şekilde ayarlayın:`FieldCultureSource.FieldCode` veya`FieldCultureSource.CurrentThread` . Örneğin, kullanabilirsiniz`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` alan kodunda tanımlanan kültürü kullanmak için.
 
 #### S: Aspose.Words for .NET'te alanları güncellemek için belirli bir kültürü nasıl belirleyebilirim?
 
-C: Aspose.Words for .NET'te alanları güncellemek için belirli bir kültür belirtmek üzere`Document.FieldOptions.FieldUpdateCultureInfo` özelliğini ayarlayın ve`CultureInfo` istenen kültüre karşılık gelen nesne. Örneğin, kullanabilirsiniz`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` Fransız (Fransa) kültürünü belirtmek için.
+C: Aspose.Words for .NET'te alanları güncellemek için belirli bir kültür belirlemek amacıyla`Document.FieldOptions.FieldUpdateCultureInfo` özelliği ayarlayın ve`CultureInfo` İstenilen kültüre karşılık gelen nesne. Örneğin, kullanabilirsiniz`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` Fransız (Fransa) kültürünü belirtmek için.
 
-#### S: Aspose.Words for .NET'te otomatik alan güncellemesini devre dışı bırakmak mümkün mü?
+#### S: Aspose.Words for .NET'te otomatik alan güncellemeyi devre dışı bırakmak mümkün mü?
 
- C: Evet, Aspose.Words for .NET'te otomatik alan güncellemesini devre dışı bırakmak mümkündür. kullanabilirsiniz`Document.FieldOptions.UpdateFields` özellik ve bunu ayarlayın`false` alanların otomatik güncellenmesini önlemek için. Bu, alanların güncellenmesini gerektiği şekilde manuel olarak kontrol etmenizi sağlar.
+ C: Evet, Aspose.Words for .NET'te otomatik alan güncellemeyi devre dışı bırakmak mümkündür. Şunu kullanabilirsiniz:`Document.FieldOptions.UpdateFields` özelliği ve bunu şu şekilde ayarlayın:`false` Alanların otomatik güncellenmesini önlemek için. Bu, alanların güncellenmesini gerektiği gibi manuel olarak kontrol etmenize olanak tanır.
 
 #### S: Aspose.Words for .NET'te belge alanlarını manuel olarak nasıl güncelleyebilirim?
 
- C: Aspose.Words for .NET'te bir belgedeki alanları manuel olarak güncellemek için`Field.Update` her alan için ayrı ayrı yöntem. Örneğin, kullanabilirsiniz`field.Update()` belirli alanı güncellemek için.
+ C: Aspose.Words for .NET'te bir belgedeki alanları manuel olarak güncellemek için`Field.Update` Her alan için ayrı ayrı yöntem. Örneğin, kullanabilirsiniz`field.Update()` Belirli bir alanı güncellemek için.

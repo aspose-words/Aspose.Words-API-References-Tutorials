@@ -12,6 +12,6 @@ url: /zh/net/working-with-hyphenation/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [用连字符连接语言单词](./hyphenate-words-of-languages/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中用连字符连接不同语言的单词。 |
+| [用连字符连接语言单词](./hyphenate-words-of-languages/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中对不同语言的单词进行连字符。 |
 | [加载语言的连字词典](./load-hyphenation-dictionary-for-language/) |了解如何在 Aspose.Words for .NET 中加载特定语言的连字词典。 |
 | [连字符回调](./hyphenation-callback/) | 了解如何在 Aspose.Words for .NET 中使用连字符回调来处理单词连字符。 |

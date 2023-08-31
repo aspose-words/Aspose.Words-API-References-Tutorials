@@ -289,7 +289,7 @@ Ja, während sich Aspose.Words hauptsächlich auf Word-Dokumente (DOCX) konzentr
 Ja, Aspose.Words ist vollständig kompatibel mit Python 3.x-Versionen, sodass Benutzer die neuesten Funktionen und Verbesserungen von Python nutzen können.
 
 ### Wie oft aktualisiert Aspose seine Bibliotheken?
-Aspose aktualisiert seine Bibliotheken regelmäßig, um neue Funktionen hinzuzufügen, die Leistung zu verbessern und alle gemeldeten Probleme zu beheben. Benutzer können über die neuesten Verbesserungen auf dem Laufenden bleiben, indem sie auf der offiziellen Aspose-Website nach Updates suchen.
+Aspose aktualisiert seine Bibliotheken regelmäßig, um neue Funktionen hinzuzufügen, die Leistung zu verbessern und alle gemeldeten Probleme zu beheben. Benutzer können über die neuesten Verbesserungen auf dem Laufenden bleiben, indem sie auf der Aspose-Website nach Updates suchen.
 
 ### Kann Aspose.Words für die Dokumentübersetzung verwendet werden?
 Während sich Aspose.Words hauptsächlich auf Dokumentverarbeitungsaufgaben konzentriert, kann es in andere Übersetzungs-APIs oder Bibliotheken integriert werden, um die Funktionalität der Dokumentübersetzung zu erreichen.

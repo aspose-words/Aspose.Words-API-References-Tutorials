@@ -1,31 +1,31 @@
 ---
-title: Crittografa documento con password
-linktitle: Crittografa documento con password
-second_title: Aspose.Words API di elaborazione dei documenti
+title: Crittografa il documento con password
+linktitle: Crittografa il documento con password
+second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come crittografare i documenti con una password utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-La sicurezza dei documenti è essenziale durante l'elaborazione di testi con i file in un'applicazione C#. Con la libreria Aspose.Words per .NET, puoi proteggere facilmente i tuoi documenti crittografandoli con una password. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per crittografare un documento utilizzando le opzioni di salvataggio di DocSaveOptions.
+La sicurezza dei documenti è essenziale durante l'elaborazione di parole con file in un'applicazione C#. Con la libreria Aspose.Words per .NET, puoi facilmente proteggere i tuoi documenti crittografandoli con una password. In questa guida passo passo, ti spiegheremo come utilizzare Aspose.Words per il codice sorgente .NET C# per crittografare un documento utilizzando le opzioni di salvataggio DocSaveOptions.
 
 ## Comprensione della libreria Aspose.Words
 
-Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una potente libreria per creare, modificare, convertire e proteggere documenti Word in diverse piattaforme, incluso .NET. Offre molte funzionalità per la manipolazione dei documenti, come l'inserimento di testo, la modifica della formattazione, l'aggiunta di sezioni e molto altro.
+Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una potente libreria per creare, modificare, convertire e proteggere documenti Word in diverse piattaforme tra cui .NET. Offre molte funzionalità per la manipolazione dei documenti, come l'inserimento di testo, la modifica della formattazione, l'aggiunta di sezioni e molto altro.
 
 ## Passaggio 1: definizione della directory dei documenti
 
-Il primo passaggio consiste nell'impostare la directory in cui si desidera salvare il documento crittografato. È necessario specificare il percorso completo della directory. Per esempio :
+Il primo passo è impostare la directory in cui desideri salvare il documento crittografato. È necessario specificare il percorso completo della directory. Per esempio :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
+Assicurati di sostituire "LA TUA DIRECTORY DOCUMENTI" con il percorso effettivo della directory dei documenti.
 
 ## Passaggio 2: creazione e modifica di un documento
 
-Quindi puoi creare un documento e aggiungervi del contenuto. Usa la classe DocumentBuilder fornita da Aspose.Words per costruire il contenuto del tuo documento. Per esempio :
+Quindi puoi creare un documento e aggiungervi contenuto. Utilizza la classe DocumentBuilder fornita da Aspose.Words per creare il contenuto del tuo documento. Per esempio :
 
 ```csharp
 Document doc = new Document();
@@ -34,9 +34,9 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Hello world!");
 ```
 
-In questo esempio, creiamo un nuovo documento vuoto e quindi utilizziamo DocumentBuilder per scrivere il testo "Hello World!".
+In questo esempio creiamo un nuovo documento vuoto e quindi utilizziamo DocumentBuilder per scrivere il testo "Hello World!".
 
-## Passaggio 3: configurare le opzioni di registrazione
+## Passaggio 3: configura le opzioni di registrazione
 
 Ora configuriamo le opzioni di salvataggio per il nostro documento. Utilizzare la classe DocSaveOptions per specificare le impostazioni di salvataggio. Per esempio :
 
@@ -44,15 +44,15 @@ Ora configuriamo le opzioni di salvataggio per il nostro documento. Utilizzare l
 DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 ```
 
-In questo esempio, creiamo un nuovo oggetto DocSaveOptions e impostiamo la proprietà Password su "password" per crittografare il documento con questa password.
+In questo esempio creiamo un nuovo oggetto DocSaveOptions e impostiamo la proprietà Password su "password" per crittografare il documento con questa password.
 
-## Passaggio 4: abilitazione della funzione "Crittografa documento con password".
+## Passaggio 4: abilitare la funzione "Crittografa documento con password".
 
 Abbiamo già configurato le opzioni per
 
-registrazione con la password specificata, che attiva automaticamente la funzione "Crittografa documento con password". Ciò garantisce che il documento sia crittografato con la password specificata al momento del salvataggio.
+registrazione con la password specificata, che attiva automaticamente la funzione "Crittografa documento con password". Ciò garantisce che il documento venga crittografato con la password specificata al momento del salvataggio.
 
-## Passaggio 5: salvare il documento
+## Passaggio 5: salvataggio del documento
 
 Infine, puoi salvare il documento utilizzando il metodo Save della classe Document. Specificare il percorso completo del file e il nome del file desiderato. Per esempio :
 
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 Assicurati di sostituire "dataDir" con il percorso della directory dei tuoi documenti.
 
-### Codice sorgente di esempio per DocSaveOptions salva le opzioni con la funzionalità "Crittografa documento con password" utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per le opzioni di salvataggio di DocSaveOptions con la funzionalità "Crittografa documento con password" utilizzando Aspose.Words per .NET
 
 ```csharp
 // Percorso della directory dei documenti
@@ -77,10 +77,10 @@ builder.Write("Hello world!");
 // Configura le opzioni di salvataggio con la funzione "Crittografa documento con password".
 DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 
-// Salva il documento con le opzioni specificate
+// Salvare il documento con le opzioni specificate
 doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);
 ```
 
 ## Conclusione
 
-In questa guida, abbiamo spiegato come utilizzare la libreria Aspose.Words per .NET per crittografare un documento con una password utilizzando le opzioni di salvataggio di DocSaveOptions. Seguendo i passaggi forniti e usando il codice sorgente C# fornito, puoi facilmente applicare questa funzionalità nella tua applicazione C#. La crittografia del documento con una password ne garantisce la riservatezza e la sicurezza durante la sua gestione.
+In questa guida, abbiamo spiegato come utilizzare la libreria Aspose.Words per .NET per crittografare un documento con una password utilizzando le opzioni di salvataggio DocSaveOptions. Seguendo i passaggi forniti e utilizzando il codice sorgente C# fornito, puoi applicare facilmente questa funzionalità nella tua applicazione C#. La crittografia del documento con una password ne garantisce la riservatezza e la sicurezza durante la gestione.

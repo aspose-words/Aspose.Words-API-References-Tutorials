@@ -64,7 +64,7 @@ In diesem Tutorial haben Sie erfahren, wie Sie bei der Verwendung von Aspose.Wor
 
 #### F: Wie kann ich Warnmeldungen in Aspose.Words erhalten?
 
- A: Um Warnmeldungen in Aspose.Words zu erhalten, können Sie die verwenden`FontSettings` Klasse und die`WarningCallback` Fall. Sie können eine Rückrufmethode definieren, die benachrichtigt wird, wenn bei der Verarbeitung von Dokumenten schriftartbezogene Warnungen auftreten.
+ A: Um Warnmeldungen in Aspose.Words zu erhalten, können Sie die verwenden`FontSettings` Klasse und die`WarningCallback` Ereignis. Sie können eine Rückrufmethode definieren, die benachrichtigt wird, wenn bei der Verarbeitung von Dokumenten schriftartbezogene Warnungen auftreten.
 
 #### F: Was sind die häufigsten Arten von Warnungen im Zusammenhang mit Schriftarten in Aspose.Words?
 

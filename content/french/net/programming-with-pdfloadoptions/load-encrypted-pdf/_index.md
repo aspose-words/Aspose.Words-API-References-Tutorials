@@ -1,20 +1,20 @@
 ---
-title: Charger le PDF crypté
-linktitle: Charger le PDF crypté
+title: Charger un PDF crypté
+linktitle: Charger un PDF crypté
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour charger un PDF crypté à l'aide d'Aspose.Words pour .NET.
+description: Guide étape par étape pour charger un PDF crypté à l'aide d'Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 
-Lors du traitement de texte avec des documents PDF dans votre application .NET, il peut être nécessaire de charger des fichiers PDF protégés par un mot de passe. Aspose.Words pour .NET est une bibliothèque puissante qui fournit des fonctionnalités pour le chargement de documents PDF cryptés. Dans cet article, nous allons vous guider étape par étape pour comprendre et utiliser cette fonctionnalité.
+Lors du traitement de texte avec des documents PDF dans votre application .NET, il peut être nécessaire de charger des fichiers PDF protégés par mot de passe. Aspose.Words for .NET est une bibliothèque puissante qui fournit des fonctionnalités permettant de charger des documents PDF cryptés. Dans cet article, nous vous guiderons étape par étape pour comprendre et utiliser cette fonctionnalité.
 
-## Comprendre la fonctionnalité de chargement de PDF crypté
+## Comprendre la fonctionnalité Charger un PDF crypté
 
-La fonction Charger un PDF crypté d'Aspose.Words pour .NET vous permet de charger des fichiers PDF protégés par un mot de passe. Vous pouvez spécifier le mot de passe lors du chargement du document afin de pouvoir accéder à son contenu et le manipuler au besoin.
+La fonctionnalité Charger un PDF crypté d'Aspose.Words for .NET vous permet de charger des fichiers PDF protégés par mot de passe. Vous pouvez spécifier le mot de passe lors du chargement du document afin de pouvoir accéder à son contenu et le manipuler selon vos besoins.
 
-## Étape 1 : Chargement du document PDF crypté
+## Étape 1 : Chargement du document PDF crypté
 
 La première étape consiste à charger le document PDF crypté dans votre application. Voici comment procéder :
 
@@ -24,9 +24,9 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```
 
- Assurez-vous de spécifier le chemin d'accès correct au fichier PDF crypté dans le`dataDir` variable.
+ Assurez-vous de spécifier le chemin correct vers le fichier PDF crypté dans le`dataDir` variable.
 
-## Étape 2 : chiffrement du document PDF
+## Étape 2 : Cryptage du document PDF
 
  Si vous souhaitez également crypter votre document PDF, vous pouvez le faire en utilisant le`PdfSaveOptions` classe et en spécifiant les détails de chiffrement :
 
@@ -40,7 +40,7 @@ EncryptionDetails = new PdfEncryptionDetails("Aspose", null)
 
 Cela créera une version cryptée du document PDF dans le répertoire spécifié.
 
-## Étape 3 : Enregistrement du document PDF crypté
+## Étape 3 : Enregistrement du document PDF crypté
 
 Après avoir téléchargé et éventuellement crypté le document PDF, vous pouvez l'enregistrer dans un autre format ou le traiter davantage en fonction de vos besoins spécifiques.
 
@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions
 
 Entretien
 
- Cependant, si vous souhaitez charger le document PDF crypté avec un mot de passe, vous devez utiliser le`PdfLoadOptions` class et indiquez le mot de passe lors du chargement du document :
+ Cependant, si vous souhaitez charger le document PDF crypté avec un mot de passe, vous devez utiliser le`PdfLoadOptions` classe et précisez le mot de passe lors du chargement du document :
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadFormat = LoadFormat.Pdf };
@@ -66,7 +66,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ```csharp
 
-	// Chemin d'accès au répertoire des documents.
+	// Le chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Pdf Document.pdf");
 
@@ -85,6 +85,6 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## Conclusion
 
-Dans cet article, nous avons exploré comment utiliser la fonction Charger un PDF crypté d'Aspose.Words pour .NET. Vous avez appris à télécharger des fichiers PDF cryptés, à crypter un document PDF, à télécharger un PDF crypté avec un mot de passe et à générer une sortie au format Markdown. Cette fonctionnalité est extrêmement utile lors du traitement de texte avec des documents PDF sécurisés.
+Dans cet article, nous avons exploré comment utiliser la fonctionnalité Charger un PDF crypté d'Aspose.Words pour .NET. Vous avez appris comment télécharger des fichiers PDF cryptés, comment crypter un document PDF, comment télécharger un PDF crypté avec un mot de passe et comment générer une sortie au format Markdown. Cette fonctionnalité est extrêmement utile lors du traitement de texte avec des documents PDF sécurisés.
 
 

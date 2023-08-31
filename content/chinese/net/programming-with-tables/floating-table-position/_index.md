@@ -65,4 +65,4 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ```
 
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 将表格放置在 Word 文档中的浮动位置。通过遵循本分步指南并实现提供的 C# 代码，您可以以编程方式控制 Word 文档中浮动表格的位置和对齐方式。
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 将表格放置在 Word 文档中的浮动位置。通过遵循本分步指南并实现提供的 C# 代码，您可以通过编程方式控制 Word 文档中浮动表格的位置和对齐方式。

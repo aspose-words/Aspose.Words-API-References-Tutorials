@@ -1,74 +1,74 @@
 ---
-title: Bağlantı Başlıkları Alt Bilgiler
-linktitle: Bağlantı Başlıkları Alt Bilgiler
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak Word belgelerini birleştirirken ve eklerken üst bilgileri ve alt bilgileri nasıl bağlayacağınızı öğrenin.
+title: Bağlantı Başlıkları Altbilgileri
+linktitle: Bağlantı Başlıkları Altbilgileri
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak Word belgelerini birleştirirken ve eklerken üstbilgileri ve altbilgileri nasıl bağlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/link-headers-footers/
 ---
 
-Bu eğitim, Aspose.Words for .NET'in Bağlantı Başlıkları Alt Bilgiler özelliğini kullanma sürecinde size rehberlik edecektir. Bu özellik, kaynak belgenin üstbilgilerini ve altbilgilerini hedef belgedeki önceki bölüme bağlarken birden çok Word belgesini birleştirip eklemenize olanak tanır.
+Bu eğitim, Aspose.Words for .NET'in Bağlantı Başlıkları Altbilgileri özelliğini kullanma sürecinde size rehberlik edecektir. Bu özellik, kaynak belgenin üstbilgilerini ve altbilgilerini hedef belgedeki önceki bölüme bağlarken birden çok Word belgesini birleştirmenize ve eklemenize olanak tanır.
 
 ## Önkoşullar
 
-Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-1. Aspose.Words for .NET kurulu. Aspose web sitesinden indirebilir veya NuGet aracılığıyla kurabilirsiniz.
+1. Aspose.Words for .NET kuruldu. Aspose web sitesinden indirebilir veya NuGet aracılığıyla yükleyebilirsiniz.
 2. Visual Studio veya başka herhangi bir C# geliştirme ortamı.
 
-## 1. Adım: Belge Dizinlerini Başlatın
+## Adım 1: Belge Dizinlerini Başlatın
 
- Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir`belgelerinizin bulunduğu yola değişken.
+ Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir`belgelerinizin bulunduğu yola göre değişkendir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 2. Adım: Kaynak ve Hedef Belgeleri Yükleyin
+## Adım 2: Kaynak ve Hedef Belgelerini Yükleyin
 
- Ardından, Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. içindeki dosya adlarını güncelleyin.`Document` belge adlarınıza göre yapıcı.
+ Daha sonra Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. Dosya adlarını güncelleyin`Document` belge adlarınıza göre yapıcı.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. Adım: Eklenen Belgeyi Yeni Bir Sayfada Görünecek Şekilde Ayarlayın
+## 3. Adım: Eklenen Belgeyi Yeni Sayfada Görünecek Şekilde Ayarlayın
 
- Kaynak belgedeki içeriğin hedef belgede yeni bir sayfada görünmesini sağlamak için,`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.NewPage`.
+ Kaynak belgedeki içeriğin hedef belgedeki yeni bir sayfada görünmesini sağlamak için`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## 4. Adım: Üstbilgileri ve Altbilgileri Önceki Bölüme Bağlayın
+## Adım 4: Üstbilgileri ve Altbilgileri Önceki Bölüme Bağlayın
 
- Kaynak belgenin üstbilgilerini ve altbilgilerini hedef belgedeki bir önceki bölüme bağlamak için`LinkToPrevious` yöntemi`HeadersFooters` Toplamak. geçerek`true` parametre olarak, kaynak belgedeki mevcut üst bilgileri veya alt bilgileri geçersiz kılarsınız.
+ Kaynak belgenin üstbilgilerini ve altbilgilerini hedef belgedeki önceki bölüme bağlamak için`LinkToPrevious` yöntemi`HeadersFooters` Toplamak. Geçerek`true` parametre olarak kaynak belgedeki mevcut üstbilgileri veya altbilgileri geçersiz kılarsınız.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 ```
 
-## Adım 5: Kaynak Belgeyi Hedef Belgeye Ekleyin
+## Adım 5: Kaynak Belgeyi Hedef Belgeye Ekleme
 
- Artık, kaynak belgeyi hedef belgeye aşağıdakileri kullanarak ekleyebilirsiniz:`AppendDocument` yöntemi`Document` sınıf. bu`ImportFormatMode.KeepSourceFormatting` parametresi, ekleme işlemi sırasında kaynak formatının korunmasını sağlar.
+ Artık kaynak belgeyi hedef belgeye aşağıdaki komutu kullanarak ekleyebilirsiniz:`AppendDocument` yöntemi`Document` sınıf.`ImportFormatMode.KeepSourceFormatting` parametresi ekleme işlemi sırasında kaynak formatının korunmasını sağlar.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 6. Adım: Nihai Belgeyi Kaydedin
+## Adım 6: Son Belgeyi Kaydedin
 
- Son olarak, birleştirilmiş belgeyi bağlantılı üstbilgiler ve altbilgilerle birlikte kaydedin.`Save` yöntemi`Document` sınıf.
+ Son olarak, birleştirilmiş belgeyi bağlantılı üstbilgiler ve altbilgilerle birlikte şunu kullanarak kaydedin:`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 ```
 
-### Aspose.Words for .NET kullanan Bağlantı Üstbilgileri Altbilgileri için örnek kaynak kodu 
+### Aspose.Words for .NET kullanan Bağlantı Başlıkları Altbilgileri için örnek kaynak kodu 
 
-Aspose.Words for .NET kullanan C# dilindeki "Üstbilgileri Altbilgileri Bağla" özelliğinin tam kaynak kodu burada:
+Aspose.Words for .NET kullanan C#'taki "Bağlantı Başlıkları Altbilgileri" özelliğinin tam kaynak kodu:
 
 
 ```csharp
@@ -77,13 +77,13 @@ Aspose.Words for .NET kullanan C# dilindeki "Üstbilgileri Altbilgileri Bağla" 
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Eklenen belgeyi yeni bir sayfada görünecek şekilde ayarlayın.
+	// Eklenen belgeyi yeni sayfada görünecek şekilde ayarlayın.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	// Kaynak belgedeki üst bilgileri ve alt bilgileri önceki bölüme bağlayın.
-	// Bu, kaynak belgede zaten bulunan üst bilgileri veya alt bilgileri geçersiz kılar.
+	// Kaynak belgedeki üstbilgileri ve altbilgileri önceki bölüme bağlayın.
+	// Bu, kaynak belgede zaten bulunan tüm üstbilgileri veya altbilgileri geçersiz kılacaktır.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 ```
 
-Bu kadar! Aspose.Words for .NET'i kullanarak Bağlantı Başlıkları Alt Bilgiler özelliğini başarıyla uyguladınız. Nihai belge, hedef belgedeki önceki bölüme bağlı kaynak belgedeki üstbilgiler ve altbilgilerle birleştirilmiş içeriği içerecektir.
+Bu kadar! Aspose.Words for .NET'i kullanarak Bağlantı Başlıkları Altbilgileri özelliğini başarıyla uyguladınız. Nihai belge, hedef belgedeki önceki bölüme bağlanan kaynak belgedeki üstbilgiler ve altbilgilerle birleştirilmiş içeriği içerecektir.

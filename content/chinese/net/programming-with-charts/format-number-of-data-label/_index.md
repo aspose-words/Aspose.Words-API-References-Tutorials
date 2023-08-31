@@ -70,7 +70,7 @@ series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-这样就完成了使用 Aspose.Words for .NET 格式化图表中数据标签数量的实现。
+这样就完成了使用 Aspose.Words for .NET 对图表中数据标签数量进行格式化的实现。
 
 ### 使用 Aspose.Words for .NET 设置数据标签数量格式的示例源代码 
 

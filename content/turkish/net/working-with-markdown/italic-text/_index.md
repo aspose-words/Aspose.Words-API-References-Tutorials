@@ -1,26 +1,26 @@
 ---
 title: İtalik Metin
 linktitle: İtalik Metin
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET Adım adım kılavuz ile metni italik yapmayı öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile metni italik yapmayı öğrenin. Adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/italic-text/
 ---
 
-Bu örnekte, italik metin özelliğini Aspose.Words for .NET ile nasıl kullanacağınız konusunda size yol göstereceğiz. İtalik metin, bir belgenin belirli bölümlerini vurgulamak için kullanılır.
+Bu örnekte italik metin özelliğinin Aspose.Words for .NET ile nasıl kullanılacağını size anlatacağız. İtalik metin, bir belgenin belirli bölümlerini vurgulamak için kullanılır.
 
-## 1. Adım: Bir belge oluşturucu kullanma
+## 1. Adım: Belge oluşturucuyu kullanma
 
-İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
+Öncelikle belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. Adım: Metni İtalik Yap
+## Adım 2: Metni İtalik Hale Getirin
 
- Yazı tipini ayarlayarak metni italik hale getirebiliriz.`Italic` mülkiyet`true`.
+ Yazı tipini ayarlayarak metni italik hale getirebiliriz`Italic` mülkiyet`true`.
 
 ```csharp
 builder.Font.Italic = true;
@@ -31,7 +31,7 @@ builder.Writeln("This text will be in italics");
 
 
 ```csharp
-// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+// Belgeye içerik eklemek için belge oluşturucuyu kullanın.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Metni italik yapın.
@@ -39,19 +39,19 @@ builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
 
-Tebrikler! Artık italik metin özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
+Tebrikler! Artık Aspose.Words for .NET ile italik metin özelliğini nasıl kullanacağınızı öğrendiniz.
 
 
-### SSS
+### SSS'ler
 
 #### S: Aspose.Words'te metni nasıl italik hale getirebilirim?
 
-C: Aspose.Words'te metni italik yapmak için`Font.Italic` mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` belirli bir metni italik yapmak için. Örneğin, kullanabilirsiniz`run.Font.Italic=true` içindeki metni italik yapmak için`Run` nesne.
+C: Aspose.Words'te metni italik hale getirmek için`Font.Italic` mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metni italik hale getirmek için. Örneğin, kullanabilirsiniz`run.Font.Italic=true` içindeki metni italik hale getirmek için`Run` nesne.
 
-#### S: Aynı paragrafta birkaç metni italik yapmak mümkün mü?
+#### S: Aynı paragrafta birden fazla metin parçasını italik yapmak mümkün müdür?
 
- C: Evet, tek bir paragraftaki birden çok metni italik hale getirebilirsiniz.`Run` nesneler. birden fazla oluşturabilirsiniz`Run` nesneleri ayarlayın ve`Font.Italic` mülkiyet`true` metnin istenen kısımlarını italik yapmak için her nesne için. Ardından bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.
+ C: Evet, birden çok metin parçasını tek bir paragrafta birden fazla kullanarak italik hale getirebilirsiniz.`Run` nesneler. Birden fazla oluşturabilirsiniz`Run` nesneleri ayarlayın ve`Font.Italic` mülkiyet`true` Her nesne için metnin istenen bölümlerini italik hale getirmek. Daha sonra bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.
 
-#### S: Aspose.Words'te bir tablo veya hücrede bulunan metni italik yapabilir miyim?
+#### S: Aspose.Words'te bir tablo veya hücredeki metni italik hale getirebilir miyim?
 
- C: Evet, Aspose.Words'te bir tablo veya hücredeki metni italik yapabilirsiniz. Uygun yöntemleri kullanarak istediğiniz hücreye veya paragrafa gidebilir ve ardından italik biçimlendirmeyi kullanarak uygulayabilirsiniz.`Font.Italic` mülkiyeti`Run` veya`Paragraph` nesne.
+ C: Evet, Aspose.Words'te bir tablo veya hücredeki metni italik hale getirebilirsiniz. Uygun yöntemleri kullanarak istediğiniz hücreye veya paragrafa gidebilir ve ardından italik biçimlendirmeyi`Font.Italic` mülkiyeti`Run` veya`Paragraph` nesne.

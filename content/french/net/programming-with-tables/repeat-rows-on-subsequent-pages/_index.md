@@ -2,19 +2,19 @@
 title: Répéter les lignes sur les pages suivantes
 linktitle: Répéter les lignes sur les pages suivantes
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à répéter les lignes d'un tableau sur les pages suivantes d'un document Word avec Aspose.Words pour .NET.
+description: Découvrez comment répéter les lignes d'un tableau sur les pages suivantes d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-Dans ce didacticiel, nous allons apprendre à répéter les lignes d'un tableau sur les pages suivantes d'un document Word à l'aide de Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous serez en mesure de spécifier les lignes à répéter sur les pages suivantes de votre tableau dans vos documents Word.
+Dans ce didacticiel, nous apprendrons comment répéter les lignes d'un tableau sur les pages suivantes d'un document Word à l'aide d'Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous serez en mesure de spécifier les lignes à répéter sur les pages suivantes de votre tableau dans vos documents Word.
 
-## Étape 1 : configuration du projet
+## Étape 1 : Configuration du projet
 1. Lancez Visual Studio et créez un nouveau projet C#.
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
-## Etape 2 : Création du document et initialisation du générateur de document
+## Étape 2 : Création du document et initialisation du générateur de documents
 Pour démarrer le traitement de texte avec le document et le générateur de documents, procédez comme suit :
 
 ```csharp
@@ -28,16 +28,16 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Assurez-vous de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents.
+Assurez-vous de remplacer « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin réel d'accès à votre répertoire de documents.
 
-## Étape 3 : Construire le tableau avec des lignes répétées
+## Étape 3 : Construire le tableau avec des lignes répétées
 Ensuite, nous allons créer un tableau avec des lignes répétées sur les pages suivantes. Utilisez le code suivant :
 
 ```csharp
 // Début du tableau
 builder. StartTable();
 
-// Configuration des paramètres de la première ligne (lignes d'en-tête)
+// Configuration des paramètres de première ligne (lignes d'en-tête)
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
@@ -47,7 +47,7 @@ builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
 
-// Insérer la deuxième cellule de la première ligne
+// Insérez la deuxième cellule de la première ligne
 builder. InsertCell();
 builder.Writeln("Header line 2");
 builder. EndRow();
@@ -71,20 +71,20 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Ici, nous utilisons le générateur de documents pour créer un tableau avec deux lignes d'en-tête et plusieurs lignes de données. Le`RowFormat.HeadingFormat`Les paramètres sont utilisés pour marquer les lignes d'en-tête qui doivent être répétées sur les pages suivantes.
+ Ici, nous utilisons le générateur de documents pour créer un tableau avec deux lignes d'en-tête et plusieurs lignes de données. Le`RowFormat.HeadingFormat`les paramètres sont utilisés pour marquer les lignes d’en-tête qui doivent être répétées sur les pages suivantes.
 
-## Étape 4 : Enregistrer le document modifié
-Enfin NOUS
+## Étape 4 : Sauvegarde du document modifié
+Enfin les États-Unis
 
-  devez enregistrer le document modifié avec les lignes d'en-tête répétées sur les pages suivantes du tableau. Utilisez le code suivant :
+  Vous devez enregistrer le document modifié avec les lignes d'en-tête répétées sur les pages suivantes du tableau. Utilisez le code suivant :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour le document de sortie.
+Assurez-vous de spécifier le chemin et le nom de fichier corrects pour le document de sortie.
 
-### Exemple de code source pour Répéter les lignes sur les pages suivantes à l'aide de Aspose.Words pour .NET 
+### Exemple de code source pour répéter les lignes sur les pages suivantes à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
 //Chemin d'accès à votre répertoire de documents
@@ -117,4 +117,4 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
 ## Conclusion
-Dans ce didacticiel, nous avons appris à répéter les lignes d'un tableau sur les pages suivantes d'un document Word à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez spécifier les lignes à répéter en fonction de vos besoins spécifiques dans vos documents Word.
+Dans ce didacticiel, nous avons appris à répéter les lignes d'un tableau sur les pages suivantes d'un document Word à l'aide d'Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez spécifier les lignes à répéter en fonction de vos besoins spécifiques dans vos documents Word.

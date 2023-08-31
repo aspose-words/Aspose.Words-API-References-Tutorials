@@ -1,41 +1,41 @@
 ---
-title: Tabla con formato
-linktitle: Tabla con formato
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a crear una tabla con formato en un documento de Word con Aspose.Words para .NET.
+title: Tabla formateada
+linktitle: Tabla formateada
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda a crear una tabla formateada en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/formatted-table/
 ---
 
-En este tutorial, aprenderemos cómo crear una tabla formateada en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá crear tablas con formato personalizado en sus documentos de Word mediante programación.
+En este tutorial, aprenderemos cómo crear una tabla formateada en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá crear tablas con formato personalizado en sus documentos de Word mediante programación.
 
-## Paso 1: Configuración del proyecto
+## Paso 1: configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## Paso 2: Creación del documento e inicialización del generador de documentos
+## Paso 2: crear el documento e inicializar el generador de documentos
 Para comenzar a construir la tabla formateada, necesitamos crear un nuevo documento e inicializar el generador de documentos. Sigue estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Crear el documento e inicializar el generador de documentos
+// Cree el documento e inicialice el generador de documentos.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
-## Paso 3: Construcción de la tabla formateada
-continuación, crearemos la tabla formateada utilizando los métodos proporcionados por el generador de documentos. Usa el siguiente código:
+## Paso 3: crear la tabla formateada
+continuación, crearemos la tabla formateada utilizando los métodos proporcionados por el creador de documentos. Utilice el siguiente código:
 
 ```csharp
 // Comenzar la construcción de la matriz
 Table table = builder. StartTable();
 
-// Construcción de la fila del encabezado de la tabla
+// Construcción de la fila del encabezado de la tabla.
 builder. InsertCell();
 table. LeftIndent = 20.0;
 builder.RowFormat.Height = 40.0;
@@ -57,7 +57,7 @@ builder.Write("Header Row,\n Cell 3");
 
 builder. EndRow();
 
-// Construcción del cuerpo de la matriz
+// Construcción del cuerpo de la matriz.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
@@ -93,23 +93,23 @@ builder.Write("Content Line 2, Cell 3");
 
 builder. EndRow();
 
-// Fin de la construcción de la matriz
+// Fin de la construcción del conjunto.
 builder. EndTable();
 ```
 
- Aquí usamos el generador de documentos para construir la tabla paso a paso. Empezamos llamando`StartTable()` para inicializar la tabla. Entonces usamos`InsertCell()` para insertar celdas y`Write()` para agregar contenido a cada celda. También usamos diferentes propiedades de formato para definir el formato de las filas, celdas y texto de la tabla.
+ Aquí utilizamos el generador de documentos para construir la tabla paso a paso. Empezamos llamando`StartTable()` para inicializar la tabla. Entonces usamos`InsertCell()` para insertar celdas y`Write()` para agregar contenido a cada celda. También utilizamos diferentes propiedades de formato para definir el formato de las filas, celdas y texto de la tabla.
 
-## Paso 4: Guarde el documento
-Finalmente, necesitamos guardar el documento que contiene la tabla formateada. Usa el siguiente código:
+## Paso 4: guarde el documento
+Finalmente, necesitamos guardar el documento que contiene la tabla formateada. Utilice el siguiente código:
 
 ```csharp
-// Guardar el documento
+// guardar el documento
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
 Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
 
-### Ejemplo de código fuente para la tabla con formato usando Aspose.Words para .NET 
+### Código fuente de muestra para tabla formateada usando Aspose.Words para .NET 
 
 ```csharp
 	//Ruta a su directorio de documentos
@@ -119,7 +119,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Table table = builder.StartTable();
 	builder.InsertCell();
-	// El formato ancho de la tabla se debe aplicar después de que al menos una fila esté presente en la tabla.
+	// El formato para toda la tabla se debe aplicar después de que al menos una fila esté presente en la tabla.
 	table.LeftIndent = 20.0;
 	// Establezca la altura y defina la regla de altura para la fila del encabezado.
 	builder.RowFormat.Height = 40.0;
@@ -141,11 +141,11 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 	builder.CellFormat.Width = 100.0;
 	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// Restablezca la altura y defina una regla de altura diferente para el cuerpo de la mesa.
+	// Restablezca la altura y defina una regla de altura diferente para el cuerpo de la tabla.
 	builder.RowFormat.Height = 30.0;
 	builder.RowFormat.HeightRule = HeightRule.Auto;
 	builder.InsertCell();
-	// Restablecer formato de fuente.
+	// Restablecer el formato de fuente.
 	builder.Font.Size = 12;
 	builder.Font.Bold = false;
 	builder.Write("Row 1, Cell 1 Content");
@@ -169,4 +169,4 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ```
 
 ## Conclusión
-En este tutorial, aprendimos a crear una tabla con formato en un documento de Word utilizando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# proporcionado, puede crear tablas personalizadas con formato específico en sus documentos de Word mediante programación. Esta característica le permite presentar y estructurar sus datos de una manera organizada y visualmente atractiva.
+En este tutorial, aprendimos cómo crear una tabla formateada en un documento de Word usando Aspose.Words para .NET. Si sigue esta guía paso a paso e implementa el código C# proporcionado, puede crear tablas personalizadas con formato específico en sus documentos de Word mediante programación. Esta función le permite presentar y estructurar sus datos de una manera visualmente atractiva y organizada.

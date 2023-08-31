@@ -45,7 +45,7 @@ builder.InsertHyphenation();
 
 ## Steg 4: Spara dokumentet
 
-Spara slutligen det ändrade dokumentet:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");

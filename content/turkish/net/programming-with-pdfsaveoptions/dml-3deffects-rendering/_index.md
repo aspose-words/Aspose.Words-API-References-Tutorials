@@ -1,14 +1,14 @@
 ---
-title: 3D DML 3DEffects'i bir PDF Belgesinde İşleyin
-linktitle: 3D DML 3DEffects'i bir PDF Belgesinde İşleyin
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işlenmesini nasıl etkinleştireceğinizi öğrenin.
+title: PDF Belgesinde 3D DML 3DEffect'leri İşleme
+linktitle: PDF Belgesinde 3D DML 3DEffect'leri İşleme
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin oluşturulmasını nasıl etkinleştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/dml-3deffects-rendering/
 ---
 
-Bu öğreticide, Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efekti oluşturmayı etkinleştirme adımlarında size yol göstereceğiz. Bu, oluşturulan PDF belgesindeki 3B efektleri korur. Aşağıdaki adımları takip et:
+Bu eğitimde, Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efekti oluşturmayı etkinleştirme adımlarında size yol göstereceğiz. Bu, oluşturulan PDF belgesindeki 3B efektleri korur. Aşağıdaki adımları takip et:
 
 ## 1. Adım: Belgeyi yükleme
 
@@ -19,11 +19,11 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Belgenize giden doğru yolu belirttiğinizden emin olun.
+Belgenizin doğru yolunu belirttiğinizden emin olun.
 
 ## 2. Adım: PDF kaydetme seçeneklerini yapılandırın
 
-PdfSaveOptions sınıfının bir örneğini oluşturun ve 3B DML efektlerinin gelişmiş işlemesini etkinleştirin:
+PdfSaveOptions sınıfının bir örneğini oluşturun ve 3D DML efektlerinin gelişmiş görüntülenmesini etkinleştirin:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { Dml3DEffectsRenderingMode = Dml3DEffectsRenderingMode.Advanced };
@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 
 Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
 
-### Aspose.Words for .NET kullanarak Dml 3DEffects Rendering için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak Dml 3DEffects İşleme için örnek kaynak kodu
 
 ```csharp
 
@@ -55,29 +55,29 @@ Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun
 	 
 ```
 
-Bu adımları izleyerek, Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işlenmesini kolayca etkinleştirebilirsiniz.
+Bu adımları izleyerek Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin oluşturulmasını kolayca etkinleştirebilirsiniz.
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin nasıl oluşturulacağını açıkladık. Açıklanan adımları izleyerek, oluşturulan PDF belgesindeki 3B efektleri kolayca saklayabilirsiniz. Orijinal belgenizin önemli görsel efektlerini korumak için bu özelliği kullanın.
+Bu eğitimde Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin oluşturulmasının nasıl etkinleştirileceğini açıkladık. Açıklanan adımları takip ederek 3D efektleri oluşturulan PDF belgesinde kolayca tutabilirsiniz. Orijinal belgenizin önemli görsel efektlerini korumak için bu özelliği kullanın.
 
 
 ### Sıkça Sorulan Sorular
 
-#### S: Bir PDF belgesinde 3B DML efektleri oluşturma nedir?
-Y: Bir PDF belgesinde 3B DML efektleri oluşturmak, bir belgeyi PDF biçimine dönüştürürken 3B efektleri koruma becerisini ifade eder. Bu, görsel efektleri korur ve oluşturulan PDF belgesinin orijinal belge gibi görünmesini sağlar.
+#### S: Bir PDF belgesinde 3D DML efektlerini oluşturmak nedir?
+C: Bir PDF belgesinde 3B DML efektlerinin oluşturulması, bir belgeyi PDF formatına dönüştürürken 3B efektlerin korunabilmesi anlamına gelir. Bu, görsel efektleri korur ve oluşturulan PDF belgesinin orijinal belgeye benzemesini sağlar.
 
-#### S: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin oluşturulmasını nasıl sağlayabilirim?
-C: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işlenmesini etkinleştirmek için şu adımları izleyin:
+#### S: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin oluşturulmasını nasıl etkinleştirebilirim?
+C: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin oluşturulmasını etkinleştirmek için şu adımları izleyin:
 
- örneğini oluşturun`Document` Word belgesine giden yolu belirten sınıf.
+ Bir örneğini oluşturun`Document` Word belgesinin yolunu belirten sınıf.
 
- örneğini oluşturun`PdfSaveOptions`sınıflandırın ve ayarlayın`Dml3DEffectsRenderingMode` mülkiyet`Dml3DEffectsRenderingMode.Advanced` 3B DML efektlerinin gelişmiş şekilde oluşturulmasını sağlamak için.
+ Bir örneğini oluşturun`PdfSaveOptions`sınıfı seçin ve ayarlayın`Dml3DEffectsRenderingMode` mülkiyet`Dml3DEffectsRenderingMode.Advanced` 3D DML efektlerinin gelişmiş şekilde oluşturulmasını etkinleştirmek için.
 
- Kullan`Save` yöntemi`Document`kaydetme seçeneklerini belirterek belgeyi PDF biçiminde kaydetmek için sınıf.
+ Kullan`Save` yöntemi`Document`Kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için sınıf.
 
-#### S: Oluşturulan PDF belgesinde 3B DML efektlerinin oluşturulup oluşturulmadığını nasıl kontrol edebilirim?
-A: Oluşturulan PDF belgesinde 3D DML efektlerinin oluşturulup oluşturulmadığını kontrol etmek için, PDF dosyasını Adobe Acrobat Reader gibi uyumlu bir PDF görüntüleyici ile açın ve belgeyi inceleyin. 3B efektleri orijinal belgede göründükleri gibi görmelisiniz.
+#### S: Oluşturulan PDF belgesinde 3D DML efektlerinin oluşturulup oluşturulmadığını nasıl kontrol edebilirim?
+C: Oluşturulan PDF belgesinde 3D DML efektlerinin oluşturulup oluşturulmadığını kontrol etmek için PDF dosyasını Adobe Acrobat Reader gibi uyumlu bir PDF görüntüleyiciyle açın ve belgeyi inceleyin. 3D efektleri orijinal belgede göründükleri şekilde görmelisiniz.
 
 
 

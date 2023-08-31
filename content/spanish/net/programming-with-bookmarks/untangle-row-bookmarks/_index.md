@@ -1,48 +1,48 @@
 ---
 title: Desenredar marcadores de fila en un documento de Word
 linktitle: Desenredar marcadores de fila en un documento de Word
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a desenredar los marcadores de fila anidados en un documento de Word para eliminar filas específicas sin afectar a otros marcadores.
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda a desenredar marcadores de filas anidadas en un documento de Word para eliminar filas específicas sin afectar otros marcadores.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 
-En este artículo, exploraremos el código fuente de C# anterior para entender cómo usar la función Untangle Row Bookmarks en la biblioteca Aspose.Words para .NET. Esta función permite poner los finales de los marcadores de las líneas en la misma línea que los comienzos de los marcadores.
+En este artículo, exploraremos el código fuente de C# anterior para comprender cómo utilizar la función Untangle Row Bookmarks en la biblioteca Aspose.Words para .NET. Esta función permite colocar los finales de los marcadores de líneas en la misma línea que el comienzo de los marcadores.
 
-## requisitos previos
+## Requisitos previos
 
 - Conocimientos básicos del lenguaje C#.
 - Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## Paso 1: Cargar el documento
+## Paso 1: cargar el documento
 
- usamos el`Document` clase para cargar el documento existente desde un archivo:
+ Usamos el`Document` clase para cargar el documento existente desde un archivo:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## Paso 2: desentrañar marcadores de línea
+## Paso 2: Desenredar los marcadores de líneas
 
- usamos el`Untangle` función para desenredar marcadores de filas. Esta función realiza la tarea personalizada de colocar los extremos de las líneas del marcador en la misma línea en la que comienza el marcador:
+ Usamos el`Untangle` función para desenredar marcadores de filas. Esta función realiza la tarea personalizada de colocar los extremos de las líneas del marcador en la misma línea en la que comienza el marcador:
 
 ```csharp
 Untangle(doc);
 ```
 
-## Paso 3: Eliminar línea por marcador
+## Paso 3: eliminar línea por marcador
 
- usamos el`DeleteRowByBookmark` función para eliminar una fila específica por su marcador:
+ Usamos el`DeleteRowByBookmark` función para eliminar una fila específica por su marcador:
 
 ```csharp
 DeleteRowByBookmark(doc, "ROW2");
 ```
 
-## Paso 4: Comprueba la integridad de otros marcadores
+## Paso 4: Verifique la integridad de otros marcadores
 
-Verificamos que los otros marcadores no se hayan dañado comprobando si el final del marcador todavía está presente:
+Verificamos que los demás marcadores no hayan sido dañados comprobando si el final del marcador aún está presente:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -51,7 +51,7 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Ejemplo de código fuente para Untangle Row Bookmarks usando Aspose.Words para .NET**
+### Código fuente de ejemplo para Untangle Row Bookmarks usando Aspose.Words para .NET**
 
 Aquí está el código fuente de muestra completo para desenredar los marcadores de las líneas usando Aspose.Words para .NET:
 
@@ -62,13 +62,13 @@ Aquí está el código fuente de muestra completo para desenredar los marcadores
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	//Esto realiza la tarea personalizada de colocar los extremos del marcador de fila en la misma fila con los inicios del marcador.
+	//Esto realiza la tarea personalizada de colocar los extremos del marcador de fila en la misma fila donde comienza el marcador.
 	Untangle(doc);
 
-	// Ahora podemos eliminar fácilmente las filas de un marcador sin dañar los marcadores de ninguna otra fila.
+	// Ahora podemos eliminar fácilmente filas mediante un marcador sin dañar los marcadores de ninguna otra fila.
 	DeleteRowByBookmark(doc, "ROW2");
 
-	// Esto es solo para verificar que el otro marcador no esté dañado.
+	// Esto es sólo para comprobar que el otro marcador no esté dañado.
 	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
 		throw new Exception("Wrong, the end of the bookmark was deleted.");
 
@@ -78,26 +78,26 @@ Aquí está el código fuente de muestra completo para desenredar los marcadores
 
 ## Conclusión
 
-En este artículo, exploramos el código fuente de C# para entender cómo usar la función Untangle Row Bookmarks de Aspose.Words para .NET. Seguimos una guía paso a paso para desenredar los marcadores de fila y eliminar una fila específica sin dañar otros marcadores.
+En este artículo, exploramos el código fuente de C# para comprender cómo utilizar la función Untangle Row Bookmarks de Aspose.Words para .NET. Seguimos una guía paso a paso para desenredar los marcadores de filas y eliminar una fila específica sin dañar otros marcadores.
 
-### Preguntas frecuentes sobre marcadores de fila desenredados en un documento de Word
+### Preguntas frecuentes para desenredar marcadores de fila en un documento de Word
 
-#### P: ¿Unscramble Row Bookmarks solo funciona con marcadores de fila en tablas?
+#### P: ¿Descifrar marcadores de filas solo funciona con marcadores de filas en tablas?
 
-R: Sí, la función Desenredar marcadores de fila está diseñada específicamente para desenredar los marcadores de fila que se encuentran en las tablas. Esta función se puede usar para procesar marcadores de línea en matrices y asegurarse de que los extremos de los marcadores estén en la misma línea que los inicios de los marcadores.
+R: Sí, la función Desenredar marcadores de filas está diseñada específicamente para desenredar marcadores de filas que se encuentran en tablas. Esta función se puede utilizar para procesar marcadores de línea en matrices y garantizar que los extremos de los marcadores estén en la misma línea que los inicios de los marcadores.
 
-#### P: ¿La función Unscramble Line Bookmarks modifica el contenido del documento original?
+#### P: ¿La función Descodificar marcadores de líneas modifica el contenido del documento original?
 
 R: Sí, la función Descifrar marcadores de línea modifica el documento original moviendo los extremos de los marcadores de línea para colocarlos en la misma línea que el comienzo de los marcadores. Asegúrese de guardar una copia de seguridad del documento antes de aplicar esta función.
 
 #### P: ¿Cómo puedo identificar marcadores de línea en mi documento de Word?
 
-R: Los marcadores de fila generalmente se usan en tablas para marcar secciones específicas. Puede identificar los marcadores de fila examinando los marcadores en el documento y verificando si los marcadores están en las filas de la tabla.
+R: Los marcadores de filas se utilizan normalmente en tablas para marcar secciones específicas. Puede identificar marcadores de filas examinando los marcadores del documento y comprobando si están en las filas de la tabla.
 
-#### P: ¿Es posible desenredar los marcadores de fila en tablas no adyacentes?
+#### P: ¿Es posible desenredar los marcadores de filas en tablas no adyacentes?
 
-R: La función Desenredar marcadores de fila que se presenta en este artículo está diseñada para desenredar marcadores de fila en tablas adyacentes. Para separar los marcadores de fila en tablas no adyacentes, es posible que se requieran ajustes adicionales al código según la estructura del documento.
+R: La función Desenredar marcadores de filas tal como se presenta en este artículo está diseñada para desenredar marcadores de filas en tablas adyacentes. Para desenredar los marcadores de filas en tablas no adyacentes, es posible que se requieran ajustes adicionales al código según la estructura del documento.
 
-#### P: ¿Qué otras manipulaciones puedo realizar en los marcadores de fila una vez que se han desenredado?
+#### P: ¿Qué otras manipulaciones puedo realizar en los marcadores de filas una vez que se han desenredado?
 
-R: Una vez que se desenredan los marcadores de línea, puede realizar diferentes manipulaciones según sea necesario. Esto puede incluir editar, eliminar o agregar contenido a las líneas marcadas. Asegúrese de manejar los marcadores de línea con cuidado para evitar cualquier impacto no deseado en el resto del documento.
+R: Una vez que se desenredan los marcadores de línea, puede realizar diferentes manipulaciones según sea necesario. Esto puede incluir editar, eliminar o agregar contenido a líneas marcadas. Asegúrese de manejar los marcadores de línea con cuidado para evitar cualquier impacto no deseado en el resto del documento.

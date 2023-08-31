@@ -78,7 +78,7 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprech
 
  A: Ja, es ist möglich, nur die Kopf- oder Fußzeile aus dem vorherigen Abschnitt in Aspose.Words zu kopieren. Hierfür können Sie die verwenden`CopyHeaderFromPreviousSection()` Und`CopyFooterFromPreviousSection()` Methoden auf dem aktuellen`Section` -Objekt, um gezielt die Kopf- oder Fußzeile vom vorherigen Abschnitt in den aktuellen Abschnitt zu kopieren.
 
-#### F: Ersetzt das Kopieren von Kopf- und Fußzeilen aus dem vorherigen Abschnitt die vorhandenen Kopf- und Fußzeilen im aktuellen Abschnitt?
+#### F: Ersetzt das Kopieren von Kopf- und Fußzeilen aus dem vorherigen Abschnitt vorhandene Kopf- und Fußzeilen im aktuellen Abschnitt?
 
 A: Ja, durch das Kopieren von Kopf- und Fußzeilen aus dem vorherigen Abschnitt werden vorhandene Kopf- und Fußzeilen im aktuellen Abschnitt ersetzt. Wenn Sie die vorhandenen Kopf- und Fußzeilen beibehalten und zu den kopierten Kopf- und Fußzeilen hinzufügen möchten, müssen Sie einen zusätzlichen Vorgang zum Zusammenführen der Inhalte ausführen.
 

@@ -1,38 +1,38 @@
 ---
 title: Resim Madde İşaretini Kaydetme
 linktitle: Resim Madde İşaretini Kaydetme
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET kullanarak Word belgelerinde resim madde işaretleri kaydetmeyi nasıl devre dışı bırakacağınızı öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Aspose.Words for .NET kullanarak Word belgelerinde görüntü madde işaretlerini kaydetmeyi nasıl devre dışı bırakacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 
-Resim madde işaretleri, özel madde işaretleri eklemek için Word belgelerinde yaygın olarak kullanılan bir özelliktir. Ancak bazı durumlarda, Aspose.Words Library for .NET kullanılarak belgeler üzerinde değişiklik yapılırken görüntü madde işareti kaydının devre dışı bırakılması gerekebilir. Bu adım adım kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak görüntü mermi kaydetmeyi devre dışı bırakmak için .NET için Aspose.Words C# kaynak kodunun nasıl kullanılacağını açıklayacağız.
+Resim madde işaretleri, Word belgelerinde özel madde işaretleri eklemek için yaygın olarak kullanılan bir özelliktir. Ancak bazı durumlarda Aspose.Words Library for .NET'i kullanarak belgeleri düzenlerken görüntü madde işareti kaydını devre dışı bırakmak gerekebilir. Bu adım adım kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak görüntü madde işareti kaydetmeyi devre dışı bırakmak için .NET için Aspose.Words C# kaynak kodunun nasıl kullanılacağını açıklayacağız.
 
-## Aspose.Words kitaplığını anlama
+## Aspose.Words kütüphanesini anlama
 
-Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, .NET dahil olmak üzere farklı platformlarda Word belgeleri oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kitaplıktır. Belgeleri işlemek için metin ekleme, biçimlendirmeyi değiştirme, bölümler ekleme ve çok daha fazlası gibi birçok özellik sunar.
+Koda dalmadan önce .NET için Aspose.Words kütüphanesini anlamak önemlidir. Aspose.Words, Word belgelerini .NET dahil farklı platformlarda oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kütüphanedir. Metin ekleme, biçimlendirmeyi değiştirme, bölüm ekleme ve çok daha fazlası gibi belgeleri değiştirmek için birçok özellik sunar.
 
-## 1. Adım: Belgeler Dizinini Ayarlama
+## Adım 1: Belge Dizinini Ayarlama
 
-İlk adım, belgelerinizin bulunduğu dizini tanımlamaktır. Tam dizin yolunu belirtmelisiniz. Örneğin :
+İlk adım belgelerinizin bulunduğu dizini tanımlamaktır. Tam dizin yolunu belirtmeniz gerekir. Örneğin :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
+"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## 2. Adım: Belgeyi Resim Madde İşaretleriyle Yükleme
+## Adım 2: Belgeyi Görüntü Madde İşaretleriyle Yükleme
 
-Ardından, belgeyi resim madde işaretleri ile yüklemeniz gerekir. Belgeyi bir dosyadan yüklemek için Document sınıfını kullanın. Örneğin :
+Daha sonra belgeyi resim madde işaretleriyle yüklemeniz gerekir. Belgeyi bir dosyadan yüklemek için Document sınıfını kullanın. Örneğin :
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-Bu örnekte "Image bullet points.docx" dosyasından belgeyi yüklüyoruz.
+Bu örnekte belgeyi "Resim madde işaretleri.docx" dosyasından yüklüyoruz.
 
   belgeler dizininde bulunur.
 
@@ -44,32 +44,32 @@ Bu örnekte "Image bullet points.docx" dosyasından belgeyi yüklüyoruz.
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
-Bu örnekte, yeni bir DocSaveOptions nesnesi oluşturuyoruz ve resim madde işaretlerini kaydetmeyi devre dışı bırakmak için SavePictureBullet özelliğini false olarak ayarlıyoruz.
+Bu örnekte, yeni bir DocSaveOptions nesnesi oluşturuyoruz ve resim madde işaretlerinin kaydedilmesini devre dışı bırakmak için SavePictureBullet özelliğini false olarak ayarlıyoruz.
 
 ## 4. Adım: "Resim Madde İşaretini Kaydetme" Özelliğini Etkinleştirin
 
-"Resim Madde İşaretini Kaydetme" özelliğini etkinleştirmek için, kaydetme seçeneklerini SavePictureBullet false olarak ayarlayarak zaten yapılandırdık. Bu, resim madde işaretlerinin nihai belgeye kaydedilmemesini sağlar.
+"Resim Madde İşaretini Kaydetme" özelliğini etkinleştirmek için, kaydetme seçeneklerini SavePictureBullet false olarak ayarlanmış şekilde zaten yapılandırdık. Bu, görüntü madde işaretlerinin son belgeye kaydedilmemesini sağlar.
 
 ## 5. Adım: Belgeyi kaydedin
 
-Son olarak, Document sınıfının Save yöntemini kullanarak belgeyi kaydedebilirsiniz. Dosyanın tam yolunu ve istenen dosya adını belirtin. Örneğin :
+Son olarak Document sınıfının Save metodunu kullanarak belgeyi kaydedebilirsiniz. Dosyanın tam yolunu ve istenen dosya adını belirtin. Örneğin :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-Belgelerinizin dizin yolu ile "dataDir" değiştirdiğinizden emin olun.
+"dataDir"i belgelerinizin dizin yolu ile değiştirdiğinizden emin olun.
 
-## Aspose.Words for .NET kullanan "Do Not Save Picture Bullet" işleviyle DocSaveOptions kaydetme seçenekleri için örnek kaynak kodu
+## Aspose.Words for .NET kullanan "Resim Madde İşaretini Kaydetme" işlevine sahip DocSaveOptions kaydetme seçenekleri için örnek kaynak kodu
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Belgeyi resim madde işaretleri ile yükleyin
+// Belgeyi görüntü madde işaretleriyle yükleyin
 Document doc = new Document(dataDir + "Image bullet points.docx");
 
-// "Resim Madde İşaretini Kaydetme" özelliği ile kaydetme seçeneklerini yapılandırın
+// "Resim Madde İşaretini Kaydetme" özelliğiyle kaydetme seçeneklerini yapılandırın
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 
 // Belgeyi belirtilen seçeneklerle kaydedin
@@ -78,4 +78,4 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", save
 
 ## Çözüm
 
-Bu kılavuzda, .NET için Aspose.Words kütüphanesini kullanarak bir belgede resim madde işaretlerinin nasıl kaydedileceğini ele aldık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Resim madde işareti kaydetmeyi devre dışı bırakmak, bazı durumlarda resim madde işaretlerini kaydetmeden belge yapısını ve biçimlendirmeyi korumak için yararlı olabilir.
+Bu kılavuzda, .NET için Aspose.Words kütüphanesini kullanarak görüntü madde işaretlerinin bir belgeye kaydedilmesinin nasıl devre dışı bırakılacağını ele aldık. Verilen adımları takip ederek ve verilen C# kaynak kodunu kullanarak bu işlevselliği C# uygulamanıza kolayca uygulayabilirsiniz. Resim madde işareti kaydetmeyi devre dışı bırakmak, bazı durumlarda resim madde işaretlerini kaydetmeden belge yapısını ve biçimlendirmeyi korumak için yararlı olabilir.

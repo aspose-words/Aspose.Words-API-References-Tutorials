@@ -80,7 +80,7 @@ In diesem Tutorial haben wir gesehen, wie Sie Schriftartbenachrichtigungen erhal
 
 #### F: Wie kann ich Benachrichtigungen über fehlende Schriftarten in Aspose.Words erhalten?
 
- A: Um Benachrichtigungen über fehlende Schriftarten in Aspose.Words zu erhalten, können Sie die verwenden`FontSettings` Klasse und die`FontSubstitutionCallback` Fall. Sie können eine Rückrufmethode festlegen, die benachrichtigt wird, wenn bei der Verarbeitung von Dokumenten fehlende Schriftarten festgestellt werden.
+ A: Um Benachrichtigungen über fehlende Schriftarten in Aspose.Words zu erhalten, können Sie die verwenden`FontSettings` Klasse und die`FontSubstitutionCallback` Ereignis. Sie können eine Rückrufmethode festlegen, die benachrichtigt wird, wenn bei der Verarbeitung von Dokumenten fehlende Schriftarten festgestellt werden.
 
 #### F: Wie kann ich mit fehlenden Schriftarten in meinen Word-Dokumenten umgehen?
 

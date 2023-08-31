@@ -1,13 +1,13 @@
 ---
-title: Espacio entre texto asiático y latino en documento de Word
-linktitle: Espacio entre texto asiático y latino en documento de Word
-second_title: API de procesamiento de documentos de Aspose.Words
-description: Aprenda a ajustar automáticamente el espacio entre el texto asiático y latino en un documento de Word con Aspose.Words para .NET.
+title: Espacio entre texto asiático y latino en un documento de Word
+linktitle: Espacio entre texto asiático y latino en un documento de Word
+second_title: API de procesamiento de documentos Aspose.Words
+description: Aprenda cómo ajustar automáticamente el espacio entre el texto asiático y latino en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/document-formatting/space-between-asian-and-latin-text/
 ---
-En este tutorial, le mostraremos cómo usar la función Espacio entre texto asiático y latino en la función de documento de Word con Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
+En este tutorial, le mostraremos cómo utilizar la función Espacio entre texto asiático y latino en un documento de Word con Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
 
 ## Paso 1: Crear y configurar el documento
 
@@ -33,17 +33,17 @@ builder.Writeln("Auto adjust space between Asian and Latin text");
 builder.Writeln("Auto adjust space between Asian text and numbers");
 ```
 
-## Paso 3: Guardar el documento
+## Paso 3: guardar el documento
 
- Después de insertar el campo de formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
+ Después de insertar el campo del formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
 ```
 
-### Ejemplo de código fuente para el espacio entre texto asiático y latino usando Aspose.Words para .NET
+### Código fuente de ejemplo para espacio entre texto asiático y latino usando Aspose.Words para .NET
 
-Aquí está el código fuente completo para la función Espacio entre texto asiático y latino con Aspose.Words para .NET:
+Aquí está el código fuente completo de la función Espacio entre texto asiático y latino con Aspose.Words para .NET:
 
 
 ```csharp
@@ -62,30 +62,30 @@ builder.Writeln("Automatically adjust space between Asian text and numbers");
 doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
 ```
 
-Con este código podrá ajustar automáticamente el espacio entre el texto asiático y latino en su documento usando Aspose.Words para .NET.
+Con este código podrás ajustar automáticamente el espacio entre el texto asiático y latino en tu documento usando Aspose.Words para .NET.
 
 ## Conclusión
 
-En este tutorial, exploramos el proceso de usar la función Espacio para ajustar el espacio entre el texto asiático y latino en un documento de Word con Aspose.Words para .NET. Al seguir los pasos descritos, puede garantizar el espaciado y la alineación adecuados, lo que es particularmente útil cuando se trata de contenido mixto asiático y latino.
+En este tutorial, exploramos el proceso de uso de la función Espacio para ajustar el espacio entre texto asiático y latino en un documento de Word con Aspose.Words para .NET. Si sigue los pasos descritos, podrá garantizar el espaciado y la alineación adecuados, lo que resulta especialmente útil cuando se trata de contenido mixto asiático y latino.
 
 ### Preguntas frecuentes
 
-#### P: ¿Qué es la función de espacio entre el texto asiático y el latino en un documento de Word?
+#### P: ¿Qué es la función de espacio entre el texto asiático y latino en un documento de Word?
 
-R: La función de espacio entre texto asiático y latino en un documento de Word se refiere a la capacidad de ajustar automáticamente el espacio entre texto escrito en diferentes alfabetos, como asiático (p. ej., chino, japonés) y latino (p. ej., inglés).
+R: La función Espacio entre texto asiático y latino en un documento de Word se refiere a la capacidad de ajustar automáticamente el espacio entre texto escrito en diferentes escrituras, como asiática (p. ej., chino, japonés) y latina (p. ej., inglés).
 
 #### P: ¿Por qué es importante ajustar el espacio entre el texto asiático y latino?
 
-R: Ajustar el espacio entre el texto asiático y el latino es crucial para garantizar que las diferentes escrituras se mezclen armoniosamente dentro del documento. El espaciado adecuado mejora la legibilidad y la apariencia visual general, evitando que el texto parezca demasiado apretado o disperso.
+R: Ajustar el espacio entre el texto asiático y latino es crucial para garantizar que las diferentes escrituras se combinen armoniosamente en el documento. El espaciado adecuado mejora la legibilidad y la apariencia visual general, evitando que el texto parezca demasiado apretado o extendido.
 
-#### P: ¿Puedo personalizar los ajustes de espacio entre diferentes guiones?
+#### P: ¿Puedo personalizar los ajustes de espacio entre diferentes scripts?
 
- R: Sí, puede personalizar los ajustes de espacio entre diferentes guiones usando el`AddSpaceBetweenFarEastAndAlpha` y`AddSpaceBetweenFarEastAndDigit` propiedades. Al habilitar o deshabilitar estas propiedades, puede controlar el espacio entre el texto asiático y latino, así como entre el texto asiático y los números.
+ R: Sí, puedes personalizar los ajustes de espacio entre diferentes scripts usando el`AddSpaceBetweenFarEastAndAlpha` y`AddSpaceBetweenFarEastAndDigit` propiedades. Al habilitar o deshabilitar estas propiedades, puede controlar el espacio entre el texto asiático y latino, así como entre el texto asiático y los números.
 
-#### P: ¿Aspose.Words para .NET es compatible con otras funciones de formato de documentos?
+#### P: ¿Aspose.Words para .NET admite otras funciones de formato de documentos?
 
-R: Sí, Aspose.Words para .NET ofrece una amplia compatibilidad con varias funciones de formato de documentos. Incluye funcionalidades para estilos de fuente, párrafos, tablas, imágenes y más. Puede manipular y formatear de manera efectiva sus documentos de Word mediante programación.
+R: Sí, Aspose.Words para .NET ofrece un amplio soporte para varias funciones de formato de documentos. Incluye funcionalidades para estilos de fuente, párrafos, tablas, imágenes y más. Puede manipular y formatear eficazmente sus documentos de Word mediante programación.
 
 #### P: ¿Dónde puedo encontrar recursos y documentación adicionales para Aspose.Words para .NET?
 
- R: Para obtener documentación y recursos completos sobre el uso de Aspose.Words para .NET, visite[Referencia de la API de Aspose.Words](https://reference.aspose.com/words/net/). Allí encontrará guías detalladas, tutoriales, ejemplos de código y referencias de API para ayudarlo a utilizar de manera efectiva las potentes características de Aspose.Words para .NET.
+ R: Para obtener recursos y documentación completos sobre el uso de Aspose.Words para .NET, visite[Referencia de la API de Aspose.Words](https://reference.aspose.com/words/net/). Allí encontrará guías detalladas, tutoriales, ejemplos de código y referencias de API que le ayudarán a utilizar de forma eficaz las potentes funciones de Aspose.Words para .NET.

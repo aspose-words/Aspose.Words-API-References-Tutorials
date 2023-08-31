@@ -135,4 +135,4 @@ Yes, fields can be nested within each other to create complex dynamic content.
 
 ## Access More Resources
 
-For more detailed information and code examples, visit the [official Aspose.Words for Python API reference](https://reference.aspose.com/words/python-net/). To download the latest version of the library, visit the [Aspose.Words for Python download page](https://releases.aspose.com/words/python/).
+For more detailed information and code examples, visit the [Aspose.Words for Python API reference](https://reference.aspose.com/words/python-net/). To download the latest version of the library, visit the [Aspose.Words for Python download page](https://releases.aspose.com/words/python/).

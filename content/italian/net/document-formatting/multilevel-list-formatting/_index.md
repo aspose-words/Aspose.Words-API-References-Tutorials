@@ -1,13 +1,13 @@
 ---
-title: Formattazione dell'elenco multilivello nel documento di Word
-linktitle: Formattazione dell'elenco multilivello nel documento di Word
-second_title: Aspose.Words API di elaborazione dei documenti
-description: Scopri come creare un elenco multilivello e applicare la formattazione personalizzata nel documento word con Aspose.Words per .NET.
+title: Formattazione di elenchi multilivello nel documento di Word
+linktitle: Formattazione di elenchi multilivello nel documento di Word
+second_title: API di elaborazione dei documenti Aspose.Words
+description: Scopri come creare un elenco multilivello e applicare la formattazione personalizzata nel documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/document-formatting/multilevel-list-formatting/
 ---
-In questo tutorial, ti mostreremo come utilizzare la formattazione dell'elenco multilivello nella funzionalità del documento word con Aspose.Words per .NET. Segui i passaggi seguenti per comprendere il codice sorgente e applicare le modifiche.
+In questo tutorial, ti mostreremo come utilizzare la formattazione dell'elenco multilivello nella funzionalità del documento Word con Aspose.Words per .NET. Segui i passaggi seguenti per comprendere il codice sorgente e applicare le modifiche.
 
 ## Passaggio 1: creazione e configurazione del documento
 
@@ -46,7 +46,7 @@ builder.Writeln("Element 3");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## Passaggio 3: salvare il documento
+## Passaggio 3: salvataggio del documento
 
  Dopo aver inserito il campo del modulo di immissione del testo, salvare il documento nella posizione desiderata utilizzando il file`Save` metodo. Assicurati di fornire il percorso file appropriato:
 
@@ -54,9 +54,9 @@ builder.ListFormat.RemoveNumbers();
 doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 ```
 
-### Esempio di codice sorgente per la formattazione di elenchi multilivello utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per la formattazione di elenchi multilivello utilizzando Aspose.Words per .NET
 
-Ecco il codice sorgente completo per la funzione di formattazione dell'elenco multilivello con Aspose.Words per .NET:
+Ecco il codice sorgente completo per la funzionalità di formattazione dell'elenco multilivello con Aspose.Words per .NET:
 
 
 ```csharp
@@ -90,27 +90,27 @@ doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 
 ```
 
-Con questo codice sarai in grado di creare un elenco a più livelli e applicare la corretta formattazione a ciascun livello utilizzando Aspose.Words per .NET.
+Con questo codice sarai in grado di creare un elenco a più livelli e applicare la formattazione corretta a ciascun livello utilizzando Aspose.Words per .NET.
 
 
 ## Conclusione
 
-In questo tutorial, abbiamo esplorato il processo di utilizzo della funzionalità di formattazione dell'elenco multilivello in un documento di Word con Aspose.Words per .NET. Seguendo i passaggi delineati, puoi creare elenchi ben organizzati con più livelli, migliorando la struttura e la leggibilità dei tuoi documenti.
+In questo tutorial, abbiamo esplorato il processo di utilizzo della funzionalità di formattazione dell'elenco multilivello in un documento Word con Aspose.Words per .NET. Seguendo i passaggi descritti, puoi creare elenchi ben organizzati su più livelli, migliorando la struttura e la leggibilità dei tuoi documenti.
 
-### FAQ
+### Domande frequenti
 
-#### D: Che cos'è un elenco multilivello in un documento di Word?
+#### D: Cos'è un elenco multilivello in un documento Word?
 
 R: Un elenco multilivello in un documento Word è un elenco gerarchico che consente di organizzare gli elementi in vari livelli di sottoelementi. Aiuta a presentare le informazioni in modo strutturato, facilitando la comprensione del contenuto da parte dei lettori.
 
 #### D: Posso personalizzare l'aspetto dell'elenco multilivello?
 
-R: Sì, puoi personalizzare l'aspetto dell'elenco multilivello nel tuo documento Word. Applicando stili diversi, come elenchi puntati, numeri o lettere e regolando il rientro e la spaziatura, puoi creare un elenco visivamente accattivante e organizzato.
+R: Sì, puoi personalizzare l'aspetto dell'elenco multilivello nel tuo documento Word. Applicando stili diversi, come punti elenco, numeri o lettere, e regolando il rientro e la spaziatura, puoi creare un elenco organizzato e visivamente accattivante.
 
 #### D: Aspose.Words per .NET supporta altre opzioni di formattazione degli elenchi?
 
-R: Sì, Aspose.Words per .NET offre un set completo di funzionalità per la formattazione degli elenchi. Supporta vari tipi di elenchi, inclusi elenchi puntati, elenchi numerati ed elenchi multilivello. Puoi manipolare la formattazione degli elenchi, aggiungere o rimuovere elementi e personalizzarne l'aspetto.
+R: Sì, Aspose.Words per .NET fornisce un set completo di funzionalità per la formattazione degli elenchi. Supporta vari tipi di elenchi, inclusi elenchi puntati, elenchi numerati ed elenchi multilivello. Puoi manipolare la formattazione degli elenchi, aggiungere o rimuovere elementi e personalizzarne l'aspetto.
 
-#### D: Posso usare Aspose.Words per .NET per lavorare con altri elementi del documento?
+#### D: Posso utilizzare Aspose.Words for .NET per lavorare con altri elementi del documento?
 
-R: Sì, Aspose.Words per .NET offre ampie capacità per lavorare con vari elementi del documento, come paragrafi, tabelle, immagini e altro. Consente di creare, modificare e convertire documenti Word a livello di programmazione, semplificando le attività di elaborazione dei documenti.
+R: Sì, Aspose.Words per .NET offre ampie funzionalità per lavorare con vari elementi di documenti, come paragrafi, tabelle, immagini e altro. Ti consente di creare, modificare e convertire documenti Word a livello di codice, semplificando le attività di elaborazione dei documenti.

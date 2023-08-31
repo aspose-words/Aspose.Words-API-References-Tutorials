@@ -91,4 +91,4 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 #### 问：如何在 Word 文档中使用可用字体列表？
 
-答：要使用 Word 文档中可用的字体列表，您可以浏览该列表并使用 Word 文档的方法和属性选择适当的字体。`FontSettings` Aspose.Words 中的类。
+答：要使用 Word 文档中可用的字体列表，您可以浏览该列表并使用 Word 文档中的方法和属性来选择合适的字体。`FontSettings` Aspose.Words 中的类。

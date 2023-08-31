@@ -84,7 +84,7 @@ fieldToa.Update();
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-//我们要像这样插入 TA 和 TOA 字段：
+//我们想要像这样插入 TA 和 TOA 字段：
 // { TA \c 1 \l "值 0" }
 // { TOA \c 1 }
 

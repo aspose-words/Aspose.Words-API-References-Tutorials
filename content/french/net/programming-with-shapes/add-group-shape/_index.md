@@ -2,29 +2,29 @@
 title: Ajouter une forme de groupe
 linktitle: Ajouter une forme de groupe
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à ajouter une forme de groupe avec plusieurs formes à un document Word à l'aide de Aspose.Words pour .NET.
+description: Découvrez comment ajouter une forme de groupe avec plusieurs formes à un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-shapes/add-group-shape/
 ---
 
-Ce didacticiel explique comment ajouter une forme de groupe contenant plusieurs formes à un document Word à l'aide de Aspose.Words pour .NET. Les formes de groupe vous permettent de combiner et de manipuler plusieurs formes en une seule entité.
+Ce didacticiel explique comment ajouter une forme de groupe contenant plusieurs formes à un document Word à l'aide d'Aspose.Words pour .NET. Les formes de groupe vous permettent de combiner et de manipuler plusieurs formes comme une seule entité.
 
 ## Conditions préalables
-Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
+Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
 - Bibliothèque Aspose.Words pour .NET installée.
-- Connaissance de base de C# et du traitement de texte avec des documents Word.
+- Connaissance de base de C# et du traitement de mots avec des documents Word.
 
-## Étape 1 : Configurer le répertoire de documents
- Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
+## Étape 1 : configurer le répertoire de documents
+ Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Étape 2 : créer un nouveau document et une forme de groupe
- Créez une nouvelle instance de`Document` classe et`GroupShape` objet de travailler avec le document.
+## Étape 2 : Créer un nouveau document et GroupShape
+ Créez une nouvelle instance du`Document` classe et`GroupShape` s'opposer à travailler avec le document.
 
 ```csharp
 Document doc = new Document();
@@ -32,8 +32,8 @@ doc.EnsureMinimum();
 GroupShape groupShape = new GroupShape(doc);
 ```
 
-## Étape 3 : créer et ajouter des formes au GroupShape
- Créez des formes individuelles telles que`accentBorderShape` et`actionButtonShape` en utilisant le`Shape` classe. Personnalisez leurs propriétés comme vous le souhaitez. Ajoutez ces formes à la`groupShape` objet.
+## Étape 3 : Créer et ajouter des formes au GroupShape
+ Créez des formes individuelles telles que`accentBorderShape` et`actionButtonShape` en utilisant le`Shape` classe. Personnalisez leurs propriétés comme vous le souhaitez. Ajoutez ces formes au`groupShape` objet.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -48,8 +48,8 @@ Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
 groupShape.AppendChild(actionButtonShape);
 ```
 
-## Étape 4 : définir les dimensions de la forme de groupe
- Définissez la largeur, la hauteur et la taille des coordonnées pour le`groupShape`.
+## Étape 4 : définir les dimensions du GroupShape
+ Définissez la largeur, la hauteur et la taille des coordonnées du`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -57,22 +57,22 @@ groupShape.Height = 200;
 groupShape.CoordSize = new Size(200, 200);
 ```
 
-## Étape 5 : Insérez le GroupShape dans le document
- Créer un`DocumentBuilder` objet et insérez le`groupShape` dans le document à l'aide de`InsertNode` méthode.
+## Étape 5 : Insérez le GroupShape dans le document
+ Créer un`DocumentBuilder` objet et insérez le`groupShape` dans le document à l'aide du`InsertNode` méthode.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertNode(groupShape);
 ```
 
-## Étape 6 : Enregistrer le document
- Enregistrez le document dans le répertoire spécifié à l'aide de la`Save`méthode. Indiquez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous "WorkingWithShapes.AddGroupShape.docx".
+## Étape 6 : Enregistrez le document
+ Enregistrez le document dans le répertoire spécifié à l'aide du`Save`méthode. Fournissez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous le nom « WorkingWithShapes.AddGroupShape.docx ».
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-### Exemple de code source pour Ajouter une forme de groupe à l'aide de Aspose.Words pour .NET 
+### Exemple de code source pour Ajouter une forme de groupe à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
 	//Chemin d'accès à votre répertoire de documents

@@ -1,30 +1,30 @@
 ---
 title: Tireleme Geri Çağırma
 linktitle: Tireleme Geri Çağırma
-second_title: Aspose.Words Belge İşleme API'sı
-description: Aspose.Words for .NET'te sözcük hecelemesini işlemek için heceleme geri aramasını nasıl kullanacağınızı öğrenin.
+second_title: Aspose.Words Belge İşleme API'si
+description: Kelime tireleme işlemini gerçekleştirmek için Aspose.Words for .NET'te tireleme geri çağırmanın nasıl kullanılacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-Bu adım adım öğreticide, size Aspose.Words for .NET'te heceleme geri arama özelliğini nasıl kullanacağınızı göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinize nasıl uygulayacağınızı göstereceğiz.
+Bu adım adım eğitimde Aspose.Words for .NET'te tireleme geri çağırma özelliğinin nasıl kullanılacağını göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
- Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı adresinden indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
+ Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı şuradan indirip yükleyin:[Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## 1. Adım: Tireleme Hatırlatıcısını Kaydet
 
-İlk olarak, özel bir kullanarak heceleme geri aramasını kaydedeceğiz.`CustomHyphenationCallback` sınıf. Bu, kelime hecelemesini kendi kurallarımıza göre ele almamıza izin verecektir:
+İlk olarak, tireleme geri çağrısını özel bir kullanarak kaydedeceğiz.`CustomHyphenationCallback` sınıf. Bu, kelime tirelemesini kendi kurallarımıza göre yapmamızı sağlayacaktır:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- uyguladığınızdan emin olun.`CustomHyphenationCallback` özel ihtiyaçlarınıza göre sınıflandırın.
+ Aşağıdakileri uyguladığınızdan emin olun:`CustomHyphenationCallback` özel ihtiyaçlarınıza göre sınıf.
 
 ## 2. Adım: Belgeyi yükleme ve tireleme uygulama
 
-Ardından, belgenizi belirtilen dizinden yükleyin ve Aspose.Words'ü kullanarak kelimeleri tireleyin:
+Daha sonra, belgenizi belirtilen dizinden yükleyin ve Aspose.Words'ü kullanarak sözcükleri tireleyin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -34,7 +34,7 @@ document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 
 ## 3. Adım: Eksik Sözlük Hatalarını Ele Alma
 
-Bir heceleme sözlüğünün eksik olması durumunda ilgili istisnayı yakalarız ve bir hata mesajı görüntüleriz:
+Bir tireleme sözlüğünün eksik olması durumunda, ilgili istisnayı yakalayacağız ve bir hata mesajı görüntüleyeceğiz:
 
 ```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
@@ -43,9 +43,9 @@ catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary")
 }
 ```
 
-## 4. Adım: Tireleme Hatırlatıcısını Temizleyin ve Devre Dışı Bırakın
+## Adım 4: Tireleme Hatırlatıcısını Temizleme ve Devre Dışı Bırakma
 
-Son olarak, temizlik için ve tireleme hatırlatıcısını kapatmak için aşağıdaki adımları gerçekleştirin:
+Son olarak temizlik ve tireleme hatırlatıcısını kapatmak için aşağıdaki adımları uygulayın:
 
 ```csharp
 finally
@@ -54,11 +54,11 @@ finally
 }
 ```
 
-Bu, işlemeyi bitirdikten sonra tireleme hatırlatıcısını temizler ve devre dışı bırakır.
+Bu, işlem tamamlandıktan sonra tireleme hatırlatıcısını temizler ve devre dışı bırakır.
 
-Bu yüzden ! Aspose.Words for .NET'te heceleme geri aramasını başarıyla kullandınız.
+Bu yüzden ! Aspose.Words for .NET'te tireleme geri çağrısını başarıyla kullandınız.
 
-### Aspose.Words for .NET ile Tireleme Geri Araması için Örnek Kaynak Kodu
+### Aspose.Words for .NET ile Tireleme Geri Çağırma için Örnek Kaynak Kodu
 
 ```csharp
 try
@@ -82,27 +82,27 @@ finally
 
 Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şekilde değiştirmekten çekinmeyin.
 
-### SSS
+### SSS'ler
 
-#### S: Aspose.Words'ta heceleme hatırlatıcısı nedir?
+#### S: Aspose.Words'te heceleme hatırlatıcısı nedir?
 
-C: Aspose.Words'taki Heceleme Hatırlatıcısı, sözcüklerin belgelerinizde nasıl hecelendiğini özelleştirmenizi sağlayan bir özelliktir. Bir heceleme hatırlatıcısı kullanarak, sözcüklerin hecelenmesi için özel kurallar belirleyebilirsiniz; bu, belirli diller için veya varsayılan hecelemenin istenen sonuçları vermediği belirli senaryolar için yararlı olabilir.
+C: Aspose.Words'teki Heceleme Hatırlatıcısı, belgelerinizde kelimelerin hecelenme şeklini özelleştirmenize olanak tanıyan bir özelliktir. Bir heceleme hatırlatıcısı kullanarak, kelimelerin hecelenmesi için özel kurallar belirleyebilirsiniz; bu, belirli diller veya varsayılan hecelemenin istenen sonuçları vermediği belirli senaryolar için faydalı olabilir.
 
-#### S: Aspose.Words'ta bir heceleme hatırlatıcısı nasıl ayarlanır?
+#### S: Aspose.Words'te heceleme hatırlatıcısı nasıl ayarlanır?
 
- C: Aspose.Words'te bir heceleme geri araması tanımlamak için,`HyphenationCallback` arayüz ve uygulama`HandleWord()` yöntem. Bu yöntem, heceleme sırasında karşılaşılan her kelime için çağrılacaktır. Ona özel heceleme kuralları uygulayabilir ve hecelenmiş kelimeyi geri verebilirsiniz. Ardından, heceleme geri aramanızı kullanarak bağlayabilirsiniz.`Document.HyphenationCallback` belgenizin özelliği.
+ C: Aspose.Words'te tireleme geri çağrısı tanımlamak için, bunu uygulayan bir sınıf oluşturmanız gerekir.`HyphenationCallback` arayüzü oluşturun ve uygulayın`HandleWord()` yöntem. Heceleme sırasında karşılaşılan her kelime için bu yöntem çağrılacaktır. Özel heceleme kurallarını ona uygulayabilir ve hecelenmiş kelimeyi döndürebilirsiniz. Daha sonra tireleme geri aramanızı aşağıdaki komutu kullanarak bağlayabilirsiniz:`Document.HyphenationCallback` belgenizin mülkiyetindedir.
 
-#### S: Aspose.Words'te bir heceleme hatırlatıcısı kullanmanın avantajı nedir?
+#### S: Aspose.Words'te heceleme hatırlatıcısı kullanmanın avantajı nedir?
 
-C: Aspose.Words'ta bir heceleme hatırlatıcısı kullanmanın yararı, belgelerinizde kelimelerin nasıl hecelendiğini özelleştirme yeteneğidir. Bu, özellikle varsayılan hecelemenin istenen sonuçları vermediği belirli diller veya senaryolar için heceleme üzerinde daha fazla kontrol sağlar. İhtiyaçlarınıza göre kesin heceleme elde etmek için her kelimeye özel kurallar uygulayabilirsiniz.
+C: Aspose.Words'te heceleme hatırlatıcısı kullanmanın faydası, belgelerinizde kelimelerin hecelenme şeklini özelleştirebilme yeteneğidir. Bu, özellikle varsayılan hecelemenin istenen sonuçları vermediği belirli diller veya senaryolar için heceleme üzerinde daha fazla kontrol sahibi olmanızı sağlar. İhtiyaçlarınıza göre kesin heceleme elde etmek için her kelimeye özel kurallar uygulayabilirsiniz.
 
-#### S: Heceleme hatırlatıcı kullanmanın yardımcı olabileceği bazı yaygın senaryolar nelerdir?
+#### S: Heceleme hatırlatıcısı kullanmanın yararlı olabileceği bazı yaygın senaryolar nelerdir?
 
-C: Bir heceleme artırıcı kullanmak, aşağıdakiler gibi çeşitli senaryolarda yararlı olabilir:
-- Belirli heceleme kurallarına sahip belirli dillerdeki sözcüklerin hecelenmesi.
+C: Heceleme güçlendirici kullanmak aşağıdakiler gibi çeşitli senaryolarda faydalı olabilir:
+- Belirli heceleme kurallarına sahip belirli dillerdeki kelimelerin hecelenmesi.
 - Kısaltmalar veya teknik kelimeler için kişiselleştirilmiş heceleme kurallarının uygulanması.
-- Hecelemenin biçimsel tercihlere veya tipografik standartlara göre uyarlanması.
+- Hecelemenin stilistik tercihlere veya tipografik standartlara göre uyarlanması.
 
-#### S: Özel hecelemeyi Aspose.Words'ta bir heceleme hatırlatıcısı ile nasıl test edebilirim?
+#### S: Aspose.Words'te özel hecelemeyi bir heceleme hatırlatıcısıyla nasıl test edebilirim?
 
-C: Özel hecelemeyi Aspose.Words'ta bir heceleme hatırlatıcısıyla test etmek için özel heceleme kurallarını uygulamak istediğiniz sözcükleri içeren bir test belgesi oluşturabilirsiniz. Ardından, özel heceleme geri aramanızı ayarlayabilir,`Document.Range.Replace()` belgedeki sözcükleri değiştirme yöntemini kullanın ve`Hyphenate()` yöntemi`Hyphenation` kelimelerin hecelemesini almak için sınıf . Daha sonra, örneğin heceler arasına kısa çizgiler ekleyerek hecelenmiş sözcükleri gerektiği gibi biçimlendirebilirsiniz.
+C: Aspose.Words'te özel hecelemeyi bir heceleme hatırlatıcısıyla test etmek için, özel heceleme kurallarını uygulamak istediğiniz kelimeleri içeren bir test belgesi oluşturabilirsiniz. Daha sonra özel heceleme geri aramanızı ayarlayabilir,`Document.Range.Replace()` belgedeki sözcükleri değiştirme yöntemini kullanın ve`Hyphenate()` yöntemi`Hyphenation` Kelimelerin hecelemesini almak için sınıf. Daha sonra hecelenmiş sözcükleri gerektiği gibi biçimlendirebilirsiniz; örneğin hecelerin arasına kısa çizgi ekleyerek.
