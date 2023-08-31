@@ -37,11 +37,11 @@ Explore Aspose.Words tutorials for Python and .NET, focusing on document structu
 ### [Content Extraction and Manipulation](./content-extraction-and-manipulation/)
 Discover the world of content extraction and manipulation with Aspose.Words tutorials. Learn how to efficiently extract and manipulate content using Python and .NET, enhancing your document processing capabilities.
 ### [Document Combining and Comparison](./document-combining-and-comparison/)
-
+Discover comprehensive tutorials on document combining and comparison using Aspose.Words for Python and .NET. Learn how to merge and compare documents seamlessly, enhancing your document processing workflows.
 ### [Document Splitting and Formatting](./document-splitting-and-formatting/)
 Explore the Aspose.Words tutorials on document splitting and formatting in Python and .NET. Learn to split and format documents efficiently, enhancing your document processing tasks. 
 ### [Document Options and Settings](./document-options-and-settings/)
-
+Explore Aspose.Words tutorials on document options and settings in Python and .NET. Learn to optimize document creation and formatting using step-by-step guidance and source code examples.
 ### [Data Visualization and Formatting](./data-visualization-and-formatting/)
 Discover Aspose.Words tutorials on data visualization and formatting in Python and .NET. Learn to present data effectively, create stunning reports, and format documents programmatically.
 ### [Tables and Formatting](./tables-and-formatting/)
