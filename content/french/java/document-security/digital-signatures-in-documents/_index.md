@@ -14,7 +14,7 @@ Les signatures numériques jouent un rôle crucial pour garantir l'authenticité
 
 Avant de nous lancer dans la mise en œuvre, assurez-vous que les conditions préalables suivantes sont en place :
 
--  Aspose.Words pour Java : téléchargez et installez Aspose.Words pour Java à partir de[ici](https://releases.aspose.com/words/Java/).
+-  Aspose.Words pour Java : téléchargez et installez Aspose.Words pour Java à partir de[ici](https://releases.aspose.com/words/java/).
 
 ## Mise en place de votre projet
 

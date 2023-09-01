@@ -20,7 +20,7 @@ Bevor wir uns mit den technischen Details befassen, wollen wir uns ein klares Bi
 
 Zunächst müssen Sie Aspose.Words für Java installieren. Sie können die neueste Version von der Website herunterladen:
 
-[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/Java/)
+[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/java/)
 
 Befolgen Sie die bereitgestellten Installationsanweisungen, um die Bibliothek in Ihrer Java-Umgebung einzurichten.
 
@@ -112,7 +112,7 @@ In diesem Artikel haben wir untersucht, wie wichtig es ist, das Laden von Dokume
 
 #### Wie lade ich Aspose.Words für Java herunter?
 
- Sie können Aspose.Words für Java von der Website herunterladen:[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/Java/)
+ Sie können Aspose.Words für Java von der Website herunterladen:[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/java/)
 
 #### Kann ich Aspose.Words für Java kostenlos nutzen?
 

@@ -22,7 +22,7 @@ Aspose.Words for Java, geliştiricilerin Word belgeleriyle programlı olarak ça
 
 ### Aspose.Words for Java'nın Kurulumu
 
- Aspose.Words for Java'yı kullanmaya başlamak için kitaplığı yüklemeniz gerekir. Kütüphaneyi adresindeki web sitesinden indirebilirsiniz.[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/). Kütüphaneyi Java projenizde kurmak için sağlanan kurulum talimatlarını izleyin.
+ Aspose.Words for Java'yı kullanmaya başlamak için kitaplığı yüklemeniz gerekir. Kütüphaneyi adresindeki web sitesinden indirebilirsiniz.[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Kütüphaneyi Java projenizde kurmak için sağlanan kurulum talimatlarını izleyin.
 
 ### İlk Belgenizi Oluşturma
 
@@ -119,7 +119,7 @@ Evet, Aspose.Words for Java çok yönlüdür ve her seviyeden geliştirici taraf
 
 ### Aspose.Words for Java'yı nereden indirebilirim?
 
- Aspose.Words for Java'yı şu adresteki web sitesinden indirebilirsiniz:[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/). Başlamak için kurulum talimatlarını izleyin.
+ Aspose.Words for Java'yı şu adresteki web sitesinden indirebilirsiniz:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Başlamak için kurulum talimatlarını izleyin.
 
 ## Çözüm
 

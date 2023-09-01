@@ -16,7 +16,7 @@ url: /ru/java/document-splitting/splitting-documents-into-multiple-files/
 
 ## Настройка среды
 
- Для начала убедитесь, что у вас установлен Aspose.Words for Java. Вы можете скачать его с[здесь](https://releases.aspose.com/words/Java/). После того как вы загрузили и установили его, вы готовы приступить к кодированию.
+ Для начала убедитесь, что у вас установлен Aspose.Words for Java. Вы можете скачать его с[здесь](https://releases.aspose.com/words/java/). После того как вы загрузили и установили его, вы готовы приступить к кодированию.
 
 ## Шаг 1. Загрузите документ
 

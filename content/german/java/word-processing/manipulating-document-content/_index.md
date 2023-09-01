@@ -18,7 +18,7 @@ Bevor wir uns mit den Besonderheiten der Bearbeitung von Dokumentinhalten befass
 
 1. Installation und Einrichtung
    
-    Beginnen Sie mit dem Herunterladen von Aspose.Words für Java über den Download-Link:[Aspose.Words für Java herunterladen](https://releases.aspose.com/words/Java/). Installieren Sie es gemäß der bereitgestellten Dokumentation.
+    Beginnen Sie mit dem Herunterladen von Aspose.Words für Java über den Download-Link:[Aspose.Words für Java herunterladen](https://releases.aspose.com/words/java/). Installieren Sie es gemäß der bereitgestellten Dokumentation.
 
 2. API-Referenz
    

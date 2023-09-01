@@ -15,7 +15,7 @@ url: /ar/java/document-splitting/document-page-separation/
 قبل أن نتعمق في الكود، تأكد من توفر المتطلبات الأساسية التالية:
 
 - تم تثبيت مجموعة أدوات تطوير Java (JDK).
--  Aspose.Words لمكتبة Java (يمكنك تنزيلها من[هنا](https://releases.aspose.com/words/Java/))
+-  Aspose.Words لمكتبة Java (يمكنك تنزيلها من[هنا](https://releases.aspose.com/words/java/))
 - بيئة التطوير المتكاملة (IDE) من اختيارك (Eclipse، IntelliJ IDEA، وما إلى ذلك)
 
 ## إعداد مشروع جافا الخاص بك

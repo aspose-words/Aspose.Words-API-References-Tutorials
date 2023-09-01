@@ -15,7 +15,7 @@ Günümüzün dijital çağında, belgeleri yönetmek ve değiştirmek hem işle
 Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
 - Java Geliştirme Kiti (JDK) yüklü
--  Aspose.Words for Java kütüphanesi (Şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/Java/))
+-  Aspose.Words for Java kütüphanesi (Şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/))
 - Seçtiğiniz Entegre Geliştirme Ortamı (IDE) (Eclipse, IntelliJ IDEA, vb.)
 
 ## Java Projenizi Kurma

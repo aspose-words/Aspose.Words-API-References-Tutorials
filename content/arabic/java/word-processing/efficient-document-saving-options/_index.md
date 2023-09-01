@@ -75,7 +75,7 @@ doc.save("output.png", imageSaveOptions);
 
 #### كيف أقوم بتنزيل Aspose.Words لـ Java؟
 
- يمكنك تنزيل Aspose.Words for Java من موقع الويب:[تحميل Aspose.Words لجافا](https://releases.aspose.com/words/Java/).
+ يمكنك تنزيل Aspose.Words for Java من موقع الويب:[تحميل Aspose.Words لجافا](https://releases.aspose.com/words/java/).
 
 #### هل Aspose.Words for Java متوافق مع أحدث إصدارات Java؟
 

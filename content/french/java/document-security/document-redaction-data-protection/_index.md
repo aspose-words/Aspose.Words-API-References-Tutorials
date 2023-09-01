@@ -18,7 +18,7 @@ Dans ce guide, nous explorerons comment supprimer des informations sensibles à 
 
 Avant de commencer à travailler avec Aspose.Words pour Java, nous devons configurer notre environnement de développement. Suivez ces étapes:
 
-1.  Téléchargez et installez Aspose.Words pour Java : visitez[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/) pour télécharger la dernière version d’Aspose.Words pour Java.
+1.  Téléchargez et installez Aspose.Words pour Java : visitez[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) pour télécharger la dernière version d’Aspose.Words pour Java.
 
 2. Intégrez Aspose.Words à votre projet : ajoutez les fichiers JAR Aspose.Words à votre projet Java.
 

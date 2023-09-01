@@ -16,7 +16,7 @@ En el mundo digital actual, la gestión de documentos es un aspecto crítico del
 
 Antes de sumergirnos en la gestión de permisos de documentos, comencemos configurando Aspose.Words para Java. Siga estos pasos para comenzar:
 
-1.  Descargar Aspose.Words para Java: Visita[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/) para descargar la última versión de Aspose.Words para Java.
+1.  Descargar Aspose.Words para Java: Visita[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) para descargar la última versión de Aspose.Words para Java.
 
 2. Instale Aspose.Words para Java: después de descargar la biblioteca, siga las instrucciones de instalación para configurarla en su entorno de desarrollo Java.
 

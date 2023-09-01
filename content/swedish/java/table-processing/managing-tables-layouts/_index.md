@@ -18,7 +18,7 @@ Innan vi dyker in i de tekniska detaljerna, låt oss kort utforska varför hante
 
 ## Komma igång med Aspose.Words för Java
 
- För att börja vår resa måste du ha Aspose.Words för Java installerat och konfigurerat. Om du inte har gjort detta ännu kan du ladda ner det från Asposes webbplats[här](https://releases.aspose.com/words/Java/). När du har installerat biblioteket är du redo att utnyttja dess möjligheter för att hantera tabeller och layouter effektivt.
+ För att börja vår resa måste du ha Aspose.Words för Java installerat och konfigurerat. Om du inte har gjort detta ännu kan du ladda ner det från Asposes webbplats[här](https://releases.aspose.com/words/java/). När du har installerat biblioteket är du redo att utnyttja dess möjligheter för att hantera tabeller och layouter effektivt.
 
 ## Grundläggande bordshantering
 

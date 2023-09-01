@@ -14,7 +14,7 @@ Digital signatures play a crucial role in ensuring the authenticity and integrit
 
 Before we dive into the implementation, make sure you have the following prerequisites in place:
 
-- Aspose.Words for Java: Download and install Aspose.Words for Java from [here](https://releases.aspose.com/words/Java/).
+- Aspose.Words for Java: Download and install Aspose.Words for Java from [here](https://releases.aspose.com/words/java/).
 
 ## Setting up Your Project
 

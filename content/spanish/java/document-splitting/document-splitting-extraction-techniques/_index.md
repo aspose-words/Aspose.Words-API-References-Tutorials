@@ -121,7 +121,7 @@ No dude en explorar la documentación de Aspose.Words para Java para conocer fun
 
 ### ¿Cómo instalo Aspose.Words para Java?
 
- Puede descargar Aspose.Words para Java desde el sitio web:[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/)
+ Puede descargar Aspose.Words para Java desde el sitio web:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)
 
 ### ¿Puedo utilizar Aspose.Words para Java en mis proyectos comerciales?
 

@@ -15,7 +15,7 @@ En esta guía completa, exploraremos cómo dividir documentos en páginas HTML u
 Antes de profundizar en el código, asegúrese de cumplir con los siguientes requisitos previos:
 
 - Kit de desarrollo de Java (JDK) instalado en su sistema.
-- Aspose.Words para la biblioteca Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/Java/).
+- Aspose.Words para la biblioteca Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
 
 
 ## Introducción
@@ -71,7 +71,7 @@ Ahora puede convertir sus documentos de Word en páginas HTML con facilidad, hac
 
 ### ¿Cómo instalo Aspose.Words para Java?
 
- Para instalar Aspose.Words para Java, descargue la biblioteca desde[aquí](https://releases.aspose.com/words/Java/) e incluya los archivos JAR en la ruta de clase de su proyecto Java.
+ Para instalar Aspose.Words para Java, descargue la biblioteca desde[aquí](https://releases.aspose.com/words/java/) e incluya los archivos JAR en la ruta de clase de su proyecto Java.
 
 ### ¿Puedo personalizar los criterios de división?
 

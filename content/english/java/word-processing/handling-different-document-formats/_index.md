@@ -22,7 +22,7 @@ Before diving into the code, ensure you have Java Development Kit (JDK) installe
 
 To utilize Aspose.Words for Java, you need to add the Aspose.Words JAR file to your project. Follow these steps:
 
-1. Download Aspose.Words for Java: Visit the Aspose website [here](https://releases.aspose.com/words/Java/) to obtain the latest version of Aspose.Words for Java.
+1. Download Aspose.Words for Java: Visit the Aspose website [here](https://releases.aspose.com/words/java/) to obtain the latest version of Aspose.Words for Java.
 
 2. Add JAR to Your Project: Include the downloaded JAR file in your project's classpath.
 
@@ -120,7 +120,7 @@ For further reference and detailed documentation, visit [Aspose.Words for Java A
 
 ### How do I obtain Aspose.Words for Java?
 
-You can download Aspose.Words for Java from the Aspose website [here](https://releases.aspose.com/words/Java/).
+You can download Aspose.Words for Java from the Aspose website [here](https://releases.aspose.com/words/java/).
 
 ### Can I convert a Word document to PDF using Aspose.Words for Java?
 

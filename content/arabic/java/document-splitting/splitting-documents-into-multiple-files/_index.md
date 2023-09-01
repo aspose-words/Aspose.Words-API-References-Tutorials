@@ -16,7 +16,7 @@ url: /ar/java/document-splitting/splitting-documents-into-multiple-files/
 
 ## إعداد بيئتك
 
- للبدء، تأكد من تثبيت Aspose.Words for Java. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/Java/). بمجرد تنزيله وتثبيته، تصبح جاهزًا لبدء البرمجة.
+ للبدء، تأكد من تثبيت Aspose.Words for Java. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/java/). بمجرد تنزيله وتثبيته، تصبح جاهزًا لبدء البرمجة.
 
 ## الخطوة 1: قم بتحميل المستند
 

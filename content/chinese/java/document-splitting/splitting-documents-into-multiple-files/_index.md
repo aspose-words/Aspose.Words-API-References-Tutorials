@@ -16,7 +16,7 @@ url: /zh/java/document-splitting/splitting-documents-into-multiple-files/
 
 ## 设置您的环境
 
-首先，请确保您已安装 Aspose.Words for Java。您可以从以下位置下载：[这里](https://releases.aspose.com/words/Java/)。下载并安装后，您就可以开始编码了。
+首先，请确保您已安装 Aspose.Words for Java。您可以从以下位置下载：[这里](https://releases.aspose.com/words/java/)。下载并安装后，您就可以开始编码了。
 
 ## 第 1 步：加载文档
 

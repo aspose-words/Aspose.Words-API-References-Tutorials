@@ -121,7 +121,7 @@ Aspose.Words for Java предоставляет надежные возможн
 
 ### Как установить Aspose.Words для Java?
 
- Вы можете скачать Aspose.Words для Java с сайта:[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/)
+ Вы можете скачать Aspose.Words для Java с сайта:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)
 
 ### Могу ли я использовать Aspose.Words для Java в своих коммерческих проектах?
 

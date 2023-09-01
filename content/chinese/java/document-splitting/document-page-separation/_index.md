@@ -15,7 +15,7 @@ url: /zh/java/document-splitting/document-page-separation/
 在我们深入研究代码之前，请确保您具备以下先决条件：
 
 - 安装了 Java 开发工具包 (JDK)
--  Aspose.Words for Java 库（您可以从[这里](https://releases.aspose.com/words/Java/）)
+-  Aspose.Words for Java 库（您可以从[这里](https://releases.aspose.com/words/java/）)
 - 您选择的集成开发环境 (IDE)（Eclipse、IntelliJ IDEA 等）
 
 ## 设置您的 Java 项目

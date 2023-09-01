@@ -16,7 +16,7 @@ Günümüzün dijital dünyasında belge yönetimi her kuruluşun iş akışın�
 
 Belge izinlerini yönetmeye geçmeden önce Aspose.Words for Java'yı kurarak başlayalım. Başlamak için şu adımları izleyin:
 
-1.  Aspose.Words for Java'yı indirin: Ziyaret edin[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/) Aspose.Words for Java'nın en son sürümünü indirmek için.
+1.  Aspose.Words for Java'yı indirin: Ziyaret edin[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) Aspose.Words for Java'nın en son sürümünü indirmek için.
 
 2. Aspose.Words for Java'yı yükleyin: Kitaplığı indirdikten sonra, Java geliştirme ortamınıza kurmak için kurulum talimatlarını izleyin.
 

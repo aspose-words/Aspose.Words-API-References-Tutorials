@@ -18,7 +18,7 @@ Prima di addentrarci nello specifico della manipolazione del contenuto dei docum
 
 1. Installazione e configurazione
    
-    Inizia scaricando Aspose.Words per Java dal collegamento per il download:[Aspose.Words per il download di Java](https://releases.aspose.com/words/Java/). Installalo secondo la documentazione fornita.
+    Inizia scaricando Aspose.Words per Java dal collegamento per il download:[Aspose.Words per il download di Java](https://releases.aspose.com/words/java/). Installalo secondo la documentazione fornita.
 
 2. Riferimento API
    

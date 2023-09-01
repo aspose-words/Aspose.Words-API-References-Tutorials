@@ -20,7 +20,7 @@ Before we dive into the nitty-gritty of table formatting, let's set up our devel
 
 ### Installation
 
-To begin, you'll need to download and install Aspose.Words for Java. You can find the download link [here](https://releases.aspose.com/words/Java/). Once installed, you can start using this library to work with documents programmatically.
+To begin, you'll need to download and install Aspose.Words for Java. You can find the download link [here](https://releases.aspose.com/words/java/). Once installed, you can start using this library to work with documents programmatically.
 
 ### Adding Aspose.Words for Java to Your Project
 

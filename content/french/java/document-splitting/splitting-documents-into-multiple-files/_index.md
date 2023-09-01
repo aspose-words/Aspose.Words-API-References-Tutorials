@@ -16,7 +16,7 @@ Avant d'entrer dans les détails techniques, il est essentiel de comprendre ce q
 
 ## Configuration de votre environnement
 
- Pour commencer, assurez-vous que Aspose.Words pour Java est installé. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/Java/). Une fois que vous l'avez téléchargé et installé, vous êtes prêt à commencer à coder.
+ Pour commencer, assurez-vous que Aspose.Words pour Java est installé. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/java/). Une fois que vous l'avez téléchargé et installé, vous êtes prêt à commencer à coder.
 
 ## Étape 1 : Charger le document
 

@@ -18,7 +18,7 @@ In this guide, we will explore how to redact sensitive information from Word doc
 
 Before we start working with Aspose.Words for Java, we need to set up our development environment. Follow these steps:
 
-1. Download and Install Aspose.Words for Java: Visit [https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/) to download the latest version of Aspose.Words for Java.
+1. Download and Install Aspose.Words for Java: Visit [https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) to download the latest version of Aspose.Words for Java.
 
 2. Integrate Aspose.Words into Your Project: Add the Aspose.Words JAR files to your Java project.
 

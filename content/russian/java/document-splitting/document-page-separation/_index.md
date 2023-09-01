@@ -15,7 +15,7 @@ url: /ru/java/document-splitting/document-page-separation/
 Прежде чем мы углубимся в код, убедитесь, что у вас есть следующие предварительные условия:
 
 - Установлен пакет разработки Java (JDK).
--  Библиотека Aspose.Words для Java (ее можно скачать с сайта[здесь](https://releases.aspose.com/words/Java/))
+-  Библиотека Aspose.Words для Java (ее можно скачать с сайта[здесь](https://releases.aspose.com/words/java/))
 - Интегрированная среда разработки (IDE) по вашему выбору (Eclipse, IntelliJ IDEA и т. д.)
 
 ## Настройка вашего Java-проекта

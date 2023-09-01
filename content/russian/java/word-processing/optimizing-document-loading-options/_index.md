@@ -20,7 +20,7 @@ url: /ru/java/word-processing/optimizing-document-loading-options/
 
 Для начала вам необходимо установить Aspose.Words для Java. Скачать последнюю версию можно с сайта:
 
-[Скачать Aspose.Words для Java](https://releases.aspose.com/words/Java/)
+[Скачать Aspose.Words для Java](https://releases.aspose.com/words/java/)
 
 Следуйте инструкциям по установке, чтобы настроить библиотеку в вашей среде Java.
 
@@ -112,7 +112,7 @@ Document document = new Document(txtFilePath, loadOptions);
 
 #### Как загрузить Aspose.Words для Java?
 
- Вы можете скачать Aspose.Words для Java с сайта:[Скачать Aspose.Words для Java](https://releases.aspose.com/words/Java/)
+ Вы можете скачать Aspose.Words для Java с сайта:[Скачать Aspose.Words для Java](https://releases.aspose.com/words/java/)
 
 #### Могу ли я использовать Aspose.Words для Java бесплатно?
 

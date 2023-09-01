@@ -15,7 +15,7 @@ Nell'era digitale di oggi, la gestione e la manipolazione dei documenti è un co
 Prima di approfondire il codice, assicurati di disporre dei seguenti prerequisiti:
 
 - Kit di sviluppo Java (JDK) installato
--  Libreria Aspose.Words per Java (puoi scaricarla da[Qui](https://releases.aspose.com/words/Java/))
+-  Libreria Aspose.Words per Java (puoi scaricarla da[Qui](https://releases.aspose.com/words/java/))
 - Ambiente di sviluppo integrato (IDE) di tua scelta (Eclipse, IntelliJ IDEA, ecc.)
 
 ## Configurazione del tuo progetto Java

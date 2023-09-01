@@ -14,7 +14,7 @@ url: /ru/java/document-security/digital-signatures-in-documents/
 
 Прежде чем мы углубимся в реализацию, убедитесь, что у вас есть следующие предварительные условия:
 
--  Aspose.Words для Java: Загрузите и установите Aspose.Words для Java с сайта[здесь](https://releases.aspose.com/words/Java/).
+-  Aspose.Words для Java: Загрузите и установите Aspose.Words для Java с сайта[здесь](https://releases.aspose.com/words/java/).
 
 ## Настройка вашего проекта
 

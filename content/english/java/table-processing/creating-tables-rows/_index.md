@@ -12,7 +12,7 @@ url: /java/table-processing/creating-tables-rows/
 Creating tables and rows in documents is a fundamental aspect of document processing, and Aspose.Words for Java makes this task easier than ever. In this step-by-step guide, we will explore how to utilize Aspose.Words for Java to create tables and rows in your documents. Whether you're building reports, generating invoices, or creating any document that requires structured data presentation, this guide has you covered.
 
 ## Setting the Stage
-Before we dive into the nitty-gritty details, let's ensure you have the necessary setup to work with Aspose.Words for Java. Make sure you've downloaded and installed the library. If you haven't already, you can find the download link [here](https://releases.aspose.com/words/Java/).
+Before we dive into the nitty-gritty details, let's ensure you have the necessary setup to work with Aspose.Words for Java. Make sure you've downloaded and installed the library. If you haven't already, you can find the download link [here](https://releases.aspose.com/words/java/).
 
 ## Building Tables
 ### Creating a Table

@@ -17,7 +17,7 @@ dagens digitala värld är datasäkerhet av största vikt. Oavsett om du hantera
 
 ## Ställa in Aspose.Words för Java
 
- Innan vi dyker in i att säkra dokument, låt oss se till att du har Aspose.Words för Java inställt i din Java-miljö. Om du inte redan har gjort det kan du ladda ner det från[här](https://releases.aspose.com/words/Java/).
+ Innan vi dyker in i att säkra dokument, låt oss se till att du har Aspose.Words för Java inställt i din Java-miljö. Om du inte redan har gjort det kan du ladda ner det från[här](https://releases.aspose.com/words/java/).
 
 ## Säkra dokument: Steg för steg
 

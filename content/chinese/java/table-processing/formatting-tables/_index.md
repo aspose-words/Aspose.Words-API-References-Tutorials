@@ -20,7 +20,7 @@ Aspose.Words for Java 是一个 Java 库，可让您处理文档处理的各个�
 
 ### 安装
 
-首先，您需要下载并安装 Aspose.Words for Java。你可以找到下载链接[这里](https://releases.aspose.com/words/Java/)。安装后，您可以开始使用该库以编程方式处理文档。
+首先，您需要下载并安装 Aspose.Words for Java。你可以找到下载链接[这里](https://releases.aspose.com/words/java/)。安装后，您可以开始使用该库以编程方式处理文档。
 
 ### 将 Aspose.Words for Java 添加到您的项目
 

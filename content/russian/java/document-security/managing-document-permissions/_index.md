@@ -16,7 +16,7 @@ url: /ru/java/document-security/managing-document-permissions/
 
 Прежде чем мы углубимся в управление разрешениями для документов, давайте начнем с настройки Aspose.Words для Java. Чтобы начать, выполните следующие действия:
 
-1.  Загрузите Aspose.Words для Java: Посетите[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/) чтобы загрузить последнюю версию Aspose.Words для Java.
+1.  Загрузите Aspose.Words для Java: Посетите[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) чтобы загрузить последнюю версию Aspose.Words для Java.
 
 2. Установите Aspose.Words для Java. После загрузки библиотеки следуйте инструкциям по установке, чтобы настроить ее в вашей среде разработки Java.
 

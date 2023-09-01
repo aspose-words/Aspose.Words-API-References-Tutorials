@@ -17,7 +17,7 @@ In today's digital world, data security is paramount. Whether you are handling c
 
 ## Setting Up Aspose.Words for Java
 
-Before we dive into securing documents, let's ensure that you have Aspose.Words for Java set up in your Java environment. If you haven't already done so, you can download it from [here](https://releases.aspose.com/words/Java/).
+Before we dive into securing documents, let's ensure that you have Aspose.Words for Java set up in your Java environment. If you haven't already done so, you can download it from [here](https://releases.aspose.com/words/java/).
 
 ## Securing Documents: Step by Step
 

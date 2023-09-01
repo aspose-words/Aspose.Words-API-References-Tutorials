@@ -20,7 +20,7 @@ url: /ru/java/table-processing/table-contents-generation/
 
 ### Настройка вашей среды
 
-Для начала убедитесь, что у вас установлен Aspose.Words для Java. Вы можете скачать его с сайта[здесь](https://releases.aspose.com/words/Java/).
+Для начала убедитесь, что у вас установлен Aspose.Words для Java. Вы можете скачать его с сайта[здесь](https://releases.aspose.com/words/java/).
 
 ### Создание нового проекта Java
 

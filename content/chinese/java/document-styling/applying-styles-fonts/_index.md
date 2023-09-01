@@ -16,7 +16,7 @@ Aspose.Words for Java 是一个基于 Java 的 API，使开发人员能够处理
 ## 应用样式和字体：基础知识
 
 ### 入门
-首先，您需要设置 Java 开发环境并下载 Aspose.Words for Java 库。你可以找到下载链接[这里](https://releases.aspose.com/words/Java/)。确保在您的项目中包含该库。
+首先，您需要设置 Java 开发环境并下载 Aspose.Words for Java 库。你可以找到下载链接[这里](https://releases.aspose.com/words/java/)。确保在您的项目中包含该库。
 
 ### 创建文档
 让我们首先使用 Aspose.Words for Java 创建一个新文档：

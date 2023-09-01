@@ -22,7 +22,7 @@ Aspose.Words para Java es una biblioteca Java sólida y rica en funciones que pe
 
 ### Instalación de Aspose.Words para Java
 
- Para comenzar a usar Aspose.Words para Java, necesitará instalar la biblioteca. Puede descargar la biblioteca desde el sitio web en[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/). Siga las instrucciones de instalación proporcionadas para configurar la biblioteca en su proyecto Java.
+ Para comenzar a usar Aspose.Words para Java, necesitará instalar la biblioteca. Puede descargar la biblioteca desde el sitio web en[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Siga las instrucciones de instalación proporcionadas para configurar la biblioteca en su proyecto Java.
 
 ### Creando tu primer documento
 
@@ -119,7 +119,7 @@ Sí, Aspose.Words para Java es versátil y puede ser utilizado por desarrollador
 
 ### ¿Dónde puedo descargar Aspose.Words para Java?
 
- Puede descargar Aspose.Words para Java desde el sitio web en[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/). Siga las instrucciones de instalación para comenzar.
+ Puede descargar Aspose.Words para Java desde el sitio web en[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Siga las instrucciones de instalación para comenzar.
 
 ## Conclusión
 

@@ -18,7 +18,7 @@ url: /ar/java/word-processing/manipulating-document-content/
 
 1. التثبيت والإعداد
    
-    ابدأ بتنزيل Aspose.Words for Java من رابط التنزيل:[Aspose.Words لتحميل جافا](https://releases.aspose.com/words/Java/). قم بتثبيته وفقًا للوثائق المقدمة.
+    ابدأ بتنزيل Aspose.Words for Java من رابط التنزيل:[Aspose.Words لتحميل جافا](https://releases.aspose.com/words/java/). قم بتثبيته وفقًا للوثائق المقدمة.
 
 2. مرجع واجهة برمجة التطبيقات
    

@@ -16,7 +16,7 @@ Teknik ayrıntılara girmeden önce Aspose.Words for Java'nın ne olduğunu anla
 
 ## Ortamınızı Kurma
 
- Başlamak için Aspose.Words for Java'nın kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/Java/). İndirip yükledikten sonra kodlamaya başlamaya hazırsınız.
+ Başlamak için Aspose.Words for Java'nın kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/). İndirip yükledikten sonra kodlamaya başlamaya hazırsınız.
 
 ## 1. Adım: Belgeyi Yükleyin
 

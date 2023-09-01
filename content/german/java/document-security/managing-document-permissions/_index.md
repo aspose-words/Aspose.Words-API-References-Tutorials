@@ -16,7 +16,7 @@ In der heutigen digitalen Welt ist das Dokumentenmanagement ein entscheidender A
 
 Bevor wir uns mit der Verwaltung von Dokumentberechtigungen befassen, beginnen wir mit der Einrichtung von Aspose.Words für Java. Befolgen Sie diese Schritte, um zu beginnen:
 
-1.  Laden Sie Aspose.Words für Java herunter: Besuchen Sie[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/) um die neueste Version von Aspose.Words für Java herunterzuladen.
+1.  Laden Sie Aspose.Words für Java herunter: Besuchen Sie[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) um die neueste Version von Aspose.Words für Java herunterzuladen.
 
 2. Installieren Sie Aspose.Words für Java: Befolgen Sie nach dem Herunterladen der Bibliothek die Installationsanweisungen, um sie in Ihrer Java-Entwicklungsumgebung einzurichten.
 

@@ -20,7 +20,7 @@ Innan vi går in i de tekniska detaljerna, låt oss skapa en tydlig förståelse
 
 För att börja måste du installera Aspose.Words för Java. Du kan ladda ner den senaste versionen från webbplatsen:
 
-[Ladda ner Aspose.Words för Java](https://releases.aspose.com/words/Java/)
+[Ladda ner Aspose.Words för Java](https://releases.aspose.com/words/java/)
 
 Följ installationsinstruktionerna för att ställa in biblioteket i din Java-miljö.
 
@@ -112,7 +112,7 @@ I den här artikeln har vi utforskat vikten av att optimera dokumentladdning och
 
 #### Hur laddar jag ner Aspose.Words för Java?
 
- Du kan ladda ner Aspose.Words för Java från webbplatsen:[Ladda ner Aspose.Words för Java](https://releases.aspose.com/words/Java/)
+ Du kan ladda ner Aspose.Words för Java från webbplatsen:[Ladda ner Aspose.Words för Java](https://releases.aspose.com/words/java/)
 
 #### Kan jag använda Aspose.Words för Java gratis?
 

@@ -17,7 +17,7 @@ url: /ar/java/document-security/securing-documents-passwords/
 
 ## إعداد Aspose.Words لجافا
 
- قبل أن نتعمق في تأمين المستندات، دعنا نتأكد من إعداد Aspose.Words for Java في بيئة Java لديك. إذا لم تكن قد قمت بذلك بالفعل، يمكنك تنزيله من[هنا](https://releases.aspose.com/words/Java/).
+ قبل أن نتعمق في تأمين المستندات، دعنا نتأكد من إعداد Aspose.Words for Java في بيئة Java لديك. إذا لم تكن قد قمت بذلك بالفعل، يمكنك تنزيله من[هنا](https://releases.aspose.com/words/java/).
 
 ## تأمين المستندات: خطوة بخطوة
 

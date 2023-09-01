@@ -15,7 +15,7 @@ En la era digital actual, gestionar y manipular documentos es una tarea esencial
 Antes de profundizar en el código, asegúrese de tener implementados los siguientes requisitos previos:
 
 - Kit de desarrollo Java (JDK) instalado
--  Biblioteca Aspose.Words para Java (puede descargarla desde[aquí](https://releases.aspose.com/words/Java/))
+-  Biblioteca Aspose.Words para Java (puede descargarla desde[aquí](https://releases.aspose.com/words/java/))
 - Entorno de desarrollo integrado (IDE) de su elección (Eclipse, IntelliJ IDEA, etc.)
 
 ## Configurando su proyecto Java

@@ -18,7 +18,7 @@ In questa guida esploreremo come oscurare informazioni sensibili da documenti Wo
 
 Prima di iniziare a lavorare con Aspose.Words per Java, dobbiamo configurare il nostro ambiente di sviluppo. Segui questi passi:
 
-1.  Scarica e installa Aspose.Words per Java: visita[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/) per scaricare l'ultima versione di Aspose.Words per Java.
+1.  Scarica e installa Aspose.Words per Java: visita[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) per scaricare l'ultima versione di Aspose.Words per Java.
 
 2. Integra Aspose.Words nel tuo progetto: aggiungi i file JAR Aspose.Words al tuo progetto Java.
 

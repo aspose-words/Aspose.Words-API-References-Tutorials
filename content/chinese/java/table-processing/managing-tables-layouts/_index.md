@@ -18,7 +18,7 @@ url: /zh/java/table-processing/managing-tables-layouts/
 
 ## Aspose.Words for Java 入门
 
-要开始我们的旅程，您需要安装并设置 Aspose.Words for Java。如果您还没有这样做，您可以从 Aspose 网站下载[这里](https://releases.aspose.com/words/Java/)。安装该库后，您就可以利用其功能来有效管理表格和布局。
+要开始我们的旅程，您需要安装并设置 Aspose.Words for Java。如果您还没有这样做，您可以从 Aspose 网站下载[这里](https://releases.aspose.com/words/java/)。安装该库后，您就可以利用其功能来有效管理表格和布局。
 
 ## 基本表管理
 

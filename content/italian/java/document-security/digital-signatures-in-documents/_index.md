@@ -14,7 +14,7 @@ Le firme digitali svolgono un ruolo cruciale nel garantire l’autenticità e l�
 
 Prima di approfondire l'implementazione, assicurati di disporre dei seguenti prerequisiti:
 
--  Aspose.Words per Java: Scarica e installa Aspose.Words per Java da[Qui](https://releases.aspose.com/words/Java/).
+-  Aspose.Words per Java: Scarica e installa Aspose.Words per Java da[Qui](https://releases.aspose.com/words/java/).
 
 ## Impostazione del tuo progetto
 

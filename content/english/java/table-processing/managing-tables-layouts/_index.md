@@ -18,7 +18,7 @@ Before diving into the technical details, let's briefly explore why managing tab
 
 ## Getting Started with Aspose.Words for Java
 
-To begin our journey, you need to have Aspose.Words for Java installed and set up. If you haven't done this yet, you can download it from the Aspose website [here](https://releases.aspose.com/words/Java/). Once you've installed the library, you're ready to harness its capabilities for managing tables and layouts effectively.
+To begin our journey, you need to have Aspose.Words for Java installed and set up. If you haven't done this yet, you can download it from the Aspose website [here](https://releases.aspose.com/words/java/). Once you've installed the library, you're ready to harness its capabilities for managing tables and layouts effectively.
 
 ## Basic Table Management
 

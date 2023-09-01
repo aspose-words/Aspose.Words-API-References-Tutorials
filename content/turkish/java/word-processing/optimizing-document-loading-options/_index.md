@@ -20,7 +20,7 @@ Teknik ayrıntılara girmeden önce belge yüklemeyi optimize etmenin önemini n
 
 Başlamak için Aspose.Words for Java'yı yüklemeniz gerekecek. En son sürümü web sitesinden indirebilirsiniz:
 
-[Aspose.Words for Java'yı indirin](https://releases.aspose.com/words/Java/)
+[Aspose.Words for Java'yı indirin](https://releases.aspose.com/words/java/)
 
 Kütüphaneyi Java ortamınızda kurmak için sağlanan kurulum talimatlarını izleyin.
 
@@ -112,7 +112,7 @@ Bu makalede belge yüklemeyi optimize etmenin önemini ve Aspose.Words for Java 
 
 #### Aspose.Words for Java'yı nasıl indirebilirim?
 
- Aspose.Words for Java'yı web sitesinden indirebilirsiniz:[Aspose.Words for Java'yı indirin](https://releases.aspose.com/words/Java/)
+ Aspose.Words for Java'yı web sitesinden indirebilirsiniz:[Aspose.Words for Java'yı indirin](https://releases.aspose.com/words/java/)
 
 #### Aspose.Words for Java'yı ücretsiz kullanabilir miyim?
 

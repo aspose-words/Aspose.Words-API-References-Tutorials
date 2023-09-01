@@ -22,7 +22,7 @@ Bu belge formatı işleme yolculuğuna çıkmak için öncelikle ortamımızı k
 
 Aspose.Words for Java'yı kullanmak için Aspose.Words JAR dosyasını projenize eklemeniz gerekir. Bu adımları takip et:
 
-1.  Aspose.Words for Java'yı indirin: Aspose web sitesini ziyaret edin[Burada](https://releases.aspose.com/words/Java/) Aspose.Words for Java'nın en son sürümünü edinmek için.
+1.  Aspose.Words for Java'yı indirin: Aspose web sitesini ziyaret edin[Burada](https://releases.aspose.com/words/java/) Aspose.Words for Java'nın en son sürümünü edinmek için.
 
 2. Projenize JAR Ekle: İndirilen JAR dosyasını projenizin sınıf yoluna ekleyin.
 
@@ -120,7 +120,7 @@ Aspose.Words for Java, çeşitli belge formatlarını işlemek için güçlü bi
 
 ### Aspose.Words for Java'yı nasıl edinebilirim?
 
- Aspose.Words for Java'yı Aspose web sitesinden indirebilirsiniz[Burada](https://releases.aspose.com/words/Java/).
+ Aspose.Words for Java'yı Aspose web sitesinden indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 ### Aspose.Words for Java'yı kullanarak bir Word belgesini PDF'ye dönüştürebilir miyim?
 

@@ -12,7 +12,7 @@ url: /es/java/table-processing/creating-tables-rows/
 Crear tablas y filas en documentos es un aspecto fundamental del procesamiento de documentos y Aspose.Words para Java hace que esta tarea sea más fácil que nunca. En esta guía paso a paso, exploraremos cómo utilizar Aspose.Words para Java para crear tablas y filas en sus documentos. Ya sea que esté creando informes, generando facturas o creando cualquier documento que requiera una presentación de datos estructurados, esta guía lo tiene cubierto.
 
 ## Preparando el escenario
-Antes de profundizar en los detalles esenciales, asegurémonos de tener la configuración necesaria para trabajar con Aspose.Words para Java. Asegúrese de haber descargado e instalado la biblioteca. Si aún no lo has hecho, puedes encontrar el enlace de descarga.[aquí](https://releases.aspose.com/words/Java/).
+Antes de profundizar en los detalles esenciales, asegurémonos de tener la configuración necesaria para trabajar con Aspose.Words para Java. Asegúrese de haber descargado e instalado la biblioteca. Si aún no lo has hecho, puedes encontrar el enlace de descarga.[aquí](https://releases.aspose.com/words/java/).
 
 ## Mesas de construcción
 ### Creando una tabla

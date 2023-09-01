@@ -15,7 +15,7 @@ url: /fr/java/document-splitting/document-page-separation/
 Avant de plonger dans le code, assurez-vous que les conditions préalables suivantes sont en place :
 
 - Kit de développement Java (JDK) installé
--  Bibliothèque Aspose.Words pour Java (vous pouvez la télécharger depuis[ici](https://releases.aspose.com/words/Java/))
+-  Bibliothèque Aspose.Words pour Java (vous pouvez la télécharger depuis[ici](https://releases.aspose.com/words/java/))
 - Environnement de développement intégré (IDE) de votre choix (Eclipse, IntelliJ IDEA, etc.)
 
 ## Configuration de votre projet Java

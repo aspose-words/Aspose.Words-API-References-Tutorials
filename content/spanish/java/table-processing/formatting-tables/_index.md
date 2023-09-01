@@ -20,7 +20,7 @@ Antes de profundizar en el meollo del formato de tablas, configuremos nuestro en
 
 ### Instalación
 
- Para comenzar, necesitarás descargar e instalar Aspose.Words para Java. Puedes encontrar el enlace de descarga.[aquí](https://releases.aspose.com/words/Java/). Una vez instalada, puede comenzar a usar esta biblioteca para trabajar con documentos mediante programación.
+ Para comenzar, necesitarás descargar e instalar Aspose.Words para Java. Puedes encontrar el enlace de descarga.[aquí](https://releases.aspose.com/words/java/). Una vez instalada, puede comenzar a usar esta biblioteca para trabajar con documentos mediante programación.
 
 ### Agregar Aspose.Words para Java a su proyecto
 

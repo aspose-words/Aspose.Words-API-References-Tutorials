@@ -16,7 +16,7 @@ Bevor wir auf die technischen Details eingehen, ist es wichtig zu verstehen, was
 
 ## Einrichten Ihrer Umgebung
 
- Stellen Sie zunächst sicher, dass Aspose.Words für Java installiert ist. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/Java/). Sobald Sie es heruntergeladen und installiert haben, können Sie mit dem Codieren beginnen.
+ Stellen Sie zunächst sicher, dass Aspose.Words für Java installiert ist. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/java/). Sobald Sie es heruntergeladen und installiert haben, können Sie mit dem Codieren beginnen.
 
 ## Schritt 1: Laden Sie das Dokument
 
