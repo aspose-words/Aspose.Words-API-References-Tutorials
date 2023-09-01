@@ -90,4 +90,4 @@ Yes, you can merge the separated pages back into a single document using Aspose.
 
 ### Where can I find more resources and examples for Aspose.Words?
 
-You can explore the official Aspose.Words for Java documentation [here](https://reference.aspose.com/words/java/) for detailed examples, API references, and tutorials.
+You can explore the Aspose.Words for Java documentation [here](https://reference.aspose.com/words/java/) for detailed examples, API references, and tutorials.

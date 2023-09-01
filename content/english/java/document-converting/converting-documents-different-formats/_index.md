@@ -18,7 +18,7 @@ Before we dive into the details of document conversion, let's get started with A
 
 ## Step 1: Installation
 
-To begin, you need to download and install Aspose.Words for Java. You can download it from the official website: [Download Aspose.Words for Java](https://releases.aspose.com/words/java/).
+To begin, you need to download and install Aspose.Words for Java. You can download it from the website: [Download Aspose.Words for Java](https://releases.aspose.com/words/java/).
 
 ## Step 2: Setting Up Your Java Project
 
@@ -70,7 +70,7 @@ In this guide, we've explored how to use Aspose.Words for Java to convert docume
 
 ### How do I get started with Aspose.Words for Java?
 
-Getting started with Aspose.Words for Java is easy. First, download and install the library from the official website. Then, set up your Java project and add the Aspose.Words JAR file to your classpath.
+Getting started with Aspose.Words for Java is easy. First, download and install the library from the website. Then, set up your Java project and add the Aspose.Words JAR file to your classpath.
 
 ### What document formats can I convert using Aspose.Words for Java?
 

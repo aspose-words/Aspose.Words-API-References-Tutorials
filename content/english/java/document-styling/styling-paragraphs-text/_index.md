@@ -361,17 +361,17 @@ This code snippet saves the document as a PDF file.
 
 ## Advanced Features
 
-Aspose.Words for Java offers advanced features for complex document manipulation. These include mail merge, document comparison, and more. Explore the official documentation for in-depth guidance on these advanced topics.
+Aspose.Words for Java offers advanced features for complex document manipulation. These include mail merge, document comparison, and more. Explore the documentation for in-depth guidance on these advanced topics.
 
 ## Tips and Best Practices
 
 - Keep your code modular and well-organized for easier maintenance.
 - Use comments to explain complex logic and improve code readability.
-- Regularly refer to the official Aspose.Words for Java documentation for updates and additional resources.
+- Regularly refer to the Aspose.Words for Java documentation for updates and additional resources.
 
 ## Troubleshooting Common Issues
 
-Encounter an issue while working with Aspose.Words for Java? Check the official support forum and documentation for solutions to common problems.
+Encounter an issue while working with Aspose.Words for Java? Check the support forum and documentation for solutions to common problems.
 
 ## Frequently Asked Questions (FAQs)
 
@@ -408,7 +408,7 @@ run.getFont().setItalic(true);  // Make text italic
 ```
 
 ### What is the latest version of Aspose.Words for Java?
-You can check the official Aspose website or the Maven repository for the latest version of Aspose.Words for Java.
+You can check the Aspose website or the Maven repository for the latest version of Aspose.Words for Java.
 
 ### Is Aspose.Words for Java compatible with Java 11?
 Yes, Aspose.Words for Java is compatible with Java 11 and later versions.

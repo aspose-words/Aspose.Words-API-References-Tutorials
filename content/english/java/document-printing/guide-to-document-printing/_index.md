@@ -28,7 +28,7 @@ To get started with Aspose.Words for Java, you need to set up your development e
 
 ### Installing Java Development Kit (JDK)
 
-If you haven't already installed JDK, head over to the official Oracle website and download the latest version of JDK suitable for your operating system. Install it by following the installation wizard instructions.
+If you haven't already installed JDK, head over to the Oracle website and download the latest version of JDK suitable for your operating system. Install it by following the installation wizard instructions.
 
 ### Adding Aspose.Words for Java to Your Project
 

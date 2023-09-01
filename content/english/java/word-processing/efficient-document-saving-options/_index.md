@@ -16,7 +16,7 @@ Aspose.Words for Java is a feature-rich library that allows Java developers to c
 
 ## Setting up Your Development Environment
 
-Before diving into coding, you need to set up your development environment. Ensure you have Java and Aspose.Words for Java installed. Refer to the official documentation for detailed installation instructions: [Aspose.Words for Java Installation Guide](https://releases.aspose.com/words/java/).
+Before diving into coding, you need to set up your development environment. Ensure you have Java and Aspose.Words for Java installed. Refer to the documentation for detailed installation instructions: [Aspose.Words for Java Installation Guide](https://releases.aspose.com/words/java/).
 
 ## Creating and Loading a Word Document
 

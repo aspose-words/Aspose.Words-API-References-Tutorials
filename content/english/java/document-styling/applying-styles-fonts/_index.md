@@ -98,7 +98,7 @@ builder.getFont().setBold(true);
 To apply different styles to different paragraphs, create multiple instances of the `DocumentBuilder` and set styles individually for each paragraph.
 
 ### Can I import existing styles from a template document?
-Yes, you can import styles from a template document using Aspose.Words for Java. Refer to the official documentation for detailed instructions.
+Yes, you can import styles from a template document using Aspose.Words for Java. Refer to the documentation for detailed instructions.
 
 ### Is it possible to apply conditional formatting based on document content?
 Aspose.Words for Java provides powerful conditional formatting capabilities. You can create rules that apply styles or fonts based on specific conditions within the document.

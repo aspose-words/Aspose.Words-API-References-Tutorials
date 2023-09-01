@@ -96,6 +96,6 @@ A: Yes, Aspose.Words for Java requires a valid license for commercial use. Visit
 
 ### How can I access more resources and documentation for Aspose.Words for Java?
 
-A: Visit the official Aspose.Words for Java documentation at [https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) for comprehensive resources and guides.
+A: Visit the Aspose.Words for Java documentation at [https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) for comprehensive resources and guides.
 
 Enhance your document security and data protection with Aspose.Words for Java. Start protecting your sensitive information today!

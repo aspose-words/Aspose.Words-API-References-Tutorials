@@ -20,7 +20,7 @@ Aspose.Words for Java is a game-changer when it comes to working with Word docum
 
 Before we can start working with Aspose.Words for Java, we need to set up our development environment. Follow these steps:
 
-1. Install Java: If you don't have Java installed, download and install the latest version from the official website.
+1. Install Java: If you don't have Java installed, download and install the latest version from the website.
 
 2. Download Aspose.Words for Java: Head over to [Aspose.Words for Java](https://releases.aspose.com/words/java/) and download the latest version of the library.
 
@@ -144,7 +144,7 @@ Yes, Aspose.Words for Java is compatible with Java 11 and higher versions.
 
 ### What are some common errors and how to troubleshoot them?
 
-Common errors in Aspose.Words for Java are typically related to document structure or formatting. Refer to the official documentation and community forums for troubleshooting tips.
+Common errors in Aspose.Words for Java are typically related to document structure or formatting. Refer to the documentation and community forums for troubleshooting tips.
 
 ### How can I contribute to the Aspose.Words for Java community?
 

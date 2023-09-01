@@ -59,7 +59,7 @@ To split a document by a keyword, you can iterate through the document's content
 Yes, you can. After splitting the document using Aspose.Words for Java, you can use Aspose.PDF for Java to save each part as a PDF file.
 
 ### Is Aspose.Words for Java free to use?
-Aspose.Words for Java is a commercial library, but it offers a free trial. You can check their pricing and licensing on their official website.
+Aspose.Words for Java is a commercial library, but it offers a free trial. You can check their pricing and licensing on their website.
 
 ### What if my document has complex formatting?
 Aspose.Words for Java can handle documents with complex formatting, including tables, images, and more. It preserves the original formatting during the split.

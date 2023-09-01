@@ -112,7 +112,7 @@ In this article, we've explored the importance of optimizing document loading an
 
 #### How do I download Aspose.Words for Java?
 
-You can download Aspose.Words for Java from the official website: [Download Aspose.Words for Java](https://releases.aspose.com/words/Java/)
+You can download Aspose.Words for Java from the website: [Download Aspose.Words for Java](https://releases.aspose.com/words/Java/)
 
 #### Can I use Aspose.Words for Java for free?
 

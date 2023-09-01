@@ -120,7 +120,7 @@ For further reference and detailed documentation, visit [Aspose.Words for Java A
 
 ### How do I obtain Aspose.Words for Java?
 
-You can download Aspose.Words for Java from the official Aspose website [here](https://releases.aspose.com/words/Java/).
+You can download Aspose.Words for Java from the Aspose website [here](https://releases.aspose.com/words/Java/).
 
 ### Can I convert a Word document to PDF using Aspose.Words for Java?
 
@@ -128,7 +128,7 @@ Yes, Aspose.Words for Java provides easy methods to convert Word documents to PD
 
 ### Are there any licensing requirements for using Aspose.Words for Java?
 
-Yes, Aspose.Words for Java requires a valid license for commercial use. You can find more information on licensing on the official Aspose website.
+Yes, Aspose.Words for Java requires a valid license for commercial use. You can find more information on licensing on the Aspose website.
 
 ### Is Aspose.Words for Java suitable for both basic and advanced document manipulations?
 

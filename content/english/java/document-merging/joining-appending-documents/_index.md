@@ -79,7 +79,7 @@ Congratulations! You've successfully learned how to join and append documents us
 
 ### How do I install Aspose.Words for Java?
 
-Installing Aspose.Words for Java is straightforward. You can download it from the official Aspose website [here](https://releases.aspose.com/words/java/). Ensure you have the necessary license for commercial use.
+Installing Aspose.Words for Java is straightforward. You can download it from the Aspose website [here](https://releases.aspose.com/words/java/). Ensure you have the necessary license for commercial use.
 
 ### Can I merge more than two documents using Aspose.Words for Java?
 
