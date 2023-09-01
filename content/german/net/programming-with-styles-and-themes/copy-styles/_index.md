@@ -45,7 +45,7 @@ Jetzt können Sie Quellcode ausführen, um Stile aus einem Quelldokument in ein 
 
 ```csharp
 
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document();

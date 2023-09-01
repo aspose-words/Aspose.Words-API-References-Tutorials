@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Paso 3: crear marcadores anidados
 
- También podemos crear marcadores anidados dentro de un marcador principal. Usamos lo mismo`StartBookmark` y`EndBookmark` Métodos para crear y finalizar marcadores anidados:
+También podemos crear marcadores anidados dentro de un marcador principal. Usamos lo mismo`StartBookmark` y`EndBookmark` Métodos para crear y finalizar marcadores anidados:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -102,7 +102,7 @@ R: Para utilizar la función "Crear marcadores" en Aspose.Words para .NET, debe 
 
 #### P: ¿Cómo crear un documento en Aspose.Words para .NET?
 
- R: Para crear un documento en Aspose.Words para .NET, puede utilizar el`Document`clase. Aquí hay un código de muestra:
+ R: Para crear un documento en Aspose.Words para .NET, puede utilizar el`Document` clase. Aquí hay un código de muestra:
 
 ```csharp
 Document doc = new Document();
@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### P: ¿Cómo agregar texto dentro de un marcador usando Aspose.Words para .NET?
 
- R: Para agregar texto dentro de un marcador usando Aspose.Words para .NET, puede usar el`Write` método de la`DocumentBuilder` objeto que especifica el texto a agregar. Aquí hay un código de muestra:
+R: Para agregar texto dentro de un marcador usando Aspose.Words para .NET, puede usar el`Write` método de la`DocumentBuilder` objeto que especifica el texto a agregar. Aquí hay un código de muestra:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

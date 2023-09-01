@@ -18,7 +18,7 @@ Aspose.Words for Java, geliştiricilerin Microsoft Word'e ihtiyaç duymadan Word
 
 ## 2. Java Geliştirme Ortamınızı Kurma
 
-Başlamadan önce sisteminizde Java Development Kit'in (JDK) kurulu olduğundan emin olun. En son JDK'yı resmi Oracle web sitesinden indirebilirsiniz. Ayrıca Java geliştirme için Eclipse veya IntelliJ IDEA gibi bir Tümleşik Geliştirme Ortamı (IDE) seçin.
+Başlamadan önce sisteminizde Java Development Kit'in (JDK) kurulu olduğundan emin olun. En son JDK'yı Oracle web sitesinden indirebilirsiniz. Ayrıca Java geliştirme için Eclipse veya IntelliJ IDEA gibi bir Tümleşik Geliştirme Ortamı (IDE) seçin.
 
 ## 3. Aspose.Words for Java'nın Kurulumu
 

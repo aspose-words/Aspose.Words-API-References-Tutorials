@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/smart-style-behavior/
 
 ## Шаг 1. Инициализируйте каталоги документов
 
- Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir`переменная пути, по которому расположены ваши документы.
+ Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir` переменная пути, по которому расположены ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Шаг 4. Установите параметры поведения умного стиля
 
- Чтобы включить интеллектуальное поведение стиля во время операции добавления, вам необходимо создать экземпляр`ImportFormatOptions` и установите`SmartStyleBehavior` собственность`true`.
+Чтобы включить интеллектуальное поведение стиля во время операции добавления, вам необходимо создать экземпляр`ImportFormatOptions` и установите`SmartStyleBehavior` собственность`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
@@ -73,7 +73,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 Вот полный исходный код функции «Умное поведение стиля» на C# с использованием Aspose.Words для .NET:
  
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

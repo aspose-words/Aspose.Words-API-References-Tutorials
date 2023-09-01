@@ -18,7 +18,7 @@ url: /ar/python-net/document-options-and-settings/document-functionality-web-ext
 
 - الفهم الأساسي لبرمجة بايثون.
 -  Aspose.Words لمرجع Python API (متوفر على[هنا](https://reference.aspose.com/words/python-net/).
--  الوصول إلى مكتبة Aspose.Words for Python (التنزيل من[هنا](https://releases.aspose.com/words/python/).
+- الوصول إلى مكتبة Aspose.Words for Python (التنزيل من[هنا](https://releases.aspose.com/words/python/).
 
 ## إعداد Aspose.Words لـ Python
 

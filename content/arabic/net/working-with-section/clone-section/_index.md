@@ -40,7 +40,7 @@ Section cloneSection = doc.Sections[0].Clone();
 
 ```csharp
 
-//المسار إلى دليل المستندات الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");

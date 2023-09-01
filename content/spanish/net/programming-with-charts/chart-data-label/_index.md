@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ### Código fuente de ejemplo para etiqueta de datos de gráfico usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ### Aspose.Words for .NET kullanan Kaynak Steam Yazı Tipi Kaynak Örneği için örnek kaynak kodu 
 
 ```csharp
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

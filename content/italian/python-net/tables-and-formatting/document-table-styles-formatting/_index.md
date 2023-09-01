@@ -250,7 +250,7 @@ Sì, puoi applicare stili personalizzati alle tue tabelle modificando varie prop
 
 ### È possibile unire le celle in una tabella?
 
- Sì, puoi unire le celle in una tabella utilizzando il file`CellMerge`proprietà fornita da Aspose.Words.
+ Sì, puoi unire le celle in una tabella utilizzando il file`CellMerge` proprietà fornita da Aspose.Words.
 
 ### Come posso esportare le mie tabelle in diversi formati?
 

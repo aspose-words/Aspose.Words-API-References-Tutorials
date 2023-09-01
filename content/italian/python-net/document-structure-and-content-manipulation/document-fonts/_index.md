@@ -145,7 +145,7 @@ Nell'ambito della creazione di documenti, i caratteri e lo stile del testo sono 
 
 ### Come posso cambiare il colore del carattere usando Aspose.Words per Python?
 
- Per cambiare il colore del carattere, puoi accedere a`Font`classe e impostare il file`color` proprietà al valore di colore desiderato.
+ Per cambiare il colore del carattere, puoi accedere a`Font` classe e impostare il file`color` proprietà al valore di colore desiderato.
 
 ### Posso applicare più stili allo stesso testo utilizzando Aspose.Words?
 

@@ -70,7 +70,7 @@ Tebrikler! Artık Aspose.Words for .NET'i kullanarak bir tabloyu ve hücreyi far
 ### Aspose.Words for .NET kullanarak Tabloyu ve Farklı Kenarlıklı Hücreyi Biçimlendirme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

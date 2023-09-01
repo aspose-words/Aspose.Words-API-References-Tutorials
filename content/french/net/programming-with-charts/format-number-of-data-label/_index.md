@@ -75,7 +75,7 @@ Ceci termine la mise en œuvre du formatage du nombre d’étiquettes de donnée
 ### Exemple de code source pour le format du numéro d'étiquette de données à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

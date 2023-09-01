@@ -89,7 +89,7 @@ A: Um die Signaturanbieter-ID für eine Signaturzeile in einem Word-Dokument mit
 1.  Laden Sie das Dokument mit`Document` Klasse und geben Sie den Pfad zur Dokumentdatei an.
 2.  Greifen Sie mit der entsprechenden Methode oder Eigenschaft auf die Signaturzeile zu. Sie können zum Beispiel verwenden`GetChild` Methode zum Abrufen der Signaturlinienform.
 3. Rufen Sie die Anbieter-ID aus der Signaturzeile ab.
-4.  Erstellen Sie eine Instanz von`SignOptions`Klasse und legen Sie die fest`ProviderId` -Eigenschaft zur abgerufenen Anbieter-ID hinzufügen.
+4.  Erstellen Sie eine Instanz von`SignOptions` Klasse und legen Sie die fest`ProviderId` -Eigenschaft zur abgerufenen Anbieter-ID hinzufügen.
 5.  Benutzen Sie die`DigitalSignatureUtil.Sign` Methode zum Signieren des Dokuments unter Bereitstellung der erforderlichen Parameter, einschließlich der`SignOptions` Objekt.
 
 #### F: Wie greife ich mit Aspose.Words für .NET auf die Signaturzeile in einem Word-Dokument zu?

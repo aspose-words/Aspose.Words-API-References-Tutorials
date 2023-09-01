@@ -77,7 +77,7 @@ C: Aspose.Words for .NET'i temel yazı tiplerini bir PDF dosyasına yerleştirme
 
  PDF'ye dönüştürmek istediğiniz Word belgesini kullanarak yükleyin.`Document` sınıf ve belirtilen belge yolu.
 
- Bir örneğini oluşturun`PdfSaveOptions`sınıfı seçin ve ayarlayın`UseCoreFonts` mülkiyet`true`. Bu, temel yazı tiplerinin oluşturulan PDF dosyasına gömülmesini önleyecektir.
+ Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`UseCoreFonts` mülkiyet`true`. Bu, temel yazı tiplerinin oluşturulan PDF dosyasına gömülmesini önleyecektir.
 
  Kullan`Save` yöntemi`Document` Daha önce yapılandırılan dönüştürme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için nesneyi seçin.
 

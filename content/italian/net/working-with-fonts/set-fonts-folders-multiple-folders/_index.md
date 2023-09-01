@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ### Codice sorgente di esempio per Imposta cartelle di caratteri Cartelle multiple utilizzando Aspose.Words per .NET 
 
 ```csharp
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

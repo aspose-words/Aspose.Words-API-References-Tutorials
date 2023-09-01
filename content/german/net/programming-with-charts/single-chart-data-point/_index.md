@@ -74,7 +74,7 @@ Damit ist die Implementierung der Anpassung eines einzelnen Datenpunkts in einem
 ### Beispielquellcode für Single Chart Data Point mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

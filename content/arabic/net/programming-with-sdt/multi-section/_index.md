@@ -42,7 +42,7 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 ### مثال على التعليمات البرمجية المصدر للقسم المتعدد باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

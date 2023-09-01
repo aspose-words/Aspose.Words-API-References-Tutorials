@@ -132,7 +132,7 @@ Sì, puoi automatizzare gli aggiornamenti dei metadati utilizzando Aspose.Words.
 
 ### Come posso proteggere le informazioni sensibili nei metadati?
 
-Per proteggere le informazioni sensibili nei metadati, puoi rimuovere proprietà specifiche utilizzando il file`remove` metodo.
+ Per proteggere le informazioni sensibili nei metadati, puoi rimuovere proprietà specifiche utilizzando il file`remove` metodo.
 
 ### Quali sono alcune best practice per la gestione delle proprietà dei documenti?
 

@@ -42,7 +42,7 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 ### Exempel på källkod för Multi Section med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

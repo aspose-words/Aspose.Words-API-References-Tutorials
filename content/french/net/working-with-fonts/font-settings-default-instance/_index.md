@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Exemple de code source pour l'instance par défaut des paramètres de police à l'aide d'Aspose.Words pour .NET 
 ```csharp
 
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;

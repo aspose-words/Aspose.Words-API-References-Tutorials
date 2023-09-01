@@ -67,12 +67,12 @@ Efter att ha tagit bort sidbrytningarna måste vi spara det ändrade dokumentet.
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Byta ut`"modified-document.docx"` med önskat namn för ditt modifierade dokument.
+ Byta ut`"modified-document.docx"`med önskat namn för ditt modifierade dokument.
 
 ### Exempel på källkod för Remove Page Breaks med Aspose.Words för .NET 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Ladda dokumentet
@@ -154,4 +154,4 @@ S: När du har tagit bort sidbrytningar måste du spara det ändrade dokumentet.
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Byta ut`"modified-document.docx"` med önskat namn för ditt modifierade dokument.
+ Byta ut`"modified-document.docx"`med önskat namn för ditt modifierade dokument.

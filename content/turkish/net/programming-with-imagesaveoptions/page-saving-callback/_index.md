@@ -67,7 +67,7 @@ Artık belgenin her sayfasını görüntü olarak kaydederken özel eylemler ger
 
 
 ```csharp 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 

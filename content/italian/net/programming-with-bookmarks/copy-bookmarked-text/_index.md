@@ -50,7 +50,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 ## Passaggio 5: importa e copia il testo dei segnalibri
 
- Usiamo a`NodeImporter` oggetto per importare e copiare il testo del segnalibro da un documento di origine al documento di destinazione:
+ Usiamo a`NodeImporter`oggetto per importare e copiare il testo del segnalibro da un documento di origine al documento di destinazione:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -76,7 +76,7 @@ Ecco il codice sorgente di esempio completo per dimostrare la copia del testo da
 	// Aggiungeremo a questo documento.
 	Document dstDoc = new Document();
 
-	//Diciamo che verremo aggiunti alla fine del corpo dell'ultima sezione.
+	// Diciamo che verremo aggiunti alla fine del corpo dell'ultima sezione.
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
 	// Se importi più volte senza un singolo contesto, verranno creati molti stili.
@@ -100,7 +100,7 @@ R: Per utilizzare la funzione "Copia testo con segnalibri" in Aspose.Words per .
 
 #### D: Come carico un documento sorgente in Aspose.Words per .NET?
 
- R: Per caricare un documento sorgente in Aspose.Words per .NET, è possibile utilizzare il file`Document`classe specificando il percorso del file del documento. Ecco un codice di esempio:
+ R: Per caricare un documento sorgente in Aspose.Words per .NET, è possibile utilizzare il file`Document` classe specificando il percorso del file del documento. Ecco un codice di esempio:
 
 ```csharp
 Document srcDoc = new Document("path/to/your/document.docx");
@@ -116,7 +116,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### D: Come specificare la posizione della copia del testo del segnalibro in un documento di destinazione utilizzando Aspose.Words per .NET?
 
- R: Per specificare dove si desidera aggiungere il testo del segnalibro copiato in un documento di destinazione utilizzando Aspose.Words per .NET, è possibile accedere al corpo dell'ultima sezione del documento di destinazione. Puoi usare il`LastSection` property per accedere all'ultima sezione e al`Body` property per accedere al corpo di quella sezione. Ecco un codice di esempio:
+R: Per specificare dove si desidera aggiungere il testo del segnalibro copiato in un documento di destinazione utilizzando Aspose.Words per .NET, è possibile accedere al corpo dell'ultima sezione del documento di destinazione. Puoi usare il`LastSection` property per accedere all'ultima sezione e al`Body` property per accedere al corpo di quella sezione. Ecco un codice di esempio:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
@@ -124,7 +124,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 #### D: Come importare e copiare il testo dei segnalibri dal documento di origine al documento di destinazione utilizzando Aspose.Words per .NET?
 
-A: Per importare e copiare il testo dei segnalibri da un documento di origine a un documento di destinazione utilizzando Aspose.Words per .NET, è possibile utilizzare il`NodeImporter` classe specificando il documento di origine, il documento di destinazione e la modalità di formattazione da conservare. Quindi puoi usare il`AppendBookmarkedText` metodo per aggiungere il testo del segnalibro nel documento di destinazione. Ecco un codice di esempio:
+ A: Per importare e copiare il testo dei segnalibri da un documento di origine a un documento di destinazione utilizzando Aspose.Words per .NET, è possibile utilizzare il`NodeImporter` classe specificando il documento di origine, il documento di destinazione e la modalità di formattazione da conservare. Quindi puoi usare il`AppendBookmarkedText` metodo per aggiungere il testo del segnalibro nel documento di destinazione. Ecco un codice di esempio:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -133,7 +133,7 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 
 #### D: Come salvare un documento di destinazione dopo aver copiato il testo del segnalibro utilizzando Aspose.Words per .NET?
 
- R: Per salvare un documento di destinazione dopo aver copiato il testo da un segnalibro utilizzando Aspose.Words per .NET, è possibile utilizzare`Save` metodo del`Document` oggetto che specifica il percorso del file di destinazione. Ecco un codice di esempio:
+R: Per salvare un documento di destinazione dopo aver copiato il testo da un segnalibro utilizzando Aspose.Words per .NET, è possibile utilizzare`Save` metodo del`Document` oggetto che specifica il percorso del file di destinazione. Ecco un codice di esempio:
 
 ```csharp
 dstDoc.Save("path/to/your/destination-document.docx");

@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ### Exempel på källkod för Set Font Formatting med Aspose.Words för .NET 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

@@ -38,7 +38,7 @@ Chart chart = shape.Chart;
 
 ## الخطوة 3: إضافة بيانات السلسلة إلى المخطط
 
-إضافة بيانات السلسلة إلى المخطط. في هذا المثال، سنقوم بإضافة سلسلة متعددة تحتوي كل منها على فئتين.
+أضف بيانات السلسلة إلى المخطط. في هذا المثال، سنقوم بإضافة سلسلة متعددة تحتوي كل منها على فئتين.
 
 ```csharp
 ChartSeriesCollection seriesColl = chart.Series;
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 ### مثال على التعليمات البرمجية المصدر لإدراج مخطط عمودي بسيط باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -57,7 +57,7 @@ Damit ist die Implementierung der Einstellung der mehrzeiligen Markierungsausric
 ### Beispielquellcode für die Ausrichtung mehrzeiliger Markierungen mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

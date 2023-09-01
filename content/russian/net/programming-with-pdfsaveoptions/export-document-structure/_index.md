@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", save
 
  Создайте экземпляр`Document` класс, указывающий путь к документу Word.
 
- Создайте экземпляр`PdfSaveOptions`класс и установите`ExportDocumentStructure` собственность`true`. Это позволит экспортировать структуру документа и сделать ее видимой на панели навигации «Содержимое» Adobe Acrobat Pro при редактировании PDF-файла.
+ Создайте экземпляр`PdfSaveOptions` класс и установите`ExportDocumentStructure` собственность`true`. Это позволит экспортировать структуру документа и сделать ее видимой на панели навигации «Содержимое» Adobe Acrobat Pro при редактировании PDF-файла.
 
  Использовать`Save` метод`Document`class для сохранения документа в формате PDF, указав параметры сохранения.
 

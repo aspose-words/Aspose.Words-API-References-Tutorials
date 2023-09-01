@@ -19,7 +19,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 
 ## Passaggio 1: inizializzare le directory dei documenti
 
- Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir`variabile al percorso in cui si trovano i tuoi documenti.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Passaggio 5: salva il documento finale
 
-Infine, salva il documento unito con la funzione Scollega intestazioni piè di pagina abilitata utilizzando il file`Save` metodo del`Document` classe.
+ Infine, salva il documento unito con la funzione Scollega intestazioni piè di pagina abilitata utilizzando il file`Save` metodo del`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Ecco il codice sorgente completo per la funzionalità "Unlink Headers Footers" in C# utilizzando Aspose.Words per .NET:
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

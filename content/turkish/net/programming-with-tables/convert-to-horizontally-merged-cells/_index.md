@@ -43,7 +43,7 @@ table. ConvertToHorizontallyMergedCells();
 ### Aspose.Words for .NET kullanarak Yatay Birleştirilmiş Hücrelere Dönüştürme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");

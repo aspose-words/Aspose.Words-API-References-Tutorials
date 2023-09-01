@@ -88,7 +88,7 @@ Voici l'exemple complet de code source pour démontrer l'ajout de texte à parti
 
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
-		// Cela crée une copie du nœud actuel et l'importe (le rend valide) dans le contexte
+		//Cela crée une copie du nœud actuel et l'importe (le rend valide) dans le contexte
 		// du document de destination. Importer signifie ajuster correctement les styles et les identifiants de liste.
 		Node newNode = importer.ImportNode(curNode, true);
 
@@ -109,7 +109,7 @@ R : Pour utiliser la fonction « Ajouter du texte avec des signets » dans Aspos
 
 #### Q2 : Comment obtenir les paragraphes contenant le début et la fin d'un signet dans un document Word ?
 
- R : Pour obtenir les paragraphes contenant le début et la fin d'un signet dans un document Word, vous pouvez accéder au`BookmarkStart` et`BookmarkEnd` propriétés du signet. Voici un exemple de code :
+R : Pour obtenir les paragraphes contenant le début et la fin d'un signet dans un document Word, vous pouvez accéder au`BookmarkStart` et`BookmarkEnd` propriétés du signet. Voici un exemple de code :
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;

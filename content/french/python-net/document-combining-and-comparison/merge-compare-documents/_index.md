@@ -111,7 +111,7 @@ Absolument! Aspose.Words permet la génération et la manipulation automatisées
 
 ### Puis-je fusionner plus de deux documents en utilisant cette bibliothèque ?
 
- Oui, vous pouvez fusionner n'importe quel nombre de documents à l'aide de l'outil`append_document` méthode, comme indiqué dans le didacticiel.
+Oui, vous pouvez fusionner n'importe quel nombre de documents à l'aide de l'outil`append_document` méthode, comme indiqué dans le didacticiel.
 
 ### Où puis-je accéder à la bibliothèque et aux ressources ?
 

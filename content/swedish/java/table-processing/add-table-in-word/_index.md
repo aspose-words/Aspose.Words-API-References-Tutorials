@@ -13,7 +13,7 @@ Microsoft Word är ett kraftfullt ordbehandlingsverktyg som låter användare sk
 
 ## Steg 1: Konfigurera utvecklingsmiljön
 
-Innan du börjar, se till att du har en Java-utvecklingsmiljö inställd på din maskin. Ladda ner och installera den senaste versionen av Java Development Kit (JDK) från den officiella Oracle-webbplatsen.
+Innan du börjar, se till att du har en Java-utvecklingsmiljö inställd på din maskin. Ladda ner och installera den senaste versionen av Java Development Kit (JDK) från Oracles webbplats.
 
 ## Steg 2: Skapa ett nytt Java-projekt
 

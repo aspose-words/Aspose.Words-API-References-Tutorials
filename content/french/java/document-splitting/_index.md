@@ -25,3 +25,13 @@ En maîtrisant le fractionnement de documents à l'aide d'Aspose.Words pour Java
 ### [Divisez des documents facilement et efficacement](./split-documents-easily-efficiently/)
 
 Découvrez comment diviser efficacement des documents à l'aide d'Aspose.Words pour Java. Guide étape par étape pour le traitement de documents et la manipulation de mots. Boostez votre productivité maintenant !
+### [Fractionner des documents en plusieurs fichiers](./splitting-documents-into-multiple-files/)
+Libérez la puissance d'Aspose.Words pour Java avec notre guide étape par étape sur la division de documents en plusieurs fichiers. Obtenez des conseils d’experts et des exemples de code source.
+### [Fractionner des documents en pages HTML](./splitting-documents-into-html-pages/)
+Découvrez comment diviser des documents Word en pages HTML à l'aide d'Aspose.Words pour Java. Notre guide étape par étape avec le code source rend le processus simple et efficace. Commencez à convertir vos documents dès aujourd'hui !
+### [Séparation des pages du document](./document-page-separation/)
+Découvrez comment effectuer une séparation des pages de document à l'aide d'Aspose.Words pour Java. Ce guide complet fournit des instructions étape par étape et le code source pour un traitement efficace des documents.
+### [Extraction du contenu du document par pages](./extracting-document-content-pages/)
+Découvrez comment extraire le contenu d'un document par page à l'aide d'Aspose.Words pour Java. Ce guide étape par étape avec le code source fera de vous un expert en un rien de temps.
+### [Techniques de fractionnement et d’extraction de documents](./document-splitting-extraction-techniques/)
+Apprenez le fractionnement et l'extraction de documents à l'aide d'Aspose.Words pour Java. Guide étape par étape avec code source pour une manipulation efficace. Libérez la puissance d’Aspose

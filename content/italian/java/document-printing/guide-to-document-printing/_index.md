@@ -28,7 +28,7 @@ Per iniziare con Aspose.Words per Java, è necessario configurare il proprio amb
 
 ### Installazione del kit di sviluppo Java (JDK)
 
-Se non hai già installato JDK, vai al sito Web ufficiale di Oracle e scarica l'ultima versione di JDK adatta al tuo sistema operativo. Installalo seguendo le istruzioni della procedura guidata di installazione.
+Se non hai già installato JDK, vai al sito Web di Oracle e scarica l'ultima versione di JDK adatta al tuo sistema operativo. Installalo seguendo le istruzioni della procedura guidata di installazione.
 
 ### Aggiunta di Aspose.Words per Java al tuo progetto
 
@@ -86,7 +86,7 @@ Procediamo infine con la stampa del documento.
 
 ### Invio del documento alla stampante
 
-Per stampare il documento è necessario utilizzare il file`PrintDocument` classe:
+ Per stampare il documento è necessario utilizzare il file`PrintDocument` classe:
 
 ```java
 PrintDocument printDocument = new PrintDocument(doc, printerSettings);
@@ -145,7 +145,7 @@ In caso di eccezioni durante il processo di stampa, utilizza i blocchi try-catch
 
 ```java
 try {
-    //Stampa il codice qui
+    // Stampa il codice qui
 } catch (PrinterException ex) {
     System.err.println("Printing error: " + ex.getMessage());
 }
@@ -153,7 +153,7 @@ try {
 
 ### Risoluzione dei problemi comuni
 
- Se si riscontrano problemi durante la stampa, fare riferimento al[Aspose.Words per riferimento API Java](https://reference.aspose.com/words/java/) per la procedura di risoluzione dei problemi e il supporto della community.
+Se si riscontrano problemi durante la stampa, fare riferimento al[Aspose.Words per riferimento API Java](https://reference.aspose.com/words/java/) per la procedura di risoluzione dei problemi e il supporto della community.
 
 ## Migliori pratiche per la stampa di documenti
 
@@ -189,20 +189,20 @@ La stampa di documenti a livello di codice con Aspose.Words per Java apre un mon
 
 ### Aspose.Words per Java può gestire vari formati di documenti?
 
-   Sì, Aspose.Words per Java supporta un'ampia gamma di formati di documenti, inclusi DOC, DOCX, RTF e altri.
+Sì, Aspose.Words per Java supporta un'ampia gamma di formati di documenti, inclusi DOC, DOCX, RTF e altri.
 
 ### Aspose.Words per Java è compatibile con tutte le stampanti?
 
-   Aspose.Words per Java può funzionare con la maggior parte delle stampanti che supportano la stampa di documenti tramite applicazioni Java.
+Aspose.Words per Java può funzionare con la maggior parte delle stampanti che supportano la stampa di documenti tramite applicazioni Java.
 
 ### Posso stampare documenti da applicazioni web?
 
-   Sì, puoi utilizzare Aspose.Words per Java per stampare documenti a livello di codice da applicazioni web.
+Sì, puoi utilizzare Aspose.Words per Java per stampare documenti a livello di codice da applicazioni web.
 
 ### Come posso stampare pagine specifiche di un documento di grandi dimensioni?
 
-   Aspose.Words per Java ti consente di specificare le pagine o gli intervalli di pagine che desideri stampare.
+Aspose.Words per Java ti consente di specificare le pagine o gli intervalli di pagine che desideri stampare.
 
 ### Aspose.Words per Java supporta la stampa fronte-retro?
 
-   Sì, Aspose.Words per Java fornisce opzioni per la stampa fronte-retro, consentendo di stampare su entrambi i lati del foglio.
+Sì, Aspose.Words per Java fornisce opzioni per la stampa fronte-retro, consentendo di stampare su entrambi i lati del foglio.

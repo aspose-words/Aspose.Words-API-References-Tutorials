@@ -68,7 +68,7 @@ Bu, Aspose.Words for .NET kullanılarak eksen üzerindeki etiketler arasındaki 
 ### Aspose.Words for .NET kullanılarak Eksen Üzerindeki Etiketler Arasındaki Aralık Birimi için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

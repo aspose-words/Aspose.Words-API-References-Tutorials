@@ -132,7 +132,7 @@ Ja, du kan automatisera metadatauppdateringar med Aspose.Words. Du kan till exem
 
 ### Hur kan jag skydda känslig information i metadata?
 
-För att skydda känslig information i metadata kan du ta bort specifika egenskaper med hjälp av`remove` metod.
+ För att skydda känslig information i metadata kan du ta bort specifika egenskaper med hjälp av`remove` metod.
 
 ### Vad är några bästa metoder för att hantera dokumentegenskaper?
 

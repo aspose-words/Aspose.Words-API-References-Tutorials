@@ -68,7 +68,7 @@ Ceci termine la mise en œuvre de la définition du format numérique de l'axe �
 ### Exemple de code source pour le format numérique pour l'axe utilisant Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

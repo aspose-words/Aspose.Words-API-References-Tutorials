@@ -107,7 +107,7 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 ### Aspose.Words for .NET Kullanarak Özel Xml Parçasına Eşlenen Tablo Yinelenen Bölüm Oluşturmak için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

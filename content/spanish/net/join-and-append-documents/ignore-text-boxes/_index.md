@@ -14,7 +14,7 @@ Este tutorial explica cómo usar Aspose.Words para .NET para adjuntar un documen
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
+-  Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
 - Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
 ## Paso 2: abra los documentos de origen y destino
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: configurar las opciones de formato de importación
 
- Crear una instancia del`ImportFormatOptions`clase y establecer el`IgnoreTextBoxes` propiedad a`false`. Esto garantiza que los cuadros de texto se incluyan durante el proceso de adición conservando su formato.
+ Crear una instancia del`ImportFormatOptions` clase y establecer el`IgnoreTextBoxes` propiedad a`false`. Esto garantiza que los cuadros de texto se incluyan durante el proceso de adición conservando su formato.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Paso 4: agregar contenido del cuadro de texto
 
- Crear un`NodeImporter`objeto y utilícelo para importar nodos de cuadro de texto desde el documento de origen al documento de destino. Repita cada párrafo del documento de origen e impórtelo al documento de destino.
+ Crear un`NodeImporter` objeto y utilícelo para importar nodos de cuadro de texto desde el documento de origen al documento de destino. Repita cada párrafo del documento de origen e impórtelo al documento de destino.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -64,7 +64,7 @@ Esto completa la implementación de agregar un documento mientras se conserva el
 ### Código fuente de ejemplo para ignorar cuadros de texto usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

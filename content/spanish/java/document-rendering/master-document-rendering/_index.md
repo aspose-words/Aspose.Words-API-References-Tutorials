@@ -216,21 +216,21 @@ Dominar la representación de documentos es esencial para crear aplicaciones só
 ## Preguntas frecuentes
 
 ### ¿Cuál es la diferencia entre la representación de documentos y el procesamiento de documentos?
-   
-   La representación de documentos implica convertir documentos electrónicos en una representación visual para que los usuarios los vean, editen o impriman, mientras que el procesamiento de documentos abarca tareas como combinación, conversión y protección de correspondencia.
+
+La representación de documentos implica convertir documentos electrónicos en una representación visual para que los usuarios los vean, editen o impriman, mientras que el procesamiento de documentos abarca tareas como combinación, conversión y protección de correspondencia.
 
 ### ¿Aspose.Words es compatible con todas las versiones de Java?
-   
-   Aspose.Words para Java admite las versiones de Java 1.6 y posteriores.
+
+Aspose.Words para Java admite las versiones de Java 1.6 y posteriores.
 
 ### ¿Puedo renderizar sólo páginas específicas de un documento grande?
-   
-   Sí, puede utilizar Aspose.Words para representar páginas específicas o rangos de páginas de manera eficiente.
+
+Sí, puede utilizar Aspose.Words para representar páginas específicas o rangos de páginas de manera eficiente.
 
 ### ¿Cómo protejo un documento renderizado con una contraseña?
-   
-   Aspose.Words le permite aplicar protección con contraseña a los documentos renderizados para proteger su contenido.
+
+Aspose.Words le permite aplicar protección con contraseña a los documentos renderizados para proteger su contenido.
 
 ### ¿Puede Aspose.Words representar documentos en varios idiomas?
-   
-   Sí, Aspose.Words admite la representación de documentos en varios idiomas y maneja texto con diferentes codificaciones de caracteres sin problemas.
+
+Sí, Aspose.Words admite la representación de documentos en varios idiomas y maneja texto con diferentes codificaciones de caracteres sin problemas.

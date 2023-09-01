@@ -17,7 +17,7 @@ In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehe
 
 ## Schritt 1: Erstellen der Tabelle
 
- Bevor wir ein Lesezeichen für eine Tabellenspalte erstellen, müssen wir zunächst die Tabelle mit a erstellen`DocumentBuilder` Objekt. In unserem Beispiel erstellen wir eine Tabelle mit zwei Zeilen und zwei Spalten:
+ Bevor wir ein Lesezeichen für eine Tabellenspalte erstellen, müssen wir zunächst die Tabelle mit a erstellen`DocumentBuilder`Objekt. In unserem Beispiel erstellen wir eine Tabelle mit zwei Zeilen und zwei Spalten:
 
 ```csharp
 builder. StartTable();
@@ -132,7 +132,7 @@ A: Um die Funktion „Lesezeichen für Tabellenspalten“ in Aspose.Words für .
 
 #### F: Wie erstelle ich mit Aspose.Words für .NET eine Tabelle mit Spalten in einem Word-Dokument?
 
- A: Um eine Tabelle mit Spalten in einem Word-Dokument mit Aspose.Words für .NET zu erstellen, können Sie a verwenden`DocumentBuilder`Objekt zum Einfügen von Zellen und Inhalten in die Tabelle. Hier ist ein Beispielcode:
+ A: Um eine Tabelle mit Spalten in einem Word-Dokument mit Aspose.Words für .NET zu erstellen, können Sie a verwenden`DocumentBuilder` Objekt zum Einfügen von Zellen und Inhalten in die Tabelle. Hier ist ein Beispielcode:
 
 ```csharp
 builder. StartTable();

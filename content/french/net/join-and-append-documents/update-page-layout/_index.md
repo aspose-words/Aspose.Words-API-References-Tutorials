@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 ## Étape 1 : initialiser les répertoires de documents
 
- Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Modifier la valeur du`dataDir`variable au chemin où se trouvent vos documents.
+ Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Modifier la valeur du`dataDir` variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Étape 5 : mettre à jour à nouveau la mise en page
 
- Après avoir ajouté le document source, vous devez appeler le`UpdatePageLayout` à nouveau sur le document de destination pour garantir que toutes les modifications apportées après l'opération d'ajout sont reflétées dans la sortie rendue.
+ Après avoir ajouté le document source, vous devez appeler le`UpdatePageLayout`à nouveau sur le document de destination pour garantir que toutes les modifications apportées après l'opération d'ajout sont reflétées dans la sortie rendue.
 
 ```csharp
 dstDoc.UpdatePageLayout();
@@ -71,12 +71,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 Voici le code source complet de la fonctionnalité « Mettre à jour la mise en page » en C# à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Si le document de destination est rendu au format PDF, image, etc.
+	// Si le document de destination est rendu au format PDF, image, etc.
 	// ou UpdatePageLayout est appelé avant le document source. Est annexé,
 	// alors toutes les modifications apportées après ne seront pas reflétées dans la sortie rendue
 	dstDoc.UpdatePageLayout();

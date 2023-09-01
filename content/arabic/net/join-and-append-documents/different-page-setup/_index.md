@@ -14,7 +14,7 @@ url: /ar/net/join-and-append-documents/different-page-setup/
 
 تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
+-  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
 - مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
 
 ## الخطوة 2: افتح المستندات المصدر والوجهة
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: قم بإعداد إعدادات الصفحة للمستند المصدر
 
-اضبط إعدادات إعداد الصفحة للمستند المصدر لضمان المتابعة والترقيم بشكل صحيح. في هذا المثال، قمنا بتعيين بداية القسم على`SectionStart.Continuous` وأعد تشغيل ترقيم الصفحات. نتأكد أيضًا من أن عرض الصفحة وارتفاعها واتجاهها يتطابق مع القسم الأخير من المستند الوجهة.
+ اضبط إعدادات إعداد الصفحة للمستند المصدر لضمان المتابعة والترقيم بشكل صحيح. في هذا المثال، قمنا بتعيين بداية القسم على`SectionStart.Continuous` وأعد تشغيل ترقيم الصفحات. نتأكد أيضًا من أن عرض الصفحة وارتفاعها واتجاهها يتطابق مع القسم الأخير من المستند الوجهة.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -74,18 +74,18 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 ### مثال على التعليمات البرمجية المصدر لإعداد صفحة مختلفة باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//قم بتعيين المستند المصدر للمتابعة مباشرة بعد نهاية المستند الوجهة.
+	// قم بتعيين المستند المصدر للمتابعة مباشرة بعد نهاية المستند الوجهة.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// أعد تشغيل ترقيم الصفحات في بداية المستند المصدر.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// للتأكد من عدم حدوث ذلك عندما يحتوي المستند المصدر على إعدادات إعداد صفحة مختلفة، تأكد من أن
-	// الإعدادات متطابقة بين القسم الأخير من المستند الوجهة.
+	//الإعدادات متطابقة بين القسم الأخير من المستند الوجهة.
 	// إذا كان هناك المزيد من الأقسام المستمرة التي تتبع في المستند المصدر،
 	// سيتعين تكرار هذا لتلك الأقسام.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;

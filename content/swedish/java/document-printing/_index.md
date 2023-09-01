@@ -23,5 +23,14 @@ Genom att behärska dokumentutskrift med Aspose.Words för Java kan utvecklare f
 ## Handledning för dokumentutskrift
 
 ### [En guide till dokumentutskrift](./guide-to-document-printing/)
-
 Lär dig att skriva ut dokument programmatiskt i Java med Aspose.Words för Java. Steg-för-steg-guide för dokumentbehandling och ordbehandling. Öka produktiviteten nu!
+### [Automatisera dokumentutskrift](./automating-document-printing/)
+Lär dig att automatisera dokumentutskrift med Aspose.Words för Java. Steg-för-steg guide med kodexempel för effektiv dokumenthantering i Java.
+### [Skriva ut dokument med sidinställningar](./printing-documents-page-setup/)
+Lär dig hur du skriver ut dokument med exakt sidinställningar med Aspose.Words för Java. Anpassa layouter, pappersstorlek och mer.
+### [Skräddarsydd dokumentutskrift](./customized-document-printing/)
+Lär dig hur du enkelt kan få anpassade dokumentutskrifter med Aspose.Words för Java. Den här steg-för-steg-guiden täcker allt från installation till avancerad anpassning.
+### [Skriva ut specifika dokumentsidor](./printing-specific-document-pages/)
+Lär dig hur du skriver ut specifika sidor från Word-dokument med Aspose.Words för Java. Steg-för-steg-guide för Java-utvecklare.
+### [Skriv ut dokument med PrintDialog](./print-document-printdialog/)
+Lär dig hur du skriver ut dokument med Aspose.Words för Java med PrintDialog. Anpassa inställningar, skriv ut specifika sidor och mer i den här steg-för-steg-guiden.

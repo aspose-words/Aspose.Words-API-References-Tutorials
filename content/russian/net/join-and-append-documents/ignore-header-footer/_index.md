@@ -14,7 +14,7 @@ url: /ru/net/join-and-append-documents/ignore-header-footer/
 
 Убедитесь, что у вас есть следующие предварительные условия:
 
-- Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
+-  Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
 - Путь к каталогу документов, в котором расположены исходные и целевые документы.
 
 ## Шаг 2. Откройте исходный и целевой документы.
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте параметры формата импорта
 
- Создайте экземпляр`ImportFormatOptions`класс и установите`IgnoreHeaderFooter` собственность`false`. Это гарантирует, что содержимое верхнего и нижнего колонтитула будет включено в процесс добавления.
+ Создайте экземпляр`ImportFormatOptions` класс и установите`IgnoreHeaderFooter` собственность`false`. Это гарантирует, что содержимое верхнего и нижнего колонтитула будет включено в процесс добавления.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Шаг 4. Добавьте исходный документ в целевой документ.
 
- Использовать`AppendDocument`метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting` в качестве второго параметра и параметры формата импорта в качестве третьего параметра.
+ Использовать`AppendDocument` метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting` в качестве второго параметра и параметры формата импорта в качестве третьего параметра.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ### Пример исходного кода для «Игнорировать нижний колонтитул» с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

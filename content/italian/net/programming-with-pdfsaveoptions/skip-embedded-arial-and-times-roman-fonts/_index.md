@@ -76,7 +76,7 @@ R: Per configurare Aspose.Words per .NET per non incorporare i caratteri Arial e
 
  Carica il documento che desideri elaborare utilizzando il file`Document` classe e il percorso del documento specificato.
 
- Crea un'istanza di`PdfSaveOptions`classe e impostare il file`FontEmbeddingMode` proprietà a`PdfFontEmbeddingMode.EmbedAll`. Ciò incorporerà tutti i caratteri tranne Arial e Times Roman nel file PDF generato.
+ Crea un'istanza di`PdfSaveOptions` classe e impostare il file`FontEmbeddingMode` proprietà a`PdfFontEmbeddingMode.EmbedAll`. Ciò incorporerà tutti i caratteri tranne Arial e Times Roman nel file PDF generato.
 
  Usa il`Save` metodo del`Document` oggetto di salvare il documento in formato PDF specificando le opzioni di salvataggio configurate in precedenza.
 

@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ### Aspose.Words for .NET kullanarak Grup Şekli Ekleme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

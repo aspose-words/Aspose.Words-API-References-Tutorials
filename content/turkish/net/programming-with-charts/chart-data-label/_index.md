@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ### Aspose.Words for .NET kullanan Grafik Veri Etiketi için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

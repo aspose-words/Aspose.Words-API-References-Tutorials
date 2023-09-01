@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Étape 2 : Afficher ou masquer un favori spécifique
 
- Nous utilisons le`ShowHideBookmarkedContent` fonction pour afficher ou masquer un signet spécifique dans le document. Cette fonction prend en paramètres le document, le nom du signet et un booléen pour indiquer s'il faut afficher ou masquer le signet :
+ Nous utilisons le`ShowHideBookmarkedContent`fonction pour afficher ou masquer un signet spécifique dans le document. Cette fonction prend en paramètres le document, le nom du signet et un booléen pour indiquer s'il faut afficher ou masquer le signet :
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -72,7 +72,7 @@ R : Oui, le code fourni fonctionne avec différents formats de documents Word pr
 
 #### Q : Comment puis-je afficher à nouveau un favori masqué ?
 
- R : Pour afficher à nouveau un signet masqué, vous devez utiliser le même`ShowHideBookmarkedContent` fonction passant la valeur`true`pour le paramètre booléen qui indique s'il faut afficher ou masquer le signet.
+ R : Pour afficher à nouveau un signet masqué, vous devez utiliser le même`ShowHideBookmarkedContent` fonction passant la valeur`true` pour le paramètre booléen qui indique s'il faut afficher ou masquer le signet.
 
 #### Q : Puis-je utiliser des conditions pour afficher ou masquer les signets en fonction des valeurs des champs de fusion dans le document ?
 
@@ -80,7 +80,7 @@ R : Oui, le code fourni fonctionne avec différents formats de documents Word pr
 
 #### Q : Comment puis-je supprimer un signet dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
-R : Pour supprimer un signet dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`RemoveBookmarks` méthode du`Document`classe. Voici un exemple de code :
+ R : Pour supprimer un signet dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`RemoveBookmarks` méthode du`Document` classe. Voici un exemple de code :
 
 ```csharp
 doc.RemoveBookmarks("BookmarkName");

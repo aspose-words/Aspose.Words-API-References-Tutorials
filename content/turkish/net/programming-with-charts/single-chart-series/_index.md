@@ -71,7 +71,7 @@ Bu, Aspose.Words for .NET kullanarak tek bir grafik serisinin özelleştirilmesi
 ### Aspose.Words for .NET kullanan Tek Grafik Serisi için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

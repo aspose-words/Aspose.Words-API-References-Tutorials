@@ -13,7 +13,7 @@ Microsoft Word est un puissant outil de traitement de texte qui permet aux utili
 
 ## Étape 1 : configurer l'environnement de développement
 
-Avant de commencer, assurez-vous d'avoir un environnement de développement Java configuré sur votre machine. Téléchargez et installez la dernière version de Java Development Kit (JDK) à partir du site Web officiel d'Oracle.
+Avant de commencer, assurez-vous d'avoir un environnement de développement Java configuré sur votre machine. Téléchargez et installez la dernière version de Java Development Kit (JDK) à partir du site Web d'Oracle.
 
 ## Étape 2 : Créer un nouveau projet Java
 

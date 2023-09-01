@@ -250,7 +250,7 @@ Evet, Aspose.Words'ü kullanarak yazı tipleri, renkler ve kenarlıklar gibi çe
 
 ### Tablodaki hücreleri birleştirmek mümkün mü?
 
- Evet, kullanarak bir tablodaki hücreleri birleştirebilirsiniz.`CellMerge`Aspose.Words tarafından sağlanan özellik.
+ Evet, kullanarak bir tablodaki hücreleri birleştirebilirsiniz.`CellMerge` Aspose.Words tarafından sağlanan özellik.
 
 ### Tablolarımı farklı formatlara nasıl aktarırım?
 

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-bookmarks/access-bookmarks/
 ---
 
-den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder Access Bookmarks-funktionen i Aspose.Words för .NET-biblioteket. Den här funktionen ger åtkomst till specifika bokmärken i ett Word-dokument.
+I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder Access Bookmarks-funktionen i Aspose.Words för .NET-biblioteket. Den här funktionen ger åtkomst till specifika bokmärken i ett Word-dokument.
 
 ## Förutsättningar
 
@@ -59,13 +59,13 @@ Här är det fullständiga exemplet på källkoden för att visa åtkomst till b
 
 ## Slutsats
 
-den här artikeln utforskade vi C#-källkoden för att förstå hur man använder Access Bookmarks-funktionen i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att ladda upp ett dokument och komma åt bokmärken med hjälp av index och namn.
+I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder Access Bookmarks-funktionen i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att ladda upp ett dokument och komma åt bokmärken med hjälp av index och namn.
 
 ### Vanliga frågor för tillgång till bokmärken i word-dokument
 
 #### F: Hur laddar jag upp ett Word-dokument med Aspose.Words för .NET?
 
- S: För att ladda ett Word-dokument med Aspose.Words för .NET kan du instansiera en`Document` objekt genom att ange filsökvägen för dokumentet. Här är en exempelkod:
+ S: För att ladda ett Word-dokument med Aspose.Words för .NET kan du instansiera en`Document`objekt genom att ange filsökvägen för dokumentet. Här är en exempelkod:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

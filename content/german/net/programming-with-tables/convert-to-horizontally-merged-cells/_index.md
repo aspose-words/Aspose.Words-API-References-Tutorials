@@ -43,7 +43,7 @@ table. ConvertToHorizontallyMergedCells();
 ### Beispielquellcode für die Konvertierung in horizontal zusammengeführte Zellen mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");

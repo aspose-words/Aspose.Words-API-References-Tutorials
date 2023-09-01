@@ -65,7 +65,7 @@ In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie di
 
 #### F: Wie kann ich ein Word-Dokument mit Aspose.Words für .NET hochladen?
 
- A: Um ein Word-Dokument mit Aspose.Words für .NET zu laden, können Sie ein instanziieren`Document` Objekt durch Angabe des Dateipfads des Dokuments. Hier ist ein Beispielcode:
+ A: Um ein Word-Dokument mit Aspose.Words für .NET zu laden, können Sie ein instanziieren`Document`Objekt durch Angabe des Dateipfads des Dokuments. Hier ist ein Beispielcode:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

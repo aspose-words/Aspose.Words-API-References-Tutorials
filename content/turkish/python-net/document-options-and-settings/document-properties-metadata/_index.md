@@ -132,7 +132,7 @@ Evet, Aspose.Words'ü kullanarak meta veri güncellemelerini otomatikleştirebil
 
 ### Meta verilerdeki hassas bilgileri nasıl koruyabilirim?
 
-Meta verilerdeki hassas bilgileri korumak için belirli özellikleri aşağıdakileri kullanarak kaldırabilirsiniz:`remove` yöntem.
+ Meta verilerdeki hassas bilgileri korumak için belirli özellikleri aşağıdakileri kullanarak kaldırabilirsiniz:`remove` yöntem.
 
 ### Belge özelliklerini yönetmeye yönelik en iyi uygulamalardan bazıları nelerdir?
 

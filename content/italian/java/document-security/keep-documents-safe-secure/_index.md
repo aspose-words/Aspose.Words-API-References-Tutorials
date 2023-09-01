@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 La filigrana può aiutare a proteggere la riservatezza del documento e indicarne lo stato. Aspose.Words per Java offre funzionalità di filigrana facili da usare:
 
 ```java
-// Aggiungi una filigrana visibile
+//Aggiungi una filigrana visibile
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

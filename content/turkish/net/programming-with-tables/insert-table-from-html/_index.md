@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ### Aspose.Words for .NET kullanarak Html'den Tablo Ekleme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

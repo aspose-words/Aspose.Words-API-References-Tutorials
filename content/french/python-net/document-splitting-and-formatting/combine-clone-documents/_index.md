@@ -127,7 +127,7 @@ Oui, vous pouvez effectuer un clone superficiel pour copier uniquement la struct
  Utiliser le`range.replace()` méthode ainsi que les options appropriées pour rechercher et remplacer du texte efficacement.
 
 ### Aspose.Words prend-il en charge la modification du formatage ?
- Absolument, vous pouvez modifier le formatage en utilisant des méthodes telles que`run.font.size` et`run.font.bold`.
+Absolument, vous pouvez modifier le formatage en utilisant des méthodes telles que`run.font.size` et`run.font.bold`.
 
 ### Où puis-je accéder à la documentation Aspose.Words ?
  Vous pouvez trouver une documentation complète sur[Référence de l'API Aspose.Words pour Python](https://reference.aspose.com/words/python-net/).

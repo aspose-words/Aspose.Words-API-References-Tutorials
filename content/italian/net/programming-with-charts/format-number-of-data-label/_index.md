@@ -75,7 +75,7 @@ Ciò completa l'implementazione della formattazione del numero di etichette dati
 ### Codice sorgente di esempio per il formato numero di etichetta dati utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

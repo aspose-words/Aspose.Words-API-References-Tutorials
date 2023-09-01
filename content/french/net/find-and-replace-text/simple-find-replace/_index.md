@@ -83,7 +83,7 @@ R : La fonctionnalité Rechercher et remplacer du texte simple dans Aspose.Words
 
 #### Q : Comment créer un nouveau document dans Aspose.Words pour .NET ?
 
-R : Avant d'utiliser la fonction Rechercher et remplacer du texte simple, vous devez créer un nouveau document à l'aide d'Aspose.Words pour .NET. Cela peut être fait en instanciant un`Document` objet. Voici un exemple de code pour créer un nouveau document :
+ R : Avant d'utiliser la fonction Rechercher et remplacer du texte simple, vous devez créer un nouveau document à l'aide d'Aspose.Words pour .NET. Cela peut être fait en instanciant un`Document` objet. Voici un exemple de code pour créer un nouveau document :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

@@ -74,7 +74,7 @@ Detta slutför implementeringen av att anpassa en enda datapunkt i ett diagram m
 ### Exempel på källkod för Single Chart Data Point med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

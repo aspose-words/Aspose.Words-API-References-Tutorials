@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx"
 ### نموذج التعليمات البرمجية المصدر لتطبيق حدود المخطط التفصيلي باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

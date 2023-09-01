@@ -76,7 +76,7 @@ doc.Save(dataDir + "Name_of_modified_document.docx");
 ### Пример исходного кода для удаления нижних колонтитулов с помощью Aspose.Words для .NET 
 ```csharp
 
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");

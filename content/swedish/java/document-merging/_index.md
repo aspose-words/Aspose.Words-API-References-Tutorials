@@ -25,5 +25,14 @@ Sammantaget erbjuder handledningar för dokumentsammanslagning med Aspose.Words 
 ## Handledning för dokumentsammanslagning
 
 ### [Använda dokumentsammanslagning](./using-document-merging/)
-
 Lär dig att slå samman Word-dokument sömlöst med Aspose.Words för Java. Kombinera, formatera och hantera konflikter effektivt med bara några få steg. Börja nu!
+### [Kombinera och klona dokument](./combining-cloning-documents/)
+Lär dig hur du kombinerar och klonar dokument utan ansträngning i Java med Aspose.Words. Denna steg-för-steg-guide täcker allt du behöver veta.
+### [Sammanfoga och bifoga dokument](./joining-appending-documents/)
+Lär dig hur du går med i och lägger till dokument med Aspose.Words för Java. Steg-för-steg-guide med kodexempel för effektiv dokumenthantering.
+### [Jämföra dokument för skillnader](./comparing-documents-for-differences/)
+Lär dig hur du jämför dokument för skillnader med Aspose.Words i Java. Vår steg-för-steg-guide säkerställer korrekt dokumenthantering.
+### [Sammanfoga dokument med DocumentBuilder](./merging-documents-documentbuilder/)
+Lär dig hur du manipulerar Word-dokument med Aspose.Words för Java. Skapa, redigera, slå samman och konvertera dokument programmatiskt i Java.
+### [Dokumentdelning och extrahering](./document-splitting-extraction/)
+Lär dig hur du delar upp och extraherar dokument utan ansträngning med Aspose.Words för Java. Förenkla dina dokumentbearbetningsuppgifter med steg-för-steg-vägledning.

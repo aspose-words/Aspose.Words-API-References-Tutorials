@@ -49,7 +49,7 @@ builder.MoveToBookmark("MyBookmark1", false, true);
 
 ## Steg 3: Lägg till innehåll i bokmärkesänden
 
-När du har flyttat till bokmärkesänden kan du lägga till innehåll med de olika metoderna som tillhandahålls av`DocumentBuilder` klass. I det här exemplet använder vi`Writeln` metod för att skriva en textrad:
+ När du har flyttat till bokmärkesänden kan du lägga till innehåll med de olika metoderna som tillhandahålls av`DocumentBuilder`klass. I det här exemplet använder vi`Writeln` metod för att skriva en textrad:
 
 ```csharp
 builder.Writeln("This is a bookmark.");

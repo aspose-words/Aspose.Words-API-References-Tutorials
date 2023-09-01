@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Passaggio 2: mostra o nascondi un segnalibro specifico
 
- Noi usiamo il`ShowHideBookmarkedContent` funzione per mostrare o nascondere un segnalibro specifico nel documento. Questa funzione prende come parametri il documento, il nome del segnalibro e un valore booleano per indicare se mostrare o nascondere il segnalibro:
+ Noi usiamo il`ShowHideBookmarkedContent`funzione per mostrare o nascondere un segnalibro specifico nel documento. Questa funzione prende come parametri il documento, il nome del segnalibro e un valore booleano per indicare se mostrare o nascondere il segnalibro:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -72,7 +72,7 @@ R: Sì, il codice fornito funziona con vari formati di documenti Word supportati
 
 #### D: Come posso mostrare nuovamente un segnalibro nascosto?
 
- A: Per mostrare nuovamente un segnalibro nascosto, devi utilizzare lo stesso`ShowHideBookmarkedContent` funzione che passa il valore`true`per il parametro booleano che indica se mostrare o nascondere il segnalibro.
+ A: Per mostrare nuovamente un segnalibro nascosto, devi utilizzare lo stesso`ShowHideBookmarkedContent` funzione che passa il valore`true` per il parametro booleano che indica se mostrare o nascondere il segnalibro.
 
 #### D: Posso utilizzare le condizioni per mostrare o nascondere i segnalibri in base ai valori dei campi di unione nel documento?
 
@@ -80,7 +80,7 @@ R: Sì, il codice fornito funziona con vari formati di documenti Word supportati
 
 #### D: Come posso eliminare un segnalibro in un documento Word utilizzando Aspose.Words per .NET?
 
-R: Per rimuovere un segnalibro in un documento Word utilizzando Aspose.Words per .NET, è possibile utilizzare il file`RemoveBookmarks` metodo del`Document`classe. Ecco un codice di esempio:
+ R: Per rimuovere un segnalibro in un documento Word utilizzando Aspose.Words per .NET, è possibile utilizzare il file`RemoveBookmarks` metodo del`Document` classe. Ecco un codice di esempio:
 
 ```csharp
 doc.RemoveBookmarks("BookmarkName");

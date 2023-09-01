@@ -89,7 +89,7 @@ S: För att ställa in signaturleverantörens ID för en signaturrad i ett Word-
 1.  Ladda dokumentet med hjälp av`Document` klass och ange sökvägen till dokumentfilen.
 2.  Gå till signaturraden med lämplig metod eller egenskap. Du kan till exempel använda`GetChild` metod för att hämta signaturlinjeformen.
 3. Hämta leverantörs-ID från signaturraden.
-4.  Skapa en instans av`SignOptions`klass och ställ in`ProviderId` egendom till det hämtade leverantörs-ID.
+4.  Skapa en instans av`SignOptions` klass och ställ in`ProviderId` egendom till det hämtade leverantörs-ID.
 5.  Använd`DigitalSignatureUtil.Sign` metod för att signera dokumentet, tillhandahålla nödvändiga parametrar inklusive`SignOptions` objekt.
 
 #### F: Hur kommer jag åt signaturraden i ett Word-dokument med Aspose.Words för .NET?

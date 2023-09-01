@@ -14,7 +14,7 @@ In diesem Tutorial wird gezeigt, wie Sie mit Aspose.Words für .NET ein Quelldok
 
 Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
+-  Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
 - Ein Dokumentverzeichnispfad, in dem die Quell- und Zieldokumente gespeichert werden.
 
 ## Schritt 2: Erstellen Sie die Ziel- und Quelldokumente
@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Schritt 3: Hängen Sie das Quelldokument an das Zieldokument an
 
- Benutzen Sie die`AppendDocument`Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.KeepSourceFormatting` als Importformatmodus, um die ursprüngliche Formatierung des Quelldokuments beizubehalten.
+ Benutzen Sie die`AppendDocument` Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.KeepSourceFormatting`als Importformatmodus, um die ursprüngliche Formatierung des Quelldokuments beizubehalten.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -53,7 +53,7 @@ Damit ist die Implementierung des Anhängens eines Quelldokuments an ein Zieldok
 ### Beispielquellcode für „Quellformatierung beibehalten“ mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();

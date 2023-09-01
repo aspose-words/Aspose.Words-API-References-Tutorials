@@ -127,7 +127,7 @@ Ja, Sie können einen flachen Klon durchführen, um nur die Struktur eines Dokum
  Nutzen Sie die`range.replace()` Methode zusammen mit den entsprechenden Optionen zum effizienten Suchen und Ersetzen von Text.
 
 ### Unterstützt Aspose.Words das Ändern der Formatierung?
- Auf jeden Fall können Sie die Formatierung mit Methoden wie ändern`run.font.size` Und`run.font.bold`.
+Auf jeden Fall können Sie die Formatierung mit Methoden wie ändern`run.font.size` Und`run.font.bold`.
 
 ### Wo kann ich auf die Aspose.Words-Dokumentation zugreifen?
  Eine umfassende Dokumentation finden Sie unter[Aspose.Words für Python-API-Referenz](https://reference.aspose.com/words/python-net/).

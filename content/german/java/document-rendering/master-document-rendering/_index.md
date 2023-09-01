@@ -216,21 +216,21 @@ Die Beherrschung der Dokumentenwiedergabe ist für die Entwicklung robuster Anwe
 ## FAQs
 
 ### Was ist der Unterschied zwischen Dokumentrendering und Dokumentverarbeitung?
-   
-   Beim Rendern von Dokumenten werden elektronische Dokumente in eine visuelle Darstellung umgewandelt, damit Benutzer sie anzeigen, bearbeiten oder drucken können, während die Dokumentenverarbeitung Aufgaben wie das Zusammenführen, Konvertieren und Schützen von E-Mails umfasst.
+
+Beim Rendern von Dokumenten werden elektronische Dokumente in eine visuelle Darstellung umgewandelt, damit Benutzer sie anzeigen, bearbeiten oder drucken können, während die Dokumentenverarbeitung Aufgaben wie das Zusammenführen, Konvertieren und Schützen von E-Mails umfasst.
 
 ### Ist Aspose.Words mit allen Java-Versionen kompatibel?
-   
-   Aspose.Words für Java unterstützt Java-Versionen 1.6 und höher.
+
+Aspose.Words für Java unterstützt Java-Versionen 1.6 und höher.
 
 ### Kann ich nur bestimmte Seiten eines großen Dokuments rendern?
-   
-   Ja, Sie können Aspose.Words verwenden, um bestimmte Seiten oder Seitenbereiche effizient darzustellen.
+
+Ja, Sie können Aspose.Words verwenden, um bestimmte Seiten oder Seitenbereiche effizient darzustellen.
 
 ### Wie schütze ich ein gerendertes Dokument mit einem Passwort?
-   
-   Mit Aspose.Words können Sie gerenderte Dokumente mit einem Passwortschutz versehen, um deren Inhalt zu schützen.
+
+Mit Aspose.Words können Sie gerenderte Dokumente mit einem Passwortschutz versehen, um deren Inhalt zu schützen.
 
 ### Kann Aspose.Words Dokumente in mehreren Sprachen rendern?
-   
-   Ja, Aspose.Words unterstützt das Rendern von Dokumenten in verschiedenen Sprachen und verarbeitet Texte mit unterschiedlichen Zeichenkodierungen nahtlos.
+
+Ja, Aspose.Words unterstützt das Rendern von Dokumenten in verschiedenen Sprachen und verarbeitet Texte mit unterschiedlichen Zeichenkodierungen nahtlos.

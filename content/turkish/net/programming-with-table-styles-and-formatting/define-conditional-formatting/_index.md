@@ -70,7 +70,7 @@ Tebrikler! Artık Aspose.Words for .NET'i kullanarak tablonuz için koşullu for
 ### Aspose.Words for .NET kullanarak Koşullu Formatlamayı Tanımlamak için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Пример исходного кода для настроек шрифта с параметрами загрузки с использованием Aspose.Words для .NET 
 ```csharp
 
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -57,7 +57,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 #### Вопрос: Как указать шрифт по умолчанию при загрузке документа в Aspose.Words?
 
- О: Чтобы указать шрифт по умолчанию при загрузке документа в Aspose.Words, вы можете использовать команду`LoadOptions`класс и установите`DefaultFontName` свойству имени нужного шрифта.
+ О: Чтобы указать шрифт по умолчанию при загрузке документа в Aspose.Words, вы можете использовать команду`LoadOptions` класс и установите`DefaultFontName` свойству имени нужного шрифта.
 
 #### Вопрос: Какие еще настройки шрифта я могу указать с помощью параметров загрузки в Aspose.Words?
 

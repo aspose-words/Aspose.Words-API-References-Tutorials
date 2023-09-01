@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ### Aspose.Words for .NET kullanarak Sonraki Sayfalarda Satırları Tekrarla için örnek kaynak kodu 
 
 ```csharp
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

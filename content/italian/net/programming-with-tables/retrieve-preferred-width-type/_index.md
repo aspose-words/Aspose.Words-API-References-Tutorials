@@ -50,7 +50,7 @@ Qui utilizziamo il documento per recuperare la prima tabella, quindi abilitiamo 
 ### Codice sorgente di esempio per recuperare il tipo di larghezza preferita utilizzando Aspose.Words per .NET 
 
 ```csharp
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

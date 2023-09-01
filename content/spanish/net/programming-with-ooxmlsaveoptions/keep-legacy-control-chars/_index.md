@@ -46,7 +46,7 @@ Ahora puede ejecutar el código fuente para conservar los caracteres de control 
 ### Código fuente de muestra para Keep Legacy Control Chars usando Aspose.Words para .NET 
 ```csharp
 
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");

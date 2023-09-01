@@ -118,8 +118,8 @@ A: Aspose.Words für .NET ist eine leistungsstarke Dokumentverarbeitungsbiblioth
 
 A: Um mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument zu erstellen, können Sie die folgenden Schritte ausführen:
 1.  Erstellen Sie eine neue Instanz von`Document` Klasse und a`DocumentBuilder` Objekt.
-2.  Benutzen Sie die`StartTable` Methode der`DocumentBuilder` Klasse, um mit dem Aufbau der Tabelle zu beginnen.
-3. Fügen Sie Zellen in die Tabelle ein und fügen Sie Inhalte hinzu, indem Sie verwenden`InsertCell` Und`Write` Methoden der`DocumentBuilder` Klasse.
+2.  Benutzen Sie die`StartTable` Methode der`DocumentBuilder`Klasse, um mit dem Aufbau der Tabelle zu beginnen.
+3.  Fügen Sie Zellen in die Tabelle ein und fügen Sie Inhalte hinzu, indem Sie verwenden`InsertCell` Und`Write` Methoden der`DocumentBuilder` Klasse.
 4.  Beenden Sie die Reihe mit`EndRow` Methode der`DocumentBuilder` Klasse.
 5.  Passen Sie die Zeilenformatierung an, indem Sie die Eigenschaften festlegen`RowFormat` Und`CellFormat` Objekte.
 6.  Beenden Sie die Tabelle mit`EndTable` Methode der`DocumentBuilder` Klasse.

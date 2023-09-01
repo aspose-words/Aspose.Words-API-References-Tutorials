@@ -18,7 +18,7 @@ Prima di immergerci nei dettagli tecnici, assicurati di disporre dei seguenti pr
 
 - Conoscenza di base della programmazione Python.
 -  Aspose.Words per riferimento API Python (disponibile su[Qui](https://reference.aspose.com/words/python-net/).
--  Accesso alla libreria Aspose.Words per Python (scarica da[Qui](https://releases.aspose.com/words/python/).
+- Accesso alla libreria Aspose.Words per Python (scarica da[Qui](https://releases.aspose.com/words/python/).
 
 ## Configurazione di Aspose.Words per Python
 

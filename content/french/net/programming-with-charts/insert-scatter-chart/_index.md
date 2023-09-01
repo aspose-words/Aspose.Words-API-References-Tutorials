@@ -57,7 +57,7 @@ Ceci termine la mise en œuvre de l’insertion d’un diagramme à nuages de po
 ### Exemple de code source pour insérer un graphique à nuages de points à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

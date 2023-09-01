@@ -57,7 +57,7 @@ Bu, Aspose.Words for .NET kullanarak dağılım grafiği ekleme işlemini tamaml
 ### Aspose.Words for .NET kullanarak Dağılım Grafiği Ekleme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

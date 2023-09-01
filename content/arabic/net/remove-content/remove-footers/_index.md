@@ -76,7 +76,7 @@ doc.Save(dataDir + "Name_of_modified_document.docx");
 ### نموذج التعليمات البرمجية المصدر لإزالة التذييلات باستخدام Aspose.Words لـ .NET 
 ```csharp
 
-//المسار إلى دليل المستندات الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");

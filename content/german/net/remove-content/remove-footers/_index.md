@@ -76,7 +76,7 @@ Vergessen Sie nicht, den Namen und Speicherort der geänderten Datei in „Name_
 ### Beispielquellcode zum Entfernen von Fußzeilen mit Aspose.Words für .NET 
 ```csharp
 
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");

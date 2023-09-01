@@ -88,7 +88,7 @@ dstNode.AppendChild(newNode);
 
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
-		// Это создает копию текущего узла и импортирует ее (делает ее допустимой) в контексте.
+		//Это создает копию текущего узла и импортирует ее (делает ее допустимой) в контексте.
 		// документа назначения. Импорт означает правильную настройку стилей и идентификаторов списков.
 		Node newNode = importer.ImportNode(curNode, true);
 
@@ -109,7 +109,7 @@ dstNode.AppendChild(newNode);
 
 #### Вопрос 2. Как получить абзацы, содержащие начало и конец закладки в документе Word?
 
- О: Чтобы получить абзацы, содержащие начало и конец закладки в документе Word, вы можете получить доступ к`BookmarkStart` и`BookmarkEnd` свойства закладки. Вот пример кода:
+О: Чтобы получить абзацы, содержащие начало и конец закладки в документе Word, вы можете получить доступ к`BookmarkStart` и`BookmarkEnd` свойства закладки. Вот пример кода:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;

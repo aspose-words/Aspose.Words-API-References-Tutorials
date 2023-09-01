@@ -118,8 +118,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.BuildTable.docx");
 
 О: Чтобы построить таблицу в документе Word с помощью Aspose.Words for .NET, вы можете выполнить следующие действия:
 1.  Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект.
-2.  Использовать`StartTable` метод`DocumentBuilder` class, чтобы начать создавать таблицу.
-3. Вставьте ячейки в таблицу и добавьте содержимое, используя`InsertCell` и`Write` методы`DocumentBuilder` сорт.
+2.  Использовать`StartTable` метод`DocumentBuilder`class, чтобы начать создавать таблицу.
+3.  Вставьте ячейки в таблицу и добавьте содержимое, используя`InsertCell` и`Write` методы`DocumentBuilder` сорт.
 4.  Завершите ряд, используя`EndRow` метод`DocumentBuilder` сорт.
 5.  Настройте форматирование строк, задав свойства`RowFormat` и`CellFormat` объекты.
 6.  Завершите таблицу, используя`EndTable` метод`DocumentBuilder` сорт.

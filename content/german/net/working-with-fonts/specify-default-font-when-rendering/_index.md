@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Beispielquellcode für „Standardschriftart beim Rendern angeben“ mit Aspose.Words für .NET 
 
 ```csharp
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -62,7 +62,7 @@ In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit A
 
 #### F: Wie kann ich beim Konvertieren in PDF in Aspose.Words eine Standardschriftart angeben?
 
- A: Um beim Konvertieren in PDF in Aspose.Words eine Standardschriftart festzulegen, können Sie die verwenden`PdfOptions`Klasse und legen Sie die fest`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
+ A: Um beim Konvertieren in PDF in Aspose.Words eine Standardschriftart festzulegen, können Sie die verwenden`PdfOptions` Klasse und legen Sie die fest`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
 
 #### F: Was passiert, wenn die Standardschriftart beim Konvertieren in PDF nicht verfügbar ist?
 

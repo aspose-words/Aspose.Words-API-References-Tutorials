@@ -14,7 +14,7 @@ Bu eğitimde, bir belgenin içeriğini boş bir hedef belgeye eklemek için Aspo
 
 Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+-  Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
 - Kaynak ve hedef belgelerin bulunduğu belge dizini yolu.
 
 ## 2. Adım: Yeni bir hedef belge oluşturun
@@ -58,12 +58,12 @@ Bu, Aspose.Words for .NET kullanarak bir belgenin boş bir hedef belgeye eklenme
 ### Aspose.Words for .NET kullanarak Belgeyi Boşluğa Ekleme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	//Hedef belge boş değildir ve genellikle eklenen belgeden önce boş bir sayfanın görünmesine neden olur.
+	// Hedef belge boş değildir ve genellikle eklenen belgeden önce boş bir sayfanın görünmesine neden olur.
 	// Bunun nedeni, temel belgenin boş bir bölüme sahip olması ve yeni belgenin bir sonraki sayfada başlatılmasıdır.
 	// Eklemeden önce hedef belgedeki tüm içeriği kaldırın.
 	dstDoc.RemoveAllChildren();

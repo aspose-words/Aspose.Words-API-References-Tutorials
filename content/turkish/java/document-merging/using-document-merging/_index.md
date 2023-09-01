@@ -53,7 +53,7 @@ public class DocumentMerger {
 }
 ```
 
-Yukarıdaki örnekte, aşağıdaki komutu kullanarak iki belge yükledik:`Document` sınıf ve sonra kullandık`appendDocument()` Kaynak belgenin biçimlendirmesini korurken "belge2.docx" içeriğini "belge1.docx" ile birleştirme yöntemi.
+ Yukarıdaki örnekte, aşağıdaki komutu kullanarak iki belge yükledik:`Document` sınıf ve sonra kullandık`appendDocument()` Kaynak belgenin biçimlendirmesini korurken "belge2.docx" içeriğini "belge1.docx" ile birleştirme yöntemi.
 
 ## 4. Belge Biçimlendirmesini Kullanma
 
@@ -114,7 +114,7 @@ Stiller belgeler arasında farklılık gösterdiğinde sayfa sonu ekler.
 
 ## 7. Belirli Belge Bölümlerini Birleştirme
 
- Bazı senaryolarda belgelerin yalnızca belirli bölümlerini birleştirmek isteyebilirsiniz. Örneğin, üstbilgiler ve altbilgiler hariç yalnızca gövde içeriğini birleştirmek. Aspose.Words, bu düzeyde ayrıntı düzeyine erişmenizi sağlar.`Range` sınıf:
+Bazı senaryolarda belgelerin yalnızca belirli bölümlerini birleştirmek isteyebilirsiniz. Örneğin, üstbilgiler ve altbilgiler hariç yalnızca gövde içeriğini birleştirmek. Aspose.Words, bu düzeyde ayrıntı düzeyine erişmenizi sağlar.`Range` sınıf:
 
 ```java
 import com.aspose.words.*;

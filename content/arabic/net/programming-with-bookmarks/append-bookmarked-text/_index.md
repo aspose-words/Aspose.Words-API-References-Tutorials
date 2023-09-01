@@ -88,7 +88,7 @@ dstNode.AppendChild(newNode);
 
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
-		// يؤدي هذا إلى إنشاء نسخة من العقدة الحالية واستيرادها (مما يجعلها صالحة) في السياق
+		//يؤدي هذا إلى إنشاء نسخة من العقدة الحالية واستيرادها (مما يجعلها صالحة) في السياق
 		// من وثيقة الوجهة. الاستيراد يعني تعديل الأنماط ومعرفات القائمة بشكل صحيح.
 		Node newNode = importer.ImportNode(curNode, true);
 
@@ -109,7 +109,7 @@ dstNode.AppendChild(newNode);
 
 #### س2: كيفية الحصول على الفقرات التي تحتوي على بداية ونهاية الإشارة المرجعية في مستند Word؟
 
- ج: للحصول على الفقرات التي تحتوي على بداية ونهاية الإشارة المرجعية في مستند Word، يمكنك الوصول إلى`BookmarkStart` و`BookmarkEnd` خصائص المرجعية. هنا نموذج التعليمات البرمجية:
+ج: للحصول على الفقرات التي تحتوي على بداية ونهاية الإشارة المرجعية في مستند Word، يمكنك الوصول إلى`BookmarkStart` و`BookmarkEnd` خصائص المرجعية. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;

@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ### Aspose.Words for .NET kullanarak Göreceli Yatay veya Dikey Konumu Ayarlama için örnek kaynak kodu 
 
 ```csharp
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");

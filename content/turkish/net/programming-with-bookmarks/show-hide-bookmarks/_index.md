@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## 2. Adım: Belirli bir yer işaretini gösterin veya gizleyin
 
- biz kullanıyoruz`ShowHideBookmarkedContent` Belgedeki belirli bir yer imini gösterme veya gizleme işlevi. Bu işlev, belgeyi, yer iminin adını ve yer iminin gösterilip gösterilmeyeceğini veya gizleneceğini belirten bir boole parametresini alır:
+ biz kullanıyoruz`ShowHideBookmarkedContent`Belgedeki belirli bir yer imini gösterme veya gizleme işlevi. Bu işlev, belgeyi, yer iminin adını ve yer iminin gösterilip gösterilmeyeceğini veya gizleneceğini belirten bir boole parametresini alır:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -72,7 +72,7 @@ C: Evet, verilen kod Aspose.Words tarafından desteklenen .doc ve .docm gibi çe
 
 #### S: Gizli bir yer imini tekrar nasıl gösterebilirim?
 
- C: Gizli bir yer imini tekrar göstermek için aynısını kullanmanız gerekir.`ShowHideBookmarkedContent` değeri ileten fonksiyon`true`yer iminin gösterilip gösterilmeyeceğini belirten boolean parametresi için.
+ C: Gizli bir yer imini tekrar göstermek için aynısını kullanmanız gerekir.`ShowHideBookmarkedContent` değeri ileten fonksiyon`true` yer iminin gösterilip gösterilmeyeceğini belirten boolean parametresi için.
 
 #### S: Belgedeki birleştirme alanı değerlerine göre yer işaretlerini göstermek veya gizlemek için koşulları kullanabilir miyim?
 
@@ -80,7 +80,7 @@ C: Evet, verilen kod Aspose.Words tarafından desteklenen .doc ve .docm gibi çe
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini nasıl silebilirim?
 
-C: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini kaldırmak için şu komutu kullanabilirsiniz:`RemoveBookmarks` yöntemi`Document`sınıf. İşte örnek bir kod:
+ C: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini kaldırmak için şu komutu kullanabilirsiniz:`RemoveBookmarks` yöntemi`Document` sınıf. İşte örnek bir kod:
 
 ```csharp
 doc.RemoveBookmarks("BookmarkName");

@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 ### نموذج التعليمات البرمجية المصدر للحصول على نطاق صفحات Jpeg باستخدام Aspose.Words For .NET
 
 ```csharp 
- //المسار إلى دليل المستندات الخاص بك
+ // المسار إلى دليل المستندات الخاص بك
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

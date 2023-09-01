@@ -72,7 +72,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und die richtige Namensdatei fü
 ### Beispielquellcode für Nested Table mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

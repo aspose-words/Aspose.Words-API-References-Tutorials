@@ -44,7 +44,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 ### Exemple de code source pour modifier le formatage des lignes à l’aide d’Aspose.Words for .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

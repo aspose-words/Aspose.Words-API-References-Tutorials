@@ -13,7 +13,7 @@ Microsoft Word ist ein leistungsstarkes Textverarbeitungsprogramm, mit dem Benut
 
 ## Schritt 1: Richten Sie die Entwicklungsumgebung ein
 
-Bevor Sie beginnen, stellen Sie sicher, dass auf Ihrem Computer eine Java-Entwicklungsumgebung eingerichtet ist. Laden Sie die neueste Version des Java Development Kit (JDK) von der offiziellen Oracle-Website herunter und installieren Sie sie.
+Bevor Sie beginnen, stellen Sie sicher, dass auf Ihrem Computer eine Java-Entwicklungsumgebung eingerichtet ist. Laden Sie die neueste Version des Java Development Kit (JDK) von der Oracle-Website herunter und installieren Sie sie.
 
 ## Schritt 2: Erstellen Sie ein neues Java-Projekt
 

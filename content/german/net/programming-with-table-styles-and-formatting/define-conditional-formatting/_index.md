@@ -70,7 +70,7 @@ Herzlichen Glückwunsch! Sie haben jetzt mit Aspose.Words für .NET eine bedingt
 ### Beispielquellcode zum Definieren bedingter Formatierung mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

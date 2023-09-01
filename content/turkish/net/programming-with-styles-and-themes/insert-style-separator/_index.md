@@ -55,7 +55,7 @@ Bir belgeye stil ayırıcı eklemek için kaynak kodunu çalıştırabilirsiniz.
 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document();

@@ -68,7 +68,7 @@ Damit ist die Implementierung der Festlegung der Intervalleinheit zwischen Besch
 ### Beispielquellcode für die Intervalleinheit zwischen Beschriftungen auf der Achse mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

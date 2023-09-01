@@ -10,7 +10,7 @@ url: /sv/java/word-processing/generate-word-document/
 
 ## Introduktion
 
-I den här handledningen går vi igenom processen att skapa ett Word-dokument med Aspose.Words för Java. Aspose.Words är ett kraftfullt bibliotek som låter utvecklare arbeta med Word-dokument programmatiskt. Oavsett om du vill skapa dynamiska rapporter, generera fakturor eller helt enkelt manipulera Word-dokument, erbjuder Aspose.Words för Java en omfattande uppsättning funktioner för att effektivisera dina dokumentbearbetningsuppgifter.
+den här handledningen går vi igenom processen att skapa ett Word-dokument med Aspose.Words för Java. Aspose.Words är ett kraftfullt bibliotek som låter utvecklare arbeta med Word-dokument programmatiskt. Oavsett om du vill skapa dynamiska rapporter, generera fakturor eller helt enkelt manipulera Word-dokument, erbjuder Aspose.Words för Java en omfattande uppsättning funktioner för att effektivisera dina dokumentbearbetningsuppgifter.
 
 ## 1. Vad är Aspose.Words för Java?
 
@@ -18,7 +18,7 @@ Aspose.Words för Java är ett Java-bibliotek som gör det möjligt för utveckl
 
 ## 2. Konfigurera din Java-utvecklingsmiljö
 
-Innan vi börjar, se till att du har Java Development Kit (JDK) installerat på ditt system. Du kan ladda ner den senaste JDK från den officiella Oracle-webbplatsen. Välj dessutom en Integrated Development Environment (IDE) för Java-utveckling, som Eclipse eller IntelliJ IDEA.
+Innan vi börjar, se till att du har Java Development Kit (JDK) installerat på ditt system. Du kan ladda ner den senaste JDK från Oracles webbplats. Välj dessutom en Integrated Development Environment (IDE) för Java-utveckling, som Eclipse eller IntelliJ IDEA.
 
 ## 3. Installera Aspose.Words för Java
 

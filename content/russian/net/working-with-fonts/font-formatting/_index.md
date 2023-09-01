@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ### Пример исходного кода для форматирования шрифтов с использованием Aspose.Words для .NET 
 ```csharp
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

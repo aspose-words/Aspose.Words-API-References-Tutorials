@@ -83,7 +83,7 @@ S: Funktionen Simple Text Find And Replace i Aspose.Words för .NET låter dig u
 
 #### F: Hur skapar man ett nytt dokument i Aspose.Words för .NET?
 
-S: Innan du använder funktionen Simple Text Find And Replace måste du skapa ett nytt dokument med Aspose.Words för .NET. Detta kan göras genom att instansiera en`Document` objekt. Här är en exempelkod för att skapa ett nytt dokument:
+ S: Innan du använder funktionen Simple Text Find And Replace måste du skapa ett nytt dokument med Aspose.Words för .NET. Detta kan göras genom att instansiera en`Document` objekt. Här är en exempelkod för att skapa ett nytt dokument:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

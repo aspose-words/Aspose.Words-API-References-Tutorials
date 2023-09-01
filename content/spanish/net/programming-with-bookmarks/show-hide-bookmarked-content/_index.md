@@ -150,7 +150,7 @@ En este artículo, exploramos el código fuente de C# para comprender cómo util
 
 #### P: ¿Puedo utilizar la misma condición para varios marcadores en el mismo documento?
 
- R: Sí, puedes utilizar la misma condición para varios marcadores en el mismo documento. Simplemente repita los pasos 2 a 5 para cada marcador, ajustando el nombre del marcador y, opcionalmente, el valor del`showhide` variables según sea necesario.
+R: Sí, puedes utilizar la misma condición para varios marcadores en el mismo documento. Simplemente repita los pasos 2 a 5 para cada marcador, ajustando el nombre del marcador y, opcionalmente, el valor del`showhide` variables según sea necesario.
 
 #### P: ¿Cómo puedo agregar más condiciones para mostrar u ocultar el contenido de los marcadores?
 
@@ -162,7 +162,7 @@ builder. Write("\" = \"true\" ");
 
 #### P: ¿Cómo puedo eliminar un marcador en un documento de Word usando Aspose.Words para .NET?
 
-R: Para eliminar un marcador en un documento de Word usando Aspose.Words para .NET, puede usar el`Remove` método de la`Bookmarks` colección del rango de documentos. Aquí hay un código de muestra para eliminar un marcador específico:
+ R: Para eliminar un marcador en un documento de Word usando Aspose.Words para .NET, puede usar el`Remove` método de la`Bookmarks` colección del rango de documentos. Aquí hay un código de muestra para eliminar un marcador específico:
 
 ```csharp
 doc.Range.Bookmarks.Remove(bookmarkName);

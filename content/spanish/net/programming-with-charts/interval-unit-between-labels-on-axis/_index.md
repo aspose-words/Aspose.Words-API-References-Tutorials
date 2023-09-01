@@ -68,7 +68,7 @@ Esto completa la implementación de configurar la unidad de intervalo entre etiq
 ### Código fuente de ejemplo para unidad de intervalo entre etiquetas en eje usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

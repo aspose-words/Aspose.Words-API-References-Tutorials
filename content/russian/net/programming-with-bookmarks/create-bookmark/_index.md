@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Шаг 3. Создание вложенных закладок
 
- Мы также можем создавать вложенные закладки внутри основной закладки. Мы используем то же самое`StartBookmark` и`EndBookmark` методы для создания и закрытия вложенных закладок:
+Мы также можем создавать вложенные закладки внутри основной закладки. Мы используем то же самое`StartBookmark` и`EndBookmark` методы для создания и закрытия вложенных закладок:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 
 #### Вопрос: Как создать документ в Aspose.Words для .NET?
 
- О: Чтобы создать документ в Aspose.Words для .NET, вы можете использовать команду`Document`сорт. Вот пример кода:
+ О: Чтобы создать документ в Aspose.Words для .NET, вы можете использовать команду`Document` сорт. Вот пример кода:
 
 ```csharp
 Document doc = new Document();
@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### Вопрос: Как добавить текст внутри закладки с помощью Aspose.Words для .NET?
 
- О: Чтобы добавить текст внутри закладки с помощью Aspose.Words for .NET, вы можете использовать команду`Write` метод`DocumentBuilder` объект, определяющий добавляемый текст. Вот пример кода:
+О: Чтобы добавить текст внутри закладки с помощью Aspose.Words for .NET, вы можете использовать команду`Write` метод`DocumentBuilder` объект, определяющий добавляемый текст. Вот пример кода:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

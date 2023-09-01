@@ -72,7 +72,7 @@ R: Para habilitar la representación de efectos DML 3D al convertir a PDF con As
 
  Crear una instancia del`Document` clase que especifica la ruta al documento de Word.
 
- Crear una instancia del`PdfSaveOptions`clase y establecer el`Dml3DEffectsRenderingMode` propiedad a`Dml3DEffectsRenderingMode.Advanced` para habilitar la representación avanzada de efectos DML 3D.
+ Crear una instancia del`PdfSaveOptions` clase y establecer el`Dml3DEffectsRenderingMode` propiedad a`Dml3DEffectsRenderingMode.Advanced` para habilitar la representación avanzada de efectos DML 3D.
 
  Utilizar el`Save` método de la`Document`clase para guardar el documento en formato PDF especificando opciones de guardado.
 

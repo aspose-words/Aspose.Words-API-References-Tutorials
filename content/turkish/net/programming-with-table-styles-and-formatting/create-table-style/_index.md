@@ -74,7 +74,7 @@ Tebrikler! Artık Aspose.Words for .NET'i kullanarak tablonuz için özel bir st
 ### Aspose.Words for .NET kullanarak Tablo Stili Oluşturma için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

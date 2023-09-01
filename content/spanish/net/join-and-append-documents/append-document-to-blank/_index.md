@@ -14,7 +14,7 @@ Este tutorial explica cómo usar Aspose.Words para .NET para agregar el contenid
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
+-  Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
 - Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
 ## Paso 2: crea un nuevo documento de destino
@@ -58,12 +58,12 @@ Esto completa la implementación de agregar un documento a un documento de desti
 ### Código fuente de ejemplo para anexar documento en blanco usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	//El documento de destino no está vacío, lo que a menudo provoca que aparezca una página en blanco antes del documento adjunto.
+	// El documento de destino no está vacío, lo que a menudo provoca que aparezca una página en blanco antes del documento adjunto.
 	// Esto se debe a que el documento base tiene una sección vacía y el nuevo documento se inicia en la página siguiente.
 	// Elimine todo el contenido del documento de destino antes de agregarlo.
 	dstDoc.RemoveAllChildren();

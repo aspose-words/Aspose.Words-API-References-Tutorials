@@ -26,9 +26,16 @@ Voici quelques-uns des avantages de l’utilisation d’Aspose.Words for Java po
 ## Tutoriels de traitement de tables
 
 ### [Ajouter un tableau dans Word](./add-table-in-word/)
-
 Apprenez à ajouter des tableaux dans Word à l'aide d'Aspose.Words pour Java. Générez facilement des tableaux bien formatés dans des documents Word.
-
 ### [Générer une table à partir d'une table de données](./generate-table-from-datatable/)
-
 Découvrez comment générer une table à partir d'un DataTable à l'aide d'Aspose.Words pour Java. Créez sans effort des documents Word professionnels avec des tableaux formatés. 
+### [Gestion des tableaux et des mises en page dans les documents](./managing-tables-layouts/)
+Apprenez à gérer efficacement les tableaux et les mises en page dans vos documents Java à l'aide d'Aspose.Words. Obtenez des conseils étape par étape et des exemples de code source pour une gestion transparente de la mise en page des documents.
+### [Travailler avec des listes de documents](./working-with-document-lists/)
+Apprenez à utiliser des listes de documents en Java à l'aide d'Aspose.Words pour Java. Ce guide étape par étape comprend des exemples de code source pour une manipulation efficace des documents.
+### [Création de tableaux et de lignes dans des documents](./creating-tables-rows/)
+Découvrez comment créer des tableaux et des lignes dans des documents à l'aide d'Aspose.Words pour Java. Suivez ce guide complet avec le code source et la FAQ.
+### [Formatage des tableaux dans les documents](./formatting-tables/)
+Maîtrisez l'art du formatage des tableaux dans les documents à l'aide d'Aspose.Words pour Java. Découvrez des conseils étape par étape et des exemples de code source pour un formatage précis des tableaux.
+### [Génération de table des matières](./table-contents-generation/)
+Découvrez comment créer une table des matières dynamique à l'aide d'Aspose.Words pour Java. Maîtrisez la génération de table des matières avec des conseils étape par étape et des exemples de code source.

@@ -14,7 +14,7 @@ Este tutorial explica cómo usar Aspose.Words para .NET para agregar un document
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
+-  Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
 - Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
 ## Paso 2: abra los documentos de origen y destino
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: configurar las opciones de formato de importación
 
- Crear una instancia del`ImportFormatOptions`clase y establecer el`IgnoreHeaderFooter` propiedad a`false`. Esto garantiza que el contenido del encabezado y pie de página se incluya durante el proceso de adición.
+ Crear una instancia del`ImportFormatOptions` clase y establecer el`IgnoreHeaderFooter` propiedad a`false`. Esto garantiza que el contenido del encabezado y pie de página se incluya durante el proceso de adición.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Paso 4: agregue el documento de origen al documento de destino
 
- Utilizar el`AppendDocument`método del documento de destino para adjuntar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting` como segundo parámetro y las opciones de formato de importación como tercer parámetro.
+ Utilizar el`AppendDocument` método del documento de destino para adjuntar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting` como segundo parámetro y las opciones de formato de importación como tercer parámetro.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ Esto completa la implementación de agregar un documento mientras se ignora el c
 ### Código fuente de ejemplo para Ignorar encabezado y pie de página usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

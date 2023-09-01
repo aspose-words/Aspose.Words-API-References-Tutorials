@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Codice sorgente di esempio per specificare il carattere predefinito durante il rendering utilizzando Aspose.Words per .NET 
 
 ```csharp
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -62,7 +62,7 @@ In questo tutorial, abbiamo imparato come specificare il carattere predefinito d
 
 #### D: Come posso specificare un carattere predefinito durante la conversione in PDF in Aspose.Words?
 
- R: Per specificare un carattere predefinito durante la conversione in PDF in Aspose.Words, è possibile utilizzare il file`PdfOptions`classe e impostare il file`DefaultFontName` proprietà al nome del carattere desiderato.
+ R: Per specificare un carattere predefinito durante la conversione in PDF in Aspose.Words, è possibile utilizzare il file`PdfOptions` classe e impostare il file`DefaultFontName` proprietà al nome del carattere desiderato.
 
 #### D: Cosa succede se il carattere predefinito non è disponibile durante la conversione in PDF?
 

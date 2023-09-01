@@ -87,7 +87,7 @@ Herzlichen Glückwunsch! Sie haben nun mit Aspose.Words für .NET die Zeilenform
 ### Beispielquellcode für „Zeilenformatierung anwenden“ mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

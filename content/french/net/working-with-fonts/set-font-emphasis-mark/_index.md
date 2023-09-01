@@ -45,7 +45,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ### Exemple de code source pour définir la marque d'accentuation de la police à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();

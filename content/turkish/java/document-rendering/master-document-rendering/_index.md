@@ -216,21 +216,21 @@ Belge oluşturma konusunda uzmanlaşmak, belgeleri verimli bir şekilde işleyen
 ## SSS
 
 ### Belge oluşturma ile belge işleme arasındaki fark nedir?
-   
-   Belge oluşturma, elektronik belgelerin kullanıcıların görüntülemesi, düzenlemesi veya yazdırması için görsel bir temsile dönüştürülmesini içerirken belge işleme, posta birleştirme, dönüştürme ve koruma gibi görevleri kapsar.
+
+Belge oluşturma, elektronik belgelerin kullanıcıların görüntülemesi, düzenlemesi veya yazdırması için görsel bir temsile dönüştürülmesini içerirken belge işleme, posta birleştirme, dönüştürme ve koruma gibi görevleri kapsar.
 
 ### Aspose.Words tüm Java sürümleriyle uyumlu mu?
-   
-   Aspose.Words for Java, Java 1.6 ve sonraki sürümlerini destekler.
+
+Aspose.Words for Java, Java 1.6 ve sonraki sürümlerini destekler.
 
 ### Büyük bir belgenin yalnızca belirli sayfalarını oluşturabilir miyim?
-   
-   Evet, belirli sayfaları veya sayfa aralıklarını verimli bir şekilde oluşturmak için Aspose.Words'ü kullanabilirsiniz.
+
+Evet, belirli sayfaları veya sayfa aralıklarını verimli bir şekilde oluşturmak için Aspose.Words'ü kullanabilirsiniz.
 
 ### İşlenmiş bir belgeyi parolayla nasıl koruyabilirim?
-   
-   Aspose.Words, oluşturulan belgelere içeriklerini güvence altına almak için parola koruması uygulamanıza olanak tanır.
+
+Aspose.Words, oluşturulan belgelere içeriklerini güvence altına almak için parola koruması uygulamanıza olanak tanır.
 
 ### Aspose.Words belgeleri birden çok dilde görüntüleyebilir mi?
-   
-   Evet, Aspose.Words belgelerin çeşitli dillerde görüntülenmesini destekler ve farklı karakter kodlamalarına sahip metinleri sorunsuz bir şekilde işler.
+
+Evet, Aspose.Words belgelerin çeşitli dillerde görüntülenmesini destekler ve farklı karakter kodlamalarına sahip metinleri sorunsuz bir şekilde işler.

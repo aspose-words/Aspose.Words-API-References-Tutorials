@@ -150,7 +150,7 @@ In questo articolo, abbiamo esplorato il codice sorgente C# per comprendere come
 
 #### D: Posso utilizzare la stessa condizione per più segnalibri nello stesso documento?
 
- R: Sì, puoi utilizzare la stessa condizione per più segnalibri nello stesso documento. Basta ripetere i passaggi 2-5 per ciascun segnalibro, modificando il nome del segnalibro e facoltativamente il valore del file`showhide` variabile secondo necessità.
+R: Sì, puoi utilizzare la stessa condizione per più segnalibri nello stesso documento. Basta ripetere i passaggi 2-5 per ciascun segnalibro, modificando il nome del segnalibro e facoltativamente il valore del file`showhide` variabile secondo necessità.
 
 #### D: Come posso aggiungere ulteriori condizioni per mostrare o nascondere il contenuto dei segnalibri?
 
@@ -162,7 +162,7 @@ builder. Write("\" = \"true\" ");
 
 #### D: Come posso eliminare un segnalibro in un documento Word utilizzando Aspose.Words per .NET?
 
-R: Per rimuovere un segnalibro in un documento Word utilizzando Aspose.Words per .NET, è possibile utilizzare il file`Remove` metodo da`Bookmarks` raccolta della gamma di documenti. Ecco un codice di esempio per eliminare un segnalibro specifico:
+ R: Per rimuovere un segnalibro in un documento Word utilizzando Aspose.Words per .NET, è possibile utilizzare il file`Remove` metodo da`Bookmarks` raccolta della gamma di documenti. Ecco un codice di esempio per eliminare un segnalibro specifico:
 
 ```csharp
 doc.Range.Bookmarks.Remove(bookmarkName);

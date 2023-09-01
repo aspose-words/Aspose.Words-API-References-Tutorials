@@ -19,7 +19,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 
 ## Paso 1: inicializar los directorios de documentos
 
- Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir`variable a la ruta donde se encuentran sus documentos.
+ Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir` variable a la ruta donde se encuentran sus documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Paso 5: actualice el diseño de la página nuevamente
 
- Después de adjuntar el documento fuente, debe llamar al`UpdatePageLayout` método en el documento de destino nuevamente para garantizar que cualquier cambio realizado después de la operación de agregar se refleje en la salida representada.
+ Después de adjuntar el documento fuente, debe llamar al`UpdatePageLayout`método en el documento de destino nuevamente para garantizar que cualquier cambio realizado después de la operación de agregar se refleje en la salida representada.
 
 ```csharp
 dstDoc.UpdatePageLayout();
@@ -71,12 +71,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 Aquí está el código fuente completo para la función "Actualizar diseño de página" en C# usando Aspose.Words para .NET:
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Si el documento de destino se procesa en PDF, imagen, etc.
+	// Si el documento de destino se procesa en PDF, imagen, etc.
 	// o se llama a UpdatePageLayout antes del documento fuente. Se adjunta,
 	// entonces cualquier cambio realizado después no se reflejará en la salida renderizada
 	dstDoc.UpdatePageLayout();

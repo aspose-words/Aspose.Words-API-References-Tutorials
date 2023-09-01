@@ -27,3 +27,13 @@ Durch die Beherrschung der Dokumentrevision mit Aspose.Words für Java können E
 ## Tutorials zur Dokumentrevision
 ### [Der ultimative Leitfaden zur Dokumentenrevision](./guide-document-revision/)
 Überarbeitung von Masterdokumenten mit Aspose.Words für Java! Verwalten Sie Änderungen effizient, akzeptieren/lehnen Sie Überarbeitungen ab und arbeiten Sie nahtlos zusammen. Jetzt loslegen!
+### [Verfolgen und Verwalten von Dokumentrevisionen](./tracking-managing-document-revisions/)
+Erfahren Sie in diesem umfassenden Handbuch, wie Sie Dokumentrevisionen mit Aspose.Words für Java verfolgen und verwalten. Erhalten Sie Schritt-für-Schritt-Anleitungen und Quellcode-Beispiele.
+### [Vergleichen von Dokumentversionen](./comparing-document-versions/)
+Erfahren Sie, wie Sie Dokumentversionen mit Aspose.Words für Java vergleichen. Schritt-für-Schritt-Anleitung für eine effiziente Versionskontrolle.
+### [Akzeptieren und Ablehnen von Dokumentänderungen](./accepting-rejecting-document-changes/)
+Erfahren Sie, wie Sie Dokumentänderungen mühelos mit Aspose.Words für Java verwalten. Akzeptieren und lehnen Sie Revisionen nahtlos ab.
+### [Dokumentversionskontrolle und -verlauf](./document-version-control-history/)
+Lernen Sie die effiziente Versionskontrolle von Dokumenten mit Aspose.Words für Java kennen. Verwalten Sie Änderungen, arbeiten Sie nahtlos zusammen und verfolgen Sie Überarbeitungen mühelos.
+### [Zusammenarbeit und Überprüfung von Dokumenten](./document-collaboration-review/)
+Ermöglichen Sie eine effiziente Zusammenarbeit und Überprüfung von Dokumenten mit Aspose.Words für Java. Erfahren Sie, wie Sie Änderungen verfolgen, Dokumente freigeben und Arbeitsabläufe optimieren.

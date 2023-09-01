@@ -17,7 +17,7 @@ Dans cet article, nous explorerons le code source C# ci-dessus pour comprendre c
 
 ## Étape 1 : Création du tableau
 
- Avant de créer un signet sur une colonne du tableau, il faut d'abord créer le tableau à l'aide d'un`DocumentBuilder` objet. Dans notre exemple, nous créons un tableau avec deux lignes et deux colonnes :
+ Avant de créer un signet sur une colonne du tableau, il faut d'abord créer le tableau à l'aide d'un`DocumentBuilder`objet. Dans notre exemple, nous créons un tableau avec deux lignes et deux colonnes :
 
 ```csharp
 builder. StartTable();
@@ -126,13 +126,13 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 ### FAQ sur les colonnes du tableau de signets dans un document Word
 
-#### Q : Quelles sont les conditions préalables pour utiliser la fonctionnalité « Signets pour les colonnes de tableau » dans Aspose.Words for .NET ?
+#### : Quelles sont les conditions préalables pour utiliser la fonctionnalité « Signets pour les colonnes de tableau » dans Aspose.Words for .NET ?
 
 R : Pour utiliser la fonctionnalité « Signets pour les colonnes de tableau » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
 #### Q : Comment créer un tableau avec des colonnes dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour créer un tableau avec des colonnes dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser un`DocumentBuilder`objet pour insérer des cellules et du contenu dans le tableau. Voici un exemple de code :
+ R : Pour créer un tableau avec des colonnes dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser un`DocumentBuilder` objet pour insérer des cellules et du contenu dans le tableau. Voici un exemple de code :
 
 ```csharp
 builder. StartTable();
@@ -184,4 +184,4 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 #### Q : Y a-t-il une limite au nombre de colonnes que je peux créer dans un tableau avec des signets de colonnes ?
 
-: Il n'y a pas de limite spécifique au nombre de colonnes que vous pouvez créer dans un tableau avec des signets de colonnes à l'aide d'Aspose.Words for .NET. La limite dépend principalement des ressources disponibles sur votre système et des spécifications du format de fichier Word que vous utilisez. Il est toutefois recommandé de ne pas créer un nombre trop important de colonnes, car cela pourrait nuire aux performances et à la lisibilité du document final.
+R : Il n'y a pas de limite spécifique au nombre de colonnes que vous pouvez créer dans un tableau avec des signets de colonnes à l'aide d'Aspose.Words for .NET. La limite dépend principalement des ressources disponibles sur votre système et des spécifications du format de fichier Word que vous utilisez. Il est toutefois recommandé de ne pas créer un nombre trop important de colonnes, car cela pourrait nuire aux performances et à la lisibilité du document final.

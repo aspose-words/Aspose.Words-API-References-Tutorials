@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/remove-source-headers-footers/
 
 ## Шаг 1. Инициализируйте каталоги документов
 
- Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir`переменная пути, по которому расположены ваши документы.
+ Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir` переменная пути, по которому расположены ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Шаг 4. Отключите настройку LinkToPrevious для HeadersFooters.
 
- Даже после очистки верхних и нижних колонтитулов исходного документа существует вероятность того, что параметр «LinkToPrevious» для`HeadersFooters` еще можно установить. Чтобы избежать такого поведения, вам необходимо явно установить для него значение`false` для первого раздела`HeadersFooters` свойство.
+Даже после очистки верхних и нижних колонтитулов исходного документа существует вероятность того, что параметр «LinkToPrevious» для`HeadersFooters` еще можно установить. Чтобы избежать такого поведения, вам необходимо явно установить для него значение`false` для первого раздела`HeadersFooters` свойство.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

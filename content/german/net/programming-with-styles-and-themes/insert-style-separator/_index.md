@@ -55,7 +55,7 @@ Sie können Quellcode ausführen, um ein Stiltrennzeichen in ein Dokument einzuf
 
 ```csharp
 
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document();

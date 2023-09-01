@@ -89,7 +89,7 @@ R: Para configurar el ID del proveedor de firma para una línea de firma en un d
 1.  Cargue el documento usando el`Document` clase y especifique la ruta al archivo del documento.
 2.  Acceda a la línea de firma utilizando el método o propiedad apropiado. Por ejemplo, puedes usar`GetChild` Método para recuperar la forma de la línea de firma.
 3. Recupere la identificación del proveedor de la línea de firma.
-4.  Crear una instancia del`SignOptions`clase y establecer el`ProviderId` propiedad al ID del proveedor recuperado.
+4.  Crear una instancia del`SignOptions` clase y establecer el`ProviderId` propiedad al ID del proveedor recuperado.
 5.  Utilizar el`DigitalSignatureUtil.Sign` método para firmar el documento, proporcionando los parámetros necesarios, incluido el`SignOptions` objeto.
 
 #### P: ¿Cómo accedo a la línea de firma en un documento de Word usando Aspose.Words para .NET?

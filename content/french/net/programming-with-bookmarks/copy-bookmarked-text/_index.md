@@ -50,7 +50,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 ## Étape 5 : Importer et copier le texte du signet
 
- Nous utilisons un`NodeImporter` objet pour importer et copier le texte du signet d'un document source vers le document de destination :
+ Nous utilisons un`NodeImporter`objet pour importer et copier le texte du signet d'un document source vers le document de destination :
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -76,7 +76,7 @@ Voici l'exemple complet de code source pour illustrer la copie de texte à parti
 	// Nous compléterons ce document.
 	Document dstDoc = new Document();
 
-	//Disons que nous serons ajoutés à la fin du corps de la dernière section.
+	// Disons que nous serons ajoutés à la fin du corps de la dernière section.
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
 	// Si vous importez plusieurs fois sans un seul contexte, de nombreux styles seront créés.
@@ -96,11 +96,11 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 #### Q : Quelles sont les conditions requises pour utiliser la fonctionnalité « Copier le texte avec les favoris » dans Aspose.Words pour .NET ?
 
-R : Pour utiliser la fonctionnalité « Copier du texte avec des signets » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+: Pour utiliser la fonctionnalité « Copier du texte avec des signets » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
 #### Q : Comment charger un document source dans Aspose.Words pour .NET ?
 
- R : Pour charger un document source dans Aspose.Words for .NET, vous pouvez utiliser le`Document`classe en spécifiant le chemin du fichier du document. Voici un exemple de code :
+ R : Pour charger un document source dans Aspose.Words for .NET, vous pouvez utiliser le`Document` classe en spécifiant le chemin du fichier du document. Voici un exemple de code :
 
 ```csharp
 Document srcDoc = new Document("path/to/your/document.docx");
@@ -116,7 +116,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### Q : Comment spécifier l'emplacement de la copie du texte du signet dans un document de destination à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour spécifier où vous souhaitez ajouter le texte de signet copié dans un document de destination à l'aide d'Aspose.Words for .NET, vous pouvez accéder au corps de la dernière section du document de destination. Vous pouvez utiliser le`LastSection` propriété pour accéder à la dernière section et à la`Body` propriété pour accéder au corps de cette section. Voici un exemple de code :
+R : Pour spécifier où vous souhaitez ajouter le texte de signet copié dans un document de destination à l'aide d'Aspose.Words for .NET, vous pouvez accéder au corps de la dernière section du document de destination. Vous pouvez utiliser le`LastSection` propriété pour accéder à la dernière section et à la`Body` propriété pour accéder au corps de cette section. Voici un exemple de code :
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
@@ -124,7 +124,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 #### Q : Comment importer et copier le texte d'un signet du document source vers le document de destination à l'aide d'Aspose.Words pour .NET ?
 
-R : Pour importer et copier le texte d'un signet d'un document source vers un document de destination à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`NodeImporter` classe spécifiant le document source, le document de destination et le mode de formatage à conserver. Ensuite, vous pouvez utiliser le`AppendBookmarkedText` méthode pour ajouter le texte du signet dans le document de destination. Voici un exemple de code :
+ R : Pour importer et copier le texte d'un signet d'un document source vers un document de destination à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`NodeImporter` classe spécifiant le document source, le document de destination et le mode de formatage à conserver. Ensuite, vous pouvez utiliser le`AppendBookmarkedText` méthode pour ajouter le texte du signet dans le document de destination. Voici un exemple de code :
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -133,7 +133,7 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 
 #### Q : Comment enregistrer un document de destination après avoir copié le texte du signet à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour enregistrer un document de destination après avoir copié le texte d'un signet à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Save` méthode du`Document` objet spécifiant le chemin du fichier de destination. Voici un exemple de code :
+R : Pour enregistrer un document de destination après avoir copié le texte d'un signet à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Save` méthode du`Document` objet spécifiant le chemin du fichier de destination. Voici un exemple de code :
 
 ```csharp
 dstDoc.Save("path/to/your/destination-document.docx");

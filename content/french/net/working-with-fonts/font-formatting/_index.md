@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ### Exemple de code source pour le formatage des polices à l'aide d'Aspose.Words for .NET 
 ```csharp
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

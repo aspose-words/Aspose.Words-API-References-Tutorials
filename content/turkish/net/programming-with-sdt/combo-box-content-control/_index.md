@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ### Aspose.Words for .NET kullanan Birleşik Giriş Kutusu İçerik Kontrolü için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -14,7 +14,7 @@ Denna handledning förklarar hur man använder Aspose.Words för .NET för att l
 
 Se till att du har följande förutsättningar:
 
-- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
+-  Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
 - En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
 ## Steg 2: Öppna käll- och måldokumenten
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Ställ in alternativ för importformat
 
- Skapa en instans av`ImportFormatOptions`klass och ställ in`IgnoreTextBoxes` egendom till`false`. Detta säkerställer att textrutorna inkluderas under bifogningsprocessen samtidigt som deras formatering bevaras.
+ Skapa en instans av`ImportFormatOptions` klass och ställ in`IgnoreTextBoxes` egendom till`false`. Detta säkerställer att textrutorna inkluderas under bifogningsprocessen samtidigt som deras formatering bevaras.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Steg 4: Lägg till innehåll i textrutan
 
- Skapa en`NodeImporter`objekt och använd det för att importera textboxnoder från källdokumentet till måldokumentet. Iterera igenom varje stycke i källdokumentet och importera det till måldokumentet.
+ Skapa en`NodeImporter` objekt och använd det för att importera textboxnoder från källdokumentet till måldokumentet. Iterera igenom varje stycke i källdokumentet och importera det till måldokumentet.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -64,7 +64,7 @@ Detta slutför implementeringen av att lägga till ett dokument samtidigt som te
 ### Exempel på källkod för Ignorera textrutor med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

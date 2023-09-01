@@ -89,7 +89,7 @@ R : Pour définir l'ID du fournisseur de signature pour une ligne de signature d
 1.  Chargez le document à l'aide du`Document` classe et spécifiez le chemin d’accès au fichier de document.
 2.  Accédez à la ligne de signature à l’aide de la méthode ou de la propriété appropriée. Par exemple, vous pouvez utiliser`GetChild` méthode pour récupérer la forme de la ligne de signature.
 3. Récupérez l’ID du fournisseur à partir de la ligne de signature.
-4.  Créez une instance du`SignOptions`classe et définir le`ProviderId` propriété à l’ID du fournisseur récupéré.
+4.  Créez une instance du`SignOptions` classe et définir le`ProviderId` propriété à l’ID du fournisseur récupéré.
 5.  Utilisez le`DigitalSignatureUtil.Sign` méthode pour signer le document, en fournissant les paramètres nécessaires, y compris le`SignOptions` objet.
 
 #### Q : Comment accéder à la ligne de signature dans un document Word à l'aide d'Aspose.Words pour .NET ?

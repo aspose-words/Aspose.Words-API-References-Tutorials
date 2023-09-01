@@ -14,7 +14,7 @@ Questo tutorial spiega come utilizzare Aspose.Words per .NET per aggiungere un d
 
 Assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
+-  Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
 - Un percorso di directory di documenti in cui si trovano i documenti di origine e di destinazione.
 
 ## Passaggio 2: apri i documenti di origine e di destinazione
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: configura le impostazioni della pagina per il documento di origine
 
-Regola le impostazioni di impostazione della pagina del documento di origine per garantire la corretta continuazione e numerazione. In questo esempio, impostiamo l'inizio della sezione su`SectionStart.Continuous` e riavviare la numerazione delle pagine. Ci assicuriamo inoltre che la larghezza, l'altezza e l'orientamento della pagina corrispondano all'ultima sezione del documento di destinazione.
+ Regola le impostazioni di impostazione della pagina del documento di origine per garantire la corretta continuazione e numerazione. In questo esempio, impostiamo l'inizio della sezione su`SectionStart.Continuous` e riavviare la numerazione delle pagine. Ci assicuriamo inoltre che la larghezza, l'altezza e l'orientamento della pagina corrispondano all'ultima sezione del documento di destinazione.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -74,18 +74,18 @@ Ciò completa l'implementazione dell'aggiunta di un documento con diverse impost
 ### Codice sorgente di esempio per l'impostazione della pagina diversa utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Imposta il documento di origine in modo che continui subito dopo la fine del documento di destinazione.
+	// Imposta il documento di origine in modo che continui subito dopo la fine del documento di destinazione.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Riavviare la numerazione delle pagine all'inizio del documento di origine.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Per garantire che ciò non accada quando il documento di origine ha impostazioni di impostazione della pagina diverse, assicurati che il file
-	// le impostazioni sono identiche nell'ultima sezione del documento di destinazione.
+	//le impostazioni sono identiche nell'ultima sezione del documento di destinazione.
 	// Se ci sono ulteriori sezioni continue che seguono nel documento di origine,
 	// questo dovrà essere ripetuto per quelle sezioni.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;

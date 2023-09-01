@@ -216,21 +216,21 @@ La maîtrise du rendu des documents est essentielle pour créer des applications
 ## FAQ
 
 ### Quelle est la différence entre le rendu et le traitement de documents ?
-   
-   Le rendu des documents implique la conversion de documents électroniques en une représentation visuelle que les utilisateurs peuvent visualiser, modifier ou imprimer, tandis que le traitement des documents englobe des tâches telles que le publipostage, la conversion et la protection.
+
+Le rendu des documents implique la conversion de documents électroniques en une représentation visuelle que les utilisateurs peuvent visualiser, modifier ou imprimer, tandis que le traitement des documents englobe des tâches telles que le publipostage, la conversion et la protection.
 
 ### Aspose.Words est-il compatible avec toutes les versions de Java ?
-   
-   Aspose.Words for Java prend en charge les versions Java 1.6 et ultérieures.
+
+Aspose.Words for Java prend en charge les versions Java 1.6 et ultérieures.
 
 ### Puis-je afficher uniquement des pages spécifiques d’un document volumineux ?
-   
-   Oui, vous pouvez utiliser Aspose.Words pour afficher efficacement des pages ou des plages de pages spécifiques.
+
+Oui, vous pouvez utiliser Aspose.Words pour afficher efficacement des pages ou des plages de pages spécifiques.
 
 ### Comment protéger un document rendu avec un mot de passe ?
-   
-   Aspose.Words vous permet d'appliquer une protection par mot de passe aux documents rendus pour sécuriser leur contenu.
+
+Aspose.Words vous permet d'appliquer une protection par mot de passe aux documents rendus pour sécuriser leur contenu.
 
 ### Aspose.Words peut-il restituer des documents dans plusieurs langues ?
-   
-   Oui, Aspose.Words prend en charge le rendu des documents dans différentes langues et gère de manière transparente le texte avec différents encodages de caractères.
+
+Oui, Aspose.Words prend en charge le rendu des documents dans différentes langues et gère de manière transparente le texte avec différents encodages de caractères.

@@ -43,7 +43,7 @@ table. ConvertToHorizontallyMergedCells();
 ### Codice sorgente di esempio per Converti in celle unite orizzontalmente utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");

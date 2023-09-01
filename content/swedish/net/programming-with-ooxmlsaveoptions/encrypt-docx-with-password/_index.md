@@ -46,7 +46,7 @@ Nu kan du köra källkoden för att kryptera ditt DOCX-dokument med ett lösenor
 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";  
 
 Document doc = new Document(dataDir + "Document.docx");

@@ -50,7 +50,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 ## Paso 5: importar y copiar el texto del marcador
 
- Usamos un`NodeImporter` objeto para importar y copiar texto de marcador desde un documento de origen al documento de destino:
+ Usamos un`NodeImporter`objeto para importar y copiar texto de marcador desde un documento de origen al documento de destino:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -76,7 +76,7 @@ Aquí está el código fuente de ejemplo completo para demostrar cómo copiar te
 	// Iremos agregando a este documento.
 	Document dstDoc = new Document();
 
-	//Digamos que se agregará al final del cuerpo de la última sección.
+	// Digamos que se agregará al final del cuerpo de la última sección.
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
 	// Si importa varias veces sin un solo contexto, se crearán muchos estilos.
@@ -100,7 +100,7 @@ R: Para utilizar la función "Copiar texto con marcadores" en Aspose.Words para 
 
 #### P: ¿Cómo cargo un documento fuente en Aspose.Words para .NET?
 
- R: Para cargar un documento fuente en Aspose.Words para .NET, puede usar el`Document`clase especificando la ruta del archivo del documento. Aquí hay un código de muestra:
+ R: Para cargar un documento fuente en Aspose.Words para .NET, puede usar el`Document` clase especificando la ruta del archivo del documento. Aquí hay un código de muestra:
 
 ```csharp
 Document srcDoc = new Document("path/to/your/document.docx");
@@ -116,7 +116,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### P: ¿Cómo especificar la ubicación de la copia del texto del marcador en un documento de destino usando Aspose.Words para .NET?
 
- R: Para especificar dónde desea agregar el texto copiado del marcador en un documento de destino usando Aspose.Words para .NET, puede navegar hasta el cuerpo de la última sección del documento de destino. Puedes usar el`LastSection` propiedad para acceder a la última sección y a la`Body` propiedad para acceder al cuerpo de esa sección. Aquí hay un código de muestra:
+R: Para especificar dónde desea agregar el texto copiado del marcador en un documento de destino usando Aspose.Words para .NET, puede navegar hasta el cuerpo de la última sección del documento de destino. Puedes usar el`LastSection` propiedad para acceder a la última sección y a la`Body` propiedad para acceder al cuerpo de esa sección. Aquí hay un código de muestra:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
@@ -124,7 +124,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 #### P: ¿Cómo importar y copiar texto de marcador desde el documento de origen al documento de destino usando Aspose.Words para .NET?
 
-R: Para importar y copiar texto de marcador desde un documento de origen a un documento de destino usando Aspose.Words para .NET, puede usar el`NodeImporter` clase que especifica el documento de origen, el documento de destino y el modo de formato a conservar. Entonces puedes usar el`AppendBookmarkedText` método para agregar el texto del marcador en el documento de destino. Aquí hay un código de muestra:
+ R: Para importar y copiar texto de marcador desde un documento de origen a un documento de destino usando Aspose.Words para .NET, puede usar el`NodeImporter` clase que especifica el documento de origen, el documento de destino y el modo de formato a conservar. Entonces puedes usar el`AppendBookmarkedText` método para agregar el texto del marcador en el documento de destino. Aquí hay un código de muestra:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -133,7 +133,7 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 
 #### P: ¿Cómo guardar un documento de destino después de copiar el texto del marcador usando Aspose.Words para .NET?
 
- R: Para guardar un documento de destino después de copiar texto de un marcador usando Aspose.Words para .NET, puede usar el`Save` método de la`Document` objeto que especifica la ruta del archivo de destino. Aquí hay un código de muestra:
+R: Para guardar un documento de destino después de copiar texto de un marcador usando Aspose.Words para .NET, puede usar el`Save` método de la`Document` objeto que especifica la ruta del archivo de destino. Aquí hay un código de muestra:
 
 ```csharp
 dstDoc.Save("path/to/your/destination-document.docx");

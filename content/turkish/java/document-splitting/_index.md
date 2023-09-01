@@ -25,3 +25,13 @@ Aspose.Words for Java kullanarak belge bölme konusunda uzmanlaşan geliştirici
 ### [Belgeleri Kolay ve Verimli Bir Şekilde Bölün](./split-documents-easily-efficiently/)
 
 Aspose.Words for Java'yı kullanarak belgeleri verimli bir şekilde nasıl böleceğinizi öğrenin. Belge işleme ve sözcük işleme için adım adım kılavuz. Üretkenliği şimdi artırın!
+### [Belgeleri Birden Çok Dosyaya Bölme](./splitting-documents-into-multiple-files/)
+Belgeleri birden fazla dosyaya bölmeyle ilgili adım adım kılavuzumuzla Aspose.Words for Java'nın gücünün kilidini açın. Uzman görüşlerine ve kaynak kodu örneklerine ulaşın.
+### [Belgeleri HTML Sayfalarına Bölme](./splitting-documents-into-html-pages/)
+Aspose.Words for Java'yı kullanarak Word belgelerini HTML sayfalarına nasıl böleceğinizi öğrenin. Kaynak kodlu adım adım kılavuzumuz süreci kolay ve verimli hale getirir. Belgelerinizi dönüştürmeye bugün başlayın!
+### [Belge Sayfa Ayırma](./document-page-separation/)
+Aspose.Words for Java'yı kullanarak Belge Sayfası Ayırma işlemini nasıl gerçekleştireceğinizi öğrenin. Bu kapsamlı kılavuz, verimli belge işleme için adım adım talimatlar ve kaynak kodu sağlar.
+### [Belge İçeriğini Sayfalara Göre Çıkarma](./extracting-document-content-pages/)
+Aspose.Words for Java kullanarak belge içeriğini sayfalara göre nasıl çıkaracağınızı öğrenin. Kaynak kodlu bu adım adım kılavuz sizi kısa sürede uzman yapacaktır.
+### [Belge Bölme ve Çıkarma Teknikleri](./document-splitting-extraction-techniques/)
+Aspose.Words for Java'yı kullanarak belge bölme ve çıkartmayı öğrenin. Verimli manipülasyon için kaynak kodlu adım adım kılavuz. Aspose'un gücünün kilidini açın

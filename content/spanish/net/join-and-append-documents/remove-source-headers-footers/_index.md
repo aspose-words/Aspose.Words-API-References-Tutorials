@@ -19,7 +19,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 
 ## Paso 1: inicializar los directorios de documentos
 
- Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir`variable a la ruta donde se encuentran sus documentos.
+ Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir` variable a la ruta donde se encuentran sus documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Paso 4: deshabilite la configuración "LinkToPrevious" para encabezados y pies de página
 
- Incluso después de borrar los encabezados y pies de página del documento fuente, existe la posibilidad de que la configuración "LinkToPrevious" para`HeadersFooters` todavía se puede configurar. Para evitar este comportamiento, debe configurarlo explícitamente en`false` para la primera sección`HeadersFooters` propiedad.
+Incluso después de borrar los encabezados y pies de página del documento fuente, existe la posibilidad de que la configuración "LinkToPrevious" para`HeadersFooters` todavía se puede configurar. Para evitar este comportamiento, debe configurarlo explícitamente en`false` para la primera sección`HeadersFooters` propiedad.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ Aquí está el código fuente completo para la función "Eliminar pies de págin
 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

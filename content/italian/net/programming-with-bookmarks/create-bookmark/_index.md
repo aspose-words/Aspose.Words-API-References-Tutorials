@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Passaggio 3: creazione di segnalibri nidificati
 
- Possiamo anche creare segnalibri nidificati all'interno di un segnalibro principale. Usiamo lo stesso`StartBookmark` E`EndBookmark` metodi per creare e terminare i segnalibri nidificati:
+Possiamo anche creare segnalibri nidificati all'interno di un segnalibro principale. Usiamo lo stesso`StartBookmark` E`EndBookmark` metodi per creare e terminare i segnalibri nidificati:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -102,7 +102,7 @@ R: Per utilizzare la funzione "Crea segnalibri" in Aspose.Words per .NET, è nec
 
 #### D: Come creare un documento in Aspose.Words per .NET?
 
- R: Per creare un documento in Aspose.Words per .NET, puoi utilizzare il file`Document`classe. Ecco un codice di esempio:
+ R: Per creare un documento in Aspose.Words per .NET, puoi utilizzare il file`Document` classe. Ecco un codice di esempio:
 
 ```csharp
 Document doc = new Document();
@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### D: Come aggiungere testo all'interno di un segnalibro utilizzando Aspose.Words per .NET?
 
- R: Per aggiungere testo all'interno di un segnalibro utilizzando Aspose.Words per .NET, puoi utilizzare il file`Write` metodo del`DocumentBuilder` oggetto che specifica il testo da aggiungere. Ecco un codice di esempio:
+R: Per aggiungere testo all'interno di un segnalibro utilizzando Aspose.Words per .NET, puoi utilizzare il file`Write` metodo del`DocumentBuilder` oggetto che specifica il testo da aggiungere. Ecco un codice di esempio:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

@@ -75,7 +75,7 @@ Detta slutför implementeringen av formateringen av antalet dataetiketter i ett 
 ### Exempel på källkod för Format Number Of Data Label med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -42,7 +42,7 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 ### Aspose.Words for .NET kullanan Çoklu Bölüm için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

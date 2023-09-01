@@ -14,7 +14,7 @@ Denna handledning förklarar hur man använder Aspose.Words för .NET för att l
 
 Se till att du har följande förutsättningar:
 
-- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
+-  Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
 - En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
 ## Steg 2: Öppna käll- och måldokumenten
@@ -54,13 +54,13 @@ Detta slutför implementeringen av att lägga till ett dokument med Aspose.Words
 ### Exempel på källkod för Bifoga dokument med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 	// Gå igenom alla avsnitt i källdokumentet.
-	// Sektionsnoder är omedelbara underordnade av dokumentnoden så vi kan bara räkna upp dokumentet.
+	//Sektionsnoder är omedelbara underordnade av dokumentnoden så vi kan bara räkna upp dokumentet.
 	foreach (Section srcSection in srcDoc)
 	{
 		// Eftersom vi kopierar ett avsnitt från ett dokument till ett annat,

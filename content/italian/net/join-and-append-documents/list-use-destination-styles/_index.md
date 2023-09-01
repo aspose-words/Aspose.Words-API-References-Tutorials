@@ -19,7 +19,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 
 ## Passaggio 1: inizializzare le directory dei documenti
 
- Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir`variabile al percorso in cui si trovano i tuoi documenti.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -82,7 +82,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 
 ## Passaggio 6: salvare il documento finale
 
- Infine, salva il documento unito con la funzione Elenca usa stili di destinazione abilitata utilizzando il file`Save` metodo del`Document` classe.
+Infine, salva il documento unito con la funzione Elenca usa stili di destinazione abilitata utilizzando il file`Save` metodo del`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
@@ -94,12 +94,12 @@ Ecco il codice sorgente completo per la funzionalità "Elenco utilizza stili di 
 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//Imposta il documento di origine in modo che continui subito dopo la fine del documento di destinazione.
+	// Imposta il documento di origine in modo che continui subito dopo la fine del documento di destinazione.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Tieni traccia degli elenchi che vengono creati.
 	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -109,7 +109,7 @@ Ecco il codice sorgente completo per la funzionalità "Elenco utilizza stili di 
 		{
 			int listId = para.ListFormat.List.ListId;
 			// Controlla se il documento di destinazione contiene già un elenco con questo ID. Se lo fa, allora potrebbe
-			//far sì che i due elenchi vengano eseguiti insieme. Crea invece una copia dell'elenco nel documento di origine.
+			// far sì che i due elenchi vengano eseguiti insieme. Crea invece una copia dell'elenco nel documento di origine.
 			if (dstDoc.Lists.GetListByListId(listId) != null)
 			{
 				Aspose.Words.Lists.List currentList;

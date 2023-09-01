@@ -105,7 +105,7 @@ Sie können ein Leerzeichen pro Ebene für die Listeneinrückung verwenden, inde
 
  Benutzen Sie die`DocumentBuilder`Klasse, um dem Dokument Inhalte hinzuzufügen und eine Liste mit mehreren Einrückungsebenen zu erstellen.
 
- Nachdem Sie den Inhalt hinzugefügt und die Listeneinrückung konfiguriert haben, verwenden Sie die`TxtSaveOptions`Klasse und legen Sie die fest`ListIndentation.Count` Eigenschaft auf die Anzahl der Einrückungsebenen und die`ListIndentation.Character` Eigentum auf dem Raum (`' '`) benutzen.
+ Nachdem Sie den Inhalt hinzugefügt und die Listeneinrückung konfiguriert haben, verwenden Sie die`TxtSaveOptions` Klasse und legen Sie die fest`ListIndentation.Count` Eigenschaft auf die Anzahl der Einrückungsebenen und die`ListIndentation.Character` Eigentum auf dem Raum (`' '`) benutzen.
 
  Speichern Sie das Dokument mit den angegebenen Optionen mithilfe von`Save` Methode der`Document` Klasse.
 

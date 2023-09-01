@@ -71,7 +71,7 @@ Damit ist die Implementierung der Anpassung einer einzelnen Diagrammreihe mithil
 ### Beispielquellcode für Single Chart Series mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -61,7 +61,7 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ### Aspose.Words for .NET kullanarak Hücrelerde ve Stilden Satırda Formatlamayı Genişletme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

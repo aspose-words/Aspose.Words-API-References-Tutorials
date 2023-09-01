@@ -18,7 +18,7 @@ url: /ru/python-net/document-options-and-settings/document-functionality-web-ext
 
 - Базовое понимание программирования на Python.
 -  Справочник по API Aspose.Words для Python (доступен по адресу[здесь](https://reference.aspose.com/words/python-net/).
--  Доступ к библиотеке Aspose.Words for Python (загрузить с сайта[здесь](https://releases.aspose.com/words/python/).
+- Доступ к библиотеке Aspose.Words for Python (загрузить с сайта[здесь](https://releases.aspose.com/words/python/).
 
 ## Настройка Aspose.Words для Python
 

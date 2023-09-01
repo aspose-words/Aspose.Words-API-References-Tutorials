@@ -18,7 +18,7 @@ Aspose.Words for Java هي مكتبة Java تمكن المطورين من إنش
 
 ## 2. إعداد بيئة تطوير جافا الخاصة بك
 
-قبل أن نبدأ، تأكد من تثبيت Java Development Kit (JDK) على نظامك. يمكنك تنزيل أحدث إصدار من JDK من موقع Oracle الرسمي. بالإضافة إلى ذلك، اختر بيئة التطوير المتكاملة (IDE) لتطوير Java، مثل Eclipse أو IntelliJ IDEA.
+قبل أن نبدأ، تأكد من تثبيت Java Development Kit (JDK) على نظامك. يمكنك تنزيل أحدث إصدار من JDK من موقع Oracle الإلكتروني. بالإضافة إلى ذلك، اختر بيئة التطوير المتكاملة (IDE) لتطوير Java، مثل Eclipse أو IntelliJ IDEA.
 
 ## 3. تثبيت Aspose.Words لجافا
 

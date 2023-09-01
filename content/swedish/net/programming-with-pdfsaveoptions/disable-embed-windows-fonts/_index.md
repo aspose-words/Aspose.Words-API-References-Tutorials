@@ -74,7 +74,7 @@ S: För att inaktivera inbäddning av Windows-teckensnitt i ett PDF-dokument med
 
  Ladda dokumentet du vill konvertera till PDF med hjälp av`Document` klass och dokumentsökväg.
 
- Skapa en instans av`PdfSaveOptions`klass och ställ in`FontEmbeddingMode` egendom till`PdfFontEmbeddingMode.EmbedNone`. Detta inaktiverar inbäddningen av Windows-teckensnitt i den genererade PDF-filen.
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`FontEmbeddingMode` egendom till`PdfFontEmbeddingMode.EmbedNone`. Detta inaktiverar inbäddningen av Windows-teckensnitt i den genererade PDF-filen.
 
  Använd`Save` metod för`Document` objekt för att konvertera dokumentet till PDF med angivande av konverteringsalternativen som konfigurerats tidigare.
 

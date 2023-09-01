@@ -57,7 +57,7 @@ Ceci termine la mise en œuvre de l’insertion d’un histogramme à l’aide d
 ### Exemple de code source pour Insérer un diagramme à colonnes à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

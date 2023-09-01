@@ -14,7 +14,7 @@ Ce didacticiel explique comment utiliser Aspose.Words for .NET pour ajouter le c
 
 Assurez-vous que vous disposez des conditions préalables suivantes :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
+-  Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de documents où se trouvent les documents source et de destination.
 
 ## Étape 2 : Ouvrir les documents source et destination
@@ -54,13 +54,13 @@ Ceci termine la mise en œuvre de l’ajout d’un document à l’aide d’Aspo
 ### Exemple de code source pour Append Document à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 	// Parcourez toutes les sections du document source.
-	// Les nœuds de section sont des enfants immédiats du nœud Document, nous pouvons donc simplement énumérer le document.
+	//Les nœuds de section sont des enfants immédiats du nœud Document, nous pouvons donc simplement énumérer le document.
 	foreach (Section srcSection in srcDoc)
 	{
 		// Parce que nous copions une section d'un document à un autre,

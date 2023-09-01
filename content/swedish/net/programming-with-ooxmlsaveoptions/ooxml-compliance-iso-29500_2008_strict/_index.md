@@ -48,7 +48,7 @@ Nu kan du köra källkod för att säkerställa Ooxml Iso 29500_2008_Strikt efte
 ### Exempel på källkod för Ooxml Compliance Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

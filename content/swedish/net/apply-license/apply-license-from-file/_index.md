@@ -78,7 +78,7 @@ Att lägga till vanliga frågor i handledningar förbättrar inlärningsupplevel
 
 #### F: Var kan jag hitta licensdokumentationen för Aspose.Words för .NET?
 
- S: Du kan hitta licensdokumentationen för Aspose. Ord för .NET på[API-referenser](https://reference.aspose.com/words/net/). Dokumentationen innehåller detaljerade instruktioner och exempel för att ansöka om licenser, inklusive tillämpning av licenser från filer.
+S: Du kan hitta licensdokumentationen för Aspose. Ord för .NET på[API-referenser](https://reference.aspose.com/words/net/). Dokumentationen innehåller detaljerade instruktioner och exempel för att ansöka om licenser, inklusive tillämpning av licenser från filer.
 
 #### F: Vilka filformat stöder Aspose.Words for .NET för licensfiler?
 

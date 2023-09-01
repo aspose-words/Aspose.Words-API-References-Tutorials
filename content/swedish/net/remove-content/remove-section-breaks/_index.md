@@ -56,7 +56,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
  
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Ladda dokumentet

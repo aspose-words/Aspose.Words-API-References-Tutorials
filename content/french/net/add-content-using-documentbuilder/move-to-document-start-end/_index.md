@@ -75,11 +75,11 @@ R : La fonctionnalité Déplacer vers le début/la fin du document dans Aspose.
 
 #### Q : Puis-je utiliser cette fonctionnalité avec un document Word existant ?
 
-: Oui, vous pouvez utiliser la fonctionnalité Déplacer vers le début/la fin du document avec des documents Word nouveaux et existants. Initialisez simplement DocumentBuilder avec l'objet Document approprié, puis utilisez les méthodes MoveToDocumentStart et MoveToDocumentEnd comme indiqué dans l'exemple de code source.
+R : Oui, vous pouvez utiliser la fonctionnalité Déplacer vers le début/la fin du document avec des documents Word nouveaux et existants. Initialisez simplement DocumentBuilder avec l'objet Document approprié, puis utilisez les méthodes MoveToDocumentStart et MoveToDocumentEnd comme indiqué dans l'exemple de code source.
 
 #### Q : Comment la méthode DocumentBuilder.MoveToDocumentStart/MoveToDocumentEnd affecte-t-elle le contenu du document ?
 
-R : La méthode DocumentBuilder.MoveToDocumentStart déplace le curseur au début du document sans modifier le contenu existant. De même, la méthode DocumentBuilder.MoveToDocumentEnd déplace le curseur à la fin du document sans en modifier le contenu.
+: La méthode DocumentBuilder.MoveToDocumentStart déplace le curseur au début du document sans modifier le contenu existant. De même, la méthode DocumentBuilder.MoveToDocumentEnd déplace le curseur à la fin du document sans en modifier le contenu.
 
 #### Q : Puis-je effectuer d'autres opérations après avoir déplacé le curseur vers la fin du document ?
 

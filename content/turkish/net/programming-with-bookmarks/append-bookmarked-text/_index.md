@@ -88,7 +88,7 @@ Aspose.Words for .NET kullanarak bir yer iminden metin eklemeyi gösteren tam ö
 
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
-		// Bu, mevcut düğümün bir kopyasını oluşturur ve onu bağlamda içe aktarır (geçerli kılar)
+		//Bu, mevcut düğümün bir kopyasını oluşturur ve onu bağlamda içe aktarır (geçerli kılar)
 		// hedef belgenin. İçe aktarma, stilleri ve liste tanımlayıcılarını doğru şekilde ayarlamak anlamına gelir.
 		Node newNode = importer.ImportNode(curNode, true);
 
@@ -109,7 +109,7 @@ C: Aspose.Words for .NET'te "Yer işaretleriyle metin ekle" işlevini kullanmak 
 
 #### S2: Bir Word belgesinde yer işaretinin başlangıcını ve sonunu içeren paragraflar nasıl alınır?
 
- C: Bir Word belgesindeki yer iminin başlangıcını ve sonunu içeren paragraflara ulaşmak için`BookmarkStart` Ve`BookmarkEnd` yer iminin özellikleri. İşte örnek bir kod:
+C: Bir Word belgesindeki yer iminin başlangıcını ve sonunu içeren paragraflara ulaşmak için`BookmarkStart` Ve`BookmarkEnd` yer iminin özellikleri. İşte örnek bir kod:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;

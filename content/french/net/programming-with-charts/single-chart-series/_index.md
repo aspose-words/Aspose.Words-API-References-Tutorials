@@ -71,7 +71,7 @@ Ceci termine la mise en œuvre de la personnalisation d’une seule série de gr
 ### Exemple de code source pour une série de graphiques uniques utilisant Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

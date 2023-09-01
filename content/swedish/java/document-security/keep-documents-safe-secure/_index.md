@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 Vattenmärkning kan hjälpa till att skydda ditt dokuments konfidentialitet och indikera dess status. Aspose.Words för Java erbjuder lättanvända vattenmärkningsfunktioner:
 
 ```java
-// Lägg till en synlig vattenstämpel
+//Lägg till en synlig vattenstämpel
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

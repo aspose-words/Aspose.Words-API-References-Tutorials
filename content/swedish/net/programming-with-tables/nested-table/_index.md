@@ -72,7 +72,7 @@ Var noga med att ange rätt sökväg och namnfil för utdatadokumentet.
 ### Exempel på källkod för Nested Table med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

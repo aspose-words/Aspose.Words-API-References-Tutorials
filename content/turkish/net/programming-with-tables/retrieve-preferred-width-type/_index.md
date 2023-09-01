@@ -50,7 +50,7 @@ Burada ilk tabloyu getirmek için belgeyi kullanıyoruz, ardından otomatik tabl
 ### Aspose.Words for .NET kullanarak Tercih Edilen Genişlik Tipini Alma için örnek kaynak kodu 
 
 ```csharp
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

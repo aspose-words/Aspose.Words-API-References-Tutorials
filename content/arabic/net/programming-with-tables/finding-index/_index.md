@@ -54,7 +54,7 @@ Console.WriteLine("\nCell index is " + cellIndex);
 ### نموذج التعليمات البرمجية المصدر للبحث عن الفهرس باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

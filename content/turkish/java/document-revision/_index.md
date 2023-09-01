@@ -27,3 +27,13 @@ Aspose.Words for Java ile belge revizyonunda uzmanlaşan geliştiriciler, kelime
 ## Belge Revizyon Eğitimleri
 ### [Belge Revizyonu İçin Nihai Kılavuz](./guide-document-revision/)
 Aspose.Words for Java ile belge revizyonunda uzmanlaşın! Değişiklikleri verimli bir şekilde yönetin, revizyonları kabul edin/reddedin ve sorunsuz bir şekilde işbirliği yapın. Şimdi başla!
+### [Doküman Revizyonlarının Takibi ve Yönetimi](./tracking-managing-document-revisions/)
+Bu kapsamlı kılavuzdan Aspose.Words for Java ile belge revizyonlarını nasıl takip edeceğinizi ve yöneteceğinizi öğrenin. Adım adım talimatları ve kaynak kodu örneklerini alın.
+### [Belge Sürümlerini Karşılaştırma](./comparing-document-versions/)
+Aspose.Words for Java kullanarak belge sürümlerini nasıl karşılaştıracağınızı öğrenin. Verimli sürüm kontrolü için adım adım kılavuz.
+### [Belge Değişikliklerini Kabul Etme ve Reddetme](./accepting-rejecting-document-changes/)
+Aspose.Words for Java ile belge değişikliklerini zahmetsizce nasıl yöneteceğinizi öğrenin. Revizyonları sorunsuz bir şekilde kabul edin ve reddedin.
+### [Belge Sürümü Kontrolü ve Geçmişi](./document-version-control-history/)
+Aspose.Words for Java'yı kullanarak etkili belge sürümü kontrolünü öğrenin. Değişiklikleri yönetin, sorunsuz bir şekilde işbirliği yapın ve revizyonları zahmetsizce takip edin.
+### [Belge İşbirliği ve İnceleme](./document-collaboration-review/)
+Aspose.Words for Java ile Verimli Belge İşbirliğinin ve İncelemenin Kilidini Açın. Değişiklikleri Nasıl Takip Edeceğinizi, Belgeleri Paylaşmayı ve İş Akışını Kolaylaştırmayı Öğrenin.

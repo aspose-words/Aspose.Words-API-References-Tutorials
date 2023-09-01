@@ -46,7 +46,7 @@ Jetzt können Sie den Quellcode ausführen, um Ihr DOCX-Dokument mit einem Passw
 
 ```csharp
 
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";  
 
 Document doc = new Document(dataDir + "Document.docx");

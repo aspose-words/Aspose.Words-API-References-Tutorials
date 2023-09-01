@@ -14,7 +14,7 @@ Ce didacticiel explique comment utiliser Aspose.Words for .NET pour ajouter un d
 
 Assurez-vous que vous disposez des conditions préalables suivantes :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
+-  Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de documents où se trouvent les documents source et de destination.
 
 ## Étape 2 : Ouvrir les documents source et destination
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : Configurer les options de format d'importation
 
- Créez une instance du`ImportFormatOptions`classe et définir le`IgnoreTextBoxes` propriété à`false`. Cela garantit que les zones de texte sont incluses lors du processus d'ajout tout en préservant leur mise en forme.
+ Créez une instance du`ImportFormatOptions` classe et définir le`IgnoreTextBoxes` propriété à`false`. Cela garantit que les zones de texte sont incluses lors du processus d'ajout tout en préservant leur mise en forme.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Étape 4 : Ajouter le contenu de la zone de texte
 
- Créer un`NodeImporter`objet et utilisez-le pour importer des nœuds de zone de texte du document source vers le document de destination. Parcourez chaque paragraphe du document source et importez-le dans le document de destination.
+ Créer un`NodeImporter` objet et utilisez-le pour importer des nœuds de zone de texte du document source vers le document de destination. Parcourez chaque paragraphe du document source et importez-le dans le document de destination.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -64,7 +64,7 @@ Ceci termine la mise en œuvre de l’ajout d’un document tout en préservant 
 ### Exemple de code source pour ignorer les zones de texte à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

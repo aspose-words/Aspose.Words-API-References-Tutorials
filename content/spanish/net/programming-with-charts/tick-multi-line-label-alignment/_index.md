@@ -57,7 +57,7 @@ Esto completa la implementación de configurar la alineación de la etiqueta de 
 ### Código fuente de ejemplo para la alineación de etiquetas de varias líneas de Tick usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

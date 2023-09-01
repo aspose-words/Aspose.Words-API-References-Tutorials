@@ -53,7 +53,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ### Codice sorgente di esempio per il formato riga Disabilita interruzione tra le pagine utilizzando Aspose.Words per .NET 
 
 ```csharp
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");

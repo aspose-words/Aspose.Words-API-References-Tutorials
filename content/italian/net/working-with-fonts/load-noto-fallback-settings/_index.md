@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ### Codice sorgente di esempio per le impostazioni di fallback di Noto utilizzando Aspose.Words per .NET 
 ```csharp
 
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

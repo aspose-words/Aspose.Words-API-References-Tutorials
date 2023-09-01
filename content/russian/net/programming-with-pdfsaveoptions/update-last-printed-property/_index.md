@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
  Создайте экземпляр`Document` класс, указывающий путь к документу Word.
 
- Создайте экземпляр`PdfSaveOptions`класс и установите`UpdateLastPrintedProperty` собственность`true` чтобы включить обновление свойства «Последняя печать».
+ Создайте экземпляр`PdfSaveOptions` класс и установите`UpdateLastPrintedProperty` собственность`true` чтобы включить обновление свойства «Последняя печать».
 
  Использовать`Save` метод`Document`class для сохранения документа в формате PDF, указав параметры сохранения.
 

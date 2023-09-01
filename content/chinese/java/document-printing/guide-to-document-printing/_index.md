@@ -28,7 +28,7 @@ Aspose.Words for Java 是一个功能强大的 Java 库，它提供了一组全�
 
 ### 安装Java开发工具包（JDK）
 
-如果您尚未安装 JDK，请访问 Oracle 官方网站并下载适合您操作系统的最新版本 JDK。按照安装向导的说明进行安装。
+如果您尚未安装 JDK，请访问 Oracle 网站并下载适合您的操作系统的最新版本的 JDK。按照安装向导的说明进行安装。
 
 ### 将 Aspose.Words for Java 添加到您的项目
 
@@ -189,20 +189,20 @@ try {
 
 ### Aspose.Words for Java 可以处理各种文档格式吗？
 
-   是的，Aspose.Words for Java 支持多种文档格式，包括 DOC、DOCX、RTF 等。
+是的，Aspose.Words for Java 支持多种文档格式，包括 DOC、DOCX、RTF 等。
 
 ### Aspose.Words for Java 是否与所有打印机兼容？
 
-   Aspose.Words for Java 可以与大多数支持通过 Java 应用程序进行文档打印的打印机配合使用。
+Aspose.Words for Java 可以与大多数支持通过 Java 应用程序进行文档打印的打印机配合使用。
 
 ### 我可以从网络应用程序打印文档吗？
 
-   是的，您可以使用 Aspose.Words for Java 从 Web 应用程序以编程方式打印文档。
+是的，您可以使用 Aspose.Words for Java 从 Web 应用程序以编程方式打印文档。
 
 ### 如何打印大文档的特定页面？
 
-   Aspose.Words for Java 允许您指定要打印的页面或页面范围。
+Aspose.Words for Java 允许您指定要打印的页面或页面范围。
 
 ### Aspose.Words for Java 支持双面打印吗？
 
-   是的，Aspose.Words for Java 提供了双面打印选项，使您能够在纸张的两面进行打印。
+是的，Aspose.Words for Java 提供了双面打印选项，使您能够在纸张的两面进行打印。

@@ -71,7 +71,7 @@ Ciò completa l'implementazione della personalizzazione di una singola serie di 
 ### Codice sorgente di esempio per serie di grafici singoli utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

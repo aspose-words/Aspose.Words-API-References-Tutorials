@@ -14,7 +14,7 @@ In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET den Inhal
 
 Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
+-  Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
 - Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
 ## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
@@ -54,13 +54,13 @@ Damit ist die Implementierung des Anhängens eines Dokuments mithilfe von Aspose
 ### Beispielquellcode für Append Document mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 	// Durchlaufen Sie alle Abschnitte im Quelldokument.
-	// Abschnittsknoten sind unmittelbare untergeordnete Elemente des Dokumentknotens, sodass wir das Dokument einfach aufzählen können.
+	//Abschnittsknoten sind unmittelbare untergeordnete Elemente des Dokumentknotens, sodass wir das Dokument einfach aufzählen können.
 	foreach (Section srcSection in srcDoc)
 	{
 		// Da wir einen Abschnitt von einem Dokument in ein anderes kopieren,

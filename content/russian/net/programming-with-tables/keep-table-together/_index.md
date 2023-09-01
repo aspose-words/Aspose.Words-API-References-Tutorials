@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ### Пример исходного кода для Keep Table Together с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");

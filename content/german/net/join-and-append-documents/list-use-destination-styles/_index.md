@@ -19,7 +19,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 ## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir`Variable für den Pfad, in dem sich Ihre Dokumente befinden.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -82,7 +82,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 
 ## Schritt 6: Speichern Sie das endgültige Dokument
 
- Speichern Sie abschließend das zusammengeführte Dokument mit aktivierter Funktion „Zielformate auflisten“ mithilfe von`Save` Methode der`Document` Klasse.
+Speichern Sie abschließend das zusammengeführte Dokument mit aktivierter Funktion „Zielformate auflisten“ mithilfe von`Save` Methode der`Document` Klasse.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
@@ -94,12 +94,12 @@ Hier ist der vollständige Quellcode für die Funktion „List Use Destination S
 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//Legen Sie fest, dass das Quelldokument direkt nach dem Ende des Zieldokuments fortgesetzt wird.
+	// Legen Sie fest, dass das Quelldokument direkt nach dem Ende des Zieldokuments fortgesetzt wird.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Behalten Sie den Überblick über die erstellten Listen.
 	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -109,7 +109,7 @@ Hier ist der vollständige Quellcode für die Funktion „List Use Destination S
 		{
 			int listId = para.ListFormat.List.ListId;
 			// Prüfen Sie, ob das Zieldokument bereits eine Liste mit dieser ID enthält. Wenn dies der Fall ist, dann kann dies der Fall sein
-			//bewirkt, dass die beiden Listen zusammen ausgeführt werden. Erstellen Sie stattdessen eine Kopie der Liste im Quelldokument.
+			// bewirkt, dass die beiden Listen zusammen ausgeführt werden. Erstellen Sie stattdessen eine Kopie der Liste im Quelldokument.
 			if (dstDoc.Lists.GetListByListId(listId) != null)
 			{
 				Aspose.Words.Lists.List currentList;

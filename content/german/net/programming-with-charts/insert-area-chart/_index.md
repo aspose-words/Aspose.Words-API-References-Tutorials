@@ -65,7 +65,7 @@ Damit ist die Implementierung des Einfügens eines Flächendiagramms mit Aspose.
 ### Beispielquellcode für „Flächendiagramm einfügen“ mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

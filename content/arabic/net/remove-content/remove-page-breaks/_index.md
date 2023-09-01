@@ -67,12 +67,12 @@ foreach (Paragraph para in paragraphs)
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- يستبدل`"modified-document.docx"` بالاسم المطلوب للمستند المعدل.
+ يستبدل`"modified-document.docx"`بالاسم المطلوب للمستند المعدل.
 
 ### نموذج التعليمات البرمجية المصدر لإزالة فواصل الصفحات باستخدام Aspose.Words لـ .NET 
 ```csharp
 
-//المسار إلى دليل المستندات الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // قم بتحميل المستند
@@ -154,4 +154,4 @@ foreach (Paragraph para in paragraphs)
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- يستبدل`"modified-document.docx"` بالاسم المطلوب للمستند المعدل.
+ يستبدل`"modified-document.docx"`بالاسم المطلوب للمستند المعدل.

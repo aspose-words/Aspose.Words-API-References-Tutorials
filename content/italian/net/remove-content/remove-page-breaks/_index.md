@@ -67,12 +67,12 @@ Dopo aver rimosso le interruzioni di pagina, dobbiamo salvare il documento modif
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Sostituire`"modified-document.docx"` con il nome desiderato per il documento modificato.
+ Sostituire`"modified-document.docx"`con il nome desiderato per il documento modificato.
 
 ### Codice sorgente di esempio per rimuovere interruzioni di pagina utilizzando Aspose.Words per .NET 
 ```csharp
 
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Caricare il documento
@@ -154,4 +154,4 @@ R: Dopo aver rimosso le interruzioni di pagina, è necessario salvare il documen
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Sostituire`"modified-document.docx"` con il nome desiderato per il documento modificato.
+ Sostituire`"modified-document.docx"`con il nome desiderato per il documento modificato.

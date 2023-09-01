@@ -60,7 +60,7 @@ Artık belgenizden belirli bir sayfa aralığını almak ve bunları TIFF dosyas
 
 ```csharp 
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

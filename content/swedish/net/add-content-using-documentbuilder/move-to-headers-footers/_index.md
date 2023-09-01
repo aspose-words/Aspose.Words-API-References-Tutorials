@@ -70,7 +70,7 @@ Se till att ange lämplig sökväg och filformat (t.ex. DOCX).
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Ange att vi vill ha olika sidhuvuden och sidfötter för första, jämna och udda sidor.
+// Ange att vi vill ha olika sidhuvuden och sidfötter för första, jämna och udda sidor.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
@@ -93,7 +93,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 
 ## Slutsats
 
-I det här exemplet utforskade vi funktionen Flytta till sidhuvuden/sidfot i Aspose.Words för .NET. Vi lärde oss att navigera till olika sidhuvuden och sidfötter i ett Word-dokument och lägga till innehåll till dem med hjälp av klassen DocumentBuilder. Den här funktionen tillåter utvecklare att anpassa sidhuvuden och sidfötter för specifika sidor eller avsnitt, vilket ger flexibilitet när det gäller att skapa professionella och strukturerade dokument. Aspose.Words för .NET tillhandahåller en kraftfull uppsättning verktyg för programmatisk manipulering av Word-dokument, vilket gör det till ett viktigt bibliotek för dokumentbehandlingsprogram.
+det här exemplet utforskade vi funktionen Flytta till sidhuvuden/sidfot i Aspose.Words för .NET. Vi lärde oss att navigera till olika sidhuvuden och sidfötter i ett Word-dokument och lägga till innehåll till dem med hjälp av klassen DocumentBuilder. Den här funktionen tillåter utvecklare att anpassa sidhuvuden och sidfötter för specifika sidor eller avsnitt, vilket ger flexibilitet när det gäller att skapa professionella och strukturerade dokument. Aspose.Words för .NET tillhandahåller en kraftfull uppsättning verktyg för programmatisk manipulering av Word-dokument, vilket gör det till ett viktigt bibliotek för dokumentbehandlingsprogram.
 
 ### Vanliga frågor för att flytta till sidhuvudena sidfötter i word-dokument
 

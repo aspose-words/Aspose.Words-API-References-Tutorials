@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Étape 2 : Récupérer les lignes parentales à partir des signets
 
- Nous utilisons le`GetAncestor`méthodes pour récupérer les lignes parentes des nœuds de début et de fin du signet :
+ Nous utilisons le`GetAncestor` méthodes pour récupérer les lignes parentes des nœuds de début et de fin du signet :
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
@@ -56,7 +56,7 @@ Voici l'exemple de code source complet pour démêler les signets imbriqués à 
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		// Si les deux lignes sont correctes et que le début et la fin du signet sont contenus dans des lignes adjacentes,
+		//Si les deux lignes sont correctes et que le début et la fin du signet sont contenus dans des lignes adjacentes,
 		// déplacez le nœud de fin du signet à la fin du dernier paragraphe de la dernière cellule de la ligne supérieure.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

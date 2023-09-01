@@ -46,7 +46,7 @@ Ora puoi eseguire il codice sorgente per preservare i caratteri di controllo leg
 ### Codice sorgente di esempio per Keep Legacy Control Chars utilizzando Aspose.Words per .NET 
 ```csharp
 
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");

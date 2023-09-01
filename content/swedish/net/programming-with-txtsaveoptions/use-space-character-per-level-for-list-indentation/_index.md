@@ -105,7 +105,7 @@ Du kan använda ett blanksteg per nivå för listindrag genom att följa dessa s
 
  Använd`DocumentBuilder`klass för att lägga till innehåll i dokumentet och skapa en lista med flera nivåer av indrag.
 
- När du har lagt till innehållet och konfigurerat listindragningen använder du`TxtSaveOptions`klass och ställ in`ListIndentation.Count` egenskapen till antalet indragsnivåer och`ListIndentation.Character` egendom på utrymmet (`' '`) att använda.
+ När du har lagt till innehållet och konfigurerat listindragningen använder du`TxtSaveOptions` klass och ställ in`ListIndentation.Count` egenskapen till antalet indragsnivåer och`ListIndentation.Character` egendom på utrymmet (`' '`) att använda.
 
  Spara dokumentet med de angivna alternativen med hjälp av`Save` metod för`Document` klass.
 

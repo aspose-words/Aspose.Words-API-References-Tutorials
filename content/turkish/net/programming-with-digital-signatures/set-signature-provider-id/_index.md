@@ -89,7 +89,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesindeki imza satırı için im
 1.  Belgeyi kullanarak yükleyin`Document` sınıfını seçin ve belge dosyasının yolunu belirtin.
 2.  Uygun yöntemi veya özelliği kullanarak imza satırına erişin. Örneğin, kullanabilirsiniz`GetChild` İmza çizgisi şeklini alma yöntemi.
 3. Sağlayıcı kimliğini imza satırından alın.
-4.  Bir örneğini oluşturun`SignOptions`sınıfı seçin ve ayarlayın`ProviderId` özelliği alınan sağlayıcı kimliğine aktarın.
+4.  Bir örneğini oluşturun`SignOptions` sınıfı seçin ve ayarlayın`ProviderId` özelliği alınan sağlayıcı kimliğine aktarın.
 5.  Kullan`DigitalSignatureUtil.Sign` dahil olmak üzere gerekli parametreleri sağlayarak belgeyi imzalama yöntemi`SignOptions` nesne.
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesindeki imza satırına nasıl erişebilirim?

@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Aspose.Words for .NET Kullanarak Oluştururken Varsayılan Yazı Tipini Belirleme için örnek kaynak kodu 
 
 ```csharp
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -62,7 +62,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir belgeyi oluştururken varsayı
 
 #### S: Aspose.Words'te PDF'ye dönüştürürken varsayılan yazı tipini nasıl belirleyebilirim?
 
- C: Aspose.Words'te PDF'ye dönüştürürken varsayılan yazı tipini belirlemek için`PdfOptions`sınıfı seçin ve ayarlayın`DefaultFontName` İstenilen yazı tipinin adının özelliğini kullanın.
+ C: Aspose.Words'te PDF'ye dönüştürürken varsayılan yazı tipini belirlemek için`PdfOptions` sınıfı seçin ve ayarlayın`DefaultFontName` İstenilen yazı tipinin adının özelliğini kullanın.
 
 #### S: PDF'ye dönüştürürken varsayılan yazı tipi kullanılamıyorsa ne olur?
 

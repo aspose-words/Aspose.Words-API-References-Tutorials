@@ -77,7 +77,7 @@ Damit ist die Implementierung der Festlegung von Standardoptionen für Datenbesc
 ### Beispielquellcode für Standardoptionen für Datenbeschriftungen mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

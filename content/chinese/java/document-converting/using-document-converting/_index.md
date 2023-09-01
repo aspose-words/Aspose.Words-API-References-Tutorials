@@ -18,30 +18,30 @@ Aspose.Words for Java 是一个功能强大的文档处理库，允许 Java 开�
 
 转换文档可能是一个复杂的过程，尤其是在处理各种格式、字体、布局和样式时。 Aspose.Words for Java 提供了几个令人信服的理由来说明为什么它是文档转换的理想选择：
 
-### 广泛的格式支持： 
+## 广泛的格式支持： 
 Aspose.Words 支持多种文档格式，包括 DOCX、DOC、RTF、PDF、EPUB、HTML 等。这意味着您可以轻松地将文档与各种格式相互转换。
 
-### 高保真转换： 
+## 高保真转换： 
 转换文档时，保持内容的保真度至关重要。 Aspose.Words 确保转换后的文档准确保留原始格式、样式、图像和其他元素。
 
-### 文档合并： 
+## 文档合并： 
 Aspose.Words 使您能够将多个文档合并为一个文档，从而更轻松地管理和分发信息。
 
-### 文字处理功能： 
+## 文字处理功能： 
 使用 Aspose.Words，您可以执行高级文字处理任务，例如查找和替换文本、处理段落和表格以及处理文档元数据。
 
-### 平台独立性： 
+## 平台独立性： 
 Aspose.Words 是独立于平台的，这意味着它可以在各种操作系统上无缝工作，使其具有多功能性并适用于不同的开发环境。
 
 ## 使用 Aspose.Words for Java 进行文档转换
 
 让我们逐步了解如何利用 Aspose.Words for Java 的文档转换功能。在此示例中，我们将 Word 文档转换为 PDF。
 
-### 第 1 步：设置环境
+## 第 1 步：设置环境
 
 在开始之前，请确保您已在项目中下载并安装了 Aspose.Words for Java。从 Aspose 网站获取有效许可证以避免任何评估限制。
 
-### 第 2 步：加载文档
+## 第 2 步：加载文档
 
 首先，加载要转换的 Word 文档：
 
@@ -50,7 +50,7 @@ Aspose.Words 是独立于平台的，这意味着它可以在各种操作系统�
 Document doc = new Document("input.docx");
 ```
 
-### 第 3 步：转换为 PDF
+## 第 3 步：转换为 PDF
 
 接下来，将加载的 Word 文档转换为 PDF：
 
@@ -59,32 +59,32 @@ Document doc = new Document("input.docx");
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
-### 第四步：转换为其他格式
+## 第四步：转换为其他格式
 
 除了 PDF 之外，Aspose.Words for Java 还允许您将文档转换为各种其他格式。这里有些例子：
 
-#### 转换为 RTF
+### 转换为 RTF
 
 ```java
 //将文档另存为 RTF
 doc.save("output.rtf", SaveFormat.RTF);
 ```
 
-#### 转换为 HTML
+### 转换为 HTML
 
 ```java
 //将文档另存为 HTML
 doc.save("output.html", SaveFormat.HTML);
 ```
 
-#### 转换为 EPUB
+### 转换为 EPUB
 
 ```java
 //将文档另存为 EPUB
 doc.save("output.epub", SaveFormat.EPUB);
 ```
 
-### 第 5 步：处理字体替换
+## 第 5 步：处理字体替换
 
 字体替换是转换文档时的一个常见挑战。 Aspose.Words提供了一种处理字体替换的机制，以确保转换后的文档的视觉一致性：
 
@@ -93,7 +93,7 @@ doc.save("output.epub", SaveFormat.EPUB);
 FontSettings.setFontsFolder("/path/to/fonts", true);
 ```
 
-### 第 6 步：自定义转换过程
+## 第 6 步：自定义转换过程
 
 Aspose.Words 提供了多种选项来自定义文档转换过程。例如，您可以设置转换的页面范围或指定保存为 PDF 时的图像分辨率：
 
@@ -110,13 +110,13 @@ options.setJpegQuality(300);
 
 为了确保文档转换过程顺利高效，请考虑以下提示：
 
-### 文档格式兼容性： 
+## 文档格式兼容性： 
 确保源格式和目标格式与 Aspose.Words 兼容。[Aspose.Words Java API 参考](https://reference.aspose.com/words/java/)对于支持的格式。
 
-### 处理异常： 
+## 处理异常： 
 当处理大量文档时，转换过程中可能会出现错误。实施适当的异常处理以优雅地识别和解决这些问题。
 
-### 质量保证： 
+## 质量保证： 
 在生产环境中部署文档转换功能之前，请使用各种文档类型和大小彻底测试转换过程，以验证输出的准确性和保真度。
 
 ## 结论

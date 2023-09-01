@@ -18,7 +18,7 @@ Aspose.Words for Java est une bibliothèque Java qui permet aux développeurs de
 
 ## 2. Configuration de votre environnement de développement Java
 
-Avant de commencer, assurez-vous que le kit de développement Java (JDK) est installé sur votre système. Vous pouvez télécharger le dernier JDK sur le site officiel d'Oracle. De plus, choisissez un environnement de développement intégré (IDE) pour le développement Java, tel qu'Eclipse ou IntelliJ IDEA.
+Avant de commencer, assurez-vous que le kit de développement Java (JDK) est installé sur votre système. Vous pouvez télécharger le dernier JDK sur le site Web d'Oracle. De plus, choisissez un environnement de développement intégré (IDE) pour le développement Java, tel qu'Eclipse ou IntelliJ IDEA.
 
 ## 3. Installation d'Aspose.Words pour Java
 

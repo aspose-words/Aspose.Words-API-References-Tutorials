@@ -46,7 +46,7 @@ Nu kan du köra källkod för att bevara äldre kontrolltecken när du sparar et
 ### Exempel på källkod för Keep Legacy Control Chars med Aspose.Words för .NET 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");

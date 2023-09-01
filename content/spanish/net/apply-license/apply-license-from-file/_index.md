@@ -78,7 +78,7 @@ Agregar preguntas frecuentes a los tutoriales mejora enormemente la experiencia 
 
 #### P: ¿Dónde puedo encontrar la documentación de licencia de Aspose.Words para .NET?
 
- R: Puede encontrar la documentación de licencia de Aspose. Palabras para .NET en el[Referencias API](https://reference.aspose.com/words/net/). La documentación proporciona instrucciones detalladas y ejemplos para aplicar licencias, incluida la aplicación de licencias desde archivos.
+R: Puede encontrar la documentación de licencia de Aspose. Palabras para .NET en el[Referencias API](https://reference.aspose.com/words/net/). La documentación proporciona instrucciones detalladas y ejemplos para aplicar licencias, incluida la aplicación de licencias desde archivos.
 
 #### P: ¿Qué formatos de archivo admite Aspose.Words para .NET para archivos de licencia?
 

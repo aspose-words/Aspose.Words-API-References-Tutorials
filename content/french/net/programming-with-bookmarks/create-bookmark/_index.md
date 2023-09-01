@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Étape 3 : Création de signets imbriqués
 
- Nous pouvons également créer des signets imbriqués dans un signet principal. Nous utilisons le même`StartBookmark` et`EndBookmark` méthodes pour créer et mettre fin aux signets imbriqués :
+Nous pouvons également créer des signets imbriqués dans un signet principal. Nous utilisons le même`StartBookmark` et`EndBookmark` méthodes pour créer et mettre fin aux signets imbriqués :
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -98,11 +98,11 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 #### Q : Quelles sont les conditions préalables pour utiliser la fonction « Créer des favoris » dans Aspose.Words for .NET ?
 
-R : Pour utiliser la fonction « Créer des favoris » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+: Pour utiliser la fonction « Créer des favoris » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
 #### Q : Comment créer un document dans Aspose.Words pour .NET ?
 
- R : Pour créer un document dans Aspose.Words for .NET, vous pouvez utiliser le`Document`classe. Voici un exemple de code :
+ R : Pour créer un document dans Aspose.Words for .NET, vous pouvez utiliser le`Document` classe. Voici un exemple de code :
 
 ```csharp
 Document doc = new Document();
@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### Q : Comment ajouter du texte dans un signet à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour ajouter du texte dans un signet à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Write` méthode du`DocumentBuilder` objet spécifiant le texte à ajouter. Voici un exemple de code :
+R : Pour ajouter du texte dans un signet à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Write` méthode du`DocumentBuilder` objet spécifiant le texte à ajouter. Voici un exemple de code :
 
 ```csharp
 builder.StartBookmark("My Bookmark");

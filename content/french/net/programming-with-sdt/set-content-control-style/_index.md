@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ### Exemple de code source pour définir le style de contrôle de contenu à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

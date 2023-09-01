@@ -94,7 +94,7 @@ Herzlichen Glückwunsch! Sie haben jetzt mit Aspose.Words für .NET eine benutze
 ### Beispielquellcode für Build Table With Style mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Пример исходного кода для указания шрифта по умолчанию при рендеринге с использованием Aspose.Words для .NET 
 
 ```csharp
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 
 #### Вопрос: Как указать шрифт по умолчанию при конвертации в PDF в Aspose.Words?
 
- О: Чтобы указать шрифт по умолчанию при конвертации в PDF в Aspose.Words, вы можете использовать команду`PdfOptions`класс и установите`DefaultFontName` свойству имени нужного шрифта.
+ О: Чтобы указать шрифт по умолчанию при конвертации в PDF в Aspose.Words, вы можете использовать команду`PdfOptions` класс и установите`DefaultFontName` свойству имени нужного шрифта.
 
 #### Вопрос: Что делать, если шрифт по умолчанию недоступен при преобразовании в PDF?
 

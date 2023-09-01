@@ -49,7 +49,7 @@ builder.MoveToBookmark("MyBookmark1", false, true);
 
 ## Étape 3 : Ajouter du contenu à la fin du signet
 
-Une fois que vous êtes passé à la fin du signet, vous pouvez ajouter du contenu en utilisant les différentes méthodes proposées par le`DocumentBuilder` classe. Dans cet exemple, nous utilisons le`Writeln` méthode pour écrire une ligne de texte :
+ Une fois que vous êtes passé à la fin du signet, vous pouvez ajouter du contenu en utilisant les différentes méthodes proposées par le`DocumentBuilder`classe. Dans cet exemple, nous utilisons le`Writeln` méthode pour écrire une ligne de texte :
 
 ```csharp
 builder.Writeln("This is a bookmark.");

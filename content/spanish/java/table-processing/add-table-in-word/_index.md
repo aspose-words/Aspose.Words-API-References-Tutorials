@@ -13,7 +13,7 @@ Microsoft Word es una poderosa herramienta de procesamiento de textos que permit
 
 ## Paso 1: configurar el entorno de desarrollo
 
-Antes de comenzar, asegúrese de tener un entorno de desarrollo Java configurado en su máquina. Descargue e instale la última versión de Java Development Kit (JDK) desde el sitio web oficial de Oracle.
+Antes de comenzar, asegúrese de tener un entorno de desarrollo Java configurado en su máquina. Descargue e instale la última versión de Java Development Kit (JDK) desde el sitio web de Oracle.
 
 ## Paso 2: crear un nuevo proyecto Java
 

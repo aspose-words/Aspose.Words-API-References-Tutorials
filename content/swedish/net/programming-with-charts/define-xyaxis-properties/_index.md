@@ -92,7 +92,7 @@ Detta slutför implementeringen av att definiera XY-axelegenskaper i ett diagram
 ### Exempel på källkod för Define XYAxis Properties med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

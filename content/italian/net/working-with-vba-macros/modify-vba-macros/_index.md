@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
  
 ```csharp
 
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");

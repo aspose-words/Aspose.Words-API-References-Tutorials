@@ -61,7 +61,7 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ### Codice sorgente di esempio per Espandi formattazione su celle e riga da stile utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

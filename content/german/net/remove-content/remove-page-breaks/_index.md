@@ -67,12 +67,12 @@ Nachdem wir die Seitenumbrüche entfernt haben, müssen wir das geänderte Dokum
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Ersetzen`"modified-document.docx"` mit dem gewünschten Namen für Ihr geändertes Dokument.
+ Ersetzen`"modified-document.docx"`mit dem gewünschten Namen für Ihr geändertes Dokument.
 
 ### Beispielquellcode zum Entfernen von Seitenumbrüchen mit Aspose.Words für .NET 
 ```csharp
 
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Laden Sie das Dokument
@@ -154,4 +154,4 @@ A: Nachdem Sie die Seitenumbrüche entfernt haben, müssen Sie das geänderte Do
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Ersetzen`"modified-document.docx"` mit dem gewünschten Namen für Ihr geändertes Dokument.
+ Ersetzen`"modified-document.docx"`mit dem gewünschten Namen für Ihr geändertes Dokument.

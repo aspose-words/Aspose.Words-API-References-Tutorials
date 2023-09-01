@@ -14,7 +14,7 @@ Este tutorial explica cómo usar Aspose.Words para .NET para agregar el contenid
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
+-  Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
 - Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
 ## Paso 2: abra los documentos de origen y destino
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Paso 4: agregue el documento de origen al documento de destino
 
- Utilizar el`AppendDocument`método del documento de destino para adjuntar el documento de origen. Aprobar`ImportFormatMode.UseDestinationStyles` como segundo parámetro para utilizar los estilos y el formato del documento de destino.
+ Utilizar el`AppendDocument` método del documento de destino para adjuntar el documento de origen. Aprobar`ImportFormatMode.UseDestinationStyles` como segundo parámetro para utilizar los estilos y el formato del documento de destino.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,7 +58,7 @@ Esto completa la implementación de agregar un documento con opciones de formato
 ### Código fuente de ejemplo para Agregar con opciones de formato de importación usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");

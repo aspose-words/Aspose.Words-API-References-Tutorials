@@ -48,7 +48,7 @@ Ora puoi eseguire il codice sorgente per garantire la conformità Ooxml Iso 2950
 ### Codice sorgente di esempio per la conformità Ooxml Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp
 
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

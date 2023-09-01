@@ -53,7 +53,7 @@ Console.WriteLine("...............................");
 ### نموذج التعليمات البرمجية المصدر للحصول على موضع الجدول العائم باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

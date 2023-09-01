@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Schritt 2: Ein bestimmtes Lesezeichen ein- oder ausblenden
 
- Wir benutzen das`ShowHideBookmarkedContent` Funktion zum Ein- oder Ausblenden eines bestimmten Lesezeichens im Dokument. Diese Funktion verwendet als Parameter das Dokument, den Namen des Lesezeichens und einen booleschen Wert, der angibt, ob das Lesezeichen angezeigt oder ausgeblendet werden soll:
+ Wir benutzen das`ShowHideBookmarkedContent`Funktion zum Ein- oder Ausblenden eines bestimmten Lesezeichens im Dokument. Diese Funktion verwendet als Parameter das Dokument, den Namen des Lesezeichens und einen booleschen Wert, der angibt, ob das Lesezeichen angezeigt oder ausgeblendet werden soll:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -72,7 +72,7 @@ A: Ja, der bereitgestellte Code funktioniert mit verschiedenen Word-Dokumentform
 
 #### F: Wie kann ich ein ausgeblendetes Lesezeichen wieder anzeigen?
 
- A: Um ein ausgeblendetes Lesezeichen wieder anzuzeigen, müssen Sie dasselbe verwenden`ShowHideBookmarkedContent` Funktion, die den Wert übergibt`true`für den booleschen Parameter, der angibt, ob das Lesezeichen angezeigt oder ausgeblendet werden soll.
+ A: Um ein ausgeblendetes Lesezeichen wieder anzuzeigen, müssen Sie dasselbe verwenden`ShowHideBookmarkedContent` Funktion, die den Wert übergibt`true` für den booleschen Parameter, der angibt, ob das Lesezeichen angezeigt oder ausgeblendet werden soll.
 
 #### F: Kann ich Bedingungen verwenden, um Lesezeichen basierend auf Briefvorlagenfeldwerten im Dokument anzuzeigen oder auszublenden?
 
@@ -80,7 +80,7 @@ A: Ja, der bereitgestellte Code funktioniert mit verschiedenen Word-Dokumentform
 
 #### F: Wie kann ich mit Aspose.Words für .NET ein Lesezeichen in einem Word-Dokument löschen?
 
-A: Um ein Lesezeichen in einem Word-Dokument mit Aspose.Words für .NET zu entfernen, können Sie das verwenden`RemoveBookmarks` Methode der`Document`Klasse. Hier ist ein Beispielcode:
+ A: Um ein Lesezeichen in einem Word-Dokument mit Aspose.Words für .NET zu entfernen, können Sie das verwenden`RemoveBookmarks` Methode der`Document` Klasse. Hier ist ein Beispielcode:
 
 ```csharp
 doc.RemoveBookmarks("BookmarkName");

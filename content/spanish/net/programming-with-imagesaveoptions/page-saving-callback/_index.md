@@ -67,7 +67,7 @@ Ahora puedes ejecutar el código fuente para realizar acciones personalizadas al
 
 
 ```csharp 
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 

@@ -46,7 +46,7 @@ Artık bir belgeyi kaydederken eski kontrol karakterlerini korumak için kaynak 
 ### Aspose.Words for .NET kullanan Keep Legacy Control Chars için örnek kaynak kodu 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");

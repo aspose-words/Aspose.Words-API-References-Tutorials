@@ -74,7 +74,7 @@ C: Aspose.Words for .NET ile PDF'ye dönüştürürken görüntü enterpolasyonu
 
  Bir örneğini oluşturun`Document` Word belgesinin yolunu belirten sınıf.
 
- Bir örneğini oluşturun`PdfSaveOptions`sınıfı seçin ve ayarlayın`InterpolateImages` mülkiyet`true` Görüntü enterpolasyonunu etkinleştirmek için.
+ Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`InterpolateImages` mülkiyet`true` Görüntü enterpolasyonunu etkinleştirmek için.
 
  Kullan`Save` yöntemi`Document`Kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için sınıf.
 

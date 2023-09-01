@@ -21,3 +21,13 @@ Restituez des documents sans effort avec les didacticiels Aspose.Words pour Java
 ## Tutoriels de rendu de documents
 ### [ Rendu du document maître](./master-document-rendering/)
 Apprenez le rendu de documents avec Aspose.Words pour Java ! Tutoriel étape par étape, code source inclus. Améliorez les applications avec un traitement transparent des documents.
+### [Rendu des pages d'un document sous forme d'images](./rendering-document-pages-images/)
+Découvrez comment restituer des pages de document sous forme d'images à l'aide d'Aspose.Words pour Java. Guide étape par étape avec des exemples de code pour une conversion efficace de documents.
+### [Génération de vignettes de documents](./document-thumbnail-generation/)
+Découvrez comment générer des miniatures de documents à l'aide d'Aspose.Words pour Java. Améliorez l’expérience utilisateur avec des aperçus visuels.
+### [Rendu de formes et de graphiques dans des documents](./rendering-shapes-graphics/)
+Découvrez comment améliorer vos documents avec des formes et des graphiques à l'aide d'Aspose.Words pour Java. Créez sans effort un contenu visuellement époustouflant.
+### [Impression et rendu de documents](./document-printing-rendering/)
+Découvrez l'impression et le rendu efficaces de documents à l'aide d'Aspose.Words pour Java. Apprenez étape par étape avec des exemples de code source.
+### [Rendu de documents au format HTML](./rendering-documents-html/)
+Apprenez à restituer des documents au format HTML sans effort avec Aspose.Words pour Java. Guide étape par étape pour une conversion efficace de documents.

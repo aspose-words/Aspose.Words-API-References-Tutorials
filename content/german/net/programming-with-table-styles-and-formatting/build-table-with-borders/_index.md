@@ -51,7 +51,7 @@ Herzlichen Glückwunsch! Sie haben jetzt mit Aspose.Words für .NET eine Tabelle
 ### Beispielquellcode für „Tabelle mit Rändern erstellen“ mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

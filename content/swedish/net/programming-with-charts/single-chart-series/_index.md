@@ -71,7 +71,7 @@ Detta slutför implementeringen av att anpassa en enda diagramserie med Aspose.W
 ### Exempel på källkod för Single Chart Series med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

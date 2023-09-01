@@ -250,7 +250,7 @@ Ja, Sie können benutzerdefinierte Stile auf Ihre Tabellen anwenden, indem Sie m
 
 ### Ist es möglich, Zellen in einer Tabelle zusammenzuführen?
 
- Ja, Sie können Zellen in einer Tabelle mit zusammenführen`CellMerge`Eigentum von Aspose.Words.
+ Ja, Sie können Zellen in einer Tabelle mit zusammenführen`CellMerge` Eigentum von Aspose.Words.
 
 ### Wie exportiere ich meine Tabellen in verschiedene Formate?
 

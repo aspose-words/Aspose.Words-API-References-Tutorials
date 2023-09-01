@@ -74,7 +74,7 @@ S: För att aktivera bildinterpolation vid konvertering till PDF med Aspose.Word
 
  Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
 
- Skapa en instans av`PdfSaveOptions`klass och ställ in`InterpolateImages` egendom till`true` för att möjliggöra bildinterpolering.
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`InterpolateImages` egendom till`true` för att möjliggöra bildinterpolering.
 
  Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
 

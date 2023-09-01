@@ -26,9 +26,16 @@ Hier sind einige der Vorteile der Verwendung von Aspose.Words für Java für die
 ## Tutorials zur Tabellenverarbeitung
 
 ### [Tabelle in Word hinzufügen](./add-table-in-word/)
-
 Erfahren Sie, wie Sie mit Aspose.Words für Java Tabellen in Word hinzufügen. Generieren Sie problemlos gut formatierte Tabellen in Word-Dokumenten.
-
 ### [Generieren Sie eine Tabelle aus einer Datentabelle](./generate-table-from-datatable/)
-
 Erfahren Sie, wie Sie mit Aspose.Words für Java eine Tabelle aus einer DataTable generieren. Erstellen Sie mühelos professionelle Word-Dokumente mit formatierten Tabellen. 
+### [Verwalten von Tabellen und Layouts in Dokumenten](./managing-tables-layouts/)
+Erfahren Sie, wie Sie mit Aspose.Words Tabellen und Layouts in Ihren Java-Dokumenten effizient verwalten. Erhalten Sie Schritt-für-Schritt-Anleitungen und Quellcode-Beispiele für eine nahtlose Dokumentenlayoutverwaltung.
+### [Arbeiten mit Dokumentlisten](./working-with-document-lists/)
+Erfahren Sie, wie Sie mit Aspose.Words für Java mit Dokumentlisten in Java arbeiten. Diese Schritt-für-Schritt-Anleitung enthält Quellcodebeispiele für eine effiziente Dokumentenbearbeitung.
+### [Tabellen und Zeilen in Dokumenten erstellen](./creating-tables-rows/)
+Erfahren Sie, wie Sie mit Aspose.Words für Java Tabellen und Zeilen in Dokumenten erstellen. Befolgen Sie diese umfassende Anleitung mit Quellcode und FAQs.
+### [Formatieren von Tabellen in Dokumenten](./formatting-tables/)
+Beherrschen Sie die Kunst der Formatierung von Tabellen in Dokumenten mit Aspose.Words für Java. Entdecken Sie Schritt-für-Schritt-Anleitungen und Quellcode-Beispiele für eine präzise Tabellenformatierung.
+### [Erstellung eines Inhaltsverzeichnisses](./table-contents-generation/)
+Erfahren Sie, wie Sie mit Aspose.Words für Java ein dynamisches Inhaltsverzeichnis erstellen. Meistern Sie die TOC-Generierung mit Schritt-für-Schritt-Anleitung und Quellcode-Beispielen.

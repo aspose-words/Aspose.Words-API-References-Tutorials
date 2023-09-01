@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 ## Étape 1 : initialiser les répertoires de documents
 
- Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Modifier la valeur du`dataDir`variable au chemin où se trouvent vos documents.
+ Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Modifier la valeur du`dataDir` variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Étape 4 : Désactiver le paramètre « LinkToPrevious » pour les en-têtes et les pieds de page
 
- Même après avoir effacé les en-têtes et pieds de page du document source, il est possible que le paramètre « LinkToPrevious » pour`HeadersFooters` peut encore être réglé. Pour éviter ce comportement, vous devez le définir explicitement sur`false` pour la première section`HeadersFooters` propriété.
+Même après avoir effacé les en-têtes et pieds de page du document source, il est possible que le paramètre « LinkToPrevious » pour`HeadersFooters` peut encore être réglé. Pour éviter ce comportement, vous devez le définir explicitement sur`false` pour la première section`HeadersFooters` propriété.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ Voici le code source complet de la fonctionnalité « Supprimer les pieds de pa
 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

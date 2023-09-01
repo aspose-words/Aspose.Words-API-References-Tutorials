@@ -149,7 +149,7 @@ Incorporare immagini multimediali nei tuoi documenti è un punto di svolta. Segu
 
 ### Posso aggiungere didascalie alle immagini che inserisco?
 
-Sì, puoi aggiungere didascalie alle immagini utilizzando Aspose.Words. Usa il`add_caption` metodo e personalizzare l'aspetto della didascalia.
+ Sì, puoi aggiungere didascalie alle immagini utilizzando Aspose.Words. Usa il`add_caption` metodo e personalizzare l'aspetto della didascalia.
 
 ### In quali formati posso esportare i miei documenti?
 

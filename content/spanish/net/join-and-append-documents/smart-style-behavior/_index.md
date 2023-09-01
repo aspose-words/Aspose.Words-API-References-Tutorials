@@ -19,7 +19,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 
 ## Paso 1: inicializar los directorios de documentos
 
- Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir`variable a la ruta donde se encuentran sus documentos.
+ Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir` variable a la ruta donde se encuentran sus documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Paso 4: Establecer opciones de comportamiento de estilo inteligente
 
- Para habilitar el comportamiento de estilo inteligente durante la operación de agregar, debe crear una instancia de`ImportFormatOptions` y establecer el`SmartStyleBehavior` propiedad a`true`.
+Para habilitar el comportamiento de estilo inteligente durante la operación de agregar, debe crear una instancia de`ImportFormatOptions` y establecer el`SmartStyleBehavior` propiedad a`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
@@ -73,7 +73,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 Aquí está el código fuente completo de la función "Smart Style Behavior" en C# usando Aspose.Words para .NET:
  
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -13,7 +13,7 @@ Microsoft Word, kullanıcıların belgeleri kolaylıkla oluşturmasına ve biçi
 
 ## 1. Adım: Geliştirme Ortamını Kurun
 
-Başlamadan önce makinenizde bir Java geliştirme ortamının kurulu olduğundan emin olun. Java Development Kit'in (JDK) en son sürümünü resmi Oracle web sitesinden indirip yükleyin.
+Başlamadan önce makinenizde bir Java geliştirme ortamının kurulu olduğundan emin olun. Java Development Kit'in (JDK) en son sürümünü Oracle web sitesinden indirip yükleyin.
 
 ## Adım 2: Yeni Bir Java Projesi Oluşturun
 

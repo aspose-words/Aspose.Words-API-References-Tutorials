@@ -14,7 +14,7 @@ Bu eğitimde, farklı sayfa yapısı ayarlarına sahip bir belgeyi başka bir be
 
 Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+-  Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
 - Kaynak ve hedef belgelerin bulunduğu belge dizini yolu.
 
 ## 2. Adım: Kaynak ve hedef belgeleri açın
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: Kaynak belge için sayfa ayarlarını yapın
 
-Devamın ve numaralandırmanın doğru olmasını sağlamak için kaynak belgenin sayfa düzeni ayarlarını yapın. Bu örnekte bölümün başlangıcını şu şekilde ayarladık:`SectionStart.Continuous` ve sayfa numaralandırmayı yeniden başlatın. Ayrıca sayfa genişliğinin, yüksekliğinin ve yönünün hedef belgenin son bölümüyle eşleştiğinden de emin oluruz.
+ Devamın ve numaralandırmanın doğru olmasını sağlamak için kaynak belgenin sayfa düzeni ayarlarını yapın. Bu örnekte bölümün başlangıcını şu şekilde ayarladık:`SectionStart.Continuous` ve sayfa numaralandırmayı yeniden başlatın. Ayrıca sayfa genişliğinin, yüksekliğinin ve yönünün hedef belgenin son bölümüyle eşleştiğinden de emin oluruz.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -74,18 +74,18 @@ Bu, Aspose.Words for .NET kullanılarak farklı sayfa yapısı ayarlarına sahip
 ### Aspose.Words for .NET kullanılarak Farklı Sayfa Düzeni için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Kaynak belgeyi, hedef belgenin bitiminden hemen sonra devam edecek şekilde ayarlayın.
+	// Kaynak belgeyi, hedef belgenin bitiminden hemen sonra devam edecek şekilde ayarlayın.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Kaynak belgenin başlangıcındaki sayfa numaralandırmasını yeniden başlatın.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Kaynak belgenin farklı sayfa yapısı ayarları olduğunda bunun oluşmamasını sağlamak için,
-	// ayarlar hedef belgenin son bölümü arasında aynıdır.
+	//ayarlar hedef belgenin son bölümü arasında aynıdır.
 	// Kaynak belgede devam eden başka sürekli bölümler varsa,
 	// bu bölümler için bunun tekrarlanması gerekecektir.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;

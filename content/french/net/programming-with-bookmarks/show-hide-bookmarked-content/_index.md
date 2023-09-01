@@ -150,7 +150,7 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 #### Q : Puis-je utiliser la même condition pour plusieurs signets dans le même document ?
 
- R : Oui, vous pouvez utiliser la même condition pour plusieurs signets dans le même document. Répétez simplement les étapes 2 à 5 pour chaque signet, en ajustant le nom du signet et éventuellement la valeur du`showhide` variable selon les besoins.
+ : Oui, vous pouvez utiliser la même condition pour plusieurs signets dans le même document. Répétez simplement les étapes 2 à 5 pour chaque signet, en ajustant le nom du signet et éventuellement la valeur du`showhide` variable selon les besoins.
 
 #### Q : Comment puis-je ajouter des conditions supplémentaires pour afficher ou masquer le contenu des favoris ?
 
@@ -162,7 +162,7 @@ builder. Write("\" = \"true\" ");
 
 #### Q : Comment puis-je supprimer un signet dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
-R : Pour supprimer un signet dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Remove` méthode de la`Bookmarks` collection de la gamme de documents. Voici un exemple de code pour supprimer un signet spécifique :
+ R : Pour supprimer un signet dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Remove` méthode de la`Bookmarks` collection de la gamme de documents. Voici un exemple de code pour supprimer un signet spécifique :
 
 ```csharp
 doc.Range.Bookmarks.Remove(bookmarkName);

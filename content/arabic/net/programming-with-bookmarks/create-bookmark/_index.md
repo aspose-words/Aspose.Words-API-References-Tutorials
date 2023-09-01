@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## الخطوة 3: إنشاء الإشارات المرجعية المتداخلة
 
- يمكننا أيضًا إنشاء إشارات مرجعية متداخلة داخل إشارة مرجعية رئيسية. نحن نستخدم نفس الشيء`StartBookmark` و`EndBookmark` طرق إنشاء الإشارات المرجعية المتداخلة وإنهائها:
+يمكننا أيضًا إنشاء إشارات مرجعية متداخلة داخل إشارة مرجعية رئيسية. نحن نستخدم نفس الشيء`StartBookmark` و`EndBookmark` طرق إنشاء الإشارات المرجعية المتداخلة وإنهائها:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 
 #### س: كيفية إنشاء مستند في Aspose.Words لـ .NET؟
 
- ج: لإنشاء مستند في Aspose.Words لـ .NET، يمكنك استخدام`Document`فصل. هنا نموذج التعليمات البرمجية:
+ ج: لإنشاء مستند في Aspose.Words لـ .NET، يمكنك استخدام`Document` فصل. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 Document doc = new Document();
@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### س: كيفية إضافة نص داخل إشارة مرجعية باستخدام Aspose.Words لـ .NET؟
 
- ج: لإضافة نص داخل إشارة مرجعية باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Write` طريقة`DocumentBuilder` كائن يحدد النص المراد إضافته. هنا نموذج التعليمات البرمجية:
+ج: لإضافة نص داخل إشارة مرجعية باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Write` طريقة`DocumentBuilder` كائن يحدد النص المراد إضافته. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

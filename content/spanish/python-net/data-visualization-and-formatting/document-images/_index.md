@@ -149,7 +149,7 @@ La incorporación de imágenes multimedia enriquecidas en sus documentos cambia 
 
 ### ¿Puedo agregar títulos a las imágenes que inserto?
 
-Sí, puedes agregar títulos a las imágenes usando Aspose.Words. Utilizar el`add_caption` método y personalizar la apariencia del título.
+ Sí, puedes agregar títulos a las imágenes usando Aspose.Words. Utilizar el`add_caption` método y personalizar la apariencia del título.
 
 ### ¿A qué formatos puedo exportar mis documentos?
 

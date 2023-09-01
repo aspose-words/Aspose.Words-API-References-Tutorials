@@ -14,7 +14,7 @@ url: /de/net/join-and-append-documents/insert-document-with-builder/
 
 Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
+-  Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
 - Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
 ## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Schritt 4: Positionieren Sie den DocumentBuilder
 
-Beweg das`DocumentBuilder` bis zum Ende des Dokuments mit`MoveToDocumentEnd` Methode. Fügen Sie einen Seitenumbruch ein, um den vorhandenen Inhalt vom eingefügten Dokument zu trennen.
+ Beweg das`DocumentBuilder` bis zum Ende des Dokuments mit`MoveToDocumentEnd` Methode. Fügen Sie einen Seitenumbruch ein, um den vorhandenen Inhalt vom eingefügten Dokument zu trennen.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -48,7 +48,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Schritt 5: Fügen Sie das Quelldokument ein
 
- Benutzen Sie die`InsertDocument` Methode der`DocumentBuilder` Klasse, um das Quelldokument in das Zieldokument einzufügen. Stellen Sie den Importformatmodus auf ein`ImportFormatMode.KeepSourceFormatting` um die Quellformatierung beizubehalten.
+ Benutzen Sie die`InsertDocument` Methode der`DocumentBuilder`Klasse, um das Quelldokument in das Zieldokument einzufügen. Stellen Sie den Importformatmodus auf ein`ImportFormatMode.KeepSourceFormatting` um die Quellformatierung beizubehalten.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -67,7 +67,7 @@ Damit ist die Implementierung des Einfügens eines Dokuments in ein anderes Doku
 ### Beispielquellcode für „Dokument einfügen mit Builder“ unter Verwendung von Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

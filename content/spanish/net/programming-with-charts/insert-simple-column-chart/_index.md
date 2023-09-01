@@ -66,7 +66,7 @@ Esto completa la implementación de insertar un gráfico de columnas simple usan
 ### Código fuente de ejemplo para Insertar gráfico de columnas simple usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

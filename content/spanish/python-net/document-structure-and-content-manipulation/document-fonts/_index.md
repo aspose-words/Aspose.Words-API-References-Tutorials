@@ -145,7 +145,7 @@ En el ámbito de la creación de documentos, las fuentes y el estilo del texto s
 
 ### ¿Cómo cambio el color de fuente usando Aspose.Words para Python?
 
- Para cambiar el color de fuente, puede acceder al`Font`clase y establecer el`color` propiedad al valor de color deseado.
+ Para cambiar el color de fuente, puede acceder al`Font` clase y establecer el`color` propiedad al valor de color deseado.
 
 ### ¿Puedo aplicar varios estilos al mismo texto usando Aspose.Words?
 

@@ -127,7 +127,7 @@ Evet, bir belgenin yalnızca yapısını içerik olmadan kopyalamak için yüzey
  Kullanın`range.replace()` Metni verimli bir şekilde bulmak ve değiştirmek için uygun seçeneklerle birlikte yöntem.
 
 ### Aspose.Words formatlamayı değiştirmeyi destekliyor mu?
- Kesinlikle, aşağıdaki gibi yöntemleri kullanarak biçimlendirmeyi değiştirebilirsiniz:`run.font.size` Ve`run.font.bold`.
+Kesinlikle, aşağıdaki gibi yöntemleri kullanarak biçimlendirmeyi değiştirebilirsiniz:`run.font.size` Ve`run.font.bold`.
 
 ### Aspose.Words belgelerine nereden erişebilirim?
  Kapsamlı belgeleri şu adreste bulabilirsiniz:[Aspose.Words for Python API Referansı](https://reference.aspose.com/words/python-net/).

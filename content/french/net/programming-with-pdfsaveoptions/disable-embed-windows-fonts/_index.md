@@ -74,7 +74,7 @@ R : Pour désactiver l'intégration des polices Windows dans un document PDF à
 
  Chargez le document que vous souhaitez convertir en PDF à l'aide du`Document` chemin de classe et de document.
 
- Créez une instance du`PdfSaveOptions`classe et définir le`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedNone`. Cela désactive l'intégration des polices Windows dans le fichier PDF généré.
+ Créez une instance du`PdfSaveOptions` classe et définir le`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedNone`. Cela désactive l'intégration des polices Windows dans le fichier PDF généré.
 
  Utilisez le`Save` méthode du`Document` objet pour convertir le document en PDF en spécifiant les options de conversion configurées précédemment.
 

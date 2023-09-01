@@ -23,3 +23,13 @@ Al dominar la seguridad de los documentos utilizando Aspose.Words para Java, los
 ## Tutoriales de seguridad de documentos
 ### [Cómo mantener sus documentos seguros y protegidos](./keep-documents-safe-secure/)
 Asegure sus documentos con Aspose.Words para Java. Cifre, proteja y agregue firmas digitales sin esfuerzo. Mantenga sus datos seguros.
+### [Proteger documentos con contraseñas](./securing-documents-passwords/)
+Descubra cómo proteger documentos con contraseñas utilizando Aspose.Words para Java. Esta guía paso a paso incluye código fuente y consejos de expertos. Mantenga sus datos protegidos.
+### [Gestión de permisos de documentos](./managing-document-permissions/)
+Aprenda cómo administrar los permisos de documentos de manera efectiva usando Aspose.Words para Java. Esta guía completa proporciona instrucciones paso a paso y ejemplos de código fuente.
+### [Cifrado y descifrado de documentos](./document-encryption-decryption/)
+Aprenda a cifrar y descifrar documentos con Aspose.Words para Java. Proteja sus datos de manera eficiente con orientación paso a paso y ejemplos de código fuente.
+### [Firmas digitales en documentos](./digital-signatures-in-documents/)
+Aprenda cómo implementar firmas digitales seguras en documentos usando Aspose.Words para Java. Garantice la integridad del documento con guía paso a paso y código fuente
+### [Redacción de Documentos y Protección de Datos](./document-redaction-data-protection/)
+Aprenda cómo proteger sus documentos y redactar datos confidenciales utilizando Aspose.Words para Java. Guía paso a paso con código fuente.

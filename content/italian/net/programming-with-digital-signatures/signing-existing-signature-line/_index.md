@@ -100,7 +100,7 @@ R: Una riga della firma esistente in un documento Word è un'area predefinita in
 R: Per firmare una riga della firma esistente in un documento di Word utilizzando Aspose.Words per .NET, è possibile seguire questi passaggi:
 1.  Caricare il documento utilizzando`Document` class e specificare il percorso del file del documento.
 2.  Accedi alla riga della firma esistente utilizzando il metodo o la proprietà appropriati. Ad esempio, puoi usare`GetChild` metodo per recuperare la forma della linea della firma.
-3.  Crea un'istanza di`SignOptions`classe e impostare il file`SignatureLineId` proprietà all'ID della riga della firma esistente.
+3.  Crea un'istanza di`SignOptions` classe e impostare il file`SignatureLineId` proprietà all'ID della riga della firma esistente.
 4.  Impostare il`SignatureLineImage` proprietà del`SignOptions` classe all'immagine che rappresenta la firma digitale.
 5.  Caricare il certificato di firma utilizzando il file`CertificateHolder` classe e fornire il certificato e la password necessari.
 6.  Usa il`DigitalSignatureUtil.Sign` metodo per firmare il documento, fornendo i parametri necessari tra cui il`SignOptions` oggetto.

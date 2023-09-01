@@ -70,7 +70,7 @@ Assurez-vous de spécifier le chemin et le format de fichier appropriés (par ex
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Spécifiez que nous voulons des en-têtes et des pieds de page différents pour les premières pages, paires et impaires.
+// Spécifiez que nous voulons des en-têtes et des pieds de page différents pour les premières pages, paires et impaires.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 

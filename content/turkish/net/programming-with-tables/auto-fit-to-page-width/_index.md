@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ### Aspose.Words for .NET kullanarak Sayfa Genişliğine Otomatik Sığdır için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

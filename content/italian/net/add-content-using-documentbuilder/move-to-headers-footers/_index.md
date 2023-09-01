@@ -70,7 +70,7 @@ Assicurati di specificare il percorso e il formato del file appropriati (ad esem
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Specificare che vogliamo intestazioni e piè di pagina diversi per le prime pagine, pari e dispari.
+// Specificare che vogliamo intestazioni e piè di pagina diversi per le prime pagine, pari e dispari.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 

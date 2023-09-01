@@ -67,12 +67,12 @@ Después de eliminar los saltos de página, debemos guardar el documento modific
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Reemplazar`"modified-document.docx"` con el nombre deseado para su documento modificado.
+ Reemplazar`"modified-document.docx"`con el nombre deseado para su documento modificado.
 
 ### Código fuente de muestra para eliminar saltos de página usando Aspose.Words para .NET 
 ```csharp
 
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Cargar el documento
@@ -154,4 +154,4 @@ R: Después de eliminar los saltos de página, debe guardar el documento modific
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Reemplazar`"modified-document.docx"` con el nombre deseado para su documento modificado.
+ Reemplazar`"modified-document.docx"`con el nombre deseado para su documento modificado.

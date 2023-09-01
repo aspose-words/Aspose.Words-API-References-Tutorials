@@ -52,7 +52,7 @@ section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm
 
 ```csharp
 
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");

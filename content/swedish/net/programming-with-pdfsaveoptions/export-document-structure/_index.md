@@ -78,7 +78,7 @@ S: För att exportera strukturen för ett Word-dokument till ett PDF-dokument me
 
  Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
 
- Skapa en instans av`PdfSaveOptions`klass och ställ in`ExportDocumentStructure` egendom till`true`. Detta kommer att exportera dokumentstrukturen och göra den synlig i Adobe Acrobat Pros "Innehåll" navigeringsfönster när du redigerar PDF-filen.
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`ExportDocumentStructure` egendom till`true`. Detta kommer att exportera dokumentstrukturen och göra den synlig i Adobe Acrobat Pros "Innehåll" navigeringsfönster när du redigerar PDF-filen.
 
  Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
 

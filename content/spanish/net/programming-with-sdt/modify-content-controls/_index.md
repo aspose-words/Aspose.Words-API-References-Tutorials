@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ### Código fuente de ejemplo para modificar controles de contenido usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

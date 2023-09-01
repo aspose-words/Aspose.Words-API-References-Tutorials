@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ### Exempel på källkod för teckensnittsformatering med Aspose.Words för .NET 
 ```csharp
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

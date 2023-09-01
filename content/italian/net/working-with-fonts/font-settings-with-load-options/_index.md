@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Codice sorgente di esempio per le impostazioni dei caratteri con opzioni di caricamento utilizzando Aspose.Words per .NET 
 ```csharp
 
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -57,7 +57,7 @@ In questo tutorial, abbiamo visto come utilizzare le opzioni di caricamento con 
 
 #### D: Come posso specificare un carattere predefinito quando carico un documento in Aspose.Words?
 
- R: Per specificare un carattere predefinito quando si carica un documento in Aspose.Words, è possibile utilizzare il file`LoadOptions`classe e impostare il file`DefaultFontName` proprietà al nome del carattere desiderato.
+ R: Per specificare un carattere predefinito quando si carica un documento in Aspose.Words, è possibile utilizzare il file`LoadOptions` classe e impostare il file`DefaultFontName` proprietà al nome del carattere desiderato.
 
 #### D: Quali altre impostazioni dei caratteri posso specificare con le opzioni di caricamento in Aspose.Words?
 

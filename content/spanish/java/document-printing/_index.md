@@ -23,5 +23,14 @@ Al dominar la impresión de documentos utilizando Aspose.Words para Java, los de
 ## Tutoriales de impresión de documentos
 
 ### [Una guía para la impresión de documentos](./guide-to-document-printing/)
-
 Aprenda a imprimir documentos mediante programación en Java utilizando Aspose.Words para Java. Guía paso a paso para el procesamiento de documentos y procesamiento de textos. ¡Aumente la productividad ahora!
+### [Automatización de la impresión de documentos](./automating-document-printing/)
+Aprenda a automatizar la impresión de documentos utilizando Aspose.Words para Java. Guía paso a paso con ejemplos de código para una gestión documental eficiente en Java.
+### [Impresión de documentos con configuración de página](./printing-documents-page-setup/)
+Aprenda a imprimir documentos con una configuración de página precisa utilizando Aspose.Words para Java. Personalice diseños, tamaño de papel y más.
+### [Impresión de documentos personalizados](./customized-document-printing/)
+Aprenda cómo lograr una impresión de documentos personalizada sin esfuerzo con Aspose.Words para Java. Esta guía paso a paso cubre todo, desde la configuración hasta la personalización avanzada.
+### [Impresión de páginas de documentos específicos](./printing-specific-document-pages/)
+Aprenda a imprimir páginas específicas de documentos de Word usando Aspose.Words para Java. Guía paso a paso para desarrolladores de Java.
+### [Imprimir documento con PrintDialog](./print-document-printdialog/)
+Aprenda a imprimir documentos usando Aspose.Words para Java con PrintDialog. Personalice la configuración, imprima páginas específicas y más en esta guía paso a paso.

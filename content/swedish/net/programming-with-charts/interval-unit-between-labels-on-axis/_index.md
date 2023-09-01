@@ -68,7 +68,7 @@ Detta slutför implementeringen av att ställa in intervallenheten mellan etiket
 ### Exempel på källkod för Interval Unit Between Labels On Axis med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

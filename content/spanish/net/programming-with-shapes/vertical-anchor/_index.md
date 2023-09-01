@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 ### Código fuente de ejemplo para Vertical Anchor usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

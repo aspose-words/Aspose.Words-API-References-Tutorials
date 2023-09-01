@@ -14,7 +14,7 @@ Ce didacticiel explique comment utiliser Aspose.Words for .NET pour ajouter un d
 
 Assurez-vous que vous disposez des conditions préalables suivantes :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
+-  Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de documents où se trouvent les documents source et de destination.
 
 ## Étape 2 : Ouvrir les documents source et destination
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : Configurer les paramètres de page pour le document source
 
-Ajustez les paramètres de mise en page du document source pour garantir une continuation et une numérotation appropriées. Dans cet exemple, nous définissons le début de la section sur`SectionStart.Continuous` et relancez la numérotation des pages. Nous veillons également à ce que la largeur, la hauteur et l'orientation de la page correspondent à la dernière section du document de destination.
+ Ajustez les paramètres de mise en page du document source pour garantir une continuation et une numérotation appropriées. Dans cet exemple, nous définissons le début de la section sur`SectionStart.Continuous` et relancez la numérotation des pages. Nous veillons également à ce que la largeur, la hauteur et l'orientation de la page correspondent à la dernière section du document de destination.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -74,18 +74,18 @@ Ceci termine la mise en œuvre de l’ajout d’un document avec différents par
 ### Exemple de code source pour différentes mises en page utilisant Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Définissez le document source pour qu'il continue juste après la fin du document de destination.
+	// Définissez le document source pour qu'il continue juste après la fin du document de destination.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Relancez la numérotation des pages au début du document source.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Pour garantir que cela ne se produise pas lorsque le document source a des paramètres de mise en page différents, assurez-vous que le
-	// les paramètres sont identiques entre la dernière section du document de destination.
+	//les paramètres sont identiques entre la dernière section du document de destination.
 	// S'il y a d'autres sections continues qui suivent dans le document source,
 	// cela devra être répété pour ces sections.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;

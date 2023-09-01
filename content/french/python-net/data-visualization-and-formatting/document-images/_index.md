@@ -149,7 +149,7 @@ L’intégration d’images Rich Media dans vos documents change la donne. En su
 
 ### Puis-je ajouter des légendes aux images que j'insère ?
 
-Oui, vous pouvez ajouter des légendes aux images à l'aide d'Aspose.Words. Utilisez le`add_caption` et personnalisez l’apparence de la légende.
+ Oui, vous pouvez ajouter des légendes aux images à l'aide d'Aspose.Words. Utilisez le`add_caption` et personnalisez l’apparence de la légende.
 
 ### Vers quels formats puis-je exporter mes documents ?
 

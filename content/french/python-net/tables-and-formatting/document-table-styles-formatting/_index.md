@@ -250,7 +250,7 @@ Oui, vous pouvez appliquer des styles personnalisés à vos tableaux en modifian
 
 ### Est-il possible de fusionner des cellules dans un tableau ?
 
- Oui, vous pouvez fusionner des cellules dans un tableau à l'aide de l'outil`CellMerge`propriété fournie par Aspose.Words.
+ Oui, vous pouvez fusionner des cellules dans un tableau à l'aide de l'outil`CellMerge` propriété fournie par Aspose.Words.
 
 ### Comment exporter mes tableaux vers différents formats ?
 

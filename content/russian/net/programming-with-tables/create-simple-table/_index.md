@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ### Пример исходного кода для создания простой таблицы с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

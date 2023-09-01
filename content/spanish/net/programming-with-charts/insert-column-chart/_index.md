@@ -57,7 +57,7 @@ Esto completa la implementación de insertar un gráfico de columnas usando Aspo
 ### Código fuente de ejemplo para Insertar gráfico de columnas usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

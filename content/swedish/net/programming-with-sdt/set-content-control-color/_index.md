@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlColor.docx");
 ### Exempel på källkod för Set Content Control Color med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

@@ -19,7 +19,7 @@ url: /ar/net/join-and-append-documents/remove-source-headers-footers/
 
 ## الخطوة 1: تهيئة أدلة المستندات
 
- أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir`متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## الخطوة 4: تعطيل إعداد "LinkToPrevious" لـ HeadersFooters
 
- حتى بعد مسح الرؤوس والتذييلات من المستند المصدر، هناك احتمال أن يكون إعداد "LinkToPrevious" لـ`HeadersFooters` لا يزال من الممكن تعيينها. لتجنب هذا السلوك، تحتاج إلى تعيينه بشكل صريح`false` للقسم الأول`HeadersFooters` ملكية.
+حتى بعد مسح الرؤوس والتذييلات من المستند المصدر، هناك احتمال أن يكون إعداد "LinkToPrevious" لـ`HeadersFooters` لا يزال من الممكن تعيينها. لتجنب هذا السلوك، تحتاج إلى تعيينه بشكل صريح`false` للقسم الأول`HeadersFooters` ملكية.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

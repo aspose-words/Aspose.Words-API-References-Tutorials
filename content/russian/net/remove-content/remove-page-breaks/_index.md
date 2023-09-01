@@ -67,12 +67,12 @@ foreach (Paragraph para in paragraphs)
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Заменять`"modified-document.docx"` с желаемым именем для вашего измененного документа.
+ Заменять`"modified-document.docx"`с желаемым именем для вашего измененного документа.
 
 ### Пример исходного кода для удаления разрывов страниц с помощью Aspose.Words для .NET 
 ```csharp
 
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Загрузите документ
@@ -154,4 +154,4 @@ foreach (Paragraph para in paragraphs)
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Заменять`"modified-document.docx"` с желаемым именем для вашего измененного документа.
+ Заменять`"modified-document.docx"`с желаемым именем для вашего измененного документа.

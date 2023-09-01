@@ -50,7 +50,7 @@ Ahora puede ejecutar el código fuente para convertir un rango específico de p�
 ### Código fuente de muestra para obtener rango de páginas Jpeg usando Aspose.Words para .NET
 
 ```csharp 
- //Ruta a su directorio de documentos
+ // Ruta a su directorio de documentos
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

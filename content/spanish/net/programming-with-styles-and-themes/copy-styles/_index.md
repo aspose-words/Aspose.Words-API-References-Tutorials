@@ -45,7 +45,7 @@ Ahora puede ejecutar el código fuente para copiar estilos de un documento de or
 
 ```csharp
 
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document();

@@ -70,7 +70,7 @@ Bu, Aspose.Words for .NET kullanarak grafik eksenini gizleme uygulamasını tama
 ### Aspose.Words for .NET kullanarak Grafik Eksenini Gizlemek için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

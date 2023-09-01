@@ -111,7 +111,7 @@ Sí, Aspose.Words maneja formatos y estilos complejos durante la comparación de
 
 ### ¿Puedo fusionar más de dos documentos usando esta biblioteca?
 
- Sí, puede fusionar cualquier cantidad de documentos utilizando el`append_document` método, como se muestra en el tutorial.
+Sí, puede fusionar cualquier cantidad de documentos utilizando el`append_document` método, como se muestra en el tutorial.
 
 ### ¿Dónde puedo acceder a la biblioteca y los recursos?
 

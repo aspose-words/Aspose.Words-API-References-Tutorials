@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ### Codice sorgente di esempio per il controllo del contenuto della casella di testo RTF utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

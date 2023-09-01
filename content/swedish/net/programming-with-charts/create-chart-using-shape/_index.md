@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ### Exempel på källkod för Skapa diagram med Shape med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

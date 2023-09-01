@@ -70,7 +70,7 @@ Damit ist die Implementierung des Ausblendens der Diagrammachse mithilfe von Asp
 ### Beispielquellcode für Diagrammachse ausblenden mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

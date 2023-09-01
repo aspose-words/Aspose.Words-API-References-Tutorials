@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ### نموذج التعليمات البرمجية المصدر للاحتواء التلقائي لعرض الصفحة باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

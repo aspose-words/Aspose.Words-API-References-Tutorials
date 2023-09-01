@@ -58,7 +58,7 @@ Ceci termine la mise en œuvre de l’insertion d’un graphique à bulles à l�
 ### Exemple de code source pour Insérer un graphique à bulles à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

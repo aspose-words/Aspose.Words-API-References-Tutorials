@@ -22,7 +22,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Paso 2: iniciar la mesa
-continuación, utilice el método StartTable de la clase DocumentBuilder para comenzar a crear la tabla:
+A continuación, utilice el método StartTable de la clase DocumentBuilder para comenzar a crear la tabla:
 
 ```csharp
 Table table = builder.StartTable();
@@ -118,8 +118,8 @@ R: Aspose.Words para .NET es una potente biblioteca de procesamiento de document
 
 R: Para crear una tabla en un documento de Word usando Aspose.Words para .NET, puede seguir estos pasos:
 1.  Crear una nueva instancia del`Document` clase y un`DocumentBuilder` objeto.
-2.  Utilizar el`StartTable` método de la`DocumentBuilder` clase para comenzar a construir la mesa.
-3. Inserte celdas en la tabla y agregue contenido usando el`InsertCell` y`Write` métodos de la`DocumentBuilder` clase.
+2.  Utilizar el`StartTable` método de la`DocumentBuilder`clase para comenzar a construir la mesa.
+3.  Inserte celdas en la tabla y agregue contenido usando el`InsertCell` y`Write` métodos de la`DocumentBuilder` clase.
 4.  Termina la fila usando el`EndRow` método de la`DocumentBuilder` clase.
 5.  Personalice el formato de fila configurando las propiedades del`RowFormat` y`CellFormat` objetos.
 6.  Termina la tabla usando el`EndTable` método de la`DocumentBuilder` clase.

@@ -14,7 +14,7 @@ url: /ar/net/join-and-append-documents/keep-source-numbering/
 
 تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
+-  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
 - مسار دليل المستند حيث سيتم حفظ المستندات المصدر والوجهة.
 
 ## الخطوة 2: إنشاء الوجهة والمستندات المصدر
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: احتفظ بترقيم المصدر عند الاستيراد
 
- للحفاظ على تنسيق الترقيم للفقرات المرقمة من المستند المصدر، قم بإنشاء مثيل لـ`ImportFormatOptions` وحدد`KeepSourceNumbering` ل`true` . إستخدم`NodeImporter` لاستيراد العقد من المستند المصدر إلى المستند الوجهة، مع تحديد`ImportFormatMode.KeepSourceFormatting` و ال`importFormatOptions`.
+للحفاظ على تنسيق الترقيم للفقرات المرقمة من المستند المصدر، قم بإنشاء مثيل لـ`ImportFormatOptions` وحدد`KeepSourceNumbering` ل`true` . إستخدم`NodeImporter` لاستيراد العقد من المستند المصدر إلى المستند الوجهة، مع تحديد`ImportFormatMode.KeepSourceFormatting` و ال`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -64,7 +64,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ### مثال على التعليمات البرمجية المصدر للاحتفاظ بترقيم المصدر باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

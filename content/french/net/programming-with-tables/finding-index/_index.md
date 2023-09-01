@@ -54,7 +54,7 @@ Console.WriteLine("\nCell index is " + cellIndex);
 ### Exemple de code source pour la recherche d'un index à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

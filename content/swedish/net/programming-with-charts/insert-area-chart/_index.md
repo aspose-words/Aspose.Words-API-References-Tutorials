@@ -65,7 +65,7 @@ Detta slutför implementeringen av att infoga ett områdesdiagram med Aspose.Wor
 ### Exempel på källkod för Insert Area Chart med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

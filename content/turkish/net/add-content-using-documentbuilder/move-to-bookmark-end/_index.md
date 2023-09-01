@@ -49,7 +49,7 @@ builder.MoveToBookmark("MyBookmark1", false, true);
 
 ## 3. Adım: Yer işaretinin sonuna içerik ekleme
 
-Yer işaretinin sonuna taşındıktan sonra, tarafından sağlanan çeşitli yöntemleri kullanarak içerik ekleyebilirsiniz.`DocumentBuilder` sınıf. Bu örnekte, şunu kullanıyoruz:`Writeln` bir metin satırı yazma yöntemi:
+ Yer işaretinin sonuna taşındıktan sonra, tarafından sağlanan çeşitli yöntemleri kullanarak içerik ekleyebilirsiniz.`DocumentBuilder`sınıf. Bu örnekte, şunu kullanıyoruz:`Writeln` bir metin satırı yazma yöntemi:
 
 ```csharp
 builder.Writeln("This is a bookmark.");

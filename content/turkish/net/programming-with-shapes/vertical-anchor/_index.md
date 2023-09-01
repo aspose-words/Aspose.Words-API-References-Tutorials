@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 ### Aspose.Words for .NET kullanan Dikey Bağlantı için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

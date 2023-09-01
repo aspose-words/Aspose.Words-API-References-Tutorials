@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Paso 2: mostrar u ocultar un marcador específico
 
- Usamos el`ShowHideBookmarkedContent` función para mostrar u ocultar un marcador específico en el documento. Esta función toma como parámetros el documento, el nombre del marcador y un booleano para indicar si mostrar u ocultar el marcador:
+ Usamos el`ShowHideBookmarkedContent`función para mostrar u ocultar un marcador específico en el documento. Esta función toma como parámetros el documento, el nombre del marcador y un booleano para indicar si mostrar u ocultar el marcador:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -72,7 +72,7 @@ R: Sí, el código proporcionado funciona con varios formatos de documentos de W
 
 #### P: ¿Cómo puedo volver a mostrar un marcador oculto?
 
- R: Para volver a mostrar un marcador oculto, debe utilizar el mismo`ShowHideBookmarkedContent` función que pasa el valor`true`para el parámetro booleano que indica si se muestra u oculta el marcador.
+ R: Para volver a mostrar un marcador oculto, debe utilizar el mismo`ShowHideBookmarkedContent` función que pasa el valor`true` para el parámetro booleano que indica si se muestra u oculta el marcador.
 
 #### P: ¿Puedo usar condiciones para mostrar u ocultar marcadores según los valores de los campos de combinación en el documento?
 
@@ -80,7 +80,7 @@ R: Sí, el código proporcionado funciona con varios formatos de documentos de W
 
 #### P: ¿Cómo puedo eliminar un marcador en un documento de Word usando Aspose.Words para .NET?
 
-R: Para eliminar un marcador en un documento de Word usando Aspose.Words para .NET, puede usar el`RemoveBookmarks` método de la`Document`clase. Aquí hay un código de muestra:
+ R: Para eliminar un marcador en un documento de Word usando Aspose.Words para .NET, puede usar el`RemoveBookmarks` método de la`Document` clase. Aquí hay un código de muestra:
 
 ```csharp
 doc.RemoveBookmarks("BookmarkName");

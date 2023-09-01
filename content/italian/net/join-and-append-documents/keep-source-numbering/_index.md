@@ -14,7 +14,7 @@ Questo tutorial spiega come aggiungere un documento di origine a un documento di
 
 Assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
+-  Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
 - Un percorso di directory del documento in cui verranno salvati i documenti di origine e di destinazione.
 
 ## Passaggio 2: crea i documenti di destinazione e di origine
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: mantieni la numerazione della fonte durante l'importazione
 
- Per preservare la formattazione della numerazione dei paragrafi numerati del documento di origine, creare un'istanza di`ImportFormatOptions` e impostare`KeepSourceNumbering` A`true` . Usare un`NodeImporter` per importare i nodi dal documento di origine al documento di destinazione, specificando`ImportFormatMode.KeepSourceFormatting` e il`importFormatOptions`.
+Per preservare la formattazione della numerazione dei paragrafi numerati del documento di origine, creare un'istanza di`ImportFormatOptions` e impostare`KeepSourceNumbering` A`true` . Usare un`NodeImporter` per importare i nodi dal documento di origine al documento di destinazione, specificando`ImportFormatMode.KeepSourceFormatting` e il`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -64,7 +64,7 @@ Ciò completa l'implementazione dell'aggiunta di un documento di origine a un do
 ### Codice sorgente di esempio per Keep Source Numbering utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

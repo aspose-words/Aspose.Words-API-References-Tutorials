@@ -14,7 +14,7 @@ Este tutorial explica cómo unir dos documentos continuamente usando Aspose.Word
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
+-  Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
 - Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
 ## Paso 2: abra los documentos de origen y destino
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: configurar el inicio de la sección continua
 
-Para que el documento de origen aparezca justo después del contenido del documento de destino, configure el`SectionStart` propiedad de la primera sección del documento fuente para`SectionStart.Continuous`.
+ Para que el documento de origen aparezca justo después del contenido del documento de destino, configure el`SectionStart` propiedad de la primera sección del documento fuente para`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Paso 4: adjuntar el documento fuente
 
- Adjunte el documento de origen al documento de destino utilizando el`AppendDocument` método de la`Document` clase. Establezca el modo de formato de importación en`ImportFormatMode.KeepSourceFormatting` para preservar los estilos originales del documento fuente.
+Adjunte el documento de origen al documento de destino utilizando el`AppendDocument` método de la`Document` clase. Establezca el modo de formato de importación en`ImportFormatMode.KeepSourceFormatting` para preservar los estilos originales del documento fuente.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -58,7 +58,7 @@ Esto completa la implementación de unir dos documentos continuamente usando Asp
 ### Código fuente de ejemplo para Join Continuous usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

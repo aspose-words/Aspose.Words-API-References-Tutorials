@@ -58,7 +58,7 @@ Damit ist die Implementierung des Einfügens eines Blasendiagramms mit Aspose.Wo
 ### Beispielquellcode für „Blasendiagramm einfügen“ mit Aspose.Words für .NET 
 
 ```csharp
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

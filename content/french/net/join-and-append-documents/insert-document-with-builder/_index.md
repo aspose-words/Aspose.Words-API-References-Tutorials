@@ -14,7 +14,7 @@ url: /fr/net/join-and-append-documents/insert-document-with-builder/
 
 Assurez-vous que vous disposez des conditions préalables suivantes :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
+-  Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de documents où se trouvent les documents source et de destination.
 
 ## Étape 2 : Ouvrir les documents source et destination
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Étape 4 : Positionner le DocumentBuilder
 
-Bouge le`DocumentBuilder` à la fin du document en utilisant le`MoveToDocumentEnd` méthode. Insérez un saut de page pour séparer le contenu existant du document inséré.
+ Bouge le`DocumentBuilder` à la fin du document en utilisant le`MoveToDocumentEnd` méthode. Insérez un saut de page pour séparer le contenu existant du document inséré.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -48,7 +48,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Étape 5 : Insérez le document source
 
- Utilisez le`InsertDocument` méthode du`DocumentBuilder` classe pour insérer le document source dans le document de destination. Définissez le mode de format d'importation sur`ImportFormatMode.KeepSourceFormatting` pour conserver le formatage source.
+ Utilisez le`InsertDocument` méthode du`DocumentBuilder`classe pour insérer le document source dans le document de destination. Définissez le mode de format d'importation sur`ImportFormatMode.KeepSourceFormatting` pour conserver le formatage source.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -67,7 +67,7 @@ Ceci termine l’implémentation de l’insertion d’un document dans un autre 
 ### Exemple de code source pour Insérer un document avec Builder à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

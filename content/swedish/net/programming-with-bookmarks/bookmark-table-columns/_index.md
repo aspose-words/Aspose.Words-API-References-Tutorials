@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder funktionen Bookmark Table Columns i Aspose.Words for .NET-biblioteket. Med den här funktionen kan du bokmärka en specifik kolumn i en tabell i ett Word-dokument och komma åt innehållet i den kolumnen.
+I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder funktionen Bookmark Table Columns i Aspose.Words for .NET-biblioteket. Med den här funktionen kan du bokmärka en specifik kolumn i en tabell i ett Word-dokument och komma åt innehållet i den kolumnen.
 
 ## Förutsättningar
 
@@ -17,7 +17,7 @@ den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hu
 
 ## Steg 1: Skapa tabellen
 
- Innan vi skapar ett bokmärke på en tabellkolumn måste vi först skapa tabellen med hjälp av en`DocumentBuilder` objekt. I vårt exempel skapar vi en tabell med två rader och två kolumner:
+ Innan vi skapar ett bokmärke på en tabellkolumn måste vi först skapa tabellen med hjälp av en`DocumentBuilder`objekt. I vårt exempel skapar vi en tabell med två rader och två kolumner:
 
 ```csharp
 builder. StartTable();
@@ -132,7 +132,7 @@ S: För att använda funktionen "Bokmärken för tabellkolumner" i Aspose.Words 
 
 #### F: Hur skapar man en tabell med kolumner i ett Word-dokument med Aspose.Words för .NET?
 
- S: För att skapa en tabell med kolumner i ett Word-dokument med Aspose.Words för .NET, kan du använda en`DocumentBuilder`objekt för att infoga celler och innehåll i tabellen. Här är en exempelkod:
+ S: För att skapa en tabell med kolumner i ett Word-dokument med Aspose.Words för .NET, kan du använda en`DocumentBuilder` objekt för att infoga celler och innehåll i tabellen. Här är en exempelkod:
 
 ```csharp
 builder. StartTable();

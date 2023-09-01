@@ -74,7 +74,7 @@ C: Bir PDF belgesindeki "Son Basılan" özelliğini Aspose.Words for .NET ile g�
 
  Bir örneğini oluşturun`Document` Word belgesinin yolunu belirten sınıf.
 
- Bir örneğini oluşturun`PdfSaveOptions`sınıfı seçin ve ayarlayın`UpdateLastPrintedProperty` mülkiyet`true` "Son Basılan" özelliğinin güncellenmesini etkinleştirmek için.
+ Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`UpdateLastPrintedProperty` mülkiyet`true` "Son Basılan" özelliğinin güncellenmesini etkinleştirmek için.
 
  Kullan`Save` yöntemi`Document`Kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için sınıf.
 

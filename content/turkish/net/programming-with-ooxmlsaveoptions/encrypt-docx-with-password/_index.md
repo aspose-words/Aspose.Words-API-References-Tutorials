@@ -46,7 +46,7 @@ Artık DOCX belgenizi bir parola ile şifrelemek için kaynak kodunu çalıştı
 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";  
 
 Document doc = new Document(dataDir + "Document.docx");
