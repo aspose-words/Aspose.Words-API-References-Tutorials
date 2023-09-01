@@ -43,30 +43,3 @@ Enhance document security with Aspose.Words for Java! Implement protection, encr
 Split documents with ease using Aspose.Words for Java! Efficiently divide large files based on page range, paragraph count, or custom criteria.
 ### [Document Revision](./document-revision/)
 Streamline document revisions with Aspose.Words for Java! Track changes, manage version control, and automate revision tasks effortlessly. 
-### [Document Format Handling](./document-format-handling/)
-
-### [Loading and Processing Options](./loading-and-processing-options/)
-
-### [Document Export and Save Options](./document-export-and-save-options/)
-
-### [Advanced Document Features](./advanced-document-features/)
-
-### [Word Processing](./word-processing/)
-
-### [Table Processing](./table-processing/)
-
-### [Document Styling](./document-styling/)
-
-### [Document Merging](./document-merging/)
-
-### [Document Converting](./document-converting/)
-
-### [Document Printing](./document-printing/)
-
-### [Document Rendering](./document-rendering/)
-
-### [Document Security](./document-security/)
-
-### [Document Splitting](./document-splitting/)
-
-### [Document Revision](./document-revision/)
