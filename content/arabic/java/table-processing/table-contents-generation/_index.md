@@ -20,7 +20,7 @@ url: /ar/java/table-processing/table-contents-generation/
 
 ### إعداد بيئتك
 
-للبدء، تأكد من تثبيت Aspose.Words for Java. يمكنك تنزيله من الموقع[هنا](https://releases.aspose.com/words/Java/).
+للبدء، تأكد من تثبيت Aspose.Words for Java. يمكنك تنزيله من الموقع[هنا](https://releases.aspose.com/words/java/).
 
 ### إنشاء مشروع جافا جديد
 

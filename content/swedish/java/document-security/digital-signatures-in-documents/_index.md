@@ -14,7 +14,7 @@ Digitala signaturer spelar en avgörande roll för att säkerställa digitala do
 
 Innan vi dyker in i implementeringen, se till att du har följande förutsättningar på plats:
 
--  Aspose.Words för Java: Ladda ner och installera Aspose.Words för Java från[här](https://releases.aspose.com/words/Java/).
+-  Aspose.Words för Java: Ladda ner och installera Aspose.Words för Java från[här](https://releases.aspose.com/words/java/).
 
 ## Konfigurera ditt projekt
 

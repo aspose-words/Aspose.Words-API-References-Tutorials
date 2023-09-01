@@ -18,7 +18,7 @@ Belge içeriğini değiştirmenin ayrıntılarına dalmadan önce, başlamak iç
 
 1. Kurulum ve Kurulum
    
-    İndirme bağlantısından Aspose.Words for Java'yı indirerek başlayın:[Aspose.Words for Java İndirme](https://releases.aspose.com/words/Java/). Sağlanan belgelere göre yükleyin.
+    İndirme bağlantısından Aspose.Words for Java'yı indirerek başlayın:[Aspose.Words for Java İndirme](https://releases.aspose.com/words/java/). Sağlanan belgelere göre yükleyin.
 
 2. API Referansı
    

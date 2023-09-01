@@ -18,7 +18,7 @@ Antes de profundizar en los detalles técnicos, exploremos brevemente por qué l
 
 ## Primeros pasos con Aspose.Words para Java
 
- Para comenzar nuestro viaje, necesita tener instalado y configurado Aspose.Words para Java. Si aún no lo ha hecho, puede descargarlo desde el sitio web de Aspose.[aquí](https://releases.aspose.com/words/Java/). Una vez que haya instalado la biblioteca, estará listo para aprovechar sus capacidades para administrar tablas y diseños de manera efectiva.
+ Para comenzar nuestro viaje, necesita tener instalado y configurado Aspose.Words para Java. Si aún no lo ha hecho, puede descargarlo desde el sitio web de Aspose.[aquí](https://releases.aspose.com/words/java/). Una vez que haya instalado la biblioteca, estará listo para aprovechar sus capacidades para administrar tablas y diseños de manera efectiva.
 
 ## Gestión básica de tablas
 

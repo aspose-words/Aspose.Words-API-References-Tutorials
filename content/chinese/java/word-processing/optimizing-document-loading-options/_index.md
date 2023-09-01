@@ -20,7 +20,7 @@ url: /zh/java/word-processing/optimizing-document-loading-options/
 
 首先，您需要安装 Aspose.Words for Java。您可以从网站下载最新版本：
 
-[下载 Java 版 Aspose.Words](https://releases.aspose.com/words/Java/)
+[下载 Java 版 Aspose.Words](https://releases.aspose.com/words/java/)
 
 按照提供的安装说明在您的 Java 环境中设置该库。
 
@@ -112,7 +112,7 @@ Document document = new Document(txtFilePath, loadOptions);
 
 #### 如何下载 Java 版 Aspose.Words？
 
-您可以从以下网站下载 Aspose.Words for Java：[下载 Java 版 Aspose.Words](https://releases.aspose.com/words/Java/)
+您可以从以下网站下载 Aspose.Words for Java：[下载 Java 版 Aspose.Words](https://releases.aspose.com/words/java/)
 
 #### 我可以免费使用 Aspose.Words for Java 吗？
 

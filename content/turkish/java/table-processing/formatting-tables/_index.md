@@ -20,7 +20,7 @@ Tablo formatlamanın en ince ayrıntılarına dalmadan önce, geliştirme ortam�
 
 ### Kurulum
 
- Başlamak için Aspose.Words for Java'yı indirip yüklemeniz gerekecek. İndirme linkini bulabilirsiniz[Burada](https://releases.aspose.com/words/Java/). Kurulduktan sonra, belgelerle programlı olarak çalışmak için bu kitaplığı kullanmaya başlayabilirsiniz.
+ Başlamak için Aspose.Words for Java'yı indirip yüklemeniz gerekecek. İndirme linkini bulabilirsiniz[Burada](https://releases.aspose.com/words/java/). Kurulduktan sonra, belgelerle programlı olarak çalışmak için bu kitaplığı kullanmaya başlayabilirsiniz.
 
 ### Aspose.Words for Java'yı Projenize Ekleme
 

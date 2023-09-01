@@ -20,7 +20,7 @@ Before we delve into the specifics of TOC generation, let's set up our environme
 
 ### Setting up Your Environment
 
-To get started, ensure you have Aspose.Words for Java installed. You can download it from the website [here](https://releases.aspose.com/words/Java/).
+To get started, ensure you have Aspose.Words for Java installed. You can download it from the website [here](https://releases.aspose.com/words/java/).
 
 ### Creating a New Java Project
 

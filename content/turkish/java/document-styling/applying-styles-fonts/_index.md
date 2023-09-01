@@ -16,7 +16,7 @@ Aspose.Words for Java, geliştiricilerin DOCX, DOC, RTF ve daha fazlası dahil o
 ## Stilleri ve Yazı Tiplerini Uygulama: Temel Bilgiler
 
 ### Başlarken
- Başlamak için Java geliştirme ortamınızı kurmanız ve Aspose.Words for Java kütüphanesini indirmeniz gerekir. İndirme linkini bulabilirsiniz[Burada](https://releases.aspose.com/words/Java/). Kütüphaneyi projenize dahil ettiğinizden emin olun.
+ Başlamak için Java geliştirme ortamınızı kurmanız ve Aspose.Words for Java kütüphanesini indirmeniz gerekir. İndirme linkini bulabilirsiniz[Burada](https://releases.aspose.com/words/java/). Kütüphaneyi projenize dahil ettiğinizden emin olun.
 
 ### Belge Oluşturma
 Aspose.Words for Java'yı kullanarak yeni bir belge oluşturarak başlayalım:

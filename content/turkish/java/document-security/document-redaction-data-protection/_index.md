@@ -18,7 +18,7 @@ Bu kılavuzda, Aspose.Words for Java'yı kullanarak Word belgelerinden hassas bi
 
 Aspose.Words for Java ile çalışmaya başlamadan önce geliştirme ortamımızı kurmamız gerekiyor. Bu adımları takip et:
 
-1.  Aspose.Words for Java'yı indirin ve yükleyin: Ziyaret edin[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/) Aspose.Words for Java'nın en son sürümünü indirmek için.
+1.  Aspose.Words for Java'yı indirin ve yükleyin: Ziyaret edin[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) Aspose.Words for Java'nın en son sürümünü indirmek için.
 
 2. Aspose.Words'ü Projenize Entegre Edin: Aspose.Words JAR dosyalarını Java projenize ekleyin.
 

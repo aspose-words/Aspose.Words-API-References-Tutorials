@@ -20,7 +20,7 @@ Bevor wir uns mit den Einzelheiten der Tabellenformatierung befassen, richten wi
 
 ### Installation
 
- Zunächst müssen Sie Aspose.Words für Java herunterladen und installieren. Den Download-Link finden Sie hier[Hier](https://releases.aspose.com/words/Java/). Nach der Installation können Sie diese Bibliothek verwenden, um programmgesteuert mit Dokumenten zu arbeiten.
+ Zunächst müssen Sie Aspose.Words für Java herunterladen und installieren. Den Download-Link finden Sie hier[Hier](https://releases.aspose.com/words/java/). Nach der Installation können Sie diese Bibliothek verwenden, um programmgesteuert mit Dokumenten zu arbeiten.
 
 ### Hinzufügen von Aspose.Words für Java zu Ihrem Projekt
 

@@ -75,7 +75,7 @@ Aspose.Words för Java förenklar dokumenthantering och sparprocesser för Java-
 
 #### Hur laddar jag ner Aspose.Words för Java?
 
- Du kan ladda ner Aspose.Words för Java från webbplatsen:[Ladda ner Aspose.Words för Java](https://releases.aspose.com/words/Java/).
+ Du kan ladda ner Aspose.Words för Java från webbplatsen:[Ladda ner Aspose.Words för Java](https://releases.aspose.com/words/java/).
 
 #### Är Aspose.Words for Java kompatibelt med de senaste Java-versionerna?
 

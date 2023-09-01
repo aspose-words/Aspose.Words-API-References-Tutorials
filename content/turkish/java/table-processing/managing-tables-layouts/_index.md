@@ -18,7 +18,7 @@ Teknik ayrıntılara dalmadan önce, belge işlemede tabloları ve düzenleri y�
 
 ## Aspose.Words for Java'ya Başlarken
 
- Yolculuğumuza başlamak için Aspose.Words for Java'yı kurup kurmanız gerekiyor. Henüz yapmadıysanız Aspose web sitesinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/Java/). Kitaplığı yükledikten sonra, tabloları ve düzenleri etkili bir şekilde yönetmek için kitaplığın yeteneklerinden yararlanmaya hazırsınız.
+ Yolculuğumuza başlamak için Aspose.Words for Java'yı kurup kurmanız gerekiyor. Henüz yapmadıysanız Aspose web sitesinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/java/). Kitaplığı yükledikten sonra, tabloları ve düzenleri etkili bir şekilde yönetmek için kitaplığın yeteneklerinden yararlanmaya hazırsınız.
 
 ## Temel Tablo Yönetimi
 

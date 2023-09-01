@@ -15,7 +15,7 @@ url: /ar/java/document-splitting/splitting-documents-into-html-pages/
 قبل أن نتعمق في الكود، تأكد من توفر المتطلبات الأساسية التالية:
 
 - تم تثبيت Java Development Kit (JDK) على نظامك.
-- Aspose.Words لمكتبة جافا. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/Java/).
+- Aspose.Words لمكتبة جافا. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/java/).
 
 
 ## مقدمة
@@ -71,7 +71,7 @@ for (int i = 0; i < pages.size(); i++) {
 
 ### كيف أقوم بتثبيت Aspose.Words لـ Java؟
 
- لتثبيت Aspose.Words for Java، قم بتنزيل المكتبة من[هنا](https://releases.aspose.com/words/Java/) وقم بتضمين ملفات JAR في مسار فئة مشروع Java الخاص بك.
+ لتثبيت Aspose.Words for Java، قم بتنزيل المكتبة من[هنا](https://releases.aspose.com/words/java/) وقم بتضمين ملفات JAR في مسار فئة مشروع Java الخاص بك.
 
 ### هل يمكنني تخصيص معايير التقسيم؟
 

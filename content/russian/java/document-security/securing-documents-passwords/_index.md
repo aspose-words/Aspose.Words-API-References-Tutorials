@@ -17,7 +17,7 @@ url: /ru/java/document-security/securing-documents-passwords/
 
 ## Настройка Aspose.Words для Java
 
- Прежде чем мы углубимся в защиту документов, давайте убедимся, что в вашей среде Java настроен Aspose.Words for Java. Если вы еще этого не сделали, вы можете скачать его с сайта[здесь](https://releases.aspose.com/words/Java/).
+ Прежде чем мы углубимся в защиту документов, давайте убедимся, что в вашей среде Java настроен Aspose.Words for Java. Если вы еще этого не сделали, вы можете скачать его с сайта[здесь](https://releases.aspose.com/words/java/).
 
 ## Защита документов: шаг за шагом
 

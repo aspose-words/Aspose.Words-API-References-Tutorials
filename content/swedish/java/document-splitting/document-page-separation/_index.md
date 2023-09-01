@@ -15,7 +15,7 @@ I dagens digitala era är hantering och manipulering av dokument en viktig uppgi
 Innan vi dyker in i koden, se till att du har följande förutsättningar på plats:
 
 - Java Development Kit (JDK) installerat
--  Aspose.Words för Java-biblioteket (Du kan ladda ner det från[här](https://releases.aspose.com/words/Java/))
+-  Aspose.Words för Java-biblioteket (Du kan ladda ner det från[här](https://releases.aspose.com/words/java/))
 - Integrated Development Environment (IDE) efter eget val (Eclipse, IntelliJ IDEA, etc.)
 
 ## Konfigurera ditt Java-projekt

@@ -16,7 +16,7 @@ Innan vi går in på de tekniska detaljerna är det viktigt att förstå vad Asp
 
 ## Ställa in din miljö
 
- För att börja, se till att du har Aspose.Words för Java installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/Java/). När du har laddat ner och installerat den är du redo att börja koda.
+ För att börja, se till att du har Aspose.Words för Java installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/java/). När du har laddat ner och installerat den är du redo att börja koda.
 
 ## Steg 1: Ladda dokumentet
 

@@ -20,7 +20,7 @@ Innan vi går in i detaljerna kring TOC-generering, låt oss ställa in vår mil
 
 ### Ställa in din miljö
 
-För att komma igång, se till att du har Aspose.Words för Java installerat. Du kan ladda ner den från webbplatsen[här](https://releases.aspose.com/words/Java/).
+För att komma igång, se till att du har Aspose.Words för Java installerat. Du kan ladda ner den från webbplatsen[här](https://releases.aspose.com/words/java/).
 
 ### Skapa ett nytt Java-projekt
 

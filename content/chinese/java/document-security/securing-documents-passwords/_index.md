@@ -17,7 +17,7 @@ url: /zh/java/document-security/securing-documents-passwords/
 
 ## 设置 Java 版 Aspose.Words
 
-在我们深入研究保护文档之前，让我们确保您已在 Java 环境中设置了 Aspose.Words for Java。如果您还没有这样做，您可以从以下位置下载[这里](https://releases.aspose.com/words/Java/).
+在我们深入研究保护文档之前，让我们确保您已在 Java 环境中设置了 Aspose.Words for Java。如果您还没有这样做，您可以从以下位置下载[这里](https://releases.aspose.com/words/java/).
 
 ## 保护文档：一步一步
 

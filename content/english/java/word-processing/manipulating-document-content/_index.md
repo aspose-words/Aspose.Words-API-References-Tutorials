@@ -18,7 +18,7 @@ Before we dive into the specifics of manipulating document content, let's ensure
 
 1. Installation and Setup
    
-   Begin by downloading Aspose.Words for Java from the download link: [Aspose.Words for Java Download](https://releases.aspose.com/words/Java/). Install it according to the provided documentation.
+   Begin by downloading Aspose.Words for Java from the download link: [Aspose.Words for Java Download](https://releases.aspose.com/words/java/). Install it according to the provided documentation.
 
 2. API Reference
    

@@ -18,7 +18,7 @@ Prima di entrare nei dettagli tecnici, esploriamo brevemente perché la gestione
 
 ## Iniziare con Aspose.Words per Java
 
- Per iniziare il nostro viaggio, è necessario che Aspose.Words per Java sia installato e configurato. Se non lo hai ancora fatto, puoi scaricarlo dal sito Aspose[Qui](https://releases.aspose.com/words/Java/). Dopo aver installato la libreria, sei pronto per sfruttare le sue capacità per gestire tabelle e layout in modo efficace.
+ Per iniziare il nostro viaggio, è necessario che Aspose.Words per Java sia installato e configurato. Se non lo hai ancora fatto, puoi scaricarlo dal sito Aspose[Qui](https://releases.aspose.com/words/java/). Dopo aver installato la libreria, sei pronto per sfruttare le sue capacità per gestire tabelle e layout in modo efficace.
 
 ## Gestione delle tabelle di base
 

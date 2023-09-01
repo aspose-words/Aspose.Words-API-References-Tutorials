@@ -22,7 +22,7 @@ url: /ar/java/document-rendering/master-document-rendering/
 
 ### التثبيت والإعداد
 
-لاستخدام Aspose.Words لـ Java، تحتاج إلى تضمين ملف Aspose.Words JAR في مشروع Java الخاص بك. يمكنك تنزيل JAR من إصدارات Aspose(https://releases.aspose.com/words/Java/) وإضافته إلى مسار الفصل الخاص بمشروعك.
+لاستخدام Aspose.Words لـ Java، تحتاج إلى تضمين ملف Aspose.Words JAR في مشروع Java الخاص بك. يمكنك تنزيل JAR من إصدارات Aspose(https://releases.aspose.com/words/java/) وإضافته إلى مسار الفصل الخاص بمشروعك.
 
 ### ترخيص Aspose.Words لجافا
 

@@ -121,7 +121,7 @@ Daha gelişmiş özellikler ve olanaklar için Aspose.Words for Java belgelerini
 
 ### Aspose.Words for Java'yı nasıl yüklerim?
 
- Aspose.Words for Java'yı web sitesinden indirebilirsiniz:[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/)
+ Aspose.Words for Java'yı web sitesinden indirebilirsiniz:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)
 
 ### Aspose.Words for Java'yı ticari projelerimde kullanabilir miyim?
 

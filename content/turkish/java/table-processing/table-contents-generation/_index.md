@@ -20,7 +20,7 @@ TOC oluşturmanın ayrıntılarına girmeden önce ortamımızı kuralım ve Asp
 
 ### Ortamınızı Kurma
 
-Başlamak için Aspose.Words for Java'nın kurulu olduğundan emin olun. Web sitesinden indirebilirsiniz[Burada](https://releases.aspose.com/words/Java/).
+Başlamak için Aspose.Words for Java'nın kurulu olduğundan emin olun. Web sitesinden indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 ### Yeni Bir Java Projesi Oluşturma
 

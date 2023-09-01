@@ -12,7 +12,7 @@ url: /de/java/table-processing/creating-tables-rows/
 Das Erstellen von Tabellen und Zeilen in Dokumenten ist ein grundlegender Aspekt der Dokumentverarbeitung, und Aspose.Words für Java macht diese Aufgabe einfacher als je zuvor. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie Aspose.Words für Java verwenden, um Tabellen und Zeilen in Ihren Dokumenten zu erstellen. Egal, ob Sie Berichte erstellen, Rechnungen erstellen oder ein Dokument erstellen, das eine strukturierte Datenpräsentation erfordert, dieser Leitfaden deckt alles ab.
 
 ## Die Bühne vorbereiten
-Bevor wir uns mit den Details befassen, stellen wir sicher, dass Sie über die notwendigen Einstellungen für die Arbeit mit Aspose.Words für Java verfügen. Stellen Sie sicher, dass Sie die Bibliothek heruntergeladen und installiert haben. Falls Sie es noch nicht getan haben, finden Sie hier den Download-Link[Hier](https://releases.aspose.com/words/Java/).
+Bevor wir uns mit den Details befassen, stellen wir sicher, dass Sie über die notwendigen Einstellungen für die Arbeit mit Aspose.Words für Java verfügen. Stellen Sie sicher, dass Sie die Bibliothek heruntergeladen und installiert haben. Falls Sie es noch nicht getan haben, finden Sie hier den Download-Link[Hier](https://releases.aspose.com/words/java/).
 
 ## Tische bauen
 ### Eine Tabelle erstellen

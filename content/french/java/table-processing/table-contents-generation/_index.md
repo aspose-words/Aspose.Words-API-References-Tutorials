@@ -20,7 +20,7 @@ Avant d'aborder les spécificités de la génération de la table des matières,
 
 ### Configuration de votre environnement
 
-Pour commencer, assurez-vous que Aspose.Words pour Java est installé. Vous pouvez le télécharger sur le site[ici](https://releases.aspose.com/words/Java/).
+Pour commencer, assurez-vous que Aspose.Words pour Java est installé. Vous pouvez le télécharger sur le site[ici](https://releases.aspose.com/words/java/).
 
 ### Création d'un nouveau projet Java
 

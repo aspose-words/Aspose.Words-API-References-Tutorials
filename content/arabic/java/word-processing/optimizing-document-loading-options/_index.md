@@ -20,7 +20,7 @@ url: /ar/java/word-processing/optimizing-document-loading-options/
 
 للبدء، ستحتاج إلى تثبيت Aspose.Words لـ Java. يمكنك تنزيل أحدث إصدار من الموقع:
 
-[تحميل Aspose.Words لجافا](https://releases.aspose.com/words/Java/)
+[تحميل Aspose.Words لجافا](https://releases.aspose.com/words/java/)
 
 اتبع تعليمات التثبيت المقدمة لإعداد المكتبة في بيئة Java الخاصة بك.
 
@@ -112,7 +112,7 @@ Document document = new Document(txtFilePath, loadOptions);
 
 #### كيف أقوم بتنزيل Aspose.Words لـ Java؟
 
- يمكنك تنزيل Aspose.Words for Java من موقع الويب:[تحميل Aspose.Words لجافا](https://releases.aspose.com/words/Java/)
+ يمكنك تنزيل Aspose.Words for Java من موقع الويب:[تحميل Aspose.Words لجافا](https://releases.aspose.com/words/java/)
 
 #### هل يمكنني استخدام Aspose.Words لـ Java مجانًا؟
 

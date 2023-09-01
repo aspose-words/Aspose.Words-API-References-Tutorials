@@ -16,7 +16,7 @@ Antes de entrar en detalles técnicos, es esencial entender qué es Aspose.Words
 
 ## Configurando su entorno
 
- Para comenzar, asegúrese de tener instalado Aspose.Words para Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/Java/). Una vez que lo haya descargado e instalado, estará listo para comenzar a codificar.
+ Para comenzar, asegúrese de tener instalado Aspose.Words para Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/). Una vez que lo haya descargado e instalado, estará listo para comenzar a codificar.
 
 ## Paso 1: cargue el documento
 

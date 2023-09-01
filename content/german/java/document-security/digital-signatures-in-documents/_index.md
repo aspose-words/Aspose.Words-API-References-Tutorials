@@ -14,7 +14,7 @@ Digitale Signaturen spielen eine entscheidende Rolle bei der Gewährleistung der
 
 Bevor wir uns mit der Implementierung befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
--  Aspose.Words für Java: Laden Sie Aspose.Words für Java herunter und installieren Sie es von[Hier](https://releases.aspose.com/words/Java/).
+-  Aspose.Words für Java: Laden Sie Aspose.Words für Java herunter und installieren Sie es von[Hier](https://releases.aspose.com/words/java/).
 
 ## Einrichten Ihres Projekts
 

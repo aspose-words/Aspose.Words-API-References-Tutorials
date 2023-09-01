@@ -20,7 +20,7 @@ url: /zh/java/table-processing/table-contents-generation/
 
 ### 设置您的环境
 
-首先，请确保您已安装 Aspose.Words for Java。您可以从网站下载[这里](https://releases.aspose.com/words/Java/).
+首先，请确保您已安装 Aspose.Words for Java。您可以从网站下载[这里](https://releases.aspose.com/words/java/).
 
 ### 创建一个新的 Java 项目
 

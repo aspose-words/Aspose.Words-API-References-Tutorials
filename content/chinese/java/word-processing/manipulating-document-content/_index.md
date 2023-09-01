@@ -18,7 +18,7 @@ url: /zh/java/word-processing/manipulating-document-content/
 
 1. 安装和设置
    
-   首先从下载链接下载 Aspose.Words for Java：[Aspose.Words for Java 下载](https://releases.aspose.com/words/Java/)。根据提供的文档进行安装。
+   首先从下载链接下载 Aspose.Words for Java：[Aspose.Words for Java 下载](https://releases.aspose.com/words/java/)。根据提供的文档进行安装。
 
 2. API参考
    

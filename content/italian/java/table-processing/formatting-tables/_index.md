@@ -20,7 +20,7 @@ Prima di immergerci nel nocciolo della formattazione delle tabelle, configuriamo
 
 ### Installazione
 
- Per iniziare, dovrai scaricare e installare Aspose.Words per Java. È possibile trovare il collegamento per il download[Qui](https://releases.aspose.com/words/Java/). Una volta installata, puoi iniziare a utilizzare questa libreria per lavorare con i documenti a livello di codice.
+ Per iniziare, dovrai scaricare e installare Aspose.Words per Java. È possibile trovare il collegamento per il download[Qui](https://releases.aspose.com/words/java/). Una volta installata, puoi iniziare a utilizzare questa libreria per lavorare con i documenti a livello di codice.
 
 ### Aggiunta di Aspose.Words per Java al tuo progetto
 

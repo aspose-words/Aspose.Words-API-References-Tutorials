@@ -12,7 +12,7 @@ url: /sv/java/table-processing/creating-tables-rows/
 Att skapa tabeller och rader i dokument är en grundläggande aspekt av dokumentbehandling, och Aspose.Words för Java gör denna uppgift enklare än någonsin. I denna steg-för-steg-guide kommer vi att utforska hur man använder Aspose.Words för Java för att skapa tabeller och rader i dina dokument. Oavsett om du bygger rapporter, genererar fakturor eller skapar något dokument som kräver strukturerad datapresentation, har den här guiden dig täckt.
 
 ## Fixar scenen
-Innan vi dyker in i detaljerna, låt oss se till att du har de nödvändiga inställningarna för att arbeta med Aspose.Words för Java. Se till att du har laddat ner och installerat biblioteket. Om du inte redan har gjort det kan du hitta nedladdningslänken[här](https://releases.aspose.com/words/Java/).
+Innan vi dyker in i detaljerna, låt oss se till att du har de nödvändiga inställningarna för att arbeta med Aspose.Words för Java. Se till att du har laddat ner och installerat biblioteket. Om du inte redan har gjort det kan du hitta nedladdningslänken[här](https://releases.aspose.com/words/java/).
 
 ## Bygga tabeller
 ### Skapa en tabell

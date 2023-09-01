@@ -22,7 +22,7 @@ Aspose.Words for Java 是一个强大且功能丰富的 Java 库，允许开发�
 
 ### 安装 Aspose.Words for Java
 
-要开始使用 Aspose.Words for Java，您需要安装该库。您可以从以下网站下载该库：[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/)。按照提供的安装说明在 Java 项目中设置库。
+要开始使用 Aspose.Words for Java，您需要安装该库。您可以从以下网站下载该库：[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)。按照提供的安装说明在 Java 项目中设置库。
 
 ### 创建您的第一个文档
 
@@ -119,7 +119,7 @@ doc.save("MyDocument_v2.docx");
 
 ### 在哪里可以下载 Aspose.Words for Java？
 
-您可以从以下网站下载 Aspose.Words for Java：[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/)。请按照安装说明开始操作。
+您可以从以下网站下载 Aspose.Words for Java：[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)。请按照安装说明开始操作。
 
 ## 结论
 

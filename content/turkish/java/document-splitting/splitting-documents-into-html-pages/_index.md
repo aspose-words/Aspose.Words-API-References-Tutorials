@@ -15,7 +15,7 @@ Bu kapsamlı kılavuzda Aspose.Words for Java'yı kullanarak belgeleri HTML sayf
 Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
 - Sisteminizde Java Geliştirme Kiti (JDK) yüklü.
-- Aspose.Words for Java kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/Java/).
+- Aspose.Words for Java kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 
 ## giriiş
@@ -71,7 +71,7 @@ Artık Word belgelerinizi kolaylıkla HTML sayfalarına dönüştürebilir, çev
 
 ### Aspose.Words for Java'yı nasıl yüklerim?
 
- Aspose.Words for Java'yı yüklemek için kütüphaneyi şuradan indirin:[Burada](https://releases.aspose.com/words/Java/) ve JAR dosyalarını Java projenizin sınıf yoluna ekleyin.
+ Aspose.Words for Java'yı yüklemek için kütüphaneyi şuradan indirin:[Burada](https://releases.aspose.com/words/java/) ve JAR dosyalarını Java projenizin sınıf yoluna ekleyin.
 
 ### Bölme kriterlerini özelleştirebilir miyim?
 

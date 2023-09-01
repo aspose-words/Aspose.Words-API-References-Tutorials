@@ -15,7 +15,7 @@ Im heutigen digitalen Zeitalter ist die Verwaltung und Bearbeitung von Dokumente
 Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 - Java Development Kit (JDK) installiert
--  Aspose.Words für Java-Bibliothek (Sie können sie herunterladen von[Hier](https://releases.aspose.com/words/Java/))
+-  Aspose.Words für Java-Bibliothek (Sie können sie herunterladen von[Hier](https://releases.aspose.com/words/java/))
 - Integrierte Entwicklungsumgebung (IDE) Ihrer Wahl (Eclipse, IntelliJ IDEA usw.)
 
 ## Einrichten Ihres Java-Projekts

@@ -17,7 +17,7 @@ Günümüzün dijital dünyasında veri güvenliği çok önemlidir. İster gizl
 
 ## Java için Aspose.Words'ü Kurma
 
- Belgelerin güvenliğini sağlamaya başlamadan önce, Java ortamınızda Aspose.Words for Java'nın kurulu olduğundan emin olalım. Henüz yapmadıysanız adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/Java/).
+ Belgelerin güvenliğini sağlamaya başlamadan önce, Java ortamınızda Aspose.Words for Java'nın kurulu olduğundan emin olalım. Henüz yapmadıysanız adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/java/).
 
 ## Belgelerin Güvenliğini Sağlama: Adım Adım
 

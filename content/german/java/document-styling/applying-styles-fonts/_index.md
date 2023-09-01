@@ -16,7 +16,7 @@ Aspose.Words für Java ist eine Java-basierte API, die Entwicklern die Arbeit mi
 ## Anwenden von Stilen und Schriftarten: Die Grundlagen
 
 ### Erste Schritte
- Zunächst müssen Sie Ihre Java-Entwicklungsumgebung einrichten und die Aspose.Words for Java-Bibliothek herunterladen. Den Download-Link finden Sie hier[Hier](https://releases.aspose.com/words/Java/). Stellen Sie sicher, dass Sie die Bibliothek in Ihr Projekt einbinden.
+ Zunächst müssen Sie Ihre Java-Entwicklungsumgebung einrichten und die Aspose.Words for Java-Bibliothek herunterladen. Den Download-Link finden Sie hier[Hier](https://releases.aspose.com/words/java/). Stellen Sie sicher, dass Sie die Bibliothek in Ihr Projekt einbinden.
 
 ### Ein Dokument erstellen
 Beginnen wir mit der Erstellung eines neuen Dokuments mit Aspose.Words für Java:

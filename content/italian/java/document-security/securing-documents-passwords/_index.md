@@ -17,7 +17,7 @@ Nel mondo digitale di oggi, la sicurezza dei dati è fondamentale. Che tu stia g
 
 ## Configurazione di Aspose.Words per Java
 
- Prima di immergerci nella protezione dei documenti, assicuriamoci di avere Aspose.Words per Java configurato nel tuo ambiente Java. Se non lo hai già fatto, puoi scaricarlo da[Qui](https://releases.aspose.com/words/Java/).
+ Prima di immergerci nella protezione dei documenti, assicuriamoci di avere Aspose.Words per Java configurato nel tuo ambiente Java. Se non lo hai già fatto, puoi scaricarlo da[Qui](https://releases.aspose.com/words/java/).
 
 ## Protezione dei documenti: passo dopo passo
 

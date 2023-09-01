@@ -22,7 +22,7 @@ url: /zh/java/word-processing/handling-different-document-formats/
 
 要使用 Aspose.Words for Java，您需要将 Aspose.Words JAR 文件添加到您的项目中。按着这些次序：
 
-1. 下载 Java 版 Aspose.Words：访问 Aspose 网站[这里](https://releases.aspose.com/words/Java/)获取最新版本的 Aspose.Words for Java。
+1. 下载 Java 版 Aspose.Words：访问 Aspose 网站[这里](https://releases.aspose.com/words/java/)获取最新版本的 Aspose.Words for Java。
 
 2. 将 JAR 添加到您的项目：将下载的 JAR 文件包含在项目的类路径中。
 
@@ -120,7 +120,7 @@ Aspose.Words for Java 是一个用于处理各种文档格式的强大工具。�
 
 ### 如何获取 Aspose.Words for Java？
 
-您可以从 Aspose 网站下载 Aspose.Words for Java[这里](https://releases.aspose.com/words/Java/).
+您可以从 Aspose 网站下载 Aspose.Words for Java[这里](https://releases.aspose.com/words/java/).
 
 ### 我可以使用 Aspose.Words for Java 将 Word 文档转换为 PDF 吗？
 

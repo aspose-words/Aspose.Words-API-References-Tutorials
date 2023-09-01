@@ -15,7 +15,7 @@ url: /zh/java/document-splitting/splitting-documents-into-html-pages/
 在我们深入研究代码之前，请确保您具备以下先决条件：
 
 - 您的系统上安装了 Java 开发工具包 (JDK)。
-- Aspose.Words for Java 库。您可以从以下位置下载：[这里](https://releases.aspose.com/words/Java/).
+- Aspose.Words for Java 库。您可以从以下位置下载：[这里](https://releases.aspose.com/words/java/).
 
 
 ## 介绍
@@ -71,7 +71,7 @@ for (int i = 0; i < pages.size(); i++) {
 
 ### 如何安装 Aspose.Words for Java？
 
-要安装 Aspose.Words for Java，请从以下位置下载该库：[这里](https://releases.aspose.com/words/Java/)并将 JAR 文件包含在 Java 项目的类路径中。
+要安装 Aspose.Words for Java，请从以下位置下载该库：[这里](https://releases.aspose.com/words/java/)并将 JAR 文件包含在 Java 项目的类路径中。
 
 ### 我可以自定义拆分标准吗？
 

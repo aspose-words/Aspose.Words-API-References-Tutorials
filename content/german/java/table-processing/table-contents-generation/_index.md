@@ -20,7 +20,7 @@ Bevor wir uns mit den Besonderheiten der TOC-Generierung befassen, richten wir u
 
 ### Einrichten Ihrer Umgebung
 
-Stellen Sie zunächst sicher, dass Aspose.Words für Java installiert ist. Sie können es von der Website herunterladen[Hier](https://releases.aspose.com/words/Java/).
+Stellen Sie zunächst sicher, dass Aspose.Words für Java installiert ist. Sie können es von der Website herunterladen[Hier](https://releases.aspose.com/words/java/).
 
 ### Erstellen eines neuen Java-Projekts
 

@@ -121,7 +121,7 @@ for (Table table : tables) {
 
 ### كيف أقوم بتثبيت Aspose.Words لـ Java؟
 
- يمكنك تنزيل Aspose.Words for Java من موقع الويب:[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/)
+ يمكنك تنزيل Aspose.Words for Java من موقع الويب:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)
 
 ### هل يمكنني استخدام Aspose.Words for Java في مشاريعي التجارية؟
 

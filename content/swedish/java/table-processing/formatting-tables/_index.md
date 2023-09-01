@@ -20,7 +20,7 @@ Innan vi dyker in i tabellformateringens snålhet, låt oss ställa in vår utve
 
 ### Installation
 
- För att börja måste du ladda ner och installera Aspose.Words för Java. Du hittar nedladdningslänken[här](https://releases.aspose.com/words/Java/). När det är installerat kan du börja använda det här biblioteket för att arbeta med dokument programmatiskt.
+ För att börja måste du ladda ner och installera Aspose.Words för Java. Du hittar nedladdningslänken[här](https://releases.aspose.com/words/java/). När det är installerat kan du börja använda det här biblioteket för att arbeta med dokument programmatiskt.
 
 ### Lägga till Aspose.Words för Java till ditt projekt
 

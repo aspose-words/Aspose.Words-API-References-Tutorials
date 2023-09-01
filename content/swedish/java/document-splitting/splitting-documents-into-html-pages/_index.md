@@ -15,7 +15,7 @@ I den här omfattande guiden kommer vi att utforska hur man delar upp dokument i
 Innan vi dyker in i koden, se till att du har följande förutsättningar på plats:
 
 - Java Development Kit (JDK) installerat på ditt system.
-- Aspose.Words för Java-bibliotek. Du kan ladda ner den från[här](https://releases.aspose.com/words/Java/).
+- Aspose.Words för Java-bibliotek. Du kan ladda ner den från[här](https://releases.aspose.com/words/java/).
 
 
 ## Introduktion
@@ -71,7 +71,7 @@ Nu kan du enkelt konvertera dina Word-dokument till HTML-sidor, vilket gör dem 
 
 ### Hur installerar jag Aspose.Words för Java?
 
- För att installera Aspose.Words för Java, ladda ner biblioteket från[här](https://releases.aspose.com/words/Java/) och inkludera JAR-filerna i ditt Java-projekts klassväg.
+ För att installera Aspose.Words för Java, ladda ner biblioteket från[här](https://releases.aspose.com/words/java/) och inkludera JAR-filerna i ditt Java-projekts klassväg.
 
 ### Kan jag anpassa uppdelningskriterierna?
 

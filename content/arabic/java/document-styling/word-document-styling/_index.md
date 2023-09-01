@@ -18,7 +18,7 @@ Aspose.Words for Java هي مكتبة قوية تسمح لمطوري Java بإن
 
 ### 1. تثبيت Aspose.Words لجافا
 
-للبدء، تفضل بزيارة إصدارات Aspose (https://releases.aspose.com/words/Java/) وقم بتنزيل مكتبة Aspose.Words لـ Java. بعد التنزيل، اتبع تعليمات التثبيت لإعداد المكتبة في بيئة التطوير الخاصة بك.
+للبدء، تفضل بزيارة إصدارات Aspose (https://releases.aspose.com/words/java/) وقم بتنزيل مكتبة Aspose.Words لـ Java. بعد التنزيل، اتبع تعليمات التثبيت لإعداد المكتبة في بيئة التطوير الخاصة بك.
 
 ### 2. تهيئة بيئة التطوير
 

@@ -18,7 +18,7 @@ Bevor wir uns mit den technischen Details befassen, wollen wir kurz untersuchen,
 
 ## Erste Schritte mit Aspose.Words für Java
 
- Um unsere Reise zu beginnen, müssen Sie Aspose.Words für Java installiert und eingerichtet haben. Wenn Sie dies noch nicht getan haben, können Sie es von der Aspose-Website herunterladen[Hier](https://releases.aspose.com/words/Java/). Sobald Sie die Bibliothek installiert haben, können Sie ihre Funktionen zur effektiven Verwaltung von Tabellen und Layouts nutzen.
+ Um unsere Reise zu beginnen, müssen Sie Aspose.Words für Java installiert und eingerichtet haben. Wenn Sie dies noch nicht getan haben, können Sie es von der Aspose-Website herunterladen[Hier](https://releases.aspose.com/words/java/). Sobald Sie die Bibliothek installiert haben, können Sie ihre Funktionen zur effektiven Verwaltung von Tabellen und Layouts nutzen.
 
 ## Grundlegende Tabellenverwaltung
 

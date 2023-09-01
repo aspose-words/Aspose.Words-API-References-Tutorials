@@ -121,7 +121,7 @@ Utforska gärna Aspose.Words för Java-dokumentationen för mer avancerade funkt
 
 ### Hur installerar jag Aspose.Words för Java?
 
- Du kan ladda ner Aspose.Words för Java från webbplatsen:[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/)
+ Du kan ladda ner Aspose.Words för Java från webbplatsen:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)
 
 ### Kan jag använda Aspose.Words för Java i mina kommersiella projekt?
 

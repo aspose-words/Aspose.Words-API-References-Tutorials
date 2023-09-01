@@ -15,7 +15,7 @@ In dieser umfassenden Anleitung erfahren Sie, wie Sie mit Aspose.Words für Java
 Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 - Java Development Kit (JDK) auf Ihrem System installiert.
-- Aspose.Words für Java-Bibliothek. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/Java/).
+- Aspose.Words für Java-Bibliothek. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/java/).
 
 
 ## Einführung
@@ -71,7 +71,7 @@ Jetzt können Sie Ihre Word-Dokumente ganz einfach in HTML-Seiten konvertieren u
 
 ### Wie installiere ich Aspose.Words für Java?
 
- Um Aspose.Words für Java zu installieren, laden Sie die Bibliothek von herunter[Hier](https://releases.aspose.com/words/Java/) und fügen Sie die JAR-Dateien in den Klassenpfad Ihres Java-Projekts ein.
+ Um Aspose.Words für Java zu installieren, laden Sie die Bibliothek von herunter[Hier](https://releases.aspose.com/words/java/) und fügen Sie die JAR-Dateien in den Klassenpfad Ihres Java-Projekts ein.
 
 ### Kann ich die Aufteilungskriterien anpassen?
 

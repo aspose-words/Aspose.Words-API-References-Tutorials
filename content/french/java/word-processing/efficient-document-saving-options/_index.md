@@ -75,7 +75,7 @@ Aspose.Words for Java simplifie la gestion des documents et les processus d'enre
 
 #### Comment télécharger Aspose.Words pour Java ?
 
- Vous pouvez télécharger Aspose.Words pour Java à partir du site Web :[Télécharger Aspose.Words pour Java](https://releases.aspose.com/words/Java/).
+ Vous pouvez télécharger Aspose.Words pour Java à partir du site Web :[Télécharger Aspose.Words pour Java](https://releases.aspose.com/words/java/).
 
 #### Aspose.Words for Java est-il compatible avec les dernières versions de Java ?
 

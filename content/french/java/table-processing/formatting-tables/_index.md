@@ -20,7 +20,7 @@ Avant de plonger dans les détails du formatage des tableaux, configurons notre 
 
 ### Installation
 
- Pour commencer, vous devrez télécharger et installer Aspose.Words pour Java. Vous pouvez trouver le lien de téléchargement[ici](https://releases.aspose.com/words/Java/). Une fois installée, vous pouvez commencer à utiliser cette bibliothèque pour travailler avec des documents par programmation.
+ Pour commencer, vous devrez télécharger et installer Aspose.Words pour Java. Vous pouvez trouver le lien de téléchargement[ici](https://releases.aspose.com/words/java/). Une fois installée, vous pouvez commencer à utiliser cette bibliothèque pour travailler avec des documents par programmation.
 
 ### Ajout d'Aspose.Words pour Java à votre projet
 

@@ -75,7 +75,7 @@ Aspose.Words for Java, Java geliştiricileri için belge yönetimini ve kaydetme
 
 #### Aspose.Words for Java'yı nasıl indirebilirim?
 
- Aspose.Words for Java'yı web sitesinden indirebilirsiniz:[Aspose.Words for Java'yı indirin](https://releases.aspose.com/words/Java/).
+ Aspose.Words for Java'yı web sitesinden indirebilirsiniz:[Aspose.Words for Java'yı indirin](https://releases.aspose.com/words/java/).
 
 #### Aspose.Words for Java en son Java sürümleriyle uyumlu mu?
 

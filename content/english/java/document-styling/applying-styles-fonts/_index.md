@@ -16,7 +16,7 @@ Aspose.Words for Java is a Java-based API that empowers developers to work with 
 ## Applying Styles and Fonts: The Basics
 
 ### Getting Started
-To begin, you'll need to set up your Java development environment and download the Aspose.Words for Java library. You can find the download link [here](https://releases.aspose.com/words/Java/). Make sure to include the library in your project.
+To begin, you'll need to set up your Java development environment and download the Aspose.Words for Java library. You can find the download link [here](https://releases.aspose.com/words/java/). Make sure to include the library in your project.
 
 ### Creating a Document
 Let's start by creating a new document using Aspose.Words for Java:

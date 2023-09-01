@@ -14,7 +14,7 @@ Dijital imzalar, dijital belgelerin orijinalliğini ve bütünlüğünü sağlam
 
 Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
--  Aspose.Words for Java: Aspose.Words for Java'yı şu adresten indirip yükleyin:[Burada](https://releases.aspose.com/words/Java/).
+-  Aspose.Words for Java: Aspose.Words for Java'yı şu adresten indirip yükleyin:[Burada](https://releases.aspose.com/words/java/).
 
 ## Projenizi Kurma
 

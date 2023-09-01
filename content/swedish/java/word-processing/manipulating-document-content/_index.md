@@ -18,7 +18,7 @@ Innan vi dyker in i detaljerna för att manipulera dokumentinnehåll, låt oss s
 
 1. Installation och installation
    
-    Börja med att ladda ner Aspose.Words för Java från nedladdningslänken:[Ladda ner Aspose.Words för Java](https://releases.aspose.com/words/Java/). Installera den enligt den medföljande dokumentationen.
+    Börja med att ladda ner Aspose.Words för Java från nedladdningslänken:[Ladda ner Aspose.Words för Java](https://releases.aspose.com/words/java/). Installera den enligt den medföljande dokumentationen.
 
 2. API-referens
    

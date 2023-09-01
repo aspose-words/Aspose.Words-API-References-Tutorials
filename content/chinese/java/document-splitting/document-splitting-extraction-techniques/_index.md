@@ -121,7 +121,7 @@ Aspose.Words for Java 提供了强大的文档分割和内容提取功能。通�
 
 ### 如何安装 Aspose.Words for Java？
 
-您可以从以下网站下载 Aspose.Words for Java：[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/)
+您可以从以下网站下载 Aspose.Words for Java：[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)
 
 ### 我可以在我的商业项目中使用 Aspose.Words for Java 吗？
 

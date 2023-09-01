@@ -16,7 +16,7 @@ Before we get into the technical details, it's essential to understand what Aspo
 
 ## Setting Up Your Environment
 
-To begin, make sure you have Aspose.Words for Java installed. You can download it from [here](https://releases.aspose.com/words/Java/). Once you've downloaded and installed it, you're ready to start coding.
+To begin, make sure you have Aspose.Words for Java installed. You can download it from [here](https://releases.aspose.com/words/java/). Once you've downloaded and installed it, you're ready to start coding.
 
 ## Step 1: Load the Document
 

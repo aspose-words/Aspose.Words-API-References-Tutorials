@@ -17,7 +17,7 @@ Dans le monde numérique d’aujourd’hui, la sécurité des données est primo
 
 ## Configuration d'Aspose.Words pour Java
 
- Avant de nous lancer dans la sécurisation des documents, assurons-nous que Aspose.Words for Java est configuré dans votre environnement Java. Si ce n'est pas déjà fait, vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/Java/).
+ Avant de nous lancer dans la sécurisation des documents, assurons-nous que Aspose.Words for Java est configuré dans votre environnement Java. Si ce n'est pas déjà fait, vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/java/).
 
 ## Sécuriser les documents : étape par étape
 

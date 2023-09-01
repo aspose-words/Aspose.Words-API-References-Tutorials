@@ -16,7 +16,7 @@ url: /zh/java/document-security/managing-document-permissions/
 
 在我们深入管理文档权限之前，让我们首先设置 Aspose.Words for Java。请按照以下步骤开始：
 
-1. 下载 Java 版 Aspose.Words：访问[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/)下载最新版本的 Aspose.Words for Java。
+1. 下载 Java 版 Aspose.Words：访问[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)下载最新版本的 Aspose.Words for Java。
 
 2. 安装 Aspose.Words for Java：下载该库后，按照安装说明在 Java 开发环境中进行设置。
 

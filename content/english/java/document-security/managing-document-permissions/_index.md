@@ -16,7 +16,7 @@ In today's digital world, document management is a critical aspect of every orga
 
 Before we dive into managing document permissions, let's start by setting up Aspose.Words for Java. Follow these steps to get started:
 
-1. Download Aspose.Words for Java: Visit [https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/) to download the latest version of Aspose.Words for Java.
+1. Download Aspose.Words for Java: Visit [https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) to download the latest version of Aspose.Words for Java.
 
 2. Install Aspose.Words for Java: After downloading the library, follow the installation instructions to set it up in your Java development environment.
 

@@ -15,7 +15,7 @@ In today's digital era, managing and manipulating documents is an essential task
 Before we dive into the code, ensure you have the following prerequisites in place:
 
 - Java Development Kit (JDK) installed
-- Aspose.Words for Java library (You can download it from [here](https://releases.aspose.com/words/Java/))
+- Aspose.Words for Java library (You can download it from [here](https://releases.aspose.com/words/java/))
 - Integrated Development Environment (IDE) of your choice (Eclipse, IntelliJ IDEA, etc.)
 
 ## Setting Up Your Java Project

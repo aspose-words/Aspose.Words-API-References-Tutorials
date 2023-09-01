@@ -16,7 +16,7 @@ dagens digitala värld är dokumenthantering en kritisk aspekt av varje organisa
 
 Innan vi dyker in i att hantera dokumentbehörigheter, låt oss börja med att ställa in Aspose.Words för Java. Följ dessa steg för att komma igång:
 
-1.  Ladda ner Aspose.Words för Java: Besök[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/Java/) för att ladda ner den senaste versionen av Aspose.Words för Java.
+1.  Ladda ner Aspose.Words för Java: Besök[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) för att ladda ner den senaste versionen av Aspose.Words för Java.
 
 2. Installera Aspose.Words för Java: Efter att ha laddat ner biblioteket, följ installationsinstruktionerna för att ställa in det i din Java-utvecklingsmiljö.
 

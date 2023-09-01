@@ -18,7 +18,7 @@ url: /ru/java/word-processing/manipulating-document-content/
 
 1. Установка и настройка
    
-    Начните с загрузки Aspose.Words для Java по ссылке для скачивания:[Aspose.Words для Java Скачать](https://releases.aspose.com/words/Java/). Установите его согласно предоставленной документации.
+    Начните с загрузки Aspose.Words для Java по ссылке для скачивания:[Aspose.Words для Java Скачать](https://releases.aspose.com/words/java/). Установите его согласно предоставленной документации.
 
 2. Справочник по API
    
