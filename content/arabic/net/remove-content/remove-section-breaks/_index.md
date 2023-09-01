@@ -56,7 +56,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
  
 ```csharp
 
-//المسار إلى دليل المستندات الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // قم بتحميل المستند

@@ -14,7 +14,7 @@ Denna handledning förklarar hur man sammanfogar två dokument kontinuerligt med
 
 Se till att du har följande förutsättningar:
 
-- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
+-  Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
 - En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
 ## Steg 2: Öppna käll- och måldokumenten
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Ställ in kontinuerlig sektionsstart
 
-För att få källdokumentet att visas direkt efter innehållet i måldokumentet, ställ in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.Continuous`.
+ För att få källdokumentet att visas direkt efter innehållet i måldokumentet, ställ in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Steg 4: Bifoga källdokumentet
 
- Bifoga källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting` för att bevara originalformaten från källdokumentet.
+Bifoga källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting` för att bevara originalformaten från källdokumentet.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -58,7 +58,7 @@ Detta slutför implementeringen av att sammanfoga två dokument kontinuerligt me
 ### Exempel på källkod för Join Continuous med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

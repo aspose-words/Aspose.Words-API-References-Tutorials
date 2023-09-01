@@ -76,7 +76,7 @@ C: Aspose.Words for .NET'i Arial ve Times Roman yazı tiplerini PDF belgesine ye
 
  İşlemek istediğiniz belgeyi kullanarak yükleyin.`Document` sınıf ve belirtilen belge yolu.
 
- Bir örneğini oluşturun`PdfSaveOptions`sınıfı seçin ve ayarlayın`FontEmbeddingMode` mülkiyet`PdfFontEmbeddingMode.EmbedAll`. Bu, Arial ve Times Roman dışındaki tüm yazı tiplerini oluşturulan PDF dosyasına gömecektir.
+ Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`FontEmbeddingMode` mülkiyet`PdfFontEmbeddingMode.EmbedAll`. Bu, Arial ve Times Roman dışındaki tüm yazı tiplerini oluşturulan PDF dosyasına gömecektir.
 
  Kullan`Save` yöntemi`Document` Daha önce yapılandırılan kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için nesneyi seçin.
 

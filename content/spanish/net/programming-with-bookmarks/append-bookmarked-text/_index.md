@@ -88,7 +88,7 @@ Aquí está el código fuente de ejemplo completo para demostrar cómo agregar t
 
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
-		// Esto crea una copia del nodo actual y lo importa (lo hace válido) en el contexto.
+		//Esto crea una copia del nodo actual y lo importa (lo hace válido) en el contexto.
 		// del documento de destino. Importar significa ajustar los estilos y los identificadores de listas correctamente.
 		Node newNode = importer.ImportNode(curNode, true);
 
@@ -109,7 +109,7 @@ R: Para utilizar la función "Agregar texto con marcadores" en Aspose.Words para
 
 #### P2: ¿Cómo obtener los párrafos que contienen el principio y el final de un marcador en un documento de Word?
 
- R: Para obtener los párrafos que contienen el inicio y el final de un marcador en un documento de Word, puede acceder a la`BookmarkStart` y`BookmarkEnd` propiedades del marcador. Aquí hay un código de muestra:
+R: Para obtener los párrafos que contienen el inicio y el final de un marcador en un documento de Word, puede acceder a la`BookmarkStart` y`BookmarkEnd` propiedades del marcador. Aquí hay un código de muestra:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;

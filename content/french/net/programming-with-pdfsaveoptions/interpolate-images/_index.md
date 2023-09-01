@@ -74,7 +74,7 @@ R : Pour activer l'interpolation d'image lors de la conversion en PDF avec Aspo
 
  Créez une instance du`Document` classe spécifiant le chemin d’accès au document Word.
 
- Créez une instance du`PdfSaveOptions`classe et définir le`InterpolateImages` propriété à`true` pour activer l’interpolation d’image.
+ Créez une instance du`PdfSaveOptions` classe et définir le`InterpolateImages` propriété à`true` pour activer l’interpolation d’image.
 
  Utilisez le`Save` méthode du`Document`classe pour enregistrer le document au format PDF en spécifiant les options d'enregistrement.
 

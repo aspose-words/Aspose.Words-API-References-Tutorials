@@ -65,7 +65,7 @@ Console.WriteLine("\nThis is the end of the document.");
 
 ## Slutsats
 
-det här exemplet har vi utforskat funktionen Flytta till dokument start/slut i Aspose.Words för .NET. Vi lärde oss hur man navigerar till början och slutet av ett dokument med klassen DocumentBuilder. Den här funktionen är användbar när du programmerar ordbehandling med Word-dokument och behöver manipulera eller infoga innehåll på specifika positioner i dokumentet.
+I det här exemplet har vi utforskat funktionen Flytta till dokument start/slut i Aspose.Words för .NET. Vi lärde oss hur man navigerar till början och slutet av ett dokument med klassen DocumentBuilder. Den här funktionen är användbar när du programmerar ordbehandling med Word-dokument och behöver manipulera eller infoga innehåll på specifika positioner i dokumentet.
 
 ### Vanliga frågor
 

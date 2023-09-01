@@ -74,7 +74,7 @@ Congratulazioni! Ora hai creato uno stile personalizzato per la tua tabella util
 ### Codice sorgente di esempio per Crea stile tabella utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

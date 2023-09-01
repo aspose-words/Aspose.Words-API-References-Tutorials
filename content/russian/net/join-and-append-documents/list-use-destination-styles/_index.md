@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/list-use-destination-styles/
 
 ## Шаг 1. Инициализируйте каталоги документов
 
- Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir`переменная пути, по которому расположены ваши документы.
+ Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir` переменная пути, по которому расположены ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -82,7 +82,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 
 ## Шаг 6: Сохраните окончательный документ
 
- Наконец, сохраните объединенный документ с включенной функцией «Использовать список стилей назначения», используя`Save` метод`Document` сорт.
+Наконец, сохраните объединенный документ с включенной функцией «Использовать список стилей назначения», используя`Save` метод`Document` сорт.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
@@ -94,12 +94,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//Настройте исходный документ так, чтобы он продолжался сразу после окончания целевого документа.
+	// Настройте исходный документ так, чтобы он продолжался сразу после окончания целевого документа.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Следите за созданными списками.
 	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -109,7 +109,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
 		{
 			int listId = para.ListFormat.List.ListId;
 			// Проверьте, содержит ли целевой документ список с этим идентификатором. Если да, то это может
-			//заставить два списка работать вместе. Вместо этого создайте копию списка в исходном документе.
+			// заставить два списка работать вместе. Вместо этого создайте копию списка в исходном документе.
 			if (dstDoc.Lists.GetListByListId(listId) != null)
 			{
 				Aspose.Words.Lists.List currentList;

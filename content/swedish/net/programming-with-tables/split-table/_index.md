@@ -71,7 +71,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för Split Table med Aspose.Words för .NET 
 
 ```csharp
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

@@ -150,7 +150,7 @@ In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie di
 
 #### F: Kann ich dieselbe Bedingung für mehrere Lesezeichen im selben Dokument verwenden?
 
- A: Ja, Sie können dieselbe Bedingung für mehrere Lesezeichen im selben Dokument verwenden. Wiederholen Sie einfach die Schritte 2 bis 5 für jedes Lesezeichen und passen Sie den Lesezeichennamen und optional den Wert des Lesezeichens an`showhide` je nach Bedarf variabel.
+A: Ja, Sie können dieselbe Bedingung für mehrere Lesezeichen im selben Dokument verwenden. Wiederholen Sie einfach die Schritte 2 bis 5 für jedes Lesezeichen und passen Sie den Lesezeichennamen und optional den Wert des Lesezeichens an`showhide` je nach Bedarf variabel.
 
 #### F: Wie kann ich weitere Bedingungen hinzufügen, um Lesezeicheninhalte anzuzeigen oder auszublenden?
 
@@ -162,7 +162,7 @@ builder. Write("\" = \"true\" ");
 
 #### F: Wie kann ich mit Aspose.Words für .NET ein Lesezeichen in einem Word-Dokument löschen?
 
-A: Um ein Lesezeichen in einem Word-Dokument mit Aspose.Words für .NET zu entfernen, können Sie das verwenden`Remove` Methode aus der`Bookmarks` Sammlung des Dokumentenbereichs. Hier ist ein Beispielcode zum Löschen eines bestimmten Lesezeichens:
+ A: Um ein Lesezeichen in einem Word-Dokument mit Aspose.Words für .NET zu entfernen, können Sie das verwenden`Remove` Methode aus der`Bookmarks` Sammlung des Dokumentenbereichs. Hier ist ein Beispielcode zum Löschen eines bestimmten Lesezeichens:
 
 ```csharp
 doc.Range.Bookmarks.Remove(bookmarkName);

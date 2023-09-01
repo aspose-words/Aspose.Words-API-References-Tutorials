@@ -88,7 +88,7 @@ Ecco il codice sorgente di esempio completo per dimostrare l'aggiunta di testo d
 
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
-		// Questo crea una copia del nodo corrente e lo importa (lo rende valido) nel contesto
+		//Questo crea una copia del nodo corrente e lo importa (lo rende valido) nel contesto
 		// del documento di destinazione. Importare significa regolare correttamente gli stili e gli identificatori degli elenchi.
 		Node newNode = importer.ImportNode(curNode, true);
 
@@ -109,7 +109,7 @@ R: Per utilizzare la funzione "Aggiungi testo con segnalibri" in Aspose.Words pe
 
 #### Q2: Come ottenere i paragrafi che contengono l'inizio e la fine di un segnalibro in un documento di Word?
 
- R: Per ottenere i paragrafi che contengono l'inizio e la fine di un segnalibro in un documento Word, puoi accedere a`BookmarkStart` E`BookmarkEnd` proprietà del segnalibro. Ecco un codice di esempio:
+R: Per ottenere i paragrafi che contengono l'inizio e la fine di un segnalibro in un documento Word, puoi accedere a`BookmarkStart` E`BookmarkEnd` proprietà del segnalibro. Ecco un codice di esempio:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;

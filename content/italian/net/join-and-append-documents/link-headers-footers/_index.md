@@ -19,7 +19,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 
 ## Passaggio 1: inizializzare le directory dei documenti
 
- Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir`variabile al percorso in cui si trovano i tuoi documenti.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: impostare il documento allegato in modo che venga visualizzato su una nuova pagina
 
- Per garantire che il contenuto del documento di origine venga visualizzato in una nuova pagina nel documento di destinazione, è necessario impostare il file`SectionStart` proprietà della prima sezione nel documento di origine a`SectionStart.NewPage`.
+Per garantire che il contenuto del documento di origine venga visualizzato in una nuova pagina nel documento di destinazione, è necessario impostare il file`SectionStart` proprietà della prima sezione nel documento di origine a`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -72,7 +72,7 @@ Ecco il codice sorgente completo per la funzionalità "Link Headers Footers" in 
 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

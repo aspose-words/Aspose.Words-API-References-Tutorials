@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ### Aspose.Words for .NET kullanılarak Kayan Tablo Konumu için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

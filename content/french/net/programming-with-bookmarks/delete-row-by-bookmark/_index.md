@@ -65,4 +65,4 @@ R : Si le signet spécifié n'existe pas dans le document, l'extrait de code re
 
 #### Q : Puis-je supprimer des lignes d’un tableau dans une section spécifique du document Word ?
 
-: Oui, vous pouvez supprimer des lignes d'un tableau dans une section spécifique d'un document Word. Vous pouvez modifier l'extrait de code fourni pour cibler une section spécifique en utilisant la plage ou le signet approprié dans cette section.
+R : Oui, vous pouvez supprimer des lignes d'un tableau dans une section spécifique d'un document Word. Vous pouvez modifier l'extrait de code fourni pour cibler une section spécifique en utilisant la plage ou le signet approprié dans cette section.

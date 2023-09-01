@@ -28,7 +28,7 @@ To get started with Aspose.Words for Java, you need to set up your development e
 
 ### Installing Java Development Kit (JDK)
 
-If you haven't already installed JDK, head over to the official Oracle website and download the latest version of JDK suitable for your operating system. Install it by following the installation wizard instructions.
+If you haven't already installed JDK, head over to the Oracle website and download the latest version of JDK suitable for your operating system. Install it by following the installation wizard instructions.
 
 ### Adding Aspose.Words for Java to Your Project
 
@@ -185,24 +185,24 @@ Automating the document printing process can be highly useful in batch processin
 
 Printing documents programmatically with Aspose.Words for Java opens up a world of possibilities for developers working on word processing and document processing projects. The step-by-step guide provided in this article will help you get started and unleash the full potential of document printing using Aspose.Words for Java.
 
-## FAQs
+## FAQ's
 
 ### Can Aspose.Words for Java handle various document formats?
 
-   Yes, Aspose.Words for Java supports a wide range of document formats, including DOC, DOCX, RTF, and more.
+Yes, Aspose.Words for Java supports a wide range of document formats, including DOC, DOCX, RTF, and more.
 
 ### Is Aspose.Words for Java compatible with all printers?
 
-   Aspose.Words for Java can work with most printers that support document printing through Java applications.
+Aspose.Words for Java can work with most printers that support document printing through Java applications.
 
 ### Can I print documents from web applications?
 
-   Yes, you can use Aspose.Words for Java to print documents programmatically from web applications.
+Yes, you can use Aspose.Words for Java to print documents programmatically from web applications.
 
 ### How can I print specific pages of a large document?
 
-   Aspose.Words for Java allows you to specify the pages or page ranges you want to print.
+Aspose.Words for Java allows you to specify the pages or page ranges you want to print.
 
 ### Does Aspose.Words for Java support duplex printing?
 
-   Yes, Aspose.Words for Java provides options for duplex printing, enabling you to print on both sides of the paper.
+Yes, Aspose.Words for Java provides options for duplex printing, enabling you to print on both sides of the paper.

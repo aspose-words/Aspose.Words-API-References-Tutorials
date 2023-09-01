@@ -65,7 +65,7 @@ Bu, Aspose.Words for .NET kullanarak alan grafiği ekleme işlemini tamamlar.
 ### Aspose.Words for .NET kullanarak Alan Grafiği Ekleme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

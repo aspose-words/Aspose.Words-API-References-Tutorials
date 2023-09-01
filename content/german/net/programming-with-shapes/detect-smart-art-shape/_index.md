@@ -47,7 +47,7 @@ Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ### Beispielquellcode für „Smart Art Shape erkennen“ mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Smart Art.docx");

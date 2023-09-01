@@ -14,7 +14,7 @@ In diesem Tutorial wird erklärt, wie Sie zwei Dokumente kontinuierlich mit Aspo
 
 Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
+-  Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
 - Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
 ## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Kontinuierlichen Abschnittsstart einrichten
 
-Damit das Quelldokument direkt nach dem Inhalt des Zieldokuments angezeigt wird, legen Sie fest`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.Continuous`.
+ Damit das Quelldokument direkt nach dem Inhalt des Zieldokuments angezeigt wird, legen Sie fest`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Schritt 4: Hängen Sie das Quelldokument an
 
- Hängen Sie das Quelldokument mit an das Zieldokument an`AppendDocument` Methode der`Document` Klasse. Stellen Sie den Importformatmodus auf ein`ImportFormatMode.KeepSourceFormatting` um die ursprünglichen Stile aus dem Quelldokument beizubehalten.
+Hängen Sie das Quelldokument mit an das Zieldokument an`AppendDocument` Methode der`Document` Klasse. Stellen Sie den Importformatmodus auf ein`ImportFormatMode.KeepSourceFormatting` um die ursprünglichen Stile aus dem Quelldokument beizubehalten.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -58,7 +58,7 @@ Damit ist die Implementierung der kontinuierlichen Verbindung zweier Dokumente m
 ### Beispielquellcode für Join Continuous mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

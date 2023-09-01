@@ -105,7 +105,7 @@ Aşağıdaki adımları izleyerek liste girintisi için düzey başına bir boş
 
  Kullan`DocumentBuilder`Belgeye içerik eklemek ve birden çok girinti düzeyine sahip bir liste oluşturmak için sınıfı kullanın.
 
- İçeriği ekledikten ve liste girintisini yapılandırdıktan sonra,`TxtSaveOptions`sınıfı seçin ve ayarlayın`ListIndentation.Count` girinti düzeyi sayısına ve`ListIndentation.Character` uzaydaki mülk (`' '`) kullanmak.
+ İçeriği ekledikten ve liste girintisini yapılandırdıktan sonra,`TxtSaveOptions` sınıfı seçin ve ayarlayın`ListIndentation.Count` girinti düzeyi sayısına ve`ListIndentation.Character` uzaydaki mülk (`' '`) kullanmak.
 
  Belgeyi belirtilen seçeneklerle kaydedin.`Save` yöntemi`Document` sınıf.
 

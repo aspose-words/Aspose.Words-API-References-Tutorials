@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ### Código fuente de ejemplo para el estado actual de la casilla de verificación usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

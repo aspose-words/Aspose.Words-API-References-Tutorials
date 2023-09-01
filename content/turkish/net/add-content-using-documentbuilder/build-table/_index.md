@@ -118,8 +118,8 @@ C: Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Microsoft Word
 
 C: Aspose.Words for .NET kullanarak bir Word belgesinde tablo oluşturmak için şu adımları takip edebilirsiniz:
 1.  Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` nesne.
-2.  Kullan`StartTable` yöntemi`DocumentBuilder` masayı oluşturmaya başlamak için sınıf.
-3. Hücreleri tabloya ekleyin ve içerik ekleyin.`InsertCell` Ve`Write` yöntemleri`DocumentBuilder` sınıf.
+2.  Kullan`StartTable` yöntemi`DocumentBuilder`masayı oluşturmaya başlamak için sınıf.
+3.  Hücreleri tabloya ekleyin ve içerik ekleyin.`InsertCell` Ve`Write` yöntemleri`DocumentBuilder` sınıf.
 4.  Satırı kullanarak sonlandırın`EndRow` yöntemi`DocumentBuilder` sınıf.
 5.  Özelliklerini ayarlayarak satır biçimlendirmesini özelleştirin.`RowFormat` Ve`CellFormat` nesneler.
 6.  kullanarak tabloyu sonlandırın.`EndTable` yöntemi`DocumentBuilder` sınıf.

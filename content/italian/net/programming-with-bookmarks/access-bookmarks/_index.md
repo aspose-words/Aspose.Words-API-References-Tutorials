@@ -65,7 +65,7 @@ In questo articolo, abbiamo esplorato il codice sorgente C# per capire come util
 
 #### D: Come posso caricare un documento Word utilizzando Aspose.Words per .NET?
 
- R: Per caricare un documento Word utilizzando Aspose.Words per .NET, è possibile creare un'istanza di a`Document` oggetto specificando il percorso del file del documento. Ecco un codice di esempio:
+ R: Per caricare un documento Word utilizzando Aspose.Words per .NET, è possibile creare un'istanza di a`Document`oggetto specificando il percorso del file del documento. Ecco un codice di esempio:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

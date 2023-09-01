@@ -88,7 +88,7 @@ Hier ist der vollständige Beispielquellcode, um das Hinzufügen von Text aus ei
 
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
-		// Dadurch wird eine Kopie des aktuellen Knotens erstellt und in den Kontext importiert (gültig gemacht).
+		//Dadurch wird eine Kopie des aktuellen Knotens erstellt und in den Kontext importiert (gültig gemacht).
 		// des Zieldokuments. Importieren bedeutet, Stile und Listenkennungen korrekt anzupassen.
 		Node newNode = importer.ImportNode(curNode, true);
 
@@ -109,7 +109,7 @@ A: Um die Funktion „Text mit Lesezeichen hinzufügen“ in Aspose.Words für .
 
 #### F2: Wie erhalte ich die Absätze, die den Anfang und das Ende eines Lesezeichens in einem Word-Dokument enthalten?
 
- A: Um die Absätze zu erhalten, die den Anfang und das Ende eines Lesezeichens in einem Word-Dokument enthalten, können Sie auf das zugreifen`BookmarkStart` Und`BookmarkEnd` Eigenschaften des Lesezeichens. Hier ist ein Beispielcode:
+A: Um die Absätze zu erhalten, die den Anfang und das Ende eines Lesezeichens in einem Word-Dokument enthalten, können Sie auf das zugreifen`BookmarkStart` Und`BookmarkEnd` Eigenschaften des Lesezeichens. Hier ist ein Beispielcode:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;

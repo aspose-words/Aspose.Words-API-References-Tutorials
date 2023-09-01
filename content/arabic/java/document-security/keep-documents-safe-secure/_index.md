@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 يمكن أن تساعد العلامة المائية في حماية سرية مستندك والإشارة إلى حالته. يوفر Aspose.Words for Java ميزات سهلة الاستخدام لوضع العلامات المائية:
 
 ```java
-// أضف علامة مائية مرئية
+//أضف علامة مائية مرئية
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

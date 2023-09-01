@@ -19,7 +19,7 @@ url: /ar/net/join-and-append-documents/unlink-headers-footers/
 
 ## الخطوة 1: تهيئة أدلة المستندات
 
- أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir`متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## الخطوة 5: احفظ الوثيقة النهائية
 
-أخيرًا، احفظ المستند المدمج مع تمكين ميزة Unlink Headers Footers باستخدام`Save` طريقة`Document` فصل.
+ أخيرًا، احفظ المستند المدمج مع تمكين ميزة Unlink Headers Footers باستخدام`Save` طريقة`Document` فصل.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 إليك الكود المصدري الكامل لميزة "Unlink Headers Footers" في لغة C# باستخدام Aspose.Words for .NET:
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

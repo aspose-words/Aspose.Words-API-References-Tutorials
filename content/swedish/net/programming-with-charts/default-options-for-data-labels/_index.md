@@ -77,7 +77,7 @@ Detta slutför implementeringen av att ställa in standardalternativ för dataet
 ### Exempel på källkod för standardalternativ för dataetiketter med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

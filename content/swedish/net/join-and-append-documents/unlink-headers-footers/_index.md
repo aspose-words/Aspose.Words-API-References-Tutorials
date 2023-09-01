@@ -19,7 +19,7 @@ Innan du börjar, se till att du har följande:
 
 ## Steg 1: Initiera dokumentkatalogerna
 
- Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir`variabel till sökvägen där dina dokument finns.
+ Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Steg 5: Spara det slutliga dokumentet
 
-Slutligen sparar du det sammanslagna dokumentet med funktionen Unlink Headers Footers aktiverad med hjälp av`Save` metod för`Document` klass.
+ Slutligen sparar du det sammanslagna dokumentet med funktionen Unlink Headers Footers aktiverad med hjälp av`Save` metod för`Document` klass.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Här är den fullständiga källkoden för funktionen "Unlink Headers Footers" i C# med Aspose.Words för .NET:
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

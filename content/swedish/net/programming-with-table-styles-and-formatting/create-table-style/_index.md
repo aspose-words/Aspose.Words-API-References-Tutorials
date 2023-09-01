@@ -74,7 +74,7 @@ Grattis! Du har nu skapat en anpassad stil för din tabell med Aspose.Words för
 ### Exempel på källkod för Skapa tabellstil med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

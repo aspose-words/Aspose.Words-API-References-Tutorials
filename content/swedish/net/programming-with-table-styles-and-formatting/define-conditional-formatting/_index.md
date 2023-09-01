@@ -70,7 +70,7 @@ Grattis! Du har nu definierat villkorlig formatering för din tabell med Aspose.
 ### Exempel på källkod för Definiera villkorlig formatering med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

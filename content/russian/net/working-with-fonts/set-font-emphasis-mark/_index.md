@@ -45,7 +45,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ### Пример исходного кода для установки знака подчеркивания шрифта с использованием Aspose.Words для .NET 
 
 ```csharp
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();

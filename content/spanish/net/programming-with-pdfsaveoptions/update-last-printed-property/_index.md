@@ -74,7 +74,7 @@ R: Para actualizar la propiedad "Última impresión" en un documento PDF con Asp
 
  Crear una instancia del`Document` clase que especifica la ruta al documento de Word.
 
- Crear una instancia del`PdfSaveOptions`clase y establecer el`UpdateLastPrintedProperty` propiedad a`true` para permitir la actualización de la propiedad "Última impresión".
+ Crear una instancia del`PdfSaveOptions` clase y establecer el`UpdateLastPrintedProperty` propiedad a`true` para permitir la actualización de la propiedad "Última impresión".
 
  Utilizar el`Save` método de la`Document`clase para guardar el documento en formato PDF especificando opciones de guardado.
 

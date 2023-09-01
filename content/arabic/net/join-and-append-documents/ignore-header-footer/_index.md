@@ -14,7 +14,7 @@ url: /ar/net/join-and-append-documents/ignore-header-footer/
 
 تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
+-  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
 - مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
 
 ## الخطوة 2: افتح المستندات المصدر والوجهة
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: إعداد خيارات تنسيق الاستيراد
 
- إنشاء مثيل لـ`ImportFormatOptions`فئة وتعيين`IgnoreHeaderFooter` الملكية ل`false`. وهذا يضمن تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
+ إنشاء مثيل لـ`ImportFormatOptions` فئة وتعيين`IgnoreHeaderFooter` الملكية ل`false`. وهذا يضمن تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## الخطوة 4: إلحاق المستند المصدر بالمستند الوجهة
 
- استخدم ال`AppendDocument`طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كمعلمة ثانية وخيارات تنسيق الاستيراد كمعلمة ثالثة.
+ استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كمعلمة ثانية وخيارات تنسيق الاستيراد كمعلمة ثالثة.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ### مثال على التعليمات البرمجية المصدر لتجاهل تذييل الرأس باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

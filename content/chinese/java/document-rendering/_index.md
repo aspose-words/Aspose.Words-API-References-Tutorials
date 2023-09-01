@@ -21,3 +21,13 @@ Aspose.Words for Java 提供了丰富的文档渲染教程，使创建具有视�
 ## 文档渲染教程
 ### [主文档渲染](./master-document-rendering/)
 使用 Aspose.Words for Java 学习文档渲染！分步教程，包含源代码。通过无缝文档处理增强应用程序。
+### [将文档页面渲染为图像](./rendering-document-pages-images/)
+了解如何使用 Aspose.Words for Java 将文档页面呈现为图像。包含高效文档转换代码示例的分步指南。
+### [文档缩略图生成](./document-thumbnail-generation/)
+了解如何使用 Aspose.Words for Java 生成文档缩略图。通过视觉预览增强用户体验。
+### [渲染文档中的形状和图形](./rendering-shapes-graphics/)
+了解如何使用 Aspose.Words for Java 通过形状和图形增强文档。轻松创建视觉上令人惊叹的内容。
+### [文件打印和渲染](./document-printing-rendering/)
+使用 Aspose.Words for Java 探索高效的文档打印和渲染。通过源代码示例逐步学习。
+### [将文档渲染为 HTML](./rendering-documents-html/)
+了解如何使用 Aspose.Words for Java 轻松将文档呈现为 HTML。高效文档转换的分步指南。

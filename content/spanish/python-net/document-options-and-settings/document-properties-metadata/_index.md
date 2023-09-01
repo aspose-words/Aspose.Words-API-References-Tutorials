@@ -132,7 +132,7 @@ Sí, puede automatizar las actualizaciones de metadatos utilizando Aspose.Words.
 
 ### ¿Cómo puedo proteger la información confidencial en metadatos?
 
-Para proteger la información confidencial en los metadatos, puede eliminar propiedades específicas usando el`remove` método.
+ Para proteger la información confidencial en los metadatos, puede eliminar propiedades específicas usando el`remove` método.
 
 ### ¿Cuáles son algunas de las mejores prácticas para administrar las propiedades de los documentos?
 

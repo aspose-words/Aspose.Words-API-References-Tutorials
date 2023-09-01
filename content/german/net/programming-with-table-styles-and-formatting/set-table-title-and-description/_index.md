@@ -59,7 +59,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 ### Beispielquellcode für „Tabellentitel und -beschreibung festlegen“ mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

@@ -19,7 +19,7 @@ Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 ## Adım 1: Belge Dizinlerini Başlatın
 
- Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir`belgelerinizin bulunduğu yola göre değişkendir.
+ Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir` belgelerinizin bulunduğu yola göre değişkendir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## 4. Adım: Akıllı Stil Davranışı Seçeneklerini Ayarlayın
 
- Ekleme işlemi sırasında akıllı stil davranışını etkinleştirmek için bir örnek oluşturmanız gerekir:`ImportFormatOptions` ve ayarlayın`SmartStyleBehavior` mülkiyet`true`.
+Ekleme işlemi sırasında akıllı stil davranışını etkinleştirmek için bir örnek oluşturmanız gerekir:`ImportFormatOptions` ve ayarlayın`SmartStyleBehavior` mülkiyet`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
@@ -73,7 +73,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 Aspose.Words for .NET kullanan C#'taki "Akıllı Stil Davranışı" özelliğinin tam kaynak kodu:
  
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

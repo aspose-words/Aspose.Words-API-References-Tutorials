@@ -14,7 +14,7 @@ Questo tutorial spiega come utilizzare Aspose.Words per .NET per aggiungere il c
 
 Assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
+-  Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
 - Un percorso di directory di documenti in cui si trovano i documenti di origine e di destinazione.
 
 ## Passaggio 2: apri i documenti di origine e di destinazione
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Passaggio 4: aggiungi il documento di origine al documento di destinazione
 
- Usa il`AppendDocument`metodo del documento di destinazione per aggiungere il documento di origine. Passaggio`ImportFormatMode.UseDestinationStyles` come secondo parametro per utilizzare gli stili e la formattazione del documento di destinazione.
+ Usa il`AppendDocument` metodo del documento di destinazione per aggiungere il documento di origine. Passaggio`ImportFormatMode.UseDestinationStyles` come secondo parametro per utilizzare gli stili e la formattazione del documento di destinazione.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,7 +58,7 @@ Ciò completa l'implementazione dell'aggiunta di un documento con le opzioni del
 ### Codice sorgente di esempio per Aggiungi con opzioni di formato di importazione utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");

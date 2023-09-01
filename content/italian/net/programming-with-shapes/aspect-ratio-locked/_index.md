@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ### Codice sorgente di esempio per proporzioni bloccate utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -50,7 +50,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 ## الخطوة 5: استيراد ونسخ نص الإشارة المرجعية
 
- نحن نستخدم`NodeImporter` كائن لاستيراد ونسخ نص الإشارة المرجعية من المستند المصدر إلى المستند الوجهة:
+ نحن نستخدم`NodeImporter`كائن لاستيراد ونسخ نص الإشارة المرجعية من المستند المصدر إلى المستند الوجهة:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -76,7 +76,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 	// سنضيف إلى هذه الوثيقة.
 	Document dstDoc = new Document();
 
-	//لنفترض أنه سيتم إلحاقنا بنهاية نص القسم الأخير.
+	// لنفترض أنه سيتم إلحاقنا بنهاية نص القسم الأخير.
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
 	// إذا قمت بالاستيراد عدة مرات دون سياق واحد، فسيؤدي ذلك إلى إنشاء العديد من الأنماط.
@@ -100,7 +100,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 #### س: كيف يمكنني تحميل مستند مصدر إلى Aspose.Words لـ .NET؟
 
- ج: لتحميل مستند مصدر في Aspose.Words لـ .NET، يمكنك استخدام`Document`فئة عن طريق تحديد مسار ملف الوثيقة. هنا نموذج التعليمات البرمجية:
+ ج: لتحميل مستند مصدر في Aspose.Words لـ .NET، يمكنك استخدام`Document` فئة عن طريق تحديد مسار ملف الوثيقة. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 Document srcDoc = new Document("path/to/your/document.docx");
@@ -116,7 +116,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### س: كيفية تحديد موقع النسخة النصية للإشارة المرجعية في المستند الوجهة باستخدام Aspose.Words for .NET؟
 
- ج: لتحديد المكان الذي تريد إضافة نص الإشارة المرجعية المنسوخ فيه في المستند الوجهة باستخدام Aspose.Words for .NET، يمكنك الانتقال إلى نص القسم الأخير من المستند الوجهة. يمكنك استخدام ال`LastSection` خاصية للوصول إلى القسم الأخير و`Body` الخاصية للوصول إلى نص هذا القسم. هنا نموذج التعليمات البرمجية:
+ج: لتحديد المكان الذي تريد إضافة نص الإشارة المرجعية المنسوخ فيه في المستند الوجهة باستخدام Aspose.Words for .NET، يمكنك الانتقال إلى نص القسم الأخير من المستند الوجهة. يمكنك استخدام ال`LastSection` خاصية للوصول إلى القسم الأخير و`Body` الخاصية للوصول إلى نص هذا القسم. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
@@ -124,7 +124,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 #### س: كيفية استيراد ونسخ نص الإشارة المرجعية من المستند المصدر إلى المستند الوجهة باستخدام Aspose.Words for .NET؟
 
-ج: لاستيراد نص الإشارة المرجعية ونسخه من مستند مصدر إلى مستند وجهة باستخدام Aspose.Words for .NET، يمكنك استخدام`NodeImporter` فئة تحدد المستند المصدر والمستند الوجهة ووضع التنسيق المطلوب الاحتفاظ به. ثم يمكنك استخدام`AppendBookmarkedText` طريقة لإضافة نص الإشارة المرجعية في المستند الوجهة. هنا نموذج التعليمات البرمجية:
+ ج: لاستيراد نص الإشارة المرجعية ونسخه من مستند مصدر إلى مستند وجهة باستخدام Aspose.Words for .NET، يمكنك استخدام`NodeImporter` فئة تحدد المستند المصدر والمستند الوجهة ووضع التنسيق المطلوب الاحتفاظ به. ثم يمكنك استخدام`AppendBookmarkedText` طريقة لإضافة نص الإشارة المرجعية في المستند الوجهة. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -133,7 +133,7 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 
 #### س: كيف يمكن حفظ مستند الوجهة بعد نسخ نص الإشارة المرجعية باستخدام Aspose.Words لـ .NET؟
 
- ج: لحفظ مستند وجهة بعد نسخ النص من إشارة مرجعية باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Save` طريقة`Document` كائن يحدد مسار الملف الوجهة. هنا نموذج التعليمات البرمجية:
+ج: لحفظ مستند وجهة بعد نسخ النص من إشارة مرجعية باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Save` طريقة`Document` كائن يحدد مسار الملف الوجهة. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 dstDoc.Save("path/to/your/destination-document.docx");

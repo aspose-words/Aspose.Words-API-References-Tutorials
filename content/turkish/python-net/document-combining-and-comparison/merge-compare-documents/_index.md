@@ -111,7 +111,7 @@ Kesinlikle! Aspose.Words, otomatik belge oluşturma ve işleme olanağı sağlar
 
 ### Bu kütüphaneyi kullanarak ikiden fazla belgeyi birleştirebilir miyim?
 
- Evet, istediğiniz sayıda belgeyi kullanarak birleştirebilirsiniz.`append_document` öğreticide gösterildiği gibi yöntem.
+Evet, istediğiniz sayıda belgeyi kullanarak birleştirebilirsiniz.`append_document` öğreticide gösterildiği gibi yöntem.
 
 ### Kütüphaneye ve kaynaklara nereden ulaşabilirim?
 

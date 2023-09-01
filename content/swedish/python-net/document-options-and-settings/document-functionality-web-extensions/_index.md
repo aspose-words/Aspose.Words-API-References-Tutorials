@@ -18,7 +18,7 @@ Innan vi dyker in i de tekniska detaljerna, se till att du har följande föruts
 
 - Grundläggande förståelse för Python-programmering.
 -  Aspose.Words för Python API-referens (tillgänglig på[här](https://reference.aspose.com/words/python-net/).
--  Tillgång till Aspose.Words för Python-biblioteket (ladda ner från[här](https://releases.aspose.com/words/python/).
+- Tillgång till Aspose.Words för Python-biblioteket (ladda ner från[här](https://releases.aspose.com/words/python/).
 
 ## Ställa in Aspose.Words för Python
 

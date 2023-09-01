@@ -70,7 +70,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Укажите, что мы хотим, чтобы верхние и нижние колонтитулы были разными для первой, четной и нечетной страниц.
+// Укажите, что мы хотим, чтобы верхние и нижние колонтитулы были разными для первой, четной и нечетной страниц.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 

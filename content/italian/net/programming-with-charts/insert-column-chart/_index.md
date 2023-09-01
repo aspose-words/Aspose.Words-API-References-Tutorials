@@ -57,7 +57,7 @@ Ciò completa l'implementazione dell'inserimento di un istogramma utilizzando As
 ### Codice sorgente di esempio per Inserisci istogramma utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

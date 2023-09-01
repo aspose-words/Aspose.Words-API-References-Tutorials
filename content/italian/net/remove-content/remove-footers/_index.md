@@ -76,7 +76,7 @@ Non dimenticare di specificare il nome e il percorso del file modificato in "Nom
 ### Codice sorgente di esempio per Rimuovere piè di pagina utilizzando Aspose.Words per .NET 
 ```csharp
 
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");

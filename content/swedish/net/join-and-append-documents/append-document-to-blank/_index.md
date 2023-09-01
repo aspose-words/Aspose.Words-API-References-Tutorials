@@ -14,7 +14,7 @@ Denna handledning förklarar hur man använder Aspose.Words för .NET för att l
 
 Se till att du har följande förutsättningar:
 
-- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
+-  Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
 - En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
 ## Steg 2: Skapa ett nytt måldokument
@@ -58,12 +58,12 @@ Detta slutför implementeringen av att lägga till ett dokument till ett tomt m�
 ### Exempel på källkod för Lägg till dokument till tomt med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	//Måldokumentet är inte tomt, vilket ofta gör att en tom sida visas före det bifogade dokumentet.
+	// Måldokumentet är inte tomt, vilket ofta gör att en tom sida visas före det bifogade dokumentet.
 	// Detta beror på att basdokumentet har en tom sektion och att det nya dokumentet startas på nästa sida.
 	// Ta bort allt innehåll från måldokumentet innan du lägger till.
 	dstDoc.RemoveAllChildren();

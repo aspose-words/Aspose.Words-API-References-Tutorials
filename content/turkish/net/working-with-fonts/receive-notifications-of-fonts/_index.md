@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ### Aspose.Words for .NET kullanarak Yazı Tiplerinin Bildirimlerini Alma için örnek kaynak kodu 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

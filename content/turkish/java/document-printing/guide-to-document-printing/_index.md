@@ -28,7 +28,7 @@ Aspose.Words for Java'yı kullanmaya başlamak için geliştirme ortamınızı a
 
 ### Java Development Kit'in (JDK) Kurulumu
 
-Henüz JDK'yı yüklemediyseniz resmi Oracle web sitesine gidin ve JDK'nın işletim sisteminize uygun en son sürümünü indirin. Kurulum sihirbazının talimatlarını takip ederek kurulumu yapın.
+Henüz JDK'yı yüklemediyseniz Oracle web sitesine gidin ve JDK'nın işletim sisteminize uygun en son sürümünü indirin. Kurulum sihirbazının talimatlarını takip ederek kurulumu yapın.
 
 ### Aspose.Words for Java'yı Projenize Ekleme
 
@@ -86,7 +86,7 @@ Son olarak belgeyi yazdırmaya devam edelim.
 
 ### Belgenin Yazıcıya Gönderilmesi
 
-Belgeyi yazdırmak için aşağıdakileri kullanmanız gerekir:`PrintDocument` sınıf:
+ Belgeyi yazdırmak için aşağıdakileri kullanmanız gerekir:`PrintDocument` sınıf:
 
 ```java
 PrintDocument printDocument = new PrintDocument(doc, printerSettings);
@@ -145,7 +145,7 @@ Yazdırma işlemi sırasında herhangi bir istisna olması durumunda, bunları d
 
 ```java
 try {
-    //Kodu buraya yazdırıyorum
+    // Kodu buraya yazdırıyorum
 } catch (PrinterException ex) {
     System.err.println("Printing error: " + ex.getMessage());
 }
@@ -153,7 +153,7 @@ try {
 
 ### Yaygın Sorunları Giderme
 
- Yazdırma sırasında herhangi bir sorunla karşılaşırsanız, bkz.[Aspose.Words for Java API Referansı](https://reference.aspose.com/words/java/) sorun giderme adımları ve topluluk desteği için.
+Yazdırma sırasında herhangi bir sorunla karşılaşırsanız, bkz.[Aspose.Words for Java API Referansı](https://reference.aspose.com/words/java/) sorun giderme adımları ve topluluk desteği için.
 
 ## Belge Yazdırmaya İlişkin En İyi Uygulamalar
 
@@ -185,24 +185,24 @@ Belge yazdırma işleminin otomatikleştirilmesi, toplu işlemlerde ve tekrarlan
 
 Aspose.Words for Java ile belgeleri programlı olarak yazdırmak, kelime işlemci ve belge işleme projelerinde çalışan geliştiriciler için bir fırsatlar dünyasının kapılarını açar. Bu makalede sunulan adım adım kılavuz, başlamanıza ve Aspose.Words for Java kullanarak belge yazdırmanın tüm potansiyelini açığa çıkarmanıza yardımcı olacaktır.
 
-## SSS
+## SSS'ler
 
 ### Aspose.Words for Java çeşitli belge formatlarını işleyebilir mi?
 
-   Evet, Aspose.Words for Java, DOC, DOCX, RTF ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
+Evet, Aspose.Words for Java, DOC, DOCX, RTF ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
 
 ### Aspose.Words for Java tüm yazıcılarla uyumlu mu?
 
-   Aspose.Words for Java, Java uygulamaları aracılığıyla belge yazdırmayı destekleyen çoğu yazıcıyla çalışabilir.
+Aspose.Words for Java, Java uygulamaları aracılığıyla belge yazdırmayı destekleyen çoğu yazıcıyla çalışabilir.
 
 ### Web uygulamalarından belge yazdırabilir miyim?
 
-   Evet, belgeleri web uygulamalarından programlı olarak yazdırmak için Aspose.Words for Java'yı kullanabilirsiniz.
+Evet, belgeleri web uygulamalarından programlı olarak yazdırmak için Aspose.Words for Java'yı kullanabilirsiniz.
 
 ### Büyük bir belgenin belirli sayfalarını nasıl yazdırabilirim?
 
-   Aspose.Words for Java, yazdırmak istediğiniz sayfaları veya sayfa aralıklarını belirtmenize olanak tanır.
+Aspose.Words for Java, yazdırmak istediğiniz sayfaları veya sayfa aralıklarını belirtmenize olanak tanır.
 
 ### Aspose.Words for Java çift taraflı yazdırmayı destekliyor mu?
 
-   Evet, Aspose.Words for Java, çift taraflı yazdırma seçenekleri sunarak kağıdın her iki yüzüne de yazdırmanıza olanak tanır.
+Evet, Aspose.Words for Java, çift taraflı yazdırma seçenekleri sunarak kağıdın her iki yüzüne de yazdırmanıza olanak tanır.

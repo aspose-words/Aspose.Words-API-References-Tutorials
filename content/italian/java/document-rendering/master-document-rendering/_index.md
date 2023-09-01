@@ -216,21 +216,21 @@ Padroneggiare il rendering dei documenti è essenziale per creare applicazioni r
 ## Domande frequenti
 
 ### Qual è la differenza tra il rendering e l'elaborazione dei documenti?
-   
-   Il rendering dei documenti implica la conversione dei documenti elettronici in una rappresentazione visiva che gli utenti possono visualizzare, modificare o stampare, mentre l'elaborazione dei documenti comprende attività come la fusione, la conversione e la protezione della posta.
+
+Il rendering dei documenti implica la conversione dei documenti elettronici in una rappresentazione visiva che gli utenti possono visualizzare, modificare o stampare, mentre l'elaborazione dei documenti comprende attività come la fusione, la conversione e la protezione della posta.
 
 ### Aspose.Words è compatibile con tutte le versioni Java?
-   
-   Aspose.Words per Java supporta le versioni Java 1.6 e successive.
+
+Aspose.Words per Java supporta le versioni Java 1.6 e successive.
 
 ### Posso eseguire il rendering solo di pagine specifiche di un documento di grandi dimensioni?
-   
-   Sì, puoi utilizzare Aspose.Words per eseguire il rendering di pagine o intervalli di pagine specifici in modo efficiente.
+
+Sì, puoi utilizzare Aspose.Words per eseguire il rendering di pagine o intervalli di pagine specifici in modo efficiente.
 
 ### Come posso proteggere un documento renderizzato con una password?
-   
-   Aspose.Words ti consente di applicare la protezione tramite password ai documenti renderizzati per proteggerne il contenuto.
+
+Aspose.Words ti consente di applicare la protezione tramite password ai documenti renderizzati per proteggerne il contenuto.
 
 ### Aspose.Words può eseguire il rendering di documenti in più lingue?
-   
-   Sì, Aspose.Words supporta il rendering di documenti in varie lingue e gestisce senza problemi il testo con codifiche di caratteri diverse.
+
+Sì, Aspose.Words supporta il rendering di documenti in varie lingue e gestisce senza problemi il testo con codifiche di caratteri diverse.

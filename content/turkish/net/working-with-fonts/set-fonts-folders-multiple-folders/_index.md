@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ### Aspose.Words for .NET kullanarak Yazı Tipi Klasörlerini Birden Fazla Klasöre Ayarlama için örnek kaynak kodu 
 
 ```csharp
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

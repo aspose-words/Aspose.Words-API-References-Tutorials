@@ -13,7 +13,7 @@ Microsoft Word is a powerful word processing tool that allows users to create an
 
 ## Step 1: Set Up the Development Environment
 
-Before getting started, make sure you have a Java development environment set up on your machine. Download and install the latest version of Java Development Kit (JDK) from the official Oracle website.
+Before getting started, make sure you have a Java development environment set up on your machine. Download and install the latest version of Java Development Kit (JDK) from the Oracle website.
 
 ## Step 2: Create a New Java Project
 

@@ -76,7 +76,7 @@ Değiştirilen dosyanın adını ve konumunu "Name_of_modified_document.docx" do
 ### Aspose.Words for .NET kullanarak Altbilgileri Kaldırmak için örnek kaynak kodu 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");

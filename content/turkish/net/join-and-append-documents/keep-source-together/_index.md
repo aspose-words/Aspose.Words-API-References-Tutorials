@@ -19,7 +19,7 @@ Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 ## Adım 1: Belge Dizinlerini Başlatın
 
- Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir`belgelerinizin bulunduğu yola göre değişkendir.
+ Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir` belgelerinizin bulunduğu yola göre değişkendir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Adım 6: Son Belgeyi Kaydedin
 
-Son olarak, birleştirilmiş belgeyi "Kaynağı Bir Arada Tut" özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
+ Son olarak, birleştirilmiş belgeyi "Kaynağı Bir Arada Tut" özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
@@ -75,7 +75,7 @@ Aspose.Words for .NET kullanan C#'taki "Kaynağı Bir Arada Tut" özelliğinin t
 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

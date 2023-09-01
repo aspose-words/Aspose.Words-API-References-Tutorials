@@ -44,7 +44,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 ### Beispielquellcode zum Ändern der Zellformatierung mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

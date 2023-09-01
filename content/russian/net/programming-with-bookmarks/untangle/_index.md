@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Шаг 2. Получите родительские строки из закладок
 
- Мы используем`GetAncestor`методы для получения родительских строк начального и конечного узлов закладки:
+ Мы используем`GetAncestor` методы для получения родительских строк начального и конечного узлов закладки:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
@@ -56,7 +56,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		// Если обе строки найдены в порядке, а начало и конец закладки содержатся в соседних строках,
+		//Если обе строки найдены в порядке, а начало и конец закладки содержатся в соседних строках,
 		// переместите конечный узел закладки в конец последнего абзаца в последней ячейке верхней строки.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

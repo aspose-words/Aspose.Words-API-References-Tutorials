@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-bookmarks/create-bookmark/
 ---
 
-den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder funktionen Skapa bokmärke i Aspose.Words för .NET-biblioteket. Den här funktionen låter dig skapa bokmärken i ett dokument och ange förhandsgranskningsnivåer för bokmärken i en PDF-fil.
+I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder funktionen Skapa bokmärke i Aspose.Words för .NET-biblioteket. Den här funktionen låter dig skapa bokmärken i ett dokument och ange förhandsgranskningsnivåer för bokmärken i en PDF-fil.
 
 ## Förutsättningar
 
@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Steg 3: Skapa kapslade bokmärken
 
- Vi kan också skapa kapslade bokmärken inuti ett huvudbokmärke. Vi använder samma`StartBookmark` och`EndBookmark` metoder för att skapa och avsluta kapslade bokmärken:
+Vi kan också skapa kapslade bokmärken inuti ett huvudbokmärke. Vi använder samma`StartBookmark` och`EndBookmark` metoder för att skapa och avsluta kapslade bokmärken:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -102,7 +102,7 @@ S: För att använda funktionen "Skapa bokmärken" i Aspose.Words för .NET mås
 
 #### F: Hur skapar man ett dokument i Aspose.Words för .NET?
 
- S: För att skapa ett dokument i Aspose.Words för .NET kan du använda`Document`klass. Här är en exempelkod:
+ S: För att skapa ett dokument i Aspose.Words för .NET kan du använda`Document` klass. Här är en exempelkod:
 
 ```csharp
 Document doc = new Document();
@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### F: Hur lägger man till text i ett bokmärke med Aspose.Words för .NET?
 
- S: För att lägga till text i ett bokmärke med Aspose.Words för .NET, kan du använda`Write` metod för`DocumentBuilder` objekt som anger texten som ska läggas till. Här är en exempelkod:
+S: För att lägga till text i ett bokmärke med Aspose.Words för .NET, kan du använda`Write` metod för`DocumentBuilder` objekt som anger texten som ska läggas till. Här är en exempelkod:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

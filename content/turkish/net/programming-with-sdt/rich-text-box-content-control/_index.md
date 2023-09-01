@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ### Aspose.Words for .NET kullanan Zengin Metin Kutusu İçerik Kontrolü için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

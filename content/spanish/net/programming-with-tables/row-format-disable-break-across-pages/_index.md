@@ -53,7 +53,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Código fuente de muestra para formato de fila Deshabilitar salto entre páginas usando Aspose.Words para .NET 
 
 ```csharp
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");

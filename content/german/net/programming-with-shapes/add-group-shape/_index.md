@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ### Beispielquellcode für „Gruppenform hinzufügen“ mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

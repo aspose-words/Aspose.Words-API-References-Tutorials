@@ -14,7 +14,7 @@ Questo tutorial spiega come utilizzare Aspose.Words per .NET per aggiungere il c
 
 Assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
+-  Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
 - Un percorso di directory di documenti in cui si trovano i documenti di origine e di destinazione.
 
 ## Passaggio 2: apri i documenti di origine e di destinazione
@@ -54,13 +54,13 @@ Ciò completa l'implementazione dell'aggiunta di un documento utilizzando Aspose
 ### Codice sorgente di esempio per Aggiungi documento utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 	// Passa in rassegna tutte le sezioni del documento di origine.
-	// I nodi di sezione sono figli immediati del nodo Documento, quindi possiamo semplicemente enumerare il Documento.
+	// nodi di sezione sono figli immediati del nodo Documento, quindi possiamo semplicemente enumerare il Documento.
 	foreach (Section srcSection in srcDoc)
 	{
 		// Poiché stiamo copiando una sezione da un documento all'altro,

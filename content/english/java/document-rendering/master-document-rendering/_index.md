@@ -216,21 +216,21 @@ Mastering document rendering is essential for building robust applications that 
 ## FAQs
 
 ### What is the difference between document rendering and document processing?
-   
-   Document rendering involves converting electronic documents into a visual representation for users to view, edit, or print, while document processing encompasses tasks like mail merging, conversion, and protection.
+
+Document rendering involves converting electronic documents into a visual representation for users to view, edit, or print, while document processing encompasses tasks like mail merging, conversion, and protection.
 
 ### Is Aspose.Words compatible with all Java versions?
-   
-   Aspose.Words for Java supports Java versions 1.6 and later.
+
+Aspose.Words for Java supports Java versions 1.6 and later.
 
 ### Can I render only specific pages of a large document?
-   
-   Yes, you can use Aspose.Words to render specific pages or page ranges efficiently.
+
+Yes, you can use Aspose.Words to render specific pages or page ranges efficiently.
 
 ### How do I protect a rendered document with a password?
-   
-   Aspose.Words allows you to apply password protection to rendered documents to secure their content.
+
+Aspose.Words allows you to apply password protection to rendered documents to secure their content.
 
 ### Can Aspose.Words render documents in multiple languages?
-   
-   Yes, Aspose.Words supports rendering documents in various languages and handles text with different character encodings seamlessly.
+
+Yes, Aspose.Words supports rendering documents in various languages and handles text with different character encodings seamlessly.

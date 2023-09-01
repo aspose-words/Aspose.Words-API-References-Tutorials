@@ -70,7 +70,7 @@ Uygun dosya yolunu ve formatını (örn. DOCX) belirttiğinizden emin olun.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//İlk, çift ve tek sayfalar için üstbilgi ve altbilgilerin farklı olmasını istediğimizi belirtin.
+// İlk, çift ve tek sayfalar için üstbilgi ve altbilgilerin farklı olmasını istediğimizi belirtin.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 

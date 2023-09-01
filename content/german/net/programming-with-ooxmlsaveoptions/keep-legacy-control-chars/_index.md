@@ -46,7 +46,7 @@ Jetzt können Sie Quellcode ausführen, um beim Speichern eines Dokuments alte S
 ### Beispielquellcode für „Keep Legacy Control Chars“ mit Aspose.Words für .NET 
 ```csharp
 
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");

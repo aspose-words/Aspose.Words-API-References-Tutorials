@@ -43,7 +43,7 @@ table. ConvertToHorizontallyMergedCells();
 ### Пример исходного кода для преобразования в горизонтально объединенные ячейки с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");

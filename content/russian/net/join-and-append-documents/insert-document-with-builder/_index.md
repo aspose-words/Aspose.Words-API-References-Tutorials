@@ -14,7 +14,7 @@ url: /ru/net/join-and-append-documents/insert-document-with-builder/
 
 Убедитесь, что у вас есть следующие предварительные условия:
 
-- Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
+-  Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
 - Путь к каталогу документов, в котором расположены исходные и целевые документы.
 
 ## Шаг 2. Откройте исходный и целевой документы.
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Шаг 4. Разместите DocumentBuilder
 
-Переместите`DocumentBuilder` до конца документа с помощью`MoveToDocumentEnd` метод. Вставьте разрыв страницы, чтобы отделить существующее содержимое от вставленного документа.
+ Переместите`DocumentBuilder` до конца документа с помощью`MoveToDocumentEnd` метод. Вставьте разрыв страницы, чтобы отделить существующее содержимое от вставленного документа.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -48,7 +48,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Шаг 5. Вставьте исходный документ.
 
- Использовать`InsertDocument` метод`DocumentBuilder` класс для вставки исходного документа в целевой документ. Установите режим формата импорта на`ImportFormatMode.KeepSourceFormatting` чтобы сохранить исходное форматирование.
+ Использовать`InsertDocument` метод`DocumentBuilder`класс для вставки исходного документа в целевой документ. Установите режим формата импорта на`ImportFormatMode.KeepSourceFormatting` чтобы сохранить исходное форматирование.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -67,7 +67,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilde
 ### Пример исходного кода для вставки документа с помощью Builder с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -53,7 +53,7 @@ public class DocumentMerger {
 }
 ```
 
-Dans l'exemple ci-dessus, nous avons chargé deux documents en utilisant le`Document` classe, puis j'ai utilisé le`appendDocument()` méthode pour fusionner le contenu de "document2.docx" dans "document1.docx" tout en préservant la mise en forme du document source.
+ Dans l'exemple ci-dessus, nous avons chargé deux documents en utilisant le`Document` classe, puis j'ai utilisé le`appendDocument()` méthode pour fusionner le contenu de "document2.docx" dans "document1.docx" tout en préservant la mise en forme du document source.
 
 ## 4. Gestion du formatage des documents
 
@@ -114,7 +114,7 @@ Choisissez la méthode appropriée en fonction de vos besoins spécifiques.
 
 ## 7. Fusion de sections de documents spécifiques
 
- Dans certains scénarios, vous souhaiterez peut-être fusionner uniquement des sections spécifiques des documents. Par exemple, fusionner uniquement le contenu du corps, à l’exclusion des en-têtes et des pieds de page. Aspose.Words vous permet d'atteindre ce niveau de granularité en utilisant le`Range` classe:
+Dans certains scénarios, vous souhaiterez peut-être fusionner uniquement des sections spécifiques des documents. Par exemple, fusionner uniquement le contenu du corps, à l’exclusion des en-têtes et des pieds de page. Aspose.Words vous permet d'atteindre ce niveau de granularité en utilisant le`Range` classe:
 
 ```java
 import com.aspose.words.*;

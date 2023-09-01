@@ -67,12 +67,12 @@ Sayfa sonlarını kaldırdıktan sonra değiştirilen belgeyi kaydetmemiz gereki
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Yer değiştirmek`"modified-document.docx"` değiştirilen belgeniz için istediğiniz adla.
+ Yer değiştirmek`"modified-document.docx"`değiştirilen belgeniz için istediğiniz adla.
 
 ### Aspose.Words for .NET kullanarak Sayfa Sonlarını Kaldırmak için örnek kaynak kodu 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Belgeyi yükleyin
@@ -154,4 +154,4 @@ C: Sayfa sonlarını kaldırdıktan sonra değiştirilen belgeyi kaydetmeniz ger
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Yer değiştirmek`"modified-document.docx"` değiştirilen belgeniz için istediğiniz adla.
+ Yer değiştirmek`"modified-document.docx"`değiştirilen belgeniz için istediğiniz adla.

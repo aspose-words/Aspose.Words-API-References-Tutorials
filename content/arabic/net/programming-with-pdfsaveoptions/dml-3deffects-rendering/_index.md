@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 
  إنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- إنشاء مثيل لـ`PdfSaveOptions`فئة وتعيين`Dml3DEffectsRenderingMode` الملكية ل`Dml3DEffectsRenderingMode.Advanced` لتمكين العرض المتقدم لتأثيرات DML ثلاثية الأبعاد.
+ إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`Dml3DEffectsRenderingMode` الملكية ل`Dml3DEffectsRenderingMode.Advanced` لتمكين العرض المتقدم لتأثيرات DML ثلاثية الأبعاد.
 
  استخدم ال`Save` طريقة`Document`فئة لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
 

@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Aspose.Words for .NET kullanan Yazı Tipi Ayarları Varsayılan Örneği için örnek kaynak kodu 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;

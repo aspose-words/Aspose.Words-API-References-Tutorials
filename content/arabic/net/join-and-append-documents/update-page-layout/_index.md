@@ -19,7 +19,7 @@ url: /ar/net/join-and-append-documents/update-page-layout/
 
 ## الخطوة 1: تهيئة أدلة المستندات
 
- أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir`متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## الخطوة 5: تحديث تخطيط الصفحة مرة أخرى
 
- بعد إلحاق المستند المصدر، يجب عليك الاتصال بـ`UpdatePageLayout` الطريقة على المستند الوجهة مرة أخرى للتأكد من أن أي تغييرات يتم إجراؤها بعد عملية الإلحاق تنعكس في المخرجات المقدمة.
+ بعد إلحاق المستند المصدر، يجب عليك الاتصال بـ`UpdatePageLayout`الطريقة على المستند الوجهة مرة أخرى للتأكد من أن أي تغييرات يتم إجراؤها بعد عملية الإلحاق تنعكس في المخرجات المقدمة.
 
 ```csharp
 dstDoc.UpdatePageLayout();
@@ -71,12 +71,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 إليك الكود المصدري الكامل لميزة "تحديث تخطيط الصفحة" في لغة C# باستخدام Aspose.Words for .NET:
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//إذا تم تقديم المستند الوجهة إلى PDF أو صورة وما إلى ذلك.
+	// إذا تم تقديم المستند الوجهة إلى PDF أو صورة وما إلى ذلك.
 	// أو يتم استدعاء UpdatePageLayout قبل المستند المصدر. تم إلحاقه،
 	// فإن أي تغييرات يتم إجراؤها بعد ذلك لن تنعكس في الإخراج المقدم
 	dstDoc.UpdatePageLayout();

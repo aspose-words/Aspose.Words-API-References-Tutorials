@@ -76,7 +76,7 @@ Tebrikler! Artık Aspose.Words for .NET'i kullanarak bir tabloya anahat kenarlı
 ### Aspose.Words for .NET kullanarak Anahat Kenarlığını Uygula için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

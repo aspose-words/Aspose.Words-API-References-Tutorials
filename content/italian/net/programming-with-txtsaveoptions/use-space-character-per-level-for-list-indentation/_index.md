@@ -105,7 +105,7 @@ Puoi utilizzare uno spazio per livello per il rientro dell'elenco seguendo quest
 
  Usa il`DocumentBuilder`classe per aggiungere contenuto al documento e creare un elenco con più livelli di rientro.
 
- Dopo aver aggiunto il contenuto e configurato il rientro dell'elenco, utilizzare il file`TxtSaveOptions`classe e impostare il file`ListIndentation.Count` proprietà al numero di livelli di rientro e il`ListIndentation.Character` proprietà sullo spazio (`' '`) usare.
+ Dopo aver aggiunto il contenuto e configurato il rientro dell'elenco, utilizzare il file`TxtSaveOptions` classe e impostare il file`ListIndentation.Count` proprietà al numero di livelli di rientro e il`ListIndentation.Character` proprietà sullo spazio (`' '`) usare.
 
  Salvare il documento con le opzioni specificate utilizzando il file`Save` metodo del`Document` classe.
 

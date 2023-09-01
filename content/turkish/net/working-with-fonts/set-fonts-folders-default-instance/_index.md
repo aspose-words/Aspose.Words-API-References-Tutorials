@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ### Aspose.Words for .NET kullanarak Yazı Tipi Klasörlerinin Varsayılan Örneğini Ayarlama için örnek kaynak kodu 
 
 ```csharp
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

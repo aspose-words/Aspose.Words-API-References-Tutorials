@@ -48,7 +48,7 @@ Ahora puede ejecutar el código fuente para garantizar el cumplimiento estricto 
 ### Código fuente de muestra para Ooxml Compliance Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp
 
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

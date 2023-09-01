@@ -14,7 +14,7 @@ Este tutorial demuestra cómo adjuntar un documento de origen a un documento de 
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
+-  Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
 - Una ruta del directorio de documentos donde se guardarán los documentos de origen y de destino.
 
 ## Paso 2: crear los documentos de destino y de origen
@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Paso 3: agregue el documento de origen al documento de destino
 
- Utilizar el`AppendDocument`método del documento de destino para adjuntar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting` como modo de formato de importación para conservar el formato original del documento de origen.
+ Utilizar el`AppendDocument` método del documento de destino para adjuntar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting`como modo de formato de importación para conservar el formato original del documento de origen.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -53,7 +53,7 @@ Esto completa la implementación de agregar un documento de origen a un document
 ### Código fuente de ejemplo para mantener el formato fuente usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();

@@ -59,7 +59,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document.docx");

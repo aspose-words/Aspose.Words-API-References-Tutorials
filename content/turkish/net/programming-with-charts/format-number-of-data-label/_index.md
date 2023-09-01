@@ -75,7 +75,7 @@ Bu, Aspose.Words for .NET kullanarak bir grafikteki veri etiketi sayısını bi�
 ### Aspose.Words for .NET kullanan Veri Etiketi Sayısını Formatla için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

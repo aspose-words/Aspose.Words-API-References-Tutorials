@@ -92,7 +92,7 @@ Esto completa la implementación de la definición de propiedades del eje XY en 
 ### Código fuente de ejemplo para definir propiedades de XYAxis usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

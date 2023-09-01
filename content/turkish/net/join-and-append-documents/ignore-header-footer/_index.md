@@ -14,7 +14,7 @@ Bu eğitimde, üstbilgi ve altbilgi içeriğini göz ardı ederek bir belge ekle
 
 Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+-  Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
 - Kaynak ve hedef belgelerin bulunduğu belge dizini yolu.
 
 ## 2. Adım: Kaynak ve hedef belgeleri açın
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: İçe aktarma biçimi seçeneklerini ayarlayın
 
- Bir örneğini oluşturun`ImportFormatOptions`sınıfı seçin ve ayarlayın`IgnoreHeaderFooter` mülkiyet`false`. Bu, ekleme işlemi sırasında üstbilgi ve altbilgi içeriğinin dahil edilmesini sağlar.
+ Bir örneğini oluşturun`ImportFormatOptions` sınıfı seçin ve ayarlayın`IgnoreHeaderFooter` mülkiyet`false`. Bu, ekleme işlemi sırasında üstbilgi ve altbilgi içeriğinin dahil edilmesini sağlar.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## 4. Adım: Kaynak belgeyi hedef belgeye ekleyin
 
- Kullan`AppendDocument`Kaynak belgenin ekleneceği hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` ikinci parametre olarak içe aktarma formatı seçeneklerini ve üçüncü parametre olarak içe aktarma formatı seçeneklerini seçin.
+ Kullan`AppendDocument` Kaynak belgenin ekleneceği hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` ikinci parametre olarak içe aktarma formatı seçeneklerini ve üçüncü parametre olarak içe aktarma formatı seçeneklerini seçin.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ Bu, Aspose.Words for .NET kullanarak üstbilgi ve altbilgi içeriğini göz ard�
 ### Aspose.Words for .NET kullanarak Üst Bilgi Alt Bilgisini Yoksay için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

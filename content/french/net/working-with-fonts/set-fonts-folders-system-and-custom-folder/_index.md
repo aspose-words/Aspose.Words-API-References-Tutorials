@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ### Exemple de code source pour définir le système de dossiers de polices et le dossier personnalisé à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -100,7 +100,7 @@ R : Une ligne de signature existante dans un document Word est une zone prédé
 R : Pour signer une ligne de signature existante dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez suivre ces étapes :
 1.  Chargez le document à l'aide du`Document` classe et spécifiez le chemin d’accès au fichier de document.
 2.  Accédez à la ligne de signature existante à l’aide de la méthode ou de la propriété appropriée. Par exemple, vous pouvez utiliser`GetChild` méthode pour récupérer la forme de la ligne de signature.
-3.  Créez une instance du`SignOptions`classe et définir le`SignatureLineId` propriété à l’ID de la ligne de signature existante.
+3.  Créez une instance du`SignOptions` classe et définir le`SignatureLineId` propriété à l’ID de la ligne de signature existante.
 4.  Met le`SignatureLineImage` propriété du`SignOptions` classe à l’image représentant la signature numérique.
 5.  Chargez le certificat de signature à l'aide du`CertificateHolder` classe et fournissez le certificat et le mot de passe nécessaires.
 6.  Utilisez le`DigitalSignatureUtil.Sign` méthode pour signer le document, en fournissant les paramètres nécessaires, y compris le`SignOptions` objet.

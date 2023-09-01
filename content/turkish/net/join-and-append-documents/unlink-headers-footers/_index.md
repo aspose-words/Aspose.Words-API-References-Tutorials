@@ -19,7 +19,7 @@ Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 ## Adım 1: Belge Dizinlerini Başlatın
 
- Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir`belgelerinizin bulunduğu yola göre değişkendir.
+ Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir` belgelerinizin bulunduğu yola göre değişkendir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Adım 5: Nihai Belgeyi Kaydedin
 
-Son olarak, birleştirilmiş belgeyi, Üstbilgi Altbilgilerinin Bağlantısını Kaldır özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
+ Son olarak, birleştirilmiş belgeyi, Üstbilgi Altbilgilerinin Bağlantısını Kaldır özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Aspose.Words for .NET kullanarak C#'taki "Başlık Alt Bilgilerinin Bağlantısını Kaldır" özelliğinin tam kaynak kodunu burada bulabilirsiniz:
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

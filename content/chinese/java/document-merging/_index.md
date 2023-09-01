@@ -25,5 +25,14 @@ url: /zh/java/document-merging/
 ## 文档合并教程
 
 ### [使用文档合并](./using-document-merging/)
-
 学习使用 Aspose.Words for Java 无缝合并 Word 文档。只需几个步骤即可有效地组合、格式化和处理冲突。现在就开始！
+### [组合和克隆文档](./combining-cloning-documents/)
+了解如何使用 Aspose.Words 在 Java 中轻松组合和克隆文档。本分步指南涵盖了您需要了解的所有内容。
+### [加入和附加文档](./joining-appending-documents/)
+了解如何使用 Aspose.Words for Java 加入和附加文档。包含代码示例的分步指南，可实现高效的文档操作。
+### [比较文档的差异](./comparing-documents-for-differences/)
+了解如何使用 Java 中的 Aspose.Words 比较文档的差异。我们的分步指南可确保准确的文档管理。
+### [使用 DocumentBuilder 合并文档](./merging-documents-documentbuilder/)
+了解如何使用 Aspose.Words for Java 操作 Word 文档。使用 Java 以编程方式创建、编辑、合并和转换文档。
+### [文档拆分和提取](./document-splitting-extraction/)
+了解如何使用 Aspose.Words for Java 轻松分割和提取文档。通过分步指导简化您的文档处理任务。

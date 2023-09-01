@@ -45,7 +45,7 @@ Vous pouvez désormais exécuter du code source pour copier des styles d'un docu
 
 ```csharp
 
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document();

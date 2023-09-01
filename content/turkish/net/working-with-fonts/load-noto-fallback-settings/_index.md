@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ### Aspose.Words for .NET kullanan Noto Fallback Ayarları için örnek kaynak kodu 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

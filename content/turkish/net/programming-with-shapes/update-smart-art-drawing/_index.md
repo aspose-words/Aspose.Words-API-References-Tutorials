@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ### Aspose.Words for .NET kullanarak Akıllı Sanat Çizimini Güncelleme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "SmartArt.docx");

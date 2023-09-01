@@ -74,7 +74,7 @@ S: För att uppdatera egenskapen "Last Printed" i ett PDF-dokument med Aspose.Wo
 
  Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
 
- Skapa en instans av`PdfSaveOptions`klass och ställ in`UpdateLastPrintedProperty` egendom till`true` för att möjliggöra uppdatering av egenskapen "Senast utskriven".
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`UpdateLastPrintedProperty` egendom till`true` för att möjliggöra uppdatering av egenskapen "Senast utskriven".
 
  Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
 

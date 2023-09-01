@@ -25,3 +25,13 @@ dessa handledningar kommer vi inte bara att fokusera på att skapa visuellt till
 ## Handledning för dokumentstyling
 ### [Word-dokumentstil](./word-document-styling/)
 Lär dig hur du stilar och bearbetar dokument med Aspose.Words för Java! Skapa visuellt fantastiska utgångar med källkodsexempel. 
+### [Tillämpa stilar och teckensnitt i dokument](./applying-styles-fonts/)
+Lär dig hur du använder stilar och teckensnitt i dokument med Aspose.Words för Java. Steg-för-steg guide med källkod. Lås upp dokumentformateringens fulla potential.
+### [Styling av stycken och text i dokument](./styling-paragraphs-text/)
+Lär dig hur du formaterar stycken och text i dokument med Aspose.Words för Java. Steg-för-steg-guide med källkod för effektiv dokumentformatering.
+### [Anpassa dokumentteman](./customizing-document-themes/)
+Lär dig hur du anpassar dokumentteman med Aspose.Words för Java. Den här omfattande guiden ger steg-för-steg-instruktioner och exempel på källkod.
+### [Dokumentvattenmärkning och sidinställningar](./document-watermarking-page-setup/)
+Lär dig hur du använder vattenstämplar och ställer in sidkonfigurationer med Aspose.Words för Java. En omfattande guide med källkod.
+### [Utformning av dokumenthuvud och sidfot](./document-header-footer-styling/)
+Lär dig hur du formaterar sidhuvuden och sidfötter i dokument med Aspose.Words för Java i den här detaljerade guiden. Steg-för-steg-instruktioner och källkod ingår.

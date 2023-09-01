@@ -25,3 +25,13 @@ Bu eğitimlerde yalnızca görsel açıdan çekici belgeler oluşturmaya değil,
 ## Belge Şekillendirme Eğitimleri
 ### [Word Belgesi Şekillendirme](./word-document-styling/)
 Aspose.Words for Java ile belgeleri nasıl şekillendireceğinizi ve işleyeceğinizi öğrenin! Kaynak kodu örnekleriyle görsel olarak etkileyici çıktılar oluşturun. 
+### [Belgelere Stil ve Yazı Tipleri Uygulama](./applying-styles-fonts/)
+Aspose.Words for Java'yı kullanarak belgelere stil ve yazı tiplerini nasıl uygulayacağınızı öğrenin. Kaynak koduyla adım adım kılavuz. Belge biçimlendirmenin tüm potansiyelinin kilidini açın.
+### [Belgelerdeki Paragrafları ve Metni Şekillendirme](./styling-paragraphs-text/)
+Aspose.Words for Java'yı kullanarak belgelerdeki paragraflara ve metinlere nasıl stil uygulayacağınızı öğrenin. Etkili belge biçimlendirmesi için kaynak kodlu adım adım kılavuz.
+### [Belge Temalarını Özelleştirme](./customizing-document-themes/)
+Aspose.Words for Java'yı kullanarak belge temalarını nasıl özelleştireceğinizi öğrenin. Bu kapsamlı kılavuz, adım adım talimatlar ve kaynak kodu örnekleri sağlar.
+### [Belge Filigranı ve Sayfa Yapısı](./document-watermarking-page-setup/)
+Aspose.Words for Java ile filigranları nasıl uygulayacağınızı ve sayfa yapılandırmalarını nasıl ayarlayacağınızı öğrenin. Kaynak koduyla birlikte kapsamlı bir kılavuz.
+### [Belge Üstbilgisi ve Altbilgi Şekillendirme](./document-header-footer-styling/)
+Bu ayrıntılı kılavuzdan Aspose.Words for Java'yı kullanarak belge üstbilgilerini ve altbilgilerini nasıl şekillendireceğinizi öğrenin. Adım adım talimatlar ve kaynak kodu dahildir.

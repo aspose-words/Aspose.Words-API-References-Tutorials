@@ -8,7 +8,7 @@ weight: 11
 url: /sv/java/table-processing/generate-table-from-datatable/
 ---
 
-I den här handledningen kommer vi att visa hur man genererar en tabell från en DataTable med Aspose.Words för Java. DataTable är en grundläggande datastruktur som innehåller tabelldata, och med de kraftfulla tabellbehandlingsfunktionerna i Aspose.Words kan vi enkelt skapa en välformaterad tabell i ett Word-dokument. Följ steg-för-steg-guiden nedan för att skapa en tabell och integrera den i ditt ordbehandlingsprogram.
+den här handledningen kommer vi att visa hur man genererar en tabell från en DataTable med Aspose.Words för Java. DataTable är en grundläggande datastruktur som innehåller tabelldata, och med de kraftfulla tabellbehandlingsfunktionerna i Aspose.Words kan vi enkelt skapa en välformaterad tabell i ett Word-dokument. Följ steg-för-steg-guiden nedan för att skapa en tabell och integrera den i ditt ordbehandlingsprogram.
 
 ## Steg 1: Konfigurera din utvecklingsmiljö
 

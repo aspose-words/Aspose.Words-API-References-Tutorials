@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ### Código fuente de ejemplo para el control de contenido de cuadro de texto enriquecido usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

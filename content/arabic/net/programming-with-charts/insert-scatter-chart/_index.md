@@ -38,7 +38,7 @@ Chart chart = shape.Chart;
 
 ## الخطوة 3: إضافة بيانات السلسلة إلى المخطط
 
-إضافة بيانات السلسلة إلى المخطط. في هذا المثال، سنضيف مجموعتين من إحداثيات X وY.
+أضف بيانات السلسلة إلى المخطط. في هذا المثال، سنضيف مجموعتين من إحداثيات X وY.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 ### مثال على التعليمات البرمجية المصدر لإدراج مخطط مبعثر باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -66,7 +66,7 @@ Detta slutför implementeringen av att infoga ett enkelt kolumndiagram med Aspos
 ### Exempel på källkod för Insert Simple Column Chart med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

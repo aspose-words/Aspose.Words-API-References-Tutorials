@@ -78,7 +78,7 @@ R : Pour exporter la structure d'un document Word vers un document PDF à l'aid
 
  Créez une instance du`Document` classe spécifiant le chemin d’accès au document Word.
 
- Créez une instance du`PdfSaveOptions`classe et définir le`ExportDocumentStructure` propriété à`true`. Cela exportera la structure du document et la rendra visible dans le volet de navigation « Contenu » d'Adobe Acrobat Pro lors de la modification du fichier PDF.
+ Créez une instance du`PdfSaveOptions` classe et définir le`ExportDocumentStructure` propriété à`true`. Cela exportera la structure du document et la rendra visible dans le volet de navigation « Contenu » d'Adobe Acrobat Pro lors de la modification du fichier PDF.
 
  Utilisez le`Save` méthode du`Document`classe pour enregistrer le document au format PDF en spécifiant les options d'enregistrement.
 

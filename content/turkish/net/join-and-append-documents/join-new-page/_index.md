@@ -14,7 +14,7 @@ Bu eğitimde Aspose.Words for .NET kullanılarak iki belgenin yeni bir sayfada n
 
 Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+-  Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
 - Kaynak ve hedef belgelerin bulunduğu belge dizini yolu.
 
 ## 2. Adım: Kaynak ve hedef belgeleri açın
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: Yeni sayfa bölümü başlangıcını ayarlayın
 
- Eklenen belgeyi yeni bir sayfada başlatmak için`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.NewPage`.
+Eklenen belgeyi yeni bir sayfada başlatmak için`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## 4. Adım: Kaynak belgeyi ekleyin
 
- Kaynak belgeyi hedef belgeye şunu kullanarak ekleyin:`AppendDocument` yöntemi`Document` sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak belgedeki orijinal stilleri korumak için.
+Kaynak belgeyi hedef belgeye şunu kullanarak ekleyin:`AppendDocument` yöntemi`Document` sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak belgedeki orijinal stilleri korumak için.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -58,7 +58,7 @@ Bu, Aspose.Words for .NET kullanarak iki belgeyi yeni bir sayfada birleştirme u
 ### Aspose.Words for .NET kullanarak Yeni Sayfaya Katıl için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

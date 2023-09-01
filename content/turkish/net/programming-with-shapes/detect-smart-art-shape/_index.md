@@ -47,7 +47,7 @@ Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ### Aspose.Words for .NET kullanarak Akıllı Sanat Şeklini Algılama için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Smart Art.docx");

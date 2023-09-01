@@ -76,7 +76,7 @@ S: För att konfigurera Aspose.Words för .NET att inte bädda in Arial- och Tim
 
  Ladda dokumentet du vill bearbeta med hjälp av`Document` klass och den angivna dokumentsökvägen.
 
- Skapa en instans av`PdfSaveOptions`klass och ställ in`FontEmbeddingMode` egendom till`PdfFontEmbeddingMode.EmbedAll`. Detta kommer att bädda in alla typsnitt utom Arial och Times Roman i den genererade PDF-filen.
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`FontEmbeddingMode` egendom till`PdfFontEmbeddingMode.EmbedAll`. Detta kommer att bädda in alla typsnitt utom Arial och Times Roman i den genererade PDF-filen.
 
  Använd`Save` metod för`Document` objekt för att spara dokumentet i PDF-format med angivande av sparade alternativ som konfigurerats tidigare.
 

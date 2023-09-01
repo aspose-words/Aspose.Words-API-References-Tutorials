@@ -54,7 +54,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Código fuente de muestra para la posición de la tabla flotante usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

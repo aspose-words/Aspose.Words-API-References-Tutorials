@@ -13,7 +13,7 @@ Microsoft Word 是一款功能强大的文字处理工具，允许用户轻松�
 
 ## 第1步：搭建开发环境
 
-开始之前，请确保您的计算机上已设置 Java 开发环境。从 Oracle 官方网站下载并安装最新版本的 Java Development Kit (JDK)。
+开始之前，请确保您的计算机上已设置 Java 开发环境。从 Oracle 网站下载并安装最新版本的 Java 开发工具包 (JDK)。
 
 ## 第2步：创建一个新的Java项目
 

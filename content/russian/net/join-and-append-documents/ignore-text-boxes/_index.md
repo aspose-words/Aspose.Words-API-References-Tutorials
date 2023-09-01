@@ -14,7 +14,7 @@ url: /ru/net/join-and-append-documents/ignore-text-boxes/
 
 Убедитесь, что у вас есть следующие предварительные условия:
 
-- Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
+-  Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
 - Путь к каталогу документов, в котором расположены исходные и целевые документы.
 
 ## Шаг 2. Откройте исходный и целевой документы.
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте параметры формата импорта
 
- Создайте экземпляр`ImportFormatOptions`класс и установите`IgnoreTextBoxes` собственность`false`. Это гарантирует, что текстовые поля будут включены в процесс добавления с сохранением их форматирования.
+ Создайте экземпляр`ImportFormatOptions` класс и установите`IgnoreTextBoxes` собственность`false`. Это гарантирует, что текстовые поля будут включены в процесс добавления с сохранением их форматирования.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Шаг 4. Добавьте содержимое текстового поля
 
- Создать`NodeImporter`объект и используйте его для импорта узлов текстового поля из исходного документа в целевой документ. Перейдите по каждому абзацу исходного документа и импортируйте его в целевой документ.
+ Создать`NodeImporter` объект и используйте его для импорта узлов текстового поля из исходного документа в целевой документ. Перейдите по каждому абзацу исходного документа и импортируйте его в целевой документ.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -64,7 +64,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ### Пример исходного кода для игнорирования текстовых полей с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

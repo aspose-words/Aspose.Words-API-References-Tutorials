@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 Wasserzeichen können dazu beitragen, die Vertraulichkeit Ihres Dokuments zu schützen und seinen Status anzuzeigen. Aspose.Words für Java bietet benutzerfreundliche Wasserzeichenfunktionen:
 
 ```java
-// Fügen Sie ein sichtbares Wasserzeichen hinzu
+//Fügen Sie ein sichtbares Wasserzeichen hinzu
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

@@ -149,7 +149,7 @@ Das Einbinden von Rich-Media-Bildern in Ihre Dokumente ist bahnbrechend. Indem S
 
 ### Kann ich den Bildern, die ich einfüge, Bildunterschriften hinzufügen?
 
-Ja, Sie können mit Aspose.Words Bildunterschriften hinzufügen. Benutzen Sie die`add_caption` Methode und passen Sie das Erscheinungsbild der Beschriftung an.
+ Ja, Sie können mit Aspose.Words Bildunterschriften hinzufügen. Benutzen Sie die`add_caption` Methode und passen Sie das Erscheinungsbild der Beschriftung an.
 
 ### In welche Formate kann ich meine Dokumente exportieren?
 

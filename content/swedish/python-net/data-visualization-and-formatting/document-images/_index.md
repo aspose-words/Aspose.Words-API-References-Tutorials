@@ -149,7 +149,7 @@ Att införliva multimediebilder i dina dokument är en spelomvandlare. Genom att
 
 ### Kan jag lägga till bildtexter till bilderna jag infogar?
 
-Ja, du kan lägga till bildtexter till bilder med Aspose.Words. Använd`add_caption` metod och anpassa bildtextens utseende.
+ Ja, du kan lägga till bildtexter till bilder med Aspose.Words. Använd`add_caption` metod och anpassa bildtextens utseende.
 
 ### Vilka format kan jag exportera mina dokument till?
 

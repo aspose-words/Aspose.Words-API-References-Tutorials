@@ -70,7 +70,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//حدد أننا نريد أن تكون الرؤوس والتذييلات مختلفة للصفحات الأولى والزوجية والفردية.
+// حدد أننا نريد أن تكون الرؤوس والتذييلات مختلفة للصفحات الأولى والزوجية والفردية.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 

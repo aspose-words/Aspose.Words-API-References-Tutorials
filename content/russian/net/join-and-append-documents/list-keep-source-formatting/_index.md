@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/list-keep-source-formatting/
 
 ## Шаг 1. Инициализируйте каталоги документов
 
- Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir`переменная пути, по которому расположены ваши документы.
+ Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir` переменная пути, по которому расположены ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Шаг 4. Добавьте исходный документ в целевой документ
 
- Теперь вы можете добавить исходный документ к целевому документу, используя команду`AppendDocument` метод`Document` сорт.`ImportFormatMode.KeepSourceFormatting` Параметр гарантирует, что исходное форматирование, включая форматирование списков, будет сохранено во время операции добавления.
+ Теперь вы можете добавить исходный документ к целевому документу, используя команду`AppendDocument` метод`Document` сорт.`ImportFormatMode.KeepSourceFormatting`Параметр гарантирует, что исходное форматирование, включая форматирование списков, будет сохранено во время операции добавления.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 Вот полный исходный код функции форматирования исходного кода List Keep на C# с использованием Aspose.Words для .NET:
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

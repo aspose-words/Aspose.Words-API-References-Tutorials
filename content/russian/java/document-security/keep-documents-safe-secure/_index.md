@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 Водяные знаки могут помочь защитить конфиденциальность вашего документа и указать его статус. Aspose.Words для Java предлагает простые в использовании функции создания водяных знаков:
 
 ```java
-// Добавьте видимый водяной знак
+//Добавьте видимый водяной знак
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

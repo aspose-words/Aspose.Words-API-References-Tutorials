@@ -50,7 +50,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 ## 5. Adım: Yer imi metnini içe aktarın ve kopyalayın
 
- Bir kullanıyoruz`NodeImporter` Yer imi metnini kaynak belgeden hedef belgeye aktarmak ve kopyalamak için kullanılan nesne:
+ Bir kullanıyoruz`NodeImporter`Yer imi metnini kaynak belgeden hedef belgeye aktarmak ve kopyalamak için kullanılan nesne:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -76,7 +76,7 @@ Aspose.Words for .NET kullanarak bir yer iminden metin kopyalamayı gösteren ö
 	// Bu belgeye ekleme yapacağız.
 	Document dstDoc = new Document();
 
-	//Diyelim ki son bölümün gövdesinin sonuna ekleneceğiz.
+	// Diyelim ki son bölümün gövdesinin sonuna ekleneceğiz.
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
 	// Tek bir bağlam olmadan birden çok kez içe aktarırsanız, birçok stilin oluşturulmasına neden olur.
@@ -100,7 +100,7 @@ C: Aspose.Words for .NET'teki "Metni yer işaretleriyle kopyala" özelliğini ku
 
 #### S: Kaynak belgeyi Aspose.Words for .NET'e nasıl yüklerim?
 
- C: Aspose.Words for .NET'e kaynak belge yüklemek için`Document`belgenin dosya yolunu belirterek sınıf. İşte örnek bir kod:
+ C: Aspose.Words for .NET'e kaynak belge yüklemek için`Document` belgenin dosya yolunu belirterek sınıf. İşte örnek bir kod:
 
 ```csharp
 Document srcDoc = new Document("path/to/your/document.docx");
@@ -116,7 +116,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### S: Aspose.Words for .NET kullanılarak hedef belgedeki yer imi metni kopyasının konumu nasıl belirlenir?
 
- C: Aspose.Words for .NET kullanarak kopyalanan yer imi metnini hedef belgede nereye eklemek istediğinizi belirtmek için hedef belgenin son bölümünün gövdesine gidebilirsiniz. Şunu kullanabilirsiniz:`LastSection` son bölüme erişim özelliği ve`Body` o bölümün gövdesine erişme özelliği. İşte örnek bir kod:
+C: Aspose.Words for .NET kullanarak kopyalanan yer imi metnini hedef belgede nereye eklemek istediğinizi belirtmek için hedef belgenin son bölümünün gövdesine gidebilirsiniz. Şunu kullanabilirsiniz:`LastSection` son bölüme erişim özelliği ve`Body` o bölümün gövdesine erişme özelliği. İşte örnek bir kod:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
@@ -124,7 +124,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 #### S: Aspose.Words for .NET kullanılarak yer imi metni kaynak belgeden hedef belgeye nasıl aktarılır ve kopyalanır?
 
-C: Yer imi metnini Aspose.Words for .NET kullanarak kaynak belgeden hedef belgeye aktarmak ve kopyalamak için şu komutu kullanabilirsiniz:`NodeImporter` Kaynak belgeyi, hedef belgeyi ve saklanacak biçimlendirme modunu belirten sınıf. Daha sonra şunu kullanabilirsiniz:`AppendBookmarkedText` Yer imi metnini hedef belgeye ekleme yöntemini kullanın. İşte örnek bir kod:
+ C: Yer imi metnini Aspose.Words for .NET kullanarak kaynak belgeden hedef belgeye aktarmak ve kopyalamak için şu komutu kullanabilirsiniz:`NodeImporter` Kaynak belgeyi, hedef belgeyi ve saklanacak biçimlendirme modunu belirten sınıf. Daha sonra şunu kullanabilirsiniz:`AppendBookmarkedText` Yer imi metnini hedef belgeye ekleme yöntemini kullanın. İşte örnek bir kod:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -133,7 +133,7 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 
 #### S: Aspose.Words for .NET kullanarak yer imi metnini kopyaladıktan sonra hedef belge nasıl kaydedilir?
 
- C: Aspose.Words for .NET'i kullanarak bir yer iminden metin kopyaladıktan sonra hedef belgeyi kaydetmek için,`Save` yöntemi`Document` Hedef dosya yolunu belirten nesne. İşte örnek bir kod:
+C: Aspose.Words for .NET'i kullanarak bir yer iminden metin kopyaladıktan sonra hedef belgeyi kaydetmek için,`Save` yöntemi`Document` Hedef dosya yolunu belirten nesne. İşte örnek bir kod:
 
 ```csharp
 dstDoc.Save("path/to/your/destination-document.docx");

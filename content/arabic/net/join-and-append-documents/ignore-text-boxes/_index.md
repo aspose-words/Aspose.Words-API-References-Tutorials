@@ -14,7 +14,7 @@ url: /ar/net/join-and-append-documents/ignore-text-boxes/
 
 تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
+-  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
 - مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
 
 ## الخطوة 2: افتح المستندات المصدر والوجهة
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: إعداد خيارات تنسيق الاستيراد
 
- إنشاء مثيل لـ`ImportFormatOptions`فئة وتعيين`IgnoreTextBoxes` الملكية ل`false`. وهذا يضمن تضمين مربعات النص أثناء عملية الإلحاق مع الحفاظ على تنسيقها.
+ إنشاء مثيل لـ`ImportFormatOptions` فئة وتعيين`IgnoreTextBoxes` الملكية ل`false`. وهذا يضمن تضمين مربعات النص أثناء عملية الإلحاق مع الحفاظ على تنسيقها.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## الخطوة 4: إلحاق محتوى مربع النص
 
- إنشاء`NodeImporter`الكائن واستخدامه لاستيراد عقد مربع النص من المستند المصدر إلى المستند الوجهة. قم بالتكرار خلال كل فقرة في المستند المصدر وقم باستيرادها إلى المستند الوجهة.
+ إنشاء`NodeImporter` الكائن واستخدامه لاستيراد عقد مربع النص من المستند المصدر إلى المستند الوجهة. قم بالتكرار خلال كل فقرة في المستند المصدر وقم باستيرادها إلى المستند الوجهة.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -64,7 +64,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ### مثال على التعليمات البرمجية المصدر لتجاهل مربعات النص باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 
-den här artikeln kommer vi att utforska ovanstående C#-källkod för att förstå hur man använder funktionen Ta bort rad efter bokmärke i Aspose.Words för .NET-biblioteket. Denna funktion låter dig ta bort en tabellrad baserat på ett specifikt bokmärke i Word-dokument.
+I den här artikeln kommer vi att utforska ovanstående C#-källkod för att förstå hur man använder funktionen Ta bort rad efter bokmärke i Aspose.Words för .NET-biblioteket. Denna funktion låter dig ta bort en tabellrad baserat på ett specifikt bokmärke i Word-dokument.
 
 ## Förutsättningar
 

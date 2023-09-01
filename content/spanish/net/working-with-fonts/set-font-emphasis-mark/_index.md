@@ -45,7 +45,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ### Código fuente de muestra para establecer marca de énfasis de fuente usando Aspose.Words para .NET 
 
 ```csharp
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();

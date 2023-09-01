@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 ### Código fuente de ejemplo para el rango de etiquetas de documentos estructurados Iniciar mapeo XML usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

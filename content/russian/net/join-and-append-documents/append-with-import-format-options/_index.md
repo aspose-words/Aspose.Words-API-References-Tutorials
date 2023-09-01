@@ -14,7 +14,7 @@ url: /ru/net/join-and-append-documents/append-with-import-format-options/
 
 Убедитесь, что у вас есть следующие предварительные условия:
 
-- Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
+-  Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
 - Путь к каталогу документов, в котором расположены исходные и целевые документы.
 
 ## Шаг 2. Откройте исходный и целевой документы.
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Шаг 4. Добавьте исходный документ в целевой документ.
 
- Использовать`AppendDocument`метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.UseDestinationStyles` в качестве второго параметра для использования стилей и форматирования целевого документа.
+ Использовать`AppendDocument` метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.UseDestinationStyles` в качестве второго параметра для использования стилей и форматирования целевого документа.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,7 +58,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx
 ### Пример исходного кода для добавления с параметрами формата импорта с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");

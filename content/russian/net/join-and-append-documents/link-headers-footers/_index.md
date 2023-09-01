@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/link-headers-footers/
 
 ## Шаг 1. Инициализируйте каталоги документов
 
- Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir`переменная пути, по которому расположены ваши документы.
+ Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir` переменная пути, по которому расположены ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте добавленный документ для отображения на новой странице.
 
- Чтобы содержимое исходного документа отображалось на новой странице целевого документа, необходимо установить параметр`SectionStart` свойство первого раздела исходного документа на`SectionStart.NewPage`.
+Чтобы содержимое исходного документа отображалось на новой странице целевого документа, необходимо установить параметр`SectionStart` свойство первого раздела исходного документа на`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -72,7 +72,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

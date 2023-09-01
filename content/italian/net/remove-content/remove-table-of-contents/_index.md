@@ -85,7 +85,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ### Codice sorgente di esempio per rimuovere il sommario utilizzando Aspose.Words per .NET 
 ```csharp
 
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Caricare il documento

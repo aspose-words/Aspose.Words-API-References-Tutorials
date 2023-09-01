@@ -65,7 +65,7 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 ### Aspose.Words for .NET kullanılarak Yatay Birleştirme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

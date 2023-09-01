@@ -88,7 +88,7 @@ Här är den fullständiga källkoden som visar hur man lägger till text från 
 
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
-		// Detta skapar en kopia av den aktuella noden och importerar den (gör den giltig) i sammanhanget
+		//Detta skapar en kopia av den aktuella noden och importerar den (gör den giltig) i sammanhanget
 		// av destinationsdokumentet. Importering innebär att anpassa stilar och listidentifierare korrekt.
 		Node newNode = importer.ImportNode(curNode, true);
 
@@ -109,7 +109,7 @@ S: För att använda funktionen "Lägg till text med bokmärken" i Aspose.Words 
 
 #### F2: Hur får man de stycken som innehåller början och slutet av ett bokmärke i ett Word-dokument?
 
- S: För att få de stycken som innehåller början och slutet av ett bokmärke i ett Word-dokument kan du komma åt`BookmarkStart` och`BookmarkEnd` egenskaper för bokmärket. Här är en exempelkod:
+S: För att få de stycken som innehåller början och slutet av ett bokmärke i ett Word-dokument kan du komma åt`BookmarkStart` och`BookmarkEnd` egenskaper för bokmärket. Här är en exempelkod:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;

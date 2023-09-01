@@ -26,9 +26,16 @@ Tablo işleme için Aspose.Words for Java kullanmanın bazı avantajları şunla
 ## Tablo İşleme Eğitimleri
 
 ### [Word'de Tablo Ekle](./add-table-in-word/)
-
 Aspose.Words for Java'yı kullanarak Word'e tablo eklemeyi öğrenin. Word belgelerinde kolaylıkla iyi biçimlendirilmiş tablolar oluşturun.
-
 ### [Datatable'dan Tablo Oluştur](./generate-table-from-datatable/)
-
 Aspose.Words for Java kullanarak DataTable'dan nasıl tablo oluşturulacağını öğrenin. Biçimlendirilmiş tablolarla profesyonel Word belgelerini zahmetsizce oluşturun. 
+### [Belgelerdeki Tabloları ve Düzenleri Yönetme](./managing-tables-layouts/)
+Aspose.Words'ü kullanarak Java belgelerinizdeki tabloları ve düzenleri nasıl verimli bir şekilde yöneteceğinizi öğrenin. Sorunsuz belge düzeni yönetimi için adım adım rehberlik ve kaynak kodu örnekleri edinin.
+### [Belge Listeleriyle Çalışmak](./working-with-document-lists/)
+Aspose.Words for Java kullanarak Java'da belge listeleriyle nasıl çalışılacağını öğrenin. Bu adım adım kılavuz, verimli belge işleme için kaynak kodu örneklerini içerir.
+### [Belgelerde Tablo ve Satır Oluşturma](./creating-tables-rows/)
+Aspose.Words for Java kullanarak belgelerde tablo ve satırların nasıl oluşturulacağını öğrenin. Kaynak kodu ve SSS'leri içeren bu kapsamlı kılavuzu izleyin.
+### [Belgelerdeki Tabloları Biçimlendirme](./formatting-tables/)
+Aspose.Words for Java kullanarak belgelerdeki tabloları biçimlendirme sanatında ustalaşın. Hassas tablo biçimlendirmesi için adım adım kılavuzu ve kaynak kodu örneklerini keşfedin.
+### [İçindekiler Oluşturma](./table-contents-generation/)
+Aspose.Words for Java'yı kullanarak dinamik İçindekiler Tablosu'nu nasıl oluşturacağınızı öğrenin. Adım adım rehberlik ve kaynak kodu örnekleriyle TOC oluşturma konusunda uzmanlaşın.

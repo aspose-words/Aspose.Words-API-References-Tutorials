@@ -100,7 +100,7 @@ A: Eine vorhandene Signaturzeile in einem Word-Dokument ist ein vordefinierter B
 A: Um eine vorhandene Signaturzeile in einem Word-Dokument mit Aspose.Words für .NET zu signieren, können Sie die folgenden Schritte ausführen:
 1.  Laden Sie das Dokument mit`Document` Klasse und geben Sie den Pfad zur Dokumentdatei an.
 2.  Greifen Sie mit der entsprechenden Methode oder Eigenschaft auf die vorhandene Signaturzeile zu. Sie können zum Beispiel verwenden`GetChild` Methode zum Abrufen der Signaturlinienform.
-3.  Erstellen Sie eine Instanz von`SignOptions`Klasse und legen Sie die fest`SignatureLineId` Eigenschaft auf die ID der vorhandenen Signaturzeile.
+3.  Erstellen Sie eine Instanz von`SignOptions` Klasse und legen Sie die fest`SignatureLineId` Eigenschaft auf die ID der vorhandenen Signaturzeile.
 4.  Stellen Sie die ein`SignatureLineImage` Eigentum der`SignOptions` Klasse zum Bild, das die digitale Signatur darstellt.
 5.  Laden Sie das Signaturzertifikat mit`CertificateHolder` Klasse und geben Sie das erforderliche Zertifikat und Passwort an.
 6.  Benutzen Sie die`DigitalSignatureUtil.Sign` Methode zum Signieren des Dokuments unter Bereitstellung der erforderlichen Parameter, einschließlich der`SignOptions` Objekt.

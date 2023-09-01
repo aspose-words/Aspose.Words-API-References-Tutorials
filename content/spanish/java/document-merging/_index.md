@@ -25,5 +25,14 @@ En general, los tutoriales sobre fusión de documentos que utilizan Aspose.Words
 ## Tutoriales sobre fusión de documentos
 
 ### [Usar la combinación de documentos](./using-document-merging/)
-
 Aprenda a fusionar documentos de Word sin problemas utilizando Aspose.Words para Java. Combine, formatee y maneje conflictos de manera eficiente en solo unos pocos pasos. ¡Empieza ahora!
+### [Combinar y clonar documentos](./combining-cloning-documents/)
+Aprenda a combinar y clonar documentos sin esfuerzo en Java usando Aspose.Words. Esta guía paso a paso cubre todo lo que necesita saber.
+### [Unir y adjuntar documentos](./joining-appending-documents/)
+Aprenda a unir y adjuntar documentos usando Aspose.Words para Java. Guía paso a paso con ejemplos de código para una manipulación eficiente de documentos.
+### [Comparar documentos en busca de diferencias](./comparing-documents-for-differences/)
+Aprenda a comparar documentos en busca de diferencias utilizando Aspose.Words en Java. Nuestra guía paso a paso garantiza una gestión documental precisa.
+### [Fusionar documentos con DocumentBuilder](./merging-documents-documentbuilder/)
+Aprenda a manipular documentos de Word con Aspose.Words para Java. Cree, edite, combine y convierta documentos mediante programación en Java.
+### [División y extracción de documentos](./document-splitting-extraction/)
+Aprenda a dividir y extraer documentos sin esfuerzo utilizando Aspose.Words para Java. Simplifique sus tareas de procesamiento de documentos con una guía paso a paso.

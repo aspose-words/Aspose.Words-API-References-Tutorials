@@ -70,7 +70,7 @@ Congratulazioni! Ora hai formattato una tabella e una cella con bordi diversi ut
 ### Codice sorgente di esempio per formato tabella e cella con bordi diversi utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

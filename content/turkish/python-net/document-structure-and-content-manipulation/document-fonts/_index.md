@@ -145,7 +145,7 @@ Belge oluşturma alanında, yazı tipleri ve metin stili, görsel çekiciliği a
 
 ### Aspose.Words for Python'u kullanarak yazı tipi rengini nasıl değiştiririm?
 
- Yazı tipi rengini değiştirmek için şuraya erişebilirsiniz:`Font`sınıfı seçin ve ayarlayın`color` özelliğini istenilen renk değerine ayarlayın.
+ Yazı tipi rengini değiştirmek için şuraya erişebilirsiniz:`Font` sınıfı seçin ve ayarlayın`color` özelliğini istenilen renk değerine ayarlayın.
 
 ### Aspose.Words'ü kullanarak aynı metne birden fazla stil uygulayabilir miyim?
 

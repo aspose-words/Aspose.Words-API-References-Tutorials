@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 ### نموذج التعليمات البرمجية المصدر للاحتفاظ بأحرف التحكم القديمة باستخدام Aspose.Words لـ .NET 
 ```csharp
 
-//المسار إلى دليل المستندات الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");

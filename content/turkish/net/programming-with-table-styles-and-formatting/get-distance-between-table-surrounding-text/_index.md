@@ -38,7 +38,7 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 ### Aspose.Words for .NET kullanarak Tablo Çevreleyen Metin Arasındaki Mesafeyi Alma için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

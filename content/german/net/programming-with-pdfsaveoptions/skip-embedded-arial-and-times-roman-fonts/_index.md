@@ -76,7 +76,7 @@ A: Um Aspose.Words für .NET so zu konfigurieren, dass Arial- und Times Roman-Sc
 
  Laden Sie das Dokument, das Sie bearbeiten möchten, mit`Document` -Klasse und den angegebenen Dokumentpfad.
 
- Erstellen Sie eine Instanz von`PdfSaveOptions`Klasse und legen Sie die fest`FontEmbeddingMode` Eigentum zu`PdfFontEmbeddingMode.EmbedAll`. Dadurch werden alle Schriftarten außer Arial und Times Roman in die generierte PDF-Datei eingebettet.
+ Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`FontEmbeddingMode` Eigentum zu`PdfFontEmbeddingMode.EmbedAll`. Dadurch werden alle Schriftarten außer Arial und Times Roman in die generierte PDF-Datei eingebettet.
 
  Benutzen Sie die`Save` Methode der`Document` Objekt zum Speichern des Dokuments im PDF-Format unter Angabe der zuvor konfigurierten Speicheroptionen.
 

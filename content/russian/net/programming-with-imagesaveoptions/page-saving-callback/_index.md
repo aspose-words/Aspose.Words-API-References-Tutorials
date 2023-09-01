@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 
 ```csharp 
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 

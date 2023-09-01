@@ -14,7 +14,7 @@ url: /sv/net/join-and-append-documents/insert-document-with-builder/
 
 Se till att du har följande förutsättningar:
 
-- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
+-  Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
 - En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
 ## Steg 2: Öppna käll- och måldokumenten
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Steg 4: Placera DocumentBuilder
 
-Flytta`DocumentBuilder` till slutet av dokumentet med hjälp av`MoveToDocumentEnd` metod. Infoga en sidbrytning för att separera det befintliga innehållet från det infogade dokumentet.
+ Flytta`DocumentBuilder` till slutet av dokumentet med hjälp av`MoveToDocumentEnd` metod. Infoga en sidbrytning för att separera det befintliga innehållet från det infogade dokumentet.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -48,7 +48,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Steg 5: Infoga källdokumentet
 
- Använd`InsertDocument` metod för`DocumentBuilder` klass för att infoga källdokumentet i måldokumentet. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting` för att bevara källformateringen.
+ Använd`InsertDocument` metod för`DocumentBuilder`klass för att infoga källdokumentet i måldokumentet. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting` för att bevara källformateringen.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -67,7 +67,7 @@ Detta slutför implementeringen av att infoga ett dokument i ett annat dokument 
 ### Exempel på källkod för Infoga dokument med Builder med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

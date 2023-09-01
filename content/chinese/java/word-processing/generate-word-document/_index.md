@@ -18,7 +18,7 @@ Aspose.Words for Java 是一个 Java 库，使开发人员无需 Microsoft Word 
 
 ## 2. 设置 Java 开发环境
 
-在开始之前，请确保您的系统上安装了 Java 开发工具包 (JDK)。您可以从Oracle官方网站下载最新的JDK。此外，选择用于 Java 开发的集成开发环境 (IDE)，例如 Eclipse 或 IntelliJ IDEA。
+在开始之前，请确保您的系统上安装了 Java 开发工具包 (JDK)。您可以从 Oracle 网站下载最新的 JDK。此外，选择用于 Java 开发的集成开发环境 (IDE)，例如 Eclipse 或 IntelliJ IDEA。
 
 ## 3. 安装 Aspose.Words for Java
 

@@ -49,7 +49,7 @@ builder.MoveToBookmark("MyBookmark1", false, true);
 
 ## Paso 3: agregar contenido al final del marcador
 
-Una vez que haya llegado al final del marcador, puede agregar contenido utilizando los diversos métodos proporcionados por el`DocumentBuilder` clase. En este ejemplo, utilizamos el`Writeln` método para escribir una línea de texto:
+ Una vez que haya llegado al final del marcador, puede agregar contenido utilizando los diversos métodos proporcionados por el`DocumentBuilder`clase. En este ejemplo, utilizamos el`Writeln` método para escribir una línea de texto:
 
 ```csharp
 builder.Writeln("This is a bookmark.");

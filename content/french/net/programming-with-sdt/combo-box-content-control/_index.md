@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ### Exemple de code source pour le contrôle de contenu de zone de liste déroulante utilisant Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

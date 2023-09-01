@@ -72,7 +72,7 @@ R: Per abilitare il rendering degli effetti DML 3D durante la conversione in PDF
 
  Crea un'istanza di`Document` classe specificando il percorso del documento Word.
 
- Crea un'istanza di`PdfSaveOptions`classe e impostare il file`Dml3DEffectsRenderingMode` proprietà a`Dml3DEffectsRenderingMode.Advanced` per abilitare il rendering avanzato degli effetti DML 3D.
+ Crea un'istanza di`PdfSaveOptions` classe e impostare il file`Dml3DEffectsRenderingMode` proprietà a`Dml3DEffectsRenderingMode.Advanced` per abilitare il rendering avanzato degli effetti DML 3D.
 
  Usa il`Save` metodo del`Document`classe per salvare il documento in formato PDF specificando le opzioni di salvataggio.
 

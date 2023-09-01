@@ -74,7 +74,7 @@ R: Per abilitare l'interpolazione delle immagini durante la conversione in PDF c
 
  Crea un'istanza di`Document` classe specificando il percorso del documento Word.
 
- Crea un'istanza di`PdfSaveOptions`classe e impostare il file`InterpolateImages` proprietà a`true` per abilitare l'interpolazione delle immagini.
+ Crea un'istanza di`PdfSaveOptions` classe e impostare il file`InterpolateImages` proprietà a`true` per abilitare l'interpolazione delle immagini.
 
  Usa il`Save` metodo del`Document`classe per salvare il documento in formato PDF specificando le opzioni di salvataggio.
 

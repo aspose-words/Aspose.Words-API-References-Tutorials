@@ -14,7 +14,7 @@ url: /ru/net/join-and-append-documents/different-page-setup/
 
 Убедитесь, что у вас есть следующие предварительные условия:
 
-- Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
+-  Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
 - Путь к каталогу документов, в котором расположены исходные и целевые документы.
 
 ## Шаг 2. Откройте исходный и целевой документы.
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте параметры страницы для исходного документа.
 
-Настройте параметры страницы исходного документа, чтобы обеспечить правильное продолжение и нумерацию. В этом примере мы устанавливаем начало раздела на`SectionStart.Continuous` и возобновите нумерацию страниц. Мы также следим за тем, чтобы ширина, высота и ориентация страницы соответствовали последнему разделу целевого документа.
+ Настройте параметры страницы исходного документа, чтобы обеспечить правильное продолжение и нумерацию. В этом примере мы устанавливаем начало раздела на`SectionStart.Continuous` и возобновите нумерацию страниц. Мы также следим за тем, чтобы ширина, высота и ориентация страницы соответствовали последнему разделу целевого документа.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -74,18 +74,18 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 ### Пример исходного кода для настройки различных страниц с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Настройте исходный документ так, чтобы он продолжался сразу после окончания целевого документа.
+	// Настройте исходный документ так, чтобы он продолжался сразу после окончания целевого документа.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Перезапустите нумерацию страниц с начала исходного документа.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Чтобы этого не произошло, если исходный документ имеет другие параметры настройки страницы, убедитесь, что
-	// настройки в последнем разделе целевого документа идентичны.
+	//настройки в последнем разделе целевого документа идентичны.
 	// Если в исходном документе есть дополнительные непрерывные разделы,
 	// это необходимо будет повторить для этих разделов.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;

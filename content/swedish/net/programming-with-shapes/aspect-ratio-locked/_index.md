@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ### Exempel på källkod för Aspect Ratio Locked med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

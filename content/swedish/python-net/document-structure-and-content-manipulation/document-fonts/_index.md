@@ -145,7 +145,7 @@ När det gäller skapande av dokument är typsnitt och textstil kraftfulla verkt
 
 ### Hur ändrar jag teckensnittsfärgen med Aspose.Words för Python?
 
- För att ändra teckensnittsfärgen kan du komma åt`Font`klass och ställ in`color` egenskapen till önskat färgvärde.
+ För att ändra teckensnittsfärgen kan du komma åt`Font` klass och ställ in`color` egenskapen till önskat färgvärde.
 
 ### Kan jag använda flera stilar på samma text med Aspose.Words?
 

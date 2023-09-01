@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
  
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");

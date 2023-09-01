@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 Filigranlama, belgenizin gizliliğini korumanıza ve durumunu belirtmenize yardımcı olabilir. Aspose.Words for Java, kullanımı kolay filigranlama özellikleri sunar:
 
 ```java
-// Görünür bir filigran ekleyin
+//Görünür bir filigran ekleyin
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

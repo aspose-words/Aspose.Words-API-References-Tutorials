@@ -53,7 +53,7 @@ public class DocumentMerger {
 }
 ```
 
-Nell'esempio sopra, abbiamo caricato due documenti utilizzando il file`Document` class e quindi utilizzato il file`appendDocument()` metodo per unire il contenuto di "document2.docx" in "document1.docx" preservando la formattazione del documento di origine.
+ Nell'esempio sopra, abbiamo caricato due documenti utilizzando il file`Document` class e quindi utilizzato il file`appendDocument()` metodo per unire il contenuto di "document2.docx" in "document1.docx" preservando la formattazione del documento di origine.
 
 ## 4. Gestione della formattazione del documento
 
@@ -99,7 +99,7 @@ public class DocumentMerger {
 
 ## 6. Inserimento di interruzioni del documento
 
-volte è necessario inserire un'interruzione di pagina o di sezione tra i documenti uniti per mantenere la struttura corretta del documento. Aspose.Words fornisce opzioni per inserire interruzioni durante l'unione:
+A volte è necessario inserire un'interruzione di pagina o di sezione tra i documenti uniti per mantenere la struttura corretta del documento. Aspose.Words fornisce opzioni per inserire interruzioni durante l'unione:
 
 - `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`:
 Unisce i documenti senza interruzioni.
@@ -114,7 +114,7 @@ Scegli il metodo appropriato in base alle tue esigenze specifiche.
 
 ## 7. Unione di sezioni di documenti specifici
 
- In alcuni scenari, potresti voler unire solo sezioni specifiche dei documenti. Ad esempio, unendo solo il contenuto del corpo, escludendo intestazioni e piè di pagina. Aspose.Words ti consente di raggiungere questo livello di granularità utilizzando il file`Range` classe:
+In alcuni scenari, potresti voler unire solo sezioni specifiche dei documenti. Ad esempio, unendo solo il contenuto del corpo, escludendo intestazioni e piè di pagina. Aspose.Words ti consente di raggiungere questo livello di granularità utilizzando il file`Range` classe:
 
 ```java
 import com.aspose.words.*;

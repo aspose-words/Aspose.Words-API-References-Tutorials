@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-I den här artikeln kommer vi att utforska ovanstående C#-källkod för att förstå hur man använder funktionen Visa Dölj bokmärkt innehåll i Aspose.Words för .NET-biblioteket. Den här funktionen låter dig visa eller dölja innehållet i ett bokmärke i ett Word-dokument baserat på ett specifikt villkor vid sammanslagning av data.
+den här artikeln kommer vi att utforska ovanstående C#-källkod för att förstå hur man använder funktionen Visa Dölj bokmärkt innehåll i Aspose.Words för .NET-biblioteket. Den här funktionen låter dig visa eller dölja innehållet i ett bokmärke i ett Word-dokument baserat på ett specifikt villkor vid sammanslagning av data.
 
 ## Förutsättningar
 
@@ -144,13 +144,13 @@ Här är det fullständiga exemplet på källkod för att visa eller dölja bokm
 
 ## Slutsats
 
-den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Visa göm bokmärkt innehåll i Aspose.Words för .NET. Vi har följt en steg-för-steg-guide för att visa eller dölja innehållet i ett bokmärke baserat på ett specifikt villkor vid sammanslagning av data.
+I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Visa göm bokmärkt innehåll i Aspose.Words för .NET. Vi har följt en steg-för-steg-guide för att visa eller dölja innehållet i ett bokmärke baserat på ett specifikt villkor vid sammanslagning av data.
 
 ### Vanliga frågor för att visa gömma bokmärkt innehåll i word-dokument
 
 #### F: Kan jag använda samma villkor för flera bokmärken i samma dokument?
 
- S: Ja, du kan använda samma villkor för flera bokmärken i samma dokument. Upprepa bara steg 2-5 för varje bokmärke, justera bokmärkets namn och eventuellt värdet på`showhide` variabel efter behov.
+S: Ja, du kan använda samma villkor för flera bokmärken i samma dokument. Upprepa bara steg 2-5 för varje bokmärke, justera bokmärkets namn och eventuellt värdet på`showhide` variabel efter behov.
 
 #### F: Hur kan jag lägga till fler villkor för att visa eller dölja bokmärkesinnehåll?
 
@@ -162,7 +162,7 @@ builder. Write("\" = \"true\" ");
 
 #### F: Hur kan jag ta bort ett bokmärke i ett Word-dokument med Aspose.Words för .NET?
 
-S: För att ta bort ett bokmärke i ett Word-dokument med Aspose.Words för .NET, kan du använda`Remove` metod från`Bookmarks` samling av dokumentsortimentet. Här är exempelkod för att radera ett specifikt bokmärke:
+ S: För att ta bort ett bokmärke i ett Word-dokument med Aspose.Words för .NET, kan du använda`Remove` metod från`Bookmarks` samling av dokumentsortimentet. Här är exempelkod för att radera ett specifikt bokmärke:
 
 ```csharp
 doc.Range.Bookmarks.Remove(bookmarkName);

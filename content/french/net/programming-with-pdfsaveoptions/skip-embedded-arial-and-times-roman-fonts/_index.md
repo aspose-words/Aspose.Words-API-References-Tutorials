@@ -76,7 +76,7 @@ R : Pour configurer Aspose.Words for .NET afin qu'il n'intègre pas les polices
 
  Chargez le document que vous souhaitez traiter à l'aide du`Document` classe et le chemin du document spécifié.
 
- Créez une instance du`PdfSaveOptions`classe et définir le`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedAll`. Cela intégrera toutes les polices sauf Arial et Times Roman dans le fichier PDF généré.
+ Créez une instance du`PdfSaveOptions` classe et définir le`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedAll`. Cela intégrera toutes les polices sauf Arial et Times Roman dans le fichier PDF généré.
 
  Utilisez le`Save` méthode du`Document` objet pour enregistrer le document au format PDF en précisant les options d'enregistrement configurées précédemment.
 

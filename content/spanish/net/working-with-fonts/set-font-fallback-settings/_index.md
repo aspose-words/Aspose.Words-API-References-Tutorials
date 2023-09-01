@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ### Código fuente de muestra para establecer la configuración de reserva de fuentes usando Aspose.Words para .NET 
 ```csharp
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

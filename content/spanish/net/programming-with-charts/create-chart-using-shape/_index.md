@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ### Código fuente de ejemplo para crear un gráfico usando formas usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

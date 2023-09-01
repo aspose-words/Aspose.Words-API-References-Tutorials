@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ### مثال على التعليمات البرمجية المصدر لتسمية بيانات المخطط باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

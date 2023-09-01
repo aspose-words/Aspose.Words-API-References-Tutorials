@@ -25,3 +25,13 @@ Padroneggiando la suddivisione dei documenti utilizzando Aspose.Words per Java, 
 ### [Dividi i documenti in modo semplice ed efficiente](./split-documents-easily-efficiently/)
 
 Scopri come dividere in modo efficiente i documenti utilizzando Aspose.Words per Java. Guida passo passo per l'elaborazione dei documenti e la manipolazione delle parole. Aumenta la produttività adesso!
+### [Divisione dei documenti in più file](./splitting-documents-into-multiple-files/)
+Sblocca la potenza di Aspose.Words per Java con la nostra guida passo passo sulla suddivisione dei documenti in più file. Ottieni approfondimenti da esperti ed esempi di codice sorgente.
+### [Suddivisione dei documenti in pagine HTML](./splitting-documents-into-html-pages/)
+Scopri come dividere i documenti Word in pagine HTML utilizzando Aspose.Words per Java. La nostra guida passo passo con il codice sorgente rende il processo semplice ed efficiente. Inizia a convertire i tuoi documenti oggi!
+### [Separazione delle pagine del documento](./document-page-separation/)
+Scopri come eseguire la separazione delle pagine dei documenti utilizzando Aspose.Words per Java. Questa guida completa fornisce istruzioni dettagliate e codice sorgente per un'elaborazione efficiente dei documenti.
+### [Estrazione del contenuto del documento per pagine](./extracting-document-content-pages/)
+Scopri come estrarre il contenuto del documento per pagine utilizzando Aspose.Words per Java. Questa guida passo passo con il codice sorgente ti renderà un esperto in pochissimo tempo.
+### [Tecniche di suddivisione ed estrazione dei documenti](./document-splitting-extraction-techniques/)
+Scopri la suddivisione e l'estrazione dei documenti utilizzando Aspose.Words per Java. Guida passo passo con codice sorgente per una manipolazione efficiente. Sblocca il potere di Aspose

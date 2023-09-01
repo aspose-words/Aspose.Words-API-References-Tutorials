@@ -50,7 +50,7 @@ Console.WriteLine(table.Alignment);
 ### Exempel på källkod för Get Table Position med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

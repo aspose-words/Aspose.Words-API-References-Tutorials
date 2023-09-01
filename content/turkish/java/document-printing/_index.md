@@ -23,5 +23,14 @@ Aspose.Words for Java'yı kullanarak belge yazdırma konusunda uzmanlaşan geli�
 ## Belge Yazdırma Eğitimleri
 
 ### [Belge Yazdırma Kılavuzu](./guide-to-document-printing/)
-
 Aspose.Words for Java'yı kullanarak belgeleri Java'da programlı olarak yazdırmayı öğrenin. Belge işleme ve kelime işleme için adım adım kılavuz. Üretkenliği şimdi artırın!
+### [Belge Yazdırmayı Otomatikleştirme](./automating-document-printing/)
+Aspose.Words for Java'yı kullanarak belge yazdırmayı otomatikleştirmeyi öğrenin. Java'da verimli belge yönetimi için kod örnekleri içeren adım adım kılavuz.
+### [Belgeleri Sayfa Yapısı ile Yazdırma](./printing-documents-page-setup/)
+Aspose.Words for Java kullanarak belgeleri hassas sayfa düzeniyle nasıl yazdıracağınızı öğrenin. Düzenleri, kağıt boyutunu ve daha fazlasını özelleştirin.
+### [Özelleştirilmiş Belge Yazdırma](./customized-document-printing/)
+Aspose.Words for Java ile özelleştirilmiş belge baskısını zahmetsizce nasıl elde edebileceğinizi öğrenin. Bu adım adım kılavuz, kurulumdan gelişmiş özelleştirmeye kadar her şeyi kapsar.
+### [Belirli Belge Sayfalarını Yazdırma](./printing-specific-document-pages/)
+Aspose.Words for Java kullanarak Word belgelerinden belirli sayfaları nasıl yazdıracağınızı öğrenin. Java geliştiricileri için adım adım kılavuz.
+### [PrintDialog ile Belgeyi Yazdırma](./print-document-printdialog/)
+Aspose.Words for Java'yı PrintDialog ile kullanarak belgeleri nasıl yazdıracağınızı öğrenin. Bu adım adım kılavuzda ayarları özelleştirin, belirli sayfaları yazdırın ve daha fazlasını yapın.

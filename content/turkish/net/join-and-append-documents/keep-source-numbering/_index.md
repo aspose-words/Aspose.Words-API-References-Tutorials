@@ -14,7 +14,7 @@ Bu eğitimde, Aspose.Words for .NET kullanılarak numaralandırılmış paragraf
 
 Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+-  Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
 - Kaynak ve hedef belgelerin kaydedileceği belge dizini yolu.
 
 ## 2. Adım: Hedef ve kaynak belgeleri oluşturun
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: İçe aktarırken kaynak numaralandırmayı koruyun
 
- Kaynak belgedeki numaralandırılmış paragrafların numaralandırma formatını korumak için,`ImportFormatOptions` ve ayarla`KeepSourceNumbering` ile`true` . Kullanın`NodeImporter` Düğümleri kaynak belgeden hedef belgeye aktarmak için şunları belirterek`ImportFormatMode.KeepSourceFormatting` ve`importFormatOptions`.
+Kaynak belgedeki numaralandırılmış paragrafların numaralandırma formatını korumak için,`ImportFormatOptions` ve ayarla`KeepSourceNumbering` ile`true` . Kullanın`NodeImporter` Düğümleri kaynak belgeden hedef belgeye aktarmak için şunları belirterek`ImportFormatMode.KeepSourceFormatting` ve`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -64,7 +64,7 @@ Bu, Aspose.Words for .NET kullanarak orijinal numaralandırma formatını korurk
 ### Aspose.Words for .NET kullanarak Kaynak Numaralandırmayı Koru için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

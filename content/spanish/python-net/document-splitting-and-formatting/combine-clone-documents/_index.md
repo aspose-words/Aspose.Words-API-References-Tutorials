@@ -127,7 +127,7 @@ Sí, puedes realizar una clonación superficial para copiar sólo la estructura 
  Utilice el`range.replace()` método junto con las opciones apropiadas para buscar y reemplazar texto de manera eficiente.
 
 ### ¿Aspose.Words admite la modificación de formato?
- Absolutamente, puedes modificar el formato usando métodos como`run.font.size` y`run.font.bold`.
+Absolutamente, puedes modificar el formato usando métodos como`run.font.size` y`run.font.bold`.
 
 ### ¿Dónde puedo acceder a la documentación de Aspose.Words?
  Puede encontrar documentación completa en[Aspose.Words para referencia de la API de Python](https://reference.aspose.com/words/python-net/).

@@ -85,7 +85,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ### Aspose.Words for .NET kullanarak İçindekiler Tablosunu Kaldırmak için örnek kaynak kodu 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Belgeyi yükleyin

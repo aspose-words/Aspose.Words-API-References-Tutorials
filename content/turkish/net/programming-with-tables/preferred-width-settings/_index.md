@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ### Aspose.Words for .NET kullanılarak Tercih Edilen Genişlik Ayarları için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -74,7 +74,7 @@ R: Per aggiornare la proprietà "Ultima stampata" in un documento PDF con Aspose
 
  Crea un'istanza di`Document` classe specificando il percorso del documento Word.
 
- Crea un'istanza di`PdfSaveOptions`classe e impostare il file`UpdateLastPrintedProperty` proprietà a`true` per abilitare l'aggiornamento della proprietà "Ultima stampata".
+ Crea un'istanza di`PdfSaveOptions` classe e impostare il file`UpdateLastPrintedProperty` proprietà a`true` per abilitare l'aggiornamento della proprietà "Ultima stampata".
 
  Usa il`Save` metodo del`Document`classe per salvare il documento in formato PDF specificando le opzioni di salvataggio.
 

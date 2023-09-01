@@ -25,5 +25,14 @@ Insgesamt bieten Tutorials zum Zusammenführen von Dokumenten mit Aspose.Words f
 ## Tutorials zum Zusammenführen von Dokumenten
 
 ### [Verwenden der Dokumentzusammenführung](./using-document-merging/)
-
 Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für Java nahtlos zusammenführen. In nur wenigen Schritten können Sie Konflikte effizient kombinieren, formatieren und bearbeiten. Jetzt loslegen!
+### [Dokumente kombinieren und klonen](./combining-cloning-documents/)
+Erfahren Sie, wie Sie mit Aspose.Words mühelos Dokumente in Java kombinieren und klonen. Diese Schritt-für-Schritt-Anleitung deckt alles ab, was Sie wissen müssen.
+### [Zusammenfügen und Anhängen von Dokumenten](./joining-appending-documents/)
+Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Java verbinden und anhängen. Schritt-für-Schritt-Anleitung mit Codebeispielen für eine effiziente Dokumentenbearbeitung.
+### [Vergleichen von Dokumenten auf Unterschiede](./comparing-documents-for-differences/)
+Erfahren Sie, wie Sie mit Aspose.Words in Java Dokumente auf Unterschiede vergleichen. Unsere Schritt-für-Schritt-Anleitung sorgt für eine korrekte Dokumentenverwaltung.
+### [Zusammenführen von Dokumenten mit DocumentBuilder](./merging-documents-documentbuilder/)
+Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für Java bearbeiten. Erstellen, bearbeiten, zusammenführen und konvertieren Sie Dokumente programmgesteuert in Java.
+### [Dokumentenaufteilung und -extraktion](./document-splitting-extraction/)
+Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Java mühelos aufteilen und extrahieren. Vereinfachen Sie Ihre Dokumentenverarbeitungsaufgaben mit einer Schritt-für-Schritt-Anleitung.

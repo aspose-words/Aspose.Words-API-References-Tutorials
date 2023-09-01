@@ -25,3 +25,13 @@ In diesen Tutorials konzentrieren wir uns nicht nur auf die Erstellung optisch a
 ## Tutorials zur Dokumentgestaltung
 ### [Word-Dokument-Styling](./word-document-styling/)
 Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Java formatieren und verarbeiten! Erstellen Sie visuell beeindruckende Ausgaben mit Quellcode-Beispielen. 
+### [Anwenden von Stilen und Schriftarten in Dokumenten](./applying-styles-fonts/)
+Erfahren Sie, wie Sie mit Aspose.Words für Java Stile und Schriftarten in Dokumenten anwenden. Schritt-für-Schritt-Anleitung mit Quellcode. Schöpfen Sie das volle Potenzial der Dokumentformatierung aus.
+### [Absätze und Text in Dokumenten gestalten](./styling-paragraphs-text/)
+Erfahren Sie, wie Sie mit Aspose.Words für Java Absätze und Text in Dokumenten formatieren. Schritt-für-Schritt-Anleitung mit Quellcode für eine effektive Dokumentformatierung.
+### [Anpassen von Dokumentthemen](./customizing-document-themes/)
+Erfahren Sie, wie Sie Dokumentthemen mit Aspose.Words für Java anpassen. Diese umfassende Anleitung bietet Schritt-für-Schritt-Anleitungen und Quellcode-Beispiele.
+### [Dokument-Wasserzeichen und Seiteneinrichtung](./document-watermarking-page-setup/)
+Erfahren Sie, wie Sie mit Aspose.Words für Java Wasserzeichen anwenden und Seitenkonfigurationen einrichten. Eine umfassende Anleitung mit Quellcode.
+### [Gestaltung der Kopf- und Fußzeile des Dokuments](./document-header-footer-styling/)
+Erfahren Sie in dieser ausführlichen Anleitung, wie Sie Kopf- und Fußzeilen von Dokumenten mit Aspose.Words für Java formatieren. Schritt-für-Schritt-Anleitung und Quellcode enthalten.

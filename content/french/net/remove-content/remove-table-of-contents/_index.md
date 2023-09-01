@@ -85,7 +85,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ### Exemple de code source pour supprimer la table des matières à l’aide d’Aspose.Words pour .NET 
 ```csharp
 
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Charger le document

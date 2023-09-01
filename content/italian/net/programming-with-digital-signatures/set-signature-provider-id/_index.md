@@ -89,7 +89,7 @@ R: Per impostare l'ID del fornitore di firma per una riga di firma in un documen
 1.  Caricare il documento utilizzando`Document` class e specificare il percorso del file del documento.
 2.  Accedi alla riga della firma utilizzando il metodo o la proprietà appropriati. Ad esempio, puoi usare`GetChild` metodo per recuperare la forma della linea della firma.
 3. Recupera l'ID del provider dalla riga della firma.
-4.  Crea un'istanza di`SignOptions`classe e impostare il file`ProviderId` proprietà all'ID provider recuperato.
+4.  Crea un'istanza di`SignOptions` classe e impostare il file`ProviderId` proprietà all'ID provider recuperato.
 5.  Usa il`DigitalSignatureUtil.Sign` metodo per firmare il documento, fornendo i parametri necessari tra cui il`SignOptions` oggetto.
 
 #### D: Come posso accedere alla riga della firma in un documento Word utilizzando Aspose.Words per .NET?

@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```csharp
 
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

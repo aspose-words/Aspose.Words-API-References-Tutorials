@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

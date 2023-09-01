@@ -145,7 +145,7 @@ Im Bereich der Dokumentenerstellung sind Schriftarten und Textgestaltung leistun
 
 ### Wie ändere ich die Schriftfarbe mit Aspose.Words für Python?
 
- Um die Schriftfarbe zu ändern, können Sie auf zugreifen`Font`Klasse und legen Sie die fest`color` Eigenschaft auf den gewünschten Farbwert.
+ Um die Schriftfarbe zu ändern, können Sie auf zugreifen`Font` Klasse und legen Sie die fest`color` Eigenschaft auf den gewünschten Farbwert.
 
 ### Kann ich mit Aspose.Words mehrere Stile auf denselben Text anwenden?
 

@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ### Beispielquellcode für „Form einfügen“ mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

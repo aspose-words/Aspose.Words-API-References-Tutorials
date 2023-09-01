@@ -14,7 +14,7 @@ url: /ru/net/join-and-append-documents/append-document/
 
 Убедитесь, что у вас есть следующие предварительные условия:
 
-- Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
+-  Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
 - Путь к каталогу документов, в котором расположены исходные и целевые документы.
 
 ## Шаг 2. Откройте исходный и целевой документы.
@@ -54,13 +54,13 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
 ### Пример исходного кода для добавления документа с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 	// Просмотрите все разделы исходного документа.
-	// Узлы разделов являются непосредственными дочерними элементами узла Document, поэтому мы можем просто перечислить Document.
+	//Узлы разделов являются непосредственными дочерними элементами узла Document, поэтому мы можем просто перечислить Document.
 	foreach (Section srcSection in srcDoc)
 	{
 		// Поскольку мы копируем раздел из одного документа в другой,

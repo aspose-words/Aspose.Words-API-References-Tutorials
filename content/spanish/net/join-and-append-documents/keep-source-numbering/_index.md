@@ -14,7 +14,7 @@ Este tutorial explica cómo adjuntar un documento de origen a un documento de de
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
+-  Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
 - Una ruta del directorio de documentos donde se guardarán los documentos de origen y de destino.
 
 ## Paso 2: crear los documentos de destino y de origen
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: mantenga la numeración de fuentes al importar
 
- Para preservar el formato de numeración de los párrafos numerados del documento fuente, cree una instancia de`ImportFormatOptions` y establecer`KeepSourceNumbering` a`true` . Usar una`NodeImporter` para importar nodos desde el documento de origen al documento de destino, especificando`ImportFormatMode.KeepSourceFormatting` y el`importFormatOptions`.
+Para preservar el formato de numeración de los párrafos numerados del documento fuente, cree una instancia de`ImportFormatOptions` y establecer`KeepSourceNumbering` a`true` . Usar una`NodeImporter` para importar nodos desde el documento de origen al documento de destino, especificando`ImportFormatMode.KeepSourceFormatting` y el`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -64,7 +64,7 @@ Esto completa la implementación de agregar un documento de origen a un document
 ### Código fuente de ejemplo para Keep Source Numbering usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

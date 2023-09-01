@@ -70,7 +70,7 @@ Asegúrese de especificar la ruta de archivo y el formato adecuados (por ejemplo
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Especifique que queremos encabezados y pies de página diferentes para las primeras páginas, pares e impares.
+// Especifique que queremos encabezados y pies de página diferentes para las primeras páginas, pares e impares.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 

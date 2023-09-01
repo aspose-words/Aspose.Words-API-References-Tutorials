@@ -38,7 +38,7 @@ Chart chart = shape.Chart;
 
 ## الخطوة 3: إضافة بيانات السلسلة إلى المخطط
 
-إضافة بيانات السلسلة إلى المخطط. في هذا المثال، سنضيف ثلاث نقاط بيانات مع قيم X وY وحجم الفقاعة المقابلة.
+أضف بيانات السلسلة إلى المخطط. في هذا المثال، سنضيف ثلاث نقاط بيانات مع قيم X وY وحجم الفقاعة المقابلة.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 },
@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 ### مثال على التعليمات البرمجية المصدر لإدراج مخطط فقاعي باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-//المسار إلى دليل المستندات الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

@@ -19,7 +19,7 @@ Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 ## Adım 1: Belge Dizinlerini Başlatın
 
- Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir`belgelerinizin bulunduğu yola göre değişkendir.
+ Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir` belgelerinizin bulunduğu yola göre değişkendir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Adım 4: HeadersFooters için "LinkToÖnceki" Ayarını Devre Dışı Bırakın
 
- Kaynak belgedeki üstbilgileri ve altbilgileri temizledikten sonra bile "LinkToÖnceki" ayarının`HeadersFooters` hala ayarlanabilir. Bu davranışı önlemek için bunu açıkça ayarlamanız gerekir.`false` ilk bölüm için`HeadersFooters` mülk.
+Kaynak belgedeki üstbilgileri ve altbilgileri temizledikten sonra bile "LinkToÖnceki" ayarının`HeadersFooters` hala ayarlanabilir. Bu davranışı önlemek için bunu açıkça ayarlamanız gerekir.`false` ilk bölüm için`HeadersFooters` mülk.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ Aspose.Words for .NET kullanarak C#'taki "Kaynak Üst Bilgilerinin Alt Bilgileri
 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

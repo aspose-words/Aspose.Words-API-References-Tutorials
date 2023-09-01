@@ -24,7 +24,7 @@ Innan vi dyker in i dokumentsammanslagning, låt oss se till att vi har Aspose.W
  Inkludera Aspose.Words JAR-filen i ditt Java-projekts klassväg.
 
 ### Initiera Aspose.Words:
- I din Java-kod, importera de nödvändiga klasserna från Aspose.Words, och du är redo att börja slå samman dokument.
+ din Java-kod, importera de nödvändiga klasserna från Aspose.Words, och du är redo att börja slå samman dokument.
 
 ## 3. Sammanfoga två dokument
 
@@ -53,7 +53,7 @@ public class DocumentMerger {
 }
 ```
 
- exemplet ovan laddade vi två dokument med hjälp av`Document` klass och använde sedan`appendDocument()` metod för att slå samman innehållet i "document2.docx" till "document1.docx" samtidigt som formateringen av källdokumentet bevaras.
+ I exemplet ovan laddade vi två dokument med hjälp av`Document` klass och använde sedan`appendDocument()` metod för att slå samman innehållet i "document2.docx" till "document1.docx" samtidigt som formateringen av källdokumentet bevaras.
 
 ## 4. Hantera dokumentformatering
 
@@ -114,7 +114,7 @@ Välj lämplig metod baserat på dina specifika krav.
 
 ## 7. Sammanfoga specifika dokumentavsnitt
 
- I vissa scenarier kanske du bara vill slå samman specifika delar av dokumenten. Till exempel slå samman bara brödtexten, exklusive sidhuvuden och sidfötter. Aspose.Words låter dig uppnå denna nivå av granularitet med hjälp av`Range` klass:
+ vissa scenarier kanske du bara vill slå samman specifika delar av dokumenten. Till exempel slå samman bara brödtexten, exklusive sidhuvuden och sidfötter. Aspose.Words låter dig uppnå denna nivå av granularitet med hjälp av`Range` klass:
 
 ```java
 import com.aspose.words.*;

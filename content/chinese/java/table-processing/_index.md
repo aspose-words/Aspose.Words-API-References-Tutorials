@@ -26,9 +26,16 @@ Aspose.Words for Java 表处理教程提供了从基础到高级主题的表处�
 ## 表处理教程
 
 ### [在Word中添加表格](./add-table-in-word/)
-
 学习使用 Aspose.Words for Java 在 Word 中添加表格。在 Word 文档中轻松生成格式良好的表格。
-
 ### [从数据表生成表](./generate-table-from-datatable/)
-
 了解如何使用 Aspose.Words for Java 从 DataTable 生成表格。轻松创建带有格式化表格的专业 Word 文档。 
+### [管理文档中的表格和布局](./managing-tables-layouts/)
+了解如何使用 Aspose.Words 有效管理 Java 文档中的表格和布局。获取无缝文档布局管理的分步指南和源代码示例。
+### [使用文档列表](./working-with-document-lists/)
+了解如何使用 Aspose.Words for Java 在 Java 中处理文档列表。本分步指南包括用于高效文档操作的源代码示例。
+### [在文档中创建表和行](./creating-tables-rows/)
+了解如何使用 Aspose.Words for Java 在文档中创建表格和行。请遵循这份包含源代码和常见问题解答的综合指南。
+### [设置文档中表格的格式](./formatting-tables/)
+掌握使用 Aspose.Words for Java 格式化文档中表格的艺术。探索精确表格格式设置的分步指南和源代码示例。
+### [目录生成](./table-contents-generation/)
+了解如何使用 Aspose.Words for Java 创建动态目录。通过分步指导和源代码示例掌握 TOC 生成。

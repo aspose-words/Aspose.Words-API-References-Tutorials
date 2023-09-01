@@ -76,7 +76,7 @@ No olvide especificar el nombre y la ubicación del archivo modificado en "Nombr
 ### Código fuente de muestra para eliminar pies de página usando Aspose.Words para .NET 
 ```csharp
 
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");

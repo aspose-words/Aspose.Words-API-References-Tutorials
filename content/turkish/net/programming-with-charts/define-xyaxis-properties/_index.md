@@ -92,7 +92,7 @@ Bu, Aspose.Words for .NET kullanılarak bir grafikte XY ekseni özelliklerinin t
 ### Aspose.Words for .NET kullanarak XYAxis Özelliklerini Tanımlamak için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

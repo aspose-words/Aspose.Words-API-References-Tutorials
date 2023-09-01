@@ -50,7 +50,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 ## Schritt 5: Lesezeichentext importieren und kopieren
 
- Wir benutzen ein`NodeImporter` Objekt zum Importieren und Kopieren von Lesezeichentext aus einem Quelldokument in das Zieldokument:
+ Wir benutzen ein`NodeImporter`Objekt zum Importieren und Kopieren von Lesezeichentext aus einem Quelldokument in das Zieldokument:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -76,7 +76,7 @@ Hier ist der vollständige Beispielquellcode, um das Kopieren von Text aus einem
 	// Wir werden dieses Dokument ergänzen.
 	Document dstDoc = new Document();
 
-	//Nehmen wir an, wir werden am Ende des Hauptteils des letzten Abschnitts angehängt.
+	// Nehmen wir an, wir werden am Ende des Hauptteils des letzten Abschnitts angehängt.
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
 	// Wenn Sie mehrmals ohne einen einzigen Kontext importieren, werden viele Stile erstellt.
@@ -100,7 +100,7 @@ A: Um die Funktion „Text mit Lesezeichen kopieren“ in Aspose.Words für .NET
 
 #### F: Wie lade ich ein Quelldokument in Aspose.Words für .NET?
 
- A: Um ein Quelldokument in Aspose.Words für .NET zu laden, können Sie das verwenden`Document`Klasse durch Angabe des Dateipfads des Dokuments. Hier ist ein Beispielcode:
+ A: Um ein Quelldokument in Aspose.Words für .NET zu laden, können Sie das verwenden`Document` Klasse durch Angabe des Dateipfads des Dokuments. Hier ist ein Beispielcode:
 
 ```csharp
 Document srcDoc = new Document("path/to/your/document.docx");
@@ -116,7 +116,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### F: Wie kann ich mit Aspose.Words für .NET den Speicherort der Lesezeichentextkopie in einem Zieldokument angeben?
 
- A: Um anzugeben, wo Sie mit Aspose.Words für .NET kopierten Lesezeichentext in einem Zieldokument hinzufügen möchten, können Sie zum Hauptteil des letzten Abschnitts des Zieldokuments navigieren. Du kannst den ... benutzen`LastSection` Eigenschaft für den Zugriff auf den letzten Abschnitt und die`Body` -Eigenschaft, um auf den Hauptteil dieses Abschnitts zuzugreifen. Hier ist ein Beispielcode:
+A: Um anzugeben, wo Sie mit Aspose.Words für .NET kopierten Lesezeichentext in einem Zieldokument hinzufügen möchten, können Sie zum Hauptteil des letzten Abschnitts des Zieldokuments navigieren. Du kannst den ... benutzen`LastSection` Eigenschaft für den Zugriff auf den letzten Abschnitt und die`Body` -Eigenschaft, um auf den Hauptteil dieses Abschnitts zuzugreifen. Hier ist ein Beispielcode:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
@@ -124,7 +124,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 #### F: Wie importiere und kopiere ich Lesezeichentext aus dem Quelldokument in das Zieldokument mit Aspose.Words für .NET?
 
-A: Um mit Aspose.Words für .NET Lesezeichentext aus einem Quelldokument in ein Zieldokument zu importieren und zu kopieren, können Sie Folgendes verwenden`NodeImporter` Klasse, die das Quelldokument, das Zieldokument und den beizubehaltenden Formatierungsmodus angibt. Dann können Sie das verwenden`AppendBookmarkedText` Methode zum Hinzufügen des Lesezeichentexts zum Zieldokument. Hier ist ein Beispielcode:
+ A: Um mit Aspose.Words für .NET Lesezeichentext aus einem Quelldokument in ein Zieldokument zu importieren und zu kopieren, können Sie Folgendes verwenden`NodeImporter` Klasse, die das Quelldokument, das Zieldokument und den beizubehaltenden Formatierungsmodus angibt. Dann können Sie das verwenden`AppendBookmarkedText` Methode zum Hinzufügen des Lesezeichentexts zum Zieldokument. Hier ist ein Beispielcode:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -133,7 +133,7 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 
 #### F: Wie speichere ich ein Zieldokument, nachdem ich Lesezeichentext mit Aspose.Words für .NET kopiert habe?
 
- A: Um ein Zieldokument zu speichern, nachdem Sie mit Aspose.Words für .NET Text aus einem Lesezeichen kopiert haben, können Sie Folgendes verwenden`Save` Methode der`Document` Objekt, das den Zieldateipfad angibt. Hier ist ein Beispielcode:
+A: Um ein Zieldokument zu speichern, nachdem Sie mit Aspose.Words für .NET Text aus einem Lesezeichen kopiert haben, können Sie Folgendes verwenden`Save` Methode der`Document` Objekt, das den Zieldateipfad angibt. Hier ist ein Beispielcode:
 
 ```csharp
 dstDoc.Save("path/to/your/destination-document.docx");

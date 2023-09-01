@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ### Пример исходного кода для установки папок шрифтов в несколько папок с использованием Aspose.Words для .NET 
 
 ```csharp
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

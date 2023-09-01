@@ -14,7 +14,7 @@ In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET den Inhal
 
 Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
+-  Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
 - Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
 ## Schritt 2: Erstellen Sie ein neues Zieldokument
@@ -58,12 +58,12 @@ Damit ist die Implementierung des Anhängens eines Dokuments an ein leeres Zield
 ### Beispielquellcode für Append Document To Blank mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	//Das Zieldokument ist nicht leer, was häufig dazu führt, dass vor dem angehängten Dokument eine leere Seite angezeigt wird.
+	// Das Zieldokument ist nicht leer, was häufig dazu führt, dass vor dem angehängten Dokument eine leere Seite angezeigt wird.
 	// Dies liegt daran, dass das Basisdokument einen leeren Abschnitt hat und das neue Dokument auf der nächsten Seite begonnen wird.
 	// Entfernen Sie vor dem Anhängen sämtliche Inhalte aus dem Zieldokument.
 	dstDoc.RemoveAllChildren();

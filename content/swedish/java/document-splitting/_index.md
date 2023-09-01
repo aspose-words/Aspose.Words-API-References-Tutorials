@@ -25,3 +25,13 @@ Genom att bemästra dokumentdelning med Aspose.Words för Java kan utvecklare op
 ### [Dela upp dokument enkelt och effektivt](./split-documents-easily-efficiently/)
 
 Lär dig hur du effektivt delar upp dokument med Aspose.Words för Java. Steg-för-steg-guide för dokumentbehandling och ordmanipulation. Öka produktiviteten nu!
+### [Dela upp dokument i flera filer](./splitting-documents-into-multiple-files/)
+Lås upp kraften i Aspose.Words för Java med vår steg-för-steg-guide för att dela upp dokument i flera filer. Få expertinsikter och källkodsexempel.
+### [Dela upp dokument i HTML-sidor](./splitting-documents-into-html-pages/)
+Lär dig hur du delar upp Word-dokument i HTML-sidor med Aspose.Words för Java. Vår steg-för-steg guide med källkod gör processen enkel och effektiv. Börja konvertera dina dokument idag!
+### [Separation av dokumentsidor](./document-page-separation/)
+Lär dig hur du utför dokumentsidaseparering med Aspose.Words för Java. Den här omfattande guiden ger steg-för-steg-instruktioner och källkod för effektiv dokumentbehandling.
+### [Extrahera dokumentinnehåll efter sidor](./extracting-document-content-pages/)
+Lär dig hur du extraherar dokumentinnehåll efter sidor med Aspose.Words för Java. Denna steg-för-steg-guide med källkod gör dig till en expert på nolltid.
+### [Tekniker för dokumentdelning och extraktion](./document-splitting-extraction-techniques/)
+Lär dig att dela och extrahera dokument med Aspose.Words för Java. Steg-för-steg guide med källkod för effektiv manipulation. Lås upp kraften i Aspose

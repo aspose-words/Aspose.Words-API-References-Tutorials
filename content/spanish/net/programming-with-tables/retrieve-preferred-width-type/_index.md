@@ -50,7 +50,7 @@ Aquí usamos el documento para buscar la primera tabla, luego habilitamos el aju
 ### Código fuente de muestra para recuperar el tipo de ancho preferido usando Aspose.Words para .NET 
 
 ```csharp
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

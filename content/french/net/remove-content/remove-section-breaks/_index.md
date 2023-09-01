@@ -56,7 +56,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
  
 ```csharp
 
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Charger le document

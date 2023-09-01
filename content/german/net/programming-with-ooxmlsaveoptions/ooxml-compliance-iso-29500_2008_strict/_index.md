@@ -48,7 +48,7 @@ Jetzt können Sie Quellcode ausführen, um beim Speichern eines Dokuments die Ei
 ### Beispielquellcode für Ooxml Compliance Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp
 
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

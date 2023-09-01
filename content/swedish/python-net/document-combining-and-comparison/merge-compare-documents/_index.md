@@ -111,7 +111,7 @@ Absolut! Aspose.Words möjliggör automatisk generering och manipulering av doku
 
 ### Kan jag slå samman fler än två dokument med det här biblioteket?
 
- Ja, du kan slå ihop valfritt antal dokument med hjälp av`append_document` metod, som visas i handledningen.
+Ja, du kan slå ihop valfritt antal dokument med hjälp av`append_document` metod, som visas i handledningen.
 
 ### Var kan jag komma åt biblioteket och resurserna?
 

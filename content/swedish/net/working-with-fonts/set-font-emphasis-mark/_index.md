@@ -45,7 +45,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ### Exempel på källkod för Set Font Emhasis Mark med Aspose.Words för .NET 
 
 ```csharp
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();

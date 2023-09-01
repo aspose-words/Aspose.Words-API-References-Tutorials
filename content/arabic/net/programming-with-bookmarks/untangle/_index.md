@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## الخطوة 2: الحصول على الصفوف الأصلية من الإشارات المرجعية
 
- نحن نستخدم ال`GetAncestor`طرق استرداد الصفوف الأصلية لعقدتي البداية والنهاية للإشارة المرجعية:
+ نحن نستخدم ال`GetAncestor` طرق استرداد الصفوف الأصلية لعقدتي البداية والنهاية للإشارة المرجعية:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
@@ -56,7 +56,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		// إذا تم العثور على كلا الصفين بشكل جيد، وتم تضمين بداية ونهاية الإشارة المرجعية في الصفوف المجاورة،
+		//إذا تم العثور على كلا الصفين بشكل جيد، وتم تضمين بداية ونهاية الإشارة المرجعية في الصفوف المجاورة،
 		// انقل عقدة نهاية الإشارة المرجعية إلى نهاية الفقرة الأخيرة في الخلية الأخيرة بالصف العلوي.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

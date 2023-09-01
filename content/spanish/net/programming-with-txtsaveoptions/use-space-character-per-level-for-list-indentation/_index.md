@@ -105,7 +105,7 @@ Puede utilizar un espacio por nivel para la sangría de la lista siguiendo estos
 
  Utilizar el`DocumentBuilder`clase para agregar contenido al documento y crear una lista con múltiples niveles de sangría.
 
- Una vez que haya agregado el contenido y configurado la sangría de la lista, use el`TxtSaveOptions`clase y establecer el`ListIndentation.Count` propiedad al número de niveles de sangría y el`ListIndentation.Character` propiedad en el espacio (`' '`) usar.
+ Una vez que haya agregado el contenido y configurado la sangría de la lista, use el`TxtSaveOptions` clase y establecer el`ListIndentation.Count` propiedad al número de niveles de sangría y el`ListIndentation.Character` propiedad en el espacio (`' '`) usar.
 
  Guarde el documento con las opciones especificadas usando el`Save` método de la`Document` clase.
 

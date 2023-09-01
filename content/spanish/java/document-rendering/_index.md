@@ -21,3 +21,13 @@ Renderice documentos sin esfuerzo con los tutoriales de Aspose.Words para Java s
 ## Tutoriales de renderizado de documentos
 ### [ Representación de documentos maestros](./master-document-rendering/)
 ¡Aprenda a renderizar documentos con Aspose.Words para Java! Tutorial paso a paso, código fuente incluido. Mejore las aplicaciones con un procesamiento de documentos fluido.
+### [Representar páginas de documentos como imágenes](./rendering-document-pages-images/)
+Aprenda a representar páginas de documentos como imágenes usando Aspose.Words para Java. Guía paso a paso con ejemplos de código para una conversión eficiente de documentos.
+### [Generación de miniaturas de documentos](./document-thumbnail-generation/)
+Aprenda a generar miniaturas de documentos utilizando Aspose.Words para Java. Mejore las experiencias del usuario con vistas previas visuales.
+### [Representación de formas y gráficos en documentos](./rendering-shapes-graphics/)
+Aprenda cómo mejorar sus documentos con formas y gráficos usando Aspose.Words para Java. Cree contenido visualmente impresionante sin esfuerzo.
+### [Impresión y renderizado de documentos](./document-printing-rendering/)
+Descubra la impresión y renderización eficiente de documentos utilizando Aspose.Words para Java. Aprenda paso a paso con ejemplos de código fuente.
+### [Representar documentos a HTML](./rendering-documents-html/)
+Aprenda a representar documentos en HTML sin esfuerzo con Aspose.Words para Java. Guía paso a paso para una conversión eficiente de documentos.

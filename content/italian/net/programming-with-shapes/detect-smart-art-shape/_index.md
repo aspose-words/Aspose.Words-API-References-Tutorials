@@ -47,7 +47,7 @@ Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ### Codice sorgente di esempio per Rileva Smart Art Shape utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Smart Art.docx");

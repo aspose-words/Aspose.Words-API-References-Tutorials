@@ -250,7 +250,7 @@ Sí, puede aplicar estilos personalizados a sus tablas modificando varias propie
 
 ### ¿Es posible fusionar celdas en una tabla?
 
- Sí, puedes fusionar celdas en una tabla usando el`CellMerge`propiedad proporcionada por Aspose.Words.
+ Sí, puedes fusionar celdas en una tabla usando el`CellMerge` propiedad proporcionada por Aspose.Words.
 
 ### ¿Cómo exporto mis tablas a diferentes formatos?
 

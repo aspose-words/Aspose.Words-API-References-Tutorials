@@ -72,7 +72,7 @@ Asegúrese de especificar la ruta y el nombre del archivo correctos para el docu
 ### Código fuente de muestra para tabla anidada usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

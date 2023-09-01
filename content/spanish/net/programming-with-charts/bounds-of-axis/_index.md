@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ### Código fuente de ejemplo para Bounds Of Axis usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

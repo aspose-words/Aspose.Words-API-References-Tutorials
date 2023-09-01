@@ -49,7 +49,7 @@ builder.MoveToBookmark("MyBookmark1", false, true);
 
 ## Passaggio 3: aggiunta di contenuto alla fine del segnalibro
 
-Una volta spostato alla fine dei segnalibri, puoi aggiungere contenuti utilizzando i vari metodi forniti dal`DocumentBuilder` classe. In questo esempio utilizziamo il file`Writeln` metodo per scrivere una riga di testo:
+ Una volta spostato alla fine dei segnalibri, puoi aggiungere contenuti utilizzando i vari metodi forniti dal`DocumentBuilder`classe. In questo esempio utilizziamo il file`Writeln` metodo per scrivere una riga di testo:
 
 ```csharp
 builder.Writeln("This is a bookmark.");

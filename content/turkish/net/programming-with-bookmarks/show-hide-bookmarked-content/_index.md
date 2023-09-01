@@ -150,7 +150,7 @@ Bu makalede, Aspose.Words for .NET'in Yer İşaretli İçeriği Göster Göster 
 
 #### S: Aynı koşulu, aynı belgedeki birden fazla yer imi için kullanabilir miyim?
 
- C: Evet, aynı koşulu aynı belgedeki birden fazla yer imi için kullanabilirsiniz. Yer imi adını ve isteğe bağlı olarak yer imi değerini ayarlayarak her yer imi için 2-5 arasındaki adımları tekrarlayın.`showhide` gerektiği gibi değişken.
+C: Evet, aynı koşulu aynı belgedeki birden fazla yer imi için kullanabilirsiniz. Yer imi adını ve isteğe bağlı olarak yer imi değerini ayarlayarak her yer imi için 2-5 arasındaki adımları tekrarlayın.`showhide` gerektiği gibi değişken.
 
 #### S: Yer imi içeriğini göstermek veya gizlemek için nasıl daha fazla koşul ekleyebilirim?
 
@@ -162,7 +162,7 @@ builder. Write("\" = \"true\" ");
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini nasıl silebilirim?
 
-C: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini kaldırmak için şu komutu kullanabilirsiniz:`Remove` gelen yöntem`Bookmarks` belge aralığının toplanması. Belirli bir yer imini silmek için örnek kod:
+ C: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini kaldırmak için şu komutu kullanabilirsiniz:`Remove` gelen yöntem`Bookmarks` belge aralığının toplanması. Belirli bir yer imini silmek için örnek kod:
 
 ```csharp
 doc.Range.Bookmarks.Remove(bookmarkName);

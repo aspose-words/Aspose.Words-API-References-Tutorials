@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## 3. Adım: İç İçe Yer İmleri Oluşturma
 
- Ana yer iminin içinde iç içe yer imleri de oluşturabiliriz. Biz de aynısını kullanıyoruz`StartBookmark` Ve`EndBookmark` iç içe yer imleri oluşturma ve sonlandırma yöntemleri:
+Ana yer iminin içinde iç içe yer imleri de oluşturabiliriz. Biz de aynısını kullanıyoruz`StartBookmark` Ve`EndBookmark` iç içe yer imleri oluşturma ve sonlandırma yöntemleri:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -102,7 +102,7 @@ C: Aspose.Words for .NET'te "Yer imleri oluştur" işlevini kullanmak için C# d
 
 #### S: Aspose.Words for .NET'te nasıl belge oluşturulur?
 
- C: Aspose.Words for .NET'te bir belge oluşturmak için`Document`sınıf. İşte örnek bir kod:
+ C: Aspose.Words for .NET'te bir belge oluşturmak için`Document` sınıf. İşte örnek bir kod:
 
 ```csharp
 Document doc = new Document();
@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### S: Aspose.Words for .NET kullanarak bir yer iminin içine nasıl metin eklenir?
 
- C: Aspose.Words for .NET'i kullanarak bir yer iminin içine metin eklemek için`Write` yöntemi`DocumentBuilder` Eklenecek metni belirten nesne. İşte örnek bir kod:
+C: Aspose.Words for .NET'i kullanarak bir yer iminin içine metin eklemek için`Write` yöntemi`DocumentBuilder` Eklenecek metni belirten nesne. İşte örnek bir kod:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

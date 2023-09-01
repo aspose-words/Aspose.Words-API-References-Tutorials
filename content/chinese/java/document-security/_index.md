@@ -23,3 +23,13 @@ url: /zh/java/document-security/
 ## 文档安全教程
 ### [如何保证您的文档安全](./keep-documents-safe-secure/)
 使用 Aspose.Words for Java 保护您的文档。轻松加密、保护和添加数字签名。确保您的数据安全。
+### [使用密码保护文档](./securing-documents-passwords/)
+了解如何使用 Aspose.Words for Java 使用密码保护文档。本分步指南包括源代码和专家提示。保护您的数据。
+### [管理文档权限](./managing-document-permissions/)
+了解如何使用 Aspose.Words for Java 有效管理文档权限。本综合指南提供了分步说明和源代码示例。
+### [文档加密和解密](./document-encryption-decryption/)
+了解如何使用 Aspose.Words for Java 加密和解密文档。通过分步指导和源代码示例有效保护您的数据。
+### [文档中的数字签名](./digital-signatures-in-documents/)
+了解如何使用 Aspose.Words for Java 在文档中实现安全数字签名。通过分步指导和源代码确保文档完整性
+### [文档编辑和数据保护](./document-redaction-data-protection/)
+了解如何使用 Aspose.Words for Java 保护文档并编辑敏感数据。带有源代码的分步指南。

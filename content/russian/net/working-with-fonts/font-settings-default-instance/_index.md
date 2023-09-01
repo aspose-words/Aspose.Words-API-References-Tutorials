@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Пример исходного кода для экземпляра настроек шрифта по умолчанию с использованием Aspose.Words для .NET 
 ```csharp
 
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;

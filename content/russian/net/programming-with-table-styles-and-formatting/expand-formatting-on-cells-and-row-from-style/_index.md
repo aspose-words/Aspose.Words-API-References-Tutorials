@@ -61,7 +61,7 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ### Пример исходного кода для расширения форматирования ячеек и строк из стиля с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

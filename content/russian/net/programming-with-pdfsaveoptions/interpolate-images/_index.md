@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOption
 
  Создайте экземпляр`Document` класс, указывающий путь к документу Word.
 
- Создайте экземпляр`PdfSaveOptions`класс и установите`InterpolateImages` собственность`true` чтобы включить интерполяцию изображения.
+ Создайте экземпляр`PdfSaveOptions` класс и установите`InterpolateImages` собственность`true` чтобы включить интерполяцию изображения.
 
  Использовать`Save` метод`Document`class для сохранения документа в формате PDF, указав параметры сохранения.
 

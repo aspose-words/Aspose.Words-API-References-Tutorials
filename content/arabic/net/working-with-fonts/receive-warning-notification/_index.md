@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ```csharp
 
-//المسار إلى دليل المستندات الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

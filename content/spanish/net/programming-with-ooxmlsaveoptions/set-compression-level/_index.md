@@ -46,7 +46,7 @@ Ahora puede ejecutar el código fuente para establecer el nivel de compresión a
 
 ```csharp
 
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Document.docx");

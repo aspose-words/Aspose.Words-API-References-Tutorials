@@ -14,7 +14,7 @@ url: /ar/net/join-and-append-documents/append-with-import-format-options/
 
 تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
+-  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
 - مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
 
 ## الخطوة 2: افتح المستندات المصدر والوجهة
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## الخطوة 4: إلحاق المستند المصدر بالمستند الوجهة
 
- استخدم ال`AppendDocument`طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.UseDestinationStyles` كمعلمة ثانية لاستخدام أنماط وتنسيقات المستند الوجهة.
+ استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.UseDestinationStyles` كمعلمة ثانية لاستخدام أنماط وتنسيقات المستند الوجهة.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,7 +58,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx
 ### مثال على التعليمات البرمجية المصدر لـ Append With Import Format Options باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");

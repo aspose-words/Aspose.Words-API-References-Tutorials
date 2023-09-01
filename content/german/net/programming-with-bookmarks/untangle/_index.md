@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Schritt 2: Übergeordnete Zeilen aus Lesezeichen abrufen
 
- Wir benutzen das`GetAncestor`Methoden zum Abrufen der übergeordneten Zeilen der Start- und Endknoten des Lesezeichens:
+ Wir benutzen das`GetAncestor` Methoden zum Abrufen der übergeordneten Zeilen der Start- und Endknoten des Lesezeichens:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
@@ -56,7 +56,7 @@ Hier ist das vollständige Quellcodebeispiel zum Entwirren verschachtelter Lesez
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		// Wenn beide Zeilen in Ordnung sind und der Anfang und das Ende des Lesezeichens in benachbarten Zeilen enthalten sind,
+		//Wenn beide Zeilen in Ordnung sind und der Anfang und das Ende des Lesezeichens in benachbarten Zeilen enthalten sind,
 		// Verschieben Sie den Endknoten des Lesezeichens an das Ende des letzten Absatzes in der letzten Zelle der oberen Zeile.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

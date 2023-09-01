@@ -67,7 +67,7 @@ Jetzt können Sie den Quellcode ausführen, um beim Speichern jeder Seite des Do
 
 
 ```csharp 
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 

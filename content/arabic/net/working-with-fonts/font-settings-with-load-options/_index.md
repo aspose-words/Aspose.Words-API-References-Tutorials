@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### نموذج التعليمات البرمجية المصدر لإعدادات الخط مع خيارات التحميل باستخدام Aspose.Words لـ .NET 
 ```csharp
 
-//المسار إلى دليل المستندات الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -57,7 +57,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 #### س: كيف يمكنني تحديد خط افتراضي عند تحميل مستند إلى Aspose.Words؟
 
- ج: لتحديد خط افتراضي عند تحميل مستند في Aspose.Words، يمكنك استخدام الملف`LoadOptions`فئة وتعيين`DefaultFontName` خاصية اسم الخط المطلوب.
+ ج: لتحديد خط افتراضي عند تحميل مستند في Aspose.Words، يمكنك استخدام الملف`LoadOptions` فئة وتعيين`DefaultFontName` خاصية اسم الخط المطلوب.
 
 #### س: ما هي إعدادات الخط الأخرى التي يمكنني تحديدها باستخدام خيارات التحميل في Aspose.Words؟
 

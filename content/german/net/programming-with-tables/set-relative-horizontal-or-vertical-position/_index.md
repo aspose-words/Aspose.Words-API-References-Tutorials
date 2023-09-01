@@ -55,7 +55,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ### Beispielquellcode zum Festlegen der relativen horizontalen oder vertikalen Position mit Aspose.Words für .NET 
 
 ```csharp
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");

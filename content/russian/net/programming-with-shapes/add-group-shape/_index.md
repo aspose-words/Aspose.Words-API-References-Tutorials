@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ### Пример исходного кода для добавления фигуры группы с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

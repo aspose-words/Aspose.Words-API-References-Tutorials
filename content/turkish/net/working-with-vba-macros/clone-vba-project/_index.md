@@ -50,7 +50,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaProject.docm");
 ### Aspose.Words for .NET kullanan Clone Vba Project için örnek kaynak kodu 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");

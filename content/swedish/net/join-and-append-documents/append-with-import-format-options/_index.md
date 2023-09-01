@@ -14,7 +14,7 @@ Denna handledning förklarar hur man använder Aspose.Words för .NET för att l
 
 Se till att du har följande förutsättningar:
 
-- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
+-  Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
 - En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
 ## Steg 2: Öppna käll- och måldokumenten
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Steg 4: Lägg till källdokumentet till måldokumentet
 
- Använd`AppendDocument`metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.UseDestinationStyles` som den andra parametern för att använda måldokumentets stilar och formatering.
+ Använd`AppendDocument` metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.UseDestinationStyles` som den andra parametern för att använda måldokumentets stilar och formatering.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,7 +58,7 @@ Detta slutför implementeringen av att lägga till ett dokument med importformat
 ### Exempel på källkod för Lägg till med importformatalternativ med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");

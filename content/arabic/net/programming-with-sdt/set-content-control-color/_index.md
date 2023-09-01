@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlColor.docx");
 ### مثال على التعليمات البرمجية المصدر لضبط لون التحكم في المحتوى باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

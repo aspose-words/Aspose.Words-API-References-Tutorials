@@ -19,7 +19,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 
 ## Passaggio 1: inizializzare le directory dei documenti
 
- Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir`variabile al percorso in cui si trovano i tuoi documenti.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Passaggio 4: disabilita l'impostazione "LinkToPrevious" per HeadersFooters
 
- Anche dopo aver cancellato intestazioni e piè di pagina dal documento di origine, esiste la possibilità che l'impostazione "LinkToPrevious" per`HeadersFooters` può ancora essere impostato. Per evitare questo comportamento, è necessario impostarlo esplicitamente su`false` per la prima sezione`HeadersFooters` proprietà.
+Anche dopo aver cancellato intestazioni e piè di pagina dal documento di origine, esiste la possibilità che l'impostazione "LinkToPrevious" per`HeadersFooters` può ancora essere impostato. Per evitare questo comportamento, è necessario impostarlo esplicitamente su`false` per la prima sezione`HeadersFooters` proprietà.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ Ecco il codice sorgente completo per la funzionalità "Rimuovi piè di pagina in
 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

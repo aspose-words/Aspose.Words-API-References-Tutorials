@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOption
 
  إنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- إنشاء مثيل لـ`PdfSaveOptions`فئة وتعيين`InterpolateImages` الملكية ل`true` لتمكين الاستيفاء الصورة.
+ إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`InterpolateImages` الملكية ل`true` لتمكين الاستيفاء الصورة.
 
  استخدم ال`Save` طريقة`Document`فئة لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
 

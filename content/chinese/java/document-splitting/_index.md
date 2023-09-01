@@ -25,3 +25,13 @@ url: /zh/java/document-splitting/
 ### [轻松高效地分割文档](./split-documents-easily-efficiently/)
 
 了解如何使用 Aspose.Words for Java 高效分割文档。文档处理和文字操作的分步指南。立即提高生产力！
+### [将文档拆分为多个文件](./splitting-documents-into-multiple-files/)
+通过我们有关将文档拆分为多个文件的分步指南来释放 Aspose.Words for Java 的强大功能。获取专家见解和源代码示例。
+### [将文档拆分为 HTML 页面](./splitting-documents-into-html-pages/)
+了解如何使用 Aspose.Words for Java 将 Word 文档拆分为 HTML 页面。我们带有源代码的分步指南使该过程变得简单高效。立即开始转换您的文档！
+### [文档页面分隔](./document-page-separation/)
+了解如何使用 Aspose.Words for Java 执行文档页面分隔。该综合指南提供了高效文档处理的分步说明和源代码。
+### [按页面提取文档内容](./extracting-document-content-pages/)
+了解如何使用 Aspose.Words for Java 按页面提取文档内容。这个带有源代码的分步指南将使您立即成为专家。
+### [文档分割和提取技术](./document-splitting-extraction-techniques/)
+使用 Aspose.Words for Java 学习文档分割和提取。带有源代码的分步指南，可实现高效操作。释放 Aspose 的力量

@@ -111,7 +111,7 @@ Absolut! Aspose.Words ermöglicht die automatisierte Erstellung und Bearbeitung 
 
 ### Kann ich mit dieser Bibliothek mehr als zwei Dokumente zusammenführen?
 
- Ja, Sie können mit dem beliebig viele Dokumente zusammenführen`append_document` Methode, wie im Tutorial gezeigt.
+Ja, Sie können mit dem beliebig viele Dokumente zusammenführen`append_document` Methode, wie im Tutorial gezeigt.
 
 ### Wo kann ich auf die Bibliothek und die Ressourcen zugreifen?
 

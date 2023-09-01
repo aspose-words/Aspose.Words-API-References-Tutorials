@@ -19,7 +19,7 @@ Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 ## Adım 1: Belge Dizinlerini Başlatın
 
- Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir`belgelerinizin bulunduğu yola göre değişkendir.
+ Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir` belgelerinizin bulunduğu yola göre değişkendir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 5. Adım: Sayfa Düzenini Tekrar Güncelleyin
 
- Kaynak belgeyi ekledikten sonra aramanız gerekir.`UpdatePageLayout` Ekleme işleminden sonra yapılan değişikliklerin oluşturulan çıktıya yansıtıldığından emin olmak için hedef belgedeki yöntemi tekrar kullanın.
+ Kaynak belgeyi ekledikten sonra aramanız gerekir.`UpdatePageLayout`Ekleme işleminden sonra yapılan değişikliklerin oluşturulan çıktıya yansıtıldığından emin olmak için hedef belgedeki yöntemi tekrar kullanın.
 
 ```csharp
 dstDoc.UpdatePageLayout();
@@ -71,12 +71,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 Aspose.Words for .NET kullanarak C#'taki "Sayfa Düzenini Güncelle" özelliğinin tam kaynak kodu:
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Hedef belge PDF'ye, resme vb. dönüştürülürse.
+	// Hedef belge PDF'ye, resme vb. dönüştürülürse.
 	// veya UpdatePageLayout kaynak belgeden önce çağrılır. Eklidir,
 	// bu durumda daha sonra yapılan değişiklikler oluşturulan çıktıya yansıtılmayacaktır
 	dstDoc.UpdatePageLayout();

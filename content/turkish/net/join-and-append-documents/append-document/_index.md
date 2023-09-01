@@ -14,7 +14,7 @@ Bu eğitimde Aspose.Words for .NET'in bir belgenin içeriğini diğerine eklemek
 
 Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+-  Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
 - Kaynak ve hedef belgelerin bulunduğu belge dizini yolu.
 
 ## 2. Adım: Kaynak ve hedef belgeleri açın
@@ -54,13 +54,13 @@ Bu, Aspose.Words for .NET kullanarak belge ekleme işlemini tamamlar.
 ### Aspose.Words for .NET kullanarak Belge Ekleme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 	// Kaynak belgedeki tüm bölümler arasında dolaşın.
-	// Bölüm düğümleri Belge düğümünün doğrudan alt öğeleridir, dolayısıyla Belgeyi yalnızca numaralandırabiliriz.
+	//Bölüm düğümleri Belge düğümünün doğrudan alt öğeleridir, dolayısıyla Belgeyi yalnızca numaralandırabiliriz.
 	foreach (Section srcSection in srcDoc)
 	{
 		// Bir bölümü bir belgeden diğerine kopyaladığımız için,

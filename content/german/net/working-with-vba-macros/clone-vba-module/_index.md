@@ -54,7 +54,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 ### Beispielquellcode für Clone Vba Module mit Aspose.Words für .NET 
 ```csharp
 
-//Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");

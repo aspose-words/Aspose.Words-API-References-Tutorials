@@ -77,7 +77,7 @@ R : Pour configurer Aspose.Words for .NET afin qu'il n'intègre pas les polices
 
  Chargez le document Word que vous souhaitez convertir en PDF à l'aide du`Document` classe et le chemin du document spécifié.
 
- Créez une instance du`PdfSaveOptions`classe et définir le`UseCoreFonts` propriété à`true`. Cela évitera l'intégration de polices de base dans le fichier PDF généré.
+ Créez une instance du`PdfSaveOptions` classe et définir le`UseCoreFonts` propriété à`true`. Cela évitera l'intégration de polices de base dans le fichier PDF généré.
 
  Utilisez le`Save` méthode du`Document` objet pour enregistrer le document au format PDF en précisant les options de conversion configurées précédemment.
 

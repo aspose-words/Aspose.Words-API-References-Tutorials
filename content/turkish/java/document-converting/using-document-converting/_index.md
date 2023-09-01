@@ -18,30 +18,30 @@ Aspose.Words for Java, Java geliştiricilerinin Word belgelerini programlı olar
 
 Belgeleri dönüştürmek, özellikle çeşitli formatlar, yazı tipleri, düzenler ve stillerle uğraşırken karmaşık bir süreç olabilir. Aspose.Words for Java, belge dönüştürme için neden ideal seçim olduğuna dair çeşitli ikna edici nedenler sunuyor:
 
-### Kapsamlı Format Desteği: 
+## Kapsamlı Format Desteği: 
 Aspose.Words, DOCX, DOC, RTF, PDF, EPUB, HTML ve daha fazlasını içeren çok çeşitli belge formatlarını destekler. Bu, belgeleri zahmetsizce çeşitli formatlara dönüştürebileceğiniz anlamına gelir.
 
-### Yüksek Doğrulukta Dönüşüm: 
+## Yüksek Doğrulukta Dönüşüm: 
 Belgeleri dönüştürürken içeriğin aslına uygunluğunu korumak çok önemlidir. Aspose.Words, dönüştürülen belgelerin orijinal formatı, stilleri, görüntüleri ve diğer öğeleri doğru bir şekilde korumasını sağlar.
 
-### Belge Birleştirme: 
+## Belge Birleştirme: 
 Aspose.Words, birden fazla belgeyi tek bir belgede birleştirmenize olanak tanıyarak bilgilerin yönetilmesini ve dağıtılmasını kolaylaştırır.
 
-### Kelime İşleme Özellikleri: 
+## Kelime İşleme Özellikleri: 
 Aspose.Words ile metni bulma ve değiştirme, paragraflar ve tablolarla çalışma ve belge meta verilerini işleme gibi gelişmiş kelime işlem görevlerini gerçekleştirebilirsiniz.
 
-### Platform Bağımsızlığı: 
+## Platform Bağımsızlığı: 
 Aspose.Words platformdan bağımsızdır, yani çeşitli işletim sistemlerinde sorunsuz bir şekilde çalışır, bu da onu çok yönlü ve farklı geliştirme ortamlarına uyarlanabilir kılar.
 
 ## Aspose.Words for Java Kullanarak Belge Dönüştürme
 
 Aspose.Words for Java'nın belge dönüştürme özelliğinin nasıl kullanılacağını adım adım anlatan kılavuzu inceleyelim. Bu örnekte bir Word belgesini PDF'ye dönüştüreceğiz.
 
-### Adım 1: Ortamı Ayarlama
+## Adım 1: Ortamı Ayarlama
 
 Başlamadan önce projenize Aspose.Words for Java'yı indirip yüklediğinizden emin olun. Değerlendirme sınırlamalarından kaçınmak için Aspose web sitesinden geçerli bir lisans edinin.
 
-### Adım 2: Belgeyi Yükleme
+## Adım 2: Belgeyi Yükleme
 
 Başlamak için dönüştürmek istediğiniz Word belgesini yükleyin:
 
@@ -50,7 +50,7 @@ Başlamak için dönüştürmek istediğiniz Word belgesini yükleyin:
 Document doc = new Document("input.docx");
 ```
 
-### 3. Adım: PDF'ye Dönüştürme
+## 3. Adım: PDF'ye Dönüştürme
 
 Ardından, yüklenen Word belgesini PDF'ye dönüştürün:
 
@@ -59,32 +59,32 @@ Ardından, yüklenen Word belgesini PDF'ye dönüştürün:
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
-### Adım 4: Diğer Formatlara Dönüştürme
+## Adım 4: Diğer Formatlara Dönüştürme
 
 Aspose.Words for Java, PDF'nin yanı sıra belgeleri çeşitli diğer formatlara dönüştürmenize de olanak tanır. İşte bazı örnekler:
 
-#### RTF'ye Dönüştürme
+### RTF'ye Dönüştürme
 
 ```java
 // Belgeyi RTF olarak kaydedin
 doc.save("output.rtf", SaveFormat.RTF);
 ```
 
-#### HTML'ye dönüştürme
+### HTML'ye dönüştürme
 
 ```java
 // Belgeyi HTML olarak kaydedin
 doc.save("output.html", SaveFormat.HTML);
 ```
 
-#### EPUB'a dönüştürme
+### EPUB'a dönüştürme
 
 ```java
 // Belgeyi EPUB olarak kaydedin
 doc.save("output.epub", SaveFormat.EPUB);
 ```
 
-### Adım 5: Yazı Tipi Değiştirmeyi Yönetme
+## Adım 5: Yazı Tipi Değiştirmeyi Yönetme
 
 Yazı tipi değişikliği, belgeleri dönüştürürken sık karşılaşılan bir zorluktur. Aspose.Words, dönüştürülen belgenin görsel tutarlılığını sağlamak amacıyla yazı tipi değişimini gerçekleştirecek bir mekanizma sağlar:
 
@@ -93,7 +93,7 @@ Yazı tipi değişikliği, belgeleri dönüştürürken sık karşılaşılan bi
 FontSettings.setFontsFolder("/path/to/fonts", true);
 ```
 
-### Adım 6: Dönüşüm Sürecini Özelleştirme
+## Adım 6: Dönüşüm Sürecini Özelleştirme
 
 Aspose.Words, belge dönüştürme sürecini özelleştirmek için geniş bir seçenek yelpazesi sunar. Örneğin, dönüştürme için sayfa aralığını ayarlayabilir veya PDF'ye kaydederken görüntü çözünürlüğünü belirleyebilirsiniz:
 
@@ -110,13 +110,13 @@ options.setJpegQuality(300);
 
 Sorunsuz ve verimli bir belge dönüştürme işlemi sağlamak için aşağıdaki ipuçlarını göz önünde bulundurun:
 
-### Belge Formatı Uyumluluğu: 
+## Belge Formatı Uyumluluğu: 
  Kaynak ve hedef formatların Aspose.Words ile uyumlu olduğundan emin olun.[Aspose.Words Java API Referansı](https://reference.aspose.com/words/java/) desteklenen formatlar için.
 
-### İstisnaları İşleme: 
+## İstisnaları İşleme: 
 Çok sayıda belgeyle uğraşırken dönüştürme işlemi sırasında hatalar meydana gelebilir. Bu sorunları incelikli bir şekilde tanımlamak ve çözmek için uygun istisna işlemeyi uygulayın.
 
-### Kalite güvencesi: 
+## Kalite güvencesi: 
 Belge dönüştürme özelliğini bir üretim ortamında dağıtmadan önce, çıktının doğruluğunu ve aslına uygunluğunu doğrulamak için dönüştürme sürecini çeşitli belge türleri ve boyutlarıyla kapsamlı bir şekilde test edin.
 
 ## Çözüm

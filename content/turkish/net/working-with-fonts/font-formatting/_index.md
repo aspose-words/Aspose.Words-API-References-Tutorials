@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ### Aspose.Words for .NET kullanarak Yazı Tipi Biçimlendirmesi için örnek kaynak kodu 
 ```csharp
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

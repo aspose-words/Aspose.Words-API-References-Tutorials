@@ -78,7 +78,7 @@ L'ajout de FAQ aux didacticiels améliore considérablement l'expérience d'appr
 
 #### Q : Où puis-je trouver la documentation de licence pour Aspose.Words pour .NET ?
 
- R : Vous pouvez trouver la documentation de licence pour Aspose. Mots pour .NET sur le[Références API](https://reference.aspose.com/words/net/). La documentation fournit des instructions détaillées et des exemples pour l'application de licences, y compris l'application de licences à partir de fichiers.
+R : Vous pouvez trouver la documentation de licence pour Aspose. Mots pour .NET sur le[Références API](https://reference.aspose.com/words/net/). La documentation fournit des instructions détaillées et des exemples pour l'application de licences, y compris l'application de licences à partir de fichiers.
 
 #### Q : Quels formats de fichiers Aspose.Words for .NET prend-il en charge pour les fichiers de licence ?
 
@@ -90,4 +90,4 @@ R : Aspose.Words for .NET prend en charge les fichiers de licence au format XML.
 
 #### Q : Que se passe-t-il si je n'applique pas de licence dans Aspose.Words pour .NET ?
 
-R : Si vous n'appliquez pas de licence dans Aspose.Words for .NET, la bibliothèque fonctionnera en mode évaluation. En mode évaluation, certaines limitations et filigranes peuvent être imposés sur les documents générés. Pour supprimer ces limitations, il est recommandé d'appliquer une licence valide.
+: Si vous n'appliquez pas de licence dans Aspose.Words for .NET, la bibliothèque fonctionnera en mode évaluation. En mode évaluation, certaines limitations et filigranes peuvent être imposés sur les documents générés. Pour supprimer ces limitations, il est recommandé d'appliquer une licence valide.

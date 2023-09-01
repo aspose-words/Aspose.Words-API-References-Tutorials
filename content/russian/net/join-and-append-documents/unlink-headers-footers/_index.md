@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/unlink-headers-footers/
 
 ## Шаг 1. Инициализируйте каталоги документов
 
- Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir`переменная пути, по которому расположены ваши документы.
+ Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir` переменная пути, по которому расположены ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Шаг 5. Сохраните окончательный документ
 
-Наконец, сохраните объединенный документ с включенной функцией «Отсоединить колонтитулы», используя`Save` метод`Document` сорт.
+ Наконец, сохраните объединенный документ с включенной функцией «Отсоединить колонтитулы», используя`Save` метод`Document` сорт.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Вот полный исходный код функции «Отсоединить верхние и нижние колонтитулы» на C# с использованием Aspose.Words для .NET:
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

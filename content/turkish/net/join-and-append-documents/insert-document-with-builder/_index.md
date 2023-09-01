@@ -14,7 +14,7 @@ url: /tr/net/join-and-append-documents/insert-document-with-builder/
 
 Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+-  Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
 - Kaynak ve hedef belgelerin bulunduğu belge dizini yolu.
 
 ## 2. Adım: Kaynak ve hedef belgeleri açın
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Adım 4: DocumentBuilder'ı konumlandırın
 
-Taşı`DocumentBuilder` kullanarak belgenin sonuna kadar`MoveToDocumentEnd` yöntem. Mevcut içeriği eklenen belgeden ayırmak için sayfa sonu ekleyin.
+ Taşı`DocumentBuilder` kullanarak belgenin sonuna kadar`MoveToDocumentEnd` yöntem. Mevcut içeriği eklenen belgeden ayırmak için sayfa sonu ekleyin.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -48,7 +48,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## 5. Adım: Kaynak belgeyi ekleyin
 
- Kullan`InsertDocument` yöntemi`DocumentBuilder` Kaynak belgeyi hedef belgeye eklemek için sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak biçimlendirmesini korumak için.
+ Kullan`InsertDocument` yöntemi`DocumentBuilder`Kaynak belgeyi hedef belgeye eklemek için sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak biçimlendirmesini korumak için.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -67,7 +67,7 @@ Bu, Aspose.Words for .NET kullanarak bir belgenin başka bir belgeye eklenmesi i
 ### Aspose.Words for .NET kullanarak Insert Document With Builder için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

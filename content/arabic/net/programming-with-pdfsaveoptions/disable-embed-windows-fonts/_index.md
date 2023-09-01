@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 
  قم بتحميل المستند الذي تريد تحويله إلى PDF باستخدام الملف`Document` مسار الطبقة والوثيقة.
 
- إنشاء مثيل لـ`PdfSaveOptions`فئة وتعيين`FontEmbeddingMode` الملكية ل`PdfFontEmbeddingMode.EmbedNone`. يؤدي هذا إلى تعطيل تضمين خطوط Windows في ملف PDF الذي تم إنشاؤه.
+ إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`FontEmbeddingMode` الملكية ل`PdfFontEmbeddingMode.EmbedNone`. يؤدي هذا إلى تعطيل تضمين خطوط Windows في ملف PDF الذي تم إنشاؤه.
 
  استخدم ال`Save` طريقة`Document` كائن لتحويل المستند إلى PDF مع تحديد خيارات التحويل التي تم تكوينها مسبقًا.
 

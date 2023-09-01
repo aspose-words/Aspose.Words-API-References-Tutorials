@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Exemple de code source pour Spécifier la police par défaut lors du rendu à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -62,7 +62,7 @@ Dans ce didacticiel, nous avons appris à spécifier la police par défaut lors 
 
 #### Q : Comment puis-je spécifier une police par défaut lors de la conversion en PDF dans Aspose.Words ?
 
- R : Pour spécifier une police par défaut lors de la conversion en PDF dans Aspose.Words, vous pouvez utiliser l'option`PdfOptions`classe et définir le`DefaultFontName` propriété au nom de la police souhaitée.
+ R : Pour spécifier une police par défaut lors de la conversion en PDF dans Aspose.Words, vous pouvez utiliser l'option`PdfOptions` classe et définir le`DefaultFontName` propriété au nom de la police souhaitée.
 
 #### Q : Que se passe-t-il si la police par défaut n'est pas disponible lors de la conversion en PDF ?
 

@@ -76,7 +76,7 @@ Congratulazioni! Ora hai applicato un bordo di contorno a una tabella utilizzand
 ### Codice sorgente di esempio per Applicare il bordo del contorno utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

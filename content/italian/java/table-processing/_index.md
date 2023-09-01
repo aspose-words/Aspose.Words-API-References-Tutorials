@@ -26,9 +26,16 @@ Ecco alcuni dei vantaggi derivanti dall'utilizzo di Aspose.Words per Java per l'
 ## Tutorial sull'elaborazione delle tabelle
 
 ### [Aggiungi tabella in Word](./add-table-in-word/)
-
 Impara ad aggiungere tabelle in Word utilizzando Aspose.Words per Java. Genera facilmente tabelle ben formattate nei documenti Word.
-
 ### [Genera tabella da Datatable](./generate-table-from-datatable/)
-
 Scopri come generare una tabella da un DataTable utilizzando Aspose.Words per Java. Crea documenti Word professionali con tabelle formattate senza sforzo. 
+### [Gestione di tabelle e layout nei documenti](./managing-tables-layouts/)
+Scopri come gestire in modo efficiente tabelle e layout nei tuoi documenti Java utilizzando Aspose.Words. Ottieni indicazioni dettagliate ed esempi di codice sorgente per una gestione fluida del layout dei documenti.
+### [Lavorare con gli elenchi di documenti](./working-with-document-lists/)
+Scopri come lavorare con gli elenchi di documenti in Java utilizzando Aspose.Words per Java. Questa guida passo passo include esempi di codice sorgente per una manipolazione efficiente dei documenti.
+### [Creazione di tabelle e righe nei documenti](./creating-tables-rows/)
+Scopri come creare tabelle e righe nei documenti utilizzando Aspose.Words per Java. Segui questa guida completa con il codice sorgente e le domande frequenti.
+### [Formattazione delle tabelle nei documenti](./formatting-tables/)
+Padroneggia l'arte della formattazione delle tabelle nei documenti utilizzando Aspose.Words per Java. Esplora indicazioni dettagliate ed esempi di codice sorgente per una formattazione precisa delle tabelle.
+### [Generazione del sommario](./table-contents-generation/)
+Scopri come creare un sommario dinamico utilizzando Aspose.Words per Java. Generazione di un sommario principale con guida passo passo ed esempi di codice sorgente.

@@ -14,7 +14,7 @@ Questo tutorial spiega come utilizzare Aspose.Words per .NET per aggiungere un d
 
 Assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
+-  Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
 - Un percorso di directory di documenti in cui si trovano i documenti di origine e di destinazione.
 
 ## Passaggio 2: apri i documenti di origine e di destinazione
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: imposta le opzioni del formato di importazione
 
- Crea un'istanza di`ImportFormatOptions`classe e impostare il file`IgnoreTextBoxes` proprietà a`false`. Ciò garantisce che le caselle di testo vengano incluse durante il processo di aggiunta preservandone la formattazione.
+ Crea un'istanza di`ImportFormatOptions` classe e impostare il file`IgnoreTextBoxes` proprietà a`false`. Ciò garantisce che le caselle di testo vengano incluse durante il processo di aggiunta preservandone la formattazione.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Passaggio 4: aggiungi il contenuto della casella di testo
 
- Creare un`NodeImporter`oggetto e utilizzarlo per importare i nodi della casella di testo dal documento di origine al documento di destinazione. Scorri ogni paragrafo del documento di origine e importalo nel documento di destinazione.
+ Creare un`NodeImporter` oggetto e utilizzarlo per importare i nodi della casella di testo dal documento di origine al documento di destinazione. Scorri ogni paragrafo del documento di origine e importalo nel documento di destinazione.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -64,7 +64,7 @@ Ciò completa l'implementazione dell'aggiunta di un documento preservando la for
 ### Codice sorgente di esempio per Ignora caselle di testo utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

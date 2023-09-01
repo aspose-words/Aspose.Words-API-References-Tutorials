@@ -65,7 +65,7 @@ Bu makalede Aspose.Words for .NET'in Erişim Yer İşaretleri özelliğinin nas�
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesini nasıl yükleyebilirim?
 
- C: Aspose.Words for .NET'i kullanarak bir Word belgesi yüklemek için bir Word belgesini başlatabilirsiniz.`Document` belgenin dosya yolunu belirterek nesneyi seçin. İşte örnek bir kod:
+ C: Aspose.Words for .NET'i kullanarak bir Word belgesi yüklemek için bir Word belgesini başlatabilirsiniz.`Document`belgenin dosya yolunu belirterek nesneyi seçin. İşte örnek bir kod:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

@@ -111,7 +111,7 @@ Assolutamente! Aspose.Words consente la generazione e la manipolazione automatiz
 
 ### Posso unire più di due documenti utilizzando questa libreria?
 
- Sì, puoi unire un numero qualsiasi di documenti utilizzando il file`append_document` metodo, come mostrato nel tutorial.
+Sì, puoi unire un numero qualsiasi di documenti utilizzando il file`append_document` metodo, come mostrato nel tutorial.
 
 ### Dove posso accedere alla biblioteca e alle risorse?
 

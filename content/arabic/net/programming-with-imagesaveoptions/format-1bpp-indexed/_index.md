@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
 ```csharp 
  
-			 //المسار إلى دليل المستندات الخاص بك
+			 // المسار إلى دليل المستندات الخاص بك
 			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
             
             Document doc = new Document(dataDir + "Rendering.docx");

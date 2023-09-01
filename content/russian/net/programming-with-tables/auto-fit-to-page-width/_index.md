@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ### Пример исходного кода для автоматического соответствия ширине страницы с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

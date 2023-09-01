@@ -23,3 +23,13 @@ Genom att bemästra dokumentsäkerheten med Aspose.Words för Java kan utvecklar
 ## Handledning för dokumentsäkerhet
 ### [Hur du håller dina dokument säkra och säkra](./keep-documents-safe-secure/)
 Säkra dina dokument med Aspose.Words för Java. Kryptera, skydda och lägg till digitala signaturer utan ansträngning. Håll din data säker.
+### [Säkra dokument med lösenord](./securing-documents-passwords/)
+Upptäck hur du säkrar dokument med lösenord med Aspose.Words för Java. Den här steg-för-steg-guiden innehåller källkod och experttips. Håll dina data skyddade.
+### [Hantera dokumentbehörigheter](./managing-document-permissions/)
+Lär dig hur du hanterar dokumentbehörigheter effektivt med Aspose.Words för Java. Den här omfattande guiden ger steg-för-steg-instruktioner och exempel på källkod.
+### [Dokumentkryptering och dekryptering](./document-encryption-decryption/)
+Lär dig hur du krypterar och dekrypterar dokument med Aspose.Words för Java. Säkra dina data effektivt med steg-för-steg-vägledning och källkodsexempel.
+### [Digitala signaturer i dokument](./digital-signatures-in-documents/)
+Lär dig hur du implementerar säkra digitala signaturer i dokument med Aspose.Words för Java. Säkerställ dokumentintegritet med steg-för-steg-vägledning och källkod
+### [Dokumentredigering och dataskydd](./document-redaction-data-protection/)
+Lär dig hur du skyddar dina dokument och redigerar känslig data med Aspose.Words för Java. Steg-för-steg guide med källkod.

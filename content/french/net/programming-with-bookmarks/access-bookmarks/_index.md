@@ -65,7 +65,7 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 #### Q : Comment puis-je télécharger un document Word à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour charger un document Word à l'aide d'Aspose.Words for .NET, vous pouvez instancier un`Document` objet en spécifiant le chemin du fichier du document. Voici un exemple de code :
+ R : Pour charger un document Word à l'aide d'Aspose.Words for .NET, vous pouvez instancier un`Document`objet en spécifiant le chemin du fichier du document. Voici un exemple de code :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -90,7 +90,7 @@ Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
 
 #### Q : Quelle bibliothèque est requise pour utiliser la fonctionnalité d'accès aux favoris dans Aspose.Words for .NET ?
 
-: Pour utiliser la fonctionnalité d'accès aux favoris dans Aspose.Words pour .NET, vous avez besoin de la bibliothèque Aspose.Words. Assurez-vous que cette bibliothèque est installée dans votre environnement de développement .NET.
+R : Pour utiliser la fonctionnalité d'accès aux favoris dans Aspose.Words pour .NET, vous avez besoin de la bibliothèque Aspose.Words. Assurez-vous que cette bibliothèque est installée dans votre environnement de développement .NET.
 
 #### Q : Existe-t-il d’autres moyens d’accéder aux signets dans un document Word ?
 

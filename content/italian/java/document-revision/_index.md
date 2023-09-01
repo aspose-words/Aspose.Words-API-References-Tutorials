@@ -27,3 +27,13 @@ Padroneggiando la revisione dei documenti con Aspose.Words per Java, gli svilupp
 ## Tutorial sulla revisione dei documenti
 ### [La guida definitiva alla revisione dei documenti](./guide-document-revision/)
 Revisione del documento principale con Aspose.Words per Java! Gestisci in modo efficiente le modifiche, accetta/rifiuta le revisioni e collabora senza problemi. Inizia ora!
+### [Monitoraggio e gestione delle revisioni dei documenti](./tracking-managing-document-revisions/)
+Scopri come tenere traccia e gestire le revisioni dei documenti con Aspose.Words per Java in questa guida completa. Ottieni istruzioni dettagliate ed esempi di codice sorgente.
+### [Confronto delle versioni dei documenti](./comparing-document-versions/)
+Scopri come confrontare le versioni dei documenti utilizzando Aspose.Words per Java. Guida passo passo per un controllo efficiente della versione.
+### [Accettare e rifiutare le modifiche al documento](./accepting-rejecting-document-changes/)
+Scopri come gestire le modifiche ai documenti senza sforzo con Aspose.Words per Java. Accetta e rifiuta le revisioni senza problemi.
+### [Controllo e cronologia delle versioni dei documenti](./document-version-control-history/)
+Scopri un controllo efficiente della versione dei documenti utilizzando Aspose.Words per Java. Gestisci le modifiche, collabora senza problemi e tieni traccia delle revisioni senza sforzo.
+### [Collaborazione e revisione dei documenti](./document-collaboration-review/)
+Sblocca una collaborazione e una revisione efficienti dei documenti con Aspose.Words per Java. Scopri come tenere traccia delle modifiche, condividere documenti e semplificare il flusso di lavoro.

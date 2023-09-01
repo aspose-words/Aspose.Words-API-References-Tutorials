@@ -82,7 +82,7 @@ Sie können einem Word-Dokument Bidi-Marken hinzufügen, indem Sie die folgenden
 
  Benutzen Sie die`DocumentBuilder` Klasse, um dem Dokument Inhalte hinzuzufügen.
 
- Sobald Sie den Inhalt hinzugefügt haben, verwenden Sie die`TxtSaveOptions`Klasse und legen Sie die fest`AddBidiMarks` Eigentum zu`true`.
+ Sobald Sie den Inhalt hinzugefügt haben, verwenden Sie die`TxtSaveOptions` Klasse und legen Sie die fest`AddBidiMarks` Eigentum zu`true`.
 
  Speichern Sie das Dokument mit Bidi-Markierungen mithilfe von`Save` Methode der`Document` Klasse.
 

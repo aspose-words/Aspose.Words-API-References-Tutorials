@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Exempel på källkod för Specificera standardteckensnitt vid rendering med Aspose.Words för .NET 
 
 ```csharp
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -62,7 +62,7 @@ den här handledningen lärde vi oss hur man anger standardteckensnittet när ma
 
 #### F: Hur kan jag ange ett standardteckensnitt när jag konverterar till PDF i Aspose.Words?
 
- S: För att ange ett standardteckensnitt när du konverterar till PDF i Aspose.Words kan du använda`PdfOptions`klass och ställ in`DefaultFontName` egenskap till namnet på det önskade teckensnittet.
+ S: För att ange ett standardteckensnitt när du konverterar till PDF i Aspose.Words kan du använda`PdfOptions` klass och ställ in`DefaultFontName` egenskap till namnet på det önskade teckensnittet.
 
 #### F: Vad händer om standardteckensnittet inte är tillgängligt vid konvertering till PDF?
 

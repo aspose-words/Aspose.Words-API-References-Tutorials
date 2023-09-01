@@ -68,7 +68,7 @@ Damit ist die Implementierung des Festlegens des Zahlenformats für die Achse mi
 ### Beispielquellcode für das Zahlenformat für Achsen mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

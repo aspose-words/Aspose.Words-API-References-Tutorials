@@ -25,3 +25,13 @@ Aspose.Words for Java 提供了强大的文档样式工具，使开发人员能�
 ## 文档样式教程
 ### [Word文档样式](./word-document-styling/)
 了解如何使用 Aspose.Words for Java 设置样式和处理文档！使用源代码示例创建视觉上令人惊叹的输出。 
+### [在文档中应用样式和字体](./applying-styles-fonts/)
+了解如何使用 Aspose.Words for Java 在文档中应用样式和字体。带有源代码的分步指南。释放文档格式的全部潜力。
+### [设置文档中段落和文本的样式](./styling-paragraphs-text/)
+了解如何使用 Aspose.Words for Java 设置文档中段落和文本的样式。带有源代码的分步指南，可实现有效的文档格式设置。
+### [自定义文档主题](./customizing-document-themes/)
+了解如何使用 Aspose.Words for Java 自定义文档主题。本综合指南提供了分步说明和源代码示例。
+### [文档水印和页面设置](./document-watermarking-page-setup/)
+了解如何使用 Aspose.Words for Java 应用水印和设置页面配置。带有源代码的综合指南。
+### [文档页眉和页脚样式](./document-header-footer-styling/)
+在此详细指南中了解如何使用 Aspose.Words for Java 设置文档页眉和页脚的样式。包含分步说明和源代码。

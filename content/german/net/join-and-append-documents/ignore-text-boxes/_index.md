@@ -14,7 +14,7 @@ In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET ein Dokum
 
 Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
+-  Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
 - Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
 ## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Importformatoptionen einrichten
 
- Erstellen Sie eine Instanz von`ImportFormatOptions`Klasse und legen Sie die fest`IgnoreTextBoxes` Eigentum zu`false`. Dadurch wird sichergestellt, dass die Textfelder während des Anhängevorgangs einbezogen werden und ihre Formatierung erhalten bleibt.
+ Erstellen Sie eine Instanz von`ImportFormatOptions` Klasse und legen Sie die fest`IgnoreTextBoxes` Eigentum zu`false`. Dadurch wird sichergestellt, dass die Textfelder während des Anhängevorgangs einbezogen werden und ihre Formatierung erhalten bleibt.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Schritt 4: Textfeldinhalt anhängen
 
- Ein ... kreieren`NodeImporter`Objekt und verwenden Sie es, um Textfeldknoten aus dem Quelldokument in das Zieldokument zu importieren. Gehen Sie jeden Absatz im Quelldokument durch und importieren Sie ihn in das Zieldokument.
+ Ein ... kreieren`NodeImporter` Objekt und verwenden Sie es, um Textfeldknoten aus dem Quelldokument in das Zieldokument zu importieren. Gehen Sie jeden Absatz im Quelldokument durch und importieren Sie ihn in das Zieldokument.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -64,7 +64,7 @@ Damit ist die Implementierung des Anhängens eines Dokuments unter Beibehaltung 
 ### Beispielquellcode für „Textfelder ignorieren“ mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

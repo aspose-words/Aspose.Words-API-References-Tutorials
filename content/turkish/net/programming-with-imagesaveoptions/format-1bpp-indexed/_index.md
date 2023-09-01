@@ -51,7 +51,7 @@ Artık belge görüntülerini PNG formatında, indekslenmiş 1 bpp renk derinli�
 
 ```csharp 
  
-			 //Belge dizininizin yolu
+			 // Belge dizininizin yolu
 			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
             
             Document doc = new Document(dataDir + "Rendering.docx");

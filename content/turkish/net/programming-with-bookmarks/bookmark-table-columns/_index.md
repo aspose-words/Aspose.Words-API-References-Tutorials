@@ -17,7 +17,7 @@ Bu makalede, Aspose.Words for .NET kütüphanesinde Yer İmi Tablosu Sütunları
 
 ## 1. Adım: Tabloyu oluşturma
 
- Bir tablo sütununda yer imi oluşturmadan önce, tabloyu bir kullanarak oluşturmalıyız.`DocumentBuilder` nesne. Örneğimizde iki satır ve iki sütundan oluşan bir tablo oluşturuyoruz:
+ Bir tablo sütununda yer imi oluşturmadan önce, tabloyu bir kullanarak oluşturmalıyız.`DocumentBuilder`nesne. Örneğimizde iki satır ve iki sütundan oluşan bir tablo oluşturuyoruz:
 
 ```csharp
 builder. StartTable();
@@ -132,7 +132,7 @@ C: Aspose.Words for .NET'teki "Tablo sütunları için yer imleri" özelliğini 
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesinde sütunlu bir tablo nasıl oluşturulur?
 
- C: Aspose.Words for .NET'i kullanarak bir Word belgesinde sütunlu bir tablo oluşturmak için`DocumentBuilder`Tabloya hücre ve içerik eklemek için nesne. İşte örnek bir kod:
+ C: Aspose.Words for .NET'i kullanarak bir Word belgesinde sütunlu bir tablo oluşturmak için`DocumentBuilder` Tabloya hücre ve içerik eklemek için nesne. İşte örnek bir kod:
 
 ```csharp
 builder. StartTable();

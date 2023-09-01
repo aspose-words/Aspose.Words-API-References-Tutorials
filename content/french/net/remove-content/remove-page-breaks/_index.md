@@ -67,12 +67,12 @@ Après avoir supprimé les sauts de page, nous devons enregistrer le document mo
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Remplacer`"modified-document.docx"` avec le nom souhaité pour votre document modifié.
+ Remplacer`"modified-document.docx"`avec le nom souhaité pour votre document modifié.
 
 ### Exemple de code source pour supprimer les sauts de page à l’aide d’Aspose.Words for .NET 
 ```csharp
 
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Charger le document
@@ -154,4 +154,4 @@ R : Après avoir supprimé les sauts de page, vous devez enregistrer le documen
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Remplacer`"modified-document.docx"` avec le nom souhaité pour votre document modifié.
+ Remplacer`"modified-document.docx"`avec le nom souhaité pour votre document modifié.

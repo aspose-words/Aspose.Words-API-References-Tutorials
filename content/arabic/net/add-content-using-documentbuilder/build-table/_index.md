@@ -118,8 +118,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.BuildTable.docx");
 
 ج: لإنشاء جدول في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك اتباع الخطوات التالية:
 1.  إنشاء مثيل جديد لـ`Document` فئة و أ`DocumentBuilder` هدف.
-2.  استخدم ال`StartTable` طريقة`DocumentBuilder` الصف للبدء في بناء الجدول.
-3. قم بإدراج الخلايا في الجدول وإضافة محتوى باستخدام`InsertCell` و`Write` أساليب`DocumentBuilder` فصل.
+2.  استخدم ال`StartTable` طريقة`DocumentBuilder`الصف للبدء في بناء الجدول.
+3.  قم بإدراج الخلايا في الجدول وإضافة محتوى باستخدام`InsertCell` و`Write` أساليب`DocumentBuilder` فصل.
 4.  قم بإنهاء الصف باستخدام`EndRow` طريقة`DocumentBuilder` فصل.
 5.  تخصيص تنسيق الصف عن طريق تعيين خصائص`RowFormat` و`CellFormat` أشياء.
 6.  قم بإنهاء الجدول باستخدام`EndTable` طريقة`DocumentBuilder` فصل.

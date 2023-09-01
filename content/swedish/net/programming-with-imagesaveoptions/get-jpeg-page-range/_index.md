@@ -50,7 +50,7 @@ Nu kan du köra källkoden för att konvertera ett visst antal sidor i ditt doku
 ### Exempel på källkod för Get Jpeg Page Range med Aspose.Words för .NET
 
 ```csharp 
- //Sökväg till din dokumentkatalog
+ // Sökväg till din dokumentkatalog
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

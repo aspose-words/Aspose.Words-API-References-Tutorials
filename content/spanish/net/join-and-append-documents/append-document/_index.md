@@ -14,7 +14,7 @@ Este tutorial explica cómo usar Aspose.Words para .NET para agregar el contenid
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
+-  Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
 - Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
 ## Paso 2: abra los documentos de origen y destino
@@ -54,13 +54,13 @@ Esto completa la implementación de agregar un documento usando Aspose.Words par
 ### Código fuente de ejemplo para anexar documento usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 	// Recorra todas las secciones del documento fuente.
-	// Los nodos de sección son hijos inmediatos del nodo Documento, por lo que podemos simplemente enumerar el Documento.
+	//Los nodos de sección son hijos inmediatos del nodo Documento, por lo que podemos simplemente enumerar el Documento.
 	foreach (Section srcSection in srcDoc)
 	{
 		// Debido a que estamos copiando una sección de un documento a otro,

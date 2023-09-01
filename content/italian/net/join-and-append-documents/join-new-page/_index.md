@@ -14,7 +14,7 @@ Questo tutorial spiega come unire due documenti su una nuova pagina utilizzando 
 
 Assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
+-  Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
 - Un percorso di directory di documenti in cui si trovano i documenti di origine e di destinazione.
 
 ## Passaggio 2: apri i documenti di origine e di destinazione
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: imposta l'inizio della nuova sezione della pagina
 
- Per iniziare il documento aggiunto su una nuova pagina, impostare il file`SectionStart` proprietà della prima sezione nel documento di origine a`SectionStart.NewPage`.
+Per iniziare il documento aggiunto su una nuova pagina, impostare il file`SectionStart` proprietà della prima sezione nel documento di origine a`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Passaggio 4: aggiungi il documento di origine
 
- Aggiungi il documento di origine al documento di destinazione utilizzando il file`AppendDocument` metodo del`Document` classe. Imposta la modalità del formato di importazione su`ImportFormatMode.KeepSourceFormatting` per preservare gli stili originali del documento di origine.
+Aggiungi il documento di origine al documento di destinazione utilizzando il file`AppendDocument` metodo del`Document` classe. Imposta la modalità del formato di importazione su`ImportFormatMode.KeepSourceFormatting` per preservare gli stili originali del documento di origine.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -58,7 +58,7 @@ Ciò completa l'implementazione dell'unione di due documenti su una nuova pagina
 ### Codice sorgente di esempio per Unisciti a una nuova pagina utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

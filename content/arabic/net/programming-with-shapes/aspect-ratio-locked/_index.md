@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ### مثال على التعليمات البرمجية المصدر لنسبة العرض إلى الارتفاع المقفلة باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

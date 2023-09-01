@@ -65,7 +65,7 @@ Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
 
 #### Вопрос: Как загрузить документ Word с помощью Aspose.Words for .NET?
 
- О: Чтобы загрузить документ Word с помощью Aspose.Words for .NET, вы можете создать экземпляр`Document` объект, указав путь к файлу документа. Вот пример кода:
+ О: Чтобы загрузить документ Word с помощью Aspose.Words for .NET, вы можете создать экземпляр`Document`объект, указав путь к файлу документа. Вот пример кода:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

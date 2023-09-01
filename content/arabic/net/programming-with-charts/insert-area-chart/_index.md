@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertAreaChart.docx");
 ### مثال على التعليمات البرمجية المصدر لإدراج مخطط مساحي باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

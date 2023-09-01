@@ -18,7 +18,7 @@ Avant de plonger dans les détails techniques, assurez-vous que les conditions p
 
 - Compréhension de base de la programmation Python.
 -  Référence de l'API Aspose.Words pour Python (disponible sur[ici](https://reference.aspose.com/words/python-net/).
--  Accès à la bibliothèque Aspose.Words pour Python (téléchargement depuis[ici](https://releases.aspose.com/words/python/).
+- Accès à la bibliothèque Aspose.Words pour Python (téléchargement depuis[ici](https://releases.aspose.com/words/python/).
 
 ## Configuration d'Aspose.Words pour Python
 

@@ -83,7 +83,7 @@ C: Aspose.Words for .NET'teki Basit Metin Bul ve Değiştir özelliği, bir Word
 
 #### S: Aspose.Words for .NET'te yeni bir belge nasıl oluşturulur?
 
-C: Basit Metin Bul ve Değiştir işlevini kullanmadan önce Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmalısınız. Bu, bir örneği başlatarak yapılabilir.`Document` nesne. Yeni bir belge oluşturmak için örnek kod aşağıda verilmiştir:
+ C: Basit Metin Bul ve Değiştir işlevini kullanmadan önce Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmalısınız. Bu, bir örneği başlatarak yapılabilir.`Document` nesne. Yeni bir belge oluşturmak için örnek kod aşağıda verilmiştir:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

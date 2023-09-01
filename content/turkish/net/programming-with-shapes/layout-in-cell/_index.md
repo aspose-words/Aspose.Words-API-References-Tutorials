@@ -98,7 +98,7 @@ doc
 ### Aspose.Words for .NET kullanan Layout In Cell için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

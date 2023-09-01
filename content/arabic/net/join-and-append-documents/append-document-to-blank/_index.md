@@ -14,7 +14,7 @@ url: /ar/net/join-and-append-documents/append-document-to-blank/
 
 تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
+-  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
 - مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
 
 ## الخطوة 2: إنشاء مستند وجهة جديد
@@ -58,12 +58,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
 ### مثال على التعليمات البرمجية المصدر لإلحاق مستند بالفارغ باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	//المستند الوجهة ليس فارغًا، مما يؤدي غالبًا إلى ظهور صفحة فارغة قبل المستند الملحق.
+	// المستند الوجهة ليس فارغًا، مما يؤدي غالبًا إلى ظهور صفحة فارغة قبل المستند الملحق.
 	// ويرجع ذلك إلى أن المستند الأساسي يحتوي على قسم فارغ وأن المستند الجديد يبدأ في الصفحة التالية.
 	// قم بإزالة كل المحتوى من المستند الوجهة قبل الإلحاق.
 	dstDoc.RemoveAllChildren();

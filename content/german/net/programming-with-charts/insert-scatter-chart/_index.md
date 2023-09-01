@@ -57,7 +57,7 @@ Damit ist die Implementierung des Einfügens eines Streudiagramms mit Aspose.Wor
 ### Beispielquellcode für das Einfügen eines Streudiagramms mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

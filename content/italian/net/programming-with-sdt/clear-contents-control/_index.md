@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ### Codice sorgente di esempio per Clear Contents Control utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

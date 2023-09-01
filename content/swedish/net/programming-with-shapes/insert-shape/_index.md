@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ### Exempel på källkod för Insert Shape med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -53,7 +53,7 @@ public class DocumentMerger {
 }
 ```
 
-Im obigen Beispiel haben wir zwei Dokumente mit geladen`Document` Klasse und benutzte dann die`appendDocument()` Methode zum Zusammenführen des Inhalts von „document2.docx“ in „document1.docx“ unter Beibehaltung der Formatierung des Quelldokuments.
+ Im obigen Beispiel haben wir zwei Dokumente mit geladen`Document` Klasse und benutzte dann die`appendDocument()` Methode zum Zusammenführen des Inhalts von „document2.docx“ in „document1.docx“ unter Beibehaltung der Formatierung des Quelldokuments.
 
 ## 4. Umgang mit der Dokumentformatierung
 
@@ -114,7 +114,7 @@ Wählen Sie die passende Methode basierend auf Ihren spezifischen Anforderungen.
 
 ## 7. Zusammenführen bestimmter Dokumentabschnitte
 
- In einigen Szenarien möchten Sie möglicherweise nur bestimmte Abschnitte der Dokumente zusammenführen. Beispielsweise können Sie nur den Hauptinhalt zusammenführen, ohne Kopf- und Fußzeilen. Mit Aspose.Words können Sie diese Granularitätsebene mithilfe von erreichen`Range` Klasse:
+In einigen Szenarien möchten Sie möglicherweise nur bestimmte Abschnitte der Dokumente zusammenführen. Beispielsweise können Sie nur den Hauptinhalt zusammenführen, ohne Kopf- und Fußzeilen. Mit Aspose.Words können Sie diese Granularitätsebene mithilfe von erreichen`Range` Klasse:
 
 ```java
 import com.aspose.words.*;

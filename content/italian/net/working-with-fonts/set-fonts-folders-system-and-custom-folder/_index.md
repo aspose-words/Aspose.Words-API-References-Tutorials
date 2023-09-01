@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ### Codice sorgente di esempio per il sistema di cartelle Set Fonts e la cartella personalizzata utilizzando Aspose.Words per .NET 
 
 ```csharp
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

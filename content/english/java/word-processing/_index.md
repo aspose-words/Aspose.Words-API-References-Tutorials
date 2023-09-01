@@ -29,3 +29,13 @@ Here are some of the key benefits of using Aspose.Words for Java:
 ### [Generate Word Document](./generate-word-document/)
 
 Learn to generate Word docs in Java with Aspose.Words! Easy text, image & table insertion. Automate reports & conversions. Simplify document processing.
+### [Handling Different Document Formats](./handling-different-document-formats/)
+Unlock the power of Aspose.Words for Java in handling diverse document formats. Learn text editing, conversions, and more with practical examples.
+### [Optimizing Document Loading with HTML, RTF, and TXT Options](./optimizing-document-loading-options/)
+Optimize document loading with Aspose.Words for Java. Improve speed and efficiency for HTML, RTF, and TXT files. Boost user experience today!
+### [Efficient Document Saving with DOC, HTML, and Image Options](./efficient-document-saving-options/)
+Learn efficient document saving with Aspose.Words for Java. This step-by-step guide covers DOC, HTML, and image options, enhancing your document management skills
+### [Mastering Advanced Save Settings for Documents](./mastering-advanced-save-settings/)
+Master advanced document save settings with Aspose.Words for Java. Learn to format, protect, optimize, and automate document creation effortlessly.
+### [Manipulating Document Content with Cleanup, Fields, and XML Data](./manipulating-document-content/)
+Learn how to manipulate document content with Aspose.Words for Java. This step-by-step guide provides source code examples for efficient document management.

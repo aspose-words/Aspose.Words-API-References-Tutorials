@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 
 ### Aspose.Words for .NET kullanılarak Dikey Birleştirme için örnek kaynak kodu 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

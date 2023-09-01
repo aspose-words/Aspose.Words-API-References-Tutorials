@@ -118,8 +118,8 @@ R : Aspose.Words for .NET est une puissante bibliothèque de traitement de docum
 
 R : Pour créer un tableau dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez suivre ces étapes :
 1.  Créez une nouvelle instance du`Document` classe et un`DocumentBuilder` objet.
-2.  Utilisez le`StartTable` méthode du`DocumentBuilder` classe pour commencer à construire la table.
-3. Insérez des cellules dans le tableau et ajoutez du contenu à l'aide du`InsertCell` et`Write` méthodes du`DocumentBuilder` classe.
+2.  Utilisez le`StartTable` méthode du`DocumentBuilder`classe pour commencer à construire la table.
+3.  Insérez des cellules dans le tableau et ajoutez du contenu à l'aide du`InsertCell` et`Write` méthodes du`DocumentBuilder` classe.
 4.  Terminez la ligne en utilisant le`EndRow` méthode du`DocumentBuilder` classe.
 5.  Personnalisez le formatage des lignes en définissant les propriétés du`RowFormat` et`CellFormat` objets.
 6.  Terminez le tableau en utilisant le`EndTable` méthode du`DocumentBuilder` classe.

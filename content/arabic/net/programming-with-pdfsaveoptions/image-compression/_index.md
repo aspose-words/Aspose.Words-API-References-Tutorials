@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 
  إنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- إنشاء مثيل لـ`PdfSaveOptions`فئة وتعيين`ImageCompression` الملكية ل`PdfImageCompression.Jpeg` لاستخدام ضغط JPEG.
+ إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`ImageCompression` الملكية ل`PdfImageCompression.Jpeg` لاستخدام ضغط JPEG.
 
 يمكنك أيضًا تعيين خيارات أخرى لضغط الصور، مثل جودة JPEG، وفقًا لاحتياجاتك.
 

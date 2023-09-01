@@ -56,7 +56,7 @@ Console.WriteLine("Path: " + fontInfo.FilePath);
 
 ```csharp
 
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

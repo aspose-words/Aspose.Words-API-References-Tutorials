@@ -25,3 +25,13 @@ En estos tutoriales, no sólo nos centraremos en crear documentos visualmente at
 ## Tutoriales de estilo de documentos
 ### [Estilo de documento de Word](./word-document-styling/)
 ¡Aprenda a diseñar y procesar documentos con Aspose.Words para Java! Cree resultados visualmente impresionantes con ejemplos de código fuente. 
+### [Aplicar estilos y fuentes en documentos](./applying-styles-fonts/)
+Aprenda a aplicar estilos y fuentes en documentos usando Aspose.Words para Java. Guía paso a paso con código fuente. Libere todo el potencial del formato de documentos.
+### [Aplicar estilo a párrafos y texto en documentos](./styling-paragraphs-text/)
+Aprenda a aplicar estilo a párrafos y texto en documentos usando Aspose.Words para Java. Guía paso a paso con código fuente para formatear documentos de forma eficaz.
+### [Personalización de temas de documentos](./customizing-document-themes/)
+Aprenda a personalizar temas de documentos usando Aspose.Words para Java. Esta guía completa proporciona instrucciones paso a paso y ejemplos de código fuente.
+### [Marca de agua de documentos y configuración de página](./document-watermarking-page-setup/)
+Aprenda a aplicar marcas de agua y configurar configuraciones de página con Aspose.Words para Java. Una guía completa con código fuente.
+### [Estilo de encabezado y pie de página del documento](./document-header-footer-styling/)
+Aprenda a diseñar encabezados y pies de página de documentos usando Aspose.Words para Java en esta guía detallada. Instrucciones paso a paso y código fuente incluidos.

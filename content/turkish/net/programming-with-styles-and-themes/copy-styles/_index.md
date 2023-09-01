@@ -45,7 +45,7 @@ Artık stilleri kaynak belgeden hedef belgeye kopyalamak için kaynak kodunu ça
 
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document();

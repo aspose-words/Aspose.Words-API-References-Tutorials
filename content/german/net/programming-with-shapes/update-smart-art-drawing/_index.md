@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ### Beispielquellcode für die Aktualisierung von Smart Art Drawing mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "SmartArt.docx");

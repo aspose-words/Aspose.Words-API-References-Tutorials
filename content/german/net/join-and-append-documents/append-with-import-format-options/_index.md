@@ -14,7 +14,7 @@ In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET den Inhal
 
 Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
+-  Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen unter[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
 - Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
 ## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Schritt 4: Hängen Sie das Quelldokument an das Zieldokument an
 
- Benutzen Sie die`AppendDocument`Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.UseDestinationStyles` als zweiten Parameter, um die Stile und Formatierungen des Zieldokuments zu verwenden.
+ Benutzen Sie die`AppendDocument` Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.UseDestinationStyles` als zweiten Parameter, um die Stile und Formatierungen des Zieldokuments zu verwenden.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,7 +58,7 @@ Damit ist die Implementierung des Anhängens eines Dokuments mit Importformatopt
 ### Beispielquellcode für Append With Import Format Options mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");

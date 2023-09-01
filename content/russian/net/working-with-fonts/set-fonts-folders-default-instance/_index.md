@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ### Пример исходного кода для установки экземпляра папки шрифтов по умолчанию с использованием Aspose.Words для .NET 
 
 ```csharp
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

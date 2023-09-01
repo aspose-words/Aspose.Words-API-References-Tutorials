@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 ## Étape 1 : initialiser les répertoires de documents
 
- Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Modifier la valeur du`dataDir`variable au chemin où se trouvent vos documents.
+ Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Modifier la valeur du`dataDir` variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Étape 6 : Enregistrez le document final
 
-Enfin, enregistrez le document fusionné avec la fonctionnalité « Conserver la source ensemble » activée à l'aide de l'option`Save` méthode du`Document` classe.
+ Enfin, enregistrez le document fusionné avec la fonctionnalité « Conserver la source ensemble » activée à l'aide de l'option`Save` méthode du`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
@@ -75,7 +75,7 @@ Voici le code source complet de la fonctionnalité « Keep Source Together » 
 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

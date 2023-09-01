@@ -53,7 +53,7 @@ foreach(Section section in doc.Sections)
 
 ```csharp
 
-//Ruta a su directorio de documentos
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

@@ -23,3 +23,13 @@ Aspose.Words for Java'yı kullanarak belge güvenliği konusunda uzmanlaşan gel
 ## Belge Güvenliği Eğitimleri
 ### [Belgelerinizi Nasıl Güvende ve Emniyette Tutabilirsiniz?](./keep-documents-safe-secure/)
 Belgelerinizi Aspose.Words for Java ile koruyun. Dijital imzaları zahmetsizce şifreleyin, koruyun ve ekleyin. Verilerinizi güvende tutun.
+### [Belgeleri Parolalarla Koruma](./securing-documents-passwords/)
+Aspose.Words for Java kullanarak belgeleri şifrelerle nasıl güvence altına alacağınızı keşfedin. Bu adım adım kılavuz, kaynak kodunu ve uzman ipuçlarını içerir. Verilerinizi koruyun.
+### [Belge İzinlerini Yönetme](./managing-document-permissions/)
+Aspose.Words for Java'yı kullanarak belge izinlerini etkili bir şekilde nasıl yöneteceğinizi öğrenin. Bu kapsamlı kılavuz, adım adım talimatlar ve kaynak kodu örnekleri sağlar.
+### [Belge Şifreleme ve Şifre Çözme](./document-encryption-decryption/)
+Aspose.Words for Java ile belgeleri nasıl şifreleyeceğinizi ve şifrelerini çözeceğinizi öğrenin. Adım adım rehberlik ve kaynak kodu örnekleriyle verilerinizi verimli bir şekilde koruyun.
+### [Belgelerdeki Dijital İmzalar](./digital-signatures-in-documents/)
+Aspose.Words for Java kullanarak belgelere güvenli dijital imzaların nasıl uygulanacağını öğrenin. Adım adım rehberlik ve kaynak koduyla belge bütünlüğünü sağlayın
+### [Belge Düzenleme ve Veri Koruma](./document-redaction-data-protection/)
+Aspose.Words for Java'yı kullanarak belgelerinizi nasıl güvence altına alacağınızı ve hassas verileri nasıl düzelteceğinizi öğrenin. Kaynak koduyla adım adım kılavuz.

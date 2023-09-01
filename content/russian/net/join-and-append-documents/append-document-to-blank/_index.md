@@ -14,7 +14,7 @@ url: /ru/net/join-and-append-documents/append-document-to-blank/
 
 Убедитесь, что у вас есть следующие предварительные условия:
 
-- Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
+-  Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с[Aspose.Releases]https://releases.aspose.com/words/net/ или используйте менеджер пакетов NuGet для его установки.
 - Путь к каталогу документов, в котором расположены исходные и целевые документы.
 
 ## Шаг 2. Создайте новый целевой документ
@@ -58,12 +58,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
 ### Пример исходного кода для добавления документа в бланк с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	//Целевой документ не пуст, поэтому перед добавленным документом часто появляется пустая страница.
+	// Целевой документ не пуст, поэтому перед добавленным документом часто появляется пустая страница.
 	// Это связано с тем, что базовый документ имеет пустой раздел, а новый документ начинается на следующей странице.
 	// Перед добавлением удалите все содержимое из целевого документа.
 	dstDoc.RemoveAllChildren();

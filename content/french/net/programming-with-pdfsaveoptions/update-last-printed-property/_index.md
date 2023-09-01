@@ -74,7 +74,7 @@ R : La propriété « Dernière impression » dans un document PDF fait référe
 
  Créez une instance du`Document` classe spécifiant le chemin d’accès au document Word.
 
- Créez une instance du`PdfSaveOptions`classe et définir le`UpdateLastPrintedProperty` propriété à`true` pour activer la mise à jour de la propriété "Dernier imprimé".
+ Créez une instance du`PdfSaveOptions` classe et définir le`UpdateLastPrintedProperty` propriété à`true` pour activer la mise à jour de la propriété "Dernier imprimé".
 
  Utilisez le`Save` méthode du`Document`classe pour enregistrer le document au format PDF en spécifiant les options d'enregistrement.
 

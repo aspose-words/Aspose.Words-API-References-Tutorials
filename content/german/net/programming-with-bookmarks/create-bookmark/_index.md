@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Schritt 3: Verschachtelte Lesezeichen erstellen
 
- Wir können auch verschachtelte Lesezeichen innerhalb eines Hauptlesezeichens erstellen. Wir verwenden das Gleiche`StartBookmark` Und`EndBookmark` Methoden zum Erstellen und Beenden verschachtelter Lesezeichen:
+Wir können auch verschachtelte Lesezeichen innerhalb eines Hauptlesezeichens erstellen. Wir verwenden das Gleiche`StartBookmark` Und`EndBookmark` Methoden zum Erstellen und Beenden verschachtelter Lesezeichen:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -102,7 +102,7 @@ A: Um die Funktion „Lesezeichen erstellen“ in Aspose.Words für .NET nutzen 
 
 #### F: Wie erstelle ich ein Dokument in Aspose.Words für .NET?
 
- A: Um ein Dokument in Aspose.Words für .NET zu erstellen, können Sie das verwenden`Document`Klasse. Hier ist ein Beispielcode:
+ A: Um ein Dokument in Aspose.Words für .NET zu erstellen, können Sie das verwenden`Document` Klasse. Hier ist ein Beispielcode:
 
 ```csharp
 Document doc = new Document();
@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### F: Wie füge ich mit Aspose.Words für .NET Text in ein Lesezeichen ein?
 
- A: Um mit Aspose.Words für .NET Text in ein Lesezeichen einzufügen, können Sie Folgendes verwenden`Write` Methode der`DocumentBuilder` Objekt, das den hinzuzufügenden Text angibt. Hier ist ein Beispielcode:
+A: Um mit Aspose.Words für .NET Text in ein Lesezeichen einzufügen, können Sie Folgendes verwenden`Write` Methode der`DocumentBuilder` Objekt, das den hinzuzufügenden Text angibt. Hier ist ein Beispielcode:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

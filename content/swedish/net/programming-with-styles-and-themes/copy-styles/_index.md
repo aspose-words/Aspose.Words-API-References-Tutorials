@@ -45,7 +45,7 @@ Nu kan du köra källkod för att kopiera stilar från ett källdokument till et
 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document();

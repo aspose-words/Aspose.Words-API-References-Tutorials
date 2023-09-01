@@ -25,3 +25,13 @@ By mastering document splitting using Aspose.Words for Java, developers can opti
 ### [Split Documents Easily and Efficiently](./split-documents-easily-efficiently/)
 
 Learn how to efficiently split documents using Aspose.Words for Java. Step-by-step guide for document processing and word manipulation. Boost productivity now!
+### [Splitting Documents into Multiple Files](./splitting-documents-into-multiple-files/)
+Unlock the power of Aspose.Words for Java with our step-by-step guide on splitting documents into multiple files. Get expert insights and source code examples.
+### [Splitting Documents into HTML Pages](./splitting-documents-into-html-pages/)
+Learn how to split Word documents into HTML pages using Aspose.Words for Java. Our step-by-step guide with source code makes the process easy and efficient. Start converting your documents today!
+### [Document Page Separation](./document-page-separation/)
+Learn how to perform Document Page Separation using Aspose.Words for Java. This comprehensive guide provides step-by-step instructions and source code for efficient document processing.
+### [Extracting Document Content by Pages](./extracting-document-content-pages/)
+Learn how to extract document content by pages using Aspose.Words for Java. This step-by-step guide with source code will make you an expert in no time.
+### [Document Splitting and Extraction Techniques](./document-splitting-extraction-techniques/)
+Learn document splitting and extraction using Aspose.Words for Java. Step-by-step guide with source code for efficient manipulation. Unlock the power of Aspose

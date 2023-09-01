@@ -55,7 +55,7 @@ Du kan köra källkod för att infoga en stilavgränsare i ett dokument. Detta l
 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document();

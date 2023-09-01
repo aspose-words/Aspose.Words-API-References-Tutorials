@@ -76,7 +76,7 @@ Glöm inte att ange namnet och platsen för den modifierade filen i "Name_of_mod
 ### Exempel på källkod för Ta bort sidfötter med Aspose.Words för .NET 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");

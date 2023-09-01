@@ -74,7 +74,7 @@ Ciò completa l'implementazione della personalizzazione di un singolo punto dati
 ### Codice sorgente di esempio per punto dati grafico singolo utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

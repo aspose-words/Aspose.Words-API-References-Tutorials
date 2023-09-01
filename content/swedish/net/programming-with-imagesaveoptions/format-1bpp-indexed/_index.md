@@ -51,7 +51,7 @@ Nu kan du köra källkoden för att formatera dokumentbilderna i PNG-format med 
 
 ```csharp 
  
-			 //Sökväg till din dokumentkatalog
+			 // Sökväg till din dokumentkatalog
 			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
             
             Document doc = new Document(dataDir + "Rendering.docx");

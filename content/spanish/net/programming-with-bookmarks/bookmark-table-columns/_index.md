@@ -17,7 +17,7 @@ En este artículo, exploraremos el código fuente de C# anterior para comprender
 
 ## Paso 1: crear la tabla
 
- Antes de crear un marcador en una columna de la tabla, primero debemos crear la tabla usando un`DocumentBuilder` objeto. En nuestro ejemplo, creamos una tabla con dos filas y dos columnas:
+ Antes de crear un marcador en una columna de la tabla, primero debemos crear la tabla usando un`DocumentBuilder`objeto. En nuestro ejemplo, creamos una tabla con dos filas y dos columnas:
 
 ```csharp
 builder. StartTable();
@@ -132,7 +132,7 @@ R: Para utilizar la función "Marcadores para columnas de tabla" en Aspose.Words
 
 #### P: ¿Cómo crear una tabla con columnas en un documento de Word usando Aspose.Words para .NET?
 
- R: Para crear una tabla con columnas en un documento de Word usando Aspose.Words para .NET, puede usar un`DocumentBuilder`objeto para insertar celdas y contenido en la tabla. Aquí hay un código de muestra:
+ R: Para crear una tabla con columnas en un documento de Word usando Aspose.Words para .NET, puede usar un`DocumentBuilder` objeto para insertar celdas y contenido en la tabla. Aquí hay un código de muestra:
 
 ```csharp
 builder. StartTable();

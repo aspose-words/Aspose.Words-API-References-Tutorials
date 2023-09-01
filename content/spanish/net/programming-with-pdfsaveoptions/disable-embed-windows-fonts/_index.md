@@ -74,7 +74,7 @@ R: Para deshabilitar la incrustación de fuentes de Windows en un documento PDF 
 
  Cargue el documento que desea convertir a PDF usando el`Document` ruta de clase y documento.
 
- Crear una instancia del`PdfSaveOptions`clase y establecer el`FontEmbeddingMode` propiedad a`PdfFontEmbeddingMode.EmbedNone`. Esto desactiva la incrustación de fuentes de Windows en el archivo PDF generado.
+ Crear una instancia del`PdfSaveOptions` clase y establecer el`FontEmbeddingMode` propiedad a`PdfFontEmbeddingMode.EmbedNone`. Esto desactiva la incrustación de fuentes de Windows en el archivo PDF generado.
 
  Utilizar el`Save` método de la`Document` objeto para convertir el documento a PDF especificando las opciones de conversión configuradas anteriormente.
 

@@ -59,7 +59,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document.docx");

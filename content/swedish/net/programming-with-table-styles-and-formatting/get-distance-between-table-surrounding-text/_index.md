@@ -38,7 +38,7 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 ### Exempel på källkod för Get Distance Between Table Surrounding Text med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

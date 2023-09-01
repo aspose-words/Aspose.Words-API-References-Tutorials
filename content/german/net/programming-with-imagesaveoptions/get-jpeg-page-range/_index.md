@@ -50,7 +50,7 @@ Jetzt können Sie den Quellcode ausführen, um einen bestimmten Seitenbereich in
 ### Beispielquellcode für „Jpeg-Seitenbereich abrufen“ mit Aspose.Words für .NET
 
 ```csharp 
- //Pfad zu Ihrem Dokumentenverzeichnis
+ // Pfad zu Ihrem Dokumentenverzeichnis
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

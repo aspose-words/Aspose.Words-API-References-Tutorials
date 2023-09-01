@@ -19,7 +19,7 @@ url: /ar/net/join-and-append-documents/smart-style-behavior/
 
 ## الخطوة 1: تهيئة أدلة المستندات
 
- أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir`متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## الخطوة 4: تعيين خيارات سلوك النمط الذكي
 
- لتمكين سلوك النمط الذكي أثناء عملية الإلحاق، تحتاج إلى إنشاء مثيل لـ`ImportFormatOptions` وتعيين`SmartStyleBehavior` الملكية ل`true`.
+لتمكين سلوك النمط الذكي أثناء عملية الإلحاق، تحتاج إلى إنشاء مثيل لـ`ImportFormatOptions` وتعيين`SmartStyleBehavior` الملكية ل`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
@@ -73,7 +73,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 إليك الكود المصدري الكامل لميزة "Smart Style Behavior" في لغة C# باستخدام Aspose.Words for .NET:
  
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

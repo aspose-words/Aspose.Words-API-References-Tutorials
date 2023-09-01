@@ -14,7 +14,7 @@ Ce didacticiel explique comment utiliser Aspose.Words for .NET pour ajouter le c
 
 Assurez-vous que vous disposez des conditions préalables suivantes :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
+-  Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de documents où se trouvent les documents source et de destination.
 
 ## Étape 2 : Créer un nouveau document de destination
@@ -58,12 +58,12 @@ Ceci termine la mise en œuvre de l’ajout d’un document à un document de de
 ### Exemple de code source pour Ajouter un document à vide à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	//Le document de destination n'est pas vide, ce qui entraîne souvent l'apparition d'une page blanche avant le document annexé.
+	// Le document de destination n'est pas vide, ce qui entraîne souvent l'apparition d'une page blanche avant le document annexé.
 	// Cela est dû au fait que le document de base comporte une section vide et que le nouveau document démarre sur la page suivante.
 	// Supprimez tout le contenu du document de destination avant de l'ajouter.
 	dstDoc.RemoveAllChildren();

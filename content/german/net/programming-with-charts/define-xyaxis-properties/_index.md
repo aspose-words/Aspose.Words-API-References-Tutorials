@@ -92,7 +92,7 @@ Damit ist die Implementierung der Definition von XY-Achseneigenschaften in einem
 ### Beispielquellcode zum Definieren von XYAxis-Eigenschaften mit Aspose.Words für .NET 
 
 ```csharp
-	//Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

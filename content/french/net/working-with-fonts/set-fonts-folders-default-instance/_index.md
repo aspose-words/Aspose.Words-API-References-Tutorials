@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ### Exemple de code source pour l'instance par défaut Définir les dossiers de polices à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 
  Загрузите документ, который хотите обработать, используя`Document` класс и указанный путь к документу.
 
- Создайте экземпляр`PdfSaveOptions`класс и установите`FontEmbeddingMode` собственность`PdfFontEmbeddingMode.EmbedAll`. В созданный PDF-файл будут вставлены все шрифты, кроме Arial и Times Roman.
+ Создайте экземпляр`PdfSaveOptions` класс и установите`FontEmbeddingMode` собственность`PdfFontEmbeddingMode.EmbedAll`. В созданный PDF-файл будут вставлены все шрифты, кроме Arial и Times Roman.
 
  Использовать`Save` метод`Document` объект для сохранения документа в формате PDF с указанием ранее настроенных параметров сохранения.
 

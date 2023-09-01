@@ -100,7 +100,7 @@ S: En befintlig signaturrad i ett Word-dokument är ett fördefinierat område d
 S: För att signera en befintlig signaturrad i ett Word-dokument med Aspose.Words för .NET, kan du följa dessa steg:
 1.  Ladda dokumentet med hjälp av`Document` klass och ange sökvägen till dokumentfilen.
 2.  Få åtkomst till den befintliga signaturraden med lämplig metod eller egenskap. Du kan till exempel använda`GetChild` metod för att hämta signaturlinjeformen.
-3.  Skapa en instans av`SignOptions`klass och ställ in`SignatureLineId` egenskap till ID för den befintliga signaturraden.
+3.  Skapa en instans av`SignOptions` klass och ställ in`SignatureLineId` egenskap till ID för den befintliga signaturraden.
 4.  Ställ in`SignatureLineImage` egendom av`SignOptions` klass till bilden som representerar den digitala signaturen.
 5.  Ladda signeringscertifikatet med hjälp av`CertificateHolder` klass och ange det nödvändiga certifikatet och lösenordet.
 6.  Använd`DigitalSignatureUtil.Sign` metod för att signera dokumentet, tillhandahålla nödvändiga parametrar inklusive`SignOptions` objekt.

@@ -14,7 +14,7 @@ Ce didacticiel explique comment ajouter un document source à un document de des
 
 Assurez-vous d'avoir les prérequis suivants :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
+-  Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de documents dans lequel les documents source et de destination seront enregistrés.
 
 ## Étape 2 : Créer les documents de destination et source
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : Conserver la numérotation des sources lors de l'importation
 
- Pour conserver la mise en forme de la numérotation des paragraphes numérotés du document source, créez une instance de`ImportFormatOptions` Et mettre`KeepSourceNumbering` à`true` . Utiliser un`NodeImporter` pour importer des nœuds du document source vers le document de destination, en spécifiant`ImportFormatMode.KeepSourceFormatting` et le`importFormatOptions`.
+Pour conserver la mise en forme de la numérotation des paragraphes numérotés du document source, créez une instance de`ImportFormatOptions` Et mettre`KeepSourceNumbering` à`true` . Utiliser un`NodeImporter` pour importer des nœuds du document source vers le document de destination, en spécifiant`ImportFormatMode.KeepSourceFormatting` et le`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -64,7 +64,7 @@ Ceci termine la mise en œuvre de l’ajout d’un document source à un documen
 ### Exemple de code source pour conserver la numérotation source à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -57,7 +57,7 @@ Detta slutför implementeringen av att ställa in etikettjusteringen för flera 
 ### Exempel på källkod för Tick Multi Line Label Alignment med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

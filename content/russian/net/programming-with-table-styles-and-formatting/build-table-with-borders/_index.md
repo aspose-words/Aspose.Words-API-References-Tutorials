@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.do
 ### Пример исходного кода для построения таблицы с границами с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

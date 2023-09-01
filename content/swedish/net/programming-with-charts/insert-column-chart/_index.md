@@ -57,7 +57,7 @@ Detta slutför implementeringen av att infoga ett kolumndiagram med Aspose.Words
 ### Exempel på källkod för Infoga kolumndiagram med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

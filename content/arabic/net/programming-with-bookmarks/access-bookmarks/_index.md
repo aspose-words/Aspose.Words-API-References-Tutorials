@@ -65,7 +65,7 @@ Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
 
 #### س: كيف يمكنني تحميل مستند Word باستخدام Aspose.Words لـ .NET؟
 
- ج: لتحميل مستند Word باستخدام Aspose.Words لـ .NET، يمكنك إنشاء مثيل`Document` الكائن عن طريق تحديد مسار ملف المستند. هنا نموذج التعليمات البرمجية:
+ ج: لتحميل مستند Word باستخدام Aspose.Words لـ .NET، يمكنك إنشاء مثيل`Document`الكائن عن طريق تحديد مسار ملف المستند. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

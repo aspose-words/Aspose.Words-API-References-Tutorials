@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

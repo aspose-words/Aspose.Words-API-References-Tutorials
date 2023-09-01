@@ -71,7 +71,7 @@ Esto completa la implementación de la personalización de una única serie de g
 ### Código fuente de ejemplo para Single Chart Series usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -70,7 +70,7 @@ Stellen Sie sicher, dass Sie den richtigen Dateipfad und das entsprechende Forma
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Geben Sie an, dass die Kopf- und Fußzeilen für die erste, gerade und ungerade Seite unterschiedlich sein sollen.
+// Geben Sie an, dass die Kopf- und Fußzeilen für die erste, gerade und ungerade Seite unterschiedlich sein sollen.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 

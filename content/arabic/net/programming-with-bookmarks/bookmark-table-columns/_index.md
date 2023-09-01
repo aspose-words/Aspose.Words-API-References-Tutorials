@@ -17,7 +17,7 @@ url: /ar/net/programming-with-bookmarks/bookmark-table-columns/
 
 ## الخطوة 1: إنشاء الجدول
 
- قبل إنشاء إشارة مرجعية على عمود الجدول، يجب علينا أولاً إنشاء الجدول باستخدام`DocumentBuilder` هدف. في مثالنا، قمنا بإنشاء جدول مكون من صفين وعمودين:
+ قبل إنشاء إشارة مرجعية على عمود الجدول، يجب علينا أولاً إنشاء الجدول باستخدام`DocumentBuilder`هدف. في مثالنا، قمنا بإنشاء جدول مكون من صفين وعمودين:
 
 ```csharp
 builder. StartTable();
@@ -132,7 +132,7 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 
 #### س: كيفية إنشاء جدول يحتوي على أعمدة في مستند Word باستخدام Aspose.Words لـ .NET؟
 
- ج: لإنشاء جدول يحتوي على أعمدة في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك استخدام`DocumentBuilder`كائن لإدراج الخلايا والمحتوى في الجدول. هنا نموذج التعليمات البرمجية:
+ ج: لإنشاء جدول يحتوي على أعمدة في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك استخدام`DocumentBuilder` كائن لإدراج الخلايا والمحتوى في الجدول. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 builder. StartTable();

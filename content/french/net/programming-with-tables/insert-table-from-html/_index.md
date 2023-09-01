@@ -60,7 +60,7 @@ Assurez-vous de spécifier le chemin et le nom de fichier corrects pour le docum
 ### Exemple de code source pour Insérer une table à partir de HTML à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

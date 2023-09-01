@@ -10,7 +10,7 @@ url: /sv/python-net/document-protection/document-security-python/
 
 ## Introduktion
 
-I dagens digitala tidsålder är det av yttersta vikt att säkra känsliga dokument. Oavsett om du har att göra med personuppgifter, konfidentiell affärsinformation eller annat känsligt innehåll, är det viktigt att säkerställa dokumentsäkerhet för att skydda mot obehörig åtkomst, läckor och potentiella dataintrång. I denna steg-för-steg-guide kommer vi att utforska hur man implementerar dokumentsäkerhet med Python med hjälp av Aspose.Words for Python-biblioteket. Den här guiden kommer att täcka olika aspekter av dokumentsäkerhet, inklusive dokumentskydd, kryptering och bearbetning.
+dagens digitala tidsålder är det av yttersta vikt att säkra känsliga dokument. Oavsett om du har att göra med personuppgifter, konfidentiell affärsinformation eller annat känsligt innehåll, är det viktigt att säkerställa dokumentsäkerhet för att skydda mot obehörig åtkomst, läckor och potentiella dataintrång. I denna steg-för-steg-guide kommer vi att utforska hur man implementerar dokumentsäkerhet med Python med hjälp av Aspose.Words for Python-biblioteket. Den här guiden kommer att täcka olika aspekter av dokumentsäkerhet, inklusive dokumentskydd, kryptering och bearbetning.
 
 ## 1. Vad är dokumentsäkerhet?
 

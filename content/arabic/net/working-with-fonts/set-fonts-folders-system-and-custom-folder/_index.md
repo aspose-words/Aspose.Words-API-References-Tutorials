@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ### نموذج التعليمات البرمجية المصدر لنظام تعيين الخطوط والمجلدات والمجلدات المخصصة باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-//المسار إلى دليل المستندات الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

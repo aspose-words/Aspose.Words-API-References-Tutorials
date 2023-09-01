@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 ## Étape 1 : initialiser les répertoires de documents
 
- Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Modifier la valeur du`dataDir`variable au chemin où se trouvent vos documents.
+ Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Modifier la valeur du`dataDir` variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Étape 5 : Enregistrez le document final
 
-Enfin, enregistrez le document fusionné avec la fonctionnalité Dissocier les en-têtes et les pieds de page activée à l'aide du`Save` méthode du`Document` classe.
+ Enfin, enregistrez le document fusionné avec la fonctionnalité Dissocier les en-têtes et les pieds de page activée à l'aide du`Save` méthode du`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Voici le code source complet de la fonctionnalité « Dissocier les en-têtes et les pieds de page » en C# à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
-	//Chemin d'accès à votre répertoire de documents
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

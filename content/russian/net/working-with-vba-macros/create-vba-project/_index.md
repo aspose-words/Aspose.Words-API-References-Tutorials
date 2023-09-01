@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 ```csharp
 
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

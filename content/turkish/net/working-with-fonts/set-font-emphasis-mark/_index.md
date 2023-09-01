@@ -45,7 +45,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ### Aspose.Words for .NET kullanarak Yazı Tipi Vurgu İşaretini Ayarlama için örnek kaynak kodu 
 
 ```csharp
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();

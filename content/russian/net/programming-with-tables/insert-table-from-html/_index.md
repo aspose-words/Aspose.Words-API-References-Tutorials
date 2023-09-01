@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ### Пример исходного кода для вставки таблицы из Html с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

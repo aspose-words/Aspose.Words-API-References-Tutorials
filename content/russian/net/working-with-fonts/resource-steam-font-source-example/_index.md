@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ### Пример исходного кода для примера исходного кода шрифта Resource Steam с использованием Aspose.Words для .NET 
 
 ```csharp
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

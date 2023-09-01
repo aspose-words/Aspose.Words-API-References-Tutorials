@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Exempel på källkod för Font Settings Default Instance med Aspose.Words för .NET 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;

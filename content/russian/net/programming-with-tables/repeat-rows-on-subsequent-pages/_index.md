@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ### Пример исходного кода для повторения строк на последующих страницах с использованием Aspose.Words для .NET 
 
 ```csharp
-//Путь к каталогу ваших документов
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

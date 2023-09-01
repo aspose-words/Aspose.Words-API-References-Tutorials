@@ -132,7 +132,7 @@ Oui, vous pouvez automatiser les mises à jour des métadonnées à l'aide d'Asp
 
 ### Comment puis-je protéger les informations sensibles dans les métadonnées ?
 
-Pour protéger les informations sensibles dans les métadonnées, vous pouvez supprimer des propriétés spécifiques à l'aide de l'outil`remove` méthode.
+ Pour protéger les informations sensibles dans les métadonnées, vous pouvez supprimer des propriétés spécifiques à l'aide de l'outil`remove` méthode.
 
 ### Quelles sont les bonnes pratiques pour gérer les propriétés des documents ?
 

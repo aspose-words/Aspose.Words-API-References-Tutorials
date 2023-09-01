@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ### نموذج التعليمات البرمجية المصدر لتعيين الموضع الأفقي أو الرأسي النسبي باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-//المسار إلى دليل المستندات الخاص بك
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");

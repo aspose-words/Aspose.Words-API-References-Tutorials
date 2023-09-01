@@ -105,7 +105,7 @@ Vous pouvez utiliser un espace par niveau pour l'indentation de liste en suivant
 
  Utilisez le`DocumentBuilder`classe pour ajouter du contenu au document et créer une liste avec plusieurs niveaux d’indentation.
 
- Une fois que vous avez ajouté le contenu et configuré l'indentation de la liste, utilisez le`TxtSaveOptions`classe et définir le`ListIndentation.Count` propriété au nombre de niveaux d'indentation et à la`ListIndentation.Character` propriété sur l'espace (`' '`) utiliser.
+ Une fois que vous avez ajouté le contenu et configuré l'indentation de la liste, utilisez le`TxtSaveOptions` classe et définir le`ListIndentation.Count` propriété au nombre de niveaux d'indentation et à la`ListIndentation.Character` propriété sur l'espace (`' '`) utiliser.
 
  Enregistrez le document avec les options spécifiées à l'aide du`Save` méthode du`Document` classe.
 

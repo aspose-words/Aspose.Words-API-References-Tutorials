@@ -145,7 +145,7 @@ Dans le domaine de la création de documents, les polices et le style du texte s
 
 ### Comment changer la couleur de la police à l’aide d’Aspose.Words pour Python ?
 
- Pour changer la couleur de la police, vous pouvez accéder au`Font`classe et définir le`color` propriété à la valeur de couleur souhaitée.
+ Pour changer la couleur de la police, vous pouvez accéder au`Font` classe et définir le`color` propriété à la valeur de couleur souhaitée.
 
 ### Puis-je appliquer plusieurs styles au même texte à l’aide d’Aspose.Words ?
 

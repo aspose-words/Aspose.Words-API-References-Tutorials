@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ### Exempel på källkod för Set Fonts Folders Default Instance med Aspose.Words för .NET 
 
 ```csharp
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

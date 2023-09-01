@@ -87,7 +87,7 @@ Grattis! Du har nu tillämpat radformatering på en tabell med Aspose.Words för
 ### Exempel på källkod för Apply Row Formatting med Aspose.Words för .NET 
 
 ```csharp
-	//Sökväg till din dokumentkatalog
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

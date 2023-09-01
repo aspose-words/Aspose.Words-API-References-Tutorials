@@ -85,7 +85,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ### Exempel på källkod för Ta bort innehållsförteckning med Aspose.Words för .NET 
 ```csharp
 
-//Sökväg till din dokumentkatalog
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Ladda dokumentet

@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ### Пример исходного кода для метки данных диаграммы с использованием Aspose.Words для .NET 
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

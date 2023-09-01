@@ -77,7 +77,7 @@ Ciò completa l'implementazione dell'impostazione delle opzioni predefinite per 
 ### Codice sorgente di esempio per le opzioni predefinite per le etichette dati utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

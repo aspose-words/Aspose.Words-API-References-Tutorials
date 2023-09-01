@@ -14,7 +14,7 @@ Bu eğitimde Aspose.Words for .NET kullanılarak kaynak belgenin orijinal format
 
 Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
+-  Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
 - Kaynak ve hedef belgelerin kaydedileceği belge dizini yolu.
 
 ## 2. Adım: Hedef ve kaynak belgeleri oluşturun
@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## 3. Adım: Kaynak belgeyi hedef belgeye ekleyin
 
- Kullan`AppendDocument`Kaynak belgenin ekleneceği hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` Kaynak belgenin orijinal formatını korumak için içe aktarma formatı modu olarak.
+ Kullan`AppendDocument` Kaynak belgenin ekleneceği hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting`Kaynak belgenin orijinal formatını korumak için içe aktarma formatı modu olarak.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -53,7 +53,7 @@ Bu, Aspose.Words for .NET kullanarak orijinal formatı korurken, kaynak belgenin
 ### Aspose.Words for .NET kullanarak Kaynak Formatını Koru için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();

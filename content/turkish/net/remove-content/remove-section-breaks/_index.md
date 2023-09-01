@@ -56,7 +56,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
  
 ```csharp
 
-//Belge dizininizin yolu
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 // Belgeyi yükleyin

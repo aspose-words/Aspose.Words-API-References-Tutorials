@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ### Codice sorgente di esempio per l'istanza predefinita delle cartelle di caratteri impostati utilizzando Aspose.Words per .NET 
 
 ```csharp
-//Percorso della directory dei documenti
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

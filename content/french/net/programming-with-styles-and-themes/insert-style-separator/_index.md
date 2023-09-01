@@ -55,7 +55,7 @@ Vous pouvez exécuter du code source pour insérer un séparateur de style dans 
 
 ```csharp
 
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document();

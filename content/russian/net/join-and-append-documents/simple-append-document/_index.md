@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/simple-append-document/
 
 ## Шаг 1. Инициализируйте каталоги документов
 
- Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir`переменная пути, по которому расположены ваши документы.
+ Во-первых, вам нужно установить путь к каталогу вашего документа. Измените значение параметра`dataDir` переменная пути, по которому расположены ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -55,7 +55,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.SimpleAppendDocument.docx");
 Вот полный исходный код функции «Простое добавление документа» на C# с использованием Aspose.Words для .NET:
 
 ```csharp
-	//Путь к каталогу ваших документов
+	// Путь к каталогу ваших документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

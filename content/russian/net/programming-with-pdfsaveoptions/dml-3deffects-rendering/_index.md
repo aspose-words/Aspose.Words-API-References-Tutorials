@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 
  Создайте экземпляр`Document` класс, указывающий путь к документу Word.
 
- Создайте экземпляр`PdfSaveOptions`класс и установите`Dml3DEffectsRenderingMode` собственность`Dml3DEffectsRenderingMode.Advanced` чтобы включить расширенный рендеринг 3D-эффектов DML.
+ Создайте экземпляр`PdfSaveOptions` класс и установите`Dml3DEffectsRenderingMode` собственность`Dml3DEffectsRenderingMode.Advanced` чтобы включить расширенный рендеринг 3D-эффектов DML.
 
  Использовать`Save` метод`Document`class для сохранения документа в формате PDF, указав параметры сохранения.
 

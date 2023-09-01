@@ -50,7 +50,7 @@ Artık belgenizdeki belirli bir sayfa aralığını JPEG görüntülerine dönü
 ### Aspose.Words For .NET kullanarak Jpeg Sayfa Aralığı Alma için örnek kaynak kodu
 
 ```csharp 
- //Belge dizininizin yolu
+ // Belge dizininizin yolu
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

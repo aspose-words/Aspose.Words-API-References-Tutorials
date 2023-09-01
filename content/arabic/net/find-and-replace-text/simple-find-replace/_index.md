@@ -83,7 +83,7 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 
 #### س: كيفية إنشاء مستند جديد في Aspose.Words لـ .NET؟
 
-ج: قبل استخدام وظيفة Simple Text Find And Replace، يجب عليك إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لـ`Document` هدف. فيما يلي نموذج التعليمات البرمجية لإنشاء مستند جديد:
+ ج: قبل استخدام وظيفة Simple Text Find And Replace، يجب عليك إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لـ`Document` هدف. فيما يلي نموذج التعليمات البرمجية لإنشاء مستند جديد:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

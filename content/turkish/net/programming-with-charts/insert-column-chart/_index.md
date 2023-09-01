@@ -57,7 +57,7 @@ Bu, Aspose.Words for .NET kullanarak sütun grafiği ekleme işlemini tamamlar.
 ### Aspose.Words for .NET kullanarak Sütun Grafiği Ekleme için örnek kaynak kodu 
 
 ```csharp
-	//Belge dizininizin yolu
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

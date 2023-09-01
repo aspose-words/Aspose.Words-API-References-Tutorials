@@ -18,7 +18,7 @@ Teknik ayrıntılara dalmadan önce aşağıdaki önkoşulların mevcut olduğun
 
 - Python programlamanın temel anlayışı.
 -  Aspose.Words for Python API referansı (şu adreste mevcuttur:[Burada](https://reference.aspose.com/words/python-net/).
--  Aspose.Words for Python kütüphanesine erişim (şu adresten indirin:[Burada](https://releases.aspose.com/words/python/).
+- Aspose.Words for Python kütüphanesine erişim (şu adresten indirin:[Burada](https://releases.aspose.com/words/python/).
 
 ## Python için Aspose.Words'ü Kurma
 

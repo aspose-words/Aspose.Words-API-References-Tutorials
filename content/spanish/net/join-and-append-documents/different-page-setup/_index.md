@@ -14,7 +14,7 @@ Este tutorial explica cómo usar Aspose.Words para .NET para agregar un document
 
 Asegúrese de tener los siguientes requisitos previos:
 
-- Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
+-  Aspose.Words para la biblioteca .NET instalada. Puedes descargarlo desde[Aspose.Releases]https://releases.aspose.com/words/net/ o utilice el administrador de paquetes NuGet para instalarlo.
 - Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
 ## Paso 2: abra los documentos de origen y destino
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: configurar la configuración de página para el documento fuente
 
-Ajuste la configuración de configuración de página del documento fuente para garantizar una continuación y numeración adecuadas. En este ejemplo, configuramos el inicio de la sección en`SectionStart.Continuous` y reiniciar la numeración de páginas. También nos aseguramos de que el ancho, alto y orientación de la página coincidan con la última sección del documento de destino.
+ Ajuste la configuración de configuración de página del documento fuente para garantizar una continuación y numeración adecuadas. En este ejemplo, configuramos el inicio de la sección en`SectionStart.Continuous` y reiniciar la numeración de páginas. También nos aseguramos de que el ancho, alto y orientación de la página coincidan con la última sección del documento de destino.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -74,18 +74,18 @@ Esto completa la implementación de agregar un documento con diferentes configur
 ### Código fuente de ejemplo para una configuración de página diferente usando Aspose.Words para .NET 
 
 ```csharp
-	//Ruta a su directorio de documentos
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Configure el documento de origen para que continúe inmediatamente después del final del documento de destino.
+	// Configure el documento de origen para que continúe inmediatamente después del final del documento de destino.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Reinicie la numeración de páginas al inicio del documento fuente.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Para garantizar que esto no suceda cuando el documento de origen tiene diferentes configuraciones de configuración de página, asegúrese de que
-	// Los ajustes son idénticos entre la última sección del documento de destino.
+	//Los ajustes son idénticos entre la última sección del documento de destino.
 	// Si hay más secciones continuas a continuación en el documento fuente,
 	// Esto deberá repetirse para esas secciones.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;

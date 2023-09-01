@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 La marca de agua puede ayudar a proteger la confidencialidad de su documento e indicar su estado. Aspose.Words para Java ofrece funciones de marca de agua fáciles de usar:
 
 ```java
-// Agregar una marca de agua visible
+//Agregar una marca de agua visible
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

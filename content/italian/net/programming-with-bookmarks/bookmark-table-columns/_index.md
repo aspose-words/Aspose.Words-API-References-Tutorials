@@ -17,7 +17,7 @@ In questo articolo, esploreremo il codice sorgente C# sopra per capire come util
 
 ## Passaggio 1: creazione della tabella
 
- Prima di creare un segnalibro su una colonna della tabella, dobbiamo prima creare la tabella utilizzando a`DocumentBuilder` oggetto. Nel nostro esempio, creiamo una tabella con due righe e due colonne:
+ Prima di creare un segnalibro su una colonna della tabella, dobbiamo prima creare la tabella utilizzando a`DocumentBuilder`oggetto. Nel nostro esempio, creiamo una tabella con due righe e due colonne:
 
 ```csharp
 builder. StartTable();
@@ -132,7 +132,7 @@ R: Per utilizzare la funzionalità "Segnalibri per colonne di tabella" in Aspose
 
 #### D: Come creare una tabella con colonne in un documento Word utilizzando Aspose.Words per .NET?
 
- R: Per creare una tabella con colonne in un documento Word utilizzando Aspose.Words per .NET, puoi utilizzare a`DocumentBuilder`oggetto per inserire celle e contenuto nella tabella. Ecco un codice di esempio:
+ R: Per creare una tabella con colonne in un documento Word utilizzando Aspose.Words per .NET, puoi utilizzare a`DocumentBuilder` oggetto per inserire celle e contenuto nella tabella. Ecco un codice di esempio:
 
 ```csharp
 builder. StartTable();

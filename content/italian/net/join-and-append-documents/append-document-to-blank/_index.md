@@ -14,7 +14,7 @@ Questo tutorial spiega come utilizzare Aspose.Words per .NET per aggiungere il c
 
 Assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
+-  Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
 - Un percorso di directory di documenti in cui si trovano i documenti di origine e di destinazione.
 
 ## Passaggio 2: crea un nuovo documento di destinazione
@@ -58,12 +58,12 @@ Ciò completa l'implementazione dell'aggiunta di un documento a un documento di 
 ### Codice sorgente di esempio per Aggiungi documento allo spazio vuoto utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	//Il documento di destinazione non è vuoto, pertanto spesso viene visualizzata una pagina vuota prima del documento allegato.
+	// Il documento di destinazione non è vuoto, pertanto spesso viene visualizzata una pagina vuota prima del documento allegato.
 	// Ciò è dovuto al fatto che il documento di base ha una sezione vuota e il nuovo documento viene avviato nella pagina successiva.
 	// Rimuovere tutto il contenuto dal documento di destinazione prima di aggiungerlo.
 	dstDoc.RemoveAllChildren();

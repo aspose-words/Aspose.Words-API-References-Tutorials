@@ -14,7 +14,7 @@ Questo tutorial spiega come utilizzare Aspose.Words per .NET per aggiungere un d
 
 Assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
+-  Aspose.Words per la libreria .NET installata. Puoi scaricarlo da[Aspose.Releases]https://releases.aspose.com/words/net/ o utilizzare il gestore pacchetti NuGet per installarlo.
 - Un percorso di directory di documenti in cui si trovano i documenti di origine e di destinazione.
 
 ## Passaggio 2: apri i documenti di origine e di destinazione
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: imposta le opzioni del formato di importazione
 
- Crea un'istanza di`ImportFormatOptions`classe e impostare il file`IgnoreHeaderFooter` proprietà a`false`. Ciò garantisce che il contenuto dell'intestazione e del piè di pagina venga incluso durante il processo di aggiunta.
+ Crea un'istanza di`ImportFormatOptions` classe e impostare il file`IgnoreHeaderFooter` proprietà a`false`. Ciò garantisce che il contenuto dell'intestazione e del piè di pagina venga incluso durante il processo di aggiunta.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Passaggio 4: aggiungi il documento di origine al documento di destinazione
 
- Usa il`AppendDocument`metodo del documento di destinazione per aggiungere il documento di origine. Passaggio`ImportFormatMode.KeepSourceFormatting` come secondo parametro e le opzioni del formato di importazione come terzo parametro.
+ Usa il`AppendDocument` metodo del documento di destinazione per aggiungere il documento di origine. Passaggio`ImportFormatMode.KeepSourceFormatting` come secondo parametro e le opzioni del formato di importazione come terzo parametro.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ Ciò completa l'implementazione dell'aggiunta di un documento ignorando il conte
 ### Codice sorgente di esempio per Ignora Header Footer utilizzando Aspose.Words per .NET 
 
 ```csharp
-	//Percorso della directory dei documenti
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

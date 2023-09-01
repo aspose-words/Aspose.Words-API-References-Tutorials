@@ -250,7 +250,7 @@ Ja, du kan använda anpassade stilar på dina tabeller genom att ändra olika eg
 
 ### Är det möjligt att slå samman celler i en tabell?
 
- Ja, du kan slå samman celler i en tabell med hjälp av`CellMerge`egendom som tillhandahålls av Aspose.Words.
+ Ja, du kan slå samman celler i en tabell med hjälp av`CellMerge` egendom som tillhandahålls av Aspose.Words.
 
 ### Hur exporterar jag mina tabeller till olika format?
 

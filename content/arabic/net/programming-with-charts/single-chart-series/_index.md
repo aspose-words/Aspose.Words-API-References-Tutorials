@@ -71,7 +71,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 ### مثال على التعليمات البرمجية المصدر لسلسلة المخططات الفردية باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	//المسار إلى دليل المستندات الخاص بك
+	// المسار إلى دليل المستندات الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

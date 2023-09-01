@@ -52,7 +52,7 @@ Vous pouvez désormais exécuter le code source pour convertir votre document au
 
 ```csharp 
 
-//Chemin d'accès à votre répertoire de documents
+// Chemin d'accès à votre répertoire de documents
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");
