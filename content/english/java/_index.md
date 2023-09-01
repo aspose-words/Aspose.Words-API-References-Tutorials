@@ -50,3 +50,23 @@ Streamline document revisions with Aspose.Words for Java! Track changes, manage 
 ### [Document Export and Save Options](./document-export-and-save-options/)
 
 ### [Advanced Document Features](./advanced-document-features/)
+
+### [Word Processing](./word-processing/)
+
+### [Table Processing](./table-processing/)
+
+### [Document Styling](./document-styling/)
+
+### [Document Merging](./document-merging/)
+
+### [Document Converting](./document-converting/)
+
+### [Document Printing](./document-printing/)
+
+### [Document Rendering](./document-rendering/)
+
+### [Document Security](./document-security/)
+
+### [Document Splitting](./document-splitting/)
+
+### [Document Revision](./document-revision/)

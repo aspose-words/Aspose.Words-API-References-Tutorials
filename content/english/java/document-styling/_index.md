@@ -25,3 +25,8 @@ In these tutorials, we will not only focus on creating visually appealing docume
 ## Document Styling Tutorials
 ### [Word Document Styling](./word-document-styling/)
 Learn how to style and process documents with Aspose.Words for Java! Create visually stunning outputs with source code examples. 
+### [Applying Styles and Fonts in Documents](./applying-styles-fonts/)
+### [Styling Paragraphs and Text in Documents](./styling-paragraphs-text/)
+### [Customizing Document Themes](./customizing-document-themes/)
+### [Document Watermarking and Page Setup](./document-watermarking-page-setup/)
+### [Document Header and Footer Styling](./document-header-footer-styling/)

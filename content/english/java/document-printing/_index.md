@@ -25,3 +25,8 @@ By mastering document printing using Aspose.Words for Java, developers can enhan
 ### [A Guide to Document Printing](./guide-to-document-printing/)
 
 Learn to print documents programmatically in Java using Aspose.Words for Java. Step-by-step guide for document processing and word processing. Boost productivity now!
+### [Automating Document Printing](./automating-document-printing/)
+### [Printing Documents with Page Setup](./printing-documents-page-setup/)
+### [Customized Document Printing](./customized-document-printing/)
+### [Printing Specific Document Pages](./printing-specific-document-pages/)
+### [Print Document with PrintDialog](./print-document-printdialog/)

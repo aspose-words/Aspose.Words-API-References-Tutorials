@@ -32,3 +32,8 @@ Learn to add tables in Word using Aspose.Words for Java. Generate well-formatted
 ### [Generate Table from Datatable](./generate-table-from-datatable/)
 
 Learn how to generate a table from a DataTable using Aspose.Words for Java. Create professional Word documents with formatted tables effortlessly. 
+### [Managing Tables and Layouts in Documents](./managing-tables-layouts/)
+### [Working With Document Lists](./working-with-document-lists/)
+### [Creating Tables and Rows in Documents](./creating-tables-rows/)
+### [Formatting Tables in Documents](./formatting-tables/)
+### [Table of Contents Generation](./table-contents-generation/)

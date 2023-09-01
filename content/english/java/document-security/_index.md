@@ -23,3 +23,8 @@ By mastering document security using Aspose.Words for Java, developers can bolst
 ## Document Security Tutorials
 ### [How to Keep Your Documents Safe and Secure](./keep-documents-safe-secure/)
 Secure your documents with Aspose.Words for Java. Encrypt, protect, and add digital signatures effortlessly. Keep your data safe.
+### [Securing Documents with Passwords](./securing-documents-passwords/)
+### [Managing Document Permissions](./managing-document-permissions/)
+### [Document Encryption and Decryption](./document-encryption-decryption/)
+### [Digital Signatures in Documents](./digital-signatures-in-documents/)
+### [Document Redaction and Data Protection](./document-redaction-data-protection/)

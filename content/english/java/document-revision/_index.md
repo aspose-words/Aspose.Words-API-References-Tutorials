@@ -27,3 +27,8 @@ By mastering document revision with Aspose.Words for Java, developers can optimi
 ## Document Revision Tutorials
 ### [The Ultimate Guide to Document Revision](./guide-document-revision/)
 Master document revision with Aspose.Words for Java! Efficiently manage changes, accept/reject revisions, and collaborate seamlessly. Get started now!
+### [Tracking and Managing Document Revisions](./tracking-managing-document-revisions/)
+### [Comparing Document Versions](./comparing-document-versions/)
+### [Accepting and Rejecting Document Changes](./accepting-rejecting-document-changes/)
+### [Document Version Control and History](./document-version-control-history/)
+### [Document Collaboration and Review](./document-collaboration-review/)

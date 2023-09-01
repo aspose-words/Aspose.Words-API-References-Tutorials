@@ -27,3 +27,8 @@ Overall, document merging tutorials using Aspose.Words for Java offer a valuable
 ### [Using Document Merging](./using-document-merging/)
 
 Learn to merge Word documents seamlessly using Aspose.Words for Java. Efficiently combine, format, and handle conflicts in just a few steps. Get started now!
+### [Combining and Cloning Documents](./combining-cloning-documents/)
+### [Joining and Appending Documents](./joining-appending-documents/)
+### [Comparing Documents for Differences](./comparing-documents-for-differences/)
+### [Merging Documents with DocumentBuilder](./merging-documents-documentbuilder/)
+### [Document Splitting and Extraction](./document-splitting-extraction/)
