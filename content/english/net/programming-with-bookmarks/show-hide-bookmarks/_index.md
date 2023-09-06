@@ -55,19 +55,11 @@ Here is the full example source code to demonstrate showing or hiding a specific
 	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 
 ```
-```csharp
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
+#### ShowHideBookmarkedContent source code
 
 ```csharp
+
 public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
         {
             Bookmark bm = doc.Range.Bookmarks[bookmarkName];
@@ -114,6 +106,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool sh
 
             doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
         }
+		
 ```
 ## Conclusion
 

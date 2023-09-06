@@ -75,7 +75,10 @@ Here is the full sample source code to untangle bookmarks from lines using Aspos
 	doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
+
+#### Untangle source code
 ```
+
 private void Untangle(Document doc)
         {
             foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -90,9 +93,12 @@ private void Untangle(Document doc)
                     row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
             }
         }
-```
 
 ```
+
+#### DeleteRowByBookmark source code
+```
+
  private void DeleteRowByBookmark(Document doc, string bookmarkName)
         {
             Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
@@ -100,6 +106,7 @@ private void Untangle(Document doc)
             Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
             row?.Remove();
         }
+
 ```
 ## Conclusion
 

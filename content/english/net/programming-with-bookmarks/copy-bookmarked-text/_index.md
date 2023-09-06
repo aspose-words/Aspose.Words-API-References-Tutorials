@@ -87,7 +87,11 @@ Here is the full example source code to demonstrate copying text from a bookmark
 	dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ```
+
+#### AppendBookmarkedText Source Code
+
 ```csharp
+
 private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
         {
             // This is the paragraph that contains the beginning of the bookmark.
@@ -118,6 +122,7 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
                 dstNode.AppendChild(newNode);
             }
         }
+
 ```
 ## Conclusion
 
