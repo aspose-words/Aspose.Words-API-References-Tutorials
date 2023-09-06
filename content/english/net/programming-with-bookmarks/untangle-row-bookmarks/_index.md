@@ -77,7 +77,7 @@ Here is the full sample source code to untangle bookmarks from lines using Aspos
 ```
 
 #### Untangle source code
-```
+```csharp
 
 private void Untangle(Document doc)
         {
@@ -97,7 +97,7 @@ private void Untangle(Document doc)
 ```
 
 #### DeleteRowByBookmark source code
-```
+```csharp
 
  private void DeleteRowByBookmark(Document doc, string bookmarkName)
         {
