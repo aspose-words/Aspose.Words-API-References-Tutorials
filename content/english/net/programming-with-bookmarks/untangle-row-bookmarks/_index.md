@@ -75,7 +75,32 @@ Here is the full sample source code to untangle bookmarks from lines using Aspos
 	doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
+```
+private void Untangle(Document doc)
+        {
+            foreach (Bookmark bookmark in doc.Range.Bookmarks)
+            {
+                // Get the parent row of both the bookmark and bookmark end node.
+                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
+                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
+                // If both rows are found okay, and the bookmark start and end are contained in adjacent rows,
+                // move the bookmark end node to the end of the last paragraph in the top row's last cell.
+                if (row1 != null && row2 != null && row1.NextSibling == row2)
+                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+            }
+        }
+```
+
+```
+ private void DeleteRowByBookmark(Document doc, string bookmarkName)
+        {
+            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+            row?.Remove();
+        }
+```
 ## Conclusion
 
 In this article, we explored the C# source code to understand how to use the Untangle Row Bookmarks feature of Aspose.Words for .NET. We followed a step-by-step guide to untangle row bookmarks and delete a specific row without damage other bookmarks.
