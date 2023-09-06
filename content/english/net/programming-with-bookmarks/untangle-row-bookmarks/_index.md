@@ -51,7 +51,7 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Example source code for Untangle Row Bookmarks using Aspose.Words for .NET**
+### Example source code for Untangle Row Bookmarks using Aspose.Words for .NET
 
 Here is the full sample source code to untangle bookmarks from lines using Aspose.Words for .NET:
 

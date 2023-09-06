@@ -87,7 +87,38 @@ Here is the full example source code to demonstrate copying text from a bookmark
 	dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ```
+```csharp
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+        {
+            // This is the paragraph that contains the beginning of the bookmark.
+            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
 
+            // This is the paragraph that contains the end of the bookmark.
+            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+
+            if (startPara == null || endPara == null)
+                throw new InvalidOperationException(
+                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+            // Limit ourselves to a reasonably simple scenario.
+            if (startPara.ParentNode != endPara.ParentNode)
+                throw new InvalidOperationException(
+                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+            // We want to copy all paragraphs from the start paragraph up to (and including) the end paragraph,
+            // therefore the node at which we stop is one after the end paragraph.
+            Node endNode = endPara.NextSibling;
+
+            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+            {
+                // This creates a copy of the current node and imports it (makes it valid) in the context
+                // of the destination document. Importing means adjusting styles and list identifiers correctly.
+                Node newNode = importer.ImportNode(curNode, true);
+
+                dstNode.AppendChild(newNode);
+            }
+        }
+```
 ## Conclusion
 
 In this article, we explored the C# source code to understand how to use the function Copy Bookmarked Text from Aspose.Words for .NET. We followed a step-by-step guide to copy the contents of a bookmark from a source document to another document.
