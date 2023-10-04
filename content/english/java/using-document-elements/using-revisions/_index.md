@@ -2,198 +2,144 @@
 title: Using Revisions in Aspose.Words for Java
 linktitle: Using Revisions in Aspose.Words for Java
 second_title: Aspose.Words Java Document Processing API
-description: 
+description: Learn to use Aspose.Words for Java's revision efficiently. Step-by-step guide for developers. Optimize your document management.
 type: docs
 weight: 22
 url: /java/using-document-elements/using-revisions/
 ---
 
+If you're a Java developer looking to work with documents and need to implement revision controls, Aspose.Words for Java provides a powerful set of tools to help you manage revisions effectively. In this tutorial, we'll guide you through using revision in Aspose.Words for Java step by step. 
+
+## 1. Introduction to Aspose.Words for Java
+
+Aspose.Words for Java is a robust Java API that allows you to create, modify, and manipulate Word documents without the need for Microsoft Word. It's particularly useful when you need to implement revision within your documents.
+
+## 2. Setting Up Your Development Environment
+
+Before we dive into using Aspose.Words for Java, you need to set up your development environment. Ensure you have the necessary Java development tools and the Aspose.Words for Java library installed.
+
+## 3. Creating a New Document
+
+Let's start by creating a new Word document using Aspose.Words for Java. Here's how you can do it:
+
+```java
+string outPath = "Your Output Directory";
+Document doc = new Document();
+Body body = doc.getFirstSection().getBody();
+Paragraph para = body.getFirstParagraph();
+```
+
+## 4. Adding Content to the Document
+
+Now that you have a blank document, you can add content to it. In this example, we'll add three paragraphs:
+
+```java
+para.appendChild(new Run(doc, "Paragraph 1. "));
+body.appendParagraph("Paragraph 2. ");
+body.appendParagraph("Paragraph 3. ");
+```
+
+## 5. Starting Revision Tracking
+
+To track revisions in your document, you can use the following code:
+
+```java
+doc.startTrackRevisions("John Doe", new Date());
+```
+
+## 6. Making Revisions
+
+Let's make a revision by adding another paragraph:
+
+```java
+para = body.appendParagraph("Paragraph 4. ");
+```
+
+## 7. Accepting and Rejecting Revisions
+
+You can accept or reject revisions in your document using Aspose.Words for Java. Revisions can be easily managed in Microsoft Word after the document is generated.
+
+## 8. Stopping Revision Tracking
+
+To stop tracking revisions, use the following code:
+
+```java
+doc.stopTrackRevisions();
+```
+
+## 9. Saving the Document
+
+Finally, save your document:
+
+```java
+doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
+```
+
+## 10. Conclusion
+
+In this tutorial, we've covered the basics of using revision in Aspose.Words for Java. You've learned how to create a document, add content, start and stop revision tracking, and save your document.
+
+Now you have the tools you need to effectively manage revisions in your Java applications using Aspose.Words for Java.
+
 ## Complete Source Code
 ```java
-        Document doc = new Document();
-        Body body = doc.getFirstSection().getBody();
-        Paragraph para = body.getFirstParagraph();
-        // Add text to the first paragraph, then add two more paragraphs.
-        para.appendChild(new Run(doc, "Paragraph 1. "));
-        body.appendParagraph("Paragraph 2. ");
-        body.appendParagraph("Paragraph 3. ");
-        // We have three paragraphs, none of which registered as any type of revision
-        // If we add/remove any content in the document while tracking revisions,
-        // they will be displayed as such in the document and can be accepted/rejected.
-        doc.startTrackRevisions("John Doe", new Date());
-        // This paragraph is a revision and will have the according "IsInsertRevision" flag set.
-        para = body.appendParagraph("Paragraph 4. ");
-        Assert.assertTrue(para.isInsertRevision());
-        // Get the document's paragraph collection and remove a paragraph.
-        ParagraphCollection paragraphs = body.getParagraphs();
-        Assert.assertEquals(4, paragraphs.getCount());
-        para = paragraphs.get(2);
-        para.remove();
-        // Since we are tracking revisions, the paragraph still exists in the document, will have the "IsDeleteRevision" set
-        // and will be displayed as a revision in Microsoft Word, until we accept or reject all revisions.
-        Assert.assertEquals(4, paragraphs.getCount());
-        Assert.assertTrue(para.isDeleteRevision());
-        // The delete revision paragraph is removed once we accept changes.
-        doc.acceptAllRevisions();
-        Assert.assertEquals(3, paragraphs.getCount());
-        Assert.assertEquals(para.getRuns().getCount(), 0); //was Is.Empty
-        // Stopping the tracking of revisions makes this text appear as normal text.
-        // Revisions are not counted when the document is changed.
-        doc.stopTrackRevisions();
-        // Save the document.
-        doc.save(getArtifactsDir() + "WorkingWithRevisions.AcceptRevisions.docx");
-    }
-    @Test
-    public void getRevisionTypes() throws Exception
-    {
-        Document doc = new Document(getMyDir() + "Revisions.docx");
-        ParagraphCollection paragraphs = doc.getFirstSection().getBody().getParagraphs();
-        for (int i = 0; i < paragraphs.getCount(); i++)
-        {
-            if (paragraphs.get(i).isMoveFromRevision())
-                System.out.println(MessageFormat.format("The paragraph {0} has been moved (deleted).", i));
-            if (paragraphs.get(i).isMoveToRevision())
-                System.out.println(MessageFormat.format("The paragraph {0} has been moved (inserted).", i));
-        }
-    }
-    @Test
-    public void getRevisionGroups() throws Exception
-    {
-        Document doc = new Document(getMyDir() + "Revisions.docx");
-        for (RevisionGroup group : doc.getRevisions().getGroups())
-        {
-            System.out.println(MessageFormat.format("{0}, {1}:", group.getAuthor(),group.getRevisionType()));
-            System.out.println(group.getText());
-        }
-    }
-    @Test
-    public void removeCommentsInPdf() throws Exception
-    {
-        Document doc = new Document(getMyDir() + "Revisions.docx");
-        // Do not render the comments in PDF.
-        doc.getLayoutOptions().setCommentDisplayMode(CommentDisplayMode.HIDE);
-        doc.save(getArtifactsDir() + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
-    }
-    @Test
-    public void showRevisionsInBalloons() throws Exception
-    {
-        Document doc = new Document(getMyDir() + "Revisions.docx");
-        // Renders insert revisions inline, delete and format revisions in balloons.
-        doc.getLayoutOptions().getRevisionOptions().setShowInBalloons(ShowInBalloons.FORMAT_AND_DELETE);
-        doc.getLayoutOptions().getRevisionOptions().setMeasurementUnit(MeasurementUnits.INCHES);
-        // Renders revision bars on the right side of a page.
-        doc.getLayoutOptions().getRevisionOptions().setRevisionBarsPosition(HorizontalAlignment.RIGHT);
-        doc.save(getArtifactsDir() + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
-    }
-    @Test
-    public void getRevisionGroupDetails() throws Exception
-    {
-        Document doc = new Document(getMyDir() + "Revisions.docx");
-        for (Revision revision : doc.getRevisions())
-        {
-            String groupText = revision.getGroup() != null
-                ? "Revision group text: " + revision.getGroup().getText()
-                : "Revision has no group";
-            System.out.println("Type: " + revision.getRevisionType());
-            System.out.println("Author: " + revision.getAuthor());
-            System.out.println("Date: " + revision.getDateTime());
-            System.out.println("Revision text: " + revision.getParentNode().toString(SaveFormat.TEXT));
-            System.out.println(groupText);
-        }
-    }
-    @Test
-    public void accessRevisedVersion() throws Exception
-    {
-        Document doc = new Document(getMyDir() + "Revisions.docx");
-        doc.updateListLabels();
-        // Switch to the revised version of the document.
-        doc.setRevisionsView(RevisionsView.FINAL);
-        for (Revision revision : doc.getRevisions())
-        {
-            if (revision.getParentNode().getNodeType() == NodeType.PARAGRAPH)
-            {
-                Paragraph paragraph = (Paragraph) revision.getParentNode();
-                if (paragraph.isListItem())
-                {
-                    System.out.println(paragraph.getListLabel().getLabelString());
-                    System.out.println(paragraph.getListFormat().getListLevel());
-                }
-            }
-        }
-    }
-    @Test
-    public void moveNodeInTrackedDocument() throws Exception
-    {
-        Document doc = new Document();
-        DocumentBuilder builder = new DocumentBuilder(doc);
-        builder.writeln("Paragraph 1");
-        builder.writeln("Paragraph 2");
-        builder.writeln("Paragraph 3");
-        builder.writeln("Paragraph 4");
-        builder.writeln("Paragraph 5");
-        builder.writeln("Paragraph 6");
-        Body body = doc.getFirstSection().getBody();
-        System.out.println(MessageFormat.format("Paragraph count: {0}", body.getParagraphs().getCount()));
-        Calendar calendar = new GregorianCalendar(2020, Calendar.DECEMBER, 23);
-        calendar.set(Calendar.HOUR, 14);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
-        // Start tracking revisions.
-        doc.startTrackRevisions("Author", calendar.getTime());
-        // Generate revisions when moving a node from one location to another.
-        Node node = body.getParagraphs().get(3);
-        Node endNode = body.getParagraphs().get(5).getNextSibling();
-        Node referenceNode = body.getParagraphs().get(0);
-        while (node != endNode)
-        {
-            Node nextNode = node.getNextSibling();
-            body.insertBefore(node, referenceNode);
-            node = nextNode;
-        }
-        // Stop the process of tracking revisions.
-        doc.stopTrackRevisions();
-        // There are 3 additional paragraphs in the move-from range.
-        System.out.println(MessageFormat.format("Paragraph count: {0}", body.getParagraphs().getCount()));
-        doc.save(getArtifactsDir() + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-    }
-    @Test
-    public void shapeRevision() throws Exception
-    {
-        Document doc = new Document();
-        // Insert an inline shape without tracking revisions.
-        Assert.assertFalse(doc.getTrackRevisions());
-        Shape shape = new Shape(doc, ShapeType.CUBE);
-        shape.setWrapType(WrapType.INLINE);
-        shape.setWidth(100.0);
-        shape.setHeight(100.0);
-        doc.getFirstSection().getBody().getFirstParagraph().appendChild(shape);
-        // Start tracking revisions and then insert another shape.
-        doc.startTrackRevisions("John Doe");
-        shape = new Shape(doc, ShapeType.SUN);
-        shape.setWrapType(WrapType.INLINE);
-        shape.setWidth(100.0);
-        shape.setHeight(100.0);
-        doc.getFirstSection().getBody().getFirstParagraph().appendChild(shape);
-        // Get the document's shape collection which includes just the two shapes we added.
-        List<Shape> shapes = IterableUtils.toList(doc.getChildNodes(NodeType.SHAPE, true));
-        Assert.assertEquals(2, shapes.size());
-        // Remove the first shape.
-        shapes.get(0).remove();
-        // Because we removed that shape while changes were being tracked, the shape counts as a delete revision.
-        Assert.assertEquals(ShapeType.CUBE, shapes.get(0).getShapeType());
-        Assert.assertTrue(shapes.get(0).isDeleteRevision());
-        // And we inserted another shape while tracking changes, so that shape will count as an insert revision.
-        Assert.assertEquals(ShapeType.SUN, shapes.get(1).getShapeType());
-        Assert.assertTrue(shapes.get(1).isInsertRevision());
-        // The document has one shape that was moved, but shape move revisions will have two instances of that shape.
-        // One will be the shape at its arrival destination and the other will be the shape at its original location.
-        doc = new Document(getMyDir() + "Revision shape.docx");
-        shapes = IterableUtils.toList(doc.getChildNodes(NodeType.SHAPE, true));
-        Assert.assertEquals(2, shapes.size());
-        // This is the move to revision, also the shape at its arrival destination.
-        Assert.assertFalse(shapes.get(0).isMoveFromRevision());
-        Assert.assertTrue(shapes.get(0).isMoveToRevision());
-        // This is the move from revision, which is the shape at its original location.
-        Assert.assertTrue(shapes.get(1).isMoveFromRevision());
-        Assert.assertFalse(shapes.get(1).isMoveToRevision());
+string outPath = "Your Output Directory";
+Document doc = new Document();
+Body body = doc.getFirstSection().getBody();
+Paragraph para = body.getFirstParagraph();
+// Add text to the first paragraph, then add two more paragraphs.
+para.appendChild(new Run(doc, "Paragraph 1. "));
+body.appendParagraph("Paragraph 2. ");
+body.appendParagraph("Paragraph 3. ");
+// We have three paragraphs, none of which registered as any type of revision
+// If we add/remove any content in the document while tracking revisions,
+// they will be displayed as such in the document and can be accepted/rejected.
+doc.startTrackRevisions("John Doe", new Date());
+// This paragraph is a revision and will have the according "IsInsertRevision" flag set.
+para = body.appendParagraph("Paragraph 4. ");
+Assert.assertTrue(para.isInsertRevision());
+// Get the document's paragraph collection and remove a paragraph.
+ParagraphCollection paragraphs = body.getParagraphs();
+Assert.assertEquals(4, paragraphs.getCount());
+para = paragraphs.get(2);
+para.remove();
+// Since we are tracking revisions, the paragraph still exists in the document, will have the "IsDeleteRevision" set
+// and will be displayed as a revision in Microsoft Word, until we accept or reject all revisions.
+Assert.assertEquals(4, paragraphs.getCount());
+Assert.assertTrue(para.isDeleteRevision());
+// The delete revision paragraph is removed once we accept changes.
+doc.acceptAllRevisions();
+Assert.assertEquals(3, paragraphs.getCount());
+Assert.assertEquals(para.getRuns().getCount(), 0); //was Is.Empty
+// Stopping the tracking of revisions makes this text appear as normal text.
+// Revisions are not counted when the document is changed.
+doc.stopTrackRevisions();
+// Save the document.
+doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
+  
 ```
+
+## FAQs
+
+### 1. Can I use Aspose.Words for Java with other programming languages?
+
+No, Aspose.Words for Java is specifically designed for Java development.
+
+### 2. Is Aspose.Words for Java compatible with all versions of Microsoft Word?
+
+Yes, Aspose.Words for Java is designed to be compatible with various versions of Microsoft Word.
+
+### 3. Can I track revisions in existing Word documents?
+
+Yes, you can use Aspose.Words for Java to track revisions in existing Word documents.
+
+### 4. Are there any licensing requirements for using Aspose.Words for Java?
+
+Yes, you'll need to acquire a license to use Aspose.Words for Java in your projects. You can [get access to a license here](https://purchase.aspose.com/buy).
+
+### 5. Where can I find support for Aspose.Words for Java?
+
+For any questions or issues, you can visit the [Aspose.Words for Java support forum](https://forum.aspose.com/).
+
+Get started with Aspose.Words for Java today and streamline your document management processes.
+
