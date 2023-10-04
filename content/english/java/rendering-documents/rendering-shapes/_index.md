@@ -59,15 +59,17 @@ After rendering, the next step is to save the rendered image to your desired out
 
 ## Complete Source Code
 ```java
-        Document doc = new Document(getMyDir() + "Rendering.docx");
-        // Retrieve the target shape from the document.
-        Shape shape = (Shape) doc.getChild(NodeType.SHAPE, 0, true);
-        ShapeRenderer render = shape.getShapeRenderer();
-        ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.EMF);
-        {
-            imageOptions.setScale(1.5f);
-        }
-        render.save(getArtifactsDir() + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
+string dataDir = "Your Document Directory";
+string outPath = "Your Output Directory";
+Document doc = new Document(dataDir + "Rendering.docx");
+// Retrieve the target shape from the document.
+Shape shape = (Shape) doc.getChild(NodeType.SHAPE, 0, true);
+ShapeRenderer render = shape.getShapeRenderer();
+ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.EMF);
+{
+	imageOptions.setScale(1.5f);
+}
+render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
     
 ```
 

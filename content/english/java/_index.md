@@ -51,7 +51,7 @@ Streamline document revisions with Aspose.Words for Java! Track changes, manage 
 ### [Document Conversion and Export](./document-conversion-and-export/)
 
 ### [Licensing and Configuration](./licensing-and-configuration/)
-
+Discover how to license and configure Aspose.Words for Java with ease. Dive into the intricacies of setting up this powerful toolkit for document processing in your Java applications.
 ### [Using Document Elements](./using-document-elements/)
 
 ### [Printing Documents](./printing-documents/)

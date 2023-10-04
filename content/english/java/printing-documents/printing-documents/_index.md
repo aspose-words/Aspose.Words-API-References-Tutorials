@@ -56,19 +56,18 @@ pj.print();
 ```
 ## Complete Source Code
 ```java
-        Document doc = new Document(getMyDir() + "Rendering.docx");
-        // Create a print job to print our document with.
-        PrinterJob pj = PrinterJob.getPrinterJob();
-        // Initialize an attribute set with the number of pages in the document.
-        PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
-        attributes.add(new PageRanges(1, doc.getPageCount()));
-        // Pass the printer settings along with the other parameters to the print document.
-        MultipagePrintDocument awPrintDoc = new MultipagePrintDocument(doc, 4, true, attributes);
-        // Pass the document to be printed using the print job.
-        pj.setPrintable(awPrintDoc);
-        pj.print();
-    }
-}
+string dataDir = "Your Document Directory";
+Document doc = new Document(dataDir + "Rendering.docx");
+// Create a print job to print our document with.
+PrinterJob pj = PrinterJob.getPrinterJob();
+// Initialize an attribute set with the number of pages in the document.
+PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
+attributes.add(new PageRanges(1, doc.getPageCount()));
+// Pass the printer settings along with the other parameters to the print document.
+MultipagePrintDocument awPrintDoc = new MultipagePrintDocument(doc, 4, true, attributes);
+// Pass the document to be printed using the print job.
+pj.setPrintable(awPrintDoc);
+pj.print();
 ```
 Source code of MultipagePrintDocument
 ```java
