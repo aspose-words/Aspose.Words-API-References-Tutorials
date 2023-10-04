@@ -2,7 +2,7 @@
 title: Using Sections in Aspose.Words for Java
 linktitle: Using Sections in Aspose.Words for Java
 second_title: Aspose.Words Java Document Processing API
-description: Explore Aspose.Words for Java: A comprehensive guide on using sections. Add, delete, append, clone sections with code examples.
+description: Explore Aspose.Words for Java; A comprehensive guide on using sections. Add, delete, append, clone sections with code examples.
 type: docs
 weight: 23
 url: /java/using-document-elements/using-sections/
