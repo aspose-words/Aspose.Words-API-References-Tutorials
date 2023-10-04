@@ -2,7 +2,7 @@
 title: Using Fonts in Aspose.Words for Java
 linktitle: Using Fonts in Aspose.Words for Java
 second_title: Aspose.Words Java Document Processing API
-description: Explore font formatting in Aspose.Words for Java: size, style, color, and more. Create beautifully formatted documents with ease.
+description: Explore font formatting in Aspose.Words for Java; size, style, color, and more. Create beautifully formatted documents with ease.
 type: docs
 weight: 12
 url: /java/using-document-elements/using-fonts/
