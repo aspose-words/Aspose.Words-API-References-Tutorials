@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", save
 
  قم بتحميل مستند Word الذي تريد تحويله إلى PDF باستخدام الملف`Document` الفئة ومسار المستند المحدد.
 
- إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`UseCoreFonts` الملكية ل`true`. سيؤدي هذا إلى تجنب تضمين الخطوط الأساسية في ملف PDF الذي تم إنشاؤه.
+ إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`UseCoreFonts`الملكية ل`true`. سيؤدي هذا إلى تجنب تضمين الخطوط الأساسية في ملف PDF الذي تم إنشاؤه.
 
  استخدم ال`Save` طريقة`Document` كائن لحفظ المستند بتنسيق PDF مع تحديد خيارات التحويل التي تم تكوينها مسبقًا.
 

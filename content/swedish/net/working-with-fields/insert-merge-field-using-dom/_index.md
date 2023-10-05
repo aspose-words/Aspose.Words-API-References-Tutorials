@@ -112,7 +112,7 @@ S: För att ange källdata för sammanslagningsfältet i Aspose.Words för .NET 
 
 #### F: Hur kan jag kontrollera om ett sammanslagningsfält har infogats i ett Word-dokument med Aspose.Words för .NET?
 
- S: För att kontrollera om ett sammanslagningsfält har infogats, kan du bläddra i dokumentinnehållet och söka efter sammanslagningsfältsinstanser. Du kan använda metoderna och egenskaperna för`Document` objekt för att komma åt stycken, fält och andra delar av dokumentet.
+ S: För att kontrollera om ett sammanslagningsfält har infogats, kan du bläddra i dokumentinnehållet och söka efter sammanslagningsfältsinstanser. Du kan använda metoderna och egenskaperna hos`Document` objekt för att komma åt stycken, fält och andra delar av dokumentet.
 
 #### F: Påverkar Word-dokumentstrukturen med Aspose.Words för .NET om du infogar ett sammanfogningsfält med DOM?
 

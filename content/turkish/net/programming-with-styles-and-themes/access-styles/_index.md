@@ -50,7 +50,7 @@ foreach(Style style in styles)
 }
 ```
 
- Bu son adımda, koleksiyondaki her stilin üzerinden bir döngü kullanarak geçiyoruz.`foreach`döngü. Daha iyi okunabilirlik için her stilin adını virgüllerle birleştirerek konsolda görüntüleriz.
+ Bu son adımda, koleksiyondaki her stilin üzerinden bir döngü kullanarak geçiyoruz.`foreach` döngü. Daha iyi okunabilirlik için her stilin adını virgüllerle birleştirerek konsolda görüntüleriz.
 
 Artık bir belgedeki stillere erişmek ve adlarını konsolda görüntülemek için kaynak kodunu çalıştırabilirsiniz. Bu özellik, bir belgedeki stilleri analiz etmek, belirli stiller üzerinde belirli işlemleri gerçekleştirmek veya yalnızca mevcut stiller hakkında bilgi almak için yararlı olabilir.
 
@@ -61,7 +61,7 @@ Document doc = new Document();
 
 string styleName = "";
 
-// Belgeden stil koleksiyonunu alın.
+//Belgeden stil koleksiyonunu alın.
 StyleCollection styles = doc.Styles;
 foreach (Style style in styles)
 {

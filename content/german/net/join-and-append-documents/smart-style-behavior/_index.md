@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Schritt 4: Legen Sie die Verhaltensoptionen für intelligente Stile fest
 
-Um das Smart-Style-Verhalten während des Anhängevorgangs zu aktivieren, müssen Sie eine Instanz von erstellen`ImportFormatOptions` und stellen Sie die ein`SmartStyleBehavior` Eigentum zu`true`.
+Um das Smart-Style-Verhalten während des Anhängevorgangs zu aktivieren, müssen Sie eine Instanz von erstellen`ImportFormatOptions` und stellen Sie die ein`SmartStyleBehavior`Eigentum zu`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };

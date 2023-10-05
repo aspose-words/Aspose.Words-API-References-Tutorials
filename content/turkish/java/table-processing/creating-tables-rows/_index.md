@@ -12,7 +12,7 @@ url: /tr/java/table-processing/creating-tables-rows/
 Belgelerde tablolar ve satırlar oluşturmak belge işlemenin temel bir unsurudur ve Aspose.Words for Java bu görevi her zamankinden daha kolay hale getirir. Bu adım adım kılavuzda, belgelerinizde tablolar ve satırlar oluşturmak için Aspose.Words for Java'yı nasıl kullanabileceğinizi keşfedeceğiz. İster rapor oluşturuyor olun, ister fatura oluşturuyor olun, ister yapılandırılmış veri sunumu gerektiren herhangi bir belge oluşturuyor olun, bu kılavuz ihtiyacınızı karşılayacaktır.
 
 ## Sahneyi hazırlamak
-En ince ayrıntılara dalmadan önce Aspose.Words for Java ile çalışmak için gerekli kuruluma sahip olduğunuzdan emin olalım. Kütüphaneyi indirip yüklediğinizden emin olun. Henüz yapmadıysanız indirme bağlantısını bulabilirsiniz[Burada](https://releases.aspose.com/words/java/).
+ En ince ayrıntılara dalmadan önce Aspose.Words for Java ile çalışmak için gerekli kuruluma sahip olduğunuzdan emin olalım. Kütüphaneyi indirip yüklediğinizden emin olun. Henüz yapmadıysanız indirme bağlantısını bulabilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 ## Bina Masaları
 ### Tablo Oluşturma

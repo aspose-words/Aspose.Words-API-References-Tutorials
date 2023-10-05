@@ -414,7 +414,7 @@ Vous pouvez consulter le site Web Aspose ou le référentiel Maven pour connaît
 Oui, Aspose.Words for Java est compatible avec Java 11 et les versions ultérieures.
 
 ### Comment puis-je définir les marges de page pour des sections spécifiques de mon document ?
- Vous pouvez définir les marges de page pour des sections spécifiques de votre document à l'aide de l'option`PageSetup` classe. Voici un exemple :
+Vous pouvez définir les marges de page pour des sections spécifiques de votre document à l'aide de l'option`PageSetup` classe. Voici un exemple :
 
 ```java
 Section section = doc.getSections().get(0); // Obtenez la première section
@@ -427,6 +427,6 @@ pageSetup.setBottomMargin(72); // Marge inférieure en points
 
 ## Conclusion
 
-Dans ce guide complet, nous avons exploré les puissantes capacités d'Aspose.Words pour Java pour styliser les paragraphes et le texte des documents. Vous avez appris à créer, formater et améliorer vos documents par programmation, depuis la manipulation de texte de base jusqu'aux fonctionnalités avancées. Aspose.Words for Java permet aux développeurs d'automatiser efficacement les tâches de formatage de documents. Continuez à pratiquer et à expérimenter différentes fonctionnalités pour maîtriser le style de document avec Aspose.Words pour Java.
+Dans ce guide complet, nous avons exploré les puissantes capacités d'Aspose.Words pour Java pour styliser les paragraphes et le texte des documents. Vous avez appris à créer, formater et améliorer vos documents par programmation, depuis la manipulation de texte de base jusqu'aux fonctionnalités avancées. Aspose.Words for Java permet aux développeurs d'automatiser efficacement les tâches de formatage de documents. Continuez à pratiquer et à expérimenter différentes fonctionnalités pour maîtriser le style de document avec Aspose.Words for Java.
 
 Maintenant que vous savez parfaitement comment styliser des paragraphes et du texte dans des documents à l'aide d'Aspose.Words pour Java, vous êtes prêt à créer des documents magnifiquement formatés et adaptés à vos besoins spécifiques. Bon codage !

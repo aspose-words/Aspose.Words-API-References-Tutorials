@@ -83,7 +83,7 @@ R : Pour définir les options de plan dans un document PDF à l'aide d'Aspose.W
 
  Configurez les options d'enregistrement au format PDF en créant une instance du`PdfSaveOptions` classe et en utilisant le`OutlineOptions` propriété pour définir les options de contour. Vous pouvez spécifier le nombre de niveaux de titres à inclure dans le plan à l'aide de l'option`HeadingsOutlineLevels` propriété et le nombre de niveaux de plan développés à l'aide de la`ExpandedOutlineLevels` propriété.
 
- Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document`classe spécifiant le chemin et les options de sauvegarde.
+ Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document` classe spécifiant le chemin et les options de sauvegarde.
 
 #### Q : À quoi sert l'option de plan dans un document PDF ?
 : L'option Plan dans un document PDF vous permet de créer une structure hiérarchique du contenu, ce qui facilite la navigation dans le document et l'accès aux différentes sections. Cela permet aux utilisateurs d'accéder rapidement à des parties spécifiques du document en cliquant sur les entrées de la table des matières ou du plan. L'option de plan améliore également l'expérience de lecture en fournissant un aperçu de la structure globale du document.

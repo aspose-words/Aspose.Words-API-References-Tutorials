@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Étape 2 : Mettre le texte en italique
 
- Nous pouvons mettre le texte en italique en définissant la police`Italic` propriété à`true`.
+ Nous pouvons mettre le texte en italique en définissant la police`Italic`propriété à`true`.
 
 ```csharp
 builder.Font.Italic = true;
@@ -46,11 +46,11 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de te
 
 #### Q : Comment puis-je mettre du texte en italique dans Aspose.Words ?
 
-R : Pour mettre du texte en italique dans Aspose.Words, vous pouvez utiliser le`Font.Italic` propriété du`Run`objet. Vous pouvez définir cette propriété sur`true` pour mettre en italique un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.Italic=true` pour mettre en italique le texte contenu dans le`Run` objet.
+R : Pour mettre du texte en italique dans Aspose.Words, vous pouvez utiliser le`Font.Italic` propriété du`Run` objet. Vous pouvez définir cette propriété sur`true` pour mettre en italique un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.Italic=true` pour mettre en italique le texte contenu dans le`Run` objet.
 
 #### Q : Est-il possible de mettre en italique plusieurs morceaux de texte dans un même paragraphe ?
 
- R : Oui, vous pouvez mettre en italique plusieurs morceaux de texte dans un seul paragraphe en utilisant plusieurs`Run` objets. Vous pouvez créer plusieurs`Run` objets et définir le`Font.Italic` propriété à`true` pour chaque objet pour mettre en italique les parties souhaitées du texte. Ensuite, vous pouvez les ajouter au paragraphe en utilisant le`Paragraph.AppendChild(run)` méthode.
+ R : Oui, vous pouvez mettre en italique plusieurs morceaux de texte dans un seul paragraphe en utilisant plusieurs`Run` objets. Vous pouvez créer plusieurs`Run` objets et définir le`Font.Italic`propriété à`true` pour chaque objet pour mettre en italique les parties souhaitées du texte. Ensuite, vous pouvez les ajouter au paragraphe en utilisant le`Paragraph.AppendChild(run)` méthode.
 
 #### Q : Puis-je mettre en italique le texte d'un tableau ou d'une cellule dans Aspose.Words ?
 

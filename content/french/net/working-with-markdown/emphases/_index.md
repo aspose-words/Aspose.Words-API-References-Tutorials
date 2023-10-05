@@ -109,11 +109,11 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### Q : Comment surligner du texte à l’aide de Markdown ?
 
- : Pour surligner du texte à l'aide de Markdown, entourez simplement le texte avec les symboles appropriés. Utiliser`*` ou`_` pour les italiques,`**` ou`__` pour gras, et`~~` pour le barré.
+ R : Pour surligner du texte à l'aide de Markdown, entourez simplement le texte avec les symboles appropriés. Utiliser`*` ou`_` pour les italiques,`**` ou`__` pour gras, et`~~` pour le barré.
 
 #### Q : Pouvons-nous combiner différents surlignages dans le même texte ?
 
- R : Oui, il est possible de combiner différents surlignages dans un même texte. Par exemple, vous pouvez mettre un mot en gras et en italique en utilisant à la fois`**` et`*` autour du monde.
+ R : Oui, il est possible de combiner différents surlignages dans un même texte. Par exemple, vous pouvez mettre un mot en gras et en italique en utilisant à la fois`**` et`*`autour du monde.
 
 #### Q : Quelles options de surbrillance sont disponibles dans Markdown ?
 
@@ -125,4 +125,4 @@ R : Les options de surbrillance disponibles dans Markdown sont en italique (`*`
 
 #### Q : Pouvons-nous personnaliser l’apparence du surlignage à l’aide de CSS ?
 
-: La surbrillance dans Markdown est généralement rendue en utilisant les styles par défaut du navigateur. Si vous convertissez votre Markdown en HTML, vous pouvez personnaliser l'apparence de la surbrillance à l'aide des règles CSS.
+R : La surbrillance dans Markdown est généralement rendue en utilisant les styles par défaut du navigateur. Si vous convertissez votre Markdown en HTML, vous pouvez personnaliser l'apparence de la surbrillance à l'aide des règles CSS.

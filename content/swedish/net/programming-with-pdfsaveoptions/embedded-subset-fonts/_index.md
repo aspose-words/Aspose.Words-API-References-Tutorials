@@ -81,7 +81,7 @@ S: För att bädda in teckensnittsundergrupper i ett PDF-dokument med Aspose.Wor
 
  Ladda dokumentet du vill bearbeta med hjälp av`Document` klass och dokumentsökvägen.
 
- Konfigurera PDF-sparalternativ genom att skapa en instans av`PdfSaveOptions` klass och ställa in`EmbedFullFonts` egendom till`false`Detta säkerställer att endast de teckensnittsunderuppsättningar som används i dokumentet kommer att inkluderas i PDF-filen.
+ Konfigurera PDF-sparalternativ genom att skapa en instans av`PdfSaveOptions` klass och ställa in`EmbedFullFonts`egendom till`false`Detta säkerställer att endast de teckensnittsunderuppsättningar som används i dokumentet kommer att inkluderas i PDF-filen.
 
  Spara dokumentet i PDF-format med teckensnittsunderuppsättningarna inbäddade med hjälp av`Save` metod för`Document` objekt, ange namnet på utdatafilen och spara alternativen som konfigurerats tidigare.
 

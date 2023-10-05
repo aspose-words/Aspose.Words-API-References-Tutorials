@@ -34,7 +34,7 @@ Field field = builder. InsertField(FieldType.FieldDate, true);
 field.LocaleId = 1049;
 ```
 
- Bir tür alanı eklemek için belge oluşturucuyu kullanıyoruz`FieldType.FieldDate` belgenin içine. Ayarlayarak`LocaleId` mülkiyet`1049`, bu alan için Rusça yerelleştirmesini belirtiyoruz.
+ Bir tür alanı eklemek için belge oluşturucuyu kullanıyoruz`FieldType.FieldDate` belgenin içine. Ayarlayarak`LocaleId`mülkiyet`1049`, bu alan için Rusça yerelleştirmesini belirtiyoruz.
 
 ## 4. Adım: Değiştirilen belgeyi kaydedin
 

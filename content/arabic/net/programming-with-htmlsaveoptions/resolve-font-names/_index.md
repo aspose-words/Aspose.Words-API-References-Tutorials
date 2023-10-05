@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions`ويحدد`ResolveFontNames` خيار ل`true` لحل أسماء الخطوط المفقودة عند التحويل إلى HTML. أيضا،`PrettyFormat` تم ضبط الخيار على`true` للحصول على كود HTML منسق بشكل جيد.
+ يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions`ويحدد`ResolveFontNames` خيار ل`true`لحل أسماء الخطوط المفقودة عند التحويل إلى HTML. أيضا،`PrettyFormat` تم ضبط الخيار على`true` للحصول على كود HTML منسق بشكل جيد.
 
 ## الخطوة 4: تحويل وحفظ المستند إلى HTML
 

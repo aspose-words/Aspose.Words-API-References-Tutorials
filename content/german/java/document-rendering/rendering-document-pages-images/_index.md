@@ -84,7 +84,7 @@ Ja, Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, daru
 
 ### Kann ich die Bildauflösung während des Renderns steuern?
 
- Absolut! Mit Aspose.Words können Sie die Auflösung für die Bildwiedergabe mithilfe von festlegen`setResolution` Methode in`ImageSaveOptions`. Dadurch wird sichergestellt, dass die ausgegebenen Bilder Ihren Qualitätsanforderungen entsprechen.
+ Absolut! Mit Aspose.Words können Sie die Auflösung für die Bildwiedergabe mithilfe von festlegen`setResolution`Methode in`ImageSaveOptions`. Dadurch wird sichergestellt, dass die ausgegebenen Bilder Ihren Qualitätsanforderungen entsprechen.
 
 ### Ist Aspose.Words für die Stapelverarbeitung von Dokumenten geeignet?
 

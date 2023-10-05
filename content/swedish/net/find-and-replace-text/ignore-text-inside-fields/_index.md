@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## Steg 3: Använda funktionen Ignorera text i fält
 
- För att ignorera text i fält vid efterföljande operationer kan vi använda a`FindReplaceOptions` objekt och ställ in`IgnoreFields` egendom till`true`:
+ För att ignorera text i fält vid efterföljande operationer kan vi använda a`FindReplaceOptions` objekt och ställ in`IgnoreFields`egendom till`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -50,7 +50,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Steg 5: Visa den modifierade dokumentutgången
 
-Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
+ Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## Steg 6: Ändra alternativ för att inkludera fält
 
-vi inkluderar texten i fälten i resultatet, vi kan ändra alternativen för att inte ignorera fälten. För detta kommer vi att ställa in`IgnoreFields` egendom till`false`:
+ vi inkluderar texten i fälten i resultatet, vi kan ändra alternativen för att inte ignorera fälten. För detta kommer vi att ställa in`IgnoreFields`egendom till`false`:
 
 ```csharp
 options.IgnoreFields = false;
@@ -128,7 +128,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 #### F: Hur kan jag ignorera text i fält i Aspose.Words för .NET?
 
-S: För att ignorera text i fält under efterföljande operationer kan du använda a`FindReplaceOptions` objekt och ställ in`IgnoreFields` egendom till`true`:
+ S: För att ignorera text i fält under efterföljande operationer kan du använda a`FindReplaceOptions` objekt och ställ in`IgnoreFields`egendom till`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };

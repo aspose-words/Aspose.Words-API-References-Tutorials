@@ -48,7 +48,7 @@ doc.StopTrackRevisions();
 
 ## Schritt 4: Anwenden der Funktion „Text in Löschrevisionen ignorieren“.
 
- Nachdem wir nun unser Dokument durch das Löschen eines Absatzes vorbereitet haben, können wir die Funktion „Text in Revisionen ignorieren“ mit a aktivieren`FindReplaceOptions` Objekt. Wir werden das einstellen`IgnoreDeleted` Eigentum zu`true`:
+ Nachdem wir nun unser Dokument durch das Löschen eines Absatzes vorbereitet haben, können wir die Funktion „Text in Revisionen ignorieren“ mit a aktivieren`FindReplaceOptions` Objekt. Wir werden das einstellen`IgnoreDeleted`Eigentum zu`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -65,7 +65,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Schritt 6: Anzeige der geänderten Dokumentausgabe
 
-Nachdem wir das Suchen und Ersetzen angewendet haben, können wir den geänderten Inhalt des Dokuments mithilfe von anzeigen`GetText` Methode:
+ Nachdem wir das Suchen und Ersetzen angewendet haben, können wir den geänderten Inhalt des Dokuments mithilfe von anzeigen`GetText` Methode:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -73,7 +73,7 @@ Console.WriteLine(doc.GetText());
 
 ## Schritt 7: Ändern der Optionen, um gelöschten Text einzuschließen
 
- Wenn wir gelöschten Text in das Ausgabeergebnis einbeziehen möchten, können wir die Optionen so ändern, dass gelöschter Text nicht ignoriert wird. Hierzu legen wir die fest`IgnoreDeleted` Eigentum zu`false`:
+ Wenn wir gelöschten Text in das Ausgabeergebnis einbeziehen möchten, können wir die Optionen so ändern, dass gelöschter Text nicht ignoriert wird. Hierzu legen wir die fest`IgnoreDeleted`Eigentum zu`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
@@ -164,7 +164,7 @@ doc.StopTrackRevisions();
 
 #### F: Wie aktiviere ich die Funktion „Text in Löschrevisionen ignorieren“ in Aspose.Words für .NET?
 
- A: Nachdem wir nun unser Dokument durch das Löschen eines Absatzes vorbereitet haben, können wir die Funktion „Text innerhalb von Löschrevisionen ignorieren“ mit a aktivieren`FindReplaceOptions` Objekt. Wir werden das einstellen`IgnoreDeleted` Eigentum zu`true`:
+ A: Nachdem wir nun unser Dokument durch das Löschen eines Absatzes vorbereitet haben, können wir die Funktion „Text innerhalb von Löschrevisionen ignorieren“ mit a aktivieren`FindReplaceOptions` Objekt. Wir werden das einstellen`IgnoreDeleted`Eigentum zu`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -189,7 +189,7 @@ Console.WriteLine(doc.GetText());
 
 #### F: Wie füge ich gelöschten Text in das Ausgabeergebnis von Aspose.Words für .NET ein?
 
- A: Wenn wir gelöschten Text in das Ausgabeergebnis einbeziehen möchten, können wir die Optionen so ändern, dass gelöschter Text nicht ignoriert wird. Dazu legen wir die fest`IgnoreDeleted` Eigentum zu`false`:
+ A: Wenn wir gelöschten Text in das Ausgabeergebnis einbeziehen möchten, können wir die Optionen so ändern, dass gelöschter Text nicht ignoriert wird. Dazu legen wir die fest`IgnoreDeleted`Eigentum zu`false`:
 
 ```csharp
 options. IgnoreDeleted = false;

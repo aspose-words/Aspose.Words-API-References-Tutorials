@@ -66,7 +66,7 @@ Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 NodeCollection children = paragraph.ChildNodes;
 foreach (Node child in children)
 {
-	//Un paragrafo può contenere figli di vario tipo come sequenze, forme e altri.
+	// Un paragrafo può contenere figli di vario tipo come sequenze, forme e altri.
 	if (child.NodeType == NodeType.Run)
 	{
 		Run run = (Run) child;
@@ -90,11 +90,11 @@ R: Un nodo figlio in Node.js si riferisce a un nodo direttamente contenuto all'i
 
 #### D: Come accedere alle proprietà di un nodo figlio?
 
- R: Per accedere alle proprietà di un nodo figlio in Node.js, puoi utilizzare i metodi e le proprietà forniti dall'API XML utilizzata nel tuo ambiente Node.js. Ad esempio, puoi utilizzare metodi come`getAttribute`per ottenere il valore di un attributo specifico di un nodo figlio.
+ R: Per accedere alle proprietà di un nodo figlio in Node.js, puoi utilizzare i metodi e le proprietà forniti dall'API XML utilizzata nel tuo ambiente Node.js. Ad esempio, puoi utilizzare metodi come`getAttribute` per ottenere il valore di un attributo specifico di un nodo figlio.
 
 #### D: Possiamo modificare i nodi figli di un nodo?
 
- R: Sì, è possibile modificare i nodi secondari di un nodo in Node.js utilizzando i metodi e le proprietà forniti dall'API XML utilizzata nel tuo ambiente Node.js. Ad esempio, puoi utilizzare metodi come`appendChild` O`removeChild` per aggiungere o rimuovere nodi figlio da un nodo specifico.
+R: Sì, è possibile modificare i nodi secondari di un nodo in Node.js utilizzando i metodi e le proprietà forniti dall'API XML utilizzata nel tuo ambiente Node.js. Ad esempio, puoi utilizzare metodi come`appendChild` O`removeChild` per aggiungere o rimuovere nodi figlio da un nodo specifico.
 
 #### D: Come sfogliare tutti i nodi figlio di un nodo?
 

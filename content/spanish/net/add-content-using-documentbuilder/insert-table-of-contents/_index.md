@@ -29,7 +29,7 @@ A continuación, utilice el método InsertTableOfContents de la clase DocumentBu
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## Paso 3: agregar contenido al documento
+## Paso 3: agregar contenido del documento
 Después de insertar la tabla de contenido, agregue el contenido real del documento. Establezca los estilos de encabezado apropiados usando StyleIdentifier:
 
 ```csharp
@@ -143,7 +143,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 
 #### P: ¿Puedo actualizar la tabla de contenido automáticamente si hago cambios en el contenido del documento?
 
- R: Sí, puedes actualizar la tabla de contenidos automáticamente llamando al`UpdateFields` método en el documento. Esto garantizará que cualquier cambio realizado en el contenido del documento, como agregar o eliminar encabezados, se refleje en la tabla de contenido.
+ R: Sí, puedes actualizar la tabla de contenido automáticamente llamando al`UpdateFields` método en el documento. Esto garantizará que cualquier cambio realizado en el contenido del documento, como agregar o eliminar encabezados, se refleje en la tabla de contenido.
 
 #### P: ¿Cómo puedo aplicar un estilo diferente a los niveles de encabezado en la tabla de contenido?
 

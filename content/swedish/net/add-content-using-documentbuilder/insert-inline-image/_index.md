@@ -1,6 +1,6 @@
 ---
-title: Infoga inline bild i Word-dokument
-linktitle: Infoga inline bild i Word-dokument
+title: Infoga inbyggd bild i Word-dokument
+linktitle: Infoga inbyggd bild i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar inline-bilder i Word-dokument med Aspose.Words för .NET.
 type: docs
@@ -52,7 +52,7 @@ Grattis! Du har framgångsrikt lärt dig hur du infogar inline-bilder i ett Word
 
 Inline-bilder är användbara för olika scenarier, som att lägga till illustrationer, logotyper eller andra visuella element direkt i dokumentflödet.
 
-### Vanliga frågor för att infoga inline-bild i word-dokument
+### Vanliga frågor för att infoga inline bild i word-dokument
 
 #### F: Kan jag ändra storlek på inlinebilderna i Word-dokumentet?
 

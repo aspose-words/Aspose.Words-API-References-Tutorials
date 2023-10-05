@@ -34,7 +34,7 @@ textBox.BreakForwardLink();
 
 ## Paso 4: rompa un enlace directo estableciendo un valor nulo
 
- Alternativamente, podemos romper un enlace directo configurando el TextBox`Next` propiedad a`null`. Esto elimina efectivamente la conexión con la siguiente forma. El siguiente código demuestra este enfoque:
+ Alternativamente, podemos romper un enlace directo configurando el TextBox`Next`propiedad a`null`. Esto elimina efectivamente la conexión con la siguiente forma. El siguiente código demuestra este enfoque:
 
 ```csharp
 textBox. Next = null;

@@ -89,8 +89,8 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Crea un elenco numerato basato su uno dei modelli di elenco di Microsoft Word
-// e applicarlo al paragrafo corrente del generatore di documenti.
+// Crea un elenco numerato basato su uno dei modelli di elenco di Microsoft Word
+// applicarlo al paragrafo corrente del generatore di documenti.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 // Ci sono nove livelli in questo elenco, proviamoli tutti.
@@ -101,7 +101,7 @@ for (int i = 0; i < 9; i++)
 }
 
 // Crea un elenco puntato basato su uno dei modelli di elenco di Microsoft Word
-// e applicarlo al paragrafo corrente del generatore di documenti.
+// applicarlo al paragrafo corrente del generatore di documenti.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
 for (int i = 0; i < 9; i++)
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### D: Posso aggiungere ulteriori livelli a un elenco numerato in Aspose.Words?
 
- R: Sì, è possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words. IL`ListLevel` La classe consente di impostare le proprietà di formattazione per ciascun livello dell'elenco. Puoi impostare opzioni come prefisso, suffisso, allineamento, rientro, ecc. Ciò ti consente di creare elenchi con più livelli di gerarchia.
+ R: Sì, è possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words. IL`ListLevel` La classe consente di impostare le proprietà di formattazione per ogni livello dell'elenco. Puoi impostare opzioni come prefisso, suffisso, allineamento, rientro, ecc. Ciò ti consente di creare elenchi con più livelli di gerarchia.
 
 

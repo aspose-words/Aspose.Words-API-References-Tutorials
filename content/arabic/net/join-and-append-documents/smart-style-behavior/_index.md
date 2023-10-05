@@ -44,9 +44,9 @@ builder.MoveToDocumentEnd();
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## الخطوة 4: تعيين خيارات سلوك النمط الذكي
+## الخطوة 4: ضبط خيارات سلوك النمط الذكي
 
-لتمكين سلوك النمط الذكي أثناء عملية الإلحاق، تحتاج إلى إنشاء مثيل لـ`ImportFormatOptions` وتعيين`SmartStyleBehavior` الملكية ل`true`.
+لتمكين سلوك النمط الذكي أثناء عملية الإلحاق، تحتاج إلى إنشاء مثيل لـ`ImportFormatOptions` وتعيين`SmartStyleBehavior`الملكية ل`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };

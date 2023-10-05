@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 
  Создайте экземпляр`Document` класс, указывающий путь к документу Word.
 
- Создайте экземпляр`PdfSaveOptions` класс и установите`ImageCompression` собственность`PdfImageCompression.Jpeg` использовать сжатие JPEG.
+ Создайте экземпляр`PdfSaveOptions` класс и установите`ImageCompression`собственность`PdfImageCompression.Jpeg` использовать сжатие JPEG.
 
 Вы также можете установить другие параметры сжатия изображений, например качество JPEG, в соответствии с вашими потребностями.
 

@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : Configurer les options de format d'importation
 
- Créez une instance du`ImportFormatOptions` classe et définir le`IgnoreTextBoxes` propriété à`false`. Cela garantit que les zones de texte sont incluses lors du processus d'ajout tout en préservant leur mise en forme.
+ Créez une instance du`ImportFormatOptions` classe et définir le`IgnoreTextBoxes`propriété à`false`. Cela garantit que les zones de texte sont incluses lors du processus d'ajout tout en préservant leur mise en forme.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };

@@ -22,7 +22,7 @@ Aspose.Words for Java هي مكتبة Java قوية وغنية بالميزات 
 
 ### تثبيت Aspose.Words لجافا
 
- للبدء في استخدام Aspose.Words for Java، ستحتاج إلى تثبيت المكتبة. يمكنك تحميل المكتبة من الموقع على[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). اتبع تعليمات التثبيت المقدمة لإعداد المكتبة في مشروع Java الخاص بك.
+ للبدء في استخدام Aspose.Words for Java، ستحتاج إلى تثبيت المكتبة. يمكنك تحميل المكتبة من الموقع على[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/java/). اتبع تعليمات التثبيت المقدمة لإعداد المكتبة في مشروع Java الخاص بك.
 
 ### إنشاء المستند الأول الخاص بك
 
@@ -119,7 +119,7 @@ doc.save("MyDocument_v2.docx");
 
 ### أين يمكنني تنزيل Aspose.Words لـ Java؟
 
- يمكنك تنزيل Aspose.Words for Java من موقع الويب على[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). اتبع تعليمات التثبيت للبدء.
+يمكنك تنزيل Aspose.Words for Java من موقع الويب على[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/java/). اتبع تعليمات التثبيت للبدء.
 
 ## خاتمة
 

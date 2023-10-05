@@ -81,7 +81,7 @@ R: Para incrustar subconjuntos de fuentes en un documento PDF usando Aspose.Word
 
  Cargue el documento que desea procesar utilizando el`Document` clase y la ruta del documento.
 
- Configure las opciones para guardar PDF creando una instancia del`PdfSaveOptions` clase y establecer el`EmbedFullFonts` propiedad a`false`Esto garantiza que solo los subconjuntos de fuentes utilizados en el documento se incluirán en el archivo PDF.
+ Configure las opciones para guardar PDF creando una instancia del`PdfSaveOptions` clase y establecer el`EmbedFullFonts`propiedad a`false`Esto garantiza que solo los subconjuntos de fuentes utilizados en el documento se incluirán en el archivo PDF.
 
  Guarde el documento en formato PDF con los subconjuntos de fuentes incrustados usando el`Save` método de la`Document` objeto, especificando el nombre del archivo de salida y las opciones de guardado configuradas anteriormente.
 

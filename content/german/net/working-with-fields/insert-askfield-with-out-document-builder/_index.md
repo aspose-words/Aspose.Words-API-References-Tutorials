@@ -29,7 +29,7 @@ Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 ## Schritt 3: Einfügen des ASK-Feldes
 
- Wir benutzen das`AppendField()` Methode zum Einfügen eines ASK-Felds in den Absatz.
+ Wir benutzen das`AppendField()` Methode zum Einfügen eines ASK-Feldes in den Absatz.
 
 ```csharp
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);

@@ -29,7 +29,7 @@ Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfü
 Beginnen wir mit der Erstellung eines leeren Dokuments mit Aspose.Words für Java:
 
 ```java
-// Java-Code zum Erstellen eines leeren Dokuments
+//Java-Code zum Erstellen eines leeren Dokuments
 Document doc = new Document();
 ```
 

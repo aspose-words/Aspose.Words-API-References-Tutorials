@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## الخطوة 3: تخصيص تنسيق التعداد النقطي
 
- يمكننا تخصيص تنسيق التعداد النقطي من خلال الوصول إلى خصائص`ListFormat.List.ListLevels[0]`. في هذا المثال، نستخدم الشرطة "-" كرصاصة.
+يمكننا تخصيص تنسيق التعداد النقطي من خلال الوصول إلى خصائص`ListFormat.List.ListLevels[0]`. في هذا المثال، نستخدم الشرطة "-" كرصاصة.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

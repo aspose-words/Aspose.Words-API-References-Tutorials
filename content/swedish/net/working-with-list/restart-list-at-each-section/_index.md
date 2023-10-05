@@ -43,11 +43,11 @@ for (int i = 1; i < 45; i++)
 }
 ```
 
-det här exemplet infogar vi en avsnittsbrytning efter den 15:e listposten för att illustrera omnumrering.
+I det här exemplet infogar vi en avsnittsbrytning efter den 15:e listposten för att illustrera omnumrering.
 
 ## Steg 3: Spara det ändrade dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
@@ -95,7 +95,7 @@ Använd gärna den här koden i dina egna projekt och modifiera den för att pas
 
 #### F: Kan jag anpassa numreringsformatet för listor i Aspose.Words?
 
- S: Ja, du kan anpassa numreringsformatet för listor i Aspose.Words. De`List` klass erbjuder flera fastigheter för detta, som t.ex`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`etc. Du kan använda dessa egenskaper för att ställa in listtyp (numrerad, punktlista, etc.), numreringsformat (arabiska siffror, romerska siffror, bokstäver, etc.) och andra numreringsformateringsalternativ.
+S: Ja, du kan anpassa numreringsformatet för listor i Aspose.Words. De`List` klass erbjuder flera fastigheter för detta, som t.ex`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, etc. Du kan använda dessa egenskaper för att ställa in listtyp (numrerad, punktlista, etc.), numreringsformat (arabiska siffror, romerska siffror, bokstäver, etc.) och andra numreringsformateringsalternativ.
 
 #### F: Är det möjligt att lägga till ytterligare nivåer till en numrerad lista i Aspose.Words?
 

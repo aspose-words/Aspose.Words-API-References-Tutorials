@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/working-with-list/restart-list-number/
 ---
-I denna steg-för-steg handledning kommer vi att visa dig hur du återställer numret på en lista i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+denna steg-för-steg handledning kommer vi att visa dig hur du återställer numret på en lista i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
  För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -68,7 +68,7 @@ builder.ListFormat.RemoveNumbers();
 
 ## Steg 6: Spara det ändrade dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 builder.Document.Save(dataDir + "ResetListNumber.docx");
@@ -97,7 +97,7 @@ builder.ListFormat.RemoveNumbers();
 // För att återanvända den första listan måste vi starta om numreringen genom att skapa en kopia av den ursprungliga listformateringen.
 List list2 = doc.Lists.AddCopy(list1);
 
-//Vi kan ändra den nya listan på vilket sätt som helst, inklusive att ställa in ett nytt startnummer.
+// Vi kan ändra den nya listan på vilket sätt som helst, inklusive att ställa in ett nytt startnummer.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -122,7 +122,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### F: Hur kan jag ange ett specifikt numreringsvärde från vilket listan ska startas om?
 
- S: För att ange ett specifikt nummervärde från vilket listan ska startas om kan du använda`ListRestartAtNumber`metod som skickar det önskade värdet som ett argument. Till exempel, för att starta om numrering från 5, kan du använda`list.ListRestartAtNumber(5)`.
+S: För att ange ett specifikt nummervärde från vilket listan ska startas om kan du använda`ListRestartAtNumber` metod som skickar det önskade värdet som ett argument. Till exempel, för att starta om numrering från 5, kan du använda`list.ListRestartAtNumber(5)`.
 
 #### F: Är det möjligt att starta om listnumrering på flera nivåer i Aspose.Words?
 

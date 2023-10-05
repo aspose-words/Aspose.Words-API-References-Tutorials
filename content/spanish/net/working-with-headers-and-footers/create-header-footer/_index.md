@@ -112,15 +112,15 @@ currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // Esta sección no necesita un encabezado/pie de página diferente para la primera página, solo necesitamos una página de título en el documento.
-// y el encabezado/pie de página de esta página ya se ha definido en la sección anterior.
+// el encabezado/pie de página de esta página ya se ha definido en la sección anterior.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // Esta sección muestra los encabezados y pies de página de la sección anterior de forma predeterminada, llame a currentSection.HeadersFooters.LinkToPrevious(false) para romper este enlace.
 // el ancho de la página es diferente para la nueva sección, por lo que necesitamos establecer diferentes anchos de celda para una tabla de pie de página.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-//Si queremos utilizar los encabezados/pies de página ya existentes para esta sección,
-// pero con algunos cambios menores, podría tener sentido copiar los encabezados y pies de página
+// Si queremos utilizar los encabezados/pies de página ya existentes para esta sección,
+//pero con algunos cambios menores, podría tener sentido copiar los encabezados y pies de página
 // del apartado anterior y aplicar los cambios necesarios donde queramos.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
@@ -176,7 +176,7 @@ builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-//Usamos una tabla con dos celdas para hacer una parte del texto en la línea (con numeración de páginas).
+// Usamos una tabla con dos celdas para hacer una parte del texto en la línea (con numeración de páginas).
 // Alinear a la izquierda y la otra parte del texto (con copyright) alinear a la derecha.
 builder.StartTable();
 
@@ -215,7 +215,7 @@ currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // Esta sección no necesita un encabezado o pie de página diferente en la primera página, solo necesitamos una página de título en el documento.
-// y el encabezado/pie de página de esta página ya se ha definido en la sección anterior.
+// el encabezado/pie de página de esta página ya se ha definido en la sección anterior.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // Esta sección muestra encabezados/pies de página de la sección anterior.
@@ -225,7 +225,7 @@ currentSection.HeadersFooters.LinkToPrevious(false);
 
 // Si queremos utilizar el conjunto de encabezado/pie de página ya existente para esta sección.
 // Pero con algunas modificaciones menores, puede resultar conveniente copiar encabezados y pies de página.
-//del apartado anterior y aplicar las modificaciones necesarias donde queramos.
+// del apartado anterior y aplicar las modificaciones necesarias donde queramos.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -245,7 +245,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### P: ¿Cómo puedo agregar un pie de página a mi documento en Aspose.Words?
 
- R: Para agregar un pie de página a su documento en Aspose.Words, puede usar el`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` método. Este método agrega un pie de página principal a la primera sección de su documento.
+ R: Para agregar un pie de página a su documento en Aspose.Words, puede usar el`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`método. Este método agrega un pie de página principal a la primera sección de su documento.
 
 #### P: ¿Cómo puedo agregar texto a mi encabezado o pie de página en Aspose.Words?
 
@@ -253,8 +253,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### P: ¿Puedo personalizar el contenido del encabezado o pie de página con imágenes y números de página en Aspose.Words?
 
-R: Sí, puedes personalizar el contenido del encabezado o pie de página con imágenes y números de página en Aspose.Words. Puedes usar objetos como`Shape` para agregar imágenes y objetos como`Field` para agregar números de página a su encabezado o pie de página.
+ R: Sí, puedes personalizar el contenido del encabezado o pie de página con imágenes y números de página en Aspose.Words. Puedes usar objetos como`Shape` para agregar imágenes y objetos como`Field` para agregar números de página a su encabezado o pie de página.
 
 #### P: ¿Puedo cambiar la fuente, el tamaño y el color del texto en mi encabezado o pie de página en Aspose.Words?
 
- R: Sí, puedes cambiar la fuente, el tamaño y el color del texto en el encabezado o pie de página en Aspose.Words. Puede acceder a propiedades de formato de texto como`Font` para cambiar la fuente,`Size` para ajustar el tamaño, y`Color` para establecer el color del texto.
+ R: Sí, puedes cambiar la fuente, el tamaño y el color del texto en el encabezado o pie de página en Aspose.Words. Puede acceder a propiedades de formato de texto como`Font` para cambiar la fuente,`Size` para ajustar el tamaño, y`Color`para establecer el color del texto.

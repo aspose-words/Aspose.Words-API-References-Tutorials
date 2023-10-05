@@ -107,4 +107,4 @@ C: Çoğu durumda, bir düğümün belge sahibi, düğüm oluşturulduğunda bel
 
 #### S: Bir sahip belgesinin düğümlerine nasıl erişilir?
 
-C: Özel bir belgedeki düğümlere erişmek için Node.js ortamınızda kullanılan XML API'sinin sağladığı yöntemleri ve özellikleri kullanabilirsiniz. Örneğin, gibi yöntemleri kullanabilirsiniz.`getElementsByTagName` veya`querySelector` Belgedeki belirli düğümleri seçmek için.
+ C: Özel bir belgedeki düğümlere erişmek için Node.js ortamınızda kullanılan XML API'sinin sağladığı yöntemleri ve özellikleri kullanabilirsiniz. Örneğin, gibi yöntemleri kullanabilirsiniz.`getElementsByTagName` veya`querySelector` Belgedeki belirli düğümleri seçmek için.

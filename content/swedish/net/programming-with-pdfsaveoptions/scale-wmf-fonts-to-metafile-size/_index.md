@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Steg 3: Konfigurera alternativ för metafilrendering
 
- För att aktivera eller inaktivera WMF-teckensnittsskalning till metafilstorlek måste vi konfigurera`MetafileRenderingOptions`objekt. I det här exemplet inaktiverar vi teckensnittsskalning genom att ställa in`ScaleWmfFontsToMetafileSize` egendom till`false`.
+ För att aktivera eller inaktivera WMF-teckensnittsskalning till metafilstorlek måste vi konfigurera`MetafileRenderingOptions`objekt. I det här exemplet inaktiverar vi teckensnittsskalning genom att ställa in`ScaleWmfFontsToMetafileSize`egendom till`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -97,11 +97,11 @@ S: För att aktivera eller inaktivera storleksändring av WMF-teckensnitt till m
 
  Ladda dokumentet du vill bearbeta med hjälp av`Document` klass och ange sökvägen till Word-dokumentet i den angivna dokumentkatalogen.
 
- Konfigurera alternativ för metafilrendering genom att skapa en instans av`MetafileRenderingOptions` klass och ställa in`ScaleWmfFontsToMetafileSize` egendom till`true` för att möjliggöra skalning av WMF-teckensnitt till metafilstorlek, eller till`false` för att inaktivera den här funktionen.
+ Konfigurera alternativ för metafilrendering genom att skapa en instans av`MetafileRenderingOptions` klass och ställa in`ScaleWmfFontsToMetafileSize`egendom till`true` för att möjliggöra skalning av WMF-teckensnitt till metafilstorlek, eller till`false` för att inaktivera den här funktionen.
 
  Konfigurera alternativen för att spara som PDF genom att skapa en instans av`PdfSaveOptions` klass och använda alternativen för metafilrendering som konfigurerats tidigare.
 
- Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document`klass som anger sökvägen och sparalternativ.
+ Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document` klass som anger sökvägen och sparalternativ.
 
 #### F: Vilka är fördelarna med att ändra storlek på WMF-teckensnitt till metafilstorlek i ett PDF-dokument?
 S: Fördelarna med att ändra storlek på WMF-teckensnitt till metafilstorlek i ett PDF-dokument är:

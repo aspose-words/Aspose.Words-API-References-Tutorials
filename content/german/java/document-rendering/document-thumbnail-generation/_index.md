@@ -53,7 +53,7 @@ Sie können das Erscheinungsbild Ihrer Miniaturansichten an das Design und die A
 Sobald Sie das Miniaturbild erstellt haben, können Sie es an Ihrem bevorzugten Ort speichern.
 
 ```java
-//Java-Code zum Speichern der generierten Miniaturansicht
+// Java-Code zum Speichern der generierten Miniaturansicht
 FileOutputStream outputStream = new FileOutputStream("thumbnail.png");
 stream.writeTo(outputStream);
 ```
@@ -82,4 +82,4 @@ Ja, Aspose.Words für Java erfordert eine gültige Lizenz für die kommerzielle 
 
 ### Wo finde ich zusätzliche Dokumentation für Aspose.Words für Java?
 
-Eine umfassende Dokumentation und API-Referenzen finden Sie auf der Dokumentationsseite zu Aspose.Words für Java[Hier](https://reference.aspose.com/words/java/).
+ Eine umfassende Dokumentation und API-Referenzen finden Sie auf der Dokumentationsseite zu Aspose.Words für Java[Hier](https://reference.aspose.com/words/java/).

@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Starta ny sidavsnitt
 
-För att starta det bifogade dokumentet på en ny sida, ställ in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.NewPage`.
+ För att starta det bifogade dokumentet på en ny sida, ställ in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Steg 4: Bifoga källdokumentet
 
-Bifoga källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting` för att bevara originalformaten från källdokumentet.
+ Bifoga källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting` för att bevara originalformaten från källdokumentet.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ Detta slutför implementeringen av att sammanfoga två dokument på en ny sida m
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Ställ in det bifogade dokumentet att börja på en ny sida.
+	//Ställ in det bifogade dokumentet att börja på en ny sida.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Bifoga källdokumentet med de ursprungliga stilarna som finns i källdokumentet.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

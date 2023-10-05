@@ -74,7 +74,7 @@ Le fractionnement des documents par titres est une approche plus avancée qui vo
 Pour diviser un document par titres à l'aide d'Aspose.Words pour Java, procédez comme suit :
 
 ```java
-// Code Java pour diviser un document par titres à l'aide d'Aspose.Words for Java
+//Code Java pour diviser un document par titres à l'aide d'Aspose.Words for Java
 Document doc = new Document("input.docx");
 LayoutCollector layoutCollector = new LayoutCollector(doc);
 

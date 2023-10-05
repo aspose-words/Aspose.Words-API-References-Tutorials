@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### S: Aspose.Words for .NET kullanarak bir yer iminin içine nasıl metin eklenir?
 
-C: Aspose.Words for .NET'i kullanarak bir yer iminin içine metin eklemek için`Write` yöntemi`DocumentBuilder` Eklenecek metni belirten nesne. İşte örnek bir kod:
+ C: Aspose.Words for .NET'i kullanarak bir yer iminin içine metin eklemek için`Write` yöntemi`DocumentBuilder`Eklenecek metni belirten nesne. İşte örnek bir kod:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

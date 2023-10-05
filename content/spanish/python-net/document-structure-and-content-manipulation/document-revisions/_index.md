@@ -33,7 +33,7 @@ print(doc.get_text())
 
 ## Habilitar el seguimiento de cambios
 
- Para habilitar el seguimiento de cambios en un documento, debe configurar el`TrackRevisions` propiedad a`True`:
+ Para habilitar el seguimiento de cambios en un documento, debe configurar el`TrackRevisions`propiedad a`True`:
 
 ```python
 doc.track_revisions = True
@@ -71,7 +71,7 @@ comparison.save("comparison_result.docx")
 
 ## Manejo de comentarios y anotaciones
 
-Los colaboradores pueden agregar comentarios y anotaciones a un documento. Puede administrar estos elementos mediante programación:
+Los colaboradores pueden agregar comentarios y anotaciones a un documento. Puede administrar mediante programación estos elementos:
 
 ```python
 comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")

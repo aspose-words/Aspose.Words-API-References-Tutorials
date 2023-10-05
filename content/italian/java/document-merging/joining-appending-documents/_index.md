@@ -17,7 +17,7 @@ Aspose.Words per Java è una libreria ricca di funzionalità che ti consente di 
 Prima di immergerci nel codice, assicurati di avere i seguenti prerequisiti:
 
 - Java Development Kit (JDK) installato sul tuo sistema.
-- Aspose.Words per la libreria Java. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/java/).
+-  Aspose.Words per la libreria Java. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/java/).
 
 ## Passaggio 1: configurazione del progetto Java
 
@@ -53,7 +53,7 @@ Document doc2 = new Document("document2.docx");
 
 ## Passaggio 4: unione dei documenti
 
-Ora che abbiamo caricato i nostri documenti, vediamo come unirli tra loro. In questo esempio, ci uniremo`doc2` fino alla fine di`doc1`:
+ Ora che abbiamo caricato i nostri documenti, vediamo come unirli tra loro. In questo esempio, ci uniremo`doc2` fino alla fine di`doc1`:
 
 ```java
 // Unisci documenti

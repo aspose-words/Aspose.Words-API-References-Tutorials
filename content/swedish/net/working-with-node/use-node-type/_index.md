@@ -24,8 +24,8 @@ using Aspose.Words;
 Document doc = new Document();
 ```
 
-## Steg 3: Hämta dokumentnodtyp
-För att få nodtypen för ett dokument använder vi`NodeType` fast egendom.
+## Steg 3: Hämta Document Node Type
+ För att få nodtypen för ett dokument använder vi`NodeType` fast egendom.
 
 ```csharp
 NodeType type = doc.NodeType;

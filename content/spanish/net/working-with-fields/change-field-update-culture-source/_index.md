@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## Conclusión
-¡Felicidades! Ha aprendido con éxito cómo cambiar la fuente cultural de actualización de campos en documentos de Word usando Aspose.Words para .NET. Si sigue la guía paso a paso y utiliza el código fuente proporcionado, ahora puede controlar la cultura utilizada para el formato de fecha durante las operaciones de actualización de campos y combinación de correspondencia. Personalice la fuente de cultivo según sus requisitos para garantizar una fecha precisa y coherente.
+¡Felicidades! Ha aprendido con éxito cómo cambiar la fuente cultural de actualización de campo en documentos de Word usando Aspose.Words para .NET. Si sigue la guía paso a paso y utiliza el código fuente proporcionado, ahora puede controlar la cultura utilizada para el formato de fecha durante las operaciones de actualización de campos y combinación de correspondencia. Personalice la fuente de cultivo según sus requisitos para garantizar una fecha precisa y coherente.
 
 ### Preguntas frecuentes
 

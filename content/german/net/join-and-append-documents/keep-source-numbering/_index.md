@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Behalten Sie beim Import die Quellennummerierung bei
 
-Um die Nummerierungsformatierung nummerierter Absätze aus dem Quelldokument beizubehalten, erstellen Sie eine Instanz von`ImportFormatOptions` und eingestellt`KeepSourceNumbering` Zu`true` . Benutze einen`NodeImporter` um Knoten aus dem Quelldokument in das Zieldokument zu importieren, unter Angabe`ImportFormatMode.KeepSourceFormatting` und das`importFormatOptions`.
+ Um die Nummerierungsformatierung nummerierter Absätze aus dem Quelldokument beizubehalten, erstellen Sie eine Instanz von`ImportFormatOptions` und eingestellt`KeepSourceNumbering` Zu`true` . Benutze einen`NodeImporter` um Knoten aus dem Quelldokument in das Zieldokument zu importieren, unter Angabe`ImportFormatMode.KeepSourceFormatting` und das`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Schritt 4: Absätze importieren und anhängen
 
- Durchlaufen Sie die Absätze im Quelldokument und importieren Sie jeden Absatz mithilfe von in das Zieldokument`importer`. Hängen Sie die importierten Knoten an den Hauptteil des Zieldokuments an.
+Durchlaufen Sie die Absätze im Quelldokument und importieren Sie jeden Absatz mithilfe von in das Zieldokument`importer`. Hängen Sie die importierten Knoten an den Hauptteil des Zieldokuments an.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;

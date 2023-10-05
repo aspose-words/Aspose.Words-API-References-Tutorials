@@ -78,7 +78,7 @@ A: Ein Absatzknoten in einem XML-Dokument wird zur Darstellung eines Textabsatze
 
 #### F: Wie füge ich einen Absatzknoten zu einem vorhandenen XML-Dokument hinzu?
 
- A: Um einem vorhandenen XML-Dokument einen Absatzknoten hinzuzufügen, können Sie den verwenden`appendChild` -Methode, um den Absatzknoten als untergeordnetes Element eines anderen Elements im XML-Dokument hinzuzufügen. Sie können es beispielsweise als untergeordnetes Element des Dokumentstammelements hinzufügen.
+ A: Um einem vorhandenen XML-Dokument einen Absatzknoten hinzuzufügen, können Sie den verwenden`appendChild`-Methode, um den Absatzknoten als untergeordnetes Element eines anderen Elements im XML-Dokument hinzuzufügen. Sie können es beispielsweise als untergeordnetes Element des Dokumentstammelements hinzufügen.
 
 #### F: Wie definiere ich den Inhalt eines Absatzknotens?
 

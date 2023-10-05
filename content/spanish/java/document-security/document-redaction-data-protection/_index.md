@@ -96,6 +96,6 @@ R: Sí, Aspose.Words para Java puede convertir documentos de Word a varios forma
 
 ### ¿Cómo puedo acceder a más recursos y documentación para Aspose.Words para Java?
 
- R: Visite la documentación de Aspose.Words para Java en[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) para recursos y guías completos.
+R: Visite la documentación de Aspose.Words para Java en[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) para recursos y guías completos.
 
 Mejore la seguridad de sus documentos y la protección de datos con Aspose.Words para Java. ¡Comience a proteger su información confidencial hoy!

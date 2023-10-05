@@ -88,7 +88,7 @@ A. Pour créer un nouveau document et un générateur de documents, vous pouvez 
 ```csharp
 Document doc = new Document();
 ```
- Utilisez le`DocumentBuilder` classe pour créer un générateur de documents associé au document créé précédemment :
+ Utilisez le`DocumentBuilder`classe pour créer un générateur de documents associé au document créé précédemment :
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### Q. Comment intégrer le code pour insérer un objet OLE en tant qu'icône d'un flux dans mon projet ?
 
 A. Pour intégrer le code permettant d'insérer un objet OLE sous forme d'icône à partir d'un flux dans votre projet, procédez comme suit :
-- Importez les références nécessaires en ajoutant les éléments appropriés`using` déclarations.
+-  Importez les références nécessaires en ajoutant les éléments appropriés`using` déclarations.
 -  Créez un nouveau document et un générateur de documents à l'aide de l'outil`Document` et`DocumentBuilder` Des classes.
 - Utilisez le code pour insérer l'objet OLE sous forme d'icône à partir d'un flux.
 -  Enregistrez le document à l'aide du`Save` méthode avec le chemin de destination approprié.

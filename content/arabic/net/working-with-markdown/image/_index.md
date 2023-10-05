@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## الخطوة 2: إدراج صورة
 
- يمكننا إدراج صورة باستخدام`Shape` فئة وتحديد نوع الصورة، هنا`ShapeType.Image` . قمنا أيضًا بتعيين نوع التفاف الصورة على`WrapType.Inline`.
+ يمكننا إدراج صورة باستخدام`Shape` فئة وتحديد نوع الصورة، هنا`ShapeType.Image` قمنا أيضًا بتعيين نوع التفاف الصورة على`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ builder.InsertNode(shape);
 
 #### س: هل يمكنني إدراج صورة من عنوان URL في Aspose.Words؟
 
- ج: نعم، يمكنك إدراج صورة من عنوان URL في Aspose.Words. يمكنك استخدام نفس الشيء`InsertImage`الطريقة وحدد عنوان URL للصورة بدلاً من مسار الملف المحلي.
+ ج: نعم، يمكنك إدراج صورة من عنوان URL في Aspose.Words. يمكنك استخدام نفس الشيء`InsertImage` الطريقة وحدد عنوان URL للصورة بدلاً من مسار الملف المحلي.
 
 #### س: كيف يمكنني تغيير حجم الصورة في Aspose.Words؟
 
@@ -69,7 +69,7 @@ builder.InsertNode(shape);
 
 #### س: هل يمكنني تطبيق المرشحات على الصور في Aspose.Words؟
 
- ج: نعم، يمكنك تطبيق المرشحات على الصور في Aspose.Words. على سبيل المثال، يمكنك تطبيق مرشح التمويه على صورة ما باستخدام`ApplyGaussianBlur` طريقة`Shape` هدف.
+ج: نعم، يمكنك تطبيق المرشحات على الصور في Aspose.Words. على سبيل المثال، يمكنك تطبيق مرشح التمويه على صورة ما باستخدام`ApplyGaussianBlur` طريقة`Shape` هدف.
 
 #### س: كيف يمكنني استبدال صورة بأخرى في Aspose.Words؟
 

@@ -49,7 +49,7 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprech
 
 #### Wie konvertiert man PDF in JPEG?
 
-Um eine PDF-Datei in JPEG zu konvertieren, können Sie verschiedene Softwaretools oder Bibliotheken verwenden, die diese Funktionalität bieten. Aspose.Words für .NET ist eine zuverlässige Option für diese Konvertierung. Mit der Bibliotheks-API können Sie die PDF-Datei laden und im JPEG-Format speichern.
+Um eine PDF-Datei in JPEG zu konvertieren, können Sie verschiedene Softwaretools oder Bibliotheken verwenden, die diese Funktionalität bereitstellen. Aspose.Words für .NET ist eine zuverlässige Option für diese Konvertierung. Mit der Bibliotheks-API können Sie die PDF-Datei laden und im JPEG-Format speichern.
 
 #### Wie lege ich die Auflösung und Qualität von JPEG-Bildern fest?
 

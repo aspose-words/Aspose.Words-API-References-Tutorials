@@ -74,7 +74,7 @@ Dividir documentos por encabezados es un enfoque más avanzado que le permite cr
 Para dividir un documento por encabezados usando Aspose.Words para Java, siga estos pasos:
 
 ```java
-// Código Java para dividir un documento por encabezados usando Aspose.Words para Java
+//Código Java para dividir un documento por encabezados usando Aspose.Words para Java
 Document doc = new Document("input.docx");
 LayoutCollector layoutCollector = new LayoutCollector(doc);
 

@@ -18,7 +18,7 @@ Bevor wir in die Welt der Dokumentenautomatisierung eintauchen, stellen Sie sich
 
 - Java-Entwicklungsumgebung: Stellen Sie sicher, dass auf Ihrem System eine Java-Entwicklungsumgebung eingerichtet ist.
 
-- Aspose.Words für Java: Sie sollten die Aspose.Words für Java-Bibliothek installiert haben. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/java/).
+-  Aspose.Words für Java: Sie sollten die Aspose.Words für Java-Bibliothek installiert haben. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/java/).
 
 - Beispieldokument: Bereiten Sie ein Beispieldokument vor, dessen Druckvorgang Sie automatisieren möchten.
 
@@ -75,7 +75,7 @@ Die Automatisierung des Dokumentendrucks mit Aspose.Words für Java kann Ihren A
 
 ### Wie kann ich einen anderen Drucker zum Drucken meiner Dokumente angeben?
 
- Um einen anderen Drucker zum Drucken Ihrer Dokumente anzugeben, können Sie die verwenden`setPrinterName` -Methode, wie im Codebeispiel gezeigt. Einfach austauschen`"Your_Printer_Name"` mit dem Namen des gewünschten Druckers.
+ Um einen anderen Drucker zum Drucken Ihrer Dokumente anzugeben, können Sie die verwenden`setPrinterName`-Methode, wie im Codebeispiel gezeigt. Einfach austauschen`"Your_Printer_Name"` mit dem Namen des gewünschten Druckers.
 
 ### Kann ich andere dokumentbezogene Aufgaben mit Aspose.Words für Java automatisieren?
 

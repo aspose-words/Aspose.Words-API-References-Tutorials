@@ -38,7 +38,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 // قم بالمرور عبر جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير والانتقال إلى القسم الأول.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-    //انسخ محتوى القسم الحالي إلى بداية القسم الأخير.
+    // انسخ محتوى القسم الحالي إلى بداية القسم الأخير.
     doc.LastSection.PrependContent(doc.Sections[i]);
     // إزالة القسم المنسوخ.
     doc.Sections[i].Remove();
@@ -65,7 +65,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 // قم بالمرور عبر جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير والانتقال إلى القسم الأول.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-	//انسخ محتوى القسم الحالي إلى بداية القسم الأخير.
+	// انسخ محتوى القسم الحالي إلى بداية القسم الأخير.
 	doc.LastSection.PrependContent(doc.Sections[i]);
 	// إزالة القسم المنسوخ.
 	doc.Sections[i].Remove();

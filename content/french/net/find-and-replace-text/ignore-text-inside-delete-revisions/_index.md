@@ -48,7 +48,7 @@ doc.StopTrackRevisions();
 
 ## Étape 4 : Application de la fonctionnalité « Ignorer le texte dans les révisions supprimées »
 
- Maintenant que nous avons préparé notre document en supprimant un paragraphe, nous pouvons activer la fonctionnalité "Ignorer le texte à l'intérieur des révisions" à l'aide d'un`FindReplaceOptions` objet. Nous fixerons le`IgnoreDeleted` propriété à`true`:
+ Maintenant que nous avons préparé notre document en supprimant un paragraphe, nous pouvons activer la fonctionnalité "Ignorer le texte à l'intérieur des révisions" à l'aide d'un`FindReplaceOptions` objet. Nous fixerons le`IgnoreDeleted`propriété à`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -65,7 +65,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Étape 6 : Affichage de la sortie du document modifié
 
-Après avoir appliqué la recherche et le remplacement, nous pouvons afficher le contenu modifié du document à l'aide du`GetText` méthode:
+ Après avoir appliqué la recherche et le remplacement, nous pouvons afficher le contenu modifié du document à l'aide du`GetText` méthode:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -73,7 +73,7 @@ Console.WriteLine(doc.GetText());
 
 ## Étape 7 : Modification des options pour inclure le texte supprimé
 
- Si nous souhaitons inclure le texte supprimé dans le résultat de sortie, nous pouvons modifier les options pour ne pas ignorer le texte supprimé. Pour cela nous fixerons le`IgnoreDeleted` propriété à`false`:
+ Si nous souhaitons inclure le texte supprimé dans le résultat de sortie, nous pouvons modifier les options pour ne pas ignorer le texte supprimé. Pour cela nous fixerons le`IgnoreDeleted`propriété à`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
@@ -164,7 +164,7 @@ doc.StopTrackRevisions();
 
 #### Q : Comment activer la fonctionnalité « Ignorer le texte dans les révisions supprimées » dans Aspose.Words pour .NET ?
 
- R : Maintenant que nous avons préparé notre document en supprimant un paragraphe, nous pouvons activer la fonctionnalité "Ignorer le texte à l'intérieur des révisions supprimées" à l'aide d'un`FindReplaceOptions` objet. Nous fixerons le`IgnoreDeleted` propriété à`true`:
+ R : Maintenant que nous avons préparé notre document en supprimant un paragraphe, nous pouvons activer la fonctionnalité "Ignorer le texte à l'intérieur des révisions supprimées" à l'aide d'un`FindReplaceOptions` objet. Nous fixerons le`IgnoreDeleted`propriété à`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -189,7 +189,7 @@ Console.WriteLine(doc.GetText());
 
 #### Q : Comment inclure le texte supprimé dans le résultat de sortie dans Aspose.Words pour .NET ?
 
- R : Si nous souhaitons inclure le texte supprimé dans le résultat de sortie, nous pouvons modifier les options pour ne pas ignorer le texte supprimé. Pour cela, nous fixerons le`IgnoreDeleted` propriété à`false`:
+ R : Si nous souhaitons inclure le texte supprimé dans le résultat de sortie, nous pouvons modifier les options pour ne pas ignorer le texte supprimé. Pour cela, nous fixerons le`IgnoreDeleted`propriété à`false`:
 
 ```csharp
 options. IgnoreDeleted = false;

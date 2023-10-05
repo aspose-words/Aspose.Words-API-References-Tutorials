@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/additional-text-positioning/
 ---
 
-I den här handledningen går vi igenom stegen för att förbättra PDF-textpositionering med ytterligare textpositioneringsfunktion med Aspose.Words för .NET. Den här funktionen låter dig styra placeringen av ytterligare text när du konverterar ett Word-dokument till PDF. Följ stegen nedan:
+den här handledningen går vi igenom stegen för att förbättra PDF-textpositionering med ytterligare textpositioneringsfunktion med Aspose.Words för .NET. Den här funktionen låter dig styra placeringen av ytterligare text när du konverterar ett Word-dokument till PDF. Följ stegen nedan:
 
 ## Steg 1: Ladda dokumentet
 
@@ -79,7 +79,7 @@ S: För att förbättra textpositioneringen i en PDF-fil genom att lägga till y
  Konfigurera alternativen för konvertering som PDF genom att skapa en instans av`PdfSaveOptions` klass och möjliggöra`AdditionalTextPositioning` alternativ för att möjliggöra exakt 
 placering av ytterligare text i PDF-filen.
 
- Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document`klass som anger sökvägen och sparalternativ.
+ Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document` klass som anger sökvägen och sparalternativ.
 
 #### F: Vilka är fördelarna med att förbättra placeringen av text i en PDF-fil genom att lägga till ytterligare text?
 S: Fördelarna med att förbättra placeringen av text i en PDF-fil genom att lägga till ytterligare text är:

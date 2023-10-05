@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-markdown/heading/
 ---
 
-I det här exemplet kommer vi att visa dig hur du använder rubrikfunktionen med Aspose.Words för .NET. Rubriker används för att strukturera och prioritera innehållet i ett dokument.
+det här exemplet kommer vi att visa dig hur du använder rubrikfunktionen med Aspose.Words för .NET. Rubriker används för att strukturera och prioritera innehållet i ett dokument.
 
 ## Steg 1: Använda en dokumentgenerator
 

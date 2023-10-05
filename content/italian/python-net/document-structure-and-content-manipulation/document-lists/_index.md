@@ -96,7 +96,7 @@ Gli elenchi possono avere più livelli, il che è utile per creare elenchi nidif
 
 Le sottoliste rappresentano un modo efficace per organizzare gerarchicamente le informazioni. Puoi aggiungere facilmente elenchi secondari utilizzando l'API Python Aspose.Words.
 
-## Conversione di testo normale in elenchi
+## Conversione di testo semplice in elenchi
 
 Se disponi di testo esistente che desideri convertire in elenchi, Aspose.Words Python fornisce metodi per analizzare e formattare il testo di conseguenza.
 

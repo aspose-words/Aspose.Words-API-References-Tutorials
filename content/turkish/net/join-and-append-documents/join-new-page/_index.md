@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: Yeni sayfa bölümü başlangıcını ayarlayın
 
-Eklenen belgeyi yeni bir sayfada başlatmak için`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.NewPage`.
+ Eklenen belgeyi yeni bir sayfada başlatmak için`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## 4. Adım: Kaynak belgeyi ekleyin
 
-Kaynak belgeyi hedef belgeye şunu kullanarak ekleyin:`AppendDocument` yöntemi`Document` sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak belgedeki orijinal stilleri korumak için.
+ Kaynak belgeyi hedef belgeye şunu kullanarak ekleyin:`AppendDocument` yöntemi`Document` sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak belgedeki orijinal stilleri korumak için.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ Bu, Aspose.Words for .NET kullanarak iki belgeyi yeni bir sayfada birleştirme u
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Eklenen belgeyi yeni bir sayfada başlayacak şekilde ayarlayın.
+	//Eklenen belgeyi yeni bir sayfada başlayacak şekilde ayarlayın.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Kaynak belgede bulunan orijinal stilleri kullanarak kaynak belgeyi ekleyin.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

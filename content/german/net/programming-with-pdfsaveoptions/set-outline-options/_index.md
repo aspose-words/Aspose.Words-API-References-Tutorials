@@ -72,7 +72,7 @@ In diesem Tutorial haben wir erklärt, wie Sie mithilfe von Aspose.Words für .N
 ### Häufig gestellte Fragen
 
 #### F: Was ist die Gliederungsoption in einem PDF-Dokument?
-A: Die Gliederungsoption in einem PDF-Dokument bezieht sich auf die hierarchische Struktur des Dokumentinhalts. Es ermöglicht die Erstellung eines interaktiven Inhaltsverzeichnisses und erleichtert die Navigation im Dokument. Die Gliederungsoptionen legen die Titel- und Untertitelebenen fest, die in die Gliederung einbezogen werden sollen, sowie den Detaillierungsgrad, der in der generierten Gliederung angezeigt werden soll.
+A: Die Gliederungsoption in einem PDF-Dokument bezieht sich auf die hierarchische Struktur des Dokumentinhalts. Es ermöglicht die Erstellung eines interaktiven Inhaltsverzeichnisses und erleichtert die Navigation im Dokument. Mit den Gliederungsoptionen legen Sie die Titel- und Untertitelebenen fest, die in die Gliederung einbezogen werden sollen, sowie den Detaillierungsgrad, der in der generierten Gliederung angezeigt werden soll.
 
 #### F: Wie kann ich mit Aspose.Words für .NET Gliederungsoptionen in einem PDF-Dokument festlegen?
 A: Um Gliederungsoptionen in einem PDF-Dokument mit Aspose.Words für .NET festzulegen, führen Sie die folgenden Schritte aus:
@@ -83,7 +83,7 @@ A: Um Gliederungsoptionen in einem PDF-Dokument mit Aspose.Words für .NET festz
 
  Konfigurieren Sie die Optionen zum Speichern als PDF, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und Verwendung der`OutlineOptions` -Eigenschaft, um die Umrissoptionen festzulegen. Mit können Sie die Anzahl der Überschriftenebenen angeben, die in die Gliederung einbezogen werden sollen`HeadingsOutlineLevels` Eigenschaft und die Anzahl der erweiterten Gliederungsebenen mithilfe der`ExpandedOutlineLevels` Eigentum.
 
- Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document`Klasse, die den Pfad und die Speicheroptionen angibt.
+ Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.
 
 #### F: Wozu dient die Planoption in einem PDF-Dokument?
 A: Mit der Gliederungsoption in einem PDF-Dokument können Sie eine hierarchische Struktur des Inhalts erstellen, die die Navigation im Dokument und den Zugriff auf verschiedene Abschnitte erleichtert. Dadurch können Benutzer schnell zu bestimmten Teilen des Dokuments springen, indem sie auf Einträge im Inhaltsverzeichnis oder in der Gliederung klicken. Die Gliederungsoption verbessert auch das Leseerlebnis, indem sie einen Überblick über die gesamte Dokumentstruktur bietet.

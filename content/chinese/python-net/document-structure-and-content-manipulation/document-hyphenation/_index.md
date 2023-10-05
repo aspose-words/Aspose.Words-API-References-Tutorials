@@ -21,7 +21,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/document-hyphena
 
 ## 控制连字符
 
-### 手动连字符
+### 手动连字
 
 在某些情况下，您可能需要手动控制单词的中断位置以实现特定的设计或强调。这可以通过在所需的断点处插入连字符来完成。
 

@@ -17,7 +17,7 @@ Aspose.Words för Java är ett funktionsrikt bibliotek som gör det möjligt fö
 Innan vi dyker in i koden, se till att du har följande förutsättningar:
 
 - Java Development Kit (JDK) installerat på ditt system.
-- Aspose.Words för Java-bibliotek. Du kan ladda ner den från[här](https://releases.aspose.com/words/java/).
+-  Aspose.Words för Java-bibliotek. Du kan ladda ner den från[här](https://releases.aspose.com/words/java/).
 - En grundläggande förståelse för Java-programmering.
 
 ## Steg-för-steg-guide
@@ -64,7 +64,7 @@ Kom ihåg att hantera undantag som kan inträffa under konverteringsprocessen. D
 
 ```java
 try {
-    //Konverteringskod här
+    // Konverteringskod här
 } catch (Exception e) {
     e.printStackTrace();
 }

@@ -82,7 +82,7 @@ C: Aspose.Words for .NET kullanarak üstbilgi ve altbilgi yer imlerini bir Word 
 
  Bir örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve uygun üstbilgi ve altbilgi yer imi seçeneklerini ayarlama.
 
- Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
+ Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document` yolu ve kaydetme seçeneklerini belirten sınıf.
 
 ### S: Üstbilgi ve altbilgi yer işaretlerini PDF belgesine aktarmanın faydaları nelerdir?
 C: Üstbilgi ve altbilgi yer imlerini PDF belgesine aktarmanın avantajları şunlardır:

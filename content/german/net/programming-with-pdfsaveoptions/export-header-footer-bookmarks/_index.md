@@ -82,7 +82,7 @@ A: Um mit Aspose.Words für .NET Kopf- und Fußzeilen-Lesezeichen aus einem Word
 
  Konfigurieren Sie die Optionen zum Speichern als PDF, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und Festlegen der entsprechenden Optionen für Kopf- und Fußzeilen-Lesezeichen.
 
- Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document`Klasse, die den Pfad und die Speicheroptionen angibt.
+ Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.
 
 ### F: Welche Vorteile bietet der Export von Kopf- und Fußzeilen-Lesezeichen in ein PDF-Dokument?
 A: Der Export von Kopf- und Fußzeilen-Lesezeichen in ein PDF-Dokument bietet folgende Vorteile:

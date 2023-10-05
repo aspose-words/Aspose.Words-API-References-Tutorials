@@ -50,7 +50,7 @@ Belge güvenliğine geçmeden önce Aspose.Words for Java'yı tanıyalım. Java 
 Aspose.Words for Java'nın kurulumu basit bir işlemdir. Kitaplığı Java projenize eklemek için şu basit adımları izleyin:
 
 1. ### İndirmek:
- Şuraya git:[Aspose.Release'ler](https://releases.aspose.com/words/java/) ve Aspose.Words for Java paketini indirin.
+  Şuraya git:[Aspose.Release'ler](https://releases.aspose.com/words/java/) ve Aspose.Words for Java paketini indirin.
 
 2. ### Çıkarmak:
  İndirilen paketi bilgisayarınızda uygun bir konuma çıkarın.
@@ -84,7 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Artık belgemizi yüklediğimize göre, ona şifreleme uygulamaya devam edelim. Aspose.Words for Java, belge şifrelemeyi ayarlamanın kolay bir yolunu sunar:
 
 ```java
-//Belgeyi açmak için bir parola belirleyin
+// Belgeyi açmak için bir parola belirleyin
 doc.getWriteProtection().setPassword("yourPassword");
 
 // Şifreleme algoritmasını ayarlayın (isteğe bağlı)
@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 Filigranlama, belgenizin gizliliğini korumanıza ve durumunu belirtmenize yardımcı olabilir. Aspose.Words for Java, kullanımı kolay filigranlama özellikleri sunar:
 
 ```java
-//Görünür bir filigran ekleyin
+// Görünür bir filigran ekleyin
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

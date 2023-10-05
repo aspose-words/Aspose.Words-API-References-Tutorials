@@ -58,7 +58,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### P: ¿Cómo puedo crear un enlace automático a una dirección URL en Aspose.Words?
 
- R: Para crear un enlace automático a una dirección URL en Aspose.Words, puede utilizar el`<a>` etiqueta con el`href` atributo que contiene la dirección URL. Por ejemplo, puedes usar`<a href="https://www.aspose.com">https://www.aspose.com</a>` para vincularse automáticamente a "https://www.aspose.com".
+R: Para crear un enlace automático a una dirección URL en Aspose.Words, puede utilizar el`<a>` etiqueta con el`href` atributo que contiene la dirección URL. Por ejemplo, puedes usar`<a href="https://www.aspose.com">https://www.aspose.com</a>` para vincularse automáticamente a "https://www.aspose.com".
 
 #### P: ¿Es posible personalizar el texto que se muestra de un enlace automático en Aspose.Words?
 
@@ -66,4 +66,4 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### P: ¿Cómo puedo agregar atributos adicionales a un enlace automático en Aspose.Words?
 
-R: Para agregar atributos adicionales a un enlace automático en Aspose.Words, puede usar atributos HTML adicionales dentro del`<a>` etiqueta. Por ejemplo, puedes usar`<a href="https://www.aspose.com" target="_blank">Link</a>` para abrir el enlace en una nueva ventana o pestaña usando el` attribute target="_blank"`.
+ R: Para agregar atributos adicionales a un enlace automático en Aspose.Words, puede usar atributos HTML adicionales dentro del`<a>` etiqueta. Por ejemplo, puedes usar`<a href="https://www.aspose.com" target="_blank">Link</a>` para abrir el enlace en una nueva ventana o pestaña usando el` attribute target="_blank"`.

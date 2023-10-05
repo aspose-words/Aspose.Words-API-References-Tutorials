@@ -119,7 +119,7 @@ Ja, Aspose.Words för Java är mångsidigt och kan användas av utvecklare på a
 
 ### Var kan jag ladda ner Aspose.Words för Java?
 
- Du kan ladda ner Aspose.Words för Java från webbplatsen på[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Följ installationsinstruktionerna för att komma igång.
+Du kan ladda ner Aspose.Words för Java från webbplatsen på[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Följ installationsinstruktionerna för att komma igång.
 
 ## Slutsats
 

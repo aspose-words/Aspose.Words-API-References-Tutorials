@@ -21,7 +21,7 @@ Document doc = new Document();
 Document target = new Document(dataDir + "Rendering.docx");
 ```
 
- In diesem Schritt erstellen wir zwei`Document` Objekte:`doc` welches das leere Quelldokument darstellt und`target`Dies stellt das Zieldokument dar, aus dem wir die Stile kopieren.
+ In diesem Schritt erstellen wir zwei`Document` Objekte:`doc` welches das leere Quelldokument darstellt und`target` Dies stellt das Zieldokument dar, aus dem wir die Stile kopieren.
 
 ## Schritt 3: Stile kopieren
 
@@ -72,7 +72,7 @@ Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um die Stilve
 
 #### Wie kann ich mit Aspose.Words für .NET Stile von einem Dokument in ein anderes kopieren?
 
-Gehen Sie folgendermaßen vor, um Stile von einem Quelldokument in ein Zieldokument zu kopieren:
+Um Stile von einem Quelldokument in ein Zieldokument zu kopieren, gehen Sie folgendermaßen vor:
 1.  Erstellen Sie zwei`Document` Objekte, die das Quelldokument und das Zieldokument darstellen.
 2.  Benutzen Sie die`CopyStylesFromTemplate` -Methode für das Zieldokument und übergibt das Quelldokument als Argument.
 

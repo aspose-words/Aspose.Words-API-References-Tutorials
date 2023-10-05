@@ -36,7 +36,7 @@ Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Schritt 3: Fügen Sie dem Diagramm Seriendaten hinzu
+## Schritt 3: Fügen Sie dem Diagramm Reihendaten hinzu
 
 Fügen Sie dem Diagramm Seriendaten hinzu. In diesem Beispiel fügen wir fünf Datenpunkte mit entsprechenden Daten und Werten hinzu.
 
@@ -113,7 +113,7 @@ Damit ist die Implementierung der Definition von XY-Achseneigenschaften in einem
 	// Ändern Sie die X-Achse in „Kategorie“ statt „Datum“, sodass alle Punkte im gleichen Abstand auf der X-Achse platziert werden.
 	xAxis.CategoryType = AxisCategoryType.Category;
 	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; // Gemessen in Anzeigeeinheiten der Y-Achse (Hunderter).
+	xAxis.CrossesAt = 3; //Gemessen in Anzeigeeinheiten der Y-Achse (Hunderter).
 	xAxis.ReverseOrder = true;
 	xAxis.MajorTickMark = AxisTickMark.Cross;
 	xAxis.MinorTickMark = AxisTickMark.Outside;
@@ -131,7 +131,7 @@ Damit ist die Implementierung der Definition von XY-Achseneigenschaften in einem
 
 In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET Eigenschaften für die X- und Y-Achsen in einem Diagramm definieren. Wenn Sie der Schritt-für-Schritt-Anleitung folgen, können Sie ein Diagramm erstellen, Reihendaten hinzufügen und die Achseneigenschaften an Ihre spezifischen Anforderungen anpassen. Aspose.Words für .NET bietet eine umfassende API für die Textverarbeitung mit Diagrammen in Word-Dokumenten, sodass Sie verschiedene Aspekte des Diagramms, einschließlich der Achsen, bearbeiten können.
 
- Durch den Zugriff auf`ChartAxis` Bei Objekten, die mit dem Diagramm verknüpft sind, können Sie Eigenschaften wie den Kategorietyp, Achsenkreuze, Teilstriche, Beschriftungspositionen, Skalierung und mehr ändern. Diese Flexibilität ermöglicht es Ihnen, das Erscheinungsbild und Verhalten der Diagrammachsen anzupassen, um Ihre Daten effektiv darzustellen.
+Durch den Zugriff auf`ChartAxis` Bei Objekten, die mit dem Diagramm verknüpft sind, können Sie Eigenschaften wie den Kategorietyp, Achsenkreuze, Teilstriche, Beschriftungspositionen, Skalierung und mehr ändern. Diese Flexibilität ermöglicht es Ihnen, das Erscheinungsbild und Verhalten der Diagrammachsen anzupassen, um Ihre Daten effektiv darzustellen.
 
 Durch die Verwendung von Aspose.Words für .NET können Sie Diagrammerstellungs- und Anpassungsfunktionen nahtlos in Ihre .NET-Anwendungen integrieren und die Erstellung professionell aussehender Dokumente mit umfassenden Visualisierungen automatisieren.
 
@@ -147,10 +147,10 @@ Sie können Aspose.Words für .NET installieren, indem Sie es mithilfe des NuGet
 Ja, Aspose.Words für .NET bietet umfangreiche Funktionen zum Anpassen verschiedener Aspekte eines Diagramms. Zusätzlich zum Definieren von Achseneigenschaften können Sie Diagrammtyp, Datenreihen, Legende, Titel, Plotbereich, Datenbeschriftungen und viele andere Elemente des Diagramms ändern. Die API bietet eine detaillierte Kontrolle über die Darstellung und das Verhalten von Diagrammen.
 
 #### Q4. Kann ich mit Aspose.Words für .NET verschiedene Arten von Diagrammen erstellen?
-Ja, Aspose.Words für .NET unterstützt eine Vielzahl von Diagrammtypen, darunter Flächen-, Balken-, Linien-, Kreis-, Streudiagramme und mehr. Du kannst den ... benutzen`ChartType` Aufzählung zur Angabe des gewünschten Diagrammtyps beim Einfügen einer Diagrammform in ein Word-Dokument.
+ Ja, Aspose.Words für .NET unterstützt eine Vielzahl von Diagrammtypen, darunter Flächen-, Balken-, Linien-, Kreis-, Streudiagramme und mehr. Du kannst den ... benutzen`ChartType` Aufzählung zur Angabe des gewünschten Diagrammtyps beim Einfügen einer Diagrammform in ein Word-Dokument.
 
 #### F5. Kann ich das Diagramm in verschiedenen Formaten speichern?
- Ja, mit Aspose.Words für .NET können Sie das Dokument mit dem Diagramm in verschiedenen Formaten wie DOCX, PDF, HTML und mehr speichern. Sie können je nach Ihren Anforderungen das passende Format auswählen und nutzen`Save` Methode der`Document` Objekt zum Speichern des Dokuments.
+Ja, mit Aspose.Words für .NET können Sie das Dokument mit dem Diagramm in verschiedenen Formaten wie DOCX, PDF, HTML und mehr speichern. Sie können je nach Ihren Anforderungen das passende Format auswählen und nutzen`Save` Methode der`Document` Objekt zum Speichern des Dokuments.
 
 #### F6. Kann ich diese Techniken auf mehrere Diagramme in einem Dokument anwenden?
  Ja, Sie können diese Techniken auf mehrere Diagramme in einem Dokument anwenden, indem Sie die erforderlichen Schritte für jedes Diagramm wiederholen. Sie können separat erstellen`Chart` Und`ChartAxis` Objekte für jedes Diagramm erstellen und deren Eigenschaften entsprechend anpassen. Aspose.Words für .NET bietet vollständige Unterstützung für die Textverarbeitung mit mehreren Diagrammen in einem einzigen Dokument.

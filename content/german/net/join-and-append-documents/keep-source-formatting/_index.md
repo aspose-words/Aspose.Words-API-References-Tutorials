@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Schritt 3: Hängen Sie das Quelldokument an das Zieldokument an
 
- Benutzen Sie die`AppendDocument` Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.KeepSourceFormatting`als Importformatmodus, um die ursprüngliche Formatierung des Quelldokuments beizubehalten.
+ Benutzen Sie die`AppendDocument` Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.KeepSourceFormatting` als Importformatmodus, um die ursprüngliche Formatierung des Quelldokuments beizubehalten.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

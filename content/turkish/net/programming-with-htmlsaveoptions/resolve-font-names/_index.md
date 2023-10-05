@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Bu kod bir örneğini oluşturur`HtmlSaveOptions`ve ayarlar`ResolveFontNames` seçeneği`true` HTML'ye dönüştürürken eksik yazı tipi adlarını çözmek için. Ayrıca`PrettyFormat` seçenek şu şekilde ayarlandı:`true` Güzel biçimlendirilmiş HTML kodu almak için.
+ Bu kod bir örneğini oluşturur`HtmlSaveOptions`ve ayarlar`ResolveFontNames` seçeneği`true`HTML'ye dönüştürürken eksik yazı tipi adlarını çözmek için. Ayrıca`PrettyFormat` seçenek şu şekilde ayarlandı:`true` Güzel biçimlendirilmiş HTML kodu almak için.
 
 ## Adım 4: Belgeyi HTML'ye dönüştürme ve kaydetme
 

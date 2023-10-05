@@ -36,7 +36,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Schritt 3: Fügen Sie dem Diagramm Seriendaten hinzu
+## Schritt 3: Fügen Sie dem Diagramm Reihendaten hinzu
 
 Fügen Sie dem Diagramm Seriendaten hinzu. In diesem Beispiel fügen wir fünf Elemente mit ihren entsprechenden Werten hinzu.
 

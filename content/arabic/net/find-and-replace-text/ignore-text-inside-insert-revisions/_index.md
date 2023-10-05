@@ -44,7 +44,7 @@ builder.Write("Text");
 
 ## الخطوة 4: استخدام وظيفة تجاهل النص داخل إدراج المراجعات
 
- لتجاهل النص الموجود داخل إدراج المراجعات في العمليات اللاحقة، يمكننا استخدام أ`FindReplaceOptions` الكائن وتعيين`IgnoreInserted` الملكية ل`true`:
+ لتجاهل النص الموجود داخل إدراج المراجعات في العمليات اللاحقة، يمكننا استخدام أ`FindReplaceOptions` الكائن وتعيين`IgnoreInserted`الملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -61,7 +61,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## الخطوة 6: عرض مخرجات المستند المعدل
 
-بعد تطبيق البحث والاستبدال، يمكننا عرض محتوى المستند الذي تم تغييره باستخدام ملف`GetText` طريقة:
+ بعد تطبيق البحث والاستبدال، يمكننا عرض محتوى المستند الذي تم تغييره باستخدام ملف`GetText` طريقة:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -69,7 +69,7 @@ Console.WriteLine(doc.GetText());
 
 ## الخطوة 7: تغيير الخيارات لتضمين إدراج المراجعات
 
-إذا أردنا تضمين النص الموجود داخل مراجعات الإدراج في نتيجة الإخراج، فيمكننا تغيير الخيارات حتى لا نتجاهل مراجعات الإدراج. لهذا سوف نقوم بتعيين`IgnoreInserted` الملكية ل`false`:
+إذا أردنا تضمين النص الموجود داخل مراجعات الإدراج في نتيجة الإخراج، فيمكننا تغيير الخيارات حتى لا نتجاهل مراجعات الإدراج. لهذا سوف نقوم بتعيين`IgnoreInserted`الملكية ل`false`:
 
 ```csharp
 options.IgnoreInserted = false;
@@ -156,7 +156,7 @@ builder.Write("Text");
 
 #### س: كيف يمكنني تجاهل النص الموجود داخل إدراج المراجعات في Aspose.Words لـ .NET؟
 
- ج: لتجاهل النص الموجود داخل إدراج المراجعات أثناء العمليات اللاحقة، يمكنك استخدام ملف`FindReplaceOptions` الكائن وتعيين`IgnoreInserted` الملكية ل`true`:
+ ج: لتجاهل النص الموجود داخل إدراج المراجعات أثناء العمليات اللاحقة، يمكنك استخدام ملف`FindReplaceOptions` الكائن وتعيين`IgnoreInserted`الملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };

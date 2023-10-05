@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Шаг 2. Добавьте стиль для кода с отступом
 
-Мы добавим собственный стиль для кода с отступом, используя`Styles.Add` метод`Document` объект. В этом примере мы создаем стиль IndentedCode для кода с отступом.
+ Мы добавим собственный стиль для кода с отступом, используя`Styles.Add` метод`Document` объект. В этом примере мы создаем стиль IndentedCode для кода с отступом.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

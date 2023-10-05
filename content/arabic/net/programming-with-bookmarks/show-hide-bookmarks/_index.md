@@ -56,6 +56,58 @@ doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 
 ```
 
+#### ShowHideBookmarkedContent كود المصدر
+
+```csharp
+
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+        {
+            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+            DocumentBuilder builder = new DocumentBuilder(doc);
+            builder.MoveToDocumentEnd();
+
+            // {إذا "{إشارة مرجعية MERGEFIELD}" = "صحيح" "" ""}
+            Field field = builder.InsertField("IF \"", null);
+            builder.MoveTo(field.Start.NextSibling);
+            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+            builder.Write("\" = \"true\" ");
+            builder.Write("\"");
+            builder.Write("\"");
+            builder.Write(" \"\"");
+
+            Node currentNode = field.Start;
+            bool flag = true;
+            while (currentNode != null && flag)
+            {
+                if (currentNode.NodeType == NodeType.Run)
+                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                        flag = false;
+
+                Node nextNode = currentNode.NextSibling;
+
+                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+                currentNode = nextNode;
+            }
+
+            Node endNode = bm.BookmarkEnd;
+            flag = true;
+            while (currentNode != null && flag)
+            {
+                if (currentNode.NodeType == NodeType.FieldEnd)
+                    flag = false;
+
+                Node nextNode = currentNode.NextSibling;
+
+                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+                endNode = currentNode;
+                currentNode = nextNode;
+            }
+
+            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+        }
+		
+```
 ## خاتمة
 
 في هذه المقالة، قمنا باستكشاف التعليمات البرمجية المصدر لـ C# لفهم كيفية استخدام ميزة إظهار إخفاء الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلاً خطوة بخطوة لإظهار أو إخفاء إشارة مرجعية معينة في المستند.

@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
 
-In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET die Ausrichtung von mehrzeiligen Markierungen in einer Diagrammachse festlegen. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, auf die Achse zugreifen und die Ausrichtung der Teilstrichbeschriftung ändern.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET die Ausrichtung von mehrzeiligen Markierungsbeschriftungen in einer Diagrammachse festlegen. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, auf die Achse zugreifen und die Ausrichtung der Teilstrichbeschriftung ändern.
 
 ## Schritt 1: Richten Sie das Projekt ein
 
@@ -88,7 +88,7 @@ Mehrzeilige Häkchenbeschriftungen in einer Diagrammachse beziehen sich auf Achs
  Ja, Sie können die Ausrichtung von Teilstrichbeschriftungen in einer Diagrammachse mit Aspose.Words für .NET anpassen. Durch den Zugriff auf`TickLabelAlignment` Eigentum der`ChartAxis` Objekt können Sie die gewünschte Ausrichtung für die Teilstrichbeschriftungen festlegen. Zu den Ausrichtungsoptionen gehören die Ausrichtung links, rechts, zentriert oder im Blocksatz. Durch Anpassen der Ausrichtung können Sie die horizontale Positionierung der Teilstrichbeschriftungen entlang der Diagrammachse steuern und so eine ordnungsgemäße Lesbarkeit und visuelle Darstellung gewährleisten.
 
 #### Q3. Wann sollte ich in Betracht ziehen, die Ausrichtung der Teilstrichbeschriftung in einer Diagrammachse zu ändern?
-Das Ändern der Ausrichtung der Teilstrichbeschriftung in einer Diagrammachse ist von Vorteil, wenn Sie lange oder mehrzeilige Beschriftungen haben, die eine optimale Darstellung und Lesbarkeit erfordern. Durch Anpassen der Ausrichtung können Sie sicherstellen, dass die Beschriftungen richtig ausgerichtet und beabstandet sind und Überlappungen oder Abschneiden vermieden werden. Erwägen Sie eine Änderung der Ausrichtung der Teilstrichbeschriftungen, wenn Sie Diagramme mit langen Kategorienamen oder ausführlichen Wertebeschriftungen bearbeiten oder in anderen Fällen, in denen die Standardausrichtung nicht das gewünschte visuelle Erscheinungsbild bietet.
+Das Ändern der Ausrichtung der Teilstrichbeschriftung in einer Diagrammachse ist von Vorteil, wenn Sie lange oder mehrzeilige Beschriftungen haben, die eine optimale Darstellung und Lesbarkeit erfordern. Durch Anpassen der Ausrichtung können Sie sicherstellen, dass die Beschriftungen richtig ausgerichtet und beabstandet sind und Überlappungen oder Abschneiden vermieden werden. Erwägen Sie eine Änderung der Ausrichtung der Teilstrichbeschriftungen, wenn Sie Diagramme mit langen Kategorienamen oder ausführlichen Wertebeschriftungen bearbeiten oder in anderen Fällen, in denen die Standardausrichtung nicht das gewünschte visuelle Erscheinungsbild liefert.
 
 #### Q4. Wirkt sich die Ausrichtung der Teilstrichbeschriftungen auf einzeilige Beschriftungen in einer Diagrammachse aus?
 Nein, die Ausrichtungseigenschaft der Teilstrichbeschriftung wirkt sich nicht auf einzeilige Beschriftungen in einer Diagrammachse aus. Es wurde speziell für mehrzeilige Etiketten entwickelt, die umwickelt oder geteilt werden müssen. Einzeilige Beschriftungen werden basierend auf den Standardausrichtungseinstellungen der Diagrammachse ausgerichtet. Die Ausrichtungseigenschaft der Teilstrichbeschriftung gilt nur für Beschriftungen, die sich über mehrere Zeilen erstrecken, sodass Sie die Ausrichtung jeder Zeile innerhalb der mehrzeiligen Beschriftung steuern können.

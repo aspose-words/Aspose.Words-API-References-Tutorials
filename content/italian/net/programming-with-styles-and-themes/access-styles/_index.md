@@ -50,7 +50,7 @@ foreach(Style style in styles)
 }
 ```
 
- In questo passaggio finale, passiamo in rassegna ogni stile della collezione utilizzando a`foreach`ciclo continuo. Mostriamo il nome di ciascuno stile sulla console, concatenandoli con virgole per una migliore leggibilità.
+ In questo passaggio finale, passiamo in rassegna ogni stile della collezione utilizzando a`foreach` ciclo continuo. Mostriamo il nome di ciascuno stile sulla console, concatenandoli con virgole per una migliore leggibilità.
 
 Ora puoi eseguire il codice sorgente per accedere agli stili in un documento e visualizzare i loro nomi sulla console. Questa funzionalità può essere utile per analizzare gli stili in un documento, eseguire operazioni specifiche su stili particolari o semplicemente ottenere informazioni sugli stili disponibili.
 
@@ -61,7 +61,7 @@ Document doc = new Document();
 
 string styleName = "";
 
-// Ottieni la raccolta di stili dal documento.
+//Ottieni la raccolta di stili dal documento.
 StyleCollection styles = doc.Styles;
 foreach (Style style in styles)
 {

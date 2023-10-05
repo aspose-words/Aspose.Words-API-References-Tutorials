@@ -34,7 +34,7 @@ Field field = builder. InsertField(FieldType.FieldDate, true);
 field.LocaleId = 1049;
 ```
 
- Nous utilisons le générateur de documents pour insérer un champ de type`FieldType.FieldDate` dans le document. En définissant le`LocaleId` propriété à`1049`, nous précisons la localisation russe pour ce champ.
+ Nous utilisons le générateur de documents pour insérer un champ de type`FieldType.FieldDate` dans le document. En définissant le`LocaleId`propriété à`1049`, nous précisons la localisation russe pour ce champ.
 
 ## Étape 4 : Enregistrez le document modifié
 

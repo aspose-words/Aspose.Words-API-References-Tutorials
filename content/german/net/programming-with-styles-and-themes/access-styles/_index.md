@@ -50,7 +50,7 @@ foreach(Style style in styles)
 }
 ```
 
- In diesem letzten Schritt durchlaufen wir jeden Stil in der Sammlung mit a`foreach`Schleife. Wir zeigen den Namen jedes Stils in der Konsole an und verketten ihn zur besseren Lesbarkeit mit Kommas.
+ In diesem letzten Schritt durchlaufen wir jeden Stil in der Sammlung mit a`foreach` Schleife. Wir zeigen den Namen jedes Stils in der Konsole an und verketten ihn zur besseren Lesbarkeit mit Kommas.
 
 Jetzt können Sie den Quellcode ausführen, um auf Stile in einem Dokument zuzugreifen und deren Namen in der Konsole anzuzeigen. Diese Funktion kann nützlich sein, um Stile in einem Dokument zu analysieren, bestimmte Vorgänge für bestimmte Stile auszuführen oder einfach Informationen über verfügbare Stile abzurufen.
 
@@ -61,7 +61,7 @@ Document doc = new Document();
 
 string styleName = "";
 
-// Rufen Sie die Stilsammlung aus dem Dokument ab.
+//Rufen Sie die Stilsammlung aus dem Dokument ab.
 StyleCollection styles = doc.Styles;
 foreach (Style style in styles)
 {

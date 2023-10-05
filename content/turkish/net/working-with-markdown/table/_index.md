@@ -61,7 +61,7 @@ Tebrikler! Artık Aspose.Words for .NET ile nasıl tablo oluşturulacağını ö
 
 #### S: Markdown'da nasıl tablo oluşturabilirim?
 
-C: Markdown'da bir tablo oluşturmak için boruların sözdizimini kullanın (`|`) hücreleri ve tireleri sınırlamak için (`-`) tablo başlıklarını sınırlamak için.
+C: Markdown'da bir tablo oluşturmak için boruların sözdizimini kullanın (`|`hücreleri ve tireleri sınırlamak için (`-`) tablo başlıklarını sınırlamak için.
 
 #### S: Markdown'da bir tablonun görünümünü özelleştirebilir miyiz?
 

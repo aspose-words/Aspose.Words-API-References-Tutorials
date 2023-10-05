@@ -69,7 +69,7 @@ A: Um den Schutztyp eines Dokuments mit Aspose.Words für .NET abzurufen, könne
 
  A: Nein, das`ProtectionType`Die Eigenschaft in Aspose.Words für .NET ist eine schreibgeschützte Eigenschaft. Es ermöglicht Ihnen, den aktuellen Schutztyp eines Dokuments abzurufen, bietet jedoch keine direkte Möglichkeit, den Schutztyp zu ändern. Um den Schutztyp zu ändern, müssen Sie andere Methoden und Eigenschaften verwenden, die im verfügbar sind`Document` Klasse, wie z`Protect` oder`Unprotect`.
 
-#### F: Ist es möglich, ein Dokument mit mehreren Schutzarten gleichzeitig zu schützen?
+#### F: Ist es möglich, ein Dokument mit mehreren Schutztypen gleichzeitig zu schützen?
 
 A: Nein, mit Aspose.Words für .NET kann jeweils nur ein Schutztyp auf ein Dokument angewendet werden. Sie können jedoch verschiedene Schutztypen kombinieren, indem Sie den Schutz aktivieren, einen Typ festlegen, den Schutz deaktivieren und ihn dann mit einem anderen Typ erneut aktivieren.
 

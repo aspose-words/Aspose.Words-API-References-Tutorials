@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-في هذه الخطوة، نقوم بتكوين خيارات حفظ OOXML عن طريق إنشاء ملف جديد`OoxmlSaveOptions` هدف. نحدد كلمة المرور المطلوبة لتشفير المستند عن طريق تعيين`Password` خاصية كلمة المرور المخصصة الخاصة بك.
+ في هذه الخطوة، نقوم بتكوين خيارات حفظ OOXML عن طريق إنشاء ملف جديد`OoxmlSaveOptions` هدف. نحدد كلمة المرور المطلوبة لتشفير المستند عن طريق تعيين`Password` خاصية كلمة المرور المخصصة الخاصة بك.
 
 ## الخطوة 4: تشفير المستند بكلمة مرور
 

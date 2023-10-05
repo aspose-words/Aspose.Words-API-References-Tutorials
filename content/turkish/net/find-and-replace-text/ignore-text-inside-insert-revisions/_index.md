@@ -44,7 +44,7 @@ builder.Write("Text");
 
 ## Adım 4: Düzeltme Ekleme İçindeki Metni Yoksay işlevini kullanma
 
- Sonraki işlemlerde revizyon eklemelerin içindeki metni yok saymak için bir komut kullanabiliriz.`FindReplaceOptions` nesneyi ayarlayın ve`IgnoreInserted` mülkiyet`true`:
+ Sonraki işlemlerde revizyon eklemelerin içindeki metni yok saymak için bir komut kullanabiliriz.`FindReplaceOptions` nesneyi ayarlayın ve`IgnoreInserted`mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -52,7 +52,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
 
 ## 5. Adım: Arama ve değiştirme için normal ifadeleri kullanma
 
-Belge metninde arama işlemlerini ve değiştirme işlemlerini gerçekleştirmek için normal ifadeleri kullanacağız. Örneğimizde "e" harfinin geçtiği tüm yerleri arayacağız ve bunları yıldız işaretiyle değiştireceğiz "* ". .NET'i kullanacağız`Regex` bunun için sınıf:
+Belge metninde arama işlemlerini ve değiştirme işlemlerini gerçekleştirmek için normal ifadeler kullanacağız. Örneğimizde "e" harfinin geçtiği tüm yerleri arayacağız ve bunları yıldız işaretiyle değiştireceğiz "* ". .NET'i kullanacağız`Regex` bunun için sınıf:
 
 ```csharp
 Regex regex = new Regex("e");
@@ -61,7 +61,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Adım 6: Değiştirilen Belge Çıktısını Görüntüleme
 
-Arama ve değiştirmeyi uyguladıktan sonra, belgenin değişen içeriğini aşağıdaki komutu kullanarak görüntüleyebiliriz:`GetText` yöntem:
+ Arama ve değiştirmeyi uyguladıktan sonra, belgenin değişen içeriğini aşağıdaki komutu kullanarak görüntüleyebiliriz:`GetText` yöntem:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -69,7 +69,7 @@ Console.WriteLine(doc.GetText());
 
 ## Adım 7: Revizyon Eklemeyi İçerecek Seçenekleri Değiştirme
 
-Çıktı sonucunda, ekleme revizyonlarının içindeki metni dahil etmek istersek, ekleme revizyonlarını göz ardı etmeyecek şekilde seçenekleri değiştirebiliriz. Bunun için ayarlayacağız`IgnoreInserted` mülkiyet`false`:
+Çıktı sonucunda, ekleme revizyonlarının içindeki metni dahil etmek istersek, ekleme revizyonlarını göz ardı etmeyecek şekilde seçenekleri değiştirebiliriz. Bunun için ayarlayacağız`IgnoreInserted`mülkiyet`false`:
 
 ```csharp
 options.IgnoreInserted = false;
@@ -156,7 +156,7 @@ builder.Write("Text");
 
 #### S: Aspose.Words for .NET'te revizyonların içindeki metni nasıl yok sayabilirim?
 
- C: Sonraki işlemler sırasında revizyon eklemelerin içindeki metni yok saymak için bir kullanabilirsiniz.`FindReplaceOptions` nesneyi ayarlayın ve`IgnoreInserted` mülkiyet`true`:
+ C: Sonraki işlemler sırasında revizyon eklemelerin içindeki metni yok saymak için bir kullanabilirsiniz.`FindReplaceOptions` nesneyi ayarlayın ve`IgnoreInserted`mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };

@@ -22,7 +22,7 @@ url: /ar/java/document-rendering/master-document-rendering/
 
 ### التثبيت والإعداد
 
-لاستخدام Aspose.Words لـ Java، تحتاج إلى تضمين ملف Aspose.Words JAR في مشروع Java الخاص بك. يمكنك تنزيل JAR من إصدارات Aspose(https://releases.aspose.com/words/java/) وإضافته إلى مسار الفصل الخاص بمشروعك.
+لاستخدام Aspose.Words لـ Java، تحتاج إلى تضمين ملف Aspose.Words JAR في مشروع Java الخاص بك. يمكنك تنزيل JAR من إصدارات Aspose(https://releases.aspose.com/words/Java/) وإضافته إلى مسار الفصل الخاص بمشروعك.
 
 ### ترخيص Aspose.Words لجافا
 
@@ -229,7 +229,7 @@ doc.save("output.png", saveOptions);
 
 ### كيف يمكنني حماية المستند المقدم بكلمة مرور؟
 
-يسمح لك Aspose.Words بتطبيق حماية كلمة المرور على المستندات المقدمة لتأمين محتواها.
+يتيح لك Aspose.Words تطبيق حماية كلمة المرور على المستندات المقدمة لتأمين محتواها.
 
 ### هل يستطيع Aspose.Words عرض المستندات بلغات متعددة؟
 

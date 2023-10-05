@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## الخطوة 3: استخدام وظيفة تجاهل النص داخل الحقول
 
- لتجاهل النص داخل الحقول في العمليات اللاحقة، يمكننا استخدام`FindReplaceOptions` الكائن وتعيين`IgnoreFields` الملكية ل`true`:
+ لتجاهل النص داخل الحقول في العمليات اللاحقة، يمكننا استخدام`FindReplaceOptions` الكائن وتعيين`IgnoreFields`الملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -50,7 +50,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## الخطوة 5: عرض مخرجات المستند المعدل
 
-بعد تطبيق البحث والاستبدال، يمكننا عرض محتوى المستند الذي تم تغييره باستخدام ملف`GetText` طريقة:
+ بعد تطبيق البحث والاستبدال، يمكننا عرض محتوى المستند الذي تم تغييره باستخدام ملف`GetText` طريقة:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## الخطوة 6: تغيير الخيارات لتضمين الحقول
 
-نقوم بتضمين النص داخل الحقول في نتيجة الإخراج، يمكننا تغيير الخيارات لعدم تجاهل الحقول. لهذا سوف نقوم بتعيين`IgnoreFields` الملكية ل`false`:
+ نقوم بتضمين النص داخل الحقول في نتيجة الإخراج، يمكننا تغيير الخيارات لعدم تجاهل الحقول. لهذا سوف نقوم بتعيين`IgnoreFields`الملكية ل`false`:
 
 ```csharp
 options.IgnoreFields = false;
@@ -128,7 +128,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 #### س: كيف يمكنني تجاهل النص الموجود داخل الحقول في Aspose.Words لـ .NET؟
 
-ج: لتجاهل النص الموجود داخل الحقول أثناء العمليات اللاحقة، يمكنك استخدام ملف`FindReplaceOptions` الكائن وتعيين`IgnoreFields` الملكية ل`true`:
+ ج: لتجاهل النص الموجود داخل الحقول أثناء العمليات اللاحقة، يمكنك استخدام ملف`FindReplaceOptions` الكائن وتعيين`IgnoreFields`الملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };

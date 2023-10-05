@@ -11,7 +11,7 @@ Im Bereich der Textverarbeitung spielen Schriftarten und Textstil eine entscheid
 
 ## Einführung
 
-Eine effektive Dokumentformatierung geht über die bloße Vermittlung des Inhalts hinaus; Es fesselt die Aufmerksamkeit des Lesers und verbessert das Verständnis. Schriftarten und Textstil tragen wesentlich zu diesem Prozess bei. Lassen Sie uns die grundlegenden Konzepte von Schriftarten und Textstilen erkunden, bevor wir uns mit der praktischen Umsetzung mit Aspose.Words für Python befassen.
+Eine effektive Dokumentformatierung geht über die bloße Vermittlung des Inhalts hinaus. Es fesselt die Aufmerksamkeit des Lesers und verbessert das Verständnis. Schriftarten und Textstil tragen wesentlich zu diesem Prozess bei. Lassen Sie uns die grundlegenden Konzepte von Schriftarten und Textstilen erkunden, bevor wir uns mit der praktischen Umsetzung mit Aspose.Words für Python befassen.
 
 ## Bedeutung von Schriftarten und Textstil
 

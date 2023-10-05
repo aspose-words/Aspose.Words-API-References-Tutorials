@@ -90,7 +90,7 @@ Sì, puoi aggiungere più serie al grafico a bolle utilizzando Aspose.Words per 
 Sì, utilizzando Aspose.Words per .NET, puoi personalizzare vari aspetti dell'aspetto del grafico a bolle. Puoi modificare proprietà come il colore della serie, la dimensione della bolla, le etichette degli assi e la formattazione dell'area del grafico. La libreria fornisce un ricco set di API per controllare gli elementi visivi del grafico e creare un aspetto personalizzato adatto alle tue esigenze.
 
 #### Q4. Posso salvare il documento con il grafico a bolle inserito in formati diversi?
-Sì, Aspose.Words per .NET ti consente di salvare il documento con il grafico a bolle inserito in vari formati, come DOCX, PDF, HTML e altro. Puoi scegliere il formato di output desiderato in base alle tue esigenze e utilizzare il file`Save` metodo del`Document` oggetto per salvare il documento. Il grafico a bolle inserito verrà conservato nel documento salvato.
+ Sì, Aspose.Words per .NET ti consente di salvare il documento con il grafico a bolle inserito in vari formati, come DOCX, PDF, HTML e altro. Puoi scegliere il formato di output desiderato in base alle tue esigenze e utilizzare il file`Save` metodo del`Document` oggetto per salvare il documento. Il grafico a bolle inserito verrà conservato nel documento salvato.
 
 #### Q5. Posso modificare i dati e l'aspetto del grafico a bolle dopo averlo inserito?
 Sì, dopo aver inserito il grafico a bolle nel documento, puoi modificarne i dati e l'aspetto utilizzando le API fornite da Aspose.Words per .NET. Puoi aggiornare i dati delle serie, modificare la dimensione delle bolle, personalizzare le proprietà degli assi e applicare opzioni di formattazione per creare grafici dinamici e interattivi nei tuoi documenti Word.

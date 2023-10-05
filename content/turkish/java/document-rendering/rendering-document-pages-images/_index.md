@@ -84,7 +84,7 @@ Evet, Aspose.Words for Java, DOCX, DOC, RTF, ODT ve HTML dahil çok çeşitli be
 
 ### Oluşturma sırasında görüntü çözünürlüğünü kontrol edebilir miyim?
 
- Kesinlikle! Aspose.Words, görüntü işleme için çözünürlüğü ayarlamanızı sağlar.`setResolution` yöntem`ImageSaveOptions`. Bu, çıktı görüntülerinin kalite gereksinimlerinizi karşılamasını sağlar.
+ Kesinlikle! Aspose.Words, görüntü işleme için çözünürlüğü ayarlamanızı sağlar.`setResolution`yöntem`ImageSaveOptions`. Bu, çıktı görüntülerinin kalite gereksinimlerinizi karşılamasını sağlar.
 
 ### Aspose.Words toplu belge işlemeye uygun mu?
 

@@ -56,6 +56,58 @@ Aspose.Words for .NET kullanarak belirli bir yer iminin gösterilmesini veya giz
 
 ```
 
+#### ShowHideBookmarkedContent kaynak kodu
+
+```csharp
+
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+        {
+            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+            DocumentBuilder builder = new DocumentBuilder(doc);
+            builder.MoveToDocumentEnd();
+
+            // {IF "{MERGEFIELD yer imi}" = "true" "" ""}
+            Field field = builder.InsertField("IF \"", null);
+            builder.MoveTo(field.Start.NextSibling);
+            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+            builder.Write("\" = \"true\" ");
+            builder.Write("\"");
+            builder.Write("\"");
+            builder.Write(" \"\"");
+
+            Node currentNode = field.Start;
+            bool flag = true;
+            while (currentNode != null && flag)
+            {
+                if (currentNode.NodeType == NodeType.Run)
+                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                        flag = false;
+
+                Node nextNode = currentNode.NextSibling;
+
+                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+                currentNode = nextNode;
+            }
+
+            Node endNode = bm.BookmarkEnd;
+            flag = true;
+            while (currentNode != null && flag)
+            {
+                if (currentNode.NodeType == NodeType.FieldEnd)
+                    flag = false;
+
+                Node nextNode = currentNode.NextSibling;
+
+                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+                endNode = currentNode;
+                currentNode = nextNode;
+            }
+
+            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+        }
+		
+```
 ## Çözüm
 
 Bu makalede, Aspose.Words for .NET'in Show Hide Bookmarks özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belgedeki belirli bir yer imini göstermek veya gizlemek için adım adım bir kılavuz izledik.

@@ -58,7 +58,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo in ba
 
 #### D: Come posso posizionare le note a piè di pagina e le note di chiusura in Aspose.Words?
 
- R: Per posizionare le note a piè di pagina e le note di chiusura in Aspose.Words, è necessario utilizzare il file`FootnoteOptions` classe e il`Position` proprietà. Puoi impostare questa proprietà su qualsiasi valore tu voglia, ad esempio`BottomOfPage` (in fondo alla pagina) oppure`EndOfSection`(alla fine della sezione).
+ R: Per posizionare le note a piè di pagina e le note di chiusura in Aspose.Words, è necessario utilizzare il file`FootnoteOptions` classe e il`Position` proprietà. Puoi impostare questa proprietà su qualsiasi valore tu voglia, ad esempio`BottomOfPage` (in fondo alla pagina) oppure`EndOfSection` (alla fine della sezione).
 
 #### D: È possibile personalizzare la posizione delle note a piè di pagina e di chiusura per ogni pagina o sezione del documento?
 

@@ -88,6 +88,42 @@ Ecco il codice sorgente di esempio completo per dimostrare la copia del testo da
 
 ```
 
+#### Aggiungi il codice sorgente BookmarkedText
+
+```csharp
+
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+        {
+            // Questo è il paragrafo che contiene l'inizio del segnalibro.
+            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+
+            // Questo è il paragrafo che contiene la fine del segnalibro.
+            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+
+            if (startPara == null || endPara == null)
+                throw new InvalidOperationException(
+                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+            // Limitiamoci a uno scenario ragionevolmente semplice.
+            if (startPara.ParentNode != endPara.ParentNode)
+                throw new InvalidOperationException(
+                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+            // Vogliamo copiare tutti i paragrafi dal paragrafo iniziale fino al paragrafo finale (incluso),
+            // quindi il nodo in cui ci fermiamo è quello successivo alla fine del paragrafo.
+            Node endNode = endPara.NextSibling;
+
+            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+            {
+                //Questo crea una copia del nodo corrente e lo importa (lo rende valido) nel contesto
+                // del documento di destinazione. Importare significa regolare correttamente gli stili e gli identificatori degli elenchi.
+                Node newNode = importer.ImportNode(curNode, true);
+
+                dstNode.AppendChild(newNode);
+            }
+        }
+
+```
 ## Conclusione
 
 In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzione Copia testo con segnalibro da Aspose.Words per .NET. Abbiamo seguito una guida passo passo per copiare il contenuto di un segnalibro da un documento di origine a un altro documento.
@@ -116,7 +152,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### D: Come specificare la posizione della copia del testo del segnalibro in un documento di destinazione utilizzando Aspose.Words per .NET?
 
-R: Per specificare dove si desidera aggiungere il testo del segnalibro copiato in un documento di destinazione utilizzando Aspose.Words per .NET, è possibile accedere al corpo dell'ultima sezione del documento di destinazione. Puoi usare il`LastSection` property per accedere all'ultima sezione e al`Body` property per accedere al corpo di quella sezione. Ecco un codice di esempio:
+ R: Per specificare dove si desidera aggiungere il testo del segnalibro copiato in un documento di destinazione utilizzando Aspose.Words per .NET, è possibile accedere al corpo dell'ultima sezione del documento di destinazione. Puoi usare il`LastSection` property per accedere all'ultima sezione e al`Body` property per accedere al corpo di quella sezione. Ecco un codice di esempio:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;

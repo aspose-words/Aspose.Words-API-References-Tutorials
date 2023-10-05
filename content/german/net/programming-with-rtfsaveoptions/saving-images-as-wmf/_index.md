@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Document.docx");
 RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 ```
 
- In diesem Schritt konfigurieren wir die RTF-Backup-Optionen. Wir schaffen ein Neues`RtfSaveOptions` Objekt und legen Sie das fest`SaveImagesAsWmf` Eigentum zu`true`. Dadurch wird Aspose.Words angewiesen, die Dokumentbilder bei der Konvertierung in RTF als WMF zu speichern.
+ In diesem Schritt konfigurieren wir die RTF-Backup-Optionen. Wir schaffen ein Neues`RtfSaveOptions` Objekt und legen Sie das fest`SaveImagesAsWmf`Eigentum zu`true`. Dadurch wird Aspose.Words angewiesen, die Dokumentbilder bei der Konvertierung in RTF als WMF zu speichern.
 
 ## Schritt 4: Speichern des Dokuments
 
@@ -78,7 +78,7 @@ Richten Sie Ihre Entwicklungsumgebung ein, indem Sie die erforderlichen Referenz
 
  Laden Sie das Dokument mit`Document` -Methode und Angabe des Pfads der zu ladenden DOCX-Datei.
 
- Konfigurieren Sie RTF-Speicheroptionen, indem Sie eine erstellen`RtfSaveOptions` Objekt und Einstellung der`SaveImagesAsWmf` Eigentum zu`true`. Dadurch wird Aspose.Words angewiesen, die Dokumentbilder als zu speichern 
+ Konfigurieren Sie RTF-Speicheroptionen, indem Sie eine erstellen`RtfSaveOptions` Objekt und Einstellung der`SaveImagesAsWmf`Eigentum zu`true`. Dadurch wird Aspose.Words angewiesen, die Dokumentbilder als zu speichern 
 WMF bei der Konvertierung in RTF.
 
  Speichern Sie das resultierende Dokument im RTF-Format mit`Save` -Methode und Angabe des vollständigen Pfads zur Ausgabedatei sowie der angegebenen Speicheroptionen.

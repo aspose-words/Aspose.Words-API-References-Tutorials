@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## الخطوة 4: قم بتعيين تنسيق الفقرة "الاحتفاظ بالتالي" للمستند المصدر
 
- للاحتفاظ بالفقرات في المستند المصدر معًا، يمكنك التكرار خلال كل فقرة في المستند وتعيين`KeepWithNext` الملكية ل`true`.
+للاحتفاظ بالفقرات في المستند المصدر معًا، يمكنك التكرار خلال كل فقرة في المستند وتعيين`KeepWithNext`الملكية ل`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.Save(dataDir + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
 ```
 
- In questo passaggio, salviamo il documento completo in formato TIFF utilizzando il file`Save` metodo e specificando il percorso del file di output con estensione`.tiff`.
+In questo passaggio, salviamo il documento completo in formato TIFF utilizzando il file`Save` metodo e specificando il percorso del file di output con estensione`.tiff`.
 
 ## Passaggio 4: configura le opzioni di backup per l'intervallo di pagine
 
@@ -52,7 +52,7 @@ Resolution = 160
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOptions);
 ```
 
- In quest'ultimo passaggio, salviamo l'intervallo di pagine specificato in formato TIFF utilizzando il file`Save`metodo e passando il percorso del file di output con`.tiff` estensione, insieme alle opzioni di salvataggio specificate.
+ In quest'ultimo passaggio, salviamo l'intervallo di pagine specificato in formato TIFF utilizzando il file`Save` metodo e passando il percorso del file di output con`.tiff` estensione, insieme alle opzioni di salvataggio specificate.
 
 Ora puoi eseguire il codice sorgente per ottenere un intervallo specifico di pagine dal tuo documento e salvarle come file TIFF. I file risultanti verranno salvati nella directory specificata con i nomi "WorkingWithImageSaveOptions.MultipageTiff.tiff" per il documento completo e "WorkingWithImageSaveOptions.GetTiffPageRange.tiff" per l'intervallo di pagine specificato.
 

@@ -15,7 +15,7 @@ En esta guía completa, exploraremos cómo dividir documentos en páginas HTML u
 Antes de profundizar en el código, asegúrese de cumplir con los siguientes requisitos previos:
 
 - Kit de desarrollo de Java (JDK) instalado en su sistema.
-- Aspose.Words para la biblioteca Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
+-  Aspose.Words para la biblioteca Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
 
 
 ## Introducción
@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
- Este código divide el documento en función de saltos de página y almacena cada página en el`pages` lista.
+Este código divide el documento en función de saltos de página y almacena cada página en el`pages` lista.
 
 ## Guardar como HTML
 

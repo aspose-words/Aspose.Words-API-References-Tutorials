@@ -68,7 +68,7 @@ client.Send(message);
 
 ```csharp
 
-	// Документ doc = новый документ(MyDir + "Document.docx");
+	// Документ документа = новый документ (MyDir + «Document.docx»);
 
 	Stream stream = new MemoryStream();
 	doc.Save(stream, SaveFormat.Mhtml);

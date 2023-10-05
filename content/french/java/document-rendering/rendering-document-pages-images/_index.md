@@ -84,7 +84,7 @@ Oui, Aspose.Words for Java prend en charge un large éventail de formats de docu
 
 ### Puis-je contrôler la résolution de l’image pendant le rendu ?
 
- Absolument! Aspose.Words vous permet de définir la résolution du rendu de l'image à l'aide du`setResolution` méthode dans`ImageSaveOptions`. Cela garantit que les images de sortie répondent à vos exigences de qualité.
+ Absolument! Aspose.Words vous permet de définir la résolution du rendu de l'image à l'aide du`setResolution`méthode dans`ImageSaveOptions`. Cela garantit que les images de sortie répondent à vos exigences de qualité.
 
 ### Aspose.Words est-il adapté au traitement de documents par lots ?
 

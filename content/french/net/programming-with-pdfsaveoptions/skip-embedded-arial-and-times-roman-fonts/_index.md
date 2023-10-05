@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Étape 3 : Configurer les options d'enregistrement au format PDF avec intégration de polices
 
- Pour éviter l'intégration des polices Arial et Times Roman dans le PDF généré, nous devons configurer le`PdfSaveOptions` objet et définissez le`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedAll`.
+ Pour éviter l'intégration des polices Arial et Times Roman dans le PDF généré, nous devons configurer le`PdfSaveOptions` objet et définissez le`FontEmbeddingMode`propriété à`PdfFontEmbeddingMode.EmbedAll`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
@@ -76,7 +76,7 @@ R : Pour configurer Aspose.Words for .NET afin qu'il n'intègre pas les polices
 
  Chargez le document que vous souhaitez traiter à l'aide du`Document` classe et le chemin du document spécifié.
 
- Créez une instance du`PdfSaveOptions` classe et définir le`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedAll`. Cela intégrera toutes les polices sauf Arial et Times Roman dans le fichier PDF généré.
+ Créez une instance du`PdfSaveOptions` classe et définir le`FontEmbeddingMode`propriété à`PdfFontEmbeddingMode.EmbedAll`. Cela intégrera toutes les polices sauf Arial et Times Roman dans le fichier PDF généré.
 
  Utilisez le`Save` méthode du`Document` objet pour enregistrer le document au format PDF en précisant les options d'enregistrement configurées précédemment.
 

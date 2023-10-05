@@ -83,7 +83,7 @@ A: Um die Größe eines PDF-Dokuments durch Bild-Sampling mit Aspose.Words für 
 
  Konfigurieren Sie die Optionen zum Speichern als PDF, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und Festlegen der Bild-Sampling-Optionen mithilfe der`DownsampleOptions` Eigentum. Sie können die Zielauflösung von Bildern mit festlegen`Resolution` -Eigenschaft und legen Sie einen Mindestauflösungsschwellenwert fest, oberhalb dessen Bilder nicht mit der verkleinert werden`ResolutionThreshold` Eigentum.
 
- Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document`Klasse, die den Pfad und die Speicheroptionen angibt.
+ Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.
 
 #### F: Welche Vorteile bietet die Reduzierung der PDF-Dokumentgröße durch Bildstichproben?
 A: Die Reduzierung der PDF-Dokumentgröße durch Bild-Sampling bietet folgende Vorteile:

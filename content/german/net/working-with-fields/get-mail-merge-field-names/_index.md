@@ -64,7 +64,7 @@ Damit ist unser Leitfaden zur Verwendung der Funktion „Get Merge Field Names�
 
 Beim Seriendruck in Aspose.Words handelt es sich um einen Prozess zum Zusammenführen von Daten aus einer externen Quelle (z. B. einer Excel-Tabelle oder einer Datenbank) mit einer Word-Dokumentvorlage, um personalisierte Dokumente zu erstellen. Dies erleichtert die automatisierte Erstellung von Briefen, Berichten und ähnlichen Dokumenten.
 
-#### F2: Wie erhalte ich die Liste der in einem Word-Dokument verfügbaren Seriendruckfelder?
+#### F2: Wie erhalte ich die Liste der in einem Word-Dokument verfügbaren Serienbrieffelder?
 
 Um die Liste der in einem Word-Dokument verfügbaren Serienbrieffelder zu erhalten, können Sie die folgenden Schritte ausführen:
 
@@ -98,7 +98,7 @@ foreach (string fieldName in fieldNames)
 
 A: Beim Serienbrief in Aspose.Words handelt es sich um einen Prozess zum Zusammenführen von Daten aus einer externen Quelle (z. B. Excel-Tabelle oder Datenbank) mit einer Word-Dokumentvorlage, um personalisierte Dokumente zu erstellen. Dies erleichtert die automatisierte Erstellung von Briefen, Berichten und ähnlichen Dokumenten.
 
-#### F: Wie erhalte ich die Liste der in einem Word-Dokument verfügbaren Seriendruckfelder?
+#### F: Wie erhalte ich die Liste der in einem Word-Dokument verfügbaren Serienbrieffelder?
 
 A: Um die Liste der in einem Word-Dokument verfügbaren Serienbrieffelder zu erhalten, können Sie die folgenden Schritte ausführen:
 

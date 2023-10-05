@@ -58,7 +58,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### س: كيف يمكنني إنشاء رابط تلقائي لعنوان URL في Aspose.Words؟
 
- ج: لإنشاء رابط تلقائي لعنوان URL في Aspose.Words، يمكنك استخدام`<a>` العلامة مع`href` السمة التي تحتوي على عنوان URL. على سبيل المثال، يمكنك استخدام`<a href="https://www.aspose.com">https://www.aspose.com</a>` للارتباط تلقائيًا بـ "https: //www.aspose.com".
+ج: لإنشاء رابط تلقائي لعنوان URL في Aspose.Words، يمكنك استخدام`<a>` العلامة مع`href` السمة التي تحتوي على عنوان URL. على سبيل المثال، يمكنك استخدام`<a href="https://www.aspose.com">https://www.aspose.com</a>` للارتباط تلقائيًا بـ "https: //www.aspose.com".
 
 #### س: هل من الممكن تخصيص نص العرض للارتباط التلقائي في Aspose.Words؟
 
@@ -66,4 +66,4 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### س: كيف يمكنني إضافة سمات إضافية إلى الارتباط التلقائي في Aspose.Words؟
 
-ج: لإضافة سمات إضافية إلى رابط تلقائي في Aspose.Words، يمكنك استخدام سمات HTML إضافية داخل`<a>` بطاقة شعار. على سبيل المثال، يمكنك استخدام`<a href="https://www.aspose.com" target="_blank">Link</a>` لفتح الرابط في نافذة أو علامة تبويب جديدة باستخدام` attribute target="_blank"`.
+ ج: لإضافة سمات إضافية إلى رابط تلقائي في Aspose.Words، يمكنك استخدام سمات HTML إضافية داخل`<a>` بطاقة شعار. على سبيل المثال، يمكنك استخدام`<a href="https://www.aspose.com" target="_blank">Link</a>` لفتح الرابط في نافذة أو علامة تبويب جديدة باستخدام` attribute target="_blank"`.

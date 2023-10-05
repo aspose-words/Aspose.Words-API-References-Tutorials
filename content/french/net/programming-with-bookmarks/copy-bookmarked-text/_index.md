@@ -2,7 +2,7 @@
 title: Copier le texte marqué dans un document Word
 linktitle: Copier le texte marqué dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment copier le texte d'un signet d'un document Word vers un autre document à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment copier le texte d'un signet d'un document Word vers un autre document à l'aide d'Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/copy-bookmarked-text/
@@ -62,7 +62,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ### Exemple de code source pour copier du texte marqué à l'aide d'Aspose.Words pour .NET
 
-Voici l'exemple complet de code source pour illustrer la copie de texte à partir d'un signet à l'aide d'Aspose.Words pour .NET :
+Voici l'exemple complet de code source pour illustrer la copie de texte à partir d'un signet à l'aide d'Aspose.Words for .NET :
 
 ```csharp
 
@@ -88,6 +88,42 @@ Voici l'exemple complet de code source pour illustrer la copie de texte à parti
 
 ```
 
+#### AppendBookmarkedText Code source
+
+```csharp
+
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+        {
+            // Il s'agit du paragraphe qui contient le début du signet.
+            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+
+            // Il s'agit du paragraphe qui contient la fin du signet.
+            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+
+            if (startPara == null || endPara == null)
+                throw new InvalidOperationException(
+                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+            // Limitons-nous à un scénario raisonnablement simple.
+            if (startPara.ParentNode != endPara.ParentNode)
+                throw new InvalidOperationException(
+                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+            // Nous voulons copier tous les paragraphes depuis le paragraphe de début jusqu'au paragraphe de fin (inclus),
+            // donc le nœud auquel nous nous arrêtons est celui après le paragraphe de fin.
+            Node endNode = endPara.NextSibling;
+
+            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+            {
+                //Cela crée une copie du nœud actuel et l'importe (le rend valide) dans le contexte
+                // du document de destination. Importer signifie ajuster correctement les styles et les identifiants de liste.
+                Node newNode = importer.ImportNode(curNode, true);
+
+                dstNode.AppendChild(newNode);
+            }
+        }
+
+```
 ## Conclusion
 
 Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Copier le texte mis en signet à partir d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour copier le contenu d'un signet d'un document source vers un autre document.
@@ -96,7 +132,7 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 #### Q : Quelles sont les conditions requises pour utiliser la fonctionnalité « Copier le texte avec les favoris » dans Aspose.Words pour .NET ?
 
-: Pour utiliser la fonctionnalité « Copier du texte avec des signets » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+R : Pour utiliser la fonctionnalité « Copier du texte avec des signets » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
 #### Q : Comment charger un document source dans Aspose.Words pour .NET ?
 
@@ -116,7 +152,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### Q : Comment spécifier l'emplacement de la copie du texte du signet dans un document de destination à l'aide d'Aspose.Words pour .NET ?
 
-R : Pour spécifier où vous souhaitez ajouter le texte de signet copié dans un document de destination à l'aide d'Aspose.Words for .NET, vous pouvez accéder au corps de la dernière section du document de destination. Vous pouvez utiliser le`LastSection` propriété pour accéder à la dernière section et à la`Body` propriété pour accéder au corps de cette section. Voici un exemple de code :
+ R : Pour spécifier où vous souhaitez ajouter le texte de signet copié dans un document de destination à l'aide d'Aspose.Words for .NET, vous pouvez accéder au corps de la dernière section du document de destination. Vous pouvez utiliser le`LastSection` propriété pour accéder à la dernière section et à la`Body` propriété pour accéder au corps de cette section. Voici un exemple de code :
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;

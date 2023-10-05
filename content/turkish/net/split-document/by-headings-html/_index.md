@@ -82,4 +82,4 @@ Sağlanan kaynak kodu, Word belgesinin HTML biçiminde daha küçük parçalara 
 
 #### Belgeyi birden fazla kritere göre bölebilir miyim?
 
- Evet, kriter seçeneklerini uygun şekilde birleştirerek belgeyi birden fazla kritere göre bölebilirsiniz. Örneğin, belgeyi hem başlığa hem de sayfaya göre bölebilirsiniz.`DocumentSplitCriteria` mülkiyet`HeadingParagraph | Page`. Bu, belgeyi her başlığa ve her sayfaya bölerek her iki kritere göre daha küçük bölümler oluşturacaktır.
+ Evet, kriter seçeneklerini uygun şekilde birleştirerek belgeyi birden fazla kritere göre bölebilirsiniz. Örneğin, belgeyi hem başlığa hem de sayfaya göre bölebilirsiniz.`DocumentSplitCriteria`mülkiyet`HeadingParagraph | Page`. Bu, belgeyi her başlığa ve her sayfaya bölerek her iki kritere göre daha küçük bölümler oluşturacaktır.

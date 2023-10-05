@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 
  Загрузите документ, который хотите преобразовать в PDF, используя`Document` класс и путь к документу.
 
- Создайте экземпляр`PdfSaveOptions` класс и установите`FontEmbeddingMode` собственность`PdfFontEmbeddingMode.EmbedNone`. Это отключает встраивание шрифтов Windows в созданный PDF-файл.
+ Создайте экземпляр`PdfSaveOptions` класс и установите`FontEmbeddingMode`собственность`PdfFontEmbeddingMode.EmbedNone`. Это отключает встраивание шрифтов Windows в созданный PDF-файл.
 
  Использовать`Save` метод`Document` объект для преобразования документа в PDF с указанием параметров преобразования, настроенных ранее.
 

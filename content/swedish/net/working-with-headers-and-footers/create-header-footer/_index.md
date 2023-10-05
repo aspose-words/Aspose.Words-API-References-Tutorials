@@ -112,15 +112,15 @@ currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // Det här avsnittet behöver inte en annan sidhuvud/sidfot för den första sidan, vi behöver bara en titelsida i dokumentet,
-// och sidhuvudet/sidfoten för den här sidan har redan definierats i föregående avsnitt.
+//och sidhuvudet/sidfoten för den här sidan har redan definierats i föregående avsnitt.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // Det här avsnittet visar sidhuvuden/sidfötter för föregående avsnitt som standard, anrop currentSection.HeadersFooters.LinkToPrevious(false) för att bryta denna länk,
 // sidbredden är annorlunda för det nya avsnittet, så vi måste ställa in olika cellbredder för en sidfotstabell.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-//Om vi vill använda de redan befintliga sidhuvuden/sidfötter för detta avsnitt,
-// men med några mindre ändringar kan det vara vettigt att kopiera sidhuvuden/sidfötter
+// Om vi vill använda de redan befintliga sidhuvuden/sidfötter för detta avsnitt,
+//men med några mindre ändringar kan det vara vettigt att kopiera sidhuvuden/sidfötter
 // från föregående avsnitt och tillämpa de nödvändiga ändringarna där vi vill ha dem.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
@@ -176,7 +176,7 @@ builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-//Vi använder en tabell med två celler för att göra en del av texten på raden (med sidnumrering).
+// Vi använder en tabell med två celler för att göra en del av texten på raden (med sidnumrering).
 // Att justeras till vänster och den andra delen av texten (med upphovsrätt) ska justeras till höger.
 builder.StartTable();
 
@@ -215,7 +215,7 @@ currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // Det här avsnittet behöver inte en annan sidhuvud/sidfot på första sidan vi behöver bara en titelsida i dokumentet,
-// och sidhuvudet/sidfoten för den här sidan har redan definierats i föregående avsnitt.
+//och sidhuvudet/sidfoten för den här sidan har redan definierats i föregående avsnitt.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // Det här avsnittet visar sidhuvuden/sidfötter från föregående avsnitt
@@ -225,7 +225,7 @@ currentSection.HeadersFooters.LinkToPrevious(false);
 
 // Om vi vill använda den redan befintliga sidhuvud/sidfotsuppsättningen för detta avsnitt.
 // Men med några mindre ändringar kan det vara lämpligt att kopiera sidhuvuden/sidfötter
-//från föregående avsnitt och tillämpa nödvändiga ändringar där vi vill ha dem.
+// från föregående avsnitt och tillämpa nödvändiga ändringar där vi vill ha dem.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -245,7 +245,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### F: Hur kan jag lägga till en sidfot i mitt dokument i Aspose.Words?
 
- S: För att lägga till en sidfot till ditt dokument i Aspose.Words kan du använda`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` metod. Den här metoden lägger till en primär sidfot i den första delen av ditt dokument.
+ S: För att lägga till en sidfot till ditt dokument i Aspose.Words kan du använda`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`metod. Den här metoden lägger till en primär sidfot i den första delen av ditt dokument.
 
 #### F: Hur kan jag lägga till text i min sidhuvud eller sidfot i Aspose.Words?
 
@@ -253,8 +253,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### F: Kan jag anpassa sidhuvud eller sidfotsinnehåll med bilder och sidnummer i Aspose.Words?
 
-S: Ja, du kan anpassa innehållet i sidhuvudet eller sidfoten med bilder och sidnummer i Aspose.Words. Du kan använda objekt som`Shape` att lägga till bilder och objekt som`Field` för att lägga till sidnummer i sidhuvudet eller sidfoten.
+ S: Ja, du kan anpassa innehållet i sidhuvudet eller sidfoten med bilder och sidnummer i Aspose.Words. Du kan använda objekt som`Shape` att lägga till bilder och objekt som`Field` för att lägga till sidnummer i sidhuvudet eller sidfoten.
 
 #### F: Kan jag ändra teckensnitt, storlek och färg på text i min sidhuvud eller sidfot i Aspose.Words?
 
- S: Ja, du kan ändra teckensnitt, storlek och färg på texten i sidhuvudet eller sidfoten i Aspose.Words. Du kan komma åt textformateringsegenskaper som t.ex`Font` för att ändra typsnittet,`Size` för att justera storleken, och`Color` för att ställa in textfärgen.
+ S: Ja, du kan ändra teckensnitt, storlek och färg på texten i sidhuvudet eller sidfoten i Aspose.Words. Du kan komma åt textformateringsegenskaper som t.ex`Font` för att ändra typsnittet,`Size` för att justera storleken, och`Color`för att ställa in textfärgen.

@@ -8,11 +8,11 @@ weight: 10
 url: /sv/java/document-security/keep-documents-safe-secure/
 ---
 
-denna digitala tidsålder, där information är nyckeln, är det av yttersta vikt att hålla dina dokument säkra. Oavsett om det är personliga filer, affärsdokument eller konfidentiella data, är det avgörande att skydda dem från obehörig åtkomst och potentiella hot. I den här omfattande guiden går vi igenom processen för att säkra dina dokument med Aspose.Words för Java, ett kraftfullt ordbehandlings- och dokumentmanipuleringsbibliotek.
+I denna digitala tidsålder, där information är nyckeln, är det av yttersta vikt att hålla dina dokument säkra. Oavsett om det är personliga filer, affärsdokument eller konfidentiella data, är det avgörande att skydda dem från obehörig åtkomst och potentiella hot. I den här omfattande guiden går vi igenom processen för att säkra dina dokument med Aspose.Words för Java, ett kraftfullt ordbehandlings- och dokumentmanipuleringsbibliotek.
 
 ## 1. Introduktion
 
-I denna snabba digitala värld har säkerheten för elektroniska dokument blivit en högsta prioritet för både privatpersoner och företag. Dataintrång och cyberattacker har väckt oro för känslig informations konfidentialitet och integritet. Aspose.Words för Java kommer till undsättning genom att tillhandahålla en omfattande uppsättning funktioner för att säkerställa att dina dokument förblir säkra från obehörig åtkomst.
+denna snabba digitala värld har säkerheten för elektroniska dokument blivit en högsta prioritet för både privatpersoner och företag. Dataintrång och cyberattacker har väckt oro för känslig informations konfidentialitet och integritet. Aspose.Words för Java kommer till undsättning genom att tillhandahålla en omfattande uppsättning funktioner för att säkerställa att dina dokument förblir säkra från obehörig åtkomst.
 
 ## 2. Förstå dokumentsäkerhet
 
@@ -50,7 +50,7 @@ Innan vi fortsätter med dokumentsäkerhet, låt oss först bekanta oss med Aspo
 Att installera Aspose.Words för Java är en enkel process. Följ dessa enkla steg för att lägga till biblioteket till ditt Java-projekt:
 
 1. ### Ladda ner:
- Gå till[Aspose.Releases](https://releases.aspose.com/words/java/) och ladda ner paketet Aspose.Words för Java.
+  Gå till[Aspose.Releases](https://releases.aspose.com/words/java/) och ladda ner paketet Aspose.Words för Java.
 
 2. ### Extrahera:
  Extrahera det nedladdade paketet till en lämplig plats på din dator.
@@ -84,7 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Nu när vi har laddat vårt dokument, låt oss fortsätta att tillämpa kryptering på det. Aspose.Words för Java ger ett enkelt sätt att ställa in dokumentkryptering:
 
 ```java
-//Ange ett lösenord för att öppna dokumentet
+// Ange ett lösenord för att öppna dokumentet
 doc.getWriteProtection().setPassword("yourPassword");
 
 // Ställ in krypteringsalgoritm (valfritt)
@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 Vattenmärkning kan hjälpa till att skydda ditt dokuments konfidentialitet och indikera dess status. Aspose.Words för Java erbjuder lättanvända vattenmärkningsfunktioner:
 
 ```java
-//Lägg till en synlig vattenstämpel
+// Lägg till en synlig vattenstämpel
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

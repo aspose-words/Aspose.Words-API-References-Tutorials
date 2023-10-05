@@ -113,7 +113,7 @@ Bu, Aspose.Words for .NET kullanılarak bir grafikte XY ekseni özelliklerinin t
 	// X eksenini tarih yerine kategori olacak şekilde değiştirin, böylece tüm noktalar X eksenine eşit aralıklarla yerleştirilecektir.
 	xAxis.CategoryType = AxisCategoryType.Category;
 	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; // Y ekseninin görüntü birimleri (yüzlerce) cinsinden ölçülür.
+	xAxis.CrossesAt = 3; // ekseninin görüntü birimleri (yüzlerce) cinsinden ölçülür.
 	xAxis.ReverseOrder = true;
 	xAxis.MajorTickMark = AxisTickMark.Cross;
 	xAxis.MinorTickMark = AxisTickMark.Outside;
@@ -131,7 +131,7 @@ Bu, Aspose.Words for .NET kullanılarak bir grafikte XY ekseni özelliklerinin t
 
 Bu eğitimde Aspose.Words for .NET kullanarak bir grafikte X ve Y eksenleri için özelliklerin nasıl tanımlanacağını öğrendiniz. Adım adım kılavuzu izleyerek bir grafik oluşturabilir, seri verileri ekleyebilir ve eksen özelliklerini özel gereksinimlerinizi karşılayacak şekilde özelleştirebilirsiniz. Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için kapsamlı bir API sağlar ve eksenler de dahil olmak üzere grafiğin çeşitli yönlerini değiştirmenize olanak tanır.
 
- Erişerek`ChartAxis` Grafikle ilişkili nesnelerde kategori türü, eksen kesişimleri, onay işaretleri, etiket konumları, ölçekleme ve daha fazlası gibi özellikleri değiştirebilirsiniz. Bu esneklik, verilerinizi etkili bir şekilde sunmak için grafiğin eksenlerinin görünümünü ve davranışını uyarlamanıza olanak tanır.
+Erişerek`ChartAxis` Grafikle ilişkili nesnelerde kategori türü, eksen kesişimleri, onay işaretleri, etiket konumları, ölçekleme ve daha fazlası gibi özellikleri değiştirebilirsiniz. Bu esneklik, verilerinizi etkili bir şekilde sunmak için grafiğin eksenlerinin görünümünü ve davranışını uyarlamanıza olanak tanır.
 
 Aspose.Words for .NET'i kullanarak grafik oluşturma ve özelleştirme yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir ve zengin görselleştirmelerle profesyonel görünümlü belgelerin oluşturulmasını otomatikleştirebilirsiniz.
 
@@ -147,10 +147,10 @@ Aspose.Words for .NET'i, Visual Studio'daki NuGet paket yöneticisini kullanarak
 Evet, Aspose.Words for .NET bir grafiğin çeşitli yönlerini özelleştirmek için kapsamlı yetenekler sağlar. Eksen özelliklerini tanımlamanın yanı sıra grafik türünü, veri serisini, açıklamayı, başlığı, çizim alanını, veri etiketlerini ve grafiğin diğer birçok öğesini değiştirebilirsiniz. API, grafiğin görünümü ve davranışı üzerinde ayrıntılı kontrol sunar.
 
 #### S4. Aspose.Words for .NET'i kullanarak farklı türde grafikler oluşturabilir miyim?
-Evet, Aspose.Words for .NET alan, çubuk, çizgi, pasta, dağılım ve daha fazlasını içeren çok çeşitli grafik türlerini destekler. Şunu kullanabilirsiniz:`ChartType` Word belgesine grafik şekli eklerken istenen grafik türünü belirtmek için numaralandırma.
+ Evet, Aspose.Words for .NET alan, çubuk, çizgi, pasta, dağılım ve daha fazlasını içeren çok çeşitli grafik türlerini destekler. Şunu kullanabilirsiniz:`ChartType` Word belgesine grafik şekli eklerken istenen grafik türünü belirtmek için numaralandırma.
 
 #### S5. Grafiği farklı formatlarda kaydedebilir miyim?
- Evet, Aspose.Words for .NET, grafiği içeren belgeyi DOCX, PDF, HTML ve daha fazlası gibi çeşitli formatlarda kaydetmenize olanak tanır. Gereksinimlerinize göre uygun formatı seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne.
+Evet, Aspose.Words for .NET, grafiği içeren belgeyi DOCX, PDF, HTML ve daha fazlası gibi çeşitli formatlarda kaydetmenize olanak tanır. Gereksinimlerinize göre uygun formatı seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne.
 
 #### S6. Bu teknikleri bir belgedeki birden fazla grafiğe uygulayabilir miyim?
  Evet, her grafik için gerekli adımları tekrarlayarak bu teknikleri bir belgedeki birden fazla grafiğe uygulayabilirsiniz. Ayrı oluşturabilirsiniz`Chart` Ve`ChartAxis` Her grafik için nesneleri seçin ve özelliklerini buna göre özelleştirin. Aspose.Words for .NET, tek bir belgede birden fazla grafikle Kelime İşleme için tam destek sağlar.

@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Legacy control character.doc");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
 ```
 
- det här steget konfigurerar vi OOXML-sparalternativ genom att skapa ett nytt`OoxmlSaveOptions`objekt. Vi anger önskat sparaformat (här,`FlatOpc` ) och aktivera`KeepLegacyControlChars` möjlighet att behålla äldre kontrolltecken.
+ I det här steget konfigurerar vi OOXML-sparalternativ genom att skapa ett nytt`OoxmlSaveOptions` objekt. Vi anger önskat sparaformat (här,`FlatOpc` ) och aktivera`KeepLegacyControlChars` möjlighet att behålla äldre kontrolltecken.
 
 ## Steg 4: Spara dokumentet med äldre kontrolltecken
 
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 I den här handledningen utforskade vi funktionaliteten för att bevara äldre kontrolltecken när du sparar ett dokument med Aspose.Words för .NET. Vi har lärt oss hur man bevarar de specialtecken som kan vara viktiga för korrekt formatering eller visning av dokument.
 
- Att bevara äldre kontrolltecken är särskilt användbart vid ordbehandling med dokument som använder äldre eller specifika funktioner, som speciella kontrolltecken. Genom att aktivera`KeepLegacyControlChars`när du sparar dokumentet ser du till att dessa tecken bevaras.
+ Att bevara äldre kontrolltecken är särskilt användbart vid ordbehandling med dokument som använder äldre eller specifika funktioner, som speciella kontrolltecken. Genom att aktivera`KeepLegacyControlChars` när du sparar dokumentet ser du till att dessa tecken bevaras.
 
 Aspose.Words för .NET erbjuder en rad flexibla och kraftfulla säkerhetskopieringsalternativ för att möta dina dokumenthanteringsbehov. Genom att använda lämpliga alternativ kan du anpassa säkerhetskopieringsprocessen för att bevara de specifika egenskaperna hos dina dokument.
 

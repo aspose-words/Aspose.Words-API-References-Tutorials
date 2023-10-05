@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
 
-Cet article fournit un guide étape par étape sur la façon d'utiliser la fonctionnalité d'incorporation de polices dans un document PDF d'Aspose.Words for .NET. Nous allons parcourir l'extrait de code et expliquer chaque partie en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment intégrer toutes les polices dans un document et générer un PDF avec les polices intégrées à l'aide d'Aspose.Words pour .NET.
+Cet article fournit un guide étape par étape sur la façon d'utiliser la fonctionnalité d'incorporation de polices dans un document PDF d'Aspose.Words pour .NET. Nous allons parcourir l'extrait de code et expliquer chaque partie en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment intégrer toutes les polices dans un document et générer un PDF avec les polices intégrées à l'aide d'Aspose.Words pour .NET.
 
 Avant de commencer, assurez-vous que la bibliothèque Aspose.Words for .NET est installée et configurée dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 
@@ -77,7 +77,7 @@ R : Pour intégrer toutes les polices dans un document PDF à l'aide d'Aspose.W
 
  Chargez le document que vous souhaitez traiter à l'aide du`Document` classe et le chemin du document.
 
- Configurez les options d'enregistrement PDF en créant une instance du`PdfSaveOptions` classe et définir le`EmbedFullFonts` propriété à`true`. Cela garantit que toutes les polices utilisées dans le document seront intégrées dans le fichier PDF généré.
+ Configurez les options d'enregistrement PDF en créant une instance du`PdfSaveOptions` classe et définir le`EmbedFullFonts`propriété à`true`. Cela garantit que toutes les polices utilisées dans le document seront intégrées dans le fichier PDF généré.
 
  Enregistrez le document au format PDF avec les polices intégrées à l'aide du`Save` méthode du`Document`objet, en spécifiant le nom du fichier de sortie et les options de sauvegarde configurées précédemment.
 

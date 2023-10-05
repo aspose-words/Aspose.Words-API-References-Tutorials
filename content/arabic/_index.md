@@ -52,6 +52,13 @@ is_root: true
 - [أمن الوثائق](./java/document-security/)
 - [تقسيم الوثيقة](./java/document-splitting/)
 - [مراجعة الوثيقة](./java/document-revision/)
+- [تحميل المستندات وحفظها](./java/document-loading-and-saving/)
+- [التلاعب بالوثيقة](./java/document-manipulation/)
+- [تحويل المستندات وتصديرها](./java/document-conversion-and-export/)
+- [الترخيص والتكوين](./java/licensing-and-configuration/)
+- [استخدام عناصر الوثيقة](./java/using-document-elements/)
+- [طباعة المستندات](./java/printing-documents/)
+- [تقديم المستندات](./java/rendering-documents/)
 
 ## Aspose.Words دروس إدارة المستندات للغة بايثون
 {{% alert color="primary" %}}

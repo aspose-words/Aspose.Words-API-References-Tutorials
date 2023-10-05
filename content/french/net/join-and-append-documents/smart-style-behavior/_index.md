@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Étape 4 : Définir les options de comportement de style intelligent
 
-Pour activer le comportement de style intelligent lors de l'opération d'ajout, vous devez créer une instance de`ImportFormatOptions` et réglez le`SmartStyleBehavior` propriété à`true`.
+Pour activer le comportement de style intelligent lors de l'opération d'ajout, vous devez créer une instance de`ImportFormatOptions` et réglez le`SmartStyleBehavior`propriété à`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };

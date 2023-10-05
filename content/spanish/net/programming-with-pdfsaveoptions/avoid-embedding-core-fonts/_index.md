@@ -77,7 +77,7 @@ R: Para configurar Aspose.Words para .NET para que no incruste fuentes principal
 
  Cargue el documento de Word que desea convertir a PDF usando el`Document` clase y la ruta del documento especificada.
 
- Crear una instancia del`PdfSaveOptions` clase y establecer el`UseCoreFonts` propiedad a`true`. Esto evitará la incrustación de fuentes base en el archivo PDF generado.
+ Crear una instancia del`PdfSaveOptions` clase y establecer el`UseCoreFonts`propiedad a`true`. Esto evitará la incrustación de fuentes base en el archivo PDF generado.
 
  Utilizar el`Save` método de la`Document` objeto para guardar el documento en formato PDF especificando las opciones de conversión configuradas anteriormente.
 

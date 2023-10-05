@@ -53,7 +53,7 @@ doc.save(stream, options);
 بمجرد إنشاء الصورة المصغرة، يمكنك حفظها في موقعك المفضل.
 
 ```java
-//كود جافا لحفظ الصورة المصغرة التي تم إنشاؤها
+// كود جافا لحفظ الصورة المصغرة التي تم إنشاؤها
 FileOutputStream outputStream = new FileOutputStream("thumbnail.png");
 stream.writeTo(outputStream);
 ```
@@ -82,4 +82,4 @@ stream.writeTo(outputStream);
 
 ### أين يمكنني العثور على وثائق إضافية لـ Aspose.Words لـ Java؟
 
-يمكنك العثور على الوثائق الشاملة ومراجع واجهة برمجة التطبيقات (API) على صفحة وثائق Aspose.Words for Java[هنا](https://reference.aspose.com/words/java/).
+ يمكنك العثور على الوثائق الشاملة ومراجع واجهة برمجة التطبيقات (API) على صفحة وثائق Aspose.Words for Java[هنا](https://reference.aspose.com/words/java/).

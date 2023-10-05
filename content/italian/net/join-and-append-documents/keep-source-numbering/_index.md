@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: mantieni la numerazione della fonte durante l'importazione
 
-Per preservare la formattazione della numerazione dei paragrafi numerati del documento di origine, creare un'istanza di`ImportFormatOptions` e impostare`KeepSourceNumbering` A`true` . Usare un`NodeImporter` per importare i nodi dal documento di origine al documento di destinazione, specificando`ImportFormatMode.KeepSourceFormatting` e il`importFormatOptions`.
+ Per preservare la formattazione della numerazione dei paragrafi numerati del documento di origine, creare un'istanza di`ImportFormatOptions` e impostare`KeepSourceNumbering` A`true` . Usare un`NodeImporter` per importare i nodi dal documento di origine al documento di destinazione, specificando`ImportFormatMode.KeepSourceFormatting` e il`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Passaggio 4: importa e aggiungi paragrafi
 
- Scorri i paragrafi nel documento di origine e importa ogni paragrafo nel documento di destinazione utilizzando il file`importer`. Aggiungi i nodi importati al corpo del documento di destinazione.
+Scorri i paragrafi nel documento di origine e importa ogni paragrafo nel documento di destinazione utilizzando il file`importer`. Aggiungi i nodi importati al corpo del documento di destinazione.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;

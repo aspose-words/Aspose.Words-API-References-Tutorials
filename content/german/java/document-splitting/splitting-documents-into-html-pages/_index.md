@@ -15,7 +15,7 @@ In dieser umfassenden Anleitung erfahren Sie, wie Sie mit Aspose.Words für Java
 Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 - Java Development Kit (JDK) auf Ihrem System installiert.
-- Aspose.Words für Java-Bibliothek. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/java/).
+-  Aspose.Words für Java-Bibliothek. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/java/).
 
 
 ## Einführung
@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
- Dieser Code teilt das Dokument basierend auf Seitenumbrüchen auf und speichert jede Seite im`pages` Liste.
+Dieser Code teilt das Dokument basierend auf Seitenumbrüchen auf und speichert jede Seite im`pages` Liste.
 
 ## Als HTML speichern
 

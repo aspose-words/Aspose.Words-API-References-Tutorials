@@ -118,7 +118,7 @@ Wie wir gesehen haben, stehen für die Datenerfassung verschiedene Arten von For
 
 ### Texteingabefelder
 
-Texteingabefelder sind vielseitig und werden häufig zur Erfassung von Textinformationen verwendet. Sie können zum Sammeln von Namen, Adressen, Kommentaren und mehr verwendet werden. Zum Erstellen eines Texteingabefelds müssen dessen Position und Größe angegeben werden, wie im folgenden Codeausschnitt dargestellt:
+Texteingabefelder sind vielseitig und werden häufig zur Erfassung von Textinformationen verwendet. Sie können zum Sammeln von Namen, Adressen, Kommentaren und mehr verwendet werden. Zum Erstellen eines Texteingabefelds müssen dessen Position und Größe angegeben werden, wie im folgenden Codeausschnitt gezeigt:
 
 ```python
 # Create a new text input form field

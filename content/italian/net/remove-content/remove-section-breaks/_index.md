@@ -38,7 +38,7 @@ Per rimuovere le interruzioni di sezione, eseguiremo il ciclo di tutte le sezion
 // Passa attraverso tutte le sezioni partendo da quella che precede l'ultima e passando alla prima sezione.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-    //Copia il contenuto della sezione corrente all'inizio dell'ultima sezione.
+    // Copia il contenuto della sezione corrente all'inizio dell'ultima sezione.
     doc.LastSection.PrependContent(doc.Sections[i]);
     // Rimuovi la sezione copiata.
     doc.Sections[i].Remove();
@@ -65,7 +65,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 // Passa attraverso tutte le sezioni partendo da quella che precede l'ultima e passando alla prima sezione.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-	//Copia il contenuto della sezione corrente all'inizio dell'ultima sezione.
+	// Copia il contenuto della sezione corrente all'inizio dell'ultima sezione.
 	doc.LastSection.PrependContent(doc.Sections[i]);
 	// Rimuovi la sezione copiata.
 	doc.Sections[i].Remove();

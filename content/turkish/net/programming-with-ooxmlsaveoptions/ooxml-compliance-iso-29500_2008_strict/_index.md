@@ -33,7 +33,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- Bu adımda, OOXML kaydetme seçeneklerini kullanarak yapılandırıyoruz.`OptimizeFor` Ve`OoxmlSaveOptions`yöntemler. Kullanarak Word 2016 sürümü için belge uyumluluğunu optimize ediyoruz`OptimizeFor` ve uyumluluğu ayarlayın`Iso29500_2008_Strict` kullanarak`Compliance`.
+ Bu adımda, OOXML kaydetme seçeneklerini kullanarak yapılandırıyoruz.`OptimizeFor` Ve`OoxmlSaveOptions` yöntemler. Kullanarak Word 2016 sürümü için belge uyumluluğunu optimize ediyoruz`OptimizeFor`ve uyumluluğu ayarlayın`Iso29500_2008_Strict` kullanarak`Compliance`.
 
 ## Adım 4: Belgeyi Ooxml Iso 29500_2008_Strict uyumluluğuyla kaydetme
 

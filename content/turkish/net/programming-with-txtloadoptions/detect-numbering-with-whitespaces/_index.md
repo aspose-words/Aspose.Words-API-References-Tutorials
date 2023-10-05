@@ -45,7 +45,7 @@ Bu adımda, beyaz boşlukların takip ettiği liste numaralarını içeren bir m
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- Bu adımda belge yükleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`TxtLoadOptions` nesneyi ayarlayın ve`DetectNumberingWithWhitespaces` mülkiyet`true`. Bu, Aspose.Words'ün, arkasında boşluklar olsa bile liste numaralarını algılamasına olanak tanır.
+ Bu adımda belge yükleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`TxtLoadOptions` nesneyi ayarlayın ve`DetectNumberingWithWhitespaces`mülkiyet`true`. Bu, Aspose.Words'ün, arkasında boşluklar olsa bile liste numaralarını algılamasına olanak tanır.
 
 ## Adım 4: Belgeyi yükleme ve kaydetme
 

@@ -42,7 +42,7 @@ Nu när vi har konfigurerat sparalternativen kan vi fortsätta att konvertera do
 doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
-I det här exemplet sparar vi det konverterade dokumentet som "WorkingWithOdtSaveOptions.MeasureUnit.odt" med de angivna sparalternativen.
+det här exemplet sparar vi det konverterade dokumentet som "WorkingWithOdtSaveOptions.MeasureUnit.odt" med de angivna sparalternativen.
 
 ### Exempel på källkod för OdtSaveOptions med funktionalitet "Mätenhet" med Aspose.Words för .NET
 
@@ -64,4 +64,4 @@ doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 
 ## Slutsats
 
-den här guiden har vi förklarat hur man konverterar ett Word-dokument till ODT genom att ange måttenheten med hjälp av OdtSaveOptions-sparalternativen med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Genom att specificera måttenheten vid konvertering till ODT kan du styra formateringen och dimensionerna för det resulterande dokumentet enligt dina specifika behov.
+I den här guiden har vi förklarat hur man konverterar ett Word-dokument till ODT genom att ange måttenheten med hjälp av OdtSaveOptions-sparalternativen med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Genom att specificera måttenheten vid konvertering till ODT kan du styra formateringen och dimensionerna för det resulterande dokumentet enligt dina specifika behov.

@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 3: pasar a un párrafo específico
 
- El`MoveToParagraph` El método se utiliza para colocar el creador de documentos en un párrafo específico dentro del documento. Se necesitan dos parámetros: el índice del párrafo de destino y la posición del carácter dentro de ese párrafo (0 representa el comienzo del párrafo).
+ El`MoveToParagraph` El método se utiliza para colocar el creador de documentos en un párrafo específico dentro del documento. Se necesitan dos parámetros: el índice del párrafo de destino y la posición del carácter dentro de ese párrafo (0 representa el inicio del párrafo).
 
 En el ejemplo proporcionado, pasamos al tercer párrafo (índice 2) del documento:
 

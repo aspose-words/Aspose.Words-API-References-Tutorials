@@ -30,5 +30,5 @@ Ces didacticiels aideront les développeurs à maîtriser les techniques essenti
 | [Développer le formatage des cellules et des lignes à partir du style](./expand-formatting-on-cells-and-row-from-style/) | Guide étape par étape pour étendre la mise en forme aux cellules et aux lignes à partir d'un style de tableau à l'aide d'Aspose.Words pour .NET. |
 | [Créer un style de tableau](./create-table-style/) | Guide étape par étape pour créer un style de tableau personnalisé à l’aide d’Aspose.Words for .NET. |
 | [Définir la mise en forme conditionnelle](./define-conditional-formatting/) | Guide étape par étape pour définir la mise en forme conditionnelle dans un tableau à l'aide d'Aspose.Words pour .NET. |
-| [Définir le formatage des cellules du tableau](./set-table-cell-formatting/) | Guide étape par étape pour définir le formatage des cellules d’un tableau à l’aide d’Aspose.Words for .NET. |
-| [Définir le formatage des lignes du tableau](./set-table-row-formatting/) | Guide étape par étape pour définir le formatage des lignes d’un tableau à l’aide d’Aspose.Words for .NET. |
+| [Définir le formatage des cellules du tableau](./set-table-cell-formatting/) | Guide étape par étape pour définir le formatage des cellules d’un tableau à l’aide d’Aspose.Words pour .NET. |
+| [Définir le formatage des lignes du tableau](./set-table-row-formatting/) | Guide étape par étape pour définir le formatage des lignes d’un tableau à l’aide d’Aspose.Words pour .NET. |

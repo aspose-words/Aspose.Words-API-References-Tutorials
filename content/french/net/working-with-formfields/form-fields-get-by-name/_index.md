@@ -32,13 +32,13 @@ FormFieldCollection documentFormFields = doc.Range.FormFields;
 Vous pouvez récupérer les champs du formulaire soit par index, soit par nom. Dans cet exemple, nous récupérons un champ de formulaire en utilisant les deux méthodes :
 
 ```csharp
-FormField formField1 = documentFormFields[3]; //Récupération par index
+FormField formField1 = documentFormFields[3]; // Récupération par index
 FormField formField2 = documentFormFields["Text2"]; // Récupération par nom
 ```
 
 ## Étape 3 : Modification des propriétés du champ de formulaire
 
- Une fois que vous avez récupéré les champs du formulaire, vous pouvez modifier leurs propriétés selon vos besoins. Dans cet exemple, nous modifions la taille de la police de`formField1` à 20 et la couleur de la police de`formField2` au rouge :
+Une fois que vous avez récupéré les champs du formulaire, vous pouvez modifier leurs propriétés selon vos besoins. Dans cet exemple, nous modifions la taille de la police de`formField1` à 20 et la couleur de la police de`formField2` au rouge :
 
 ```csharp
 formField1.Font.Size = 20;
@@ -82,7 +82,7 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Que se passe-t-il si le champ de formulaire portant le nom spécifié n'existe pas dans le document ?
 
- R : Si le champ de formulaire portant le nom spécifié n'existe pas dans le document, le`Document.Range.FormFields[name]` la méthode reviendra`null`Vous pouvez vérifier ce résultat pour gérer les cas où le champ du formulaire est introuvable.
+ R : Si le champ de formulaire portant le nom spécifié n'existe pas dans le document, le`Document.Range.FormFields[name]` la méthode reviendra`null`. Vous pouvez vérifier ce résultat pour gérer les cas où le champ du formulaire est introuvable.
 
 #### Q : Comment puis-je modifier les propriétés d'un champ de formulaire trouvé ?
 

@@ -45,7 +45,7 @@ string textDoc = "Full stop delimiters:\n" +
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- في هذه الخطوة، نقوم بتكوين خيارات تحميل المستندات. نحن نخلق جديدا`TxtLoadOptions` الكائن وتعيين`DetectNumberingWithWhitespaces` الملكية ل`true`. سيسمح هذا لـ Aspose.Words باكتشاف أرقام القائمة حتى لو كانت متبوعة بمسافات بيضاء.
+ في هذه الخطوة، نقوم بتكوين خيارات تحميل المستندات. نحن نخلق جديدا`TxtLoadOptions` الكائن وتعيين`DetectNumberingWithWhitespaces`الملكية ل`true`. سيسمح هذا لـ Aspose.Words باكتشاف أرقام القائمة حتى لو كانت متبوعة بمسافات بيضاء.
 
 ## الخطوة 4: تحميل المستند وحفظه
 

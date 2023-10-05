@@ -76,7 +76,7 @@ Document doc = new Document(dataDir + "Office math.docx");
 // Obtenir l'élément OfficeMath
 OfficeMath officeMath = (OfficeMath)doc.GetChild(NodeType.OfficeMath, 0, true);
 
-//Configurer les propriétés de l'équation mathématique
+// Configurer les propriétés de l'équation mathématique
 officeMath.DisplayType = OfficeMathDisplayType.Display;
 officeMath.Justification = OfficeMathJustification.Left;
 

@@ -78,7 +78,7 @@ R: Un nodo de párrafo en un documento XML se utiliza para representar un párra
 
 #### P: ¿Cómo agregar un nodo de párrafo a un documento XML existente?
 
- R: Para agregar un nodo de párrafo a un documento XML existente, puede utilizar el`appendChild` Método para agregar el nodo de párrafo como hijo de otro elemento en el documento XML. Por ejemplo, puede agregarlo como elemento secundario del elemento raíz del documento.
+ R: Para agregar un nodo de párrafo a un documento XML existente, puede utilizar el`appendChild`Método para agregar el nodo de párrafo como hijo de otro elemento en el documento XML. Por ejemplo, puede agregarlo como elemento secundario del elemento raíz del documento.
 
 #### P: ¿Cómo definir el contenido de un nodo de párrafo?
 

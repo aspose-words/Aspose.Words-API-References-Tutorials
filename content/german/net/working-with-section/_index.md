@@ -11,7 +11,7 @@ Die Textverarbeitung mit Abschnitten bietet eine wertvolle Ressource für Entwic
 
 Die Tutorials behandeln die Grundlagen der Textverarbeitung mit Abschnitten, einschließlich der Erstellung neuer Abschnitte, dem Hinzufügen von Inhalten, dem Ändern von Layouteinstellungen und mehr. Sie erfahren, wie Sie Abschnitte bearbeiten, um Ihre Dokumentstruktur anzupassen und professionelle Layouts zu erstellen.
 
-Die Tutorials konzentrieren sich auch auf das Löschen und Ändern bestehender Abschnitte. Sie erfahren, wie Sie bestimmte Abschnitte löschen, Abschnitte neu anordnen, Layouteinstellungen ändern und andere erweiterte Vorgänge ausführen, um Ihre Word-Dokumente an Ihre spezifischen Anforderungen anzupassen.
+Die Tutorials konzentrieren sich auch auf das Löschen und Ändern vorhandener Abschnitte. Sie erfahren, wie Sie bestimmte Abschnitte löschen, Abschnitte neu anordnen, Layouteinstellungen ändern und andere erweiterte Vorgänge ausführen, um Ihre Word-Dokumente an Ihre spezifischen Anforderungen anzupassen.
 
 Wenn Sie diese Tutorials befolgen, können Sie Abschnitte in Ihren Word-Dokumenten mit Aspose.Words für .NET problemlos verwalten. Unabhängig davon, ob Sie neue Dokumente erstellen, vorhandene Dokumente ändern oder Abschnitte anpassen möchten, vermitteln Ihnen diese Tutorials das Wissen und die Fähigkeiten, um diese Aufgaben erfolgreich zu erledigen.
 

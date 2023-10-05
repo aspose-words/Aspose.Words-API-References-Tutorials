@@ -29,7 +29,7 @@ Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 Aspose.Words for Java'yı kullanarak boş bir belge oluşturarak başlayalım:
 
 ```java
-// Boş bir belge oluşturmak için Java kodu
+//Boş bir belge oluşturmak için Java kodu
 Document doc = new Document();
 ```
 

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/apply-license/apply-license-from-stream/
 ---
 
-I denna steg-för-steg handledning kommer du att lära dig hur du ansöker om en licens från en stream med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med de nödvändiga kodavsnitten. I slutet av denna handledning kommer du att kunna ansöka om en licens för att låsa upp alla funktioner i Aspose.Words.
+denna steg-för-steg handledning kommer du att lära dig hur du ansöker om en licens från en stream med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med de nödvändiga kodavsnitten. I slutet av denna handledning kommer du att kunna ansöka om en licens för att låsa upp alla funktioner i Aspose.Words.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:
@@ -77,7 +77,7 @@ Nu kan du med säkerhet ansöka om en licens från en ström och utnyttja de kra
 
 #### F: Var kan jag hitta licensdokumentationen för Aspose.Words för .NET?
 
-S: Du kan hitta licensdokumentationen för Aspose. Ord för .NET på[API-referenser](https://reference.aspose.com/words/net/). Dokumentationen innehåller detaljerade instruktioner och exempel för att ansöka om licenser, inklusive tillämpning av licenser från filer.
+ S: Du kan hitta licensdokumentationen för Aspose. Ord för .NET på[API-referenser](https://reference.aspose.com/words/net/). Dokumentationen innehåller detaljerade instruktioner och exempel för att ansöka om licenser, inklusive tillämpning av licenser från filer.
 
 #### F: Vilka filformat stöder Aspose.Words for .NET för licensfiler?
 

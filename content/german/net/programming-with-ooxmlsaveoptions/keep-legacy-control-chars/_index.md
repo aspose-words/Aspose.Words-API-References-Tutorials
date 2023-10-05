@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Legacy control character.doc");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
 ```
 
-In diesem Schritt konfigurieren wir die OOXML-Speicheroptionen, indem wir eine neue erstellen`OoxmlSaveOptions`Objekt. Wir geben das gewünschte Speicherformat an (hier`FlatOpc` ) und aktivieren Sie die`KeepLegacyControlChars` Option zum Beibehalten älterer Steuerzeichen.
+ In diesem Schritt konfigurieren wir die OOXML-Speicheroptionen, indem wir eine neue erstellen`OoxmlSaveOptions` Objekt. Wir geben das gewünschte Speicherformat an (hier`FlatOpc` ) und aktivieren Sie die`KeepLegacyControlChars` Option zum Beibehalten älterer Steuerzeichen.
 
 ## Schritt 4: Speichern des Dokuments mit alten Steuerzeichen
 
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 In diesem Tutorial haben wir die Funktionalität der Beibehaltung älterer Steuerzeichen beim Speichern eines Dokuments mit Aspose.Words für .NET untersucht. Wir haben gelernt, wie man Sonderzeichen beibehält, die für die ordnungsgemäße Formatierung oder Anzeige eines Dokuments wichtig sein können.
 
- Die Beibehaltung älterer Steuerzeichen ist besonders nützlich bei der Textverarbeitung mit Dokumenten, die ältere oder spezifische Funktionen wie spezielle Steuerzeichen verwenden. Durch die Aktivierung des`KeepLegacyControlChars`Mit dieser Option beim Speichern des Dokuments stellen Sie sicher, dass diese Zeichen erhalten bleiben.
+ Die Beibehaltung älterer Steuerzeichen ist besonders nützlich bei der Textverarbeitung mit Dokumenten, die ältere oder spezifische Funktionen wie spezielle Steuerzeichen verwenden. Durch die Aktivierung des`KeepLegacyControlChars` Mit dieser Option beim Speichern des Dokuments stellen Sie sicher, dass diese Zeichen erhalten bleiben.
 
 Aspose.Words für .NET bietet eine Reihe flexibler und leistungsstarker Sicherungsoptionen, um Ihre Anforderungen an die Dokumentenbearbeitung zu erfüllen. Mithilfe der entsprechenden Optionen können Sie den Backup-Prozess so anpassen, dass die spezifischen Eigenschaften Ihrer Dokumente erhalten bleiben.
 

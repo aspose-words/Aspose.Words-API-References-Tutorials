@@ -39,7 +39,7 @@ foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- Qui utilizziamo il documento per recuperare la prima tabella e quindi scorrere tutte le righe della tabella utilizzando un ciclo foreach. All'interno del ciclo, disabilitiamo l'interruzione di riga per ogni riga impostando il file`RowFormat.AllowBreakAcrossPages` proprietà a`false`.
+ Qui utilizziamo il documento per recuperare la prima tabella e quindi scorrere tutte le righe della tabella utilizzando un ciclo foreach. All'interno del ciclo, disabilitiamo l'interruzione di riga per ogni riga impostando il file`RowFormat.AllowBreakAcrossPages`proprietà a`false`.
 
 ## Passaggio 4: salvataggio del documento modificato
 Infine, dobbiamo salvare il documento modificato con l'interruzione di riga della tabella disabilitata. Utilizza il seguente codice:

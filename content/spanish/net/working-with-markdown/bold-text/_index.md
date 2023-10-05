@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Paso 2: texto en negrita
 
- Podemos poner el texto en negrita configurando el valor del generador de documentos.`Font.Bold` propiedad a`true`.
+ Podemos poner el texto en negrita configurando el valor del generador de documentos.`Font.Bold`propiedad a`true`.
 
 ```csharp
 builder.Font.Bold = true;
@@ -53,11 +53,11 @@ builder.Writeln("This text will be Bold");
 
 #### P: ¿Cómo puedo poner el texto en negrita en Aspose.Words?
 
- R: Para poner el texto en negrita en Aspose.Words, puede utilizar el`Font.Bold` propiedad de la`Run`objeto. Puede establecer esta propiedad en`true` a texto específico en negrita. Por ejemplo, puedes usar`run.Font.Bold=true` poner en negrita el texto dentro del`Run` objeto.
+ R: Para poner el texto en negrita en Aspose.Words, puede utilizar el`Font.Bold` propiedad de la`Run` objeto. Puede establecer esta propiedad en`true` a texto específico en negrita. Por ejemplo, puedes usar`run.Font.Bold=true` poner en negrita el texto dentro del`Run` objeto.
 
 #### P: ¿Es posible poner en negrita varios fragmentos de texto en el mismo párrafo?
 
- R: Sí, puedes poner en negrita varios fragmentos de texto en un solo párrafo usando múltiples`Run` objetos. Puedes crear múltiples`Run` objetos y establecer el`Font.Bold` propiedad a`true` para cada objeto, ponga en negrita las partes deseadas del texto. Luego puedes agregarlos al párrafo usando el`Paragraph.AppendChild(run)` método.
+R: Sí, puedes poner en negrita varios fragmentos de texto en un solo párrafo usando múltiples`Run` objetos. Puedes crear múltiples`Run` objetos y establecer el`Font.Bold`propiedad a`true` para cada objeto, ponga en negrita las partes deseadas del texto. Luego puedes agregarlos al párrafo usando el`Paragraph.AppendChild(run)` método.
 
 #### P: ¿Puedo poner en negrita el texto de una tabla o celda en Aspose.Words?
 

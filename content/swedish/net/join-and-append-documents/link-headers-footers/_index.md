@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Ställ in det bifogade dokumentet så att det visas på en ny sida
 
-För att säkerställa att innehållet från källdokumentet visas på en ny sida i måldokumentet måste du ställa in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.NewPage`.
+ För att säkerställa att innehållet från källdokumentet visas på en ny sida i måldokumentet måste du ställa in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Steg 4: Länka sidhuvuden och sidfötter till föregående avsnitt
 
- För att länka sidhuvuden och sidfötter i källdokumentet till föregående avsnitt i måldokumentet kan du använda`LinkToPrevious` metod för`HeadersFooters` samling. Genom att passera`true` som parameter åsidosätter du befintliga sidhuvuden eller sidfötter i källdokumentet.
+För att länka sidhuvuden och sidfötter i källdokumentet till föregående avsnitt i måldokumentet kan du använda`LinkToPrevious` metod för`HeadersFooters` samling. Genom att passera`true` som parameter åsidosätter du befintliga sidhuvuden eller sidfötter i källdokumentet.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

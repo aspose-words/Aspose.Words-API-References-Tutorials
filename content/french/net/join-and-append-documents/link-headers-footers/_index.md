@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : Configurer le document annexé pour qu'il apparaisse sur une nouvelle page
 
-Pour garantir que le contenu du document source apparaît sur une nouvelle page du document de destination, vous devez définir le`SectionStart` propriété de la première section du document source à`SectionStart.NewPage`.
+ Pour garantir que le contenu du document source apparaît sur une nouvelle page du document de destination, vous devez définir le`SectionStart` propriété de la première section du document source à`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Étape 4 : lier les en-têtes et les pieds de page à la section précédente
 
- Pour lier les en-têtes et pieds de page du document source à la section précédente du document destination, vous pouvez utiliser le`LinkToPrevious` méthode du`HeadersFooters` collection. En passant`true` en tant que paramètre, vous remplacez les en-têtes ou pieds de page existants dans le document source.
+Pour lier les en-têtes et pieds de page du document source à la section précédente du document destination, vous pouvez utiliser le`LinkToPrevious` méthode du`HeadersFooters` collection. En passant`true` en tant que paramètre, vous remplacez les en-têtes ou pieds de page existants dans le document source.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

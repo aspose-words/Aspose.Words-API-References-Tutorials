@@ -54,7 +54,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesine onay kutusu for
 
 ### SSS'ler
 
-#### S: Tek bir belgeye birden çok onay kutusu form alanı ekleyebilir miyim?
+#### S: Tek bir belgeye birden fazla onay kutusu form alanı ekleyebilir miyim?
 
 C: Kesinlikle! Aspose.Words for .NET'i kullanarak bir Word belgesine gerektiği kadar onay kutusu form alanı ekleyebilirsiniz. Birden fazla etkileşimli onay kutusu eklemek için ekleme işlemini tekrarlamanız yeterlidir.
 

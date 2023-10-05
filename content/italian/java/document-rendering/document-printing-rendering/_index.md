@@ -41,7 +41,7 @@ Stampare un documento utilizzando Aspose.Words per Java è semplice. Ecco un ese
 doc.print("printerName");
 ```
 
-È possibile specificare il nome della stampante come argomento del file`print` metodo. Ciò invierà il documento alla stampante specificata per la stampa.
+ È possibile specificare il nome della stampante come argomento del file`print`metodo. Ciò invierà il documento alla stampante specificata per la stampa.
 
 ## Rendering di documenti
 

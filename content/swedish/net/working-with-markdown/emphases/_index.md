@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-markdown/emphases/
 ---
 
-det här exemplet kommer vi att förklara hur man använder emphases med Aspose.Words för .NET. betoningar används för att framhäva vissa delar av texten, som fetstil och kursiv stil.
+I det här exemplet kommer vi att förklara hur man använder emphases med Aspose.Words för .NET. betoningar används för att framhäva vissa delar av texten, som fetstil och kursiv stil.
 
 ## Steg 1: Dokumentinitiering
 
@@ -109,11 +109,11 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### F: Hur markerar jag text med Markdown?
 
-S: För att markera text med Markdown, omge bara texten med lämpliga symboler. Använda sig av`*` eller`_` för kursiv stil,`**` eller`__` för fetstil, och`~~` för genomstrykning.
+ S: För att markera text med Markdown, omge bara texten med lämpliga symboler. Använda sig av`*` eller`_` för kursiv stil,`**` eller`__` för fetstil, och`~~` för genomstrykning.
 
 #### F: Kan vi kombinera olika höjdpunkter i samma text?
 
- S: Ja, det är möjligt att kombinera olika höjdpunkter i samma text. Du kan till exempel göra ett ord i fetstil och kursiv stil genom att använda båda`**` och`*` runt ordet.
+ S: Ja, det är möjligt att kombinera olika höjdpunkter i samma text. Du kan till exempel göra ett ord i fetstil och kursiv stil genom att använda båda`**` och`*`runt ordet.
 
 #### F: Vilka framhävningsalternativ finns i Markdown?
 

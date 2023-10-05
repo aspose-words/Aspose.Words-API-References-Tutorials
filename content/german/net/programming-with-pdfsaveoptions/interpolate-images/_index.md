@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Schritt 3: Konfigurieren Sie Optionen zum Speichern als PDF mit Frame-Interpolation
 
- Um die Interpolation von Bildern beim Konvertieren in PDF zu ermöglichen, müssen wir das konfigurieren`PdfSaveOptions` Objekt durch Festlegen des`InterpolateImages` Eigentum zu`true`.
+ Um die Interpolation von Bildern beim Konvertieren in PDF zu ermöglichen, müssen wir das konfigurieren`PdfSaveOptions` Objekt durch Festlegen des`InterpolateImages`Eigentum zu`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
@@ -74,7 +74,7 @@ A: Um die Bildinterpolation beim Konvertieren in PDF mit Aspose.Words für .NET 
 
  Erstellen Sie eine Instanz von`Document` Klasse, die den Pfad zum Word-Dokument angibt.
 
- Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`InterpolateImages` Eigentum zu`true` um die Bildinterpolation zu ermöglichen.
+ Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`InterpolateImages`Eigentum zu`true` um die Bildinterpolation zu ermöglichen.
 
  Benutzen Sie die`Save` Methode der`Document`Klasse zum Speichern des Dokuments im PDF-Format durch Angabe von Speicheroptionen.
 

@@ -89,8 +89,8 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Créez une liste numérotée basée sur l'un des modèles de liste Microsoft Word
-// et appliquez-le au paragraphe actuel du générateur de documents.
+// Créez une liste numérotée basée sur l'un des modèles de liste Microsoft Word
+//et appliquez-le au paragraphe actuel du générateur de documents.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 // Il y a neuf niveaux dans cette liste, essayons-les tous.
@@ -101,7 +101,7 @@ for (int i = 0; i < 9; i++)
 }
 
 // Créez une liste à puces basée sur l'un des modèles de liste Microsoft Word
-// et appliquez-le au paragraphe actuel du générateur de documents.
+//et appliquez-le au paragraphe actuel du générateur de documents.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
 for (int i = 0; i < 9; i++)

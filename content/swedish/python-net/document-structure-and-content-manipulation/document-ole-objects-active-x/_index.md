@@ -15,7 +15,7 @@ dagens digitala tidsålder är det avgörande att skapa rika och interaktiva dok
 
 Innan vi fördjupar oss i att bädda in OLE-objekt och ActiveX-kontroller, låt oss se till att du har de nödvändiga verktygen på plats:
 
-- Python-miljö konfigurerad
+- Python-miljö inställd
 - Aspose.Words för Python-biblioteket installerat
 - En grundläggande förståelse för Word-dokumentstruktur
 

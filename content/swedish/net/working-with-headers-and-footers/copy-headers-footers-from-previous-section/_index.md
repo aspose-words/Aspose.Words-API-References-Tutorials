@@ -42,7 +42,7 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
 
 ## Steg 4: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 doc.Save("OutputDocument.docx");

@@ -78,7 +78,7 @@ A: Um ein Word-Dokument mit Aspose.Words für .NET in PDF 1.7 zu konvertieren, g
 
  Konfigurieren Sie die Konvertierungsoptionen als PDF, indem Sie eine Instanz davon erstellen`PdfSaveOptions`Klasse und geben Sie die Version des PDF-Standards an, den Sie verwenden möchten`Compliance` Eigenschaft mit dem Wert`PdfCompliance. Pdf17` um eine PDF-Datei zu generieren, die dem PDF 1.7-Standard entspricht.
 
- Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document`Klasse, die den Pfad und die Speicheroptionen angibt.
+ Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.
 
 #### F: Welche Vorteile bietet die Konvertierung in PDF 1.7 mit Aspose.Words für .NET?
 A: Die Vorteile der Konvertierung in PDF 1.7 mit Aspose.Words für .NET sind:

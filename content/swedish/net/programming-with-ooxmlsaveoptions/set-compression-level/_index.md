@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/programming-with-ooxmlsaveoptions/set-compression-level/
 ---
-den här handledningen kommer vi att utforska den medföljande C#-källkoden för att ställa in komprimeringsnivån när du sparar ett dokument med Aspose.Words för .NET. Denna funktion låter dig styra komprimeringsnivån för det genererade dokumentet.
+I den här handledningen kommer vi att utforska den medföljande C#-källkoden för att ställa in komprimeringsnivån när du sparar ett dokument med Aspose.Words för .NET. Denna funktion låter dig styra komprimeringsnivån för det genererade dokumentet.
 
 ## Steg 1: Sätta upp miljön
 
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveO
 
 I den här handledningen utforskade vi funktionaliteten för att ställa in komprimeringsnivån när du sparar ett dokument med Aspose.Words för .NET. Genom att ange lämplig komprimeringsnivå kan du optimera dokumentstorlek och genereringshastighet.
 
- De`OoxmlSaveOptions`klass ger flexibilitet för att kontrollera komprimeringsnivån genom att ställa in`CompressionLevel` egendom till lämpligt värde, som t.ex`SuperFast`. Detta gör att du kan hitta rätt balans mellan filstorlek och säkerhetskopieringshastighet baserat på dina specifika behov.
+ De`OoxmlSaveOptions` klass ger flexibilitet för att kontrollera komprimeringsnivån genom att ställa in`CompressionLevel` egendom till lämpligt värde, som t.ex`SuperFast`. Detta gör att du kan hitta rätt balans mellan filstorlek och säkerhetskopieringshastighet baserat på dina specifika behov.
 
 Att använda komprimering kan vara fördelaktigt när du behöver minska storleken på genererade filer, särskilt för stora dokument. Detta kan göra det lättare att lagra, dela och överföra dokument.
 

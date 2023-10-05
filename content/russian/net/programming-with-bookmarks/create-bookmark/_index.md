@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### Вопрос: Как добавить текст внутри закладки с помощью Aspose.Words для .NET?
 
-О: Чтобы добавить текст внутри закладки с помощью Aspose.Words for .NET, вы можете использовать команду`Write` метод`DocumentBuilder` объект, определяющий добавляемый текст. Вот пример кода:
+ О: Чтобы добавить текст внутри закладки с помощью Aspose.Words for .NET, вы можете использовать команду`Write` метод`DocumentBuilder`объект, определяющий добавляемый текст. Вот пример кода:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

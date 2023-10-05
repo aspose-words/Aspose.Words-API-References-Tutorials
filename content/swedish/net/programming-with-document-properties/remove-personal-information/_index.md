@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInforma
 
 ## Steg 3: Radera personlig information
 
- Nu kommer vi att möjliggöra borttagning av personlig information genom att ställa in`RemovePersonalInformation` egendom till`true`. Använd följande kod:
+ Nu kommer vi att möjliggöra borttagning av personlig information genom att ställa in`RemovePersonalInformation`egendom till`true`. Använd följande kod:
 
 ```csharp
 doc.RemovePersonalInformation = true;

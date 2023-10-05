@@ -51,7 +51,7 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Código fuente de ejemplo para Untangle Row Bookmarks usando Aspose.Words para .NET**
+### Código fuente de ejemplo para Untangle Row Bookmarks usando Aspose.Words para .NET
 
 Aquí está el código fuente de muestra completo para desenredar los marcadores de las líneas usando Aspose.Words para .NET:
 
@@ -76,6 +76,38 @@ Aquí está el código fuente de muestra completo para desenredar los marcadores
 
 ```
 
+#### Desenredar el código fuente
+```csharp
+
+private void Untangle(Document doc)
+        {
+            foreach (Bookmark bookmark in doc.Range.Bookmarks)
+            {
+                // Obtenga la fila principal del marcador y del nodo final del marcador.
+                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
+                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+                // Si ambas filas se encuentran bien y el inicio y el final del marcador están contenidos en filas adyacentes,
+                // mueva el nodo final del marcador al final del último párrafo en la última celda de la fila superior.
+                if (row1 != null && row2 != null && row1.NextSibling == row2)
+                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+            }
+        }
+
+```
+
+#### Código fuente de DeleteRowByBookmark
+```csharp
+
+ private void DeleteRowByBookmark(Document doc, string bookmarkName)
+        {
+            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+            row?.Remove();
+        }
+
+```
 ## Conclusión
 
 En este artículo, exploramos el código fuente de C# para comprender cómo utilizar la función Untangle Row Bookmarks de Aspose.Words para .NET. Seguimos una guía paso a paso para desenredar los marcadores de filas y eliminar una fila específica sin dañar otros marcadores.

@@ -39,7 +39,7 @@ foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- Aquí usamos el documento para buscar la primera tabla y luego recorrer todas las filas de la tabla usando un bucle foreach. Dentro del bucle, deshabilitamos la división de filas para cada fila configurando el`RowFormat.AllowBreakAcrossPages` propiedad a`false`.
+ Aquí usamos el documento para buscar la primera tabla y luego recorrer todas las filas de la tabla usando un bucle foreach. Dentro del bucle, deshabilitamos la división de filas para cada fila configurando el`RowFormat.AllowBreakAcrossPages`propiedad a`false`.
 
 ## Paso 4: guardar el documento modificado
 Finalmente, debemos guardar el documento modificado con el salto de línea de la tabla deshabilitado. Utilice el siguiente código:

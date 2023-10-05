@@ -29,7 +29,7 @@ Antes de comenzar, asegúrese de tener implementados los siguientes requisitos p
 Comencemos creando un documento en blanco usando Aspose.Words para Java:
 
 ```java
-// Código Java para crear un documento en blanco.
+//Código Java para crear un documento en blanco.
 Document doc = new Document();
 ```
 

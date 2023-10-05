@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 Dopo aver estratto e manipolato il contenuto, puoi salvarlo in un nuovo documento:
 
 ```java
-// Salva il contenuto estratto in un nuovo documento
+//Salva il contenuto estratto in un nuovo documento
 doc.save("extracted_content.docx");
 ```
 

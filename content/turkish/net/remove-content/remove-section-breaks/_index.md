@@ -38,7 +38,7 @@ Bölüm sonlarını kaldırmak için, son bölümden önceki bölümden başlay�
 // Son bölümden önceki bölümden başlayarak ilk bölüme doğru ilerleyerek tüm bölümler arasında geçiş yapın.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-    //Geçerli bölümün içeriğini son bölümün başına kopyalayın.
+    // Geçerli bölümün içeriğini son bölümün başına kopyalayın.
     doc.LastSection.PrependContent(doc.Sections[i]);
     // Kopyalanan bölümü kaldırın.
     doc.Sections[i].Remove();
@@ -65,7 +65,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 // Son bölümden önceki bölümden başlayarak ilk bölüme doğru ilerleyerek tüm bölümler arasında geçiş yapın.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-	//Geçerli bölümün içeriğini son bölümün başına kopyalayın.
+	// Geçerli bölümün içeriğini son bölümün başına kopyalayın.
 	doc.LastSection.PrependContent(doc.Sections[i]);
 	// Kopyalanan bölümü kaldırın.
 	doc.Sections[i].Remove();

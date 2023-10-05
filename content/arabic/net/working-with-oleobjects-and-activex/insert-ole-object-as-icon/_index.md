@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 3: قم بإدراج كائن OLE كرمز
- استخدم منشئ المستندات`InsertOleObjectAsIcon` طريقة لإدراج كائن OLE كرمز في المستند. حدد مسار ملف OLE وعلامة العرض ومسار الرمز واسم الكائن المضمن.
+ استخدم منشئ المستندات`InsertOleObjectAsIcon`طريقة لإدراج كائن OLE كرمز في المستند. حدد مسار ملف OLE وعلامة العرض ومسار الرمز واسم الكائن المضمن.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### س. كيفية إنشاء مستند جديد ومولد المستندات في Aspose.Words لـ .NET؟
 
- ج: يمكنك إنشاء مستند جديد باستخدام`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder`فصل. هنا مثال :
+ ج: يمكنك إنشاء مستند جديد باستخدام`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder` فصل. هنا مثال :
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### س. كيفية حفظ المستند مع إدراج كائن OLE كرمز؟
 
- ج: استخدم الوثيقة`Save`طريقة حفظ المستند في ملف . هنا مثال :
+ ج: استخدم الوثيقة`Save` طريقة حفظ المستند في ملف . هنا مثال :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

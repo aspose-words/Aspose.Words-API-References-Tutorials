@@ -64,7 +64,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// حدد أنه في حالة تعارض الترقيم في مستندات المصدر والوجهة،
-	// ثم سيتم استخدام الترقيم من المستند المصدر.
+	//ثم سيتم استخدام الترقيم من المستند المصدر.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

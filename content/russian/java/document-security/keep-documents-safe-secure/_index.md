@@ -50,7 +50,7 @@ url: /ru/java/document-security/keep-documents-safe-secure/
 Установка Aspose.Words для Java — простой процесс. Выполните следующие простые шаги, чтобы добавить библиотеку в свой проект Java:
 
 1. ### Скачать:
- Перейти к[Aspose.Релизы](https://releases.aspose.com/words/java/) и загрузите пакет Aspose.Words для Java.
+  Перейти к[Aspose.Релизы](https://releases.aspose.com/words/java/) и загрузите пакет Aspose.Words для Java.
 
 2. ### Извлекать:
  Извлеките загруженный пакет в удобное место на вашем компьютере.
@@ -84,7 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Теперь, когда наш документ загружен, давайте применим к нему шифрование. Aspose.Words для Java предоставляет простой способ установки шифрования документа:
 
 ```java
-//Установите пароль для открытия документа
+// Установите пароль для открытия документа
 doc.getWriteProtection().setPassword("yourPassword");
 
 // Установите алгоритм шифрования (необязательно)
@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 Водяные знаки могут помочь защитить конфиденциальность вашего документа и указать его статус. Aspose.Words для Java предлагает простые в использовании функции создания водяных знаков:
 
 ```java
-//Добавьте видимый водяной знак
+// Добавьте видимый водяной знак
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     //Быстрый и печатный доступ к первой строке таблицы.
+     // Быстрый и печатный доступ к первой строке таблицы.
      table.FirstRow?.Remove();
 
      // Быстрый и печатный доступ к последней строке таблицы.

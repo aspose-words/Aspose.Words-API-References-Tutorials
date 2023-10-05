@@ -48,7 +48,7 @@ Aspose.Words le permite conservar encabezados, pies de página y configuraciones
 
 ### Requisitos previos
 
-Antes de instalar Aspose.Words para Python, debe tener Python instalado en su sistema. Puede descargar Python desde Aspose.Releases (https://releases.aspose.com/words/python/) y siga las instrucciones de instalación.
+Antes de instalar Aspose.Words para Python, debe tener Python instalado en su sistema. Puede descargar Python desde Aspose.Releases(https://releases.aspose.com/words/python/) y siga las instrucciones de instalación.
 
 ### Pasos de instalación
 

@@ -113,7 +113,7 @@ Ceci termine la mise en œuvre de la définition des propriétés de l’axe XY 
 	// Changez l'axe X pour qu'il soit catégorie au lieu de date, afin que tous les points soient placés à intervalles égaux sur l'axe X.
 	xAxis.CategoryType = AxisCategoryType.Category;
 	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; // Mesuré en unités d'affichage de l'axe Y (centaines).
+	xAxis.CrossesAt = 3; //Mesuré en unités d'affichage de l'axe Y (centaines).
 	xAxis.ReverseOrder = true;
 	xAxis.MajorTickMark = AxisTickMark.Cross;
 	xAxis.MinorTickMark = AxisTickMark.Outside;
@@ -131,7 +131,7 @@ Ceci termine la mise en œuvre de la définition des propriétés de l’axe XY 
 
 Dans ce didacticiel, vous avez appris à définir les propriétés des axes X et Y dans un graphique à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape, vous pouvez créer un graphique, ajouter des données de série et personnaliser les propriétés des axes pour répondre à vos besoins spécifiques. Aspose.Words for .NET fournit une API complète pour le traitement de mots avec des graphiques dans des documents Word, vous permettant de manipuler divers aspects du graphique, y compris les axes.
 
- En accédant au`ChartAxis` objets associés au graphique, vous pouvez modifier des propriétés telles que le type de catégorie, les croix des axes, les graduations, les positions des étiquettes, la mise à l'échelle, etc. Cette flexibilité vous permet d'adapter l'apparence et le comportement des axes du graphique pour présenter efficacement vos données.
+En accédant au`ChartAxis` objets associés au graphique, vous pouvez modifier des propriétés telles que le type de catégorie, les croix des axes, les graduations, les positions des étiquettes, la mise à l'échelle, etc. Cette flexibilité vous permet d'adapter l'apparence et le comportement des axes du graphique pour présenter efficacement vos données.
 
 En utilisant Aspose.Words pour .NET, vous pouvez intégrer de manière transparente des fonctionnalités de création et de personnalisation de graphiques dans vos applications .NET et automatiser la génération de documents d'aspect professionnel avec des visualisations riches.
 
@@ -147,10 +147,10 @@ Vous pouvez installer Aspose.Words pour .NET en le téléchargeant à l'aide du 
 Oui, Aspose.Words for .NET offre des fonctionnalités étendues pour personnaliser divers aspects d'un graphique. En plus de définir les propriétés des axes, vous pouvez modifier le type de graphique, les séries de données, la légende, le titre, la zone de tracé, les étiquettes de données et de nombreux autres éléments du graphique. L'API offre un contrôle précis sur l'apparence et le comportement des graphiques.
 
 #### Q4. Puis-je créer différents types de graphiques à l’aide d’Aspose.Words pour .NET ?
-Oui, Aspose.Words for .NET prend en charge un large éventail de types de graphiques, notamment les aires, les barres, les lignes, les secteurs, les nuages de points, etc. Vous pouvez utiliser le`ChartType` énumération pour spécifier le type de graphique souhaité lors de l’insertion d’une forme de graphique dans un document Word.
+ Oui, Aspose.Words for .NET prend en charge un large éventail de types de graphiques, notamment les aires, les barres, les lignes, les secteurs, les nuages de points, etc. Vous pouvez utiliser le`ChartType` énumération pour spécifier le type de graphique souhaité lors de l’insertion d’une forme de graphique dans un document Word.
 
 #### Q5. Puis-je enregistrer le graphique dans différents formats ?
- Oui, Aspose.Words for .NET vous permet d'enregistrer le document contenant le graphique dans différents formats, tels que DOCX, PDF, HTML, etc. Vous pouvez choisir le format approprié en fonction de vos besoins et utiliser le`Save` méthode du`Document` objet pour enregistrer le document.
+Oui, Aspose.Words for .NET vous permet d'enregistrer le document contenant le graphique dans différents formats, tels que DOCX, PDF, HTML, etc. Vous pouvez choisir le format approprié en fonction de vos besoins et utiliser le`Save` méthode du`Document` objet pour enregistrer le document.
 
 #### Q6. Puis-je appliquer ces techniques à plusieurs graphiques dans un document ?
  Oui, vous pouvez appliquer ces techniques à plusieurs graphiques dans un document en répétant les étapes nécessaires pour chaque graphique. Vous pouvez créer des`Chart` et`ChartAxis` objets pour chaque graphique et personnalisez leurs propriétés en conséquence. Aspose.Words for .NET offre une prise en charge complète du traitement de mots avec plusieurs graphiques dans un seul document.

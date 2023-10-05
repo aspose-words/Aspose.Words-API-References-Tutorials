@@ -56,7 +56,7 @@ Aquí está el ejemplo de código fuente completo para desenredar marcadores ani
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		//Si ambas filas se encuentran bien y el inicio y el final del marcador están contenidos en filas adyacentes,
+		// Si ambas filas se encuentran bien y el inicio y el final del marcador están contenidos en filas adyacentes,
 		// mueva el nodo final del marcador al final del último párrafo en la última celda de la fila superior.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

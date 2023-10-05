@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## Passaggio 3: utilizzare la funzione Ignora testo all'interno dei campi
 
- Per ignorare il testo all'interno dei campi nelle operazioni successive, possiamo usare a`FindReplaceOptions` oggetto e impostare il`IgnoreFields` proprietà a`true`:
+ Per ignorare il testo all'interno dei campi nelle operazioni successive, possiamo usare a`FindReplaceOptions` oggetto e impostare il`IgnoreFields`proprietà a`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -50,7 +50,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Passaggio 5: visualizzazione dell'output del documento modificato
 
-Dopo aver applicato la ricerca e sostituzione, possiamo visualizzare il contenuto modificato del documento utilizzando il file`GetText` metodo:
+ Dopo aver applicato la ricerca e sostituzione, possiamo visualizzare il contenuto modificato del documento utilizzando il file`GetText` metodo:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## Passaggio 6: modifica delle opzioni per includere i campi
 
-includiamo il testo all'interno dei campi nel risultato di output, possiamo modificare le opzioni per non ignorare i campi. Per questo imposteremo il`IgnoreFields` proprietà a`false`:
+ includiamo il testo all'interno dei campi nel risultato di output, possiamo modificare le opzioni per non ignorare i campi. Per questo imposteremo il`IgnoreFields`proprietà a`false`:
 
 ```csharp
 options.IgnoreFields = false;
@@ -128,7 +128,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 #### D: Come posso ignorare il testo all'interno dei campi in Aspose.Words per .NET?
 
-R: Per ignorare il testo all'interno dei campi durante le operazioni successive, puoi utilizzare a`FindReplaceOptions` oggetto e impostare il`IgnoreFields` proprietà a`true`:
+ R: Per ignorare il testo all'interno dei campi durante le operazioni successive, puoi utilizzare a`FindReplaceOptions` oggetto e impostare il`IgnoreFields`proprietà a`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };

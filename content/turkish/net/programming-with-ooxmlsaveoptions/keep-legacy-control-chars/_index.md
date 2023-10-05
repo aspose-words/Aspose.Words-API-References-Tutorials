@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Legacy control character.doc");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
 ```
 
-Bu adımda yeni bir OOXML kaydetme seçeneklerini yapılandırıyoruz.`OoxmlSaveOptions`nesne. İstediğiniz kaydetme formatını belirtiyoruz (burada,`FlatOpc` ) ve etkinleştirin`KeepLegacyControlChars` eski kontrol karakterlerini koruma seçeneği.
+ Bu adımda yeni bir OOXML kaydetme seçeneklerini yapılandırıyoruz.`OoxmlSaveOptions` nesne. İstediğiniz kaydetme formatını belirtiyoruz (burada,`FlatOpc` ) ve etkinleştirin`KeepLegacyControlChars` eski kontrol karakterlerini koruma seçeneği.
 
 ## Adım 4: Belgeyi eski kontrol karakterleriyle kaydetme
 
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi kaydederken eski kontrol karakterlerini korumanın işlevselliğini araştırdık. Belgenin doğru biçimlendirilmesi veya görüntülenmesi açısından önemli olabilecek özel karakterlerin nasıl korunacağını öğrendik.
 
- Eski kontrol karakterlerini korumak, özel kontrol karakterleri gibi daha eski veya belirli özellikleri kullanan belgelerle Sözcük İşleme yaparken özellikle kullanışlıdır. Etkinleştirerek`KeepLegacyControlChars`seçeneğini kullanarak belgeyi kaydederken bu karakterlerin korunmasını sağlarsınız.
+ Eski kontrol karakterlerini korumak, özel kontrol karakterleri gibi daha eski veya belirli özellikleri kullanan belgelerle Sözcük İşleme yaparken özellikle kullanışlıdır. Etkinleştirerek`KeepLegacyControlChars` seçeneğini kullanarak belgeyi kaydederken bu karakterlerin korunmasını sağlarsınız.
 
 Aspose.Words for .NET, belge düzenleme ihtiyaçlarınızı karşılamak için bir dizi esnek ve güçlü yedekleme seçeneği sunar. Uygun seçenekleri kullanarak yedekleme işlemini belgelerinizin belirli özelliklerini koruyacak şekilde özelleştirebilirsiniz.
 

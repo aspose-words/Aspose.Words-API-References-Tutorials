@@ -76,7 +76,7 @@ Document doc = new Document(dataDir + "Office math.docx");
 // OfficeMath öğesini edinin
 OfficeMath officeMath = (OfficeMath)doc.GetChild(NodeType.OfficeMath, 0, true);
 
-//Matematiksel denklemin özelliklerini yapılandırma
+// Matematiksel denklemin özelliklerini yapılandırma
 officeMath.DisplayType = OfficeMathDisplayType.Display;
 officeMath.Justification = OfficeMathJustification.Left;
 

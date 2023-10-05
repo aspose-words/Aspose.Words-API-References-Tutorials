@@ -15,7 +15,7 @@ url: /ar/java/document-splitting/splitting-documents-into-html-pages/
 قبل أن نتعمق في الكود، تأكد من توفر المتطلبات الأساسية التالية:
 
 - تم تثبيت Java Development Kit (JDK) على نظامك.
-- Aspose.Words لمكتبة جافا. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/java/).
+-  Aspose.Words لمكتبة جافا. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/java/).
 
 
 ## مقدمة
@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
- يقوم هذا الرمز بتقسيم المستند بناءً على فواصل الصفحات ويخزن كل صفحة في ملف`pages` قائمة.
+يقوم هذا الرمز بتقسيم المستند بناءً على فواصل الصفحات ويخزن كل صفحة في ملف`pages` قائمة.
 
 ## الحفظ بتنسيق HTML
 

@@ -56,11 +56,63 @@ Här är det fullständiga exemplet på källkoden för att visa eller dölja et
 
 ```
 
+#### ShowHideBookmarkedContent källkod
+
+```csharp
+
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+        {
+            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+            DocumentBuilder builder = new DocumentBuilder(doc);
+            builder.MoveToDocumentEnd();
+
+            // {IF "{MERGEFIELD bookmark}" = "sant" "" ""}
+            Field field = builder.InsertField("IF \"", null);
+            builder.MoveTo(field.Start.NextSibling);
+            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+            builder.Write("\" = \"true\" ");
+            builder.Write("\"");
+            builder.Write("\"");
+            builder.Write(" \"\"");
+
+            Node currentNode = field.Start;
+            bool flag = true;
+            while (currentNode != null && flag)
+            {
+                if (currentNode.NodeType == NodeType.Run)
+                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                        flag = false;
+
+                Node nextNode = currentNode.NextSibling;
+
+                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+                currentNode = nextNode;
+            }
+
+            Node endNode = bm.BookmarkEnd;
+            flag = true;
+            while (currentNode != null && flag)
+            {
+                if (currentNode.NodeType == NodeType.FieldEnd)
+                    flag = false;
+
+                Node nextNode = currentNode.NextSibling;
+
+                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+                endNode = currentNode;
+                currentNode = nextNode;
+            }
+
+            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+        }
+		
+```
 ## Slutsats
 
 I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Visa göm bokmärken i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att visa eller dölja ett specifikt bokmärke i ett dokument.
 
-### Vanliga frågor för att visa gömma bokmärken i word-dokument
+### Vanliga frågor för att visa gömma bokmärken i Word-dokument
 
 #### F: Kan jag visa eller dölja flera bokmärken i samma dokument?
 

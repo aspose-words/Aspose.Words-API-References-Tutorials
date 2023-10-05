@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: configurar las opciones de formato de importación
 
- Crear una instancia del`ImportFormatOptions` clase y establecer el`IgnoreTextBoxes` propiedad a`false`. Esto garantiza que los cuadros de texto se incluyan durante el proceso de adición conservando su formato.
+ Crear una instancia del`ImportFormatOptions` clase y establecer el`IgnoreTextBoxes`propiedad a`false`. Esto garantiza que los cuadros de texto se incluyan durante el proceso de adición conservando su formato.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Шаг 2. Загрузите документ
- Загрузите документ Word, содержащий рисунок Smart Art, с помощью`Document` конструктор класса.
+Загрузите документ Word, содержащий рисунок Smart Art, с помощью`Document` конструктор класса.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");

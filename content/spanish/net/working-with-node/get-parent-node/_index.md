@@ -62,7 +62,7 @@ R: El nodo principal en Node.js se refiere al siguiente nodo superior en la jera
 
 #### P: ¿Cómo obtener el nodo principal de un nodo específico?
 
- R: Para obtener el nodo principal de un nodo específico, puede utilizar el`parentNode` propiedad del nodo. Esta propiedad devuelve el nodo padre del nodo actual.
+R: Para obtener el nodo principal de un nodo específico, puede utilizar el`parentNode` propiedad del nodo. Esta propiedad devuelve el nodo padre del nodo actual.
 
 #### P: ¿Cómo comprobar si un nodo tiene un nodo principal?
 
@@ -74,4 +74,4 @@ R: El nodo principal en Node.js se refiere al siguiente nodo superior en la jera
 
 #### P: ¿Cómo explorar la jerarquía de los nodos principales?
 
- R: Para recorrer la jerarquía de los nodos principales, puede iterar desde un nodo específico utilizando el`parentNode`propiedad hasta llegar al nodo raíz del documento.
+ R: Para recorrer la jerarquía de los nodos principales, puede iterar desde un nodo específico utilizando el`parentNode` propiedad hasta llegar al nodo raíz del documento.

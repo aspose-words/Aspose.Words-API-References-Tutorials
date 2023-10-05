@@ -137,4 +137,4 @@ doc
 	doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-¡Eso es todo! Ha diseñado con éxito una forma dentro de una celda de una tabla en un documento de Word utilizando Aspose.Words para .NET.
+¡Eso es todo! Ha diseñado con éxito una forma dentro de una celda de una tabla en un documento de Word usando Aspose.Words para .NET.

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-footnote-and-endnote/set-footnote-and-end-note-position/
 ---
 
-denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att ställa in fotnoters och slutnoters position i ett Word-dokument. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+I denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att ställa in fotnoters och slutnoters position i ett Word-dokument. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
  För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -32,7 +32,7 @@ doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
 
 ## Steg 3: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
@@ -58,7 +58,7 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Hur kan jag placera fotnoter och slutnoter i Aspose.Words?
 
- S: För att placera fotnoter och slutnoter i Aspose.Words måste du använda`FootnoteOptions` klass och`Position` fast egendom. Du kan ställa in den här egenskapen till vilket värde du vill, t.ex`BottomOfPage` (längst ner på sidan) eller`EndOfSection`(i slutet av avsnittet).
+ S: För att placera fotnoter och slutnoter i Aspose.Words måste du använda`FootnoteOptions` klass och`Position` fast egendom. Du kan ställa in den här egenskapen till vilket värde du vill, t.ex`BottomOfPage` (längst ner på sidan) eller`EndOfSection` (i slutet av avsnittet).
 
 #### F: Är det möjligt att anpassa positionen för fotnoter och slutnoter för varje sida eller avsnitt i dokumentet?
 

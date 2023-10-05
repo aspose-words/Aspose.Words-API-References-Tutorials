@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### F: Wie füge ich mit Aspose.Words für .NET Text in ein Lesezeichen ein?
 
-A: Um mit Aspose.Words für .NET Text in ein Lesezeichen einzufügen, können Sie Folgendes verwenden`Write` Methode der`DocumentBuilder` Objekt, das den hinzuzufügenden Text angibt. Hier ist ein Beispielcode:
+ A: Um mit Aspose.Words für .NET Text in ein Lesezeichen einzufügen, können Sie Folgendes verwenden`Write` Methode der`DocumentBuilder`Objekt, das den hinzuzufügenden Text angibt. Hier ist ein Beispielcode:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

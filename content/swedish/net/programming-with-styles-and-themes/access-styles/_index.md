@@ -50,7 +50,7 @@ foreach(Style style in styles)
 }
 ```
 
- I det här sista steget går vi igenom varje stil i kollektionen med hjälp av en`foreach`slinga. Vi visar namnet på varje stil på konsolen och sammanfogar dem med kommatecken för bättre läsbarhet.
+ I det här sista steget går vi igenom varje stil i kollektionen med hjälp av en`foreach` slinga. Vi visar namnet på varje stil på konsolen och sammanfogar dem med kommatecken för bättre läsbarhet.
 
 Nu kan du köra källkoden för att komma åt stilar i ett dokument och visa deras namn på konsolen. Den här funktionen kan vara användbar för att analysera stilar i ett dokument, utföra specifika operationer på vissa stilar eller helt enkelt få information om tillgängliga stilar.
 
@@ -61,7 +61,7 @@ Document doc = new Document();
 
 string styleName = "";
 
-// Få stilsamling från dokumentet.
+//Få stilsamling från dokumentet.
 StyleCollection styles = doc.Styles;
 foreach (Style style in styles)
 {

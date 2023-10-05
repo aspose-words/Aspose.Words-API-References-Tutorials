@@ -70,7 +70,7 @@ Detta slutför implementeringen av att infoga ett kolumndiagram med Aspose.Words
 
 ## Slutsats
 
-I den här handledningen har du lärt dig hur du infogar ett kolumndiagram i ett Word-dokument med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden och använda den medföljande källkoden kan du skapa ett nytt dokument, infoga ett kolumndiagram, lägga till seriedata och spara dokumentet med diagrammet.
+den här handledningen har du lärt dig hur du infogar ett kolumndiagram i ett Word-dokument med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden och använda den medföljande källkoden kan du skapa ett nytt dokument, infoga ett kolumndiagram, lägga till seriedata och spara dokumentet med diagrammet.
 
 Aspose.Words för .NET tillhandahåller ett kraftfullt API för ordbehandling med diagram i Word-dokument. Kolumndiagram används ofta för att visa och jämföra data mellan olika kategorier eller grupper. Med Aspose.Words för .NET kan du enkelt skapa kolumndiagram som effektivt visualiserar dina data och ger värdefulla insikter.
 

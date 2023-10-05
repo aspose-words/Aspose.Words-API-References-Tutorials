@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## Paso 3: uso de la función Ignorar texto dentro de campos
 
- Para ignorar el texto dentro de los campos en operaciones posteriores, podemos usar un`FindReplaceOptions` objeto y establecer el`IgnoreFields` propiedad a`true`:
+ Para ignorar el texto dentro de los campos en operaciones posteriores, podemos usar un`FindReplaceOptions` objeto y establecer el`IgnoreFields`propiedad a`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -50,7 +50,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Paso 5: Ver el resultado del documento modificado
 
-Después de aplicar la búsqueda y reemplazo, podemos mostrar el contenido modificado del documento usando el`GetText` método:
+ Después de aplicar la búsqueda y reemplazo, podemos mostrar el contenido modificado del documento usando el`GetText` método:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## Paso 6: cambiar las opciones para incluir campos
 
-Incluimos el texto dentro de los campos en el resultado de salida, podemos cambiar las opciones para no ignorar los campos. Para ello estableceremos el`IgnoreFields` propiedad a`false`:
+ Incluimos el texto dentro de los campos en el resultado de salida, podemos cambiar las opciones para no ignorar los campos. Para ello estableceremos el`IgnoreFields`propiedad a`false`:
 
 ```csharp
 options.IgnoreFields = false;
@@ -128,7 +128,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 #### P: ¿Cómo puedo ignorar el texto dentro de los campos en Aspose.Words para .NET?
 
-R: Para ignorar el texto dentro de los campos durante operaciones posteriores, puede utilizar un`FindReplaceOptions` objeto y establecer el`IgnoreFields` propiedad a`true`:
+ R: Para ignorar el texto dentro de los campos durante operaciones posteriores, puede utilizar un`FindReplaceOptions` objeto y establecer el`IgnoreFields`propiedad a`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3. Adım: Güncellenmiş "Son Yazdırılan" Özelliğiyle PDF Olarak Kaydetme Seçeneklerini Yapılandırma
 
- PDF'ye dönüştürürken "Son Basılan" özelliğinin güncellenmesini etkinleştirmek için,`PdfSaveOptions` nesneyi ayarlayın ve`UpdateLastPrintedProperty` mülkiyet`true`.
+ PDF'ye dönüştürürken "Son Basılan" özelliğinin güncellenmesini etkinleştirmek için,`PdfSaveOptions` nesneyi ayarlayın ve`UpdateLastPrintedProperty`mülkiyet`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
@@ -74,7 +74,7 @@ C: Bir PDF belgesindeki "Son Basılan" özelliğini Aspose.Words for .NET ile g�
 
  Bir örneğini oluşturun`Document` Word belgesinin yolunu belirten sınıf.
 
- Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`UpdateLastPrintedProperty` mülkiyet`true` "Son Basılan" özelliğinin güncellenmesini etkinleştirmek için.
+ Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`UpdateLastPrintedProperty`mülkiyet`true` "Son Basılan" özelliğinin güncellenmesini etkinleştirmek için.
 
  Kullan`Save` yöntemi`Document`Kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için sınıf.
 

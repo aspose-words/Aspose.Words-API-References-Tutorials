@@ -107,4 +107,4 @@ R: En la mayoría de los casos, el propietario del documento de un nodo se deter
 
 #### P: ¿Cómo acceder a los nodos de un documento de propietario?
 
-R: Para acceder a los nodos en un documento propietario, puede utilizar los métodos y propiedades proporcionados por la API XML utilizada en su entorno Node.js. Por ejemplo, puede utilizar métodos como`getElementsByTagName` o`querySelector` para seleccionar nodos específicos en el documento.
+ R: Para acceder a los nodos en un documento propietario, puede utilizar los métodos y propiedades proporcionados por la API XML utilizada en su entorno Node.js. Por ejemplo, puede utilizar métodos como`getElementsByTagName` o`querySelector` para seleccionar nodos específicos en el documento.

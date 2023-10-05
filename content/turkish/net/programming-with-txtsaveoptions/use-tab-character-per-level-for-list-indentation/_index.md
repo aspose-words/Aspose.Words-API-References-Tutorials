@@ -2,7 +2,7 @@
 title: Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan
 linktitle: Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'te sekme karakterleri içeren girinti listeleri özelliğini nasıl kullanacağınızı öğrenin. Bu güçlü özellikle zamandan tasarruf edin ve iş akışınızı geliştirin.
+description: Aspose.Words for .NET'te sekme karakterleri içeren girinti listeleri özelliğini nasıl kullanacağınızı öğrenin. Bu güçlü özellikle zamandan tasarruf edin ve iş akışınızı iyileştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
@@ -106,7 +106,7 @@ Gerekli referansları ekleyerek ve uygun ad alanlarını içe aktararak gelişti
 
  kullanarak belgeyi kaydedin.`Save()` çıktı dosyasının tam yolunu ve kaydetme seçeneklerini belirten belge yöntemi.
 
-#### S: Liste girintisi için düzey başına sekme karakterlerinin sayısını özelleştirmek mümkün mü?
+#### S: Liste girintisi için düzey başına sekme karakterlerinin sayısını özelleştirmek mümkün müdür?
  Evet, liste girintisi için düzey başına sekme karakterlerinin sayısını, değerini değiştirerek özelleştirebilirsiniz.`ListIndentation.Count` içindeki mülk`TxtSaveOptions` sınıf. Her girinti düzeyi için istediğiniz sekme karakterlerinin sayısını belirtebilirsiniz.
 
 #### S: Aspose.Words for .NET'te liste girintisi için başka hangi karakterleri kullanabilirim?

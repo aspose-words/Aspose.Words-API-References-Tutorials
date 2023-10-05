@@ -65,7 +65,7 @@ R: Aspose.Words para .NET admite varias funciones OpenType, como ligaduras, vari
 
 #### P: ¿Cómo puedo comprobar si una función OpenType es compatible con una fuente específica?
 
-R: Puede verificar si una función OpenType es compatible con una fuente específica usando el`Font.OpenTypeFeatures` método en Aspose.Words para .NET.
+R: Puede comprobar si una función OpenType es compatible con una fuente específica utilizando el`Font.OpenTypeFeatures` método en Aspose.Words para .NET.
 
 #### P: ¿Qué otras funciones de formato de texto admite Aspose.Words para .NET?
 

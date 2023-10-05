@@ -79,7 +79,7 @@ C: Aspose.Words for .NET kullanarak ek metin ekleyerek bir PDF dosyasındaki met
  Bir örneğini oluşturarak PDF olarak dönüştürme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve etkinleştirme`AdditionalTextPositioning` kesinliği etkinleştirme seçeneği 
 PDF dosyasında ek metnin konumlandırılması.
 
- Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
+ Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document` yolu ve kaydetme seçeneklerini belirten sınıf.
 
 #### S: Ek metin ekleyerek PDF dosyasındaki metnin konumunu iyileştirmenin faydaları nelerdir?
 C: Ek metin ekleyerek PDF dosyasındaki metnin konumunu iyileştirmenin faydaları şunlardır:

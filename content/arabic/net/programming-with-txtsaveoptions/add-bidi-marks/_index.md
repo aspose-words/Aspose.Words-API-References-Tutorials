@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 
  استخدم ال`DocumentBuilder` فئة لإضافة محتوى إلى المستند.
 
- بمجرد إضافة المحتوى، استخدم`TxtSaveOptions` فئة وتعيين`AddBidiMarks` الملكية ل`true`.
+ بمجرد إضافة المحتوى، استخدم`TxtSaveOptions` فئة وتعيين`AddBidiMarks`الملكية ل`true`.
 
  احفظ المستند بعلامات Bidi باستخدام`Save` طريقة`Document` فصل.
 

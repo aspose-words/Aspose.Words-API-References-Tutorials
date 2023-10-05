@@ -37,7 +37,7 @@ Document doc = new Document(dataDir + "Document.doc");
 
 ## Paso 4: convertir el documento al formato Docx
 
- Ahora que ha inicializado el`Document`objeto, puede continuar con el proceso de conversión. Aspose.Words para .NET proporciona varias opciones y configuraciones para la personalización, pero para una conversión básica, no se requieren parámetros adicionales.
+ Ahora que ha inicializado el`Document` objeto, puede continuar con el proceso de conversión. Aspose.Words para .NET proporciona varias opciones y configuraciones para la personalización, pero para una conversión básica, no se requieren parámetros adicionales.
 
 ## Paso 5: guardar el documento convertido
 

@@ -58,7 +58,7 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprech
 
 #### F: Wie kann ich Fußnoten und Endnoten in Aspose.Words positionieren?
 
- A: Um Fußnoten und Endnoten in Aspose.Words zu positionieren, müssen Sie die verwenden`FootnoteOptions` Klasse und die`Position` Eigentum. Sie können diese Eigenschaft auf einen beliebigen Wert festlegen, z`BottomOfPage` (am Ende der Seite) oder`EndOfSection`(am Ende des Abschnitts).
+ A: Um Fußnoten und Endnoten in Aspose.Words zu positionieren, müssen Sie die verwenden`FootnoteOptions` Klasse und die`Position` Eigentum. Sie können diese Eigenschaft auf einen beliebigen Wert festlegen, z`BottomOfPage` (am Ende der Seite) oder`EndOfSection` (am Ende des Abschnitts).
 
 #### F: Ist es möglich, die Position von Fußnoten und Endnoten für jede Seite oder jeden Abschnitt des Dokuments anzupassen?
 

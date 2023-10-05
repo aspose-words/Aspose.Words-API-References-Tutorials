@@ -90,7 +90,7 @@ Ja, du kan lägga till flera serier till bubbeldiagrammet med Aspose.Words för 
 Ja, med Aspose.Words för .NET kan du anpassa olika aspekter av bubbeldiagrammets utseende. Du kan ändra egenskaper som seriefärg, bubbelstorlek, axeletiketter och diagramområdesformatering. Biblioteket tillhandahåller en rik uppsättning API:er för att kontrollera de visuella elementen i diagrammet och skapa ett anpassat utseende som passar dina behov.
 
 #### Q4. Kan jag spara dokumentet med det infogade bubbeldiagrammet i olika format?
-Ja, Aspose.Words för .NET låter dig spara dokumentet med det infogade bubbeldiagrammet i olika format, såsom DOCX, PDF, HTML och mer. Du kan välja önskat utdataformat baserat på dina krav och använda`Save` metod för`Document` objekt för att spara dokumentet. Det infogade bubbeldiagrammet kommer att bevaras i det sparade dokumentet.
+ Ja, Aspose.Words för .NET låter dig spara dokumentet med det infogade bubbeldiagrammet i olika format, såsom DOCX, PDF, HTML och mer. Du kan välja önskat utdataformat baserat på dina krav och använda`Save` metod för`Document` objekt för att spara dokumentet. Det infogade bubbeldiagrammet kommer att bevaras i det sparade dokumentet.
 
 #### F5. Kan jag ändra data och utseende på bubbeldiagrammet efter att ha infogat det?
 Ja, efter att ha infogat bubbeldiagrammet i dokumentet kan du ändra dess data och utseende med hjälp av API:erna som tillhandahålls av Aspose.Words för .NET. Du kan uppdatera seriedata, ändra bubbelstorleken, anpassa axelegenskaper och använda formateringsalternativ för att skapa dynamiska och interaktiva diagram i dina Word-dokument.

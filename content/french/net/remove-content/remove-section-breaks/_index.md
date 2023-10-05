@@ -38,7 +38,7 @@ Pour supprimer les sauts de section, nous allons parcourir toutes les sections e
 // Parcourez toutes les sections en commençant par la section qui précède la dernière et en passant à la première section.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-    //Copiez le contenu de la section actuelle au début de la dernière section.
+    // Copiez le contenu de la section actuelle au début de la dernière section.
     doc.LastSection.PrependContent(doc.Sections[i]);
     // Supprimez la section copiée.
     doc.Sections[i].Remove();
@@ -65,7 +65,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 // Parcourez toutes les sections en commençant par la section qui précède la dernière et en passant à la première section.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-	//Copiez le contenu de la section actuelle au début de la dernière section.
+	// Copiez le contenu de la section actuelle au début de la dernière section.
 	doc.LastSection.PrependContent(doc.Sections[i]);
 	// Supprimez la section copiée.
 	doc.Sections[i].Remove();

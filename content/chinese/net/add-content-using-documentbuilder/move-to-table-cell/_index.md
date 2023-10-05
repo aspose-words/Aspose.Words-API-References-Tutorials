@@ -69,7 +69,7 @@ Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table
 
 ### Word 文档中移动到表格单元格的常见问题解答
 
-#### 问：Aspose.Words for .NET 中“移至表格单元格”功能的用途是什么？
+#### 问：Aspose.Words for .NET 中的“移至表格单元格”功能的用途是什么？
 
 答：Aspose.Words for .NET 中的“移动到表格单元格”功能允许开发人员以编程方式导航到并操作 Word 文档表格内的特定单元格。它提供了在特定单元格内插入、修改或删除内容的能力。
 

@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Kombinera flera stilar för intrikat dokumentformatering:
 
 ```java
-// Kombinera stilar för en unik look
+//Kombinera stilar för en unik look
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words för Java tillhandahåller kraftfulla villkorsstyrda formateringsm�
 Absolut! Aspose.Words för Java stöder ett brett utbud av typsnitt och tecken från olika språk och skript.
 
 ### Hur kan jag lägga till hyperlänkar till text med specifika stilar?
-För att lägga till hyperlänkar till text, använd`FieldHyperlink` klass i kombination med stilar för att uppnå önskad formatering.
+ För att lägga till hyperlänkar till text, använd`FieldHyperlink`klass i kombination med stilar för att uppnå önskad formatering.
 
 ### Finns det några begränsningar för dokumentstorlek eller komplexitet?
 Aspose.Words för Java kan hantera dokument av varierande storlek och komplexitet. Men extremt stora dokument kan kräva ytterligare minnesresurser.

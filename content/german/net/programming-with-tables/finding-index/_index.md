@@ -43,7 +43,7 @@ Console.WriteLine("\nTable index is " + tableIndex);
 int rowIndex = table.IndexOf(table.LastRow);
 Console.WriteLine("\nLine index is " + rowIndex);
 
-// Suchen Sie den Zellindex
+// Suchen Sie den Zellenindex
 Row row = table. LastRow;
 int cellIndex = row.IndexOf(row.Cells[4]);
 Console.WriteLine("\nCell index is " + cellIndex);

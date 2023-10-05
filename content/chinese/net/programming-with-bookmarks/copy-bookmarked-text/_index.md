@@ -88,6 +88,42 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ```
 
+#### AppendBookmarkedText 源代码
+
+```csharp
+
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+        {
+            //这是包含书签开头的段落。
+            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+
+            //这是包含书签结尾的段落。
+            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+
+            if (startPara == null || endPara == null)
+                throw new InvalidOperationException(
+                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+            //将我们限制在一个相当简单的场景中。
+            if (startPara.ParentNode != endPara.ParentNode)
+                throw new InvalidOperationException(
+                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+            //我们想要复制从开始段落到（并包括）结束段落的所有段落，
+            //因此，我们停止的节点是结束段落之后的节点。
+            Node endNode = endPara.NextSibling;
+
+            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+            {
+                //这将创建当前节点的副本并将其导入到上下文中（使其有效）
+                //目标文档的。导入意味着调整样式并正确列出标识符。
+                Node newNode = importer.ImportNode(curNode, true);
+
+                dstNode.AppendChild(newNode);
+            }
+        }
+
+```
 ## 结论
 
 在本文中，我们探索了 C# 源代码，以了解如何使用从 Aspose.Words for .NET 复制书签文本的功能。我们按照分步指南将书签的内容从源文档复制到另一个文档。

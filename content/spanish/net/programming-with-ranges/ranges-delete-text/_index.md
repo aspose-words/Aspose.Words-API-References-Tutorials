@@ -115,4 +115,4 @@ R: Cuando utilice la función "Eliminar texto en rangos en un documento de Word"
 
 #### P:. ¿Puedo eliminar contenido de texto dentro de párrafos específicos u otros rangos personalizados usando la funcionalidad "Rangos Eliminar texto en documento de Word" en Aspose.Words para .NET?
 
-R: Sí, puede eliminar contenido de texto dentro de párrafos específicos u otros rangos personalizados usando la funcionalidad "Rangos Eliminar texto en documento de Word" en Aspose.Words para .NET. Puede acceder al rango deseado dentro de la estructura del documento (como secciones, párrafos o tablas) y aplicar el`Delete` método para eliminar el contenido de texto dentro de ese rango.
+R: Sí, puede eliminar contenido de texto dentro de párrafos específicos u otros rangos personalizados utilizando la funcionalidad "Rangos Eliminar texto en documento de Word" en Aspose.Words para .NET. Puede acceder al rango deseado dentro de la estructura del documento (como secciones, párrafos o tablas) y aplicar el`Delete` método para eliminar el contenido de texto dentro de ese rango.

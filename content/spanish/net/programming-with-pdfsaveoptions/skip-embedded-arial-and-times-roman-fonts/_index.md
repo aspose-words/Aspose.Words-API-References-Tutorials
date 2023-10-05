@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Paso 3: Configurar las opciones de guardar como PDF con incrustación de fuentes
 
- Para omitir la incrustación de fuentes Arial y Times Roman en el PDF generado, debemos configurar el`PdfSaveOptions` objeto y establecer el`FontEmbeddingMode` propiedad a`PdfFontEmbeddingMode.EmbedAll`.
+ Para omitir la incrustación de fuentes Arial y Times Roman en el PDF generado, debemos configurar el`PdfSaveOptions` objeto y establecer el`FontEmbeddingMode`propiedad a`PdfFontEmbeddingMode.EmbedAll`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
@@ -76,7 +76,7 @@ R: Para configurar Aspose.Words para .NET para que no incorpore fuentes Arial y 
 
  Cargue el documento que desea procesar utilizando el`Document` clase y la ruta del documento especificada.
 
- Crear una instancia del`PdfSaveOptions` clase y establecer el`FontEmbeddingMode` propiedad a`PdfFontEmbeddingMode.EmbedAll`. Esto incrustará todas las fuentes excepto Arial y Times Roman en el archivo PDF generado.
+ Crear una instancia del`PdfSaveOptions` clase y establecer el`FontEmbeddingMode`propiedad a`PdfFontEmbeddingMode.EmbedAll`. Esto incrustará todas las fuentes excepto Arial y Times Roman en el archivo PDF generado.
 
  Utilizar el`Save` método de la`Document` objeto para guardar el documento en formato PDF especificando las opciones de guardado configuradas anteriormente.
 

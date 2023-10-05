@@ -95,7 +95,7 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre s
 
 #### F: Kann ich das Nummerierungsformat von Listen in Aspose.Words anpassen?
 
- A: Ja, Sie können das Nummerierungsformat von Listen in Aspose.Words anpassen. Der`List` Die Klasse bietet hierfür mehrere Eigenschaften an, wie z`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`usw. Mit diesen Eigenschaften können Sie den Listentyp (nummeriert, mit Aufzählungszeichen usw.), das Nummerierungsformat (arabische Ziffern, römische Ziffern, Buchstaben usw.) und andere Nummerierungsformatierungsoptionen festlegen.
+A: Ja, Sie können das Nummerierungsformat von Listen in Aspose.Words anpassen. Der`List` Die Klasse bietet hierfür mehrere Eigenschaften an, wie z`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`usw. Mit diesen Eigenschaften können Sie den Listentyp (nummeriert, mit Aufzählungszeichen usw.), das Nummerierungsformat (arabische Ziffern, römische Ziffern, Buchstaben usw.) und andere Nummerierungsformatierungsoptionen festlegen.
 
 #### F: Ist es möglich, einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzuzufügen?
 

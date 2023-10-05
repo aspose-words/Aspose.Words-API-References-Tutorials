@@ -160,7 +160,7 @@ R: Per impostare l'ID del provider per una riga di firma utilizzando Aspose.Word
 1.  Dopo aver inserito la riga della firma, accedi al file`ProviderId` proprietà del`SignatureLine` oggetto.
 2.  Impostare il`ProviderId` proprietà al valore ID provider desiderato utilizzando il file`Guid` tipo di dati.
 
-#### D: Posso firmare il documento dopo aver creato una nuova riga per la firma e aver impostato l'ID del fornitore?
+#### D: Posso firmare il documento dopo aver creato una nuova riga per la firma e aver impostato l'ID del provider?
 
  R: Sì, dopo aver creato una nuova riga per la firma e aver impostato l'ID del fornitore, puoi firmare il documento. Per firmare il documento, è necessario impostare le opzioni di firma, inclusi l'ID della riga della firma, l'ID del fornitore, i commenti e l'ora della firma. Quindi, utilizzare il`DigitalSignatureUtil.Sign` metodo per firmare il documento utilizzando un certificato digitale.
 

@@ -58,15 +58,15 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprech
 
 #### F: Wie kann ich ein Formularfeld vom Typ Text in Aspose.Words einfügen?
 
- A: Um ein Formularfeld vom Typ Text in Aspose.Words einzufügen, können Sie das verwenden`FormField` Klasse und legen Sie sie fest`Type` Eigentum zu`FormFieldType.Text`. Sie können auch andere Eigenschaften wie Name, Beschriftung und Optionen anpassen.
+ A: Um ein Formularfeld vom Typ Text in Aspose.Words einzufügen, können Sie das verwenden`FormField` Klasse und legen Sie sie fest`Type`Eigentum zu`FormFieldType.Text`. Sie können auch andere Eigenschaften wie Name, Beschriftung und Optionen anpassen.
 
 #### F: Ist es möglich, in einem Dokument ein Formularfeld vom Typ „Kontrollkästchen“ zu erstellen?
 
- A: Ja, es ist möglich, ein Formularfeld vom Typ „Kontrollkästchen“ in einem Aspose.Words-Dokument zu erstellen. Du kannst den ... benutzen`FormField` Klasse und legen Sie sie fest`Type` Eigentum zu`FormFieldType.CheckBox` um ein Kontrollkästchen zu erstellen. Anschließend können Sie die Eigenschaften des Kontrollkästchens nach Bedarf anpassen.
+ A: Ja, es ist möglich, ein Formularfeld vom Typ „Kontrollkästchen“ in einem Aspose.Words-Dokument zu erstellen. Du kannst den ... benutzen`FormField` Klasse und legen Sie sie fest`Type`Eigentum zu`FormFieldType.CheckBox` um ein Kontrollkästchen zu erstellen. Anschließend können Sie die Eigenschaften des Kontrollkästchens nach Bedarf anpassen.
 
 #### F: Wie kann ich einem Dokument ein Dropdown-Formularfeld hinzufügen?
 
- A: Um ein Dropdown-Formularfeld in einem Aspose.Words-Dokument hinzuzufügen, verwenden Sie die`FormField` Klasse und legen Sie sie fest`Type` Eigentum zu`FormFieldType.DropDown` . Anschließend können Sie die Dropdown-Optionen mithilfe von festlegen`DropDownItems` Eigentum.
+ A: Um ein Dropdown-Formularfeld in einem Aspose.Words-Dokument hinzuzufügen, verwenden Sie die`FormField` Klasse und legen Sie sie fest`Type`Eigentum zu`FormFieldType.DropDown` . Anschließend können Sie die Dropdown-Optionen mithilfe von festlegen`DropDownItems` Eigentum.
 
 #### F: Kann ich in Aspose.Words einen Standardwert für ein Formularfeld festlegen?
 

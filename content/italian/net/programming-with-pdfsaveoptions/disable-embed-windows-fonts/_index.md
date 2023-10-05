@@ -74,7 +74,7 @@ R: Per disabilitare l'incorporamento dei caratteri Windows in un documento PDF u
 
  Carica il documento che desideri convertire in PDF utilizzando il file`Document` percorso della classe e del documento.
 
- Crea un'istanza di`PdfSaveOptions` classe e impostare il file`FontEmbeddingMode` proprietà a`PdfFontEmbeddingMode.EmbedNone`. Ciò disabilita l'incorporamento dei caratteri Windows nel file PDF generato.
+ Crea un'istanza di`PdfSaveOptions` classe e impostare il file`FontEmbeddingMode`proprietà a`PdfFontEmbeddingMode.EmbedNone`. Ciò disabilita l'incorporamento dei caratteri Windows nel file PDF generato.
 
  Usa il`Save` metodo del`Document` oggetto per convertire il documento in PDF specificando le opzioni di conversione configurate in precedenza.
 

@@ -82,7 +82,7 @@ Puoi aggiungere segni Bidi a un documento Word seguendo questi passaggi:
 
  Usa il`DocumentBuilder` classe per aggiungere contenuto al documento.
 
- Dopo aver aggiunto il contenuto, utilizzare il file`TxtSaveOptions` classe e impostare il file`AddBidiMarks` proprietà a`true`.
+ Dopo aver aggiunto il contenuto, utilizzare il file`TxtSaveOptions` classe e impostare il file`AddBidiMarks`proprietà a`true`.
 
  Salva il documento con i segni Bidi utilizzando il file`Save` metodo del`Document` classe.
 

@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Passaggio 6: crea una tabella e aggiungi righe
 
- Creane uno nuovo`Table` oggetto e specificare il numero di righe e colonne.
+ Creane uno nuovo`Table`oggetto e specificare il numero di righe e colonne.
 
 ```java
 Table table = new Table(doc);

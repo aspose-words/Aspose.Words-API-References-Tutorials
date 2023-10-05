@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: إعداد خيارات تنسيق الاستيراد
 
- إنشاء مثيل لـ`ImportFormatOptions` فئة وتعيين`IgnoreHeaderFooter` الملكية ل`false`. وهذا يضمن تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
+ إنشاء مثيل لـ`ImportFormatOptions` فئة وتعيين`IgnoreHeaderFooter`الملكية ل`false`. وهذا يضمن تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };

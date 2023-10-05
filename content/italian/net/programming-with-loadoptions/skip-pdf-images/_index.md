@@ -58,7 +58,7 @@ R: Saltare il caricamento delle immagini PDF può essere utile per diversi motiv
 
 #### D: Come posso saltare il caricamento delle immagini PDF in Aspose.Words per .NET?
 
- R: Puoi saltare il caricamento delle immagini PDF utilizzando il file`PdfLoadOptions`classe fornita da Aspose.Words per .NET. Basta impostare il`SkipPdfImages` proprietà a`true` quando configuri le opzioni di caricamento per il tuo documento PDF.
+ R: Puoi saltare il caricamento delle immagini PDF utilizzando il file`PdfLoadOptions`classe fornita da Aspose.Words per .NET. Basta impostare il`SkipPdfImages`proprietà a`true` quando configuri le opzioni di caricamento per il tuo documento PDF.
 
 #### D: Posso comunque accedere alle immagini PDF saltate dopo aver caricato il documento?
 

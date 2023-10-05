@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection. Auto };
 ```
 
- I det här steget konfigurerar vi alternativen för dokumentladdning. Vi skapar en ny`TxtLoadOptions` objekt och ställ in`DocumentDirection` egendom till`DocumentDirection.Auto`. Detta värde talar om för Aspose.Words att automatiskt bestämma textriktningen baserat på innehållet i dokumentet.
+ I det här steget konfigurerar vi alternativen för dokumentladdning. Vi skapar en ny`TxtLoadOptions` objekt och ställ in`DocumentDirection`egendom till`DocumentDirection.Auto`. Detta värde talar om för Aspose.Words att automatiskt bestämma textriktningen baserat på innehållet i dokumentet.
 
 ## Steg 3: Ladda dokumentet
 
@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- I detta sista steg sparar vi det resulterande dokumentet i .docx-format med hjälp av`Save` metod och skicka sökvägen till utdatafilen.
+ I detta sista steg sparar vi det resulterande dokumentet i .docx-format med hjälp av`Save` metod och skickar sökvägen till utdatafilen.
 
 Nu kan du köra källkoden för att ladda textdokumentet och bestämma textriktningen. Det resulterande dokumentet kommer att sparas i den angivna katalogen med namnet "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
 

@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Сохраняйте нумерацию источников при импорте
 
-Чтобы сохранить формат нумерации пронумерованных абзацев из исходного документа, создайте экземпляр`ImportFormatOptions` и установить`KeepSourceNumbering` к`true` . Использовать`NodeImporter` для импорта узлов из исходного документа в целевой документ, указав`ImportFormatMode.KeepSourceFormatting` и`importFormatOptions`.
+ Чтобы сохранить формат нумерации пронумерованных абзацев из исходного документа, создайте экземпляр`ImportFormatOptions` и установить`KeepSourceNumbering` к`true` . Использовать`NodeImporter` для импорта узлов из исходного документа в целевой документ, указав`ImportFormatMode.KeepSourceFormatting` и`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Шаг 4. Импортируйте и добавьте абзацы.
 
- Переберите абзацы исходного документа и импортируйте каждый абзац в целевой документ, используя команду`importer`. Добавьте импортированные узлы в тело целевого документа.
+Переберите абзацы исходного документа и импортируйте каждый абзац в целевой документ, используя команду`importer`. Добавьте импортированные узлы в тело целевого документа.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;

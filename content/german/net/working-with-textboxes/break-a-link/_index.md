@@ -34,7 +34,7 @@ textBox.BreakForwardLink();
 
 ## Schritt 4: Unterbrechen Sie einen Weiterleitungslink, indem Sie einen Nullwert festlegen
 
- Alternativ können wir einen Weiterleitungslink unterbrechen, indem wir die TextBoxen festlegen`Next` Eigentum zu`null`. Dadurch wird die Verbindung zur nächsten Form effektiv entfernt. Der folgende Code demonstriert diesen Ansatz:
+ Alternativ können wir einen Weiterleitungslink unterbrechen, indem wir die TextBoxen festlegen`Next`Eigentum zu`null`. Dadurch wird die Verbindung zur nächsten Form effektiv entfernt. Der folgende Code demonstriert diesen Ansatz:
 
 ```csharp
 textBox. Next = null;

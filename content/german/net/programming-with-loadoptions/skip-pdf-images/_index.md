@@ -58,7 +58,7 @@ A: Das Überspringen des Ladens von PDF-Bildern kann aus mehreren Gründen von V
 
 #### F: Wie kann ich das Laden von PDF-Bildern in Aspose.Words für .NET überspringen?
 
- A: Sie können das Laden von PDF-Bildern überspringen, indem Sie die verwenden`PdfLoadOptions`Klasse, bereitgestellt von Aspose.Words für .NET. Stellen Sie einfach die ein`SkipPdfImages` Eigentum zu`true` beim Konfigurieren der Ladeoptionen für Ihr PDF-Dokument.
+ A: Sie können das Laden von PDF-Bildern überspringen, indem Sie die verwenden`PdfLoadOptions`Klasse, bereitgestellt von Aspose.Words für .NET. Stellen Sie einfach die ein`SkipPdfImages`Eigentum zu`true` beim Konfigurieren der Ladeoptionen für Ihr PDF-Dokument.
 
 #### F: Kann ich nach dem Laden des Dokuments weiterhin auf die übersprungenen PDF-Bilder zugreifen?
 

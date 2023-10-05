@@ -66,7 +66,7 @@ Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 NodeCollection children = paragraph.ChildNodes;
 foreach (Node child in children)
 {
-	//Ein Absatz kann untergeordnete Elemente verschiedener Art enthalten, z. B. Läufe, Formen und andere.
+	// Ein Absatz kann untergeordnete Elemente verschiedener Art enthalten, z. B. Läufe, Formen und andere.
 	if (child.NodeType == NodeType.Run)
 	{
 		Run run = (Run) child;
@@ -90,11 +90,11 @@ A: Ein untergeordneter Knoten in Node.js bezieht sich auf einen Knoten, der dire
 
 #### F: Wie greife ich auf die Eigenschaften eines untergeordneten Knotens zu?
 
- A: Um auf die Eigenschaften eines untergeordneten Knotens in Node.js zuzugreifen, können Sie die Methoden und Eigenschaften verwenden, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie verwenden`getAttribute`um den Wert eines bestimmten Attributs eines untergeordneten Knotens zu erhalten.
+ A: Um auf die Eigenschaften eines untergeordneten Knotens in Node.js zuzugreifen, können Sie die Methoden und Eigenschaften verwenden, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie verwenden`getAttribute` um den Wert eines bestimmten Attributs eines untergeordneten Knotens zu erhalten.
 
 #### F: Können wir die untergeordneten Knoten eines Knotens ändern?
 
- A: Ja, es ist möglich, die untergeordneten Knoten eines Knotens in Node.js mithilfe der Methoden und Eigenschaften zu ändern, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie verwenden`appendChild` oder`removeChild` um untergeordnete Knoten zu einem bestimmten Knoten hinzuzufügen oder daraus zu entfernen.
+A: Ja, es ist möglich, die untergeordneten Knoten eines Knotens in Node.js mithilfe der Methoden und Eigenschaften zu ändern, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie verwenden`appendChild` oder`removeChild` um untergeordnete Knoten zu einem bestimmten Knoten hinzuzufügen oder daraus zu entfernen.
 
 #### F: Wie durchsuche ich alle untergeordneten Knoten eines Knotens?
 

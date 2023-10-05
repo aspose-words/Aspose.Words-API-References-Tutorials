@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### D: Come aggiungere testo all'interno di un segnalibro utilizzando Aspose.Words per .NET?
 
-R: Per aggiungere testo all'interno di un segnalibro utilizzando Aspose.Words per .NET, puoi utilizzare il file`Write` metodo del`DocumentBuilder` oggetto che specifica il testo da aggiungere. Ecco un codice di esempio:
+ R: Per aggiungere testo all'interno di un segnalibro utilizzando Aspose.Words per .NET, puoi utilizzare il file`Write` metodo del`DocumentBuilder`oggetto che specifica il testo da aggiungere. Ecco un codice di esempio:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

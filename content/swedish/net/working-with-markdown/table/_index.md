@@ -61,7 +61,7 @@ Grattis! Du har nu lärt dig hur du skapar en tabell med Aspose.Words för .NET.
 
 #### F: Hur skapar jag en tabell i Markdown?
 
-S: För att skapa en tabell i Markdown, använd syntaxen för pipes (`|`) för att avgränsa celler och bindestreck (`-`) för att avgränsa tabellrubriker.
+S: För att skapa en tabell i Markdown, använd syntaxen för pipes (`|`för att avgränsa celler och bindestreck (`-`) för att avgränsa tabellrubriker.
 
 #### F: Kan vi anpassa utseendet på en tabell i Markdown?
 

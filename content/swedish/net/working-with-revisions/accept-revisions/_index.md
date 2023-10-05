@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Lägg till text i det första stycket och lägg sedan till ytterligare två stycken.
+// Lägg till text i det första stycket och lägg sedan till ytterligare två stycken.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -92,12 +92,12 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Lägg till text i det första stycket och lägg sedan till ytterligare två stycken.
+// Lägg till text i det första stycket och lägg sedan till ytterligare två stycken.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
-// Vi har tre stycken, varav ingen är registrerad som någon typ av revision
+//Vi har tre stycken, varav ingen är registrerad som någon typ av revision
 // Om vi lägger till/tar bort något innehåll i dokumentet medan vi spårar revisioner,
 // de kommer att visas som sådana i dokumentet och kan accepteras/avvisas.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
@@ -123,7 +123,7 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // Att stoppa spårningen av revisioner gör att denna text visas som normal text.
-//Revisioner räknas inte när dokumentet ändras.
+// Revisioner räknas inte när dokumentet ändras.
 doc.StopTrackRevisions();
 
 // Spara dokumentet.

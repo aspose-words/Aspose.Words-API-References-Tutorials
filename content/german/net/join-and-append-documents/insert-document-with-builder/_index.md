@@ -48,7 +48,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Schritt 5: Fügen Sie das Quelldokument ein
 
- Benutzen Sie die`InsertDocument` Methode der`DocumentBuilder`Klasse, um das Quelldokument in das Zieldokument einzufügen. Stellen Sie den Importformatmodus auf ein`ImportFormatMode.KeepSourceFormatting` um die Quellformatierung beizubehalten.
+ Benutzen Sie die`InsertDocument` Methode der`DocumentBuilder` Klasse, um das Quelldokument in das Zieldokument einzufügen. Stellen Sie den Importformatmodus auf ein`ImportFormatMode.KeepSourceFormatting` um die Quellformatierung beizubehalten.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

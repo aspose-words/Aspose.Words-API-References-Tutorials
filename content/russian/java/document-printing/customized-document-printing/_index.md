@@ -29,7 +29,7 @@ url: /ru/java/document-printing/customized-document-printing/
 Начнем с создания пустого документа с помощью Aspose.Words for Java:
 
 ```java
-// Java-код для создания пустого документа
+//Java-код для создания пустого документа
 Document doc = new Document();
 ```
 

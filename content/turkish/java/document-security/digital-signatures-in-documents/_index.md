@@ -36,7 +36,7 @@ com.aspose.words.digitalSignatures.DigitalSignature digitalSignature = new com.a
 // Sertifika yolunu ayarlayın
 digitalSignature.setCertificateFile("your_certificate.pfx");
 
-// Sertifikanın şifresini ayarlayın
+//Sertifikanın şifresini ayarlayın
 digitalSignature.setPassword("your_password");
 
 // Belgeyi imzalayın

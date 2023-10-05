@@ -68,7 +68,7 @@ C: Farklı diller için heceleme sözlüğü dosyalarını çeşitli çevrimiçi
 
 #### S: Yüklenen hece sözlüğünü Aspose.Words'teki bir belgeye nasıl uygulayabilirim?
 
- C: Yüklenen heceleme sözlüğünü Aspose.Words'teki bir belgeye uygulamak için belgedeki kelimelerin üzerinde yineleme yapmanız ve`Hyphenate()` yöntemi`Hyphenation` Kelimelerin hecelemesini almak için sınıf. Daha sonra hecelenmiş sözcükleri gerektiği gibi biçimlendirebilirsiniz; örneğin hecelerin arasına kısa çizgi ekleyerek.
+ C: Yüklenen heceleme sözlüğünü Aspose.Words'teki bir belgeye uygulamak için belgedeki kelimelerin üzerinde yineleme yapmanız ve`Hyphenate()` yöntemi`Hyphenation`Kelimelerin hecelemesini almak için sınıf. Daha sonra hecelenmiş sözcükleri gerektiği gibi biçimlendirebilirsiniz; örneğin hecelerin arasına kısa çizgi ekleyerek.
 
 #### S: Aspose.Words'te heceleme için hangi diller destekleniyor?
 

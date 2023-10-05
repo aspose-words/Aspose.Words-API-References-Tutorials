@@ -414,7 +414,7 @@ Du kan kolla på Aspose-webbplatsen eller Maven-förrådet för den senaste vers
 Ja, Aspose.Words för Java är kompatibelt med Java 11 och senare versioner.
 
 ### Hur kan jag ställa in sidmarginaler för specifika delar av mitt dokument?
- Du kan ställa in sidmarginaler för specifika delar av ditt dokument med hjälp av`PageSetup` klass. Här är ett exempel:
+Du kan ställa in sidmarginaler för specifika delar av ditt dokument med hjälp av`PageSetup` klass. Här är ett exempel:
 
 ```java
 Section section = doc.getSections().get(0); // Skaffa det första avsnittet

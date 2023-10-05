@@ -2,7 +2,7 @@
 title: Sauter les images PDF
 linktitle: Sauter les images PDF
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment charger un document PDF en ignorant le chargement des images PDF avec Aspose.Words for .NET.
+description: Découvrez comment charger un document PDF en ignorant le chargement des images PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/skip-pdf-images/
@@ -58,7 +58,7 @@ R : Ignorer le chargement des images PDF peut être bénéfique pour plusieurs 
 
 #### Q : Comment puis-je ignorer le chargement des images PDF dans Aspose.Words for .NET ?
 
- R : Vous pouvez ignorer le chargement des images PDF en utilisant l'option`PdfLoadOptions`classe fournie par Aspose.Words pour .NET. Réglez simplement le`SkipPdfImages` propriété à`true` lors de la configuration des options de chargement de votre document PDF.
+ R : Vous pouvez ignorer le chargement des images PDF en utilisant l'option`PdfLoadOptions`classe fournie par Aspose.Words pour .NET. Réglez simplement le`SkipPdfImages`propriété à`true` lors de la configuration des options de chargement de votre document PDF.
 
 #### Q : Puis-je toujours accéder aux images PDF ignorées après avoir chargé le document ?
 

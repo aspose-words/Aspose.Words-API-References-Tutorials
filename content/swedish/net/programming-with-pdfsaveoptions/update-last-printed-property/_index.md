@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Steg 3: Konfigurera Spara som PDF-alternativ med den uppdaterade egenskapen "Senast utskriven".
 
- För att möjliggöra uppdatering av egenskapen "Senast utskriven" vid konvertering till PDF, måste vi konfigurera`PdfSaveOptions` objekt och ställ in`UpdateLastPrintedProperty` egendom till`true`.
+ För att möjliggöra uppdatering av egenskapen "Senast utskriven" vid konvertering till PDF, måste vi konfigurera`PdfSaveOptions` objekt och ställ in`UpdateLastPrintedProperty`egendom till`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
@@ -74,7 +74,7 @@ S: För att uppdatera egenskapen "Last Printed" i ett PDF-dokument med Aspose.Wo
 
  Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
 
- Skapa en instans av`PdfSaveOptions` klass och ställ in`UpdateLastPrintedProperty` egendom till`true` för att möjliggöra uppdatering av egenskapen "Senast utskriven".
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`UpdateLastPrintedProperty`egendom till`true` för att möjliggöra uppdatering av egenskapen "Senast utskriven".
 
  Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
 

@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Legacy control character.doc");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
 ```
 
-En este paso, configuramos las opciones de guardado de OOXML creando un nuevo`OoxmlSaveOptions`objeto. Especificamos el formato de guardado deseado (aquí,`FlatOpc` ) y habilitar el`KeepLegacyControlChars` Opción para mantener los personajes de control heredados.
+ En este paso, configuramos las opciones de guardado de OOXML creando un nuevo`OoxmlSaveOptions` objeto. Especificamos el formato de guardado deseado (aquí,`FlatOpc` ) y habilitar el`KeepLegacyControlChars` Opción para mantener los personajes de control heredados.
 
 ## Paso 4: guardar el documento con caracteres de control heredados
 
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 En este tutorial, exploramos la funcionalidad de preservar los caracteres de control heredados al guardar un documento usando Aspose.Words para .NET. Hemos aprendido cómo conservar esos caracteres especiales que pueden ser importantes para formatear o visualizar correctamente el documento.
 
- Preservar los caracteres de control heredados es especialmente útil cuando se procesan palabras con documentos que utilizan funciones antiguas o específicas, como caracteres de control especiales. Al habilitar el`KeepLegacyControlChars`Al guardar el documento, se asegura de que estos caracteres se conserven.
+ Preservar los caracteres de control heredados es especialmente útil cuando se procesan palabras con documentos que utilizan funciones antiguas o específicas, como caracteres de control especiales. Al habilitar el`KeepLegacyControlChars` Al guardar el documento, se asegura de que estos caracteres se conserven.
 
 Aspose.Words para .NET ofrece una gama de opciones de copia de seguridad potentes y flexibles para satisfacer sus necesidades de manipulación de documentos. Al utilizar las opciones adecuadas, puede personalizar el proceso de copia de seguridad para preservar las características específicas de sus documentos.
 

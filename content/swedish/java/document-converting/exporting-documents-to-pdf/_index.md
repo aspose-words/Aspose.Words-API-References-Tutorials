@@ -10,7 +10,7 @@ url: /sv/java/document-converting/exporting-documents-to-pdf/
 
 ## Introduktion till export av dokument till PDF
 
-denna steg-för-steg-guide kommer du att lära dig hur du exporterar dokument till PDF med Aspose.Words för Java. Aspose.Words för Java är ett kraftfullt API som låter dig arbeta med Word-dokument programmatiskt. Oavsett om du behöver konvertera Word-dokument till PDF för arkivering, delning eller utskrift, förenklar Aspose.Words processen. Låt oss dyka in i detaljerna.
+I denna steg-för-steg-guide kommer du att lära dig hur du exporterar dokument till PDF med Aspose.Words för Java. Aspose.Words för Java är ett kraftfullt API som låter dig arbeta med Word-dokument programmatiskt. Oavsett om du behöver konvertera Word-dokument till PDF för arkivering, delning eller utskrift, förenklar Aspose.Words processen. Låt oss dyka in i detaljerna.
 
 ## Förutsättningar
 
@@ -26,7 +26,7 @@ Börja med att skapa ett nytt Java-projekt i din favorit-IDE. Se till att lägga
 
 ## Laddar ett Word-dokument
 
-I din Java-kod måste du ladda Word-dokumentet du vill exportera till PDF. Använd följande kodavsnitt för att uppnå detta:
+din Java-kod måste du ladda Word-dokumentet du vill exportera till PDF. Använd följande kodavsnitt för att uppnå detta:
 
 ```java
 // Ladda Word-dokumentet

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Schritt 3: Konfigurieren Sie die Metadatei-Rendering-Optionen
 
- Um die WMF-Schriftskalierung auf die Metadateigröße zu aktivieren oder zu deaktivieren, müssen wir Folgendes konfigurieren`MetafileRenderingOptions`Objekt. In diesem Beispiel deaktivieren wir die Schriftskalierung, indem wir die festlegen`ScaleWmfFontsToMetafileSize` Eigentum zu`false`.
+ Um die WMF-Schriftskalierung auf die Metadateigröße zu aktivieren oder zu deaktivieren, müssen wir Folgendes konfigurieren`MetafileRenderingOptions`Objekt. In diesem Beispiel deaktivieren wir die Schriftskalierung, indem wir die festlegen`ScaleWmfFontsToMetafileSize`Eigentum zu`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -97,11 +97,11 @@ A: Um die Größenänderung von WMF-Schriftarten an die Metadateigröße in eine
 
  Laden Sie das Dokument, das Sie bearbeiten möchten, mit`Document` Klasse und geben Sie den Pfad zum Word-Dokument im angegebenen Dokumentenverzeichnis an.
 
- Konfigurieren Sie Metadatei-Rendering-Optionen, indem Sie eine Instanz davon erstellen`MetafileRenderingOptions` Klasse und Einstellung der`ScaleWmfFontsToMetafileSize` Eigentum zu`true` um die Skalierung von WMF-Schriftarten auf die Metadateigröße oder auf zu ermöglichen`false` um diese Funktion zu deaktivieren.
+ Konfigurieren Sie Metadatei-Rendering-Optionen, indem Sie eine Instanz davon erstellen`MetafileRenderingOptions` Klasse und Einstellung der`ScaleWmfFontsToMetafileSize`Eigentum zu`true` um die Skalierung von WMF-Schriftarten auf die Metadateigröße oder auf zu ermöglichen`false` um diese Funktion zu deaktivieren.
 
  Konfigurieren Sie die Optionen zum Speichern als PDF, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und unter Verwendung der zuvor konfigurierten Metadatei-Renderingoptionen.
 
- Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document`Klasse, die den Pfad und die Speicheroptionen angibt.
+ Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.
 
 #### F: Welche Vorteile bietet die Größenänderung von WMF-Schriftarten an die Metadateigröße in einem PDF-Dokument?
 A: Die Größenänderung von WMF-Schriftarten an die Metadateigröße in einem PDF-Dokument hat folgende Vorteile:

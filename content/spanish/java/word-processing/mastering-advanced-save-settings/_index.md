@@ -54,7 +54,7 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 Los encabezados y pies de página suelen contener información crítica. Explore cómo administrar y personalizar encabezados y pies de página en sus documentos.
 
 ```java
-//Agregar un encabezado a la primera página
+// Agregar un encabezado a la primera página
 Document doc = new Document();
 Section section = doc.getSections().get(0);
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
@@ -116,7 +116,7 @@ doc.save("optimized_document.docx", SaveFormat.DOCX);
 
 ## Exportar a diferentes formatos
 
-veces, necesitas tu documento en varios formatos. Aspose.Words para Java facilita la exportación a formatos como PDF, HTML y más.
+A veces, necesitas tu documento en varios formatos. Aspose.Words para Java facilita la exportación a formatos como PDF, HTML y más.
 
 ```java
 // Exportar a PDF
@@ -181,7 +181,7 @@ Incluso los mejores desarrolladores encuentran problemas. Abordaremos problemas 
 
 ### ¿Cómo configuro el tamaño de página en A4?
 
- Para establecer el tamaño de página en A4, puede utilizar el`PageSetup`clase y especifique el tamaño del papel de la siguiente manera:
+ Para establecer el tamaño de página en A4, puede utilizar el`PageSetup` clase y especifique el tamaño del papel de la siguiente manera:
 
 ```java
 Document doc = new Document();

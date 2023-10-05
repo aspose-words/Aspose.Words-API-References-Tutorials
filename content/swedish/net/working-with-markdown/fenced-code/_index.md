@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-markdown/fenced-code/
 ---
 
-I det här exemplet kommer vi att gå igenom hur du använder den inhägnade kodfunktionen med Aspose.Words för .NET. inhägnad kod används för att representera kodblock med specifik formatering.
+det här exemplet kommer vi att gå igenom hur du använder den inhägnade kodfunktionen med Aspose.Words för .NET. inhägnad kod används för att representera kodblock med specifik formatering.
 
 ## Steg 1: Använda en dokumentgenerator
 
@@ -27,7 +27,7 @@ Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode"
 builder.ParagraphFormat.Style = fencedCode;
 ```
 
-## Steg 3: Lägga till inhägnad kod utan info
+## Steg 3: Lägga till inhägnad kod utan information
 
 Nu kan vi lägga till ett inhägnat kodblock utan informationssträng med den anpassade stilen "FencedCode".
 

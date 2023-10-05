@@ -89,8 +89,8 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Erstellen Sie eine nummerierte Liste basierend auf einer der Microsoft Word-Listenvorlagen
-// und wenden Sie es auf den aktuellen Absatz des Document Builders an.
+// Erstellen Sie eine nummerierte Liste basierend auf einer der Microsoft Word-Listenvorlagen
+//und wenden Sie es auf den aktuellen Absatz des Document Builders an.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 // Es gibt neun Level in dieser Liste, probieren wir sie alle aus.
@@ -101,7 +101,7 @@ for (int i = 0; i < 9; i++)
 }
 
 // Erstellen Sie eine Liste mit Aufzählungszeichen basierend auf einer der Microsoft Word-Listenvorlagen
-// und wenden Sie es auf den aktuellen Absatz des Document Builders an.
+//und wenden Sie es auf den aktuellen Absatz des Document Builders an.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
 for (int i = 0; i < 9; i++)

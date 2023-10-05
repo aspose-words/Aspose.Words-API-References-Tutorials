@@ -29,7 +29,7 @@ Avant de commencer, assurez-vous que les conditions préalables suivantes sont r
 Commençons par créer un document vierge à l'aide d'Aspose.Words for Java :
 
 ```java
-// Code Java pour créer un document vierge
+//Code Java pour créer un document vierge
 Document doc = new Document();
 ```
 

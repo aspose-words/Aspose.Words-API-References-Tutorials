@@ -39,7 +39,7 @@ foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- Burada belgeyi ilk tabloyu getirmek için kullanıyoruz ve ardından foreach döngüsü kullanarak tablodaki tüm satırları yineliyoruz. Döngünün içinde, her satır için satır kesmeyi devre dışı bırakırız.`RowFormat.AllowBreakAcrossPages` mülkiyet`false`.
+ Burada belgeyi ilk tabloyu getirmek için kullanıyoruz ve ardından foreach döngüsü kullanarak tablodaki tüm satırları yineliyoruz. Döngünün içinde, her satır için satır kesmeyi devre dışı bırakırız.`RowFormat.AllowBreakAcrossPages`mülkiyet`false`.
 
 ## Adım 4: Değiştirilen belgeyi kaydetme
 Son olarak, değiştirilen belgeyi tablo satırı sonu devre dışı bırakılarak kaydetmemiz gerekir. Aşağıdaki kodu kullanın:

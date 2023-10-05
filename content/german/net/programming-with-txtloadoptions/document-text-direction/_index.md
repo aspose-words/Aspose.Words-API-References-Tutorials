@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection. Auto };
 ```
 
- In diesem Schritt konfigurieren wir die Optionen zum Laden von Dokumenten. Wir schaffen ein Neues`TxtLoadOptions` Objekt und legen Sie das fest`DocumentDirection` Eigentum zu`DocumentDirection.Auto`. Dieser Wert weist Aspose.Words an, die Textrichtung basierend auf dem Inhalt des Dokuments automatisch zu bestimmen.
+ In diesem Schritt konfigurieren wir die Optionen zum Laden von Dokumenten. Wir schaffen ein Neues`TxtLoadOptions` Objekt und legen Sie das fest`DocumentDirection`Eigentum zu`DocumentDirection.Auto`. Dieser Wert weist Aspose.Words an, die Textrichtung basierend auf dem Inhalt des Dokuments automatisch zu bestimmen.
 
 ## Schritt 3: Laden des Dokuments
 
@@ -87,4 +87,4 @@ Denken Sie daran, die entsprechenden Ladeoptionen zu verwenden, z. B. das Festle
 
 Aspose.Words für .NET bietet viele erweiterte Funktionen für die Dokumentbearbeitung und -generierung. Wenn Sie die von Aspose.Words bereitgestellte Dokumentation und Beispiele weiter erkunden, können Sie die Funktionen dieser leistungsstarken Bibliothek voll ausschöpfen.
 
-Zögern Sie also nicht, die Dokumenttextrichtung in Ihre Aspose.Words für .NET-Projekte zu integrieren und nutzen Sie deren Vorteile, um attraktive und qualitativ hochwertige mehrsprachige Dokumente zu erstellen.
+Zögern Sie also nicht, die Dokumenttextrichtung in Ihre Aspose.Words für .NET-Projekte zu integrieren und nutzen Sie deren Vorteile, um attraktive und hochwertige mehrsprachige Dokumente zu erstellen.

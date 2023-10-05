@@ -53,7 +53,7 @@ run.getFont().setColor(Color.RED);
 
 ## Conversion de documents avec SaveOptions
 
- Passons maintenant au cœur de ce tutoriel : la conversion de documents à l'aide d'Aspose.Words. Pour convertir un document, vous devrez utiliser le`Save` et spécifiez le format de sortie à l’aide de SaveOptions. Voici un exemple de conversion d'un document en PDF :
+ Passons maintenant au cœur de ce tutoriel : la conversion de documents à l'aide d'Aspose.Words. Pour convertir un document, vous devrez utiliser le`Save`et spécifiez le format de sortie à l’aide de SaveOptions. Voici un exemple de conversion d'un document en PDF :
 
 ```java
 // Spécifiez le format de sortie au format PDF
@@ -77,7 +77,7 @@ Dans ce guide complet, nous avons exploré le monde de la conversion de document
 
 ### Comment installer Aspose.Words pour Java ?
 
- L'installation d'Aspose.Words pour Java est simple. Visiter le[page de téléchargement](https://releases.aspose.com/words/java/) et suivez les instructions d'installation correspondant à votre environnement de développement.
+ L'installation d'Aspose.Words pour Java est simple. Visiter le[page de téléchargement](https://releases.aspose.com/words/java/)et suivez les instructions d'installation correspondant à votre environnement de développement.
 
 ### Que sont les options de sauvegarde dans Aspose.Words ?
 

@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. Adım: Resim ekleme
 
- kullanarak bir resim ekleyebiliriz.`Shape` sınıf ve görüntünün türünü belirterek burada`ShapeType.Image` . Ayrıca görüntünün sarma türünü de ayarladık.`WrapType.Inline`.
+ kullanarak bir resim ekleyebiliriz.`Shape` sınıf ve görüntünün türünü belirterek burada`ShapeType.Image` Ayrıca görüntünün sarma türünü de ayarladık.`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ Tebrikler! Artık Aspose.Words for .NET ile görseller özelliğini nasıl kulla
 
 #### S: Aspose.Words'e bir URL'den resim ekleyebilir miyim?
 
- C: Evet, Aspose.Words'teki bir URL'den resim ekleyebilirsiniz. Aynısını kullanabilirsiniz`InsertImage`yöntemini kullanın ve yerel dosya yolu yerine resim URL'sini belirtin.
+ C: Evet, Aspose.Words'teki bir URL'den resim ekleyebilirsiniz. Aynısını kullanabilirsiniz`InsertImage` yöntemini kullanın ve yerel dosya yolu yerine resim URL'sini belirtin.
 
 #### S: Aspose.Words'te bir resmi nasıl yeniden boyutlandırabilirim?
 
@@ -69,7 +69,7 @@ Tebrikler! Artık Aspose.Words for .NET ile görseller özelliğini nasıl kulla
 
 #### S: Aspose.Words'teki görsellere filtre uygulayabilir miyim?
 
- C: Evet, Aspose.Words'te görsellere filtre uygulayabilirsiniz. Örneğin, bir görüntüye bulanıklık filtresi uygulayabilirsiniz.`ApplyGaussianBlur` yöntemi`Shape` nesne.
+C: Evet, Aspose.Words'te görsellere filtre uygulayabilirsiniz. Örneğin, bir görüntüye bulanıklık filtresi uygulayabilirsiniz.`ApplyGaussianBlur` yöntemi`Shape` nesne.
 
 #### S: Aspose.Words'te bir görseli diğeriyle nasıl değiştirebilirim?
 

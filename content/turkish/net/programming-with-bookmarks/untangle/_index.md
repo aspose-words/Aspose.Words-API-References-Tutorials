@@ -56,7 +56,7 @@ Aspose.Words for .NET kullanarak iç içe geçmiş yer imlerini çözmek için t
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		//Her iki satır da uygun bulunursa ve yer işaretinin başlangıcı ve bitişi bitişik satırlarda yer alıyorsa,
+		// Her iki satır da uygun bulunursa ve yer işaretinin başlangıcı ve bitişi bitişik satırlarda yer alıyorsa,
 		// yer imi bitiş düğümünü üst satırın son hücresindeki son paragrafın sonuna taşıyın.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

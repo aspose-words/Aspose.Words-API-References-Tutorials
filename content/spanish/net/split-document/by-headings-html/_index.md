@@ -82,4 +82,4 @@ El código fuente proporcionado demuestra cómo dividir el documento de Word en 
 
 #### ¿Puedo dividir el documento según varios criterios?
 
- Sí, puede dividir el documento según varios criterios combinando las opciones de criterios en consecuencia. Por ejemplo, puede dividir el documento por encabezado y página configurando el`DocumentSplitCriteria` propiedad a`HeadingParagraph | Page`. Esto dividirá el documento en cada encabezado y cada página, creando partes más pequeñas según ambos criterios.
+ Sí, puede dividir el documento según varios criterios combinando las opciones de criterios en consecuencia. Por ejemplo, puede dividir el documento por encabezado y página configurando el`DocumentSplitCriteria`propiedad a`HeadingParagraph | Page`. Esto dividirá el documento en cada encabezado y cada página, creando partes más pequeñas según ambos criterios.

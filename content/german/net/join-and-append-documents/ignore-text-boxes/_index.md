@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Importformatoptionen einrichten
 
- Erstellen Sie eine Instanz von`ImportFormatOptions` Klasse und legen Sie die fest`IgnoreTextBoxes` Eigentum zu`false`. Dadurch wird sichergestellt, dass die Textfelder während des Anhängevorgangs einbezogen werden und ihre Formatierung erhalten bleibt.
+ Erstellen Sie eine Instanz von`ImportFormatOptions` Klasse und legen Sie die fest`IgnoreTextBoxes`Eigentum zu`false`. Dadurch wird sichergestellt, dass die Textfelder während des Anhängevorgangs einbezogen werden und ihre Formatierung erhalten bleibt.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };

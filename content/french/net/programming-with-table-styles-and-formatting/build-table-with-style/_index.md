@@ -25,7 +25,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Étape 3 : créez un nouveau tableau et insérez une cellule
+## Étape 3 : Démarrez un nouveau tableau et insérez une cellule
  Pour commencer à construire la table, nous utilisons le`StartTable()` méthode du générateur de documents, puis nous insérons une cellule dans le tableau à l'aide de la`InsertCell()` méthode.
 
 ```csharp

@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Wie greife ich in Aspose.Words für .NET auf die überarbeitete Version eines Dokuments zu?
 
- A: Benutzen Sie die`RevisionsView` Eigentum der`Document` Objekt, um auf die überarbeitete Version des Dokuments zuzugreifen. Sie können den Wert festlegen`RevisionsView` Eigentum zu`RevisionsView.Final` um die endgültige Version ohne die Überarbeitungen anzuzeigen.
+ A: Benutzen Sie die`RevisionsView` Eigentum der`Document` Objekt, um auf die überarbeitete Version des Dokuments zuzugreifen. Sie können den Wert festlegen`RevisionsView`Eigentum zu`RevisionsView.Final` um die endgültige Version ohne die Überarbeitungen anzuzeigen.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;

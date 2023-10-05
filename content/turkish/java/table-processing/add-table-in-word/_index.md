@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Adım 6: Tablo Oluşturun ve Satır Ekleyin
 
- Yeni bir tane oluştur`Table` nesneyi seçin ve satır ve sütun sayısını belirtin.
+ Yeni bir tane oluştur`Table`nesneyi seçin ve satır ve sütun sayısını belirtin.
 
 ```java
 Table table = new Table(doc);

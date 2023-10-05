@@ -72,7 +72,7 @@ En este tutorial, exploramos el proceso de uso de la función Espacio para ajust
 
 #### P: ¿Qué es la función de espacio entre el texto asiático y latino en un documento de Word?
 
-R: La función Espacio entre texto asiático y latino en un documento de Word se refiere a la capacidad de ajustar automáticamente el espacio entre texto escrito en diferentes escrituras, como asiática (p. ej., chino, japonés) y latina (p. ej., inglés).
+R: La función de espacio entre texto asiático y latino en un documento de Word se refiere a la capacidad de ajustar automáticamente el espacio entre texto escrito en diferentes escrituras, como asiática (p. ej., chino, japonés) y latina (p. ej., inglés).
 
 #### P: ¿Por qué es importante ajustar el espacio entre el texto asiático y latino?
 

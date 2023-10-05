@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: İçe aktarırken kaynak numaralandırmayı koruyun
 
-Kaynak belgedeki numaralandırılmış paragrafların numaralandırma formatını korumak için,`ImportFormatOptions` ve ayarla`KeepSourceNumbering` ile`true` . Kullanın`NodeImporter` Düğümleri kaynak belgeden hedef belgeye aktarmak için şunları belirterek`ImportFormatMode.KeepSourceFormatting` ve`importFormatOptions`.
+ Kaynak belgedeki numaralandırılmış paragrafların numaralandırma formatını korumak için,`ImportFormatOptions` ve ayarla`KeepSourceNumbering` ile`true` . Kullanın`NodeImporter` Düğümleri kaynak belgeden hedef belgeye aktarmak için şunları belirterek`ImportFormatMode.KeepSourceFormatting` ve`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## 4. Adım: Paragrafları içe aktarın ve ekleyin
 
- Kaynak belgedeki paragraflar arasında yineleyin ve her paragrafı hedef belgeye aktarın.`importer`. İçe aktarılan düğümleri hedef belgenin gövdesine ekleyin.
+Kaynak belgedeki paragraflar arasında yineleyin ve her paragrafı hedef belgeye aktarın.`importer`. İçe aktarılan düğümleri hedef belgenin gövdesine ekleyin.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;

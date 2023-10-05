@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//İlk paragrafa metin ekleyin, ardından iki paragraf daha ekleyin.
+// İlk paragrafa metin ekleyin, ardından iki paragraf daha ekleyin.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -92,12 +92,12 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//İlk paragrafa metin ekleyin, ardından iki paragraf daha ekleyin.
+// İlk paragrafa metin ekleyin, ardından iki paragraf daha ekleyin.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
-// Hiçbiri herhangi bir revizyon türü olarak kayıtlı olmayan üç paragrafımız var
+//Hiçbiri herhangi bir revizyon türü olarak kayıtlı olmayan üç paragrafımız var
 // Revizyonları takip ederken dokümana herhangi bir içerik ekler/kaldırırsak,
 // belgede bu şekilde görüntülenecek ve kabul/reddedilebilecektir.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
@@ -123,7 +123,7 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // Revizyonların takibinin durdurulması bu metnin normal metin olarak görünmesini sağlar.
-//Belge değiştirildiğinde revizyonlar sayılmaz.
+// Belge değiştirildiğinde revizyonlar sayılmaz.
 doc.StopTrackRevisions();
 
 // Belgeyi kaydedin.

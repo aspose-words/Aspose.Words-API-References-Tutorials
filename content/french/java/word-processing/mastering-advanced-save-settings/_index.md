@@ -54,7 +54,7 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 Les en-têtes et pieds de page contiennent souvent des informations critiques. Découvrez comment gérer et personnaliser les en-têtes et pieds de page de vos documents.
 
 ```java
-//Ajouter un en-tête à la première page
+// Ajouter un en-tête à la première page
 Document doc = new Document();
 Section section = doc.getSections().get(0);
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
@@ -181,7 +181,7 @@ Même les meilleurs développeurs rencontrent des problèmes. Nous aborderons le
 
 ### Comment définir le format de page sur A4 ?
 
- Pour définir le format de page sur A4, vous pouvez utiliser le`PageSetup`classe et spécifiez le format de papier comme suit :
+ Pour définir le format de page sur A4, vous pouvez utiliser le`PageSetup` classe et spécifiez le format de papier comme suit :
 
 ```java
 Document doc = new Document();

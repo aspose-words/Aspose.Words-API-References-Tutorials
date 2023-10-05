@@ -33,7 +33,7 @@ print(doc.get_text())
 
 ## Aktivieren von „Änderungen verfolgen“.
 
- Um die Verfolgung von Änderungen für ein Dokument zu aktivieren, müssen Sie Folgendes festlegen`TrackRevisions` Eigentum zu`True`:
+ Um die Verfolgung von Änderungen für ein Dokument zu aktivieren, müssen Sie Folgendes festlegen`TrackRevisions`Eigentum zu`True`:
 
 ```python
 doc.track_revisions = True

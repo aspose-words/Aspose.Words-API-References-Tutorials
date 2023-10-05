@@ -45,7 +45,7 @@ In diesem Schritt erstellen wir eine Textzeichenfolge, die ein Textdokument simu
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- In diesem Schritt konfigurieren wir die Optionen zum Laden von Dokumenten. Wir schaffen ein Neues`TxtLoadOptions` Objekt und legen Sie das fest`DetectNumberingWithWhitespaces` Eigentum zu`true`. Dadurch kann Aspose.Words Listennummern erkennen, auch wenn ihnen Leerzeichen folgen.
+ In diesem Schritt konfigurieren wir die Optionen zum Laden von Dokumenten. Wir schaffen ein Neues`TxtLoadOptions` Objekt und legen Sie das fest`DetectNumberingWithWhitespaces`Eigentum zu`true`. Dadurch kann Aspose.Words Listennummern erkennen, auch wenn ihnen Leerzeichen folgen.
 
 ## Schritt 4: Dokument laden und speichern
 

@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## Шаг 3. Настройка формата маркера
 
- Мы можем настроить формат маркера, обратившись к свойствам`ListFormat.List.ListLevels[0]`. В этом примере мы используем тире «-» в качестве маркера.
+Мы можем настроить формат маркера, обратившись к свойствам`ListFormat.List.ListLevels[0]`. В этом примере мы используем тире «-» в качестве маркера.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

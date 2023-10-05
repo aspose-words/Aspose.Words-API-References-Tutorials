@@ -18,7 +18,7 @@ url: /ar/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 1.  تثبيت بايثون: تأكد من تثبيت بايثون على نظامك. يمكنك تنزيله من[هنا](https://www.python.org/downloads/).
 
-2. Aspose.Words for Python: أنت بحاجة إلى تثبيت Aspose.Words for Python. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/python/).
+2.  Aspose.Words for Python: أنت بحاجة إلى تثبيت Aspose.Words for Python. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/python/).
 
 3. إعداد المستند: قم بإعداد مستند Word الذي تريد إجراء عمليات البحث والاستبدال عليه.
 

@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 İçeriği çıkardıktan ve değiştirdikten sonra onu yeni bir belgeye kaydedebilirsiniz:
 
 ```java
-// Çıkarılan içeriği yeni bir belgeye kaydedin
+//Çıkarılan içeriği yeni bir belgeye kaydedin
 doc.save("extracted_content.docx");
 ```
 

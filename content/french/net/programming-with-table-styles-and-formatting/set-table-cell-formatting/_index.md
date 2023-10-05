@@ -2,7 +2,7 @@
 title: Définir le formatage des cellules du tableau
 linktitle: Définir le formatage des cellules du tableau
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour définir le formatage des cellules d’un tableau à l’aide d’Aspose.Words for .NET.
+description: Guide étape par étape pour définir le formatage des cellules d’un tableau à l’aide d’Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-table-styles-and-formatting/set-table-cell-formatting/

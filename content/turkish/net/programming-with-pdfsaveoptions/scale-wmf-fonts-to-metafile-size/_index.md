@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## 3. Adım: Meta dosyası oluşturma seçeneklerini yapılandırma
 
- WMF yazı tipi ölçeklendirmesini meta dosya boyutuna göre etkinleştirmek veya devre dışı bırakmak için,`MetafileRenderingOptions`nesne. Bu örnekte, yazı tipi ölçeklendirmeyi ayarlayarak devre dışı bırakıyoruz.`ScaleWmfFontsToMetafileSize` mülkiyet`false`.
+ WMF yazı tipi ölçeklendirmesini meta dosya boyutuna göre etkinleştirmek veya devre dışı bırakmak için,`MetafileRenderingOptions`nesne. Bu örnekte, yazı tipi ölçeklendirmeyi ayarlayarak devre dışı bırakıyoruz.`ScaleWmfFontsToMetafileSize`mülkiyet`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -97,11 +97,11 @@ C: Aspose.Words for .NET kullanarak bir PDF belgesinde WMF yazı tiplerinin meta
 
  İşlemek istediğiniz belgeyi kullanarak yükleyin.`Document` sınıfını seçin ve belirtilen belgeler dizinindeki Word belgesinin yolunu belirtin.
 
- Bir örneğini oluşturarak meta dosyası oluşturma seçeneklerini yapılandırın.`MetafileRenderingOptions` sınıf ve ayarlama`ScaleWmfFontsToMetafileSize` mülkiyet`true` WMF yazı tiplerinin meta dosya boyutuna ölçeklenmesini etkinleştirmek veya`false` Bu özelliği devre dışı bırakmak için.
+ Bir örneğini oluşturarak meta dosyası oluşturma seçeneklerini yapılandırın.`MetafileRenderingOptions` sınıf ve ayarlama`ScaleWmfFontsToMetafileSize`mülkiyet`true` WMF yazı tiplerinin meta dosya boyutuna ölçeklenmesini etkinleştirmek veya`false` Bu özelliği devre dışı bırakmak için.
 
  Bir örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıfını kullanarak ve daha önce yapılandırılan meta dosyası oluşturma seçeneklerini kullanarak.
 
- Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
+ Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document` yolu ve kaydetme seçeneklerini belirten sınıf.
 
 #### S: Bir PDF belgesinde WMF yazı tiplerini meta dosya boyutuna göre yeniden boyutlandırmanın faydaları nelerdir?
 C: Bir PDF belgesinde WMF yazı tiplerini meta dosya boyutuna göre yeniden boyutlandırmanın avantajları şunlardır:

@@ -94,7 +94,7 @@ Ciò completa l'implementazione della formattazione del numero di etichette dati
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 	// Oppure puoi impostare il codice formato da collegare a una cella sorgente,
-	// in questo caso NumberFormat verrà reimpostato su generale ed ereditato da una cella di origine.
+	//in questo caso NumberFormat verrà reimpostato su generale ed ereditato da una cella di origine.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
@@ -121,10 +121,10 @@ Aspose.Words per .NET è una libreria di elaborazione di documenti ricca di funz
 Sì, Aspose.Words per .NET offre ampie funzionalità per la formattazione di vari aspetti di un grafico. Oltre alle etichette dei dati, puoi personalizzare il tipo di grafico, i dati delle serie, le proprietà degli assi, la legenda, il titolo, l'area del tracciato e molti altri elementi del grafico. L'API offre un controllo capillare sull'aspetto e sulla formattazione del grafico.
 
 #### Q4. Posso applicare formati numerici diversi a etichette dati diverse nella stessa serie?
- Sì, Aspose.Words per .NET ti consente di applicare diversi formati numerici alle singole etichette di dati all'interno della stessa serie. Accedendo al`DataLabels` raccolta associata a una serie, è possibile impostare il file`FormatCode` proprietà di ciascuna etichetta dati per specificare il formato numerico desiderato. Ciò consente di presentare valori numerici in diversi formati all'interno dello stesso grafico.
+Sì, Aspose.Words per .NET ti consente di applicare diversi formati numerici alle singole etichette di dati all'interno della stessa serie. Accedendo al`DataLabels` raccolta associata a una serie, è possibile impostare il file`FormatCode` proprietà di ciascuna etichetta dati per specificare il formato numerico desiderato. Ciò consente di presentare valori numerici in diversi formati all'interno dello stesso grafico.
 
 #### Q5. Posso utilizzare formati numerici personalizzati per le etichette dati?
- Sì, Aspose.Words per .NET supporta formati numerici personalizzati per le etichette dei dati. È possibile specificare il formato numero desiderato impostando il`FormatCode`proprietà di un'etichetta dati in un codice di formato personalizzato. Ciò ti offre la flessibilità di applicare un'ampia gamma di formati numerici, come simboli di valuta, formati di data, valori percentuali e altro ancora.
+ Sì, Aspose.Words per .NET supporta formati numerici personalizzati per le etichette dei dati. È possibile specificare il formato numero desiderato impostando il`FormatCode` proprietà di un'etichetta dati in un codice di formato personalizzato. Ciò ti offre la flessibilità di applicare un'ampia gamma di formati numerici, come simboli di valuta, formati di data, valori percentuali e altro ancora.
 
 #### Q6. Posso salvare il grafico con etichette dati formattate in diversi formati?
- Sì, Aspose.Words per .NET ti consente di salvare il documento contenente il grafico con etichette dati formattate in vari formati, come DOCX, PDF, HTML e altro. Puoi scegliere il formato appropriato in base alle tue esigenze e utilizzare il file`Save` metodo del`Document` oggetto per salvare il documento. Le etichette dati formattate verranno conservate nel documento salvato.
+Sì, Aspose.Words per .NET ti consente di salvare il documento contenente il grafico con etichette dati formattate in vari formati, come DOCX, PDF, HTML e altro. Puoi scegliere il formato appropriato in base alle tue esigenze e utilizzare il file`Save` metodo del`Document` oggetto per salvare il documento. Le etichette dati formattate verranno conservate nel documento salvato.

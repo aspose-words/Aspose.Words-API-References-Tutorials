@@ -86,7 +86,7 @@ Detta slutför implementeringen av att infoga ett områdesdiagram med Aspose.Wor
 
 ### Slutsats
 
-den här handledningen har du lärt dig hur du infogar ett områdesdiagram i ett Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du skapa ett nytt dokument, infoga ett områdesdiagram, lägga till seriedata och spara dokumentet med diagrammet.
+I den här handledningen har du lärt dig hur du infogar ett områdesdiagram i ett Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du skapa ett nytt dokument, infoga ett områdesdiagram, lägga till seriedata och spara dokumentet med diagrammet.
 
 Aspose.Words för .NET tillhandahåller ett kraftfullt API för ordbehandling med diagram i Word-dokument. Med bara några rader kod kan du skapa proffsiga ytdiagram och anpassa dem efter dina krav. Ytdiagram används vanligtvis för att visa storleken och trenderna för data över tid eller kategorier.
 

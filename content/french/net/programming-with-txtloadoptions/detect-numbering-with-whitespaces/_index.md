@@ -45,7 +45,7 @@ Dans cette étape, nous créons une chaîne de texte qui simule un document text
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- Dans cette étape, nous configurons les options de chargement des documents. Nous créons un nouveau`TxtLoadOptions` objet et définissez le`DetectNumberingWithWhitespaces` propriété à`true`. Cela permettra à Aspose.Words de détecter les numéros de liste même s'ils sont suivis d'espaces blancs.
+ Dans cette étape, nous configurons les options de chargement des documents. Nous créons un nouveau`TxtLoadOptions` objet et définissez le`DetectNumberingWithWhitespaces`propriété à`true`. Cela permettra à Aspose.Words de détecter les numéros de liste même s'ils sont suivis d'espaces blancs.
 
 ## Étape 4 : Chargement du document et sauvegarde
 

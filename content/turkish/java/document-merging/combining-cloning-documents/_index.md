@@ -41,7 +41,7 @@ public class DocumentCombination {
 
 ## Adım 2: Kaynak Belgeleri Yükleyin
 
- Daha sonra birleştirmek istediğiniz kaynak belgeleri yüklemeniz gerekecektir. Birden fazla belgeyi ayrı örneklere yükleyebilirsiniz.`Document` sınıf.
+Daha sonra birleştirmek istediğiniz kaynak belgeleri yüklemeniz gerekecektir. Birden fazla belgeyi ayrı örneklere yükleyebilirsiniz.`Document` sınıf.
 
 ```java
 // Kaynak belgeleri yükleyin

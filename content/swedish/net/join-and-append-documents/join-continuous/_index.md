@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Steg 4: Bifoga källdokumentet
 
-Bifoga källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting` för att bevara originalformaten från källdokumentet.
+ Bifoga källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting` för att bevara originalformaten från källdokumentet.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

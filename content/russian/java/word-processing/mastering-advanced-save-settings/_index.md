@@ -54,7 +54,7 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 Верхние и нижние колонтитулы часто содержат важную информацию. Узнайте, как управлять верхними и нижними колонтитулами в документах и настраивать их.
 
 ```java
-//Добавьте заголовок на первую страницу
+// Добавьте заголовок на первую страницу
 Document doc = new Document();
 Section section = doc.getSections().get(0);
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
@@ -181,7 +181,7 @@ doc1.compare(doc2, "comparison_result.docx");
 
 ### Как установить размер страницы А4?
 
- Чтобы установить размер страницы А4, вы можете использовать`PageSetup`class и укажите размер бумаги следующим образом:
+ Чтобы установить размер страницы А4, вы можете использовать`PageSetup` class и укажите размер бумаги следующим образом:
 
 ```java
 Document doc = new Document();

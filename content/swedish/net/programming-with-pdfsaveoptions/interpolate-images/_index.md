@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Steg 3: Konfigurera alternativ för att spara som PDF med raminterpolation
 
- För att möjliggöra interpolering av bilder vid konvertering till PDF måste vi konfigurera`PdfSaveOptions` objekt genom att ställa in`InterpolateImages` egendom till`true`.
+ För att möjliggöra interpolering av bilder vid konvertering till PDF måste vi konfigurera`PdfSaveOptions` objekt genom att ställa in`InterpolateImages`egendom till`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
@@ -74,7 +74,7 @@ S: För att aktivera bildinterpolation vid konvertering till PDF med Aspose.Word
 
  Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
 
- Skapa en instans av`PdfSaveOptions` klass och ställ in`InterpolateImages` egendom till`true` för att möjliggöra bildinterpolering.
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`InterpolateImages`egendom till`true` för att möjliggöra bildinterpolation.
 
  Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
 

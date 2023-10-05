@@ -64,7 +64,7 @@ Ciò completa l'implementazione dell'aggiunta di un documento con le opzioni del
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// Specificare che se la numerazione è in conflitto nei documenti di origine e di destinazione,
-	// verrà quindi utilizzata la numerazione del documento di origine.
+	//verrà quindi utilizzata la numerazione del documento di origine.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

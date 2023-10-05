@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Шаг 3. Настройте параметры сохранения в формате PDF с встраиванием шрифтов.
 
- Чтобы пропустить встраивание шрифтов Arial и Times Roman в сгенерированный PDF-файл, нам необходимо настроить`PdfSaveOptions` объект и установите`FontEmbeddingMode` собственность`PdfFontEmbeddingMode.EmbedAll`.
+ Чтобы пропустить встраивание шрифтов Arial и Times Roman в сгенерированный PDF-файл, нам необходимо настроить`PdfSaveOptions` объект и установите`FontEmbeddingMode`собственность`PdfFontEmbeddingMode.EmbedAll`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 
  Загрузите документ, который хотите обработать, используя`Document` класс и указанный путь к документу.
 
- Создайте экземпляр`PdfSaveOptions` класс и установите`FontEmbeddingMode` собственность`PdfFontEmbeddingMode.EmbedAll`. В созданный PDF-файл будут вставлены все шрифты, кроме Arial и Times Roman.
+ Создайте экземпляр`PdfSaveOptions` класс и установите`FontEmbeddingMode`собственность`PdfFontEmbeddingMode.EmbedAll`. В созданный PDF-файл будут вставлены все шрифты, кроме Arial и Times Roman.
 
  Использовать`Save` метод`Document` объект для сохранения документа в формате PDF с указанием ранее настроенных параметров сохранения.
 

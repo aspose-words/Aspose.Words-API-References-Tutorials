@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Steg 4: Ställ in alternativ för smart stilbeteende
 
-För att aktivera smart stilbeteende under tilläggsåtgärden måste du skapa en instans av`ImportFormatOptions` och ställ in`SmartStyleBehavior` egendom till`true`.
+För att aktivera smart stilbeteende under tilläggsåtgärden måste du skapa en instans av`ImportFormatOptions` och ställ in`SmartStyleBehavior`egendom till`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };

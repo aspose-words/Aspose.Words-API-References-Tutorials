@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Шаг 4. Установите форматирование абзаца «Сохранить дальше» для исходного документа.
 
- Чтобы сохранить абзацы в исходном документе вместе, вы можете перебрать каждый абзац в документе и установить`KeepWithNext` собственность`true`.
+Чтобы сохранить абзацы в исходном документе вместе, вы можете перебрать каждый абзац в документе и установить`KeepWithNext`собственность`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

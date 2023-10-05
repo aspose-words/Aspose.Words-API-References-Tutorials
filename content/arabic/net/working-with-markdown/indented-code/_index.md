@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## الخطوة 2: إضافة نمط للتعليمات البرمجية ذات المسافة البادئة
 
-سنضيف نمطًا مخصصًا للرمز ذي المسافة البادئة باستخدام`Styles.Add` طريقة`Document` هدف. في هذا المثال، نقوم بإنشاء نمط يسمى "IndentedCode" للتعليمات البرمجية ذات المسافة البادئة.
+ سنضيف نمطًا مخصصًا للرمز ذي المسافة البادئة باستخدام`Styles.Add` طريقة`Document` هدف. في هذا المثال، نقوم بإنشاء نمط يسمى "IndentedCode" للتعليمات البرمجية ذات المسافة البادئة.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

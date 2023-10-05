@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Paso 3: insertar y configurar una forma
- Insertar una forma en el documento usando el`InsertShape` método de la`DocumentBuilder` objeto. Establezca las dimensiones deseadas para la forma.
+Insertar una forma en el documento usando el`InsertShape` método de la`DocumentBuilder` objeto. Establezca las dimensiones deseadas para la forma.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);

@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### س: كيف يمكنني الوصول إلى النسخة المعدلة من المستند في Aspose.Words لـ .NET؟
 
- ج: استخدم`RevisionsView` ملكية`Document` كائن للوصول إلى النسخة المنقحة من الوثيقة. يمكنك ضبط قيمة`RevisionsView` الملكية ل`RevisionsView.Final` لإظهار النسخة النهائية بدون المراجعات.
+ ج: استخدم`RevisionsView` ملكية`Document` كائن للوصول إلى النسخة المنقحة من الوثيقة. يمكنك ضبط قيمة`RevisionsView`الملكية ل`RevisionsView.Final` لإظهار النسخة النهائية بدون المراجعات.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;

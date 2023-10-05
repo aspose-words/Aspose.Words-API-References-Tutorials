@@ -414,7 +414,7 @@ Puede consultar el sitio web de Aspose o el repositorio de Maven para obtener la
 Sí, Aspose.Words para Java es compatible con Java 11 y versiones posteriores.
 
 ### ¿Cómo puedo configurar márgenes de página para secciones específicas de mi documento?
- Puede establecer márgenes de página para secciones específicas de su documento usando el`PageSetup` clase. He aquí un ejemplo:
+Puede establecer márgenes de página para secciones específicas de su documento usando el`PageSetup` clase. He aquí un ejemplo:
 
 ```java
 Section section = doc.getSections().get(0); // Obtener la primera sección

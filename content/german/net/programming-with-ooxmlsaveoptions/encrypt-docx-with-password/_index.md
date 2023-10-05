@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-In diesem Schritt konfigurieren wir die OOXML-Speicheroptionen, indem wir eine neue erstellen`OoxmlSaveOptions` Objekt. Wir geben das gewünschte Passwort zum Verschlüsseln des Dokuments an, indem wir das festlegen`Password` -Eigenschaft Ihrem benutzerdefinierten Passwort zu.
+ In diesem Schritt konfigurieren wir die OOXML-Speicheroptionen, indem wir eine neue erstellen`OoxmlSaveOptions` Objekt. Wir geben das gewünschte Passwort zum Verschlüsseln des Dokuments an, indem wir das festlegen`Password` -Eigenschaft Ihrem benutzerdefinierten Passwort zu.
 
 ## Schritt 4: Verschlüsseln des Dokuments mit Passwort
 

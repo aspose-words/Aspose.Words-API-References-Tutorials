@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### D: Come posso accedere alla versione rivista di un documento in Aspose.Words per .NET?
 
- R: Usa il`RevisionsView` proprietà del`Document` opporsi all'accesso alla versione rivista del documento. È possibile impostare il valore di`RevisionsView` proprietà a`RevisionsView.Final` per mostrare la versione finale senza le revisioni.
+ R: Usa il`RevisionsView` proprietà del`Document` opporsi all'accesso alla versione rivista del documento. È possibile impostare il valore di`RevisionsView`proprietà a`RevisionsView.Final` per mostrare la versione finale senza le revisioni.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;

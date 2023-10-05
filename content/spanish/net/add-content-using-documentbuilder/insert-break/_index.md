@@ -63,7 +63,7 @@ Recuerde ajustar el código de acuerdo con sus requisitos específicos y mejorar
 
 
 ## Conclusión
-¡Felicidades! Ha aprendido con éxito cómo insertar saltos de página en un documento de Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede controlar la paginación y el diseño de su documento insertando saltos de página en las posiciones deseadas.
+¡Felicidades! Ha aprendido con éxito cómo insertar saltos de página en un documento de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede controlar la paginación y el diseño de su documento insertando saltos de página en las posiciones deseadas.
 
 ### Preguntas frecuentes
 

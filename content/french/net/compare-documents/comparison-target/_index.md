@@ -9,7 +9,7 @@ url: /fr/net/compare-documents/comparison-target/
 ---
 Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la cible de comparaison dans la fonctionnalité de document Word d'Aspose.Words pour .NET.
 
-## Étape 1 : Introduction
+## Étape 1 : Présentation
 
 La fonctionnalité de comparaison de cible d'Aspose.Words for .NET vous permet de comparer deux documents et de générer un nouveau document contenant les modifications apportées au document cible. Cela peut être utile pour suivre les modifications apportées entre les différentes versions d'un document.
 

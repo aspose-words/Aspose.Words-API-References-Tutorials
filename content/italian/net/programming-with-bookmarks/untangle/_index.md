@@ -56,7 +56,7 @@ Ecco l'esempio di codice sorgente completo per districare i segnalibri annidati 
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		//Se entrambe le righe vengono trovate correttamente e l'inizio e la fine del segnalibro sono contenuti in righe adiacenti,
+		// Se entrambe le righe vengono trovate correttamente e l'inizio e la fine del segnalibro sono contenuti in righe adiacenti,
 		// sposta il nodo finale del segnalibro alla fine dell'ultimo paragrafo nell'ultima cella della riga superiore.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

@@ -66,7 +66,7 @@ Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 NodeCollection children = paragraph.ChildNodes;
 foreach (Node child in children)
 {
-	//Un paragraphe peut contenir des enfants de différents types tels que des pistes, des formes et autres.
+	// Un paragraphe peut contenir des enfants de différents types tels que des pistes, des formes et autres.
 	if (child.NodeType == NodeType.Run)
 	{
 		Run run = (Run) child;
@@ -90,11 +90,11 @@ R : Un nœud enfant dans Node.js fait référence à un nœud directement conte
 
 #### Q : Comment accéder aux propriétés d'un nœud enfant ?
 
- R : Pour accéder aux propriétés d'un nœud enfant dans Node.js, vous pouvez utiliser les méthodes et propriétés fournies par l'API XML utilisée dans votre environnement Node.js. Par exemple, vous pouvez utiliser des méthodes comme`getAttribute`pour obtenir la valeur d'un attribut spécifique d'un nœud enfant.
+ R : Pour accéder aux propriétés d'un nœud enfant dans Node.js, vous pouvez utiliser les méthodes et propriétés fournies par l'API XML utilisée dans votre environnement Node.js. Par exemple, vous pouvez utiliser des méthodes comme`getAttribute` pour obtenir la valeur d'un attribut spécifique d'un nœud enfant.
 
 #### Q : Pouvons-nous modifier les nœuds enfants d’un nœud ?
 
- R : Oui, il est possible de modifier les nœuds enfants d'un nœud dans Node.js à l'aide des méthodes et propriétés fournies par l'API XML utilisée dans votre environnement Node.js. Par exemple, vous pouvez utiliser des méthodes comme`appendChild` ou`removeChild` pour ajouter ou supprimer des nœuds enfants d’un nœud spécifique.
+ : Oui, il est possible de modifier les nœuds enfants d'un nœud dans Node.js à l'aide des méthodes et propriétés fournies par l'API XML utilisée dans votre environnement Node.js. Par exemple, vous pouvez utiliser des méthodes comme`appendChild` ou`removeChild` pour ajouter ou supprimer des nœuds enfants d’un nœud spécifique.
 
 #### Q : Comment parcourir tous les nœuds enfants d’un nœud ?
 

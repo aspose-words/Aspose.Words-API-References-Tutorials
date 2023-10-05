@@ -58,15 +58,15 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel gereksinimlerinize göre değ
 
 #### S: Aspose.Words'e metin tipi form alanını nasıl ekleyebilirim?
 
- C: Aspose.Words'e metin tipinde bir form alanı eklemek için`FormField` sınıfını seçin ve ayarlayın`Type` mülkiyet`FormFieldType.Text`. Ad, etiket ve seçenekler gibi diğer özellikleri de özelleştirebilirsiniz.
+ C: Aspose.Words'e metin tipinde bir form alanı eklemek için`FormField` sınıfını seçin ve ayarlayın`Type`mülkiyet`FormFieldType.Text`. Ad, etiket ve seçenekler gibi diğer özellikleri de özelleştirebilirsiniz.
 
 #### S: Bir belgede onay kutusu tipinde bir form alanı oluşturmak mümkün mü?
 
- C: Evet, Aspose.Words belgesinde onay kutusu tipinde bir form alanı oluşturmak mümkündür. Şunu kullanabilirsiniz:`FormField` sınıfını seçin ve ayarlayın`Type` mülkiyet`FormFieldType.CheckBox` Bir onay kutusu oluşturmak için. Daha sonra onay kutusunun özelliklerini gerektiği gibi özelleştirebilirsiniz.
+ C: Evet, Aspose.Words belgesinde onay kutusu tipinde bir form alanı oluşturmak mümkündür. Şunu kullanabilirsiniz:`FormField` sınıfını seçin ve ayarlayın`Type`mülkiyet`FormFieldType.CheckBox` Bir onay kutusu oluşturmak için. Daha sonra onay kutusunun özelliklerini gerektiği gibi özelleştirebilirsiniz.
 
 #### S: Bir belgeye açılır tipte bir form alanını nasıl ekleyebilirim?
 
- C: Aspose.Words belgesine açılır tipte bir form alanı eklemek için`FormField` sınıfını seçin ve ayarlayın`Type` mülkiyet`FormFieldType.DropDown` . Daha sonra açılır menü seçeneklerini kullanarak ayarlayabilirsiniz.`DropDownItems` mülk.
+ C: Aspose.Words belgesine açılır tipte bir form alanı eklemek için`FormField` sınıfını seçin ve ayarlayın`Type`mülkiyet`FormFieldType.DropDown` . Daha sonra açılır menü seçeneklerini kullanarak ayarlayabilirsiniz.`DropDownItems` mülk.
 
 #### S: Aspose.Words'te bir form alanı için varsayılan bir değer ayarlayabilir miyim?
 

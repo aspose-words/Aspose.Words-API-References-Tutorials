@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: إعداد خيارات تنسيق الاستيراد
 
- إنشاء مثيل لـ`ImportFormatOptions` فئة وتعيين`IgnoreTextBoxes` الملكية ل`false`. وهذا يضمن تضمين مربعات النص أثناء عملية الإلحاق مع الحفاظ على تنسيقها.
+ إنشاء مثيل لـ`ImportFormatOptions` فئة وتعيين`IgnoreTextBoxes`الملكية ل`false`. وهذا يضمن تضمين مربعات النص أثناء عملية الإلحاق مع الحفاظ على تنسيقها.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };

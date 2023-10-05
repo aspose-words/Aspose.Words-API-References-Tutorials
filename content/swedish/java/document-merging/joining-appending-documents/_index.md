@@ -17,7 +17,7 @@ Aspose.Words för Java är ett funktionsrikt bibliotek som låter dig arbeta med
 Innan vi dyker in i koden, se till att du har följande förutsättningar på plats:
 
 - Java Development Kit (JDK) installerat på ditt system.
-- Aspose.Words för Java-bibliotek. Du kan ladda ner den från[här](https://releases.aspose.com/words/java/).
+-  Aspose.Words för Java-bibliotek. Du kan ladda ner den från[här](https://releases.aspose.com/words/java/).
 
 ## Steg 1: Konfigurera ditt Java-projekt
 
@@ -53,7 +53,7 @@ Document doc2 = new Document("document2.docx");
 
 ## Steg 4: Sammanfoga dokument
 
-Nu när vi har laddat våra dokument, låt oss se hur vi sammanfogar dem. I det här exemplet kommer vi att gå med`doc2` till slutet av`doc1`:
+ Nu när vi har laddat våra dokument, låt oss se hur vi sammanfogar dem. I det här exemplet kommer vi att gå med`doc2` till slutet av`doc1`:
 
 ```java
 // Gå med i dokument

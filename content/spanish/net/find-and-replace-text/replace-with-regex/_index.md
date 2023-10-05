@@ -50,7 +50,7 @@ doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 
 ## Paso 5: guardar el documento modificado
 
- Finalmente, guardamos el documento modificado en un directorio específico usando el`Save` método:
+Finalmente, guardamos el documento modificado en un directorio específico usando el`Save` método:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
@@ -107,7 +107,7 @@ builder.Writeln("sad mad bad");
 
 #### P: ¿Cuáles son las opciones Buscar y Reemplazar en Aspose.Words para .NET?
 
- R: Opciones de buscar y reemplazar en Aspose. Words para .NET le permite configurar cómo se debe realizar la operación de búsqueda y reemplazo. Algunas opciones comúnmente utilizadas incluyen`MatchCase` (para especificar si la búsqueda distingue entre mayúsculas y minúsculas o no),`FindWholeWordsOnly` (para unir palabras completas únicamente), y`Direction` (para especificar la dirección de búsqueda). Puede personalizar estas opciones según sus requisitos específicos.
+ R: Opciones de buscar y reemplazar en Aspose. Words para .NET le permite configurar cómo se debe realizar la operación de búsqueda y reemplazo. Algunas opciones comúnmente utilizadas incluyen`MatchCase` (para especificar si la búsqueda distingue entre mayúsculas y minúsculas o no),`FindWholeWordsOnly` (para unir palabras completas solamente), y`Direction` (para especificar la dirección de búsqueda). Puede personalizar estas opciones según sus requisitos específicos.
 
 #### P: ¿Cómo puedo realizar el reemplazo de texto usando una expresión regular en Aspose.Words para .NET?
 

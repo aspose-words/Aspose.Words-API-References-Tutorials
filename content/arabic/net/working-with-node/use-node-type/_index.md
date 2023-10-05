@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## الخطوة 3: احصل على نوع عقدة المستند
-للحصول على نوع العقدة للمستند، نستخدم`NodeType` ملكية.
+ للحصول على نوع العقدة للمستند، نستخدم`NodeType` ملكية.
 
 ```csharp
 NodeType type = doc.NodeType;

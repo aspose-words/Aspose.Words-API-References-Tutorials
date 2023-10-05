@@ -37,4 +37,4 @@ Extrahera effektivt innehåll från Word-dokument med Aspose.Words för Python. 
 ### [Avancerade sök- och ersätt-tekniker i Word-dokument](./find-replace-documents/)
 Lär dig avancerade sök- och ersätttekniker i Word-dokument med Aspose.Words för Python. Byt ut text, använd regex, formatering och mer.
 ### [Ta bort och förfina innehåll i Word-dokument](./remove-content-documents/)
-Lär dig hur du effektivt tar bort och förfinar innehåll i Word-dokument med Aspose.Words för Python. Steg-för-steg guide med exempel på källkod.
+Lär dig hur du effektivt tar bort och förfinar innehåll i Word-dokument med Aspose.Words för Python. Steg-för-steg-guide med exempel på källkod.

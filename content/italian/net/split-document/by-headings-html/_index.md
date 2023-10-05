@@ -82,4 +82,4 @@ Il codice sorgente fornito dimostra la suddivisione del documento Word in parti 
 
 #### Posso dividere il documento in base a più criteri?
 
- Sì, puoi dividere il documento in base a più criteri combinando di conseguenza le opzioni dei criteri. Ad esempio, puoi dividere il documento sia per intestazione che per pagina impostando il file`DocumentSplitCriteria` proprietà a`HeadingParagraph | Page`. Ciò dividerà il documento in ogni intestazione e in ogni pagina, creando parti più piccole basate su entrambi i criteri.
+ Sì, puoi dividere il documento in base a più criteri combinando di conseguenza le opzioni dei criteri. Ad esempio, puoi dividere il documento sia per intestazione che per pagina impostando il file`DocumentSplitCriteria`proprietà a`HeadingParagraph | Page`. Ciò dividerà il documento in ogni intestazione e in ogni pagina, creando parti più piccole basate su entrambi i criteri.

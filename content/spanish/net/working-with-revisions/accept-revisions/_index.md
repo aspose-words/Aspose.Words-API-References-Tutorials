@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Agregue texto al primer párrafo y luego agregue dos párrafos más.
+// Agregue texto al primer párrafo y luego agregue dos párrafos más.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -92,12 +92,12 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Agregue texto al primer párrafo y luego agregue dos párrafos más.
+// Agregue texto al primer párrafo y luego agregue dos párrafos más.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
-// Tenemos tres párrafos, ninguno de los cuales registrado como ningún tipo de revisión.
+//Tenemos tres párrafos, ninguno de los cuales registrado como ningún tipo de revisión.
 // Si agregamos/eliminamos algún contenido en el documento mientras realizamos el seguimiento de las revisiones,
 // se mostrarán como tales en el documento y podrán ser aceptados/rechazados.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
@@ -123,7 +123,7 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // Al detener el seguimiento de las revisiones, este texto aparece como texto normal.
-//Las revisiones no se cuentan cuando se modifica el documento.
+// Las revisiones no se cuentan cuando se modifica el documento.
 doc.StopTrackRevisions();
 
 // Guarde el documento.
@@ -139,7 +139,7 @@ En este tutorial, aprendimos cómo aceptar revisiones en un documento de Word ut
 
 #### Solución 1:
 
- R: Para habilitar el seguimiento de revisiones en Aspose.Words para .NET, use el`StartTrackRevisions` método de la`Document` objeto y especifique el nombre del autor y la fecha de inicio para el seguimiento de la revisión.
+ R: Para habilitar el seguimiento de revisiones en Aspose.Words para .NET, utilice el`StartTrackRevisions` método de la`Document` objeto y especifique el nombre del autor y la fecha de inicio para el seguimiento de la revisión.
 
 ```csharp
 doc.StartTrackRevisions("John Doe", DateTime.Now);

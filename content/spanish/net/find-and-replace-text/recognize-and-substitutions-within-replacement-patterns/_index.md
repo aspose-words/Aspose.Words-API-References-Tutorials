@@ -34,7 +34,7 @@ builder.Write("Jason gives money to Paul.");
 
 ## Paso 3: Reconocimientos y Sustituciones en Patrones de Reemplazo
 
- Ahora usaremos el`Range.Replace` función para realizar búsqueda y reemplazo de texto usando una expresión regular para reconocer patrones específicos. En nuestro ejemplo, usamos la expresión regular`([A-z]+) gives money to ([A-z]+)` Reconocer frases en las que alguien da dinero a otra persona. Usamos el patrón de reemplazo.`$2 takes money from $1` realizar la sustitución invirtiendo los roles. El uso de`$1` y`$2` se refiere a los grupos capturados por la expresión regular:
+ Ahora usaremos el`Range.Replace` función para realizar búsqueda y reemplazo de texto utilizando una expresión regular para reconocer patrones específicos. En nuestro ejemplo, usamos la expresión regular`([A-z]+) gives money to ([A-z]+)` Reconocer frases en las que alguien da dinero a otra persona. Usamos el patrón de reemplazo.`$2 takes money from $1` realizar la sustitución invirtiendo los roles. El uso de`$1` y`$2` se refiere a los grupos capturados por la expresión regular:
 
 ```csharp
 Regex regex = new Regex(@"([A-z]+) gives money to ([A-z]+)");

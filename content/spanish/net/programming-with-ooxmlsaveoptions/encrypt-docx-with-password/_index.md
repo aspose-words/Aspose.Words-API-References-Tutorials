@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-En este paso, configuramos las opciones de guardado de OOXML creando un nuevo`OoxmlSaveOptions` objeto. Especificamos la contraseña deseada para cifrar el documento configurando el`Password` propiedad a su contraseña personalizada.
+ En este paso, configuramos las opciones de guardado de OOXML creando un nuevo`OoxmlSaveOptions` objeto. Especificamos la contraseña deseada para cifrar el documento configurando el`Password` propiedad a su contraseña personalizada.
 
 ## Paso 4: cifrar el documento con contraseña
 

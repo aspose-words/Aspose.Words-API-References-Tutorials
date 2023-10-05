@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 
 ## Slutsats
 
-den här handledningen utforskade vi funktionaliteten för att få ett JPEG-sidintervall med Aspose.Words för .NET. Vi lärde oss hur man konverterar ett visst antal sidor i ett dokument till bilder i JPEG-format, samtidigt som vi anpassar sparalternativen.
+I den här handledningen utforskade vi funktionaliteten för att få ett JPEG-sidintervall med Aspose.Words för .NET. Vi lärde oss hur man konverterar ett visst antal sidor i ett dokument till bilder i JPEG-format, samtidigt som vi anpassar sparalternativen.
 
 Den här funktionen är användbar när du vill extrahera specifika sidor från ett dokument och spara dem som JPEG-bilder. Du kan också justera bildernas ljusstyrka, kontrast och horisontella upplösning för att uppnå personliga resultat.
 

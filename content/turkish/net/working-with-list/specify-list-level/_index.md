@@ -89,8 +89,8 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Microsoft Word liste şablonlarından birine dayalı numaralandırılmış bir liste oluşturun
-// ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
+// Microsoft Word liste şablonlarından birine dayalı numaralandırılmış bir liste oluşturun
+//ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 // Bu listede dokuz seviye var, hepsini deneyelim.
@@ -101,7 +101,7 @@ for (int i = 0; i < 9; i++)
 }
 
 // Microsoft Word liste şablonlarından birini temel alan madde işaretli bir liste oluşturun
-// ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
+//ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
 for (int i = 0; i < 9; i++)

@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## 3. Adım: Kaynak belgeyi hedef belgeye ekleyin
 
- Kullan`AppendDocument` Kaynak belgenin ekleneceği hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting`Kaynak belgenin orijinal formatını korumak için içe aktarma formatı modu olarak.
+ Kullan`AppendDocument` Kaynak belgenin ekleneceği hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` Kaynak belgenin orijinal formatını korumak için içe aktarma formatı modu olarak.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

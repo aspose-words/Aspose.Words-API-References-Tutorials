@@ -14,7 +14,7 @@ I denna steg-för-steg handledning kommer vi att visa dig hur du använder avsta
 
 ## Steg 1: Spara avstavningspåminnelse
 
-Först registrerar vi avstavningsåteruppringningen med en anpassad`CustomHyphenationCallback` klass. Detta gör att vi kan hantera ordavstavning enligt våra egna regler:
+ Först registrerar vi avstavningsåteruppringningen med en anpassad`CustomHyphenationCallback` klass. Detta gör att vi kan hantera ordavstavning enligt våra egna regler:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
@@ -105,4 +105,4 @@ S: Att använda en kursplansförstärkare kan vara användbart i flera scenarier
 
 #### F: Hur kan jag testa anpassad kursplanering med en påminnelse om kursplanering i Aspose.Words?
 
-S: För att testa anpassad stavning med en påminnelse om stavning i Aspose.Words, kan du skapa ett testdokument som innehåller ord som du vill tillämpa anpassade stavningsregler för. Sedan kan du ställa in din anpassade återuppringning, ring till`Document.Range.Replace()` metod för att ersätta orden i dokumentet och använd`Hyphenate()` metod för`Hyphenation` klass för att få stavning av orden . Du kan sedan formatera de stavelseordnade orden efter behov, till exempel genom att lägga till bindestreck mellan stavelserna.
+ S: För att testa anpassad stavning med en påminnelse om stavning i Aspose.Words, kan du skapa ett testdokument som innehåller ord som du vill tillämpa anpassade stavningsregler för. Sedan kan du ställa in din anpassade återuppringning, ring till`Document.Range.Replace()` metod för att ersätta orden i dokumentet och använd`Hyphenate()` metod för`Hyphenation` klass för att få stavning av orden . Du kan sedan formatera de stavelseordnade orden efter behov, till exempel genom att lägga till bindestreck mellan stavelserna.

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## الخطوة 3: قم بتكوين خيارات الحفظ بتنسيق PDF مع خاصية "آخر طباعة" محدثة
 
- لتمكين تحديث خاصية "آخر طباعة" عند التحويل إلى PDF، نحتاج إلى تكوين`PdfSaveOptions` الكائن وتعيين`UpdateLastPrintedProperty` الملكية ل`true`.
+ لتمكين تحديث خاصية "آخر طباعة" عند التحويل إلى PDF، نحتاج إلى تكوين`PdfSaveOptions` الكائن وتعيين`UpdateLastPrintedProperty`الملكية ل`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
  إنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`UpdateLastPrintedProperty` الملكية ل`true` لتمكين تحديث خاصية "آخر طباعة".
+ إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`UpdateLastPrintedProperty`الملكية ل`true` لتمكين تحديث خاصية "آخر طباعة".
 
  استخدم ال`Save` طريقة`Document`فئة لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
 

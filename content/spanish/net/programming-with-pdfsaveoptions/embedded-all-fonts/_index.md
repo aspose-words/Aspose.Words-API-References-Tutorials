@@ -77,7 +77,7 @@ R: Para incrustar todas las fuentes en un documento PDF usando Aspose.Words para
 
  Cargue el documento que desea procesar utilizando el`Document` clase y la ruta del documento.
 
- Configure las opciones para guardar PDF creando una instancia del`PdfSaveOptions` clase y establecer el`EmbedFullFonts` propiedad a`true`. Esto garantiza que todas las fuentes utilizadas en el documento se incrustarán en el archivo PDF generado.
+ Configure las opciones para guardar PDF creando una instancia del`PdfSaveOptions` clase y establecer el`EmbedFullFonts`propiedad a`true`. Esto garantiza que todas las fuentes utilizadas en el documento se incrustarán en el archivo PDF generado.
 
  Guarde el documento en formato PDF con fuentes incrustadas usando el`Save` método de la`Document`objeto, especificando el nombre del archivo de salida y las opciones de guardado configuradas previamente.
 

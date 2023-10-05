@@ -25,7 +25,7 @@ Lägga till innehåll med DocumentBuilder är en omfattande resurs som leder dig
 | [Infoga HTML i Word-dokument](./insert-html/) | Lär dig hur du infogar HTML-innehåll i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide. |
 | [Infoga hyperlänk i Word-dokument](./insert-hyperlink/) | Lär dig hur du infogar hyperlänkar i Word-dokument med hjälp av Aspose.Words för .NET Steg-för-steg-guide. |
 | [Infoga innehållsförteckning i Word-dokument](./insert-table-of-contents/) | lär dig hur du infogar en innehållsförteckning i Word-dokument med Aspose.Words för .NET |
-| [Infoga inline bild i Word-dokument](./insert-inline-image/) | Lär dig hur du infogar inline-bilder i Word-dokument med Aspose.Words för .NET. |
+| [Infoga inbyggd bild i Word-dokument](./insert-inline-image/) | Lär dig hur du infogar inline-bilder i Word-dokument med Aspose.Words för .NET. |
 | [Infoga flytande bild i Word-dokument](./insert-floating-image/) | Lär dig hur du infogar flytande bilder i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide. |
 | [Infoga stycke i Word-dokument](./insert-paragraph/) | Lär dig hur du infogar formaterade stycken i Word-dokument med Aspose.Words för .NET. |
 | [Infoga TCField i Word-dokument](./insert-tcfield/) | Lär dig hur du infogar och manipulerar TCField i Word-dokument med C# och Aspose.Words för .NET i denna steg-för-steg-guide. |
@@ -35,5 +35,5 @@ Lägga till innehåll med DocumentBuilder är en omfattande resurs som leder dig
 | [Flytta till sidhuvuden Sidfötter i Word-dokument](./move-to-headers-footers/) | Lär dig hur du använder Aspose.Words för .NET för att navigera och ändra sidhuvuden och sidfötter i Word-dokument med denna steg-för-steg-guide. |
 | [Flytta till stycke i Word-dokument](./move-to-paragraph/) | Lär dig hur du använder Aspose.Words för .NET:s Move To Paragraph-funktion för att navigera och manipulera stycken i Word-dokument programmatiskt. |
 | [Flytta till tabellcell i Word-dokument](./move-to-table-cell/) | Steg-för-steg-guide för att använda Flytta till tabellcell i Word-dokumentfunktionen i Aspose.Words för .NET |
-| [Flytta till bokmärke slut i Word-dokument](./move-to-bookmark-end/) | Lär dig hur du använder Aspose.Words för .NET för att flytta till slutet av ett bokmärke i Word-dokument med denna steg-för-steg-guide. |
+| [Flytta till bokmärkesslut i Word-dokument](./move-to-bookmark-end/) | Lär dig hur du använder Aspose.Words för .NET för att flytta till slutet av ett bokmärke i Word-dokument med denna steg-för-steg-guide. |
 | [Flytta för att slå samman fält i Word-dokument](./move-to-merge-field/) | Lär dig hur du implementerar funktionen Move To Merge Field i Word-dokumentfunktionen i Aspose.Words för .NET med hjälp av en steg-för-steg-guide. |

@@ -53,7 +53,7 @@ run.getFont().setColor(Color.RED);
 
 ## SaveOptions ile belge dönüştürme
 
- Şimdi bu eğitimin özüne geçelim: Aspose.Words kullanarak belge dönüştürme. Bir belgeyi dönüştürmek için şunu kullanmanız gerekir:`Save` yöntemini seçin ve SaveOptions'ı kullanarak çıktı formatını belirtin. Bir belgeyi PDF'ye dönüştürmenin bir örneğini burada bulabilirsiniz:
+ Şimdi bu eğitimin özüne geçelim: Aspose.Words kullanarak belge dönüştürme. Bir belgeyi dönüştürmek için şunu kullanmanız gerekir:`Save`yöntemini seçin ve SaveOptions'ı kullanarak çıktı formatını belirtin. Bir belgeyi PDF'ye dönüştürmenin bir örneğini burada bulabilirsiniz:
 
 ```java
 // Çıktı formatını PDF olarak belirtin
@@ -77,7 +77,7 @@ Bu kapsamlı kılavuzda Aspose.Words for Java kullanarak belge dönüştürme d�
 
 ### Aspose.Words for Java'yı nasıl yüklerim?
 
- Aspose.Words for Java'nın kurulumu basittir. Ziyaret edin[indirme sayfası](https://releases.aspose.com/words/java/) ve geliştirme ortamınıza yönelik kurulum talimatlarını izleyin.
+ Aspose.Words for Java'nın kurulumu basittir. Ziyaret edin[indirme sayfası](https://releases.aspose.com/words/java/)ve geliştirme ortamınıza yönelik kurulum talimatlarını izleyin.
 
 ### Aspose.Words'deki SaveOptions nedir?
 

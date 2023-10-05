@@ -48,7 +48,7 @@ doc.StopTrackRevisions();
 
 ## Steg 4: Använd funktionen "Ignorera text i radera ändringar".
 
- Nu när vi har förberett vårt dokument genom att ta bort ett stycke kan vi aktivera funktionen "Ignorera text inuti radera ändringar" med en`FindReplaceOptions` objekt. Vi kommer att ställa in`IgnoreDeleted` egendom till`true`:
+ Nu när vi har förberett vårt dokument genom att ta bort ett stycke kan vi aktivera funktionen "Ignorera text inuti radera ändringar" med en`FindReplaceOptions` objekt. Vi kommer att ställa in`IgnoreDeleted`egendom till`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -65,7 +65,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Steg 6: Visar den modifierade dokumentutmatningen
 
-Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
+ Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -73,7 +73,7 @@ Console.WriteLine(doc.GetText());
 
 ## Steg 7: Ändra alternativen för att inkludera raderad text
 
- Om vi vill inkludera raderad text i utdataresultatet kan vi ändra alternativen för att inte ignorera raderad text. För detta kommer vi att ställa in`IgnoreDeleted` egendom till`false`:
+ Om vi vill inkludera raderad text i utdataresultatet kan vi ändra alternativen för att inte ignorera raderad text. För detta kommer vi att ställa in`IgnoreDeleted`egendom till`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
@@ -164,7 +164,7 @@ doc.StopTrackRevisions();
 
 #### F: Hur aktiverar man funktionen "Ignorera text i radera ändringar" i Aspose.Words för .NET?
 
- S: Nu när vi har förberett vårt dokument genom att ta bort ett stycke kan vi aktivera funktionen "Ignorera text inuti radera ändringar" med en`FindReplaceOptions` objekt. Vi kommer att ställa in`IgnoreDeleted` egendom till`true`:
+ S: Nu när vi har förberett vårt dokument genom att ta bort ett stycke kan vi aktivera funktionen "Ignorera text inuti radera ändringar" med en`FindReplaceOptions` objekt. Vi kommer att ställa in`IgnoreDeleted`egendom till`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -189,7 +189,7 @@ Console.WriteLine(doc.GetText());
 
 #### F: Hur inkluderar man raderad text i utdataresultatet i Aspose.Words för .NET?
 
- S: Om vi vill inkludera raderad text i utdataresultatet kan vi ändra alternativen för att inte ignorera raderad text. För detta kommer vi att ställa in`IgnoreDeleted` egendom till`false`:
+ S: Om vi vill inkludera raderad text i utdataresultatet kan vi ändra alternativen för att inte ignorera raderad text. För detta kommer vi att ställa in`IgnoreDeleted`egendom till`false`:
 
 ```csharp
 options. IgnoreDeleted = false;

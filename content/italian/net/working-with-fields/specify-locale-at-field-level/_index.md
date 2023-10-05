@@ -34,7 +34,7 @@ Field field = builder. InsertField(FieldType.FieldDate, true);
 field.LocaleId = 1049;
 ```
 
- Utilizziamo il generatore di documenti per inserire un campo di tipo`FieldType.FieldDate` nel documento. Impostando il`LocaleId` proprietà a`1049`, specifichiamo la localizzazione russa per questo campo.
+ Utilizziamo il generatore di documenti per inserire un campo di tipo`FieldType.FieldDate` nel documento. Impostando il`LocaleId`proprietà a`1049`, specifichiamo la localizzazione russa per questo campo.
 
 ## Passaggio 4: salva il documento modificato
 
@@ -62,7 +62,7 @@ Questo era un codice sorgente di esempio per specificare la localizzazione a liv
 
 ### Domande frequenti
 
-#### D: Come posso specificare le impostazioni locali a livello di campo in Aspose.Words per .NET?
+#### D: Come posso specificare le impostazioni internazionali a livello di campo in Aspose.Words per .NET?
 
  R: Per specificare la locale a livello di campo in Aspose.Words per .NET, è possibile utilizzare il file`FieldOptions` classe e il suo`FieldLocale` proprietà per impostare la locale desiderata. Ad esempio, puoi usare`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` per specificare la locale francese (Francia).
 

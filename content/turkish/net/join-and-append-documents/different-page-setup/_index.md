@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## 4. Adım: Paragraf biçimlendirmesini değiştirin
 
- Doğru biçimlendirmeyi korumak için kaynak belgedeki tüm paragrafları yineleyin ve`KeepWithNext` mülkiyet`true`. Bu, ekleme işlemi sırasında paragrafların bir arada kalmasını sağlar.
+ Doğru biçimlendirmeyi korumak için kaynak belgedeki tüm paragrafları yineleyin ve`KeepWithNext`mülkiyet`true`Bu, ekleme işlemi sırasında paragrafların bir arada kalmasını sağlar.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -85,9 +85,9 @@ Bu, Aspose.Words for .NET kullanılarak farklı sayfa yapısı ayarlarına sahip
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Kaynak belgenin farklı sayfa yapısı ayarları olduğunda bunun oluşmamasını sağlamak için,
-	//ayarlar hedef belgenin son bölümü arasında aynıdır.
+	// ayarlar hedef belgenin son bölümü arasında aynıdır.
 	// Kaynak belgede devam eden başka sürekli bölümler varsa,
-	// bu bölümler için bunun tekrarlanması gerekecektir.
+	//bu bölümler için bunun tekrarlanması gerekecektir.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

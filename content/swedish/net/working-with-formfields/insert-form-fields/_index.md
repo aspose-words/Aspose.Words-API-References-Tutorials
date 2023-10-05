@@ -58,15 +58,15 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Hur kan jag infoga ett formulärfält för texttyp i Aspose.Words?
 
- S: För att infoga ett formulärfält för texttyp i Aspose.Words kan du använda`FormField` klass och ställ in dess`Type` egendom till`FormFieldType.Text`. Du kan också anpassa andra egenskaper som namn, etikett och alternativ.
+ S: För att infoga ett formulärfält för texttyp i Aspose.Words kan du använda`FormField` klass och ställ in dess`Type`egendom till`FormFieldType.Text`. Du kan också anpassa andra egenskaper som namn, etikett och alternativ.
 
 #### F: Är det möjligt att skapa ett formulärfält för kryssruta i ett dokument?
 
- S: Ja, det är möjligt att skapa ett formulärfält för kryssruta i ett Aspose.Words-dokument. Du kan använda`FormField` klass och ställ in dess`Type` egendom till`FormFieldType.CheckBox` för att skapa en kryssruta. Du kan sedan anpassa egenskaperna för kryssrutan efter behov.
+ S: Ja, det är möjligt att skapa ett formulärfält för kryssruta i ett Aspose.Words-dokument. Du kan använda`FormField` klass och ställ in dess`Type`egendom till`FormFieldType.CheckBox` för att skapa en kryssruta. Du kan sedan anpassa egenskaperna för kryssrutan efter behov.
 
 #### F: Hur kan jag lägga till ett formulärfält i rullgardinsmenyn i ett dokument?
 
- S: För att lägga till ett formulärfält i rullgardinsmenyn i ett Aspose.Words-dokument, använd`FormField` klass och ställ in dess`Type` egendom till`FormFieldType.DropDown` . Du kan sedan ställa in rullgardinsmenyn med hjälp av`DropDownItems` fast egendom.
+ S: För att lägga till ett formulärfält i rullgardinsmenyn i ett Aspose.Words-dokument, använd`FormField` klass och ställ in dess`Type`egendom till`FormFieldType.DropDown` . Du kan sedan ställa in rullgardinsmenyn med hjälp av`DropDownItems` fast egendom.
 
 #### F: Kan jag ange ett standardvärde för ett formulärfält i Aspose.Words?
 

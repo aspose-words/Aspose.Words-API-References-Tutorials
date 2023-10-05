@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Paso 3: Configure las opciones de Guardar como PDF con la propiedad "Última impresión" actualizada
 
- Para habilitar la actualización de la propiedad "Última impresión" al convertir a PDF, debemos configurar el`PdfSaveOptions` objeto y establecer el`UpdateLastPrintedProperty` propiedad a`true`.
+ Para habilitar la actualización de la propiedad "Última impresión" al convertir a PDF, debemos configurar el`PdfSaveOptions` objeto y establecer el`UpdateLastPrintedProperty`propiedad a`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
@@ -74,7 +74,7 @@ R: Para actualizar la propiedad "Última impresión" en un documento PDF con Asp
 
  Crear una instancia del`Document` clase que especifica la ruta al documento de Word.
 
- Crear una instancia del`PdfSaveOptions` clase y establecer el`UpdateLastPrintedProperty` propiedad a`true` para permitir la actualización de la propiedad "Última impresión".
+ Crear una instancia del`PdfSaveOptions` clase y establecer el`UpdateLastPrintedProperty`propiedad a`true` para permitir la actualización de la propiedad "Última impresión".
 
  Utilizar el`Save` método de la`Document`clase para guardar el documento en formato PDF especificando opciones de guardado.
 

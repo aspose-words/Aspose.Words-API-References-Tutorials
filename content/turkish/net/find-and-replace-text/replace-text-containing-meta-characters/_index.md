@@ -65,7 +65,7 @@ count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 ## Adım 6: Düzenlenen belgeyi kaydetme
 
- Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydederiz:`Save` yöntem:
+Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydederiz:`Save` yöntem:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");

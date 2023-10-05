@@ -56,7 +56,7 @@ Här är den fullständiga källkoden för att tillämpa en licens från en fil 
 ```csharp
 License license = new License();
 
-// Den här raden försöker ställa in en licens från flera platser i förhållande till den körbara filen och Aspose.Words.dll.
+//Den här raden försöker ställa in en licens från flera platser i förhållande till den körbara filen och Aspose.Words.dll.
 // Du kan också använda den extra överbelastningen för att ladda en licens från en stream, detta är användbart,
 // till exempel när licensen lagras som en inbäddad resurs.
 try
@@ -78,7 +78,7 @@ Att lägga till vanliga frågor i handledningar förbättrar inlärningsupplevel
 
 #### F: Var kan jag hitta licensdokumentationen för Aspose.Words för .NET?
 
-S: Du kan hitta licensdokumentationen för Aspose. Ord för .NET på[API-referenser](https://reference.aspose.com/words/net/). Dokumentationen innehåller detaljerade instruktioner och exempel för att ansöka om licenser, inklusive tillämpning av licenser från filer.
+ S: Du kan hitta licensdokumentationen för Aspose. Ord för .NET på[API-referenser](https://reference.aspose.com/words/net/). Dokumentationen innehåller detaljerade instruktioner och exempel för att ansöka om licenser, inklusive tillämpning av licenser från filer.
 
 #### F: Vilka filformat stöder Aspose.Words for .NET för licensfiler?
 

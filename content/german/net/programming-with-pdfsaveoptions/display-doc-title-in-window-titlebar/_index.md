@@ -68,7 +68,7 @@ Um diese Funktion mit Aspose.Words für .NET zu verwenden, führen Sie die folge
 
  Laden Sie das Dokument mit`Document` -Methode und Angabe des Pfads der Datei, die in PDF konvertiert werden soll.
 
- Konfigurieren Sie PDF-Speicheroptionen, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und Einstellung der`DisplayDocTitle` Eigentum zu`true`. Dies ermöglicht die Anzeige des Dokumenttitels in der Fenstertitelleiste beim Konvertieren in PDF.
+ Konfigurieren Sie PDF-Speicheroptionen, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und Einstellung der`DisplayDocTitle`Eigentum zu`true`. Dies ermöglicht die Anzeige des Dokumenttitels in der Fenstertitelleiste beim Konvertieren in PDF.
 
  Benutzen Sie die`Save` Methode zum Konvertieren des Dokuments in PDF unter Angabe der Konvertierungsoptionen.
 

@@ -88,7 +88,7 @@ R: Para firmar documentos en Aspose.Words para .NET, debe utilizar un certificad
 
 #### P: ¿Qué formato de archivo admite Aspose.Words para .NET para la firma de documentos?
 
- R: Aspose.Words para .NET admite la firma de documentos de Word en formato de archivo DOCX. Puede firmar archivos DOCX usando el`DigitalSignatureUtil` clase y el certificado correspondiente.
+ R: Aspose.Words para .NET admite la firma de documentos de Word en formato de archivo DOCX. Puede firmar archivos DOCX utilizando el`DigitalSignatureUtil` clase y el certificado correspondiente.
 
 #### P: ¿Puedo firmar varios documentos de Word con el mismo certificado?
 

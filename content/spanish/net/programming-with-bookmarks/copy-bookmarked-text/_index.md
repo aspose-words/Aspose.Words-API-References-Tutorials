@@ -88,6 +88,42 @@ Aquí está el código fuente de ejemplo completo para demostrar cómo copiar te
 
 ```
 
+#### AppendBookmarkedText Código fuente
+
+```csharp
+
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+        {
+            // Este es el párrafo que contiene el comienzo del marcador.
+            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+
+            // Este es el párrafo que contiene el final del marcador.
+            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+
+            if (startPara == null || endPara == null)
+                throw new InvalidOperationException(
+                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+            // Limitémonos a un escenario razonablemente simple.
+            if (startPara.ParentNode != endPara.ParentNode)
+                throw new InvalidOperationException(
+                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+            // Queremos copiar todos los párrafos desde el párrafo inicial hasta (incluido) el párrafo final,
+            // por lo tanto, el nodo en el que nos detenemos es uno después del párrafo final.
+            Node endNode = endPara.NextSibling;
+
+            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+            {
+                //Esto crea una copia del nodo actual y lo importa (lo hace válido) en el contexto.
+                // del documento de destino. Importar significa ajustar los estilos y los identificadores de listas correctamente.
+                Node newNode = importer.ImportNode(curNode, true);
+
+                dstNode.AppendChild(newNode);
+            }
+        }
+
+```
 ## Conclusión
 
 En este artículo, exploramos el código fuente de C# para comprender cómo utilizar la función Copiar texto marcado como favorito de Aspose.Words para .NET. Seguimos una guía paso a paso para copiar el contenido de un marcador de un documento fuente a otro documento.
@@ -116,7 +152,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### P: ¿Cómo especificar la ubicación de la copia del texto del marcador en un documento de destino usando Aspose.Words para .NET?
 
-R: Para especificar dónde desea agregar el texto copiado del marcador en un documento de destino usando Aspose.Words para .NET, puede navegar hasta el cuerpo de la última sección del documento de destino. Puedes usar el`LastSection` propiedad para acceder a la última sección y a la`Body` propiedad para acceder al cuerpo de esa sección. Aquí hay un código de muestra:
+ R: Para especificar dónde desea agregar el texto del marcador copiado en un documento de destino usando Aspose.Words para .NET, puede navegar hasta el cuerpo de la última sección del documento de destino. Puedes usar el`LastSection` propiedad para acceder a la última sección y a la`Body` propiedad para acceder al cuerpo de esa sección. Aquí hay un código de muestra:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;

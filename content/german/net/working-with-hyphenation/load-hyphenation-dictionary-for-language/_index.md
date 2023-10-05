@@ -68,7 +68,7 @@ A: Sie können Silbenwörterbuchdateien für verschiedene Sprachen in verschiede
 
 #### F: Wie kann ich das geladene Silbenwörterbuch auf ein Dokument in Aspose.Words anwenden?
 
- A: Um das geladene Silbenwörterbuch auf ein Dokument in Aspose.Words anzuwenden, müssen Sie die Wörter im Dokument durchlaufen und verwenden`Hyphenate()` Methode der`Hyphenation` Klasse, um die Silbenbildung der Wörter zu erhalten. Anschließend können Sie die Silbenwörter nach Bedarf formatieren, indem Sie beispielsweise Bindestriche zwischen den Silben einfügen.
+ A: Um das geladene Silbenwörterbuch auf ein Dokument in Aspose.Words anzuwenden, müssen Sie die Wörter im Dokument durchlaufen und verwenden`Hyphenate()` Methode der`Hyphenation`Klasse, um die Silbenbildung der Wörter zu erhalten. Anschließend können Sie die Silbenwörter nach Bedarf formatieren, indem Sie beispielsweise Bindestriche zwischen den Silben einfügen.
 
 #### F: Welche Sprachen werden für die Silbenbildung in Aspose.Words unterstützt?
 

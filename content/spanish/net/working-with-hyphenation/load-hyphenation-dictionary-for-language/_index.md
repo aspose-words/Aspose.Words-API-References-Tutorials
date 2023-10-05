@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## Paso 2: cargar el diccionario de separación de palabras
 
-continuación, abra una secuencia en el archivo del diccionario de separación de palabras y guárdela en el idioma deseado. En este ejemplo, cargamos un diccionario de alemán suizo (de-CH):
+A continuación, abra una secuencia en el archivo del diccionario de separación de palabras y guárdela en el idioma deseado. En este ejemplo, cargamos un diccionario de alemán suizo (de-CH):
 
 ```csharp
 Stream stream = File.OpenRead(dataDir + "hyph_de_CH.dic");
@@ -68,7 +68,7 @@ R: Puede encontrar archivos de diccionario de silabización para diferentes idio
 
 #### P: ¿Cómo puedo aplicar el diccionario silábico cargado a un documento en Aspose.Words?
 
- R: Para aplicar el diccionario de silabización cargado a un documento en Aspose.Words, necesita iterar sobre las palabras en el documento y usar el`Hyphenate()` método de la`Hyphenation` clase para conseguir la silabización de las palabras. Luego puede formatear las palabras con sílabas según sea necesario, por ejemplo agregando guiones entre sílabas.
+ R: Para aplicar el diccionario de silabización cargado a un documento en Aspose.Words, necesita iterar sobre las palabras en el documento y usar el`Hyphenate()` método de la`Hyphenation`clase para conseguir la silabización de las palabras. Luego puede formatear las palabras con sílabas según sea necesario, por ejemplo agregando guiones entre sílabas.
 
 #### P: ¿Qué idiomas son compatibles con la silabización en Aspose.Words?
 

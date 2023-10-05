@@ -58,7 +58,7 @@ table. TopPadding = 30;
 table. BottomPadding = 30;
 ```
 
-## Étape 7 : ajouter du contenu à la ligne
+## Étape 7 : Ajouter du contenu à la ligne
 Maintenant nous pouvons
 
  Nous allons ajouter du contenu à la ligne en utilisant les méthodes du constructeur de document. Dans cet exemple, nous utilisons le`Writeln()` méthode pour ajouter du texte à la ligne.

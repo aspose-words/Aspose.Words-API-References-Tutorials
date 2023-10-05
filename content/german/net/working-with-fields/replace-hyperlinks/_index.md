@@ -40,7 +40,7 @@ foreach(Field field in doc.Range.Fields)
          if (hyperlink.SubAddress != null)
              keep on going;
 
-         hyperlink.Address = "http://www.aspose.com";
+         hyperlink.Address = "http://www.aspose.com“;
          hyperlink.Result = "Aspose - The .NET & Java component editor";
      }
 }
@@ -74,7 +74,7 @@ foreach(Field field in doc.Range.Fields)
          if (hyperlink.SubAddress != null)
              keep on going;
 
-         hyperlink.Address = "http://www.aspose.com";
+         hyperlink.Address = "http://www.aspose.com“;
          hyperlink.Result = "Aspose - The .NET & Java component editor";
      }
 }

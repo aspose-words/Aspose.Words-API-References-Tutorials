@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection. Auto };
 ```
 
- في هذه الخطوة، نقوم بتكوين خيارات تحميل المستندات. نحن نخلق جديدا`TxtLoadOptions` الكائن وتعيين`DocumentDirection` الملكية ل`DocumentDirection.Auto`. تخبر هذه القيمة Aspose.Words بتحديد اتجاه النص تلقائيًا بناءً على محتوى المستند.
+ في هذه الخطوة، نقوم بتكوين خيارات تحميل المستندات. نحن نخلق جديدا`TxtLoadOptions` الكائن وتعيين`DocumentDirection`الملكية ل`DocumentDirection.Auto`. تخبر هذه القيمة Aspose.Words بتحديد اتجاه النص تلقائيًا بناءً على محتوى المستند.
 
 ## الخطوة 3: تحميل الوثيقة
 
@@ -87,4 +87,4 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 يوفر Aspose.Words for .NET العديد من الميزات المتقدمة لمعالجة المستندات وإنشائها. ومن خلال استكشاف المزيد من الوثائق والأمثلة المقدمة من Aspose.Words، ستتمكن من استغلال إمكانيات هذه المكتبة القوية بشكل كامل.
 
-لذا، لا تتردد في دمج اتجاه نص المستند في مشاريع Aspose.Words for .NET الخاصة بك والاستفادة من فوائدها لإنشاء مستندات متعددة اللغات جذابة وعالية الجودة.
+لذا، لا تتردد في دمج اتجاه نص المستند في مشاريع Aspose.Words الخاصة بـ .NET والاستفادة من فوائدها لإنشاء مستندات متعددة اللغات جذابة وعالية الجودة.

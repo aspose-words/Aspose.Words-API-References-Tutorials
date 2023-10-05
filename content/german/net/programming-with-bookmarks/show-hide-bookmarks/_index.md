@@ -56,6 +56,58 @@ Hier ist der vollständige Beispielquellcode, um das Ein- und Ausblenden eines b
 
 ```
 
+#### ShowHideBookmarkedContent-Quellcode
+
+```csharp
+
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+        {
+            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+            DocumentBuilder builder = new DocumentBuilder(doc);
+            builder.MoveToDocumentEnd();
+
+            // {IF "{MERGEFIELD bookmark}" = "true" "" ""}
+            Field field = builder.InsertField("IF \"", null);
+            builder.MoveTo(field.Start.NextSibling);
+            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+            builder.Write("\" = \"true\" ");
+            builder.Write("\"");
+            builder.Write("\"");
+            builder.Write(" \"\"");
+
+            Node currentNode = field.Start;
+            bool flag = true;
+            while (currentNode != null && flag)
+            {
+                if (currentNode.NodeType == NodeType.Run)
+                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                        flag = false;
+
+                Node nextNode = currentNode.NextSibling;
+
+                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+                currentNode = nextNode;
+            }
+
+            Node endNode = bm.BookmarkEnd;
+            flag = true;
+            while (currentNode != null && flag)
+            {
+                if (currentNode.NodeType == NodeType.FieldEnd)
+                    flag = false;
+
+                Node nextNode = currentNode.NextSibling;
+
+                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+                endNode = currentNode;
+                currentNode = nextNode;
+            }
+
+            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+        }
+		
+```
 ## Abschluss
 
 In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Lesezeichen anzeigen und ausblenden“ von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um ein bestimmtes Lesezeichen in einem Dokument ein- oder auszublenden.

@@ -32,13 +32,13 @@ FormFieldCollection documentFormFields = doc.Range.FormFields;
 Du kan hämta formulärfält antingen med index eller namn. I det här exemplet hämtar vi ett formulärfält med båda metoderna:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; //Hämtar efter index
+FormField formField1 = documentFormFields[3]; // Hämtar efter index
 FormField formField2 = documentFormFields["Text2"]; // Hämtar med namn
 ```
 
 ## Steg 3: Ändra formulärfältegenskaper
 
- När du har hämtat formulärfälten kan du ändra deras egenskaper efter behov. I det här exemplet ändrar vi teckenstorleken på`formField1` till 20 och teckensnittsfärgen på`formField2` till rött:
+När du har hämtat formulärfälten kan du ändra deras egenskaper efter behov. I det här exemplet ändrar vi teckensnittsstorleken på`formField1` till 20 och teckensnittsfärgen på`formField2` till rött:
 
 ```csharp
 formField1.Font.Size = 20;
@@ -47,7 +47,7 @@ formField2.Font.Color = Color.Red;
 
 ## Steg 4: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
@@ -82,7 +82,7 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Vad händer om formulärfältet med det angivna namnet inte finns i dokumentet?
 
- S: Om formulärfältet med det angivna namnet inte finns i dokumentet,`Document.Range.FormFields[name]` metoden kommer tillbaka`null`Du kan kontrollera detta resultat för att hantera fall där formulärfältet inte hittas.
+ S: Om formulärfältet med det angivna namnet inte finns i dokumentet,`Document.Range.FormFields[name]` metoden kommer tillbaka`null`. Du kan kontrollera detta resultat för att hantera fall där formulärfältet inte hittas.
 
 #### F: Hur kan jag ändra egenskaperna för ett hittat formulärfält?
 

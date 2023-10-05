@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## Шаг 3. Использование функции «Игнорировать текст внутри полей»
 
- Чтобы игнорировать текст внутри полей при последующих операциях, мы можем использовать`FindReplaceOptions` объект и установите`IgnoreFields` собственность`true`:
+ Чтобы игнорировать текст внутри полей при последующих операциях, мы можем использовать`FindReplaceOptions` объект и установите`IgnoreFields`собственность`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -50,7 +50,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Шаг 5. Просмотр измененного вывода документа
 
-После применения поиска и замены мы можем отобразить измененное содержимое документа с помощью`GetText` метод:
+ После применения поиска и замены мы можем отобразить измененное содержимое документа с помощью`GetText` метод:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## Шаг 6. Изменение параметров включения полей
 
-мы включаем текст внутри полей в выходной результат, мы можем изменить параметры, чтобы не игнорировать поля. Для этого мы установим`IgnoreFields` собственность`false`:
+ мы включаем текст внутри полей в выходной результат, мы можем изменить параметры, чтобы не игнорировать поля. Для этого мы установим`IgnoreFields`собственность`false`:
 
 ```csharp
 options.IgnoreFields = false;
@@ -128,7 +128,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 #### Вопрос: Как игнорировать текст внутри полей в Aspose.Words для .NET?
 
-О: Чтобы игнорировать текст внутри полей во время последующих операций, вы можете использовать`FindReplaceOptions` объект и установите`IgnoreFields` собственность`true`:
+ О: Чтобы игнорировать текст внутри полей во время последующих операций, вы можете использовать`FindReplaceOptions` объект и установите`IgnoreFields`собственность`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };

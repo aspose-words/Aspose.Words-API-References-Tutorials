@@ -66,7 +66,7 @@ Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 NodeCollection children = paragraph.ChildNodes;
 foreach (Node child in children)
 {
-	//Bir paragraf, diziler, şekiller ve diğerleri gibi çeşitli türlerde alt öğeler içerebilir.
+	// Bir paragraf, diziler, şekiller ve diğerleri gibi çeşitli türlerde alt öğeler içerebilir.
 	if (child.NodeType == NodeType.Run)
 	{
 		Run run = (Run) child;
@@ -90,11 +90,11 @@ C: Node.js'deki alt düğüm, doğrudan belirli bir düğümün içinde yer alan
 
 #### S: Bir alt düğümün özelliklerine nasıl erişilir?
 
- C: Node.js'deki bir alt düğümün özelliklerine erişmek için, Node.js ortamınızda kullanılan XML API'sinin sağladığı yöntemleri ve özellikleri kullanabilirsiniz. Örneğin, gibi yöntemleri kullanabilirsiniz.`getAttribute`bir alt düğümün belirli bir özelliğinin değerini almak için.
+ C: Node.js'deki bir alt düğümün özelliklerine erişmek için, Node.js ortamınızda kullanılan XML API'sinin sağladığı yöntemleri ve özellikleri kullanabilirsiniz. Örneğin, gibi yöntemleri kullanabilirsiniz.`getAttribute` bir alt düğümün belirli bir özelliğinin değerini almak için.
 
 #### S: Bir düğümün alt düğümlerini değiştirebilir miyiz?
 
- C: Evet, Node.js ortamınızda kullanılan XML API'sinin sağladığı yöntemleri ve özellikleri kullanarak Node.js'deki bir düğümün alt düğümlerini değiştirmek mümkündür. Örneğin, gibi yöntemleri kullanabilirsiniz.`appendChild` veya`removeChild` belirli bir düğümden alt düğümleri eklemek veya kaldırmak için.
+C: Evet, Node.js ortamınızda kullanılan XML API'sinin sağladığı yöntemleri ve özellikleri kullanarak Node.js'deki bir düğümün alt düğümlerini değiştirmek mümkündür. Örneğin, gibi yöntemleri kullanabilirsiniz.`appendChild` veya`removeChild` belirli bir düğümden alt düğümleri eklemek veya kaldırmak için.
 
 #### S: Bir düğümün tüm alt düğümlerine nasıl göz atılır?
 

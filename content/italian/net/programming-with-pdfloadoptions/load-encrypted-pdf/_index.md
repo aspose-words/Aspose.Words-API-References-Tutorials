@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions
 
 Manutenzione
 
- Tuttavia, se desideri caricare il documento PDF crittografato con una password, devi utilizzare il file`PdfLoadOptions` class e specificare la password durante il caricamento del documento:
+Tuttavia, se desideri caricare il documento PDF crittografato con una password, devi utilizzare il file`PdfLoadOptions` class e specificare la password durante il caricamento del documento:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadFormat = LoadFormat.Pdf };

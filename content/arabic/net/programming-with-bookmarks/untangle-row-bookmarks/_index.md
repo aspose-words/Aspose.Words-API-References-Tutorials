@@ -51,7 +51,7 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لـ Untangle Row Bookmarks باستخدام Aspose.Words لـ .NET**
+### مثال على التعليمات البرمجية المصدر لـ Untangle Row Bookmarks باستخدام Aspose.Words لـ .NET
 
 فيما يلي نموذج التعليمات البرمجية المصدر الكامل لفك تشابك الإشارات المرجعية من الأسطر التي تستخدم Aspose.Words لـ .NET:
 
@@ -76,6 +76,38 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
 
+#### فك شفرة المصدر
+```csharp
+
+private void Untangle(Document doc)
+        {
+            foreach (Bookmark bookmark in doc.Range.Bookmarks)
+            {
+                // احصل على الصف الأصلي لكل من الإشارة المرجعية وعقدة نهاية الإشارة المرجعية.
+                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
+                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+                // إذا تم العثور على كلا الصفين بشكل جيد، وتم تضمين بداية ونهاية الإشارة المرجعية في الصفوف المجاورة،
+                // انقل عقدة نهاية الإشارة المرجعية إلى نهاية الفقرة الأخيرة في الخلية الأخيرة بالصف العلوي.
+                if (row1 != null && row2 != null && row1.NextSibling == row2)
+                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+            }
+        }
+
+```
+
+#### حذف كود المصدر الخاص بـDeleteRowByBookmark
+```csharp
+
+ private void DeleteRowByBookmark(Document doc, string bookmarkName)
+        {
+            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+            row?.Remove();
+        }
+
+```
 ## خاتمة
 
 في هذه المقالة، قمنا باستكشاف التعليمات البرمجية المصدر لـ C# لفهم كيفية استخدام ميزة Untangle Row Bookmarks في Aspose.Words for .NET. لقد اتبعنا دليلًا خطوة بخطوة لفك تشابك الإشارات المرجعية للصف وحذف صف معين دون الإضرار بالإشارات المرجعية الأخرى.

@@ -44,7 +44,7 @@ ThresholdForFloydSteinbergDithering = 254
 doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
 ```
 
-Bu son adımda, belge resimlerini kullanarak TIFF formatında kaydediyoruz.`Save` yöntemini kullanarak ve belirtilen kaydetme seçenekleriyle birlikte çıktı dosyasına giden yolu iletebilirsiniz.
+ Bu son adımda, belge resimlerini kullanarak TIFF formatında kaydediyoruz.`Save` yöntemini kullanarak ve belirtilen kaydetme seçenekleriyle birlikte çıktı dosyasına giden yolu iletebilirsiniz.
 
 Artık belirtilen seçeneklerle ikilileştirme eşiğini kontrol ederken belgenizi TIFF formatına dönüştürmek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff" adıyla belirtilen dizine kaydedilecektir.
 

@@ -10,7 +10,7 @@ url: /sv/java/document-merging/merging-documents-documentbuilder/
 
 ## Introduktion till sammanslagning av dokument med DocumentBuilder
 
-en värld av dokumentbehandling står Aspose.Words för Java som ett kraftfullt verktyg för att manipulera och hantera dokument. En av dess nyckelfunktioner är möjligheten att sammanfoga dokument sömlöst med DocumentBuilder. I den här steg-för-steg-guiden kommer vi att undersöka hur du uppnår detta med kodexempel, vilket säkerställer att du kan utnyttja denna förmåga för att förbättra dina arbetsflöden för dokumenthantering.
+I en värld av dokumentbehandling står Aspose.Words för Java som ett kraftfullt verktyg för att manipulera och hantera dokument. En av dess nyckelfunktioner är möjligheten att sammanfoga dokument sömlöst med DocumentBuilder. I den här steg-för-steg-guiden kommer vi att undersöka hur du uppnår detta med kodexempel, vilket säkerställer att du kan utnyttja denna förmåga för att förbättra dina arbetsflöden för dokumenthantering.
 
 ## Förutsättningar
 

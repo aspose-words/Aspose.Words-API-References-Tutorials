@@ -62,7 +62,7 @@ A: Der übergeordnete Knoten in Node.js bezieht sich auf den nächsthöheren Kno
 
 #### F: Wie erhalte ich den übergeordneten Knoten eines bestimmten Knotens?
 
- A: Um den übergeordneten Knoten eines bestimmten Knotens abzurufen, können Sie verwenden`parentNode` Eigenschaft des Knotens. Diese Eigenschaft gibt den übergeordneten Knoten des aktuellen Knotens zurück.
+A: Um den übergeordneten Knoten eines bestimmten Knotens abzurufen, können Sie verwenden`parentNode` Eigenschaft des Knotens. Diese Eigenschaft gibt den übergeordneten Knoten des aktuellen Knotens zurück.
 
 #### F: Wie kann ich überprüfen, ob ein Knoten einen übergeordneten Knoten hat?
 
@@ -74,4 +74,4 @@ A: Der übergeordnete Knoten in Node.js bezieht sich auf den nächsthöheren Kno
 
 #### F: Wie kann ich die Hierarchie der übergeordneten Knoten durchsuchen?
 
- A: Um die Hierarchie der übergeordneten Knoten zu durchlaufen, können Sie mithilfe von von einem bestimmten Knoten aus iterieren`parentNode`-Eigenschaft, bis Sie den Stammknoten des Dokuments erreichen.
+ A: Um die Hierarchie der übergeordneten Knoten zu durchlaufen, können Sie mithilfe von von einem bestimmten Knoten aus iterieren`parentNode` -Eigenschaft, bis Sie den Stammknoten des Dokuments erreichen.

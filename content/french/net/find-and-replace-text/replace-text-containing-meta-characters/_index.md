@@ -65,7 +65,7 @@ count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 ## Étape 6 : Sauvegarde du document modifié
 
- Enfin, nous enregistrons le document modifié dans un répertoire spécifié en utilisant le`Save` méthode:
+Enfin, nous enregistrons le document modifié dans un répertoire spécifié en utilisant le`Save` méthode:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");

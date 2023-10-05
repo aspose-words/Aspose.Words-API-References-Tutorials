@@ -41,7 +41,7 @@ public class DocumentCombination {
 
 ## Schritt 2: Quelldokumente laden
 
- Als Nächstes müssen Sie die Quelldokumente laden, die Sie kombinieren möchten. Sie können mehrere Dokumente in separate Instanzen von laden`Document` Klasse.
+Als Nächstes müssen Sie die Quelldokumente laden, die Sie kombinieren möchten. Sie können mehrere Dokumente in separate Instanzen von laden`Document` Klasse.
 
 ```java
 // Quelldokumente laden

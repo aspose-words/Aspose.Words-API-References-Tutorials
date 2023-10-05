@@ -22,7 +22,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## الخطوة 2: حفظ المستند بتنسيق MHTML
 
- بعد ذلك، قم بحفظ المستند إلى a`Stream` الكائن بتنسيق MHTML:
+ بعد ذلك، قم بحفظ المستند إلى a`Stream` كائن بتنسيق MHTML:
 
 ```csharp
 Stream stream = new MemoryStream();

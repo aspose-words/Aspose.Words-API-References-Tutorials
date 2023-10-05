@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Ställ in alternativ för importformat
 
- Skapa en instans av`ImportFormatOptions` klass och ställ in`IgnoreHeaderFooter` egendom till`false`. Detta säkerställer att sidhuvudet och sidfotens innehåll ingår under tilläggsprocessen.
+ Skapa en instans av`ImportFormatOptions` klass och ställ in`IgnoreHeaderFooter`egendom till`false`. Detta säkerställer att sidhuvudet och sidfotens innehåll ingår under tilläggsprocessen.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };

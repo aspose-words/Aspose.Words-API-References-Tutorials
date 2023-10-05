@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/working-with-fonts/get-font-line-spacing/
 ---
-在本教程中，我们将告诉您如何使用 .NET 的 Aspose.Words 库获取 Word 文档中的字体行距。字体行距定义文本行之间的垂直间距。我们将逐步指导您理解并实现 .NET 项目中的代码。
+在本教程中，我们将告诉您如何使用 .NET 的 Aspose.Words 库获取 Word 文档中的字体行间距。字体行距定义文本行之间的垂直间距。我们将逐步指导您理解并实现 .NET 项目中的代码。
 
 ## 先决条件
 开始之前，请确保您拥有以下物品：
@@ -75,7 +75,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 #### 问：如何调整整个Word文档的行距？
 
-答：使用Aspose.Words，您可以轻松调整整个Word文档的行距。使用 API 提供的方法指定整个文档所需的行距。
+答：使用Aspose.Words，您可以轻松调整整个Word文档的行间距。使用 API 提供的方法指定整个文档所需的行间距。
 
 #### 问：Aspose.Words 支持多行间距吗？
 

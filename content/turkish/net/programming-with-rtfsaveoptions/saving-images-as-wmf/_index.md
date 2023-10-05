@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Document.docx");
 RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 ```
 
- Bu adımda RTF yedekleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`RtfSaveOptions` nesneyi ayarlayın ve`SaveImagesAsWmf` mülkiyet`true`. Bu, Aspose.Words'e belge resimlerini RTF'ye dönüştürürken WMF olarak kaydetmesini söyler.
+ Bu adımda RTF yedekleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`RtfSaveOptions` nesneyi ayarlayın ve`SaveImagesAsWmf`mülkiyet`true`. Bu, Aspose.Words'e belge resimlerini RTF'ye dönüştürürken WMF olarak kaydetmesini söyler.
 
 ## 4. Adım: Belgeyi kaydetme
 
@@ -78,7 +78,7 @@ Gerekli referansları ekleyerek ve uygun ad alanlarını içe aktararak gelişti
 
  Belgeyi kullanarak yükleyin`Document` yöntemi ve yüklenecek DOCX dosyasının yolunu belirtme.
 
- RTF kaydetme seçeneklerini yapılandırarak bir`RtfSaveOptions` nesneyi ayarlama ve`SaveImagesAsWmf` mülkiyet`true`. Bu, Aspose.Words'e belge görüntülerini şu şekilde kaydetmesini söyler: 
+ RTF kaydetme seçeneklerini yapılandırarak bir`RtfSaveOptions` nesneyi ayarlama ve`SaveImagesAsWmf`mülkiyet`true`. Bu, Aspose.Words'e belge görüntülerini şu şekilde kaydetmesini söyler: 
 RTF'ye dönüştürürken WMF.
 
  Ortaya çıkan belgeyi RTF formatında kaydedin.`Save` yöntemi ve belirtilen kaydetme seçenekleriyle birlikte çıktı dosyasının tam yolunu belirtme.

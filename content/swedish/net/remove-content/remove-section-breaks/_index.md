@@ -38,7 +38,7 @@ För att ta bort avsnittsbrytningar kommer vi att gå igenom alla avsnitt med b�
 // Gå igenom alla sektioner med början från sektionen som föregår den sista och flytta till den första sektionen.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-    //Kopiera innehållet i det aktuella avsnittet till början av det sista avsnittet.
+    // Kopiera innehållet i det aktuella avsnittet till början av det sista avsnittet.
     doc.LastSection.PrependContent(doc.Sections[i]);
     // Ta bort det kopierade avsnittet.
     doc.Sections[i].Remove();
@@ -65,7 +65,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 // Gå igenom alla sektioner med början från sektionen som föregår den sista och flytta till den första sektionen.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-	//Kopiera innehållet i det aktuella avsnittet till början av det sista avsnittet.
+	// Kopiera innehållet i det aktuella avsnittet till början av det sista avsnittet.
 	doc.LastSection.PrependContent(doc.Sections[i]);
 	// Ta bort det kopierade avsnittet.
 	doc.Sections[i].Remove();

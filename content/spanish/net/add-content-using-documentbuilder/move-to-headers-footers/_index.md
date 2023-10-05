@@ -115,4 +115,4 @@ R: Sí, puede usar el método MoveToSection de la clase DocumentBuilder para mov
 
 #### P: ¿Cómo puedo guardar el documento modificado en un archivo usando Aspose.Words para .NET?
 
-R: Puede guardar el documento modificado en la ubicación y el formato deseados utilizando el método Guardar de la clase Documento. Asegúrese de especificar la ruta de archivo y el formato de archivo adecuados (por ejemplo, DOCX).
+R: Puede guardar el documento modificado en la ubicación y formato deseados utilizando el método Guardar de la clase Documento. Asegúrese de especificar la ruta de archivo y el formato de archivo adecuados (por ejemplo, DOCX).

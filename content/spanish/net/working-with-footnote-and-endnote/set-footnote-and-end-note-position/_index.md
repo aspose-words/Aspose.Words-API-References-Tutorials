@@ -58,7 +58,7 @@ No dude en utilizar este código en sus propios proyectos y modificarlo según s
 
 #### P: ¿Cómo puedo colocar notas al pie y notas al final en Aspose.Words?
 
- R: Para colocar notas al pie y notas finales en Aspose.Words, debe utilizar el`FootnoteOptions` clase y el`Position` propiedad. Puede establecer esta propiedad en cualquier valor que desee, como`BottomOfPage` (al final de la página) o`EndOfSection`(al final de la sección).
+ R: Para colocar notas al pie y notas finales en Aspose.Words, debe utilizar el`FootnoteOptions` clase y el`Position` propiedad. Puede establecer esta propiedad en cualquier valor que desee, como`BottomOfPage` (al final de la página) o`EndOfSection` (al final de la sección).
 
 #### P: ¿Es posible personalizar la posición de las notas al pie y al final de cada página o sección del documento?
 

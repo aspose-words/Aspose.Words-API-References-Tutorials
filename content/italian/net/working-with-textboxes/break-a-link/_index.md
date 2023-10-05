@@ -34,7 +34,7 @@ textBox.BreakForwardLink();
 
 ## Passaggio 4: interrompere un collegamento in avanti impostando un valore nullo
 
- In alternativa, possiamo interrompere un collegamento in avanti impostando TextBox's`Next` proprietà a`null`. Ciò rimuove effettivamente la connessione alla forma successiva. Il codice seguente illustra questo approccio:
+ In alternativa, possiamo interrompere un collegamento in avanti impostando TextBox's`Next`proprietà a`null`. Ciò rimuove effettivamente la connessione alla forma successiva. Il codice seguente illustra questo approccio:
 
 ```csharp
 textBox. Next = null;

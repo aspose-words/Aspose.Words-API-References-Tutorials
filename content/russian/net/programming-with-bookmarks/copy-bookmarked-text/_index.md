@@ -88,6 +88,42 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ```
 
+#### Исходный код AppendBookmarkedText
+
+```csharp
+
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+        {
+            // Это абзац, содержащий начало закладки.
+            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+
+            // Это абзац, содержащий конец закладки.
+            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+
+            if (startPara == null || endPara == null)
+                throw new InvalidOperationException(
+                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+            // Ограничимся достаточно простым сценарием.
+            if (startPara.ParentNode != endPara.ParentNode)
+                throw new InvalidOperationException(
+                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+            // Мы хотим скопировать все абзацы от начального до конечного абзаца (включительно).
+            // поэтому узел, на котором мы останавливаемся, находится после конечного абзаца.
+            Node endNode = endPara.NextSibling;
+
+            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+            {
+                //Это создает копию текущего узла и импортирует ее (делает ее допустимой) в контексте.
+                // документа назначения. Импорт означает правильную настройку стилей и идентификаторов списков.
+                Node newNode = importer.ImportNode(curNode, true);
+
+                dstNode.AppendChild(newNode);
+            }
+        }
+
+```
 ## Заключение
 
 В этой статье мы изучили исходный код C#, чтобы понять, как использовать функцию «Копировать текст с закладками» из Aspose.Words для .NET. Мы следовали пошаговому руководству, чтобы скопировать содержимое закладки из исходного документа в другой документ.
@@ -116,7 +152,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### Вопрос: Как указать расположение текстовой копии закладки в целевом документе с помощью Aspose.Words for .NET?
 
-О: Чтобы указать, где вы хотите добавить скопированный текст закладки в целевой документ, используя Aspose.Words for .NET, вы можете перейти к телу последнего раздела целевого документа. Вы можете использовать`LastSection` свойство для доступа к последнему разделу и`Body` свойство для доступа к телу этого раздела. Вот пример кода:
+ О: Чтобы указать, где вы хотите добавить скопированный текст закладки в целевой документ, используя Aspose.Words for .NET, вы можете перейти к телу последнего раздела целевого документа. Вы можете использовать`LastSection` свойство для доступа к последнему разделу и`Body` свойство для доступа к телу этого раздела. Вот пример кода:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;

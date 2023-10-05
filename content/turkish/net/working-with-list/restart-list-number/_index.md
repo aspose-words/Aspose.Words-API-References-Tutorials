@@ -97,7 +97,7 @@ builder.ListFormat.RemoveNumbers();
 // İlk listeyi yeniden kullanmak için orijinal liste formatının bir kopyasını oluşturarak numaralandırmayı yeniden başlatmamız gerekir.
 List list2 = doc.Lists.AddCopy(list1);
 
-//Yeni listeyi, yeni bir başlangıç numarası ayarlamak da dahil olmak üzere herhangi bir şekilde değiştirebiliriz.
+// Yeni listeyi, yeni bir başlangıç numarası ayarlamak da dahil olmak üzere herhangi bir şekilde değiştirebiliriz.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -122,7 +122,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### S: Listenin yeniden başlatılması gereken belirli bir numaralandırma değerini nasıl belirleyebilirim?
 
- C: Listenin yeniden başlatılması gereken belirli bir sayı değerini belirtmek için`ListRestartAtNumber`İstenilen değeri argüman olarak ileten yöntem. Örneğin, numaralandırmayı 5'ten yeniden başlatmak için şunu kullanabilirsiniz:`list.ListRestartAtNumber(5)`.
+C: Listenin yeniden başlatılması gereken belirli bir sayı değerini belirtmek için`ListRestartAtNumber` İstenilen değeri argüman olarak ileten yöntem. Örneğin, numaralandırmayı 5'ten yeniden başlatmak için şunu kullanabilirsiniz:`list.ListRestartAtNumber(5)`.
 
 #### S: Aspose.Words'te çok seviyeli liste numaralandırmayı yeniden başlatmak mümkün mü?
 

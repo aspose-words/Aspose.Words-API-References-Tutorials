@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 
-In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Elimina riga per segnalibro nella libreria Aspose.Words per .NET. Questa funzione ti consente di eliminare una riga della tabella in base a un segnalibro specifico nel documento Word.
+In questo articolo, esploreremo il codice sorgente C# sopra riportato per comprendere come utilizzare la funzione Elimina riga per segnalibro nella libreria Aspose.Words per .NET. Questa funzione ti consente di eliminare una riga della tabella in base a un segnalibro specifico nel documento Word.
 
 ## Prerequisiti
 

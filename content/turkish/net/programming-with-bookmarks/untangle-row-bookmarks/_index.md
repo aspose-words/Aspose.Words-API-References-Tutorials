@@ -51,7 +51,7 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Aspose.Words for .NET kullanarak Satır Yer İmlerini Çözmek için örnek kaynak kodu**
+### Aspose.Words for .NET kullanarak Satır Yer İmlerini Çözmek için örnek kaynak kodu
 
 Aspose.Words for .NET kullanarak satırlardaki yer işaretlerini çözmek için tam örnek kaynak kodunu burada bulabilirsiniz:
 
@@ -76,6 +76,38 @@ Aspose.Words for .NET kullanarak satırlardaki yer işaretlerini çözmek için 
 
 ```
 
+#### Kaynak kodunu çözün
+```csharp
+
+private void Untangle(Document doc)
+        {
+            foreach (Bookmark bookmark in doc.Range.Bookmarks)
+            {
+                // Hem yer işaretinin hem de yer işareti bitiş düğümünün üst satırını alın.
+                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
+                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+                // Her iki satır da uygun bulunursa ve yer işaretinin başlangıcı ve bitişi bitişik satırlarda yer alıyorsa,
+                // yer imi bitiş düğümünü üst satırın son hücresindeki son paragrafın sonuna taşıyın.
+                if (row1 != null && row2 != null && row1.NextSibling == row2)
+                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+            }
+        }
+
+```
+
+#### SilRowByBookmark kaynak kodu
+```csharp
+
+ private void DeleteRowByBookmark(Document doc, string bookmarkName)
+        {
+            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+            row?.Remove();
+        }
+
+```
 ## Çözüm
 
 Bu makalede, Aspose.Words for .NET'in Satır Yer İmlerini Çöz özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Satır yer imlerini çözmek ve diğer yer imlerine zarar vermeden belirli bir satırı silmek için adım adım bir kılavuz izledik.

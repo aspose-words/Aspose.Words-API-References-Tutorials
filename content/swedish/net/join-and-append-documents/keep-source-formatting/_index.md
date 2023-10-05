@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Steg 3: Lägg till källdokumentet till måldokumentet
 
- Använd`AppendDocument` metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.KeepSourceFormatting`som importformatläge för att behålla originalformateringen av källdokumentet.
+ Använd`AppendDocument` metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.KeepSourceFormatting` som importformatläge för att behålla originalformateringen av källdokumentet.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

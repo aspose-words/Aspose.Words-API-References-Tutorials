@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     //Snabb och maskinskriven åtkomst till den första raden i tabellen.
+     // Snabb och maskinskriven åtkomst till den första raden i tabellen.
      table.FirstRow?.Remove();
 
      // Snabb och maskinskriven åtkomst till den sista raden i tabellen.

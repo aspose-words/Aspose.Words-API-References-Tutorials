@@ -50,7 +50,7 @@ Avant de passer à la sécurité des documents, familiarisons-nous d'abord avec 
 L'installation d'Aspose.Words pour Java est un processus simple. Suivez ces étapes simples pour ajouter la bibliothèque à votre projet Java :
 
 1. ### Télécharger:
- Allez au[Aspose.Releases](https://releases.aspose.com/words/java/) et téléchargez le package Aspose.Words pour Java.
+  Allez au[Aspose.Releases](https://releases.aspose.com/words/java/) et téléchargez le package Aspose.Words pour Java.
 
 2. ### Extrait:
  Extrayez le package téléchargé dans un emplacement pratique sur votre ordinateur.
@@ -84,7 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Maintenant que notre document est chargé, commençons à lui appliquer le cryptage. Aspose.Words for Java fournit un moyen simple de définir le cryptage des documents :
 
 ```java
-//Définir un mot de passe pour ouvrir le document
+// Définir un mot de passe pour ouvrir le document
 doc.getWriteProtection().setPassword("yourPassword");
 
 // Définir l'algorithme de cryptage (facultatif)
@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 Le filigrane peut aider à protéger la confidentialité de votre document et à indiquer son statut. Aspose.Words for Java offre des fonctionnalités de filigrane faciles à utiliser :
 
 ```java
-//Ajouter un filigrane visible
+// Ajouter un filigrane visible
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

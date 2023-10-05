@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Adım 3: Kaynak Belgeyi Sayfa Numaralandırmayı Yeniden Başlatacak Şekilde Ayarlayın
 
- Kaynak belgede sayfa numaralandırmayı yeniden başlatmak için`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.NewPage` ve ayarlayın`RestartPageNumbering` mülkiyet`true`.
+ Kaynak belgede sayfa numaralandırmayı yeniden başlatmak için`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.NewPage` ve ayarlayın`RestartPageNumbering`mülkiyet`true`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

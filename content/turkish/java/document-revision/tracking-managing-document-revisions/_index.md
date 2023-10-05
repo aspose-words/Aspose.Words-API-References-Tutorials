@@ -119,7 +119,7 @@ Evet, Aspose.Words for Java çok yönlüdür ve her seviyeden geliştirici taraf
 
 ### Aspose.Words for Java'yı nereden indirebilirim?
 
- Aspose.Words for Java'yı şu adresteki web sitesinden indirebilirsiniz:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Başlamak için kurulum talimatlarını izleyin.
+Aspose.Words for Java'yı şu adresteki web sitesinden indirebilirsiniz:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Başlamak için kurulum talimatlarını izleyin.
 
 ## Çözüm
 

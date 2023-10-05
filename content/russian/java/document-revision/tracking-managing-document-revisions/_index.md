@@ -103,7 +103,7 @@ doc.save("MyDocument_v2.docx");
 
 ### Могу ли я принять или отклонить изменения программным способом?
 
- Да, вы можете принять или отклонить изменения, используя Aspose.Words для Java. Используйте`acceptAllRevisions` и`rejectAllRevisions` методы управления изменениями.
+ Да, вы можете принять или отклонить изменения, используя Aspose.Words для Java. Используйте`acceptAllRevisions` и`rejectAllRevisions` методы управления версиями.
 
 ### Можно ли создать несколько версий документа?
 
@@ -119,7 +119,7 @@ doc.save("MyDocument_v2.docx");
 
 ### Где я могу скачать Aspose.Words для Java?
 
- Вы можете скачать Aspose.Words для Java с сайта по адресу[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Для начала следуйте инструкциям по установке.
+Вы можете скачать Aspose.Words для Java с сайта по адресу[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Для начала следуйте инструкциям по установке.
 
 ## Заключение
 

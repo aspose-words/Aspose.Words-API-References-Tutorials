@@ -78,7 +78,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesinin yapısını PDF belgesin
 
  Bir örneğini oluşturun`Document` Word belgesinin yolunu belirten sınıf.
 
- Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`ExportDocumentStructure` mülkiyet`true`. Bu, belge yapısını dışa aktaracak ve PDF dosyasını düzenlerken Adobe Acrobat Pro'nun "İçerik" gezinme bölmesinde görünür hale getirecektir.
+ Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`ExportDocumentStructure`mülkiyet`true`. Bu, belge yapısını dışa aktaracak ve PDF dosyasını düzenlerken Adobe Acrobat Pro'nun "İçerik" gezinme bölmesinde görünür hale getirecektir.
 
  Kullan`Save` yöntemi`Document`Kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için sınıf.
 

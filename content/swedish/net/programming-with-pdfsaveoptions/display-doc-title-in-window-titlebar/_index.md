@@ -68,7 +68,7 @@ För att använda den här funktionen med Aspose.Words för .NET, följ dessa st
 
  Ladda dokumentet med hjälp av`Document` metod och ange sökvägen till filen som ska konverteras till PDF.
 
- Konfigurera PDF-sparalternativ genom att skapa en instans av`PdfSaveOptions` klass och ställa in`DisplayDocTitle` egendom till`true`. Detta möjliggör visning av dokumenttiteln i fönstrets namnlist vid konvertering till PDF.
+ Konfigurera PDF-sparalternativ genom att skapa en instans av`PdfSaveOptions` klass och ställa in`DisplayDocTitle`egendom till`true`. Detta möjliggör visning av dokumenttiteln i fönstrets namnlist vid konvertering till PDF.
 
  Använd`Save` metod för att konvertera dokumentet till PDF med angivande av konverteringsalternativ.
 

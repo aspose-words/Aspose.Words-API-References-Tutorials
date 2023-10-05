@@ -71,7 +71,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo per a
 
 #### D: Come posso sillabare una parola in una lingua specifica con Aspose.Words?
 
- R: Per sillabare una parola in una lingua specifica con Aspose.Words, puoi usare il`Hyphenation` classe e il`Hyphenate()` metodo. Crea un'istanza di`Hyphenation` class specificando la lingua desiderata, quindi chiamare la classe`Hyphenate()` metodo che passa la parola da sillabare come argomento. Questo ti darà le sillabe della parola nella lingua specificata.
+ R: Per sillabare una parola in una lingua specifica con Aspose.Words, puoi usare il`Hyphenation` classe e il`Hyphenate()` metodo. Crea un'istanza di`Hyphenation` class specificando la lingua desiderata, quindi chiamare la classe`Hyphenate()`metodo che passa la parola da sillabare come argomento. Questo ti darà le sillabe della parola nella lingua specificata.
 
 #### D: Quali codici di lingua devo utilizzare per specificare la lingua di sillabazione in Aspose.Words?
 

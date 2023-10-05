@@ -17,7 +17,7 @@ Aspose.Words for Java 是一个功能丰富的库，使开发人员能够以编�
 在我们深入研究代码之前，请确保您满足以下先决条件：
 
 - 您的系统上安装了 Java 开发工具包 (JDK)。
-- Aspose.Words for Java 库。您可以从以下位置下载：[这里](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java 库。您可以从以下位置下载：[这里](https://releases.aspose.com/words/java/).
 - 对 Java 编程有基本的了解。
 
 ## 分步指南

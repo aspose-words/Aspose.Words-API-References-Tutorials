@@ -77,7 +77,7 @@ I Aspose.Words kan ett dokument delas upp i sidor. Varje sida representerar en d
 ### Extrahera text från en specifik sida
 
 ```java
-// Ange sidnumret (nollbaserat index)
+// Ange sidnummer (nollbaserat index)
 int pageNumber = 0;
 
 // Extrahera text från den angivna sidan
@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 När du har extraherat och manipulerat innehållet kan du spara det i ett nytt dokument:
 
 ```java
-// Spara det extraherade innehållet i ett nytt dokument
+//Spara det extraherade innehållet i ett nytt dokument
 doc.save("extracted_content.docx");
 ```
 

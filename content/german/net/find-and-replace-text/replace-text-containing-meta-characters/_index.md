@@ -65,7 +65,7 @@ count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 ## Schritt 6: Speichern des bearbeiteten Dokuments
 
- Abschließend speichern wir das geänderte Dokument mithilfe von in einem angegebenen Verzeichnis`Save` Methode:
+Abschließend speichern wir das geänderte Dokument mithilfe von in einem angegebenen Verzeichnis`Save` Methode:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
@@ -115,7 +115,7 @@ A: Mit der Funktion „Text mit Metazeichen ersetzen“ in Aspose.Words für .NE
 
 #### F: Wie erstelle ich ein neues Dokument in Aspose.Words für .NET?
 
- A: Bevor Sie die Funktion „Text mit Metazeichen ersetzen“ verwenden, müssen Sie ein neues Dokument mit Aspose.Words für .NET erstellen. Dies kann durch Instanziieren von a erfolgen`Document` Objekt. Hier ist ein Beispielcode zum Erstellen eines neuen Dokuments:
+ A: Bevor Sie die Funktion „Text mit Metazeichen ersetzen“ verwenden, müssen Sie mit Aspose.Words für .NET ein neues Dokument erstellen. Dies kann durch Instanziieren von a erfolgen`Document` Objekt. Hier ist ein Beispielcode zum Erstellen eines neuen Dokuments:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

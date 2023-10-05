@@ -24,7 +24,7 @@ using System.IO;
 ```
 
 ## Paso 2: inicializar el objeto de licencia
-continuación, inicialice el objeto Licencia, que se utilizará para configurar la licencia para Aspose.Words. Agregue el siguiente código:
+A continuación, inicialice el objeto Licencia, que se utilizará para configurar la licencia para Aspose.Words. Agregue el siguiente código:
 
 ```csharp
 License license = new License();
@@ -77,7 +77,7 @@ Ahora puede aplicar con confianza una licencia desde una secuencia y aprovechar 
 
 #### P: ¿Dónde puedo encontrar la documentación de licencia de Aspose.Words para .NET?
 
-R: Puede encontrar la documentación de licencia de Aspose. Palabras para .NET en el[Referencias API](https://reference.aspose.com/words/net/). La documentación proporciona instrucciones detalladas y ejemplos para aplicar licencias, incluida la aplicación de licencias desde archivos.
+ R: Puede encontrar la documentación de licencia de Aspose. Palabras para .NET en el[Referencias API](https://reference.aspose.com/words/net/). La documentación proporciona instrucciones detalladas y ejemplos para aplicar licencias, incluida la aplicación de licencias desde archivos.
 
 #### P: ¿Qué formatos de archivo admite Aspose.Words para .NET para archivos de licencia?
 

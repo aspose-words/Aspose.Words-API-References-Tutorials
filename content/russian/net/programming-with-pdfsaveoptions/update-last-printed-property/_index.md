@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Шаг 3. Настройте параметры сохранения в формате PDF с обновленным свойством «Последняя печать»
 
- Чтобы включить обновление свойства «Последняя печать» при конвертации в PDF, нам необходимо настроить`PdfSaveOptions` объект и установите`UpdateLastPrintedProperty` собственность`true`.
+ Чтобы включить обновление свойства «Последняя печать» при конвертации в PDF, нам необходимо настроить`PdfSaveOptions` объект и установите`UpdateLastPrintedProperty`собственность`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
  Создайте экземпляр`Document` класс, указывающий путь к документу Word.
 
- Создайте экземпляр`PdfSaveOptions` класс и установите`UpdateLastPrintedProperty` собственность`true` чтобы включить обновление свойства «Последняя печать».
+ Создайте экземпляр`PdfSaveOptions` класс и установите`UpdateLastPrintedProperty`собственность`true` чтобы включить обновление свойства «Последняя печать».
 
  Использовать`Save` метод`Document`class для сохранения документа в формате PDF, указав параметры сохранения.
 

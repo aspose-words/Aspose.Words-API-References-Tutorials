@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Passaggio 4: modifica la formattazione del paragrafo
 
- Per mantenere la formattazione corretta, scorrere tutti i paragrafi nel documento di origine e impostare il file`KeepWithNext` proprietà a`true`. Ciò garantisce che i paragrafi rimangano insieme durante il processo di aggiunta.
+ Per mantenere la formattazione corretta, scorrere tutti i paragrafi nel documento di origine e impostare il file`KeepWithNext`proprietà a`true`Ciò garantisce che i paragrafi rimangano insieme durante il processo di aggiunta.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -85,9 +85,9 @@ Ciò completa l'implementazione dell'aggiunta di un documento con diverse impost
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Per garantire che ciò non accada quando il documento di origine ha impostazioni di impostazione della pagina diverse, assicurati che il file
-	//le impostazioni sono identiche nell'ultima sezione del documento di destinazione.
+	// le impostazioni sono identiche nell'ultima sezione del documento di destinazione.
 	// Se ci sono ulteriori sezioni continue che seguono nel documento di origine,
-	// questo dovrà essere ripetuto per quelle sezioni.
+	//questo dovrà essere ripetuto per quelle sezioni.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

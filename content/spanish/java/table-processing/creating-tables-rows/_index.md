@@ -12,7 +12,7 @@ url: /es/java/table-processing/creating-tables-rows/
 Crear tablas y filas en documentos es un aspecto fundamental del procesamiento de documentos y Aspose.Words para Java hace que esta tarea sea más fácil que nunca. En esta guía paso a paso, exploraremos cómo utilizar Aspose.Words para Java para crear tablas y filas en sus documentos. Ya sea que esté creando informes, generando facturas o creando cualquier documento que requiera una presentación de datos estructurados, esta guía lo tiene cubierto.
 
 ## Preparando el escenario
-Antes de profundizar en los detalles esenciales, asegurémonos de tener la configuración necesaria para trabajar con Aspose.Words para Java. Asegúrese de haber descargado e instalado la biblioteca. Si aún no lo has hecho, puedes encontrar el enlace de descarga.[aquí](https://releases.aspose.com/words/java/).
+ Antes de profundizar en los detalles esenciales, asegurémonos de tener la configuración necesaria para trabajar con Aspose.Words para Java. Asegúrese de haber descargado e instalado la biblioteca. Si aún no lo has hecho, puedes encontrar el enlace de descarga.[aquí](https://releases.aspose.com/words/java/).
 
 ## Mesas de construcción
 ### Creando una tabla
@@ -118,4 +118,4 @@ Sí, puede importar datos desde una base de datos y completar una tabla en su do
  Aspose.Words para Java le permite guardar su documento en varios formatos, incluidos DOCX, PDF, HTML y más. Utilizar el`Document.save` método para especificar el formato deseado.
 
 ## Conclusión
-Crear tablas y filas en documentos usando Aspose.Words para Java es una capacidad poderosa para la automatización de documentos. Con el código fuente proporcionado y la orientación en esta guía completa, estará bien equipado para aprovechar el potencial de Aspose.Words para Java en sus aplicaciones Java. Ya sea que esté creando informes, documentos o presentaciones, la presentación de datos estructurados está a solo un fragmento de código de distancia.
+Crear tablas y filas en documentos usando Aspose.Words para Java es una capacidad poderosa para la automatización de documentos. Con el código fuente proporcionado y la orientación de esta guía completa, estará bien equipado para aprovechar el potencial de Aspose.Words para Java en sus aplicaciones Java. Ya sea que esté creando informes, documentos o presentaciones, la presentación de datos estructurados está a solo un fragmento de código de distancia.

@@ -51,7 +51,7 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### 使用 Aspose.Words for .NET 解开行书签的示例源代码**
+### 使用 Aspose.Words for .NET 解开行书签的示例源代码
 
 以下是使用 Aspose.Words for .NET 从行中解开书签的完整示例源代码：
 
@@ -76,6 +76,38 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
 
+#### 解开源代码
+```csharp
+
+private void Untangle(Document doc)
+        {
+            foreach (Bookmark bookmark in doc.Range.Bookmarks)
+            {
+                //获取书签和书签结束节点的父行。
+                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
+                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+                //如果发现两行都正常，并且书签开头和结尾包含在相邻行中，
+                //将书签结束节点移动到顶行最后一个单元格中最后一段的末尾。
+                if (row1 != null && row2 != null && row1.NextSibling == row2)
+                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+            }
+        }
+
+```
+
+#### 通过书签删除行源代码
+```csharp
+
+ private void DeleteRowByBookmark(Document doc, string bookmarkName)
+        {
+            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+            row?.Remove();
+        }
+
+```
 ## 结论
 
 在本文中，我们探索了 C# 源代码，以了解如何使用 Aspose.Words for .NET 的 Untangle Row Bookmarks 功能。我们按照分步指南来解开行书签并删除特定行而不损坏其他书签。

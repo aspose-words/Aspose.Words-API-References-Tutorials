@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Stellen Sie das Quelldokument auf „Neustart der Seitennummerierung“ ein
 
- Um die Seitennummerierung im Quelldokument neu zu starten, müssen Sie die festlegen`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.NewPage` und stellen Sie die ein`RestartPageNumbering` Eigentum zu`true`.
+ Um die Seitennummerierung im Quelldokument neu zu starten, müssen Sie die festlegen`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.NewPage` und stellen Sie die ein`RestartPageNumbering`Eigentum zu`true`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

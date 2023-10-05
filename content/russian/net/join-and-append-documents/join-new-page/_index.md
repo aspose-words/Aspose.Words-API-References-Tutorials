@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте начало нового раздела страницы.
 
-Чтобы начать добавленный документ на новой странице, установите`SectionStart` свойство первого раздела исходного документа на`SectionStart.NewPage`.
+ Чтобы начать добавленный документ на новой странице, установите`SectionStart` свойство первого раздела исходного документа на`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Шаг 4. Добавьте исходный документ
 
-Добавьте исходный документ к целевому документу, используя`AppendDocument` метод`Document` сорт. Установите режим формата импорта на`ImportFormatMode.KeepSourceFormatting` чтобы сохранить исходные стили из исходного документа.
+ Добавьте исходный документ к целевому документу, используя`AppendDocument` метод`Document` сорт. Установите режим формата импорта на`ImportFormatMode.KeepSourceFormatting` чтобы сохранить исходные стили из исходного документа.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Установите добавленный документ для начала на новой странице.
+	//Установите добавленный документ для начала на новой странице.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Добавьте исходный документ, используя исходные стили, найденные в исходном документе.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

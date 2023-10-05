@@ -17,7 +17,7 @@ Günümüzün dijital çağında, belge yönetimi çeşitli endüstrilerde çok 
 Kodlama kısmına geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
 - Java Geliştirme Ortamı: Sisteminizde Java Geliştirme Kiti (JDK) kurulu olmalıdır.
--  Aspose.Words for Java: Aspose.Words for Java kütüphanesini şu adresten indirin ve kurun:[Web sitesi](https://releases.aspose.com/words/java/).
+- Aspose.Words for Java: Aspose.Words for Java kütüphanesini şu adresten indirin ve kurun:[Web sitesi](https://releases.aspose.com/words/java/).
 
 ## Java Projenizi Kurma
 
@@ -54,7 +54,7 @@ public class DocumentToImageConverter {
 
 ## Görüntü Dönüştürmeyi Özelleştirme
 
- Ayarlamaları değiştirerek görüntü dönüştürme işlemini daha da özelleştirebilirsiniz.`ImageSaveOptions`Örneğin, çıktı görüntüsünün çözünürlüğünü, sayfa aralığını ve kalitesini ayarlayabilirsiniz.
+ Ayarlamaları değiştirerek görüntü dönüştürme işlemini daha da özelleştirebilirsiniz.`ImageSaveOptions`. Örneğin, çıktı görüntüsünün çözünürlüğünü, sayfa aralığını ve kalitesini ayarlayabilirsiniz.
 
 ## Çözüm
 
@@ -72,7 +72,7 @@ Aspose.Words for Java ile belgeleri Java'da görsellere dönüştürmek artık �
 Kesinlikle! Birden fazla belgeyi verimli bir şekilde toplu olarak görsellere dönüştürmek için Aspose.Words for Java'yı kullanabilirsiniz.
 
 ### Belgeleri başka hangi formatlara dönüştürebilirim?
-Aspose.Words for Java, PDF, HTML ve daha fazlası dahil olmak üzere çeşitli çıktı formatlarını destekler. Kolayca ayarlayabilirsiniz`SaveFormat` içinde`ImageSaveOptions` Belgeleri istediğiniz formata dönüştürmek için.
+ Aspose.Words for Java, PDF, HTML ve daha fazlası dahil olmak üzere çeşitli çıktı formatlarını destekler. Kolayca ayarlayabilirsiniz`SaveFormat` içinde`ImageSaveOptions`Belgeleri istediğiniz formata dönüştürmek için.
 
 ### Daha fazla belge ve örneği nerede bulabilirim?
  Kapsamlı belgeler ve kod örnekleri için şu adresi ziyaret edin:[Aspose.Words for Java API Referansı](https://reference.aspose.com/words/java/).

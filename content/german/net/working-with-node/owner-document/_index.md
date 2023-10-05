@@ -107,4 +107,4 @@ A: In den meisten Fällen wird der Dokumenteigentümer eines Knotens beim Erstel
 
 #### F: Wie greife ich auf die Knoten eines Eigentümerdokuments zu?
 
-A: Um auf Knoten in einem proprietären Dokument zuzugreifen, können Sie die Methoden und Eigenschaften verwenden, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie verwenden`getElementsByTagName` oder`querySelector` um bestimmte Knoten im Dokument auszuwählen.
+ A: Um auf Knoten in einem proprietären Dokument zuzugreifen, können Sie die Methoden und Eigenschaften verwenden, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie verwenden`getElementsByTagName` oder`querySelector` um bestimmte Knoten im Dokument auszuwählen.

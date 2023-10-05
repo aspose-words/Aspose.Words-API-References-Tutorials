@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Ajoutez du texte au premier paragraphe, puis ajoutez deux autres paragraphes.
+// Ajoutez du texte au premier paragraphe, puis ajoutez deux autres paragraphes.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -92,12 +92,12 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Ajoutez du texte au premier paragraphe, puis ajoutez deux autres paragraphes.
+// Ajoutez du texte au premier paragraphe, puis ajoutez deux autres paragraphes.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
-// Nous avons trois paragraphes, dont aucun n'est enregistré comme un quelconque type de révision
+//Nous avons trois paragraphes, dont aucun n'est enregistré comme un quelconque type de révision
 // Si nous ajoutons/supprimons du contenu dans le document lors du suivi des révisions,
 // ils seront affichés comme tels dans le document et pourront être acceptés/rejetés.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
@@ -123,7 +123,7 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // L'arrêt du suivi des révisions fait apparaître ce texte comme du texte normal.
-//Les révisions ne sont pas comptées lorsque le document est modifié.
+// Les révisions ne sont pas comptées lorsque le document est modifié.
 doc.StopTrackRevisions();
 
 // Enregistrez le document.

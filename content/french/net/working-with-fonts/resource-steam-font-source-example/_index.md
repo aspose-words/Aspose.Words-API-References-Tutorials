@@ -78,4 +78,4 @@ R : L'utilisation de flux de ressources pour spécifier les sources de polices 
 
 #### Q : Quels types de flux de ressources puis-je utiliser pour charger des polices dans Aspose.Words ?
 
-R : Vous pouvez utiliser différents types de flux de ressources pour charger des polices dans Aspose.Words, tels que des flux de ressources intégrés à votre application .NET, des flux de ressources provenant d'un fichier externe, des flux de ressources d'une base de données, etc. Assurez-vous de fournir les flux de ressources appropriés. flux de ressources en fonction de votre configuration et de vos besoins.
+R : Vous pouvez utiliser différents types de flux de ressources pour charger des polices dans Aspose.Words, tels que des flux de ressources intégrés à votre application .NET, des flux de ressources provenant d'un fichier externe, des flux de ressources provenant d'une base de données, etc. Assurez-vous de fournir les flux de ressources appropriés. flux de ressources en fonction de votre configuration et de vos besoins.

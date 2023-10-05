@@ -17,7 +17,7 @@ Aspose.Words for Java, DOC, DOCX, RTF ve daha fazlası dahil olmak üzere çeşi
 Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
 - Sisteminizde Java Geliştirme Kiti (JDK) yüklü.
-- Aspose.Words for Java kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 ## Adım 1: Java Projenizi Kurma
 
@@ -53,7 +53,7 @@ Document doc2 = new Document("document2.docx");
 
 ## Adım 4: Belgeleri Birleştirme
 
-Artık belgelerimizi yüklediğimize göre onları nasıl birleştireceğimize bakalım. Bu örnekte katılacağız`doc2` sonuna kadar`doc1`:
+ Artık belgelerimizi yüklediğimize göre onları nasıl birleştireceğimize bakalım. Bu örnekte katılacağız`doc2` sonuna kadar`doc1`:
 
 ```java
 // Belgeleri birleştir

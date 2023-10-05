@@ -77,7 +77,7 @@ R: Per configurare Aspose.Words per .NET per non incorporare i caratteri princip
 
  Carica il documento Word che desideri convertire in PDF utilizzando il file`Document` classe e il percorso del documento specificato.
 
- Crea un'istanza di`PdfSaveOptions` classe e impostare il file`UseCoreFonts` proprietà a`true`. Ciò eviterà l'incorporamento dei caratteri di base nel file PDF generato.
+ Crea un'istanza di`PdfSaveOptions` classe e impostare il file`UseCoreFonts`proprietà a`true`. Ciò eviterà l'incorporamento dei caratteri di base nel file PDF generato.
 
  Usa il`Save` metodo del`Document` oggetto per salvare il documento in formato PDF specificando le opzioni di conversione configurate in precedenza.
 

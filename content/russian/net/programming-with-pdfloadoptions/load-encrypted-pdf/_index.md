@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions
 
 Обслуживание
 
- Однако если вы хотите загрузить зашифрованный PDF-документ с паролем, вам необходимо использовать`PdfLoadOptions` class и укажите пароль при загрузке документа:
+Однако если вы хотите загрузить зашифрованный PDF-документ с паролем, вам необходимо использовать`PdfLoadOptions` class и укажите пароль при загрузке документа:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadFormat = LoadFormat.Pdf };

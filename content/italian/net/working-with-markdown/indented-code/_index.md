@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Passaggio 2: aggiungi uno stile per il codice rientrato
 
-Aggiungeremo uno stile personalizzato per il codice rientrato utilizzando il file`Styles.Add` metodo del`Document` oggetto. In questo esempio, stiamo creando uno stile chiamato "IndentedCode" per il codice rientrato.
+ Aggiungeremo uno stile personalizzato per il codice rientrato utilizzando il file`Styles.Add` metodo del`Document` oggetto. In questo esempio, stiamo creando uno stile chiamato "IndentedCode" per il codice rientrato.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

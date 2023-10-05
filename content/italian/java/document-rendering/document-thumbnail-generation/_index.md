@@ -53,7 +53,7 @@ Puoi personalizzare l'aspetto delle tue miniature per adattarle al design e ai r
 Una volta generata la miniatura, puoi salvarla nella posizione preferita.
 
 ```java
-//Codice Java per salvare la miniatura generata
+// Codice Java per salvare la miniatura generata
 FileOutputStream outputStream = new FileOutputStream("thumbnail.png");
 stream.writeTo(outputStream);
 ```
@@ -82,4 +82,4 @@ Sì, Aspose.Words per Java richiede una licenza valida per uso commerciale. È p
 
 ### Dove posso trovare documentazione aggiuntiva per Aspose.Words per Java?
 
-Puoi trovare documentazione completa e riferimenti API nella pagina della documentazione Aspose.Words per Java[Qui](https://reference.aspose.com/words/java/).
+ Puoi trovare documentazione completa e riferimenti API nella pagina della documentazione Aspose.Words per Java[Qui](https://reference.aspose.com/words/java/).

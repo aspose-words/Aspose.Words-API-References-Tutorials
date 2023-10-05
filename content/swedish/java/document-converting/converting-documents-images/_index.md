@@ -17,7 +17,7 @@ I dagens digitala tidsålder spelar dokumenthantering en avgörande roll i olika
 Innan vi dyker in i kodningsdelen, se till att du har följande förutsättningar på plats:
 
 - Java Development Environment: Du bör ha Java Development Kit (JDK) installerat på ditt system.
--  Aspose.Words for Java: Ladda ner och ställ in Aspose.Words for Java-biblioteket från[Aspose hemsida](https://releases.aspose.com/words/java/).
+- Aspose.Words for Java: Ladda ner och ställ in Aspose.Words for Java-biblioteket från[Aspose hemsida](https://releases.aspose.com/words/java/).
 
 ## Konfigurera ditt Java-projekt
 
@@ -54,7 +54,7 @@ public class DocumentToImageConverter {
 
 ## Anpassa bildkonvertering
 
- Du kan ytterligare anpassa bildkonverteringsprocessen genom att justera`ImageSaveOptions`Du kan till exempel ställa in upplösningen, sidintervallet och kvaliteten på den utgående bilden.
+ Du kan ytterligare anpassa bildkonverteringsprocessen genom att justera`ImageSaveOptions`. Du kan till exempel ställa in upplösningen, sidintervallet och kvaliteten på den utgående bilden.
 
 ## Slutsats
 
@@ -72,7 +72,7 @@ Att konvertera dokument till bilder i Java är enkelt med Aspose.Words för Java
 Absolut! Du kan använda Aspose.Words för Java för att batchkonvertera flera dokument till bilder effektivt.
 
 ### Vilka andra format kan jag konvertera dokument till?
-Aspose.Words för Java stöder olika utdataformat, inklusive PDF, HTML och mer. Du kan enkelt justera`SaveFormat` i`ImageSaveOptions` för att konvertera dokument till önskat format.
+ Aspose.Words för Java stöder olika utdataformat, inklusive PDF, HTML och mer. Du kan enkelt justera`SaveFormat` i`ImageSaveOptions`för att konvertera dokument till önskat format.
 
 ### Var kan jag hitta mer dokumentation och exempel?
  För omfattande dokumentation och kodexempel, besök[Aspose.Words för Java API Referens](https://reference.aspose.com/words/java/).

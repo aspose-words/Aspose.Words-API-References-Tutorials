@@ -35,7 +35,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder. InsertField(FieldType.FieldTime, true);
 ```
 
-Questo inserirà un campo orario nel documento.
+Questo inserirà un campo ora nel documento.
 
 ## Passaggio 4: configurazione della cultura dell'aggiornamento del campo
 

@@ -112,15 +112,15 @@ currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // Dieser Abschnitt benötigt keine andere Kopf-/Fußzeile für die erste Seite, wir benötigen nur eine Titelseite im Dokument.
-// und die Kopf-/Fußzeile für diese Seite wurde bereits im vorherigen Abschnitt definiert.
+//und die Kopf-/Fußzeile für diese Seite wurde bereits im vorherigen Abschnitt definiert.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // In diesem Abschnitt werden standardmäßig die Kopf-/Fußzeilen des vorherigen Abschnitts angezeigt. Rufen Sie currentSection.HeadersFooters.LinkToPrevious(false) auf, um diesen Link zu unterbrechen.
 // Die Seitenbreite ist für den neuen Abschnitt unterschiedlich, daher müssen wir für eine Fußzeilentabelle andere Zellenbreiten festlegen.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-//Wenn wir für diesen Abschnitt die bereits vorhandenen Kopf-/Fußzeilen verwenden möchten,
-// aber mit ein paar kleinen Änderungen könnte es sinnvoll sein, die Kopf-/Fußzeilen zu kopieren
+// Wenn wir für diesen Abschnitt die bereits vorhandenen Kopf-/Fußzeilen verwenden möchten,
+//aber mit ein paar kleinen Änderungen könnte es sinnvoll sein, die Kopf-/Fußzeilen zu kopieren
 // aus dem vorherigen Abschnitt und wenden Sie die erforderlichen Änderungen an der gewünschten Stelle an.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
@@ -176,7 +176,7 @@ builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-//Wir verwenden eine Tabelle mit zwei Zellen, um einen Teil des Textes in die Zeile einzufügen (mit Seitennummerierung).
+// Wir verwenden eine Tabelle mit zwei Zellen, um einen Teil des Textes in die Zeile einzufügen (mit Seitennummerierung).
 // Linksbündig und der andere Teil des Textes (mit Copyright) rechtsbündig.
 builder.StartTable();
 
@@ -215,7 +215,7 @@ currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // Dieser Abschnitt benötigt keine andere Kopf-/Fußzeile auf der ersten Seite. Wir benötigen nur eine Titelseite im Dokument.
-// und die Kopf-/Fußzeile für diese Seite wurde bereits im vorherigen Abschnitt definiert.
+//und die Kopf-/Fußzeile für diese Seite wurde bereits im vorherigen Abschnitt definiert.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // In diesem Abschnitt werden Kopf-/Fußzeilen aus dem vorherigen Abschnitt angezeigt
@@ -225,7 +225,7 @@ currentSection.HeadersFooters.LinkToPrevious(false);
 
 // Wenn wir für diesen Abschnitt den bereits vorhandenen Kopf-/Fußzeilensatz verwenden möchten.
 // Mit einigen geringfügigen Änderungen kann es jedoch sinnvoll sein, Kopf-/Fußzeilen zu kopieren
-//aus dem vorherigen Abschnitt und wenden Sie die erforderlichen Änderungen an der gewünschten Stelle an.
+// aus dem vorherigen Abschnitt und wenden Sie die erforderlichen Änderungen an der gewünschten Stelle an.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -245,7 +245,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### F: Wie kann ich in Aspose.Words eine Fußzeile zu meinem Dokument hinzufügen?
 
- A: Um Ihrem Dokument in Aspose.Words eine Fußzeile hinzuzufügen, können Sie die verwenden`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` Methode. Diese Methode fügt dem ersten Abschnitt Ihres Dokuments eine primäre Fußzeile hinzu.
+ A: Um Ihrem Dokument in Aspose.Words eine Fußzeile hinzuzufügen, können Sie die verwenden`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`Methode. Diese Methode fügt dem ersten Abschnitt Ihres Dokuments eine primäre Fußzeile hinzu.
 
 #### F: Wie kann ich meiner Kopf- oder Fußzeile in Aspose.Words Text hinzufügen?
 
@@ -253,8 +253,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### F: Kann ich den Inhalt von Kopf- oder Fußzeilen mit Bildern und Seitenzahlen in Aspose.Words anpassen?
 
-A: Ja, Sie können den Inhalt von Kopf- und Fußzeilen mit Bildern und Seitenzahlen in Aspose.Words anpassen. Sie können Objekte wie verwenden`Shape` um Bilder und Objekte wie hinzuzufügen`Field` um Ihrer Kopf- oder Fußzeile Seitenzahlen hinzuzufügen.
+ A: Ja, Sie können den Inhalt von Kopf- und Fußzeilen mit Bildern und Seitenzahlen in Aspose.Words anpassen. Sie können Objekte wie verwenden`Shape` um Bilder und Objekte wie hinzuzufügen`Field` um Ihrer Kopf- oder Fußzeile Seitenzahlen hinzuzufügen.
 
 #### F: Kann ich die Schriftart, Größe und Farbe des Textes in meiner Kopf- oder Fußzeile in Aspose.Words ändern?
 
- A: Ja, Sie können die Schriftart, Größe und Farbe des Textes in Ihrer Kopf- oder Fußzeile in Aspose.Words ändern. Sie können auf Textformatierungseigenschaften zugreifen, z`Font` um die Schriftart zu ändern,`Size` um die Größe anzupassen, und`Color` um die Textfarbe festzulegen.
+ A: Ja, Sie können die Schriftart, Größe und Farbe des Textes in Ihrer Kopf- oder Fußzeile in Aspose.Words ändern. Sie können auf Textformatierungseigenschaften zugreifen, z`Font` um die Schriftart zu ändern,`Size` um die Größe anzupassen, und`Color`um die Textfarbe festzulegen.

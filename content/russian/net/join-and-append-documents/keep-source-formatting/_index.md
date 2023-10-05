@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Шаг 3. Добавьте исходный документ в целевой документ.
 
- Использовать`AppendDocument` метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting`в качестве режима формата импорта, чтобы сохранить исходное форматирование исходного документа.
+ Использовать`AppendDocument` метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting` в качестве режима формата импорта, чтобы сохранить исходное форматирование исходного документа.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

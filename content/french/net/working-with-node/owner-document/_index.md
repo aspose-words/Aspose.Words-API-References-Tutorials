@@ -107,4 +107,4 @@ R : Dans la plupart des cas, le propriétaire du document d'un nœud est déter
 
 #### Q : Comment accéder aux nœuds d'un document propriétaire ?
 
- : Pour accéder aux nœuds d'un document propriétaire, vous pouvez utiliser les méthodes et propriétés fournies par l'API XML utilisée dans votre environnement Node.js. Par exemple, vous pouvez utiliser des méthodes comme`getElementsByTagName` ou`querySelector` pour sélectionner des nœuds spécifiques dans le document.
+ R : Pour accéder aux nœuds d'un document propriétaire, vous pouvez utiliser les méthodes et propriétés fournies par l'API XML utilisée dans votre environnement Node.js. Par exemple, vous pouvez utiliser des méthodes comme`getElementsByTagName` ou`querySelector` pour sélectionner des nœuds spécifiques dans le document.

@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. Adım: Bir OLE nesnesini simge olarak ekleyin
- Belge Oluşturucu'yu kullanın`InsertOleObjectAsIcon` OLE nesnesini belgeye simge olarak ekleme yöntemi. OLE dosya yolunu, görüntüleme bayrağını, simge yolunu ve katıştırılmış nesne adını belirtin.
+ Belge Oluşturucu'yu kullanın`InsertOleObjectAsIcon`OLE nesnesini belgeye simge olarak ekleme yöntemi. OLE dosya yolunu, görüntüleme bayrağını, simge yolunu ve katıştırılmış nesne adını belirtin.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### S. Aspose.Words for .NET'te yeni bir belge ve belge oluşturucu nasıl oluşturulur?
 
- C: Kullanarak yeni bir belge oluşturabilirsiniz.`Document` sınıf ve bir belge oluşturucu kullanarak`DocumentBuilder`sınıf. İşte bir örnek :
+ C: Kullanarak yeni bir belge oluşturabilirsiniz.`Document` sınıf ve bir belge oluşturucu kullanarak`DocumentBuilder` sınıf. İşte bir örnek :
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### S. OLE nesnesi simge olarak eklenmiş halde belge nasıl kaydedilir?
 
- C: Belgeyi kullanın`Save`Belgeyi bir dosyaya kaydetme yöntemi. İşte bir örnek :
+ C: Belgeyi kullanın`Save` Belgeyi bir dosyaya kaydetme yöntemi. İşte bir örnek :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

@@ -21,7 +21,7 @@ Document doc = new Document();
 Document target = new Document(dataDir + "Rendering.docx");
 ```
 
- I det här steget skapar vi två`Document` föremål:`doc` som representerar det tomma källdokumentet och`target`som representerar måldokumentet från vilket vi kommer att kopiera stilarna.
+ I det här steget skapar vi två`Document` föremål:`doc` som representerar det tomma källdokumentet och`target` som representerar måldokumentet från vilket vi kommer att kopiera stilarna.
 
 ## Steg 3: Kopiera stilar
 

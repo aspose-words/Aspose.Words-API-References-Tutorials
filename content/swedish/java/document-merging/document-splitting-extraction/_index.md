@@ -98,7 +98,7 @@ Aspose.Words för Java ger dig möjlighet att dela upp och extrahera innehåll f
 
 ### Kan jag dela upp ett dokument efter anpassade kriterier?
 
-Ja, du kan definiera anpassade kriterier för att dela upp ett dokument med Aspose.Words för Java. Skapa helt enkelt din egen`DocumentSplitCriteria` genomförande.
+ Ja, du kan definiera anpassade kriterier för att dela upp ett dokument med Aspose.Words för Java. Skapa helt enkelt din egen`DocumentSplitCriteria` genomförande.
 
 ### Vilka filformat stöder Aspose.Words för Java?
 

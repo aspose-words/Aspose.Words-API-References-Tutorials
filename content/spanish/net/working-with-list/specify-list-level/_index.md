@@ -46,7 +46,7 @@ Repita estos pasos para especificar niveles de lista y agregar texto en cada niv
 
 ## Paso 4: crear y aplicar una lista con viñetas
 
-También puede crear y aplicar una lista con viñetas utilizando una de las plantillas de listas de Microsoft Word:
+También puede crear y aplicar una lista con viñetas utilizando una de las plantillas de lista de Microsoft Word:
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
@@ -89,8 +89,8 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Cree una lista numerada basada en una de las plantillas de listas de Microsoft Word
-// y aplicarlo al párrafo actual del creador de documentos.
+// Cree una lista numerada basada en una de las plantillas de listas de Microsoft Word
+// aplicarlo al párrafo actual del creador de documentos.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 // Hay nueve niveles en esta lista, probémoslos todos.
@@ -101,7 +101,7 @@ for (int i = 0; i < 9; i++)
 }
 
 // Cree una lista con viñetas basada en una de las plantillas de lista de Microsoft Word
-// y aplicarlo al párrafo actual del creador de documentos.
+// aplicarlo al párrafo actual del creador de documentos.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
 for (int i = 0; i < 9; i++)

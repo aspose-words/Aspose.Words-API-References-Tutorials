@@ -32,13 +32,13 @@ FormFieldCollection documentFormFields = doc.Range.FormFields;
 È possibile recuperare i campi del modulo per indice o per nome. In questo esempio, recuperiamo un campo modulo utilizzando entrambi i metodi:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; //Recupero per indice
+FormField formField1 = documentFormFields[3]; // Recupero per indice
 FormField formField2 = documentFormFields["Text2"]; // Recupero per nome
 ```
 
 ## Passaggio 3: modifica delle proprietà del campo modulo
 
- Dopo aver recuperato i campi del modulo, puoi modificare le loro proprietà secondo necessità. In questo esempio, modifichiamo la dimensione del carattere di`formField1` a 20 e il colore del carattere di`formField2` al rosso:
+Dopo aver recuperato i campi del modulo, puoi modificare le loro proprietà secondo necessità. In questo esempio, modifichiamo la dimensione del carattere di`formField1` a 20 e il colore del carattere di`formField2` al rosso:
 
 ```csharp
 formField1.Font.Size = 20;
@@ -82,7 +82,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo in ba
 
 #### D: Cosa succede se il campo modulo con il nome specificato non esiste nel documento?
 
- R: Se il campo modulo con il nome specificato non esiste nel documento, il file`Document.Range.FormFields[name]` il metodo tornerà`null`Puoi controllare questo risultato per gestire i casi in cui il campo del modulo non viene trovato.
+ R: Se il campo modulo con il nome specificato non esiste nel documento, il file`Document.Range.FormFields[name]` il metodo tornerà`null`. Puoi controllare questo risultato per gestire i casi in cui il campo del modulo non viene trovato.
 
 #### D: Come posso modificare le proprietà di un campo modulo trovato?
 

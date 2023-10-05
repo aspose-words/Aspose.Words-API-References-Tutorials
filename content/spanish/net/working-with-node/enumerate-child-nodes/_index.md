@@ -54,7 +54,7 @@ foreach (Node child in children)
 }
 ```
 
- En este ejemplo, estamos verificando si el nodo hijo es de tipo`Run` (por ejemplo, un fragmento de texto). Si es así, convertimos el nodo a`Run` y mostrar el texto usando`run.Text`.
+ En este ejemplo, estamos verificando si el nodo secundario es de tipo`Run` (por ejemplo, un fragmento de texto). Si es así, convertimos el nodo a`Run` y mostrar el texto usando`run.Text`.
 
 ## Código fuente de ejemplo para enumerar nodos secundarios con Aspose.Words para .NET
 
@@ -66,7 +66,7 @@ Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 NodeCollection children = paragraph.ChildNodes;
 foreach (Node child in children)
 {
-	//Un párrafo puede contener elementos secundarios de varios tipos, como tramos, formas y otros.
+	// Un párrafo puede contener elementos secundarios de varios tipos, como tramos, formas y otros.
 	if (child.NodeType == NodeType.Run)
 	{
 		Run run = (Run) child;
@@ -90,11 +90,11 @@ R: Un nodo secundario en Node.js se refiere a un nodo que está contenido direct
 
 #### P: ¿Cómo acceder a las propiedades de un nodo secundario?
 
- R: Para acceder a las propiedades de un nodo secundario en Node.js, puede utilizar los métodos y propiedades proporcionados por la API XML utilizada en su entorno Node.js. Por ejemplo, puede utilizar métodos como`getAttribute`para obtener el valor de un atributo específico de un nodo secundario.
+ R: Para acceder a las propiedades de un nodo secundario en Node.js, puede utilizar los métodos y propiedades proporcionados por la API XML utilizada en su entorno Node.js. Por ejemplo, puede utilizar métodos como`getAttribute` para obtener el valor de un atributo específico de un nodo secundario.
 
 #### P: ¿Podemos modificar los nodos secundarios de un nodo?
 
- R: Sí, es posible modificar los nodos secundarios de un nodo en Node.js utilizando los métodos y propiedades proporcionados por la API XML utilizada en su entorno Node.js. Por ejemplo, puede utilizar métodos como`appendChild` o`removeChild` para agregar o eliminar nodos secundarios de un nodo específico.
+R: Sí, es posible modificar los nodos secundarios de un nodo en Node.js utilizando los métodos y propiedades proporcionados por la API XML utilizada en su entorno Node.js. Por ejemplo, puede utilizar métodos como`appendChild` o`removeChild` para agregar o eliminar nodos secundarios de un nodo específico.
 
 #### P: ¿Cómo explorar todos los nodos secundarios de un nodo?
 

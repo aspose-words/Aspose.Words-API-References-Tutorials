@@ -34,7 +34,7 @@ Field field = builder. InsertField(FieldType.FieldDate, true);
 field.LocaleId = 1049;
 ```
 
- Vi använder dokumentgeneratorn för att infoga ett typfält`FieldType.FieldDate` in i dokumentet. Genom att ställa in`LocaleId` egendom till`1049`, specificerar vi den ryska lokaliseringen för detta fält.
+ Vi använder dokumentgeneratorn för att infoga ett typfält`FieldType.FieldDate` in i dokumentet. Genom att ställa in`LocaleId`egendom till`1049`, specificerar vi den ryska lokaliseringen för detta fält.
 
 ## Steg 4: Spara det ändrade dokumentet
 
@@ -64,7 +64,7 @@ Detta var ett exempel på en källkod för att ange lokalisering på fältnivå 
 
 #### F: Hur kan jag ange lokalen på fältnivå i Aspose.Words för .NET?
 
- S: För att ange lokalen på fältnivå i Aspose.Words för .NET kan du använda`FieldOptions` klass och dess`FieldLocale` egenskap för att ställa in önskad plats. Du kan till exempel använda`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` för att ange det franska (Frankrike) språket.
+ S: För att ange lokalen på fältnivå i Aspose.Words för .NET kan du använda`FieldOptions` klass och dess`FieldLocale` egenskap för att ställa in önskad plats. Du kan till exempel använda`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` för att ange den franska (Frankrike) språkversionen.
 
 #### F: Är det möjligt att ange olika lokaler för varje fält i Aspose.Words för .NET?
 

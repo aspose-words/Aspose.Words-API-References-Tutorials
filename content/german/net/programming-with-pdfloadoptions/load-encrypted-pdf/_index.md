@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions
 
 Wartung
 
- Wenn Sie jedoch das verschlüsselte PDF-Dokument mit einem Passwort laden möchten, müssen Sie das verwenden`PdfLoadOptions` Klasse und geben Sie beim Laden des Dokuments das Passwort an:
+Wenn Sie jedoch das verschlüsselte PDF-Dokument mit einem Passwort laden möchten, müssen Sie das verwenden`PdfLoadOptions` Klasse und geben Sie beim Laden des Dokuments das Passwort an:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadFormat = LoadFormat.Pdf };

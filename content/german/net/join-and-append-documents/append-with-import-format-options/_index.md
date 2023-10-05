@@ -64,7 +64,7 @@ Damit ist die Implementierung des Anhängens eines Dokuments mit Importformatopt
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// Geben Sie an, dass bei Nummerierungskonflikten in Quell- und Zieldokumenten
-	// dann wird die Nummerierung aus dem Quelldokument verwendet.
+	//dann wird die Nummerierung aus dem Quelldokument verwendet.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

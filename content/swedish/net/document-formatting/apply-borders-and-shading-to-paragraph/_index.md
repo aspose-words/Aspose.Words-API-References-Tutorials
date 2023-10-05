@@ -99,7 +99,7 @@ Här är den fullständiga källkoden för funktionen Apply Borders and shading 
 
 S: För att tillämpa ramar och skuggning på ett stycke i ett Word-dokument med Aspose.Words för .NET, följ dessa steg:
 1.  Skapa ett nytt dokument och en`DocumentBuilder` objekt.
-2.  Konfigurera styckegränserna genom att gå till`Borders` egendom av`ParagraphFormat` och ange kantstilen för varje sida.
+2.  Konfigurera styckegränserna genom att gå till`Borders` egendom av`ParagraphFormat` och ställa in kantstilen för varje sida.
 3.  Konfigurera styckefyllningen genom att gå till`Shading` egendom av`ParagraphFormat` och specificera textur och fyllningsfärger.
 4.  Lägg till innehåll i stycket med hjälp av`Write` metod för`DocumentBuilder`.
 5.  Spara dokumentet med hjälp av`Save` metod.

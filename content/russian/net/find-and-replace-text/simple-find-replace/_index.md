@@ -42,7 +42,7 @@ doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindRep
 
 ## Шаг 4: Сохранение отредактированного документа
 
- Наконец, мы сохраняем измененный документ в указанном каталоге, используя команду`Save` метод:
+Наконец, мы сохраняем измененный документ в указанном каталоге, используя команду`Save` метод:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");

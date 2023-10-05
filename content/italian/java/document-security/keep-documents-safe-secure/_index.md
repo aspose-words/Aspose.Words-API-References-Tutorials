@@ -50,7 +50,7 @@ Prima di procedere con la sicurezza dei documenti, acquisiamo familiarità con A
 L'installazione di Aspose.Words per Java è un processo semplice. Segui questi semplici passaggi per aggiungere la libreria al tuo progetto Java:
 
 1. ### Scaricamento:
- Vai a[Aspose.Releases](https://releases.aspose.com/words/java/) e scarica il pacchetto Aspose.Words per Java.
+  Vai a[Aspose.Releases](https://releases.aspose.com/words/java/) e scarica il pacchetto Aspose.Words per Java.
 
 2. ### Estratto:
  Estrai il pacchetto scaricato in una posizione comoda sul tuo computer.
@@ -84,7 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Ora che abbiamo caricato il nostro documento, procediamo ad applicargli la crittografia. Aspose.Words per Java fornisce un modo semplice per impostare la crittografia dei documenti:
 
 ```java
-//Imposta una password per aprire il documento
+// Imposta una password per aprire il documento
 doc.getWriteProtection().setPassword("yourPassword");
 
 // Imposta l'algoritmo di crittografia (facoltativo)
@@ -96,7 +96,7 @@ doc.save("path/to/encrypted/document.docx");
 
 ## 7. Protezione di elementi specifici del documento
 
-A volte potresti voler proteggere solo parti specifiche del tuo documento, come intestazioni, piè di pagina o determinati paragrafi. Aspose.Words ti consente di raggiungere questo livello di granularità nella protezione dei documenti:
+volte potresti voler proteggere solo parti specifiche del tuo documento, come intestazioni, piè di pagina o determinati paragrafi. Aspose.Words ti consente di raggiungere questo livello di granularità nella protezione dei documenti:
 
 ```java
 // Proteggi una sezione specifica (protezione di sola lettura)
@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 La filigrana può aiutare a proteggere la riservatezza del documento e indicarne lo stato. Aspose.Words per Java offre funzionalità di filigrana facili da usare:
 
 ```java
-//Aggiungi una filigrana visibile
+// Aggiungi una filigrana visibile
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

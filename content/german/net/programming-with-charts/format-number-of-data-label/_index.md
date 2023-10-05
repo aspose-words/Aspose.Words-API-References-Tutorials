@@ -37,7 +37,7 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## Schritt 3: Fügen Sie dem Diagramm Seriendaten hinzu
+## Schritt 3: Fügen Sie dem Diagramm Reihendaten hinzu
 
 Fügen Sie dem Diagramm Seriendaten hinzu. In diesem Beispiel fügen wir drei Kategorien und ihre entsprechenden Werte hinzu.
 
@@ -94,7 +94,7 @@ Damit ist die Implementierung der Formatierung der Anzahl der Datenbeschriftunge
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 	// Oder Sie können den Formatcode so festlegen, dass er mit einer Quellzelle verknüpft wird.
-	// In diesem Fall wird NumberFormat auf „Allgemein“ zurückgesetzt und von einer Quellzelle geerbt.
+	//In diesem Fall wird NumberFormat auf „Allgemein“ zurückgesetzt und von einer Quellzelle geerbt.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
@@ -121,10 +121,10 @@ Sie können Aspose.Words für .NET installieren, indem Sie es mithilfe des NuGet
 Ja, Aspose.Words für .NET bietet umfangreiche Funktionen zum Formatieren verschiedener Aspekte eines Diagramms. Zusätzlich zu den Datenbeschriftungen können Sie Diagrammtyp, Reihendaten, Achseneigenschaften, Legende, Titel, Plotbereich und viele andere Elemente des Diagramms anpassen. Die API bietet eine detaillierte Kontrolle über die Darstellung und Formatierung von Diagrammen.
 
 #### Q4. Kann ich unterschiedliche Zahlenformate auf unterschiedliche Datenbeschriftungen in derselben Serie anwenden?
- Ja, mit Aspose.Words für .NET können Sie unterschiedliche Zahlenformate auf einzelne Datenbeschriftungen innerhalb derselben Serie anwenden. Durch den Zugriff auf`DataLabels` Sammlung, die einer Serie zugeordnet ist, können Sie festlegen`FormatCode` -Eigenschaft jeder Datenbeschriftung, um das gewünschte Zahlenformat anzugeben. Dadurch können Sie numerische Werte in verschiedenen Formaten innerhalb desselben Diagramms darstellen.
+Ja, mit Aspose.Words für .NET können Sie unterschiedliche Zahlenformate auf einzelne Datenbeschriftungen innerhalb derselben Serie anwenden. Durch den Zugriff auf`DataLabels` Sammlung, die einer Serie zugeordnet ist, können Sie festlegen`FormatCode` -Eigenschaft jeder Datenbeschriftung, um das gewünschte Zahlenformat anzugeben. Dadurch können Sie numerische Werte in verschiedenen Formaten innerhalb desselben Diagramms darstellen.
 
 #### F5. Kann ich benutzerdefinierte Zahlenformate für Datenbeschriftungen verwenden?
- Ja, Aspose.Words für .NET unterstützt benutzerdefinierte Zahlenformate für Datenbeschriftungen. Sie können das gewünschte Zahlenformat festlegen, indem Sie das festlegen`FormatCode`Eigenschaft einer Datenbeschriftung in einen benutzerdefinierten Formatcode umwandeln. Dies gibt Ihnen die Flexibilität, eine Vielzahl von Zahlenformaten anzuwenden, beispielsweise Währungssymbole, Datumsformate, Prozentwerte und mehr.
+ Ja, Aspose.Words für .NET unterstützt benutzerdefinierte Zahlenformate für Datenbeschriftungen. Sie können das gewünschte Zahlenformat festlegen, indem Sie das festlegen`FormatCode` Eigenschaft einer Datenbeschriftung in einen benutzerdefinierten Formatcode umwandeln. Dies gibt Ihnen die Flexibilität, eine Vielzahl von Zahlenformaten anzuwenden, beispielsweise Währungssymbole, Datumsformate, Prozentwerte und mehr.
 
 #### F6. Kann ich das Diagramm mit formatierten Datenbeschriftungen in verschiedenen Formaten speichern?
- Ja, mit Aspose.Words für .NET können Sie das Dokument mit dem Diagramm mit formatierten Datenbeschriftungen in verschiedenen Formaten wie DOCX, PDF, HTML und mehr speichern. Sie können je nach Ihren Anforderungen das passende Format auswählen und nutzen`Save` Methode der`Document` Objekt zum Speichern des Dokuments. Die formatierten Datenbeschriftungen bleiben im gespeicherten Dokument erhalten.
+Ja, mit Aspose.Words für .NET können Sie das Dokument mit dem Diagramm mit formatierten Datenbeschriftungen in verschiedenen Formaten wie DOCX, PDF, HTML und mehr speichern. Sie können je nach Ihren Anforderungen das passende Format auswählen und nutzen`Save` Methode der`Document` Objekt zum Speichern des Dokuments. Die formatierten Datenbeschriftungen bleiben im gespeicherten Dokument erhalten.

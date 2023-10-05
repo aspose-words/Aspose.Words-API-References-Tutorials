@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте параметры формата импорта
 
- Создайте экземпляр`ImportFormatOptions` класс и установите`IgnoreHeaderFooter` собственность`false`. Это гарантирует, что содержимое верхнего и нижнего колонтитула будет включено в процесс добавления.
+ Создайте экземпляр`ImportFormatOptions` класс и установите`IgnoreHeaderFooter`собственность`false`. Это гарантирует, что содержимое верхнего и нижнего колонтитула будет включено в процесс добавления.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };

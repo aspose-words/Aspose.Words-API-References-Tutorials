@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveO
 
 In diesem Tutorial haben wir die Funktionalität zum Festlegen der Komprimierungsstufe beim Speichern eines Dokuments mit Aspose.Words für .NET untersucht. Durch Angabe der geeigneten Komprimierungsstufe können Sie die Dokumentgröße und die Generierungsgeschwindigkeit optimieren.
 
- Der`OoxmlSaveOptions`Die Klasse bietet Flexibilität zur Steuerung des Komprimierungsgrades durch Festlegen der`CompressionLevel` Eigenschaft auf einen angemessenen Wert, wie z`SuperFast`. Auf diese Weise können Sie je nach Ihren spezifischen Anforderungen das richtige Gleichgewicht zwischen Dateigröße und Sicherungsgeschwindigkeit finden.
+ Der`OoxmlSaveOptions` Die Klasse bietet Flexibilität zur Steuerung des Komprimierungsgrades durch Festlegen der`CompressionLevel` Eigenschaft auf einen angemessenen Wert, wie z`SuperFast`. Auf diese Weise können Sie je nach Ihren spezifischen Anforderungen das richtige Gleichgewicht zwischen Dateigröße und Sicherungsgeschwindigkeit finden.
 
 Die Verwendung der Komprimierung kann hilfreich sein, wenn Sie die Größe der generierten Dateien reduzieren müssen, insbesondere bei großen Dokumenten. Dies kann das Speichern, Teilen und Übertragen von Dokumenten erleichtern.
 

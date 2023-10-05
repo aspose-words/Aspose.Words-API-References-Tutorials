@@ -83,7 +83,7 @@ C: Aspose.Words for .NET kullanarak görüntü örneklemeyle PDF belge boyutunu 
 
  Bir örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` kullanarak görüntü örnekleme seçeneklerini ayarlama ve sınıf oluşturma`DownsampleOptions` mülk. Görüntülerin hedef çözünürlüğünü kullanarak belirleyebilirsiniz.`Resolution` özelliğini kullanın ve görüntülerin ölçeğinin küçültülmeyeceği bir minimum çözünürlük eşiği ayarlayın.`ResolutionThreshold` mülk.
 
- Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
+ Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document` yolu ve kaydetme seçeneklerini belirten sınıf.
 
 #### S: Görüntü örneklemeyle PDF belge boyutunu küçültmenin faydaları nelerdir?
 C: Görüntü örneklemeyle PDF belge boyutunu küçültmenin faydaları şunlardır:

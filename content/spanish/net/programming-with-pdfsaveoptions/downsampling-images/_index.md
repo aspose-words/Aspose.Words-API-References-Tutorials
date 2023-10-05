@@ -83,7 +83,7 @@ R: Para reducir el tamaño del documento PDF con muestreo de imágenes usando As
 
  Configure las opciones de guardar como PDF creando una instancia del`PdfSaveOptions` clase y configurar las opciones de muestreo de imágenes usando el`DownsampleOptions` propiedad. Puede especificar la resolución objetivo de las imágenes utilizando el`Resolution` propiedad y establezca un umbral de resolución mínimo por encima del cual las imágenes no se reducirán utilizando el`ResolutionThreshold` propiedad.
 
- Guarde el documento en formato PDF utilizando el`Save` método de la`Document`clase que especifica la ruta y las opciones de guardado.
+ Guarde el documento en formato PDF utilizando el`Save` método de la`Document` clase que especifica la ruta y las opciones de guardado.
 
 #### P: ¿Cuáles son los beneficios de reducir el tamaño del documento PDF con muestreo de imágenes?
 R: Los beneficios de reducir el tamaño del documento PDF con muestreo de imágenes son:

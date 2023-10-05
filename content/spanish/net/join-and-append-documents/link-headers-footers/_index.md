@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: configurar el documento adjunto para que aparezca en una página nueva
 
-Para garantizar que el contenido del documento de origen aparezca en una nueva página del documento de destino, debe configurar el`SectionStart` propiedad de la primera sección del documento fuente para`SectionStart.NewPage`.
+ Para garantizar que el contenido del documento de origen aparezca en una nueva página del documento de destino, debe configurar el`SectionStart` propiedad de la primera sección del documento fuente para`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Paso 4: vincular encabezados y pies de página a la sección anterior
 
- Para vincular los encabezados y pies de página del documento de origen a la sección anterior del documento de destino, puede utilizar el`LinkToPrevious` método de la`HeadersFooters` recopilación. Al pasar`true` como parámetro, anula cualquier encabezado o pie de página existente en el documento fuente.
+Para vincular los encabezados y pies de página del documento de origen a la sección anterior del documento de destino, puede utilizar el`LinkToPrevious` método de la`HeadersFooters` recopilación. Al pasar`true` como parámetro, anula cualquier encabezado o pie de página existente en el documento fuente.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

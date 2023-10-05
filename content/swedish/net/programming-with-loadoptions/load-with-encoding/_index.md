@@ -23,7 +23,7 @@ LoadOptions loadOptions = new LoadOptions { Encoding = Encoding.UTF7 };
 
 Vi skapar ett nytt LoadOptions-objekt och sätter egenskapen Encoding till Encoding.UTF7 för att specificera UTF-7-kodning.
 
-## Laddar dokument med specificerad kodning
+## Laddar dokument med angiven kodning
 
 Nu när vi har konfigurerat laddningsalternativen kan vi ladda dokumentet med klassen Document och ange laddningsalternativen. Här är ett exempel :
 

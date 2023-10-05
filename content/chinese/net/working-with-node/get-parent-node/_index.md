@@ -62,7 +62,7 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 
 #### Q：如何获取特定节点的父节点？
 
- A：要获取特定节点的父节点，可以使用`parentNode`节点的属性。该属性返回当前节点的父节点。
+A：要获取特定节点的父节点，可以使用`parentNode`节点的属性。该属性返回当前节点的父节点。
 
 #### 问：如何判断一个节点是否有父节点？
 

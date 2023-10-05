@@ -56,6 +56,58 @@ Aquí está el código fuente de ejemplo completo para demostrar cómo mostrar u
 
 ```
 
+#### MostrarHideBookmarkedContenido código fuente
+
+```csharp
+
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+        {
+            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+            DocumentBuilder builder = new DocumentBuilder(doc);
+            builder.MoveToDocumentEnd();
+
+            // {IF "{MERGEFIELD favorito}" = "verdadero" "" ""}
+            Field field = builder.InsertField("IF \"", null);
+            builder.MoveTo(field.Start.NextSibling);
+            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+            builder.Write("\" = \"true\" ");
+            builder.Write("\"");
+            builder.Write("\"");
+            builder.Write(" \"\"");
+
+            Node currentNode = field.Start;
+            bool flag = true;
+            while (currentNode != null && flag)
+            {
+                if (currentNode.NodeType == NodeType.Run)
+                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                        flag = false;
+
+                Node nextNode = currentNode.NextSibling;
+
+                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+                currentNode = nextNode;
+            }
+
+            Node endNode = bm.BookmarkEnd;
+            flag = true;
+            while (currentNode != null && flag)
+            {
+                if (currentNode.NodeType == NodeType.FieldEnd)
+                    flag = false;
+
+                Node nextNode = currentNode.NextSibling;
+
+                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+                endNode = currentNode;
+                currentNode = nextNode;
+            }
+
+            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+        }
+		
+```
 ## Conclusión
 
 En este artículo, exploramos el código fuente de C# para comprender cómo utilizar la función Mostrar ocultar marcadores de Aspose.Words para .NET. Seguimos una guía paso a paso para mostrar u ocultar un marcador específico en un documento.

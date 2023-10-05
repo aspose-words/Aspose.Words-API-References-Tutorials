@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveO
 
 Bu eğitimde Aspose.Words for .NET kullanarak bir belgeyi kaydederken sıkıştırma düzeyini ayarlamanın işlevselliğini araştırdık. Uygun sıkıştırma düzeyini belirterek belge boyutunu ve oluşturma hızını optimize edebilirsiniz.
 
-`OoxmlSaveOptions`sınıfı ayarlayarak sıkıştırma düzeyini kontrol etme esnekliği sağlar.`CompressionLevel` uygun bir değere sahip mülk, örneğin`SuperFast`. Bu, özel ihtiyaçlarınıza göre dosya boyutu ve yedekleme hızı arasında doğru dengeyi kurmanıza olanak tanır.
+`OoxmlSaveOptions` sınıfı ayarlayarak sıkıştırma düzeyini kontrol etme esnekliği sağlar.`CompressionLevel` uygun bir değere sahip mülk, örneğin`SuperFast`. Bu, özel ihtiyaçlarınıza göre dosya boyutu ve yedekleme hızı arasında doğru dengeyi kurmanıza olanak tanır.
 
 Özellikle büyük belgelerde, oluşturulan dosyaların boyutunu azaltmanız gerektiğinde sıkıştırmayı kullanmak yararlı olabilir. Bu, belgelerin saklanmasını, paylaşılmasını ve iletilmesini kolaylaştırabilir.
 

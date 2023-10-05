@@ -36,7 +36,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Schritt 3: Fügen Sie dem Diagramm Seriendaten hinzu
+## Schritt 3: Fügen Sie dem Diagramm Reihendaten hinzu
 
 Fügen Sie dem Diagramm Seriendaten hinzu. In diesem Beispiel fügen wir fünf Elemente mit ihren entsprechenden Werten hinzu.
 
@@ -100,7 +100,7 @@ Achsenbeschriftungen in einem Diagramm beziehen sich auf die Textdarstellung von
  Um den Abstand zwischen Achsenbeschriftungen in einem Diagramm mithilfe von Aspose.Words für .NET anzupassen, können Sie auf Folgendes zugreifen`AxisX` oder`AxisY` Eigenschaft des Diagramms und ändern Sie die`TickLabelSpacing` Eigentum. Durch Einstellen der`TickLabelSpacing` B. auf einen bestimmten Wert, können Sie die Intervalleinheit zwischen den Beschriftungen auf der jeweiligen Achse steuern und den Abstand entsprechend Ihren Anforderungen anpassen.
 
 #### Q3. Kann ich unterschiedliche Abstände für die Beschriftungen der X- und Y-Achse festlegen?
-Ja, Sie können mit Aspose.Words für .NET unterschiedliche Abstände für die Beschriftungen der X- und Y-Achse festlegen. Greifen Sie auf die entsprechende Achse zu (`AxisX` für X-Achse bzw`AxisY` für die Y-Achse) des Diagramms und ändern Sie die`TickLabelSpacing`Eigenschaft einzeln für jede Achse festlegen. Dadurch können Sie unterschiedliche Intervalleinheiten und Abstände für die Beschriftungen auf der X- und Y-Achse festlegen und so das Erscheinungsbild des Diagramms genau steuern.
+Ja, Sie können mit Aspose.Words für .NET unterschiedliche Abstände für die Beschriftungen der X- und Y-Achse festlegen. Greifen Sie auf die entsprechende Achse zu (`AxisX` für X-Achse bzw`AxisY` für die Y-Achse) des Diagramms und ändern Sie die`TickLabelSpacing`Eigenschaft einzeln für jede Achse festlegen. Dadurch können Sie unterschiedliche Intervalleinheiten und Abstände für die Beschriftungen auf der X- und Y-Achse festlegen und so eine detaillierte Kontrolle über das Erscheinungsbild des Diagramms erhalten.
 
 #### Q4. Welche Bedeutung hat die Intervalleinheit zwischen Beschriftungen auf der Achse?
 Die Intervalleinheit zwischen Beschriftungen auf der Achse bestimmt den Abstand zwischen aufeinanderfolgenden Beschriftungen, die im Diagramm angezeigt werden. Durch Festlegen der Intervalleinheit können Sie die Dichte der Etiketten steuern und sicherstellen, dass sie einen angemessenen Abstand haben, um Überfüllung und Überlappung zu vermeiden. Durch Anpassen der Intervalleinheit können Sie die Daten besser lesbar und optisch ansprechender darstellen.

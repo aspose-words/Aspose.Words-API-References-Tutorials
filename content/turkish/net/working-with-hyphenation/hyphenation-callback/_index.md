@@ -14,7 +14,7 @@ Bu adım adım eğitimde Aspose.Words for .NET'te tireleme geri çağırma özel
 
 ## 1. Adım: Tireleme Hatırlatıcısını Kaydet
 
-İlk olarak, tireleme geri çağrısını özel bir kullanarak kaydedeceğiz.`CustomHyphenationCallback` sınıf. Bu, kelime tirelemesini kendi kurallarımıza göre yapmamızı sağlayacaktır:
+ İlk olarak, tireleme geri çağrısını özel bir kullanarak kaydedeceğiz.`CustomHyphenationCallback` sınıf. Bu, kelime tirelemesini kendi kurallarımıza göre yapmamızı sağlayacaktır:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
@@ -105,4 +105,4 @@ C: Heceleme güçlendirici kullanmak aşağıdakiler gibi çeşitli senaryolarda
 
 #### S: Aspose.Words'te özel hecelemeyi bir heceleme hatırlatıcısıyla nasıl test edebilirim?
 
-C: Aspose.Words'te özel hecelemeyi bir heceleme hatırlatıcısıyla test etmek için, özel heceleme kurallarını uygulamak istediğiniz kelimeleri içeren bir test belgesi oluşturabilirsiniz. Daha sonra özel heceleme geri aramanızı ayarlayabilir,`Document.Range.Replace()` belgedeki sözcükleri değiştirme yöntemini kullanın ve`Hyphenate()` yöntemi`Hyphenation` Kelimelerin hecelemesini almak için sınıf. Daha sonra hecelenmiş sözcükleri gerektiği gibi biçimlendirebilirsiniz; örneğin hecelerin arasına kısa çizgi ekleyerek.
+ C: Aspose.Words'te özel hecelemeyi bir heceleme hatırlatıcısıyla test etmek için, özel heceleme kurallarını uygulamak istediğiniz kelimeleri içeren bir test belgesi oluşturabilirsiniz. Daha sonra özel heceleme geri aramanızı ayarlayabilir,`Document.Range.Replace()` belgedeki sözcükleri değiştirme yöntemini kullanın ve`Hyphenate()` yöntemi`Hyphenation` Kelimelerin hecelemesini almak için sınıf. Daha sonra hecelenmiş sözcükleri gerektiği gibi biçimlendirebilirsiniz; örneğin hecelerin arasına kısa çizgi ekleyerek.

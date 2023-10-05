@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-den här handledningen kommer vi att utforska den medföljande C#-källkoden för att uppdatera den senaste spartid-egenskapen när du sparar ett dokument med Aspose.Words för .NET. Med den här funktionen kan du automatiskt uppdatera den senast sparade tidsegenskapen för det genererade dokumentet.
+I den här handledningen kommer vi att utforska den medföljande C#-källkoden för att uppdatera den senaste spartid-egenskapen när du sparar ett dokument med Aspose.Words för .NET. Med den här funktionen kan du automatiskt uppdatera den senast sparade tidsegenskapen för det genererade dokumentet.
 
 ## Steg 1: Sätta upp miljön
 
@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx
 
 ## Slutsats
 
-den här handledningen utforskade vi funktionen att automatiskt uppdatera den senaste spartid-egenskapen när du sparar ett dokument med Aspose.Words för .NET. Genom att aktivera den här funktionen med OOXML-sparalternativ kan du säkerställa att den senaste spartid-egenskapen uppdateras automatiskt i det genererade dokumentet.
+I den här handledningen utforskade vi funktionen att automatiskt uppdatera den senaste spartid-egenskapen när du sparar ett dokument med Aspose.Words för .NET. Genom att aktivera den här funktionen med OOXML-sparalternativ kan du säkerställa att den senaste spartid-egenskapen uppdateras automatiskt i det genererade dokumentet.
 
 Att uppdatera egenskapen för senaste spartid kan vara användbart för att spåra ändringar och versioner av ett dokument. Den håller också reda på när dokumentet senast sparades, vilket kan vara användbart i olika scenarier.
 

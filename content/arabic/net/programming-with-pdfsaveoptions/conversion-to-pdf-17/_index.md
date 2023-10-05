@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOption
 
  قم بتكوين خيارات التحويل كـ PDF عن طريق إنشاء مثيل لملف`PdfSaveOptions`فئة وتحديد إصدار معيار PDF الذي تريد استخدامه باستخدام`Compliance` الملكية مع القيمة`PdfCompliance. Pdf17` لإنشاء ملف PDF يتوافق مع معيار PDF 1.7.
 
- احفظ المستند بتنسيق PDF باستخدام`Save` طريقة`Document`فئة تحدد المسار وخيارات الحفظ.
+ احفظ المستند بتنسيق PDF باستخدام`Save` طريقة`Document` فئة تحدد المسار وخيارات الحفظ.
 
 #### س: ما هي فوائد التحويل إلى PDF 1.7 باستخدام Aspose.Words لـ .NET؟
 ج: مزايا التحويل إلى PDF 1.7 باستخدام Aspose.Words لـ .NET هي:

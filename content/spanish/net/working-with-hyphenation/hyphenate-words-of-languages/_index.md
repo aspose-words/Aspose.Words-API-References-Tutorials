@@ -71,7 +71,7 @@ Siéntase libre de utilizar este código en sus propios proyectos y modificarlo 
 
 #### P: ¿Cómo puedo silabizar una palabra en un idioma específico con Aspose.Words?
 
- R: Para silabizar una palabra en un idioma específico con Aspose.Words, puede usar el`Hyphenation` clase y el`Hyphenate()` método. Crear una instancia del`Hyphenation` clase especificando el idioma deseado, luego llame al`Hyphenate()` Método que pasa la palabra a silabizar como argumento. Esto le dará las sílabas de la palabra en el idioma especificado.
+ R: Para silabizar una palabra en un idioma específico con Aspose.Words, puede usar el`Hyphenation` clase y el`Hyphenate()` método. Crear una instancia del`Hyphenation` clase especificando el idioma deseado, luego llame al`Hyphenate()`Método que pasa la palabra a silabizar como argumento. Esto le dará las sílabas de la palabra en el idioma especificado.
 
 #### P: ¿Qué códigos de idioma debo usar para especificar el idioma de silabización en Aspose.Words?
 

@@ -81,7 +81,7 @@ R : Pour intégrer des sous-ensembles de polices dans un document PDF à l'aide
 
  Chargez le document que vous souhaitez traiter à l'aide du`Document` classe et le chemin du document.
 
- Configurez les options d'enregistrement PDF en créant une instance du`PdfSaveOptions` classe et définir le`EmbedFullFonts` propriété à`false`Cela garantit que seuls les sous-ensembles de polices utilisés dans le document seront inclus dans le fichier PDF.
+ Configurez les options d'enregistrement PDF en créant une instance du`PdfSaveOptions` classe et définir le`EmbedFullFonts`propriété à`false`Cela garantit que seuls les sous-ensembles de polices utilisés dans le document seront inclus dans le fichier PDF.
 
  Enregistrez le document au format PDF avec les sous-ensembles de polices intégrés à l'aide du`Save` méthode du`Document` objet, spécifiant le nom du fichier de sortie et les options de sauvegarde configurées précédemment.
 

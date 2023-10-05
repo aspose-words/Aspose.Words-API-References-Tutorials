@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте параметры формата импорта
 
- Создайте экземпляр`ImportFormatOptions` класс и установите`IgnoreTextBoxes` собственность`false`. Это гарантирует, что текстовые поля будут включены в процесс добавления с сохранением их форматирования.
+ Создайте экземпляр`ImportFormatOptions` класс и установите`IgnoreTextBoxes`собственность`false`. Это гарантирует, что текстовые поля будут включены в процесс добавления с сохранением их форматирования.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };

@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### س: كيفية إضافة نص داخل إشارة مرجعية باستخدام Aspose.Words لـ .NET؟
 
-ج: لإضافة نص داخل إشارة مرجعية باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Write` طريقة`DocumentBuilder` كائن يحدد النص المراد إضافته. هنا نموذج التعليمات البرمجية:
+ ج: لإضافة نص داخل إشارة مرجعية باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Write` طريقة`DocumentBuilder`كائن يحدد النص المراد إضافته. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

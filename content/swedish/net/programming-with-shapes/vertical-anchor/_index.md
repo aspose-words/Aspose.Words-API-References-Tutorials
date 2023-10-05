@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Steg 3: Infoga och konfigurera en form
- Infoga en form i dokumentet med hjälp av`InsertShape` metod för`DocumentBuilder` objekt. Ställ in önskade dimensioner för formen.
+Infoga en form i dokumentet med hjälp av`InsertShape` metod för`DocumentBuilder` objekt. Ställ in önskade dimensioner för formen.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);

@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Добавьте текст в первый абзац, затем добавьте еще два абзаца.
+// Добавьте текст в первый абзац, затем добавьте еще два абзаца.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -92,12 +92,12 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Добавьте текст в первый абзац, затем добавьте еще два абзаца.
+// Добавьте текст в первый абзац, затем добавьте еще два абзаца.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
-// У нас есть три абзаца, ни один из которых не зарегистрирован как какой-либо пересмотр.
+//У нас есть три абзаца, ни один из которых не зарегистрирован как какой-либо пересмотр.
 // Если мы добавляем/удаляем какой-либо контент в документе во время отслеживания изменений,
 // они будут отображаться в документе как таковые и могут быть приняты/отклонены.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
@@ -123,7 +123,7 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // Если остановить отслеживание изменений, этот текст будет отображаться как обычный текст.
-//Редакции не учитываются при изменении документа.
+// Редакции не учитываются при изменении документа.
 doc.StopTrackRevisions();
 
 // Сохраните документ.

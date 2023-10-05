@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте объект OLE
- Используйте конструктор документов`InsertOleObject`метод для вставки объекта OLE в документ. Укажите URL-адрес объекта OLE, тип объекта, параметры отображения и другие необходимые параметры.
+ Используйте конструктор документов`InsertOleObject` метод для вставки объекта OLE в документ. Укажите URL-адрес объекта OLE, тип объекта, параметры отображения и другие необходимые параметры.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Вопрос: Как вставить объект OLE в документ?
 
- А: Используйте`InsertOleObject` метод конструктора документов (`DocumentBuilder`), чтобы вставить объект OLE в документ. Укажите URL-адрес объекта OLE, тип объекта, параметры отображения и другие необходимые параметры. Вот пример:
+ А: Используйте`InsertOleObject`метод конструктора документов (`DocumentBuilder`), чтобы вставить объект OLE в документ. Укажите URL-адрес объекта OLE, тип объекта, параметры отображения и другие необходимые параметры. Вот пример:
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
 
 #### Вопрос: Как сохранить документ?
 
- A: Используйте документ`Save`метод сохранения документа в файл. Вот пример:
+ A: Используйте документ`Save` метод сохранения документа в файл. Вот пример:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

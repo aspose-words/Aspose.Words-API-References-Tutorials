@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
 ---
-den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionen "TIFF Binarization Threshold Control Exposure" med Aspose.Words för .NET. Denna funktion låter dig styra binariseringströskeln när du konverterar ett dokument till TIFF-format.
+I den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionen "TIFF Binarization Threshold Control Exposure" med Aspose.Words för .NET. Denna funktion låter dig styra binariseringströskeln när du konverterar ett dokument till TIFF-format.
 
 ## Steg 1: Sätta upp miljön
 
@@ -44,7 +44,7 @@ ThresholdForFloydSteinbergDithering = 254
 doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
 ```
 
- det här sista steget sparar vi dokumentbilderna i TIFF-format med hjälp av`Save` metod och skicka sökvägen till utdatafilen, tillsammans med de angivna sparaalternativen.
+ I det här sista steget sparar vi dokumentbilderna i TIFF-format med hjälp av`Save` metod och skicka sökvägen till utdatafilen, tillsammans med de angivna sparaalternativen.
 
 Nu kan du köra källkoden för att konvertera ditt dokument till TIFF-format samtidigt som du kontrollerar binariseringströskeln med de angivna alternativen. Den resulterande filen kommer att sparas i den angivna katalogen med namnet "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff".
 

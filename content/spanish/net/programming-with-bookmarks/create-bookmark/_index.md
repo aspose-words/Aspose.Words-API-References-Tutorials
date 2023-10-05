@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### P: ¿Cómo agregar texto dentro de un marcador usando Aspose.Words para .NET?
 
-R: Para agregar texto dentro de un marcador usando Aspose.Words para .NET, puede usar el`Write` método de la`DocumentBuilder` objeto que especifica el texto a agregar. Aquí hay un código de muestra:
+ R: Para agregar texto dentro de un marcador usando Aspose.Words para .NET, puede usar el`Write` método de la`DocumentBuilder`objeto que especifica el texto a agregar. Aquí hay un código de muestra:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

@@ -36,7 +36,7 @@ Shape shape = builder.InsertChart(ChartType.Bubble, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Schritt 3: Fügen Sie dem Diagramm Seriendaten hinzu
+## Schritt 3: Fügen Sie dem Diagramm Reihendaten hinzu
 
 Fügen Sie dem Diagramm Seriendaten hinzu. In diesem Beispiel fügen wir drei Datenpunkte mit entsprechenden X-, Y- und Blasengrößenwerten hinzu.
 
@@ -90,7 +90,7 @@ Ja, Sie können mit Aspose.Words für .NET mehrere Reihen zum Blasendiagramm hin
 Ja, mit Aspose.Words für .NET können Sie verschiedene Aspekte des Erscheinungsbilds des Blasendiagramms anpassen. Sie können Eigenschaften wie Reihenfarbe, Blasengröße, Achsenbeschriftungen und Diagrammbereichsformatierung ändern. Die Bibliothek bietet einen umfangreichen Satz an APIs, um die visuellen Elemente des Diagramms zu steuern und ein individuelles Erscheinungsbild zu erstellen, das Ihren Anforderungen entspricht.
 
 #### Q4. Kann ich das Dokument mit dem eingefügten Blasendiagramm in verschiedenen Formaten speichern?
-Ja, mit Aspose.Words für .NET können Sie das Dokument mit dem eingefügten Blasendiagramm in verschiedenen Formaten wie DOCX, PDF, HTML und mehr speichern. Sie können das gewünschte Ausgabeformat entsprechend Ihren Anforderungen auswählen und verwenden`Save` Methode der`Document` Objekt zum Speichern des Dokuments. Das eingefügte Blasendiagramm bleibt im gespeicherten Dokument erhalten.
+ Ja, mit Aspose.Words für .NET können Sie das Dokument mit dem eingefügten Blasendiagramm in verschiedenen Formaten wie DOCX, PDF, HTML und mehr speichern. Sie können das gewünschte Ausgabeformat entsprechend Ihren Anforderungen auswählen und verwenden`Save` Methode der`Document` Objekt zum Speichern des Dokuments. Das eingefügte Blasendiagramm bleibt im gespeicherten Dokument erhalten.
 
 #### F5. Kann ich die Daten und das Erscheinungsbild des Blasendiagramms nach dem Einfügen ändern?
 Ja, nachdem Sie das Blasendiagramm in das Dokument eingefügt haben, können Sie dessen Daten und Aussehen mithilfe der von Aspose.Words für .NET bereitgestellten APIs ändern. Sie können die Reihendaten aktualisieren, die Blasengröße ändern, Achseneigenschaften anpassen und Formatierungsoptionen anwenden, um dynamische und interaktive Diagramme in Ihren Word-Dokumenten zu erstellen.

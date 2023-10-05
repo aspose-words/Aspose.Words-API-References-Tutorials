@@ -111,6 +111,6 @@ R : Oui, vous pouvez extraire uniquement une partie spécifique du texte dans un
 
  R : Oui, Aspose.Words for .NET prend en charge l'extraction de texte à partir de documents Word protégés par mot de passe ou cryptés. Cependant, vous devez fournir le mot de passe ou les clés de décryptage corrects lors du chargement du document à l'aide du`Document` constructeur de classe. Cela garantit que le document est correctement déchiffré avant d’accéder à son contenu textuel.
 
-#### Q : Puis-je extraire du texte formaté ou stylisé (tel que du texte enrichi ou du HTML) à partir d'un document Word à l'aide d'Aspose.Words pour .NET ?
+#### Q : Puis-je extraire du texte formaté ou stylisé (tel que du texte enrichi ou HTML) d'un document Word à l'aide d'Aspose.Words pour .NET ?
 
 R : Oui, Aspose.Words for .NET vous permet d'extraire du texte formaté ou stylisé à partir d'un document Word. Le texte extrait conserve la mise en forme d'origine, qui inclut les styles de police, les tailles, les couleurs et d'autres attributs de mise en forme. Vous pouvez traiter davantage ce texte extrait ou le convertir dans d'autres formats, tels que HTML, selon vos besoins.

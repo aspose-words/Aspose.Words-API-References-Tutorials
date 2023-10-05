@@ -52,6 +52,13 @@ Voici des liens vers quelques ressources utiles :
 - [Sécurité des documents](./java/document-security/)
 - [Fractionnement de documents](./java/document-splitting/)
 - [Révision des documents](./java/document-revision/)
+- [Chargement et sauvegarde de documents](./java/document-loading-and-saving/)
+- [Manipulation de documents](./java/document-manipulation/)
+- [Conversion et exportation de documents](./java/document-conversion-and-export/)
+- [Licence et configuration](./java/licensing-and-configuration/)
+- [Utiliser des éléments de document](./java/using-document-elements/)
+- [Impression de documents](./java/printing-documents/)
+- [Rendu des documents](./java/rendering-documents/)
 
 ## Tutoriels de gestion de documents Aspose.Words pour Python
 {{% alert color="primary" %}}
