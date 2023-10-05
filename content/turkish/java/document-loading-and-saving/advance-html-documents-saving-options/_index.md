@@ -1,6 +1,6 @@
 ---
 title: Aspose.Words Java ile Gelişmiş HTML Belgelerini Kaydetme Seçenekleri
-linktitle: HTML Belgelerini şununla kaydetme:
+linktitle: HTML Belgelerini şununla kaydetme
 second_title: Aspose.Words Java Belge İşleme API'si
 description: Bu eğitimde Aspose.Words for Java ile çeşitli gelişmiş HTML belgesi kaydetme seçeneklerini ele aldık. Bu seçenekler yüksek kaliteli HTML oluşturmanıza olanak sağlar
 type: docs

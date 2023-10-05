@@ -1,5 +1,5 @@
 ---
-title: Documento de Word: buscar y reemplazar texto
+title: Documento de Word buscar y reemplazar texto
 linktitle: Buscar y reemplazar texto
 second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda a buscar y reemplazar texto en documentos de Word usando Aspose.Words para .NET. Los tutoriales le muestran cómo realizar búsquedas de texto precisas, incluidas opciones de búsqueda avanzada.

@@ -1,5 +1,5 @@
 ---
-title: Documento de Word: cómo eliminar contenido
+title: Documento de Word cómo eliminar contenido
 linktitle: Eliminar contenido
 second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda cómo eliminar contenido de manera efectiva de documentos de Word usando Aspose.Words para .NET. Siga los tutoriales paso a paso y utilice ejemplos de código C# para aprender diferentes técnicas de eliminación de contenido.

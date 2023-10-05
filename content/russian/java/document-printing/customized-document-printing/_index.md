@@ -2,7 +2,7 @@
 title: Индивидуальная печать документов
 linktitle: Индивидуальная печать документов
 second_title: API обработки Java-документов Aspose.Words
-description: Узнайте, как легко настроить печать документов с помощью Aspose.Words для Java. Это пошаговое руководство охватывает все: от настройки до расширенной настройки.
+description: Узнайте, как легко настроить печать документов с помощью Aspose.Words для Java. Это пошаговое руководство охватывает все от настройки до расширенной настройки.
 type: docs
 weight: 12
 url: /ru/java/document-printing/customized-document-printing/

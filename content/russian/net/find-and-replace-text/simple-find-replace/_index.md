@@ -1,6 +1,6 @@
 ---
-title: Простой текст: найти и заменить в Word
-linktitle: Простой текст: найти и заменить в Word
+title: Простой текст найти и заменить в Word
+linktitle: Простой текст найти и заменить в Word
 second_title: API обработки документов Aspose.Words
 description: Узнайте, как выполнить простой поиск и замену текста в документе Word с помощью Aspose.Words для .NET.
 type: docs
