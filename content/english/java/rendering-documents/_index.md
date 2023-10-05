@@ -26,7 +26,7 @@ Now, let's get into the nitty-gritty of rendering documents using Aspose.Words f
 
 In conclusion, if you're looking to master the art of rendering documents using Aspose.Words for Java, you're in the right place. Our tutorials are designed to empower you with the knowledge and skills you need to excel in document rendering. So, why wait? Let's embark on this exciting journey together!
 
-With this comprehensive guide, you're well-equipped to begin your journey into the world of document rendering using Aspose.Words for Java. Feel free to explore the official Aspose.Words for Java API documentation [here](https://reference.aspose.com/words/java/) for in-depth information. If you're ready to get started, you can download the necessary resources [here](https://releases.aspose.com/words/java/).
+With this comprehensive guide, you're well-equipped to begin your journey into the world of document rendering using Aspose.Words for Java. Feel free to explore the Aspose.Words for Java API documentation [here](https://reference.aspose.com/words/java/) for in-depth information. If you're ready to get started, you can download the necessary resources [here](https://releases.aspose.com/words/java/).
 
 For any questions, support, or assistance, you can always reach out to the Aspose community and forums [here](https://forum.aspose.com/). Don't forget to check out our other tutorials and resources on Aspose products. Happy rendering!
 

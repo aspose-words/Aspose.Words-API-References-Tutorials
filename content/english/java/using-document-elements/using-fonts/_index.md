@@ -77,19 +77,17 @@ For any questions or assistance, don't hesitate to reach out to the [Aspose.Word
 
 ## FAQs
 
-1. ### Q: How can I change the font size for a specific portion of text in a document?
+### Q: How can I change the font size for a specific portion of text in a document?
 A: You can use the `Font.setSize()` method to set the font size for the desired text.
 
-2. ### Q: Is it possible to apply different fonts to headings and body text in a document?
+### Q: Is it possible to apply different fonts to headings and body text in a document?
 A: Yes, you can apply different fonts to various parts of a document using Aspose.Words for Java.
 
-3. ### Q: Can I use custom fonts with Aspose.Words for Java?
+### Q: Can I use custom fonts with Aspose.Words for Java?
 A: Yes, you can use custom fonts by specifying the font file path.
 
-4. ### Q: How do I change the font color for text?
+### Q: How do I change the font color for text?
 A: You can use the `Font.setColor()` method to set the font color.
 
-5. ### Q: Are there any limitations on the number of fonts I can use in a document?
+### Q: Are there any limitations on the number of fonts I can use in a document?
 A: Aspose.Words for Java supports a wide range of fonts, and there are generally no strict limitations on the number of fonts you can use in a document.
-
-Get started with Aspose.Words for Java today, and take your document formatting to the next level!

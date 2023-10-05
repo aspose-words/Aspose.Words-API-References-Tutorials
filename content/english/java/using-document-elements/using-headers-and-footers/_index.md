@@ -18,7 +18,7 @@ Aspose.Words is a powerful Java API that allows you to create, manipulate, and r
 
 ## 2. Setting Up Your Java Environment
 
-Before you start using Aspose.Words, make sure you have your Java development environment set up correctly. You can find the necessary setup instructions on the official Aspose.Words documentation page: [Aspose.Words Java Documentation](https://reference.aspose.com/words/java/).
+Before you start using Aspose.Words, make sure you have your Java development environment set up correctly. You can find the necessary setup instructions on the Aspose.Words documentation page: [Aspose.Words Java Documentation](https://reference.aspose.com/words/java/).
 
 ## 3. Creating a New Document
 
@@ -188,7 +188,6 @@ After creating and customizing your document, don't forget to save it using the 
         row.getFirstCell().getCellFormat().setPreferredWidth(PreferredWidth.fromPercent(100 / 3));
         row.getLastCell().getCellFormat().setPreferredWidth(PreferredWidth.fromPercent(100 * 2 / 3));
         doc.save("Your Directory Path" + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
-    }
 ```	
 Source code of copyHeadersFootersFromPreviousSection method
 ```java
@@ -203,6 +202,7 @@ Source code of copyHeadersFootersFromPreviousSection method
         section.getHeadersFooters().clear();
         for (HeaderFooter headerFooter : (Iterable<HeaderFooter>) previousSection.getHeadersFooters())
             section.getHeadersFooters().add(headerFooter.deepClone(true));
+	}
 ```
 
 ## Conclusion
@@ -226,4 +226,4 @@ Absolutely, you can customize fonts, alignment, and other styles to make your he
 Yes, you can use `PageSetup.OddAndEvenPagesHeaderFooter` to specify different headers for odd and even pages.
 
 ### 5. How do I get started with Aspose.Words for Java?
-To begin, visit the official [Aspose.Words Java Documentation](https://reference.aspose.com/words/java/) for comprehensive guidance on using the API.
+To begin, visit the [Aspose.Words Java Documentation](https://reference.aspose.com/words/java/) for comprehensive guidance on using the API.
