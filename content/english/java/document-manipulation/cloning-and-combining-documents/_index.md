@@ -12,7 +12,7 @@ url: /java/document-manipulation/cloning-and-combining-documents/
 
 In this tutorial, we will explore how to clone and combine documents using Aspose.Words for Java. We'll cover various scenarios, including cloning a document, inserting documents at replace points, bookmarks, and during mail merge operations.
 
-## Cloning a Document
+## Step 1: Cloning a Document
 
 To clone a document in Aspose.Words for Java, you can use the `deepClone()` method. Here's a simple example:
 
@@ -24,7 +24,7 @@ clone.save("Your Directory Path" + "CloneAndCombineDocuments.CloningDocument.doc
 
 This code will create a deep clone of the original document and save it as a new file.
 
-## Inserting Documents at Replace Points
+## Step 2: Inserting Documents at Replace Points
 
 You can insert documents at specific replace points in another document. Here's how you can do it:
 
@@ -39,7 +39,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtR
 
 In this example, we use a `FindReplaceOptions` object to specify a callback handler for the replacement. The `InsertDocumentAtReplaceHandler` class handles the insertion logic.
 
-## Inserting Documents at Bookmarks
+## Step 3: Inserting Documents at Bookmarks
 
 To insert a document at a specific bookmark in another document, you can use the following code:
 
@@ -53,7 +53,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtB
 
 Here, we find the bookmark by name and use the `insertDocument` method to insert the content of the `subDoc` document at the bookmark location.
 
-## Inserting Documents During Mail Merge
+## Step 4: Inserting Documents During Mail Merge
 
 You can insert documents during a mail merge operation in Aspose.Words for Java. Here's how:
 
@@ -65,7 +65,6 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtM
 ```
 
 In this example, we set a field merging callback using the `InsertDocumentAtMailMergeHandler` class to handle the insertion of the document specified by the "Document_1" field.
-
 
 ## Conclusion
 

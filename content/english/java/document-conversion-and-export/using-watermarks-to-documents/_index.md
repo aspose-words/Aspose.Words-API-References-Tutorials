@@ -1,11 +1,11 @@
 ---
-title: Adding Watermarks to Documents in Aspose.Words for Java
-linktitle: Adding Watermarks to Documents
+title: Using Watermarks to Documents in Aspose.Words for Java
+linktitle: Using Watermarks to Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to add watermarks to documents in Aspose.Words for Java. Customize text and image watermarks for professional-looking documents.
 type: docs
 weight: 15
-url: /java/document-conversion-and-export/adding-watermarks-to-documents/
+url: /java/document-conversion-and-export/using-watermarks-to-documents/
 ---
 
 ## Introduction to Adding Watermarks to Documents in Aspose.Words for Java
@@ -22,7 +22,7 @@ Before we start adding watermarks to documents, we need to set up Aspose.Words f
 
 Now that we have the library set up let's proceed to add watermarks.
 
-## Step 1: Adding Text Watermarks
+## Adding Text Watermarks
 
 Text watermarks are a common choice when you want to add textual information to your documents. Here's how you can add a text watermark using Aspose.Words for Java:
 
@@ -45,7 +45,7 @@ doc.getWatermark().setText("Test", options);
 doc.save("DocumentWithWatermark.docx");
 ```
 
-## Step 2: Adding Image Watermarks
+## Adding Image Watermarks
 
 In addition to text watermarks, you can also add image watermarks to your documents. Here's how to add an image watermark:
 
@@ -71,11 +71,11 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 doc.save("DocumentWithImageWatermark.docx");
 ```
 
-## Step 3: Customizing Watermarks
+## Customizing Watermarks
 
 You can customize watermarks by adjusting their appearance and position. For text watermarks, you can change the font, size, color, and layout. For image watermarks, you can modify their size and position as demonstrated in the previous examples.
 
-## Step 4: Removing Watermarks
+## Removing Watermarks
 
 To remove watermarks from a document, you can use the following code:
 
@@ -96,93 +96,6 @@ for (Shape shape : doc.getShapes())
 doc.save("DocumentWithoutWatermark.docx");
 ```
 
-## Complete Source Code for Adding Watermarks to Documents in Aspose.Words for Java
-
-```java
-	Document doc = new Document("Your Directory Path" + "Document.docx");
-	TextWatermarkOptions options = new TextWatermarkOptions();
-	{
-		options.setFontFamily("Arial");
-		options.setFontSize(36f);
-		options.setColor(Color.BLACK);
-		options.setLayout(WatermarkLayout.HORIZONTAL);
-		options.isSemitrasparent(false);
-	}
-	doc.getWatermark().setText("Test", options);
-	doc.save("Your Directory Path" + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");
-}
-@Test
-public void addAndRemoveWatermark() throws Exception
-{
-	Document doc = new Document("Your Directory Path" + "Document.docx");
-	insertWatermarkText(doc, "CONFIDENTIAL");
-	doc.save("Your Directory Path" + "TestFile.Watermark.docx");
-	removeWatermarkText(doc);
-	doc.save("Your Directory Path" + "WorkWithWatermark.RemoveWatermark.docx");
-}
-/// <summary>
-/// Inserts a watermark into a document.
-/// </summary>
-/// <param name="doc">The input document.</param>
-/// <param name="watermarkText">Text of the watermark.</param>
-private void insertWatermarkText(Document doc, String watermarkText) throws Exception
-{
-	// Create a watermark shape, this will be a WordArt shape.
-	Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT); { watermark.setName("Watermark"); }
-	watermark.getTextPath().setText(watermarkText);
-	watermark.getTextPath().setFontFamily("Arial");
-	watermark.setWidth(500.0);
-	watermark.setHeight(100.0);
-	// Text will be directed from the bottom-left to the top-right corner.
-	watermark.setRotation(-40);
-	// Remove the following two lines if you need a solid black text.
-	watermark.setFillColor(Color.GRAY);
-	watermark.setStrokeColor(Color.GRAY);
-	// Place the watermark in the page center.
-	watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.PAGE);
-	watermark.setRelativeVerticalPosition(RelativeVerticalPosition.PAGE);
-	watermark.setWrapType(WrapType.NONE);
-	watermark.setVerticalAlignment(VerticalAlignment.CENTER);
-	watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
-	// Create a new paragraph and append the watermark to this paragraph.
-	Paragraph watermarkPara = new Paragraph(doc);
-	watermarkPara.appendChild(watermark);
-	// Insert the watermark into all headers of each document section.
-	for (Section sect : (Iterable<Section>) doc.getSections())
-	{
-		// There could be up to three different headers in each section.
-		// Since we want the watermark to appear on all pages, insert it into all headers.
-		insertWatermarkIntoHeader(watermarkPara, sect, HeaderFooterType.HEADER_PRIMARY);
-		insertWatermarkIntoHeader(watermarkPara, sect, HeaderFooterType.HEADER_FIRST);
-		insertWatermarkIntoHeader(watermarkPara, sect, HeaderFooterType.HEADER_EVEN);
-	}
-}
-private void insertWatermarkIntoHeader(Paragraph watermarkPara, Section sect,
-	/*HeaderFooterType*/int headerType)
-{
-	HeaderFooter header = sect.getHeadersFooters().getByHeaderFooterType(headerType);
-	if (header == null)
-	{
-		// There is no header of the specified type in the current section, so we need to create it.
-		header = new HeaderFooter(sect.getDocument(), headerType);
-		sect.getHeadersFooters().add(header);
-	}
-	// Insert a clone of the watermark into the header.
-	header.appendChild(watermarkPara.deepClone(true));
-}
-private void removeWatermarkText(Document doc)
-{
-	for (HeaderFooter hf : (Iterable<HeaderFooter>) doc.getChildNodes(NodeType.HEADER_FOOTER, true))
-	{
-		for (Shape shape : (Iterable<Shape>) hf.getChildNodes(NodeType.SHAPE, true))
-		{
-			if (shape.getName().contains("WaterMark"))
-			{
-				shape.remove();
-			}
-		}
-	}
-```
 
 ## Conclusion
 

@@ -1,6 +1,6 @@
 ---
 title: Adding Content using DocumentBuilder in Aspose.Words for Java
-linktitle: Adding Content using DocumentBuilder in
+linktitle: Adding Content using DocumentBuilder
 second_title: Aspose.Words Java Document Processing API
 description: Master Document Creation with Aspose.Words for Java. A Step-by-Step Guide to Adding Text, Tables, Images, and More. Create Stunning Word Documents Effortlessly.
 type: docs

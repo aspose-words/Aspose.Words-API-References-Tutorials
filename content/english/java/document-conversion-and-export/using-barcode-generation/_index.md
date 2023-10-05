@@ -19,7 +19,7 @@ Before we begin, ensure that you have the following prerequisites in place:
 - Java Development Kit (JDK) installed on your system.
 - Aspose.Words for Java library. You can download it from [here](https://releases.aspose.com/words/java/).
 
-## Step 1: Import Necessary Classes
+## Import Necessary Classes
 
 First, make sure to import the required classes at the beginning of your Java file:
 
@@ -28,7 +28,7 @@ import com.aspose.words.Document;
 import com.aspose.words.FieldOptions;
 ```
 
-## Step 2: Create a Document Object
+## Create a Document Object
 
 Initialize a `Document` object by loading an existing Word document that contains a barcode field. Replace `"Field sample - BARCODE.docx"` with the path to your Word document:
 
@@ -36,7 +36,7 @@ Initialize a `Document` object by loading an existing Word document that contain
 Document doc = new Document("Field sample - BARCODE.docx");
 ```
 
-## Step 3: Set Barcode Generator
+## Set Barcode Generator
 
 Set a custom barcode generator using the `FieldOptions` class. In this example, we assume you have implemented a `CustomBarcodeGenerator` class to generate the barcode. Replace `CustomBarcodeGenerator` with your actual barcode generation logic:
 
@@ -44,7 +44,7 @@ Set a custom barcode generator using the `FieldOptions` class. In this example, 
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
 ```
 
-## Step 4: Save the Document as PDF
+## Save the Document as PDF
 
 Finally, save the modified document as a PDF or in the format you prefer. Replace `"WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf"` with your desired output file path:
 

@@ -27,7 +27,7 @@ Office Math objects are used to represent mathematical equations within a docume
 
 Let's get started with the step-by-step process of working with Office Math in Aspose.Words for Java:
 
-### Step 1: Load the Document
+### Load the Document
 
 First, load the document that contains the Office Math equation you want to work with:
 
@@ -35,7 +35,7 @@ First, load the document that contains the Office Math equation you want to work
 Document doc = new Document("Your Directory Path" + "OfficeMath.docx");
 ```
 
-### Step 2: Access the Office Math Object
+### Access the Office Math Object
 
 Now, let's access the Office Math object within the document:
 
@@ -43,7 +43,7 @@ Now, let's access the Office Math object within the document:
 OfficeMath officeMath = (OfficeMath) doc.getChild(NodeType.OFFICE_MATH, 0, true);
 ```
 
-### Step 3: Set Display Type
+### Set Display Type
 
 You can control how the equation is displayed within the document. Use the `setDisplayType` method to specify whether it should be displayed inline with the text or on its line:
 
@@ -51,7 +51,7 @@ You can control how the equation is displayed within the document. Use the `setD
 officeMath.setDisplayType(OfficeMathDisplayType.DISPLAY);
 ```
 
-### Step 4: Set Justification
+### Set Justification
 
 You can also set the justification of the equation. For instance, let's align it to the left:
 
@@ -59,7 +59,7 @@ You can also set the justification of the equation. For instance, let's align it
 officeMath.setJustification(OfficeMathJustification.LEFT);
 ```
 
-### Step 5: Save the Document
+### Save the Document
 
 Finally, save the document with the modified Office Math equation:
 

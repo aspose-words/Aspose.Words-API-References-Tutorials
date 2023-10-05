@@ -36,7 +36,7 @@ Learn how to create and customize charts in Aspose.Words for Java. Explore chart
 Unlock the power of mathematical equations in documents with Aspose.Words for Java. Learn to manipulate and display Office Math objects effortlessly.
 ### [Using Document Shapes in Aspose.Words for Java](./using-document-shapes/)
 Unlock the Power of Document Shapes in Aspose.Words for Java. Learn to Create Visually Engaging Documents with Step-by-Step Examples.
-### [Adding Watermarks to Documents in Aspose.Words for Java](./adding-watermarks-to-documents/)
+### [Using Watermarks to Documents in Aspose.Words for Java](./using-watermarks-to-documents/)
 Learn how to add watermarks to documents in Aspose.Words for Java. Customize text and image watermarks for professional-looking documents.
 ### [Formatting Tables and Table Styles in Aspose.Words for Java](./formatting-tables-and-table-styles/)
 Learn how to format tables and apply table styles in Aspose.Words for Java. Explore step-by-step guides with source code for effective table formatting. Enhance your document layout with Aspose.Words.
