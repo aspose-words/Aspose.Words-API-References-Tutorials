@@ -1,6 +1,6 @@
 ---
 title: Splitting Documents into Pages in Aspose.Words for Java
-linktitle: Splitting Documents into Pages in Aspose.Words for Java
+linktitle: Splitting Documents into Pages
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to split documents into pages using Aspose.Words for Java. Step-by-step guide with source code for efficient document processing.
 type: docs

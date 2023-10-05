@@ -1,6 +1,6 @@
 ---
 title: Using Comments in Aspose.Words for Java
-linktitle: Using Comments in Aspose.Words for Java
+linktitle: Using Comments
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to use comments in Aspose.Words for Java. Step-by-step tutorial for adding and customizing comments in your documents.
 type: docs

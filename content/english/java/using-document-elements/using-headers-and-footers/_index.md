@@ -1,6 +1,6 @@
 ---
 title: Using Headers and Footers in Aspose.Words for Java
-linktitle: Using Headers and Footers in Aspose.Words for Java
+linktitle: Using Headers and Footers
 second_title: Aspose.Words Java Document Processing API
 description: Learn step-by-step how to use headers and footers in Aspose.Words for Java. Create professional documents effortlessly.
 type: docs

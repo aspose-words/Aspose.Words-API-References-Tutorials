@@ -1,6 +1,6 @@
 ---
 title: Saving HTML Documents with Fixed Layout in Aspose.Words for Java
-linktitle: Saving HTML Documents with Fixed Layout in Aspose.Words for Java
+linktitle: Saving HTML Documents with Fixed Layout
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to save HTML documents with fixed layout in Aspose.Words for Java. Follow our step-by-step guide for seamless document formatting.
 type: docs

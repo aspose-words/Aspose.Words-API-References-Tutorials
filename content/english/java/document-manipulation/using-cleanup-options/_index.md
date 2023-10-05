@@ -1,6 +1,6 @@
 ---
 title: Using Cleanup Options in Aspose.Words for Java
-linktitle: Using Cleanup Options in Aspose.Words for Java
+linktitle: Using Cleanup Options
 second_title: Aspose.Words Java Document Processing API
 description: Enhance Document Clarity with Aspose.Words for Java Cleanup Options. Learn how to remove empty paragraphs, unused regions, and more.
 type: docs

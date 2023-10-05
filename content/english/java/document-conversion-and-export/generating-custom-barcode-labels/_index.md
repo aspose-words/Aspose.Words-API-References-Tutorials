@@ -1,6 +1,6 @@
 ---
 title: Generating Custom Barcode Labels in Aspose.Words for Java
-linktitle: Generating Custom Barcode Labels in Aspose.Words for Java
+linktitle: Generating Custom Barcode Labels
 second_title: Aspose.Words Java Document Processing API
 description: Generate Custom Barcode Labels in Aspose.Words for Java. Learn how to create personalized barcode solutions using Aspose.Words for Java in this step-by-step guide.
 type: docs

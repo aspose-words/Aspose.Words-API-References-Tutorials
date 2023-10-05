@@ -1,6 +1,6 @@
 ---
 title: Using Styles and Themes in Aspose.Words for Java
-linktitle: Using Styles and Themes in Aspose.Words for Java
+linktitle: Using Styles and Themes
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to enhance document formatting with Aspose.Words for Java. Explore styles, themes, and more in this comprehensive guide with source code examples.
 type: docs
@@ -123,31 +123,6 @@ You can retrieve theme properties by accessing the theme object and its properti
 ### How can I set theme properties, such as fonts and colors?
 
 You can set theme properties by modifying the theme object's properties.
-
-## Inserting Style Separators
-
-Style separators are useful for applying different styles within a single paragraph. Here's an example of how to insert style separators:
-
-```java
-@Test
-public void insertStyleSeparator() throws Exception
-{
-    Document doc = new Document();
-    DocumentBuilder builder = new DocumentBuilder(doc);
-    Style paraStyle = builder.getDocument().getStyles().add(StyleType.PARAGRAPH, "MyParaStyle");
-    paraStyle.getFont().setBold(false);
-    paraStyle.getFont().setSize(8.0);
-    paraStyle.getFont().setName("Arial");
-    // Append text with "Heading 1" style.
-    builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
-    builder.write("Heading 1");
-    builder.insertStyleSeparator();
-    // Append text with another style.
-    builder.getParagraphFormat().setStyleName(paraStyle.getName());
-    builder.write("This is text with some other formatting ");
-    doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
-}
-```
 
 ### How can I use style separators to switch styles within the same paragraph?
 

@@ -1,6 +1,6 @@
 ---
 title: Using Barcode Generation in Aspose.Words for Java
-linktitle: Using Barcode Generation in Aspose.Words for Java
+linktitle: Using Barcode Generation
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to generate custom barcodes in Java using Aspose.Words for Java. Step-by-step guide with source code for barcode generation. Enhance document automation with Aspose.Words.
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: Saving Documents as ODT Format in Aspose.Words for Java
-linktitle: Saving Documents as ODT Format in Aspose.Words for Java
+linktitle: Saving Documents as ODT Format
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to save documents in ODT format using Aspose.Words for Java. Ensure compatibility with open-source office suites.
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: Loading Text Files with Aspose.Words for Java
-linktitle: Loading Text Files with Aspose.Words for Java
+linktitle: Loading Text Files with
 second_title: Aspose.Words Java Document Processing API
 description: Unlock the Power of Aspose.Words for Java. Learn to Load Text Documents, Manage Lists, Handle Spaces, and Control Text Direction.
 type: docs

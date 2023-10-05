@@ -1,6 +1,6 @@
 ---
 title: Applying Licensing to Aspose.Words for Java
-linktitle: Applying Licensing to Aspose.Words for Java
+linktitle: Applying Licensing to
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to apply licensing to Aspose.Words for Java step by step. Get access now and unlock its full potential.
 type: docs

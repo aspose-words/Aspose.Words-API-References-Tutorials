@@ -1,6 +1,6 @@
 ---
 title: Saving Images from Documents in Aspose.Words for Java
-linktitle: Saving Images from Documents in Aspose.Words for Java
+linktitle: Saving Images from Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to save images from documents using Aspose.Words for Java with our comprehensive step-by-step guide. Customize formats, compression, and more.
 type: docs

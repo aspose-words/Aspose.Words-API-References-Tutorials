@@ -1,6 +1,6 @@
 ---
 title: Using Document Shapes in Aspose.Words for Java
-linktitle: Using Document Shapes in Aspose.Words for Java
+linktitle: Using Document Shapes
 second_title: Aspose.Words Java Document Processing API
 description: Unlock the Power of Document Shapes in Aspose.Words for Java. Learn to Create Visually Engaging Documents with Step-by-Step Examples.
 type: docs

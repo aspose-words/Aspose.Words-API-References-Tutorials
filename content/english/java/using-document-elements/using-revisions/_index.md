@@ -1,6 +1,6 @@
 ---
 title: Using Revisions in Aspose.Words for Java
-linktitle: Using Revisions in Aspose.Words for Java
+linktitle: Using Revisions
 second_title: Aspose.Words Java Document Processing API
 description: Learn to use Aspose.Words for Java's revision efficiently. Step-by-step guide for developers. Optimize your document management.
 type: docs

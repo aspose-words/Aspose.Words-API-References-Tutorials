@@ -1,6 +1,6 @@
 ---
 title: Adding Content using DocumentBuilder in Aspose.Words for Java
-linktitle: Adding Content using DocumentBuilder in Aspose.Words for Java
+linktitle: Adding Content using DocumentBuilder in
 second_title: Aspose.Words Java Document Processing API
 description: Master Document Creation with Aspose.Words for Java. A Step-by-Step Guide to Adding Text, Tables, Images, and More. Create Stunning Word Documents Effortlessly.
 type: docs
@@ -16,7 +16,7 @@ In this step-by-step guide, we'll explore how to use Aspose.Words for Java's Doc
 
 Before you begin, make sure you have the Aspose.Words for Java library set up in your project. You can download it from [here](https://releases.aspose.com/words/java/).
 
-## Step 1: Adding Text
+## Adding Text
 
 ```java
 Document doc = new Document();
@@ -29,7 +29,7 @@ builder.write("This is a simple text paragraph.");
 doc.save("path/to/your/document.docx");
 ```
 
-## Step 2: Adding Tables
+## Adding Tables
 
 ```java
 Document doc = new Document();
@@ -52,7 +52,7 @@ builder.endTable();
 doc.save("path/to/your/document.docx");
 ```
 
-## Step 3: Adding Horizontal Rule
+## Adding Horizontal Rule
 
 ```java
 Document doc = new Document();
@@ -65,7 +65,7 @@ builder.insertHorizontalRule();
 doc.save("path/to/your/document.docx");
 ```
 
-## Step 4: Adding Form Fields
+## Adding Form Fields
 
 ### Text Input Form Field
 
@@ -109,7 +109,7 @@ builder.insertComboBox("DropDown", items, 0);
 doc.save("path/to/your/document.docx");
 ```
 
-## Step 5: Adding HTML
+## Adding HTML
 
 ```java
 Document doc = new Document();
@@ -122,7 +122,7 @@ builder.insertHtml("<p>This is an HTML paragraph.</p>");
 doc.save("path/to/your/document.docx");
 ```
 
-## Step 6: Adding Hyperlinks
+## Adding Hyperlinks
 
 ```java
 Document doc = new Document();
@@ -140,7 +140,7 @@ builder.write(" for more information.");
 doc.save("path/to/your/document.docx");
 ```
 
-## Step 7: Adding a Table of Contents
+## Adding a Table of Contents
 
 ```java
 Document doc = new Document();
@@ -159,7 +159,7 @@ doc.updateFields();
 doc.save("path/to/your/document.docx");
 ```
 
-## Step 8: Adding Images
+## Adding Images
 
 ### Inline Image
 
@@ -187,7 +187,7 @@ builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN,
 doc.save("path/to/your/document.docx");
 ```
 
-## Step 9: Adding Paragraphs
+## Adding Paragraphs
 
 ```java
 Document doc = new Document();
@@ -323,4 +323,4 @@ builder.moveToParagraph(2, 0);
 builder.writeln("This is the 3rd paragraph.");
 ```
 
-These are some common questions and answers to help you get started with Aspose.Words for Java's DocumentBuilder. If you have more questions or need further assistance, refer to the library's documentation or seek help from the Aspose.Words community and support resources.
+These are some common questions and answers to help you get started with Aspose.Words for Java's DocumentBuilder. If you have more questions or need further assistance, refer to the [library's documentation](https://reference.aspose.com/words/java/) or seek help from the Aspose.Words community and support resources.

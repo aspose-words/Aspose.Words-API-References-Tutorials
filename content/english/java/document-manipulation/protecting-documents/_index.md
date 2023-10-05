@@ -1,6 +1,6 @@
 ---
 title: Protecting Documents in Aspose.Words for Java
-linktitle: Protecting Documents in Aspose.Words for Java
+linktitle: Protecting Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to secure your Java Word documents with Aspose.Words for Java. Protect your data with password and more.
 type: docs

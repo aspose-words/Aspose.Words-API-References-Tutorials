@@ -1,6 +1,6 @@
 ---
 title: Finding and Replacing Text in Aspose.Words for Java
-linktitle: Finding and Replacing Text in Aspose.Words for Java
+linktitle: Finding and Replacing Text
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to find and replace text in Word documents with Aspose.Words for Java. Step-by-step guide with code examples. Enhance your Java document manipulation skills.
 type: docs

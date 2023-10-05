@@ -1,6 +1,6 @@
 ---
 title: Saving Documents as OOXML Format in Aspose.Words for Java
-linktitle: Saving Documents as OOXML Format in Aspose.Words for Java
+linktitle: Saving Documents as OOXML Format
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to save documents in OOXML format with Aspose.Words for Java. Secure, optimize, and customize your files effortlessly. 
 type: docs

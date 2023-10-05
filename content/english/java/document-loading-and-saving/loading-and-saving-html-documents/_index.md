@@ -1,6 +1,6 @@
 ---
 title: Loading and Saving HTML Documents with Aspose.Words for Java
-linktitle: Loading and Saving HTML Documents with Aspose.Words for Java
+linktitle: Loading and Saving HTML Documents with
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to load and save HTML documents in Java using Aspose.Words for Java. Step-by-step guide with code examples for seamless document integration.
 type: docs

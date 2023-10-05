@@ -1,6 +1,6 @@
 ---
 title: Using Footnotes and Endnotes in Aspose.Words for Java
-linktitle: Using Footnotes and Endnotes in Aspose.Words for Java
+linktitle: Using Footnotes and Endnotes
 second_title: Aspose.Words Java Document Processing API
 description: Learn to use footnotes and endnotes effectively in Aspose.Words for Java. Enhance your document formatting skills today!
 type: docs

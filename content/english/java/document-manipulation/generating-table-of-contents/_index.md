@@ -1,6 +1,6 @@
 ---
 title: Generating Table of Contents in Aspose.Words for Java
-linktitle: Generating Table of Contents in Aspose.Words for Java
+linktitle: Generating Table of Contents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to generate and customize Table of Contents (TOC) using Aspose.Words for Java. Create organized and professional documents effortlessly.
 type: docs

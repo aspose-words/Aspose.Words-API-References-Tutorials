@@ -1,6 +1,6 @@
 ---
 title: Using Charts in Aspose.Words for Java
-linktitle: Using Charts in Aspose.Words for Java
+linktitle: Using Charts
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to create and customize charts in Aspose.Words for Java. Explore chart types, formatting, and axis properties for data visualization.
 type: docs

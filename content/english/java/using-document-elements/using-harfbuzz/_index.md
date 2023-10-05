@@ -1,6 +1,6 @@
 ---
 title: Using HarfBuzz in Aspose.Words for Java
-linktitle: Using HarfBuzz in Aspose.Words for Java
+linktitle: Using HarfBuzz
 second_title: Aspose.Words Java Document Processing API
 description: Learn to use HarfBuzz for advanced text shaping in Aspose.Words for Java. Enhance text rendering in complex scripts with this step-by-step guide.
 type: docs

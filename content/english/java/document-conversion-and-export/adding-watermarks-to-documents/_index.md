@@ -1,6 +1,6 @@
 ---
 title: Adding Watermarks to Documents in Aspose.Words for Java
-linktitle: Adding Watermarks to Documents in Aspose.Words for Java
+linktitle: Adding Watermarks to Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to add watermarks to documents in Aspose.Words for Java. Customize text and image watermarks for professional-looking documents.
 type: docs

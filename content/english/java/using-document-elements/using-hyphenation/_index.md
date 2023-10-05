@@ -1,6 +1,6 @@
 ---
 title: Using Hyphenation in Aspose.Words for Java
-linktitle: Using Hyphenation in Aspose.Words for Java
+linktitle: Using Hyphenation
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to use hyphenation effectively in Aspose.Words for Java with this comprehensive tutorial. Enhance document readability today!
 type: docs

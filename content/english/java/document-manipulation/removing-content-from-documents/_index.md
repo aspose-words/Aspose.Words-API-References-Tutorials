@@ -1,6 +1,6 @@
 ---
 title: Removing Content from Documents in Aspose.Words for Java
-linktitle: Removing Content from Documents in Aspose.Words for Java
+linktitle: Removing Content from Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to remove content from Word documents in Java using Aspose.Words for Java. Remove page breaks, section breaks, and more. Optimize your document processing.
 type: docs

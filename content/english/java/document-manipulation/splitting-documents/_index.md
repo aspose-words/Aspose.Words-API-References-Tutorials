@@ -1,6 +1,6 @@
 ---
 title: Splitting Documents in Aspose.Words for Java
-linktitle: Splitting Documents in Aspose.Words for Java
+linktitle: Splitting Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to split documents efficiently in Aspose.Words for Java. Explore techniques for headings, sections, and page ranges.
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: Formatting Tables and Table Styles in Aspose.Words for Java
-linktitle: Formatting Tables and Table Styles in Aspose.Words for Java
+linktitle: Formatting Tables and Table Styles
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to format tables and apply table styles in Aspose.Words for Java. Explore step-by-step guides with source code for effective table formatting. Enhance your document layout with Aspose.Words.
 type: docs

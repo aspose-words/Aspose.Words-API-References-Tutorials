@@ -1,6 +1,6 @@
 ---
 title: Determining Document Format in Aspose.Words for Java
-linktitle: Determining Document Format in Aspose.Words for Java
+linktitle: Determining Document Format
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to detect document formats in Java with Aspose.Words. Identify DOC, DOCX, and more. Organize files efficiently.
 type: docs

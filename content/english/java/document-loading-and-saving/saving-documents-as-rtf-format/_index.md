@@ -1,6 +1,6 @@
 ---
 title: Saving Documents as RTF Format in Aspose.Words for Java
-linktitle: Saving Documents as RTF Format in Aspose.Words for Java
+linktitle: Saving Documents as RTF Format
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to save documents as RTF format using Aspose.Words for Java. Step-by-step guide with source code for efficient document conversion.
 type: docs

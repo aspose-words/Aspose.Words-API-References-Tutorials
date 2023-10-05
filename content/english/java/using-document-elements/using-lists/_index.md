@@ -1,6 +1,6 @@
 ---
 title: Using Lists in Aspose.Words for Java
-linktitle: Using Lists in Aspose.Words for Java
+linktitle: Using Lists
 second_title: Aspose.Words Java Document Processing API
 description: Learn to use lists in Aspose.Words for Java with this step-by-step tutorial. Organize and format your documents effectively.
 type: docs

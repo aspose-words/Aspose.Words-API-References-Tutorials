@@ -1,6 +1,6 @@
 ---
 title: Formatting Documents in Aspose.Words for Java
-linktitle: Formatting Documents in Aspose.Words for Java
+linktitle: Formatting Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn the art of formatting documents in Aspose.Words for Java with our comprehensive guide. Explore powerful features and enhance your document processing skills.
 type: docs

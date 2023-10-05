@@ -1,6 +1,6 @@
 ---
 title: Using OLE Objects and ActiveX Controls in Aspose.Words for Java
-linktitle: Using OLE Objects and ActiveX Controls in Aspose.Words for Java
+linktitle: Using OLE Objects and ActiveX Controls
 second_title: Aspose.Words Java Document Processing API
 description: Learn to use OLE objects and ActiveX controls in Aspose.Words for Java. Create interactive documents with ease. Get started now!
 type: docs

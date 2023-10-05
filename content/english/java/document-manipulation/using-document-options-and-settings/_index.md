@@ -1,6 +1,6 @@
 ---
 title: Using Document Options and Settings in Aspose.Words for Java
-linktitle: Using Document Options and Settings in Aspose.Words for Java
+linktitle: Using Document Options and Settings
 second_title: Aspose.Words Java Document Processing API
 description: Unlock the Power of Aspose.Words for Java. Master Document Options and Settings for Seamless Document Management. Optimize, Customize, and More.
 type: docs

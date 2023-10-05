@@ -1,6 +1,6 @@
 ---
 title: Extracting Content from Documents in Aspose.Words for Java
-linktitle: Extracting Content from Documents in Aspose.Words for Java
+linktitle: Extracting Content from Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to extract content from documents with ease using Aspose.Words for Java. Our step-by-step guide and code samples simplify the process.
 type: docs

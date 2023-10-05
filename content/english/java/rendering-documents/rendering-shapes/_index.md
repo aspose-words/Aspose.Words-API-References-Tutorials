@@ -1,6 +1,6 @@
 ---
 title: Rendering Shapes in Aspose.Words for Java
-linktitle: Rendering Shapes in Aspose.Words for Java
+linktitle: Rendering Shapes
 second_title: Aspose.Words Java Document Processing API
 description: Learn to render shapes in Aspose.Words for Java with this step-by-step tutorial. Create EMF images programmatically.
 type: docs

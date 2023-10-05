@@ -1,6 +1,6 @@
 ---
 title: Using Load Options in Aspose.Words for Java
-linktitle: Using Load Options in Aspose.Words for Java
+linktitle: Using Load Options
 second_title: Aspose.Words Java Document Processing API
 description: Mastering Load Options in Aspose.Words for Java. Customize document loading, handle encryption, convert shapes, set Word versions, and more for efficient Java document processing.
 type: docs

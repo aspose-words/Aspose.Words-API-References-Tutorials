@@ -1,6 +1,6 @@
 ---
 title: Configuring RTF Load Options in Aspose.Words for Java
-linktitle: Configuring RTF Load Options in Aspose.Words for Java
+linktitle: Configuring RTF Load Options
 second_title: Aspose.Words Java Document Processing API
 description: Configuring RTF Load Options in Aspose.Words for Java. Learn how to recognize UTF-8 text in RTF documents. Step-by-step guide with code examples.
 type: docs

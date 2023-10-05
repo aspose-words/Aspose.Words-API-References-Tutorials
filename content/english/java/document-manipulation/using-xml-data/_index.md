@@ -1,6 +1,6 @@
 ---
 title: Using XML Data in Aspose.Words for Java
-linktitle: Using XML Data in Aspose.Words for Java
+linktitle: Using XML Data
 second_title: Aspose.Words Java Document Processing API
 description: Unlock the Power of Aspose.Words for Java. Learn XML Data Handling, Mail Merge, and Mustache Syntax with Step-by-Step Tutorials.
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: Using Nodes in Aspose.Words for Java
-linktitle: Using Nodes in Aspose.Words for Java
+linktitle: Using Nodes
 second_title: Aspose.Words Java Document Processing API
 description: Learn to manipulate nodes in Aspose.Words for Java with this step-by-step tutorial. Unlock document processing power.
 type: docs

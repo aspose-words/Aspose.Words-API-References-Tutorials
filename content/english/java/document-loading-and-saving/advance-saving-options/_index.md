@@ -1,6 +1,6 @@
 ---
 title: Advance Saving Options with Aspose.Words for Java
-linktitle: Saving Documents in Various Formats with Aspose.Words for Java
+linktitle: Saving Documents in Various Formats with
 second_title: Aspose.Words Java Document Processing API
 description: Learn advanced document manipulation with Aspose.Words for Java. Encrypt, handle metafiles, and more. Your Word documents, your way.
 type: docs

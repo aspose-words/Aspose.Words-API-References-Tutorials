@@ -1,6 +1,6 @@
 ---
 title: Using Document Ranges in Aspose.Words for Java
-linktitle: Using Document Ranges in Aspose.Words for Java
+linktitle: Using Document Ranges
 second_title: Aspose.Words Java Document Processing API
 description: Master document range manipulation in Aspose.Words for Java. Learn to delete, extract, and format text with this comprehensive guide.
 type: docs

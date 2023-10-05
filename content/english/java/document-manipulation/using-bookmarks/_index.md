@@ -1,6 +1,6 @@
 ---
 title: Using Bookmarks in Aspose.Words for Java
-linktitle: Using Bookmarks in Aspose.Words for Java
+linktitle: Using Bookmarks
 second_title: Aspose.Words Java Document Processing API
 description: Optimize your document processing with Aspose.Words for Java. Learn to use bookmarks for efficient content navigation and manipulation in this step-by-step guide.
 type: docs

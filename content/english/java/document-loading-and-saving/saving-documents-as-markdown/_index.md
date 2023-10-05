@@ -1,6 +1,6 @@
 ---
 title: Saving Documents as Markdown in Aspose.Words for Java
-linktitle: Saving Documents as Markdown in Aspose.Words for Java
+linktitle: Saving Documents as Markdown
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to convert Word documents to Markdown with Aspose.Words for Java. This step-by-step guide covers table alignment, image handling, and more.
 type: docs

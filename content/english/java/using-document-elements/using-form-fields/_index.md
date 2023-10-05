@@ -1,6 +1,6 @@
 ---
 title: Using Form Fields in Aspose.Words for Java
-linktitle: Using Form Fields in Aspose.Words for Java
+linktitle: Using Form Fields
 second_title: Aspose.Words Java Document Processing API
 description: Learn to use Aspose.Words for Java to create interactive Word documents with form fields. Get started now!
 type: docs

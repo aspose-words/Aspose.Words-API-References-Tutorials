@@ -1,6 +1,6 @@
 ---
 title: Printing Documents in Aspose.Words for Java
-linktitle: Printing Documents in Aspose.Words for Java
+linktitle: Printing Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to print documents using Aspose.Words for Java. Step-by-step guide for seamless printing in your Java applications.
 type: docs

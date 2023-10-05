@@ -1,6 +1,6 @@
 ---
 title: Helper Methods for Extracting Content in Aspose.Words for Java
-linktitle: Helper Methods for Extracting Content in Aspose.Words for Java
+linktitle: Helper Methods for Extracting Content
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to extract content efficiently from Word documents using Aspose.Words for Java. Explore helper methods, custom formatting, and more in this comprehensive guide.
 type: docs

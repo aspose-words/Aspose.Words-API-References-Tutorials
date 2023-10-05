@@ -1,6 +1,6 @@
 ---
 title: Saving Documents as PDF in Aspose.Words for Java
-linktitle: Saving Documents as PDF in Aspose.Words for Java
+linktitle: Saving Documents as PDF
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to save Word documents as PDF using Aspose.Words for Java. Customize fonts, properties, and image quality. A comprehensive guide for PDF conversion.
 type: docs

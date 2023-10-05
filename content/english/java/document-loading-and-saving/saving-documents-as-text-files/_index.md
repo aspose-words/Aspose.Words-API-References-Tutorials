@@ -1,6 +1,6 @@
 ---
 title: Saving Documents as Text Files in Aspose.Words for Java
-linktitle: Saving Documents as Text Files in Aspose.Words for Java
+linktitle: Saving Documents as Text Files
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to save documents as text files in Aspose.Words for Java. Follow our step-by-step guide with Java code examples.
 type: docs

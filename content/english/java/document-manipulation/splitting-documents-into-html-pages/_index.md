@@ -1,6 +1,6 @@
 ---
 title: Splitting Documents into HTML Pages in Aspose.Words for Java
-linktitle: Splitting Documents into HTML Pages in Aspose.Words for Java
+linktitle: Splitting Documents into HTML Pages
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to split documents into HTML pages with Aspose.Words for Java. Follow our step-by-step guide for seamless document conversion.
 type: docs

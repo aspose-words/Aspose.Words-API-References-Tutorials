@@ -1,6 +1,6 @@
 ---
 title: Comparing Documents in Aspose.Words for Java
-linktitle: Comparing Documents in Aspose.Words for Java
+linktitle: Comparing Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to compare documents in Aspose.Words for Java, a powerful Java library for efficient document analysis.
 type: docs

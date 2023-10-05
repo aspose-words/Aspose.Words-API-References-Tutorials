@@ -1,6 +1,6 @@
 ---
 title: Advance HTML Documents Saving Options with Aspose.Words Java
-linktitle: Saving HTML Documents with Aspose.Words for Java
+linktitle: Saving HTML Documents with
 second_title: Aspose.Words Java Document Processing API
 description: In this tutorial, we have covered various advanced HTML document saving options with Aspose.Words for Java. These options empower you to create high-quality HTML
 type: docs

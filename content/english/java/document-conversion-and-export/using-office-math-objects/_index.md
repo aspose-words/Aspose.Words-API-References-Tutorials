@@ -1,6 +1,6 @@
 ---
 title: Using Office Math Objects in Aspose.Words for Java
-linktitle: Using Office Math Objects in Aspose.Words for Java
+linktitle: Using Office Math Objects
 second_title: Aspose.Words Java Document Processing API
 description: Unlock the power of mathematical equations in documents with Aspose.Words for Java. Learn to manipulate and display Office Math objects effortlessly.
 type: docs

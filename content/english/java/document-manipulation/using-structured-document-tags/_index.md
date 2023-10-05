@@ -1,6 +1,6 @@
 ---
 title: Using Structured Document Tags (SDT) in Aspose.Words for Java
-linktitle: Using Structured Document Tags (SDT) in Aspose.Words for Java
+linktitle: Using Structured Document Tags (SDT)
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to use Structured Document Tags (SDT) in Aspose.Words for Java with this comprehensive guide. Create, modify, and bind SDTs to custom XML data.
 type: docs

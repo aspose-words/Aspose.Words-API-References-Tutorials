@@ -1,6 +1,6 @@
 ---
 title: Using Fields in Aspose.Words for Java
-linktitle: Using Fields in Aspose.Words for Java
+linktitle: Using Fields
 second_title: Aspose.Words Java Document Processing API
 description: Unlock Document Automation with Aspose.Words for Java. Learn how to merge, format, and insert images in Java documents. Comprehensive guide and code examples for efficient document processing.
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: Joining and Appending Documents in Aspose.Words for Java
-linktitle: Joining and Appending Documents in Aspose.Words for Java
+linktitle: Joining and Appending Documents
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to join and append documents effortlessly using Aspose.Words for Java. Preserve formatting, manage headers footers, and more.
 type: docs

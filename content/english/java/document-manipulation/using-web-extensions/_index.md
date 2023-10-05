@@ -1,6 +1,6 @@
 ---
 title: Using Web Extensions in Aspose.Words for Java
-linktitle: Using Web Extensions in Aspose.Words for Java
+linktitle: Using Web Extensions
 second_title: Aspose.Words Java Document Processing API
 description: Enhance Documents with Web Extensions in Aspose.Words for Java. Learn to integrate web-based content seamlessly. 
 type: docs
@@ -20,20 +20,20 @@ Before you begin, make sure you have Aspose.Words for Java set up in your projec
 
 To add a web extension task pane to a document, follow these steps:
 
-## Step 1: Create a new document:
+## Create a new document:
 
 ```java
 Document doc = new Document();
 ```
 
-## Step 2: Create a `TaskPane` instance and add it to the document's web extension task panes:
+## Create a `TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();
 doc.getWebExtensionTaskPanes().add(taskPane);
 ```
 
-## Step 3: Set the task pane's properties, such as its dock state, visibility, width, and reference:
+## Set the task pane's properties, such as its dock state, visibility, width, and reference:
 
 ```java
 taskPane.setDockState(TaskPaneDockState.RIGHT);
@@ -45,7 +45,7 @@ taskPane.getWebExtension().getReference().setStoreType(WebExtensionStoreType.OME
 taskPane.getWebExtension().getReference().setStore("th-TH");
 ```
 
-## Step 4: Add properties and bindings to the web extension:
+## Add properties and bindings to the web extension:
 
 ```java
 taskPane.getWebExtension().getProperties().add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
@@ -53,7 +53,7 @@ taskPane.getWebExtension().getBindings().add(new WebExtensionBinding("UnnamedBin
    WebExtensionBindingType.TEXT, "194740422"));
 ```
 
-## Step 5: Save the document:
+## Save the document:
 
 ```java
 doc.save("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");

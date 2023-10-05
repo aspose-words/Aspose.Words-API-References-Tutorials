@@ -1,6 +1,6 @@
 ---
 title: Saving Documents as PCL Format in Aspose.Words for Java
-linktitle: Saving Documents as PCL Format in Aspose.Words for Java
+linktitle: Saving Documents as PCL Format
 second_title: Aspose.Words Java Document Processing API
 description: Learn how to save documents in PCL format using Aspose.Words for Java. Step-by-step guide and code examples for efficient document conversion.
 type: docs

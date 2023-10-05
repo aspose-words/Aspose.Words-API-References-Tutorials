@@ -1,6 +1,6 @@
 ---
 title: Using Markdown in Aspose.Words for Java
-linktitle: Using Markdown in Aspose.Words for Java
+linktitle: Using Markdown
 second_title: Aspose.Words Java Document Processing API
 description: Learn to use Markdown in Aspose.Words for Java with this step-by-step tutorial. Create, style, and save Markdown documents effortlessly.
 type: docs

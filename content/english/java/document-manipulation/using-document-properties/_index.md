@@ -1,6 +1,6 @@
 ---
 title: Using Document Properties in Aspose.Words for Java
-linktitle: Using Document Properties in Aspose.Words for Java
+linktitle: Using Document Properties
 second_title: Aspose.Words Java Document Processing API
 description: Optimize document management with Aspose.Words for Java. Learn to work with document properties, add custom metadata, and more in this comprehensive tutorial.
 type: docs

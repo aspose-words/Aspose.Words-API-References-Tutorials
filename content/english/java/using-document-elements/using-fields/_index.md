@@ -1,6 +1,6 @@
 ---
 title: Using Fields in Aspose.Words for Java
-linktitle: Using Fields in Aspose.Words for Java
+linktitle: Using Fields
 second_title: Aspose.Words Java Document Processing API
 description: Learn to use Aspose.Words for Java fields effectively in this step-by-step tutorial. Create dynamic Word documents with ease.
 type: docs
