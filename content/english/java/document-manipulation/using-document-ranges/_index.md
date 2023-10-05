@@ -49,19 +49,6 @@ public void rangesGetText() throws Exception
 
 Aspose.Words for Java offers a wide range of methods and properties to manipulate document ranges. You can insert, format, and perform various operations within these ranges, making it a versatile tool for document editing.
 
-## Complete Source Code For Using Document Ranges in Aspose.Words for Java
-
-```java
-	Document doc = new Document("Your Directory Path" + "Document.docx");
-	doc.getSections().get(0).getRange().delete();
-}
-@Test
-public void rangesGetText() throws Exception
-{
-	Document doc = new Document("Your Directory Path" + "Document.docx");
-	String text = doc.getRange().getText();
-```
-
 ## Conclusion
 
 Document ranges in Aspose.Words for Java provide you with the ability to work with specific parts of your documents efficiently. Whether you need to delete content, extract text, or perform complex manipulations, understanding how to use document ranges is a valuable skill.

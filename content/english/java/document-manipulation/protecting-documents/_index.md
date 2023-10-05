@@ -45,24 +45,6 @@ int protectionType = doc.getProtectionType();
 
 The `getProtectionType` method returns an integer representing the protection type applied to the document.
 
-## Complete Source Code For Protecting Documents in Aspose.Words for Java
-
-```java
-	Document doc = new Document("Your Directory Path" + "Document.docx");
-	doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-}
-@Test
-public void unprotect() throws Exception
-{
-	Document doc = new Document("Your Directory Path" + "Document.docx");
-	doc.unprotect();
-}
-@Test
-public void getProtectionType() throws Exception
-{
-	Document doc = new Document("Your Directory Path" + "Document.docx");
-	/*ProtectionType*/int protectionType = doc.getProtectionType();
-```
 
 ## Conclusion
 

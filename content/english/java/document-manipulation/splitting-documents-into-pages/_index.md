@@ -8,192 +8,76 @@ weight: 23
 url: /java/document-manipulation/splitting-documents-into-pages/
 ---
 
-## Introduction to Splitting Documents into Pages using Aspose.Words for Java
+If you're working with document processing in Java, Aspose.Words for Java is a powerful API that can help you split documents into separate pages efficiently. In this step-by-step tutorial, we will guide you through the process of splitting documents using the provided source code. By the end of this tutorial, you'll be able to split documents with ease, improving your document management capabilities.
 
-Splitting a document into multiple pages is a common requirement when working with documents. In this tutorial, we will guide you through the process of splitting a document into separate pages using Aspose.Words for Java. This step-by-step guide includes source code examples for your convenience.
+## 1. Introduction
 
-## Prerequisites
+Aspose.Words for Java is a Java library that allows you to manipulate Word documents programmatically. One common task is splitting a document into separate pages, which can be useful for various purposes, such as archiving, printing, or document processing.
 
-Before you begin, make sure you have the Aspose.Words for Java library set up in your project. You can download it from [here](https://releases.aspose.com/words/java/).
+## 2. Prerequisites
 
-## Splitting Documents into Pages
+Before we dive into the code, make sure you have the following prerequisites in place:
 
-We will create a Java application to split a document into separate pages. Here's the step-by-step guide:
+- Java Development Kit (JDK) installed on your system.
+- Aspose.Words for Java library, which you can download [here](https://releases.aspose.com/words/java/).
 
-### Step 1: Initialize Aspose.Words
+## 3. Setting Up Your Environment
+
+To get started, set up your development environment as follows:
+
+- Create a Java project in your preferred Integrated Development Environment (IDE).
+- Add the Aspose.Words for Java library to your project. You can refer to the [documentation](https://reference.aspose.com/words/java/) for detailed instructions.
+
+## 4. Understanding the Source Code
+
+The source code you provided is designed to split a document into separate pages. Let's break down the key components:
 
 ```java
-import com.aspose.words.*;
-import org.apache.commons.io.FilenameUtils;
+String fileName = FilenameUtils.getBaseName(docName);
+String extensionName = FilenameUtils.getExtension(docName);
+System.out.println("Processing document: " + fileName + "." + extensionName);
+Document doc = new Document(docName);
+```
 
-public class DocumentSplitter {
-    public static void main(String[] args) throws Exception {
-        splitAllDocumentsToPages("path/to/your/documents/folder");
-    }
-    
-    private static void splitDocumentToPages(String docName) throws Exception {
-        String fileName = FilenameUtils.getBaseName(docName);
-        String extensionName = FilenameUtils.getExtension(docName);
-        System.out.println("Processing document: " + fileName + "." + extensionName);
-        
-        Document doc = new Document(docName);
-        DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
-        
-        for (int page = 1; page <= doc.getPageCount(); page++) {
-            Document pageDoc = splitter.getDocumentOfPage(page);
-            pageDoc.save("output/folder/" + fileName + " - page" + page + "." + extensionName);
-        }
-    }
+- We extract the base name and extension of the input document.
+- We load the document using Aspose.Words for Java.
 
-    private static void splitAllDocumentsToPages(String folderName) throws Exception {
-        ArrayList<String> fileNames = directoryGetFiles(folderName, "*.doc");
-        for (String fileName : fileNames) {
-            splitDocumentToPages(fileName);
-        }
-    }
+## 5. Splitting Documents Step by Step
 
-    // Helper method to get a list of files in a directory matching a pattern
-    static ArrayList<String> directoryGetFiles(final String dirname, final String filenamePattern) {
-        // Implementation of directoryGetFiles method goes here
-    }
+### 5.1. Loading the Document
+
+```java
+Document doc = new Document(docName);
+```
+
+In this step, we load the input document into a `Document` object, which allows us to work with the document's content.
+
+### 5.2. Initializing the DocumentPageSplitter
+
+```java
+DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
+```
+
+We initialize a `DocumentPageSplitter` object with our loaded document. This class is provided by Aspose.Words for Java and helps us split the document into pages.
+
+### 5.3. Saving Each Page
+
+```java
+for (int page = 1; page <= doc.getPageCount(); page++) {
+    Document pageDoc = splitter.getDocumentOfPage(page);
+    pageDoc.save("Your Directory Path" + MessageFormat.format("{0} - page{1}.{2}", fileName, page, extensionName));
 }
 ```
 
-### Step 2: Implement DocumentPageSplitter
+In this step, we iterate through each page of the document and save it as a separate document. You can specify the directory path where the split pages will be saved.
+
+## 6. Running the Code
+
+To run this code successfully, make sure you have set up your environment and added the Aspose.Words for Java library to your project. Then, execute the code, and you'll have your document split into separate pages.
+
+## DocumentPageSplitter Source Code
 
 ```java
-class DocumentPageSplitter {
-    private PageNumberFinder pageNumberFinder;
-
-    public DocumentPageSplitter(Document source) throws Exception {
-        pageNumberFinder = PageNumberFinderFactory.create(source);
-    }
-
-    public Document getDocument() {
-        return pageNumberFinder.getDocument();
-    }
-
-    public Document getDocumentOfPage(int pageIndex) throws Exception {
-        return getDocumentOfPageRange(pageIndex, pageIndex);
-    }
-
-    public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exception {
-        Document result = (Document) getDocument().deepClone(false);
-        for (Node section : pageNumberFinder.retrieveAllNodesOnPages(startIndex, endIndex, NodeType.SECTION)) {
-            result.appendChild(result.importNode(section, true));
-        }
-        return result;
-    }
-}
-```
-
-### Step 3: Implement PageNumberFinder
-
-```java
-class PageNumberFinder {
-    private Map<Node, Integer> nodeStartPageLookup = new HashMap<>();
-    private Map<Node, Integer> nodeEndPageLookup = new HashMap<>();
-    private LayoutCollector collector;
-    private Map<Integer, ArrayList<Node>> reversePageLookup;
-
-    public PageNumberFinder(LayoutCollector collector) {
-        this.collector = collector;
-    }
-
-    public Document getDocument() {
-        return collector.getDocument();
-    }
-
-    public int getPage(Node node) throws Exception {
-        return nodeStartPageLookup.containsKey(node)
-                ? nodeStartPageLookup.get(node)
-                : collector.getStartPageIndex(node);
-    }
-
-    // Implement other methods for PageNumberFinder here
-}
-```
-
-### Step 4: Implement PageNumberFinderFactory
-
-```java
-class PageNumberFinderFactory {
-    public static PageNumberFinder create(Document document) throws Exception {
-        LayoutCollector layoutCollector = new LayoutCollector(document);
-        document.updatePageLayout();
-        PageNumberFinder pageNumberFinder = new PageNumberFinder(layoutCollector);
-        pageNumberFinder.splitNodesAcrossPages();
-        return pageNumberFinder;
-    }
-}
-```
-
-### Step 5: Implement SectionSplitter
-
-```java
-class SectionSplitter extends DocumentVisitor {
-    private PageNumberFinder pageNumberFinder;
-
-    public SectionSplitter(PageNumberFinder pageNumberFinder) {
-        this.pageNumberFinder = pageNumberFinder;
-    }
-
-    // Implement SectionSplitter methods for handling sections, paragraphs, and other nodes here
-}
-```
-
-### Step 6: Implement SplitPageBreakCorrector
-
-```java
-class SplitPageBreakCorrector {
-    // Implement methods to correct page breaks in sections and paragraphs here
-}
-```
-
-## Complete Source Code For Splitting Documents into Pages in Aspose.Words for Java
-
-```java
-	splitAllDocumentsToPages("Your Directory Path");
-}
-private void splitDocumentToPages(String docName) throws Exception
-{
-	String fileName = FilenameUtils.getBaseName(docName);
-	String extensionName = FilenameUtils.getExtension(docName);
-	System.out.println("Processing document: " + fileName + "." + extensionName);
-	Document doc = new Document(docName);
-	// Split nodes in the document into separate pages.
-	DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
-	// Save each page to the disk as a separate document.
-	for (int page = 1; page <= doc.getPageCount(); page++)
-	{
-		Document pageDoc = splitter.getDocumentOfPage(page);
-		pageDoc.save("Your Directory Path"+ MessageFormat.format("{0} - page{1}.{2}", fileName, page, extensionName));
-	}
-}
-private void splitAllDocumentsToPages(String folderName) throws Exception
-{
-	ArrayList<String> fileNames = directoryGetFiles(folderName, "*.doc");
-	for (String fileName : fileNames)
-	{
-		splitDocumentToPages(fileName);
-	}
-}
-static ArrayList<String> directoryGetFiles(final String dirname, final String filenamePattern) {
-	File dirFile = new File(dirname);
-	Pattern re = Pattern.compile(filenamePattern.replace("*", ".*").replace("?", ".?"));
-	ArrayList<String> dirFiles = new ArrayList<>();
-	for (File file : dirFile.listFiles()) {
-		if (file.isDirectory()) {
-			dirFiles.addAll(directoryGetFiles(file.getPath(), filenamePattern));
-		} else {
-			if (re.matcher(file.getName()).matches()) {
-				dirFiles.add(file.getPath());
-			}
-		}
-	}
-	return dirFiles;
-}
-}
 /// <summary>
 /// Splits a document into multiple documents, one per page.
 /// </summary>
@@ -718,6 +602,7 @@ private CompositeNode splitCompositeAtNode(CompositeNode baseNode, Node targetNo
 	return cloneNode;
 }
 }
+
 class SplitPageBreakCorrector
 {
 private static final String PAGE_BREAK_STR = "\f";
@@ -771,6 +656,8 @@ private static void removePageBreak(Run run)
 		CompositeNode parent = paragraph.getParentNode();
 		parent.removeChild(paragraph);
 	}
+}
+}
 ```
 
 ## Conclusion
