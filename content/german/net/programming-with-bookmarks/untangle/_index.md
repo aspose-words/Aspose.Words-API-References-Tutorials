@@ -56,7 +56,7 @@ Hier ist das vollständige Quellcodebeispiel zum Entwirren verschachtelter Lesez
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		//Wenn beide Zeilen in Ordnung sind und der Anfang und das Ende des Lesezeichens in benachbarten Zeilen enthalten sind,
+		// Wenn beide Zeilen in Ordnung sind und der Anfang und das Ende des Lesezeichens in benachbarten Zeilen enthalten sind,
 		// Verschieben Sie den Endknoten des Lesezeichens an das Ende des letzten Absatzes in der letzten Zelle der oberen Zeile.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
@@ -74,7 +74,7 @@ In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie di
 
 A: Ja, die Entwirrungsfunktion wurde speziell dafür entwickelt, verschachtelte Lesezeichen zu entwirren, die sich in benachbarten Tabellenzeilen befinden. Wenn sich die Lesezeichen nicht in benachbarten Zeilen befinden, ist diese Funktion nicht anwendbar.
 
-#### F: Wie kann ich verschachtelte Lesezeichen in meinem Word-Dokument erkennen?
+#### F: Wie kann ich verschachtelte Lesezeichen in meinem Word-Dokument identifizieren?
 
 A: Sie können verschachtelte Lesezeichen identifizieren, indem Sie die Lesezeichen im Dokument durchlaufen und prüfen, ob sich das Start-Lesezeichen und das End-Lesezeichen in benachbarten Tabellenzeilen befinden. Sie können den in diesem Artikel bereitgestellten Quellcode als Ausgangspunkt für die Implementierung dieser Funktionalität verwenden.
 

@@ -52,7 +52,7 @@ public class DocumentEncryptionExample {
 }
 ```
 
-den här koden laddar vi ett dokument, ställer in ett lösenord för kryptering och sparar sedan det krypterade dokumentet som "encrypted_document.docx".
+I den här koden laddar vi ett dokument, ställer in ett lösenord för kryptering och sparar sedan det krypterade dokumentet som "encrypted_document.docx".
 
 ## Steg 3: Dekryptera ett dokument
 
@@ -93,7 +93,7 @@ Om du glömmer krypteringslösenordet finns det inget sätt att återställa dok
 
 ## Slutsats
 
-den här handledningen utforskade vi processen för dokumentkryptering och dekryptering med Aspose.Words för Java. Att säkerställa säkerheten för dina känsliga dokument är avgörande, och Aspose.Words erbjuder ett robust och enkelt sätt att uppnå detta.
+I den här handledningen utforskade vi processen för dokumentkryptering och dekryptering med Aspose.Words för Java. Att säkerställa säkerheten för dina känsliga dokument är avgörande, och Aspose.Words erbjuder ett robust och enkelt sätt att uppnå detta.
 
 Vi började med att sätta upp vårt Java-projekt och se till att vi hade de nödvändiga förutsättningarna på plats, inklusive Aspose.Words-biblioteket. Sedan gick vi igenom stegen för att kryptera ett dokument och lade till ett extra lager av skydd för att förhindra obehörig åtkomst. Vi lärde oss också hur man dekrypterar det krypterade dokumentet vid behov, med det angivna lösenordet.
 

@@ -32,13 +32,13 @@ FormFieldCollection documentFormFields = doc.Range.FormFields;
 Form alanlarını dizine veya ada göre alabilirsiniz. Bu örnekte, her iki yöntemi de kullanarak bir form alanı alıyoruz:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; //Dizine göre alma
+FormField formField1 = documentFormFields[3]; // Dizine göre alma
 FormField formField2 = documentFormFields["Text2"]; // İsme göre alma
 ```
 
 ## 3. Adım: Form Alanı Özelliklerini Değiştirme
 
- Form alanlarını aldıktan sonra özelliklerini gerektiği gibi değiştirebilirsiniz. Bu örnekte yazı tipi boyutunu değiştiriyoruz.`formField1` 20'ye ve yazı tipi rengine`formField2` kırmızıya:
+Form alanlarını aldıktan sonra özelliklerini gerektiği gibi değiştirebilirsiniz. Bu örnekte yazı tipi boyutunu değiştiriyoruz.`formField1` 20'ye ve yazı tipi rengine`formField2` kırmızıya:
 
 ```csharp
 formField1.Font.Size = 20;
@@ -82,7 +82,7 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel gereksinimlerinize göre değ
 
 #### S: Belirtilen ada sahip form alanı belgede mevcut değilse ne olur?
 
- C: Belirtilen adda form alanı belgede mevcut değilse,`Document.Range.FormFields[name]` yöntem geri dönecek`null`Form alanının bulunmadığı durumları işlemek için bu sonucu kontrol edebilirsiniz.
+ C: Belirtilen adda form alanı belgede mevcut değilse,`Document.Range.FormFields[name]` yöntem geri dönecek`null`. Form alanının bulunmadığı durumları işlemek için bu sonucu kontrol edebilirsiniz.
 
 #### S: Bulunan bir form alanının özelliklerini nasıl değiştirebilirim?
 

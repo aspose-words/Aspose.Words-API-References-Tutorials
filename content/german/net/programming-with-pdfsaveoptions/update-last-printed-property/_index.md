@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF mit der aktualisierten Eigenschaft „Zuletzt gedruckt“.
 
- Um die Aktualisierung der Eigenschaft „Zuletzt gedruckt“ beim Konvertieren in PDF zu ermöglichen, müssen wir die konfigurieren`PdfSaveOptions` Objekt und legen Sie das fest`UpdateLastPrintedProperty` Eigentum zu`true`.
+ Um die Aktualisierung der Eigenschaft „Zuletzt gedruckt“ beim Konvertieren in PDF zu ermöglichen, müssen wir die konfigurieren`PdfSaveOptions` Objekt und legen Sie das fest`UpdateLastPrintedProperty`Eigentum zu`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
@@ -74,7 +74,7 @@ A: Um die Eigenschaft „Zuletzt gedruckt“ in einem PDF-Dokument mit Aspose.Wo
 
  Erstellen Sie eine Instanz von`Document` Klasse, die den Pfad zum Word-Dokument angibt.
 
- Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`UpdateLastPrintedProperty` Eigentum zu`true` um die Aktualisierung der Eigenschaft „Zuletzt gedruckt“ zu ermöglichen.
+ Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`UpdateLastPrintedProperty`Eigentum zu`true` um die Aktualisierung der Eigenschaft „Zuletzt gedruckt“ zu ermöglichen.
 
  Benutzen Sie die`Save` Methode der`Document`Klasse zum Speichern des Dokuments im PDF-Format durch Angabe von Speicheroptionen.
 

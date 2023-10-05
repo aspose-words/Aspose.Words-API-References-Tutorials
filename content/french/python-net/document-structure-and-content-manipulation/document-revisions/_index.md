@@ -33,7 +33,7 @@ print(doc.get_text())
 
 ## Activation du suivi des modifications
 
- Pour activer le suivi des modifications d'un document, vous devez définir le`TrackRevisions` propriété à`True`:
+ Pour activer le suivi des modifications d'un document, vous devez définir le`TrackRevisions`propriété à`True`:
 
 ```python
 doc.track_revisions = True

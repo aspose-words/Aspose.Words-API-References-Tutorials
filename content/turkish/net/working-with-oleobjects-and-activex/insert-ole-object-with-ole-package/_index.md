@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. Adım: OLE paketiyle bir OLE nesnesi ekleyin
- Belge Oluşturucuyu kullanın`InsertOleObject`OLE paketi içeren bir OLE nesnesini belgeye ekleme yöntemi. Veri akışını, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin.
+ Belge Oluşturucuyu kullanın`InsertOleObject` OLE paketi içeren bir OLE nesnesini belgeye ekleme yöntemi. Veri akışını, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### S: OLE paketine sahip bir OLE nesnesi belgeye nasıl eklenir?
 
- C: Kullan`InsertOleObject` belge oluşturucunun yöntemi (`DocumentBuilder`) belgeye OLE paketi içeren bir OLE nesnesi eklemek için. Veri akışını, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin. İşte bir örnek :
+ C: Kullan`InsertOleObject`belge oluşturucunun yöntemi (`DocumentBuilder`) belgeye OLE paketi içeren bir OLE nesnesi eklemek için. Veri akışını, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin. İşte bir örnek :
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### S: Belge nasıl kaydedilir?
 
- C: Belgeyi kullanın`Save`Belgeyi bir dosyaya kaydetme yöntemi. İşte bir örnek :
+ C: Belgeyi kullanın`Save` Belgeyi bir dosyaya kaydetme yöntemi. İşte bir örnek :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
@@ -120,7 +120,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 #### S: Aspose.Words for .NET ile OLE paketine OLE nesnesi eklemenin tam bir örneğini verebilir misiniz?
 
-C: Burada Aspose.Words for .NET kullanarak bir OLE paketiyle bir OLE nesnesi eklemek için tam bir örnek kod bulabilirsiniz. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun:
+C: Burada Aspose.Words for .NET kullanarak bir OLE paketiyle bir OLE nesnesi eklemek için tam bir örnek kod bulacaksınız. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun:
 
 ```csharp
 Document doc = new Document();

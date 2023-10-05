@@ -59,7 +59,7 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## Étape 4 : Mettre à jour la table des matières
+## Étape 4 : mettre à jour la table des matières
 La table des matières nouvellement insérée sera initialement vide. Pour le renseigner, mettez à jour les champs du document :
 
 ```csharp

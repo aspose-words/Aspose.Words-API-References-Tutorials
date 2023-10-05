@@ -17,7 +17,7 @@ url: /zh/java/document-converting/converting-documents-images/
 在我们深入编码部分之前，请确保您具备以下先决条件：
 
 - Java 开发环境：您的系统上应该安装 Java 开发工具包 (JDK)。
--  Aspose.Words for Java：从以下位置下载并设置 Aspose.Words for Java 库：[阿斯普斯网站](https://releases.aspose.com/words/java/).
+- Aspose.Words for Java：从以下位置下载并设置 Aspose.Words for Java 库：[阿斯普斯网站](https://releases.aspose.com/words/java/).
 
 ## 设置您的 Java 项目
 
@@ -58,7 +58,7 @@ public class DocumentToImageConverter {
 
 ## 结论
 
-使用 Aspose.Words for Java，可以轻松地将 Java 中的文档转换为图像。它提供了一种强大而有效的方法来处理文档转换。您可以将此功能集成到您的 Java 应用程序中，以满足各种文档处理需求。
+使用 Aspose.Words for Java，可以轻松将 Java 中的文档转换为图像。它提供了一种强大而有效的方法来处理文档转换。您可以将此功能集成到您的 Java 应用程序中，以满足各种文档处理需求。
 
 ## 常见问题解答
 
@@ -72,7 +72,7 @@ public class DocumentToImageConverter {
 绝对地！您可以使用Aspose.Words for Java高效地将多个文档批量转换为图像。
 
 ### 我还可以将文档转换为哪些其他格式？
-Aspose.Words for Java 支持各种输出格式，包括 PDF、HTML 等。您可以轻松调整`SaveFormat`在`ImageSaveOptions`将文档转换为您想要的格式。
+ Aspose.Words for Java 支持各种输出格式，包括 PDF、HTML 等。您可以轻松调整`SaveFormat`在`ImageSaveOptions`将文档转换为您想要的格式。
 
 ### 在哪里可以找到更多文档和示例？
 有关全面的文档和代码示例，请访问[Aspose.Words for Java API 参考](https://reference.aspose.com/words/java/).

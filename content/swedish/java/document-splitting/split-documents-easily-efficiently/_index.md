@@ -74,7 +74,7 @@ Att dela upp dokument efter rubriker är ett mer avancerat tillvägagångssätt 
 För att dela ett dokument efter rubriker med Aspose.Words för Java, följ dessa steg:
 
 ```java
-// Java-kod för att dela upp ett dokument efter rubriker med Aspose.Words för Java
+//Java-kod för att dela upp ett dokument efter rubriker med Aspose.Words för Java
 Document doc = new Document("input.docx");
 LayoutCollector layoutCollector = new LayoutCollector(doc);
 
@@ -114,7 +114,7 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 
 ### 8.1 Dela upp specifika avsnitt i separata dokument
 
-I vissa fall kanske du bara vill dela upp specifika avsnitt i separata dokument. Aspose.Words för Java låter dig definiera anpassade kriterier för att bestämma vilka avsnitt som ska delas.
+vissa fall kanske du bara vill dela upp specifika avsnitt i separata dokument. Aspose.Words för Java låter dig definiera anpassade kriterier för att bestämma vilka avsnitt som ska delas.
 
 ## 8.2 Dela upp dokument baserat på anpassade kriterier
 
@@ -132,7 +132,7 @@ När du hanterar stora dokument är det viktigt att överväga prestandaoptimeri
 
 ## 11. Slutsats
 
-I den här guiden har vi utforskat hur du enkelt och effektivt delar upp dokument med Aspose.Words för Java. Genom att dela upp stora dokument i mindre, mer hanterbara delar kan utvecklare arbeta med specifika avsnitt och förenkla dokumentbearbetningsuppgifter. Aspose.Words för Java erbjuder olika metoder för att dela upp dokument baserat på sidor, stycken, rubriker och avsnitt, vilket ger utvecklare flexibiliteten att skräddarsy uppdelningsprocessen efter deras specifika behov.
+den här guiden har vi utforskat hur du enkelt och effektivt delar upp dokument med Aspose.Words för Java. Genom att dela upp stora dokument i mindre, mer hanterbara delar kan utvecklare arbeta med specifika avsnitt och förenkla dokumentbearbetningsuppgifter. Aspose.Words för Java erbjuder olika metoder för att dela upp dokument baserat på sidor, stycken, rubriker och avsnitt, vilket ger utvecklare flexibiliteten att skräddarsy uppdelningsprocessen efter deras specifika behov.
 
 ## 12. Vanliga frågor
 

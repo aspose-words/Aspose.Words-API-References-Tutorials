@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте и настройте фигуру
- Вставьте фигуру в документ, используя`InsertShape` метод`DocumentBuilder` объект. Установите нужные размеры фигуры.
+Вставьте фигуру в документ, используя`InsertShape` метод`DocumentBuilder` объект. Установите нужные размеры фигуры.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);

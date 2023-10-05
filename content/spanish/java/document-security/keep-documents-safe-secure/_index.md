@@ -50,7 +50,7 @@ Antes de continuar con la seguridad de los documentos, primero familiaricémonos
 Instalar Aspose.Words para Java es un proceso sencillo. Siga estos sencillos pasos para agregar la biblioteca a su proyecto Java:
 
 1. ### Descargar:
- Ve a la[Lanzamientos.Aspose](https://releases.aspose.com/words/java/) y descargue el paquete Aspose.Words para Java.
+  Ve a la[Lanzamientos.Aspose](https://releases.aspose.com/words/java/) y descargue el paquete Aspose.Words para Java.
 
 2. ### Extracto:
  Extraiga el paquete descargado a una ubicación conveniente en su computadora.
@@ -84,7 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Ahora que tenemos nuestro documento cargado, procedamos a aplicarle cifrado. Aspose.Words para Java proporciona una forma sencilla de configurar el cifrado de documentos:
 
 ```java
-//Establecer una contraseña para abrir el documento
+// Establecer una contraseña para abrir el documento
 doc.getWriteProtection().setPassword("yourPassword");
 
 // Establecer algoritmo de cifrado (opcional)
@@ -96,7 +96,7 @@ doc.save("path/to/encrypted/document.docx");
 
 ## 7. Protección de elementos específicos del documento
 
-A veces, es posible que solo desees proteger partes específicas de tu documento, como encabezados, pies de página o ciertos párrafos. Aspose.Words le permite alcanzar este nivel de granularidad en la protección de documentos:
+veces, es posible que solo desees proteger partes específicas de tu documento, como encabezados, pies de página o ciertos párrafos. Aspose.Words le permite alcanzar este nivel de granularidad en la protección de documentos:
 
 ```java
 // Proteger una sección específica (Protección de solo lectura)
@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 La marca de agua puede ayudar a proteger la confidencialidad de su documento e indicar su estado. Aspose.Words para Java ofrece funciones de marca de agua fáciles de usar:
 
 ```java
-//Agregar una marca de agua visible
+// Agregar una marca de agua visible
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

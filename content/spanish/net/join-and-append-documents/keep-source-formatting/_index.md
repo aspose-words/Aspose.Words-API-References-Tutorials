@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Paso 3: agregue el documento de origen al documento de destino
 
- Utilizar el`AppendDocument` método del documento de destino para adjuntar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting`como modo de formato de importación para conservar el formato original del documento de origen.
+ Utilizar el`AppendDocument` método del documento de destino para adjuntar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting` como modo de formato de importación para conservar el formato original del documento de origen.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

@@ -84,7 +84,7 @@ for (int pageIndex = 0; pageIndex < doc.getPageCount(); pageIndex++) {
 
 ### هل يمكنني التحكم في دقة الصورة أثناء العرض؟
 
- قطعاً! يتيح لك Aspose.Words ضبط دقة عرض الصور باستخدام`setResolution` طريقة في`ImageSaveOptions`. وهذا يضمن أن الصور الناتجة تلبي متطلبات الجودة الخاصة بك.
+ قطعاً! يتيح لك Aspose.Words ضبط دقة عرض الصور باستخدام`setResolution`طريقة في`ImageSaveOptions`. وهذا يضمن أن الصور الناتجة تلبي متطلبات الجودة الخاصة بك.
 
 ### هل Aspose.Words مناسب لمعالجة المستندات المجمعة؟
 

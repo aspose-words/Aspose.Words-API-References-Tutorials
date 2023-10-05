@@ -45,7 +45,7 @@ builder.Write("Header for all other pages");
 ```
 
 ## 4. Adım: Belgede sayfalar oluşturma
-Birden fazla sayfa oluşturmak için belgeye içerik ekleyin. Örneğin:
+Birden çok sayfa oluşturmak için belgeye içerik ekleyin. Örneğin:
 
 ```csharp
 // Belgede iki sayfa oluşturun.
@@ -115,4 +115,4 @@ C: Evet, belgedeki belirli bir bölüme gitmek ve ardından o bölüm içinde ü
 
 #### S: Değiştirilen belgeyi Aspose.Words for .NET kullanarak bir dosyaya nasıl kaydedebilirim?
 
-C: Değiştirilen belgeyi, Document sınıfının Save yöntemini kullanarak istediğiniz konuma ve formata kaydedebilirsiniz. Uygun dosya yolunu ve dosya biçimini (örn. DOCX) belirttiğinizden emin olun.
+C: Değiştirilen belgeyi, Document sınıfının Save yöntemini kullanarak istediğiniz konuma ve formata kaydedebilirsiniz. Uygun dosya yolunu ve dosya formatını (örn. DOCX) belirttiğinizden emin olun.

@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Вопрос: Как мне получить доступ к исправленной версии документа в Aspose.Words для .NET?
 
- А: Используйте`RevisionsView` собственность`Document` возражать против доступа к исправленной версии документа. Вы можете установить значение параметра`RevisionsView` собственность`RevisionsView.Final` чтобы показать окончательную версию без доработок.
+ А: Используйте`RevisionsView` собственность`Document` возражать против доступа к исправленной версии документа. Вы можете установить значение параметра`RevisionsView`собственность`RevisionsView.Final` чтобы показать окончательную версию без доработок.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;

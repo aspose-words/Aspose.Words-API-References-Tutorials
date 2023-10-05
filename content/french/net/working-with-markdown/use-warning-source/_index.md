@@ -66,11 +66,11 @@ Félicitation ! Vous avez maintenant appris à utiliser la source d'avertissemen
 
 #### Q : Pouvons-nous personnaliser l'apparence de la balise « Avertissement » ?
 
-R : Le formatage de la balise « Avertissement » dépend du moteur de rendu Markdown utilisé. Dans la plupart des cas, vous pouvez personnaliser l'apparence en utilisant CSS pour cibler le`blockquote` balise dans votre document.
+ R : Le formatage de la balise « Avertissement » dépend du moteur de rendu Markdown utilisé. Dans la plupart des cas, vous pouvez personnaliser l'apparence en utilisant CSS pour cibler le`blockquote` balise dans votre document.
 
 #### Q : Est-il possible d'ajouter des icônes à la balise « Avertissement » ?
 
- R : Oui, il est possible d'ajouter des icônes à la balise « Avertissement » à l'aide du code HTML dans votre document Markdown. Vous pouvez insérer un`span` balisez avec la classe appropriée pour afficher une icône à côté du texte d’avertissement.
+ : Oui, il est possible d'ajouter des icônes à la balise « Avertissement » à l'aide du code HTML dans votre document Markdown. Vous pouvez insérer un`span` balisez avec la classe appropriée pour afficher une icône à côté du texte d’avertissement.
 
 #### Q : La balise « Avertissement » est-elle compatible avec tous les lecteurs Markdown ?
 

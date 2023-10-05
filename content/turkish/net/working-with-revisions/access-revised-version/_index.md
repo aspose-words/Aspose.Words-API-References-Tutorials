@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### S: Aspose.Words for .NET'te bir belgenin revize edilmiş versiyonuna nasıl erişebilirim?
 
- C: Kullan`RevisionsView` mülkiyeti`Document` belgenin revize edilmiş sürümüne erişme nesnesi. Değerini ayarlayabilirsiniz`RevisionsView` mülkiyet`RevisionsView.Final` revizyonlar olmadan son sürümü göstermek için.
+ C: Kullan`RevisionsView` mülkiyeti`Document` belgenin revize edilmiş sürümüne erişme nesnesi. Değerini ayarlayabilirsiniz`RevisionsView`mülkiyet`RevisionsView.Final` revizyonlar olmadan son sürümü göstermek için.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;

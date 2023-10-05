@@ -12,7 +12,7 @@ url: /fr/python-net/document-structure-and-content-manipulation/document-paragra
 
 ## Introduction à Aspose.Words pour Python
 
-Aspose.Words for Python est une bibliothèque puissante qui permet aux développeurs de travailler avec des documents Word à l'aide de la programmation Python. Il fournit un large éventail de fonctionnalités pour créer, modifier et formater des documents Word par programmation, offrant une intégration transparente de la manipulation de documents dans vos applications Python.
+Aspose.Words for Python est une bibliothèque puissante qui permet aux développeurs de travailler avec des documents Word à l'aide de la programmation Python. Il fournit un large éventail de fonctionnalités pour créer, éditer et formater des documents Word par programmation, offrant une intégration transparente de la manipulation de documents dans vos applications Python.
 
 ## Mise en route : installation d'Aspose.Words
 

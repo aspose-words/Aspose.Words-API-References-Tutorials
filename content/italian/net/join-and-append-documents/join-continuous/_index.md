@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Passaggio 4: aggiungi il documento di origine
 
-Aggiungi il documento di origine al documento di destinazione utilizzando il file`AppendDocument` metodo del`Document` classe. Imposta la modalità del formato di importazione su`ImportFormatMode.KeepSourceFormatting` per preservare gli stili originali del documento di origine.
+ Aggiungi il documento di origine al documento di destinazione utilizzando il file`AppendDocument` metodo del`Document` classe. Imposta la modalità del formato di importazione su`ImportFormatMode.KeepSourceFormatting` per preservare gli stili originali del documento di origine.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

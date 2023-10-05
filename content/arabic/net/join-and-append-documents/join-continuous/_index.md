@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## الخطوة 4: إلحاق المستند المصدر
 
-قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting` للحفاظ على الأنماط الأصلية من المستند المصدر.
+ قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting` للحفاظ على الأنماط الأصلية من المستند المصدر.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

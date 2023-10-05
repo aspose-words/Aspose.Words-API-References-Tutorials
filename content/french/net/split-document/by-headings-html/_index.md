@@ -82,4 +82,4 @@ Le code source fourni montre la division du document Word en parties plus petite
 
 #### Puis-je diviser le document en fonction de plusieurs critères ?
 
- Oui, vous pouvez diviser le document en fonction de plusieurs critères en combinant les options de critères en conséquence. Par exemple, vous pouvez diviser le document par titre et par page en définissant le`DocumentSplitCriteria` propriété à`HeadingParagraph | Page`. Cela divisera le document au niveau de chaque titre et de chaque page, créant ainsi des parties plus petites basées sur les deux critères.
+ Oui, vous pouvez diviser le document en fonction de plusieurs critères en combinant les options de critères en conséquence. Par exemple, vous pouvez diviser le document par titre et par page en définissant le`DocumentSplitCriteria`propriété à`HeadingParagraph | Page`. Cela divisera le document au niveau de chaque titre et de chaque page, créant ainsi des parties plus petites basées sur les deux critères.

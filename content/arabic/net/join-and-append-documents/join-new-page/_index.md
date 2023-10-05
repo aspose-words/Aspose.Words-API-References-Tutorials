@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: إعداد بداية قسم الصفحة الجديدة
 
-لبدء المستند الملحق على صفحة جديدة، قم بتعيين`SectionStart` خاصية القسم الأول في الوثيقة المصدر ل`SectionStart.NewPage`.
+ لبدء المستند الملحق على صفحة جديدة، قم بتعيين`SectionStart` خاصية القسم الأول في الوثيقة المصدر ل`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## الخطوة 4: إلحاق المستند المصدر
 
-قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting` للحفاظ على الأنماط الأصلية من المستند المصدر.
+ قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting` للحفاظ على الأنماط الأصلية من المستند المصدر.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بتعيين المستند الملحق للبدء في صفحة جديدة.
+	//قم بتعيين المستند الملحق للبدء في صفحة جديدة.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// قم بإلحاق المستند المصدر باستخدام الأنماط الأصلية الموجودة في المستند المصدر.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

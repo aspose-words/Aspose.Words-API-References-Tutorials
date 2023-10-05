@@ -98,7 +98,7 @@ Aspose.Words per Java ti consente di dividere ed estrarre facilmente il contenut
 
 ### Posso dividere un documento in base a criteri personalizzati?
 
-Sì, puoi definire criteri personalizzati per dividere un documento utilizzando Aspose.Words per Java. Crea semplicemente la tua personalizzazione`DocumentSplitCriteria` implementazione.
+ Sì, puoi definire criteri personalizzati per dividere un documento utilizzando Aspose.Words per Java. Crea semplicemente la tua personalizzazione`DocumentSplitCriteria` implementazione.
 
 ### Quali formati di file supporta Aspose.Words per Java?
 

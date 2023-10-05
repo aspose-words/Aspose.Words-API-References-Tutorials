@@ -62,7 +62,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ### مثال على التعليمات البرمجية المصدر لنسخ النص المرجعي باستخدام Aspose.Words لـ .NET
 
-فيما يلي المثال الكامل للتعليمة البرمجية المصدر لتوضيح نسخ النص من إشارة مرجعية باستخدام Aspose.Words for .NET:
+فيما يلي المثال الكامل للتعليمة البرمجية المصدر لتوضيح نسخ النص من إشارة مرجعية باستخدام Aspose.Words لـ .NET:
 
 ```csharp
 
@@ -88,6 +88,42 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ```
 
+#### إلحاق رمز مصدر النص المرجعي
+
+```csharp
+
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+        {
+            // هذه هي الفقرة التي تحتوي على بداية الإشارة المرجعية.
+            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+
+            // هذه هي الفقرة التي تحتوي على نهاية الإشارة المرجعية.
+            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+
+            if (startPara == null || endPara == null)
+                throw new InvalidOperationException(
+                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+            // نقتصر على سيناريو بسيط إلى حد معقول.
+            if (startPara.ParentNode != endPara.ParentNode)
+                throw new InvalidOperationException(
+                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+            // نريد نسخ جميع الفقرات من فقرة البداية حتى (بما في ذلك) الفقرة النهاية،
+            // وبالتالي فإن العقدة التي نتوقف عندها هي واحدة بعد نهاية الفقرة.
+            Node endNode = endPara.NextSibling;
+
+            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+            {
+                //يؤدي هذا إلى إنشاء نسخة من العقدة الحالية واستيرادها (مما يجعلها صالحة) في السياق
+                // من وثيقة الوجهة. الاستيراد يعني تعديل الأنماط ومعرفات القائمة بشكل صحيح.
+                Node newNode = importer.ImportNode(curNode, true);
+
+                dstNode.AppendChild(newNode);
+            }
+        }
+
+```
 ## خاتمة
 
 في هذه المقالة، قمنا باستكشاف التعليمات البرمجية المصدر لـ C# لفهم كيفية استخدام وظيفة نسخ النص المرجعي من Aspose.Words لـ .NET. لقد اتبعنا دليلاً خطوة بخطوة لنسخ محتويات الإشارة المرجعية من مستند مصدر إلى مستند آخر.
@@ -116,7 +152,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### س: كيفية تحديد موقع النسخة النصية للإشارة المرجعية في المستند الوجهة باستخدام Aspose.Words for .NET؟
 
-ج: لتحديد المكان الذي تريد إضافة نص الإشارة المرجعية المنسوخ فيه في المستند الوجهة باستخدام Aspose.Words for .NET، يمكنك الانتقال إلى نص القسم الأخير من المستند الوجهة. يمكنك استخدام ال`LastSection` خاصية للوصول إلى القسم الأخير و`Body` الخاصية للوصول إلى نص هذا القسم. هنا نموذج التعليمات البرمجية:
+ ج: لتحديد المكان الذي تريد إضافة نص الإشارة المرجعية المنسوخ فيه في المستند الوجهة باستخدام Aspose.Words for .NET، يمكنك الانتقال إلى نص القسم الأخير من المستند الوجهة. يمكنك استخدام ال`LastSection` خاصية للوصول إلى القسم الأخير و`Body` الخاصية للوصول إلى نص هذا القسم. هنا نموذج التعليمات البرمجية:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;

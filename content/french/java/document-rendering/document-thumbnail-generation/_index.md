@@ -53,7 +53,7 @@ Vous pouvez personnaliser l'apparence de vos miniatures en fonction de la concep
 Une fois que vous avez généré la vignette, vous pouvez l'enregistrer à votre emplacement préféré.
 
 ```java
-//Code Java pour enregistrer la vignette générée
+// Code Java pour enregistrer la vignette générée
 FileOutputStream outputStream = new FileOutputStream("thumbnail.png");
 stream.writeTo(outputStream);
 ```
@@ -82,4 +82,4 @@ Oui, Aspose.Words for Java nécessite une licence valide pour une utilisation co
 
 ### Où puis-je trouver de la documentation supplémentaire pour Aspose.Words pour Java ?
 
-Vous pouvez trouver une documentation complète et des références API sur la page de documentation Aspose.Words for Java.[ici](https://reference.aspose.com/words/java/).
+ Vous pouvez trouver une documentation complète et des références API sur la page de documentation Aspose.Words for Java.[ici](https://reference.aspose.com/words/java/).

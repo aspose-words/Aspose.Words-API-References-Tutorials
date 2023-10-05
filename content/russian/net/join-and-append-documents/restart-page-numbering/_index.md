@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Установите исходный документ для перезапуска нумерации страниц.
 
- Для возобновления нумерации страниц в исходном документе необходимо установить параметр`SectionStart` свойство первого раздела исходного документа на`SectionStart.NewPage` и установите`RestartPageNumbering` собственность`true`.
+ Для возобновления нумерации страниц в исходном документе необходимо установить параметр`SectionStart` свойство первого раздела исходного документа на`SectionStart.NewPage` и установите`RestartPageNumbering`собственность`true`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

@@ -20,7 +20,7 @@ Innan du fortsätter med handledningen, se till att du har följande krav på pl
 
 ## Steg 1: Ladda dokumentet
 
-det här steget kommer vi att ladda Word-dokumentet som innehåller de bokmärken vi vill uppdatera. Förutsatt att du har dokumentet lagrat i en specifik katalog, använd följande kod för att ladda dokumentet:
+I det här steget kommer vi att ladda Word-dokumentet som innehåller de bokmärken vi vill uppdatera. Förutsatt att du har dokumentet lagrat i en specifik katalog, använd följande kod för att ladda dokumentet:
 
 ```csharp
 // Sökvägen till dokumentkatalogen.

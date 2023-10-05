@@ -115,7 +115,7 @@ C: Bir PDF belgesindeki görüntüleri Aspose.Words for .NET ile sıkıştırmak
 
  Bir örneğini oluşturun`Document` Word belgesinin yolunu belirten sınıf.
 
- Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`ImageCompression` mülkiyet`PdfImageCompression.Jpeg` JPEG sıkıştırmasını kullanmak için.
+ Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`ImageCompression`mülkiyet`PdfImageCompression.Jpeg` JPEG sıkıştırmasını kullanmak için.
 
 İhtiyaçlarınıza göre JPEG kalitesi gibi diğer görüntü sıkıştırma seçeneklerini de ayarlayabilirsiniz.
 

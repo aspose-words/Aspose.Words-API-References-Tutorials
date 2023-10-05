@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-Bu adımda yeni bir OOXML kaydetme seçeneklerini yapılandırıyoruz.`OoxmlSaveOptions` nesne. Belgeyi şifrelemek için istenilen şifreyi ayarlayarak belirtiyoruz.`Password` Özel şifrenizin özelliği.
+ Bu adımda yeni bir OOXML kaydetme seçeneklerini yapılandırıyoruz.`OoxmlSaveOptions` nesne. Belgeyi şifrelemek için istenilen şifreyi ayarlayarak belirtiyoruz.`Password` Özel şifrenizin özelliği.
 
 ## Adım 4: Belgeyi parolayla şifreleme
 

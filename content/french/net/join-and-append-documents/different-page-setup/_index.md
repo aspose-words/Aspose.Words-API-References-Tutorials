@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Étape 4 : Modifier la mise en forme du paragraphe
 
- Pour conserver une mise en forme appropriée, parcourez tous les paragraphes du document source et définissez le`KeepWithNext` propriété à`true`. Cela garantit que les paragraphes restent ensemble pendant le processus d’ajout.
+ Pour conserver une mise en forme appropriée, parcourez tous les paragraphes du document source et définissez le`KeepWithNext`propriété à`true`Cela garantit que les paragraphes restent ensemble pendant le processus d’ajout.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -85,9 +85,9 @@ Ceci termine la mise en œuvre de l’ajout d’un document avec différents par
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Pour garantir que cela ne se produise pas lorsque le document source a des paramètres de mise en page différents, assurez-vous que le
-	//les paramètres sont identiques entre la dernière section du document de destination.
+	// les paramètres sont identiques entre la dernière section du document de destination.
 	// S'il y a d'autres sections continues qui suivent dans le document source,
-	// cela devra être répété pour ces sections.
+	//cela devra être répété pour ces sections.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

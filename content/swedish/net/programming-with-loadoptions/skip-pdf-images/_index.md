@@ -58,7 +58,7 @@ S: Att hoppa över PDF-bildladdning kan vara fördelaktigt av flera anledningar.
 
 #### F: Hur kan jag hoppa över att ladda PDF-bilder i Aspose.Words för .NET?
 
- S: Du kan hoppa över att ladda PDF-bilder genom att använda`PdfLoadOptions`klass tillhandahållen av Aspose.Words för .NET. Ställ bara in`SkipPdfImages` egendom till`true` när du konfigurerar laddningsalternativen för ditt PDF-dokument.
+ S: Du kan hoppa över att ladda PDF-bilder genom att använda`PdfLoadOptions`klass tillhandahållen av Aspose.Words för .NET. Ställ bara in`SkipPdfImages`egendom till`true` när du konfigurerar laddningsalternativen för ditt PDF-dokument.
 
 #### F: Kan jag fortfarande komma åt de överhoppade PDF-bilderna efter att ha laddat dokumentet?
 

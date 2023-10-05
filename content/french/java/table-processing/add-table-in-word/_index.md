@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Étape 6 : créer un tableau et ajouter des lignes
 
- Créer un nouveau`Table` objet et spécifiez le nombre de lignes et de colonnes.
+ Créer un nouveau`Table`objet et spécifiez le nombre de lignes et de colonnes.
 
 ```java
 Table table = new Table(doc);

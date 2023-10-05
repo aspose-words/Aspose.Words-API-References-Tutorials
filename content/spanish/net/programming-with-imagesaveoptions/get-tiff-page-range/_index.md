@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.Save(dataDir + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
 ```
 
- En este paso guardamos el documento completo en formato TIFF usando el`Save` método y especificando la ruta al archivo de salida con la extensión`.tiff`.
+En este paso guardamos el documento completo en formato TIFF usando el`Save` método y especificando la ruta al archivo de salida con la extensión`.tiff`.
 
 ## Paso 4: configurar las opciones de copia de seguridad para el rango de páginas
 
@@ -52,7 +52,7 @@ Resolution = 160
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOptions);
 ```
 
- En este último paso, guardamos el rango de páginas especificado en formato TIFF usando el`Save`método y pasando la ruta al archivo de salida con`.tiff` extensión, junto con las opciones de guardado especificadas.
+ En este último paso, guardamos el rango de páginas especificado en formato TIFF usando el`Save` método y pasando la ruta al archivo de salida con`.tiff` extensión, junto con las opciones de guardado especificadas.
 
 Ahora puede ejecutar el código fuente para obtener un rango específico de páginas de su documento y guardarlas como un archivo TIFF. Los archivos resultantes se guardarán en el directorio especificado con los nombres "WorkingWithImageSaveOptions.MultipageTiff.tiff" para el documento completo y "WorkingWithImageSaveOptions.GetTiffPageRange.tiff" para el rango de páginas especificado.
 

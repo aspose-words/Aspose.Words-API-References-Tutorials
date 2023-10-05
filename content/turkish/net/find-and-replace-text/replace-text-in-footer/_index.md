@@ -53,7 +53,7 @@ footer
 
 ## 5. Adım: Düzenlenen belgeyi kaydedin
 
- Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydederiz:`Save` yöntem:
+Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydederiz:`Save` yöntem:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");

@@ -77,7 +77,7 @@ R: Per incorporare tutti i caratteri in un documento PDF utilizzando Aspose.Word
 
  Carica il documento che desideri elaborare utilizzando il file`Document` classe e il percorso del documento.
 
- Configura le opzioni di salvataggio del PDF creando un'istanza del file`PdfSaveOptions` classe e impostando il file`EmbedFullFonts` proprietà a`true`. Ciò garantisce che tutti i caratteri utilizzati nel documento verranno incorporati nel file PDF generato.
+ Configura le opzioni di salvataggio del PDF creando un'istanza del file`PdfSaveOptions` classe e impostando il file`EmbedFullFonts`proprietà a`true`. Ciò garantisce che tutti i caratteri utilizzati nel documento verranno incorporati nel file PDF generato.
 
  Salva il documento in formato PDF con caratteri incorporati utilizzando il file`Save` metodo del`Document`oggetto, specificando il nome del file di output e le opzioni di salvataggio configurate in precedenza.
 

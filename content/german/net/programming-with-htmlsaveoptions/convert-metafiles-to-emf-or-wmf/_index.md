@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 ---
 
-In diesem Tutorial führen wir Sie durch den C#-Quellcode, um Metadateien mit Aspose.Words für .NET in das EMF- oder WMF-Format zu konvertieren. Mit dieser Funktion können Sie Bilder im Metadateiformat in kompatiblere Formate wie EMF oder WMF konvertieren, wenn Sie ein Dokument in HTML konvertieren.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode zum Konvertieren von Metadateien in das EMF- oder WMF-Format mit Aspose.Words für .NET. Mit dieser Funktion können Sie Bilder im Metadateiformat in kompatiblere Formate wie EMF oder WMF konvertieren, wenn Sie ein Dokument in HTML konvertieren.
 
 ## Schritt 1: Projekteinrichtung
 

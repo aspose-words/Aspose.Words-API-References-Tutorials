@@ -88,7 +88,7 @@ A. För att skapa ett nytt dokument och dokumentgenerator kan du följa dessa st
 ```csharp
 Document doc = new Document();
 ```
- Använd`DocumentBuilder` klass för att skapa en dokumentbyggare kopplad till det tidigare skapade dokumentet:
+ Använd`DocumentBuilder`klass för att skapa en dokumentbyggare kopplad till det tidigare skapade dokumentet:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### F. Hur bäddar jag in koden för att infoga ett OLE-objekt som en ikon från en ström i mitt projekt?
 
 A. För att bädda in koden för att infoga ett OLE-objekt som en ikon från en ström i ditt projekt, följ dessa steg:
-- Importera nödvändiga referenser genom att lägga till lämpliga`using` uttalanden.
+-  Importera nödvändiga referenser genom att lägga till lämpliga`using` uttalanden.
 -  Skapa ett nytt dokument och en dokumentbyggare med hjälp av`Document` och`DocumentBuilder` klasser.
 - Använd koden för att infoga OLE-objektet som en ikon från en ström.
 -  Spara dokumentet med hjälp av`Save` metod med lämplig destinationssökväg.

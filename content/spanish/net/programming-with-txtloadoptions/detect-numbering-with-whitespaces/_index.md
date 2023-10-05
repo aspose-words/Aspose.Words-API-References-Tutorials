@@ -45,7 +45,7 @@ En este paso, creamos una cadena de texto que simula un documento de texto que c
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- En este paso configuramos las opciones de carga del documento. Creamos un nuevo`TxtLoadOptions` objeto y establecer el`DetectNumberingWithWhitespaces` propiedad a`true`. Esto permitirá a Aspose.Words detectar números de lista incluso si van seguidos de espacios en blanco.
+ En este paso configuramos las opciones de carga del documento. Creamos un nuevo`TxtLoadOptions` objeto y establecer el`DetectNumberingWithWhitespaces`propiedad a`true`. Esto permitirá a Aspose.Words detectar números de lista incluso si van seguidos de espacios en blanco.
 
 ## Paso 4: cargar el documento y guardarlo
 

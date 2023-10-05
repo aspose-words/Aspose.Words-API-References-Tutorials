@@ -95,7 +95,7 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şe
 
 #### S: Aspose.Words'te listelerin numaralandırma formatını özelleştirebilir miyim?
 
- C: Evet, Aspose.Words'te listelerin numaralandırma formatını özelleştirebilirsiniz.`List` class bunun için çeşitli özellikler sunar, örneğin`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`Liste türünü (numaralandırılmış, madde işaretli vb.), numaralandırma biçimini (Arap rakamları, Romen rakamları, harfler vb.) ve diğer numaralandırma biçimlendirme seçeneklerini ayarlamak için bu özellikleri kullanabilirsiniz.
+C: Evet, Aspose.Words'te listelerin numaralandırma formatını özelleştirebilirsiniz.`List` class bunun için çeşitli özellikler sunar, örneğin`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`Liste türünü (numaralandırılmış, madde işaretli vb.), numaralandırma biçimini (Arap rakamları, Romen rakamları, harfler vb.) ve diğer numaralandırma biçimlendirme seçeneklerini ayarlamak için bu özellikleri kullanabilirsiniz.
 
 #### S: Aspose.Words'te numaralandırılmış bir listeye ek seviyeler eklemek mümkün müdür?
 

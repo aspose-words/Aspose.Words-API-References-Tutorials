@@ -74,7 +74,7 @@ Das Aufteilen von Dokumenten nach Überschriften ist ein fortgeschrittenerer Ans
 Um ein Dokument mithilfe von Aspose.Words für Java nach Überschriften aufzuteilen, führen Sie die folgenden Schritte aus:
 
 ```java
-// Java-Code zum Aufteilen eines Dokuments nach Überschriften mithilfe von Aspose.Words für Java
+//Java-Code zum Aufteilen eines Dokuments nach Überschriften mithilfe von Aspose.Words für Java
 Document doc = new Document("input.docx");
 LayoutCollector layoutCollector = new LayoutCollector(doc);
 

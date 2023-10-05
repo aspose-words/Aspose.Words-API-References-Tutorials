@@ -89,8 +89,8 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Создайте нумерованный список на основе одного из шаблонов списков Microsoft Word.
-// и примените его к текущему абзацу конструктора документов.
+// Создайте нумерованный список на основе одного из шаблонов списков Microsoft Word.
+//и примените его к текущему абзацу конструктора документов.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 // В этом списке девять уровней, давайте попробуем их все.
@@ -101,7 +101,7 @@ for (int i = 0; i < 9; i++)
 }
 
 // Создайте маркированный список на основе одного из шаблонов списков Microsoft Word.
-// и примените его к текущему абзацу конструктора документов.
+//и примените его к текущему абзацу конструктора документов.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
 for (int i = 0; i < 9; i++)

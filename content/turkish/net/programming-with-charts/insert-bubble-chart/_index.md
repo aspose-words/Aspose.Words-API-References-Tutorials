@@ -1,6 +1,6 @@
 ---
-title: Kabarcık Grafiği Word Belgesine Ekle
-linktitle: Kabarcık Grafiği Word Belgesine Ekle
+title: Kabarcık Grafiğini Word Belgesine Ekle
+linktitle: Kabarcık Grafiğini Word Belgesine Ekle
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET kullanarak bir belgeye nasıl kabarcık grafiği ekleyeceğinizi öğrenin. X, Y ve kabarcık boyutu değerlerine sahip seri verilerini ekleyin.
 type: docs
@@ -90,7 +90,7 @@ Evet, Aspose.Words for .NET'i kullanarak kabarcık grafiğine birden fazla seri 
 Evet, Aspose.Words for .NET'i kullanarak kabarcık grafiğinin görünümünün çeşitli yönlerini özelleştirebilirsiniz. Seri rengi, kabarcık boyutu, eksen etiketleri ve grafik alanı biçimlendirmesi gibi özellikleri değiştirebilirsiniz. Kitaplık, grafiğin görsel öğelerini kontrol etmek ve ihtiyaçlarınıza uygun özelleştirilmiş bir görünüm oluşturmak için zengin bir API seti sağlar.
 
 #### S4. Kabarcık grafiğinin eklendiği belgeyi farklı formatlarda kaydedebilir miyim?
-Evet, Aspose.Words for .NET, belgeyi kabarcık grafiği eklenmiş olarak DOCX, PDF, HTML ve daha fazlası gibi çeşitli formatlarda kaydetmenize olanak tanır. Gereksinimlerinize göre istediğiniz çıktı formatını seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne. Eklenen kabarcık grafiği kaydedilen belgede korunacaktır.
+ Evet, Aspose.Words for .NET, belgeyi kabarcık grafiği eklenmiş olarak DOCX, PDF, HTML ve daha fazlası gibi çeşitli formatlarda kaydetmenize olanak tanır. Gereksinimlerinize göre istediğiniz çıktı formatını seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne. Eklenen kabarcık grafiği kaydedilen belgede korunacaktır.
 
 #### S5. Kabarcık grafiğini ekledikten sonra verilerini ve görünümünü değiştirebilir miyim?
 Evet, kabarcık grafiğini belgeye ekledikten sonra Aspose.Words for .NET tarafından sağlanan API'leri kullanarak verilerini ve görünümünü değiştirebilirsiniz. Word belgelerinizde dinamik ve etkileşimli grafikler oluşturmak için seri verilerini güncelleyebilir, kabarcık boyutunu değiştirebilir, eksen özelliklerini özelleştirebilir ve biçimlendirme seçeneklerini uygulayabilirsiniz.

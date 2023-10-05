@@ -16,7 +16,7 @@ För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att 
 
 ## Steg 2: Ladda dokumentet
 
-detta steg kommer vi att ladda dokumentet som ska behandlas. Använd följande kod för att ladda dokumentet från en angiven katalog:
+I detta steg kommer vi att ladda dokumentet som ska behandlas. Använd följande kod för att ladda dokumentet från en angiven katalog:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Denna kod skapar en instans av`HtmlSaveOptions`och ställer in`ResolveFontNames` möjlighet att`true` för att lösa saknade teckensnittsnamn vid konvertering till HTML. Även`PrettyFormat` alternativet är inställt på`true` för att få snyggt formaterad HTML-kod.
+ Denna kod skapar en instans av`HtmlSaveOptions`och ställer in`ResolveFontNames` möjlighet att`true`för att lösa saknade teckensnittsnamn vid konvertering till HTML. Även`PrettyFormat` alternativet är inställt på`true` för att få snyggt formaterad HTML-kod.
 
 ## Steg 4: Konvertera och spara dokumentet till HTML
 

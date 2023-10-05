@@ -102,7 +102,7 @@ Aspose.Words for .NET 的“每级使用一个制表符进行列表缩进”功�
 
 使用`DocumentBuilder`使用以下方法创建具有多级缩进的列表`ApplyNumberDefault()`要应用默认列表编号格式，`Writeln()`和`Write()`将项目添加到列表中，以及`ListIndent()`增加每个级别的缩进。
 
-通过创建配置保存选项`TxtSaveOptions`对象并设置属性`ListIndentation.Count`每个级别的制表符数量以及`ListIndentation.Character`到`'\t'`使用制表符。
+通过创建一个配置保存选项`TxtSaveOptions`对象并设置属性`ListIndentation.Count`每个级别的制表符数量以及`ListIndentation.Character`到`'\t'`使用制表符。
 
 使用保存文档`Save()`文档的方法指定输出文件的完整路径和保存选项。
 

@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Steg 4: Ändra styckeformatering
 
- För att bibehålla korrekt formatering, iterera igenom alla stycken i källdokumentet och ställ in`KeepWithNext` egendom till`true`. Detta säkerställer att stycken håller ihop under bifogningsprocessen.
+ För att bibehålla korrekt formatering, iterera igenom alla stycken i källdokumentet och ställ in`KeepWithNext`egendom till`true`Detta säkerställer att stycken håller ihop under bifogningsprocessen.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -85,9 +85,9 @@ Detta slutför implementeringen av att lägga till ett dokument med olika sidins
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// För att säkerställa att detta inte händer när källdokumentet har andra sidinställningar, se till att
-	//inställningarna är identiska mellan den sista delen av måldokumentet.
+	// inställningarna är identiska mellan den sista delen av måldokumentet.
 	// Om det finns ytterligare fortlöpande avsnitt som följer i källdokumentet,
-	// detta måste upprepas för dessa avsnitt.
+	//detta måste upprepas för dessa avsnitt.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

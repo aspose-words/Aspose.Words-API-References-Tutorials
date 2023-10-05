@@ -83,7 +83,7 @@ R: Para configurar opciones de esquema en un documento PDF usando Aspose.Words p
 
  Configure las opciones de guardar como PDF creando una instancia del`PdfSaveOptions` clase y usando el`OutlineOptions` propiedad para establecer las opciones de esquema. Puede especificar el número de niveles de encabezado para incluir en el esquema usando el`HeadingsOutlineLevels` propiedad y el número de niveles de esquema ampliados utilizando el`ExpandedOutlineLevels` propiedad.
 
- Guarde el documento en formato PDF utilizando el`Save` método de la`Document`clase que especifica la ruta y las opciones de guardado.
+ Guarde el documento en formato PDF utilizando el`Save` método de la`Document` clase que especifica la ruta y las opciones de guardado.
 
 #### P: ¿Para qué sirve la opción de plan en un documento PDF?
 R: La opción de esquema en un documento PDF le permite crear una estructura jerárquica del contenido, lo que facilita la navegación por el documento y el acceso a diferentes secciones. Esto permite a los usuarios saltar rápidamente a partes específicas del documento haciendo clic en las entradas de la tabla de contenido o del esquema. La opción de esquema también mejora la experiencia de lectura al proporcionar una descripción general de la estructura general del documento.

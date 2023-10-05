@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## 3. Adım: Alanların İçindeki Metni Yoksay işlevini kullanma
 
- Sonraki işlemlerde alanların içindeki metni yok saymak için bir komut kullanabiliriz.`FindReplaceOptions` nesneyi ayarlayın ve`IgnoreFields` mülkiyet`true`:
+ Sonraki işlemlerde alanların içindeki metni yok saymak için bir komut kullanabiliriz.`FindReplaceOptions` nesneyi ayarlayın ve`IgnoreFields`mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -50,7 +50,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Adım 5: Değiştirilen Belge Çıktısını Görüntüleme
 
-Arama ve değiştirmeyi uyguladıktan sonra, belgenin değişen içeriğini aşağıdaki komutu kullanarak görüntüleyebiliriz:`GetText` yöntem:
+ Arama ve değiştirmeyi uyguladıktan sonra, belgenin değişen içeriğini aşağıdaki komutu kullanarak görüntüleyebiliriz:`GetText` yöntem:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## 6. Adım: Alanları dahil etmek için seçenekleri değiştirme
 
-çıktı sonucunda alanların içindeki metni dahil ederiz, alanları göz ardı etmeyecek şekilde seçenekleri değiştirebiliriz. Bunun için ayarlayacağız`IgnoreFields` mülkiyet`false`:
+ çıktı sonucunda alanların içindeki metni dahil ederiz, alanları göz ardı etmeyecek şekilde seçenekleri değiştirebiliriz. Bunun için ayarlayacağız`IgnoreFields`mülkiyet`false`:
 
 ```csharp
 options.IgnoreFields = false;
@@ -128,7 +128,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 #### S: Aspose.Words for .NET'te alanların içindeki metni nasıl yok sayabilirim?
 
-C: Sonraki işlemler sırasında alanların içindeki metni yok saymak için`FindReplaceOptions` nesneyi ayarlayın ve`IgnoreFields` mülkiyet`true`:
+ C: Sonraki işlemler sırasında alanların içindeki metni yok saymak için`FindReplaceOptions` nesneyi ayarlayın ve`IgnoreFields`mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -151,7 +151,7 @@ doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-#### S: Aspose.Words for .NET'te çıktı sonucuna alanları nasıl dahil edebilirim?
+#### S: Aspose.Words for .NET'te çıktı sonucuna alanları nasıl ekleyebilirim?
 
  C: Çıktı sonucundaki alanların içindeki metni dahil etmek için, alanları göz ardı etmeyecek şekilde seçenekleri değiştirebilirsiniz. Bunun için ayarlayabilirsiniz`IgnoreFields` mülkiyeti`FindReplaceOptions` itiraz etmek`false`:
 

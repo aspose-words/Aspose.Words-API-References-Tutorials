@@ -17,7 +17,7 @@ url: /fr/java/document-converting/converting-documents-images/
 Avant de plonger dans la partie codage, assurez-vous que les conditions préalables suivantes sont en place :
 
 - Environnement de développement Java : le kit de développement Java (JDK) doit être installé sur votre système.
--  Aspose.Words for Java : téléchargez et configurez la bibliothèque Aspose.Words for Java à partir du[Site Aspose](https://releases.aspose.com/words/java/).
+- Aspose.Words for Java : téléchargez et configurez la bibliothèque Aspose.Words for Java à partir du[Site Aspose](https://releases.aspose.com/words/java/).
 
 ## Configuration de votre projet Java
 
@@ -54,7 +54,7 @@ public class DocumentToImageConverter {
 
 ## Personnalisation de la conversion d'image
 
- Vous pouvez personnaliser davantage le processus de conversion d'image en modifiant le`ImageSaveOptions`Par exemple, vous pouvez définir la résolution, la plage de pages et la qualité de l'image de sortie.
+ Vous pouvez personnaliser davantage le processus de conversion d'image en modifiant le`ImageSaveOptions`. Par exemple, vous pouvez définir la résolution, la plage de pages et la qualité de l'image de sortie.
 
 ## Conclusion
 
@@ -72,7 +72,7 @@ La conversion de documents en images en Java est facilitée avec Aspose.Words fo
 Absolument! Vous pouvez utiliser Aspose.Words pour Java pour convertir efficacement plusieurs documents en images par lots.
 
 ### Vers quels autres formats puis-je convertir des documents ?
-Aspose.Words for Java prend en charge divers formats de sortie, notamment PDF, HTML, etc. Vous pouvez facilement ajuster le`SaveFormat` dans`ImageSaveOptions` pour convertir les documents au format souhaité.
+ Aspose.Words for Java prend en charge divers formats de sortie, notamment PDF, HTML, etc. Vous pouvez facilement ajuster le`SaveFormat` dans`ImageSaveOptions`pour convertir les documents au format souhaité.
 
 ### Où puis-je trouver plus de documentation et d'exemples ?
  Pour une documentation complète et des exemples de code, visitez le[Référence de l'API Aspose.Words pour Java](https://reference.aspose.com/words/java/).

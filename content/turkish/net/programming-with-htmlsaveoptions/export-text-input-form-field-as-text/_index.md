@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Bu kod bir örneğini oluşturur`HtmlSaveOptions`ve ayarlar`ExportTextInputFormFieldAsText` seçeneği`true`metin giriş formu alanlarını düz metin olarak dışa aktarmak için. Ayrıca çıkarılan görsellerin kaydedileceği klasörü de belirtir.
+ Bu kod bir örneğini oluşturur`HtmlSaveOptions`ve ayarlar`ExportTextInputFormFieldAsText` seçeneği`true` metin giriş formu alanlarını düz metin olarak dışa aktarmak için. Ayrıca çıkarılan görsellerin kaydedileceği klasörü de belirtir.
 
 ## Adım 4: Belgeyi HTML'ye dönüştürme ve kaydetme
 

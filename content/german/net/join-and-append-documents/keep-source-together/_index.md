@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Schritt 4: Legen Sie die Absatzformatierung „Beim nächsten beibehalten“ für das Quelldokument fest
 
- Um die Absätze im Quelldokument zusammenzuhalten, können Sie jeden Absatz im Dokument durchlaufen und festlegen`KeepWithNext` Eigentum zu`true`.
+Um die Absätze im Quelldokument zusammenzuhalten, können Sie jeden Absatz im Dokument durchlaufen und festlegen`KeepWithNext`Eigentum zu`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

@@ -82,4 +82,4 @@ Den medföljande källkoden visar att Word-dokumentet delas upp i mindre delar i
 
 #### Kan jag dela upp dokumentet baserat på flera kriterier?
 
- Ja, du kan dela upp dokumentet baserat på flera kriterier genom att kombinera kriteriealternativen därefter. Du kan till exempel dela upp dokumentet efter både rubrik och sida genom att ställa in`DocumentSplitCriteria` egendom till`HeadingParagraph | Page`. Detta kommer att dela upp dokumentet vid varje rubrik och varje sida, vilket skapar mindre delar baserat på båda kriterierna.
+ Ja, du kan dela upp dokumentet baserat på flera kriterier genom att kombinera kriteriealternativen därefter. Du kan till exempel dela upp dokumentet efter både rubrik och sida genom att ställa in`DocumentSplitCriteria`egendom till`HeadingParagraph | Page`. Detta kommer att dela upp dokumentet vid varje rubrik och varje sida, vilket skapar mindre delar baserat på båda kriterierna.

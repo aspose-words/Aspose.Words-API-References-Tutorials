@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Importformatoptionen einrichten
 
- Erstellen Sie eine Instanz von`ImportFormatOptions` Klasse und legen Sie die fest`IgnoreHeaderFooter` Eigentum zu`false`. Dadurch wird sichergestellt, dass der Inhalt der Kopf- und Fußzeile beim Anhängevorgang einbezogen wird.
+ Erstellen Sie eine Instanz von`ImportFormatOptions` Klasse und legen Sie die fest`IgnoreHeaderFooter`Eigentum zu`false`. Dadurch wird sichergestellt, dass der Inhalt der Kopf- und Fußzeile beim Anhängevorgang einbezogen wird.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };

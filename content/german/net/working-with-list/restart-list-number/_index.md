@@ -97,7 +97,7 @@ builder.ListFormat.RemoveNumbers();
 // Um die erste Liste wiederzuverwenden, müssen wir die Nummerierung neu starten, indem wir eine Kopie der ursprünglichen Listenformatierung erstellen.
 List list2 = doc.Lists.AddCopy(list1);
 
-//Wir können die neue Liste beliebig ändern, einschließlich der Festlegung einer neuen Startnummer.
+// Wir können die neue Liste beliebig ändern, einschließlich der Festlegung einer neuen Startnummer.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -122,7 +122,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### F: Wie kann ich einen bestimmten Nummerierungswert angeben, ab dem die Liste neu gestartet werden soll?
 
- A: Um einen bestimmten Zahlenwert anzugeben, ab dem die Liste neu gestartet werden soll, können Sie die verwenden`ListRestartAtNumber`Methode, die den gewünschten Wert als Argument übergibt. Um beispielsweise die Nummerierung ab 5 neu zu starten, können Sie verwenden`list.ListRestartAtNumber(5)`.
+A: Um einen bestimmten Zahlenwert anzugeben, ab dem die Liste neu gestartet werden soll, können Sie die verwenden`ListRestartAtNumber` Methode, die den gewünschten Wert als Argument übergibt. Um beispielsweise die Nummerierung ab 5 neu zu starten, können Sie verwenden`list.ListRestartAtNumber(5)`.
 
 #### F: Ist es möglich, die mehrstufige Listennummerierung in Aspose.Words neu zu starten?
 

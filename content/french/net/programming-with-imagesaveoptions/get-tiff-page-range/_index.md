@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.Save(dataDir + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
 ```
 
- Dans cette étape, nous enregistrons le document complet au format TIFF en utilisant le`Save` méthode et en spécifiant le chemin d’accès au fichier de sortie avec l’extension`.tiff`.
+Dans cette étape, nous enregistrons le document complet au format TIFF en utilisant le`Save` méthode et en spécifiant le chemin d’accès au fichier de sortie avec l’extension`.tiff`.
 
 ## Étape 4 : Configurer les options de sauvegarde pour la plage de pages
 
@@ -52,7 +52,7 @@ Resolution = 160
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOptions);
 ```
 
- Dans cette dernière étape, nous enregistrons la plage de pages spécifiée au format TIFF à l'aide du`Save`méthode et en passant le chemin d'accès au fichier de sortie avec`.tiff` extension, ainsi que les options de sauvegarde spécifiées.
+ Dans cette dernière étape, nous enregistrons la plage de pages spécifiée au format TIFF à l'aide du`Save` méthode et en passant le chemin d'accès au fichier de sortie avec`.tiff` extension, ainsi que les options de sauvegarde spécifiées.
 
 Vous pouvez désormais exécuter le code source pour obtenir une plage spécifique de pages de votre document et les enregistrer sous forme de fichier TIFF. Les fichiers résultants seront enregistrés dans le répertoire spécifié avec les noms « WorkingWithImageSaveOptions.MultipageTiff.tiff » pour le document complet et « WorkingWithImageSaveOptions.GetTiffPageRange.tiff » pour la plage de pages spécifiée.
 

@@ -41,7 +41,7 @@ Das Drucken eines Dokuments mit Aspose.Words für Java ist unkompliziert. Hier i
 doc.print("printerName");
 ```
 
-Sie können den Druckernamen als Argument für angeben`print` Methode. Dadurch wird das Dokument zum Drucken an den angegebenen Drucker gesendet.
+ Sie können den Druckernamen als Argument für angeben`print`Methode. Dadurch wird das Dokument zum Drucken an den angegebenen Drucker gesendet.
 
 ## Rendern von Dokumenten
 

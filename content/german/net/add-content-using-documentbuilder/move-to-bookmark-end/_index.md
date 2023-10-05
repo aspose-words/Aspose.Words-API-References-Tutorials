@@ -19,7 +19,7 @@ Bevor wir uns mit den Implementierungsdetails befassen, stellen wir sicher, dass
 
 ## Grundlegendes zur Funktion „An Lesezeichenende verschieben“ von Aspose.Words für .NET
 
-Mit der Funktion „An Lesezeichenende verschieben“ können Sie mit Aspose.Words für .NET zum Ende eines Lesezeichens in einem Word-Dokument navigieren. Diese Funktion ist nützlich, wenn Sie Inhalte nach einem bestimmten Lesezeichen in Ihrem Dokument programmgesteuert hinzufügen möchten.
+Mit der Funktion „Zum Ende des Lesezeichens verschieben“ können Sie mit Aspose.Words für .NET zum Ende eines Lesezeichens in einem Word-Dokument navigieren. Diese Funktion ist nützlich, wenn Sie Inhalte nach einem bestimmten Lesezeichen in Ihrem Dokument programmgesteuert hinzufügen möchten.
 
 ## Den Quellcode Schritt für Schritt erklären
 

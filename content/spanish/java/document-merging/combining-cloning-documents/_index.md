@@ -41,7 +41,7 @@ public class DocumentCombination {
 
 ## Paso 2: cargar los documentos fuente
 
- A continuación, deberá cargar los documentos fuente que desea combinar. Puede cargar varios documentos en instancias separadas del`Document` clase.
+ continuación, deberá cargar los documentos fuente que desea combinar. Puede cargar varios documentos en instancias separadas del`Document` clase.
 
 ```java
 // Cargar documentos fuente

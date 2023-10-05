@@ -16,7 +16,7 @@ Antes de profundizar en los detalles técnicos, presentemos brevemente Aspose.Wo
 
 Antes de comenzar a codificar, asegúrese de cumplir con los siguientes requisitos previos:
 
-1.  Aspose.Words para Java: Descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
+1.  Aspose.Words para Java: descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
 2. Entorno de desarrollo Java: asegúrese de tener un entorno de desarrollo Java configurado en su máquina.
 
@@ -84,7 +84,7 @@ Sí, Aspose.Words para Java admite una amplia gama de formatos de documentos, in
 
 ### ¿Puedo controlar la resolución de la imagen durante el renderizado?
 
- ¡Absolutamente! Aspose.Words le permite configurar la resolución para la representación de imágenes utilizando el`setResolution` método en`ImageSaveOptions`. Esto garantiza que las imágenes de salida cumplan con sus requisitos de calidad.
+ ¡Absolutamente! Aspose.Words le permite configurar la resolución para la representación de imágenes utilizando el`setResolution`método en`ImageSaveOptions`. Esto garantiza que las imágenes de salida cumplan con sus requisitos de calidad.
 
 ### ¿Aspose.Words es adecuado para el procesamiento de documentos por lotes?
 

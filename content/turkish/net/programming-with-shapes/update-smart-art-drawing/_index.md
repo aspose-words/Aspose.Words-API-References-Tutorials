@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Belgeyi Yükleyin
- Smart Art çizimini içeren Word belgesini kullanarak yükleyin.`Document` sınıf yapıcısı.
+Smart Art çizimini içeren Word belgesini kullanarak yükleyin.`Document` sınıf yapıcısı.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");

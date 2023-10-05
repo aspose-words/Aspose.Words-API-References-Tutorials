@@ -29,7 +29,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Daha sonra belgeye bir grafik ekleyin.`InsertChart` yöntemi`DocumentBuilder`Bu örnekte bir sütun grafiği ekleyeceğiz.
+ Daha sonra belgeye bir grafik ekleyin.`InsertChart` yöntemi`DocumentBuilder`. Bu örnekte bir sütun grafiği ekleyeceğiz.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
@@ -49,7 +49,7 @@ chart.Series.Add("Aspose Series 1",
 
 ## 4. Adım: Grafik eksenini gizleyin
 
- Grafik eksenini gizlemek için`AxisY` Grafiğin özelliğini seçin ve`Hidden` mülkiyet`true`.
+ Grafik eksenini gizlemek için`AxisY` Grafiğin özelliğini seçin ve`Hidden`mülkiyet`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
@@ -89,7 +89,7 @@ Bu, Aspose.Words for .NET kullanarak grafik eksenini gizleme uygulamasını tama
 
 Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde grafik eksenini nasıl gizleyeceğinizi öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak, istediğiniz görsel efekti elde etmek için bir grafik oluşturabilir, seri verileri ekleyebilir ve grafik eksenini gizleyebilirsiniz.
 
- Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için kapsamlı bir API sağlar ve eksen özellikleri de dahil olmak üzere grafiğin çeşitli yönlerini değiştirmenize olanak tanır. Erişerek`AxisY`Grafiğin özelliği, grafik görselleştirmesinden kaldırmak için Y eksenini gizleyebilirsiniz.
+ Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için kapsamlı bir API sağlar ve eksen özellikleri de dahil olmak üzere grafiğin çeşitli yönlerini değiştirmenize olanak tanır. Erişerek`AxisY` Grafiğin özelliği, grafik görselleştirmesinden kaldırmak için Y eksenini gizleyebilirsiniz.
 
 Eksen çizgileri ve etiketlerin dikkati dağıtmadan grafik verilerine odaklanmak istediğinizde grafik eksenini gizlemek yararlı olabilir. Grafiğe daha temiz ve minimalist bir görünüm kazandırır.
 
@@ -104,13 +104,13 @@ Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgelerini 
 Aspose.Words for .NET'i, Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini arayın ve projenize yükleyin.
 
 #### S3. Bir grafiğin hem X eksenini hem de Y eksenini gizleyebilir miyim?
- Evet, Aspose.Words for .NET'i kullanarak bir grafiğin hem X eksenini hem de Y eksenini gizleyebilirsiniz. X eksenini gizlemek için şuraya erişebilirsiniz:`AxisX` Grafiğin özelliğini seçin ve`Hidden` mülkiyet`true` Benzer şekilde Y eksenini gizlemek için`AxisY` özelliği ayarlayın ve`Hidden` mülkiyet`true`. Bu, grafik görselleştirmesinden her iki ekseni de kaldırmanıza olanak tanır.
+ Evet, Aspose.Words for .NET'i kullanarak bir grafiğin hem X eksenini hem de Y eksenini gizleyebilirsiniz. X eksenini gizlemek için şuraya erişebilirsiniz:`AxisX` Grafiğin özelliğini seçin ve`Hidden`mülkiyet`true` . Benzer şekilde Y eksenini gizlemek için`AxisY` özelliği ayarlayın ve`Hidden`mülkiyet`true`. Bu, grafik görselleştirmesinden her iki ekseni de kaldırmanıza olanak tanır.
 
 #### S4. Ekseni gizledikten sonra tekrar gösterebilir miyim?
- Evet, grafik eksenini Aspose.Words for .NET kullanarak gizledikten sonra tekrar gösterebilirsiniz. Gizli bir ekseni göstermek için basitçe`Hidden` karşılık gelen mülk`AxisX` veya`AxisY` itiraz etmek`false`. Bu, eksenin grafikte tekrar görünmesini sağlayacaktır.
+Evet, grafik eksenini Aspose.Words for .NET kullanarak gizledikten sonra tekrar gösterebilirsiniz. Gizli bir ekseni göstermek için basitçe`Hidden` karşılık gelen mülk`AxisX` veya`AxisY` itiraz etmek`false`. Bu, eksenin grafikte tekrar görünmesini sağlayacaktır.
 
 #### S5. Grafik ekseninin diğer özelliklerini özelleştirebilir miyim?
  Evet, Aspose.Words for .NET grafik ekseninin eksen başlığı, etiketler, çizgi rengi ve daha fazlası gibi çeşitli özelliklerini özelleştirmenize olanak tanır. Erişerek`AxisX` Ve`AxisY` Grafiğin özellikleri gibi özellikleri değiştirebilirsiniz.`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, Ve bircok digerleri. Bu size grafik ekseninin görünümü ve davranışı üzerinde ayrıntılı kontrol sağlar.
 
 #### S6. Grafiği gizli eksenle farklı dosya formatlarında kaydedebilir miyim?
-Evet, Aspose.Words for .NET, gizli eksenli grafiği içeren belgeyi DOCX, PDF, HTML ve daha fazlası gibi çeşitli dosya formatlarında kaydetmenize olanak tanır. Gereksinimlerinize göre istediğiniz çıktı formatını seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne. Gizli eksen kaydedilen belgede korunacaktır.
+ Evet, Aspose.Words for .NET, gizli eksenli grafiği içeren belgeyi DOCX, PDF, HTML ve daha fazlası gibi çeşitli dosya formatlarında kaydetmenize olanak tanır. Gereksinimlerinize göre istediğiniz çıktı formatını seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne. Gizli eksen kaydedilen belgede korunacaktır.

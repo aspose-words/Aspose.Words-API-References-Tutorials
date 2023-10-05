@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
 
-I den här steg-för-steg-guiden kommer vi att visa dig hur du läser egenskaperna för ActiveX-kontroller i en Word-fil med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
+den här steg-för-steg-guiden kommer vi att visa dig hur du läser egenskaperna för ActiveX-kontroller i en Word-fil med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
 
 ## Steg 1: Dokumentinitiering
 

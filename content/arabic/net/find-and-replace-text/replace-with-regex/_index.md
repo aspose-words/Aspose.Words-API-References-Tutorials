@@ -50,7 +50,7 @@ doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 
 ## الخطوة 5: حفظ المستند المعدل
 
- وأخيرًا، نقوم بحفظ المستند المعدل في دليل محدد باستخدام الملف`Save` طريقة:
+وأخيرًا، نقوم بحفظ المستند المعدل في دليل محدد باستخدام الملف`Save` طريقة:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");

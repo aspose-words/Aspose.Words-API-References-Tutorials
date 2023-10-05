@@ -29,7 +29,7 @@ Innan vi börjar, se till att du har följande förutsättningar på plats:
 Låt oss börja med att skapa ett tomt dokument med Aspose.Words för Java:
 
 ```java
-// Java-kod för att skapa ett tomt dokument
+//Java-kod för att skapa ett tomt dokument
 Document doc = new Document();
 ```
 

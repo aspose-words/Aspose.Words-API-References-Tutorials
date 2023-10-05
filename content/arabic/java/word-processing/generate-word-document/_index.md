@@ -22,7 +22,7 @@ Aspose.Words for Java هي مكتبة Java تمكن المطورين من إنش
 
 ## 3. تثبيت Aspose.Words لجافا
 
-لاستخدام Aspose.Words for Java في مشروعك، تحتاج إلى تنزيل المكتبة من Aspose.Releases (https://releases.aspose.com/words/java/). بعد تنزيل الحزمة، قم بتضمين ملف Aspose.Words JAR في مسار فئة مشروع Java الخاص بك.
+لاستخدام Aspose.Words for Java في مشروعك، تحتاج إلى تنزيل المكتبة من Aspose.Releases (https://releases.aspose.com/words/Java/). بعد تنزيل الحزمة، قم بتضمين ملف Aspose.Words JAR في مسار فئة مشروع Java الخاص بك.
 
 ## 4. إنشاء مستند Word جديد
 

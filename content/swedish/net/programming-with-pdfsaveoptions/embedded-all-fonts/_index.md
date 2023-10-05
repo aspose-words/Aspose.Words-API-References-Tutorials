@@ -77,7 +77,7 @@ S: För att bädda in alla teckensnitt i ett PDF-dokument med Aspose.Words för 
 
  Ladda dokumentet du vill bearbeta med hjälp av`Document` klass och dokumentsökvägen.
 
- Konfigurera PDF-sparalternativ genom att skapa en instans av`PdfSaveOptions` klass och ställa in`EmbedFullFonts` egendom till`true`. Detta säkerställer att alla teckensnitt som används i dokumentet kommer att bäddas in i den genererade PDF-filen.
+ Konfigurera PDF-sparalternativ genom att skapa en instans av`PdfSaveOptions` klass och ställa in`EmbedFullFonts`egendom till`true`. Detta säkerställer att alla teckensnitt som används i dokumentet kommer att bäddas in i den genererade PDF-filen.
 
  Spara dokumentet i PDF-format med inbäddade typsnitt med hjälp av`Save` metod för`Document`objekt, som anger namnet på utdatafilen och sparade alternativ som konfigurerats tidigare.
 

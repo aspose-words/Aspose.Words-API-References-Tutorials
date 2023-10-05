@@ -38,7 +38,7 @@ Um Abschnittsumbrüche zu entfernen, durchlaufen wir alle Abschnitte, beginnend 
 // Durchlaufen Sie alle Abschnitte, beginnend mit dem Abschnitt, der dem letzten vorausgeht, und fahren Sie mit dem ersten Abschnitt fort.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-    //Kopieren Sie den Inhalt des aktuellen Abschnitts an den Anfang des letzten Abschnitts.
+    // Kopieren Sie den Inhalt des aktuellen Abschnitts an den Anfang des letzten Abschnitts.
     doc.LastSection.PrependContent(doc.Sections[i]);
     // Entfernen Sie den kopierten Abschnitt.
     doc.Sections[i].Remove();
@@ -65,7 +65,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 // Durchlaufen Sie alle Abschnitte, beginnend mit dem Abschnitt, der dem letzten vorausgeht, und fahren Sie mit dem ersten Abschnitt fort.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-	//Kopieren Sie den Inhalt des aktuellen Abschnitts an den Anfang des letzten Abschnitts.
+	// Kopieren Sie den Inhalt des aktuellen Abschnitts an den Anfang des letzten Abschnitts.
 	doc.LastSection.PrependContent(doc.Sections[i]);
 	// Entfernen Sie den kopierten Abschnitt.
 	doc.Sections[i].Remove();

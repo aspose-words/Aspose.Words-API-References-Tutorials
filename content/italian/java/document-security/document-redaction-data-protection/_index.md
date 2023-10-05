@@ -41,7 +41,7 @@ doc.save("modified.docx");
 
 ## Identificare e oscurare le informazioni sensibili
 
-Per identificare e oscurare informazioni sensibili, utilizzeremo le espressioni regolari per cercare modelli come numeri di previdenza sociale, numeri di carte di credito o nomi personali:
+Per identificare e oscurare informazioni sensibili, utilizzeremo le espressioni regolari per cercare modelli come numeri di previdenza sociale, numeri di carta di credito o nomi personali:
 
 ```java
 // Definire i modelli di redazione
@@ -96,6 +96,6 @@ R: Sì, Aspose.Words per Java può convertire documenti Word in vari formati, co
 
 ### Come posso accedere a più risorse e documentazione per Aspose.Words per Java?
 
- R: Visita la documentazione di Aspose.Words per Java all'indirizzo[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) per risorse e guide complete.
+R: Visita la documentazione di Aspose.Words per Java all'indirizzo[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) per risorse e guide complete.
 
 Migliora la sicurezza dei tuoi documenti e la protezione dei dati con Aspose.Words per Java. Inizia oggi a proteggere le tue informazioni sensibili!

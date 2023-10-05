@@ -79,7 +79,7 @@ A: Um die Textpositionierung in einer PDF-Datei durch Hinzufügen von zusätzlic
  Konfigurieren Sie die Optionen für die Konvertierung als PDF, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und ermöglichen die`AdditionalTextPositioning` Option zur präzisen Aktivierung 
 Positionierung von Zusatztext in der PDF-Datei.
 
- Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document`Klasse, die den Pfad und die Speicheroptionen angibt.
+ Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.
 
 #### F: Welche Vorteile bietet es, die Positionierung von Text in einer PDF-Datei durch das Hinzufügen von zusätzlichem Text zu verbessern?
 A: Die Verbesserung der Textpositionierung in einer PDF-Datei durch das Hinzufügen von zusätzlichem Text bietet folgende Vorteile:

@@ -56,7 +56,7 @@ builder. EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ```
  
-### Aspose.Words for .NET kullanarak Hücre Dolgusunu Ayarla için örnek kaynak kodu 
+### Aspose.Words for .NET kullanarak Hücre Dolgusunu Ayarlama için örnek kaynak kodu 
 
 ```csharp
 	// Belge dizininizin yolu

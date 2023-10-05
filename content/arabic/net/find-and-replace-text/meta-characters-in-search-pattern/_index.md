@@ -62,7 +62,7 @@ doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced 
 
 ## الخطوة 6: حفظ المستند المحرر
 
- وأخيرًا، نقوم بحفظ المستند المعدل في دليل محدد باستخدام الملف`Save` طريقة:
+وأخيرًا، نقوم بحفظ المستند المعدل في دليل محدد باستخدام الملف`Save` طريقة:
 
 ```csharp
 doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
@@ -150,7 +150,7 @@ builder. InsertBreak(BreakType.PageBreak);
 builder.Writeln("This is line 2");
 ```
 
-#### س: كيف يمكن البحث والاستبدال بحرف أولي آخر في مستند باستخدام Aspose.Words لـ .NET؟
+#### س: كيف يمكن البحث والاستبدال بحرف أولي آخر في مستند باستخدام Aspose.Words for .NET؟
 
  ج: سنقوم الآن بإجراء بحث آخر واستبداله باستخدام ملف`&m` حرف أولي لتمثيل فاصل الصفحات. نستبدل العبارة "هذا هو السطر 1&mهذا هو السطر 2" بعبارة "يتم استبدال فاصل الصفحات بنص جديد." :
 

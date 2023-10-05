@@ -51,7 +51,7 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Codice sorgente di esempio per Districare i segnalibri di riga utilizzando Aspose.Words per .NET**
+### Codice sorgente di esempio per Districare i segnalibri di riga utilizzando Aspose.Words per .NET
 
 Ecco il codice sorgente di esempio completo per districare i segnalibri dalle righe utilizzando Aspose.Words per .NET:
 
@@ -76,6 +76,38 @@ Ecco il codice sorgente di esempio completo per districare i segnalibri dalle ri
 
 ```
 
+#### Districare il codice sorgente
+```csharp
+
+private void Untangle(Document doc)
+        {
+            foreach (Bookmark bookmark in doc.Range.Bookmarks)
+            {
+                // Ottieni la riga madre sia del segnalibro che del nodo finale del segnalibro.
+                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
+                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+                // Se entrambe le righe vengono trovate correttamente e l'inizio e la fine del segnalibro sono contenuti in righe adiacenti,
+                // sposta il nodo finale del segnalibro alla fine dell'ultimo paragrafo nell'ultima cella della riga superiore.
+                if (row1 != null && row2 != null && row1.NextSibling == row2)
+                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+            }
+        }
+
+```
+
+#### Codice sorgente EliminaRowByBookmark
+```csharp
+
+ private void DeleteRowByBookmark(Document doc, string bookmarkName)
+        {
+            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+            row?.Remove();
+        }
+
+```
 ## Conclusione
 
 In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzionalità Districa segnalibri di riga di Aspose.Words per .NET. Abbiamo seguito una guida passo passo per districare i segnalibri delle righe ed eliminare una riga specifica senza danneggiare altri segnalibri.
@@ -100,4 +132,4 @@ R: La funzione Districa segnalibri di riga presentata in questo articolo è prog
 
 #### D: Quali altre manipolazioni posso eseguire sui segnalibri di riga una volta sbrogliati?
 
-R: Una volta sbrogliati i segnalibri di linea, puoi eseguire diverse manipolazioni secondo necessità. Ciò può includere la modifica, l'eliminazione o l'aggiunta di contenuto alle righe con segnalibro. Assicurati di maneggiare con cura i segnalibri di riga per evitare qualsiasi impatto indesiderato sul resto del documento.
+R: Una volta sbrogliati i segnalibri di linea, puoi eseguire diverse manipolazioni secondo necessità. Ciò può includere la modifica, l'eliminazione o l'aggiunta di contenuto alle righe con segnalibri. Assicurati di maneggiare con cura i segnalibri di riga per evitare qualsiasi impatto indesiderato sul resto del documento.

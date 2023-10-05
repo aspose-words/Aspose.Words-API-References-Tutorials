@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: imposta le opzioni del formato di importazione
 
- Crea un'istanza di`ImportFormatOptions` classe e impostare il file`IgnoreTextBoxes` proprietà a`false`. Ciò garantisce che le caselle di testo vengano incluse durante il processo di aggiunta preservandone la formattazione.
+ Crea un'istanza di`ImportFormatOptions` classe e impostare il file`IgnoreTextBoxes`proprietà a`false`. Ciò garantisce che le caselle di testo vengano incluse durante il processo di aggiunta preservandone la formattazione.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };

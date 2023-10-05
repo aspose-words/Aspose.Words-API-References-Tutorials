@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Étape 2 : Ajouter un style pour le code indenté
 
-Nous ajouterons un style personnalisé pour le code indenté en utilisant le`Styles.Add` méthode du`Document` objet. Dans cet exemple, nous créons un style appelé « IndentedCode » pour le code indenté.
+ Nous ajouterons un style personnalisé pour le code indenté en utilisant le`Styles.Add` méthode du`Document` objet. Dans cet exemple, nous créons un style appelé « IndentedCode » pour le code indenté.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

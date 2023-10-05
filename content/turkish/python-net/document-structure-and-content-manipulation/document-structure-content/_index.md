@@ -38,7 +38,7 @@ new_doc = Document()
 
 ## Belge Yapısını Değiştirme
 
-Aspose.Words belgenizin yapısını zahmetsizce değiştirmenize olanak sağlar. Bölümler, paragraflar, üstbilgiler, altbilgiler ve daha fazlasını ekleyebilirsiniz:
+Aspose.Words belgenizin yapısını zahmetsizce değiştirmenize olanak tanır. Bölümler, paragraflar, üstbilgiler, altbilgiler ve daha fazlasını ekleyebilirsiniz:
 
 ```python
 from aspose.words import Section, Paragraph

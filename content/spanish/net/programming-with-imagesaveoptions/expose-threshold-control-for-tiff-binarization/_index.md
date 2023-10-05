@@ -44,7 +44,7 @@ ThresholdForFloydSteinbergDithering = 254
 doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
 ```
 
-En este último paso guardamos las imágenes del documento en formato TIFF usando el`Save` método y pasando la ruta al archivo de salida, junto con las opciones de guardado especificadas.
+ En este último paso guardamos las imágenes del documento en formato TIFF usando el`Save` método y pasando la ruta al archivo de salida, junto con las opciones de guardado especificadas.
 
 Ahora puede ejecutar el código fuente para convertir su documento al formato TIFF mientras controla el umbral de binarización con las opciones especificadas. El archivo resultante se guardará en el directorio especificado con el nombre "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff".
 

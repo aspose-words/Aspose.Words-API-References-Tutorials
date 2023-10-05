@@ -8,7 +8,7 @@ weight: 13
 url: /zh/java/document-splitting/extracting-document-content-pages/
 ---
 
-您准备好开始掌握使用 Aspose.Words for Java 按页面提取文档内容的艺术了吗？您来对地方了！在这份综合指南中，我们将深入研究 Aspose.Words for Java 的复杂性，提供分步说明和源代码示例，以帮助您释放这个强大的 Java API 的全部潜力。
+您准备好开始掌握使用 Aspose.Words for Java 按页面提取文档内容的艺术了吗？您来对地方了！在这份综合指南中，我们将深入研究 Aspose.Words for Java 的复杂性，提供分步说明和源代码示例，帮助您释放这个强大的 Java API 的全部潜力。
 
 ## 介绍
 
@@ -70,7 +70,7 @@ String extractedText = visitor.getText();
 
 ## 按页面提取内容
 
-### 什么是文档页？
+### 什么是文档页面？
 
 在Aspose.Words中，文档可以分为多个页面。每个页面代表文档内容的一部分。但是我们如何以编程方式访问这些页面呢？
 

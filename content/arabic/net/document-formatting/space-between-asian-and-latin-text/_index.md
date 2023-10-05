@@ -2,7 +2,7 @@
 title: المسافة بين النص الآسيوي واللاتيني في مستند Word
 linktitle: المسافة بين النص الآسيوي واللاتيني في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي والنص اللاتيني في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي والنص اللاتيني في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/document-formatting/space-between-asian-and-latin-text/

@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Hur kommer jag åt den reviderade versionen av ett dokument i Aspose.Words för .NET?
 
- A: Använd`RevisionsView` egendom av`Document` objekt för att komma åt den reviderade versionen av dokumentet. Du kan ställa in värdet på`RevisionsView` egendom till`RevisionsView.Final` för att visa den slutliga versionen utan ändringarna.
+ A: Använd`RevisionsView` egendom av`Document` objekt för att komma åt den reviderade versionen av dokumentet. Du kan ställa in värdet på`RevisionsView`egendom till`RevisionsView.Final` för att visa den slutliga versionen utan ändringarna.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;

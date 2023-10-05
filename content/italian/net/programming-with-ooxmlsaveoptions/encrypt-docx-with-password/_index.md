@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-In questo passaggio, configuriamo le opzioni di salvataggio OOXML creandone un nuovo`OoxmlSaveOptions` oggetto. Specifichiamo la password desiderata per crittografare il documento impostando il file`Password` proprietà alla tua password personalizzata.
+ In questo passaggio, configuriamo le opzioni di salvataggio OOXML creandone un nuovo`OoxmlSaveOptions` oggetto. Specifichiamo la password desiderata per crittografare il documento impostando il file`Password` proprietà alla tua password personalizzata.
 
 ## Passaggio 4: crittografia del documento con password
 

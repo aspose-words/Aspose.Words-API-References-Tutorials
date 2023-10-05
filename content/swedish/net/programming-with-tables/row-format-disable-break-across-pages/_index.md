@@ -39,7 +39,7 @@ foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- Här använder vi dokumentet för att hämta den första tabellen och itererar sedan igenom alla rader i tabellen med hjälp av en foreach loop. Inne i slingan inaktiverar vi radbrytning för varje rad genom att ställa in`RowFormat.AllowBreakAcrossPages` egendom till`false`.
+ Här använder vi dokumentet för att hämta den första tabellen och itererar sedan igenom alla rader i tabellen med hjälp av en foreach loop. Inne i slingan inaktiverar vi radbrytning för varje rad genom att ställa in`RowFormat.AllowBreakAcrossPages`egendom till`false`.
 
 ## Steg 4: Spara det ändrade dokumentet
 Slutligen måste vi spara det ändrade dokumentet med tabellradbrytningen inaktiverad. Använd följande kod:

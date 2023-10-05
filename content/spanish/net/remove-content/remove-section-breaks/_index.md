@@ -38,7 +38,7 @@ Para eliminar saltos de sección, recorreremos todas las secciones comenzando de
 // Recorra todas las secciones comenzando desde la sección que precede a la última y pasando a la primera sección.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-    //Copie el contenido de la sección actual al principio de la última sección.
+    // Copie el contenido de la sección actual al principio de la última sección.
     doc.LastSection.PrependContent(doc.Sections[i]);
     // Elimina la sección copiada.
     doc.Sections[i].Remove();
@@ -65,7 +65,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 // Recorra todas las secciones comenzando desde la sección que precede a la última y pasando a la primera sección.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-	//Copie el contenido de la sección actual al principio de la última sección.
+	// Copie el contenido de la sección actual al principio de la última sección.
 	doc.LastSection.PrependContent(doc.Sections[i]);
 	// Elimina la sección copiada.
 	doc.Sections[i].Remove();

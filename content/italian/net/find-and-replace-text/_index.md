@@ -1,5 +1,5 @@
 ---
-title: Documento Word trova e sostituisci testo
+title: Documento Word: trova e sostituisci testo
 linktitle: Trova e sostituisci testo
 second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come trovare e sostituire il testo nei documenti di Word utilizzando Aspose.Words per .NET. I tutorial mostrano come eseguire ricerche di testo precise, comprese le opzioni di ricerca avanzata.

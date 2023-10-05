@@ -54,7 +54,7 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 غالبًا ما تحتوي الرؤوس والتذييلات على معلومات مهمة. اكتشف كيفية إدارة الرؤوس والتذييلات وتخصيصها في مستنداتك.
 
 ```java
-//أضف رأسًا إلى الصفحة الأولى
+// أضف رأسًا إلى الصفحة الأولى
 Document doc = new Document();
 Section section = doc.getSections().get(0);
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
@@ -181,7 +181,7 @@ doc1.compare(doc2, "comparison_result.docx");
 
 ### كيف أضبط حجم الصفحة على A4؟
 
- لتعيين حجم الصفحة على A4، يمكنك استخدام`PageSetup`الفئة وحدد حجم الورق كما يلي:
+ لتعيين حجم الصفحة على A4، يمكنك استخدام`PageSetup` فئة وحدد حجم الورق على النحو التالي:
 
 ```java
 Document doc = new Document();

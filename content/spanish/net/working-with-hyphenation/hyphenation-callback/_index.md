@@ -14,7 +14,7 @@ En este tutorial paso a paso, le mostraremos cómo utilizar la función de devol
 
 ## Paso 1: guardar el recordatorio de separación de palabras
 
-Primero, registraremos la devolución de llamada de separación de palabras usando un archivo personalizado.`CustomHyphenationCallback` clase. Esto nos permitirá manejar la separación de palabras según nuestras propias reglas:
+ Primero, registraremos la devolución de llamada de separación de palabras usando un archivo personalizado.`CustomHyphenationCallback` clase. Esto nos permitirá manejar la separación de palabras según nuestras propias reglas:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
@@ -105,4 +105,4 @@ R: Usar un refuerzo de silabización puede resultar útil en varios escenarios, 
 
 #### P: ¿Cómo puedo probar la silabización personalizada con un recordatorio de silabización en Aspose.Words?
 
-R: Para probar la silabización personalizada con un recordatorio de silabización en Aspose.Words, puede crear un documento de prueba que contenga palabras a las que desee aplicar reglas de silabización personalizadas. Luego puede configurar su devolución de llamada de silabización personalizada, llame al`Document.Range.Replace()` método para reemplazar las palabras en el documento y utilizar el`Hyphenate()` método de la`Hyphenation` clase para obtener la silabización de las palabras. Luego puede formatear las palabras con sílabas según sea necesario, por ejemplo agregando guiones entre sílabas.
+ R: Para probar la silabización personalizada con un recordatorio de silabización en Aspose.Words, puede crear un documento de prueba que contenga palabras a las que desee aplicar reglas de silabización personalizadas. Luego puede configurar su devolución de llamada de silabización personalizada, llame al`Document.Range.Replace()` método para reemplazar las palabras en el documento y utilizar el`Hyphenate()` método de la`Hyphenation` clase para obtener la silabización de las palabras. Luego puede formatear las palabras con sílabas según sea necesario, por ejemplo agregando guiones entre sílabas.

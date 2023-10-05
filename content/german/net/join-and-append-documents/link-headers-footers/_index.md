@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Legen Sie fest, dass das angehängte Dokument auf einer neuen Seite angezeigt wird
 
-Um sicherzustellen, dass der Inhalt des Quelldokuments auf einer neuen Seite im Zieldokument angezeigt wird, müssen Sie Folgendes festlegen`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.NewPage`.
+ Um sicherzustellen, dass der Inhalt des Quelldokuments auf einer neuen Seite im Zieldokument angezeigt wird, müssen Sie Folgendes festlegen`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Schritt 4: Kopf- und Fußzeilen mit dem vorherigen Abschnitt verknüpfen
 
- Um die Kopf- und Fußzeilen des Quelldokuments mit dem vorherigen Abschnitt im Zieldokument zu verknüpfen, können Sie die verwenden`LinkToPrevious` Methode der`HeadersFooters` Sammlung. Im Vorbeigehen`true` Als Parameter überschreiben Sie alle vorhandenen Kopf- und Fußzeilen im Quelldokument.
+Um die Kopf- und Fußzeilen des Quelldokuments mit dem vorherigen Abschnitt im Zieldokument zu verknüpfen, können Sie die verwenden`LinkToPrevious` Methode der`HeadersFooters` Sammlung. Im Vorbeigehen`true` Als Parameter überschreiben Sie alle vorhandenen Kopf- und Fußzeilen im Quelldokument.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

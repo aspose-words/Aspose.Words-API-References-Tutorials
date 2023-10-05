@@ -45,7 +45,7 @@ builder.InsertHyphenation();
 
 ## Steg 4: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
@@ -71,7 +71,7 @@ Använd gärna den här koden i dina egna projekt och modifiera den för att pas
 
 #### F: Hur kan jag syllabisera ett ord på ett specifikt språk med Aspose.Words?
 
- S: För att syllabisera ett ord på ett specifikt språk med Aspose.Words kan du använda`Hyphenation` klass och`Hyphenate()` metod. Skapa en instans av`Hyphenation` klass som anger det önskade språket, anropa sedan`Hyphenate()` metod som skickar ordet till stavning som ett argument. Detta ger dig stavelserna i ordet på det angivna språket.
+ S: För att syllabisera ett ord på ett specifikt språk med Aspose.Words kan du använda`Hyphenation` klass och`Hyphenate()` metod. Skapa en instans av`Hyphenation` klass som anger det önskade språket, anropa sedan`Hyphenate()`metod som skickar ordet till stavning som ett argument. Detta ger dig stavelserna i ordet på det angivna språket.
 
 #### F: Vilka språkkoder ska jag använda för att specificera stavningsspråket i Aspose.Words?
 

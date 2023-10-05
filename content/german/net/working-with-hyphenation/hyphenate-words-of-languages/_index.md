@@ -71,7 +71,7 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre s
 
 #### F: Wie kann ich mit Aspose.Words ein Wort in einer bestimmten Sprache in Silben umwandeln?
 
- A: Um ein Wort in einer bestimmten Sprache mit Aspose.Words in Silben umzuwandeln, können Sie das verwenden`Hyphenation` Klasse und die`Hyphenate()` Methode. Erstellen Sie eine Instanz von`Hyphenation` Klasse, die die gewünschte Sprache angibt, und rufen Sie dann die auf`Hyphenate()` Methode, die das zu syllabisierende Wort als Argument übergibt. Dadurch erhalten Sie die Silben des Wortes in der angegebenen Sprache.
+ A: Um ein Wort in einer bestimmten Sprache mit Aspose.Words in Silben umzuwandeln, können Sie das verwenden`Hyphenation` Klasse und die`Hyphenate()` Methode. Erstellen Sie eine Instanz von`Hyphenation` Klasse, die die gewünschte Sprache angibt, und rufen Sie dann die auf`Hyphenate()`Methode, die das zu syllabisierende Wort als Argument übergibt. Dadurch erhalten Sie die Silben des Wortes in der angegebenen Sprache.
 
 #### F: Welche Sprachcodes sollte ich verwenden, um die Silbensprache in Aspose.Words anzugeben?
 

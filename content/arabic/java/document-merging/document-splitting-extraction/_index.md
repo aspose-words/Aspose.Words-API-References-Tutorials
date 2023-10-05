@@ -98,7 +98,7 @@ String extractedText = doc.getText();
 
 ### هل يمكنني تقسيم مستند حسب معايير مخصصة؟
 
-نعم، يمكنك تحديد معايير مخصصة لتقسيم مستند باستخدام Aspose.Words for Java. ببساطة قم بإنشاء العرف الخاص بك`DocumentSplitCriteria` تطبيق.
+ نعم، يمكنك تحديد معايير مخصصة لتقسيم مستند باستخدام Aspose.Words for Java. ببساطة قم بإنشاء العرف الخاص بك`DocumentSplitCriteria` تطبيق.
 
 ### ما هي تنسيقات الملفات التي يدعمها Aspose.Words for Java؟
 

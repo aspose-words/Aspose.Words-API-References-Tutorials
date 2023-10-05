@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : Définir le document source pour redémarrer la numérotation des pages
 
- Pour relancer la numérotation des pages dans le document source, vous devez définir le`SectionStart` propriété de la première section du document source à`SectionStart.NewPage` et réglez le`RestartPageNumbering` propriété à`true`.
+ Pour relancer la numérotation des pages dans le document source, vous devez définir le`SectionStart` propriété de la première section du document source à`SectionStart.NewPage` et réglez le`RestartPageNumbering`propriété à`true`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

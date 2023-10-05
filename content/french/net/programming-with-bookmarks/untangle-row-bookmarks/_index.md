@@ -51,7 +51,7 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Exemple de code source pour les signets de ligne Untangle à l'aide d'Aspose.Words pour .NET**
+### Exemple de code source pour les signets de ligne Untangle à l'aide d'Aspose.Words pour .NET
 
 Voici l’exemple complet de code source pour démêler les signets des lignes à l’aide d’Aspose.Words for .NET :
 
@@ -76,6 +76,38 @@ Voici l’exemple complet de code source pour démêler les signets des lignes �
 
 ```
 
+#### Démêler le code source
+```csharp
+
+private void Untangle(Document doc)
+        {
+            foreach (Bookmark bookmark in doc.Range.Bookmarks)
+            {
+                // Obtenez la ligne parent du signet et du nœud de fin du signet.
+                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
+                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+                // Si les deux lignes sont correctes et que le début et la fin du signet sont contenus dans des lignes adjacentes,
+                // déplacez le nœud de fin du signet à la fin du dernier paragraphe de la dernière cellule de la ligne supérieure.
+                if (row1 != null && row2 != null && row1.NextSibling == row2)
+                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+            }
+        }
+
+```
+
+#### Code source de SupprimerRowByBookmark
+```csharp
+
+ private void DeleteRowByBookmark(Document doc, string bookmarkName)
+        {
+            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+            row?.Remove();
+        }
+
+```
 ## Conclusion
 
 Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonctionnalité Untangle Row Bookmarks d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour démêler les signets de ligne et supprimer une ligne spécifique sans endommager les autres signets.
@@ -88,11 +120,11 @@ R : Oui, la fonctionnalité Démêler les signets de lignes est spécialement co
 
 #### Q : La fonction Déchiffrer les signets de ligne modifie-t-elle le contenu du document original ?
 
-: Oui, la fonction Déchiffrer les signets de ligne modifie le document original en déplaçant les extrémités des signets de ligne pour les placer sur la même ligne que les débuts des signets. Assurez-vous d'enregistrer une copie de sauvegarde du document avant d'appliquer cette fonctionnalité.
+R : Oui, la fonction Déchiffrer les signets de ligne modifie le document original en déplaçant les extrémités des signets de ligne pour les placer sur la même ligne que les débuts des signets. Assurez-vous d'enregistrer une copie de sauvegarde du document avant d'appliquer cette fonctionnalité.
 
 #### Q : Comment puis-je identifier les signets de ligne dans mon document Word ?
 
-R : Les signets de ligne sont généralement utilisés dans les tableaux pour marquer des sections spécifiques. Vous pouvez identifier les signets de lignes en parcourant les signets dans le document et en vérifiant si les signets se trouvent dans les lignes du tableau.
+R : Les signets de lignes sont généralement utilisés dans les tableaux pour marquer des sections spécifiques. Vous pouvez identifier les signets de lignes en parcourant les signets dans le document et en vérifiant si les signets se trouvent dans les lignes du tableau.
 
 #### Q : Est-il possible de démêler les signets de lignes dans les tableaux non adjacents ?
 
@@ -100,4 +132,4 @@ R : La fonction Démêler les signets de lignes présentée dans cet article est
 
 #### Q : Quelles autres manipulations puis-je effectuer sur les signets de lignes une fois qu'ils ont été démêlés ?
 
-: Une fois les marque-pages défaits, vous pouvez effectuer différentes manipulations selon vos besoins. Cela peut inclure la modification, la suppression ou l’ajout de contenu aux lignes mises en signet. Assurez-vous de manipuler les signets de ligne avec soin pour éviter tout impact indésirable sur le reste du document.
+R : Une fois les marque-pages défaits, vous pouvez effectuer différentes manipulations selon vos besoins. Cela peut inclure la modification, la suppression ou l’ajout de contenu aux lignes mises en signet. Assurez-vous de manipuler les signets de ligne avec soin pour éviter tout impact indésirable sur le reste du document.

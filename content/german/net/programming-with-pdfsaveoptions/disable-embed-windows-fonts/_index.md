@@ -74,7 +74,7 @@ A: Um das Einbetten von Windows-Schriftarten in ein PDF-Dokument mit Aspose.Word
 
  Laden Sie das Dokument, das Sie in PDF konvertieren möchten, mit`Document` Klasse und Dokumentpfad.
 
- Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`FontEmbeddingMode` Eigentum zu`PdfFontEmbeddingMode.EmbedNone`. Dadurch wird die Einbettung von Windows-Schriftarten in die generierte PDF-Datei deaktiviert.
+ Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`FontEmbeddingMode`Eigentum zu`PdfFontEmbeddingMode.EmbedNone`. Dadurch wird die Einbettung von Windows-Schriftarten in die generierte PDF-Datei deaktiviert.
 
  Benutzen Sie die`Save` Methode der`Document` Objekt zum Konvertieren des Dokuments in PDF unter Angabe der zuvor konfigurierten Konvertierungsoptionen.
 

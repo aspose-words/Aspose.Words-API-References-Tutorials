@@ -97,7 +97,7 @@ builder.ListFormat.RemoveNumbers();
 // Para reutilizar la primera lista, debemos reiniciar la numeración creando una copia del formato de la lista original.
 List list2 = doc.Lists.AddCopy(list1);
 
-//Podemos modificar la nueva lista de cualquier forma, incluso estableciendo un nuevo número de inicio.
+// Podemos modificar la nueva lista de cualquier forma, incluso estableciendo un nuevo número de inicio.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -122,7 +122,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### P: ¿Cómo puedo especificar un valor de numeración específico a partir del cual se debe reiniciar la lista?
 
- R: Para especificar un valor numérico específico a partir del cual se debe reiniciar la lista, puede usar el`ListRestartAtNumber`método que pasa el valor deseado como argumento. Por ejemplo, para reiniciar la numeración desde 5, puede utilizar`list.ListRestartAtNumber(5)`.
+R: Para especificar un valor numérico específico a partir del cual se debe reiniciar la lista, puede usar el`ListRestartAtNumber` método que pasa el valor deseado como argumento. Por ejemplo, para reiniciar la numeración desde 5, puede utilizar`list.ListRestartAtNumber(5)`.
 
 #### P: ¿Es posible reiniciar la numeración de listas de varios niveles en Aspose.Words?
 

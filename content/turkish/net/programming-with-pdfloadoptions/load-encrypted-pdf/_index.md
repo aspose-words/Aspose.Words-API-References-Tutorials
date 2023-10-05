@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions
 
 Bakım
 
- Ancak şifrelenmiş PDF belgesini bir parolayla yüklemek istiyorsanız,`PdfLoadOptions` belgeyi yüklerken sınıfı seçin ve şifreyi belirtin:
+Ancak şifrelenmiş PDF belgesini bir parolayla yüklemek istiyorsanız,`PdfLoadOptions` belgeyi yüklerken sınıfı seçin ve şifreyi belirtin:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadFormat = LoadFormat.Pdf };

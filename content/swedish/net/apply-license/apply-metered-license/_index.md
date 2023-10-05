@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/apply-license/apply-metered-license/
 ---
 
-I den här omfattande handledningen kommer du att lära dig hur du tillämpar en mätlicens med Aspose.Words för .NET. Vi guidar dig genom processen med detaljerade steg-för-steg-instruktioner och tillhandahåller nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna tillämpa en uppmätt licens och utnyttja de avancerade funktionerna i Aspose.Words för dina dokumentbehandlingsbehov.
+den här omfattande handledningen kommer du att lära dig hur du tillämpar en mätlicens med Aspose.Words för .NET. Vi guidar dig genom processen med detaljerade steg-för-steg-instruktioner och tillhandahåller nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna tillämpa en uppmätt licens och utnyttja de avancerade funktionerna i Aspose.Words för dina dokumentbehandlingsbehov.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /ar/net/programming-with-loadoptions/skip-pdf-images/
 ---
-عند معالجة الكلمات باستخدام مستندات PDF في تطبيق C#، قد يكون من الضروري تخطي تحميل صور PDF لأسباب تتعلق بالأداء أو إدارة مساحة التخزين. باستخدام مكتبة Aspose.Words لـ .NET، يمكنك بسهولة تخطي تحميل صور PDF باستخدام خيارات التحميل PdfLoadOptions. في هذا الدليل التفصيلي، سنرشدك إلى كيفية استخدام كود المصدر Aspose.Words for .NET C# لتحميل مستند PDF عن طريق تخطي تحميل صور PDF باستخدام خيارات التحميل PdfLoadOptions.
+عند معالجة الكلمات باستخدام مستندات PDF في تطبيق C#، قد يكون من الضروري تخطي تحميل صور PDF لأسباب تتعلق بالأداء أو إدارة مساحة التخزين. باستخدام مكتبة Aspose.Words لـ .NET، يمكنك بسهولة تخطي تحميل صور PDF باستخدام خيارات التحميل PdfLoadOptions. في هذا الدليل خطوة بخطوة، سنرشدك إلى كيفية استخدام كود المصدر Aspose.Words for .NET C# لتحميل مستند PDF عن طريق تخطي تحميل صور PDF باستخدام خيارات التحميل PdfLoadOptions.
 
 ## فهم مكتبة Aspose.Words
 
@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 #### س: كيف يمكنني تخطي تحميل صور PDF في Aspose.Words لـ .NET؟
 
- ج: يمكنك تخطي تحميل صور PDF باستخدام`PdfLoadOptions`فئة مقدمة من Aspose.Words لـ .NET. ببساطة قم بتعيين`SkipPdfImages` الملكية ل`true` عند تكوين خيارات التحميل لمستند PDF الخاص بك.
+ ج: يمكنك تخطي تحميل صور PDF باستخدام`PdfLoadOptions`فئة مقدمة من Aspose.Words لـ .NET. ببساطة قم بتعيين`SkipPdfImages`الملكية ل`true` عند تكوين خيارات التحميل لمستند PDF الخاص بك.
 
 #### س: هل لا يزال بإمكاني الوصول إلى صور PDF التي تم تخطيها بعد تحميل المستند؟
 

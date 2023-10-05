@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInforma
 
 ## Schritt 3: Persönliche Daten löschen
 
- Jetzt aktivieren wir das Entfernen personenbezogener Daten, indem wir das festlegen`RemovePersonalInformation` Eigentum zu`true`. Verwenden Sie den folgenden Code:
+ Jetzt aktivieren wir das Entfernen personenbezogener Daten, indem wir das festlegen`RemovePersonalInformation`Eigentum zu`true`. Verwenden Sie den folgenden Code:
 
 ```csharp
 doc.RemovePersonalInformation = true;
@@ -60,4 +60,4 @@ Dieser Code speichert das Dokument mit den entfernten persönlichen Informatione
 
  Stellen Sie sicher, dass Sie den richtigen Dokumentpfad angeben`dataDir` Variable.
 
-Sie haben jetzt erfahren, wie Sie mit Aspose.Words für .NET persönliche Informationen aus einem Dokument entfernen. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie vertrauliche Informationen ganz einfach aus Ihren eigenen Dokumenten entfernen.
+Sie haben jetzt gelernt, wie Sie mit Aspose.Words für .NET persönliche Informationen aus einem Dokument entfernen. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie vertrauliche Informationen ganz einfach aus Ihren eigenen Dokumenten entfernen.

@@ -42,7 +42,7 @@ doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forw
 
 ## Passaggio 4: salvataggio del documento modificato
 
- Infine, salviamo il documento modificato in una directory specificata utilizzando il file`Save` metodo:
+Infine, salviamo il documento modificato in una directory specificata utilizzando il file`Save` metodo:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");

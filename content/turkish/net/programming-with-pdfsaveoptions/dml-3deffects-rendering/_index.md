@@ -72,7 +72,7 @@ C: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin oluş
 
  Bir örneğini oluşturun`Document` Word belgesinin yolunu belirten sınıf.
 
- Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`Dml3DEffectsRenderingMode` mülkiyet`Dml3DEffectsRenderingMode.Advanced` 3D DML efektlerinin gelişmiş şekilde oluşturulmasını etkinleştirmek için.
+ Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`Dml3DEffectsRenderingMode`mülkiyet`Dml3DEffectsRenderingMode.Advanced` 3D DML efektlerinin gelişmiş şekilde oluşturulmasını etkinleştirmek için.
 
  Kullan`Save` yöntemi`Document`Kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için sınıf.
 

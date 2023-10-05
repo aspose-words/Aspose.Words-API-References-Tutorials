@@ -43,7 +43,7 @@ table.LastRow.LastCell.Range.Replace("50", "20", new FindReplaceOptions(FindRepl
 
 ## Шаг 4. Сохраните отредактированный документ.
 
- Наконец, мы сохраняем измененный документ в указанном каталоге, используя команду`Save` метод:
+Наконец, мы сохраняем измененный документ в указанном каталоге, используя команду`Save` метод:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInTable.docx");

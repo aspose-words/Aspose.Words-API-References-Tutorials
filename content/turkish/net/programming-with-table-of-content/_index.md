@@ -9,7 +9,7 @@ url: /tr/net/programming-with-table-of-content/
 ---
 Aspose.Words for .NET içindekiler tablosuyla birlikte Kelime İşleme eğitimleri, Word belgelerinizdeki içindekiler tablolarını değiştirme ve özelleştirme adımlarında size yol gösterir. Belgelerinizin içeriğini etkili bir şekilde düzenlemek için içindekiler tablolarını nasıl oluşturacağınızı, güncelleyeceğinizi ve özelleştireceğinizi öğreneceksiniz.
 
-Bu eğitimler, adım adım kod örnekleri ve içindekiler tablolarıyla çalışmak için Aspose.Words for .NET özelliklerinin nasıl kullanılacağına dair net açıklamalar sağlar. Başlık düzeylerini nasıl ekleyeceğinizi, biçimlendirme stillerini nasıl belirleyeceğinizi, içindekiler tablosunun görünümünü ve davranışını nasıl özelleştireceğinizi ve otomatik güncellemeleri nasıl yöneteceğinizi öğreneceksiniz.
+Bu eğitimlerde, adım adım kod örnekleri ve içindekiler tablolarıyla çalışmak için Aspose.Words for .NET özelliklerinin nasıl kullanılacağına ilişkin net açıklamalar yer alıyor. Başlık düzeylerini nasıl ekleyeceğinizi, biçimlendirme stillerini nasıl belirleyeceğinizi, içindekiler tablosunun görünümünü ve davranışını nasıl özelleştireceğinizi ve otomatik güncellemeleri nasıl yöneteceğinizi öğreneceksiniz.
 
 İster yeni başlayan ister deneyimli bir geliştirici olun, bu eğitimler Aspose.Words for .NET'i kullanarak Word belgelerinizdeki profesyonel içindekiler tablolarını oluşturmak ve sürdürmek için ileri düzey tekniklerde uzmanlaşmanıza yardımcı olacaktır. Bu kapsamlı ve bilgilendirici eğitimlerle belgelerinizin düzenini iyileştirin ve kullanıcılarınız için gezinmeyi kolaylaştırın.
 

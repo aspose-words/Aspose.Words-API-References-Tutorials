@@ -48,7 +48,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Steg 5: Infoga källdokumentet
 
- Använd`InsertDocument` metod för`DocumentBuilder`klass för att infoga källdokumentet i måldokumentet. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting` för att bevara källformateringen.
+ Använd`InsertDocument` metod för`DocumentBuilder` klass för att infoga källdokumentet i måldokumentet. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting` för att bevara källformateringen.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

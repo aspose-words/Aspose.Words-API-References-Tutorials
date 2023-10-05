@@ -63,7 +63,7 @@ R : Pour cloner un document Word à l'aide d'Aspose.Words pour .NET, procédez 
 
 #### Q : Puis-je modifier le document cloné sans affecter le document original ?
 
-R : Oui, le document cloné est une instance distincte de l'original et les modifications apportées au clone n'affecteront pas le document original. Cela vous permet de manipuler en toute sécurité le document cloné sans altérer le document source.
+R : Oui, le document cloné est une instance distincte de l'original et les modifications apportées au clone n'affecteront pas le document original. Cela vous permet de manipuler en toute sécurité le document cloné sans altérer le document source.
 
 #### Q : Est-il possible de cloner plusieurs documents et de les combiner en un seul document ?
 

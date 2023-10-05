@@ -50,7 +50,7 @@ url: /ar/java/document-security/keep-documents-safe-secure/
 يعد تثبيت Aspose.Words لـ Java عملية مباشرة. اتبع هذه الخطوات البسيطة لإضافة المكتبة إلى مشروع Java الخاص بك:
 
 1. ### تحميل:
- اذهب الى[Aspose.Releases](https://releases.aspose.com/words/java/) وقم بتنزيل حزمة Aspose.Words for Java.
+  اذهب الى[Aspose.Releases](https://releases.aspose.com/words/java/) وقم بتنزيل حزمة Aspose.Words for Java.
 
 2. ### يستخرج:
  قم باستخراج الحزمة التي تم تنزيلها إلى مكان مناسب على جهاز الكمبيوتر الخاص بك.
@@ -84,7 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 الآن وبعد أن قمنا بتحميل المستند، فلنتابع تطبيق التشفير عليه. يوفر Aspose.Words for Java طريقة مباشرة لتعيين تشفير المستندات:
 
 ```java
-//قم بتعيين كلمة مرور لفتح المستند
+// قم بتعيين كلمة مرور لفتح المستند
 doc.getWriteProtection().setPassword("yourPassword");
 
 // ضبط خوارزمية التشفير (اختياري)
@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 يمكن أن تساعد العلامة المائية في حماية سرية مستندك والإشارة إلى حالته. يوفر Aspose.Words for Java ميزات سهلة الاستخدام لوضع العلامات المائية:
 
 ```java
-//أضف علامة مائية مرئية
+// أضف علامة مائية مرئية
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);

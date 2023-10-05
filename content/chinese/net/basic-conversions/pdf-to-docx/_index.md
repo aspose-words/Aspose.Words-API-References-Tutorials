@@ -53,7 +53,7 @@ doc.Save(dataDir + "BaseConversions.PdfToDocx.docx");
 
 #### 转换时如何保留格式？
 
-转换过程中是否保留格式取决于您使用的工具或库。 Aspose.Words for .NET 提供了高级功能，可在转换后的 Word 文档中保留 PDF 文件的格式、样式和元素。选择一个能够处理 PDF 复杂性并保留所需格式的工具非常重要。
+转换过程中是否保留格式取决于您使用的工具或库。 Aspose.Words for .NET 提供了高级功能，可以在转换后的 Word 文档中保留 PDF 文件的格式、样式和元素。选择一个能够处理 PDF 复杂性并保留所需格式的工具非常重要。
 
 #### 转换过程有哪些限制？
 

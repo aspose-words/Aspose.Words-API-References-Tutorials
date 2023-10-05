@@ -79,7 +79,7 @@ for row in table.rows:
 
 ## Insertar imágenes y formas
 
-Los elementos visuales como imágenes y formas pueden mejorar la presentación de nuestros documentos.
+Elementos visuales como imágenes y formas pueden mejorar la presentación de nuestros documentos.
 
 ```python
 # Add an image to the document

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Steg 2: Ladda dokumentet
- Ladda Word-dokumentet som innehåller Smart Art-ritningen med hjälp av`Document` klass konstruktör.
+Ladda Word-dokumentet som innehåller Smart Art-ritningen med hjälp av`Document` klass konstruktör.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");

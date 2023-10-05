@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: impostare il documento di origine su Riavvia numerazione delle pagine
 
- Per riavviare la numerazione delle pagine nel documento di origine, è necessario impostare il file`SectionStart` proprietà della prima sezione nel documento di origine a`SectionStart.NewPage` e impostare il`RestartPageNumbering` proprietà a`true`.
+ Per riavviare la numerazione delle pagine nel documento di origine, è necessario impostare il file`SectionStart` proprietà della prima sezione nel documento di origine a`SectionStart.NewPage` e impostare il`RestartPageNumbering`proprietà a`true`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

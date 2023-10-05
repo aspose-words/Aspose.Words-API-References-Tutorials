@@ -98,7 +98,7 @@ Aspose.Words for Java, belgelerdeki içeriği kolaylıkla bölmenize ve çıkarm
 
 ### Bir belgeyi özel ölçütlere göre bölebilir miyim?
 
-Evet, Aspose.Words for Java'yı kullanarak bir belgeyi bölmek için özel kriterler tanımlayabilirsiniz. Basitçe özelinizi yaratın`DocumentSplitCriteria` uygulama.
+ Evet, Aspose.Words for Java'yı kullanarak bir belgeyi bölmek için özel kriterler tanımlayabilirsiniz. Basitçe özelinizi yaratın`DocumentSplitCriteria` uygulama.
 
 ### Aspose.Words for Java hangi dosya formatlarını destekliyor?
 

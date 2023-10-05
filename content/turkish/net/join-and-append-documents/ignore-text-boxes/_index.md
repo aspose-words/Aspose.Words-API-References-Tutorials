@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: İçe aktarma biçimi seçeneklerini ayarlayın
 
- Bir örneğini oluşturun`ImportFormatOptions` sınıfı seçin ve ayarlayın`IgnoreTextBoxes` mülkiyet`false`. Bu, metin kutularının biçimlendirmeleri korunarak ekleme işlemine dahil edilmesini sağlar.
+ Bir örneğini oluşturun`ImportFormatOptions` sınıfı seçin ve ayarlayın`IgnoreTextBoxes`mülkiyet`false`. Bu, metin kutularının biçimlendirmeleri korunarak ekleme işlemine dahil edilmesini sağlar.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };

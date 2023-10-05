@@ -66,11 +66,11 @@ Tebrikler! Artık uyarı kaynağını Aspose.Words for .NET ile nasıl kullanaca
 
 #### S: "Uyarı" etiketinin görünümünü özelleştirebilir miyiz?
 
-C: "Uyarı" etiketinin formatı, kullanılan Markdown oluşturucuya bağlıdır. Çoğu durumda, görünümü hedeflemek için CSS kullanarak özelleştirebilirsiniz.`blockquote` belgenizde etiketleyin.
+ C: "Uyarı" etiketinin formatı, kullanılan Markdown oluşturucuya bağlıdır. Çoğu durumda, görünümü hedeflemek için CSS kullanarak özelleştirebilirsiniz.`blockquote` belgenizde etiketleyin.
 
-#### S: "Uyarı" etiketine simge eklemek mümkün müdür?
+#### S: "Uyarı" etiketine simge eklemek mümkün mü?
 
- C: Evet, Markdown belgenizdeki HTML kodunu kullanarak "Uyarı" etiketine simgeler eklemek mümkündür. Bir ekleyebilirsiniz`span` Uyarı metninin yanında bir simge görüntülemek için uygun sınıfla etiketleyin.
+C: Evet, Markdown belgenizdeki HTML kodunu kullanarak "Uyarı" etiketine simgeler eklemek mümkündür. Bir ekleyebilirsiniz`span` Uyarı metninin yanında bir simge görüntülemek için uygun sınıfla etiketleyin.
 
 #### S: "Uyarı" etiketi tüm Markdown okuyucularıyla uyumlu mudur?
 

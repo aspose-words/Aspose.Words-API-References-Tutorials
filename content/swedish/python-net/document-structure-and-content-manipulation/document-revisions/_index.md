@@ -33,7 +33,7 @@ print(doc.get_text())
 
 ## Aktivera spåra ändringar
 
- För att aktivera spåra ändringar för ett dokument måste du ställa in`TrackRevisions` egendom till`True`:
+ För att aktivera spåra ändringar för ett dokument måste du ställa in`TrackRevisions`egendom till`True`:
 
 ```python
 doc.track_revisions = True

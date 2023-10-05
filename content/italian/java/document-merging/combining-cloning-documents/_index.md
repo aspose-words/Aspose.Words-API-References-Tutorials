@@ -41,7 +41,7 @@ public class DocumentCombination {
 
 ## Passaggio 2: caricare i documenti di origine
 
- Successivamente, dovrai caricare i documenti di origine che desideri combinare. È possibile caricare più documenti in istanze separate del file`Document` classe.
+Successivamente, dovrai caricare i documenti di origine che desideri combinare. È possibile caricare più documenti in istanze separate del file`Document` classe.
 
 ```java
 // Carica i documenti di origine

@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: احتفظ بترقيم المصدر عند الاستيراد
 
-للحفاظ على تنسيق الترقيم للفقرات المرقمة من المستند المصدر، قم بإنشاء مثيل لـ`ImportFormatOptions` وحدد`KeepSourceNumbering` ل`true` . إستخدم`NodeImporter` لاستيراد العقد من المستند المصدر إلى المستند الوجهة، مع تحديد`ImportFormatMode.KeepSourceFormatting` و ال`importFormatOptions`.
+ للحفاظ على تنسيق الترقيم للفقرات المرقمة من المستند المصدر، قم بإنشاء مثيل لـ`ImportFormatOptions` وحدد`KeepSourceNumbering` ل`true` . إستخدم`NodeImporter` لاستيراد العقد من المستند المصدر إلى المستند الوجهة، مع تحديد`ImportFormatMode.KeepSourceFormatting` و ال`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## الخطوة 4: استيراد وإلحاق الفقرات
 
- قم بالتكرار عبر الفقرات الموجودة في المستند المصدر وقم باستيراد كل فقرة إلى المستند الوجهة باستخدام الملف`importer`. قم بإلحاق العقد المستوردة بالنص الأساسي للمستند الوجهة.
+قم بالتكرار عبر الفقرات الموجودة في المستند المصدر وقم باستيراد كل فقرة إلى المستند الوجهة باستخدام الملف`importer`. قم بإلحاق العقد المستوردة بالنص الأساسي للمستند الوجهة.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;

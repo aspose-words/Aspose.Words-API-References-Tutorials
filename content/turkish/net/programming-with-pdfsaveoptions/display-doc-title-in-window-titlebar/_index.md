@@ -68,7 +68,7 @@ Bu özelliği Aspose.Words for .NET ile kullanmak için şu adımları izleyin:
 
  Belgeyi kullanarak yükleyin`Document` yöntemi ve PDF'ye dönüştürülecek dosyanın yolunu belirtme.
 
- Bir örneğini oluşturarak PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve ayarlama`DisplayDocTitle` mülkiyet`true`. Bu, PDF'ye dönüştürürken belge başlığının pencere başlık çubuğunda görüntülenmesini sağlar.
+ Bir örneğini oluşturarak PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve ayarlama`DisplayDocTitle`mülkiyet`true`. Bu, PDF'ye dönüştürürken belge başlığının pencere başlık çubuğunda görüntülenmesini sağlar.
 
  Kullan`Save` Dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemini seçin.
 

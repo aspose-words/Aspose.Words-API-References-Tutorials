@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.Save(dataDir + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
 ```
 
- Bu adımda belgenin tamamını TIFF formatında kaydediyoruz.`Save` yöntemi ve uzantılı çıktı dosyasının yolunu belirtme`.tiff`.
+Bu adımda belgenin tamamını TIFF formatında kaydediyoruz.`Save` yöntemi ve uzantılı çıktı dosyasının yolunu belirtme`.tiff`.
 
 ## 4. Adım: Sayfa aralığı için yedekleme seçeneklerini yapılandırın
 
@@ -52,7 +52,7 @@ Resolution = 160
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOptions);
 ```
 
- Bu son adımda belirtilen sayfa aralığını TIFF formatında kaydediyoruz.`Save`yöntemi ve çıktı dosyasına giden yolu iletmek`.tiff` uzantı, belirtilen kaydetme seçenekleriyle birlikte .
+ Bu son adımda belirtilen sayfa aralığını TIFF formatında kaydediyoruz.`Save` yöntemi ve çıktı dosyasına giden yolu iletmek`.tiff` uzantı, belirtilen kaydetme seçenekleriyle birlikte .
 
 Artık belgenizden belirli bir sayfa aralığını almak ve bunları TIFF dosyası olarak kaydetmek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosyalar, belgenin tamamı için "WorkingWithImageSaveOptions.MultipageTiff.tiff" ve belirtilen sayfa aralığı için "WorkingWithImageSaveOptions.GetTiffPageRange.tiff" adlarıyla belirtilen dizine kaydedilecektir.
 

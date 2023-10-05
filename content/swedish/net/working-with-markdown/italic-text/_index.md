@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Steg 2: Kursivera text
 
- Vi kan kursivera text genom att ställa in typsnittets`Italic` egendom till`true`.
+ Vi kan kursivera text genom att ställa in typsnittets`Italic`egendom till`true`.
 
 ```csharp
 builder.Font.Italic = true;
@@ -46,11 +46,11 @@ Grattis! Du har nu lärt dig hur du använder kursiv text med Aspose.Words för 
 
 #### F: Hur kan jag kursivera text i Aspose.Words?
 
-S: För att kursivera text i Aspose.Words kan du använda`Font.Italic` egendom av`Run`objekt. Du kan ställa in den här egenskapen till`true` för att kursivera specifik text. Du kan till exempel använda`run.Font.Italic=true` för att kursivera texten i`Run` objekt.
+S: För att kursivera text i Aspose.Words kan du använda`Font.Italic` egendom av`Run` objekt. Du kan ställa in den här egenskapen till`true` för att kursivera specifik text. Du kan till exempel använda`run.Font.Italic=true` för att kursivera texten i`Run` objekt.
 
 #### F: Är det möjligt att kursivera flera stycken text i samma stycke?
 
- S: Ja, du kan kursivera flera stycken text i ett enda stycke med hjälp av flera`Run` föremål. Du kan skapa flera`Run` objekt och ställ in`Font.Italic` egendom till`true` för varje objekt att kursivera önskade delar av texten. Sedan kan du lägga till dem i stycket med hjälp av`Paragraph.AppendChild(run)` metod.
+ S: Ja, du kan kursivera flera stycken text i ett enda stycke med hjälp av flera`Run` föremål. Du kan skapa flera`Run` objekt och ställ in`Font.Italic`egendom till`true` för varje objekt att kursivera önskade delar av texten. Sedan kan du lägga till dem i stycket med hjälp av`Paragraph.AppendChild(run)` metod.
 
 #### F: Kan jag kursivera text som finns i en tabell eller cell i Aspose.Words?
 

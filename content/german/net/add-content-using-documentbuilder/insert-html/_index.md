@@ -65,7 +65,7 @@ Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET 
 
 #### F: Kann ich komplexe HTML-Strukturen in das Word-Dokument einfügen?
 
-A: Ja, Sie können mit Aspose.Words für .NET komplexe HTML-Strukturen mit verschiedenen Tags und Stilen in ein Word-Dokument einfügen. Die Bibliothek ist für die Verarbeitung einer breiten Palette von HTML-Inhalten konzipiert und ermöglicht Ihnen die nahtlose Integration von Rich Media, Tabellen und anderen Elementen.
+A: Ja, Sie können mit Aspose.Words für .NET komplexe HTML-Strukturen mit verschiedenen Tags und Stilen in ein Word-Dokument einfügen. Die Bibliothek ist für die Verarbeitung einer Vielzahl von HTML-Inhalten konzipiert und ermöglicht Ihnen die nahtlose Integration von Rich Media, Tabellen und anderen Elementen.
 
 #### F: Unterstützt Aspose.Words für .NET CSS-Stile im eingefügten HTML?
 

@@ -1,5 +1,5 @@
 ---
-title: Sicurezza dei documenti con Python una guida passo passo
+title: Sicurezza dei documenti con Python: una guida passo passo
 linktitle: Sicurezza dei documenti con Python
 second_title: API di gestione dei documenti Python Aspose.Words
 description: Proteggi i tuoi documenti sensibili con Aspose.Words per Python! Crittografa, proteggi e controlla l'accesso ai tuoi file Word a livello di codice.

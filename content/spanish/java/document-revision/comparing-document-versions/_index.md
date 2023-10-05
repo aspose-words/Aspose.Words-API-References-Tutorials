@@ -79,7 +79,7 @@ Aspose.Words para Java es muy preciso a la hora de identificar cambios entre ver
 
 Sí, puede personalizar la forma en que se aplican los cambios según sus requisitos específicos.
 
-### ¿Existe un límite en el tamaño de los documentos que se pueden comparar utilizando Aspose.Words para Java?
+### ¿Existe un límite en el tamaño de los documentos que se pueden comparar usando Aspose.Words para Java?
 
 Aspose.Words para Java puede manejar documentos de diferentes tamaños, lo que lo hace adecuado para comparaciones tanto a pequeña como a gran escala.
 

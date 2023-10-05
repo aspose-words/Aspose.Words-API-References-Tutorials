@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## Schritt 3: Dokumentknotentyp abrufen
-Um den Knotentyp eines Dokuments zu ermitteln, verwenden wir die`NodeType` Eigentum.
+ Um den Knotentyp eines Dokuments zu ermitteln, verwenden wir die`NodeType` Eigentum.
 
 ```csharp
 NodeType type = doc.NodeType;

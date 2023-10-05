@@ -17,7 +17,7 @@ Aspose.Words for Java — это многофункциональная библ
 Прежде чем мы углубимся в код, убедитесь, что у вас есть следующие предварительные условия:
 
 - В вашей системе установлен Java Development Kit (JDK).
-- Библиотека Aspose.Words для Java. Вы можете скачать его с[здесь](https://releases.aspose.com/words/java/).
+-  Библиотека Aspose.Words для Java. Вы можете скачать его с[здесь](https://releases.aspose.com/words/java/).
 - Базовое понимание программирования на Java.
 
 ## Пошаговое руководство
@@ -64,7 +64,7 @@ doc.save("output.docx");
 
 ```java
 try {
-    //Код конвертации здесь
+    // Код конвертации здесь
 } catch (Exception e) {
     e.printStackTrace();
 }

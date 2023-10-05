@@ -62,7 +62,7 @@ S: Den överordnade noden i Node.js hänvisar till nästa högre nod i hierarkin
 
 #### F: Hur får man föräldernoden för en specifik nod?
 
- S: För att få föräldernoden för en specifik nod kan du använda`parentNode` nodens egenskap. Den här egenskapen returnerar föräldernoden för den aktuella noden.
+S: För att få föräldernoden för en specifik nod kan du använda`parentNode` nodens egenskap. Den här egenskapen returnerar föräldernoden för den aktuella noden.
 
 #### F: Hur kontrollerar man om en nod har en föräldernod?
 
@@ -74,4 +74,4 @@ S: Den överordnade noden i Node.js hänvisar till nästa högre nod i hierarkin
 
 #### F: Hur bläddrar man i hierarkin av överordnade noder?
 
- S: För att gå igenom hierarkin av överordnade noder kan du iterera från en specifik nod med hjälp av`parentNode`egenskapen tills du når dokumentets rotnod.
+ S: För att gå igenom hierarkin av överordnade noder kan du iterera från en specifik nod med hjälp av`parentNode` egenskapen tills du når dokumentets rotnod.

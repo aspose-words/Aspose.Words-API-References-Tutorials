@@ -78,7 +78,7 @@ R: Para exportar la estructura de un documento de Word a un documento PDF usando
 
  Crear una instancia del`Document` clase que especifica la ruta al documento de Word.
 
- Crear una instancia del`PdfSaveOptions` clase y establecer el`ExportDocumentStructure` propiedad a`true`. Esto exportará la estructura del documento y la hará visible en el panel de navegación "Contenido" de Adobe Acrobat Pro al editar el archivo PDF.
+ Crear una instancia del`PdfSaveOptions` clase y establecer el`ExportDocumentStructure`propiedad a`true`. Esto exportará la estructura del documento y la hará visible en el panel de navegación "Contenido" de Adobe Acrobat Pro al editar el archivo PDF.
 
  Utilizar el`Save` método de la`Document`clase para guardar el documento en formato PDF especificando opciones de guardado.
 

@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//أضف نصًا إلى الفقرة الأولى، ثم أضف فقرتين أخريين.
+// أضف نصًا إلى الفقرة الأولى، ثم أضف فقرتين أخريين.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -92,12 +92,12 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//أضف نصًا إلى الفقرة الأولى، ثم أضف فقرتين أخريين.
+// أضف نصًا إلى الفقرة الأولى، ثم أضف فقرتين أخريين.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
-// لدينا ثلاث فقرات، لم يتم تسجيل أي منها على أنها أي نوع من المراجعة
+//لدينا ثلاث فقرات، لم يتم تسجيل أي منها على أنها أي نوع من المراجعة
 // إذا قمنا بإضافة/إزالة أي محتوى في المستند أثناء تتبع المراجعات،
 // سيتم عرضها على هذا النحو في المستند ويمكن قبولها/رفضها.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
@@ -123,7 +123,7 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // يؤدي إيقاف تتبع المراجعات إلى ظهور هذا النص كنص عادي.
-//لا يتم احتساب المراجعات عند تغيير المستند.
+// لا يتم احتساب المراجعات عند تغيير المستند.
 doc.StopTrackRevisions();
 
 // احفظ المستند.

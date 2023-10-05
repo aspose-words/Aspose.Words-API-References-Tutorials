@@ -82,7 +82,7 @@ Aşağıdaki adımları izleyerek bir Word belgesine Bidi işaretleri ekleyebili
 
  Kullan`DocumentBuilder` Belgeye içerik eklemek için sınıf.
 
- İçeriği ekledikten sonra,`TxtSaveOptions` sınıfı seçin ve ayarlayın`AddBidiMarks` mülkiyet`true`.
+ İçeriği ekledikten sonra,`TxtSaveOptions` sınıfı seçin ve ayarlayın`AddBidiMarks`mülkiyet`true`.
 
  Belgeyi Bidi işaretleriyle kaydedin.`Save` yöntemi`Document` sınıf.
 

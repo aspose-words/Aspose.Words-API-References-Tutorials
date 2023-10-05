@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## 4. Adım: Akıllı Stil Davranışı Seçeneklerini Ayarlayın
 
-Ekleme işlemi sırasında akıllı stil davranışını etkinleştirmek için bir örnek oluşturmanız gerekir:`ImportFormatOptions` ve ayarlayın`SmartStyleBehavior` mülkiyet`true`.
+Ekleme işlemi sırasında akıllı stil davranışını etkinleştirmek için bir örnek oluşturmanız gerekir:`ImportFormatOptions` ve ayarlayın`SmartStyleBehavior`mülkiyet`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };

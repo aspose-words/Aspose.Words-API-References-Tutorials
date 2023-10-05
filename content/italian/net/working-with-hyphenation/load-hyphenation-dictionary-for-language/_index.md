@@ -68,7 +68,7 @@ R: Puoi trovare file di dizionario di sillabazione per diverse lingue su varie r
 
 #### D: Come posso applicare il dizionario sillabico caricato a un documento in Aspose.Words?
 
- A: Per applicare il dizionario di sillabizzazione caricato a un documento in Aspose.Words, è necessario scorrere le parole nel documento e utilizzare il comando`Hyphenate()` metodo del`Hyphenation` class per ottenere la sillabazione delle parole. È quindi possibile formattare le parole sillabate secondo necessità, ad esempio aggiungendo trattini tra le sillabe.
+ A: Per applicare il dizionario di sillabizzazione caricato a un documento in Aspose.Words, è necessario scorrere le parole nel documento e utilizzare il comando`Hyphenate()` metodo del`Hyphenation`class per ottenere la sillabazione delle parole. È quindi possibile formattare le parole sillabate secondo necessità, ad esempio aggiungendo trattini tra le sillabe.
 
 #### D: Quali lingue sono supportate per la sillabazione in Aspose.Words?
 

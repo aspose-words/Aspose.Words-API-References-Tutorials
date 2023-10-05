@@ -64,7 +64,7 @@ extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
 
 Bu eğitimde Aspose.Words for .NET'in "Sayfa Aralığına Göre" işlevini inceledik. Belirli bir sayfa aralığını kullanarak büyük bir Word belgesinin belirli bölümlerini nasıl çıkaracağımızı öğrendik. Belgeyi başlatıp yükleyerek, istenen sayfaları çıkararak ve bunları yeni bir belgeye kaydederek gerekli içeriği verimli bir şekilde çıkarmayı başardık.
 
-Bölümleri, bölümleri veya seçilen sayfaları çıkarmak gibi bir belgenin belirli bölümleriyle çalışmanız gerektiğinde "Sayfa Aralığına Göre" özelliğini kullanmak yararlı olabilir. Aspose.Words for .NET, sayfa çıkartma işlemini gerçekleştirmek için güvenilir ve basit bir çözüm sunarak belgeleri daha etkili bir şekilde yönetmenize ve değiştirmenize olanak tanır.
+Bölümleri, bölümleri veya seçilen sayfaları çıkarmak gibi bir belgenin belirli bölümleriyle çalışmanız gerektiğinde "Sayfa Aralığına Göre" özelliğini kullanmak faydalı olabilir. Aspose.Words for .NET, sayfa çıkartma işlemini gerçekleştirmek için güvenilir ve basit bir çözüm sunarak belgeleri daha etkili bir şekilde yönetmenize ve değiştirmenize olanak tanır.
 
 Belge işleme yeteneklerinizi geliştirmek ve iş akışınızı kolaylaştırmak için Aspose.Words for .NET'in sunduğu diğer güçlü özellikleri keşfetmekten çekinmeyin.
 

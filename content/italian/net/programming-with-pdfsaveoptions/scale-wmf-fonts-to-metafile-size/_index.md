@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Passaggio 3: configura le opzioni di rendering del metafile
 
- Per abilitare o disabilitare il ridimensionamento dei caratteri WMF alla dimensione del metafile, dobbiamo configurare il file`MetafileRenderingOptions`oggetto. In questo esempio, disabilitiamo il ridimensionamento dei caratteri impostando il file`ScaleWmfFontsToMetafileSize` proprietà a`false`.
+ Per abilitare o disabilitare il ridimensionamento dei caratteri WMF alla dimensione del metafile, dobbiamo configurare il file`MetafileRenderingOptions`oggetto. In questo esempio, disabilitiamo il ridimensionamento dei caratteri impostando il file`ScaleWmfFontsToMetafileSize`proprietà a`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -97,11 +97,11 @@ R: Per abilitare o disabilitare il ridimensionamento dei caratteri WMF alla dime
 
  Carica il documento che desideri elaborare utilizzando il file`Document` class e specificare il percorso del documento Word nella directory dei documenti specificata.
 
- Configura le opzioni di rendering del metafile creando un'istanza del file`MetafileRenderingOptions` classe e impostando il file`ScaleWmfFontsToMetafileSize` proprietà a`true` per abilitare il ridimensionamento dei caratteri WMF alla dimensione del metafile o a`false` per disattivare questa funzione.
+ Configura le opzioni di rendering del metafile creando un'istanza del file`MetafileRenderingOptions` classe e impostando il file`ScaleWmfFontsToMetafileSize`proprietà a`true` per abilitare il ridimensionamento dei caratteri WMF alla dimensione del metafile o a`false` per disattivare questa funzione.
 
  Configura le opzioni di salvataggio come PDF creando un'istanza del file`PdfSaveOptions` class e utilizzando le opzioni di rendering del metafile configurate in precedenza.
 
- Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document`classe specificando il percorso e le opzioni di salvataggio.
+ Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document` classe specificando il percorso e le opzioni di salvataggio.
 
 #### D: Quali sono i vantaggi del ridimensionamento dei caratteri WMF alle dimensioni del metafile in un documento PDF?
 R: I vantaggi derivanti dal ridimensionamento dei caratteri WMF alle dimensioni del metafile in un documento PDF sono:

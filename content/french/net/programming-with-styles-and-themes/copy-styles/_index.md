@@ -21,7 +21,7 @@ Document doc = new Document();
 Document target = new Document(dataDir + "Rendering.docx");
 ```
 
- Dans cette étape, nous créons deux`Document` objets:`doc` qui représente le document source vide et`target`qui représente le document cible à partir duquel nous copierons les styles.
+ Dans cette étape, nous créons deux`Document` objets:`doc` qui représente le document source vide et`target` qui représente le document cible à partir duquel nous copierons les styles.
 
 ## Étape 3 : Copier les styles
 

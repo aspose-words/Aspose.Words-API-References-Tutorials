@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Document.docx");
 RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 ```
 
- في هذه الخطوة، نقوم بتكوين خيارات النسخ الاحتياطي RTF. نحن نخلق جديدا`RtfSaveOptions` الكائن وتعيين`SaveImagesAsWmf` الملكية ل`true`. هذا يخبر Aspose.Words بحفظ صور المستند بتنسيق WMF عند التحويل إلى RTF.
+ في هذه الخطوة، نقوم بتكوين خيارات النسخ الاحتياطي RTF. نحن نخلق جديدا`RtfSaveOptions` الكائن وتعيين`SaveImagesAsWmf`الملكية ل`true`. هذا يخبر Aspose.Words بحفظ صور المستند بتنسيق WMF عند التحويل إلى RTF.
 
 ## الخطوة 4: حفظ الوثيقة
 
@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOption
 ```
 ## خاتمة
 
-في هذا البرنامج التعليمي، اكتشفنا وظيفة حفظ الصور بتنسيق WMF مع خيارات حفظ RTF في Aspose.Words for .NET. لقد تعلمنا كيفية حفظ الصور من مستند بتنسيق WMF عند التحويل إلى تنسيق RTF.
+في هذا البرنامج التعليمي، اكتشفنا وظيفة حفظ الصور بتنسيق WMF مع خيارات حفظ RTF في Aspose.Words لـ .NET. لقد تعلمنا كيفية حفظ الصور من مستند بتنسيق WMF عند التحويل إلى تنسيق RTF.
 
 تكون هذه الميزة مفيدة عندما تريد الحفاظ على جودة ودقة الصور في مستندات RTF الخاصة بك. من خلال حفظ الصور بتنسيق WMF، يمكنك التأكد من بقاء مظهرها ووضوحها سليمين.
 
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOption
 
  قم بتحميل المستند باستخدام`Document` الطريقة وتحديد مسار ملف DOCX المراد تحميله.
 
- قم بتكوين خيارات حفظ RTF عن طريق إنشاء ملف`RtfSaveOptions` الكائن وتعيين`SaveImagesAsWmf` الملكية ل`true`. هذا يخبر Aspose.Words بحفظ صور المستند باسم 
+ قم بتكوين خيارات حفظ RTF عن طريق إنشاء ملف`RtfSaveOptions` الكائن وتعيين`SaveImagesAsWmf`الملكية ل`true`. هذا يخبر Aspose.Words بحفظ صور المستند باسم 
 WMF عند التحويل إلى RTF.
 
  احفظ المستند الناتج بتنسيق RTF باستخدام ملف`Save` الطريقة وتحديد المسار الكامل لملف الإخراج، إلى جانب خيارات الحفظ المحددة.

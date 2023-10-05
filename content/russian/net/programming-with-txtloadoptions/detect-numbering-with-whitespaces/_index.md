@@ -13,7 +13,7 @@ url: /ru/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 
 Прежде чем начать, убедитесь, что вы настроили свою среду разработки с помощью Aspose.Words для .NET. Убедитесь, что вы добавили необходимые ссылки и импортировали соответствующие пространства имен.
 
-## Шаг 2: Создание текстового документа
+## Шаг 2. Создание текстового документа
 
 ```csharp
 // Путь к каталогу ваших документов
@@ -45,7 +45,7 @@ string textDoc = "Full stop delimiters:\n" +
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- На этом этапе мы настраиваем параметры загрузки документа. Мы создаем новый`TxtLoadOptions` объект и установите`DetectNumberingWithWhitespaces` собственность`true`. Это позволит Aspose.Words обнаруживать номера списков, даже если за ними следуют пробелы.
+ На этом этапе мы настраиваем параметры загрузки документа. Мы создаем новый`TxtLoadOptions` объект и установите`DetectNumberingWithWhitespaces`собственность`true`. Это позволит Aspose.Words обнаруживать номера списков, даже если за ними следуют пробелы.
 
 ## Шаг 4. Загрузка документа и сохранение.
 

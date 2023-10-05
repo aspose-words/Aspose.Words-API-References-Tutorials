@@ -39,7 +39,7 @@ foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- Ici, nous utilisons le document pour récupérer la première table, puis parcourons toutes les lignes de la table à l'aide d'une boucle foreach. À l'intérieur de la boucle, nous désactivons le saut de ligne pour chaque ligne en définissant le`RowFormat.AllowBreakAcrossPages` propriété à`false`.
+ Ici, nous utilisons le document pour récupérer la première table, puis parcourons toutes les lignes de la table à l'aide d'une boucle foreach. À l'intérieur de la boucle, nous désactivons le saut de ligne pour chaque ligne en définissant le`RowFormat.AllowBreakAcrossPages`propriété à`false`.
 
 ## Étape 4 : Sauvegarde du document modifié
 Enfin, nous devons enregistrer le document modifié avec le saut de ligne du tableau désactivé. Utilisez le code suivant :

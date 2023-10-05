@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: قم بتعيين المستند المصدر لإعادة تشغيل ترقيم الصفحات
 
- لإعادة تشغيل ترقيم الصفحات في المستند المصدر، تحتاج إلى تعيين`SectionStart` خاصية القسم الأول في الوثيقة المصدر ل`SectionStart.NewPage` وتعيين`RestartPageNumbering` الملكية ل`true`.
+ لإعادة تشغيل ترقيم الصفحات في المستند المصدر، تحتاج إلى تعيين`SectionStart` خاصية القسم الأول في الوثيقة المصدر ل`SectionStart.NewPage` وتعيين`RestartPageNumbering`الملكية ل`true`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

@@ -36,7 +36,7 @@ com.aspose.words.digitalSignatures.DigitalSignature digitalSignature = new com.a
 // Ställ in certifikatets sökväg
 digitalSignature.setCertificateFile("your_certificate.pfx");
 
-// Ställ in lösenordet för certifikatet
+//Ställ in lösenordet för certifikatet
 digitalSignature.setPassword("your_password");
 
 // Skriv under dokumentet

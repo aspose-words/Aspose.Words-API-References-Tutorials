@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: قم بتعيين المستند الملحق ليظهر على صفحة جديدة
 
-للتأكد من ظهور المحتوى من المستند المصدر على صفحة جديدة في المستند الوجهة، تحتاج إلى تعيين الإعداد`SectionStart` خاصية القسم الأول في الوثيقة المصدر ل`SectionStart.NewPage`.
+ للتأكد من ظهور المحتوى من المستند المصدر على صفحة جديدة في المستند الوجهة، تحتاج إلى تعيين الإعداد`SectionStart` خاصية القسم الأول في الوثيقة المصدر ل`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## الخطوة 4: ربط الرؤوس والتذييلات بالقسم السابق
 
- لربط رؤوس وتذييلات المستند المصدر بالقسم السابق في المستند الوجهة، يمكنك استخدام الأمر`LinkToPrevious` طريقة`HeadersFooters` مجموعة. بالمرور`true` كمعلمة، يمكنك تجاوز أي رؤوس أو تذييلات موجودة في المستند المصدر.
+لربط رؤوس وتذييلات المستند المصدر بالقسم السابق في المستند الوجهة، يمكنك استخدام الأمر`LinkToPrevious` طريقة`HeadersFooters` مجموعة. بالمرور`true` كمعلمة، يمكنك تجاوز أي رؤوس أو تذييلات موجودة في المستند المصدر.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

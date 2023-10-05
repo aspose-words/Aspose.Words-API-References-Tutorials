@@ -58,11 +58,11 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Comment puis-je positionner les notes de bas de page et les notes de fin dans Aspose.Words ?
 
- R : Pour positionner les notes de bas de page et de fin dans Aspose.Words, vous devez utiliser le`FootnoteOptions` la classe et le`Position` propriété. Vous pouvez définir cette propriété sur n'importe quelle valeur souhaitée, telle que`BottomOfPage` (en bas de page) ou`EndOfSection`(à la fin de la section).
+ R : Pour positionner les notes de bas de page et de fin dans Aspose.Words, vous devez utiliser le`FootnoteOptions` la classe et le`Position` propriété. Vous pouvez définir cette propriété sur n'importe quelle valeur souhaitée, telle que`BottomOfPage` (en bas de page) ou`EndOfSection` (à la fin de la section).
 
 #### Q : Est-il possible de personnaliser la position des notes de bas de page et des notes de fin pour chaque page ou section du document ?
 
-R : Oui, il est possible de personnaliser la position des notes de bas de page et des notes de fin pour chaque page ou section du document. Vous pouvez utiliser les méthodes de manipulation de section et de page Aspose.Words pour définir des positions spécifiques pour les notes de bas de page et les notes de fin.
+: Oui, il est possible de personnaliser la position des notes de bas de page et des notes de fin pour chaque page ou section du document. Vous pouvez utiliser les méthodes de manipulation de section et de page Aspose.Words pour définir des positions spécifiques pour les notes de bas de page et les notes de fin.
 
 #### Q : Comment puis-je supprimer les notes de bas de page ou de fin d'un document ?
 

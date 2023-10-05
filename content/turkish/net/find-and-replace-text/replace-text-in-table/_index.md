@@ -43,7 +43,7 @@ table.LastRow.LastCell.Range.Replace("50", "20", new FindReplaceOptions(FindRepl
 
 ## 4. Adım: Düzenlenen belgeyi kaydedin
 
- Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydederiz:`Save` yöntem:
+Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydederiz:`Save` yöntem:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInTable.docx");

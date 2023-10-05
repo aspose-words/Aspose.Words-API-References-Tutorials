@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## الخطوة 3: تكوين خيارات الحفظ بتنسيق PDF مع تضمين الخط
 
- لتخطي تضمين الخطوط Arial وTimes Roman في ملف PDF الذي تم إنشاؤه، نحتاج إلى تكوين`PdfSaveOptions` الكائن وتعيين`FontEmbeddingMode` الملكية ل`PdfFontEmbeddingMode.EmbedAll`.
+ لتخطي تضمين الخطوط Arial وTimes Roman في ملف PDF الذي تم إنشاؤه، نحتاج إلى تكوين`PdfSaveOptions` الكائن وتعيين`FontEmbeddingMode`الملكية ل`PdfFontEmbeddingMode.EmbedAll`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 
  قم بتحميل المستند الذي تريد معالجته باستخدام ملف`Document` الفئة ومسار المستند المحدد.
 
- إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`FontEmbeddingMode` الملكية ل`PdfFontEmbeddingMode.EmbedAll`. سيؤدي هذا إلى تضمين جميع الخطوط باستثناء Arial وTimes Roman في ملف PDF الذي تم إنشاؤه.
+ إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`FontEmbeddingMode`الملكية ل`PdfFontEmbeddingMode.EmbedAll`. سيؤدي هذا إلى تضمين جميع الخطوط باستثناء Arial وTimes Roman في ملف PDF الذي تم إنشاؤه.
 
  استخدم ال`Save` طريقة`Document` كائن لحفظ المستند بتنسيق PDF مع تحديد خيارات الحفظ التي تم تكوينها مسبقًا.
 

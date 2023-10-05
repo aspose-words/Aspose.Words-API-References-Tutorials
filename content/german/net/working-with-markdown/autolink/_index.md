@@ -58,7 +58,7 @@ Herzlichen Glückwunsch! Sie haben nun gelernt, wie Sie die Funktion „Autolink
 
 #### F: Wie kann ich in Aspose.Words einen automatischen Link zu einer URL-Adresse erstellen?
 
- A: Um einen automatischen Link zu einer URL-Adresse in Aspose.Words zu erstellen, können Sie die verwenden`<a>` Tag mit dem`href` Attribut, das die URL-Adresse enthält. Sie können zum Beispiel verwenden`<a href="https://www.aspose.com">https://www.aspose.com</a>` um automatisch auf „https://www.aspose.com“ zu verlinken.
+A: Um einen automatischen Link zu einer URL-Adresse in Aspose.Words zu erstellen, können Sie die verwenden`<a>` Tag mit dem`href` Attribut, das die URL-Adresse enthält. Sie können zum Beispiel verwenden`<a href="https://www.aspose.com">https://www.aspose.com</a>` um automatisch auf „https://www.aspose.com“ zu verlinken.
 
 #### F: Ist es möglich, den Anzeigetext eines automatischen Links in Aspose.Words anzupassen?
 
@@ -66,4 +66,4 @@ Herzlichen Glückwunsch! Sie haben nun gelernt, wie Sie die Funktion „Autolink
 
 #### F: Wie kann ich einem Autolink in Aspose.Words zusätzliche Attribute hinzufügen?
 
-A: Um einem automatischen Link in Aspose.Words zusätzliche Attribute hinzuzufügen, können Sie zusätzliche HTML-Attribute innerhalb von verwenden`<a>` Etikett. Sie können zum Beispiel verwenden`<a href="https://www.aspose.com" target="_blank">Link</a>` um den Link in einem neuen Fenster oder Tab zu öffnen` attribute target="_blank"`.
+ A: Um einem automatischen Link in Aspose.Words zusätzliche Attribute hinzuzufügen, können Sie zusätzliche HTML-Attribute innerhalb von verwenden`<a>` Etikett. Sie können zum Beispiel verwenden`<a href="https://www.aspose.com" target="_blank">Link</a>` um den Link in einem neuen Fenster oder Tab zu öffnen` attribute target="_blank"`.

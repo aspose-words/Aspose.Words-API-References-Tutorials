@@ -61,7 +61,7 @@ Congratulazioni! Ora hai imparato come creare una tabella con Aspose.Words per .
 
 #### D: Come posso creare una tabella in Markdown?
 
-R: Per creare una tabella in Markdown, utilizza la sintassi delle pipe (`|`) per delimitare celle e trattini (`-`) per delimitare le intestazioni della tabella.
+R: Per creare una tabella in Markdown, utilizza la sintassi delle pipe (`|`per delimitare celle e trattini (`-`) per delimitare le intestazioni della tabella.
 
 #### D: Possiamo personalizzare l'aspetto di una tabella in Markdown?
 

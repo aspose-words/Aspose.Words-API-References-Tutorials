@@ -18,7 +18,7 @@ Antes de comenzar, asegúrese de tener implementados los siguientes requisitos p
 
 - Entorno de desarrollo de Java: asegúrese de tener Java instalado en su sistema.
 
--  Aspose.Words para Java: Descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
+-  Aspose.Words para Java: descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
 ## Configurando el proyecto
 
@@ -35,7 +35,7 @@ Document doc = new Document("path/to/your/document.docx");
 
 ## Convertir a PDF
 
-continuación, convertirá el documento de Word cargado a PDF. Aspose.Words simplifica este proceso:
+A continuación, convertirá el documento de Word cargado a PDF. Aspose.Words simplifica este proceso:
 
 ```java
 // Crear un objeto de opciones para guardar PDF

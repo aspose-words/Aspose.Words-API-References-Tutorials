@@ -83,7 +83,7 @@ S: För att minska PDF-dokumentets storlek med bildsampling med Aspose.Words fö
 
  Konfigurera spara som PDF-alternativ genom att skapa en instans av`PdfSaveOptions` klass och ställ in bildsamplingsalternativen med hjälp av`DownsampleOptions` fast egendom. Du kan ange målupplösningen för bilder med hjälp av`Resolution` egenskapen och ställ in en lägsta upplösningströskel över vilken bilder inte kommer att skalas ned med hjälp av`ResolutionThreshold` fast egendom.
 
- Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document`klass som anger sökvägen och sparalternativ.
+ Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document` klass som anger sökvägen och sparalternativ.
 
 #### F: Vilka är fördelarna med att minska PDF-dokumentstorleken med bildsampling?
 S: Fördelarna med att minska PDF-dokumentstorleken med bildsampling är:

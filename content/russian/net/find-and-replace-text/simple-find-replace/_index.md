@@ -1,6 +1,6 @@
 ---
-title: Простой текст найти и заменить в Word
-linktitle: Простой текст найти и заменить в Word
+title: Простой текст: найти и заменить в Word
+linktitle: Простой текст: найти и заменить в Word
 second_title: API обработки документов Aspose.Words
 description: Узнайте, как выполнить простой поиск и замену текста в документе Word с помощью Aspose.Words для .NET.
 type: docs
@@ -42,7 +42,7 @@ doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindRep
 
 ## Шаг 4: Сохранение отредактированного документа
 
- Наконец, мы сохраняем измененный документ в указанном каталоге, используя команду`Save` метод:
+Наконец, мы сохраняем измененный документ в указанном каталоге, используя команду`Save` метод:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");

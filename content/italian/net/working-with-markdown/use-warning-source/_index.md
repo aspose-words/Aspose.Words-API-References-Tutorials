@@ -66,11 +66,11 @@ Congratulazioni! Ora hai imparato come utilizzare l'origine dell'avviso con Aspo
 
 #### D: Possiamo personalizzare l'aspetto del tag "Avvertenza"?
 
-R: La formattazione del tag "Avviso" dipende dal renderer Markdown utilizzato. Nella maggior parte dei casi, puoi personalizzare l'aspetto utilizzando i CSS per indirizzare il file`blockquote` tag nel tuo documento.
+ R: La formattazione del tag "Avviso" dipende dal renderer Markdown utilizzato. Nella maggior parte dei casi, puoi personalizzare l'aspetto utilizzando i CSS per indirizzare il file`blockquote` tag nel tuo documento.
 
 #### D: È possibile aggiungere icone al tag "Avvertenza"?
 
- R: Sì, è possibile aggiungere icone al tag "Avviso" utilizzando il codice HTML nel documento Markdown. Puoi inserire un`span` tag con la classe appropriata per visualizzare un'icona accanto al testo dell'avviso.
+R: Sì, è possibile aggiungere icone al tag "Avviso" utilizzando il codice HTML nel documento Markdown. Puoi inserire un`span` tag con la classe appropriata per visualizzare un'icona accanto al testo dell'avviso.
 
 #### D: Il tag "Avvertenza" è compatibile con tutti i lettori Markdown?
 

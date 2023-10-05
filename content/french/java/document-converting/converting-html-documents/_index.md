@@ -17,7 +17,7 @@ Aspose.Words for Java est une bibliothèque riche en fonctionnalités qui permet
 Avant de plonger dans le code, assurez-vous de disposer des conditions préalables suivantes :
 
 - Kit de développement Java (JDK) installé sur votre système.
-- Bibliothèque Aspose.Words pour Java. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/java/).
+-  Bibliothèque Aspose.Words pour Java. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/java/).
 - Une compréhension de base de la programmation Java.
 
 ## Guide étape par étape
@@ -64,7 +64,7 @@ N'oubliez pas de gérer les exceptions qui pourraient survenir pendant le proces
 
 ```java
 try {
-    //Code de conversion ici
+    // Code de conversion ici
 } catch (Exception e) {
     e.printStackTrace();
 }

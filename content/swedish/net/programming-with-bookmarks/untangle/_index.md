@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-bookmarks/untangle/
 ---
 
-den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder Untangle-funktionen i Aspose.Words för .NET-biblioteket. Den här funktionen reder ut kapslade bokmärken som finns i intilliggande tabellrader.
+I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder Untangle-funktionen i Aspose.Words för .NET-biblioteket. Den här funktionen reder ut kapslade bokmärken som finns i intilliggande tabellrader.
 
 ## Förutsättningar
 
@@ -56,7 +56,7 @@ Här är det fullständiga källkodsexemplet för att reda ut kapslade bokmärke
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		//Om båda raderna upptäcks som okej och bokmärkets början och slut finns i intilliggande rader,
+		// Om båda raderna upptäcks som okej och bokmärkets början och slut finns i intilliggande rader,
 		// flytta bokmärkets slutnod till slutet av det sista stycket i den översta radens sista cell.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

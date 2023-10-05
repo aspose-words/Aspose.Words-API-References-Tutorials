@@ -414,7 +414,7 @@ Sie können auf der Aspose-Website oder im Maven-Repository nach der neuesten Ve
 Ja, Aspose.Words für Java ist mit Java 11 und späteren Versionen kompatibel.
 
 ### Wie kann ich Seitenränder für bestimmte Abschnitte meines Dokuments festlegen?
- Mit können Sie Seitenränder für bestimmte Abschnitte Ihres Dokuments festlegen`PageSetup` Klasse. Hier ist ein Beispiel:
+Mit können Sie Seitenränder für bestimmte Abschnitte Ihres Dokuments festlegen`PageSetup` Klasse. Hier ist ein Beispiel:
 
 ```java
 Section section = doc.getSections().get(0); // Holen Sie sich den ersten Abschnitt

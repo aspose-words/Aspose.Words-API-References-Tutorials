@@ -16,7 +16,7 @@ dessa handledningar kommer du att lära dig hur du använder LoadOptions för at
 | --- | --- |
 | [Uppdatera smutsiga fält i Word-dokument](./update-dirty-fields/) | Lär dig hur du laddar ett Word-dokument genom att uppdatera smutsiga fält med Aspose.Words för .NET. |
 | [Ladda krypterat i Word-dokument](./load-encrypted-document/) | Lär dig hur du laddar och sparar krypterade i word-dokument med Aspose.Words för .NET. |
-| [Konvertera form till Office Math](./convert-shape-to-office-math/) | Lär dig hur du konverterar former till Office-matematiska formler när du laddar upp dokument med Aspose.Words för .NET. |
+| [Konvertera Shape till Office Math](./convert-shape-to-office-math/) | Lär dig hur du konverterar former till Office-matematiska formler när du laddar upp dokument med Aspose.Words för .NET. |
 | [Ställ in Ms Word-version](./set-ms-word-version/) | Lär dig hur du laddar ett dokument med en specificerad version av MS Word med Aspose.Words för .NET. |
 | [Använd Temp-mappen i Word-dokument](./use-temp-folder/) | Lär dig hur du använder en tillfällig mapp när du laddar upp dokument med Aspose.Words för .NET. |
 | [Varning Återuppringning i Word-dokument](./warning-callback/) | Lär dig hur du hanterar varningar när du laddar ett Word-dokument med hjälp av callback-funktioner med Aspose.Words för .NET. |

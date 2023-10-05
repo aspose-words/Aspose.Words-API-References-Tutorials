@@ -20,7 +20,7 @@ Eine effiziente Tabellenoptimierung trägt wesentlich zu einem besseren Datenver
 
 ## Erste Schritte mit Aspose.Words für Python:
 
-Bevor wir uns mit den technischen Aspekten der Tabellenoptimierung befassen, machen wir uns mit der Aspose.Words for Python-Bibliothek vertraut. Aspose.Words ist eine leistungsstarke API zur Dokumentenbearbeitung, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert zu erstellen, zu ändern und zu konvertieren. Es bietet eine breite Palette von Funktionen zum Arbeiten mit Tabellen, Text, Formatierung und mehr.
+Bevor wir uns mit den technischen Aspekten der Tabellenoptimierung befassen, machen wir uns mit der Aspose.Words for Python-Bibliothek vertraut. Aspose.Words ist eine leistungsstarke API zur Dokumentenbearbeitung, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert zu erstellen, zu ändern und zu konvertieren. Es bietet zahlreiche Funktionen zum Arbeiten mit Tabellen, Text, Formatierung und mehr.
 
 Führen Sie zunächst die folgenden Schritte aus:
 

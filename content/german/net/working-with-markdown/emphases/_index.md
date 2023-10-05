@@ -109,11 +109,11 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### F: Wie hebe ich Text mit Markdown hervor?
 
-A: Um Text mithilfe von Markdown hervorzuheben, umgeben Sie den Text einfach mit den entsprechenden Symbolen. Verwenden`*` oder`_` für Kursivschrift,`**` oder`__` für fett, und`~~` zum Durchstreichen.
+ A: Um Text mithilfe von Markdown hervorzuheben, umgeben Sie den Text einfach mit den entsprechenden Symbolen. Verwenden`*` oder`_` für Kursivschrift,`**` oder`__` für fett, und`~~` zum Durchstreichen.
 
 #### F: Können wir verschiedene Hervorhebungen im selben Text kombinieren?
 
- A: Ja, es ist möglich, verschiedene Hervorhebungen im selben Text zu kombinieren. Beispielsweise können Sie ein Wort fett und kursiv schreiben, indem Sie beides verwenden`**` Und`*` um das Wort herum.
+ A: Ja, es ist möglich, verschiedene Hervorhebungen im selben Text zu kombinieren. Beispielsweise können Sie ein Wort fett und kursiv schreiben, indem Sie beides verwenden`**` Und`*`um das Wort herum.
 
 #### F: Welche Hervorhebungsoptionen sind in Markdown verfügbar?
 

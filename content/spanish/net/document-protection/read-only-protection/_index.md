@@ -108,7 +108,7 @@ R: Sí, puede eliminar la protección de solo lectura de un documento de Word us
 
 #### P: ¿Puedo establecer una contraseña diferente para la protección de solo lectura en un documento de Word?
 
- R: No, la protección de solo lectura en Aspose.Words para .NET no le permite establecer una contraseña separada específicamente para la protección de solo lectura. La contraseña establecida usando el`SetPassword` método de la`WriteProtection` El objeto se aplica a la protección general del documento, incluida la protección de solo lectura y de lectura y escritura.
+ R: No, la protección de solo lectura en Aspose.Words para .NET no le permite establecer una contraseña separada específicamente para la protección de solo lectura. La contraseña establecida mediante el`SetPassword` método de la`WriteProtection` El objeto se aplica a la protección general del documento, incluida la protección de solo lectura y de lectura y escritura.
 
 #### P: ¿Pueden los usuarios evitar la protección de solo lectura en un documento de Word?
 

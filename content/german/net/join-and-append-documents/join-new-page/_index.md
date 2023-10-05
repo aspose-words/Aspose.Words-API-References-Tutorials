@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Richten Sie den Anfang des neuen Seitenabschnitts ein
 
-Um das angehängte Dokument auf einer neuen Seite zu beginnen, legen Sie fest`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.NewPage`.
+ Um das angehängte Dokument auf einer neuen Seite zu beginnen, legen Sie fest`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Schritt 4: Hängen Sie das Quelldokument an
 
-Hängen Sie das Quelldokument mit an das Zieldokument an`AppendDocument` Methode der`Document` Klasse. Stellen Sie den Importformatmodus auf ein`ImportFormatMode.KeepSourceFormatting` um die ursprünglichen Stile aus dem Quelldokument beizubehalten.
+ Hängen Sie das Quelldokument mit an das Zieldokument an`AppendDocument` Methode der`Document` Klasse. Stellen Sie den Importformatmodus auf ein`ImportFormatMode.KeepSourceFormatting` um die ursprünglichen Stile aus dem Quelldokument beizubehalten.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ Damit ist die Implementierung des Zusammenfügens zweier Dokumente auf einer neu
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Legen Sie fest, dass das angehängte Dokument auf einer neuen Seite beginnt.
+	//Legen Sie fest, dass das angehängte Dokument auf einer neuen Seite beginnt.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Hängen Sie das Quelldokument mit den im Quelldokument gefundenen Originalstilen an.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

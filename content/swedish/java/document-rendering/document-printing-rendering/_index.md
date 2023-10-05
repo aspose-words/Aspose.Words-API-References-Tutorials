@@ -41,7 +41,7 @@ Att skriva ut ett dokument med Aspose.Words för Java är enkelt. Här är ett g
 doc.print("printerName");
 ```
 
-Du kan ange skrivarens namn som ett argument till`print` metod. Detta kommer att skicka dokumentet till den angivna skrivaren för utskrift.
+ Du kan ange skrivarens namn som ett argument till`print`metod. Detta kommer att skicka dokumentet till den angivna skrivaren för utskrift.
 
 ## Återgivning av dokument
 

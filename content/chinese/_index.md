@@ -52,6 +52,13 @@ is_root: true
 - [文件安全](./java/document-security/)
 - [文件分割](./java/document-splitting/)
 - [文件修订](./java/document-revision/)
+- [文档加载和保存](./java/document-loading-and-saving/)
+- [文件操作](./java/document-manipulation/)
+- [文档转换和导出](./java/document-conversion-and-export/)
+- [许可和配置](./java/licensing-and-configuration/)
+- [使用文档元素](./java/using-document-elements/)
+- [打印文件](./java/printing-documents/)
+- [渲染文档](./java/rendering-documents/)
 
 ## Python 的 Aspose.Words 文档管理教程
 {{% alert color="primary" %}}

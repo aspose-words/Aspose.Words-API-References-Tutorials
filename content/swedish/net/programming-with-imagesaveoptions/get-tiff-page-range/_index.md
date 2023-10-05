@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-imagesaveoptions/get-tiff-page-range/
 ---
 
-den här handledningen kommer vi att utforska den medföljande C#-källkoden för att få en rad TIFF-sidor med Aspose.Words för .NET. Med den här funktionen kan du extrahera ett specifikt intervall av sidor från ett dokument och spara dem som en TIFF-fil.
+I den här handledningen kommer vi att utforska den medföljande C#-källkoden för att få en rad TIFF-sidor med Aspose.Words för .NET. Med den här funktionen kan du extrahera ett specifikt intervall av sidor från ett dokument och spara dem som en TIFF-fil.
 
 ## Steg 1: Sätta upp miljön
 
@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.Save(dataDir + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
 ```
 
- I det här steget sparar vi hela dokumentet i TIFF-format med hjälp av`Save` metod och ange sökvägen till utdatafilen med tillägget`.tiff`.
+ det här steget sparar vi hela dokumentet i TIFF-format med hjälp av`Save` metod och ange sökvägen till utdatafilen med tillägget`.tiff`.
 
 ## Steg 4: Konfigurera alternativ för säkerhetskopiering för sidintervallet
 
@@ -52,7 +52,7 @@ Resolution = 160
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOptions);
 ```
 
- I det här sista steget sparar vi det angivna sidintervallet i TIFF-format med hjälp av`Save`metod och skickar sökvägen till utdatafilen med`.tiff` tillägg, tillsammans med de angivna sparalternativen .
+ I det här sista steget sparar vi det angivna sidintervallet i TIFF-format med hjälp av`Save` metod och skickar sökvägen till utdatafilen med`.tiff` tillägg, tillsammans med de angivna sparalternativen .
 
 Nu kan du köra källkoden för att hämta ett visst antal sidor från ditt dokument och spara dem som en TIFF-fil. De resulterande filerna kommer att sparas i den angivna katalogen med namnen "WorkingWithImageSaveOptions.MultipageTiff.tiff" för hela dokumentet och "WorkingWithImageSaveOptions.GetTiffPageRange.tiff" för det angivna sidintervallet.
 

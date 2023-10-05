@@ -80,7 +80,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölüm�
 
 C: Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
 - C# programlama dili hakkında çalışma bilgisi
-- Aspose.Words for .NET kütüphanesinin projenizde yüklü olması
+- Aspose.Words for .NET kütüphanesinin projenizde kurulu olması
 - Kopyalamak istediğiniz bölümü içeren kaynak belge
 - Bölümü kopyalamak istediğiniz boş bir hedef belge
 

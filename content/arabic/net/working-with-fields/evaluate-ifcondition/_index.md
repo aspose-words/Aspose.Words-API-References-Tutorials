@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## الخطوة 2: أدخل حقل IF
 
- نحن نستخدم ال`InsertField()` طريقة لإدراج حقل IF في المستند الذي يحدد الشرط المراد تقييمه.
+ نحن نستخدم ال`InsertField()` طريقة لإدراج حقل IF في المستند الذي يحدد الشرط المطلوب تقييمه.
 
 ```csharp
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);

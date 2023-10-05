@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Étape 2 : Texte en gras
 
- Nous pouvons mettre le texte en gras en définissant le paramètre du générateur de documents`Font.Bold` propriété à`true`.
+ Nous pouvons mettre le texte en gras en définissant le paramètre du générateur de documents`Font.Bold`propriété à`true`.
 
 ```csharp
 builder.Font.Bold = true;
@@ -53,11 +53,11 @@ Félicitation ! Vous avez maintenant appris à mettre du texte en gras avec Aspo
 
 #### Q : Comment puis-je mettre du texte en gras dans Aspose.Words ?
 
- R : Pour mettre le texte en gras dans Aspose.Words, vous pouvez utiliser l'option`Font.Bold` propriété du`Run`objet. Vous pouvez définir cette propriété sur`true` mettre en gras un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.Bold=true` pour mettre le texte en gras à l'intérieur du`Run` objet.
+ R : Pour mettre le texte en gras dans Aspose.Words, vous pouvez utiliser l'option`Font.Bold` propriété du`Run` objet. Vous pouvez définir cette propriété sur`true` mettre en gras un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.Bold=true` pour mettre le texte en gras à l'intérieur du`Run` objet.
 
 #### Q : Est-il possible de mettre en gras plusieurs morceaux de texte dans un même paragraphe ?
 
- R : Oui, vous pouvez mettre en gras plusieurs morceaux de texte dans un seul paragraphe en utilisant plusieurs`Run` objets. Vous pouvez créer plusieurs`Run` objets et définir le`Font.Bold` propriété à`true` pour chaque objet, mettez en gras les parties souhaitées du texte. Ensuite, vous pouvez les ajouter au paragraphe en utilisant le`Paragraph.AppendChild(run)` méthode.
+ : Oui, vous pouvez mettre en gras plusieurs morceaux de texte dans un seul paragraphe en utilisant plusieurs`Run` objets. Vous pouvez créer plusieurs`Run` objets et définir le`Font.Bold`propriété à`true` pour chaque objet, mettez en gras les parties souhaitées du texte. Ensuite, vous pouvez les ajouter au paragraphe en utilisant le`Paragraph.AppendChild(run)` méthode.
 
 #### Q : Puis-je mettre en gras le texte d'un tableau ou d'une cellule dans Aspose.Words ?
 

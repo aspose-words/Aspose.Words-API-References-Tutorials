@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
  قم بتكوين خيارات التحويل إلى PDF عن طريق إنشاء مثيل لـ`PdfSaveOptions` الطبقة وتمكين`AdditionalTextPositioning` خيار لتمكين الدقة 
 تحديد موضع النص الإضافي في ملف PDF.
 
- احفظ المستند بتنسيق PDF باستخدام`Save` طريقة`Document`فئة تحدد المسار وخيارات الحفظ.
+ احفظ المستند بتنسيق PDF باستخدام`Save` طريقة`Document` فئة تحدد المسار وخيارات الحفظ.
 
 #### س: ما هي فوائد تحسين موضع النص في ملف PDF عن طريق إضافة نص إضافي؟
 ج: فوائد تحسين موضع النص في ملف PDF عن طريق إضافة نص إضافي هي:

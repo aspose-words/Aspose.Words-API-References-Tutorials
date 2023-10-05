@@ -33,7 +33,7 @@ print(doc.get_text())
 
 ## Abilitazione delle modifiche alla traccia
 
- Per abilitare il rilevamento delle modifiche per un documento, è necessario impostare il file`TrackRevisions` proprietà a`True`:
+ Per abilitare il rilevamento delle modifiche per un documento, è necessario impostare il file`TrackRevisions`proprietà a`True`:
 
 ```python
 doc.track_revisions = True

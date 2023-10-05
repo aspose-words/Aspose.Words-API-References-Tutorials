@@ -65,7 +65,7 @@ R : La configuration des colonnes de notes de bas de page permet d'améliorer l
 
 #### Q : Est-il possible de spécifier un nombre différent de colonnes pour différentes sections du document ?
 
-: Oui, il est possible de spécifier un nombre différent de colonnes pour différentes sections du document. Vous pouvez utiliser les méthodes de manipulation de section Aspose.Words pour définir des configurations spécifiques pour chaque section, y compris le nombre de colonnes de notes de bas de page.
+R : Oui, il est possible de spécifier un nombre différent de colonnes pour différentes sections du document. Vous pouvez utiliser les méthodes de manipulation de section Aspose.Words pour définir des configurations spécifiques pour chaque section, y compris le nombre de colonnes de notes de bas de page.
 
 #### Q : Les colonnes de notes de bas de page sont-elles prises en compte lors de la conversion vers d'autres formats de fichier ?
 

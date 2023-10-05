@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions
 
 صيانة
 
- ومع ذلك، إذا كنت تريد تحميل مستند PDF المشفر بكلمة مرور، فيجب عليك استخدام الملف`PdfLoadOptions` class وحدد كلمة المرور عند تحميل المستند:
+ومع ذلك، إذا كنت تريد تحميل مستند PDF المشفر بكلمة مرور، فيجب عليك استخدام الملف`PdfLoadOptions` class وحدد كلمة المرور عند تحميل المستند:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadFormat = LoadFormat.Pdf };

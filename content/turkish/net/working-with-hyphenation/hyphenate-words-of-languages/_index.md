@@ -71,7 +71,7 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şe
 
 #### S: Aspose.Words ile belirli bir dildeki bir kelimeyi nasıl heceleyebilirim?
 
- C: Aspose.Words ile belirli bir dildeki bir kelimeyi hecelemek için`Hyphenation` sınıf ve`Hyphenate()` yöntem. Bir örneğini oluşturun`Hyphenation` İstenilen dili belirten sınıfı seçin, ardından`Hyphenate()` Kelimeyi argüman olarak hecelemek için geçirme yöntemi. Bu size belirtilen dildeki kelimenin hecelerini verecektir.
+ C: Aspose.Words ile belirli bir dildeki bir kelimeyi hecelemek için`Hyphenation` sınıf ve`Hyphenate()` yöntem. Bir örneğini oluşturun`Hyphenation` İstenilen dili belirten sınıfı seçin, ardından`Hyphenate()`Kelimeyi argüman olarak hecelemek için geçirme yöntemi. Bu size belirtilen dildeki kelimenin hecelerini verecektir.
 
 #### S: Aspose.Words'te heceleme dilini belirlemek için hangi dil kodlarını kullanmalıyım?
 

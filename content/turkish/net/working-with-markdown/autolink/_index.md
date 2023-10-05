@@ -58,7 +58,7 @@ Tebrikler! Artık Aspose.Words for .NET ile "Otomatik Bağlantı" özelliğini n
 
 #### S: Aspose.Words'te bir URL adresine nasıl otomatik bağlantı oluşturabilirim?
 
- C: Aspose.Words'te bir URL adresine otomatik bağlantı oluşturmak için`<a>` ile etiketleyin`href` URL adresini içeren özellik. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com">https://www.aspose.com</a>` "https: //www.aspose.com" adresine otomatik olarak bağlanmak için.
+C: Aspose.Words'te bir URL adresine otomatik bağlantı oluşturmak için`<a>` ile etiketleyin`href` URL adresini içeren özellik. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com">https://www.aspose.com</a>` "https: //www.aspose.com" adresine otomatik olarak bağlanmak için.
 
 #### S: Aspose.Words'te otomatik bir bağlantının görüntü metnini özelleştirmek mümkün mü?
 
@@ -66,4 +66,4 @@ Tebrikler! Artık Aspose.Words for .NET ile "Otomatik Bağlantı" özelliğini n
 
 #### S: Aspose.Words'teki bir otomatik bağlantıya nasıl ek özellikler ekleyebilirim?
 
-C: Aspose.Words'te otomatik bir bağlantıya ek özellikler eklemek için, ek HTML özelliklerini kullanabilirsiniz.`<a>` etiket. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com" target="_blank">Link</a>` Bağlantıyı yeni bir pencerede veya sekmede açmak için` attribute target="_blank"`.
+ C: Aspose.Words'te otomatik bir bağlantıya ek özellikler eklemek için, ek HTML özelliklerini kullanabilirsiniz.`<a>` etiket. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com" target="_blank">Link</a>` Bağlantıyı yeni bir pencerede veya sekmede açmak için` attribute target="_blank"`.

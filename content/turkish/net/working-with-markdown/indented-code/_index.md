@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. Adım: Girintili kod için stil ekleyin
 
-Girintili kod için özel bir stil ekleyeceğiz.`Styles.Add` yöntemi`Document` nesne. Bu örnekte girintili kod için "IndentedCode" adında bir stil oluşturuyoruz.
+ Girintili kod için özel bir stil ekleyeceğiz.`Styles.Add` yöntemi`Document` nesne. Bu örnekte girintili kod için "IndentedCode" adında bir stil oluşturuyoruz.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

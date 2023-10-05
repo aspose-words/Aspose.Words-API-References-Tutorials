@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection. Auto };
 ```
 
- Bu adımda belge yükleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`TxtLoadOptions` nesneyi ayarlayın ve`DocumentDirection` mülkiyet`DocumentDirection.Auto`. Bu değer Aspose.Words'e belgenin içeriğine göre metnin yönünü otomatik olarak belirlemesini söyler.
+ Bu adımda belge yükleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`TxtLoadOptions` nesneyi ayarlayın ve`DocumentDirection`mülkiyet`DocumentDirection.Auto`. Bu değer Aspose.Words'e belgenin içeriğine göre metnin yönünü otomatik olarak belirlemesini söyler.
 
 ## 3. Adım: Belgeyi yükleme
 

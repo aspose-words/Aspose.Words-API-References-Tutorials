@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Étape 4 : définissez le formatage du paragraphe « Conserver avec le suivant » pour le document source
 
- Pour conserver les paragraphes du document source ensemble, vous pouvez parcourir chaque paragraphe du document et définir le`KeepWithNext` propriété à`true`.
+Pour conserver les paragraphes du document source ensemble, vous pouvez parcourir chaque paragraphe du document et définir le`KeepWithNext`propriété à`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

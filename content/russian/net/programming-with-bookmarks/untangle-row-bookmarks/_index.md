@@ -51,7 +51,7 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Пример исходного кода для закладок Untangle Row с использованием Aspose.Words для .NET**
+### Пример исходного кода для закладок Untangle Row с использованием Aspose.Words для .NET
 
 Вот полный пример исходного кода для распутывания закладок из строк с помощью Aspose.Words для .NET:
 
@@ -76,6 +76,38 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
 
+#### Распутать исходный код
+```csharp
+
+private void Untangle(Document doc)
+        {
+            foreach (Bookmark bookmark in doc.Range.Bookmarks)
+            {
+                // Получите родительскую строку как закладки, так и конечного узла закладки.
+                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
+                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+                // Если обе строки найдены в порядке, а начало и конец закладки содержатся в соседних строках,
+                // переместите конечный узел закладки в конец последнего абзаца в последней ячейке верхней строки.
+                if (row1 != null && row2 != null && row1.NextSibling == row2)
+                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+            }
+        }
+
+```
+
+#### Исходный код Удалеровбибукмарк
+```csharp
+
+ private void DeleteRowByBookmark(Document doc, string bookmarkName)
+        {
+            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+            row?.Remove();
+        }
+
+```
 ## Заключение
 
 В этой статье мы изучили исходный код C#, чтобы понять, как использовать функцию Untangle Row Bookmarks в Aspose.Words для .NET. Мы следовали пошаговому руководству, чтобы распутать закладки строк и удалить определенную строку, не повредив другие закладки.

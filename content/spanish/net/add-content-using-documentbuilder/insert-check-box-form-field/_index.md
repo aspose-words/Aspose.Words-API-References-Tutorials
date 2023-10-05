@@ -50,7 +50,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.
 Recuerde ajustar el código de acuerdo con sus requisitos específicos y mejorarlo con funciones adicionales según sea necesario.
 
 ## Conclusión
-¡Felicidades! Ha aprendido con éxito cómo insertar un campo de formulario de casilla de verificación en un documento de Word usando Aspose.Words para .NET. Si sigue la guía paso a paso y utiliza el código fuente proporcionado, ahora puede mejorar sus documentos con campos de formulario de casillas de verificación interactivas.
+¡Felicidades! Ha aprendido con éxito cómo insertar un campo de formulario de casilla de verificación en un documento de Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede mejorar sus documentos con campos de formulario de casilla de verificación interactivos.
 
 ### Preguntas frecuentes
 

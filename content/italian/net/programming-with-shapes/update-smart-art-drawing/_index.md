@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Passaggio 2: caricare il documento
- Carica il documento Word che contiene il disegno Smart Art utilizzando il file`Document` costruttore di classi.
+Carica il documento Word che contiene il disegno Smart Art utilizzando il file`Document` costruttore di classi.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");

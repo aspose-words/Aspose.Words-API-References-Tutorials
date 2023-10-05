@@ -50,7 +50,7 @@ doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 
 ## Schritt 5: Speichern des geänderten Dokuments
 
- Abschließend speichern wir das geänderte Dokument mithilfe von in einem angegebenen Verzeichnis`Save` Methode:
+Abschließend speichern wir das geänderte Dokument mithilfe von in einem angegebenen Verzeichnis`Save` Methode:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-markdown/image/
 ---
 
-det här exemplet kommer vi att förklara hur man använder bildfunktionen med Aspose.Words för .NET. Med bilder kan du infoga illustrationer och grafik i ett dokument.
+I det här exemplet kommer vi att förklara hur man använder bildfunktionen med Aspose.Words för .NET. Med bilder kan du infoga illustrationer och grafik i ett dokument.
 
 ## Steg 1: Använda en dokumentgenerator
 
@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Steg 2: Infoga en bild
 
- Vi kan infoga en bild med hjälp av`Shape` klass och specificera typ av bild, här`ShapeType.Image` . Vi ställer också in bildens wrap-typ till`WrapType.Inline`.
+ Vi kan infoga en bild med hjälp av`Shape` klass och specificera typ av bild, här`ShapeType.Image` Vi ställer också in bildens wrap-typ till`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ Grattis! Du har nu lärt dig hur du använder bildfunktionen med Aspose.Words f�
 
 #### F: Kan jag infoga en bild från en URL i Aspose.Words?
 
- S: Ja, du kan infoga en bild från en URL i Aspose.Words. Du kan använda samma`InsertImage`metod och ange bildens URL istället för den lokala filsökvägen.
+ S: Ja, du kan infoga en bild från en URL i Aspose.Words. Du kan använda samma`InsertImage` metod och ange bildens URL istället för den lokala filsökvägen.
 
 #### F: Hur kan jag ändra storlek på en bild i Aspose.Words?
 
@@ -69,7 +69,7 @@ Grattis! Du har nu lärt dig hur du använder bildfunktionen med Aspose.Words f�
 
 #### F: Kan jag använda filter på bilder i Aspose.Words?
 
- S: Ja, du kan använda filter på bilder i Aspose.Words. Du kan till exempel använda ett oskärpafilter på en bild med hjälp av`ApplyGaussianBlur` metod för`Shape` objekt.
+S: Ja, du kan använda filter på bilder i Aspose.Words. Du kan till exempel använda ett oskärpafilter på en bild med hjälp av`ApplyGaussianBlur` metod för`Shape` objekt.
 
 #### F: Hur kan jag ersätta en bild med en annan i Aspose.Words?
 

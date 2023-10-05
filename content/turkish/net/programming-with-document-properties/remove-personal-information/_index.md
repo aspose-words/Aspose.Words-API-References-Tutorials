@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInforma
 
 ## 3. Adım: Kişisel bilgileri silin
 
- Artık kişisel bilgilerin kaldırılmasını ayarlayarak etkinleştireceğiz.`RemovePersonalInformation` mülkiyet`true`. Aşağıdaki kodu kullanın:
+ Artık kişisel bilgilerin kaldırılmasını ayarlayarak etkinleştireceğiz.`RemovePersonalInformation`mülkiyet`true`. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.RemovePersonalInformation = true;

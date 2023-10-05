@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: imposta l'inizio della nuova sezione della pagina
 
-Per iniziare il documento aggiunto su una nuova pagina, impostare il file`SectionStart` proprietà della prima sezione nel documento di origine a`SectionStart.NewPage`.
+ Per iniziare il documento aggiunto su una nuova pagina, impostare il file`SectionStart` proprietà della prima sezione nel documento di origine a`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Passaggio 4: aggiungi il documento di origine
 
-Aggiungi il documento di origine al documento di destinazione utilizzando il file`AppendDocument` metodo del`Document` classe. Imposta la modalità del formato di importazione su`ImportFormatMode.KeepSourceFormatting` per preservare gli stili originali del documento di origine.
+ Aggiungi il documento di origine al documento di destinazione utilizzando il file`AppendDocument` metodo del`Document` classe. Imposta la modalità del formato di importazione su`ImportFormatMode.KeepSourceFormatting` per preservare gli stili originali del documento di origine.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ Ciò completa l'implementazione dell'unione di due documenti su una nuova pagina
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Imposta il documento aggiunto in modo che inizi su una nuova pagina.
+	//Imposta il documento aggiunto in modo che inizi su una nuova pagina.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Aggiungi il documento di origine utilizzando gli stili originali trovati nel documento di origine.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

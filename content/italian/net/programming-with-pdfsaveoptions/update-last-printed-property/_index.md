@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Passaggio 3: configura le opzioni Salva come PDF con la proprietà "Ultima stampata" aggiornata
 
- Per abilitare l'aggiornamento della proprietà "Ultima stampata" durante la conversione in PDF, dobbiamo configurare il file`PdfSaveOptions` oggetto e impostare il`UpdateLastPrintedProperty` proprietà a`true`.
+ Per abilitare l'aggiornamento della proprietà "Ultima stampata" durante la conversione in PDF, dobbiamo configurare il file`PdfSaveOptions` oggetto e impostare il`UpdateLastPrintedProperty`proprietà a`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
@@ -74,7 +74,7 @@ R: Per aggiornare la proprietà "Ultima stampata" in un documento PDF con Aspose
 
  Crea un'istanza di`Document` classe specificando il percorso del documento Word.
 
- Crea un'istanza di`PdfSaveOptions` classe e impostare il file`UpdateLastPrintedProperty` proprietà a`true` per abilitare l'aggiornamento della proprietà "Ultima stampata".
+ Crea un'istanza di`PdfSaveOptions` classe e impostare il file`UpdateLastPrintedProperty`proprietà a`true` per abilitare l'aggiornamento della proprietà "Ultima stampata".
 
  Usa il`Save` metodo del`Document`classe per salvare il documento in formato PDF specificando le opzioni di salvataggio.
 

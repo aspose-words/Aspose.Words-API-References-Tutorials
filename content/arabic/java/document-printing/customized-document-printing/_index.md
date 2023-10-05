@@ -29,7 +29,7 @@ url: /ar/java/document-printing/customized-document-printing/
 لنبدأ بإنشاء مستند فارغ باستخدام Aspose.Words for Java:
 
 ```java
-// كود جافا لإنشاء مستند فارغ
+//كود جافا لإنشاء مستند فارغ
 Document doc = new Document();
 ```
 

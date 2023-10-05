@@ -17,7 +17,7 @@ Im heutigen digitalen Zeitalter spielt das Dokumentenmanagement in verschiedenen
 Bevor wir in den Codierungsteil eintauchen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 - Java-Entwicklungsumgebung: Auf Ihrem System sollte das Java Development Kit (JDK) installiert sein.
--  Aspose.Words für Java: Laden Sie die Aspose.Words für Java-Bibliothek herunter und richten Sie sie ein[Aspose-Website](https://releases.aspose.com/words/java/).
+- Aspose.Words für Java: Laden Sie die Aspose.Words für Java-Bibliothek herunter und richten Sie sie ein[Aspose-Website](https://releases.aspose.com/words/java/).
 
 ## Einrichten Ihres Java-Projekts
 
@@ -54,7 +54,7 @@ public class DocumentToImageConverter {
 
 ## Anpassen der Bildkonvertierung
 
- Sie können den Bildkonvertierungsprozess weiter anpassen, indem Sie Folgendes anpassen`ImageSaveOptions`Sie können beispielsweise die Auflösung, den Seitenbereich und die Qualität des Ausgabebilds festlegen.
+ Sie können den Bildkonvertierungsprozess weiter anpassen, indem Sie Folgendes anpassen`ImageSaveOptions`. Sie können beispielsweise die Auflösung, den Seitenbereich und die Qualität des Ausgabebilds festlegen.
 
 ## Abschluss
 
@@ -72,7 +72,7 @@ Das Konvertieren von Dokumenten in Bilder in Java wird mit Aspose.Words für Jav
 Absolut! Sie können Aspose.Words für Java verwenden, um mehrere Dokumente effizient stapelweise in Bilder zu konvertieren.
 
 ### In welche anderen Formate kann ich Dokumente konvertieren?
-Aspose.Words für Java unterstützt verschiedene Ausgabeformate, darunter PDF, HTML und mehr. Sie können das ganz einfach anpassen`SaveFormat` In`ImageSaveOptions` um Dokumente in Ihr gewünschtes Format zu konvertieren.
+ Aspose.Words für Java unterstützt verschiedene Ausgabeformate, darunter PDF, HTML und mehr. Sie können das ganz einfach anpassen`SaveFormat` In`ImageSaveOptions`um Dokumente in Ihr gewünschtes Format zu konvertieren.
 
 ### Wo finde ich weitere Dokumentation und Beispiele?
  Eine umfassende Dokumentation und Codebeispiele finden Sie unter[Aspose.Words für Java API-Referenz](https://reference.aspose.com/words/java/).

@@ -83,7 +83,7 @@ R : Pour réduire la taille du document PDF avec l'échantillonnage d'images à
 
  Configurez les options d'enregistrement au format PDF en créant une instance du`PdfSaveOptions` classe et en définissant les options d'échantillonnage d'image à l'aide de la`DownsampleOptions` propriété. Vous pouvez spécifier la résolution cible des images à l'aide de l'option`Resolution` et définissez un seuil de résolution minimum au-dessus duquel les images ne seront pas réduites à l'aide de la propriété`ResolutionThreshold` propriété.
 
- Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document`classe spécifiant le chemin et les options de sauvegarde.
+ Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document` classe spécifiant le chemin et les options de sauvegarde.
 
 #### Q : Quels sont les avantages de réduire la taille d’un document PDF grâce à l’échantillonnage d’images ?
 R : Les avantages de la réduction de la taille d’un document PDF grâce à l’échantillonnage d’images sont :

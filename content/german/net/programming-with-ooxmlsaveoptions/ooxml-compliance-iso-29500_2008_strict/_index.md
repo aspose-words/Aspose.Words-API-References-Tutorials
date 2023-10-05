@@ -33,7 +33,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- In diesem Schritt konfigurieren wir die OOXML-Speicheroptionen mithilfe von`OptimizeFor` Und`OoxmlSaveOptions`Methoden. Wir optimieren die Dokumentkompatibilität für die Word 2016-Version mit`OptimizeFor` und stellen Sie die Compliance auf ein`Iso29500_2008_Strict` verwenden`Compliance`.
+ In diesem Schritt konfigurieren wir die OOXML-Speicheroptionen mithilfe von`OptimizeFor` Und`OoxmlSaveOptions` Methoden. Wir optimieren die Dokumentkompatibilität für die Word 2016-Version mit`OptimizeFor`und stellen Sie die Compliance auf ein`Iso29500_2008_Strict` verwenden`Compliance`.
 
 ## Schritt 4: Speichern des Dokuments mit Ooxml Iso 29500_2008_Strict Compliance
 
@@ -43,9 +43,9 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
 
  In diesem letzten Schritt speichern wir das Dokument mit`Save` -Methode und Übergabe des Pfads zur Ausgabedatei mit der`.docx` Erweiterung zusammen mit den angegebenen Speicheroptionen.
 
-Jetzt können Sie Quellcode ausführen, um beim Speichern eines Dokuments die Einhaltung von Ooxml Iso 29500_2008_Strict sicherzustellen. Die resultierende Datei wird im angegebenen Verzeichnis mit dem Namen „WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx“ gespeichert.
+Jetzt können Sie Quellcode ausführen, um beim Speichern eines Dokuments die Einhaltung von Ooxml ISO 29500_2008_Strict sicherzustellen. Die resultierende Datei wird im angegebenen Verzeichnis mit dem Namen „WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx“ gespeichert.
 
-### Beispielquellcode für Ooxml Compliance Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
+### Beispielquellcode für Ooxml Compliance ISO 29500_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp
 
 // Pfad zu Ihrem Dokumentenverzeichnis

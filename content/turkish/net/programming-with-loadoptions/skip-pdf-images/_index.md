@@ -58,7 +58,7 @@ C: PDF görüntü yüklemesini atlamak çeşitli nedenlerden dolayı faydalı ol
 
 #### S: Aspose.Words for .NET'te PDF görüntülerini yüklemeyi nasıl atlayabilirim?
 
- C: PDF görüntülerini yüklemeyi aşağıdaki düğmeyi kullanarak atlayabilirsiniz:`PdfLoadOptions`Aspose.Words for .NET tarafından sağlanan sınıf. Basitçe ayarlayın`SkipPdfImages` mülkiyet`true` PDF belgeniz için yükleme seçeneklerini yapılandırırken.
+ C: PDF görüntülerini yüklemeyi aşağıdaki düğmeyi kullanarak atlayabilirsiniz:`PdfLoadOptions`Aspose.Words for .NET tarafından sağlanan sınıf. Basitçe ayarlayın`SkipPdfImages`mülkiyet`true` PDF belgeniz için yükleme seçeneklerini yapılandırırken.
 
 #### S: Belgeyi yükledikten sonra atlanan PDF görüntülerine hâlâ erişebilir miyim?
 

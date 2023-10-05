@@ -414,7 +414,7 @@ Puoi controllare il sito Web Aspose o il repository Maven per la versione più r
 Sì, Aspose.Words per Java è compatibile con Java 11 e versioni successive.
 
 ### Come posso impostare i margini della pagina per sezioni specifiche del mio documento?
- Puoi impostare i margini della pagina per sezioni specifiche del tuo documento utilizzando`PageSetup` classe. Ecco un esempio:
+Puoi impostare i margini della pagina per sezioni specifiche del tuo documento utilizzando`PageSetup` classe. Ecco un esempio:
 
 ```java
 Section section = doc.getSections().get(0); // Ottieni la prima sezione

@@ -119,7 +119,7 @@ Ja, Aspose.Words für Java ist vielseitig und kann von Entwicklern aller Niveaus
 
 ### Wo kann ich Aspose.Words für Java herunterladen?
 
- Sie können Aspose.Words für Java von der Website unter herunterladen[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Befolgen Sie die Installationsanweisungen, um zu beginnen.
+Sie können Aspose.Words für Java von der Website unter herunterladen[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Befolgen Sie die Installationsanweisungen, um zu beginnen.
 
 ## Abschluss
 

@@ -33,7 +33,7 @@ print(doc.get_text())
 
 ## Değişiklikleri İzlemeyi Etkinleştirme
 
- Bir belgede değişiklikleri izlemeyi etkinleştirmek için`TrackRevisions` mülkiyet`True`:
+ Bir belgede değişiklikleri izlemeyi etkinleştirmek için`TrackRevisions`mülkiyet`True`:
 
 ```python
 doc.track_revisions = True

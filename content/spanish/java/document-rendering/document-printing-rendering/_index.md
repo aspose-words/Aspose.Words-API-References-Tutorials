@@ -41,7 +41,7 @@ Imprimir un documento usando Aspose.Words para Java es sencillo. Aquí hay un ej
 doc.print("printerName");
 ```
 
-Puede especificar el nombre de la impresora como argumento para el`print` método. Esto enviará el documento a la impresora especificada para su impresión.
+ Puede especificar el nombre de la impresora como argumento para el`print`método. Esto enviará el documento a la impresora especificada para su impresión.
 
 ## Representación de documentos
 

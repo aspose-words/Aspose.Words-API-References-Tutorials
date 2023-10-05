@@ -44,7 +44,7 @@ builder.Write("Text");
 
 ## Steg 4: Använd funktionen Ignorera text inuti Infoga ändringar
 
- För att ignorera text inuti infoga revisioner på efterföljande operationer kan vi använda a`FindReplaceOptions` objekt och ställ in`IgnoreInserted` egendom till`true`:
+ För att ignorera text inuti infoga revisioner på efterföljande operationer kan vi använda a`FindReplaceOptions` objekt och ställ in`IgnoreInserted`egendom till`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -61,7 +61,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Steg 6: Visa den modifierade dokumentutgången
 
-Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
+ Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -69,7 +69,7 @@ Console.WriteLine(doc.GetText());
 
 ## Steg 7: Ändra alternativ för att inkludera infogningsrevisioner
 
-Om vi vill inkludera texten inuti infogningsrevisionerna i utdataresultatet, kan vi ändra alternativen för att inte ignorera infogningsrevisionerna. För detta kommer vi att ställa in`IgnoreInserted` egendom till`false`:
+Om vi vill inkludera texten inuti infogningsrevisionerna i utdataresultatet, kan vi ändra alternativen för att inte ignorera infogningsrevisionerna. För detta kommer vi att ställa in`IgnoreInserted`egendom till`false`:
 
 ```csharp
 options.IgnoreInserted = false;
@@ -156,7 +156,7 @@ builder.Write("Text");
 
 #### F: Hur kan jag ignorera text i infogningsversioner i Aspose.Words för .NET?
 
- S: För att ignorera text i infogningsrevisioner under efterföljande operationer, kan du använda a`FindReplaceOptions` objekt och ställ in`IgnoreInserted` egendom till`true`:
+ S: För att ignorera text i infogningsrevisioner under efterföljande operationer, kan du använda a`FindReplaceOptions` objekt och ställ in`IgnoreInserted`egendom till`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };

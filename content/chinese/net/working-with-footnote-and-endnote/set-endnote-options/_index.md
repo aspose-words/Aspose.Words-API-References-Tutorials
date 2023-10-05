@@ -97,4 +97,4 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 #### 问：是否可以在文档各部分之间继续进行尾注编号？
 
-答：是的，可以在文档各部分之间继续进行尾注编号。使用`RestartRule`的财产`EndnoteOptions`类并将其设置为`RestartContinuous`允许在各部分之间继续编号。
+答：是的，可以在文档各部分之间继续进行尾注编号。使用`RestartRule`的财产`EndnoteOptions`类并将其设置为`RestartContinuous`允许在各节之间继续编号。

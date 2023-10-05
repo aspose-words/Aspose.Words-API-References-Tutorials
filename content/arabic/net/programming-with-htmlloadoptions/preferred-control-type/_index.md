@@ -28,7 +28,7 @@ const string html=@"
 
 ## الخطوة 2: قم بتعيين خيارات تحميل HTML
 
- بعد ذلك، نقوم بإنشاء`HtmlLoadOptions` الكائن وتعيين`PreferredControlType` الملكية ل`HtmlControlType.StructuredDocumentTag`. هذا يخبر Aspose.Words باستخدام StructuredDocumentTags لتمثيل HTML عند التحميل.
+ بعد ذلك، نقوم بإنشاء`HtmlLoadOptions` الكائن وتعيين`PreferredControlType`الملكية ل`HtmlControlType.StructuredDocumentTag`. هذا يخبر Aspose.Words باستخدام StructuredDocumentTags لتمثيل HTML عند التحميل.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 ## خاتمة
 
- باتباع هذا الدليل خطوة بخطوة، تكون قد تعلمت كيفية استخدام ميزة "نوع التحكم المفضل" في Aspose.Words لـ .NET لتحديد نوع التحكم المطلوب عند تحميل مستند HTML. وضع`PreferredControlType` الملكية ل`HtmlControlType.StructuredDocumentTag` يسمح لـ Aspose.Words باستخدام StructuredDocumentTags (SDT) لتمثيل محتوى HTML ومعالجته بشكل أفضل. يمكنك استكشاف أنواع التحكم الأخرى أيضًا لتناسب متطلباتك المحددة. يساعد استخدام هذه الميزة على ضمان معالجة دقيقة وفعالة لمستندات HTML في تطبيق C# الخاص بك باستخدام Aspose.Words.
+ باتباع هذا الدليل خطوة بخطوة، تكون قد تعلمت كيفية استخدام ميزة "نوع التحكم المفضل" في Aspose.Words لـ .NET لتحديد نوع التحكم المطلوب عند تحميل مستند HTML. وضع`PreferredControlType`الملكية ل`HtmlControlType.StructuredDocumentTag` يسمح لـ Aspose.Words باستخدام StructuredDocumentTags (SDT) لتمثيل محتوى HTML ومعالجته بشكل أفضل. يمكنك استكشاف أنواع التحكم الأخرى أيضًا لتناسب متطلباتك المحددة. يساعد استخدام هذه الميزة على ضمان معالجة دقيقة وفعالة لمستندات HTML في تطبيق C# الخاص بك باستخدام Aspose.Words.
 
 ### الأسئلة الشائعة حول نوع التحكم المفضل في مستند Word
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 #### س: كيف يمكنني التأكد من أن Aspose.Words يستخدم نوع التحكم المفضل عند تحميل مستند HTML؟
 
- ج: من خلال تحديد`PreferredControlType` الملكية ل`HtmlControlType.StructuredDocumentTag`كما هو موضح في مثال التعليمات البرمجية المصدر، سوف يستخدم Aspose.Words SDTs لتمثيل عناصر HTML عند تحميل المستند.
+ ج: من خلال تحديد`PreferredControlType`الملكية ل`HtmlControlType.StructuredDocumentTag`كما هو موضح في مثال التعليمات البرمجية المصدر، سوف يستخدم Aspose.Words SDTs لتمثيل عناصر HTML عند تحميل المستند.
 
 #### س: هل يمكنني استخدام أنواع التحكم الأخرى كخيار مفضل؟
 

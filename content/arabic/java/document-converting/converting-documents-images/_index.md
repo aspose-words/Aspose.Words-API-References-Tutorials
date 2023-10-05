@@ -17,7 +17,7 @@ url: /ar/java/document-converting/converting-documents-images/
 قبل أن نتعمق في جزء البرمجة، تأكد من توفر المتطلبات الأساسية التالية:
 
 - بيئة تطوير Java: يجب أن يكون لديك Java Development Kit (JDK) مثبتًا على نظامك.
--  Aspose.Words for Java: قم بتنزيل وإعداد مكتبة Aspose.Words for Java من[موقع أسبوز](https://releases.aspose.com/words/java/).
+- Aspose.Words for Java: قم بتنزيل وإعداد مكتبة Aspose.Words for Java من[موقع أسبوز](https://releases.aspose.com/words/java/).
 
 ## إعداد مشروع جافا الخاص بك
 
@@ -54,7 +54,7 @@ public class DocumentToImageConverter {
 
 ## تخصيص تحويل الصور
 
- يمكنك تخصيص عملية تحويل الصور بشكل أكبر عن طريق التغيير والتبديل`ImageSaveOptions`على سبيل المثال، يمكنك ضبط الدقة ونطاق الصفحات وجودة الصورة الناتجة.
+ يمكنك تخصيص عملية تحويل الصور بشكل أكبر عن طريق التغيير والتبديل`ImageSaveOptions`. على سبيل المثال، يمكنك ضبط الدقة ونطاق الصفحات وجودة الصورة الناتجة.
 
 ## خاتمة
 
@@ -72,7 +72,7 @@ public class DocumentToImageConverter {
 قطعاً! يمكنك استخدام Aspose.Words for Java لتحويل مستندات متعددة إلى صور بكفاءة.
 
 ### ما التنسيقات الأخرى التي يمكنني تحويل المستندات إليها؟
-يدعم Aspose.Words for Java تنسيقات الإخراج المختلفة، بما في ذلك PDF وHTML والمزيد. يمكنك بسهولة ضبط`SaveFormat` في`ImageSaveOptions` لتحويل المستندات إلى التنسيق المطلوب.
+ يدعم Aspose.Words for Java تنسيقات الإخراج المختلفة، بما في ذلك PDF وHTML والمزيد. يمكنك بسهولة ضبط`SaveFormat` في`ImageSaveOptions`لتحويل المستندات إلى التنسيق المطلوب.
 
 ### أين يمكنني العثور على المزيد من الوثائق والأمثلة؟
  للحصول على وثائق شاملة وأمثلة التعليمات البرمجية، قم بزيارة[Aspose.Words لمرجع Java API](https://reference.aspose.com/words/java/).

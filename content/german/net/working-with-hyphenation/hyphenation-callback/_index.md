@@ -14,7 +14,7 @@ In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie die Silbentre
 
 ## Schritt 1: Silbentrennungserinnerung speichern
 
-Zuerst registrieren wir den Silbentrennungsrückruf mithilfe einer benutzerdefinierten Funktion`CustomHyphenationCallback` Klasse. Dadurch können wir die Silbentrennung von Wörtern nach unseren eigenen Regeln handhaben:
+ Zuerst registrieren wir den Silbentrennungsrückruf mithilfe einer benutzerdefinierten Funktion`CustomHyphenationCallback` Klasse. Dadurch können wir die Silbentrennung von Wörtern nach unseren eigenen Regeln handhaben:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
@@ -105,4 +105,4 @@ A: Die Verwendung eines Silbenbildungs-Boosters kann in mehreren Szenarien nütz
 
 #### F: Wie kann ich die benutzerdefinierte Silbentrennung mit einer Silbentrennungserinnerung in Aspose.Words testen?
 
-A: Um die benutzerdefinierte Silbenbildung mit einer Silbenerinnerung in Aspose.Words zu testen, können Sie ein Testdokument erstellen, das Wörter enthält, für die Sie benutzerdefinierte Silbenbildungsregeln anwenden möchten. Dann können Sie Ihren benutzerdefinierten Rückruf für die Silbentrennung festlegen`Document.Range.Replace()` Methode, um die Wörter im Dokument zu ersetzen, und verwenden Sie die`Hyphenate()` Methode der`Hyphenation` Klasse, um die Silbenbildung der Wörter zu erhalten. Anschließend können Sie die Silbenwörter nach Bedarf formatieren, indem Sie beispielsweise Bindestriche zwischen den Silben einfügen.
+ A: Um die benutzerdefinierte Silbenbildung mit einer Silbenerinnerung in Aspose.Words zu testen, können Sie ein Testdokument erstellen, das Wörter enthält, für die Sie benutzerdefinierte Silbenbildungsregeln anwenden möchten. Dann können Sie Ihren benutzerdefinierten Rückruf für die Silbentrennung festlegen`Document.Range.Replace()` Methode, um die Wörter im Dokument zu ersetzen, und verwenden Sie die`Hyphenate()` Methode der`Hyphenation` Klasse, um die Silbenbildung der Wörter zu erhalten. Anschließend können Sie die Silbenwörter nach Bedarf formatieren, indem Sie beispielsweise Bindestriche zwischen den Silben einfügen.

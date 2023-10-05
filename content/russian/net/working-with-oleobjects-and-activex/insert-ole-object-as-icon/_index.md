@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте объект OLE в виде значка.
- Используйте конструктор документов`InsertOleObjectAsIcon` метод для вставки объекта OLE в виде значка в документ. Укажите путь к файлу OLE, флаг отображения, путь к значку и имя внедренного объекта.
+ Используйте конструктор документов`InsertOleObjectAsIcon`метод для вставки объекта OLE в виде значка в документ. Укажите путь к файлу OLE, флаг отображения, путь к значку и имя внедренного объекта.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### Вопрос. Как создать новый документ и генератор документов в Aspose.Words для .NET?
 
- О: Вы можете создать новый документ, используя`Document` класс и построитель документов с использованием`DocumentBuilder`сорт. Вот пример:
+ О: Вы можете создать новый документ, используя`Document` класс и построитель документов с использованием`DocumentBuilder` сорт. Вот пример:
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### Вопрос. Как сохранить документ со вставленным в виде значка объектом OLE?
 
- A: Используйте документ`Save`метод сохранения документа в файл. Вот пример:
+ A: Используйте документ`Save` метод сохранения документа в файл. Вот пример:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

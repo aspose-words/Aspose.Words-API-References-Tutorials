@@ -53,7 +53,7 @@ footer
 
 ## Passaggio 5: salva il documento modificato
 
- Infine, salviamo il documento modificato in una directory specificata utilizzando il file`Save` metodo:
+Infine, salviamo il documento modificato in una directory specificata utilizzando il file`Save` metodo:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");

@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## الخطوة 4: تعديل تنسيق الفقرة
 
- للحفاظ على التنسيق الصحيح، قم بالتكرار عبر كافة الفقرات في المستند المصدر وقم بتعيين`KeepWithNext` الملكية ل`true`. وهذا يضمن بقاء الفقرات معًا أثناء عملية الإلحاق.
+ للحفاظ على التنسيق الصحيح، قم بالتكرار عبر كافة الفقرات في المستند المصدر وقم بتعيين`KeepWithNext`الملكية ل`true`وهذا يضمن بقاء الفقرات معًا أثناء عملية الإلحاق.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -85,9 +85,9 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// للتأكد من عدم حدوث ذلك عندما يحتوي المستند المصدر على إعدادات إعداد صفحة مختلفة، تأكد من أن
-	//الإعدادات متطابقة بين القسم الأخير من المستند الوجهة.
+	// الإعدادات متطابقة بين القسم الأخير من المستند الوجهة.
 	// إذا كان هناك المزيد من الأقسام المستمرة التي تتبع في المستند المصدر،
-	// سيتعين تكرار هذا لتلك الأقسام.
+	//سيتعين تكرار هذا لتلك الأقسام.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

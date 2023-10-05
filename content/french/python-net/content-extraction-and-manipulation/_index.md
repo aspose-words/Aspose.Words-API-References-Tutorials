@@ -30,7 +30,7 @@ Tout au long de ces didacticiels, vous plongerez dans les concepts et techniques
 À la fin de ces didacticiels, vous disposerez des connaissances nécessaires pour gérer facilement diverses tâches de manipulation de contenu de documents. Vous obtiendrez des informations sur les meilleures pratiques en matière d'extraction et de manipulation de contenu, garantissant ainsi que vos flux de travail de traitement de documents sont efficaces, précis et adaptés à vos besoins spécifiques.
 
 ## Tutoriels d'extraction et de manipulation de contenu
-### [Extraction et modification de contenu dans des documents Word](./extract-modify-document-content/)
+### [Extraire et modifier du contenu dans des documents Word](./extract-modify-document-content/)
 Découvrez comment extraire et modifier le contenu de documents Word à l'aide d'Aspose.Words pour Python. Guide étape par étape avec le code source.
 ### [Extraction efficace de contenu dans les documents Word](./document-content-extraction/)
 Extrayez efficacement le contenu des documents Word à l'aide d'Aspose.Words pour Python. Apprenez étape par étape avec des exemples de code.

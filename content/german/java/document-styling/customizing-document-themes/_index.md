@@ -102,7 +102,7 @@ Um ein benutzerdefiniertes Design auf ein vorhandenes Dokument anzuwenden, führ
 
 Ja, Sie können Ihre eigenen benutzerdefinierten Designs erstellen, indem Sie Designfarben und Schriftarten nach Ihren Wünschen definieren. Aspose.Words für Java bietet Flexibilität bei der Theme-Anpassung.
 
-### Was ist der Unterschied zwischen Haupt- und Nebenschriftarten in einem Design?
+### Was ist der Unterschied zwischen Haupt- und Nebenschriftarten in einem Theme?
 
 In einem Dokumentdesign werden Hauptschriftarten für Überschriften und Titel verwendet, während Nebenschriftarten für Fließtext und Beschriftungen verwendet werden. Sie können sowohl Haupt- als auch Nebenschriftarten separat anpassen.
 

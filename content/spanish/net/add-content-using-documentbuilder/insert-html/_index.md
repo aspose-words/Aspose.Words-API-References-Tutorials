@@ -59,7 +59,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 Recuerde ajustar el código de acuerdo con su contenido y requisitos HTML específicos. Asegúrese de que su HTML esté bien formado y sea compatible con Aspose.Words para .NET.
 
 ## Conclusión
-¡Felicidades! Ha aprendido con éxito cómo insertar contenido HTML en un documento de Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede incorporar elementos, formatos y estilos HTML dentro de sus documentos de Word.
+¡Felicidades! Ha aprendido con éxito cómo insertar contenido HTML en un documento de Word usando Aspose.Words para .NET. Si sigue la guía paso a paso y utiliza el código fuente proporcionado, ahora puede incorporar elementos, formatos y estilos HTML en sus documentos de Word.
 
 ### Preguntas frecuentes para insertar HTML en un documento de Word
 

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/basic-conversions/doc-to-docx/
 ---
 
-den här handledningen kommer vi att gå igenom processen steg-för-steg för att använda Aspose.Words för .NET för att konvertera ett Word-dokument i .doc-format till Docx-format. Vi kommer att förklara den medföljande C#-källkoden och guida dig om hur du implementerar den i dina egna projekt.
+I den här handledningen kommer vi att gå igenom processen steg-för-steg för att använda Aspose.Words för .NET för att konvertera ett Word-dokument i .doc-format till Docx-format. Vi kommer att förklara den medföljande C#-källkoden och guida dig om hur du implementerar den i dina egna projekt.
 
  Till att börja med, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från[Aspose.Releases](https://releases.aspose.com/words/net/).
 
@@ -37,7 +37,7 @@ Document doc = new Document(dataDir + "Document.doc");
 
 ## Steg 4: Konvertera dokumentet till Docx-format
 
- Nu när du har initierat`Document`objekt kan du fortsätta med konverteringsprocessen. Aspose.Words för .NET tillhandahåller olika alternativ och inställningar för anpassning, men för en grundläggande konvertering krävs inga ytterligare parametrar.
+ Nu när du har initierat`Document` objekt kan du fortsätta med konverteringsprocessen. Aspose.Words för .NET tillhandahåller olika alternativ och inställningar för anpassning, men för en grundläggande konvertering krävs inga ytterligare parametrar.
 
 ## Steg 5: Spara det konverterade dokumentet
 

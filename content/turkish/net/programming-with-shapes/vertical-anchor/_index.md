@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. Adım: Şekil Ekleme ve Yapılandırma
- kullanarak belgeye bir şekil ekleyin.`InsertShape` yöntemi`DocumentBuilder` nesne. Şekil için istediğiniz boyutları ayarlayın.
+kullanarak belgeye bir şekil ekleyin.`InsertShape` yöntemi`DocumentBuilder` nesne. Şekil için istediğiniz boyutları ayarlayın.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);

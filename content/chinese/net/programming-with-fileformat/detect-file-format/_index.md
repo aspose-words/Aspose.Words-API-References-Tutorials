@@ -66,7 +66,7 @@ break;
 LoadFormat.Docx box:
 Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
 break;
-//...添加其他支持的文档格式的案例
+// ...添加其他支持的文档格式的案例
 LoadFormat.Unknown case:
 Console.WriteLine("\tFormat in
 
@@ -211,7 +211,7 @@ break;
 
 #### 如何使用 Aspose.Words for .NET 检测文档文件的格式？
 
-要使用 Aspose.Words for .NET 检测文档文件的格式，您可以按照教程中提供的步骤进行操作。使用`DetectFileFormat`的方法`FileFormatUtil`类将允许您检测文档文件的格式。这将允许您确定它是 Microsoft Word 97-2003 文档、模板、Office Open XML WordprocessingML 文档还是其他支持的格式。本教程中提供的代码将引导您完成此功能的实现。
+要使用 Aspose.Words for .NET 检测文档文件的格式，您可以按照教程中提供的步骤进行操作。使用`DetectFileFormat`的方法`FileFormatUtil`类将允许您检测文档文件的格式。这将允许您确定它是 Microsoft Word 97-2003 文档、模板、Office Open XML WordprocessingML 文档还是其他受支持的格式。本教程中提供的代码将引导您完成此功能的实现。
 
 #### Aspose.Words for .NET 支持哪些文档格式？
 

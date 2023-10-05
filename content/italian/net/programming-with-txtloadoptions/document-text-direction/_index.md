@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection. Auto };
 ```
 
- In questo passaggio configuriamo le opzioni di caricamento del documento. Ne creiamo uno nuovo`TxtLoadOptions` oggetto e impostare il`DocumentDirection` proprietà a`DocumentDirection.Auto`. Questo valore indica ad Aspose.Words di determinare automaticamente la direzione del testo in base al contenuto del documento.
+ In questo passaggio configuriamo le opzioni di caricamento del documento. Ne creiamo uno nuovo`TxtLoadOptions` oggetto e impostare il`DocumentDirection`proprietà a`DocumentDirection.Auto`. Questo valore indica ad Aspose.Words di determinare automaticamente la direzione del testo in base al contenuto del documento.
 
 ## Passaggio 3: caricamento del documento
 

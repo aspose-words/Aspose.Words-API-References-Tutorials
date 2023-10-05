@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : Configurer le début d'une nouvelle section de page
 
-Pour démarrer le document ajouté sur une nouvelle page, définissez le`SectionStart` propriété de la première section du document source à`SectionStart.NewPage`.
+ Pour démarrer le document ajouté sur une nouvelle page, définissez le`SectionStart` propriété de la première section du document source à`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Étape 4 : Joindre le document source
 
-Ajoutez le document source au document de destination à l'aide du`AppendDocument` méthode du`Document` classe. Définissez le mode de format d'importation sur`ImportFormatMode.KeepSourceFormatting` pour conserver les styles originaux du document source.
+ Ajoutez le document source au document de destination à l'aide du`AppendDocument` méthode du`Document` classe. Définissez le mode de format d'importation sur`ImportFormatMode.KeepSourceFormatting` pour conserver les styles originaux du document source.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ Ceci termine la mise en œuvre de la jonction de deux documents sur une nouvelle
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Configurez le document annexé pour qu'il commence sur une nouvelle page.
+	//Configurez le document annexé pour qu'il commence sur une nouvelle page.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Ajoutez le document source en utilisant les styles d'origine trouvés dans le document source.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

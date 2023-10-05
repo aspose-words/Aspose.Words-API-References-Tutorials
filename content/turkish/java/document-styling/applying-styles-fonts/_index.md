@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Karmaşık belge biçimlendirmesi için birden fazla stili birleştirin:
 
 ```java
-// Benzersiz bir görünüm için stilleri birleştirin
+//Benzersiz bir görünüm için stilleri birleştirin
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words for Java, güçlü koşullu biçimlendirme yetenekleri sağlar. Bel
 Kesinlikle! Aspose.Words for Java, çeşitli dillerden ve komut dizilerinden çok çeşitli yazı tiplerini ve karakterleri destekler.
 
 ### Belirli stillere sahip metne nasıl köprüler ekleyebilirim?
-Metne köprü eklemek için,`FieldHyperlink` İstenilen formatı elde etmek için class'ı stillerle birlikte kullanın.
+ Metne köprü eklemek için,`FieldHyperlink`İstenilen formatı elde etmek için class'ı stillerle birlikte kullanın.
 
 ### Belge boyutu veya karmaşıklığı konusunda herhangi bir sınırlama var mı?
 Aspose.Words for Java, farklı boyut ve karmaşıklıktaki belgeleri işleyebilir. Ancak çok büyük belgeler ek bellek kaynakları gerektirebilir.

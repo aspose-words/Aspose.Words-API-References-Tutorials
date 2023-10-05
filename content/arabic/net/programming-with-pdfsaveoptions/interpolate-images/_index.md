@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## الخطوة 3: قم بتكوين خيارات الحفظ بصيغة PDF مع استكمال الإطار
 
- لتمكين استيفاء الصور عند التحويل إلى PDF، نحتاج إلى تكوين ملف`PdfSaveOptions` الكائن عن طريق تحديد`InterpolateImages` الملكية ل`true`.
+ لتمكين استيفاء الصور عند التحويل إلى PDF، نحتاج إلى تكوين ملف`PdfSaveOptions` الكائن عن طريق تحديد`InterpolateImages`الملكية ل`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOption
 
  إنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`InterpolateImages` الملكية ل`true` لتمكين الاستيفاء الصورة.
+ إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`InterpolateImages`الملكية ل`true` لتمكين الاستيفاء الصورة.
 
  استخدم ال`Save` طريقة`Document`فئة لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
 

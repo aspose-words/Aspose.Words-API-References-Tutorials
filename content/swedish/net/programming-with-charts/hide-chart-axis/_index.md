@@ -29,7 +29,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Infoga sedan ett diagram i dokumentet med hjälp av`InsertChart` metod för`DocumentBuilder`I det här exemplet infogar vi ett kolumndiagram.
+ Infoga sedan ett diagram i dokumentet med hjälp av`InsertChart` metod för`DocumentBuilder`. I det här exemplet infogar vi ett kolumndiagram.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
@@ -49,13 +49,13 @@ chart.Series.Add("Aspose Series 1",
 
 ## Steg 4: Dölj diagramaxeln
 
- För att dölja sjökortsaxeln, gå till`AxisY` egenskapen för diagrammet och ställ in`Hidden` egendom till`true`.
+ För att dölja sjökortsaxeln, gå till`AxisY` egenskapen för diagrammet och ställ in`Hidden`egendom till`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-I det här exemplet döljer vi diagrammets Y-axel.
+det här exemplet döljer vi diagrammets Y-axel.
 
 ## Steg 5: Spara dokumentet
 
@@ -89,7 +89,7 @@ Detta slutför implementeringen av att dölja diagramaxeln med Aspose.Words för
 
 I den här handledningen har du lärt dig hur du döljer diagramaxeln i ett Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du skapa ett diagram, lägga till seriedata och dölja diagramaxeln för att uppnå önskad visuell effekt.
 
- Aspose.Words för .NET tillhandahåller ett omfattande API för ordbehandling med diagram i Word-dokument, vilket gör att du kan manipulera olika aspekter av diagrammet, inklusive axelegenskaper. Genom att komma åt`AxisY`egenskapen för diagrammet kan du dölja Y-axeln för att ta bort den från diagramvisualiseringen.
+ Aspose.Words för .NET tillhandahåller ett omfattande API för ordbehandling med diagram i Word-dokument, vilket gör att du kan manipulera olika aspekter av diagrammet, inklusive axelegenskaper. Genom att komma åt`AxisY` egenskapen för diagrammet kan du dölja Y-axeln för att ta bort den från diagramvisualiseringen.
 
 Att dölja sjökortsaxeln kan vara användbart när du vill fokusera på diagramdata utan distraktion av axellinjerna och etiketterna. Det ger ett renare och mer minimalistiskt utseende till diagrammet.
 
@@ -104,13 +104,13 @@ Aspose.Words för .NET är ett kraftfullt dokumentbehandlingsbibliotek som gör 
 Du kan installera Aspose.Words för .NET genom att ladda ner det genom att använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Aspose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
 
 #### Q3. Kan jag dölja både X-axeln och Y-axeln i ett diagram?
- Ja, du kan dölja både X-axeln och Y-axeln i ett diagram med Aspose.Words för .NET. För att dölja X-axeln kan du komma åt`AxisX` egenskapen för diagrammet och ställ in`Hidden` egendom till`true` På samma sätt, för att dölja Y-axeln, kan du komma åt`AxisY` egendom och ställ in`Hidden` egendom till`true`. Detta gör att du kan ta bort båda axlarna från diagramvisualiseringen.
+ Ja, du kan dölja både X-axeln och Y-axeln i ett diagram med Aspose.Words för .NET. För att dölja X-axeln kan du komma åt`AxisX` egenskapen för diagrammet och ställ in`Hidden`egendom till`true` . På samma sätt, för att dölja Y-axeln, kan du komma åt`AxisY` egendom och ställ in`Hidden`egendom till`true`. Detta gör att du kan ta bort båda axlarna från diagramvisualiseringen.
 
 #### Q4. Kan jag visa axeln igen efter att ha gömt den?
- Ja, du kan visa diagramaxeln igen efter att ha gömt den med Aspose.Words för .NET. För att visa en dold axel, ställ helt enkelt in`Hidden` motsvarande egendom`AxisX` eller`AxisY` invända mot`false`. Detta kommer att göra axeln synlig igen i diagrammet.
+Ja, du kan visa diagramaxeln igen efter att ha gömt den med Aspose.Words för .NET. För att visa en dold axel, ställ helt enkelt in`Hidden` motsvarande egendom`AxisX` eller`AxisY` invända mot`false`. Detta kommer att göra axeln synlig igen i diagrammet.
 
 #### F5. Kan jag anpassa andra egenskaper för diagramaxeln?
  Ja, Aspose.Words för .NET låter dig anpassa olika egenskaper för diagramaxeln, såsom axeltitel, etiketter, linjefärg och mer. Genom att komma åt`AxisX` och`AxisY` egenskaper för diagrammet kan du ändra egenskaper som`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, och många andra. Detta ger dig finkornig kontroll över diagramaxelns utseende och beteende.
 
 #### F6. Kan jag spara diagrammet med den dolda axeln i olika filformat?
-Ja, Aspose.Words för .NET låter dig spara dokumentet som innehåller diagrammet med en dold axel i olika filformat, såsom DOCX, PDF, HTML och mer. Du kan välja önskat utdataformat baserat på dina krav och använda`Save` metod för`Document` objekt för att spara dokumentet. Den dolda axeln kommer att bevaras i det sparade dokumentet.
+ Ja, Aspose.Words för .NET låter dig spara dokumentet som innehåller diagrammet med en dold axel i olika filformat, såsom DOCX, PDF, HTML och mer. Du kan välja önskat utdataformat baserat på dina krav och använda`Save` metod för`Document` objekt för att spara dokumentet. Den dolda axeln kommer att bevaras i det sparade dokumentet.

@@ -48,7 +48,7 @@ if (textBox1.IsValidLinkTarget(textBox2))
 ```
 ## Conclusión
 
-¡Enhorabuena! Ahora ha aprendido cómo crear un vínculo entre dos cuadros de texto en un documento de Word usando la biblioteca Aspose.Words para .NET. Con esta guía paso a paso, pudo configurar el documento, crear las formas de los cuadros de texto, acceder a los cuadros de texto, verificar la validez del destino del enlace y, finalmente, crear el enlace en sí.
+¡Enhorabuena! Ahora ha aprendido cómo crear un vínculo entre dos cuadros de texto en un documento de Word utilizando la biblioteca Aspose.Words para .NET. Con esta guía paso a paso, pudo configurar el documento, crear las formas de los cuadros de texto, acceder a los cuadros de texto, verificar la validez del destino del enlace y, finalmente, crear el enlace en sí.
 
 ### Preguntas frecuentes para crear un enlace en Word
 

@@ -54,7 +54,7 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 Üstbilgiler ve altbilgiler genellikle kritik bilgiler içerir. Belgelerinizdeki üstbilgileri ve altbilgileri nasıl yöneteceğinizi ve özelleştireceğinizi keşfedin.
 
 ```java
-//İlk sayfaya başlık ekleyin
+// İlk sayfaya başlık ekleyin
 Document doc = new Document();
 Section section = doc.getSections().get(0);
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
@@ -181,7 +181,7 @@ En iyi geliştiriciler bile sorunlarla karşılaşıyor. Bu bölümde sık karş
 
 ### Sayfa boyutunu A4 olarak nasıl ayarlayabilirim?
 
- Sayfa boyutunu A4 olarak ayarlamak için`PageSetup`sınıfını seçin ve kağıt boyutunu aşağıdaki gibi belirtin:
+ Sayfa boyutunu A4 olarak ayarlamak için`PageSetup` sınıfını seçin ve kağıt boyutunu aşağıdaki gibi belirtin:
 
 ```java
 Document doc = new Document();

@@ -54,7 +54,7 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 Sidhuvuden och sidfötter innehåller ofta viktig information. Utforska hur du hanterar och anpassar sidhuvuden och sidfötter i dina dokument.
 
 ```java
-//Lägg till en rubrik på första sidan
+// Lägg till en rubrik på första sidan
 Document doc = new Document();
 Section section = doc.getSections().get(0);
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
@@ -181,7 +181,7 @@ doc1.compare(doc2, "comparison_result.docx");
 
 ### Hur ställer jag in sidstorleken till A4?
 
- För att ställa in sidstorleken till A4 kan du använda`PageSetup`klass och ange pappersstorleken enligt följande:
+ För att ställa in sidstorleken till A4 kan du använda`PageSetup` klass och ange pappersstorleken enligt följande:
 
 ```java
 Document doc = new Document();

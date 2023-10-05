@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## 3. Adım: Belge Düğümü Türünü Alın
-Bir belgenin düğüm türünü almak için şunu kullanırız:`NodeType` mülk.
+ Bir belgenin düğüm türünü almak için şunu kullanırız:`NodeType` mülk.
 
 ```csharp
 NodeType type = doc.NodeType;

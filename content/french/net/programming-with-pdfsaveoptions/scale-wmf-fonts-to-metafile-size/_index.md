@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Étape 3 : Configurer les options de rendu des métafichiers
 
- Pour activer ou désactiver la mise à l'échelle des polices WMF en fonction de la taille du métafichier, nous devons configurer le`MetafileRenderingOptions`objet. Dans cet exemple, nous désactivons la mise à l'échelle des polices en définissant le`ScaleWmfFontsToMetafileSize` propriété à`false`.
+ Pour activer ou désactiver la mise à l'échelle des polices WMF en fonction de la taille du métafichier, nous devons configurer le`MetafileRenderingOptions`objet. Dans cet exemple, nous désactivons la mise à l'échelle des polices en définissant le`ScaleWmfFontsToMetafileSize`propriété à`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -97,11 +97,11 @@ R : Pour activer ou désactiver le redimensionnement des polices WMF à la tail
 
  Chargez le document que vous souhaitez traiter à l'aide du`Document` classe et spécifiez le chemin d’accès au document Word dans le répertoire de documents spécifié.
 
- Configurez les options de rendu des métafichiers en créant une instance du`MetafileRenderingOptions` classe et définir le`ScaleWmfFontsToMetafileSize` propriété à`true` pour activer la mise à l'échelle des polices WMF à la taille du métafichier, ou pour`false` pour désactiver cette fonctionnalité.
+ Configurez les options de rendu des métafichiers en créant une instance du`MetafileRenderingOptions` classe et définir le`ScaleWmfFontsToMetafileSize`propriété à`true` pour activer la mise à l'échelle des polices WMF à la taille du métafichier, ou pour`false` pour désactiver cette fonctionnalité.
 
  Configurez les options d'enregistrement au format PDF en créant une instance du`PdfSaveOptions` classe et en utilisant les options de rendu de métafichier configurées précédemment.
 
- Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document`classe spécifiant le chemin et les options de sauvegarde.
+ Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document` classe spécifiant le chemin et les options de sauvegarde.
 
 #### Q : Quels sont les avantages du redimensionnement des polices WMF à la taille d'un métafichier dans un document PDF ?
 R : Les avantages du redimensionnement des polices WMF à la taille d'un métafichier dans un document PDF sont :

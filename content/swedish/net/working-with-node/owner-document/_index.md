@@ -107,4 +107,4 @@ S: I de flesta fall bestäms dokumentägaren för en nod när noden skapas och k
 
 #### F: Hur kommer man åt noderna i ett ägardokument?
 
-S: För att komma åt noder i ett patentskyddat dokument kan du använda metoderna och egenskaperna som tillhandahålls av XML API som används i din Node.js-miljö. Till exempel kan du använda metoder som`getElementsByTagName` eller`querySelector` för att välja specifika noder i dokumentet.
+ S: För att komma åt noder i ett patentskyddat dokument kan du använda metoderna och egenskaperna som tillhandahålls av XML API som används i din Node.js-miljö. Till exempel kan du använda metoder som`getElementsByTagName` eller`querySelector` för att välja specifika noder i dokumentet.

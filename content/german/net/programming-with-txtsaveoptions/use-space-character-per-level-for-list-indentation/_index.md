@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIn
 
 In diesem Beispiel erstellen wir eine Instanz von TxtSaveOptions und setzen die ListIndentation.Count-Eigenschaft auf 3, um anzugeben, dass die Liste drei Einrückungsebenen enthält. Außerdem legen wir die ListIndentation.Character-Eigenschaft auf das Leerzeichen (' ') fest, das wir für die Einrückung verwenden möchten.
 
-### Beispielquellcode für die Funktion „Ein Leerzeichen pro Ebene für Listeneinrückung verwenden“ mit Aspose.Words für .NET
+### Beispielquellcode für die Funktion „Ein Leerzeichen pro Ebene für die Listeneinrückung verwenden“ mit Aspose.Words für .NET
 
 Hier ist der vollständige Beispielquellcode für die Funktion „Ein Leerzeichen pro Ebene für die Listeneinrückung verwenden“ mit Aspose.Words für .NET:
 

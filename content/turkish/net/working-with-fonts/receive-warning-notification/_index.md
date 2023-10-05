@@ -1,6 +1,6 @@
 ---
-title: Uyarı Bildirimi Alın
-linktitle: Uyarı Bildirimi Alın
+title: Uyarı Bildirimi Al
+linktitle: Uyarı Bildirimi Al
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET'i kullanırken nasıl uyarı bildirimi alacağınızı ve belgelerinizdeki sorunları veya uyarıları nasıl yöneteceğinizi öğrenin.
 type: docs

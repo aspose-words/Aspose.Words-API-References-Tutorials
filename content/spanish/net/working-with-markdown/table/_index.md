@@ -61,7 +61,7 @@ builder.Writeln("d");
 
 #### P: ¿Cómo creo una tabla en Markdown?
 
-R: Para crear una tabla en Markdown, use la sintaxis de barras verticales (`|`) para delimitar celdas y guiones (`-`) para delimitar los encabezados de las tablas.
+R: Para crear una tabla en Markdown, use la sintaxis de barras verticales (`|`para delimitar celdas y guiones (`-`) para delimitar los encabezados de las tablas.
 
 #### P: ¿Podemos personalizar la apariencia de una tabla en Markdown?
 

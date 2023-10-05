@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: imposta le opzioni del formato di importazione
 
- Crea un'istanza di`ImportFormatOptions` classe e impostare il file`IgnoreHeaderFooter` proprietà a`false`. Ciò garantisce che il contenuto dell'intestazione e del piè di pagina venga incluso durante il processo di aggiunta.
+ Crea un'istanza di`ImportFormatOptions` classe e impostare il file`IgnoreHeaderFooter`proprietà a`false`. Ciò garantisce che il contenuto dell'intestazione e del piè di pagina venga incluso durante il processo di aggiunta.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };

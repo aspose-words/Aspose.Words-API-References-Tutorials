@@ -35,7 +35,7 @@ doc.AppendChild(new Section(doc));
 builder.Writeln("Hello45");
 ```
 
-## Passaggio 3: aggiungi e inserisci contenuto tra le sezioni
+## Passaggio 3: aggiungi e inserisci contenuti tra le sezioni
 Per aggiungere e inserire contenuto tra le sezioni, selezioneremo una sezione specifica a cui desideriamo aggiungere contenuto. In questo esempio aggiungeremo il contenuto della prima sezione all'inizio della terza sezione, quindi aggiungeremo il contenuto della seconda sezione alla fine della terza sezione.
 
 ```csharp

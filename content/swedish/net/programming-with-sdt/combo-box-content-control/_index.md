@@ -1,6 +1,6 @@
 ---
-title: Combo Box innehållskontroll
-linktitle: Combo Box innehållskontroll
+title: Combo Box Innehållskontroll
+linktitle: Combo Box Innehållskontroll
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skapar en Combo Box Content Control i ett Word-dokument med Aspose.Words för .NET.
 type: docs

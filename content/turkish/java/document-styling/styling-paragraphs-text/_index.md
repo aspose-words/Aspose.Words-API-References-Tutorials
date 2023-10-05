@@ -414,7 +414,7 @@ Aspose.Words for Java'nın en son sürümü için Aspose web sitesini veya Maven
 Evet, Aspose.Words for Java, Java 11 ve sonraki sürümlerle uyumludur.
 
 ### Belgemin belirli bölümleri için sayfa kenar boşluklarını nasıl ayarlayabilirim?
- Belgenizin belirli bölümleri için sayfa kenar boşluklarını ayarlayabilirsiniz.`PageSetup` sınıf. İşte bir örnek:
+Belgenizin belirli bölümleri için sayfa kenar boşluklarını ayarlayabilirsiniz.`PageSetup` sınıf. İşte bir örnek:
 
 ```java
 Section section = doc.getSections().get(0); // İlk bölümü edinin

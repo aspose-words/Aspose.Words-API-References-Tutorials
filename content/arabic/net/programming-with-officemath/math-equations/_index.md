@@ -76,7 +76,7 @@ Document doc = new Document(dataDir + "Office math.docx");
 // الحصول على عنصر OfficeMath
 OfficeMath officeMath = (OfficeMath)doc.GetChild(NodeType.OfficeMath, 0, true);
 
-//تكوين خصائص المعادلة الرياضية
+// تكوين خصائص المعادلة الرياضية
 officeMath.DisplayType = OfficeMathDisplayType.Display;
 officeMath.Justification = OfficeMathJustification.Left;
 

@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
 
-Aspose.Words for .NET, bir C# uygulamasında Word belgelerini oluşturmak, değiştirmek ve dönüştürmek için kullanılan güçlü bir kütüphanedir. Aspose.Words'ün sunduğu özellikler arasında, belgeleri farklı formatlara dönüştürürken dönüştürülen öğeleri rasterleştirme yeteneği de bulunmaktadır. Bu kılavuzda, bir belgeyi PCL formatına dönüştürürken dönüştürülen öğelerin rasterleştirilmesini devre dışı bırakmak için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
+Aspose.Words for .NET, bir C# uygulamasında Word belgelerini oluşturmak, değiştirmek ve dönüştürmek için kullanılan güçlü bir kütüphanedir. Aspose.Words'ün sunduğu özellikler arasında, belgeleri farklı formatlara dönüştürürken dönüştürülen öğeleri rasterleştirme yeteneği de vardır. Bu kılavuzda, bir belgeyi PCL formatına dönüştürürken dönüştürülen öğelerin rasterleştirilmesini devre dışı bırakmak için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
 ## Aspose.Words kütüphanesini anlama
 

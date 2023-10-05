@@ -83,7 +83,7 @@ R: Per impostare le opzioni di struttura in un documento PDF utilizzando Aspose.
 
  Configura le opzioni di salvataggio come PDF creando un'istanza del file`PdfSaveOptions` classe e utilizzando il file`OutlineOptions` proprietà per impostare le opzioni del contorno. È possibile specificare il numero di livelli di intestazione da includere nella struttura utilizzando il comando`HeadingsOutlineLevels` proprietà e il numero di livelli di struttura espansi utilizzando il comando`ExpandedOutlineLevels` proprietà.
 
- Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document`classe specificando il percorso e le opzioni di salvataggio.
+ Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document` classe specificando il percorso e le opzioni di salvataggio.
 
 #### D: Qual è l'opzione del piano in un documento PDF?
 R: L'opzione di struttura in un documento PDF ti consente di creare una struttura gerarchica del contenuto, che semplifica la navigazione nel documento e l'accesso alle diverse sezioni. Ciò consente agli utenti di passare rapidamente a parti specifiche del documento facendo clic sulle voci nel sommario o nella struttura. L'opzione struttura migliora inoltre l'esperienza di lettura fornendo una panoramica della struttura complessiva del documento.

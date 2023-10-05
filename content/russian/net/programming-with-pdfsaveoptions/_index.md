@@ -2,7 +2,7 @@
 title: Обработка слов с помощью Pdfsaveoptions
 linktitle: Обработка слов с помощью Pdfsaveoptions
 second_title: API обработки документов Aspose.Words
-description: Изучите обработку текстов с помощью параметров сохранения PDF в Aspose.Words для .NET. Узнайте, как создавать документы Word в PDF с расширенными функциями, с помощью пошаговых руководств и примеров кода.
+description: Изучите обработку текстов с помощью параметров сохранения PDF в Aspose.Words для .NET. Узнайте, как создавать документы Word в формате PDF с расширенными функциями, с помощью пошаговых руководств и примеров кода.
 type: docs
 weight: 1680
 url: /ru/net/programming-with-pdfsaveoptions/

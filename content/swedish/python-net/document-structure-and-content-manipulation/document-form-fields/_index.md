@@ -46,7 +46,7 @@ text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeTyp
 
 ### Kryssrutor och radioknappar
 
-Kryssrutor och alternativknappar används för flervalsval. Så här skapar du dem:
+Kryssrutor och alternativknappar används för flervalsval. Så här kan du skapa dem:
 
 ```python
 # Create a checkbox form field

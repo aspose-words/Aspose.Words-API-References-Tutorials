@@ -85,4 +85,4 @@ doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
 
 #### 问：我可以在一个 Word 文档中同时编辑多个 VBA 宏吗？
 
-答：是的，您可以通过使用循环或直接访问相应的宏来修改Word文档中的多个VBA宏`VbaModule`中的物体`Modules`的集合`VbaProject`目的。这允许您在单个操作中同时更新多个 VBA 宏。
+答：是的，您可以通过使用循环或直接访问相应的宏来修改Word文档中的多个VBA宏`VbaModule`中的对象`Modules`的集合`VbaProject`目的。这允许您在单个操作中同时更新多个 VBA 宏。

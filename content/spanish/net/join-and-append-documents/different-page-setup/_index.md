@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Paso 4: modificar el formato del párrafo
 
- Para mantener el formato adecuado, repita todos los párrafos del documento fuente y establezca el`KeepWithNext` propiedad a`true`. Esto garantiza que los párrafos permanezcan juntos durante el proceso de adición.
+ Para mantener el formato adecuado, repita todos los párrafos del documento fuente y establezca el`KeepWithNext`propiedad a`true`Esto garantiza que los párrafos permanezcan juntos durante el proceso de adición.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -85,9 +85,9 @@ Esto completa la implementación de agregar un documento con diferentes configur
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Para garantizar que esto no suceda cuando el documento de origen tiene diferentes configuraciones de configuración de página, asegúrese de que
-	//Los ajustes son idénticos entre la última sección del documento de destino.
+	// Los ajustes son idénticos entre la última sección del documento de destino.
 	// Si hay más secciones continuas a continuación en el documento fuente,
-	// Esto deberá repetirse para esas secciones.
+	//Esto deberá repetirse para esas secciones.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

@@ -83,7 +83,7 @@ R: Per ridurre le dimensioni del documento PDF con il campionamento delle immagi
 
  Configura le opzioni di salvataggio come PDF creando un'istanza del file`PdfSaveOptions` classe e impostando le opzioni di campionamento dell'immagine utilizzando il file`DownsampleOptions` proprietà. È possibile specificare la risoluzione target delle immagini utilizzando il file`Resolution` proprietà e impostare una soglia di risoluzione minima al di sopra della quale le immagini non verranno ridimensionate utilizzando la proprietà`ResolutionThreshold` proprietà.
 
- Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document`classe specificando il percorso e le opzioni di salvataggio.
+ Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document` classe specificando il percorso e le opzioni di salvataggio.
 
 #### D: Quali sono i vantaggi derivanti dalla riduzione delle dimensioni del documento PDF con il campionamento delle immagini?
 R: I vantaggi derivanti dalla riduzione delle dimensioni del documento PDF con il campionamento delle immagini sono:

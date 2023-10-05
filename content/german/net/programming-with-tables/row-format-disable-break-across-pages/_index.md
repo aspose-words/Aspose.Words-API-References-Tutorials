@@ -39,7 +39,7 @@ foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- Hier verwenden wir das Dokument, um die erste Tabelle abzurufen und durchlaufen dann alle Zeilen in der Tabelle mithilfe einer foreach-Schleife. Innerhalb der Schleife deaktivieren wir den Zeilenumbruch für jede Zeile, indem wir festlegen`RowFormat.AllowBreakAcrossPages` Eigentum zu`false`.
+ Hier verwenden wir das Dokument, um die erste Tabelle abzurufen und durchlaufen dann alle Zeilen in der Tabelle mithilfe einer foreach-Schleife. Innerhalb der Schleife deaktivieren wir den Zeilenumbruch für jede Zeile, indem wir festlegen`RowFormat.AllowBreakAcrossPages`Eigentum zu`false`.
 
 ## Schritt 4: Speichern des geänderten Dokuments
 Schließlich müssen wir das geänderte Dokument mit deaktiviertem Tabellenzeilenumbruch speichern. Verwenden Sie den folgenden Code:

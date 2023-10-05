@@ -68,7 +68,7 @@ R : Vous pouvez trouver des fichiers de dictionnaires de syllabisation pour dif
 
 #### Q : Comment puis-je appliquer le dictionnaire syllabique chargé à un document dans Aspose.Words ?
 
- R : Pour appliquer le dictionnaire de syllabisation chargé à un document dans Aspose.Words, vous devez parcourir les mots du document et utiliser le`Hyphenate()` méthode du`Hyphenation` classe pour obtenir la syllabisation des mots. Vous pouvez ensuite formater les mots syllabés selon vos besoins, par exemple en ajoutant des traits d'union entre les syllabes.
+ R : Pour appliquer le dictionnaire de syllabisation chargé à un document dans Aspose.Words, vous devez parcourir les mots du document et utiliser le`Hyphenate()` méthode du`Hyphenation`classe pour obtenir la syllabisation des mots. Vous pouvez ensuite formater les mots syllabés selon vos besoins, par exemple en ajoutant des traits d'union entre les syllabes.
 
 #### Q : Quelles langues sont prises en charge pour la syllabisation dans Aspose.Words ?
 

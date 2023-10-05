@@ -82,7 +82,7 @@ S: För att exportera sidhuvuden och sidfotsbokmärken från ett Word-dokument t
 
  Konfigurera spara som PDF-alternativ genom att skapa en instans av`PdfSaveOptions` klass och ställa in lämpliga sidhuvud och sidfots bokmärkesalternativ.
 
- Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document`klass som anger sökvägen och sparalternativ.
+ Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document` klass som anger sökvägen och sparalternativ.
 
 ### F: Vilka är fördelarna med att exportera sidhuvuden och sidfötter till ett PDF-dokument?
 S: Fördelarna med att exportera sidhuvuden och sidfotsbokmärken till ett PDF-dokument är:

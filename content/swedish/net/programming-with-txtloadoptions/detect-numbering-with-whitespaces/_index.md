@@ -45,7 +45,7 @@ I det här steget skapar vi en textsträng som simulerar ett textdokument som in
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- I det här steget konfigurerar vi alternativen för dokumentladdning. Vi skapar en ny`TxtLoadOptions` objekt och ställ in`DetectNumberingWithWhitespaces` egendom till`true`. Detta gör att Aspose.Words kan upptäcka listnummer även om de följs av blanksteg.
+ I det här steget konfigurerar vi alternativen för dokumentladdning. Vi skapar en ny`TxtLoadOptions` objekt och ställ in`DetectNumberingWithWhitespaces`egendom till`true`. Detta gör att Aspose.Words kan upptäcka listnummer även om de följs av blanksteg.
 
 ## Steg 4: Ladda dokumentet och spara
 

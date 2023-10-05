@@ -18,7 +18,7 @@ url: /ar/java/document-printing/automating-document-printing/
 
 - بيئة تطوير Java: تأكد من إعداد بيئة تطوير Java على نظامك.
 
-- Aspose.Words for Java: يجب أن تكون مكتبة Aspose.Words for Java مثبتة لديك. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java: يجب أن تكون مكتبة Aspose.Words for Java مثبتة لديك. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/java/).
 
 - مستند نموذجي: قم بإعداد مستند نموذجي تريد أتمتة عملية الطباعة له.
 
@@ -75,7 +75,7 @@ public static void main(String[] args) throws Exception {
 
 ### كيف يمكنني تحديد طابعة مختلفة لطباعة مستنداتي؟
 
- لتحديد طابعة مختلفة لطباعة مستنداتك، يمكنك استخدام`setPrinterName` الطريقة كما هو موضح في مثال الكود ببساطة استبدل`"Your_Printer_Name"` مع اسم الطابعة المطلوبة.
+ لتحديد طابعة مختلفة لطباعة مستنداتك، يمكنك استخدام`setPrinterName`الطريقة كما هو موضح في مثال الكود ببساطة استبدل`"Your_Printer_Name"` مع اسم الطابعة المطلوبة.
 
 ### هل يمكنني أتمتة المهام الأخرى المتعلقة بالمستندات باستخدام Aspose.Words لـ Java؟
 

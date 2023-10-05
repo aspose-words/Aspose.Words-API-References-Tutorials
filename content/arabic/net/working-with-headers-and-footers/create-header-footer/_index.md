@@ -112,15 +112,15 @@ currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // لا يحتاج هذا القسم إلى رأس/تذييل مختلف للصفحة الأولى، نحتاج فقط إلى صفحة عنوان واحدة في المستند،
-// وقد تم بالفعل تحديد رأس/تذييل هذه الصفحة في القسم السابق.
+//وقد تم بالفعل تحديد رأس/تذييل هذه الصفحة في القسم السابق.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // يعرض هذا القسم رؤوس/تذييلات القسم السابق بشكل افتراضي، اتصل بـcurrentSection.HeadersFooters.LinkToPrevious(false) لقطع هذا الارتباط،
 // يختلف عرض الصفحة بالنسبة للقسم الجديد، لذلك نحتاج إلى تعيين عروض خلايا مختلفة لجدول التذييل.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-//إذا أردنا استخدام الرؤوس/التذييلات الموجودة بالفعل لهذا القسم،
-// ولكن مع بعض التغييرات الطفيفة، قد يكون من المنطقي نسخ الرؤوس/التذييلات
+// إذا أردنا استخدام الرؤوس/التذييلات الموجودة بالفعل لهذا القسم،
+//ولكن مع بعض التغييرات الطفيفة، قد يكون من المنطقي نسخ الرؤوس/التذييلات
 // من القسم السابق وقم بتطبيق التغييرات اللازمة حيث نريدها.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
@@ -176,7 +176,7 @@ builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-//نستخدم جدولاً يحتوي على خليتين لإنشاء جزء واحد من النص على السطر (مع ترقيم الصفحات).
+// نستخدم جدولاً يحتوي على خليتين لإنشاء جزء واحد من النص على السطر (مع ترقيم الصفحات).
 // تتم محاذاته إلى اليسار، ومحاذاة الجزء الآخر من النص (مع حقوق الطبع والنشر) إلى اليمين.
 builder.StartTable();
 
@@ -215,7 +215,7 @@ currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // لا يحتاج هذا القسم إلى رأس/تذييل مختلف للصفحة الأولى، فنحن نحتاج فقط إلى صفحة عنوان واحدة في المستند،
-// وقد تم بالفعل تحديد رأس/تذييل هذه الصفحة في القسم السابق.
+//وقد تم بالفعل تحديد رأس/تذييل هذه الصفحة في القسم السابق.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // يعرض هذا القسم الرؤوس/التذييلات من القسم السابق
@@ -225,7 +225,7 @@ currentSection.HeadersFooters.LinkToPrevious(false);
 
 // إذا أردنا استخدام مجموعة الرأس/التذييل الموجودة بالفعل لهذا القسم.
 // ولكن مع بعض التعديلات الطفيفة، قد يكون من المناسب نسخ الرؤوس/التذييلات
-//من القسم السابق وتطبيق التعديلات اللازمة حيث نريدها.
+// من القسم السابق وتطبيق التعديلات اللازمة حيث نريدها.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -245,7 +245,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### س: كيف يمكنني إضافة تذييل إلى مستندي في Aspose.Words؟
 
- ج: لإضافة تذييل إلى مستندك في Aspose.Words، يمكنك استخدام الملف`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` طريقة. تضيف هذه الطريقة تذييلًا أساسيًا إلى القسم الأول من المستند.
+ ج: لإضافة تذييل إلى مستندك في Aspose.Words، يمكنك استخدام الملف`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`طريقة. تضيف هذه الطريقة تذييلًا أساسيًا إلى القسم الأول من المستند.
 
 #### س: كيف يمكنني إضافة نص إلى رأس الصفحة أو تذييل الصفحة في Aspose.Words؟
 
@@ -253,8 +253,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### س: هل يمكنني تخصيص محتوى الرأس أو التذييل باستخدام الصور وأرقام الصفحات في Aspose.Words؟
 
-ج: نعم، يمكنك تخصيص محتوى الرأس أو التذييل باستخدام الصور وأرقام الصفحات في Aspose.Words. يمكنك استخدام كائنات مثل`Shape` لإضافة الصور والكائنات مثل`Field` لإضافة أرقام الصفحات إلى رأس الصفحة أو تذييلها.
+ ج: نعم، يمكنك تخصيص محتوى الرأس أو التذييل باستخدام الصور وأرقام الصفحات في Aspose.Words. يمكنك استخدام كائنات مثل`Shape` لإضافة الصور والكائنات مثل`Field` لإضافة أرقام الصفحات إلى رأس الصفحة أو تذييلها.
 
 #### س: هل يمكنني تغيير خط النص وحجمه ولونه في رأس الصفحة أو تذييلها في Aspose.Words؟
 
- ج: نعم، يمكنك تغيير خط النص وحجمه ولونه في رأس الصفحة أو تذييل الصفحة في Aspose.Words. يمكنك الوصول إلى خصائص تنسيق النص مثل`Font` لتغيير الخط،`Size` لضبط الحجم، و`Color` لتعيين لون النص.
+ ج: نعم، يمكنك تغيير خط النص وحجمه ولونه في رأس الصفحة أو تذييل الصفحة في Aspose.Words. يمكنك الوصول إلى خصائص تنسيق النص مثل`Font` لتغيير الخط،`Size` لضبط الحجم، و`Color`لتعيين لون النص.

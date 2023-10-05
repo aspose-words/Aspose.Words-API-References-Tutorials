@@ -53,7 +53,7 @@ Küçük resimlerinizin görünümünü uygulamanızın tasarımına ve gereksin
 Küçük resmi oluşturduktan sonra tercih ettiğiniz konuma kaydedebilirsiniz.
 
 ```java
-//Oluşturulan küçük resmi kaydetmek için Java kodu
+// Oluşturulan küçük resmi kaydetmek için Java kodu
 FileOutputStream outputStream = new FileOutputStream("thumbnail.png");
 stream.writeTo(outputStream);
 ```
@@ -82,4 +82,4 @@ Evet, Aspose.Words for Java ticari kullanım için geçerli bir lisans gerektiri
 
 ### Aspose.Words for Java için ek belgeleri nerede bulabilirim?
 
-Aspose.Words for Java dokümantasyon sayfasında kapsamlı dokümantasyon ve API referansları bulabilirsiniz.[Burada](https://reference.aspose.com/words/java/).
+ Aspose.Words for Java dokümantasyon sayfasında kapsamlı dokümantasyon ve API referansları bulabilirsiniz.[Burada](https://reference.aspose.com/words/java/).

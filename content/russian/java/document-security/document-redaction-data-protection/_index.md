@@ -96,6 +96,6 @@ doc.save("redacted_and_protected.docx");
 
 ### Как я могу получить доступ к дополнительным ресурсам и документации по Aspose.Words для Java?
 
- О: Посетите документацию Aspose.Words для Java по адресу[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) для полных ресурсов и руководств.
+О: Посетите документацию Aspose.Words для Java по адресу[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) для полных ресурсов и руководств.
 
 Повысьте безопасность своих документов и защиту данных с помощью Aspose.Words для Java. Начните защищать свою конфиденциальную информацию сегодня!

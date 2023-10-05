@@ -17,7 +17,7 @@ Aspose.Words for Java 是一个功能丰富的库，允许您处理各种文档�
 在我们深入研究代码之前，请确保您具备以下先决条件：
 
 - 您的系统上安装了 Java 开发工具包 (JDK)。
-- Aspose.Words for Java 库。您可以从以下位置下载：[这里](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java 库。您可以从以下位置下载：[这里](https://releases.aspose.com/words/java/).
 
 ## 第 1 步：设置您的 Java 项目
 
@@ -91,7 +91,7 @@ doc1.save("joined_document.docx");
 
 ### 使用 Aspose.Words 连接文档时有任何限制吗？
 
-虽然 Aspose.Words 提供强大的文档操作功能，但必须考虑文档的复杂性和大小，以确保最佳性能。
+虽然 Aspose.Words 提供了强大的文档操作功能，但必须考虑文档的复杂性和大小，以确保最佳性能。
 
 ### 我需要支付许可证费用才能使用 Aspose.Words for Java 吗？
 

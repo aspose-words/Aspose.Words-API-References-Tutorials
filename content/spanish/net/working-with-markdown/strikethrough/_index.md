@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Paso 2: aplicar estilo de texto tachado
 
- Habilitaremos el estilo de texto tachado configurando el`StrikeThrough` propiedad de la`Font` oponerse a`true`.
+Habilitaremos el estilo de texto tachado configurando el`StrikeThrough` propiedad de la`Font` oponerse a`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
@@ -53,11 +53,11 @@ builder.Writeln("This text will be StrikeThrough");
 
 #### P: ¿Cómo puedo agregar el texto tachado en Aspose.Words?
 
- R: Para agregar el texto tachado en Aspose.Words, puede usar el`Font.StrikeThrough` propiedad de la`Run`objeto. Puede establecer esta propiedad en`true` para agregar texto tachado a un texto específico. Por ejemplo, puedes usar`run.Font.StrikeThrough=true` para agregar el texto tachado en el`Run` objeto.
+ R: Para agregar el texto tachado en Aspose.Words, puede usar el`Font.StrikeThrough` propiedad de la`Run` objeto. Puede establecer esta propiedad en`true` para agregar texto tachado a un texto específico. Por ejemplo, puedes usar`run.Font.StrikeThrough=true` para agregar el texto tachado en el`Run` objeto.
 
 #### P: ¿Es posible agregar texto tachado a varios fragmentos de texto en el mismo párrafo?
 
- R: Sí, puedes agregar texto tachado a varias partes del texto en un solo párrafo usando múltiples`Run` objetos. Puedes crear múltiples`Run` objetos y establecer el`Font.StrikeThrough` propiedad a`true`para cada objeto para agregar el texto tachado a las partes de texto deseadas. Luego puedes agregarlos al párrafo usando el`Paragraph.AppendChild(run)` método.
+ R: Sí, puedes agregar texto tachado a varias partes del texto en un solo párrafo usando múltiples`Run` objetos. Puedes crear múltiples`Run` objetos y establecer el`Font.StrikeThrough`propiedad a`true` para cada objeto para agregar el texto tachado a las partes de texto deseadas. Luego puedes agregarlos al párrafo usando el`Paragraph.AppendChild(run)` método.
 
 #### P: ¿Puedo agregar texto tachado al texto que está en una tabla o celda en Aspose.Words?
 

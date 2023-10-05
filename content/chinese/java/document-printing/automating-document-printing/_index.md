@@ -18,7 +18,7 @@ url: /zh/java/document-printing/automating-document-printing/
 
 - Java 开发环境：确保您的系统上设置了 Java 开发环境。
 
-- Aspose.Words for Java：您应该安装 Aspose.Words for Java 库。您可以从以下位置下载：[这里](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java：您应该安装 Aspose.Words for Java 库。您可以从以下位置下载：[这里](https://releases.aspose.com/words/java/).
 
 - 示例文档：准备要自动执行打印过程的示例文档。
 

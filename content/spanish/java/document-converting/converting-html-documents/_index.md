@@ -17,7 +17,7 @@ Aspose.Words para Java es una biblioteca rica en funciones que permite a los des
 Antes de profundizar en el código, asegúrese de tener los siguientes requisitos previos:
 
 - Kit de desarrollo de Java (JDK) instalado en su sistema.
-- Aspose.Words para la biblioteca Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
+-  Aspose.Words para la biblioteca Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
 - Un conocimiento básico de la programación Java.
 
 ## Guía paso por paso
@@ -64,7 +64,7 @@ Recuerde manejar las excepciones que puedan ocurrir durante el proceso de conver
 
 ```java
 try {
-    //Código de conversión aquí
+    // Código de conversión aquí
 } catch (Exception e) {
     e.printStackTrace();
 }

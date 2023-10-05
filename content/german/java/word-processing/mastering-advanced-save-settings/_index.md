@@ -54,7 +54,7 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 Kopf- und Fußzeilen enthalten häufig wichtige Informationen. Erfahren Sie, wie Sie Kopf- und Fußzeilen in Ihren Dokumenten verwalten und anpassen.
 
 ```java
-//Fügen Sie der ersten Seite eine Kopfzeile hinzu
+// Fügen Sie der ersten Seite eine Kopfzeile hinzu
 Document doc = new Document();
 Section section = doc.getSections().get(0);
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
@@ -181,7 +181,7 @@ Selbst die besten Entwickler stoßen auf Probleme. In diesem Abschnitt gehen wir
 
 ### Wie stelle ich die Seitengröße auf A4 ein?
 
- Um die Seitengröße auf A4 einzustellen, können Sie die verwenden`PageSetup`Klasse und geben Sie das Papierformat wie folgt an:
+ Um die Seitengröße auf A4 einzustellen, können Sie die verwenden`PageSetup` Klasse und geben Sie das Papierformat wie folgt an:
 
 ```java
 Document doc = new Document();

@@ -15,7 +15,7 @@ url: /ru/java/document-splitting/splitting-documents-into-html-pages/
 Прежде чем мы углубимся в код, убедитесь, что у вас есть следующие предварительные условия:
 
 - В вашей системе установлен Java Development Kit (JDK).
-- Библиотека Aspose.Words для Java. Вы можете скачать его с[здесь](https://releases.aspose.com/words/java/).
+-  Библиотека Aspose.Words для Java. Вы можете скачать его с[здесь](https://releases.aspose.com/words/java/).
 
 
 ## Введение
@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
- Этот код разбивает документ на основе разрывов страниц и сохраняет каждую страницу в`pages` список.
+Этот код разбивает документ на основе разрывов страниц и сохраняет каждую страницу в`pages` список.
 
 ## Сохранение в формате HTML
 

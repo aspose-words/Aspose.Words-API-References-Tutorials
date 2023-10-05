@@ -21,7 +21,7 @@ Document doc = new Document();
 
 ## Paso 2: usar un generador de documentos
 
-A continuación, usaremos un generador de documentos para agregar contenido a nuestro documento.
+continuación, usaremos un generador de documentos para agregar contenido a nuestro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -109,11 +109,11 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### P: ¿Cómo resalto texto usando Markdown?
 
-R: Para resaltar texto usando Markdown, simplemente rodee el texto con los símbolos apropiados. Usar`*` o`_` para cursiva,`**` o`__` por negrita, y`~~` para tachado.
+ R: Para resaltar texto usando Markdown, simplemente rodee el texto con los símbolos apropiados. Usar`*` o`_` para cursiva,`**` o`__` por negrita, y`~~` para tachado.
 
 #### P: ¿Podemos combinar diferentes destacados en un mismo texto?
 
- R: Sí, es posible combinar diferentes resaltados en un mismo texto. Por ejemplo, puede poner en negrita y cursiva una palabra usando ambos`**` y`*` alrededor del mundo.
+ R: Sí, es posible combinar diferentes resaltados en un mismo texto. Por ejemplo, puede poner en negrita y cursiva una palabra usando ambos`**` y`*`alrededor del mundo.
 
 #### P: ¿Qué opciones de resaltado están disponibles en Markdown?
 

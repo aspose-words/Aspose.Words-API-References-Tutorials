@@ -58,15 +58,15 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo in ba
 
 #### D: Come posso inserire un campo modulo di tipo testo in Aspose.Words?
 
- A: Per inserire un campo modulo di tipo testo in Aspose.Words, è possibile utilizzare il file`FormField` class e impostarne il file`Type` proprietà a`FormFieldType.Text`. Puoi anche personalizzare altre proprietà come nome, etichetta e opzioni.
+ A: Per inserire un campo modulo di tipo testo in Aspose.Words, è possibile utilizzare il file`FormField` class e impostarne il file`Type`proprietà a`FormFieldType.Text`. Puoi anche personalizzare altre proprietà come nome, etichetta e opzioni.
 
 #### D: È possibile creare un campo modulo di tipo casella di controllo in un documento?
 
- R: Sì, è possibile creare un campo modulo di tipo casella di controllo in un documento Aspose.Words. Puoi usare il`FormField` class e impostarne il file`Type` proprietà a`FormFieldType.CheckBox` per creare una casella di controllo. È quindi possibile personalizzare le proprietà della casella di controllo secondo necessità.
+ R: Sì, è possibile creare un campo modulo di tipo casella di controllo in un documento Aspose.Words. Puoi usare il`FormField` class e impostarne il file`Type`proprietà a`FormFieldType.CheckBox` per creare una casella di controllo. È quindi possibile personalizzare le proprietà della casella di controllo secondo necessità.
 
 #### D: Come posso aggiungere un campo modulo di tipo a discesa a un documento?
 
- R: Per aggiungere un campo modulo di tipo a discesa in un documento Aspose.Words, utilizzare il file`FormField` class e impostarne il file`Type` proprietà a`FormFieldType.DropDown` . È quindi possibile impostare le opzioni del menu a discesa utilizzando`DropDownItems` proprietà.
+ R: Per aggiungere un campo modulo di tipo a discesa in un documento Aspose.Words, utilizzare il file`FormField` class e impostarne il file`Type`proprietà a`FormFieldType.DropDown` . È quindi possibile impostare le opzioni del menu a discesa utilizzando`DropDownItems` proprietà.
 
 #### D: Posso impostare un valore predefinito per un campo modulo in Aspose.Words?
 

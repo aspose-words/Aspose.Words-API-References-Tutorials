@@ -34,7 +34,7 @@ textBox.BreakForwardLink();
 
 ## Adım 4: Boş bir değer ayarlayarak ileri bağlantıyı kesin
 
- Alternatif olarak, TextBox'un ayarını yaparak ileri bağlantıyı kesebiliriz.`Next` mülkiyet`null`. Bu, bir sonraki şekle olan bağlantıyı etkili bir şekilde ortadan kaldırır. Aşağıdaki kod bu yaklaşımı göstermektedir:
+ Alternatif olarak, TextBox'un ayarını yaparak ileri bağlantıyı kesebiliriz.`Next`mülkiyet`null`. Bu, bir sonraki şekle olan bağlantıyı etkili bir şekilde ortadan kaldırır. Aşağıdaki kod bu yaklaşımı göstermektedir:
 
 ```csharp
 textBox. Next = null;
@@ -81,7 +81,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesindeki yönlendirme bağlant�
 
 #### S: Boş bir değer ayarlayarak yönlendirme bağlantısını nasıl kesebilirim?
 
-C: Alternatif olarak, yönlendirme bağlantısını ayarlayarak da kesebilirsiniz.`Next` TextBox'un özelliği`null`. Bu, bir sonraki şekle olan bağlantıyı etkili bir şekilde ortadan kaldırır.
+C: Alternatif olarak, yönlendirme bağlantısını ayarlayarak da kesebilirsiniz.`Next` TextBox'ın özelliği`null`. Bu, bir sonraki şekle olan bağlantıyı etkili bir şekilde ortadan kaldırır.
 
 #### S: TextBox'a giden bir bağlantı nasıl koparılır?
 

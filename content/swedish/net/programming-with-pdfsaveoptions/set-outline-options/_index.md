@@ -83,7 +83,7 @@ S: För att ställa in dispositionsalternativ i ett PDF-dokument med Aspose.Word
 
  Konfigurera spara som PDF-alternativ genom att skapa en instans av`PdfSaveOptions` klass och använda`OutlineOptions` egenskap för att ställa in konturalternativen. Du kan ange antalet rubriknivåer som ska inkluderas i dispositionen med hjälp av`HeadingsOutlineLevels` egendom och antalet utökade dispositionsnivåer med hjälp av`ExpandedOutlineLevels` fast egendom.
 
- Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document`klass som anger sökvägen och sparalternativ.
+ Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document` klass som anger sökvägen och sparalternativ.
 
 #### F: Vad är planalternativet för i ett PDF-dokument?
 S: Dispositionsalternativet i ett PDF-dokument låter dig skapa en hierarkisk struktur av innehållet, vilket gör det lättare att navigera i dokumentet och komma åt olika avsnitt. Detta tillåter användare att snabbt hoppa till specifika delar av dokumentet genom att klicka på poster i innehållsförteckningen eller dispositionen. Konturalternativet förbättrar också läsupplevelsen genom att ge en översikt över dokumentstrukturen.

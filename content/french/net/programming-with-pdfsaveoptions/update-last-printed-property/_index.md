@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Étape 3 : Configurer les options d'enregistrement au format PDF avec la propriété « Dernière impression » mise à jour
 
- Pour activer la mise à jour de la propriété "Dernier imprimé" lors de la conversion en PDF, nous devons configurer le`PdfSaveOptions` objet et définissez le`UpdateLastPrintedProperty` propriété à`true`.
+ Pour activer la mise à jour de la propriété "Dernier imprimé" lors de la conversion en PDF, nous devons configurer le`PdfSaveOptions` objet et définissez le`UpdateLastPrintedProperty`propriété à`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
@@ -74,7 +74,7 @@ R : La propriété « Dernière impression » dans un document PDF fait référe
 
  Créez une instance du`Document` classe spécifiant le chemin d’accès au document Word.
 
- Créez une instance du`PdfSaveOptions` classe et définir le`UpdateLastPrintedProperty` propriété à`true` pour activer la mise à jour de la propriété "Dernier imprimé".
+ Créez une instance du`PdfSaveOptions` classe et définir le`UpdateLastPrintedProperty`propriété à`true` pour activer la mise à jour de la propriété "Dernier imprimé".
 
  Utilisez le`Save` méthode du`Document`classe pour enregistrer le document au format PDF en spécifiant les options d'enregistrement.
 

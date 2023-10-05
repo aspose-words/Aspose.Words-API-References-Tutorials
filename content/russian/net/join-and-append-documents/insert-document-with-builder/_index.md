@@ -48,7 +48,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Шаг 5. Вставьте исходный документ.
 
- Использовать`InsertDocument` метод`DocumentBuilder`класс для вставки исходного документа в целевой документ. Установите режим формата импорта на`ImportFormatMode.KeepSourceFormatting` чтобы сохранить исходное форматирование.
+ Использовать`InsertDocument` метод`DocumentBuilder` класс для вставки исходного документа в целевой документ. Установите режим формата импорта на`ImportFormatMode.KeepSourceFormatting` чтобы сохранить исходное форматирование.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

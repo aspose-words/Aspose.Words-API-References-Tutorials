@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: impostare il documento allegato in modo che venga visualizzato su una nuova pagina
 
-Per garantire che il contenuto del documento di origine venga visualizzato in una nuova pagina nel documento di destinazione, è necessario impostare il file`SectionStart` proprietà della prima sezione nel documento di origine a`SectionStart.NewPage`.
+ Per garantire che il contenuto del documento di origine venga visualizzato in una nuova pagina nel documento di destinazione, è necessario impostare il file`SectionStart` proprietà della prima sezione nel documento di origine a`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Passaggio 4: collega intestazioni e piè di pagina alla sezione precedente
 
- Per collegare le intestazioni e i piè di pagina del documento di origine alla sezione precedente del documento di destinazione, è possibile utilizzare il file`LinkToPrevious` metodo del`HeadersFooters` collezione. Di passaggio`true` come parametro, sovrascrivi eventuali intestazioni o piè di pagina esistenti nel documento di origine.
+Per collegare le intestazioni e i piè di pagina del documento di origine alla sezione precedente del documento di destinazione, è possibile utilizzare il file`LinkToPrevious` metodo del`HeadersFooters` collezione. Di passaggio`true` come parametro, sovrascrivi eventuali intestazioni o piè di pagina esistenti nel documento di origine.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

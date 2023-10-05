@@ -81,7 +81,7 @@ R: Per incorporare sottoinsiemi di caratteri in un documento PDF utilizzando Asp
 
  Carica il documento che desideri elaborare utilizzando il file`Document` classe e il percorso del documento.
 
- Configura le opzioni di salvataggio del PDF creando un'istanza del file`PdfSaveOptions` classe e impostando il file`EmbedFullFonts` proprietà a`false`Ciò garantisce che solo i sottoinsiemi di caratteri utilizzati nel documento verranno inclusi nel file PDF.
+ Configura le opzioni di salvataggio del PDF creando un'istanza del file`PdfSaveOptions` classe e impostando il file`EmbedFullFonts`proprietà a`false`Ciò garantisce che solo i sottoinsiemi di caratteri utilizzati nel documento verranno inclusi nel file PDF.
 
  Salva il documento in formato PDF con i sottoinsiemi di caratteri incorporati utilizzando il file`Save` metodo del`Document` oggetto, specificando il nome del file di output e le opzioni di salvataggio configurate in precedenza.
 

@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     //Acceso rápido y mecanografiado a la primera fila de la tabla.
+     // Acceso rápido y mecanografiado a la primera fila de la tabla.
      table.FirstRow?.Remove();
 
      // Acceso rápido y escrito a la última fila de la tabla.

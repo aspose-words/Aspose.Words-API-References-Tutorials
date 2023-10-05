@@ -17,7 +17,7 @@ Nell'era digitale di oggi, la gestione dei documenti svolge un ruolo cruciale in
 Prima di immergerci nella parte di codifica, assicurati di avere i seguenti prerequisiti:
 
 - Ambiente di sviluppo Java: dovresti avere Java Development Kit (JDK) installato sul tuo sistema.
--  Aspose.Words per Java: scarica e configura la libreria Aspose.Words per Java dal file[Sito web Aspose](https://releases.aspose.com/words/java/).
+- Aspose.Words per Java: scarica e configura la libreria Aspose.Words per Java dal file[Sito web Aspose](https://releases.aspose.com/words/java/).
 
 ## Configurazione del tuo progetto Java
 
@@ -54,7 +54,7 @@ public class DocumentToImageConverter {
 
 ## Personalizzazione della conversione delle immagini
 
- Puoi personalizzare ulteriormente il processo di conversione delle immagini modificando il file`ImageSaveOptions`Ad esempio, puoi impostare la risoluzione, l'intervallo di pagine e la qualità dell'immagine di output.
+ Puoi personalizzare ulteriormente il processo di conversione delle immagini modificando il file`ImageSaveOptions`. Ad esempio, puoi impostare la risoluzione, l'intervallo di pagine e la qualità dell'immagine di output.
 
 ## Conclusione
 
@@ -72,7 +72,7 @@ La conversione di documenti in immagini in Java è semplificata con Aspose.Words
 Assolutamente! È possibile utilizzare Aspose.Words per Java per convertire in batch più documenti in immagini in modo efficiente.
 
 ### In quali altri formati posso convertire i documenti?
-Aspose.Words per Java supporta vari formati di output, inclusi PDF, HTML e altri. Puoi facilmente regolare il`SaveFormat` In`ImageSaveOptions` per convertire i documenti nel formato desiderato.
+ Aspose.Words per Java supporta vari formati di output, inclusi PDF, HTML e altri. Puoi facilmente regolare il`SaveFormat` In`ImageSaveOptions`per convertire i documenti nel formato desiderato.
 
 ### Dove posso trovare ulteriore documentazione ed esempi?
  Per documentazione completa ed esempi di codice, visitare il sito[Aspose.Words per riferimento API Java](https://reference.aspose.com/words/java/).

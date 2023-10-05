@@ -96,7 +96,7 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 ### FAQ
 
-#### Q : Quelles sont les conditions préalables pour utiliser la fonction « Créer des favoris » dans Aspose.Words for .NET ?
+#### Q : Quelles sont les conditions préalables pour utiliser la fonction « Créer des favoris » dans Aspose.Words pour .NET ?
 
 : Pour utiliser la fonction « Créer des favoris » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### Q : Comment ajouter du texte dans un signet à l'aide d'Aspose.Words pour .NET ?
 
-R : Pour ajouter du texte dans un signet à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Write` méthode du`DocumentBuilder` objet spécifiant le texte à ajouter. Voici un exemple de code :
+ R : Pour ajouter du texte dans un signet à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Write` méthode du`DocumentBuilder`objet spécifiant le texte à ajouter. Voici un exemple de code :
 
 ```csharp
 builder.StartBookmark("My Bookmark");

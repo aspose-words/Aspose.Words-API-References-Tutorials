@@ -66,7 +66,7 @@ Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 NodeCollection children = paragraph.ChildNodes;
 foreach (Node child in children)
 {
-	//Ett stycke kan innehålla underordnade typer av olika typer, till exempel löpningar, former och andra.
+	// Ett stycke kan innehålla underordnade typer av olika typer, till exempel löpningar, former och andra.
 	if (child.NodeType == NodeType.Run)
 	{
 		Run run = (Run) child;
@@ -90,11 +90,11 @@ S: En underordnad nod i Node.js hänvisar till en nod som finns direkt inuti en 
 
 #### F: Hur får man åtkomst till egenskaperna för en barnnod?
 
- S: För att komma åt egenskaperna för en underordnad nod i Node.js kan du använda metoderna och egenskaperna som tillhandahålls av XML API som används i din Node.js-miljö. Till exempel kan du använda metoder som`getAttribute`för att få värdet av ett specifikt attribut för en underordnad nod.
+ S: För att komma åt egenskaperna för en underordnad nod i Node.js kan du använda metoderna och egenskaperna som tillhandahålls av XML API som används i din Node.js-miljö. Till exempel kan du använda metoder som`getAttribute` för att få värdet av ett specifikt attribut för en underordnad nod.
 
 #### F: Kan vi modifiera undernoderna för en nod?
 
- S: Ja, det är möjligt att modifiera de underordnade noderna för en nod i Node.js med de metoder och egenskaper som tillhandahålls av XML-API:et som används i din Node.js-miljö. Till exempel kan du använda metoder som`appendChild` eller`removeChild` för att lägga till eller ta bort underordnade noder från en specifik nod.
+S: Ja, det är möjligt att modifiera de underordnade noderna för en nod i Node.js med de metoder och egenskaper som tillhandahålls av XML-API:et som används i din Node.js-miljö. Till exempel kan du använda metoder som`appendChild` eller`removeChild` för att lägga till eller ta bort underordnade noder från en specifik nod.
 
 #### F: Hur bläddrar man i alla underordnade noder i en nod?
 

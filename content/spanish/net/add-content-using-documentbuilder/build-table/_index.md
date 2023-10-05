@@ -106,7 +106,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.BuildTable.docx");
 ```
 
 ## Conclusión
-¡Felicidades! Ha aprendido con éxito cómo crear una tabla en un documento de Word utilizando Aspose.Words para .NET. Si sigue la guía paso a paso y utiliza el código fuente proporcionado, ahora puede crear tablas con formato personalizado.
+¡Felicidades! Ha aprendido con éxito cómo crear una tabla en un documento de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede crear tablas con formato personalizado.
 
 ### Preguntas frecuentes sobre la creación de tablas en documentos de Word
 

@@ -28,7 +28,7 @@ const string html=@"
 
 ## 2. Adım: HTML yükleme seçeneklerini ayarlayın
 
- Daha sonra, bir`HtmlLoadOptions` nesneyi ayarlayın ve`PreferredControlType` mülkiyet`HtmlControlType.StructuredDocumentTag`. Bu, Aspose.Words'e yükleme sırasında HTML'yi temsil etmek için StructuredDocumentTag'leri kullanmasını söyler.
+ Daha sonra, bir`HtmlLoadOptions` nesneyi ayarlayın ve`PreferredControlType`mülkiyet`HtmlControlType.StructuredDocumentTag`. Bu, Aspose.Words'e yükleme sırasında HTML'yi temsil etmek için StructuredDocumentTag'leri kullanmasını söyler.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
@@ -69,7 +69,7 @@ Bu kadar ! Aspose.Words for .NET ile bir HTML belgesi yüklerken tercih edilen k
 
 ## Çözüm
 
- Bu adım adım kılavuzu takip ederek, bir HTML belgesini yüklerken istenen kontrol tipini belirlemek için Aspose.Words for .NET'teki "Tercih Edilen Kontrol Tipi" özelliğini nasıl kullanacağınızı öğrendiniz. ayarlamak`PreferredControlType` mülkiyet`HtmlControlType.StructuredDocumentTag` Aspose.Words'ün HTML içeriğinin daha iyi temsili ve işlenmesi için StructuredDocumentTags'i (SDT) kullanmasına olanak tanır. Özel gereksinimlerinize uyacak şekilde diğer kontrol türlerini de keşfedebilirsiniz. Bu özelliğin kullanılması, Aspose.Words ile C# uygulamanızda HTML belgelerinin doğru ve verimli şekilde işlenmesini sağlamaya yardımcı olur.
+ Bu adım adım kılavuzu takip ederek, bir HTML belgesini yüklerken istenen kontrol tipini belirlemek için Aspose.Words for .NET'teki "Tercih Edilen Kontrol Tipi" özelliğini nasıl kullanacağınızı öğrendiniz. ayarlamak`PreferredControlType`mülkiyet`HtmlControlType.StructuredDocumentTag` Aspose.Words'ün HTML içeriğinin daha iyi temsili ve işlenmesi için StructuredDocumentTags'i (SDT) kullanmasına olanak tanır. Özel gereksinimlerinize uyacak şekilde diğer kontrol türlerini de keşfedebilirsiniz. Bu özelliğin kullanılması, Aspose.Words ile C# uygulamanızda HTML belgelerinin doğru ve verimli şekilde işlenmesini sağlamaya yardımcı olur.
 
 ### Word belgesinde tercih edilen kontrol türü için SSS'ler
 
@@ -87,7 +87,7 @@ C: StructuredDocumentTag'ler (SDT), bir Word belgesindeki karmaşık içeriği v
 
 #### S: Aspose.Words'ün HTML belgesini yüklerken tercih edilen kontrol tipini kullanmasını nasıl sağlayabilirim?
 
- C: Ayarlayarak`PreferredControlType` mülkiyet`HtmlControlType.StructuredDocumentTag`Örnek kaynak kodunda gösterildiği gibi Aspose.Words, belgeyi yüklerken HTML öğelerini temsil etmek için SDT'leri kullanacaktır.
+ C: Ayarlayarak`PreferredControlType`mülkiyet`HtmlControlType.StructuredDocumentTag`Örnek kaynak kodunda gösterildiği gibi Aspose.Words, belgeyi yüklerken HTML öğelerini temsil etmek için SDT'leri kullanacaktır.
 
 #### S: Tercih edilen seçenek olarak diğer kontrol türlerini kullanabilir miyim?
 

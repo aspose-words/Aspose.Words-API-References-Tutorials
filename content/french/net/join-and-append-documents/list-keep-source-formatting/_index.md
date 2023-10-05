@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Étape 5 : Enregistrez le document final
 
- Enfin, enregistrez le document fusionné avec la fonctionnalité List Keep Source Formatting activée à l'aide de l'option`Save` méthode du`Document` classe.
+ Enfin, enregistrez le document fusionné avec la fonction List Keep Source Formatting activée à l'aide de l'option`Save` méthode du`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");

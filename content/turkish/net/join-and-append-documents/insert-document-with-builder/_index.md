@@ -48,7 +48,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## 5. Adım: Kaynak belgeyi ekleyin
 
- Kullan`InsertDocument` yöntemi`DocumentBuilder`Kaynak belgeyi hedef belgeye eklemek için sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak biçimlendirmesini korumak için.
+ Kullan`InsertDocument` yöntemi`DocumentBuilder` Kaynak belgeyi hedef belgeye eklemek için sınıf. İçe aktarma formatı modunu şu şekilde ayarlayın:`ImportFormatMode.KeepSourceFormatting` kaynak biçimlendirmesini korumak için.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

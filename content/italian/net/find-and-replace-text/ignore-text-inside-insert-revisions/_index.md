@@ -44,7 +44,7 @@ builder.Write("Text");
 
 ## Passaggio 4: utilizzo della funzione Ignora testo all'interno di Inserisci revisioni
 
- Per ignorare il testo all'interno delle revisioni di inserimento nelle operazioni successive, possiamo usare a`FindReplaceOptions` oggetto e impostare il`IgnoreInserted` proprietà a`true`:
+ Per ignorare il testo all'interno delle revisioni di inserimento nelle operazioni successive, possiamo usare a`FindReplaceOptions` oggetto e impostare il`IgnoreInserted`proprietà a`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -61,7 +61,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Passaggio 6: visualizzazione dell'output del documento modificato
 
-Dopo aver applicato la ricerca e sostituzione, possiamo visualizzare il contenuto modificato del documento utilizzando il file`GetText` metodo:
+ Dopo aver applicato la ricerca e sostituzione, possiamo visualizzare il contenuto modificato del documento utilizzando il file`GetText` metodo:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -69,7 +69,7 @@ Console.WriteLine(doc.GetText());
 
 ## Passaggio 7: modifica delle opzioni per includere le revisioni di inserimento
 
-Se vogliamo includere il testo all'interno delle revisioni di inserimento nel risultato di output, possiamo modificare le opzioni per non ignorare le revisioni di inserimento. Per questo imposteremo il`IgnoreInserted` proprietà a`false`:
+Se vogliamo includere il testo all'interno delle revisioni di inserimento nel risultato di output, possiamo modificare le opzioni per non ignorare le revisioni di inserimento. Per questo imposteremo il`IgnoreInserted`proprietà a`false`:
 
 ```csharp
 options.IgnoreInserted = false;
@@ -156,7 +156,7 @@ builder.Write("Text");
 
 #### D: Come posso ignorare il testo all'interno delle revisioni di inserimento in Aspose.Words per .NET?
 
- R: Per ignorare il testo all'interno delle revisioni di inserimento durante le operazioni successive, puoi utilizzare a`FindReplaceOptions` oggetto e impostare il`IgnoreInserted` proprietà a`true`:
+ R: Per ignorare il testo all'interno delle revisioni di inserimento durante le operazioni successive, puoi utilizzare a`FindReplaceOptions` oggetto e impostare il`IgnoreInserted`proprietà a`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };

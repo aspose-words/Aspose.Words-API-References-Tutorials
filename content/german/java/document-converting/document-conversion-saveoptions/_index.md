@@ -53,7 +53,7 @@ run.getFont().setColor(Color.RED);
 
 ## Dokumentkonvertierung mit SaveOptions
 
- Kommen wir nun zum Kern dieses Tutorials: Dokumentkonvertierung mit Aspose.Words. Um ein Dokument zu konvertieren, müssen Sie das verwenden`Save` -Methode und geben Sie das Ausgabeformat mit SaveOptions an. Hier ist ein Beispiel für die Konvertierung eines Dokuments in PDF:
+ Kommen wir nun zum Kern dieses Tutorials: Dokumentkonvertierung mit Aspose.Words. Um ein Dokument zu konvertieren, müssen Sie das verwenden`Save`-Methode und geben Sie das Ausgabeformat mit SaveOptions an. Hier ist ein Beispiel für die Konvertierung eines Dokuments in PDF:
 
 ```java
 // Geben Sie als Ausgabeformat PDF an
@@ -77,7 +77,7 @@ In diesem umfassenden Leitfaden haben wir die Welt der Dokumentkonvertierung mit
 
 ### Wie installiere ich Aspose.Words für Java?
 
- Die Installation von Aspose.Words für Java ist unkompliziert. Besuche den[Download-Seite](https://releases.aspose.com/words/java/) und befolgen Sie die Installationsanweisungen für Ihre Entwicklungsumgebung.
+ Die Installation von Aspose.Words für Java ist unkompliziert. Besuche den[Download-Seite](https://releases.aspose.com/words/java/)und befolgen Sie die Installationsanweisungen für Ihre Entwicklungsumgebung.
 
 ### Was sind SaveOptions in Aspose.Words?
 

@@ -74,7 +74,7 @@ C: Aspose.Words for .NET kullanarak Windows yazı tiplerini PDF belgesine yerle�
 
  PDF'ye dönüştürmek istediğiniz belgeyi kullanarak yükleyin.`Document` sınıf ve belge yolu.
 
- Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`FontEmbeddingMode` mülkiyet`PdfFontEmbeddingMode.EmbedNone`. Bu, Windows yazı tiplerinin oluşturulan PDF dosyasına yerleştirilmesini devre dışı bırakır.
+ Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`FontEmbeddingMode`mülkiyet`PdfFontEmbeddingMode.EmbedNone`. Bu, Windows yazı tiplerinin oluşturulan PDF dosyasına yerleştirilmesini devre dışı bırakır.
 
  Kullan`Save` yöntemi`Document` Daha önce yapılandırılan dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürmek için nesneyi seçin.
 

@@ -18,7 +18,7 @@ url: /ru/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 1.  Установка Python: убедитесь, что Python установлен в вашей системе. Вы можете скачать его с[здесь](https://www.python.org/downloads/).
 
-2. Aspose.Words for Python: вам необходимо установить Aspose.Words for Python. Вы можете скачать его с[здесь](https://releases.aspose.com/words/python/).
+2.  Aspose.Words for Python: вам необходимо установить Aspose.Words for Python. Вы можете скачать его с[здесь](https://releases.aspose.com/words/python/).
 
 3. Подготовка документа. Подготовьте документ Word, в котором вы хотите выполнить операции поиска и замены.
 

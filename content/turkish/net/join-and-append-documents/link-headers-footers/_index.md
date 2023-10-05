@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: Eklenen Belgeyi Yeni Sayfada Görünecek Şekilde Ayarlayın
 
-Kaynak belgedeki içeriğin hedef belgedeki yeni bir sayfada görünmesini sağlamak için`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.NewPage`.
+ Kaynak belgedeki içeriğin hedef belgedeki yeni bir sayfada görünmesini sağlamak için`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Adım 4: Üstbilgileri ve Altbilgileri Önceki Bölüme Bağlayın
 
- Kaynak belgenin üstbilgilerini ve altbilgilerini hedef belgedeki önceki bölüme bağlamak için`LinkToPrevious` yöntemi`HeadersFooters` Toplamak. Geçerek`true` parametre olarak kaynak belgedeki mevcut üstbilgileri veya altbilgileri geçersiz kılarsınız.
+Kaynak belgenin üstbilgilerini ve altbilgilerini hedef belgedeki önceki bölüme bağlamak için`LinkToPrevious` yöntemi`HeadersFooters` Toplamak. Geçerek`true` parametre olarak kaynak belgedeki mevcut üstbilgileri veya altbilgileri geçersiz kılarsınız.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

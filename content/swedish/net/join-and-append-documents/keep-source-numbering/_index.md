@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Behåll källnumreringen när du importerar
 
-För att bevara numreringsformateringen av numrerade stycken från källdokumentet, skapa en instans av`ImportFormatOptions` och ställ in`KeepSourceNumbering` till`true` . Använda en`NodeImporter` att importera noder från källdokumentet till måldokumentet, ange`ImportFormatMode.KeepSourceFormatting` och den`importFormatOptions`.
+ För att bevara numreringsformateringen av numrerade stycken från källdokumentet, skapa en instans av`ImportFormatOptions` och ställ in`KeepSourceNumbering` till`true` . Använda en`NodeImporter` att importera noder från källdokumentet till måldokumentet, ange`ImportFormatMode.KeepSourceFormatting` och den`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Steg 4: Importera och lägg till stycken
 
- Iterera genom styckena i källdokumentet och importera varje stycke till måldokumentet med hjälp av`importer`. Lägg till de importerade noderna till måldokumentets brödtext.
+Iterera genom styckena i källdokumentet och importera varje stycke till måldokumentet med hjälp av`importer`. Lägg till de importerade noderna till måldokumentets brödtext.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;

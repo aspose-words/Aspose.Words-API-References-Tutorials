@@ -58,7 +58,7 @@ R: Omitir la carga de imágenes PDF puede resultar beneficioso por varios motivo
 
 #### P: ¿Cómo puedo omitir la carga de imágenes PDF en Aspose.Words para .NET?
 
- R: Puede omitir la carga de imágenes PDF utilizando el`PdfLoadOptions`clase proporcionada por Aspose.Words para .NET. Simplemente configure el`SkipPdfImages` propiedad a`true` al configurar las opciones de carga de su documento PDF.
+ R: Puede omitir la carga de imágenes PDF utilizando el`PdfLoadOptions`clase proporcionada por Aspose.Words para .NET. Simplemente configure el`SkipPdfImages`propiedad a`true` al configurar las opciones de carga de su documento PDF.
 
 #### P: ¿Puedo seguir accediendo a las imágenes PDF omitidas después de cargar el documento?
 

@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Passaggio 4: impostare la formattazione del paragrafo "Conserva con successivo" per il documento di origine
 
- Per mantenere insieme i paragrafi nel documento di origine, è possibile scorrere ciascun paragrafo nel documento e impostare il file`KeepWithNext` proprietà a`true`.
+Per mantenere insieme i paragrafi nel documento di origine, è possibile scorrere ciascun paragrafo nel documento e impostare il file`KeepWithNext`proprietà a`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

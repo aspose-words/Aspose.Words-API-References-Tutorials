@@ -65,7 +65,7 @@ Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table
 
 ## Conclusion
 
-Dans cet exemple, nous avons exploré la fonctionnalité Déplacer vers une cellule de table d’Aspose.Words pour .NET. Nous avons appris comment charger un document contenant un tableau, déplacer DocumentBuilder vers une cellule de tableau spécifique et ajouter du contenu à cette cellule. Cette fonctionnalité fournit aux développeurs des outils puissants pour parcourir et manipuler des cellules spécifiques dans les tableaux de documents Word par programmation à l'aide d'Aspose.Words pour .NET. Il peut constituer un ajout précieux à votre application pour le traitement dynamique de documents Word et la gestion du contenu des tableaux.
+Dans cet exemple, nous avons exploré la fonctionnalité Déplacer vers une cellule de table d’Aspose.Words pour .NET. Nous avons appris à charger un document contenant un tableau, à déplacer DocumentBuilder vers une cellule de tableau spécifique et à ajouter du contenu à cette cellule. Cette fonctionnalité fournit aux développeurs des outils puissants pour parcourir et manipuler des cellules spécifiques dans les tableaux de documents Word par programmation à l'aide d'Aspose.Words pour .NET. Il peut constituer un ajout précieux à votre application pour le traitement dynamique de documents Word et la gestion du contenu des tableaux.
 
 ### FAQ pour le déplacement vers une cellule de tableau dans un document Word
 

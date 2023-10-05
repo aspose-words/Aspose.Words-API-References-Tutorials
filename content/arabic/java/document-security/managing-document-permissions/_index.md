@@ -16,7 +16,7 @@ url: /ar/java/document-security/managing-document-permissions/
 
 قبل أن نتعمق في إدارة أذونات المستندات، فلنبدأ بإعداد Aspose.Words لـ Java. اتبع هذه الخطوات للبدء:
 
-1.  تنزيل Aspose.Words لـ Java: تفضل بزيارة[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) لتنزيل أحدث إصدار من Aspose.Words لـ Java.
+1.  تنزيل Aspose.Words لـ Java: تفضل بزيارة[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/java/) لتنزيل أحدث إصدار من Aspose.Words لـ Java.
 
 2. تثبيت Aspose.Words for Java: بعد تنزيل المكتبة، اتبع تعليمات التثبيت لإعدادها في بيئة تطوير Java الخاصة بك.
 

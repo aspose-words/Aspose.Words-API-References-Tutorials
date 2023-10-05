@@ -61,7 +61,7 @@ Félicitation ! Vous avez maintenant appris à créer une table avec Aspose.Word
 
 #### Q : Comment créer un tableau dans Markdown ?
 
-R : Pour créer un tableau dans Markdown, utilisez la syntaxe des tubes (`|`) pour délimiter les cellules et les tirets (`-`) pour délimiter les en-têtes de tableau.
+R : Pour créer un tableau dans Markdown, utilisez la syntaxe des tubes (`|`pour délimiter les cellules et les tirets (`-`) pour délimiter les en-têtes de tableau.
 
 #### Q : Pouvons-nous personnaliser l’apparence d’un tableau dans Markdown ?
 
@@ -75,6 +75,6 @@ R : La fusion de cellules dans un tableau dans Markdown dépend de l'éditeur Ma
 
 R : Dans Markdown standard, les tableaux n'offrent pas de prise en charge directe des styles CSS. Cependant, certains éditeurs Markdown vous permettent d'ajouter des styles CSS aux tableaux pour personnaliser leur apparence.
 
-#### : Pouvons-nous ajouter des liens ou du texte au format inline dans les cellules d'un tableau dans Markdown ?
+#### Q : Pouvons-nous ajouter des liens ou du texte au format inline dans les cellules d'un tableau dans Markdown ?
 
 R : Oui, vous pouvez ajouter des liens ou du texte en ligne aux cellules du tableau dans Markdown en utilisant la syntaxe Markdown appropriée.

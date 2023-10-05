@@ -58,15 +58,15 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Comment puis-je insérer un champ de formulaire de type texte dans Aspose.Words ?
 
- R : Pour insérer un champ de formulaire de type texte dans Aspose.Words, vous pouvez utiliser le`FormField` classe et définir son`Type` propriété à`FormFieldType.Text`. Vous pouvez également personnaliser d'autres propriétés telles que le nom, l'étiquette et les options.
+ R : Pour insérer un champ de formulaire de type texte dans Aspose.Words, vous pouvez utiliser le`FormField` classe et définir son`Type`propriété à`FormFieldType.Text`. Vous pouvez également personnaliser d'autres propriétés telles que le nom, l'étiquette et les options.
 
 #### Q : Est-il possible de créer un champ de formulaire de type case à cocher dans un document ?
 
- R : Oui, il est possible de créer un champ de formulaire de type case à cocher dans un document Aspose.Words. Vous pouvez utiliser le`FormField` classe et définir son`Type` propriété à`FormFieldType.CheckBox` pour créer une case à cocher. Vous pouvez ensuite personnaliser les propriétés de la case à cocher selon vos besoins.
+ R : Oui, il est possible de créer un champ de formulaire de type case à cocher dans un document Aspose.Words. Vous pouvez utiliser le`FormField` classe et définir son`Type`propriété à`FormFieldType.CheckBox` pour créer une case à cocher. Vous pouvez ensuite personnaliser les propriétés de la case à cocher selon vos besoins.
 
 #### Q : Comment puis-je ajouter un champ de formulaire de type déroulant à un document ?
 
- R : Pour ajouter un champ de formulaire de type déroulant dans un document Aspose.Words, utilisez le`FormField` classe et définir son`Type` propriété à`FormFieldType.DropDown` . Vous pouvez ensuite définir les options déroulantes à l'aide du`DropDownItems` propriété.
+ R : Pour ajouter un champ de formulaire de type déroulant dans un document Aspose.Words, utilisez le`FormField` classe et définir son`Type`propriété à`FormFieldType.DropDown` . Vous pouvez ensuite définir les options déroulantes à l'aide du`DropDownItems` propriété.
 
 #### Q : Puis-je définir une valeur par défaut pour un champ de formulaire dans Aspose.Words ?
 

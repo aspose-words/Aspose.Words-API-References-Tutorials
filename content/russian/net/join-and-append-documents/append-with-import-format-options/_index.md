@@ -64,7 +64,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// Укажите, что если нумерация в исходном и целевом документах противоречит,
-	// тогда будет использована нумерация из исходного документа.
+	//тогда будет использована нумерация из исходного документа.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

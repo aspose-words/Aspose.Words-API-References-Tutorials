@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Combine varios estilos para dar formato a documentos complejos:
 
 ```java
-// Combina estilos para una apariencia única
+//Combina estilos para una apariencia única
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words para Java proporciona potentes capacidades de formato condicional. 
 ¡Absolutamente! Aspose.Words para Java admite una amplia gama de fuentes y caracteres de varios idiomas y secuencias de comandos.
 
 ### ¿Cómo puedo agregar hipervínculos a texto con estilos específicos?
-Para agregar hipervínculos al texto, use el`FieldHyperlink` clase en combinación con estilos para lograr el formato deseado.
+ Para agregar hipervínculos al texto, use el`FieldHyperlink`clase en combinación con estilos para lograr el formato deseado.
 
 ### ¿Existe alguna limitación en cuanto al tamaño o la complejidad del documento?
 Aspose.Words para Java puede manejar documentos de diferentes tamaños y complejidad. Sin embargo, los documentos extremadamente grandes pueden requerir recursos de memoria adicionales.

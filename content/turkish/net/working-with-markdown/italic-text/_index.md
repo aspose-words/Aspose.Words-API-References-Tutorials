@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Adım 2: Metni İtalik Hale Getirin
 
- Yazı tipini ayarlayarak metni italik hale getirebiliriz`Italic` mülkiyet`true`.
+ Yazı tipini ayarlayarak metni italik hale getirebiliriz`Italic`mülkiyet`true`.
 
 ```csharp
 builder.Font.Italic = true;
@@ -46,11 +46,11 @@ Tebrikler! Artık Aspose.Words for .NET ile italik metin özelliğini nasıl kul
 
 #### S: Aspose.Words'te metni nasıl italik hale getirebilirim?
 
-C: Aspose.Words'te metni italik hale getirmek için`Font.Italic` mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metni italik hale getirmek için. Örneğin, kullanabilirsiniz`run.Font.Italic=true` içindeki metni italik hale getirmek için`Run` nesne.
+C: Aspose.Words'te metni italik hale getirmek için`Font.Italic` mülkiyeti`Run` nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metni italik hale getirmek için. Örneğin, kullanabilirsiniz`run.Font.Italic=true` içindeki metni italik hale getirmek için`Run` nesne.
 
 #### S: Aynı paragrafta birden fazla metin parçasını italik yapmak mümkün müdür?
 
- C: Evet, birden çok metin parçasını tek bir paragrafta birden fazla kullanarak italik hale getirebilirsiniz.`Run` nesneler. Birden fazla oluşturabilirsiniz`Run` nesneleri ayarlayın ve`Font.Italic` mülkiyet`true` Her nesne için metnin istenen bölümlerini italik hale getirmek. Daha sonra bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.
+ C: Evet, birden çok metin parçasını tek bir paragrafta birden fazla kullanarak italik hale getirebilirsiniz.`Run` nesneler. Birden fazla oluşturabilirsiniz`Run` nesneleri ayarlayın ve`Font.Italic`mülkiyet`true` Her nesne için metnin istenen bölümlerini italik hale getirmek. Daha sonra bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.
 
 #### S: Aspose.Words'te bir tablo veya hücredeki metni italik hale getirebilir miyim?
 

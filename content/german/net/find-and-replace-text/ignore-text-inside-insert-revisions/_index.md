@@ -44,7 +44,7 @@ builder.Write("Text");
 
 ## Schritt 4: Verwenden der Funktion „Text in Revisionen einfügen“ ignorieren
 
- Um Text innerhalb von Einfügungsrevisionen bei nachfolgenden Vorgängen zu ignorieren, können wir a verwenden`FindReplaceOptions` Objekt und legen Sie das fest`IgnoreInserted` Eigentum zu`true`:
+ Um Text innerhalb von Einfügungsrevisionen bei nachfolgenden Vorgängen zu ignorieren, können wir a verwenden`FindReplaceOptions` Objekt und legen Sie das fest`IgnoreInserted`Eigentum zu`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -61,7 +61,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Schritt 6: Anzeigen der geänderten Dokumentausgabe
 
-Nachdem wir das Suchen und Ersetzen angewendet haben, können wir den geänderten Inhalt des Dokuments mithilfe von anzeigen`GetText` Methode:
+ Nachdem wir das Suchen und Ersetzen angewendet haben, können wir den geänderten Inhalt des Dokuments mithilfe von anzeigen`GetText` Methode:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -69,7 +69,7 @@ Console.WriteLine(doc.GetText());
 
 ## Schritt 7: Optionen ändern, um Einfügungsrevisionen einzubeziehen
 
-Wenn wir den Text in den Einfügungsrevisionen in das Ausgabeergebnis einschließen möchten, können wir die Optionen so ändern, dass die Einfügungsrevisionen nicht ignoriert werden. Hierzu legen wir die fest`IgnoreInserted` Eigentum zu`false`:
+Wenn wir den Text in den Einfügungsrevisionen in das Ausgabeergebnis einschließen möchten, können wir die Optionen so ändern, dass die Einfügungsrevisionen nicht ignoriert werden. Hierzu legen wir die fest`IgnoreInserted`Eigentum zu`false`:
 
 ```csharp
 options.IgnoreInserted = false;
@@ -119,7 +119,7 @@ Hier ist der vollständige Beispielquellcode, um die Verwendung der Funktion „
 
 ## Abschluss
 
-In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Text in Revisionen ignorieren“ in Aspose.Words für .NET verwendet wird. Wir folgten einer Schritt-für-Schritt-Anleitung zum Erstellen eines Dokuments, zum Einfügen von Text mit Nachverfolgung von Revisionen und nicht überarbeitetem Text, zur Verwendung der Funktion „Text in Revisionen einfügen“ ignorieren, zum Durchführen von Such- und Ersetzungsvorgängen mit regulären Ausdrücken und zum Anzeigen des geänderten Dokuments.
+In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Text in Revisionen ignorieren“ in Aspose.Words für .NET verwendet wird. Wir folgten einer Schritt-für-Schritt-Anleitung zum Erstellen eines Dokuments, zum Einfügen von Text mit Verfolgung von Revisionen und nicht überarbeitetem Text, zur Verwendung der Funktion „Text in Revisionen einfügen“ ignorieren, zum Durchführen von Such- und Ersetzungsvorgängen mit regulären Ausdrücken und zum Anzeigen des geänderten Dokuments.
 
 ### FAQs
 
@@ -156,7 +156,7 @@ builder.Write("Text");
 
 #### F: Wie kann ich Text in Einfügungsrevisionen in Aspose.Words für .NET ignorieren?
 
- A: Um Text in Einfügungsrevisionen bei nachfolgenden Vorgängen zu ignorieren, können Sie a verwenden`FindReplaceOptions` Objekt und legen Sie das fest`IgnoreInserted` Eigentum zu`true`:
+ A: Um Text in Einfügungsrevisionen bei nachfolgenden Vorgängen zu ignorieren, können Sie a verwenden`FindReplaceOptions` Objekt und legen Sie das fest`IgnoreInserted`Eigentum zu`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Paso 3: Configure las opciones para guardar como PDF con interpolación de fotogramas
 
- Para habilitar la interpolación de imágenes al convertir a PDF, necesitamos configurar el`PdfSaveOptions` objeto configurando el`InterpolateImages` propiedad a`true`.
+ Para habilitar la interpolación de imágenes al convertir a PDF, necesitamos configurar el`PdfSaveOptions` objeto configurando el`InterpolateImages`propiedad a`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
@@ -74,7 +74,7 @@ R: Para habilitar la interpolación de imágenes al convertir a PDF con Aspose.W
 
  Crear una instancia del`Document` clase que especifica la ruta al documento de Word.
 
- Crear una instancia del`PdfSaveOptions` clase y establecer el`InterpolateImages` propiedad a`true` para habilitar la interpolación de imágenes.
+ Crear una instancia del`PdfSaveOptions` clase y establecer el`InterpolateImages`propiedad a`true` para habilitar la interpolación de imágenes.
 
  Utilizar el`Save` método de la`Document`clase para guardar el documento en formato PDF especificando opciones de guardado.
 

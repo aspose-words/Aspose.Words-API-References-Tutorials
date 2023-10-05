@@ -78,7 +78,7 @@ S: En styckenod i ett XML-dokument används för att representera ett stycke tex
 
 #### F: Hur lägger man till en styckenod i ett befintligt XML-dokument?
 
- S: För att lägga till en styckenod till ett befintligt XML-dokument kan du använda`appendChild` metod för att lägga till styckenoden som ett underordnat element till ett annat element i XML-dokumentet. Du kan till exempel lägga till det som ett underordnat element till dokumentrotelementet.
+ S: För att lägga till en styckenod till ett befintligt XML-dokument kan du använda`appendChild`metod för att lägga till styckenoden som ett underordnat element till ett annat element i XML-dokumentet. Du kan till exempel lägga till det som ett underordnat element till dokumentrotelementet.
 
 #### F: Hur definierar man innehållet i en styckenod?
 

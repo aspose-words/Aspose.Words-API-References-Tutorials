@@ -178,7 +178,7 @@ builder.EndBookmark("Main bookmark");
 
 #### F: Hur lägger man till text i ett bokmärke med Aspose.Words för .NET?
 
-S: För att lägga till text i ett bokmärke med Aspose.Words för .NET, kan du använda`Write` metod för`DocumentBuilder` objekt som anger texten som ska läggas till. Här är en exempelkod:
+ S: För att lägga till text i ett bokmärke med Aspose.Words för .NET, kan du använda`Write` metod för`DocumentBuilder`objekt som anger texten som ska läggas till. Här är en exempelkod:
 
 ```csharp
 builder.StartBookmark("My Bookmark");

@@ -82,7 +82,7 @@ R: Per esportare i segnalibri di intestazione e piè di pagina da un documento W
 
  Configura le opzioni di salvataggio come PDF creando un'istanza del file`PdfSaveOptions` classe e impostando le opzioni appropriate per i segnalibri di intestazione e piè di pagina.
 
- Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document`classe specificando il percorso e le opzioni di salvataggio.
+ Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document` classe specificando il percorso e le opzioni di salvataggio.
 
 ### D: Quali sono i vantaggi dell'esportazione dei segnalibri di intestazione e piè di pagina in un documento PDF?
 R: I vantaggi derivanti dall'esportazione dei segnalibri di intestazione e piè di pagina in un documento PDF sono:

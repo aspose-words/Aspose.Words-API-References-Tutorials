@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- I det här steget konfigurerar vi alternativen för att ladda RTF-dokumentet. Vi skapar en ny`RtfLoadOptions` objekt och ställ in`RecognizeUtf8Text` egendom till`true`. Detta tillåter Aspose.Words att korrekt känna igen och bearbeta UTF-8-kodad text när dokumentet laddas.
+ I det här steget konfigurerar vi alternativen för att ladda RTF-dokumentet. Vi skapar en ny`RtfLoadOptions` objekt och ställ in`RecognizeUtf8Text`egendom till`true`. Detta tillåter Aspose.Words att korrekt känna igen och bearbeta UTF-8-kodad text när dokumentet laddas.
 
 ## Steg 3: Ladda dokumentet
 
@@ -39,7 +39,7 @@ Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
 doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 ```
 
- I detta sista steg sparar vi det resulterande dokumentet i RTF-format med hjälp av`Save` metod och skicka sökvägen till utdatafilen.
+ I detta sista steg sparar vi det resulterande dokumentet i RTF-format med hjälp av`Save` metod och skickar sökvägen till utdatafilen.
 
 Nu kan du köra källkoden för att ladda RTF-dokumentet och korrekt känna igen UTF-8-kodad text. Det resulterande dokumentet kommer att sparas i den angivna katalogen med namnet "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf".
 

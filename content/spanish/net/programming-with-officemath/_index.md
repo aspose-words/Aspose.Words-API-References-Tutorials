@@ -7,7 +7,7 @@ type: docs
 weight: 1550
 url: /es/net/programming-with-officemath/
 ---
-Los tutoriales de Aspose.Words para .NET sobre procesamiento de palabras con OfficeMath lo guiarán en el uso de la funcionalidad de OfficeMath para manipular y dar formato a ecuaciones matemáticas en sus documentos de Word. Aprenderá cómo crear, modificar y eliminar ecuaciones matemáticas, así como también cómo aplicar estilos y formatos específicos. Estos tutoriales le brindarán una comprensión profunda de la manipulación de ecuaciones matemáticas en sus documentos de Word.
+Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con OfficeMath lo guiarán en el uso de la funcionalidad de OfficeMath para manipular y dar formato a ecuaciones matemáticas en sus documentos de Word. Aprenderá cómo crear, modificar y eliminar ecuaciones matemáticas, así como también cómo aplicar estilos y formatos específicos. Estos tutoriales le brindarán una comprensión profunda de la manipulación de ecuaciones matemáticas en sus documentos de Word.
 
  ## Tutoriales
 | Título | Descripción |

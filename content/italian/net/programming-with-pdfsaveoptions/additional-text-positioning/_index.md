@@ -79,7 +79,7 @@ R: Per migliorare il posizionamento del testo in un file PDF aggiungendo testo a
  Configura le opzioni per la conversione in PDF creando un'istanza del file`PdfSaveOptions` classe e abilitando il`AdditionalTextPositioning` opzione per abilitare l'opzione precisa 
 posizionamento di testo aggiuntivo nel file PDF.
 
- Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document`classe specificando il percorso e le opzioni di salvataggio.
+ Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document` classe specificando il percorso e le opzioni di salvataggio.
 
 #### D: Quali sono i vantaggi derivanti dal miglioramento del posizionamento del testo in un file PDF aggiungendo testo aggiuntivo?
 R: I vantaggi di migliorare il posizionamento del testo in un file PDF aggiungendo testo aggiuntivo sono:

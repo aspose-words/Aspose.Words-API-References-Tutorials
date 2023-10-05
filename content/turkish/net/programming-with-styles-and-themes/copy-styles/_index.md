@@ -21,7 +21,7 @@ Document doc = new Document();
 Document target = new Document(dataDir + "Rendering.docx");
 ```
 
- Bu adımda iki tane oluşturuyoruz`Document` nesneler:`doc` boş kaynak belgeyi temsil eden ve`target`bu, stilleri kopyalayacağımız hedef belgeyi temsil eder.
+ Bu adımda iki tane oluşturuyoruz`Document` nesneler:`doc` boş kaynak belgeyi temsil eden ve`target` bu, stilleri kopyalayacağımız hedef belgeyi temsil eder.
 
 ## 3. Adım: Stilleri kopyalayın
 
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 
  Bu eğitimde Aspose.Words for .NET ile kopyalama stilleri özelliğini inceledik. kullanarak`CopyStylesFromTemplate` Bu yöntemle stilleri kaynak belgeden hedef belgeye kopyalayabildik, böylece birden çok belgede stilleri tutarlı tutmayı kolaylaştırdık.
 
-Stilleri kopyalamak, önceden yapılandırılmış stilleri birden çok belgeye uygulamak istediğinizde, tutarlı bir görünüm ve biçimlendirme sağlamak istediğinizde özellikle kullanışlıdır. Bu, her belge için aynı stilleri yeniden oluşturmak zorunda kalmayarak zamandan ve emekten tasarruf etmenizi sağlar.
+Stilleri kopyalamak, önceden yapılandırılmış stilleri birden çok belgeye uygulamak ve tutarlı bir görünüm ve biçimlendirme sağlamak istediğinizde özellikle kullanışlıdır. Bu, her belge için aynı stilleri yeniden oluşturmak zorunda kalmayarak zamandan ve emekten tasarruf etmenizi sağlar.
 
 Aspose.Words for .NET, belgelerinizdeki stilleri değiştirmeniz için güçlü bir API sağlar. Bu özelliği stilleri özelleştirmek, temalar uygulamak veya stilleri farklı belgeler arasında aktarmak için kullanabilirsiniz.
 
@@ -73,7 +73,7 @@ Stil yönetimini geliştirmek ve iş akışınızı optimize etmek için Aspose.
 #### Aspose.Words for .NET'i kullanarak stilleri bir belgeden diğerine nasıl kopyalayabilirim?
 
 Stilleri kaynak belgeden hedef belgeye kopyalamak için şu adımları izleyin:
-1.  İki tane oluştur`Document` Kaynak belgeyi ve hedef belgeyi temsil eden nesneler.
+1.  İki tane oluştur`Document` kaynak belgeyi ve hedef belgeyi temsil eden nesneler.
 2.  Kullan`CopyStylesFromTemplate` Hedef belgede kaynak belgeyi argüman olarak ileten yöntem.
 
 #### Stilleri belgeler arasında kopyalamanın faydası nedir?

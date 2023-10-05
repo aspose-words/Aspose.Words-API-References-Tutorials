@@ -97,7 +97,7 @@ builder.ListFormat.RemoveNumbers();
 // Per riutilizzare il primo elenco è necessario riavviare la numerazione creando una copia della formattazione dell'elenco originale.
 List list2 = doc.Lists.AddCopy(list1);
 
-//Possiamo modificare il nuovo elenco in qualsiasi modo, anche impostando un nuovo numero di partenza.
+// Possiamo modificare il nuovo elenco in qualsiasi modo, anche impostando un nuovo numero di partenza.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -122,7 +122,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### D: Come posso specificare un valore di numerazione specifico da cui riavviare l'elenco?
 
- R: Per specificare un valore numerico specifico da cui riavviare l'elenco, è possibile utilizzare il comando`ListRestartAtNumber`metodo che passa il valore desiderato come argomento. Ad esempio, per riavviare la numerazione da 5, è possibile utilizzare`list.ListRestartAtNumber(5)`.
+R: Per specificare un valore numerico specifico da cui riavviare l'elenco, è possibile utilizzare il comando`ListRestartAtNumber` metodo che passa il valore desiderato come argomento. Ad esempio, per riavviare la numerazione da 5, è possibile utilizzare`list.ListRestartAtNumber(5)`.
 
 #### D: È possibile riavviare la numerazione degli elenchi a più livelli in Aspose.Words?
 

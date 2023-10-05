@@ -93,7 +93,7 @@ Bu, Aspose.Words for .NET kullanarak basit bir sütun grafiği ekleme işlemini 
 
 Bu eğitimde Aspose.Words for .NET'i kullanarak bir Word belgesine basit bir sütun grafiğinin nasıl ekleneceğini öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak yeni bir belge oluşturabilir, sütun grafiği ekleyebilir, kategoriler ve karşılık gelen değerlerle birden fazla seri ekleyebilir ve belgeyi grafikle birlikte kaydedebilirsiniz.
 
-Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için güçlü ve esnek bir API sağlar. Basit sütun grafiği, farklı kategorilerdeki verileri temsil etmenin ve karşılaştırmanın etkili bir yoludur. Aspose.Words for .NET ile özel verilerle kolayca sütun grafikleri oluşturabilir, görsel karşılaştırma için birden fazla seri ekleyebilir ve grafiğin görünümünü gereksinimlerinize göre özelleştirebilirsiniz.
+Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için güçlü ve esnek bir API sağlar. Basit sütun grafiği, farklı kategorilerdeki verileri temsil etmenin ve karşılaştırmanın etkili bir yoludur. Aspose.Words for .NET ile kolayca özel verilerle sütun grafikleri oluşturabilir, görsel karşılaştırma için birden fazla seri ekleyebilir ve grafiğin görünümünü gereksinimlerinize göre özelleştirebilirsiniz.
 
 Aspose.Words for .NET'i kullanarak, sütun grafikleriyle belge oluşturma sürecini otomatikleştirebilir, manuel belge oluşturmada zamandan ve emekten tasarruf edebilirsiniz. Kitaplık, basit sütun grafikleri de dahil olmak üzere çok çeşitli grafik türleri sunar ve grafiğin görünümünü ihtiyaçlarınıza uyacak şekilde uyarlamak için çeşitli özelleştirme seçenekleri sunar.
 

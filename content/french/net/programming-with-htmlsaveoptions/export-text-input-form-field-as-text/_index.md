@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Ce code crée une instance de`HtmlSaveOptions`et définit le`ExportTextInputFormFieldAsText` possibilité de`true`pour exporter les champs du formulaire de saisie de texte sous forme de texte brut. De plus, il précise le dossier dans lequel les images extraites seront enregistrées.
+ Ce code crée une instance de`HtmlSaveOptions`et définit le`ExportTextInputFormFieldAsText` possibilité de`true` pour exporter les champs du formulaire de saisie de texte sous forme de texte brut. De plus, il précise le dossier dans lequel les images extraites seront enregistrées.
 
 ## Étape 4 : Conversion et enregistrement du document au format HTML
 

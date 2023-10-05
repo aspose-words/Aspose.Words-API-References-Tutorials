@@ -8,7 +8,7 @@ weight: 10
 url: /sv/java/document-rendering/master-document-rendering/
 ---
 
-I den här omfattande steg-för-steg-handledningen kommer vi att fördjupa oss i världen av dokumentåtergivning och ordbehandling med Aspose.Words för Java. Dokumentåtergivning är en avgörande aspekt av många applikationer, vilket gör att användare kan se och manipulera dokument sömlöst. Oavsett om du arbetar med ett innehållshanteringssystem, ett rapporteringsverktyg eller någon dokumentcentrerad applikation är det viktigt att förstå dokumentåtergivning. Under den här handledningen kommer vi att förse dig med kunskapen och källkoden du behöver för att bemästra dokumentrendering med Aspose.Words för Java.
+den här omfattande steg-för-steg-handledningen kommer vi att fördjupa oss i världen av dokumentåtergivning och ordbehandling med Aspose.Words för Java. Dokumentåtergivning är en avgörande aspekt av många applikationer, vilket gör att användare kan se och manipulera dokument sömlöst. Oavsett om du arbetar med ett innehållshanteringssystem, ett rapporteringsverktyg eller någon dokumentcentrerad applikation är det viktigt att förstå dokumentåtergivning. Under den här handledningen kommer vi att förse dig med kunskapen och källkoden du behöver för att bemästra dokumentrendering med Aspose.Words för Java.
 
 ## Introduktion till dokumentåtergivning
 
@@ -48,7 +48,7 @@ Document doc = new Document(stream);
 Document doc = new Document("https://example.com/document.docx");
 ```
 
-### Åtkomst till dokumentinnehåll
+### Få åtkomst till dokumentinnehåll
 
 När dokumentet har laddats kan du komma åt dess innehåll, stycken, tabeller, bilder och andra element med hjälp av Aspose.Words rika API.
 

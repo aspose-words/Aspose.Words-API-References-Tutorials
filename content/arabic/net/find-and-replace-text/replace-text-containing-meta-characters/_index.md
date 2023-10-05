@@ -65,7 +65,7 @@ count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 ## الخطوة 6: حفظ المستند المحرر
 
- وأخيرًا، نقوم بحفظ المستند المعدل في دليل محدد باستخدام الملف`Save` طريقة:
+وأخيرًا، نقوم بحفظ المستند المعدل في دليل محدد باستخدام الملف`Save` طريقة:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");

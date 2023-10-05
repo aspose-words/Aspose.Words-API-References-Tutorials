@@ -29,7 +29,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ensuite, insérez un graphique dans le document à l'aide du`InsertChart` méthode du`DocumentBuilder`Dans cet exemple, nous allons insérer un histogramme.
+ Ensuite, insérez un graphique dans le document à l'aide du`InsertChart` méthode du`DocumentBuilder`. Dans cet exemple, nous allons insérer un histogramme.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
@@ -49,7 +49,7 @@ chart.Series.Add("Aspose Series 1",
 
 ## Étape 4 : Masquer l'axe du graphique
 
- Pour masquer l'axe du graphique, accédez à l'onglet`AxisY` propriété du graphique et définissez la`Hidden` propriété à`true`.
+ Pour masquer l'axe du graphique, accédez à l'onglet`AxisY` propriété du graphique et définissez la`Hidden`propriété à`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
@@ -89,7 +89,7 @@ Ceci termine la mise en œuvre du masquage de l’axe du graphique à l’aide d
 
 Dans ce didacticiel, vous avez appris à masquer l'axe du graphique dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez créer un graphique, ajouter des données de série et masquer l'axe du graphique pour obtenir l'effet visuel souhaité.
 
- Aspose.Words for .NET fournit une API complète pour le traitement de mots avec des graphiques dans des documents Word, vous permettant de manipuler divers aspects du graphique, y compris les propriétés des axes. En accédant au`AxisY`propriété du graphique, vous pouvez masquer l’axe Y pour le supprimer de la visualisation du graphique.
+ Aspose.Words for .NET fournit une API complète pour le traitement de mots avec des graphiques dans des documents Word, vous permettant de manipuler divers aspects du graphique, y compris les propriétés des axes. En accédant au`AxisY` propriété du graphique, vous pouvez masquer l’axe Y pour le supprimer de la visualisation du graphique.
 
 Masquer l’axe du graphique peut être utile lorsque vous souhaitez vous concentrer sur les données du graphique sans être distrait par les lignes et les étiquettes des axes. Il donne une apparence plus propre et minimaliste au graphique.
 
@@ -104,13 +104,13 @@ Aspose.Words for .NET est une puissante bibliothèque de traitement de documents
 Vous pouvez installer Aspose.Words pour .NET en le téléchargeant à l'aide du gestionnaire de packages NuGet dans Visual Studio. Recherchez simplement « Aspose.Words » dans le gestionnaire de packages NuGet et installez-le dans votre projet.
 
 #### Q3. Puis-je masquer à la fois l’axe X et l’axe Y d’un graphique ?
- Oui, vous pouvez masquer à la fois l'axe X et l'axe Y d'un graphique à l'aide d'Aspose.Words pour .NET. Pour masquer l'axe X, vous pouvez accéder au`AxisX` propriété du graphique et définissez la`Hidden` propriété à`true` De même, pour masquer l'axe Y, vous pouvez accéder au`AxisY` propriété et définir la`Hidden` propriété à`true`. Cela vous permet de supprimer les deux axes de la visualisation graphique.
+ Oui, vous pouvez masquer les axes X et Y d'un graphique à l'aide d'Aspose.Words pour .NET. Pour masquer l'axe X, vous pouvez accéder au`AxisX` propriété du graphique et définissez la`Hidden`propriété à`true` . De même, pour masquer l'axe Y, vous pouvez accéder au`AxisY` propriété et définir la`Hidden`propriété à`true`. Cela vous permet de supprimer les deux axes de la visualisation graphique.
 
 #### Q4. Puis-je afficher à nouveau l’axe après l’avoir masqué ?
- Oui, vous pouvez afficher à nouveau l'axe du graphique après l'avoir masqué à l'aide d'Aspose.Words for .NET. Pour afficher un axe caché, définissez simplement le`Hidden` propriété du correspondant`AxisX` ou`AxisY` s'opposer à`false`. Cela rendra l'axe à nouveau visible dans le graphique.
+Oui, vous pouvez afficher à nouveau l'axe du graphique après l'avoir masqué à l'aide d'Aspose.Words for .NET. Pour afficher un axe caché, définissez simplement le`Hidden` propriété du correspondant`AxisX` ou`AxisY` s'opposer à`false`. Cela rendra l'axe à nouveau visible dans le graphique.
 
 #### Q5. Puis-je personnaliser d’autres propriétés de l’axe du graphique ?
  Oui, Aspose.Words for .NET vous permet de personnaliser diverses propriétés de l'axe du graphique, telles que le titre de l'axe, les étiquettes, la couleur des lignes, etc. En accédant au`AxisX` et`AxisY` propriétés du graphique, vous pouvez modifier les propriétés telles que`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, et plein d'autres. Cela vous donne un contrôle précis sur l’apparence et le comportement des axes du graphique.
 
 #### Q6. Puis-je enregistrer le graphique avec l’axe caché dans différents formats de fichier ?
-Oui, Aspose.Words for .NET vous permet d'enregistrer le document contenant le graphique avec un axe masqué dans différents formats de fichiers, tels que DOCX, PDF, HTML, etc. Vous pouvez choisir le format de sortie souhaité en fonction de vos besoins et utiliser le`Save` méthode du`Document` objet pour enregistrer le document. L'axe caché sera conservé dans le document enregistré.
+ Oui, Aspose.Words for .NET vous permet d'enregistrer le document contenant le graphique avec un axe masqué dans différents formats de fichiers, tels que DOCX, PDF, HTML, etc. Vous pouvez choisir le format de sortie souhaité en fonction de vos besoins et utiliser le`Save` méthode du`Document` objet pour enregistrer le document. L'axe caché sera conservé dans le document enregistré.

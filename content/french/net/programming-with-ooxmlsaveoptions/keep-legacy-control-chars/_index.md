@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Legacy control character.doc");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
 ```
 
-Dans cette étape, nous configurons les options de sauvegarde OOXML en créant un nouveau`OoxmlSaveOptions`objet. Nous précisons le format de sauvegarde souhaité (ici,`FlatOpc` ) et activez le`KeepLegacyControlChars` option pour conserver les caractères de contrôle hérités.
+ Dans cette étape, nous configurons les options de sauvegarde OOXML en créant un nouveau`OoxmlSaveOptions` objet. Nous précisons le format de sauvegarde souhaité (ici,`FlatOpc` ) et activez le`KeepLegacyControlChars` option pour conserver les caractères de contrôle hérités.
 
 ## Étape 4 : Enregistrement du document avec les caractères de contrôle hérités
 
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 Dans ce didacticiel, nous avons exploré la fonctionnalité de préservation des caractères de contrôle hérités lors de l'enregistrement d'un document à l'aide d'Aspose.Words pour .NET. Nous avons appris à conserver les caractères spéciaux qui peuvent être importants pour le formatage ou l'affichage correct du document.
 
- La préservation des caractères de contrôle hérités est particulièrement utile lors du traitement de texte avec des documents qui utilisent des fonctionnalités plus anciennes ou spécifiques, telles que des caractères de contrôle spéciaux. En activant le`KeepLegacyControlChars`lors de l’enregistrement du document, vous vous assurez que ces caractères sont conservés.
+ La préservation des caractères de contrôle hérités est particulièrement utile lors du traitement de texte avec des documents qui utilisent des fonctionnalités plus anciennes ou spécifiques, telles que des caractères de contrôle spéciaux. En activant le`KeepLegacyControlChars` lors de l’enregistrement du document, vous vous assurez que ces caractères sont conservés.
 
 Aspose.Words for .NET offre une gamme d'options de sauvegarde flexibles et puissantes pour répondre à vos besoins de manipulation de documents. En utilisant les options appropriées, vous pouvez personnaliser le processus de sauvegarde pour préserver les caractéristiques spécifiques de vos documents.
 

@@ -74,7 +74,7 @@ Belgeleri başlıklara göre bölmek, belgenin hiyerarşik yapısına göre alt 
 Aspose.Words for Java kullanarak bir belgeyi başlıklara göre bölmek için şu adımları izleyin:
 
 ```java
-// Aspose.Words for Java kullanarak bir belgeyi başlıklara göre bölmek için Java kodu
+//Aspose.Words for Java kullanarak bir belgeyi başlıklara göre bölmek için Java kodu
 Document doc = new Document("input.docx");
 LayoutCollector layoutCollector = new LayoutCollector(doc);
 

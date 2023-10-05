@@ -41,7 +41,7 @@ Aspose.Words for Java kullanarak bir belgeyi yazdırmak çok kolaydır. İşte t
 doc.print("printerName");
 ```
 
-Yazıcı adını bağımsız değişken olarak belirtebilirsiniz.`print` yöntem. Bu, belgeyi yazdırılmak üzere belirtilen yazıcıya gönderecektir.
+ Yazıcı adını bağımsız değişken olarak belirtebilirsiniz.`print`yöntem. Bu, belgeyi yazdırılmak üzere belirtilen yazıcıya gönderecektir.
 
 ## Belgeleri Oluşturma
 

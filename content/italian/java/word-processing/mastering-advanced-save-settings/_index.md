@@ -54,7 +54,7 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 Intestazioni e piè di pagina spesso contengono informazioni critiche. Scopri come gestire e personalizzare intestazioni e piè di pagina nei tuoi documenti.
 
 ```java
-//Aggiungi un'intestazione alla prima pagina
+// Aggiungi un'intestazione alla prima pagina
 Document doc = new Document();
 Section section = doc.getSections().get(0);
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
@@ -116,7 +116,7 @@ doc.save("optimized_document.docx", SaveFormat.DOCX);
 
 ## Esportazione in diversi formati
 
-volte, hai bisogno del tuo documento in vari formati. Aspose.Words per Java semplifica l'esportazione in formati come PDF, HTML e altri.
+A volte, hai bisogno del tuo documento in vari formati. Aspose.Words per Java semplifica l'esportazione in formati come PDF, HTML e altri.
 
 ```java
 // Esporta in PDF
@@ -181,7 +181,7 @@ Anche i migliori sviluppatori incontrano problemi. Affronteremo i problemi comun
 
 ### Come faccio a impostare la dimensione della pagina su A4?
 
- Per impostare la dimensione della pagina su A4, è possibile utilizzare il file`PageSetup`classe e specificare il formato carta come segue:
+ Per impostare la dimensione della pagina su A4, è possibile utilizzare il file`PageSetup` classe e specificare il formato carta come segue:
 
 ```java
 Document doc = new Document();

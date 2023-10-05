@@ -66,11 +66,11 @@ foreach (WarningInfo warningInfo in warnings)
 
 #### P: ¿Podemos personalizar la apariencia de la etiqueta "Advertencia"?
 
-R: El formato de la etiqueta "Advertencia" depende del renderizador de Markdown utilizado. En la mayoría de los casos, puede personalizar el aspecto utilizando CSS para orientar el`blockquote` etiqueta en su documento.
+ R: El formato de la etiqueta "Advertencia" depende del renderizador de Markdown utilizado. En la mayoría de los casos, puede personalizar el aspecto utilizando CSS para orientar el`blockquote` etiqueta en su documento.
 
 #### P: ¿Es posible agregar íconos a la etiqueta "Advertencia"?
 
- R: Sí, es posible agregar íconos a la etiqueta "Advertencia" usando código HTML en su documento Markdown. Puedes insertar un`span` etiqueta con la clase adecuada para mostrar un icono junto al texto de advertencia.
+R: Sí, es posible agregar íconos a la etiqueta "Advertencia" usando código HTML en su documento Markdown. Puedes insertar un`span` etiqueta con la clase adecuada para mostrar un icono junto al texto de advertencia.
 
 #### P: ¿La etiqueta "Advertencia" es compatible con todos los lectores Markdown?
 

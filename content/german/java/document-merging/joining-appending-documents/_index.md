@@ -17,11 +17,11 @@ Aspose.Words für Java ist eine funktionsreiche Bibliothek, die Ihnen die Arbeit
 Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 - Java Development Kit (JDK) auf Ihrem System installiert.
-- Aspose.Words für Java-Bibliothek. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/java/).
+-  Aspose.Words für Java-Bibliothek. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/java/).
 
 ## Schritt 1: Einrichten Ihres Java-Projekts
 
-Erstellen Sie zunächst ein neues Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in die Abhängigkeiten Ihres Projekts einschließen.
+Erstellen Sie zunächst ein neues Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in die Abhängigkeiten Ihres Projekts einbeziehen.
 
 ## Schritt 2: Aspose.Words initialisieren
 
@@ -53,7 +53,7 @@ Document doc2 = new Document("document2.docx");
 
 ## Schritt 4: Dokumente zusammenfügen
 
-Nachdem wir nun unsere Dokumente geladen haben, sehen wir uns an, wie wir sie zusammenfügen. In diesem Beispiel werden wir beitreten`doc2` bis zum Ende`doc1`:
+ Nachdem wir nun unsere Dokumente geladen haben, sehen wir uns an, wie wir sie zusammenfügen. In diesem Beispiel werden wir beitreten`doc2` bis zum Ende`doc1`:
 
 ```java
 // Dokumente zusammenfügen

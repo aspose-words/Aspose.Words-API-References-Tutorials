@@ -17,7 +17,7 @@ Aspose.Words for Java, geliştiricilerin Word belgeleriyle programlı olarak ça
 Kodun ayrıntılarına girmeden önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
 - Sisteminizde Java Geliştirme Kiti (JDK) yüklü.
-- Aspose.Words for Java kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 - Java programlamanın temel anlayışı.
 
 ## Adım adım rehber
@@ -64,7 +64,7 @@ Dönüştürme işlemi sırasında oluşabilecek istisnaları ele almayı unutma
 
 ```java
 try {
-    //Dönüşüm kodu burada
+    // Dönüşüm kodu burada
 } catch (Exception e) {
     e.printStackTrace();
 }

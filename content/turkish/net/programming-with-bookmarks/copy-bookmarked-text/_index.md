@@ -88,6 +88,42 @@ Aspose.Words for .NET kullanarak bir yer iminden metin kopyalamayı gösteren ö
 
 ```
 
+#### EkleYer İşaretli Metin Kaynak Kodu
+
+```csharp
+
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+        {
+            // Bu, yer iminin başlangıcını içeren paragraftır.
+            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+
+            // Bu, yer iminin sonunu içeren paragraftır.
+            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+
+            if (startPara == null || endPara == null)
+                throw new InvalidOperationException(
+                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+            // Kendimizi oldukça basit bir senaryoyla sınırlayalım.
+            if (startPara.ParentNode != endPara.ParentNode)
+                throw new InvalidOperationException(
+                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+            // Tüm paragrafları başlangıç paragrafından bitiş paragrafına kadar (ve dahil) kopyalamak istiyoruz,
+            // dolayısıyla duracağımız düğüm son paragraftan sonraki düğümdür.
+            Node endNode = endPara.NextSibling;
+
+            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+            {
+                //Bu, mevcut düğümün bir kopyasını oluşturur ve onu bağlamda içe aktarır (geçerli kılar)
+                // hedef belgenin. İçe aktarma, stilleri ve liste tanımlayıcılarını doğru şekilde ayarlamak anlamına gelir.
+                Node newNode = importer.ImportNode(curNode, true);
+
+                dstNode.AppendChild(newNode);
+            }
+        }
+
+```
 ## Çözüm
 
 Bu makalede, Aspose.Words for .NET'ten Yer İşaretli Metni Kopyala fonksiyonunun nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir yer iminin içeriğini kaynak belgeden başka bir belgeye kopyalamak için adım adım bir kılavuz izledik.
@@ -116,7 +152,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### S: Aspose.Words for .NET kullanılarak hedef belgedeki yer imi metni kopyasının konumu nasıl belirlenir?
 
-C: Aspose.Words for .NET kullanarak kopyalanan yer imi metnini hedef belgede nereye eklemek istediğinizi belirtmek için hedef belgenin son bölümünün gövdesine gidebilirsiniz. Şunu kullanabilirsiniz:`LastSection` son bölüme erişim özelliği ve`Body` o bölümün gövdesine erişme özelliği. İşte örnek bir kod:
+ C: Aspose.Words for .NET kullanarak kopyalanan yer imi metnini hedef belgede nereye eklemek istediğinizi belirtmek için hedef belgenin son bölümünün gövdesine gidebilirsiniz. Şunu kullanabilirsiniz:`LastSection` son bölüme erişim özelliği ve`Body` o bölümün gövdesine erişme özelliği. İşte örnek bir kod:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;

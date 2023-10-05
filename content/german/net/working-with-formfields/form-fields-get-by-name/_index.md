@@ -32,13 +32,13 @@ FormFieldCollection documentFormFields = doc.Range.FormFields;
 Sie können Formularfelder entweder nach Index oder nach Namen abrufen. In diesem Beispiel rufen wir ein Formularfeld mit beiden Methoden ab:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; //Abrufen nach Index
+FormField formField1 = documentFormFields[3]; // Abrufen nach Index
 FormField formField2 = documentFormFields["Text2"]; // Abrufen mit Namen
 ```
 
 ## Schritt 3: Formularfeldeigenschaften ändern
 
- Nachdem Sie die Formularfelder abgerufen haben, können Sie deren Eigenschaften nach Bedarf ändern. In diesem Beispiel ändern wir die Schriftgröße von`formField1` bis 20 und die Schriftfarbe von`formField2` zu rot:
+Nachdem Sie die Formularfelder abgerufen haben, können Sie deren Eigenschaften nach Bedarf ändern. In diesem Beispiel ändern wir die Schriftgröße von`formField1` bis 20 und die Schriftfarbe von`formField2` zu rot:
 
 ```csharp
 formField1.Font.Size = 20;
@@ -82,7 +82,7 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprech
 
 #### F: Was passiert, wenn das Formularfeld mit dem angegebenen Namen im Dokument nicht vorhanden ist?
 
- A: Wenn das Formularfeld mit dem angegebenen Namen nicht im Dokument vorhanden ist, wird das`Document.Range.FormFields[name]` Die Methode wird zurückgegeben`null`Sie können dieses Ergebnis überprüfen, um Fälle zu behandeln, in denen das Formularfeld nicht gefunden wird.
+ A: Wenn das Formularfeld mit dem angegebenen Namen nicht im Dokument vorhanden ist, wird das`Document.Range.FormFields[name]` Die Methode wird zurückgegeben`null`. Sie können dieses Ergebnis überprüfen, um Fälle zu behandeln, in denen das Formularfeld nicht gefunden wird.
 
 #### F: Wie kann ich die Eigenschaften eines gefundenen Formularfelds ändern?
 

@@ -28,7 +28,7 @@ const string html=@"
 
 ## Schritt 2: Legen Sie die HTML-Ladeoptionen fest
 
- Als nächstes erstellen wir eine`HtmlLoadOptions` Objekt und legen Sie das fest`PreferredControlType` Eigentum zu`HtmlControlType.StructuredDocumentTag`. Dadurch wird Aspose.Words angewiesen, beim Laden StructuredDocumentTags zur Darstellung von HTML zu verwenden.
+ Als nächstes erstellen wir eine`HtmlLoadOptions` Objekt und legen Sie das fest`PreferredControlType`Eigentum zu`HtmlControlType.StructuredDocumentTag`. Dadurch wird Aspose.Words angewiesen, beim Laden StructuredDocumentTags zur Darstellung von HTML zu verwenden.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
@@ -69,7 +69,7 @@ Das ist alles ! Sie haben den bevorzugten Steuerelementtyp beim Laden eines HTML
 
 ## Abschluss
 
- Durch Befolgen dieser Schritt-für-Schritt-Anleitung haben Sie gelernt, wie Sie die Funktion „Bevorzugter Steuerelementtyp“ in Aspose.Words für .NET verwenden, um beim Laden eines HTML-Dokuments den gewünschten Steuerelementtyp anzugeben. Einstellen der`PreferredControlType` Eigentum zu`HtmlControlType.StructuredDocumentTag` ermöglicht Aspose.Words die Verwendung von StructuredDocumentTags (SDT) für eine bessere Darstellung und Verarbeitung von HTML-Inhalten. Sie können auch andere Steuerungstypen erkunden, um Ihren spezifischen Anforderungen gerecht zu werden. Die Verwendung dieser Funktion trägt dazu bei, eine genaue und effiziente Verarbeitung von HTML-Dokumenten in Ihrer C#-Anwendung mit Aspose.Words sicherzustellen.
+ Durch Befolgen dieser Schritt-für-Schritt-Anleitung haben Sie gelernt, wie Sie die Funktion „Bevorzugter Steuerelementtyp“ in Aspose.Words für .NET verwenden, um beim Laden eines HTML-Dokuments den gewünschten Steuerelementtyp anzugeben. Einstellen der`PreferredControlType`Eigentum zu`HtmlControlType.StructuredDocumentTag` ermöglicht Aspose.Words die Verwendung von StructuredDocumentTags (SDT) für eine bessere Darstellung und Verarbeitung von HTML-Inhalten. Sie können auch andere Steuerungstypen erkunden, um Ihren spezifischen Anforderungen gerecht zu werden. Die Verwendung dieser Funktion trägt dazu bei, eine genaue und effiziente Verarbeitung von HTML-Dokumenten in Ihrer C#-Anwendung mit Aspose.Words sicherzustellen.
 
 ### FAQs zum bevorzugten Steuerelementtyp in Word-Dokumenten
 
@@ -87,7 +87,7 @@ A: StructuredDocumentTags (SDT) sind XML-basierte Elemente, die zur Darstellung 
 
 #### F: Wie kann ich sicherstellen, dass Aspose.Words beim Laden des HTML-Dokuments den bevorzugten Steuerelementtyp verwendet?
 
- A: Durch Einstellen der`PreferredControlType` Eigentum zu`HtmlControlType.StructuredDocumentTag`Wie im Beispielquellcode gezeigt, verwendet Aspose.Words beim Laden des Dokuments SDTs zur Darstellung von HTML-Elementen.
+ A: Durch Einstellen der`PreferredControlType`Eigentum zu`HtmlControlType.StructuredDocumentTag`Wie im Beispielquellcode gezeigt, verwendet Aspose.Words beim Laden des Dokuments SDTs zur Darstellung von HTML-Elementen.
 
 #### F: Kann ich andere Steuerungstypen als bevorzugte Option verwenden?
 

@@ -42,7 +42,7 @@ comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New re
 ```
 
 ## 3. Adım: Belgeyi Kaydedin
-Yorum yanıtlarını ekledikten veya kaldırdıktan sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
+Yorum yanıtlarını ekledikten veya kaldırdıktan sonra, Document sınıfının Kaydet yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");

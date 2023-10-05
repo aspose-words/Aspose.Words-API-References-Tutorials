@@ -91,7 +91,7 @@ A: Durch die Verwendung eines Warnrückrufs können Sie sich über alle Warnunge
 
 #### F: Kann ich denselben Warnrückruf für mehrere Dokumentladevorgänge verwenden?
 
-A: Ja, Sie können denselben Warnrückruf für mehrere Dokumentladevorgänge wiederverwenden. Es empfiehlt sich, einen einheitlichen Ansatz für den Umgang mit Warnungen in Ihrer gesamten Anwendung zu verfolgen.
+A: Ja, Sie können denselben Warnrückruf für mehrere Dokumentladevorgänge wiederverwenden. Es empfiehlt sich, in Ihrer gesamten Anwendung einen einheitlichen Ansatz für den Umgang mit Warnungen zu verfolgen.
 
 #### F: Ist die Verwendung eines Warnrückrufs für das Laden von Dokumenten obligatorisch?
 

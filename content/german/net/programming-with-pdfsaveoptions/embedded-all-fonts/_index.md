@@ -77,7 +77,7 @@ A: Um alle Schriftarten mit Aspose.Words für .NET in ein PDF-Dokument einzubett
 
  Laden Sie das Dokument, das Sie bearbeiten möchten, mit`Document` Klasse und den Dokumentpfad.
 
- Konfigurieren Sie PDF-Speicheroptionen, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und Einstellung der`EmbedFullFonts` Eigentum zu`true`. Dadurch wird sichergestellt, dass alle im Dokument verwendeten Schriftarten in die generierte PDF-Datei eingebettet werden.
+ Konfigurieren Sie PDF-Speicheroptionen, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und Einstellung der`EmbedFullFonts`Eigentum zu`true`. Dadurch wird sichergestellt, dass alle im Dokument verwendeten Schriftarten in die generierte PDF-Datei eingebettet werden.
 
  Speichern Sie das Dokument im PDF-Format mit eingebetteten Schriftarten mithilfe von`Save` Methode der`Document`-Objekt unter Angabe des Namens der Ausgabedatei und der zuvor konfigurierten Speicheroptionen.
 

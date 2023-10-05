@@ -82,7 +82,7 @@ R: Para exportar marcadores de encabezado y pie de página de un documento de Wo
 
  Configure las opciones de guardar como PDF creando una instancia del`PdfSaveOptions` clase y configurar las opciones apropiadas de marcador de encabezado y pie de página.
 
- Guarde el documento en formato PDF utilizando el`Save` método de la`Document`clase que especifica la ruta y las opciones de guardado.
+ Guarde el documento en formato PDF utilizando el`Save` método de la`Document` clase que especifica la ruta y las opciones de guardado.
 
 ### P: ¿Cuáles son los beneficios de exportar marcadores de encabezado y pie de página a un documento PDF?
 R: Las ventajas de exportar marcadores de encabezado y pie de página a un documento PDF son:

@@ -95,7 +95,7 @@ R: Para firmar un documento de Word cifrado usando Aspose.Words para .NET, neces
 
 #### P: ¿Puedo firmar varios documentos de Word cifrados con el mismo certificado?
 
- R: Sí, puedes firmar varios documentos de Word cifrados utilizando el mismo certificado. Una vez que haya cargado el certificado usando el`CertificateHolder` clase, puede reutilizarla para firmar múltiples documentos cifrados.
+ R: Sí, puedes firmar varios documentos de Word cifrados utilizando el mismo certificado. Una vez que haya cargado el certificado usando el`CertificateHolder` clase, puede reutilizarla para firmar varios documentos cifrados.
 
 #### P: ¿Puedo verificar la firma digital de un documento cifrado firmado?
 

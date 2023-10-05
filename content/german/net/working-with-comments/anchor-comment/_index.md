@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Erstellen Sie drei Run-Objekte.
-// Die ersten beiden führen einen Text aus, während der dritte einen Kommentar ausgibt
+// Die ersten beiden führen einen Text aus, während der dritte einen Kommentar ausführt
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");

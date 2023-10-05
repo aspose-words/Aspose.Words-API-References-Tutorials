@@ -58,15 +58,15 @@ No dude en utilizar este código en sus propios proyectos y modificarlo según s
 
 #### P: ¿Cómo puedo insertar un campo de formulario de tipo texto en Aspose.Words?
 
- R: Para insertar un campo de formulario de tipo texto en Aspose.Words, puede usar el`FormField` clase y establecer su`Type` propiedad a`FormFieldType.Text`. También puede personalizar otras propiedades como nombre, etiqueta y opciones.
+ R: Para insertar un campo de formulario de tipo texto en Aspose.Words, puede usar el`FormField` clase y establecer su`Type`propiedad a`FormFieldType.Text`. También puede personalizar otras propiedades como nombre, etiqueta y opciones.
 
 #### P: ¿Es posible crear un campo de formulario tipo casilla de verificación en un documento?
 
- R: Sí, es posible crear un campo de formulario tipo casilla de verificación en un documento de Aspose.Words. Puedes usar el`FormField` clase y establecer su`Type` propiedad a`FormFieldType.CheckBox` para crear una casilla de verificación. Luego puede personalizar las propiedades de la casilla de verificación según sea necesario.
+ R: Sí, es posible crear un campo de formulario tipo casilla de verificación en un documento de Aspose.Words. Puedes usar el`FormField` clase y establecer su`Type`propiedad a`FormFieldType.CheckBox` para crear una casilla de verificación. Luego puede personalizar las propiedades de la casilla de verificación según sea necesario.
 
 #### P: ¿Cómo puedo agregar un campo de formulario de tipo desplegable a un documento?
 
- R: Para agregar un campo de formulario de tipo desplegable en un documento de Aspose.Words, use el`FormField` clase y establecer su`Type` propiedad a`FormFieldType.DropDown` . Luego puede configurar las opciones desplegables usando el`DropDownItems` propiedad.
+ R: Para agregar un campo de formulario de tipo desplegable en un documento de Aspose.Words, use el`FormField` clase y establecer su`Type`propiedad a`FormFieldType.DropDown` . Luego puede configurar las opciones desplegables usando el`DropDownItems` propiedad.
 
 #### P: ¿Puedo establecer un valor predeterminado para un campo de formulario en Aspose.Words?
 

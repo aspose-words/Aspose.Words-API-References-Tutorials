@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Aggiungi testo al primo paragrafo, quindi aggiungi altri due paragrafi.
+// Aggiungi testo al primo paragrafo, quindi aggiungi altri due paragrafi.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -92,12 +92,12 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Aggiungi testo al primo paragrafo, quindi aggiungi altri due paragrafi.
+// Aggiungi testo al primo paragrafo, quindi aggiungi altri due paragrafi.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
-// Abbiamo tre paragrafi, nessuno dei quali registrato come alcun tipo di revisione
+//Abbiamo tre paragrafi, nessuno dei quali registrato come alcun tipo di revisione
 // Se aggiungiamo/rimuoviamo qualsiasi contenuto nel documento durante il monitoraggio delle revisioni,
 // verranno visualizzati come tali nel documento e potranno essere accettati/rifiutati.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
@@ -123,7 +123,7 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // L'interruzione del tracciamento delle revisioni fa sì che questo testo venga visualizzato come testo normale.
-//Le revisioni non vengono conteggiate quando il documento viene modificato.
+// Le revisioni non vengono conteggiate quando il documento viene modificato.
 doc.StopTrackRevisions();
 
 // Salva il documento.

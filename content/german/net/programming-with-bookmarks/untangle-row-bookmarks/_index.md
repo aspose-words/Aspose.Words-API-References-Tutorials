@@ -42,7 +42,7 @@ DeleteRowByBookmark(doc, "ROW2");
 
 ## Schritt 4: Überprüfen Sie die Integrität anderer Lesezeichen
 
-Wir stellen sicher, dass die anderen Lesezeichen nicht beschädigt wurden, indem wir prüfen, ob das Ende des Lesezeichens noch vorhanden ist:
+Wir überprüfen, ob die anderen Lesezeichen nicht beschädigt wurden, indem wir prüfen, ob das Ende des Lesezeichens noch vorhanden ist:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -51,7 +51,7 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Beispielquellcode für Untangle Row Bookmarks mit Aspose.Words für .NET**
+### Beispielquellcode für Untangle Row Bookmarks mit Aspose.Words für .NET
 
 Hier ist der vollständige Beispielquellcode zum Entwirren von Lesezeichen aus Zeilen mithilfe von Aspose.Words für .NET:
 
@@ -76,6 +76,38 @@ Hier ist der vollständige Beispielquellcode zum Entwirren von Lesezeichen aus Z
 
 ```
 
+#### Quellcode entwirren
+```csharp
+
+private void Untangle(Document doc)
+        {
+            foreach (Bookmark bookmark in doc.Range.Bookmarks)
+            {
+                // Rufen Sie die übergeordnete Zeile sowohl des Lesezeichens als auch des Lesezeichen-Endknotens ab.
+                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
+                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+                // Wenn beide Zeilen in Ordnung sind und der Anfang und das Ende des Lesezeichens in benachbarten Zeilen enthalten sind,
+                // Verschieben Sie den Endknoten des Lesezeichens an das Ende des letzten Absatzes in der letzten Zelle der oberen Zeile.
+                if (row1 != null && row2 != null && row1.NextSibling == row2)
+                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+            }
+        }
+
+```
+
+#### DeleteRowByBookmark-Quellcode
+```csharp
+
+ private void DeleteRowByBookmark(Document doc, string bookmarkName)
+        {
+            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+            row?.Remove();
+        }
+
+```
 ## Abschluss
 
 In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Zeilenlesezeichen entwirren“ von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um Zeilenlesezeichen zu entwirren und eine bestimmte Zeile zu löschen, ohne andere Lesezeichen zu beschädigen.

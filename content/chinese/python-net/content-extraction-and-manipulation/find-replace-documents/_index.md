@@ -18,7 +18,7 @@ url: /zh/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 1.  Python 安装：确保您的系统上安装了 Python。您可以从以下位置下载：[这里](https://www.python.org/downloads/).
 
-2. Aspose.Words for Python：您需要安装 Aspose.Words for Python。您可以从以下位置下载：[这里](https://releases.aspose.com/words/python/).
+2.  Aspose.Words for Python：您需要安装 Aspose.Words for Python。您可以从以下位置下载：[这里](https://releases.aspose.com/words/python/).
 
 3. 文档准备：准备好要对其执行查找和替换操作的 Word 文档。
 

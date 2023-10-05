@@ -96,6 +96,6 @@ A: Ja, Aspose.Words für Java kann Word-Dokumente in verschiedene Formate wie PD
 
 ### Wie kann ich auf weitere Ressourcen und Dokumentation für Aspose.Words für Java zugreifen?
 
- A: Besuchen Sie die Dokumentation zu Aspose.Words für Java unter[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) für umfassende Ressourcen und Leitfäden.
+A: Besuchen Sie die Dokumentation zu Aspose.Words für Java unter[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) für umfassende Ressourcen und Leitfäden.
 
 Verbessern Sie Ihre Dokumentensicherheit und Ihren Datenschutz mit Aspose.Words für Java. Beginnen Sie noch heute mit dem Schutz Ihrer sensiblen Daten!

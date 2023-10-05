@@ -14,7 +14,7 @@ Las firmas digitales desempeñan un papel crucial a la hora de garantizar la aut
 
 Antes de profundizar en la implementación, asegúrese de tener implementados los siguientes requisitos previos:
 
--  Aspose.Words para Java: Descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
+-  Aspose.Words para Java: descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
 ## Configurando su proyecto
 
@@ -36,7 +36,7 @@ com.aspose.words.digitalSignatures.DigitalSignature digitalSignature = new com.a
 // Establecer la ruta del certificado
 digitalSignature.setCertificateFile("your_certificate.pfx");
 
-// Establecer la contraseña para el certificado
+//Establecer la contraseña para el certificado
 digitalSignature.setPassword("your_password");
 
 // Firma el documento

@@ -48,7 +48,7 @@ doc.StopTrackRevisions();
 
 ## 4. Adım: "Düzeltmelerin İçindeki Metni Yoksay Silme" özelliğini uygulama
 
- Artık bir paragrafı silerek belgemizi hazırladığımıza göre, "İçerdeki Metni Sil Revizyonları Yoksay" özelliğini kullanarak etkinleştirebiliriz.`FindReplaceOptions` nesne. biz ayarlayacağız`IgnoreDeleted` mülkiyet`true`:
+ Artık bir paragrafı silerek belgemizi hazırladığımıza göre, "İçerdeki Metni Sil Revizyonları Yoksay" özelliğini kullanarak etkinleştirebiliriz.`FindReplaceOptions` nesne. biz ayarlayacağız`IgnoreDeleted`mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -65,7 +65,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Adım 6: Değiştirilen belge çıktısının görüntülenmesi
 
-Arama ve değiştirmeyi uyguladıktan sonra, belgenin değişen içeriğini aşağıdaki komutu kullanarak görüntüleyebiliriz:`GetText` yöntem:
+ Arama ve değiştirmeyi uyguladıktan sonra, belgenin değişen içeriğini aşağıdaki komutu kullanarak görüntüleyebiliriz:`GetText` yöntem:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -73,7 +73,7 @@ Console.WriteLine(doc.GetText());
 
 ## 7. Adım: Silinen metni içerecek şekilde seçenekleri değiştirme
 
- Silinen metni çıktı sonucuna dahil etmek istiyorsak, seçenekleri silinen metni göz ardı etmeyecek şekilde değiştirebiliriz. Bunun için ayarlayacağız`IgnoreDeleted` mülkiyet`false`:
+ Silinen metni çıktı sonucuna dahil etmek istiyorsak, seçenekleri silinen metni göz ardı etmeyecek şekilde değiştirebiliriz. Bunun için ayarlayacağız`IgnoreDeleted`mülkiyet`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
@@ -164,7 +164,7 @@ doc.StopTrackRevisions();
 
 #### S: Aspose.Words for .NET'te "Revizyonların İçindeki Metni Yoksay, Düzeltmeleri Yoksay" özelliği nasıl etkinleştirilir?
 
- C: Artık belgemizi bir paragrafı silerek hazırladığımıza göre, "İçerdeki Metni Düzeltmeleri Silmede Yoksay" özelliğini kullanarak etkinleştirebiliriz.`FindReplaceOptions` nesne. biz ayarlayacağız`IgnoreDeleted` mülkiyet`true`:
+ C: Artık belgemizi bir paragrafı silerek hazırladığımıza göre, "İçerdeki Metni Düzeltmeleri Silmede Yoksay" özelliğini kullanarak etkinleştirebiliriz.`FindReplaceOptions` nesne. biz ayarlayacağız`IgnoreDeleted`mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -189,7 +189,7 @@ Console.WriteLine(doc.GetText());
 
 #### S: Silinen metni Aspose.Words for .NET'te çıktı sonucuna nasıl dahil edebilirim?
 
- C: Silinen metni çıktı sonucuna dahil etmek istiyorsak, seçenekleri silinen metni göz ardı etmeyecek şekilde değiştirebiliriz. Bunun için ayarlayacağız`IgnoreDeleted` mülkiyet`false`:
+ C: Silinen metni çıktı sonucuna dahil etmek istiyorsak, seçenekleri silinen metni göz ardı etmeyecek şekilde değiştirebiliriz. Bunun için ayarlayacağız`IgnoreDeleted`mülkiyet`false`:
 
 ```csharp
 options. IgnoreDeleted = false;

@@ -112,15 +112,15 @@ currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // Bu bölümün ilk sayfa için farklı bir üstbilgi/altbilgiye ihtiyacı yoktur, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır,
-// ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde zaten tanımlanmıştı.
+//ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde zaten tanımlanmıştı.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // Bu bölüm varsayılan olarak önceki bölümün üstbilgilerini/altbilgilerini görüntüler; bu bağlantıyı kesmek için currentSection.HeadersFooters.LinkToPrecious(false) çağrısını yapın,
 // yeni bölüm için sayfa genişliği farklıdır, dolayısıyla alt bilgi tablosu için farklı hücre genişlikleri ayarlamamız gerekir.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-//Bu bölüm için zaten mevcut üstbilgileri/altbilgileri kullanmak istiyorsak,
-// ancak birkaç küçük değişiklikle üstbilgileri/altbilgileri kopyalamak mantıklı olabilir
+// Bu bölüm için zaten mevcut üstbilgileri/altbilgileri kullanmak istiyorsak,
+//ancak birkaç küçük değişiklikle üstbilgileri/altbilgileri kopyalamak mantıklı olabilir
 // önceki bölümden ve gerekli değişiklikleri istediğimiz yere uygulayın.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
@@ -176,7 +176,7 @@ builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-//Satırdaki metnin bir bölümünü (sayfa numaralandırmayla) yapmak için iki hücreli bir tablo kullanıyoruz.
+// Satırdaki metnin bir bölümünü (sayfa numaralandırmayla) yapmak için iki hücreli bir tablo kullanıyoruz.
 // Sola hizalanacak ve metnin diğer kısmı (telif hakkıyla birlikte) sağa hizalanacak.
 builder.StartTable();
 
@@ -215,7 +215,7 @@ currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // Bu bölümün farklı bir ilk sayfa üstbilgisine/altbilgisine ihtiyacı yoktur, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır.
-// ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde zaten tanımlanmıştı.
+//ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde zaten tanımlanmıştı.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // Bu bölümde önceki bölümdeki üstbilgiler/altbilgiler görüntülenir
@@ -225,7 +225,7 @@ currentSection.HeadersFooters.LinkToPrevious(false);
 
 // Bu bölüm için zaten var olan üstbilgi/altbilgi setini kullanmak istiyorsak.
 // Ancak bazı küçük değişikliklerle üstbilgileri/altbilgileri kopyalamak uygun olabilir
-//önceki bölümden ve gerekli değişiklikleri istediğimiz yere uygulayın.
+// önceki bölümden ve gerekli değişiklikleri istediğimiz yere uygulayın.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -245,7 +245,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### S: Aspose.Words'te belgeme nasıl altbilgi ekleyebilirim?
 
- C: Aspose.Words'te belgenize altbilgi eklemek için`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` yöntem. Bu yöntem, belgenizin ilk bölümüne birincil altbilgi ekler.
+ C: Aspose.Words'te belgenize altbilgi eklemek için`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`yöntem. Bu yöntem, belgenizin ilk bölümüne birincil altbilgi ekler.
 
 #### S: Aspose.Words'te üst bilgi veya alt bilgime nasıl metin ekleyebilirim?
 
@@ -253,8 +253,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### S: Aspose.Words'te üstbilgi veya altbilgi içeriğini görseller ve sayfa numaralarıyla özelleştirebilir miyim?
 
-C: Evet, Aspose.Words'te üstbilgi veya altbilgi içeriğini resimler ve sayfa numaralarıyla özelleştirebilirsiniz. Gibi nesneleri kullanabilirsiniz`Shape` gibi resimler ve nesneler eklemek için`Field` Üstbilginize veya altbilginize sayfa numaraları eklemek için.
+ C: Evet, Aspose.Words'te üstbilgi veya altbilgi içeriğini resimler ve sayfa numaralarıyla özelleştirebilirsiniz. Gibi nesneleri kullanabilirsiniz`Shape` gibi resimler ve nesneler eklemek için`Field` Üstbilginize veya altbilginize sayfa numaraları eklemek için.
 
 #### S: Aspose.Words'te üst bilgim veya alt bilgimdeki metnin yazı tipini, boyutunu ve rengini değiştirebilir miyim?
 
- C: Evet, Aspose.Words'te üst bilginizdeki veya alt bilginizdeki metnin yazı tipini, boyutunu ve rengini değiştirebilirsiniz. Aşağıdaki gibi metin biçimlendirme özelliklerine erişebilirsiniz:`Font` yazı tipini değiştirmek için,`Size` Boyutu ayarlamak için ve`Color` Metin rengini ayarlamak için.
+ C: Evet, Aspose.Words'te üst bilginizdeki veya alt bilginizdeki metnin yazı tipini, boyutunu ve rengini değiştirebilirsiniz. Aşağıdaki gibi metin biçimlendirme özelliklerine erişebilirsiniz:`Font` yazı tipini değiştirmek için,`Size` Boyutu ayarlamak için ve`Color`Metin rengini ayarlamak için.

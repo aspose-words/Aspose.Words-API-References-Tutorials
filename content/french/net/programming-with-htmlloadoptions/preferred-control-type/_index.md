@@ -28,7 +28,7 @@ const string html=@"
 
 ## Étape 2 : Définir les options de chargement HTML
 
- Ensuite, nous créons un`HtmlLoadOptions` objet et définissez le`PreferredControlType` propriété à`HtmlControlType.StructuredDocumentTag`. Cela indique à Aspose.Words d'utiliser StructuredDocumentTags pour représenter le HTML lors du chargement.
+ Ensuite, nous créons un`HtmlLoadOptions` objet et définissez le`PreferredControlType`propriété à`HtmlControlType.StructuredDocumentTag`. Cela indique à Aspose.Words d'utiliser StructuredDocumentTags pour représenter le HTML lors du chargement.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
@@ -69,7 +69,7 @@ C'est tout ! Vous avez correctement spécifié le type de contrôle préféré l
 
 ## Conclusion
 
- En suivant ce guide étape par étape, vous avez appris à utiliser la fonctionnalité « Type de contrôle préféré » dans Aspose.Words for .NET pour spécifier le type de contrôle souhaité lors du chargement d'un document HTML. Réglage du`PreferredControlType` propriété à`HtmlControlType.StructuredDocumentTag` permet à Aspose.Words d'utiliser StructuredDocumentTags (SDT) pour une meilleure représentation et un meilleur traitement du contenu HTML. Vous pouvez également explorer d’autres types de contrôles pour répondre à vos besoins spécifiques. L'utilisation de cette fonctionnalité permet de garantir une gestion précise et efficace des documents HTML dans votre application C# avec Aspose.Words.
+ En suivant ce guide étape par étape, vous avez appris à utiliser la fonctionnalité « Type de contrôle préféré » dans Aspose.Words for .NET pour spécifier le type de contrôle souhaité lors du chargement d'un document HTML. Réglage du`PreferredControlType`propriété à`HtmlControlType.StructuredDocumentTag` permet à Aspose.Words d'utiliser StructuredDocumentTags (SDT) pour une meilleure représentation et un meilleur traitement du contenu HTML. Vous pouvez également explorer d’autres types de contrôles pour répondre à vos besoins spécifiques. L'utilisation de cette fonctionnalité permet de garantir une gestion précise et efficace des documents HTML dans votre application C# avec Aspose.Words.
 
 ### FAQ sur le type de contrôle préféré dans un document Word
 
@@ -87,7 +87,7 @@ R : Les StructuredDocumentTags (SDT) sont des éléments basés sur XML qui peu
 
 #### Q : Comment puis-je m'assurer qu'Aspose.Words utilise le type de contrôle préféré lors du chargement du document HTML ?
 
- R : En définissant le`PreferredControlType` propriété à`HtmlControlType.StructuredDocumentTag`comme le montre l'exemple de code source, Aspose.Words utilisera les SDT pour représenter les éléments HTML lors du chargement du document.
+ R : En définissant le`PreferredControlType`propriété à`HtmlControlType.StructuredDocumentTag`comme le montre l'exemple de code source, Aspose.Words utilisera les SDT pour représenter les éléments HTML lors du chargement du document.
 
 #### Q : Puis-je utiliser d’autres types de contrôle comme option préférée ?
 

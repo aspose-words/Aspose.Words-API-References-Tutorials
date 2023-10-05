@@ -18,7 +18,7 @@ Innan vi dyker in i dokumentautomatiseringens värld, se till att du har följan
 
 - Java-utvecklingsmiljö: Se till att du har en Java-utvecklingsmiljö inställd på ditt system.
 
-- Aspose.Words för Java: Du bör ha Aspose.Words för Java-biblioteket installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/java/).
+-  Aspose.Words för Java: Du bör ha Aspose.Words för Java-biblioteket installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/java/).
 
 - Provdokument: Förbered ett exempeldokument som du vill automatisera utskriftsprocessen för.
 
@@ -75,7 +75,7 @@ Att automatisera dokumentutskrift med Aspose.Words för Java kan avsevärt före
 
 ### Hur kan jag ange en annan skrivare för utskrift av mina dokument?
 
- För att ange en annan skrivare för utskrift av dina dokument kan du använda`setPrinterName` metod, som visas i kodexemplet. Byt bara ut`"Your_Printer_Name"` med namnet på den önskade skrivaren.
+ För att ange en annan skrivare för utskrift av dina dokument kan du använda`setPrinterName`metod, som visas i kodexemplet. Byt bara ut`"Your_Printer_Name"` med namnet på den önskade skrivaren.
 
 ### Kan jag automatisera andra dokumentrelaterade uppgifter med Aspose.Words för Java?
 

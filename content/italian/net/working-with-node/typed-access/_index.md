@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     //Accesso rapido e digitato alla prima riga della tabella.
+     // Accesso rapido e digitato alla prima riga della tabella.
      table.FirstRow?.Remove();
 
      // Accesso rapido e digitato all'ultima riga della tabella.

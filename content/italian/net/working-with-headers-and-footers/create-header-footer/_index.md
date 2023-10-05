@@ -112,15 +112,15 @@ currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // Questa sezione non ha bisogno di un'intestazione/piè di pagina diversi per la prima pagina, abbiamo solo bisogno di una pagina del titolo nel documento,
-// e l'intestazione/piè di pagina per questa pagina è già stata definita nella sezione precedente.
+// l'intestazione/piè di pagina per questa pagina è già stata definita nella sezione precedente.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // Questa sezione visualizza le intestazioni/piè di pagina della sezione precedente per impostazione predefinita, chiama currentSection.HeadersFooters.LinkToPrevious(false) per interrompere questo collegamento,
 // la larghezza della pagina è diversa per la nuova sezione, quindi dobbiamo impostare larghezze di cella diverse per una tabella a piè di pagina.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-//Se vogliamo utilizzare le intestazioni/piè di pagina già esistenti per questa sezione,
-// ma con alcune piccole modifiche, potrebbe avere senso copiare le intestazioni/piè di pagina
+// Se vogliamo utilizzare le intestazioni/piè di pagina già esistenti per questa sezione,
+//ma con alcune piccole modifiche, potrebbe avere senso copiare le intestazioni/piè di pagina
 // dalla sezione precedente e applichiamo le modifiche necessarie dove le vogliamo.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
@@ -176,7 +176,7 @@ builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-//Usiamo una tabella con due celle per creare una parte del testo sulla riga (con la numerazione delle pagine).
+// Usiamo una tabella con due celle per creare una parte del testo sulla riga (con la numerazione delle pagine).
 // Da allineare a sinistra e l'altra parte del testo (con copyright) da allineare a destra.
 builder.StartTable();
 
@@ -215,7 +215,7 @@ currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
 // Questa sezione non necessita di un'intestazione/piè di pagina diversi, è necessaria solo una pagina del titolo nel documento,
-// e l'intestazione/piè di pagina per questa pagina è già stata definita nella sezione precedente.
+// l'intestazione/piè di pagina per questa pagina è già stata definita nella sezione precedente.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
 // Questa sezione visualizza intestazioni/piè di pagina della sezione precedente
@@ -225,7 +225,7 @@ currentSection.HeadersFooters.LinkToPrevious(false);
 
 // Se vogliamo utilizzare il set di intestazione/piè di pagina già esistente per questa sezione.
 // Ma con alcune piccole modifiche, potrebbe essere opportuno copiare intestazioni/piè di pagina
-//dalla sezione precedente e applichiamo le modifiche necessarie dove le vogliamo.
+// dalla sezione precedente e applichiamo le modifiche necessarie dove le vogliamo.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -245,7 +245,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### D: Come posso aggiungere un piè di pagina al mio documento in Aspose.Words?
 
- R: Per aggiungere un piè di pagina al tuo documento in Aspose.Words, puoi utilizzare il file`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` metodo. Questo metodo aggiunge un piè di pagina principale alla prima sezione del documento.
+ R: Per aggiungere un piè di pagina al tuo documento in Aspose.Words, puoi utilizzare il file`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`metodo. Questo metodo aggiunge un piè di pagina principale alla prima sezione del documento.
 
 #### D: Come posso aggiungere testo alla mia intestazione o piè di pagina in Aspose.Words?
 
@@ -253,8 +253,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 #### D: Posso personalizzare il contenuto dell'intestazione o del piè di pagina con immagini e numeri di pagina in Aspose.Words?
 
-R: Sì, puoi personalizzare il contenuto dell'intestazione o del piè di pagina con immagini e numeri di pagina in Aspose.Words. Puoi usare oggetti come`Shape` per aggiungere immagini e oggetti come`Field` per aggiungere numeri di pagina all'intestazione o al piè di pagina.
+ R: Sì, puoi personalizzare il contenuto dell'intestazione o del piè di pagina con immagini e numeri di pagina in Aspose.Words. Puoi usare oggetti come`Shape` per aggiungere immagini e oggetti come`Field` per aggiungere numeri di pagina all'intestazione o al piè di pagina.
 
 #### D: Posso modificare il carattere, la dimensione e il colore del testo nell'intestazione o nel piè di pagina in Aspose.Words?
 
- R: Sì, puoi modificare il carattere, la dimensione e il colore del testo nell'intestazione o nel piè di pagina in Aspose.Words. È possibile accedere alle proprietà di formattazione del testo come`Font` per cambiare il carattere,`Size` per regolare le dimensioni e`Color` per impostare il colore del testo.
+ R: Sì, puoi modificare il carattere, la dimensione e il colore del testo nell'intestazione o nel piè di pagina in Aspose.Words. È possibile accedere alle proprietà di formattazione del testo come`Font` per cambiare il carattere,`Size` per regolare le dimensioni e`Color`per impostare il colore del testo.

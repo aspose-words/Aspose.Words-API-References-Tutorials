@@ -20,13 +20,13 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Schritt 2: Fetter Text
 
- Wir können den Text fett formatieren, indem wir ihn im Document Builder festlegen`Font.Bold` Eigentum zu`true`.
+ Wir können den Text fett formatieren, indem wir ihn im Document Builder festlegen`Font.Bold`Eigentum zu`true`.
 
 ```csharp
 builder.Font.Bold = true;
 ```
 
-## Schritt 3: Fügen Sie dem Dokument Inhalte hinzu
+## Schritt 3: Inhalte zum Dokument hinzufügen
 
  Jetzt können wir mithilfe der Document Builder-Methoden Inhalte zum Dokument hinzufügen, z`Writeln`, wodurch eine Textzeile hinzugefügt wird.
 
@@ -53,11 +53,11 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie mit Aspose.Words für 
 
 #### F: Wie kann ich Text in Aspose.Words fett formatieren?
 
- A: Um Text in Aspose.Words fett darzustellen, können Sie Folgendes verwenden`Font.Bold` Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf festlegen`true` um einen bestimmten Text fett zu formatieren. Sie können zum Beispiel verwenden`run.Font.Bold=true` um den Text darin fett zu machen`Run` Objekt.
+ A: Um Text in Aspose.Words fett darzustellen, können Sie Folgendes verwenden`Font.Bold` Eigentum der`Run` Objekt. Sie können diese Eigenschaft auf festlegen`true` um einen bestimmten Text fett zu formatieren. Sie können zum Beispiel verwenden`run.Font.Bold=true` um den Text darin fett zu machen`Run` Objekt.
 
 #### F: Ist es möglich, mehrere Textteile im selben Absatz fett zu formatieren?
 
- A: Ja, Sie können mehrere Textteile in einem einzelnen Absatz mit der Funktion „Mehrere“ fett formatieren`Run` Objekte. Sie können mehrere erstellen`Run` Objekte und legen Sie die fest`Font.Bold` Eigentum zu`true` für jedes Objekt, um die gewünschten Textteile fett darzustellen. Anschließend können Sie sie mit dem zum Absatz hinzufügen`Paragraph.AppendChild(run)` Methode.
+A: Ja, Sie können mehrere Textteile in einem einzelnen Absatz mit der Funktion „Mehrere“ fett formatieren`Run` Objekte. Sie können mehrere erstellen`Run` Objekte und legen Sie die fest`Font.Bold`Eigentum zu`true` für jedes Objekt, um die gewünschten Textteile fett darzustellen. Anschließend können Sie sie mit dem zum Absatz hinzufügen`Paragraph.AppendChild(run)` Methode.
 
 #### F: Kann ich Text in einer Tabelle oder Zelle in Aspose.Words fett formatieren?
 

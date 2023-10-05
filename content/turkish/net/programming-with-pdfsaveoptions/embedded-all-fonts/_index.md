@@ -77,7 +77,7 @@ C: Aspose.Words for .NET kullanarak tüm yazı tiplerini bir PDF belgesine gömm
 
  İşlemek istediğiniz belgeyi kullanarak yükleyin.`Document` sınıf ve belge yolu.
 
- Bir örneğini oluşturarak PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve ayarlama`EmbedFullFonts` mülkiyet`true`. Bu, belgede kullanılan tüm yazı tiplerinin oluşturulan PDF dosyasına gömülmesini sağlar.
+ Bir örneğini oluşturarak PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve ayarlama`EmbedFullFonts`mülkiyet`true`. Bu, belgede kullanılan tüm yazı tiplerinin oluşturulan PDF dosyasına gömülmesini sağlar.
 
  Belgeyi gömülü yazı tipleriyle PDF formatında kaydedin.`Save` yöntemi`Document`çıktı dosyasının adını ve önceden yapılandırılan kaydetme seçeneklerini belirten nesne.
 

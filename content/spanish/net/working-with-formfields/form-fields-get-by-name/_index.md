@@ -32,13 +32,13 @@ FormFieldCollection documentFormFields = doc.Range.FormFields;
 Puede recuperar campos de formulario por índice o por nombre. En este ejemplo, recuperamos un campo de formulario usando ambos métodos:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; //Recuperar por índice
+FormField formField1 = documentFormFields[3]; // Recuperar por índice
 FormField formField2 = documentFormFields["Text2"]; // Recuperar por nombre
 ```
 
 ## Paso 3: Modificar las propiedades del campo del formulario
 
- Una vez que haya recuperado los campos del formulario, puede modificar sus propiedades según sea necesario. En este ejemplo, cambiamos el tamaño de fuente de`formField1` a 20 y el color de fuente de`formField2` a rojo:
+Una vez que haya recuperado los campos del formulario, puede modificar sus propiedades según sea necesario. En este ejemplo, cambiamos el tamaño de fuente de`formField1` a 20 y el color de fuente de`formField2` a rojo:
 
 ```csharp
 formField1.Font.Size = 20;
@@ -82,7 +82,7 @@ No dude en utilizar este código en sus propios proyectos y modificarlo según s
 
 #### P: ¿Qué pasa si el campo del formulario con el nombre especificado no existe en el documento?
 
- R: Si el campo del formulario con el nombre especificado no existe en el documento, el`Document.Range.FormFields[name]` el método regresará`null`Puede verificar este resultado para manejar los casos en los que no se encuentra el campo del formulario.
+ R: Si el campo del formulario con el nombre especificado no existe en el documento, el`Document.Range.FormFields[name]` el método regresará`null`. Puede verificar este resultado para manejar los casos en los que no se encuentra el campo del formulario.
 
 #### P: ¿Cómo puedo modificar las propiedades de un campo de formulario encontrado?
 

@@ -17,7 +17,7 @@ Aspose.Words per Java è una libreria ricca di funzionalità che consente agli s
 Prima di immergerci nel codice, assicurati di avere i seguenti prerequisiti:
 
 - Java Development Kit (JDK) installato sul tuo sistema.
-- Aspose.Words per la libreria Java. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/java/).
+-  Aspose.Words per la libreria Java. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/java/).
 - Una conoscenza di base della programmazione Java.
 
 ## Guida passo passo
@@ -64,7 +64,7 @@ Ricordarsi di gestire le eccezioni che potrebbero verificarsi durante il process
 
 ```java
 try {
-    //Codice di conversione qui
+    // Codice di conversione qui
 } catch (Exception e) {
     e.printStackTrace();
 }
@@ -78,7 +78,7 @@ La conversione di HTML in documenti utilizzando Aspose.Words per Java è un proc
 
 ### Come installo Aspose.Words per Java?
 
- È possibile scaricare la libreria Aspose.Words per Java da[Qui](https://releases.aspose.com/words/java/). Seguire le istruzioni di installazione fornite sul loro sito Web.
+ È possibile scaricare la libreria Aspose.Words per Java da[Qui](https://releases.aspose.com/words/java/). Seguire le istruzioni di installazione fornite sul loro sito web.
 
 ### Posso convertire HTML con stili CSS in un documento Word?
 

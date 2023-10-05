@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## الخطوة 3: تكوين خيارات عرض ملف التعريف
 
- لتمكين أو تعطيل تغيير حجم خط WMF إلى حجم ملف التعريف، نحتاج إلى تكوين`MetafileRenderingOptions`هدف. في هذا المثال، نقوم بتعطيل تغيير حجم الخط عن طريق تعيين`ScaleWmfFontsToMetafileSize` الملكية ل`false`.
+ لتمكين أو تعطيل تغيير حجم خط WMF إلى حجم ملف التعريف، نحتاج إلى تكوين`MetafileRenderingOptions`هدف. في هذا المثال، نقوم بتعطيل تغيير حجم الخط عن طريق تعيين`ScaleWmfFontsToMetafileSize`الملكية ل`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -97,11 +97,11 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 
  قم بتحميل المستند الذي تريد معالجته باستخدام ملف`Document` فئة وحدد المسار إلى مستند Word في دليل المستندات المحدد.
 
- قم بتكوين خيارات عرض ملف التعريف عن طريق إنشاء مثيل لـ`MetafileRenderingOptions` الصف وتحديد`ScaleWmfFontsToMetafileSize` الملكية ل`true` لتمكين تغيير حجم خطوط WMF إلى حجم ملف التعريف، أو إلى`false` لتعطيل هذه الميزة.
+ قم بتكوين خيارات عرض ملف التعريف عن طريق إنشاء مثيل لـ`MetafileRenderingOptions` الصف وتحديد`ScaleWmfFontsToMetafileSize`الملكية ل`true` لتمكين تغيير حجم خطوط WMF إلى حجم ملف التعريف، أو إلى`false` لتعطيل هذه الميزة.
 
  قم بتكوين خيارات الحفظ بتنسيق PDF عن طريق إنشاء مثيل لملف`PdfSaveOptions` فئة واستخدام خيارات عرض ملف التعريف التي تم تكوينها مسبقًا.
 
- احفظ المستند بتنسيق PDF باستخدام`Save` طريقة`Document`فئة تحدد المسار وخيارات الحفظ.
+ احفظ المستند بتنسيق PDF باستخدام`Save` طريقة`Document` فئة تحدد المسار وخيارات الحفظ.
 
 #### س: ما هي فوائد تغيير حجم خطوط WMF إلى حجم ملف التعريف في مستند PDF؟
 ج: مزايا تغيير حجم خطوط WMF إلى حجم ملف التعريف في مستند PDF هي:

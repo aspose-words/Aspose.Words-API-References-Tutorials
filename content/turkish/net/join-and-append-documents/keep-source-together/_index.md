@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Adım 4: Kaynak Belge için "Sonrakiyle Tut" Paragraf Biçimlendirmesini Ayarlayın
 
- Kaynak belgedeki paragrafları bir arada tutmak için belgedeki her paragrafta yinelenebilir ve`KeepWithNext` mülkiyet`true`.
+Kaynak belgedeki paragrafları bir arada tutmak için belgedeki her paragrafta yinelenebilir ve`KeepWithNext`mülkiyet`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

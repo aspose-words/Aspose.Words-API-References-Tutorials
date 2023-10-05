@@ -77,7 +77,7 @@ Jetzt können Sie sicher eine Lizenz aus einem Stream anwenden und die leistungs
 
 #### F: Wo finde ich die Lizenzdokumentation für Aspose.Words für .NET?
 
-A: Sie finden die Lizenzdokumentation für Aspose. Wörter für .NET auf der[API-Referenzen](https://reference.aspose.com/words/net/). Die Dokumentation enthält detaillierte Anweisungen und Beispiele für die Anwendung von Lizenzen, einschließlich der Anwendung von Lizenzen aus Dateien.
+ A: Sie finden die Lizenzdokumentation für Aspose. Wörter für .NET auf der[API-Referenzen](https://reference.aspose.com/words/net/). Die Dokumentation enthält detaillierte Anweisungen und Beispiele für die Anwendung von Lizenzen, einschließlich der Anwendung von Lizenzen aus Dateien.
 
 #### F: Welche Dateiformate unterstützt Aspose.Words für .NET für Lizenzdateien?
 

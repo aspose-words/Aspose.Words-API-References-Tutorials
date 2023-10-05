@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تضمين مجموعات فرعية من الخطوط في مستند وقمت بإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند مع Aspose.Words for .NET.
+هذا كل شئ ! لقد نجحت في تضمين مجموعات فرعية من الخطوط في مستند ما وقمت بإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند مع Aspose.Words for .NET.
 
 ### نموذج التعليمات البرمجية المصدر لتضمين مجموعات فرعية من الخطوط باستخدام Aspose.Words لـ .NET
 
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOption
 
  قم بتحميل المستند الذي تريد معالجته باستخدام ملف`Document` فئة ومسار الوثيقة.
 
- قم بتكوين خيارات حفظ PDF عن طريق إنشاء مثيل لـ`PdfSaveOptions` الصف وتحديد`EmbedFullFonts` الملكية ل`false`وهذا يضمن أن مجموعات الخطوط الفرعية المستخدمة في المستند فقط هي التي سيتم تضمينها في ملف PDF.
+ قم بتكوين خيارات حفظ PDF عن طريق إنشاء مثيل لـ`PdfSaveOptions` الصف وتحديد`EmbedFullFonts`الملكية ل`false`وهذا يضمن أن مجموعات الخطوط الفرعية المستخدمة في المستند فقط هي التي سيتم تضمينها في ملف PDF.
 
  احفظ المستند بتنسيق PDF مع تضمين مجموعات الخطوط الفرعية باستخدام ملف`Save` طريقة`Document` الكائن، مع تحديد اسم ملف الإخراج وخيارات الحفظ التي تم تكوينها مسبقًا.
 

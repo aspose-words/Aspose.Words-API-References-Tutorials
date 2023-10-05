@@ -48,7 +48,7 @@ doc.StopTrackRevisions();
 
 ## Paso 4: Aplicar la función "Ignorar texto dentro de Eliminar revisiones"
 
- Ahora que hemos preparado nuestro documento eliminando un párrafo, podemos habilitar la función "Ignorar texto dentro de eliminar revisiones" usando un`FindReplaceOptions` objeto. Estableceremos el`IgnoreDeleted` propiedad a`true`:
+ Ahora que hemos preparado nuestro documento eliminando un párrafo, podemos habilitar la función "Ignorar texto dentro de eliminar revisiones" usando un`FindReplaceOptions` objeto. Estableceremos el`IgnoreDeleted`propiedad a`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -65,7 +65,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Paso 6: Mostrar el resultado del documento modificado
 
-Después de aplicar la búsqueda y reemplazo, podemos mostrar el contenido modificado del documento usando el`GetText` método:
+ Después de aplicar la búsqueda y reemplazo, podemos mostrar el contenido modificado del documento usando el`GetText` método:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -73,7 +73,7 @@ Console.WriteLine(doc.GetText());
 
 ## Paso 7: Modificar las opciones para incluir texto eliminado
 
- Si queremos incluir texto eliminado en el resultado de salida, podemos cambiar las opciones para no ignorar el texto eliminado. Para ello estableceremos el`IgnoreDeleted` propiedad a`false`:
+ Si queremos incluir texto eliminado en el resultado de salida, podemos cambiar las opciones para no ignorar el texto eliminado. Para ello estableceremos el`IgnoreDeleted`propiedad a`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
@@ -164,7 +164,7 @@ doc.StopTrackRevisions();
 
 #### P: ¿Cómo habilitar la función "Ignorar texto dentro de eliminar revisiones" en Aspose.Words para .NET?
 
- R: Ahora que hemos preparado nuestro documento eliminando un párrafo, podemos habilitar la función "Ignorar texto dentro de eliminar revisiones" usando un`FindReplaceOptions` objeto. Estableceremos el`IgnoreDeleted` propiedad a`true`:
+ R: Ahora que hemos preparado nuestro documento eliminando un párrafo, podemos habilitar la función "Ignorar texto dentro de eliminar revisiones" usando un`FindReplaceOptions` objeto. Estableceremos el`IgnoreDeleted`propiedad a`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -189,7 +189,7 @@ Console.WriteLine(doc.GetText());
 
 #### P: ¿Cómo incluir texto eliminado en el resultado de salida en Aspose.Words para .NET?
 
- R: Si queremos incluir texto eliminado en el resultado de salida, podemos cambiar las opciones para no ignorar el texto eliminado. Para ello estableceremos el`IgnoreDeleted` propiedad a`false`:
+ R: Si queremos incluir texto eliminado en el resultado de salida, podemos cambiar las opciones para no ignorar el texto eliminado. Para ello estableceremos el`IgnoreDeleted`propiedad a`false`:
 
 ```csharp
 options. IgnoreDeleted = false;

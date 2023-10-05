@@ -82,7 +82,7 @@ R : Pour exporter les signets d'en-tête et de pied de page d'un document Word 
 
  Configurez les options d'enregistrement au format PDF en créant une instance du`PdfSaveOptions` classe et en définissant les options de signets d’en-tête et de pied de page appropriées.
 
- Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document`classe spécifiant le chemin et les options de sauvegarde.
+ Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document` classe spécifiant le chemin et les options de sauvegarde.
 
 ### Q : Quels sont les avantages de l’exportation des signets d’en-tête et de pied de page vers un document PDF ?
 R : Les avantages de l’exportation des signets d’en-tête et de pied de page dans un document PDF sont :

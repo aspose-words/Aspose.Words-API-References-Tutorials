@@ -36,7 +36,7 @@ com.aspose.words.digitalSignatures.DigitalSignature digitalSignature = new com.a
 // Imposta il percorso del certificato
 digitalSignature.setCertificateFile("your_certificate.pfx");
 
-// Imposta la password per il certificato
+//Imposta la password per il certificato
 digitalSignature.setPassword("your_password");
 
 // Firma il documento

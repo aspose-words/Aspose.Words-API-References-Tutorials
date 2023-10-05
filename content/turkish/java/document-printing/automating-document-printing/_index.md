@@ -18,7 +18,7 @@ Belge otomasyonu dünyasına dalmadan önce aşağıdaki önkoşulların mevcut 
 
 - Java Geliştirme Ortamı: Sisteminizde bir Java geliştirme ortamının kurulu olduğundan emin olun.
 
-- Aspose.Words for Java: Aspose.Words for Java kütüphanesinin kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java: Aspose.Words for Java kütüphanesinin kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 - Örnek Belge: Yazdırma işlemini otomatikleştirmek istediğiniz örnek belgeyi hazırlayın.
 
@@ -75,7 +75,7 @@ Aspose.Words for Java kullanarak belge yazdırmayı otomatikleştirmek iş akı�
 
 ### Belgelerimi yazdırmak için farklı bir yazıcıyı nasıl belirleyebilirim?
 
- Belgelerinizi yazdırmak üzere farklı bir yazıcı belirlemek için`setPrinterName` yöntem, kod örneğinde gösterildiği gibi. Basitçe değiştirin`"Your_Printer_Name"` İstenilen yazıcının adı ile.
+ Belgelerinizi yazdırmak üzere farklı bir yazıcı belirlemek için`setPrinterName`yöntem, kod örneğinde gösterildiği gibi. Basitçe değiştirin`"Your_Printer_Name"` İstenilen yazıcının adı ile.
 
 ### Aspose.Words for Java ile belgeyle ilgili diğer görevleri otomatikleştirebilir miyim?
 

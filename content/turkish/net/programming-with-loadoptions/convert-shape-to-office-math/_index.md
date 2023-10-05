@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/convert-shape-to-office-math/
 ---
-Bir C# uygulamasında matematik şekilleri içeren belgelerle Kelime İşleme yaparken, daha iyi uyumluluk ve sunum için bunları Office matematik formüllerine dönüştürmeniz gerekebilir. .NET için Aspose.Words kitaplığıyla, bir belgeyi yüklerken şekilleri kolayca Office matematik formüllerine dönüştürebilirsiniz. Bu adım adım kılavuzda, LoadOptions'ı kullanarak şekilleri Office matematik formüllerine dönüştüren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+Bir C# uygulamasında matematik şekilleri içeren belgelerle Kelime İşleme yaparken, daha iyi uyumluluk ve sunum için bunları Office matematik formüllerine dönüştürmeniz gerekebilir. .NET için Aspose.Words kitaplığıyla, bir belgeyi yüklerken şekilleri kolaylıkla Office matematik formüllerine dönüştürebilirsiniz. Bu adım adım kılavuzda, LoadOptions'ı kullanarak şekilleri Office matematik formüllerine dönüştüren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
 ## Aspose.Words kütüphanesini anlama
 

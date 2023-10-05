@@ -48,7 +48,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Passaggio 5: inserire il documento di origine
 
- Usa il`InsertDocument` metodo del`DocumentBuilder`classe per inserire il documento di origine nel documento di destinazione. Imposta la modalità del formato di importazione su`ImportFormatMode.KeepSourceFormatting` per preservare la formattazione dell'origine.
+ Usa il`InsertDocument` metodo del`DocumentBuilder` classe per inserire il documento di origine nel documento di destinazione. Imposta la modalità del formato di importazione su`ImportFormatMode.KeepSourceFormatting` per preservare la formattazione dell'origine.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

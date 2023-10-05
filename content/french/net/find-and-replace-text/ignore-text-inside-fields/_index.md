@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## Étape 3 : Utilisation de la fonction Ignorer le texte à l'intérieur des champs
 
- Pour ignorer le texte à l'intérieur des champs lors des opérations ultérieures, nous pouvons utiliser un`FindReplaceOptions` objet et définissez le`IgnoreFields` propriété à`true`:
+ Pour ignorer le texte à l'intérieur des champs lors des opérations ultérieures, nous pouvons utiliser un`FindReplaceOptions` objet et définissez le`IgnoreFields`propriété à`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -50,7 +50,7 @@ doc.Range.Replace(regex, "*", options);
 
 ## Étape 5 : Affichage de la sortie du document modifié
 
-Après avoir appliqué la recherche et le remplacement, nous pouvons afficher le contenu modifié du document à l'aide du`GetText` méthode:
+ Après avoir appliqué la recherche et le remplacement, nous pouvons afficher le contenu modifié du document à l'aide du`GetText` méthode:
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## Étape 6 : Modification des options pour inclure des champs
 
-nous incluons le texte à l'intérieur des champs dans le résultat de sortie, nous pouvons modifier les options pour ne pas ignorer les champs. Pour cela nous fixerons le`IgnoreFields` propriété à`false`:
+ nous incluons le texte à l'intérieur des champs dans le résultat de sortie, nous pouvons modifier les options pour ne pas ignorer les champs. Pour cela nous fixerons le`IgnoreFields`propriété à`false`:
 
 ```csharp
 options.IgnoreFields = false;
@@ -107,7 +107,7 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 #### Q : Qu'est-ce que la fonctionnalité « Ignorer le texte à l'intérieur des champs » dans Aspose.Words pour .NET ?
 
-R : La fonctionnalité « Ignorer le texte à l'intérieur des champs » dans Aspose.Words pour .NET vous permet de spécifier si le texte à l'intérieur des champs doit être ignoré lors de certaines opérations, telles que la recherche et le remplacement de texte. Lorsque cette fonctionnalité est activée, le texte à l'intérieur des champs n'est pas pris en compte lors des opérations.
+: La fonctionnalité « Ignorer le texte à l'intérieur des champs » dans Aspose.Words pour .NET vous permet de spécifier si le texte à l'intérieur des champs doit être ignoré lors de certaines opérations, telles que la recherche et le remplacement de texte. Lorsque cette fonctionnalité est activée, le texte à l'intérieur des champs n'est pas pris en compte lors des opérations.
 
 #### Q : Comment puis-je créer un nouveau document à l'aide d'Aspose.Words pour .NET ?
 
@@ -128,7 +128,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 #### Q : Comment puis-je ignorer le texte contenu dans les champs dans Aspose.Words for .NET ?
 
-R : Pour ignorer le texte à l'intérieur des champs lors des opérations ultérieures, vous pouvez utiliser un`FindReplaceOptions` objet et définissez le`IgnoreFields` propriété à`true`:
+ R : Pour ignorer le texte à l'intérieur des champs lors des opérations ultérieures, vous pouvez utiliser un`FindReplaceOptions` objet et définissez le`IgnoreFields`propriété à`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };

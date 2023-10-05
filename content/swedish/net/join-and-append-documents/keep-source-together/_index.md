@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Steg 4: Ställ in "Behåll med nästa" styckeformatering för källdokument
 
- För att hålla ihop styckena i källdokumentet kan du iterera genom varje stycke i dokumentet och ställa in`KeepWithNext` egendom till`true`.
+För att hålla ihop styckena i källdokumentet kan du iterera genom varje stycke i dokumentet och ställa in`KeepWithNext`egendom till`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

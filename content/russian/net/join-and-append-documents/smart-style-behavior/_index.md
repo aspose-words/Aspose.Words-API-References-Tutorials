@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Шаг 4. Установите параметры поведения умного стиля
 
-Чтобы включить интеллектуальное поведение стиля во время операции добавления, вам необходимо создать экземпляр`ImportFormatOptions` и установите`SmartStyleBehavior` собственность`true`.
+Чтобы включить интеллектуальное поведение стиля во время операции добавления, вам необходимо создать экземпляр`ImportFormatOptions` и установите`SmartStyleBehavior`собственность`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };

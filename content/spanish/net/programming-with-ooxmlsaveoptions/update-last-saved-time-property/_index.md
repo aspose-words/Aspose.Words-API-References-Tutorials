@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-En este tutorial, exploraremos el código fuente de C# proporcionado para actualizar la propiedad de la última hora de guardado al guardar un documento usando Aspose.Words para .NET. Esta función le permite actualizar automáticamente la propiedad de la última hora de guardado del documento generado.
+En este tutorial, exploraremos el código fuente de C# proporcionado para actualizar la propiedad de la última hora de guardado al guardar un documento usando Aspose.Words para .NET. Esta característica le permite actualizar automáticamente la propiedad de la última hora de guardado del documento generado.
 
 ## Paso 1: configurar el entorno
 

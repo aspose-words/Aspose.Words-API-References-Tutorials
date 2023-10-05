@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Шаг 4. Измените форматирование абзаца
 
- Чтобы сохранить правильное форматирование, просмотрите все абзацы исходного документа и установите`KeepWithNext` собственность`true`. Это гарантирует, что абзацы останутся вместе во время процесса добавления.
+ Чтобы сохранить правильное форматирование, просмотрите все абзацы исходного документа и установите`KeepWithNext`собственность`true`Это гарантирует, что абзацы останутся вместе во время процесса добавления.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -85,9 +85,9 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Чтобы этого не произошло, если исходный документ имеет другие параметры настройки страницы, убедитесь, что
-	//настройки в последнем разделе целевого документа идентичны.
+	// настройки в последнем разделе целевого документа идентичны.
 	// Если в исходном документе есть дополнительные непрерывные разделы,
-	// это необходимо будет повторить для этих разделов.
+	//это необходимо будет повторить для этих разделов.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

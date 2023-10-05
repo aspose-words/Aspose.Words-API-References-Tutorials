@@ -66,7 +66,7 @@ C: Aspose.Words ile bir Word belgesinde yazı tipi değiştirme ayarlarını yap
 
 #### S: Aspose.Words ile bir Word belgesinde geçersiz kılınırken yedek yazı tiplerini kullanmak mümkün müdür?
 
-C: Evet, Aspose.Words ile bir Word belgesinde yer değiştirirken yedek yazı tiplerini yönetebilirsiniz. API, eksik yazı tiplerini tespit etmenize ve yazı tipleri değiştirildiğinde bile tutarlı metin görünümünü korumak için uygun yedek yazı tiplerini belirtmenize olanak tanır.
+C: Evet, Aspose.Words ile bir Word belgesinde yer değiştirirken yedek yazı tiplerini yönetebilirsiniz. API, eksik yazı tiplerini tespit etmenize ve yazı tipleri değiştirildiğinde bile tutarlı metin görünümünü korumak için uygun yedek yazı tiplerini belirlemenize olanak tanır.
 
 #### S: Bir Word belgesinde yazı tipi değiştirme ayarlarını doğru şekilde yapılandırmak neden önemlidir?
 

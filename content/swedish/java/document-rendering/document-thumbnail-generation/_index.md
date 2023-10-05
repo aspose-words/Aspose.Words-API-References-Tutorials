@@ -26,7 +26,7 @@ För att komma igång, se till att du har Java och Aspose.Words för Java instal
 
 ## Steg 2: Ladda ett Word-dokument
 
-I det här steget kommer vi att lära oss hur man laddar ett Word-dokument med Aspose.Words för Java.
+det här steget kommer vi att lära oss hur man laddar ett Word-dokument med Aspose.Words för Java.
 
 ```java
 // Java-kod för att ladda ett Word-dokument
@@ -53,7 +53,7 @@ Du kan anpassa utseendet på dina miniatyrer för att matcha din applikations de
 När du har skapat miniatyrbilden kan du spara den på önskad plats.
 
 ```java
-//Java-kod för att spara den genererade miniatyrbilden
+// Java-kod för att spara den genererade miniatyrbilden
 FileOutputStream outputStream = new FileOutputStream("thumbnail.png");
 stream.writeTo(outputStream);
 ```
@@ -82,4 +82,4 @@ Ja, Aspose.Words för Java kräver en giltig licens för kommersiellt bruk. Du k
 
 ### Var kan jag hitta ytterligare dokumentation för Aspose.Words för Java?
 
-Du kan hitta omfattande dokumentation och API-referenser på dokumentationssidan för Aspose.Words för Java[här](https://reference.aspose.com/words/java/).
+ Du kan hitta omfattande dokumentation och API-referenser på dokumentationssidan för Aspose.Words för Java[här](https://reference.aspose.com/words/java/).

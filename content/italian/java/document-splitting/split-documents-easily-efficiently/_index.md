@@ -74,7 +74,7 @@ La suddivisione dei documenti per intestazioni è un approccio più avanzato che
 Per dividere un documento in base ai titoli utilizzando Aspose.Words per Java, attenersi alla seguente procedura:
 
 ```java
-// Codice Java per dividere un documento in base ai titoli utilizzando Aspose.Words per Java
+//Codice Java per dividere un documento in base ai titoli utilizzando Aspose.Words per Java
 Document doc = new Document("input.docx");
 LayoutCollector layoutCollector = new LayoutCollector(doc);
 

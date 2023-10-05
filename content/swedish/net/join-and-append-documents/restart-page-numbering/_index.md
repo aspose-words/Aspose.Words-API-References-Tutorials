@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Ställ in källdokumentet på att starta om sidnumrering
 
- För att starta om sidnumreringen i källdokumentet måste du ställa in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.NewPage` och ställ in`RestartPageNumbering` egendom till`true`.
+ För att starta om sidnumreringen i källdokumentet måste du ställa in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.NewPage` och ställ in`RestartPageNumbering`egendom till`true`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

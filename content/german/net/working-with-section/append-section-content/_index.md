@@ -48,7 +48,7 @@ Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 ```
 
-### Beispielquellcode für „Abschnittsinhalt anhängen“ mit Aspose.Words für .NET 
+### Beispielquellcode zum Anhängen von Abschnittsinhalten in Word mit Aspose.Words für .NET 
 
 ```csharp
 

@@ -219,7 +219,7 @@ style.getFont().setSize(18);
 
 ### 2. Création et application de styles personnalisés
 
-Vous pouvez créer des styles personnalisés et les appliquer à des paragraphes ou à des passages de texte.
+Vous pouvez créer des styles personnalisés et les appliquer à des paragraphes ou à des séquences de texte.
 
 ```java
 Style customStyle = doc.getStyles().add(StyleType.PARAGRAPH, "CustomStyle");

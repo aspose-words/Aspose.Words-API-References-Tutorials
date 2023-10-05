@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Fügen Sie dem ersten Absatz Text hinzu und fügen Sie dann zwei weitere Absätze hinzu.
+// Fügen Sie dem ersten Absatz Text hinzu und fügen Sie dann zwei weitere Absätze hinzu.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -92,12 +92,12 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-//Fügen Sie dem ersten Absatz Text hinzu und fügen Sie dann zwei weitere Absätze hinzu.
+// Fügen Sie dem ersten Absatz Text hinzu und fügen Sie dann zwei weitere Absätze hinzu.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
-// Wir haben drei Absätze, von denen keiner als irgendeine Art von Überarbeitung registriert ist
+//Wir haben drei Absätze, von denen keiner als irgendeine Art von Überarbeitung registriert ist
 // Wenn wir beim Verfolgen von Überarbeitungen Inhalte im Dokument hinzufügen/entfernen,
 // sie werden als solche im Dokument angezeigt und können angenommen/abgelehnt werden.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
@@ -123,7 +123,7 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // Wenn Sie die Verfolgung von Revisionen stoppen, wird dieser Text als normaler Text angezeigt.
-//Revisionen werden bei einer Änderung des Dokuments nicht gezählt.
+// Revisionen werden bei einer Änderung des Dokuments nicht gezählt.
 doc.StopTrackRevisions();
 
 // Speichern Sie das Dokument.

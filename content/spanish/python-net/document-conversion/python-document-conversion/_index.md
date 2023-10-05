@@ -1,5 +1,5 @@
 ---
-title: Conversión de documentos Python la guía completa
+title: Conversión de documentos Python: la guía completa
 linktitle: Conversión de documentos de Python
 second_title: API de gestión de documentos Aspose.Words Python
 description: Aprenda la conversión de documentos de Python con Aspose.Words para Python. Convierta, manipule y personalice documentos sin esfuerzo. ¡Aumente la productividad ahora!
@@ -48,7 +48,7 @@ Aspose.Words le permite conservar encabezados, pies de página y configuraciones
 
 ### Requisitos previos
 
-Antes de instalar Aspose.Words para Python, debe tener Python instalado en su sistema. Puede descargar Python desde Aspose.Releases (https://releases.aspose.com/words/python/) y siga las instrucciones de instalación.
+Antes de instalar Aspose.Words para Python, debe tener Python instalado en su sistema. Puede descargar Python desde Aspose.Releases(https://releases.aspose.com/words/python/) y siga las instrucciones de instalación.
 
 ### Pasos de instalación
 

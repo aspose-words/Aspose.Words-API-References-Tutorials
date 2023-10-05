@@ -70,11 +70,11 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 ج: إن تعطيل تضمين خطوط Windows في مستند PDF هو عملية منع تضمين خطوط Windows في ملف PDF الذي تم إنشاؤه. يؤدي هذا إلى تقليل حجم ملف PDF عن طريق إزالة بيانات خط Windows المضمنة. قد يكون هذا مهمًا لتقليل حجم ملفات PDF، مما يسهل تخزينها ومشاركتها ونقلها بشكل أسرع.
 
 #### س: كيف يمكنني تعطيل تضمين خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET؟
-ج: لتعطيل تضمين خطوط Windows في مستند PDF باستخدام Aspose.Words لـ .NET، اتبع الخطوات التالية:
+ج: لتعطيل تضمين خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET، اتبع الخطوات التالية:
 
  قم بتحميل المستند الذي تريد تحويله إلى PDF باستخدام الملف`Document` مسار الطبقة والوثيقة.
 
- إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`FontEmbeddingMode` الملكية ل`PdfFontEmbeddingMode.EmbedNone`. يؤدي هذا إلى تعطيل تضمين خطوط Windows في ملف PDF الذي تم إنشاؤه.
+ إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`FontEmbeddingMode`الملكية ل`PdfFontEmbeddingMode.EmbedNone`. يؤدي هذا إلى تعطيل تضمين خطوط Windows في ملف PDF الذي تم إنشاؤه.
 
  استخدم ال`Save` طريقة`Document` كائن لتحويل المستند إلى PDF مع تحديد خيارات التحويل التي تم تكوينها مسبقًا.
 

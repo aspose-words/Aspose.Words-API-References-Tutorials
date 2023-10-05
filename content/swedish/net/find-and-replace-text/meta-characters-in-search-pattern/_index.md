@@ -62,7 +62,7 @@ doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced 
 
 ## Steg 6: Spara det redigerade dokumentet
 
- Slutligen sparar vi det ändrade dokumentet i en specificerad katalog med hjälp av`Save` metod:
+Slutligen sparar vi det ändrade dokumentet i en specificerad katalog med hjälp av`Save` metod:
 
 ```csharp
 doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");

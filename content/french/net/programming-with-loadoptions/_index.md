@@ -21,6 +21,6 @@ Dans ces didacticiels, vous apprendrez à utiliser LoadOptions pour charger des 
 | [Utiliser le dossier temporaire dans un document Word](./use-temp-folder/) | Découvrez comment utiliser un dossier temporaire lors du téléchargement de documents avec Aspose.Words for .NET. |
 | [Rappel d'avertissement dans un document Word](./warning-callback/) | Découvrez comment gérer les avertissements lors du chargement d'un document Word à l'aide de la fonctionnalité de rappel avec Aspose.Words pour .NET. |
 | [Charger avec encodage dans un document Word](./load-with-encoding/) | Découvrez comment charger un document avec un encodage spécifié dans un document Word à l'aide d'Aspose.Words pour .NET. |
-| [Sauter les images PDF](./skip-pdf-images/) | Découvrez comment charger un document PDF en ignorant le chargement des images PDF avec Aspose.Words for .NET. |
+| [Sauter les images PDF](./skip-pdf-images/) | Découvrez comment charger un document PDF en ignorant le chargement des images PDF avec Aspose.Words pour .NET. |
 | [Convertir des métafichiers en Png](./convert-metafiles-to-png/) | Découvrez comment convertir des métafichiers en images PNG lors du téléchargement de documents avec Aspose.Words pour .NET. |
 | [Charger des fichiers Chm dans un document Word](./load-chm/) | Découvrez comment charger des fichiers CHM dans un document Word avec Aspose.Words pour .NET. |

@@ -44,7 +44,7 @@ ThresholdForFloydSteinbergDithering = 254
 doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
 ```
 
-In quest'ultimo passaggio, salviamo le immagini del documento in formato TIFF utilizzando il file`Save` metodo e passando il percorso del file di output, insieme alle opzioni di salvataggio specificate.
+ In quest'ultimo passaggio, salviamo le immagini del documento in formato TIFF utilizzando il file`Save` metodo e passando il percorso del file di output, insieme alle opzioni di salvataggio specificate.
 
 Ora puoi eseguire il codice sorgente per convertire il tuo documento in formato TIFF controllando la soglia di binarizzazione con le opzioni specificate. Il file risultante verrà salvato nella directory specificata con il nome "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff".
 

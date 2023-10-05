@@ -68,7 +68,7 @@ Para utilizar esta función con Aspose.Words para .NET, siga estos pasos:
 
  Cargue el documento usando el`Document` método y especificando la ruta del archivo para convertir a PDF.
 
- Configure las opciones para guardar PDF creando una instancia del`PdfSaveOptions` clase y establecer el`DisplayDocTitle` propiedad a`true`. Esto permite mostrar el título del documento en la barra de título de la ventana al convertir a PDF.
+ Configure las opciones para guardar PDF creando una instancia del`PdfSaveOptions` clase y establecer el`DisplayDocTitle`propiedad a`true`. Esto permite mostrar el título del documento en la barra de título de la ventana al convertir a PDF.
 
  Utilizar el`Save` método para convertir el documento a PDF especificando las opciones de conversión.
 

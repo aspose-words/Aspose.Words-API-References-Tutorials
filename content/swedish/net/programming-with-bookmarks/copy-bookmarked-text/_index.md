@@ -88,6 +88,42 @@ Här är det fullständiga exemplet på källkoden för att demonstrera kopierin
 
 ```
 
+#### AppendBookmarkedText källkod
+
+```csharp
+
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+        {
+            // Detta är stycket som innehåller början av bokmärket.
+            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+
+            // Detta är stycket som innehåller slutet av bokmärket.
+            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+
+            if (startPara == null || endPara == null)
+                throw new InvalidOperationException(
+                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+            // Begränsa oss till ett ganska enkelt scenario.
+            if (startPara.ParentNode != endPara.ParentNode)
+                throw new InvalidOperationException(
+                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+            // Vi vill kopiera alla stycken från startstycket till (och inklusive) slutstycket,
+            // därför är noden där vi stannar en efter slutstycket.
+            Node endNode = endPara.NextSibling;
+
+            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+            {
+                //Detta skapar en kopia av den aktuella noden och importerar den (gör den giltig) i sammanhanget
+                // av destinationsdokumentet. Importering innebär att anpassa stilar och listidentifierare korrekt.
+                Node newNode = importer.ImportNode(curNode, true);
+
+                dstNode.AppendChild(newNode);
+            }
+        }
+
+```
 ## Slutsats
 
 I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Kopiera bokmärkt text från Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att kopiera innehållet i ett bokmärke från ett källdokument till ett annat dokument.
@@ -116,7 +152,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### F: Hur anger man platsen för bokmärkestextkopian i ett måldokument med Aspose.Words för .NET?
 
-S: För att ange var du vill lägga till kopierad bokmärkestext i ett måldokument med Aspose.Words för .NET, kan du navigera till brödtexten i den sista delen av måldokumentet. Du kan använda`LastSection` egendom för att komma åt den sista sektionen och`Body` egendom för att få tillgång till avsnittet. Här är en exempelkod:
+ S: För att ange var du vill lägga till kopierad bokmärkestext i ett måldokument med Aspose.Words för .NET, kan du navigera till brödtexten i den sista delen av måldokumentet. Du kan använda`LastSection` egendom för att komma åt den sista sektionen och`Body` egendom för att få tillgång till avsnittet. Här är en exempelkod:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;

@@ -29,7 +29,7 @@ builder.Writeln("Hello World!");
 ```
 
 ## Шаг 3. Сохраните документ
-После добавления желаемого содержимого сохраните документ в файл с помощью метода Save класса Document:
+После добавления нужного содержимого сохраните документ в файл с помощью метода Save класса Document:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");

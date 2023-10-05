@@ -97,7 +97,7 @@ builder.ListFormat.RemoveNumbers();
 // Pour réutiliser la première liste, nous devons redémarrer la numérotation en créant une copie du formatage de la liste d'origine.
 List list2 = doc.Lists.AddCopy(list1);
 
-//Nous pouvons modifier la nouvelle liste de n'importe quelle manière, y compris en définissant un nouveau numéro de départ.
+// Nous pouvons modifier la nouvelle liste de n'importe quelle manière, y compris en définissant un nouveau numéro de départ.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -122,7 +122,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### Q : Comment puis-je spécifier une valeur de numérotation spécifique à partir de laquelle la liste doit être redémarrée ?
 
- R : Pour spécifier une valeur numérique spécifique à partir de laquelle la liste doit être redémarrée, vous pouvez utiliser le`ListRestartAtNumber`méthode passant la valeur souhaitée comme argument. Par exemple, pour recommencer la numérotation à partir de 5, vous pouvez utiliser`list.ListRestartAtNumber(5)`.
+R : Pour spécifier une valeur numérique spécifique à partir de laquelle la liste doit être redémarrée, vous pouvez utiliser le`ListRestartAtNumber` méthode passant la valeur souhaitée comme argument. Par exemple, pour recommencer la numérotation à partir de 5, vous pouvez utiliser`list.ListRestartAtNumber(5)`.
 
 #### Q : Est-il possible de redémarrer la numérotation des listes à plusieurs niveaux dans Aspose.Words ?
 

@@ -66,11 +66,11 @@ Grattis! Du har nu lärt dig hur du använder varningskällan med Aspose.Words f
 
 #### F: Kan vi anpassa utseendet på "Varning"-taggen?
 
-S: Formateringen av "Warning"-taggen beror på vilken Markdown-renderare som används. I de flesta fall kan du anpassa utseendet genom att använda CSS för att rikta in dig på`blockquote` taggen i ditt dokument.
+ S: Formateringen av "Warning"-taggen beror på vilken Markdown-renderare som används. I de flesta fall kan du anpassa utseendet genom att använda CSS för att rikta in dig på`blockquote` taggen i ditt dokument.
 
 #### F: Är det möjligt att lägga till ikoner i "Varning"-taggen?
 
- S: Ja, det är möjligt att lägga till ikoner till "Varning"-taggen med HTML-kod i ditt Markdown-dokument. Du kan infoga en`span` tagga med lämplig klass för att visa en ikon bredvid varningstexten.
+S: Ja, det är möjligt att lägga till ikoner till "Varning"-taggen med HTML-kod i ditt Markdown-dokument. Du kan infoga en`span` tagga med lämplig klass för att visa en ikon bredvid varningstexten.
 
 #### F: Är "Warning"-taggen kompatibel med alla Markdown-läsare?
 

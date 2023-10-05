@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## الخطوة 2: قم بتحميل المستند
- قم بتحميل مستند Word الذي يحتوي على رسم Smart Art باستخدام الملف`Document` منشئ الطبقة.
+قم بتحميل مستند Word الذي يحتوي على رسم Smart Art باستخدام الملف`Document` منشئ الطبقة.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");

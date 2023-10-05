@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Paso 4: Establezca el formato de párrafo "Mantener con el siguiente" para el documento fuente
 
- Para mantener juntos los párrafos del documento fuente, puede recorrer cada párrafo del documento y establecer el`KeepWithNext` propiedad a`true`.
+Para mantener juntos los párrafos del documento fuente, puede recorrer cada párrafo del documento y establecer el`KeepWithNext`propiedad a`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

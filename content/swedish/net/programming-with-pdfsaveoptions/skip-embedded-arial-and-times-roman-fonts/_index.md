@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Steg 3: Konfigurera spara som PDF-alternativ med teckensnittsinbäddning
 
- För att hoppa över att bädda in Arial- och Times Roman-teckensnitt i den genererade PDF-filen måste vi konfigurera`PdfSaveOptions` objekt och ställ in`FontEmbeddingMode` egendom till`PdfFontEmbeddingMode.EmbedAll`.
+ För att hoppa över att bädda in Arial- och Times Roman-teckensnitt i den genererade PDF-filen måste vi konfigurera`PdfSaveOptions` objekt och ställ in`FontEmbeddingMode`egendom till`PdfFontEmbeddingMode.EmbedAll`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
@@ -76,7 +76,7 @@ S: För att konfigurera Aspose.Words för .NET att inte bädda in Arial- och Tim
 
  Ladda dokumentet du vill bearbeta med hjälp av`Document` klass och den angivna dokumentsökvägen.
 
- Skapa en instans av`PdfSaveOptions` klass och ställ in`FontEmbeddingMode` egendom till`PdfFontEmbeddingMode.EmbedAll`. Detta kommer att bädda in alla typsnitt utom Arial och Times Roman i den genererade PDF-filen.
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`FontEmbeddingMode`egendom till`PdfFontEmbeddingMode.EmbedAll`. Detta kommer att bädda in alla typsnitt utom Arial och Times Roman i den genererade PDF-filen.
 
  Använd`Save` metod för`Document` objekt för att spara dokumentet i PDF-format med angivande av sparade alternativ som konfigurerats tidigare.
 

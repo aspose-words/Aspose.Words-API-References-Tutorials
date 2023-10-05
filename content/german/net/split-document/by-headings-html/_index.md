@@ -82,4 +82,4 @@ Der bereitgestellte Quellcode demonstriert die Aufteilung des Word-Dokuments in 
 
 #### Kann ich das Dokument nach mehreren Kriterien aufteilen?
 
- Ja, Sie können das Dokument anhand mehrerer Kriterien aufteilen, indem Sie die Kriterienoptionen entsprechend kombinieren. Beispielsweise können Sie das Dokument sowohl nach Überschrift als auch nach Seite aufteilen, indem Sie festlegen`DocumentSplitCriteria` Eigentum zu`HeadingParagraph | Page`. Dadurch wird das Dokument an jeder Überschrift und an jeder Seite aufgeteilt, sodass kleinere Teile entstehen, die auf beiden Kriterien basieren.
+ Ja, Sie können das Dokument anhand mehrerer Kriterien aufteilen, indem Sie die Kriterienoptionen entsprechend kombinieren. Beispielsweise können Sie das Dokument sowohl nach Überschrift als auch nach Seite aufteilen, indem Sie festlegen`DocumentSplitCriteria`Eigentum zu`HeadingParagraph | Page`. Dadurch wird das Dokument an jeder Überschrift und an jeder Seite aufgeteilt, sodass kleinere Teile entstehen, die auf beiden Kriterien basieren.

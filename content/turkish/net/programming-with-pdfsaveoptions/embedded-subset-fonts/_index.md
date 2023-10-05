@@ -81,7 +81,7 @@ C: Aspose.Words for .NET kullanarak yazı tipi alt kümelerini bir PDF belgesine
 
  İşlemek istediğiniz belgeyi kullanarak yükleyin.`Document` sınıf ve belge yolu.
 
- Bir örneğini oluşturarak PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve ayarlama`EmbedFullFonts` mülkiyet`false`Bu, yalnızca belgede kullanılan yazı tipi alt kümelerinin PDF dosyasına dahil edilmesini sağlar.
+ Bir örneğini oluşturarak PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve ayarlama`EmbedFullFonts`mülkiyet`false`Bu, yalnızca belgede kullanılan yazı tipi alt kümelerinin PDF dosyasına dahil edilmesini sağlar.
 
  Belgeyi, yazı tipi alt kümeleri gömülü olarak PDF formatında kaydedin.`Save` yöntemi`Document` çıktı dosyasının adını ve daha önce yapılandırılan kaydetme seçeneklerini belirten nesne.
 

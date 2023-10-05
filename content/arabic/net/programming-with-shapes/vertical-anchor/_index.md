@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 3: إدراج شكل وتكوينه
- قم بإدراج شكل في المستند باستخدام`InsertShape` طريقة`DocumentBuilder` هدف. ضبط الأبعاد المطلوبة للشكل.
+قم بإدراج شكل في المستند باستخدام`InsertShape` طريقة`DocumentBuilder` هدف. ضبط الأبعاد المطلوبة للشكل.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);

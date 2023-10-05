@@ -18,7 +18,7 @@ Gelişmiş tekniklere dalmadan önce aşağıdaki önkoşulların mevcut olduğu
 
 1.  Python Kurulumu: Sisteminizde Python'un kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://www.python.org/downloads/).
 
-2. Aspose.Words for Python: Aspose.Words for Python'un kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/).
+2.  Aspose.Words for Python: Aspose.Words for Python'un kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/).
 
 3. Belge Hazırlama: Bul ve değiştir işlemlerini gerçekleştirmek istediğiniz bir Word belgesini hazır bulundurun.
 
@@ -108,7 +108,7 @@ Word belgelerini verimli bir şekilde yönetmek ve değiştirmek genellikle bulm
 
  Evet yapabilirsin. Değiştirmeyi gerçekleştirmeden önce, sayfa aralığını kullanarak belirtin.`doc.get_child_nodes()` belirli sayfaların içeriğini alma yöntemi.
 
-### Bul ve değiştir işlemini geri almak mümkün müdür?
+### Bul ve değiştir işlemini geri almak mümkün mü?
 
 Ne yazık ki Aspose.Words kütüphanesi bulma ve değiştirme işlemleri için yerleşik bir geri alma mekanizması sunmuyor. Kapsamlı değişiklikler yapmadan önce belgenizin yedeğini almanız önerilir.
 

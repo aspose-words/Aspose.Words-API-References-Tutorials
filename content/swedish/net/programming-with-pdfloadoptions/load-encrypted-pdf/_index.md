@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions
 
 Underhåll
 
- Men om du vill ladda det krypterade PDF-dokumentet med ett lösenord måste du använda`PdfLoadOptions` klass och ange lösenordet när du laddar dokumentet:
+Men om du vill ladda det krypterade PDF-dokumentet med ett lösenord måste du använda`PdfLoadOptions` klass och ange lösenordet när du laddar dokumentet:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadFormat = LoadFormat.Pdf };

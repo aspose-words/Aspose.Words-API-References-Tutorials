@@ -26,9 +26,9 @@ DocumentBuilder builder = new DocumentBuilder();
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Schritt 3: Anpassen des Bullet-Formats
+## Schritt 3: Anpassen des Aufzählungsformats
 
- Wir können das Aufzählungsformat anpassen, indem wir auf die Eigenschaften von zugreifen`ListFormat.List.ListLevels[0]`. In diesem Beispiel verwenden wir den Bindestrich „-“ als Aufzählungszeichen.
+Wir können das Aufzählungsformat anpassen, indem wir auf die Eigenschaften von zugreifen`ListFormat.List.ListLevels[0]`. In diesem Beispiel verwenden wir den Bindestrich „-“ als Aufzählungszeichen.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
