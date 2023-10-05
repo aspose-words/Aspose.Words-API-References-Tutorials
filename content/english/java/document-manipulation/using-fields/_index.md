@@ -90,7 +90,7 @@ This code formats rows in a table with alternating colors based on the `CompanyN
 ## Complete Source Code For Using Fields in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Mail merge destinations - Fax.docx");
+	Document doc = new Document("Your Directory Path" + "Mail merge destinations - Fax.docx");
 	// Setup mail merge event handler to do the custom work.
 	doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
 	// Trim trailing and leading whitespaces mail merge values.
@@ -104,7 +104,7 @@ This code formats rows in a table with alternating colors based on the `CompanyN
 		"<b>HTML Body Test message 1</b>", true, false, true
 	};
 	doc.getMailMerge().execute(fieldNames, fieldValues);
-	doc.save(getArtifactsDir() + "WorkingWithFields.MailMergeFormFields.docx");
+	doc.save("Your Directory Path" + "WorkingWithFields.MailMergeFormFields.docx");
 }
 private static class HandleMergeField implements IFieldMergingCallback
 {
@@ -165,7 +165,7 @@ public void mailMergeImageField() throws Exception
 			| MailMergeCleanupOptions.REMOVE_UNUSED_FIELDS);
 	doc.getMailMerge().setFieldMergingCallback(new ImageFieldMergingHandler());
 	doc.getMailMerge().executeWithRegions(new DataSourceRoot());
-	doc.save(getArtifactsDir() + "WorkingWithFields.MailMergeImageField.docx");
+	doc.save("Your Directory Path" + "WorkingWithFields.MailMergeImageField.docx");
 }
 private static class ImageFieldMergingHandler implements IFieldMergingCallback
 {
@@ -179,7 +179,7 @@ private static class ImageFieldMergingHandler implements IFieldMergingCallback
 		{
 			shape.setWidth(126.0); shape.setHeight(126.0); shape.setWrapType(WrapType.SQUARE);
 		}
-		shape.getImageData().setImage(getMyDir() + "Mail merge image.png");
+		shape.getImageData().setImage("Your Directory Path" + "Mail merge image.png");
 		args.setShape(shape);
 	}
 }
@@ -236,12 +236,12 @@ public void mailMergeAndConditionalField() throws Exception
 	doc.getMailMerge().execute(dataTable);
 	// The result will not be visible in the document because the IF field is false,
 	// but the inner MERGEFIELD did indeed receive data.
-	doc.save(getArtifactsDir() + "WorkingWithFields.MailMergeAndConditionalField.docx");
+	doc.save("Your Directory Path" + "WorkingWithFields.MailMergeAndConditionalField.docx");
 }
 @Test
 public void mailMergeImageFromBlob() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Mail merge destination - Northwind employees.docx");
+	Document doc = new Document("Your Directory Path" + "Mail merge destination - Northwind employees.docx");
 	doc.getMailMerge().setFieldMergingCallback(new HandleMergeImageFieldFromBlob());
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 	String connString = "jdbc:ucanaccess://" + getDatabaseDir() + "Northwind.mdb";
@@ -252,7 +252,7 @@ public void mailMergeImageFromBlob() throws Exception
 	IDataReader dataReader = new DataTableReader(dataTable);
 	doc.getMailMerge().executeWithRegions(dataReader, "Employees");
 	connection.close();
-	doc.save(getArtifactsDir() + "WorkingWithFields.MailMergeImageFromBlob.docx");
+	doc.save("Your Directory Path" + "WorkingWithFields.MailMergeImageFromBlob.docx");
 }
 public static class HandleMergeImageFieldFromBlob implements IFieldMergingCallback
 {
@@ -275,11 +275,11 @@ public static class HandleMergeImageFieldFromBlob implements IFieldMergingCallba
 @Test
 public void handleMailMergeSwitches() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Field sample - MERGEFIELD.docx");
+	Document doc = new Document("Your Directory Path" + "Field sample - MERGEFIELD.docx");
 	doc.getMailMerge().setFieldMergingCallback(new MailMergeSwitches());
 	final String HTML = "<html>\r\n                    <h1>Hello world!</h1>\r\n            </html>";
 	doc.getMailMerge().execute(new String[] { "htmlField1" }, new Object[] { HTML });
-	doc.save(getArtifactsDir() + "WorkingWithFields.HandleMailMergeSwitches.docx");
+	doc.save("Your Directory Path" + "WorkingWithFields.HandleMailMergeSwitches.docx");
 }
 public static class MailMergeSwitches implements IFieldMergingCallback
 {
@@ -305,11 +305,11 @@ public static class MailMergeSwitches implements IFieldMergingCallback
 @Test
 public void alternatingRows() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Mail merge destination - Northwind suppliers.docx");
+	Document doc = new Document("Your Directory Path" + "Mail merge destination - Northwind suppliers.docx");
 	doc.getMailMerge().setFieldMergingCallback(new HandleMergeFieldAlternatingRows());
 	DataTable dataTable = getSuppliersDataTable();
 	doc.getMailMerge().executeWithRegions(dataTable);
-	doc.save(getArtifactsDir() + "WorkingWithFields.AlternatingRows.doc");
+	doc.save("Your Directory Path" + "WorkingWithFields.AlternatingRows.doc");
 }
 private static class HandleMergeFieldAlternatingRows implements IFieldMergingCallback
 {

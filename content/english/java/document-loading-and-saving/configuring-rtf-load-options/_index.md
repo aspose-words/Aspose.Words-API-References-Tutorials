@@ -32,20 +32,20 @@ Here, `loadOptions` is an instance of `RtfLoadOptions`, and we've used the `setR
 Now that we have configured our load options, we can load an RTF document using the specified options. In this example, we load a document named "UTF-8 characters.rtf" from a specific directory:
 
 ```java
-Document doc = new Document(getMyDir() + "UTF-8 characters.rtf", loadOptions);
+Document doc = new Document("Your Directory Path" + "UTF-8 characters.rtf", loadOptions);
 ```
 
-Make sure to replace `getMyDir()` with the appropriate path to your document directory.
+Make sure to replace `"Your Directory Path"` with the appropriate path to your document directory.
 
 ## Step 3: Saving the Document
 
 After loading the RTF document, you can perform various operations on it using Aspose.Words. Once you are done, save the modified document using the following code:
 
 ```java
-doc.save(getArtifactsDir() + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
+doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 ```
 
-Replace `getArtifactsDir()` with the path where you want to save the modified document.
+Replace `"Your Directory Path"` with the path where you want to save the modified document.
 
 ## Complete Source Code For Configuring RTF Load Options in Aspose.Words for Java
 
@@ -54,8 +54,8 @@ RtfLoadOptions loadOptions = new RtfLoadOptions();
 {
 	loadOptions.setRecognizeUtf8Text(true);
 }
-Document doc = new Document(getMyDir() + "UTF-8 characters.rtf", loadOptions);
-doc.save(getArtifactsDir() + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
+Document doc = new Document("Your Directory Path" + "UTF-8 characters.rtf", loadOptions);
+doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 ```
 
 ## Conclusion

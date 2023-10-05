@@ -85,7 +85,7 @@ To clone a section, you can use the following code:
 ```java
 @Test
 public void cloneSection() throws Exception {
-    Document doc = new Document(getMyDir() + "Document.docx");
+    Document doc = new Document("Your Directory Path" + "Document.docx");
     Section cloneSection = doc.getSections().get(0).deepClone();
 }
 ```

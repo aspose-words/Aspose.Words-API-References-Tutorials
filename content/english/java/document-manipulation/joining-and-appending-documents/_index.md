@@ -119,17 +119,17 @@ dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ## Complete Source Code For Joining and Appending Documents in Aspose.Words for Java
 
 ```java
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Append the source document to the destination document using no extra options.
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.SimpleAppendDocument.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.SimpleAppendDocument.docx");
 }
 @Test
 public void appendDocument() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Loop through all sections in the source document.
 	// Section nodes are immediate children of the Document node so we can just enumerate the Document.
 	for (Section srcSection : srcDoc.getSections())
@@ -144,25 +144,25 @@ public void appendDocument() throws Exception
 		// Now the new section node can be appended to the destination document.
 		dstDoc.appendChild(dstSection);
 	}
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.AppendDocument.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.AppendDocument.docx");
 }
 @Test
 public void appendDocumentToBlank() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
 	Document dstDoc = new Document();
 	// The destination document is not empty, often causing a blank page to appear before the appended document.
 	// This is due to the base document having an empty section and the new document being started on the next page.
 	// Remove all content from the destination document before appending.
 	dstDoc.removeAllChildren();
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
 }
 @Test
 public void appendWithImportFormatOptions() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source with list.docx");
-	Document dstDoc = new Document(getMyDir() + "Document destination with list.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source with list.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Document destination with list.docx");
 	// Specify that if numbering clashes in source and destination documents,
 	// then numbering from the source document will be used.
 	ImportFormatOptions options = new ImportFormatOptions(); { options.setKeepSourceNumbering(true); }
@@ -171,8 +171,8 @@ public void appendWithImportFormatOptions() throws Exception
 @Test
 public void convertNumPageFields() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Restart the page numbering on the start of the source document.
 	srcDoc.getFirstSection().getPageSetup().setRestartPageNumbering(true);
 	srcDoc.getFirstSection().getPageSetup().setPageStartingNumber(1);
@@ -183,7 +183,7 @@ public void convertNumPageFields() throws Exception
 	convertNumPageFieldsToPageRef(dstDoc);
 	// This needs to be called in order to update the new fields with page numbers.
 	dstDoc.updatePageLayout();
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.ConvertNumPageFields.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.ConvertNumPageFields.docx");
 }
 private void convertNumPageFieldsToPageRef(Document doc) throws Exception
 {
@@ -290,8 +290,8 @@ private String getFieldCode(FieldStart fieldStart)
 @Test
 public void differentPageSetup() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Set the source document to continue straight after the end of the destination document.
 	srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);
 	// Restart the page numbering on the start of the source document.
@@ -310,29 +310,29 @@ public void differentPageSetup() throws Exception
 		para.getParagraphFormat().setKeepWithNext(true);
 	}
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.DifferentPageSetup.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 }
 @Test
 public void joinContinuous() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Make the document appear straight after the destination documents content.
 	srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);
 	// Append the source document using the original styles found in the source document.
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.JoinContinuous.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.JoinContinuous.docx");
 }
 @Test
 public void joinNewPage() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Set the appended document to start on a new page.
 	srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.NEW_PAGE);
 	// Append the source document using the original styles found in the source document.
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.JoinNewPage.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.JoinNewPage.docx");
 }
 @Test
 public void keepSourceFormatting() throws Exception
@@ -344,13 +344,13 @@ public void keepSourceFormatting() throws Exception
 	// Append the source document to the destination document.
 	// Pass format mode to retain the original formatting of the source document when importing it.
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 }
 @Test
 public void keepSourceTogether() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Document destination with list.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Document destination with list.docx");
 	// Set the source document to appear straight after the destination document's content.
 	srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);
 	for (Paragraph para : (Iterable<Paragraph>) srcDoc.getChildNodes(NodeType.PARAGRAPH, true))
@@ -358,23 +358,23 @@ public void keepSourceTogether() throws Exception
 		para.getParagraphFormat().setKeepWithNext(true);
 	}
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.KeepSourceTogether.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 }        
 @Test
 public void listKeepSourceFormatting() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Document destination with list.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Document destination with list.docx");
 	// Append the content of the document so it flows continuously.
 	srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 }
 @Test
 public void listUseDestinationStyles() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Document destination with list.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Document destination with list.docx");
 	// Set the source document to continue straight after the end of the destination document.
 	srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);
 	// Keep track of the lists that are created.
@@ -408,23 +408,23 @@ public void listUseDestinationStyles() throws Exception
 	}
 	// Append the source document to end of the destination document.
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.USE_DESTINATION_STYLES);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
 }
 @Test
 public void restartPageNumbering() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.NEW_PAGE);
 	srcDoc.getFirstSection().getPageSetup().setRestartPageNumbering(true);
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.RestartPageNumbering.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.RestartPageNumbering.docx");
 }
 @Test
 public void updatePageLayout() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// If the destination document is rendered to PDF, image etc.
 	// or UpdatePageLayout is called before the source document. Is appended,
 	// then any changes made after will not be reflected in the rendered output
@@ -433,45 +433,45 @@ public void updatePageLayout() throws Exception
 	// For the changes to be updated to rendered output, UpdatePageLayout must be called again.
 	// If not called again, the appended document will not appear in the output of the next rendering.
 	dstDoc.updatePageLayout();
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.UpdatePageLayout.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 }
 @Test
 public void useDestinationStyles() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Append the source document using the styles of the destination document.
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.USE_DESTINATION_STYLES);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.UseDestinationStyles.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 }
 @Test
 public void smartStyleBehavior() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	DocumentBuilder builder = new DocumentBuilder(dstDoc);
 	builder.moveToDocumentEnd();
 	builder.insertBreak(BreakType.PAGE_BREAK);
 	ImportFormatOptions options = new ImportFormatOptions(); { options.setSmartStyleBehavior(true); }
 	builder.insertDocument(srcDoc, ImportFormatMode.USE_DESTINATION_STYLES, options);
-	builder.getDocument().save(getArtifactsDir() + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
+	builder.getDocument().save("Your Directory Path" + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
 }
 @Test
 public void insertDocumentWithBuilder() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	DocumentBuilder builder = new DocumentBuilder(dstDoc);
 	builder.moveToDocumentEnd();
 	builder.insertBreak(BreakType.PAGE_BREAK);
 	builder.insertDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	builder.getDocument().save(getArtifactsDir() + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
+	builder.getDocument().save("Your Directory Path" + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 }
 @Test
 public void keepSourceNumbering() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Keep source list formatting when importing numbered paragraphs.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions(); { importFormatOptions.setKeepSourceNumbering(true); }
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING,
@@ -482,13 +482,13 @@ public void keepSourceNumbering() throws Exception
 		Node importedNode = importer.importNode(srcPara, false);
 		dstDoc.getFirstSection().getBody().appendChild(importedNode);
 	}
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 }
 @Test
 public void ignoreTextBoxes() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Keep the source text boxes formatting when importing.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions(); { importFormatOptions.setIgnoreTextBoxes(false); }
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING,
@@ -499,35 +499,35 @@ public void ignoreTextBoxes() throws Exception
 		Node importedNode = importer.importNode(srcPara, true);
 		dstDoc.getFirstSection().getBody().appendChild(importedNode);
 	}
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 }
 @Test
 public void ignoreHeaderFooter() throws Exception
 {
-	Document srcDocument = new Document(getMyDir() + "Document source.docx");
-	Document dstDocument = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDocument = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDocument = new Document("Your Directory Path" + "Northwind traders.docx");
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions(); { importFormatOptions.setIgnoreHeaderFooter(false); }
 	dstDocument.appendDocument(srcDocument, ImportFormatMode.KEEP_SOURCE_FORMATTING, importFormatOptions);
-	dstDocument.save(getArtifactsDir() + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
+	dstDocument.save("Your Directory Path" + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 }
 @Test
 public void linkHeadersFooters() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Set the appended document to appear on a new page.
 	srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.NEW_PAGE);
 	// Link the headers and footers in the source document to the previous section.
 	// This will override any headers or footers already found in the source document.
 	srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(true);
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 }
 @Test
 public void removeSourceHeadersFooters() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Remove the headers and footers from each of the sections in the source document.
 	for (Section section : (Iterable<Section>) srcDoc.getSections())
 	{
@@ -538,18 +538,18 @@ public void removeSourceHeadersFooters() throws Exception
 	// document. This should set to false to avoid this behavior.
 	srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(false);
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 }
 @Test
 public void unlinkHeadersFooters() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Document source.docx");
-	Document dstDoc = new Document(getMyDir() + "Northwind traders.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Document source.docx");
+	Document dstDoc = new Document("Your Directory Path" + "Northwind traders.docx");
 	// Unlink the headers and footers in the source document to stop this
 	// from continuing the destination document's headers and footers.
 	srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(false);
 	dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-	dstDoc.save(getArtifactsDir() + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
+	dstDoc.save("Your Directory Path" + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
 ## Conclusion

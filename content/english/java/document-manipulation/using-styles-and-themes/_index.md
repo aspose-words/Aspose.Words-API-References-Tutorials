@@ -47,9 +47,9 @@ To copy styles from one document to another, you can use the `copyStylesFromTemp
 public void copyStyles() throws Exception
 {
     Document doc = new Document();
-    Document target = new Document(getMyDir() + "Rendering.docx");
+    Document target = new Document("Your Directory Path" + "Rendering.docx");
     target.copyStylesFromTemplate(doc);
-    doc.save(getArtifactsDir() + "WorkingWithStylesAndThemes.CopyStyles.docx");
+    doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.CopyStyles.docx");
 }
 ```
 
@@ -103,7 +103,7 @@ public void insertStyleSeparator() throws Exception
     // Append text with another style.
     builder.getParagraphFormat().setStyleName(paraStyle.getName());
     builder.write("This is text with some other formatting ");
-    doc.save(getArtifactsDir() + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
+    doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 }
 ```
 
@@ -134,9 +134,9 @@ In this code, we create a custom paragraph style and insert a style separator to
 public void copyStyles() throws Exception
 {
 	Document doc = new Document();
-	Document target = new Document(getMyDir() + "Rendering.docx");
+	Document target = new Document("Your Directory Path" + "Rendering.docx");
 	target.copyStylesFromTemplate(doc);
-	doc.save(getArtifactsDir() + "WorkingWithStylesAndThemes.CopyStyles.docx");
+	doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.CopyStyles.docx");
 }
 @Test
 public void getThemeProperties() throws Exception
@@ -171,7 +171,7 @@ public void insertStyleSeparator() throws Exception
 	// Append text with another style.
 	builder.getParagraphFormat().setStyleName(paraStyle.getName());
 	builder.write("This is text with some other formatting ");
-	doc.save(getArtifactsDir() + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
+	doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 ```
 
 ## Conclusion
@@ -210,7 +210,7 @@ public void insertStyleSeparator() throws Exception
     // Append text with another style.
     builder.getParagraphFormat().setStyleName(paraStyle.getName());
     builder.write("This is text with some other formatting ");
-    doc.save(getArtifactsDir() + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
+    doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 }
 ```
 

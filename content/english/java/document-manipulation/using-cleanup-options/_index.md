@@ -47,7 +47,7 @@ In this example, we create a new document, insert merge fields, and set the clea
 ## Step 2: Removing Unmerged Regions
 
 ```java
-Document doc = new Document(getMyDir() + "Mail merge destination - Northwind suppliers.docx");
+Document doc = new Document("Your Directory Path" + "Mail merge destination - Northwind suppliers.docx");
 DataSet data = new DataSet();
 
 // Set cleanup options to remove unused regions
@@ -65,7 +65,7 @@ In this example, we open an existing document with merge regions, set the cleanu
 ## Step 3: Removing Empty Fields
 
 ```java
-Document doc = new Document(getMyDir() + "Table with fields.docx");
+Document doc = new Document("Your Directory Path" + "Table with fields.docx");
 
 // Set cleanup options to remove empty fields
 doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_EMPTY_FIELDS);
@@ -83,7 +83,7 @@ In this example, we open a document with merge fields, set the cleanup options t
 ## Step 4: Removing Unused Fields
 
 ```java
-Document doc = new Document(getMyDir() + "Table with fields.docx");
+Document doc = new Document("Your Directory Path" + "Table with fields.docx");
 
 // Set cleanup options to remove unused fields
 doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_UNUSED_FIELDS);
@@ -101,7 +101,7 @@ In this example, we open a document with merge fields, set the cleanup options t
 ## Step 5: Removing Containing Fields
 
 ```java
-Document doc = new Document(getMyDir() + "Table with fields.docx");
+Document doc = new Document("Your Directory Path" + "Table with fields.docx");
 
 // Set cleanup options to remove containing fields
 doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS);
@@ -119,7 +119,7 @@ In this example, we open a document with merge fields, set the cleanup options t
 ## Step 6: Removing Empty Table Rows
 
 ```java
-Document doc = new Document(getMyDir() + "Table with fields.docx");
+Document doc = new Document("Your Directory Path" + "Table with fields.docx");
 
 // Set cleanup options to remove empty table rows
 doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_EMPTY_TABLE_ROWS);
@@ -137,13 +137,13 @@ In this example, we open a document with a table and merge fields, set the clean
 ## Complete Source Code For Using Cleanup Options in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Mail merge destination - Northwind suppliers.docx");
+	Document doc = new Document("Your Directory Path" + "Mail merge destination - Northwind suppliers.docx");
 	DataSet data = new DataSet();
 	doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS |
 								   MailMergeCleanupOptions.REMOVE_EMPTY_TABLE_ROWS);
 	doc.getMailMerge().setMergeDuplicateRegions(true);
 	doc.getMailMerge().executeWithRegions(data);
-	doc.save(getArtifactsDir() + "WorkingWithCleanupOptions.RemoveRowsFromTable.docx");
+	doc.save("Your Directory Path" + "WorkingWithCleanupOptions.RemoveRowsFromTable.docx");
 }
 @Test
 public void cleanupParagraphsWithPunctuationMarks() throws Exception
@@ -161,12 +161,12 @@ public void cleanupParagraphsWithPunctuationMarks() throws Exception
 	// If you rely on the old behavior can revert it by setting the option to false.
 	doc.getMailMerge().setCleanupParagraphsWithPunctuationMarks(true);
 	doc.getMailMerge().execute(new String[] { "Option_1", "Option_2" }, new Object[] { null, null });
-	doc.save(getArtifactsDir() + "WorkingWithCleanupOptions.CleanupParagraphsWithPunctuationMarks.docx");
+	doc.save("Your Directory Path" + "WorkingWithCleanupOptions.CleanupParagraphsWithPunctuationMarks.docx");
 }
 @Test
 public void removeUnmergedRegions() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Mail merge destination - Northwind suppliers.docx");
+	Document doc = new Document("Your Directory Path" + "Mail merge destination - Northwind suppliers.docx");
 	DataSet data = new DataSet();
 	doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS);
 	// doc.MailMerge.CleanupOptions = MailMergeCleanupOptions.RemoveContainingFields;
@@ -176,43 +176,43 @@ public void removeUnmergedRegions() throws Exception
 	// Merge the data with the document by executing mail merge which will have no effect as there is no data.
 	// However the regions found in the document will be removed automatically as they are unused.
 	doc.getMailMerge().executeWithRegions(data);
-	doc.save(getArtifactsDir() + "WorkingWithCleanupOptions.RemoveUnmergedRegions.docx");
+	doc.save("Your Directory Path" + "WorkingWithCleanupOptions.RemoveUnmergedRegions.docx");
 }
 @Test
 public void removeEmptyParagraphs() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Table with fields.docx");
+	Document doc = new Document("Your Directory Path" + "Table with fields.docx");
 	doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_EMPTY_PARAGRAPHS);
 	doc.getMailMerge().execute(new String[] { "FullName", "Company", "Address", "Address2", "City" },
 		new Object[] { "James Bond", "MI5 Headquarters", "Milbank", "", "London" });
-	doc.save(getArtifactsDir() + "WorkingWithCleanupOptions.RemoveEmptyParagraphs.docx");
+	doc.save("Your Directory Path" + "WorkingWithCleanupOptions.RemoveEmptyParagraphs.docx");
 }
 @Test
 public void removeUnusedFields() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Table with fields.docx");
+	Document doc = new Document("Your Directory Path" + "Table with fields.docx");
 	doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_UNUSED_FIELDS);
 	doc.getMailMerge().execute(new String[] { "FullName", "Company", "Address", "Address2", "City" },
 		new Object[] { "James Bond", "MI5 Headquarters", "Milbank", "", "London" });
-	doc.save(getArtifactsDir() + "WorkingWithCleanupOptions.RemoveUnusedFields.docx");
+	doc.save("Your Directory Path" + "WorkingWithCleanupOptions.RemoveUnusedFields.docx");
 }
 @Test
 public void removeContainingFields() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Table with fields.docx");
+	Document doc = new Document("Your Directory Path" + "Table with fields.docx");
 	doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS);
 	doc.getMailMerge().execute(new String[] { "FullName", "Company", "Address", "Address2", "City" },
 		new Object[] { "James Bond", "MI5 Headquarters", "Milbank", "", "London" });
-	doc.save(getArtifactsDir() + "WorkingWithCleanupOptions.RemoveContainingFields.docx");
+	doc.save("Your Directory Path" + "WorkingWithCleanupOptions.RemoveContainingFields.docx");
 }
 @Test
 public void removeEmptyTableRows() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Table with fields.docx");
+	Document doc = new Document("Your Directory Path" + "Table with fields.docx");
 	doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_EMPTY_TABLE_ROWS);
 	doc.getMailMerge().execute(new String[] { "FullName", "Company", "Address", "Address2", "City" },
 		new Object[] { "James Bond", "MI5 Headquarters", "Milbank", "", "London" });
-	doc.save(getArtifactsDir() + "WorkingWithCleanupOptions.RemoveEmptyTableRows.docx");
+	doc.save("Your Directory Path" + "WorkingWithCleanupOptions.RemoveEmptyTableRows.docx");
 ```
 
 ## Conclusion

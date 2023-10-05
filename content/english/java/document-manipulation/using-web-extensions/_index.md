@@ -56,7 +56,7 @@ taskPane.getWebExtension().getBindings().add(new WebExtensionBinding("UnnamedBin
 ## Step 5: Save the document:
 
 ```java
-doc.save(getArtifactsDir() + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
+doc.save("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
 ## Retrieving Task Pane Information
@@ -64,7 +64,7 @@ doc.save(getArtifactsDir() + "WorkingWithWebExtension.UsingWebExtensionTaskPanes
 To retrieve information about the task panes in the document, you can iterate through them and access their references:
 
 ```java
-doc = new Document(getArtifactsDir() + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
+doc = new Document("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 System.out.println("Task panes sources:\n");
 for (TaskPane taskPaneInfo : doc.getWebExtensionTaskPanes())
 {
@@ -91,8 +91,8 @@ taskPane.getWebExtension().getReference().setStore("th-TH");
 taskPane.getWebExtension().getProperties().add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
 taskPane.getWebExtension().getBindings().add(new WebExtensionBinding("UnnamedBinding_0_1506535429545",
 	WebExtensionBindingType.TEXT, "194740422"));
-doc.save(getArtifactsDir() + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-doc = new Document(getArtifactsDir() + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
+doc.save("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
+doc = new Document("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 System.out.println("Task panes sources:\n");
 for (TaskPane taskPaneInfo : doc.getWebExtensionTaskPanes())
 {

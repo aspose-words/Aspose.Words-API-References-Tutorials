@@ -17,7 +17,7 @@ Before we dive into the removal techniques, let's briefly introduce Aspose.Words
 Page breaks are often used to control the layout of a document. However, there might be cases where you need to remove them. Here's how you can remove page breaks using Aspose.Words for Java:
 
 ```java
-Document doc = new Document(getMyDir() + "Document.docx");
+Document doc = new Document("Your Directory Path" + "Document.docx");
 NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
 for (Paragraph para : (Iterable<Paragraph>) paragraphs) {
     if (para.getParagraphFormat().getPageBreakBefore()) {
@@ -29,7 +29,7 @@ for (Paragraph para : (Iterable<Paragraph>) paragraphs) {
         }
     }
 }
-doc.save(getArtifactsDir() + "RemoveContent.RemovePageBreaks.docx");
+doc.save("Your Directory Path" + "RemoveContent.RemovePageBreaks.docx");
 ```
 
 This code snippet will iterate through paragraphs in the document, checking for page breaks and removing them.
@@ -52,7 +52,7 @@ This code iterates through sections in reverse order, combining the content of t
 Footers in Word documents often contain page numbers, dates, or other information. If you need to remove them, you can use the following code:
 
 ```java
-Document doc = new Document(getMyDir() + "Header and footer types.docx");
+Document doc = new Document("Your Directory Path" + "Header and footer types.docx");
 for (Section section : doc.getSections()) {
     HeaderFooter footer = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_FIRST);
     footer.remove();
@@ -61,7 +61,7 @@ for (Section section : doc.getSections()) {
     footer = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_EVEN);
     footer.remove();
 }
-doc.save(getArtifactsDir() + "RemoveContent.RemoveFooters.docx");
+doc.save("Your Directory Path" + "RemoveContent.RemoveFooters.docx");
 ```
 
 This code removes all types of footers (first, primary, and even) from each section in the document.
@@ -71,9 +71,9 @@ This code removes all types of footers (first, primary, and even) from each sect
 Table of contents (TOC) fields generate a dynamic table that lists headings and their page numbers. To remove a TOC, you can use the following code:
 
 ```java
-Document doc = new Document(getMyDir() + "Table of contents.docx");
+Document doc = new Document("Your Directory Path" + "Table of contents.docx");
 removeTableOfContents(doc, 0);
-doc.save(getArtifactsDir() + "RemoveContent.RemoveToc.doc");
+doc.save("Your Directory Path" + "RemoveContent.RemoveToc.doc");
 ```
 
 This code defines a method `removeTableOfContents` that removes the specified TOC from the document.
@@ -81,12 +81,12 @@ This code defines a method `removeTableOfContents` that removes the specified TO
 ## Complete Source Code For Removing Content from Documents in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Document.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx");
 	// In Aspose.Words section breaks are represented as separate Section nodes in the document.
 	// To remove these separate sections, the sections are combined.
 	removePageBreaks(doc);
 	removeSectionBreaks(doc);
-	doc.save(getArtifactsDir() + "RemoveContent.RemovePageBreaks.docx");
+	doc.save("Your Directory Path" + "RemoveContent.RemovePageBreaks.docx");
 }
 private void removePageBreaks(Document doc)
 {
@@ -118,7 +118,7 @@ private void removeSectionBreaks(Document doc)
 @Test
 public void removeFooters() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Header and footer types.docx");
+	Document doc = new Document("Your Directory Path" + "Header and footer types.docx");
 	for (Section section : doc.getSections())
 	{
 		// Up to three different footers are possible in a section (for first, even and odd pages)
@@ -131,15 +131,15 @@ public void removeFooters() throws Exception
 		footer = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_EVEN);
 		footer.remove();
 	}
-	doc.save(getArtifactsDir() + "RemoveContent.RemoveFooters.docx");
+	doc.save("Your Directory Path" + "RemoveContent.RemoveFooters.docx");
 }
 @Test
 public void removeToc() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Table of contents.docx");
+	Document doc = new Document("Your Directory Path" + "Table of contents.docx");
 	// Remove the first table of contents from the document.
 	removeTableOfContents(doc, 0);
-	doc.save(getArtifactsDir() + "RemoveContent.RemoveToc.doc");
+	doc.save("Your Directory Path" + "RemoveContent.RemoveToc.doc");
 }
 /// <summary>
 /// Removes the specified table of contents field from the document.

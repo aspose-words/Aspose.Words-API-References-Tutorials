@@ -90,7 +90,7 @@ Apply Metered license
         {
             Metered metered = new Metered();
             metered.setMeteredKey("### ***", "***");
-            Document doc = new Document(getMyDir() + "Document.docx");
+            Document doc = new Document("Your Directory Path" + "Document.docx");
             System.out.println(doc.getPageCount());
         }
         catch (Exception e)

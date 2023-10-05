@@ -33,7 +33,7 @@ builder.endBookmark("My Bookmark");
 You can access bookmarks in a document using their index or name. Here's how:
 
 ```java
-Document doc = new Document(getMyDir() + "Bookmarks.docx");
+Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 
 // By index:
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
@@ -47,7 +47,7 @@ Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 To update bookmark data, use the following code:
 
 ```java
-Document doc = new Document(getMyDir() + "Bookmarks.docx");
+Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 Bookmark bookmark = doc.getRange().getBookmarks().get("MyBookmark1");
 String name = bookmark.getName();
 String text = bookmark.getText();
@@ -60,12 +60,12 @@ bookmark.setText("This is new bookmarked text.");
 You can copy bookmarked text and add it to another document. Here's how:
 
 ```java
-Document srcDoc = new Document(getMyDir() + "Bookmarks.docx");
+Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");
 Bookmark srcBookmark = srcDoc.getRange().getBookmarks().get("MyBookmark1");
 Document dstDoc = new Document();
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 appendBookmarkedText(importer, srcBookmark, dstDoc.getLastSection().getBody());
-dstDoc.save(getArtifactsDir() + "WorkingWithBookmarks.CopyBookmarkedText.docx");
+dstDoc.save("Your Directory Path" + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
 ## Step 5: Show and Hide Bookmarks
@@ -73,9 +73,9 @@ dstDoc.save(getArtifactsDir() + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 You can show or hide bookmarks in a document. Here's an example:
 
 ```java
-Document doc = new Document(getMyDir() + "Bookmarks.docx");
+Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 showHideBookmarkedContent(doc, "MyBookmark1", false);
-doc.save(getArtifactsDir() + "WorkingWithBookmarks.ShowHideBookmarks.docx");
+doc.save("Your Directory Path" + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
 ## Step 6: Untangling Row Bookmarks
@@ -83,16 +83,16 @@ doc.save(getArtifactsDir() + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 Untangling row bookmarks allows you to work with them more effectively:
 
 ```java
-Document doc = new Document(getMyDir() + "Table column bookmarks.docx");
+Document doc = new Document("Your Directory Path" + "Table column bookmarks.docx");
 untangle(doc);
 deleteRowByBookmark(doc, "ROW2");
-doc.save(getArtifactsDir() + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
+doc.save("Your Directory Path" + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
 ## Complete Source Code For Using Bookmarks in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Bookmarks.docx");
+	Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 	// By index:
 	Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 	// By name:
@@ -101,7 +101,7 @@ doc.save(getArtifactsDir() + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 @Test
 public void updateBookmarkData() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Bookmarks.docx");
+	Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 	Bookmark bookmark = doc.getRange().getBookmarks().get("MyBookmark1");
 	String name = bookmark.getName();
 	String text = bookmark.getText();
@@ -141,7 +141,7 @@ public void bookmarkTableColumns() throws Exception {
 @Test
 public void copyBookmarkedText() throws Exception
 {
-	Document srcDoc = new Document(getMyDir() + "Bookmarks.docx");
+	Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");
 	// This is the bookmark whose content we want to copy.
 	Bookmark srcBookmark = srcDoc.getRange().getBookmarks().get("MyBookmark1");
 	// We will be adding to this document.
@@ -151,7 +151,7 @@ public void copyBookmarkedText() throws Exception
 	// If you import multiple times without a single context, it will result in many styles created.
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 	appendBookmarkedText(importer, srcBookmark, dstNode);
-	dstDoc.save(getArtifactsDir() + "WorkingWithBookmarks.CopyBookmarkedText.docx");
+	dstDoc.save("Your Directory Path" + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 }
 /// <summary>
 /// Copies content of the bookmark and adds it to the end of the specified node.
@@ -199,14 +199,14 @@ public void createBookmark() throws Exception
 	PdfSaveOptions options = new PdfSaveOptions();
 	options.getOutlineOptions().getBookmarksOutlineLevels().add("My Bookmark", 1);
 	options.getOutlineOptions().getBookmarksOutlineLevels().add("Nested Bookmark", 2);
-	doc.save(getArtifactsDir() + "WorkingWithBookmarks.CreateBookmark.pdf", options);
+	doc.save("Your Directory Path" + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 }
 @Test
 public void showHideBookmarks() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Bookmarks.docx");
+	Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 	showHideBookmarkedContent(doc, "MyBookmark1", false);
-	doc.save(getArtifactsDir() + "WorkingWithBookmarks.ShowHideBookmarks.docx");
+	doc.save("Your Directory Path" + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 }
 private void showHideBookmarkedContent(Document doc, String bookmarkName, boolean showHide) throws Exception
 {
@@ -248,7 +248,7 @@ private void showHideBookmarkedContent(Document doc, String bookmarkName, boolea
 @Test
 public void untangleRowBookmarks() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Table column bookmarks.docx");
+	Document doc = new Document("Your Directory Path" + "Table column bookmarks.docx");
 	// This performs the custom task of putting the row bookmark ends into the same row with the bookmark starts.
 	untangle(doc);
 	// Now we can easily delete rows by a bookmark without damaging any other row's bookmarks.
@@ -256,7 +256,7 @@ public void untangleRowBookmarks() throws Exception
 	// This is just to check that the other bookmark was not damaged.
 	if (doc.getRange().getBookmarks().get("ROW1").getBookmarkEnd() == null)
 		throw new Exception("Wrong, the end of the bookmark was deleted.");
-	doc.save(getArtifactsDir() + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
+	doc.save("Your Directory Path" + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 }
 private void untangle(Document doc) throws Exception
 {

@@ -23,7 +23,7 @@ Before we dive into the code and the step-by-step process, make sure you have th
 To begin, you need to load the Word document that you want to save as a PCL file. You can do this using the following code snippet:
 
 ```java
-Document doc = new Document(getMyDir() + "YourDocument.docx");
+Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 ```
 
 Replace `"YourDocument.docx"` with the path to your Word document.
@@ -45,7 +45,7 @@ PclSaveOptions saveOptions = new PclSaveOptions();
 Now that you have loaded your document and configured the PCL save options, it's time to save the document as a PCL file. Use the following code:
 
 ```java
-doc.save(getArtifactsDir() + "YourPCLDocument.pcl", saveOptions);
+doc.save("Your Directory Path" + "YourPCLDocument.pcl", saveOptions);
 ```
 
 Replace `"YourPCLDocument.pcl"` with the desired name for your PCL file.
@@ -53,12 +53,12 @@ Replace `"YourPCLDocument.pcl"` with the desired name for your PCL file.
 ## Complete Source Code For Saving Documents as PCL Format in Aspose.Words for Java
 
 ```java
-Document doc = new Document(getMyDir() + "Rendering.docx");
+Document doc = new Document("Your Directory Path" + "Rendering.docx");
 PclSaveOptions saveOptions = new PclSaveOptions();
 {
 	saveOptions.setSaveFormat(SaveFormat.PCL); saveOptions.setRasterizeTransformedElements(false);
 }
-doc.save(getArtifactsDir() + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
+doc.save("Your Directory Path" + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
 ## Conclusion

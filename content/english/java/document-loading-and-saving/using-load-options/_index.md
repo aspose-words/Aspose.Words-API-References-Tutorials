@@ -1,6 +1,6 @@
 ---
-title: Working with Load Options in Aspose.Words for Java
-linktitle: Working with Load Options in Aspose.Words for Java
+title: Using Load Options in Aspose.Words for Java
+linktitle: Using Load Options in Aspose.Words for Java
 second_title: Aspose.Words Java Document Processing API
 description: Mastering Load Options in Aspose.Words for Java. Customize document loading, handle encryption, convert shapes, set Word versions, and more for efficient Java document processing.
 type: docs
@@ -18,8 +18,8 @@ In this tutorial, we will explore how to work with Load Options in Aspose.Words 
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setUpdateDirtyFields(true);
 
-Document doc = new Document(getMyDir() + "Dirty field.docx", loadOptions);
-doc.save(getArtifactsDir() + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
+Document doc = new Document("Your Directory Path" + "Dirty field.docx", loadOptions);
+doc.save("Your Directory Path" + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 ```
 
 This code snippet demonstrates how to update dirty fields in a document. The `setUpdateDirtyFields(true)` method is used to ensure that dirty fields are updated during document loading.
@@ -29,8 +29,8 @@ This code snippet demonstrates how to update dirty fields in a document. The `se
 ```java
 @Test
 public void loadEncryptedDocument() throws Exception {
-    Document doc = new Document(getMyDir() + "Encrypted.docx", new LoadOptions("docPassword"));
-    doc.save(getArtifactsDir() + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newPassword"));
+    Document doc = new Document("Your Directory Path" + "Encrypted.docx", new LoadOptions("docPassword"));
+    doc.save("Your Directory Path" + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newPassword"));
 }
 ```
 
@@ -42,8 +42,8 @@ Here, we load an encrypted document using a password. The `LoadOptions` construc
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setConvertShapeToOfficeMath(true);
 
-Document doc = new Document(getMyDir() + "Office math.docx", loadOptions);
-doc.save(getArtifactsDir() + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
+doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
 ```
 
 This code demonstrates how to convert shapes to Office Math objects during document loading. The `setConvertShapeToOfficeMath(true)` method enables this conversion.
@@ -56,8 +56,8 @@ public void setMsWordVersion() throws Exception {
     LoadOptions loadOptions = new LoadOptions();
     loadOptions.setMswVersion(MsWordVersion.WORD_2010);
 
-    Document doc = new Document(getMyDir() + "Document.docx", loadOptions);
-    doc.save(getArtifactsDir() + "WorkingWithLoadOptions.SetMsWordVersion.docx");
+    Document doc = new Document("Your Directory Path" + "Document.docx", loadOptions);
+    doc.save("Your Directory Path" + "WorkingWithLoadOptions.SetMsWordVersion.docx");
 }
 ```
 
@@ -69,9 +69,9 @@ You can specify the MS Word version for document loading. In this example, we se
 @Test
 public void useTempFolder() throws Exception {
     LoadOptions loadOptions = new LoadOptions();
-    loadOptions.setTempFolder(getArtifactsDir());
+    loadOptions.setTempFolder("Your Directory Path");
 
-    Document doc = new Document(getMyDir() + "Document.docx", loadOptions);
+    Document doc = new Document("Your Directory Path" + "Document.docx", loadOptions);
 }
 ```
 
@@ -85,7 +85,7 @@ public void warningCallback() throws Exception {
     LoadOptions loadOptions = new LoadOptions();
     loadOptions.setWarningCallback(new DocumentLoadingWarningCallback());
 
-    Document doc = new Document(getMyDir() + "Document.docx", loadOptions);
+    Document doc = new Document("Your Directory Path" + "Document.docx", loadOptions);
 }
 
 public static class DocumentLoadingWarningCallback implements IWarningCallback {
@@ -107,7 +107,7 @@ public void convertMetafilesToPng() throws Exception {
     LoadOptions loadOptions = new LoadOptions();
     loadOptions.setConvertMetafilesToPng(true);
 
-    Document doc = new Document(getMyDir() + "WMF with image.docx", loadOptions);
+    Document doc = new Document("Your Directory Path" + "WMF with image.docx", loadOptions);
 }
 ```
 
@@ -116,17 +116,18 @@ To convert metafiles (e.g., WMF) to PNG images during document loading, you can 
 ## Complete Source Code For Working with Load Options in Aspose.Words for Java
 
 ```java
+public void updateDirtyFields() throws Exception {
 	LoadOptions loadOptions = new LoadOptions();
 	{
 		loadOptions.setUpdateDirtyFields(true);
 	}
-	Document doc = new Document(getMyDir() + "Dirty field.docx", loadOptions);
-	doc.save(getArtifactsDir() + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
+	Document doc = new Document("Your Directory Path" + "Dirty field.docx", loadOptions);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 }
 @Test
 public void loadEncryptedDocument() throws Exception {
-	Document doc = new Document(getMyDir() + "Encrypted.docx", new LoadOptions("docPassword"));
-	doc.save(getArtifactsDir() + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newPassword"));
+	Document doc = new Document("Your Directory Path" + "Encrypted.docx", new LoadOptions("docPassword"));
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newPassword"));
 }
 @Test
 public void convertShapeToOfficeMath() throws Exception {
@@ -134,8 +135,8 @@ public void convertShapeToOfficeMath() throws Exception {
 	{
 		loadOptions.setConvertShapeToOfficeMath(true);
 	}
-	Document doc = new Document(getMyDir() + "Office math.docx", loadOptions);
-	doc.save(getArtifactsDir() + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+	Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
 }
 @Test
 public void setMsWordVersion() throws Exception {
@@ -145,16 +146,16 @@ public void setMsWordVersion() throws Exception {
 	{
 		loadOptions.setMswVersion(MsWordVersion.WORD_2010);
 	}
-	Document doc = new Document(getMyDir() + "Document.docx", loadOptions);
-	doc.save(getArtifactsDir() + "WorkingWithLoadOptions.SetMsWordVersion.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx", loadOptions);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.SetMsWordVersion.docx");
 }
 @Test
 public void useTempFolder() throws Exception {
 	LoadOptions loadOptions = new LoadOptions();
 	{
-		loadOptions.setTempFolder(getArtifactsDir());
+		loadOptions.setTempFolder("Your Directory Path");
 	}
-	Document doc = new Document(getMyDir() + "Document.docx", loadOptions);
+	Document doc = new Document("Your Directory Path" + "Document.docx", loadOptions);
 }
 @Test
 public void warningCallback() throws Exception {
@@ -162,7 +163,7 @@ public void warningCallback() throws Exception {
 	{
 		loadOptions.setWarningCallback(new DocumentLoadingWarningCallback());
 	}
-	Document doc = new Document(getMyDir() + "Document.docx", loadOptions);
+	Document doc = new Document("Your Directory Path" + "Document.docx", loadOptions);
 }
 public static class DocumentLoadingWarningCallback implements IWarningCallback {
 	public void warning(WarningInfo info) {
@@ -177,7 +178,7 @@ public void convertMetafilesToPng() throws Exception {
 	{
 		loadOptions.setConvertMetafilesToPng(true);
 	}
-	Document doc = new Document(getMyDir() + "WMF with image.docx", loadOptions);
+	Document doc = new Document("Your Directory Path" + "WMF with image.docx", loadOptions);
 }
 @Test
 public void loadChm() throws Exception {
@@ -185,7 +186,8 @@ public void loadChm() throws Exception {
 	{
 		loadOptions.setEncoding(Charset.forName("windows-1251"));
 	}
-	Document doc = new Document(getMyDir() + "HTML help.chm", loadOptions);
+	Document doc = new Document("Your Directory Path" + "HTML help.chm", loadOptions);
+}
 ```
 
 ## Conclusion

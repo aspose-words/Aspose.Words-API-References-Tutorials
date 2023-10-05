@@ -47,7 +47,7 @@ groupShape.setCoordSize(new Dimension(200, 200));
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertNode(groupShape);
 
-doc.save(getArtifactsDir() + "WorkingWithShapes.AddGroupShape.docx");
+doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
 ### Inserting a Text Box Shape
@@ -70,7 +70,7 @@ shape.setRotation(30.0);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
-doc.save(getArtifactsDir() + "WorkingWithShapes.InsertShape.docx", saveOptions);
+doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
 ## Manipulating Shape Properties
@@ -86,7 +86,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.insertImage(getImagesDir() + "Transparent background logo.png");
 shape.setAspectRatioLocked(false);
 
-doc.save(getArtifactsDir() + "WorkingWithShapes.AspectRatioLocked.docx");
+doc.save("Your Directory Path" + "WorkingWithShapes.AspectRatioLocked.docx");
 ```
 
 ### Placing a Shape in a Table Cell
@@ -132,7 +132,7 @@ builder.moveTo(run);
 builder.insertNode(watermark);
 
 doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2010);
-doc.save(getArtifactsDir() + "WorkingWithShapes.LayoutInCell.docx");
+doc.save("Your Directory Path" + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
 ## Working with SmartArt Shapes
@@ -142,7 +142,7 @@ doc.save(getArtifactsDir() + "WorkingWithShapes.LayoutInCell.docx");
 You can detect SmartArt shapes in a document using the following code:
 
 ```java
-Document doc = new Document(getMyDir() + "SmartArt.docx");
+Document doc = new Document("Your Directory Path" + "SmartArt.docx");
 List<Shape> shapes = IterableUtils.toList(doc.getChildNodes(NodeType.SHAPE, true));
 int count = (int) shapes.stream().filter(s -> s.hasSmartArt()).count();
 System.out.println("The document has " + count + " shapes with SmartArt.");
@@ -153,7 +153,7 @@ System.out.println("The document has " + count + " shapes with SmartArt.");
 To update SmartArt drawings within a document, use the following code:
 
 ```java
-Document doc = new Document(getMyDir() + "SmartArt.docx");
+Document doc = new Document("Your Directory Path" + "SmartArt.docx");
 for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true)) {
     if (shape.hasSmartArt())
         shape.updateSmartArtDrawing();
@@ -178,7 +178,7 @@ for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true)) {
 	groupShape.setCoordSize(new Dimension(200, 200));
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.insertNode(groupShape);
-	doc.save(getArtifactsDir() + "WorkingWithShapes.AddGroupShape.docx");
+	doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 }
 @Test
 public void insertShape() throws Exception
@@ -195,7 +195,7 @@ public void insertShape() throws Exception
 	{
 		saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 	}
-	doc.save(getArtifactsDir() + "WorkingWithShapes.InsertShape.docx", saveOptions);
+	doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);
 }
 @Test
 public void aspectRatioLocked() throws Exception
@@ -204,7 +204,7 @@ public void aspectRatioLocked() throws Exception
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Shape shape = builder.insertImage(getImagesDir() + "Transparent background logo.png");
 	shape.setAspectRatioLocked(false);
-	doc.save(getArtifactsDir() + "WorkingWithShapes.AspectRatioLocked.docx");
+	doc.save("Your Directory Path" + "WorkingWithShapes.AspectRatioLocked.docx");
 }
 @Test
 public void layoutInCell() throws Exception
@@ -242,7 +242,7 @@ public void layoutInCell() throws Exception
 	builder.moveTo(run);
 	builder.insertNode(watermark);
 	doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2010);
-	doc.save(getArtifactsDir() + "WorkingWithShapes.LayoutInCell.docx");
+	doc.save("Your Directory Path" + "WorkingWithShapes.LayoutInCell.docx");
 }
 @Test
 public void addCornersSnipped() throws Exception
@@ -254,7 +254,7 @@ public void addCornersSnipped() throws Exception
 	{
 		saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 	}
-	doc.save(getArtifactsDir() + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
+	doc.save("Your Directory Path" + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 }
 @Test
 public void getActualShapeBoundsPoints() throws Exception
@@ -275,12 +275,12 @@ public void verticalAnchor() throws Exception
 	textBox.getTextBox().setVerticalAnchor(TextBoxAnchor.BOTTOM);
 	builder.moveTo(textBox.getFirstParagraph());
 	builder.write("Textbox contents");
-	doc.save(getArtifactsDir() + "WorkingWithShapes.VerticalAnchor.docx");
+	doc.save("Your Directory Path" + "WorkingWithShapes.VerticalAnchor.docx");
 }
 @Test
 public void detectSmartArtShape() throws Exception
 {
-	Document doc = new Document(getMyDir() + "SmartArt.docx");
+	Document doc = new Document("Your Directory Path" + "SmartArt.docx");
 	List<Shape> shapes = IterableUtils.toList(doc.getChildNodes(NodeType.SHAPE, true));
 	int count = (int) shapes.stream().filter(s -> s.hasSmartArt()).count();
 	System.out.println(MessageFormat.format("The document has {0} shapes with SmartArt.", count));
@@ -288,7 +288,7 @@ public void detectSmartArtShape() throws Exception
 @Test
 public void updateSmartArtDrawing() throws Exception
 {
-	Document doc = new Document(getMyDir() + "SmartArt.docx");
+	Document doc = new Document("Your Directory Path" + "SmartArt.docx");
 	for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true))
 		if (shape.hasSmartArt())
 			shape.updateSmartArtDrawing();

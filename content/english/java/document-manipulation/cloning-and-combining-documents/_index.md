@@ -17,9 +17,9 @@ In this tutorial, we will explore how to clone and combine documents using Aspos
 To clone a document in Aspose.Words for Java, you can use the `deepClone()` method. Here's a simple example:
 
 ```java
-Document doc = new Document(getMyDir() + "Document.docx");
+Document doc = new Document("Your Directory Path" + "Document.docx");
 Document clone = doc.deepClone();
-clone.save(getArtifactsDir() + "CloneAndCombineDocuments.CloningDocument.docx");
+clone.save("Your Directory Path" + "CloneAndCombineDocuments.CloningDocument.docx");
 ```
 
 This code will create a deep clone of the original document and save it as a new file.
@@ -29,12 +29,12 @@ This code will create a deep clone of the original document and save it as a new
 You can insert documents at specific replace points in another document. Here's how you can do it:
 
 ```java
-Document mainDoc = new Document(getMyDir() + "Document insertion 1.docx");
+Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setDirection(FindReplaceDirection.BACKWARD);
 options.setReplacingCallback(new InsertDocumentAtReplaceHandler());
 mainDoc.getRange().replace(Pattern.compile("\\[MY_DOCUMENT\\]"), "", options);
-mainDoc.save(getArtifactsDir() + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
+mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
 
 In this example, we use a `FindReplaceOptions` object to specify a callback handler for the replacement. The `InsertDocumentAtReplaceHandler` class handles the insertion logic.
@@ -44,11 +44,11 @@ In this example, we use a `FindReplaceOptions` object to specify a callback hand
 To insert a document at a specific bookmark in another document, you can use the following code:
 
 ```java
-Document mainDoc = new Document(getMyDir() + "Document insertion 1.docx");
-Document subDoc = new Document(getMyDir() + "Document insertion 2.docx");
+Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
+Document subDoc = new Document("Your Directory Path" + "Document insertion 2.docx");
 Bookmark bookmark = mainDoc.getRange().getBookmarks().get("insertionPlace");
 insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
-mainDoc.save(getArtifactsDir() + "CloneAndCombineDocuments.InsertDocumentAtBookmark.docx");
+mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtBookmark.docx");
 ```
 
 Here, we find the bookmark by name and use the `insertDocument` method to insert the content of the `subDoc` document at the bookmark location.
@@ -58,10 +58,10 @@ Here, we find the bookmark by name and use the `insertDocument` method to insert
 You can insert documents during a mail merge operation in Aspose.Words for Java. Here's how:
 
 ```java
-Document mainDoc = new Document(getMyDir() + "Document insertion 1.docx");
+Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
 mainDoc.getMailMerge().setFieldMergingCallback(new InsertDocumentAtMailMergeHandler());
-mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { getMyDir() + "Document insertion 2.docx" });
-mainDoc.save(getArtifactsDir() + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
+mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { "Your Directory Path" + "Document insertion 2.docx" });
+mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
 In this example, we set a field merging callback using the `InsertDocumentAtMailMergeHandler` class to handle the insertion of the document specified by the "Document_1" field.
@@ -69,14 +69,14 @@ In this example, we set a field merging callback using the `InsertDocumentAtMail
 ## Complete Source Code For Cloning and Combining Documents in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Document.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx");
 	Document clone = doc.deepClone();
-	clone.save(getArtifactsDir() + "CloneAndCombineDocuments.CloningDocument.docx");
+	clone.save("Your Directory Path" + "CloneAndCombineDocuments.CloningDocument.docx");
 }
 @Test
 public void insertDocumentAtReplace() throws Exception
 {
-	Document mainDoc = new Document(getMyDir() + "Document insertion 1.docx");
+	Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
 	// Set find and replace options.
 	FindReplaceOptions options = new FindReplaceOptions();
 	{
@@ -85,27 +85,27 @@ public void insertDocumentAtReplace() throws Exception
 	}
 	// Call the replace method.
 	mainDoc.getRange().replace(Pattern.compile("\\[MY_DOCUMENT\\]"), "", options);
-	mainDoc.save(getArtifactsDir() + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
+	mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 }
 @Test
 public void insertDocumentAtBookmark() throws Exception
 {
-	Document mainDoc = new Document(getMyDir() + "Document insertion 1.docx");
-	Document subDoc = new Document(getMyDir() + "Document insertion 2.docx");
+	Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
+	Document subDoc = new Document("Your Directory Path" + "Document insertion 2.docx");
 	Bookmark bookmark = mainDoc.getRange().getBookmarks().get("insertionPlace");
 	insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
-	mainDoc.save(getArtifactsDir() + "CloneAndCombineDocuments.InsertDocumentAtBookmark.docx");
+	mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtBookmark.docx");
 }
 @Test
 public void insertDocumentAtMailMerge() throws Exception
 {
-	Document mainDoc = new Document(getMyDir() + "Document insertion 1.docx");
+	Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
 	mainDoc.getMailMerge().setFieldMergingCallback(new InsertDocumentAtMailMergeHandler());
 	// The main document has a merge field in it called "Document_1".
 	// The corresponding data for this field contains a fully qualified path to the document.
 	// That should be inserted to this field.
-	mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { getMyDir() + "Document insertion 2.docx" });
-	mainDoc.save(getArtifactsDir() + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
+	mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { "Your Directory Path" + "Document insertion 2.docx" });
+	mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 }
 /// <summary>
 /// Inserts content of the external document after the specified node.
@@ -239,7 +239,7 @@ private static class InsertDocumentAtReplaceHandler implements IReplacingCallbac
 {
 	public /*ReplaceAction*/int /*IReplacingCallback.*/replacing(ReplacingArgs args) throws Exception
 	{
-		Document subDoc = new Document(getMyDir() + "Document insertion 2.docx");
+		Document subDoc = new Document("Your Directory Path" + "Document insertion 2.docx");
 		// Insert a document after the paragraph, containing the match text.
 		Paragraph para = (Paragraph)args.getMatchNode().getParentNode();
 		insertDocument(para, subDoc);
@@ -260,9 +260,9 @@ Cloning and combining documents in Aspose.Words for Java can be accomplished usi
 You can clone a document in Aspose.Words for Java using the `deepClone()` method. Here's an example:
 
 ```java
-Document doc = new Document(getMyDir() + "Document.docx");
+Document doc = new Document("Your Directory Path" + "Document.docx");
 Document clone = doc.deepClone();
-clone.save(getArtifactsDir() + "ClonedDocument.docx");
+clone.save("Your Directory Path" + "ClonedDocument.docx");
 ```
 
 ### How can I insert a document at a bookmark?
@@ -270,11 +270,11 @@ clone.save(getArtifactsDir() + "ClonedDocument.docx");
 To insert a document at a bookmark in Aspose.Words for Java, you can find the bookmark by name and then use the `insertDocument` method to insert the content. Here's an example:
 
 ```java
-Document mainDoc = new Document(getMyDir() + "MainDocument.docx");
-Document subDoc = new Document(getMyDir() + "SubDocument.docx");
+Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");
+Document subDoc = new Document("Your Directory Path" + "SubDocument.docx");
 Bookmark bookmark = mainDoc.getRange().getBookmarks().get("MyBookmark");
 insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
-mainDoc.save(getArtifactsDir() + "CombinedDocument.docx");
+mainDoc.save("Your Directory Path" + "CombinedDocument.docx");
 ```
 
 ### How do I insert documents during mail merge in Aspose.Words for Java?
@@ -282,10 +282,10 @@ mainDoc.save(getArtifactsDir() + "CombinedDocument.docx");
 You can insert documents during mail merge in Aspose.Words for Java by setting a field merging callback and specifying the document to be inserted. Here's an example:
 
 ```java
-Document mainDoc = new Document(getMyDir() + "MainDocument.docx");
+Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");
 mainDoc.getMailMerge().setFieldMergingCallback(new InsertDocumentAtMailMergeHandler());
-mainDoc.getMailMerge().execute(new String[] { "DocumentField" }, new Object[] { getMyDir() + "DocumentToInsert.docx" });
-mainDoc.save(getArtifactsDir() + "MergedDocument.docx");
+mainDoc.getMailMerge().execute(new String[] { "DocumentField" }, new Object[] { "Your Directory Path" + "DocumentToInsert.docx" });
+mainDoc.save("Your Directory Path" + "MergedDocument.docx");
 ```
 
 In this example, the `InsertDocumentAtMailMergeHandler` class handles the insertion logic for the "DocumentField" during mail merge.

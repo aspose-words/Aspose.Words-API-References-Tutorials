@@ -21,13 +21,13 @@ Before you begin, ensure you have the Aspose.Words for Java library integrated i
 To save images as TIFF format with threshold control, follow these steps:
 
 ```java
-Document doc = new Document(getMyDir() + "Rendering.docx");
+Document doc = new Document("Your Directory Path" + "Rendering.docx");
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
 saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 saveOptions.setImageColorMode(ImageColorMode.GRAYSCALE);
 saveOptions.setTiffBinarizationMethod(ImageBinarizationMethod.FLOYD_STEINBERG_DITHERING);
 saveOptions.setThresholdForFloydSteinbergDithering((byte) 254);
-doc.save(getArtifactsDir() + "ThresholdControlledImage.tiff", saveOptions);
+doc.save("Your Directory Path" + "ThresholdControlledImage.tiff", saveOptions);
 ```
 
 ## Step 2: Saving a Specific Page as Multipage TIFF
@@ -35,12 +35,12 @@ doc.save(getArtifactsDir() + "ThresholdControlledImage.tiff", saveOptions);
 To save a specific page as a multipage TIFF, use the following code:
 
 ```java
-Document doc = new Document(getMyDir() + "Rendering.docx");
+Document doc = new Document("Your Directory Path" + "Rendering.docx");
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
 saveOptions.setPageSet(new PageSet(new PageRange(0, 1)));
 saveOptions.setTiffCompression(TiffCompression.CCITT_4);
 saveOptions.setResolution(160f);
-doc.save(getArtifactsDir() + "SpecificPageMultipage.tiff", saveOptions);
+doc.save("Your Directory Path" + "SpecificPageMultipage.tiff", saveOptions);
 ```
 
 ## Step 3: Saving Images as 1 BPP Indexed PNG
@@ -48,12 +48,12 @@ doc.save(getArtifactsDir() + "SpecificPageMultipage.tiff", saveOptions);
 To save images as 1 BPP indexed PNG, follow these steps:
 
 ```java
-Document doc = new Document(getMyDir() + "Rendering.docx");
+Document doc = new Document("Your Directory Path" + "Rendering.docx");
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
 saveOptions.setPageSet(new PageSet(1));
 saveOptions.setImageColorMode(ImageColorMode.BLACK_AND_WHITE);
 saveOptions.setPixelFormat(ImagePixelFormat.FORMAT_1_BPP_INDEXED);
-doc.save(getArtifactsDir() + "1BPPIndexed.png", saveOptions);
+doc.save("Your Directory Path" + "1BPPIndexed.png", saveOptions);
 ```
 
 ## Step 4: Saving a Page as JPEG with Customization
@@ -61,13 +61,13 @@ doc.save(getArtifactsDir() + "1BPPIndexed.png", saveOptions);
 To save a specific page as JPEG with customization options, use this code:
 
 ```java
-Document doc = new Document(getMyDir() + "Rendering.docx");
+Document doc = new Document("Your Directory Path" + "Rendering.docx");
 ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
 options.setPageSet(new PageSet(0));
 options.setImageBrightness(0.3f);
 options.setImageContrast(0.7f);
 options.setHorizontalResolution(72f);
-doc.save(getArtifactsDir() + "CustomizedJPEG.jpeg", options);
+doc.save("Your Directory Path" + "CustomizedJPEG.jpeg", options);
 ```
 
 ## Step 5: Using Page Saving Callback
@@ -75,17 +75,17 @@ doc.save(getArtifactsDir() + "CustomizedJPEG.jpeg", options);
 You can use a callback to customize page saving. Here's an example:
 
 ```java
-Document doc = new Document(getMyDir() + "Rendering.docx");
+Document doc = new Document("Your Directory Path" + "Rendering.docx");
 ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
 imageSaveOptions.setPageSet(new PageSet(new PageRange(0, doc.getPageCount() - 1)));
 imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
-doc.save(getArtifactsDir() + "PageSavingCallback.png", imageSaveOptions);
+doc.save("Your Directory Path" + "PageSavingCallback.png", imageSaveOptions);
 ```
 
 ```java
 private static class HandlePageSavingCallback implements IPageSavingCallback {
     public void pageSaving(PageSavingArgs args) {
-        args.setPageFileName(MessageFormat.format(getArtifactsDir() + "Page_{0}.png", args.getPageIndex()));
+        args.setPageFileName(MessageFormat.format("Your Directory Path" + "Page_{0}.png", args.getPageIndex()));
     }
 }
 ```
@@ -93,7 +93,9 @@ private static class HandlePageSavingCallback implements IPageSavingCallback {
 ## Complete Source Code For Saving Images from Documents in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Rendering.docx");
+public void exposeThresholdControlForTiffBinarization() throws Exception
+{
+	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
 	{
 		saveOptions.setTiffCompression(TiffCompression.CCITT_3);
@@ -101,35 +103,35 @@ private static class HandlePageSavingCallback implements IPageSavingCallback {
 		saveOptions.setTiffBinarizationMethod(ImageBinarizationMethod.FLOYD_STEINBERG_DITHERING);
 		saveOptions.setThresholdForFloydSteinbergDithering((byte) 254);
 	}
-	doc.save(getArtifactsDir() + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
+	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
 }
 @Test
 public void getTiffPageRange() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Rendering.docx");
-	doc.save(getArtifactsDir() + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
+	Document doc = new Document("Your Directory Path" + "Rendering.docx");
+	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
 	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
 	{
 		saveOptions.setPageSet(new PageSet(new PageRange(0, 1))); saveOptions.setTiffCompression(TiffCompression.CCITT_4); saveOptions.setResolution(160f);
 	}
-	doc.save(getArtifactsDir() + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOptions);
+	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOptions);
 }
 @Test
 public void format1BppIndexed() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Rendering.docx");
+	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
 	{
 		saveOptions.setPageSet(new PageSet(1));
 		saveOptions.setImageColorMode(ImageColorMode.BLACK_AND_WHITE);
 		saveOptions.setPixelFormat(ImagePixelFormat.FORMAT_1_BPP_INDEXED);
 	}
-	doc.save(getArtifactsDir() + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);
+	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);
 }
 @Test
 public void getJpegPageRange() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Rendering.docx");
+	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
 	// Set the "PageSet" to "0" to convert only the first page of a document.
 	options.setPageSet(new PageSet(0));
@@ -140,24 +142,24 @@ public void getJpegPageRange() throws Exception
 	// Change the horizontal resolution.
 	// The default value for these properties is 96.0, for a resolution of 96dpi.
 	options.setHorizontalResolution(72f);
-	doc.save(getArtifactsDir() + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
+	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
 }
 @Test
 public static void pageSavingCallback() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Rendering.docx");
+	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
 	{
 		imageSaveOptions.setPageSet(new PageSet(new PageRange(0, doc.getPageCount() - 1)));
 		imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
 	}
-	doc.save(getArtifactsDir() + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSaveOptions);
+	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSaveOptions);
 }
 private static class HandlePageSavingCallback implements IPageSavingCallback
 {
 	public void pageSaving(PageSavingArgs args)
 	{
-		args.setPageFileName(MessageFormat.format(getArtifactsDir() + "Page_{0}.png", args.getPageIndex()));
+		args.setPageFileName(MessageFormat.format("Your Directory Path" + "Page_{0}.png", args.getPageIndex()));
 	}
 ```
 
@@ -213,7 +215,7 @@ Then, create a class that implements the `IPageSavingCallback` interface and cus
 ```java
 private static class HandlePageSavingCallback implements IPageSavingCallback {
     public void pageSaving(PageSavingArgs args) {
-        args.setPageFileName(MessageFormat.format(getArtifactsDir() + "Page_{0}.png", args.getPageIndex()));
+        args.setPageFileName(MessageFormat.format("Your Directory Path" + "Page_{0}.png", args.getPageIndex()));
     }
 }
 ```

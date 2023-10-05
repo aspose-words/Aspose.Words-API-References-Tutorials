@@ -55,9 +55,9 @@ doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 ## Complete Source Code for Using Barcode Generation in Aspose.Words for Java
 
 ```java
-        Document doc = new Document(getMyDir() + "Field sample - BARCODE.docx");
+        Document doc = new Document("Your Directory Path" + "Field sample - BARCODE.docx");
         doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
-        doc.save(getArtifactsDir() + "WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
+        doc.save("Your Directory Path" + "WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 ```
 
 ## Conclusion

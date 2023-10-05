@@ -27,10 +27,10 @@ Before we begin, make sure you have the following prerequisites in place:
 First, let's load the Word document using Aspose.Words for Java:
 
 ```java
-Document doc = new Document(getMyDir() + "Document.docx");
+Document doc = new Document("Your Directory Path" + "Document.docx");
 ```
 
-Here, `getMyDir()` should point to the directory where your document is located.
+Here, `"Your Directory Path"` should point to the directory where your document is located.
 
 ## Step 2: Specify ODT Save Options
 
@@ -46,19 +46,19 @@ saveOptions.setMeasureUnit(OdtSaveMeasureUnit.INCHES);
 Now, it's time to save the document in ODT format:
 
 ```java
-doc.save(getArtifactsDir() + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
+doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
-Here, `getArtifactsDir()` should point to the directory where you want to save the converted ODT file.
+Here, `"Your Directory Path"` should point to the directory where you want to save the converted ODT file.
 
 ## Complete Source Code For Saving Documents as ODT Format in Aspose.Words for Java
 
 ```java
-Document doc = new Document(getMyDir() + "Document.docx");
+Document doc = new Document("Your Directory Path" + "Document.docx");
 // Open Office uses centimeters when specifying lengths, widths and other measurable formatting
 // and content properties in documents whereas MS Office uses inches.
 OdtSaveOptions saveOptions = new OdtSaveOptions(); { saveOptions.setMeasureUnit(OdtSaveMeasureUnit.INCHES); }
-doc.save(getArtifactsDir() + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
+doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
 ## Conclusion

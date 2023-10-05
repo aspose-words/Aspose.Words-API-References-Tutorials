@@ -222,23 +222,23 @@ doc.save("ModifiedMultiSectionDocument.docx");
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.CHECKBOX, MarkupLevel.INLINE);
 	builder.insertNode(sdtCheckBox);
-	doc.save(getArtifactsDir() + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.DOCX);
+	doc.save("Your Directory Path" + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.DOCX);
 }
 @Test
 public void currentStateOfCheckBox() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Structured document tags.docx");
+	Document doc = new Document("Your Directory Path" + "Structured document tags.docx");
 	// Get the first content control from the document.
 	StructuredDocumentTag sdtCheckBox =
 		(StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 	if (sdtCheckBox.getSdtType() == SdtType.CHECKBOX)
 		sdtCheckBox.setChecked(true);
-	doc.save(getArtifactsDir() + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
+	doc.save("Your Directory Path" + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 }
 @Test
 public void modifyContentControls() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Structured document tags.docx");
+	Document doc = new Document("Your Directory Path" + "Structured document tags.docx");
 	for (StructuredDocumentTag sdt : (Iterable<StructuredDocumentTag>) doc.getChildNodes(NodeType.STRUCTURED_DOCUMENT_TAG, true))
 	{
 		switch (sdt.getSdtType())
@@ -268,7 +268,7 @@ public void modifyContentControls() throws Exception
 			}
 		}
 	}
-	doc.save(getArtifactsDir() + "WorkingWithSdt.ModifyContentControls.docx");
+	doc.save("Your Directory Path" + "WorkingWithSdt.ModifyContentControls.docx");
 }
 @Test
 public void comboBoxContentControl() throws Exception
@@ -279,7 +279,7 @@ public void comboBoxContentControl() throws Exception
 	sdt.getListItems().add(new SdtListItem("Item 1", "1"));
 	sdt.getListItems().add(new SdtListItem("Item 2", "2"));
 	doc.getFirstSection().getBody().appendChild(sdt);
-	doc.save(getArtifactsDir() + "WorkingWithSdt.ComboBoxContentControl.docx");
+	doc.save("Your Directory Path" + "WorkingWithSdt.ComboBoxContentControl.docx");
 }
 @Test
 public void richTextBoxContentControl() throws Exception
@@ -293,23 +293,23 @@ public void richTextBoxContentControl() throws Exception
 	para.getRuns().add(run);
 	sdtRichText.getChildNodes().add(para);
 	doc.getFirstSection().getBody().appendChild(sdtRichText);
-	doc.save(getArtifactsDir() + "WorkingWithSdt.RichTextBoxContentControl.docx");
+	doc.save("Your Directory Path" + "WorkingWithSdt.RichTextBoxContentControl.docx");
 }
 @Test
 public void setContentControlColor() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Structured document tags.docx");
+	Document doc = new Document("Your Directory Path" + "Structured document tags.docx");
 	StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 	sdt.setColor(Color.RED);
-	doc.save(getArtifactsDir() + "WorkingWithSdt.SetContentControlColor.docx");
+	doc.save("Your Directory Path" + "WorkingWithSdt.SetContentControlColor.docx");
 }
 @Test
 public void clearContentsControl() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Structured document tags.docx");
+	Document doc = new Document("Your Directory Path" + "Structured document tags.docx");
 	StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 	sdt.clear();
-	doc.save(getArtifactsDir() + "WorkingWithSdt.ClearContentsControl.doc");
+	doc.save("Your Directory Path" + "WorkingWithSdt.ClearContentsControl.doc");
 }
 @Test
 public void bindSdTtoCustomXmlPart() throws Exception
@@ -320,16 +320,16 @@ public void bindSdTtoCustomXmlPart() throws Exception
 	StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PLAIN_TEXT, MarkupLevel.BLOCK);
 	doc.getFirstSection().getBody().appendChild(sdt);
 	sdt.getXmlMapping().setMapping(xmlPart, "/root[1]/text[1]", "");
-	doc.save(getArtifactsDir() + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
+	doc.save("Your Directory Path" + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 }
 @Test
 public void setContentControlStyle() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Structured document tags.docx");
+	Document doc = new Document("Your Directory Path" + "Structured document tags.docx");
 	StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 	Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.QUOTE);
 	sdt.setStyle(style);
-	doc.save(getArtifactsDir() + "WorkingWithSdt.SetContentControlStyle.docx");
+	doc.save("Your Directory Path" + "WorkingWithSdt.SetContentControlStyle.docx");
 }
 @Test
 public void creatingTableRepeatingSectionMappedToCustomXmlPart() throws Exception
@@ -364,12 +364,12 @@ public void creatingTableRepeatingSectionMappedToCustomXmlPart() throws Exceptio
 		new StructuredDocumentTag(doc, SdtType.PLAIN_TEXT, MarkupLevel.CELL);
 	authorSdt.getXmlMapping().setMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 	row.appendChild(authorSdt);
-	doc.save(getArtifactsDir() + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
+	doc.save("Your Directory Path" + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 }
 @Test
 public void multiSection() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Multi-section structured document tags.docx");
+	Document doc = new Document("Your Directory Path" + "Multi-section structured document tags.docx");
 	NodeCollection tags = doc.getChildNodes(NodeType.STRUCTURED_DOCUMENT_TAG_RANGE_START, true);
 	for (StructuredDocumentTagRangeStart tag : (Iterable<StructuredDocumentTagRangeStart>) tags)
 		System.out.println(tag.getTitle());
@@ -377,7 +377,7 @@ public void multiSection() throws Exception
 @Test
 public void structuredDocumentTagRangeStartXmlMapping() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Multi-section structured document tags.docx");
+	Document doc = new Document("Your Directory Path" + "Multi-section structured document tags.docx");
 	// Construct an XML part that contains data and add it to the document's CustomXmlPart collection.
 	String xmlPartId = UUID.randomUUID().toString();
 	String xmlPartContent = "<root><text>Text element #1</text><text>Text element #2</text></root>";
@@ -389,7 +389,7 @@ public void structuredDocumentTagRangeStartXmlMapping() throws Exception
 	// it will only display a part of the CustomXmlPart that the XPath points to.
 	// This XPath will point to the contents second "<text>" element of the first "<root>" element of our CustomXmlPart.
 	sdtRangeStart.getXmlMapping().setMapping(xmlPart, "/root[1]/text[2]", null);
-	doc.save(getArtifactsDir() + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
+	doc.save("Your Directory Path" + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
 ```
 
 ## Conclusion

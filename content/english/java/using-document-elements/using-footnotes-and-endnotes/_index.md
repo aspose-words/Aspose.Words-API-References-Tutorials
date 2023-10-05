@@ -30,7 +30,7 @@ public void getFootnoteOptions(){
     
     // Specify the number of columns with which the footnotes area is formatted.
     doc.getFootnoteOptions().setColumns(3);
-    doc.save(getArtifactsDir() + "WorkingWithFootnotes.SetFootNoteColumns.docx");
+    doc.save("Your Directory Path" + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 }
 ```
 
@@ -81,7 +81,7 @@ You can further customize endnote settings to meet your document requirements.
         Document doc = new Document(dataDir + "Document.docx");
         // Specify the number of columns with which the footnotes area is formatted.
         doc.getFootnoteOptions().setColumns(3);
-        doc.save(getArtifactsDir() + "WorkingWithFootnotes.SetFootNoteColumns.docx");
+        doc.save("Your Directory Path" + "WorkingWithFootnotes.SetFootNoteColumns.docx");
     }
     @Test
     public void setFootnoteAndEndNotePosition() throws Exception

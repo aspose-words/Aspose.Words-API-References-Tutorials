@@ -92,6 +92,8 @@ Make sure to replace `"document_with_images.docx"` with the path to your Word do
 ## Complete Source Code For Saving Documents as Markdown in Aspose.Words for Java
 
 ```java
+public void autoTableContentAlignment() throws Exception
+{
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.insertCell();
@@ -105,24 +107,25 @@ Make sure to replace `"document_with_images.docx"` with the path to your Word do
 	{
 		saveOptions.setTableContentAlignment(TableContentAlignment.LEFT);
 	}
-	doc.save(getArtifactsDir() + "WorkingWithMarkdownSaveOptions.LeftTableContentAlignment.md", saveOptions);
+	doc.save("Your Directory Path" + "WorkingWithMarkdownSaveOptions.LeftTableContentAlignment.md", saveOptions);
 	saveOptions.setTableContentAlignment(TableContentAlignment.RIGHT);
-	doc.save(getArtifactsDir() + "WorkingWithMarkdownSaveOptions.RightTableContentAlignment.md", saveOptions);
+	doc.save("Your Directory Path" + "WorkingWithMarkdownSaveOptions.RightTableContentAlignment.md", saveOptions);
 	saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
-	doc.save(getArtifactsDir() + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
+	doc.save("Your Directory Path" + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
 	// The alignment in this case will be taken from the first paragraph in corresponding table column.
 	saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
-	doc.save(getArtifactsDir() + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
+	doc.save("Your Directory Path" + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
 }
 @Test
 public void setImagesFolder() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Image bullet points.docx");
-	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions(); { saveOptions.setImagesFolder(getArtifactsDir() + "Images"); }
+	Document doc = new Document("Your Directory Path" + "Image bullet points.docx");
+	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions(); { saveOptions.setImagesFolder("Your Directory Path" + "Images"); }
 	try(ByteArrayOutputStream stream = new ByteArrayOutputStream())
 	{
 		doc.save(stream, saveOptions);
 	}
+}
 ```
 
 ## Conclusion

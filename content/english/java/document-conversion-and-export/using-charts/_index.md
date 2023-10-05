@@ -40,7 +40,7 @@ series1.getDataLabels().get(2).getNumberFormat().setFormatCode("0.00%");
 // Or link format code to a source cell.
 series1.getDataLabels().get(2).getNumberFormat().isLinkedToSource(true);
 
-doc.save(getArtifactsDir() + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
+doc.save("Your Directory Path" + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
 ## Step 2: Creating Other Types of Charts
@@ -61,7 +61,7 @@ String[] categories = new String[] { "Category 1", "Category 2" };
 chart.getSeries().add("Aspose Series 1", categories, new double[] { 1.0, 2.0 });
 chart.getSeries().add("Aspose Series 2", categories, new double[] { 3.0, 4.0 });
 
-doc.save(getArtifactsDir() + "WorkingWithCharts.InsertSimpleColumnChart.docx");
+doc.save("Your Directory Path" + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 ```
 
 ## Step 3: Customizing Axis Properties
@@ -95,7 +95,7 @@ yAxis.getDisplayUnit().setUnit(AxisBuiltInUnit.HUNDREDS);
 yAxis.getScaling().setMinimum(new AxisBound(100.0));
 yAxis.getScaling().setMaximum(new AxisBound(700.0));
 
-doc.save(getArtifactsDir() + "WorkingWithCharts.DefineXYAxisProperties.docx");
+doc.save("Your Directory Path" + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
 ## Step 4: Formatting Data Labels
@@ -112,7 +112,7 @@ Chart chart = shape.getChart();
 
 chart.getAxisY().getNumberFormat().setFormatCode("#,##0");
 
-doc.save(getArtifactsDir() + "WorkingWithCharts.NumberFormatForAxis.docx");
+doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
 ## Additional Chart Customizations
@@ -140,7 +140,7 @@ You can further customize your charts by adjusting bounds, interval units betwee
 	// Or you can set format code to be linked to a source cell,
 	// in this case NumberFormat will be reset to general and inherited from a source cell.
 	series1.getDataLabels().get(2).getNumberFormat().isLinkedToSource(true);
-	doc.save(getArtifactsDir() + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 }
 @Test
 public void createChartUsingShape() throws Exception
@@ -155,7 +155,7 @@ public void createChartUsingShape() throws Exception
 	// Please note if null or empty value is specified as title text, auto generated title will be shown.
 	chart.getLegend().setPosition(LegendPosition.LEFT);
 	chart.getLegend().setOverlay(true);
-	doc.save(getArtifactsDir() + "WorkingWithCharts.CreateChartUsingShape.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.CreateChartUsingShape.docx");
 }
 @Test
 public void insertSimpleColumnChart() throws Exception
@@ -177,7 +177,7 @@ public void insertSimpleColumnChart() throws Exception
 	seriesColl.add("Aspose Series 3", categories, new double[] { 5.0, 6.0 });
 	seriesColl.add("Aspose Series 4", categories, new double[] { 7.0, 8.0 });
 	seriesColl.add("Aspose Series 5", categories, new double[] { 9.0, 10.0 });
-	doc.save(getArtifactsDir() + "WorkingWithCharts.InsertSimpleColumnChart.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 }
 @Test
 public void insertColumnChart() throws Exception
@@ -187,7 +187,7 @@ public void insertColumnChart() throws Exception
 	Shape shape = builder.insertChart(ChartType.COLUMN, 432.0, 252.0);
 	Chart chart = shape.getChart();
 	chart.getSeries().add("Aspose Series 1", new String[] { "Category 1", "Category 2" }, new double[] { 1.0, 2.0 });
-	doc.save(getArtifactsDir() + "WorkingWithCharts.InsertColumnChart.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.InsertColumnChart.docx");
 }
 @Test
 public void insertAreaChart() throws Exception
@@ -205,7 +205,7 @@ public void insertAreaChart() throws Exception
 			new Date(2002, 9, 1)
 		}, 
 		new double[] { 32.0, 32.0, 28.0, 12.0, 15.0 });
-	doc.save(getArtifactsDir() + "WorkingWithCharts.InsertAreaChart.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.InsertAreaChart.docx");
 }
 @Test
 public void insertBubbleChart() throws Exception
@@ -216,7 +216,7 @@ public void insertBubbleChart() throws Exception
 	Chart chart = shape.getChart();
 	chart.getSeries().add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 },
 		new double[] { 10.0, 4.0, 8.0 });
-	doc.save(getArtifactsDir() + "WorkingWithCharts.InsertBubbleChart.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.InsertBubbleChart.docx");
 }
 @Test
 public void insertScatterChart() throws Exception
@@ -226,7 +226,7 @@ public void insertScatterChart() throws Exception
 	Shape shape = builder.insertChart(ChartType.SCATTER, 432.0, 252.0);
 	Chart chart = shape.getChart();
 	chart.getSeries().add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
-	doc.save(getArtifactsDir() + "WorkingWithCharts.InsertScatterChart.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.InsertScatterChart.docx");
 }
 @Test
 public void defineXYAxisProperties() throws Exception
@@ -260,7 +260,7 @@ public void defineXYAxisProperties() throws Exception
 	yAxis.getDisplayUnit().setUnit(AxisBuiltInUnit.HUNDREDS);
 	yAxis.getScaling().setMinimum(new AxisBound(100.0));
 	yAxis.getScaling().setMaximum(new AxisBound(700.0));
-	doc.save(getArtifactsDir() + "WorkingWithCharts.DefineXYAxisProperties.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.DefineXYAxisProperties.docx");
 }
 @Test
 public void dateTimeValuesToAxis() throws Exception
@@ -285,7 +285,7 @@ public void dateTimeValuesToAxis() throws Exception
 	xAxis.setMinorUnit(1.0);
 	xAxis.setMajorTickMark(AxisTickMark.CROSS);
 	xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
-	doc.save(getArtifactsDir() + "WorkingWithCharts.DateTimeValuesToAxis.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 }
 @Test
 public void numberFormatForAxis() throws Exception
@@ -299,7 +299,7 @@ public void numberFormatForAxis() throws Exception
 		new String[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
 		new double[] { 1900000.0, 850000.0, 2100000.0, 600000.0, 1500000.0 });
 	chart.getAxisY().getNumberFormat().setFormatCode("#,##0");
-	doc.save(getArtifactsDir() + "WorkingWithCharts.NumberFormatForAxis.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 }
 @Test
 public void boundsOfAxis() throws Exception
@@ -314,7 +314,7 @@ public void boundsOfAxis() throws Exception
 		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 	chart.getAxisY().getScaling().setMinimum(new AxisBound(0.0));
 	chart.getAxisY().getScaling().setMaximum(new AxisBound(6.0));
-	doc.save(getArtifactsDir() + "WorkingWithCharts.BoundsOfAxis.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.BoundsOfAxis.docx");
 }
 @Test
 public void intervalUnitBetweenLabelsOnAxis() throws Exception
@@ -328,7 +328,7 @@ public void intervalUnitBetweenLabelsOnAxis() throws Exception
 		new String[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
 		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 	chart.getAxisX().setTickLabelSpacing(2);
-	doc.save(getArtifactsDir() + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 }
 @Test
 public void hideChartAxis() throws Exception
@@ -342,7 +342,7 @@ public void hideChartAxis() throws Exception
 		new String[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
 		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 	chart.getAxisY().setHidden(true);
-	doc.save(getArtifactsDir() + "WorkingWithCharts.HideChartAxis.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.HideChartAxis.docx");
 }
 @Test
 public void tickMultiLineLabelAlignment() throws Exception
@@ -353,7 +353,7 @@ public void tickMultiLineLabelAlignment() throws Exception
 	ChartAxis axis = shape.getChart().getAxisX();
 	// This property has effect only for multi-line labels.
 	axis.setTickLabelAlignment(ParagraphAlignment.RIGHT);
-	doc.save(getArtifactsDir() + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 }
 @Test
 public void chartDataLabel() throws Exception
@@ -375,7 +375,7 @@ public void chartDataLabel() throws Exception
 	labels.setShowValue(true);
 	labels.setSeparator("/");
 	labels.setShowValue(true);
-	doc.save(getArtifactsDir() + "WorkingWithCharts.ChartDataLabel.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.ChartDataLabel.docx");
 }
 @Test
 public void defaultOptionsForDataLabels() throws Exception
@@ -393,7 +393,7 @@ public void defaultOptionsForDataLabels() throws Exception
 	labels.setShowValue(true);
 	labels.setShowLeaderLines(false);
 	labels.setSeparator(" - ");
-	doc.save(getArtifactsDir() + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 }
 @Test
 public void singleChartDataPoint() throws Exception
@@ -416,7 +416,7 @@ public void singleChartDataPoint() throws Exception
 	dataPoint12.setInvertIfNegative(true);
 	dataPoint12.getMarker().setSymbol(MarkerSymbol.STAR);
 	dataPoint12.getMarker().setSize(20);
-	doc.save(getArtifactsDir() + "WorkingWithCharts.SingleChartDataPoint.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.SingleChartDataPoint.docx");
 }
 @Test
 public void singleChartSeries() throws Exception
@@ -438,7 +438,7 @@ public void singleChartSeries() throws Exception
 	series0.getMarker().setSize(15);
 	series1.getMarker().setSymbol(MarkerSymbol.STAR);
 	series1.getMarker().setSize(10);
-	doc.save(getArtifactsDir() + "WorkingWithCharts.SingleChartSeries.docx");
+	doc.save("Your Directory Path" + "WorkingWithCharts.SingleChartSeries.docx");
 ```
 
 ## Conclusion

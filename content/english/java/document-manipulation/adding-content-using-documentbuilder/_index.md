@@ -238,7 +238,7 @@ These are some common operations you can perform using Aspose.Words for Java's D
 	builder.startBookmark("FineBookmark");
 	builder.writeln("This is just a fine bookmark.");
 	builder.endBookmark("FineBookmark");
-	doc.save(getArtifactsDir() + "WorkingWithBookmarks.DocumentBuilderInsertBookmark.docx");
+	doc.save("Your Directory Path" + "WorkingWithBookmarks.DocumentBuilderInsertBookmark.docx");
 }
 @Test
 public void buildTable() throws Exception
@@ -263,7 +263,7 @@ public void buildTable() throws Exception
 	builder.writeln("This is row 2 cell 2");
 	builder.endRow();
 	builder.endTable();
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.BuildTable.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.BuildTable.docx");
 }
 @Test
 public void insertHorizontalRule() throws Exception
@@ -272,7 +272,7 @@ public void insertHorizontalRule() throws Exception
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.writeln("Insert a horizontal rule shape into the document.");
 	builder.insertHorizontalRule();
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 }
 @Test
 public void horizontalRuleFormat() throws Exception
@@ -285,7 +285,7 @@ public void horizontalRuleFormat() throws Exception
 	horizontalRuleFormat.setHeight(3.0);
 	horizontalRuleFormat.setColor(Color.BLUE);
 	horizontalRuleFormat.setNoShade(true);
-	builder.getDocument().save(getArtifactsDir() + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
+	builder.getDocument().save("Your Directory Path" + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 }
 @Test
 public void insertBreak() throws Exception
@@ -297,7 +297,7 @@ public void insertBreak() throws Exception
 	builder.writeln("This is page 2.");
 	builder.insertBreak(BreakType.PAGE_BREAK);
 	builder.writeln("This is page 3.");
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertBreak.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 }
 @Test
 public void insertTextInputFormField() throws Exception
@@ -305,7 +305,7 @@ public void insertTextInputFormField() throws Exception
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.insertTextInput("TextInput", TextFormFieldType.REGULAR, "", "Hello", 0);
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 }
 @Test
 public void insertCheckBoxFormField() throws Exception
@@ -313,7 +313,7 @@ public void insertCheckBoxFormField() throws Exception
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.insertCheckBox("CheckBox", true, true, 0);
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
 }
 @Test
 public void insertComboBoxFormField() throws Exception
@@ -322,7 +322,7 @@ public void insertComboBoxFormField() throws Exception
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.insertComboBox("DropDown", items, 0);
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 }
 @Test
 public void insertHtml() throws Exception
@@ -334,7 +334,7 @@ public void insertHtml() throws Exception
 		"<b>Implicit paragraph left</b>" +
 		"<div align='center'>Div center</div>" +
 		"<h1 align='left'>Heading 1 left.</h1>");
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertHtml.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 }
 @Test
 public void insertHyperlink() throws Exception
@@ -347,7 +347,7 @@ public void insertHyperlink() throws Exception
 	builder.insertHyperlink("Aspose Website", "http://www.aspose.com", false);
 	builder.getFont().clearFormatting();
 	builder.write(" for more information.");
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 }
 @Test
 public void insertTableOfContents() throws Exception
@@ -377,7 +377,7 @@ public void insertTableOfContents() throws Exception
 	// The newly inserted table of contents will be initially empty.
 	// It needs to be populated by updating the fields in the document.
 	doc.updateFields();
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 }
 @Test
 public void insertInlineImage() throws Exception
@@ -385,7 +385,7 @@ public void insertInlineImage() throws Exception
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.insertImage(getImagesDir() + "Transparent background logo.png");
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
 }
 @Test
 public void insertFloatingImage() throws Exception
@@ -400,7 +400,7 @@ public void insertFloatingImage() throws Exception
 		200.0,
 		100.0,
 		WrapType.SQUARE);
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 }
 @Test
 public void insertParagraph() throws Exception
@@ -418,7 +418,7 @@ public void insertParagraph() throws Exception
 	paragraphFormat.setAlignment(ParagraphAlignment.JUSTIFY);
 	paragraphFormat.setKeepTogether(true);
 	builder.writeln("A whole paragraph.");
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 }
 @Test
 public void insertTCField() throws Exception
@@ -426,7 +426,7 @@ public void insertTCField() throws Exception
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.insertField("TC \"Entry Text\" \\f t");
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.InsertTCField.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 }
 @Test
 public void insertTCFieldsAtText() throws Exception
@@ -518,7 +518,7 @@ public void moveToSection() throws Exception
 	builder.moveToSection(1);
 	builder.writeln("Text added to the 2nd section.");
 	// Create document with paragraphs.
-	doc = new Document(getMyDir() + "Paragraphs.docx");
+	doc = new Document("Your Directory Path" + "Paragraphs.docx");
 	ParagraphCollection paragraphs = doc.getFirstSection().getBody().getParagraphs();
 	Assert.assertEquals(22, paragraphs.getCount());
 	// When we create a DocumentBuilder for a document, its cursor is at the very beginning of the document by default,
@@ -551,12 +551,12 @@ public void moveToHeadersFooters() throws Exception
 	builder.writeln("Page1");
 	builder.insertBreak(BreakType.PAGE_BREAK);
 	builder.writeln("Page2");
-	doc.save(getArtifactsDir() + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
+	doc.save("Your Directory Path" + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 }
 @Test
 public void moveToParagraph() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Paragraphs.docx");
+	Document doc = new Document("Your Directory Path" + "Paragraphs.docx");
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.moveToParagraph(2, 0);
 	builder.writeln("This is the 3rd paragraph.");
@@ -564,7 +564,7 @@ public void moveToParagraph() throws Exception
 @Test
 public void moveToTableCell() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Tables.docx");
+	Document doc = new Document("Your Directory Path" + "Tables.docx");
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	// Move the builder to row 3, cell 4 of the first table.
 	builder.moveToCell(0, 2, 3, 0);
@@ -576,7 +576,7 @@ public void moveToTableCell() throws Exception
 @Test
 public void moveToBookmarkEnd() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Bookmarks.docx");
+	Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.moveToBookmark("MyBookmark1", false, true);
 	builder.writeln("This is a bookmark.");

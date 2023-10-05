@@ -134,9 +134,9 @@ Now that we've outlined the steps, you can implement each step in your Java proj
 ## Complete Source Code For Splitting Documents into HTML Pages in Aspose.Words for Java
 
 ```java
-	String srcFileName = getMyDir() + "Footnotes and endnotes.docx";
-	String tocTemplate = getMyDir() + "Table of content template.docx";
-	String outDir = getArtifactsDir() + "HtmlPages";
+	String srcFileName = "Your Directory Path" + "Footnotes and endnotes.docx";
+	String tocTemplate = "Your Directory Path" + "Table of content template.docx";
+	String outDir = "Your Directory Path" + "HtmlPages";
 	new File(outDir).mkdir();
 	WordToHtmlConverter w = new WordToHtmlConverter();
 	w.execute(srcFileName, tocTemplate, outDir);

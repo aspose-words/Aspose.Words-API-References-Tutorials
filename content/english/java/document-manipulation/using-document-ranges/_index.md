@@ -21,7 +21,7 @@ Before diving into the code, make sure you have the Aspose.Words for Java librar
 Let's start by creating a document object. In this example, we'll use a sample document named "Document.docx."
 
 ```java
-Document doc = new Document(getMyDir() + "Document.docx");
+Document doc = new Document("Your Directory Path" + "Document.docx");
 ```
 
 ## Deleting a Document Range
@@ -40,7 +40,7 @@ Extracting text from a document range is another valuable capability. To get the
 @Test
 public void rangesGetText() throws Exception
 {
-    Document doc = new Document(getMyDir() + "Document.docx");
+    Document doc = new Document("Your Directory Path" + "Document.docx");
     String text = doc.getRange().getText();
 }
 ```
@@ -52,13 +52,13 @@ Aspose.Words for Java offers a wide range of methods and properties to manipulat
 ## Complete Source Code For Using Document Ranges in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Document.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx");
 	doc.getSections().get(0).getRange().delete();
 }
 @Test
 public void rangesGetText() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Document.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx");
 	String text = doc.getRange().getText();
 ```
 

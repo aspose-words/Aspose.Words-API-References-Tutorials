@@ -22,7 +22,7 @@ To retrieve and work with built-in document properties, you can use the followin
 @Test
 public void enumerateProperties() throws Exception
 {
-    Document doc = new Document(getMyDir() + "Properties.docx");
+    Document doc = new Document("Your Directory Path" + "Properties.docx");
     System.out.println(MessageFormat.format("1. Document name: {0}", doc.getOriginalFileName()));
     System.out.println("2. Built-in Properties");
     for (DocumentProperty prop : doc.getBuiltInDocumentProperties())
@@ -40,7 +40,7 @@ To work with custom document properties, you can use the following code snippet:
 @Test
 public void addCustomDocumentProperties() throws Exception
 {
-    Document doc = new Document(getMyDir() + "Properties.docx");
+    Document doc = new Document("Your Directory Path" + "Properties.docx");
     CustomDocumentProperties customDocumentProperties = doc.getCustomDocumentProperties();
 
     if (customDocumentProperties.get("Authorized") != null) return;
@@ -63,7 +63,7 @@ To remove specific document properties, you can use the following code:
 @Test
 public void removeCustomDocumentProperties() throws Exception
 {
-    Document doc = new Document(getMyDir() + "Properties.docx");
+    Document doc = new Document("Your Directory Path" + "Properties.docx");
     doc.getCustomDocumentProperties().remove("Authorized Date");
 }
 ```
@@ -141,7 +141,7 @@ In this example, we replace the carriage return (`\r`) with a carriage return fo
 ## Complete Source Code For Using Document Properties in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Document.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx");
 	String variables = "";
 	for (Map.Entry<String, String> entry : doc.getVariables())
 	{
@@ -161,7 +161,7 @@ In this example, we replace the carriage return (`\r`) with a carriage return fo
 @Test
 public void enumerateProperties() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Properties.docx");
+	Document doc = new Document("Your Directory Path" + "Properties.docx");
 	System.out.println(MessageFormat.format("1. Document name: {0}", doc.getOriginalFileName()));
 	System.out.println("2. Built-in Properties");
 	for (DocumentProperty prop : doc.getBuiltInDocumentProperties())
@@ -173,7 +173,7 @@ public void enumerateProperties() throws Exception
 @Test
 public void addCustomDocumentProperties() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Properties.docx");
+	Document doc = new Document("Your Directory Path" + "Properties.docx");
 	CustomDocumentProperties customDocumentProperties = doc.getCustomDocumentProperties();
 	if (customDocumentProperties.get("Authorized") != null) return;
 	customDocumentProperties.add("Authorized", true);
@@ -185,14 +185,14 @@ public void addCustomDocumentProperties() throws Exception
 @Test
 public void removeCustomDocumentProperties() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Properties.docx");
+	Document doc = new Document("Your Directory Path" + "Properties.docx");
 	doc.getCustomDocumentProperties().remove("Authorized Date");
 }
 @Test
 public void removePersonalInformation() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Properties.docx"); { doc.setRemovePersonalInformation(true); }
-	doc.save(getArtifactsDir() + "DocumentPropertiesAndVariables.RemovePersonalInformation.docx");
+	Document doc = new Document("Your Directory Path" + "Properties.docx"); { doc.setRemovePersonalInformation(true); }
+	doc.save("Your Directory Path" + "DocumentPropertiesAndVariables.RemovePersonalInformation.docx");
 }
 @Test
 public void configuringLinkToContent() throws Exception

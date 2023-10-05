@@ -99,7 +99,7 @@ doc.save("DocumentWithoutWatermark.docx");
 ## Complete Source Code for Adding Watermarks to Documents in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Document.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx");
 	TextWatermarkOptions options = new TextWatermarkOptions();
 	{
 		options.setFontFamily("Arial");
@@ -109,16 +109,16 @@ doc.save("DocumentWithoutWatermark.docx");
 		options.isSemitrasparent(false);
 	}
 	doc.getWatermark().setText("Test", options);
-	doc.save(getArtifactsDir() + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");
+	doc.save("Your Directory Path" + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");
 }
 @Test
 public void addAndRemoveWatermark() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Document.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx");
 	insertWatermarkText(doc, "CONFIDENTIAL");
-	doc.save(getArtifactsDir() + "TestFile.Watermark.docx");
+	doc.save("Your Directory Path" + "TestFile.Watermark.docx");
 	removeWatermarkText(doc);
-	doc.save(getArtifactsDir() + "WorkWithWatermark.RemoveWatermark.docx");
+	doc.save("Your Directory Path" + "WorkWithWatermark.RemoveWatermark.docx");
 }
 /// <summary>
 /// Inserts a watermark into a document.

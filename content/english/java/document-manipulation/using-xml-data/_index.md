@@ -27,10 +27,10 @@ To perform a basic mail merge with XML data, follow these steps:
 
 ```java
 DataSet customersDs = new DataSet();
-customersDs.readXml(getMyDir() + "Mail merge data - Customers.xml");
-Document doc = new Document(getMyDir() + "Mail merge destinations - Registration complete.docx");
+customersDs.readXml("Your Directory Path" + "Mail merge data - Customers.xml");
+Document doc = new Document("Your Directory Path" + "Mail merge destinations - Registration complete.docx");
 doc.getMailMerge().execute(customersDs.getTables().get("Customer"));
-doc.save(getArtifactsDir() + "BasicMailMerge.docx");
+doc.save("Your Directory Path" + "BasicMailMerge.docx");
 ```
 
 ### 2. Nested Mail Merge
@@ -39,11 +39,11 @@ For nested mail merges, use the following code:
 
 ```java
 DataSet pizzaDs = new DataSet();
-pizzaDs.readXml(getMyDir() + "Mail merge data - Orders.xml");
-Document doc = new Document(getMyDir() + "Mail merge destinations - Invoice.docx");
+pizzaDs.readXml("Your Directory Path" + "Mail merge data - Orders.xml");
+Document doc = new Document("Your Directory Path" + "Mail merge destinations - Invoice.docx");
 doc.getMailMerge().setTrimWhitespaces(false);
 doc.getMailMerge().executeWithRegions(pizzaDs);
-doc.save(getArtifactsDir() + "NestedMailMerge.docx");
+doc.save("Your Directory Path" + "NestedMailMerge.docx");
 ```
 
 ## Mustache Syntax Using DataSet
@@ -52,43 +52,43 @@ To leverage the Mustache syntax with a DataSet, follow these steps:
 
 ```java
 DataSet ds = new DataSet();
-ds.readXml(getMyDir() + "Mail merge data - Vendors.xml");
-Document doc = new Document(getMyDir() + "Mail merge destinations - Vendor.docx");
+ds.readXml("Your Directory Path" + "Mail merge data - Vendors.xml");
+Document doc = new Document("Your Directory Path" + "Mail merge destinations - Vendor.docx");
 doc.getMailMerge().setUseNonMergeFields(true);
 doc.getMailMerge().executeWithRegions(ds);
-doc.save(getArtifactsDir() + "MustacheSyntaxUsingDataSet.docx");
+doc.save("Your Directory Path" + "MustacheSyntaxUsingDataSet.docx");
 ```
 
 ## Complete Source Code For Using XML Data in Aspose.Words for Java
 
 ```java
 	DataSet customersDs = new DataSet();
-	customersDs.readXml(getMyDir() + "Mail merge data - Customers.xml");
-	Document doc = new Document(getMyDir() + "Mail merge destinations - Registration complete.docx");
+	customersDs.readXml("Your Directory Path" + "Mail merge data - Customers.xml");
+	Document doc = new Document("Your Directory Path" + "Mail merge destinations - Registration complete.docx");
 	doc.getMailMerge().execute(customersDs.getTables().get("Customer"));
-	doc.save(getArtifactsDir() + "WorkingWithXmlData.XmlMailMerge.docx");
+	doc.save("Your Directory Path" + "WorkingWithXmlData.XmlMailMerge.docx");
 }
 @Test
 public void nestedMailMerge() throws Exception
 {
 	// The Datatable.TableNames and the DataSet.Relations are defined implicitly by .NET through ReadXml.
 	DataSet pizzaDs = new DataSet();
-	pizzaDs.readXml(getMyDir() + "Mail merge data - Orders.xml");
-	Document doc = new Document(getMyDir() + "Mail merge destinations - Invoice.docx");
+	pizzaDs.readXml("Your Directory Path" + "Mail merge data - Orders.xml");
+	Document doc = new Document("Your Directory Path" + "Mail merge destinations - Invoice.docx");
 	// Trim trailing and leading whitespaces mail merge values.
 	doc.getMailMerge().setTrimWhitespaces(false);
 	doc.getMailMerge().executeWithRegions(pizzaDs);
-	doc.save(getArtifactsDir() + "WorkingWithXmlData.NestedMailMerge.docx");
+	doc.save("Your Directory Path" + "WorkingWithXmlData.NestedMailMerge.docx");
 }
 @Test
 public void mustacheSyntaxUsingDataSet() throws Exception
 {
 	DataSet ds = new DataSet();
-	ds.readXml(getMyDir() + "Mail merge data - Vendors.xml");
-	Document doc = new Document(getMyDir() + "Mail merge destinations - Vendor.docx");
+	ds.readXml("Your Directory Path" + "Mail merge data - Vendors.xml");
+	Document doc = new Document("Your Directory Path" + "Mail merge destinations - Vendor.docx");
 	doc.getMailMerge().setUseNonMergeFields(true);
 	doc.getMailMerge().executeWithRegions(ds);
-	doc.save(getArtifactsDir() + "WorkingWithXmlData.MustacheSyntaxUsingDataSet.docx");
+	doc.save("Your Directory Path" + "WorkingWithXmlData.MustacheSyntaxUsingDataSet.docx");
 ```
 
 ## Conclusion

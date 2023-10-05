@@ -341,19 +341,19 @@ This allows you to perform text replacements specifically within tables.
         doc.getRange().replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.FORWARD));
         System.out.println("Document text after replace: " + doc.getRange().getText());
         // Save the modified document
-        doc.save(getArtifactsDir() + "FindAndReplace.SimpleFindReplace.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.SimpleFindReplace.docx");
     }
     @Test
     public void findAndHighlight() throws Exception
     {
-        Document doc = new Document(getMyDir() + "Find and highlight.docx");
+        Document doc = new Document("Your Directory Path" + "Find and highlight.docx");
         FindReplaceOptions options = new FindReplaceOptions();
         {
             options.setReplacingCallback(new ReplaceEvaluatorFindAndHighlight()); options.setDirection(FindReplaceDirection.BACKWARD);
         }
         Pattern regex = Pattern.compile("your document");
         doc.getRange().replace(regex, "", options);
-        doc.save(getArtifactsDir() + "FindAndReplace.FindAndHighlight.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.FindAndHighlight.docx");
     }
     private static class ReplaceEvaluatorFindAndHighlight implements IReplacingCallback
     {
@@ -431,7 +431,7 @@ This allows you to perform text replacements specifically within tables.
         builder.insertBreak(BreakType.PAGE_BREAK);
         builder.writeln("This is Line 2");
         doc.getRange().replace("This is Line 1&mThis is Line 2", "Page break is replaced with new text.");
-        doc.save(getArtifactsDir() + "FindAndReplace.MetaCharactersInSearchPattern.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.MetaCharactersInSearchPattern.docx");
     }
     @Test
     public void replaceTextContainingMetaCharacters() throws Exception
@@ -451,7 +451,7 @@ This allows you to perform text replacements specifically within tables.
         int count = doc.getRange().replace("section&p", "section&p----------------------&p", findReplaceOptions);
         // Insert section break instead of custom text tag.
         count = doc.getRange().replace("{insert-section}", "&b", findReplaceOptions);
-        doc.save(getArtifactsDir() + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
     }
     @Test
     public void ignoreTextInsideFields() throws Exception
@@ -515,7 +515,7 @@ This allows you to perform text replacements specifically within tables.
         builder.write("{PLACEHOLDER}");
         FindReplaceOptions findReplaceOptions = new FindReplaceOptions(); { findReplaceOptions.setReplacingCallback(new FindAndInsertHtml()); }
         doc.getRange().replace("{PLACEHOLDER}", "<p>&ldquo;Some Text&rdquo;</p>", findReplaceOptions);
-        doc.save(getArtifactsDir() + "FindAndReplace.ReplaceHtmlTextWithMetaCharacters.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.ReplaceHtmlTextWithMetaCharacters.docx");
     }
     public final static class FindAndInsertHtml implements IReplacingCallback
     {
@@ -532,22 +532,22 @@ This allows you to perform text replacements specifically within tables.
     @Test
     public void replaceTextInFooter() throws Exception
     {
-        Document doc = new Document(getMyDir() + "Footer.docx");
+        Document doc = new Document("Your Directory Path" + "Footer.docx");
         HeaderFooterCollection headersFooters = doc.getFirstSection().getHeadersFooters();
         HeaderFooter footer = headersFooters.getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
         FindReplaceOptions options = new FindReplaceOptions(); { options.setMatchCase(false); options.setFindWholeWordsOnly(false); }
         footer.getRange().replace("(C) 2006 Aspose Pty Ltd.", "Copyright (C) 2020 by Aspose Pty Ltd.", options);
-        doc.save(getArtifactsDir() + "FindAndReplace.ReplaceTextInFooter.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.ReplaceTextInFooter.docx");
     }
     @Test
     public void showChangesForHeaderAndFooterOrders() throws Exception
     {
         ReplaceLog logger = new ReplaceLog();
-        Document doc = new Document(getMyDir() + "Footer.docx");
+        Document doc = new Document("Your Directory Path" + "Footer.docx");
         Section firstPageSection = doc.getFirstSection();
         FindReplaceOptions options = new FindReplaceOptions(); { options.setReplacingCallback(logger); }
         doc.getRange().replace(Pattern.compile("(header|footer)"), "", options);
-        doc.save(getArtifactsDir() + "FindAndReplace.ShowChangesForHeaderAndFooterOrders.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.ShowChangesForHeaderAndFooterOrders.docx");
         logger.clearText();
         firstPageSection.getPageSetup().setDifferentFirstPageHeaderFooter(false);
         doc.getRange().replace(Pattern.compile("(header|footer)"), "", options);
@@ -568,13 +568,13 @@ This allows you to perform text replacements specifically within tables.
     @Test
     public void replaceTextWithField() throws Exception
     {
-        Document doc = new Document(getMyDir() + "Replace text with fields.docx");
+        Document doc = new Document("Your Directory Path" + "Replace text with fields.docx");
         FindReplaceOptions options = new FindReplaceOptions();
         {
             options.setReplacingCallback(new ReplaceTextWithFieldHandler(FieldType.FIELD_MERGE_FIELD));
         }
         doc.getRange().replace(Pattern.compile("PlaceHolder(\\d+)"), "", options);
-        doc.save(getArtifactsDir() + "FindAndReplace.ReplaceTextWithField.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.ReplaceTextWithField.docx");
     }
     public static class ReplaceTextWithFieldHandler implements IReplacingCallback
     {
@@ -653,7 +653,7 @@ This allows you to perform text replacements specifically within tables.
         builder.writeln("sad mad bad");
         FindReplaceOptions options = new FindReplaceOptions(); { options.setReplacingCallback(new MyReplaceEvaluator()); }
         doc.getRange().replace(Pattern.compile("[s|m]ad"), "", options);
-        doc.save(getArtifactsDir() + "FindAndReplace.ReplaceWithEvaluator.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.ReplaceWithEvaluator.docx");
     }
     private static class MyReplaceEvaluator implements IReplacingCallback
     {
@@ -678,7 +678,7 @@ This allows you to perform text replacements specifically within tables.
         FindReplaceOptions options = new FindReplaceOptions();
         options.setReplacingCallback(new ReplaceWithHtmlEvaluator(options));
         doc.getRange().replace(Pattern.compile(" <CustomerName>,"), "", options);
-        doc.save(getArtifactsDir() + "FindAndReplace.ReplaceWithHtml.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.ReplaceWithHtml.docx");
     }
     private static class ReplaceWithHtmlEvaluator implements IReplacingCallback
     {
@@ -709,7 +709,7 @@ This allows you to perform text replacements specifically within tables.
         builder.writeln("sad mad bad");
         FindReplaceOptions options = new FindReplaceOptions();
         doc.getRange().replace(Pattern.compile("[s|m]ad"), "bad", options);
-        doc.save(getArtifactsDir() + "FindAndReplace.ReplaceWithRegex.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.ReplaceWithRegex.docx");
     }
     @Test
     public void recognizeAndSubstitutionsWithinReplacementPatterns() throws Exception
@@ -728,7 +728,7 @@ This allows you to perform text replacements specifically within tables.
         DocumentBuilder builder = new DocumentBuilder(doc);
         builder.writeln("sad mad bad");
         doc.getRange().replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.FORWARD));
-        doc.save(getArtifactsDir() + "FindAndReplace.ReplaceWithString.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.ReplaceWithString.docx");
     }
     @Test
     public void usingLegacyOrder() throws Exception
@@ -745,7 +745,7 @@ This allows you to perform text replacements specifically within tables.
             options.setReplacingCallback(new ReplacingCallback()); options.setUseLegacyOrder(true);
         }
         doc.getRange().replace(Pattern.compile("\\[(.*?)\\]"), "", options);
-        doc.save(getArtifactsDir() + "FindAndReplace.UsingLegacyOrder.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.UsingLegacyOrder.docx");
     }
     private static class ReplacingCallback implements IReplacingCallback
     {
@@ -758,11 +758,11 @@ This allows you to perform text replacements specifically within tables.
     @Test
     public void replaceTextInTable() throws Exception
     {
-        Document doc = new Document(getMyDir() + "Tables.docx");
+        Document doc = new Document("Your Directory Path" + "Tables.docx");
         Table table = (Table)doc.getChild(NodeType.TABLE, 0, true);
         table.getRange().replace("Carrots", "Eggs", new FindReplaceOptions(FindReplaceDirection.FORWARD));
         table.getLastRow().getLastCell().getRange().replace("50", "20", new FindReplaceOptions(FindReplaceDirection.FORWARD));
-        doc.save(getArtifactsDir() + "FindAndReplace.ReplaceTextInTable.docx");
+        doc.save("Your Directory Path" + "FindAndReplace.ReplaceTextInTable.docx");
 ```
 
 ## Conclusion

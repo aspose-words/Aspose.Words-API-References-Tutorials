@@ -153,7 +153,7 @@ class SplitPageBreakCorrector {
 ## Complete Source Code For Splitting Documents into Pages in Aspose.Words for Java
 
 ```java
-	splitAllDocumentsToPages(getMyDir());
+	splitAllDocumentsToPages("Your Directory Path");
 }
 private void splitDocumentToPages(String docName) throws Exception
 {
@@ -167,7 +167,7 @@ private void splitDocumentToPages(String docName) throws Exception
 	for (int page = 1; page <= doc.getPageCount(); page++)
 	{
 		Document pageDoc = splitter.getDocumentOfPage(page);
-		pageDoc.save(getArtifactsDir()+ MessageFormat.format("{0} - page{1}.{2}", fileName, page, extensionName));
+		pageDoc.save("Your Directory Path"+ MessageFormat.format("{0} - page{1}.{2}", fileName, page, extensionName));
 	}
 }
 private void splitAllDocumentsToPages(String folderName) throws Exception

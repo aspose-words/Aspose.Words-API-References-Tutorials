@@ -92,7 +92,7 @@ Now you have a customized Table of Contents in your document with adjusted tab s
 @Test
 public void changeTocTabStops() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Table of contents.docx");
+	Document doc = new Document("Your Directory Path" + "Table of contents.docx");
 	for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH, true))
 	{
 		// Check if this paragraph is formatted using the TOC result based styles.
@@ -109,7 +109,7 @@ public void changeTocTabStops() throws Exception
 			para.getParagraphFormat().getTabStops().add(tab.getPosition() - 50.0, tab.getAlignment(), tab.getLeader());
 		}
 	}
-	doc.save(getArtifactsDir() + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
 ## Conclusion

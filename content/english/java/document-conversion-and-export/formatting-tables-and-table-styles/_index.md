@@ -21,7 +21,7 @@ Before we dive into the details, make sure you have the Aspose.Words for Java li
 To begin, let's explore how to retrieve the distance between a table and the surrounding text in a document.
 
 ```java
-Document doc = new Document(getMyDir() + "Tables.docx");
+Document doc = new Document("Your Directory Path" + "Tables.docx");
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 System.out.println("Distance Top: " + table.getDistanceTop());
 System.out.println("Distance Bottom: " + table.getDistanceBottom());
@@ -34,7 +34,7 @@ System.out.println("Distance Left: " + table.getDistanceLeft());
 You can align a table to the center of the page, clear existing borders, and set a custom outline border with this code:
 
 ```java
-Document doc = new Document(getMyDir() + "Tables.docx");
+Document doc = new Document("Your Directory Path" + "Tables.docx");
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 table.setAlignment(TableAlignment.CENTER);
 table.clearBorders();
@@ -50,7 +50,7 @@ table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true)
 This code snippet demonstrates how to create a table and set borders for both the table and its cells:
 
 ```java
-Document doc = new Document(getMyDir() + "Tables.docx");
+Document doc = new Document("Your Directory Path" + "Tables.docx");
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 table.clearBorders();
 table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
@@ -61,7 +61,7 @@ table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
 Learn how to modify the formatting of a specific row within a table:
 
 ```java
-Document doc = new Document(getMyDir() + "Tables.docx");
+Document doc = new Document("Your Directory Path" + "Tables.docx");
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 Row firstRow = table.getFirstRow();
 firstRow.getRowFormat().getBorders().setLineStyle(LineStyle.NONE);
@@ -106,7 +106,7 @@ builder.writeln("I'm a wonderfully formatted cell.");
 Discover how to modify the formatting of a specific cell within a table:
 
 ```java
-Document doc = new Document(getMyDir() + "Tables.docx");
+Document doc = new Document("Your Directory Path" + "Tables.docx");
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 Cell firstCell = table.getFirstRow().getFirstCell();
 firstCell.getCellFormat().setWidth(30.0);
@@ -149,7 +149,7 @@ builder.writeln("Cell #4");
 Add a title and description to your table:
 
 ```java
-Document doc = new Document(getMyDir() + "Tables.docx");
+Document doc = new Document("Your Directory Path" + "Tables.docx");
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 table.setTitle("Test title");
 table.setDescription("Test description");
@@ -160,7 +160,7 @@ table.setDescription("Test description");
 Allow cell spacing and set its value for a table:
 
 ```java
-Document doc = new Document(getMyDir() + "Tables.docx");
+Document doc = new Document("Your Directory Path" + "Tables.docx");
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 table.setAllowCellSpacing(true);
 table.setCellSpacing(2.0);
@@ -187,7 +187,7 @@ builder.writeln("Quantity (kg)");
 Learn how to expand table styles to apply formatting to cells and rows:
 
 ```java
-Document doc = new Document(getMyDir() + "Tables.docx");
+Document doc = new Document("Your Directory Path" + "Tables.docx");
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 Cell firstCell = table.getFirstRow().getFirstCell();
 Color cellShadingBefore = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
@@ -263,7 +263,7 @@ builder.writeln("I'm a wonderfully formatted row.");
 ## Complete Source Code For Formatting Tables and Table Styles in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Tables.docx");
+	Document doc = new Document("Your Directory Path" + "Tables.docx");
 	System.out.println("\nGet distance between table left, right, bottom, top and the surrounding text.");
 	Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 	System.out.println(table.getDistanceTop());
@@ -274,7 +274,7 @@ builder.writeln("I'm a wonderfully formatted row.");
 @Test
 public void applyOutlineBorder() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Tables.docx");
+	Document doc = new Document("Your Directory Path" + "Tables.docx");
 	Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 	// Align the table to the center of the page.
 	table.setAlignment(TableAlignment.CENTER);
@@ -287,23 +287,23 @@ public void applyOutlineBorder() throws Exception
 	table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
 	// Fill the cells with a light green solid color.
 	table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 }
 @Test
 public void buildTableWithBorders() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Tables.docx");
+	Document doc = new Document("Your Directory Path" + "Tables.docx");
 	Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 	// Clear any existing borders from the table.
 	table.clearBorders();
 	// Set a green border around and inside the table.
 	table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
 }
 @Test
 public void modifyRowFormatting() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Tables.docx");
+	Document doc = new Document("Your Directory Path" + "Tables.docx");
 	Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 	// Retrieve the first row in the table.
 	Row firstRow = table.getFirstRow();
@@ -329,7 +329,7 @@ public void applyRowFormatting() throws Exception
 	builder.writeln("I'm a wonderful formatted row.");
 	builder.endRow();
 	builder.endTable();
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 }
 @Test
 public void setCellPadding() throws Exception
@@ -343,7 +343,7 @@ public void setCellPadding() throws Exception
 	builder.writeln("I'm a wonderful formatted cell.");
 	builder.endRow();
 	builder.endTable();
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 }
 /// <summary>
 /// Shows how to modify formatting of a table cell.
@@ -351,7 +351,7 @@ public void setCellPadding() throws Exception
 @Test
 public void modifyCellFormatting() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Tables.docx");
+	Document doc = new Document("Your Directory Path" + "Tables.docx");
 	Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 	Cell firstCell = table.getFirstRow().getFirstCell();
 	firstCell.getCellFormat().setWidth(30.0);
@@ -388,27 +388,27 @@ public void formatTableAndCellWithDifferentBorders() throws Exception
 	builder.insertCell();
 	builder.getCellFormat().clearFormatting();
 	builder.writeln("Cell #4");
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 }
 @Test
 public void setTableTitleAndDescription() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Tables.docx");
+	Document doc = new Document("Your Directory Path" + "Tables.docx");
 	Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 	table.setTitle("Test title");
 	table.setDescription("Test description");
 	OoxmlSaveOptions options = new OoxmlSaveOptions(); { options.setCompliance(OoxmlCompliance.ISO_29500_2008_STRICT); }
 	doc.getCompatibilityOptions().optimizeFor(com.aspose.words.MsWordVersion.WORD_2016);
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescription.docx", options);
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescription.docx", options);
 }
 @Test
 public void allowCellSpacing() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Tables.docx");
+	Document doc = new Document("Your Directory Path" + "Tables.docx");
 	Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 	table.setAllowCellSpacing(true);
 	table.setCellSpacing(2.0);
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 }
 @Test
 public void buildTableWithStyle() throws Exception
@@ -443,12 +443,12 @@ public void buildTableWithStyle() throws Exception
 	builder.insertCell();
 	builder.writeln("50");
 	builder.endRow();
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 }
 @Test
 public void expandFormattingOnCellsAndRowFromStyle() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Tables.docx");
+	Document doc = new Document("Your Directory Path" + "Tables.docx");
 	// Get the first cell of the first table in the document.
 	Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 	Cell firstCell = table.getFirstRow().getFirstCell();
@@ -484,7 +484,7 @@ public void createTableStyle() throws Exception
 	tableStyle.setTopPadding(12.0);
 	tableStyle.setBottomPadding(12.0);
 	table.setStyle(tableStyle);
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.CreateTableStyle.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.CreateTableStyle.docx");
 }
 @Test
 public void defineConditionalFormatting() throws Exception
@@ -504,7 +504,7 @@ public void defineConditionalFormatting() throws Exception
 	tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatternColor(Color.yellow);
 	tableStyle.getConditionalStyles().getFirstRow().getShading().setTexture(TextureIndex.TEXTURE_NONE);
 	table.setStyle(tableStyle);
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");
 }
 @Test
 public void setTableCellFormatting() throws Exception
@@ -522,7 +522,7 @@ public void setTableCellFormatting() throws Exception
 	builder.writeln("I'm a wonderful formatted cell.");
 	builder.endRow();
 	builder.endTable();
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableCellFormatting.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableCellFormatting.docx");
 }
 @Test
 public void setTableRowFormatting() throws Exception
@@ -542,7 +542,7 @@ public void setTableRowFormatting() throws Exception
 	builder.writeln("I'm a wonderful formatted row.");
 	builder.endRow();
 	builder.endTable();
-	doc.save(getArtifactsDir() + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
+	doc.save("Your Directory Path" + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
 ## Conclusion

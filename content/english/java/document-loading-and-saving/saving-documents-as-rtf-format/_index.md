@@ -64,9 +64,9 @@ Replace `"path/to/output.rtf"` with the desired path and filename for the RTF ou
 ## Complete Source Code For Saving Documents as RTF Format in Aspose.Words for Java
 
 ```java
-Document doc = new Document(getMyDir() + "Document.docx");
+Document doc = new Document("Your Directory Path" + "Document.docx");
 RtfSaveOptions saveOptions = new RtfSaveOptions(); { saveOptions.setSaveImagesAsWmf(true); }
-doc.save(getArtifactsDir() + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
+doc.save("Your Directory Path" + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
 ```
 
 ## Conclusion

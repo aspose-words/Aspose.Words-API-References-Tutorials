@@ -41,7 +41,7 @@ Aspose.Words for Java allows you to manipulate form field properties. For instan
 ```java
 @Test
 public void formFieldsWorkWithProperties() throws Exception {
-    Document doc = new Document(getMyDir() + "Form fields.docx");
+    Document doc = new Document("Your Directory Path" + "Form fields.docx");
     FormField formField = doc.getRange().getFormFields().get(3);
     if (formField.getType() == FieldType.FIELD_FORM_TEXT_INPUT)
         formField.setResult("My name is " + formField.getName());
@@ -54,7 +54,7 @@ To work with form fields efficiently, you can access the form fields collection 
 ```java
 @Test
 public void formFieldsGetFormFieldsCollection() throws Exception {
-    Document doc = new Document(getMyDir() + "Form fields.docx");
+    Document doc = new Document("Your Directory Path" + "Form fields.docx");
     FormFieldCollection formFields = doc.getRange().getFormFields();
 }
 ```
@@ -65,7 +65,7 @@ You can also retrieve form fields by their names for further customization:
 ```java
 @Test
 public void formFieldsGetByName() throws Exception {
-    Document doc = new Document(getMyDir() + "Form fields.docx");
+    Document doc = new Document("Your Directory Path" + "Form fields.docx");
     FormFieldCollection documentFormFields = doc.getRange().getFormFields();
     FormField formField1 = documentFormFields.get(3);
     FormField formField2 = documentFormFields.get("Text2");

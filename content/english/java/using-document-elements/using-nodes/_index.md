@@ -80,7 +80,7 @@ To traverse all nodes in a document, you can use a recursive function like this:
 @Test
 public void recurseAllNodes() throws Exception
 {
-    Document doc = new Document(getMyDir() + "Paragraphs.docx");
+    Document doc = new Document("Your Directory Path" + "Paragraphs.docx");
     // Invoke the recursive function that will walk the tree.
     traverseAllNodes(doc);
 }

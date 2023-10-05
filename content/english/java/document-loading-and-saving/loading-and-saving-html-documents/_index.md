@@ -25,7 +25,13 @@ Before we dive into the code, make sure you have the following prerequisites in 
 Let's start by loading an HTML document into a Word document using Aspose.Words. We will use the following HTML snippet as an example:
 
 ```java
-final String HTML = "\r\n                <html>\r\n                    <select name='ComboBox' size='1'>\r\n                        <option value='val1'>item1</option>\r\n                        <option value='val2'></option>                        \r\n                    </select>\r\n                </html>\r\n            ";
+final String HTML = "\r\n
+					<html>\r\n
+					<select name='ComboBox' size='1'>\r\n
+					<option value='val1'>item1</option>\r\n
+					<option value='val2'></option>\r\n
+					</select>\r\n
+					</html>\r\n";
 
 HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 {
@@ -42,7 +48,7 @@ In this code, we create an HTML string and use `HtmlLoadOptions` to specify that
 Now that we have loaded the HTML into a `Document`, we can save it as a Word document. Let's save it in DOCX format:
 
 ```java
-doc.save(getArtifactsDir() + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
 ```
 
 This code saves the `Document` as a DOCX file, which is a common format for Word documents.
@@ -50,13 +56,19 @@ This code saves the `Document` as a DOCX file, which is a common format for Word
 ## Complete Source Code For Loading and Saving HTML Documents with Aspose.Words for Java
 
 ```java
-final String HTML = "\r\n                <html>\r\n                    <select name='ComboBox' size='1'>\r\n                        <option value='val1'>item1</option>\r\n                        <option value='val2'></option>                        \r\n                    </select>\r\n                </html>\r\n            ";
+final String HTML = "\r\n
+					<html>\r\n
+					<select name='ComboBox' size='1'>\r\n
+					<option value='val1'>item1</option>\r\n
+					<option value='val2'></option>\r\n
+					</select>\r\n
+					</html>\r\n";
 HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 {
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save(getArtifactsDir() + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
 ```
 
 ## Conclusion

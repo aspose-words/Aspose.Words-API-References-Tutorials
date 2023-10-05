@@ -187,7 +187,7 @@ After creating and customizing your document, don't forget to save it using the 
         Row row = primaryFooter.getTables().get(0).getFirstRow();
         row.getFirstCell().getCellFormat().setPreferredWidth(PreferredWidth.fromPercent(100 / 3));
         row.getLastCell().getCellFormat().setPreferredWidth(PreferredWidth.fromPercent(100 * 2 / 3));
-        doc.save(getArtifactsDir() + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
+        doc.save("Your Directory Path" + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
     }
 ```	
 Source code of copyHeadersFootersFromPreviousSection method

@@ -21,7 +21,7 @@ Before we dive into document comparison, ensure you have Aspose.Words for Java i
 Let's start with the basics of document comparison. We'll use two documents, `docA` and `docB`, and compare them.
 
 ```java
-Document docA = new Document(getMyDir() + "Document.docx");
+Document docA = new Document("Your Directory Path" + "Document.docx");
 Document docB = docA.deepClone();
 docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
@@ -94,7 +94,7 @@ builderA.getDocument().compare(builderB.getDocument(), "author", new Date(), com
 ## Complete Source Code For Comparing Documents in Aspose.Words for Java
 
 ```java
-	Document docA = new Document(getMyDir() + "Document.docx");
+	Document docA = new Document("Your Directory Path" + "Document.docx");
 	Document docB = docA.deepClone();
 	// DocA now contains changes as revisions.
 	docA.compare(docB, "user", new Date());
@@ -103,7 +103,7 @@ builderA.getDocument().compare(builderB.getDocument(), "author", new Date(), com
 @Test
 public void compareOptions() throws Exception
 {
-	Document docA = new Document(getMyDir() + "Document.docx");
+	Document docA = new Document("Your Directory Path" + "Document.docx");
 	Document docB = docA.deepClone();
 	CompareOptions options = new CompareOptions();
 	{
@@ -122,7 +122,7 @@ public void compareOptions() throws Exception
 @Test
 public void comparisonTarget() throws Exception
 {
-	Document docA = new Document(getMyDir() + "Document.docx");
+	Document docA = new Document("Your Directory Path" + "Document.docx");
 	Document docB = docA.deepClone();
 	// Relates to Microsoft Word "Show changes in" option in "Compare Documents" dialog box.
 	CompareOptions options = new CompareOptions(); { options.setIgnoreFormatting(true); options.setTarget(ComparisonTargetType.NEW); }

@@ -24,7 +24,7 @@ Before we begin, make sure you have the following prerequisites in place:
 First, we need to load the document that we want to save in HTML format. Here's how you can do it:
 
 ```java
-Document doc = new Document(getMyDir() + "YourDocument.docx");
+Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 ```
 
 Replace `"YourDocument.docx"` with the path to your Word document.
@@ -43,7 +43,7 @@ saveOptions.setUseTargetMachineFonts(true);
 Now, let's save the document as HTML with the fixed layout using the previously configured options:
 
 ```java
-doc.save(getArtifactsDir() + "FixedLayoutDocument.html", saveOptions);
+doc.save("Your Directory Path" + "FixedLayoutDocument.html", saveOptions);
 ```
 
 Replace `"FixedLayoutDocument.html"` with the desired name for your HTML file.
@@ -51,23 +51,13 @@ Replace `"FixedLayoutDocument.html"` with the desired name for your HTML file.
 ## Complete Source Code For Saving HTML Documents with Fixed Layout in Aspose.Words for Java
 
 ```java
-        Document doc = new Document(getMyDir() + "Bullet points with alternative font.docx");
+        Document doc = new Document("Your Directory Path" + "Bullet points with alternative font.docx");
         HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions();
         {
             saveOptions.setUseTargetMachineFonts(true);
         }
-        doc.save(getArtifactsDir() + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
+        doc.save("Your Directory Path" + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
     }
-    @Test
-    public void writeAllCssRulesInSingleFile() throws Exception {
-        Document doc = new Document(getMyDir() + "Document.docx");
-        // Setting this property to true restores the old behavior (separate files) for compatibility with legacy code.
-        // All CSS rules are written into single file "styles.css.
-        HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions();
-        {
-            saveOptions.setSaveFontFaceCssSeparately(false);
-        }
-        doc.save(getArtifactsDir() + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
 ## Conclusion

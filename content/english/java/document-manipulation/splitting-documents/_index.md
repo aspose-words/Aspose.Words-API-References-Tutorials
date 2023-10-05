@@ -18,10 +18,10 @@ One of the common requirements when dealing with large documents is splitting th
 
 ```java
 // Java code to split a document by headings using Aspose.Words for Java
-Document doc = new Document(getMyDir() + "Rendering.docx");
+Document doc = new Document("Your Directory Path" + "Rendering.docx");
 HtmlSaveOptions options = new HtmlSaveOptions();
 options.setDocumentSplitCriteria(DocumentSplitCriteria.HEADING_PARAGRAPH);
-doc.save(getArtifactsDir() + "SplitDocument.ByHeadingsHtml.html", options);
+doc.save("Your Directory Path" + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
 ## Document Splitting by Sections
@@ -30,10 +30,10 @@ Another way to split documents is by sections. Sections typically represent diff
 
 ```java
 // Java code to split a document by sections using Aspose.Words for Java
-Document doc = new Document(getMyDir() + "Rendering.docx");
+Document doc = new Document("Your Directory Path" + "Rendering.docx");
 HtmlSaveOptions options = new HtmlSaveOptions();
 options.setDocumentSplitCriteria(DocumentSplitCriteria.SECTION_BREAK);
-doc.save(getArtifactsDir() + "SplitDocument.BySectionsHtml.html", options);
+doc.save("Your Directory Path" + "SplitDocument.BySectionsHtml.html", options);
 ```
 
 ## Splitting Documents Page by Page
@@ -42,12 +42,12 @@ Splitting documents page by page is a useful technique when you need to extract 
 
 ```java
 // Java code to split a document page by page using Aspose.Words for Java
-Document doc = new Document(getMyDir() + "Big document.docx");
+Document doc = new Document("Your Directory Path" + "Big document.docx");
 int pageCount = doc.getPageCount();
 for (int page = 0; page < pageCount; page++)
 {
     Document extractedPage = doc.extractPages(page, 1);
-    extractedPage.save(getArtifactsDir() + "SplitDocument.PageByPage_" + (page + 1) + ".docx");
+    extractedPage.save("Your Directory Path" + "SplitDocument.PageByPage_" + (page + 1) + ".docx");
 }
 ```
 
@@ -57,9 +57,9 @@ After splitting a document, you may want to merge the split parts back together.
 
 ```java
 // Java code to merge split documents using Aspose.Words for Java
-File directory = new File(getArtifactsDir());
+File directory = new File("Your Directory Path");
 Collection<File> documentPaths = FileUtils.listFiles(directory, new WildcardFileFilter("SplitDocument.PageByPage_*.docx"), null);
-String sourceDocumentPath = FileUtils.getFile(getArtifactsDir(), "SplitDocument.PageByPage_1.docx").getPath();
+String sourceDocumentPath = FileUtils.getFile("Your Directory Path", "SplitDocument.PageByPage_1.docx").getPath();
 
 Document sourceDoc = new Document(sourceDocumentPath);
 Document mergedDoc = new Document();
@@ -74,7 +74,7 @@ for (File documentPath : documentPaths)
     sourceDoc = new Document(documentPath.getPath());
 }
 
-mergedDoc.save(getArtifactsDir() + "SplitDocument.MergeDocuments.docx");
+mergedDoc.save("Your Directory Path" + "SplitDocument.MergeDocuments.docx");
 ```
 
 ## Splitting Documents by Page Range
@@ -83,33 +83,33 @@ Sometimes, you may need to extract a specific range of pages from a document. He
 
 ```java
 // Java code to split a document by a specific page range using Aspose.Words for Java
-Document doc = new Document(getMyDir() + "Big document.docx");
+Document doc = new Document("Your Directory Path" + "Big document.docx");
 Document extractedPages = doc.extractPages(3, 6);
-extractedPages.save(getArtifactsDir() + "SplitDocument.ByPageRange.docx");
+extractedPages.save("Your Directory Path" + "SplitDocument.ByPageRange.docx");
 ```
 
 ## Complete Source Code For Splitting Documents in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Rendering.docx");
+	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	HtmlSaveOptions options = new HtmlSaveOptions();
 	{
 		// Split a document into smaller parts, in this instance split by heading.
 		options.setDocumentSplitCriteria(DocumentSplitCriteria.HEADING_PARAGRAPH);
 	}
-	doc.save(getArtifactsDir() + "SplitDocument.ByHeadingsHtml.html", options);
+	doc.save("Your Directory Path" + "SplitDocument.ByHeadingsHtml.html", options);
 }
 @Test
 public void bySectionsHtml() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Rendering.docx");
+	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	HtmlSaveOptions options = new HtmlSaveOptions(); { options.setDocumentSplitCriteria(DocumentSplitCriteria.SECTION_BREAK); }
-	doc.save(getArtifactsDir() + "SplitDocument.BySectionsHtml.html", options);
+	doc.save("Your Directory Path" + "SplitDocument.BySectionsHtml.html", options);
 }
 @Test
 public void bySections() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Big document.docx");
+	Document doc = new Document("Your Directory Path" + "Big document.docx");
 	for (int i = 0; i < doc.getSections().getCount(); i++)
 	{
 		// Split a document into smaller parts, in this instance, split by section.
@@ -119,29 +119,29 @@ public void bySections() throws Exception
 		Section newSection = (Section) newDoc.importNode(section, true);
 		newDoc.getSections().add(newSection);
 		// Save each section as a separate document.
-		newDoc.save(getArtifactsDir() + MessageFormat.format("SplitDocument.BySections_{0}.docx", i));
+		newDoc.save("Your Directory Path" + MessageFormat.format("SplitDocument.BySections_{0}.docx", i));
 	}
 }
 @Test
 public void pageByPage() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Big document.docx");
+	Document doc = new Document("Your Directory Path" + "Big document.docx");
 	int pageCount = doc.getPageCount();
 	for (int page = 0; page < pageCount; page++)
 	{
 		// Save each page as a separate document.
 		Document extractedPage = doc.extractPages(page, 1);
-		extractedPage.save(getArtifactsDir() + MessageFormat.format("SplitDocument.PageByPage_{0}.docx", page + 1));
+		extractedPage.save("Your Directory Path" + MessageFormat.format("SplitDocument.PageByPage_{0}.docx", page + 1));
 	}
 	mergeDocuments();
 }
 private void mergeDocuments() throws Exception
 {
 	// Find documents using for merge.
-	File directory = new File(getArtifactsDir());
+	File directory = new File("Your Directory Path");
 	Collection<File> documentPaths = FileUtils.listFiles(directory, new WildcardFileFilter("SplitDocument.PageByPage_*.docx"), null);
 	String sourceDocumentPath =
-			FileUtils.getFile(getArtifactsDir(), "SplitDocument.PageByPage_1.docx").getPath();
+			FileUtils.getFile("Your Directory Path", "SplitDocument.PageByPage_1.docx").getPath();
 	// Open the first part of the resulting document.
 	Document sourceDoc = new Document(sourceDocumentPath);
 	// Create a new resulting document.
@@ -156,15 +156,15 @@ private void mergeDocuments() throws Exception
 		mergedDocBuilder.insertDocument(sourceDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 		sourceDoc = new Document(documentPath.getPath());
 	}
-	mergedDoc.save(getArtifactsDir() + "SplitDocument.MergeDocuments.docx");
+	mergedDoc.save("Your Directory Path" + "SplitDocument.MergeDocuments.docx");
 }
 @Test
 public void byPageRange() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Big document.docx");
+	Document doc = new Document("Your Directory Path" + "Big document.docx");
 	// Get part of the document.
 	Document extractedPages = doc.extractPages(3, 6);
-	extractedPages.save(getArtifactsDir() + "SplitDocument.ByPageRange.docx");
+	extractedPages.save("Your Directory Path" + "SplitDocument.ByPageRange.docx");
 ```
 
 ## Conclusion

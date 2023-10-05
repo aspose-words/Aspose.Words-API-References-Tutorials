@@ -16,7 +16,7 @@ When working with document processing in Java, it's crucial to determine the for
 
 Before we begin, ensure you have the following prerequisites:
 
-- [Aspose.Words for Java](https://reference.aspose.com/words/java/)
+- [Aspose.Words for Java](https://releases.aspose.com/words/java/)
 - Java Development Kit (JDK) installed on your system
 - Basic knowledge of Java programming
 
@@ -25,10 +25,10 @@ Before we begin, ensure you have the following prerequisites:
 First, we need to set up the necessary directories to organize our files effectively. We'll create directories for different document types.
 
 ```java
-File supportedDir = new File(getArtifactsDir() + "Supported");
-File unknownDir = new File(getArtifactsDir() + "Unknown");
-File encryptedDir = new File(getArtifactsDir() + "Encrypted");
-File pre97Dir = new File(getArtifactsDir() + "Pre97");
+File supportedDir = new File("Your Directory Path" + "Supported");
+File unknownDir = new File("Your Directory Path" + "Unknown");
+File encryptedDir = new File("Your Directory Path" + "Encrypted");
+File pre97Dir = new File("Your Directory Path" + "Pre97");
 
 // Create the directories if they do not already exist.
 if (!supportedDir.exists())
@@ -48,7 +48,7 @@ We've created directories for supported, unknown, encrypted, and pre-97 document
 Now, let's detect the format of the documents in our directories. We'll use Aspose.Words for Java to achieve this.
 
 ```java
-Set<String> listFiles = Stream.of(new File(getMyDir()).listFiles())
+Set<String> listFiles = Stream.of(new File("Your Directory Path").listFiles())
     .filter(file -> !file.getName().endsWith("Corrupted document.docx") && !Files.isDirectory(file.toPath()))
     .map(File::getPath)
     .collect(Collectors.toSet());
@@ -92,10 +92,10 @@ In this code snippet, we iterate through the files, detect their formats, and or
 ## Complete Source Code For Determining Document Format in Aspose.Words for Java
 
 ```java
-        File supportedDir = new File(getArtifactsDir() + "Supported");
-        File unknownDir = new File(getArtifactsDir() + "Unknown");
-        File encryptedDir = new File(getArtifactsDir() + "Encrypted");
-        File pre97Dir = new File(getArtifactsDir() + "Pre97");
+        File supportedDir = new File("Your Directory Path" + "Supported");
+        File unknownDir = new File("Your Directory Path" + "Unknown");
+        File encryptedDir = new File("Your Directory Path" + "Encrypted");
+        File pre97Dir = new File("Your Directory Path" + "Pre97");
         // Create the directories if they do not already exist.
         if (supportedDir.exists() == false)
             supportedDir.mkdir();
@@ -105,7 +105,7 @@ In this code snippet, we iterate through the files, detect their formats, and or
             encryptedDir.mkdir();
         if (pre97Dir.exists() == false)
             pre97Dir.mkdir();
-        Set<String> listFiles = Stream.of(new File(getMyDir()).listFiles())
+        Set<String> listFiles = Stream.of(new File("Your Directory Path").listFiles())
                 .filter(file -> !file.getName().endsWith("Corrupted document.docx") && !Files.isDirectory(file.toPath()))
                 .map(File::getPath)
                 .collect(Collectors.toSet());
@@ -178,21 +178,7 @@ In this code snippet, we iterate through the files, detect their formats, and or
                 }
             }
         }
-    }
-    @Test
-    public void detectDocumentSignatures() throws Exception
-    {
-        FileFormatInfo info = FileFormatUtil.detectFileFormat(getMyDir() + "Digitally signed.docx");
-        if (info.hasDigitalSignature())
-        {
-            System.out.println("Document {Path.GetFileName(MyDir + ");
-        }
-    }
-    @Test
-    public void verifyEncryptedDocument() throws Exception
-    {
-        FileFormatInfo info = FileFormatUtil.detectFileFormat(getMyDir() + "Encrypted.docx");
-        System.out.println(info.isEncrypted());
+
 ```
 
 ## Conclusion
@@ -203,7 +189,7 @@ Determining document formats in Aspose.Words for Java is essential for efficient
 
 ### How do I install Aspose.Words for Java?
 
-You can download Aspose.Words for Java from the [website](https://releases.aspose.com/words/java/) and follow the installation instructions provided.
+You can download Aspose.Words for Java from the [here](https://releases.aspose.com/words/java/) and follow the installation instructions provided.
 
 ### What are the supported document formats?
 

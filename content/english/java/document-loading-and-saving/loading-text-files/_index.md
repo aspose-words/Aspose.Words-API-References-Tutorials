@@ -45,7 +45,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions();
 }
 // Load the document while applying LoadOptions as a parameter and verify the result.
 Document doc = new Document(new ByteArrayInputStream(TEXT_DOC.getBytes()), loadOptions);
-doc.save(getArtifactsDir() + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
+doc.save("Your Directory Path" + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
 ```
 
 This code demonstrates how to load a text document with various list formats and use the `DetectNumberingWithWhitespaces` option to detect lists correctly.
@@ -66,7 +66,7 @@ public void handleSpacesOptions() throws Exception {
         loadOptions.setTrailingSpacesOptions(TxtTrailingSpacesOptions.TRIM);
     }
     Document doc = new Document(new ByteArrayInputStream(TEXT_DOC.getBytes()), loadOptions);
-    doc.save(getArtifactsDir() + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
+    doc.save("Your Directory Path" + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 }
 ```
 
@@ -83,10 +83,10 @@ public void documentTextDirection() throws Exception {
     {
         loadOptions.setDocumentDirection(DocumentDirection.AUTO);
     }
-    Document doc = new Document(getMyDir() + "Hebrew text.txt", loadOptions);
+    Document doc = new Document("Your Directory Path" + "Hebrew text.txt", loadOptions);
     Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
     System.out.println(paragraph.getParagraphFormat().getBidi());
-    doc.save(getArtifactsDir() + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
+    doc.save("Your Directory Path" + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 }
 ```
 
@@ -95,6 +95,7 @@ This code sets the document direction to auto-detection (`DocumentDirection.AUTO
 ## Complete Source Code For Loading Text Files with Aspose.Words for Java
 
 ```java
+public void detectNumberingWithWhitespaces() throws Exception {
 	// Create a plaintext document in the form of a string with parts that may be interpreted as lists.
 	// Upon loading, the first three lists will always be detected by Aspose.Words,
 	// and List objects will be created for them after loading.
@@ -123,7 +124,7 @@ This code sets the document direction to auto-detection (`DocumentDirection.AUTO
 	}
 	// Load the document while applying LoadOptions as a parameter and verify the result.
 	Document doc = new Document(new ByteArrayInputStream(TEXT_DOC.getBytes()), loadOptions);
-	doc.save(getArtifactsDir() + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
+	doc.save("Your Directory Path" + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
 }
 @Test
 public void handleSpacesOptions() throws Exception {
@@ -136,7 +137,7 @@ public void handleSpacesOptions() throws Exception {
 		loadOptions.setTrailingSpacesOptions(TxtTrailingSpacesOptions.TRIM);
 	}
 	Document doc = new Document(new ByteArrayInputStream(TEXT_DOC.getBytes()), loadOptions);
-	doc.save(getArtifactsDir() + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
+	doc.save("Your Directory Path" + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 }
 @Test
 public void documentTextDirection() throws Exception {
@@ -144,10 +145,11 @@ public void documentTextDirection() throws Exception {
 	{
 		loadOptions.setDocumentDirection(DocumentDirection.AUTO);
 	}
-	Document doc = new Document(getMyDir() + "Hebrew text.txt", loadOptions);
+	Document doc = new Document("Your Directory Path" + "Hebrew text.txt", loadOptions);
 	Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
 	System.out.println(paragraph.getParagraphFormat().getBidi());
-	doc.save(getArtifactsDir() + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
+	doc.save("Your Directory Path" + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
+	}
 ```
 
 ## Conclusion

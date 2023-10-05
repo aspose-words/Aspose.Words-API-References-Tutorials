@@ -28,7 +28,7 @@ public void insertOleObject() throws Exception
     Document doc = new Document();
     DocumentBuilder builder = new DocumentBuilder(doc);
     builder.insertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
-    doc.save(getArtifactsDir() + "WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
+    doc.save("Your Directory Path" + "WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
 }
 ```
 
@@ -44,7 +44,7 @@ public void insertOleObjectWithOlePackage() throws Exception
 {
     Document doc = new Document();
     DocumentBuilder builder = new DocumentBuilder(doc);
-    byte[] bs = FileUtils.readFileToByteArray(new File(getMyDir() + "Zip file.zip"));
+    byte[] bs = FileUtils.readFileToByteArray(new File("Your Directory Path" + "Zip file.zip"));
     try (ByteArrayInputStream stream = new ByteArrayInputStream(bs))
     {
         Shape shape = builder.insertOleObject(stream, "Package", true, null);
@@ -68,7 +68,7 @@ public void insertOleObjectAsIcon() throws Exception
 {
     Document doc = new Document();
     DocumentBuilder builder = new DocumentBuilder(doc);
-    builder.insertOleObjectAsIcon(getMyDir() + "Presentation.pptx", false, getImagesDir() + "Logo icon.ico", "My embedded file");
+    builder.insertOleObjectAsIcon("Your Directory Path" + "Presentation.pptx", false, getImagesDir() + "Logo icon.ico", "My embedded file");
     doc.save(outPath + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
 }
 ```
@@ -83,7 +83,7 @@ Now, let's shift our focus to ActiveX controls. We'll learn how to read properti
 @Test
 public void readActiveXControlProperties() throws Exception
 {
-    Document doc = new Document(getMyDir() + "ActiveX controls.docx");
+    Document doc = new Document("Your Directory Path" + "ActiveX controls.docx");
     String properties = "";
     for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true))
     {

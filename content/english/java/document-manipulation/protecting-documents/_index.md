@@ -17,7 +17,7 @@ Document protection is a vital feature when dealing with sensitive information. 
 To protect your documents, you can set a password. Only users who know the password will be able to access the document. Let's see how to do it in code:
 
 ```java
-Document doc = new Document(getMyDir() + "Document.docx");
+Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 ```
 
@@ -28,7 +28,7 @@ In the code above, we load a Word document and protect it with a password, allow
 If you need to remove the protection from a document, Aspose.Words for Java makes it easy:
 
 ```java
-Document doc = new Document(getMyDir() + "Document.docx");
+Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
@@ -39,7 +39,7 @@ The `unprotect` method removes any protection applied to the document, making it
 You may want to determine the protection type applied to a document programmatically:
 
 ```java
-Document doc = new Document(getMyDir() + "Document.docx");
+Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
@@ -48,19 +48,19 @@ The `getProtectionType` method returns an integer representing the protection ty
 ## Complete Source Code For Protecting Documents in Aspose.Words for Java
 
 ```java
-	Document doc = new Document(getMyDir() + "Document.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx");
 	doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 }
 @Test
 public void unprotect() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Document.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx");
 	doc.unprotect();
 }
 @Test
 public void getProtectionType() throws Exception
 {
-	Document doc = new Document(getMyDir() + "Document.docx");
+	Document doc = new Document("Your Directory Path" + "Document.docx");
 	/*ProtectionType*/int protectionType = doc.getProtectionType();
 ```
 

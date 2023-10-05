@@ -32,7 +32,7 @@ Let's get started with the step-by-step process of working with Office Math in A
 First, load the document that contains the Office Math equation you want to work with:
 
 ```java
-Document doc = new Document(getMyDir() + "OfficeMath.docx");
+Document doc = new Document("Your Directory Path" + "OfficeMath.docx");
 ```
 
 ### Step 2: Access the Office Math Object
@@ -64,18 +64,18 @@ officeMath.setJustification(OfficeMathJustification.LEFT);
 Finally, save the document with the modified Office Math equation:
 
 ```java
-doc.save(getArtifactsDir() + "ModifiedOfficeMath.docx");
+doc.save("Your Directory Path" + "ModifiedOfficeMath.docx");
 ```
 
 ## Complete Source Code For Using Office Math Objects in Aspose.Words for Java
 
 ```java
-        Document doc = new Document(getMyDir() + "Office math.docx");
+        Document doc = new Document("Your Directory Path" + "Office math.docx");
         OfficeMath officeMath = (OfficeMath) doc.getChild(NodeType.OFFICE_MATH, 0, true);
         // OfficeMath display type represents whether an equation is displayed inline with the text or displayed on its line.
         officeMath.setDisplayType(OfficeMathDisplayType.DISPLAY);
         officeMath.setJustification(OfficeMathJustification.LEFT);
-        doc.save(getArtifactsDir() + "WorkingWithOfficeMath.MathEquations.docx");
+        doc.save("Your Directory Path" + "WorkingWithOfficeMath.MathEquations.docx");
 ```
 
 ## Conclusion

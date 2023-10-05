@@ -73,14 +73,16 @@ Replace `"output.txt"` with the desired file path where you want to save the tex
 ## Complete Source Code For Saving Documents as Text Files in Aspose.Words for Java
 
 ```java
-        Document doc = new Document();
+    public void addBidiMarks() throws Exception
+    {        
+		Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
         builder.writeln("Hello world!");
         builder.getParagraphFormat().setBidi(true);
         builder.writeln("שלום עולם!");
         builder.writeln("مرحبا بالعالم!");
         TxtSaveOptions saveOptions = new TxtSaveOptions(); { saveOptions.setAddBidiMarks(true); }
-        doc.save(getArtifactsDir() + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
+        doc.save("Your Directory Path" + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
     }
     @Test
     public void useTabCharacterPerLevelForListIndentation() throws Exception
@@ -97,7 +99,7 @@ Replace `"output.txt"` with the desired file path where you want to save the tex
         TxtSaveOptions saveOptions = new TxtSaveOptions();
         saveOptions.getListIndentation().setCount(1);
         saveOptions.getListIndentation().setCharacter('\t');
-        doc.save(getArtifactsDir() + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
+        doc.save("Your Directory Path" + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
     }
     @Test
     public void useSpaceCharacterPerLevelForListIndentation() throws Exception
@@ -114,7 +116,8 @@ Replace `"output.txt"` with the desired file path where you want to save the tex
         TxtSaveOptions saveOptions = new TxtSaveOptions();
         saveOptions.getListIndentation().setCount(3);
         saveOptions.getListIndentation().setCharacter(' ');
-        doc.save(getArtifactsDir() + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
+        doc.save("Your Directory Path" + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
+	}
 ```
 
 ## Conclusion
