@@ -31,7 +31,7 @@ Document doc = new Document();
 
 ## Aggiunta di contenuto al documento
 
-Ora che hai un documento vuoto, puoi iniziare ad aggiungervi contenuto. Aspose.Words ti consente di inserire testo, immagini, tabelle e altri elementi nel tuo documento. Ecco un esempio di aggiunta di testo:
+Ora che hai un documento vuoto, puoi iniziare ad aggiungervi contenuti. Aspose.Words ti consente di inserire testo, immagini, tabelle e altri elementi nel tuo documento. Ecco un esempio di aggiunta di testo:
 
 ```java
 // Crea un nuovo paragrafo e aggiungilo al documento

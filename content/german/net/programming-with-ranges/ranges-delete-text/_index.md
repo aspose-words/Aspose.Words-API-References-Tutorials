@@ -31,7 +31,7 @@ Sobald das Dokument geladen ist, können Sie zu Abschnitten des Dokuments navigi
 doc.Sections[0].Range.Delete();
 ```
 
-In diesem Beispiel greifen wir mit Index 0 auf den ersten Abschnitt des Dokuments zu (Abschnitte werden ab 0 indiziert). Als Nächstes rufen wir die Methode „Delete“ für den Abschnittsbereich auf, um den gesamten Text aus diesem Bereich zu löschen.
+In diesem Beispiel greifen wir auf den ersten Abschnitt des Dokuments mit Index 0 zu (Abschnitte werden ab 0 indiziert). Als Nächstes rufen wir die Methode „Delete“ für den Abschnittsbereich auf, um den gesamten Text aus diesem Bereich zu löschen.
 
 ## Geändertes Dokument speichern
 

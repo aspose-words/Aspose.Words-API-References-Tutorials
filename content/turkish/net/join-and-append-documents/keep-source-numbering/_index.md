@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/join-and-append-documents/keep-source-numbering/
 ---
 
-Bu eğitimde, Aspose.Words for .NET kullanılarak numaralandırılmış paragrafların orijinal numaralandırma formatı korunurken, bir kaynak belgenin hedef belgeye nasıl ekleneceği açıklanmaktadır.
+Bu eğitimde, Aspose.Words for .NET kullanılarak numaralı paragrafların orijinal numaralandırma formatı korunarak bir kaynak belgenin hedef belgeye nasıl ekleneceği açıklanmaktadır.
 
 ## 1. Adım: Projeyi ayarlayın
 

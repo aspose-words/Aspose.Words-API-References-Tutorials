@@ -93,7 +93,7 @@ In questo tutorial, hai imparato come nascondere l'asse del grafico in un docume
 
 Nascondere l'asse del grafico può essere utile quando vuoi concentrarti sui dati del grafico senza la distrazione delle linee e delle etichette degli assi. Fornisce un aspetto più pulito e minimalista al grafico.
 
-Utilizzando Aspose.Words per .NET, puoi facilmente incorporare funzionalità di creazione di grafici nelle tue applicazioni .NET e generare documenti dall'aspetto professionale con grafici personalizzati e assi del grafico nascosti.
+Utilizzando Aspose.Words per .NET, puoi facilmente incorporare funzionalità di creazione di grafici nelle tue applicazioni .NET e generare documenti dall'aspetto professionale con grafici personalizzati e assi dei grafici nascosti.
 
 ### Domande frequenti
 

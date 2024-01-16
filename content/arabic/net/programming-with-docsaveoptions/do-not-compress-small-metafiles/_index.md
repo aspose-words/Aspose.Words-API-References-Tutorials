@@ -60,7 +60,7 @@ saveOptions.Compliance = PdfCompliance.PdfA1a;
 
 ## الخطوة 5: احفظ المستند
 
-وأخيرًا، يمكنك حفظ المستند باستخدام ملف`Save` طريقة فئة الوثيقة. حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
+وأخيرًا، يمكنك حفظ المستند باستخدام ملف`Save` طريقة فئة الوثيقة حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
 
 ```csharp
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);

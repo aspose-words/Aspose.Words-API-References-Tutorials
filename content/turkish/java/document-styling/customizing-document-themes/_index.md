@@ -120,6 +120,6 @@ Aspose.Words for Java, özelleştirmeleriniz için başlangıç noktası olarak 
 
 ## Çözüm
 
-Aspose.Words for Java'yı kullanarak belge temalarını özelleştirmek, Java uygulamalarınızda görsel olarak çekici ve tutarlı belgeler oluşturmanızı sağlar. Bu kılavuzda, renkleri ve yazı tiplerini değiştirmek de dahil olmak üzere tema özelleştirmenin temellerini ele aldık. Verilen örnekleri ve en iyi uygulamaları takip ederek belge temalarını özelleştirme sanatında ustalaşabilirsiniz.
+Aspose.Words for Java kullanarak belge temalarını özelleştirmek, Java uygulamalarınızda görsel olarak çekici ve tutarlı belgeler oluşturmanızı sağlar. Bu kılavuzda, renkleri ve yazı tiplerini değiştirmek de dahil olmak üzere tema özelleştirmenin temellerini ele aldık. Verilen örnekleri ve en iyi uygulamaları takip ederek belge temalarını özelleştirme sanatında ustalaşabilirsiniz.
 
 Artık bilgi ve kod elinizin altında olduğuna göre, Aspose.Words ile Java belge işleme becerilerinizi geliştirin. Öne çıkan ve kullanıcılarınızı etkileyen çarpıcı belgeler oluşturun.

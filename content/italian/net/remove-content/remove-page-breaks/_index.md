@@ -14,7 +14,7 @@ In questo tutorial esploreremo come rimuovere le interruzioni di pagina nel docu
 Prima di iniziare, assicurati di avere quanto segue:
 
 - Conoscenza base del linguaggio di programmazione C#
-- Aspose.Words per la libreria .NET installata
+- Libreria Aspose.Words per .NET installata
 - Visual Studio o qualsiasi altro ambiente di sviluppo C# configurato
 
 ## Passaggio 1: impostazione dell'ambiente

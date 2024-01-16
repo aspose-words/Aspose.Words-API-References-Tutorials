@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## Schritt 2: Einfügen der Zusammenführungsfelder
 
- Wir verwenden einen Dokumenten-Builder`DocumentBuilder` um die erforderlichen Zusammenführungsfelder einzufügen. Diese Zusammenführungsfelder legen eine Bedingung fest, um den Inhalt des Lesezeichens je nach Wert anzuzeigen oder auszublenden`showHide` Variable:
+ Wir verwenden einen Document Builder`DocumentBuilder` um die erforderlichen Zusammenführungsfelder einzufügen. Diese Zusammenführungsfelder legen eine Bedingung fest, um den Inhalt des Lesezeichens je nach Wert anzuzeigen oder auszublenden`showHide` Variable:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -72,7 +72,7 @@ R: La función Mover a párrafo en Aspose.Words para .NET permite a los desarrol
 
 #### P: ¿Cómo muevo DocumentBuilder a un párrafo específico en un documento de Word?
 
-R: Puede utilizar el método MoveToParagraph de la clase DocumentBuilder. Este método toma dos parámetros: el índice del párrafo de destino y la posición del carácter dentro de ese párrafo (0 representa el comienzo del párrafo).
+R: Puede utilizar el método MoveToParagraph de la clase DocumentBuilder. Este método toma dos parámetros: el índice del párrafo de destino y la posición del carácter dentro de ese párrafo (0 representa el inicio del párrafo).
 
 #### P: ¿Puedo modificar el contenido de un párrafo usando la función Mover al párrafo?
 

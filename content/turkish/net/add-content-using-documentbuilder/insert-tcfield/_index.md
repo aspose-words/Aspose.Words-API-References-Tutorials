@@ -43,9 +43,9 @@ Yukarıdaki kod, TCField içeren belgeyi belirtilen dizine kaydedecektir.
 
 ## Çıktı İşaretleme Formatları
 
-Kod başarılı bir şekilde yürütüldüğünde, çıktı belgesi, belirtilen giriş metnini içeren bir içindekiler girişi içerecektir. TCField, Word belgesinde bir alan olarak temsil edilir ve sonuçta ortaya çıkan işaretleme biçimi, belgenin nasıl işlendiğine bağlı olacaktır.
+Kod başarılı bir şekilde yürütüldüğünde, çıktı belgesi, belirtilen giriş metnini içeren bir içindekiler tablosu girişi içerecektir. TCField, Word belgesinde bir alan olarak temsil edilir ve ortaya çıkan işaretleme biçimi, belgenin nasıl işlendiğine bağlı olacaktır.
 
-Lütfen çıktı belgesinin doğrudan işaretleme formatında değil, Word formatında olduğunu unutmayın. Ancak uygun araçları veya kitaplıkları kullanarak Word belgesini işaretlemeye dönüştürdüğünüzde TCField buna göre işlenecektir.
+Lütfen çıktı belgesinin doğrudan işaretleme formatında değil, Word formatında olduğunu unutmayın. Ancak, uygun araçları veya kitaplıkları kullanarak Word belgesini işaretlemeye dönüştürdüğünüzde TCField buna göre işlenecektir.
 
 ### Aspose.Words for .NET kullanarak TCField Ekleme için Örnek Kaynak Kodu
 
@@ -67,7 +67,7 @@ Kodu gereksinimlerinize göre değiştirmekten ve Aspose.Words for .NET tarafın
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesine TCField'ı nasıl ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak artık belgelerinize özel giriş metinleri içeren içindekiler tablosu girişleri ekleyebilirsiniz.
+Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesine TCField'ı nasıl ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve verilen kaynak kodunu kullanarak, artık belgelerinize özel giriş metinleri içeren içindekiler tablosu girişleri ekleyebilirsiniz.
 
 TCField özelliği, Word belgelerinizde düzenli ve gezinilebilir içindekiler tablosu oluşturmak için kullanışlı bir araçtır. Gezinmesi kolay, profesyonel ve yapılandırılmış belgeler oluşturmak için farklı giriş metinleri ve biçimlendirme seçeneklerini deneyin. Belgedeki en son içeriği yansıttığından emin olmak için, değişiklik yaptıktan sonra içindekiler tablosunu güncellemeyi unutmayın.
 

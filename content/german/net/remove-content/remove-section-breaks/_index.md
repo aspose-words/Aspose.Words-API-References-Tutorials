@@ -32,7 +32,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 ```
 
 ## Schritt 3: Abschnittsumbrüche entfernen
-Um Abschnittsumbrüche zu entfernen, durchlaufen wir alle Abschnitte, beginnend mit dem Abschnitt, der dem letzten vorangeht, und gehen zum ersten Abschnitt über. Innerhalb der Schleife stellen wir den Inhalt jedes Abschnitts am Anfang des letzten Abschnitts voran und entfernen dann den kopierten Abschnitt.
+Um Abschnittsumbrüche zu entfernen, durchlaufen wir alle Abschnitte, beginnend mit dem Abschnitt, der dem letzten vorausgeht, und gehen zum ersten Abschnitt über. Innerhalb der Schleife stellen wir den Inhalt jedes Abschnitts am Anfang des letzten Abschnitts voran und entfernen dann den kopierten Abschnitt.
 
 ```csharp
 // Durchlaufen Sie alle Abschnitte, beginnend mit dem Abschnitt, der dem letzten vorausgeht, und fahren Sie mit dem ersten Abschnitt fort.

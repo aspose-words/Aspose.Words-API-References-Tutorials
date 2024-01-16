@@ -84,7 +84,7 @@ Object[] fieldValues = {
 doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
-HandleMergeField Sınıfının kaynak kodu
+Class HandleMergeField'ın kaynak kodu
 
 ```java
     private static class HandleMergeField implements IFieldMergingCallback

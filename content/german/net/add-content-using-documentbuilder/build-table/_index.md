@@ -112,7 +112,7 @@ Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET 
 
 #### F: Was ist Aspose.Words für .NET?
 
-A: Aspose.Words für .NET ist eine leistungsstarke Dokumentverarbeitungsbibliothek, die es Entwicklern ermöglicht, Microsoft Word-Dokumente programmgesteuert in .NET-Anwendungen zu erstellen, zu lesen, zu bearbeiten und zu konvertieren. Es bietet eine breite Palette von Funktionen für die Arbeit mit Word-Dokumenten, wie z. B. Textbearbeitung, Tabellenerstellung, Dokumentschutz, Formatierung und mehr.
+A: Aspose.Words für .NET ist eine leistungsstarke Dokumentverarbeitungsbibliothek, die es Entwicklern ermöglicht, Microsoft Word-Dokumente programmgesteuert in .NET-Anwendungen zu erstellen, zu lesen, zu bearbeiten und zu konvertieren. Es bietet eine breite Palette von Funktionen für die Arbeit mit Word-Dokumenten, wie z. B. Textbearbeitung, Tabellenerstellung, Dokumentenschutz, Formatierung und mehr.
 
 #### F: Wie kann ich mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument erstellen?
 

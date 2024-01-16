@@ -24,14 +24,14 @@ In dieser Tutorialreihe führen wir Sie durch verschiedene Aspekte der Datenvisu
 - Diagrammerstellung: Entdecken Sie Techniken zum Erstellen optisch ansprechender Diagramme zur Visualisierung von Datentrends.
 - Tabellenformatierung: Beherrschen Sie die Kunst, Tabellen zu formatieren, um Daten effektiv zu organisieren.
 - Dokumentgestaltung: Entdecken Sie Methoden zur Gestaltung von Dokumenten, die Konsistenz und Professionalität gewährleisten.
-- Berichterstellung: Erfahren Sie, wie Sie ganz einfach umfassende Berichte erstellen.
+- Berichtserstellung: Erfahren Sie, wie Sie ganz einfach umfassende Berichte erstellen.
 - Datengesteuerte Dokumente: Entdecken Sie die Zusammenführung von Daten und Dokumenten und ermöglichen Sie so intelligente Berichte.
 - Benutzerdefinierte Formatierung: Erfahren Sie, wie Sie benutzerdefinierte Formatierungen anwenden, um bestimmte Dokumentanforderungen zu erfüllen.
 - Python- und .NET-Integration: Profitieren Sie von Tutorials, die sich sowohl an Python- als auch an .NET-Entwickler richten.
 
 Am Ende dieser Serie werden Sie in der Lage sein, Daten in visuell ansprechende Dokumente und Berichte umzuwandeln. Unabhängig davon, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, vermitteln Ihnen diese Tutorials das Wissen und die Fähigkeiten, die Sie benötigen, um mit Aspose.Words eine wirkungsvolle Datenvisualisierung und -formatierung zu erreichen.
 
-## Tutorials zur Datenvisualisierung und Formatierung
+## Tutorials zur Datenvisualisierung und -formatierung
 ### [Visualisieren von Daten mit dynamischen Dokumentdiagrammen](./visualize-data-document-charts/)
 Erfahren Sie, wie Sie mit Aspose.Words für Python dynamische Dokumentdiagramme erstellen. Verbessern Sie die Datenvisualisierung in Ihren Dokumenten mit interaktiven Diagrammen.
 ### [Verbessern Sie die Wirkung von Dokumenten mit Rich Media-Bildern](./document-images/)

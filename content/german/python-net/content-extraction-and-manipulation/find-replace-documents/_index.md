@@ -40,7 +40,7 @@ doc = aw.Document("path/to/your/document.docx")
 
 ## Schritt 3: Einfache Textersetzung
 
-Führen Sie einen einfachen Such- und Ersetzungsvorgang für ein bestimmtes Wort oder eine bestimmte Phrase aus:
+Führen Sie einen einfachen Such- und Ersetzungsvorgang für ein bestimmtes Wort oder eine bestimmte Phrase durch:
 
 ```python
 search_text = "old_text"

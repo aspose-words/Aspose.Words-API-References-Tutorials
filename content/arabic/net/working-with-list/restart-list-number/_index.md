@@ -2,7 +2,7 @@
 title: إعادة تشغيل رقم القائمة
 linktitle: إعادة تشغيل رقم القائمة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إعادة تعيين رقم القائمة في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إعادة تعيين رقم القائمة في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/working-with-list/restart-list-number/

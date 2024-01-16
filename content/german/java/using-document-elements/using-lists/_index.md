@@ -55,7 +55,7 @@ builder.getListFormat().setList(list);
 ```
 
 ### Listenelemente hinzufügen: 
-Verwenden Sie eine Schleife, um Listenelemente zu Ihrem Dokument hinzuzufügen. Nach dem 15. Element fügen wir einen Abschnittswechsel ein.
+Verwenden Sie eine Schleife, um Listenelemente zu Ihrem Dokument hinzuzufügen. Nach dem 15. Element fügen wir einen Abschnittsumbruch ein.
 
 ```java
 for (int i = 1; i < 45; i++) {

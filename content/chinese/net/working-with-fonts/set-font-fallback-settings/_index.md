@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 #### 问：在使用 Aspose.Words 替换 Word 文档时，如何检测缺失的字体？
 
-答：Aspose.Words 允许您使用 API 检测 Word 文档中替换过程中丢失的字体。您可以使用 Aspose.Words 提供的方法来检查所需字体的可用性，并在缺少字体的情况下采取适当的措施。
+答：Aspose.Words 允许您使用 API 检测 Word 文档中替换过程中丢失的字体。您可以使用 Aspose.Words 提供的方法来检查所需字体的可用性，并在缺少字体的情况下采取适当的操作。
 
 #### 问：字体替换会影响我的 Word 文档的布局吗？
 

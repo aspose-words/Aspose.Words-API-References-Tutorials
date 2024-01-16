@@ -120,7 +120,7 @@ Wenn Sie mit Lesezeichen vertrauter werden, können Sie fortgeschrittene Technik
 
 ## Abschluss
 
-Dokumentlesezeichen sind unschätzbare Werkzeuge, mit denen Sie in großen Dokumenten effizient navigieren und diese verwalten können. Mit der Aspose.Words for Python-API haben Sie die Möglichkeit, lesezeichenbezogene Funktionen nahtlos in Ihre Anwendungen zu integrieren und so Ihre Dokumentenverarbeitungsaufgaben reibungsloser und rationalisierter zu gestalten.
+Dokumentlesezeichen sind unschätzbar wertvolle Tools, mit denen Sie in großen Dokumenten effizient navigieren und diese verwalten können. Mit der Aspose.Words for Python-API haben Sie die Möglichkeit, lesezeichenbezogene Funktionen nahtlos in Ihre Anwendungen zu integrieren und so Ihre Dokumentenverarbeitungsaufgaben reibungsloser und rationalisierter zu gestalten.
 
 ## FAQs
 

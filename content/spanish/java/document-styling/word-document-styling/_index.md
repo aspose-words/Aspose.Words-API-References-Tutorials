@@ -12,7 +12,7 @@ Si busca mejorar la apariencia visual de sus documentos y crear resultados elega
 
 ## Introducción
 
-Aspose.Words para Java es una poderosa biblioteca que permite a los desarrolladores de Java crear, editar, convertir y procesar documentos de Word mediante programación. Ofrece un amplio conjunto de funciones, incluido el estilo de documentos, que permite a los usuarios personalizar la apariencia de sus documentos hasta el más mínimo detalle. Ya sea que desee crear informes, facturas, cartas o cualquier otro tipo de documento, Aspose.Words para Java proporciona las herramientas para hacer que sus documentos sean visualmente atractivos y profesionales.
+Aspose.Words para Java es una poderosa biblioteca que permite a los desarrolladores de Java crear, editar, convertir y procesar documentos de Word mediante programación. Ofrece un amplio conjunto de funciones, incluido el estilo de documentos, que permite a los usuarios personalizar la apariencia de sus documentos hasta el más mínimo detalle. Ya sea que desee crear informes, facturas, cartas o cualquier otro tipo de documento, Aspose.Words para Java proporciona las herramientas para que sus documentos sean visualmente atractivos y profesionales.
 
 ## Primeros pasos con Aspose.Words para Java
 

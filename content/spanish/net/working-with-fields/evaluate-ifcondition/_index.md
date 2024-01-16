@@ -54,7 +54,7 @@ FieldIfComparisonResult actualResult = field.EvaluateCondition();
 Console.WriteLine(actualResult);
 ```
 
-En este ejemplo, creamos un generador de documentos, insertamos un campo IF con una condición especificada y luego evaluamos la condición. El resultado de la evaluación se muestra luego en la consola.
+En este ejemplo, creamos un generador de documentos, insertamos un campo IF con una condición especificada y luego evaluamos la condición. El resultado de la evaluación se muestra entonces en la consola.
 
 Con esto concluye nuestra guía sobre el uso de la función "Evaluar condición IF" con Aspose.Words para .NET.
 

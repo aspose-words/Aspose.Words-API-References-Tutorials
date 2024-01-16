@@ -66,7 +66,7 @@ C: Belge işleme sırasında oluşturulan geçici dosyaları yönetmek için ge�
 
 C: Hayır, geçici bir klasör kullanmak zorunlu değildir ancak özellikle büyük veya karmaşık Word belgeleriyle uğraşırken iyi bir uygulama olarak kabul edilir. Geçici bir klasör kullanmak, ana çalışma dizininin karmaşıklığını önlemeye yardımcı olur ve belge işleme verimliliğini artırır.
 
-#### S: Geçici klasör için herhangi bir yol belirtebilir miyim?
+#### S: Geçici klasör için herhangi bir yol belirleyebilir miyim?
 
 C: Evet, uygulamanızın o konuma erişim ve yazma için uygun izinlere sahip olması koşuluyla, geçici klasör için geçerli herhangi bir yol belirtebilirsiniz.
 

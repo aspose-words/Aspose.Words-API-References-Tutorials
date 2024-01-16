@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 
 den här guiden har vi täckt hur man använder Aspose.Words för .NET för att radera text i specifika områden i ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt radera text i definierade intervall i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder en enorm flexibilitet och kraft för ordbehandling med olika textområden, så att du kan skapa och redigera Word-dokument exakt och målmedvetet.
 
-### Vanliga frågor om intervall raderar text i word-dokument
+### Vanliga frågor för intervall raderar text i word-dokument
 
 #### F: Vad är syftet med funktionen "Ranges Delete Text In Word Document" i Aspose.Words för .NET?
 

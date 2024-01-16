@@ -215,7 +215,7 @@ Aspose.Words for Java 使 Java 开发人员能够轻松合并 Word 文档。通�
 
     Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
 
-### Aspose.Words for Java 是否与 Java 8 及更高版本兼容？
+### Aspose.Words for Java 与 Java 8 及更高版本兼容吗？
 
     Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
 

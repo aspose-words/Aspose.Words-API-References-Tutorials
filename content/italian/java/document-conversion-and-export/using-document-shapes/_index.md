@@ -180,7 +180,7 @@ Le forme dei documenti aggiungono elementi visivi e interattività ai tuoi docum
 
 ### Posso personalizzare l'aspetto delle forme?
 
-Sì, puoi personalizzare l'aspetto delle forme modificandone le proprietà quali dimensioni, posizione, rotazione e colore di riempimento. Aspose.Words per Java offre ampie opzioni per la personalizzazione della forma.
+Sì, puoi personalizzare l'aspetto delle forme modificandone le proprietà quali dimensione, posizione, rotazione e colore di riempimento. Aspose.Words per Java offre ampie opzioni per la personalizzazione della forma.
 
 ### Aspose.Words per Java è compatibile con SmartArt?
 

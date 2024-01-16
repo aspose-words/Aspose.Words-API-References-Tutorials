@@ -41,7 +41,7 @@ sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
 ```
 
 ## Steg 4: Lägg till StructuredDocumentTag till dokumentet
- Lägg till kombinationsrutans innehållskontroll till dokumentets brödtext genom att använda`AppendChild` metod för dokumentets första avsnitts kropp.
+ Lägg till kombinationsrutans innehållskontroll till dokumentets brödtext genom att använda`AppendChild` metoden för dokumentets första avsnitts kropp.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdt);

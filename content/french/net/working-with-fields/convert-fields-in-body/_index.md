@@ -72,7 +72,7 @@ R : Absolument ! Aspose.Words offre une prise en charge étendue des structures 
 
 #### Q : Aspose.Words prend-il en charge les opérations de mise à jour des champs ?
 
-: Oui, Aspose.Words vous permet de mettre à jour les champs par programmation. Vous pouvez facilement mettre à jour les valeurs des champs, actualiser les calculs et effectuer d'autres opérations liées aux champs à l'aide de l'API.
+: Oui, Aspose.Words vous permet de mettre à jour les champs par programme. Vous pouvez facilement mettre à jour les valeurs des champs, actualiser les calculs et effectuer d'autres opérations liées aux champs à l'aide de l'API.
 
 #### Q : Puis-je convertir des champs en texte brut à l'aide d'Aspose.Words ?
 

@@ -2,7 +2,7 @@
 title: Créer un lien dans Word
 linktitle: Créer un lien dans Word
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à créer un lien dans Word entre des TextBox dans un document Word avec Aspose.Words pour .NET.
+description: Apprenez à créer un lien dans Word entre des zones de texte dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-textboxes/create-a-link/

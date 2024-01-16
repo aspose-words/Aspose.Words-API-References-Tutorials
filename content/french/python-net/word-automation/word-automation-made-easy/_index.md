@@ -149,7 +149,7 @@ Absolument! Aspose.Words offre une prise en charge complète du formatage des do
 Oui, Aspose.Words simplifie la gestion des tableaux en vous permettant de créer, d'ajouter des lignes et des cellules et d'appliquer un formatage aux tableaux par programme.
 
 ### Aspose.Words prend-il en charge l'insertion d'images dans des documents ?
-A6 : Oui, vous pouvez facilement insérer des images dans des documents Word à l'aide d'Aspose.Words pour Python, améliorant ainsi les aspects visuels de vos documents générés.
+A6 : Oui, vous pouvez facilement insérer des images dans des documents Word à l'aide d'Aspose.Words for Python, améliorant ainsi les aspects visuels de vos documents générés.
 
 ### Puis-je exporter des documents Word vers différents formats de fichiers à l’aide d’Aspose.Words ?
 Absolument! Aspose.Words prend en charge divers formats de fichiers pour l'exportation, notamment PDF, DOCX, RTF, HTML, etc., offrant une flexibilité pour différents besoins.

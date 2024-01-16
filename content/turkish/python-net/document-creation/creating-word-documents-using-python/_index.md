@@ -129,7 +129,7 @@ def add_table_to_document():
 
 ## Çözüm
 
-Bu kapsamlı kılavuzda Aspose.Words kütüphanesinin yardımıyla Python kullanarak MS Word belgelerinin nasıl oluşturulacağını araştırdık. Ortamı ayarlama, boş bir belge oluşturma, içerik ekleme, biçimlendirme uygulama ve tabloları birleştirme gibi çeşitli hususları ele aldık. Örnekleri takip ederek ve Aspose.Words kütüphanesinin yeteneklerinden yararlanarak artık Python uygulamalarınızda verimli bir şekilde dinamik ve özelleştirilmiş Word belgeleri oluşturabilirsiniz.
+Bu kapsamlı kılavuzda Aspose.Words kütüphanesinin yardımıyla Python kullanarak MS Word belgelerinin nasıl oluşturulacağını araştırdık. Ortamı ayarlama, boş bir belge oluşturma, içerik ekleme, biçimlendirme uygulama ve tabloları birleştirme gibi çeşitli hususları ele aldık. Örnekleri takip ederek ve Aspose.Words kütüphanesinin yeteneklerinden yararlanarak, artık Python uygulamalarınızda verimli bir şekilde dinamik ve özelleştirilmiş Word belgeleri oluşturabilirsiniz.
 
 Bu bilgiyle donanmış olarak artık Python kullanarak Word belgelerinin oluşturulmasını otomatikleştirecek araçlara sahipsiniz ve bu süreçte değerli zamandan ve emekten tasarruf ediyorsunuz. Mutlu kodlama ve belge oluşturma!
 

@@ -53,7 +53,7 @@ public void addCustomDocumentProperties() throws Exception
 }
 ```
 
-Bu kod parçacığı, bir boolean değeri, bir dize, bir tarih, bir revizyon numarası ve bir sayısal değer dahil olmak üzere özel belge özelliklerinin nasıl ekleneceğini gösterir.
+Bu kod parçacığı, bir boole değeri, bir dize, bir tarih, bir revizyon numarası ve bir sayısal değer dahil olmak üzere özel belge özelliklerinin nasıl ekleneceğini gösterir.
 
 ## Belge Özelliklerini Kaldırma
 

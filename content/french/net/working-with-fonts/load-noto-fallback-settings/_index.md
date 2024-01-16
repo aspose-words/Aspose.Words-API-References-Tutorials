@@ -2,7 +2,7 @@
 title: Charger les paramètres de secours de Noto
 linktitle: Charger les paramètres de secours de Noto
 second_title: API de traitement de documents Aspose.Words
-description: Dans ce didacticiel, découvrez comment charger les paramètres de remplacement Noto dans un document Word avec Aspose.Words for .NET.
+description: Dans ce didacticiel, découvrez comment charger les paramètres de remplacement Noto dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/load-noto-fallback-settings/

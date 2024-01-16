@@ -8,7 +8,7 @@ weight: 22
 url: /zh/java/using-document-elements/using-revisions/
 ---
 
-如果您是一位希望处理文档并需要实施修订控制的 Java 开发人员，Aspose.Words for Java 提供了一组强大的工具来帮助您有效地管理修订。在本教程中，我们将指导您逐步使用 Aspose.Words for Java 中的修订版。 
+如果您是一位希望处理文档并需要实施修订控制的 Java 开发人员，Aspose.Words for Java 提供了一组强大的工具来帮助您有效地管理修订。在本教程中，我们将指导您逐步使用 Aspose.Words for Java 中的修订版本。 
 
 ## 1.Aspose.Words for Java简介
 

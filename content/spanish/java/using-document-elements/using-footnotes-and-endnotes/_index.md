@@ -12,7 +12,7 @@ En este tutorial, lo guiaremos a través del proceso de uso de notas al pie y no
 
 ## 1. Introducción a las notas al pie y al final
 
-Las notas al pie y al final son anotaciones que proporcionan información complementaria o citas dentro de un documento. Las notas a pie de página aparecen en la parte inferior de la página, mientras que las notas al final se recopilan al final de una sección o del documento. Se utilizan comúnmente en artículos académicos, informes y documentos legales para hacer referencia a fuentes o aclarar contenido.
+Las notas a pie de página y las notas finales son anotaciones que proporcionan información complementaria o citas dentro de un documento. Las notas a pie de página aparecen en la parte inferior de la página, mientras que las notas al final se recopilan al final de una sección o del documento. Se utilizan comúnmente en artículos académicos, informes y documentos legales para hacer referencia a fuentes o aclarar contenido.
 
 ## 2. Configurando tu entorno
 

@@ -105,7 +105,7 @@ document.save("output.docx", aspose.words.SaveFormat.DOCX)
 
 För att säkerställa optimal prestanda när du använder webbtillägg, överväg följande tips:
 
-- Minimera externa resursförfrågningar.
+- Minimera externa resursbegäranden.
 - Använd asynkron laddning för komplexa tillägg.
 - Testa tillägget på olika enheter och webbläsare.
 

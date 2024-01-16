@@ -13,7 +13,7 @@ Markdown ile Kelime İşleme, Aspose.Words for .NET kütüphanesini kullanarak M
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Kalın yazı](./bold-text/) | Aspose.Words for .NET ile kalın metinlerin nasıl yazılacağını öğrenin. Adım adım kılavuz. |
+| [Kalın yazı](./bold-text/) | Aspose.Words for .NET ile metni nasıl kalınlaştıracağınızı öğrenin. Adım adım kılavuz. |
 | [İtalik Metin](./italic-text/) | Aspose.Words for .NET ile metni italik yapmayı öğrenin. Adım adım kılavuz. |
 | [Üstü çizili](./strikethrough/) | Aspose.Words for .NET ile üstü çizili metin stilini nasıl uygulayacağınızı öğrenin. Adım adım kılavuz. |
 | [Satır İçi Kod](./inline-code/) | Aspose.Words for .NET ile satır içi kodun nasıl yazılacağını öğrenin. Adım adım kılavuz. |

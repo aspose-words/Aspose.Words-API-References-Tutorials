@@ -70,7 +70,7 @@ builder.insert_break(aw.BreakType.SECTION_BREAK_NEW_PAGE)
 
 ## Örnek Kullanım Durumu: Özgeçmiş Oluşturma
 
-Pratik bir kullanım örneğini ele alalım: farklı bölümleri olan bir özgeçmiş (CV) oluşturmak.
+Pratik bir kullanım örneği düşünelim: farklı bölümleri olan bir özgeçmiş (CV) oluşturmak.
 
 ```python
 # Add CV sections

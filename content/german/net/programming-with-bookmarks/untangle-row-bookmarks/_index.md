@@ -42,7 +42,7 @@ DeleteRowByBookmark(doc, "ROW2");
 
 ## Schritt 4: Überprüfen Sie die Integrität anderer Lesezeichen
 
-Wir überprüfen, ob die anderen Lesezeichen nicht beschädigt wurden, indem wir prüfen, ob das Ende des Lesezeichens noch vorhanden ist:
+Wir stellen sicher, dass die anderen Lesezeichen nicht beschädigt wurden, indem wir prüfen, ob das Ende des Lesezeichens noch vorhanden ist:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

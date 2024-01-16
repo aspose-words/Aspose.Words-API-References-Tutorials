@@ -51,7 +51,7 @@ Après avoir défini la licence, vous pouvez gérer l'ensemble de licences ou le
 Vous avez maintenant appliqué avec succès la licence à partir d’un fichier à l’aide d’Aspose.Words for .NET. Vous pouvez poursuivre vos tâches de traitement de documents en utilisant toutes les fonctionnalités de la bibliothèque.
 
 ### Exemple de code source pour appliquer une licence à partir d'un fichier à l'aide d'Aspose.Words pour .NET
-Voici le code source complet pour appliquer une licence à partir d'un fichier à l'aide d'Aspose.Words for .NET :
+Voici le code source complet pour appliquer une licence à partir d'un fichier utilisant Aspose.Words for .NET :
 
 ```csharp
 License license = new License();

@@ -9,7 +9,7 @@ url: /zh/java/document-styling/styling-paragraphs-text/
 ---
 ## 介绍
 
-当谈到用 Java 以编程方式操作和格式化文档时，Aspose.Words for Java 是开发人员的首选。这个强大的 API 允许您轻松地在文档中创建、编辑段落和文本并设置样式。在这份综合指南中，我们将引导您完成使用 Aspose.Words for Java 设置段落和文本样式的过程。无论您是经验丰富的开发人员还是新手，这份包含源代码的分步指南都将为您提供掌握文档格式所需的知识和技能。让我们深入了解吧！
+当谈到用 Java 以编程方式操作和格式化文档时，Aspose.Words for Java 是开发人员的首选。这个强大的 API 允许您轻松地在文档中创建、编辑段落和文本并设置样式。在这份综合指南中，我们将引导您完成使用 Aspose.Words for Java 设置段落和文本样式的过程。无论您是经验丰富的开发人员还是新手，这份包含源代码的分步指南都将为您提供掌握文档格式所需的知识和技能。让我们深入了解一下吧！
 
 ## 了解 Aspose.Words for Java
 

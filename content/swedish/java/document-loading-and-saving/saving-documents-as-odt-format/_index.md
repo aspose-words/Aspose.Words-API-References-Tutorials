@@ -81,7 +81,7 @@ Ja, det är bra att ange måttenheten. Open Office använder centimeter som stan
 
 ### Kan jag konvertera flera dokument till ODT-format i en batchprocess?
 
-Ja, du kan automatisera konverteringen av flera dokument till ODT-format med Aspose.Words för Java genom att iterera igenom dina dokumentfiler och tillämpa konverteringsprocessen.
+Ja, du kan automatisera konverteringen av flera dokument till ODT-format med Aspose.Words för Java genom att iterera genom dina dokumentfiler och tillämpa konverteringsprocessen.
 
 ### Är Aspose.Words for Java kompatibelt med de senaste Java-versionerna?
 

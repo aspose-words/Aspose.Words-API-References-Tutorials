@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/working-with-markdown/setext-heading/
 ---
 
-在本教程中，我们将引导您了解如何将 Setext 标题功能与 Aspose.Words for .NET 结合使用。 Setext 标题是在 Markdown 文档中格式化标题的另一种方法。
+在本教程中，我们将引导您了解如何将 Setext 标题功能与 Aspose.Words for .NET 一起使用。 Setext 标题是在 Markdown 文档中格式化标题的另一种方法。
 
 ## 第 1 步：使用文档生成器
 

@@ -7,7 +7,7 @@ type: docs
 weight: 1660
 url: /es/net/programming-with-ooxmlsaveoptions/
 ---
-Los tutoriales de Aspose.Words para .NET sobre procesamiento de palabras con OOXMLSaveOptions brindan instrucciones paso a paso para manipular las opciones de guardado de OOXML en sus documentos. Estos tutoriales lo guiarán a través de los pasos para personalizar la configuración de la copia de seguridad, como la compatibilidad con versiones anteriores, la compresión de imágenes y el manejo de fuentes incrustadas. Aprenderá a utilizar estas opciones para lograr resultados de respaldo precisos y optimizados para sus necesidades específicas.
+Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con OOXMLSaveOptions brindan instrucciones paso a paso para manipular las opciones de guardado de OOXML en sus documentos. Estos tutoriales lo guiarán a través de los pasos para personalizar la configuración de la copia de seguridad, como la compatibilidad con versiones anteriores, la compresión de imágenes y el manejo de fuentes incrustadas. Aprenderá a utilizar estas opciones para lograr resultados de respaldo precisos y optimizados para sus necesidades específicas.
 
  Los tutoriales también le proporcionan ejemplos de código prácticos que ilustran el uso de las diversas funciones de OOXMLSaveOptions. Aprenderá cómo especificar opciones de guardado al crear o editar un documento de Word, utilizando métodos como`CompatibilityOptions`, `ImageCompression` , y`ExportFontResources`. Los tutoriales le ayudarán a comprender cómo estas opciones afectan el formato de salida y a elegir la configuración adecuada para sus proyectos.
 

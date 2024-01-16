@@ -121,7 +121,7 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### S: Aspose.Words'te liste düzeyini nasıl belirleyebilirim?
 
- C: Aspose.Words'te liste düzeyini belirlemek için listenin bir örneğini oluşturmanız gerekir.`List` sınıfa gidin ve ona numaralandırılmış bir liste verin. Daha sonra şunu kullanabilirsiniz:`Paragraph.ListFormat.ListLevelNumber` Her liste öğesinin düzeyini belirtme özelliği. Liste öğelerinin istenen düzeye sahip olması için bu listeyi belgenizin bir bölümüyle ilişkilendirebilirsiniz.
+ C: Aspose.Words'te liste düzeyini belirlemek için, listenin bir örneğini oluşturmanız gerekir.`List` sınıfa gidin ve ona numaralı bir liste verin. Daha sonra şunu kullanabilirsiniz:`Paragraph.ListFormat.ListLevelNumber` Her liste öğesinin düzeyini belirtme özelliği. Liste öğelerinin istenen düzeye sahip olması için bu listeyi belgenizin bir bölümüyle ilişkilendirebilirsiniz.
 
 #### S: Aspose.Words'te liste öğelerinin numaralandırma formatını değiştirmek mümkün mü?
 

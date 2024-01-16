@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 
-在本教程中，我们将探索提供的 C# 源代码，以便将页面保存回调与适用于 .NET 的 Aspose.Words 图像保存选项结合使用。此功能允许您在将文档的每一页保存为图像时执行自定义操作。
+在本教程中，我们将探索提供的 C# 源代码，用于将页面保存回调与 .NET 的 Aspose.Words 图像保存选项结合使用。此功能允许您在将文档的每一页保存为图像时执行自定义操作。
 
 ## 第一步：搭建环境
 

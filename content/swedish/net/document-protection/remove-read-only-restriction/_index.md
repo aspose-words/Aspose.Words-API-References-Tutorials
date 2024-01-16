@@ -54,7 +54,7 @@ Document doc = new Document();
 // Ange ett lösenord som är upp till 15 tecken långt.
 doc.WriteProtection.SetPassword("MyPassword");
 
-//Ta bort det skrivskyddade alternativet.
+//Ta bort alternativet skrivskyddat.
 doc.WriteProtection.ReadOnlyRecommended = false;
 
 // Använd skrivskydd utan något skydd.

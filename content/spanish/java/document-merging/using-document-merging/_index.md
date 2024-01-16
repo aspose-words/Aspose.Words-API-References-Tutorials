@@ -21,7 +21,7 @@ Antes de sumergirnos en la combinación de documentos, asegurémonos de tener As
  Visite los lanzamientos de Aspose (https://releases.aspose.com/words/java) para obtener la última versión de la biblioteca.
 
 ### Agregue la biblioteca Aspose.Words:
- Incluya el archivo JAR Aspose.Words en la ruta de clases de su proyecto Java.
+ Incluya el archivo JAR Aspose.Words en la ruta de clase de su proyecto Java.
 
 ### Inicializar Aspose.Words:
  En su código Java, importe las clases necesarias de Aspose.Words y estará listo para comenzar a fusionar documentos.

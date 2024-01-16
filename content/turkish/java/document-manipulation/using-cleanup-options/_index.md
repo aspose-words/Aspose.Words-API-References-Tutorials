@@ -114,7 +114,7 @@ doc.getMailMerge().execute(new String[] { "FullName", "Company", "Address", "Add
 doc.save("WorkingWithCleanupOptions.RemoveContainingFields.docx");
 ```
 
-Bu örnekte, birleştirme alanlarına sahip bir belge açıyoruz, temizleme seçeneklerini içeren alanları kaldıracak şekilde ayarlıyoruz ve adres-mektup birleştirmeyi verilerle yürütüyoruz. Birleştirmeden sonra alanların kendisi belgeden kaldırılacaktır.
+Bu örnekte, birleştirme alanlarına sahip bir belge açıyoruz, temizleme seçeneklerini içeren alanları kaldıracak şekilde ayarlıyoruz ve adres-mektup birleştirmeyi verilerle yürütüyoruz. Birleştirmeden sonra alanların kendileri belgeden kaldırılacaktır.
 
 ## Adım 6: Boş Tablo Satırlarını Kaldırma
 

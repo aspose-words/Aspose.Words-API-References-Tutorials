@@ -12,7 +12,7 @@ Bu kapsamlı adım adım eğitimde Aspose.Words for Java'yı kullanarak belge ol
 
 ## Belge Oluşturmaya Giriş
 
-Belge oluşturma, elektronik belgeleri kullanıcıların görüntülemesi, düzenlemesi veya yazdırması için görsel bir temsile dönüştürme işlemidir. Belgenin orijinal yapısını ve görünümünü koruyarak belgenin içeriğini, düzenini ve biçimlendirmesini PDF, XPS veya görüntüler gibi uygun bir biçime çevirmeyi içerir. Java geliştirme bağlamında Aspose.Words, çeşitli belge formatlarıyla çalışmanıza ve bunları kullanıcılar için sorunsuz bir şekilde oluşturmanıza olanak tanıyan güçlü bir kütüphanedir.
+Belge oluşturma, elektronik belgeleri kullanıcıların görüntülemesi, düzenlemesi veya yazdırması için görsel bir temsile dönüştürme işlemidir. Belgenin orijinal yapısını ve görünümünü koruyarak belgenin içeriğini, düzenini ve biçimlendirmesini PDF, XPS veya resimler gibi uygun bir biçime çevirmeyi içerir. Java geliştirme bağlamında Aspose.Words, çeşitli belge formatlarıyla çalışmanıza ve bunları kullanıcılar için sorunsuz bir şekilde oluşturmanıza olanak tanıyan güçlü bir kütüphanedir.
 
 Belge oluşturma, çok çeşitli belgelerle ilgilenen modern uygulamaların önemli bir parçasıdır. İster web tabanlı bir belge düzenleyici, ister bir belge yönetim sistemi veya bir raporlama aracı oluşturuyor olun, belge oluşturma konusunda uzmanlaşmak, kullanıcı deneyimini geliştirecek ve belge merkezli süreçleri kolaylaştıracaktır.
 
@@ -53,10 +53,10 @@ Document doc = new Document("https://example.com/document.docx");
 Belge yüklendikten sonra Aspose.Words'ün zengin API'sini kullanarak içeriğine, paragraflarına, tablolarına, resimlerine ve diğer öğelerine erişebilirsiniz.
 
 ```java
-// Paragraflara erişim
+// Paragraflara erişme
 NodeCollection<Paragraph> paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
 
-// Tablolara erişim
+// Tablolara erişme
 NodeCollection<Table> tables = doc.getChildNodes(NodeType.TABLE, true);
 
 // Resimlere erişme

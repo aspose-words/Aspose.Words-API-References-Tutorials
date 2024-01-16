@@ -35,7 +35,7 @@ Gehen Sie folgendermaßen vor, um ein Textwasserzeichen hinzuzufügen:
 
 1. Erstellen Sie ein Wasserzeichenobjekt.
 2. Geben Sie den Text für das Wasserzeichen an.
-3. Fügen Sie das Wasserzeichen zum Dokument hinzu.
+3. Fügen Sie dem Dokument das Wasserzeichen hinzu.
 
 ```python
 # Create a watermark object
@@ -48,7 +48,7 @@ watermark.text = "Confidential"
 doc.watermark = watermark
 ```
 
-## Anpassen der Darstellung von Textwasserzeichen
+## Anpassen der Darstellung des Textwasserzeichens
 
 Sie können das Erscheinungsbild des Textwasserzeichens anpassen, indem Sie verschiedene Eigenschaften anpassen:
 

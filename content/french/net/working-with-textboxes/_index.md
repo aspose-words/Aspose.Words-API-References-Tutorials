@@ -12,6 +12,6 @@ Le traitement de mots avec des zones de texte est une ressource complète qui vo
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Créer un lien dans Word](./create-a-link/) | Apprenez à créer un lien dans Word entre des TextBox dans un document Word avec Aspose.Words pour .NET. |
+| [Créer un lien dans Word](./create-a-link/) | Apprenez à créer un lien dans Word entre des zones de texte dans un document Word avec Aspose.Words pour .NET. |
 | [Vérifier la séquence](./check-sequence/) | Découvrez comment vérifier la séquence des TextBox dans un document Word avec Aspose.Words pour .NET. |
 | [Rompre le lien suivant dans un document Word](./break-a-link/) | Découvrez comment rompre les liens dans un document Word avec Aspose.Words pour .NET. |

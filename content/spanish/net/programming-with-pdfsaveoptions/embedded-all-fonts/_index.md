@@ -87,7 +87,7 @@ R: Es importante incrustar todas las fuentes en un documento PDF para garantizar
 #### P: ¿Cuáles son los beneficios de incrustar fuentes en un documento PDF?
 R: Los beneficios de incrustar fuentes en un documento PDF son:
 
-Garantice una apariencia consistente del documento: las fuentes incrustadas garantizan que el documento se mostrará exactamente como fue diseñado, independientemente de las fuentes disponibles en el sistema.
+Garantice una apariencia consistente del documento: las fuentes integradas garantizan que el documento se mostrará exactamente como fue diseñado, independientemente de las fuentes disponibles en el sistema.
 
 Preservación del formato: las fuentes incrustadas preservan el formato y el diseño del documento, evitando sustituciones de fuentes y variaciones en la apariencia.
 

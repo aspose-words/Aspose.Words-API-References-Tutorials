@@ -58,7 +58,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Inserisci una regola orizzontale
+// Inserisci una riga orizzontale
 builder.insertHorizontalRule();
 
 // Salva il documento

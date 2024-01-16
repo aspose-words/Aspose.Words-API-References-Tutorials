@@ -40,7 +40,7 @@ Document[] splitDocuments = doc.splitIntoPages(5); // Diviser toutes les 5 pages
 
 ## Étape 3 : Enregistrer les documents fractionnés
 
-Maintenant que vous avez divisé le document, vous souhaiterez enregistrer les parties fractionnées dans des fichiers distincts. Voici comment procéder :
+Maintenant que vous avez divisé le document, vous souhaiterez enregistrer les parties divisées en tant que fichiers distincts. Voici comment procéder :
 
 ```java
 for (int i = 0; i < splitDocuments.length; i++) {

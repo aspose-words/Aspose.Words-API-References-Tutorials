@@ -64,7 +64,7 @@ A: Durch das Verständnis der Cursorposition in einem Word-Dokument mithilfe von
 
 A: Um mit Aspose.Words für .NET auf den aktuellen Knoten und Absatz zuzugreifen, an dem sich der Cursor in einem Word-Dokument befindet, können Sie die Eigenschaften CurrentNode und CurrentParagraph der DocumentBuilder-Klasse verwenden. Diese Eigenschaften ermöglichen den Zugriff auf den Knoten bzw. Absatz an der Cursorposition.
 
-#### F: Was kann ich mit den erhaltenen Informationen über die Cursorposition machen?
+#### F: Was kann ich mit den erhaltenen Informationen über die Cursorposition tun?
 
 A: Die erhaltenen Informationen über die Cursorposition können verwendet werden, um verschiedene Vorgänge in Ihrem Word-Dokument auszuführen. Sie können beispielsweise Inhalte an der aktuellen Cursorposition hinzufügen oder ändern, Elemente wie Tabellen oder Bilder einfügen oder benutzerdefinierte Logik basierend auf der Cursorposition implementieren.
 

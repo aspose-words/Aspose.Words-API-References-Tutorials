@@ -1,6 +1,6 @@
 ---
-title: Açık Tip Özellikleri
-linktitle: Açık Tip Özellikleri
+title: Açık Tip Özellikler
+linktitle: Açık Tip Özellikler
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET'te Açık Tip özelliklerini nasıl etkinleştireceğinizi ve kullanacağınızı öğrenin
 type: docs

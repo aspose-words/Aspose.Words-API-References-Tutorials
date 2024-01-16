@@ -362,7 +362,7 @@ Aspose.Words für Java ist ein leistungsstarkes Tool, mit dem Java-Entwickler ih
 
    Ja, Sie können Aspose.Words für Java in kommerziellen Projekten verwenden, indem Sie die entsprechende Lizenz erwerben.
 
-### Unterstützt Aspose.Words für Java die Dokumentenverschlüsselung?
+### Unterstützt Aspose.Words für Java die Dokumentverschlüsselung?
 
    Ja, Aspose.Words für Java unterstützt die Dokumentenverschlüsselung zum Schutz vertraulicher Informationen.
 

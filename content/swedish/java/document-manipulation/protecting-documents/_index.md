@@ -34,7 +34,7 @@ doc.unprotect();
 
  De`unprotect` metod tar bort allt skydd som tillämpas på dokumentet, vilket gör det tillgängligt utan lösenord.
 
-## Kontrollerar dokumentskyddstyp
+## Kontrollera dokumentskyddstyp
 
 Du kanske vill bestämma vilken skyddstyp som tillämpas på ett dokument programmatiskt:
 

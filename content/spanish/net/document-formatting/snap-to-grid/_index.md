@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 2: Alineación de la cuadrícula
+## Paso 2: alineación de la cuadrícula
 
 Ahora aplicaremos la alineación de la cuadrícula a un párrafo específico y la fuente utilizada en el párrafo. Así es cómo:
 
@@ -74,7 +74,7 @@ Con este código, podrá alinear su texto con la cuadrícula y optimizar la apar
 
 ## Conclusión
 
-En este tutorial, exploramos el proceso de uso de la función Ajustar a cuadrícula en un documento de Word con Aspose.Words para .NET. Si sigue los pasos descritos, puede habilitar la alineación de la cuadrícula para párrafos y fuentes, asegurando un diseño de documento visualmente agradable y bien organizado.
+En este tutorial, exploramos el proceso de uso de la función Ajustar a cuadrícula en un documento de Word con Aspose.Words para .NET. Si sigue los pasos descritos, puede habilitar la alineación de la cuadrícula para párrafos y fuentes, lo que garantiza un diseño del documento visualmente agradable y bien organizado.
 
 ### Preguntas frecuentes
 

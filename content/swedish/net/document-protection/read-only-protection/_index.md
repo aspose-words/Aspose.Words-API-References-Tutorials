@@ -108,7 +108,7 @@ S: Ja, du kan ta bort skrivskyddet från ett Word-dokument med Aspose.Words för
 
 #### F: Kan jag ställa in ett annat lösenord för skrivskydd i ett Word-dokument?
 
- S: Nej, skrivskyddet i Aspose.Words för .NET tillåter dig inte att ange ett separat lösenord specifikt för skrivskydd. Lösenordet inställt med hjälp av`SetPassword` metod för`WriteProtection` objekt gäller det övergripande dokumentskyddet, inklusive både lässkydd och läs-skrivskydd.
+ S: Nej, skrivskyddet i Aspose.Words för .NET tillåter dig inte att ange ett separat lösenord specifikt för skrivskydd. Lösenordet som ställts in med hjälp av`SetPassword` metod för`WriteProtection` objekt gäller det övergripande dokumentskyddet, inklusive både lässkydd och läs-skrivskydd.
 
 #### F: Kan användare kringgå skrivskyddet i ett Word-dokument?
 

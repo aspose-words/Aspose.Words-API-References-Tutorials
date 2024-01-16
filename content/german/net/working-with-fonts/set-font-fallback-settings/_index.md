@@ -70,7 +70,7 @@ A: Ja, mit Aspose.Words können Sie beim Ersetzen in einem Word-Dokument Ersatzs
 
 #### F: Warum ist es wichtig, die Schriftartersetzungseinstellungen in einem Word-Dokument korrekt zu konfigurieren?
 
-A: Es ist wichtig, die Einstellungen für die Schriftartersetzung in einem Word-Dokument korrekt zu konfigurieren, um die visuelle Integrität des Textes zu wahren. Durch die Einstellung der entsprechenden Fallback-Schriftarten mit Aspose.Words stellen Sie sicher, dass der Text konsistent angezeigt wird, auch wenn die erforderlichen Schriftarten nicht verfügbar sind.
+A: Es ist wichtig, die Schriftartersetzungseinstellungen in einem Word-Dokument korrekt zu konfigurieren, um die visuelle Integrität des Textes zu wahren. Durch die Einstellung der entsprechenden Fallback-Schriftarten mit Aspose.Words stellen Sie sicher, dass der Text konsistent angezeigt wird, auch wenn die erforderlichen Schriftarten nicht verfügbar sind.
 
 #### F: Wie kann ich fehlende Schriftarten erkennen, wenn ich sie in einem Word-Dokument mit Aspose.Words ersetze?
 

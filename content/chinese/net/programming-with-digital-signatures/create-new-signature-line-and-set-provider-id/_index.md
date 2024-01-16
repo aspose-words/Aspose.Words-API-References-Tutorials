@@ -1,6 +1,6 @@
 ---
-title: 创建新的签名行并设置提供商 ID
-linktitle: 创建新的签名行并设置提供商 ID
+title: 创建新签名行并设置提供商 ID
+linktitle: 创建新签名行并设置提供商 ID
 second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建新的签名行并设置提供商 ID。
 type: docs
@@ -172,9 +172,9 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 
 答：要在创建新签名行并设置提供者 ID 后保存修改后的文档，您可以使用`Save`的方法`Document`目的。指定保存文档的正确路径和文件名。
 
-#### 问：Aspose.Words for .NET 支持什么文件格式来创建和签署签名行？
+#### 问：Aspose.Words for .NET 支持什么文件格式来创建和签名签名行？
 
-答：Aspose.Words for .NET 支持以 DOCX 文件格式创建和签署签名行。您可以使用提供的方法和类在 DOCX 文件中创建和签署签名行。
+答：Aspose.Words for .NET 支持以 DOCX 文件格式创建和签名签名行。您可以使用提供的方法和类在 DOCX 文件中创建和签署签名行。
 
 #### 问：签署后我可以修改签名行的提供商 ID 或其他选项吗？
 

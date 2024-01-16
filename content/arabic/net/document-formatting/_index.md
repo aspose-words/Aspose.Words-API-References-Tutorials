@@ -13,7 +13,7 @@ url: /ar/net/document-formatting/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [المسافة بين النص الآسيوي واللاتيني في مستند Word](./space-between-asian-and-latin-text/) | تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي والنص اللاتيني في مستند Word باستخدام Aspose.Words for .NET. |
+| [المسافة بين النص الآسيوي واللاتيني في مستند Word](./space-between-asian-and-latin-text/) | تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي والنص اللاتيني في مستند Word باستخدام Aspose.Words لـ .NET. |
 | [الطباعة الآسيوية مجموعة فاصل الأسطر في مستند Word](./asian-typography-line-break-group/) | تعرف على كيفية استخدام مجموعة فواصل أسطر الطباعة الآسيوية في مستند Word باستخدام Aspose.Words لـ .NET. |
 | [تنسيق الفقرة في مستند Word](./paragraph-formatting/) | تعرف على كيفية تطبيق التنسيق المخصص على فقراتك في مستند Word باستخدام Aspose.Words for .NET. |
 | [تنسيق قائمة متعددة المستويات في مستند Word](./multilevel-list-formatting/) | تعرف على كيفية إنشاء قائمة متعددة المستويات وتطبيق التنسيق المخصص في مستند Word باستخدام Aspose.Words for .NET. |

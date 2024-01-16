@@ -2,7 +2,7 @@
 title: Text in Einfügungsrevisionen ignorieren
 linktitle: Text in Einfügungsrevisionen ignorieren
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie die Funktion „Text in Einfügungsrevisionen ignorieren“ von Aspose.Words für .NET verwenden, um Einfügungsrevisionen in Word-Dokumenten zu manipulieren.
+description: Erfahren Sie, wie Sie die Funktion „Text in Einfügungsrevisionen ignorieren“ von Aspose.Words für .NET verwenden, um Einfügungsrevisionen in Word-Dokumenten zu bearbeiten.
 type: docs
 weight: 10
 url: /de/net/find-and-replace-text/ignore-text-inside-insert-revisions/

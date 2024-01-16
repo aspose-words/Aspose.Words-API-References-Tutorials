@@ -19,5 +19,5 @@ Aspose.Words for .NET 提供全面的教程来指导您轻松完成文字处理�
 | [创建并签署新的签名行](./creating-and-signing-new-signature-line/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建和签署新的签名行。 |
 | [在 Word 文档中签署现有签名行](./signing-existing-signature-line/) | 了解如何使用 Aspose.Words for .NET 对 Word 文档中的现有签名行进行签名。 |
 | [在 Word 文档中设置签名提供者 ID](./set-signature-provider-id/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置签名提供程序 ID。 |
-| [创建新的签名行并设置提供商 ID](./create-new-signature-line-and-set-provider-id/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建新的签名行并设置提供商 ID。 |
+| [创建新签名行并设置提供商 ID](./create-new-signature-line-and-set-provider-id/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建新的签名行并设置提供商 ID。 |
 | [访问并验证 Word 文档中的签名](./access-and-verify-signature/) | 了解如何使用 Aspose.Words for .NET 访问和验证 Word 文档中的数字签名。 |

@@ -73,7 +73,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie Umleitungslinks in ein
 
 #### F: Welche Bibliothek wird verwendet, um Umleitungslinks in einem Word-Dokument mithilfe von Aspose.Words für .NET zu unterbrechen?
 
-A: Um Umleitungslinks in einem Word-Dokument mithilfe von Aspose.Words für .NET zu unterbrechen, wird die Bibliothek Aspose.Words für .NET verwendet.
+A: Um Umleitungslinks in einem Word-Dokument mit Aspose.Words für .NET zu unterbrechen, wird die Bibliothek Aspose.Words für .NET verwendet.
 
 #### F: Wie unterbreche ich einen Weiterleitungslink in einer TextBox?
 

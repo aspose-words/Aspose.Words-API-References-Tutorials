@@ -2,7 +2,7 @@
 title: Mantenga la fuente unida
 linktitle: Mantenga la fuente unida
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a usar Aspose.Words para .NET para unir y agregar documentos de Word manteniendo el contenido de origen junto con el documento de destino.
+description: Aprenda a usar Aspose.Words para .NET para unir y agregar documentos de Word mientras mantiene el contenido de origen junto con el documento de destino.
 type: docs
 weight: 10
 url: /es/net/join-and-append-documents/keep-source-together/

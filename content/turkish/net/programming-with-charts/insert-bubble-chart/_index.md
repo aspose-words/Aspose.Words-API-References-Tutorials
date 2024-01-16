@@ -1,6 +1,6 @@
 ---
-title: Kabarcık Grafiğini Word Belgesine Ekle
-linktitle: Kabarcık Grafiğini Word Belgesine Ekle
+title: Kabarcık Grafiği Word Belgesine Ekle
+linktitle: Kabarcık Grafiği Word Belgesine Ekle
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET kullanarak bir belgeye nasıl kabarcık grafiği ekleyeceğinizi öğrenin. X, Y ve kabarcık boyutu değerlerine sahip seri verilerini ekleyin.
 type: docs
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine kabarcık grafiğinin nasıl ekleneceğini öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak yeni bir belge oluşturabilir, kabarcık grafiği ekleyebilir, seri verileri ekleyebilir ve belgeyi grafikle birlikte kaydedebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine kabarcık grafiğinin nasıl ekleneceğini öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak yeni bir belge oluşturabilir, kabarcık grafiği ekleyebilir, seri verileri ekleyebilir ve belgeyi grafikle birlikte kaydedebilirsiniz.
 
 Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için güçlü bir API sağlar. Kabarcık grafikleri, her veri noktasının X ve Y koordinatlarına ve boyut değerine sahip bir kabarcıkla temsil edildiği üç boyutlu verileri görselleştirmek için idealdir. Aspose.Words for .NET ile verilerinizin görsel sunumunu geliştiren dinamik ve bilgilendirici kabarcık grafikleri oluşturabilirsiniz.
 

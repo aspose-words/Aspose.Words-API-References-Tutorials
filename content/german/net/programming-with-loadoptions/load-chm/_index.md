@@ -15,7 +15,7 @@ Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek f�
 
 ## Ladeoptionen konfigurieren
 
-Der erste Schritt besteht darin, die Ladeoptionen für unsere CHM-Datei zu konfigurieren. Verwenden Sie die LoadOptions-Klasse, um Ladeparameter anzugeben. In unserem Fall müssen wir die Encoding-Eigenschaft auf die entsprechende Codierung für CHM-Dateien einstellen, normalerweise „windows-1251“. So geht's:
+Der erste Schritt besteht darin, die Ladeoptionen für unsere CHM-Datei zu konfigurieren. Verwenden Sie die LoadOptions-Klasse, um Ladeparameter anzugeben. In unserem Fall müssen wir die Eigenschaft „Encoding“ auf die entsprechende Kodierung für CHM-Dateien einstellen, normalerweise „windows-1251“. So geht's:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding. GetEncoding("windows-1251") };

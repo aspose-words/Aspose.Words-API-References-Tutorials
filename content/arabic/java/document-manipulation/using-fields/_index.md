@@ -1,5 +1,5 @@
 ---
-title: استخدام الحقول في Aspose.Words لجافا
+title: استخدام الحقول في Aspose.Words لـ Java
 linktitle: استخدام الحقول
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
 description: فتح أتمتة المستندات باستخدام Aspose.Words لـ Java. تعرف على كيفية دمج الصور وتنسيقها وإدراجها في مستندات Java. دليل شامل وأمثلة على التعليمات البرمجية لمعالجة المستندات بكفاءة.
@@ -117,6 +117,6 @@ doc.save("FormattedDocument.doc");
 
  إذا كنت بحاجة إلى مساعدة، أو لديك أسئلة، أو واجهت مشكلات أثناء استخدام Aspose.Words for Java، فيمكنك زيارة منتدى Aspose.Words للحصول على دعم المجتمع والمناقشات:[Aspose.منتدى الكلمات](https://forum.aspose.com/c/words).
 
-### هل Aspose.Words for Java متوافق مع بيئة Java IDEs المختلفة؟
+### هل Aspose.Words for Java متوافق مع بيئة تطوير Java IDEs المختلفة؟
 
 نعم، يتوافق Aspose.Words for Java مع العديد من بيئات التطوير المتكاملة لـ Java (IDEs) مثل Eclipse وIntelliJ IDEA وNetBeans. يمكنك دمجه في IDE المفضل لديك لتبسيط مهام معالجة المستندات الخاصة بك.

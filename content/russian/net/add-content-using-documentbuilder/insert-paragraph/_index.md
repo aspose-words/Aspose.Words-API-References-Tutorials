@@ -39,7 +39,7 @@ paragraphFormat.Alignment = ParagraphAlignment.Justify;
 paragraphFormat.KeepTogether = true;
 ```
 
-## Шаг 3. Вставьте абзац
+## Шаг 3. Вставьте абзац
 После настройки шрифта и форматирования используйте метод Writeln класса DocumentBuilder, чтобы вставить целый абзац:
 
 ```csharp

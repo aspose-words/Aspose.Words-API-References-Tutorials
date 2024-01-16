@@ -12,7 +12,7 @@ En la era digital, las empresas y los individuos manejan una gran cantidad de in
 
 ## ¿Qué es Aspose.Words para Java?
 
-Aspose.Words para Java es una potente biblioteca de procesamiento de documentos que permite a los desarrolladores de Java crear, manipular y convertir documentos de Word mediante programación. Ya sea que necesite generar informes, fusionar documentos, realizar tareas de procesamiento de textos o convertir documentos a diferentes formatos, Aspose.Words proporciona un conjunto completo de API para satisfacer sus necesidades.
+Aspose.Words para Java es una poderosa biblioteca de procesamiento de documentos que permite a los desarrolladores de Java crear, manipular y convertir documentos de Word mediante programación. Ya sea que necesite generar informes, fusionar documentos, realizar tareas de procesamiento de textos o convertir documentos a diferentes formatos, Aspose.Words proporciona un conjunto completo de API para satisfacer sus necesidades.
 
 ## ¿Por qué elegir Aspose.Words para la conversión de documentos?
 

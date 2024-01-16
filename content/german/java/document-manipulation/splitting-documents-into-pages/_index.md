@@ -459,7 +459,7 @@ public int visitParagraphEnd(Paragraph paragraph) throws Exception {
 	{
 		Paragraph clonePara = (Paragraph) cloneNode;
 		// Entfernen Sie die Listennummerierung aus dem geklonten Absatz, lassen Sie jedoch den Einzug unverändert
-		// da der Absatz vorher Teil des Artikels sein sollte.
+		// da der Absatz vorher Teil des Artikels sein soll.
 		if (paragraph.isListItem())
 		{
 			double textPosition = clonePara.getListFormat().getListLevel().getTextPosition();

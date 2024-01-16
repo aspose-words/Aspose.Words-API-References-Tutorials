@@ -8,7 +8,7 @@ weight: 10
 url: /es/java/document-revision/guide-document-revision/
 ---
 
-En el acelerado mundo actual, la gestión de documentos y la colaboración son aspectos esenciales de diversas industrias. Ya sea un contrato legal, un informe técnico o un artículo académico, la capacidad de realizar un seguimiento y gestionar las revisiones de manera eficiente es crucial. Aspose.Words para Java proporciona una solución poderosa para administrar revisiones de documentos, aceptar cambios, comprender diferentes tipos de revisiones y manejar el procesamiento de textos y documentos. En esta guía completa, lo guiaremos paso a paso por el proceso de uso de Aspose.Words para Java para manejar revisiones de documentos de manera efectiva.
+En el acelerado mundo actual, la gestión de documentos y la colaboración son aspectos esenciales de diversas industrias. Ya sea un contrato legal, un informe técnico o un artículo académico, la capacidad de realizar un seguimiento y gestionar las revisiones de manera eficiente es crucial. Aspose.Words para Java proporciona una solución poderosa para administrar revisiones de documentos, aceptar cambios, comprender diferentes tipos de revisiones y manejar el procesamiento de textos y documentos. En esta guía completa, lo guiaremos paso a paso en el proceso de uso de Aspose.Words para Java para manejar revisiones de documentos de manera efectiva.
 
 
 ## Comprender la revisión de documentos

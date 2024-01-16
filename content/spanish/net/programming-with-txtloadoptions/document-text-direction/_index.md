@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## Conclusión
 
-En este tutorial, exploramos la función de dirección del texto del documento en Aspose.Words para .NET. Aprendimos cómo especificar la dirección del texto en un documento, especialmente para idiomas que se escriben de derecha a izquierda, como el hebreo o el árabe.
+En este tutorial, exploramos la función de dirección del texto del documento en Aspose.Words para .NET. Aprendimos a especificar la dirección del texto en un documento, especialmente para idiomas que se escriben de derecha a izquierda, como el hebreo o el árabe.
 
 Esta característica es esencial para garantizar que el texto se muestre correctamente en documentos multilingües. Al utilizar las opciones de carga adecuadas, Aspose.Words puede detectar automáticamente la dirección del texto y aplicarlo al documento.
 

@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET die Schriftartformatierung in einem Word-Dokument vornimmt. Durch die Schriftartformatierung können Sie das Erscheinungsbild von Text in Ihren Dokumenten anpassen. Nutzen Sie diese Funktion gerne, um attraktive und professionelle Dokumente zu erstellen.
+In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET die Schriftartformatierung in einem Word-Dokument vornimmt. Durch die Schriftartformatierung können Sie das Erscheinungsbild von Text in Ihren Dokumenten anpassen. Nutzen Sie diese Funktion gerne, um ansprechende und professionelle Dokumente zu erstellen.
 
 ### FAQs
 

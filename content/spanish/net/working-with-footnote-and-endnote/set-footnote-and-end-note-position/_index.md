@@ -74,4 +74,4 @@ No, de forma predeterminada, las notas al pie y al final no se pueden colocar fu
 
 #### P: ¿Se pueden personalizar las notas al pie y al final con estilos de fuente o formato específicos?
 
-R: Sí, puede personalizar las notas al pie y las notas finales con fuentes o estilos de formato específicos en Aspose.Words. Puede utilizar los métodos y propiedades disponibles para aplicar estilos de fuente, colores, tamaños de fuente, etc., notas al pie y notas al final.
+R: Sí, puede personalizar las notas al pie y las notas finales con estilos de fuente o formato específicos en Aspose.Words. Puede utilizar los métodos y propiedades disponibles para aplicar estilos de fuente, colores, tamaños de fuente, etc., notas al pie y notas al final.

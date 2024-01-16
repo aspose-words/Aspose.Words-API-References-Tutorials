@@ -63,7 +63,7 @@ row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 2"));
 table. AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
-Эта строка кода применяет автоподбор на основе фиксированной ширины столбца.
+Эта строка кода применяет автоподбор на основе фиксированной ширины столбцов.
 
 ## Шаг 5: Регистрация
 

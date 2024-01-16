@@ -40,7 +40,7 @@ Chart chart = shape.Chart;
 chart.Series.Clear();
 ```
 
-## Étape 4 : Ajouter des données au graphique
+## Étape 4 : ajouter des données au graphique
 Ajoutez des données à la série de graphiques, y compris les valeurs date/heure.
 
 ```csharp

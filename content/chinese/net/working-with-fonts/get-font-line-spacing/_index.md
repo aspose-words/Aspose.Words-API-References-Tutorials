@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/working-with-fonts/get-font-line-spacing/
 ---
-在本教程中，我们将告诉您如何使用 .NET 的 Aspose.Words 库获取 Word 文档中的字体行间距。字体行距定义文本行之间的垂直间距。我们将逐步指导您理解并实现 .NET 项目中的代码。
+在本教程中，我们将告诉您如何使用 .NET 的 Aspose.Words 库获取 Word 文档中的字体行距。字体行距定义文本行之间的垂直间距。我们将逐步指导您理解并实现 .NET 项目中的代码。
 
 ## 先决条件
 开始之前，请确保您拥有以下物品：
@@ -45,7 +45,7 @@ builder. Writen("qText");
 现在我们将访问`Font`文档第一段的对象并检索该值`LineSpacing`财产。
 
 ```csharp
-//获取字体的行距
+//获取字体的行间距
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```

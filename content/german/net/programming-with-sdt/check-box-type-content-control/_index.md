@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Schritt 3: Fügen Sie ein Inhaltssteuerelement vom Typ Kontrollkästchen hinzu
- Ein ... kreieren`StructuredDocumentTag` mit`SdtType.Checkbox` um das Kontrollkästchen-Inhaltssteuerelement darzustellen. Angeben`MarkupLevel.Inline` um es im Text zu platzieren.
+ Ein ... kreieren`StructuredDocumentTag` mit`SdtType.Checkbox` um die Inhaltssteuerung des Kontrollkästchens darzustellen. Angeben`MarkupLevel.Inline` um es im Text zu platzieren.
 
 ```csharp
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.Checkbox, MarkupLevel.Inline);

@@ -92,6 +92,6 @@ C: Yer İşaretinin Sonuna Taşı özelliğiyle çalışmak için aşağıdaki �
 
  C: Belirtilen yer imi belgede mevcut değilse,`MoveToBookmark` yönteminin herhangi bir etkisi olmayacak ve yer işaretinin sonuna hiçbir içerik eklenmeyecektir.
 
-#### S: Yer iminin başına içerik eklemek mümkün müdür?
+#### S: Yer iminin başına içerik eklemek mümkün mü?
 
  C: Evet, ayarlayarak`IsBookmarkStart` parametre`true`, yer işaretinin başına gidebilir ve ondan önce içerik ekleyebilirsiniz.

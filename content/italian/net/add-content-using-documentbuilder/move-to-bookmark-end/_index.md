@@ -84,7 +84,7 @@ R: Per utilizzare la funzionalità Sposta alla fine del segnalibro, sono necessa
 2. Conoscenza base del linguaggio di programmazione C#.
 3. Accesso a un ambiente di sviluppo .NET.
 
-#### D: Posso spostarmi all'inizio di un segnalibro utilizzando questa funzionalità?
+#### D: Posso spostarmi all'inizio di un segnalibro utilizzando questa funzione?
 
  R: Sì, puoi utilizzare il`MoveToBookmark` metodo con il parametro`IsBookmarkStart` impostato`true` per spostarsi all'inizio di un segnalibro.
 

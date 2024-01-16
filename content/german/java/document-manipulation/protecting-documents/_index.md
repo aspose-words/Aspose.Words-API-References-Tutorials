@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
- Der`unprotect` Die Methode entfernt jeglichen Schutz, der auf das Dokument angewendet wurde, und macht es ohne Passwort zugänglich.
+ Der`unprotect` Die Methode entfernt jeglichen auf das Dokument angewendeten Schutz und macht es ohne Passwort zugänglich.
 
 ## Überprüfen des Dokumentschutztyps
 

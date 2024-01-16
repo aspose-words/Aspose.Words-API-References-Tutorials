@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 Una vez cargado el documento, podemos acceder a los marcadores del documento. Hay dos formas de acceder a los marcadores: por índice y por nombre.
 
-- Acceso por índice: En nuestro ejemplo, utilizamos el índice 0 para acceder al primer marcador del documento:
+- Acceso por índice: En nuestro ejemplo, usamos el índice 0 para acceder al primer marcador del documento:
 
 ```csharp
 Bookmark bookmark1 = doc.Range.Bookmarks[0];

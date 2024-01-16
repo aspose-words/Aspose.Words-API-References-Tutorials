@@ -26,7 +26,7 @@ pip install aspose-words
 
 ## 加盟文件
 
-将多个文档合并为一个文档是各种场景中的常见需求。无论您是组合书籍的章节还是组装报告，Aspose.Words 都可以简化此任务。以下是演示如何加入文档的片段：
+将多个文档合并为一个是各种场景中的常见需求。无论您是组合书籍的章节还是组装报告，Aspose.Words 都可以简化此任务。以下是演示如何加入文档的片段：
 
 ```python
 import aspose.words as aw

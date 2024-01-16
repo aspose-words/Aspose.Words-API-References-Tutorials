@@ -588,7 +588,7 @@ private CompositeNode splitCompositeAtNode(CompositeNode baseNode, Node targetNo
 			}
 		}
 	}
-	// Sätt in den delade noden efter originalet.
+	// Infoga den delade noden efter originalet.
 	baseNode.getParentNode().insertAfter(cloneNode, baseNode);
 	// Uppdatera de nya sidnumren för basnoden och den klonade noden, inklusive dess avkomlingar.
 	// Detta kommer bara att vara en enda sida eftersom den klonade sammansättningen delas för att vara på en sida.

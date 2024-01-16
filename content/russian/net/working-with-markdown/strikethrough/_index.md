@@ -2,7 +2,7 @@
 title: Зачеркивание
 linktitle: Зачеркивание
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как применить стиль зачеркнутого текста с помощью Aspose.Words for .NET. Пошаговое руководство.
+description: Узнайте, как применить стиль зачеркивания текста с помощью Aspose.Words for .NET. Пошаговое руководство.
 type: docs
 weight: 10
 url: /ru/net/working-with-markdown/strikethrough/

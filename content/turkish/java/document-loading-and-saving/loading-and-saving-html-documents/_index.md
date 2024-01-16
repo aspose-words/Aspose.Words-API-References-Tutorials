@@ -73,7 +73,7 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ## Çözüm
 
-Bu makalede Aspose.Words for Java kullanarak HTML belgelerinin nasıl yüklenip kaydedileceğini öğrendik. Bu kitaplık, çeşitli belge formatlarıyla çalışmak için uygun bir yol sağlayarak onu Java uygulamalarında belge işleme için değerli bir araç haline getirir.
+Bu makalede Aspose.Words for Java kullanarak HTML belgelerinin nasıl yüklenip kaydedileceğini öğrendik. Bu kitaplık, çeşitli belge biçimleriyle çalışmanın uygun bir yolunu sağlayarak onu Java uygulamalarında belge işleme için değerli bir araç haline getirir.
 
 ## SSS'ler
 

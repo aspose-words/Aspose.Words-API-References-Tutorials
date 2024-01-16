@@ -81,7 +81,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ## Conclusione
 Congratulazioni! Hai imparato con successo come inserire paragrafi formattati in un documento Word utilizzando Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, ora puoi aggiungere paragrafi personalizzati con caratteri, formattazione e allineamento specifici ai tuoi documenti.
 
-### Domande frequenti sull'inserimento di paragrafi in un documento Word
+### Domande frequenti per inserire un paragrafo nel documento Word
 
 #### D: Posso inserire più paragrafi con formattazione diversa nello stesso documento?
 

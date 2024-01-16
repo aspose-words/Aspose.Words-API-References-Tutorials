@@ -106,7 +106,7 @@ Um die Umgebung einzurichten, müssen Sie sicherstellen, dass Aspose.Words für 
 
 #### Wie kann ich unterschiedliche Stile auf verschiedene Textabschnitte anwenden?
 
- Sie können verschiedene Stile auf verschiedene Textabschnitte anwenden, indem Sie festlegen`ParagraphFormat.StyleName` Eigentum der`DocumentBuilder` Objekt. Bevor Sie den Text schreiben, können Sie den Stilnamen auf den gewünschten Stil festlegen und der darauf folgende Text wird entsprechend formatiert.
+ Sie können verschiedene Stile auf verschiedene Textabschnitte anwenden, indem Sie festlegen`ParagraphFormat.StyleName` Eigentum der`DocumentBuilder` Objekt. Bevor Sie den Text schreiben, können Sie den Stilnamen auf den gewünschten Stil festlegen und der darauffolgende Text wird entsprechend formatiert.
 
 #### Kann ich das Dokument in verschiedenen Formaten speichern?
 

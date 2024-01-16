@@ -16,8 +16,8 @@ Wenn Sie diese Tutorials befolgen, erfahren Sie, wie Sie Aspose.Words für .NET 
  ## Tutorials
 | Titel | Beschreibung |
 | --- | --- |
-| [Erstellen Sie ein VBA-Projekt](./create-vba-project/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET ein VBA-Projekt in einem Word-Dokument erstellen. |
-| [Lesen Sie Vba-Makros](./read-vba-macros/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET VBA-Makros aus einem Word-Dokument lesen. |
+| [Erstellen Sie ein Vba-Projekt](./create-vba-project/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET ein VBA-Projekt in einem Word-Dokument erstellen. |
+| [Lesen Sie VBA-Makros](./read-vba-macros/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET VBA-Makros aus einem Word-Dokument lesen. |
 | [Ändern Sie VBA-Makros](./modify-vba-macros/) | In diesem Tutorial erfahren Sie, wie Sie VBA-Makros eines Word-Dokuments mit Aspose.Words für .NET bearbeiten. |
 | [Vba-Projekt klonen](./clone-vba-project/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET ein VBA-Projekt aus einem Word-Dokument klonen.|
 | [Vba-Modul klonen](./clone-vba-module/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET ein VBA-Modul aus einem Word-Dokument klonen. |

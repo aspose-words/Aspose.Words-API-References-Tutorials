@@ -112,7 +112,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool sh
 
 I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Visa göm bokmärken i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att visa eller dölja ett specifikt bokmärke i ett dokument.
 
-### Vanliga frågor för att visa gömma bokmärken i Word-dokument
+### Vanliga frågor för att visa gömma bokmärken i word-dokument
 
 #### F: Kan jag visa eller dölja flera bokmärken i samma dokument?
 

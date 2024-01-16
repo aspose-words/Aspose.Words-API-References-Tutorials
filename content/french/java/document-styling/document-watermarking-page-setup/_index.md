@@ -34,7 +34,7 @@ watermark.setWrapType(WrapType.NONE);
 watermark.setVerticalAlignment(VerticalAlignment.CENTER);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
 
-// Insérer le filigrane
+// Insérez le filigrane
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
 // Enregistrez le document

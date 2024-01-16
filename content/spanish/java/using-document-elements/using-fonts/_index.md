@@ -37,7 +37,7 @@ import java.awt.Color;
 
 ## Trabajar con fuentes
 
-Ahora que tiene su proyecto configurado, profundicemos en el uso de fuentes con Aspose.Words para Java. Crearemos un documento de muestra y formatearemos el texto con varias propiedades de fuente.
+Ahora que ya tienes tu proyecto configurado, profundicemos en el uso de fuentes con Aspose.Words para Java. Crearemos un documento de muestra y formatearemos el texto con varias propiedades de fuente.
 
 ```java
 public class FontFormattingDemo {

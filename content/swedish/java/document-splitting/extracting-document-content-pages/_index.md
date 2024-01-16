@@ -77,7 +77,7 @@ I Aspose.Words kan ett dokument delas upp i sidor. Varje sida representerar en d
 ### Extrahera text från en specifik sida
 
 ```java
-// Ange sidnummer (nollbaserat index)
+// Ange sidnumret (nollbaserat index)
 int pageNumber = 0;
 
 // Extrahera text från den angivna sidan

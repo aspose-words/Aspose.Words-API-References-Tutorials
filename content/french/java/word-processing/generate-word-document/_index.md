@@ -122,7 +122,7 @@ Automatisez la création de factures en fusionnant les données client, les info
 
 ### 7.3 Fusion et publipostage
 
-Effectuez des opérations de publipostage pour personnaliser les lettres, les enveloppes et les étiquettes pour les envois en nombre.
+Effectuez des opérations de publipostage pour personnaliser les lettres, les enveloppes et les étiquettes pour les envois en masse.
 
 ### 7.4 Conversion de documents
 

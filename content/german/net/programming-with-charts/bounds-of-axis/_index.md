@@ -2,7 +2,7 @@
 title: Grenzen der Achse in einem Diagramm
 linktitle: Grenzen der Achse in einem Diagramm
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie die Grenzen einer Achse in einem Diagramm mithilfe von Aspose.Words für .NET festlegen und den auf der Achse angezeigten Wertebereich steuern.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Grenzen einer Achse in einem Diagramm festlegen und den auf der Achse angezeigten Wertebereich steuern.
 type: docs
 weight: 10
 url: /de/net/programming-with-charts/bounds-of-axis/

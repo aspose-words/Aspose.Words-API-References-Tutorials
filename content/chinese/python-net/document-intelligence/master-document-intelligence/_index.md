@@ -2,7 +2,7 @@
 title: 掌握文档智能
 linktitle: 掌握文档智能
 second_title: Aspose.Words Python 文档管理 API
-description: 使用 Aspose.Words for Python 掌握文档智能。高效地自动化工作流程、分析数据和处理文档。现在就开始！
+description: 使用 Aspose.Words for Python 掌握文档智能。高效自动化工作流程、分析数据和处理文档。现在就开始！
 type: docs
 weight: 10
 url: /zh/python-net/document-intelligence/master-document-intelligence/

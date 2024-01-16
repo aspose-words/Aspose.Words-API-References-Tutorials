@@ -144,7 +144,7 @@ R: Un ID de proveedor en una línea de firma es un identificador único que repr
 R: Para crear una nueva línea de firma en un documento de Word usando Aspose.Words para .NET, puede seguir estos pasos:
 1.  Crear una instancia del`Document` clase y un`DocumentBuilder` objeto.
 2.  Crear una instancia del`SignatureLineOptions` class y configure las opciones de línea de firma deseadas.
-3.  Utilizar el`InsertSignatureLine` método de la`DocumentBuilder` Objeto para insertar la línea de firma en el documento.
+3.  Utilizar el`InsertSignatureLine` método de la`DocumentBuilder` objeto para insertar la línea de firma en el documento.
 
 #### P: ¿Puedo personalizar las opciones de la línea de firma, como el nombre del firmante, el título y las instrucciones?
 

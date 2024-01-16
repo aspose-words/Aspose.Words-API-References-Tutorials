@@ -200,7 +200,7 @@ pip install aspose-words
 
 ### Aspose.Words for Python 是否与不同版本的 Microsoft Word 兼容？
 
-是的，Aspose.Words 确保与各种版本的 Microsoft Word 的兼容性，让您可以跨不同环境无缝工作。
+是的，Aspose.Words 确保与各种版本的 Microsoft Word 的兼容性，让您能够跨不同环境无缝工作。
 
 ### 我可以从特定的文本中提取文本吗
 

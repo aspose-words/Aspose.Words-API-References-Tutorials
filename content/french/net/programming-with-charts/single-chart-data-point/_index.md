@@ -104,7 +104,7 @@ Dans ce didacticiel, vous avez appris à personnaliser un seul point de données
 
 Aspose.Words for .NET fournit des fonctionnalités puissantes pour manipuler des graphiques dans des documents Word. En accédant à des points de données individuels dans une série de graphiques, vous pouvez appliquer des modifications spécifiques pour personnaliser leur apparence et leur comportement. Cela vous permet de mettre en évidence des points de données spécifiques, de modifier les symboles des marqueurs, d'ajuster la taille des marqueurs, etc., pour améliorer la représentation visuelle de votre graphique.
 
-La personnalisation de points de données individuels vous offre la possibilité de mettre en valeur des données importantes ou de mettre en évidence des tendances spécifiques dans votre graphique. Avec Aspose.Words pour .NET, vous pouvez facilement accéder et modifier des points de données dans différents types de graphiques, vous permettant ainsi de créer des graphiques visuellement attrayants et informatifs dans vos documents Word.
+La personnalisation de points de données individuels vous offre la possibilité de mettre en valeur des données importantes ou de mettre en évidence des tendances spécifiques dans votre graphique. Avec Aspose.Words pour .NET, vous pouvez facilement accéder et modifier des points de données dans différents types de graphiques, vous permettant de créer des graphiques visuellement attrayants et informatifs dans vos documents Word.
 
 ### FAQ
 

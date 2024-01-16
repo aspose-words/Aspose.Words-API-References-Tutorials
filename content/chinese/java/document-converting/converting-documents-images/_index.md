@@ -10,7 +10,7 @@ url: /zh/java/document-converting/converting-documents-images/
 
 ## 将文档转换为图像简介
 
-在当今的数字时代，文档管理在各个行业中发挥着至关重要的作用。有时，您可能需要将文档转换为图像以用于各种目的，例如在网站上显示内容或为文档创建缩略图。 Java 开发人员可以使用 Aspose.Words for Java（一个用于文档操作的强大 API）高效地完成此任务。在本分步指南中，我们将探讨如何使用 Aspose.Words for Java 将文档转换为图像。
+在当今的数字时代，文档管理在各个行业中发挥着至关重要的作用。有时，您可能需要出于各种目的将文档转换为图像，例如在网站上显示内容或为文档创建缩略图。 Java 开发人员可以使用 Aspose.Words for Java（一个用于文档操作的强大 API）高效地完成此任务。在本分步指南中，我们将探讨如何使用 Aspose.Words for Java 将文档转换为图像。
 
 ## 先决条件
 
@@ -58,7 +58,7 @@ public class DocumentToImageConverter {
 
 ## 结论
 
-使用 Aspose.Words for Java，可以轻松将 Java 中的文档转换为图像。它提供了一种强大而有效的方法来处理文档转换。您可以将此功能集成到您的 Java 应用程序中，以满足各种文档处理需求。
+使用 Aspose.Words for Java，可以轻松地将 Java 中的文档转换为图像。它提供了一种强大而有效的方法来处理文档转换。您可以将此功能集成到您的 Java 应用程序中，以满足各种文档处理需求。
 
 ## 常见问题解答
 

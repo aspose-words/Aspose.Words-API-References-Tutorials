@@ -18,7 +18,7 @@ Först använder vi en dokumentgenerator för att lägga till innehåll i vårt 
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Steg 2: Använd standardcitatstilen
+## Steg 2: Använda standardcitatstilen
 
 Vi använder standardstyckeformatet "Citat" för att tillämpa citatformatering på texten.
 

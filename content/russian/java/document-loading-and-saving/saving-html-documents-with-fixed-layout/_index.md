@@ -2,7 +2,7 @@
 title: Сохранение HTML-документов с фиксированным макетом в Aspose.Words для Java
 linktitle: Сохранение HTML-документов с фиксированным макетом
 second_title: API обработки Java-документов Aspose.Words
-description: Узнайте, как сохранять документы HTML с фиксированным макетом в Aspose.Words для Java. Следуйте нашему пошаговому руководству для плавного форматирования документа.
+description: Узнайте, как сохранять HTML-документы с фиксированным макетом в Aspose.Words для Java. Следуйте нашему пошаговому руководству для плавного форматирования документа.
 type: docs
 weight: 15
 url: /ru/java/document-loading-and-saving/saving-html-documents-with-fixed-layout/

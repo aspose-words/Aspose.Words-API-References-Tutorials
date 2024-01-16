@@ -52,7 +52,7 @@ bookmark.Name = "RenamedBookmark";
 bookmark.Text = "This is a new bookmarked text.";
 ```
 
-Yer imi adını ve yeni metni ihtiyaçlarınıza göre özelleştirebilirsiniz. Yukarıdaki kod, yer işaretini "Yeniden Adlandırılmış Yer İşareti" olarak yeniden adlandırır ve metin içeriğini günceller.
+Yer imi adını ve yeni metni ihtiyaçlarınıza göre özelleştirebilirsiniz. Yukarıdaki kod, yer işaretini "Yeniden Adlandırılmış Yer İmi" olarak yeniden adlandırır ve metin içeriğini günceller.
 
 ## 4. Adım: Güncellenen belgeyi kaydedin
 

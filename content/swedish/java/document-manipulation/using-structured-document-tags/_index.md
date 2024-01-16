@@ -151,7 +151,7 @@ doc.save("StyledDocument.docx");
 
 ## Bindning av en SDT till anpassade XML-data
 
-I vissa scenarier kan du behöva binda en SDT till anpassade XML-data för dynamisk innehållsgenerering. Låt oss utforska hur man uppnår detta.
+I vissa scenarier kan du behöva binda en SDT till anpassade XML-data för dynamisk innehållsgenerering. Låt oss undersöka hur man uppnår detta.
 
 ```java
 Document doc = new Document();

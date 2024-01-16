@@ -8,13 +8,13 @@ weight: 10
 url: /it/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-In questo tutorial, seguiremo una guida passo passo per comprendere e implementare la funzionalità Aggiorna dati dei segnalibri nel documento Word di Aspose.Words per .NET. Questa funzionalità consente di aggiornare il contenuto e le proprietà dei segnalibri all'interno di un documento Word utilizzando il codice sorgente C#.
+In questo tutorial, seguiremo una guida passo passo per comprendere e implementare la funzionalità Aggiorna dati segnalibri nel documento Word di Aspose.Words per .NET. Questa funzionalità consente di aggiornare il contenuto e le proprietà dei segnalibri all'interno di un documento Word utilizzando il codice sorgente C#.
 
 ## Requisiti
 
 Prima di procedere con il tutorial, assicurati di avere i seguenti requisiti:
 
-- Aspose.Words per la libreria .NET installata
+- Libreria Aspose.Words per .NET installata
 - Conoscenza base del linguaggio di programmazione C#
 - Visual Studio o qualsiasi altro IDE compatibile
 

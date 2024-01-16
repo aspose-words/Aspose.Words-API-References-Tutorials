@@ -151,7 +151,7 @@ Biçimlendirme revizyonları yazı tipi stilleri, girinti, hizalama ve diğer d�
 
 ### 4.3 Yorumlar ve Takip Edilen Değişiklikler
 
-Ortak çalışanlar geri bildirim ve öneri sağlamak için sıklıkla yorumları kullanır. Takip edilen değişiklikler ise belgede yapılan değişikliklerin kaydını tutar. Aspose.Words, yorumları ve takip edilen değişiklikleri programlı bir şekilde yönetmenize olanak sağlar.
+Ortak çalışanlar geri bildirim ve öneri sağlamak için sıklıkla yorumları kullanır. Takip edilen değişiklikler ise belgede yapılan değişikliklerin kaydını tutar. Aspose.Words, yorumları ve takip edilen değişiklikleri programlı bir şekilde yönetmenize olanak tanır.
 
 ### 4.4 Gelişmiş Revizyon İşleme
 

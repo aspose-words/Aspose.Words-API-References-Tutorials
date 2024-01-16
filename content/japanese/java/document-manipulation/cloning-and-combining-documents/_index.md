@@ -1,0 +1,108 @@
+---
+title: Aspose.Words for Java でのドキュメントの複製と結合
+linktitle: ドキュメントの複製と結合
+second_title: Aspose.Words Java ドキュメント処理 API
+description: Aspose.Words for Java でドキュメントを複製して結合する方法を学びます。ソースコード例を含むステップバイステップのガイド。
+type: docs
+weight: 27
+url: /ja/java/document-manipulation/cloning-and-combining-documents/
+---
+
+## Aspose.Words for Java でのドキュメントの複製と結合の概要
+
+このチュートリアルでは、Aspose.Words for Java を使用してドキュメントを複製し、結合する方法を説明します。文書の複製、置換ポイント、ブックマークへの文書の挿入、差し込み印刷操作中など、さまざまなシナリオを取り上げます。
+
+## ステップ 1: ドキュメントのクローンを作成する
+
+Aspose.Words for Java でドキュメントのクローンを作成するには、`deepClone()`方法。簡単な例を次に示します。
+
+```java
+Document doc = new Document("Your Directory Path" + "Document.docx");
+Document clone = doc.deepClone();
+clone.save("Your Directory Path" + "CloneAndCombineDocuments.CloningDocument.docx");
+```
+
+このコードは、元のドキュメントのディープ クローンを作成し、新しいファイルとして保存します。
+
+## ステップ 2: 置換ポイントにドキュメントを挿入する
+
+別のドキュメント内の特定の置換ポイントにドキュメントを挿入できます。その方法は次のとおりです。
+
+```java
+Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
+FindReplaceOptions options = new FindReplaceOptions();
+options.setDirection(FindReplaceDirection.BACKWARD);
+options.setReplacingCallback(new InsertDocumentAtReplaceHandler());
+mainDoc.getRange().replace(Pattern.compile("\\[MY_DOCUMENT\\]"), "", options);
+mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
+```
+
+この例では、`FindReplaceOptions`オブジェクトを使用して、置換用のコールバック ハンドラーを指定します。の`InsertDocumentAtReplaceHandler`クラスは挿入ロジックを処理します。
+
+## ステップ 3: ブックマークにドキュメントを挿入する
+
+別のドキュメントの特定のブックマークにドキュメントを挿入するには、次のコードを使用できます。
+
+```java
+Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
+Document subDoc = new Document("Your Directory Path" + "Document insertion 2.docx");
+Bookmark bookmark = mainDoc.getRange().getBookmarks().get("insertionPlace");
+insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
+mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtBookmark.docx");
+```
+
+ここでは、ブックマークを名前で検索し、`insertDocument`のコンテンツを挿入するメソッド`subDoc`ドキュメントをブックマークの場所に置きます。
+
+## ステップ 4: 差し込み印刷中に文書を挿入する
+
+Aspose.Words for Java での差し込み印刷操作中にドキュメントを挿入できます。その方法は次のとおりです。
+
+```java
+Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
+mainDoc.getMailMerge().setFieldMergingCallback(new InsertDocumentAtMailMergeHandler());
+mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { "Your Directory Path" + "Document insertion 2.docx" });
+mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
+```
+
+この例では、`InsertDocumentAtMailMergeHandler` 「Document_1」フィールドで指定されたドキュメントの挿入を処理するクラス。
+
+## 結論
+
+Aspose.Words for Java でのドキュメントの複製と結合は、さまざまな手法を使用して実行できます。文書の複製、置換ポイント、ブックマーク、または差し込み印刷中にコンテンツを挿入する必要がある場合でも、Aspose.Words は文書をシームレスに操作するための強力な機能を提供します。
+
+## よくある質問
+
+### Aspose.Words for Java でドキュメントのクローンを作成するにはどうすればよいですか?
+
+ Aspose.Words for Java でドキュメントのクローンを作成するには、`deepClone()`方法。以下に例を示します。
+
+```java
+Document doc = new Document("Your Directory Path" + "Document.docx");
+Document clone = doc.deepClone();
+clone.save("Your Directory Path" + "ClonedDocument.docx");
+```
+
+### ブックマークに文書を挿入するにはどうすればよいですか?
+
+ Aspose.Words for Java のブックマークにドキュメントを挿入するには、ブックマークを名前で検索し、`insertDocument`コンテンツを挿入するメソッド。以下に例を示します。
+
+```java
+Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");
+Document subDoc = new Document("Your Directory Path" + "SubDocument.docx");
+Bookmark bookmark = mainDoc.getRange().getBookmarks().get("MyBookmark");
+insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
+mainDoc.save("Your Directory Path" + "CombinedDocument.docx");
+```
+
+### Aspose.Words for Java で差し込み印刷中に文書を挿入するにはどうすればよいですか?
+
+Aspose.Words for Java で差し込み印刷中にドキュメントを挿入するには、フィールド差し込みコールバックを設定し、挿入するドキュメントを指定します。以下に例を示します。
+
+```java
+Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");
+mainDoc.getMailMerge().setFieldMergingCallback(new InsertDocumentAtMailMergeHandler());
+mainDoc.getMailMerge().execute(new String[] { "DocumentField" }, new Object[] { "Your Directory Path" + "DocumentToInsert.docx" });
+mainDoc.save("Your Directory Path" + "MergedDocument.docx");
+```
+
+この例では、`InsertDocumentAtMailMergeHandler`クラスは、差し込み印刷中の「DocumentField」の挿入ロジックを処理します。

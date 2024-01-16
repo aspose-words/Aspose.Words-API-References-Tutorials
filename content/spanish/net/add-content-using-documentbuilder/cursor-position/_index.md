@@ -70,4 +70,4 @@ R: La información obtenida sobre la posición del cursor se puede utilizar para
 
 #### P: ¿Existe algún caso de uso específico en el que comprender la posición del cursor sea particularmente útil?
 
-R: Comprender la posición del cursor puede ser beneficioso en escenarios en los que necesita crear aplicaciones de edición de documentos interactivas, implementar la automatización de documentos o generar contenido dinámicamente según la entrada del usuario. También puede resultar útil para crear plantillas personalizadas o realizar tareas de procesamiento de documentos donde se requieren operaciones contextuales.
+R: Comprender la posición del cursor puede resultar beneficioso en escenarios en los que necesita crear aplicaciones de edición de documentos interactivas, implementar la automatización de documentos o generar contenido dinámicamente en función de la entrada del usuario. También puede resultar útil para crear plantillas personalizadas o realizar tareas de procesamiento de documentos donde se requieren operaciones contextuales.

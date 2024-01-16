@@ -67,7 +67,7 @@ I den här handledningen förklarade vi hur man aktiverar bildinterpolation vid 
 ### Vanliga frågor
 
 #### F: Vad är raminterpolation i ett PDF-dokument?
-S: Interpolering av bilder i ett PDF-dokument hänvisar till renderingstekniken som förbättrar den visuella kvaliteten på bilder när ett dokument konverteras till PDF-format. Bildinterpolation resulterar i jämnare och mer detaljerade bilder i det genererade PDF-dokumentet.
+S: Interpolation av bilder i ett PDF-dokument hänvisar till renderingstekniken som förbättrar den visuella kvaliteten på bilder när ett dokument konverteras till PDF-format. Bildinterpolation resulterar i jämnare och mer detaljerade bilder i det genererade PDF-dokumentet.
 
 #### F: Hur kan jag aktivera bildinterpolation när jag konverterar till PDF med Aspose.Words för .NET?
 S: För att aktivera bildinterpolation vid konvertering till PDF med Aspose.Words för .NET, följ dessa steg:

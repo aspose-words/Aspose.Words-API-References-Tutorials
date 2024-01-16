@@ -117,7 +117,7 @@ HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWholeWordsOnly = false };
 ```
 
-#### Q : Comment puis-je remplacer le texte dans le pied de page à l'aide d'Aspose.Words for .NET ?
+#### Q : Comment puis-je effectuer un remplacement de texte dans le pied de page à l'aide d'Aspose.Words pour .NET ?
 
 R : Pour effectuer un remplacement de texte dans le pied de page à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Range.Replace` méthode sur la plage du pied de page. Cette méthode permet de préciser le texte à rechercher et le texte de remplacement. Voici un exemple :
 

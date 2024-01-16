@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 
-Bu eğitimde Aspose.Words for .NET kullanılarak bir Word belgesindeki Özel Xml Parçasına eşlenen yinelenen bölüm içeren bir tablonun nasıl oluşturulacağı gösterilmektedir. Yinelenen bölüm, Özel Xml Bölümünde depolanan XML verilerine dayalı olarak dinamik olarak satır eklemenizi sağlar.
+Bu eğitimde, Aspose.Words for .NET kullanılarak bir Word belgesindeki Özel Xml Parçasına eşlenen yinelenen bölüm içeren bir tablonun nasıl oluşturulacağı gösterilmektedir. Yinelenen bölüm, Özel Xml Bölümünde depolanan XML verilerine dayalı olarak dinamik olarak satır eklemenizi sağlar.
 
 ## Önkoşullar
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:

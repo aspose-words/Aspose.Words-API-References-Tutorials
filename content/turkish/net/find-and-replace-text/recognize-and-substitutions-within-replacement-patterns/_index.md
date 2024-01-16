@@ -110,7 +110,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### S: Örnek kaynak kodu, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanıma ve Değiştirmeler" özelliği için neyi gösteriyor?
 
-C: Örnek kaynak kodu, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanıma ve Değiştirme" özelliğinin kullanımını göstermektedir. Bir belgenin nasıl oluşturulacağını, metin ekleneceğini, metin aramasının nasıl gerçekleştirileceğini ve normal ifadeler kullanarak nasıl değiştirileceğini ve eşleşen metni dinamik olarak dönüştürmek için değiştirme modelinde yakalanan grupların nasıl kullanılacağını gösterir.
+C: Örnek kaynak kodu, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanıma ve Değiştirmeler" özelliğinin kullanımını göstermektedir. Bir belgenin nasıl oluşturulacağını, metin ekleneceğini, metin aramasının nasıl gerçekleştirileceğini ve normal ifadeler kullanarak nasıl değiştirileceğini ve eşleşen metni dinamik olarak dönüştürmek için değiştirme modelinde yakalanan grupların nasıl kullanılacağını gösterir.
 
 #### S: Aspose.Words for .NET'te düzenli ifadelerin kullanımına ilişkin daha fazla bilgi ve örneği nerede bulabilirim?
 

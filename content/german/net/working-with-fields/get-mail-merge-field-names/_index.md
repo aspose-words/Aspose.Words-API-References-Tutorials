@@ -60,7 +60,7 @@ Damit ist unser Leitfaden zur Verwendung der Funktion „Get Merge Field Names�
 
 ### FAQs
 
-#### F1: Was ist Seriendruck in Aspose.Words?
+#### F1: Was ist Serienbrief in Aspose.Words?
 
 Beim Seriendruck in Aspose.Words handelt es sich um einen Prozess zum Zusammenführen von Daten aus einer externen Quelle (z. B. einer Excel-Tabelle oder einer Datenbank) mit einer Word-Dokumentvorlage, um personalisierte Dokumente zu erstellen. Dies erleichtert die automatisierte Erstellung von Briefen, Berichten und ähnlichen Dokumenten.
 

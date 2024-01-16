@@ -46,7 +46,7 @@ public class TableCreation {
 
 In diesem Codeausschnitt erstellen wir eine einfache Tabelle mit 3 Zeilen und 3 Spalten und füllen jede Zelle mit dem Text „Beispieltext“.
 
-### Überschriften zur Tabelle hinzufügen
+### Hinzufügen von Kopfzeilen zur Tabelle
 Das Hinzufügen von Kopfzeilen zu Ihrer Tabelle ist für eine bessere Organisation oft notwendig. So können Sie das erreichen:
 
 ```java

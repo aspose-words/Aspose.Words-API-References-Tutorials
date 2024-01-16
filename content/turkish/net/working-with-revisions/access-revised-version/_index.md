@@ -73,7 +73,7 @@ foreach (Revision revision in doc.Revisions)
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinin revize edilmiş versiyonuna nasıl erişeceğimizi öğrendik. Belgeyi yükleyerek, revize edilmiş versiyona giderek ve revizyonlara göz atarak, liste öğesi olan paragraflar için özel bilgiler elde edebildik. Aspose.Words for .NET, incelemelere erişim de dahil olmak üzere Word belgelerini yönetmek için güçlü özellikler sunar. Artık bu bilgiyi Aspose.Words for .NET kullanarak kendi Word belgelerinizin revize edilmiş versiyonuna erişmek için kullanabilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinin revize edilmiş versiyonuna nasıl erişeceğimizi öğrendik. Belgeyi yükleyerek, revize edilmiş sürüme giderek ve revizyonlara göz atarak, liste öğesi olan paragraflara ilişkin özel bilgiler elde edebildik. Aspose.Words for .NET, incelemelere erişim de dahil olmak üzere Word belgelerini yönetmek için güçlü özellikler sunar. Artık bu bilgiyi Aspose.Words for .NET kullanarak kendi Word belgelerinizin revize edilmiş versiyonuna erişmek için kullanabilirsiniz.
 
 ### SSS'ler
 

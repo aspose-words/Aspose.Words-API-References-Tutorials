@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Шаг 3. Создайте и добавьте фигуры в GroupShape
- Создавайте отдельные фигуры, например`accentBorderShape` и`actionButtonShape` используя`Shape` сорт. Настройте их свойства по своему усмотрению. Добавьте эти фигуры в`groupShape` объект.
+ Создавайте отдельные фигуры, например`accentBorderShape` и`actionButtonShape` используя`Shape` сорт. Настройте их свойства по своему желанию. Добавьте эти фигуры в`groupShape` объект.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };

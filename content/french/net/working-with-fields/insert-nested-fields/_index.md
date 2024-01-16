@@ -108,7 +108,7 @@ R : Pour insérer des champs imbriqués dans un document Word à l'aide d'Aspose
 
 #### Q : Quels sont les avantages de l'utilisation de champs imbriqués dans un document Word avec Aspose.Words pour .NET ?
 
-: L'utilisation de champs imbriqués offre plusieurs avantages dans un document Word avec Aspose.Words for .NET. Cela permet une plus grande flexibilité dans la création de modèles de documents dynamiques, en permettant l'insertion de valeurs variables et de calculs dans des champs imbriqués. Les champs imbriqués peuvent également faciliter la génération automatisée de contenu, comme la génération de tables des matières, de numéros de page, etc.
+: L'utilisation de champs imbriqués offre plusieurs avantages dans un document Word avec Aspose.Words pour .NET. Cela permet une plus grande flexibilité dans la création de modèles de documents dynamiques, en permettant l'insertion de valeurs variables et de calculs dans des champs imbriqués. Les champs imbriqués peuvent également faciliter la génération automatisée de contenu, comme la génération de tables des matières, de numéros de page, etc.
 
 #### Q : Puis-je avoir des champs imbriqués à plusieurs niveaux dans un document Word avec Aspose.Words pour .NET ?
 

@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Multi-section structured document tags.do
 NodeCollection tags = doc.GetChildNodes(NodeType.StructuredDocumentTagRangeStart, true);
 ```
 
-## Adım 3: Çok Bölümlü Etiketleri İşleyin
+## 3. Adım: Çok Bölümlü Etiketleri İşleyin
 Yapılandırılmış belge etiketi aralığı başlangıç düğümlerinin koleksiyonunu yineleyin. Bu örnekte, her etiketin başlığını konsola yazdırıyoruz. Gereksinimlerinize göre daha fazla işlem gerçekleştirebilirsiniz.
 
 ```csharp

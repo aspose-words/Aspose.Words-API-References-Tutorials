@@ -95,7 +95,7 @@ S: Innan du implementerar funktionen Infoga textinmatningsformulärfält måste 
 
 #### F: Kan jag infoga flera formulärfält för textinmatning i ett enda dokument?
 
- S: Ja, du kan infoga flera formulärfält för textinmatning i ett enda dokument. Ring helt enkelt`InsertTextInput` metod med olika namn och konfigurationer för att lägga till flera formulärfält.
+ S: Ja, du kan infoga flera formulärfält för textinmatning i ett enda dokument. Ring bara till`InsertTextInput` metod med olika namn och konfigurationer för att lägga till flera formulärfält.
 
 #### F: Hur kan användare interagera med textinmatningsformulärfältet i dokumentet?
 

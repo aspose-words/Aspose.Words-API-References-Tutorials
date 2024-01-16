@@ -75,7 +75,7 @@ Bir Word belgesinde tema özelliklerini ayarlamak, belgenizin görünümünü ve
 
 #### Bir belgenin farklı bölümlerine farklı temalar uygulayabilir miyim?
 
- Evet, bir belgenin farklı bölümlerine, bu bölümlerdeki tema özelliklerini değiştirerek farklı temalar uygulayabilirsiniz. Erişerek`Theme` Nesnenin belirli bir bölümüne özgü yazı tiplerini ve renkleri değiştirerek aynı belge içinde farklı görsel stiller oluşturmanıza olanak tanıyabilirsiniz.
+ Evet, bir belgenin farklı bölümlerine, bu bölümlerdeki tema özelliklerini değiştirerek farklı temalar uygulayabilirsiniz. Erişerek`Theme` Belirli bir bölüme özel yazı tiplerini ve renkleri değiştirerek aynı belge içinde farklı görsel stiller oluşturmanıza olanak tanıyabilirsiniz.
 
 #### Değiştirilen belgeyi farklı formatlarda kaydedebilir miyim?
 

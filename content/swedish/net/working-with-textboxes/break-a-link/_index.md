@@ -81,7 +81,7 @@ S: För att bryta omdirigeringslänkar i ett Word-dokument med Aspose.Words för
 
 #### F: Hur bryter man en omdirigeringslänk genom att ställa in ett nollvärde?
 
-S: Alternativt kan du bryta en omdirigeringslänk genom att ställa in`Next` egenskapen för textrutan till`null`. Detta tar effektivt bort kopplingen till nästa form.
+S: Alternativt kan du bryta en omdirigeringslänk genom att ställa in`Next` textrutans egendom till`null`. Detta tar effektivt bort kopplingen till nästa form.
 
 #### F: Hur bryter man en länk som leder till textrutan?
 

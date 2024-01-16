@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## الخطوة 2: تصفح الملفات
 
- ثم نستخدم`GetFiles` طريقة`Directory` class للحصول على قائمة الملفات في الدليل المحدد. نحن نستخدم أيضا أ`Where`عبارة لاستبعاد ملف محدد يسمى "مستند تالف.docx".
+ ثم نستخدم ال`GetFiles` طريقة`Directory` class للحصول على قائمة الملفات في الدليل المحدد. نحن نستخدم أيضا أ`Where`عبارة لاستبعاد ملف محدد يسمى "مستند تالف.docx".
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));

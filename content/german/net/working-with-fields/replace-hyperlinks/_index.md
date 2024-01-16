@@ -92,7 +92,7 @@ Dies ist ein Beispielquellcode zum Ersetzen von Hyperlinks in einem Dokument mit
 
 #### F: Ist es möglich, nur bestimmte Hyperlinks in einem Word-Dokument durch Aspose.Words für .NET zu ersetzen?
 
-A: Ja, es ist möglich, nur bestimmte Hyperlinks in einem Word-Dokument durch Aspose.Words für .NET zu ersetzen. Sie können die zu ersetzenden Hyperlinks nach bestimmten Kriterien filtern, z. B. nach Link-URL, Linktext oder anderen relevanten Eigenschaften. Dann können Sie die Ersetzung nur auf die passenden Hyperlinks anwenden.
+A: Ja, es ist möglich, nur bestimmte Hyperlinks in einem Word-Dokument mit Aspose.Words für .NET zu ersetzen. Sie können die zu ersetzenden Hyperlinks nach bestimmten Kriterien filtern, z. B. nach Link-URL, Linktext oder anderen relevanten Eigenschaften. Dann können Sie die Ersetzung nur auf die passenden Hyperlinks anwenden.
 
 #### F: Wie kann ich Hyperlinks in Kopf-, Fuß- oder Fußnoten ignorieren, wenn ich sie durch Aspose.Words für .NET ersetze?
 

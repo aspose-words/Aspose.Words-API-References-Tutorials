@@ -55,7 +55,7 @@ doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
 ## Adım 5: Korumalı Belgeyi Kaydetme
 
- Son olarak, korumalı belgeyi kullanarak kaydedebilirsiniz.`Save` Document sınıfının yöntemi. Tam dosya yolunu ve istenen dosya adını belirtin. Örneğin :
+ Son olarak, korumalı belgeyi kullanarak kaydedebilirsiniz.`Save` Document sınıfının yöntemi. Tam dosya yolunu ve istediğiniz dosya adını belirtin. Örneğin :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
