@@ -114,7 +114,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### 问：在哪里可以找到有关在 Aspose.Words for .NET 中使用正则表达式的更多信息和示例？
 
-答：有关在 Aspose.Words for .NET 中使用正则表达式的更多信息和示例，您可以参考[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)。该文档提供了 Aspose.Words for .NET 中涉及正则表达式和文本操作的各种场景的详细解释和代码示例。
+答：有关在 Aspose.Words for .NET 中使用正则表达式的更多信息和示例，您可以参考[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)。该文档提供了 Aspose.Words for .NET 中涉及正则表达式和文本操作的各种场景的详细说明和代码示例。
 
 #### 问：我可以在文本搜索和替换期间根据捕获的组操作文档的其他方面吗？
 

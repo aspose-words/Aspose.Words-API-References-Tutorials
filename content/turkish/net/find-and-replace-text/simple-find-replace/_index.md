@@ -40,7 +40,7 @@ builder.Writeln("Hello _CustomerName_,");
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-## 4. Adım: Düzenlenen belgeyi kaydetme
+## Adım 4: Düzenlenen belgeyi kaydetme
 
 Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydederiz:`Save` yöntem:
 

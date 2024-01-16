@@ -361,7 +361,7 @@ Dieses Code-Snippet speichert das Dokument als PDF-Datei.
 
 ## Erweiterte Funktionen
 
-Aspose.Words für Java bietet erweiterte Funktionen für die komplexe Dokumentbearbeitung. Dazu gehören Seriendruck, Dokumentvergleich und mehr. Sehen Sie sich die Dokumentation an, um ausführliche Anleitungen zu diesen fortgeschrittenen Themen zu erhalten.
+Aspose.Words für Java bietet erweiterte Funktionen für die komplexe Dokumentbearbeitung. Dazu gehören Seriendruck, Dokumentenvergleich und mehr. Sehen Sie sich die Dokumentation an, um ausführliche Anleitungen zu diesen fortgeschrittenen Themen zu erhalten.
 
 ## Tipps und Best Practices
 

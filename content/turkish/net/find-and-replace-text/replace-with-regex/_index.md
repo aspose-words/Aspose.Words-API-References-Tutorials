@@ -85,7 +85,7 @@ Bu makalede, Aspose.Words for .NET'in Regex ile Değiştir fonksiyonunun nasıl 
 
 #### S: Aspose.Words for .NET'teki "Replace With Regex" işlevi nedir?
 
-C: Aspose.Words for .NET'teki "Replace With Regex" işlevi, normal bir ifadeyle tanımlanan belirli kalıplara dayalı olarak metin değiştirme işlemi gerçekleştirmenize olanak tanır. Düzenli ifadeler kullanarak karmaşık arama kalıplarını belirleyerek bir belgedeki metni bulmanıza ve değiştirmenize olanak sağlar.
+C: Aspose.Words for .NET'teki "Replace With Regex" işlevi, normal bir ifadeyle tanımlanan belirli kalıplara dayalı olarak metin değiştirme işlemi gerçekleştirmenize olanak tanır. Düzenli ifadeler kullanarak karmaşık arama kalıplarını belirleyerek bir belgedeki metni bulmanıza ve değiştirmenize olanak tanır.
 
 #### S: Aspose.Words for .NET'i kullanarak nasıl yeni bir belge oluşturabilirim?
 

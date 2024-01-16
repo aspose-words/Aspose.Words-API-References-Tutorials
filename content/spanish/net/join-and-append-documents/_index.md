@@ -26,7 +26,7 @@ Estos tutoriales de Aspose.Words para .NET le brindan recursos valiosos para dom
 | [Unirse continuo](./join-continuous/) | Aprenda cómo unir dos documentos continuamente mientras conserva el formato usando Aspose.Words para .NET. |
 | [Unirse a nueva página](./join-new-page/) | Aprenda cómo unir dos documentos en una nueva página conservando el formato usando Aspose.Words para .NET. |
 | [Coserva el formato original](./keep-source-formatting/) | Aprenda cómo adjuntar un documento de origen a un documento de destino mientras conserva el formato original usando Aspose.Words para .NET. |
-| [Mantenga la fuente unida](./keep-source-together/) | Aprenda a usar Aspose.Words para .NET para unir y agregar documentos de Word manteniendo el contenido de origen junto con el documento de destino. |
+| [Mantenga la fuente unida](./keep-source-together/) | Aprenda a usar Aspose.Words para .NET para unir y agregar documentos de Word mientras mantiene el contenido de origen junto con el documento de destino. |
 | [Lista Mantener formato fuente](./list-keep-source-formatting/) | Aprenda cómo conservar el formato de la lista al unir y agregar documentos de Word usando Aspose.Words para .NET. |
 | [Listar estilos de destino de uso](./list-use-destination-styles/) | Aprenda a unir y anexar documentos de Word mientras conserva los estilos de lista del documento de destino utilizando Aspose.Words para .NET. |
 | [Reiniciar numeración de páginas](./restart-page-numbering/) | Aprenda cómo reiniciar la numeración de páginas mientras une y agrega documentos de Word usando Aspose.Words para .NET. |

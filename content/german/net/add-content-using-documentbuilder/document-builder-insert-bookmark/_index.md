@@ -37,7 +37,7 @@ Speichern Sie das Dokument nach dem Einfügen des Lesezeichens mit der Save-Meth
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
-### Beispielquellcode für DocumentBuilder: Einfügen eines Lesezeichens mit Aspose.Words für .NET
+### Beispiel-Quellcode für DocumentBuilder-Lesezeichen einfügen mit Aspose.Words für .NET
 Hier ist der vollständige Quellcode zum Einfügen eines Lesezeichens mithilfe der DocumentBuilder-Klasse in Aspose.Words für .NET:
 
 ```csharp

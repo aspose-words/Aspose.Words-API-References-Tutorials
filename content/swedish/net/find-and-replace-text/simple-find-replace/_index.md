@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Hello _CustomerName_,");
 ```
 
-## Steg 3: Enkelt textbyte
+## Steg 3: Enkel textersättning
 
  Vi använder`Range.Replace` metod för att utföra enkel textersättning. I vårt exempel ersätter vi alla förekomster av strängen "_ClientName_ " med "James Bond" med hjälp av`FindReplaceOptions` alternativet med`FindReplaceDirection.Forward` sökriktning:
 

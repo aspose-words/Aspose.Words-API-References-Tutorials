@@ -2,7 +2,7 @@
 title: Kalın yazı
 linktitle: Kalın yazı
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile kalın metinlerin nasıl yazılacağını öğrenin. Adım adım kılavuz.
+description: Aspose.Words for .NET ile metni nasıl kalınlaştıracağınızı öğrenin. Adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/bold-text/

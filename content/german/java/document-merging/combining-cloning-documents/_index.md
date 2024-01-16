@@ -14,7 +14,7 @@ Aspose.Words für Java ist eine robuste Bibliothek, die es Ihnen ermöglicht, pr
 
 ## Voraussetzungen
 
-Bevor wir in den Codierungsteil eintauchen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor wir uns mit dem Programmierteil befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 - Java Development Kit (JDK) auf Ihrem System installiert
 - Aspose.Words für Java-Bibliothek

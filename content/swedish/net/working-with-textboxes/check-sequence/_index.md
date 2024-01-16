@@ -43,7 +43,7 @@ if (textBox. Next != null && textBox. Previous != null)
 }
 ```
 
-Om textrutan har både en nästa form (`Next`) och en tidigare form (`Previous`), detta indikerar att det är mitt i sekvensen. Meddelandet "Mitt i sekvensen" kommer att visas.
+Om textrutan har både en Nästa form (`Next`) och en tidigare form (`Previous`), detta indikerar att det är mitt i sekvensen. Meddelandet "Mitt i sekvensen" kommer att visas.
 
 ## Steg 5: Verifiering av slutet av sekvensen:
 

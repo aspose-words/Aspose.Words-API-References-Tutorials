@@ -45,7 +45,7 @@ cellFormat. TopPadding = 30;
 cellFormat.BottomPadding = 30;
 ```
 
-## Schritt 5: Inhalt zur Zelle hinzufügen
+## Schritt 5: Fügen Sie der Zelle Inhalte hinzu
  Anschließend können wir mit dem Document Builder Inhalte zur Zelle hinzufügen`Writeln()` Methode.
 
 ```csharp

@@ -111,7 +111,7 @@ Bu makalede, Aspose.Words for .NET'in Meta Karakterleri İçeren Metni Değişti
 
 #### S: Aspose.Words for .NET'teki Meta Karakterleri İçeren Metni Değiştir işlevi nedir?
 
-C: Aspose.Words for .NET'teki Meta Karakterleri İçeren Metni Değiştir özelliği, bir belgede belirli meta karakterler içeren metin bölümlerini değiştirmenize olanak tanır. Belgenizde meta karakterleri hesaba katarak gelişmiş değişiklikler yapmak için bu özelliği kullanabilirsiniz.
+C: Aspose.Words for .NET'teki Meta Karakterleri İçeren Metni Değiştir özelliği, bir belgede belirli meta karakterler içeren metin bölümlerini değiştirmenize olanak sağlar. Belgenizde meta karakterleri hesaba katarak gelişmiş değişiklikler yapmak için bu özelliği kullanabilirsiniz.
 
 #### S: Aspose.Words for .NET'te yeni bir belge nasıl oluşturulur?
 

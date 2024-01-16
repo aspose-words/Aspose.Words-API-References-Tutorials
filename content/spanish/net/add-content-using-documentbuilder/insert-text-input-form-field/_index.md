@@ -95,7 +95,7 @@ R: Antes de implementar la función Insertar campo de formulario de entrada de t
 
 #### P: ¿Puedo insertar varios campos de formulario de entrada de texto en un solo documento?
 
- R: Sí, puede insertar varios campos de formulario de entrada de texto en un solo documento. Simplemente llama al`InsertTextInput` método con diferentes nombres y configuraciones para agregar múltiples campos de formulario.
+ R: Sí, puede insertar varios campos de formulario de entrada de texto en un solo documento. Simplemente llame al`InsertTextInput` método con diferentes nombres y configuraciones para agregar múltiples campos de formulario.
 
 #### P: ¿Cómo pueden interactuar los usuarios con el campo del formulario de entrada de texto en el documento?
 

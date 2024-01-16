@@ -38,4 +38,4 @@ Si sigue estos tutoriales, podrá aprovechar al máximo las funciones de manipul
 | [Obtener posición en la mesa](./get-table-position/) | Aprenda cómo obtener la posición de una tabla en un documento de Word con Aspose.Words para .NET. |
 | [Obtener posición de mesa flotante](./get-floating-table-position/) | Aprenda cómo obtener la posición de tablas flotantes en un documento de Word con Aspose.Words para .NET. |
 | [Posición de la mesa flotante](./floating-table-position/) | Aprenda a colocar una tabla en posición flotante en un documento de Word con Aspose.Words para .NET. |
-| [Establecer posición relativa horizontal o vertical](./set-relative-horizontal-or-vertical-position/) | Aprenda a configurar la posición relativa horizontal o vertical de una tabla en un documento de Word con Aspose.Words para .NET. |
+| [Establecer posición relativa horizontal o vertical](./set-relative-horizontal-or-vertical-position/) | Aprenda a establecer la posición relativa horizontal o vertical de una tabla en un documento de Word con Aspose.Words para .NET. |

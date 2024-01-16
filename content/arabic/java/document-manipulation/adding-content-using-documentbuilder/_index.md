@@ -283,7 +283,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN, 100.0, RelativeVerticalPosition.MARGIN, 100.0, 200.0, 100.0, WrapType.SQUARE);
 ```
 
-### س: هل يمكنني تنسيق النص والفقرات عند إضافة محتوى؟
+### س: هل يمكنني تنسيق النص والفقرات عند إضافة المحتوى؟
 
  ج: نعم، يمكنك تنسيق النص والفقرات باستخدام`DocumentBuilder`. يمكنك تعيين خصائص الخط ومحاذاة الفقرة والمسافة البادئة والمزيد. هنا مثال:
 

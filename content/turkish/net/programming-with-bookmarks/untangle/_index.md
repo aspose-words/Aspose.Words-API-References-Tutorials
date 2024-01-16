@@ -37,7 +37,7 @@ Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
 ## 3. Adım: İç İçe Yerleştirilmiş Yer İmlerini Çözün
 
-Her iki ana satır da bulunursa ve yer işareti bitişik satırlarda başlayıp bitiyorsa, yer işaretinin son düğümünü üst satırdaki son hücrenin son paragrafının sonuna taşırız:
+Her iki ana satır da bulunursa ve yer imi bitişik satırlarda başlayıp bitiyorsa, yer iminin son düğümünü üst satırdaki son hücrenin son paragrafının sonuna taşırız:
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)

@@ -8,7 +8,7 @@ weight: 18
 url: /zh/java/using-document-elements/using-lists/
 ---
 
-在这个综合教程中，我们将探讨如何有效地使用 Aspose.Words for Java 中的列表，这是一个强大的 API，用于以编程方式处理 Microsoft Word 文档。列表对于构建和组织文档中的内容至关重要。我们将介绍使用列表的两个关键方面：在每个部分重新启动列表和指定列表级别。让我们深入了解吧！
+在这个综合教程中，我们将探讨如何有效地使用 Aspose.Words for Java 中的列表，这是一个强大的 API，用于以编程方式处理 Microsoft Word 文档。列表对于构建和组织文档中的内容至关重要。我们将介绍使用列表的两个关键方面：在每个部分重新启动列表和指定列表级别。让我们深入了解一下吧！
 
 ## Aspose.Words for Java 简介
 

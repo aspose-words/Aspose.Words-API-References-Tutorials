@@ -31,7 +31,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج شكل صورة
+## الخطوة 3: إدراج شكل الصورة
  استخدم ال`InsertImage` طريقة`DocumentBuilder` كائن لإدراج شكل صورة في المستند. توفير المسار إلى ملف الصورة كمعلمة.
 
 ```csharp

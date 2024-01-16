@@ -29,7 +29,7 @@ Stream stream = new MemoryStream();
 doc.Save(stream, SaveFormat.Mhtml);
 ```
 
-## Шаг 3. Перемотка потока назад
+## Шаг 3: Перемотка потока
 
 Поскольку Aspose.Email необходимо прочитать поток с начала, перемотаем поток на начало:
 

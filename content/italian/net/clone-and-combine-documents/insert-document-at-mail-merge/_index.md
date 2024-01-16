@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-In questo tutorial, ti spiegheremo come inserire un documento in un altro documento durante la stampa unione utilizzando la funzione Inserisci documento durante la stampa unione di Aspose.Words per .NET. Seguire i passaggi seguenti per comprendere il codice sorgente ed eseguire l'inserimento del documento.
+In questo tutorial, ti spiegheremo come inserire un documento in un altro documento durante la stampa unione utilizzando la funzionalità Inserisci documento durante la stampa unione di Aspose.Words per .NET. Seguire i passaggi seguenti per comprendere il codice sorgente ed eseguire l'inserimento del documento.
 
 ## Passaggio 1: caricamento del documento principale
 

@@ -8,7 +8,7 @@ weight: 1480
 url: /fr/net/compare-documents/
 ---
 
-Compare Documents est un didacticiel complet sur la comparaison de documents à l'aide d'Aspose.Words for .NET. Ce didacticiel fournit des informations détaillées sur les différentes méthodes et fonctionnalités disponibles pour comparer des documents, notamment la définition des options de comparaison, l'analyse des résultats et la gestion des différences détectées. Il est livré avec de nombreux exemples de code et captures d'écran pour le rendre plus facile à comprendre. Que vous soyez un développeur débutant ou expérimenté, cette ressource vous guidera étape par étape tout au long du processus de comparaison de documents avec Aspose.Words pour .NET.
+Compare Documents est un didacticiel complet sur la comparaison de documents à l'aide d'Aspose.Words for .NET. Ce didacticiel fournit des informations détaillées sur les différentes méthodes et fonctionnalités disponibles pour comparer des documents, notamment la définition des options de comparaison, l'analyse des résultats et la gestion des différences détectées. Il est livré avec de nombreux exemples de code et captures d'écran pour le rendre plus facile à comprendre. Que vous soyez un développeur débutant ou expérimenté, cette ressource vous guidera étape par étape tout au long du processus de comparaison de documents avec Aspose.Words for .NET.
 
  ## Tutoriels
 | Titre | Description |

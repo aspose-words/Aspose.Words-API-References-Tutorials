@@ -17,7 +17,7 @@ En este artículo, exploraremos el código fuente de C# anterior para comprender
 
 ## Paso 1: obtener párrafos del marcador
 
- Antes de comenzar a agregar el texto del marcador, debemos obtener los párrafos que contienen el inicio y el final del marcador. Esto se puede hacer accediendo al`BookmarkStart` y`BookmarkEnd` propiedades del marcador:
+ Antes de comenzar a agregar el texto del marcador, necesitamos obtener los párrafos que contienen el inicio y el final del marcador. Esto se puede hacer accediendo al`BookmarkStart` y`BookmarkEnd` propiedades del marcador:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;

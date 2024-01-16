@@ -76,7 +76,7 @@ HarfBuzz ist eine Open-Source-Engine zur Textgestaltung, die komplexe Skripte un
 
 ### 2. Warum HarfBuzz mit Aspose.Words verwenden?
 
-HarfBuzz erweitert die Textformungsfunktionen von Aspose.Words und gewährleistet eine genaue Wiedergabe komplexer Skripte und Sprachen.
+HarfBuzz erweitert die Textformungsfunktionen von Aspose.Words und gewährleistet die genaue Wiedergabe komplexer Skripte und Sprachen.
 
 ### 3. Kann ich HarfBuzz mit anderen Aspose-Produkten verwenden?
 

@@ -19,7 +19,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 ```
 
-## Schritt 2: Konfigurieren Sie den Serienbrief
+## Schritt 2: Konfigurieren Sie den Seriendruck
 
 Nun konfigurieren wir den Serienbrief und geben den Feld-Merge-Callback an, um ein Dokument in ein anderes Dokument einzufügen. Hier ist wie:
 

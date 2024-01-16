@@ -38,7 +38,7 @@ Ladda Word-dokumentet som du vill utföra sök- och ersättningsoperationer på:
 doc = aw.Document("path/to/your/document.docx")
 ```
 
-## Steg 3: Enkelt textbyte
+## Steg 3: Enkel textersättning
 
 Utför en grundläggande sök- och ersättoperation för ett specifikt ord eller en specifik fras:
 

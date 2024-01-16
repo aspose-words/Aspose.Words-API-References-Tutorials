@@ -143,7 +143,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 
 #### P: ¿Puedo actualizar la tabla de contenido automáticamente si hago cambios en el contenido del documento?
 
- R: Sí, puedes actualizar la tabla de contenido automáticamente llamando al`UpdateFields` método en el documento. Esto garantizará que cualquier cambio realizado en el contenido del documento, como agregar o eliminar encabezados, se refleje en la tabla de contenido.
+ R: Sí, puedes actualizar la tabla de contenidos automáticamente llamando al`UpdateFields` método en el documento. Esto garantizará que cualquier cambio realizado en el contenido del documento, como agregar o eliminar encabezados, se refleje en la tabla de contenido.
 
 #### P: ¿Cómo puedo aplicar un estilo diferente a los niveles de encabezado en la tabla de contenido?
 

@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/working-with-fields/rename-merge-fields/
 ---
 
-Voici un guide étape par étape pour expliquer le code source C# ci-dessous qui utilise la fonctionnalité de renommage des champs de fusion d'Aspose.Words pour .NET. Suivez attentivement chaque étape pour obtenir les résultats souhaités.
+Voici un guide étape par étape pour expliquer le code source C# ci-dessous qui utilise la fonctionnalité de renommage de champ de fusion d'Aspose.Words pour .NET. Suivez attentivement chaque étape pour obtenir les résultats souhaités.
 
 ## Étape 1 : configuration du répertoire de documents
 

@@ -14,7 +14,7 @@ Im heutigen digitalen Zeitalter spielt das Dokumentenmanagement in verschiedenen
 
 ## Voraussetzungen
 
-Bevor wir in den Codierungsteil eintauchen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor wir uns mit dem Programmierteil befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 - Java-Entwicklungsumgebung: Auf Ihrem System sollte das Java Development Kit (JDK) installiert sein.
 - Aspose.Words für Java: Laden Sie die Aspose.Words für Java-Bibliothek herunter und richten Sie sie ein[Aspose-Website](https://releases.aspose.com/words/java/).

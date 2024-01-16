@@ -46,7 +46,7 @@ doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
 
 ## Spara dokumentet som PDF
 
- Slutligen, spara det ändrade dokumentet som en PDF eller i det format du föredrar. Byta ut`"WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf"` med din önskade sökväg för utdatafil:
+ Slutligen, spara det ändrade dokumentet som en PDF eller i det format du föredrar. Byta ut`"WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf"` med önskad sökväg för utdatafil:
 
 ```java
 doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");

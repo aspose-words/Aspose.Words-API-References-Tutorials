@@ -52,7 +52,7 @@ dst_doc.save("combined_document.docx")
 
 ## Dokumente klonen
 
-Das Klonen von Dokumenten ist oft erforderlich, wenn Sie Inhalte wiederverwenden und dabei die ursprüngliche Struktur beibehalten möchten. Aspose.Words bietet Optionen für tiefes und flaches Klonen.
+Das Klonen von Dokumenten ist oft erforderlich, wenn Sie Inhalte wiederverwenden und dabei die ursprüngliche Struktur beibehalten möchten. Aspose.Words bietet tiefe und flache Klonoptionen.
 
 ### Deep Clone vs. Shallow Clone
 

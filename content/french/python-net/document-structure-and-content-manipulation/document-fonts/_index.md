@@ -113,7 +113,7 @@ doc.save("modified_document.docx")
 
 ### Espacement des lignes pour plus de lisibilité
 
-L’application d’un interligne approprié améliore la lisibilité. Vous pouvez y parvenir en utilisant Aspose.Words :
+L’application d’un espacement de ligne approprié améliore la lisibilité. Vous pouvez y parvenir en utilisant Aspose.Words :
 
 ```python
 # Import the required classes

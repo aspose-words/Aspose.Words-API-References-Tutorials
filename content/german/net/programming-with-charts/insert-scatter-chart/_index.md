@@ -74,7 +74,7 @@ In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET ein Str
 
 Aspose.Words für .NET bietet eine umfassende API für die Textverarbeitung mit Diagrammen in Word-Dokumenten. Streudiagramme eignen sich zur Visualisierung und Analyse von Daten mit zwei numerischen Variablen. Mit Aspose.Words für .NET können Sie ganz einfach Streudiagramme erstellen, die die Beziehung zwischen X- und Y-Werten darstellen und Muster oder Trends in den Daten erkennen.
 
-Durch die Verwendung von Aspose.Words für .NET können Sie den Prozess der Dokumentenerstellung mit Streudiagrammen automatisieren und so Zeit und Aufwand bei der manuellen Dokumenterstellung sparen. Die Bibliothek bietet eine breite Palette an Diagrammtypen, einschließlich Streudiagrammen, und bietet verschiedene Anpassungsoptionen, um das Erscheinungsbild des Diagramms an Ihre Bedürfnisse anzupassen.
+Durch die Verwendung von Aspose.Words für .NET können Sie den Prozess der Dokumentenerstellung mit Streudiagrammen automatisieren und so Zeit und Aufwand bei der manuellen Dokumentenerstellung sparen. Die Bibliothek bietet eine breite Palette an Diagrammtypen, einschließlich Streudiagrammen, und bietet verschiedene Anpassungsoptionen, um das Erscheinungsbild des Diagramms an Ihre Bedürfnisse anzupassen.
 
 ### FAQs
 

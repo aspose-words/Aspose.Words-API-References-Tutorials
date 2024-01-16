@@ -16,7 +16,7 @@ En el mundo del procesamiento de documentos Java, Aspose.Words para Java se dest
 
  Antes de profundizar en las complejidades del formato de documentos, es fundamental configurar su entorno. Asegúrese de tener Aspose.Words para Java correctamente instalado y configurado en su proyecto. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
 
-## Crear un documento sencillo
+## Crear un documento simple
 
 Comencemos creando un documento simple usando Aspose.Words para Java. El siguiente fragmento de código Java demuestra cómo crear un documento y agregarle texto:
 

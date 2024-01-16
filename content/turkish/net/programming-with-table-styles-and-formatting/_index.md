@@ -31,4 +31,4 @@ Bu eğitimler, geliştiricilerin Aspose.Words for .NET'teki tablolarla Kelime İ
 | [Tablo Stili Oluştur](./create-table-style/) | Aspose.Words for .NET kullanarak özel tablo stili oluşturmaya yönelik adım adım kılavuz. |
 | [Koşullu Biçimlendirmeyi Tanımlayın](./define-conditional-formatting/) | Aspose.Words for .NET kullanarak bir tabloda koşullu formatlamayı tanımlamak için adım adım kılavuz. |
 | [Tablo Hücresi Biçimlendirmesini Ayarlama](./set-table-cell-formatting/) | Aspose.Words for .NET kullanarak tablo hücresi formatını ayarlamak için adım adım kılavuz. |
-| [Tablo Satır Biçimlendirmesini Ayarla](./set-table-row-formatting/) | Aspose.Words for .NET kullanarak tablo satırı formatını ayarlamak için adım adım kılavuz. |
+| [Tablo Satır Formatını Ayarla](./set-table-row-formatting/) | Aspose.Words for .NET kullanarak tablo satırı formatını ayarlamak için adım adım kılavuz. |

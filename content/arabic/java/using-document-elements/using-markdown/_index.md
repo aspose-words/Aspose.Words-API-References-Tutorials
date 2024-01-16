@@ -175,10 +175,10 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
    Aspose.Words for Java هي مكتبة Java تسمح للمطورين بإنشاء مستندات Word ومعالجتها وتحويلها في تطبيقات Java.
 
 ### هل يمكنني استخدام Aspose.Words لـ Java لتحويل Markdown إلى مستندات Word؟ 
-   نعم، يمكنك استخدام Aspose.Words for Java لتحويل مستندات Markdown إلى مستندات Word والعكس صحيح.
+   نعم، يمكنك استخدام Aspose.Words for Java لتحويل مستندات Markdown إلى مستندات Word والعكس.
 
 ### هل Aspose.Words لـ Java مجاني للاستخدام؟ 
-    Aspose.Words for Java هو منتج تجاري، ويلزم الحصول على ترخيص للاستخدام. يمكنك الحصول على ترخيص من[هنا](https://purchase.aspose.com/buy).
+    Aspose.Words for Java هو منتج تجاري، ويلزم الحصول على ترخيص للاستخدام. يمكنك الحصول على الترخيص من[هنا](https://purchase.aspose.com/buy).
 
 ### هل هناك أي برامج تعليمية أو وثائق متاحة لـ Aspose.Words لـ Java؟ 
     نعم، يمكنك العثور على برامج تعليمية ووثائق شاملة على الموقع[Aspose.Words لتوثيق Java API](https://reference.aspose.com/words/java/).

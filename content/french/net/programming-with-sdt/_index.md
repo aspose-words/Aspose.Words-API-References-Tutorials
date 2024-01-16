@@ -2,7 +2,7 @@
 title: Traitement de mots avec Sdt
 linktitle: Traitement de mots avec Sdt
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à programmer avec les contrôles de contenu structuré (SDT) dans Aspose.Words pour .NET. Suivez des didacticiels pas à pas et des exemples de code en C# pour manipuler et personnaliser les contrôles de contenu structuré dans vos documents Word.
+description: Apprenez à programmer avec les contrôles de contenu structuré (SDT) dans Aspose.Words pour .NET. Suivez des didacticiels étape par étape et des exemples de code en C# pour manipuler et personnaliser les contrôles de contenu structuré dans vos documents Word.
 type: docs
 weight: 1400
 url: /fr/net/programming-with-sdt/

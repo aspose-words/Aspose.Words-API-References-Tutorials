@@ -70,7 +70,7 @@ doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rt
 
 ### Quelles autres options sont disponibles dans RtfLoadOptions ?
 
- RtfLoadOptions fournit diverses options pour configurer la manière dont les documents RTF sont chargés. Certaines des options couramment utilisées incluent`setPassword` pour les documents protégés par mot de passe et`setLoadFormat` pour spécifier le format lors du chargement des fichiers RTF.
+ RtfLoadOptions fournit diverses options pour configurer la façon dont les documents RTF sont chargés. Certaines des options couramment utilisées incluent`setPassword` pour les documents protégés par mot de passe et`setLoadFormat` pour spécifier le format lors du chargement des fichiers RTF.
 
 ### Puis-je modifier le document après l'avoir chargé avec ces options ?
 

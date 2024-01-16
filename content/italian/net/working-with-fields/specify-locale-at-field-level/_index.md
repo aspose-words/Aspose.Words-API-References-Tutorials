@@ -62,7 +62,7 @@ Questo era un codice sorgente di esempio per specificare la localizzazione a liv
 
 ### Domande frequenti
 
-#### D: Come posso specificare le impostazioni internazionali a livello di campo in Aspose.Words per .NET?
+#### D: Come posso specificare le impostazioni locali a livello di campo in Aspose.Words per .NET?
 
  R: Per specificare la locale a livello di campo in Aspose.Words per .NET, è possibile utilizzare il file`FieldOptions` classe e il suo`FieldLocale` proprietà per impostare la locale desiderata. Ad esempio, puoi usare`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` per specificare la locale francese (Francia).
 

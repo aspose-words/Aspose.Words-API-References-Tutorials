@@ -72,7 +72,7 @@ In diesem Tutorial haben wir erklärt, wie Sie mithilfe von Aspose.Words für .N
 ### Häufig gestellte Fragen
 
 #### F: Was ist die Gliederungsoption in einem PDF-Dokument?
-A: Die Gliederungsoption in einem PDF-Dokument bezieht sich auf die hierarchische Struktur des Dokumentinhalts. Es ermöglicht die Erstellung eines interaktiven Inhaltsverzeichnisses und erleichtert die Navigation im Dokument. Mit den Gliederungsoptionen legen Sie die Titel- und Untertitelebenen fest, die in die Gliederung einbezogen werden sollen, sowie den Detaillierungsgrad, der in der generierten Gliederung angezeigt werden soll.
+A: Die Gliederungsoption in einem PDF-Dokument bezieht sich auf die hierarchische Struktur des Dokumentinhalts. Es ermöglicht die Erstellung eines interaktiven Inhaltsverzeichnisses und erleichtert die Navigation im Dokument. Die Gliederungsoptionen legen die Titel- und Untertitelebenen fest, die in die Gliederung einbezogen werden sollen, sowie den Detaillierungsgrad, der in der generierten Gliederung angezeigt werden soll.
 
 #### F: Wie kann ich mit Aspose.Words für .NET Gliederungsoptionen in einem PDF-Dokument festlegen?
 A: Um Gliederungsoptionen in einem PDF-Dokument mit Aspose.Words für .NET festzulegen, führen Sie die folgenden Schritte aus:

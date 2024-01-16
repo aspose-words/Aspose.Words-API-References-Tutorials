@@ -24,7 +24,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.startBookmark("My Bookmark");
 builder.writeln("Text inside a bookmark.");
 
-//Terminar el marcador
+//Finalizar el marcador
 builder.endBookmark("My Bookmark");
 ```
 

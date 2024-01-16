@@ -84,7 +84,7 @@ R : Absolument ! Aspose.Words for .NET fournit des options de formatage étendue
 
 #### Q : Puis-je ajouter des info-bulles ou des descriptions aux hyperliens ?
 
-R : Aspose.Words for .NET prend en charge l'ajout d'info-bulles ou de descriptions aux liens hypertexte à l'aide de l'attribut « title ». En spécifiant l'attribut title dans le lien hypertexte inséré, vous pouvez fournir des informations supplémentaires qui seront affichées au survol du lien hypertexte.
+R : Aspose.Words for .NET prend en charge l'ajout d'info-bulles ou de descriptions aux liens hypertexte à l'aide de l'attribut « titre ». En spécifiant l'attribut title dans le lien hypertexte inséré, vous pouvez fournir des informations supplémentaires qui seront affichées au survol du lien hypertexte.
 
 #### Q : Aspose.Words for .NET prend-il en charge les liens vers des fichiers sur le système local ?
 

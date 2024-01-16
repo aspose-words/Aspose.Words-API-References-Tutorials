@@ -20,7 +20,7 @@ Las notas a pie de página y al final sirven como una forma de proporcionar info
 
 2. Gestión de citas: Proporcionan una forma estandarizada de citar fuentes, mejorando la credibilidad de su documento y permitiendo a los lectores verificar la información proporcionada.
 
-3. Presentación concisa: en lugar de incluir explicaciones extensas en el texto principal, puede proporcionar aclaraciones y elaboraciones a través de notas al pie y notas al final, manteniendo un estilo de escritura ágil.
+3. Presentación concisa: en lugar de incluir explicaciones extensas en el texto principal, puede proporcionar aclaraciones y elaboraciones a través de notas a pie de página y notas finales, manteniendo un estilo de escritura ágil.
 
 ## Agregar notas al pie y notas finales con Aspose.Words para Python
 

@@ -122,7 +122,7 @@ R : Oui, vous pouvez manipuler d'autres aspects du document en fonction des grou
 
 #### Q : Existe-t-il des limitations ou des considérations lors de l'utilisation d'expressions régulières et de groupes capturés dans Aspose.Words pour .NET ?
 
-R : Bien que les expressions régulières et les groupes capturés offrent de puissantes fonctionnalités de recherche et de remplacement de texte dans Aspose.Words pour .NET, il est important de prendre en compte les implications en termes de complexité et de performances. Des expressions régulières très complexes et un grand nombre de groupes capturés peuvent avoir un impact sur les performances. Il est recommandé de tester et d'optimiser les expressions régulières pour vos cas d'utilisation spécifiques afin de garantir une manipulation efficace des documents.
+R : Bien que les expressions régulières et les groupes capturés offrent de puissantes fonctionnalités de recherche et de remplacement de texte dans Aspose.Words pour .NET, il est important de prendre en compte les implications en matière de complexité et de performances. Des expressions régulières très complexes et un grand nombre de groupes capturés peuvent avoir un impact sur les performances. Il est recommandé de tester et d'optimiser les expressions régulières pour vos cas d'utilisation spécifiques afin de garantir une manipulation efficace des documents.
 
 #### Q : Puis-je utiliser la fonctionnalité « Reconnaissance et substitutions dans les modèles de remplacement » avec des langues autres que l'anglais ?
 

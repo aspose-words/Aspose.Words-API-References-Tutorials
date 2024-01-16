@@ -26,7 +26,7 @@ DocumentBuilder builder = new DocumentBuilder();
 builder.Font.Bold = true;
 ```
 
-## Schritt 3: Inhalte zum Dokument hinzufügen
+## Schritt 3: Fügen Sie dem Dokument Inhalte hinzu
 
  Jetzt können wir mithilfe der Document Builder-Methoden Inhalte zum Dokument hinzufügen, z`Writeln`, wodurch eine Textzeile hinzugefügt wird.
 

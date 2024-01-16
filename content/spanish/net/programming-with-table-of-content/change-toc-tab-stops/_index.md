@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 
 ## Conclusión
 
-En esta guía, hemos cubierto cómo usar Aspose.Words para .NET para cambiar las pestañas en la tabla de contenido de un documento de Word usando el código fuente C# proporcionado. Siguiendo los pasos proporcionados, puede personalizar fácilmente las pestañas de la tabla de contenido en sus documentos de Word en su aplicación C#. Aspose.Words ofrece una tremenda flexibilidad y potencia para trabajar con los estilos y formatos de sus documentos, permitiéndole crear documentos de Word atractivos y profesionales.
+En esta guía, hemos cubierto cómo usar Aspose.Words para .NET para cambiar las pestañas en la tabla de contenido de un documento de Word usando el código fuente C# proporcionado. Si sigue los pasos proporcionados, puede personalizar fácilmente las pestañas de la tabla de contenido en sus documentos de Word en su aplicación C#. Aspose.Words ofrece una tremenda flexibilidad y potencia para trabajar con los estilos y formatos de sus documentos, permitiéndole crear documentos de Word atractivos y profesionales.
 
 ### Preguntas frecuentes para cambiar las tabulaciones del índice en un documento de Word
 

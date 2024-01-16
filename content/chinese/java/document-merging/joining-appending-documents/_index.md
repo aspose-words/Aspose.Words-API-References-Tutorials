@@ -2,7 +2,7 @@
 title: 加入和附加文档
 linktitle: 加入和附加文档
 second_title: Aspose.Words Java 文档处理 API
-description: 了解如何使用 Aspose.Words for Java 加入和附加文档。包含代码示例的分步指南，可实现高效的文档操作。
+description: 了解如何使用 Aspose.Words for Java 加入和追加文档。带有代码示例的分步指南，可实现高效的文档操作。
 type: docs
 weight: 11
 url: /zh/java/document-merging/joining-appending-documents/
@@ -39,7 +39,7 @@ public class DocumentJoiner {
 }
 ```
 
-确保更换`"Aspose.Words.Java.lic"`与您的许可证文件的路径。
+确保您更换`"Aspose.Words.Java.lic"`与您的许可证文件的路径。
 
 ## 第三步：加载文档
 

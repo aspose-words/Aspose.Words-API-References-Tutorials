@@ -83,7 +83,7 @@ Glückwunsch! Sie haben gelernt, wie Sie in Aspose.Words für Java mit Schriftar
 ### F: Ist es möglich, unterschiedliche Schriftarten auf Überschriften und Textkörper in einem Dokument anzuwenden?
 A: Ja, Sie können mit Aspose.Words für Java verschiedene Schriftarten auf verschiedene Teile eines Dokuments anwenden.
 
-### F: Kann ich benutzerdefinierte Schriftarten mit Aspose.Words für Java verwenden?
+### F: Kann ich mit Aspose.Words für Java benutzerdefinierte Schriftarten verwenden?
 A: Ja, Sie können benutzerdefinierte Schriftarten verwenden, indem Sie den Pfad der Schriftartdatei angeben.
 
 ### F: Wie ändere ich die Schriftfarbe für Text?

@@ -1,0 +1,27 @@
+---
+title: 수정본을 사용한 단어 처리
+linktitle: 수정본을 사용한 단어 처리
+second_title: Aspose.Words 문서 처리 API
+description: .NET용 Aspose.Words를 사용하여 Word 문서의 수정본으로 작업하는 방법을 알아보세요. 개정판을 관리하고 보기 위한 샘플 코드가 포함된 단계별 튜토리얼입니다.
+type: docs
+weight: 1130
+url: /ko/net/working-with-revisions/
+---
+수정본을 사용한 단어 처리 튜토리얼은 Aspose.Words for .NET의 수정본을 사용한 단어 처리 기능을 안내합니다. 이 튜토리얼에서는 Word 문서에서 수정본을 추가, 수락, 거부 및 보는 방법을 보여줍니다. 또한 개정판을 찾아보고, 각 개정판에 대한 세부 정보를 검색하고, 개정판 병합과 같은 고급 작업을 수행하는 방법도 배우게 됩니다.
+
+이 튜토리얼을 따르면 Aspose.Words for .NET을 사용하여 Word 문서의 수정본을 효과적으로 관리하는 방법을 이해할 수 있습니다. 문서 내용의 변경 사항을 제어하고, 다른 사용자와 공동 작업하고, 변경 내역을 유지하는 방법을 배우게 됩니다. 튜토리얼에서는 이러한 기능을 익히는 데 도움이 되는 자세한 코드 예제와 명확한 설명을 제공합니다.
+
+초보자이든 숙련된 개발자이든 이 튜토리얼은 Aspose.Words for .NET의 검토 기능을 최대한 활용하고 문서 처리 작업 흐름을 최적화하는 데 도움이 될 것입니다. 자습서에 설명된 단계를 따르면 검토 기능을 응용 프로그램에 쉽게 통합하고 Word 문서의 변경 관리를 향상시킬 수 있습니다.
+
+ ## 튜토리얼
+| 제목 | 설명 |
+| --- | --- |
+| [개정판 수락](./accept-revisions/) | .NET용 Aspose.Words를 사용하여 Word 문서의 수정본을 수락하는 방법을 알아보세요. |
+| [단어의 개정 유형 가져오기](./get-revision-types/) | .NET용 Aspose.Words를 사용하여 Word 문서의 단어 개정 유형을 가져옵니다. |
+| [개정 그룹 가져오기](./get-revision-groups/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 개정 그룹 세부 정보를 가져옵니다. |
+| [PDF 파일에서 주석 제거](./remove-comments-in-pdf/) | .NET용 Aspose.Words를 사용하여 PDF 파일에서 주석을 제거합니다. |
+| [풍선에 개정 내용 표시](./show-revisions-in-balloons/) | .NET용 Aspose.Words를 사용하여 풍선에 수정본을 표시합니다. |
+| [개정 그룹 세부 정보 가져오기](./get-revision-group-details/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 개정 그룹 세부 정보를 가져옵니다. |
+| [개정판 이용](./access-revised-version/) | .NET용 Aspose.Words를 사용하여 수정된 버전의 Word 문서에 액세스하세요. |
+| [추적된 문서에서 노드 이동](./move-node-in-tracked-document/) | .NET용 Aspose.Words를 사용하여 추적된 문서에서 노드를 이동하세요. |
+| [모양 개정](./shape-revision/) | .NET용 Aspose.Words를 사용하여 Word 문서의 모양을 수정하세요. |

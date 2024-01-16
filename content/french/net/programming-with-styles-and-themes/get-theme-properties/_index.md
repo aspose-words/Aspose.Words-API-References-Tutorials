@@ -62,7 +62,7 @@ La possibilité d'obtenir les propriétés du thème vous permet d'analyser et d
 
 Aspose.Words for .NET propose une API puissante pour manipuler les thèmes de vos documents, vous permettant d'ajuster et de personnaliser facilement l'apparence de vos documents.
 
-N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words pour .NET pour améliorer votre flux de travail et répondre à vos besoins spécifiques en matière de gestion de styles et de thèmes.
+N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words for .NET pour améliorer votre flux de travail et répondre à vos besoins spécifiques en matière de gestion de styles et de thèmes.
 
 ### FAQ
 

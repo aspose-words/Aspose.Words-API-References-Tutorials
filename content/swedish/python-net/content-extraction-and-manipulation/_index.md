@@ -29,7 +29,7 @@ Genom dessa handledningar kommer du att dyka ner i kärnkoncepten och teknikerna
 
 I slutet av dessa självstudiekurser kommer du att vara utrustad med kunskapen för att hantera olika uppgifter för manipulering av dokumentinnehåll med lätthet. Du kommer att få insikter i de bästa metoderna för att extrahera och manipulera innehåll, vilket säkerställer att dina dokumentbearbetningsarbetsflöden är effektiva, korrekta och skräddarsydda för dina specifika behov.
 
-## Handledning för innehållsextraktion och manipulation
+## Handledningar för innehållsextraktion och manipulation
 ### [Extrahera och ändra innehåll i Word-dokument](./extract-modify-document-content/)
 Lär dig hur du extraherar och ändrar innehåll i Word-dokument med Aspose.Words för Python. Steg-för-steg guide med källkod.
 ### [Effektiv innehållsextraktion i Word-dokument](./document-content-extraction/)
@@ -37,4 +37,4 @@ Extrahera effektivt innehåll från Word-dokument med Aspose.Words för Python. 
 ### [Avancerade sök- och ersätt-tekniker i Word-dokument](./find-replace-documents/)
 Lär dig avancerade sök- och ersätttekniker i Word-dokument med Aspose.Words för Python. Byt ut text, använd regex, formatering och mer.
 ### [Ta bort och förfina innehåll i Word-dokument](./remove-content-documents/)
-Lär dig hur du effektivt tar bort och förfinar innehåll i Word-dokument med Aspose.Words för Python. Steg-för-steg-guide med exempel på källkod.
+Lär dig hur du effektivt tar bort och förfinar innehåll i Word-dokument med Aspose.Words för Python. Steg-för-steg guide med exempel på källkod.

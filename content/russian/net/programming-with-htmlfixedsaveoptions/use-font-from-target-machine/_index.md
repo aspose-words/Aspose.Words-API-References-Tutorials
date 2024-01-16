@@ -32,7 +32,7 @@ Document doc = new Document(dataDir + "Bullet points with alternative font.docx"
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 ```
 
-Мы создаем новый объект HtmlFixedSaveOptions и устанавливаем для свойства UseTargetMachineFonts значение true, чтобы при преобразовании использовать шрифты целевого компьютера.
+Мы создаем новый объект HtmlFixedSaveOptions и устанавливаем для свойства UseTargetMachineFonts значение true, чтобы использовать шрифты целевого компьютера при преобразовании.
 
 ## Исправлено преобразование HTML-документа.
 

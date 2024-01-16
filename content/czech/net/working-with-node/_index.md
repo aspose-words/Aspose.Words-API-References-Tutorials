@@ -1,0 +1,22 @@
+---
+title: Zpracování slov s Node
+linktitle: Zpracování slov s Node
+second_title: Aspose.Words API pro zpracování dokumentů
+description: Naučte se pracovat s uzly v dokumentech aplikace Word pomocí Aspose.Words for .NET. Podrobné konzultace s příklady kódu.
+type: docs
+weight: 1000
+url: /cs/net/working-with-node/
+---
+Uzly v Aspose.Words for .NET představují různé prvky dokumentu aplikace Word, jako jsou odstavce, tabulky, obrázky a další. Manipulací s těmito uzly mohou vývojáři programově upravovat obsah a formátování dokumentu aplikace Word. Uzly poskytují dokumentu hierarchickou strukturu, která umožňuje snadnou navigaci a manipulaci se specifickými prvky.
+
+Pro práci s uzly v Aspose.Words pro .NET mohou vývojáři využít Document Object Model (DOM) poskytovaný knihovnou. DOM představuje celý dokument aplikace Word jako strom uzlů, přičemž samotný dokument je kořenovým uzlem. Každý uzel má specifický typ uzlu a může obsahovat podřízené uzly, což umožňuje hlubokou úroveň přizpůsobení.
+
+ ## Tutoriály
+| Titul | Popis |
+| --- | --- |
+| [Použijte typ uzlu](./use-node-type/) | Naučte se používat typ uzlu pro přístup k informacím specifickým pro dokument pomocí Aspose.Words for .NET. |
+| [Získejte nadřazený uzel](./get-parent-node/) | Naučte se, jak získat nadřazený uzel konkrétního prvku pomocí Aspose.Words for .NET. |
+| [Dokument vlastníka](./owner-document/) | Naučte se používat dokument vlastníka v Aspose.Words pro .NET. |
+| [Vyjmenujte podřízené uzly](./enumerate-child-nodes/) | Naučte se, jak vytvořit výčet podřízených uzlů v odstavci pomocí Aspose.Words for .NET. |
+| [Zadaný přístup](./typed-access/) | Naučte se používat zadaný přístup k manipulaci s tabulkami v Aspose.Words for .NET. |
+| [Vytvořit a přidat uzel odstavce](./create-and-add-paragraph-node/) | Vytvořte a přidejte uzel odstavce do dokumentů aplikace Word pomocí Aspose.Words pro .NET. |

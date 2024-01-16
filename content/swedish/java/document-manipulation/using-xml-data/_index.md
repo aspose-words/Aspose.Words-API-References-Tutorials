@@ -35,7 +35,7 @@ doc.save("Your Directory Path" + "BasicMailMerge.docx");
 
 ### 2. Kapslad brevkoppling
 
-För kapslade sammanslagningar, använd följande kod:
+För kapslade sammanslagningar använder du följande kod:
 
 ```java
 DataSet pizzaDs = new DataSet();
@@ -46,7 +46,7 @@ doc.getMailMerge().executeWithRegions(pizzaDs);
 doc.save("Your Directory Path" + "NestedMailMerge.docx");
 ```
 
-## Mustaschsyntax med hjälp av DataSet
+## Mustaschsyntax med hjälp av dataset
 
 Följ dessa steg för att utnyttja Mustache-syntaxen med en datauppsättning:
 

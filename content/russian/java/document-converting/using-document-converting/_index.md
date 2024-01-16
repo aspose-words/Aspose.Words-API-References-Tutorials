@@ -73,7 +73,7 @@ doc.save("output.rtf", SaveFormat.RTF);
 ### Преобразование в HTML
 
 ```java
-// Сохраните документ как HTML
+// Сохраните документ в формате HTML
 doc.save("output.html", SaveFormat.HTML);
 ```
 

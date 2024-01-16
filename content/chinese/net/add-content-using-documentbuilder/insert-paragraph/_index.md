@@ -89,7 +89,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 
 #### 问：如何设置段落的行距和缩进？
 
-答：Aspose.Words for .NET 提供了设置段落行距和缩进的选项。您可以调整`LineSpacing`和`LeftIndent`的属性`ParagraphFormat`对象控制这些方面。
+答：Aspose.Words for .NET 提供了设置段落行间距和缩进的选项。您可以调整`LineSpacing`和`LeftIndent`的属性`ParagraphFormat`对象控制这些方面。
 
 #### 问：是否可以使用 DocumentBuilder 插入项目符号列表或编号列表？
 

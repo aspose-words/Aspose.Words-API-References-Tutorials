@@ -47,7 +47,7 @@ builder.Writeln("This is the 3rd paragraph.");
 
 ### Exempel på källkod för Move To Paragraph med Aspose.Words för .NET
 
-Nedan är det kompletta exemplet på källkoden för implementering av funktionen Flytta till stycke med Aspose.Words för .NET:
+Nedan är det kompletta exemplet på källkoden för att implementera funktionen Flytta till stycke med Aspose.Words för .NET:
 
 ```csharp
 Document doc = new Document(MyDir + "Paragraphs.docx");
@@ -64,7 +64,7 @@ Genom att följa den här guiden och använda funktionen Flytta till stycke kan 
 
 I det här exemplet utforskade vi funktionen Flytta till stycke i Aspose.Words för .NET. Vi lärde oss att navigera till ett specifikt stycke i ett Word-dokument och ändra dess innehåll programmatiskt med klassen DocumentBuilder. Den här funktionen ger utvecklare flexibiliteten att interagera med enskilda stycken i dokumentet, vilket möjliggör effektiv manipulering och anpassning av Word-dokument med Aspose.Words för .NET.
 
-### Vanliga frågor för att gå till stycke i word-dokument
+### Vanliga frågor för att flytta till stycke i word-dokument
 
 #### F: Vad är syftet med Move To Paragraph-funktionen i Aspose.Words för .NET?
 

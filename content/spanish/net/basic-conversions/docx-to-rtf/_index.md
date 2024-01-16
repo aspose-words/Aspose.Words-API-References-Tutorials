@@ -108,7 +108,7 @@ Las limitaciones del proceso de conversión dependen de la herramienta o bibliot
 
 #### ¿Puedo conservar el formato y diseño del documento original?
 
-Sí, con Aspose.Words, puede conservar el formato y el diseño del documento original durante el proceso de conversión. Aspose.Words para .NET, por ejemplo, proporciona soporte integral para mantener el formato, los estilos y otros elementos del archivo DOCX en el documento RTF convertido.
+Sí, con Aspose.Words, puede conservar el formato y el diseño del documento original durante el proceso de conversión. Aspose.Words para .NET, por ejemplo, proporciona soporte integral para mantener el formato, estilos y otros elementos del archivo DOCX en el documento RTF convertido.
 
 #### ¿Es Aspose una herramienta confiable para la conversión de DOCX a RTF?
 

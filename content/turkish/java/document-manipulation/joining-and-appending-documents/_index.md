@@ -118,7 +118,7 @@ dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ## Çözüm
 
-Aspose.Words for Java, ister biçimlendirmeyi korumanız, ister farklı sayfa düzenlerini yönetmeniz veya üstbilgileri ve altbilgileri yönetmeniz gerekiyorsa, belgeleri birleştirmek ve eklemek için esnek ve güçlü araçlar sağlar. Özel belge işleme ihtiyaçlarınızı karşılamak için bu teknikleri deneyin.
+Aspose.Words for Java, ister biçimlendirmeyi korumanız, farklı sayfa düzenlerini yönetmeniz veya üstbilgileri ve altbilgileri yönetmeniz olsun, belgeleri birleştirmek ve eklemek için esnek ve güçlü araçlar sağlar. Özel belge işleme ihtiyaçlarınızı karşılamak için bu teknikleri deneyin.
 
 ## SSS'ler
 

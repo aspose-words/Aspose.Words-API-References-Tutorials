@@ -66,7 +66,7 @@ A: Auf jeden Fall! Aspose.Words bietet eine Reihe von Ladeoptionen, die an Ihre 
 
 #### F: Welchen Nutzen hat die Aktualisierung schmutziger Felder für meine Anwendung?
 
-A: Durch das Aktualisieren fehlerhafter Felder wird sichergestellt, dass Ihre C#-Anwendung die neuesten Daten in Word-Dokumenten anzeigt, wodurch die allgemeine Benutzererfahrung und die Genauigkeit der Informationen verbessert werden.
+A: Durch das Aktualisieren von Dirty Fields wird sichergestellt, dass Ihre C#-Anwendung die neuesten Daten in Word-Dokumenten anzeigt, wodurch die allgemeine Benutzererfahrung und die Genauigkeit der Informationen verbessert werden.
 
 #### F: Kann Aspose.Words neben Word auch andere Dokumentformate verarbeiten?
 

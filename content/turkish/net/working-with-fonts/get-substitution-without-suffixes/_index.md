@@ -78,7 +78,7 @@ C: Aspose.Words, orijinal yazı tipleri ile değiştirilen yazı tipleri arasın
 
  C: Aspose.Words'te son ekler olmadan yazı tipi değişikliklerini almak için şu komutu kullanabilirsiniz:`FontSubstitutionSettings` sınıf ve`RemoveSuffixes` mülk. Bu özelliği şu şekilde ayarlamak`true` eklenen sonekler olmadan yazı tipi değişikliklerini alır.
 
-#### S: Aspose.Words'te yazı tipi değişikliklerine sonek eklemeyi devre dışı bırakmak mümkün müdür?
+#### S: Aspose.Words'te yazı tipi değişikliklerine sonek eklemeyi devre dışı bırakmak mümkün mü?
 
 C: Hayır, Aspose.Words'te yazı tipi değişikliklerine sonek eklemeyi devre dışı bırakmak mümkün değildir. Belge uyumluluğunu ve tutarlılığını sağlamak için son ekler varsayılan olarak eklenir.
 

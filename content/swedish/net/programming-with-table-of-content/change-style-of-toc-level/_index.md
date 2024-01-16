@@ -91,7 +91,7 @@ Detta kodavsnitt skapar ett nytt, tomt Word-dokument.
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
- I den här koden,`doc.Styles[StyleIdentifier.Toc1]` åtkomst till stilen för den första nivån i innehållsförteckningen, och`Font.Bold = true` anger den fetstilta stilen för den stilen.
+ I den här koden,`doc.Styles[StyleIdentifier.Toc1]` åtkomst till stilen för den första nivån i innehållsförteckningen, och`Font.Bold = true` ställer in den fetstilta stilen för den stilen.
 
 #### F: Kan jag ändra stilen på flera nivåer i innehållsförteckningen med Aspose.Words för .NET?
 

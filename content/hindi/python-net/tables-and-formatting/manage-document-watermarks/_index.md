@@ -1,0 +1,148 @@
+---
+title: दस्तावेज़ सौंदर्यशास्त्र के लिए वॉटरमार्क बनाना और फ़ॉर्मेट करना
+linktitle: दस्तावेज़ सौंदर्यशास्त्र के लिए वॉटरमार्क बनाना और फ़ॉर्मेट करना
+second_title: Aspose.Words Python दस्तावेज़ प्रबंधन API
+description: जानें कि Python के लिए Aspose.Words का उपयोग करके दस्तावेज़ों में वॉटरमार्क कैसे बनाएं और प्रारूपित करें। टेक्स्ट और छवि वॉटरमार्क जोड़ने के लिए स्रोत कोड के साथ चरण-दर-चरण मार्गदर्शिका। इस ट्यूटोरियल के साथ अपने दस्तावेज़ सौंदर्यशास्त्र को बढ़ाएं।
+type: docs
+weight: 10
+url: /hi/python-net/tables-and-formatting/manage-document-watermarks/
+---
+
+वॉटरमार्क दस्तावेजों में एक सूक्ष्म लेकिन प्रभावशाली तत्व के रूप में काम करते हैं, जो व्यावसायिकता और सौंदर्यशास्त्र की एक परत जोड़ते हैं। Aspose.Words for Python के साथ, आप अपने दस्तावेज़ों की दृश्य अपील को बढ़ाने के लिए आसानी से वॉटरमार्क बना और प्रारूपित कर सकते हैं। यह ट्यूटोरियल आपको Aspose.Words for Python API का उपयोग करके अपने दस्तावेज़ों में वॉटरमार्क जोड़ने की चरण-दर-चरण प्रक्रिया के माध्यम से मार्गदर्शन करेगा।
+
+## दस्तावेज़ों में वॉटरमार्क का परिचय
+
+वॉटरमार्क मुख्य सामग्री को बाधित किए बिना अतिरिक्त जानकारी या ब्रांडिंग देने के लिए दस्तावेज़ों की पृष्ठभूमि में रखे गए डिज़ाइन तत्व हैं। दस्तावेज़ की अखंडता बनाए रखने और दृश्य अपील को बढ़ाने के लिए इनका उपयोग आमतौर पर व्यावसायिक दस्तावेज़ों, कानूनी कागजात और रचनात्मक कार्यों में किया जाता है।
+
+## पायथन के लिए Aspose.Words के साथ शुरुआत करना
+
+ आरंभ करने के लिए, सुनिश्चित करें कि आपके पास Python के लिए Aspose.Words स्थापित है। आप इसे Aspose विज्ञप्ति से डाउनलोड कर सकते हैं:[पायथन के लिए Aspose.Words डाउनलोड करें](https://releases.aspose.com/words/python/).
+
+स्थापना के बाद, आप आवश्यक मॉड्यूल आयात कर सकते हैं और दस्तावेज़ ऑब्जेक्ट सेट कर सकते हैं।
+
+```python
+import aspose.words as aw
+
+# Load or create a document
+doc = aw.Document()
+
+# Your code continues here
+```
+
+## टेक्स्ट वॉटरमार्क जोड़ना
+
+टेक्स्ट वॉटरमार्क जोड़ने के लिए, इन चरणों का पालन करें:
+
+1. वॉटरमार्क ऑब्जेक्ट बनाएं.
+2. वॉटरमार्क के लिए टेक्स्ट निर्दिष्ट करें.
+3. दस्तावेज़ में वॉटरमार्क जोड़ें.
+
+```python
+# Create a watermark object
+watermark = aw.drawing.Watermark()
+
+# Set text for the watermark
+watermark.text = "Confidential"
+
+# Add the watermark to the document
+doc.watermark = watermark
+```
+
+## टेक्स्ट वॉटरमार्क उपस्थिति को अनुकूलित करना
+
+आप विभिन्न गुणों को समायोजित करके टेक्स्ट वॉटरमार्क के स्वरूप को अनुकूलित कर सकते हैं:
+
+```python
+# Customize text watermark appearance
+watermark.font.size = 36
+watermark.font.bold = True
+watermark.color = aw.drawing.Color.GRAY
+```
+
+## छवि वॉटरमार्क जोड़ना
+
+छवि वॉटरमार्क जोड़ने में एक समान प्रक्रिया शामिल है:
+
+1. वॉटरमार्क के लिए छवि लोड करें.
+2. एक छवि वॉटरमार्क ऑब्जेक्ट बनाएं.
+3. दस्तावेज़ में छवि वॉटरमार्क जोड़ें.
+
+```python
+# Load the image for the watermark
+image_path = "path/to/watermark.png"
+watermark_image = aw.drawing.Image(image_path)
+
+# Create an image watermark object
+image_watermark = aw.drawing.ImageWatermark(watermark_image)
+
+# Add the image watermark to the document
+doc.watermark = image_watermark
+```
+
+## छवि वॉटरमार्क गुणों को समायोजित करना
+
+आप छवि वॉटरमार्क के आकार और स्थिति को नियंत्रित कर सकते हैं:
+
+```python
+# Adjust image watermark properties
+image_watermark.size = aw.drawing.SizeF(200, 100)
+image_watermark.relative_horizontal_position = aw.drawing.RelativeHorizontalPosition.CENTER
+image_watermark.relative_vertical_position = aw.drawing.RelativeVerticalPosition.MIDDLE
+```
+
+## विशिष्ट दस्तावेज़ अनुभागों पर वॉटरमार्क लागू करना
+
+यदि आप दस्तावेज़ के विशिष्ट अनुभागों पर वॉटरमार्क लागू करना चाहते हैं, तो आप निम्नलिखित दृष्टिकोण का उपयोग कर सकते हैं:
+
+```python
+# Apply watermark to a specific section
+section = doc.sections[0]
+section.watermark = watermark
+```
+
+## पारदर्शी वॉटरमार्क बनाना
+
+पारदर्शी वॉटरमार्क बनाने के लिए, पारदर्शिता स्तर समायोजित करें:
+
+```python
+# Create a transparent watermark
+watermark.transparency = 0.5  # Range: 0 (opaque) to 1 (fully transparent)
+```
+
+## दस्तावेज़ को वॉटरमार्क के साथ सहेजना
+
+एक बार जब आप वॉटरमार्क जोड़ लें, तो दस्तावेज़ को लागू वॉटरमार्क के साथ सहेजें:
+
+```python
+# Save the document with watermarks
+output_path = "path/to/output/document_with_watermark.docx"
+doc.save(output_path)
+```
+
+## निष्कर्ष
+
+Aspose.Words for Python का उपयोग करके अपने दस्तावेज़ों में वॉटरमार्क जोड़ना एक सीधी प्रक्रिया है जो आपकी सामग्री की दृश्य अपील और ब्रांडिंग को बढ़ाती है। चाहे वह टेक्स्ट हो या छवि वॉटरमार्क, आपके पास अपनी प्राथमिकताओं के अनुसार उनकी उपस्थिति और प्लेसमेंट को अनुकूलित करने की सुविधा है।
+
+## पूछे जाने वाले प्रश्न
+
+### मैं किसी दस्तावेज़ से वॉटरमार्क कैसे हटा सकता हूँ?
+
+ वॉटरमार्क हटाने के लिए, दस्तावेज़ की वॉटरमार्क प्रॉपर्टी को पर सेट करें`None`.
+
+### क्या मैं अलग-अलग पेजों पर अलग-अलग वॉटरमार्क लगा सकता हूँ?
+
+हां, आप किसी दस्तावेज़ के विभिन्न अनुभागों या पृष्ठों पर अलग-अलग वॉटरमार्क लागू कर सकते हैं।
+
+### क्या घुमाए गए टेक्स्ट वॉटरमार्क का उपयोग करना संभव है?
+
+बिल्कुल! आप रोटेशन एंगल प्रॉपर्टी सेट करके टेक्स्ट वॉटरमार्क को घुमा सकते हैं।
+
+### क्या मैं वॉटरमार्क को संपादित होने या हटाए जाने से बचा सकता हूँ?
+
+हालाँकि वॉटरमार्क को पूरी तरह से संरक्षित नहीं किया जा सकता है, आप उनकी पारदर्शिता और प्लेसमेंट को समायोजित करके उन्हें छेड़छाड़ के प्रति अधिक प्रतिरोधी बना सकते हैं।
+
+### क्या Aspose.Words for Python विंडोज़ और लिनक्स दोनों के लिए उपयुक्त है?
+
+हां, Aspose.Words for Python विंडोज और लिनक्स दोनों वातावरणों के साथ संगत है।
+
+ अधिक विवरण और व्यापक एपीआई संदर्भों के लिए, Aspose.Words दस्तावेज़ पर जाएँ:[पायथन एपीआई संदर्भों के लिए Aspose.Words](https://reference.aspose.com/words/python-net/)

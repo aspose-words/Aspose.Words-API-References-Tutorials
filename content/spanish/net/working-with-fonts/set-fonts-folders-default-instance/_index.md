@@ -66,7 +66,7 @@ R: Sí, la configuración de carpetas de fuentes predeterminadas afecta a todos 
 
  R: Sí, puede configurar varias carpetas de fuentes predeterminadas en Aspose.Words. Sólo necesita especificar las ubicaciones de las carpetas de fuentes personalizadas usando el`SetFontsFolders` método de la`Fonts` clase.
 
-#### P: ¿Cómo puedo comprobar las carpetas de fuentes predeterminadas actualmente configuradas en Aspose.Words?
+#### P: ¿Cómo puedo verificar las carpetas de fuentes predeterminadas actualmente configuradas en Aspose.Words?
 
  R: Para verificar las carpetas de fuentes predeterminadas actualmente definidas en Aspose.Words, puede usar el`GetFolders` método de la`Fonts` class para obtener las ubicaciones de las carpetas de fuentes configuradas.
 

@@ -8,7 +8,7 @@ weight: 10
 url: /es/java/word-processing/handling-different-document-formats/
 ---
 
-En el ámbito del procesamiento y manipulación de documentos, Aspose.Words para Java brilla como una API versátil y poderosa. Esta guía paso a paso lo guiará a través del proceso de manejo de varios formatos de documentos usando Aspose.Words para Java. Desde comprender los conceptos básicos hasta realizar operaciones avanzadas, lo tenemos cubierto.
+En el ámbito del procesamiento y manipulación de documentos, Aspose.Words para Java brilla como una API versátil y potente. Esta guía paso a paso lo guiará a través del proceso de manejo de varios formatos de documentos usando Aspose.Words para Java. Desde comprender los conceptos básicos hasta realizar operaciones avanzadas, lo tenemos cubierto.
 
 ## Primeros pasos con Aspose.Words para Java
 
@@ -24,7 +24,7 @@ Para utilizar Aspose.Words para Java, debe agregar el archivo JAR Aspose.Words a
 
 1.  Descargue Aspose.Words para Java: visite el sitio web de Aspose[aquí](https://releases.aspose.com/words/java/) para obtener la última versión de Aspose.Words para Java.
 
-2. Agregue JAR a su proyecto: incluya el archivo JAR descargado en la ruta de clase de su proyecto.
+2. Agregue JAR a su proyecto: incluya el archivo JAR descargado en la ruta de clases de su proyecto.
 
 ## Cargando diferentes formatos de documentos
 

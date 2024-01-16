@@ -28,7 +28,7 @@ Nous allons maintenant configurer le style de paragraphe à l'aide de l'identifi
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;
 ```
 
-## Étape 3 : Ajouter du contenu
+## Étape 3 : ajouter du contenu
 
 Nous allons ajouter du contenu au paragraphe. Voici comment:
 

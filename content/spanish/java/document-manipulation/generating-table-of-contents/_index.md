@@ -99,4 +99,4 @@ Para incluir más niveles en su TOC, puede modificar el campo TOC y especificar 
 
 ### ¿Puedo cambiar las posiciones de tabulación para entradas de TOC específicas?
 
-Sí, como se muestra en el ejemplo de código anterior, puede cambiar las posiciones de tabulación para entradas específicas de TOC recorriendo los párrafos y modificando las tabulaciones en consecuencia.
+Sí, como se muestra en el ejemplo de código anterior, puede cambiar las posiciones de tabulación para entradas específicas de TOC iterando a través de los párrafos y modificando las tabulaciones en consecuencia.

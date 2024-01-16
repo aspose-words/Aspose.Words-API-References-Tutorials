@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Paso 2: poner el texto en cursiva
 
- Podemos poner el texto en cursiva configurando la fuente.`Italic`propiedad a`true`.
+ Podemos poner el texto en cursiva configurando la fuente`Italic`propiedad a`true`.
 
 ```csharp
 builder.Font.Italic = true;
@@ -50,7 +50,7 @@ R: Para poner texto en cursiva en Aspose.Words, puede utilizar el`Font.Italic` p
 
 #### P: ¿Es posible poner en cursiva varios fragmentos de texto en el mismo párrafo?
 
- R: Sí, puedes poner en cursiva varios fragmentos de texto en un solo párrafo utilizando varios`Run` objetos. Puedes crear múltiples`Run` objetos y establecer el`Font.Italic`propiedad a`true` para que cada objeto ponga en cursiva las partes deseadas del texto. Luego puedes agregarlos al párrafo usando el`Paragraph.AppendChild(run)` método.
+ R: Sí, puedes poner en cursiva varios fragmentos de texto en un solo párrafo usando varios`Run` objetos. Puedes crear múltiples`Run` objetos y establecer el`Font.Italic`propiedad a`true` para que cada objeto ponga en cursiva las partes deseadas del texto. Luego puedes agregarlos al párrafo usando el`Paragraph.AppendChild(run)` método.
 
 #### P: ¿Puedo poner en cursiva el texto que está en una tabla o celda en Aspose.Words?
 

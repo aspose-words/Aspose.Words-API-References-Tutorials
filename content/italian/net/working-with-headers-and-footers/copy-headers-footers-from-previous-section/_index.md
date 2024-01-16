@@ -70,7 +70,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo in ba
 
 ### Domande frequenti
 
-#### D: Come posso copiare le intestazioni e i piè di pagina dalla sezione precedente in Aspose.Words?
+#### D: Come posso copiare le intestazioni e i piè di pagina della sezione precedente in Aspose.Words?
 
  R: Per copiare intestazioni e piè di pagina dalla sezione precedente in Aspose.Words, puoi utilizzare il file`CopyHeadersFootersFromPreviousSection()` metodo sulla corrente`Section`oggetto. Ciò copierà le intestazioni e i piè di pagina dalla sezione precedente alla sezione corrente.
 

@@ -96,7 +96,7 @@ R: Sí, puedes firmar varios documentos de Word con el mismo certificado. Una ve
 
 #### P: ¿La firma del documento modifica el documento original?
 
-R: La firma de documentos con Aspose.Words para .NET no modifica el documento original. En su lugar, crea una copia firmada digitalmente del documento, dejando intacto el documento original. La copia firmada digitalmente contiene la firma digital agregada, lo que garantiza la integridad del contenido del documento.
+R: La firma de documentos con Aspose.Words para .NET no modifica el documento original. En cambio, crea una copia firmada digitalmente del documento, dejando intacto el documento original. La copia firmada digitalmente contiene la firma digital agregada, lo que garantiza la integridad del contenido del documento.
 
 #### P: ¿Puedo verificar la firma digital de un documento firmado usando Aspose.Words para .NET?
 

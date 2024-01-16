@@ -62,7 +62,7 @@ R: Los campos sucios en un documento de Word se refieren a los campos que han ca
 
 #### P: ¿Puedo personalizar las opciones de carga en Aspose.Words para .NET?
 
-R: ¡Absolutamente! Aspose.Words ofrece una variedad de opciones de carga que se pueden personalizar para satisfacer sus requisitos específicos, lo que la convierte en una herramienta flexible y poderosa para el procesamiento de documentos.
+R: ¡Absolutamente! Aspose.Words ofrece una variedad de opciones de carga que se pueden personalizar para satisfacer sus requisitos específicos, lo que la convierte en una herramienta flexible y potente para el procesamiento de documentos.
 
 #### P: ¿Cómo beneficia a mi aplicación la actualización de campos sucios?
 

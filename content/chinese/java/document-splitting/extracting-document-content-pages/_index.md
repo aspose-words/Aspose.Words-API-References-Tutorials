@@ -70,7 +70,7 @@ String extractedText = visitor.getText();
 
 ## 按页面提取内容
 
-### 什么是文档页面？
+### 什么是文档页？
 
 在Aspose.Words中，文档可以分为多个页面。每个页面代表文档内容的一部分。但是我们如何以编程方式访问这些页面呢？
 

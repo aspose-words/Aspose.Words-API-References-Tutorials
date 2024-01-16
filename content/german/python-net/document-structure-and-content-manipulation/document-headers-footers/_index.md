@@ -134,7 +134,7 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### Wie greife ich auf Kopf- und Fußzeileninhalte zu?
 
- Um auf den Inhalt von Kopf- und Fußzeilen zuzugreifen, verwenden Sie die`headers_footers` Eigenschaft des Abschnitts des Dokuments.
+ Um auf Kopf- und Fußzeileninhalte zuzugreifen, verwenden Sie die`headers_footers` Eigenschaft des Abschnitts des Dokuments.
 
 ### Kann ich Bilder zu Kopf- und Fußzeilen hinzufügen?
 

@@ -42,7 +42,7 @@ builder.Writeln("Hello45");
 ```
 
 ## Steg 3: Redigera sidinställningar i alla avsnitt
- För att ändra sidinställningarna i alla delar av dokumentet använder vi en`foreach` slinga till slinga genom varje sektion och komma åt dess`PageSetup` fast egendom. I det här exemplet ändrar vi pappersstorleken för alla sektioner genom att ställa in värdet till`PaperSize.Letter`.
+ För att ändra sidinställningarna i alla delar av dokumentet använder vi en`foreach` loop till loop genom varje sektion och få tillgång till dess`PageSetup` fast egendom. I det här exemplet ändrar vi pappersstorleken för alla sektioner genom att ställa in värdet till`PaperSize.Letter`.
 
 ```csharp
 foreach(Section section in doc.Sections)
@@ -109,7 +109,7 @@ builder.Writeln("Hello45");
 
 #### F: Hur ändrar man sidinställningarna i alla avsnitt i Aspose.Words för .NET?
 
- S: För att ändra sidinställningarna i alla delar av dokumentet kan du använda en`foreach` slinga till slinga genom varje sektion och komma åt dess`PageSetup` fast egendom. I det här exemplet ändrar vi pappersstorleken för alla sektioner genom att ställa in värdet till`PaperSize.Letter`.
+ S: För att ändra sidinställningarna i alla delar av dokumentet kan du använda en`foreach` loop till loop genom varje sektion och få tillgång till dess`PageSetup` fast egendom. I det här exemplet ändrar vi pappersstorleken för alla sektioner genom att ställa in värdet till`PaperSize.Letter`.
 
 ```csharp
 foreach(Section section in doc.Sections)

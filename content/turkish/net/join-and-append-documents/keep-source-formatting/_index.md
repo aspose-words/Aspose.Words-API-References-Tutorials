@@ -48,7 +48,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanarak orijinal formatı korurken, kaynak belgenin hedef belgeye eklenmesi uygulamasını tamamlıyor.
+Bu, Aspose.Words for .NET kullanılarak orijinal formatı korurken kaynak belgenin hedef belgeye eklenmesi uygulamasını tamamlar.
 
 ### Aspose.Words for .NET kullanarak Kaynak Formatını Koru için örnek kaynak kodu 
 

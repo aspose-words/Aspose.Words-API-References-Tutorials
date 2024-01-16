@@ -59,7 +59,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 Kodu, özel HTML içeriğinize ve gereksinimlerinize göre ayarlamayı unutmayın. HTML'nizin iyi biçimlendirilmiş olduğundan ve Aspose.Words for .NET ile uyumlu olduğundan emin olun.
 
 ## Çözüm
-Tebrikler! Aspose.Words for .NET kullanarak HTML içeriğini bir Word belgesine nasıl ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak artık HTML öğelerini, biçimlendirmeyi ve stilleri Word belgelerinize dahil edebilirsiniz.
+Tebrikler! Aspose.Words for .NET kullanarak HTML içeriğini bir Word belgesine nasıl ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve verilen kaynak kodunu kullanarak artık HTML öğelerini, biçimlendirmeyi ve stilleri Word belgelerinize dahil edebilirsiniz.
 
 ### Word belgesine HTML eklemeyle ilgili SSS
 
@@ -71,7 +71,7 @@ C: Evet, Aspose.Words for .NET kullanarak bir Word belgesine çeşitli etiketler
 
 C: Evet, Aspose.Words for .NET, eklenen HTML içeriğinde bulunan CSS stillerini işleyebilir ve uygulayabilir. Bu, HTML öğelerinin biçimlendirmesinin ve stilinin Word belgesinde doğru şekilde oluşturulmasını sağlar.
 
-#### S: Word belgesine dinamik HTML içeriği eklemek mümkün müdür?
+#### S: Word belgesine dinamik HTML içeriği eklemek mümkün mü?
 
 C: Kesinlikle! C# kodunu kullanarak dinamik olarak HTML içeriği oluşturabilir ve ardından bunu InsertHtml yöntemini kullanarak Word belgesine ekleyebilirsiniz. Bu, dinamik ve veri odaklı Word belgelerini zahmetsizce oluşturmanıza olanak tanır.
 
@@ -81,4 +81,4 @@ C: Aspose.Words for .NET, eklenen HTML içeriğinde JavaScript yürütülmesini 
 
 #### S: Aspose.Words for .NET, desteklenmeyen HTML öğelerini veya etiketlerini nasıl ele alıyor?
 
-C: Eklenen içerikte desteklenmeyen HTML öğeleri veya etiketleri varsa Aspose.Words for .NET, genel belge bütünlüğünü koruyarak bunları zarif bir şekilde ele almaya çalışacaktır. Ancak istenen sonuçları elde etmek için HTML içeriğinizin Aspose.Words for .NET ile uyumlu olduğundan emin olmanız önerilir.
+C: Eklenen içerikte desteklenmeyen HTML öğeleri veya etiketleri varsa Aspose.Words for .NET, genel belge bütünlüğünü koruyarak bunları incelikle ele almaya çalışacaktır. Ancak istenen sonuçları elde etmek için HTML içeriğinizin Aspose.Words for .NET ile uyumlu olduğundan emin olmanız önerilir.

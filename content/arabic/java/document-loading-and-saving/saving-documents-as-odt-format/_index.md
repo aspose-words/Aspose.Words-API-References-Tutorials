@@ -34,7 +34,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 
 ## الخطوة 2: حدد خيارات حفظ ODT
 
-لحفظ المستند بتنسيق ODT، نحتاج إلى تحديد خيارات حفظ ODT. بالإضافة إلى ذلك، يمكننا ضبط وحدة القياس للوثيقة. يستخدم Open Office السنتيمترات، بينما يستخدم MS Office البوصات. سنقوم بتعيينه إلى بوصة:
+لحفظ المستند بتنسيق ODT، نحتاج إلى تحديد خيارات حفظ ODT. بالإضافة إلى ذلك، يمكننا ضبط وحدة القياس للوثيقة. يستخدم Open Office السنتيمترات، بينما يستخدم MS Office البوصة. سنقوم بتعيينه إلى بوصة:
 
 ```java
 OdtSaveOptions saveOptions = new OdtSaveOptions();
@@ -56,7 +56,7 @@ doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", sa
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
 // يستخدم Open Office السنتيمترات عند تحديد الأطوال والعروض والتنسيقات الأخرى القابلة للقياس
-// وخصائص المحتوى في المستندات بينما يستخدم MS Office البوصات.
+// وخصائص المحتوى في المستندات بينما يستخدم MS Office البوصة.
 OdtSaveOptions saveOptions = new OdtSaveOptions(); { saveOptions.setMeasureUnit(OdtSaveMeasureUnit.INCHES); }
 doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```

@@ -68,7 +68,7 @@ Son olarak, oluşturulan tabloyu içeren belgeyi istediğiniz konuma kaydedin.
 doc.save(""output.docx"");
 ```
 
-Bu adımları izleyerek DataTable'dan başarıyla bir tablo oluşturabilir ve bunu Aspose.Words for Java kullanarak belge işleme uygulamanıza dahil edebilirsiniz. Bu zengin özelliklere sahip kitaplık, tablo işleme ve kelime işlem görevlerini basitleştirerek profesyonel ve iyi organize edilmiş belgeleri zahmetsizce oluşturmanıza olanak tanır.
+Bu adımları izleyerek DataTable'dan başarıyla bir tablo oluşturabilir ve bunu Aspose.Words for Java kullanarak belge işleme uygulamanıza dahil edebilirsiniz. Bu zengin özelliklere sahip kitaplık, tablo işleme ve kelime işlem görevlerini basitleştirerek, profesyonel ve iyi organize edilmiş belgeleri zahmetsizce oluşturmanıza olanak tanır.
 
 ## Çözüm
 

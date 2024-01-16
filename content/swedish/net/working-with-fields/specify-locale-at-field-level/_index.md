@@ -64,7 +64,7 @@ Detta var ett exempel på en källkod för att ange lokalisering på fältnivå 
 
 #### F: Hur kan jag ange lokalen på fältnivå i Aspose.Words för .NET?
 
- S: För att ange lokalen på fältnivå i Aspose.Words för .NET kan du använda`FieldOptions` klass och dess`FieldLocale` egenskap för att ställa in önskad plats. Du kan till exempel använda`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` för att ange den franska (Frankrike) språkversionen.
+ S: För att ange lokalen på fältnivå i Aspose.Words för .NET kan du använda`FieldOptions` klass och dess`FieldLocale` egenskap för att ställa in önskad plats. Du kan till exempel använda`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` för att ange det franska (Frankrike) språket.
 
 #### F: Är det möjligt att ange olika lokaler för varje fält i Aspose.Words för .NET?
 

@@ -77,7 +77,7 @@ C: Aspose.Words kullanarak bir Word belgesindeki bir yazı tipine kalın stili u
 
 #### S: Aspose.Words ile bir Word belgesindeki metnin belirli bir kısmına italik stil uygulamak mümkün müdür?
 
-C: Evet, Aspose.Words ile italik stili Word belgesindeki metnin belirli bir kısmına uygulayabilirsiniz. İstediğiniz metin aralığını seçmek ve stilini "italik" olarak ayarlamak için API'yi kullanabilirsiniz.
+C: Evet, Aspose.Words ile italik stili Word belgesindeki metnin belirli bir bölümüne uygulayabilirsiniz. İstediğiniz metin aralığını seçmek ve stilini "italik" olarak ayarlamak için API'yi kullanabilirsiniz.
 
 #### S: Aspose.Words'ü kullanarak bir Word belgesindeki yazı tipi rengini nasıl değiştirebilirim?
 

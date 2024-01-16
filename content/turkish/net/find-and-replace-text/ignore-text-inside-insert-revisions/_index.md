@@ -52,7 +52,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
 
 ## 5. Adım: Arama ve değiştirme için normal ifadeleri kullanma
 
-Belge metninde arama işlemlerini ve değiştirme işlemlerini gerçekleştirmek için normal ifadeler kullanacağız. Örneğimizde "e" harfinin geçtiği tüm yerleri arayacağız ve bunları yıldız işaretiyle değiştireceğiz "* ". .NET'i kullanacağız`Regex` bunun için sınıf:
+Belge metninde arama işlemlerini ve değiştirme işlemlerini gerçekleştirmek için normal ifadeleri kullanacağız. Örneğimizde "e" harfinin geçtiği tüm yerleri arayacağız ve bunları yıldız işaretiyle değiştireceğiz "* ". .NET'i kullanacağız`Regex` bunun için sınıf:
 
 ```csharp
 Regex regex = new Regex("e");

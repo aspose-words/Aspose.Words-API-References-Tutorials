@@ -82,7 +82,7 @@ Aspose.Words for .NET ile, bir grafik ekseninin onay etiketi hizalama özelliği
 ### SSS
 
 #### S1. Grafik eksenindeki çok satırlı işaret etiketleri nelerdir?
-Grafik eksenindeki çok satırlı etiketleri işaretleyin, etiket metni uzun olduğunda veya kullanılabilir alana sığması için sarmalamayı gerektirdiğinde birden çok satıra yayılan eksen etiketlerini ifade eder. Grafik ekseni, etiket metnini kısaltmak veya görsel dağınıklığa neden olmak yerine, okunabilirliği sağlamak için etiketleri otomatik olarak birden fazla satıra böler. Çok satırlı etiketleri işaretleyin, özellikle grafiklerdeki uzun kategori veya değer etiketleriyle uğraşırken kullanışlıdır.
+Grafik eksenindeki çok satırlı etiketleri işaretleyin, etiket metni uzun olduğunda veya kullanılabilir alana sığması için sarmalamayı gerektirdiğinde birden çok satıra yayılan eksen etiketlerini ifade eder. Grafik ekseni, etiket metnini kısaltmak veya görsel dağınıklığa neden olmak yerine, okunabilirliği sağlamak için etiketleri otomatik olarak birden çok satıra böler. Çok satırlı etiketleri işaretleyin, özellikle grafiklerdeki uzun kategori veya değer etiketleriyle uğraşırken kullanışlıdır.
 
 #### Q2. Grafik eksenindeki onay etiketlerinin hizalamasını özelleştirebilir miyim?
  Evet, Aspose.Words for .NET'i kullanarak grafik eksenindeki onay etiketlerinin hizalamasını özelleştirebilirsiniz. Erişerek`TickLabelAlignment` mülkiyeti`ChartAxis` nesneyi seçtiğinizde, onay etiketleri için istediğiniz hizalamayı ayarlayabilirsiniz. Hizalama seçenekleri sola, sağa, ortaya veya iki yana hizalanmış hizalamayı içerir. Hizalamayı ayarlamak, onay etiketlerinin grafik ekseni boyunca yatay konumunu kontrol etmenize olanak tanıyarak uygun okunabilirlik ve görsel sunum sağlar.

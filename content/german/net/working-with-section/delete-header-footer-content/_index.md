@@ -83,7 +83,7 @@ Section section = doc.Sections[0];
 
 #### F: Wie entferne ich Kopf- und Fußzeileninhalte in Aspose.Words für .NET?
 
- A: Um den Inhalt der Kopf- und Fußzeile aus dem Abschnitt zu entfernen, können Sie die verwenden`ClearHeadersFooters` Methode:
+ A: Um den Kopf- und Fußzeileninhalt aus dem Abschnitt zu entfernen, können Sie die verwenden`ClearHeadersFooters` Methode:
 
 ```csharp
 section.ClearHeadersFooters();

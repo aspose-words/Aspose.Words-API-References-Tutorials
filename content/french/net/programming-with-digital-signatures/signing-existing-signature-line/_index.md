@@ -32,7 +32,7 @@ SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.em
 };
 ```
 
-Assurez-vous de spécifier le chemin correct vers l’image de la ligne de signature.
+Assurez-vous de spécifier le chemin correct vers l'image de la ligne de signature.
 
 ## Étape 3 : Chargement du certificat
 

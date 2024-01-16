@@ -20,7 +20,7 @@ Innan vi börjar, se till att du har följande förutsättningar på plats:
 - Aspose.Words för Java Library
 - Ett exempeldokument att arbeta med
 
-## Steg 1: Importera Aspose.Words-biblioteket
+## Steg 1: Importera Aspose.Words Library
 
 Börja med att importera Aspose.Words for Java-biblioteket till ditt projekt. Du kan lägga till det som ett beroende i ditt projekts byggfil eller ladda ner JAR-filen från Asposes webbplats.
 

@@ -1,6 +1,6 @@
 ---
-title: Tablo Satır Biçimlendirmesini Ayarla
-linktitle: Tablo Satır Biçimlendirmesini Ayarla
+title: Tablo Satır Formatını Ayarla
+linktitle: Tablo Satır Formatını Ayarla
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET kullanarak tablo satırı formatını ayarlamak için adım adım kılavuz.
 type: docs

@@ -84,7 +84,7 @@ Ces extraits montrent comment récupérer et modifier les propriétés du thème
 
 ## Insertion de séparateurs de style
 
-Les séparateurs de style sont utiles pour appliquer différents styles dans un même paragraphe. Voici un exemple de la façon d'insérer des séparateurs de style :
+Les séparateurs de style sont utiles pour appliquer différents styles dans un seul paragraphe. Voici un exemple de la façon d'insérer des séparateurs de style :
 
 ```java
 @Test

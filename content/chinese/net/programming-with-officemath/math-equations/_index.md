@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-officemath/math-equations/
 ---
 
-Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中创建、编辑和操作 Word 文档。 Aspose.Words 提供的功能之一是可以向文档中添加数学方程。在本指南中，我们将引导您了解如何使用 Aspose.Words for .NET 的 C# 源代码将数学方程添加到 Word 文档。
+Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中创建、编辑和操作 Word 文档。 Aspose.Words 提供的功能之一是可以将数学方程添加到文档中。在本指南中，我们将引导您了解如何使用 Aspose.Words for .NET 的 C# 源代码将数学方程添加到 Word 文档。
 
 ## 了解 Aspose.Words 库
 

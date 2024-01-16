@@ -89,7 +89,7 @@ Aspose.Words for Java 是一个功能强大且多功能的 API，允许开发人
 ### [在 Aspose.Words for Java 中格式化文档](./formatting-documents/)
 通过我们的综合指南了解在 Aspose.Words for Java 中格式化文档的艺术。探索强大的功能并提高您的文档处理技能。
 ### [在 Aspose.Words for Java 中连接和附加文档](./joining-and-appending-documents/)
-了解如何使用 Aspose.Words for Java 轻松加入和附加文档。保留格式、管理页眉页脚等。
+了解如何使用 Aspose.Words for Java 轻松加入和追加文档。保留格式、管理页眉页脚等。
 ### [在 Aspose.Words for Java 中使用文档选项和设置](./using-document-options-and-settings/)
 释放 Aspose.Words for Java 的强大功能。无缝文档管理的主文档选项和设置。优化、定制等等。
 ### [在 Aspose.Words for Java 中使用文档属性](./using-document-properties/)

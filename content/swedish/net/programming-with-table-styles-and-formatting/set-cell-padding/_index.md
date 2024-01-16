@@ -47,7 +47,7 @@ builder.CellFormat.SetPaddings(30, 50, 30, 50);
 builder.Writeln("I'm a beautifully formatted cell.");
 ```
 
-## Steg 6: Avsluta tabellen och spara dokumentet
+## Steg 6: Gör klart tabellen och spara dokumentet
  Slutligen avslutar vi skapa tabellen med hjälp av`EndRow()` metod och`EndTable()`, sedan sparar vi det ändrade dokumentet till en fil.
 
 ```csharp

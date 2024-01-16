@@ -100,7 +100,7 @@ C: Word belgesindeki mevcut imza satırı, imzanın yerleştirilebileceği önce
 C: Aspose.Words for .NET kullanarak bir Word belgesinde mevcut bir imza satırını imzalamak için şu adımları takip edebilirsiniz:
 1.  Belgeyi kullanarak yükleyin`Document` sınıfını seçin ve belge dosyasının yolunu belirtin.
 2.  Uygun yöntemi veya özelliği kullanarak mevcut imza satırına erişin. Örneğin, kullanabilirsiniz`GetChild` İmza çizgisi şeklini alma yöntemi.
-3.  Bir örneğini oluşturun`SignOptions` sınıfı seçin ve ayarlayın`SignatureLineId` özelliği mevcut imza satırının kimliğine aktarır.
+3.  Bir örneğini oluşturun`SignOptions` sınıfı seçin ve ayarlayın`SignatureLineId` özelliği mevcut imza satırının kimliğine aktarın.
 4.  Yı kur`SignatureLineImage` mülkiyeti`SignOptions` dijital imzayı temsil eden görüntüye sınıf.
 5.  İmza sertifikasını şunu kullanarak yükleyin:`CertificateHolder` sınıfa girin ve gerekli sertifikayı ve şifreyi sağlayın.
 6.  Kullan`DigitalSignatureUtil.Sign` dahil olmak üzere gerekli parametreleri sağlayarak belgeyi imzalama yöntemi`SignOptions` nesne.

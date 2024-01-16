@@ -70,7 +70,7 @@ Bu, Aspose.Words for .NET kullanarak dağılım grafiği ekleme işlemini tamaml
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine dağılım grafiğinin nasıl ekleneceğini öğrendiniz. Adım adım kılavuzu takip ederek ve verilen kaynak kodunu kullanarak yeni bir belge oluşturabilir, dağılım grafiği ekleyebilir, X ve Y koordinatlarıyla seri verileri ekleyebilir ve belgeyi grafikle birlikte kaydedebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine dağılım grafiğinin nasıl ekleneceğini öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak yeni bir belge oluşturabilir, dağılım grafiği ekleyebilir, X ve Y koordinatlarıyla seri verileri ekleyebilir ve belgeyi grafikle birlikte kaydedebilirsiniz.
 
 Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için kapsamlı bir API sağlar. Dağılım grafikleri, iki sayısal değişkenli verileri görselleştirmek ve analiz etmek için kullanışlıdır. Aspose.Words for .NET ile X ve Y değerleri arasındaki ilişkiyi temsil eden dağılım grafiklerini kolayca oluşturabilir ve verilerdeki kalıpları veya eğilimleri tanımlayabilirsiniz.
 

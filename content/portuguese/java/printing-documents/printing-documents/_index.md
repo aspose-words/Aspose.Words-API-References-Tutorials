@@ -1,0 +1,211 @@
+---
+title: Imprimindo documentos em Aspose.Words para Java
+linktitle: Imprimindo Documentos
+second_title: API de processamento de documentos Java Aspose.Words
+description: Aprenda como imprimir documentos usando Aspose.Words for Java. Guia passo a passo para impressão perfeita em seus aplicativos Java.
+type: docs
+weight: 10
+url: /pt/java/printing-documents/printing-documents/
+---
+
+Se você deseja imprimir documentos usando Aspose.Words for Java, você está no lugar certo. Neste guia passo a passo, orientaremos você no processo de impressão de documentos com Aspose.Words for Java usando o código-fonte fornecido.
+
+## Introdução
+
+Imprimir documentos é uma tarefa comum em muitas aplicações. Aspose.Words for Java fornece uma API poderosa para trabalhar com documentos do Word, incluindo a capacidade de imprimi-los. Neste tutorial, orientaremos você passo a passo no processo de impressão de um documento Word.
+
+## Configurando seu ambiente
+
+Antes de mergulharmos no código, certifique-se de ter os seguintes pré-requisitos em vigor:
+
+- Kit de desenvolvimento Java (JDK) instalado
+- Biblioteca Aspose.Words para Java baixada e adicionada ao seu projeto
+
+## Carregando o documento
+
+ Para começar, você precisará carregar o documento do Word que deseja imprimir. Substituir`"Your Document Directory"` com o caminho para o seu documento e`"Your Output Directory"` com o diretório de saída desejado.
+
+```java
+string dataDir = "Your Document Directory";
+string outPath = "Your Output Directory";
+Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Criando um trabalho de impressão
+
+A seguir, criaremos um trabalho de impressão para imprimir nosso documento carregado. O trecho de código abaixo inicializa um trabalho de impressão e define as configurações desejadas da impressora.
+
+```java
+// Crie um trabalho de impressão para imprimir nosso documento.
+PrinterJob pj = PrinterJob.getPrinterJob();
+//Inicialize um conjunto de atributos com o número de páginas do documento.
+PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
+attributes.add(new PageRanges(1, doc.getPageCount()));
+// Passe as configurações da impressora junto com os demais parâmetros para o documento de impressão.
+MultipagePrintDocument awPrintDoc = new MultipagePrintDocument(doc, 4, true, attributes);
+```
+
+## Imprimindo o Documento
+
+Agora que configuramos nosso trabalho de impressão, é hora de imprimir o documento. O trecho de código a seguir associa o documento ao trabalho de impressão e inicia o processo de impressão.
+
+```java
+// Passe o documento a ser impresso utilizando o trabalho de impressão.
+pj.setPrintable(awPrintDoc);
+pj.print();
+```
+## Código fonte completo
+```java
+string dataDir = "Your Document Directory";
+Document doc = new Document(dataDir + "Rendering.docx");
+// Crie um trabalho de impressão para imprimir nosso documento.
+PrinterJob pj = PrinterJob.getPrinterJob();
+//Inicialize um conjunto de atributos com o número de páginas do documento.
+PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
+attributes.add(new PageRanges(1, doc.getPageCount()));
+// Passe as configurações da impressora junto com os demais parâmetros para o documento de impressão.
+MultipagePrintDocument awPrintDoc = new MultipagePrintDocument(doc, 4, true, attributes);
+// Passe o documento a ser impresso utilizando o trabalho de impressão.
+pj.setPrintable(awPrintDoc);
+pj.print();
+```
+Código fonte de MultipagePrintDocument
+```java
+class MultipagePrintDocument implements Printable
+{
+    private final Document mDocument;
+    private final int mPagesPerSheet;
+    private final boolean mPrintPageBorders;
+    private final AttributeSet mAttributeSet;
+    /// <resumo>
+    /// O construtor da classe PrintDocument personalizada.
+    // / </resumo>
+    public MultipagePrintDocument(Document document, int pagesPerSheet, boolean printPageBorders,
+                                  AttributeSet attributes) {
+        if (document == null)
+            throw new IllegalArgumentException("document");
+        mDocument = document;
+        mPagesPerSheet = pagesPerSheet;
+        mPrintPageBorders = printPageBorders;
+        mAttributeSet = attributes;
+    }
+    public int print(Graphics g, PageFormat pf, int page) {
+        // Os índices de início e fim da página conforme definidos no conjunto de atributos.
+        int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
+        int fromPage = pageRanges[0][0] - 1;
+        int toPage = pageRanges[0][1] - 1;
+        Dimension thumbCount = getThumbCount(mPagesPerSheet, pf);
+        // Calcule o índice da página que será renderizado a seguir.
+        int pagesOnCurrentSheet = (int) (page * (thumbCount.getWidth() * thumbCount.getHeight()));
+        // Se o índice da página for maior que o intervalo total de páginas, não haverá nada
+        // mais para renderizar.
+        if (pagesOnCurrentSheet > (toPage - fromPage))
+            return Printable.NO_SUCH_PAGE;
+        // Calcule o tamanho de cada espaço reservado para miniatura em pontos.
+        Point2D.Float thumbSize = new Point2D.Float((float) (pf.getImageableWidth() / thumbCount.getWidth()),
+                (float) (pf.getImageableHeight() / thumbCount.getHeight()));
+        // Calcule o número da primeira página a ser impressa nesta folha de papel.
+        int startPage = pagesOnCurrentSheet + fromPage;
+        // Selecione o número da última página a ser impressa nesta folha de papel.
+        int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
+        //Percorra as páginas selecionadas da página atual armazenada até a página calculada
+        // última página.
+        for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
+            // Calcule os índices de colunas e linhas.
+            int rowIdx = (int) Math.floor((pageIndex - startPage) / thumbCount.getWidth());
+            int columnIdx = (int) Math.floor((pageIndex - startPage) % thumbCount.getWidth());
+            // Defina a localização da miniatura nas coordenadas mundiais (pontos neste caso).
+            float thumbLeft = columnIdx * thumbSize.x;
+            float thumbTop = rowIdx * thumbSize.y;
+            try {
+                // Calcule as posições iniciais esquerda e superior.
+                int leftPos = (int) (thumbLeft + pf.getImageableX());
+                int topPos = (int) (thumbTop + pf.getImageableY());
+                // Renderize a página do documento no objeto Graphics usando coordenadas calculadas
+                // e tamanho do espaço reservado para miniaturas.
+                // O valor de retorno útil é a escala na qual a página foi renderizada.
+                float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
+                        (int) thumbSize.y);
+                // Desenhe as bordas da página (a miniatura da página pode ser menor que a miniatura
+                // tamanho do espaço reservado).
+                if (mPrintPageBorders) {
+                    // Obtenha o tamanho real de 100% da página em pontos.
+                    Point2D.Float pageSize = mDocument.getPageInfo(pageIndex).getSizeInPoints();
+                    // Desenhe a borda ao redor da página dimensionada usando o fator de escala conhecido.
+                    g.setColor(Color.black);
+                    g.drawRect(leftPos, topPos, (int) (pageSize.x * scale), (int) (pageSize.y * scale));
+                    // Desenhe a borda ao redor do espaço reservado para miniaturas.
+                    g.setColor(Color.red);
+                    g.drawRect(leftPos, topPos, (int) thumbSize.x, (int) thumbSize.y);
+                }
+            } catch (Exception e) {
+                // Se ocorrer algum erro durante a renderização, não faça nada.
+                // Isso desenhará uma página em branco se houver algum erro durante a renderização.
+            }
+        }
+        return Printable.PAGE_EXISTS;
+    }
+    private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
+        Dimension size;
+        // Defina o número de colunas e linhas na planilha para o
+        //Papel orientado para paisagem.
+        switch (pagesPerSheet) {
+            case 16:
+                size = new Dimension(4, 4);
+                break;
+            case 9:
+                size = new Dimension(3, 3);
+                break;
+            case 8:
+                size = new Dimension(4, 2);
+                break;
+            case 6:
+                size = new Dimension(3, 2);
+                break;
+            case 4:
+                size = new Dimension(2, 2);
+                break;
+            case 2:
+                size = new Dimension(2, 1);
+                break;
+            default:
+                size = new Dimension(1, 1);
+                break;
+        }
+        // Troque a largura e a altura se o papel estiver na orientação Retrato.
+        if ((pf.getWidth() - pf.getImageableX()) < (pf.getHeight() - pf.getImageableY()))
+            return new Dimension((int) size.getHeight(), (int) size.getWidth());
+        return size;
+	}
+}
+```
+
+## Conclusão
+
+Parabéns! Você imprimiu com sucesso um documento do Word usando Aspose.Words for Java. Este guia passo a passo deve ajudá-lo a integrar perfeitamente a impressão de documentos em seus aplicativos Java.
+
+## Perguntas frequentes
+
+### Q1: Posso imprimir páginas específicas de um documento usando Aspose.Words for Java?
+
+ Sim, você pode especificar o intervalo de páginas ao imprimir um documento. No exemplo de código, usamos`attributes.add(new PageRanges(1, doc.getPageCount()))` para imprimir todas as páginas. Você pode ajustar o intervalo de páginas conforme necessário.
+
+### Q2: O Aspose.Words for Java é adequado para impressão em lote?
+
+Absolutamente! Aspose.Words for Java é adequado para tarefas de impressão em lote. Você pode percorrer uma lista de documentos e imprimi-los um por um usando um código semelhante.
+
+### Q3: Como posso lidar com erros ou exceções de impressão?
+
+Você deve lidar com quaisquer possíveis exceções que possam ocorrer durante o processo de impressão. Verifique a documentação do Aspose.Words for Java para obter informações sobre como lidar com exceções.
+
+### P4: Posso personalizar ainda mais as configurações de impressão?
+
+Sim, você pode personalizar as configurações de impressão para atender às suas necessidades específicas. Explore a documentação do Aspose.Words for Java para saber mais sobre as opções de impressão disponíveis.
+
+### P5: Onde posso obter mais ajuda e suporte para Aspose.Words for Java?
+
+ Para obter suporte e assistência adicionais, você pode visitar o[Fórum Aspose.Words para Java](https://forum.aspose.com/).
+
+---
+
+Agora que você aprendeu com sucesso como imprimir documentos usando Aspose.Words for Java, você pode começar a implementar essa funcionalidade em seus aplicativos Java. Boa codificação!

@@ -38,7 +38,7 @@ byte[] docBytes = outStream.ToArray();
 
 ## Paso 4: Inicializar MemoryStream desde Byte Array
 
- Ahora, inicializa una nueva instancia de`MemoryStream` usando la matriz de bytes obtenida en el paso anterior:
+ Ahora, inicialice una nueva instancia de`MemoryStream` usando la matriz de bytes obtenida en el paso anterior:
 
 ```csharp
 MemoryStream inStream = new MemoryStream(docBytes);

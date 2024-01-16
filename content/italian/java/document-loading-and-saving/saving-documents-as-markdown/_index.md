@@ -14,7 +14,7 @@ In questa guida passo passo, dimostreremo come salvare i documenti come Markdown
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di possedere i seguenti prerequisiti:
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
 
 - Java Development Kit (JDK) installato sul tuo sistema.
 -  Aspose.Words per la libreria Java. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/java/).

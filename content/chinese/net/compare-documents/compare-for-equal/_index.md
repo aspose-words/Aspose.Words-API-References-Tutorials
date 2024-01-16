@@ -20,9 +20,9 @@ Document docA = new Document(dataDir + "Document.docx");
 Document docB = docA.Clone();
 ```
 
-## 第2步：文档比较
+## 第二步：文档比较
 
-我们现在将使用`Compare()`比较两个文档的方法。该方法将标记原始文档中的更改。就是这样：
+我们现在将使用`Compare()`比较两个文档的方法。该方法会标记原始文档中的更改。就是这样：
 
 ```csharp
 //比较文档

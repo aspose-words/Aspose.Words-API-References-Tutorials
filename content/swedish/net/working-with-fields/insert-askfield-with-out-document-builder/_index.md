@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Steg 3: Infoga ASK-fältet
+## Steg 3: Infoga fältet ASK
 
  Vi använder`AppendField()` metod för att infoga ett ASK-fält i stycket.
 

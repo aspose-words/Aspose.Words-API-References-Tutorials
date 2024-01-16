@@ -2,7 +2,7 @@
 title: كتابة جميع قواعد Css في ملف واحد
 linktitle: كتابة جميع قواعد Css في ملف واحد
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية تحويل مستند Word إلى HTML ثابت عن طريق كتابة جميع قواعد CSS في ملف واحد باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية تحويل مستند Word إلى HTML ثابت عن طريق كتابة كافة قواعد CSS في ملف واحد باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/

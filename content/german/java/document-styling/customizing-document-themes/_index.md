@@ -122,4 +122,4 @@ Aspose.Words für Java bietet eine Reihe vordefinierter Themen, die Sie als Ausg
 
 Durch das Anpassen von Dokumentthemen mit Aspose.Words für Java können Sie optisch ansprechende und konsistente Dokumente in Ihren Java-Anwendungen erstellen. In diesem Leitfaden haben wir die Grundlagen der Theme-Anpassung behandelt, einschließlich der Änderung von Farben und Schriftarten. Indem Sie die bereitgestellten Beispiele und Best Practices befolgen, beherrschen Sie die Kunst, Dokumentthemen anzupassen.
 
-Da Sie nun über das Wissen und den Code verfügen, können Sie Ihre Java-Dokumentverarbeitungsfunktionen mit Aspose.Words erweitern. Erstellen Sie beeindruckende Dokumente, die auffallen und Ihre Benutzer beeindrucken.
+Da Sie nun über das Wissen und den Code verfügen, können Sie Ihre Java-Dokumentverarbeitungsfunktionen mit Aspose.Words verbessern. Erstellen Sie beeindruckende Dokumente, die auffallen und Ihre Benutzer beeindrucken.

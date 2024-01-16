@@ -67,9 +67,9 @@ doc.Save(dataDir + "BaseConversions.DocToDocx.docx");
 
 #### Q1：什么是 Aspose.Words for .NET？
 
-Aspose.Words for .NET 是一个功能强大的文档处理库，允许开发人员以编程方式创建、修改、转换和渲染 Microsoft Word 文档。它为各种 Word 文件格式提供广泛支持，包括 DOC 和 DOCX。
+Aspose.Words for .NET 是一个功能强大的文档处理库，允许开发人员以编程方式创建、修改、转换和呈现 Microsoft Word 文档。它为各种 Word 文件格式提供广泛支持，包括 DOC 和 DOCX。
 
-#### Q2: 为什么要将 DOC 转换为 DOCX？
+#### Q2: 为什么我应该将 DOC 转换为 DOCX？
 
 将 DOC 转换为 DOCX 有几个优点。 DOCX 是 Microsoft 推出的较新的文件格式，它提供了改进的兼容性、更好的数据恢复选项和增强的安全功能。此外，与 DOC 文件相比，DOCX 文件的文件大小更小，因此更易于共享和存储。
 

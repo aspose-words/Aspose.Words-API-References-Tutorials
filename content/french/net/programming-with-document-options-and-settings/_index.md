@@ -7,7 +7,7 @@ type: docs
 weight: 1510
 url: /fr/net/programming-with-document-options-and-settings/
 ---
-Les didacticiels Aspose.Words for .NET « Traitement des mots avec options et paramètres du document » vous guident à travers les différentes fonctionnalités et techniques permettant de manipuler les options et les paramètres du document dans Aspose.Words for .NET. Ces didacticiels vous aident à comprendre comment personnaliser les paramètres de téléchargement, gérer les polices, les formats de documents, les modèles, etc.
+Les didacticiels Aspose.Words for .NET « Traitement des mots avec options et paramètres du document » vous guident à travers les différentes fonctionnalités et techniques permettant de manipuler les options et les paramètres du document dans Aspose.Words for .NET. Ces didacticiels vous aident à comprendre comment personnaliser les paramètres de téléchargement, gérer les polices, les formats de document, les modèles, etc.
 
 Les didacticiels expliquent comment personnaliser les options de chargement des documents. Vous apprendrez à spécifier les paramètres de chargement tels que la gestion des polices, la résolution des liens, l'optimisation des performances, etc. Ces options vous permettent de contrôler précisément le comportement de chargement des documents et d'optimiser les performances de votre application.
 

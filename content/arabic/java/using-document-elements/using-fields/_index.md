@@ -1,5 +1,5 @@
 ---
-title: استخدام الحقول في Aspose.Words لجافا
+title: استخدام الحقول في Aspose.Words لـ Java
 linktitle: استخدام الحقول
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
 description: تعلم كيفية استخدام Aspose.Words لحقول Java بشكل فعال في هذا البرنامج التعليمي خطوة بخطوة. قم بإنشاء مستندات Word ديناميكية بسهولة.
