@@ -19,7 +19,7 @@ By following these tutorials, you will be able to fully exploit the table manipu
 | [Auto Fit Table To Contents](./auto-fit-table-to-contents/) | Learn how to auto fit a table to its contents in a Word document using Aspose.Words for .NET. |
 | [Clone Complete Table](./clone-complete-table/) | Learn how to clone an entire table into a Word document with Aspose.Words for .NET. |
 | [Finding Index](./finding-index/) | Learn how to find table, row and cell indexes in a Word document with Aspose.Words for .NET. |
-| [Insert Table Directly](./insert-table-directly/) | Learn how to insert a table directly into a Word document with Aspose.Words for .NET. |
+| [Insert Table Directly](./insert-table-directly/) | Learn how to insert tables directly into Word documents using Aspose.Words for .NET. Follow our detailed, step-by-step guide to streamline your document creation. |
 | [Insert Table From Html](./insert-table-from-html/) | Learn how to insert a table from HTML into a Word document with Aspose.Words for .NET. |
 | [Create Simple Table](./create-simple-table/) | Learn how to create a simple table in a Word document with Aspose.Words for .NET. |
 | [Formatted Table](./formatted-table/) | Learn how to create a formatted table in a Word document with Aspose.Words for .NET. |
