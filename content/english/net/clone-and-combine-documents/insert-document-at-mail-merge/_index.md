@@ -2,85 +2,153 @@
 title: Insert Document At Mail Merge
 linktitle: Insert Document At Mail Merge
 second_title: Aspose.Words Document Processing API
-description: Learn how to insert document into another during mail merge using Aspose.Words for .NET.
+description: Learn how to insert documents at mail merge fields using Aspose.Words for .NET in this comprehensive, step-by-step tutorial.
 type: docs
 weight: 10
 url: /net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-In this tutorial, we are going to walk you through how to insert a document into another document during mail merge using the Insert Document During Mail Merge feature of Aspose.Words for .NET. Follow the steps below to understand the source code and perform the document insertion.
+## Introduction
 
-## Step 1: Loading the main document
+Welcome to the world of document automation with Aspose.Words for .NET! Have you ever wondered how to dynamically insert documents into specific fields within a main document during a mail merge operation? Well, you're in the right place. This tutorial will guide you step-by-step through the process of inserting documents at mail merge fields using Aspose.Words for .NET. It's like piecing together a puzzle, where each piece falls perfectly into place. So, let's dive in!
 
-To get started, specify the directory for your documents and load the main document into a Document object. Here's how:
+## Prerequisites
+
+Before we get started, make sure you have the following:
+
+1. Aspose.Words for .NET: You can [download the latest version here](https://releases.aspose.com/words/net/). If you need to purchase a license, you can do so [here](https://purchase.aspose.com/buy). Alternatively, you can get a [temporary license](https://purchase.aspose.com/temporary-license/) or try it out with a [free trial](https://releases.aspose.com/).
+2. Development Environment: Visual Studio or any other C# IDE.
+3. Basic Knowledge of C#: Familiarity with C# programming will make this tutorial a breeze.
+
+## Import Namespaces
+
+First things first, you'll need to import the necessary namespaces. These are like the building blocks of your project.
 
 ```csharp
-// Path to the documents directory.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+using System.Linq;
 ```
 
-## Step 2: Configure Mail Merge
+Let's break down the process into manageable steps. Each step will build upon the previous one, leading you to a complete solution.
 
-Now let's configure the mail merge and specify the field merge callback to insert a document into another document. Here's how:
+## Step 1: Setting Up Your Directory
 
-```csharp
-mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-```
-
-## Step 3: Running the Mail Merge
-
-We'll run the mail merge by providing the names of the merge fields and the corresponding data. Here's how:
+Before you can start inserting documents, you need to define the path to your documents directory. This is where your documents are stored.
 
 ```csharp
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-```
-
-### Example source code for Insert Document At Mail Merge using Aspose.Words for .NET
-
-Here is the complete source code for the Insert Document in Mail Merge feature of Aspose.Words for .NET:
-
-```csharp
-// The path to the documents directory.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
+## Step 2: Loading the Main Document
+
+Next, you'll load the main document. This document contains the merge fields where other documents will be inserted.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+## Step 3: Setting the Field Merging Callback
+
+To handle the merging process, you'll need to set a callback function. This function will be responsible for inserting documents at the specified merge fields.
+
+```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-// The main document has a merge field in it called "Document_1".
-// The corresponding data for this field contains a fully qualified path to the document.
-// That should be inserted to this field.
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
+```
 
+## Step 4: Executing the Mail Merge
+
+Now it's time to execute the mail merge. This is where the magic happens. You'll specify the merge field and the document that should be inserted at this field.
+
+```csharp
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
+```
+
+## Step 5: Saving the Document
+
+After the mail merge is complete, you'll save the modified document. This new document will have the inserted content right where you want it.
+
+```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-With this code you will be able to insert a document into another document during mail merge using Aspose.Words for .NET. The resulting document will be saved under a new name
+## Step 6: Creating the Callback Handler
 
+The callback handler is a class that makes special processing for the merge field. It loads the document specified in the field value and inserts it into the current merge field.
+
+```csharp
+private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
+{
+    void IFieldMergingCallback.FieldMerging(FieldMergingArgs args)
+    {
+        if (args.DocumentFieldName == "Document_1")
+        {
+            DocumentBuilder builder = new DocumentBuilder(args.Document);
+            builder.MoveToMergeField(args.DocumentFieldName);
+
+            Document subDoc = new Document((string)args.FieldValue);
+            InsertDocument(builder.CurrentParagraph, subDoc);
+
+            if (!builder.CurrentParagraph.HasChildNodes)
+                builder.CurrentParagraph.Remove();
+
+            args.Text = null;
+        }
+    }
+}
+```
+
+## Step 7: Inserting the Document
+
+This method inserts the specified document into the current paragraph or table cell.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        foreach (Node srcNode in srcSection.Body)
+        {
+            if (srcNode.NodeType == NodeType.Paragraph)
+            {
+                Paragraph para = (Paragraph)srcNode;
+                if (para.IsEndOfSection && !para.HasChildNodes)
+                    continue;
+            }
+
+            Node newNode = importer.ImportNode(srcNode, true);
+            destinationParent.InsertAfter(newNode, insertionDestination);
+            insertionDestination = newNode;
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
+}
+```
 
 ## Conclusion
 
-In this tutorial, we explored how to insert a document into another document during mail merge using the Insert Document During Mail Merge feature of Aspose.Words for .NET. By configuring the mail merge and providing the necessary data, you can dynamically assemble documents by merging various document templates or sections. Aspose.Words for .NET provides a flexible and powerful way to manage complex document generation scenarios, making it a valuable tool for automating document creation and manipulation tasks.
+And there you have it! You've successfully inserted documents into specific fields during a mail merge operation using Aspose.Words for .NET. This powerful feature can save you a ton of time and effort, especially when dealing with large volumes of documents. Think of it as having a personal assistant who takes care of all the heavy lifting for you. So, go ahead and give it a try. Happy coding!
 
-### FAQ's
+## FAQ's
 
-#### Q: What is the purpose of inserting a document into another document during mail merge?
+### Can I insert multiple documents at different merge fields?
+Yes, you can. Simply specify the appropriate merge fields and corresponding document paths in the `MailMerge.Execute` method.
 
-A: Inserting a document into another document during mail merge allows you to combine different document templates or sections dynamically based on the data provided during the merge process. This feature is particularly useful when you want to assemble complex documents by merging various pre-defined templates or sections into a final document.
+### Is it possible to format the inserted document differently from the main document?
+Absolutely! You can use the `ImportFormatMode` parameter in the `NodeImporter` to control formatting.
 
-#### Q: How do I insert a document into another document during mail merge using Aspose.Words for .NET?
+### What if the merge field name is dynamic?
+You can handle dynamic merge field names by passing them as parameters to the callback handler.
 
-A: To insert a document into another document during mail merge using Aspose.Words for .NET, follow these steps:
-1. Load the main document that will serve as the base into a Document object.
-2. Configure the mail merge and specify the field merge callback to handle document insertion.
-3. Run the mail merge with the names of the merge fields and the corresponding data (path to the document to be inserted).
+### Can I use this method with different file formats?
+Yes, Aspose.Words supports various file formats including DOCX, PDF, and more.
 
-#### Q: How can I customize the insertion behavior during mail merge?
-
-A: To customize the insertion behavior during mail merge, you can implement a custom FieldMergingCallback by inheriting from the IFieldMergingCallback interface. This allows you to control how the documents are inserted and merged based on your specific requirements.
-
-#### Q: Can I insert multiple documents during mail merge?
-
-A: Yes, you can insert multiple documents during mail merge by providing the appropriate data for each merge field. For each merge field that requires document insertion, specify the path to the corresponding document as the data.
-
-
-
+### How do I handle errors during the document insertion process?
+Implement error handling in your callback handler to manage any exceptions that may occur.
