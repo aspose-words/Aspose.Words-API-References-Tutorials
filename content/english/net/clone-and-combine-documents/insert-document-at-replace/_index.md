@@ -2,87 +2,166 @@
 title: Insert Document At Replace
 linktitle: Insert Document At Replace
 second_title: Aspose.Words Document Processing API
-description: Learn how to insert a document on replacement using Aspose.Words for .NET.
+description: Learn how to seamlessly insert one Word document into another using Aspose.Words for .NET with our detailed, step-by-step guide. Perfect for developers looking to streamline document processing.
 type: docs
 weight: 10
 url: /net/clone-and-combine-documents/insert-document-at-replace/
 ---
-In this tutorial, we will walk you through how to insert a document into another document when replacing using the Insert Document When Replacing feature of Aspose.Words for .NET. Follow the steps below to understand the source code and perform the document insertion.
+## Introduction
 
-## Step 1: Loading the main document
+Hey there, document maestros! Ever found yourself knee-deep in code, trying to figure out how to insert one Word document into another seamlessly? Fear not, because today we’re diving into the world of Aspose.Words for .NET to make that task a breeze. We’ll walk through a detailed, step-by-step guide on how to use this powerful library to insert documents at specific points during a find and replace operation. Ready to become an Aspose.Words wizard? Let’s get started!
 
-To get started, specify the directory for your documents and load the main document into a Document object. Here's how:
+## Prerequisites
+
+Before we jump into the code, there are a few things you need to have in place:
+
+- Visual Studio: Make sure you have Visual Studio installed on your machine. If you don’t have it yet, you can download it from [here](https://visualstudio.microsoft.com/).
+- Aspose.Words for .NET: You’ll need the Aspose.Words library. You can get it from the [Aspose website](https://releases.aspose.com/words/net/).
+- Basic C# Knowledge: A basic understanding of C# and .NET will help you follow along with this tutorial.
+
+Alright, with those out of the way, let’s get our hands dirty with some code!
+
+## Import Namespaces
+
+First things first, we need to import the necessary namespaces to work with Aspose.Words. This is like gathering all your tools before starting a project. Add these using directives at the top of your C# file:
 
 ```csharp
-// Path to the documents directory.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using Aspose.Words.Tables;
 ```
 
-## Step 2: Configure search and replace options
+Now that we have our prerequisites in place, let's break down the process into bite-sized steps. Each step is crucial and will bring us closer to our goal.
 
-Now we will configure the find and replace options by specifying the search direction and the replace callback to insert a document into another document. Here's how:
+## Step 1: Setting Up the Documents Directory
 
-```csharp
-// Configure search and replace options.
-FindReplaceOptions options = new FindReplaceOptions
-{
-Direction = FindReplaceDirection.Backward,
-ReplacingCallback = new InsertDocumentAtReplaceHandler()
-};
-```
-
-## Step 3: Calling the replacement method
-
-We will now call the replace method to find and replace the specified text with an empty string, using the configured options. Here's how:
+First, we need to specify the directory where our documents are stored. This is like setting the stage before the big performance.
 
 ```csharp
-mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-```
-
-### Example source code for Insert Document At Replace using Aspose.Words for .NET
-
-Here is the complete source code for the Insert Document feature when replacing Aspose.Words for .NET:
-
-```csharp
-// The path to the documents directory.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
-// Set find and replace options.
+Replace `"YOUR DOCUMENT DIRECTORY"` with the path to your directory. This is where your documents will live and breathe.
+
+## Step 2: Load the Main Document
+
+Next, we load the main document into which we want to insert another document. Think of this as our main stage where all the action will happen.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+This code loads the main document from the specified directory.
+
+## Step 3: Set Find and Replace Options
+
+To find the specific location where we want to insert our document, we use the find and replace functionality. This is like using a map to find the exact spot for our new addition.
+
+```csharp
 FindReplaceOptions options = new FindReplaceOptions
 {
-	Direction = FindReplaceDirection.Backward, 
-	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+    Direction = FindReplaceDirection.Backward,
+    ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
+```
 
-// Call the replace method.
+Here, we’re setting the direction to backward and specifying a custom callback handler that we’ll define next.
+
+## Step 4: Perform the Replace Operation
+
+Now, we tell our main document to look for a specific placeholder text and replace it with nothing, while using our custom callback to insert another document.
+
+```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+This code performs the find and replace operation, and then saves the updated document.
+
+## Step 5: Create a Custom Replacing Callback Handler
+
+Our custom callback handler is where the magic happens. This handler will define how the document insertion is carried out during the find and replace operation.
+
+```csharp
+private class InsertDocumentAtReplaceHandler : IReplacingCallback
+{
+    ReplaceAction IReplacingCallback.Replacing(ReplacingArgs args)
+    {
+        Document subDoc = new Document(dataDir + "Document insertion 2.docx");
+
+        // Insert a document after the paragraph containing the match text.
+        Paragraph para = (Paragraph)args.MatchNode.ParentNode;
+        InsertDocument(para, subDoc);
+
+        // Remove the paragraph with the match text.
+        para.Remove();
+        return ReplaceAction.Skip;
+    }
+}
+```
+
+Here, we load the document to be inserted and then call a helper method to perform the insertion.
+
+## Step 6: Define the Insert Document Method
+
+The final piece of our puzzle is the method that actually inserts the document at the specified location.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+	{
+		CompositeNode destinationParent = insertionDestination.ParentNode;
+
+		NodeImporter importer =
+			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+		// Loop through all block-level nodes in the section's body,
+		// then clone and insert every node that is not the last empty paragraph of a section.
+		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+		foreach (Node srcNode in srcSection.Body)
+		{
+			if (srcNode.NodeType == NodeType.Paragraph)
+			{
+				Paragraph para = (Paragraph)srcNode;
+				if (para.IsEndOfSection && !para.HasChildNodes)
+					continue;
+			}
+
+			Node newNode = importer.ImportNode(srcNode, true);
+
+			destinationParent.InsertAfter(newNode, insertionDestination);
+			insertionDestination = newNode;
+		}
+	}
+	else
+	{
+		throw new ArgumentException("The destination node should be either a paragraph or table.");
+	}
+}
+```
+
+This method takes care of importing nodes from the document to be inserted and placing them at the right spot in the main document.
 
 ## Conclusion
 
-In this tutorial, we explored how to insert a document into another document during replace using the Insert Document When Replacing feature of Aspose.Words for .NET. By configuring the find and replace options and providing the necessary data, you can dynamically assemble documents by replacing specific placeholders with the contents of other document templates or sections. Aspose.Words for .NET offers a powerful and flexible way to manage complex document manipulation tasks, making it a valuable tool for automating document creation and content insertion scenarios.
+And there you have it! A comprehensive guide to inserting one document into another using Aspose.Words for .NET. By following these steps, you can easily automate document assembly and manipulation tasks. Whether you’re building a document management system or just need to streamline your document processing workflow, Aspose.Words is your trusty sidekick.
 
-### FAQ's
+## FAQ's
 
-#### Q: What is the purpose of inserting a document into another document during replace?
+### What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful library for manipulating Word documents programmatically. It allows you to create, modify, convert, and process Word documents with ease.
 
-A: Inserting a document into another document during replace allows you to dynamically replace a specific placeholder with the contents of a separate document. This feature is particularly useful when you want to assemble a larger document by combining various pre-defined document templates or sections into specific placeholders.
+### Can I insert multiple documents at once?
+Yes, you can modify the callback handler to handle multiple insertions by iterating over a collection of documents.
 
-#### Q: How do I insert a document into another document during replace using Aspose.Words for .NET?
+### Is there a free trial available?
+Absolutely! You can download a free trial from [here](https://releases.aspose.com/).
 
-A: To insert a document into another document during replace using Aspose.Words for .NET, follow these steps:
-1. Load the main document that contains the placeholders into a Document object.
-2. Configure the find and replace options, including the search direction and replace callback to handle the document insertion.
-3. Call the replace method with the appropriate search pattern, replacing the placeholders with an empty string, using the configured options.
+### How do I get support for Aspose.Words?
+You can get support by visiting the [Aspose.Words forum](https://forum.aspose.com/c/words/8).
 
-#### Q: Can I customize the insertion behavior during replace?
-
-A: Yes, you can customize the insertion behavior during replace by implementing a custom ReplacingCallback. By inheriting from the IReplacingCallback interface, you can control how the documents are inserted and merged based on your specific requirements when replacing the placeholders.
-
-#### Q: Can I replace multiple placeholders with different documents?
-
-A: Yes, you can replace multiple placeholders with different documents by specifying the appropriate search patterns for each placeholder and providing the corresponding documents to be inserted.
+### Can I keep the formatting of the inserted document?
+Yes, the `NodeImporter` class allows you to specify how formatting is handled when importing nodes from one document to another.
