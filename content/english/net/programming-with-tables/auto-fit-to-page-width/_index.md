@@ -1,79 +1,115 @@
 ---
-title: Auto Fit To Page Width
-linktitle: Auto Fit To Page Width
+title: Auto Fit To Window
+linktitle: Auto Fit To Window
 second_title: Aspose.Words Document Processing API
-description: Learn how to auto fit a table to page width in a Word document with Aspose.Words for .NET.
+description: Learn how to auto-fit tables to page width in Word documents using Aspose.Words for .NET with this comprehensive, step-by-step guide. Perfect for automating your document workflow.
 type: docs
 weight: 10
 url: /net/programming-with-tables/auto-fit-to-page-width/
 ---
 
-In this tutorial, we will learn how to use Aspose.Words for .NET to auto fit a table to page width in a Word document. We will follow a step by step guide to understand the code and implement this feature. At the end of this tutorial, you will be able to manipulate tables in Word documents programmatically.
+## Introduction
 
-## Step 1: Project Setup
-1. Launch Visual Studio and create a new C# project.
-2. Add a reference to the Aspose.Words for .NET library.
+Hey there! Are you looking to automate your document processing tasks using Aspose.Words for .NET? Whether you're generating reports, creating templates, or manipulating existing documents, Aspose.Words is a powerful tool that can help you achieve all that and more. In this tutorial, we'll dive into how to auto-fit tables to page width in Word documents using Aspose.Words for .NET. We'll walk you through every step, from setting up your environment to implementing the feature in your code. By the end of this guide, you'll have a solid grasp on how to handle table formatting programmatically.
 
-## Step 2: Creating and Configuring the Document
-To start Words Processing with the table, we need to create a document and configure the document generator. Follow these steps:
+## Prerequisites
+
+Before we get started, let's ensure you have everything you need:
+
+1. Basic Knowledge of C#: Familiarity with C# syntax and concepts is essential.
+2. Aspose.Words for .NET: Download it [here](https://releases.aspose.com/words/net/). You can start with a [free trial](https://releases.aspose.com/).
+3. Visual Studio: Any recent version will work, but the latest version is recommended.
+4. .NET Framework: Ensure it's installed on your system.
+
+Got everything? Great! Let’s move on to the fun part.
+
+## Import Namespaces
+
+To start, we need to import the necessary namespaces. This is crucial as it gives us access to the classes and methods we'll use throughout this tutorial.
 
 ```csharp
-// Path to your documents directory
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// Create the document and the document generator
+These namespaces are essential for working with documents and table formatting in Aspose.Words.
+
+## Step 1: Setting Up the Document Directory
+
+First things first, let's specify the directory where our documents will be saved. This helps Aspose.Words locate and save the files we want to manipulate.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to your document folder.
+
+## Step 2: Creating a New Document
+
+Next, we'll create a new Word document and initialize a `DocumentBuilder` to help us build the document content.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Be sure to replace "YOUR DOCUMENTS DIRECTORY" with the actual path to your documents directory.
+Here, we initialize a `Document` object and a `DocumentBuilder` object that we'll use to insert and format our content.
 
-## Step 3: Inserting and Configuring the Table
-Next, we'll insert a table into the document with a width that takes up half the width of the page. Use the following code:
+## Step 3: Inserting a Table
+
+Now, let's insert a table into our document. We'll start by creating a table that takes up half the page width.
 
 ```csharp
-// Insert the table and configure its width
-Table table = builder. StartTable();
-builder. InsertCell();
-table. PreferredWidth = PreferredWidth. FromPercent(50);
+Table table = builder.StartTable();
+builder.InsertCell();
+table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("Cell #2");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("Cell #3");
 ```
 
-Here we use the document builder to start creating the table, insert cells, and set the preferred width of the table to 50% of the page width. Then we add text in each cell.
+In this step, we start a table, insert cells, and add some text to each cell. The `AutoFit` method is used to set the table's width to fit the page width.
 
-## Step 4: Saving the modified document
-Finally, we need to save the modified document with the table adjusted to the width of the page. Use the following code:
+## Step 4: Saving the Document
+
+Finally, we need to save our document. This will write the changes we've made to a new Word file.
 
 ```csharp
-// Save the modified document
 doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
-Be sure to specify the correct path and filename for the output document.
-  
-### Sample source code for Auto Fit To Page Width using Aspose.Words for .NET 
+This line of code saves the document to the specified directory with the given filename.
 
-```csharp
-	// Path to your document directory 
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Step 5: Running the Code
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Insert a table with a width that takes up half the page width.
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	table.PreferredWidth = PreferredWidth.FromPercent(50);
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	builder.Writeln("Cell #2");
-	builder.InsertCell();
-	builder.Writeln("Cell #3");
-	doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
-```
+Once you've written the code, run it in Visual Studio. Your document will be saved in the specified directory with the table auto-fitted to the page width.
 
 ## Conclusion
-In this tutorial, we learned how to auto fit a table to page width in a Word document using Aspose.Words for .NET. By following this step-by-step guide and implementing the provided C# code, you can manipulate tables in your Word documents programmatically. This feature allows you to dynamically adapt the width of the table according to the page, thus offering a professional and visually appealing document.
+
+And there you have it! You've successfully learned how to auto-fit tables to page width in Word documents using Aspose.Words for .NET. This tutorial covered setting up your environment, creating and formatting tables, and saving the document. Aspose.Words offers a plethora of features, so be sure to explore the [API documentation](https://reference.aspose.com/words/net/) to fully utilize its capabilities.
+
+## FAQs
+
+### 1. What is Aspose.Words for .NET?
+
+Aspose.Words for .NET is a powerful library that allows developers to create, manipulate, and convert Word documents programmatically. It’s perfect for automating document-related tasks.
+
+### 2. Can I use Aspose.Words for .NET for free?
+
+You can try Aspose.Words for .NET using a [free trial](https://releases.aspose.com/). For long-term use, you'll need to purchase a license.
+
+### 3. How do I format tables differently?
+
+You can customize table formatting by using different methods provided by Aspose.Words. Check the [API documentation](https://reference.aspose.com/words/net/) for detailed instructions.
+
+### 4. How do I get support for Aspose.Words for .NET?
+
+You can get support by visiting the [Aspose support forum](https://forum.aspose.com/c/words/8).
+
+### 5. Can I manipulate other elements like images and charts?
+
+Yes, Aspose.Words allows you to manipulate various elements like images, charts, and SmartArt. Explore the [documentation](https://reference.aspose.com/words/net/) for more details.
+
