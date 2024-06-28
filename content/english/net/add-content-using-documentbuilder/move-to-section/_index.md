@@ -64,7 +64,6 @@ When you create a `DocumentBuilder` for a document, the cursor is at the very be
 
 ```csharp
 builder = new DocumentBuilder(doc);
-Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
 ## Step 5: Move to a Specific Paragraph
@@ -73,9 +72,7 @@ Now, let's move the cursor to a specific position within a paragraph.
 
 ```csharp
 builder.MoveToParagraph(2, 10);
-Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
 builder.Writeln("This is a new third paragraph.");
-Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
 ## Conclusion
