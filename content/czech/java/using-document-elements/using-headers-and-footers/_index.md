@@ -8,9 +8,9 @@ weight: 16
 url: /cs/java/using-document-elements/using-headers-and-footers/
 ---
 
-V tomto komplexním průvodci vás provedeme procesem práce se záhlavími a zápatími v Aspose.Words pro Java. Záhlaví a zápatí jsou základními prvky formátování dokumentů a Aspose.Words poskytuje výkonné nástroje pro jejich vytváření a přizpůsobení podle vašich potřeb.
+V tomto komplexním průvodci vás provedeme procesem práce se záhlavími a zápatími v Aspose.Words pro Java. Záhlaví a zápatí jsou základními prvky formátování dokumentu a Aspose.Words poskytuje výkonné nástroje pro jejich vytváření a přizpůsobení podle vašich potřeb.
 
-Nyní se pojďme ponořit do každého z těchto kroků podrobně.
+Nyní se podrobně ponoříme do každého z těchto kroků.
 
 ## 1. Úvod do Aspose.Words
 

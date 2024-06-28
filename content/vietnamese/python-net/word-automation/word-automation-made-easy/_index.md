@@ -157,7 +157,7 @@ Tuyệt đối! Aspose.Words hỗ trợ nhiều định dạng tệp khác nhau 
 ### Aspose.Words có phù hợp để tự động hóa các hoạt động trộn thư không?
 Có, Aspose.Words kích hoạt chức năng trộn thư, cho phép bạn hợp nhất dữ liệu từ nhiều nguồn khác nhau vào các mẫu Word, đơn giản hóa quá trình tạo tài liệu được cá nhân hóa.
 
-### Aspose.Words có cung cấp bất kỳ tính năng bảo mật nào cho việc mã hóa tài liệu không?
+### Aspose.Words có cung cấp bất kỳ tính năng bảo mật nào để mã hóa tài liệu không?
 Có, Aspose.Words cung cấp các tính năng mã hóa và bảo vệ bằng mật khẩu để bảo vệ nội dung nhạy cảm trong tài liệu Word của bạn.
 
 ### Aspose.Words có thể được sử dụng để trích xuất văn bản từ tài liệu Word không?

@@ -99,4 +99,4 @@ doc_builder.write("Content after page break.")
 使用できます`Shape`ヘッダーまたはフッターに画像を追加するクラス。詳細なガイダンスについては、API ドキュメントを確認してください。
 
 ### Aspose.Words for Python の最新バージョンはどこでダウンロードできますか?
-最新バージョンの Aspose.Words for Python は、次の場所からダウンロードできます。[Aspose.Words リリース ページ](https://releases.aspose.com/words/python/).
+ Aspose.Words for Python の最新バージョンは、次の場所からダウンロードできます。[Aspose.Words リリース ページ](https://releases.aspose.com/words/python/).

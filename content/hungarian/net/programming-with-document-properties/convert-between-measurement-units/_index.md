@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Ez a kód a`ConvertUtil` osztályú Aspose.Words a megadott értékek hüvelykké konvertálásához (`InchToPoint` ). Használhat más konverziós módszereket is, amelyek elérhetők a`ConvertUtil` osztály az értékek más mértékegységekre való konvertálásához.
+ Ez a kód a`ConvertUtil` osztály Aspose.Words a megadott értékek hüvelykké konvertálásához (`InchToPoint` ). Használhat más konverziós módszereket is, amelyek elérhetők a`ConvertUtil` osztályba az értékeket más mértékegységekre konvertálni.
 
 ### Példa forráskód a Mértékegységek közötti konvertáláshoz az Aspose.Words for .NET használatával
 

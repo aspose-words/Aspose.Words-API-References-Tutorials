@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## 步骤 5：擦除现有表格边框
+## 步骤 5：擦除现有的表格边框。
 要开始新的轮廓边框，我们首先需要从表格中删除所有现有边框。这可以使用以下方法完成`ClearBorders()`方法。
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## 第7步：用背景颜色填充单元格
-为了改善表格的视觉呈现，我们可以用底色填充单元格
+## 第7步：用背景颜色填充单元格。
+为了改善表格的视觉呈现，我们可以用底色填充单元格。
 
 主意。在此示例中，我们使用浅绿色。
 

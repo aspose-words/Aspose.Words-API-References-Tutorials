@@ -12,7 +12,7 @@ Trong thế giới xử lý tài liệu, độ chính xác và tính thẩm mỹ
 
 ## 1. Giới thiệu về gạch nối
 
-Dấu gạch nối là quá trình chia các từ thành các âm tiết và thêm dấu gạch nối ở cuối dòng để cải thiện việc căn chỉnh văn bản trong tài liệu. Điều này đặc biệt quan trọng khi xử lý các ngôn ngữ có cấu trúc từ phức tạp.
+Dấu gạch nối là quá trình chia các từ thành các âm tiết và thêm dấu gạch nối ở cuối dòng để cải thiện việc căn chỉnh văn bản trong tài liệu. Nó đặc biệt quan trọng khi làm việc với các ngôn ngữ có cấu trúc từ phức tạp.
 
 ## 2. Thiết lập môi trường của bạn
 

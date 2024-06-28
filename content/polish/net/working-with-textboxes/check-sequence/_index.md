@@ -87,7 +87,7 @@ Gratulacje! Teraz wiesz, jak sprawdzić kolejność pól tekstowych w dokumencie
 
 #### P: Jaka jest biblioteka używana do sprawdzania sekwencji pól tekstowych przy użyciu Aspose.Words dla .NET?
 
-Odp.: Aby sprawdzić kolejność pól tekstowych przy użyciu Aspose.Words dla .NET, używaną biblioteką jest Aspose.Words dla .NET.
+Odp.: Aby sprawdzić sekwencję pól tekstowych przy użyciu Aspose.Words dla .NET, używaną biblioteką jest Aspose.Words dla .NET.
 
 #### P: Jak ustalić, czy TextBox jest nagłówkiem sekwencji?
 

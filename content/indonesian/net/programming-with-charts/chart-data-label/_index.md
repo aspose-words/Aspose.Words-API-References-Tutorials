@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 Itu dia! Anda telah berhasil menambahkan dan mengkustomisasi label data dalam bagan menggunakan Aspose.Words untuk .NET.
 
 ## Kesimpulan
-Dalam tutorial ini, Anda telah mempelajari cara menambahkan dan mengkustomisasi label data dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah, Anda bisa menyisipkan bagan, mengakses kumpulan label data, dan mengubah properti untuk menyesuaikan tampilan label data. Aspose.Words untuk .NET menyediakan API yang kuat untuk Pemrosesan Kata dengan dokumen dan bagan Word, memungkinkan Anda membuat bagan yang menarik secara visual dan informatif dengan label data yang disesuaikan.
+Dalam tutorial ini, Anda telah mempelajari cara menambahkan dan mengkustomisasi label data dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah, Anda bisa menyisipkan bagan, mengakses kumpulan label data, dan mengubah properti untuk mengkustomisasi tampilan label data. Aspose.Words untuk .NET menyediakan API yang kuat untuk Pemrosesan Kata dengan dokumen dan bagan Word, memungkinkan Anda membuat bagan yang menarik secara visual dan informatif dengan label data yang disesuaikan.
 
 ### FAQ
 

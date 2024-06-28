@@ -2,7 +2,7 @@
 title: Pokročilé techniky hledání a nahrazování v dokumentech aplikace Word
 linktitle: Pokročilé techniky hledání a nahrazování v dokumentech aplikace Word
 second_title: Aspose.Words Python Document Management API
-description: Naučte se pokročilé techniky hledání a nahrazování v dokumentech Word pomocí Aspose.Words pro Python. Nahraďte text, použijte regulární výraz, formátování a další.
+description: Naučte se pokročilé techniky hledání a nahrazování v dokumentech aplikace Word pomocí Aspose.Words pro Python. Nahraďte text, použijte regulární výraz, formátování a další.
 type: docs
 weight: 12
 url: /cs/python-net/content-extraction-and-manipulation/find-replace-documents/

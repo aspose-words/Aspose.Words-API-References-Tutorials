@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- A`Resolution` tulajdonság megadja a képek célfelbontását és a`ResolutionThreshold`tulajdonság azt a minimális felbontást adja meg, amely alatt a képek nem kicsinyíthetők.
+ A`Resolution` tulajdonság megadja a képek célfelbontását és a`ResolutionThreshold` tulajdonság azt a minimális felbontást adja meg, amely alatt a képek nem kicsinyíthetők.
 
 ## 3. lépés: Konvertálja a dokumentumot PDF-be
 

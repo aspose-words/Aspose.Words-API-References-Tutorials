@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ขั้นตอนที่ 2: สร้างเอกสารและ DocumentBuilder
 
- ต่อไปเราต้องสร้างใหม่`Document` วัตถุและก`DocumentBuilder` วัตถุเพื่อสร้างเอกสาร
+ ต่อไปเราต้องสร้างอันใหม่`Document` วัตถุและก`DocumentBuilder` วัตถุเพื่อสร้างเอกสาร
 
 ```csharp
 Document doc = new Document();
@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ขั้นตอนที่ 3: แทรกไฮเปอร์ลิงก์ด้วย Escape Uri
 
- ใช้`InsertHyperlink` วิธีการของ`DocumentBuilder` วัตถุเพื่อแทรกไฮเปอร์ลิงก์ลงในเอกสาร Uri จะต้องหลบหนีโดยใช้`Uri.EscapeUriString` ฟังก์ชั่นเพื่อหลีกเลี่ยงข้อผิดพลาดของรูปแบบ
+ ใช้`InsertHyperlink` วิธีการของ`DocumentBuilder` วัตถุเพื่อแทรกไฮเปอร์ลิงก์ลงในเอกสาร Uri จะต้องหลบหนีโดยใช้`Uri.EscapeUriString` ฟังก์ชั่นเพื่อหลีกเลี่ยงข้อผิดพลาดในการจัดรูปแบบ
 
 ```csharp
 builder.InsertHyperlink("Testlink",
@@ -43,13 +43,13 @@ builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2F
 
 ## ขั้นตอนที่ 4: บันทึกเอกสารเป็น PDF
 
- สุดท้ายเราสามารถบันทึกเอกสารเป็น PDF โดยใช้ไฟล์`Save` วิธีการของ`Document` วัตถุ. ระบุชื่อไฟล์เอาต์พุต
+ สุดท้ายเราสามารถบันทึกเอกสารเป็น PDF โดยใช้ไฟล์`Save` วิธีการของ`Document` วัตถุ วัตถุ ระบุชื่อไฟล์เอาต์พุต
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-นั่นคือทั้งหมดที่ ! คุณได้แทรกไฮเปอร์ลิงก์ที่มี Escape Uri's สำเร็จในเอกสารโดยใช้ Aspose.Words สำหรับ .NET
+นั่นคือทั้งหมด! คุณได้แทรกไฮเปอร์ลิงก์ที่มี Escape Uri's สำเร็จในเอกสารโดยใช้ Aspose.Words สำหรับ .NET
 
 ### ตัวอย่างซอร์สโค้ดสำหรับการหลบหนี Uri ด้วย Aspose.Words สำหรับ .NET
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
  สร้างอินสแตนซ์ใหม่ของ`Document` คลาสและก`DocumentBuilder` วัตถุเพื่อสร้างเอกสาร
 
- ใช้`InsertHyperlink` วิธีการของ`DocumentBuilder` วัตถุเพื่อแทรกไฮเปอร์ลิงก์ลงในเอกสาร อย่าลืมหลีกเลี่ยง URI โดยใช้ไฟล์`Uri.EscapeUriString` ฟังก์ชั่นเพื่อหลีกเลี่ยงข้อผิดพลาดของรูปแบบ
+ ใช้`InsertHyperlink` วิธีการของ`DocumentBuilder` วัตถุเพื่อแทรกไฮเปอร์ลิงก์ลงในเอกสาร อย่าลืมหลีกเลี่ยง URI โดยใช้ไฟล์`Uri.EscapeUriString` ฟังก์ชั่นเพื่อหลีกเลี่ยงข้อผิดพลาดในการจัดรูปแบบ
 
  ใช้`Save` วิธีการของ`Document` วัตถุเพื่อบันทึกเอกสารในรูปแบบ PDF โดยระบุชื่อของไฟล์เอาต์พุต
 

@@ -50,7 +50,7 @@ chart.Series.Add("Aspose Series 1",
 ```
 
 ## Passaggio 5: impostare i limiti dell'asse
- Configurare il ridimensionamento dell'asse Y impostando i valori minimo e massimo utilizzando il`Scaling.Minimum` E`Scaling.Maximum` proprietà dell'asse.
+ Configura il ridimensionamento dell'asse Y impostando i valori minimo e massimo utilizzando il`Scaling.Minimum` E`Scaling.Maximum` proprietà dell'asse.
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
@@ -95,7 +95,7 @@ In questo tutorial, hai imparato come impostare i limiti di un asse in un grafic
 Aspose.Words per .NET è una libreria che consente agli sviluppatori di lavorare con documenti Word a livello di codice. Fornisce un'ampia gamma di caratteristiche e funzionalità per creare, manipolare e salvare documenti Word.
 
 #### Q2. Come posso installare Aspose.Words per .NET?
-Per installare Aspose.Words per .NET, è possibile utilizzare il gestore pacchetti NuGet in Visual Studio. Cerca semplicemente "Aspose.Words" nel gestore pacchetti NuGet e installalo nel tuo progetto.
+Per installare Aspose.Words per .NET, è possibile utilizzare il gestore pacchetti NuGet in Visual Studio. Cerca semplicemente "Apose.Words" nel gestore pacchetti NuGet e installalo nel tuo progetto.
 
 #### Q3. Posso utilizzare Aspose.Words per .NET con altri linguaggi di programmazione?
 No, Aspose.Words per .NET è progettato specificamente per le applicazioni .NET. Funziona con linguaggi di programmazione come C# e VB.NET.

@@ -41,7 +41,7 @@ table.HorizontalAnchor = RelativeHorizontalPosition.Column;
 table.VerticalAnchor = RelativeVerticalPosition.Page;
 ```
 
- Hier verwenden wir das Dokument, um die erste Tabelle aus dem Hauptteil des ersten Abschnitts abzurufen. Als nächstes legen wir die relative horizontale Position des Tisches fest`HorizontalAnchor` Eigentum mit der`RelativeHorizontalPosition.Column` Wert. Ebenso legen wir die relative vertikale Position des Tisches mit fest`VerticalAnchor` Eigentum mit der`RelativeVerticalPosition.Page` Wert.
+ Hier verwenden wir das Dokument, um die erste Tabelle aus dem Hauptteil des ersten Abschnitts abzurufen. Als nächstes legen wir die relative horizontale Position des Tisches fest`HorizontalAnchor` Eigentum unter Verwendung der`RelativeHorizontalPosition.Column` Wert. Ebenso legen wir die relative vertikale Position des Tisches mit fest`VerticalAnchor` Eigentum unter Verwendung der`RelativeVerticalPosition.Page` Wert.
 
 ## Schritt 4: Speichern des geänderten Dokuments
 Schließlich müssen wir das geänderte Dokument mit der definierten relativen Position der Tabelle speichern. Verwenden Sie den folgenden Code:

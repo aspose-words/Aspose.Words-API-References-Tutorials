@@ -71,7 +71,7 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 
 #### Q: Aspose.Words for .NET의 "아시아 단락 간격 및 들여쓰기 변경" 기능은 무엇을 합니까?
 
-A: Aspose.Words for .NET의 "아시아 단락 간격 및 들여쓰기 변경" 기능을 사용하면 Word 문서에서 아시아 단락의 간격 및 들여쓰기 속성을 수정할 수 있습니다. 왼쪽 및 오른쪽 들여쓰기, 첫 줄 들여쓰기, 앞 공백, 값 뒤 공백을 조정하여 단락의 레이아웃과 모양을 제어할 수 있습니다.
+A: Aspose.Words for .NET의 "아시아 단락 간격 및 들여쓰기 변경" 기능을 사용하면 Word 문서에서 아시아 단락의 간격 및 들여쓰기 속성을 수정할 수 있습니다. 왼쪽 및 오른쪽 들여쓰기, 첫 줄 들여쓰기, 앞 공백, 뒤 공백 값을 조정하여 단락의 레이아웃과 모양을 제어할 수 있습니다.
 
 #### Q: Aspose.Words for .NET을 사용하여 아시아 단락의 간격과 들여쓰기를 어떻게 변경합니까?
 

@@ -47,7 +47,7 @@ doc2 = aw.Document(doc2_path)
 comparison = doc1.compare(doc2, "Author Name", datetime.now())
 ```
 
-## Mise en évidence des changements
+## Mise en évidence des modifications
 
 Pour rendre les modifications plus visibles, vous pouvez les mettre en surbrillance :
 

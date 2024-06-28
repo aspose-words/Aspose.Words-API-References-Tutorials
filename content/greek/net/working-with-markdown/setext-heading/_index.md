@@ -1,6 +1,6 @@
 ---
-title: Επικεφαλίδα Setext
-linktitle: Επικεφαλίδα Setext
+title: Επικεφαλίδα Setex
+linktitle: Επικεφαλίδα Setex
 second_title: Aspose.Words Document Processing API
 description: Μάθετε πώς να χρησιμοποιείτε τις επικεφαλίδες Setext για να μορφοποιήσετε τα έγγραφά σας με το Aspose.Words for .NET Βήμα προς βήμα οδηγό.
 type: docs

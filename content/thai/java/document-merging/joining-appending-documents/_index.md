@@ -32,7 +32,7 @@ import com.aspose.words.*;
 
 public class DocumentJoiner {
     public static void main(String[] args) throws Exception {
-        // เริ่มต้น Aspose.Words
+        // เริ่มต้น Aspose
         License license = new License();
         license.setLicense("Aspose.Words.Java.lic");
     }
@@ -53,7 +53,7 @@ Document doc2 = new Document("document2.docx");
 
 ## ขั้นตอนที่ 4: เข้าร่วมเอกสาร
 
- หลังจากโหลดเอกสารเรียบร้อยแล้ว มาดูวิธีรวมเอกสารเข้าด้วยกัน ในตัวอย่างนี้ เราจะเข้าร่วม`doc2` จนถึงจุดสิ้นสุดของ`doc1`: :
+ หลังจากโหลดเอกสารเรียบร้อยแล้ว มาดูวิธีรวมเอกสารเข้าด้วยกัน ในตัวอย่างนี้ เราจะเข้าร่วม`doc2` จนถึงจุดสิ้นสุดของ`doc1`-
 
 ```java
 // เข้าร่วมเอกสาร
@@ -79,7 +79,7 @@ doc1.save("joined_document.docx");
 
 ### ฉันจะติดตั้ง Aspose.Words สำหรับ Java ได้อย่างไร
 
- การติดตั้ง Aspose.Words สำหรับ Java นั้นตรงไปตรงมา คุณสามารถดาวน์โหลดได้จากเว็บไซต์ Aspose[ที่นี่](https://releases.aspose.com/words/java/). ตรวจสอบให้แน่ใจว่าคุณมีใบอนุญาตที่จำเป็นสำหรับการใช้งานเชิงพาณิชย์
+ การติดตั้ง Aspose.Words สำหรับ Java นั้นตรงไปตรงมา คุณสามารถดาวน์โหลดได้จากเว็บไซต์ Aspose[ที่นี่](https://releases.aspose.com/words/java/)- ตรวจสอบให้แน่ใจว่าคุณมีใบอนุญาตที่จำเป็นสำหรับการใช้งานเชิงพาณิชย์
 
 ### ฉันสามารถรวมเอกสารมากกว่าสองฉบับโดยใช้ Aspose.Words สำหรับ Java ได้หรือไม่
 

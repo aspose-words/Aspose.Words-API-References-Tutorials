@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-fonts/set-font-emphasis-mark/
 ---
 
-Bu eğitimde size Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi vurgu stilini nasıl ayarlayacağınızı göstereceğiz. Yazı tipi vurgusu, metindeki belirli kelimeleri veya cümleleri vurgulamak için kullanılır.
+Bu eğitimde size Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi vurgulama stilini nasıl ayarlayacağınızı göstereceğiz. Yazı tipi vurgusu, metindeki belirli kelimeleri veya cümleleri vurgulamak için kullanılır.
 
 ## Önkoşullar
 Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
@@ -16,14 +16,14 @@ Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
 - .NET için Aspose.Words kütüphanesi projenizde yüklü
 
 ## 1. Adım: Belge dizinini tanımlayın
- Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
+Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Belgeyi oluşturun ve özelleştirin
- Bir örneğini oluşturun`Document` sınıf ve ilişkili`DocumentBuilder` belge içeriğini oluşturmak için. Kullan`Font.EmphasisMark` yazı tipi vurgu stilini ayarlama özelliği`EmphasisMark.UnderSolidCircle` . Daha sonra şunu kullanın:`Write` Ve`Writeln` yöntemleri`DocumentBuilder` Belirtilen yazı tipi vurgusuna sahip metin eklemek için.
+ Bir örneğini oluşturun`Document` sınıf ve ilişkili`DocumentBuilder` belge içeriğini oluşturmak için. Kullan`Font.EmphasisMark` yazı tipi vurgu stilini ayarlama özelliği`EmphasisMark.UnderSolidCircle` . Daha sonra şunu kullanın:`Write` Ve`Writeln` yöntemleri`DocumentBuilder` Belirtilen yazı tipi vurgusuyla metin eklemek için.
 
 ```csharp
 Document document = new Document();
@@ -59,7 +59,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Çözüm
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi vurgu stilini nasıl ayarlayacağınızı öğrendiniz. Farklı vurgu stillerini deneyin ve belgelerinizdeki kelimeleri veya cümleleri vurgulamak için bu özelliği kullanın.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi vurgulama stilini nasıl ayarlayacağınızı öğrendiniz. Farklı vurgu stillerini deneyin ve belgelerinizdeki kelimeleri veya cümleleri vurgulamak için bu özelliği kullanın.
 
 ### SSS'ler
 

@@ -74,7 +74,7 @@ Você pode gerenciar notas de rodapé e notas finais programaticamente:
 - Mantenha as notas de rodapé concisas e relevantes
 - Use notas finais para explicações mais extensas
 - Mantenha uma formatação consistente
-- Verifique novamente as citações para ver se há precisão
+- Verifique novamente as citações para ver se há precisão.
 
 ## Solução de problemas comuns
 

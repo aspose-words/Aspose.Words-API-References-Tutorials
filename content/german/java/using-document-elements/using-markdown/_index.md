@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Geben Sie die geordnete Liste an.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Geben Sie die Kursivschrift für den Text an.
+// Geben Sie die italienische Betonung für den Text an.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

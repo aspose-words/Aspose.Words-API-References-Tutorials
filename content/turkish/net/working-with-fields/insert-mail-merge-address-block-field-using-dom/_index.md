@@ -96,7 +96,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 ```
 ### SSS'ler
 
-#### S: Aspose.Words for .NET ile bir Word belgesindeki posta adresinin formatını nasıl özelleştirebilirim?
+#### S: Aspose.Words for .NET ile bir Word belgesindeki posta adresinin biçimini nasıl özelleştirebilirim?
 
  C: Aspose.Words for .NET'in özelliklerini kullanarak bir Word belgesindeki posta adresinin biçimini özelleştirebilirsiniz.`FieldAddressBlock`nesne. İstediğiniz formatı elde etmek için adres stili, ayırıcılar, isteğe bağlı öğeler vb. gibi formatlama seçeneklerini ayarlayabilirsiniz.
 

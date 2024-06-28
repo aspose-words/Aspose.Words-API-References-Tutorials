@@ -79,7 +79,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-#### Q: OLE オブジェクトをドキュメントに挿入するにはどうすればよいですか?
+#### Q: ドキュメントに OLE オブジェクトを挿入するにはどうすればよいですか?
 
  A: を使用してください。`InsertOleObject`ドキュメントビルダーのメソッド (`DocumentBuilder`) OLE オブジェクトをドキュメントに挿入します。 OLE オブジェクト URL、オブジェクト タイプ、表示オプション、およびその他の必要な設定を指定します。以下に例を示します。
 

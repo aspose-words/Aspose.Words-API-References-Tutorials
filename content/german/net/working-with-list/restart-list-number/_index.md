@@ -114,15 +114,15 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### F: Wie kann ich die Nummerierung einer Liste in Aspose.Words neu starten?
 
- A: Um die Nummerierung einer Liste in Aspose.Words neu zu starten, können Sie die verwenden`ListRestartAtNumber` Methode der`List` Klasse. Mit dieser Methode können Sie einen neuen Wählwert festlegen, ab dem die Liste neu gestartet werden soll. Sie können zum Beispiel verwenden`list.ListRestartAtNumber(1)` um die Nummerierung wieder bei 1 zu beginnen.
+ A: Um die Nummerierung einer Liste in Aspose.Words neu zu starten, können Sie die verwenden`ListRestartAtNumber` Methode der`List` Klasse. Mit dieser Methode können Sie einen neuen Wählwert festlegen, ab dem die Liste neu gestartet werden soll. Sie können zum Beispiel verwenden`list.ListRestartAtNumber(1)` um die Nummerierung bei 1 neu zu starten.
 
 #### F: Ist es möglich, Präfix und Suffix der neu gestarteten Listennummerierung in Aspose.Words anzupassen?
 
- A: Ja, Sie können Präfix und Suffix der neu gestarteten Listennummerierung in Aspose.Words anpassen. Der`ListLevel` Klasse bietet Eigenschaften wie`ListLevel.NumberPrefix` Und`ListLevel.NumberSuffix` mit denen Sie das Präfix und Suffix für jede Ebene in der Liste angeben können. Mit diesen Eigenschaften können Sie das Präfix und Suffix nach Bedarf anpassen.
+ A: Ja, Sie können Präfix und Suffix der neu gestarteten Listennummerierung in Aspose.Words anpassen. Der`ListLevel` Klasse bietet Eigenschaften wie`ListLevel.NumberPrefix` Und`ListLevel.NumberSuffix`mit denen Sie das Präfix und Suffix für jede Ebene in der Liste angeben können. Mit diesen Eigenschaften können Sie das Präfix und Suffix nach Bedarf anpassen.
 
 #### F: Wie kann ich einen bestimmten Nummerierungswert angeben, ab dem die Liste neu gestartet werden soll?
 
-A: Um einen bestimmten Zahlenwert anzugeben, ab dem die Liste neu gestartet werden soll, können Sie die verwenden`ListRestartAtNumber` Methode, die den gewünschten Wert als Argument übergibt. Um beispielsweise die Nummerierung ab 5 neu zu starten, können Sie verwenden`list.ListRestartAtNumber(5)`.
+ A: Um einen bestimmten Zahlenwert anzugeben, ab dem die Liste neu gestartet werden soll, können Sie die verwenden`ListRestartAtNumber` Methode, die den gewünschten Wert als Argument übergibt. Um beispielsweise die Nummerierung ab 5 neu zu starten, können Sie verwenden`list.ListRestartAtNumber(5)`.
 
 #### F: Ist es möglich, die mehrstufige Listennummerierung in Aspose.Words neu zu starten?
 

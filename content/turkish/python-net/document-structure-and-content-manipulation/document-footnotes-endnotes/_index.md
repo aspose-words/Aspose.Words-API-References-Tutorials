@@ -74,7 +74,7 @@ Dipnotları ve son notları programlı olarak şu şekilde yönetebilirsiniz:
 - Dipnotları kısa ve alakalı tutun
 - Daha kapsamlı açıklamalar için son notları kullanın
 - Tutarlı biçimlendirmeyi koruyun
-- Alıntıların doğruluğunu iki kez kontrol edin
+- Alıntıların doğruluğunu iki kez kontrol edin.
 
 ## Yaygın Sorunları Giderme
 

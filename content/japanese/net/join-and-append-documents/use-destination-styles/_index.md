@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## ステップ 3: ソースドキュメントに宛先スタイルを追加する
 
-宛先ドキュメントのスタイルを適用しながらソースドキュメントを宛先ドキュメントに追加するには、`AppendDocument`の方法`Document`とのクラス`ImportFormatMode.UseDestinationStyles`パラメータ。
+宛先ドキュメントのスタイルを適用しながらソースドキュメントを宛先ドキュメントに追加するには、`AppendDocument`の方法`Document`とのクラス`ImportFormatMode.UseDestinationStyles`パラメーター。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Bước 3: Định cấu hình tùy chọn hiển thị siêu tệp
 
- Để bật hoặc tắt tỷ lệ phông chữ WMF theo kích thước siêu tệp, chúng ta cần định cấu hình`MetafileRenderingOptions`sự vật. Trong ví dụ này, chúng tôi vô hiệu hóa việc chia tỷ lệ phông chữ bằng cách đặt`ScaleWmfFontsToMetafileSize`tài sản để`false`.
+ Để bật hoặc tắt tỷ lệ phông chữ WMF theo kích thước siêu tệp, chúng ta cần định cấu hình`MetafileRenderingOptions` sự vật. Trong ví dụ này, chúng tôi vô hiệu hóa việc chia tỷ lệ phông chữ bằng cách đặt`ScaleWmfFontsToMetafileSize`tài sản để`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ một tài liệu PDF sử dụng Aspose.Words cho .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Nếu Aspose.Words không thể hiển thị chính xác một số bản ghi siêu tệp thành đồ họa vector
+	//Nếu Aspose.Words không thể hiển thị chính xác một số bản ghi siêu tệp thành đồ họa vector
 	// sau đó Aspose.Words hiển thị siêu tệp này thành bitmap.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

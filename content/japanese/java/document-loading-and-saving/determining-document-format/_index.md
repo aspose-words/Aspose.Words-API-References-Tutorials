@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でのドキュメント形式の決定
 linktitle: ドキュメント形式の決定
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words を使用して Java のドキュメント形式を検出する方法を学びます。 DOC、DOCXなどを特定します。ファイルを効率的に整理します。
+description: Aspose.Words を使用して Java でドキュメント形式を検出する方法を学びます。 DOC、DOCXなどを特定します。ファイルを効率的に整理します。
 type: docs
 weight: 25
 url: /ja/java/document-loading-and-saving/determining-document-format/

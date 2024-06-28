@@ -16,7 +16,7 @@ Listy występują w dwóch podstawowych typach: wypunktowane i numerowane. Umoż
 
 ## Konfigurowanie środowiska
 
- Zanim zajmiemy się tworzeniem list i zarządzaniem nimi, upewnij się, że masz zainstalowaną bibliotekę Aspose.Words for Python. Można go pobrać z[Tutaj](https://releases.aspose.com/words/python/) . Dodatkowo zapoznaj się z dokumentacją API pod adresem[ten link](https://reference.aspose.com/words/python-net/) aby uzyskać szczegółowe informacje.
+Zanim zajmiemy się tworzeniem list i zarządzaniem nimi, upewnij się, że masz zainstalowaną bibliotekę Aspose.Words for Python. Można go pobrać z[Tutaj](https://releases.aspose.com/words/python/) . Dodatkowo zapoznaj się z dokumentacją API pod adresem[ten link](https://reference.aspose.com/words/python-net/) aby uzyskać szczegółowe informacje.
 
 ## Tworzenie list wypunktowanych
 

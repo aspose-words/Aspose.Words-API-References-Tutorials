@@ -125,7 +125,7 @@ Aspose.Words for Python ile Kelime Otomasyonu, belge oluşturma ve işlemede ola
 ## SSS
 
 ### Aspose.Words Java veya .NET gibi diğer platformlarla uyumlu mu?
-Evet, Aspose.Words, Java ve .NET dahil olmak üzere birçok platformda mevcut olduğundan geliştiricilerin onu tercih ettikleri programlama dilinde kullanmalarına olanak tanır.
+Evet, Aspose.Words, Java ve .NET dahil birden fazla platform için mevcut olup, geliştiricilerin onu tercih ettikleri programlama dilinde kullanmalarına olanak tanır.
 
 ### Aspose.Words'ü kullanarak Word belgelerini PDF'ye dönüştürebilir miyim?
 Kesinlikle! Aspose.Words, DOCX'ten PDF'ye dönüştürme de dahil olmak üzere çeşitli formatları destekler.
@@ -143,7 +143,7 @@ Word Otomasyonu, Word belgeleriyle programlı olarak etkileşim kurmayı içerir
 Evet, Aspose.Words for Python, Windows, macOS ve Linux dahil olmak üzere çeşitli işletim sistemleriyle uyumlu olduğundan farklı geliştirme ortamları için çok yönlüdür.
 
 ### Aspose.Words karmaşık belge formatlarını yönetebilir mi?
-Kesinlikle! Aspose.Words, belge biçimlendirmesi için kapsamlı destek sunarak görsel olarak çekici belgeler oluşturmak için stilleri, yazı tiplerini, renkleri ve diğer biçimlendirme seçeneklerini uygulamanıza olanak tanır.
+Kesinlikle! Aspose.Words, görsel olarak çekici belgeler oluşturmak için stilleri, yazı tiplerini, renkleri ve diğer formatlama seçeneklerini uygulamanıza olanak tanıyan kapsamlı belge formatlama desteği sunar.
 
 ### Aspose.Words, tablo oluşturmayı ve değiştirmeyi otomatikleştirir
 Evet, Aspose.Words program aracılığıyla satır ve hücre oluşturmanıza, satır ve hücre eklemenize ve tablolara format uygulamanıza olanak tanıyarak tablo yönetimini basitleştirir.

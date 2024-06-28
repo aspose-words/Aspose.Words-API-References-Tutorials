@@ -2,114 +2,148 @@
 title: 테이블 직접 삽입
 linktitle: 테이블 직접 삽입
 second_title: Aspose.Words 문서 처리 API
-description: Aspose.Words for .NET을 사용하여 Word 문서에 표를 직접 삽입하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에 직접 표를 삽입하는 방법을 알아보세요. 문서 작성을 간소화하려면 자세한 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-tables/insert-table-directly/
 ---
+## 소개
+프로그래밍 방식으로 테이블을 만드는 것은 특히 복잡한 문서 구조를 처리할 때 상당히 어려울 수 있습니다. 하지만 걱정하지 마세요. 저희가 여러분을 위해 문제를 해결해 드리겠습니다! 이 가이드에서는 Aspose.Words for .NET을 사용하여 Word 문서에 직접 표를 삽입하는 단계를 안내합니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 튜토리얼은 프로세스를 쉽게 익히는 데 도움이 될 것입니다.
 
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에 표를 직접 삽입하는 방법을 알아봅니다. 코드를 이해하고 이 기능을 구현하기 위해 단계별 가이드를 따르겠습니다. 이 튜토리얼이 끝나면 프로그래밍 방식으로 Word 문서에 직접 표를 삽입할 수 있게 됩니다.
+## 전제조건
 
-## 1단계: 프로젝트 설정
-1. Visual Studio를 시작하고 새 C# 프로젝트를 만듭니다.
-2. .NET 라이브러리용 Aspose.Words에 대한 참조를 추가합니다.
+코드를 살펴보기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하십시오. 간단한 체크리스트는 다음과 같습니다.
 
-## 2단계: 문서 및 표 만들기
-배열로 단어 처리를 시작하려면 새 문서를 만들고 배열을 초기화해야 합니다. 다음과 같이하세요:
+1.  .NET 라이브러리용 Aspose.Words: .NET 라이브러리용 Aspose.Words를 다운로드하여 설치했는지 확인하세요. 에서 받으실 수 있습니다.[다운로드 페이지](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio와 같은 개발 환경입니다.
+3. C# 기본 지식: C# 프로그래밍의 기본을 이해합니다.
+4. 문서 디렉터리: 문서를 저장할 디렉터리 경로입니다.
+
+이러한 전제 조건이 충족되면 코딩을 시작할 준비가 된 것입니다!
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져오겠습니다. 이러한 네임스페이스는 Word 문서 작업에 필요한 클래스와 메서드를 제공합니다.
 
 ```csharp
-// 문서 디렉토리 경로
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// 문서작성
+이제 네임스페이스가 준비되었으므로 흥미로운 부분인 표를 만들고 Word 문서에 직접 삽입하는 작업으로 넘어가겠습니다.
+
+## 1단계: 문서 설정
+
+새 Word 문서를 설정하는 것부터 시작해 보겠습니다. 여기에 테이블이 삽입될 위치입니다.
+
+```csharp
+// 문서 디렉터리 경로
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
+```
 
-//배열 만들기
+이 코드는 새 Word 문서를 초기화합니다. 교체하셔야 합니다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
+
+## 2단계: 테이블 개체 생성
+
+다음으로 테이블 개체를 만듭니다. 여기에서 테이블의 구조를 정의합니다.
+
+```csharp
+// 테이블 객체를 생성하는 것부터 시작합니다. 문서 객체를 전달해야 합니다.
+// 각 노드의 생성자에. 이는 우리가 생성하는 모든 노드가 속해야 하기 때문입니다.
+// 어떤 문서에.
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
 
-"YOUR DOCUMENTS DIRECTORY"를 문서 디렉토리의 실제 경로로 바꾸십시오.
+여기서는 새 테이블을 만들어 문서의 첫 번째 섹션 본문에 추가합니다.
 
-## 3단계: 어레이 구축
-다음으로 행과 셀을 추가하여 테이블을 작성하겠습니다. 다음 코드를 예로 사용하세요.
+## 3단계: 행 및 셀 추가
+
+테이블은 행과 셀로 구성됩니다. 이러한 요소를 단계별로 추가해 보겠습니다.
+
+### 행 추가
 
 ```csharp
-// 첫 번째 행 만들기
+// 여기서 EnacheMinimum을 호출하여 행과 셀을 생성할 수 있습니다. 이 방법이 사용됩니다
+// 지정된 노드가 유효한지 확인합니다. 이 경우 유효한 테이블에는 최소한 하나의 행과 하나의 셀이 있어야 합니다.
+// 대신 행과 테이블 생성을 직접 처리하겠습니다.
+//알고리즘 내부에 테이블을 생성하는 경우 이것이 가장 좋은 방법입니다.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);
+```
 
-// 첫 번째 셀 만들기
+이 코드는 새 행을 생성하여 테이블에 추가합니다.
+
+### 행에 셀 추가
+
+이제 행에 셀을 추가해 보겠습니다. 
+
+```csharp
 Cell cell = new Cell(doc);
 cell.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 cell.CellFormat.Width = 80;
 cell.AppendChild(new Paragraph(doc));
-cell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 1"));
+cell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 1 Text"));
 row.AppendChild(cell);
-
-// 행의 두 번째 셀에 대한 셀을 복제합니다.
-row.AppendChild(cell.Clone(false));
-row.LastCell.AppendChild(new Paragraph(doc));
-row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 2"));
 ```
 
- 여기서는 다음과 같은 행을 만듭니다.`AllowBreakAcrossPages` 다음으로 설정된 속성`true` 행 사이에 페이지 나누기를 허용합니다. 그런 다음 배경색이 지정되고 너비가 고정되고 텍스트 내용이 지정된 셀을 만듭니다. 그런 다음 이 셀을 복제하여 행의 두 번째 셀을 만듭니다.
+이 코드 조각에서는 셀을 만들고 배경색을 연한 파란색으로 설정하고 너비를 정의합니다. 그런 다음 셀에 단락과 실행을 추가하여 텍스트를 보관합니다.
 
-## 4단계: 테이블 자동 맞춤
-테이블의 형식을 올바르게 지정하기 위해 자동 조정을 테이블에 적용할 수 있습니다. 다음 코드를 사용하세요.
+## 4단계: 세포 복제
+
+셀 추가 프로세스의 속도를 높이기 위해 기존 셀을 복제할 수 있습니다.
 
 ```csharp
-table. AutoFit(AutoFitBehavior.FixedColumnWidths);
+// 그런 다음 테이블의 다른 셀과 행에 대해 프로세스를 반복합니다.
+// 기존 셀과 행을 복제하여 작업 속도를 높일 수도 있습니다.
+row.AppendChild(cell.Clone(false));
+row.LastCell.AppendChild(new Paragraph(doc));
+row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
 ```
 
-이 코드 줄은 고정된 열 너비를 기준으로 자동 맞춤을 적용합니다.
+이 코드는 기존 셀을 복제하여 행에 추가합니다. 그런 다음 새 셀에 단락과 실행을 추가합니다.
 
-## 5단계: 등록
+## 5단계: 자동 맞춤 설정 적용
 
-  수정된 문서
-마지막으로 테이블을 직접 삽입하여 수정된 문서를 저장해야 합니다. 다음 코드를 사용하세요.
+마지막으로 열의 너비가 고정되도록 테이블에 자동 맞춤 설정을 적용해 보겠습니다.
+
+```csharp
+// 이제 자동 맞춤 설정을 적용할 수 있습니다.
+table.AutoFit(AutoFitBehavior.FixedColumnWidths);
+```
+
+## 6단계: 문서 저장
+
+테이블이 완전히 설정되었으면 문서를 저장할 차례입니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ```
 
-출력 문서의 올바른 경로와 파일 이름을 지정해야 합니다.
-
-### .NET용 Aspose.Words를 사용하여 테이블 직접 삽입의 샘플 소스 코드 
-
-```csharp
-	// 문서 디렉터리 경로
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	// 테이블 객체를 생성하는 것부터 시작합니다. 문서 객체를 전달해야 합니다.
-	//각 노드의 생성자에. 이는 우리가 생성하는 모든 노드가 속해야 하기 때문입니다.
-	// 어떤 문서에.
-	Table table = new Table(doc);
-	doc.FirstSection.Body.AppendChild(table);
-	// 여기서 EnacheMinimum을 호출하여 행과 셀을 생성할 수 있습니다. 이 방법이 사용됩니다
-	// 지정된 노드가 유효한지 확인합니다. 이 경우 유효한 테이블에는 최소한 하나의 행과 하나의 셀이 있어야 합니다.
-	// 대신 행과 테이블 생성을 직접 처리하겠습니다.
-	// 알고리즘 내부에 테이블을 생성하는 경우 이것이 가장 좋은 방법입니다.
-	Row row = new Row(doc);
-	row.RowFormat.AllowBreakAcrossPages = true;
-	table.AppendChild(row);
-	// 이제 자동 맞춤 설정을 적용할 수 있습니다.
-	table.AutoFit(AutoFitBehavior.FixedColumnWidths);
-	Cell cell = new Cell(doc);
-	cell.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-	cell.CellFormat.Width = 80;
-	cell.AppendChild(new Paragraph(doc));
-	cell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 1 Text"));
-	row.AppendChild(cell);
-	// 그런 다음 테이블의 다른 셀과 행에 대해 프로세스를 반복합니다.
-	// 기존 셀과 행을 복제하여 작업 속도를 높일 수도 있습니다.
-	row.AppendChild(cell.Clone(false));
-	row.LastCell.AppendChild(new Paragraph(doc));
-	row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
-	doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
-```
+이 코드는 테이블이 삽입된 문서를 저장합니다.
 
 ## 결론
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에 표를 직접 삽입하는 방법을 배웠습니다. 이 단계별 가이드를 따르고 제공된 C# 코드를 구현하면 프로그래밍 방식으로 Word 문서에 테이블을 직접 삽입할 수 있습니다. 이 기능을 사용하면 특정 요구 사항에 따라 테이블을 만들고 사용자 지정할 수 있습니다.
+
+축하해요! .NET용 Aspose.Words를 사용하여 Word 문서에 표를 직접 삽입하는 데 성공했습니다. 이 프로세스를 사용하면 복잡한 테이블을 프로그래밍 방식으로 생성하여 문서 자동화 작업을 훨씬 쉽게 만들 수 있습니다. 보고서, 송장 또는 기타 문서 유형을 생성하는 경우 테이블 조작 방법을 이해하는 것이 중요한 기술입니다.
+
+## FAQ
+
+### .NET용 Aspose.Words를 어떻게 다운로드할 수 있나요?
+ .NET용 Aspose.Words를 다운로드할 수 있습니다.[다운로드 페이지](https://releases.aspose.com/words/net/).
+
+### 구매하기 전에 Aspose.Words for .NET을 사용해 볼 수 있나요?
+ 예, 요청하실 수 있습니다[무료 시험판](https://releases.aspose.com/) 구매하기 전에 라이브러리를 평가하십시오.
+
+### .NET용 Aspose.Words를 어떻게 구매하나요?
+ .NET용 Aspose.Words를 다음에서 구입할 수 있습니다.[구매 페이지](https://purchase.aspose.com/buy).
+
+### .NET용 Aspose.Words에 대한 설명서는 어디서 찾을 수 있나요?
+ 문서를 사용할 수 있습니다[여기](https://reference.aspose.com/words/net/).
+
+### .NET용 Aspose.Words를 사용하는 동안 지원이 필요하면 어떻게 하나요?
+ 지원을 받으려면 다음을 방문하세요.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).

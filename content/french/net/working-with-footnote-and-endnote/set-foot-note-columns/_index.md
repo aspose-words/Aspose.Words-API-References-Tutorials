@@ -69,7 +69,7 @@ R : Oui, il est possible de spécifier un nombre différent de colonnes pour dif
 
 #### Q : Les colonnes de notes de bas de page sont-elles prises en compte lors de la conversion vers d'autres formats de fichier ?
 
-R : Oui, lors de la conversion de documents contenant des colonnes de notes de bas de page vers d'autres formats de fichiers, Aspose.Words conserve la disposition des colonnes. Cela garantit une conversion précise et fidèle du document original.
+: Oui, lors de la conversion de documents contenant des colonnes de notes de bas de page vers d'autres formats de fichiers, Aspose.Words conserve la disposition des colonnes. Cela garantit une conversion précise et fidèle du document original.
 
 #### Q : Puis-je personnaliser l’apparence des colonnes de notes de bas de page ?
 

@@ -104,11 +104,11 @@ Ya, Aspose.Words for Java kompatibel dengan pustaka Java lainnya, sehingga serba
 
 ### Q2: Apakah tersedia versi uji coba Aspose.Words untuk Java?
 
- Ya, Anda dapat mengakses uji coba gratis Aspose.Words untuk Java[Di Sini](https://releases.aspose.com/).
+ Ya, Anda dapat mengakses uji coba gratis Aspose.Words untuk Java.[Di Sini](https://releases.aspose.com/).
 
 ### Q3: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk Java?
 
- Anda bisa mendapatkan lisensi sementara untuk Aspose.Words untuk Java[Di Sini](https://purchase.aspose.com/temporary-license/).
+ Anda bisa mendapatkan lisensi sementara untuk Aspose.Words untuk Java.[Di Sini](https://purchase.aspose.com/temporary-license/).
 
 ### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words untuk Java?
 

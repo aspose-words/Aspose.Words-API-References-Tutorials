@@ -7,7 +7,7 @@ type: docs
 weight: 12
 url: /pt/java/document-security/document-encryption-decryption/
 ---
-Certamente! Aqui está um guia passo a passo sobre como realizar a criptografia e descriptografia de documentos usando Aspose.Words for Java.
+Certamente! Aqui está um guia passo a passo sobre como realizar a criptografia e descriptografia de documentos usando Aspose.Words para Java.
 
 # Criptografia e descriptografia de documentos com Aspose.Words para Java
 

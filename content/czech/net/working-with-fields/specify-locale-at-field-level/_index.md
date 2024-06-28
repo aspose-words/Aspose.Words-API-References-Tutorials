@@ -72,4 +72,4 @@ Toto byl příklad zdrojového kódu pro specifikaci lokalizace na úrovni pole 
 
 #### Otázka: Jak mohu získat aktuálně používané národní prostředí pro pole v Aspose.Words pro .NET?
 
- A: Chcete-li získat aktuálně používané národní prostředí pro pole v Aspose.Words pro .NET, můžete použít`Field.LocaleId` vlastnictví. To vám umožní získat identifikátor národního prostředí spojený s polem.
+ A: Chcete-li získat aktuálně používané národní prostředí pro pole v Aspose.Words pro .NET, můžete použít`Field.LocaleId`vlastnictví. To vám umožní získat identifikátor národního prostředí spojený s polem.

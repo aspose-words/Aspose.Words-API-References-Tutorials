@@ -19,14 +19,14 @@ Door deze tutorials te volgen, kunt u de functies voor tabelmanipulatie van Aspo
 | [Tabel automatisch aanpassen aan inhoud](./auto-fit-table-to-contents/) | Leer hoe u een tabel automatisch aan de inhoud ervan in een Word-document kunt aanpassen met Aspose.Words voor .NET. |
 | [Volledige tabel klonen](./clone-complete-table/) | Leer hoe u een volledige tabel naar een Word-document kunt klonen met Aspose.Words voor .NET. |
 | [Index vinden](./finding-index/) | Leer hoe u tabel-, rij- en celindexen kunt vinden in een Word-document met Aspose.Words voor .NET. |
-| [Tabel rechtstreeks invoegen](./insert-table-directly/) | Leer hoe u een tabel rechtstreeks in een Word-document kunt invoegen met Aspose.Words voor .NET. |
+| [Tabel rechtstreeks invoegen](./insert-table-directly/) | Leer hoe u tabellen rechtstreeks in Word-documenten kunt invoegen met Aspose.Words voor .NET. Volg onze gedetailleerde, stapsgewijze handleiding om uw documentcreatie te stroomlijnen. |
 | [Tabel invoegen vanuit HTML](./insert-table-from-html/) | Leer hoe u een tabel uit HTML invoegt in een Word-document met Aspose.Words voor .NET. |
 | [Maak een eenvoudige tabel](./create-simple-table/) | Leer hoe u een eenvoudige tabel in een Word-document kunt maken met Aspose.Words voor .NET. |
 | [Opgemaakte tabel](./formatted-table/) | Leer hoe u een opgemaakte tabel in een Word-document maakt met Aspose.Words voor .NET. |
 | [Geneste tabel](./nested-table/) | Leer hoe u een geneste tabel in een Word-document maakt met Aspose.Words voor .NET. |
 | [Combineer rijen](./combine-rows/) | Leer hoe u tabelrijen in een Word-document combineert met Aspose.Words voor .NET. |
 | [Tabel splitsen](./split-table/) | Leer hoe u een tabel in een Word-document kunt splitsen met Aspose.Words voor .NET. |
-| [Rijopmaak Schakel het verdelen over pagina's uit](./row-format-disable-break-across-pages/) | Leer hoe u regeleinde voor een tabel op meerdere pagina's in een Word-document kunt uitschakelen met Aspose.Words voor .NET. |
+| [Rijopmaak Schakel het splitsen van pagina's uit](./row-format-disable-break-across-pages/) | Leer hoe u regeleinde voor een tabel op meerdere pagina's in een Word-document kunt uitschakelen met Aspose.Words voor .NET. |
 | [Houd de tafel bij elkaar](./keep-table-together/) | Leer hoe u een tabel bij elkaar houdt in een Word-document met Aspose.Words voor .NET. |
 | [Verticaal samenvoegen](./vertical-merge/) | Leer hoe u cellen in een tabel in een Word-document verticaal kunt samenvoegen met Aspose.Words voor .NET. |
 | [Horizontaal samenvoegen](./horizontal-merge/) | Leer hoe u cellen in een Word-tabel horizontaal samenvoegt met Aspose.Words voor .NET. |

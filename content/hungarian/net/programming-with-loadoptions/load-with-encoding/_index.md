@@ -67,7 +67,7 @@ V: Természetesen! Az Aspose.Words különféle kódolásokat támogat, és kiv�
 
 #### K: Hogyan segíthet a helyes kódolás megadása a C#-alkalmazásomnak?
 
-V: A helyes kódolás megadása biztosítja, hogy C#-alkalmazása pontosan tudja értelmezni és feldolgozni a szöveges dokumentumokat, megelőzve a karakterkódolással kapcsolatos problémákat és biztosítva az adatok integritását.
+V: A helyes kódolás megadása biztosítja, hogy C#-alkalmazása pontosan tudja értelmezni és feldolgozni a szöveges dokumentumokat, megelőzve a karakterkódolási problémákat és biztosítva az adatok integritását.
 
 #### K: Az Aspose.Words támogat más típusú dokumentumokat a szöveges fájlok mellett?
 

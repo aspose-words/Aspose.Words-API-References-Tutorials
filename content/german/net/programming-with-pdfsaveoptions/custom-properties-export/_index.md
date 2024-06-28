@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## Schritt 2: Benutzerdefinierte Eigenschaften hinzufügen
- Fügen Sie als Nächstes die gewünschten benutzerdefinierten Eigenschaften hinzu. Um beispielsweise eine „Company“-Eigenschaft mit dem Wert „Aspose“ hinzuzufügen, verwenden Sie die`Add` Methode der CustomDocumentProperties-Sammlung:
+ Fügen Sie als Nächstes die gewünschten benutzerdefinierten Eigenschaften hinzu. Um beispielsweise eine „Company“-Eigenschaft mit dem Wert „Apose“ hinzuzufügen, verwenden Sie die`Add` Methode der CustomDocumentProperties-Sammlung:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ A: Um die benutzerdefinierten Eigenschaften eines Dokuments mit Aspose.Words fü
 
  Erstellen Sie eine Instanz von`Document` Klasse.
 
- Fügen Sie die gewünschten benutzerdefinierten Eigenschaften mit hinzu`CustomDocumentProperties` Sammlung. Verwenden Sie zum Beispiel die`Add` -Methode zum Hinzufügen einer „Company“-Eigenschaft mit dem Wert „Aspose“.
+ Fügen Sie die gewünschten benutzerdefinierten Eigenschaften mit hinzu`CustomDocumentProperties` Sammlung. Verwenden Sie zum Beispiel die`Add` -Methode zum Hinzufügen einer „Company“-Eigenschaft mit dem Wert „Apose“.
 
  Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und geben Sie an, wie benutzerdefinierte Eigenschaften mithilfe der exportiert werden`CustomPropertiesExport` Eigentum. Der`PdfCustomPropertiesExport.Standard` value exportiert benutzerdefinierte Eigenschaften gemäß den Standardeinstellungen.
 

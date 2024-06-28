@@ -126,4 +126,4 @@ hyphenation_options.consecutive_hyphen_limit = 2
 
 ### Πού μπορώ να έχω πρόσβαση στην τεκμηρίωση Aspose.Words for Python;
 
- Μπορείτε να αποκτήσετε πρόσβαση στην τεκμηρίωση του API στη διεύθυνση[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+Μπορείτε να αποκτήσετε πρόσβαση στην τεκμηρίωση του API στη διεύθυνση[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

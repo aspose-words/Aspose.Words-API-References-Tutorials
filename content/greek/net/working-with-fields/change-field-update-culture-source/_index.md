@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 #### Ε: Πώς μπορώ να καθορίσω μια συγκεκριμένη κουλτούρα για την ενημέρωση πεδίων στο Aspose.Words για .NET;
 
-Α: Για να καθορίσετε μια συγκεκριμένη κουλτούρα για την ενημέρωση πεδίων στο Aspose.Words για .NET, μπορείτε να χρησιμοποιήσετε το`Document.FieldOptions.FieldUpdateCultureInfo` ιδιοκτησία και ορίστε το`CultureInfo` αντικείμενο που αντιστοιχεί στον επιθυμητό πολιτισμό. Για παράδειγμα, μπορείτε να χρησιμοποιήσετε`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` για να προσδιορίσει τη γαλλική (Γαλλία) κουλτούρα.
+ Α: Για να καθορίσετε μια συγκεκριμένη κουλτούρα για την ενημέρωση πεδίων στο Aspose.Words για .NET, μπορείτε να χρησιμοποιήσετε το`Document.FieldOptions.FieldUpdateCultureInfo` ιδιοκτησία και ορίστε το`CultureInfo` αντικείμενο που αντιστοιχεί στον επιθυμητό πολιτισμό. Για παράδειγμα, μπορείτε να χρησιμοποιήσετε`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` για να προσδιορίσει τη γαλλική (Γαλλία) κουλτούρα.
 
 #### Ε: Είναι δυνατόν να απενεργοποιήσετε την αυτόματη ενημέρωση πεδίων στο Aspose.Words για .NET;
 

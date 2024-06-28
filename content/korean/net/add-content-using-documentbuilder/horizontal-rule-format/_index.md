@@ -2,93 +2,98 @@
 title: Word 문서의 수평 규칙 형식
 linktitle: Word 문서의 수평 규칙 형식
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에서 가로 규칙의 형식을 지정하는 방법을 알아보세요. 단계별 가이드.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에 사용자 정의 가능한 가로 규칙을 삽입하는 방법을 알아보세요. 문서 자동화를 강화하세요.
 type: docs
 weight: 10
 url: /ko/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
-이 포괄적인 예에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 수평선의 형식을 지정하는 방법을 배웁니다. 우리는 프로세스를 안내하고 필요한 C# 코드 조각을 제공할 것입니다. 이 가이드가 끝나면 수평선의 정렬, 너비, 높이, 색상 및 기타 속성을 사용자 정의할 수 있습니다.
+## 소개
+
+.NET 개발 영역에서 Word 문서를 프로그래밍 방식으로 조작하고 서식을 지정하는 것은 어려운 작업이 될 수 있습니다. 다행스럽게도 Aspose.Words for .NET은 개발자가 쉽게 문서 생성, 편집 및 관리를 자동화할 수 있는 강력한 솔루션을 제공합니다. 이 기사에서는 필수 기능 중 하나인 Word 문서에 수평선을 삽입하는 방법에 대해 자세히 설명합니다. 숙련된 개발자이든 Aspose.Words를 처음 시작하든 관계없이 이 기능을 익히면 문서 생성 프로세스가 향상됩니다.
 
 ## 전제조건
-시작하기 전에 다음 필수 구성 요소가 있는지 확인하세요.
-- 시스템에 설치된 .NET 라이브러리용 Aspose.Words.
 
-## 1단계: DocumentBuilder 만들기 및 수평선 삽입
-시작하려면 DocumentBuilder 개체를 만들고 InsertHorizontalRule 메서드를 사용하여 수평선을 삽입합니다.
+.NET용 Aspose.Words를 사용하여 수평 규칙을 구현하기 전에 다음 전제 조건이 있는지 확인하세요.
+
+- Visual Studio: .NET 개발용 Visual Studio IDE를 설치합니다.
+- .NET용 Aspose.Words: 다음에서 .NET용 Aspose.Words를 다운로드하여 설치하세요.[여기](https://releases.aspose.com/words/net/).
+- 기본 C# 지식: C# 프로그래밍 언어 기본 사항에 익숙합니다.
+-  DocumentBuilder 클래스:`DocumentBuilder` 문서 조작을 위한 Aspose.Words의 클래스입니다.
+
+## 네임스페이스 가져오기
+
+시작하려면 C# 프로젝트에서 필요한 네임스페이스를 가져옵니다.
 
 ```csharp
+using Aspose.Words;
+using System.Drawing;
+```
+
+이러한 네임스페이스는 문서 조작을 위한 Aspose.Words 클래스와 색상 처리를 위한 표준 .NET 클래스에 대한 액세스를 제공합니다.
+
+.NET용 Aspose.Words를 사용하여 Word 문서에 수평선을 추가하는 과정을 포괄적인 단계로 나누어 보겠습니다.
+
+## 1단계: DocumentBuilder 초기화 및 디렉터리 설정
+
+ 먼저,`DocumentBuilder` 개체를 선택하고 문서가 저장될 디렉터리 경로를 설정합니다.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 DocumentBuilder builder = new DocumentBuilder();
+```
+
+## 2단계: 수평선 삽입
+
+ 사용`InsertHorizontalRule()` 의 방법`DocumentBuilder` 수평선을 추가하는 클래스입니다.
+
+```csharp
 Shape shape = builder.InsertHorizontalRule();
 ```
 
-## 2단계: 수평 규칙 형식에 액세스
-다음으로 Shape 개체의 HorizonRuleFormat 속성에 액세스하여 서식 지정 옵션을 검색합니다.
+## 3단계: 수평선 형식 사용자 정의
+
+ 액세스`HorizontalRuleFormat` 수평선의 모양을 사용자 정의하려면 삽입된 도형의 속성을 사용하세요.
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-```
-
-## 3단계: 서식 옵션 사용자 정의
-이제 수평선에 대한 다양한 서식 옵션을 사용자 정의할 수 있습니다. 예를 들어 정렬, 너비, 높이, 색상 및 음영을 조정할 수 있습니다.
-
-```csharp
 horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
 horizontalRuleFormat.WidthPercent = 70;
 horizontalRuleFormat.Height = 3;
 horizontalRuleFormat.Color = Color.Blue;
 horizontalRuleFormat.NoShade = true;
 ```
+
+- 정렬: 수평선(`HorizontalRuleAlignment.Center` 이 예에서는).
+- WidthPercent: 수평선의 너비를 페이지 너비의 백분율(이 예에서는 70%)로 설정합니다.
+- 높이: 수평선의 높이를 포인트 단위로 정의합니다(이 예에서는 3포인트).
+- 색상: 수평선의 색상을 설정합니다(`Color.Blue` 이 예에서는).
+- NoShade: 수평선에 그림자(`true` 이 예에서는).
 
 ## 4단계: 문서 저장
-수평선의 서식을 지정한 후 Document 개체의 Save 메서드를 사용하여 문서를 파일에 저장합니다.
+
+ 마지막으로 다음을 사용하여 수정된 문서를 저장합니다.`Save` 의 방법`Document` 물체.
 
 ```csharp
-builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
+builder.Document.Save(dataDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
-
-### .NET용 Aspose.Words를 사용하는 수평 규칙 형식의 예제 소스 코드
-다음은 .NET용 Aspose.Words를 사용하여 수평선 형식을 지정하기 위한 전체 소스 코드입니다.
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder();
-
-Shape shape = builder.InsertHorizontalRule();
-
-HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
-horizontalRuleFormat.WidthPercent = 70;
-horizontalRuleFormat.Height = 3;
-horizontalRuleFormat.Color = Color.Blue;
-horizontalRuleFormat.NoShade = true;
-
-builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
-```
-
-특정 요구 사항에 따라 코드를 조정하고 필요에 따라 추가 기능을 사용하여 코드를 향상시키는 것을 잊지 마십시오.
 
 ## 결론
-축하해요! .NET용 Aspose.Words를 사용하여 Word 문서에서 수평선 형식을 지정하는 방법을 성공적으로 배웠습니다. 단계별 가이드를 따르고 제공된 소스 코드를 활용하면 이제 가로 규칙의 모양을 사용자 정의하여 문서의 시각적 레이아웃을 향상시킬 수 있습니다.
 
-가로 눈금자에 대해 원하는 스타일과 효과를 얻으려면 다양한 서식 옵션을 실험해 보세요.
+Aspose.Words for .NET을 사용하여 Word 문서에 가로 규칙 삽입을 마스터하면 문서 자동화 기능이 향상됩니다. Aspose.Words의 유연성과 성능을 활용하여 개발자는 문서 생성 및 서식 지정 프로세스를 효율적으로 간소화할 수 있습니다.
 
-### Word 문서의 수평선 형식에 대한 FAQ
+## FAQ
 
-#### Q: 수평선에 다른 색상을 적용할 수 있나요?
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 .NET 애플리케이션에서 프로그래밍 방식으로 Word 문서를 작업하기 위한 강력한 라이브러리입니다.
 
-답: 물론이죠! Aspose.Words for .NET을 사용하면 Color 속성을 원하는 색상 값으로 설정하여 수평선의 색상을 쉽게 사용자 정의할 수 있습니다. 이를 통해 수평선을 문서의 전체 디자인과 일치시킬 수 있습니다.
+### .NET용 Aspose.Words를 어떻게 다운로드할 수 있나요?
+ .NET용 Aspose.Words는 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
 
-#### Q: 수평선의 너비와 높이를 조정할 수 있나요?
+### Aspose.Words에서 수평선의 모양을 사용자 정의할 수 있습니까?
+예, Aspose.Words를 사용하여 가로 규칙의 정렬, 너비, 높이, 색상 및 음영과 같은 다양한 측면을 사용자 정의할 수 있습니다.
 
-A: 예, 수평선의 너비와 높이를 완전히 제어할 수 있습니다. WidthPercent 및 Height 속성을 수정하면 수평선에 대해 원하는 치수를 얻을 수 있습니다.
+### Aspose.Words는 기업 수준의 문서 처리에 적합합니까?
+예, Aspose.Words는 강력한 문서 조작 기능으로 인해 기업 환경에서 널리 사용됩니다.
 
-#### Q: 문서 내 수평선 정렬을 변경할 수 있나요?
-
-답: 물론이죠! Aspose.Words for .NET을 사용하면 Alignment 속성을 사용하여 수평선 정렬을 지정할 수 있습니다. 가운데, 왼쪽, 오른쪽, 양쪽 맞춤 등 다양한 옵션 중에서 선택할 수 있습니다.
-
-#### Q: 수평선에 음영이나 배경색을 적용할 수 있나요?
-
-A: 네, 수평선에 음영이나 배경색을 추가할 수 있습니다. 기본적으로 NoShade 속성은 true로 설정되어 있지만 false로 설정하고 적절한 방법을 사용하여 음영을 정의할 수 있습니다.
-
-#### Q: 단일 문서에 여러 개의 가로줄을 삽입할 수 있나요?
-
-답: 물론이죠! Aspose.Words for .NET을 사용하여 Word 문서에 여러 개의 수평선을 삽입할 수 있습니다. 필요한 만큼 수평 규칙을 추가하려면 튜토리얼의 단계를 반복하세요.
+### .NET용 Aspose.Words에 대한 지원은 어디서 받을 수 있나요?
+ 지원 및 커뮤니티 참여를 원하시면 다음을 방문하세요.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).

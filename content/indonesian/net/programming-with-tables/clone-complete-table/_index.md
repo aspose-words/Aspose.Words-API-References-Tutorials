@@ -65,10 +65,10 @@ Pastikan untuk menentukan jalur dan nama file yang benar untuk dokumen keluaran.
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//Kloning tabel dan masukkan ke dalam dokumen setelah aslinya.
+	// Kloning tabel dan masukkan ke dalam dokumen setelah aslinya.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Sisipkan paragraf kosong di antara dua tabel,
+	//Sisipkan paragraf kosong di antara dua tabel,
 	// atau mereka akan digabungkan menjadi satu setelah disimpan, ini ada hubungannya dengan validasi dokumen.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

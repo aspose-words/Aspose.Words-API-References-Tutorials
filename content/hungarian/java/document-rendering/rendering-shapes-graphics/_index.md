@@ -129,7 +129,7 @@ Az Aspose.Words for Java sokoldalú, és különféle helyzetekben használható
 
 ## Hibaelhárítási tippek
 
-Ha problémákat tapasztal az alakzatokkal és grafikákkal végzett munka során, az Aspose.Words for Java dokumentációjában vagy közösségi fórumain talál megoldást. A gyakori problémák közé tartozik a képformátum-kompatibilitás és a betűtípusokkal kapcsolatos problémák.
+Ha problémákat tapasztal az alakzatokkal és grafikákkal végzett munka során, megoldásokért tekintse meg az Aspose.Words for Java dokumentációját vagy közösségi fórumait. A gyakori problémák közé tartozik a képformátum-kompatibilitás és a betűtípusokkal kapcsolatos problémák.
 
 ## Következtetés
 

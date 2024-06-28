@@ -66,7 +66,7 @@ In diesem Tutorial haben wir die Funktionalität „Nach Seitenbereich“ von As
 
 Die Verwendung der Funktion „Nach Seitenbereich“ kann hilfreich sein, wenn Sie mit bestimmten Abschnitten eines Dokuments arbeiten müssen, z. B. beim Extrahieren von Kapiteln, Abschnitten oder ausgewählten Seiten. Aspose.Words für .NET bietet eine zuverlässige und unkomplizierte Lösung für die Seitenextraktion, sodass Sie Dokumente effektiver verwalten und bearbeiten können.
 
-Entdecken Sie die weiteren leistungsstarken Funktionen von Aspose.Words für .NET, um Ihre Möglichkeiten zur Dokumentenverarbeitung zu verbessern und Ihren Arbeitsablauf zu optimieren.
+Entdecken Sie gerne weitere leistungsstarke Funktionen von Aspose.Words für .NET, um Ihre Dokumentverarbeitungsmöglichkeiten zu verbessern und Ihren Arbeitsablauf zu optimieren.
 
 ### FAQs
 
@@ -74,7 +74,7 @@ Entdecken Sie die weiteren leistungsstarken Funktionen von Aspose.Words für .NE
  Ja, Sie können nicht aufeinanderfolgende Seiten extrahieren, indem Sie den gewünschten Seitenbereich angeben. Wenn Sie beispielsweise die Seiten 1, 3 und 5 extrahieren möchten, können Sie den Seitenbereich auf festlegen`1,3,5` im`ExtractPages` Funktion.
 
 #### F2: Ist es möglich, einen bestimmten Seitenbereich aus mehreren Dokumenten gleichzeitig zu extrahieren?
-Ja, Sie können die Funktion „Nach Seitenbereich“ auf mehrere Dokumente anwenden. Laden Sie einfach jedes Dokument einzeln und extrahieren Sie den gewünschten Seitenbereich mit`ExtractPages` Funktion. Anschließend können Sie die extrahierten Seiten aus jedem Dokument separat speichern.
+ Ja, Sie können die Funktion „Nach Seitenbereich“ auf mehrere Dokumente anwenden. Laden Sie einfach jedes Dokument einzeln und extrahieren Sie den gewünschten Seitenbereich mit`ExtractPages` Funktion. Anschließend können Sie die extrahierten Seiten aus jedem Dokument separat speichern.
 
 #### F3: Kann ich Seitenbereiche aus verschlüsselten oder passwortgeschützten Word-Dokumenten extrahieren?
 Nein, die Funktion „Nach Seitenbereich“ funktioniert bei ungeschützten Word-Dokumenten. Wenn ein Dokument verschlüsselt oder passwortgeschützt ist, müssen Sie das richtige Passwort angeben und den Schutz entfernen, bevor Sie den gewünschten Seitenbereich extrahieren.

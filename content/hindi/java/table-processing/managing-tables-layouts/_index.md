@@ -30,7 +30,7 @@ url: /hi/java/table-processing/managing-tables-layouts/
 // एक नया दस्तावेज़ बनाएं
 Document doc = new Document();
 
-// 3 पंक्तियों और 4 स्तंभों वाली एक तालिका बनाएं
+// 3 पंक्तियों और 4 स्तंभों वाली एक तालिका बनाएं।
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

@@ -44,7 +44,7 @@ shape = doc.pages[0].shapes.add_remote_image("https://contoh.com/image.jpg", 100
 
 ## Menyesuaikan Ukuran dan Penempatan Gambar
 
-Mengontrol ukuran dan penempatan gambar memastikan gambar melengkapi konten Anda dengan mulus.
+Mengontrol ukuran dan penempatan gambar memastikan gambar melengkapi konten Anda dengan lancar.
 
 ```python
 # Set image size

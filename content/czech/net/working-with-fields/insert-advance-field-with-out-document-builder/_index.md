@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Krok 3: Vložení rozšířeného pole
+## Krok 3: Vložení rozšířených polí
 
  Používáme`AppendField()` metoda pro vložení rozšířeného pole do odstavce.
 

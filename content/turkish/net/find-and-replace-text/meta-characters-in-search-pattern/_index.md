@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Adım 4: Belgeye sayfa sonu ekleme
 
- Başka bir meta karakterin kullanımını göstermek için belgeye bir sayfa sonu ekleyeceğiz.`InsertBreak` yöntemi ile`BreakType.PageBreak` parametre. İlk önce imleci`DocumentBuilder` belgenin sonuna sayfa sonunu ve yeni bir metin satırını ekliyoruz:
+ Başka bir meta karakterin kullanımını göstermek için belgeye bir sayfa sonu ekleyeceğiz.`InsertBreak` yöntemi ile`BreakType.PageBreak` parametreler. İlk önce imleci`DocumentBuilder` belgenin sonuna sayfa sonunu ve yeni bir metin satırını ekliyoruz:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -110,7 +110,7 @@ Bu makalede, Aspose.Words for .NET arama modelinde meta karakterlerin nasıl kul
 
 #### S: Aspose.Words for .NET'teki Arama Desenindeki Meta Karakterler özelliği nedir?
 
-C: Aspose.Words for .NET'teki Arama Desenindeki Meta Karakterler özelliği, Word belgelerinde gelişmiş aramalar ve değiştirmeler gerçekleştirmek için özel meta karakterler kullanmanıza olanak tanır. Bu meta karakterler, arama düzeninizde paragraf sonlarını, bölüm sonlarını, sayfa sonlarını ve diğer özel öğeleri temsil etmenize olanak tanır.
+C: Aspose.Words for .NET'teki Arama Şeklindeki Meta Karakterler özelliği, Word belgelerinde gelişmiş aramalar ve değiştirmeler gerçekleştirmek için özel meta karakterler kullanmanıza olanak tanır. Bu meta karakterler, arama düzeninizde paragraf sonlarını, bölüm sonlarını, sayfa sonlarını ve diğer özel öğeleri temsil etmenize olanak tanır.
 
 #### S: Aspose.Words for .NET'te yeni bir belge nasıl oluşturulur?
 
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### S: Aspose.Words for .NET kullanarak bir belgeye sayfa sonu nasıl eklenir?
 
-C: Başka bir meta karakterin kullanımını göstermek için belgeye bir sayfa sonu ekleyeceğiz.`InsertBreak` yöntemi ile`BreakType.PageBreak` parametre. İlk önce imleci`DocumentBuilder` belgenin sonuna sayfa sonunu ve yeni bir metin satırını ekliyoruz:
+C: Başka bir meta karakterin kullanımını göstermek için belgeye bir sayfa sonu ekleyeceğiz.`InsertBreak` yöntemi ile`BreakType.PageBreak` parametreler. İlk önce imleci`DocumentBuilder` belgenin sonuna sayfa sonunu ve yeni bir metin satırını ekliyoruz:
 
 ```csharp
 builder. MoveToDocumentEnd();

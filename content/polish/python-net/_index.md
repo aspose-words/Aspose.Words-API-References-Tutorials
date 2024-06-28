@@ -11,7 +11,7 @@ Aspose.Words dla Pythona oferuje szereg samouczków umożliwiających programist
 
 ## Interfejs API dokumentów w języku Python umożliwiający bezproblemowe zarządzanie dokumentami
 
-Poznaj możliwości interfejsu API dokumentów w języku Python dzięki samouczkom Aspose.Words. Programiści nauczą się programowo tworzyć, modyfikować i zarządzać dokumentami programu Word. Interfejs API umożliwia dostosowywanie formatowania, wstawiania treści i łączenia dokumentów, usprawniając zadania związane z zarządzaniem dokumentami.
+Poznaj możliwości interfejsu API dokumentów w języku Python dzięki samouczkom Aspose.Words. Programiści nauczą się programowo tworzyć, modyfikować i zarządzać dokumentami programu Word. Interfejs API umożliwia dostosowywanie formatowania, wstawiania treści i łączenia dokumentów, a także zadania związane z zarządzaniem strumieniowym dokumentami.
 
 ## Zautomatyzuj przetwarzanie dokumentów za pomocą języka Python
 

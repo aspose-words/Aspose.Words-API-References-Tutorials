@@ -77,13 +77,13 @@ Bu kodla Aspose.Words for .NET'i kullanarak paragraflarınıza farklı formatlar
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde paragraf formatlama özelliğini kullanma sürecini inceledik. Özetlenen adımları izleyerek paragraflarınızı etkili bir şekilde biçimlendirebilir, hizalamasını, girintilerini ve aralıklarını ayarlayarak görsel olarak çekici ve iyi yapılandırılmış belgeler oluşturabilirsiniz.
+Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde paragraf formatlama özelliğini kullanma sürecini inceledik. Özetlenen adımları izleyerek, görsel olarak çekici ve iyi yapılandırılmış belgeler oluşturmak için paragraflarınızı etkili bir şekilde biçimlendirebilir, hizalamasını, girintilerini ve aralıklarını ayarlayabilirsiniz.
 
 ### SSS
 
 #### S: Word belgesinde paragraf biçimlendirmesi nedir?
 
-C: Paragraf biçimlendirmesi, bir Word belgesindeki tek tek paragrafların görsel olarak özelleştirilmesi anlamına gelir. İçeriğin görünümünü ve okunabilirliğini iyileştirmek için hizalama, girinti, satır aralığı ve diğer stilistik öğelerde ayarlamalar içerir.
+C: Paragraf biçimlendirmesi, bir Word belgesindeki tek tek paragrafların görsel olarak özelleştirilmesi anlamına gelir. İçeriğin görünümünü ve okunabilirliğini iyileştirmek için hizalama, girinti, satır aralığı ve diğer biçimsel öğelerde ayarlamalar içerir.
 
 #### S: Aynı belgedeki çeşitli paragraflara farklı biçimlendirme uygulayabilir miyim?
 

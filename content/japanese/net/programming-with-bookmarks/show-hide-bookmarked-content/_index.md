@@ -2,176 +2,156 @@
 title: Word 文書内のブックマークされたコンテンツを表示する非表示にする
 linktitle: Word 文書内のブックマークされたコンテンツを表示する非表示にする
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内のブックマーク コンテンツを表示または非表示にする方法を学習します。
+description: この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内のブックマークされたコンテンツを動的に表示または非表示にする方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-この記事では、Aspose.Words for .NET ライブラリのブックマークされたコンテンツの表示/非表示関数の使用方法を理解するために、上記の C# ソース コードを調べます。この機能を使用すると、データを結合するときに、特定の条件に基づいて Word 文書のブックマークの内容を表示または非表示にすることができます。
+## 導入
+
+ちょっと、そこ！特定の条件に基づいて、Word 文書内の特定のコンテンツの表示/非表示を制御したいと考えたことはありますか? Aspose.Words for .NET を使用すると、わずか数行のコードでブックマークされたコンテンツを動的に表示または非表示にすることができます。このチュートリアルでは、コードの各部分を理解できるように、プロセスを段階的に説明します。最終的には、Word 文書内のブックマークを操作するプロになれるでしょう。始めましょう！
 
 ## 前提条件
 
-- C# 言語の基本的な知識。
-- Aspose.Words ライブラリがインストールされた .NET 開発環境。
+チュートリアルに入る前に、必要なものがすべて揃っていることを確認してください。
 
-## ステップ 1: ブックマークを取得する
+1. C# の基本知識: C# の構文と概念に精通している必要があります。
+2.  Aspose.Words for .NET: ダウンロードしてください[ここ](https://releases.aspose.com/words/net/) 。購入する準備ができていない場合は、以下から始めることができます。[無料トライアル](https://releases.aspose.com/).
+3. Visual Studio: 最新バージョンであればどれでも動作しますが、最新バージョンを使用することをお勧めします。
+4. .NET Framework: マシンにインストールされていることを確認してください。
 
-私たちが使用するのは、`Bookmarks`ドキュメント範囲のプロパティを使用して、コンテンツを表示または非表示にする特定のブックマークを取得します。
+始める準備はできていますか?素晴らしい！必要な名前空間をインポートすることから始めましょう。
+
+## 名前空間のインポート
+
+Aspose.Words for .NET を使用するには、必要な名前空間をインポートする必要があります。このステップにより、使用するすべてのクラスとメソッドに確実にアクセスできるようになります。
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## ステップ 2: 差し込みフィールドの挿入
+これらの名前空間は、Word 文書を操作し、そのコンテンツを操作するために重要です。
 
-ドキュメントビルダーを使用します`DocumentBuilder`必要な差し込みフィールドを挿入します。これらの差し込みフィールドは、ブックマークの値に応じてブックマークの内容を表示または非表示にする条件を設定します。`showHide`変数：
+## ステップ 1: ドキュメントの設定
+
+まず、新しい Word ドキュメントとドキュメント ビルダーを作成しましょう。ドキュメント ビルダーを使用すると、ドキュメント内のコンテンツを簡単に追加および操作できます。
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## ステップ 3: ブックマークのコンテンツを移動する
+このステップでは、新しいドキュメントとドキュメント ビルダーを初期化します。これにより、さらなる操作のための環境がセットアップされます。
 
-ブックマークの内容をループして移動し、ブックマークが表示されるようにします。
+## ステップ 2: ブックマークしたコンテンツを追加する
 
-ブックマークの前にあります。これは、指定された条件に基づいてコンテンツの表示または非表示を制御します。
+次に、ドキュメントにコンテンツを追加し、その周りにブックマークを作成します。このブックマークは、コンテンツの識別と操作に役立ちます。
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ここでは、ブックマークされたコンテンツの前後にテキストを追加します。の`StartBookmark`そして`EndBookmark`メソッドはブックマークの境界を定義します。
+
+## ステップ 3: 条件付きフィールドの挿入
+
+ブックマークされたコンテンツの表示を制御するには、条件付きフィールドを使用します。このフィールドは条件をチェックし、それに応じてコンテンツを表示または非表示にします。
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+このステップでは、ブックマークの値をチェックする IF フィールドを挿入します。値が「true」の場合は「Visible」と表示されます。それ以外の場合は、「非表示」と表示されます。
+
+## ステップ 4: ノードの再配置
+
+次に、条件付きロジックがブックマークされたコンテンツに正しく適用されるようにノードを再配置する必要があります。
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## ステップ 4: ブックマークの残りのコンテンツを移動する
-
-ブックマークの終了ノードを挿入ポイントとして使用して、ブックマークの残りのコンテンツをブックマークの後に移動します。
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## ステップ 5: マージの実行
+ここでは、ノードを移動して、条件がブックマークされたコンテンツを適切に包含していることを確認します。
 
-私たちが使用するのは、`Execute`書類の方法`s `差し込み印刷` object to execute the merge using the bookmark name and the value of the `showHide` 変数:
+## ステップ 5: 差し込み印刷を実行する
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### Aspose.Words for .NET を使用したブックマークされたコンテンツの表示、非表示のソース コードの例
-
-Aspose.Words for .NET を使用してブックマーク コンテンツの表示または非表示を示すソース コードの完全な例を次に示します。
+最後に、差し込み印刷を実行してブックマークの値を設定し、コンテンツを表示するか非表示にするかを決定します。
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MERGEFIELD ブックマーク}" = "true" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+このステップでは、ブックマークの値を「true」に設定します。これにより、条件に基づいてコンテンツが表示されるようになります。
+
+## ステップ 6: ドキュメントを保存する
+
+すべての操作が完了したら、最後のステップは、変更したドキュメントを保存することです。
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+ここでは、変更を示すわかりやすいファイル名を付けてドキュメントを保存します。
 
 ## 結論
 
-この記事では、C# ソース コードを調べて、Aspose.Words for .NET のブックマークされたコンテンツの表示/非表示機能の使用方法を理解しました。データを結合するときに、特定の条件に基づいてブックマークの内容を表示または非表示にするためのステップバイステップのガイドに従いました。
+以上です！ Aspose.Words for .NET を使用して Word 文書内のブックマークされたコンテンツを表示または非表示にする方法を学習しました。このチュートリアルでは、文書の作成、ブックマークの追加、条件フィールドの挿入、ノードの再配置、差し込み印刷の実行について説明しました。 Aspose.Words には豊富な機能が用意されているので、ぜひ試してみてください。[APIドキュメント](https://reference.aspose.com/words/net/)より高度な機能を実現します。
 
-### Word 文書でブックマークされたコンテンツを表示、非表示にするに関する FAQ
+## よくある質問
 
-#### Q: 同じドキュメント内の複数のブックマークに同じ条件を使用できますか?
+### 1. Aspose.Words for .NET とは何ですか?
 
-A: はい、同じドキュメント内の複数のブックマークに同じ条件を使用できます。ブックマークごとに手順 2 ～ 5 を繰り返し、ブックマーク名とオプションでブックマークの値を調整するだけです。`showhide`必要に応じて変数を指定します。
+Aspose.Words for .NET は、開発者が Word ドキュメントをプログラムで作成、変更、変換できるようにする強力なライブラリです。ドキュメント自動化タスクに広く使用されています。
 
-#### Q: ブックマークのコンテンツを表示または非表示にする条件を追加するにはどうすればよいですか?
+### 2. Aspose.Words for .NET は無料で使用できますか?
 
- A: さらに条件を追加するには、次のような論理演算子を使用できます。`AND`そして`OR`手順 2 で差し込みフィールドを挿入するコードに追加の条件を追加します。次のコードの条件を編集して、追加の条件を追加します。
+ Aspose.Words for .NET を試すことができます。[無料トライアル](https://releases.aspose.com/)。長期間使用するには、ライセンスを購入する必要があります。
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. ブックマークの他のプロパティを変更するにはどうすればよいですか?
 
-#### Q: Aspose.Words for .NET を使用して Word 文書内のブックマークを削除するにはどうすればよいですか?
+ Aspose.Words を使用すると、ブックマークのテキストや場所など、ブックマークのさまざまなプロパティを操作できます。を参照してください。[APIドキュメント](https://reference.aspose.com/words/net/)詳細な手順については、
 
- A: Aspose.Words for .NET を使用して Word 文書内のブックマークを削除するには、`Remove`からのメソッド`Bookmarks`ドキュメント範囲のコレクション。特定のブックマークを削除するサンプル コードは次のとおりです。
+### 4. Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+にアクセスしてサポートを受けることができます。[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8).
 
-#### Q: Aspose.Words ライブラリは無料ですか?
+### 5. Aspose.Words for .NET を使用して他の種類のコンテンツを操作できますか?
 
- A: Aspose.Words ライブラリは商用ライブラリであり、プロジェクトで使用するには有効なライセンスが必要です。確認してもいい[Aspose.Words for .NET API リファレンス](https://reference.aspose.com/words/net/)ライセンスのオプションと価格について詳しくは、こちらをご覧ください。
-
-#### Q: .NET の Word ドキュメントでのワード処理に利用できるライブラリは他にもありますか?
-
-A: はい、Open XML SDK や GemBox.Document など、.NET の Word ドキュメントでのワード処理に使用できるライブラリは他にもあります。特定のニーズや好みに基づいて、Aspose.Words の代替としてこれらのライブラリを探索できます。
+はい、Aspose.Words for .NET は、テキスト、画像、表などを含むさまざまな種類のコンテンツ操作をサポートしています。

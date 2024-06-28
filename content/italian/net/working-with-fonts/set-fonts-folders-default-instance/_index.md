@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: imposta la cartella dei caratteri predefinita
-Quindi puoi impostare la cartella dei caratteri predefinita utilizzando il file`FontSettings.DefaultInstance` classe e il`SetFontsFolder()` metodo. Specifica il percorso della cartella dei caratteri che desideri utilizzare come cartella predefinita.
+ Quindi puoi impostare la cartella dei caratteri predefinita utilizzando il file`FontSettings.DefaultInstance` classe e il`SetFontsFolder()`metodo. Specifica il percorso della cartella dei caratteri che desideri utilizzare come cartella predefinita.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

@@ -57,7 +57,7 @@ Aspose.Words for .NET で追加のテキスト配置機能を使用するため�
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", saveOptions);
 
 ```
-これらの手順に従うことで、Aspose.Words for .NET を使用して Word 文書を PDF に変換する際に、追加のテキストの位置を簡単に制御できます。
+これらの手順に従うことで、Aspose.Words for .NET を使用して Word 文書を PDF に変換するときに、追加のテキストの位置を簡単に制御できます。
 
 
 ## 結論

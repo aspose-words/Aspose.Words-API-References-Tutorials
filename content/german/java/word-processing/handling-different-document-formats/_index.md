@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Tabellen erstellen
 
 ```java
-// Erstellen Sie eine Tabelle mit 3 Zeilen und 4 Spalten
+// Erstellen Sie eine Tabelle mit 3 Zeilen und 4 Spalten.
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

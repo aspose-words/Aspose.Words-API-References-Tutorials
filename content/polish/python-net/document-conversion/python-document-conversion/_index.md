@@ -207,7 +207,7 @@ for filename in input_files:
 
 Przez
 
- łącząc moc Pythona i Aspose.Words, możesz zautomatyzować masową konwersję dokumentów, zwiększając produktywność i efektywność.
+ Łącząc możliwości Pythona i Aspose.Words, możesz zautomatyzować masową konwersję dokumentów, zwiększając produktywność i efektywność.
 
 #### Przykład:
 

@@ -43,7 +43,7 @@ options.setIgnoreFormatting(true);
 docA.compare(docB, "user", new Date(), options);
 ```
 
-## शीर्षलेख और पाद लेख पर ध्यान न दें
+## शीर्ष लेख और पाद लेख पर ध्यान न दें
 
  हेडर और फ़ूटर को तुलना से बाहर करने के लिए, सेट करें`setIgnoreHeadersAndFooters` विकल्प।
 

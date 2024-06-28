@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Etapa 2: Carregar os Documentos de Origem e Destino
 
- Em seguida, você precisa carregar os documentos de origem e destino usando o Aspose.Words`Document` aula. Atualize os nomes dos arquivos no`Document` construtor de acordo com os nomes dos seus documentos.
+Em seguida, você precisa carregar os documentos de origem e destino usando Aspose.Words.`Document` aula. Atualize os nomes dos arquivos no`Document` construtor de acordo com os nomes dos seus documentos.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Etapa 4: definir a formatação de parágrafo "Manter com o próximo" para o documento de origem
 
-Para manter os parágrafos do documento de origem juntos, você pode percorrer cada parágrafo do documento e definir o`KeepWithNext`propriedade para`true`.
+ Para manter os parágrafos do documento de origem juntos, você pode percorrer cada parágrafo do documento e definir o`KeepWithNext`propriedade para`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

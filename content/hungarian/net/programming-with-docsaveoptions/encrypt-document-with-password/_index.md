@@ -83,4 +83,4 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 ## Következtetés
 
-Ebben az útmutatóban elmagyaráztuk, hogyan használhatja az Aspose.Words könyvtárat .NET-hez egy dokumentum jelszóval történő titkosításához a DocSaveOptions mentési beállításaival. A megadott lépések követésével és a mellékelt C# forráskód használatával könnyedén alkalmazhatja ezt a funkciót a C# alkalmazásban. A dokumentum jelszóval történő titkosítása garantálja annak bizalmas kezelését és biztonságát.
+Ebben az útmutatóban elmagyaráztuk, hogyan használhatja az Aspose.Words könyvtárat a .NET-hez egy dokumentum jelszóval történő titkosításához a DocSaveOptions mentési beállításaival. A megadott lépések követésével és a mellékelt C# forráskód használatával könnyedén alkalmazhatja ezt a funkciót a C# alkalmazásban. A dokumentum jelszóval történő titkosítása garantálja annak bizalmas kezelését és biztonságát.

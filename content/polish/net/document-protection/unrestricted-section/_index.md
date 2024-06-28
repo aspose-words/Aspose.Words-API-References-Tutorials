@@ -40,7 +40,7 @@ Pamiętaj, aby określić prawidłowy typ ochrony i ustawić żądane hasło.
 
 ## Krok 4: Wyłączenie ochrony dla określonej sekcji
 
-Domyślnie wszystkie sekcje są chronione, ale możesz selektywnie wyłączyć ochronę dla konkretnej sekcji, korzystając z właściwości ProtectedForForms obiektu Sekcja:
+Domyślnie chronione są wszystkie sekcje, ale można selektywnie wyłączyć ochronę konkretnej sekcji, korzystając z właściwości ProtectedForForms obiektu Sekcja:
 
 ```csharp
 doc.Sections[0].ProtectedForForms = false;

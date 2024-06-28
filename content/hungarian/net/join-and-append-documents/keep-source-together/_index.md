@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Töltse be a forrás- és céldokumentumot
 
- Ezután be kell töltenie a forrás- és céldokumentumot az Aspose.Words használatával`Document` osztály. Frissítse a fájlneveket a`Document` konstruktor a dokumentumnevek szerint.
+Ezután be kell töltenie a forrás- és céldokumentumot az Aspose.Words használatával.`Document` osztály. Frissítse a fájlneveket a`Document` konstruktor a dokumentumnevek szerint.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## 4. lépés: Állítsa be a "Keep with Next" bekezdésformázást a forrásdokumentumhoz
 
- forrásdokumentum bekezdéseinek egyben tartásához ismételheti a dokumentum egyes bekezdéseit, és beállíthatja a`KeepWithNext`tulajdonát`true`.
+ A forrásdokumentum bekezdéseinek egyben tartásához ismételheti a dokumentum egyes bekezdéseit, és beállíthatja a`KeepWithNext`tulajdonát`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Langkah 4: Tambahkan dokumen sumber ke dokumen tujuan
 
- Menggunakan`AppendDocument` metode dokumen tujuan untuk menambahkan dokumen sumber. Lulus`ImportFormatMode.KeepSourceFormatting` sebagai parameter kedua dan opsi format impor sebagai parameter ketiga.
+ Menggunakan`AppendDocument` metode dokumen tujuan untuk menambahkan dokumen sumber. Lulus`ImportFormatMode.KeepSourceFormatting`sebagai parameter kedua dan opsi format impor sebagai parameter ketiga.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## Langkah 5: Simpan dokumen tujuan
 
- Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
+Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

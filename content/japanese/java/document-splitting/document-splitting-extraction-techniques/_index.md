@@ -43,7 +43,7 @@ Document doc = new Document("input.docx");
 //文書をセクションに分割する
 SectionCollection sections = doc.getSections();
 
-//セクションを繰り返し処理し、別のファイルとして保存します
+//セクションを繰り返し処理し、個別のファイルとして保存します
 for (int i = 0; i < sections.getCount(); i++) {
     Document sectionDoc = new Document();
     sectionDoc.appendChild(sections.get(i).deepClone(true));

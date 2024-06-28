@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## 4단계: 단락 가져오기 및 추가
 
-원본 문서의 단락을 반복하고 다음을 사용하여 각 단락을 대상 문서로 가져옵니다.`importer`. 가져온 노드를 대상 문서의 본문에 추가합니다.
+ 원본 문서의 단락을 반복하고 다음을 사용하여 각 단락을 대상 문서로 가져옵니다.`importer`. 가져온 노드를 대상 문서의 본문에 추가합니다.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// 번호가 매겨진 단락을 가져올 때 소스 목록 형식을 유지합니다.
+	//번호가 매겨진 단락을 가져올 때 소스 목록 형식을 유지합니다.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

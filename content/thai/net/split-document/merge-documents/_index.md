@@ -2,110 +2,113 @@
 title: ผสานเอกสาร Word
 linktitle: รวมเอกสาร
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีผสานเอกสาร Word หลายชุดโดยใช้ Aspose.Words สำหรับ .NET API อันทรงพลังนี้ทำให้กระบวนการรวมเอกสารง่ายขึ้น ทำให้มีประสิทธิภาพและตรงไปตรงมา
+description: เรียนรู้วิธีผสานเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนที่ครอบคลุมนี้ เหมาะสำหรับการทำให้เวิร์กโฟลว์เอกสารของคุณเป็นแบบอัตโนมัติ
 type: docs
 weight: 10
 url: /th/net/split-document/merge-documents/
 ---
+## การแนะนำ
 
-ในบทช่วยสอนนี้ เราจะอธิบายวิธีการผสานเอกสาร Word หลายฉบับโดยใช้ฟีเจอร์ผสานเอกสารของ Aspose.Words สำหรับ .NET ทำตามขั้นตอนด้านล่างเพื่อทำความเข้าใจซอร์สโค้ดและรับเอกสารที่ผสานซึ่งมีเอกสารต้นฉบับทั้งหมด
+สวัสดี! เคยพบว่าตัวเองจำเป็นต้องรวมเอกสาร Word หลาย ๆ ไฟล์ให้เป็นไฟล์เดียวหรือไม่? ไม่ว่าคุณจะรวบรวมรายงาน รวบรวมโครงการ หรือเพียงแค่พยายามจัดระเบียบ การรวมเอกสารสามารถช่วยคุณประหยัดเวลาและความพยายามได้มาก ด้วย Aspose.Words สำหรับ .NET กระบวนการนี้กลายเป็นเรื่องง่าย ในบทช่วยสอนนี้ เราจะอธิบายวิธีการผสานเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET โดยแจกแจงรายละเอียดแต่ละขั้นตอนเพื่อให้คุณสามารถปฏิบัติตามได้อย่างง่ายดาย ในตอนท้าย คุณจะผสานเอกสารอย่างมืออาชีพ!
 
-## ขั้นตอนที่ 1: ค้นหาเอกสารที่จะรวม
+## ข้อกำหนดเบื้องต้น
 
-ก่อนที่จะรวมเอกสาร เราจำเป็นต้องค้นหาเอกสารต้นทางที่จะรวม มีวิธีดังนี้:
+ก่อนที่เราจะดำดิ่งลง มาตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
+
+1. ความรู้พื้นฐานของ C#: คุณควรจะคุ้นเคยกับไวยากรณ์และแนวคิดของ C#
+2.  Aspose.Words สำหรับ .NET: ดาวน์โหลด[ที่นี่](https://releases.aspose.com/words/net/) - หากคุณแค่เพียงสำรวจ คุณสามารถเริ่มต้นด้วย[ทดลองฟรี](https://releases.aspose.com/).
+3. Visual Studio: เวอร์ชันล่าสุดควรใช้งานได้ แต่แนะนำให้ใช้เวอร์ชันล่าสุด
+4. .NET Framework: ตรวจสอบให้แน่ใจว่าได้ติดตั้งไว้ในระบบของคุณแล้ว
+
+เอาล่ะ ตอนนี้เราได้จัดการข้อกำหนดเบื้องต้นแล้ว เรามาเข้าสู่ส่วนที่สนุกกันดีกว่า!
+
+## นำเข้าเนมสเปซ
+
+ก่อนอื่น เราต้องนำเข้าเนมสเปซที่จำเป็นเพื่อทำงานกับ Aspose.Words สิ่งนี้ทำให้เราสามารถเข้าถึงคลาสและวิธีการทั้งหมดที่เราต้องการ
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสาร
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// ค้นหาเอกสารที่จะรวม
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-.GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.LowCode;
 ```
 
-## ขั้นตอนที่ 2: รวมเอกสาร
+เนมสเปซเหล่านี้จำเป็นสำหรับการสร้างเอกสาร การจัดการ และการบันทึกในรูปแบบที่แตกต่างกัน
 
-ตอนนี้เราจะรวมเอกสารทีละฉบับเพื่อสร้างเอกสารที่ผสานกันในขั้นสุดท้าย มีวิธีดังนี้:
+## ขั้นตอนที่ 1: การตั้งค่าไดเร็กทอรีเอกสาร
 
-```csharp
-// เปิดส่วนแรกของเอกสารผลลัพธ์
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// สร้างเอกสารผลลัพธ์ใหม่
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// รวมเอกสารทีละรายการ
-foreach(FileSystemInfo documentPath in documentPaths)
-{
-if (documentPath.FullName == sourceDocumentPath)
-keep on going;
-
-mergedDocBuilder.MoveToDocumentEnd();
-mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-```
-
-### ตัวอย่างซอร์สโค้ดสำหรับผสานเอกสารโดยใช้ Aspose.Words สำหรับ .NET
-
-นี่คือซอร์สโค้ดที่สมบูรณ์สำหรับฟีเจอร์ผสานเอกสารของ Aspose.Words สำหรับ .NET:
+ก่อนที่เราจะเริ่มรวมเอกสาร เราจำเป็นต้องระบุไดเร็กทอรีที่เก็บเอกสารของเราก่อน ซึ่งจะช่วยให้ Aspose.Words ค้นหาไฟล์ที่เราต้องการรวม
 
 ```csharp
-// เส้นทางไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// ค้นหาเอกสารที่ใช้ในการรวม
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
-
-// เปิดส่วนแรกของเอกสารผลลัพธ์
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// สร้างเอกสารผลลัพธ์ใหม่
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// รวมส่วนเอกสารทีละส่วน
-foreach (FileSystemInfo documentPath in documentPaths)
-{
-	if (documentPath.FullName == sourceDocumentPath)
-		continue;
-
-	mergedDocBuilder.MoveToDocumentEnd();
-	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-	sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
+
+ ที่นี่เรากำหนดเส้นทางไปยังไดเร็กทอรีที่มีเอกสาร Word ของคุณอยู่ แทนที่`"YOUR DOCUMENT DIRECTORY"` กับเส้นทางที่แท้จริง
+
+## ขั้นตอนที่ 2: ผสานอย่างง่าย
+
+ มาเริ่มกันง่ายๆผสานกัน เราจะรวมเอกสารสองฉบับเป็นเอกสารเดียวโดยใช้`Merger.Merge` วิธี.
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
+```
+
+ ในขั้นตอนนี้เราจะรวมเข้าด้วยกัน`Document1.docx` และ`Document2.docx` ลงในไฟล์ใหม่ที่เรียกว่า`MergedDocument.docx`.
+
+## ขั้นตอนที่ 3: ผสานกับตัวเลือกการบันทึก
+
+บางครั้ง คุณอาจต้องการตั้งค่าตัวเลือกเฉพาะสำหรับเอกสารที่ผสาน เช่น การป้องกันด้วยรหัสผ่าน ต่อไปนี้คือวิธีที่คุณสามารถทำได้:
+
+```csharp
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" };
+Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
+```
+
+ข้อมูลโค้ดนี้จะรวมเอกสารเข้ากับการป้องกันด้วยรหัสผ่าน เพื่อให้มั่นใจว่าเอกสารขั้นสุดท้ายมีความปลอดภัย
+
+## ขั้นตอนที่ 4: การรวมและบันทึกเป็น PDF
+
+หากคุณต้องการรวมเอกสารและบันทึกผลลัพธ์เป็น PDF Aspose.Words จะทำให้เป็นเรื่องง่าย:
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
+```
+
+ ที่นี่เราผสานกัน`Document1.docx` และ`Document2.docx` และบันทึกผลลัพธ์เป็นไฟล์ PDF
+
+## ขั้นตอนที่ 5: สร้างอินสแตนซ์เอกสารจากเอกสารที่ผสาน
+
+บางครั้ง คุณอาจต้องการทำงานกับเอกสารที่ผสานเพิ่มเติมก่อนที่จะบันทึก คุณสามารถสร้าง`Document` อินสแตนซ์จากเอกสารที่รวม:
+
+```csharp
+Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
+doc.Save(dataDir + "MergedDocumentInstance.docx");
+```
+
+ ในขั้นตอนนี้ เราจะสร้าง a`Document` จากเอกสารที่รวมเข้าด้วยกัน ช่วยให้สามารถจัดการเพิ่มเติมได้ก่อนที่จะบันทึก
 
 ## บทสรุป
 
-ยินดีด้วย! คุณได้เรียนรู้วิธีผสานเอกสาร Word หลายชุดโดยใช้คุณสมบัติผสานเอกสารของ Aspose.Words สำหรับ .NET เมื่อปฏิบัติตามซอร์สโค้ดที่ให้มา คุณสามารถรวมเอกสารที่แยกจากกันเป็นเอกสารที่ผสานเป็นเอกสารเดียวได้ โดยยังคงรูปแบบของเอกสารต้นฉบับแต่ละฉบับไว้
+ และคุณก็ได้แล้ว! คุณได้เรียนรู้วิธีผสานเอกสาร Word โดยใช้ Aspose.Words for .NET บทช่วยสอนนี้ครอบคลุมการตั้งค่าสภาพแวดล้อมของคุณ ดำเนินการผสานอย่างง่าย ผสานกับตัวเลือกการบันทึก การแปลงเอกสารที่ผสานเป็น PDF และการสร้างอินสแตนซ์เอกสารจากเอกสารที่ผสาน Aspose.Words นำเสนอฟีเจอร์ที่หลากหลาย ดังนั้นอย่าลืมสำรวจดู[เอกสารประกอบ API](https://reference.aspose.com/words/net/) เพื่อปลดล็อกศักยภาพอันเต็มเปี่ยม
 
-การรวมเอกสารจะมีประโยชน์เมื่อคุณต้องการรวบรวมข้อมูลจากหลายแหล่ง หรือสร้างเอกสารที่รวมเป็นหนึ่งเดียวจากแต่ละส่วน Aspose.Words สำหรับ .NET มี API อันทรงพลังที่ทำให้กระบวนการรวมเอกสารง่ายขึ้น ทำให้มีประสิทธิภาพและตรงไปตรงมา
+## คำถามที่พบบ่อย
 
-สำรวจคุณสมบัติอื่นๆ ที่นำเสนอโดย Aspose.Words สำหรับ .NET ได้ตามสบาย เพื่อปรับปรุงความสามารถในการประมวลผลเอกสารของคุณและปรับปรุงขั้นตอนการทำงานของคุณ
+### 1. Aspose.Words สำหรับ .NET คืออะไร
 
-### คำถามที่พบบ่อย
+Aspose.Words สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้นักพัฒนาสามารถสร้าง จัดการ และแปลงเอกสาร Word โดยทางโปรแกรมได้ เหมาะอย่างยิ่งสำหรับการทำงานที่เกี่ยวข้องกับเอกสารโดยอัตโนมัติ
 
-#### ฉันจะรวมเอกสารที่มีรูปแบบต่างกันได้อย่างไร
+### 2. ฉันสามารถใช้ Aspose.Words สำหรับ .NET ได้ฟรีหรือไม่
 
- เมื่อรวมเอกสาร Aspose.Words สำหรับ .NET มีตัวเลือกในการรักษาการจัดรูปแบบของเอกสารต้นฉบับแต่ละฉบับ โดยใช้`ImportFormatMode.KeepSourceFormatting` ตัวเลือก เอกสารที่ผสานจะคงรูปแบบของเอกสารต้นฉบับไว้ หากคุณต้องการใช้การจัดรูปแบบที่สอดคล้องกันทั่วทั้งเอกสารที่ผสาน คุณสามารถแก้ไขการจัดรูปแบบได้โดยใช้ Aspose.Words API หลังจากผสานเอกสารแล้ว
+ คุณสามารถลองใช้ Aspose.Words สำหรับ .NET โดยใช้ไฟล์[ทดลองฟรี](https://releases.aspose.com/)- สำหรับการใช้งานระยะยาว คุณจะต้องซื้อใบอนุญาต
 
-#### ฉันสามารถรวมเอกสารในรูปแบบต่างๆ ได้หรือไม่
+### 3. ฉันจะจัดการกับการจัดรูปแบบที่แตกต่างกันระหว่างการรวมได้อย่างไร
 
-ใช่ Aspose.Words สำหรับ .NET รองรับการรวมเอกสารในรูปแบบต่างๆ รวมถึง DOCX, DOC, RTF และอื่นๆ คุณสามารถโหลดเอกสารที่มีรูปแบบต่างๆ ลงใน Aspose.Words API และรวมเอกสารเหล่านั้นให้เป็นเอกสารเดียวได้ โดยไม่คำนึงถึงรูปแบบดั้งเดิมของเอกสารเหล่านั้น
+ Aspose.Words มีโหมดรูปแบบการผสานที่หลากหลายเช่น`KeepSourceFormatting` และ`MergeFormatting` - อ้างถึง[เอกสารประกอบ API](https://reference.aspose.com/words/net/) สำหรับคำแนะนำโดยละเอียด
 
-#### ฉันสามารถรวมเอกสารที่มีโครงสร้างที่ซับซ้อน เช่น ตารางและรูปภาพได้หรือไม่
+### 4. ฉันจะรับการสนับสนุนสำหรับ Aspose.Words สำหรับ .NET ได้อย่างไร
 
-อย่างแน่นอน! Aspose.Words สำหรับ .NET สามารถรวมเอกสารที่มีโครงสร้างที่ซับซ้อน รวมถึงตาราง รูปภาพ ส่วนหัว ส่วนท้าย และอื่นๆ API จัดการกระบวนการผสานโดยยังคงรักษาความสมบูรณ์และเค้าโครงของเนื้อหาในแต่ละเอกสาร
+คุณสามารถรับการสนับสนุนได้โดยไปที่[กำหนดฟอรั่มการสนับสนุน](https://forum.aspose.com/c/words/8).
 
-#### เป็นไปได้หรือไม่ที่จะรวมเอกสารที่มีการวางแนวหน้าหรือขนาดต่างกัน
+### 5. ฉันสามารถรวมรูปแบบไฟล์อื่นเข้ากับ Aspose.Words สำหรับ .NET ได้หรือไม่
 
-ใช่ Aspose.Words สำหรับ .NET จัดการเอกสารที่มีการวางแนวหน้าหรือขนาดต่างกันในระหว่างกระบวนการรวม เอกสารที่ผสานที่ได้จะรองรับการวางแนวหน้าและขนาดของเอกสารต้นฉบับที่แตกต่างกัน
+ใช่ Aspose.Words รองรับการรวมไฟล์รูปแบบต่างๆ รวมถึง DOCX, PDF และ HTML

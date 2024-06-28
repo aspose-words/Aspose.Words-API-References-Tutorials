@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## चरण 3: स्रोत दस्तावेज़ के लिए पृष्ठ सेटिंग सेट करें
 
- उचित निरंतरता और क्रमांकन सुनिश्चित करने के लिए स्रोत दस्तावेज़ की पृष्ठ सेटअप सेटिंग्स समायोजित करें। इस उदाहरण में, हमने अनुभाग को प्रारंभ पर सेट किया है`SectionStart.Continuous` और पृष्ठ क्रमांकन पुनः प्रारंभ करें. हम यह भी सुनिश्चित करते हैं कि पृष्ठ की चौड़ाई, ऊंचाई और अभिविन्यास गंतव्य दस्तावेज़ के अंतिम अनुभाग से मेल खाते हों।
+ उचित निरंतरता और क्रमांकन सुनिश्चित करने के लिए स्रोत दस्तावेज़ की पृष्ठ सेटअप सेटिंग्स समायोजित करें। इस उदाहरण में, हमने अनुभाग को प्रारंभ पर सेट किया है`SectionStart.Continuous`और पृष्ठ क्रमांकन पुनः प्रारंभ करें. हम यह भी सुनिश्चित करते हैं कि पृष्ठ की चौड़ाई, ऊंचाई और अभिविन्यास गंतव्य दस्तावेज़ के अंतिम अनुभाग से मेल खाते हों।
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## चरण 4: अनुच्छेद स्वरूपण को संशोधित करें
 
- उचित स्वरूपण बनाए रखने के लिए, स्रोत दस्तावेज़ में सभी अनुच्छेदों को पुनरावृत्त करें और सेट करें`KeepWithNext`संपत्ति को`true`यह सुनिश्चित करता है कि जोड़ने की प्रक्रिया के दौरान पैराग्राफ एक साथ रहें।
+ उचित स्वरूपण बनाए रखने के लिए, स्रोत दस्तावेज़ में सभी अनुच्छेदों को पुनरावृत्त करें और सेट करें`KeepWithNext`संपत्ति को`true`. यह सुनिश्चित करता है कि जोड़ने की प्रक्रिया के दौरान पैराग्राफ एक साथ रहें।
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## चरण 6: गंतव्य दस्तावेज़ सहेजें
 
- अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
+अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 	// स्रोत दस्तावेज़ के आरंभ में पृष्ठ क्रमांकन पुनः आरंभ करें।
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// यह सुनिश्चित करने के लिए कि ऐसा तब न हो जब स्रोत दस्तावेज़ में अलग-अलग पेज सेटअप सेटिंग्स हों, सुनिश्चित करें
+	//यह सुनिश्चित करने के लिए कि ऐसा तब न हो जब स्रोत दस्तावेज़ में अलग-अलग पेज सेटअप सेटिंग्स हों, सुनिश्चित करें
 	// गंतव्य दस्तावेज़ के अंतिम अनुभाग के बीच सेटिंग्स समान हैं।
 	// यदि स्रोत दस्तावेज़ में आगे निरंतर अनुभाग हैं,
-	//इसे उन अनुभागों के लिए दोहराने की आवश्यकता होगी।
+	// इसे उन अनुभागों के लिए दोहराने की आवश्यकता होगी।
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

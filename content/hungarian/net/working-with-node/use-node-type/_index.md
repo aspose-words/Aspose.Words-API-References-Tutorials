@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-node/use-node-type/
 ---
 
-Íme egy lépésről lépésre bemutatott útmutató a C# forráskód leírásához, amely bemutatja, hogyan kell használni a csomópont típusú funkciókat az Aspose.Words for .NET-hez.
+Az alábbiakban egy lépésről lépésre bemutatjuk a C# forráskódot, amely bemutatja, hogyan kell használni a csomópont típusú funkciókat az Aspose.Words for .NET-hez.
 
 ## 1. lépés: Importálja a szükséges referenciákat
 Mielőtt elkezdené, győződjön meg arról, hogy importálta az Aspose.Words for .NET használatához szükséges hivatkozásokat a projektbe. Ez magában foglalja az Aspose.Words könyvtár importálását és a szükséges névterek hozzáadását a forrásfájlhoz.

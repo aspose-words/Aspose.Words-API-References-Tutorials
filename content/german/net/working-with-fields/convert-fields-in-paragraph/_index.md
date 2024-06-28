@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-Dieser Code verwendet eine Kombination von LINQ-Methoden, um Felder im letzten Absatz des Dokuments herauszufiltern und sie dann durch Aufrufen von in einfachen Text umzuwandeln`Unlink()` Methode.
+ Dieser Code verwendet eine Kombination von LINQ-Methoden, um Felder im letzten Absatz des Dokuments herauszufiltern und sie dann durch Aufrufen von in einfachen Text umzuwandeln`Unlink()` Methode.
 
 ## Schritt 4: Speichern des geänderten Dokuments
 

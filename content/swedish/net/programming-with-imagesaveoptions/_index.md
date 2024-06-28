@@ -18,4 +18,4 @@ Handledningarna täcker också de grundläggande begreppen bildmanipulering, ink
 | [Få Tiff Page Range](./get-tiff-page-range/) | Lär dig hur du extraherar en rad TIFF-sidor med Aspose.Words för .NET. Komplett handledning för anpassade TIFF-filer. |
 | [Format 1Bpp Indexerad](./format-1bpp-indexed/) | Lär dig hur du formaterar bilder i 1 bpp indexerade med Aspose.Words för .NET. Komplett handledning för bilder med lågt färgdjup. |
 | [Hämta Jpeg-sidintervall](./get-jpeg-page-range/) | Lär dig hur du får en rad JPEG-sidor med Aspose.Words för .NET. Komplett handledning för att extrahera anpassade bilder. |
-| [Sidspara återuppringning](./page-saving-callback/) | Lär dig hur du anpassar spara dokumentsidor till bilder med Aspose.Words för .NET. |
+| [Sidspara Återuppringning](./page-saving-callback/) | Lär dig hur du anpassar spara dokumentsidor till bilder med Aspose.Words för .NET. |

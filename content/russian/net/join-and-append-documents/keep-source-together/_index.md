@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Шаг 2. Загрузите исходные и целевые документы
 
- Далее вам необходимо загрузить исходные и целевые документы с помощью Aspose.Words.`Document` сорт. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
+Далее вам необходимо загрузить исходные и целевые документы с помощью Aspose.Words.`Document` класс. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Шаг 4. Установите форматирование абзаца «Сохранить дальше» для исходного документа.
 
-Чтобы сохранить абзацы в исходном документе вместе, вы можете перебрать каждый абзац в документе и установить`KeepWithNext`собственность`true`.
+ Чтобы сохранить абзацы в исходном документе вместе, вы можете перебрать каждый абзац в документе и установить`KeepWithNext`собственность`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -55,7 +55,7 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 
 ## Шаг 5. Добавьте исходный документ в целевой документ
 
- Теперь вы можете добавить исходный документ к целевому документу, используя команду`AppendDocument` метод`Document` сорт.`ImportFormatMode.KeepSourceFormatting` Параметр гарантирует, что исходное форматирование сохраняется во время операции добавления.
+ Теперь вы можете добавить исходный документ к целевому документу, используя команду`AppendDocument` метод`Document` класс.`ImportFormatMode.KeepSourceFormatting` Параметр гарантирует, что исходное форматирование сохраняется во время операции добавления.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Шаг 6: Сохраните окончательный документ
 
- Наконец, сохраните объединенный документ с включенной функцией «Сохранить исходный код» с помощью`Save` метод`Document` сорт.
+ Наконец, сохраните объединенный документ с включенной функцией «Сохранить исходный код» с помощью`Save` метод`Document` класс.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");

@@ -1,6 +1,6 @@
 ---
-title: Konwertuj metapliki na format Svg
-linktitle: Konwertuj metapliki na format Svg
+title: Konwertuj metapliki na Svg
+linktitle: Konwertuj metapliki na Svg
 second_title: Aspose.Words API do przetwarzania dokumentów
 description: Przewodnik krok po kroku dotyczący konwersji metaplików do formatu SVG podczas konwersji dokumentu do HTML za pomocą Aspose.Words dla .NET.
 type: docs

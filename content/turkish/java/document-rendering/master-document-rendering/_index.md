@@ -53,10 +53,10 @@ Document doc = new Document("https://example.com/document.docx");
 Belge yüklendikten sonra Aspose.Words'ün zengin API'sini kullanarak içeriğine, paragraflarına, tablolarına, resimlerine ve diğer öğelerine erişebilirsiniz.
 
 ```java
-// Paragraflara erişme
+// Paragraflara erişim
 NodeCollection<Paragraph> paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
 
-// Tablolara erişme
+// Tablolara erişim
 NodeCollection<Table> tables = doc.getChildNodes(NodeType.TABLE, true);
 
 // Resimlere erişme
@@ -169,7 +169,7 @@ doc.save("output.png", imageOptions);
 
 ## Gelişmiş Rendering Teknikleri
 
-Aspose.Words, bir belgenin belirli bölümlerini işlemek için, büyük belgeler veya özel gereksinimler için yararlı olabilecek gelişmiş teknikler sağlar.
+Aspose.Words, bir belgenin belirli bölümlerini işlemek için büyük belgeler veya özel gereksinimler için yararlı olabilecek gelişmiş teknikler sağlar.
 
 ### Belirli Belge Sayfalarını Oluşturma
 

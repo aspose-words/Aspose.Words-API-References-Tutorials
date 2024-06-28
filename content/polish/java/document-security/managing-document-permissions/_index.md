@@ -10,7 +10,7 @@ url: /pl/java/document-security/managing-document-permissions/
 
 ## Wstęp
 
-dzisiejszym cyfrowym świecie zarządzanie dokumentami jest krytycznym aspektem przepływu pracy w każdej organizacji. Zapewnienie właściwym osobom dostępu do właściwych dokumentów ma kluczowe znaczenie dla utrzymania bezpieczeństwa i wydajności. Aspose.Words for Java to potężny interfejs API języka Java, który umożliwia łatwe manipulowanie dokumentami programu Word i zarządzanie nimi. W tym przewodniku krok po kroku odkryjemy, jak używać Aspose.Words dla Java do skutecznego zarządzania uprawnieniami do dokumentów. Niezależnie od tego, czy jesteś programistą chcącym udoskonalić swoje umiejętności, czy profesjonalistą biznesowym pragnącym usprawnić procesy zarządzania dokumentami, w tym przewodniku znajdziesz wszystko, czego potrzebujesz.
+dzisiejszym cyfrowym świecie zarządzanie dokumentami jest krytycznym aspektem przepływu pracy w każdej organizacji. Zapewnienie właściwym osobom dostępu do właściwych dokumentów ma kluczowe znaczenie dla utrzymania bezpieczeństwa i wydajności. Aspose.Words for Java to potężny interfejs API języka Java, który umożliwia łatwe manipulowanie dokumentami programu Word i zarządzanie nimi. W tym przewodniku krok po kroku odkryjemy, jak używać Aspose.Words dla Java do skutecznego zarządzania uprawnieniami do dokumentów. Niezależnie od tego, czy jesteś programistą chcącym udoskonalić swoje umiejętności, czy profesjonalistą biznesowym pragnącym usprawnić procesy zarządzania dokumentami, w tym przewodniku znajdziesz wszystko.
 
 ## Pierwsze kroki z Aspose.Words dla Java
 
@@ -40,7 +40,7 @@ Teraz, gdy znasz już podstawy, przejdźmy do ustawiania uprawnień do dokument�
 
 1. Otwórz dokument: Załaduj dokument programu Word za pomocą Aspose.Words dla Java.
 
-2. Zdefiniuj kontrolę dostępu: Użyj Aspose.Words for Java, aby określić, którzy użytkownicy lub grupy mogą uzyskać dostęp do dokumentu i jakie czynności mogą wykonywać, takie jak czytanie, edytowanie lub drukowanie.
+2. Zdefiniuj kontrolę dostępu: Użyj Aspose.Words for Java, aby określić, którzy użytkownicy lub grupy mogą uzyskać dostęp do dokumentu i jakie działania mogą wykonywać, takie jak czytanie, edytowanie lub drukowanie.
 
 3. Zastosuj ochronę dokumentów: W razie potrzeby zastosuj ochronę dokumentów za pomocą hasła, aby ograniczyć dostęp.
 
@@ -102,4 +102,4 @@ Zarządzanie uprawnieniami do dokumentów ma kluczowe znaczenie dla zachowania p
 
 Teraz, gdy masz już solidną wiedzę na temat zarządzania uprawnieniami do dokumentów przy użyciu Aspose.Words dla Java, czas zastosować tę wiedzę w praktyce. Usprawnij procesy zarządzania dokumentami i z łatwością chroń swoje dane.
 
-Pamiętaj, że bezpieczeństwo dokumentów to proces ciągły, więc zachowaj czujność i korzystaj z potężnych funkcji oferowanych przez Aspose.Words dla Java, aby chronić swoje cenne dokumenty.
+Pamiętaj, że bezpieczeństwo dokumentów to ciągły proces, więc zachowaj czujność i korzystaj z potężnych funkcji oferowanych przez Aspose.Words dla Java, aby chronić swoje cenne dokumenty.

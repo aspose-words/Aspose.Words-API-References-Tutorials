@@ -2,80 +2,116 @@
 title: Définir les paramètres de secours des polices
 linktitle: Définir les paramètres de secours des polices
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment définir les paramètres de substitution de polices dans Aspose.Words for .NET et personnaliser la substitution de polices dans vos documents Word.
+description: Découvrez comment configurer les paramètres de secours des polices dans Aspose.Words pour .NET. Ce guide complet garantit que tous les caractères de vos documents sont affichés correctement.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-font-fallback-settings/
 ---
-Dans ce didacticiel, nous allons vous montrer comment définir les paramètres de substitution de police dans un document Word à l'aide d'Aspose.Words pour .NET. Les paramètres de substitution de polices vous permettent de spécifier les polices de remplacement à utiliser lorsque les polices spécifiées ne sont pas disponibles.
+
+Lorsque vous travaillez avec des documents contenant divers éléments de texte, tels que différentes langues ou caractères spéciaux, il est crucial de garantir que ces éléments s'affichent correctement. Aspose.Words for .NET offre une fonctionnalité puissante appelée Paramètres de secours des polices, qui aide à définir des règles de substitution des polices lorsque la police d'origine ne prend pas en charge certains caractères. Dans ce guide, nous explorerons comment configurer les paramètres de secours des polices à l'aide d'Aspose.Words pour .NET dans un didacticiel étape par étape.
 
 ## Conditions préalables
-Avant de commencer, assurez-vous de disposer des éléments suivants :
-- Une connaissance pratique du langage de programmation C#
-- La bibliothèque Aspose.Words pour .NET installée dans votre projet
+
+Avant de plonger dans le didacticiel, assurez-vous que les conditions préalables suivantes sont remplies :
+
+- Connaissance de base de C# : Familiarité avec le langage de programmation C# et le framework .NET.
+-  Aspose.Words pour .NET : téléchargez et installez à partir du[lien de téléchargement](https://releases.aspose.com/words/net/).
+- Environnement de développement : une configuration comme Visual Studio pour écrire et exécuter votre code.
+-  Exemple de document : ayez un exemple de document (par exemple,`Rendering.docx`) prêt à être testé.
+- Règles de secours des polices XML : préparez un fichier XML définissant les règles de secours des polices.
+
+## Importer des espaces de noms
+
+Pour utiliser Aspose.Words, vous devez importer les espaces de noms nécessaires. Cela permet d'accéder à diverses classes et méthodes requises pour le traitement des documents.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
+```
 
 ## Étape 1 : Définir le répertoire des documents
- Commencez par définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
+
+Tout d’abord, définissez le répertoire dans lequel votre document est stocké. Ceci est essentiel pour localiser et traiter votre document.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Étape 2 : Charger les paramètres de substitution de police
- Créez une instance du`FontSettings` classe et utiliser le`Load` méthode pour charger les paramètres de remplacement de police à partir d’un fichier XML. Le fichier XML spécifié doit contenir les règles de substitution de police à utiliser.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## Étape 3 : Appliquer les paramètres de substitution de police
- Associez les paramètres de substitution de police au document en les attribuant au`FontSettings` propriété.
-
-```csharp
-doc.FontSettings = fontSettings;
-```
-
-## Étape 4 : Enregistrez le document
- Enregistrez le document à l'aide du`Save` méthode du`Document` avec le chemin et le nom de fichier appropriés.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
-
-### Exemple de code source pour définir les paramètres de secours des polices à l'aide d'Aspose.Words for .NET 
-```csharp
-// Chemin d'accès à votre répertoire de documents
+// Le chemin d'accès au répertoire des documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Étape 2 : Charger le document
+
+ Chargez votre document dans un Aspose.Words`Document` objet. Cette étape vous permet de travailler avec le document par programmation.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Étape 3 : configurer les paramètres de police
+
+ Créer un nouveau`FontSettings` objet et chargez les paramètres de secours de la police à partir d’un fichier XML. Ce fichier XML contient les règles de repli des polices.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## Étape 4 : appliquer les paramètres de police au document
+
+ Attribuer le configuré`FontSettings`au document. Cela garantit que les règles de remplacement des polices sont appliquées lors du rendu du document.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Étape 5 : Enregistrez le document
+
+Enfin, enregistrez le document. Les paramètres de secours des polices seront utilisés lors de l’opération de sauvegarde pour garantir une substitution de police appropriée.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
+```
+
+## Fichier XML : règles de remplacement des polices
+
+Voici un exemple de ce à quoi devrait ressembler votre fichier XML définissant les règles de remplacement des polices :
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
 ```
 
 ## Conclusion
-Dans ce didacticiel, vous avez appris à définir les paramètres de substitution de police dans un document Word à l'aide d'Aspose.Words pour .NET. Expérimentez différentes règles de substitution de polices pour garantir la cohérence de votre document, même lorsque les polices spécifiées ne sont pas disponibles.
 
-### FAQ
+En suivant ces étapes, vous pouvez configurer et utiliser efficacement les paramètres de secours des polices dans Aspose.Words pour .NET. Cela garantit que vos documents affichent correctement tous les caractères, même si la police d'origine ne prend pas en charge certains caractères. La mise en œuvre de ces paramètres améliorera considérablement la qualité et la lisibilité de vos documents.
 
-#### Q : Comment puis-je définir les paramètres de substitution de police dans un document Word avec Aspose.Words ?
+## FAQ
 
-: Pour définir les paramètres de substitution de police dans un document Word avec Aspose.Words, vous pouvez utiliser l'API pour spécifier les polices de secours à utiliser lorsque les polices requises ne sont pas disponibles. Cela garantit une visualisation cohérente du texte, même sans les polices d'origine.
+### Q1 : Qu'est-ce que le remplacement des polices ?
 
-#### Q : Est-il possible de gérer les polices de secours lors du remplacement dans un document Word avec Aspose.Words ?
+Font Fallback est une fonctionnalité qui permet de remplacer des polices lorsque la police d'origine ne prend pas en charge certains caractères, garantissant ainsi un affichage correct de tous les éléments de texte.
 
-R : Oui, avec Aspose.Words, vous pouvez gérer les polices de secours lors d'une substitution dans un document Word. L'API vous permet de détecter les polices manquantes et de spécifier les polices de secours appropriées pour conserver une apparence de texte cohérente même lorsque des polices sont remplacées.
+### Q2 : Puis-je spécifier plusieurs polices de secours ?
 
-#### Q : Pourquoi est-il important de configurer correctement les paramètres de substitution de police dans un document Word ?
+Oui, vous pouvez spécifier plusieurs polices de secours dans les règles XML. Aspose.Words vérifiera chaque police dans l'ordre spécifié jusqu'à ce qu'il en trouve une qui prend en charge le caractère.
 
-R : Il est important de configurer correctement les paramètres de substitution de police dans un document Word pour maintenir l'intégrité visuelle du texte. En définissant les polices de secours appropriées avec Aspose.Words, vous vous assurez que le texte sera affiché de manière cohérente, même si les polices requises ne sont pas disponibles.
+### Q3 : Où puis-je télécharger Aspose.Words pour .NET ?
 
-#### Q : Comment puis-je détecter les polices manquantes lors d'un remplacement dans un document Word avec Aspose.Words ?
+ Vous pouvez le télécharger depuis le[Aspose la page de téléchargement](https://releases.aspose.com/words/net/).
 
-R : Aspose.Words vous permet de détecter les polices manquantes lors de la substitution dans un document Word à l'aide de l'API. Vous pouvez utiliser les méthodes fournies par Aspose.Words pour vérifier la disponibilité des polices requises et prendre les mesures appropriées en cas de polices manquantes.
+### Q4 : Comment créer le fichier XML pour les règles de remplacement des polices ?
 
-#### Q : La substitution de police affecte-t-elle la mise en page de mon document Word ?
+Le fichier XML peut être créé à l'aide de n'importe quel éditeur de texte. Il doit suivre la structure présentée dans l'exemple fourni dans ce didacticiel.
 
-R : La substitution de polices peut affecter la mise en page de votre document Word si les polices de secours ont des dimensions différentes de celles des polices d'origine. Cependant, en choisissant judicieusement les polices de secours et en configurant les paramètres de substitution de polices avec Aspose.Words, vous pouvez minimiser les impacts sur la mise en page.
+### Q5 : Existe-t-il une assistance disponible pour Aspose.Words ?
+
+ Oui, vous pouvez trouver de l'aide sur le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8).

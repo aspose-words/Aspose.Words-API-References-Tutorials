@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 
-tomto tutoriálu vás provedeme krok za krokem procesem nastavení systémových složek písem a vlastní složky při vykreslování dokumentu pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto kurzu budete vědět, jak určit více složek písem, včetně systémové složky a vlastní složky, které se mají použít při vykreslování dokumentů pomocí Aspose.Words for .NET.
+tomto tutoriálu vás provedeme krok za krokem procesem nastavení systémových složek písem a vlastní složky při vykreslování dokumentu pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete vědět, jak určit více složek písem, včetně systémové složky a vlastní složky, které se mají použít při vykreslování dokumentů pomocí Aspose.Words for .NET.
 
 ## Krok 1: Definujte adresář dokumentů
 Nejprve musíte nastavit cestu k adresáři dokumentů. Toto je umístění, kam chcete uložit upravený vykreslený dokument. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.

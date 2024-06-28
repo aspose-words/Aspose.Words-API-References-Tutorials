@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF mit Planoptionen
 
- Um Gliederungsoptionen im generierten PDF festzulegen, müssen wir die konfigurieren`PdfSaveOptions` Objekt. Wir können die Anzahl der Überschriftengliederungsebenen festlegen (`HeadingsOutlineLevels`) und die Anzahl der erweiterten Gliederungsebenen (`ExpandedOutlineLevels`).
+Um Gliederungsoptionen im generierten PDF festzulegen, müssen wir die konfigurieren`PdfSaveOptions` Objekt. Wir können die Anzahl der Überschriftengliederungsebenen festlegen (`HeadingsOutlineLevels`) und die Anzahl der erweiterten Gliederungsebenen (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

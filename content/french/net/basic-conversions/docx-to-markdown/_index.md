@@ -22,7 +22,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Étape 2 : ajout de contenu au document
+## Étape 2 : ajouter du contenu au document
 
  Ensuite, utilisez le`DocumentBuilder` objet pour ajouter du contenu au document. Dans cet exemple, nous ajouterons un simple paragraphe de texte en utilisant le`Writeln` méthode:
 

@@ -69,8 +69,8 @@ R: Per confrontare due documenti per l'uguaglianza utilizzando Aspose.Words per 
 
 #### D: Posso personalizzare il processo di confronto o fornire opzioni di confronto specifiche?
 
-R: Sì, Aspose.Words per .NET fornisce varie opzioni per personalizzare il processo di confronto. Puoi controllare come vengono confrontati i documenti, specificare opzioni di confronto come metodo di confronto, modifiche alla formattazione o ignorare elementi specifici. Fare riferimento alla documentazione Aspose.Words per .NET per informazioni dettagliate sulla personalizzazione del processo di confronto.
+R: Sì, Aspose.Words per .NET fornisce varie opzioni per personalizzare il processo di confronto. Puoi controllare il modo in cui vengono confrontati i documenti, specificare opzioni di confronto come metodo di confronto, modifiche alla formattazione o ignorare elementi specifici. Fare riferimento alla documentazione Aspose.Words per .NET per informazioni dettagliate sulla personalizzazione del processo di confronto.
 
 #### D: Posso eseguire un confronto più dettagliato per identificare differenze specifiche tra i documenti?
 
-R: Sì, puoi eseguire un confronto più dettagliato per identificare differenze specifiche tra i documenti eseguendo l'iterazione`Revisions` raccolta del documento originale. Ogni revisione rappresenta una modifica o una differenza tra i documenti. È possibile accedere ai dettagli di ciascuna revisione, come il tipo di modifica (inserimento, cancellazione, modifica di formattazione) e l'intervallo interessato del documento.
+ R: Sì, puoi eseguire un confronto più dettagliato per identificare differenze specifiche tra i documenti eseguendo l'iterazione`Revisions` raccolta dei documenti originali. Ogni revisione rappresenta una modifica o una differenza tra i documenti. È possibile accedere ai dettagli di ciascuna revisione, come il tipo di modifica (inserimento, cancellazione, modifica di formattazione) e l'intervallo interessato del documento.

@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## चरण 2: कस्टम गुण जोड़ें
- इसके बाद, वांछित कस्टम गुण जोड़ें। उदाहरण के लिए, "एस्पोज़" मान के साथ "कंपनी" संपत्ति जोड़ने के लिए, इसका उपयोग करें`Add` CustomDocumentProperties संग्रह की विधि:
+ इसके बाद, वांछित कस्टम गुण जोड़ें। उदाहरण के लिए, "Apose" मान के साथ "कंपनी" संपत्ति जोड़ने के लिए, इसका उपयोग करें`Add` CustomDocumentProperties संग्रह की विधि:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 
  का एक उदाहरण बनाएं`Document` कक्षा।
 
- का उपयोग करके वांछित कस्टम गुण जोड़ें`CustomDocumentProperties` संग्रह। उदाहरण के लिए, का उपयोग करें`Add` "एस्पोज़" मान के साथ "कंपनी" संपत्ति जोड़ने की विधि।
+ का उपयोग करके वांछित कस्टम गुण जोड़ें`CustomDocumentProperties` संग्रह। उदाहरण के लिए, का उपयोग करें`Add` "Apose" मान के साथ "कंपनी" संपत्ति जोड़ने की विधि।
 
  का एक उदाहरण बनाएं`PdfSaveOptions` वर्ग और निर्दिष्ट करें कि इसका उपयोग करके कस्टम गुणों को कैसे निर्यात किया जाए`CustomPropertiesExport` संपत्ति।`PdfCustomPropertiesExport.Standard` मान डिफ़ॉल्ट सेटिंग्स के अनुसार कस्टम गुणों को निर्यात करता है।
 

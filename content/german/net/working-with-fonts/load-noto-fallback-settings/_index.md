@@ -67,7 +67,7 @@ A: Um die Einstellungen für die Ersetzung von Noto-Schriftarten in einem Word-D
 
 #### F: Gewährleistet die Verwendung von Noto-Schriftarten zur Ersetzung in Word-Dokumenten eine konsistente Textvisualisierung?
 
-A: Ja, die Verwendung von Noto-Schriftarten zur Ersetzung in Word-Dokumenten gewährleistet eine konsistente Textvisualisierung. Noto-Schriftarten sind so konzipiert, dass sie viele Sprachen und Zeichen unterstützen und dabei helfen, ein einheitliches Erscheinungsbild beizubehalten, auch wenn die erforderlichen Schriftarten nicht verfügbar sind.
+A: Ja, die Verwendung von Noto-Schriftarten zur Ersetzung in Word-Dokumenten gewährleistet eine konsistente Textvisualisierung. Noto-Schriftarten sind so konzipiert, dass sie viele Sprachen und Zeichen unterstützen und dabei helfen, ein einheitliches Erscheinungsbild beizubehalten, auch wenn erforderliche Schriftarten nicht verfügbar sind.
 
 #### F: Sind Noto-Schriftarten kostenlos?
 

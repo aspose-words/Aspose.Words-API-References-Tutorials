@@ -57,7 +57,7 @@ public class PrintDocumentWithDialog {
 }
 ```
 
- In questo codice, innanzitutto carichiamo il documento utilizzando Aspose.Words e quindi inizializziamo PrinterSettings. Noi usiamo il`showPrintDialog()` metodo per visualizzare PrintDialog all'utente. Una volta che l'utente ha selezionato le proprie impostazioni di stampa, stampiamo il documento utilizzando`doc.print(settings)`.
+ In questo codice, innanzitutto carichiamo il documento utilizzando Aspose.Words e quindi inizializziamo PrinterSettings. Noi usiamo il`showPrintDialog()` metodo per visualizzare PrintDialog all'utente. Una volta che l'utente seleziona le proprie impostazioni di stampa, stampiamo il documento utilizzando`doc.print(settings)`.
 
 ## Personalizzazione delle impostazioni di stampa
 

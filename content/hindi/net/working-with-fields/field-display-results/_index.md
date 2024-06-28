@@ -61,7 +61,7 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // फ़ील्ड अद्यतन करें.
 document. UpdateFields();
 
-// फ़ील्ड परिणामों का प्रदर्शन.
+//फ़ील्ड परिणामों का प्रदर्शन.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```

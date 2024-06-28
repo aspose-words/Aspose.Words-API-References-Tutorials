@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 
-Ez az oktatóanyag bemutatja, hogyan hozhat létre ismétlődő szakaszt egy Word-dokumentum egyéni Xml-részéhez leképezve az Aspose.Words for .NET használatával. Az ismétlődő szakasz lehetővé teszi sorok dinamikus hozzáadását az Egyéni Xml-részben tárolt XML-adatok alapján.
+Ez az oktatóanyag bemutatja, hogyan hozható létre egy ismétlődő szakaszt tartalmazó táblázat egy Word-dokumentum egyéni Xml-részéhez leképezve az Aspose.Words for .NET használatával. Az ismétlődő szakasz lehetővé teszi sorok dinamikus hozzáadását az Egyéni Xml-részben tárolt XML-adatok alapján.
 
 ## Előfeltételek
 Az oktatóanyag követéséhez a következőkre van szükség:

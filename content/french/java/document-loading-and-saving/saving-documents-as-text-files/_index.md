@@ -147,7 +147,7 @@ saveOptions.getListIndentation().setCharacter('\t');
 
 ### Aspose.Words for Java est-il adapté à la gestion de texte multilingue ?
 
-Oui, Aspose.Words for Java est adapté à la gestion de texte multilingue. Il prend en charge différentes langues et codages de caractères, ce qui en fait un choix polyvalent pour travailler avec des documents dans différentes langues.
+Oui, Aspose.Words for Java est adapté à la gestion de texte multilingue. Il prend en charge diverses langues et codages de caractères, ce qui en fait un choix polyvalent pour travailler avec des documents dans différentes langues.
 
 ### Comment puis-je accéder à davantage de documentation et de ressources pour Aspose.Words pour Java ?
 

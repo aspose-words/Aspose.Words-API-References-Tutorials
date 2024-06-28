@@ -20,7 +20,7 @@ Assicurati di aver configurato il tuo ambiente di sviluppo con Aspose.Words per 
 Document doc = new Document();
 ```
 
- In questo passaggio ne creiamo uno nuovo`Document` oggetto.
+In questo passaggio ne creiamo uno nuovo`Document` oggetto.
 
 ## Passaggio 3: ottieni le proprietà del tema
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- In questo passaggio utilizziamo il file`Theme` proprietà del`Document`oggetto per ottenere il`Theme` oggetto. Quindi possiamo accedere alle diverse proprietà del tema come i caratteri principali (`MajorFonts`), i caratteri secondari (`MinorFonts`) e i colori accentati (`Colors`).
+ In questo passaggio utilizziamo il file`Theme` proprietà del`Document` oggetto per ottenere il`Theme` oggetto. Quindi possiamo accedere alle diverse proprietà del tema come i caratteri principali (`MajorFonts`), i caratteri secondari (`MinorFonts`) e i colori accentati (`Colors`).
 
 ## Passaggio 4: Visualizza le proprietà del tema
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Conclusione
 
- In questo tutorial, abbiamo esplorato la funzionalità per ottenere le proprietà del tema di un documento con Aspose.Words per .NET. Usando il`Theme` oggetto e le sue proprietà associate, siamo stati in grado di accedere alle informazioni sui caratteri primari e secondari, nonché sui colori principali utilizzati nel tema del documento.
+ In questo tutorial, abbiamo esplorato la funzionalità per ottenere le proprietà del tema di un documento con Aspose.Words per .NET. Usando il`Theme`oggetto e le sue proprietà associate, siamo stati in grado di accedere alle informazioni sui caratteri primari e secondari, nonché sui colori principali utilizzati nel tema del documento.
 
 La possibilità di ottenere le proprietà del tema ti consente di analizzare e personalizzare gli stili e i layout dei tuoi documenti. Puoi utilizzare queste informazioni per applicare modifiche mirate, creare report o eseguire analisi sull'utilizzo di caratteri e colori nei tuoi documenti.
 
@@ -68,11 +68,11 @@ Sentiti libero di esplorare ulteriori funzionalità di Aspose.Words per .NET per
 
 #### Come posso accedere alle proprietà del tema di un documento utilizzando Aspose.Words per .NET?
 
- Per accedere alle proprietà del tema di un documento, puoi utilizzare il file`Theme` proprietà del`Document` oggetto. Restituisce a`Theme` oggetto che contiene informazioni sui caratteri primari e secondari, nonché sui colori principali utilizzati nel tema del documento.
+ Per accedere alle proprietà del tema di un documento, puoi utilizzare il file`Theme` proprietà del`Document` oggetto. Restituisce a`Theme`oggetto che contiene informazioni sui caratteri primari e secondari, nonché sui colori principali utilizzati nel tema del documento.
 
 #### Come posso recuperare i caratteri primari e secondari del tema di un documento?
 
-Puoi accedere ai caratteri primari e secondari del tema di un documento utilizzando il file`MajorFonts` E`MinorFonts` proprietà del`Theme` oggetto, rispettivamente. Queste proprietà forniscono l'accesso ai nomi dei caratteri utilizzati nel tema del documento per lingue o regioni diverse.
+ Puoi accedere ai caratteri primari e secondari del tema di un documento utilizzando il file`MajorFonts` E`MinorFonts` proprietà del`Theme` oggetto, rispettivamente. Queste proprietà forniscono l'accesso ai nomi dei caratteri utilizzati nel tema del documento per diverse lingue o regioni.
 
 #### Posso ottenere i colori in risalto utilizzati nel tema di un documento?
 

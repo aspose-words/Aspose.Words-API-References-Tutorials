@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Bước 3: Chèn trường nâng cao
+## Bước 3: Chèn các trường nâng cao
 
  Chúng tôi sử dụng`AppendField()` phương pháp chèn trường nâng cao vào đoạn văn.
 

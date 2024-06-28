@@ -11,7 +11,7 @@ Az Aspose.Words for .NET oktatóanyagok a WebExtensions szövegfeldolgozásról 
 
 Ezek az oktatóanyagok lépésről lépésre nyújtanak útmutatást a WebExtensions Aspose.Words for .NET funkcióinak megértéséhez és használatához. Megtanulja, hogyan érhet el webbővítmény-objektumokat, hogyan kezelheti az eseményeket, hogyan értékelheti a JavaScript-kódot, hogyan adhat hozzá egyéni funkciókat stb. Akár kezdő, akár tapasztalt fejlesztő, ezek az oktatóanyagok segítenek elsajátítani a WebExtensions programozási technikákat.
 
-Ha követi ezeket az oktatóanyagokat, teljes mértékben kiaknázhatja a Word-dokumentumok webbővítményeinek lehetőségeit, interaktív és dinamikus funkciókat biztosítva számukra. Az oktatóanyagok lépésről lépésre kódpéldákat és világos magyarázatokat tartalmaznak, amelyek segítségével a legtöbbet hozhatja ki ezekből a funkciókból, és innovatív és interaktív Word-dokumentumokat hozhat létre.
+Ezeket az oktatóanyagokat követve teljes mértékben kiaknázhatja a Word-dokumentumokban lévő webbővítmények lehetőségeit, interaktív és dinamikus funkciókat biztosítva számukra. Az oktatóanyagok lépésről lépésre kódpéldákat és világos magyarázatokat tartalmaznak, amelyek segítségével a legtöbbet hozhatja ki ezekből a funkciókból, és innovatív és interaktív Word-dokumentumokat hozhat létre.
 
 ## Oktatóanyagok
 | Cím | Leírás |

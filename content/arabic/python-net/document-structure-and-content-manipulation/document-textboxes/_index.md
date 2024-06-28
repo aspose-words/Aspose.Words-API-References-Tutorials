@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- في هذا الكود نقوم بإنشاء جديد`Document` و أ`DocumentBuilder` . ال`insert_text_box`يتم استخدام الطريقة لإضافة مربع نص إلى المستند. يمكنك تخصيص محتوى مربع النص وموضعه وحجمه وفقًا لمتطلباتك.
+ في هذا الكود نقوم بإنشاء جديد`Document` و أ`DocumentBuilder` . ال`insert_text_box` يتم استخدام الطريقة لإضافة مربع نص إلى المستند. يمكنك تخصيص محتوى مربع النص وموضعه وحجمه وفقًا لمتطلباتك.
 
 ## تنسيق مربعات النص
 

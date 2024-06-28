@@ -17,7 +17,7 @@ url: /zh/net/programming-with-charts/default-options-for-data-labels/
 - 已安装 Aspose.Words for .NET 库。您可以使用 NuGet 包管理器下载并安装它。
 - 将保存输出文档的文档目录路径。
 
-## 步骤 2：创建一个新文档并插入图表
+## 步骤2：创建一个新文档并插入图表。
 
 首先，我们创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 Aspose.Words for .NET 是一个库，使开发人员能够使用 .NET 应用程序以编程方式创建、操作和保存 Word 文档。它为文档元素（包括图表）的文字处理提供了广泛的功能。
 
 #### Q2。如何安装 Aspose.Words for .NET？
-您可以通过使用 Visual Studio 中的 NuGet 包管理器下载来安装 Aspose.Words for .NET。只需在 NuGet 包管理器中搜索“Aspose.Words”并将其安装到您的项目中即可。
+您可以通过使用 Visual Studio 中的 NuGet 包管理器下载来安装 Aspose.Words for .NET。只需在 NuGet 包管理器中搜索“Apose.Words”并将其安装到您的项目中即可。
 
 #### Q3。我可以使用 Aspose.Words for .NET 自定义图表的其他方面吗？
 是的，Aspose.Words for .NET 允许您自定义图表的各个方面，例如图表类型、轴标签、图例、绘图区域等。您可以访问和修改图表对象的不同属性以实现所需的外观和行为。

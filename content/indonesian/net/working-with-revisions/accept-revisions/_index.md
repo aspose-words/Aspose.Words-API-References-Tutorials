@@ -1,6 +1,6 @@
 ---
-title: Terima Revisi
-linktitle: Terima Revisi
+title: Terima Ulasan
+linktitle: Terima Ulasan
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara menerima revisi dokumen Word menggunakan Aspose.Words untuk .NET
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Paragraf revisi penghapusan dihapus setelah kami menerima perubahan.
+// Paragraf revisi yang dihapus akan dihapus setelah kami menerima perubahan.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

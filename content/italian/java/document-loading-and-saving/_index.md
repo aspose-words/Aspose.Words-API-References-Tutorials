@@ -39,7 +39,7 @@ Esplora la versatilità di Aspose.Words per Java mentre approfondiamo il salvata
 
 Le impostazioni del documento sono la chiave per fornire documenti personalizzati in base alle tue precise esigenze. Scopri come modificare impostazioni quali dimensioni della pagina, margini e caratteri per ottenere l'output desiderato.
 
-Aspose.Words per Java ti consente di assumere il controllo del caricamento e del salvataggio dei documenti come mai prima d'ora. Il nostro elenco di tutorial funge da tabella di marcia per padroneggiare questa potente libreria. Con solide basi nella manipolazione dei documenti, sarai attrezzato per affrontare con facilità anche i compiti più complessi.
+Aspose.Words per Java ti consente di assumere il controllo del caricamento e del salvataggio dei documenti come mai prima d'ora. Il nostro elenco di tutorial funge da tabella di marcia per padroneggiare questa potente libreria. Con solide basi nella manipolazione dei documenti, sarai attrezzato per affrontare con facilità anche le attività più complesse.
 
 ## Esercitazioni sul caricamento e salvataggio dei documenti
 ### [Caricamento e salvataggio di documenti HTML con Aspose.Words per Java](./loading-and-saving-html-documents/)

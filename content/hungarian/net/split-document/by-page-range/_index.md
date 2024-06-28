@@ -1,6 +1,6 @@
 ---
-title: A Word dokumentum felosztása oldaltartomány szerint
-linktitle: A Word dokumentum felosztása oldaltartomány szerint
+title: Word dokumentum felosztása oldaltartomány szerint
+linktitle: Word dokumentum felosztása oldaltartomány szerint
 second_title: Aspose.Words Document Processing API
 description: A Word dokumentum egyszerű felosztása oldaltartományonként az Aspose.Words for .NET segítségével Lépésről lépésre.
 type: docs
@@ -74,7 +74,7 @@ Nyugodtan fedezze fel az Aspose.Words for .NET által kínált egyéb hatékony 
  Igen, a nem egymást követő oldalakat is kivonhatja a kívánt oldaltartomány megadásával. Például, ha ki szeretné bontani az 1., 3. és 5. oldalt, az oldaltartományt a következőre állíthatja be`1,3,5` ban,-ben`ExtractPages` funkció.
 
 #### 2. kérdés: Kivonható-e egy adott oldaltartomány egyidejűleg több dokumentumból?
-Igen, az "Oldaltartomány szerint" funkciót több dokumentumra is alkalmazhatja. Egyszerűen töltse be az egyes dokumentumokat egyenként, és válassza ki a kívánt oldaltartományt a gombbal`ExtractPages` funkció. Ezután minden egyes dokumentumból külön-külön elmentheti a kibontott oldalakat.
+ Igen, az "Oldaltartomány szerint" funkciót több dokumentumra is alkalmazhatja. Egyszerűen töltse be az egyes dokumentumokat egyenként, és válassza ki a kívánt oldaltartományt a gombbal`ExtractPages` funkció. Ezután minden egyes dokumentumból külön-külön elmentheti a kibontott oldalakat.
 
 #### 3. kérdés: Kivonhatok oldaltartományokat a titkosított vagy jelszóval védett Word dokumentumokból?
 Nem, az „Oldaltartomány szerint” funkció nem védett Word-dokumentumokon működik. Ha egy dokumentum titkosított vagy jelszóval védett, akkor meg kell adnia a megfelelő jelszót, és el kell távolítania a védelmet, mielőtt kibontja a kívánt oldaltartományt.
@@ -82,6 +82,6 @@ Nem, az „Oldaltartomány szerint” funkció nem védett Word-dokumentumokon m
 #### 4. kérdés: Vannak-e korlátozások az „Oldaltartomány szerint” funkcióval kibontható oldalak számára?
 Az "Oldaltartomány szerint" funkcióval kibontható oldalak száma az Aspose.Words for .NET képességeitől és a rendelkezésre álló rendszererőforrásoktól függ. Általában támogatja az oldaltartományok kibontását különböző méretű dokumentumokból, de a rendkívül nagy dokumentumok vagy a nagyon hosszú oldaltartományok további rendszererőforrásokat és feldolgozási időt igényelhetnek.
 
-#### 5. kérdés: Kivonhatok-e más elemeket a szöveges tartalommal együtt, például képeket vagy táblázatokat az „Oldaltartomány szerint” funkció használatával?
+#### 5. kérdés: Kivonhatok más elemeket a szöveges tartalommal együtt, például képeket vagy táblázatokat az „Oldaltartomány szerint” funkció használatával?
 Igen, ha kibont egy oldaltartományt az Aspose.Words for .NET használatával, az tartalmazza a megadott tartományon belüli összes tartalmat, beleértve a szöveget, képeket, táblázatokat és az oldalakon található egyéb elemeket. A kivonatolt tartalom megmarad az új dokumentumban.
 

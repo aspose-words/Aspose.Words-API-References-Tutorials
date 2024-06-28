@@ -2,7 +2,7 @@
 title: เพิ่มส่วน
 linktitle: เพิ่มส่วน
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: ในบทช่วยสอนนี้ เรียนรู้วิธีเพิ่มส่วนลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คำแนะนำทีละขั้นตอนในการจัดโครงสร้างเอกสารของคุณ
+description: ในบทช่วยสอนนี้ เรียนรู้วิธีเพิ่มส่วนลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คำแนะนำทีละขั้นตอนเกี่ยวกับโครงสร้างของเอกสารของคุณ
 type: docs
 weight: 10
 url: /th/net/working-with-section/add-section/

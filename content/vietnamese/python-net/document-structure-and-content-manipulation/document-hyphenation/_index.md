@@ -90,7 +90,7 @@ hyphenation_options.consecutive_hyphen_limit = 2
 
 ### Điều chỉnh khoảng cách dòng
 
-Khoảng cách dòng thích hợp sẽ nâng cao khả năng đọc. Bạn có thể đặt khoảng cách dòng trong tài liệu của mình để cải thiện hình thức trực quan tổng thể.
+Khoảng cách dòng thích hợp sẽ tăng cường khả năng đọc. Bạn có thể đặt khoảng cách dòng trong tài liệu của mình để cải thiện hình thức trực quan tổng thể.
 
 ### Sự biện minh và sự liên kết
 
@@ -126,4 +126,4 @@ Sử dụng cài đặt giãn cách dòng trong Aspose.Words for Python để đ
 
 ### Tôi có thể truy cập tài liệu Aspose.Words dành cho Python ở đâu?
 
- Bạn có thể truy cập tài liệu API tại[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+Bạn có thể truy cập tài liệu API tại[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

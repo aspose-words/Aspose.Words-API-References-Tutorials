@@ -15,14 +15,14 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel
 - A projektben telepített .NET Aspose.Words könyvtár
 
 ## 1. lépés: Határozza meg a dokumentumkönyvtárat
- Először állítsa be a könyvtár elérési útját a Word-dokumentum helyére. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal.
+Először állítsa be a könyvtár elérési útját a Word-dokumentum helyére. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: A dokumentum létrehozása és formázása
- Hozzon létre egy példányt a`Document` osztály és a`DocumentBuilder` osztályt a dokumentum elkészítéséhez. Használja a`Font` tulajdona a`DocumentBuilder` a betűtípus formázási tulajdonságainak eléréséhez.
+ Hozzon létre egy példányt a`Document` osztály és a`DocumentBuilder`osztályt a dokumentum elkészítéséhez. Használja a`Font` tulajdona a`DocumentBuilder` a betűtípus formázási tulajdonságainak eléréséhez.
 
 ```csharp
 Document doc = new Document();

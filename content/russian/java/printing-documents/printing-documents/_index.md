@@ -50,7 +50,7 @@ MultipagePrintDocument awPrintDoc = new MultipagePrintDocument(doc, 4, true, att
 Теперь, когда мы настроили задание на печать, пришло время распечатать документ. Следующий фрагмент кода связывает документ с заданием на печать и запускает процесс печати.
 
 ```java
-// Передайте документ на печать, используя задание печати.
+// Передайте документ для печати с помощью функции печати.
 pj.setPrintable(awPrintDoc);
 pj.print();
 ```
@@ -65,7 +65,7 @@ PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Передайте настройки принтера вместе с другими параметрами в документ для печати.
 MultipagePrintDocument awPrintDoc = new MultipagePrintDocument(doc, 4, true, attributes);
-// Передайте документ на печать, используя задание печати.
+// Передайте документ для печати с помощью функции печати.
 pj.setPrintable(awPrintDoc);
 pj.print();
 ```
@@ -78,7 +78,7 @@ class MultipagePrintDocument implements Printable
     private final boolean mPrintPageBorders;
     private final AttributeSet mAttributeSet;
     /// <сводка>
-    /// Конструктор пользовательского класса PrintDocument.
+    ///Конструктор пользовательского класса PrintDocument.
     // / </сводка>
     public MultipagePrintDocument(Document document, int pagesPerSheet, boolean printPageBorders,
                                   AttributeSet attributes) {

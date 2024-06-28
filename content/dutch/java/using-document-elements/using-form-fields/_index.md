@@ -92,7 +92,7 @@ kunt het uiterlijk van formuliervelden aanpassen, zoals de lettergrootte en kleu
    U kunt de weergave van formuliervelden aanpassen door de lettergrootte, kleur en andere opmaakopties aan te passen.
 
 4. ### Is er een gratis proefversie beschikbaar voor Aspose.Words voor Java?
-    Ja, u krijgt toegang tot een gratis proefversie van Aspose.Words voor Java[hier](https://releases.aspose.com/).
+    Ja, u krijgt toegang tot een gratis proefversie van Aspose.Words voor Java.[hier](https://releases.aspose.com/).
 
 5. ### Waar kan ik ondersteuning krijgen voor Aspose.Words voor Java?
     Voor ondersteuning en hulp kunt u terecht op de[Aspose.Words-forum](https://forum.aspose.com/).

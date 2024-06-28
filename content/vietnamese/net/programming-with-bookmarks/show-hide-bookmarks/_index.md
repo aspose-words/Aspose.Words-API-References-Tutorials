@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Bước 2: Hiển thị hoặc ẩn dấu trang cụ thể
 
- Chúng tôi sử dụng`ShowHideBookmarkedContent`chức năng hiển thị hoặc ẩn một dấu trang cụ thể trong tài liệu. Hàm này lấy các tham số của tài liệu, tên của dấu trang và boolean để cho biết nên hiển thị hay ẩn dấu trang:
+ Chúng tôi sử dụng`ShowHideBookmarkedContent` chức năng hiển thị hoặc ẩn một dấu trang cụ thể trong tài liệu. Hàm này lấy các tham số của tài liệu, tên của dấu trang và boolean để cho biết nên hiển thị hay ẩn dấu trang:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -126,9 +126,9 @@ Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu c�
 
  Đáp: Để hiển thị lại dấu trang bị ẩn, bạn cần sử dụng cùng một`ShowHideBookmarkedContent` hàm truyền giá trị`true` đối với tham số boolean cho biết hiển thị hay ẩn dấu trang.
 
-#### Câu hỏi: Tôi có thể sử dụng các điều kiện để hiển thị hoặc ẩn dấu trang dựa trên giá trị trường hợp nhất trong tài liệu không?
+#### Câu hỏi: Tôi có thể sử dụng các điều kiện để hiển thị hoặc ẩn dấu trang dựa trên các giá trị trường hợp nhất trong tài liệu không?
 
- Đáp: Có, bạn có thể sử dụng các điều kiện và hợp nhất các giá trị trường để xác định xem dấu trang sẽ được hiển thị hay ẩn. Bạn có thể tùy chỉnh mã của`ShowHideBookmarkedContent` có tính đến các điều kiện và giá trị thích hợp.
+ Trả lời: Có, bạn có thể sử dụng các điều kiện và hợp nhất các giá trị trường để xác định xem dấu trang sẽ được hiển thị hay ẩn. Bạn có thể tùy chỉnh mã của`ShowHideBookmarkedContent` có tính đến các điều kiện và giá trị thích hợp.
 
 #### Hỏi: Làm cách nào tôi có thể xóa dấu trang trong tài liệu Word bằng Aspose.Words cho .NET?
 

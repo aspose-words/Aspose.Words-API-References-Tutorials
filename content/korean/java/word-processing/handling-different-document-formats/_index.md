@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### 테이블 생성
 
 ```java
-// 행 3개와 열 4개로 구성된 테이블 만들기
+// 3개의 행과 4개의 열로 구성된 테이블을 만듭니다.
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

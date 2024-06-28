@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          // Implementieren Sie hier Ihre benutzerdefinierten Aktionen
          // Sie können über die Eigenschaft „args.PageIndex“ auf Seiteninformationen zugreifen
-         // Sie können die Speicheroptionen auch für jede Seite einzeln ändern
+         // Sie können die Speicheroptionen auch für jede Seite einzeln ändern.
      }
 }
 ```

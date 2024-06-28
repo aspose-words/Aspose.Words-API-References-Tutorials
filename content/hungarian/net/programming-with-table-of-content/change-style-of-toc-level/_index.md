@@ -23,7 +23,7 @@ Document doc = new Document();
 
 Ebben a példában egy új üres dokumentumot hozunk létre.
 
-## A tartalomjegyzék szintjének stílusának megváltoztatása
+## tartalomjegyzék szintjének stílusának megváltoztatása
 
 A dokumentum létrehozása után hozzáférhet a dokumentumstílusokhoz, és módosíthatja a tartalomjegyzék egy adott szintjéhez használt stílust. Ebben a példában a tartalomjegyzék első szintjéhez használt stílust módosítjuk. Itt van, hogyan:
 
@@ -109,7 +109,7 @@ Ez a kód "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx" néven menti 
 
 #### K: Alkalmazhatok más formázási változtatásokat a tartalomjegyzékben az Aspose.Words for .NET használatával?
 
-V: Igen, a stílus megváltoztatása mellett különféle formázási módosításokat is alkalmazhat a tartalomjegyzékben az Aspose.Words for .NET segítségével. Például módosíthatja a betűméretet, a színt, az igazítást, vagy további formázási tulajdonságokat adhat hozzá a tartalomjegyzék megjelenésének javításához.
+V: Igen, a stílus megváltoztatása mellett különféle formázási módosításokat is alkalmazhat a tartalomjegyzékben az Aspose.Words for .NET segítségével. Például módosíthatja a betűméretet, színt, igazítást, vagy további formázási tulajdonságokat adhat hozzá a tartalomjegyzék megjelenésének javításához.
 
 #### K: Hogyan adhatok meg egyéni stílust a tartalomjegyzék egy adott szintjéhez az Aspose.Words for .NET használatával?
 
@@ -121,4 +121,4 @@ V: Igen, a stílus megváltoztatása mellett különféle formázási módosít�
 
 #### K: Az Aspose.Words for .NET támogatja más stílusok és formázások megváltoztatását a Word dokumentumokban?
 
-V: Igen, az Aspose.Words for .NET széleskörű támogatást nyújt a Word dokumentumok különböző stílusainak és formázásainak megváltoztatásához. Lehetővé teszi a különböző elemek, például bekezdések, címsorok, táblázatok, listák és egyebek stílusának módosítását. Igényeinek megfelelően módosíthatja a betűtípusokat, a színeket, az igazítást, a behúzást, a térközt és más formázási szempontokat.
+V: Igen, az Aspose.Words for .NET széleskörű támogatást nyújt a Word dokumentumok különböző stílusainak és formázásainak megváltoztatásához. Lehetővé teszi a különböző elemek, például bekezdések, címsorok, táblázatok, listák és egyebek stílusának módosítását. Igényeinek megfelelően módosíthatja a betűtípusokat, a színeket, az igazítást, a behúzást, a térközt és egyéb formázási szempontokat.

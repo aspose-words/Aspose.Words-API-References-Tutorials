@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-markdown/autolink/
 ---
 
-tym przykładzie wyjaśnimy, jak używać funkcji „Autolink” w Aspose.Words dla .NET. Ta funkcja umożliwia automatyczne wstawianie hiperłączy do dokumentu.
+W tym przykładzie wyjaśnimy, jak używać funkcji „Autolink” w Aspose.Words dla .NET. Ta funkcja umożliwia automatyczne wstawianie hiperłączy do dokumentu.
 
 ## Krok 1: Korzystanie z generatora dokumentów
 
@@ -58,7 +58,7 @@ Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji „Autolink” w As
 
 #### P: Jak mogę utworzyć automatyczne łącze do adresu URL w Aspose.Words?
 
-O: Aby utworzyć automatyczne łącze do adresu URL w Aspose.Words, możesz użyć metody`<a>` tag z`href` atrybut zawierający adres URL. Możesz na przykład użyć`<a href="https://www.aspose.com">https://www.aspose.com</a>` aby automatycznie połączyć się z „https: //www.aspose.com”.
+ O: Aby utworzyć automatyczne łącze do adresu URL w Aspose.Words, możesz użyć metody`<a>` tag z`href` atrybut zawierający adres URL. Możesz na przykład użyć`<a href="https://www.aspose.com">https://www.aspose.com</a>` aby automatycznie połączyć się z „https: //www.aspose.com”.
 
 #### P: Czy można dostosować tekst wyświetlany w automatycznym łączu w Aspose.Words?
 
@@ -66,4 +66,4 @@ O: Aby utworzyć automatyczne łącze do adresu URL w Aspose.Words, możesz uży
 
 #### P: Jak mogę dodać dodatkowe atrybuty do autolinku w Aspose.Words?
 
- O: Aby dodać dodatkowe atrybuty do automatycznego łącza w Aspose.Words, możesz użyć dodatkowych atrybutów HTML wewnątrz`<a>` etykietka. Możesz na przykład użyć`<a href="https://www.aspose.com" target="_blank">Link</a>` aby otworzyć łącze w nowym oknie lub nowej karcie za pomocą przycisku` attribute target="_blank"`.
+O: Aby dodać dodatkowe atrybuty do automatycznego łącza w Aspose.Words, możesz użyć dodatkowych atrybutów HTML wewnątrz`<a>` etykietka. Możesz na przykład użyć`<a href="https://www.aspose.com" target="_blank">Link</a>` aby otworzyć łącze w nowym oknie lub nowej karcie za pomocą przycisku` attribute target="_blank"`.

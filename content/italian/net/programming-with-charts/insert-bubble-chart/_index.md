@@ -1,6 +1,6 @@
 ---
-title: Inserisci grafico a bolle nel documento Word
-linktitle: Inserisci grafico a bolle nel documento Word
+title: Inserisci grafico a bolle nel documento di Word
+linktitle: Inserisci grafico a bolle nel documento di Word
 second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come inserire un grafico a bolle in un documento utilizzando Aspose.Words per .NET. Aggiungi dati di serie con valori X, Y e dimensioni delle bolle.
 type: docs
@@ -17,7 +17,7 @@ Assicurati di avere i seguenti prerequisiti:
 - Aspose.Words per la libreria .NET installata. È possibile scaricarlo utilizzando Gestione pacchetti NuGet per installarlo.
 - Un percorso della directory del documento in cui verrà salvato il documento di output.
 
-## Passaggio 2: crea un nuovo documento e inserisci un grafico
+## Passaggio 2: crea un nuovo documento e inserisci un grafico.
 
  Creane uno nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 

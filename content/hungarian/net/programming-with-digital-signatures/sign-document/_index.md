@@ -56,7 +56,7 @@ Az alábbi lépések követésével egyszerűen aláírhat egy Word-dokumentumot
 
 #### K: Mi az a dokumentum-aláírás az Aspose.Words for .NET-ben?
 
-V: Dokumentum-aláírás az Aspose.Words for .NET-ben egy Word-dokumentum tanúsítvány segítségével történő digitális aláírásának folyamatára utal. Ez a funkció digitális aláírást ad a dokumentumhoz, amely hitelességet, integritást és a dokumentum tartalmának letagadhatatlanságát biztosítja.
+V: Dokumentum-aláírás az Aspose.Words for .NET-ben egy Word-dokumentum tanúsítvány segítségével történő digitális aláírásának folyamatára utal. Ez a funkció digitális aláírást ad a dokumentumhoz, amely hitelességet, integritást és a dokumentum tartalmának visszautasítását biztosítja.
 
 #### K: Hogyan tölthetem be az aláíró tanúsítványt az Aspose.Words for .NET-be?
 
@@ -88,7 +88,7 @@ V: Az Aspose.Words for .NET programban történő dokumentum-aláírásához ér
 
 #### K: Milyen fájlformátumot támogat az Aspose.Words for .NET a dokumentumok aláírásához?
 
- V: Az Aspose.Words for .NET támogatja a Word dokumentumok DOCX fájlformátumú aláírását. A DOCX fájlokat a`DigitalSignatureUtil` osztályt és a megfelelő bizonyítványt.
+ V: Az Aspose.Words for .NET támogatja a Word dokumentumok DOCX fájlformátumú aláírását. A DOCX fájlokat aláírhatja a`DigitalSignatureUtil` osztályt és a megfelelő bizonyítványt.
 
 #### K: Aláírhatok több Word-dokumentumot ugyanazzal a tanúsítvánnyal?
 

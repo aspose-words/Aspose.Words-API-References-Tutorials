@@ -164,7 +164,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Microsoft Word सूची टेम्प्लेट में से किसी एक के आधार पर एक क्रमांकित सूची बनाएं
+        // Microsoft Word सूची टेम्प्लेट में से किसी एक के आधार पर एक क्रमांकित सूची बनाएं।
         //और इसे दस्तावेज़ निर्माता के वर्तमान पैराग्राफ पर लागू करें।
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // इस सूची में नौ स्तर हैं, आइए उन सभी को आज़माएँ।
@@ -173,7 +173,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Microsoft Word सूची टेम्प्लेट में से किसी एक के आधार पर एक बुलेटेड सूची बनाएं
+        // Microsoft Word सूची टेम्प्लेट में से किसी एक के आधार पर एक बुलेटेड सूची बनाएं।
         //और इसे दस्तावेज़ निर्माता के वर्तमान पैराग्राफ पर लागू करें।
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Krok 2: Pokaż lub ukryj konkretną zakładkę
 
- Używamy`ShowHideBookmarkedContent`funkcja umożliwiająca pokazanie lub ukrycie określonej zakładki w dokumencie. Ta funkcja przyjmuje jako parametry dokument, nazwę zakładki i wartość logiczną wskazującą, czy pokazać, czy ukryć zakładkę:
+ Używamy`ShowHideBookmarkedContent` funkcja umożliwiająca pokazanie lub ukrycie określonej zakładki w dokumencie. Ta funkcja przyjmuje jako parametry dokument, nazwę zakładki i wartość logiczną wskazującą, czy pokazać, czy ukryć zakładkę:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -126,9 +126,9 @@ Odp.: Tak, dostarczony kod działa z różnymi formatami dokumentów Word obsłu
 
  Odp.: Aby ponownie wyświetlić ukrytą zakładkę, musisz jej użyć`ShowHideBookmarkedContent` funkcja przekazująca wartość`true` dla parametru logicznego wskazującego, czy pokazać, czy ukryć zakładkę.
 
-#### P: Czy mogę używać warunków, aby pokazywać lub ukrywać zakładki na podstawie wartości pól scalania w dokumencie?
+#### P: Czy mogę użyć warunków, aby pokazać lub ukryć zakładki na podstawie wartości pól scalania w dokumencie?
 
- O: Tak, możesz użyć warunków i wartości pól scalających, aby określić, czy zakładka ma być pokazana, czy ukryta. Możesz dostosować kod pliku`ShowHideBookmarkedContent` funkcję uwzględniającą odpowiednie warunki i wartości.
+ Odp.: Tak, możesz użyć warunków i scalić wartości pól, aby określić, czy zakładka powinna być pokazana, czy ukryta. Możesz dostosować kod pliku`ShowHideBookmarkedContent` funkcję uwzględniającą odpowiednie warunki i wartości.
 
 #### P: Jak mogę usunąć zakładkę w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
 

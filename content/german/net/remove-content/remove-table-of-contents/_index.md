@@ -2,216 +2,103 @@
 title: Inhaltsverzeichnis im Word-Dokument entfernen
 linktitle: Inhaltsverzeichnis im Word-Dokument entfernen
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie das Inhaltsverzeichnis in einem Word-Dokument mit Aspose.Words für .NET entfernen.
+description: Erfahren Sie in diesem leicht verständlichen Tutorial, wie Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis (TOC) in Word-Dokumenten entfernen.
 type: docs
 weight: 10
 url: /de/net/remove-content/remove-table-of-contents/
 ---
-In diesem Tutorial zeigen wir Ihnen, wie Sie das Inhaltsverzeichnis in einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET entfernen. Das Inhaltsverzeichnis kann manchmal überflüssig oder unnötig sein, und dieser Code hilft Ihnen, es effektiv zu entfernen. Wir stellen Ihnen eine Schritt-für-Schritt-Anleitung zur Verfügung, die Ihnen hilft, den Code zu verstehen und in Ihrem eigenen .NET-Projekt zu implementieren.
+## Entfernen Sie das Inhaltsverzeichnis in einem Word-Dokument mit Aspose.Words für .NET
+
+Sind Sie es leid, sich mit einem unerwünschten Inhaltsverzeichnis (TOC) in Ihren Word-Dokumenten herumschlagen zu müssen? Das haben wir alle schon erlebt – manchmal ist das Inhaltsverzeichnis einfach nicht notwendig. Zu Ihrem Glück erleichtert Aspose.Words für .NET das programmgesteuerte Entfernen eines Inhaltsverzeichnisses. In diesem Tutorial führe ich Sie Schritt für Schritt durch den Prozess, damit Sie ihn im Handumdrehen meistern können. Lasst uns gleich eintauchen!
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
-- Grundkenntnisse der Programmiersprache C#
-- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
-- Ein Word-Dokument mit einem Inhaltsverzeichnis, das Sie löschen möchten
 
-## Schritt 1: Definieren Sie das Dokumentenverzeichnis
- Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments festlegen. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+
+1.  Aspose.Words for .NET-Bibliothek: Wenn Sie dies noch nicht getan haben, laden Sie die Aspose.Words for .NET-Bibliothek von herunter und installieren Sie sie[Aspose.Releases](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Eine IDE wie Visual Studio erleichtert das Codieren.
+3. .NET Framework: Stellen Sie sicher, dass Sie das .NET Framework installiert haben.
+4. Word-Dokument: Sie verfügen über ein Word-Dokument (.docx) mit einem Inhaltsverzeichnis, das Sie entfernen möchten.
+
+## Namespaces importieren
+
+Als Erstes importieren wir die erforderlichen Namespaces. Dadurch wird die Umgebung für die Verwendung von Aspose.Words eingerichtet.
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Schritt 2: Laden Sie das Dokument hoch
- Als nächstes laden wir das Word-Dokument in eine Instanz von`Document` Klasse mit der`Load` Methode.
+Lassen Sie uns nun den Prozess des Entfernens eines Inhaltsverzeichnisses aus einem Word-Dokument in klare, überschaubare Schritte unterteilen.
+
+## Schritt 1: Richten Sie Ihr Dokumentenverzeichnis ein
+
+Bevor wir Ihr Dokument bearbeiten können, müssen wir definieren, wo es sich befindet. Dies ist Ihr Dokumentverzeichnispfad.
 
 ```csharp
-// Laden Sie das Dokument
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem Pfad zu Ihrem Dokumentenordner. Hier befindet sich Ihre Word-Datei.
+
+## Schritt 2: Laden Sie das Dokument
+
+Als nächstes müssen wir das Word-Dokument in unsere Anwendung laden. Aspose.Words macht dies unglaublich einfach.
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## Schritt 3: Löschen Sie das Inhaltsverzeichnis
- Um das Inhaltsverzeichnis zu entfernen, durchlaufen wir den Typ TOC (Inhaltsverzeichnis).`FieldStart` Knoten im Dokument. Wir werden diese Knoten speichern, damit wir schnell darauf zugreifen und eine Liste der zu löschenden Knoten erstellen können.
+ Ersetzen`"your-document.docx"` mit dem Namen Ihrer Datei. Diese Codezeile lädt Ihr Dokument, damit wir mit der Arbeit daran beginnen können.
+
+## Schritt 3: Identifizieren und entfernen Sie das TOC-Feld
+
+Hier geschieht die Magie. Wir werden das TOC-Feld suchen und entfernen.
 
 ```csharp
-// Speichern Sie FieldStart-Knoten von Inhaltsverzeichnisfeldern im Dokument, um schnell darauf zugreifen zu können.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Dies ist eine Liste zum Speichern der im angegebenen Inhaltsverzeichnis gefundenen Knoten. Sie werden am Ende dieser Methode gelöscht.
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+Folgendes passiert:
+- `doc.Range.Fields`: Dies greift auf alle Felder im Dokument zu.
+- `.Where(f => f.Type == FieldType.FieldTOC)`: Dadurch werden die Felder gefiltert, um nur diejenigen zu finden, bei denen es sich um Inhaltsverzeichnisse handelt.
+- `.ToList().ForEach(f => f.Remove())`: Dadurch werden die gefilterten Felder in eine Liste umgewandelt und jedes einzelne entfernt.
 
-// Überprüfen Sie, ob der angegebene TOC-Index vorhanden ist.
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## Schritt 4: Speichern Sie das geänderte Dokument
 
-bool isRemoving = true;
+Abschließend müssen wir unsere Änderungen speichern. Sie können das Dokument unter einem neuen Namen speichern, um die Originaldatei beizubehalten.
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // Es ist sicherer, diese Knoten zu speichern und am Ende alle zu löschen.
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // Wenn wir auf einen FieldEnd-Knoten vom Typ FieldTOC stoßen,
-     //Wir wissen, dass wir am Ende des aktuellen Inhaltsverzeichnisses angelangt sind und hören hier auf.
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### Beispielquellcode zum Entfernen des Inhaltsverzeichnisses mit Aspose.Words für .NET 
-```csharp
-
-// Pfad zu Ihrem Dokumentenverzeichnis
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// Laden Sie das Dokument
-Document doc = new Document(dataDir + "your-document.docx");
-
-// Speichern Sie die FieldStart-Knoten von TOC-Feldern im Dokument, um schnell darauf zugreifen zu können.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Dies ist eine Liste zum Speichern der im angegebenen Inhaltsverzeichnis gefundenen Knoten. Sie werden am Ende dieser Methode entfernt.
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// Stellen Sie sicher, dass das durch den übergebenen Index angegebene Inhaltsverzeichnis vorhanden ist.
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// Es ist sicherer, diese Knoten zu speichern und später alle auf einmal zu löschen.
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// Sobald wir auf einen FieldEnd-Knoten vom Typ FieldTOC stoßen,
-	// Wir wissen, dass wir am Ende des aktuellen Inhaltsverzeichnisses angelangt sind und hören hier auf.
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ In dieser Zeile wird Ihr Dokument mit den vorgenommenen Änderungen gespeichert. Ersetzen`"modified-document.docx"` mit Ihrem gewünschten Dateinamen.
 
 ## Abschluss
-In diesem Tutorial haben wir eine Schritt-für-Schritt-Anleitung zum Entfernen des Inhaltsverzeichnisses aus einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET vorgestellt. Indem Sie den bereitgestellten Code und die Anweisungen befolgen, können Sie das Inhaltsverzeichnis ganz einfach entfernen und das Layout Ihres Dokuments verbessern. Denken Sie daran, den Verzeichnispfad und die Dateinamen an Ihre spezifischen Bedürfnisse anzupassen.
 
-### FAQs
+Und da haben Sie es! Das Entfernen eines Inhaltsverzeichnisses aus einem Word-Dokument mit Aspose.Words für .NET ist unkompliziert, wenn Sie es in diese einfachen Schritte unterteilen. Diese leistungsstarke Bibliothek hilft nicht nur beim Entfernen von Inhaltsverzeichnissen, sondern kann auch eine Vielzahl anderer Dokumentmanipulationen durchführen. Probieren Sie es einfach aus!
 
-#### F: Warum sollte ich Aspose.Words verwenden, um das Inhaltsverzeichnis in einem Word-Dokument zu entfernen?
+## FAQs
 
-A: Aspose.Words ist eine leistungsstarke und vielseitige Klassenbibliothek zum Bearbeiten von Word-Dokumenten in .NET-Anwendungen. Durch die Verwendung von Aspose.Words können Sie das Inhaltsverzeichnis effektiv aus Ihren Dokumenten entfernen, was nützlich sein kann, wenn das Inhaltsverzeichnis überflüssig oder unnötig ist. Dadurch können Sie den Inhalt Ihres Dokuments individuell anpassen und seine Gesamtpräsentation verbessern.
+### 1. Was ist Aspose.Words für .NET?
 
-#### F: Wie lade ich ein Dokument in Aspose.Words für .NET hoch?
+Aspose.Words für .NET ist eine robuste .NET-Bibliothek zur Dokumentbearbeitung, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert zu erstellen, zu ändern und zu konvertieren.
 
-A: Um das Inhaltsverzeichnis in einem Word-Dokument zu entfernen, müssen Sie das Dokument zunächst mit der Load()-Methode von Aspose.Words in den Speicher laden. Hier ist ein Beispielcode zum Laden eines Dokuments aus einem bestimmten Verzeichnis:
+### 2. Kann ich Aspose.Words kostenlos nutzen?
 
-```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ Ja, Sie können Aspose.Words mit a verwenden[Kostenlose Testphase](https://releases.aspose.com/) oder holen Sie sich ein[temporäre Lizenz](https://purchase.aspose.com/temporary-license/).
 
-// Laden Sie das Dokument
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. Ist es möglich, andere Felder mit Aspose.Words zu entfernen?
 
- Ersetzen`"YOUR DOCUMENTS DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokument.
+Absolut! Sie können jedes Feld entfernen, indem Sie seinen Typ in der Filterbedingung angeben.
 
-#### F: Wie entferne ich das Inhaltsverzeichnis in einem Dokument mit Aspose.Words?
+### 4. Benötige ich Visual Studio, um Aspose.Words zu verwenden?
 
- A: Um das Inhaltsverzeichnis zu entfernen, müssen Sie es durchlaufen`FieldStart` Typknoten des Inhaltsverzeichnisses im Dokument. Sie können diese Knoten für den schnellen Zugriff speichern und eine Liste der zu löschenden Knoten erstellen. Hier ist ein Beispielcode:
+Während Visual Studio für eine einfachere Entwicklung dringend empfohlen wird, können Sie jede IDE verwenden, die .NET unterstützt.
 
-```csharp
-// Speichern Sie FieldStart-Knoten von Inhaltsverzeichnisfeldern im Dokument, um schnell darauf zugreifen zu können.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//Dies ist eine Liste zum Speichern von Knoten, die innerhalb des angegebenen Inhaltsverzeichnisses gefunden werden. Sie werden am Ende dieser Methode gelöscht.
-List<Node> nodeList = new List<Node>();
+### 5. Wo finde ich weitere Informationen zu Aspose.Words?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// Überprüfen Sie, ob der angegebene Inhaltsverzeichnisindex vorhanden ist.
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// Es ist sicherer, diese Knoten zu speichern und am Ende alle zu löschen.
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// Wenn wir auf einen FieldEnd-Knoten vom Typ FieldTOC stoßen,
-//Wir wissen, dass wir am Ende des aktuellen Inhaltsverzeichnisses angelangt sind und hören hier auf.
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### F: Wie speichere ich ein bearbeitetes Dokument in Aspose.Words für .NET?
-
-A: Nach dem Löschen des Inhaltsverzeichnisses müssen Sie das geänderte Dokument mit der Save()-Methode speichern. Geben Sie den gewünschten Ausgabedateipfad und das Format (z. B. DOCX) für das bearbeitete Dokument an. Hier ist ein Beispielcode:
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ Eine ausführlichere Dokumentation finden Sie unter[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/).

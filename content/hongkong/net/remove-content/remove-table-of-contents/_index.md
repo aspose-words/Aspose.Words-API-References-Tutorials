@@ -2,216 +2,103 @@
 title: 刪除Word文檔中的目錄
 linktitle: 刪除Word文檔中的目錄
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 刪除 Word 文件中的目錄。
+description: 透過這個簡單易懂的教學課程，了解如何使用 Aspose.Words for .NET 刪除 Word 文件中的目錄 (TOC)。
 type: docs
 weight: 10
 url: /zh-hant/net/remove-content/remove-table-of-contents/
 ---
-在本教學中，我們將引導您了解如何使用 .NET 的 Aspose.Words 函式庫刪除 Word 文件中的目錄。目錄有時可能是多餘或不必要的，此程式碼將幫助您有效地刪除它。我們將提供逐步指南來幫助您理解並在您自己的 .NET 專案中實作程式碼。
+## 使用 Aspose.Words for .NET 刪除 Word 文件中的目錄
+
+您是否厭倦了處理 Word 文件中不需要的目錄 (TOC)？我們都經歷過這樣的情況——有時 TOC 是不必要的。幸運的是，Aspose.Words for .NET 可以輕鬆地以程式設計方式刪除 TOC。在本教程中，我將逐步指導您完成該過程，以便您可以立即掌握它。讓我們開始吧！
 
 ## 先決條件
-在開始之前，請確保您擁有以下物品：
-- C# 程式語言的應用知識
-- 專案中安裝的 .NET 的 Aspose.Words 函式庫
-- 包含要刪除的目錄的 Word 文檔
 
-## 步驟1：定義文檔目錄
-首先，您需要將目錄路徑設定為 Word 文件的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有適當路徑的程式碼中。
+在開始之前，讓我們確保您擁有所需的一切：
+
+1.  Aspose.Words for .NET 函式庫：如果您還沒有安裝，請從下列位置下載並安裝 Aspose.Words for .NET 函式庫：[Aspose. 發布](https://releases.aspose.com/words/net/).
+2. 開發環境：像 Visual Studio 這樣的 IDE 將使編碼變得更容易。
+3. .NET Framework：確保您已安裝 .NET Framework。
+4. Word 文件：有一個包含要刪除的目錄的 Word 文件 (.docx)。
+
+## 導入命名空間
+
+首先，讓我們導入必要的名稱空間。這將設定使用 Aspose.Words 的環境。
 
 ```csharp
-//文檔目錄的路徑
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## 第2步：上傳文件
-接下來，我們將Word文檔載入到一個實例中`Document`類別使用`Load`方法。
+現在，讓我們將從 Word 文件中刪除目錄的過程分解為清晰、可管理的步驟。
+
+## 第 1 步：設定您的文件目錄
+
+在我們操作您的文件之前，我們需要定義它的位置。這是您的文檔目錄路徑。
 
 ```csharp
-//載入文檔
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+代替`"YOUR DOCUMENT DIRECTORY"`以及文件資料夾的路徑。這是您的 Word 文件所在的位置。
+
+## 第 2 步：載入文檔
+
+接下來，我們需要將 Word 文件載入到我們的應用程式中。 Aspose.Words 讓這變得異常簡單。
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## 步驟 3：刪除目錄
-要刪除目錄，我們將循環遍歷 TOC（目錄）類型`FieldStart`文檔中的節點。我們將儲存這些節點，以便我們可以快速存取它們並建立要刪除的節點清單。
+代替`"your-document.docx"`與您的檔案名稱。這行程式碼會載入您的文檔，以便我們可以開始處理它。
+
+## 步驟 3：識別並刪除 TOC 字段
+
+這就是奇蹟發生的地方。我們將找到 TOC 欄位並將其刪除。
 
 ```csharp
-//將 TOC 欄位的 FieldStart 節點儲存在文件中以便快速存取。
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//這是一個列表，用於儲存在指定目錄中找到的節點。它們將在此方法結束時被刪除。
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+這是發生的事情：
+- `doc.Range.Fields`：這將存取文件中的所有欄位。
+- `.Where(f => f.Type == FieldType.FieldTOC)`：這會過濾欄位以僅查找屬於目錄的欄位。
+- `.ToList().ForEach(f => f.Remove())`：這會將過濾的欄位轉換為清單並刪除每個欄位。
 
-//檢查指定的TOC索引是否存在。
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## 第四步：儲存修改後的文檔
 
-bool isRemoving = true;
+最後，我們需要保存我們的更改。您可以用新名稱儲存文件以保留原始文件。
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     //儲存這些節點並在最後將它們全部刪除會更安全。
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     //當我們遇到FieldTOC類型的FieldEnd節點時，
-     //我們知道目前目錄已結束，我們就到此為止。
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### 使用 Aspose.Words for .NET 刪除目錄的範例原始程式碼 
-```csharp
-
-//文檔目錄的路徑
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-//載入文檔
-Document doc = new Document(dataDir + "your-document.docx");
-
-//將 TOC 欄位的 FieldStart 節點儲存在文件中以便快速存取。
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//這是一個列表，用於儲存在指定目錄中找到的節點。它們將在此方法結束時被刪除。
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-//確保傳遞的索引指定的目錄存在。
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	//儲存這些節點並稍後將它們全部刪除會更安全。
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	//一旦我們遇到 FieldTOC 類型的 FieldEnd 節點，
-	//我們知道我們已經到了當前目錄的末尾並在此停止。
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+此行保存您所做的更改的文件。代替`"modified-document.docx"`與您想要的檔案名稱。
 
 ## 結論
-在本教學中，我們提供了使用 .NET 的 Aspose.Words 函式庫從 Word 文件中刪除目錄的逐步指南。透過遵循提供的程式碼和說明，您可以輕鬆消除目錄並改進文件的佈局。請記住調整目錄路徑和檔案名稱以滿足您的特定需求。
 
-### 常見問題解答
+現在你就得到它了！一旦將其分解為以下簡單步驟，使用 Aspose.Words for .NET 從 Word 文件中刪除 TOC 就變得非常簡單。這個強大的程式庫不僅有助於刪除目錄，還可以處理無數其他文件操作。所以，繼續嘗試吧！
 
-#### Q：為什麼要使用 Aspose.Words 刪除 Word 文件中的目錄？
+## 常見問題解答
 
-答：Aspose.Words 是一個功能強大且多功能的類別庫，用於在 .NET 應用程式中操作 Word 文件。透過使用 Aspose.Words，您可以有效地從文件中刪除目錄，這在目錄冗餘或不必要的情況下非常有用。這使您可以自訂文件的內容並改進其整體演示。
+### 1. 什麼是 Aspose.Words for .NET？
 
-#### Q：如何在 Aspose.Words for .NET 中上傳文件？
+Aspose.Words for .NET 是一個強大的 .NET 文件操作庫，可讓開發人員以程式設計方式建立、修改和轉換 Word 文件。
 
-答：要刪除Word文件中的目錄，您必須先使用Aspose.Words的Load()方法將文件載入到記憶體中。以下是從特定目錄載入文件的範例程式碼：
+### 2. 我可以免費使用Aspose.Words嗎？
 
-```csharp
-//文檔目錄的路徑
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+是的，您可以將 Aspose.Words 與[免費試用](https://releases.aspose.com/)或得到一個[臨時執照](https://purchase.aspose.com/temporary-license/).
 
-//載入文檔
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. 是否可以使用Aspose.Words刪除其他欄位？
 
-代替`"YOUR DOCUMENTS DIRECTORY"`與文檔的實際路徑。
+絕對地！您可以透過在篩選條件中指定其類型來刪除任何欄位。
 
-#### Q：如何使用 Aspose.Words 刪除文件中的目錄？
+### 4. 我需要 Visual Studio 才能使用 Aspose.Words 嗎？
 
-答：要刪除 TOC，您需要迭代`FieldStart`鍵入文件中目錄的節點。您可以儲存這些節點以便快速存取並建立要刪除的節點清單。這是範例程式碼：
+雖然強烈建議使用 Visual Studio 來簡化開發，但您可以使用任何支援 .NET 的 IDE。
 
-```csharp
-//將 TOC 欄位的 FieldStart 節點儲存在文件中以便快速存取。
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//這是一個儲存在指定目錄中找到的節點的清單。它們將在此方法結束時被刪除。
-List<Node> nodeList = new List<Node>();
+### 5. 在哪裡可以找到有關 Aspose.Words 的更多資訊？
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-//檢查指定的目錄索引是否存在。
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-//儲存這些節點並在最後將它們全部刪除會更安全。
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-//當我們遇到FieldTOC類型的FieldEnd節點時，
-//我們知道目前目錄已結束，我們就到此為止。
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### Q：如何在 Aspose.Words for .NET 中儲存編輯後的文件？
-
-答：刪除目錄後，必須使用 Save() 方法儲存修改後的文件。為編輯的文檔指定所需的輸出檔案路徑和格式（例如 DOCX）。這是範例程式碼：
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+如需更詳細的文檔，請訪問[Aspose.Words for .NET API 文檔](https://reference.aspose.com/words/net/).

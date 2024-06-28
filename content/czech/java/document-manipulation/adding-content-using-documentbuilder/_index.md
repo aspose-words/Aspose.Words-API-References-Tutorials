@@ -38,7 +38,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Založte stůl
 Table table = builder.startTable();
 
-// Vložte buňky a obsah
+// Vložit buňky a obsah
 builder.insertCell();
 builder.write("Cell 1");
 
@@ -102,7 +102,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Definujte položky pro pole se seznamem
 String[] items = { "Option 1", "Option 2", "Option 3" };
 
-// Vložte pole formuláře pole se seznamem
+// Vložte pole formuláře se seznamem
 builder.insertComboBox("DropDown", items, 0);
 
 // Uložte dokument
@@ -122,7 +122,7 @@ builder.insertHtml("<p>This is an HTML paragraph.</p>");
 doc.save("path/to/your/document.docx");
 ```
 
-## Přidávání hypertextových odkazů
+## Přidání hypertextových odkazů
 
 ```java
 Document doc = new Document();

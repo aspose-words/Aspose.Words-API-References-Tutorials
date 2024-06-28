@@ -50,7 +50,7 @@ if (textBox1.IsValidLinkTarget(textBox2))
 
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET eine Verknüpfung zwischen zwei Textfeldern in einem Word-Dokument erstellen. Mithilfe dieser Schritt-für-Schritt-Anleitung konnten Sie das Dokument einrichten, die Textfeldformen erstellen, auf die Textfelder zugreifen, die Gültigkeit des Linkziels überprüfen und schließlich den Link selbst erstellen.
 
-### FAQs zum Erstellen eines Links in Word
+### FAQs zum Erstellen von Links in Word
 
 #### F: Welche Bibliothek wird zum Verknüpfen von Textfeldern in Word mit Aspose.Words für .NET verwendet?
 

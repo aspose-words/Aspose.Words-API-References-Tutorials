@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Konfigurieren Sie die Ladeoptionen mit den Schriftarteinstellungen
- Als Nächstes erstellen wir eine Instanz von`LoadOptions`und geben Sie Schriftarteinstellungen an, indem Sie eine neue Instanz von erstellen`FontSettings` und es zuordnen`loadOptions.FontSettings`.
+ Als Nächstes erstellen wir eine Instanz von`LoadOptions` und geben Sie Schriftarteinstellungen an, indem Sie eine neue Instanz von erstellen`FontSettings` und es zuordnen`loadOptions.FontSettings`.
 
 ```csharp
 // Konfigurieren Sie Ladeoptionen mit Schriftarteinstellungen
@@ -61,7 +61,7 @@ In diesem Tutorial haben wir gesehen, wie man Ladeoptionen mit Schriftarteinstel
 
 #### F: Welche anderen Schriftarteinstellungen kann ich mit den Ladeoptionen in Aspose.Words angeben?
 
-A: Neben der Angabe der Standardschriftart können Sie mithilfe der entsprechenden Eigenschaften auch andere Schriftarteinstellungen festlegen, z. B. die Standardkodierung`LoadOptions` Klasse, wie z`DefaultEncoding`.
+ A: Neben der Angabe der Standardschriftart können Sie mithilfe der entsprechenden Eigenschaften von auch andere Schriftarteinstellungen festlegen, z. B. die Standardkodierung`LoadOptions` Klasse, wie z`DefaultEncoding`.
 
 #### F: Was passiert, wenn die angegebene Standardschriftart beim Laden des Dokuments nicht verfügbar ist?
 

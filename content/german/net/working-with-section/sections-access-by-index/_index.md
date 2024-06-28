@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/working-with-section/sections-access-by-index/
 ---
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET über einen Index auf Abschnitte eines Word-Dokuments zugreifen. Durch den Indexzugriff auf Abschnitte können Sie auf einen bestimmten Abschnitt in Ihrem Dokument zielen und dessen Einstellungen ändern. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET über einen Index auf Abschnitte eines Word-Dokuments zugreifen. Durch den Zugriff auf Abschnitte über den Index können Sie einen bestimmten Abschnitt in Ihrem Dokument gezielt auswählen und dessen Einstellungen ändern. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
 
 ## Voraussetzungen
 Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
@@ -36,7 +36,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Schritt 3: Abschnittseinstellungen bearbeiten
-Um die Abschnittseinstellungen zu ändern, verwenden wir die Eigenschaften der Abschnitte`PageSetup` Objekt. In diesem Beispiel ändern wir die Ränder, den Kopf- und Fußzeilenabstand sowie den Textspaltenabstand.
+ Um die Abschnittseinstellungen zu ändern, verwenden wir die Eigenschaften der Abschnitte`PageSetup`Objekt. In diesem Beispiel ändern wir die Ränder, den Kopf- und Fußzeilenabstand sowie den Textspaltenabstand.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm
@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### F: Wie ändere ich Abschnittseinstellungen in Aspose.Words für .NET?
 
- A: Um die Einstellungen eines Abschnitts zu ändern, können Sie die Eigenschaften des Abschnitts verwenden`PageSetup` Objekt. In diesem Beispiel ändern wir die Ränder, den Kopf- und Fußzeilenabstand sowie den Textspaltenabstand.
+ A: Um die Einstellungen eines Abschnitts zu ändern, können Sie die Eigenschaften des Abschnitts verwenden.`PageSetup`Objekt. In diesem Beispiel ändern wir die Ränder, den Kopf- und Fußzeilenabstand sowie den Textspaltenabstand.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm

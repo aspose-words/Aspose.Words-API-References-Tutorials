@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/programming-with-styles-and-themes/insert-style-separator/
 ---
-I den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för att infoga en stilavgränsare i ett dokument med Aspose.Words för .NET. Vi kommer att skapa ett nytt dokument, definiera anpassade stilar och infoga en stilavgränsare.
+den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för att infoga en stilavgränsare i ett dokument med Aspose.Words för .NET. Vi kommer att skapa ett nytt dokument, definiera anpassade stilar och infoga en stilavgränsare.
 
 ## Steg 1: Sätta upp miljön
 
@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- I det här steget skapar vi en ny`Document` objekt och en tillhörande`DocumentBuilder` objekt.
+ det här steget skapar vi en ny`Document` objekt och tillhörande`DocumentBuilder` objekt.
 
 ## Steg 3: Skapa och konfigurera den anpassade stilen
 
@@ -98,7 +98,7 @@ För att ställa in miljön måste du se till att du har Aspose.Words för .NET 
 
 #### Hur skapar och konfigurerar jag en anpassad stil?
 
- För att skapa en anpassad stil kan du använda`Styles.Add` metod för`Document` objekt. Ange stiltyp (t.ex.`StyleType.Paragraph`och ange ett namn för stilen. När du har skapat det kan du ändra teckensnittsegenskaperna för stilobjektet för att konfigurera dess utseende.
+ För att skapa en anpassad stil kan du använda`Styles.Add` metod för`Document` objekt. Ange stiltyp (t.ex.`StyleType.Paragraph`) och ange ett namn för stilen. När du har skapat det kan du ändra teckensnittsegenskaperna för stilobjektet för att konfigurera dess utseende.
 
 #### Hur infogar jag en stilavgränsare?
 
@@ -106,7 +106,7 @@ För att ställa in miljön måste du se till att du har Aspose.Words för .NET 
 
 #### Hur kan jag tillämpa olika stilar på olika textavsnitt?
 
- Du kan använda olika stilar på olika textavsnitt genom att ställa in`ParagraphFormat.StyleName` egendom av`DocumentBuilder` objekt. Innan du skriver texten kan du ställa in stilnamnet till önskad stil, och den efterföljande texten kommer att formateras därefter.
+ Du kan använda olika stilar på olika textavsnitt genom att ställa in`ParagraphFormat.StyleName` egendom av`DocumentBuilder`objekt. Innan du skriver texten kan du ställa in stilnamnet till önskad stil, och den efterföljande texten kommer att formateras därefter.
 
 #### Kan jag spara dokumentet i olika format?
 

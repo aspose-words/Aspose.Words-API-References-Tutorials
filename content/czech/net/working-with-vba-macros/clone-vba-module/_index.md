@@ -1,6 +1,6 @@
 ---
-title: Klonujte modul Vba z dokumentu aplikace Word
-linktitle: Klonujte modul Vba z dokumentu aplikace Word
+title: Klonovat modul Vba z dokumentu aplikace Word
+linktitle: Klonovat modul Vba z dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
 description: V tomto tutoriálu se dozvíte, jak klonovat modul VBA z dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs
@@ -81,7 +81,7 @@ Odpověď: Než budete moci klonovat modul VBA z dokumentu aplikace Word, musít
 
 #### Otázka: Jak nastavit adresář dokumentů v kódu?
 
- Odpověď: V poskytnutém kódu musíte nahradit`"YOUR DOCUMENTS DIRECTORY"` s příslušnou cestou k adresáři, kde se nachází váš dokument aplikace Word obsahující projekt VBA.
+ Odpověď: V poskytnutém kódu musíte nahradit.`"YOUR DOCUMENTS DIRECTORY"` s příslušnou cestou k adresáři, kde se nachází váš dokument aplikace Word obsahující projekt VBA.
 
 #### Otázka: Jak uložit cílový dokument pomocí klonovaného modulu VBA?
 

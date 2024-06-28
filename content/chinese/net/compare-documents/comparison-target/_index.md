@@ -58,7 +58,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
 这`Compare`方法将文档 A 与文档 B 进行比较，并将更改保存到文档 A。您可以指定用户名和比较日期以供参考。
 
-### 使用 Aspose.Words for .NET 的比较目标的示例源代码
+### 使用 Aspose.Words for .NET 比较目标的示例源代码
 
 
 ```csharp
@@ -90,7 +90,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 1. 使用 Aspose.Words 库设置您的开发环境。
 2. 通过引用 Aspose.Words 将必要的程序集添加到您的项目中。
 3. 使用以下命令初始化要比较的文档`Document`类或`DocumentBuilder`班级。
-4. 通过创建一个来配置比较选项`CompareOptions`对象并设置属性，例如`IgnoreFormatting`和`Target`（例如，`ComparisonTargetType.New`为比较目标）。
+4. 通过创建一个来配置比较选项`CompareOptions`对象并设置属性，例如`IgnoreFormatting`和`Target`（例如。，`ComparisonTargetType.New`为比较目标）。
 5. 使用`Compare`一个文档上的方法，传递另一个文档和`CompareOptions`对象作为参数。此方法将比较文档并将更改保存在第一个文档中。
 
 #### 问：这样做的目的是什么`Target` property in the `CompareOptions` class?

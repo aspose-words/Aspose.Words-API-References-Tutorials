@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 ---
 
-Ebben az oktatóanyagban lépésről lépésre végigvezetjük a táblázatsorok formázásának az Aspose.Words for .NET segítségével történő módosításához. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Ennek az oktatóanyagnak a végén tudni fogja, hogyan módosíthatja a Word-dokumentumokban lévő táblázatsorok szegélyeit, magasságát és sortörését az Aspose.Words for .NET segítségével.
+Ebben az oktatóanyagban lépésről lépésre végigvezetjük a táblázatsorok formázásának az Aspose.Words for .NET segítségével történő módosításához. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Az oktatóanyag végén tudni fogja, hogyan módosíthatja a Word-dokumentumokban lévő táblázatsorok szegélyeit, magasságát és sortörését az Aspose.Words for .NET segítségével.
 
 ## 1. lépés: Határozza meg a dokumentumkönyvtárat
 Először is be kell állítania a dokumentumkönyvtár elérési útját. Itt található a Word-dokumentum. Cserélje ki a "DOKUMENTUMKÖNYVTÁR" elemet a megfelelő elérési útra.

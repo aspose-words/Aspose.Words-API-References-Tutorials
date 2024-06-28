@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-markdown/quote/
 ---
 
-Ebben a példában elmagyarázzuk, hogyan használható az idézet funkció az Aspose-ban. A Words for .NET Quote a szövegrészek kiemelésére szolgál speciális kerettel.
+Ebben a példában elmagyarázzuk, hogyan kell használni az idézet funkciót az Aspose-val. A Words for .NET Quote a szövegrészek kiemelésére szolgál speciális kerettel.
 
 ## 1. lépés: Dokumentumgenerátor használata
 

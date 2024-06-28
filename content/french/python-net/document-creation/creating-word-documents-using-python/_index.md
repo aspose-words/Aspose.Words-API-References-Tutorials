@@ -20,7 +20,7 @@ Avant de nous lancer dans la mise en œuvre, il est crucial de comprendre la str
 
 ## Sélection de la bonne bibliothèque Python
 
-Pour atteindre notre objectif de générer des documents Word à l'aide de Python, nous avons besoin d'une bibliothèque fiable et riche en fonctionnalités. L'un des choix les plus populaires pour cette tâche est la bibliothèque « Aspose.Words for Python ». Il fournit un ensemble robuste d'API qui permettent une manipulation simple et efficace des documents. Explorons comment configurer et utiliser cette bibliothèque pour notre projet.
+Pour atteindre notre objectif de générer des documents Word à l'aide de Python, nous avons besoin d'une bibliothèque fiable et riche en fonctionnalités. L'un des choix les plus populaires pour cette tâche est la bibliothèque « Apose.Words for Python ». Il fournit un ensemble robuste d'API qui permettent une manipulation simple et efficace des documents. Explorons comment configurer et utiliser cette bibliothèque pour notre projet.
 
 ## Installation d'Aspose.Words pour Python
 

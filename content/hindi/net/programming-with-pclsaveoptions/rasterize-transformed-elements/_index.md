@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## बैकअप विकल्प कॉन्फ़िगर करना
 
-अगला कदम पीसीएल प्रारूप में कनवर्ट करने के लिए सेव विकल्पों को कॉन्फ़िगर करना है। PclSaveOptions क्लास का उपयोग करें और RasterizeTransformedElements प्रॉपर्टी को गलत पर सेट करें। इसे करने का तरीका यहां बताया गया है:
+अगला कदम पीसीएल प्रारूप में कनवर्ट करने के लिए सेव विकल्पों को कॉन्फ़िगर करना है। PclSaveOptions क्लास का उपयोग करें और RasterizeTransformedElements प्रॉपर्टी को गलत पर सेट करें। यह कैसे करना है यहां बताया गया है:
 
 ```csharp
 PclSaveOptions saveOptions = new PclSaveOptions

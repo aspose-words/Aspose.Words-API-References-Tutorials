@@ -17,7 +17,7 @@ url: /ja/net/programming-with-charts/default-options-for-data-labels/
 - Aspose.Words for .NET ライブラリがインストールされています。 NuGet パッケージ マネージャーを使用してダウンロードしてインストールできます。
 - 出力ドキュメントが保存されるドキュメント ディレクトリ パス。
 
-## ステップ 2: 新しいドキュメントを作成し、グラフを挿入する
+## ステップ 2: 新しいドキュメントを作成し、グラフを挿入します。
 
 まず、新しいものを作成しましょう`Document`オブジェクトと`DocumentBuilder`ドキュメントを作成します。
 
@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 Aspose.Words for .NET は、開発者が .NET アプリケーションを使用してプログラムで Word ドキュメントを作成、操作、保存できるようにするライブラリです。グラフなどの文書要素を含むワープロ向けの幅広い機能を提供します。
 
 #### Q2. Aspose.Words for .NET をインストールするにはどうすればよいですか?
-Aspose.Words for .NET をインストールするには、Visual Studio の NuGet パッケージ マネージャーを使用してダウンロードします。 NuGet パッケージ マネージャーで「Aspose.Words」を検索し、プロジェクトにインストールするだけです。
+Aspose.Words for .NET をインストールするには、Visual Studio の NuGet パッケージ マネージャーを使用してダウンロードします。 NuGet パッケージ マネージャーで「Apose.Words」を検索し、プロジェクトにインストールするだけです。
 
 #### Q3. Aspose.Words for .NET を使用してグラフの他の側面をカスタマイズできますか?
 はい、Aspose.Words for .NET を使用すると、グラフの種類、軸ラベル、凡例、プロット領域など、グラフのさまざまな側面をカスタマイズできます。チャート オブジェクトのさまざまなプロパティにアクセスして変更し、目的の外観と動作を実現できます。

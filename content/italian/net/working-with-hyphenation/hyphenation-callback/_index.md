@@ -2,107 +2,148 @@
 title: Richiamata con sillabazione
 linktitle: Richiamata con sillabazione
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come utilizzare il callback di sillabazione in Aspose.Words per .NET per gestire la sillabazione delle parole.
+description: Impara a implementare la richiamata di sillabazione in Aspose.Words per .NET per migliorare la formattazione dei documenti con questa guida passo passo completa.
 type: docs
 weight: 10
 url: /it/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-In questo tutorial passo passo, ti mostreremo come utilizzare la funzione di callback di sillabazione in Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
+## introduzione
 
- Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria da[Aspose.Releases]https://releases.aspose.com/words/net/.
+Ehilà! Ti sei mai trovato intrappolato nelle complessità della formattazione del testo, soprattutto quando hai a che fare con lingue che richiedono la sillabazione? Non sei solo. La sillabazione, sebbene cruciale per il corretto layout del testo, può essere un po’ un grattacapo. Ma indovina un po? Aspose.Words per .NET ti copre le spalle. Questa potente libreria ti consente di gestire la formattazione del testo senza problemi, inclusa la gestione della sillabazione attraverso un meccanismo di callback. Incuriosito? Immergiamoci nel nocciolo della questione di come è possibile implementare un callback di sillabazione utilizzando Aspose.Words per .NET.
 
-## Passaggio 1: salva il promemoria di sillabazione
+## Prerequisiti
 
- Innanzitutto, registreremo la richiamata di sillabazione utilizzando un file custom`CustomHyphenationCallback` classe. Ciò ci consentirà di gestire la sillabazione delle parole secondo le nostre regole:
+Prima di sporcarci le mani con il codice, assicuriamoci di avere tutto ciò di cui hai bisogno:
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  Aspose.Words per .NET: assicurati di avere la libreria. Puoi[scaricalo qui](https://releases.aspose.com/words/net/).
+2. IDE: un ambiente di sviluppo come Visual Studio.
+3. Conoscenza di base di C#: comprensione di C# e .NET framework.
+4. Dizionari di sillabazione: dizionari di sillabazione per le lingue che intendi utilizzare.
+5.  Licenza Aspose: una licenza Aspose valida. Puoi ottenere un[licenza temporanea](https://purchase.aspose.com/temporary-license/) se non ne hai uno.
 
- Assicurati di aver implementato il file`CustomHyphenationCallback` lezione in base alle tue esigenze specifiche.
+## Importa spazi dei nomi
 
-## Passaggio 2: caricare il documento e applicare la sillabazione
-
-Successivamente, carica il documento dalla directory specificata e sillaba le parole utilizzando Aspose.Words:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## Passaggio 3: gestione degli errori del dizionario mancanti
-
-Nel caso in cui manchi un dizionario di sillabazione, cattureremo l'eccezione corrispondente e visualizzeremo un messaggio di errore:
+Per prima cosa, importiamo gli spazi dei nomi necessari. Ciò garantisce che il nostro codice abbia accesso a tutte le classi e i metodi di cui abbiamo bisogno da Aspose.Words.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## Passaggio 4: pulizia e disattivazione del promemoria di sillabazione
+## Passaggio 1: registrare la richiamata di sillabazione
 
-Infine, per motivi di pulizia e per disattivare il promemoria di sillabazione, eseguire i seguenti passaggi:
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-Ciò pulisce e disabilita il promemoria di sillabazione al termine dell'elaborazione.
-
-COSÌ ! Hai utilizzato con successo la richiamata di sillabazione in Aspose.Words per .NET.
-
-### Codice sorgente di esempio per la richiamata di sillabazione con Aspose.Words per .NET
+Per iniziare, dobbiamo registrare la nostra richiamata di sillabazione. Qui è dove diciamo ad Aspose.Words di utilizzare la nostra logica di sillabazione personalizzata.
 
 ```csharp
 try
 {
-	 // Registra la richiamata di sillabazione.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // Registra la richiamata di sillabazione.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ Qui creiamo un'istanza del nostro callback personalizzato e lo assegniamo a`Hyphenation.Callback`.
+
+## Passaggio 2: definire il percorso del documento
+
+Successivamente, dobbiamo definire la directory in cui sono archiviati i nostri documenti. Questo è fondamentale poiché caricheremo e salveremo i documenti da questo percorso.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo dei tuoi documenti.
+
+## Passaggio 3: caricare il documento
+
+Ora carichiamo il documento che richiede la sillabazione.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ Qui stiamo caricando un documento di testo tedesco. Puoi sostituire`"German text.docx"` con il nome file del tuo documento.
+
+## Passaggio 4: salva il documento
+
+Dopo aver caricato il documento, lo salviamo in un nuovo file, applicando il callback di sillabazione nel processo.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+Questa riga salva il documento come PDF con la sillabazione applicata.
+
+## Passaggio 5: gestire l'eccezione del dizionario di sillabazione mancante
+
+A volte, potresti riscontrare un problema in cui manca il dizionario di sillabazione. Gestiamolo.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo per adattarlo alle tue esigenze specifiche.
+In questo blocco catturiamo l'eccezione specifica relativa ai dizionari mancanti e stampiamo il messaggio.
 
-### Domande frequenti
+## Passaggio 6: implementare la classe di callback di sillabazione personalizzata
 
-#### D: Che cos'è un promemoria di sillabazione in Aspose.Words?
+ Ora implementiamo il file`CustomHyphenationCallback` classe che gestisce la richiesta di dizionari di sillabazione.
 
-A: Un promemoria di sillabizzazione in Aspose.Words è una funzionalità che ti consente di personalizzare il modo in cui le parole vengono sillabizzate nei tuoi documenti. Utilizzando un promemoria di sillabazione, è possibile specificare regole personalizzate per la sillabazione delle parole, che possono essere utili per lingue specifiche o scenari particolari in cui la sillabazione predefinita non produce i risultati desiderati.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // Registra il dizionario per la lingua richiesta.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### Q: Come impostare un promemoria di sillabazione in Aspose.Words?
+ In questa classe, il`RequestDictionary` viene chiamato ogni volta che è necessario un dizionario di sillabazione. Controlla la lingua e registra il dizionario appropriato.
 
- R: Per definire un callback di sillabazione in Aspose.Words, è necessario creare una classe che implementi il`HyphenationCallback` interfaccia e implementare il`HandleWord()` metodo. Questo metodo verrà chiamato per ogni parola incontrata durante la sillabazione. Puoi applicare regole di sillabazione personalizzate e restituire la parola sillabata. Quindi puoi associare la richiamata di sillabazione utilizzando il file`Document.HyphenationCallback` proprietà del tuo documento
+## Conclusione
 
-#### D: Qual è il vantaggio di utilizzare un promemoria di sillabazione in Aspose.Words?
+E il gioco è fatto! Hai appena imparato come implementare un callback di sillabazione in Aspose.Words per .NET. Seguendo questi passaggi, puoi assicurarti che i tuoi documenti siano ben formattati, indipendentemente dalla lingua. Che tu abbia a che fare con l'inglese, il tedesco o qualsiasi altra lingua, questo metodo ti consente di gestire la sillabazione senza sforzo.
 
-R: Il vantaggio di utilizzare un promemoria di sillabazione in Aspose.Words è la possibilità di personalizzare il modo in cui le parole vengono sillabate nei documenti. Ciò ti offre un maggiore controllo sulla sillabazione, soprattutto per lingue specifiche o scenari in cui la sillabazione predefinita non fornisce i risultati desiderati. Puoi applicare regole specifiche ad ogni parola per ottenere una sillabazione precisa in base alle tue esigenze.
+## Domande frequenti
 
-#### D: Quali sono alcuni scenari comuni in cui l'utilizzo di un promemoria per la sillabazione può essere utile?
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria di manipolazione di documenti che consente agli sviluppatori di creare, modificare e convertire documenti a livello di codice.
 
-R: L'uso di un booster di sillabazione può essere utile in diversi scenari, come ad esempio:
-- Sillabizzazione di parole in lingue specifiche che hanno particolari regole di sillabazione.
-- L'applicazione di regole di sillabazione personalizzate per acronimi o parole tecniche.
-- Adattamento della sillabazione in base alle preferenze stilistiche o agli standard tipografici.
+### Perché la sillabazione è importante nella formattazione dei documenti?
+La sillabazione migliora il layout del testo suddividendo le parole nei punti appropriati, garantendo un documento più leggibile e visivamente accattivante.
 
-#### D: Come posso testare la sillabazione personalizzata con un promemoria di sillabazione in Aspose.Words?
+### Posso usare Aspose.Words gratuitamente?
+ Aspose.Words offre una prova gratuita. Puoi prenderlo[Qui](https://releases.aspose.com/).
 
- A: Per testare la sillabazione personalizzata con un promemoria di sillabazione in Aspose.Words, è possibile creare un documento di prova contenente parole per le quali si desidera applicare regole di sillabazione personalizzate. Quindi puoi impostare la richiamata di sillabazione personalizzata, chiamare il file`Document.Range.Replace()` metodo per sostituire le parole nel documento e utilizzare il metodo`Hyphenate()` metodo del`Hyphenation` class per ottenere la sillabazione delle parole. È quindi possibile formattare le parole sillabate secondo necessità, ad esempio aggiungendo trattini tra le sillabe.
+### Come posso ottenere un dizionario di sillabazione?
+Puoi scaricare dizionari di sillabazione da varie risorse online o crearne uno tuo, se necessario.
+
+### Cosa succede se manca un dizionario di sillabazione?
+ Se manca un dizionario, il`RequestDictionary` Il metodo genera un'eccezione, che puoi gestire per informare l'utente o fornire un fallback.

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-markdown/image/
 ---
 
-W tym przykładzie wyjaśnimy, jak używać funkcji obrazu w Aspose.Words dla .NET. Obrazy umożliwiają wstawianie ilustracji i grafik do dokumentu.
+tym przykładzie wyjaśnimy, jak używać funkcji obrazu w Aspose.Words dla .NET. Obrazy umożliwiają wstawianie ilustracji i grafik do dokumentu.
 
 ## Krok 1: Korzystanie z generatora dokumentów
 
@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Wstawianie obrazu
 
- Możemy wstawić obraz za pomocą`Shape` class i określenie typu obrazu, tutaj`ShapeType.Image` Ustawiamy także typ zawijania obrazu`WrapType.Inline`.
+ Możemy wstawić obraz za pomocą`Shape` class i określenie typu obrazu, tutaj`ShapeType.Image` . Ustawiamy także typ zawijania obrazu`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji obrazów w Aspose.W
 
 #### P: Czy mogę wstawić obraz z adresu URL w Aspose.Words?
 
- O: Tak, możesz wstawić obraz z adresu URL w Aspose.Words. Możesz użyć tego samego`InsertImage` metodę i określ adres URL obrazu zamiast ścieżki pliku lokalnego.
+ O: Tak, możesz wstawić obraz z adresu URL w Aspose.Words. Możesz użyć tego samego`InsertImage`metodę i określ adres URL obrazu zamiast ścieżki pliku lokalnego.
 
 #### P: Jak mogę zmienić rozmiar obrazu w Aspose.Words?
 
@@ -69,7 +69,7 @@ Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji obrazów w Aspose.W
 
 #### P: Czy mogę zastosować filtry do obrazów w Aspose.Words?
 
-O: Tak, możesz zastosować filtry do obrazów w Aspose.Words. Na przykład możesz zastosować filtr rozmycia do obrazu, korzystając z opcji`ApplyGaussianBlur` metoda`Shape` obiekt.
+ O: Tak, możesz zastosować filtry do obrazów w Aspose.Words. Na przykład możesz zastosować filtr rozmycia do obrazu, korzystając z opcji`ApplyGaussianBlur` metoda`Shape` obiekt.
 
 #### P: Jak mogę zastąpić jeden obraz innym w Aspose.Words?
 

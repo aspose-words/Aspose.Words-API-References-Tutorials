@@ -64,12 +64,12 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şe
 
 #### S: Farklı diller için heceleme sözlüğü dosyalarını nerede bulabilirim?
 
-C: Farklı diller için heceleme sözlüğü dosyalarını çeşitli çevrimiçi kaynaklarda bulabilirsiniz. Bu dosyalar genellikle XML veya TEX formatındadır. Farklı diller için açık kaynak heceleme sözlüklerini, dilbilim projelerine ayrılmış web sitelerinde veya kaynak kodu depolarında bulabilirsiniz.
+C: Farklı diller için heceleme sözlüğü dosyalarını çeşitli çevrimiçi kaynaklarda bulabilirsiniz. Bu dosyalar genellikle XML veya TEX formatındadır. Farklı diller için açık kaynaklı heceleme sözlüklerini, dilbilim projelerine ayrılmış web sitelerinde veya kaynak kod depolarında bulabilirsiniz.
 
 #### S: Yüklenen hece sözlüğünü Aspose.Words'teki bir belgeye nasıl uygulayabilirim?
 
- C: Yüklenen heceleme sözlüğünü Aspose.Words'teki bir belgeye uygulamak için belgedeki kelimelerin üzerinde yineleme yapmanız ve`Hyphenate()` yöntemi`Hyphenation`Kelimelerin hecelemesini almak için sınıf. Daha sonra hecelenmiş sözcükleri gerektiği gibi biçimlendirebilirsiniz; örneğin hecelerin arasına kısa çizgi ekleyerek.
+C: Yüklenen heceleme sözlüğünü Aspose.Words'teki bir belgeye uygulamak için belgedeki kelimelerin üzerinde yineleme yapmanız ve`Hyphenate()` yöntemi`Hyphenation` Kelimelerin hecelemesini almak için sınıf. Daha sonra hecelenmiş sözcükleri gerektiği gibi biçimlendirebilirsiniz; örneğin hecelerin arasına kısa çizgi ekleyerek.
 
 #### S: Aspose.Words'te heceleme için hangi diller destekleniyor?
 
-C: Aspose.Words, İngilizce, Fransızca, İspanyolca, Almanca, İtalyanca, Felemenkçe, Rusça, Portekizce, İsveççe, Norveççe, Danca, Fince, Lehçe, Çekçe ve çok daha fazlası dahil olmak üzere birçok dil için hecelemeyi destekler. Heceleme için desteklenen dillerin tam listesi için Aspose.Words belgelerine bakın.
+C: Aspose.Words, İngilizce, Fransızca, İspanyolca, Almanca, İtalyanca, Felemenkçe, Rusça, Portekizce, İsveççe, Norveççe, Danca, Fince, Lehçe, Çekçe ve çok daha fazlası dahil olmak üzere birçok dilde hecelemeyi destekler. Heceleme için desteklenen dillerin tam listesi için Aspose.Words belgelerine bakın.

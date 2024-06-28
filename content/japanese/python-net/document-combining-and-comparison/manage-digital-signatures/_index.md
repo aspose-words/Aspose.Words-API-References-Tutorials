@@ -107,7 +107,7 @@ digital_signature.options.sign_date_time = datetime.now()
 
 ### 互換性のある証明書の種類は何ですか?
 
-Aspose.Words は、デジタル署名に一般的に使用される PFX ファイルを含む X.509 証明書をサポートします。
+Aspose.Words は、デジタル署名に一般的に使用される PFX ファイルを含む X.509 証明書をサポートしています。
 
 ### デジタル署名は法的に有効ですか?
 

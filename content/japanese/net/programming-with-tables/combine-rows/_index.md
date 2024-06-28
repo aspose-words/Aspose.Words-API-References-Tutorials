@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/combine-rows/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Tables.docx");
 
 //テーブルへのアクセス
@@ -72,4 +72,4 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内の表の行を結合する方法を学習しました。このステップバイステップ ガイドに従い、提供されている C# コードを実装すると、Word 文書内の表の行をプログラムで操作できます。この機能を使用すると、データを効率的に結合してテーブルに整理できます。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内の表の行を結合する方法を学びました。このステップバイステップ ガイドに従い、提供されている C# コードを実装すると、Word 文書内の表の行をプログラムで操作できます。この機能を使用すると、データを効率的に結合してテーブルに整理できます。

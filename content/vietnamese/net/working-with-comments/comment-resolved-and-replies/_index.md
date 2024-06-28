@@ -84,7 +84,7 @@ Chúc mừng! Bạn đã học thành công cách giải quyết các nhận xé
 
 #### Câu hỏi: Làm cách nào để thêm câu trả lời cho nhận xét đã được giải quyết trong Aspose.Words cho .NET?
 
- Đáp: Mặc dù các nhận xét đã giải quyết bị ẩn theo mặc định trong tài liệu cuối cùng, bạn vẫn có thể thêm câu trả lời cho nhận xét đã giải quyết bằng cách sử dụng`Comment.AddReply` phương pháp chỉ định văn bản trả lời và nơi bạn muốn thêm nó.
+ Đáp: Mặc dù các nhận xét đã giải quyết bị ẩn theo mặc định trong tài liệu cuối cùng, bạn vẫn có thể thêm câu trả lời cho nhận xét đã giải quyết bằng cách sử dụng`Comment.AddReply`phương pháp chỉ định văn bản trả lời và nơi bạn muốn thêm nó.
 
 #### Câu hỏi: Làm cách nào để xem các nhận xét đã được giải quyết trong Aspose.Words dành cho .NET?
 

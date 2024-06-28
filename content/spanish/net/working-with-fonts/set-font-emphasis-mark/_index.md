@@ -16,14 +16,14 @@ Antes de comenzar, asegúrese de tener los siguientes elementos:
 - La biblioteca Aspose.Words para .NET instalada en su proyecto
 
 ## Paso 1: definir el directorio de documentos
- Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta apropiada.
+Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: Crea y personaliza el documento.
- Crear una instancia del`Document` clase y un asociado`DocumentBuilder` para construir el contenido del documento. Utilizar el`Font.EmphasisMark` propiedad para establecer el estilo de énfasis de fuente en`EmphasisMark.UnderSolidCircle` . Luego usa el`Write` y`Writeln` métodos de la`DocumentBuilder` para agregar texto con el énfasis de fuente especificado.
+ Crear una instancia del`Document` clase y un asociado`DocumentBuilder` para construir el contenido del documento. Utilizar el`Font.EmphasisMark` propiedad para establecer el estilo de énfasis de fuente en`EmphasisMark.UnderSolidCircle` . Luego usa el`Write` y`Writeln` métodos de la`DocumentBuilder` para agregar texto con la fuente especificada enfatizar.
 
 ```csharp
 Document document = new Document();

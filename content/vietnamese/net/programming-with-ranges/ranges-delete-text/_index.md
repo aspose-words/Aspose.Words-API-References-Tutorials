@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Mã này truy cập phần đầu tiên của tài liệu bằng chỉ mục`0` và xóa tất cả văn bản trong phạm vi đó.
+ Mã này truy cập phần đầu tiên của tài liệu bằng chỉ mục.`0` và xóa tất cả văn bản trong phạm vi đó.
 
 #### Câu hỏi: Tôi có thể xóa văn bản từ nhiều phạm vi trong tài liệu Word bằng Aspose.Words cho .NET không?
 

@@ -18,7 +18,7 @@ Zorg ervoor dat u over een geschikte ontwikkelomgeving beschikt voordat u begint
 
 ## Stap 2: Referenties toevoegen en naamruimten importeren
 
-Om Aspose.Words voor .NET te gebruiken, moet u verwijzingen naar de bibliotheek in uw project toevoegen. Klik met de rechtermuisknop op de map Referenties in uw project, selecteer 'Referentie toevoegen' en blader naar de locatie waar u de Aspose.Words voor .NET-bibliotheek hebt geïnstalleerd. Selecteer de juiste versie en klik op "OK" om de referentie toe te voegen.
+Om Aspose.Words voor .NET te gebruiken, moet u verwijzingen naar de bibliotheek in uw project toevoegen. Klik met de rechtermuisknop op de map Referenties in uw project, selecteer 'Verwijzing toevoegen' en blader naar de locatie waar u de Aspose.Words voor .NET-bibliotheek hebt geïnstalleerd. Selecteer de juiste versie en klik op "OK" om de referentie toe te voegen.
 
 Importeer vervolgens de benodigde naamruimten bovenaan uw C#-bestand:
 

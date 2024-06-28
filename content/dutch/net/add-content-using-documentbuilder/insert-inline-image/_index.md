@@ -2,74 +2,84 @@
 title: Inline-afbeelding invoegen in Word-document
 linktitle: Inline-afbeelding invoegen in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u inline afbeeldingen in Word-documenten invoegt met Aspose.Words voor .NET.
+description: Leer hoe u inline afbeeldingen in Word-documenten kunt invoegen met Aspose.Words voor .NET. Stapsgewijze handleiding met codevoorbeelden en veelgestelde vragen.
 type: docs
 weight: 10
 url: /nl/net/add-content-using-documentbuilder/insert-inline-image/
 ---
-In deze uitgebreide zelfstudie leert u hoe u inline-afbeeldingen invoegt in een Word-document met behulp van Aspose.Words voor .NET. Wij begeleiden u door het proces en voorzien u van de benodigde C#-codefragmenten. Aan het einde van deze handleiding kunt u afbeeldingen rechtstreeks aan de tekst van uw documenten toevoegen.
+## Invoering
+
+Op het gebied van documentverwerking met .NET-toepassingen staat Aspose.Words bekend als een robuuste oplossing voor het programmatisch manipuleren van Word-documenten. Een van de belangrijkste kenmerken is de mogelijkheid om moeiteloos inline afbeeldingen in te voegen, waardoor de visuele aantrekkingskracht en functionaliteit van uw documenten wordt verbeterd. In deze tutorial wordt dieper ingegaan op de manier waarop u Aspose.Words voor .NET kunt gebruiken om afbeeldingen naadloos in uw Word-documenten in te sluiten.
 
 ## Vereisten
-Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd op uw systeem.
 
-## Stap 1: Maak een nieuw document en DocumentBuilder
-Maak om te beginnen een nieuw document met behulp van de klasse Document en initialiseer een DocumentBuilder-object:
+Voordat u zich verdiept in het proces van het invoegen van inline afbeeldingen met Aspose.Words voor .NET, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+
+1. Visual Studio Environment: zorg ervoor dat Visual Studio is geïnstalleerd en klaar is om .NET-applicaties te maken en te compileren.
+2.  Aspose.Words voor .NET-bibliotheek: Download en installeer de Aspose.Words voor .NET-bibliotheek vanaf[hier](https://releases.aspose.com/words/net/).
+3. Basiskennis van C#: Bekendheid met de basisbeginselen van de programmeertaal C# zal nuttig zijn bij het implementeren van de codefragmenten.
+
+Laten we nu de stappen doorlopen om de benodigde naamruimten te importeren en een inline-afbeelding in te voegen met Aspose.Words voor .NET.
+
+## Naamruimten importeren
+
+Ten eerste moet u de vereiste naamruimten in uw C#-code importeren om toegang te krijgen tot de functionaliteiten van Aspose.Words voor .NET:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Deze naamruimten bieden toegang tot klassen en methoden die nodig zijn voor het manipuleren van Word-documenten en het verwerken van afbeeldingen.
+
+## Stap 1: Maak een nieuw document
+
+ Begin met het initialiseren van een nieuw exemplaar van het`Document` klasse en een`DocumentBuilder` om de documentconstructie te vergemakkelijken.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 2: Voeg een inlineafbeelding in
-Gebruik vervolgens de InsertImage-methode van de DocumentBuilder-klasse om een inline-afbeelding in het document in te voegen. Geef het afbeeldingsbestandspad op als parameter:
+## Stap 2: Voeg de inlineafbeelding in
+
+ Gebruik de`InsertImage` werkwijze van de`DocumentBuilder` class om een afbeelding op de huidige positie in het document in te voegen.
 
 ```csharp
-builder.InsertImage(ImagesDir + "Transparent background logo.png");
+string imagePath = "PATH_TO_YOUR_IMAGE_FILE";
+builder.InsertImage(imagePath);
 ```
+
+ Vervangen`"PATH_TO_YOUR_IMAGE_FILE"` met het daadwerkelijke pad naar uw afbeeldingsbestand. Deze methode integreert de afbeelding naadloos in het document.
 
 ## Stap 3: Sla het document op
-Nadat u de inline-afbeelding hebt ingevoegd, slaat u het document op in een bestand met behulp van de Save-methode van de Document-klasse:
+
+ Sla het document ten slotte op de gewenste locatie op met behulp van de`Save` werkwijze van de`Document` klas.
 
 ```csharp
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
+doc.Save(dataDir + "InsertInlineImage.docx");
 ```
 
-### Voorbeeldbroncode voor inline-afbeelding invoegen met Aspose.Words voor .NET
-Hier is de volledige broncode voor het invoegen van een inline-afbeelding met Aspose.Words voor .NET:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertImage(ImagesDir + "Transparent background logo.png");
-
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
-```
+Deze stap zorgt ervoor dat het document met de inline-afbeelding wordt opgeslagen met de opgegeven bestandsnaam.
 
 ## Conclusie
-Gefeliciteerd! U hebt met succes geleerd hoe u inline-afbeeldingen in een Word-document kunt invoegen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu naadloos afbeeldingen toevoegen aan de tekst van uw documenten.
 
-Inline-afbeeldingen zijn handig voor verschillende scenario's, zoals het rechtstreeks toevoegen van illustraties, logo's of andere visuele elementen aan de stroom van het document.
+Concluderend: het integreren van inline afbeeldingen in Word-documenten met Aspose.Words voor .NET is een eenvoudig proces dat de visualisatie en functionaliteit van documenten verbetert. Door de hierboven beschreven stappen te volgen, kunt u afbeeldingen in uw documenten efficiënt programmatisch manipuleren, waarbij u gebruik maakt van de kracht van Aspose.Words.
 
-### Veelgestelde vragen over het invoegen van een inline-afbeelding in een Word-document
+## Veelgestelde vragen
 
-#### Vraag: Kan ik het formaat van de inline afbeeldingen in het Word-document wijzigen?
+### Kan ik meerdere afbeeldingen in één Word-document invoegen met Aspose.Words voor .NET?
+ Ja, u kunt meerdere afbeeldingen invoegen door uw afbeeldingsbestanden te doorlopen en aan te roepen`builder.InsertImage` voor elk beeld.
 
-A: Ja, u kunt het formaat van de inline afbeeldingen wijzigen met Aspose.Words voor .NET. Nadat u de afbeelding hebt ingevoegd, kunt u de grootte ervan manipuleren door de breedte- en hoogte-eigenschappen aan te passen van het Shape-object dat de afbeelding vertegenwoordigt.
+### Ondersteunt Aspose.Words voor .NET het invoegen van afbeeldingen met een transparante achtergrond?
+Ja, Aspose.Words voor .NET ondersteunt het invoegen van afbeeldingen met een transparante achtergrond, waardoor de transparantie van de afbeelding in het document behouden blijft.
 
-#### Vraag: Is het mogelijk om alternatieve tekst toe te voegen aan inline afbeeldingen voor toegankelijkheidsdoeleinden?
+### Hoe kan ik het formaat van een inline afbeelding wijzigen die is ingevoegd met Aspose.Words voor .NET?
+ U kunt het formaat van een afbeelding wijzigen door de breedte- en hoogte-eigenschappen van het`Shape` voorwerp geretourneerd door`builder.InsertImage`.
 
-A: Ja, u kunt alternatieve tekst toevoegen aan inline afbeeldingen om de toegankelijkheid te verbeteren. Aspose.Words voor .NET ondersteunt de toevoeging van alternatieve tekst aan afbeeldingen, waardoor schermlezers en andere ondersteunende technologieën de afbeeldingsinhoud kunnen beschrijven voor visueel gehandicapte gebruikers.
+### Is het mogelijk om een inline afbeelding op een specifieke locatie binnen het document te plaatsen met Aspose.Words voor .NET?
+ Ja, u kunt de positie van een inline-afbeelding opgeven met behulp van de cursorpositie van de documentbouwer voordat u belt`builder.InsertImage`.
 
-#### Vraag: Kan ik opmaak of stijlen toepassen op de inline afbeeldingen?
-
-EEN: Absoluut! Aspose.Words voor .NET biedt uitgebreide opmaakopties voor inline afbeeldingen. U kunt verschillende stijlen, randen, effecten en andere opmaakkenmerken op de afbeeldingen toepassen, zodat deze overeenkomen met het visuele ontwerp van uw document.
-
-#### Vraag: Ondersteunt Aspose.Words voor .NET het invoegen van afbeeldingen uit een stream- of byte-array?
-
-A: Ja, u kunt inline afbeeldingen uit streams of byte-arrays invoegen met Aspose.Words voor .NET. Hierdoor kunt u werken met afbeeldingen die zijn geladen vanuit externe bronnen of met dynamisch gegenereerde afbeeldingen.
-
-#### Vraag: Kan ik afbeeldingen op specifieke posities in de tekstinhoud invoegen?
-
-A: Ja, de klasse DocumentBuilder in Aspose.Words voor .NET biedt nauwkeurige controle over de invoegpositie van inline afbeeldingen. U kunt binnen de tekst de exacte locatie opgeven waar de afbeelding moet worden ingevoegd.
+### Kan ik afbeeldingen van URL's insluiten in een Word-document met Aspose.Words voor .NET?
+Ja, u kunt afbeeldingen downloaden van URL's met behulp van .NET-bibliotheken en deze vervolgens in een Word-document invoegen met Aspose.Words voor .NET.

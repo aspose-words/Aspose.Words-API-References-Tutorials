@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### ページ番号変換で追加
+### ページ番号変換による追加
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -140,4 +140,4 @@ Aspose.Words for Java は、書式設定の維持、さまざまなページ設�
 
 ### ドキュメント間のヘッダーとフッターをリンクまたはリンク解除したい場合はどうすればよいですか?
 
-ヘッダーとフッターをリンクできます`linkToPrevious(true)`またはリンクを解除してください`linkToPrevious(false)`必要に応じて。
+ヘッダーとフッターをリンクできます`linkToPrevious(true)`またはリンクを解除します`linkToPrevious(false)`必要に応じて。

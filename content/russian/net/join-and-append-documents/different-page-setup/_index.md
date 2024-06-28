@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте параметры страницы для исходного документа.
 
- Настройте параметры страницы исходного документа, чтобы обеспечить правильное продолжение и нумерацию. В этом примере мы устанавливаем начало раздела на`SectionStart.Continuous` и возобновите нумерацию страниц. Мы также следим за тем, чтобы ширина, высота и ориентация страницы соответствовали последнему разделу целевого документа.
+ Настройте параметры страницы исходного документа, чтобы обеспечить правильное продолжение и нумерацию. В этом примере мы устанавливаем начало раздела на`SectionStart.Continuous`и возобновите нумерацию страниц. Мы также следим за тем, чтобы ширина, высота и ориентация страницы соответствовали последнему разделу целевого документа.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Шаг 4. Измените форматирование абзаца
 
- Чтобы сохранить правильное форматирование, просмотрите все абзацы исходного документа и установите`KeepWithNext`собственность`true`Это гарантирует, что абзацы останутся вместе во время процесса добавления.
+ Чтобы сохранить правильное форматирование, просмотрите все абзацы исходного документа и установите`KeepWithNext`собственность`true`. Это гарантирует, что абзацы останутся вместе во время процесса добавления.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Шаг 6. Сохраните целевой документ
 
- Наконец, сохраните измененный целевой документ, используя команду`Save` метод`Document` объект.
+Наконец, сохраните измененный целевой документ, используя команду`Save` метод`Document` Объект Object.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 	// Перезапустите нумерацию страниц с начала исходного документа.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Чтобы этого не произошло, если исходный документ имеет другие параметры настройки страницы, убедитесь, что
+	//Чтобы этого не произошло, если исходный документ имеет другие параметры настройки страницы, убедитесь, что
 	// настройки в последнем разделе целевого документа идентичны.
 	// Если в исходном документе есть дополнительные непрерывные разделы,
-	//это необходимо будет повторить для этих разделов.
+	// это необходимо будет повторить для этих разделов.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

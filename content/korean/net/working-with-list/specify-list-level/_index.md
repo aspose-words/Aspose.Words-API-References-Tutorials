@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## 6단계: 목록 서식 지정 중지
 
- 목록 서식 지정을 중지하려면 다음을 설정하세요.`null` ~로`List` 문서 생성기의 속성:
+ 목록 서식 지정을 중지하려면 다음을 설정하세요.`null` ~로`List`문서 생성기의 속성:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Microsoft Word 목록 템플릿 중 하나를 기반으로 번호 매기기 목록 만들기
+// Microsoft Word 목록 템플릿 중 하나를 기반으로 번호 매기기 목록을 만듭니다.
 //문서 작성기의 현재 단락에 적용합니다.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Microsoft Word 목록 템플릿 중 하나를 기반으로 글머리 기호 목록 만들기
+// Microsoft Word 목록 템플릿 중 하나를 기반으로 글머리 기호 목록을 만듭니다.
 //문서 작성기의 현재 단락에 적용합니다.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### Q: Aspose.Words의 번호 목록에 추가 레벨을 추가할 수 있나요?
 
- A: 예, Aspose.Words의 번호 목록에 추가 수준을 추가하는 것이 가능합니다. 그만큼`ListLevel` 클래스를 사용하면 목록의 각 수준에 대한 서식 속성을 설정할 수 있습니다. 접두사, 접미사, 정렬, 들여쓰기 등과 같은 옵션을 설정할 수 있습니다. 이를 통해 여러 수준의 계층 구조로 목록을 만들 수 있습니다.
+ A: 예, Aspose.Words의 번호 목록에 추가 수준을 추가하는 것이 가능합니다. 그만큼`ListLevel`클래스를 사용하면 목록의 각 수준에 대한 서식 속성을 설정할 수 있습니다. 접두사, 접미사, 정렬, 들여쓰기 등과 같은 옵션을 설정할 수 있습니다. 이를 통해 여러 수준의 계층 구조로 목록을 만들 수 있습니다.
 
 

@@ -23,9 +23,9 @@ Mielőtt egyezéseket és helyettesítéseket használnánk a helyettesítési m
 Document doc = new Document();
 ```
 
-## 2. lépés: Szúrjon be szöveget a dokumentumba
+## 2. lépés: Szöveg beszúrása a dokumentumba
 
- Ha megvan a dokumentumunk, szöveget szúrhatunk be az a segítségével`DocumentBuilder` tárgy. Példánkban a`Write` módszer a "Jason ad Paulnak egy kis pénzt" kifejezés beillesztésére. :
+ Ha megvan a dokumentumunk, akkor az a segítségével tudunk szöveget beszúrni`DocumentBuilder` tárgy. Példánkban a`Write` módszer a "Jason ad Paulnak egy kis pénzt" kifejezés beillesztésére. :
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

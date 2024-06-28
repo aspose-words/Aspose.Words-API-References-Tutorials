@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Langkah 4: Posisikan DocumentBuilder
 
- Memindahkan`DocumentBuilder` ke akhir dokumen menggunakan`MoveToDocumentEnd` metode. Sisipkan hentian halaman untuk memisahkan konten yang ada dari dokumen yang disisipkan.
+Memindahkan`DocumentBuilder` ke akhir dokumen menggunakan`MoveToDocumentEnd` metode. Sisipkan hentian halaman untuk memisahkan konten yang ada dari dokumen yang disisipkan.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Langkah 6: Simpan dokumen yang dimodifikasi
 
- Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
+Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

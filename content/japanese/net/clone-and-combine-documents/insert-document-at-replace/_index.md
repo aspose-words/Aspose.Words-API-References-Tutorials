@@ -2,87 +2,166 @@
 title: 置換時にドキュメントを挿入
 linktitle: 置換時にドキュメントを挿入
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して置換時にドキュメントを挿入する方法を学習します。
+description: 詳細なステップバイステップ ガイドで、Aspose.Words for .NET を使用して、ある Word ドキュメントを別の Word ドキュメントにシームレスに挿入する方法を学びましょう。ドキュメント処理を合理化したい開発者に最適です。
 type: docs
 weight: 10
 url: /ja/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-このチュートリアルでは、Aspose.Words for .NET の [置換時にドキュメントを挿入] 機能を使用して、置換時にドキュメントを別のドキュメントに挿入する方法を説明します。以下の手順に従ってソース コードを理解し、ドキュメントの挿入を実行します。
+## 導入
 
-## ステップ 1: メインドキュメントをロードする
+こんにちは、ドキュメントマエストロの皆さん！ある Word 文書を別の Word 文書にシームレスに挿入する方法を見つけようとして、コードに夢中になったことはありませんか?心配しないでください。今日は、そのタスクを簡単にするために、Aspose.Words for .NET の世界に飛び込みます。この強力なライブラリを使用して、検索と置換操作中に特定のポイントにドキュメントを挿入する方法について、詳細なステップバイステップのガイドを見ていきます。 Aspose.Words ウィザードになる準備はできましたか?始めましょう！
 
-まず、ドキュメントのディレクトリを指定し、メインドキュメントを Document オブジェクトにロードします。その方法は次のとおりです。
+## 前提条件
+
+コードに入る前に、いくつかの準備をしておく必要があります。
+
+-  Visual Studio: マシンに Visual Studio がインストールされていることを確認してください。まだお持ちでない場合は、からダウンロードできます[ここ](https://visualstudio.microsoft.com/).
+- Aspose.Words for .NET: Aspose.Words ライブラリが必要です。から入手できます。[Aspose ウェブサイト](https://releases.aspose.com/words/net/).
+- C# の基本知識: C# と .NET の基本を理解していると、このチュートリアルを進めるのに役立ちます。
+
+さて、これらは邪魔にならないので、実際にコードを作成してみましょう。
+
+## 名前空間のインポート
+
+まず最初に、Aspose.Words を操作するために必要な名前空間をインポートする必要があります。これは、プロジェクトを開始する前にすべてのツールを集めるようなものです。これらの using ディレクティブを C# ファイルの先頭に追加します。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using Aspose.Words.Tables;
 ```
 
-## ステップ 2: 検索および置換のオプションを構成する
+前提条件が整ったので、プロセスをいくつかのステップに分割してみましょう。各ステップは非常に重要であり、私たちを目標に近づけてくれます。
 
-次に、検索方向と、ドキュメントを別のドキュメントに挿入するための置換コールバックを指定して、検索と置換のオプションを構成します。その方法は次のとおりです。
+## ステップ 1: ドキュメント ディレクトリのセットアップ
 
-```csharp
-//検索および置換のオプションを構成します。
-FindReplaceOptions options = new FindReplaceOptions
-{
-Direction = FindReplaceDirection.Backward,
-ReplacingCallback = new InsertDocumentAtReplaceHandler()
-};
-```
-
-## ステップ 3: 置換メソッドの呼び出し
-
-次に、replace メソッドを呼び出して、構成されたオプションを使用して、指定されたテキストを検索し、空の文字列に置き換えます。その方法は次のとおりです。
+まず、ドキュメントが保存されているディレクトリを指定する必要があります。これは、大事なパフォーマンスの前に舞台を整えるようなものです。
 
 ```csharp
-mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-```
-
-### Aspose.Words for .NET を使用した「置換時にドキュメントを挿入」のソース コード例
-
-Aspose.Words for .NET を置き換える場合のドキュメントの挿入機能の完全なソース コードは次のとおりです。
-
-```csharp
-//ドキュメントディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
-//検索と置換のオプションを設定します。
+交換する`"YOUR DOCUMENT DIRECTORY"`ディレクトリへのパスを含めます。ここは、ドキュメントが生き生きと息づく場所です。
+
+## ステップ 2: メインドキュメントをロードする
+
+次に、別のドキュメントを挿入するメインドキュメントをロードします。ここがすべてのアクションが行われるメインステージであると考えてください。
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+このコードは、指定されたディレクトリからメインドキュメントを読み込みます。
+
+## ステップ 3: 検索と置換のオプションを設定する
+
+文書を挿入する特定の場所を見つけるには、検索と置換機能を使用します。これは、地図を使用して新しく追加する場所の正確な場所を見つけるのと似ています。
+
+```csharp
 FindReplaceOptions options = new FindReplaceOptions
 {
-	Direction = FindReplaceDirection.Backward, 
-	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+    Direction = FindReplaceDirection.Backward,
+    ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
+```
 
-// replace メソッドを呼び出します。
+ここでは、方向を逆方向に設定し、次に定義するカスタム コールバック ハンドラーを指定しています。
+
+## ステップ 4: 置換操作を実行する
+
+次に、カスタム コールバックを使用して別のドキュメントを挿入しながら、メイン ドキュメントに特定のプレースホルダー テキストを検索して何も置き換えないように指示します。
+
+```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+このコードは、検索と置換操作を実行し、更新されたドキュメントを保存します。
+
+## ステップ 5: カスタムの置換コールバック ハンドラーを作成する
+
+カスタム コールバック ハンドラーで魔法が起こります。このハンドラーは、検索と置換操作中にドキュメントの挿入がどのように実行されるかを定義します。
+
+```csharp
+private class InsertDocumentAtReplaceHandler : IReplacingCallback
+{
+    ReplaceAction IReplacingCallback.Replacing(ReplacingArgs args)
+    {
+        Document subDoc = new Document(dataDir + "Document insertion 2.docx");
+
+        //一致するテキストを含む段落の後に文書を挿入します。
+        Paragraph para = (Paragraph)args.MatchNode.ParentNode;
+        InsertDocument(para, subDoc);
+
+        //一致するテキストを含む段落を削除します。
+        para.Remove();
+        return ReplaceAction.Skip;
+    }
+}
+```
+
+ここでは、挿入するドキュメントをロードし、ヘルパー メソッドを呼び出して挿入を実行します。
+
+## ステップ 6: ドキュメントの挿入メソッドを定義する
+
+パズルの最後のピースは、指定された場所にドキュメントを実際に挿入するメソッドです。
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+	{
+		CompositeNode destinationParent = insertionDestination.ParentNode;
+
+		NodeImporter importer =
+			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+		//セクション本体内のすべてのブロックレベルのノードをループします。
+		//次に、セクションの最後の空の段落ではないすべてのノードを複製して挿入します。
+		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+		foreach (Node srcNode in srcSection.Body)
+		{
+			if (srcNode.NodeType == NodeType.Paragraph)
+			{
+				Paragraph para = (Paragraph)srcNode;
+				if (para.IsEndOfSection && !para.HasChildNodes)
+					continue;
+			}
+
+			Node newNode = importer.ImportNode(srcNode, true);
+
+			destinationParent.InsertAfter(newNode, insertionDestination);
+			insertionDestination = newNode;
+		}
+	}
+	else
+	{
+		throw new ArgumentException("The destination node should be either a paragraph or table.");
+	}
+}
+```
+
+このメソッドは、挿入するドキュメントからノードをインポートし、メインドキュメント内の適切な場所にノードを配置します。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET の置換時にドキュメントを挿入機能を使用して、置換中にドキュメントを別のドキュメントに挿入する方法を検討しました。検索と置換のオプションを構成し、必要なデータを提供すると、特定のプレースホルダーを他のドキュメント テンプレートまたはセクションの内容に置き換えてドキュメントを動的に組み立てることができます。 Aspose.Words for .NET は、複雑なドキュメント操作タスクを管理するための強力かつ柔軟な方法を提供し、ドキュメント作成とコンテンツ挿入シナリオを自動化するための貴重なツールとなります。
+そして、それができました！ Aspose.Words for .NET を使用して、あるドキュメントを別のドキュメントに挿入するための包括的なガイド。これらの手順に従うことで、ドキュメントの組み立てと操作のタスクを簡単に自動化できます。ドキュメント管理システムを構築している場合でも、単にドキュメント処理ワークフローを合理化する必要がある場合でも、Aspose.Words は信頼できる相棒です。
 
-### よくある質問
+## よくある質問
 
-#### Q: 置換中にドキュメントを別のドキュメントに挿入する目的は何ですか?
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、Word ドキュメントをプログラムで操作するための強力なライブラリです。 Word 文書を簡単に作成、変更、変換、処理できます。
 
-A: 置換中にドキュメントを別のドキュメントに挿入すると、特定のプレースホルダーを別のドキュメントのコンテンツに動的に置き換えることができます。この機能は、さまざまな事前定義されたドキュメント テンプレートまたはセクションを特定のプレースホルダーに結合して、より大きなドキュメントを組み立てる場合に特に便利です。
+### 複数の文書を一度に挿入できますか?
+はい、コールバック ハンドラーを変更して、ドキュメントのコレクションを反復処理することで複数の挿入を処理できます。
 
-#### Q: Aspose.Words for .NET を使用して置換中にドキュメントを別のドキュメントに挿入するにはどうすればよいですか?
+### 無料トライアルはありますか?
+絶対に！無料試用版はからダウンロードできます[ここ](https://releases.aspose.com/).
 
-A: Aspose.Words for .NET を使用して置換中にドキュメントを別のドキュメントに挿入するには、次の手順に従います。
-1. プレースホルダーを含むメインドキュメントを Document オブジェクトに読み込みます。
-2. ドキュメントの挿入を処理するための検索方向と置換コールバックを含む、検索と置換のオプションを構成します。
-3. 構成されたオプションを使用して、適切な検索パターンで replace メソッドを呼び出し、プレースホルダーを空の文字列に置き換えます。
+### Aspose.Words のサポートを受けるにはどうすればよいですか?
+にアクセスしてサポートを受けることができます。[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).
 
-#### Q: 置換時の挿入動作をカスタマイズできますか?
-
-A: はい、カスタム ReplacingCallback を実装することで、置換中の挿入動作をカスタマイズできます。 IReplacingCallback インターフェイスから継承することにより、プレースホルダーを置換するときに、特定の要件に基づいてドキュメントを挿入および結合する方法を制御できます。
-
-#### Q: 複数のプレースホルダーを異なるドキュメントに置き換えることはできますか?
-
-A: はい、各プレースホルダーに適切な検索パターンを指定し、挿入する対応するドキュメントを指定することで、複数のプレースホルダーを異なるドキュメントで置き換えることができます。
+### 挿入した文書の書式を維持できますか?
+はい`NodeImporter`クラスを使用すると、あるドキュメントから別のドキュメントにノードをインポートするときに書式設定がどのように処理されるかを指定できます。

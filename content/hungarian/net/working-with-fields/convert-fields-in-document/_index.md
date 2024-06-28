@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## 5. lépés: Mentse el az átalakított dokumentumot
- Használja a`Save()`módszerrel mentheti a dokumentumot a szöveggé konvertált mezőkkel a megadott dokumentumkönyvtárban.
+ Használja a`Save()` módszerrel mentheti a dokumentumot a szöveggé konvertált mezőkkel a megadott dokumentumkönyvtárban.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

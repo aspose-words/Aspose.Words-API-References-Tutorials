@@ -97,10 +97,10 @@ A Class HandleMergeField forráskódja
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // Úgy döntöttünk, hogy az összes logikai értéket jelölőnégyzet űrlapmezőként akarjuk kiadni.
+            // Úgy döntöttünk, hogy az összes logikai értéket jelölőnégyzet űrlapmezőként szeretnénk megjeleníteni.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
-                // Vigye a „kurzort” az aktuális egyesítési mezőre.
+                // Vigye a "kurzort" az aktuális egyesítési mezőre.
                 mBuilder.moveToMergeField(e.getFieldName());
                 String checkBoxName = MessageFormat.format("{0}{1}", e.getFieldName(), e.getRecordIndex());
                 mBuilder.insertCheckBox(checkBoxName, (Boolean) e.getFieldValue(), 0);
@@ -357,7 +357,7 @@ A Class HandleMergeField forráskódja
 
 Gratulálunk! Megtanulta az Aspose.Words for Java mezőinek használatát a Word dokumentumok dinamikus kezeléséhez. Ez a hatékony API teljes ellenőrzést biztosít a dokumentumok felett, így értékes eszköz a Java-fejlesztők számára.
 
-## 7. GYIK
+## 7.GYIK
 
 ### 1. kérdés: Honnan tölthetem le az Aspose.Words for Java programot?
  Az Aspose.Words for Java letölthető innen:[itt](https://releases.aspose.com/words/java/).

@@ -42,7 +42,7 @@ builder.Writeln("Cell 1 of the outer table");
 builder. InsertCell();
 builder.Writeln("Cell 2 of the outer table");
 
-//外部表の終了
+//外部テーブルの終了
 builder. EndTable();
 
 //外部テーブルの最初のセルに移動します

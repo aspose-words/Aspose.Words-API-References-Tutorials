@@ -58,8 +58,8 @@ Zda je formátování během převodu zachováno, závisí na nástroji nebo kni
 
 #### Jaká jsou omezení procesu konverze?
 
-Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít omezení týkající se složitého formátování, tabulek nebo obrázků vložených do textového souboru. Je důležité plně porozumět funkcím a omezením zvoleného nástroje, abyste mohli při konverzi přijímat informovaná rozhodnutí.
+Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít související omezení pro složité formátování, tabulky nebo obrázky vložené do textového souboru. Je důležité plně porozumět funkcím a omezením zvoleného nástroje, abyste mohli při konverzi přijímat informovaná rozhodnutí.
 
 #### Je Aspose spolehlivým nástrojem pro převod textového souboru na dokument aplikace Word?
 
-Ano, Aspose.Words for .NET je spolehlivý nástroj pro převod textového souboru na dokument aplikace Word. Je široce používán v průmyslu pro svou kvalitu, přesnost a pokročilé funkce. Tento nástroj nabízí komplexní dokumentaci, pravidelné aktualizace a vyhrazenou technickou podporu, což z něj činí doporučenou volbu pro úlohy převodu dokumentů.
+Ano, Aspose.Words for .NET je spolehlivý nástroj pro převod textového souboru na dokument aplikace Word. Je široce používán v průmyslu pro svou kvalitu, přesnost a pokročilé funkce. Nástroj nabízí komplexní dokumentaci, pravidelné aktualizace a vyhrazenou technickou podporu, což z něj činí doporučenou volbu pro úlohy převodu dokumentů.

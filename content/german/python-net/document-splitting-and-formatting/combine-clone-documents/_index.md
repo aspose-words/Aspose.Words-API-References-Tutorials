@@ -1,7 +1,7 @@
 ---
 title: Kombinieren und Klonen von Dokumenten für komplexe Arbeitsabläufe
 linktitle: Kombinieren und Klonen von Dokumenten für komplexe Arbeitsabläufe
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Python effizient kombinieren und klonen. Schritt-für-Schritt-Anleitung mit Quellcode zur Dokumentenmanipulation. Verbessern Sie noch heute Ihre Dokumenten-Workflows!
 type: docs
 weight: 12
@@ -52,7 +52,7 @@ dst_doc.save("combined_document.docx")
 
 ## Dokumente klonen
 
-Das Klonen von Dokumenten ist oft erforderlich, wenn Sie Inhalte wiederverwenden und dabei die ursprüngliche Struktur beibehalten möchten. Aspose.Words bietet tiefe und flache Klonoptionen.
+Das Klonen von Dokumenten ist oft erforderlich, wenn Sie Inhalte wiederverwenden und dabei die ursprüngliche Struktur beibehalten möchten. Aspose.Words bietet Optionen für tiefes und flaches Klonen.
 
 ### Deep Clone vs. Shallow Clone
 

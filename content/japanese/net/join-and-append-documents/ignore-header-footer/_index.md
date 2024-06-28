@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## ステップ 4: ソース文書を宛先文書に追加する
 
-使用`AppendDocument`ソースドキュメントを追加する宛先ドキュメントのメソッド。合格`ImportFormatMode.KeepSourceFormatting` 2 番目のパラメータとして、インポート形式オプションを 3 番目のパラメータとして指定します。
+使用`AppendDocument`ソースドキュメントを追加する宛先ドキュメントのメソッド。合格`ImportFormatMode.KeepSourceFormatting` 番目のパラメータとして、インポート形式オプションを 3 番目のパラメータとして指定します。
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);

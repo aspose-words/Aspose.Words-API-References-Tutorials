@@ -120,12 +120,12 @@ builder.getParagraphFormat().setStyleName("Heading 1");
 builder.writeln("Heading 1");
 // Επαναφέρετε τα στυλ από την προηγούμενη παράγραφο για να μην συνδυάζονται στυλ μεταξύ παραγράφων.
 builder.getParagraphFormat().setStyleName("Normal");
-// Εισαγάγετε τον οριζόντιο κανόνα.
+// Εισαγάγετε οριζόντιο κανόνα.
 builder.insertHorizontalRule();
 // Καθορίστε τη λίστα με την παραγγελία.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Καθορίστε την πλάγια έμφαση για το κείμενο.
+// Προσδιορίστε την ιταλική έμφαση για το κείμενο.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);
@@ -177,7 +177,7 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 ### Μπορώ να χρησιμοποιήσω το Aspose.Words για Java για να μετατρέψω έγγραφα Markdown σε Word; 
    Ναι, μπορείτε να χρησιμοποιήσετε το Aspose.Words για Java για να μετατρέψετε έγγραφα Markdown σε έγγραφα Word και αντίστροφα.
 
-### Είναι δωρεάν η χρήση του Aspose.Words για Java; 
+### Είναι το Aspose.Words για Java δωρεάν στη χρήση; 
     Το Aspose.Words για Java είναι ένα εμπορικό προϊόν και απαιτείται άδεια χρήσης για τη χρήση. Μπορείτε να αποκτήσετε άδεια από[εδώ](https://purchase.aspose.com/buy).
 
 ### Υπάρχουν διαθέσιμα σεμινάρια ή τεκμηρίωση για το Aspose.Words για Java; 

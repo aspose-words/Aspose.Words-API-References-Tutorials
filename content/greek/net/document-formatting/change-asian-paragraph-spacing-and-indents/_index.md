@@ -51,9 +51,9 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // Το ParagraphFormat.LeftIndent θα ενημερωθεί
-	format.CharacterUnitRightIndent = 10;      // Το ParagraphFormat.RightIndent θα ενημερωθεί
-	format.CharacterUnitFirstLineIndent = 20;  // Το ParagraphFormat.FirstLineIndent θα ενημερωθεί
+	format.CharacterUnitLeftIndent = 10;       // Το ParagraphFormat.LeftIndent θα ενημερωθεί.
+	format.CharacterUnitRightIndent = 10;      // Το ParagraphFormat.RightIndent θα ενημερωθεί.
+	format.CharacterUnitFirstLineIndent = 20;  // Το ParagraphFormat.FirstLineIndent θα ενημερωθεί.
 	format.LineUnitBefore = 5;                 // Το ParagraphFormat.SpaceBefore θα ενημερωθεί
 	format.LineUnitAfter = 10;                 // Το ParagraphFormat.SpaceAfter θα ενημερωθεί
 

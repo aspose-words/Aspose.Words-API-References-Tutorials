@@ -77,7 +77,7 @@ Las respuestas a los comentarios permiten debates colaborativos y comentarios de
 
 #### P: ¿Cómo puedo eliminar un comentario en Aspose.Words para .NET?
 
- R: Para eliminar un comentario en Aspose.Words para .NET, puede utilizar el`Comment.Remove` método que especifica el`Comment` objeto que desea eliminar.
+R: Para eliminar un comentario en Aspose.Words para .NET, puede utilizar el`Comment.Remove` método que especifica el`Comment` objeto que desea eliminar.
 
 #### P: ¿Puedo responder a un comentario en Aspose.Words para .NET?
 
@@ -85,7 +85,7 @@ Las respuestas a los comentarios permiten debates colaborativos y comentarios de
 
 #### P: ¿Cómo puedo acceder a los comentarios existentes en Aspose.Words para .NET?
 
- R: Puede acceder a los comentarios existentes en Aspose.Words para .NET utilizando el`CommentCollection` propiedad de la`Document`objeto. Esto le permitirá explorar todos los comentarios presentes en el documento.
+ R: Puede acceder a los comentarios existentes en Aspose.Words para .NET utilizando el`CommentCollection` propiedad de la`Document` objeto. Esto le permitirá explorar todos los comentarios presentes en el documento.
 
 #### P: ¿Puedo editar el texto del comentario en Aspose.Words para .NET?
 

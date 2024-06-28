@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-markdown/autolink/
 ---
 
-det här exemplet kommer vi att förklara hur man använder funktionen "Autolink" med Aspose.Words för .NET. Den här funktionen låter dig infoga hyperlänkar i ditt dokument automatiskt.
+I det här exemplet kommer vi att förklara hur man använder funktionen "Autolink" med Aspose.Words för .NET. Den här funktionen låter dig infoga hyperlänkar i ditt dokument automatiskt.
 
 ## Steg 1: Använda en dokumentgenerator
 
@@ -58,7 +58,7 @@ Grattis! Du har nu lärt dig hur du använder "Autolink"-funktionen med Aspose.W
 
 #### F: Hur skapar jag en automatisk länk till en URL-adress i Aspose.Words?
 
-S: För att skapa en automatisk länk till en URL-adress i Aspose.Words kan du använda`<a>` tagga med`href` attribut som innehåller URL-adressen. Du kan till exempel använda`<a href="https://www.aspose.com">https://www.aspose.com</a>` för att automatiskt länka till "https: //www.aspose.com".
+ S: För att skapa en automatisk länk till en URL-adress i Aspose.Words kan du använda`<a>` tagga med`href` attribut som innehåller URL-adressen. Du kan till exempel använda`<a href="https://www.aspose.com">https://www.aspose.com</a>` för att automatiskt länka till "https: //www.aspose.com".
 
 #### F: Är det möjligt att anpassa visningstexten för en automatisk länk i Aspose.Words?
 
@@ -66,4 +66,4 @@ S: För att skapa en automatisk länk till en URL-adress i Aspose.Words kan du a
 
 #### F: Hur kan jag lägga till ytterligare attribut till en autolänk i Aspose.Words?
 
- S: För att lägga till ytterligare attribut till en automatisk länk i Aspose.Words kan du använda ytterligare HTML-attribut i`<a>` märka. Du kan till exempel använda`<a href="https://www.aspose.com" target="_blank">Link</a>` för att öppna länken i ett nytt fönster eller flik med hjälp av` attribute target="_blank"`.
+S: För att lägga till ytterligare attribut till en automatisk länk i Aspose.Words kan du använda ytterligare HTML-attribut i`<a>` märka. Du kan till exempel använda`<a href="https://www.aspose.com" target="_blank">Link</a>` för att öppna länken i ett nytt fönster eller flik med hjälp av` attribute target="_blank"`.

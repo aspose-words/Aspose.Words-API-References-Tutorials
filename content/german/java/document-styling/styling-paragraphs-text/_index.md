@@ -321,7 +321,7 @@ Tabellen sind eine leistungsstarke Möglichkeit, Daten in Ihren Dokumenten zu or
 // Erstellen Sie ein neues Dokument
 Document doc = new Document();
 
-// Erstellen Sie eine Tabelle mit 3 Zeilen und 3 Spalten
+// Erstellen Sie eine Tabelle mit 3 Zeilen und 3 Spalten.
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));
@@ -361,7 +361,7 @@ Dieses Code-Snippet speichert das Dokument als PDF-Datei.
 
 ## Erweiterte Funktionen
 
-Aspose.Words für Java bietet erweiterte Funktionen für die komplexe Dokumentbearbeitung. Dazu gehören Seriendruck, Dokumentenvergleich und mehr. Sehen Sie sich die Dokumentation an, um ausführliche Anleitungen zu diesen fortgeschrittenen Themen zu erhalten.
+Aspose.Words für Java bietet erweiterte Funktionen für die komplexe Dokumentbearbeitung. Dazu gehören Seriendruck, Dokumentvergleich und mehr. Sehen Sie sich die Dokumentation an, um ausführliche Anleitungen zu diesen fortgeschrittenen Themen zu erhalten.
 
 ## Tipps und Best Practices
 
@@ -427,6 +427,6 @@ pageSetup.setBottomMargin(72); // Unterer Rand in Punkten
 
 ## Abschluss
 
-In diesem umfassenden Leitfaden haben wir die leistungsstarken Funktionen von Aspose.Words für Java zum Gestalten von Absätzen und Text in Dokumenten untersucht. Sie haben gelernt, wie Sie Ihre Dokumente programmgesteuert erstellen, formatieren und verbessern, von der einfachen Textbearbeitung bis hin zu erweiterten Funktionen. Aspose.Words für Java ermöglicht Entwicklern die effiziente Automatisierung von Dokumentformatierungsaufgaben. Üben und experimentieren Sie weiter mit verschiedenen Funktionen, um sich mit der Dokumentgestaltung mit Aspose.Words für Java vertraut zu machen.
+In diesem umfassenden Leitfaden haben wir die leistungsstarken Funktionen von Aspose.Words für Java zum Gestalten von Absätzen und Text in Dokumenten untersucht. Sie haben gelernt, wie Sie Ihre Dokumente programmgesteuert erstellen, formatieren und verbessern, von der einfachen Textbearbeitung bis hin zu erweiterten Funktionen. Aspose.Words für Java ermöglicht Entwicklern die effiziente Automatisierung von Dokumentformatierungsaufgaben. Üben und experimentieren Sie weiter mit verschiedenen Funktionen, um die Dokumentgestaltung mit Aspose.Words für Java zu beherrschen.
 
 Nachdem Sie nun fundierte Kenntnisse darüber haben, wie Sie mit Aspose.Words für Java Absätze und Text in Dokumenten formatieren, können Sie wunderschön formatierte Dokumente erstellen, die auf Ihre spezifischen Anforderungen zugeschnitten sind. Viel Spaß beim Codieren!

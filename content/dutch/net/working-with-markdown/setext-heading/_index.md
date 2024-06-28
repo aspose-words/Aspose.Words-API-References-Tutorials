@@ -1,6 +1,6 @@
 ---
-title: Setext-kop
-linktitle: Setext-kop
+title: Setex-rubriek
+linktitle: Setex-rubriek
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u Setext-koppen kunt gebruiken om uw documenten op te maken met Aspose.Words voor .NET Stapsgewijze handleiding.
 type: docs

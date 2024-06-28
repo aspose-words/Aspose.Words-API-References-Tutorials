@@ -69,7 +69,7 @@ comparer.save("comparison_result.docx");
 
 ### كيف أقوم بتثبيت Aspose.Words لـ Java؟
 
- لتثبيت Aspose.Words لـ Java، قم بزيارة صفحة التنزيل[هنا](https://releases.aspose.com/words/java/) واتبع تعليمات التثبيت المقدمة.
+ لتثبيت Aspose.Words لـ Java، قم بزيارة صفحة التنزيل.[هنا](https://releases.aspose.com/words/java/) واتبع تعليمات التثبيت المقدمة.
 
 ### هل يمكنني مقارنة المستندات بتنسيقات مختلفة، مثل DOCX وPDF؟
 
@@ -85,4 +85,4 @@ comparer.save("comparison_result.docx");
 
 ### هل هناك نسخة تجريبية من Aspose.Words متاحة للاختبار؟
 
-نعم، يمكنك طلب نسخة تجريبية مجانية من Aspose.Words for Java من الموقع الإلكتروني. يتيح لك ذلك استكشاف ميزاته وإمكانياته قبل إجراء عملية الشراء.
+نعم، يمكنك طلب نسخة تجريبية مجانية من Aspose.Words for Java من موقع الويب. يتيح لك ذلك استكشاف ميزاته وإمكانياته قبل إجراء عملية الشراء.

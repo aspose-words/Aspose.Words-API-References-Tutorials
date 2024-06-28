@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 
 
-### Código fuente de ejemplo para mover nodo en documento rastreado usando Aspose.Words para .NET
+### Código fuente de ejemplo para mover nodo en un documento rastreado usando Aspose.Words para .NET
 
 Aquí está el código fuente completo para mover un nodo en un documento rastreado usando Aspose.Words para .NET:
 

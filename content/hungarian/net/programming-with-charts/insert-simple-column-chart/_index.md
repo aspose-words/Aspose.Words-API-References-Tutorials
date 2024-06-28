@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -99,7 +99,7 @@ Az Aspose.Words for .NET használatával automatizálhatja a dokumentumok oszlop
 
 ### GYIK
 
-#### Q1. Mi az az oszlopdiagram?
+#### Q1. Mi az oszlopdiagram?
 Az oszlopdiagram egy olyan típusú diagram, amely változó magasságú függőleges sávok segítségével jeleníti meg az adatokat. Minden oszlop egy kategóriát képvisel, és az oszlop magassága megfelel az adott kategória értékének. Az oszlopdiagramokat általában a különböző kategóriák adatainak összehasonlítására vagy az időbeli változások nyomon követésére használják.
 
 #### Q2. Hozzáadhatok több sorozatot az oszlopdiagramhoz?

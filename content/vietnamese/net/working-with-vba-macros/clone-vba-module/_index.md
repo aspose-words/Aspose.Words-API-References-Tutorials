@@ -81,7 +81,7 @@ Trả lời: Trước khi có thể sao chép mô-đun VBA từ tài liệu Word
 
 #### Hỏi: Làm cách nào để đặt thư mục tài liệu trong mã?
 
- Đáp: Trong mã được cung cấp, bạn cần thay thế`"YOUR DOCUMENTS DIRECTORY"` bằng đường dẫn thích hợp tới thư mục chứa tài liệu Word chứa dự án VBA.
+ Đáp: Trong mã được cung cấp, bạn cần thay thế.`"YOUR DOCUMENTS DIRECTORY"` bằng đường dẫn thích hợp tới thư mục chứa tài liệu Word chứa dự án VBA.
 
 #### Câu hỏi: Làm cách nào để lưu tài liệu đích bằng mô-đun VBA được sao chép?
 

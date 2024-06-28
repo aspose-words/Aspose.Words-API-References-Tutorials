@@ -16,7 +16,7 @@ Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 - Kaldırmak istediğiniz bölüm sonlarını içeren bir Word belgesi
 
 ## 1. Adım: Belge Dizinini Ayarlayın
- Öncelikle Word belgenizin konumuna dizin yolunu ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` kod pasajında uygun dizin yolu ile.
+ Öncelikle Word belgenizin konumuna dizin yolunu ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun dizin yolu ile kod pasajında.
 
 ```csharp
 // Belge dizininizin yolu

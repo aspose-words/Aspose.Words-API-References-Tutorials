@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
-このコードでは、新しい`Document`そして`DocumentBuilder`。の`insert_text_box`メソッドは、ドキュメントにテキストボックスを追加するために使用されます。要件に応じて、テキストボックスの内容、位置、サイズをカスタマイズできます。
+このコードでは、新しい`Document`そして`DocumentBuilder` 。の`insert_text_box`メソッドは、ドキュメントにテキストボックスを追加するために使用されます。要件に応じて、テキストボックスの内容、位置、サイズをカスタマイズできます。
 
 ## テキストボックスの書式設定
 

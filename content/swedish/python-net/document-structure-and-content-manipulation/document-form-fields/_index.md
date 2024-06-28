@@ -207,7 +207,7 @@ Rullgardinslistor effektiviserar processen att välja alternativ från en förde
 
 ### Datumväljare
 
-Datumväljare förenklar processen att fånga datum från användare. De tillhandahåller ett användarvänligt gränssnitt för att välja datum, vilket minskar risken för inmatningsfel. Använd följande kod för att skapa ett datumväljarformulär:
+Datumväljare förenklar processen att fånga datum från användare. De tillhandahåller ett användarvänligt gränssnitt för att välja datum, vilket minskar risken för inmatningsfel. För att skapa ett datumväljarformulär, använd följande kod:
 
 ```python
 # Create a date picker form field

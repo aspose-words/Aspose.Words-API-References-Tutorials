@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Adım 4: DocumentBuilder'ı konumlandırın
 
- Taşı`DocumentBuilder` kullanarak belgenin sonuna kadar`MoveToDocumentEnd` yöntem. Mevcut içeriği eklenen belgeden ayırmak için sayfa sonu ekleyin.
+Taşı`DocumentBuilder` kullanarak belgenin sonuna kadar`MoveToDocumentEnd` yöntem. Mevcut içeriği eklenen belgeden ayırmak için sayfa sonu ekleyin.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Adım 6: Değiştirilen belgeyi kaydedin
 
- Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
+Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

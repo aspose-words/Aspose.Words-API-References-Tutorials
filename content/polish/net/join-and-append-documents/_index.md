@@ -29,7 +29,7 @@ Te samouczki Aspose.Words dla .NET dostarczają cennych zasobów do opanowania p
 | [Zachowajcie źródło razem](./keep-source-together/) | Dowiedz się, jak używać Aspose.Words dla .NET do łączenia i dołączania dokumentów programu Word, zachowując jednocześnie treść źródłową z dokumentem docelowym. |
 | [Lista Zachowaj formatowanie źródła](./list-keep-source-formatting/) | Dowiedz się, jak zachować formatowanie listy podczas łączenia i dołączania dokumentów programu Word za pomocą Aspose.Words dla .NET. |
 | [Lista Użyj stylów miejsc docelowych](./list-use-destination-styles/) | Dowiedz się, jak łączyć i dołączać dokumenty programu Word, zachowując jednocześnie style listy dokumentów docelowych, korzystając z Aspose.Words dla .NET. |
-| [Uruchom ponownie numerowanie stron](./restart-page-numbering/) | Dowiedz się, jak ponownie uruchomić numerowanie stron podczas łączenia i dołączania dokumentów programu Word za pomocą Aspose.Words dla .NET. |
+| [Uruchom ponownie numerację stron](./restart-page-numbering/) | Dowiedz się, jak ponownie uruchomić numerowanie stron podczas łączenia i dołączania dokumentów programu Word za pomocą Aspose.Words dla .NET. |
 | [Zaktualizuj układ strony](./update-page-layout/) | Dowiedz się, jak zaktualizować układ strony podczas łączenia i dołączania dokumentów programu Word za pomocą Aspose.Words dla .NET. |
 | [Użyj stylów miejsca docelowego](./use-destination-styles/) | Dowiedz się, jak łączyć i dołączać dokumenty programu Word, stosując style dokumentów docelowych za pomocą Aspose.Words dla .NET. |
 | [Inteligentne zachowanie w stylu](./smart-style-behavior/) | Dowiedz się, jak zachować inteligentny styl podczas łączenia i dołączania dokumentów programu Word za pomocą Aspose.Words dla .NET. |

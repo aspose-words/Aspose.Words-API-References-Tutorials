@@ -74,7 +74,7 @@ Hãy thoải mái khám phá các tính năng mạnh mẽ khác do Aspose.Words 
  Có, bạn có thể trích xuất các trang không liên tiếp bằng cách chỉ định phạm vi trang mong muốn. Ví dụ: nếu bạn muốn trích xuất trang 1, 3 và 5, bạn có thể đặt phạm vi trang là`1,3,5` bên trong`ExtractPages` chức năng.
 
 #### Câu hỏi 2: Có thể trích xuất một phạm vi trang cụ thể từ nhiều tài liệu cùng một lúc không?
-Có, bạn có thể áp dụng tính năng "Theo phạm vi trang" cho nhiều tài liệu. Chỉ cần tải từng tài liệu riêng lẻ và trích xuất phạm vi trang mong muốn bằng cách sử dụng`ExtractPages` chức năng. Sau đó, bạn có thể lưu các trang được trích xuất từ mỗi tài liệu một cách riêng biệt.
+ Có, bạn có thể áp dụng tính năng "Theo phạm vi trang" cho nhiều tài liệu. Chỉ cần tải từng tài liệu riêng lẻ và trích xuất phạm vi trang mong muốn bằng cách sử dụng`ExtractPages` chức năng. Sau đó, bạn có thể lưu các trang được trích xuất từ mỗi tài liệu một cách riêng biệt.
 
 #### Câu hỏi 3: Tôi có thể trích xuất các phạm vi trang từ tài liệu Word được mã hóa hoặc bảo vệ bằng mật khẩu không?
 Không, tính năng "Theo phạm vi trang" hoạt động trên các tài liệu Word không được bảo vệ. Nếu tài liệu được mã hóa hoặc bảo vệ bằng mật khẩu, bạn cần cung cấp mật khẩu chính xác và xóa bảo vệ trước khi trích xuất phạm vi trang mong muốn.

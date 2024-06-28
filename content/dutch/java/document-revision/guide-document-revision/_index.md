@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### Revisies afwijzen:
+#### Recensies afwijzen:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");

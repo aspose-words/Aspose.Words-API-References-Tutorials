@@ -8,7 +8,7 @@ weight: 50
 url: /tr/net/working-with-comments/
 ---
 
-Bu eğitimlerde Aspose.Words for .NET kullanarak Word belgelerindeki yorumlarla Kelime İşleme'nin çeşitli yönlerini öğreneceksiniz. Belgelere nasıl yorum ekleyeceğinizi, yorum yanıtlarını belirli bir metne nasıl sabitleyeceğinizi, yorum yanıtlarını nasıl ekleyip kaldıracağınızı ve yorumları ve yanıtlarını nasıl çözeceğinizi keşfedeceksiniz. Her eğitimde, Aspose.Words for .NET kullanarak Word belgelerinizde işbirliğini ve geri bildirim yönetimini geliştirmenize olanak tanıyan, tam kaynak kodunu içeren adım adım bir kılavuz sunulur.
+Bu eğitimlerde Aspose.Words for .NET kullanarak Word belgelerindeki yorumlarla Kelime İşleme'nin çeşitli yönlerini öğreneceksiniz. Belgelere nasıl yorum ekleyeceğinizi, yorum yanıtlarını belirli bir metne nasıl sabitleyeceğinizi, yorum yanıtlarını nasıl ekleyip kaldıracağınızı ve yorumları ve yanıtlarını nasıl çözeceğinizi keşfedeceksiniz. Her bir eğitim, tam kaynak kodunu içeren adım adım bir kılavuz sunarak Aspose.Words for .NET kullanarak Word belgelerinizde işbirliğini ve geri bildirim yönetimini geliştirmenize olanak tanır.
 
  ## Öğreticiler
 | Başlık | Tanım |

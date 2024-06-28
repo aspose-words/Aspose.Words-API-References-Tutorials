@@ -65,10 +65,10 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//Tabloyu kopyalayın ve belgeye orijinalin arkasına ekleyin.
+	// Tabloyu kopyalayın ve belgeye orijinalin arkasına ekleyin.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// İki tablo arasına boş bir paragraf ekleyin,
+	//İki tablo arasına boş bir paragraf ekleyin,
 	// Aksi takdirde, kaydedildikten sonra tek bir belgede birleştirileceklerdir, bunun belge doğrulamayla ilgisi vardır.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

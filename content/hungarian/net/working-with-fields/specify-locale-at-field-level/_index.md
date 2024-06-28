@@ -72,4 +72,4 @@ Ez egy példa a forráskódra a honosítás mezőszintű meghatározásához egy
 
 #### K: Hogyan szerezhetem be az Aspose.Words for .NET mezőjének jelenleg használt területi beállítását?
 
- V: Az Aspose.Words for .NET egyik mezőjének jelenleg használt területi beállításához használja a mező`Field.LocaleId` ingatlan. Ez lehetővé teszi a mezőhöz társított terület-azonosító beszerzését.
+ V: Az Aspose.Words for .NET egyik mezőjének jelenleg használt területi beállításához használja a mező`Field.LocaleId`ingatlan. Ez lehetővé teszi a mezőhöz társított terület-azonosító beszerzését.

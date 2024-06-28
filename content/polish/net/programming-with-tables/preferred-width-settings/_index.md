@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Tutaj używamy narzędzia do tworzenia dokumentów, aby zbudować tabelę z trzema komórkami. Pierwsza komórka ma preferowaną szerokość 40 punktów, druga komórka ma preferowaną szerokość 20% szerokości tabeli, a trzecia komórka ma automatycznie preferowaną szerokość, która dostosowuje się
+Tutaj używamy narzędzia do tworzenia dokumentów, aby zbudować tabelę z trzema komórkami. Pierwsza komórka ma preferowaną szerokość 40 punktów, druga komórka ma preferowaną szerokość 20% szerokości tabeli, a trzecia komórka ma automatycznie preferowaną szerokość, która się dostosowuje.
 
   w zależności od dostępnej przestrzeni.
 

@@ -142,7 +142,7 @@ In questo tutorial hai imparato come utilizzare le opzioni di pulizia in Aspose.
 
 ### Quali sono le opzioni di pulizia in Aspose.Words per Java?
 
-Le opzioni di pulizia in Aspose.Words per Java sono impostazioni che consentono di controllare vari aspetti della pulizia dei documenti durante il processo di stampa unione. Ti consentono di rimuovere elementi non necessari come paragrafi vuoti, aree inutilizzate e altro, assicurando che il tuo documento finale sia ben strutturato e rifinito.
+Le opzioni di pulizia in Aspose.Words per Java sono impostazioni che consentono di controllare vari aspetti della pulizia dei documenti durante il processo di stampa unione. Ti consentono di rimuovere elementi non necessari come paragrafi vuoti, aree inutilizzate e altro, garantendo che il tuo documento finale sia ben strutturato e rifinito.
 
 ### Come posso rimuovere i paragrafi vuoti dal mio documento?
 

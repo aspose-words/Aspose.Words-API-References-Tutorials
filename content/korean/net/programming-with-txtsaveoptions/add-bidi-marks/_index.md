@@ -12,7 +12,7 @@ Aspose.Words for .NET은 C# 애플리케이션에서 Word 문서를 생성, 편�
 
 ## Aspose.Words 라이브러리 이해
 
-코드를 살펴보기 전에 .NET용 Aspose.Words 라이브러리를 이해하는 것이 중요합니다. Aspose.Words는 Word 문서로 Words 처리를 쉽고 효율적으로 만들어주는 인기 있는 라이브러리입니다. Bidi 마크 추가를 포함하여 Word 문서를 생성, 편집 및 조작하기 위한 광범위한 기능을 제공합니다.
+코드를 살펴보기 전에 .NET용 Aspose.Words 라이브러리를 이해하는 것이 중요합니다. Aspose.Words는 Word 문서로 Words 처리를 쉽고 효율적으로 만들어주는 인기 있는 라이브러리입니다. Bidi 마크 추가를 포함하여 Word 문서를 생성, 편집 및 조작하기 위한 다양한 기능을 제공합니다.
 
 ## 문서 작성 및 내용 추가
 

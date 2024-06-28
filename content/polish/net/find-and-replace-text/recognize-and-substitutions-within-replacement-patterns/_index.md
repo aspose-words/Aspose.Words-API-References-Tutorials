@@ -71,7 +71,7 @@ W tym artykule zbadaliśmy kod źródłowy C#, aby zrozumieć, jak korzystać z 
 
 #### P: Jaka jest funkcja „Rozpoznawanie i podstawienia we wzorcach zastępczych” w Aspose.Words dla .NET?
 
-Odp.: Funkcja „Rozpoznawanie i podstawienia we wzorcach zastępczych” w Aspose.Words dla .NET umożliwia rozpoznawanie złożonych wzorców wyszukiwania przy użyciu wyrażeń regularnych i wykonywanie podstawień w oparciu o przechwycone grupy podczas manipulacji dokumentem. Umożliwia dynamiczną transformację dopasowanego tekstu poprzez odniesienie do przechwyconych grup we wzorcu zastępowania.
+O: Funkcja „Rozpoznawanie i podstawienia we wzorcach zastępczych” w Aspose.Words dla .NET umożliwia rozpoznawanie złożonych wzorców wyszukiwania przy użyciu wyrażeń regularnych i wykonywanie podstawień w oparciu o przechwycone grupy podczas manipulacji dokumentem. Umożliwia dynamiczną transformację dopasowanego tekstu poprzez odniesienie do przechwyconych grup we wzorcu zastępowania.
 
 #### P: Jak mogę utworzyć nowy dokument za pomocą Aspose.Words dla .NET?
 
@@ -124,6 +124,6 @@ O: Tak, podczas wyszukiwania i zastępowania tekstu możesz manipulować innymi 
 
 O: Chociaż wyrażenia regularne i przechwycone grupy oferują potężne możliwości wyszukiwania i zamiany tekstu w Aspose.Words dla .NET, ważne jest, aby wziąć pod uwagę implikacje związane ze złożonością i wydajnością. Bardzo złożone wyrażenia regularne i duża liczba przechwyconych grup mogą mieć wpływ na wydajność. Zaleca się testowanie i optymalizację wyrażeń regularnych pod kątem konkretnych przypadków użycia, aby zapewnić efektywną manipulację dokumentami.
 
-#### P: Czy mogę używać funkcji „Rozpoznawanie i podstawienia we wzorcach zastępczych” w przypadku języków innych niż angielski?
+#### P: Czy mogę korzystać z funkcji „Rozpoznawanie i podstawienia we wzorcach zastępczych” w przypadku języków innych niż angielski?
 
-O: Tak, funkcja „Rozpoznawanie i podstawienia we wzorcach zastępczych” w Aspose.Words dla .NET może być używana w językach innych niż angielski. Wyrażenia regularne są niezależne od języka i można je dostosować do określonych wzorców w dowolnym języku. Możesz dostosować wzorzec wyrażenia regularnego, aby odpowiadał żądanemu językowi i konkretnym wzorcom tekstowym, które chcesz rozpoznać i zastąpić.
+Odp.: Tak, funkcja „Rozpoznawanie i podstawienia we wzorcach zastępczych” w Aspose.Words dla .NET może być używana w językach innych niż angielski. Wyrażenia regularne są niezależne od języka i można je dostosować do określonych wzorców w dowolnym języku. Możesz dostosować wzorzec wyrażenia regularnego, aby odpowiadał żądanemu językowi i konkretnym wzorcom tekstowym, które chcesz rozpoznać i zastąpić.

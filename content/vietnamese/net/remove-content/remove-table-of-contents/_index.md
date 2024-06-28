@@ -2,216 +2,103 @@
 title: Xóa mục lục trong tài liệu Word
 linktitle: Xóa mục lục trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách xóa mục lục trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách xóa Mục lục (TOC) trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn dễ thực hiện này.
 type: docs
 weight: 10
 url: /vi/net/remove-content/remove-table-of-contents/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách xóa mục lục trong tài liệu Word bằng thư viện Aspose.Words cho .NET. Mục lục đôi khi có thể dư thừa hoặc không cần thiết, đoạn mã này sẽ giúp bạn loại bỏ nó một cách hiệu quả. Chúng tôi sẽ cung cấp hướng dẫn từng bước để giúp bạn hiểu và triển khai mã trong dự án .NET của riêng bạn.
+## Xóa mục lục trong tài liệu Word bằng Aspose.Words cho .NET
+
+Bạn có mệt mỏi khi phải xử lý Mục lục (TOC) không mong muốn trong tài liệu Word của mình không? Tất cả chúng ta đều đã từng như vậy—đôi khi TOC không cần thiết. Thật may mắn cho bạn, Aspose.Words for .NET giúp bạn dễ dàng xóa TOC theo chương trình. Trong hướng dẫn này, tôi sẽ hướng dẫn bạn thực hiện quy trình này theo từng bước để bạn có thể thành thạo nó ngay lập tức. Hãy đi sâu vào ngay!
 
 ## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
-- Kiến thức làm việc về ngôn ngữ lập trình C#
-- Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
-- Một tài liệu Word chứa mục lục mà bạn muốn xóa
 
-## Bước 1: Xác định thư mục tài liệu
- Trước tiên, bạn cần đặt đường dẫn thư mục đến vị trí tài liệu Word của mình. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có mọi thứ bạn cần:
+
+1.  Thư viện Aspose.Words for .NET: Nếu bạn chưa có, hãy tải xuống và cài đặt thư viện Aspose.Words for .NET từ[Aspose.Rereleases](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Một IDE như Visual Studio sẽ giúp việc viết mã dễ dàng hơn.
+3. .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework.
+4. Tài liệu Word: Có một tài liệu Word (.docx) có TOC mà bạn muốn xóa.
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết. Điều này thiết lập môi trường để sử dụng Aspose.Words.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Bước 2: Tải tài liệu lên
- Tiếp theo, chúng ta sẽ tải tài liệu Word vào một phiên bản của`Document` lớp sử dụng`Load` phương pháp.
+Bây giờ, hãy chia nhỏ quy trình xóa TOC khỏi tài liệu Word thành các bước rõ ràng, dễ quản lý.
+
+## Bước 1: Thiết lập thư mục tài liệu của bạn
+
+Trước khi có thể thao tác với tài liệu của bạn, chúng tôi cần xác định vị trí của nó. Đây là đường dẫn thư mục tài liệu của bạn.
 
 ```csharp
-// Tải tài liệu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn đến thư mục tài liệu của bạn. Đây là nơi chứa tệp Word của bạn.
+
+## Bước 2: Tải tài liệu
+
+Tiếp theo, chúng ta cần tải tài liệu Word vào ứng dụng của mình. Aspose.Words khiến việc này trở nên vô cùng đơn giản.
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## Bước 3: Xóa mục lục
- Để loại bỏ mục lục, chúng ta sẽ lặp qua kiểu TOC (mục lục)`FieldStart` các nút trong tài liệu. Chúng ta sẽ lưu trữ các nút này để có thể truy cập nhanh và tạo danh sách các nút cần xóa.
+ Thay thế`"your-document.docx"` với tên tập tin của bạn. Dòng mã này tải tài liệu của bạn để chúng tôi có thể bắt đầu làm việc với nó.
+
+## Bước 3: Xác định và xóa trường TOC
+
+Đây là nơi phép thuật xảy ra. Chúng tôi sẽ xác định vị trí trường TOC và xóa nó.
 
 ```csharp
-// Lưu trữ các nút FieldStart của trường TOC trong tài liệu để truy cập nhanh.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Đây là danh sách lưu trữ các nút được tìm thấy bên trong TOC được chỉ định. Chúng sẽ bị xóa khi kết thúc phương pháp này.
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+Đây là những gì đang xảy ra:
+- `doc.Range.Fields`: Điều này truy cập vào tất cả các trường trong tài liệu.
+- `.Where(f => f.Type == FieldType.FieldTOC)`: Điều này lọc các trường để chỉ tìm những trường có TOC.
+- `.ToList().ForEach(f => f.Remove())`: Thao tác này sẽ chuyển đổi các trường đã lọc thành một danh sách và xóa từng trường.
 
-// Kiểm tra xem chỉ số TOC đã chỉ định có tồn tại hay không.
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## Bước 4: Lưu tài liệu đã sửa đổi
 
-bool isRemoving = true;
+Cuối cùng, chúng ta cần lưu các thay đổi của mình. Bạn có thể lưu tài liệu dưới tên mới để giữ nguyên tệp gốc.
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // Sẽ an toàn hơn nếu lưu trữ các nút này và xóa tất cả chúng ở cuối.
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // Khi chúng tôi gặp nút FieldEnd thuộc loại FieldTOC,
-     //chúng tôi biết chúng tôi đang ở cuối TOC hiện tại và chúng tôi dừng lại ở đây.
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### Mã nguồn mẫu để Xóa mục lục bằng Aspose.Words cho .NET 
-```csharp
-
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// Tải tài liệu
-Document doc = new Document(dataDir + "your-document.docx");
-
-// Lưu trữ các nút FieldStart của trường TOC trong tài liệu để truy cập nhanh.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Đây là danh sách lưu trữ các nút được tìm thấy bên trong TOC được chỉ định. Chúng sẽ bị xóa khi kết thúc phương pháp này.
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// Đảm bảo tồn tại TOC được chỉ định bởi chỉ mục được thông qua.
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// Sẽ an toàn hơn nếu lưu trữ các nút này và xóa tất cả chúng cùng một lúc sau đó.
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// Khi chúng tôi gặp nút FieldEnd thuộc loại FieldTOC,
-	// chúng tôi biết chúng tôi đang ở cuối TOC hiện tại và dừng ở đây.
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ Dòng này lưu tài liệu của bạn với những thay đổi được thực hiện. Thay thế`"modified-document.docx"` với tên tập tin bạn muốn.
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng tôi đã trình bày hướng dẫn từng bước để xóa mục lục khỏi tài liệu Word bằng thư viện Aspose.Words cho .NET. Bằng cách làm theo mã và hướng dẫn được cung cấp, bạn có thể dễ dàng loại bỏ mục lục và cải thiện bố cục tài liệu của mình. Hãy nhớ điều chỉnh đường dẫn thư mục và tên tệp cho phù hợp với nhu cầu cụ thể của bạn.
 
-### Câu hỏi thường gặp
+Và bạn có nó rồi đấy! Việc xóa TOC khỏi tài liệu Word bằng Aspose.Words cho .NET thật đơn giản khi bạn chia nó thành các bước đơn giản sau. Thư viện mạnh mẽ này không chỉ giúp loại bỏ TOC mà còn có thể xử lý vô số thao tác tài liệu khác. Vì vậy, hãy tiếp tục và thử xem!
 
-#### Hỏi: Tại sao tôi nên sử dụng Aspose.Words để xóa mục lục trong tài liệu Word?
+## Câu hỏi thường gặp
 
-Trả lời: Aspose.Words là một thư viện lớp mạnh mẽ và linh hoạt để thao tác các tài liệu Word trong các ứng dụng .NET. Bằng cách sử dụng Aspose.Words, bạn có thể xóa mục lục khỏi tài liệu của mình một cách hiệu quả, điều này có thể hữu ích nếu mục lục dư thừa hoặc không cần thiết. Điều này cho phép bạn tùy chỉnh nội dung tài liệu của mình và cải thiện cách trình bày tổng thể của nó.
+### 1. Aspose.Words cho .NET là gì?
 
-#### Câu hỏi: Làm cách nào để tải lên tài liệu trong Aspose.Words cho .NET?
+Aspose.Words for .NET là một thư viện .NET mạnh mẽ để thao tác tài liệu, cho phép các nhà phát triển tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình.
 
-Trả lời: Để xóa mục lục trong tài liệu Word, trước tiên bạn phải tải tài liệu vào bộ nhớ bằng phương thức Load() của Aspose.Words. Đây là mã mẫu để tải tài liệu từ một thư mục cụ thể:
+### 2. Tôi có thể sử dụng Aspose.Words miễn phí không?
 
-```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ Có, bạn có thể sử dụng Aspose.Words với[dùng thử miễn phí](https://releases.aspose.com/) hoặc nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
 
-// Tải tài liệu
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. Có thể xóa các trường khác bằng Aspose.Words không?
 
- Thay thế`"YOUR DOCUMENTS DIRECTORY"` với đường dẫn thực tế đến tài liệu của bạn.
+Tuyệt đối! Bạn có thể xóa bất kỳ trường nào bằng cách chỉ định loại của nó trong điều kiện lọc.
 
-#### Câu hỏi: Làm cách nào để xóa mục lục trong tài liệu bằng Aspose.Words?
+### 4. Tôi có cần Visual Studio để sử dụng Aspose.Words không?
 
- Đáp: Để loại bỏ TOC, bạn cần lặp qua`FieldStart` gõ các nút của TOC trong tài liệu. Bạn có thể lưu trữ các nút này để truy cập nhanh và tạo danh sách các nút để xóa. Đây là một mã mẫu:
+Mặc dù Visual Studio được khuyến khích sử dụng để dễ phát triển nhưng bạn có thể sử dụng bất kỳ IDE nào hỗ trợ .NET.
 
-```csharp
-// Lưu trữ các nút FieldStart của trường TOC trong tài liệu để truy cập nhanh.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//Đây là danh sách lưu trữ các nút được tìm thấy bên trong TOC được chỉ định. Chúng sẽ bị xóa khi kết thúc phương pháp này.
-List<Node> nodeList = new List<Node>();
+### 5. Tôi có thể tìm thêm thông tin về Aspose.Words ở đâu?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// Kiểm tra xem chỉ mục mục lục đã chỉ định có tồn tại hay không.
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// Sẽ an toàn hơn nếu lưu trữ các nút này và xóa tất cả chúng ở cuối.
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// Khi chúng tôi gặp nút FieldEnd thuộc loại FieldTOC,
-//chúng tôi biết chúng tôi đang ở cuối TOC hiện tại và chúng tôi dừng lại ở đây.
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### Hỏi: Làm cách nào để lưu tài liệu đã chỉnh sửa trong Aspose.Words cho .NET?
-
-Đáp: Sau khi xóa mục lục, bạn phải lưu tài liệu đã sửa đổi bằng phương thức Save(). Chỉ định đường dẫn và định dạng tệp đầu ra mong muốn (ví dụ: DOCX) cho tài liệu đã chỉnh sửa. Đây là một mã mẫu:
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ Để biết thêm tài liệu chi tiết, hãy truy cập[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/).

@@ -110,4 +110,4 @@ Tak, Aspose.Words for Java może wyodrębniać tekst ze zeskanowanych dokumentó
 
 ### Gdzie mogę uzyskać dostęp do dokumentacji Aspose.Words dla Java?
 
- Możesz znaleźć dokumentację Aspose.Words dla Java[Tutaj](https://reference.aspose.com/words/java/).
+ Możesz znaleźć dokumentację Aspose.Words dla Java.[Tutaj](https://reference.aspose.com/words/java/).

@@ -1,7 +1,7 @@
 ---
 title: Effiziente Strategien zur Dokumentenaufteilung und -formatierung
 linktitle: Effiziente Strategien zur Dokumentenaufteilung und -formatierung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Python effizient aufteilen und formatieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung und Quellcode-Beispiele.
 type: docs
 weight: 10

@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## Stap 3: Kopieer de sectie naar het doeldocument
- Om de sectie van het brondocument naar het doeldocument te kopiëren, gebruiken we de`ImportNode` methode om de bronsectie te importeren en toe te voegen aan het doeldocument.
+ Om de sectie van het brondocument naar het doeldocument te kopiëren, gebruiken we de`ImportNode`methode om de bronsectie te importeren en toe te voegen aan het doeldocument.
 
 ```csharp
 // Haal het brongedeelte op
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### Vraag: Hoe laad ik bron- en doeldocumenten in Aspose.Words voor .NET?
 
- A: Om het brondocument in een exemplaar van het`Document` klas gebeld`srcDoc` en maak een leeg exemplaar van de`Document` klas gebeld`dstDoc` voor het bestemmingsdocument kunt u de volgende code gebruiken:
+A: Om het brondocument in een exemplaar van het`Document` klas gebeld`srcDoc` en maak een leeg exemplaar van de`Document` klas gebeld`dstDoc` voor het bestemmingsdocument kunt u de volgende code gebruiken:
 
 ```csharp
 // Laad het brondocument

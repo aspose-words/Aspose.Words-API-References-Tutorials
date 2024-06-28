@@ -12,13 +12,13 @@ Aspose.Words för Java tillhandahåller en omfattande uppsättning API:er för t
 
 Handledningarna i Aspose.Words för Java-tabellbearbetning ger djupgående vägledning om alla aspekter av tabellbehandling, från grundläggande till avancerade ämnen. Dessa handledningar täcker allt från att skapa enkla tabeller till att dynamiskt fylla tabeller med data med hjälp av sammanslagning.
 
-Genom att följa steg-för-steg-instruktionerna och kodexemplen i självstudierna för tabellbearbetning kan utvecklare snabbt lära sig hur man använder Aspose.Words för att skapa och hantera tabeller i sina Word-dokument. Oavsett om du är nybörjare eller en erfaren utvecklare kan Aspose.Words för Java-tabellbearbetningshandledning hjälpa dig att ta dina färdigheter i tabellbehandling till nästa nivå.
+Genom att följa steg-för-steg-instruktionerna och kodexemplen i självstudierna för tabellbearbetning kan utvecklare snabbt lära sig hur man använder Aspose.Words för att skapa och hantera tabeller i sina Word-dokument. Oavsett om du är nybörjare eller en erfaren utvecklare, kan Aspose.Words för Java Table Processing-handledningar hjälpa dig att ta dina tabellbearbetningsfärdigheter till nästa nivå.
 
 Här är några av fördelarna med att använda Aspose.Words för Java för tabellbehandling:
 
 * Omfattande uppsättning API:er för tabellbehandling
 * Fördjupade handledningar och dokumentation
-* Lätt att använda API:er
+* Lättanvända API:er
 * Stöd för ett brett utbud av dokumentformat
 * Hög prestanda och skalbarhet
 

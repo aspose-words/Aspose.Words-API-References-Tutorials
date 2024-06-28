@@ -91,7 +91,7 @@ saveOptions.setUpdateLastPrintedProperty(true);
 doc.save("output.pdf", saveOptions);
 ```
 
-## Απόδοση εφέ DML 3D
+## Απόδοση εφέ 3D DML
 
 Για προηγμένη απόδοση εφέ DML 3D, ορίστε τη λειτουργία απόδοσης:
 

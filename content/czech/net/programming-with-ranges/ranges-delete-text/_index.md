@@ -67,7 +67,7 @@ této příručce jsme se zabývali tím, jak používat Aspose.Words pro .NET k
 
 #### Otázka: Jaký je účel funkce "Rozsahy odstranit text v dokumentu Word" v Aspose.Words pro .NET?
 
-Odpověď: Funkce "Rozsahy odstranit text v dokumentu aplikace Word" v Aspose.Words for .NET umožňuje odstranit konkrétní text v definovaných rozsahech dokumentu aplikace Word. Poskytuje možnost odstranit textový obsah z určených oddílů, odstavců nebo jiných oblastí v dokumentu.
+Odpověď: Funkce "Rozsahy odstranit text v dokumentu aplikace Word" v Aspose.Words for .NET umožňuje odstranit konkrétní text v definovaných rozsahech dokumentu aplikace Word. Poskytuje možnost odstranit textový obsah z určených sekcí, odstavců nebo jiných oblastí v dokumentu.
 
 #### Otázka: Co je Aspose.Words for .NET?
 
@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Tento kód přistupuje k první části dokumentu pomocí indexu`0` a odstraní veškerý text v tomto rozsahu.
+ Tento kód přistupuje k první části dokumentu pomocí indexu.`0` a odstraní veškerý text v tomto rozsahu.
 
 #### Otázka: Mohu odstranit text z více rozsahů v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 

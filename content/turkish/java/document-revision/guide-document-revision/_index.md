@@ -37,7 +37,7 @@ Belge revizyonuna geçmeden önce geliştirme ortamınızda Aspose.Words for Jav
 
 1.  Aspose.Words for Java'yı indirin:[Aspose.Release'ler](https://releases.aspose.com/words/java/) ve Java kitaplığını indirin.
 
-2. Aspose.Words'ü Projenize Ekleyin: İndirilen paketi çıkarın ve Aspose.Words JAR dosyasını Java projenizin derleme yoluna ekleyin.
+2. Aspose.Words'ü Projenize Ekleyin: İndirilen paketi çıkartın ve Aspose.Words JAR dosyasını Java projenizin derleme yoluna ekleyin.
 
 3. Lisans Alın: Kitaplığı üretim ortamlarında kullanmak için Aspose'tan geçerli bir lisans alın.
 
@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### Düzeltmelerin Reddedilmesi:
+#### İncelemelerin Reddedilmesi:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");

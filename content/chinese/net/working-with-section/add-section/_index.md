@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## 第 3 步：添加新部分
-要向文档添加新部分，我们将创建一个实例`Section`类并将其添加到`Sections`文档的集合。
+要向文档添加新部分，我们将创建一个实例`Section`类并将其添加到`Sections`文件收集。
 
 ```csharp
 Section sectionToAdd = new Section(doc);
@@ -82,7 +82,7 @@ builder. Writen("Hello2");
 
 #### 问：如何在 Aspose.Words for .NET 中向文档添加新部分？
 
-答：要在 Aspose.Words for .NET 中向文档添加新部分，您可以创建一个实例`Section`类并将其添加到`Sections`文档收集：
+答：要在 Aspose.Words for .NET 中向文档添加新部分，您可以创建一个实例`Section`类并将其添加到`Sections`文件收集：
 
 ```csharp
 Section sectionToAdd = new Section(doc);

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-comments/add-comments/
 ---
 
-den här omfattande handledningen kommer du att lära dig hur du lägger till kommentarer till ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna infoga kommentarer och anpassa deras innehåll i dina dokument.
+I den här omfattande handledningen kommer du att lära dig hur du lägger till kommentarer till ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna infoga kommentarer och anpassa deras innehåll i dina dokument.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:
@@ -93,7 +93,7 @@ S: Ja, du kan formatera kommentartext i Aspose.Words för .NET med hjälp av de 
 
 #### F: Hur kan jag hämta alla kommentarer som finns i ett dokument?
 
-S: Du kan hämta alla kommentarer som finns i ett dokument med hjälp av`Document.Comments` fast egendom.
+ S: Du kan hämta alla kommentarer som presenteras i ett dokument med hjälp av`Document.Comments` fast egendom.
 
 #### F: Kan jag ta bort en specifik kommentar i Aspose.Words för .NET?
 

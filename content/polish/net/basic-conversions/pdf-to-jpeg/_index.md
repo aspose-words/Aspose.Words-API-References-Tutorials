@@ -57,7 +57,7 @@ Podczas konwersji pliku PDF do formatu JPEG można określić rozdzielczość i 
 
 #### Jakie są ograniczenia procesu konwersji?
 
-Ograniczenia procesu konwersji zależą od konkretnego narzędzia lub biblioteki, z której korzystasz. Niektóre narzędzia mogą mieć ograniczenia związane ze złożonym układem, określonymi czcionkami lub elementami interaktywnymi w pliku PDF. Ważne jest, aby w pełni zrozumieć funkcje i ograniczenia wybranego narzędzia, aby móc podejmować świadome decyzje podczas konwersji.
+Ograniczenia procesu konwersji zależą od konkretnego narzędzia lub biblioteki, z której korzystasz. Niektóre narzędzia mogą mieć powiązane ograniczenia dotyczące złożonego układu, określonych czcionek lub elementów interaktywnych w pliku PDF. Ważne jest, aby w pełni zrozumieć funkcje i ograniczenia wybranego narzędzia, aby móc podejmować świadome decyzje podczas konwersji.
 
 #### Czy Aspose to niezawodne narzędzie do konwersji plików PDF na JPEG?
 

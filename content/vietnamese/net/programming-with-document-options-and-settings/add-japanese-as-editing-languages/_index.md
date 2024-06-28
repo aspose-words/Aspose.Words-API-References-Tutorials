@@ -42,7 +42,7 @@ Console.WriteLine(
 
 Mã này kiểm tra xem ID ngôn ngữ Viễn Đông có khớp với ID tiếng Nhật hay không. Theo kết quả, nó sẽ hiển thị một thông báo tương ứng.
 
-### Mã nguồn ví dụ cho Thêm tiếng Nhật làm ngôn ngữ chỉnh sửa bằng Aspose.Words cho .NET
+### Mã nguồn mẫu cho Thêm tiếng Nhật làm ngôn ngữ soạn thảo bằng Aspose.Words cho .NET
 
 ```csharp
 

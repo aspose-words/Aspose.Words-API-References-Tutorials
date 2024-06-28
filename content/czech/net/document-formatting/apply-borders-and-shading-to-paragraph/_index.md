@@ -54,7 +54,7 @@ builder.Write("I'm a formatted paragraph with a double border and a nice shading
 
 ## Krok 3: Uložení dokumentu
 
- Po vložení textového pole formuláře uložte dokument na požadované místo pomocí`Save` metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
+ Po vložení pole formuláře pro zadání textu uložte dokument na požadované místo pomocí`Save` metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
@@ -91,7 +91,7 @@ Zde je úplný zdrojový kód pro funkci Použít ohraničení a stínování na
 
 ## Závěr
 
- tomto tutoriálu jsme se naučili, jak použít ohraničení a stínování na odstavec v dokumentu aplikace Word pomocí Aspose.Words for .NET. Konfigurací odstavce`Borders` a`Shading` vlastnostmi jsme mohli nastavit styl ohraničení, barvu čáry a barvu výplně odstavce. Aspose.Words for .NET poskytuje výkonné možnosti formátování pro přizpůsobení vzhledu odstavců a vylepšení vizuální reprezentace vašich dokumentů.
+ V tomto tutoriálu jsme se naučili, jak použít ohraničení a stínování na odstavec v dokumentu aplikace Word pomocí Aspose.Words for .NET. Konfigurací odstavce`Borders` a`Shading` vlastnostmi jsme mohli nastavit styl ohraničení, barvu čáry a barvu výplně odstavce. Aspose.Words for .NET poskytuje výkonné možnosti formátování pro přizpůsobení vzhledu odstavců a vylepšení vizuální reprezentace vašich dokumentů.
 
 ### FAQ
 
@@ -100,13 +100,13 @@ Zde je úplný zdrojový kód pro funkci Použít ohraničení a stínování na
 Odpověď: Chcete-li použít ohraničení a stínování na odstavec v dokumentu aplikace Word pomocí Aspose.Words for .NET, postupujte takto:
 1.  Vytvořte nový dokument a a`DocumentBuilder` objekt.
 2.  Ohraničení odstavců nakonfigurujte přístupem k`Borders` vlastnictvím`ParagraphFormat` a nastavení stylu ohraničení pro každou stranu.
-3.  Nakonfigurujte výplň odstavce přístupem k`Shading` vlastnictvím`ParagraphFormat` a určení barvy textury a výplně.
+3. Nakonfigurujte výplň odstavce přístupem k`Shading` vlastnictvím`ParagraphFormat` a určení barvy textury a výplně.
 4.  Přidejte obsah do odstavce pomocí`Write` metoda`DocumentBuilder`.
 5.  Uložte dokument pomocí`Save` metoda.
 
 #### Otázka: Jak nastavím styl ohraničení pro každou stranu odstavce?
 
- A: Chcete-li nastavit styl ohraničení pro každou stranu odstavce, můžete otevřít`Borders` vlastnictvím`ParagraphFormat` a nastavte`LineStyle` majetek pro každého`BorderType` (např,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Můžete zadat různé styly čar jako např`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, atd.
+ A: Chcete-li nastavit styl ohraničení pro každou stranu odstavce, můžete otevřít`Borders` vlastnictvím`ParagraphFormat` a nastavte`LineStyle` majetek pro každého`BorderType` (např.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Můžete zadat různé styly čar jako např`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, atd.
 
 #### Otázka: Jak určím texturu a barvy výplně pro stínování odstavce?
 

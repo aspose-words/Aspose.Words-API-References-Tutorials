@@ -71,7 +71,7 @@ Zda je formátování během převodu zachováno, závisí na nástroji nebo kni
 
 #### Jaká jsou omezení procesu konverze?
 
-Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít omezení týkající se složitého formátování, tabulek nebo obrázků vložených do souboru DOCX. Je důležité plně porozumět funkcím a omezením zvoleného nástroje, abyste mohli při konverzi přijímat informovaná rozhodnutí.
+Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít související omezení pro složité formátování, tabulky nebo obrázky vložené do souboru DOCX. Je důležité plně porozumět funkcím a omezením zvoleného nástroje, abyste mohli při konverzi přijímat informovaná rozhodnutí.
 
 #### Je Aspose spolehlivým nástrojem pro konverzi DOCX na Markdown?
 

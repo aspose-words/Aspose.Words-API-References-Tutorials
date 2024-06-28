@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## चरण 4: स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ में जोड़ें
 
- उपयोग`AppendDocument` स्रोत दस्तावेज़ को जोड़ने के लिए गंतव्य दस्तावेज़ की विधि। उत्तीर्ण`ImportFormatMode.KeepSourceFormatting` दूसरे पैरामीटर के रूप में और तीसरे पैरामीटर के रूप में आयात प्रारूप विकल्प।
+ उपयोग`AppendDocument` स्रोत दस्तावेज़ को जोड़ने के लिए गंतव्य दस्तावेज़ की विधि। उत्तीर्ण`ImportFormatMode.KeepSourceFormatting`दूसरे पैरामीटर के रूप में और तीसरे पैरामीटर के रूप में आयात प्रारूप विकल्प।
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## चरण 5: गंतव्य दस्तावेज़ सहेजें
 
- अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
+अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Etapa 2: mostrar ou ocultar um favorito específico
 
- Nós usamos o`ShowHideBookmarkedContent`função para mostrar ou ocultar um marcador específico no documento. Esta função toma como parâmetros o documento, o nome do bookmark e um booleano para indicar se deve mostrar ou ocultar o bookmark:
+ Nós usamos o`ShowHideBookmarkedContent` função para mostrar ou ocultar um marcador específico no documento. Esta função toma como parâmetros o documento, o nome do bookmark e um booleano para indicar se deve mostrar ou ocultar o bookmark:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -128,7 +128,7 @@ R: Sim, o código fornecido funciona com vários formatos de documentos do Word 
 
 #### P: Posso usar condições para mostrar ou ocultar marcadores com base nos valores dos campos de mesclagem no documento?
 
- R: Sim, você pode usar condições e mesclar valores de campos para determinar se um marcador deve ser mostrado ou ocultado. Você pode personalizar o código do`ShowHideBookmarkedContent` função para levar em conta as condições e valores apropriados.
+ R: Sim, você pode usar condições e mesclar valores de campo para determinar se um marcador deve ser mostrado ou ocultado. Você pode personalizar o código do`ShowHideBookmarkedContent` função para levar em conta as condições e valores apropriados.
 
 #### P: Como posso excluir um marcador em um documento do Word usando Aspose.Words for .NET?
 

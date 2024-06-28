@@ -1,6 +1,6 @@
 ---
-title: PDF im Word-Format speichern (Docx)
-linktitle: PDF im Word-Format speichern (Docx)
+title: PDF im Word-Format (Docx) speichern
+linktitle: PDF im Word-Format (Docx) speichern
 second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie PDF-Dokumente mit Aspose.Words für .NET in das Word-Format (Docx) konvertieren oder speichern. Schritt-für-Schritt-Anleitung mit Beispielquellcode.
 type: docs

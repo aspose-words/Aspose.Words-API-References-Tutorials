@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### 问：如何使用 Aspose.Words for .NET 访问文档中的表格？
 
-答：文档加载后，您可以访问要执行文本替换的表格。在 Aspose.Words for .NET 中，您可以使用`GetChild`方法与`NodeType.Table`参数来获取所需的表。例如：
+答：文档加载后，您可以访问要执行文本替换的表格。在 Aspose.Words for .NET 中，您可以使用`GetChild`方法与`NodeType.Table`参数以获得所需的表。例如：
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

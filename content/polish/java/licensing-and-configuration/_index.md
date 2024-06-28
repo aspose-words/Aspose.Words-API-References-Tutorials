@@ -15,7 +15,7 @@ Rozpoczynając podróż w celu wykorzystania Aspose.Words dla Java, pierwszym kr
 
 1.  Zdobądź licencję: odwiedź[Strona zakupu Aspose](https://purchase.aspose.com/buy)nabyć licencję na Aspose.Words dla Java. Możesz wybierać spośród różnych opcji licencjonowania, w tym licencji tymczasowych na projekty krótkoterminowe.
 
-2. Uzyskaj plik licencji: Po zakupie otrzymasz plik licencji. Ten plik jest kluczowy do skonfigurowania Aspose.Words w projekcie Java.
+2. Uzyskaj plik licencji: Po zakupie otrzymasz plik licencji. Ten plik jest kluczowy do skonfigurowania Aspose.Words w twoim projekcie Java.
 
 3.  Zintegruj licencję: Aby włączyć Aspose.Words, zintegruj licencję z aplikacją Java. Zwykle wiąże się to z załadowaniem pliku licencji i zastosowaniem go do Aspose.Words. Patrz[Dokumentacja API](https://reference.aspose.com/words/java/) szczegółowe próbki kodu.
 

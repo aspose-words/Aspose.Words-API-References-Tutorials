@@ -97,4 +97,4 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 #### Q：是否可以在文件各部分之間繼續進行尾註編號？
 
-答：是的，可以在文件各部分之間繼續進行尾註編號。使用`RestartRule`的財產`EndnoteOptions`類別並將其設定為`RestartContinuous`允許在各部分之間繼續編號。
+答：是的，可以在文件各部分之間繼續進行尾註編號。使用`RestartRule`的財產`EndnoteOptions`類別並將其設定為`RestartContinuous`允許在各節之間繼續編號。

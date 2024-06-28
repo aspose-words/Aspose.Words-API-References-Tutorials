@@ -158,7 +158,7 @@ Aspose.Words for Java 中的清理选项允许您在邮件合并过程中控制�
 
 ### 当我设置时会发生什么`REMOVE_CONTAINING_FIELDS` option?
 
-设置`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS`选项将在邮件合并过程中从文档中删除整个合并字段，包括其包含的段落。当您想要消除合并字段及其关联文本时，这非常有用。
+设置`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS`该选项将在邮件合并过程中从文档中删除整个合并字段，包括其包含的段落。当您想要消除合并字段及其关联文本时，这非常有用。
 
 ### 如何从文档中删除未使用的合并字段？
 

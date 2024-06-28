@@ -65,10 +65,10 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//انسخ الجدول وأدخله في المستند بعد المستند الأصلي.
+	// انسخ الجدول وأدخله في المستند بعد المستند الأصلي.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// أدخل فقرة فارغة بين الجدولين،
+	//أدخل فقرة فارغة بين الجدولين،
 	// وإلا فسيتم دمجها في واحدة عند حفظها، وهذا يتعلق بالتحقق من صحة المستند.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

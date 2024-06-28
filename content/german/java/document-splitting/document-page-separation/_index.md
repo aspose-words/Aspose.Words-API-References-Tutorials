@@ -30,7 +30,7 @@ Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Vora
 
 ## Schritt 1: Laden Sie das Dokument
 
-Zunächst müssen wir das Dokument laden, das wir in Seiten aufteilen möchten. So können Sie es machen:
+Zunächst müssen wir das Dokument laden, dessen Seiten wir trennen möchten. So können Sie es machen:
 
 ```java
 // Laden Sie das Dokument
@@ -84,7 +84,7 @@ Ja, Aspose.Words unterstützt verschiedene Dokumentformate, darunter DOC, RTF, H
 
 Aspose.Words für Java ist eine kommerzielle Bibliothek, bietet jedoch eine kostenlose Testversion. Preisdetails und Lizenzinformationen finden Sie auf deren Website.
 
-### Kann ich getrennte Seiten wieder zu einem einzigen Dokument zusammenführen?
+### Kann ich Zusammenführungsseiten wieder in ein einziges Dokument trennen?
 
 Ja, Sie können die getrennten Seiten mit Aspose.Words für Java wieder in einem einzigen Dokument zusammenführen. Anweisungen zum Zusammenführen finden Sie in der Dokumentation.
 

@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Krok 5: Usuń istniejące obramowania tabeli
+## Krok 5: Usuń istniejące obramowania tabeli.
 Aby rozpocząć od nowego obramowania konturowego, musimy najpierw usunąć wszystkie istniejące obramowania z tabeli. Można tego dokonać za pomocą`ClearBorders()` metoda.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Krok 7: Wypełnij komórki kolorem tła
-Aby poprawić wizualną prezentację tabeli, możemy wypełnić komórki mielonym kolorem tła
+## Krok 7: Wypełnij komórki kolorem tła.
+Aby poprawić wizualną prezentację tabeli, możemy wypełnić komórki mielonym kolorem tła.
 
 pomysł. W tym przykładzie używamy jasnozielonego koloru.
 

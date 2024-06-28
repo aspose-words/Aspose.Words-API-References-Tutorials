@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Paso 2: Insertar una imagen
 
- Podemos insertar una imagen usando el`Shape` clase y especificando el tipo de imagen, aquí`ShapeType.Image` También configuramos el tipo de envoltura de la imagen en`WrapType.Inline`.
+ Podemos insertar una imagen usando el`Shape` clase y especificando el tipo de imagen, aquí`ShapeType.Image` . También configuramos el tipo de envoltura de la imagen en`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ builder.InsertNode(shape);
 
 #### P: ¿Puedo insertar una imagen desde una URL en Aspose.Words?
 
- R: Sí, puedes insertar una imagen desde una URL en Aspose.Words. Puedes usar lo mismo`InsertImage` y especifique la URL de la imagen en lugar de la ruta del archivo local.
+ R: Sí, puedes insertar una imagen desde una URL en Aspose.Words. Puedes usar lo mismo`InsertImage` especifique la URL de la imagen en lugar de la ruta del archivo local.
 
 #### P: ¿Cómo puedo cambiar el tamaño de una imagen en Aspose.Words?
 
@@ -69,7 +69,7 @@ builder.InsertNode(shape);
 
 #### P: ¿Puedo aplicar filtros a imágenes en Aspose.Words?
 
-R: Sí, puedes aplicar filtros a las imágenes en Aspose.Words. Por ejemplo, puede aplicar un filtro de desenfoque a una imagen usando el`ApplyGaussianBlur` método de la`Shape` objeto.
+ R: Sí, puedes aplicar filtros a las imágenes en Aspose.Words. Por ejemplo, puede aplicar un filtro de desenfoque a una imagen usando el`ApplyGaussianBlur` método de la`Shape` objeto.
 
 #### P: ¿Cómo puedo reemplazar una imagen por otra en Aspose.Words?
 

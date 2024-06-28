@@ -23,7 +23,7 @@ url: /zh-hant/net/working-with-vba-macros/read-vba-macros/
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## 第 2 步：載入文件並讀取 VBA 宏
+## 步驟 2：載入文件並讀取 VBA 巨集。
 接下來，我們將載入Word文件並檢查它是否包含VBA專案。如果文件有VBA項目，我們將循環遍歷項目中的所有模組並顯示每個模組的原始碼。
 
 ```csharp

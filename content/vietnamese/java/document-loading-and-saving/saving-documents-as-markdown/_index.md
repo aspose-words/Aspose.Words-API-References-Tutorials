@@ -45,7 +45,7 @@ doc.save("output.md", saveOptions);
 
 ## Bước 2: Tùy chỉnh căn chỉnh nội dung bảng
 
-Aspose.Words for Java cho phép bạn tùy chỉnh việc căn chỉnh nội dung bảng khi lưu dưới dạng Markdown. Bạn có thể căn chỉnh nội dung bảng sang trái, phải, giữa hoặc để tự động xác định dựa trên đoạn đầu tiên trong mỗi cột của bảng.
+Aspose.Words for Java cho phép bạn tùy chỉnh việc căn chỉnh nội dung bảng khi lưu dưới dạng Markdown. Bạn có thể căn chỉnh nội dung bảng sang trái, phải, giữa hoặc để tự động xác định dựa vào đoạn đầu tiên trong mỗi cột của bảng.
 
 Dưới đây là cách tùy chỉnh căn chỉnh nội dung bảng:
 

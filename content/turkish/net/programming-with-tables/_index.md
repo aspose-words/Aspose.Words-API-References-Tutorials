@@ -19,7 +19,7 @@ Bu eğitimleri takip ederek Aspose.Words for .NET'in tablo işleme özelliklerin
 | [Tabloyu İçeriğe Otomatik Sığdır](./auto-fit-table-to-contents/) | Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir tabloyu içeriğine nasıl otomatik olarak sığdıracağınızı öğrenin. |
 | [Komple Tabloyu Klonla](./clone-complete-table/) | Aspose.Words for .NET ile bir tablonun tamamını bir Word belgesine nasıl kopyalayacağınızı öğrenin. |
 | [Dizin Bulma](./finding-index/) | Aspose.Words for .NET ile bir Word belgesinde tablo, satır ve hücre indekslerini nasıl bulacağınızı öğrenin. |
-| [Tabloyu Doğrudan Ekle](./insert-table-directly/) | Aspose.Words for .NET ile bir tabloyu doğrudan bir Word belgesine nasıl ekleyeceğinizi öğrenin. |
+| [Tabloyu Doğrudan Ekle](./insert-table-directly/) | Aspose.Words for .NET kullanarak tabloları doğrudan Word belgelerine nasıl ekleyeceğinizi öğrenin. Belge oluşturma işleminizi kolaylaştırmak için ayrıntılı, adım adım kılavuzumuzu izleyin. |
 | [Html'den Tablo Ekle](./insert-table-from-html/) | Aspose.Words for .NET ile HTML'den Word belgesine nasıl tablo ekleyeceğinizi öğrenin. |
 | [Basit Tablo Oluştur](./create-simple-table/) | Aspose.Words for .NET ile bir Word belgesinde nasıl basit bir tablo oluşturulacağını öğrenin. |
 | [Biçimlendirilmiş Tablo](./formatted-table/) | Aspose.Words for .NET ile bir Word belgesinde biçimlendirilmiş bir tablonun nasıl oluşturulacağını öğrenin. |

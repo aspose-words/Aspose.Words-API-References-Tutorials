@@ -11,7 +11,7 @@ Samouczki Aspose.Words dla .NET dotyczące przetwarzania słów z rozszerzeniami
 
 Te samouczki zawierają instrukcje krok po kroku dotyczące zrozumienia i korzystania z funkcjonalności WebExtensions z Aspose.Words dla .NET. Dowiesz się, jak uzyskiwać dostęp do obiektów rozszerzeń internetowych, obsługiwać zdarzenia, oceniać kod JavaScript, dodawać niestandardowe funkcje i nie tylko. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, te samouczki pomogą Ci opanować techniki programowania za pomocą WebExtensions.
 
-Postępując zgodnie z tymi samouczkami, będziesz mógł w pełni wykorzystać możliwości rozszerzeń internetowych w dokumentach programu Word, nadając im interaktywne i dynamiczne funkcje. Samouczki zawierają przykłady kodu krok po kroku i jasne wyjaśnienia, które pomogą Ci w pełni wykorzystać te funkcje i stworzyć innowacyjne i interaktywne dokumenty Word.
+Postępując zgodnie z tymi samouczkami, będziesz mógł w pełni wykorzystać możliwości rozszerzeń internetowych w dokumentach programu Word, nadając im interaktywne i dynamiczne funkcje. Samouczki zawierają przykłady kodu krok po kroku i jasne wyjaśnienia, które pomogą Ci w pełni wykorzystać te funkcje i tworzyć innowacyjne i interaktywne dokumenty Word.
 
 ## Poradniki
 | Tytuł | Opis |

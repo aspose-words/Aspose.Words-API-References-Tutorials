@@ -78,9 +78,9 @@ Odp.: Funkcja odstępu między tekstem azjatyckim i łacińskim w dokumencie pro
 
 O: Dostosowanie odstępów między tekstem azjatyckim i łacińskim ma kluczowe znaczenie, aby zapewnić harmonijne połączenie różnych pism w dokumencie. Właściwe odstępy zwiększają czytelność i ogólny wygląd, zapobiegając sprawianiu wrażenia, że tekst jest zbyt ciasny lub rozłożony.
 
-#### P: Czy mogę dostosować odstępy pomiędzy różnymi skryptami?
+#### P: Czy mogę dostosować odstępy między różnymi skryptami?
 
- O: Tak, możesz dostosować odstępy między różnymi skryptami za pomocą`AddSpaceBetweenFarEastAndAlpha` I`AddSpaceBetweenFarEastAndDigit` nieruchomości. Włączając lub wyłączając te właściwości, możesz kontrolować odstęp między tekstem azjatyckim i łacińskim, a także między tekstem azjatyckim a liczbami.
+ Odp.: Tak, możesz dostosować odstępy między różnymi skryptami za pomocą`AddSpaceBetweenFarEastAndAlpha` I`AddSpaceBetweenFarEastAndDigit` nieruchomości. Włączając lub wyłączając te właściwości, możesz kontrolować odstęp między tekstem azjatyckim i łacińskim, a także między tekstem azjatyckim a liczbami.
 
 #### P: Czy Aspose.Words dla .NET obsługuje inne funkcje formatowania dokumentów?
 

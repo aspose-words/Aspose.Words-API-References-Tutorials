@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã biết cách bật hoặc tắt tính năng thay thế phông chữ trong tài liệu Word khi hiển thị nó bằng Aspose.Words cho .NET. Bằng cách kiểm soát việc thay thế phông chữ, bạn có thể tác động đến cách xử lý các phông chữ bị thiếu trong tài liệu được hiển thị của mình. Đừng ngần ngại sử dụng tính năng này để tùy chỉnh việc quản lý phông chữ trong tài liệu Word của bạn.
+Trong hướng dẫn này, chúng ta đã biết cách bật hoặc tắt tính năng thay thế phông chữ trong tài liệu Word khi hiển thị nó bằng Aspose.Words cho .NET. Bằng cách kiểm soát việc thay thế phông chữ, bạn có thể tác động đến cách xử lý phông chữ bị thiếu trong tài liệu được hiển thị của mình. Đừng ngần ngại sử dụng tính năng này để tùy chỉnh việc quản lý phông chữ trong tài liệu Word của bạn.
 
 ### Câu hỏi thường gặp
 

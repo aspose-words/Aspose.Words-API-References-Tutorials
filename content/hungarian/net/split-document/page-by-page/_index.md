@@ -2,7 +2,7 @@
 title: Word-dokumentum felosztása oldalak szerint
 linktitle: Word-dokumentum felosztása oldalak szerint
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan oszthat fel egy Word-dokumentumot egyes oldalakra az Aspose.Words for .NET használatával. Ez a hatékony API leegyszerűsíti a dokumentumok felosztásának folyamatát, így hatékony és kényelmes.
+description: Ismerje meg, hogyan oszthat fel egy Word-dokumentumot egyes oldalakra az Aspose.Words for .NET segítségével. Ez a hatékony API leegyszerűsíti a dokumentumok felosztásának folyamatát, így hatékony és kényelmes.
 type: docs
 weight: 10
 url: /hu/net/split-document/page-by-page/

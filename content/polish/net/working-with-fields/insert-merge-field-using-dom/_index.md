@@ -2,65 +2,52 @@
 title: Wstaw pole scalania za pomocą DOM
 linktitle: Wstaw pole scalania za pomocą DOM
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawiać niestandardowe pola scalania pól do dokumentów programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawiać i konfigurować pola scalania w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego wszechstronnego samouczka krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/insert-merge-field-using-dom/
 ---
 
-Oto przewodnik krok po kroku wyjaśniający poniższy kod źródłowy C#, który wykorzystuje funkcję „Wstaw pole scalania pola” w Aspose.Words dla .NET. Pamiętaj, aby dokładnie wykonać każdy krok, aby uzyskać pożądane rezultaty.
+Jeśli pracujesz z przetwarzaniem dokumentów w .NET, prawdopodobnie natknąłeś się na Aspose.Words. Ta potężna biblioteka oferuje szeroką gamę funkcji do programowego manipulowania dokumentami programu Word. W tym samouczku skupimy się na jednej konkretnej funkcji: wstawieniu pola scalania przy użyciu modelu obiektowego dokumentu (DOM) w Aspose.Words dla .NET. Ten przewodnik przeprowadzi Cię przez każdy krok, od skonfigurowania środowiska po wstawienie i aktualizację pola scalania w dokumencie programu Word.
 
-## Krok 1: Konfiguracja katalogu dokumentów
+## Warunki wstępne
 
-W podanym kodzie musisz określić katalog swoich dokumentów. Zastąp wartość „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką do katalogu dokumentów.
+Zanim zagłębisz się w kod, upewnij się, że masz wszystko, czego potrzebujesz, wraz z tym samouczkiem.
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1. **Basic Knowledge of C#:** Powinieneś znać się na programowaniu w języku C#.
+2. **Visual Studio Installed:** Upewnij się, że na komputerze jest zainstalowany program Visual Studio lub inne środowisko C# IDE.
+3. **Aspose.Words for .NET:** Pobierz i zainstaluj najnowszą wersję Aspose.Words dla .NET z[Wydania](https://releases.aspose.com/words/net/).
+4. **Valid License:** Jeśli nie masz licencji, możesz ją uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
 
-## Krok 2: Tworzenie dokumentu i narzędzia DocumentBuilder
+## Krok 1: Skonfiguruj swój projekt
 
-Zaczynamy od utworzenia nowego dokumentu i zainicjowania narzędzia DocumentBuilder.
+Na początek skonfigurujmy nowy projekt w Visual Studio.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+1. **Open Visual Studio.**
+2. **Create a New Project:** Przejdź do Plik > Nowy > Projekt. Wybierz aplikację konsolową C#.
+3. **Name Your Project:** Nadaj swojemu projektowi znaczącą nazwę i kliknij Utwórz.
 
-## Krok 3: Przesunięcie kursora do akapitu
+## Krok 2: Zainstaluj Aspose.Words
 
- Używamy`MoveTo()` metoda DocumentBuilder, aby przenieść kursor do akapitu, w którym chcemy wstawić pole scalania pól.
+Aby używać Aspose.Words, musisz dodać go do swojego projektu. Można to zrobić za pomocą Menedżera pakietów NuGet.
 
-```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-builder. MoveTo(para);
-```
+1. **Open NuGet Package Manager:** Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań, a następnie wybierz opcję Zarządzaj pakietami NuGet.
+2. **Search for Aspose.Words:** W Menedżerze pakietów NuGet wyszukaj „Apose.Words”.
+3. **Install the Package:** Kliknij Zainstaluj, aby dodać Aspose.Words do swojego projektu.
 
-## Krok 4: Wstawienie pola scalania pól
+## Krok 3: Importuj przestrzenie nazw
 
- Używamy narzędzia DocumentBuilder`InsertField()` metoda wstawiania pola scalania pól do akapitu.
-
-```csharp
-FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
-```
-
-Następnie konfigurujemy właściwości pola scalania pól, określając odpowiednie opcje, takie jak nazwa pola, tekst przed i za polem oraz opcje formatowania pionowego.
+Aby rozpocząć korzystanie z Aspose.Words, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu. Oto jak możesz to zrobić:
 
 ```csharp
-field.FieldName = "Test1";
-field.TextBefore = "Test2";
-field. TextAfter = "Test3";
-field. IsMapped = true;
-field. IsVerticalFormatting = true;
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- Na koniec nazywamy`Update()` metoda aktualizacji pola.
+## Krok 4: Zainicjuj swój dokument
 
-```csharp
-field. Update();
-```
-
-### Przykładowy kod źródłowy do wstawiania pola scalania pól za pomocą Aspose.Words dla .NET
+Teraz, gdy wszystko jest skonfigurowane, utwórzmy nowy dokument Word i zainicjuj DocumentBuilder.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
@@ -69,51 +56,67 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Utwórz dokument i narzędzie DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Krok 5: Przesuń kursor do określonego akapitu
+
+Następnie musimy przesunąć kursor do konkretnego akapitu w dokumencie, w którym chcemy wstawić pole scalania.
+
+```csharp
 // Przesuń kursor do akapitu.
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-builder. MoveTo(para);
+builder.MoveToParagraph(2, 0);
+```
 
+## Krok 6: Wstaw pole scalania
+
+ Wstawianie pola scalającego jest proste. Będziemy korzystać z`InsertField` metoda`DocumentBuilder` klasa.
+
+```csharp
 // Wstaw pole scalania pól.
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
+```
 
+## Krok 7: Skonfiguruj pole scalania
+
+Po wstawieniu pola scalania możesz ustawić różne właściwości, aby skonfigurować je zgodnie ze swoimi potrzebami.
+
+```csharp
 field.FieldName = "Test1";
 field.TextBefore = "Test2";
-field. TextAfter = "Test3";
-field. IsMapped = true;
-field. IsVerticalFormatting = true;
+field.TextAfter = "Test3";
+field.IsMapped = true;
+field.IsVerticalFormatting = true;
+```
 
+## Krok 8: Zaktualizuj i zapisz dokument
+
+Na koniec zaktualizuj pole, aby upewnić się, że wszystkie ustawienia zostały zastosowane, i zapisz dokument.
+
+```csharp
 // Zaktualizuj pole.
-field. Update();
+field.Update();
 
+// Zapisz dokument.
 doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
-W tym przykładzie utworzyliśmy nowy dokument, przesunęliśmy kursor do żądanego akapitu, a następnie wstawiliśmy do dokumentu pole scalania pól.
+## Wniosek
 
-### Często zadawane pytania
+Wykonując poniższe kroki, możesz łatwo wstawiać i konfigurować pola scalania w dokumencie programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono podstawowe kroki od skonfigurowania środowiska do zapisania ostatecznego dokumentu. Dzięki Aspose.Words możesz zautomatyzować złożone zadania przetwarzania dokumentów, dzięki czemu Twoje aplikacje .NET będą potężniejsze i wydajniejsze.
 
-#### P: Jak mogę wstawić pole scalania do dokumentu programu Word przy użyciu Aspose.Words dla .NET z DOM?
+## Często zadawane pytania
 
-Odp.: Aby wstawić pole scalania do dokumentu programu Word przy użyciu Aspose.Words dla .NET z DOM, możesz wykonać następujące kroki:
+### 1. Co to jest pole scalania?
+Pole scalania to element zastępczy w dokumencie, który można dynamicznie zastępować danymi ze źródła danych, takiego jak baza danych lub plik CSV.
 
-1. Przejdź do akapitu, w którym chcesz wstawić pole scalania.
-2.  Stwórz`FieldMergeField` obiekt.
-3. Ustaw właściwości pola scalania, takie jak nazwa pola i opcje formatowania.
-4.  Dodaj pole scalania do akapitu za pomocą`Paragraph.AppendChild` metoda.
+### 2. Czy mogę korzystać z Aspose.Words za darmo?
+ Aspose.Words oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/). W przypadku długotrwałego użytkowania konieczne będzie wykupienie licencji.
 
-#### P: Jak mogę określić dane źródłowe dla pola scalania w Aspose.Words dla .NET?
+### 3. Jak uzyskać tymczasową licencję na Aspose.Words?
+ Licencję tymczasową można uzyskać ze strony internetowej Aspose[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-O: Aby określić dane źródłowe dla pola scalania w Aspose.Words dla .NET, możesz użyć`FieldMergeField.FieldName` metoda ustawiania nazwy pola scalania, czyli nazwy pola w zewnętrznym źródle danych, takim jak plik CSV, baza danych itp. Można również użyć metody`FieldMergeField.Text` metoda bezpośredniego ustawiania wartości pola scalania.
+### 4. Jakie wersje .NET są obsługiwane przez Aspose.Words?
+Aspose.Words obsługuje wiele wersji .NET, w tym .NET Framework, .NET Core i .NET Standard.
 
-#### P: Czy mogę dostosować wygląd pola scalania w dokumencie programu Word za pomocą Aspose.Words dla .NET?
-
- Odp.: Tak, możesz dostosować wygląd pola scalania w dokumencie Word za pomocą Aspose.Words dla .NET. Możesz ustawić opcje formatowania, takie jak wielkość liter, czcionka, kolor itp., korzystając z właściwości pliku`FieldMergeField` obiekt.
-
-#### P: Jak mogę sprawdzić, czy pole scalania zostało pomyślnie wstawione do dokumentu programu Word za pomocą Aspose.Words dla .NET?
-
- Odp.: Aby sprawdzić, czy pole scalania zostało pomyślnie wstawione, możesz przeglądać zawartość dokumentu i wyszukiwać wystąpienia pól scalania. Można używać metod i właściwości metody`Document` obiekt, aby uzyskać dostęp do akapitów, pól i innych elementów dokumentu.
-
-#### P: Czy wstawienie pola scalania przy użyciu DOM wpływa na strukturę dokumentu Worda w Aspose.Words dla .NET?
-
-Odp.: Wstawienie pola scalania przy użyciu modelu DOM nie ma bezpośredniego wpływu na strukturę dokumentu programu Word. Dodaje jednak nowy element pola do treści dokumentu. Możesz manipulować strukturą dokumentu, dodając, usuwając lub modyfikując istniejące elementy zgodnie ze swoimi potrzebami.
+### 5. Gdzie mogę znaleźć dokumentację API dla Aspose.Words?
+ Dostępna jest dokumentacja API.[Tutaj](https://reference.aspose.com/words/net/).

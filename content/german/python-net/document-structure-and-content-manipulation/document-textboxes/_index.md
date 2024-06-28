@@ -1,7 +1,7 @@
 ---
 title: Verbessern Sie visuelle Inhalte mit Textfeldern in Word-Dokumenten
 linktitle: Verbessern Sie visuelle Inhalte mit Textfeldern in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Verbessern Sie die visuelle Darstellung von Dokumenten mit Aspose.Words Python! Erfahren Sie Schritt für Schritt, wie Sie Textfelder in Word-Dokumenten erstellen und anpassen. Optimieren Sie Inhaltslayout, Formatierung und Stil für ansprechende Dokumente.
 type: docs
 weight: 25
@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- In diesem Code erstellen wir einen neuen`Document` und ein`DocumentBuilder` . Der`insert_text_box`Die Methode wird verwendet, um dem Dokument ein Textfeld hinzuzufügen. Sie können den Inhalt, die Position und die Größe des Textfelds Ihren Anforderungen entsprechend anpassen.
+ In diesem Code erstellen wir einen neuen`Document` und ein`DocumentBuilder` . Der`insert_text_box` Die Methode wird verwendet, um dem Dokument ein Textfeld hinzuzufügen. Sie können den Inhalt, die Position und die Größe des Textfelds Ihren Anforderungen entsprechend anpassen.
 
 ## Textfelder formatieren
 

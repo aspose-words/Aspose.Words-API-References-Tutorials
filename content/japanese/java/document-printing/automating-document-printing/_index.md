@@ -42,7 +42,7 @@ public class DocumentPrintingAutomation {
 
 ```java
 public static void main(String[] args) throws Exception {
-    //ドキュメントをロードします
+    //ドキュメントをロードする
     Document doc = new Document("path_to_your_document.docx");
 }
 ```
@@ -53,7 +53,7 @@ public static void main(String[] args) throws Exception {
 
 ```java
 public static void main(String[] args) throws Exception {
-    //ドキュメントをロードします
+    //ドキュメントをロードする
     Document doc = new Document("path_to_your_document.docx");
 
     // PrintDocumentオブジェクトを作成する

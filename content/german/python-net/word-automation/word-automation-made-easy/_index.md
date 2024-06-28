@@ -1,7 +1,7 @@
 ---
 title: Word-Automatisierung leicht gemacht
 linktitle: Word-Automatisierung leicht gemacht
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Automatisieren Sie die Textverarbeitung ganz einfach mit Aspose.Words für Python. Erstellen, formatieren und bearbeiten Sie Dokumente programmgesteuert. Steigern Sie jetzt die Produktivität!
 type: docs
 weight: 10

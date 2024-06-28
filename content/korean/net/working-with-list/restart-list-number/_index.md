@@ -118,11 +118,11 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### Q: Aspose.Words에서 다시 시작된 목록 번호 매기기의 접두사와 접미사를 사용자 정의할 수 있습니까?
 
- A: 예, Aspose.Words에서 다시 시작된 목록 번호 매기기의 접두사와 접미사를 사용자 정의할 수 있습니다. 그만큼`ListLevel` 클래스는 다음과 같은 속성을 제공합니다.`ListLevel.NumberPrefix` 그리고`ListLevel.NumberSuffix` 이를 통해 목록의 각 수준에 대한 접두사와 접미사를 지정할 수 있습니다. 이러한 속성을 사용하여 필요에 따라 접두사와 접미사를 사용자 지정할 수 있습니다.
+ A: 예, Aspose.Words에서 다시 시작된 목록 번호 매기기의 접두사와 접미사를 사용자 정의할 수 있습니다. 그만큼`ListLevel` 클래스는 다음과 같은 속성을 제공합니다.`ListLevel.NumberPrefix` 그리고`ListLevel.NumberSuffix`이를 통해 목록의 각 수준에 대한 접두사와 접미사를 지정할 수 있습니다. 이러한 속성을 사용하여 필요에 따라 접두사와 접미사를 사용자 지정할 수 있습니다.
 
 #### Q: 목록을 다시 시작해야 하는 특정 번호 매기기 값을 어떻게 지정할 수 있습니까?
 
-A: 목록을 다시 시작해야 하는 특정 숫자 값을 지정하려면`ListRestartAtNumber` 원하는 값을 인수로 전달하는 메서드입니다. 예를 들어, 5부터 번호 매기기를 다시 시작하려면 다음을 사용할 수 있습니다.`list.ListRestartAtNumber(5)`.
+ A: 목록을 다시 시작해야 하는 특정 숫자 값을 지정하려면`ListRestartAtNumber` 원하는 값을 인수로 전달하는 메서드입니다. 예를 들어, 5부터 번호 매기기를 다시 시작하려면 다음을 사용할 수 있습니다.`list.ListRestartAtNumber(5)`.
 
 #### Q: Aspose.Words에서 다단계 목록 번호 매기기를 다시 시작할 수 있나요?
 

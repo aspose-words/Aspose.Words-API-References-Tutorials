@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 次に、Word 文書を`Document`クラス。インデックス 0 を使用してドキュメントの最初のセクションにアクセスします。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Document.docx");
 
 //セクションにアクセスする
@@ -74,7 +74,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Word 文書を`Document`というクラス`doc`インデックス 0 を使用してドキュメントの最初のセクションにアクセスするには、次のコードを使用できます。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Document.docx");
 
 //セクションにアクセスする

@@ -17,7 +17,7 @@ Pastikan Anda memiliki prasyarat berikut:
 - Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
 - Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Langkah 2: Buat dokumen baru dan masukkan bagan.
 
  Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
 
@@ -82,7 +82,7 @@ Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah mengakses dan memodifika
 ### FAQ
 
 #### Q1. Apa yang dimaksud dengan label multi-baris centang pada sumbu bagan?
-Centang label multi-baris dalam sumbu bagan mengacu pada label sumbu yang membentang di beberapa baris ketika teks label panjang atau memerlukan pembungkusan agar sesuai dengan ruang yang tersedia. Daripada memotong teks label atau menyebabkan kekacauan visual, sumbu bagan secara otomatis membagi label menjadi beberapa baris untuk memastikan keterbacaan. Centang label multi-baris sangat berguna ketika menangani kategori panjang atau label nilai dalam bagan.
+Centang label multi-baris dalam sumbu bagan mengacu pada label sumbu yang membentang di beberapa baris ketika teks label panjang atau memerlukan pembungkusan agar sesuai dengan ruang yang tersedia. Daripada memotong teks label atau menyebabkan kekacauan visual, sumbu bagan secara otomatis membagi label menjadi beberapa baris untuk memastikan keterbacaan. Centang label multi-baris sangat berguna saat menangani kategori panjang atau label nilai dalam bagan.
 
 #### Q2. Bisakah saya menyesuaikan perataan label centang pada sumbu bagan?
  Ya, Anda dapat mengkustomisasi perataan label centang di sumbu bagan menggunakan Aspose.Words untuk .NET. Dengan mengakses`TickLabelAlignment` properti dari`ChartAxis` objek, Anda dapat mengatur perataan yang diinginkan untuk label centang. Opsi perataan mencakup perataan kiri, kanan, tengah, atau rata. Menyesuaikan perataan memungkinkan Anda mengontrol posisi horizontal label centang di sepanjang sumbu bagan, memastikan keterbacaan dan presentasi visual yang tepat.

@@ -15,7 +15,7 @@ Az Aspose.Words for .NET egy hatékony osztálykönyvtár Word dokumentumok lét
 
 ## A láblécek eltávolításának célja az Aspose.Words-ben
 
-Előfordulhatnak olyan esetek, amikor el szeretné távolítani a lábléceket egy Word-dokumentumból. Ennek számos oka lehet, például az érzékeny információk törlésének szükségessége, a dokumentum más célra való adaptálása vagy egyszerűen a nem kívánt elemek eltávolítása. Az Aspose.Words ezt a feladatot sokkal könnyebbé teszi, mivel egyszerű és hatékony módszert kínál a láblécek eltávolítására a dokumentumokból.
+Előfordulhatnak olyan esetek, amikor el szeretné távolítani a lábléceket egy Word-dokumentumból. Ennek számos oka lehet, például az érzékeny információk törlésének szükségessége, a dokumentum más felhasználásra való adaptálása vagy egyszerűen a nem kívánt elemek eltávolítása. Az Aspose.Words ezt a feladatot sokkal könnyebbé teszi, mivel egyszerű és hatékony módszert kínál a láblécek eltávolítására a dokumentumokból.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtár elérési útját
 
@@ -71,7 +71,7 @@ Ha befejeztük a láblécek eltávolítását, a szerkesztett dokumentumot kül�
 doc.Save(dataDir + "Name_of_modified_document.docx");
 ```
 
-Ne felejtse el megadni a módosított fájl nevét és helyét a "Módosított_dokumentum_neve.docx" mezőben.
+Ne felejtse el megadni a módosított fájl nevét és helyét a "Módosított_dokumentum_neve.docx"-ben.
 
 ### Minta forráskód a láblécek eltávolításához az Aspose.Words for .NET használatával 
 ```csharp

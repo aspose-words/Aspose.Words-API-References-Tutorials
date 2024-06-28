@@ -1,8 +1,8 @@
 ---
-title: リビジョンの挿入内のテキストを無視
-linktitle: リビジョンの挿入内のテキストを無視
+title: リビジョンを挿入内のテキストを無視
+linktitle: リビジョンを挿入内のテキストを無視
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET の「挿入リビジョン内のテキストを無視」機能を使用して、Word 文書内の挿入リビジョンを操作する方法を学習します。
+description: Aspose.Words for .NET の「挿入リビジョン内のテキストを無視」機能を使用して、Word 文書内の挿入リビジョンを操作する方法を説明します。
 type: docs
 weight: 10
 url: /ja/net/find-and-replace-text/ignore-text-inside-insert-revisions/

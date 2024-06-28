@@ -127,7 +127,7 @@ Odp.: Używając wyrażeń regularnych do zamiany tekstu w Aspose.Words dla .NET
 
 #### P: Czy mogę dokonać zamiany tekstu bez rozróżniania wielkości liter przy użyciu wyrażeń regularnych w Aspose.Words dla .NET?
 
-O: Tak, w Aspose.Words dla .NET możesz zastępować tekst bez uwzględniania wielkości liter, używając wyrażeń regularnych. Domyślnie w wyrażeniach regularnych w .NET rozróżniana jest wielkość liter. Można jednak zmodyfikować to zachowanie, używając odpowiedniej flagi RegexOptions.IgnoreCase podczas konstruowania obiektu Regex.
+Odp.: Tak, możesz dokonać zamiany tekstu bez uwzględniania wielkości liter, używając wyrażeń regularnych w Aspose.Words dla .NET. Domyślnie w wyrażeniach regularnych w .NET rozróżniana jest wielkość liter. Można jednak zmodyfikować to zachowanie, używając odpowiedniej flagi RegexOptions.IgnoreCase podczas konstruowania obiektu Regex.
 
 #### P: Czy mogę zastąpić tekst w wielu dokumentach za pomocą funkcji „Zamień na wyrażenie regularne” w Aspose.Words dla .NET?
 

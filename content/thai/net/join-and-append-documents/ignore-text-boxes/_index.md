@@ -2,7 +2,7 @@
 title: ละเว้นกล่องข้อความ
 linktitle: ละเว้นกล่องข้อความ
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีผนวกเอกสารโดยละเว้นการจัดรูปแบบกล่องข้อความโดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีผนวกเอกสารโดยไม่สนใจการจัดรูปแบบกล่องข้อความโดยใช้ Aspose.Words สำหรับ .NET
 type: docs
 weight: 10
 url: /th/net/join-and-append-documents/ignore-text-boxes/
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## ขั้นตอนที่ 3: ตั้งค่าตัวเลือกรูปแบบการนำเข้า
 
- สร้างอินสแตนซ์ของ`ImportFormatOptions` คลาสและตั้งค่า`IgnoreTextBoxes`ทรัพย์สินเพื่อ`false`. เพื่อให้แน่ใจว่ากล่องข้อความจะรวมอยู่ในกระบวนการต่อท้ายโดยที่ยังคงการจัดรูปแบบไว้
+ สร้างอินสแตนซ์ของ`ImportFormatOptions` คลาสและตั้งค่า`IgnoreTextBoxes`ทรัพย์สินเพื่อ`false`- เพื่อให้แน่ใจว่ากล่องข้อความจะรวมอยู่ในกระบวนการต่อท้ายโดยที่ยังคงการจัดรูปแบบไว้
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## ขั้นตอนที่ 4: ผนวกเนื้อหากล่องข้อความ
 
- สร้างก`NodeImporter` object และใช้เพื่อนำเข้าโหนดกล่องข้อความจากเอกสารต้นทางไปยังเอกสารปลายทาง วนซ้ำแต่ละย่อหน้าในเอกสารต้นฉบับและนำเข้าไปยังเอกสารปลายทาง
+ สร้างก`NodeImporter`object และใช้เพื่อนำเข้าโหนดกล่องข้อความจากเอกสารต้นทางไปยังเอกสารปลายทาง วนซ้ำแต่ละย่อหน้าในเอกสารต้นฉบับและนำเข้าไปยังเอกสารปลายทาง
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## ขั้นตอนที่ 5: บันทึกเอกสารปลายทาง
 
- สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ.
+สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ วัตถุ
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

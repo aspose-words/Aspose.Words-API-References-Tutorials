@@ -83,7 +83,7 @@ Dies ist ein vollständiger Beispielcode für den typisierten Zugriff auf Tabell
 
 #### F: Was ist typisierter Zugriff in Node.js?
 
-A: Typisierter Zugriff in Node.js bezieht sich auf die Verwendung bestimmter Knotentypen für den Zugriff auf Knoteneigenschaften und -werte in einem XML-Dokument. Anstatt generische Eigenschaften zu verwenden, verwendet der typisierte Zugriff spezifische Methoden, um auf bestimmte Knotentypen wie Textknoten, Elementknoten, Attributknoten usw. zuzugreifen.
+A: Typischer Zugriff in Node.js bezieht sich auf die Verwendung bestimmter Knotentypen für den Zugriff auf Knoteneigenschaften und -werte in einem XML-Dokument. Anstatt generische Eigenschaften zu verwenden, verwendet der typisierte Zugriff spezifische Methoden, um auf bestimmte Knotentypen wie Textknoten, Elementknoten, Attributknoten usw. zuzugreifen.
 
 #### F: Wie greife ich mit typisiertem Zugriff auf Knoten zu?
 

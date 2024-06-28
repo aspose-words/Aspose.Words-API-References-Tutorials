@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## Bước 2: Thêm thuộc tính tùy chỉnh
- Tiếp theo, thêm các thuộc tính tùy chỉnh mong muốn. Ví dụ: để thêm thuộc tính "Công ty" có giá trị "Aspose", hãy sử dụng thuộc tính`Add` phương thức của bộ sưu tập CustomDocumentProperties:
+ Tiếp theo, thêm các thuộc tính tùy chỉnh mong muốn. Ví dụ: để thêm thuộc tính "Công ty" có giá trị "Apose", hãy sử dụng thuộc tính`Add` phương thức của bộ sưu tập CustomDocumentProperties:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ Trả lời: Để xuất các thuộc tính tùy chỉnh của tài liệu sang
 
  Tạo một thể hiện của`Document` lớp học.
 
- Thêm các thuộc tính tùy chỉnh mong muốn bằng cách sử dụng`CustomDocumentProperties` bộ sưu tập. Ví dụ, sử dụng`Add` để thêm thuộc tính "Công ty" có giá trị "Aspose".
+ Thêm các thuộc tính tùy chỉnh mong muốn bằng cách sử dụng`CustomDocumentProperties` bộ sưu tập. Ví dụ, sử dụng`Add` để thêm thuộc tính "Công ty" có giá trị "Apose".
 
  Tạo một thể hiện của`PdfSaveOptions` lớp và chỉ định cách xuất các thuộc tính tùy chỉnh bằng cách sử dụng`CustomPropertiesExport` tài sản. Các`PdfCustomPropertiesExport.Standard` value xuất các thuộc tính tùy chỉnh theo cài đặt mặc định.
 

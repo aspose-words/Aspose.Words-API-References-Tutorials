@@ -2,153 +2,129 @@
 title: Insérer une table des matières dans un document Word
 linktitle: Insérer une table des matières dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment insérer une table des matières dans des documents Word à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment insérer une table des matières dans Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour une navigation fluide dans les documents.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-Dans ce didacticiel complet, vous apprendrez à insérer une table des matières dans un document Word à l'aide d'Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure de générer une table des matières avec les titres et les numéros de page appropriés.
+## Introduction
+Dans ce didacticiel, vous apprendrez comment ajouter efficacement une table des matières (TOC) à vos documents Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité est essentielle pour organiser et parcourir des documents longs, améliorer la lisibilité et fournir un aperçu rapide des sections du document.
 
 ## Conditions préalables
-Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
-- Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
-## Étape 1 : Créer un nouveau document et DocumentBuilder
-Pour commencer, créez un nouveau document à l'aide de la classe Document et initialisez un objet DocumentBuilder :
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+
+- Compréhension de base du framework C# et .NET.
+- Visual Studio installé sur votre ordinateur.
+-  Bibliothèque Aspose.Words pour .NET. Si vous ne l'avez pas encore installé, vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+
+## Importer des espaces de noms
+
+Pour commencer, importez les espaces de noms nécessaires dans votre projet C# :
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+Décomposons le processus en étapes claires :
+
+## Étape 1 : initialiser le document Aspose.Words et DocumentBuilder
+
+ Tout d’abord, initialisez un nouveau Aspose.Words`Document` objet et un`DocumentBuilder` travailler avec:
+
+```csharp
+// Initialiser le document et DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Étape 2 : Insérer une table des matières
-Ensuite, utilisez la méthode InsertTableOfContents de la classe DocumentBuilder pour insérer une table des matières. Spécifiez les options de formatage requises dans la méthode :
+## Étape 2 : Insérez la table des matières
+
+ Maintenant, insérez la table des matières en utilisant le`InsertTableOfContents` méthode:
 
 ```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-```
-
-## Étape 3 : Ajouter le contenu du document
-Après avoir inséré la table des matières, ajoutez le contenu réel du document. Définissez les styles de titre appropriés à l'aide de StyleIdentifier :
-
-```csharp
-builder.InsertBreak(BreakType.PageBreak);
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-builder.Writeln("Heading 1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-builder.Writeln("Heading 1.1");
-builder.Writeln("Heading 1.2");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-builder.Writeln("Heading 2");
-builder.Writeln("Heading 3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-builder.Writeln("Heading 3.1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
-builder.Writeln("Heading 3.1.1");
-builder.Writeln("Heading 3.1.2");
-builder.Writeln("Heading 3.1.3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-builder.Writeln("Heading 3.2");
-builder.Writeln("Heading 3.3");
-```
-
-## Étape 4 : mettre à jour la table des matières
-La table des matières nouvellement insérée sera initialement vide. Pour le renseigner, mettez à jour les champs du document :
-
-```csharp
-doc.UpdateFields();
-```
-
-## Étape 5 : Enregistrez le document
-Après avoir inséré la table des matières et mis à jour les champs, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
-
-```csharp
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-```
-
-### Exemple de code source pour insérer une table des matières à l'aide d'Aspose.Words pour .NET
-Voici le code source complet pour insérer une table des matières à l'aide d'Aspose.Words for .NET :
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-// Initialiser DocumentBuilder avec l'objet Document
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
 // Insérer une table des matières
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+```
 
-// Commencez le contenu réel du document sur la deuxième page.
+## Étape 3 : démarrer le contenu du document sur une nouvelle page
+
+Pour garantir un formatage correct, démarrez le contenu réel du document sur une nouvelle page :
+
+```csharp
+// Insérer un saut de page
 builder.InsertBreak(BreakType.PageBreak);
+```
 
+## Étape 4 : Structurez votre document avec des titres
+
+Organisez le contenu de votre document à l'aide de styles de titres appropriés :
+
+```csharp
+// Définir les styles de titre
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
 builder.Writeln("Heading 1");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
 builder.Writeln("Heading 1.1");
 builder.Writeln("Heading 1.2");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
 builder.Writeln("Heading 2");
 builder.Writeln("Heading 3");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
 builder.Writeln("Heading 3.1");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
-
 builder.Writeln("Heading 3.1.1");
 builder.Writeln("Heading 3.1.2");
 builder.Writeln("Heading 3.1.3");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
 builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
+```
 
+## Étape 5 : mettre à jour et remplir la table des matières
 
-// La table des matières nouvellement insérée sera initialement vide.
-// Il doit être rempli en mettant à jour les champs du document.
+Mettez à jour la table des matières pour refléter la structure du document :
+
+```csharp
+// Mettre à jour les champs de la table des matières
 doc.UpdateFields();
+```
 
+## Étape 6 : Enregistrez le document
 
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
+Enfin, enregistrez votre document dans un répertoire spécifié :
+
+```csharp
+// Enregistrez le document
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment insérer une table des matières dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ce guide étape par étape et en utilisant le code source fourni, vous pouvez désormais générer une table des matières avec les titres et numéros de page appropriés pour vos documents.
+L'ajout d'une table des matières à l'aide d'Aspose.Words pour .NET est simple et améliore considérablement la convivialité de vos documents. En suivant ces étapes, vous pouvez organiser et parcourir efficacement des documents complexes.
 
-### FAQ pour insérer une table des matières dans un document Word
+## FAQ
 
-#### Q : Puis-je personnaliser l’apparence de la table des matières ?
+### Puis-je personnaliser l'apparence de la table des matières ?
+Oui, vous pouvez personnaliser l'apparence et le comportement de la table des matières à l'aide des API Aspose.Words pour .NET.
 
- R : Oui, vous pouvez personnaliser l'apparence de la table des matières en modifiant les options de formatage spécifiées dans le`InsertTableOfContents` méthode. Les paramètres vous permettent de contrôler les numéros de page, l'indentation et d'autres styles.
+### Aspose.Words prend-il en charge la mise à jour automatique des champs ?
+Oui, Aspose.Words vous permet de mettre à jour dynamiquement des champs tels que la table des matières en fonction des modifications apportées au document.
 
-#### Q : Que faire si je souhaite inclure des niveaux de titres spécifiques dans la table des matières ?
+### Puis-je générer plusieurs tables des matières dans un seul document ?
+Aspose.Words prend en charge la génération de plusieurs tables des matières avec différents paramètres dans un seul document.
 
- R : Vous pouvez spécifier les niveaux de titre souhaités à inclure dans la table des matières en ajustant la valeur dans le champ`InsertTableOfContents` méthode. Par exemple, en utilisant`"\\o \"1-3\""` comprendra les niveaux de titres 1 à 3.
+### Aspose.Words est-il compatible avec différentes versions de Microsoft Word ?
+Oui, Aspose.Words garantit la compatibilité avec les différentes versions des formats Microsoft Word.
 
-#### Q : Puis-je mettre à jour automatiquement la table des matières si j'apporte des modifications au contenu du document ?
-
- R : Oui, vous pouvez mettre à jour automatiquement la table des matières en appelant le`UpdateFields` méthode sur le document. Cela garantira que toutes les modifications apportées au contenu du document, telles que l'ajout ou la suppression de titres, sont reflétées dans la table des matières.
-
-#### Q : Comment puis-je styliser différemment les niveaux de titre dans la table des matières ?
-
- R : Vous pouvez styliser les niveaux de titre différemment en utilisant différents styles de paragraphe pour chaque niveau de titre. En attribuant différents`StyleIdentifier` valeurs à la`ParagraphFormat` de la`DocumentBuilder`, vous pouvez créer des styles distincts pour chaque niveau de titre.
-
-#### Q : Est-il possible d'ajouter une mise en forme supplémentaire aux titres de la table des matières ?
-
- R : Oui, vous pouvez ajouter une mise en forme supplémentaire aux en-têtes de la table des matières, comme des styles de police, des couleurs ou d'autres propriétés. En ajustant le`Font` propriétés du`DocumentBuilder`, vous pouvez appliquer une mise en forme personnalisée aux titres.
+### Où puis-je trouver plus d’aide et de support pour Aspose.Words ?
+Pour plus d'aide, visitez le[Forum Aspose.Words](https://forum.aspose.com/c/words/8) ou consultez le[documentation officielle](https://reference.aspose.com/words/net/).

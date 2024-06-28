@@ -96,7 +96,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 	// 단어 "섹션" 뒤에 각 단락 나누기를 두 배로 하고 밑줄을 추가하여 가운데에 맞춥니다.
 	int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 
-	// 사용자 정의 텍스트 태그 대신 섹션 나누기를 삽입합니다.
+	// 사용자 정의 텍스트 태그 대신 섹션 나누기를 삽입하십시오.
 	count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 	doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");

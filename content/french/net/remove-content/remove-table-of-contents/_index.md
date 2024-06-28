@@ -2,216 +2,103 @@
 title: Supprimer la table des matières dans un document Word
 linktitle: Supprimer la table des matières dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment supprimer la table des matières d'un document Word à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment supprimer une table des matières (TOC) dans des documents Word à l'aide d'Aspose.Words pour .NET avec ce didacticiel facile à suivre.
 type: docs
 weight: 10
 url: /fr/net/remove-content/remove-table-of-contents/
 ---
-Dans ce didacticiel, nous vous expliquerons comment supprimer la table des matières d'un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. La table des matières peut parfois être redondante ou inutile, et ce code vous aidera à la supprimer efficacement. Nous vous fournirons un guide étape par étape pour vous aider à comprendre et à implémenter le code dans votre propre projet .NET.
+## Supprimer la table des matières d'un document Word à l'aide d'Aspose.Words for .NET
+
+Êtes-vous fatigué de devoir gérer une table des matières (TOC) indésirable dans vos documents Word ? Nous sommes tous passés par là : parfois, la table des matières n'est tout simplement pas nécessaire. Heureusement pour vous, Aspose.Words for .NET facilite la suppression d'une table des matières par programme. Dans ce tutoriel, je vais vous guider étape par étape tout au long du processus, afin que vous puissiez le maîtriser en un rien de temps. Allons-y !
 
 ## Conditions préalables
-Avant de commencer, assurez-vous de disposer des éléments suivants :
-- Une connaissance pratique du langage de programmation C#
-- La bibliothèque Aspose.Words pour .NET installée dans votre projet
-- Un document Word contenant une table des matières que vous souhaitez supprimer
 
-## Étape 1 : Définir le répertoire des documents
- Tout d’abord, vous devez définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
+Avant de commencer, assurons-nous que vous disposez de tout ce dont vous avez besoin :
+
+1.  Bibliothèque Aspose.Words pour .NET : si vous ne l'avez pas déjà fait, téléchargez et installez la bibliothèque Aspose.Words pour .NET à partir du[Aspose.Releases](https://releases.aspose.com/words/net/).
+2. Environnement de développement : un IDE comme Visual Studio facilitera le codage.
+3. .NET Framework : assurez-vous que .NET Framework est installé.
+4. Document Word : disposez d'un document Word (.docx) avec une table des matières que vous souhaitez supprimer.
+
+## Importer des espaces de noms
+
+Tout d’abord, importons les espaces de noms nécessaires. Cela configure l’environnement pour l’utilisation d’Aspose.Words.
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Étape 2 : Téléchargez le document
- Ensuite, nous chargerons le document Word dans une instance du`Document` classe en utilisant le`Load` méthode.
+Maintenant, décomposons le processus de suppression d'une table des matières d'un document Word en étapes claires et gérables.
+
+## Étape 1 : Configurez votre répertoire de documents
+
+Avant de pouvoir manipuler votre document, nous devons définir son emplacement. Il s'agit du chemin du répertoire de vos documents.
 
 ```csharp
-// Charger le document
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès à votre dossier de documents. C'est ici que réside votre fichier Word.
+
+## Étape 2 : Charger le document
+
+Ensuite, nous devons charger le document Word dans notre application. Aspose.Words rend cela incroyablement simple.
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## Étape 3 : Supprimer la table des matières
- Pour supprimer la table des matières, nous allons parcourir le type TOC (table of contents)`FieldStart` nœuds dans le document. Nous allons stocker ces nœuds afin de pouvoir y accéder rapidement et créer une liste de nœuds à supprimer.
+ Remplacer`"your-document.docx"` avec le nom de votre fichier. Cette ligne de code charge votre document afin que nous puissions commencer à travailler dessus.
+
+## Étape 3 : identifier et supprimer le champ TOC
+
+C'est là que la magie opère. Nous allons localiser le champ TOC et le supprimer.
 
 ```csharp
-// Stockez les nœuds FieldStart des champs TOC dans le document pour un accès rapide.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Il s'agit d'une liste pour stocker les nœuds trouvés dans la table des matières spécifiée. Ils seront supprimés à la fin de cette méthode.
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+Voici ce qui se passe :
+- `doc.Range.Fields`: Cela accède à tous les champs du document.
+- `.Where(f => f.Type == FieldType.FieldTOC)`: Ceci filtre les champs pour trouver uniquement ceux qui sont des tables des matières.
+- `.ToList().ForEach(f => f.Remove())`: Cela convertit les champs filtrés en liste et supprime chacun d'entre eux.
 
-// Vérifiez si l'index TOC spécifié existe.
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## Étape 4 : Enregistrez le document modifié
 
-bool isRemoving = true;
+Enfin, nous devons enregistrer nos modifications. Vous pouvez enregistrer le document sous un nouveau nom pour conserver le fichier d'origine.
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // Il est plus sûr de stocker ces nœuds et de tous les supprimer à la fin.
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // Lorsque nous rencontrons un nœud FieldEnd de type FieldTOC,
-     //nous savons que nous sommes à la fin de la table des matières actuelle et nous nous arrêtons ici.
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### Exemple de code source pour supprimer la table des matières à l’aide d’Aspose.Words pour .NET 
-```csharp
-
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// Charger le document
-Document doc = new Document(dataDir + "your-document.docx");
-
-// Stockez les nœuds FieldStart des champs TOC dans le document pour un accès rapide.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Il s'agit d'une liste pour stocker les nœuds trouvés dans la table des matières spécifiée. Ils seront supprimés à la fin de cette méthode.
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// Assurez-vous que la table des matières spécifiée par l'index transmis existe.
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// Il est plus sûr de stocker ces nœuds et de les supprimer tous en même temps plus tard.
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// Une fois que nous rencontrons un nœud FieldEnd de type FieldTOC,
-	// nous savons que nous sommes à la fin de la table des matières actuelle et nous nous arrêtons ici.
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ Cette ligne enregistre votre document avec les modifications apportées. Remplacer`"modified-document.docx"` avec le nom de fichier souhaité.
 
 ## Conclusion
-Dans ce didacticiel, nous avons présenté un guide étape par étape pour supprimer la table des matières d'un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. En suivant le code et les instructions fournis, vous pouvez facilement éliminer la table des matières et améliorer la mise en page de votre document. N'oubliez pas d'adapter le chemin du répertoire et les noms de fichiers à vos besoins spécifiques.
 
-### FAQ
+Et voila! Supprimer une table des matières d'un document Word à l'aide d'Aspose.Words pour .NET est simple une fois que vous l'avez décomposé en ces étapes simples. Cette puissante bibliothèque aide non seulement à supprimer les tables des matières, mais peut également gérer une myriade d'autres manipulations de documents. Alors n’hésitez plus et essayez-le !
 
-#### Q : Pourquoi devrais-je utiliser Aspose.Words pour supprimer la table des matières d'un document Word ?
+## FAQ
 
-R : Aspose.Words est une bibliothèque de classes puissante et polyvalente permettant de manipuler des documents Word dans des applications .NET. En utilisant Aspose.Words, vous pouvez supprimer efficacement la table des matières de vos documents, ce qui peut être utile si la table des matières est redondante ou inutile. Cela vous permet de personnaliser le contenu de votre document et d’améliorer sa présentation globale.
+### 1. Qu'est-ce qu'Aspose.Words pour .NET ?
 
-#### Q : Comment télécharger un document dans Aspose.Words pour .NET ?
+Aspose.Words for .NET est une bibliothèque .NET robuste pour la manipulation de documents, permettant aux développeurs de créer, modifier et convertir des documents Word par programme.
 
-R : Pour supprimer la table des matières d'un document Word, vous devez d'abord charger le document en mémoire à l'aide de la méthode Load() d'Aspose.Words. Voici un exemple de code pour charger un document à partir d'un répertoire spécifique :
+### 2. Puis-je utiliser Aspose.Words gratuitement ?
 
-```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ Oui, vous pouvez utiliser Aspose.Words avec un[essai gratuit](https://releases.aspose.com/) ou obtenez un[permis temporaire](https://purchase.aspose.com/temporary-license/).
 
-// Charger le document
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. Est-il possible de supprimer d'autres champs à l'aide d'Aspose.Words ?
 
- Remplacer`"YOUR DOCUMENTS DIRECTORY"` avec le chemin réel vers votre document.
+Absolument! Vous pouvez supprimer n'importe quel champ en spécifiant son type dans la condition de filtre.
 
-#### Q : Comment supprimer la table des matières d'un document à l'aide d'Aspose.Words ?
+### 4. Ai-je besoin de Visual Studio pour utiliser Aspose.Words ?
 
- R : Pour supprimer la table des matières, vous devez parcourir le`FieldStart` tapez les nœuds de la table des matières dans le document. Vous pouvez stocker ces nœuds pour un accès rapide et créer une liste de nœuds à supprimer. Voici un exemple de code :
+Bien que Visual Studio soit fortement recommandé pour faciliter le développement, vous pouvez utiliser n'importe quel IDE prenant en charge .NET.
 
-```csharp
-// Stockez les nœuds FieldStart des champs TOC dans le document pour un accès rapide.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//Il s'agit d'une liste pour stocker les nœuds trouvés dans la table des matières spécifiée. Ils seront supprimés à la fin de cette méthode.
-List<Node> nodeList = new List<Node>();
+### 5. Où puis-je trouver plus d’informations sur Aspose.Words ?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// Vérifiez si l'index de table des matières spécifié existe.
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// Il est plus sûr de stocker ces nœuds et de tous les supprimer à la fin.
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// Lorsque nous rencontrons un nœud FieldEnd de type FieldTOC,
-//nous savons que nous sommes à la fin de la table des matières actuelle et nous nous arrêtons ici.
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### Q : Comment enregistrer un document modifié dans Aspose.Words pour .NET ?
-
-R : Après avoir supprimé la table des matières, vous devez enregistrer le document modifié à l'aide de la méthode Save(). Spécifiez le chemin et le format du fichier de sortie souhaité (par exemple, DOCX) pour le document modifié. Voici un exemple de code :
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ Pour une documentation plus détaillée, visitez le[Aspose.Words pour la documentation de l'API .NET](https://reference.aspose.com/words/net/).

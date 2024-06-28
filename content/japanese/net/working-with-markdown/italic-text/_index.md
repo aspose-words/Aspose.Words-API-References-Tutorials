@@ -1,6 +1,6 @@
 ---
-title: 斜体のテキスト
-linktitle: 斜体のテキスト
+title: イタリア語のテキスト
+linktitle: イタリア語のテキスト
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET のステップバイステップ ガイドを使用してテキストを斜体にする方法を学びます。
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 //ドキュメント ビルダーを使用してドキュメントにコンテンツを追加します。
 DocumentBuilder builder = new DocumentBuilder();
 
-//テキストを斜体にします。
+//テキストをイタリア語にします。
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

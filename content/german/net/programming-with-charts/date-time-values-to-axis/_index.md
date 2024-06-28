@@ -2,7 +2,7 @@
 title: Datums-/Uhrzeitwerte zur Achse eines Diagramms hinzufügen
 linktitle: Datums-/Uhrzeitwerte zur Achse eines Diagramms hinzufügen
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Datums- und Uhrzeitwerte zur Achse eines Diagramms hinzufügen.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Datums- und Zeitwerte zur Achse eines Diagramms hinzufügen.
 type: docs
 weight: 10
 url: /de/net/programming-with-charts/date-time-values-to-axis/
@@ -110,10 +110,10 @@ In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET Datums-
 ### FAQs
 
 #### Q1. Kann ich mit Aspose.Words für .NET Datums- und Uhrzeitwerte zur Achse eines Diagramms hinzufügen?
-Ja, mit Aspose.Words für .NET können Sie Datums- und Uhrzeitwerte auf der Achse eines Diagramms in einem Word-Dokument hinzufügen und anzeigen. Aspose.Words bietet APIs und Funktionen, um mit verschiedenen Diagrammtypen zu arbeiten und deren Erscheinungsbild anzupassen, einschließlich der Verarbeitung von Datums- und Uhrzeitwerten auf der Achse.
+Ja, mit Aspose.Words für .NET können Sie Datums- und Zeitwerte auf der Achse eines Diagramms in einem Word-Dokument hinzufügen und anzeigen. Aspose.Words bietet APIs und Funktionen, um mit verschiedenen Diagrammtypen zu arbeiten und deren Erscheinungsbild anzupassen, einschließlich der Verarbeitung von Datums- und Uhrzeitwerten auf der Achse.
 
 #### Q2. Wie füge ich Datums-/Uhrzeitwerte zur Diagrammreihe hinzu?
- Um der Diagrammreihe Datums-/Uhrzeitwerte hinzuzufügen, können Sie die verwenden`Add`Methode der Diagrammreihe. Geben Sie ein Array von Datums-/Uhrzeitwerten als Kategoriedaten (X-Achse) zusammen mit den entsprechenden Serienwerten an. Dadurch können Sie Datenpunkte mit Datums-/Uhrzeitwerten im Diagramm darstellen.
+ Um der Diagrammreihe Datums-/Uhrzeitwerte hinzuzufügen, können Sie die verwenden`Add`Methode der Diagrammreihe. Geben Sie ein Array von Datums- und Uhrzeitwerten als Kategoriedaten (X-Achse) zusammen mit den entsprechenden Serienwerten an. Dadurch können Sie Datenpunkte mit Datums-/Uhrzeitwerten im Diagramm darstellen.
 
 #### Q3. Wie kann ich die Achse so konfigurieren, dass sie Datums- und Uhrzeitwerte anzeigt?
- Sie können die Achse des Diagramms so konfigurieren, dass Datums- und Uhrzeitwerte angezeigt werden, indem Sie die entsprechenden Eigenschaften festlegen. Beispielsweise können Sie mithilfe von die Mindest- und Höchstwerte für die Achse festlegen`Scaling.Minimum` Und`Scaling.Maximum` Eigenschaften bzw. Darüber hinaus können Sie die Haupt- und Nebeneinheiten festlegen, um das Intervall und die Teilstriche für die Achse zu definieren.
+ Sie können die Achse des Diagramms so konfigurieren, dass Datums- und Uhrzeitwerte angezeigt werden, indem Sie die entsprechenden Eigenschaften festlegen. Beispielsweise können Sie mithilfe von die Minimal- und Maximalwerte für die Achse festlegen`Scaling.Minimum` Und`Scaling.Maximum` Eigenschaften bzw. Darüber hinaus können Sie die Haupt- und Nebeneinheiten festlegen, um das Intervall und die Teilstriche für die Achse zu definieren.

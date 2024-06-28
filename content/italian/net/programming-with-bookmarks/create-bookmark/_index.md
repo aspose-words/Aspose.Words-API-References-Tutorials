@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Passaggio 3: creazione di segnalibri nidificati
 
-Possiamo anche creare segnalibri nidificati all'interno di un segnalibro principale. Usiamo lo stesso`StartBookmark` E`EndBookmark` metodi per creare e terminare i segnalibri nidificati:
+ Possiamo anche creare segnalibri nidificati all'interno di un segnalibro principale. Usiamo lo stesso`StartBookmark` E`EndBookmark` metodi per creare e terminare i segnalibri nidificati:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");

@@ -51,7 +51,7 @@ Questo codice divide il documento in base alle interruzioni di pagina e memorizz
 
 ## Salvataggio in formato HTML
 
-Successivamente, puoi salvare ciascuna pagina come file HTML:
+Successivamente, puoi salvare ogni pagina come file HTML:
 
 ```java
 for (int i = 0; i < pages.size(); i++) {
@@ -63,7 +63,7 @@ Questo codice scorre le pagine e le salva come file HTML.
 
 ## Conclusione
 
-In questa guida, abbiamo imparato come dividere i documenti Word in pagine HTML utilizzando Aspose.Words per Java. Questa potente API semplifica il processo, facilitando il lavoro con i documenti Word a livello di codice.
+In questa guida abbiamo imparato come dividere i documenti Word in pagine HTML utilizzando Aspose.Words per Java. Questa potente API semplifica il processo, facilitando il lavoro con i documenti Word a livello di codice.
 
 Ora puoi convertire facilmente i tuoi documenti Word in pagine HTML, rendendoli accessibili e condivisibili online.
 

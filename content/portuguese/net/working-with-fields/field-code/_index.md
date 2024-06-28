@@ -30,7 +30,7 @@ Certifique-se de substituir "Hyperlinks.docx" pelo nome do seu próprio arquivo.
 
 ## Etapa 3: navegar pelos campos do documento
 
- Usamos um`foreach` loop para percorrer todos os campos presentes no documento.
+ Usamos um`foreach`loop para percorrer todos os campos presentes no documento.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Isso conclui nosso guia sobre como usar o recurso "Obter código de campo" com A
 
 #### P: Como posso inserir um campo em um documento do Word usando Aspose.Words for .NET?
 
- R: Para inserir um campo em um documento do Word usando Aspose.Words for .NET, você pode usar o`DocumentBuilder.InsertField` método especificando o código de campo apropriado. Por exemplo, você pode usar`builder.InsertField("MERGEFIELD CustomerName")` para inserir um campo de mesclagem no documento.
+ R: Para inserir um campo em um documento do Word usando Aspose.Words for .NET, você pode usar o`DocumentBuilder.InsertField` método especificando o código de campo apropriado. Por exemplo, você pode usar`builder.InsertField("MERGEFIELD CustomerName")`para inserir um campo de mesclagem no documento.
 
 #### P: Como posso atualizar campos em um documento usando Aspose.Words for .NET?
 
- R: Para atualizar os campos do documento usando Aspose.Words for .NET, você pode usar o`Document.UpdateFields`método. Isso atualizará todos os campos presentes no documento, como campos de mesclagem, campos de data, etc.
+ R: Para atualizar os campos do documento usando Aspose.Words for .NET, você pode usar o`Document.UpdateFields` método. Isso atualizará todos os campos presentes no documento, como campos de mesclagem, campos de data, etc.
 
 #### P: Como posso recuperar o valor de um campo específico no Aspose.Words for .NET?
 

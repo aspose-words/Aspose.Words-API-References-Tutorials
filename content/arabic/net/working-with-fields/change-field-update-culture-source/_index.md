@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 #### س: كيف يمكنني تحديد ثقافة معينة لتحديث الحقول في Aspose.Words لـ .NET؟
 
-ج: لتحديد ثقافة معينة لتحديث الحقول في Aspose.Words لـ .NET، يمكنك استخدام`Document.FieldOptions.FieldUpdateCultureInfo` الملكية وتعيين`CultureInfo` الكائن المطابق للثقافة المطلوبة. على سبيل المثال، يمكنك استخدام`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` لتحديد الثقافة الفرنسية (فرنسا).
+ ج: لتحديد ثقافة معينة لتحديث الحقول في Aspose.Words لـ .NET، يمكنك استخدام`Document.FieldOptions.FieldUpdateCultureInfo` الملكية وتعيين`CultureInfo` الكائن المطابق للثقافة المطلوبة. على سبيل المثال، يمكنك استخدام`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` لتحديد الثقافة الفرنسية (فرنسا).
 
 #### س: هل من الممكن تعطيل التحديث الميداني التلقائي في Aspose.Words لـ .NET؟
 

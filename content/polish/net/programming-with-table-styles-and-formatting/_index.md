@@ -2,7 +2,7 @@
 title: Przetwarzanie słów ze stylami i formatowaniem tabel
 linktitle: Przetwarzanie słów ze stylami i formatowaniem tabel
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak programować style i formatowanie tabel w Aspose.Words dla .NET. Dowiedz się, jak stosować predefiniowane style, dostosowywać formatowanie komórek, obramowania i nie tylko, korzystając ze szczegółowych samouczków i przykładowego kodu w języku C#.
+description: Dowiedz się, jak programować style i formatowanie tabel w Aspose.Words dla .NET. Dowiedz się, jak stosować predefiniowane style, dostosowywać formatowanie komórek, obramowania i nie tylko, dzięki samouczkom krok po kroku i przykładowemu kodowi w języku C#.
 type: docs
 weight: 1580
 url: /pl/net/programming-with-table-styles-and-formatting/

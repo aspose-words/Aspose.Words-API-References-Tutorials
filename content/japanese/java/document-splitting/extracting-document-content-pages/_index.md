@@ -49,7 +49,7 @@ Aspose.Words をプロジェクトに追加するには、ダウンロードし�
 まず Word 文書をロードしましょう。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("sample.docx");
 ```
 

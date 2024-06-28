@@ -2,84 +2,153 @@
 title: Dokument beim Seriendruck einfügen
 linktitle: Dokument beim Seriendruck einfügen
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument beim Seriendruck in ein anderes einfügen.
+description: Erfahren Sie in diesem umfassenden Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET Dokumente in Seriendruckfelder einfügen.
 type: docs
 weight: 10
 url: /de/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-In diesem Tutorial zeigen wir Ihnen, wie Sie beim Seriendruck mithilfe der Funktion „Dokument beim Seriendruck einfügen“ von Aspose.Words für .NET ein Dokument in ein anderes Dokument einfügen. Führen Sie die folgenden Schritte aus, um den Quellcode zu verstehen und das Einfügen des Dokuments durchzuführen.
+## Einführung
 
-## Schritt 1: Laden des Hauptdokuments
+Willkommen in der Welt der Dokumentenautomatisierung mit Aspose.Words für .NET! Haben Sie sich jemals gefragt, wie Sie während eines Seriendruckvorgangs Dokumente dynamisch in bestimmte Felder innerhalb eines Hauptdokuments einfügen können? Dann sind Sie hier genau richtig. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess des Einfügens von Dokumenten in Serienbrieffelder mit Aspose.Words für .NET. Es ist, als würde man ein Puzzle zusammensetzen, bei dem jedes Teil perfekt zusammenpasst. Also, lasst uns eintauchen!
 
-Geben Sie zunächst das Verzeichnis für Ihre Dokumente an und laden Sie das Hauptdokument in ein Document-Objekt. Hier ist wie:
+## Voraussetzungen
+
+Bevor wir beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+
+1.  Aspose.Words für .NET: Das können Sie[Laden Sie die neueste Version hier](https://releases.aspose.com/words/net/) . Wenn Sie eine Lizenz erwerben müssen, können Sie dies tun[Hier](https://purchase.aspose.com/buy) . Alternativ erhalten Sie eine[temporäre Lizenz](https://purchase.aspose.com/temporary-license/) oder probieren Sie es mit einem aus[Kostenlose Testphase](https://releases.aspose.com/).
+2. Entwicklungsumgebung: Visual Studio oder eine andere C#-IDE.
+3. Grundkenntnisse in C#: Wenn Sie mit der C#-Programmierung vertraut sind, wird dieses Tutorial zum Kinderspiel.
+
+## Namespaces importieren
+
+Als Erstes müssen Sie die erforderlichen Namespaces importieren. Dies sind sozusagen die Bausteine Ihres Projekts.
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+using System.Linq;
 ```
 
-## Schritt 2: Konfigurieren Sie den Seriendruck
+Lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Jeder Schritt baut auf dem vorherigen auf und führt Sie zu einer vollständigen Lösung.
 
-Nun konfigurieren wir den Serienbrief und geben den Feld-Merge-Callback an, um ein Dokument in ein anderes Dokument einzufügen. Hier ist wie:
+## Schritt 1: Einrichten Ihres Verzeichnisses
 
-```csharp
-mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-```
-
-## Schritt 3: Ausführen des Seriendrucks
-
-Wir führen den Seriendruck durch, indem wir die Namen der Seriendruckfelder und die entsprechenden Daten angeben. Hier ist wie:
+Bevor Sie mit dem Einfügen von Dokumenten beginnen können, müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis definieren. Hier werden Ihre Dokumente gespeichert.
 
 ```csharp
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-```
-
-### Beispielquellcode für „Dokument beim Seriendruck einfügen“ mit Aspose.Words für .NET
-
-Hier ist der vollständige Quellcode für die Funktion „Dokument in Serienbrief einfügen“ von Aspose.Words für .NET:
-
-```csharp
-// Der Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
+## Schritt 2: Laden des Hauptdokuments
+
+Als Nächstes laden Sie das Hauptdokument. Dieses Dokument enthält die Zusammenführungsfelder, in die andere Dokumente eingefügt werden.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+## Schritt 3: Festlegen des Rückrufs für die Feldzusammenführung
+
+Um den Zusammenführungsprozess abzuwickeln, müssen Sie eine Rückruffunktion festlegen. Diese Funktion ist für das Einfügen von Dokumenten in die angegebenen Zusammenführungsfelder verantwortlich.
+
+```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-// Das Hauptdokument enthält ein Zusammenführungsfeld namens „Document_1“.
-// Die entsprechenden Daten für dieses Feld enthalten einen vollständig qualifizierten Pfad zum Dokument.
-// Das sollte in dieses Feld eingefügt werden.
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
+```
 
+## Schritt 4: Ausführen des Seriendrucks
+
+Jetzt ist es an der Zeit, den Serienbrief auszuführen. Hier geschieht die Magie. Sie geben das Zusammenführungsfeld und das Dokument an, das in dieses Feld eingefügt werden soll.
+
+```csharp
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
+```
+
+## Schritt 5: Speichern des Dokuments
+
+Nachdem der Seriendruck abgeschlossen ist, speichern Sie das geänderte Dokument. In diesem neuen Dokument wird der Inhalt genau dort eingefügt, wo Sie ihn haben möchten.
+
+```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-Mit diesem Code können Sie beim Seriendruck mit Aspose.Words für .NET ein Dokument in ein anderes Dokument einfügen. Das resultierende Dokument wird unter einem neuen Namen gespeichert
+## Schritt 6: Erstellen des Callback-Handlers
 
+Der Callback-Handler ist eine Klasse, die eine spezielle Verarbeitung für das Zusammenführungsfeld durchführt. Es lädt das im Feldwert angegebene Dokument und fügt es in das aktuelle Seriendruckfeld ein.
+
+```csharp
+private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
+{
+    void IFieldMergingCallback.FieldMerging(FieldMergingArgs args)
+    {
+        if (args.DocumentFieldName == "Document_1")
+        {
+            DocumentBuilder builder = new DocumentBuilder(args.Document);
+            builder.MoveToMergeField(args.DocumentFieldName);
+
+            Document subDoc = new Document((string)args.FieldValue);
+            InsertDocument(builder.CurrentParagraph, subDoc);
+
+            if (!builder.CurrentParagraph.HasChildNodes)
+                builder.CurrentParagraph.Remove();
+
+            args.Text = null;
+        }
+    }
+}
+```
+
+## Schritt 7: Einfügen des Dokuments
+
+Diese Methode fügt das angegebene Dokument in den aktuellen Absatz oder die aktuelle Tabellenzelle ein.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        foreach (Node srcNode in srcSection.Body)
+        {
+            if (srcNode.NodeType == NodeType.Paragraph)
+            {
+                Paragraph para = (Paragraph)srcNode;
+                if (para.IsEndOfSection && !para.HasChildNodes)
+                    continue;
+            }
+
+            Node newNode = importer.ImportNode(srcNode, true);
+            destinationParent.InsertAfter(newNode, insertionDestination);
+            insertionDestination = newNode;
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
+}
+```
 
 ## Abschluss
 
-In diesem Tutorial haben wir untersucht, wie man ein Dokument während des Seriendrucks mithilfe der Funktion „Dokument beim Seriendruck einfügen“ von Aspose.Words für .NET in ein anderes Dokument einfügt. Durch die Konfiguration des Seriendrucks und die Bereitstellung der erforderlichen Daten können Sie Dokumente dynamisch zusammenstellen, indem Sie verschiedene Dokumentvorlagen oder Abschnitte zusammenführen. Aspose.Words für .NET bietet eine flexible und leistungsstarke Möglichkeit zur Verwaltung komplexer Dokumentenerstellungsszenarien und macht es zu einem wertvollen Werkzeug zur Automatisierung von Dokumentenerstellungs- und -bearbeitungsaufgaben.
+Und da haben Sie es! Sie haben während eines Seriendruckvorgangs mit Aspose.Words für .NET erfolgreich Dokumente in bestimmte Felder eingefügt. Diese leistungsstarke Funktion kann Ihnen eine Menge Zeit und Mühe ersparen, insbesondere beim Umgang mit großen Dokumentenmengen. Stellen Sie sich das so vor, als hätten Sie einen persönlichen Assistenten, der Ihnen die ganze schwere Arbeit abnimmt. Probieren Sie es einfach aus. Viel Spaß beim Codieren!
 
-### FAQs
+## FAQs
 
-#### F: Welchen Zweck hat das Einfügen eines Dokuments in ein anderes Dokument beim Seriendruck?
+### Kann ich mehrere Dokumente in verschiedene Zusammenführungsfelder einfügen?
+ Ja, du kannst. Geben Sie einfach die entsprechenden Zusammenführungsfelder und entsprechenden Dokumentpfade im an`MailMerge.Execute` Methode.
 
-A: Durch das Einfügen eines Dokuments in ein anderes Dokument während des Seriendrucks können Sie verschiedene Dokumentvorlagen oder Abschnitte dynamisch basierend auf den während des Seriendruckvorgangs bereitgestellten Daten kombinieren. Diese Funktion ist besonders nützlich, wenn Sie komplexe Dokumente zusammenstellen möchten, indem Sie verschiedene vordefinierte Vorlagen oder Abschnitte zu einem endgültigen Dokument zusammenführen.
+### Ist es möglich, das eingefügte Dokument anders als das Hauptdokument zu formatieren?
+ Absolut! Du kannst den ... benutzen`ImportFormatMode` Parameter in der`NodeImporter` um die Formatierung zu steuern.
 
-#### F: Wie füge ich beim Seriendruck mit Aspose.Words für .NET ein Dokument in ein anderes Dokument ein?
+### Was passiert, wenn der Name des Zusammenführungsfelds dynamisch ist?
+Sie können dynamische Zusammenführungsfeldnamen verarbeiten, indem Sie sie als Parameter an den Callback-Handler übergeben.
 
-A: Um ein Dokument während des Seriendrucks mit Aspose.Words für .NET in ein anderes Dokument einzufügen, führen Sie die folgenden Schritte aus:
-1. Laden Sie das Hauptdokument, das als Basis dienen soll, in ein Document-Objekt.
-2. Konfigurieren Sie den Serienbrief und geben Sie den Feld-Merge-Rückruf an, um das Einfügen von Dokumenten zu verarbeiten.
-3. Führen Sie den Serienbrief mit den Namen der Seriendruckfelder und den entsprechenden Daten (Pfad zum einzufügenden Dokument) aus.
+### Kann ich diese Methode mit verschiedenen Dateiformaten verwenden?
+Ja, Aspose.Words unterstützt verschiedene Dateiformate, darunter DOCX, PDF und mehr.
 
-#### F: Wie kann ich das Einfügeverhalten beim Seriendruck anpassen?
-
-A: Um das Einfügeverhalten beim Seriendruck anzupassen, können Sie einen benutzerdefinierten FieldMergingCallback implementieren, indem Sie von der IFieldMergingCallback-Schnittstelle erben. Dadurch können Sie steuern, wie die Dokumente entsprechend Ihren spezifischen Anforderungen eingefügt und zusammengeführt werden.
-
-#### F: Kann ich beim Seriendruck mehrere Dokumente einfügen?
-
-A: Ja, Sie können beim Seriendruck mehrere Dokumente einfügen, indem Sie für jedes Seriendruckfeld die entsprechenden Daten angeben. Geben Sie für jedes Briefvorlagenfeld, das das Einfügen eines Dokuments erfordert, den Pfad zum entsprechenden Dokument als Daten an.
-
-
+### Wie gehe ich mit Fehlern beim Einfügen des Dokuments um?
+Implementieren Sie die Fehlerbehandlung in Ihrem Callback-Handler, um eventuell auftretende Ausnahmen zu verwalten.

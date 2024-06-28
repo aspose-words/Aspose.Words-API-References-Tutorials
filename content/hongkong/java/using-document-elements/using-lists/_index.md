@@ -8,7 +8,7 @@ weight: 18
 url: /zh-hant/java/using-document-elements/using-lists/
 ---
 
-在這個綜合教程中，我們將探討如何有效地使用 Aspose.Words for Java 中的列表，這是一個強大的 API，用於以程式設計方式處理 Microsoft Word 文件。清單對於建立和組織文件中的內容至關重要。我們將介紹使用清單的兩個關鍵方面：在每個部分重新啟動清單和指定清單層級。讓我們深入了解一下吧！
+在這個綜合教程中，我們將探討如何有效地使用 Aspose.Words for Java 中的列表，這是一個強大的 API，用於以程式設計方式處理 Microsoft Word 文件。清單對於建立和組織文件中的內容至關重要。我們將介紹使用清單的兩個關鍵方面：在每個部分重新啟動清單和指定清單層級。讓我們深入了解吧！
 
 ## Aspose.Words for Java 簡介
 
@@ -164,7 +164,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        //根據 Microsoft Word 清單範本之一建立編號列表
+        //根據 Microsoft Word 清單範本之一建立編號清單。
         //並將其應用於文件生成器的當前段落。
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         //此列表中有九個級別，讓我們全部嘗試一下。
@@ -173,7 +173,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        //基於 Microsoft Word 清單範本之一建立項目符號列表
+        //根據 Microsoft Word 清單範本之一建立項目符號清單。
         //並將其應用於文件生成器的當前段落。
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

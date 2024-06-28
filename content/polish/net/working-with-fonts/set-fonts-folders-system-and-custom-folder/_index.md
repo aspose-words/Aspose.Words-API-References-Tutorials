@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Krok 3: Ustaw foldery systemowe i niestandardowe czcionek
- Teraz możesz ustawić foldery czcionek systemowych i folder niestandardowy za pomocą`FontSettings` klasa i`SetFontsSources()` metoda. Najpierw musisz pobrać listę używanych źródeł czcionek zależnych od środowiska`GetFontsSources()` i zapisz go na liście. Następnie możesz utworzyć nową instancję`FolderFontSource` określając ścieżkę do niestandardowego folderu zawierającego czcionki. Dodaj to wystąpienie do listy istniejących źródeł czcionek. Wreszcie użyj`SetFontsSources()` aby zaktualizować źródła czcionek o nową listę.
+ Teraz możesz ustawić foldery czcionek systemowych i folder niestandardowy za pomocą`FontSettings` klasa i`SetFontsSources()` metoda. Najpierw musisz pobrać listę używanych źródeł czcionek zależnych od środowiska`GetFontsSources()` i zapisz go na liście. Następnie możesz utworzyć nową instancję`FolderFontSource` określając ścieżkę do niestandardowego folderu zawierającego czcionki. Dodaj to wystąpienie do listy istniejących źródeł czcionek. Wreszcie użyj`SetFontsSources()` aby zaktualizować źródła czcionek za pomocą nowej listy.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

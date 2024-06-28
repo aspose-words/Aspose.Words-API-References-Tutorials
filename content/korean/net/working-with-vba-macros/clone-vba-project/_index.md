@@ -32,7 +32,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## 3단계: 복제된 VBA 프로젝트로 새 문서 만들기
+## 3단계: 복제된 VBA 프로젝트로 새 문서를 만듭니다.
 빈 VBA 프로젝트로 새 문서를 만들고 소스 문서에서 VBA 프로젝트를 복제하겠습니다.
 
 ```csharp
@@ -74,7 +74,7 @@ A: VBA 프로젝트 복제는 소스 Word 문서의 모든 VBA 코드를 다른 
 A: Word 문서에서 VBA 프로젝트를 복제하려면 C# 프로그래밍 언어에 대한 실무 지식이 있어야 합니다. 또한 프로젝트에 Aspose.Words for .NET 라이브러리를 설치해야 합니다. 또한 복제하려는 VBA 프로젝트가 포함된 Word 문서가 필요합니다.
 
 #### Q: 코드에서 문서 디렉터리를 어떻게 설정하나요?
- A: 제공된 코드에서 다음을 교체해야 합니다.`"YOUR DOCUMENTS DIRECTORY"` VBA 프로젝트가 포함된 Word 문서가 있는 디렉터리에 대한 적절한 경로를 사용합니다.
+ A: 제공된 코드에서 교체해야 합니다.`"YOUR DOCUMENTS DIRECTORY"` VBA 프로젝트가 포함된 Word 문서가 있는 디렉터리에 대한 적절한 경로를 사용합니다.
 
 #### Q: 복제된 VBA 프로젝트로 대상 문서를 저장하는 방법은 무엇입니까?
 

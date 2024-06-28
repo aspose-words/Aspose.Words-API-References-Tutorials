@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOption
 
 通过创建一个实例来配置另存为 PDF 选项`PdfSaveOptions`类并使用`OutlineOptions`属性来设置轮廓选项。您可以使用以下命令指定要包含在大纲中的标题级别数：`HeadingsOutlineLevels`属性和使用的扩展大纲级别的数量`ExpandedOutlineLevels`财产。
 
-使用以下命令将文档保存为 PDF 格式`Save`的方法`Document`指定路径和保存选项的类。
+使用以下命令将文档保存为 PDF 格式`Save`的方法`Document`类指定路径和保存选项。
 
 #### 问：PDF 文档中的计划选项是什么？
 答：PDF 文档中的大纲选项允许您创建内容的层次结构，这使得浏览文档和访问不同部分变得更加容易。这允许用户通过单击目录或大纲中的条目快速跳转到文档的特定部分。大纲选项还通过提供整体文档结构的概述来增强阅读体验。

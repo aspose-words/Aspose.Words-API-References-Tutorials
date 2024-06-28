@@ -66,7 +66,7 @@ A: Rozhodně! Aspose.Words nabízí různé možnosti načítání, které lze p
 
 #### Otázka: Je Aspose.Words omezena na zpracování pouze dokumentů aplikace Word?
 
-Odpověď: Aspose.Words je sice primárně navržen pro dokumenty Wordu, ale podporuje také další formáty souborů, jako je PDF, HTML, EPUB a další, což z něj činí všestranný nástroj pro zpracování dokumentů.
+Odpověď: Přestože je Aspose.Words primárně určen pro dokumenty Wordu, podporuje také další formáty souborů, jako je PDF, HTML, EPUB a další, což z něj činí všestranný nástroj pro zpracování dokumentů.
 
 #### Otázka: Jak může načítání souborů CHM prospět mé aplikaci C#?
 

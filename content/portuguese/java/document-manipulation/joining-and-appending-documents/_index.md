@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Anexar com conversão de número de página
+### Anexar com conversões de número de página
 
 ```java
 Document srcDoc = new Document("source.docx");

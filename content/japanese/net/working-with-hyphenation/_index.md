@@ -13,5 +13,5 @@ url: /ja/net/working-with-hyphenation/
 | タイトル | 説明 |
 | --- | --- |
 | [言語の単語をハイフンで区切る](./hyphenate-words-of-languages/) | Aspose.Words for .NET を使用して、Word 文書内のさまざまな言語の単語をハイフネーションする方法を学びます。 |
-| [言語のハイフネーション辞書をロードする](./load-hyphenation-dictionary-for-language/) |Aspose.Words for .NET で特定の言語のハイフネーション辞書をロードする方法を学習します。 |
+| [言語のハイフネーション辞書をロード](./load-hyphenation-dictionary-for-language/) |Aspose.Words for .NET で特定の言語のハイフネーション辞書をロードする方法を学習します。 |
 | [ハイフネーションコールバック](./hyphenation-callback/) | Aspose.Words for .NET でハイフネーション コールバックを使用して単語のハイフネーションを処理する方法を学習します。 |

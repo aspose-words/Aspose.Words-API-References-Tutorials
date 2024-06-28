@@ -104,11 +104,11 @@ Ja, Aspose.Words för Java är kompatibelt med andra Java-bibliotek, vilket gör
 
 ### F2: Finns det en testversion av Aspose.Words för Java tillgänglig?
 
- Ja, du kan få tillgång till en gratis testversion av Aspose.Words för Java[här](https://releases.aspose.com/).
+ Ja, du kan få tillgång till en gratis testversion av Aspose.Words för Java.[här](https://releases.aspose.com/).
 
 ### F3: Hur kan jag få en tillfällig licens för Aspose.Words för Java?
 
- Du kan få en tillfällig licens för Aspose.Words för Java[här](https://purchase.aspose.com/temporary-license/).
+ Du kan få en tillfällig licens för Aspose.Words för Java.[här](https://purchase.aspose.com/temporary-license/).
 
 ### F4: Var kan jag hitta stöd för Aspose.Words för Java?
 

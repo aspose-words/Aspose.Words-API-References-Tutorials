@@ -29,7 +29,7 @@ Document doc = new Document(MyDir + "Pdf Document.pdf");
 doc.Save(dataDir + "BaseConversions.PdfToJpeg.jpeg");
 ```
 
-je to! Úspěšně jste převedli dokument PDF na obrázky Jpeg pomocí Aspose.Words for .NET.
+A je to! Úspěšně jste převedli dokument PDF na obrázky Jpeg pomocí Aspose.Words for .NET.
 
 ### Příklad zdrojového kódu pro Pdf To Jpeg pomocí Aspose.Words pro .NET
 
@@ -57,7 +57,7 @@ Při převodu PDF na JPEG můžete určit rozlišení a kvalitu generovaného ob
 
 #### Jaká jsou omezení procesu konverze?
 
-Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít omezení týkající se složitého rozvržení, specifických písem nebo interaktivních prvků v PDF. Je důležité plně porozumět funkcím a omezením zvoleného nástroje, abyste mohli při konverzi přijímat informovaná rozhodnutí.
+Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít související omezení pro složité rozvržení, konkrétní písma nebo interaktivní prvky v PDF. Je důležité plně porozumět funkcím a omezením zvoleného nástroje, abyste mohli při konverzi přijímat informovaná rozhodnutí.
 
 #### Je Aspose spolehlivým nástrojem pro převod PDF do JPEG?
 

@@ -1,6 +1,6 @@
 ---
-title: Přizpůsobte jednu sérii grafů v grafu
-linktitle: Přizpůsobte jednu sérii grafů v grafu
+title: Přizpůsobte jednu řadu grafů v grafu
+linktitle: Přizpůsobte jednu řadu grafů v grafu
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak přizpůsobit jednotlivé řady grafů v grafu pomocí Aspose.Words for .NET.
 type: docs
@@ -17,7 +17,7 @@ Ujistěte se, že máte následující předpoklady:
 - Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
 - Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
 
-## Krok 2: Vytvořte nový dokument a vložte graf
+## Krok 2: Vytvořte nový dokument a vložte graf.
 
  Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
 

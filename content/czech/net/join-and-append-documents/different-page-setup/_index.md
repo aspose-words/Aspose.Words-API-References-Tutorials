@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 3: Nastavte nastavení stránky pro zdrojový dokument
 
- Upravte nastavení stránky zdrojového dokumentu, abyste zajistili správné pokračování a číslování. V tomto příkladu nastavíme začátek sekce na`SectionStart.Continuous` a restartujte číslování stránek. Dbáme také na to, aby šířka, výška a orientace stránky odpovídaly poslední části cílového dokumentu.
+ Upravte nastavení stránky zdrojového dokumentu, abyste zajistili správné pokračování a číslování. V tomto příkladu nastavíme začátek sekce na`SectionStart.Continuous` restartujte číslování stránek. Dbáme také na to, aby šířka, výška a orientace stránky odpovídaly poslední části cílového dokumentu.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Krok 4: Upravte formátování odstavce
 
- Chcete-li zachovat správné formátování, projděte všechny odstavce ve zdrojovém dokumentu a nastavte`KeepWithNext`majetek do`true`To zajistí, že odstavce zůstanou během procesu přidávání pohromadě.
+ Chcete-li zachovat správné formátování, projděte všechny odstavce ve zdrojovém dokumentu a nastavte`KeepWithNext`majetek do`true`. To zajistí, že odstavce zůstanou během procesu přidávání pohromadě.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Krok 6: Uložte cílový dokument
 
- Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ Tím je implementace připojení dokumentu s různými nastaveními stránky pom
 	// Restartujte číslování stránek na začátku zdrojového dokumentu.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Abyste zajistili, že se to nestane, když má zdrojový dokument jiné nastavení nastavení stránky, ujistěte se, že
+	//Abyste zajistili, že se to nestane, když má zdrojový dokument jiné nastavení nastavení stránky, ujistěte se, že
 	// nastavení jsou identická pro poslední část cílového dokumentu.
 	// Pokud ve zdrojovém dokumentu následují další souvislé části,
-	//to bude nutné pro tyto úseky opakovat.
+	// to bude nutné pro tyto úseky opakovat.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

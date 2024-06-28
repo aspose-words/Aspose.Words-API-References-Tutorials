@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/finding-index/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Tables.docx");
 
 //アレイへのアクセス
@@ -49,7 +49,7 @@ int cellIndex = row.IndexOf(row.Cells[4]);
 Console.WriteLine("\nCell index is " + cellIndex);
 ```
 
-ここで使用するのは、`GetChildNodes`ドキュメント内のすべてのテーブルを取得するメソッド。次に、使用します`IndexOf`すべてのテーブルのコレクション内の特定のテーブルのインデックスを検索します。同様に、`IndexOf`テーブルの最後の行のインデックスを見つけます。`IndexOf`行内で特定のセルのインデックスを検索します。
+ここで使用するのは、`GetChildNodes`ドキュメント内のすべてのテーブルを取得するメソッド。次に、使用します`IndexOf`すべてのテーブルのコレクション内の特定のテーブルのインデックスを検索します。同様に、私たちは、`IndexOf`テーブルの最後の行のインデックスを見つけます。`IndexOf`行内で特定のセルのインデックスを検索します。
 
 ### Aspose.Words for .NET を使用したインデックス検索のサンプル ソース コード 
 

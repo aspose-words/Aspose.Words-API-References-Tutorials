@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
 
-Ebben az oktatóanyagban lépésről lépésre végigvezetjük a táblázat és a cella különböző szegélyekkel történő formázásához az Aspose.Words for .NET használatával. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Az oktatóanyag végén megtudhatja, hogyan alkalmazhat egyéni szegélyeket a Word-dokumentumok adott tábláira és celláira az Aspose.Words for .NET segítségével.
+Ebben az oktatóanyagban lépésről lépésre végigvezetjük a táblázat és a cella különböző szegélyű formázásához az Aspose.Words for .NET használatával. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Az oktatóanyag végén megtudhatja, hogyan alkalmazhat egyéni szegélyeket a Word-dokumentumok adott tábláira és celláira az Aspose.Words for .NET segítségével.
 
 ## 1. lépés: Határozza meg a dokumentumkönyvtárat
 Először is be kell állítania a dokumentumkönyvtár elérési útját. Ez az a hely, ahová menteni szeretné a szerkesztett Word-dokumentumot. Cserélje ki a "DOKUMENTUMKÖNYVTÁR" elemet a megfelelő elérési útra.

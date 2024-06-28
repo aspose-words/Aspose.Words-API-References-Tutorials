@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### Q：如何更改 Aspose.Words for .NET 中的部分設定？
 
-答：要修改某個部分的設置，您可以使用該部分的屬性`PageSetup`目的。在此範例中，我們將變更邊距、頁首和頁腳距離以及文字列間距。
+答：要修改某個部分的設置，您可以使用該部分的屬性。`PageSetup`目的。在此範例中，我們將變更邊距、頁首和頁腳距離以及文字列間距。
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3.17厘米

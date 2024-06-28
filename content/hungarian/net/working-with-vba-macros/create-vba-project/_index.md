@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## 3. lépés: Hozzon létre egy új modult, és adja meg a makró forráskódját
+## 3. lépés: Hozzon létre egy új modult, és adja meg a makró forráskódját.
  Létrehozunk egy új modult a példányosítással`VbaModule` osztályt, és megadja a makró nevét, típusát (eljárási modul) és forráskódját.
 
 ```csharp
@@ -73,7 +73,7 @@ VbaModule module = new VbaModule();
 module.Name = "AsposeModule";
 module.Type = VbaModuleType.ProceduralModule;
 module.SourceCode = "New source code";
-// Modul hozzáadása a VBA projekthez.
+// Modul hozzáadása a VBA-projekthez.
 doc.VbaProject.Modules.Add(module);
 doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
@@ -94,7 +94,7 @@ V: Mielőtt VBA-projektet hozhatna létre Word-dokumentumban, rendelkeznie kell 
 
 #### K: Hogyan lehet beállítani a dokumentumkönyvtárat a kódban?
 
- V: A megadott kódban ki kell cserélni`"YOUR DOCUMENTS DIRECTORY"` annak a könyvtárnak a megfelelő elérési útjával, ahová menteni szeretné a Word-dokumentumot a VBA-projekttel.
+ V: A megadott kódban ki kell cserélni.`"YOUR DOCUMENTS DIRECTORY"` annak a könyvtárnak a megfelelő elérési útjával, ahová menteni szeretné a Word-dokumentumot a VBA-projekttel.
 
 #### K: Hogyan lehet makró forráskódot megadni a VBA modulban?
 

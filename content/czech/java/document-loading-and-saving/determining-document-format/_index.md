@@ -22,7 +22,7 @@ Než začneme, ujistěte se, že máte následující předpoklady:
 
 ## Krok 1: Nastavení adresáře
 
-Nejprve musíme nastavit potřebné adresáře pro efektivní organizaci našich souborů. Vytvoříme adresáře pro různé typy dokumentů.
+Nejprve musíme nastavit potřebné adresáře, abychom mohli efektivně organizovat naše soubory. Vytvoříme adresáře pro různé typy dokumentů.
 
 ```java
 File supportedDir = new File("Your Directory Path" + "Supported");

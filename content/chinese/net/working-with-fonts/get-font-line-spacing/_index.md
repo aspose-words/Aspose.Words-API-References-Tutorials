@@ -45,7 +45,7 @@ builder. Writen("qText");
 现在我们将访问`Font`文档第一段的对象并检索该值`LineSpacing`财产。
 
 ```csharp
-//获取字体的行间距
+//获取字体的行距
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
@@ -61,7 +61,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## 结论
-在本教程中，我们了解了如何使用 Aspose.Words for .NET 获取 Word 文档中的字体行距。字体行距对于控制文本行之间的垂直间距很重要。请随意使用此功能来自定义文档中文本的外观。
+在本教程中，我们了解了如何使用 Aspose.Words for .NET 获取 Word 文档中的字体行间距。字体行距对于控制文本行之间的垂直间距非常重要。请随意使用此功能来自定义文档中文本的外观。
 
 ### 常见问题解答
 
@@ -75,7 +75,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 #### 问：如何调整整个Word文档的行距？
 
-答：使用Aspose.Words，您可以轻松调整整个Word文档的行间距。使用 API 提供的方法指定整个文档所需的行间距。
+答：使用Aspose.Words，您可以轻松调整整个Word文档的行距。使用 API 提供的方法指定整个文档所需的行距。
 
 #### 问：Aspose.Words 支持多行间距吗？
 

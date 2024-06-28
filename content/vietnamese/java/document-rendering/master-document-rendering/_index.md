@@ -233,4 +233,4 @@ Aspose.Words cho phép bạn áp dụng bảo vệ bằng mật khẩu cho các 
 
 ### Aspose.Words có thể hiển thị tài liệu bằng nhiều ngôn ngữ không?
 
-Có, Aspose.Words hỗ trợ hiển thị tài liệu bằng nhiều ngôn ngữ khác nhau và xử lý liền mạch văn bản với các mã hóa ký tự khác nhau.
+Có, Aspose.Words hỗ trợ hiển thị tài liệu bằng nhiều ngôn ngữ khác nhau và xử lý văn bản với các mã hóa ký tự khác nhau một cách liền mạch.

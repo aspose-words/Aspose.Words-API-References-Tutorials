@@ -118,11 +118,11 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### Vraag: Is het mogelijk om het voor- en achtervoegsel van opnieuw gestarte lijstnummering in Aspose.Words aan te passen?
 
- A: Ja, u kunt het voor- en achtervoegsel van opnieuw opgestarte lijstnummering aanpassen in Aspose.Words. De`ListLevel` klasse biedt eigenschappen zoals`ListLevel.NumberPrefix` En`ListLevel.NumberSuffix` waarmee u het voor- en achtervoegsel voor elk niveau in de lijst kunt opgeven. U kunt deze eigenschappen gebruiken om het voor- en achtervoegsel indien nodig aan te passen.
+ A: Ja, u kunt het voor- en achtervoegsel van opnieuw opgestarte lijstnummering aanpassen in Aspose.Words. De`ListLevel` klasse biedt eigenschappen zoals`ListLevel.NumberPrefix` En`ListLevel.NumberSuffix`waarmee u het voor- en achtervoegsel voor elk niveau in de lijst kunt opgeven. U kunt deze eigenschappen gebruiken om het voor- en achtervoegsel indien nodig aan te passen.
 
 #### Vraag: Hoe kan ik een specifieke nummeringswaarde opgeven van waaruit de lijst opnieuw moet worden gestart?
 
-A: Om een specifieke getalswaarde op te geven vanaf waar de lijst opnieuw moet worden opgestart, kunt u de`ListRestartAtNumber` methode die de gewenste waarde als argument doorgeeft. Als u bijvoorbeeld de nummering opnieuw wilt starten vanaf 5, kunt u gebruiken`list.ListRestartAtNumber(5)`.
+ A: Om een specifieke getalswaarde op te geven vanaf waar de lijst opnieuw moet worden opgestart, kunt u de`ListRestartAtNumber` methode die de gewenste waarde als argument doorgeeft. Als u bijvoorbeeld de nummering opnieuw wilt starten vanaf 5, kunt u gebruiken`list.ListRestartAtNumber(5)`.
 
 #### Vraag: Is het mogelijk om de lijstnummering op meerdere niveaus opnieuw te starten in Aspose.Words?
 

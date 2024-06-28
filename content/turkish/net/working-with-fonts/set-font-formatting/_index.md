@@ -15,14 +15,14 @@ Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
 - .NET için Aspose.Words kütüphanesi projenizde yüklü
 
 ## 1. Adım: Belge dizinini tanımlayın
- Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
+Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Belgeyi oluşturun ve biçimlendirin
- Bir örneğini oluşturun`Document` sınıf ve`DocumentBuilder` belgeyi oluşturmak için sınıf. Kullan`Font` mülkiyeti`DocumentBuilder` yazı tipi biçimlendirme özelliklerine erişmek için.
+ Bir örneğini oluşturun`Document` sınıf ve`DocumentBuilder`belgeyi oluşturmak için sınıf. Kullan`Font` mülkiyeti`DocumentBuilder` yazı tipi biçimlendirme özelliklerine erişmek için.
 
 ```csharp
 Document doc = new Document();

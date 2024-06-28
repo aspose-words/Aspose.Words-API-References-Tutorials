@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2단계: 링크 삽입
 
- 다음을 사용하여 링크를 삽입할 수 있습니다.`Insertlink` 문서 생성기의 방법. 여기서는 "Aspose"라는 링크 텍스트와 대상 URL을 지정해야 합니다.
+ 다음을 사용하여 링크를 삽입할 수 있습니다.`InsertHyperlink` 문서 생성기의 방법. 여기서는 "Apose"라는 링크 텍스트와 대상 URL을 지정해야 합니다.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com", 거짓);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", 거짓);
 ```
 
 ### .NET용 Aspose.Words와의 링크에 대한 예제 소스 코드
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", 거짓);
 DocumentBuilder builder = new DocumentBuilder();
 
 // 링크를 삽입하세요.
-builder.Insertlink("Aspose", "https://www.aspose.com", 거짓);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", 거짓);
 ```
 축하합니다! 이제 Aspose.Words for .NET에서 링크 기능을 사용하는 방법을 배웠습니다.
 

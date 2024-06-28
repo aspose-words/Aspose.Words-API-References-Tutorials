@@ -58,7 +58,7 @@ Apakah pemformatan dipertahankan selama konversi bergantung pada alat atau pusta
 
 #### Apa keterbatasan proses konversi?
 
-Batasan proses konversi bergantung pada alat atau pustaka spesifik yang Anda gunakan. Beberapa alat mungkin memiliki batasan terkait pemformatan kompleks, tabel, atau gambar yang disematkan dalam file teks. Penting untuk memahami sepenuhnya fitur dan keterbatasan alat yang dipilih agar dapat mengambil keputusan yang tepat saat melakukan konversi.
+Batasan proses konversi bergantung pada alat atau pustaka spesifik yang Anda gunakan. Beberapa alat mungkin memiliki batasan terkait dengan pemformatan kompleks, tabel, atau gambar yang disematkan dalam file teks. Penting untuk memahami sepenuhnya fitur dan keterbatasan alat yang dipilih agar dapat mengambil keputusan yang tepat saat melakukan konversi.
 
 #### Apakah Aspose alat yang andal untuk mengonversi file teks ke dokumen Word?
 

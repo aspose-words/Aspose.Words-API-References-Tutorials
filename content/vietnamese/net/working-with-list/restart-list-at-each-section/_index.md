@@ -91,12 +91,12 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Câu hỏi: Làm cách nào tôi có thể khởi động lại danh sách ở mọi phần trong Aspose.Words?
 
- Trả lời: Để khởi động lại danh sách ở mọi phần trong Aspose.Words, bạn cần tạo một phiên bản của`List` lớp và gán một danh sách đánh số cho nó. Sau đó bạn có thể sử dụng`List.IsRestartAtEachSection` thuộc tính để chỉ định việc đánh số sẽ được khởi động lại ở mỗi phần. Bạn có thể liên kết danh sách này với một hoặc nhiều phần trong tài liệu của mình để việc đánh số được bắt đầu lại chính xác ở mỗi phần.
+ Trả lời: Để khởi động lại danh sách ở mọi phần trong Aspose.Words, bạn cần tạo một phiên bản của`List`lớp và gán một danh sách đánh số cho nó. Sau đó bạn có thể sử dụng`List.IsRestartAtEachSection` thuộc tính để chỉ định việc đánh số sẽ được khởi động lại ở mỗi phần. Bạn có thể liên kết danh sách này với một hoặc nhiều phần trong tài liệu của mình để việc đánh số được bắt đầu lại chính xác ở mỗi phần.
 
 #### Câu hỏi: Tôi có thể tùy chỉnh định dạng đánh số của danh sách trong Aspose.Words không?
 
-Trả lời: Có, bạn có thể tùy chỉnh định dạng đánh số của danh sách trong Aspose.Words. Các`List` lớp cung cấp một số thuộc tính cho việc này, chẳng hạn như`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, v.v. Bạn có thể sử dụng các thuộc tính này để đặt loại danh sách (đánh số, đánh dấu đầu dòng, v.v.), định dạng đánh số (chữ số Ả Rập, chữ số La Mã, chữ cái, v.v.) và các tùy chọn định dạng đánh số khác.
+ Trả lời: Có, bạn có thể tùy chỉnh định dạng đánh số của danh sách trong Aspose.Words. Các`List` lớp cung cấp một số thuộc tính cho việc này, chẳng hạn như`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, v.v. Bạn có thể sử dụng các thuộc tính này để đặt loại danh sách (đánh số, đánh dấu đầu dòng, v.v.), định dạng đánh số (chữ số Ả Rập, chữ số La Mã, chữ cái, v.v.) và các tùy chọn định dạng đánh số khác.
 
 #### Câu hỏi: Có thể thêm các cấp độ bổ sung vào danh sách được đánh số trong Aspose.Words không?
 
- Trả lời: Có, có thể thêm các cấp độ bổ sung vào danh sách được đánh số trong Aspose.Words. Các`ListLevel` class cho phép bạn đặt thuộc tính định dạng cho từng cấp độ của danh sách. Bạn có thể đặt các tùy chọn như tiền tố, hậu tố, căn chỉnh, thụt lề, v.v. Điều này cho phép bạn tạo danh sách với nhiều cấp độ phân cấp.
+ Trả lời: Có, có thể thêm các cấp độ bổ sung vào danh sách được đánh số trong Aspose.Words. Các`ListLevel`class cho phép bạn đặt thuộc tính định dạng cho từng cấp độ của danh sách. Bạn có thể đặt các tùy chọn như tiền tố, hậu tố, căn chỉnh, thụt lề, v.v. Điều này cho phép bạn tạo danh sách với nhiều cấp độ phân cấp.

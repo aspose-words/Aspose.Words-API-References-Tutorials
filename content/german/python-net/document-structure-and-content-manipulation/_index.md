@@ -1,7 +1,7 @@
 ---
 title: Dokumentstruktur und Inhaltsmanipulation
 linktitle: Dokumentstruktur und Inhaltsmanipulation
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Entdecken Sie Aspose.Words-Tutorials für Python und .NET mit Schwerpunkt auf Dokumentstruktur und Inhaltsmanipulation. Erfahren Sie, wie Sie Dokumentelemente effizient navigieren, extrahieren und ändern. Quellcode-Beispiele bereitgestellt.
 type: docs
 weight: 10

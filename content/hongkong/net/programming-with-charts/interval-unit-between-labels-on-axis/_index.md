@@ -17,7 +17,7 @@ url: /zh-hant/net/programming-with-charts/interval-unit-between-labels-on-axis/
 - 已安裝 Aspose.Words for .NET 程式庫。您可以使用 NuGet 套件管理員下載並安裝它。
 - 將儲存輸出文檔的文檔目錄路徑。
 
-## 步驟 2：建立一個新文件並插入圖表
+## 步驟2：建立一個新文件並插入圖表。
 
 創建一個新的`Document`物件和一個`DocumentBuilder`建置文檔。
 
@@ -89,12 +89,12 @@ doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 
 Aspose.Words for .NET 提供了強大的功能來操作 Word 文件中的圖表。透過設定軸上標籤之間的間隔單位，您可以控制標籤的顯示密度並增強圖表的可讀性。這使您可以優化數據的呈現並改善整體用戶體驗。
 
-透過 Aspose.Words for .NET，您可以靈活地自訂圖表的各個方面，包括軸標籤。您可以設定所需的間隔單位，以確保標籤間隔適當並提供資料點的清晰表示。
+透過 Aspose.Words for .NET，您可以靈活地自訂圖表的各個方面，包括軸標籤。您可以設定所需的間隔單位，以確保標籤適當間隔並提供資料點的清晰表示。
 
 ### 常見問題解答
 
 #### Q1.圖表中的軸標籤是什麼？
-圖表中的軸標籤是指沿圖表水平（X 軸）或垂直（Y 軸）軸的值的文字表示形式。這些標籤有助於識別和解釋圖表上繪製的數據點。軸標籤提供上下文並允許使用者了解圖表中值的比例和範圍。
+圖表中的軸標籤是指沿圖表水平（X 軸）或垂直（Y 軸）軸的值的文字表示。這些標籤有助於識別和解釋圖表上繪製的數據點。軸標籤提供上下文並允許使用者了解圖表中值的比例和範圍。
 
 #### Q2。如何自訂軸標籤之間的間距？
 要使用 Aspose.Words for .NET 自訂圖表中軸標籤之間的間距，您可以存取`AxisX`或者`AxisY`圖表的屬性並修改`TickLabelSpacing`財產。透過設定`TickLabelSpacing`為特定值時，您可以控制各個軸上標籤之間的間隔單位，並根據您的要求調整間距。

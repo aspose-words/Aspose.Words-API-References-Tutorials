@@ -2,157 +2,68 @@
 title: Vytvořit záhlaví zápatí
 linktitle: Vytvořit záhlaví zápatí
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se vytvářet záhlaví a zápatí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Upravte záhlaví a zápatí pro každou stránku.
+description: Naučte se přidávat a upravovat záhlaví a zápatí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento podrobný průvodce zajišťuje profesionální formátování dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-Zde je podrobný průvodce, který vysvětluje následující zdrojový kód C# pro vytváření záhlaví a zápatí pomocí funkce Aspose.Words for .NET. Před použitím tohoto kódu se ujistěte, že jste do projektu zahrnuli knihovnu Aspose.Words.
+Přidáním záhlaví a zápatí do dokumentů můžete zvýšit jejich profesionalitu a čitelnost. S Aspose.Words for .NET můžete snadno vytvářet a upravovat záhlaví a zápatí pro vaše dokumenty Word. V tomto tutoriálu vás provedeme procesem krok za krokem a zajistíme, že tyto funkce můžete bezproblémově implementovat.
 
-## Krok 1: Nastavte cestu k adresáři dokumentu
+## Předpoklady
+
+Než začnete, ujistěte se, že máte následující:
+
+-  Aspose.Words for .NET: Stáhněte a nainstalujte z[odkaz ke stažení](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Například Visual Studio pro psaní a spouštění kódu.
+- Základní znalost C#: Pochopení C# a .NET frameworku.
+- Ukázkový dokument: Ukázkový dokument pro použití záhlaví a zápatí nebo vytvoření nového, jak je znázorněno ve výukovém programu.
+
+## Importovat jmenné prostory
+
+Nejprve musíte importovat potřebné jmenné prostory pro přístup ke třídám a metodám Aspose.Words.
 
 ```csharp
-// Cesta k adresáři dokumentů.
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System;
+```
+
+## Krok 1: Definujte adresář dokumentů
+
+Definujte adresář, kam bude dokument uložen. To pomáhá při efektivním řízení cesty.
+
+```csharp
+// Cesta k adresáři dokumentů
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-Ujistěte se, že jste zadali správnou cestu k adresáři dokumentů, kam se upravený dokument uloží.
+## Krok 2: Vytvořte nový dokument
 
-## Krok 2: Vytvořte dokument a generátor dokumentů
+ Vytvořte nový dokument a a`DocumentBuilder` pro usnadnění přidávání obsahu.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Zde vytvoříme instanci`Document` třída a instance třídy`DocumentBuilder` třída, která nám umožní manipulovat s dokumentem a přidávat prvky.
+## Krok 3: Nakonfigurujte nastavení stránky
 
-## Krok 3: Nastavte parametry stránky a první záhlaví
+Nastavte nastavení stránky, včetně toho, zda bude mít první stránka jiné záhlaví/zápatí.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// Určete, zda chceme, aby se záhlaví/zápatí první stránky lišilo od ostatních stránek.
-// K určení můžete také použít vlastnost PageSetup.OddAndEvenPagesHeaderFooter
-// různá záhlaví/zápatí pro liché a sudé stránky.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
-
-builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-
-builder.Font.Name = "Arial";
-builder.Font.Bold = true;
-builder.Font.Size = 14;
-
-builder.Write("Aspose.Words - Creating Headers/Footers - Title Page.");
-
-pageSetup.HeaderDistance = 20;
-builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-Nastavíme parametry stránky včetně vzdálenosti záhlaví a poté se přesuneme do hlavního záhlaví (`HeaderPrimary`). K přidání textu a formátování záhlaví používáme generátor dokumentů.
+## Krok 4: Přidejte záhlaví na první stránku
 
-## Krok 4: Vložte obrázek a text do hlavního záhlaví
-
-```csharp
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-     RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
-
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.Write("Aspose.Words - Building headers/footers.");
-
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
-```
-
-Pomocí generátoru dokumentů vložíme obrázek do levého horního rohu hlavního záhlaví, poté přidáme nějaký text zarovnaný doprava.
-
-## Krok 5: Vložte tabulku do hlavního zápatí
+Přejděte do sekce záhlaví pro první stránku a nakonfigurujte text záhlaví.
 
 ```csharp
-builder.StartTable();
-
-builder.CellFormat.ClearFormatting();
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-
-builder.Write("Page ");
-builder.InsertField("PAGE", "");
-builder.Write(" of ");
-builder.InsertField("NUMPAGES", "");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.EndRow();
-builder.EndTable();
-
-builder.MoveToDocumentEnd();
-```
-
-## Krok 6: Přidejte novou stránku a nastavte záhlaví/zápatí
-
-```csharp
-builder. InsertBreak(BreakType.PageBreak);
-builder.InsertBreak(BreakType.SectionBreakNewPage);
-
-currentSection = builder. CurrentSection;
-pageSetup = currentSection.PageSetup;
-pageSetup.Orientation = Orientation.Landscape;
-// Tato sekce nepotřebuje jiné záhlaví/zápatí pro první stránku, potřebujeme pouze jednu titulní stránku v dokumentu,
-// záhlaví/zápatí pro tuto stránku již bylo definováno v předchozí části.
-pageSetup.DifferentFirstPageHeaderFooter = false;
-
-// Tato sekce standardně zobrazuje záhlaví/zápatí předchozí sekce, pro přerušení tohoto odkazu zavolejte currentSection.HeadersFooters.LinkToPrevious(false),
-// šířka stránky je pro novou sekci jiná, takže pro tabulku zápatí musíme nastavit různé šířky buněk.
-currentSection.HeadersFooters.LinkToPrevious(false);
-
-// Pokud chceme pro tuto sekci použít již existující záhlaví/zápatí,
-//ale s pár drobnými změnami by mohlo mít smysl zkopírovat záhlaví/zápatí
-// z předchozí části a aplikovat potřebné změny tam, kde je chceme.
-CopyHeadersFootersFromPreviousSection(currentSection);
-
-HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
-Row row = primaryFooter.Tables[0].FirstRow;
-row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-// Uložte dokument
-doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
-```
-
- Přidáme konec stránky a konec sekce, abychom vytvořili novou stránku, kde budou viditelné primární záhlaví/zápatí. Nastavíme parametry pro novou sekci, pak použijeme`CopyHeadersFootersFromPreviousSection` metoda pro zkopírování záhlaví/zápatí z předchozí části. Nakonec nastavíme vhodné šířky buněk pro hlavní tabulku zápatí a dokument uložíme.
-
-### Příklad zdrojového kódu pro vytvoření záhlaví a zápatí pomocí Aspose.Words pro .NET
-
-```csharp
-// Cesta k adresáři dokumentů.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-Section currentSection = builder.CurrentSection;
-PageSetup pageSetup = currentSection.PageSetup;
-// Určete, zda chceme, aby se záhlaví/zápatí první stránky lišilo od ostatních stránek.
-// K určení můžete také použít vlastnost PageSetup.OddAndEvenPagesHeaderFooter
-// různá záhlaví/zápatí pro liché a sudé stránky.
-pageSetup.DifferentFirstPageHeaderFooter = true;
-pageSetup.HeaderDistance = 20;
-
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
@@ -161,75 +72,70 @@ builder.Font.Bold = true;
 builder.Font.Size = 14;
 
 builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+```
 
-pageSetup.HeaderDistance = 20;
+## Krok 5: Přidejte primární záhlaví
+
+Přejděte do primární sekce záhlaví a vložte obrázek a text.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-// Vložte umístěný obrázek do horního/levého rohu záhlaví.
-// Vzdálenost od horního/levého okraje stránky je nastavena na 10 bodů.
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+// Vložte obrázek do záhlaví
+builder.InsertImage(dataDir + "Graphics Interchange Format.gif", 
+    RelativeHorizontalPosition.Page, 10, RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
 builder.Write("Aspose.Words Header/Footer Creation Primer.");
+```
 
+## Krok 6: Přidejte primární zápatí
+
+Přejděte do primární sekce zápatí a vytvořte tabulku pro formátování obsahu zápatí.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// Tabulkou se dvěma buňkami uděláme jednu část textu na řádku (s číslováním stránek).
-// Zarovnat doleva a druhou část textu (s autorským právem) zarovnat doprava.
 builder.StartTable();
-
 builder.CellFormat.ClearFormatting();
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-// K automatickému výpočtu aktuálního čísla stránky a mnoha stránek používá pole PAGE a NUMPAGES.
+// Přidejte číslování stránek
 builder.Write("Page ");
 builder.InsertField("PAGE", "");
 builder.Write(" of ");
 builder.InsertField("NUMPAGES", "");
 
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
 builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
 builder.EndRow();
 builder.EndTable();
+```
 
+## Krok 7: Přidejte obsah a konce stránek
+
+Přejděte na konec dokumentu, přidejte konec stránky a vytvořte nový oddíl s jiným nastavením stránky.
+
+```csharp
 builder.MoveToDocumentEnd();
-
-// Zalomením stránky vytvoříte druhou stránku, na které budou vidět primární záhlaví/zápatí.
 builder.InsertBreak(BreakType.PageBreak);
 builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-// Tato sekce nepotřebuje jiné záhlaví/zápatí na první stránce, potřebujeme pouze jednu titulní stránku v dokumentu,
-// záhlaví/zápatí pro tuto stránku již bylo definováno v předchozí části.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// Tato sekce zobrazuje záhlaví/zápatí z předchozí sekce
-// ve výchozím nastavení zavolejte currentSection.HeadersFooters.LinkToPrevious(false) pro zrušení této šířky stránky
-// je pro novou sekci odlišná, a proto musíme pro tabulku zápatí nastavit různé šířky buněk.
 currentSection.HeadersFooters.LinkToPrevious(false);
-
-// Pokud chceme pro tuto sekci použít již existující sadu záhlaví/zápatí.
-// Ale s některými drobnými úpravami může být účelné zkopírovat záhlaví/zápatí
-// z předchozí části a aplikujte potřebné úpravy tam, kde je chceme.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
 Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
@@ -237,24 +143,47 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
-### FAQ
+## Krok 8: Zkopírujte záhlaví a zápatí z předchozí části
 
-#### Otázka: Jak mohu přidat záhlaví do svého dokumentu v Aspose.Words?
+Pokud chcete znovu použít záhlaví a zápatí z předchozí sekce, zkopírujte je a použijte potřebné úpravy.
 
- A: Chcete-li přidat záhlaví do dokumentu v Aspose.Words, můžete použít`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` metoda. Tato metoda přidá primární nadpis do první části vašeho dokumentu.
+```csharp
+private static void CopyHeadersFootersFromPreviousSection(Section section)
+{
+    Section previousSection = (Section)section.PreviousSibling;
+    if (previousSection == null) return;
 
-#### Otázka: Jak mohu přidat zápatí do svého dokumentu v Aspose.Words?
+    section.HeadersFooters.Clear();
 
- A: Chcete-li přidat zápatí do dokumentu v Aspose.Words, můžete použít`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`metoda. Tato metoda přidá primární zápatí do první části dokumentu.
+    foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
+    {
+        section.HeadersFooters.Add(headerFooter.Clone(true));
+    }
+}
+```
 
-#### Otázka: Jak mohu přidat text do záhlaví nebo zápatí v Aspose.Words?
+## Závěr
 
- A: Chcete-li přidat text do záhlaví nebo zápatí v Aspose.Words, můžete použít`HeaderFooter.Paragraphs` vlastnost, abyste získali kolekci odstavců záhlaví nebo zápatí, pak přidejte odstavec obsahující váš text do této kolekce pomocí`ParagraphCollection.Add` metoda.
+Pomocí následujících kroků můžete efektivně přidávat a upravovat záhlaví a zápatí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tím se zlepší vzhled a profesionalita vašeho dokumentu, takže bude čitelnější a poutavější.
 
-#### Otázka: Mohu upravit obsah záhlaví nebo zápatí pomocí obrázků a čísel stránek v Aspose.Words?
+## Nejčastější dotazy
 
- Odpověď: Ano, obsah záhlaví nebo zápatí můžete upravit pomocí obrázků a čísel stránek v Aspose.Words. Můžete použít předměty jako`Shape` přidat obrázky a objekty jako`Field` přidat čísla stránek do záhlaví nebo zápatí.
+### Q1: Co je Aspose.Words pro .NET?
 
-#### Otázka: Mohu změnit písmo, velikost a barvu textu v záhlaví nebo zápatí v Aspose.Words?
+Aspose.Words for .NET je knihovna, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově v rámci aplikací .NET.
 
- Odpověď: Ano, můžete změnit písmo, velikost a barvu textu v záhlaví nebo zápatí v Aspose.Words. Můžete přistupovat k vlastnostem formátování textu, jako je např`Font` změnit písmo,`Size` upravit velikost a`Color`pro nastavení barvy textu.
+### Q2: Mohu přidat obrázky do záhlaví nebo zápatí?
+
+ Ano, obrázky můžete snadno přidat do záhlaví nebo zápatí pomocí`DocumentBuilder.InsertImage` metoda.
+
+### Q3: Jak nastavím různá záhlaví a zápatí pro první stránku?
+
+ Můžete nastavit různá záhlaví a zápatí pro první stránku pomocí`DifferentFirstPageHeaderFooter` vlastnictvím`PageSetup` třída.
+
+### Q4: Kde najdu další dokumentaci k Aspose.Words?
+
+ Komplexní dokumentaci naleznete na[Stránka dokumentace API Aspose.Words](https://reference.aspose.com/words/net/).
+
+### Q5: Je k dispozici podpora pro Aspose.Words?
+
+ Ano, Aspose nabízí podporu prostřednictvím jejich[Fórum podpory](https://forum.aspose.com/c/words/8).

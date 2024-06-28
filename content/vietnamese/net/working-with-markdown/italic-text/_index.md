@@ -1,6 +1,6 @@
 ---
-title: Văn bản in nghiêng
-linktitle: Văn bản in nghiêng
+title: Văn bản tiếng Ý
+linktitle: Văn bản tiếng Ý
 second_title: API xử lý tài liệu Aspose.Words
 description: Tìm hiểu cách in nghiêng văn bản với Aspose.Words for .NET Hướng dẫn từng bước.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Làm cho văn bản nghiêng.
+// Tạo văn bản bằng tiếng Ý.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
@@ -46,7 +46,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng văn
 
 #### Câu hỏi: Làm cách nào tôi có thể in nghiêng văn bản trong Aspose.Words?
 
-Đáp: Để in nghiêng văn bản trong Aspose.Words, bạn có thể sử dụng`Font.Italic` tài sản của`Run` sự vật. Bạn có thể đặt thuộc tính này thành`true` để in nghiêng văn bản cụ thể. Ví dụ, bạn có thể sử dụng`run.Font.Italic=true` để in nghiêng văn bản có trong`Run` sự vật.
+Đáp: Để in nghiêng văn bản trong Aspose.Words, bạn có thể sử dụng`Font.Italic` tài sản của`Run`sự vật. Bạn có thể đặt thuộc tính này thành`true` để in nghiêng văn bản cụ thể. Ví dụ, bạn có thể sử dụng`run.Font.Italic=true` để in nghiêng văn bản có trong`Run` sự vật.
 
 #### Hỏi: Có thể in nghiêng nhiều đoạn văn bản trong cùng một đoạn văn không?
 

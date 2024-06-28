@@ -2,7 +2,7 @@
 title: Sử dụng nguồn cảnh báo
 linktitle: Sử dụng nguồn cảnh báo
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách sử dụng nguồn cảnh báo với Aspose.Words for .NET Hướng dẫn từng bước.
+description: Tìm hiểu cách sử dụng nguồn cảnh báo với Hướng dẫn từng bước của Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /vi/net/working-with-markdown/use-warning-source/

@@ -77,7 +77,7 @@ Reactieantwoorden maken gezamenlijke discussies en feedback binnen een document 
 
 #### Vraag: Hoe kan ik een opmerking verwijderen in Aspose.Words voor .NET?
 
- A: Om een opmerking in Aspose.Words voor .NET te verwijderen, kunt u de`Comment.Remove` methode die specificeert`Comment` object dat u wilt verwijderen.
+A: Om een opmerking in Aspose.Words voor .NET te verwijderen, kunt u de`Comment.Remove` methode die specificeert`Comment` object dat u wilt verwijderen.
 
 #### Vraag: Kan ik reageren op een opmerking in Aspose.Words voor .NET?
 
@@ -85,7 +85,7 @@ Reactieantwoorden maken gezamenlijke discussies en feedback binnen een document 
 
 #### Vraag: Hoe krijg ik toegang tot bestaande opmerkingen in Aspose.Words voor .NET?
 
- A: U kunt toegang krijgen tot bestaande opmerkingen in Aspose.Words voor .NET met behulp van de`CommentCollection` eigendom van de`Document`voorwerp. Hiermee kunt u door alle opmerkingen in het document bladeren.
+ A: U kunt toegang krijgen tot bestaande opmerkingen in Aspose.Words voor .NET met behulp van de`CommentCollection` eigendom van de`Document` voorwerp. Hiermee kunt u door alle opmerkingen in het document bladeren.
 
 #### Vraag: Kan ik commentaartekst bewerken in Aspose.Words voor .NET?
 

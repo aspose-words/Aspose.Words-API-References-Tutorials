@@ -2,101 +2,98 @@
 title: Sisipkan Bidang Formulir Input Teks di Dokumen Word
 linktitle: Sisipkan Bidang Formulir Input Teks di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan Aspose.Words untuk .NET untuk menyisipkan bidang formulir input teks di dokumen Word dengan panduan langkah demi langkah ini.
+description: Pelajari cara menyisipkan bidang formulir input teks dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah ini. Sempurna untuk membuat formulir interaktif.
 type: docs
 weight: 10
 url: /id/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
-Dalam panduan langkah demi langkah ini, kita akan mempelajari cara menggunakan fitur Sisipkan Bidang Formulir Input Teks di Aspose.Words untuk .NET untuk menambahkan dan memanipulasi bidang formulir masukan teks di dokumen Word Anda menggunakan kode sumber C#. Bidang formulir input teks memungkinkan pengguna memasukkan teks khusus dalam dokumen, menjadikannya ideal untuk membuat formulir dan kuesioner interaktif. Dengan mengikuti petunjuk di bawah ini, Anda akan dapat dengan mudah menyisipkan dan menyesuaikan kolom formulir input teks di dokumen Anda. Mari kita mulai!
+## Perkenalan
 
-## Pengenalan fitur Sisipkan Bidang Formulir Input Teks di Aspose.Words untuk .NET
+Dalam tutorial ini, kita mendalami dunia Aspose.Words untuk .NET guna mempelajari cara menyisipkan bidang formulir input teks dalam dokumen Word. Bersiaplah, karena kita akan memulai perjalanan yang akan membuat tugas otomatisasi dokumen Anda menjadi mudah. Baik Anda membuat formulir, templat, atau dokumen interaktif, menguasai keterampilan ini akan meningkatkan aplikasi .NET Anda ke level berikutnya.
 
-Fitur Sisipkan Bidang Formulir Input Teks di Aspose.Words untuk .NET memungkinkan Anda menambahkan bidang formulir input teks secara terprogram ke dokumen Word Anda. Bidang formulir ini menyediakan elemen interaktif di mana pengguna dapat memasukkan teks atau data khusus.
+### Prasyarat
 
-## Memahami persyaratan untuk menggunakan fitur ini
+Sebelum kita mulai, ada beberapa hal yang Anda perlukan:
 
-Sebelum melanjutkan penerapan, pastikan Anda memenuhi persyaratan berikut:
+1.  Perpustakaan Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan terintegrasi (IDE) seperti Visual Studio.
+3. Pemahaman Dasar C#: Keakraban dengan bahasa pemrograman C# dan kerangka .NET.
+4.  Lisensi Sementara (Opsional): Jika Anda mengevaluasi Aspose.Words, Anda mungkin ingin mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/) untuk menghindari batasan apa pun.
 
-1. Aspose.Words untuk perpustakaan .NET diinstal di proyek Anda.
-2. Pengetahuan dasar bahasa pemrograman C#.
-3. Dokumen Word yang sudah ada atau dokumen baru untuk menyisipkan kolom formulir input teks.
+## Impor Namespace
 
-Pastikan Anda memiliki prasyarat ini agar dapat melanjutkan dengan lancar.
+Pertama, mari kita atur tahapannya dengan mengimpor namespace yang diperlukan. Ini akan memungkinkan kita untuk menggunakan kelas dan metode Aspose.Words dengan mudah.
 
-## Panduan langkah demi langkah untuk mengimplementasikan Sisipkan Bidang Formulir Input Teks menggunakan kode sumber C#
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
 
-Ikuti langkah-langkah di bawah ini untuk mengimplementasikan fitur Sisipkan Bidang Formulir Input Teks menggunakan kode sumber C# yang disediakan:
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dicerna. Setiap langkah sangat penting, jadi ikutilah dengan cermat.
 
-### Langkah 1: Menginisialisasi dokumen dan pembuat dokumen
+## Langkah 1: Siapkan Direktori Dokumen Anda
 
-Untuk memulai, inisialisasi dokumen dan pembuat dokumen. Pembuat dokumen adalah alat canggih yang disediakan oleh Aspose.Words untuk .NET yang memungkinkan kita membuat dan memanipulasi dokumen Word secara terprogram. Gunakan cuplikan kode berikut:
+Sebelum kita beralih ke kode, Anda perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word yang Anda buat akan disimpan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Langkah 2: Buat Dokumen Baru
+
+ Selanjutnya, kita perlu membuat instance baru dari`Document` kelas. Ini mewakili dokumen Word yang akan kita kerjakan.
+
+```csharp
 Document doc = new Document();
+```
+
+## Langkah 3: Inisialisasi DocumentBuilder
+
+ Itu`DocumentBuilder` class adalah alat utama kami untuk menambahkan konten ke dokumen. Anggap saja seperti pena yang menulis di kanvas dokumen Word.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-### Langkah 2: Memasukkan Bidang Formulir Input Teks
+## Langkah 4: Sisipkan Bidang Formulir Input Teks
 
- Selanjutnya, kita akan memasukkan kolom formulir input teks ke dalam dokumen menggunakan`InsertTextInput` metode. Metode ini menerima berbagai parameter, termasuk nama kolom formulir, jenis kolom formulir (dalam hal ini,`TextFormFieldType.Regular`), nilai default, dan panjang maksimum. Berikut ini contohnya:
+ Di sinilah keajaiban terjadi. Kami akan menggunakan`InsertTextInput` metode`DocumentBuilder` kelas untuk menambahkan bidang formulir input teks. Bidang formulir ini akan memungkinkan pengguna untuk memasukkan teks ke dalam dokumen.
 
 ```csharp
 builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 ```
 
-Kode di atas akan memasukkan kolom formulir input teks dengan nama "TextInput", nilai default "Halo", dan tidak ada batasan panjang maksimum.
+- Nama: "Input Teks" - Ini adalah nama kolom formulir.
+-  Jenis:`TextFormFieldType.Regular` Ini menetapkan bahwa bidang formulir adalah input teks biasa.
+- Teks Default: "" - Ini adalah teks default yang ditampilkan di kolom formulir (dalam hal ini kosong).
+- Nilai: "Halo" - Nilai awal kolom formulir.
+- Panjang Maksimum: 0 - Ini tidak menetapkan batasan panjang masukan.
 
-### Langkah 3: Menyimpan dokumen
+## Langkah 5: Simpan Dokumen
 
- Setelah memasukkan kolom formulir input teks, simpan dokumen ke lokasi yang diinginkan menggunakan`Save` metode. Pastikan untuk memberikan jalur file yang sesuai:
-
-```csharp
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
-```
-
-Kode ini akan menyimpan dokumen dengan kolom formulir input teks yang disisipkan di lokasi yang ditentukan.
-
-### Contoh kode sumber untuk Sisipkan Bidang Formulir Input Teks menggunakan Aspose.Words untuk .NET
+Terakhir, kita perlu menyimpan dokumen ke direktori yang ditentukan. Ini akan membuat file .docx dengan kolom formulir input teks yang disisipkan.
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
-
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```
 
 ## Kesimpulan
 
-Selamat! Anda telah berhasil mempelajari cara menyisipkan dan mengkustomisasi bidang formulir input teks dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber C# yang disediakan, kini Anda dapat menambahkan elemen interaktif ke dokumen Anda, memungkinkan pengguna memasukkan teks atau data khusus.
+Dan itu dia! Anda telah berhasil menyisipkan bidang formulir input teks ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ini hanyalah puncak gunung es. Dengan Aspose.Words, Anda dapat mengotomatiskan dan meningkatkan tugas pemrosesan dokumen Anda dengan banyak cara. Dari membuat templat yang rumit hingga menghasilkan formulir interaktif, kemungkinannya tidak terbatas.
 
-### FAQ untuk menyisipkan kolom formulir input teks di dokumen Word
+## FAQ
 
-#### T: Apa tujuan fitur Sisipkan Bidang Formulir Input Teks di Aspose.Words untuk .NET?
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram.
 
-J: Fitur Sisipkan Bidang Formulir Input Teks di Aspose.Words untuk .NET memungkinkan Anda menambahkan bidang formulir masukan teks secara terprogram ke dokumen Word Anda. Bidang formulir ini memungkinkan pengguna memasukkan teks atau data khusus langsung ke dalam dokumen, menjadikannya ideal untuk membuat formulir interaktif, survei, atau kuesioner.
+### Bisakah saya menggunakan Aspose.Words secara gratis?
+Aspose.Words menawarkan versi uji coba gratis dengan beberapa batasan. Untuk fungsionalitas penuh, Anda dapat membeli lisensi atau mendapatkan lisensi sementara untuk evaluasi.
 
-#### T: Apa saja prasyarat untuk menggunakan fitur Sisipkan Bidang Formulir Input Teks?
+### Untuk apa kolom formulir input teks digunakan?
+Bidang formulir input teks digunakan dalam dokumen Word untuk memungkinkan pengguna memasukkan teks ke dalam area yang telah ditentukan sebelumnya, menjadikannya ideal untuk formulir dan templat.
 
-A: Sebelum menerapkan fitur Sisipkan Bidang Formulir Input Teks, Anda perlu memastikan prasyarat berikut:
-1. Aspose.Words untuk perpustakaan .NET diinstal di proyek Anda.
-2. Pengetahuan dasar tentang bahasa pemrograman C#.
-3. Dokumen Word yang sudah ada atau dokumen baru tempat Anda ingin menyisipkan bidang formulir input teks.
+### Bagaimana cara mengkustomisasi tampilan bidang formulir?
+ Anda dapat menyesuaikan tampilan bidang formulir menggunakan berbagai properti`DocumentBuilder` kelas, seperti font, ukuran, dan perataan.
 
-#### T: Bagaimana cara menyesuaikan bidang formulir input teks?
-
- J: Anda dapat menyesuaikan kolom formulir input teks dengan memberikan parameter spesifik saat memanggil`InsertTextInput`metode. Misalnya, Anda dapat mengatur nama, nilai default, dan panjang maksimum bidang formulir sesuai kebutuhan.
-
-#### T: Bisakah saya menyisipkan beberapa kolom formulir input teks dalam satu dokumen?
-
- J: Ya, Anda dapat menyisipkan beberapa kolom formulir input teks dalam satu dokumen. Cukup hubungi`InsertTextInput` metode dengan nama dan konfigurasi berbeda untuk menambahkan beberapa bidang formulir.
-
-#### T: Bagaimana cara pengguna berinteraksi dengan kolom formulir input teks di dokumen?
-
-J: Setelah kolom formulir input teks dimasukkan ke dalam dokumen, pengguna dapat mengklik kolom formulir dan mulai mengetik untuk memasukkan teks khusus. Bidang formulir memungkinkan mereka mengedit konten langsung di dalam dokumen.
+### Di mana saya dapat menemukan tutorial lainnya tentang Aspose.Words untuk .NET?
+ Anda dapat menemukan lebih banyak tutorial dan dokumentasi di[Halaman dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/).

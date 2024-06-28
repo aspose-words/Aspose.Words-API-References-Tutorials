@@ -132,11 +132,11 @@ doc.getMailMerge().execute(new String[] { "FullName", "Company", "Address", "Add
 doc.save("WorkingWithCleanupOptions.RemoveEmptyTableRows.docx");
 ```
 
-Ebben a példában megnyitunk egy dokumentumot egy táblázattal és egyesítési mezőkkel, beállítjuk a tisztítási beállításokat az üres táblasorok eltávolításához, és végrehajtjuk a körlevél-összevonást az adatokkal. Az összevonás után az üres táblázatsorok eltávolításra kerülnek a dokumentumból.
+Ebben a példában megnyitunk egy dokumentumot egy táblázattal és egyesítési mezőkkel, beállítjuk a tisztítási beállításokat az üres táblázatsorok eltávolításához, és végrehajtjuk az adatokkal való levélegyesítést. Az összevonás után az üres táblázatsorok eltávolításra kerülnek a dokumentumból.
 
 ## Következtetés
 
-Ebben az oktatóanyagban megtanulta, hogyan használhatja az Aspose.Words for Java törlési beállításait dokumentumok kezeléséhez és tisztításához a körlevél-egyesítési folyamat során. Ezek az opciók finom vezérlést biztosítanak a dokumentumtisztítás felett, lehetővé téve a csiszolt és testreszabott dokumentumok könnyű létrehozását.
+Ebben az oktatóanyagban megtanulta, hogyan használhatja az Aspose.Words for Java tisztítási beállításait a dokumentumok kezeléséhez és tisztításához a körlevél-egyesítési folyamat során. Ezek az opciók finom vezérlést biztosítanak a dokumentumtisztítás felett, lehetővé téve a csiszolt és testreszabott dokumentumok könnyű létrehozását.
 
 ## GYIK
 
@@ -158,7 +158,7 @@ Az Aspose.Words for Java tisztítási beállításai olyan beállítások, amely
 
 ###  Mi történik, ha beállítom a`REMOVE_CONTAINING_FIELDS` option?
 
- Beállítása a`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` Az opció eltávolítja a teljes egyesítési mezőt, beleértve a bekezdést is, a dokumentumból a körlevél-egyesítési folyamat során. Ez akkor hasznos, ha el szeretné távolítani az egyesítési mezőket és a hozzájuk tartozó szöveget.
+ Beállítása a`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` Ez a beállítás eltávolítja a teljes egyesítési mezőt, beleértve a bekezdést is, a dokumentumból a körlevél-egyesítési folyamat során. Ez akkor hasznos, ha el szeretné távolítani az egyesítési mezőket és a hozzájuk tartozó szöveget.
 
 ### Hogyan távolíthatom el a fel nem használt egyesítési mezőket a dokumentumomból?
 

@@ -2,65 +2,52 @@
 title: Inserisci campo unione utilizzando DOM
 linktitle: Inserisci campo unione utilizzando DOM
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come inserire campi di unione di campi personalizzati nei tuoi documenti Word con Aspose.Words per .NET.
+description: Scopri come inserire e configurare i campi di unione nei documenti di Word utilizzando Aspose.Words per .NET con questo tutorial completo e passo passo.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-merge-field-using-dom/
 ---
 
-Ecco una guida passo passo per spiegare il codice sorgente C# di seguito che utilizza la funzionalità "Inserisci campo unione campo" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
+Se lavori con l'elaborazione di documenti in .NET, probabilmente ti sei imbattuto in Aspose.Words. Questa potente libreria offre un'ampia gamma di funzionalità per la manipolazione dei documenti Word a livello di codice. In questo tutorial, ci concentreremo su una funzionalità specifica: l'inserimento di un campo di unione utilizzando il Document Object Model (DOM) in Aspose.Words per .NET. Questa guida ti guiderà attraverso ogni passaggio, dalla configurazione del tuo ambiente all'inserimento e all'aggiornamento di un campo di unione in un documento di Word.
 
-## Passaggio 1: impostazione della directory dei documenti
+## Prerequisiti
 
-Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "LA TUA DIRECTORY DOCUMENTI" con il percorso appropriato della directory dei tuoi documenti.
+Prima di immergerti nel codice, assicuriamoci di avere tutto ciò di cui hai bisogno per seguire questo tutorial.
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1. **Basic Knowledge of C#:** Dovresti sentirti a tuo agio con la programmazione in C#.
+2. **Visual Studio Installed:** Assicurati di avere Visual Studio o qualsiasi altro IDE C# installato sul tuo computer.
+3. **Aspose.Words for .NET:** Scarica e installa l'ultima versione di Aspose.Words per .NET da[Rilasci](https://releases.aspose.com/words/net/).
+4. **Valid License:** Se non hai una licenza, puoi ottenerne una[licenza temporanea](https://purchase.aspose.com/temporary-license/) Per la valutazione.
 
-## Passaggio 2: creazione del documento e di DocumentBuilder
+## Passaggio 1: imposta il tuo progetto
 
-Iniziamo creando un nuovo documento e inizializzando un DocumentBuilder.
+Per prima cosa, configuriamo un nuovo progetto in Visual Studio.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+1. **Open Visual Studio.**
+2. **Create a New Project:** Vai su File > Nuovo > Progetto. Selezionare un'app console C#.
+3. **Name Your Project:** Dai al tuo progetto un nome significativo e fai clic su Crea.
 
-## Passaggio 3: spostare il cursore sul paragrafo
+## Passaggio 2: installa Aspose.Words
 
- Noi usiamo il`MoveTo()` del DocumentBuilder per spostare il cursore sul paragrafo in cui vogliamo inserire il campo unione campi.
+Per utilizzare Aspose.Words, devi aggiungerlo al tuo progetto. Questa operazione può essere eseguita tramite Gestione pacchetti NuGet.
 
-```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-builder. MoveTo(para);
-```
+1. **Open NuGet Package Manager:** Fai clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, quindi seleziona Gestisci pacchetti NuGet.
+2. **Search for Aspose.Words:** In Gestione pacchetti NuGet cercare "Apose.Words".
+3. **Install the Package:** Fai clic su Installa per aggiungere Aspose.Words al tuo progetto.
 
-## Passaggio 4: inserimento del campo unione campi
+## Passaggio 3: importare gli spazi dei nomi
 
- Usiamo DocumentBuilder`InsertField()` metodo per inserire un campo unione campi nel paragrafo.
-
-```csharp
-FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
-```
-
-Configuriamo quindi le proprietà del campo di unione dei campi specificando le opzioni appropriate, come il nome del campo, il testo prima e dopo il campo e le opzioni di formattazione verticale.
+Per iniziare a utilizzare Aspose.Words, devi importare gli spazi dei nomi necessari nel tuo progetto. Ecco come puoi farlo:
 
 ```csharp
-field.FieldName = "Test1";
-field.TextBefore = "Test2";
-field. TextAfter = "Test3";
-field. IsMapped = true;
-field. IsVerticalFormatting = true;
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- Infine, chiamiamo il`Update()` metodo per aggiornare il campo.
+## Passaggio 4: inizializza il documento
 
-```csharp
-field. Update();
-```
-
-### Codice sorgente di esempio per l'inserimento di un campo di unione di campi con Aspose.Words per .NET
+Ora che tutto è impostato, creiamo un nuovo documento Word e inizializziamo DocumentBuilder.
 
 ```csharp
 // Il percorso della directory dei documenti.
@@ -69,51 +56,67 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Creare il documento e DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Passaggio 5: sposta il cursore sul paragrafo specifico
+
+Successivamente, dobbiamo spostare il cursore su un paragrafo specifico del documento in cui vogliamo inserire il campo di unione.
+
+```csharp
 // Sposta il cursore sul paragrafo.
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-builder. MoveTo(para);
+builder.MoveToParagraph(2, 0);
+```
 
+## Passaggio 6: inserire il campo Unisci
+
+ L'inserimento di un campo di unione è semplice. Utilizzeremo il`InsertField` metodo del`DocumentBuilder` classe.
+
+```csharp
 // Inserisci campo unione campo.
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
+```
 
+## Passaggio 7: configurare il campo di unione
+
+Dopo aver inserito il campo unione è possibile impostare varie proprietà per configurarlo in base alle proprie esigenze.
+
+```csharp
 field.FieldName = "Test1";
 field.TextBefore = "Test2";
-field. TextAfter = "Test3";
-field. IsMapped = true;
-field. IsVerticalFormatting = true;
+field.TextAfter = "Test3";
+field.IsMapped = true;
+field.IsVerticalFormatting = true;
+```
 
+## Passaggio 8: aggiorna e salva il documento
+
+Infine, aggiorna il campo per assicurarti che tutte le impostazioni siano applicate e salva il documento.
+
+```csharp
 // Aggiorna il campo.
-field. Update();
+field.Update();
 
+// Salva il documento.
 doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
-In questo esempio, abbiamo creato un nuovo documento, spostato il cursore sul paragrafo desiderato e quindi inserito un campo di unione campi nel documento.
+## Conclusione
 
-### Domande frequenti
+Seguendo questi passaggi, puoi facilmente inserire e configurare i campi di unione in un documento di Word utilizzando Aspose.Words per .NET. Questo tutorial ha coperto i passaggi essenziali dalla configurazione dell'ambiente al salvataggio del documento finale. Con Aspose.Words puoi automatizzare attività complesse di elaborazione dei documenti, rendendo le tue applicazioni .NET più potenti ed efficienti.
 
-#### D: Come posso inserire un campo di unione in un documento di Word utilizzando Aspose.Words per .NET con il DOM?
+## Domande frequenti
 
-R: Per inserire un campo di unione in un documento di Word utilizzando Aspose.Words per .NET con DOM, puoi seguire questi passaggi:
+### 1. Cos'è un campo unione?
+Un campo di unione è un segnaposto in un documento che può essere sostituito dinamicamente con dati provenienti da un'origine dati, ad esempio un database o un file CSV.
 
-1. Passare al paragrafo in cui si desidera inserire il campo di unione.
-2.  Creare un`FieldMergeField` oggetto.
-3. Imposta le proprietà del campo di unione, come il nome del campo e le opzioni di formattazione.
-4.  Aggiungi il campo di unione al paragrafo utilizzando il comando`Paragraph.AppendChild` metodo.
+### 2. Posso utilizzare Aspose.Words gratuitamente?
+ Aspose.Words offre una prova gratuita che puoi scaricare[Qui](https://releases.aspose.com/). Per un utilizzo a lungo termine, sarà necessario acquistare una licenza.
 
-#### D: Come posso specificare i dati di origine per il campo unione in Aspose.Words per .NET?
+### 3. Come posso ottenere una licenza temporanea per Aspose.Words?
+ È possibile ottenere una licenza temporanea dal sito Web Aspose[Qui](https://purchase.aspose.com/temporary-license/).
 
-R: Per specificare i dati di origine per il campo di unione in Aspose.Words per .NET, è possibile utilizzare il file`FieldMergeField.FieldName` metodo per impostare il nome del campo di unione, che è il nome di un campo in un'origine dati esterna come un file CSV, un database, ecc. Puoi anche utilizzare il`FieldMergeField.Text` metodo per impostare direttamente il valore del campo di unione.
+### 4. Quali versioni di .NET sono supportate da Aspose.Words?
+Aspose.Words supporta più versioni di .NET, inclusi .NET Framework, .NET Core e .NET Standard.
 
-#### D: Posso personalizzare l'aspetto del campo unione in un documento di Word con Aspose.Words per .NET?
-
- R: Sì, puoi personalizzare l'aspetto del campo di unione in un documento di Word con Aspose.Words per .NET. Puoi impostare le opzioni di formattazione come maiuscole e minuscole, carattere, colore, ecc. utilizzando le proprietà del file`FieldMergeField` oggetto.
-
-#### D: Come posso verificare se un campo unione è stato inserito correttamente in un documento Word con Aspose.Words per .NET?
-
- R: Per verificare se un campo unione è stato inserito correttamente, puoi sfogliare il contenuto del documento e cercare istanze di campi unione. È possibile utilizzare i metodi e le proprietà di`Document` oggetto per accedere a paragrafi, campi e altri elementi del documento.
-
-#### D: L'inserimento di un campo di unione utilizzando DOM influisce sulla struttura del documento Word con Aspose.Words per .NET?
-
-R: L'inserimento di un campo unione utilizzando il DOM non influisce direttamente sulla struttura del documento Word. Tuttavia, aggiunge un nuovo elemento campo al contenuto del documento. Puoi manipolare la struttura del documento aggiungendo, eliminando o modificando gli elementi esistenti in base alle tue esigenze.
+### 5. Dove posso trovare la documentazione API per Aspose.Words?
+ La documentazione dell'API è disponibile.[Qui](https://reference.aspose.com/words/net/).

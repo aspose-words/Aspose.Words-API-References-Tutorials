@@ -1,6 +1,6 @@
 ---
-title: Âncora vertical
-linktitle: Âncora vertical
+title: Âncora Vertical
+linktitle: Âncora Vertical
 second_title: API de processamento de documentos Aspose.Words
 description: Aprenda como posicionar uma forma verticalmente em um documento usando o recurso de âncora vertical no Aspose.Words for .NET.
 type: docs
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Etapa 3: inserir e configurar uma forma
-Insira uma forma no documento usando o`InsertShape` método do`DocumentBuilder` objeto. Defina as dimensões desejadas para a forma.
+ Insira uma forma no documento usando o`InsertShape` método do`DocumentBuilder` objeto. Defina as dimensões desejadas para a forma.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## Etapa 6: salve o documento
- Salve o documento no diretório especificado usando o`Save` método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithShapes.VerticalAnchor.docx".
+ Salve o documento no diretório especificado usando o`Save`método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithShapes.VerticalAnchor.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

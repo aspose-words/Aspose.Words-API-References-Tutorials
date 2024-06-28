@@ -1,128 +1,145 @@
 ---
-title: คำเตือนการเรนเดอร์ Pdf
-linktitle: คำเตือนการเรนเดอร์ Pdf
+title: คำเตือนการเรนเดอร์ PDF
+linktitle: คำเตือนการเรนเดอร์ PDF
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: คำแนะนำทีละขั้นตอนในการจัดการกับคำเตือนการเรนเดอร์ PDF ด้วย Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีจัดการคำเตือนการเรนเดอร์ PDF ใน Aspose.Words สำหรับ .NET คำแนะนำโดยละเอียดนี้ช่วยให้มั่นใจว่าเอกสารของคุณจะได้รับการประมวลผลและบันทึกอย่างถูกต้อง
 type: docs
 weight: 10
 url: /th/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
+## การจัดการคำเตือนการเรนเดอร์ PDF ด้วย Aspose.Words สำหรับ .NET
 
-บทความนี้ให้คำแนะนำทีละขั้นตอนเกี่ยวกับวิธีการใช้ฟีเจอร์คำเตือนการแสดงผล PDF กับ Aspose.Words สำหรับ .NET เราจะอธิบายโค้ดแต่ละส่วนโดยละเอียด ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถเข้าใจวิธีจัดการกับการแสดงคำเตือนเมื่อแปลงเป็น PDF
+หากคุณทำงานกับ Aspose.Words สำหรับ .NET การจัดการคำเตือนการเรนเดอร์ PDF ถือเป็นสิ่งสำคัญเพื่อให้แน่ใจว่าเอกสารของคุณจะได้รับการประมวลผลและบันทึกอย่างถูกต้อง ในคู่มือที่ครอบคลุมนี้ เราจะอธิบายวิธีจัดการคำเตือนการเรนเดอร์ PDF โดยใช้ Aspose.Words เมื่อสิ้นสุดบทช่วยสอนนี้ คุณจะมีความเข้าใจที่ชัดเจนเกี่ยวกับวิธีการนำคุณสมบัตินี้ไปใช้ในโครงการ .NET ของคุณ
 
-ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งและกำหนดค่าไลบรารี Aspose.Words สำหรับ .NET ในโปรเจ็กต์ของคุณแล้ว คุณสามารถดูไลบรารีและคำแนะนำในการติดตั้งได้จากเว็บไซต์ Aspose
+## ข้อกำหนดเบื้องต้น
+
+ก่อนที่จะเข้าสู่บทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+
+- ความรู้พื้นฐานของ C#: ความคุ้นเคยกับภาษาการเขียนโปรแกรม C#
+-  Aspose.Words สำหรับ .NET: ดาวน์โหลดและติดตั้งจาก[ลิ้งค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
+- สภาพแวดล้อมการพัฒนา: การตั้งค่าเช่น Visual Studio เพื่อเขียนและเรียกใช้โค้ดของคุณ
+-  เอกสารตัวอย่าง: มีเอกสารตัวอย่าง (เช่น`WMF with image.docx`) พร้อมสำหรับการทดสอบ
+
+## นำเข้าเนมสเปซ
+
+หากต้องการใช้ Aspose.Words คุณจะต้องนำเข้าเนมสเปซที่จำเป็น ซึ่งช่วยให้สามารถเข้าถึงคลาสและวิธีการต่างๆ ที่จำเป็นสำหรับการประมวลผลเอกสาร
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.Rendering;
+using System;
+```
 
 ## ขั้นตอนที่ 1: กำหนดไดเร็กทอรีเอกสาร
 
- ในการเริ่มต้น คุณต้องกำหนดเส้นทางไปยังไดเร็กทอรีที่มีเอกสารของคุณอยู่ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีเอกสารของคุณ
+ขั้นแรก ให้กำหนดไดเร็กทอรีที่เก็บเอกสารของคุณ นี่เป็นสิ่งสำคัญสำหรับการค้นหาและประมวลผลเอกสารของคุณ
 
 ```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ขั้นตอนที่ 2: อัปโหลดเอกสาร
+## ขั้นตอนที่ 2: โหลดเอกสาร
 
-ต่อไปเราต้องโหลดเอกสารที่เราต้องการดำเนินการ ในตัวอย่างนี้ เราถือว่าเอกสารชื่อ "WMF with image.docx" และอยู่ในไดเร็กทอรีเอกสารที่ระบุ
+ โหลดเอกสารของคุณลงใน Aspose.Words`Document` วัตถุ วัตถุ ขั้นตอนนี้ช่วยให้คุณสามารถทำงานกับเอกสารโดยทางโปรแกรมได้
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with image.docx");
 ```
 
-## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกบันทึกเป็น PDF พร้อมคำเตือนการเรนเดอร์
+## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกการแสดงผล Metafile
 
- ในการจัดการกับคำเตือนการเรนเดอร์เมื่อแปลงเป็น PDF เราจำเป็นต้องกำหนดค่า`MetafileRenderingOptions` วัตถุเพื่อระบุวิธีการแสดงผล metafiles เรายังใช้`HandleDocumentWarnings` ตัวเลือกในการจัดการคำเตือนที่เกิดขึ้นเมื่อบันทึกเอกสาร
+ตั้งค่าตัวเลือกการเรนเดอร์ metafile เพื่อกำหนดวิธีการประมวลผล metafile (เช่น ไฟล์ WMF) ในระหว่างการเรนเดอร์
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 {
-     EmulateRasterOperations = false,
-     RenderingMode = MetafileRenderingMode.VectorWithFallback
+    EmulateRasterOperations = false,
+    RenderingMode = MetafileRenderingMode.VectorWithFallback
 };
-
-PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
-
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc.WarningCallback = callback;
 ```
 
-## ขั้นตอนที่ 4: บันทึกเอกสารเป็น PDF พร้อมคำเตือนการเรนเดอร์
+## ขั้นตอนที่ 4: กำหนดค่าตัวเลือกการบันทึก PDF
 
-สุดท้ายนี้ เราสามารถบันทึกเอกสารในรูปแบบ PDF โดยใช้ตัวเลือกการบันทึกที่กำหนดค่าไว้ก่อนหน้านี้
-
-```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfRenderWarnings.pdf", saveOptions);
-```
-
-## ขั้นตอนที่ 5: จัดการคำเตือนการแสดงผล
-
-คำเตือนการแสดงผลที่สร้างขึ้นเมื่อบันทึกเอกสารสามารถเรียกข้อมูลได้โดยใช้ตัวจัดการคำเตือนแบบกำหนดเอง ในตัวอย่างนี้ เราเพียงแค่พิมพ์คำอธิบายของคำเตือนแต่ละรายการ
+ตั้งค่าตัวเลือกการบันทึก PDF โดยผสมผสานตัวเลือกการเรนเดอร์ metafile เพื่อให้แน่ใจว่ามีการใช้ลักษณะการแสดงผลที่ระบุเมื่อบันทึกเอกสารเป็น PDF
 
 ```csharp
-foreach(WarningInfo warningInfo in callback.mWarnings)
+PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-     Console.WriteLine(warningInfo.Description);
+    MetafileRenderingOptions = metafileRenderingOptions
+};
+```
+
+## ขั้นตอนที่ 5: ใช้คำเตือนการโทรกลับ
+
+ สร้างคลาสที่ใช้`IWarningCallback` อินเทอร์เฟซเพื่อจัดการกับคำเตือนใด ๆ ที่เกิดขึ้นระหว่างการประมวลผลเอกสาร
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    /// <สรุป>
+    /// วิธีการนี้จะถูกเรียกเมื่อใดก็ตามที่มีปัญหาที่อาจเกิดขึ้นระหว่างการประมวลผลเอกสาร
+    /// </สรุป>
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.MinorFormattingLoss)
+        {
+            Console.WriteLine("Unsupported operation: " + info.Description);
+            mWarnings.Warning(info);
+        }
+    }
+
+    public WarningInfoCollection mWarnings = new WarningInfoCollection();
 }
 ```
 
-นั่นคือทั้งหมดที่ ! คุณจัดการคำเตือนการแสดงผลเมื่อแปลงเอกสารได้สำเร็จ
+## ขั้นตอนที่ 6: กำหนดการโทรกลับคำเตือนและบันทึกเอกสาร
 
-  เป็น PDF โดยใช้ Aspose.Words สำหรับ .NET
-
-### ตัวอย่างซอร์สโค้ดสำหรับคำเตือนการเรนเดอร์ PDF ด้วย Aspose.Words สำหรับ .NET
+กำหนดการโทรกลับคำเตือนให้กับเอกสารและบันทึกเป็น PDF คำเตือนใดๆ ที่เกิดขึ้นระหว่างการดำเนินการบันทึกจะถูกรวบรวมและจัดการโดยการโทรกลับ
 
 ```csharp
+HandleDocumentWarnings callback = new HandleDocumentWarnings();
+doc.WarningCallback = callback;
 
-	// เส้นทางไปยังไดเร็กทอรีเอกสาร
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "WMF with image.docx");
-
-	MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
-	{
-		EmulateRasterOperations = false, RenderingMode = MetafileRenderingMode.VectorWithFallback
-	};
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
-
-	//หาก Aspose.Words ไม่สามารถแสดงบันทึก metafile บางส่วนได้อย่างถูกต้อง
-	// เป็นกราฟิกแบบเวกเตอร์ จากนั้น Aspose.Words จะแสดงผล metafile นี้เป็นบิตแมป
-	HandleDocumentWarnings callback = new HandleDocumentWarnings();
-	doc.WarningCallback = callback;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfRenderWarnings.pdf", saveOptions);
-
-	// แม้ว่าไฟล์จะบันทึกได้สำเร็จ แต่คำเตือนการแสดงผลที่เกิดขึ้นระหว่างการบันทึกจะถูกรวบรวมไว้ที่นี่
-	foreach (WarningInfo warningInfo in callback.mWarnings)
-	{
-		Console.WriteLine(warningInfo.Description);
-	}
-        
+// บันทึกเอกสาร
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfRenderWarnings.pdf", saveOptions);
 ```
 
-### คำถามที่พบบ่อย
+## ขั้นตอนที่ 7: แสดงคำเตือนที่รวบรวมไว้
 
-#### ถาม: ฟังก์ชั่นคำเตือนการเรนเดอร์ PDF ด้วย Aspose.Words สำหรับ .NET คืออะไร
-คุณลักษณะคำเตือนการเรนเดอร์ PDF พร้อม Aspose.Words สำหรับ .NET ช่วยจัดการคำเตือนที่สร้างขึ้นเมื่อแปลงเอกสารเป็น PDF โดยให้วิธีการตรวจจับและจัดการกับคำเตือนในการแสดงผลเพื่อให้มั่นใจในคุณภาพและความสมบูรณ์ของเอกสารที่แปลงแล้ว
+สุดท้าย แสดงคำเตือนใดๆ ที่ถูกรวบรวมระหว่างการดำเนินการบันทึก ซึ่งจะช่วยในการระบุและแก้ไขปัญหาใดๆ ที่เกิดขึ้น
 
-#### ถาม: ฉันจะใช้ฟีเจอร์นี้กับ Aspose.Words สำหรับ .NET ได้อย่างไร
-เมื่อต้องการใช้คุณลักษณะนี้กับ Aspose.Words สำหรับ .NET ให้ทำตามขั้นตอนเหล่านี้:
+```csharp
+// แสดงคำเตือน
+foreach (WarningInfo warningInfo in callback.mWarnings)
+{
+    Console.WriteLine(warningInfo.Description);
+}
+```
 
-ตั้งค่าไดเร็กทอรีเอกสารโดยระบุพาธไดเร็กทอรีที่มีเอกสารของคุณอยู่
+## บทสรุป
 
- โหลดเอกสารที่จะประมวลผลโดยใช้`Document` วิธีการและระบุเส้นทางไฟล์
+เมื่อทำตามขั้นตอนเหล่านี้ คุณจะจัดการคำเตือนการเรนเดอร์ PDF ใน Aspose.Words สำหรับ .NET ได้อย่างมีประสิทธิภาพ สิ่งนี้ทำให้มั่นใจได้ว่าปัญหาที่อาจเกิดขึ้นระหว่างการประมวลผลเอกสารจะได้รับการบันทึกและแก้ไข ส่งผลให้การแสดงเอกสารมีความน่าเชื่อถือและแม่นยำยิ่งขึ้น
 
- กำหนดค่าตัวเลือกบันทึกเป็น PDF โดยการสร้างอินสแตนซ์ของ`PdfSaveOptions` ระดับ. ใช้`MetafileRenderingOptions` เพื่อระบุวิธีการเรนเดอร์เมตาไฟล์และตั้งค่า`MetafileRenderingOptions.RenderingMode` ถึง`MetafileRenderingMode.VectorWithFallback`.
+## คำถามที่พบบ่อย
 
- ใช้`HandleDocumentWarnings` คลาสเพื่อจัดการการเรนเดอร์คำเตือน ชุด`doc.WarningCallback` ไปยังอินสแตนซ์ของคลาสนี้
+### คำถามที่ 1: ฉันสามารถจัดการกับคำเตือนประเภทอื่นด้วยวิธีนี้ได้หรือไม่
 
- ใช้`Save` วิธีการบันทึกเอกสารในรูปแบบ PDF โดยระบุตัวเลือกการบันทึก
+ ใช่`IWarningCallback` อินเทอร์เฟซสามารถจัดการคำเตือนได้หลายประเภท ไม่ใช่แค่ที่เกี่ยวข้องกับการเรนเดอร์ PDF
 
-จากนั้นคุณสามารถจัดการคำเตือนการเรนเดอร์ได้โดยใช้`HandleDocumentWarnings` ระดับ. ตัวอย่างเช่น คุณสามารถแสดงคำอธิบายของคำเตือนแต่ละรายการโดยใช้การวนซ้ำ
+### คำถามที่ 2: ฉันจะดาวน์โหลด Aspose.Words สำหรับ .NET รุ่นทดลองใช้ฟรีได้ที่ไหน
 
-#### ถาม: ฉันจะทราบได้อย่างไรว่ามีคำเตือนเกี่ยวกับการเรนเดอร์เมื่อแปลงเอกสารเป็น PDF
- คุณสามารถใช้`HandleDocumentWarnings` คลาสเพื่อดึงคำเตือนการเรนเดอร์ที่สร้างขึ้นเมื่อบันทึกเอกสาร ชั้นเรียนนี้ประกอบด้วยก`mWarnings` รายการที่เก็บข้อมูลเกี่ยวกับคำเตือน คุณสามารถเรียกดูรายการนี้และเข้าถึงคุณสมบัติของคำเตือนแต่ละรายการ เช่น คำอธิบาย เพื่อดำเนินการที่เหมาะสม
+ คุณสามารถดาวน์โหลดรุ่นทดลองใช้ฟรีได้จาก[กำหนดหน้าทดลองใช้ฟรี](https://releases.aspose.com/).
 
-#### ถาม: คำเตือนการเรนเดอร์ประเภทใดที่สามารถสร้างได้เมื่อแปลงเป็น PDF
-คำเตือนการแสดงผลเมื่อแปลงเป็น PDF อาจรวมถึงคำเตือนที่เกี่ยวข้องกับเค้าโครง แบบอักษรที่หายไป รูปภาพที่ไม่รองรับ ปัญหาความเข้ากันได้ ฯลฯ คำเตือนเฉพาะจะขึ้นอยู่กับเนื้อหาของเอกสารต้นฉบับและตัวเลือกการแปลงที่ใช้
+### คำถามที่ 3: MetafileRenderingOptions คืออะไร
 
-#### ถาม: เป็นไปได้ไหมที่จะจัดการการเรนเดอร์คำเตือนด้วยวิธีที่กำหนดเอง
- ใช่ คุณสามารถปรับแต่งการจัดการคำเตือนการเรนเดอร์ได้โดยปรับแต่ง`HandleDocumentWarnings`ระดับ. คุณสามารถเพิ่มฟังก์ชันเพิ่มเติมเพื่อจัดการคำเตือนเฉพาะสำหรับแอปพลิเคชันของคุณ เช่น คำเตือนในการบันทึก การสร้างรายงาน การส่งการแจ้งเตือน และอื่นๆ
+MetafileRenderingOptions คือการตั้งค่าที่กำหนดวิธีการแสดงผล metafile (เช่น WMF หรือ EMF) เมื่อแปลงเอกสารเป็น PDF
+
+### คำถามที่ 4: ฉันจะรับการสนับสนุนสำหรับ Aspose.Words ได้ที่ไหน
+
+ เยี่ยมชม[ฟอรัมสนับสนุน Aspose.Words](https://forum.aspose.com/c/words/8) สำหรับความช่วยเหลือ.
+
+### คำถามที่ 5: เป็นไปได้ไหมที่จะได้รับใบอนุญาตชั่วคราวสำหรับ Aspose.Words
+
+ ใช่ คุณสามารถขอรับใบอนุญาตชั่วคราวได้จาก[หน้าใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/).

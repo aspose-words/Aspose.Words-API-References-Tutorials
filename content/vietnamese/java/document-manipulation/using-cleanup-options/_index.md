@@ -10,7 +10,7 @@ url: /vi/java/document-manipulation/using-cleanup-options/
 
 ## Giới thiệu về Sử dụng Tùy chọn Dọn dẹp trong Aspose.Words cho Java
 
-Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng các tùy chọn dọn dẹp trong Aspose.Words cho Java để thao tác và dọn dẹp tài liệu trong quá trình trộn thư. Các tùy chọn dọn dẹp cho phép bạn kiểm soát các khía cạnh khác nhau của việc dọn dẹp tài liệu, chẳng hạn như xóa các đoạn trống, các vùng không sử dụng, v.v.
+Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng các tùy chọn dọn dẹp trong Aspose.Words cho Java để thao tác và dọn dẹp tài liệu trong quá trình trộn thư. Các tùy chọn dọn dẹp cho phép bạn kiểm soát các khía cạnh khác nhau của việc dọn dẹp tài liệu, chẳng hạn như xóa các đoạn văn trống, các vùng không sử dụng, v.v.
 
 ## Điều kiện tiên quyết
 
@@ -158,7 +158,7 @@ Tùy chọn dọn dẹp trong Aspose.Words cho Java là các cài đặt cho ph�
 
 ###  Điều gì xảy ra khi tôi đặt`REMOVE_CONTAINING_FIELDS` option?
 
- Thiết lập`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` tùy chọn sẽ xóa toàn bộ trường phối, bao gồm cả đoạn chứa nó, khỏi tài liệu trong quá trình phối thư. Điều này hữu ích khi bạn muốn loại bỏ các trường hợp nhất và văn bản liên quan của chúng.
+ Thiết lập`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` Tùy chọn này sẽ xóa toàn bộ trường phối, bao gồm cả đoạn chứa nó, khỏi tài liệu trong quá trình phối thư. Điều này hữu ích khi bạn muốn loại bỏ các trường hợp nhất và văn bản liên quan của chúng.
 
 ### Làm cách nào để xóa các trường hợp nhất không sử dụng khỏi tài liệu của tôi?
 

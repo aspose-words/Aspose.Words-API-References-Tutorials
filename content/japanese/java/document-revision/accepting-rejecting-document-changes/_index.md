@@ -21,7 +21,7 @@ Aspose.Words for Java は、Java 開発者が Word ドキュメントを簡単�
 まず、変更履歴を含む Word 文書を読み込む必要があります。 Aspose.Words for Java は、これを行う簡単な方法を提供します。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("document_with_changes.docx");
 ```
 

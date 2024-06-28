@@ -15,7 +15,7 @@ url: /ar/net/working-with-fonts/set-fonts-folder/
 - تم تثبيت مكتبة Aspose.Words الخاصة بـ .NET في مشروعك
 
 ## الخطوة 1: تحديد دليل المستند
- ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب
+ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

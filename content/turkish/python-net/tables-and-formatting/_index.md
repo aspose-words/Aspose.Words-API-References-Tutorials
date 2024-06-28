@@ -35,7 +35,7 @@ Bu eğitimlerin sonunda, dinamik ve görsel olarak çekici tablolar oluşturma, 
 
 ## Tablolar ve Biçimlendirme Eğitimleri
 ### [Belge Estetiği İçin Filigran Oluşturma ve Biçimlendirme](./manage-document-watermarks/)
-Aspose.Words for Python'u kullanarak belgelerde filigranların nasıl oluşturulacağını ve biçimlendirileceğini öğrenin. Metin ve resim filigranları eklemek için kaynak kodunu içeren adım adım kılavuz. Bu eğitimle belgenizin estetiğini geliştirin.
+Aspose.Words for Python'u kullanarak belgelerde filigran oluşturmayı ve biçimlendirmeyi öğrenin. Metin ve resim filigranları eklemek için kaynak kodunu içeren adım adım kılavuz. Bu eğitimle belgenizin estetiğini geliştirin.
 ### [Word Belgelerinde Veri Sunumu için Tabloları Optimize Etme](./document-tables/)
 Aspose.Words for Python kullanarak Word belgelerinde veri sunumu için tabloları nasıl optimize edeceğinizi öğrenin. Adım adım rehberlik ve kaynak kodu örnekleriyle okunabilirliği ve görsel çekiciliği artırın.
 ### [Belge Tablosu Stilleri ve Biçimlendirme](./document-table-styles-formatting/)

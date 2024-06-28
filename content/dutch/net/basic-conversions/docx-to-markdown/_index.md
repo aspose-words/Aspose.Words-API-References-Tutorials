@@ -71,7 +71,7 @@ Of de opmaak tijdens de conversie behouden blijft, hangt af van de tool of bibli
 
 #### Wat zijn de beperkingen van het conversieproces?
 
-De beperkingen van het conversieproces zijn afhankelijk van de specifieke tool of bibliotheek die u gebruikt. Voor sommige tools kunnen beperkingen gelden met betrekking tot complexe opmaak, tabellen of afbeeldingen die zijn ingesloten in het DOCX-bestand. Het is belangrijk om de kenmerken en beperkingen van de gekozen tool volledig te begrijpen, zodat u weloverwogen beslissingen kunt nemen bij het converteren.
+De beperkingen van het conversieproces zijn afhankelijk van de specifieke tool of bibliotheek die u gebruikt. Sommige tools hebben mogelijk gerelateerde beperkingen voor complexe opmaak, tabellen of afbeeldingen die zijn ingesloten in het DOCX-bestand. Het is belangrijk om de kenmerken en beperkingen van de gekozen tool volledig te begrijpen, zodat u weloverwogen beslissingen kunt nemen bij het converteren.
 
 #### Is Aspose een betrouwbaar hulpmiddel voor de conversie van DOCX naar Markdown?
 

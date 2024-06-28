@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### س: كيف يمكنني الوصول إلى جدول في مستند باستخدام Aspose.Words for .NET؟
 
-ج: بمجرد تحميل المستند، يمكنك الوصول إلى الجدول الذي تريد إجراء استبدال النص فيه. في Aspose.Words for .NET، يمكنك استخدام`GetChild` الطريقة مع`NodeType.Table` المعلمة للحصول على الجدول المطلوب. على سبيل المثال:
+ج: بمجرد تحميل المستند، يمكنك الوصول إلى الجدول الذي تريد إجراء استبدال النص فيه. في Aspose.Words for .NET، يمكنك استخدام`GetChild` الطريقة مع`NodeType.Table` المعلمات للحصول على الجدول المطلوب. على سبيل المثال:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

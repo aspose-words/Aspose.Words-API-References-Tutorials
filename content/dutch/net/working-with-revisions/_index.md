@@ -16,7 +16,7 @@ Of u nu een beginner of een ervaren ontwikkelaar bent, deze tutorials helpen u o
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Accepteer revisies](./accept-revisions/) | Leer hoe u revisies van een Word-document accepteert met Aspose.Words voor .NET. |
+| [Accepteer beoordelingen](./accept-revisions/) | Leer hoe u revisies van een Word-document accepteert met Aspose.Words voor .NET. |
 | [Ontvang revisietypes van woorden](./get-revision-types/) | Ontvang revisietypen van woorden in een Word-document met Aspose.Words voor .NET. |
 | [Revisiegroepen ophalen](./get-revision-groups/) | Ontvang revisiegroepdetails in een Word-document met Aspose.Words voor .NET. |
 | [Verwijder opmerkingen in pdf-bestand](./remove-comments-in-pdf/) | Verwijder opmerkingen in een PDF-bestand met Aspose.Words voor .NET. |

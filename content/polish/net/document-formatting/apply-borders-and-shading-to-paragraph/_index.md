@@ -91,7 +91,7 @@ Oto kompletny kod źródłowy funkcji Zastosuj obramowania i cieniowanie do akap
 
 ## Wniosek
 
- tym samouczku nauczyliśmy się, jak zastosować obramowanie i cieniowanie do akapitu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Konfigurując akapit`Borders` I`Shading` właściwości, mogliśmy ustawić styl obramowania, kolor linii i kolor wypełnienia akapitu. Aspose.Words dla .NET zapewnia potężne możliwości formatowania, aby dostosować wygląd akapitów i ulepszyć wizualną reprezentację dokumentów.
+ W tym samouczku nauczyliśmy się, jak zastosować obramowanie i cieniowanie do akapitu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Konfigurując akapit`Borders` I`Shading` właściwości, mogliśmy ustawić styl obramowania, kolor linii i kolor wypełnienia akapitu. Aspose.Words dla .NET zapewnia potężne możliwości formatowania, aby dostosować wygląd akapitów i ulepszyć wizualną reprezentację dokumentów.
 
 ### Często zadawane pytania
 
@@ -100,13 +100,13 @@ Oto kompletny kod źródłowy funkcji Zastosuj obramowania i cieniowanie do akap
 Odp.: Aby zastosować obramowanie i cieniowanie do akapitu w dokumencie programu Word przy użyciu Aspose.Words dla .NET, wykonaj następujące kroki:
 1.  Utwórz nowy dokument i a`DocumentBuilder` obiekt.
 2.  Skonfiguruj obramowanie akapitów, uzyskując dostęp do pliku`Borders` własność`ParagraphFormat` i ustawienie stylu obramowania dla każdej strony.
-3.  Skonfiguruj wypełnienie akapitu, uzyskując dostęp do`Shading` własność`ParagraphFormat` oraz określenie tekstury i kolorów wypełnienia.
+3. Skonfiguruj wypełnienie akapitu, uzyskując dostęp do`Shading` własność`ParagraphFormat` oraz określenie tekstury i kolorów wypełnienia.
 4.  Dodaj treść do akapitu za pomocą`Write` metoda`DocumentBuilder`.
 5.  Zapisz dokument za pomocą`Save` metoda.
 
 #### P: Jak ustawić styl obramowania dla każdej strony akapitu?
 
- O: Aby ustawić styl obramowania dla każdej strony akapitu, możesz uzyskać dostęp do opcji`Borders` własność`ParagraphFormat` i ustaw`LineStyle` własność dla każdego`BorderType` (np,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Można określić różne style linii, np`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`itp.
+ O: Aby ustawić styl obramowania dla każdej strony akapitu, możesz uzyskać dostęp do opcji`Borders` własność`ParagraphFormat` i ustaw`LineStyle` własność dla każdego`BorderType` (np.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Można określić różne style linii, np`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`itp.
 
 #### P: Jak określić teksturę i kolory wypełnienia dla cieniowania akapitu?
 

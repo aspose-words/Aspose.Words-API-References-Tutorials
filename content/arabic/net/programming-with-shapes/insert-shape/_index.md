@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 3: إدراج الأشكال
- استخدم ال`InsertShape` طريقة`DocumentBuilder` كائن لإدراج الأشكال في المستند. حدد نوع الشكل والمواضع الأفقية والرأسية النسبية وأبعاد الصفحة والحجم ونوع التغليف. يمكنك أيضًا ضبط زاوية دوران الأشكال إذا رغبت في ذلك.
+ استخدم ال`InsertShape` طريقة`DocumentBuilder`كائن لإدراج الأشكال في المستند. حدد نوع الشكل والمواضع الأفقية والرأسية النسبية وأبعاد الصفحة والحجم ونوع التغليف. يمكنك أيضًا ضبط زاوية دوران الأشكال إذا رغبت في ذلك.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

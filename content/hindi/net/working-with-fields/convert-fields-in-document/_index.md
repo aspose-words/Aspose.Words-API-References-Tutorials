@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## चरण 5: परिवर्तित दस्तावेज़ को सहेजें
- उपयोग`Save()`निर्दिष्ट दस्तावेज़ निर्देशिका में पाठ में परिवर्तित फ़ील्ड के साथ दस्तावेज़ को सहेजने की विधि।
+ उपयोग`Save()` निर्दिष्ट दस्तावेज़ निर्देशिका में पाठ में परिवर्तित फ़ील्ड के साथ दस्तावेज़ को सहेजने की विधि।
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

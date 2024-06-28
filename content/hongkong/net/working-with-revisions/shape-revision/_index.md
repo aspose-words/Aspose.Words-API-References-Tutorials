@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## 第 3 步：取得形狀集合並檢查修訂情況
+## 第 3 步：取得形狀集合並檢查是否有修訂。
 
 我們將從文件中取得形狀集合併檢查與每個形狀相關的修訂。
 

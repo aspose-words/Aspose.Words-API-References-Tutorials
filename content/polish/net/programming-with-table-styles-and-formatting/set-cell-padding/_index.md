@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.StartTable();
 	builder.InsertCell();
-	// Ustawia ilość miejsca (w punktach), które należy dodać po lewej/górze/prawej/dół zawartości komórki.
+	// Ustawia ilość miejsca (w punktach), którą należy dodać po lewej/górze/prawej/dół zawartości komórki.
 	builder.CellFormat.SetPaddings(30, 50, 30, 50);
 	builder.Writeln("I'm a wonderful formatted cell.");
 	builder.EndRow();

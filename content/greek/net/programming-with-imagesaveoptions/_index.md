@@ -14,7 +14,7 @@ url: /el/net/programming-with-imagesaveoptions/
  ## Φροντιστήρια
 | Τίτλος | Περιγραφή |
 | --- | --- |
-| [Expose Threshold Control for Tiff Binarization](./expose-threshold-control-for-tiff-binarization/) | Μάθετε πώς να ελέγχετε το όριο δυαδοποίησης TIFF με το Aspose.Words για .NET. Πλήρες σεμινάριο για εικόνες καλύτερης ποιότητας. |
+| [Expose Threshold Control για Tiff Binarization](./expose-threshold-control-for-tiff-binarization/) | Μάθετε πώς να ελέγχετε το όριο δυαδοποίησης TIFF με το Aspose.Words για .NET. Πλήρες σεμινάριο για εικόνες καλύτερης ποιότητας. |
 | [Λήψη εύρους σελίδων Tiff](./get-tiff-page-range/) | Μάθετε πώς να εξάγετε μια σειρά από σελίδες TIFF με το Aspose.Words για .NET. Πλήρες σεμινάριο για προσαρμοσμένα αρχεία TIFF. |
 | [Μορφή 1 Bpp Indexed](./format-1bpp-indexed/) | Μάθετε πώς να μορφοποιείτε εικόνες σε 1 bpp με ευρετήριο με το Aspose.Words για .NET. Πλήρες σεμινάριο για εικόνες χαμηλού βάθους χρώματος. |
 | [Λήψη εύρους σελίδων Jpeg](./get-jpeg-page-range/) | Μάθετε πώς μπορείτε να αποκτήσετε μια σειρά σελίδων JPEG με το Aspose.Words για .NET. Πλήρες σεμινάριο για την εξαγωγή προσαρμοσμένων εικόνων. |

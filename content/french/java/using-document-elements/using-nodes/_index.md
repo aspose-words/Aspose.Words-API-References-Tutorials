@@ -112,10 +112,10 @@ Aspose.Words for Java est une bibliothèque Java qui permet aux développeurs de
 Vous pouvez télécharger et installer Aspose.Words pour Java à partir de[ici](https://releases.aspose.com/words/java/).
 
 ### Q3. Existe-t-il un essai gratuit disponible ?
- Oui, vous pouvez obtenir un essai gratuit d'Aspose.Words pour Java[ici](https://releases.aspose.com/).
+ Oui, vous pouvez bénéficier d’un essai gratuit d’Aspose.Words pour Java.[ici](https://releases.aspose.com/).
 
 ### Q4. Où puis-je obtenir un permis temporaire ?
- Vous pouvez obtenir une licence temporaire pour Aspose.Words for Java[ici](https://purchase.aspose.com/temporary-license/).
+ Vous pouvez obtenir une licence temporaire pour Aspose.Words pour Java.[ici](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. Où puis-je trouver de l’assistance pour Aspose.Words pour Java ?
  Pour obtenir de l'aide et des discussions, visitez le[Forum Aspose.Words pour Java](https://forum.aspose.com/).

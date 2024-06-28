@@ -67,7 +67,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool sh
             DocumentBuilder builder = new DocumentBuilder(doc);
             builder.MoveToDocumentEnd();
 
-            // {IF "{MERGEFIELD 书签}" = "true" "" ""}
+            //{IF "{MERGEFIELD 书签}" = "true" "" ""}
             Field field = builder.InsertField("IF \"", null);
             builder.MoveTo(field.Start.NextSibling);
             builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
@@ -128,7 +128,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool sh
 
 #### 问：我可以使用条件根据文档中的合并字段值显示或隐藏书签吗？
 
-答：是的，您可以使用条件和合并字段值来确定是否应显示或隐藏书签。您可以自定义以下代码`ShowHideBookmarkedContent`函数考虑适当的条件和值。
+答：是的，您可以使用条件和合并字段值来确定是否应显示或隐藏书签。您可以自定义代码`ShowHideBookmarkedContent`函数考虑适当的条件和值。
 
 #### 问：如何使用 Aspose.Words for .NET 删除 Word 文档中的书签？
 

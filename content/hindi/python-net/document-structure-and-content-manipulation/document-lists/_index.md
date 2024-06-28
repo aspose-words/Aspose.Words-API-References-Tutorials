@@ -16,7 +16,7 @@ url: /hi/python-net/document-structure-and-content-manipulation/document-lists/
 
 ## पर्यावरण की स्थापना
 
- इससे पहले कि हम सूचियाँ बनाने और प्रबंधित करने में लग जाएँ, सुनिश्चित करें कि आपके पास Aspose.Words for Python लाइब्रेरी स्थापित है। आप इसे यहां से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/python/) . इसके अतिरिक्त, एपीआई दस्तावेज़ देखें[इस लिंक](https://reference.aspose.com/words/python-net/) विस्तृत जानकारी के लिए.
+इससे पहले कि हम सूचियाँ बनाने और प्रबंधित करने में लग जाएँ, सुनिश्चित करें कि आपके पास Aspose.Words for Python लाइब्रेरी स्थापित है। आप इसे यहां से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/python/) . इसके अतिरिक्त, एपीआई दस्तावेज़ देखें[इस लिंक](https://reference.aspose.com/words/python-net/) विस्तृत जानकारी के लिए.
 
 ## बुलेटेड सूचियाँ बनाना
 

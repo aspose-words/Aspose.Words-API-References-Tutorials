@@ -78,7 +78,7 @@ För att konvertera en DOCX-fil till byte kan du använda olika programvaruverkt
 
 #### Vilka är begränsningarna i konverteringsprocessen?
 
-Begränsningarna för konverteringsprocessen beror på det specifika verktyget eller biblioteket du använder. Vissa verktyg kan ha begränsningar relaterade till storleken eller komplexiteten på inmatningsdokumentet. Det är viktigt att välja ett verktyg som kan hantera kraven på din konverteringsuppgift.
+Begränsningarna för konverteringsprocessen beror på det specifika verktyget eller biblioteket du använder. Vissa verktyg kan ha relaterade begränsningar till storleken eller komplexiteten på inmatningsdokumentet. Det är viktigt att välja ett verktyg som kan hantera kraven på din konverteringsuppgift.
 
 ### Kan jag behålla formateringen av originaldokumentet?
 

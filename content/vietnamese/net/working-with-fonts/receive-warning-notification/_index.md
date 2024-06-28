@@ -2,88 +2,116 @@
 title: Nhận thông báo cảnh báo
 linktitle: Nhận thông báo cảnh báo
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách nhận thông báo cảnh báo khi sử dụng Aspose.Words cho .NET và quản lý mọi sự cố hoặc cảnh báo trong tài liệu của bạn.
+description: Tìm hiểu cách nhận thông báo thay thế phông chữ trong Aspose.Words cho .NET với hướng dẫn chi tiết của chúng tôi. Đảm bảo tài liệu của bạn hiển thị chính xác mọi lúc.
 type: docs
 weight: 10
 url: /vi/net/working-with-fonts/receive-warning-notification/
 ---
 
-Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn cách nhận thông báo cảnh báo khi sử dụng Aspose.Words cho .NET. Cảnh báo có thể được đưa ra khi thiết lập hoặc lưu tài liệu. Chúng tôi sẽ hướng dẫn bạn từng bước để hiểu và triển khai mã trong dự án .NET của bạn.
+Bạn có mệt mỏi khi phải xử lý các vấn đề về phông chữ không mong muốn trong tài liệu của mình không? Với Aspose.Words for .NET, bạn có thể nhận được thông báo về bất kỳ sự cố tiềm ẩn nào trong quá trình xử lý tài liệu, giúp duy trì chất lượng tài liệu dễ dàng hơn. Hướng dẫn toàn diện này sẽ hướng dẫn bạn cách thiết lập thông báo cảnh báo trong Aspose.Words, đảm bảo rằng bạn không bao giờ bỏ lỡ cảnh báo quan trọng nữa.
 
 ## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
-- Kiến thức làm việc về ngôn ngữ lập trình C#
-- Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
+
+Trước khi chúng ta đi sâu vào, hãy đảm bảo bạn có những điều sau:
+
+- Kiến thức cơ bản về C#: Làm quen với C# sẽ giúp bạn hiểu và thực hiện được các bước.
+-  Aspose.Words for .NET Library: Tải xuống và cài đặt nó từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Thiết lập như Visual Studio để viết và chạy mã của bạn.
+-  Tài liệu mẫu: Có tài liệu mẫu (ví dụ:`Rendering.docx`) để làm việc.
+
+## Nhập không gian tên
+
+Để bắt đầu, bạn cần nhập các không gian tên cần thiết. Chúng sẽ cung cấp quyền truy cập vào các lớp và phương thức cần thiết cho nhiệm vụ của chúng ta.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.WarningInfo;
+```
 
 ## Bước 1: Xác định thư mục tài liệu
- Bắt đầu bằng cách đặt đường dẫn thư mục đến vị trí tài liệu Word của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+
+Đầu tiên, chỉ định thư mục nơi tài liệu của bạn được lưu trữ. Điều này rất cần thiết để định vị tài liệu bạn muốn xử lý.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Bước 2: Tải tài liệu lên và định cấu hình trình xử lý cảnh báo
- Tải tài liệu bằng cách sử dụng`Document` lớp học. Tiếp theo, tạo một thể hiện của`HandleDocumentWarnings` class để xử lý các cảnh báo.
-
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc. WarningCallback = callback;
-```
-
-## Bước 3: Cập nhật bố cục và lưu tài liệu
- Cập nhật bố cục tài liệu bằng cách gọi`UpdatePageLayout()` phương pháp. Điều này sẽ kích hoạt các cảnh báo, nếu có. Sau đó lưu tài liệu.
-
-```csharp
-doc.UpdatePageLayout();
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-```
-
-### Mã nguồn mẫu để nhận thông báo cảnh báo bằng Aspose.Words cho .NET 
-
-```csharp
-
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Rendering.docx");
-// Khi bạn gọi UpdatePageLayout, tài liệu sẽ được hiển thị trong bộ nhớ. Bất kỳ cảnh báo nào xảy ra trong quá trình kết xuất
-//được lưu trữ cho đến khi tài liệu được lưu và sau đó được gửi đến WarningCallback thích hợp.
-doc.UpdatePageLayout();
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc.WarningCallback = callback;
-// Mặc dù tài liệu đã được hiển thị trước đó nhưng mọi cảnh báo lưu đều được thông báo cho người dùng trong quá trình lưu tài liệu.
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-
 ```
 
+## Bước 2: Tải tài liệu
+
+ Tải tài liệu của bạn vào Aspose.Words`Document` sự vật. Điều này cho phép bạn thao tác tài liệu theo chương trình.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Bước 3: Cập nhật bố cục trang
+
+ Gọi`UpdatePageLayout` phương pháp. Thao tác này sẽ hiển thị tài liệu trong bộ nhớ và ghi lại mọi cảnh báo xảy ra trong quá trình hiển thị.
+
+```csharp
+doc.UpdatePageLayout();
+```
+
+## Bước 4: Thiết lập cuộc gọi lại cảnh báo
+
+ Để nắm bắt và xử lý các cảnh báo, hãy tạo một lớp thực hiện`IWarningCallback` giao diện. Lớp này sẽ ghi lại mọi cảnh báo xảy ra trong quá trình xử lý tài liệu.
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        // Chúng tôi chỉ quan tâm đến phông chữ được thay thế.
+        if (info.WarningType == WarningType.FontSubstitution)
+        {
+            Console.WriteLine("Font substitution: " + info.Description);
+        }
+    }
+}
+```
+
+## Bước 5: Gán lệnh gọi lại cho tài liệu
+
+Gán lệnh gọi lại cảnh báo cho tài liệu. Điều này đảm bảo rằng mọi vấn đề về phông chữ đều được ghi lại và ghi lại.
+
+```csharp
+HandleDocumentWarnings callback = new HandleDocumentWarnings();
+doc.WarningCallback = callback;
+```
+
+## Bước 6: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu. Ngay cả khi tài liệu đã được hiển thị trước đó, mọi cảnh báo lưu sẽ được thông báo cho người dùng trong bước này.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
+```
+
+Bằng cách làm theo các bước này, bạn đã định cấu hình ứng dụng của mình để xử lý việc thay thế phông chữ một cách linh hoạt và nhận thông báo bất cứ khi nào việc thay thế xảy ra.
+
 ## Phần kết luận
-Trong hướng dẫn này, bạn đã học cách nhận thông báo cảnh báo khi sử dụng Aspose.Words cho .NET. Cảnh báo có thể được đưa ra khi thiết lập hoặc lưu tài liệu. Sử dụng tính năng này để được thông báo về bất kỳ vấn đề hoặc cảnh báo nào liên quan đến tài liệu của bạn.
 
-### Câu hỏi thường gặp
+Bây giờ bạn đã thành thạo quy trình nhận thông báo thay thế phông chữ bằng Aspose.Words cho .NET. Kỹ năng này sẽ giúp bạn đảm bảo rằng tài liệu của bạn luôn trông đẹp nhất, ngay cả khi không có sẵn các phông chữ cần thiết. Hãy tiếp tục thử nghiệm các cài đặt khác nhau để tận dụng tối đa sức mạnh của Aspose.Words.
 
-#### Câu hỏi: Làm cách nào tôi có thể nhận được thông báo cảnh báo trong Aspose.Words?
+## Câu hỏi thường gặp
 
- Trả lời: Để nhận thông báo cảnh báo trong Aspose.Words, bạn có thể sử dụng`FontSettings` lớp học và`WarningCallback` sự kiện. Bạn có thể xác định phương thức gọi lại để được thông báo khi gặp cảnh báo liên quan đến phông chữ trong khi xử lý tài liệu.
+### Câu hỏi 1: Tôi có thể chỉ định nhiều phông chữ mặc định không?
 
-#### Câu hỏi: Các loại cảnh báo phổ biến liên quan đến phông chữ trong Aspose.Words là gì?
+Không, bạn chỉ có thể chỉ định một phông chữ mặc định để thay thế. Tuy nhiên, bạn có thể định cấu hình nhiều nguồn phông chữ dự phòng.
 
-Trả lời: Một số loại cảnh báo phổ biến liên quan đến phông chữ trong Aspose.Words là:
-- Thiếu phông chữ
-- Phông chữ thay thế
-- Vấn đề về định dạng phông chữ
+### Câu hỏi 2: Tôi có thể nhận bản dùng thử miễn phí Aspose.Words cho .NET ở đâu?
 
-#### Hỏi: Làm cách nào tôi có thể khắc phục sự cố liên quan đến phông chữ trong tài liệu Word của mình?
+ Bạn có thể tải xuống bản dùng thử miễn phí từ[Trang dùng thử miễn phí](https://releases.aspose.com/).
 
-Đáp: Để khắc phục các sự cố liên quan đến phông chữ trong tài liệu Word, bạn có thể thực hiện các bước sau:
-- Cài đặt các phông chữ bị thiếu trên hệ thống nơi bạn đang chạy ứng dụng Aspose.Words.
-- Sử dụng phông chữ thay thế thích hợp trông giống với phông chữ gốc.
-- Kiểm tra và điều chỉnh định dạng phông chữ để đảm bảo giao diện nhất quán.
+###  Câu hỏi 3: Tôi có thể xử lý các loại cảnh báo khác bằng`IWarningCallback`?
 
-#### Câu hỏi: Tại sao việc nhận thông báo cảnh báo liên quan đến phông chữ trong Aspose.Words lại quan trọng?
+ Vâng`IWarningCallback` Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
 
-Đáp: Điều quan trọng là nhận được thông báo cảnh báo liên quan đến phông chữ trong Aspose.Words vì chúng giúp bạn xác định các sự cố tiềm ẩn trong tài liệu của mình. Điều này cho phép bạn thực hiện các bước cần thiết để giải quyết những vấn đề này và đảm bảo chất lượng tài liệu của bạn.
+### Câu hỏi 4: Tôi có thể tìm hỗ trợ cho Aspose.Words ở đâu?
 
-#### Câu hỏi: Làm cách nào tôi có thể bật hoặc tắt thông báo cảnh báo trong Aspose.Words?
+ Tham quan[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
 
- Trả lời: Để bật hoặc tắt thông báo cảnh báo trong Aspose.Words, bạn có thể sử dụng`FontSettings.ShowFontWarnings` thuộc tính và đặt nó thành`true` hoặc`false`tùy thuộc vào nhu cầu của bạn. Khi được bật, bạn sẽ nhận được thông báo cảnh báo liên quan đến phông chữ.
+### Câu hỏi 5: Có thể xin giấy phép tạm thời cho Aspose.Words không?
+
+ Có, bạn có thể xin giấy phép tạm thời từ[trang giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).

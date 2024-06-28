@@ -24,14 +24,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Paso 2: cargue el documento
-Cargue el documento de Word que contiene el dibujo Smart Art usando el`Document` constructor de clases.
+ Cargue el documento de Word que contiene el dibujo Smart Art usando el`Document` constructor de clases.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Paso 3: actualice el dibujo de Smart Art
- Iterar a través de las formas en el documento usando el`GetChildNodes` método con el`NodeType.Shape` parámetro. Compruebe si cada forma tiene Smart Art usando el`HasSmartArt` propiedad, y si es cierto, llame a la`UpdateSmartArtDrawing` método para actualizar el dibujo Smart Art.
+ Iterar a través de las formas en el documento usando el`GetChildNodes` método con el`NodeType.Shape` parámetros. Compruebe si cada forma tiene Smart Art usando el`HasSmartArt` propiedad, y si es cierto, llame a la`UpdateSmartArtDrawing` método para actualizar el dibujo Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

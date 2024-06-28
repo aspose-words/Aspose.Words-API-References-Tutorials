@@ -58,7 +58,7 @@ Az, hogy a formázás megmarad-e az átalakítás során, a használt eszköztő
 
 #### Milyen korlátai vannak az átalakítási folyamatnak?
 
-Az átalakítási folyamat korlátai a használt eszköztől vagy könyvtártól függenek. Egyes eszközöknek korlátozásai lehetnek a szövegfájlba ágyazott összetett formázással, táblázatokkal vagy képekkel kapcsolatban. Fontos, hogy teljes mértékben megértsük a választott eszköz jellemzőit és korlátait, hogy megalapozott döntéseket hozhassunk a konvertálás során.
+Az átalakítási folyamat korlátai a használt eszköztől vagy könyvtártól függenek. Egyes eszközökhöz kapcsolódó korlátozások vonatkozhatnak a szövegfájlba ágyazott összetett formázásra, táblázatokra vagy képekre. Fontos, hogy teljes mértékben megértsük a választott eszköz jellemzőit és korlátait, hogy megalapozott döntéseket hozhassunk a konvertálás során.
 
 #### Az Aspose megbízható eszköz a szöveges fájlok Word-dokumentummá konvertálására?
 

@@ -91,12 +91,12 @@ Sinta-se à vontade para usar este código em seus próprios projetos e modific�
 
 #### P: Como posso reiniciar uma lista em cada seção do Aspose.Words?
 
- R: Para reiniciar uma lista em cada seção do Aspose.Words, você precisa criar uma instância do`List` classe e atribua uma lista numerada a ela. Então você pode usar o`List.IsRestartAtEachSection` propriedade para especificar que a numeração deve ser reiniciada em cada seção. Você pode associar esta lista a uma ou mais seções do seu documento para que a numeração seja reiniciada corretamente a cada seção.
+ R: Para reiniciar uma lista em cada seção do Aspose.Words, você precisa criar uma instância do`List`classe e atribua uma lista numerada a ela. Então você pode usar o`List.IsRestartAtEachSection` propriedade para especificar que a numeração deve ser reiniciada em cada seção. Você pode associar esta lista a uma ou mais seções do seu documento para que a numeração seja reiniciada corretamente a cada seção.
 
 #### P: Posso personalizar o formato de numeração das listas no Aspose.Words?
 
-R: Sim, você pode personalizar o formato de numeração das listas no Aspose.Words. O`List` class oferece diversas propriedades para isso, como`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, etc. Você pode usar essas propriedades para definir o tipo de lista (numerada, com marcadores, etc.), formato de numeração (algarismos arábicos, algarismos romanos, letras, etc.) e outras opções de formatação de numeração.
+ R: Sim, você pode personalizar o formato de numeração das listas no Aspose.Words. O`List` class oferece diversas propriedades para isso, como`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, etc. Você pode usar essas propriedades para definir o tipo de lista (numerada, com marcadores, etc.), formato de numeração (algarismos arábicos, algarismos romanos, letras, etc.) e outras opções de formatação de numeração.
 
 #### P: É possível adicionar níveis adicionais a uma lista numerada no Aspose.Words?
 
- R: Sim, é possível adicionar níveis adicionais a uma lista numerada no Aspose.Words. O`ListLevel` class permite definir propriedades de formatação para cada nível da lista. Você pode definir opções como prefixo, sufixo, alinhamento, recuo, etc. Isso permite criar listas com vários níveis de hierarquia.
+ R: Sim, é possível adicionar níveis adicionais a uma lista numerada no Aspose.Words. O`ListLevel`class permite definir propriedades de formatação para cada nível da lista. Você pode definir opções como prefixo, sufixo, alinhamento, recuo, etc. Isso permite criar listas com vários níveis de hierarquia.

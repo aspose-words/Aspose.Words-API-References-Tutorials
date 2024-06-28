@@ -1,6 +1,6 @@
 ---
-title: قبول المراجعات
-linktitle: قبول المراجعات
+title: قبول التقييمات
+linktitle: قبول التقييمات
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
 description: تعرف على كيفية قبول المراجعات على مستند Word باستخدام Aspose.Words لـ .NET
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// تتم إزالة فقرة حذف المراجعة بمجرد قبول التغييرات.
+// تتم إزالة فقرة المراجعة المحذوفة بمجرد قبول التغييرات.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

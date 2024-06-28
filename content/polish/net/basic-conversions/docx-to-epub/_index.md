@@ -53,7 +53,7 @@ Aby przekonwertować plik DOCX na EPUB, można skorzystać z różnych narzędzi
 
 #### Jakie są ograniczenia procesu konwersji?
 
-Ograniczenia procesu konwersji zależą od konkretnego narzędzia lub biblioteki, z której korzystasz. Niektóre narzędzia mogą mieć ograniczenia związane z rozmiarem lub złożonością dokumentu wejściowego. Ważne jest, aby wybrać narzędzie, które sprosta wymaganiom zadania konwersji.
+Ograniczenia procesu konwersji zależą od konkretnego narzędzia lub biblioteki, z której korzystasz. Niektóre narzędzia mogą mieć powiązane ograniczenia dotyczące rozmiaru lub złożoności dokumentu wejściowego. Ważne jest, aby wybrać narzędzie, które sprosta wymaganiom zadania konwersji.
 
 #### Czy mogę zachować formatowanie oryginalnego dokumentu?
 

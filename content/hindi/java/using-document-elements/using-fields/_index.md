@@ -32,7 +32,7 @@ Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 
 ## 4. मेल मर्ज को अनुकूलित करना
 
-जावा के लिए Aspose.Words मेल मर्ज संचालन के लिए उत्कृष्ट समर्थन प्रदान करता है। आप मेल मर्ज ईवेंट हैंडलर सेट करके मेल मर्ज प्रक्रिया को अनुकूलित कर सकते हैं। इसे करने का तरीका यहां बताया गया है:
+जावा के लिए Aspose.Words मेल मर्ज संचालन के लिए उत्कृष्ट समर्थन प्रदान करता है। आप मेल मर्ज ईवेंट हैंडलर सेट करके मेल मर्ज प्रक्रिया को अनुकूलित कर सकते हैं। यह कैसे करना है यहां बताया गया है:
 
 ```java
 // कस्टम कार्य करने के लिए मेल मर्ज इवेंट हैंडलर सेटअप करें।
@@ -215,7 +215,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         dataTable.getColumns().add("FullName");
         dataTable.getRows().add("James Bond");
         doc.getMailMerge().execute(dataTable);
-        // परिणाम दस्तावेज़ में दिखाई नहीं देगा क्योंकि IF फ़ील्ड ग़लत है,
+        // परिणाम दस्तावेज़ में दिखाई नहीं देगा क्योंकि IF फ़ील्ड गलत है,
         // लेकिन आंतरिक MERGEFIELD को वास्तव में डेटा प्राप्त हुआ।
         doc.save("Your Directory Path" + "WorkingWithFields.MailMergeAndConditionalField.docx");
     }
@@ -357,7 +357,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 
 बधाई हो! आपने सीखा है कि Word दस्तावेज़ों में गतिशील रूप से हेरफेर करने के लिए जावा के लिए Aspose.Words में फ़ील्ड का उपयोग कैसे करें। यह शक्तिशाली एपीआई आपको अपने दस्तावेज़ों पर पूर्ण नियंत्रण प्रदान करता है, जिससे यह जावा डेवलपर्स के लिए एक मूल्यवान संपत्ति बन जाती है।
 
-## 7. अक्सर पूछे जाने वाले प्रश्न
+## 7.अक्सर पूछे जाने वाले प्रश्न
 
 ### Q1: मैं जावा के लिए Aspose.Words कहां से डाउनलोड कर सकता हूं?
  आप जावा के लिए Aspose.Words डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/).

@@ -69,7 +69,7 @@ So sánh các tài liệu để tìm sự khác biệt bằng Aspose.Words cho J
 
 ### Làm cách nào để cài đặt Aspose.Words cho Java?
 
- Để cài đặt Aspose.Words cho Java, hãy truy cập trang tải xuống[đây](https://releases.aspose.com/words/java/) và làm theo hướng dẫn cài đặt được cung cấp.
+ Để cài đặt Aspose.Words cho Java, hãy truy cập trang tải xuống.[đây](https://releases.aspose.com/words/java/) và làm theo hướng dẫn cài đặt được cung cấp.
 
 ### Tôi có thể so sánh các tài liệu có định dạng khác nhau như DOCX và PDF không?
 

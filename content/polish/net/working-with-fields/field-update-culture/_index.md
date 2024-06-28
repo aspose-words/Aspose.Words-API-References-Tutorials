@@ -77,7 +77,7 @@ Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Aktualiz
 
 #### P: Jaka jest kultura aktualizacji pól w Aspose.Words?
 
-O: Kultura aktualizacji pól w Aspose.Words odnosi się do kultury używanej do formatowania i aktualizowania wartości pól w dokumencie programu Word. Kultura określa sposób prezentowania liczb, dat i innych danych w polach podczas ich aktualizacji.
+Odp.: Kultura aktualizacji pól w Aspose.Words odnosi się do kultury używanej do formatowania i aktualizowania wartości pól w dokumencie Word. Kultura określa sposób prezentowania liczb, dat i innych danych w polach podczas ich aktualizacji.
 
 #### P: Jak ustawić kulturę aktualizacji pól w dokumencie programu Word za pomocą Aspose.Words?
 

@@ -1,7 +1,7 @@
 ---
 title: Verwendung der Markdown-Formatierung in Word-Dokumenten
 linktitle: Verwendung der Markdown-Formatierung in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Markdown-Formatierungen in Word-Dokumente integrieren. Schritt-für-Schritt-Anleitung mit Codebeispielen für eine dynamische und optisch ansprechende Inhaltserstellung.
 type: docs
 weight: 19

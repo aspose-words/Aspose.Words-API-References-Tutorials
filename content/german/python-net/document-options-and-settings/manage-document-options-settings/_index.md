@@ -1,7 +1,7 @@
 ---
 title: Optimieren Sie Dokumentoptionen und -einstellungen für mehr Effizienz
 linktitle: Optimieren Sie Dokumentoptionen und -einstellungen für mehr Effizienz
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für Python effizient bearbeiten. Schritt-für-Schritt-Anleitung mit Quellcode.
 type: docs
 weight: 11

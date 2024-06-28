@@ -91,12 +91,12 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şe
 
 #### S: Aspose.Words'ün her bölümündeki bir listeyi nasıl yeniden başlatabilirim?
 
- C: Aspose.Words'ün her bölümünde bir listeyi yeniden başlatmak için listenin bir örneğini oluşturmanız gerekir.`List` sınıfa numaralandırılmış bir liste atayın. Daha sonra şunu kullanabilirsiniz:`List.IsRestartAtEachSection` Numaralandırmanın her bölümde yeniden başlatılması gerektiğini belirten özellik. Numaralandırmanın her bölümde doğru şekilde yeniden başlatılması için bu listeyi belgenizin bir veya daha fazla bölümüyle ilişkilendirebilirsiniz.
+ C: Aspose.Words'ün her bölümünde bir listeyi yeniden başlatmak için listenin bir örneğini oluşturmanız gerekir.`List`sınıfa numaralandırılmış bir liste atayın. Daha sonra şunu kullanabilirsiniz:`List.IsRestartAtEachSection` Numaralandırmanın her bölümde yeniden başlatılması gerektiğini belirten özellik. Numaralandırmanın her bölümde doğru şekilde yeniden başlatılması için bu listeyi belgenizin bir veya daha fazla bölümüyle ilişkilendirebilirsiniz.
 
 #### S: Aspose.Words'te listelerin numaralandırma formatını özelleştirebilir miyim?
 
-C: Evet, Aspose.Words'te listelerin numaralandırma formatını özelleştirebilirsiniz.`List` class bunun için çeşitli özellikler sunar, örneğin`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`Liste türünü (numaralandırılmış, madde işaretli vb.), numaralandırma biçimini (Arap rakamları, Romen rakamları, harfler vb.) ve diğer numaralandırma biçimlendirme seçeneklerini ayarlamak için bu özellikleri kullanabilirsiniz.
+ C: Evet, Aspose.Words'te listelerin numaralandırma formatını özelleştirebilirsiniz.`List` class bunun için çeşitli özellikler sunar, örneğin`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`Liste türünü (numaralandırılmış, madde işaretli vb.), numaralandırma biçimini (Arap rakamları, Romen rakamları, harfler vb.) ve diğer numaralandırma biçimlendirme seçeneklerini ayarlamak için bu özellikleri kullanabilirsiniz.
 
 #### S: Aspose.Words'te numaralandırılmış bir listeye ek seviyeler eklemek mümkün müdür?
 
- C: Evet, Aspose.Words'te numaralandırılmış bir listeye ek seviyeler eklemek mümkündür.`ListLevel` class, listenin her düzeyi için biçimlendirme özelliklerini ayarlamanıza olanak tanır. Önek, sonek, hizalama, girinti vb. seçenekleri ayarlayabilirsiniz. Bu, birden fazla hiyerarşi düzeyine sahip listeler oluşturmanıza olanak tanır.
+ C: Evet, Aspose.Words'te numaralandırılmış bir listeye ek seviyeler eklemek mümkündür.`ListLevel`class, listenin her düzeyi için biçimlendirme özelliklerini ayarlamanıza olanak tanır. Önek, sonek, hizalama, girinti vb. seçenekleri ayarlayabilirsiniz. Bu, birden fazla hiyerarşi düzeyine sahip listeler oluşturmanıza olanak tanır.

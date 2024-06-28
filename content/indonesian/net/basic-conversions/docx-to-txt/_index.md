@@ -57,4 +57,4 @@ Masalah pengkodean dapat muncul saat mengonversi DOCX ke TXT karena perbedaan pe
 
 #### Apa keterbatasan proses konversi?
 
-Batasan proses konversi bergantung pada alat atau pustaka spesifik yang Anda gunakan. Beberapa alat mungkin memiliki batasan terkait fitur yang didukung, pemformatan kompleks, atau elemen tertentu dari file DOCX. Penting untuk memahami keterbatasan alat yang dipilih dan menilai apakah alat tersebut sesuai dengan kebutuhan konversi Anda.
+Batasan proses konversi bergantung pada alat atau pustaka spesifik yang Anda gunakan. Beberapa alat mungkin memiliki batasan terkait dengan fitur yang didukung, pemformatan rumit, atau elemen tertentu dari file DOCX. Penting untuk memahami keterbatasan alat yang dipilih dan menilai apakah alat tersebut sesuai dengan kebutuhan konversi Anda.

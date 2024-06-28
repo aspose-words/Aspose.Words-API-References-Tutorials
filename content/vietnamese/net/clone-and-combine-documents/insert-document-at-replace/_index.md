@@ -2,87 +2,166 @@
 title: Chèn tài liệu vào thay thế
 linktitle: Chèn tài liệu vào thay thế
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chèn tài liệu thay thế bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách chèn liền mạch một tài liệu Word vào một tài liệu Word khác bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển muốn hợp lý hóa việc xử lý tài liệu.
 type: docs
 weight: 10
 url: /vi/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách chèn tài liệu vào tài liệu khác khi thay thế bằng tính năng Chèn tài liệu khi thay thế của Aspose.Words cho .NET. Thực hiện theo các bước bên dưới để hiểu mã nguồn và thực hiện chèn tài liệu.
+## Giới thiệu
 
-## Bước 1: Tải tài liệu chính
+Này, các chuyên gia tài liệu! Bạn đã bao giờ thấy mình đắm chìm trong mã nguồn, cố gắng tìm ra cách chèn một tài liệu Word vào một tài liệu Word khác một cách liền mạch chưa? Đừng lo, vì hôm nay chúng ta sẽ đi sâu vào thế giới Aspose.Words dành cho .NET để thực hiện công việc đó một cách dễ dàng. Chúng tôi sẽ hướng dẫn chi tiết từng bước về cách sử dụng thư viện mạnh mẽ này để chèn tài liệu vào các điểm cụ thể trong quá trình tìm và thay thế. Bạn đã sẵn sàng trở thành chuyên gia Aspose.Words chưa? Bắt đầu nào!
 
-Để bắt đầu, hãy chỉ định thư mục cho tài liệu của bạn và tải tài liệu chính vào đối tượng Tài liệu. Đây là cách thực hiện:
+## Điều kiện tiên quyết
+
+Trước khi chúng ta bắt đầu viết mã, có một số điều bạn cần phải chuẩn bị sẵn:
+
+-  Visual Studio: Đảm bảo bạn đã cài đặt Visual Studio trên máy của mình. Nếu bạn chưa có nó, bạn có thể tải xuống từ[đây](https://visualstudio.microsoft.com/).
+-  Aspose.Words for .NET: Bạn sẽ cần thư viện Aspose.Words. Bạn có thể lấy nó từ[trang web giả định](https://releases.aspose.com/words/net/).
+- Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# và .NET sẽ giúp bạn làm theo hướng dẫn này.
+
+Được rồi, bỏ những thứ đó đi, hãy bắt tay vào thực hiện một số mã!
+
+## Nhập không gian tên
+
+Trước tiên, chúng ta cần nhập các không gian tên cần thiết để hoạt động với Aspose.Words. Điều này giống như thu thập tất cả các công cụ của bạn trước khi bắt đầu một dự án. Thêm các lệnh sử dụng này vào đầu tệp C# của bạn:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using Aspose.Words.Tables;
 ```
 
-## Bước 2: Định cấu hình tùy chọn tìm kiếm và thay thế
+Bây giờ chúng ta đã có các điều kiện tiên quyết, hãy chia quy trình thành các bước vừa phải. Mỗi bước đều quan trọng và sẽ đưa chúng ta đến gần hơn với mục tiêu của mình.
 
-Bây giờ chúng ta sẽ định cấu hình các tùy chọn tìm và thay thế bằng cách chỉ định hướng tìm kiếm và gọi lại thay thế để chèn tài liệu vào tài liệu khác. Đây là cách thực hiện:
+## Bước 1: Thiết lập thư mục tài liệu
 
-```csharp
-// Định cấu hình tùy chọn tìm kiếm và thay thế.
-FindReplaceOptions options = new FindReplaceOptions
-{
-Direction = FindReplaceDirection.Backward,
-ReplacingCallback = new InsertDocumentAtReplaceHandler()
-};
-```
-
-## Bước 3: Gọi phương thức thay thế
-
-Bây giờ chúng ta sẽ gọi phương thức thay thế để tìm và thay thế văn bản đã chỉ định bằng một chuỗi trống, sử dụng các tùy chọn đã định cấu hình. Đây là cách thực hiện:
+Đầu tiên, chúng ta cần chỉ định thư mục lưu trữ tài liệu của chúng ta. Điều này giống như việc chuẩn bị sân khấu trước buổi biểu diễn lớn.
 
 ```csharp
-mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-```
-
-### Mã nguồn ví dụ cho Chèn tài liệu tại Thay thế bằng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh cho tính năng Chèn Tài liệu khi thay thế Aspose.Words cho .NET:
-
-```csharp
-// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
-// Đặt tùy chọn tìm và thay thế.
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn đến thư mục của bạn. Đây là nơi tài liệu của bạn sẽ sống và thở.
+
+## Bước 2: Tải tài liệu chính
+
+Tiếp theo, chúng tôi tải tài liệu chính mà chúng tôi muốn chèn tài liệu khác vào. Hãy coi đây là giai đoạn chính của chúng ta, nơi tất cả hành động sẽ diễn ra.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+Mã này tải tài liệu chính từ thư mục được chỉ định.
+
+## Bước 3: Đặt tùy chọn tìm và thay thế
+
+Để tìm vị trí cụ thể mà chúng tôi muốn chèn tài liệu của mình, chúng tôi sử dụng chức năng tìm và thay thế. Điều này giống như sử dụng bản đồ để tìm vị trí chính xác cho phần bổ sung mới của chúng tôi.
+
+```csharp
 FindReplaceOptions options = new FindReplaceOptions
 {
-	Direction = FindReplaceDirection.Backward, 
-	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+    Direction = FindReplaceDirection.Backward,
+    ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
+```
 
-// Gọi phương thức thay thế.
+Ở đây, chúng tôi đang đặt hướng lùi và chỉ định trình xử lý gọi lại tùy chỉnh mà chúng tôi sẽ xác định tiếp theo.
+
+## Bước 4: Thực hiện thao tác Thay thế
+
+Bây giờ, chúng tôi yêu cầu tài liệu chính của mình tìm kiếm một văn bản giữ chỗ cụ thể và không thay thế nó bằng gì, trong khi sử dụng lệnh gọi lại tùy chỉnh của chúng tôi để chèn một tài liệu khác.
+
+```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+Mã này thực hiện thao tác tìm và thay thế, sau đó lưu tài liệu đã cập nhật.
+
+## Bước 5: Tạo Trình xử lý gọi lại thay thế tùy chỉnh
+
+Trình xử lý gọi lại tùy chỉnh của chúng tôi là nơi điều kỳ diệu xảy ra. Trình xử lý này sẽ xác định cách thực hiện chèn tài liệu trong quá trình tìm và thay thế.
+
+```csharp
+private class InsertDocumentAtReplaceHandler : IReplacingCallback
+{
+    ReplaceAction IReplacingCallback.Replacing(ReplacingArgs args)
+    {
+        Document subDoc = new Document(dataDir + "Document insertion 2.docx");
+
+        // Chèn tài liệu sau đoạn văn có chứa văn bản trùng khớp.
+        Paragraph para = (Paragraph)args.MatchNode.ParentNode;
+        InsertDocument(para, subDoc);
+
+        // Xóa đoạn văn có văn bản trùng khớp.
+        para.Remove();
+        return ReplaceAction.Skip;
+    }
+}
+```
+
+Ở đây, chúng ta tải tài liệu cần chèn và sau đó gọi một phương thức trợ giúp để thực hiện thao tác chèn.
+
+## Bước 6: Xác định phương pháp chèn tài liệu
+
+Phần cuối cùng của câu đố của chúng ta là phương pháp thực sự chèn tài liệu vào vị trí đã chỉ định.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+	{
+		CompositeNode destinationParent = insertionDestination.ParentNode;
+
+		NodeImporter importer =
+			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+		// Lặp qua tất cả các nút cấp khối trong phần thân của phần,
+		// sau đó sao chép và chèn mọi nút không phải là đoạn trống cuối cùng của một phần.
+		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+		foreach (Node srcNode in srcSection.Body)
+		{
+			if (srcNode.NodeType == NodeType.Paragraph)
+			{
+				Paragraph para = (Paragraph)srcNode;
+				if (para.IsEndOfSection && !para.HasChildNodes)
+					continue;
+			}
+
+			Node newNode = importer.ImportNode(srcNode, true);
+
+			destinationParent.InsertAfter(newNode, insertionDestination);
+			insertionDestination = newNode;
+		}
+	}
+	else
+	{
+		throw new ArgumentException("The destination node should be either a paragraph or table.");
+	}
+}
+```
+
+Phương pháp này đảm nhiệm việc nhập các nút từ tài liệu cần chèn và đặt chúng vào đúng vị trí trong tài liệu chính.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã khám phá cách chèn tài liệu vào tài liệu khác trong quá trình thay thế bằng cách sử dụng tính năng Chèn Tài liệu Khi Thay thế của Aspose.Words cho .NET. Bằng cách định cấu hình các tùy chọn tìm và thay thế cũng như cung cấp dữ liệu cần thiết, bạn có thể tập hợp các tài liệu một cách linh hoạt bằng cách thay thế các phần giữ chỗ cụ thể bằng nội dung của các phần hoặc mẫu tài liệu khác. Aspose.Words for .NET cung cấp một cách mạnh mẽ và linh hoạt để quản lý các tác vụ thao tác tài liệu phức tạp, biến nó thành một công cụ có giá trị để tự động hóa các kịch bản tạo tài liệu và chèn nội dung.
+Và bạn có nó rồi đấy! Hướng dẫn toàn diện để chèn tài liệu này vào tài liệu khác bằng Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể dễ dàng tự động hóa các tác vụ thao tác và lắp ráp tài liệu. Cho dù bạn đang xây dựng một hệ thống quản lý tài liệu hay chỉ cần hợp lý hóa quy trình xử lý tài liệu của mình, Aspose.Words là người bạn đồng hành đáng tin cậy của bạn.
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Hỏi: Mục đích của việc chèn tài liệu vào tài liệu khác trong quá trình thay thế là gì?
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ để thao tác các tài liệu Word theo chương trình. Nó cho phép bạn tạo, sửa đổi, chuyển đổi và xử lý tài liệu Word một cách dễ dàng.
 
-Đáp: Việc chèn tài liệu vào một tài liệu khác trong quá trình thay thế cho phép bạn thay thế động một trình giữ chỗ cụ thể bằng nội dung của một tài liệu riêng biệt. Tính năng này đặc biệt hữu ích khi bạn muốn tập hợp một tài liệu lớn hơn bằng cách kết hợp nhiều mẫu hoặc phần tài liệu được xác định trước vào các phần giữ chỗ cụ thể.
+### Tôi có thể chèn nhiều tài liệu cùng một lúc không?
+Có, bạn có thể sửa đổi trình xử lý gọi lại để xử lý nhiều phần chèn bằng cách lặp lại một tập hợp tài liệu.
 
-#### Câu hỏi: Làm cách nào để chèn tài liệu vào tài liệu khác trong khi thay thế bằng Aspose.Words cho .NET?
+### Có bản dùng thử miễn phí không?
+ Tuyệt đối! Bạn có thể tải xuống bản dùng thử miễn phí từ[đây](https://releases.aspose.com/).
 
-Trả lời: Để chèn tài liệu vào tài liệu khác trong quá trình thay thế bằng Aspose.Words cho .NET, hãy làm theo các bước sau:
-1. Tải tài liệu chính chứa phần giữ chỗ vào đối tượng Tài liệu.
-2. Định cấu hình các tùy chọn tìm và thay thế, bao gồm lệnh gọi lại hướng tìm kiếm và thay thế để xử lý việc chèn tài liệu.
-3. Gọi phương thức thay thế bằng mẫu tìm kiếm thích hợp, thay thế phần giữ chỗ bằng một chuỗi trống, sử dụng các tùy chọn đã định cấu hình.
+### Làm cách nào để nhận được hỗ trợ cho Aspose.Words?
+Bạn có thể nhận được hỗ trợ bằng cách truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8).
 
-#### Câu hỏi: Tôi có thể tùy chỉnh hành vi chèn trong khi thay thế không?
-
-Trả lời: Có, bạn có thể tùy chỉnh hành vi chèn trong quá trình thay thế bằng cách triển khai ReplacingCallback tùy chỉnh. Bằng cách kế thừa từ giao diện IReplacesCallback, bạn có thể kiểm soát cách các tài liệu được chèn và hợp nhất dựa trên các yêu cầu cụ thể của bạn khi thay thế phần giữ chỗ.
-
-#### Câu hỏi: Tôi có thể thay thế nhiều phần giữ chỗ bằng các tài liệu khác nhau không?
-
-Đáp: Có, bạn có thể thay thế nhiều phần giữ chỗ bằng các tài liệu khác nhau bằng cách chỉ định các mẫu tìm kiếm thích hợp cho từng phần giữ chỗ và cung cấp các tài liệu tương ứng để chèn vào.
+### Tôi có thể giữ nguyên định dạng của tài liệu được chèn không?
+ Vâng`NodeImporter`lớp cho phép bạn chỉ định cách xử lý định dạng khi nhập các nút từ tài liệu này sang tài liệu khác.

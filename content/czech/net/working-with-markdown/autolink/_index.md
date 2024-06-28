@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-markdown/autolink/
 ---
 
-tomto příkladu vysvětlíme, jak používat funkci "Autolink" s Aspose.Words for .NET. Tato funkce umožňuje vkládat hypertextové odkazy do dokumentu automaticky.
+V tomto příkladu vysvětlíme, jak používat funkci "Autolink" s Aspose.Words pro .NET. Tato funkce umožňuje vkládat hypertextové odkazy do dokumentu automaticky.
 
 ## Krok 1: Použití generátoru dokumentů
 
@@ -58,7 +58,7 @@ gratuluji! Nyní jste se naučili, jak používat funkci "Autolink" s Aspose.Wor
 
 #### Otázka: Jak mohu vytvořit automatický odkaz na URL adresu v Aspose.Words?
 
-A: Chcete-li vytvořit automatický odkaz na URL adresu v Aspose.Words, můžete použít`<a>` značka s`href` atribut obsahující adresu URL. Můžete například použít`<a href="https://www.aspose.com">https://www.aspose.com</a>` automaticky odkazovat na „https: //www.aspose.com“.
+ A: Chcete-li vytvořit automatický odkaz na URL adresu v Aspose.Words, můžete použít`<a>` značka s`href` atribut obsahující adresu URL. Můžete například použít`<a href="https://www.aspose.com">https://www.aspose.com</a>` automaticky odkazovat na „https: //www.aspose.com“.
 
 #### Otázka: Je možné upravit zobrazovaný text automatického odkazu v Aspose.Words?
 
@@ -66,4 +66,4 @@ A: Chcete-li vytvořit automatický odkaz na URL adresu v Aspose.Words, můžete
 
 #### Otázka: Jak mohu přidat další atributy k automatickému odkazu v Aspose.Words?
 
- A: Chcete-li přidat další atributy k automatickému odkazu v Aspose.Words, můžete použít další atributy HTML uvnitř`<a>` štítek. Můžete například použít`<a href="https://www.aspose.com" target="_blank">Link</a>` pro otevření odkazu v novém okně nebo na kartě pomocí` attribute target="_blank"`.
+A: Chcete-li přidat další atributy k automatickému odkazu v Aspose.Words, můžete použít další atributy HTML uvnitř`<a>` štítek. Můžete například použít`<a href="https://www.aspose.com" target="_blank">Link</a>` pro otevření odkazu v novém okně nebo na kartě pomocí` attribute target="_blank"`.

@@ -92,7 +92,7 @@ Vous pouvez personnaliser l'apparence des champs de formulaire, par exemple en a
    Vous pouvez personnaliser l'apparence des champs de formulaire en ajustant la taille de la police, la couleur et d'autres options de formatage.
 
 4. ### Existe-t-il un essai gratuit disponible pour Aspose.Words pour Java ?
-    Oui, vous pouvez accéder à un essai gratuit d'Aspose.Words pour Java[ici](https://releases.aspose.com/).
+    Oui, vous pouvez accéder à un essai gratuit d’Aspose.Words pour Java.[ici](https://releases.aspose.com/).
 
 5. ### Où puis-je obtenir de l'aide pour Aspose.Words pour Java ?
     Pour obtenir de l’aide et de l’aide, visitez le[Forum Aspose.Words](https://forum.aspose.com/).

@@ -2,7 +2,7 @@
 title: تحديد الخط الافتراضي عند العرض
 linktitle: تحديد الخط الافتراضي عند العرض
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لتحديد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words لـ .NET.
+description: دليل خطوة بخطوة لتحديد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/working-with-fonts/specify-default-font-when-rendering/

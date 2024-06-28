@@ -14,7 +14,7 @@ Pemrosesan Kata dengan Markdown menyediakan sumber daya komprehensif untuk mempe
 | Judul | Keterangan |
 | --- | --- |
 | [Teks tebal](./bold-text/) | Pelajari cara menebalkan teks dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Teks Miring](./italic-text/) | Pelajari cara membuat teks miring dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
+| [Teks Italia](./italic-text/) | Pelajari cara membuat teks miring dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
 | [Dicoret](./strikethrough/) | Pelajari cara menerapkan gaya teks coretan dengan Aspose.Words for .NET Panduan langkah demi langkah. |
 | [Kode Sebaris](./inline-code/) | Pelajari cara menyejajarkan kode dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
 | [Tautan otomatis](./autolink/) | Pelajari cara menyisipkan tautan otomatis dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
@@ -22,7 +22,7 @@ Pemrosesan Kata dengan Markdown menyediakan sumber daya komprehensif untuk mempe
 | [Gambar](./image/) | Pelajari cara menyisipkan dan menyesuaikan gambar dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
 | [Aturan Horisontal](./horizontal-rule/) | Pelajari cara menyisipkan aturan horizontal dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
 | [Menuju](./heading/) | Pelajari cara menggunakan heading dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Judul Seteks](./setext-heading/) | Pelajari cara menggunakan judul Setext untuk memformat dokumen Anda dengan Aspose.Words for .NET Panduan langkah demi langkah. |
+| [Pos Setex](./setext-heading/) | Pelajari cara menggunakan judul Setext untuk memformat dokumen Anda dengan Aspose.Words for .NET Panduan langkah demi langkah. |
 | [Kode Indentasi](./indented-code/) | Pelajari cara menggunakan kode indentasi dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
 | [Kode Berpagar](./fenced-code/) | Pelajari cara menggunakan fitur kode berpagar dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
 | [Mengutip](./quote/) | Pelajari cara menggunakan kutipan dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |

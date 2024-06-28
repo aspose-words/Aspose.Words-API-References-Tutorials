@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Sayfa Numarası Dönüşümüyle Ekle
+### Sayfa Numarası Dönüşümleriyle Ekle
 
 ```java
 Document srcDoc = new Document("source.docx");

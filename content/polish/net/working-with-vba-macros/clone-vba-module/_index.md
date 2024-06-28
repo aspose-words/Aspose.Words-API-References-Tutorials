@@ -81,7 +81,7 @@ Odp.: Zanim będzie można sklonować moduł VBA z dokumentu programu Word, nale
 
 #### P: Jak ustawić katalog dokumentów w kodzie?
 
- Odp.: w dostarczonym kodzie musisz wymienić`"YOUR DOCUMENTS DIRECTORY"` z odpowiednią ścieżką do katalogu, w którym znajduje się Twój dokument Word zawierający projekt VBA.
+ Odp.: w dostarczonym kodzie musisz wymienić.`"YOUR DOCUMENTS DIRECTORY"` z odpowiednią ścieżką do katalogu, w którym znajduje się Twój dokument Word zawierający projekt VBA.
 
 #### P: Jak zapisać dokument docelowy ze sklonowanym modułem VBA?
 

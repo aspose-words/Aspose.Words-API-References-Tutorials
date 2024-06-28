@@ -10,7 +10,7 @@ url: /zh/java/document-conversion-and-export/using-charts/
 
 ## 在 Aspose.Words for Java 中使用图表简介
 
-在本教程中，我们将探索如何使用 Aspose.Words for Java 处理图表。您将学习如何创建各种类型的图表、自定义轴属性、设置数据标签格式等。让我们深入了解一下吧！
+在本教程中，我们将探索如何使用 Aspose.Words for Java 处理图表。您将学习如何创建各种类型的图表、自定义轴属性、设置数据标签格式等。让我们深入了解吧！
 
 ## 创建折线图
 

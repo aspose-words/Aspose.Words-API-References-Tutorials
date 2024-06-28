@@ -67,4 +67,4 @@ W tym samouczku zbadaliśmy funkcję rozpoznawania tekstu Utf-8 z opcjami ładow
 
 Ta funkcja jest niezbędna, aby zapewnić prawidłowe wyświetlanie znaków Utf-8 w dokumentach RTF. Konfigurując odpowiednie opcje ładowania, Aspose.Words jest w stanie poprawnie rozpoznać i przetworzyć te znaki, pomagając zachować integralność i jakość tekstu.
 
-Rozpoznawanie tekstu w formacie Utf-8 jest szczególnie ważne podczas przetwarzania słów w określonych językach i zestawach znaków, które wymagają obsługi kodowania Utf-8. Dzięki Aspose.Words dla .NET możesz łatwo manipulować dokumentami RTF zawierającymi znaki Utf-8 bez ryzyka utraty lub uszkodzenia.
+Rozpoznawanie tekstu w formacie Utf-8 jest szczególnie ważne w przypadku przetwarzania słów w określonych językach i zestawach znaków wymagających obsługi kodowania Utf-8. Dzięki Aspose.Words dla .NET możesz łatwo manipulować dokumentami RTF zawierającymi znaki Utf-8 bez ryzyka utraty lub uszkodzenia.

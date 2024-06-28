@@ -56,7 +56,7 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 	doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 	
 ```
-이 코드를 사용하면 Aspose.Words for .NET을 사용하여 아시아 타이포그래피 줄바꿈 그룹을 적용할 수 있습니다.
+이 코드를 사용하면 Aspose.Words for .NET을 사용하여 아시아 타이포그래피 줄 바꿈 그룹을 적용할 수 있습니다.
 
 ## 결론
 

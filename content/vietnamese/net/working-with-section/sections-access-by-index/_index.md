@@ -36,7 +36,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Bước 3: Chỉnh sửa cài đặt phần
-Để sửa đổi cài đặt phần, chúng tôi sử dụng các thuộc tính của phần`PageSetup` sự vật. Trong ví dụ này, chúng tôi đang thay đổi lề, khoảng cách đầu trang và chân trang cũng như khoảng cách cột văn bản.
+ Để sửa đổi cài đặt phần, chúng tôi sử dụng các thuộc tính của phần`PageSetup`sự vật. Trong ví dụ này, chúng tôi đang thay đổi lề, khoảng cách đầu trang và chân trang cũng như khoảng cách cột văn bản.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17cm
@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### Câu hỏi: Làm cách nào để thay đổi cài đặt phần trong Aspose.Words cho .NET?
 
- Đáp: Để sửa đổi cài đặt của một phần, bạn có thể sử dụng các thuộc tính của phần đó.`PageSetup` sự vật. Trong ví dụ này, chúng tôi đang thay đổi lề, khoảng cách đầu trang và chân trang cũng như khoảng cách cột văn bản.
+ Đáp: Để sửa đổi cài đặt của một phần, bạn có thể sử dụng các thuộc tính của phần đó.`PageSetup`sự vật. Trong ví dụ này, chúng tôi đang thay đổi lề, khoảng cách đầu trang và chân trang cũng như khoảng cách cột văn bản.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17cm

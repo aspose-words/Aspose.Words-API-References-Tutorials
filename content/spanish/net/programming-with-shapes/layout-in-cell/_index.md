@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Paso 3: construye la mesa
- Utilizar el`StartTable`, `EndTable`, `InsertCell` , y`Write` métodos de la`DocumentBuilder` objeto para construir una mesa. Establezca la altura de fila deseada y la regla de altura usando el`RowFormat` propiedades.
+ Utilizar el`StartTable`, `EndTable`, `InsertCell` , y`Write` métodos de la`DocumentBuilder`objeto para construir una mesa. Establezca la altura de fila deseada y la regla de altura usando el`RowFormat` propiedades.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Paso 6: inserte la forma en el documento
-Inserte la forma de la marca de agua en el documento usando el`InsertNode` método de la`DocumentBuilder` objeto. Coloque la forma usando el`MoveTo` método para colocarlo después de la última ejecución en el documento.
+ Inserte la forma de la marca de agua en el documento usando el`InsertNode` método de la`DocumentBuilder` objeto. Coloque la forma usando el`MoveTo` método para colocarlo después de la última ejecución en el documento.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -137,4 +137,4 @@ doc
 	doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-¡Eso es todo! Ha diseñado con éxito una forma dentro de una celda de una tabla en un documento de Word usando Aspose.Words para .NET.
+¡Eso es todo! Ha diseñado con éxito una forma dentro de una celda de una tabla en un documento de Word utilizando Aspose.Words para .NET.

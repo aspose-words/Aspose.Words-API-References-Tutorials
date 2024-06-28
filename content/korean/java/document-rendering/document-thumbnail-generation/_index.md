@@ -66,7 +66,7 @@ Aspose.Words for Java를 사용한 문서 썸네일 생성은 시각적으로 �
 
 ### Java용 Aspose.Words를 어떻게 설치하나요?
 
- Aspose.Words for Java를 설치하려면 다운로드 페이지를 방문하세요.[여기](https://releases.aspose.com/words/java/) 제공된 설치 지침을 따르십시오.
+ Java용 Aspose.Words를 설치하려면 다운로드 페이지를 방문하세요.[여기](https://releases.aspose.com/words/java/) 제공된 설치 지침을 따르십시오.
 
 ### 생성된 썸네일의 크기를 맞춤설정할 수 있나요?
 

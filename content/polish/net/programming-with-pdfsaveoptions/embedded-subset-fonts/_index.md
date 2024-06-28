@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-To wszystko ! Pomyślnie osadziłeś podzestawy czcionek w dokumencie i wygenerowałeś plik PDF zawierający tylko glify użyte w dokumencie za pomocą Aspose.Words dla .NET.
+To wszystko ! Pomyślnie osadziłeś podzbiory czcionek w dokumencie i wygenerowałeś plik PDF zawierający tylko glify użyte w dokumencie za pomocą Aspose.Words dla .NET.
 
 ### Przykładowy kod źródłowy do osadzania podzbiorów czcionek w Aspose.Words dla .NET
 
@@ -55,7 +55,7 @@ To wszystko ! Pomyślnie osadziłeś podzestawy czcionek w dokumencie i wygenero
 	Document doc = new Document(dataDir + "Rendering.docx");
 
 	// Wyjściowy plik PDF będzie zawierał podzbiory czcionek w dokumencie.
-	// Czcionki PDF uwzględniają tylko glify użyte w dokumencie.
+	// Czcionki PDF uwzględniają wyłącznie glify użyte w dokumencie.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
@@ -69,7 +69,7 @@ W tym samouczku nauczyliśmy się, jak osadzać podzbiory czcionek w dokumencie 
 ### Często Zadawane Pytania
 
 #### P: Na czym polega osadzanie podzbiorów czcionek w dokumencie PDF?
-Odp.: Osadzanie podzbiorów czcionek w dokumencie PDF polega na dołączaniu tylko glifów używanych w dokumencie, a nie wszystkich pełnych czcionek. Zmniejsza to rozmiar pliku PDF, włączając tylko dane czcionki niezbędne do wyświetlenia znaków faktycznie używanych w dokumencie.
+O: Osadzanie podzbiorów czcionek w dokumencie PDF polega na dołączaniu jedynie glifów użytych w dokumencie, a nie wszystkich pełnych czcionek. Zmniejsza to rozmiar pliku PDF, włączając tylko dane czcionki niezbędne do wyświetlenia znaków faktycznie używanych w dokumencie.
 
 #### P: Jaka jest różnica pomiędzy osadzaniem pełnych czcionek a osadzaniem podzbiorów czcionek?
 Odp.: Pełne osadzanie czcionek oznacza włączenie wszystkich czcionek użytych w dokumencie w pliku PDF, co gwarantuje, że dokument będzie wyświetlany dokładnie tak, jak został zaprojektowany, ale może zwiększyć rozmiar pliku PDF. Natomiast osadzanie podzbiorów czcionek zawiera tylko glify użyte w dokumencie, zmniejszając w ten sposób rozmiar pliku PDF, ale ograniczając możliwość dokładnego odtworzenia wyglądu dokumentu w przypadku późniejszego dodania dodatkowych znaków.

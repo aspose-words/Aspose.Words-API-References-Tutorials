@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Skonfiguruj opcje zapisywania jako PDF za pomocą opcji planu
 
- Aby ustawić opcje konspektu w wygenerowanym pliku PDF, musimy skonfigurować plik`PdfSaveOptions` obiekt. Możemy ustawić liczbę poziomów konspektu nagłówka (`HeadingsOutlineLevels`) i liczbę rozwiniętych poziomów konspektu (`ExpandedOutlineLevels`).
+Aby ustawić opcje konspektu w wygenerowanym pliku PDF, musimy skonfigurować plik`PdfSaveOptions` obiekt. Możemy ustawić liczbę poziomów konspektu nagłówka (`HeadingsOutlineLevels`) i liczbę rozwiniętych poziomów konspektu (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

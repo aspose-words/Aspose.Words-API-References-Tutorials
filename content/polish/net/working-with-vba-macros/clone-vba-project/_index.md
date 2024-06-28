@@ -32,7 +32,7 @@ Następnie załadujemy dokument źródłowy Worda, który zawiera projekt VBA, k
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## Krok 3: Utwórz nowy dokument ze sklonowanym projektem VBA
+## Krok 3: Utwórz nowy dokument ze sklonowanym projektem VBA.
 Utworzymy nowy dokument z pustym projektem VBA i sklonujemy projekt VBA z dokumentu źródłowego.
 
 ```csharp
@@ -74,7 +74,7 @@ Odp.: Duplikowanie projektu VBA polega na kopiowaniu całego kodu VBA ze źród�
 Odp.: Zanim będzie można sklonować projekt VBA z dokumentu programu Word, należy posiadać praktyczną wiedzę na temat języka programowania C#. Musisz także zainstalować w swoim projekcie bibliotekę Aspose.Words for .NET. Potrzebujesz także dokumentu Word zawierającego projekt VBA, który chcesz sklonować.
 
 #### P: Jak ustawić katalog dokumentów w kodzie?
- Odp.: w dostarczonym kodzie musisz wymienić`"YOUR DOCUMENTS DIRECTORY"` z odpowiednią ścieżką do katalogu, w którym znajduje się Twój dokument Word zawierający projekt VBA.
+ Odp.: w dostarczonym kodzie musisz wymienić.`"YOUR DOCUMENTS DIRECTORY"` z odpowiednią ścieżką do katalogu, w którym znajduje się Twój dokument Word zawierający projekt VBA.
 
 #### P: Jak zapisać dokument docelowy ze sklonowanym projektem VBA?
 

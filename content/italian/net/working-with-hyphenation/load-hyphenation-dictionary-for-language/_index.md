@@ -60,7 +60,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo per a
 
 #### D: Come caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words?
 
- R: Per caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words, puoi utilizzare il file`Hyphenation` classe e il`LoadDictionary()` metodo. Crea un'istanza di`Hyphenation` lezione e chiama il`LoadDictionary()` metodo che specifica il percorso del file del dizionario di sillabazione per la lingua desiderata. Questo caricherà il dizionario di sillabazione in Aspose.Words.
+ R: Per caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words, puoi utilizzare il file`Hyphenation` classe e il`LoadDictionary()` metodo. Crea un'istanza di`Hyphenation` classe e chiamare il`LoadDictionary()` metodo che specifica il percorso del file del dizionario di sillabazione per la lingua desiderata. Questo caricherà il dizionario di sillabazione in Aspose.Words.
 
 #### D: Dove posso trovare i file del dizionario di sillabazione per le diverse lingue?
 
@@ -68,7 +68,7 @@ R: Puoi trovare file di dizionario di sillabazione per diverse lingue su varie r
 
 #### D: Come posso applicare il dizionario sillabico caricato a un documento in Aspose.Words?
 
- A: Per applicare il dizionario di sillabizzazione caricato a un documento in Aspose.Words, è necessario scorrere le parole nel documento e utilizzare il comando`Hyphenate()` metodo del`Hyphenation`class per ottenere la sillabazione delle parole. È quindi possibile formattare le parole sillabate secondo necessità, ad esempio aggiungendo trattini tra le sillabe.
+A: Per applicare il dizionario di sillabizzazione caricato a un documento in Aspose.Words, è necessario scorrere le parole nel documento e utilizzare il comando`Hyphenate()` metodo del`Hyphenation` class per ottenere la sillabazione delle parole. È quindi possibile formattare le parole sillabate secondo necessità, ad esempio aggiungendo trattini tra le sillabe.
 
 #### D: Quali lingue sono supportate per la sillabazione in Aspose.Words?
 

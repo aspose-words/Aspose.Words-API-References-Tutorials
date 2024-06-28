@@ -12,7 +12,7 @@ In deze stapsgewijze zelfstudie laten we u zien hoe u Aspose.Words voor .NET kun
 
  Om aan de slag te gaan, moet u ervoor zorgen dat Aspose.Words voor .NET is geïnstalleerd en ingesteld in uw ontwikkelomgeving. Als u dit nog niet heeft gedaan, download en installeer dan de bibliotheek van de[Aspose.Releases](https://releases.aspose.com/words/net/).
 
-## Stap 1: Het documentobject initialiseren
+## Stap 1: Initialiseren van het documentobject
 
  Initialiseer eerst de`Document`object met het pad naar uw brondocument in Docx-indeling:
 

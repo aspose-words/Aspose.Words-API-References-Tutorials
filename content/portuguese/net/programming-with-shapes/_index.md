@@ -22,6 +22,6 @@ Usando Aspose.Words for .NET e seguindo estes tutoriais, você será capaz de do
 | [Layout na célula](./layout-in-cell/) | Aprenda como fazer o layout de uma forma dentro de uma célula de tabela em um documento do Word usando Aspose.Words for .NET. |
 | [Adicionar cantos recortados](./add-corners-snipped/) | Aprenda como adicionar uma forma com cantos cortados a um documento do Word usando Aspose.Words for .NET. |
 | [Obtenha pontos reais de limites de forma](./get-actual-shape-bounds-points/) | Aprenda como recuperar os limites reais de uma forma em pontos (unidade de medida) em um documento do Word usando Aspose.Words for .NET. |
-| [Âncora vertical](./vertical-anchor/) | Aprenda como posicionar uma forma verticalmente em um documento usando o recurso de âncora vertical no Aspose.Words for .NET.|
+| [Âncora Vertical](./vertical-anchor/) | Aprenda como posicionar uma forma verticalmente em um documento usando o recurso de âncora vertical no Aspose.Words for .NET.|
 | [Detectar forma de arte inteligente](./detect-smart-art-shape/) | Aprenda como detectar formas Smart Art em um documento Word usando Aspose.Words for .NET, identificando representações gráficas. |
 | [Atualizar desenho de arte inteligente](./update-smart-art-drawing/) | Aprenda como atualizar o desenho Smart Art em um documento do Word usando Aspose.Words for .NET. |

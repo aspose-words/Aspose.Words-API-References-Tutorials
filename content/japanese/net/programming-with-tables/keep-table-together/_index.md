@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/keep-table-together/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 
 //テーブルを取得する
@@ -43,7 +43,7 @@ para.ParagraphFormat.KeepWithNext = true;
 }
 ```
 
-ここでは、テーブル内の各セルをループし、テーブルの最後の行の最後の段落を除くセル内の各段落に対して「KeepWithNext」オプションを有効にします。
+ここでは、表内の各セルをループし、表の最後の行の最後の段落を除くセル内の各段落に対して「KeepWithNext」オプションを有効にします。
 
 ## ステップ 4: 変更したドキュメントを保存する
 最後に、テーブルをまとめた状態で変更したドキュメントを保存する必要があります。次のコードを使用します。

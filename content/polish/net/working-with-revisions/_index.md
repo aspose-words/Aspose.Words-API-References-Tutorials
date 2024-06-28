@@ -16,7 +16,7 @@ Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programist
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Zaakceptuj poprawki](./accept-revisions/) | Dowiedz się, jak akceptować poprawki w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
+| [Zaakceptuj recenzje](./accept-revisions/) | Dowiedz się, jak akceptować poprawki w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
 | [Uzyskaj typy wersji słów](./get-revision-types/) | Uzyskaj typy wersji słów w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
 | [Pobierz grupy wersji](./get-revision-groups/) | Uzyskaj szczegółowe informacje o grupie wersji w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
 | [Usuń komentarze z pliku PDF](./remove-comments-in-pdf/) | Usuń komentarze z pliku PDF za pomocą Aspose.Words dla .NET. |

@@ -2,94 +2,123 @@
 title: Přijímat upozornění na písma
 linktitle: Přijímat upozornění na písma
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Přečtěte si, jak přijímat upozornění na chybějící nebo nahrazená písma při používání Aspose.Words for .NET.
+description: Naučte se, jak přijímat oznámení o záměně písem v Aspose.Words pro .NET s naším podrobným průvodcem. Ujistěte se, že se vaše dokumenty pokaždé vykreslí správně.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
-V tomto tutoriálu vás provedeme tím, jak přijímat upozornění na písma při používání Aspose.Words pro .NET. Upozornění na písma vám umožňují detekovat a spravovat chybějící nebo nahrazená písma ve vašich dokumentech. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+
+Pokud jste někdy čelili problémům s nesprávným vykreslováním písem ve vašich dokumentech, nejste sami. Správa nastavení písem a přijímání upozornění na nahrazování písem vám může ušetřit spoustu starostí. V tomto komplexním průvodci upozorněním prozkoumáme, jak zacházet s fonty pomocí Aspose.Words for .NET a zajistit, aby vaše dokumenty vždy vypadaly co nejlépe.
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující položky:
-- Pracovní znalost programovacího jazyka C#
-- Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
+
+Než se pustíme do podrobností, ujistěte se, že máte následující:
+
+- Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
+-  Aspose.Words for .NET Library: Stáhněte a nainstalujte ji z[oficiální odkaz ke stažení](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Nastavení jako Visual Studio pro psaní a spouštění vašeho kódu.
+-  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven k testování nastavení písma.
+
+## Importovat jmenné prostory
+
+Chcete-li začít pracovat s Aspose.Words, musíte do projektu importovat potřebné jmenné prostory. To poskytuje přístup ke třídám a metodám, které budete potřebovat.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+```
 
 ## Krok 1: Definujte adresář dokumentů
- Nejprve musíte nastavit cestu k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+
+Nejprve zadejte adresář, kde je dokument uložen. To je zásadní pro nalezení dokumentu, který chcete zpracovat.
 
 ```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Krok 2: Načtěte dokument a nakonfigurujte nastavení písma
- Dále načteme dokument pomocí`Document` třídy a nakonfigurujte nastavení písma pomocí`FontSettings` třída. Nastavíme výchozí písmo, které se použije v případě chybějících písem.
-
-```csharp
-// Načtěte dokument a nakonfigurujte nastavení písma
-Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-```
-
-## Krok 3: Nastavte obsluhu oznámení
-Dále definujeme obsluhu oznámení implementací`IWarningCallback` rozhraní. To nám umožní shromažďovat upozornění na písmo při ukládání dokumentu.
-
-```csharp
-// Definujte obslužnou rutinu oznámení
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc. WarningCallback = callback;
-```
-
-## Krok 4: Použijte nastavení písma a uložte dokument
-Nakonec na dokument aplikujeme nastavení písma a uložíme jej. Jakákoli upozornění na písma budou zachycena obslužným programem oznámení, který jsme definovali dříve.
-
-```csharp
-// Použijte nastavení písma a uložte dokument
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
-```
-
-### Ukázkový zdrojový kód pro příjem oznámení písem pomocí Aspose.Words pro .NET 
-```csharp
-
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Krok 2: Vložte dokument
+
+ Vložte dokument do Aspose.Words`Document` objekt. To vám umožní programově manipulovat s dokumentem.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Krok 3: Nakonfigurujte nastavení písma
+
+Nyní nakonfigurujte nastavení písma, abyste určili výchozí písmo, které by Aspose.Words měl použít, pokud požadovaná písma nebudou nalezena.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Můžeme si vybrat výchozí písmo, které se použije v případě chybějících písem.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-// Pro testování nastavíme Aspose.Words, aby hledal fonty pouze ve složce, která neexistuje. Protože Aspose.Words nebude
-// najít všechna písma v zadaném adresáři, pak během vykreslování budou písma v dokumentu podřízena výchozímu
-// písmo určené v části FontSettings.DefaultFontName. Tuto dílčí nabídku můžeme vyzvednout pomocí našeho zpětného volání.
+
+// Nastavte Aspose.Words, aby hledal písma pouze v neexistující složce
 fontSettings.SetFontsFolder(string.Empty, false);
-//Vytvořte novou třídu implementující IWarningCallback, která shromažďuje všechna varování vytvořená během ukládání dokumentu.
+```
+
+## Krok 4: Nastavte zpětné volání upozornění
+
+ Chcete-li zachytit a zpracovat varování o nahrazení písem, vytvořte třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zaznamená všechna varování, která se vyskytnou během zpracování dokumentu.
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        // Máme zájem pouze o nahrazování písem.
+        if (info.WarningType == WarningType.FontSubstitution)
+        {
+            Console.WriteLine("Font substitution: " + info.Description);
+        }
+    }
+}
+```
+
+## Krok 5: Přiřaďte dokumentu nastavení zpětného volání a písma
+
+Přiřaďte dokumentu zpětné volání upozornění a nakonfigurovaná nastavení písma. Tím je zajištěno, že budou zachyceny a zaznamenány všechny problémy s písmy.
+
+```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
-
 ```
 
+## Krok 6: Uložte dokument
+
+Nakonec uložte dokument po použití nastavení písma a manipulaci s případnými náhradami písem. Uložte jej ve formátu dle vašeho výběru; zde, uložíme jej jako PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
+```
+
+Pomocí těchto kroků jste nakonfigurovali aplikaci tak, aby zpracovávala záměny písem elegantně a dostávala upozornění, kdykoli dojde k záměně.
+
 ## Závěr
-V tomto tutoriálu jsme viděli, jak přijímat upozornění na písma při používání Aspose.Words pro .NET. Upozornění na písma vám umožňují detekovat a spravovat chybějící nebo nahrazená písma ve vašich dokumentech. Tuto funkci použijte k zajištění konzistence písem ve vašich dokumentech a v případě chybějících písem podnikněte příslušné kroky.
 
-### FAQ
+Nyní jste zvládli proces přijímání upozornění na nahrazení písem pomocí Aspose.Words for .NET. Tato dovednost vám pomůže zajistit, aby vaše dokumenty vždy vypadaly co nejlépe, i když nejsou k dispozici potřebná písma. Pokračujte v experimentování s různými nastaveními, abyste plně využili sílu Aspose.Words.
 
-#### Otázka: Jak mohu přijímat upozornění na chybějící písma v Aspose.Words?
+## Nejčastější dotazy
 
- A: Chcete-li dostávat upozornění na chybějící písma v Aspose.Words, můžete použít`FontSettings` třída a`FontSubstitutionCallback` událost. Můžete nastavit metodu zpětného volání, která bude upozorněna, když při zpracování dokumentů narazíte na chybějící písma.
+### Q1: Mohu zadat více výchozích písem?
 
-#### Otázka: Jak mohu řešit chybějící písma v dokumentech aplikace Word?
+Ne, můžete zadat pouze jedno výchozí písmo pro nahrazení. Můžete však nakonfigurovat více zdrojů záložních písem.
 
-Odpověď: Chcete-li se vypořádat s chybějícími písmy v dokumentech aplikace Word, můžete použít různé strategie. Chybějící fonty můžete nainstalovat do systému, kde spouštíte aplikaci Aspose.Words, nebo můžete chybějící fonty nahradit alternativními fonty, které jsou k dispozici.
+### Q2: Kde mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
 
-#### Otázka: Je možné v Aspose.Words přijímat upozornění na nahrazená písma?
+ Můžete si stáhnout bezplatnou zkušební verzi z[Aspose zkušební stránku zdarma](https://releases.aspose.com/).
 
- Odpověď: Ano, v Aspose.Words je možné přijímat upozornění na nahrazená písma. Když jsou písma nahrazena během zpracování dokumentu, můžete být upozorněni pomocí`FontSubstitutionCallback` událost a proveďte příslušné kroky k úpravě vzhledu textu.
+###  Q3: Mohu zpracovat jiné typy varování pomocí`IWarningCallback`?
 
-#### Otázka: Jak mohu zachovat konzistentní vzhled textu, když jsou v Aspose.Words nahrazena písma?
+ Ano,`IWarningCallback` rozhraní zvládne různé typy varování, nejen náhradu písem.
 
-Odpověď: Chcete-li zachovat konzistenci vzhledu textu při nahrazení písem, můžete upravit vlastnosti formátování textu, jako je velikost písma, styl a barva. Můžete také zvážit použití náhradních písem, která jsou vizuálně podobná původním písmům.
+### Q4: Kde najdu podporu pro Aspose.Words?
+
+ Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pro pomoc.
+
+### Q5: Je možné získat dočasnou licenci pro Aspose.Words?
+
+ Ano, můžete získat dočasnou licenci od[dočasná licenční stránka](https://purchase.aspose.com/temporary-license/).

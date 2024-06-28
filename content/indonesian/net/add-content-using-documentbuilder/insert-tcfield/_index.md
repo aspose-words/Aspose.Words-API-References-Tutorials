@@ -2,93 +2,103 @@
 title: Sisipkan TCField di Dokumen Word
 linktitle: Sisipkan TCField di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan dan memanipulasi TCFields di dokumen Word menggunakan C# dan Aspose.Words untuk .NET dalam panduan langkah demi langkah ini.
+description: Pelajari cara menyisipkan bidang TC di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk otomatisasi dokumen yang lancar.
 type: docs
 weight: 10
 url: /id/net/add-content-using-documentbuilder/insert-tcfield/
 ---
-Dalam contoh ini, kami akan memandu Anda melalui proses penggunaan fitur Sisipkan TCField di Aspose.Words untuk .NET. TCField mewakili entri daftar isi dalam dokumen Word. Kami akan memberikan penjelasan langkah demi langkah tentang kode sumber C#, beserta keluaran yang diharapkan dalam format penurunan harga. Mari kita mulai!
+## Perkenalan
 
-## Langkah 1: Menginisialisasi dokumen dan pembuat dokumen
+Hai! Jika Anda terjun ke dunia otomatisasi dokumen, Anda berada di tempat yang tepat. Hari ini, kita akan mempelajari cara menyisipkan bidang TC (Daftar Isi) ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Percayalah, di akhir tutorial ini, Anda akan merasa seperti seorang penyihir yang memberikan mantra pada dokumen Word Anda. Siap untuk memulai? Mari kita lakukan!
 
-Untuk memulai, kita perlu menginisialisasi dokumen dan pembuat dokumen. Pembuat dokumen adalah alat canggih yang disediakan oleh Aspose.Words untuk .NET yang memungkinkan kita membuat dan memanipulasi dokumen Word secara terprogram. Inilah cara Anda melakukannya:
+## Prasyarat
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+Sebelum kita masuk ke seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan:
 
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+1.  Aspose.Words for .NET: Jika belum melakukannya, Anda harus mengunduh dan menginstal Aspose.Words for .NET. Anda bisa mendapatkannya dari[Unduh Halaman](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan .NET apa pun bisa digunakan, tetapi Visual Studio sangat disarankan.
+3. Pengetahuan Dasar C#: Anda harus terbiasa dengan dasar-dasar pemrograman C#.
+4.  Lisensi Sementara: Untuk membuka kemampuan penuh Aspose.Words, Anda mungkin memerlukan lisensi sementara yang dapat Anda peroleh[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-## Langkah 2: Memasukkan TCField
+## Impor Namespace
 
- Selanjutnya, kita akan memasukkan TCField ke dalam dokumen menggunakan`InsertField` metode. TCField mewakili entri daftar isi dengan teks entri yang ditentukan. Berikut ini contohnya:
-
-```csharp
-builder.InsertField("TC \"Entry Text\" \\f t");
-```
-
-Kode di atas akan menyisipkan TCField dengan teks entri "Teks Entri" ke dalam dokumen.
-
-## Langkah 3: Menyimpan dokumen
-
- Setelah memasukkan TCField, kita dapat menyimpan dokumen ke lokasi tertentu menggunakan`Save` metode. Pastikan untuk memberikan jalur dan nama file yang diinginkan untuk dokumen keluaran. Berikut ini contohnya:
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini seperti menyiapkan panggung untuk pertunjukan sulap kita.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Kode di atas akan menyimpan dokumen dengan TCField ke direktori yang ditentukan.
+Baiklah, setelah babak penyisihan selesai, mari kita mulai beraksi!
 
-## Format Penurunan Harga Keluaran
+## Langkah 1: Siapkan Proyek Anda
 
-Ketika kode berhasil dieksekusi, dokumen keluaran akan berisi entri daftar isi dengan teks entri yang ditentukan. TCField direpresentasikan sebagai bidang dalam dokumen Word, dan format penurunan harga yang dihasilkan akan bergantung pada cara dokumen diproses.
+Sebelum kita terjun ke coding, mari kita siapkan proyek kita. Buka lingkungan pengembangan Anda dan buat proyek .NET baru. Pastikan untuk menambahkan referensi ke perpustakaan Aspose.Words untuk .NET. Jika Anda menggunakan NuGet, Anda dapat menginstalnya dengan mudah melalui Package Manager Console:
 
-Perlu diketahui bahwa dokumen keluaran tidak langsung dalam format penurunan harga melainkan dalam format Word. Namun, saat Anda mengonversi dokumen Word menjadi penurunan harga menggunakan alat atau pustaka yang sesuai, TCField akan diproses sesuai dengan itu.
+```shell
+Install-Package Aspose.Words
+```
 
-### Contoh Kode Sumber untuk Sisipkan TCField menggunakan Aspose.Words untuk .NET
+## Langkah 2: Buat Dokumen Baru
 
-Berikut contoh lengkap kode sumber untuk menyisipkan TCField menggunakan Aspose.Words untuk .NET:
+ Baiklah, mari kita mulai dengan membuat dokumen Word baru. Kami akan menggunakan`Document` Dan`DocumentBuilder` kelas dari Aspose.Words untuk membuat segalanya berjalan lancar.
 
 ```csharp
 // Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Buat dokumen baru
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+Ini menyiapkan dokumen kita dan mempersiapkan kita untuk mulai membuatnya.
+
+## Langkah 3: Masukkan Bidang TC
+
+Sekarang, inilah bagian yang menyenangkan. Kami akan memasukkan bidang TC ke dalam dokumen kami. Bidang TC digunakan untuk menandai entri Daftar Isi.
+
+```csharp
+// Masukkan bidang TC
 builder.InsertField("TC \"Entry Text\" \\f t");
+```
 
+ Baris kode ini memberitahu Aspose.Words untuk menyisipkan bidang TC dengan teks entri "Teks Entri". Itu`\\f t` bagiannya adalah tombol yang menentukan bagaimana entri ditampilkan di Daftar Isi.
+
+## Langkah 4: Simpan Dokumen
+
+Terakhir, mari simpan dokumen kita. Di sinilah semua kerja keras kita bersatu.
+
+```csharp
+// Simpan dokumennya
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-Jangan ragu untuk mengubah kode sesuai kebutuhan Anda dan menjelajahi fitur lain yang disediakan oleh Aspose.Words untuk .NET.
+Ledakan! Anda baru saja membuat dokumen Word dengan bidang TC. Betapa mengagumkannya itu?
 
 ## Kesimpulan
 
-Selamat! Anda telah berhasil mempelajari cara menyisipkan TCField ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, kini Anda dapat menambahkan entri daftar isi dengan teks entri khusus ke dokumen Anda.
+ Dan itu dia! Kami telah mempelajari cara menyisipkan bidang TC ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ini cukup mudah, bukan? Dengan keterampilan ini, kini Anda dapat mengotomatiskan dan menyesuaikan dokumen Word Anda seperti seorang profesional. Jika Anda memiliki pertanyaan atau mengalami masalah apa pun, jangan ragu untuk memeriksanya[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) atau menghubungi mereka[forum dukungan](https://forum.aspose.com/c/words/8). Selamat membuat kode!
 
-Fitur TCField adalah alat yang berguna untuk membuat daftar isi yang terorganisir dan dapat dinavigasi di dokumen Word Anda. Bereksperimenlah dengan berbagai teks entri dan opsi pemformatan untuk membuat dokumen profesional dan terstruktur yang mudah dinavigasi. Ingatlah untuk memperbarui daftar isi setelah melakukan perubahan untuk memastikan daftar tersebut mencerminkan konten terbaru dalam dokumen.
+## FAQ
 
-### FAQ untuk menyisipkan TCField di dokumen Word
+### 1. Apa yang dimaksud dengan bidang TC di Word?
 
-#### T: Apa yang dimaksud dengan TCField di Aspose.Words untuk .NET?
+Bidang TC (Daftar Isi) di Word digunakan untuk menandai entri tertentu yang ingin Anda sertakan dalam Daftar Isi Anda.
 
-J: TCField di Aspose.Words untuk .NET mewakili entri daftar isi (TOC) dalam dokumen Word. Ini memungkinkan Anda untuk menambahkan entri daftar isi dengan teks entri yang ditentukan, yang akan digunakan untuk menghasilkan daftar isi ketika dokumen diperbarui.
+### 2. Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
 
-#### T: Bagaimana cara menyesuaikan teks entri TCField?
+ Ya, Anda dapat menggunakan lisensi sementara untuk membuka fitur lengkap Aspose.Words. Anda bisa mendapatkannya[Di Sini](https://purchase.aspose.com/temporary-license/).
 
- J: Anda dapat menyesuaikan teks entri TCField dengan memberikan teks yang diinginkan sebagai argumen ke`InsertField` metode. Misalnya,`builder.InsertField("TC \"Custom Entry\" \\f t");` akan menyisipkan TCField dengan teks entri "Entri Kustom" ke dalam dokumen.
+### 3. Bisakah saya menggunakan Aspose.Words dengan bahasa pemrograman lain?
 
-#### T: Bisakah saya menambahkan beberapa TCField ke dokumen?
+Aspose.Words terutama mendukung bahasa .NET seperti C#, tetapi ada versi yang tersedia untuk Java dan platform lainnya.
 
- J: Ya, Anda dapat menambahkan beberapa TCField ke dokumen dengan memanggil`InsertField` metode beberapa kali dengan teks entri yang berbeda. Setiap TCField akan mewakili entri terpisah di daftar isi.
+### 4. Di mana saya dapat menemukan lebih banyak contoh penggunaan Aspose.Words untuk .NET?
 
-#### T: Bagaimana cara memperbarui daftar isi setelah memasukkan TCFields?
+ Anda dapat menemukan lebih banyak contoh dan dokumentasi terperinci di[Halaman dokumentasi Aspose.Words](https://reference.aspose.com/words/net/).
 
-A: Untuk memperbarui daftar isi setelah memasukkan TCFields, Anda dapat menghubungi`UpdateFields` metode pada dokumen. Hal ini akan memastikan bahwa setiap perubahan yang dilakukan pada TCFields atau konten dokumen tercermin dalam daftar isi.
+### 5. Bagaimana saya bisa mendapatkan dukungan jika saya mengalami masalah?
 
-#### Q: Bisakah saya menyesuaikan tampilan daftar isi?
-
-J: Ya, Anda dapat menyesuaikan tampilan daftar isi dengan menyesuaikan opsi format TCFields. Anda dapat memodifikasi gaya font, warna, dan properti lainnya untuk membuat daftar isi yang menarik secara visual.
+ Jika Anda mengalami masalah apa pun, Anda bisa mendapatkan dukungan dari[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).

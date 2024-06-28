@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Bước 5: Xóa viền bảng hiện có
+## Bước 5: Xóa viền bảng hiện có.
 Để bắt đầu với đường viền phác thảo mới, trước tiên chúng ta cần xóa tất cả các đường viền hiện có khỏi bảng. Điều này có thể được thực hiện bằng cách sử dụng`ClearBorders()` phương pháp.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Bước 7: Tô màu nền cho các ô
-Để cải thiện cách trình bày trực quan của bảng, chúng ta có thể tô màu nền cho các ô
+## Bước 7: Tô màu nền cho các ô.
+Để cải thiện cách trình bày trực quan của bảng, chúng ta có thể tô màu nền cho các ô.
 
 ý tưởng. Trong ví dụ này, chúng tôi đang sử dụng màu xanh nhạt.
 

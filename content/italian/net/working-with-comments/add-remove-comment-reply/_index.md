@@ -77,7 +77,7 @@ Le risposte ai commenti consentono discussioni collaborative e feedback all'inte
 
 #### D: Come posso rimuovere un commento in Aspose.Words per .NET?
 
- R: Per rimuovere un commento in Aspose.Words per .NET, puoi utilizzare il file`Comment.Remove` metodo che specifica il`Comment` oggetto che vuoi rimuovere.
+R: Per rimuovere un commento in Aspose.Words per .NET, puoi utilizzare il file`Comment.Remove` metodo che specifica il`Comment` oggetto che vuoi rimuovere.
 
 #### D: Posso rispondere a un commento in Aspose.Words per .NET?
 
@@ -85,7 +85,7 @@ Le risposte ai commenti consentono discussioni collaborative e feedback all'inte
 
 #### D: Come posso accedere ai commenti esistenti in Aspose.Words per .NET?
 
- R: È possibile accedere ai commenti esistenti in Aspose.Words per .NET utilizzando il file`CommentCollection` proprietà del`Document`oggetto. Ciò ti consentirà di sfogliare tutti i commenti presenti nel documento.
+ R: È possibile accedere ai commenti esistenti in Aspose.Words per .NET utilizzando il file`CommentCollection` proprietà del`Document` oggetto. Ciò ti consentirà di sfogliare tutti i commenti presenti nel documento.
 
 #### D: Posso modificare il testo dei commenti in Aspose.Words per .NET?
 

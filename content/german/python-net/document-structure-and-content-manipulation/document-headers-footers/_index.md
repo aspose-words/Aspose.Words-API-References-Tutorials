@@ -1,7 +1,7 @@
 ---
 title: Bearbeiten von Kopf- und Fußzeilen in Word-Dokumenten
 linktitle: Bearbeiten von Kopf- und Fußzeilen in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie Kopf- und Fußzeilen in Word-Dokumenten mit Aspose.Words für Python bearbeiten. Schritt-für-Schritt-Anleitung mit Quellcode zum Anpassen, Hinzufügen, Entfernen und mehr. Verbessern Sie jetzt die Formatierung Ihres Dokuments!
 type: docs
 weight: 16
@@ -134,7 +134,7 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### Wie greife ich auf Kopf- und Fußzeileninhalte zu?
 
- Um auf Kopf- und Fußzeileninhalte zuzugreifen, verwenden Sie die`headers_footers` Eigenschaft des Abschnitts des Dokuments.
+ Um auf den Inhalt von Kopf- und Fußzeilen zuzugreifen, verwenden Sie die`headers_footers` Eigenschaft des Abschnitts des Dokuments.
 
 ### Kann ich Bilder zu Kopf- und Fußzeilen hinzufügen?
 

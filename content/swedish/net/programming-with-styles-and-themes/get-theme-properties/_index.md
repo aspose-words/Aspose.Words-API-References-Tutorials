@@ -20,7 +20,7 @@ Se till att du har ställt in din utvecklingsmiljö med Aspose.Words för .NET. 
 Document doc = new Document();
 ```
 
- I det här steget skapar vi en ny`Document` objekt.
+ det här steget skapar vi en ny`Document` objekt.
 
 ## Steg 3: Skaffa temaegenskaper
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- I det här steget använder vi`Theme` egendom av`Document`objekt för att få`Theme` objekt. Sedan kan vi komma åt de olika egenskaperna för temat som huvudteckensnitten (`MajorFonts`), de sekundära teckensnitten (`MinorFonts`) och accentfärgerna (`Colors`).
+ I det här steget använder vi`Theme` egendom av`Document` objekt för att få`Theme` objekt. Sedan kan vi komma åt de olika egenskaperna för temat som huvudteckensnitten (`MajorFonts`), de sekundära teckensnitten (`MinorFonts`) och accentfärgerna (`Colors`).
 
 ## Steg 4: Visa temaegenskaper
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Slutsats
 
- I den här handledningen utforskade vi funktionaliteten för att få ett dokuments temaegenskaper med Aspose.Words för .NET. Använda`Theme` objekt och dess tillhörande egenskaper kunde vi få tillgång till information om de primära och sekundära teckensnitten samt accentfärgerna som används i dokumenttemat.
+ I den här handledningen utforskade vi funktionaliteten för att få ett dokuments temaegenskaper med Aspose.Words för .NET. Använda`Theme`objekt och dess tillhörande egenskaper kunde vi få tillgång till information om de primära och sekundära teckensnitten samt accentfärgerna som används i dokumenttemat.
 
 Möjligheten att få temaegenskaper gör att du kan analysera och anpassa stilarna och layouterna för dina dokument. Du kan använda denna information för att tillämpa riktade ändringar, skapa rapporter eller utföra analyser av teckensnitt och färganvändning i dina dokument.
 
@@ -68,11 +68,11 @@ Utforska gärna fler funktioner i Aspose.Words för .NET för att förbättra di
 
 #### Hur kan jag komma åt temaegenskaperna för ett dokument med Aspose.Words för .NET?
 
- För att komma åt temaegenskaperna för ett dokument kan du använda`Theme` egendom av`Document` objekt. Den returnerar en`Theme` objekt som innehåller information om de primära och sekundära teckensnitten, samt accentfärgerna som används i dokumentets tema.
+ För att komma åt temaegenskaperna för ett dokument kan du använda`Theme` egendom av`Document` objekt. Den returnerar en`Theme`objekt som innehåller information om de primära och sekundära teckensnitten, samt accentfärgerna som används i dokumentets tema.
 
 #### Hur kan jag hämta de primära och sekundära teckensnitten för ett dokuments tema?
 
-Du kan komma åt de primära och sekundära teckensnitten för ett dokuments tema genom att använda`MajorFonts` och`MinorFonts` egenskaper hos`Theme` objekt, respektive. Dessa egenskaper ger åtkomst till teckensnittsnamnen som används i dokumentets tema för olika språk eller regioner.
+ Du kan komma åt de primära och sekundära teckensnitten för ett dokuments tema genom att använda`MajorFonts` och`MinorFonts` egenskaper hos`Theme` objekt, respektive. Dessa egenskaper ger tillgång till teckensnittsnamnen som används i dokumentets tema för olika språk eller regioner.
 
 #### Kan jag få accentfärgerna som används i ett dokuments tema?
 

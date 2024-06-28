@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- Dalam kode ini, kami membuat yang baru`Document` dan sebuah`DocumentBuilder` . Itu`insert_text_box`Metode ini digunakan untuk menambahkan kotak teks ke dokumen. Anda dapat menyesuaikan konten, posisi, dan ukuran kotak teks sesuai kebutuhan Anda.
+ Dalam kode ini, kami membuat yang baru`Document` dan sebuah`DocumentBuilder` . Itu`insert_text_box` Metode ini digunakan untuk menambahkan kotak teks ke dokumen. Anda dapat menyesuaikan konten, posisi, dan ukuran kotak teks sesuai kebutuhan Anda.
 
 ## Memformat Kotak Teks
 

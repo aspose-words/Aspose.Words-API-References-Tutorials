@@ -2,106 +2,95 @@
 title: Thay thế siêu liên kết
 linktitle: Thay thế siêu liên kết
 second_title: API xử lý tài liệu Aspose.Words
-description: Thay thế siêu liên kết trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước để thay thế siêu liên kết.
+description: Tìm hiểu cách thay thế siêu liên kết trong tài liệu .NET bằng Aspose.Words để quản lý tài liệu hiệu quả và cập nhật nội dung động.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/replace-hyperlinks/
 ---
 
-Dưới đây là hướng dẫn từng bước để giải thích mã nguồn C# sau đây để thay thế siêu liên kết bằng chức năng Aspose.Words cho .NET. Đảm bảo bạn đã đưa thư viện Aspose.Words vào dự án của mình trước khi sử dụng mã này.
+## Giới thiệu
 
-## Bước 1: Đặt đường dẫn thư mục tài liệu
+Trong thế giới phát triển .NET, việc quản lý và thao tác tài liệu là một nhiệm vụ quan trọng, thường đòi hỏi phải xử lý hiệu quả các siêu liên kết trong tài liệu. Aspose.Words for .NET cung cấp các khả năng mạnh mẽ để thay thế liền mạch các siêu liên kết, đảm bảo tài liệu của bạn được liên kết động với đúng tài nguyên. Hướng dẫn này đi sâu vào cách bạn có thể đạt được điều này bằng cách sử dụng Aspose.Words cho .NET, hướng dẫn bạn từng bước trong suốt quy trình.
+
+## Điều kiện tiên quyết
+
+Trước khi đi sâu vào việc thay thế các siêu liên kết bằng Aspose.Words cho .NET, hãy đảm bảo bạn có những điều sau:
+
+- Visual Studio: Đã cài đặt và thiết lập để phát triển .NET.
+-  Aspose.Words for .NET: Đã tải xuống và tham chiếu trong dự án của bạn. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+- Làm quen với C#: Hiểu biết cơ bản để viết và biên dịch mã.
+
+## Nhập không gian tên
+
+Trước tiên, hãy đảm bảo bao gồm các không gian tên cần thiết trong dự án của bạn:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- Hãy chắc chắn chỉ định đường dẫn chính xác tới thư mục tài liệu của bạn có chứa`Hyperlinks.docx` tài liệu.
+## Bước 1: Tải tài liệu
 
-## Bước 2: Tải tài liệu chứa siêu liên kết
+Bắt đầu bằng cách tải tài liệu mà bạn muốn thay thế siêu liên kết:
 
 ```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- Ở đây chúng ta đang tạo một thể hiện của`Document` lớp từ tệp được chỉ định.
+ Thay thế`"Hyperlinks.docx"` với đường dẫn đến tài liệu thực tế của bạn.
 
-## Bước 3: Duyệt qua các trường để tìm siêu liên kết
+## Bước 2: Lặp lại các trường
+
+Lặp lại qua từng trường trong tài liệu để tìm và thay thế các siêu liên kết:
 
 ```csharp
-foreach(Field field in doc.Range.Fields)
+foreach (Field field in doc.Range.Fields)
 {
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
-
-         // Một số siêu liên kết có thể là cục bộ (liên kết đến dấu trang bên trong tài liệu), chúng tôi bỏ qua chúng.
-         if (hyperlink.SubAddress != null)
-             keep on going;
-
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
+    if (field.Type == FieldType.FieldHyperlink)
+    {
+        FieldHyperlink hyperlink = (FieldHyperlink)field;
+        
+        // Kiểm tra xem siêu liên kết có phải là liên kết cục bộ hay không (bỏ qua dấu trang).
+        if (hyperlink.SubAddress != null)
+            continue;
+        
+        // Thay thế địa chỉ siêu liên kết và kết quả.
+        hyperlink.Address = "http://www.aspose.com";
+        hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
+    }
 }
 ```
 
- Vòng lặp này đi qua tất cả các trường trong tài liệu để tìm kiếm các trường thuộc loại`FieldType.FieldHyperlink` . Khi tìm thấy trường thuộc loại này, chúng tôi sẽ kiểm tra xem đó có phải là liên kết cục bộ hay không bằng cách kiểm tra`SubAddress` tài sản. Nếu không, chúng tôi thay thế địa chỉ liên kết bằng`"http://www.aspose.com"` và kết quả với`"Aspose - The .NET & Java Component Editor"`.
+## Bước 3: Lưu tài liệu
 
-## Bước 4: Lưu tài liệu đã sửa đổi
+Cuối cùng, lưu tài liệu đã sửa đổi với các siêu liên kết được thay thế:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-Cuối cùng, chúng tôi lưu tài liệu đã sửa đổi cùng với các siêu liên kết được thay thế vào một tệp được chỉ định.
+ Thay thế`"WorkingWithFields.ReplaceHyperlinks.docx"` với đường dẫn tệp đầu ra mong muốn của bạn.
 
-### Mã nguồn ví dụ để thay thế siêu liên kết bằng Aspose.Words cho .NET
+## Phần kết luận
 
-```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+Việc thay thế siêu liên kết trong tài liệu bằng Aspose.Words cho .NET rất đơn giản và nâng cao tính chất động của tài liệu của bạn. Cho dù cập nhật URL hay chuyển đổi nội dung tài liệu theo chương trình, Aspose.Words đều đơn giản hóa các tác vụ này, đảm bảo quản lý tài liệu hiệu quả.
 
-Document doc = new Document(dataDir + "Hyperlinks.docx");
+## Câu hỏi thường gặp (FAQ)
 
-foreach(Field field in doc.Range.Fields)
-{
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
+### Aspose.Words cho .NET có thể xử lý các cấu trúc tài liệu phức tạp không?
+Có, Aspose.Words hỗ trợ các cấu trúc phức tạp như bảng, hình ảnh và siêu liên kết một cách liền mạch.
 
-         // Một số siêu liên kết có thể là cục bộ (liên kết đến dấu trang bên trong tài liệu), chúng tôi bỏ qua chúng.
-         if (hyperlink.SubAddress != null)
-             keep on going;
+### Có phiên bản dùng thử cho Aspose.Words cho .NET không?
+ Có, bạn có thể tải xuống bản dùng thử miễn phí từ[đây](https://releases.aspose.com/).
 
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
-}
+### Tôi có thể tìm tài liệu về Aspose.Words cho .NET ở đâu?
+ Tài liệu chi tiết có sẵn[đây](https://reference.aspose.com/words/net/).
 
-doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
-```
+### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho Aspose.Words cho .NET?
+ Giấy phép tạm thời có thể được lấy[đây](https://purchase.aspose.com/temporary-license/).
 
-Đây là mã nguồn mẫu để thay thế các siêu liên kết trong tài liệu bằng Aspose.Words cho .NET.
-
-### Câu hỏi thường gặp
-
-#### Câu hỏi: Làm cách nào tôi có thể thay thế siêu liên kết trong tài liệu Word bằng Aspose.Words cho .NET?
-
- Trả lời: Để thay thế các siêu liên kết trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`Document.Range.Replace`phương pháp chỉ định văn bản cần tìm kiếm và văn bản thay thế. Đảm bảo sử dụng các tùy chọn thích hợp để đặt tham số tìm kiếm và thay thế.
-
-#### Câu hỏi: Có thể chỉ thay thế một số siêu liên kết nhất định trong tài liệu Word bằng Aspose.Words cho .NET không?
-
-Trả lời: Có, chỉ có thể thay thế một số siêu liên kết nhất định trong tài liệu Word bằng Aspose.Words cho .NET. Bạn có thể lọc các siêu liên kết cần thay thế bằng tiêu chí cụ thể, chẳng hạn như URL liên kết, văn bản liên kết hoặc bất kỳ thuộc tính liên quan nào khác. Sau đó, bạn chỉ có thể áp dụng thay thế cho các siêu liên kết phù hợp.
-
-#### Câu hỏi: Làm cách nào tôi có thể bỏ qua các siêu liên kết trong đầu trang, chân trang hoặc chú thích cuối trang khi thay thế bằng Aspose.Words cho .NET?
-
-Trả lời: Để bỏ qua các siêu liên kết trong đầu trang, chân trang hoặc chú thích cuối trang khi thay thế bằng Aspose.Words cho .NET, bạn có thể sử dụng các tùy chọn tìm kiếm nâng cao và chỉ định giới hạn tìm kiếm thích hợp. Ví dụ: bạn có thể giới hạn tìm kiếm trong các phần chính của tài liệu và loại trừ đầu trang, chân trang hoặc chú thích cuối trang.
-
-#### Hỏi: Có thể thay thế siêu liên kết bằng liên kết nội bộ đến các phần khác của tài liệu không?
-
- Trả lời: Có, có thể thay thế các siêu liên kết bằng các liên kết nội bộ đến các phần khác của tài liệu bằng Aspose.Words for .NET. Bạn có thể sử dụng các neo hoặc id văn bản để tạo các liên kết nội bộ và sau đó thay thế chúng bằng cách sử dụng`Document.Range.Replace` bằng các phương án thích hợp.
-
-#### Câu hỏi: Việc thay thế siêu liên kết bằng Aspose.Words cho .NET có giữ nguyên các thuộc tính liên kết, chẳng hạn như màu sắc hoặc kiểu không?
-
-Trả lời: Có, khi thay thế siêu liên kết bằng Aspose.Words cho .NET, các thuộc tính liên kết như màu sắc hoặc kiểu sẽ được giữ lại. Bạn có thể chỉ định các thuộc tính định dạng tương tự trong văn bản thay thế để đạt được kết quả nhất quán.
+### Những tùy chọn hỗ trợ nào có sẵn cho Aspose.Words cho .NET?
+ Bạn có thể nhận được sự hỗ trợ của cộng đồng hoặc gửi các truy vấn trên[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8).

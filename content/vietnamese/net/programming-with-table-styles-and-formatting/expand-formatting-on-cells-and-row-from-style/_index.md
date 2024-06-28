@@ -49,7 +49,7 @@ doc.ExpandTableStylesToDirectFormatting();
 ```
 
 ## Bước 6: Hiển thị định dạng ô sau khi mở rộng kiểu
-Bây giờ chúng ta hiển thị màu nền của ô sau khi Mở rộng kiểu bảng. Màu nền xanh lam nên được áp dụng từ kiểu bảng.
+Bây giờ chúng ta hiển thị màu nền của ô sau khi Expanding các kiểu bảng. Màu nền xanh lam nên được áp dụng từ kiểu bảng.
 
 ```csharp
 Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;

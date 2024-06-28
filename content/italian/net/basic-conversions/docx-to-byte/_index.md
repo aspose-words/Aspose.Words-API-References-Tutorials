@@ -78,7 +78,7 @@ Per convertire un file DOCX in byte, puoi utilizzare diversi strumenti software 
 
 #### Quali sono i limiti del processo di conversione?
 
-Le limitazioni del processo di conversione dipendono dallo strumento o dalla libreria specifica che stai utilizzando. Alcuni strumenti potrebbero avere restrizioni legate alla dimensione o alla complessità del documento di input. È importante scegliere uno strumento in grado di gestire le esigenze della tua attività di conversione.
+Le limitazioni del processo di conversione dipendono dallo strumento o dalla libreria specifica che stai utilizzando. Alcuni strumenti potrebbero avere restrizioni correlate alle dimensioni o alla complessità del documento di input. È importante scegliere uno strumento in grado di gestire le esigenze della tua attività di conversione.
 
 ### Posso preservare la formattazione del documento originale?
 

@@ -1,7 +1,7 @@
 ---
 title: Silbentrennung und Textfluss in Word-Dokumenten verwalten
 linktitle: Silbentrennung und Textfluss in Word-Dokumenten verwalten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python die Silbentrennung und den Textfluss in Word-Dokumenten verwalten. Erstellen Sie ausgefeilte, leserfreundliche Dokumente mit Schritt-für-Schritt-Beispielen und Quellcode.
 type: docs
 weight: 17
@@ -126,4 +126,4 @@ Um Witwen und Waisen zu verhindern, nutzen Sie die von Aspose.Words für Python 
 
 ### Wo kann ich auf die Dokumentation zu Aspose.Words für Python zugreifen?
 
- Sie können auf die API-Dokumentation zugreifen unter[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+Sie können auf die API-Dokumentation zugreifen unter[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

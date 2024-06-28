@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/split-document/by-sections/
 ---
 
-det här exemplet kommer vi att visa dig hur du delar upp ett Word-dokument i separata avsnitt med hjälp av funktionen By Sections i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och få separata dokument för varje avsnitt.
+I det här exemplet kommer vi att visa dig hur du delar upp ett Word-dokument i separata avsnitt med hjälp av funktionen By Sections i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och få separata dokument för varje avsnitt.
 
 ## Steg 1: Ladda dokumentet
 
@@ -52,7 +52,7 @@ Document doc = new Document(MyDir + "Big document.docx");
 
 for (int i = 0; i < doc.Sections.Count; i++)
 {
-	// Dela upp ett dokument i mindre delar, i det här fallet delat efter avsnitt.
+	//Dela upp ett dokument i mindre delar, i det här fallet delat efter avsnitt.
 	Section section = doc.Sections[i].Clone();
 
 	Document newDoc = new Document();

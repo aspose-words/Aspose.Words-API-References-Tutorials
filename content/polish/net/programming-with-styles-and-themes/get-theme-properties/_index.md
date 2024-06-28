@@ -20,7 +20,7 @@ Upewnij się, że skonfigurowałeś środowisko programistyczne za pomocą Aspos
 Document doc = new Document();
 ```
 
- Na tym etapie tworzymy nowy`Document` obiekt.
+Na tym etapie tworzymy nowy`Document` obiekt.
 
 ## Krok 3: Uzyskaj właściwości motywu
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- Na tym etapie używamy`Theme` własność`Document`obiekt, aby uzyskać`Theme` obiekt. Następnie możemy uzyskać dostęp do różnych właściwości motywu, takich jak główne czcionki (`MajorFonts`), czcionki dodatkowe (`MinorFonts`) i kolory akcentujące (`Colors`).
+ Na tym etapie używamy`Theme` własność`Document` obiekt, aby uzyskać`Theme` obiekt. Następnie możemy uzyskać dostęp do różnych właściwości motywu, takich jak główne czcionki (`MajorFonts`), czcionki dodatkowe (`MinorFonts`) i kolory akcentujące (`Colors`).
 
 ## Krok 4: Wyświetl właściwości motywu
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Wniosek
 
- W tym samouczku zbadaliśmy funkcjonalność pobierania właściwości motywu dokumentu za pomocą Aspose.Words dla .NET. Używając`Theme` obiektu i powiązanych z nim właściwości, mogliśmy uzyskać dostęp do informacji na temat czcionek podstawowych i dodatkowych, a także kolorów akcentujących zastosowanych w motywie dokumentu.
+ W tym samouczku zbadaliśmy funkcjonalność pobierania właściwości motywu dokumentu za pomocą Aspose.Words dla .NET. Używając`Theme`obiektu i powiązanych z nim właściwości, mogliśmy uzyskać dostęp do informacji na temat czcionek podstawowych i dodatkowych, a także kolorów akcentujących zastosowanych w motywie dokumentu.
 
 Możliwość uzyskania właściwości motywu pozwala analizować i dostosowywać style i układy dokumentów. Możesz wykorzystać te informacje do zastosowania ukierunkowanych zmian, tworzenia raportów lub przeprowadzania analiz użycia czcionek i kolorów w dokumentach.
 
@@ -68,11 +68,11 @@ Zachęcamy do odkrywania większej liczby funkcji Aspose.Words dla .NET, aby usp
 
 #### Jak mogę uzyskać dostęp do właściwości motywu dokumentu za pomocą Aspose.Words dla .NET?
 
- Aby uzyskać dostęp do właściwości motywu dokumentu, możesz użyć opcji`Theme` własność`Document` obiekt. Zwraca a`Theme` obiekt zawierający informacje o czcionkach podstawowych i pomocniczych, a także kolorach akcentujących zastosowanych w motywie dokumentu.
+ Aby uzyskać dostęp do właściwości motywu dokumentu, możesz użyć opcji`Theme` własność`Document` obiekt. Zwraca a`Theme`obiekt zawierający informacje o czcionkach podstawowych i pomocniczych, a także kolorach akcentujących zastosowanych w motywie dokumentu.
 
 #### Jak mogę pobrać podstawowe i dodatkowe czcionki motywu dokumentu?
 
-Dostęp do głównych i dodatkowych czcionek motywu dokumentu można uzyskać, korzystając z opcji`MajorFonts` I`MinorFonts` właściwości`Theme` obiekt, odpowiednio. Te właściwości zapewniają dostęp do nazw czcionek używanych w motywie dokumentu dla różnych języków i regionów.
+ Dostęp do głównych i dodatkowych czcionek motywu dokumentu można uzyskać, korzystając z opcji`MajorFonts` I`MinorFonts` właściwości`Theme` obiekt, odpowiednio. Te właściwości zapewniają dostęp do nazw czcionek używanych w motywie dokumentu dla różnych języków lub regionów.
 
 #### Czy mogę uzyskać kolory akcentujące użyte w motywie dokumentu?
 

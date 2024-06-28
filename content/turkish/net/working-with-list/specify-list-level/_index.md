@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Adım 6: Listeyi Biçimlendirmeyi Durdurun
 
- Liste biçimlendirmesini durdurmak için`null` -e`List` belge oluşturucunun özelliği:
+ Liste biçimlendirmesini durdurmak için`null` -e`List`belge oluşturucunun özelliği:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Microsoft Word liste şablonlarından birine dayalı numaralandırılmış bir liste oluşturun
+// Microsoft Word liste şablonlarından birine dayalı numaralandırılmış bir liste oluşturun.
 //ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Microsoft Word liste şablonlarından birini temel alan madde işaretli bir liste oluşturun
+// Microsoft Word liste şablonlarından birini temel alan madde işaretli bir liste oluşturun.
 //ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -121,7 +121,7 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### S: Aspose.Words'te liste düzeyini nasıl belirleyebilirim?
 
- C: Aspose.Words'te liste düzeyini belirlemek için, listenin bir örneğini oluşturmanız gerekir.`List` sınıfa gidin ve ona numaralı bir liste verin. Daha sonra şunu kullanabilirsiniz:`Paragraph.ListFormat.ListLevelNumber` Her liste öğesinin düzeyini belirtme özelliği. Liste öğelerinin istenen düzeye sahip olması için bu listeyi belgenizin bir bölümüyle ilişkilendirebilirsiniz.
+ C: Aspose.Words'te liste düzeyini belirlemek için listenin bir örneğini oluşturmanız gerekir.`List` sınıfa gidin ve ona numaralandırılmış bir liste verin. Daha sonra şunu kullanabilirsiniz:`Paragraph.ListFormat.ListLevelNumber` Her liste öğesinin düzeyini belirtme özelliği. Liste öğelerinin istenen düzeye sahip olması için bu listeyi belgenizin bir bölümüyle ilişkilendirebilirsiniz.
 
 #### S: Aspose.Words'te liste öğelerinin numaralandırma formatını değiştirmek mümkün mü?
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### S: Aspose.Words'te numaralandırılmış bir listeye ek seviyeler ekleyebilir miyim?
 
- C: Evet, Aspose.Words'te numaralandırılmış bir listeye ek seviyeler eklemek mümkündür.`ListLevel` class, listenin her düzeyi için biçimlendirme özelliklerini ayarlamanıza olanak tanır. Önek, sonek, hizalama, girinti vb. seçenekleri ayarlayabilirsiniz. Bu, birden fazla hiyerarşi düzeyine sahip listeler oluşturmanıza olanak tanır.
+ C: Evet, Aspose.Words'te numaralandırılmış bir listeye ek seviyeler eklemek mümkündür.`ListLevel`class, listenin her düzeyi için biçimlendirme özelliklerini ayarlamanıza olanak tanır. Önek, sonek, hizalama, girinti vb. seçenekleri ayarlayabilirsiniz. Bu, birden fazla hiyerarşi düzeyine sahip listeler oluşturmanıza olanak tanır.
 
 

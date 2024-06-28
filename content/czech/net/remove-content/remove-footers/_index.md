@@ -127,7 +127,7 @@ Nezapomeňte nahradit „Name_of_document.docx“ skutečným názvem vašeho do
 
 #### Otázka: Jak odstranit zápatí v dokumentu pomocí Aspose.Words?
 
-A: Chcete-li odstranit zápatí, musíte projít sekcemi dokumentu a zkontrolovat každý možný typ zápatí. V Aspose.Words jsou různé typy zápatí, například "FooterFirst" (pro první stránku), "FooterPrimary" (pro liché stránky) a "FooterEven" (pro sudé stránky). Musíte zkontrolovat a odstranit všechny tyto typy zápatí. Zde je ukázkový kód:
+A: Chcete-li odstranit zápatí, musíte projít sekcemi dokumentu a zkontrolovat každý možný typ zápatí. V Aspose.Words jsou různé typy zápatí, například "FooterFirst" (pro první stránku), "FooterPrimary" (pro liché stránky) a "FooterEven" (pro sudé stránky). Všechny tyto typy zápatí musíte zkontrolovat a odstranit. Zde je ukázkový kód:
 
 ```csharp
 HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];

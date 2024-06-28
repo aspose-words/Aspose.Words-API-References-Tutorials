@@ -24,14 +24,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Załaduj dokument
-Załaduj dokument programu Word zawierający rysunek Smart Art za pomocą`Document` konstruktor klasy.
+ Załaduj dokument programu Word zawierający rysunek Smart Art za pomocą`Document` konstruktor klasy.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Krok 3: Zaktualizuj inteligentny rysunek artystyczny
- Iteruj po kształtach w dokumencie, używając metody`GetChildNodes` metoda z`NodeType.Shape` parametr. Sprawdź, czy każdy kształt ma inteligentną grafikę, używając`HasSmartArt` właściwość i jeśli to prawda, wywołaj metodę`UpdateSmartArtDrawing` metoda aktualizacji rysunku Smart Art.
+ Iteruj po kształtach w dokumencie, używając metody`GetChildNodes` metoda z`NodeType.Shape` parametry. Sprawdź, czy każdy kształt ma inteligentną grafikę, używając`HasSmartArt` właściwość i jeśli to prawda, wywołaj metodę`UpdateSmartArtDrawing` metoda aktualizacji rysunku Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

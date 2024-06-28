@@ -47,7 +47,7 @@ Végül a dokumentumot HTML formátumba konvertáljuk a korábban beállított H
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 ```
 
-Ez a kód a hiányzó betűtípusnevek automatikus feloldásával konvertálja a dokumentumot HTML formátumba, és elmenti a konvertált HTML-fájlt a megadott könyvtárba.
+Ez a kód a hiányzó betűtípusnevek automatikus feloldásával konvertálja a dokumentumot HTML formátumba, és a konvertált HTML-fájlt a megadott könyvtárba menti.
 
 ### Példa forráskódra a Resolve Font Names with Aspose.Words for .NET programhoz
 

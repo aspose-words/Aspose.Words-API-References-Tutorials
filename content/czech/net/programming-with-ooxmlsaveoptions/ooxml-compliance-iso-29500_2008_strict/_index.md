@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
 
  V tomto posledním kroku dokument uložíme pomocí`Save` a předání cesty k výstupnímu souboru pomocí`.docx` rozšíření spolu se zadanými možnostmi uložení.
 
-Nyní můžete spustit zdrojový kód, abyste zajistili shodu s Ooxml Iso 29500_2008_Strict při ukládání dokumentu. Výsledný soubor bude uložen do zadaného adresáře s názvem „WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx“.
+Nyní můžete spustit zdrojový kód, abyste zajistili shodu s Ooxml Iso 29500_2008_Strict při ukládání dokumentu. Výsledný soubor bude uložen do zadaného adresáře s názvem "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx".
 
 ### Ukázka zdrojového kódu pro Ooxml Compliance Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp

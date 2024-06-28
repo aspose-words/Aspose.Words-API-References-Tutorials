@@ -18,7 +18,7 @@ Im bereitgestellten Code erstellen wir zunächst einen Dokumentgenerator.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Schritt 2: Fügen Sie das IF-Feld ein
+## Schritt 2: Fügen Sie das IF-Feld ein.
 
  Wir benutzen das`InsertField()` Methode zum Einfügen des IF-Felds in das Dokument, das die auszuwertende Bedingung angibt.
 
@@ -36,12 +36,12 @@ Hier haben wir als Beispiel die Bedingung „1=1“ verwendet, Sie können die B
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- Der`actualResult` Variable enthält das Ergebnis der Bedingungsauswertung.
+ Der`actualResult` Die Variable enthält das Ergebnis der Bedingungsauswertung.
 
 ### Beispielquellcode zum Auswerten der IF-Bedingung mit Aspose.Words für .NET
 
 ```csharp
-// Erstellung des Dokumentengenerators.
+//Erstellung des Dokumentengenerators.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Fügen Sie das IF-Feld in das Dokument ein.

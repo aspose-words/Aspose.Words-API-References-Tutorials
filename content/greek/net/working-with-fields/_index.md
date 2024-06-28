@@ -23,7 +23,7 @@ url: /el/net/working-with-fields/
 | [Εισαγάγετε το πεδίο συγχώνευσης χρησιμοποιώντας το DOM](./insert-merge-field-using-dom/) | Μάθετε πώς να εισάγετε προσαρμοσμένα πεδία συγχώνευσης πεδίων στα έγγραφά σας του Word με το Aspose.Words για .NET. |
 | [Εισαγάγετε το πεδίο μπλοκ διεύθυνσης συγχώνευσης αλληλογραφίας χρησιμοποιώντας το DOM](./insert-mail-merge-address-block-field-using-dom/) | Μάθετε πώς μπορείτε να εισαγάγετε ένα πεδίο μπλοκ διευθύνσεων συγχώνευσης αλληλογραφίας στα έγγραφά σας του Word με το Aspose.Words για .NET. |
 | [Εισαγωγή FieldIncludeText Χωρίς Εργαλείο δημιουργίας εγγράφων](./insert-field-include-text-without-document-builder/) | Μάθετε πώς να εισαγάγετε ένα πεδίο FieldIncludeText στα έγγραφα του Word με το Aspose.Words για .NET. |
-| [Εισαγωγή πεδίου Κανένα](./insert-field-none/) | Μάθετε πώς να Insérez un champ AUCUN dans vos έγγραφα Word avec Aspose.Words pour .NET. |
+| [Εισαγωγή πεδίου Κανένα](./insert-field-none/) | Μάθετε πώς να δημιουργείτε έγγραφα με το AUCUN στο Word avec Aspose.Words pour .NET. |
 | [Εισαγωγή πεδίου](./insert-field/) | Μάθετε πώς να εισαγάγετε ένα πεδίο στα έγγραφά σας στο Word με το Aspose.Words για .NET. Εξατομικεύστε τα έγγραφά σας με δυναμικά πεδία. |
 | [Εισαγωγή πεδίου χρησιμοποιώντας το εργαλείο δημιουργίας πεδίων](./insert-field-using-field-builder/) | Μάθετε πώς να εισάγετε προσαρμοσμένα πεδία στα έγγραφά σας στο Word με το Aspose.Words για .NET. |
 | [Εισαγωγή πεδίου συγγραφέα](./insert-author-field/) | Μάθετε πώς να εισαγάγετε ένα πεδίο AUTHOR στα έγγραφα του Word με το Aspose.Words για .NET. Καθορίστε το όνομα του συγγραφέα για να εξατομικεύσετε τα έγγραφά σας. |

@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-Mã này sử dụng kết hợp các phương thức LINQ để lọc ra các trường trong đoạn cuối của tài liệu và sau đó chuyển đổi chúng thành văn bản thuần túy bằng cách gọi hàm`Unlink()` phương pháp.
+ Mã này sử dụng kết hợp các phương thức LINQ để lọc ra các trường trong đoạn cuối của tài liệu và sau đó chuyển đổi chúng thành văn bản thuần túy bằng cách gọi hàm`Unlink()` phương pháp.
 
 ## Bước 4: Lưu tài liệu đã sửa đổi
 

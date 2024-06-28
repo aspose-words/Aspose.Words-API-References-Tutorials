@@ -23,7 +23,7 @@ Ebben az oktatóanyag-sorozatban a dokumentumok kombinálásával és összehaso
 - Dokumentumok összehasonlítása: Fedezze fel a két vagy több dokumentum közötti különbségek azonosítására és kiemelésére szolgáló technikákat, amelyek lehetővé teszik a hatékony revíziókövetést.
 - Összetett dokumentumok kezelése: Fedezzen fel speciális forgatókönyveket, mint például egyes szakaszok egyesítése, táblázatok és képek kezelése, valamint lábjegyzetek és végjegyzetek kezelése.
 - Automatizálás és testreszabás: Ismerje meg, hogyan automatizálhatja a dokumentumfeldolgozási feladatokat, és hogyan szabhatja testre az egyesítési és összehasonlítási folyamatot az Ön egyedi igényei szerint.
-- Python- és .NET-integráció: Merüljön el a Python- és .NET-környezetekhez használható példákban és kódrészletekben, így a különböző programozási preferenciákkal rendelkező fejlesztők számára szolgál.
+- Python és .NET integráció: Merüljön el példákban és kódrészletekben Python és .NET környezetekhez egyaránt, a különböző programozási preferenciákkal rendelkező fejlesztők számára.
 
 Ezeknek az oktatóanyagoknak a végére olyan készségekkel rendelkezik, amelyek segítségével zökkenőmentesen kombinálhatja és összehasonlíthatja a dokumentumokat az Aspose.Words használatával. Akár kezdő, akár tapasztalt fejlesztő, ezek a részletes útmutatók lehetővé teszik, hogy ezeket a képességeket hatékonyan integrálja dokumentummunkafolyamataiba.
 

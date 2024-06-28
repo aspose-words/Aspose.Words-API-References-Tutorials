@@ -15,7 +15,7 @@ Ebben az oktatóanyagban megtudjuk, hogyan határozható meg egy táblázat poz�
 2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
 
 ## 2. lépés: A dokumentum betöltése és a táblázat elérése
-Szövegfeldolgozás elindításához a táblázattal be kell töltenünk az azt tartalmazó dokumentumot, és hozzá kell férnünk. Kovesd ezeket a lepeseket:
+A Szövegfeldolgozás elindításához a táblázattal be kell töltenünk az azt tartalmazó dokumentumot, és hozzá kell férnünk. Kovesd ezeket a lepeseket:
 
 ```csharp
 // A dokumentumkönyvtár elérési útja

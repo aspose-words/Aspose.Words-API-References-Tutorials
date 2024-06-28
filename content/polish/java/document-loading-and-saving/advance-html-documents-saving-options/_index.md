@@ -2,13 +2,13 @@
 title: Zaawansowane opcje zapisywania dokumentów HTML w Aspose.Words Java
 linktitle: Zapisywanie dokumentów HTML za pomocą
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: W tym samouczku omówiliśmy różne zaawansowane opcje zapisywania dokumentów HTML za pomocą Aspose.Words dla Java. Opcje te umożliwiają tworzenie wysokiej jakości kodu HTML
+description: W tym samouczku omówiliśmy różne zaawansowane opcje zapisywania dokumentów HTML za pomocą Aspose.Words dla Java. Opcje te umożliwiają tworzenie wysokiej jakości kodu HTML.
 type: docs
 weight: 16
 url: /pl/java/document-loading-and-saving/advance-html-documents-saving-options/
 ---
 
-W tym samouczku przyjrzymy się zaawansowanym opcjom zapisywania dokumentów HTML udostępnianym przez Aspose.Words dla Java. Aspose.Words to potężny interfejs API Java do pracy z dokumentami programu Word, oferujący szeroką gamę funkcji do manipulacji i konwersji dokumentów.
+W tym samouczku omówimy zaawansowane opcje zapisywania dokumentów HTML udostępniane przez Aspose.Words dla Java. Aspose.Words to potężny interfejs API Java do pracy z dokumentami programu Word, oferujący szeroką gamę funkcji do manipulacji i konwersji dokumentów.
 
 ## 1. Wstęp
 Aspose.Words for Java umożliwia programową pracę z dokumentami programu Word. W tym samouczku skupimy się na zaawansowanych opcjach zapisywania dokumentów HTML, które pozwalają kontrolować sposób konwersji dokumentów Worda do formatu HTML.
@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. Wniosek
 tym samouczku zbadaliśmy zaawansowane opcje zapisywania dokumentów HTML udostępniane przez Aspose.Words dla Java. Opcje te zapewniają szczegółową kontrolę nad procesem konwersji, umożliwiając tworzenie dokumentów HTML bardzo przypominających oryginalne dokumenty programu Word.
 
-## 12. Często zadawane pytania
+## 12.FAQ
 Oto kilka często zadawanych pytań na temat pracy z Aspose.Words dla opcji zapisywania dokumentów Java i HTML:
 
 ### P1: Jak mogę przekonwertować HTML z powrotem do formatu Word przy użyciu Aspose.Words dla Java?

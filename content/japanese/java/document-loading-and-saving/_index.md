@@ -33,7 +33,7 @@ url: /ja/java/document-loading-and-saving/
 
 ### 異なる形式で保存する
 
-さまざまな形式でドキュメントを保存する方法を詳しく調べながら、Aspose.Words for Java の多用途性を探ってください。ドキュメントを PDF、DOCX、さらには HTML に簡単に変換できます。
+ドキュメントをさまざまな形式で保存する方法を詳しく調べながら、Aspose.Words for Java の多用途性を探ってください。ドキュメントを PDF、DOCX、さらには HTML に簡単に変換できます。
 
 ### ドキュメント設定の処理
 
@@ -73,4 +73,4 @@ Aspose.Words for Java を使用してドキュメントを RTF 形式で保存�
 ### [Aspose.Words for Java でドキュメントをテキスト ファイルとして保存する](./saving-documents-as-text-files/)
 Aspose.Words for Java でドキュメントをテキスト ファイルとして保存する方法を学びます。 Java コード例を含むステップバイステップ ガイドに従ってください。
 ### [Aspose.Words for Java でのドキュメント形式の決定](./determining-document-format/)
-Aspose.Words を使用して Java のドキュメント形式を検出する方法を学びます。 DOC、DOCXなどを特定します。ファイルを効率的に整理します。
+Aspose.Words を使用して Java でドキュメント形式を検出する方法を学びます。 DOC、DOCXなどを特定します。ファイルを効率的に整理します。

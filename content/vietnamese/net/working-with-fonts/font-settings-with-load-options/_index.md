@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Định cấu hình tùy chọn tải với cài đặt phông chữ
- Tiếp theo, chúng ta sẽ tạo một thể hiện của`LoadOptions`và chỉ định cài đặt phông chữ bằng cách tạo một phiên bản mới của`FontSettings` và gán nó cho`loadOptions.FontSettings`.
+ Tiếp theo, chúng ta sẽ tạo một thể hiện của`LoadOptions` và chỉ định cài đặt phông chữ bằng cách tạo một phiên bản mới của`FontSettings` và gán nó cho`loadOptions.FontSettings`.
 
 ```csharp
 // Định cấu hình tùy chọn tải với cài đặt phông chữ
@@ -61,7 +61,7 @@ Trong hướng dẫn này, chúng ta đã biết cách sử dụng các tùy ch�
 
 #### Câu hỏi: Tôi có thể chỉ định những cài đặt phông chữ nào khác bằng các tùy chọn tải trong Aspose.Words?
 
-Đáp: Bên cạnh việc chỉ định phông chữ mặc định, bạn cũng có thể chỉ định các cài đặt phông chữ khác như mã hóa mặc định bằng cách sử dụng các thuộc tính thích hợp của`LoadOptions` lớp, chẳng hạn như`DefaultEncoding`.
+ Đáp: Bên cạnh việc chỉ định phông chữ mặc định, bạn cũng có thể chỉ định các cài đặt phông chữ khác như mã hóa mặc định bằng cách sử dụng các thuộc tính thích hợp của`LoadOptions` lớp, chẳng hạn như`DefaultEncoding`.
 
 #### Hỏi: Điều gì xảy ra nếu phông chữ mặc định được chỉ định không có sẵn khi tải tài liệu?
 

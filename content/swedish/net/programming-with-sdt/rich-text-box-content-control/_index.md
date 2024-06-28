@@ -50,7 +50,7 @@ sdtRichText.ChildNodes.Add(para);
 ```
 
 ## Steg 5: Lägg till innehållskontrollen till dokumentet
- Lägg till innehållskontrollen för RTF-rutan till dokumentets brödtext genom att använda`AppendChild` metoden för dokumentets första avsnitts kropp.
+ Lägg till innehållskontrollen för RTF-rutan till dokumentets brödtext genom att använda`AppendChild` metod för dokumentets första avsnitts kropp.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);

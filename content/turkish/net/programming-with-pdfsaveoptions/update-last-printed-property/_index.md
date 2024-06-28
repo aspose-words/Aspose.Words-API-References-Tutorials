@@ -79,4 +79,4 @@ C: Bir PDF belgesindeki "Son Basılan" özelliğini Aspose.Words for .NET ile g�
  Kullan`Save` yöntemi`Document`Kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için sınıf.
 
 #### S: Oluşturulan PDF belgesinde "Son Yazdırılan" özelliğinin güncellenip güncellenmediğini nasıl kontrol edebilirim?
-C: PDF dosyasını Adobe Acrobat Reader gibi uyumlu bir PDF görüntüleyiciyle açıp belge bilgilerini görüntüleyerek, oluşturulan PDF belgesinde "Son Yazdırılan" özelliğinin güncellenip güncellenmediğini kontrol edebilirsiniz. Son yazdırmanın tarihi ve saati, PDF belgesinin oluşturulduğu tarih ve saate karşılık gelmelidir.
+C: PDF dosyasını Adobe Acrobat Reader gibi uyumlu bir PDF görüntüleyiciyle açıp belge bilgilerini görüntüleyerek oluşturulan PDF belgesinde "Son Yazdırılan" özelliğinin güncellenip güncellenmediğini kontrol edebilirsiniz. Son yazdırmanın tarihi ve saati, PDF belgesinin oluşturulduğu tarih ve saate karşılık gelmelidir.

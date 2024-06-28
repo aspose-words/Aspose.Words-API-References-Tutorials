@@ -1,7 +1,7 @@
 ---
 title: Dokumentknoten verstehen und darin navigieren
 linktitle: Dokumentknoten verstehen und darin navigieren
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für Python bearbeiten. Diese Schritt-für-Schritt-Anleitung behandelt das Laden, Formatieren, Tabellen, Bilder und mehr. Steigern Sie noch heute Ihre Fähigkeiten in der Dokumentenverarbeitung!
 type: docs
 weight: 20

@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-styles-and-themes/copy-styles/
 ---
 
-在本教程中，我们将探索提供的 C# 源代码，以使用 Aspose.Words for .NET 将 Word 文档样式从源文档复制到目标文档。此功能允许您将样式从一个文档传输到另一个文档，当您想要将一致的样式应用于多个文档时，这非常有用。
+在本教程中，我们将探索提供的 C# 源代码，以使用 Aspose.Words for .NET 将 Word 文档样式从源文档复制到目标文档。此功能允许您将样式从一个文档转移到另一个文档，当您想要将一致的样式应用于多个文档时，这会很有用。
 
 ## 第一步：搭建环境
 

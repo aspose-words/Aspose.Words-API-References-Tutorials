@@ -70,7 +70,7 @@ Ez egy teljes kódminta egy OLE objektum beszúrásához az Aspose.Words for .NE
 
 ## Következtetés
 
-Végezetül, végignéztünk egy lépésről-lépésre szóló útmutatót, amellyel az Aspose.Words for .NET segítségével OLE-objektumot illeszthetünk be egy OLE-csomaggal rendelkező Word dokumentumba.
+Végezetül, végignéztünk egy lépésről lépésre bemutatott útmutatón, amellyel az Aspose.Words for .NET használatával OLE-objektumot illeszthetünk be egy Word-dokumentumba egy OLE-csomaggal.
 
 Ha követi ezeket a lépéseket, az Aspose.Words for .NET segítségével sikeresen beillesztheti az OLE-csomagokat tartalmazó OLE-objektumokat Word-dokumentumaiba. Ügyeljen arra, hogy importálja a szükséges referenciákat, és gondosan kövesse az utasításokat a kívánt eredmény elérése érdekében.
 

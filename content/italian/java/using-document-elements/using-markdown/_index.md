@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Specificare l'elenco ordinato.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Specificare l'enfasi corsivo per il testo.
+// Specificare l'enfasi italiana del testo.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

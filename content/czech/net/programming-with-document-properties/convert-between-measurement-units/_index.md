@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Nakonfigurujte měrné jednotky
 
-Nyní převedeme hodnoty pro okraje, vzdálenosti záhlaví a zápatí atd. v různých měrných jednotkách. Pomocí následujícího kódu zadejte hodnoty v konkrétních měrných jednotkách:
+Nyní převedeme hodnoty okrajů, vzdálenosti záhlaví a zápatí atd. v různých měrných jednotkách. Pomocí následujícího kódu zadejte hodnoty v konkrétních měrných jednotkách:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -56,4 +56,4 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
   
 ```
 
-Nyní jste se naučili, jak převádět mezi měrnými jednotkami při zadávání okrajů, vzdáleností záhlaví a zápatí atd. v dokumentu pomocí Aspose.Words for .NET. Podle podrobného průvodce poskytnutého v tomto tutoriálu můžete snadno zadat hodnoty v požadovaných měrných jednotkách ve svých vlastních dokumentech.
+Nyní jste se naučili, jak převádět mezi měrnými jednotkami při zadávání okrajů, vzdáleností záhlaví a zápatí atd. v dokumentu pomocí Aspose.Words for .NET. Podle podrobného průvodce uvedeného v tomto tutoriálu můžete snadno zadat hodnoty v požadovaných měrných jednotkách ve svých vlastních dokumentech.

@@ -2,176 +2,156 @@
 title: إظهار إخفاء المحتوى ذي الإشارة المرجعية في مستند Word
 linktitle: إظهار إخفاء المحتوى ذي الإشارة المرجعية في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إظهار أو إخفاء محتوى الإشارة المرجعية في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إظهار المحتوى ذي الإشارة المرجعية أو إخفائه ديناميكيًا في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل الشامل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-في هذه المقالة، سوف نستكشف كود مصدر C# أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء المحتوى المرجعي في مكتبة Aspose.Words لـ .NET. تتيح لك هذه الميزة إظهار أو إخفاء محتويات الإشارة المرجعية في مستند Word بناءً على شرط معين عند دمج البيانات.
+## مقدمة
+
+مرحبًا يا من هناك! هل سبق لك أن أردت التحكم في رؤية محتوى معين داخل مستند Word بناءً على شروط معينة؟ باستخدام Aspose.Words for .NET، يمكنك إظهار المحتوى ذي الإشارة المرجعية أو إخفائه ديناميكيًا باستخدام بضعة أسطر فقط من التعليمات البرمجية. في هذا البرنامج التعليمي، سأرشدك خلال العملية خطوة بخطوة، مع التأكد من فهمك لكل جزء من التعليمات البرمجية. في النهاية، ستكون محترفًا في التعامل مع الإشارات المرجعية في مستندات Word. هيا بنا نبدأ!
 
 ## المتطلبات الأساسية
 
-- المعرفة الأساسية بلغة C#.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+قبل أن نتعمق في البرنامج التعليمي، دعونا نتأكد من أن لديك كل ما تحتاجه:
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+1. المعرفة الأساسية بـ C#: يجب أن تكون مرتاحًا لبناء جملة C# ومفاهيمها.
+2.  Aspose.Words لـ .NET: قم بتنزيله[هنا](https://releases.aspose.com/words/net/) . إذا لم تكن مستعدًا للشراء، يمكنك البدء بـ[تجربة مجانية](https://releases.aspose.com/).
+3. Visual Studio: أي إصدار حديث سوف يعمل، ولكن يوصى باستخدام الإصدار الأحدث.
+4. .NET Framework: تأكد من تثبيته على جهازك.
 
- نحن نستخدم ال`Bookmarks` خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد إظهار أو إخفاء المحتوى عليها:
+على استعداد للبدء؟ عظيم! لنبدأ باستيراد مساحات الأسماء الضرورية.
+
+## استيراد مساحات الأسماء
+
+لاستخدام Aspose.Words لـ .NET، نحتاج إلى استيراد مساحات الأسماء المطلوبة. تضمن هذه الخطوة أن نتمكن من الوصول إلى جميع الفئات والأساليب التي سنستخدمها.
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## الخطوة 2: إدراج حقول الدمج
+تعد مساحات الأسماء هذه ضرورية للعمل مع مستندات Word ومعالجة محتواها.
 
- نحن نستخدم منشئ المستندات`DocumentBuilder` لإدراج حقول الدمج الضرورية. ستقوم حقول الدمج هذه بتعيين شرط لإظهار أو إخفاء محتوى الإشارة المرجعية اعتمادًا على قيمة`showHide` عامل:
+## الخطوة 1: إعداد الوثيقة
+
+أولاً، لنقم بإنشاء مستند Word جديد ومنشئ المستندات. يساعدنا منشئ المستندات على إضافة المحتوى ومعالجته بسهولة داخل المستند.
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## الخطوة 3: نقل محتوى الإشارة المرجعية
+في هذه الخطوة، نقوم بتهيئة مستند جديد ومنشئ المستندات. وهذا يهيئ بيئتنا لمزيد من العمليات.
 
-نقوم بمراجعة محتويات الإشارة المرجعية ونحركها حتى تظهر
+## الخطوة 2: إضافة محتوى مرجعي
 
-isse قبل الإشارة المرجعية. سيتحكم هذا في إظهار المحتوى أو إخفائه بناءً على الشرط المحدد:
+بعد ذلك، سنقوم بإضافة بعض المحتوى إلى المستند وإنشاء إشارة مرجعية حوله. ستساعدنا هذه الإشارة المرجعية في تحديد المحتوى ومعالجته.
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ هنا، نضيف بعض النص قبل وبعد المحتوى الذي تم وضع إشارة مرجعية عليه. ال`StartBookmark` و`EndBookmark` تحدد الطرق حدود الإشارة المرجعية.
+
+## الخطوة 3: إدراج حقل شرطي
+
+للتحكم في رؤية المحتوى الذي تم وضع إشارة مرجعية عليه، سنستخدم حقلاً شرطيًا. سيتحقق هذا الحقل من الحالة ويعرض المحتوى أو يخفيه وفقًا لذلك.
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+في هذه الخطوة، نقوم بإدراج حقل IF الذي يتحقق من قيمة الإشارة المرجعية. إذا كانت القيمة "صحيحة"، فسيتم عرض "مرئي"؛ وإلا فإنه سيتم عرض "مخفي".
+
+## الخطوة 4: إعادة ترتيب العقد
+
+بعد ذلك، نحتاج إلى إعادة ترتيب العقد لضمان تطبيق المنطق الشرطي بشكل صحيح على المحتوى الذي تم وضع إشارة مرجعية عليه.
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## الخطوة 4: نقل بقية محتوى الإشارة المرجعية
-
-نقوم بنقل بقية محتوى الإشارة المرجعية بعد الإشارة المرجعية، باستخدام العقدة النهائية للإشارة المرجعية كنقطة إدراج:
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## الخطوة 5: تنفيذ الدمج
+هنا، نقوم بتحريك العقد للتأكد من أن الشرط يشمل المحتوى الذي تم وضع إشارة مرجعية عليه بشكل صحيح.
 
- نحن نستخدم ال`Execute` طريقة الوثيقة`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `showHide` المتغير:
+## الخطوة 5: تنفيذ دمج المراسلات
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### مثال على التعليمات البرمجية المصدر لـ Show Hide Bookmarked Content باستخدام Aspose.Words لـ .NET
-
-فيما يلي المثال الكامل لكود المصدر لتوضيح إظهار أو إخفاء محتوى الإشارة المرجعية باستخدام Aspose.Words for .NET:
+وأخيرًا، سنقوم بتنفيذ عملية دمج البريد لتعيين قيمة الإشارة المرجعية وتحديد ما إذا كان يجب إظهار المحتوى أم إخفاؤه.
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {إذا "{إشارة مرجعية MERGEFIELD}" = "صحيح" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+تقوم هذه الخطوة بتعيين قيمة الإشارة المرجعية على "صحيح"، مما سيجعل المحتوى مرئيًا بناءً على حالتنا.
+
+## الخطوة 6: حفظ المستند
+
+بعد كل المعالجات، الخطوة الأخيرة هي حفظ المستند المعدل.
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+وهنا نقوم بحفظ المستند باسم ملف وصفي للإشارة إلى التغييرات.
 
 ## خاتمة
 
-في هذه المقالة، قمنا باستكشاف التعليمات البرمجية المصدر لـ C# لفهم كيفية استخدام ميزة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلاً خطوة بخطوة لإظهار أو إخفاء محتويات الإشارة المرجعية بناءً على حالة معينة عند دمج البيانات.
+ وهذا كل شيء! لقد تعلمت بنجاح كيفية إظهار أو إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه في مستند Word باستخدام Aspose.Words for .NET. يغطي هذا البرنامج التعليمي إنشاء مستند، وإضافة الإشارات المرجعية، وإدراج الحقول الشرطية، وإعادة ترتيب العقد، وتنفيذ دمج البريد. يقدم Aspose.Words عددًا كبيرًا من الميزات، لذا لا تتردد في استكشافه[وثائق واجهة برمجة التطبيقات](https://reference.aspose.com/words/net/) لمزيد من القدرات المتقدمة.
 
-### الأسئلة الشائعة لإظهار إخفاء المحتوى ذي الإشارة المرجعية في مستند Word
+## الأسئلة الشائعة
 
-#### س: هل يمكنني استخدام نفس الشرط لإشارات مرجعية متعددة في نفس المستند؟
+### 1. ما هو Aspose.Words لـ .NET؟
 
-ج: نعم، يمكنك استخدام نفس الشرط لإشارات مرجعية متعددة في نفس المستند. ما عليك سوى تكرار الخطوات من 2 إلى 5 لكل إشارة مرجعية، وضبط اسم الإشارة المرجعية واختياريًا قيمة`showhide` متغير حسب الحاجة.
+Aspose.Words for .NET هي مكتبة قوية تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. يتم استخدامه على نطاق واسع لمهام أتمتة المستندات.
 
-#### س: كيف يمكنني إضافة المزيد من الشروط لإظهار أو إخفاء محتوى الإشارة المرجعية؟
+### 2. هل يمكنني استخدام Aspose.Words لـ .NET مجانًا؟
 
- ج: لإضافة المزيد من الشروط، يمكنك استخدام عوامل التشغيل المنطقية مثل`AND` و`OR` في الكود الخاص بإدراج حقول الدمج في الخطوة 2. قم بتحرير الشرط في الكود التالي لإضافة شروط إضافية:
+ يمكنك تجربة Aspose.Words لـ .NET باستخدام ملف[تجربة مجانية](https://releases.aspose.com/). للاستخدام طويل الأمد، ستحتاج إلى شراء ترخيص.
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. كيف يمكنني تعديل الخصائص الأخرى للإشارة المرجعية؟
 
-#### س: كيف يمكنني حذف إشارة مرجعية في مستند Word باستخدام Aspose.Words لـ .NET؟
+ يسمح لك Aspose.Words بمعالجة الخصائص المختلفة للإشارة المرجعية، مثل النص والموقع. الرجوع إلى[وثائق واجهة برمجة التطبيقات](https://reference.aspose.com/words/net/) للحصول على تعليمات مفصلة.
 
- ج: لإزالة إشارة مرجعية في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Remove` الطريقة من`Bookmarks` مجموعة من نطاق الوثيقة. فيما يلي نموذج التعليمات البرمجية لحذف إشارة مرجعية معينة:
+### 4. كيف يمكنني الحصول على الدعم لـ Aspose.Words لـ .NET؟
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+يمكنك الحصول على الدعم من خلال زيارة[Aspose منتدى الدعم](https://forum.aspose.com/c/words/8).
 
-#### س: هل مكتبة Aspose.Words مجانية؟
+### 5. هل يمكنني التعامل مع أنواع أخرى من المحتوى باستخدام Aspose.Words لـ .NET؟
 
- ج: مكتبة Aspose.Words هي مكتبة تجارية وتتطلب ترخيصًا صالحًا لاستخدامها في مشاريعك. يمكنك التحقق[Aspose.Words لمراجع .NET API](https://reference.aspose.com/words/net/) لمعرفة المزيد حول خيارات الترخيص والأسعار.
-
-#### س: هل توجد مكتبات أخرى متاحة لمعالجة الكلمات باستخدام مستندات Word في .NET؟
-
-ج: نعم، هناك مكتبات أخرى متاحة لمعالجة الكلمات باستخدام مستندات Word في .NET، مثل Open XML SDK وGemBox.Document. يمكنك استكشاف هذه المكتبات كبدائل لـ Aspose.Words بناءً على احتياجاتك وتفضيلاتك المحددة.
+نعم، يدعم Aspose.Words for .NET أنواعًا مختلفة من معالجة المحتوى، بما في ذلك النصوص والصور والجداول والمزيد.

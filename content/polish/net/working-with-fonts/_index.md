@@ -24,7 +24,7 @@ Niezależnie od tego, czy chcesz formatować tekst przy użyciu różnych czcion
 | [Ustaw znacznik wyróżnienia czcionki](./set-font-emphasis-mark/) | Dowiedz się, jak ustawić styl wyróżnienia czcionki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. |
 | [Ustaw foldery czcionek](./set-fonts-folders/) | Przewodnik krok po kroku dotyczący ustawiania folderów czcionek podczas renderowania dokumentu przy użyciu Aspose.Words dla .NET. |
 | [Włącz opcję Wyłącz zastępowanie czcionek](./enable-disable-font-substitution/) | W tym samouczku dowiesz się, jak włączyć lub wyłączyć zastępowanie czcionek w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Ustaw ustawienia zastępczej czcionki](./set-font-fallback-settings/) | Dowiedz się, jak ustawić ustawienia zastępowania czcionek w Aspose.Words dla .NET i dostosowywać zastępowanie czcionek w dokumentach programu Word. |
+| [Ustaw ustawienia zastępczej czcionki](./set-font-fallback-settings/) | Dowiedz się, jak ustawić ustawienia podstawiania czcionek w Aspose.Words dla .NET i dostosować podstawianie czcionek w dokumentach programu Word. |
 | [Załaduj ustawienia awaryjne Noto](./load-noto-fallback-settings/) | W tym samouczku dowiesz się, jak załadować parametry zastępowania Noto do dokumentu programu Word za pomocą Aspose.Words dla .NET. |
 | [Ustaw domyślną instancję folderów czcionek](./set-fonts-folders-default-instance/) | Przewodnik krok po kroku dotyczący ustawiania domyślnego folderu czcionek podczas renderowania dokumentu przy użyciu Aspose.Words dla .NET. |
 | [Ustaw foldery czcionek w wielu folderach](./set-fonts-folders-multiple-folders/) | Przewodnik krok po kroku dotyczący ustawiania wielu folderów czcionek podczas renderowania dokumentu przy użyciu Aspose.Words dla .NET. |

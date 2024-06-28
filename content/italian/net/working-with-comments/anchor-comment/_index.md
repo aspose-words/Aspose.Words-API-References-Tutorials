@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Crea tre oggetti Esegui.
-// I primi due eseguono del testo, mentre il terzo esegue un commento
+// primi due eseguono del testo, mentre il terzo esegue un commento
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ R: Per aggiungere un'ancora di commento in un documento Aspose.Words per .NET, s
 
 #### D: Come posso modificare il testo di un commento collegato a un'ancora di commento in Aspose.Words per .NET?
 
- A: Per modificare il testo di un commento associato a un'ancora di commento in Aspose.Words per .NET, puoi accedere a`Comment.Text` proprietà del corrispondente`Comment` oggetto e modificare il testo secondo necessità.
+A: Per modificare il testo di un commento associato a un'ancora di commento in Aspose.Words per .NET, puoi accedere a`Comment.Text` proprietà del corrispondente`Comment` oggetto e modificare il testo secondo necessità.
 

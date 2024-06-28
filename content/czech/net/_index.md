@@ -4,7 +4,7 @@ linktitle: Aspose.Words for .NET výukové programy
 type: docs
 weight: 10
 url: /cs/net/
-description: "Výukové programy API a úryvky kódu Aspose.Words for .NET, které zahrnují vytváření, úpravy, konverzi, tisk a mnoho dalších funkcí pro zpracování dokumentů Word"
+description: "Výukové programy API a úryvky kódu Aspose.Words pro .NET, které zahrnují vytváření, úpravy, konverzi, tisk a mnoho dalších funkcí využívajících zpracování dokumentů Word"
 is_root: true
 ---
 

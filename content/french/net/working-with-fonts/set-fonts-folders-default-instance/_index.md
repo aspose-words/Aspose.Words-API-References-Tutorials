@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Définir le dossier de polices par défaut
-Ensuite, vous pouvez définir le dossier de polices par défaut à l'aide du`FontSettings.DefaultInstance` la classe et le`SetFontsFolder()` méthode. Spécifiez le chemin d'accès au dossier de polices que vous souhaitez utiliser comme dossier par défaut.
+ Ensuite, vous pouvez définir le dossier de polices par défaut à l'aide du`FontSettings.DefaultInstance` la classe et le`SetFontsFolder()`méthode. Spécifiez le chemin d'accès au dossier de polices que vous souhaitez utiliser comme dossier par défaut.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

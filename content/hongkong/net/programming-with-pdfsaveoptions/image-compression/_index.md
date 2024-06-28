@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 ### 經常問的問題
 
 #### Q：什麼是 PDF 文件中的影像壓縮？
-答：壓縮PDF文件中的圖片是指縮小PDF文件中包含的圖片的大小，以減少PDF文件的整體大小。這減少了載入和查看 PDF 時所需的儲存空間並提高了效能。
+答：壓縮PDF文件中的圖片是縮小PDF文件中包含的圖片的大小，以減少PDF文件的整體大小。這減少了載入和查看 PDF 時所需的儲存空間並提高了效能。
 
 #### Q：如何使用 Aspose.Words for .NET 壓縮 PDF 文件中的映像？
 答：若要使用 Aspose.Words for .NET 壓縮 PDF 文件中的影像，請依照下列步驟操作：

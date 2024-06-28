@@ -1,6 +1,6 @@
 ---
-title: แทรกวัตถุ Ole ในเอกสาร Word
-linktitle: แทรกวัตถุ Ole ในเอกสาร Word
+title: แทรกวัตถุแรกลงในเอกสาร Word
+linktitle: แทรกวัตถุแรกลงในเอกสาร Word
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: เรียนรู้วิธีแทรกวัตถุ OLE ในเอกสาร word โดยใช้ Aspose.Words สำหรับ .NET
 type: docs
@@ -19,7 +19,7 @@ using Aspose.Words.Drawing;
 ```
 
 ## ขั้นตอนที่ 2: สร้างเอกสารและตัวสร้างเอกสารใหม่
- ในขั้นตอนนี้ เราจะสร้างเอกสารใหม่โดยใช้`Document` คลาสและตัวสร้างเอกสารโดยใช้`DocumentBuilder` ระดับ.
+ ในขั้นตอนนี้ เราจะสร้างเอกสารใหม่โดยใช้`Document` คลาสและตัวสร้างเอกสารโดยใช้`DocumentBuilder` ชั้นเรียน
 
 ```csharp
 Document doc = new Document();
@@ -79,7 +79,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-#### ถาม: จะแทรกวัตถุ OLE ในเอกสารได้อย่างไร
+#### ถาม: จะแทรกวัตถุ OLE ลงในเอกสารได้อย่างไร
 
  ตอบ: ใช้`InsertOleObject`วิธีการสร้างเอกสาร (`DocumentBuilder`) เพื่อแทรกวัตถุ OLE ลงในเอกสาร ระบุ URL ของออบเจ็กต์ OLE ประเภทออบเจ็กต์ ตัวเลือกการแสดงผล และการตั้งค่าที่จำเป็นอื่นๆ นี่คือตัวอย่าง:
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-styles-and-themes/insert-style-separator/
 ---
-V tomto tutoriálu prozkoumáme zdrojový kód jazyka C# poskytnutý pro vložení oddělovače stylu do dokumentu pomocí Aspose.Words for .NET. Vytvoříme nový dokument, nadefinujeme vlastní styly a vložíme oddělovač stylů.
+tomto tutoriálu prozkoumáme zdrojový kód jazyka C# poskytnutý pro vložení oddělovače stylu do dokumentu pomocí Aspose.Words for .NET. Vytvoříme nový dokument, nadefinujeme vlastní styly a vložíme oddělovač stylů.
 
 ## Krok 1: Nastavení prostředí
 
@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- V tomto kroku vytvoříme nový`Document` objekt a přidružený`DocumentBuilder` objekt.
+ tomto kroku vytvoříme nový`Document` objekt a přidružený`DocumentBuilder` objekt.
 
 ## Krok 3: Vytvoření a konfigurace vlastního stylu
 
@@ -98,7 +98,7 @@ Chcete-li nastavit prostředí, musíte se ujistit, že máte Aspose.Words for .
 
 #### Jak vytvořím a nakonfiguruji vlastní styl?
 
- Chcete-li vytvořit vlastní styl, můžete použít`Styles.Add` metoda`Document` objekt. Určete typ stylu (např.`StyleType.Paragraph`a zadejte název stylu. Po vytvoření můžete upravit vlastnosti písma objektu stylu a nakonfigurovat jeho vzhled.
+ Chcete-li vytvořit vlastní styl, můžete použít`Styles.Add` metoda`Document` objekt. Určete typ stylu (např.`StyleType.Paragraph`) a zadejte název stylu. Po vytvoření můžete upravit vlastnosti písma objektu stylu a nakonfigurovat jeho vzhled.
 
 #### Jak vložím oddělovač stylu?
 
@@ -106,7 +106,7 @@ Chcete-li nastavit prostředí, musíte se ujistit, že máte Aspose.Words for .
 
 #### Jak mohu použít různé styly na různé části textu?
 
- Na různé části textu můžete použít různé styly nastavením`ParagraphFormat.StyleName` vlastnictvím`DocumentBuilder` objekt. Před psaním textu můžete nastavit název stylu na požadovaný styl a následující text bude podle toho formátován.
+ Na různé části textu můžete použít různé styly nastavením`ParagraphFormat.StyleName` vlastnictvím`DocumentBuilder`objekt. Před psaním textu můžete nastavit název stylu na požadovaný styl a následující text bude podle toho formátován.
 
 #### Mohu uložit dokument v různých formátech?
 

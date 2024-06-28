@@ -58,7 +58,7 @@ Congratulazioni! Ora hai imparato come utilizzare la funzione "Collegamento auto
 
 #### D: Come posso creare un collegamento automatico a un indirizzo URL in Aspose.Words?
 
-R: Per creare un collegamento automatico a un indirizzo URL in Aspose.Words, è possibile utilizzare il file`<a>` etichetta con il`href` attributo contenente l'indirizzo URL. Ad esempio, puoi usare`<a href="https://www.aspose.com">https://www.aspose.com</a>` per collegarsi automaticamente al "https: //www.aspose.com".
+ R: Per creare un collegamento automatico a un indirizzo URL in Aspose.Words, è possibile utilizzare il file`<a>` etichetta con il`href` attributo contenente l'indirizzo URL. Ad esempio, puoi usare`<a href="https://www.aspose.com">https://www.aspose.com</a>` per collegarsi automaticamente al "https: //www.aspose.com".
 
 #### D: È possibile personalizzare il testo visualizzato di un collegamento automatico in Aspose.Words?
 
@@ -66,4 +66,4 @@ R: Per creare un collegamento automatico a un indirizzo URL in Aspose.Words, è 
 
 #### D: Come posso aggiungere ulteriori attributi a un collegamento automatico in Aspose.Words?
 
- R: Per aggiungere ulteriori attributi a un collegamento automatico in Aspose.Words, è possibile utilizzare attributi HTML aggiuntivi all'interno del file`<a>` etichetta. Ad esempio, puoi usare`<a href="https://www.aspose.com" target="_blank">Link</a>` per aprire il collegamento in una nuova finestra o scheda utilizzando il file` attribute target="_blank"`.
+R: Per aggiungere ulteriori attributi a un collegamento automatico in Aspose.Words, è possibile utilizzare attributi HTML aggiuntivi all'interno del file`<a>` etichetta. Ad esempio, puoi usare`<a href="https://www.aspose.com" target="_blank">Link</a>` per aprire il collegamento in una nuova finestra o scheda utilizzando il file` attribute target="_blank"`.

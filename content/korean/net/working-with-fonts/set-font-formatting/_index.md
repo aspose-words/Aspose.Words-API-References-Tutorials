@@ -15,14 +15,14 @@ url: /ko/net/working-with-fonts/set-font-formatting/
 - 프로젝트에 설치된 .NET용 Aspose.Words 라이브러리
 
 ## 1단계: 문서 디렉터리 정의
- Word 문서 위치에 대한 디렉터리 경로를 설정하여 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 코드에서 적절한 경로를 사용하세요.
+Word 문서 위치에 대한 디렉터리 경로를 설정하여 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 코드에서 적절한 경로를 사용하세요.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2단계: 문서 만들기 및 서식 지정
- 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder` 문서를 작성하는 클래스입니다. 사용`Font` 의 재산`DocumentBuilder` 글꼴 서식 속성에 액세스합니다.
+ 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder`문서를 작성하는 클래스입니다. 사용`Font` 의 재산`DocumentBuilder` 글꼴 서식 속성에 액세스합니다.
 
 ```csharp
 Document doc = new Document();

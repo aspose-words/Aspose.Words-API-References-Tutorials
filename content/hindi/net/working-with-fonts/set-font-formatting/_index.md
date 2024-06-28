@@ -15,14 +15,14 @@ url: /hi/net/working-with-fonts/set-font-formatting/
 - आपके प्रोजेक्ट में .NET के लिए Aspose.Words लाइब्रेरी स्थापित है
 
 ## चरण 1: दस्तावेज़ निर्देशिका को परिभाषित करें
- अपने Word दस्तावेज़ के स्थान पर निर्देशिका पथ सेट करके प्रारंभ करें। प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` उचित पथ के साथ कोड में।
+अपने Word दस्तावेज़ के स्थान पर निर्देशिका पथ सेट करके प्रारंभ करें। प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` उचित पथ के साथ कोड में।
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## चरण 2: दस्तावेज़ बनाएं और प्रारूपित करें
- का एक उदाहरण बनाएं`Document` कक्षा और`DocumentBuilder` दस्तावेज़ बनाने के लिए क्लास। उपयोग`Font` की संपत्ति`DocumentBuilder` फ़ॉन्ट स्वरूपण गुणों तक पहुँचने के लिए।
+ का एक उदाहरण बनाएं`Document` कक्षा और`DocumentBuilder`दस्तावेज़ बनाने के लिए क्लास। उपयोग`Font` की संपत्ति`DocumentBuilder` फ़ॉन्ट स्वरूपण गुणों तक पहुँचने के लिए।
 
 ```csharp
 Document doc = new Document();

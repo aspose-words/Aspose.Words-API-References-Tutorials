@@ -17,7 +17,7 @@ Geliştiriciler, Tablo İşleme eğitimlerindeki adım adım talimatları ve kod
 Tablo işleme için Aspose.Words for Java kullanmanın bazı avantajları şunlardır:
 
 * Tablo işlemeye yönelik kapsamlı API seti
-* Ayrıntılı eğitimler ve belgeler
+* Kapsamlı eğitimler ve belgeler
 * Kullanımı kolay API'ler
 * Çok çeşitli belge formatları desteği
 * Yüksek performans ve ölçeklenebilirlik

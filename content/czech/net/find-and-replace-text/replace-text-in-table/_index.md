@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### Otázka: Jak mohu získat přístup k tabulce v dokumentu pomocí Aspose.Words for .NET?
 
-Odpověď: Jakmile je dokument načten, získáte přístup k tabulce, kde chcete provést náhradu textu. V Aspose.Words pro .NET můžete použít`GetChild` metoda s`NodeType.Table` parametr pro získání požadované tabulky. Například:
+Odpověď: Jakmile je dokument načten, získáte přístup k tabulce, kde chcete provést náhradu textu. V Aspose.Words pro .NET můžete použít`GetChild` metoda s`NodeType.Table` parametry pro získání požadované tabulky. Například:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

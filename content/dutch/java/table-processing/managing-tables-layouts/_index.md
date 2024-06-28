@@ -18,7 +18,7 @@ Voordat we ingaan op de technische details, gaan we kort onderzoeken waarom het 
 
 ## Aan de slag met Aspose.Words voor Java
 
- Om onze reis te beginnen, moet Aspose.Words voor Java geïnstalleerd en ingesteld zijn. Als u dit nog niet heeft gedaan, kunt u het downloaden van de Aspose-website[hier](https://releases.aspose.com/words/java/). Zodra u de bibliotheek heeft geïnstalleerd, bent u klaar om de mogelijkheden ervan te benutten voor het effectief beheren van tabellen en lay-outs.
+ Om onze reis te beginnen, moet Aspose.Words voor Java geïnstalleerd en ingesteld zijn. Als u dit nog niet heeft gedaan, kunt u het downloaden van de website van Aspose[hier](https://releases.aspose.com/words/java/). Zodra u de bibliotheek heeft geïnstalleerd, bent u klaar om de mogelijkheden ervan te benutten voor het effectief beheren van tabellen en lay-outs.
 
 ## Basistabelbeheer
 
@@ -30,7 +30,7 @@ De eerste stap bij het beheren van tabellen is het maken ervan. Aspose.Words maa
 // Maak een nieuw document
 Document doc = new Document();
 
-// Maak een tabel met 3 rijen en 4 kolommen
+// Maak een tabel met 3 rijen en 4 kolommen.
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

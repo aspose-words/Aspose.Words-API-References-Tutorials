@@ -19,7 +19,7 @@ url: /ko/net/join-and-append-documents/ignore-header-footer/
 
 ## 2단계: 원본 및 대상 문서 열기
 
- 다음을 사용하여 원본 및 대상 문서를 엽니다.`Document` 클래스 생성자. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 다음을 사용하여 원본 및 대상 문서를 엽니다.`Document` 클래스 생성자. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 // 문서 디렉터리 경로
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## 4단계: 원본 문서를 대상 문서에 추가
 
- 사용`AppendDocument` 소스 문서를 추가하는 대상 문서의 메서드입니다. 통과하다`ImportFormatMode.KeepSourceFormatting` 두 번째 매개변수로 가져오기 형식 옵션을 세 번째 매개변수로 사용합니다.
+ 사용`AppendDocument` 소스 문서를 추가하는 대상 문서의 메서드입니다. 통과하다`ImportFormatMode.KeepSourceFormatting`두 번째 매개변수로 가져오기 형식 옵션을 세 번째 매개변수로 사용합니다.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## 5단계: 대상 문서 저장
 
- 마지막으로 다음을 사용하여 수정된 대상 문서를 저장합니다.`Save` 의 방법`Document` 물체.
+마지막으로 다음을 사용하여 수정된 대상 문서를 저장합니다.`Save` 의 방법`Document` 물체.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

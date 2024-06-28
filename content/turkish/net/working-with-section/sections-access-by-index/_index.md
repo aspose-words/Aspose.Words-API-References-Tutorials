@@ -36,7 +36,7 @@ Section section = doc.Sections[0];
 ```
 
 ## 3. Adım: Bölüm ayarlarını düzenleyin
-Bölüm ayarlarını değiştirmek için bölümün özelliklerini kullanırız.`PageSetup` nesne. Bu örnekte kenar boşluklarını, üstbilgi ve altbilgi mesafesini ve metin sütunu aralığını değiştiriyoruz.
+ Bölüm ayarlarını değiştirmek için bölümün özelliklerini kullanırız.`PageSetup`nesne. Bu örnekte kenar boşluklarını, üstbilgi ve altbilgi mesafesini ve metin sütunu aralığını değiştiriyoruz.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3.17cm
@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### S: Aspose.Words for .NET'te bölüm ayarlarını nasıl değiştiririm?
 
- C: Bir bölümün ayarlarını değiştirmek için bölümün özelliklerini kullanabilirsiniz.`PageSetup` nesne. Bu örnekte kenar boşluklarını, üstbilgi ve altbilgi mesafesini ve metin sütunu aralığını değiştiriyoruz.
+ C: Bir bölümün ayarlarını değiştirmek için bölümün özelliklerini kullanabilirsiniz.`PageSetup`nesne. Bu örnekte kenar boşluklarını, üstbilgi ve altbilgi mesafesini ve metin sütunu aralığını değiştiriyoruz.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3.17cm

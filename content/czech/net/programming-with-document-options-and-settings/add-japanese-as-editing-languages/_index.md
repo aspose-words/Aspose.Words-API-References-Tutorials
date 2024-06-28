@@ -42,7 +42,7 @@ Console.WriteLine(
 
 Kód zkontroluje, zda ID jazyka Dálného východu odpovídá japonštině. Podle výsledku zobrazí odpovídající zprávu.
 
-### Příklad zdrojového kódu pro Přidat japonštinu jako editační jazyky pomocí Aspose.Words pro .NET
+### Příklad zdrojového kódu pro Add Japanese As Editing Languages pomocí Aspose.Words for .NET
 
 ```csharp
 

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Stap 2: Stel de standaardlettertypemap in
-Vervolgens kunt u de standaardlettertypemap instellen met behulp van de`FontSettings.DefaultInstance` klasse en de`SetFontsFolder()` methode. Geef het pad op naar de map met lettertypen die u als standaardmap wilt gebruiken.
+ Vervolgens kunt u de standaardlettertypemap instellen met behulp van de`FontSettings.DefaultInstance` klasse en de`SetFontsFolder()`methode. Geef het pad op naar de map met lettertypen die u als standaardmap wilt gebruiken.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

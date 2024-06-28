@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## الخطوة 5: احفظ المستند المحول
- استخدم ال`Save()`طريقة لحفظ المستند مع تحويل الحقول إلى نص في دليل المستند المحدد.
+ استخدم ال`Save()` طريقة لحفظ المستند مع تحويل الحقول إلى نص في دليل المستند المحدد.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

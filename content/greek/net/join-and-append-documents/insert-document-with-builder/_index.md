@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Βήμα 4: Τοποθετήστε το DocumentBuilder
 
- Μετακίνησε το`DocumentBuilder` στο τέλος του εγγράφου χρησιμοποιώντας το`MoveToDocumentEnd` μέθοδος. Εισαγάγετε μια αλλαγή σελίδας για να διαχωρίσετε το υπάρχον περιεχόμενο από το εισαγόμενο έγγραφο.
+Μετακίνησε το`DocumentBuilder` στο τέλος του εγγράφου χρησιμοποιώντας το`MoveToDocumentEnd` μέθοδος. Εισαγάγετε μια αλλαγή σελίδας για να διαχωρίσετε το υπάρχον περιεχόμενο από το εισαγόμενο έγγραφο.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Βήμα 6: Αποθηκεύστε το τροποποιημένο έγγραφο
 
- Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
+Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

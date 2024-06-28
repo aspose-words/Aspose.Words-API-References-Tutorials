@@ -8,7 +8,7 @@ weight: 10
 url: /vi/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-text/
 ---
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn mã nguồn C# để xuất các trường biểu mẫu nhập văn bản dưới dạng văn bản thuần túy với Aspose.Words cho .NET. Tính năng này cho phép bạn xuất các trường của biểu mẫu nhập văn bản dưới dạng văn bản có thể đọc được, thay vì xuất chúng dưới dạng phần tử nhập HTML.
+Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn mã nguồn C# để xuất các trường biểu mẫu nhập văn bản dưới dạng văn bản thuần túy với Aspose.Words cho .NET. Tính năng này cho phép bạn xuất các trường biểu mẫu nhập văn bản dưới dạng văn bản có thể đọc được, thay vì xuất chúng dưới dạng phần tử nhập HTML.
 
 ## Bước 1: Thiết lập dự án
 

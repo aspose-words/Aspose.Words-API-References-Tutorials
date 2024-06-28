@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- En este código, creamos un nuevo`Document` y un`DocumentBuilder` . El`insert_text_box`El método se utiliza para agregar un cuadro de texto al documento. Puede personalizar el contenido, la posición y el tamaño del cuadro de texto según sus requisitos.
+ En este código, creamos un nuevo`Document` y un`DocumentBuilder` . El`insert_text_box` El método se utiliza para agregar un cuadro de texto al documento. Puede personalizar el contenido, la posición y el tamaño del cuadro de texto según sus requisitos.
 
 ## Formatear cuadros de texto
 

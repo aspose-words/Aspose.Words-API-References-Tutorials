@@ -2,7 +2,7 @@
 title: さまざまなドキュメント形式の処理
 linktitle: さまざまなドキュメント形式の処理
 second_title: Aspose.Words Java ドキュメント処理 API
-description: さまざまなドキュメント形式を処理する際に、Aspose.Words for Java の能力を最大限に活用します。テキスト編集や変換などを実践的な例で学びましょう。
+description: さまざまなドキュメント形式を処理する際に、Aspose.Words for Java の能力を最大限に活用します。テキストの編集や変換などを実践的な例で学びましょう。
 type: docs
 weight: 10
 url: /ja/java/word-processing/handling-different-document-formats/
@@ -26,7 +26,7 @@ Aspose.Words for Java を利用するには、Aspose.Words JAR ファイルを�
 
 2. JAR をプロジェクトに追加: ダウンロードした JAR ファイルをプロジェクトのクラスパスに含めます。
 
-## さまざまなドキュメント形式の読み込み
+## さまざまなドキュメント形式のロード
 
 Aspose.Words for Java の主な長所の 1 つは、さまざまなドキュメント形式を簡単にロードできることです。 Microsoft Word ドキュメント、PDF、またはその他の形式を扱う場合でも、Aspose.Words を使用するとプロセスが簡素化されます。
 
@@ -40,7 +40,7 @@ Document doc = new Document("sample.docx");
 ### PDF ドキュメントの読み込み
 
 ```java
-//PDF ドキュメントをロードする
+//PDFドキュメントをロードする
 Document doc = new Document("sample.pdf");
 ```
 
@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### テーブルの作成
 
 ```java
-// 3行4列のテーブルを作成する
+// 3行4列のテーブルを作成します。
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

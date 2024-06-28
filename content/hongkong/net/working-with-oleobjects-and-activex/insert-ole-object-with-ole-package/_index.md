@@ -72,7 +72,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 總之，我們已經完成了使用 Aspose.Words for .NET 將 OLE 物件插入帶有 OLE 套件的 Word 文件的逐步指南。
 
-透過執行這些步驟，您將能夠使用 Aspose.Words for .NET 成功將帶有 OLE 套件的 OLE 物件插入 Word 文件中。請務必匯入必要的參考並仔細按照說明進行操作，以獲得所需的結果。
+透過執行這些步驟，您將能夠使用 Aspose.Words for .NET 將帶有 OLE 套件的 OLE 物件成功插入 Word 文件中。請務必匯入必要的參考並仔細按照說明進行操作，以獲得所需的結果。
 
 ### 使用 ole 套件在 word 中插入 ole 物件的常見問題解答
 

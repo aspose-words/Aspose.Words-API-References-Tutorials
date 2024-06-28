@@ -321,7 +321,7 @@ Tabeller är ett kraftfullt sätt att organisera och presentera data i dina doku
 // Skapa ett nytt dokument
 Document doc = new Document();
 
-// Skapa en tabell med 3 rader och 3 kolumner
+// Skapa en tabell med 3 rader och 3 kolumner.
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));
@@ -342,7 +342,7 @@ doc.save("TableDocument.docx");
 
 I den här koden skapar vi en enkel tabell med tre rader och tre kolumner.
 
-## Dokument spara och exportera
+## Spara och exportera dokument
 
 När du har skapat och formaterat ditt dokument är det viktigt att spara eller exportera det i önskat format. Aspose.Words för Java stöder olika dokumentformat, inklusive DOCX, PDF och mer. Så här sparar du ett dokument som PDF:
 

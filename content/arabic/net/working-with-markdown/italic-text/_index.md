@@ -1,6 +1,6 @@
 ---
-title: نص مائل
-linktitle: نص مائل
+title: النص الإيطالي
+linktitle: النص الإيطالي
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
 description: تعرف على كيفية جعل النص مائلًا باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // استخدم منشئ المستندات لإضافة محتوى إلى المستند.
 DocumentBuilder builder = new DocumentBuilder();
 
-// اجعل النص مائلًا.
+// اجعل النص إيطاليًا.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
@@ -46,7 +46,7 @@ builder.Writeln("This text will be Italic");
 
 #### س: كيف يمكنني كتابة النص بخط مائل في Aspose.Words؟
 
-ج: لجعل النص بخط مائل في Aspose.Words، يمكنك استخدام الخيار`Font.Italic` ملكية`Run` هدف. يمكنك ضبط هذه الخاصية على`true` لكتابة نص محدد بخط مائل. على سبيل المثال، يمكنك استخدام`run.Font.Italic=true` لجعل النص الموجود في النص مائلًا`Run` هدف.
+ج: لجعل النص بخط مائل في Aspose.Words، يمكنك استخدام الخيار`Font.Italic` ملكية`Run`هدف. يمكنك ضبط هذه الخاصية على`true` لكتابة نص محدد بخط مائل. على سبيل المثال، يمكنك استخدام`run.Font.Italic=true` لجعل النص الموجود في النص مائلًا`Run` هدف.
 
 #### س: هل يمكن كتابة عدة أجزاء من النص بخط مائل في نفس الفقرة؟
 

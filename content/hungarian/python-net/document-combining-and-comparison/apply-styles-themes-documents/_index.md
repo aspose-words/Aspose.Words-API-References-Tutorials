@@ -57,7 +57,7 @@ paragraph.alignment = ParagraphAlignment.CENTER
 
 ## A címsorstílusok testreszabása
 
-A fejlécek adják a dokumentumok szerkezetét. Testreszabhatja a címsorstílusokat a jobb hierarchia és olvashatóság érdekében.
+A fejlécek struktúrát adnak a dokumentumoknak. Testreszabhatja a címsorstílusokat a jobb hierarchia és olvashatóság érdekében.
 
 ```python
 # Customize heading style

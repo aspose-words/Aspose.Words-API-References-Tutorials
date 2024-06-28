@@ -67,7 +67,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 
 答：若要使用 Aspose.Words for .NET 在 Word 文件中套用段落樣式，請依照下列步驟操作：
 1. 建立一個新文件和`DocumentBuilder`目的。
-2. 透過設定來配置段落樣式`StyleIdentifier`的財產`ParagraphFormat`到所需的樣式標識符（例如，`StyleIdentifier.Title`, `StyleIdentifier.Heading1`， ETC。）。
+2. 透過設定來配置段落樣式`StyleIdentifier`的財產`ParagraphFormat`到所需的樣式標識符（例如，`StyleIdentifier.Title`, `StyleIdentifier.Heading1`， ETC。
 3. 使用以下命令將內容新增到段落中`Write`的方法`DocumentBuilder`.
 4. 使用儲存文檔`Save`方法。
 

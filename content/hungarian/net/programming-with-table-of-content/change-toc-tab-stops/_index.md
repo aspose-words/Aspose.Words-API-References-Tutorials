@@ -101,7 +101,7 @@ Document doc = new Document(dataDir + "Table of contents.docx");
 
 Ez a kódrészlet betölti a megadott könyvtárban található "Table of Contents.docx" dokumentumot.
 
-#### K: Hogyan módosíthatom a tartalomjegyzékben használt füleket az Aspose.Words for .NET használatával?
+#### K: Hogyan módosíthatom a tartalomjegyzékben használt füleket az Aspose.Words for .NET segítségével?
 
  V: A dokumentum betöltése után ismételheti a dokumentum egyes bekezdéseit, és ellenőrizheti, hogy a tartalomjegyzék (TOC) eredménystílusai alapján formázták-e. Ha egy bekezdés TOC stílusban van formázva, módosíthatja az oldalszámok igazításához használt tabulátorokat. Az Aspose.Words for .NET alkalmazásban elérheti a`ParagraphFormat` minden bekezdés tulajdonsága a tabulátorok lekéréséhez és módosításához. Íme egy példa:
 
@@ -144,7 +144,7 @@ V: Igen, módosíthatja a tartalomjegyzék tabulátor-igazítását és vezetők
 
 #### K: Az Aspose.Words for .NET támogatja más stílusok és formázások megváltoztatását a Word dokumentumokban?
 
-V: Igen, az Aspose.Words for .NET széleskörű támogatást nyújt a Word dokumentumok különböző stílusainak és formázásainak megváltoztatásához. Lehetővé teszi a különböző elemek, például bekezdések, címsorok, táblázatok, listák és egyebek stílusának módosítását. Igényeinek megfelelően módosíthatja a betűtípusokat, a színeket, az igazítást, a behúzást, a térközt és más formázási szempontokat.
+V: Igen, az Aspose.Words for .NET széleskörű támogatást nyújt a Word dokumentumok különböző stílusainak és formázásainak megváltoztatásához. Lehetővé teszi a különböző elemek, például bekezdések, címsorok, táblázatok, listák és egyebek stílusának módosítását. Igényeinek megfelelően módosíthatja a betűtípusokat, a színeket, az igazítást, a behúzást, a térközt és egyéb formázási szempontokat.
 
 #### K: Módosíthatom egy meglévő Word-dokumentum tartalomjegyzékének füleit az Aspose.Words for .NET használatával?
 

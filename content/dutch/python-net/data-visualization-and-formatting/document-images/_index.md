@@ -14,7 +14,7 @@ In een wereld waar de aandachtsspanne kleiner wordt en de overdaad aan informati
 
 ## De rol van Rich Media-afbeeldingen begrijpen
 
-Rich media-afbeeldingen omvatten verschillende soorten visuele inhoud, zoals foto's, diagrammen, infographics en grafieken. Ze kunnen worden gebruikt om concepten te illustreren, context te bieden, gegevens te presenteren en emoties op te roepen. Door afbeeldingen in uw documenten op te nemen, kunt u saaie en monotone tekst omzetten in boeiende verhalen die resoneren met uw lezers.
+Rich media-afbeeldingen omvatten verschillende soorten visuele inhoud, zoals foto's, diagrammen, infographics en grafieken. Ze kunnen worden gebruikt om concepten te illustreren, context te bieden, gegevens te presenteren en emoties op te roepen. Door afbeeldingen in uw documenten op te nemen, kunt u saaie en monotone tekst transformeren in boeiende verhalen die resoneren met uw lezers.
 
 ## Aan de slag met Aspose.Words voor Python
 

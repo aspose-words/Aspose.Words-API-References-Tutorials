@@ -103,7 +103,7 @@ Det är allt ! Du har framgångsrikt komprimerat bilderna i ett dokument och ska
 
 ## Slutsats
 
-I den här handledningen förklarade vi hur man komprimerar bilder i ett PDF-dokument med Aspose.Words för .NET. Genom att följa stegen som beskrivs kan du enkelt minska storleken på bilder i ditt PDF-dokument och generera en PDF med korrekt bildkomprimering. Använd bildkomprimeringsfunktionerna i Aspose.Words för .NET för att optimera storleken på dina PDF-dokument samtidigt som bildkvaliteten bevaras.
+I den här handledningen förklarade vi hur man komprimerar bilder i ett PDF-dokument med Aspose.Words för .NET. Genom att följa stegen som beskrivs kan du enkelt minska storleken på bilderna i ditt PDF-dokument och generera en PDF med korrekt bildkomprimering. Använd bildkomprimeringsfunktionerna i Aspose.Words för .NET för att optimera storleken på dina PDF-dokument samtidigt som bildkvaliteten bevaras.
 
 ### Vanliga frågor
 

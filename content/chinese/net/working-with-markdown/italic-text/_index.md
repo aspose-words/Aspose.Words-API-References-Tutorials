@@ -1,6 +1,6 @@
 ---
-title: 斜体文本
-linktitle: 斜体文本
+title: 意大利语文本
+linktitle: 意大利语文本
 second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 分步指南将文本设置为斜体。
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 //使用文档生成器将内容添加到文档中。
 DocumentBuilder builder = new DocumentBuilder();
 
-//将文本设置为斜体。
+//将文本设为意大利语。
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

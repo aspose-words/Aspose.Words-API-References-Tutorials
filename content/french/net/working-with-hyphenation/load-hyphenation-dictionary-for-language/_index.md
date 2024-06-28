@@ -64,12 +64,12 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Où puis-je trouver des fichiers de dictionnaire de syllabisation pour différentes langues ?
 
-R : Vous pouvez trouver des fichiers de dictionnaires de syllabisation pour différentes langues sur diverses ressources en ligne. Ces fichiers sont généralement au format XML ou TEX. Vous pouvez trouver des dictionnaires de syllabisation open source pour différentes langues sur des sites Web dédiés aux projets linguistiques ou sur des référentiels de codes sources.
+R : Vous pouvez trouver des fichiers de dictionnaire de syllabisation pour différentes langues sur diverses ressources en ligne. Ces fichiers sont généralement au format XML ou TEX. Vous pouvez trouver des dictionnaires de syllabisation open source pour différentes langues sur des sites dédiés aux projets linguistiques ou sur des référentiels de codes sources.
 
 #### Q : Comment puis-je appliquer le dictionnaire syllabique chargé à un document dans Aspose.Words ?
 
- R : Pour appliquer le dictionnaire de syllabisation chargé à un document dans Aspose.Words, vous devez parcourir les mots du document et utiliser le`Hyphenate()` méthode du`Hyphenation`classe pour obtenir la syllabisation des mots. Vous pouvez ensuite formater les mots syllabés selon vos besoins, par exemple en ajoutant des traits d'union entre les syllabes.
+R : Pour appliquer le dictionnaire de syllabisation chargé à un document dans Aspose.Words, vous devez parcourir les mots du document et utiliser le`Hyphenate()` méthode du`Hyphenation` classe pour obtenir la syllabisation des mots. Vous pouvez ensuite formater les mots syllabés selon vos besoins, par exemple en ajoutant des traits d'union entre les syllabes.
 
 #### Q : Quelles langues sont prises en charge pour la syllabisation dans Aspose.Words ?
 
-R : Aspose.Words prend en charge la syllabisation pour plusieurs langues, notamment l'anglais, le français, l'espagnol, l'allemand, l'italien, le néerlandais, le russe, le portugais, le suédois, le norvégien, le danois, le finnois, le polonais, le tchèque et bien d'autres. Consultez la documentation Aspose.Words pour la liste complète des langues prises en charge pour la syllabisation.
+R : Aspose.Words prend en charge la syllabation pour plusieurs langues, notamment l'anglais, le français, l'espagnol, l'allemand, l'italien, le néerlandais, le russe, le portugais, le suédois, le norvégien, le danois, le finnois, le polonais, le tchèque et bien d'autres. Consultez la documentation Aspose.Words pour la liste complète des langues prises en charge pour la syllabisation.

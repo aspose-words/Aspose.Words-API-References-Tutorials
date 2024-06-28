@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Etapa 3: Criando marcadores aninhados
 
-Também podemos criar marcadores aninhados dentro de um marcador principal. Usamos o mesmo`StartBookmark` e`EndBookmark` métodos para criar e finalizar marcadores aninhados:
+ Também podemos criar marcadores aninhados dentro de um marcador principal. Usamos o mesmo`StartBookmark` e`EndBookmark` métodos para criar e finalizar marcadores aninhados:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");

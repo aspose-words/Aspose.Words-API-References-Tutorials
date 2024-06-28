@@ -17,7 +17,7 @@ Assicurati di avere i seguenti prerequisiti:
 - Aspose.Words per la libreria .NET installata. È possibile scaricarlo utilizzando Gestione pacchetti NuGet per installarlo.
 - Un percorso della directory del documento in cui verrà salvato il documento di output.
 
-## Passaggio 2: crea un nuovo documento e inserisci un grafico
+## Passaggio 2: crea un nuovo documento e inserisci un grafico.
 
  Creane uno nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 
@@ -117,4 +117,4 @@ Lo smussamento delle serie di grafici è una tecnica di miglioramento visivo che
  Per personalizzare gli indicatori per i punti dati in una serie di grafici utilizzando Aspose.Words per .NET, è necessario accedere a`Marker` proprietà del`ChartSeries` oggetto e modificarne le proprietà come`Symbol` E`Size`. I marcatori sono indicatori visivi posizionati sul grafico per rappresentare singoli punti dati. Puoi scegliere tra una varietà di simboli indicatore incorporati e regolarne le dimensioni per evidenziare o differenziare punti dati specifici all'interno della serie.
 
 #### Q5. Posso invertire i colori per i valori negativi in una serie di grafici?
- Sì, puoi invertire i colori per i valori negativi in una serie di grafici utilizzando Aspose.Words per .NET. Impostando il`InvertIfNegative` proprietà del`ChartSeries` opporsi a`true`, i colori dei punti dati con valori negativi verranno invertiti, rendendoli visivamente distinti dai valori positivi. Questa funzionalità può essere utile quando si confrontano valori positivi e negativi in una serie di grafici, fornendo una chiara differenziazione tra i due.
+ Sì, puoi invertire i colori per i valori negativi in una serie di grafici utilizzando Aspose.Words per .NET. Impostando il`InvertIfNegative` proprietà del`ChartSeries` opporsi a`true`, i colori per i punti dati con valori negativi verranno invertiti, rendendoli visivamente distinti dai valori positivi. Questa funzionalità può essere utile quando si confrontano valori positivi e negativi in una serie di grafici, fornendo una chiara differenziazione tra i due.

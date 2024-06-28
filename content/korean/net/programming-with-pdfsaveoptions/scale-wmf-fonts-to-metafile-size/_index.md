@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## 3단계: 메타파일 렌더링 옵션 구성
 
- 메타파일 크기에 맞게 WMF 글꼴 크기 조정을 활성화하거나 비활성화하려면 다음을 구성해야 합니다.`MetafileRenderingOptions`물체. 이 예에서는 다음을 설정하여 글꼴 크기 조정을 비활성화합니다.`ScaleWmfFontsToMetafileSize`재산`false`.
+ 메타파일 크기에 맞게 WMF 글꼴 크기 조정을 활성화하거나 비활성화하려면 다음을 구성해야 합니다.`MetafileRenderingOptions` 물체. 이 예에서는 다음을 설정하여 글꼴 크기 조정을 비활성화합니다.`ScaleWmfFontsToMetafileSize`재산`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Aspose.Words가 일부 메타파일 레코드를 벡터 그래픽으로 올바르게 렌더링할 수 없는 경우
+	//Aspose.Words가 일부 메타파일 레코드를 벡터 그래픽으로 올바르게 렌더링할 수 없는 경우
 	// 그런 다음 Aspose.Words는 이 메타파일을 비트맵으로 렌더링합니다.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

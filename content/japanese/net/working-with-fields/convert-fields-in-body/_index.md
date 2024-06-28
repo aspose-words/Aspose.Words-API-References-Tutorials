@@ -2,82 +2,88 @@
 title: 本文内のフィールドを変換する
 linktitle: 本文内のフィールドを変換する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、ページ フィールドを Word 文書本文のテキストに変換する方法を学習します。
+description: Aspose.Words for .NET を使用してドキュメント フィールドを静的テキストに変換し、ドキュメント処理の効率を高める方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/convert-fields-in-body/
 ---
 
-このステップバイステップのチュートリアルでは、提供されている C# ソース コードを使用して、Aspose.Words for .NET の ConvertFieldsInBody 機能を使用する方法を説明します。この機能を使用すると、文書本文の特定のフィールドをプレーン テキストに変換できるため、文書の処理が容易になります。この機能を効果的に使用するには、次の手順に従ってください。
+## 導入
 
-## ステップ 1: 前提条件
+.NET 開発の領域では、ドキュメント コンテンツを動的に管理することが不可欠であり、多くの場合、ドキュメント内のさまざまなフィールド タイプの操作が必要になります。 Aspose.Words for .NET は開発者向けの強力なツールセットとして際立っており、ドキュメント フィールドを効率的に処理する堅牢な機能を提供します。この包括的なガイドは、Aspose.Words for .NET を使用してドキュメント本文のフィールドを変換する方法に焦点を当てており、開発者がドキュメントの自動化と管理を強化できるように段階的な手順を提供します。
 
-始める前に、Aspose.Words for .NET がインストールされていて、ドキュメントを処理できる状態になっていることを確認してください。また、ドキュメントへのディレクトリ パスがあることも確認してください。
+## 前提条件
 
-## ステップ 2: ドキュメントをロードする
+Aspose.Words for .NET を使用してドキュメント本文のフィールドを変換するチュートリアルを詳しく調べる前に、次の前提条件を満たしていることを確認してください。
 
-まず、ドキュメント ディレクトリへのパスの変数を宣言し、その変数を使用して、指定されたドキュメントから Document オブジェクトを初期化します。この例では、ドキュメントの名前は「Linked field.docx」です。
+- Visual Studio: .NET 開発用にインストールおよび構成されています。
+-  Aspose.Words for .NET: ダウンロードされ、Visual Studio プロジェクトで参照されます。から入手できます[ここ](https://releases.aspose.com/words/net/).
+- C# の基本知識: 提供されたコード スニペットを理解し、変更するための C# プログラミング言語に精通していること。
+
+## 名前空間のインポート
+
+まず、必要な名前空間をプロジェクトにインポートしてください。
 
 ```csharp
-//ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using System.Linq;
+```
 
-//ドキュメントをロードします
+これらの名前空間は、Aspose.Words 機能と LINQ クエリにアクセスするために不可欠です。
+
+## Aspose.Words for .NET を使用して本文のフィールドを変換するためのステップバイステップ ガイド
+
+### ステップ 1: ドキュメントをロードする
+
+まず、フィールドを変換するドキュメントをロードします。
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## ステップ 3: ページフィールドをプレーンテキストに変換する
+交換する`"YOUR DOCUMENT DIRECTORY"`実際のドキュメントへのパスを含めます。
 
-ドキュメントがロードされたので、変換手順に進むことができます。最初のセクションの本文でページフィールドをプレーンテキストに変換するには、`Range.Fields`指定された範囲内のすべてのフィールドを取得し、次のタイプのフィールドをフィルターで除外するメソッド`FieldType.FieldPage`。その後、使用できます`ForEach`各フィールドをループして呼び出します。`Unlink()`プレーンテキストに変換するメソッドです。
+### ステップ 2: フィールドの特定と変換
+
+ドキュメント本文内の特定のフィールドを識別して変換します。たとえば、PAGE フィールドをテキストに変換するには、次のようにします。
 
 ```csharp
-//適切なパラメータを渡して、最初のセクションの本文でページ フィールドをプレーン テキストに変換します。
-doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.Unlink());
+doc.FirstSection.Body.Range.Fields
+    .Where(f => f.Type == FieldType.FieldPage)
+    .ToList()
+    .ForEach(f => f.Unlink());
 ```
 
-## ステップ 4: 変更したドキュメントを保存する
+このコード スニペットは、LINQ を使用してドキュメント本文内のすべての PAGE フィールドを検索し、それらのリンクを解除して、効果的に静的テキストに変換します。
 
-ページフィールドをプレーンテキストに変換したら、次のコマンドを使用して変更したドキュメントを保存できます。`Save()`メソッドを指定し、出力ファイルのパスと名前を指定します。この例では、「WorkingWithFields.ConvertFieldsInBody.docx」として保存します。
+### ステップ 3: ドキュメントを保存する
+
+フィールドを変換した後、変更したドキュメントを保存します。
 
 ```csharp
-//変更したドキュメントを保存する
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
-### Aspose.Words for .NET を使用して本文内のフィールドを変換するためのソース コードの例
+調整する`"WorkingWithFields.ConvertFieldsInBody.docx"`をクリックして、目的の出力ファイルのパスを指定します。
 
-Aspose.Words for .NET を使用してフィールドを本文に変換する完全なソース コードの例を次に示します。
+## 結論
 
-```csharp
-//ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Aspose.Words for .NET を使用してドキュメント フィールドを操作する技術を習得すると、開発者はドキュメント ワークフローを効率的に自動化できるようになります。フィールドをプレーン テキストに変換する場合でも、より複雑なフィールド タイプを処理する場合でも、Aspose.Words は直感的な API と堅牢な機能セットでこれらのタスクを簡素化し、.NET アプリケーションへのシームレスな統合を保証します。
 
-//ドキュメントをロードします
-Document doc = new Document(dataDir + "Linked fields.docx");
+## よくある質問 (FAQ)
 
-//適切なパラメータを渡して、最初のセクションの本文でページ フィールドをプレーン テキストに変換します。
-doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
-doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
-```
+### Aspose.Words for .NET のドキュメント フィールドとは何ですか?
+Aspose.Words のドキュメント フィールドは、日付、ページ番号、計算などの動的なデータを保存および表示できるプレースホルダーです。
 
-### よくある質問
+### Aspose.Words for .NET でさまざまな種類のフィールドを処理するにはどうすればよいですか?
+Aspose.Words は、DATE、PAGE、MERGEFIELD などのさまざまなフィールド タイプをサポートしており、開発者はそれらをプログラムで操作できます。
 
-#### Q: Aspose.Words は Microsoft Word のさまざまなバージョンと互換性がありますか?
+### Aspose.Words for .NET は、さまざまなドキュメント形式間でフィールドを変換できますか?
+はい、Aspose.Words for .NET は、DOCX、DOC、RTF などの形式間でフィールドをシームレスに変換および操作できます。
 
-A: はい、Aspose.Words は、Word 2003、Word 2007、Word 2010、Word 2013、Word 2016、Word 2019 など、さまざまなバージョンの Microsoft Word と互換性があります。
+### Aspose.Words for .NET の包括的なドキュメントはどこで見つけられますか?
+詳細なドキュメントと API リファレンスが利用可能です。[ここ](https://reference.aspose.com/words/net/).
 
-#### Q: Aspose.Words は複雑なフィールド構造を処理できますか?
-
-A: もちろんです！ Aspose.Words は、ネストされたフィールド、計算、条件式などの複雑なフィールド構造を広範にサポートします。強力な API を活用して、あらゆる種類のフィールド構造を操作できます。
-
-#### Q: Aspose.Words はフィールド更新操作をサポートしていますか?
-
-A: はい、Aspose.Words を使用すると、フィールドをプログラムで更新できます。 API を使用すると、フィールド値の更新、計算の更新、その他のフィールド関連の操作を簡単に実行できます。
-
-#### Q: Aspose.Words を使用してフィールドをプレーン テキストに変換できますか?
-
-A：確かに！ Aspose.Words は、フィールドをプレーン テキストに変換するメソッドを提供します。これは、フィールド関連の書式設定や機能を使用せずにコンテンツを抽出する必要がある場合に役立ちます。
-
-#### Q: Aspose.Words を使用して、動的フィールドを含む Word ドキュメントを生成することはできますか?
-
-A: もちろんです！ Aspose.Words は、動的フィールドを含む Word ドキュメントを生成するための堅牢な機能を提供します。事前定義されたフィールドを含むテンプレートを作成し、それらにデータを動的に入力することで、柔軟で効率的なドキュメント生成ソリューションを提供できます。
+### Aspose.Words for .NET の試用版はありますか?
+はい、無料試用版を次からダウンロードできます。[ここ](https://releases.aspose.com/).

@@ -23,7 +23,7 @@ Zanim zaczniesz, upewnij się, że masz następujące elementy:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Krok 2: Załaduj dokument i przeczytaj makra VBA
+## Krok 2: Załaduj dokument i przeczytaj makra VBA.
 Następnie załadujemy dokument Word i sprawdzimy, czy zawiera projekt VBA. Jeśli dokument zawiera projekt VBA, przejrzymy wszystkie moduły w projekcie i pokażemy kod źródłowy każdego modułu.
 
 ```csharp

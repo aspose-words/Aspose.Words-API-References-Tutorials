@@ -39,7 +39,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Настройте параметры загрузки с помощью функции «Пропустить изображения PDF»
+// Настройте параметры загрузки с помощью функции «Пропустить изображения PDF».
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 
 // Загрузите документ PDF, пропуская изображения PDF.
@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 #### Вопрос: Как я могу пропустить загрузку PDF-изображений в Aspose.Words для .NET?
 
- О: Вы можете пропустить загрузку изображений PDF, воспользовавшись`PdfLoadOptions`класс, предоставленный Aspose.Words для .NET. Просто установите`SkipPdfImages`собственность`true` при настройке параметров загрузки PDF-документа.
+ О: Вы можете пропустить загрузку изображений PDF, воспользовавшись`PdfLoadOptions`класс, предоставленный Aspose.Words для .NET. Просто установите`SkipPdfImages`собственность`true` При настройке параметров загрузки PDF-документа.
 
 #### Вопрос: Могу ли я получить доступ к пропущенным изображениям PDF после загрузки документа?
 
@@ -74,4 +74,4 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 #### Вопрос: Могу ли я применить эту функцию к определенному разделу PDF-документа?
 
- О: Да, вы можете применить`PdfLoadOptions` с`SkipPdfImages` установлен в`true` в определенный раздел PDF-документа, загрузив этот раздел отдельно с помощью Aspose.Words для .NET.
+ О: Да, вы можете подать заявку`PdfLoadOptions` с`SkipPdfImages` установлен в`true` в определенный раздел PDF-документа, загрузив этот раздел отдельно с помощью Aspose.Words для .NET.

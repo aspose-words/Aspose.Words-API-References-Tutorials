@@ -57,4 +57,4 @@ Pueden surgir problemas de codificación al convertir DOCX a TXT debido a difere
 
 #### ¿Cuáles son las limitaciones del proceso de conversión?
 
-Las limitaciones del proceso de conversión dependen de la herramienta o biblioteca específica que esté utilizando. Algunas herramientas pueden tener restricciones relacionadas con funciones admitidas, formatos complejos o elementos específicos del archivo DOCX. Es importante comprender las limitaciones de la herramienta elegida y evaluar si se ajustan a sus necesidades de conversión.
+Las limitaciones del proceso de conversión dependen de la herramienta o biblioteca específica que esté utilizando. Algunas herramientas pueden tener restricciones relacionadas con las funciones admitidas, formatos complejos o elementos específicos del archivo DOCX. Es importante comprender las limitaciones de la herramienta elegida y evaluar si se ajustan a sus necesidades de conversión.

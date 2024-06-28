@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## 3. Adım: Madde İşareti Formatını Özelleştirme
 
-Özelliklerine erişerek madde işareti biçimini özelleştirebiliriz.`ListFormat.List.ListLevels[0]`. Bu örnekte, madde işareti olarak "-" çizgisini kullanıyoruz.
+ Özelliklerine erişerek madde işareti biçimini özelleştirebiliriz.`ListFormat.List.ListLevels[0]`. Bu örnekte, madde işareti olarak "-" çizgisini kullanıyoruz.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

@@ -160,7 +160,7 @@ Upewnij się, że zapisujesz dokumenty w zgodnych formatach, aby uniknąć probl
 
 W przypadku dużych dokumentów rozważ użycie klasy DocumentBuilder, która zapewnia lepszą wydajność w przypadku wstawiania rozbudowanej zawartości.
 
-### 9.3 Problemy z czcionkami i stylami
+### 9.3 Problemy z czcionką i stylem
 
 Sprawdź, czy czcionki i style użyte w dokumencie są dostępne i kompatybilne w różnych systemach.
 

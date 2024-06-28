@@ -53,7 +53,7 @@ Chcete-li převést soubor DOCX na EPUB, můžete použít různé softwarové n
 
 #### Jaká jsou omezení procesu konverze?
 
-Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít omezení související s velikostí nebo složitostí vstupního dokumentu. Je důležité vybrat si nástroj, který zvládne požadavky vašeho konverzního úkolu.
+Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít související omezení velikosti nebo složitosti vstupního dokumentu. Je důležité vybrat si nástroj, který zvládne požadavky vašeho konverzního úkolu.
 
 #### Mohu zachovat formátování původního dokumentu?
 
@@ -61,4 +61,4 @@ Ano, se správným nástrojem můžete zachovat formátování původního dokum
 
 #### Je Aspose spolehlivým nástrojem pro převod DOCX na EPUB?
 
-Ano, Aspose.Words for .NET je spolehlivý nástroj pro převod DOCX na EPUB. Je široce používán vývojáři a profesionály po celém světě pro svou kvalitu a spolehlivost. Tento nástroj nabízí komplexní dokumentaci, pravidelné aktualizace a vyhrazenou technickou podporu, což z něj činí doporučenou volbu pro úlohy převodu dokumentů.
+Ano, Aspose.Words for .NET je spolehlivý nástroj pro převod DOCX na EPUB. Je široce používán vývojáři a profesionály po celém světě pro svou kvalitu a spolehlivost. Nástroj nabízí komplexní dokumentaci, pravidelné aktualizace a vyhrazenou technickou podporu, což z něj činí doporučenou volbu pro úlohy převodu dokumentů.

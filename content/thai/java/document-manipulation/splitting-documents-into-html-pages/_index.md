@@ -33,7 +33,7 @@ import java.util.ArrayList;
 class WordToHtmlConverter
 {
     // รายละเอียดการใช้งานสำหรับการแปลง Word เป็น HTML
-    // ...
+    // -
 }
 ```
 
@@ -143,7 +143,7 @@ private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
 
 ### ฉันสามารถปรับแต่งเอาต์พุต HTML ได้หรือไม่
 
- ใช่ คุณสามารถปรับแต่งเอาต์พุต HTML ได้โดยการปรับตัวเลือกการบันทึกใน`HtmlSaveOptions` ระดับ. สิ่งนี้ช่วยให้คุณควบคุมการจัดรูปแบบและรูปลักษณ์ของไฟล์ HTML ที่สร้างขึ้น
+ ใช่ คุณสามารถปรับแต่งเอาต์พุต HTML ได้โดยการปรับตัวเลือกการบันทึกใน`HtmlSaveOptions` ชั้นเรียน สิ่งนี้ช่วยให้คุณควบคุมการจัดรูปแบบและรูปลักษณ์ของไฟล์ HTML ที่สร้างขึ้น
 
 ### Aspose.Words สำหรับ Java รองรับ Microsoft Word เวอร์ชันใดบ้าง
 

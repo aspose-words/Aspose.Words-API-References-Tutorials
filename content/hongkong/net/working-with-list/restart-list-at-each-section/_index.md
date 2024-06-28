@@ -95,8 +95,8 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 
 #### Q：我可以在 Aspose.Words 中自訂清單的編號格式嗎？
 
-答：是的，您可以在 Aspose.Words 中自訂清單的編號格式。這`List`類別為此提供了幾個屬性，例如`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`等等。您可以使用這些屬性來設定清單類型（編號、項目符號等）、編號格式（阿拉伯數字、羅馬數字、字母等）以及其他編號格式選項。
+答：是的，您可以在 Aspose.Words 中自訂清單的編號格式。這`List`類別為此提供了幾個屬性，例如`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`等等。
 
 #### Q：是否可以為 Aspose.Words 中的編號清單新增其他層級？
 
-答：是的，可以在 Aspose.Words 中的編號清單中新增其他等級。這`ListLevel`類別允許您為清單的每個層級設定格式屬性。您可以設定前綴、後綴、對齊、縮排等選項。這允許您建立具有多個層次結構的清單。
+答：是的，可以在 Aspose.Words 中的編號清單中新增其他等級。這`ListLevel`類別允許您為清單的每個層級設定格式屬性。您可以設定前綴、後綴、對齊、縮排等選項。

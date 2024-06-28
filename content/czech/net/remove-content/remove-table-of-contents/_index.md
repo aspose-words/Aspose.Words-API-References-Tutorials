@@ -2,216 +2,103 @@
 title: Odebrat obsah v dokumentu aplikace Word
 linktitle: Odebrat obsah v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak odstranit obsah v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak odstranit obsah (TOC) v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto snadno srozumitelného kurzu.
 type: docs
 weight: 10
 url: /cs/net/remove-content/remove-table-of-contents/
 ---
-V tomto tutoriálu vás provedeme tím, jak odstranit obsah v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Obsah může být někdy nadbytečný nebo nepotřebný a tento kód vám pomůže jej efektivně odstranit. Poskytneme vám podrobného průvodce, který vám pomůže pochopit a implementovat kód ve vašem vlastním projektu .NET.
+## Odebrat obsah v dokumentu aplikace Word pomocí Aspose.Words for .NET
+
+Už vás nebaví zabývat se nežádoucím obsahem (TOC) v dokumentech aplikace Word? Všichni jsme tam byli – někdy TOC prostě není nutné. Naštěstí pro vás Aspose.Words pro .NET usnadňuje programové odstranění obsahu. V tomto tutoriálu vás provedu procesem krok za krokem, abyste jej zvládli během chvilky. Pojďme se rovnou ponořit!
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující položky:
-- Pracovní znalost programovacího jazyka C#
-- Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
-- Dokument aplikace Word obsahující obsah, který chcete odstranit
 
-## Krok 1: Definujte adresář dokumentů
- Nejprve musíte nastavit cestu k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+Než začneme, ujistěte se, že máte vše, co potřebujete:
+
+1.  Knihovna Aspose.Words for .NET: Pokud jste tak ještě neučinili, stáhněte si a nainstalujte knihovnu Aspose.Words for .NET z[Aspose.Releases](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: IDE jako Visual Studio usnadní kódování.
+3. .NET Framework: Ujistěte se, že máte nainstalované rozhraní .NET Framework.
+4. Dokument aplikace Word: Vytvořte dokument aplikace Word (.docx) s obsahem, který chcete odebrat.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Tím se nastaví prostředí pro použití Aspose.Words.
 
 ```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Krok 2: Nahrajte dokument
- Dále načteme dokument aplikace Word do instance souboru`Document` třídy pomocí`Load` metoda.
+Nyní si rozeberme proces odstranění obsahu z dokumentu aplikace Word do jasných a zvládnutelných kroků.
+
+## Krok 1: Nastavte adresář dokumentů
+
+Než budeme moci s vaším dokumentem manipulovat, musíme definovat, kde se nachází. Toto je cesta k adresáři vašeho dokumentu.
 
 ```csharp
-// Vložte dokument
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` s cestou ke složce dokumentů. Zde se nachází váš soubor aplikace Word.
+
+## Krok 2: Vložte dokument
+
+Dále musíme načíst dokument Word do naší aplikace. Aspose.Words to neuvěřitelně zjednodušuje.
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## Krok 3: Odstraňte obsah
- Abychom odstranili obsah, projdeme smyčkou typu TOC (table of content).`FieldStart` uzly v dokumentu. Tyto uzly uložíme, abychom k nim měli rychlý přístup a vytvořili seznam uzlů ke smazání.
+ Nahradit`"your-document.docx"` s názvem vašeho souboru. Tento řádek kódu načte váš dokument, abychom na něm mohli začít pracovat.
+
+## Krok 3: Identifikujte a odstraňte pole TOC
+
+Tady se děje kouzlo. Najdeme pole TOC a odstraníme ho.
 
 ```csharp
-// Uložte FieldStart uzly TOC polí v dokumentu pro rychlý přístup.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Toto je seznam pro uložení uzlů nalezených uvnitř zadaného obsahu. Na konci této metody budou odstraněny.
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+Zde je to, co se děje:
+- `doc.Range.Fields`: Toto zpřístupní všechna pole v dokumentu.
+- `.Where(f => f.Type == FieldType.FieldTOC)`: Toto filtruje pole tak, aby se nacházela pouze ta, která jsou obsahem.
+- `.ToList().ForEach(f => f.Remove())`: Toto převede filtrovaná pole na seznam a každé z nich odstraní.
 
-// Zkontrolujte, zda zadaný index TOC existuje.
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## Krok 4: Uložte upravený dokument
 
-bool isRemoving = true;
+Nakonec musíme změny uložit. Chcete-li zachovat původní soubor, můžete dokument uložit pod novým názvem.
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // Je bezpečnější tyto uzly uložit a na konci je všechny smazat.
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // Když narazíme na uzel FieldEnd typu FieldTOC,
-     //víme, že jsme na konci aktuálního TOC a tady se zastavíme.
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### Ukázkový zdrojový kód pro Remove Table Of Contents pomocí Aspose.Words for .NET 
-```csharp
-
-// Cesta k vašemu adresáři dokumentů
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// Vložte dokument
-Document doc = new Document(dataDir + "your-document.docx");
-
-// Uložte uzly FieldStart polí obsahu v dokumentu pro rychlý přístup.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Toto je seznam pro uložení uzlů nalezených uvnitř zadaného obsahu. Na konci této metody budou odstraněny.
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// Ujistěte se, že TOC určený předaným indexem existuje.
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// Je bezpečnější tyto uzly uložit a později je všechny najednou smazat.
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// Jakmile narazíme na uzel FieldEnd typu FieldTOC,
-	// víme, že jsme na konci aktuálního obsahu a zastavíme se zde.
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ Tento řádek uloží váš dokument s provedenými změnami. Nahradit`"modified-document.docx"` s požadovaným názvem souboru.
 
 ## Závěr
-V tomto tutoriálu jsme představili podrobného průvodce odstraněním obsahu z dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Dodržováním poskytnutého kódu a pokynů můžete snadno odstranit obsah a zlepšit rozvržení dokumentu. Nezapomeňte upravit cestu k adresáři a názvy souborů tak, aby vyhovovaly vašim konkrétním potřebám.
 
-### FAQ
+tady to máte! Odebrání obsahu z dokumentu aplikace Word pomocí Aspose.Words for .NET je jednoduché, jakmile jej rozdělíte do těchto jednoduchých kroků. Tato výkonná knihovna nejen pomáhá s odstraňováním TOC, ale také zvládne nespočet dalších manipulací s dokumenty. Takže do toho a vyzkoušejte to!
 
-#### Otázka: Proč bych měl používat Aspose.Words k odstranění obsahu v dokumentu aplikace Word?
+## Nejčastější dotazy
 
-A: Aspose.Words je výkonná a všestranná knihovna tříd pro manipulaci s dokumenty Wordu v aplikacích .NET. Pomocí Aspose.Words můžete efektivně odstranit obsah ze svých dokumentů, což může být užitečné, pokud je obsah nadbytečný nebo nepotřebný. To vám umožní přizpůsobit obsah dokumentu a zlepšit jeho celkovou prezentaci.
+### 1. Co je Aspose.Words pro .NET?
 
-#### Otázka: Jak mohu nahrát dokument do Aspose.Words pro .NET?
+Aspose.Words for .NET je robustní knihovna .NET pro manipulaci s dokumenty, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově.
 
-Odpověď: Chcete-li odstranit obsah v dokumentu aplikace Word, musíte nejprve načíst dokument do paměti pomocí metody Load() Aspose.Words. Zde je ukázkový kód pro načtení dokumentu z konkrétního adresáře:
+### 2. Mohu používat Aspose.Words zdarma?
 
-```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ Ano, můžete použít Aspose.Words s a[zkušební verze zdarma](https://releases.aspose.com/) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 
-// Vložte dokument
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. Je možné odstranit další pole pomocí Aspose.Words?
 
- Nahradit`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
+Absolutně! Jakékoli pole můžete odstranit zadáním jeho typu v podmínce filtru.
 
-#### Otázka: Jak odstraním obsah v dokumentu pomocí Aspose.Words?
+### 4. Potřebuji Visual Studio, abych mohl používat Aspose.Words?
 
- A: Chcete-li odstranit TOC, musíte iterovat přes`FieldStart` zadejte uzly obsahu v dokumentu. Tyto uzly můžete uložit pro rychlý přístup a vytvořit seznam uzlů, které chcete odstranit. Zde je ukázkový kód:
+Přestože je Visual Studio vysoce doporučeno pro snadný vývoj, můžete použít jakékoli IDE, které podporuje .NET.
 
-```csharp
-// Uložte FieldStart uzly TOC polí v dokumentu pro rychlý přístup.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//Toto je seznam pro uložení uzlů nalezených uvnitř zadaného obsahu. Na konci této metody budou odstraněny.
-List<Node> nodeList = new List<Node>();
+### 5. Kde najdu další informace o Aspose.Words?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// Zkontrolujte, zda zadaný index obsahu existuje.
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// Je bezpečnější tyto uzly uložit a na konci je všechny smazat.
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// Když narazíme na uzel FieldEnd typu FieldTOC,
-//víme, že jsme na konci aktuálního TOC a tady se zastavíme.
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### Otázka: Jak uložit upravený dokument v Aspose.Words pro .NET?
-
-Odpověď: Po odstranění obsahu musíte upravený dokument uložit pomocí metody Save(). Zadejte požadovanou cestu k výstupnímu souboru a formát (např. DOCX) pro upravovaný dokument. Zde je ukázkový kód:
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ Pro podrobnější dokumentaci navštivte[Dokumentace Aspose.Words for .NET API](https://reference.aspose.com/words/net/).

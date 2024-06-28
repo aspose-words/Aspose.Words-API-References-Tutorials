@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## 5단계: 변환된 문서 저장
- 사용`Save()`지정된 문서 디렉터리에 텍스트로 변환된 필드와 함께 문서를 저장하는 메서드입니다.
+ 사용`Save()` 지정된 문서 디렉터리에 텍스트로 변환된 필드와 함께 문서를 저장하는 메서드입니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

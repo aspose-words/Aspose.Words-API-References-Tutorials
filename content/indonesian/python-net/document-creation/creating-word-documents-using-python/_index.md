@@ -20,7 +20,7 @@ Sebelum kita mempelajari implementasinya, penting untuk memahami struktur dokume
 
 ## Memilih Perpustakaan Python yang Tepat
 
-Untuk mencapai tujuan kami menghasilkan dokumen Word menggunakan Python, kami memerlukan perpustakaan yang andal dan kaya fitur. Salah satu pilihan populer untuk tugas ini adalah perpustakaan "Aspose.Words for Python". Ini menyediakan serangkaian API tangguh yang memungkinkan manipulasi dokumen dengan mudah dan efisien. Mari jelajahi cara mengatur dan memanfaatkan perpustakaan ini untuk proyek kita.
+Untuk mencapai tujuan kami menghasilkan dokumen Word menggunakan Python, kami memerlukan perpustakaan yang andal dan kaya fitur. Salah satu pilihan populer untuk tugas ini adalah perpustakaan "Apose.Words for Python". Ini menyediakan serangkaian API tangguh yang memungkinkan manipulasi dokumen dengan mudah dan efisien. Mari jelajahi cara mengatur dan memanfaatkan perpustakaan ini untuk proyek kita.
 
 ## Menginstal Aspose.Words untuk Python
 

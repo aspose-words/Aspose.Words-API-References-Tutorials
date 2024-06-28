@@ -30,7 +30,7 @@ A primeira etapa no gerenciamento de tabelas é criá-las. Aspose.Words torna is
 // Crie um novo documento
 Document doc = new Document();
 
-// Crie uma tabela com 3 linhas e 4 colunas
+// Crie uma tabela com 3 linhas e 4 colunas.
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

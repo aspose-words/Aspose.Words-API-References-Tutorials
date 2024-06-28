@@ -94,4 +94,4 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet felosztani egy táblázatot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C# kódot, könnyedén feloszthat táblázatokat egy bizonyos sorból a Word-dokumentumokban.
+Ebben az oktatóanyagban megtanultuk, hogyan lehet felosztani egy táblázatot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésről lépésre szóló útmutatót, és implementálja a mellékelt C# kódot, könnyedén szétválaszthatja a táblákat egy bizonyos sorból a Word-dokumentumokban.

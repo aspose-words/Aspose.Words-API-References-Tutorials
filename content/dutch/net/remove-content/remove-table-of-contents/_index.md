@@ -2,216 +2,103 @@
 title: Verwijder de inhoudsopgave in een Word-document
 linktitle: Verwijder de inhoudsopgave in een Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de inhoudsopgave in een Word-document verwijdert met Aspose.Words voor .NET.
+description: Leer hoe u een inhoudsopgave (TOC) uit Word-documenten verwijdert met Aspose.Words voor .NET met deze eenvoudig te volgen zelfstudie.
 type: docs
 weight: 10
 url: /nl/net/remove-content/remove-table-of-contents/
 ---
-In deze zelfstudie laten we u zien hoe u de inhoudsopgave in een Word-document kunt verwijderen met behulp van de Aspose.Words-bibliotheek voor .NET. De inhoudsopgave kan soms overbodig of onnodig zijn, en deze code helpt u deze effectief te verwijderen. We bieden een stapsgewijze handleiding om u te helpen de code te begrijpen en te implementeren in uw eigen .NET-project.
+## Verwijder de inhoudsopgave in een Word-document met Aspose.Words voor .NET
+
+Bent u het beu om met een ongewenste inhoudsopgave (TOC) in uw Word-documenten te kampen? We hebben het allemaal meegemaakt; soms is de TOC gewoon niet nodig. Gelukkig voor jou maakt Aspose.Words voor .NET het gemakkelijk om een inhoudsopgave programmatisch te verwijderen. In deze tutorial leid ik je stap voor stap door het proces, zodat je het binnen de kortste keren onder de knie hebt. Laten we er meteen in duiken!
 
 ## Vereisten
-Zorg ervoor dat u over de volgende items beschikt voordat u begint:
-- Een praktische kennis van de programmeertaal C#
-- De Aspose.Words-bibliotheek voor .NET die in uw project is geïnstalleerd
-- Een Word-document met een inhoudsopgave die u wilt verwijderen
 
-## Stap 1: Definieer de documentmap
- Eerst moet u het mappad instellen op de locatie van uw Word-document. Vervangen`"YOUR DOCUMENT DIRECTORY"` in de code met het juiste pad.
+Voordat we aan de slag gaan, zorgen we ervoor dat u over alles beschikt wat u nodig heeft:
+
+1.  Aspose.Words voor .NET-bibliotheek: als u dat nog niet heeft gedaan, downloadt en installeert u de Aspose.Words voor .NET-bibliotheek van de[Aspose.Releases](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een IDE zoals Visual Studio maakt het coderen eenvoudiger.
+3. .NET Framework: Zorg ervoor dat .NET Framework is geïnstalleerd.
+4. Word-document: Zorg voor een Word-document (.docx) met een inhoudsopgave die u wilt verwijderen.
+
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten importeren. Hiermee wordt de omgeving ingesteld voor het gebruik van Aspose.Words.
 
 ```csharp
-// Pad naar uw documentenmap
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Stap 2: Upload het document
- Vervolgens laden we het Word-document in een exemplaar van het`Document` klas met behulp van de`Load` methode.
+Laten we nu het proces van het verwijderen van een inhoudsopgave uit een Word-document opsplitsen in duidelijke, beheersbare stappen.
+
+## Stap 1: Stel uw documentenmap in
+
+Voordat we uw document kunnen manipuleren, moeten we definiëren waar het zich bevindt. Dit is het pad naar uw documentmap.
 
 ```csharp
-// Laad het document
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het pad naar uw documentmap. Dit is waar uw Word-bestand zich bevindt.
+
+## Stap 2: Laad het document
+
+Vervolgens moeten we het Word-document in onze applicatie laden. Aspose.Words maakt dit ongelooflijk eenvoudig.
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## Stap 3: Verwijder de inhoudsopgave
- Om de inhoudsopgave te verwijderen, doorlopen we het TOC-type (inhoudsopgave).`FieldStart` knooppunten in het document. We slaan deze knooppunten op, zodat we er snel toegang toe hebben en een lijst kunnen maken met knooppunten die we moeten verwijderen.
+ Vervangen`"your-document.docx"` met de naam van uw bestand. Met deze coderegel wordt uw document geladen, zodat we eraan kunnen gaan werken.
+
+## Stap 3: Identificeer en verwijder het TOC-veld
+
+Dit is waar de magie gebeurt. We gaan het TOC-veld lokaliseren en verwijderen.
 
 ```csharp
-// Bewaar FieldStart-knooppunten van TOC-velden in het document voor snelle toegang.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Dit is een lijst waarin de knooppunten worden opgeslagen die binnen de opgegeven inhoudsopgave zijn gevonden. Ze worden aan het einde van deze methode verwijderd.
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+Dit is wat er gebeurt:
+- `doc.Range.Fields`: Hiermee heeft u toegang tot alle velden in het document.
+- `.Where(f => f.Type == FieldType.FieldTOC)`: Hiermee worden de velden gefilterd om alleen de inhoudsopgaven te vinden.
+- `.ToList().ForEach(f => f.Remove())`: Dit converteert de gefilterde velden naar een lijst en verwijdert ze allemaal.
 
-// Controleer of de opgegeven TOC-index bestaat.
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## Stap 4: Sla het gewijzigde document op
 
-bool isRemoving = true;
+Ten slotte moeten we onze wijzigingen opslaan. U kunt het document onder een nieuwe naam opslaan om het originele bestand te behouden.
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // Het is veiliger om deze knooppunten op te slaan en ze uiteindelijk allemaal te verwijderen.
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // Wanneer we een FieldEnd-knooppunt van het type FieldTOC tegenkomen,
-     //we weten dat we aan het einde van de huidige TOC zijn en we stoppen hier.
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### Voorbeeldbroncode voor het verwijderen van de inhoudsopgave met Aspose.Words voor .NET 
-```csharp
-
-// Pad naar uw documentmap
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// Laad het document
-Document doc = new Document(dataDir + "your-document.docx");
-
-// Bewaar de FieldStart-knooppunten van TOC-velden in het document voor snelle toegang.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Dit is een lijst waarin de knooppunten worden opgeslagen die binnen de opgegeven inhoudsopgave zijn gevonden. Ze worden aan het einde van deze methode verwijderd.
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// Zorg ervoor dat de inhoudsopgave die door de doorgegeven index is opgegeven, bestaat.
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// Het is veiliger om deze knooppunten op te slaan en ze later allemaal in één keer te verwijderen.
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// Zodra we een FieldEnd-knooppunt van het type FieldTOC tegenkomen,
-	// we weten dat we aan het einde van de huidige TOC zijn en stoppen hier.
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ Op deze regel wordt uw document opgeslagen met de aangebrachte wijzigingen. Vervangen`"modified-document.docx"` met uw gewenste bestandsnaam.
 
 ## Conclusie
-In deze zelfstudie presenteerden we een stapsgewijze handleiding voor het verwijderen van de inhoudsopgave uit een Word-document met behulp van de Aspose.Words-bibliotheek voor .NET. Door de meegeleverde code en instructies te volgen, kunt u eenvoudig de inhoudsopgave verwijderen en de lay-out van uw document verbeteren. Vergeet niet om het mappad en de bestandsnamen aan te passen aan uw specifieke behoeften.
 
-### Veelgestelde vragen
+En daar heb je het! Het verwijderen van een inhoudsopgave uit een Word-document met Aspose.Words voor .NET is eenvoudig als u het in deze eenvoudige stappen opsplitst. Deze krachtige bibliotheek helpt niet alleen bij het verwijderen van inhoudsopgaven, maar kan ook een groot aantal andere documentmanipulaties aan. Dus ga je gang en probeer het eens!
 
-#### Vraag: Waarom zou ik Aspose.Words gebruiken om de inhoudsopgave in een Word-document te verwijderen?
+## Veelgestelde vragen
 
-A: Aspose.Words is een krachtige en veelzijdige klassenbibliotheek voor het manipuleren van Word-documenten in .NET-toepassingen. Door Aspose.Words te gebruiken, kunt u de inhoudsopgave effectief uit uw documenten verwijderen, wat handig kan zijn als de inhoudsopgave overbodig of onnodig is. Hiermee kunt u de inhoud van uw document aanpassen en de algehele presentatie ervan verbeteren.
+### 1. Wat is Aspose.Words voor .NET?
 
-#### Vraag: Hoe upload ik een document in Aspose.Words voor .NET?
+Aspose.Words voor .NET is een robuuste .NET-bibliotheek voor documentmanipulatie, waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en converteren.
 
-A: Om de inhoudsopgave uit een Word-document te verwijderen, moet u het document eerst in het geheugen laden met behulp van de Load()-methode van Aspose.Words. Hier is voorbeeldcode om een document uit een specifieke map te laden:
+### 2. Kan ik Aspose.Words gratis gebruiken?
 
-```csharp
-// Pad naar uw documentenmap
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ Ja, je kunt Aspose.Words gebruiken met een[gratis proefperiode](https://releases.aspose.com/) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
 
-// Laad het document
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. Is het mogelijk om andere velden te verwijderen met Aspose.Words?
 
- Vervangen`"YOUR DOCUMENTS DIRECTORY"` met het daadwerkelijke pad naar uw document.
+Absoluut! U kunt elk veld verwijderen door het type ervan op te geven in de filtervoorwaarde.
 
-#### Vraag: Hoe verwijder ik de inhoudsopgave van een document met Aspose.Words?
+### 4. Heb ik Visual Studio nodig om Aspose.Words te gebruiken?
 
- A: Om de inhoudsopgave te verwijderen, moet u de`FieldStart` typ knooppunten van de inhoudsopgave in het document. U kunt deze knooppunten opslaan voor snelle toegang en een lijst met knooppunten maken die u wilt verwijderen. Hier is een voorbeeldcode:
+Hoewel Visual Studio ten zeerste wordt aanbevolen vanwege het gemak van de ontwikkeling, kunt u elke IDE gebruiken die .NET ondersteunt.
 
-```csharp
-// Bewaar FieldStart-knooppunten van TOC-velden in het document voor snelle toegang.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//Dit is een lijst om knooppunten op te slaan die binnen de opgegeven inhoudsopgave zijn gevonden. Ze worden aan het einde van deze methode verwijderd.
-List<Node> nodeList = new List<Node>();
+### 5. Waar kan ik meer informatie vinden over Aspose.Words?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// Controleer of de opgegeven inhoudsopgave-index bestaat.
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// Het is veiliger om deze knooppunten op te slaan en ze uiteindelijk allemaal te verwijderen.
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// Wanneer we een FieldEnd-knooppunt van het type FieldTOC tegenkomen,
-//we weten dat we aan het einde van de huidige TOC zijn en we stoppen hier.
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### Vraag: Hoe kan ik een bewerkt document opslaan in Aspose.Words voor .NET?
-
-A: Nadat u de inhoudsopgave hebt verwijderd, moet u het gewijzigde document opslaan met de Save()-methode. Specificeer het gewenste uitvoerbestandspad en de gewenste indeling (bijvoorbeeld DOCX) voor het bewerkte document. Hier is een voorbeeldcode:
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ Voor meer gedetailleerde documentatie, bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/).

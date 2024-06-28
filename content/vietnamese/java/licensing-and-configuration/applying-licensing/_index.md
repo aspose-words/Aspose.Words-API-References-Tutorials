@@ -119,6 +119,6 @@ Có, nhưng nó sẽ hoạt động ở chế độ dùng thử với những h�
 Aspose.Words for Java được cập nhật thường xuyên để đảm bảo khả năng tương thích với các bản phát hành Java mới nhất.
 
 ### Có dự án mẫu nào có sẵn cho Aspose.Words cho Java không?
-Có, bạn có thể tìm thấy các dự án mẫu và ví dụ mã trong tài liệu Aspose.Words for Java.
+Có, bạn có thể tìm thấy các dự án mẫu và mã ví dụ trong tài liệu Aspose.Words for Java.
 
 Bây giờ bạn đã hiểu toàn diện về việc áp dụng cấp phép cho Aspose.Words cho Java, bạn có thể bắt đầu tận dụng các tính năng mạnh mẽ của nó để xử lý tài liệu trong các ứng dụng Java của mình.

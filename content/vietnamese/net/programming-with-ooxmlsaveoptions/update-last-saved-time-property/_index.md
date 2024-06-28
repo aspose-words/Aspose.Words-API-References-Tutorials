@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã khám phá tính năng tự động cập nhật thuộc tính tiết kiệm thời gian cuối cùng khi lưu tài liệu bằng Aspose.Words cho .NET. Bằng cách bật tính năng này với các tùy chọn lưu OOXML, bạn có thể đảm bảo rằng thuộc tính tiết kiệm thời gian cuối cùng được cập nhật tự động trong tài liệu được tạo.
+Trong hướng dẫn này, chúng tôi đã khám phá tính năng tự động cập nhật thuộc tính tiết kiệm thời gian cuối cùng khi lưu tài liệu bằng Aspose.Words cho .NET. Bằng cách bật tính năng này với các tùy chọn lưu OOXML, bạn có thể đảm bảo rằng thuộc tính tiết kiệm thời gian cuối cùng được cập nhật tự động trong tài liệu được tạo.
 
 Việc cập nhật thuộc tính lưu thời gian cuối cùng có thể hữu ích cho việc theo dõi các thay đổi và phiên bản của tài liệu. Nó cũng theo dõi thời điểm tài liệu được lưu lần cuối, điều này có thể hữu ích trong nhiều trường hợp khác nhau.
 

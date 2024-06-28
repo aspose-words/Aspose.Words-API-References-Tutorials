@@ -19,7 +19,7 @@ url: /th/net/programming-with-tables/
 | [ปรับตารางให้พอดีกับเนื้อหาโดยอัตโนมัติ](./auto-fit-table-to-contents/) | เรียนรู้วิธีปรับตารางให้พอดีกับเนื้อหาในเอกสาร Word โดยอัตโนมัติโดยใช้ Aspose.Words สำหรับ .NET |
 | [โคลนตารางที่สมบูรณ์](./clone-complete-table/) | เรียนรู้วิธีโคลนทั้งตารางลงในเอกสาร Word ด้วย Aspose.Words สำหรับ .NET |
 | [การหาดัชนี](./finding-index/) | เรียนรู้วิธีค้นหาดัชนีตาราง แถว และเซลล์ในเอกสาร Word ด้วย Aspose.Words สำหรับ .NET |
-| [แทรกตารางโดยตรง](./insert-table-directly/) | เรียนรู้วิธีแทรกตารางลงในเอกสาร Word โดยตรงด้วย Aspose.Words for .NET |
+| [แทรกตารางโดยตรง](./insert-table-directly/) | เรียนรู้วิธีแทรกตารางลงในเอกสาร Word โดยตรงโดยใช้ Aspose.Words สำหรับ .NET ปฏิบัติตามคำแนะนำโดยละเอียดทีละขั้นตอนของเราเพื่อปรับปรุงการสร้างเอกสารของคุณ |
 | [แทรกตารางจาก Html](./insert-table-from-html/) | เรียนรู้วิธีแทรกตารางจาก HTML ลงในเอกสาร Word ด้วย Aspose.Words for .NET |
 | [สร้างตารางอย่างง่าย](./create-simple-table/) | เรียนรู้วิธีสร้างตารางอย่างง่ายในเอกสาร Word ด้วย Aspose.Words สำหรับ .NET |
 | [ตารางที่จัดรูปแบบแล้ว](./formatted-table/) | เรียนรู้วิธีสร้างตารางที่จัดรูปแบบในเอกสาร Word ด้วย Aspose.Words for .NET |

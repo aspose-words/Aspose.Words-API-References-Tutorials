@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 3: Skonfiguruj ustawienia strony dla dokumentu źródłowego
 
- Dostosuj ustawienia strony dokumentu źródłowego, aby zapewnić prawidłową kontynuację i numerację. W tym przykładzie ustawiliśmy początek sekcji na`SectionStart.Continuous` i ponownie uruchom numerowanie stron. Dbamy również o to, aby szerokość, wysokość i orientacja strony odpowiadały ostatniej sekcji dokumentu docelowego.
+ Dostosuj ustawienia strony dokumentu źródłowego, aby zapewnić prawidłową kontynuację i numerację. W tym przykładzie ustawiliśmy początek sekcji na`SectionStart.Continuous` ponownie uruchom numerowanie stron. Dbamy również o to, aby szerokość, wysokość i orientacja strony odpowiadały ostatniej sekcji dokumentu docelowego.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Krok 4: Zmodyfikuj formatowanie akapitu
 
- Aby zachować prawidłowe formatowanie, przejrzyj wszystkie akapity w dokumencie źródłowym i ustaw opcję`KeepWithNext`własność do`true`Dzięki temu akapity pozostaną razem podczas procesu dołączania.
+ Aby zachować prawidłowe formatowanie, przejrzyj wszystkie akapity w dokumencie źródłowym i ustaw opcję`KeepWithNext`własność do`true`. Dzięki temu akapity pozostaną razem podczas procesu dołączania.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Krok 6: Zapisz dokument docelowy
 
- Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
+Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ To kończy implementację dołączania dokumentu z różnymi ustawieniami ustawi
 	// Rozpocznij ponownie numerowanie stron na początku dokumentu źródłowego.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Aby mieć pewność, że tak się nie stanie, gdy dokument źródłowy ma inne ustawienia ustawień strony, upewnij się, że
+	//Aby mieć pewność, że tak się nie stanie, gdy dokument źródłowy ma inne ustawienia ustawień strony, upewnij się, że
 	// ustawienia są identyczne w ostatniej sekcji dokumentu docelowego.
 	// Jeżeli w dokumencie źródłowym znajdują się dalsze ciągłe sekcje,
-	//należy to powtórzyć dla tych sekcji.
+	// należy to powtórzyć dla tych sekcji.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

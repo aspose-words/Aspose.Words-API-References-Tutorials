@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ขั้นตอนที่ 2: โหลดเอกสารต้นทางและปลายทาง
 
- ถัดไป คุณต้องโหลดเอกสารต้นทางและปลายทางโดยใช้ Aspose.Words`Document` ระดับ. อัพเดตชื่อไฟล์ใน`Document` ตัวสร้างตามชื่อเอกสารของคุณ
+ถัดไป คุณต้องโหลดเอกสารต้นทางและปลายทางโดยใช้ Aspose.Words`Document` ชั้นเรียน อัพเดตชื่อไฟล์ใน`Document` ตัวสร้างตามชื่อเอกสารของคุณ
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## ขั้นตอนที่ 5: ผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทาง
 
- ตอนนี้คุณสามารถผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทางได้โดยใช้`InsertDocument` วิธีการของ`DocumentBuilder` ระดับ. ใช้`ImportFormatMode.UseDestinationStyles` พารามิเตอร์และผ่าน`ImportFormatOptions` วัตถุเพื่อรักษาพฤติกรรมสไตล์สมาร์ท
+ ตอนนี้คุณสามารถผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทางได้โดยใช้`InsertDocument` วิธีการของ`DocumentBuilder` ชั้นเรียน ใช้`ImportFormatMode.UseDestinationStyles` พารามิเตอร์และผ่าน`ImportFormatOptions` วัตถุเพื่อรักษาพฤติกรรมสไตล์สมาร์ท
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -62,7 +62,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 
 ## ขั้นตอนที่ 6: บันทึกเอกสารขั้นสุดท้าย
 
- สุดท้าย ให้บันทึกเอกสารที่ผสานโดยเปิดใช้งานคุณสมบัติ Smart Style Behavior โดยใช้`Save` วิธีการของ`Document` ระดับ.
+ สุดท้าย ให้บันทึกเอกสารที่ผสานโดยเปิดใช้งานคุณสมบัติ Smart Style Behavior โดยใช้`Save` วิธีการของ`Document` ชั้นเรียน
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");

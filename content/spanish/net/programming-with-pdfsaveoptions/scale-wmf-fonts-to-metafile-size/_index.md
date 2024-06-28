@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Paso 2: Sube el documento
 
-A continuación, debemos cargar el documento que queremos procesar. En este ejemplo, asumimos que el documento se llama "WMF con text.docx" y está ubicado en el directorio de documentos especificado.
+continuación, debemos cargar el documento que queremos procesar. En este ejemplo, asumimos que el documento se llama "WMF con text.docx" y está ubicado en el directorio de documentos especificado.
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with text.docx");
@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Paso 3: configurar las opciones de representación de metarchivos
 
- Para habilitar o deshabilitar el escalado de fuentes WMF al tamaño de metarchivo, debemos configurar el`MetafileRenderingOptions`objeto. En este ejemplo, deshabilitamos la escala de fuente configurando el`ScaleWmfFontsToMetafileSize`propiedad a`false`.
+ Para habilitar o deshabilitar el escalado de fuentes WMF al tamaño de metarchivo, debemos configurar el`MetafileRenderingOptions` objeto. En este ejemplo, deshabilitamos la escala de fuente configurando el`ScaleWmfFontsToMetafileSize`propiedad a`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ un documento PDF usando Aspose.Words para .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Si Aspose.Words no puede representar correctamente algunos de los registros del metarchivo en gráficos vectoriales
+	//Si Aspose.Words no puede representar correctamente algunos de los registros del metarchivo en gráficos vectoriales
 	// luego Aspose.Words representa este metarchivo en un mapa de bits.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

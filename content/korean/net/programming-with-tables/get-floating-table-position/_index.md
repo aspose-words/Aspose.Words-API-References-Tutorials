@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-"YOUR DOCUMENTS DIRECTORY"를 문서 디렉토리의 실제 경로로 바꾸십시오. 또한 문서에 부동 테이블이 포함되어 있는지 확인하십시오.
+"YOUR DOCUMENTS DIRECTORY"를 문서 디렉토리의 실제 경로로 바꾸십시오. 또한 문서에 부동 테이블이 포함되어 있는지 확인하세요.
 
 ## 3단계: 부동 테이블 위치 지정 속성 가져오기
 다음으로 문서의 모든 테이블을 반복하여 부동 테이블 위치 지정 속성을 가져옵니다. 다음 코드를 사용하세요.

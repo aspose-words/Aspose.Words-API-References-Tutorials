@@ -2,100 +2,103 @@
 title: Untergeordnete Knoten aufzählen
 linktitle: Untergeordnete Knoten aufzählen
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET untergeordnete Knoten in einem Absatz aufzählen.
+description: Erfahren Sie in diesem Schritt-für-Schritt-Tutorial, wie Sie untergeordnete Knoten in einem Word-Dokument mit Aspose.Words für .NET aufzählen.
 type: docs
 weight: 10
 url: /de/net/working-with-node/enumerate-child-nodes/
 ---
 
-Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der veranschaulicht, wie untergeordnete Knoten mithilfe von Aspose.Words für .NET aufgezählt werden.
+Mit den richtigen Tools kann das programmgesteuerte Arbeiten mit Dokumenten ein Kinderspiel sein. Aspose.Words für .NET ist eine dieser leistungsstarken Bibliotheken, die es Entwicklern ermöglicht, Word-Dokumente problemlos zu bearbeiten. Heute werden wir den Prozess der Aufzählung untergeordneter Knoten in einem Word-Dokument mit Aspose.Words für .NET durchgehen. Diese Schritt-für-Schritt-Anleitung deckt alles ab, von den Voraussetzungen bis hin zu praktischen Beispielen, und stellt sicher, dass Sie ein solides Verständnis des Prozesses haben.
 
-## Schritt 1: Importieren Sie die erforderlichen Referenzen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie die erforderlichen Referenzen zur Verwendung von Aspose.Words für .NET in Ihr Projekt importiert haben. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
+## Voraussetzungen
+
+Bevor wir uns mit dem Code befassen, besprechen wir die wesentlichen Voraussetzungen, um ein reibungsloses Erlebnis zu gewährleisten:
+
+1. Entwicklungsumgebung: Stellen Sie sicher, dass Visual Studio oder eine andere .NET-kompatible IDE installiert ist.
+2.  Aspose.Words für .NET: Laden Sie die Aspose.Words für .NET-Bibliothek von herunter[Release-Seite](https://releases.aspose.com/words/net/).
+3.  Lizenz: Erhalten Sie eine kostenlose Testversion oder eine temporäre Lizenz von[Hier](https://purchase.aspose.com/temporary-license/).
+
+## Namespaces importieren
+
+Stellen Sie vor dem Codieren sicher, dass Sie die erforderlichen Namespaces importieren. Dadurch können Sie nahtlos auf die Klassen und Methoden von Aspose.Words zugreifen.
 
 ```csharp
+using System;
 using Aspose.Words;
-using Aspose.Words.Nodes;
-using Aspose.Words.NodeTypes;
 ```
 
-## Schritt 2: Erstellen Sie ein neues Dokument
- In diesem Schritt erstellen wir ein neues Dokument mit`Document` Klasse.
+## Schritt 1: Initialisieren Sie das Dokument
+
+Der erste Schritt besteht darin, ein neues Word-Dokument zu erstellen oder ein vorhandenes zu laden. Dieses Dokument dient uns als Ausgangspunkt für die Aufzählung.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## Schritt 3: Greifen Sie auf den Absatz und seine untergeordneten Knoten zu
- Um die untergeordneten Knoten eines Absatzes aufzuzählen, müssen wir zunächst auf den Absatz selbst zugreifen. Benutzen Sie die`GetChild` Methode mit der`Paragraph` Knotentyp, um den ersten Absatz des Dokuments abzurufen.
+In diesem Beispiel beginnen wir mit einem leeren Dokument, Sie können jedoch ein vorhandenes Dokument laden, indem Sie Folgendes verwenden:
+
+```csharp
+Document doc = new Document("path/to/your/document.docx");
+```
+
+## Schritt 2: Greifen Sie auf den ersten Absatz zu
+
+Als nächstes müssen wir auf einen bestimmten Absatz im Dokument zugreifen. Der Einfachheit halber übernehmen wir den ersten Absatz.
 
 ```csharp
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
- Als nächstes rufen wir die Sammlung der untergeordneten Knoten des Absatzes mithilfe von ab`ChildNodes` Eigentum.
+Dieser Code ruft den ersten Absatzknoten im Dokument ab. Wenn Ihr Dokument bestimmte Absätze enthält, auf die Sie abzielen möchten, passen Sie den Index entsprechend an.
+
+## Schritt 3: Untergeordnete Knoten abrufen
+
+Da wir nun unseren Absatz haben, ist es an der Zeit, seine untergeordneten Knoten abzurufen. Untergeordnete Knoten können Läufe, Formen oder andere Arten von Knoten innerhalb des Absatzes sein.
 
 ```csharp
-NodeCollection children = paragraph. ChildNodes;
+NodeCollection children = paragraph.GetChildNodes(NodeType.Any, false);
 ```
 
-## Schritt 4: Untergeordnete Knoten durchsuchen
- Da wir nun die Sammlung untergeordneter Knoten haben, können wir sie mithilfe von a durchlaufen`foreach` Schleife. Wir überprüfen den Typ jedes untergeordneten Knotens und führen basierend auf dem Typ spezifische Operationen durch.
+Diese Codezeile sammelt alle untergeordneten Knoten jeglichen Typs innerhalb des angegebenen Absatzes.
+
+## Schritt 4: Durch die untergeordneten Knoten iterieren
+
+Mit den untergeordneten Knoten können wir sie durchlaufen, um basierend auf ihren Typen bestimmte Aktionen auszuführen. In diesem Fall drucken wir den Text aller gefundenen Laufknoten aus.
 
 ```csharp
 foreach (Node child in children)
 {
-     // Ein Absatz kann untergeordnete Elemente verschiedener Typen enthalten, z. B. Läufe, Formen und andere.
-     if (child. NodeType == NodeType.Run)
-     {
-         Run run = (Run)child;
-         Console.WriteLine(run.Text);
-     }
+    if (child.NodeType == NodeType.Run)
+    {
+        Run run = (Run)child;
+        Console.WriteLine(run.Text);
+    }
 }
 ```
 
- In diesem Beispiel prüfen wir, ob der untergeordnete Knoten vom Typ ist`Run` (zB ein Textfragment). Wenn ja, konvertieren wir den Knoten in`Run` und zeigen Sie den Text mit an`run.Text`.
+## Schritt 5: Führen Sie Ihren Code aus und testen Sie ihn
 
-## Beispielquellcode zum Aufzählen untergeordneter Knoten mit Aspose.Words für .NET
+Kompilieren Sie Ihre Anwendung und führen Sie sie aus. Wenn Sie alles richtig eingerichtet haben, sollte der Text jedes Ausführungsknotens im ersten Absatz auf der Konsole angezeigt werden.
 
+## Abschluss
 
-```csharp
-Document doc = new Document();
-Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Das Aufzählen untergeordneter Knoten in einem Word-Dokument mit Aspose.Words für .NET ist unkompliziert, sobald Sie die grundlegenden Schritte verstanden haben. Indem Sie das Dokument initialisieren, auf bestimmte Absätze zugreifen, untergeordnete Knoten abrufen und diese durchlaufen, können Sie Word-Dokumente problemlos programmgesteuert bearbeiten. Aspose.Words bietet eine robuste API zur Verarbeitung verschiedener Dokumentelemente und ist damit ein unverzichtbares Werkzeug für .NET-Entwickler.
 
-NodeCollection children = paragraph.ChildNodes;
-foreach (Node child in children)
-{
-	// Ein Absatz kann untergeordnete Elemente verschiedener Art enthalten, z. B. Läufe, Formen und andere.
-	if (child.NodeType == NodeType.Run)
-	{
-		Run run = (Run) child;
-		Console.WriteLine(run.Text);
-	}
-}
-```
+ Eine ausführlichere Dokumentation und eine erweiterte Nutzung finden Sie unter[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/) . Wenn Sie zusätzliche Unterstützung benötigen, schauen Sie sich die an[Support-Foren](https://forum.aspose.com/c/words/8).
 
-Dies ist ein vollständiges Codebeispiel zum Aufzählen der untergeordneten Knoten eines Absatzes mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die Referenzen importieren
+## FAQs
 
+### 1. Welche Arten von Knoten kann ein Absatz enthalten?
+Ein Absatz kann Knoten wie Läufe, Formen, Kommentare und andere Inline-Elemente enthalten.
 
-### FAQs
+### 2. Wie kann ich ein bestehendes Word-Dokument laden?
+ Sie können ein vorhandenes Dokument mit laden`Document doc = new Document("path/to/your/document.docx");`.
 
-#### F: Was ist ein untergeordneter Knoten in Node.js?
+### 3. Kann ich neben Run auch andere Knotentypen manipulieren?
+ Ja, Sie können verschiedene Knotentypen wie Formen, Kommentare und mehr bearbeiten, indem Sie sie überprüfen`NodeType`.
 
-A: Ein untergeordneter Knoten in Node.js bezieht sich auf einen Knoten, der direkt in einem bestimmten Knoten enthalten ist. Dies sind die Knoten, die in der Hierarchie unmittelbar niedriger sind als der übergeordnete Knoten.
+### 4. Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
+ Sie können mit einer kostenlosen Testversion beginnen oder eine temporäre Lizenz von erhalten[Hier](https://purchase.aspose.com/temporary-license/).
 
-#### F: Wie werden die untergeordneten Knoten eines bestimmten Knotens aufgelistet?
-
- A: Um die untergeordneten Knoten eines bestimmten Knotens in Node.js aufzuzählen, können Sie die verwenden`childNodes` Eigenschaft des Knotens. Diese Eigenschaft gibt eine Liste aller untergeordneten Knoten des angegebenen Knotens zurück.
-
-#### F: Wie greife ich auf die Eigenschaften eines untergeordneten Knotens zu?
-
- A: Um auf die Eigenschaften eines untergeordneten Knotens in Node.js zuzugreifen, können Sie die Methoden und Eigenschaften verwenden, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie verwenden`getAttribute` um den Wert eines bestimmten Attributs eines untergeordneten Knotens zu erhalten.
-
-#### F: Können wir die untergeordneten Knoten eines Knotens ändern?
-
-A: Ja, es ist möglich, die untergeordneten Knoten eines Knotens in Node.js mithilfe der Methoden und Eigenschaften zu ändern, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie verwenden`appendChild` oder`removeChild` um untergeordnete Knoten zu einem bestimmten Knoten hinzuzufügen oder daraus zu entfernen.
-
-#### F: Wie durchsuche ich alle untergeordneten Knoten eines Knotens?
-
- A: Um alle untergeordneten Knoten eines bestimmten Knotens in Node.js zu durchlaufen, können Sie a verwenden`for` Schleife zum Durchlaufen der Liste der von der zurückgegebenen untergeordneten Knoten`childNodes` Eigentum. Anschließend können Sie auf die Eigenschaften und Werte jedes untergeordneten Knotens innerhalb der Schleife zugreifen.
+### 5. Wo finde ich weitere Beispiele und Dokumentation?
+ Besuche den[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/) Weitere Beispiele und eine ausführliche Dokumentation finden Sie hier.

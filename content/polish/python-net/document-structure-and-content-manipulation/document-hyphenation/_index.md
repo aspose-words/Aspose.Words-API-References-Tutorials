@@ -27,7 +27,7 @@ W niektórych przypadkach możesz chcieć ręcznie kontrolować miejsce podział
 
 ### Automatyczne dzielenie wyrazów
 
-W większości przypadków preferowaną metodą jest automatyczne dzielenie wyrazów, ponieważ dynamicznie dostosowuje podziały wyrazów na podstawie układu i formatowania dokumentu. Zapewnia to spójny i przyjemny wygląd na różnych urządzeniach i rozmiarach ekranów.
+większości przypadków preferowaną metodą jest automatyczne dzielenie wyrazów, ponieważ dynamicznie dostosowuje podziały wyrazów na podstawie układu i formatowania dokumentu. Zapewnia to spójny i przyjemny wygląd na różnych urządzeniach i rozmiarach ekranów.
 
 ## Wykorzystanie Aspose.Words dla Pythona
 
@@ -126,4 +126,4 @@ Aby zapobiec wdowom i sierotom, skorzystaj z opcji dostępnych w Aspose.Words dl
 
 ### Gdzie mogę uzyskać dostęp do dokumentacji Aspose.Words dla języka Python?
 
- Dostęp do dokumentacji API można uzyskać pod adresem[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+Dostęp do dokumentacji API można uzyskać pod adresem[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

@@ -8,7 +8,7 @@ weight: 1640
 url: /vi/net/programming-with-markdownsaveoptions/
 ---
 
-Xử lý từ với MarkdownSaveOptions là một tài nguyên chuyên sâu hướng dẫn bạn cách Xử lý từ bằng MarkdownSaveOptions bằng thư viện Aspose.Words cho .NET. Các hướng dẫn này cung cấp cho bạn giải thích từng bước, mã nguồn hoàn chỉnh và các ví dụ thực tế để hiểu và sử dụng MarkdownSaveOptions để xuất tài liệu Word sang định dạng Markdown. Bạn sẽ tìm hiểu cách tùy chỉnh các tùy chọn xuất, chẳng hạn như quản lý hình ảnh, căn chỉnh nội dung bảng, chuyển đổi kiểu, v.v. Tài nguyên này rất cần thiết cho các nhà phát triển muốn tích hợp chức năng xuất Markdown vào ứng dụng của họ bằng Aspose.Words for .NET.
+Xử lý từ với MarkdownSaveOptions là tài nguyên chuyên sâu hướng dẫn bạn cách Xử lý từ bằng MarkdownSaveOptions bằng thư viện Aspose.Words cho .NET. Các hướng dẫn này cung cấp cho bạn giải thích từng bước, mã nguồn hoàn chỉnh và các ví dụ thực tế để hiểu và sử dụng MarkdownSaveOptions để xuất tài liệu Word sang định dạng Markdown. Bạn sẽ tìm hiểu cách tùy chỉnh các tùy chọn xuất, chẳng hạn như quản lý hình ảnh, căn chỉnh nội dung bảng, chuyển đổi kiểu, v.v. Tài nguyên này rất cần thiết cho các nhà phát triển muốn tích hợp chức năng xuất Markdown vào ứng dụng của họ bằng Aspose.Words for .NET.
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |

@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## ขั้นตอนที่ 4: สร้างตารางและโครงสร้างตาราง
- เริ่มสร้างตารางโดยใช้`StartTable` วิธีการของ`DocumentBuilder` . เพิ่มเซลล์ตารางและเนื้อหาโดยใช้`InsertCell` และ`Write` วิธีการ
+ เริ่มสร้างตารางโดยใช้`StartTable` วิธีการของ`DocumentBuilder` - เพิ่มเซลล์ตารางและเนื้อหาโดยใช้`InsertCell` และ`Write` วิธีการ
 
 ```csharp
 Table table = builder.StartTable();

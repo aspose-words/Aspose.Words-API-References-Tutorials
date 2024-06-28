@@ -19,7 +19,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 
 ## Stap 2: Open de bron- en doeldocumenten
 
- Open de bron- en doeldocumenten met behulp van de`Document` klasse constructeur. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+ Open de bron- en doeldocumenten met behulp van de`Document` klasse constructor. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
 
 ```csharp
 // Pad naar uw documentmap
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Stap 5: Sla het gewijzigde document op
 
- Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
+Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ Hiermee is de implementatie voltooid van het samenvoegen van twee documenten op 
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Stel in dat het toegevoegde document op een nieuwe pagina begint.
+	// Stel in dat het toegevoegde document op een nieuwe pagina begint.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Voeg het brondocument toe met behulp van de originele stijlen uit het brondocument.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj dokumenty źródłowe i docelowe
 
- Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
+Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words.`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Krok 4: Ustaw formatowanie akapitu „Zachowuj z następnym” dla dokumentu źródłowego
 
-Aby zachować razem akapity w dokumencie źródłowym, możesz przeglądać każdy akapit w dokumencie i ustawić opcję`KeepWithNext`własność do`true`.
+ Aby zachować razem akapity w dokumencie źródłowym, możesz przeglądać każdy akapit w dokumencie i ustawić opcję`KeepWithNext`własność do`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

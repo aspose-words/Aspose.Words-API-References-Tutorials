@@ -85,7 +85,7 @@ R: L'utilizzo di una richiamata di avviso consente di essere a conoscenza di eve
 
  R: Per creare una funzione di callback per gestire gli avvisi, è necessario creare una classe che implementi il file`IWarningCallback` interfaccia. IL`Warning`Il metodo in questa classe verrà chiamato ogni volta che viene emesso un avviso durante il caricamento del documento. È possibile personalizzare questo metodo per gestire gli avvisi in base ai requisiti dell'applicazione.
 
-#### D: Cosa posso fare con le informazioni di avviso nella funzione di callback?
+#### D: Cosa posso fare con le informazioni di avviso nella funzione di richiamata?
 
  R: Nella funzione di richiamata, hai accesso a`WarningInfo` oggetto, che fornisce dettagli sull'avviso, come il tipo e la descrizione. È possibile registrare gli avvisi, visualizzarli agli utenti o intraprendere altre azioni appropriate in base alla natura dell'avviso.
 

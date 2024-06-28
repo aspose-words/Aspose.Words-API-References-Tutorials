@@ -17,7 +17,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 - Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
 - Een documentmappad waar het uitvoerdocument wordt opgeslagen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Stap 2: Maak een nieuw document en voeg een diagram in.
 
  Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
 
@@ -101,7 +101,7 @@ Door Aspose.Words voor .NET te gebruiken, kunt u eenvoudig grafiekmogelijkheden 
 Aspose.Words voor .NET is een krachtige bibliotheek voor documentverwerking waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, manipuleren en opslaan in .NET-toepassingen. Het biedt een breed scala aan functies voor tekstverwerking met documentelementen, waaronder diagrammen en diagramassen.
 
 #### Vraag 2. Hoe kan ik Aspose.Words voor .NET installeren?
-kunt Aspose.Words voor .NET installeren door het te downloaden met behulp van NuGet-pakketbeheer in Visual Studio. Zoek eenvoudigweg naar "Aspose.Words" in de NuGet-pakketbeheerder en installeer het in uw project.
+kunt Aspose.Words voor .NET installeren door het te downloaden met behulp van NuGet-pakketbeheer in Visual Studio. Zoek eenvoudigweg naar "Apose.Words" in de NuGet-pakketbeheerder en installeer het in uw project.
 
 #### Q3. Kan ik zowel de X-as als de Y-as van een diagram verbergen?
  Ja, u kunt zowel de X-as als de Y-as van een diagram verbergen met Aspose.Words voor .NET. Om de X-as te verbergen, kunt u toegang krijgen tot de`AxisX` eigenschap van het diagram en stel de`Hidden`eigendom aan`true` . Op dezelfde manier kunt u, om de Y-as te verbergen, toegang krijgen tot het`AxisY` eigendom en stel de`Hidden`eigendom aan`true`. Hierdoor kunt u beide assen uit de diagramvisualisatie verwijderen.

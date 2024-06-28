@@ -10,7 +10,7 @@ url: /pl/python-net/data-visualization-and-formatting/document-shape-handling-fo
 
 ## Wstęp
 
-Współczesne dokumenty to nie tylko zawarta w nich treść; ich atrakcyjność wizualna odgrywa znaczącą rolę w angażowaniu czytelników. Aspose.Words dla Pythona oferuje potężny zestaw narzędzi do programowego manipulowania dokumentami, umożliwiając tworzenie efektownych wizualnie układów, które przemawiają do odbiorców.
+Współczesne dokumenty to nie tylko zawarta w nich treść; Ich atrakcyjność wizualna odgrywa znaczącą rolę w angażowaniu czytelników. Aspose.Words dla Pythona oferuje potężny zestaw narzędzi do programowego manipulowania dokumentami, umożliwiając tworzenie efektownych wizualnie układów, które przemawiają do odbiorców.
 
 ## Konfigurowanie środowiska
 

@@ -19,7 +19,7 @@ Aspose.Words for .NET 튜토리얼은 Word 문서 처리에 대한 Word 문서�
 | [목차에 표 자동 맞춤](./auto-fit-table-to-contents/) | .NET용 Aspose.Words를 사용하여 Word 문서의 내용에 표를 자동으로 맞추는 방법을 알아보세요. |
 | [전체 테이블 복제](./clone-complete-table/) | .NET용 Aspose.Words를 사용하여 전체 테이블을 Word 문서로 복제하는 방법을 알아보세요. |
 | [색인 찾기](./finding-index/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 테이블, 행 및 셀 인덱스를 찾는 방법을 알아보세요. |
-| [테이블 직접 삽입](./insert-table-directly/) | Aspose.Words for .NET을 사용하여 Word 문서에 표를 직접 삽입하는 방법을 알아보세요. |
+| [테이블 직접 삽입](./insert-table-directly/) | .NET용 Aspose.Words를 사용하여 Word 문서에 직접 표를 삽입하는 방법을 알아보세요. 문서 작성을 간소화하려면 자세한 단계별 가이드를 따르세요. |
 | [HTML에서 테이블 삽입](./insert-table-from-html/) | .NET용 Aspose.Words를 사용하여 HTML의 표를 Word 문서에 삽입하는 방법을 알아보세요. |
 | [간단한 테이블 만들기](./create-simple-table/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 간단한 테이블을 만드는 방법을 알아보세요. |
 | [서식이 지정된 테이블](./formatted-table/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 서식이 지정된 테이블을 만드는 방법을 알아보세요. |

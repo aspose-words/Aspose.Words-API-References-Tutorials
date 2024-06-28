@@ -248,7 +248,7 @@ pip install aspose-words
 
  Ja, u kunt standaardwaarden voor formuliervelden instellen met behulp van de juiste eigenschappen. Als u bijvoorbeeld de standaardtekst voor een tekstinvoerveld wilt instellen, gebruikt u de`text` eigendom.
 
-### Zijn formuliervelden toegankelijk voor gebruikers met een handicap?
+### Zijn formuliervelden toegankelijk voor gebruikers met een beperking?
 
 Absoluut. Houd bij het ontwerpen van formulieren rekening met toegankelijkheidsrichtlijnen om ervoor te zorgen dat gebruikers met een beperking kunnen communiceren met formuliervelden met behulp van schermlezers en andere ondersteunende technologieën.
 

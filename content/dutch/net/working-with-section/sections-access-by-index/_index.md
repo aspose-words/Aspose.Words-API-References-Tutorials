@@ -36,7 +36,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Stap 3: Sectie-instellingen bewerken
-Om de sectie-instellingen te wijzigen, gebruiken we de eigenschappen van de sectie`PageSetup` voorwerp. In dit voorbeeld wijzigen we de marges, de kop- en voettekstafstand en de afstand tussen de tekstkolommen.
+ Om de sectie-instellingen te wijzigen, gebruiken we de eigenschappen van de sectie`PageSetup`voorwerp. In dit voorbeeld wijzigen we de marges, de kop- en voettekstafstand en de afstand tussen de tekstkolommen.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm
@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### Vraag: Hoe wijzig ik sectie-instellingen in Aspose.Words voor .NET?
 
- A: Om de instellingen van een sectie te wijzigen, kunt u de eigenschappen van de sectie gebruiken`PageSetup` voorwerp. In dit voorbeeld wijzigen we de marges, de kop- en voettekstafstand en de afstand tussen de tekstkolommen.
+ A: Om de instellingen van een sectie te wijzigen, kunt u de eigenschappen van de sectie gebruiken.`PageSetup`voorwerp. In dit voorbeeld wijzigen we de marges, de kop- en voettekstafstand en de afstand tussen de tekstkolommen.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm

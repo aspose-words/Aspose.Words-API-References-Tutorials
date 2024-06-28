@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Βήμα 2: Φορτώστε τα έγγραφα προέλευσης και προορισμού
 
- Στη συνέχεια, πρέπει να φορτώσετε τα έγγραφα προέλευσης και προορισμού χρησιμοποιώντας το Aspose.Words`Document` τάξη. Ενημερώστε τα ονόματα αρχείων στο`Document` κατασκευαστή σύμφωνα με τα ονόματα των εγγράφων σας.
+Στη συνέχεια, πρέπει να φορτώσετε τα έγγραφα προέλευσης και προορισμού χρησιμοποιώντας το Aspose.Words.`Document` τάξη. Ενημερώστε τα ονόματα αρχείων στο`Document` κατασκευαστή σύμφωνα με τα ονόματα των εγγράφων σας.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## Βήμα 5: Προσθέστε το έγγραφο προέλευσης στο έγγραφο προορισμού
 
- Τώρα, μπορείτε να προσθέσετε το έγγραφο προέλευσης στο έγγραφο προορισμού χρησιμοποιώντας το`InsertDocument` μέθοδος του`DocumentBuilder` τάξη. Χρησιμοποιήστε το`ImportFormatMode.UseDestinationStyles` παράμετρο και περάστε το`ImportFormatOptions` αντιστέκεται στη διατήρηση έξυπνης συμπεριφοράς στυλ.
+ Τώρα, μπορείτε να προσθέσετε το έγγραφο προέλευσης στο έγγραφο προορισμού χρησιμοποιώντας το`InsertDocument` μέθοδος του`DocumentBuilder` τάξη. Χρησιμοποιήστε το`ImportFormatMode.UseDestinationStyles` παραμέτρων και περάστε το`ImportFormatOptions` αντιστέκεται στη διατήρηση έξυπνης συμπεριφοράς στυλ.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

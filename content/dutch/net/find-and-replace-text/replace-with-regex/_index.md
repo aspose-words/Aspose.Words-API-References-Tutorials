@@ -111,7 +111,7 @@ builder.Writeln("sad mad bad");
 
 #### Vraag: Hoe kan ik tekstvervanging uitvoeren met behulp van een reguliere expressie in Aspose.Words voor .NET?
 
- A: Om tekstvervanging uit te voeren met behulp van een reguliere expressie in Aspose.Words voor .NET, kunt u de`Range.Replace` methode en slagen voor een`Regex` object als zoekpatroon. Hiermee kunt u complexe zoekpatronen definiëren met behulp van reguliere expressies. Hier is een voorbeeld:
+ A: Om tekstvervanging uit te voeren met behulp van een reguliere expressie in Aspose.Words voor .NET, kunt u de`Range.Replace` methode en passeer een`Regex` object als zoekpatroon. Hiermee kunt u complexe zoekpatronen definiëren met behulp van reguliere expressies. Hier is een voorbeeld:
 
 ```csharp
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);

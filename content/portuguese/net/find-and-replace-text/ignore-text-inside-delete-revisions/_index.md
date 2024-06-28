@@ -16,7 +16,7 @@ Antes de mergulhar nos detalhes do código, deixe-me apresentar brevemente a bib
 
 ## Compreendendo o recurso "Ignorar texto dentro de exclusão de revisões"
 
-recurso "Ignorar texto dentro de revisões de exclusão" no Aspose.Words for .NET permite especificar se o texto dentro das revisões de exclusão deve ser ignorado durante certas operações, como localizar e substituir texto. Quando este recurso está habilitado, o texto excluído nas revisões não é considerado durante as operações.
+recurso "Ignorar texto dentro de revisões de exclusão" em Aspose.Words for .NET permite especificar se o texto dentro de revisões de exclusão deve ser ignorado durante certas operações, como localizar e substituir texto. Quando este recurso está habilitado, o texto excluído nas revisões não é considerado durante as operações.
 
 ## Etapa 1: Criando um novo documento usando Aspose.Words for .NET
 
@@ -56,7 +56,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
 ## Etapa 5: usando expressões regulares para localizar e substituir
 
-Para realizar operações de busca e substituição no texto do documento, utilizaremos expressões regulares. No nosso exemplo, procuraremos todas as ocorrências da letra “e” e as substituiremos por um asterisco “* ". .LÍQUIDO`Regex` classe é utilizada para isso:
+Para realizar operações de busca e substituição no texto do documento, utilizaremos expressões regulares. No nosso exemplo, procuraremos todas as ocorrências da letra “e” e as substituiremos por um asterisco “* ". .LÍQUIDO`Regex` classe é usada para isso:
 
 ```csharp
 Regex regex = new Regex("e");

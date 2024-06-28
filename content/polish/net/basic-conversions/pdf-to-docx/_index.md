@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/basic-conversions/pdf-to-docx/
 ---
 
-tym samouczku krok po kroku poprowadzimy Cię, jak używać Aspose.Words dla .NET do konwersji lub zapisania dokumentu PDF do formatu Word(Docx). Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+W tym samouczku krok po kroku poprowadzimy Cię, jak używać Aspose.Words dla .NET do konwersji lub zapisania dokumentu PDF do formatu Word(Docx). Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
 
  Aby rozpocząć, upewnij się, że masz zainstalowany i skonfigurowany Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -57,7 +57,7 @@ To, czy formatowanie zostanie zachowane podczas konwersji, zależy od używanego
 
 #### Jakie są ograniczenia procesu konwersji?
 
-Ograniczenia procesu konwersji zależą od konkretnego narzędzia lub biblioteki, z której korzystasz. Niektóre narzędzia mogą mieć ograniczenia związane z rozpoznawaniem tekstu, złożonym układem lub obrazami osadzonymi w pliku PDF. Ważne jest, aby w pełni zrozumieć funkcje i ograniczenia wybranego narzędzia, aby móc podejmować świadome decyzje podczas konwersji.
+Ograniczenia procesu konwersji zależą od konkretnego narzędzia lub biblioteki, z której korzystasz. Niektóre narzędzia mogą mieć powiązane ograniczenia dotyczące rozpoznawania tekstu, złożonego układu lub obrazów osadzonych w pliku PDF. Ważne jest, aby w pełni zrozumieć funkcje i ograniczenia wybranego narzędzia, aby móc podejmować świadome decyzje podczas konwersji.
 
 #### Czy Aspose to niezawodne narzędzie do konwersji plików PDF do formatu Word?
 

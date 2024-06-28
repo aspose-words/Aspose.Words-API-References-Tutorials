@@ -36,8 +36,8 @@ Document srcDoc = new Document(dataDir + "Document.docx");
 Document dstDoc = new Document();
 ```
 
-## Etapa 3: copie a seção para o documento de destino
- Para copiar a seção do documento de origem para o documento de destino, usaremos o`ImportNode` método para importar a seção de origem e adicioná-la ao documento de destino.
+## Etapa 3: Copie a seção para o documento de destino
+ Para copiar a seção do documento de origem para o documento de destino, usaremos o`ImportNode`método para importar a seção de origem e adicioná-la ao documento de destino.
 
 ```csharp
 // Obtenha a seção de origem
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### P: Como carregar documentos de origem e destino no Aspose.Words for .NET?
 
- R: Para carregar o documento de origem em uma instância do`Document` classe chamada`srcDoc` e crie uma instância vazia do`Document` classe chamada`dstDoc` para o documento de destino, você pode usar o seguinte código:
+R: Para carregar o documento de origem em uma instância do`Document` classe chamada`srcDoc` e crie uma instância vazia do`Document` classe chamada`dstDoc` para o documento de destino, você pode usar o seguinte código:
 
 ```csharp
 // Carregue o documento de origem

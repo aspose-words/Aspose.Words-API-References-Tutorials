@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Βήμα 3: Ρυθμίστε τις ρυθμίσεις σελίδας για το έγγραφο προέλευσης
 
- Προσαρμόστε τις ρυθμίσεις ρύθμισης σελίδας του εγγράφου προέλευσης για να διασφαλίσετε τη σωστή συνέχιση και αρίθμηση. Σε αυτό το παράδειγμα, ορίσαμε την ενότητα start σε`SectionStart.Continuous` και επανεκκινήστε την αρίθμηση σελίδων. Βεβαιωνόμαστε επίσης ότι το πλάτος, το ύψος και ο προσανατολισμός της σελίδας ταιριάζουν με το τελευταίο τμήμα του εγγράφου προορισμού.
+ Προσαρμόστε τις ρυθμίσεις ρύθμισης σελίδας του εγγράφου προέλευσης για να διασφαλίσετε τη σωστή συνέχιση και αρίθμηση. Σε αυτό το παράδειγμα, ορίσαμε την ενότητα start σε`SectionStart.Continuous`και επανεκκινήστε την αρίθμηση σελίδων. Βεβαιωνόμαστε επίσης ότι το πλάτος, το ύψος και ο προσανατολισμός της σελίδας ταιριάζουν με το τελευταίο τμήμα του εγγράφου προορισμού.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Βήμα 4: Τροποποίηση της μορφοποίησης παραγράφου
 
- Για να διατηρήσετε τη σωστή μορφοποίηση, επαναλάβετε όλες τις παραγράφους στο έγγραφο προέλευσης και ορίστε το`KeepWithNext`ιδιοκτησία σε`true`Αυτό διασφαλίζει ότι οι παράγραφοι παραμένουν μαζί κατά τη διαδικασία προσάρτησης.
+ Για να διατηρήσετε τη σωστή μορφοποίηση, επαναλάβετε όλες τις παραγράφους στο έγγραφο προέλευσης και ορίστε το`KeepWithNext`ιδιοκτησία σε`true`. Αυτό διασφαλίζει ότι οι παράγραφοι παραμένουν μαζί κατά τη διαδικασία προσάρτησης.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Βήμα 6: Αποθηκεύστε το έγγραφο προορισμού
 
- Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
+Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 	// Επανεκκινήστε την αρίθμηση σελίδων στην αρχή του εγγράφου προέλευσης.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Για να διασφαλίσετε ότι αυτό δεν συμβαίνει όταν το έγγραφο προέλευσης έχει διαφορετικές ρυθμίσεις ρύθμισης σελίδας, βεβαιωθείτε ότι το
+	//Για να διασφαλίσετε ότι αυτό δεν συμβαίνει όταν το έγγραφο προέλευσης έχει διαφορετικές ρυθμίσεις ρύθμισης σελίδας, βεβαιωθείτε ότι το
 	// Οι ρυθμίσεις είναι πανομοιότυπες μεταξύ της τελευταίας ενότητας του εγγράφου προορισμού.
 	// Εάν υπάρχουν περαιτέρω συνεχείς ενότητες που ακολουθούν στο έγγραφο προέλευσης,
-	//αυτό θα πρέπει να επαναληφθεί για αυτές τις ενότητες.
+	// αυτό θα πρέπει να επαναληφθεί για αυτές τις ενότητες.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

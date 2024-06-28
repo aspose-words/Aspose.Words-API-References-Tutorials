@@ -16,7 +16,7 @@ Listeler iki ana türde gelir: madde işaretli ve numaralı. Bilgileri yapıland
 
 ## Ortamın Ayarlanması
 
- Liste oluşturma ve yönetmeye geçmeden önce Aspose.Words for Python kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/) . Ek olarak şu adresteki API belgelerine bakın:[bu bağlantı](https://reference.aspose.com/words/python-net/) detaylı bilgi için.
+Liste oluşturma ve yönetmeye geçmeden önce Aspose.Words for Python kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/) . Ek olarak şu adresteki API belgelerine bakın:[bu bağlantı](https://reference.aspose.com/words/python-net/) detaylı bilgi için.
 
 ## Madde İşaretli Listeler Oluşturma
 

@@ -18,16 +18,16 @@ Nejprve použijeme generátor dokumentů k přidání obsahu do našeho dokument
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Přidejte styl pro odsazený kód
+## Krok 2: Přidejte styl pro zadaný kód
 
- Přidáme vlastní styl pro odsazený kód pomocí`Styles.Add` metoda`Document` objekt. V tomto příkladu vytváříme styl nazvaný "IndentedCode" pro odsazený kód.
+Přidáme vlastní styl pro odsazený kód pomocí`Styles.Add` metoda`Document` objekt. V tomto příkladu vytváříme styl nazvaný "IndentedCode" pro odsazený kód.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Krok 3: Přidejte odsazený kód
+## Krok 3: Přidejte zadaný kód
 
 Nyní můžeme přidat odsazený blok kódu pomocí vlastního stylu „IndentedCode“.
 
@@ -51,7 +51,7 @@ gratuluji! Nyní jste se naučili, jak používat funkci odsazeného kódu s Asp
 
 ### FAQ
 
-#### Otázka: Co je odsazený kód v Markdown?
+#### Otázka: Jaký je specifikovaný kód v Markdown?
 
 Odpověď: Odsazený kód v Markdown je metoda formátování používaná k zobrazení kódu v dokumentu Markdown. Skládá se z odsazení každého řádku kódu mezerami nebo tabulátory.
 

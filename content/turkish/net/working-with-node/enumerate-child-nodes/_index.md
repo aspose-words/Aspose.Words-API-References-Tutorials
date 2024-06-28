@@ -2,100 +2,103 @@
 title: Alt Düğümleri Numaralandır
 linktitle: Alt Düğümleri Numaralandır
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile alt düğümleri bir paragrafta nasıl numaralandıracağınızı öğrenin.
+description: Bu adım adım eğitimle Aspose.Words for .NET kullanarak bir Word belgesindeki alt düğümleri nasıl numaralandıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-node/enumerate-child-nodes/
 ---
 
-Aşağıda Aspose.Words for .NET kullanılarak alt düğümlerin nasıl numaralandırılacağını gösteren C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır.
+Doğru araçlarla belgelerle programlı olarak çalışmak çok kolay olabilir. Aspose.Words for .NET, geliştiricilerin Word belgelerini kolaylıkla yönetmelerine olanak tanıyan güçlü bir kütüphanedir. Bugün Aspose.Words for .NET'i kullanarak bir Word belgesindeki alt düğümleri numaralandırma sürecini inceleyeceğiz. Bu adım adım kılavuz, önkoşullardan pratik örneklere kadar her şeyi kapsayacak ve süreci sağlam bir şekilde anlamanızı sağlayacaktır.
 
-## 1. Adım: Gerekli referansları içe aktarın
-Başlamadan önce Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Buna Aspose.Words kütüphanesinin içe aktarılması ve gerekli ad alanlarının kaynak dosyanıza eklenmesi de dahildir.
+## Önkoşullar
+
+Koda dalmadan önce, sorunsuz bir deneyim sağlamak için temel önkoşulları ele alalım:
+
+1. Geliştirme Ortamı: Visual Studio'nun veya başka bir .NET uyumlu IDE'nin kurulu olduğundan emin olun.
+2.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesini şu adresten indirin:[yayın sayfası](https://releases.aspose.com/words/net/).
+3.  Lisans: Şu adresten ücretsiz deneme veya geçici lisans edinin:[Burada](https://purchase.aspose.com/temporary-license/).
+
+## Ad Alanlarını İçe Aktar
+
+Kodlamaya başlamadan önce gerekli ad alanlarını içe aktardığınızdan emin olun. Bu, Aspose.Words sınıflarına ve yöntemlerine sorunsuz bir şekilde erişmenizi sağlayacaktır.
 
 ```csharp
+using System;
 using Aspose.Words;
-using Aspose.Words.Nodes;
-using Aspose.Words.NodeTypes;
 ```
 
-## 2. Adım: Yeni bir belge oluşturun
- Bu adımda yeni bir belge oluşturacağız.`Document` sınıf.
+## 1. Adım: Belgeyi Başlatın
+
+İlk adım, yeni bir Word belgesi oluşturmayı veya mevcut bir belgeyi yüklemeyi içerir. Bu belge numaralandırma için başlangıç noktamız olacaktır.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## 3. Adım: Paragrafa ve alt düğümlerine erişin
- Bir paragrafın alt düğümlerini numaralandırmak için önce paragrafın kendisine erişmemiz gerekir. Kullan`GetChild` yöntemi ile`Paragraph` belgenin ilk paragrafını almak için düğüm türü.
+Bu örnekte boş bir belgeyle başlıyoruz ancak mevcut bir belgeyi aşağıdakileri kullanarak yükleyebilirsiniz:
+
+```csharp
+Document doc = new Document("path/to/your/document.docx");
+```
+
+## Adım 2: İlk Paragrafa Erişin
+
+Daha sonra belgedeki belirli bir paragrafa erişmemiz gerekiyor. Basit olması açısından ilk paragrafı alacağız.
 
 ```csharp
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
- Daha sonra paragrafın alt düğümlerinin koleksiyonunu kullanarak alırız.`ChildNodes` mülk.
+Bu kod, belgedeki ilk paragraf düğümünü alır. Belgenizde hedeflemek istediğiniz belirli paragraflar varsa dizini buna göre ayarlayın.
+
+## 3. Adım: Alt Düğümleri Alın
+
+Artık paragrafımızı hazırladığımıza göre, alt düğümlerini alma zamanı geldi. Alt düğümler paragraf içindeki çalıştırmalar, şekiller veya diğer düğüm türleri olabilir.
 
 ```csharp
-NodeCollection children = paragraph. ChildNodes;
+NodeCollection children = paragraph.GetChildNodes(NodeType.Any, false);
 ```
 
-## 4. Adım: Alt düğümlere göz atın
- Artık alt düğümlerin koleksiyonuna sahip olduğumuza göre, bunların arasında bir döngü oluşturabiliriz.`foreach` döngü. Her alt düğümün türünü kontrol ediyoruz ve türe göre belirli işlemler gerçekleştiriyoruz.
+Bu kod satırı, belirtilen paragraf içindeki her türdeki tüm alt düğümleri toplar.
+
+## Adım 4: Alt Düğümler Üzerinden Yineleme Yapın
+
+Elimizde alt düğümler varken, türlerine göre belirli eylemleri gerçekleştirmek için bunlar arasında yinelemeler yapabiliriz. Bu durumda, bulunan herhangi bir çalıştırma düğümünün metnini yazdıracağız.
 
 ```csharp
 foreach (Node child in children)
 {
-     // Bir paragraf, diziler, şekiller ve diğerleri gibi farklı türdeki alt öğeleri içerebilir.
-     if (child. NodeType == NodeType.Run)
-     {
-         Run run = (Run)child;
-         Console.WriteLine(run.Text);
-     }
+    if (child.NodeType == NodeType.Run)
+    {
+        Run run = (Run)child;
+        Console.WriteLine(run.Text);
+    }
 }
 ```
 
- Bu örnekte, alt düğümün türünde olup olmadığını kontrol ediyoruz.`Run` (örneğin bir metin parçası). Eğer öyleyse, düğümü şuna dönüştürürüz:`Run` ve metni kullanarak görüntüleyin`run.Text`.
+## Adım 5: Kodunuzu Çalıştırın ve Test Edin
 
-## Aspose.Words for .NET ile alt düğümleri numaralandırmak için örnek kaynak kodu
+Uygulamanızı derleyin ve çalıştırın. Her şeyi doğru ayarladıysanız, her çalıştırma düğümünün metninin konsola yazdırılan ilk paragrafta olduğunu görmelisiniz.
 
+## Çözüm
 
-```csharp
-Document doc = new Document();
-Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Temel adımları anladıktan sonra Aspose.Words for .NET kullanarak bir Word belgesindeki alt düğümleri numaralandırmak çok kolaydır. Belgeyi başlatarak, belirli paragraflara erişerek, alt düğümleri alarak ve bunlar arasında yineleyerek, Word belgelerini programlı bir şekilde kolaylıkla değiştirebilirsiniz. Aspose.Words, çeşitli belge öğelerini yönetmek için güçlü bir API sunarak onu .NET geliştiricileri için vazgeçilmez bir araç haline getiriyor.
 
-NodeCollection children = paragraph.ChildNodes;
-foreach (Node child in children)
-{
-	// Bir paragraf, diziler, şekiller ve diğerleri gibi çeşitli türlerde alt öğeler içerebilir.
-	if (child.NodeType == NodeType.Run)
-	{
-		Run run = (Run) child;
-		Console.WriteLine(run.Text);
-	}
-}
-```
+ Daha ayrıntılı belgeler ve gelişmiş kullanım için şu adresi ziyaret edin:[Aspose.Words for .NET API belgeleri](https://reference.aspose.com/words/net/) . Ek desteğe ihtiyacınız varsa şuraya göz atın:[destek forumları](https://forum.aspose.com/c/words/8).
 
-Bu, Aspose.Words for .NET ile bir paragrafın alt düğümlerini numaralandırmak için eksiksiz bir kod örneğidir. Referansları içe aktardığınızdan emin olun
+## SSS
 
+### 1. Bir paragraf ne tür düğümler içerebilir?
+Bir paragraf; çalıştırmalar, şekiller, yorumlar ve diğer satır içi öğeler gibi düğümler içerebilir.
 
-### SSS'ler
+### 2. Mevcut bir Word belgesini nasıl yükleyebilirim?
+ Mevcut bir belgeyi kullanarak yükleyebilirsiniz.`Document doc = new Document("path/to/your/document.docx");`.
 
-#### S: Node.js'deki alt düğüm nedir?
+### 3. Çalıştırmanın yanı sıra diğer düğüm türlerini de değiştirebilir miyim?
+ Evet, şekiller, yorumlar ve daha fazlası gibi çeşitli düğüm türlerini kontrol ederek değiştirebilirsiniz.`NodeType`.
 
-C: Node.js'deki alt düğüm, doğrudan belirli bir düğümün içinde yer alan bir düğümü ifade eder. Bunlar hiyerarşide ana düğümden hemen daha aşağıda olan düğümlerdir.
+### 4. Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
+ Ücretsiz denemeyle başlayabilir veya şu adresten geçici bir lisans alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
 
-#### S: Belirli bir düğümün alt düğümleri nasıl numaralandırılır?
-
- C: Node.js'de belirli bir düğümün alt düğümlerini numaralandırmak için`childNodes` düğümün özelliği. Bu özellik, belirtilen düğümün tüm alt düğümlerinin bir listesini döndürür.
-
-#### S: Bir alt düğümün özelliklerine nasıl erişilir?
-
- C: Node.js'deki bir alt düğümün özelliklerine erişmek için, Node.js ortamınızda kullanılan XML API'sinin sağladığı yöntemleri ve özellikleri kullanabilirsiniz. Örneğin, gibi yöntemleri kullanabilirsiniz.`getAttribute` bir alt düğümün belirli bir özelliğinin değerini almak için.
-
-#### S: Bir düğümün alt düğümlerini değiştirebilir miyiz?
-
-C: Evet, Node.js ortamınızda kullanılan XML API'sinin sağladığı yöntemleri ve özellikleri kullanarak Node.js'deki bir düğümün alt düğümlerini değiştirmek mümkündür. Örneğin, gibi yöntemleri kullanabilirsiniz.`appendChild` veya`removeChild` belirli bir düğümden alt düğümleri eklemek veya kaldırmak için.
-
-#### S: Bir düğümün tüm alt düğümlerine nasıl göz atılır?
-
- C: Node.js'de belirli bir düğümün tüm alt düğümleri arasında geçiş yapmak için bir`for` tarafından döndürülen alt düğümlerin listesini yinelemek için döngü`childNodes` mülk. Daha sonra döngü içindeki her alt düğümün özelliklerine ve değerlerine erişebilirsiniz.
+### 5. Daha fazla örnek ve belgeyi nerede bulabilirim?
+ Ziyaret edin[Aspose.Words for .NET API belgeleri](https://reference.aspose.com/words/net/) daha fazla örnek ve ayrıntılı belgeler için.

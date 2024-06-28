@@ -34,7 +34,7 @@ Successivamente, disabiliteremo l'interruzione di riga per tutte le righe nella 
 // Recupera la tabella
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
-// Disabilita l'interruzione di riga per tutte le righe nella tabella
+// Disabilita l'interruzione di riga per tutte le righe della tabella
 foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```

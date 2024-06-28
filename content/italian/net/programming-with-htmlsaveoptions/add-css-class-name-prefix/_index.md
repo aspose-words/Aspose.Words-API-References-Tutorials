@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Questo codice crea un'istanza di`HtmlSaveOptions` e imposta`CssStyleSheetType` A`CssStyleSheetType.External`per generare un foglio di stile CSS esterno e`CssClassNamePrefix` A`"pfx_"` prefissare`"pfx_"` ai nomi della classe CSS.
+ Questo codice crea un'istanza di`HtmlSaveOptions` e imposta`CssStyleSheetType` A`CssStyleSheetType.External`per generare un foglio di stile CSS esterno e`CssClassNamePrefix` A`"pfx_"` prefissare`"pfx_"` per nominare le classi CSS.
 
 ## Passaggio 4: convertire e salvare il documento in HTML
 
@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 Questo codice converte il documento in HTML e lo salva in un file con il prefisso del nome della classe CSS aggiunto.
 
-### Esempio di codice sorgente per aggiungere il prefisso del nome della classe CSS utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per aggiungere il prefisso del nome della classe CSS utilizzando Aspose.Words per .NET
 
 ```csharp
 

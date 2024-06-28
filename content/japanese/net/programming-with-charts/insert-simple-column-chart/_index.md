@@ -17,7 +17,7 @@ url: /ja/net/programming-with-charts/insert-simple-column-chart/
 - Aspose.Words for .NET ライブラリがインストールされています。 NuGet パッケージ マネージャーを使用してダウンロードしてインストールできます。
 - 出力ドキュメントが保存されるドキュメント ディレクトリ パス。
 
-## ステップ 2: 新しいドキュメントを作成し、グラフを挿入する
+## ステップ 2: 新しいドキュメントを作成し、グラフを挿入します。
 
 新しいを作成します`Document`オブジェクトと`DocumentBuilder`ドキュメントを作成します。
 

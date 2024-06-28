@@ -14,7 +14,7 @@ mai rohanó világban a feladatok automatizálása elengedhetetlenné vált a ha
 
 ## A Word automatizálás megértése
 
-A Word automatizálás magában foglalja a programozást a Microsoft Word dokumentumokkal való interakcióhoz kézi beavatkozás nélkül. Ez lehetővé teszi számunkra, hogy dinamikusan hozzunk létre dokumentumokat, hajtsunk végre különféle szöveges és formázási műveleteket, valamint értékes adatokat nyerjünk ki a meglévő dokumentumokból.
+A Word automatizálás magában foglalja a programozást a Microsoft Word dokumentumokkal való együttműködéshez kézi beavatkozás nélkül. Ez lehetővé teszi számunkra, hogy dinamikusan hozzunk létre dokumentumokat, hajtsunk végre különféle szöveges és formázási műveleteket, valamint értékes adatokat nyerjünk ki a meglévő dokumentumokból.
 
 ## Az Aspose.Words for Python használatának megkezdése
 
@@ -140,7 +140,7 @@ Igen, az Aspose.Words felhőplatformokkal együtt is használható, így ideáli
 A Word automatizálás magában foglalja a Word dokumentumokkal való programozott interakciót. Az Aspose.Words for Python leegyszerűsíti ezt a folyamatot azáltal, hogy hatékony könyvtárat biztosít a szolgáltatások széles skálájával a Word dokumentumok zökkenőmentes létrehozásához, kezeléséhez és feldolgozásához.
 
 ### Használhatom az Aspose.Words for Python programot különböző operációs rendszereken?**
-Igen, az Aspose.Words for Python kompatibilis különféle operációs rendszerekkel, beleértve a Windowst, a macOS-t és a Linuxot, így sokoldalúan használható a különböző fejlesztői környezetekben.
+Igen, az Aspose.Words for Python kompatibilis különféle operációs rendszerekkel, beleértve a Windowst, a macOS-t és a Linuxot, így sokoldalúan használható különböző fejlesztői környezetekben.
 
 ### Az Aspose.Words képes kezelni az összetett dokumentumformázást?
 Teljesen! Az Aspose.Words átfogó támogatást nyújt a dokumentumok formázásához, lehetővé téve stílusok, betűtípusok, színek és egyéb formázási lehetőségek alkalmazását a tetszetős dokumentumok létrehozásához.

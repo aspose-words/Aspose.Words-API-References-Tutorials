@@ -11,7 +11,7 @@ Les didacticiels Aspose.Words pour .NET sur le traitement de mots avec des forme
 
 Grâce à ces didacticiels, vous apprendrez à ajouter des formes à vos documents, telles que des rectangles, des cercles, des lignes et des flèches, pour améliorer la mise en page et la visualisation des informations. Vous apprendrez également à manipuler les propriétés de forme, telles que la rotation, la transparence et le remplissage, pour répondre à vos besoins spécifiques.
 
-En utilisant Aspose.Words pour .NET et en suivant ces didacticiels, vous serez en mesure de maîtriser la manipulation des formes dans vos documents Word, vous permettant ainsi de créer des documents visuellement attrayants et d'aspect professionnel. Que vous soyez un développeur débutant ou expérimenté, ces didacticiels vous guideront tout au long du processus et vous aideront à exploiter tout le potentiel de la manipulation de formes dans Aspose.Words for .NET.
+En utilisant Aspose.Words pour .NET et en suivant ces didacticiels, vous serez en mesure de maîtriser la manipulation des formes dans vos documents Word, vous permettant ainsi de créer des documents visuellement attrayants et d'aspect professionnel. Que vous soyez un développeur débutant ou expérimenté, ces didacticiels vous guideront tout au long du processus et vous aideront à exploiter tout le potentiel de la manipulation de formes dans Aspose.Words pour .NET.
 
  ## Tutoriels
 | Titre | Description |

@@ -30,7 +30,7 @@ url: /ja/java/document-merging/document-splitting-extraction/
 ドキュメントを分割するには、まずドキュメントを Java アプリケーションにロードする必要があります。その方法は次のとおりです。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("path/to/your/document.docx");
 ```
 
@@ -69,7 +69,7 @@ for (int i = 0; i < splitDocuments.size(); i++) {
 ドキュメントからテキストを抽出するには、ドキュメントをロードして同様のアプローチに従います。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("path/to/your/document.docx");
 ```
 
@@ -110,4 +110,4 @@ Aspose.Words for Java は、DOC、DOCX、RTF、PDF などを含む幅広いド�
 
 ### Aspose.Words for Java のドキュメントにはどこからアクセスできますか?
 
- Aspose.Words for Java のドキュメントを見つけることができます。[ここ](https://reference.aspose.com/words/java/).
+ Aspose.Words for Java のドキュメントを参照してください。[ここ](https://reference.aspose.com/words/java/).

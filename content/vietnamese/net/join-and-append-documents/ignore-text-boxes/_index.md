@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Bước 4: Nối nội dung hộp văn bản
 
- Tạo một`NodeImporter` đối tượng và sử dụng nó để nhập các nút hộp văn bản từ tài liệu nguồn sang tài liệu đích. Lặp lại từng đoạn trong tài liệu nguồn và nhập nó vào tài liệu đích.
+ Tạo một`NodeImporter`đối tượng và sử dụng nó để nhập các nút hộp văn bản từ tài liệu nguồn sang tài liệu đích. Lặp lại từng đoạn trong tài liệu nguồn và nhập nó vào tài liệu đích.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Bước 5: Lưu tài liệu đích
 
- Cuối cùng, lưu tài liệu đích đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
+Cuối cùng, lưu tài liệu đích đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Bước 2: Chèn hình ảnh
 
- Chúng ta có thể chèn một hình ảnh bằng cách sử dụng`Shape` lớp và chỉ định loại hình ảnh, tại đây`ShapeType.Image` Chúng tôi cũng đặt kiểu bao bọc của hình ảnh thành`WrapType.Inline`.
+ Chúng ta có thể chèn một hình ảnh bằng cách sử dụng`Shape` lớp và chỉ định loại hình ảnh, tại đây`ShapeType.Image` . Chúng tôi cũng đặt kiểu bao bọc của hình ảnh thành`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng hìn
 
 #### Câu hỏi: Tôi có thể chèn hình ảnh từ URL trong Aspose.Words không?
 
- Trả lời: Có, bạn có thể chèn hình ảnh từ URL trong Aspose.Words. Bạn có thể sử dụng tương tự`InsertImage` phương thức và chỉ định URL hình ảnh thay vì đường dẫn tệp cục bộ.
+ Trả lời: Có, bạn có thể chèn hình ảnh từ URL trong Aspose.Words. Bạn có thể sử dụng tương tự`InsertImage`phương thức và chỉ định URL hình ảnh thay vì đường dẫn tệp cục bộ.
 
 #### Hỏi: Làm cách nào tôi có thể thay đổi kích thước hình ảnh trong Aspose.Words?
 
@@ -69,7 +69,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng hìn
 
 #### Câu hỏi: Tôi có thể áp dụng bộ lọc cho hình ảnh trong Aspose.Words không?
 
-Trả lời: Có, bạn có thể áp dụng bộ lọc cho hình ảnh trong Aspose.Words. Ví dụ: bạn có thể áp dụng bộ lọc làm mờ cho hình ảnh bằng cách sử dụng`ApplyGaussianBlur` phương pháp của`Shape` sự vật.
+ Trả lời: Có, bạn có thể áp dụng bộ lọc cho hình ảnh trong Aspose.Words. Ví dụ: bạn có thể áp dụng bộ lọc làm mờ cho hình ảnh bằng cách sử dụng`ApplyGaussianBlur` phương pháp của`Shape` sự vật.
 
 #### Hỏi: Làm cách nào tôi có thể thay thế hình ảnh này bằng hình ảnh khác trong Aspose.Words?
 

@@ -321,7 +321,7 @@ A táblázatok hatékony módszert jelentenek az adatok rendszerezésére és be
 // Hozzon létre egy új dokumentumot
 Document doc = new Document();
 
-// Hozzon létre egy táblázatot 3 sorból és 3 oszlopból
+// Hozzon létre egy táblázatot 3 sorból és 3 oszlopból.
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));
@@ -429,4 +429,4 @@ pageSetup.setBottomMargin(72); // Alsó margó pontokban
 
 Ebben az átfogó útmutatóban feltártuk az Aspose.Words for Java hatékony lehetőségeit a bekezdések és szövegek stílusának kialakításához a dokumentumokban. Megtanulta, hogyan hozhatja létre, formázhatja és javíthatja programozottan a dokumentumokat, az alapvető szövegkezeléstől a speciális funkciókig. Az Aspose.Words for Java felhatalmazza a fejlesztőket a dokumentumformázási feladatok hatékony automatizálására. Gyakoroljon és kísérletezzen a különböző funkciókkal, hogy jártas legyen a dokumentumstílusban az Aspose.Words for Java segítségével.
 
-Most, hogy jól ismeri a bekezdések és szövegek stílusának kialakítását a dokumentumokban az Aspose.Words for Java használatával, készen áll arra, hogy gyönyörűen formázott dokumentumokat készítsen az Ön egyedi igényei szerint. Boldog kódolást!
+Most, hogy jól ismeri a bekezdések és szövegek stílusának kialakítását a dokumentumokban az Aspose.Words for Java használatával, készen áll arra, hogy gyönyörűen formázott dokumentumokat hozzon létre az Ön egyedi igényei szerint. Boldog kódolást!

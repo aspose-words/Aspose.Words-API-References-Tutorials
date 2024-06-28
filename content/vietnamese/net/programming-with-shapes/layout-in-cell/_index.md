@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 3: Xây dựng bảng
- Sử dụng`StartTable`, `EndTable`, `InsertCell` , Và`Write` các phương pháp của`DocumentBuilder` đối tượng để xây dựng một bảng. Đặt quy tắc chiều cao và chiều cao hàng mong muốn bằng cách sử dụng`RowFormat` của cải.
+ Sử dụng`StartTable`, `EndTable`, `InsertCell` , Và`Write` các phương pháp của`DocumentBuilder`đối tượng để xây dựng một bảng. Đặt quy tắc chiều cao và chiều cao hàng mong muốn bằng cách sử dụng`RowFormat` của cải.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Bước 6: Chèn Shape vào tài liệu
-Chèn hình mờ vào tài liệu bằng cách sử dụng`InsertNode` phương pháp của`DocumentBuilder` sự vật. Định vị hình dạng bằng cách sử dụng`MoveTo` phương pháp để đặt nó sau lần chạy cuối cùng trong tài liệu.
+ Chèn hình mờ vào tài liệu bằng cách sử dụng`InsertNode` phương pháp của`DocumentBuilder` sự vật. Định vị hình dạng bằng cách sử dụng`MoveTo` phương pháp để đặt nó sau lần chạy cuối cùng trong tài liệu.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

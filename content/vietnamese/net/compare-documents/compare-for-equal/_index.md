@@ -73,4 +73,4 @@ Trả lời: So sánh các tài liệu về sự bằng nhau trong Aspose.Words 
 
 #### Câu hỏi: Tôi có thể thực hiện so sánh chi tiết hơn để xác định sự khác biệt cụ thể giữa các tài liệu không?
 
-Đáp: Có, bạn có thể thực hiện so sánh chi tiết hơn để xác định những khác biệt cụ thể giữa các tài liệu bằng cách lặp qua`Revisions` sưu tầm tài liệu gốc. Mỗi bản sửa đổi thể hiện sự thay đổi hoặc khác biệt giữa các tài liệu. Bạn có thể truy cập thông tin chi tiết của từng bản sửa đổi, chẳng hạn như loại thay đổi (chèn, xóa, thay đổi định dạng) và phạm vi bị ảnh hưởng của tài liệu.
+ Đáp: Có, bạn có thể thực hiện so sánh chi tiết hơn để xác định những khác biệt cụ thể giữa các tài liệu bằng cách lặp qua`Revisions` việc thu thập các tài liệu gốc. Mỗi bản sửa đổi thể hiện sự thay đổi hoặc khác biệt giữa các tài liệu. Bạn có thể truy cập thông tin chi tiết của từng bản sửa đổi, chẳng hạn như loại thay đổi (chèn, xóa, thay đổi định dạng) và phạm vi bị ảnh hưởng của tài liệu.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/document-formatting/apply-paragraph-style/
 ---
-W tym samouczku przeprowadzimy Cię przez proces stosowania stylu akapitu za pomocą Aspose.Words dla .NET. Wykonaj poniższe kroki, aby zrozumieć kod źródłowy i zastosować styl akapitu.
+tym samouczku przeprowadzimy Cię przez proces stosowania stylu akapitu za pomocą Aspose.Words dla .NET. Wykonaj poniższe kroki, aby zrozumieć kod źródłowy i zastosować styl akapitu.
 
 ## Krok 1: Tworzenie i konfiguracja dokumentu
 
@@ -59,7 +59,7 @@ Za pomocą tego kodu będziesz mógł zastosować styl akapitu za pomocą Aspose
 
 ## Wniosek
 
- W tym samouczku omówiliśmy, jak zastosować styl akapitu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ustawiając`StyleIdentifier` własność`ParagraphFormat`, mogliśmy zastosować do akapitu wbudowany styl. Aspose.Words dla .NET zapewnia szeroką gamę opcji formatowania, w tym możliwość tworzenia i stosowania niestandardowych stylów, co pozwala z łatwością uzyskać profesjonalnie wyglądające dokumenty.
+ W tym samouczku omówiliśmy, jak zastosować styl akapitu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ustawiając`StyleIdentifier` własność`ParagraphFormat`mogliśmy zastosować do akapitu wbudowany styl. Aspose.Words dla .NET zapewnia szeroką gamę opcji formatowania, w tym możliwość tworzenia i stosowania niestandardowych stylów, co pozwala z łatwością uzyskać profesjonalnie wyglądające dokumenty.
 
 ### Często zadawane pytania
 

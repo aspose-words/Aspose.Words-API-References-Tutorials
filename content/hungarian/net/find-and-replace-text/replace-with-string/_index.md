@@ -16,16 +16,16 @@ Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogya
 
 ## 1. lépés: Új dokumentum létrehozása
 
- Mielőtt elkezdené használni a karakterlánc-cserét, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ez megtehető az a. példányosításával`Document` tárgy:
+ Mielőtt elkezdené használni a karakterlánc-cserét, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ezt úgy lehet megtenni, hogy a`Document` tárgy:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## 2. lépés: Szúrjon be szöveget a dokumentumba
+## 2. lépés: Szöveg beszúrása a dokumentumba
 
- Ha megvan a dokumentumunk, szöveget szúrhatunk be az a segítségével`DocumentBuilder` tárgy. Példánkban a`Writeln` módszer a "sad crazy bad" kifejezés beillesztésére:
+ Ha megvan a dokumentumunk, akkor az a segítségével tudunk szöveget beszúrni`DocumentBuilder` tárgy. Példánkban a`Writeln` módszer a "sad crazy bad" kifejezés beillesztésére:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -88,7 +88,7 @@ Document doc = new Document();
 
 #### K: Hogyan illeszthetek be szöveget egy dokumentumba az Aspose.Words for .NET használatával?
 
- V: Ha megvan a dokumentum, akkor a a segítségével illeszthet be szöveget`DocumentBuilder` tárgy. Az Aspose.Words for .NET programban különféle módszereket használhat a`DocumentBuilder` osztályban szöveget szúrhat be különböző helyekre. Használhatja például a`Writeln` módszer szöveg beszúrására egy új sorba. Íme egy példa:
+ V: Ha megvan a dokumentum, akkor a a segítségével illeszthet be szöveget`DocumentBuilder` tárgy. Az Aspose.Words for .NET programban különféle módszereket használhat a`DocumentBuilder` osztályban szöveget szúrhat be különböző helyekre. Használhatja például a`Writeln` módszer a szöveg új sorba történő beszúrására. Íme egy példa:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -43,7 +43,7 @@ para.ParagraphFormat.KeepWithNext = true;
 }
 ```
 
-Ở đây, chúng tôi lặp qua từng ô trong bảng và bật tùy chọn "KeepWithNext" cho từng đoạn trong ô ngoại trừ các đoạn cuối cùng của hàng cuối cùng trong bảng.
+Ở đây, chúng tôi lặp qua từng ô trong bảng và bật tùy chọn "KeepWithNext" cho từng đoạn trong ô ngoại trừ các đoạn cuối của hàng cuối cùng trong bảng.
 
 ## Bước 4: Lưu tài liệu đã sửa đổi
 Cuối cùng, chúng ta cần lưu tài liệu đã sửa đổi với bảng được giữ cùng nhau. Sử dụng mã sau đây:
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Chúng ta cần bật KeepWithNext cho mỗi đoạn trong bảng để giữ cho đoạn đó không bị đứt ngang một trang,
+	// Chúng ta cần bật KeepWithNext cho mỗi đoạn trong bảng để giữ cho đoạn văn đó không bị vỡ trên một trang,
 	// ngoại trừ các đoạn cuối cùng ở hàng cuối cùng của bảng.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{

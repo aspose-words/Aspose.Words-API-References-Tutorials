@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 
@@ -112,7 +112,7 @@ Việc tùy chỉnh các điểm dữ liệu riêng lẻ giúp bạn linh hoạt
  Có, bạn có thể tùy chỉnh nhiều điểm dữ liệu trong biểu đồ bằng Aspose.Words for .NET. Bằng cách truy cập vào`ChartDataPointCollection`của một chuỗi, bạn có thể chọn và sửa đổi nhiều điểm dữ liệu dựa trên chỉ mục của chúng. Sử dụng vòng lặp hoặc các bài tập riêng lẻ để sửa đổi các thuộc tính mong muốn cho từng điểm dữ liệu. Bằng cách này, bạn có thể áp dụng các tùy chỉnh khác nhau cho nhiều điểm dữ liệu trong cùng một biểu đồ.
 
 #### Q2. Làm cách nào để thay đổi biểu tượng điểm đánh dấu cho điểm dữ liệu?
- Để thay đổi ký hiệu điểm đánh dấu cho một điểm dữ liệu trong biểu đồ bằng Aspose.Words cho .NET, bạn cần truy cập vào`Marker` tài sản của`ChartDataPoint` đối tượng và thiết lập`Symbol` thuộc tính cho ký hiệu đánh dấu mong muốn. Ký hiệu điểm đánh dấu thể hiện hình dạng hoặc biểu tượng được sử dụng để thể hiện từng điểm dữ liệu trên biểu đồ. Bạn có thể chọn từ nhiều biểu tượng đánh dấu tích hợp khác nhau như hình tròn, hình vuông, hình thoi, hình tam giác, ngôi sao, v.v.
+ Để thay đổi ký hiệu đánh dấu cho một điểm dữ liệu trong biểu đồ bằng Aspose.Words cho .NET, bạn cần truy cập vào`Marker` tài sản của`ChartDataPoint` đối tượng và thiết lập`Symbol` thuộc tính cho ký hiệu đánh dấu mong muốn. Ký hiệu điểm đánh dấu thể hiện hình dạng hoặc biểu tượng được sử dụng để thể hiện từng điểm dữ liệu trên biểu đồ. Bạn có thể chọn từ nhiều biểu tượng đánh dấu tích hợp khác nhau như hình tròn, hình vuông, hình thoi, hình tam giác, ngôi sao, v.v.
 
 #### Q3. Tôi có thể điều chỉnh kích thước của điểm đánh dấu điểm dữ liệu không?
  Có, bạn có thể điều chỉnh kích thước của điểm đánh dấu điểm dữ liệu trong biểu đồ bằng Aspose.Words for .NET. Truy cập`Marker` tài sản của`ChartDataPoint` đối tượng và thiết lập`Size`thuộc tính theo kích thước điểm đánh dấu mong muốn. Kích thước của điểm đánh dấu thường được chỉ định theo điểm, trong đó giá trị lớn hơn biểu thị kích thước điểm đánh dấu lớn hơn. Việc điều chỉnh kích thước điểm đánh dấu cho phép bạn nhấn mạnh các điểm dữ liệu cụ thể hoặc phân biệt chúng dựa trên tầm quan trọng của chúng.

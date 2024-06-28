@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Βήμα 4: Εισαγωγή και προσθήκη παραγράφων
 
-Επαναλάβετε τις παραγράφους στο έγγραφο προέλευσης και εισαγάγετε κάθε παράγραφο στο έγγραφο προορισμού χρησιμοποιώντας το`importer`. Προσθέστε τους εισαγόμενους κόμβους στο σώμα του εγγράφου προορισμού.
+ Επαναλάβετε τις παραγράφους στο έγγραφο προέλευσης και εισαγάγετε κάθε παράγραφο στο έγγραφο προορισμού χρησιμοποιώντας το`importer`. Προσθέστε τους εισαγόμενους κόμβους στο σώμα του εγγράφου προορισμού.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Διατηρήστε τη μορφοποίηση της λίστας πηγών κατά την εισαγωγή αριθμημένων παραγράφων.
+	//Διατηρήστε τη μορφοποίηση της λίστας πηγών κατά την εισαγωγή αριθμημένων παραγράφων.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

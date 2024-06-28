@@ -113,7 +113,7 @@ La gestion efficace des champs et des données dans les documents Word vous perm
 
 ## FAQ
 
-### Comment mettre à jour les valeurs des champs manuellement ?
+### Comment mettre à jour les valeurs des champs manuellement ?
 
  Pour mettre à jour manuellement les valeurs des champs, sélectionnez le champ et appuyez sur`F9`.
 

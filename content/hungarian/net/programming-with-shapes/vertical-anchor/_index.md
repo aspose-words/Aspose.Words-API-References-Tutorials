@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. lépés: Alakzat beszúrása és konfigurálása
-Szúrjon be egy alakzatot a dokumentumba a gombbal`InsertShape` módszere a`DocumentBuilder` tárgy. Állítsa be az alakzat kívánt méreteit.
+ Szúrjon be egy alakzatot a dokumentumba a gombbal`InsertShape` módszere a`DocumentBuilder` tárgy. Állítsa be az alakzat kívánt méreteit.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## 6. lépés: Mentse el a dokumentumot
- Mentse a dokumentumot a megadott könyvtárba a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithShapes.VerticalAnchor.docx" néven mentjük.
+ Mentse a dokumentumot a megadott könyvtárba a`Save`módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithShapes.VerticalAnchor.docx" néven mentjük.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

@@ -79,7 +79,7 @@ foreach (DigitalSignature signature in doc.DigitalSignatures)
 
 答：要使用 Aspose.Words for .NET 存取 Word 文件中的數位簽名，您可以按照以下步驟操作：
 1. 使用載入文檔`Document`類並指定文檔文件的路徑。
-2. 使用循環來迭代`DigitalSignatures`文檔的集合。每次迭代都代表一個數位簽章。
+2. 使用循環來迭代`DigitalSignatures`文件收集。每次迭代都代表一個數位簽章。
 
 #### Q：我可以從 Word 文件中的數位簽章存取哪些資訊？
 
@@ -97,13 +97,13 @@ foreach (DigitalSignature signature in doc.DigitalSignatures)
 #### Q：如何使用 Aspose.Words for .NET 驗證 Word 文件中數位簽章的有效性？
 
 答：要使用 Aspose.Words for .NET 驗證 Word 文件中數位簽章的有效性，您可以依照下列步驟操作：
-1. 訪問`DigitalSignatures`文檔的集合。
+1. 訪問`DigitalSignatures`文件收集。
 2. 迭代每個`DigitalSignature`集合中的物件。
 3. 使用`IsValid`的財產`DigitalSignature`物件檢查簽名是否有效。
 
 #### Q：我可以從 Word 文件中的數位簽章中檢索簽章者的註解或簽章原因嗎？
 
-答：是的，您可以從 Word 文件中的數位簽章中擷取簽章者的註解或簽章原因。這`Comments`的財產`DigitalSignature`物件提供對簽署者在簽名過程中指定的註釋的存取。
+答：是的，您可以從 Word 文件中的數位簽章中擷取簽章者的註解或簽章原因。這`Comments`的財產`DigitalSignature`該物件提供對簽署者在簽名過程中指定的註釋的存取。
 
 #### Q：Aspose.Words for .NET 中的簽章驗證功能支援什麼類型的文件？
 

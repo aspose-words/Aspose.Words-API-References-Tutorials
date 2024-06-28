@@ -74,7 +74,7 @@ Jangan ragu untuk menjelajahi fitur canggih lainnya yang ditawarkan oleh Aspose.
  Ya, Anda dapat mengekstrak halaman yang tidak berurutan dengan menentukan rentang halaman yang diinginkan. Misalnya, jika Anda ingin mengekstrak halaman 1, 3, dan 5, Anda dapat mengatur rentang halaman sebagai`1,3,5` dalam`ExtractPages` fungsi.
 
 #### Q2: Apakah mungkin untuk mengekstrak rentang halaman tertentu dari beberapa dokumen secara bersamaan?
-Ya, Anda dapat menerapkan fitur "Berdasarkan Rentang Halaman" ke beberapa dokumen. Cukup muat setiap dokumen satu per satu dan ekstrak rentang halaman yang diinginkan menggunakan`ExtractPages` fungsi. Anda kemudian dapat menyimpan halaman yang diekstraksi dari setiap dokumen secara terpisah.
+ Ya, Anda dapat menerapkan fitur "Berdasarkan Rentang Halaman" ke beberapa dokumen. Cukup muat setiap dokumen satu per satu dan ekstrak rentang halaman yang diinginkan menggunakan`ExtractPages` fungsi. Anda kemudian dapat menyimpan halaman yang diekstraksi dari setiap dokumen secara terpisah.
 
 #### Q3: Dapatkah saya mengekstrak rentang halaman dari dokumen Word yang dienkripsi atau dilindungi kata sandi?
 Tidak, fitur "Berdasarkan Rentang Halaman" berfungsi pada dokumen Word yang tidak dilindungi. Jika dokumen dienkripsi atau dilindungi kata sandi, Anda harus memberikan kata sandi yang benar dan menghapus perlindungan sebelum mengekstraksi rentang halaman yang diinginkan.

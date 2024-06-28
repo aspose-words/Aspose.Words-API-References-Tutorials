@@ -2,80 +2,109 @@
 title: Contoh Sumber Font Sumber Daya Steam
 linktitle: Contoh Sumber Font Sumber Daya Steam
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan Sumber Font Resource Stream untuk memuat font kustom ke Aspose.Words untuk .NET.
+description: Pelajari cara menggunakan sumber font aliran sumber daya dengan Aspose.Words untuk .NET dalam panduan terperinci ini. Pastikan dokumen Anda ditampilkan dengan benar setiap saat.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/resource-steam-font-source-example/
 ---
 
-Dalam tutorial ini, kami akan memandu Anda tentang cara menggunakan Sumber Font Resource Flow dengan Aspose.Words untuk .NET. Sumber font ini memungkinkan Anda memuat font dari aliran sumber daya, yang dapat berguna saat Anda ingin memasukkan font khusus ke dalam aplikasi Anda.
+Jika Anda bekerja dengan dokumen di .NET dan menggunakan Aspose.Words, mengelola sumber font dapat menjadi aspek penting untuk memastikan dokumen Anda terlihat seperti yang diharapkan. Aspose.Words menawarkan cara yang ampuh untuk menangani font, termasuk menggunakan aliran sumber daya. Dalam panduan ini, kita akan membahas penggunaan aliran sumber daya sebagai sumber font dengan Aspose.Words untuk .NET. Ayo selami!
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki item berikut:
-- Pengetahuan tentang bahasa pemrograman C#
-- Pustaka Aspose.Words untuk .NET diinstal di proyek Anda
 
-## Langkah 1: Tentukan direktori dokumen
- Pertama, Anda perlu mengatur jalur direktori ke lokasi dokumen Word Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai.
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
-```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+- Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda mengikutinya.
+-  Aspose.Words untuk .NET Library: Unduh dan instal dari[tautan unduhan](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Pengaturan seperti Visual Studio untuk menulis dan mengeksekusi kode Anda.
+-  Contoh Dokumen: Miliki contoh dokumen (misalnya,`Rendering.docx`) siap untuk menguji pengaturan font.
 
-## Langkah 2: Unggah Dokumen dan Atur Sumber Font Aliran Sumber Daya
- Selanjutnya, kita akan memuat dokumen menggunakan`Document` kelas dan atur sumber font aliran sumber daya menggunakan`FontSettings.DefaultInstance.SetFontsSources()` kelas. Ini akan memungkinkan Aspose.Words menemukan font di aliran sumber daya.
+## Impor Namespace
+
+Untuk mulai bekerja dengan Aspose.Words, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek Anda. Ini memberikan akses ke kelas dan metode yang Anda perlukan.
 
 ```csharp
-// Muat dokumen dan atur sumber font aliran sumber daya
-Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{ new SystemFontSource(), new ResourceSteamFontSource() });
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System.IO;
+using System.Reflection;
 ```
 
-## Langkah 3: Simpan dokumen
-Terakhir, kami akan menyimpan dokumen tersebut. Font akan dimuat dari aliran sumber daya yang ditentukan dan disematkan dalam dokumen.
+## Langkah 1: Tentukan Direktori Dokumen
 
-```csharp
-// Simpan dokumennya
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
-```
-
-### Contoh kode sumber untuk Contoh Sumber Font Resource Steam menggunakan Aspose.Words untuk .NET 
+Pertama, tentukan direktori tempat dokumen Anda disimpan. Ini penting untuk menemukan dokumen yang ingin Anda proses.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Langkah 2: Muat Dokumen
+
+ Muat dokumen Anda ke dalam Aspose.Words`Document` obyek. Ini memungkinkan Anda memanipulasi dokumen secara terprogram.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Langkah 3: Konfigurasikan Pengaturan Font
+
+Sekarang, konfigurasikan pengaturan font untuk menggunakan sumber font sistem bersama dengan sumber font aliran sumber daya kustom.
+
+```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-	{ new SystemFontSource(), new ResourceSteamFontSource() });
+{
+    new SystemFontSource(),
+    new ResourceSteamFontSource()
+});
+```
+
+## Langkah 4: Terapkan Sumber Font Resource Stream
+
+ Buat kelas yang diperluas`StreamFontSource` untuk menangani font dari aliran sumber daya yang tertanam. Kelas ini akan mengambil data font dari sumber daya Majelis.
+
+```csharp
+internal class ResourceSteamFontSource : StreamFontSource
+{
+    public override Stream OpenFontDataStream()
+    {
+        return Assembly.GetExecutingAssembly().GetManifestResourceStream("resourceName");
+    }
+}
+```
+
+## Langkah 5: Simpan Dokumen
+
+Terakhir, simpan dokumen setelah menerapkan pengaturan font. Simpan dalam format pilihan Anda; di sini, kami akan menyimpannya sebagai PDF.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
+Dengan mengikuti langkah-langkah ini, Anda telah mengonfigurasi aplikasi Anda untuk menggunakan aliran sumber daya sebagai sumber font, memastikan bahwa font yang diperlukan telah tertanam dan tersedia untuk dokumen Anda.
+
 ## Kesimpulan
-Dalam tutorial ini, Anda mempelajari cara menggunakan Resource Flow Font Source dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda memuat font dari umpan sumber daya, yang berguna saat Anda ingin menyematkan font khusus ke dalam dokumen Anda. Bereksperimenlah dengan font yang berbeda dan jelajahi kemungkinan yang ditawarkan oleh Aspose.Words untuk manajemen font.
 
-### FAQ
+Anda sekarang telah menguasai proses penggunaan aliran sumber daya sebagai sumber font dengan Aspose.Words untuk .NET. Teknik ini akan membantu Anda mengelola font dengan lebih efisien dan memastikan dokumen Anda selalu terlihat terbaik. Teruslah bereksperimen dengan pengaturan berbeda untuk memanfaatkan sepenuhnya kekuatan Aspose.Words.
 
-#### T: Bagaimana cara memuat font dari aliran sumber daya ke Aspose.Words?
+## FAQ
 
- J: Untuk memuat font dari aliran sumber daya di Aspose.Words, Anda dapat menggunakan`FontSettings` kelas dan`SetFontsSources` metode untuk menentukan sumber font menggunakan aliran sumber daya. Hal ini memungkinkan font dimuat langsung dari aliran sumber daya, bukan dari file fisik.
+### Q1: Dapatkah saya menggunakan beberapa aliran sumber daya untuk font yang berbeda?
 
-#### T: Apa manfaat menggunakan aliran sumber daya untuk menentukan sumber font di Aspose.Words?
+ Ya, Anda dapat menerapkan banyak hal`StreamFontSource` kelas untuk aliran sumber daya yang berbeda dan menambahkannya ke sumber font.
 
-J: Menggunakan aliran sumber daya untuk menentukan sumber font memiliki beberapa keuntungan:
-- Memungkinkan Anda memuat font dari sumber daya yang ada di dalam aplikasi Anda, sehingga memudahkan penerapan dan pendistribusian dokumen.
-- Memberikan peningkatan fleksibilitas dalam manajemen font karena Anda dapat memuat font dari aliran sumber daya yang berbeda tergantung kebutuhan Anda.
+### Q2: Di mana saya bisa mendapatkan uji coba gratis Aspose.Words untuk .NET?
 
-#### T: Bagaimana cara menambahkan font ke aliran sumber daya di aplikasi .NET saya?
+ Anda dapat mengunduh uji coba gratis dari[Asumsikan halaman uji coba gratis](https://releases.aspose.com/).
 
- J: Untuk menambahkan font ke aliran sumber daya di aplikasi .NET, Anda harus menyematkan file font di sumber daya proyek Anda. Anda kemudian dapat mengakses file font ini menggunakan metode khusus untuk platform pengembangan Anda (misalnya,`GetManifestResourceStream` menggunakan`System.Reflection` ruang nama).
+###  Q3: Dapatkah saya menangani jenis peringatan lainnya`IWarningCallback`?
 
-#### T: Apakah mungkin memuat beberapa font dari aliran sumber daya berbeda ke dalam satu dokumen Aspose.Words?
+ Ya, itu`IWarningCallback` antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
 
- J: Ya, sangat mungkin untuk memuat beberapa font dari aliran sumber daya yang berbeda ke dalam satu dokumen Aspose.Words. Anda dapat menentukan beberapa sumber font menggunakan`SetFontsSources` metode`FontSettings` kelas, menyediakan aliran sumber daya yang sesuai untuk setiap font.
+### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words?
 
-#### T: Jenis aliran sumber daya apa yang dapat saya gunakan untuk memuat font ke Aspose.Words?
+ Mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan.
 
-J: Anda dapat menggunakan berbagai jenis aliran sumber daya untuk memuat font ke Aspose.Words, seperti aliran sumber daya yang dibangun dalam aplikasi .NET Anda, aliran sumber daya dari file eksternal, aliran sumber daya dari database, dll. Pastikan untuk menyediakan yang sesuai aliran sumber daya berdasarkan pengaturan dan kebutuhan Anda.
+### Q5: Apakah mungkin untuk mendapatkan lisensi sementara untuk Aspose.Words?
+
+ Ya, Anda bisa mendapatkan lisensi sementara dari[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/).

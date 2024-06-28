@@ -1,6 +1,6 @@
 ---
-title: Документ владельца
-linktitle: Документ владельца
+title: ВладелецДокумент
+linktitle: ВладелецДокумент
 second_title: API обработки документов Aspose.Words
 description: Узнайте, как использовать документ владельца в Aspose.Words для .NET.
 type: docs
@@ -20,7 +20,7 @@ using Aspose.Words.Paragraphs;
 ```
 
 ## Шаг 2. Создайте новый документ.
- На этом этапе мы создадим новый документ, используя`Document` сорт.
+ На этом этапе мы создадим новый документ, используя`Document` класс.
 
 ```csharp
 Document doc = new Document();
@@ -76,7 +76,7 @@ Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 // Но узел абзаца знает свой документ.
 Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-// Тот факт, что узел всегда принадлежит документу, позволяет нам получать доступ к нему и изменять его.
+// Тот факт, что узел всегда принадлежит документу, позволяет нам получать к нему доступ и изменять его.
 // свойства, которые ссылаются на данные всего документа, такие как стили или списки.
 para.ParagraphFormat.StyleName = "Heading 1";
 

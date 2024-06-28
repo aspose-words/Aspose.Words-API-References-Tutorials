@@ -25,7 +25,7 @@ is_root: true
 - [सूची के साथ कार्य करना](./net/working-with-list/)   
 - [मार्कडाउन के साथ काम करना](./net/working-with-markdown/)   
 - [नोड के साथ कार्य करना](./net/working-with-node/)   
-- [संशोधनों के साथ कार्य करना](./net/working-with-revisions/)   
+- [समीक्षाओं के साथ कार्य करना](./net/working-with-revisions/)   
 - [टेक्स्टबॉक्स के साथ कार्य करना](./net/working-with-textboxes/)   
 - [विभाजित दस्तावेज़](./net/split-document/)   
 - [दस्तावेज़बिल्डर का उपयोग करके सामग्री जोड़ें](./net/add-content-using-documentbuilder/)

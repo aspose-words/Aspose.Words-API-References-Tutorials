@@ -81,7 +81,7 @@ options. IgnoreDeleted = false;
 
 ## Bước 8: Xuất tài liệu đã sửa đổi có văn bản đã xóa
 
-Sau khi thay đổi các tùy chọn, chúng ta có thể thực hiện tìm kiếm và thay thế lại để có kết quả có văn bản đã xóa đi kèm:
+Sau khi thay đổi tùy chọn, chúng ta có thể thực hiện tìm kiếm và thay thế lại để có kết quả có văn bản đã xóa đi kèm:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);

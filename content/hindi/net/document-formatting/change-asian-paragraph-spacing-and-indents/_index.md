@@ -51,9 +51,9 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent को अपडेट किया जाएगा
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent को अपडेट किया जाएगा
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent को अपडेट किया जाएगा
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent को अपडेट किया जाएगा।
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent को अपडेट किया जाएगा।
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent को अपडेट किया जाएगा।
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore अपडेट किया जाएगा
 	format.LineUnitAfter = 10;                 // पैराग्राफफॉर्मेट.स्पेसआफ्टर अपडेट किया जाएगा
 
@@ -71,7 +71,7 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 
 #### प्रश्न: .NET के लिए Aspose.Words में "चेंज एशियन पैराग्राफ स्पेसिंग एंड इंडेंट" फीचर क्या करता है?
 
-उ: .NET के लिए Aspose.Words में "एशियन पैराग्राफ स्पेसिंग और इंडेंट बदलें" सुविधा आपको वर्ड दस्तावेज़ में एशियन पैराग्राफ के स्पेसिंग और इंडेंटेशन गुणों को संशोधित करने की अनुमति देती है। आप पैराग्राफ के लेआउट और स्वरूप को नियंत्रित करने के लिए बाएँ और दाएँ इंडेंट, पहली पंक्ति के इंडेंट, पहले स्थान और मानों के बाद स्थान को समायोजित कर सकते हैं।
+उ: .NET के लिए Aspose.Words में "एशियन पैराग्राफ स्पेसिंग और इंडेंट बदलें" सुविधा आपको वर्ड दस्तावेज़ में एशियन पैराग्राफ के स्पेसिंग और इंडेंटेशन गुणों को संशोधित करने की अनुमति देती है। आप पैराग्राफ के लेआउट और उपस्थिति को नियंत्रित करने के लिए बाएँ और दाएँ इंडेंट, पहली-पंक्ति इंडेंट, पहले स्थान और मानों के बाद स्थान समायोजित कर सकते हैं।
 
 #### प्रश्न: मैं .NET के लिए Aspose.Words का उपयोग करके एशियाई पैराग्राफ की रिक्ति और इंडेंट कैसे बदलूं?
 

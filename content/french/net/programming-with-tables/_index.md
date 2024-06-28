@@ -19,7 +19,7 @@ En suivant ces tutoriels, vous pourrez exploiter pleinement les fonctionnalités
 | [Ajuster automatiquement le tableau au contenu](./auto-fit-table-to-contents/) | Découvrez comment adapter automatiquement un tableau à son contenu dans un document Word à l'aide d'Aspose.Words pour .NET. |
 | [Cloner la table complète](./clone-complete-table/) | Découvrez comment cloner un tableau entier dans un document Word avec Aspose.Words pour .NET. |
 | [Index de recherche](./finding-index/) | Découvrez comment rechercher des index de tables, de lignes et de cellules dans un document Word avec Aspose.Words pour .NET. |
-| [Insérer un tableau directement](./insert-table-directly/) | Découvrez comment insérer un tableau directement dans un document Word avec Aspose.Words pour .NET. |
+| [Insérer un tableau directement](./insert-table-directly/) | Découvrez comment insérer des tableaux directement dans des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé étape par étape pour rationaliser la création de vos documents. |
 | [Insérer un tableau à partir de HTML](./insert-table-from-html/) | Découvrez comment insérer un tableau HTML dans un document Word avec Aspose.Words pour .NET. |
 | [Créer un tableau simple](./create-simple-table/) | Apprenez à créer un tableau simple dans un document Word avec Aspose.Words pour .NET. |
 | [Tableau formaté](./formatted-table/) | Découvrez comment créer un tableau formaté dans un document Word avec Aspose.Words pour .NET. |

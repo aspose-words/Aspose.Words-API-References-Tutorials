@@ -106,7 +106,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 #### Q：如何設定段落各邊的邊框樣式？
 
- A：要設定段落各邊的邊框樣式，可以存取`Borders`的財產`ParagraphFormat`並設定`LineStyle`每個人的財產`BorderType`（例如，`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom`）。您可以指定不同的線條樣式，例如`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`， ETC。
+ A：要設定段落各邊的邊框樣式，可以存取`Borders`的財產`ParagraphFormat`並設定`LineStyle`每個人的財產`BorderType`（例如。，`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom`）。您可以指定不同的線條樣式，例如`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`， ETC。
 
 #### Q：如何指定段落底紋的紋理和填滿顏色？
 

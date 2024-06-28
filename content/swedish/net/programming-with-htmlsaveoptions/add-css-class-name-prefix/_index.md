@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Steg 3: Ställ in HTML-sparalternativ
 
-Låt oss nu ställa in HTML-sparalternativ, inklusive CSS-formatmallstyp och CSS-klassnamnsprefix. Använd följande kod:
+Låt oss nu ställa in HTML-sparalternativen, inklusive CSS-formatmallstyp och CSS-klassnamnsprefix. Använd följande kod:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Denna kod skapar en instans av`HtmlSaveOptions` och uppsättningar`CssStyleSheetType` till`CssStyleSheetType.External`för att generera en extern CSS-stilmall, och`CssClassNamePrefix` till`"pfx_"` till prefix`"pfx_"` att namnge CSS-klass.
+ Denna kod skapar en instans av`HtmlSaveOptions` och uppsättningar`CssStyleSheetType` till`CssStyleSheetType.External`för att generera en extern CSS-stilmall, och`CssClassNamePrefix` till`"pfx_"` till prefix`"pfx_"` att namnge CSS-klasser.
 
 ## Steg 4: Konvertera och spara dokumentet till HTML
 

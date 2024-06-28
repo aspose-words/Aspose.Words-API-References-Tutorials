@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Bước 5: Chèn trường lồng nhau
 
- Chúng tôi sử dụng DocumentBuilder's`InsertField()`phương pháp chèn một trường lồng nhau vào chân trang.
+ Chúng tôi sử dụng DocumentBuilder's`InsertField()` phương pháp chèn một trường lồng nhau vào chân trang.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");

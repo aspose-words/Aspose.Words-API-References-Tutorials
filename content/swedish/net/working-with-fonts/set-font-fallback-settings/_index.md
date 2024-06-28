@@ -2,80 +2,116 @@
 title: Ställ in alternativa teckensnittsinställningar
 linktitle: Ställ in alternativa teckensnittsinställningar
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du ställer in inställningar för teckensnittsersättning i Aspose.Words för .NET och anpassa teckensnittsersättning i dina Word-dokument.
+description: Lär dig hur du ställer in Font Fallback Settings i Aspose.Words för .NET. Den här omfattande guiden säkerställer att alla tecken i dina dokument visas korrekt.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/set-font-fallback-settings/
 ---
-den här handledningen kommer vi att visa dig hur du ställer in inställningar för teckensnittsersättning i ett Word-dokument med Aspose.Words för .NET. Inställningar för teckensnittsersättning låter dig ange ersättningsteckensnitt som ska användas när de angivna teckensnitten inte är tillgängliga.
+
+När du arbetar med dokument som innehåller olika textelement, såsom olika språk eller specialtecken, är det avgörande att se till att dessa element visas korrekt. Aspose.Words för .NET erbjuder en kraftfull funktion som kallas Font Fallback Settings, som hjälper till att definiera regler för att ersätta teckensnitt när det ursprungliga teckensnittet inte stöder vissa tecken. I den här guiden kommer vi att undersöka hur du ställer in Font Fallback Settings med Aspose.Words för .NET i en steg-för-steg handledning.
 
 ## Förutsättningar
-Innan du börjar, se till att du har följande saker:
-- Har praktiska kunskaper i programmeringsspråket C#
-- Aspose.Words-biblioteket för .NET installerat i ditt projekt
+
+Innan du dyker in i handledningen, se till att du har följande förutsättningar på plats:
+
+- Grundläggande kunskaper i C#: Bekantskap med programmeringsspråket C# och .NET framework.
+-  Aspose.Words för .NET: Ladda ner och installera från[nedladdningslänk](https://releases.aspose.com/words/net/).
+- Utvecklingsmiljö: En inställning som Visual Studio för att skriva och köra din kod.
+-  Exempeldokument: Ha ett exempeldokument (t.ex.`Rendering.docx`) redo för testning.
+- Font Fallback Rules XML: Förbered en XML-fil som definierar typsnittets reservregler.
+
+## Importera namnområden
+
+För att använda Aspose.Words måste du importera de nödvändiga namnrymden. Detta ger tillgång till olika klasser och metoder som krävs för dokumentbehandling.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
+```
 
 ## Steg 1: Definiera dokumentkatalogen
- Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
+
+Först definierar du katalogen där ditt dokument lagras. Detta är viktigt för att hitta och bearbeta ditt dokument.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Steg 2: Ladda inställningar för teckensnittsersättning
- Skapa en instans av`FontSettings` klass och använd`Load` metod för att läsa in inställningar för teckensnittsåsidosättning från en XML-fil. Den angivna XML-filen måste innehålla reglerna för teckensnittsersättning som ska användas.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## Steg 3: Använd inställningar för teckensnittsersättning
- Koppla inställningar för teckensnittsersättning till dokumentet genom att tilldela dem till dokumentets`FontSettings` fast egendom.
-
-```csharp
-doc.FontSettings = fontSettings;
-```
-
-## Steg 4: Spara dokumentet
- Spara dokumentet med hjälp av`Save` metod för`Document` med lämplig sökväg och filnamn.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
-
-### Exempel på källkod för Set Font Fallback Settings med Aspose.Words för .NET 
-```csharp
-// Sökväg till din dokumentkatalog
+// Sökvägen till dokumentkatalogen
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Steg 2: Ladda dokumentet
+
+ Ladda ditt dokument i en Aspose.Words`Document` objekt. Detta steg låter dig arbeta med dokumentet programmatiskt.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Steg 3: Konfigurera teckensnittsinställningar
+
+ Skapa en ny`FontSettings` objekt och läs in alternativa teckensnittsinställningar från en XML-fil. Den här XML-filen innehåller reglerna för reservtypsnitt.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## Steg 4: Tillämpa teckensnittsinställningar på dokumentet
+
+ Tilldela den konfigurerade`FontSettings`till dokumentet. Detta säkerställer att reservreglerna för teckensnitt tillämpas när dokumentet renderas.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Steg 5: Spara dokumentet
+
+Slutligen, spara dokumentet. Fallback-inställningarna för teckensnitt kommer att användas under sparandet för att säkerställa korrekt teckensnittsersättning.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
+```
+
+## XML-fil: Font Fallback Rules
+
+Här är ett exempel på hur din XML-fil som definierar teckensnittets reservregler ska se ut:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
 ```
 
 ## Slutsats
-I den här handledningen lärde du dig hur du ställer in inställningar för teckensnittsersättning i ett Word-dokument med Aspose.Words för .NET. Experimentera med olika regler för teckensnittsersättning för att säkerställa att ditt dokument ser konsekvent ut, även när de angivna teckensnitten inte är tillgängliga.
 
-### FAQ's
+Genom att följa dessa steg kan du effektivt ställa in och använda Font Fallback Settings i Aspose.Words för .NET. Detta säkerställer att dina dokument visar alla tecken korrekt, även om det ursprungliga teckensnittet inte stöder vissa tecken. Genom att implementera dessa inställningar förbättras kvaliteten och läsbarheten av dina dokument avsevärt.
 
-#### F: Hur kan jag ställa in inställningar för teckensnittsersättning i ett Word-dokument med Aspose.Words?
+## Vanliga frågor
 
-S: För att ställa in inställningar för teckensnittsersättning i ett Word-dokument med Aspose.Words, kan du använda API för att ange reservteckensnitt som ska användas när nödvändiga teckensnitt inte är tillgängliga. Detta säkerställer konsekvent textvisualisering, även utan de ursprungliga typsnitten.
+### F1: Vad är Font Fallback?
 
-#### F: Är det möjligt att hantera reservteckensnitt när man åsidosätter i ett Word-dokument med Aspose.Words?
+Font Fallback är en funktion som tillåter ersättning av teckensnitt när det ursprungliga teckensnittet inte stöder vissa tecken, vilket säkerställer korrekt visning av alla textelement.
 
-S: Ja, med Aspose.Words kan du hantera reservteckensnitt när du ersätter i ett Word-dokument. API:et låter dig upptäcka saknade teckensnitt och ange lämpliga reservteckensnitt för att bibehålla konsekvent textutseende även när teckensnitt byts ut.
+### F2: Kan jag ange flera reservteckensnitt?
 
-#### F: Varför är det viktigt att korrekt konfigurera inställningar för teckensnittsersättning i ett Word-dokument?
+Ja, du kan ange flera reservteckensnitt i XML-reglerna. Aspose.Words kommer att kontrollera varje typsnitt i angiven ordning tills det hittar ett som stöder tecknet.
 
-S: Det är viktigt att korrekt konfigurera inställningar för teckensnittsersättning i ett Word-dokument för att bibehålla textens visuella integritet. Genom att ställa in lämpliga reservteckensnitt med Aspose.Words säkerställer du att texten kommer att visas konsekvent, även om de nödvändiga typsnitten inte är tillgängliga.
+### F3: Var kan jag ladda ner Aspose.Words för .NET?
 
-#### F: Hur kan jag upptäcka saknade teckensnitt när jag ersätter i ett Word-dokument med Aspose.Words?
+ Du kan ladda ner den från[Aspose nedladdningssida](https://releases.aspose.com/words/net/).
 
-S: Aspose.Words låter dig upptäcka saknade teckensnitt under ersättning i ett Word-dokument med hjälp av API:et. Du kan använda metoder som tillhandahålls av Aspose.Words för att kontrollera tillgängligheten av nödvändiga teckensnitt och vidta lämpliga åtgärder om teckensnitt saknas.
+### F4: Hur skapar jag XML-filen för alternativa teckensnittsregler?
 
-#### F: Påverkar teckensnittsersättning layouten på mitt Word-dokument?
+XML-filen kan skapas med vilken textredigerare som helst. Det bör följa strukturen som visas i exemplet i denna handledning.
 
-S: Teckensnittsersättning kan påverka layouten på ditt Word-dokument om reservteckensnitten har andra dimensioner än de ursprungliga teckensnitten. Men genom att välja reservteckensnitt på ett klokt sätt och konfigurera inställningar för teckensnittsersättning med Aspose.Words, kan du minimera layoutpåverkan.
+### F5: Finns det stöd tillgängligt för Aspose.Words?
+
+ Ja, du kan hitta support på[Aspose.Words supportforum](https://forum.aspose.com/c/words/8).

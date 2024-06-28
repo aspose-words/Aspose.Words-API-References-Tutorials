@@ -14,7 +14,7 @@ url: /zh/net/programming-with-tables/convert-to-horizontally-merged-cells/
 1. 启动 Visual Studio 并创建一个新的 C# 项目。
 2. 添加对 Aspose.Words for .NET 库的引用。
 
-## 第 2 步：加载文档并访问表
+## 第 2 步：加载文档并访问表格
 要对表启动文字处理，我们需要加载包含该表的文档并访问它。按着这些次序：
 
 ```csharp
@@ -53,4 +53,4 @@ table. ConvertToHorizontallyMergedCells();
 ```
 
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 将表格单元格转换为 Word 文档中的水平合并单元格。通过遵循本分步指南并实现提供的 C# 代码，您可以以编程方式操作 Word 文档中的表格单元格。此功能允许您在表格中以灵活且个性化的方式管理和组织数据。
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 将表格单元格转换为 Word 文档中的水平合并单元格。通过遵循本分步指南并实现提供的 C# 代码，您可以通过编程方式操作 Word 文档中的表格单元格。此功能允许您在表格中以灵活且个性化的方式管理和组织数据。

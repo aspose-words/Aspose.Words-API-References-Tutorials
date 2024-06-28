@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 3: بناء الجدول
- استخدم ال`StartTable`, `EndTable`, `InsertCell` ، و`Write` أساليب`DocumentBuilder` كائن لبناء جدول. قم بتعيين ارتفاع الصف المطلوب وقاعدة الارتفاع باستخدام`RowFormat` ملكيات.
+ استخدم ال`StartTable`, `EndTable`, `InsertCell` ، و`Write` أساليب`DocumentBuilder`كائن لبناء جدول. قم بتعيين ارتفاع الصف المطلوب وقاعدة الارتفاع باستخدام`RowFormat` ملكيات.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## الخطوة 6: أدخل الشكل في المستند
-أدخل شكل العلامة المائية في المستند باستخدام`InsertNode` طريقة`DocumentBuilder` هدف. ضع الشكل باستخدام`MoveTo` طريقة لوضعه بعد آخر تشغيل في المستند.
+ أدخل شكل العلامة المائية في المستند باستخدام`InsertNode` طريقة`DocumentBuilder` هدف. ضع الشكل باستخدام`MoveTo` طريقة لوضعه بعد آخر تشغيل في المستند.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

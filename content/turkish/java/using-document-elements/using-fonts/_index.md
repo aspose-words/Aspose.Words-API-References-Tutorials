@@ -8,7 +8,7 @@ weight: 12
 url: /tr/java/using-document-elements/using-fonts/
 ---
 
-Belge işleme dünyasında Aspose.Words for Java, geliştiricilerin Word belgelerini kolaylıkla oluşturmasına ve yönetmesine olanak tanıyan güçlü bir araç olarak öne çıkıyor. Belge formatlamanın en önemli yönlerinden biri fontlarla çalışmaktır ve bu adım adım eğitimde, Aspose.Words for Java'da fontların etkili bir şekilde nasıl kullanılacağını keşfedeceğiz.
+Belge işleme dünyasında Aspose.Words for Java, geliştiricilerin Word belgelerini kolaylıkla oluşturmasına ve yönetmesine olanak tanıyan güçlü bir araç olarak öne çıkıyor. Belge biçimlendirmenin en önemli yönlerinden biri yazı tipleriyle çalışmaktır ve bu adım adım eğitimde, Aspose.Words for Java'da yazı tiplerini etkili bir şekilde nasıl kullanabileceğimizi keşfedeceğiz.
 
 ## giriiş
 

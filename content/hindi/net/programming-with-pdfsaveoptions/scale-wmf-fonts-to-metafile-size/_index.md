@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## चरण 3: मेटाफ़ाइल रेंडरिंग विकल्प कॉन्फ़िगर करें
 
- मेटाफ़ाइल आकार में WMF फ़ॉन्ट स्केलिंग को सक्षम या अक्षम करने के लिए, हमें कॉन्फ़िगर करने की आवश्यकता है`MetafileRenderingOptions`वस्तु। इस उदाहरण में, हम सेट करके फ़ॉन्ट स्केलिंग को अक्षम करते हैं`ScaleWmfFontsToMetafileSize`संपत्ति को`false`.
+ मेटाफ़ाइल आकार में WMF फ़ॉन्ट स्केलिंग को सक्षम या अक्षम करने के लिए, हमें कॉन्फ़िगर करने की आवश्यकता है`MetafileRenderingOptions` वस्तु। इस उदाहरण में, हम सेट करके फ़ॉन्ट स्केलिंग को अक्षम करते हैं`ScaleWmfFontsToMetafileSize`संपत्ति को`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// यदि Aspose.Words कुछ मेटाफ़ाइल रिकॉर्ड को वेक्टर ग्राफ़िक्स में सही ढंग से प्रस्तुत नहीं कर सकता है
+	//यदि Aspose.Words कुछ मेटाफ़ाइल रिकॉर्ड को वेक्टर ग्राफ़िक्स में सही ढंग से प्रस्तुत नहीं कर सकता है
 	// फिर Aspose.Words इस मेटाफ़ाइल को एक बिटमैप में प्रस्तुत करता है।
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

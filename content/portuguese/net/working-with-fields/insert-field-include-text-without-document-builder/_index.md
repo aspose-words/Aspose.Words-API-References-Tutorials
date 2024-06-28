@@ -97,4 +97,4 @@ R: Inserir um campo de inclusão de texto sem o construtor de documentos não af
 
 #### P: Posso personalizar a aparência do campo de inclusão de texto em um documento do Word com Aspose.Words for .NET?
 
-R: O campo de inclusão de texto não personaliza diretamente sua aparência em um documento do Word. No entanto, você pode formatar o texto incluído usando as propriedades do parágrafo, propriedades da fonte e outros objetos de formatação disponíveis no Aspose.Words for .NET.
+R: A inclusão do campo de texto não personaliza diretamente sua aparência em um documento do Word. No entanto, você pode formatar o texto incluído usando as propriedades do parágrafo, propriedades da fonte e outros objetos de formatação disponíveis no Aspose.Words for .NET.

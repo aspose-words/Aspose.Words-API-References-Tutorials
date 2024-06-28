@@ -48,7 +48,7 @@ Trước khi đi sâu vào sử dụng SDT, hãy bắt đầu với Aspose.Words
 
 Việc thêm SDT vào tài liệu bao gồm một số bước đơn giản:
 
-1.  Tạo SDT: Sử dụng`StructuredDocumentTag` lớp để tạo một phiên bản SDT.
+1.  Tạo SDT: Sử dụng`StructuredDocumentTag` class để tạo một phiên bản SDT.
 
    ```python
    sdt = aspose.words.StructuredDocumentTag(doc, aspose.words.SdtType.PLAIN_TEXT)

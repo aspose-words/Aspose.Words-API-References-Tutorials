@@ -65,10 +65,10 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//Klona tabellen och infoga den i dokumentet efter originalet.
+	// Klona tabellen och infoga den i dokumentet efter originalet.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Infoga ett tomt stycke mellan de två tabellerna,
+	//Infoga ett tomt stycke mellan de två tabellerna,
 	// annars kommer de att kombineras till en när du sparar detta har att göra med dokumentvalidering.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

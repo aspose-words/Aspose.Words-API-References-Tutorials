@@ -57,7 +57,7 @@ PDF'yi JPEG'e dönüştürürken oluşturulan JPEG görüntüsünün çözünür
 
 #### Dönüştürme sürecinin sınırlamaları nelerdir?
 
-Dönüştürme işleminin sınırlamaları, kullandığınız belirli araca veya kitaplığa bağlıdır. Bazı araçlarda PDF'deki karmaşık düzen, belirli yazı tipleri veya etkileşimli öğelerle ilgili kısıtlamalar bulunabilir. Dönüştürme sırasında bilinçli kararlar verebilmek için seçilen aracın özelliklerini ve sınırlamalarını tam olarak anlamak önemlidir.
+Dönüştürme işleminin sınırlamaları, kullandığınız belirli araca veya kitaplığa bağlıdır. Bazı araçların PDF'deki karmaşık düzen, belirli yazı tipleri veya etkileşimli öğelerle ilgili kısıtlamaları olabilir. Dönüştürme sırasında bilinçli kararlar verebilmek için seçilen aracın özelliklerini ve sınırlamalarını tam olarak anlamak önemlidir.
 
 #### Aspose, PDF'yi JPEG'e dönüştürmek için güvenilir bir araç mıdır?
 

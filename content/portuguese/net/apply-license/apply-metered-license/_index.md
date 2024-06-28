@@ -22,7 +22,7 @@ Para começar, importe os namespaces necessários em seu código C#. Esses names
 using Aspose.Words;
 ```
 
-## Etapa 2: definir a chave de licença limitada
+## Etapa 2: definir a chave de licença medida
 Em seguida, você precisa definir a chave de licença medida usando o método SetMeteredKey da classe Metered. Forneça suas chaves públicas e privadas medidas como parâmetros para este método.
 
 ```csharp

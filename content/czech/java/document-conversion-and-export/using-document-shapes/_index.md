@@ -14,7 +14,7 @@ tomto komplexním průvodci se ponoříme do světa tvarů dokumentů v Aspose.W
 
 ## Začínáme s tvary dokumentů
 
- Než se pustíme do kódu, nastavíme naše prostředí. Ujistěte se, že máte Aspose.Words for Java integrován do vašeho projektu. Pokud jste tak ještě neučinili, můžete si jej stáhnout z webu Aspose[Stáhněte si Aspose.Words pro Java](https://releases.aspose.com/words/java/)
+ Než se pustíme do kódu, nastavíme naše prostředí. Ujistěte se, že máte Aspose.Words for Java integrovanou do vašeho projektu. Pokud jste tak ještě neučinili, můžete si jej stáhnout z webu Aspose[Stáhněte si Aspose.Words pro Java](https://releases.aspose.com/words/java/)
 
 ## Přidávání tvarů do dokumentů
 

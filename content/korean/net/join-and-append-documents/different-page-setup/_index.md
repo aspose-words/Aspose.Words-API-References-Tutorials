@@ -19,7 +19,7 @@ url: /ko/net/join-and-append-documents/different-page-setup/
 
 ## 2단계: 원본 및 대상 문서 열기
 
- 다음을 사용하여 원본 및 대상 문서를 엽니다.`Document` 클래스 생성자. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 다음을 사용하여 원본 및 대상 문서를 엽니다.`Document` 클래스 생성자. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 // 문서 디렉터리 경로
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3단계: 원본 문서의 페이지 설정 지정
 
- 적절한 연속성과 번호 매기기를 보장하려면 소스 문서의 페이지 설정 설정을 조정하십시오. 이 예에서는 섹션 시작을 다음으로 설정했습니다.`SectionStart.Continuous` 페이지 번호 매기기를 다시 시작하세요. 또한 페이지 너비, 높이 및 방향이 대상 문서의 마지막 섹션과 일치하는지 확인합니다.
+ 적절한 연속성과 번호 매기기를 보장하려면 소스 문서의 페이지 설정 설정을 조정하십시오. 이 예에서는 섹션 시작을 다음으로 설정했습니다.`SectionStart.Continuous`페이지 번호 매기기를 다시 시작하세요. 또한 페이지 너비, 높이 및 방향이 대상 문서의 마지막 섹션과 일치하는지 확인합니다.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## 4단계: 단락 서식 수정
 
- 적절한 서식을 유지하려면 소스 문서의 모든 단락을 반복하고`KeepWithNext`재산`true`이렇게 하면 추가 프로세스 중에 단락이 함께 유지됩니다.
+ 적절한 서식을 유지하려면 소스 문서의 모든 단락을 반복하고`KeepWithNext`재산`true`. 이렇게 하면 추가 프로세스 중에 단락이 함께 유지됩니다.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -55,7 +55,7 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 
 ## 5단계: 원본 문서를 대상 문서에 추가
 
- 사용`AppendDocument` 소스 형식을 유지하면서 수정된 소스 문서를 대상 문서에 추가하는 대상 문서의 메서드입니다.
+ 사용`AppendDocument` 소스 형식을 유지하면서 수정된 소스 문서를 대상 문서에 추가하는 대상 문서의 메소드입니다.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 6단계: 대상 문서 저장
 
- 마지막으로 다음을 사용하여 수정된 대상 문서를 저장합니다.`Save` 의 방법`Document` 물체.
+마지막으로 다음을 사용하여 수정된 대상 문서를 저장합니다.`Save` 의 방법`Document` 물체.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 	// 원본 문서 시작 부분에서 페이지 번호 매기기를 다시 시작합니다.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// 원본 문서의 페이지 설정이 다를 때 이런 일이 발생하지 않도록 하려면 다음을 확인하십시오.
+	//원본 문서의 페이지 설정이 다를 때 이런 일이 발생하지 않도록 하려면 다음을 확인하십시오.
 	// 설정은 대상 문서의 마지막 섹션 간에 동일합니다.
 	// 원본 문서에 이어지는 연속 섹션이 더 있는 경우
-	//해당 섹션에 대해 이 작업을 반복해야 합니다.
+	// 해당 섹션에 대해 이 작업을 반복해야 합니다.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

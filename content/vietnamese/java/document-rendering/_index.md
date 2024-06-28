@@ -16,7 +16,7 @@ Aspose.Words for Java cung cấp nhiều hướng dẫn về cách hiển thị 
 
 ## Kết xuất tài liệu dễ dàng với Aspose.Words cho Java
 
-Kết xuất tài liệu một cách dễ dàng với các hướng dẫn về kết xuất tài liệu của Aspose.Words for Java. Những hướng dẫn này cung cấp khả năng khám phá toàn diện về các tùy chọn hiển thị, cho phép bạn chuyển đổi tài liệu Word sang các định dạng khác nhau trong khi vẫn giữ nguyên bố cục và thiết kế của chúng. Tìm hiểu cách kết xuất hàng loạt tài liệu, tùy chỉnh cài đặt đầu ra và tối ưu hóa hiệu suất kết xuất. Aspose.Words for Java cho phép bạn tạo các kết quả đầu ra trực quan ấn tượng và quản lý hiệu quả các tác vụ xử lý văn bản và xử lý tài liệu. Nâng cao kỹ năng kết xuất tài liệu của bạn và mở khóa các khả năng mới với Aspose.Words cho Java.
+Kết xuất tài liệu một cách dễ dàng với các hướng dẫn về kết xuất tài liệu của Aspose.Words for Java. Những hướng dẫn này cung cấp khả năng khám phá toàn diện về các tùy chọn kết xuất, cho phép bạn chuyển đổi tài liệu Word sang các định dạng khác nhau trong khi vẫn giữ nguyên bố cục và thiết kế của chúng. Tìm hiểu cách kết xuất hàng loạt tài liệu, tùy chỉnh cài đặt đầu ra và tối ưu hóa hiệu suất kết xuất. Aspose.Words for Java cho phép bạn tạo các kết quả đầu ra trực quan ấn tượng và quản lý hiệu quả các tác vụ xử lý văn bản và xử lý tài liệu. Nâng cao kỹ năng kết xuất tài liệu của bạn và mở khóa các khả năng mới với Aspose.Words cho Java.
 
 ## Hướng dẫn kết xuất tài liệu
 ### [ Kết xuất tài liệu chính](./master-document-rendering/)

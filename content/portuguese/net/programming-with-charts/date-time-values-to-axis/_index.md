@@ -73,7 +73,7 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-### Exemplo de código-fonte para valores de data e hora para o eixo usando Aspose.Words for .NET 
+### Exemplo de código-fonte para valores de data e hora para eixo usando Aspose.Words for .NET 
 
 ```csharp
 	// Caminho para o diretório do seu documento
@@ -110,10 +110,10 @@ Neste tutorial, você aprendeu como adicionar valores de data e hora ao eixo de 
 ### Perguntas frequentes
 
 #### Q1. Posso adicionar valores de data e hora ao eixo de um gráfico usando Aspose.Words for .NET?
-Sim, com Aspose.Words for .NET, você pode adicionar e exibir valores de data e hora no eixo de um gráfico em um documento do Word. Aspose.Words fornece APIs e funcionalidades para trabalhar com vários tipos de gráficos e personalizar sua aparência, incluindo a manipulação de valores de data e hora no eixo.
+Sim, com Aspose.Words for .NET, você pode adicionar e exibir valores de data e hora no eixo de um gráfico em um documento do Word. Aspose.Words fornece APIs e funcionalidades para trabalhar com vários tipos de gráficos e personalizar sua aparência, incluindo o tratamento de valores de data e hora no eixo.
 
-#### Q2. Como adiciono valores de data e hora à série de gráficos?
- Para adicionar valores de data e hora à série de gráficos, você pode usar o`Add`método da série do gráfico. Forneça uma matriz de valores de data e hora como dados de categoria (eixo X), juntamente com os valores de série correspondentes. Isso permite plotar pontos de dados com valores de data e hora no gráfico.
+#### Q2. Como adiciono valores de data e hora à série do gráfico?
+ Para adicionar valores de data e hora à série do gráfico, você pode usar o`Add`método da série do gráfico. Forneça uma matriz de valores de data e hora como dados de categoria (eixo X), junto com os valores de série correspondentes. Isso permite plotar pontos de dados com valores de data e hora no gráfico.
 
 #### Q3. Como posso configurar o eixo para exibir valores de data e hora?
- Você pode configurar o eixo do gráfico para exibir valores de data e hora definindo as propriedades apropriadas. Por exemplo, você pode especificar os valores mínimo e máximo para o eixo usando o comando`Scaling.Minimum` e`Scaling.Maximum` propriedades, respectivamente. Além disso, você pode definir as unidades maiores e menores para definir o intervalo e as marcas de escala do eixo.
+ Você pode configurar o eixo do gráfico para exibir valores de data e hora definindo as propriedades apropriadas. Por exemplo, você pode especificar os valores mínimo e máximo para o eixo usando o`Scaling.Minimum` e`Scaling.Maximum` propriedades, respectivamente. Além disso, você pode definir as unidades maiores e menores para definir o intervalo e as marcas de escala do eixo.

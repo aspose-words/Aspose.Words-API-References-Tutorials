@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/floating-table-position/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
 //アレイへのアクセス
@@ -39,7 +39,7 @@ table. AbsoluteHorizontalDistance = 10;
 table. RelativeVerticalAlignment = VerticalAlignment. Center;
 ```
 
-ここで使用するのは、`AbsoluteHorizontalDistance`プロパティを使用して、ページの左端から表までの絶対水平距離を設定します。私たちはまた、`RelativeVerticalAlignment`プロパティを使用して、周囲のコンテンツに対するテーブルの相対的な垂直方向の配置を設定します。
+ここで使用するのは、`AbsoluteHorizontalDistance`プロパティを使用して、ページの左端から表までの絶対水平距離を設定します。また、`RelativeVerticalAlignment`プロパティを使用して、周囲のコンテンツに対するテーブルの相対的な垂直方向の配置を設定します。
 
 ## ステップ 4: 変更したドキュメントを保存する
 最後に、テーブルをフローティング位置に配置して、変更したドキュメントを保存する必要があります。次のコードを使用します。

@@ -2,7 +2,7 @@
 title: Dokumentumformátum meghatározása az Aspose.Words for Java programban
 linktitle: dokumentum formátumának meghatározása
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan észlelheti a dokumentumformátumokat Java nyelven az Aspose.Words segítségével. A DOC, DOCX és egyebek azonosítása. A fájlok hatékony rendszerezése.
+description: Ismerje meg, hogyan észlelheti a dokumentumformátumokat Java nyelven az Aspose.Words segítségével. Azonosítsa a DOC, DOCX és egyebeket. A fájlok hatékony rendszerezése.
 type: docs
 weight: 25
 url: /hu/java/document-loading-and-saving/determining-document-format/

@@ -16,14 +16,14 @@ Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
 - Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
 
 ## Bước 1: Xác định thư mục tài liệu
- Bắt đầu bằng cách đặt đường dẫn thư mục đến vị trí tài liệu Word của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+Bắt đầu bằng cách đặt đường dẫn thư mục đến vị trí tài liệu Word của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Tạo và tùy chỉnh tài liệu
- Tạo một thể hiện của`Document` lớp và một liên quan`DocumentBuilder` để xây dựng nội dung tài liệu. Sử dụng`Font.EmphasisMark` thuộc tính để đặt kiểu nhấn mạnh phông chữ thành`EmphasisMark.UnderSolidCircle` . Sau đó sử dụng`Write` Và`Writeln` các phương pháp của`DocumentBuilder` để thêm văn bản với điểm nhấn phông chữ được chỉ định.
+ Tạo một thể hiện của`Document` lớp và một liên quan`DocumentBuilder` để xây dựng nội dung tài liệu. Sử dụng`Font.EmphasisMark` thuộc tính để đặt kiểu nhấn mạnh phông chữ thành`EmphasisMark.UnderSolidCircle` . Sau đó sử dụng`Write` Và`Writeln` các phương pháp của`DocumentBuilder` để thêm văn bản với phông chữ được chỉ định nhấn mạnh.
 
 ```csharp
 Document document = new Document();

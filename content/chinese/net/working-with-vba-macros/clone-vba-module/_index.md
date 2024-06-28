@@ -81,7 +81,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 
 #### Q：代码中如何设置文档目录？
 
- A：在提供的代码中，您需要替换`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 项目的 Word 文档所在目录的适当路径。
+ A：在提供的代码中，需要替换。`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 项目的 Word 文档所在目录的适当路径。
 
 #### 问：如何使用克隆的 VBA 模块保存目标文档？
 

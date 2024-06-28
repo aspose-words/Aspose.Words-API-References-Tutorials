@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-comments/add-remove-comment-reply/
 ---
 
-I den här omfattande självstudien kommer du att lära dig hur du lägger till och tar bort kommentarsvar i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna hantera kommentarsvar och anpassa dem efter dina krav.
+den här omfattande självstudien kommer du att lära dig hur du lägger till och tar bort kommentarsvar i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna hantera kommentarsvar och anpassa dem efter dina krav.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:
@@ -77,7 +77,7 @@ Kommentarsvar möjliggör samarbetsdiskussioner och feedback i ett dokument. Exp
 
 #### F: Hur kan jag ta bort en kommentar i Aspose.Words för .NET?
 
- S: För att ta bort en kommentar i Aspose.Words för .NET kan du använda`Comment.Remove` metod som specificerar`Comment` objekt du vill ta bort.
+S: För att ta bort en kommentar i Aspose.Words för .NET kan du använda`Comment.Remove` metod som specificerar`Comment` objekt du vill ta bort.
 
 #### F: Kan jag svara på en kommentar i Aspose.Words för .NET?
 
@@ -85,7 +85,7 @@ Kommentarsvar möjliggör samarbetsdiskussioner och feedback i ett dokument. Exp
 
 #### F: Hur kan jag komma åt befintliga kommentarer i Aspose.Words för .NET?
 
- S: Du kan komma åt befintliga kommentarer i Aspose.Words för .NET med hjälp av`CommentCollection` egendom av`Document`objekt. Detta gör att du kan bläddra bland alla kommentarer som finns i dokumentet.
+ S: Du kan komma åt befintliga kommentarer i Aspose.Words för .NET med hjälp av`CommentCollection` egendom av`Document` objekt. Detta gör att du kan bläddra bland alla kommentarer som finns i dokumentet.
 
 #### F: Kan jag redigera kommentarstext i Aspose.Words för .NET?
 

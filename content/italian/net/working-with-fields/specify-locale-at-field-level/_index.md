@@ -70,6 +70,6 @@ Questo era un codice sorgente di esempio per specificare la localizzazione a liv
 
  R: Sì, è possibile specificare una locale diversa per ciascun campo in Aspose.Words per .NET. Puoi usare il`FieldOptions.FieldLocale` proprietà prima di creare o aggiornare un campo specifico per assegnargli una lingua diversa.
 
-#### D: Come posso ottenere le impostazioni internazionali attualmente utilizzate per un campo in Aspose.Words per .NET?
+#### D: Come posso ottenere le impostazioni locali attualmente utilizzate per un campo in Aspose.Words per .NET?
 
- R: Per ottenere la locale attualmente utilizzata per un campo in Aspose.Words per .NET, è possibile utilizzare il campo`Field.LocaleId` proprietà. Ciò ti consentirà di ottenere l'identificatore locale associato al campo.
+ R: Per ottenere la locale attualmente utilizzata per un campo in Aspose.Words per .NET, è possibile utilizzare il campo`Field.LocaleId`proprietà. Ciò ti consentirà di ottenere l'identificatore locale associato al campo.

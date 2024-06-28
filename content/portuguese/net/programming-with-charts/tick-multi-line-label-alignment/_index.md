@@ -17,7 +17,7 @@ Certifique-se de ter os seguintes pré-requisitos:
 - Biblioteca Aspose.Words para .NET instalada. Você pode baixá-lo usando o gerenciador de pacotes NuGet para instalá-lo.
 - Um caminho do diretório do documento onde o documento de saída será salvo.
 
-## Passo 2: Crie um novo documento e insira um gráfico
+## Passo 2: Crie um novo documento e insira um gráfico.
 
  Crie um novo`Document` objeto e um`DocumentBuilder` para construir o documento.
 
@@ -52,7 +52,7 @@ axis.TickLabelAlignment = ParagraphAlignment.Right;
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```
 
-Isso conclui a implementação da configuração do alinhamento do rótulo multilinha do tick usando Aspose.Words for .NET.
+Isso conclui a implementação da configuração do alinhamento do rótulo multilinha usando Aspose.Words for .NET.
 
 ### Exemplo de código-fonte para Tick Multi Line Label Alignment usando Aspose.Words for .NET 
 
@@ -71,9 +71,9 @@ Isso conclui a implementação da configuração do alinhamento do rótulo multi
 
 ## Conclusão
 
-Neste tutorial, você aprendeu como definir o alinhamento de rótulos multilinhas de ticks em um eixo de gráfico usando Aspose.Words for .NET. Seguindo o guia passo a passo e utilizando o código-fonte fornecido, você pode criar um novo documento, inserir um gráfico de dispersão, acessar o eixo do gráfico e modificar o alinhamento do rótulo do tick.
+Neste tutorial, você aprendeu como definir o alinhamento de rótulos de múltiplas linhas em um eixo de gráfico usando Aspose.Words for .NET. Seguindo o guia passo a passo e utilizando o código-fonte fornecido, você pode criar um novo documento, inserir um gráfico de dispersão, acessar o eixo do gráfico e modificar o alinhamento do rótulo do tick.
 
-Aspose.Words for .NET fornece recursos poderosos para manipular gráficos em documentos do Word. Os rótulos de múltiplas linhas são úteis quando os rótulos dos eixos contêm texto longo que requer quebra automática ou divisão em várias linhas. Ao definir o alinhamento do rótulo de escala, você pode controlar o alinhamento horizontal de rótulos multilinhas dentro do eixo do gráfico, garantindo apresentação e legibilidade ideais.
+Aspose.Words for .NET fornece recursos poderosos para manipular gráficos em documentos do Word. Os rótulos de múltiplas linhas são úteis quando os rótulos dos eixos contêm texto longo que requer quebra ou divisão em várias linhas. Ao definir o alinhamento do rótulo de escala, você pode controlar o alinhamento horizontal de rótulos multilinhas dentro do eixo do gráfico, garantindo apresentação e legibilidade ideais.
 
 Personalizar o alinhamento dos rótulos multilinhas permite ajustar a aparência do seu gráfico, especialmente ao lidar com rótulos longos ou complexos. Ao alinhar os rótulos à direita, à esquerda, ao centro ou justificados, você pode obter um arranjo equilibrado e visualmente atraente dos rótulos de escala ao longo do eixo.
 

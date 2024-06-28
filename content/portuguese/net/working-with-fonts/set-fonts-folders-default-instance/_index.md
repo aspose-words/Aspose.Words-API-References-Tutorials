@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Etapa 2: definir a pasta de fontes padrão
-Então você pode definir a pasta de fontes padrão usando o`FontSettings.DefaultInstance` classe e o`SetFontsFolder()` método. Especifique o caminho para a pasta de fontes que deseja usar como pasta padrão.
+ Então você pode definir a pasta de fontes padrão usando o`FontSettings.DefaultInstance` classe e o`SetFontsFolder()`método. Especifique o caminho para a pasta de fontes que deseja usar como pasta padrão.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

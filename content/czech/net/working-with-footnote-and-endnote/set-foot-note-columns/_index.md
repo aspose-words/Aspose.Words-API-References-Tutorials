@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Krok 2: Nastavení sloupců poznámek pod čarou
 
- Dále přejděte na`FootnoteOptions` vlastnost dokumentu a nastavte`Columns` vlastnost k určení počtu sloupců pro poznámky pod čarou. V tomto příkladu jej nastavíme na 3 sloupce:
+ Dále přejděte na`FootnoteOptions` vlastnost dokumentu a nastavte`Columns` vlastnost k určení počtu sloupců pro poznámky pod čarou. V tomto příkladu jsme jej nastavili na 3 sloupce:
 
 ```csharp
 doc.FootnoteOptions.Columns = 3;

@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## ステップ 2: リンクを挿入する
 
-を使用してリンクを挿入できます`Insertlink`ドキュメントジェネレーターのメソッド。リンクテキスト (ここでは「Aspose」) とリンク先 URL を指定する必要があります。
+を使用してリンクを挿入できます`InsertHyperlink`ドキュメントジェネレーターのメソッド。リンクテキスト (ここでは「Apose」) とリンク先 URL を指定する必要があります。
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com"、false);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com"、false);
 ```
 
 ### Aspose.Words for .NET を使用したリンクのソース コードの例
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com"、false);
 DocumentBuilder builder = new DocumentBuilder();
 
 //リンクを挿入します。
-builder.Insertlink("Aspose", "https://www.aspose.com"、false);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com"、false);
 ```
 おめでとうございます！これで、Aspose.Words for .NET でリンク機能を使用する方法を学習しました。
 

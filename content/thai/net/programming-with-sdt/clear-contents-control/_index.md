@@ -1,6 +1,6 @@
 ---
-title: การควบคุมเนื้อหาที่ชัดเจน
-linktitle: การควบคุมเนื้อหาที่ชัดเจน
+title: ล้างเนื้อหาการควบคุม
+linktitle: ล้างเนื้อหาการควบคุม
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: เรียนรู้วิธีล้างเนื้อหาของตัวควบคุมในเอกสาร Word โดยใช้ Aspose.Words for .NET
 type: docs

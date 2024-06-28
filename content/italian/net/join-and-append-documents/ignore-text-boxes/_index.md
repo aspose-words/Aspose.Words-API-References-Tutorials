@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Passaggio 4: aggiungi il contenuto della casella di testo
 
- Creare un`NodeImporter` oggetto e utilizzarlo per importare i nodi della casella di testo dal documento di origine al documento di destinazione. Scorri ogni paragrafo del documento di origine e importalo nel documento di destinazione.
+ Creare un`NodeImporter`oggetto e utilizzarlo per importare i nodi della casella di testo dal documento di origine al documento di destinazione. Scorri ogni paragrafo del documento di origine e importalo nel documento di destinazione.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Passaggio 5: salva il documento di destinazione
 
- Infine, salva il documento di destinazione modificato utilizzando il file`Save` metodo del`Document` oggetto.
+Infine, salva il documento di destinazione modificato utilizzando il file`Save` metodo del`Document` oggetto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## 3. Adım: İç İçe Yer İmleri Oluşturma
 
-Ana yer iminin içinde iç içe yer imleri de oluşturabiliriz. Biz de aynısını kullanıyoruz`StartBookmark` Ve`EndBookmark` iç içe yer imleri oluşturma ve sonlandırma yöntemleri:
+ Ana yer iminin içinde iç içe yer imleri de oluşturabiliriz. Biz de aynısını kullanıyoruz`StartBookmark` Ve`EndBookmark` iç içe yer imleri oluşturma ve sonlandırma yöntemleri:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");

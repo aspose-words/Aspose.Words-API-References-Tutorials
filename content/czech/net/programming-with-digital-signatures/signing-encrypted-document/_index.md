@@ -68,7 +68,7 @@ V tomto tutoriálu jsme prozkoumali proces podepisování zašifrovaného dokume
 
 #### Otázka: Co je podepisování dokumentů v Aspose.Words pro .NET?
 
-Odpověď: Podepisování dokumentů v Aspose.Words for .NET se týká procesu digitálního podepisování dokumentu aplikace Word, aby byla zajištěna jeho autentičnost, integrita a neodmítnutí. Zahrnuje přidání digitálního podpisu do dokumentu pomocí certifikátu.
+Odpověď: Podepisování dokumentů v Aspose.Words for .NET se týká procesu digitálního podepisování dokumentu aplikace Word, aby byla zajištěna jeho autenticita, integrita a neodmítnutí. Zahrnuje přidání digitálního podpisu do dokumentu pomocí certifikátu.
 
 #### Otázka: Co je zašifrovaný dokument aplikace Word?
 

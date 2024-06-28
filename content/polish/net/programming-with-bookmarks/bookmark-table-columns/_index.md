@@ -184,4 +184,4 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 #### P: Czy istnieje ograniczenie liczby kolumn, które mogę utworzyć w tabeli z zakładkami kolumn?
 
-Odp.: Nie ma określonego limitu liczby kolumn, które można utworzyć w tabeli z zakładkami kolumn przy użyciu Aspose.Words dla .NET. Limit zależy głównie od zasobów dostępnych w systemie i specyfikacji używanego formatu pliku Word. Zaleca się jednak, aby nie tworzyć zbyt dużej liczby kolumn, ponieważ może to mieć wpływ na wydajność i czytelność dokumentu końcowego.
+Odp.: Nie ma określonego limitu liczby kolumn, które można utworzyć w tabeli z zakładkami kolumn przy użyciu Aspose.Words dla .NET. Limit zależy głównie od zasobów dostępnych w systemie i specyfikacji używanego formatu pliku Word. Zaleca się jednak, aby nie tworzyć zbyt dużej liczby kolumn, gdyż może to mieć wpływ na wydajność i czytelność dokumentu końcowego.

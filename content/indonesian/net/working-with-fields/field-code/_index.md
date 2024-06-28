@@ -30,7 +30,7 @@ Pastikan untuk mengganti "Hyperlinks.docx" dengan nama file Anda sendiri.
 
 ## Langkah 3: Telusuri Bidang Dokumen
 
- Kami menggunakan a`foreach` loop untuk mengulang semua bidang yang ada dalam dokumen.
+ Kami menggunakan a`foreach`loop untuk mengulang semua bidang yang ada dalam dokumen.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Ini menyimpulkan panduan kami tentang penggunaan fitur "Dapatkan Kode Bidang" de
 
 #### T: Bagaimana cara menyisipkan bidang dalam dokumen Word menggunakan Aspose.Words untuk .NET?
 
- J: Untuk menyisipkan bidang ke dalam dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`DocumentBuilder.InsertField` metode yang menentukan kode bidang yang sesuai. Misalnya, Anda bisa menggunakan`builder.InsertField("MERGEFIELD CustomerName")` untuk menyisipkan bidang gabungan ke dalam dokumen.
+ J: Untuk menyisipkan bidang ke dalam dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`DocumentBuilder.InsertField` metode yang menentukan kode bidang yang sesuai. Misalnya, Anda bisa menggunakan`builder.InsertField("MERGEFIELD CustomerName")`untuk menyisipkan bidang gabungan ke dalam dokumen.
 
 #### T: Bagaimana cara memperbarui bidang dalam dokumen menggunakan Aspose.Words untuk .NET?
 
- J: Untuk memperbarui bidang dokumen menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document.UpdateFields`metode. Ini akan memperbarui semua bidang yang ada dalam dokumen, seperti bidang gabungan, bidang tanggal, dll.
+ J: Untuk memperbarui bidang dokumen menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document.UpdateFields` metode. Ini akan memperbarui semua bidang yang ada dalam dokumen, seperti bidang gabungan, bidang tanggal, dll.
 
 #### T: Bagaimana cara mengambil nilai bidang tertentu di Aspose.Words untuk .NET?
 

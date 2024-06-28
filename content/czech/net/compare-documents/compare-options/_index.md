@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/compare-documents/compare-options/
 ---
-V tomto tutoriálu vysvětlíme, jak používat možnosti porovnání v dokumentu aplikace Word s Aspose.Words pro .NET. Chcete-li porozumět zdrojovému kódu a použít změny, postupujte podle následujících kroků.
+tomto tutoriálu vysvětlíme, jak používat možnosti porovnání v dokumentu aplikace Word s Aspose.Words pro .NET. Chcete-li porozumět zdrojovému kódu a použít změny, postupujte podle následujících kroků.
 
 ## Krok 1: Porovnejte dokumenty s vlastními možnostmi
 

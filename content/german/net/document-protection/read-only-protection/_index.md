@@ -84,7 +84,7 @@ Wenn Sie diese Schritte befolgen, können Sie Ihre Dokumente ganz einfach schüt
 
 ## Abschluss
 
-In diesem Tutorial haben wir die Leseschutzfunktion von Aspose.Words für .NET untersucht, mit der Sie Word-Dokumente schreibgeschützt machen können, um unbefugte Änderungen zu verhindern. Indem Sie die bereitgestellten Schritte befolgen, können Sie ganz einfach einen Leseschutz auf Ihre Dokumente anwenden und deren Sicherheit erhöhen. Der Leseschutz trägt dazu bei, die Integrität und Genauigkeit des Inhalts Ihres Dokuments sicherzustellen, indem er die Bearbeitungsmöglichkeiten einschränkt. Aspose.Words für .NET bietet eine leistungsstarke und flexible API für den Dokumentenschutz und unterstützt verschiedene andere Funktionen zum Anpassen und Sichern Ihrer Word-Dokumente.
+In diesem Tutorial haben wir die schreibgeschützte Schutzfunktion von Aspose.Words für .NET untersucht, mit der Sie Word-Dokumente schreibgeschützt machen können, um unbefugte Änderungen zu verhindern. Indem Sie die bereitgestellten Schritte befolgen, können Sie ganz einfach einen Leseschutz auf Ihre Dokumente anwenden und deren Sicherheit erhöhen. Der Leseschutz trägt dazu bei, die Integrität und Genauigkeit des Inhalts Ihres Dokuments sicherzustellen, indem er die Bearbeitungsmöglichkeiten einschränkt. Aspose.Words für .NET bietet eine leistungsstarke und flexible API für den Dokumentenschutz und unterstützt verschiedene andere Funktionen zum Anpassen und Sichern Ihrer Word-Dokumente.
 
 ### FAQs zum schreibgeschützten Schutz in Word-Dokumenten
 

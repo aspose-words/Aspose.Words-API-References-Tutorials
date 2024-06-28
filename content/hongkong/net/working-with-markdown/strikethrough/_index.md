@@ -57,7 +57,7 @@ builder.Writeln("This text will be StrikeThrough");
 
 #### Q：是否可以在同一段落的多段文字中新增刪除線文字？
 
-答：是的，您可以使用多個文字在單一段落中的多個文字部分中新增刪除線文字。`Run`對象。您可以建立多個`Run`對象並設定`Font.StrikeThrough`財產給`true`對於每個對象，將刪除線文字新增至所需的文字部分。然後您可以使用以下命令將它們添加到段落中`Paragraph.AppendChild(run)`方法。
+答：是的，您可以透過使用 multiple 為單一段落中的多個文字部分新增刪除線文字。`Run`對象。您可以建立多個`Run`對象並設定`Font.StrikeThrough`財產給`true`對於每個對象，將刪除線文字新增至所需的文字部分。然後您可以使用以下命令將它們添加到段落中`Paragraph.AppendChild(run)`方法。
 
 #### Q：我可以在 Aspose.Words 的表格或儲存格中的文字中新增刪除線文字嗎？
 

@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-fields/specify-locale-at-field-level/
 ---
 
-Burada, Aspose.Words for .NET özelliğini kullanarak yerelleştirmeyi alan düzeyinde belirlemeye olanak tanıyan aşağıdaki C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. Bu kodu kullanmadan önce projenize Aspose.Words kütüphanesini eklediğinizden emin olun.
+Burada, Aspose.Words for .NET özelliğini kullanarak alan düzeyinde yerelleştirmeyi belirlemeye olanak tanıyan aşağıdaki C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. Bu kodu kullanmadan önce projenize Aspose.Words kütüphanesini eklediğinizden emin olun.
 
 ## 1. Adım: Belge dizini yolunu ayarlayın
 
@@ -64,7 +64,7 @@ Bu, Aspose.Words for .NET kullanılarak bir belgede alan düzeyinde yerelleştir
 
 #### S: Aspose.Words for .NET'te alan düzeyindeki yerel ayarı nasıl belirleyebilirim?
 
- C: Aspose.Words for .NET'te yerel ayarı alan düzeyinde belirtmek için`FieldOptions` sınıf ve onun`FieldLocale` İstenilen yerel ayarı ayarlama özelliği. Örneğin, kullanabilirsiniz`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` Fransızca (Fransa) yerel ayarını belirtmek için.
+ C: Aspose.Words for .NET'te yerel ayarı alan düzeyinde belirtmek için`FieldOptions` sınıf ve onun`FieldLocale` İstenilen yerel ayarı ayarlama özelliği. Örneğin şunları kullanabilirsiniz:`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` Fransızca (Fransa) yerel ayarını belirtmek için.
 
 #### S: Aspose.Words for .NET'te her alan için farklı bir yerel ayar belirlemek mümkün mü?
 
@@ -72,4 +72,4 @@ Bu, Aspose.Words for .NET kullanılarak bir belgede alan düzeyinde yerelleştir
 
 #### S: Aspose.Words for .NET'te bir alan için halihazırda kullanılan yerel ayarı nasıl edinebilirim?
 
- C: Aspose.Words for .NET'te bir alanın halihazırda kullanılan yerel ayarını almak için alanın yerel ayarını kullanabilirsiniz.`Field.LocaleId` mülk. Bu, alanla ilişkili yerel ayar tanımlayıcısını almanıza olanak tanır.
+ C: Aspose.Words for .NET'te bir alanın halihazırda kullanılan yerel ayarını almak için alanın yerel ayarını kullanabilirsiniz.`Field.LocaleId`mülk. Bu, alanla ilişkili yerel ayar tanımlayıcısını almanıza olanak tanır.

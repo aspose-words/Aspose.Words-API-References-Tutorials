@@ -53,11 +53,11 @@ Gratulálok ! Most megtanulta, hogyan lehet félkövér szöveget szedni az Aspo
 
 #### K: Hogyan tudom félkövérre szedni a szöveget az Aspose.Words-ben?
 
- V: Az Aspose.Words szövegének félkövérré tételéhez használhatja a`Font.Bold` tulajdona a`Run` tárgy. Beállíthatja ezt a tulajdonságot`true` félkövér konkrét szöveghez. Például használhatja`run.Font.Bold=true` hogy vastagon szedje a szöveg belsejében`Run` tárgy.
+ V: Az Aspose.Words szövegének félkövérré tételéhez használhatja a`Font.Bold` tulajdona a`Run`tárgy. Beállíthatja ezt a tulajdonságot`true` félkövér konkrét szöveghez. Például használhatja`run.Font.Bold=true` hogy vastagon szedje a szöveg belsejében`Run` tárgy.
 
 #### K: Lehetséges ugyanabban a bekezdésben több szövegrész félkövér szedése?
 
-V: Igen, egy bekezdésben több szövegrészt is félkövérre szedhet, ha több szöveget használ`Run` tárgyakat. Többet is létrehozhat`Run` objektumok és állítsa be a`Font.Bold`tulajdonát`true` hogy minden objektum félkövérre szedje a kívánt szövegrészeket. Ezután hozzáadhatja őket a bekezdéshez a`Paragraph.AppendChild(run)` módszer.
+ V: Igen, egy bekezdésben több szövegrészt is félkövérre szedhet, ha több szöveget használ`Run` tárgyakat. Többet is létrehozhat`Run` objektumok és állítsa be a`Font.Bold`tulajdonát`true` hogy minden objektum félkövérre szedje a kívánt szövegrészeket. Ezután hozzáadhatja őket a bekezdéshez a`Paragraph.AppendChild(run)` módszer.
 
 #### K: Félkövérrel szedhetek olyan szöveget, amely az Aspose.Words táblázatában vagy cellájában található?
 

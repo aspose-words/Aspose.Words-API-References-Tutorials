@@ -67,7 +67,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool sh
             DocumentBuilder builder = new DocumentBuilder(doc);
             builder.MoveToDocumentEnd();
 
-            // {IF "{MERGEFIELD ブックマーク}" = "true" "" ""}
+            //{IF "{MERGEFIELD ブックマーク}" = "true" "" ""}
             Field field = builder.InsertField("IF \"", null);
             builder.MoveTo(field.Start.NextSibling);
             builder.InsertField("MERGEFIELD " + bookmarkName + "", null);

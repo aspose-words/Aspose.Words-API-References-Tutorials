@@ -74,7 +74,7 @@ Przypisami dolnymi i końcowymi możesz programowo zarządzać poprzez:
 - Przypisy powinny być zwięzłe i istotne
 - Bardziej szczegółowe wyjaśnienia można znaleźć w przypisach końcowych
 - Zachowaj spójne formatowanie
-- Dokładnie sprawdź cytaty pod kątem dokładności
+- Dokładnie sprawdź cytaty pod kątem dokładności.
 
 ## Rozwiązywanie typowych problemów
 

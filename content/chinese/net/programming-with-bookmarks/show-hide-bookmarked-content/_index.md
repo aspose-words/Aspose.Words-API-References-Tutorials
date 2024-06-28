@@ -2,176 +2,156 @@
 title: 在 Word 文档中显示隐藏书签内容
 linktitle: 在 Word 文档中显示隐藏书签内容
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中显示或隐藏书签内容。
+description: 通过这份全面的分步指南，了解如何使用 Aspose.Words for .NET 在 Word 文档中动态显示或隐藏书签内容。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-在本文中，我们将探索上述 C# 源代码，以了解如何在 Aspose.Words for .NET 库中使用“显示隐藏书签内容”功能。此功能允许您在合并数据时根据特定条件显示或隐藏 Word 文档中书签的内容。
+## 介绍
+
+嘿！您是否曾经想根据特定条件控制Word文档中特定内容的可见性？借助 Aspose.Words for .NET，您只需几行代码即可动态显示或隐藏书签内容。在本教程中，我将逐步引导您完成该过程，确保您理解代码的每个部分。到最后，您将成为在 Word 文档中操作书签的专家。让我们开始吧！
 
 ## 先决条件
 
-- C# 语言的基础知识。
-- 安装了 Aspose.Words 库的 .NET 开发环境。
+在我们深入学习本教程之前，让我们确保您拥有所需的一切：
 
-## 第一步：获取书签
+1. C# 基础知识：您应该熟悉 C# 语法和概念。
+2.  Aspose.Words for .NET：下载[这里](https://releases.aspose.com/words/net/) 。如果您还没有准备好购买，您可以从[免费试用](https://releases.aspose.com/).
+3. Visual Studio：任何最新版本都可以使用，但建议使用最新版本。
+4. .NET Framework：确保您的计算机上已安装它。
 
-我们使用`Bookmarks`文档范围的属性来获取我们要显示或隐藏内容的特定书签：
+准备好开始了吗？伟大的！让我们首先导入必要的名称空间。
+
+## 导入命名空间
+
+要使用 Aspose.Words for .NET，我们需要导入所需的命名空间。此步骤确保我们能够访问我们将使用的所有类和方法。
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## 步骤 2：插入合并字段
+这些命名空间对于处理 Word 文档和操作其内容至关重要。
 
-我们使用文档生成器`DocumentBuilder`插入必要的合并字段。这些合并字段将设置一个条件来显示或隐藏书签内容，具体取决于`showHide`多变的：
+## 第 1 步：设置文档
+
+首先，让我们创建一个新的 Word 文档和文档生成器。文档生成器帮助我们轻松添加和操作文档中的内容。
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## 步骤 3：移动书签内容
+在此步骤中，我们初始化一个新文档和一个文档生成器。这为我们进一步的操作奠定了环境。
 
-我们循环浏览书签的内容并移动它以使其出现
+## 第 2 步：添加书签内容
 
-isse 在书签之前。这将根据指定条件控制显示或隐藏内容：
+接下来，我们将向文档添加一些内容并围绕其创建书签。该书签将帮助我们识别和操作内容。
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+在这里，我们在书签内容之前和之后添加一些文本。这`StartBookmark`和`EndBookmark`方法定义书签的边界。
+
+## 第 3 步：插入条件字段
+
+为了控制添加书签的内容的可见性，我们将使用条件字段。该字段将检查条件并相应地显示或隐藏内容。
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+在此步骤中，我们插入一个 IF 字段来检查书签的值。如果值为“true”，则显示“Visible”；否则会显示“隐藏”。
+
+## 步骤 4：重新排列节点
+
+接下来，我们需要重新排列节点，以确保条件逻辑正确应用于添加书签的内容。
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## 步骤 4：移动书签的其余内容
-
-我们将书签的其余内容移动到书签之后，使用书签的结束节点作为插入点：
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## 第 5 步：执行合并
+在这里，我们移动节点以确保条件正确包含书签内容。
 
-我们使用`Execute`文档方法`s `邮件合并` object to execute the merge using the bookmark name and the value of the `显示隐藏`变量：
+## 第 5 步：执行邮件合并
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### 使用 Aspose.Words for .NET 显示隐藏书签内容的示例源代码
-
-以下是源代码的完整示例，演示使用 Aspose.Words for .NET 显示或隐藏书签内容：
+最后，我们将执行邮件合并来设置书签的值并确定是否应显示或隐藏内容。
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MERGEFIELD 书签}" = "true" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+此步骤将书签值设置为“true”，这将使内容根据我们的条件可见。
+
+## 第 6 步：保存文档
+
+完成所有操作后，最后一步是保存修改后的文档。
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+在这里，我们使用描述性文件名保存文档以指示更改。
 
 ## 结论
 
-在本文中，我们探索了 C# 源代码，以了解如何使用 Aspose.Words for .NET 的显示隐藏书签内容功能。我们按照分步指南在合并数据时根据特定条件显示或隐藏书签的内容。
+就是这样！您已成功学习如何使用 Aspose.Words for .NET 在 Word 文档中显示或隐藏添加书签的内容。本教程介绍了创建文档、添加书签、插入条件字段、重新排列节点以及执行邮件合并。 Aspose.Words 提供了大量的功能，因此请毫不犹豫地探索[API文档](https://reference.aspose.com/words/net/)以获得更高级的功能。
 
-### 有关在 Word 文档中显示隐藏书签内容的常见问题解答
+## 常见问题解答
 
-#### 问：我可以对同一文档中的多个书签使用相同的条件吗？
+### 1. 什么是 Aspose.Words for .NET？
 
-答：是的，您可以对同一文档中的多个书签使用相同的条件。只需对每个书签重复步骤 2-5，调整书签名称以及可选的值`showhide`根据需要可变。
+Aspose.Words for .NET 是一个功能强大的库，允许开发人员以编程方式创建、修改和转换 Word 文档。它广泛用于文档自动化任务。
 
-#### 问：如何添加更多条件来显示或隐藏书签内容？
+### 2. 我可以免费使用Aspose.Words for .NET吗？
 
- A：要添加更多条件，您可以使用逻辑运算符，例如`AND`和`OR`在步骤 2 中插入合并字段的代码中。编辑以下代码中的条件以添加其他条件：
+您可以尝试使用 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需长期使用，您需要购买许可证。
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. 如何修改书签的其他属性？
 
-#### 问：如何使用 Aspose.Words for .NET 删除 Word 文档中的书签？
+ Aspose.Words 允许您操作书签的各种属性，例如其文本和位置。请参阅[API文档](https://reference.aspose.com/words/net/)获取详细说明。
 
-答：要使用 Aspose.Words for .NET 删除 Word 文档中的书签，您可以使用`Remove`方法从`Bookmarks`文档范围的集合。以下是删除特定书签的示例代码：
+### 4. 如何获得 Aspose.Words for .NET 支持？
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+您可以通过访问获得支持[Aspose 支持论坛](https://forum.aspose.com/c/words/8).
 
-#### 问：Aspose.Words 库是免费的吗？
+### 5. 我可以使用 Aspose.Words for .NET 操作其他类型的内容吗？
 
-答：Aspose.Words 库是一个商业库，需要有效的许可证才能在您的项目中使用。你可以检查[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)了解有关许可选项和定价的更多信息。
-
-#### 问：是否还有其他库可用于在 .NET 中对 Word 文档进行文字处理？
-
-答：是的，还有其他库可用于在 .NET 中对 Word 文档进行文字处理，例如 Open XML SDK 和 GemBox.Document。您可以根据您的特定需求和偏好探索这些库作为 Aspose.Words 的替代品。
+是的，Aspose.Words for .NET 支持各种类型的内容操作，包括文本、图像、表格等。

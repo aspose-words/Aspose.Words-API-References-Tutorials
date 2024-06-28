@@ -2,7 +2,7 @@
 title: Word 문서에서 목록 만들기 및 관리
 linktitle: Word 문서에서 목록 만들기 및 관리
 second_title: Aspose.Words Python 문서 관리 API
-description: Aspose.Words Python API를 사용하여 Word 문서에서 목록을 만들고 관리하는 방법을 알아보세요. 목록 형식 지정, 사용자 정의, 중첩 등에 대한 소스 코드가 포함된 단계별 가이드입니다.
+description: Aspose.Words Python API를 사용하여 Word 문서에서 목록을 만들고 관리하는 방법을 알아보세요. 목록 형식화, 사용자 정의, 중첩 등에 대한 소스 코드가 포함된 단계별 가이드입니다.
 type: docs
 weight: 18
 url: /ko/python-net/document-structure-and-content-manipulation/document-lists/
@@ -16,7 +16,7 @@ url: /ko/python-net/document-structure-and-content-manipulation/document-lists/
 
 ## 환경 설정
 
- 목록 생성 및 관리에 대해 알아보기 전에 Aspose.Words for Python 라이브러리가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/) . 또한 다음의 API 설명서를 참조하세요.[이 링크](https://reference.aspose.com/words/python-net/) 자세한 정보를 보려면.
+목록 생성 및 관리에 대해 알아보기 전에 Aspose.Words for Python 라이브러리가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/) . 또한 다음의 API 설명서를 참조하세요.[이 링크](https://reference.aspose.com/words/python-net/) 자세한 정보를 보려면.
 
 ## 글머리 기호 목록 만들기
 

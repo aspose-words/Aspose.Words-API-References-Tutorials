@@ -107,7 +107,7 @@ para.remove();
 //并将在 Microsoft Word 中显示为修订版本，直到我们接受或拒绝所有修订版本。
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-//一旦我们接受更改，删除修订段落就会被删除。
+//一旦我们接受更改，已删除的修订段落就会被删除。
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //是 Is.Empty

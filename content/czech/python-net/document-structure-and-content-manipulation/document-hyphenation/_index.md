@@ -9,7 +9,7 @@ url: /cs/python-net/document-structure-and-content-manipulation/document-hyphena
 ---
 Dělení slov a tok textu jsou zásadní aspekty, pokud jde o vytváření profesionálně vypadajících a dobře strukturovaných dokumentů aplikace Word. Ať už připravujete zprávu, prezentaci nebo jakýkoli jiný typ dokumentu, zajištění hladkého plynutí textu a správného dělení slov může výrazně zlepšit čitelnost a estetiku vašeho obsahu. V tomto článku prozkoumáme, jak efektivně spravovat dělení slov a tok textu pomocí Aspose.Words pro Python API. Pokryjeme vše od pochopení dělení slov až po jeho programovou implementaci do vašich dokumentů.
 
-## Pochopení dělení slov
+## Porozumění dělení slov
 
 ### Co je dělení slov?
 
@@ -126,4 +126,4 @@ Chcete-li zabránit vdovám a sirotkům, využijte možnosti poskytované Aspose
 
 ### Kde mohu získat přístup k dokumentaci Aspose.Words pro Python?
 
- K dokumentaci API se dostanete na adrese[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+ dokumentaci API se dostanete na adrese[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

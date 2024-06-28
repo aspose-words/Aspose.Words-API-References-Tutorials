@@ -92,7 +92,7 @@ Sie können das Erscheinungsbild von Formularfeldern anpassen, z. B. durch Anpas
    Sie können das Erscheinungsbild des Formularfelds anpassen, indem Sie die Schriftgröße, die Farbe und andere Formatierungsoptionen anpassen.
 
 4. ### Gibt es eine kostenlose Testversion für Aspose.Words für Java?
-    Ja, Sie können auf eine kostenlose Testversion von Aspose.Words für Java zugreifen[Hier](https://releases.aspose.com/).
+    Ja, Sie können auf eine kostenlose Testversion von Aspose.Words für Java zugreifen.[Hier](https://releases.aspose.com/).
 
 5. ### Wo erhalte ich Unterstützung für Aspose.Words für Java?
     Für Unterstützung und Unterstützung besuchen Sie die[Aspose.Words-Forum](https://forum.aspose.com/).

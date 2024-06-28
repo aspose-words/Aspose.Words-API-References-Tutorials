@@ -19,7 +19,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 2. Загрузите существующий документ
- Далее вам необходимо загрузить существующий документ Word в экземпляр`Document` сорт.
+ Далее вам необходимо загрузить существующий документ Word в экземпляр`Document` класс.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
@@ -48,7 +48,7 @@ Console.WriteLine("Shading cell before style expansion: " + cellShadingBefore);
 doc.ExpandTableStylesToDirectFormatting();
 ```
 
-## Шаг 6. Отображение форматирования ячеек после раскрытия стиля
+## Шаг 6. Отображение форматирования ячеек после стиля расширения.
 Теперь мы отображаем цвет фона ячейки после расширения стилей таблицы. Синий цвет фона должен быть применен из стиля таблицы.
 
 ```csharp
@@ -68,8 +68,8 @@ Shading the cell after style expansion: " + cellShadingAfter);
 	// Получите первую ячейку первой таблицы в документе.
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	Cell firstCell = table.FirstRow.FirstCell;
-	// Сначала напечатайте цвет заливки ячейки.
-	// Оно должно быть пустым, поскольку текущая заливка хранится в стиле таблицы.
+	// Сначала напечатайте цвет тени ячейки.
+	// Оно должно быть пустым, поскольку текущий оттенок хранится в стиле таблицы.
 	Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
 	Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 	doc.ExpandTableStylesToDirectFormatting();

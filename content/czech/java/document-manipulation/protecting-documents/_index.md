@@ -70,4 +70,4 @@ Ano, konkrétní části dokumentu můžete chránit aplikací ochrany na jednot
 
 ### Je možné chránit dokumenty v jiných formátech, jako je PDF nebo HTML?
 
-Aspose.Words for Java se primárně zabývá dokumenty Wordu, ale své dokumenty můžete převést do jiných formátů, jako je PDF nebo HTML, a v případě potřeby pak použít ochranu.
+Aspose.Words for Java se primárně zabývá dokumenty aplikace Word, ale své dokumenty můžete převést do jiných formátů, jako je PDF nebo HTML, a v případě potřeby použít ochranu.

@@ -1,6 +1,6 @@
 ---
-title: 기울임꼴 텍스트
-linktitle: 기울임꼴 텍스트
+title: 이탈리아어 텍스트
+linktitle: 이탈리아어 텍스트
 second_title: Aspose.Words 문서 처리 API
 description: .NET용 Aspose.Words 단계별 가이드를 통해 기울임꼴 텍스트를 만드는 방법을 알아보세요.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // 문서 빌더를 사용하여 문서에 콘텐츠를 추가합니다.
 DocumentBuilder builder = new DocumentBuilder();
 
-// 텍스트를 기울임꼴로 만듭니다.
+// 텍스트를 이탈리아어로 만듭니다.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
@@ -46,7 +46,7 @@ builder.Writeln("This text will be Italic");
 
 #### Q: Aspose.Words에서 텍스트를 기울임꼴로 표시하려면 어떻게 해야 합니까?
 
-A: Aspose.Words에서 텍스트를 기울임꼴로 표시하려면 다음을 사용할 수 있습니다.`Font.Italic` 의 재산`Run` 물체. 이 속성을 다음과 같이 설정할 수 있습니다.`true` 특정 텍스트를 기울임꼴로 표시합니다. 예를 들어 다음을 사용할 수 있습니다.`run.Font.Italic=true` 포함된 텍스트를 기울임꼴로 표시하려면`Run` 물체.
+A: Aspose.Words에서 텍스트를 기울임꼴로 표시하려면 다음을 사용할 수 있습니다.`Font.Italic` 의 재산`Run`물체. 이 속성을 다음과 같이 설정할 수 있습니다.`true` 특정 텍스트를 기울임꼴로 표시합니다. 예를 들어 다음을 사용할 수 있습니다.`run.Font.Italic=true` 포함된 텍스트를 기울임꼴로 표시하려면`Run` 물체.
 
 #### Q: 같은 단락에서 여러 텍스트를 이탤릭체로 표시할 수 있나요?
 

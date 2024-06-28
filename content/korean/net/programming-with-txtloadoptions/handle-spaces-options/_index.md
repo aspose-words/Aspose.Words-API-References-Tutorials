@@ -2,7 +2,7 @@
 title: 핸들 공간 옵션
 linktitle: 핸들 공간 옵션
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 TXT 문서의 공간을 관리하는 방법을 알아보세요. 불필요한 공백을 제거하고 가독성을 높였습니다.
+description: .NET용 Aspose.Words를 사용하여 TXT 문서의 공간을 관리하는 방법을 알아보세요. 불필요한 공백을 제거하고 가독성을 높입니다.
 type: docs
 weight: 10
 url: /ko/net/programming-with-txtloadoptions/handle-spaces-options/

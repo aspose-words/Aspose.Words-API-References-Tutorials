@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Passaggio 2: ottieni le righe principali dai segnalibri
 
- Noi usiamo il`GetAncestor` metodi per recuperare le righe principali dei nodi iniziale e finale del segnalibro:
+ Noi usiamo il`GetAncestor` Metodi per recuperare le righe principali dei nodi iniziale e finale del segnalibro:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

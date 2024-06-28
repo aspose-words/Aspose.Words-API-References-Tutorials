@@ -2,7 +2,7 @@
 title: Avancera alternativ för att spara HTML-dokument med Aspose.Words Java
 linktitle: Spara HTML-dokument med
 second_title: Aspose.Words Java Document Processing API
-description: I den här handledningen har vi täckt olika avancerade alternativ för att spara HTML-dokument med Aspose.Words för Java. Dessa alternativ ger dig möjlighet att skapa HTML av hög kvalitet
+description: I den här handledningen har vi täckt olika avancerade alternativ för att spara HTML-dokument med Aspose.Words för Java. Dessa alternativ ger dig möjlighet att skapa HTML av hög kvalitet.
 type: docs
 weight: 16
 url: /sv/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. Slutsats
 den här handledningen utforskade vi de avancerade alternativen för att spara HTML-dokument som tillhandahålls av Aspose.Words för Java. Dessa alternativ ger dig finkornig kontroll över konverteringsprocessen, så att du kan skapa HTML-dokument som liknar de ursprungliga Word-dokumenten.
 
-## 12. Vanliga frågor
+## 12.Vanliga frågor
 Här är några vanliga frågor om att arbeta med Aspose.Words för Java och alternativ för att spara HTML-dokument:
 
 ### F1: Hur kan jag konvertera HTML tillbaka till Word-format med Aspose.Words för Java?

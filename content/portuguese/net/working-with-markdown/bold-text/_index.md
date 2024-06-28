@@ -53,11 +53,11 @@ Parabéns! Agora você aprendeu como colocar texto em negrito com Aspose.Words f
 
 #### P: Como posso deixar o texto em negrito no Aspose.Words?
 
- R: Para deixar o texto em negrito no Aspose.Words, você pode usar o`Font.Bold` propriedade do`Run` objeto. Você pode definir esta propriedade como`true` para texto específico em negrito. Por exemplo, você pode usar`run.Font.Bold=true` colocar em negrito o texto dentro do`Run` objeto.
+ R: Para deixar o texto em negrito no Aspose.Words, você pode usar o`Font.Bold` propriedade do`Run`objeto. Você pode definir esta propriedade como`true` para texto específico em negrito. Por exemplo, você pode usar`run.Font.Bold=true` colocar em negrito o texto dentro do`Run` objeto.
 
 #### P: É possível colocar em negrito vários trechos de texto no mesmo parágrafo?
 
-R: Sim, você pode colocar em negrito vários trechos de texto em um único parágrafo usando vários`Run` objetos. Você pode criar vários`Run` objetos e definir o`Font.Bold`propriedade para`true` para cada objeto coloque em negrito as partes desejadas do texto. Então você pode adicioná-los ao parágrafo usando o`Paragraph.AppendChild(run)` método.
+ R: Sim, você pode colocar em negrito vários trechos de texto em um único parágrafo usando vários`Run` objetos. Você pode criar vários`Run` objetos e definir o`Font.Bold`propriedade para`true` para cada objeto coloque em negrito as partes desejadas do texto. Então você pode adicioná-los ao parágrafo usando o`Paragraph.AppendChild(run)` método.
 
 #### P: Posso colocar texto em negrito em uma tabela ou célula no Aspose.Words?
 

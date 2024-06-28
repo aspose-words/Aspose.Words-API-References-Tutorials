@@ -101,4 +101,4 @@ Odp.: Aby usunąć ochronę dokumentów za pomocą Aspose.Words dla .NET, możes
 
 #### P: Czy mogę usunąć określone typy ochrony z dokumentu programu Word?
 
- O: Tak, używając Aspose.Words dla .NET, możesz selektywnie usuwać określone typy ochrony z dokumentu Word. Dzwoniąc do`Unprotect` metoda`Document` obiektu, możesz usunąć żądany typ ochrony, taki jak ochrona tylko do odczytu lub ochrona formularza, pozostawiając inne typy ochrony bez zmian.
+ Odp.: Tak, używając Aspose.Words dla .NET, możesz selektywnie usuwać określone typy ochrony z dokumentu Word. Dzwoniąc do`Unprotect` metoda`Document` obiektu, możesz usunąć żądany typ ochrony, taki jak ochrona tylko do odczytu lub ochrona formularza, pozostawiając inne typy ochrony bez zmian.

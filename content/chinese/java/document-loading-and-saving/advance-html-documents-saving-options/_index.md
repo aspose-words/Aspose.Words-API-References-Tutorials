@@ -2,7 +2,7 @@
 title: 使用 Aspose.Words Java 高级 HTML 文档保存选项
 linktitle: 保存 HTML 文档
 second_title: Aspose.Words Java 文档处理 API
-description: 在本教程中，我们介绍了 Aspose.Words for Java 的各种高级 HTML 文档保存选项。这些选项使您能够创建高质量的 HTML
+description: 在本教程中，我们介绍了 Aspose.Words for Java 的各种高级 HTML 文档保存选项。这些选项使您能够创建高质量的 HTML。
 type: docs
 weight: 16
 url: /zh/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. 结论
 在本教程中，我们探索了 Aspose.Words for Java 提供的高级 HTML 文档保存选项。这些选项使您可以对转换过程进行细粒度的控制，从而允许您创建与原始 Word 文档非常相似的 HTML 文档。
 
-## 12. 常见问题解答
+## 12.常见问题解答
 以下是有关使用 Aspose.Words for Java 和 HTML 文档保存选项的一些常见问题：
 
 ### 问题 1：如何使用 Aspose.Words for Java 将 HTML 转换回 Word 格式？

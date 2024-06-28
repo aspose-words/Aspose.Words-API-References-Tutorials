@@ -17,7 +17,7 @@ url: /zh/net/programming-with-charts/format-number-of-data-label/
 - 已安装 Aspose.Words for .NET 库。您可以使用 NuGet 包管理器下载并安装它。
 - 将保存输出文档的文档目录路径。
 
-## 步骤 2：创建一个新文档并插入图表
+## 步骤2：创建一个新文档并插入图表。
 
 创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 Aspose.Words for .NET 是一个功能丰富的文档处理库，使开发人员能够在 .NET 应用程序中以编程方式创建、操作和保存 Word 文档。它为文档元素（包括图表和数据标签）的文字处理提供了广泛的功能。
 
 #### Q2。如何安装 Aspose.Words for .NET？
-您可以使用 Visual Studio 中的 NuGet 包管理器下载 Aspose.Words for .NET 来安装它。只需在 NuGet 包管理器中搜索“Aspose.Words”并将其安装到您的项目中即可。
+您可以使用 Visual Studio 中的 NuGet 包管理器下载 Aspose.Words for .NET 来安装它。只需在 NuGet 包管理器中搜索“Apose.Words”并将其安装到您的项目中即可。
 
 #### Q3。我可以使用 Aspose.Words for .NET 格式化图表的其他方面吗？
 是的，Aspose.Words for .NET 提供了格式化图表各个方面的广泛功能。除了数据标签之外，您还可以自定义图表类型、系列数据、轴属性、图例、标题、绘图区域以及图表的许多其他元素。该 API 提供对图表外观和格式的细粒度控制。

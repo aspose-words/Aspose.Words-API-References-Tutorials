@@ -88,7 +88,7 @@ Suivez ces étapes pour renommer les champs de fusion dans votre document à l'a
 
 #### Q : Comment puis-je renommer les champs fusionnés dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour renommer les champs fusionnés dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez parcourir les champs du document à l'aide de l'option`FieldMergingArgs` classe et utiliser le`FieldMergingArgs.FieldName` méthode pour renommer le champ.
+ R : Pour renommer les champs fusionnés dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez parcourir les champs du document à l'aide de l'option`FieldMergingArgs` classe et utiliser le`FieldMergingArgs.FieldName` méthode pour renommer les champs.
 
 #### Q : Est-il possible de renommer uniquement certains champs fusionnés dans un document Word avec Aspose.Words pour .NET ?
 

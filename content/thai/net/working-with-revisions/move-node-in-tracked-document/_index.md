@@ -119,7 +119,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 #### ถาม: ฉันจะเปิดใช้งานการติดตามการแก้ไขในเอกสาร Aspose.Words สำหรับ .NET ได้อย่างไร
 
-ตอบ: หากต้องการเปิดใช้งานการติดตามการแก้ไขในเอกสาร Aspose.Words สำหรับ .NET คุณสามารถใช้`StartTrackRevisions` วิธีการของ`Document` วัตถุ. วิธีการนี้ใช้พารามิเตอร์ชื่อผู้เขียนการแก้ไขและวันที่เริ่มต้นการติดตามผลการแก้ไข
+ตอบ: หากต้องการเปิดใช้งานการติดตามการแก้ไขในเอกสาร Aspose.Words สำหรับ .NET คุณสามารถใช้`StartTrackRevisions` วิธีการของ`Document` วัตถุ วัตถุ วิธีการนี้ใช้พารามิเตอร์ชื่อผู้เขียนการแก้ไขและวันที่เริ่มต้นการติดตามผลการแก้ไข
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### ถาม: ฉันจะย้ายโหนดในเอกสารที่ถูกติดตามโดยไม่สร้างการแก้ไขได้อย่างไร
 
- ตอบ: หากคุณต้องการย้ายโหนดในเอกสารที่ติดตามโดยไม่สร้างการแก้ไข คุณสามารถใช้`Remove` และ`InsertAfter` หรือ`InsertBefore` วิธีการของ`Node` วัตถุ. ตัวอย่างเช่น เมื่อต้องการย้ายย่อหน้าหลังจากย่อหน้าอื่น คุณสามารถใช้โค้ดต่อไปนี้:
+ ตอบ: หากคุณต้องการย้ายโหนดในเอกสารที่ติดตามโดยไม่สร้างการแก้ไข คุณสามารถใช้`Remove` และ`InsertAfter` หรือ`InsertBefore` วิธีการของ`Node` วัตถุ วัตถุ ตัวอย่างเช่น เมื่อต้องการย้ายย่อหน้าหลังจากย่อหน้าอื่น คุณสามารถใช้โค้ดต่อไปนี้:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
@@ -138,7 +138,7 @@ document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
 
 #### ถาม: ฉันจะหยุดการติดตามการแก้ไขในเอกสาร Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: หากต้องการหยุดติดตามการแก้ไขในเอกสาร Aspose.Words สำหรับ .NET คุณสามารถใช้`StopTrackRevisions` วิธีการของ`Document` วัตถุ.
+ ตอบ: หากต้องการหยุดติดตามการแก้ไขในเอกสาร Aspose.Words สำหรับ .NET คุณสามารถใช้`StopTrackRevisions` วิธีการของ`Document` วัตถุ วัตถุ
 
 ```csharp
 doc.StopTrackRevisions();

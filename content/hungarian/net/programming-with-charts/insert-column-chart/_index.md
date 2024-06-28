@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-charts/insert-column-chart/
 ---
 
-Ez az oktatóanyag elmagyarázza, hogyan lehet az Aspose.Words for .NET használatával oszlopdiagramot beszúrni egy dokumentumba. A mellékelt forráskód bemutatja a diagram létrehozását, a sorozatadatok hozzáadását és a dokumentum mentését.
+Ez az oktatóanyag elmagyarázza, hogyan lehet az Aspose.Words for .NET használatával oszlopdiagramot beilleszteni egy dokumentumba. A mellékelt forráskód bemutatja a diagram létrehozását, a sorozatadatok hozzáadását és a dokumentum mentését.
 
 ## 1. lépés: Állítsa be a projektet
 
@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -78,7 +78,7 @@ Az Aspose.Words for .NET használatával automatizálhatja a dokumentumok oszlop
 
 ### GYIK
 
-#### Q1. Mi az az oszlopdiagram?
+#### Q1. Mi az oszlopdiagram?
 Az oszlopdiagram egy olyan típusú diagram, amely az adatokat függőleges sávokban vagy oszlopokban jeleníti meg. Minden oszlop jellemzően egy kategóriát vagy csoportot jelöl, az oszlop magassága vagy hossza pedig az adott kategóriához tartozó adatok értékét jelzi. Az oszlopdiagramokat általában a különböző kategóriák adatainak összehasonlítására vagy az időbeli változások nyomon követésére használják.
 
 #### Q2. Hozzáadhatok több sorozatot az oszlopdiagramhoz?

@@ -2,7 +2,7 @@
 title: 有効 無効 フォント置換
 linktitle: 有効 無効 フォント置換
 second_title: Aspose.Words ドキュメント処理 API
-description: このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のフォント置換を有効または無効にする方法を学習します。
+description: このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のフォント置換を有効または無効にする方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/enable-disable-font-substitution/
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 次に、レンダリングしたい Word 文書をロードし、`FontSettings`フォント設定を処理するクラス。でフォント名を指定して、デフォルトのフォント オーバーライドを設定します。`DefaultFontName`そしてフォント情報の上書きを無効にします`Enabled`に設定`false`.
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Rendering.docx");
 
 //フォント設定を構成する

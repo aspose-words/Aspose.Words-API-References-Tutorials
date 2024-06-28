@@ -7,7 +7,7 @@ type: docs
 weight: 1500
 url: /nl/net/join-and-append-documents/
 ---
- Aspose.Words voor .NET-tutorials leiden u door verschillende functies en technieken voor tekstverwerking met Word-documenten in uw toepassingen. Een voorbeeld van zo'n tutorial is "Documenten samenvoegen en samenvoegen", waarin u ziet hoe u meerdere Word-documenten in één kunt combineren. Je leert hoe je de`Document` klasse om documenten te openen en te manipuleren, evenals de`AppendDocument` methode om de inhoud van het ene document aan het andere toe te voegen. Deze tutorial geeft u stapsgewijze instructies om deze handeling gemakkelijk uit te voeren.
+ Aspose.Words voor .NET-tutorials leiden u door verschillende functies en technieken voor woordenverwerking met Word-documenten in uw toepassingen. Een voorbeeld van zo'n tutorial is "Documenten samenvoegen en samenvoegen", waarin u ziet hoe u meerdere Word-documenten in één kunt combineren. Je leert hoe je de`Document` klasse om documenten te openen en te manipuleren, evenals de`AppendDocument` methode om de inhoud van het ene document aan het andere toe te voegen. Deze tutorial geeft u stapsgewijze instructies om deze handeling gemakkelijk uit te voeren.
 
 Een andere geweldige tutorial is "Tekst in een document vervangen", waarin u leert hoe u automatische tekstvervangingen in een Word-document kunt uitvoeren. Je leert hoe je de`FindReplaceOptions` En`Document` klassen om tekst te vinden en te vervangen, met flexibele zoekopties. Deze tutorial leidt u door het proces van het vervangen van tekst in een document, zodat u deze vervelende taak kunt automatiseren.
 
@@ -36,7 +36,7 @@ Deze Aspose.Words voor .NET-tutorials bieden u waardevolle bronnen om de woorden
 | [Document invoegen met Builder](./insert-document-with-builder/) | Leer hoe u een document aan het einde van een ander document kunt invoegen met Aspose.Words voor .NET. |
 | [Behoud de bronnummering](./keep-source-numbering/) | Leer hoe u een document kunt toevoegen met behoud van de opmaak van de bronnummering in Aspose.Words voor .NET. |
 | [Negeer tekstvakken](./ignore-text-boxes/) | Leer hoe u een document kunt toevoegen terwijl u de opmaak van tekstvakken negeert met Aspose.Words voor .NET. |
-| [Negeer koptekst en voettekst](./ignore-header-footer/) | Leer hoe u een document kunt toevoegen terwijl u de inhoud van de kop- en voettekst negeert met behulp van Aspose.Words voor .NET. |
+| [Negeer koptekst en voettekst](./ignore-header-footer/) | Leer hoe u een document kunt toevoegen terwijl u de kop- en voettekst negeert met behulp van Aspose.Words voor .NET. |
 | [Kopteksten en voetteksten koppelen](./link-headers-footers/) | Leer hoe u kop- en voetteksten koppelt terwijl u Word-documenten samenvoegt en toevoegt met Aspose.Words voor .NET. |
 | [Verwijder bronkopteksten en voetteksten](./remove-source-headers-footers/) | Leer hoe u kop- en voetteksten verwijdert terwijl u Word-documenten samenvoegt en toevoegt met Aspose.Words voor .NET. |
 | [Ontkoppel kopteksten en voetteksten](./unlink-headers-footers/) | Leer hoe u Word-documenten kunt samenvoegen en toevoegen terwijl u kop- en voetteksten ontkoppelt met Aspose.Words voor .NET. |

@@ -19,7 +19,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára.
 
-## 2. lépés: Szakaszok és szöveg beszúrása
+## 2. lépés: szakaszok és szöveg beszúrása
 
 Ezután szakaszokat és szöveget kell beillesztenie a dokumentumba. Használja az Aspose.Words által biztosított DocumentBuilder osztályt a dokumentum tartalmának felépítéséhez. Íme egy egyszerű példa:
 
@@ -69,7 +69,7 @@ Feltétlenül cserélje ki a "dataDir" kifejezést a dokumentumkönyvtár elér�
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Szúrjon be két szakaszt némi szöveggel.
+// Szúrjon be két részt szöveggel.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");

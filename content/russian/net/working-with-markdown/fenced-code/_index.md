@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Шаг 2. Добавление стиля для изолированного кода
 
- Мы добавим собственный стиль для изолированного кода, используя`Styles.Add` метод`Document` объект. В этом примере мы создаем стиль под названием «FencedCode» для изолированного кода.
+ Мы добавим собственный стиль для изолированного кода, используя`Styles.Add` метод`Document` Объект Object. В этом примере мы создаем стиль под названием «FencedCode» для изолированного кода.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");

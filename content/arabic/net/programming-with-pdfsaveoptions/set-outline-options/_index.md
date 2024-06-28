@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## الخطوة 3: قم بتكوين خيارات الحفظ بتنسيق PDF مع خيارات الخطة
 
- لتعيين خيارات المخطط التفصيلي في ملف PDF الذي تم إنشاؤه، نحتاج إلى تكوين`PdfSaveOptions` هدف. يمكننا ضبط عدد مستويات مخطط العنوان (`HeadingsOutlineLevels`) وعدد مستويات المخطط التفصيلي الموسعة (`ExpandedOutlineLevels`).
+لتعيين خيارات المخطط التفصيلي في ملف PDF الذي تم إنشاؤه، نحتاج إلى تكوين`PdfSaveOptions` هدف. يمكننا ضبط عدد مستويات مخطط العنوان (`HeadingsOutlineLevels`) وعدد مستويات المخطط التفصيلي الموسعة (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

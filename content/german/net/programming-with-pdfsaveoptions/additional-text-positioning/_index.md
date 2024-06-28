@@ -76,7 +76,7 @@ A: Um die Textpositionierung in einer PDF-Datei durch Hinzufügen von zusätzlic
 
  Laden Sie das Word-Dokument, das Sie in PDF konvertieren möchten, mit`Document` Klasse und geben Sie den Pfad zum Word-Dokument im angegebenen Dokumentenverzeichnis an.
 
- Konfigurieren Sie die Optionen für die Konvertierung als PDF, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und ermöglichen die`AdditionalTextPositioning` Option zur präzisen Aktivierung 
+ Konfigurieren Sie die Optionen für die Konvertierung als PDF, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und Ermöglichung der`AdditionalTextPositioning` Option zur präzisen Aktivierung 
 Positionierung von Zusatztext in der PDF-Datei.
 
  Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.

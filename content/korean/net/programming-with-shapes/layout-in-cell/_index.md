@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3단계: 테이블 구축
- 사용`StartTable`, `EndTable`, `InsertCell` , 그리고`Write` 방법`DocumentBuilder` 테이블을 만드는 개체입니다. 다음을 사용하여 원하는 행 높이 및 높이 규칙을 설정합니다.`RowFormat` 속성.
+ 사용`StartTable`, `EndTable`, `InsertCell` , 그리고`Write` 방법`DocumentBuilder`테이블을 만드는 개체입니다. 다음을 사용하여 원하는 행 높이 및 높이 규칙을 설정합니다.`RowFormat` 속성.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## 6단계: 문서에 도형 삽입
-다음을 사용하여 워터마크 모양을 문서에 삽입합니다.`InsertNode` 의 방법`DocumentBuilder` 물체. 다음을 사용하여 모양의 위치를 지정합니다.`MoveTo` 문서에서 마지막 실행 이후에 배치하는 방법입니다.
+ 다음을 사용하여 워터마크 모양을 문서에 삽입합니다.`InsertNode` 의 방법`DocumentBuilder` 물체. 다음을 사용하여 모양의 위치를 지정합니다.`MoveTo` 문서에서 마지막 실행 이후에 배치하는 방법입니다.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

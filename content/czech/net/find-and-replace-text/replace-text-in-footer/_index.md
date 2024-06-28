@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Footer.docx");
 ```
 
-## Krok 2: Přístup k zápatí
+## Krok 2: Otevřete zápatí
 
  Jakmile je dokument načten, potřebujeme získat přístup k zápatí, abychom mohli provést nahrazení textu. V našem příkladu používáme`HeadersFooters` vlastnost první sekce dokumentu pro získání kolekce záhlaví/zápatí. Dále vybereme hlavní zápatí pomocí`HeaderFooterType.FooterPrimary` index:
 
@@ -111,7 +111,7 @@ HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 
 #### Otázka: Jak mohu nakonfigurovat možnosti hledání a nahrazování pro nahrazení textu v zápatí pomocí Aspose.Words for .NET?
 
- A: Chcete-li nakonfigurovat možnosti hledání a nahrazování pro nahrazení textu v zápatí pomocí Aspose.Words pro .NET, můžete vytvořit`FindReplaceOptions` objekt a nastavte požadované vlastnosti. Můžete například nastavit`MatchCase` na`false` ignorovat malá a velká písmena při vyhledávání a`FindWholeWordsOnly` na`false` aby bylo možné vyhledávat a nahrazovat části slov:
+ A: Chcete-li nakonfigurovat možnosti hledání a nahrazování pro nahrazení textu v zápatí pomocí Aspose.Words pro .NET, můžete vytvořit`FindReplaceOptions` objekt a nastavte požadované vlastnosti. Můžete například nastavit`MatchCase` na`false` ignorovat malá a velká písmena při hledání a`FindWholeWordsOnly` na`false` aby bylo možné vyhledávat a nahrazovat části slov:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWholeWordsOnly = false };

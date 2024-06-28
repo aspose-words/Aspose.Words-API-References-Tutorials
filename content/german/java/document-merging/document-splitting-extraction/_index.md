@@ -110,4 +110,4 @@ Ja, Aspose.Words für Java kann mit OCR-Funktionen Text aus gescannten Dokumente
 
 ### Wo kann ich auf die Dokumentation für Aspose.Words für Java zugreifen?
 
- Sie finden die Dokumentation für Aspose.Words für Java[Hier](https://reference.aspose.com/words/java/).
+ Sie finden die Dokumentation für Aspose.Words für Java.[Hier](https://reference.aspose.com/words/java/).

@@ -25,7 +25,7 @@ url: /ar/java/document-rendering/rendering-document-pages-images/
 لنبدأ بإنشاء مشروع Java جديد. يمكنك استخدام بيئة التطوير المتكاملة (IDE) المفضلة لديك أو إنشاء المشروع باستخدام أدوات سطر الأوامر.
 
 ```java
-// نموذج كود Java لإنشاء مشروع جديد
+// نموذج كود جافا لإنشاء مشروع جديد
 public class DocumentToImageConversion {
     public static void main(String[] args) {
         // الكود الخاص بك يذهب هنا

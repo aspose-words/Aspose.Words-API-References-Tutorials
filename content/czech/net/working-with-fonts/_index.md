@@ -25,7 +25,7 @@ Ať už chcete formátovat text pomocí různých písem, nastavit pravidla pro 
 | [Nastavte složky písem](./set-fonts-folders/) | Podrobný průvodce nastavením složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET. |
 | [Povolit Zakázat nahrazování písem](./enable-disable-font-substitution/) | V tomto kurzu se dozvíte, jak povolit nebo zakázat nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
 | [Nastavte záložní nastavení písma](./set-font-fallback-settings/) | Zjistěte, jak nastavit nastavení nahrazování písem v Aspose.Words pro .NET a přizpůsobit si nahrazování písem v dokumentech aplikace Word. |
-| [Načtěte záložní nastavení Noto](./load-noto-fallback-settings/) | V tomto tutoriálu se dozvíte, jak načíst parametry přepisu Noto do dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Načtěte záložní nastavení Noto](./load-noto-fallback-settings/) | V tomto kurzu se dozvíte, jak načíst parametry přepisu Noto do dokumentu aplikace Word pomocí Aspose.Words for .NET. |
 | [Nastavit výchozí instanci složek písem](./set-fonts-folders-default-instance/) | Podrobný průvodce nastavením výchozí složky písem při vykreslování dokumentu pomocí Aspose.Words for .NET. |
 | [Nastavit složky písem více složek](./set-fonts-folders-multiple-folders/) | Krok za krokem průvodce nastavením více složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET. |
 | [Nastavit systém složek písem a vlastní složku](./set-fonts-folders-system-and-custom-folder/) | Podrobný průvodce nastavením systémových a vlastních složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET. |

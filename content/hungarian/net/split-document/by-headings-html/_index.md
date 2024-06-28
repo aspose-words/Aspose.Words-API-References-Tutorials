@@ -58,7 +58,7 @@ Ezzel a kóddal egy Word-dokumentumot kisebb részekre bonthat az Aspose.Words f
 
  Ebben az oktatóanyagban megtanultuk, hogyan lehet egy Word-dokumentumot kisebb részekre osztani az Aspose.Words for .NET HTML-címsor alapján funkciójával. Megadva a`DocumentSplitCriteria` mint`HeadingParagraph` ban,-ben`HtmlSaveOptions`, külön HTML dokumentumokat tudtunk generálni az eredeti dokumentumban található fejlécek alapján.
 
-dokumentumok fejlécek szerinti felosztása hasznos lehet a tartalom rendszerezéséhez és kezeléséhez, különösen a több szakaszt tartalmazó nagy dokumentumok esetében. Az Aspose.Words for .NET megbízható és hatékony megoldást kínál a dokumentumok felosztására és különféle formátumú kimenetek előállítására.
+A dokumentumok fejlécek szerinti felosztása hasznos lehet a tartalom rendszerezéséhez és kezeléséhez, különösen a több szakaszt tartalmazó nagy dokumentumok esetében. Az Aspose.Words for .NET megbízható és hatékony megoldást kínál a dokumentumok felosztására és különféle formátumú kimenetek előállítására.
 
 Nyugodtan fedezze fel az Aspose.Words for .NET által biztosított további szolgáltatásokat és lehetőségeket, hogy tovább javítsa dokumentumfeldolgozási képességeit és egyszerűsítse a munkafolyamatot.
 
@@ -70,11 +70,11 @@ Nyugodtan fedezze fel az Aspose.Words for .NET által biztosított további szol
 
 #### Milyen formátumokra oszthatom fel a Word dokumentumot?
 
- mellékelt forráskód bemutatja a Word dokumentum kisebb részekre bontását HTML formátumban. Az Aspose.Words for .NET azonban különféle kimeneti formátumokat támogat, beleértve a DOCX, PDF, EPUB stb. Módosíthatja a kódot, és megadhatja a kívánt kimeneti formátumot a`HtmlSaveOptions` ennek megfelelően tiltakozik.
+ A mellékelt forráskód bemutatja a Word dokumentum kisebb részekre bontását HTML formátumban. Az Aspose.Words for .NET azonban különféle kimeneti formátumokat támogat, beleértve a DOCX, PDF, EPUB stb. Módosíthatja a kódot, és megadhatja a kívánt kimeneti formátumot a`HtmlSaveOptions` ennek megfelelően tiltakozik.
 
 #### Választhatok-e más kritériumot a dokumentum felosztásához?
 
- Igen, az igényeinek megfelelően választhat más kritériumot a dokumentum felosztásához. Az Aspose.Words for .NET számos kritériumlehetőséget biztosít, mint pl`HeadingParagraph`, `Page`, `Section` , és több. Módosítsa a`DocumentSplitCriteria` ingatlan a`HtmlSaveOptions` objektumot, hogy kiválassza a megfelelő kritériumokat a felosztáshoz.
+Igen, az igényeinek megfelelően választhat más kritériumot a dokumentum felosztásához. Az Aspose.Words for .NET számos kritériumlehetőséget biztosít, mint pl`HeadingParagraph`, `Page`, `Section` , és több. Módosítsa a`DocumentSplitCriteria` ingatlan a`HtmlSaveOptions` objektumot, hogy kiválassza a megfelelő kritériumokat a felosztáshoz.
 
 #### Hogyan szabhatom testre a kimeneti HTML-t a felosztott részekhez?
 

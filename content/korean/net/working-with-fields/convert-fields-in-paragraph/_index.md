@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-이 코드는 LINQ 메서드 조합을 사용하여 문서의 마지막 단락에 있는 필드를 필터링한 다음 다음을 호출하여 일반 텍스트로 변환합니다.`Unlink()` 방법.
+ 이 코드는 LINQ 메서드 조합을 사용하여 문서의 마지막 단락에 있는 필드를 필터링한 다음 다음을 호출하여 일반 텍스트로 변환합니다.`Unlink()` 방법.
 
 ## 4단계: 수정된 문서 저장
 

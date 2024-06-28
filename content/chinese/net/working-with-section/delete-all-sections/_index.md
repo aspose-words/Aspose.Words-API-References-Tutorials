@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## 第 3 步：删除所有部分
-要从文档中删除所有部分，我们将使用`Clear`的方法`Sections`文档的集合。
+要从文档中删除所有部分，我们将使用`Clear`的方法`Sections`文件收集。
 
 ```csharp
 doc.Sections.Clear();
@@ -85,7 +85,7 @@ doc.AppendChild(new Section(doc));
 
 #### 问：如何删除 Aspose.Words for .NET 中的所有部分？
 
-答：要从 Aspose.Words for .NET 中的文档中删除所有部分，您可以使用`Clear`的方法`Sections`文档收集：
+答：要从 Aspose.Words for .NET 中的文档中删除所有部分，您可以使用`Clear`的方法`Sections`文件收集：
 
 ```csharp
 doc.Sections.Clear();

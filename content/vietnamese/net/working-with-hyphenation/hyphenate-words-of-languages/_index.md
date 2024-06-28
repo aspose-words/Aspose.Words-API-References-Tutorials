@@ -34,7 +34,7 @@ Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 
 ## Bước 3: Xử lý từ bằng dấu gạch nối
 
- Bây giờ bạn có thể sử dụng tính năng gạch nối để xử lý các từ trong các ngôn ngữ khác nhau. Bạn có thể sử dụng các phương pháp khác nhau để`Document` hoặc`DocumentBuilder` tùy thuộc vào nhu cầu cụ thể của bạn.
+Bây giờ bạn có thể sử dụng tính năng gạch nối để xử lý các từ trong các ngôn ngữ khác nhau. Bạn có thể sử dụng các phương pháp khác nhau để`Document` hoặc`DocumentBuilder` tùy thuộc vào nhu cầu cụ thể của bạn.
 
 ```csharp
 // Ví dụ: Sử dụng phương thức Hyphenate của DocumentBuilder
@@ -71,12 +71,12 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Câu hỏi: Làm cách nào tôi có thể phát âm một từ trong một ngôn ngữ cụ thể bằng Aspose.Words?
 
- Đáp: Để phát âm một từ trong một ngôn ngữ cụ thể bằng Aspose.Words, bạn có thể sử dụng`Hyphenation` lớp học và`Hyphenate()` phương pháp. Tạo một thể hiện của`Hyphenation` lớp chỉ định ngôn ngữ mong muốn, sau đó gọi`Hyphenate()`phương thức truyền từ để phân âm tiết làm đối số. Điều này sẽ cung cấp cho bạn các âm tiết của từ trong ngôn ngữ được chỉ định.
+ Đáp: Để phát âm một từ trong một ngôn ngữ cụ thể bằng Aspose.Words, bạn có thể sử dụng`Hyphenation` lớp học và`Hyphenate()` phương pháp. Tạo một thể hiện của`Hyphenation` lớp chỉ định ngôn ngữ mong muốn, sau đó gọi`Hyphenate()` phương thức truyền từ để phân âm tiết làm đối số. Điều này sẽ cung cấp cho bạn các âm tiết của từ trong ngôn ngữ được chỉ định.
 
 #### Câu hỏi: Tôi nên sử dụng mã ngôn ngữ nào để chỉ định ngôn ngữ âm tiết trong Aspose.Words?
 
 Trả lời: Để chỉ định ngôn ngữ âm tiết trong Aspose.Words, bạn phải sử dụng mã ngôn ngữ thích hợp. Ví dụ: bạn có thể sử dụng "en" cho tiếng Anh, "fr" cho tiếng Pháp, "es" cho tiếng Tây Ban Nha, "de" cho tiếng Đức, v.v. Xem tài liệu Aspose.Words để biết danh sách đầy đủ các mã ngôn ngữ được hỗ trợ.
 
-#### Câu hỏi: Việc sắp xếp âm tiết có hoạt động với tất cả các ngôn ngữ trong Aspose.Words không?
+#### Câu hỏi: Âm tiết có hoạt động với tất cả các ngôn ngữ trong Aspose.Words không?
 
-Trả lời: Âm tiết trong Aspose.Words phụ thuộc vào quy tắc âm tiết dành riêng cho ngôn ngữ. Mặc dù Aspose.Words hỗ trợ nhiều ngôn ngữ nhưng một số ngôn ngữ có thể không được hỗ trợ hoặc âm tiết có thể không có sẵn cho chúng. Kiểm tra tài liệu Aspose.Words để tìm hiểu ngôn ngữ nào được hỗ trợ cho việc sắp xếp âm tiết.
+Trả lời: Âm tiết trong Aspose.Words phụ thuộc vào quy tắc âm tiết dành riêng cho ngôn ngữ. Mặc dù Aspose.Words hỗ trợ nhiều loại ngôn ngữ nhưng một số ngôn ngữ có thể không được hỗ trợ hoặc âm tiết có thể không có sẵn cho chúng. Kiểm tra tài liệu Aspose.Words để tìm hiểu ngôn ngữ nào được hỗ trợ cho việc sắp xếp âm tiết.

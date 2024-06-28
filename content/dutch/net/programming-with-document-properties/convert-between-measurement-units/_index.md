@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 3: Configureer maateenheden
 
-Nu gaan we de waarden voor marges, kop- en voettekstafstanden, etc. omzetten in verschillende maateenheden. Gebruik de volgende code om waarden in specifieke meeteenheden op te geven:
+Nu gaan we de waarden voor marges, kop- en voettekstafstanden etc. omzetten in verschillende maateenheden. Gebruik de volgende code om waarden in specifieke meeteenheden op te geven:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -56,4 +56,4 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
   
 ```
 
-hebt nu geleerd hoe u tussen maateenheden kunt converteren bij het opgeven van marges, kop- en voettekstafstanden, enz. in een document met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze tutorial te volgen, kunt u eenvoudig de waarden in de gewenste maateenheden in uw eigen documenten opgeven.
+hebt nu geleerd hoe u tussen maateenheden kunt converteren bij het opgeven van marges, kop- en voettekstafstanden, enz. in een document met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze tutorial te volgen, kunt u eenvoudig de waarden in de gewenste maateenheden opgeven in uw eigen documenten.

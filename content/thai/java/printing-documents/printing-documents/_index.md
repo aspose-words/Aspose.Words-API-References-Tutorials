@@ -50,7 +50,7 @@ MultipagePrintDocument awPrintDoc = new MultipagePrintDocument(doc, 4, true, att
 ตอนนี้เราได้ตั้งค่างานพิมพ์แล้ว ก็ถึงเวลาพิมพ์เอกสาร ข้อมูลโค้ดต่อไปนี้เชื่อมโยงเอกสารกับงานพิมพ์และเริ่มกระบวนการพิมพ์
 
 ```java
-// ส่งเอกสารที่จะพิมพ์โดยใช้งานพิมพ์
+// ส่งเอกสารที่จะพิมพ์โดยใช้ฟังก์ชันการพิมพ์
 pj.setPrintable(awPrintDoc);
 pj.print();
 ```
@@ -65,7 +65,7 @@ PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // ส่งการตั้งค่าเครื่องพิมพ์พร้อมกับพารามิเตอร์อื่นๆ ไปยังเอกสารที่พิมพ์
 MultipagePrintDocument awPrintDoc = new MultipagePrintDocument(doc, 4, true, attributes);
-// ส่งเอกสารที่จะพิมพ์โดยใช้งานพิมพ์
+// ส่งเอกสารที่จะพิมพ์โดยใช้ฟังก์ชันการพิมพ์
 pj.setPrintable(awPrintDoc);
 pj.print();
 ```
@@ -78,7 +78,7 @@ class MultipagePrintDocument implements Printable
     private final boolean mPrintPageBorders;
     private final AttributeSet mAttributeSet;
     /// <สรุป>
-    /// ตัวสร้างของคลาส PrintDocument แบบกำหนดเอง
+    ///ตัวสร้างของคลาส PrintDocument แบบกำหนดเอง
     // / </สรุป>
     public MultipagePrintDocument(Document document, int pagesPerSheet, boolean printPageBorders,
                                   AttributeSet attributes) {

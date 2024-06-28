@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Langkah 2: Memasukkan tautan
 
- Kita dapat menyisipkan tautan menggunakan`Insertlink` metode pembuat dokumen. Kita perlu menentukan teks link, di sini "Aspose", serta URL tujuan.
+ Kita dapat menyisipkan tautan menggunakan`InsertHyperlink` metode pembuat dokumen. Kita perlu menentukan teks tautan, di sini "Apose", serta URL tujuan.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com", salah);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", salah);
 ```
 
 ### Contoh kode sumber untuk tautan dengan Aspose.Words untuk .NET
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", salah);
 DocumentBuilder builder = new DocumentBuilder();
 
 // Sisipkan tautan.
-builder.Insertlink("Aspose", "https://www.aspose.com", salah);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", salah);
 ```
 Selamat! Anda sekarang telah mempelajari cara menggunakan fitur tautan dengan Aspose.Words untuk .NET.
 

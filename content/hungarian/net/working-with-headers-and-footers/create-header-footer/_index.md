@@ -2,157 +2,68 @@
 title: Hozzon létre fejléc láblécet
 linktitle: Hozzon létre fejléc láblécet
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan hozhat létre fejlécet és láblécet Word-dokumentumaiban az Aspose.Words for .NET segítségével. Az egyes oldalak fejlécét és láblécét testreszabhatja.
+description: Ismerje meg, hogyan adhat hozzá és testreszabhat fejlécet és láblécet Word-dokumentumokhoz az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató biztosítja a professzionális dokumentumformázást.
 type: docs
 weight: 10
 url: /hu/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-Íme egy lépésről lépésre bemutatott útmutató a következő C# forráskód leírásához, amellyel fejléceket és lábléceket hozhat létre az Aspose.Words for .NET funkcióval. A kód használata előtt győződjön meg arról, hogy az Aspose.Words könyvtárat belefoglalta a projektbe.
+Fejlécek és láblécek hozzáadása a dokumentumokhoz javíthatja azok professzionalizmusát és olvashatóságát. Az Aspose.Words for .NET segítségével egyszerűen létrehozhat és testreszabhat fejlécet és láblécet Word-dokumentumaihoz. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a folyamaton, így biztosítva, hogy ezeket a funkciókat zökkenőmentesen tudja megvalósítani.
 
-## 1. lépés: Állítsa be a dokumentumkönyvtár elérési útját
+## Előfeltételek
+
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
+
+-  Aspose.Words for .NET: Töltse le és telepítse a[letöltési link](https://releases.aspose.com/words/net/).
+- Fejlesztési környezet: például a Visual Studio, a kód írásához és futtatásához.
+- C# alapismeretek: C# és .NET keretrendszer ismerete.
+- Mintadokumentum: Mintadokumentum a fejlécek és láblécek alkalmazásához, vagy új létrehozásához az oktatóanyagban látható módon.
+
+## Névterek importálása
+
+Először is importálnia kell a szükséges névtereket az Aspose.Words osztályok és metódusok eléréséhez.
 
 ```csharp
-// A dokumentumok könyvtárának elérési útja.
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System;
+```
+
+## 1. lépés: Határozza meg a dokumentumkönyvtárat
+
+Határozza meg a könyvtárat, ahová a dokumentumot menteni szeretné. Ez segít az útvonal hatékony kezelésében.
+
+```csharp
+// A dokumentumok könyvtárának elérési útja
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-Ügyeljen arra, hogy megadja a dokumentumkönyvtár megfelelő elérési útját, ahová a szerkesztett dokumentum mentésre kerül.
+## 2. lépés: Hozzon létre egy új dokumentumot
 
-## 2. lépés: Hozzon létre egy dokumentumot és egy dokumentumgenerátort
+ Hozzon létre egy új dokumentumot, és a`DocumentBuilder` a tartalom hozzáadásának megkönnyítése érdekében.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Itt létrehozunk egy példányt a`Document` osztály és egy példánya a`DocumentBuilder` osztály, amely lehetővé teszi számunkra a dokumentum kezelését és elemek hozzáadását.
+## 3. lépés: Az oldalbeállítás konfigurálása
 
-## 3. lépés: Állítsa be az oldalparamétereket és az első fejlécet
+Adja meg az oldalbeállításokat, beleértve azt is, hogy az első oldal legyen-e más fejléc/lábléc.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// Adja meg, hogy az első oldal fejlécei/láblécei eltérjenek-e a többi oldaltól.
-// A PageSetup.OddAndEvenPagesHeaderFooter tulajdonsággal is megadhatja
-// különböző fejlécek/láblécek páratlan és páros oldalakhoz.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
-
-builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-
-builder.Font.Name = "Arial";
-builder.Font.Bold = true;
-builder.Font.Size = 14;
-
-builder.Write("Aspose.Words - Creating Headers/Footers - Title Page.");
-
-pageSetup.HeaderDistance = 20;
-builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-Beállítjuk az oldal paramétereit, beleértve a fejléc távolságát, majd áttérünk a fő fejlécre (`HeaderPrimary`). Szöveg hozzáadására és a fejléc formázására a dokumentumgenerátort használjuk.
+## 4. lépés: Adjon hozzá fejlécet az első oldalhoz
 
-## 4. lépés: Szúrjon be egy képet és szöveget a fő fejlécbe
-
-```csharp
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-     RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
-
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.Write("Aspose.Words - Building headers/footers.");
-
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
-```
-
-A dokumentumgenerátorral beszúrunk egy képet a fő fejléc bal felső sarkába, majd jobbra igazított szöveget adunk hozzá.
-
-## 5. lépés: Szúrjon be egy táblázatot a fő láblécbe
+Lépjen az első oldal fejlécére, és állítsa be a fejléc szövegét.
 
 ```csharp
-builder.StartTable();
-
-builder.CellFormat.ClearFormatting();
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-
-builder.Write("Page ");
-builder.InsertField("PAGE", "");
-builder.Write(" of ");
-builder.InsertField("NUMPAGES", "");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.EndRow();
-builder.EndTable();
-
-builder.MoveToDocumentEnd();
-```
-
-## 6. lépés: Új oldal hozzáadása és fejlécek/láblécek beállítása
-
-```csharp
-builder. InsertBreak(BreakType.PageBreak);
-builder.InsertBreak(BreakType.SectionBreakNewPage);
-
-currentSection = builder. CurrentSection;
-pageSetup = currentSection.PageSetup;
-pageSetup.Orientation = Orientation.Landscape;
-// Ennek a szakasznak nincs szüksége más fejlécre/láblécre az első oldalhoz, csak egy címlapra van szükségünk a dokumentumban,
-//és ennek az oldalnak a fejléce/lábléce már meghatározásra került az előző részben.
-pageSetup.DifferentFirstPageHeaderFooter = false;
-
-// Ez a szakasz alapértelmezés szerint az előző szakasz fejléceit/lábléceit jeleníti meg. A hivatkozás megszakításához hívja a currentSection.HeadersFooters.LinkToPrevious(false),
-// az új szakasz oldalszélessége eltérő, ezért különböző cellaszélességeket kell beállítanunk egy lábléctáblázathoz.
-currentSection.HeadersFooters.LinkToPrevious(false);
-
-// Ha a már meglévő fejléceket/lábléceket szeretnénk használni ehhez a szakaszhoz,
-//de néhány apró változtatással érdemes lehet a fejléceket/lábléceket másolni
-// az előző részből, és alkalmazzuk a szükséges változtatásokat ott, ahol szeretnénk.
-CopyHeadersFootersFromPreviousSection(currentSection);
-
-HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
-Row row = primaryFooter.Tables[0].FirstRow;
-row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-// Mentse el a dokumentumot
-doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
-```
-
- Oldaltörést és szakasztörést adunk, hogy létrehozzunk egy új oldalt, ahol az elsődleges fejlécek/láblécek láthatók lesznek. Beállítjuk az új szakasz paramétereit, majd a`CopyHeadersFootersFromPreviousSection` módszer a fejlécek/láblécek előző szakaszból való másolásához. Végül beállítjuk a megfelelő cellaszélességeket a fő lábléctáblázathoz, és elmentjük a dokumentumot.
-
-### Példa forráskódra fejlécek és láblécek létrehozásához az Aspose.Words for .NET segítségével
-
-```csharp
-// A dokumentumok könyvtárának elérési útja.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-Section currentSection = builder.CurrentSection;
-PageSetup pageSetup = currentSection.PageSetup;
-// Adja meg, hogy az első oldal fejlécei/láblécei eltérjenek-e a többi oldaltól.
-// A PageSetup.OddAndEvenPagesHeaderFooter tulajdonságot is megadhatja
-// különböző fejlécek/láblécek páratlan és páros oldalakhoz.
-pageSetup.DifferentFirstPageHeaderFooter = true;
-pageSetup.HeaderDistance = 20;
-
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
@@ -161,75 +72,70 @@ builder.Font.Bold = true;
 builder.Font.Size = 14;
 
 builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+```
 
-pageSetup.HeaderDistance = 20;
+## 5. lépés: Adjon hozzá egy elsődleges fejlécet
+
+Lépjen az elsődleges fejléc részre, és szúrjon be egy képet és szöveget.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-// Helyezzen be egy elhelyezett képet a fejléc felső/bal sarkába.
-// Az oldal felső/bal szélétől mért távolság 10 pont.
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+// Szúrjon be egy képet a fejlécbe
+builder.InsertImage(dataDir + "Graphics Interchange Format.gif", 
+    RelativeHorizontalPosition.Page, 10, RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
 builder.Write("Aspose.Words Header/Footer Creation Primer.");
+```
 
+## 6. lépés: Adjon hozzá egy elsődleges láblécet
+
+Lépjen az elsődleges lábléc részre, és hozzon létre egy táblázatot a lábléc tartalmának formázásához.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// Két cellás táblázatot használunk, hogy a szöveg egy részét a sorban készítsük el (oldalszámozással).
-// Balra igazítandó, a szöveg másik része (szerzői joggal) pedig jobbra igazítandó.
 builder.StartTable();
-
 builder.CellFormat.ClearFormatting();
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-// PAGE és NUMPAGES mezőket használ az aktuális oldalszám és sok oldal automatikus kiszámításához.
+// Oldalszámozás hozzáadása
 builder.Write("Page ");
 builder.InsertField("PAGE", "");
 builder.Write(" of ");
 builder.InsertField("NUMPAGES", "");
 
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
 builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
 builder.EndRow();
 builder.EndTable();
+```
 
+## 7. lépés: Tartalom és oldaltörés hozzáadása
+
+Lépjen a dokumentum végére, adjon meg egy oldaltörést, és hozzon létre egy új szakaszt különböző oldalbeállításokkal.
+
+```csharp
 builder.MoveToDocumentEnd();
-
-// Oldaltöréssel hozzon létre egy második oldalt, amelyen az elsődleges fejléc/lábléc látható.
 builder.InsertBreak(BreakType.PageBreak);
 builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-// Ennek a szakasznak nincs szüksége más első oldali fejlécre/láblécre, csak egy címlapra van szükség a dokumentumban,
-//és ennek az oldalnak a fejléce/lábléce már meghatározásra került az előző részben.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// Ez a szakasz az előző szakasz fejléceit/lábléceit jeleníti meg
-// alapértelmezés szerint hívja a currentSection.HeadersFooters.LinkToPrevious(false) elemet az oldalszélesség törléséhez
-// eltérő az új szakaszban, ezért különböző cellaszélességeket kell beállítanunk egy lábléctáblázathoz.
 currentSection.HeadersFooters.LinkToPrevious(false);
-
-// Ha ehhez a szakaszhoz a már meglévő fejléc/lábléc készletet szeretnénk használni.
-// Kisebb módosításokkal azonban célszerű lehet a fejléceket/lábléceket másolni
-// az előző részből, és alkalmazzuk a szükséges módosításokat ott, ahol szeretnénk.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
 Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
@@ -237,24 +143,47 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
-### GYIK
+## 8. lépés: Másolja ki a fejléceket és lábléceket az előző részből
 
-#### K: Hogyan adhatok fejlécet a dokumentumomhoz az Aspose.Wordsben?
+Ha egy korábbi szakasz fejléceit és lábléceit szeretné újra felhasználni, másolja ki őket, és hajtsa végre a szükséges módosításokat.
 
- V: Ha fejlécet szeretne hozzáadni a dokumentumhoz az Aspose.Words alkalmazásban, használja a`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` módszer. Ez a módszer elsődleges címsort ad a dokumentum első szakaszához.
+```csharp
+private static void CopyHeadersFootersFromPreviousSection(Section section)
+{
+    Section previousSection = (Section)section.PreviousSibling;
+    if (previousSection == null) return;
 
-#### K: Hogyan adhatok láblécet a dokumentumomhoz az Aspose.Words alkalmazásban?
+    section.HeadersFooters.Clear();
 
- V: Ha láblécet szeretne hozzáadni a dokumentumhoz az Aspose.Words alkalmazásban, használja a`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`módszer. Ez a módszer elsődleges láblécet ad a dokumentum első szakaszához.
+    foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
+    {
+        section.HeadersFooters.Add(headerFooter.Clone(true));
+    }
+}
+```
 
-#### K: Hogyan adhatok hozzá szöveget az Aspose.Words fejlécéhez vagy láblécéhez?
+## Következtetés
 
- V: Ha szöveget szeretne hozzáadni az Aspose.Words fejlécéhez vagy láblécéhez, használja a`HeaderFooter.Paragraphs` tulajdonságot a fejléc vagy lábléc bekezdésgyűjteményének lekéréséhez, majd adjon hozzá egy, a szövegét tartalmazó bekezdést ehhez a gyűjteményhez a segítségével`ParagraphCollection.Add` módszer.
+Ha követi ezeket a lépéseket, az Aspose.Words for .NET segítségével hatékonyan hozzáadhat és testreszabhat fejlécet és láblécet Word-dokumentumaihoz. Ez javítja a dokumentum megjelenését és professzionalizmusát, így olvashatóbbá és vonzóbbá teszi.
 
-#### K: Testreszabhatom a fejléc vagy lábléc tartalmát képekkel és oldalszámokkal az Aspose.Wordsben?
+## GYIK
 
- V: Igen, személyre szabhatja a fejléc- vagy lábléc tartalmát képekkel és oldalszámokkal az Aspose.Words-ben. Használhat olyan objektumokat, mint pl`Shape` képek és objektumok hozzáadásához`Field` oldalszámok hozzáadásához a fejléchez vagy a lábléchez.
+### 1. kérdés: Mi az Aspose.Words for .NET?
 
-#### K: Módosíthatom az Aspose.Words fejlécében vagy láblécében lévő szöveg betűtípusát, méretét és színét?
+Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, szerkesztését és konvertálását .NET-alkalmazásokon belül.
 
- V: Igen, módosíthatja az Aspose.Words fejlécében vagy láblécében lévő szöveg betűtípusát, méretét és színét. Hozzáférhet a szövegformázási tulajdonságokhoz, mint pl`Font` a betűtípus megváltoztatásához,`Size` a méret beállításához, és`Color` szöveg színének beállításához.
+### 2. kérdés: Hozzáadhatok képeket a fejléchez vagy lábléchez?
+
+ Igen, egyszerűen hozzáadhat képeket a fejléchez vagy lábléchez a`DocumentBuilder.InsertImage` módszer.
+
+### 3. kérdés: Hogyan állíthatok be különböző fejlécet és láblécet az első oldalon?
+
+ Különböző fejléceket és lábléceket állíthat be az első oldalhoz a segítségével`DifferentFirstPageHeaderFooter` tulajdona a`PageSetup` osztály.
+
+### 4. kérdés: Hol találok további dokumentációt az Aspose.Wordsről?
+
+ Részletes dokumentációt találhat a[Aspose.Words API dokumentációs oldal](https://reference.aspose.com/words/net/).
+
+### 5. kérdés: Van-e támogatás az Aspose.Words számára?
+
+ Igen, az Aspose támogatást nyújt rajtuk keresztül[támogatói fórum](https://forum.aspose.com/c/words/8).

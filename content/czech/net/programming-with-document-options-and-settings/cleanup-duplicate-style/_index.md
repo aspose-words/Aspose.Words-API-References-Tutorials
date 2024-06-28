@@ -47,7 +47,7 @@ doc. Cleanup(options);
 
  Tento kód vyčistí duplicitní styly z dokumentu pomocí zadaných možností. V tomto příkladu jsme povolili`DuplicateStyle` možnost vyčistit duplicitní styly.
 
-## Krok 5: Po vyčištění počítejte styly
+## Krok 5: Po vyčištění spočítejte styly
 
 Po provedení čištění znovu spočítáme počet stylů, abychom zkontrolovali, zda se snížil. K zobrazení počtu nových stylů použijte následující kód:
 

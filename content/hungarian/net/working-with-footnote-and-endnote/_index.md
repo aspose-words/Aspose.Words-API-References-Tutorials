@@ -7,7 +7,7 @@ type: docs
 weight: 660
 url: /hu/net/working-with-footnote-and-endnote/
 ---
-Szövegfeldolgozás lábjegyzetekkel és végjegyzetekkel egy átfogó forrás, amely végigvezeti Önt a szövegfeldolgozáson, lábjegyzetekkel és végjegyzetekkel a Word-dokumentumokban a .NET Aspose.Words könyvtárának használatával. Az oktatóanyagok részletes, lépésről lépésre magyarázatot, teljes forráskódot és gyakorlati példákat kínálnak lábjegyzetek és végjegyzetek hozzáadásához, módosításához és eltávolításához. Azt is megtanulja, hogyan szabhatja testre a jegyzetek formátumát és stílusát, hogyan navigálhat a jegyzetek között, és hogyan konvertálhatja azokat különböző formátumokba, például PDF vagy HTML formátumba. Ez az erőforrás elengedhetetlen azoknak a fejlesztőknek, akik az Aspose.Words for .NET segítségével kívánják kezelni a hivatkozásokat és megjegyzéseket Word-dokumentumaikban.
+Szövegfeldolgozás lábjegyzetekkel és végjegyzetekkel egy átfogó forrás, amely végigvezeti Önt a Word-dokumentumokban található lábjegyzetekkel és végjegyzetekkel ellátott szövegfeldolgozáson a .NET-hez készült Aspose.Words könyvtár használatával. Az oktatóanyagok részletes, lépésről lépésre magyarázatot, teljes forráskódot és gyakorlati példákat kínálnak lábjegyzetek és végjegyzetek hozzáadásához, módosításához és eltávolításához. Azt is megtanulja, hogyan szabhatja testre a jegyzetek formátumát és stílusát, hogyan navigálhat a jegyzetek között, és hogyan konvertálhatja azokat különböző formátumokba, például PDF vagy HTML formátumba. Ez az erőforrás elengedhetetlen azoknak a fejlesztőknek, akik az Aspose.Words for .NET segítségével kívánják kezelni a hivatkozásokat és megjegyzéseket Word-dokumentumaikban.
 
  ## Oktatóanyagok
 | Cím | Leírás |

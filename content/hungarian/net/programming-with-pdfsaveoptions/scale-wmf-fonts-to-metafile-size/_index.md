@@ -2,13 +2,13 @@
 title: Csökkentse a PDF méretét a Wmf betűtípusok átméretezésével metafájl méretre
 linktitle: Csökkentse a PDF méretét a Wmf betűtípusok átméretezésével metafájl méretre
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre a PDF méretének csökkentéséhez wmf-betűtípusok átméretezésével metafájl méretre, ha az Aspose.Words for .NET segítségével PDF-be konvertál.
+description: Útmutató lépésről lépésre a PDF méretének csökkentéséhez wmf betűtípusok átméretezésével metafájl méretre, ha az Aspose.Words for .NET segítségével PDF formátumba konvertál.
 type: docs
 weight: 10
 url: /hu/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
 
-Ez a cikk lépésről lépésre ismerteti, hogyan csökkentheti a pdf méretét wmf betűtípusok metafájlméretre skálázásával az Aspose.Words for .NET segítségével. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megtudhatja, hogyan engedélyezheti vagy tilthatja le a WMF betűtípus-méretezést PDF-formátumba konvertáláskor.
+Ez a cikk lépésről lépésre ismerteti, hogyan csökkentheti a pdf méretét wmf betűtípusok metafájlméretre skálázásával az Aspose.Words for .NET segítségével. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megtudhatja, hogyan engedélyezheti vagy tilthatja le a WMF betűtípus-méretezést PDF-formátumba konvertálásakor.
 
 Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
 
@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## 3. lépés: Konfigurálja a metafájl-megjelenítési beállításokat
 
- A WMF-betűkészlet metafájl méretre való átméretezésének engedélyezéséhez vagy letiltásához konfigurálnunk kell a`MetafileRenderingOptions`tárgy. Ebben a példában letiltjuk a betűméretezést a`ScaleWmfFontsToMetafileSize`tulajdonát`false`.
+ A WMF-betűkészlet metafájl méretre való átméretezésének engedélyezéséhez vagy letiltásához konfigurálnunk kell a`MetafileRenderingOptions` tárgy. Ebben a példában letiltjuk a betűméretezést a`ScaleWmfFontsToMetafileSize`tulajdonát`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ PDF dokumentum az Aspose.Words for .NET használatával.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Ha az Aspose.Words nem tudja megfelelően megjeleníteni a metafájl rekordok egy részét vektorgrafikus formátumban
+	//Ha az Aspose.Words nem tudja megfelelően megjeleníteni a metafájl rekordok egy részét vektorgrafikus formátumban
 	// majd az Aspose.Words ezt a metafájlt bittérképpé teszi.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 
@@ -104,7 +104,7 @@ V: A WMF-betűkészletek metafájl-méretre való átméretezésének engedélye
  Mentse el a dokumentumot PDF formátumban a`Save` módszere a`Document` osztály, amely megadja az elérési utat és a mentési lehetőségeket.
 
 #### K: Milyen előnyökkel jár a WMF-betűtípusok metafájlméretre való átméretezése egy PDF-dokumentumban?
-V: A WMF-betűkészletek metafájl méretűre átméretezésének előnyei a PDF-dokumentumban:
+V: A WMF betűtípusok metafájl méretűre átméretezésének előnyei a PDF-dokumentumban:
 
 PDF-fájl méretének csökkentése: A WMF-betűtípusok átméretezése metafájl méretére csökkentheti a generált PDF-dokumentum méretét azáltal, hogy a betűméretet a metafájl igényeihez igazítja.
 

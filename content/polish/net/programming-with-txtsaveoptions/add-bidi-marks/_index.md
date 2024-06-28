@@ -87,7 +87,7 @@ Możesz dodać znaki BiDi do dokumentu programu Word, wykonując następujące k
  Zapisz dokument ze znakami BiDi za pomocą`Save` metoda`Document` klasa.
 
 #### P: Czy Aspose.Words obsługuje wiele języków przy dodawaniu znaków BiDi?
-Tak, Aspose.Words obsługuje wiele języków do dodawania znaków BiDi. Możesz dodawać znaki BiDi do tekstu w różnych językach, takich jak angielski, hebrajski i arabski, używając Aspose.Words dla .NET.
+Tak, Aspose.Words obsługuje wiele języków dodawania znaków BiDi. Możesz dodawać znaki BiDi do tekstu w różnych językach, takich jak angielski, hebrajski i arabski, używając Aspose.Words dla .NET.
 
 #### P: Czy są jakieś dodatkowe możliwości zapisania dokumentu ze znakami BiDi?
  Tak, możesz określić inne opcje podczas zapisywania dokumentu ze znakami BiDi za pomocą`TxtSaveOptions` klasa. Można na przykład ustawić format zapisywania dokumentu, opcje kodowania itp.

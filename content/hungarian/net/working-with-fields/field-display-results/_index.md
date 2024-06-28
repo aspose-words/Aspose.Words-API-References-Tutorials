@@ -61,7 +61,7 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // Frissítse a mezőket.
 document. UpdateFields();
 
-// A terepi eredmények megjelenítése.
+// terepi eredmények megjelenítése.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
@@ -74,7 +74,7 @@ Ezzel véget is értünk az Aspose.Words for .NET "Mezőeredmények megjelenít�
 
 #### K: Mi az Aspose.Words eredménymegjelenítő mezője?
 
-V: Az Aspose.Words eredménymegjelenítő mezője egy olyan mező, amely egy Word-dokumentumban egy művelet vagy számítás eredményét jeleníti meg. Például egy eredménymegjelenítési mező használható több érték összegének vagy egy matematikai képlet eredményének megjelenítésére.
+V: Az Aspose.Words eredménymegjelenítő mezője egy olyan mező, amely egy Word-dokumentumban egy művelet vagy számítás eredményét jeleníti meg. Például egy eredménykijelző mező használható több érték összegének vagy egy matematikai képlet eredményének megjelenítésére.
 
 #### K: Hogyan frissíthető az eredménymegjelenítési mező egy Word-dokumentumban az Aspose.Words segítségével?
 

@@ -13,7 +13,7 @@ url: /zh/net/split-document/
 | 标题 | 描述 |
 | --- | --- |
 | [按标题 Html](./by-headings-html/) | 分步指南解释 Aspose.Words for .NET 的按标题 HTML 功能的 C# 源代码 |
-| [按章节 Html](./by-sections-html/) | 通过完整的代码示例了解如何使用 Aspose.Words for .NET 将 Word 文档按部分 Html 拆分。 |
+| [按章节 Html](./by-sections-html/) | 通过完整的代码示例，了解如何使用 Aspose.Words for .NET 将 Word 文档按部分 Html 拆分。 |
 | [按部分](./by-sections/) | 通过完整的代码示例了解如何使用 Aspose.Words for .NET 将 Word 文档拆分为单独的部分。 |
 | [逐页](./page-by-page/) | 分步指南解释 .NET 的 Aspose.Words 逐页功能的 C# 源代码 |
 | [合并文档](./merge-documents/) | 分步指南解释 Aspose.Words for .NET 的合并文档功能的 C# 源代码 |

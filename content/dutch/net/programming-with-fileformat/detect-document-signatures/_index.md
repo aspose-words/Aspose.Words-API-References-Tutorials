@@ -72,7 +72,7 @@ Deze tutorial heeft u een stapsgewijze handleiding gegeven over hoe u digitale h
 
 #### Hoe specificeer ik de map met de documenten waarin naar de digitale handtekening moet worden gezocht?
 
- Om de map op te geven die de documenten bevat waarin u naar de digitale handtekening wilt zoeken, moet u de`dataDir` variabele in de code. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentenmap.
+ Om de map op te geven die de documenten bevat waarin u naar de digitale handtekening wilt zoeken, moet u de`dataDir` variabelen in de code. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentenmap.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -11,7 +11,7 @@ OOXMLSaveOptions를 사용한 단어 처리에 대한 .NET용 Aspose.Words 자�
 
  또한 튜토리얼에서는 OOXMLSaveOptions의 다양한 기능 사용을 보여주는 실용적인 코드 예제도 제공합니다. Word 문서를 만들거나 편집할 때 다음과 같은 방법을 사용하여 저장 옵션을 지정하는 방법을 배웁니다.`CompatibilityOptions`, `ImageCompression` , 그리고`ExportFontResources`. 튜토리얼은 이러한 옵션이 출력 형식에 어떤 영향을 미치는지 이해하고 프로젝트에 적합한 설정을 선택하는 데 도움이 됩니다.
 
-이전 버전의 Word와 호환되는 문서를 만들거나, 이미지를 압축하여 파일 크기를 줄이거나, 특정 글꼴을 삽입하려는 경우, OOXMLSaveOptions를 사용한 Words 처리에 대한 .NET용 Aspose.Words 자습서가 모든 과정을 안내합니다. 필요한 단계. OOXML의 저장 기능을 최대한 활용하고 전문적이고 최적화된 Word 문서를 만들 수 있습니다.
+이전 버전의 Word와 호환되는 문서를 만들거나, 이미지를 압축하여 파일 크기를 줄이거나, 특정 글꼴을 포함하려는 경우, OOXMLSaveOptions를 사용한 Words 처리에 대한 .NET용 Aspose.Words 자습서가 모든 과정을 안내합니다. 필요한 단계. OOXML의 저장 기능을 최대한 활용하고 전문적이고 최적화된 Word 문서를 만들 수 있습니다.
 
  ## 튜토리얼
 | 제목 | 설명 |

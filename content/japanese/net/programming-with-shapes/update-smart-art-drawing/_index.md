@@ -24,14 +24,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ステップ 2: ドキュメントをロードする
-Smart Art 描画を含む Word 文書をロードします。`Document`クラスコンストラクター。
+ Smart Art 描画を含む Word 文書をロードします。`Document`クラスコンストラクター。
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## ステップ 3: スマート アート図面を更新する
-を使用してドキュメント内の図形を反復処理します。`GetChildNodes`を使用したメソッド`NodeType.Shape`パラメータ。を使用して、各図形にスマート アートがあるかどうかを確認します。`HasSmartArt`プロパティを呼び出し、true の場合は、`UpdateSmartArtDrawing` Smart Art 図面を更新するメソッド。
+を使用してドキュメント内の図形を反復処理します。`GetChildNodes`を使用したメソッド`NodeType.Shape`パラメーター。を使用して、各図形にスマート アートがあるかどうかを確認します。`HasSmartArt`プロパティを呼び出し、true の場合は、`UpdateSmartArtDrawing` Smart Art 図面を更新するメソッド。
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

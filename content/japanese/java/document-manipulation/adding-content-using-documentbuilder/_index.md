@@ -233,7 +233,7 @@ builder.writeln("This is the 3rd paragraph.");
 
 ## 結論
 
-この包括的なガイドでは、さまざまな種類のコンテンツを Word ドキュメントに追加する Aspose.Words for Java の DocumentBuilder の機能について説明しました。テキスト、表、横罫、フォームフィールド、HTML、ハイパーリンク、目次、画像、段落、カーソルの動きについて説明しました。
+この包括的なガイドでは、さまざまな種類のコンテンツを Word ドキュメントに追加する Aspose.Words for Java の DocumentBuilder の機能を検討しました。テキスト、表、横罫、フォームフィールド、HTML、ハイパーリンク、目次、画像、段落、カーソルの動きについて説明しました。
 
 ## よくある質問
 

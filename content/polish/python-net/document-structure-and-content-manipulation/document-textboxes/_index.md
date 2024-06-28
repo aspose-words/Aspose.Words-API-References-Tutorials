@@ -18,7 +18,7 @@ Pola tekstowe zapewniają wszechstronny sposób prezentowania treści w dokumenc
 
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
 
-- Python zainstalowany w twoim systemie.
+- Python zainstalowany w Twoim systemie.
 - Podstawowa znajomość programowania w języku Python.
 - Aspose.Words — odniesienia do API języka Python.
 
@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- W tym kodzie tworzymy nowy`Document` i a`DocumentBuilder` . The`insert_text_box`Metoda służy do dodawania pola tekstowego do dokumentu. Możesz dostosować zawartość, położenie i rozmiar pola tekstowego zgodnie ze swoimi wymaganiami.
+ W tym kodzie tworzymy nowy`Document` i a`DocumentBuilder` . The`insert_text_box` Metoda służy do dodawania pola tekstowego do dokumentu. Możesz dostosować zawartość, położenie i rozmiar pola tekstowego zgodnie ze swoimi wymaganiami.
 
 ## Formatowanie pól tekstowych
 
@@ -98,7 +98,7 @@ tym przewodniku zbadaliśmy proces ulepszania treści wizualnych za pomocą pól
 
 ### Jak zmienić rozmiar pola tekstowego?
 
- Aby zmienić rozmiar pola tekstowego, możesz dostosować jego właściwości szerokości i wysokości za pomocą opcji`width` I`height` atrybuty.
+ Aby zmienić rozmiar pola tekstowego, możesz dostosować jego właściwości szerokości i wysokości za pomocą`width` I`height` atrybuty.
 
 ### Czy mogę obrócić pole tekstowe?
 

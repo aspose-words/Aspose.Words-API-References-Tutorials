@@ -7,7 +7,7 @@ type: docs
 weight: 13
 url: /fr/python-net/document-structure-and-content-manipulation/document-fonts/
 ---
-Dans le domaine du traitement de texte, les polices et le style du texte jouent un rôle crucial dans la transmission efficace des informations. Que vous créiez un document formel, un élément créatif ou une présentation, comprendre comment manipuler les polices et les styles de texte peut améliorer considérablement l'attrait visuel et la lisibilité de votre contenu. Dans cet article, nous plongerons dans le monde des polices, explorerons diverses options de style de texte et fournirons des exemples pratiques utilisant l'API Aspose.Words pour Python.
+Dans le domaine du traitement de texte, les polices et le style du texte jouent un rôle crucial dans la transmission efficace des informations. Que vous créiez un document formel, un élément créatif ou une présentation, comprendre comment manipuler les polices et les styles de texte peut améliorer considérablement l'attrait visuel et la lisibilité de votre contenu. Dans cet article, nous plongerons dans le monde des polices, explorerons diverses options de style de texte et fournirons des exemples pratiques en utilisant l'API Aspose.Words pour Python.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ La taille des polices détermine la proéminence visuelle du texte. Le texte du 
 
 ### Styles de police
 
-Les styles de police mettent l'accent sur le texte. Le texte en gras signifie l'importance, tandis que le texte en italique indique souvent une définition ou un terme étranger. Le soulignement peut également mettre en évidence des points clés.
+Les styles de police mettent l'accent sur le texte. Le texte en gras indique une importance, tandis que le texte en italique indique souvent une définition ou un terme étranger. Le soulignement peut également mettre en évidence des points clés.
 
 ## Couleur du texte et surlignage
 
@@ -113,7 +113,7 @@ doc.save("modified_document.docx")
 
 ### Espacement des lignes pour plus de lisibilité
 
-L’application d’un espacement de ligne approprié améliore la lisibilité. Vous pouvez y parvenir en utilisant Aspose.Words :
+L’application d’un interligne approprié améliore la lisibilité. Vous pouvez y parvenir en utilisant Aspose.Words :
 
 ```python
 # Import the required classes

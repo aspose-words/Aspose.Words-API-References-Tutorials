@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/working-with-fonts/set-font-emphasis-mark/
 ---
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET den Schriftbetonungsstil in einem Word-Dokument festlegen. Mit der Schrifthervorhebung werden bestimmte Wörter oder Phrasen im Text hervorgehoben.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET den Schrifthervorhebungsstil in einem Word-Dokument festlegen. Mit der Schrifthervorhebung werden bestimmte Wörter oder Phrasen im Text hervorgehoben.
 
 ## Voraussetzungen
 Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
@@ -16,7 +16,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel ver
 - Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
 ## Schritt 1: Definieren Sie das Dokumentenverzeichnis
- Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -59,7 +59,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Abschluss
-In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET den Schriftbetonungsstil in einem Word-Dokument festlegen. Experimentieren Sie mit verschiedenen Hervorhebungsstilen und nutzen Sie diese Funktion, um Wörter oder Phrasen in Ihren Dokumenten hervorzuheben.
+In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET den Schrifthervorhebungsstil in einem Word-Dokument festlegen. Experimentieren Sie mit verschiedenen Hervorhebungsstilen und nutzen Sie diese Funktion, um Wörter oder Phrasen in Ihren Dokumenten hervorzuheben.
 
 ### FAQs
 

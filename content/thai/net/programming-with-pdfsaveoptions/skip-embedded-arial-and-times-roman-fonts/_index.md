@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmb
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-นั่นคือทั้งหมดที่ ! คุณสร้าง PDF สำเร็จโดยไม่ต้องฝังฟอนต์ Arial และ Times Roman โดยใช้ Aspose.Words สำหรับ .NET
+นั่นคือทั้งหมด! คุณสร้าง PDF สำเร็จโดยไม่ต้องฝังฟอนต์ Arial และ Times Roman โดยใช้ Aspose.Words สำหรับ .NET
 
 ### ตัวอย่างซอร์สโค้ดเพื่อข้ามฟอนต์ Arial และ Times Roman ที่ฝังในขนาดเมตาไฟล์ด้วย Aspose.Words สำหรับ .NET
 
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 
  โหลดเอกสารที่คุณต้องการประมวลผลโดยใช้`Document` คลาสและเส้นทางเอกสารที่ระบุ
 
- สร้างอินสแตนซ์ของ`PdfSaveOptions` คลาสและตั้งค่า`FontEmbeddingMode`ทรัพย์สินเพื่อ`PdfFontEmbeddingMode.EmbedAll`. ซึ่งจะฝังแบบอักษรทั้งหมดยกเว้น Arial และ Times Roman ในไฟล์ PDF ที่สร้างขึ้น
+ สร้างอินสแตนซ์ของ`PdfSaveOptions` คลาสและตั้งค่า`FontEmbeddingMode`ทรัพย์สินเพื่อ`PdfFontEmbeddingMode.EmbedAll`- ซึ่งจะฝังแบบอักษรทั้งหมดยกเว้น Arial และ Times Roman ในไฟล์ PDF ที่สร้างขึ้น
 
  ใช้`Save` วิธีการของ`Document` วัตถุเพื่อบันทึกเอกสารในรูปแบบ PDF โดยระบุตัวเลือกการบันทึกที่กำหนดค่าไว้ก่อนหน้านี้
 

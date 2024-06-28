@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/split-document/by-sections/
 ---
 
-tomto příkladu vám ukážeme, jak rozdělit dokument aplikace Word do samostatných sekcí pomocí funkce Podle sekcí aplikace Aspose.Words for .NET. Chcete-li porozumět zdrojovému kódu a získat samostatné dokumenty pro každou sekci, postupujte podle následujících kroků.
+V tomto příkladu vám ukážeme, jak rozdělit dokument aplikace Word do samostatných sekcí pomocí funkce Podle sekcí aplikace Aspose.Words for .NET. Chcete-li porozumět zdrojovému kódu a získat samostatné dokumenty pro každou sekci, postupujte podle následujících kroků.
 
 ## Krok 1: Načtení dokumentu
 
@@ -52,7 +52,7 @@ Document doc = new Document(MyDir + "Big document.docx");
 
 for (int i = 0; i < doc.Sections.Count; i++)
 {
-	// Rozdělte dokument na menší části, v tomto případě rozdělené podle sekcí.
+	//Rozdělte dokument na menší části, v tomto případě rozdělené podle sekcí.
 	Section section = doc.Sections[i].Clone();
 
 	Document newDoc = new Document();
@@ -66,7 +66,7 @@ for (int i = 0; i < doc.Sections.Count; i++)
 }
 ```
 
-tímto kódem budete moci rozdělit dokument aplikace Word do samostatných sekcí pomocí Aspose.Words for .NET.
+S tímto kódem budete moci rozdělit dokument aplikace Word do samostatných sekcí pomocí Aspose.Words for .NET.
 
 Nyní můžete snadno pracovat s konkrétními sekcemi.
 

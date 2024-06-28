@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 
 ### 經常問的問題
 
-#### Q：什麼是在 PDF 文件中禁用 Windows 字體嵌入？為什麼它很重要？
+#### Q：什麼是在 PDF 文件中禁用 Windows 字體嵌入？
 答：在 PDF 文件中停用 Windows 字型嵌入是防止 Windows 字型包含在產生的 PDF 文件中的過程。這可以透過刪除嵌入的 Windows 字型資料來減少 PDF 檔案的大小。這對於減小 PDF 檔案的大小非常重要，使它們更容易儲存、共享和更快地傳輸。
 
 #### Q：如何使用 Aspose.Words for .NET 在 PDF 文件中停用 Windows 字型嵌入？

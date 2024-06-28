@@ -79,7 +79,7 @@ W tym artykule zbadaliśmy kod źródłowy C#, aby zrozumieć, jak korzystać z 
 
 #### P: Jaka jest funkcja Znajdź i zamień prosty tekst w Aspose.Words dla .NET?
 
-Odp.: Funkcja wyszukiwania i zamiany prostego tekstu w Aspose.Words dla .NET umożliwia proste zastępowanie tekstu w dokumencie programu Word. Umożliwia wyszukanie określonego ciągu znaków i zastąpienie go innym ciągiem znaków. Może to być przydatne, gdy chcesz wprowadzić globalne zmiany w dokumencie, takie jak zastąpienie nazw, dat lub innych informacji.
+Odp.: Funkcja Znajdź i zamień prosty tekst w Aspose.Words dla .NET umożliwia wykonanie prostej zamiany tekstu w dokumencie programu Word. Umożliwia wyszukanie określonego ciągu znaków i zastąpienie go innym ciągiem znaków. Może to być przydatne, gdy chcesz wprowadzić globalne zmiany w dokumencie, takie jak zastąpienie nazw, dat lub innych informacji.
 
 #### P: Jak utworzyć nowy dokument w Aspose.Words dla .NET?
 

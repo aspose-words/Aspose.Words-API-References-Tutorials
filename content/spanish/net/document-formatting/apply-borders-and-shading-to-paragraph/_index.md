@@ -91,7 +91,7 @@ Aquí está el código fuente completo para la función Aplicar bordes y sombrea
 
 ## Conclusión
 
-En este tutorial, aprendimos cómo aplicar bordes y sombreado a un párrafo en un documento de Word usando Aspose.Words para .NET. Configurando el párrafo`Borders` y`Shading` propiedades, pudimos establecer el estilo del borde, el color de la línea y el color de relleno del párrafo. Aspose.Words para .NET proporciona potentes capacidades de formato para personalizar la apariencia de los párrafos y mejorar la representación visual de sus documentos.
+ En este tutorial, aprendimos cómo aplicar bordes y sombreado a un párrafo en un documento de Word usando Aspose.Words para .NET. Configurando el párrafo`Borders` y`Shading` propiedades, pudimos establecer el estilo del borde, el color de la línea y el color de relleno del párrafo. Aspose.Words para .NET proporciona potentes capacidades de formato para personalizar la apariencia de los párrafos y mejorar la representación visual de sus documentos.
 
 ### Preguntas frecuentes
 
@@ -100,13 +100,13 @@ En este tutorial, aprendimos cómo aplicar bordes y sombreado a un párrafo en u
 R: Para aplicar bordes y sombreado a un párrafo en un documento de Word usando Aspose.Words para .NET, siga estos pasos:
 1.  Crea un nuevo documento y un`DocumentBuilder` objeto.
 2.  Configure los bordes de los párrafos accediendo al`Borders` propiedad de la`ParagraphFormat` y establecer el estilo del borde para cada lado.
-3.  Configura el relleno de párrafo accediendo al`Shading` propiedad de la`ParagraphFormat` y especificando la textura y los colores de relleno.
+3. Configura el relleno de párrafo accediendo al`Shading` propiedad de la`ParagraphFormat` y especificando la textura y los colores de relleno.
 4.  Agregue contenido al párrafo usando el`Write` método de la`DocumentBuilder`.
 5.  Guarde el documento usando el`Save` método.
 
 #### P: ¿Cómo configuro el estilo del borde para cada lado del párrafo?
 
- R: Para establecer el estilo del borde para cada lado del párrafo, puede acceder al`Borders` propiedad de la`ParagraphFormat` y establecer el`LineStyle` propiedad para cada`BorderType` (p.ej,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Puede especificar diferentes estilos de línea, como`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, etc.
+ R: Para establecer el estilo del borde para cada lado del párrafo, puede acceder al`Borders` propiedad de la`ParagraphFormat` y establecer el`LineStyle` propiedad para cada`BorderType` (p.ej.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Puede especificar diferentes estilos de línea, como`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, etc.
 
 #### P: ¿Cómo especifico la textura y los colores de relleno para el sombreado del párrafo?
 

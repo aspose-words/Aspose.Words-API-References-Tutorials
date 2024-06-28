@@ -2,80 +2,109 @@
 title: Zdroj Příklad zdroje písma Steam
 linktitle: Zdroj Příklad zdroje písma Steam
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Zjistěte, jak používat zdroj písma Resource Stream k načtení vlastních písem do Aspose.Words for .NET.
+description: V tomto podrobném průvodci se dozvíte, jak používat zdroj písem zdroje streamu s Aspose.Words pro .NET. Ujistěte se, že se vaše dokumenty pokaždé vykreslí správně.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/resource-steam-font-source-example/
 ---
 
-V tomto tutoriálu vás provedeme tím, jak používat zdroj písma toku zdrojů s Aspose.Words pro .NET. Tento zdroj písem vám umožňuje načíst písma z toku prostředků, což může být užitečné, když chcete do aplikace začlenit vlastní písma.
+Pokud pracujete s dokumenty v .NET a používáte Aspose.Words, může být správa zdrojů písem zásadním aspektem zajištění toho, aby vaše dokumenty vypadaly podle očekávání. Aspose.Words nabízí výkonný způsob práce s fonty, včetně použití toků zdrojů. V tomto průvodci si projdeme použití zdroje zdrojů jako zdroje písem s Aspose.Words for .NET. Pojďme se ponořit!
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující položky:
-- Pracovní znalost programovacího jazyka C#
-- Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
+
+Než začneme, ujistěte se, že máte následující:
+
+- Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
+-  Aspose.Words for .NET Library: Stáhněte a nainstalujte ji z[odkaz ke stažení](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Nastavení jako Visual Studio pro psaní a spouštění vašeho kódu.
+-  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven k testování nastavení písma.
+
+## Importovat jmenné prostory
+
+Chcete-li začít pracovat s Aspose.Words, musíte do projektu importovat potřebné jmenné prostory. To poskytuje přístup ke třídám a metodám, které budete potřebovat.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System.IO;
+using System.Reflection;
+```
 
 ## Krok 1: Definujte adresář dokumentů
- Nejprve musíte nastavit cestu k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
 
-```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Krok 2: Nahrajte dokument a nastavte zdroj písma pro streamování zdrojů
- Dále načteme dokument pomocí`Document` třídy a nastavte zdroj písem zdroje streamu pomocí`FontSettings.DefaultInstance.SetFontsSources()` třída. To umožní Aspose.Words najít písma v proudu zdrojů.
-
-```csharp
-// Načtěte dokument a nastavte zdroj písem zdroje streamu
-Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{ new SystemFontSource(), new ResourceSteamFontSource() });
-```
-
-## Krok 3: Uložte dokument
-Nakonec dokument uložíme. Písma budou načtena ze zadaného toku prostředků a vložena do dokumentu.
-
-```csharp
-// Uložte dokument
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
-```
-
-### Ukázka zdrojového kódu pro Resource Steam Příklad zdroje písem pomocí Aspose.Words pro .NET 
+Nejprve zadejte adresář, kde je dokument uložen. To je zásadní pro nalezení dokumentu, který chcete zpracovat.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Krok 2: Vložte dokument
+
+ Vložte dokument do Aspose.Words`Document` objekt. To vám umožní programově manipulovat s dokumentem.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Krok 3: Nakonfigurujte nastavení písma
+
+Nyní nakonfigurujte nastavení písma tak, aby používala systémový zdroj písem spolu s vlastním zdrojem písem zdroje datového proudu.
+
+```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-	{ new SystemFontSource(), new ResourceSteamFontSource() });
+{
+    new SystemFontSource(),
+    new ResourceSteamFontSource()
+});
+```
+
+## Krok 4: Implementujte zdroj písma pro tok zdrojů
+
+ Vytvořte třídu, která se rozšiřuje`StreamFontSource` pro zpracování písem z vloženého toku prostředků. Tato třída načte data písem ze zdrojů sestavení.
+
+```csharp
+internal class ResourceSteamFontSource : StreamFontSource
+{
+    public override Stream OpenFontDataStream()
+    {
+        return Assembly.GetExecutingAssembly().GetManifestResourceStream("resourceName");
+    }
+}
+```
+
+## Krok 5: Uložte dokument
+
+Po použití nastavení písma nakonec dokument uložte. Uložte jej ve formátu dle vašeho výběru; zde, uložíme jej jako PDF.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
+Pomocí těchto kroků jste nakonfigurovali aplikaci tak, aby jako zdroj písem používala tok prostředků a zajistili, že potřebná písma jsou vložena a dostupná pro vaše dokumenty.
+
 ## Závěr
-tomto tutoriálu jste se naučili používat zdroj písem Resource Flow s Aspose.Words for .NET. Tato funkce vám umožňuje načíst písma ze zdroje, což je užitečné, když chcete do dokumentů vložit vlastní písma. Experimentujte s různými písmy a prozkoumejte možnosti, které nabízí Aspose.Words pro správu písem.
 
-### FAQ
+Nyní jste zvládli proces používání toku prostředků jako zdroje písem pomocí Aspose.Words for .NET. Tato technika vám pomůže spravovat písma efektivněji a zajistí, že vaše dokumenty budou vždy vypadat co nejlépe. Pokračujte v experimentování s různými nastaveními, abyste plně využili sílu Aspose.Words.
 
-#### Otázka: Jak mohu načíst písmo z proudu prostředků do Aspose.Words?
+## Nejčastější dotazy
 
- A: Chcete-li načíst písmo ze streamu prostředků v Aspose.Words, můžete použít`FontSettings` třída a`SetFontsSources` metoda k určení zdroje písem pomocí toku prostředků. To umožňuje, aby bylo písmo načteno přímo z datového proudu prostředků, nikoli z fyzického souboru.
+### Q1: Mohu použít více proudů prostředků pro různá písma?
 
-#### Otázka: Jaké jsou výhody použití toků prostředků k určení zdrojů písem v Aspose.Words?
+ Ano, můžete implementovat více`StreamFontSource` třídy pro různé toky zdrojů a přidejte je do zdrojů písem.
 
-Odpověď: Použití proudů zdrojů k určení zdrojů písem má několik výhod:
-- Umožňuje načíst písma ze zdrojů zabudovaných ve vaší aplikaci, což usnadňuje nasazení a distribuci dokumentů.
-- Poskytuje zvýšenou flexibilitu při správě písem, protože můžete načítat písma z různých toků zdrojů v závislosti na vašich potřebách.
+### Q2: Kde mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
 
-#### Otázka: Jak mohu přidat písma do proudu prostředků v mé aplikaci .NET?
+ Můžete si stáhnout bezplatnou zkušební verzi z[Aspose zkušební stránku zdarma](https://releases.aspose.com/).
 
- Odpověď: Chcete-li přidat písma do proudu prostředků ve vaší aplikaci .NET, musíte soubory písem vložit do prostředků projektu. K těmto souborům písem pak můžete přistupovat pomocí metod specifických pro vaši vývojovou platformu (např.`GetManifestResourceStream` za použití`System.Reflection` jmenný prostor).
+###  Q3: Mohu zpracovat jiné typy varování pomocí`IWarningCallback`?
 
-#### Otázka: Je možné načíst více písem z různých zdrojů do jednoho dokumentu Aspose.Words?
+ Ano,`IWarningCallback` rozhraní zvládne různé typy varování, nejen náhradu písem.
 
- Odpověď: Ano, je zcela možné načíst více písem z různých zdrojů zdrojů do jednoho dokumentu Aspose.Words. Můžete zadat více zdrojů písem pomocí`SetFontsSources` metoda`FontSettings` třída, která poskytuje příslušné proudy prostředků pro každé písmo.
+### Q4: Kde najdu podporu pro Aspose.Words?
 
-#### Otázka: Jaké typy toků prostředků mohu použít k načtení písem do Aspose.Words?
+ Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pro pomoc.
 
-Odpověď: K načtení písem do Aspose.Words můžete použít různé typy toků prostředků, jako jsou toky zdrojů zabudované do vaší aplikace .NET, toky zdrojů z externího souboru, toky zdrojů z databáze atd. Ujistěte se, že jste poskytli odpovídající toky zdrojů na základě vašeho nastavení a potřeb.
+### Q5: Je možné získat dočasnou licenci pro Aspose.Words?
+
+ Ano, můžete získat dočasnou licenci od[dočasná licenční stránka](https://purchase.aspose.com/temporary-license/).

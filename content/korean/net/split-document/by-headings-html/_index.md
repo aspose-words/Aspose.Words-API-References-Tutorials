@@ -70,11 +70,11 @@ Aspose.Words for .NET에서 제공하는 추가 기능과 옵션을 자유롭게
 
 #### Word 문서를 어떤 형식으로 분할할 수 있나요?
 
-제공된 소스 코드는 Word 문서를 HTML 형식의 더 작은 부분으로 분할하는 방법을 보여줍니다. 그러나 .NET용 Aspose.Words는 DOCX, PDF, EPUB 등을 포함한 다양한 출력 형식을 지원합니다. 코드를 수정하고 원하는 출력 형식을 지정할 수 있습니다.`HtmlSaveOptions` 이에 따라 이의를 제기합니다.
+ 제공된 소스 코드는 Word 문서를 HTML 형식의 더 작은 부분으로 분할하는 방법을 보여줍니다. 그러나 .NET용 Aspose.Words는 DOCX, PDF, EPUB 등을 포함한 다양한 출력 형식을 지원합니다. 코드를 수정하고 원하는 출력 형식을 지정할 수 있습니다.`HtmlSaveOptions` 이에 따라 이의를 제기합니다.
 
 #### 문서 분할 기준을 다르게 선택할 수 있나요?
 
- 예, 요구 사항에 따라 문서 분할에 대한 다른 기준을 선택할 수 있습니다. .NET용 Aspose.Words는 다음과 같은 몇 가지 기준 옵션을 제공합니다.`HeadingParagraph`, `Page`, `Section` , 그리고 더. 수정하다`DocumentSplitCriteria` 에 있는 재산`HtmlSaveOptions` 개체를 사용하여 적절한 분할 기준을 선택합니다.
+예, 요구 사항에 따라 문서 분할에 대한 다른 기준을 선택할 수 있습니다. .NET용 Aspose.Words는 다음과 같은 몇 가지 기준 옵션을 제공합니다.`HeadingParagraph`, `Page`, `Section` , 그리고 더. 수정하다`DocumentSplitCriteria` 에 있는 재산`HtmlSaveOptions` 개체를 사용하여 적절한 분할 기준을 선택합니다.
 
 #### 분할된 부분에 대한 출력 HTML을 어떻게 사용자 정의할 수 있나요?
 

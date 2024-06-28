@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Langkah 5: Hapus batas tabel yang ada
+## Langkah 5: Hapus batas tabel yang ada.
 Untuk memulai dengan batas garis baru, pertama-tama kita perlu menghapus semua batas yang ada dari tabel. Ini dapat dilakukan dengan menggunakan`ClearBorders()` metode.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Langkah 7: Isi sel dengan warna latar belakang
-Untuk meningkatkan presentasi visual tabel, kita bisa mengisi sel dengan warna latar belakang dasar
+## Langkah 7: Isi sel dengan warna latar belakang.
+Untuk meningkatkan presentasi visual tabel, kita bisa mengisi sel dengan warna latar belakang dasar.
 
 ide. Dalam contoh ini, kita menggunakan warna hijau muda.
 

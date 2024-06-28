@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-section/clone-section/
 ---
 
-den här handledningen kommer vi att berätta för dig hur du klona en del av ett Word-dokument med Aspose.Words-biblioteket för .NET. Att klona ett avsnitt skapar en identisk kopia av det befintliga avsnittet. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
+I den här handledningen kommer vi att berätta för dig hur du klona en del av ett Word-dokument med Aspose.Words-biblioteket för .NET. Att klona ett avsnitt skapar en identisk kopia av det befintliga avsnittet. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
 ## Förutsättningar
 Innan du börjar, se till att du har följande saker:
@@ -49,7 +49,7 @@ Section cloneSection = doc.Sections[0].Clone();
 ```
 
 ## Slutsats
-I den här handledningen såg vi hur man klona en del av ett Word-dokument med Aspose.Words för .NET. Sektionskloning låter dig skapa identiska kopior av befintliga avsnitt i ett dokument. Känn dig fri att anpassa och använda denna klonfunktion i dina projekt för att effektivt manipulera och redigera delar av dina dokument.
+den här handledningen såg vi hur man klona en del av ett Word-dokument med Aspose.Words för .NET. Sektionskloning låter dig skapa identiska kopior av befintliga avsnitt i ett dokument. Känn dig fri att anpassa och använda denna klonfunktion i dina projekt för att effektivt manipulera och redigera delar av dina dokument.
 
 ### FAQ's
 

@@ -1,6 +1,6 @@
 ---
-title: Testo corsivo
-linktitle: Testo corsivo
+title: Testo italiano
+linktitle: Testo italiano
 second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come scrivere il testo in corsivo con Aspose.Words per .NET Guida passo passo.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Utilizza un generatore di documenti per aggiungere contenuto al documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Rendi il testo in corsivo.
+// Rendi il testo in italiano.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
@@ -46,7 +46,7 @@ Congratulazioni! Ora hai imparato come utilizzare la funzionalità di testo cors
 
 #### D: Come posso scrivere in corsivo il testo in Aspose.Words?
 
-R: Per scrivere in corsivo il testo in Aspose.Words, puoi usare il file`Font.Italic` proprietà del`Run` oggetto. È possibile impostare questa proprietà su`true` per mettere in corsivo un testo specifico. Ad esempio, puoi usare`run.Font.Italic=true` mettere in corsivo il testo contenuto nel`Run` oggetto.
+R: Per scrivere in corsivo il testo in Aspose.Words, puoi usare il file`Font.Italic` proprietà del`Run`oggetto. È possibile impostare questa proprietà su`true` per mettere in corsivo un testo specifico. Ad esempio, puoi usare`run.Font.Italic=true` mettere in corsivo il testo contenuto nel`Run` oggetto.
 
 #### D: È possibile scrivere in corsivo più parti di testo nello stesso paragrafo?
 

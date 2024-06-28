@@ -97,7 +97,7 @@ Kod źródłowy klasy HandleMergeField
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // Zdecydowaliśmy, że chcemy, aby wszystkie wartości logiczne były wyświetlane jako pola formularza wyboru.
+            // Zdecydowaliśmy, że chcemy, aby wszystkie wartości logiczne były wyprowadzane jako pola formularza wyboru.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
                 // Przesuń „kursor” do bieżącego pola scalania.

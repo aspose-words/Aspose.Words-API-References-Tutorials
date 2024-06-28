@@ -118,11 +118,11 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### P: É possível personalizar o prefixo e o sufixo da numeração da lista reiniciada no Aspose.Words?
 
- R: Sim, você pode personalizar o prefixo e o sufixo da numeração da lista reiniciada em Aspose.Words. O`ListLevel` classe oferece propriedades como`ListLevel.NumberPrefix` e`ListLevel.NumberSuffix` que permitem especificar o prefixo e o sufixo para cada nível da lista. É possível usar essas propriedades para customizar o prefixo e o sufixo conforme necessário.
+ R: Sim, você pode personalizar o prefixo e o sufixo da numeração da lista reiniciada em Aspose.Words. O`ListLevel` classe oferece propriedades como`ListLevel.NumberPrefix` e`ListLevel.NumberSuffix`que permitem especificar o prefixo e o sufixo para cada nível da lista. É possível usar essas propriedades para customizar o prefixo e o sufixo conforme necessário.
 
 #### P: Como posso especificar um valor de numeração específico a partir do qual a lista deve ser reiniciada?
 
-R: Para especificar um valor numérico específico a partir do qual a lista deve ser reiniciada, você pode usar o`ListRestartAtNumber` método passando o valor desejado como argumento. Por exemplo, para reiniciar a numeração a partir de 5, você pode usar`list.ListRestartAtNumber(5)`.
+ R: Para especificar um valor numérico específico a partir do qual a lista deve ser reiniciada, você pode usar o`ListRestartAtNumber` método passando o valor desejado como argumento. Por exemplo, para reiniciar a numeração a partir de 5, você pode usar`list.ListRestartAtNumber(5)`.
 
 #### P: É possível reiniciar a numeração de lista multinível em Aspose.Words?
 

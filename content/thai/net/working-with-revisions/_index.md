@@ -19,7 +19,7 @@ url: /th/net/working-with-revisions/
 | [ยอมรับการแก้ไข](./accept-revisions/) | เรียนรู้วิธียอมรับการแก้ไขเอกสาร Word โดยใช้ Aspose.Words for .NET |
 | [รับประเภทคำแก้ไข](./get-revision-types/) | รับประเภทคำแก้ไขในเอกสาร Word ด้วย Aspose.Words สำหรับ .NET |
 | [รับกลุ่มการแก้ไข](./get-revision-groups/) | รับรายละเอียดกลุ่มการแก้ไขในเอกสาร Word ด้วย Aspose.Words for .NET |
-| [ลบความคิดเห็นในไฟล์ Pdf](./remove-comments-in-pdf/) | ลบความคิดเห็นในไฟล์ PDF ด้วย Aspose.Words for .NET |
+| [ลบความคิดเห็นในไฟล์ PDF](./remove-comments-in-pdf/) | ลบความคิดเห็นในไฟล์ PDF ด้วย Aspose.Words for .NET |
 | [แสดงการแก้ไขในบอลลูน](./show-revisions-in-balloons/) | แสดงการแก้ไขในบอลลูนด้วย Aspose.Words สำหรับ .NET |
 | [รับรายละเอียดกลุ่มการแก้ไข](./get-revision-group-details/) | รับรายละเอียดกลุ่มการแก้ไขในเอกสาร Word ด้วย Aspose.Words for .NET |
 | [เข้าถึงเวอร์ชันที่แก้ไขแล้ว](./access-revised-version/) | เข้าถึงเอกสาร Word เวอร์ชันแก้ไขด้วย Aspose.Words สำหรับ .NET |

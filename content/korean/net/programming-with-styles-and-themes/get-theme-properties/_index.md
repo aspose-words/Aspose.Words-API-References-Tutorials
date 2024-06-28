@@ -20,7 +20,7 @@ url: /ko/net/programming-with-styles-and-themes/get-theme-properties/
 Document doc = new Document();
 ```
 
- 이 단계에서는 새로운`Document` 물체.
+이 단계에서는 새로운`Document` 물체.
 
 ## 3단계: 테마 속성 가져오기
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- 이 단계에서는`Theme` 의 재산`Document`얻으려는 목적`Theme` 물체. 그런 다음 기본 글꼴(`MajorFonts`), 보조 글꼴(`MinorFonts`) 및 강조 색상(`Colors`).
+ 이 단계에서는`Theme` 의 재산`Document` 얻으려는 목적`Theme` 물체. 그런 다음 기본 글꼴(`MajorFonts`), 보조 글꼴(`MinorFonts`) 및 강조 색상(`Colors`).
 
 ## 4단계: 테마 속성 표시
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## 결론
 
- 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 문서의 테마 속성을 가져오는 기능을 살펴보았습니다. 사용하여`Theme` 개체 및 관련 속성을 통해 기본 및 보조 글꼴은 물론 문서 테마에 사용된 강조 색상에 대한 정보에 액세스할 수 있었습니다.
+ 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 문서의 테마 속성을 가져오는 기능을 살펴보았습니다. 사용하여`Theme`개체 및 관련 속성을 통해 기본 및 보조 글꼴은 물론 문서 테마에 사용된 강조 색상에 대한 정보에 액세스할 수 있었습니다.
 
 테마 속성을 가져오는 기능을 사용하면 문서의 스타일과 레이아웃을 분석하고 사용자 정의할 수 있습니다. 이 정보를 사용하여 대상 변경 사항을 적용하거나, 보고서를 생성하거나, 문서의 글꼴 및 색상 사용에 대한 분석을 수행할 수 있습니다.
 
@@ -68,11 +68,11 @@ Aspose.Words for .NET은 문서 테마를 조작하기 위한 강력한 API를 �
 
 #### .NET용 Aspose.Words를 사용하여 문서의 테마 속성에 어떻게 액세스할 수 있나요?
 
- 문서의 테마 속성에 액세스하려면`Theme` 의 재산`Document` 물체. 그것은`Theme` 기본 및 보조 글꼴에 대한 정보와 문서 테마에 사용된 강조 색상이 포함된 개체입니다.
+ 문서의 테마 속성에 액세스하려면`Theme` 의 재산`Document` 물체. 그것은`Theme`기본 및 보조 글꼴에 대한 정보와 문서 테마에 사용된 강조 색상이 포함된 개체입니다.
 
 #### 문서 테마의 기본 및 보조 글꼴을 어떻게 검색할 수 있나요?
 
-다음을 사용하여 문서 테마의 기본 및 보조 글꼴에 액세스할 수 있습니다.`MajorFonts` 그리고`MinorFonts` 의 속성`Theme` 각각 개체. 이러한 속성은 다양한 언어나 지역의 문서 테마에 사용되는 글꼴 이름에 대한 액세스를 제공합니다.
+ 다음을 사용하여 문서 테마의 기본 및 보조 글꼴에 액세스할 수 있습니다.`MajorFonts` 그리고`MinorFonts` 의 속성`Theme` 각각 개체. 이러한 속성은 다양한 언어 또는 지역의 문서 테마에 사용되는 글꼴 이름에 대한 액세스를 제공합니다.
 
 #### 문서 테마에 사용된 강조 색상을 얻을 수 있나요?
 

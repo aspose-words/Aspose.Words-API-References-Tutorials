@@ -8,7 +8,7 @@ weight: 10
 url: /ru/net/join-and-append-documents/insert-document-with-builder/
 ---
 
- В этом руководстве объясняется, как использовать Aspose.Words для .NET для вставки документа в другой документ с помощью`DocumentBuilder` сорт. Предоставленный исходный код демонстрирует, как вставить документ в конец другого документа, сохраняя исходное форматирование.
+ В этом руководстве объясняется, как использовать Aspose.Words для .NET для вставки документа в другой документ с помощью`DocumentBuilder` класс. Предоставленный исходный код демонстрирует, как вставить документ в конец другого документа, сохраняя исходное форматирование.
 
 ## Шаг 1. Настройте проект
 
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Шаг 4. Разместите DocumentBuilder
 
- Переместите`DocumentBuilder` до конца документа с помощью`MoveToDocumentEnd` метод. Вставьте разрыв страницы, чтобы отделить существующее содержимое от вставленного документа.
+Переместите`DocumentBuilder` до конца документа с помощью`MoveToDocumentEnd` метод. Вставьте разрыв страницы, чтобы отделить существующее содержимое от вставленного документа.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Шаг 6. Сохраните измененный документ.
 
- Наконец, сохраните измененный целевой документ, используя команду`Save` метод`Document` объект.
+Наконец, сохраните измененный целевой документ, используя команду`Save` метод`Document` Объект Object.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

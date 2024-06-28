@@ -35,7 +35,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx");
 ```
 
-此程式碼告訴 Aspose.Words 針對 MS Word 2016 最佳化文件。您可以替換`MsWordVersion.Word2016`使用您想要最佳化的 MS Word 的特定版本。
+此程式碼告訴 Aspose.Words 針對 MS Word 2016 最佳化文件。`MsWordVersion.Word2016`使用您想要最佳化的 MS Word 的特定版本。
 
 ### 使用 Aspose.Words for .NET 優化 Ms Word 的範例原始程式碼
 

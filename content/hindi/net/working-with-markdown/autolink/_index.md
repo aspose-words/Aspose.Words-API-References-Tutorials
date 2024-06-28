@@ -58,7 +58,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### प्रश्न: मैं Aspose.Words में किसी URL पते के लिए स्वचालित लिंक कैसे बना सकता हूं?
 
-उ: Aspose.Words में किसी URL पते के लिए एक स्वचालित लिंक बनाने के लिए, आप इसका उपयोग कर सकते हैं`<a>` के साथ टैग करें`href` यूआरएल पता युक्त विशेषता. उदाहरण के लिए, आप उपयोग कर सकते हैं`<a href="https://www.aspose.com">https://www.aspose.com</a>` स्वचालित रूप से "https://www.aspose.com" से लिंक करने के लिए।
+ उ: Aspose.Words में किसी URL पते के लिए एक स्वचालित लिंक बनाने के लिए, आप इसका उपयोग कर सकते हैं`<a>` के साथ टैग करें`href` यूआरएल पता युक्त विशेषता. उदाहरण के लिए, आप उपयोग कर सकते हैं`<a href="https://www.aspose.com">https://www.aspose.com</a>` स्वचालित रूप से "https://www.aspose.com" से लिंक करने के लिए।
 
 #### प्रश्न: क्या Aspose.Words में स्वचालित लिंक के डिस्प्ले टेक्स्ट को कस्टमाइज़ करना संभव है?
 
@@ -66,4 +66,4 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### प्रश्न: मैं Aspose.Words में किसी ऑटोलिंक में अतिरिक्त विशेषताएँ कैसे जोड़ सकता हूँ?
 
- उत्तर: Aspose.Words में एक स्वचालित लिंक में अतिरिक्त विशेषताएँ जोड़ने के लिए, आप अंदर अतिरिक्त HTML विशेषताओं का उपयोग कर सकते हैं`<a>` टैग। उदाहरण के लिए, आप उपयोग कर सकते हैं`<a href="https://www.aspose.com" target="_blank">Link</a>` का उपयोग करके लिंक को एक नई विंडो या टैब में खोलने के लिए` attribute target="_blank"`.
+उत्तर: Aspose.Words में एक स्वचालित लिंक में अतिरिक्त विशेषताएँ जोड़ने के लिए, आप अंदर अतिरिक्त HTML विशेषताओं का उपयोग कर सकते हैं`<a>` टैग। उदाहरण के लिए, आप उपयोग कर सकते हैं`<a href="https://www.aspose.com" target="_blank">Link</a>` का उपयोग करके लिंक को एक नई विंडो या टैब में खोलने के लिए` attribute target="_blank"`.

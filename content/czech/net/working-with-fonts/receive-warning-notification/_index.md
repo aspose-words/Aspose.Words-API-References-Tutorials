@@ -2,88 +2,116 @@
 title: Obdržet upozornění na varování
 linktitle: Obdržet upozornění na varování
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Zjistěte, jak přijímat upozornění na upozornění při používání Aspose.Words pro .NET a spravovat jakékoli problémy nebo upozornění ve svých dokumentech.
+description: Naučte se, jak přijímat oznámení o záměně písem v Aspose.Words pro .NET s naším podrobným průvodcem. Ujistěte se, že se vaše dokumenty pokaždé vykreslí správně.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/receive-warning-notification/
 ---
 
-V tomto tutoriálu vám ukážeme, jak získat upozornění při používání Aspose.Words pro .NET. Při nastavování nebo ukládání dokumentu lze vydávat varování. Provedeme vás krok za krokem k pochopení a implementaci kódu do vašeho .NET projektu.
+Už vás nebaví řešit neočekávané problémy s písmy ve vašich dokumentech? S Aspose.Words for .NET můžete být upozorněni na jakékoli potenciální problémy během zpracování dokumentu, což usnadňuje udržování kvality dokumentu. Tento komplexní průvodce vás provede nastavením varovných upozornění v Aspose.Words a zajistí, že už nikdy nezmeškáte zásadní varování.
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující položky:
-- Pracovní znalost programovacího jazyka C#
-- Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
+
+Než se ponoříme, ujistěte se, že máte následující:
+
+- Základní znalost C#: Znalost C# vám pomůže pochopit a implementovat kroky.
+-  Aspose.Words for .NET Library: Stáhněte a nainstalujte ji z[odkaz ke stažení](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Nastavení jako Visual Studio pro psaní a spouštění kódu.
+-  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) pracovat s.
+
+## Importovat jmenné prostory
+
+Chcete-li začít, musíte importovat potřebné jmenné prostory. Ty nám poskytnou přístup ke třídám a metodám potřebným pro náš úkol.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.WarningInfo;
+```
 
 ## Krok 1: Definujte adresář dokumentů
- Začněte nastavením cesty k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+
+Nejprve zadejte adresář, kde je dokument uložen. To je nezbytné pro nalezení dokumentu, který chcete zpracovat.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Krok 2: Nahrajte dokument a nakonfigurujte obsluhu varování
- Vložte dokument pomocí`Document` třída. Dále vytvořte instanci souboru`HandleDocumentWarnings` třídy zvládnout varování.
-
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc. WarningCallback = callback;
-```
-
-## Krok 3: Aktualizujte rozvržení a uložte dokument
- Aktualizujte rozvržení dokumentu voláním`UpdatePageLayout()` metoda. Tím se spustí varování, pokud existují. Poté dokument uložte.
-
-```csharp
-doc.UpdatePageLayout();
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-```
-
-### Ukázkový zdrojový kód pro příjem upozornění pomocí Aspose.Words for .NET 
-
-```csharp
-
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Rendering.docx");
-// Když zavoláte UpdatePageLayout, dokument se vykreslí v paměti. Všechna varování, která se vyskytla během vykreslování
-//jsou uloženy do uložení dokumentu a poté odeslány na příslušné WarningCallback.
-doc.UpdatePageLayout();
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc.WarningCallback = callback;
-// I když byl dokument vykreslen dříve, všechna varování týkající se uložení jsou uživateli během ukládání dokumentu oznámena.
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-
 ```
 
+## Krok 2: Vložte dokument
+
+ Vložte dokument do Aspose.Words`Document` objekt. To vám umožní programově manipulovat s dokumentem.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Krok 3: Aktualizujte rozvržení stránky
+
+ Zavolej`UpdatePageLayout` metoda. Tím se vykreslí dokument v paměti a zachytí se všechna varování, která se vyskytnou během vykreslování.
+
+```csharp
+doc.UpdatePageLayout();
+```
+
+## Krok 4: Nastavte zpětné volání upozornění
+
+ Chcete-li zachytit a zpracovat varování, vytvořte třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zaznamená všechna varování, která se vyskytnou během zpracování dokumentu.
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        // Máme zájem pouze o nahrazování písem.
+        if (info.WarningType == WarningType.FontSubstitution)
+        {
+            Console.WriteLine("Font substitution: " + info.Description);
+        }
+    }
+}
+```
+
+## Krok 5: Přiřaďte zpětné volání dokumentu
+
+Přiřaďte dokumentu zpětné volání upozornění. Tím je zajištěno, že budou zachyceny a zaznamenány všechny problémy s písmy.
+
+```csharp
+HandleDocumentWarnings callback = new HandleDocumentWarnings();
+doc.WarningCallback = callback;
+```
+
+## Krok 6: Uložte dokument
+
+Nakonec dokument uložte. I v případě, že byl dokument vykreslen dříve, bude uživatel během tohoto kroku upozorněn na všechna varování o uložení.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
+```
+
+Pomocí těchto kroků jste nakonfigurovali aplikaci tak, aby zpracovávala záměny písem elegantně a dostávala upozornění, kdykoli dojde k záměně.
+
 ## Závěr
-V tomto tutoriálu jste se naučili, jak přijímat upozornění při používání Aspose.Words pro .NET. Při nastavování nebo ukládání dokumentu lze vydávat varování. Pomocí této funkce budete upozorněni na jakékoli problémy nebo varování související s vašimi dokumenty.
 
-### FAQ
+Nyní jste zvládli proces přijímání upozornění na nahrazení písem pomocí Aspose.Words for .NET. Tato dovednost vám pomůže zajistit, aby vaše dokumenty vždy vypadaly co nejlépe, i když nejsou k dispozici potřebná písma. Pokračujte v experimentování s různými nastaveními, abyste plně využili sílu Aspose.Words.
 
-#### Otázka: Jak mohu v Aspose.Words přijímat upozornění?
+## Nejčastější dotazy
 
- A: Chcete-li dostávat varovná upozornění v Aspose.Words, můžete použít`FontSettings` třída a`WarningCallback` událost. Můžete definovat metodu zpětného volání, která bude upozorněna, když se při zpracování dokumentů objeví varování související s písmem.
+### Q1: Mohu zadat více výchozích písem?
 
-#### Otázka: Jaké jsou běžné typy varování souvisejících s písmy v Aspose.Words?
+Ne, můžete zadat pouze jedno výchozí písmo pro nahrazení. Můžete však nakonfigurovat více zdrojů záložních písem.
 
-Odpověď: Některé běžné typy varování souvisejících s písmy v Aspose.Words jsou:
-- Chybějící fonty
-- Nahrazená písma
-- Problémy s formátováním písma
+### Q2: Kde mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
 
-#### Otázka: Jak mohu vyřešit problémy s písmy v dokumentech aplikace Word?
+ Můžete si stáhnout bezplatnou zkušební verzi z[Aspose zkušební stránku zdarma](https://releases.aspose.com/).
 
-A: Chcete-li opravit problémy související s písmy v dokumentech aplikace Word, můžete provést následující kroky:
-- Nainstalujte chybějící písma do systému, kde používáte aplikaci Aspose.Words.
-- Použijte vhodná náhradní písma, která jsou vizuálně podobná původním písmům.
-- Zkontrolujte a upravte formátování písma, abyste zajistili konzistentní vzhled.
+###  Q3: Mohu zpracovat jiné typy varování pomocí`IWarningCallback`?
 
-#### Otázka: Proč je důležité dostávat upozornění týkající se písma v Aspose.Words?
+ Ano,`IWarningCallback` rozhraní zvládne různé typy varování, nejen náhradu písem.
 
-Odpověď: Je důležité dostávat upozornění týkající se písem v Aspose.Words, protože vám pomohou identifikovat potenciální problémy ve vašich dokumentech. To vám umožní podniknout nezbytné kroky k vyřešení těchto problémů a zajištění kvality vašich dokumentů.
+### Q4: Kde najdu podporu pro Aspose.Words?
 
-#### Otázka: Jak mohu povolit nebo zakázat upozornění na upozornění v Aspose.Words?
+ Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pro pomoc.
 
- A: Chcete-li povolit nebo zakázat upozornění na upozornění v Aspose.Words, můžete použít`FontSettings.ShowFontWarnings` vlastnost a nastavte ji na`true` nebo`false` závislosti na vašich potřebách. Když je povoleno, budete dostávat upozornění týkající se písma.
+### Q5: Je možné získat dočasnou licenci pro Aspose.Words?
+
+ Ano, můžete získat dočasnou licenci od[dočasná licenční stránka](https://purchase.aspose.com/temporary-license/).

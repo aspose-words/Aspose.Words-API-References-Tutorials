@@ -20,7 +20,7 @@ Než se ponoříme do implementace, je důležité porozumět struktuře dokumen
 
 ## Výběr správné knihovny Python
 
-Abychom dosáhli našeho cíle generování dokumentů Word pomocí Pythonu, potřebujeme spolehlivou knihovnu bohatou na funkce. Jednou z oblíbených možností pro tento úkol je knihovna "Aspose.Words for Python". Poskytuje robustní sadu rozhraní API, která umožňují snadnou a efektivní manipulaci s dokumenty. Pojďme prozkoumat, jak nastavit a využít tuto knihovnu pro náš projekt.
+Abychom dosáhli našeho cíle generování dokumentů Word pomocí Pythonu, potřebujeme spolehlivou knihovnu bohatou na funkce. Jednou z oblíbených možností pro tento úkol je knihovna "Apose.Words for Python". Poskytuje robustní sadu rozhraní API, která umožňují snadnou a efektivní manipulaci s dokumenty. Pojďme prozkoumat, jak nastavit a využít tuto knihovnu pro náš projekt.
 
 ## Instalace Aspose.Words pro Python
 

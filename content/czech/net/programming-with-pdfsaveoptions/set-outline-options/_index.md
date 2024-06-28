@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Nakonfigurujte možnosti uložení jako PDF s možnostmi plánu
 
- Chcete-li nastavit možnosti obrysu ve vygenerovaném PDF, musíme nakonfigurovat`PdfSaveOptions` objekt. Můžeme nastavit počet úrovní osnovy nadpisů (`HeadingsOutlineLevels`) a počet úrovní rozšířené osnovy (`ExpandedOutlineLevels`).
+Chcete-li nastavit možnosti obrysu ve vygenerovaném PDF, musíme nakonfigurovat`PdfSaveOptions` objekt. Můžeme nastavit počet úrovní osnovy nadpisů (`HeadingsOutlineLevels`) a počet úrovní rozšířené osnovy (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

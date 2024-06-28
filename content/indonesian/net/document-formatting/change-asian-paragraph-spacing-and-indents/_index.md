@@ -51,9 +51,9 @@ Berikut source code lengkap fitur Edit Spasi dan Indentasi Paragraf Asia dengan 
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent akan diperbarui
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent akan diperbarui
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent akan diperbarui
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent akan diperbarui.
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent akan diperbarui.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent akan diperbarui.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore akan diperbarui
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter akan diperbarui
 

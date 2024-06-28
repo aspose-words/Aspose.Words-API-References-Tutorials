@@ -1,6 +1,6 @@
 ---
-title: Düzeltmeleri Kabul Et
-linktitle: Düzeltmeleri Kabul Et
+title: İncelemeleri Kabul Et
+linktitle: İncelemeleri Kabul Et
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonları nasıl kabul edeceğinizi öğrenin
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Değişiklikleri kabul ettiğimizde revizyon paragrafını sil kaldırılır.
+// Değişiklikleri kabul ettiğimizde silinen revizyon paragrafı kaldırılır.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

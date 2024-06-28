@@ -43,7 +43,7 @@ para.Runs.Add(run);
 ```
 
 ## ขั้นตอนที่ 4: เพิ่มเนื้อหา Rich Text ลงในการควบคุมเนื้อหา
-เพิ่มย่อหน้าที่มีเนื้อหา Rich Text ลงใน`ChildNodes` คอลเลกชันของการควบคุมเนื้อหากล่องข้อความแบบ Rich
+เพิ่มย่อหน้าที่มีเนื้อหา Rich Text ลงใน`ChildNodes` คอลเลกชันของตัวควบคุมเนื้อหากล่องข้อความแบบ Rich
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);

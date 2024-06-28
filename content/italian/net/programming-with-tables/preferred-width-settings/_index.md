@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Qui utilizziamo il generatore di documenti per creare una tabella con tre celle. La prima cella ha una larghezza preferita di 40 punti, la seconda cella ha una larghezza preferita pari al 20% della larghezza della tabella e la terza cella ha una larghezza preferita automatica che si regola
+Qui utilizziamo il generatore di documenti per creare una tabella con tre celle. La prima cella ha una larghezza preferita di 40 punti, la seconda cella ha una larghezza preferita pari al 20% della larghezza della tabella e la terza cella ha una larghezza preferita automatica che si regola.
 
   a seconda dello spazio disponibile.
 
@@ -92,7 +92,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 	builder.Writeln("Cell at 20% width");
-	// Inserisci una cella di dimensioni automatiche.
+	// Inserisci una cella con dimensioni automatiche.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;

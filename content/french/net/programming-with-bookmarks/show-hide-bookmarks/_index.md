@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Étape 2 : Afficher ou masquer un favori spécifique
 
- Nous utilisons le`ShowHideBookmarkedContent`fonction pour afficher ou masquer un signet spécifique dans le document. Cette fonction prend en paramètres le document, le nom du signet et un booléen pour indiquer s'il faut afficher ou masquer le signet :
+ Nous utilisons le`ShowHideBookmarkedContent` fonction pour afficher ou masquer un signet spécifique dans le document. Cette fonction prend en paramètres le document, le nom du signet et un booléen pour indiquer s'il faut afficher ou masquer le signet :
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -116,11 +116,11 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 #### Q : Puis-je afficher ou masquer plusieurs signets dans le même document ?
 
-: Oui, vous pouvez afficher ou masquer plusieurs signets dans le même document en répétant les étapes 2 et 3 pour chaque signet que vous souhaitez traiter.
+R : Oui, vous pouvez afficher ou masquer plusieurs signets dans le même document en répétant les étapes 2 et 3 pour chaque signet que vous souhaitez traiter.
 
 #### Q : Le code fourni fonctionne-t-il avec d'autres formats de documents Word, tels que .doc ou .docm ?
 
-R : Oui, le code fourni fonctionne avec différents formats de documents Word pris en charge par Aspose.Words, tels que .doc et .docm. Assurez-vous simplement d'utiliser le nom de fichier et le chemin corrects lors du chargement et de l'enregistrement du document.
+: Oui, le code fourni fonctionne avec différents formats de documents Word pris en charge par Aspose.Words, tels que .doc et .docm. Assurez-vous simplement d'utiliser le nom de fichier et le chemin corrects lors du chargement et de l'enregistrement du document.
 
 #### Q : Comment puis-je afficher à nouveau un favori masqué ?
 

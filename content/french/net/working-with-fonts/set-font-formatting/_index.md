@@ -15,14 +15,14 @@ Avant de commencer, assurez-vous de disposer des éléments suivants :
 - La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
 ## Étape 1 : Définir le répertoire des documents
- Commencez par définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
+Commencez par définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Créer et formater le document
- Créez une instance du`Document` la classe et le`DocumentBuilder` classe pour construire le document. Utilisez le`Font` propriété du`DocumentBuilder` pour accéder aux propriétés de formatage des polices.
+ Créez une instance du`Document` la classe et le`DocumentBuilder`classe pour construire le document. Utilisez le`Font` propriété du`DocumentBuilder` pour accéder aux propriétés de formatage des polices.
 
 ```csharp
 Document doc = new Document();
@@ -73,11 +73,11 @@ Félicitation ! Vous savez maintenant comment définir le formatage de la police
 
 #### Q : Comment puis-je appliquer le style gras à une police dans un document Word à l'aide d'Aspose.Words ?
 
-: Pour appliquer le style gras à une police dans un document Word à l'aide d'Aspose.Words, vous pouvez utiliser l'API pour accéder à la police souhaitée et définir son style sur « gras ». Cela appliquera le style gras à la police spécifiée.
+R : Pour appliquer le style gras à une police dans un document Word à l'aide d'Aspose.Words, vous pouvez utiliser l'API pour accéder à la police souhaitée et définir son style sur « gras ». Cela appliquera le style gras à la police spécifiée.
 
 #### Q : Est-il possible d'appliquer le style italique à une partie spécifique du texte dans un document Word avec Aspose.Words ?
 
-R : Oui, avec Aspose.Words, vous pouvez appliquer le style italique à une partie spécifique du texte dans un document Word. Vous pouvez utiliser l'API pour sélectionner la plage de texte souhaitée et définir son style sur « italique ».
+: Oui, avec Aspose.Words, vous pouvez appliquer le style italique à une partie spécifique du texte dans un document Word. Vous pouvez utiliser l'API pour sélectionner la plage de texte souhaitée et définir son style sur « italique ».
 
 #### Q : Comment puis-je changer la couleur de la police dans un document Word à l'aide d'Aspose.Words ?
 
@@ -85,8 +85,8 @@ R : Pour modifier la couleur de la police dans un document Word à l'aide d'Aspo
 
 #### Q : Est-il possible de modifier la taille de la police dans un document Word à l'aide d'Aspose.Words ?
 
-: Oui, vous pouvez modifier la taille de la police dans un document Word à l'aide d'Aspose.Words. L'API vous permet d'accéder à la police et de définir sa taille en points ou en points d'échelle, en fonction de vos besoins.
+R : Oui, vous pouvez modifier la taille de la police dans un document Word à l'aide d'Aspose.Words. L'API vous permet d'accéder à la police et de définir sa taille en points ou en points d'échelle, en fonction de vos besoins.
 
 #### Q : Puis-je appliquer plusieurs formats de police, tels que gras et italique, au même texte dans un document Word ?
 
-R : Oui, avec Aspose.Words, vous pouvez appliquer plusieurs formats de police, tels que le gras et l'italique, au même texte dans un document Word. Vous pouvez utiliser l'API pour définir les différents styles de police souhaités pour différentes parties du texte.
+: Oui, avec Aspose.Words, vous pouvez appliquer plusieurs formats de police, tels que le gras et l'italique, au même texte dans un document Word. Vous pouvez utiliser l'API pour définir les différents styles de police souhaités pour différentes parties du texte.

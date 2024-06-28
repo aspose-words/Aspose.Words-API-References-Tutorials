@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Etapa 2: Carregar os Documentos de Origem e Destino
 
- Em seguida, você precisa carregar os documentos de origem e destino usando o Aspose.Words`Document` aula. Atualize os nomes dos arquivos no`Document` construtor de acordo com os nomes dos seus documentos.
+Em seguida, você precisa carregar os documentos de origem e destino usando Aspose.Words.`Document` aula. Atualize os nomes dos arquivos no`Document` construtor de acordo com os nomes dos seus documentos.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -74,4 +74,4 @@ Aqui está o código-fonte completo do recurso List Keep Source Formatting em C#
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-É isso! Você implementou com sucesso o recurso List Keep Source Formatting usando Aspose.Words for .NET. O documento final conterá o conteúdo mesclado com a formatação da lista do documento de origem preservada.
+É isso! Você implementou com sucesso o recurso List Keep Source Formatting usando Aspose.Words for .NET. O documento final conterá o conteúdo mesclado com a formatação de lista do documento de origem preservada.

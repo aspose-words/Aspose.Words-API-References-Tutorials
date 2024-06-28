@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Paso 4: agregar contenido del cuadro de texto
 
- Crear un`NodeImporter` objeto y utilícelo para importar nodos de cuadro de texto desde el documento de origen al documento de destino. Repita cada párrafo del documento de origen e impórtelo al documento de destino.
+ Crear un`NodeImporter`objeto y utilícelo para importar nodos de cuadro de texto desde el documento de origen al documento de destino. Repita cada párrafo del documento de origen e impórtelo al documento de destino.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Paso 5: guarde el documento de destino
 
- Finalmente, guarde el documento de destino modificado usando el`Save` método de la`Document` objeto.
+Finalmente, guarde el documento de destino modificado usando el`Save` método de la`Document` objeto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

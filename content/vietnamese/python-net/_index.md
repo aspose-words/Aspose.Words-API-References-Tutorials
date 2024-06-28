@@ -11,7 +11,7 @@ Aspose.Words for Python cung cấp một loạt hướng dẫn hỗ trợ các n
 
 ## API tài liệu Python để quản lý tài liệu liền mạch
 
-Khám phá sức mạnh của API Tài liệu Python với các hướng dẫn của Aspose.Words. Các nhà phát triển sẽ học cách tạo, sửa đổi và quản lý tài liệu Word theo chương trình. API cho phép tùy chỉnh định dạng, chèn nội dung và hợp nhất tài liệu, tinh giản các tác vụ quản lý tài liệu.
+Khám phá sức mạnh của API Tài liệu Python với các hướng dẫn của Aspose.Words. Các nhà phát triển sẽ học cách tạo, sửa đổi và quản lý tài liệu Word theo chương trình. API cho phép tùy chỉnh định dạng, chèn nội dung và hợp nhất tài liệu, truyền phát các tác vụ quản lý tài liệu.
 
 ## Tự động xử lý tài liệu bằng Python
 
@@ -39,7 +39,7 @@ Khám phá thế giới trích xuất và thao tác nội dung với các hướ
 ### [Kết hợp và so sánh tài liệu](./document-combining-and-comparison/)
 Khám phá các hướng dẫn toàn diện về kết hợp và so sánh tài liệu bằng Aspose.Words cho Python và .NET. Tìm hiểu cách hợp nhất và so sánh các tài liệu một cách liền mạch, nâng cao quy trình xử lý tài liệu của bạn.
 ### [Tách và định dạng tài liệu](./document-splitting-and-formatting/)
-Khám phá các hướng dẫn Aspose.Words về phân tách và định dạng tài liệu bằng Python và .NET. Tìm hiểu cách phân chia và định dạng tài liệu một cách hiệu quả, nâng cao tác vụ xử lý tài liệu của bạn. 
+Khám phá các hướng dẫn Aspose.Words về phân tách và định dạng tài liệu trong Python và .NET. Tìm hiểu cách phân chia và định dạng tài liệu một cách hiệu quả, nâng cao tác vụ xử lý tài liệu của bạn. 
 ### [Tùy chọn và cài đặt tài liệu](./document-options-and-settings/)
 Khám phá các hướng dẫn của Aspose.Words về các tùy chọn và cài đặt tài liệu trong Python và .NET. Tìm hiểu cách tối ưu hóa việc tạo và định dạng tài liệu bằng hướng dẫn từng bước và ví dụ về mã nguồn.
 ### [Trực quan hóa và định dạng dữ liệu](./data-visualization-and-formatting/)

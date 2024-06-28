@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### संशोधनों को अस्वीकार करना:
+#### समीक्षाएँ अस्वीकार करना:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");

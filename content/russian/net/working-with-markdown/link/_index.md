@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Шаг 2. Вставка ссылки
 
- Мы можем вставить ссылку, используя`Insertlink` метод генератора документов. Нам нужно указать текст ссылки, здесь «Aspose», а также целевой URL.
+ Мы можем вставить ссылку, используя`InsertHyperlink` метод генератора документов. Нам нужно указать текст ссылки, здесь «Aspose», а также целевой URL.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com", false);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
 
 ### Пример исходного кода для ссылок с Aspose.Words для .NET
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", false);
 DocumentBuilder builder = new DocumentBuilder();
 
 // Вставьте ссылку.
-builder.Insertlink("Aspose", "https://www.aspose.com", false);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
 Поздравляем! Теперь вы узнали, как использовать функцию ссылок в Aspose.Words для .NET.
 
@@ -47,7 +47,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", false);
 
 #### Вопрос: Можно ли сделать ссылку на внутреннюю закладку в Aspose.Words?
 
- О: Да, в Aspose.Words можно создать ссылку на внутреннюю закладку. Вы можете использовать`<a>` тег с`href` атрибут, содержащий имя закладки, которому предшествует решетка (#). Например,`<a href="#bookmark1">Go to bookmark 1</a>` будет ссылаться на закладку с именем «bookmark1» в документе.
+ О: Да, в Aspose.Words можно создать ссылку на внутреннюю закладку. Вы можете использовать`<a>` тег с`href` Атрибут содержит имя закладки, которому предшествует решетка (#). Например,`<a href="#bookmark1">Go to bookmark 1</a>` будет ссылаться на закладку с именем «bookmark1» в документе.
 
 #### Вопрос: Как настроить отображение текста ссылки в Aspose.Words?
 

@@ -16,7 +16,7 @@ url: /zh/net/working-with-revisions/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [接受修改](./accept-revisions/) | 了解如何使用 Aspose.Words for .NET 接受对 Word 文档的修订。 |
+| [接受评论](./accept-revisions/) | 了解如何使用 Aspose.Words for .NET 接受对 Word 文档的修订。 |
 | [获取单词的修订类型](./get-revision-types/) | 使用 Aspose.Words for .NET 获取 Word 文档中单词的修订类型。 |
 | [获取修订组](./get-revision-groups/) | 使用 Aspose.Words for .NET 获取 Word 文档中的修订组详细信息。 |
 | [删除 PDF 文件中的注释](./remove-comments-in-pdf/) | 使用 Aspose.Words for .NET 删除 PDF 文件中的注释。 |

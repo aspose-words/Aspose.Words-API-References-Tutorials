@@ -56,7 +56,7 @@ builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
 builder.Writeln("1. Nested blockquote");
 ```
 
-Συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη δυνατότητα παραπομπών με το Aspose.Words για .NET.
+συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη δυνατότητα παραπομπών με το Aspose.Words για .NET.
 
 
 ### Συχνές ερωτήσεις

@@ -56,7 +56,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
 ## 5단계: 찾기 및 바꾸기에 정규식 사용
 
-문서 텍스트에 대한 검색 및 바꾸기 작업을 수행하기 위해 정규식을 사용합니다. 이 예에서는 문자 "e"가 나타나는 모든 항목을 검색하고 이를 별표 "로 바꿉니다.* ". .그물`Regex` 클래스는 다음을 위해 활용됩니다.
+문서 텍스트에 대한 검색 및 바꾸기 작업을 수행하기 위해 정규식을 사용합니다. 이 예에서는 문자 "e"가 나타나는 모든 항목을 검색하고 이를 별표 "로 바꿉니다.* ". .그물`Regex` 클래스는 다음과 같이 사용됩니다.
 
 ```csharp
 Regex regex = new Regex("e");

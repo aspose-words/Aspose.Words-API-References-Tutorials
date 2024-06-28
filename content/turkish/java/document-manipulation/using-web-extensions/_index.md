@@ -81,7 +81,7 @@ Bu eğitimde, belgelerinizi web tabanlı içerik ve uygulamalarla geliştirmek i
 
 ## SSS'ler
 
-### Bir belgeye birden fazla web uzantısı görev bölmesini nasıl eklerim?
+### Bir belgeye birden çok web uzantısı görev bölmesini nasıl eklerim?
 
 Bir belgeye birden fazla web uzantısı görev bölmesi eklemek için, tek bir görev bölmesi ekleme eğitiminde belirtilen adımların aynısını takip edebilirsiniz. Belgeye eklemek istediğiniz her görev bölmesi için işlemi tekrarlamanız yeterlidir. Her görev bölmesinin kendine ait özellikleri ve bağlantıları olabilir, bu da web tabanlı içeriğin belgenize entegre edilmesinde esneklik sağlar.
 

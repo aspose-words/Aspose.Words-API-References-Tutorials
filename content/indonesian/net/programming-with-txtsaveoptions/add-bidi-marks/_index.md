@@ -86,7 +86,7 @@ Anda dapat menambahkan tanda Bidi ke dokumen Word dengan mengikuti langkah-langk
 
  Simpan dokumen yang bertanda Bidi dengan menggunakan`Save` metode`Document` kelas.
 
-#### T: Apakah Aspose.Words mendukung banyak bahasa untuk menambahkan tanda Bidi?
+#### Q: Apakah Aspose.Words mendukung banyak bahasa untuk menambahkan tanda Bidi?
 Ya, Aspose.Words mendukung banyak bahasa untuk menambahkan tanda Bidi. Anda dapat menambahkan tanda Bidi ke teks dalam berbagai bahasa, seperti Inggris, Ibrani, dan Arab, menggunakan Aspose.Words untuk .NET.
 
 #### Q: Apakah ada opsi tambahan untuk menyimpan dokumen bertanda Bidi?

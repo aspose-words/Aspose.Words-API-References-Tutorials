@@ -58,7 +58,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
  The`Compare`metoda porovná dokument A s dokumentem B a uloží změny do dokumentu A. Pro referenci můžete zadat uživatelské jméno a datum porovnání.
 
-### Ukázkový zdrojový kód pro Comparison Target pomocí Aspose.Words pro .NET
+### Ukázkový zdrojový kód pro Compare Target pomocí Aspose.Words pro .NET
 
 
 ```csharp
@@ -90,7 +90,7 @@ A: Chcete-li použít Comparison Target v Aspose.Words pro .NET, postupujte takt
 1. Nastavte své vývojové prostředí pomocí knihovny Aspose.Words.
 2. Přidejte potřebné sestavy do svého projektu odkazem na Aspose.Words.
 3.  Inicializujte dokumenty, které chcete porovnat, pomocí`Document` třídy nebo`DocumentBuilder` třída.
-4.  Nakonfigurujte možnosti porovnání vytvořením a`CompareOptions` vlastnosti objektu a nastavení jako např`IgnoreFormatting` a`Target` (např,`ComparisonTargetType.New` pro cíl srovnání).
+4.  Nakonfigurujte možnosti porovnání vytvořením a`CompareOptions` vlastnosti objektu a nastavení jako např`IgnoreFormatting` a`Target` (např.,`ComparisonTargetType.New` pro cíl srovnání).
 5.  Použijte`Compare` metoda na jednom dokumentu, předání druhého dokumentu a`CompareOptions` objekt jako parametry. Tato metoda porovná dokumenty a uloží změny v prvním dokumentu.
 
 ####  Otázka: Jaký je účel`Target` property in the `CompareOptions` class?

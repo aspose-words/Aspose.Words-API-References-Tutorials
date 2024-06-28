@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Langkah 5: Memasukkan bidang bersarang
 
- Kami menggunakan DocumentBuilder`InsertField()`metode untuk menyisipkan bidang bersarang ke footer.
+ Kami menggunakan DocumentBuilder`InsertField()` metode untuk menyisipkan bidang bersarang ke footer.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -108,7 +108,7 @@ J: Untuk menyisipkan bidang bertumpuk dalam dokumen Word menggunakan Aspose.Word
 
 #### T: Apa manfaat menggunakan bidang bertumpuk di dokumen Word dengan Aspose.Words untuk .NET?
 
-J: Menggunakan bidang bertingkat menawarkan beberapa keuntungan dalam dokumen Word dengan Aspose.Words untuk .NET. Hal ini memungkinkan fleksibilitas yang lebih besar dalam membuat templat dokumen dinamis, dengan memungkinkan penyisipan nilai variabel dan perhitungan ke dalam bidang yang disarangkan. Bidang bersarang juga dapat memfasilitasi pembuatan konten otomatis, seperti membuat daftar isi, nomor halaman, dll.
+J: Menggunakan bidang bertingkat menawarkan beberapa keuntungan dalam dokumen Word dengan Aspose.Words untuk .NET. Hal ini memungkinkan fleksibilitas yang lebih besar dalam membuat templat dokumen dinamis, dengan memungkinkan penyisipan nilai variabel dan penghitungan ke dalam bidang bersarang. Bidang bersarang juga dapat memfasilitasi pembuatan konten otomatis, seperti membuat daftar isi, nomor halaman, dll.
 
 #### T: Bisakah saya memiliki bidang bertingkat bertingkat di dokumen Word dengan Aspose.Words untuk .NET?
 

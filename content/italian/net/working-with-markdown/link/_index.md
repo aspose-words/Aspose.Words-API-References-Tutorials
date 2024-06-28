@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Passaggio 2: inserimento di un collegamento
 
- Possiamo inserire un collegamento utilizzando il file`Insertlink` metodo del generatore di documenti. Dobbiamo specificare il testo del collegamento, qui "Aspose", nonché l'URL di destinazione.
+ Possiamo inserire un collegamento utilizzando il file`InsertHyperlink` metodo del generatore di documenti. Dobbiamo specificare il testo del collegamento, qui "Apose", nonché l'URL di destinazione.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com", falso);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", falso);
 ```
 
 ### Codice sorgente di esempio per i collegamenti con Aspose.Words per .NET
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", falso);
 DocumentBuilder builder = new DocumentBuilder();
 
 // Inserisci collegamento.
-builder.Insertlink("Aspose", "https://www.aspose.com", falso);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", falso);
 ```
 Congratulazioni! Ora hai imparato come utilizzare la funzionalità dei collegamenti con Aspose.Words per .NET.
 

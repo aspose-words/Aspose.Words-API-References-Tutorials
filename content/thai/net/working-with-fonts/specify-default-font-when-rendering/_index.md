@@ -18,14 +18,14 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสารที่จะแสดงผล
- ถัดไป คุณต้องโหลดเอกสารเพื่อแสดงผลโดยใช้`Document` ระดับ. อย่าลืมระบุเส้นทางเอกสารที่ถูกต้อง
+ ถัดไป คุณต้องโหลดเอกสารเพื่อแสดงผลโดยใช้`Document` ชั้นเรียน อย่าลืมระบุเส้นทางเอกสารที่ถูกต้อง
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## ขั้นตอนที่ 3: ตั้งค่าแบบอักษรเริ่มต้น
- ตอนนี้คุณสามารถระบุแบบอักษรเริ่มต้นที่จะใช้เมื่อแสดงผลโดยการสร้างอินสแตนซ์ของ`FontSettings` คลาสและการตั้งค่า`DefaultFontName` ทรัพย์สินของ`DefaultFontSubstitution` คัดค้านการ`DefaultFontSubstitution` วัตถุ`SubstitutionSettings` ของ`FontSettings`.
+ ตอนนี้คุณสามารถระบุแบบอักษรเริ่มต้นที่จะใช้เมื่อแสดงผลโดยการสร้างอินสแตนซ์ของ`FontSettings` คลาสและการตั้งค่า`DefaultFontName` ทรัพย์สินของ`DefaultFontSubstitution` คัดค้านการ`DefaultFontSubstitution` วัตถุ วัตถุ`SubstitutionSettings` ของ`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -34,7 +34,7 @@ doc.FontSettings = fontSettings;
 ```
 
 ## ขั้นตอนที่ 4: บันทึกเอกสารที่แสดงผล
- สุดท้าย คุณสามารถบันทึกเอกสารที่แสดงผลลงในไฟล์ได้โดยใช้`Save()` วิธีการของ`Document` ระดับ. อย่าลืมระบุเส้นทางและชื่อไฟล์ที่ถูกต้อง
+ สุดท้าย คุณสามารถบันทึกเอกสารที่แสดงผลลงในไฟล์ได้โดยใช้`Save()` วิธีการของ`Document` ชั้นเรียน อย่าลืมระบุเส้นทางและชื่อไฟล์ที่ถูกต้อง
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
@@ -49,7 +49,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 // หากไม่พบแบบอักษรเริ่มต้นที่กำหนดไว้ที่นี่ในระหว่างการเรนเดอร์
-// จะใช้แบบอักษรที่ใกล้เคียงที่สุดในเครื่องแทน
+// จะใช้แบบอักษรที่ใกล้เคียงที่สุดบนเครื่องแทน
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");

@@ -39,7 +39,7 @@ par.Runs[0].Font.SnapToGrid = true;
 
 ## Krok 3: Uložení dokumentu
 
- Po vložení textového pole formuláře uložte dokument na požadované místo pomocí`Save` metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
+ Po vložení pole formuláře pro zadání textu uložte dokument na požadované místo pomocí`Save` metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
 
 ```csharp
 doc.Save(dataDir + "Paragraph.SnapToGrid.docx");

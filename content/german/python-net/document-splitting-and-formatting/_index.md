@@ -1,7 +1,7 @@
 ---
 title: Aufteilen und Formatieren von Dokumenten
 linktitle: Aufteilen und Formatieren von Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Entdecken Sie die Aspose.Words-Tutorials zum Aufteilen und Formatieren von Dokumenten in Python und .NET. Erfahren Sie, wie Sie Dokumente effizient aufteilen und formatieren und so Ihre Dokumentenverarbeitungsaufgaben verbessern.
 type: docs
 weight: 13

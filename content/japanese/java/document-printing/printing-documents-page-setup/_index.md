@@ -37,7 +37,7 @@ Aspose.Words for Java を使用するには、ライブラリをプロジェク�
 このセクションでは、印刷するドキュメントをロードする方法について説明します。 DOCX、DOC、RTF などのさまざまな形式のドキュメントをロードできます。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("sample.docx");
 ```
 

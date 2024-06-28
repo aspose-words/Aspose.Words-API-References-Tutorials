@@ -16,7 +16,7 @@ Daftar tersedia dalam dua tipe utama: berpoin dan bernomor. Mereka memungkinkan 
 
 ## Menyiapkan Lingkungan
 
- Sebelum kita mendalami pembuatan dan pengelolaan daftar, pastikan Anda telah menginstal pustaka Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/) . Selain itu, lihat dokumentasi API di[Link ini](https://reference.aspose.com/words/python-net/) untuk informasi rinci.
+Sebelum kita mendalami pembuatan dan pengelolaan daftar, pastikan Anda telah menginstal pustaka Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/) . Selain itu, lihat dokumentasi API di[Link ini](https://reference.aspose.com/words/python-net/) untuk informasi rinci.
 
 ## Membuat Daftar Berpoin
 
@@ -106,7 +106,7 @@ Menghapus daftar sama pentingnya dengan membuat daftar. Anda dapat menghapus daf
 
 ## Menyimpan dan Mengekspor Dokumen
 
-Setelah Anda membuat dan menyesuaikan daftar, Anda dapat menyimpan dokumen dalam berbagai format, termasuk DOCX dan PDF.
+Setelah membuat dan menyesuaikan daftar, Anda dapat menyimpan dokumen dalam berbagai format, termasuk DOCX dan PDF.
 
 ## Kesimpulan
 

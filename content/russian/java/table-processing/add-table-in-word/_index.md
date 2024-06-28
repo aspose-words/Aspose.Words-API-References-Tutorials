@@ -21,7 +21,7 @@ Microsoft Word — мощный инструмент обработки текс
 
 ## Шаг 3. Добавьте зависимость Aspose.Words
 
- Чтобы работать с Aspose.Words для Java, вам необходимо включить JAR-файл Aspose.Words в путь к классам вашего проекта. Загрузите последнюю версию Aspose.Words для Java с сайта[Aspose.Релизы](https://releases.aspose.com/words/java) и добавьте файл JAR в свой проект.
+ Чтобы работать с Aspose.Words для Java, вам необходимо включить JAR-файл Aspose.Words в путь к классам вашего проекта. Загрузите последнюю версию Aspose.Words для Java с сайта[Релизы.](https://releases.aspose.com/words/java) и добавьте файл JAR в свой проект.
 
 ## Шаг 4. Импортируйте необходимые классы
 
@@ -62,7 +62,7 @@ for (int row = 0; row < rowCount; row++) {
 
 ## Шаг 7. Добавьте таблицу в документ
 
- Вставьте таблицу в документ с помощью`appendChild()` метод`Document` объект.
+ Вставьте таблицу в документ с помощью`appendChild()` метод`Document` Объект Object.
 
 ```java
 doc.getFirstSection().getBody().appendChild(table);

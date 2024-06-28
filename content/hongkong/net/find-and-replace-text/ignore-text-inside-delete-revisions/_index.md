@@ -56,7 +56,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
 ## 步驟 5：使用正規表示式進行尋找和替換
 
-為了對文件文字執行搜尋和取代操作，我們將使用正規表示式。在我們的範例中，我們將搜尋所有出現的字母“e”並將其替換為星號“* 「。 。網`Regex`為此使用了類別：
+為了對文件文字執行搜尋和取代操作，我們將使用正規表示式。在我們的範例中，我們將搜尋所有出現的字母“e”並將其替換為星號“* 「。 。網`Regex`類別用於此目的：
 
 ```csharp
 Regex regex = new Regex("e");

@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 
 Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
 
-### Ukázka zdrojového kódu pro vytvoření jednoduché tabulky pomocí Aspose.Words pro .NET 
+### Ukázka zdrojového kódu pro Create Simple Table pomocí Aspose.Words for .NET 
 
 ```csharp
 	// Cesta k vašemu adresáři dokumentů

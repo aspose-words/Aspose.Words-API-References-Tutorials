@@ -12,7 +12,7 @@ Nesta era digital, onde a informação é fundamental, manter os seus documentos
 
 ## 1. Introdução
 
-Neste mundo digital acelerado, a segurança dos documentos eletrónicos tornou-se uma prioridade máxima para indivíduos e empresas. As violações de dados e os ataques cibernéticos levantaram preocupações sobre a confidencialidade e integridade de informações confidenciais. Aspose.Words for Java vem ao resgate, fornecendo um conjunto abrangente de recursos para garantir que seus documentos permaneçam protegidos contra acesso não autorizado.
+Neste mundo digital acelerado, a segurança dos documentos eletrónicos tornou-se uma prioridade máxima para indivíduos e empresas. As violações de dados e os ataques cibernéticos levantaram preocupações sobre a confidencialidade e integridade de informações confidenciais. Aspose.Words for Java vem em socorro, fornecendo um conjunto abrangente de recursos para garantir que seus documentos permaneçam protegidos contra acesso não autorizado.
 
 ## 2. Compreendendo a segurança de documentos
 
@@ -26,7 +26,7 @@ Antes de nos aprofundarmos nos aspectos técnicos, vamos entender os conceitos f
  Converta o conteúdo do documento em um formato embaralhado usando algoritmos de criptografia, tornando-o indecifrável sem a chave de descriptografia correta.
 - #### Assinaturas digitais:
  Anexe assinaturas digitais para verificar a autenticidade e integridade do documento.
-- #### Marca d’água:
+- #### Marca d'água:
  Sobreponha marcas d'água visíveis ou invisíveis para indicar propriedade ou confidencialidade.
 - #### Redação:
  Remova permanentemente informações confidenciais do documento.
@@ -215,5 +215,5 @@ Neste guia passo a passo, exploramos a importância da segurança dos documentos
 ### O Aspose.Words oferece suporte à recuperação de senha de documentos?
    Não, Aspose.Words não oferece recursos de recuperação de senha. Certifique-se de manter suas senhas seguras.
 
-### Posso personalizar a aparência das marcas d'água?
-   Sim, você pode personalizar totalmente a aparência das marcas d'água, incluindo texto, fonte, cor, tamanho e rotação.
+### Posso personalizar a aparência das marcas d’água?
+   Sim, você pode personalizar totalmente a aparência das marcas d’água, incluindo texto, fonte, cor, tamanho e rotação.

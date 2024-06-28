@@ -122,7 +122,7 @@ Cell nestedCell = nestedRow.getCells().add();
 //ネストされたテーブルにコンテンツを追加する
 nestedCell.getFirstParagraph().appendChild(new Run(doc, "Nested Table Content"));
 
-//ネストしたテーブルをメインテーブルに追加します。
+//ネストされたテーブルをメインテーブルに追加します
 cell1.appendChild(nestedTable);
 ```
 

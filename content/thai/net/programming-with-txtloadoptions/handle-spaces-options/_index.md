@@ -1,6 +1,6 @@
 ---
-title: จัดการตัวเลือกช่องว่าง
-linktitle: จัดการตัวเลือกช่องว่าง
+title: จัดการ SpacesOptions
+linktitle: จัดการ SpacesOptions
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: เรียนรู้วิธีจัดการช่องว่างในเอกสาร TXT ของคุณด้วย Aspose.Words for .NET ลบช่องว่างที่ไม่จำเป็นและปรับปรุงให้อ่านง่าย
 type: docs

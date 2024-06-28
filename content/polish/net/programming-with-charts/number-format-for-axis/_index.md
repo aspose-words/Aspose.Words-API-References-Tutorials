@@ -17,7 +17,7 @@ Upewnij się, że masz następujące wymagania wstępne:
 - Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
 - Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres
+## Krok 2: Utwórz nowy dokument i wstaw wykres.
 
  Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
 
@@ -94,7 +94,7 @@ Dzięki Aspose.Words dla .NET masz elastyczność formatowania różnych aspekt�
 ### Często zadawane pytania
 
 #### Pytanie 1. Jaki jest format liczb dla osi na wykresie?
-Format liczb osi na wykresie odnosi się do formatowania zastosowanego do wartości liczbowych wyświetlanych na osi. Pozwala kontrolować sposób prezentacji liczb, w tym opcje takie jak miejsca dziesiętne, separatory tysięcy, symbole walut, znaki procentów i inne. Ustawiając format liczb, możesz dostosować wygląd danych liczbowych na wykresie do swoich konkretnych wymagań.
+Format liczb osi na wykresie odnosi się do formatowania zastosowanego do wartości numerycznych wyświetlanych na osi. Pozwala kontrolować sposób prezentacji liczb, w tym opcje takie jak miejsca dziesiętne, separatory tysięcy, symbole walut, znaki procentów i inne. Ustawiając format liczb, możesz dostosować wygląd danych liczbowych na wykresie do swoich konkretnych wymagań.
 
 #### Pytanie 2. Jak ustawić format liczb dla etykiet osi?
  Aby ustawić format liczb dla etykiet osi na wykresie za pomocą Aspose.Words dla .NET, możesz uzyskać dostęp do`AxisY` właściwość wykresu i ustaw`NumberFormat.FormatCode`właściwość na żądany kod formatu. Kod formatu jest zgodny ze składnią standardowych wzorców formatowania liczb i określa sposób wyświetlania liczb. Na przykład możesz użyć „#,##0.00”, aby wyświetlić liczby z dwoma miejscami po przecinku i separatorami tysięcy.
@@ -107,7 +107,7 @@ Aspose.Words dla .NET obsługuje szeroką gamę kodów formatu liczb, których m
 
 - `0` Lub`#` - Wyświetla liczbę bez miejsc po przecinku.
 - `0.00` Lub`#.00` - Wyświetla liczbę z dwoma miejscami po przecinku.
-- `#,##0` Wyświetla liczbę z separatorami tysięcy.
+- `#,##0` Wyświetla liczbę z tysiącami separatorów.
 - `"€"0.00` - Wyświetla liczbę z symbolem waluty euro i dwoma miejscami po przecinku.
 - `"%"0` - Wyświetla liczbę jako procent.
 

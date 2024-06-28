@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/document-formatting/apply-paragraph-style/
 ---
-I den här handledningen kommer vi att gå igenom hur du använder en styckestil med Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och tillämpa styckeformatet.
+den här handledningen kommer vi att gå igenom hur du använder en styckestil med Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och tillämpa styckeformatet.
 
 ## Steg 1: Skapa och konfigurera dokumentet
 
@@ -59,7 +59,7 @@ Med denna kod kommer du att kunna tillämpa en styckestil med Aspose.Words för 
 
 ## Slutsats
 
- I den här handledningen undersökte vi hur man tillämpar en styckestil i ett Word-dokument med Aspose.Words för .NET. Genom att ställa in`StyleIdentifier` egendom av`ParagraphFormat`, vi kunde tillämpa en inbyggd stil på stycket. Aspose.Words för .NET erbjuder ett brett utbud av formateringsalternativ, inklusive möjligheten att skapa och tillämpa anpassade stilar, vilket gör att du enkelt kan skapa professionella dokument.
+ I den här handledningen undersökte vi hur man tillämpar en styckestil i ett Word-dokument med Aspose.Words för .NET. Genom att ställa in`StyleIdentifier` egendom av`ParagraphFormat`vi kunde tillämpa en inbyggd stil på stycket. Aspose.Words för .NET erbjuder ett brett utbud av formateringsalternativ, inklusive möjligheten att skapa och tillämpa anpassade stilar, vilket gör att du enkelt kan skapa professionella dokument.
 
 ### FAQ's
 

@@ -15,7 +15,7 @@ url: /hi/net/working-with-fonts/set-fonts-folder/
 - आपके प्रोजेक्ट में .NET के लिए Aspose.Words लाइब्रेरी स्थापित है
 
 ## चरण 1: दस्तावेज़ निर्देशिका को परिभाषित करें
- अपने Word दस्तावेज़ के स्थान पर निर्देशिका पथ सेट करके प्रारंभ करें। प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` उचित पथ के साथ कोड में।
+अपने Word दस्तावेज़ के स्थान पर निर्देशिका पथ सेट करके प्रारंभ करें। प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` उचित पथ के साथ कोड में।
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 
-W tym samouczku wyjaśniono, jak pobrać rzeczywiste granice kształtu w punktach (jednostka miary) w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Granice reprezentują rozmiar i położenie kształtu w dokumencie.
+tym samouczku wyjaśniono, jak pobrać rzeczywiste granice kształtu w punktach (jednostka miary) w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Granice reprezentują rozmiar i położenie kształtu w dokumencie.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:

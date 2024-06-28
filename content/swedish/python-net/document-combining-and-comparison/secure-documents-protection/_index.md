@@ -12,7 +12,7 @@ url: /sv/python-net/document-combining-and-comparison/secure-documents-protectio
 
 I denna digitala era är dataintrång och obehörig åtkomst till känslig information vanliga problem. Aspose.Words för Python erbjuder en robust lösning för att säkra dokument mot sådana risker. Den här guiden kommer att visa hur du använder Aspose.Words för att implementera avancerade skyddstekniker för dina dokument.
 
-## Installerar Aspose.Words för Python
+## Installera Aspose.Words för Python
 
 För att komma igång måste du installera Aspose.Words för Python. Du kan enkelt installera den med pip:
 

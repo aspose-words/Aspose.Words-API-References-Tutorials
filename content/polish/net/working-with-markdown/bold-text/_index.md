@@ -53,11 +53,11 @@ Gratulacje! Nauczyłeś się teraz, jak pogrubiać tekst za pomocą Aspose.Words
 
 #### P: Jak mogę pogrubić tekst w Aspose.Words?
 
- O: Aby pogrubić tekst w Aspose.Words, możesz użyć opcji`Font.Bold` własność`Run` obiekt. Możesz ustawić tę właściwość na`true` pogrubić określony tekst. Możesz na przykład użyć`run.Font.Bold=true` aby pogrubić tekst wewnątrz`Run` obiekt.
+ O: Aby pogrubić tekst w Aspose.Words, możesz użyć opcji`Font.Bold` własność`Run`obiekt. Możesz ustawić tę właściwość na`true` pogrubić określony tekst. Możesz na przykład użyć`run.Font.Bold=true` aby pogrubić tekst wewnątrz`Run` obiekt.
 
 #### P: Czy można pogrubić kilka fragmentów tekstu w tym samym akapicie?
 
-Odp.: Tak, możesz pogrubić wiele fragmentów tekstu w jednym akapicie, używając opcji wielokrotnych`Run` obiekty. Możesz utworzyć wiele`Run` obiektów i ustaw`Font.Bold`własność do`true` dla każdego obiektu, aby pogrubić wybrane fragmenty tekstu. Następnie możesz dodać je do akapitu za pomocą`Paragraph.AppendChild(run)` metoda.
+ Odp.: Tak, możesz pogrubić wiele fragmentów tekstu w jednym akapicie, używając opcji wielokrotnych`Run` obiekty. Możesz utworzyć wiele`Run` obiektów i ustaw`Font.Bold`własność do`true` dla każdego obiektu, aby pogrubić wybrane fragmenty tekstu. Następnie możesz dodać je do akapitu za pomocą`Paragraph.AppendChild(run)` metoda.
 
 #### P: Czy mogę pogrubić tekst znajdujący się w tabeli lub komórce w Aspose.Words?
 

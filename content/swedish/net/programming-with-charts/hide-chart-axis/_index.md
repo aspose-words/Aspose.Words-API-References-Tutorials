@@ -17,7 +17,7 @@ Se till att du har följande förutsättningar:
 - Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den genom att använda NuGet-pakethanteraren för att installera den.
 - En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram.
 
  Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
@@ -101,7 +101,7 @@ Genom att använda Aspose.Words för .NET kan du enkelt införliva kartfunktione
 Aspose.Words för .NET är ett kraftfullt dokumentbehandlingsbibliotek som gör det möjligt för utvecklare att skapa, manipulera och spara Word-dokument programmatiskt i .NET-applikationer. Den tillhandahåller ett brett utbud av funktioner för ordbehandling med dokumentelement, inklusive diagram och diagramaxlar.
 
 #### Q2. Hur kan jag installera Aspose.Words för .NET?
-Du kan installera Aspose.Words för .NET genom att ladda ner det genom att använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Aspose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
+Du kan installera Aspose.Words för .NET genom att ladda ner det genom att använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Apose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
 
 #### Q3. Kan jag dölja både X-axeln och Y-axeln i ett diagram?
  Ja, du kan dölja både X-axeln och Y-axeln i ett diagram med Aspose.Words för .NET. För att dölja X-axeln kan du komma åt`AxisX` egenskapen för diagrammet och ställ in`Hidden`egendom till`true` . På samma sätt, för att dölja Y-axeln, kan du komma åt`AxisY` egendom och ställ in`Hidden`egendom till`true`. Detta gör att du kan ta bort båda axlarna från diagramvisualiseringen.

@@ -2,7 +2,7 @@
 title: Protección de documentos de Word
 linktitle: Protección de documentos de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo proteger documentos de Word con Aspose.Words para .NET. Los tutoriales lo guiarán a través de los distintos métodos de protección, como bloquear cambios, protección con contraseña, restringir el acceso a elementos del documento y mucho más.
+description: Aprenda cómo proteger documentos de Word con Aspose.Words para .NET. Los tutoriales lo guiarán a través de los diversos métodos de protección, como bloquear cambios, protección con contraseña, restringir el acceso a elementos del documento y mucho más.
 type: docs
 weight: 1430
 url: /es/net/document-protection/

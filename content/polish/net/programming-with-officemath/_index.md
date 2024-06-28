@@ -12,4 +12,4 @@ Samouczki Aspose.Words dla .NET dotyczące przetwarzania słów w programie Offi
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Równania matematyczne](./math-equations/) | Dowiedz się, jak dodawać równania matematyczne do dokumentów programu Word za pomocą Aspose.Words dla .NET. |
+| [Równania matematyczne](./math-equations/) | Dowiedz się, jak dodawać równania matematyczne do dokumentów programu Word przy użyciu Aspose.Words dla .NET. |

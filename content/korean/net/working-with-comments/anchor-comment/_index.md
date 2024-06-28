@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // 세 개의 Run 개체를 만듭니다.
-// 처음 두 개는 텍스트를 실행하고 세 번째는 설명을 실행합니다.
+//처음 두 개는 텍스트를 실행하고 세 번째는 설명을 실행합니다.
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ A: Aspose.Words for .NET 문서에 주석 앵커를 추가하려면 튜토리얼
 
 #### Q: Aspose.Words for .NET의 댓글 앵커에 연결된 댓글 텍스트를 어떻게 편집할 수 있나요?
 
- A: .NET용 Aspose.Words의 주석 앵커에 바인딩된 주석 텍스트를 수정하려면`Comment.Text` 해당 속성`Comment` 개체를 선택하고 필요에 따라 텍스트를 수정합니다.
+A: .NET용 Aspose.Words의 주석 앵커에 바인딩된 주석 텍스트를 수정하려면`Comment.Text` 해당 속성`Comment` 개체를 선택하고 필요에 따라 텍스트를 수정합니다.
 

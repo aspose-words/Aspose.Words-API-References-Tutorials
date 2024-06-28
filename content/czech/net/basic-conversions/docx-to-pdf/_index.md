@@ -44,7 +44,7 @@ Neváhejte použít tento kód ve svých vlastních projektech a upravit jej pod
 
 ### Nejčastější dotazy ke konverzi Wordu do PDF
 
-#### Q1. Jaké jsou požadavky na provedení převodu DOCX do PDF pomocí Aspose.Words for .NET?
+#### Q1. Jaké jsou požadavky na provedení převodu DOCX do PDF pomocí Aspose.Words pro .NET?
 Chcete-li spustit převod DOCX do PDF pomocí Aspose.Words pro .NET, potřebujete:
 Aspose.Words for .NET nainstalovaný na vašem počítači
 Platný soubor DOCX ke konverzi

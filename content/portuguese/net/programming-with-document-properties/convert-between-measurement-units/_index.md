@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passo 3: Configurar unidades de medida
 
-Agora iremos converter os valores das margens, distâncias do cabeçalho e rodapé, etc. em diferentes unidades de medida. Use o código a seguir para especificar valores em unidades de medida específicas:
+Agora vamos converter os valores das margens, distâncias do cabeçalho e rodapé, etc. em diferentes unidades de medida. Use o código a seguir para especificar valores em unidades de medida específicas:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;

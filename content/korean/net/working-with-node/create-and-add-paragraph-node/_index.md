@@ -8,7 +8,7 @@ weight: 10
 url: /ko/net/working-with-node/create-and-add-paragraph-node/
 ---
 
-다음은 .NET용 Aspose.Words를 사용하여 단락 노드를 생성하고 추가하는 방법을 보여주는 아래 C# 소스 코드를 설명하는 단계별 가이드입니다.
+다음은 .NET용 Aspose.Words를 사용하여 단락 노드를 만들고 추가하는 방법을 보여주는 아래 C# 소스 코드를 설명하는 단계별 가이드입니다.
 
 ## 1단계: 필요한 참조 가져오기
 시작하기 전에 Aspose.Words for .NET을 사용하는 데 필요한 참조를 프로젝트에 가져왔는지 확인하세요. 여기에는 Aspose.Words 라이브러리를 가져오고 소스 파일에 필요한 네임스페이스를 추가하는 작업이 포함됩니다.
@@ -39,7 +39,7 @@ Section section = doc.LastSection;
 ```
 
 ## 5단계: 문서에 단락 노드 추가
- 이제 문서 섹션이 있으므로 다음을 사용하여 섹션에 단락 노드를 추가할 수 있습니다.`AppendChild` 섹션의 메소드`Body` 재산.
+ 이제 문서 섹션이 있으므로 다음을 사용하여 섹션에 단락 노드를 추가할 수 있습니다.`AppendChild` 섹션의 메서드`Body` 재산.
 
 ```csharp
 section.Body.AppendChild(para);

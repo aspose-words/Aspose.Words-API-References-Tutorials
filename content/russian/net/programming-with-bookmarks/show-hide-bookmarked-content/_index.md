@@ -2,176 +2,156 @@
 title: Показать скрыть содержимое закладок в документе Word
 linktitle: Показать скрыть содержимое закладок в документе Word
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как показать или скрыть содержимое закладки в документе Word с помощью Aspose.Words для .NET.
+description: Узнайте, как динамически отображать или скрывать содержимое закладок в документах Word с помощью Aspose.Words для .NET, с помощью этого подробного пошагового руководства.
 type: docs
 weight: 10
 url: /ru/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-В этой статье мы рассмотрим приведенный выше исходный код C#, чтобы понять, как использовать функцию «Показать скрыть содержимое закладок» в библиотеке Aspose.Words для .NET. Эта функция позволяет отображать или скрывать содержимое закладки в документе Word в зависимости от определенного условия при объединении данных.
+## Введение
+
+Привет! Вы когда-нибудь хотели контролировать видимость определенного содержимого в документе Word на основе определенных условий? С помощью Aspose.Words для .NET вы можете динамически отображать или скрывать содержимое закладок с помощью всего лишь нескольких строк кода. В этом уроке я шаг за шагом проведу вас через этот процесс, гарантируя, что вы поймете каждую часть кода. К концу вы станете профессионалом в управлении закладками в документах Word. Давайте начнем!
 
 ## Предварительные условия
 
-- Базовые знания языка C#.
-- Среда разработки .NET с установленной библиотекой Aspose.Words.
+Прежде чем мы углубимся в руководство, давайте убедимся, что у вас есть все необходимое:
 
-## Шаг 1. Получение закладки
+1. Базовые знания C#: вы должны хорошо разбираться в синтаксисе и концепциях C#.
+2.  Aspose.Words для .NET: загрузите его[здесь](https://releases.aspose.com/words/net/) . Если вы не готовы к покупке, вы можете начать с[бесплатная пробная версия](https://releases.aspose.com/).
+3. Visual Studio: подойдет любая последняя версия, но рекомендуется использовать последнюю версию.
+4. .NET Framework: убедитесь, что он установлен на вашем компьютере.
 
- Мы используем`Bookmarks` свойство диапазона документа, чтобы получить конкретную закладку, для которой мы хотим показать или скрыть содержимое:
+Готовы начать? Большой! Начнем с импорта необходимых пространств имен.
+
+## Импортировать пространства имен
+
+Чтобы использовать Aspose.Words для .NET, нам необходимо импортировать необходимые пространства имен. Этот шаг гарантирует, что у нас будет доступ ко всем классам и методам, которые мы будем использовать.
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Шаг 2. Вставка полей слияния
+Эти пространства имен имеют решающее значение для работы с документами Word и управления их содержимым.
 
- Используем конструктор документов`DocumentBuilder` чтобы вставить необходимые поля слияния. Эти поля слияния установят условие для отображения или скрытия содержимого закладки в зависимости от значения`showHide` переменная:
+## Шаг 1. Настройка документа
+
+Сначала давайте создадим новый документ Word и конструктор документов. Конструктор документов помогает нам легко добавлять и манипулировать содержимым в документе.
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## Шаг 3. Перемещение содержимого закладки
+На этом этапе мы инициализируем новый документ и построитель документов. Это настраивает нашу среду для дальнейших операций.
 
-Просматриваем содержимое закладки и перемещаем его так, чтобы оно появилось
+## Шаг 2. Добавление содержимого в закладки
 
-isse перед закладкой. Это будет контролировать показ или скрытие контента в зависимости от указанного условия:
+Далее мы добавим в документ некоторый контент и создадим вокруг него закладку. Эта закладка поможет нам идентифицировать контент и манипулировать им.
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ Здесь мы добавляем текст до и после содержимого, добавленного в закладки.`StartBookmark` и`EndBookmark` Методы определяют границы закладки.
+
+## Шаг 3. Вставка условного поля
+
+Чтобы контролировать видимость содержимого закладок, мы будем использовать условное поле. В этом поле будет проверяться условие и соответственно отображаться или скрываться содержимое.
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+На этом этапе мы вставляем поле IF, которое проверяет значение закладки. Если значение «истина», будет отображаться «Видимый»; В противном случае будет отображаться «Скрытый».
+
+## Шаг 4: Перестановка узлов
+
+Далее нам нужно переставить узлы, чтобы обеспечить правильное применение условной логики к содержимому, отмеченному закладкой.
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## Шаг 4. Перемещение остального содержимого закладки
-
-Мы перемещаем остальную часть содержимого закладки после закладки, используя конечный узел закладки в качестве точки вставки:
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## Шаг 5. Выполнение слияния
+Здесь мы перемещаем узлы, чтобы убедиться, что условие правильно охватывает контент, отмеченный закладкой.
 
- Мы используем`Execute` метод документа`s `MailMerge` object to execute the merge using the bookmark name and the value of the `переменная showHide`:
+## Шаг 5. Выполнение слияния почты
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### Пример исходного кода для «Показать скрыть содержимое закладок» с использованием Aspose.Words для .NET
-
-Вот полный пример исходного кода, демонстрирующий отображение или скрытие содержимого закладок с помощью Aspose.Words для .NET:
+Наконец, мы выполним слияние почты, чтобы установить значение закладки и определить, следует ли отображать или скрывать содержимое.
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MARGEFIELD bookmark}" = "true" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+На этом шаге для значения закладки устанавливается значение «true», что делает контент видимым в зависимости от нашего условия.
+
+## Шаг 6: Сохраните документ
+
+После всех манипуляций последним шагом будет сохранение измененного документа.
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+Здесь мы сохраняем документ с описательным именем файла, чтобы указать на изменения.
 
 ## Заключение
 
-В этой статье мы изучили исходный код C#, чтобы понять, как использовать функцию «Показать скрыть содержимое закладок» в Aspose.Words для .NET. Мы следовали пошаговому руководству, чтобы показать или скрыть содержимое закладки в зависимости от определенного условия при объединении данных.
+ Вот и все! Вы успешно научились показывать или скрывать содержимое закладок в документе Word с помощью Aspose.Words для .NET. В этом руководстве рассказывается о создании документа, добавлении закладок, вставке условных полей, перестановке узлов и выполнении слияния почты. Aspose.Words предлагает множество функций, поэтому не стесняйтесь изучить[Документация по API](https://reference.aspose.com/words/net/) для более продвинутых возможностей.
 
-### Часто задаваемые вопросы о показе скрытия содержимого закладок в документе Word
+## Часто задаваемые вопросы
 
-#### Вопрос: Могу ли я использовать одно и то же условие для нескольких закладок в одном документе?
+### 1. Что такое Aspose.Words для .NET?
 
-О: Да, вы можете использовать одно и то же условие для нескольких закладок в одном документе. Просто повторите шаги 2–5 для каждой закладки, изменяя имя закладки и, при необходимости, значение`showhide` переменная по мере необходимости.
+Aspose.Words for .NET — это мощная библиотека, которая позволяет разработчикам программно создавать, изменять и конвертировать документы Word. Он широко используется для задач автоматизации документов.
 
-#### Вопрос: Как добавить дополнительные условия для отображения или скрытия содержимого закладки?
+### 2. Могу ли я использовать Aspose.Words для .NET бесплатно?
 
- О: Чтобы добавить дополнительные условия, вы можете использовать логические операторы, такие как`AND` и`OR` в коде для вставки полей слияния на шаге 2. Отредактируйте условие в следующем коде, чтобы добавить дополнительные условия:
+ Вы можете попробовать Aspose.Words для .NET, используя[бесплатная пробная версия](https://releases.aspose.com/). Для долгосрочного использования вам необходимо приобрести лицензию.
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. Как изменить другие свойства закладки?
 
-#### Вопрос: Как удалить закладку в документе Word с помощью Aspose.Words for .NET?
+ Aspose.Words позволяет вам манипулировать различными свойствами закладки, такими как ее текст и местоположение. Обратитесь к[Документация по API](https://reference.aspose.com/words/net/) для получения подробных инструкций.
 
- О: Чтобы удалить закладку в документе Word с помощью Aspose.Words for .NET, вы можете использовать`Remove` метод из`Bookmarks` сбор диапазона документов. Вот пример кода для удаления определенной закладки:
+### 4. Как мне получить поддержку Aspose.Words для .NET?
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+Вы можете получить поддержку, посетив[Форум поддержки Aspose](https://forum.aspose.com/c/words/8).
 
-#### Вопрос: Является ли библиотека Aspose.Words бесплатной?
+### 5. Могу ли я манипулировать другими типами контента с помощью Aspose.Words для .NET?
 
- О: Библиотека Aspose.Words является коммерческой библиотекой, и для ее использования в ваших проектах требуется действующая лицензия. Вы можете проверить[Ссылки на Aspose.Words для .NET API](https://reference.aspose.com/words/net/) чтобы узнать больше о вариантах лицензирования и ценах.
-
-#### Вопрос: Существуют ли другие библиотеки для обработки текстов с документами Word в .NET?
-
-О: Да, для обработки слов с документами Word в .NET доступны и другие библиотеки, такие как Open XML SDK и GemBox.Document. Вы можете изучить эти библиотеки как альтернативу Aspose.Words в зависимости от ваших конкретных потребностей и предпочтений.
+Да, Aspose.Words for .NET поддерживает различные типы манипуляций с содержимым, включая текст, изображения, таблицы и многое другое.

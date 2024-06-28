@@ -1,7 +1,7 @@
 ---
 title: Kombinieren und Vergleichen von Dokumenten
 linktitle: Kombinieren und Vergleichen von Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Entdecken Sie umfassende Tutorials zum Kombinieren und Vergleichen von Dokumenten mit Aspose.Words für Python und .NET. Erfahren Sie, wie Sie Dokumente nahtlos zusammenführen und vergleichen und so Ihre Dokumentenverarbeitungsabläufe verbessern.
 type: docs
 weight: 12

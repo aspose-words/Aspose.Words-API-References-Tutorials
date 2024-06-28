@@ -16,7 +16,7 @@ url: /ru/python-net/document-structure-and-content-manipulation/document-lists/
 
 ## Настройка среды
 
- Прежде чем мы углубимся в создание списков и управление ими, убедитесь, что у вас установлена библиотека Aspose.Words for Python. Вы можете скачать его с[здесь](https://releases.aspose.com/words/python/) . Кроме того, обратитесь к документации API по адресу[эта ссылка](https://reference.aspose.com/words/python-net/) для получения подробной информации.
+Прежде чем мы углубимся в создание списков и управление ими, убедитесь, что у вас установлена библиотека Aspose.Words for Python. Вы можете скачать его с[здесь](https://releases.aspose.com/words/python/) . Кроме того, обратитесь к документации API по адресу[эта ссылка](https://reference.aspose.com/words/python-net/) для получения подробной информации.
 
 ## Создание маркированных списков
 

@@ -2,153 +2,129 @@
 title: Inhoudsopgave invoegen in Word-document
 linktitle: Inhoudsopgave invoegen in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een inhoudsopgave in Word-documenten kunt invoegen met Aspose.Words voor .NET.
+description: Leer hoe u een inhoudsopgave in Word invoegt met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor naadloze documentnavigatie.
 type: docs
 weight: 10
 url: /nl/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-In deze uitgebreide zelfstudie leert u hoe u een inhoudsopgave in een Word-document kunt invoegen met Aspose.Words voor .NET. Wij begeleiden u door het proces en voorzien u van de benodigde C#-codefragmenten. Aan het einde van deze handleiding kunt u een inhoudsopgave genereren met de juiste kopjes en paginanummers.
+## Invoering
+In deze zelfstudie leert u hoe u efficiënt een inhoudsopgave (TOC) aan uw Word-documenten kunt toevoegen met Aspose.Words voor .NET. Deze functie is essentieel voor het organiseren en navigeren door lange documenten, het verbeteren van de leesbaarheid en het bieden van een snel overzicht van documentsecties.
 
 ## Vereisten
-Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd op uw systeem.
 
-## Stap 1: Maak een nieuw document en DocumentBuilder
-Maak om te beginnen een nieuw document met behulp van de klasse Document en initialiseer een DocumentBuilder-object:
+Zorg ervoor dat u over het volgende beschikt voordat u begint:
+
+- Basiskennis van C# en .NET-framework.
+- Visual Studio is op uw computer geïnstalleerd.
+-  Aspose.Words voor .NET-bibliotheek. Als u het nog niet hebt geïnstalleerd, kunt u het downloaden van[hier](https://releases.aspose.com/words/net/).
+
+## Naamruimten importeren
+
+Importeer om te beginnen de benodigde naamruimten in uw C#-project:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+Laten we het proces in duidelijke stappen opsplitsen:
+
+## Stap 1: Initialiseer Aspose.Words Document en DocumentBuilder
+
+ Initialiseer eerst een nieuwe Aspose.Words`Document` voorwerp en een`DocumentBuilder` werken met:
+
+```csharp
+// Initialiseer Document en DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 2: Voeg een inhoudsopgave in
-Gebruik vervolgens de methode InsertTableOfContents van de klasse DocumentBuilder om een inhoudsopgave in te voegen. Geef de vereiste opmaakopties op binnen de methode:
+## Stap 2: Voeg de inhoudsopgave in
+
+ Voeg nu de inhoudsopgave in met behulp van de`InsertTableOfContents` methode:
 
 ```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-```
-
-## Stap 3: Documentinhoud toevoegen
-Voeg na het invoegen van de inhoudsopgave de daadwerkelijke documentinhoud toe. Stel de juiste kopstijlen in met StyleIdentifier:
-
-```csharp
-builder.InsertBreak(BreakType.PageBreak);
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-builder.Writeln("Heading 1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-builder.Writeln("Heading 1.1");
-builder.Writeln("Heading 1.2");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-builder.Writeln("Heading 2");
-builder.Writeln("Heading 3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-builder.Writeln("Heading 3.1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
-builder.Writeln("Heading 3.1.1");
-builder.Writeln("Heading 3.1.2");
-builder.Writeln("Heading 3.1.3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-builder.Writeln("Heading 3.2");
-builder.Writeln("Heading 3.3");
-```
-
-## Stap 4: Werk de inhoudsopgave bij
-De nieuw ingevoegde inhoudsopgave zal aanvankelijk leeg zijn. Om het in te vullen, werkt u de velden in het document bij:
-
-```csharp
-doc.UpdateFields();
-```
-
-## Stap 5: Sla het document op
-Nadat u de inhoudsopgave hebt ingevoegd en de velden hebt bijgewerkt, slaat u het document op in een bestand met behulp van de Save-methode van de Document-klasse:
-
-```csharp
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-```
-
-### Voorbeeldbroncode voor het invoegen van de inhoudsopgave met Aspose.Words voor .NET
-Hier is de volledige broncode voor het invoegen van een inhoudsopgave met Aspose.Words voor .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-// Initialiseer DocumentBuilder met Document-object
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
 // Inhoudsopgave invoegen
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+```
 
-// Begin met de daadwerkelijke documentinhoud op de tweede pagina.
+## Stap 3: Start de documentinhoud op een nieuwe pagina
+
+Om de juiste opmaak te garanderen, begint u de daadwerkelijke documentinhoud op een nieuwe pagina:
+
+```csharp
+// Voeg een pagina-einde in
 builder.InsertBreak(BreakType.PageBreak);
+```
 
+## Stap 4: Structureer uw document met koppen
+
+Organiseer uw documentinhoud met behulp van de juiste kopstijlen:
+
+```csharp
+// Kopstijlen instellen
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
 builder.Writeln("Heading 1");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
 builder.Writeln("Heading 1.1");
 builder.Writeln("Heading 1.2");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
 builder.Writeln("Heading 2");
 builder.Writeln("Heading 3");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
 builder.Writeln("Heading 3.1");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
-
 builder.Writeln("Heading 3.1.1");
 builder.Writeln("Heading 3.1.2");
 builder.Writeln("Heading 3.1.3");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
 builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
+```
 
+## Stap 5: Werk de inhoudsopgave bij en vul deze in
 
-// De nieuw ingevoegde inhoudsopgave zal aanvankelijk leeg zijn.
-// Het moet worden ingevuld door de velden in het document bij te werken.
+Werk de inhoudsopgave bij om de documentstructuur weer te geven:
+
+```csharp
+// Werk de velden met de inhoudsopgave bij
 doc.UpdateFields();
+```
 
+## Stap 6: Sla het document op
 
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
+Sla ten slotte uw document op in een opgegeven map:
+
+```csharp
+// Bewaar het document
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
 ## Conclusie
 
-Gefeliciteerd! U hebt met succes geleerd hoe u een inhoudsopgave in een Word-document kunt invoegen met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu een inhoudsopgave genereren met de juiste koppen en paginanummers voor uw documenten.
+Het toevoegen van een inhoudsopgave met Aspose.Words voor .NET is eenvoudig en verbetert de bruikbaarheid van uw documenten aanzienlijk. Door deze stappen te volgen, kunt u complexe documenten efficiënt organiseren en er doorheen navigeren.
 
-### Veelgestelde vragen over het invoegen van de inhoudsopgave in een Word-document
+## Veelgestelde vragen
 
-#### Vraag: Kan ik het uiterlijk van de inhoudsopgave aanpassen?
+### Kan ik het uiterlijk van de inhoudsopgave aanpassen?
+Ja, u kunt het uiterlijk en het gedrag van de inhoudsopgave aanpassen met Aspose.Words voor .NET API's.
 
- A: Ja, u kunt het uiterlijk van de inhoudsopgave aanpassen door de opmaakopties te wijzigen die zijn opgegeven in het`InsertTableOfContents` methode. Met de parameters kunt u de paginanummers, inspringing en andere stijlen bepalen.
+### Ondersteunt Aspose.Words het automatisch bijwerken van velden?
+Ja, met Aspose.Words kunt u velden zoals de inhoudsopgave dynamisch bijwerken op basis van documentwijzigingen.
 
-#### Vraag: Wat moet ik doen als ik specifieke kopniveaus wil opnemen in de inhoudsopgave?
+### Kan ik meerdere inhoudsopgaven in één document genereren?
+Aspose.Words ondersteunt het genereren van meerdere inhoudsopgaven met verschillende instellingen binnen één document.
 
- A: U kunt de gewenste kopniveaus opgeven die in de inhoudsopgave moeten worden opgenomen door de waarde binnen het aan te passen`InsertTableOfContents` methode. Gebruik bijvoorbeeld`"\\o \"1-3\""` omvat kopniveaus 1 tot en met 3.
+### Is Aspose.Words compatibel met verschillende versies van Microsoft Word?
+Ja, Aspose.Words garandeert compatibiliteit met verschillende versies van Microsoft Word-formaten.
 
-#### Vraag: Kan ik de inhoudsopgave automatisch bijwerken als ik wijzigingen aanbreng in de documentinhoud?
-
- A: Ja, u kunt de inhoudsopgave automatisch bijwerken door te bellen naar`UpdateFields` methode op het document. Dit zorgt ervoor dat eventuele wijzigingen in de inhoud van het document, zoals het toevoegen of verwijderen van koppen, worden weerspiegeld in de inhoudsopgave.
-
-#### Vraag: Hoe kan ik de kopniveaus in de inhoudsopgave anders opmaken?
-
- A: U kunt de kopniveaus verschillend opmaken door voor elk kopniveau verschillende alineastijlen te gebruiken. Door verschillende toe te wijzen`StyleIdentifier` waarden aan de`ParagraphFormat` van de`DocumentBuilder`, kunt u voor elk kopniveau verschillende stijlen maken.
-
-#### Vraag: Is het mogelijk om extra opmaak toe te voegen aan de kopjes in de inhoudsopgave?
-
- A: Ja, u kunt extra opmaak toevoegen aan de koppen in de inhoudsopgave, zoals lettertypestijlen, kleuren of andere eigenschappen. Door het aanpassen van de`Font` eigenschappen van de`DocumentBuilder`, kunt u aangepaste opmaak toepassen op de koppen.
+### Waar kan ik meer hulp en ondersteuning vinden voor Aspose.Words?
+Voor meer hulp kunt u terecht op de[Aspose.Words-forum](https://forum.aspose.com/c/words/8) of bekijk de[officiële documentatie](https://reference.aspose.com/words/net/).

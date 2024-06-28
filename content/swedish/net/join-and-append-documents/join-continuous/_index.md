@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Ställ in kontinuerlig sektionsstart
 
- För att få källdokumentet att visas direkt efter innehållet i måldokumentet, ställ in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.Continuous`.
+För att få källdokumentet att visas direkt efter innehållet i måldokumentet, ställ in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Steg 5: Spara det ändrade dokumentet
 
- Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
+Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");

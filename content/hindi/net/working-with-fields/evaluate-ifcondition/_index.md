@@ -18,7 +18,7 @@ url: /hi/net/working-with-fields/evaluate-ifcondition/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## चरण 2: IF फ़ील्ड डालें
+## चरण 2: IF फ़ील्ड डालें।
 
  हम उपयोग करते हैं`InsertField()` मूल्यांकन की स्थिति निर्दिष्ट करते हुए दस्तावेज़ में IF फ़ील्ड सम्मिलित करने की विधि।
 
@@ -36,12 +36,12 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-`actualResult` वेरिएबल में स्थिति मूल्यांकन का परिणाम शामिल होता है।
+`actualResult` चर में स्थिति मूल्यांकन का परिणाम शामिल है।
 
 ### .NET के लिए Aspose.Words के साथ IF स्थिति का मूल्यांकन करने के लिए नमूना स्रोत कोड
 
 ```csharp
-// दस्तावेज़ जनरेटर का निर्माण.
+//दस्तावेज़ जनरेटर का निर्माण.
 DocumentBuilder builder = new DocumentBuilder();
 
 // दस्तावेज़ में IF फ़ील्ड डालें.

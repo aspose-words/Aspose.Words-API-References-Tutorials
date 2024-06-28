@@ -79,7 +79,7 @@ Odpověď: Digitální podpisy v dokumentu aplikace Word jsou elektronické podp
 
 Odpověď: Chcete-li získat přístup k digitálním podpisům v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete postupovat takto:
 1.  Vložte dokument pomocí`Document` třídy a zadejte cestu k souboru dokumentu.
-2.  Použijte smyčku k iteraci`DigitalSignatures` sbírka listiny. Každá iterace představuje digitální podpis.
+2.  Použijte smyčku k iteraci`DigitalSignatures` sbírka dokumentů. Každá iterace představuje digitální podpis.
 
 #### Otázka: K jakým informacím mohu získat přístup pomocí digitálního podpisu v dokumentu aplikace Word?
 
@@ -97,13 +97,13 @@ Odpověď: Z digitálního podpisu v dokumentu aplikace Word můžete přistupov
 #### Otázka: Jak mohu ověřit platnost digitálních podpisů v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
 Odpověď: Chcete-li ověřit platnost digitálních podpisů v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete postupovat takto:
-1.  Přístup k`DigitalSignatures` sbírka listiny.
+1.  Přístup k`DigitalSignatures` sbírka dokumentů.
 2.  Projděte každou z nich`DigitalSignature` předmět ve sbírce.
 3.  Použijte`IsValid` vlastnictvím`DigitalSignature` objekt pro kontrolu, zda je podpis platný.
 
 #### Otázka: Mohu načíst komentáře nebo důvod podepisování z digitálního podpisu v dokumentu aplikace Word?
 
-Odpověď: Ano, komentáře nebo důvod podepisování můžete získat z digitálního podpisu v dokumentu aplikace Word. The`Comments` vlastnictvím`DigitalSignature` objekt poskytuje přístup ke komentářům určeným signatářem během procesu podepisování.
+Odpověď: Ano, komentáře nebo důvod podepisování můžete získat z digitálního podpisu v dokumentu aplikace Word. The`Comments` vlastnictvím`DigitalSignature` Objekt poskytuje přístup ke komentářům určeným signatářem během procesu podepisování.
 
 #### Otázka: Jaký typ dokumentů podporuje funkce ověřování podpisu v Aspose.Words pro .NET?
 

@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## ステップ 2: カスタム プロパティを追加する
-次に、必要なカスタム プロパティを追加します。たとえば、値「Aspose」を持つ「Company」プロパティを追加するには、`Add` CustomDocumentProperties コレクションのメソッド:
+次に、必要なカスタム プロパティを追加します。たとえば、値「Apose」を持つ「Company」プロパティを追加するには、`Add` CustomDocumentProperties コレクションのメソッド:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ A: Aspose.Words for .NET を使用してドキュメントのカスタム プロ
 
 のインスタンスを作成します。`Document`クラス。
 
-を使用して、必要なカスタム プロパティを追加します。`CustomDocumentProperties`コレクション。たとえば、`Add`メソッドを使用して、値「Aspose」を持つ「Company」プロパティを追加します。
+を使用して、必要なカスタム プロパティを追加します。`CustomDocumentProperties`コレクション。たとえば、`Add`メソッドを使用して、値「Apose」を持つ「Company」プロパティを追加します。
 
 のインスタンスを作成します。`PdfSaveOptions`クラスを作成し、カスタム プロパティをエクスポートする方法を指定します。`CustomPropertiesExport`財産。の`PdfCustomPropertiesExport.Standard`value は、デフォルト設定に従ってカスタム プロパティをエクスポートします。
 

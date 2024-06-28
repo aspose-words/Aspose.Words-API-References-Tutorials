@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Schritt 4: Absätze importieren und anhängen
 
-Durchlaufen Sie die Absätze im Quelldokument und importieren Sie jeden Absatz mithilfe von in das Zieldokument`importer`. Hängen Sie die importierten Knoten an den Hauptteil des Zieldokuments an.
+ Durchlaufen Sie die Absätze im Quelldokument und importieren Sie jeden Absatz mithilfe von in das Zieldokument`importer`. Hängen Sie die importierten Knoten an den Hauptteil des Zieldokuments an.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ Damit ist die Implementierung des Anhängens eines Quelldokuments an ein Zieldok
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Behalten Sie beim Importieren nummerierter Absätze die Formatierung der Quellenliste bei.
+	//Behalten Sie beim Importieren nummerierter Absätze die Formatierung der Quellenliste bei.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

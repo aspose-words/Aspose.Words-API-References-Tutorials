@@ -91,7 +91,7 @@ Aspose.Words for .NET ile Paragrafa Kenarlık ve gölgelendirme uygulama özelli
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir paragrafa kenarlık ve gölgelendirmenin nasıl uygulanacağını öğrendik. Paragrafın yapılandırılmasıyla`Borders` Ve`Shading` özellikleri sayesinde paragrafın kenarlık stilini, çizgi rengini ve dolgu rengini ayarlayabildik. Aspose.Words for .NET, paragrafların görünümünü özelleştirmek ve belgelerinizin görsel sunumunu geliştirmek için güçlü biçimlendirme yetenekleri sağlar.
+ Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir paragrafa kenarlık ve gölgelendirmenin nasıl uygulanacağını öğrendik. Paragrafın yapılandırılmasıyla`Borders` Ve`Shading` özellikleri sayesinde paragrafın kenarlık stilini, çizgi rengini ve dolgu rengini ayarlayabildik. Aspose.Words for .NET, paragrafların görünümünü özelleştirmek ve belgelerinizin görsel sunumunu geliştirmek için güçlü biçimlendirme yetenekleri sağlar.
 
 ### SSS'ler
 
@@ -100,13 +100,13 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir paragraf
 C: Aspose.Words for .NET kullanarak bir Word belgesindeki bir paragrafa kenarlık ve gölgelendirme uygulamak için şu adımları izleyin:
 1.  Yeni bir belge oluşturun ve`DocumentBuilder` nesne.
 2.  Şuraya erişerek paragraf kenarlıklarını yapılandırın:`Borders` mülkiyeti`ParagraphFormat` ve her iki taraf için kenarlık stilini ayarlama.
-3.  Şuraya erişerek paragraf dolgusunu yapılandırın:`Shading` mülkiyeti`ParagraphFormat` doku ve dolgu renklerini belirtme.
+3. Şuraya erişerek paragraf dolgusunu yapılandırın:`Shading` mülkiyeti`ParagraphFormat` doku ve dolgu renklerini belirtme.
 4.  kullanarak paragrafa içerik ekleyin.`Write` yöntemi`DocumentBuilder`.
 5.  kullanarak belgeyi kaydedin.`Save` yöntem.
 
 #### S: Paragrafın her iki tarafı için kenarlık stilini nasıl ayarlarım?
 
- C: Paragrafın her iki tarafının kenarlık stilini ayarlamak için`Borders` mülkiyeti`ParagraphFormat` ve ayarlayın`LineStyle` her biri için mülk`BorderType` (Örneğin,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Gibi farklı çizgi stillerini belirtebilirsiniz.`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, vesaire.
+ C: Paragrafın her iki tarafının kenarlık stilini ayarlamak için`Borders` mülkiyeti`ParagraphFormat` ve ayarlayın`LineStyle` her biri için mülk`BorderType` (Örneğin.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Gibi farklı çizgi stillerini belirtebilirsiniz.`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, vesaire.
 
 #### S: Paragraf gölgelendirmesinin dokusunu ve dolgu renklerini nasıl belirlerim?
 

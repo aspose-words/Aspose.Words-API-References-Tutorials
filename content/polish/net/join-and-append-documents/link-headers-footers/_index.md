@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj dokumenty źródłowe i docelowe
 
- Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
+Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words.`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Krok 4: Połącz nagłówki i stopki z poprzednią sekcją
 
-Aby połączyć nagłówki i stopki dokumentu źródłowego z poprzednią sekcją w dokumencie docelowym, możesz użyć metody`LinkToPrevious` metoda`HeadersFooters` kolekcja. Przechodząc`true` jako parametr zastępujesz wszelkie istniejące nagłówki i stopki w dokumencie źródłowym.
+ Aby połączyć nagłówki i stopki dokumentu źródłowego z poprzednią sekcją w dokumencie docelowym, możesz użyć metody`LinkToPrevious` metoda`HeadersFooters` kolekcja. Przechodząc`true` jako parametr zastępujesz wszelkie istniejące nagłówki i stopki w dokumencie źródłowym.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

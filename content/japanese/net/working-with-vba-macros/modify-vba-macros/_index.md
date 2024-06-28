@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ステップ 2: VBA マクロを含むドキュメントをロードする
-次に、変更する VBA マクロを含む Word 文書をロードします。
+次に、変更する VBA マクロを含む Word 文書を読み込みます。
 
 ```csharp
 // VBA マクロを含むドキュメントをロードします。

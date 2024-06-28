@@ -2,65 +2,52 @@
 title: Chèn trường hợp nhất bằng DOM
 linktitle: Chèn trường hợp nhất bằng DOM
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chèn trường hợp nhất trường tùy chỉnh vào tài liệu Word của bạn bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách chèn và định cấu hình các trường hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/insert-merge-field-using-dom/
 ---
 
-Dưới đây là hướng dẫn từng bước để giải thích mã nguồn C# bên dưới sử dụng tính năng "Chèn trường hợp nhất trường" của Aspose.Words cho .NET. Hãy chắc chắn làm theo từng bước một cách cẩn thận để có được kết quả mong muốn.
+Nếu bạn đang làm việc với việc xử lý tài liệu trong .NET, có thể bạn đã gặp Aspose.Words. Thư viện mạnh mẽ này cung cấp nhiều tính năng để thao tác tài liệu Word theo chương trình. Trong hướng dẫn này, chúng ta sẽ tập trung vào một tính năng cụ thể: chèn trường hợp nhất bằng Mô hình đối tượng tài liệu (DOM) trong Aspose.Words cho .NET. Hướng dẫn này sẽ hướng dẫn bạn từng bước, từ thiết lập môi trường đến chèn và cập nhật trường hợp nhất trong tài liệu Word.
 
-## Bước 1: Thiết lập thư mục tài liệu
+## Điều kiện tiên quyết
 
-Trong mã được cung cấp, bạn phải chỉ định thư mục tài liệu của mình. Thay thế giá trị "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp tới thư mục tài liệu của bạn.
+Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ bạn cần để làm theo hướng dẫn này.
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1. **Basic Knowledge of C#:** Bạn nên cảm thấy thoải mái với lập trình C#.
+2. **Visual Studio Installed:** Đảm bảo bạn đã cài đặt Visual Studio hoặc bất kỳ C# IDE nào khác trên máy của mình.
+3. **Aspose.Words for .NET:** Tải xuống và cài đặt phiên bản mới nhất của Aspose.Words cho .NET từ[phát hành](https://releases.aspose.com/words/net/).
+4. **Valid License:** Nếu bạn không có giấy phép, bạn có thể nhận được[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
 
-## Bước 2: Tạo Tài liệu và DocumentBuilder
+## Bước 1: Thiết lập dự án của bạn
 
-Chúng tôi bắt đầu bằng cách tạo một tài liệu mới và khởi tạo DocumentBuilder.
+Trước tiên, hãy thiết lập một dự án mới trong Visual Studio.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+1. **Open Visual Studio.**
+2. **Create a New Project:** Đi tới Tệp > Mới > Dự án. Chọn ứng dụng bảng điều khiển C#.
+3. **Name Your Project:** Đặt cho dự án của bạn một cái tên có ý nghĩa và nhấp vào Tạo.
 
-## Bước 3: Di chuyển con trỏ đến đoạn văn
+## Bước 2: Cài đặt Aspose.Words
 
- Chúng tôi sử dụng`MoveTo()` phương thức của DocumentBuilder để di chuyển con trỏ đến đoạn văn mà chúng ta muốn chèn trường hợp nhất trường.
+Để sử dụng Aspose.Words, bạn cần thêm nó vào dự án của mình. Điều này có thể được thực hiện thông qua Trình quản lý gói NuGet.
 
-```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-builder. MoveTo(para);
-```
+1. **Open NuGet Package Manager:** Nhấp chuột phải vào dự án của bạn trong Solution Explorer, sau đó chọn Quản lý gói NuGet.
+2. **Search for Aspose.Words:** Trong Trình quản lý gói NuGet, tìm kiếm "Apose.Words".
+3. **Install the Package:** Nhấp vào Cài đặt để thêm Aspose.Words vào dự án của bạn.
 
-## Bước 4: Chèn trường phối trường
+## Bước 3: Nhập không gian tên
 
- Chúng tôi sử dụng DocumentBuilder's`InsertField()` phương pháp chèn trường hợp nhất trường vào đoạn văn.
-
-```csharp
-FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
-```
-
-Sau đó, chúng tôi đặt cấu hình thuộc tính trường phối trường bằng cách chỉ định các tùy chọn thích hợp, chẳng hạn như tên trường, văn bản trước và sau trường cũng như các tùy chọn định dạng dọc.
+Để bắt đầu sử dụng Aspose.Words, bạn cần nhập các không gian tên cần thiết vào dự án của mình. Đây là cách bạn có thể làm điều đó:
 
 ```csharp
-field.FieldName = "Test1";
-field.TextBefore = "Test2";
-field. TextAfter = "Test3";
-field. IsMapped = true;
-field. IsVerticalFormatting = true;
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- Cuối cùng, chúng tôi gọi`Update()` phương pháp cập nhật trường.
+## Bước 4: Khởi tạo tài liệu của bạn
 
-```csharp
-field. Update();
-```
-
-### Mã nguồn mẫu để chèn trường hợp nhất trường với Aspose.Words cho .NET
+Bây giờ mọi thứ đã được thiết lập, hãy tạo một tài liệu Word mới và khởi tạo DocumentBuilder.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
@@ -69,51 +56,67 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Tạo tài liệu và DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Bước 5: Di chuyển con trỏ đến đoạn cụ thể
+
+Tiếp theo, chúng ta cần di chuyển con trỏ đến một đoạn cụ thể trong tài liệu mà chúng ta muốn chèn trường hợp nhất.
+
+```csharp
 // Di chuyển con trỏ tới đoạn văn.
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-builder. MoveTo(para);
+builder.MoveToParagraph(2, 0);
+```
 
+## Bước 6: Chèn trường hợp nhất
+
+ Việc chèn một trường hợp nhất rất đơn giản. Chúng tôi sẽ sử dụng`InsertField` phương pháp của`DocumentBuilder` lớp học.
+
+```csharp
 // Chèn trường hợp nhất trường.
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
+```
 
+## Bước 7: Định cấu hình trường hợp nhất
+
+Sau khi chèn trường hợp nhất, bạn có thể đặt các thuộc tính khác nhau để định cấu hình trường đó theo nhu cầu của mình.
+
+```csharp
 field.FieldName = "Test1";
 field.TextBefore = "Test2";
-field. TextAfter = "Test3";
-field. IsMapped = true;
-field. IsVerticalFormatting = true;
+field.TextAfter = "Test3";
+field.IsMapped = true;
+field.IsVerticalFormatting = true;
+```
 
+## Bước 8: Cập nhật và lưu tài liệu
+
+Cuối cùng, cập nhật trường này để đảm bảo tất cả cài đặt được áp dụng và lưu tài liệu.
+
+```csharp
 // Cập nhật trường.
-field. Update();
+field.Update();
 
+// Lưu tài liệu.
 doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
-Trong ví dụ này, chúng tôi đã tạo một tài liệu mới, di chuyển con trỏ đến đoạn văn mong muốn rồi chèn trường phối trường vào tài liệu.
+## Phần kết luận
 
-### Câu hỏi thường gặp
+Bằng cách làm theo các bước này, bạn có thể dễ dàng chèn và định cấu hình các trường hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm các bước thiết yếu từ việc thiết lập môi trường của bạn đến việc lưu tài liệu cuối cùng. Với Aspose.Words, bạn có thể tự động hóa các tác vụ xử lý tài liệu phức tạp, giúp ứng dụng .NET của bạn mạnh mẽ và hiệu quả hơn.
 
-#### Câu hỏi: Làm cách nào tôi có thể chèn trường hợp nhất vào tài liệu Word bằng Aspose.Words cho .NET với DOM?
+## Câu hỏi thường gặp
 
-Trả lời: Để chèn trường hợp nhất vào tài liệu Word bằng Aspose.Words cho .NET với DOM, bạn có thể làm theo các bước sau:
+### 1. Trường hợp nhất là gì?
+Trường hợp nhất là phần giữ chỗ trong tài liệu có thể được thay thế động bằng dữ liệu từ nguồn dữ liệu, chẳng hạn như cơ sở dữ liệu hoặc tệp CSV.
 
-1. Dẫn hướng đến đoạn mà bạn muốn chèn trường phối.
-2.  Tạo một`FieldMergeField` sự vật.
-3. Đặt các thuộc tính trường phối, chẳng hạn như tên trường và các tùy chọn định dạng.
-4.  Thêm trường hợp nhất vào đoạn văn bằng cách sử dụng`Paragraph.AppendChild` phương pháp.
+### 2. Tôi có thể sử dụng Aspose.Words miễn phí không?
+ Aspose.Words cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/). Để sử dụng lâu dài, bạn sẽ cần phải mua giấy phép.
 
-#### Câu hỏi: Làm cách nào tôi có thể chỉ định dữ liệu nguồn cho trường hợp nhất trong Aspose.Words cho .NET?
+### 3. Làm cách nào để có được giấy phép tạm thời cho Aspose.Words?
+ Bạn có thể lấy giấy phép tạm thời từ trang web Aspose[đây](https://purchase.aspose.com/temporary-license/).
 
-Trả lời: Để chỉ định dữ liệu nguồn cho trường hợp nhất trong Aspose.Words cho .NET, bạn có thể sử dụng`FieldMergeField.FieldName` phương pháp đặt tên trường hợp nhất, là tên của trường trong nguồn dữ liệu bên ngoài, chẳng hạn như tệp CSV, cơ sở dữ liệu, v.v. Bạn cũng có thể sử dụng phương thức`FieldMergeField.Text` phương pháp để đặt trực tiếp giá trị trường hợp nhất.
+### 4. Aspose.Words hỗ trợ phiên bản .NET nào?
+Aspose.Words hỗ trợ nhiều phiên bản .NET, bao gồm .NET Framework, .NET Core và .NET Standard.
 
-#### Câu hỏi: Tôi có thể tùy chỉnh giao diện của trường phối trong tài liệu Word bằng Aspose.Words cho .NET không?
-
- Trả lời: Có, bạn có thể tùy chỉnh giao diện của trường hợp nhất trong tài liệu Word bằng Aspose.Words for .NET. Bạn có thể đặt các tùy chọn định dạng như kiểu chữ, phông chữ, màu sắc, v.v. bằng cách sử dụng các thuộc tính của`FieldMergeField` sự vật.
-
-#### Câu hỏi: Làm cách nào để kiểm tra xem trường hợp nhất đã được chèn thành công vào tài liệu Word bằng Aspose.Words cho .NET hay chưa?
-
- Đáp: Để kiểm tra xem trường hợp nhất đã được chèn thành công hay chưa, bạn có thể duyệt nội dung tài liệu và tìm kiếm các trường hợp hợp nhất. Bạn có thể sử dụng các phương thức và thuộc tính của`Document` đối tượng để truy cập các đoạn văn, trường và các thành phần khác của tài liệu.
-
-#### Câu hỏi: Việc chèn trường hợp nhất bằng DOM có ảnh hưởng đến cấu trúc tài liệu Word với Aspose.Words cho .NET không?
-
-Trả lời: Việc chèn trường hợp nhất bằng DOM không ảnh hưởng trực tiếp đến cấu trúc của tài liệu Word. Tuy nhiên, nó thêm một phần tử trường mới vào nội dung tài liệu. Bạn có thể thao tác cấu trúc tài liệu bằng cách thêm, xóa hoặc sửa đổi các thành phần hiện có theo nhu cầu của mình.
+### 5. Tôi có thể tìm tài liệu API cho Aspose.Words ở đâu?
+ Tài liệu API có sẵn.[đây](https://reference.aspose.com/words/net/).

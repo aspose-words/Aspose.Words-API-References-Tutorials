@@ -30,7 +30,7 @@ Innan vi dyker in i koden, se till att du har följande förutsättningar på pl
 
 ## Steg 1: Ladda dokumentet
 
-Till att börja med måste vi ladda dokumentet som vi vill dela upp på sidor. Så här kan du göra det:
+För att börja måste vi ladda dokumentet som vi vill separera sidor. Så här kan du göra det:
 
 ```java
 // Ladda dokumentet
@@ -84,7 +84,7 @@ Ja, Aspose.Words stöder olika dokumentformat, inklusive DOC, RTF, HTML och mer.
 
 Aspose.Words för Java är ett kommersiellt bibliotek, men det erbjuder en gratis testversion. Du kan kolla deras hemsida för prisinformation och licensinformation.
 
-### Kan jag slå ihop separerade sidor tillbaka till ett enda dokument?
+### Kan jag separerade sammanfogningssidor tillbaka till ett enda dokument?
 
 Ja, du kan slå samman de separerade sidorna tillbaka till ett enda dokument med Aspose.Words för Java. Se dokumentationen för sammanslagningsinstruktioner.
 

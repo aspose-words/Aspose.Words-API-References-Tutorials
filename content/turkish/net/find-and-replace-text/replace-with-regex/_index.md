@@ -85,7 +85,7 @@ Bu makalede, Aspose.Words for .NET'in Regex ile Değiştir fonksiyonunun nasıl 
 
 #### S: Aspose.Words for .NET'teki "Replace With Regex" işlevi nedir?
 
-C: Aspose.Words for .NET'teki "Replace With Regex" işlevi, normal bir ifadeyle tanımlanan belirli kalıplara dayalı olarak metin değiştirme işlemi gerçekleştirmenize olanak tanır. Düzenli ifadeler kullanarak karmaşık arama kalıplarını belirleyerek bir belgedeki metni bulmanıza ve değiştirmenize olanak tanır.
+C: Aspose.Words for .NET'teki "Replace With Regex" işlevi, normal bir ifadeyle tanımlanan belirli kalıplara dayalı olarak metin değiştirme işlemi gerçekleştirmenize olanak tanır. Düzenli ifadeler kullanarak karmaşık arama kalıplarını belirleyerek bir belgedeki metni bulmanıza ve değiştirmenize olanak sağlar.
 
 #### S: Aspose.Words for .NET'i kullanarak nasıl yeni bir belge oluşturabilirim?
 
@@ -119,9 +119,9 @@ doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 
 #### S: Aspose.Words for .NET'te düzenli ifadeler kullanarak metni eşleşen desene göre farklı içerikle değiştirebilir miyim?
 
-C: Evet, Aspose.Words for .NET'teki normal ifadeleri kullanarak metni eşleşen desene göre farklı içerikle değiştirebilirsiniz. Normal ifade kalıbınızdaki grupları yakalayarak, yedek dizede yakalanan gruplara başvurabilir ve bunları kullanabilirsiniz. Bu, eşleşen modele göre dinamik değişikliklere olanak tanır.
+C: Evet, Aspose.Words for .NET'teki normal ifadeleri kullanarak metni eşleşen desene göre farklı içerikle değiştirebilirsiniz. Normal ifade kalıbınızda grupları yakalayarak, yedek dizede yakalanan gruplara başvurabilir ve bunları kullanabilirsiniz. Bu, eşleşen modele göre dinamik değişikliklere olanak tanır.
 
-#### S: Aspose.Words for .NET'te metin değişimi için normal ifadeleri kullanırken herhangi bir sınırlama veya dikkate alınması gereken noktalar var mı?
+#### S: Aspose.Words for .NET'te metin değişimi için normal ifadeleri kullanırken herhangi bir sınırlama veya dikkat edilmesi gereken nokta var mı?
 
 C: Aspose.Words for .NET'te metin değişimi için normal ifadeler kullanırken karmaşıklık ve performans sonuçlarına dikkat etmek önemlidir. Düzenli ifadeler güçlü olabilir ancak karmaşık modeller, arama ve değiştirme işleminin performansını etkileyebilir. Ayrıca normal ifadelerinizin doğru olduğundan ve belgenin içeriğiyle ilgili her türlü uç durumu veya olası çatışmayı hesaba kattığından emin olun.
 

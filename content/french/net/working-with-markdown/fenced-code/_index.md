@@ -64,7 +64,7 @@ builder.Writeln("This is a fenced code with info string");
 
 #### Q : Qu'est-ce que le code délimité dans Markdown ?
 
-: Le code délimité dans Markdown est une méthode de formatage utilisée pour afficher le code dans un document Markdown. Elle consiste à encadrer le code avec des délimiteurs spécifiques.
+R : Le code délimité dans Markdown est une méthode de formatage utilisée pour afficher le code dans un document Markdown. Elle consiste à encadrer le code avec des délimiteurs spécifiques.
 
 #### Q : Quels sont les avantages du code délimité dans Markdown ?
 

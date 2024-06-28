@@ -23,7 +23,7 @@ url: /ko/net/working-with-vba-macros/read-vba-macros/
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## 2단계: 문서 로드 및 VBA 매크로 읽기
+## 2단계: 문서를 로드하고 VBA 매크로를 읽습니다.
 다음으로 Word 문서를 로드하고 VBA 프로젝트가 포함되어 있는지 확인합니다. 문서에 VBA 프로젝트가 있으면 프로젝트의 모든 모듈을 반복하고 각 모듈의 소스 코드를 표시합니다.
 
 ```csharp

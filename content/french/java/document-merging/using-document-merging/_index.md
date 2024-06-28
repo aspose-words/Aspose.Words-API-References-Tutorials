@@ -171,7 +171,7 @@ public class DocumentMerger {
 
 - Gérez toujours les exceptions lors de la fusion de documents pour éviter les erreurs inattendues.
 
-- Vérifiez régulièrement les mises à jour et utilisez la dernière version d'Aspose.Words for Java pour bénéficier de corrections de bugs et de nouvelles fonctionnalités.
+- Vérifiez régulièrement les mises à jour et utilisez la dernière version d'Aspose.Words for Java pour bénéficier de corrections de bogues et de nouvelles fonctionnalités.
 
 - Testez la fusion de documents avec différents types et tailles de documents pour garantir des performances optimales.
 
@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words for Java permet aux développeurs Java de fusionner des documents Word sans effort. En suivant le guide étape par étape de cet article, vous pouvez désormais fusionner des documents, gérer le formatage, insérer des sauts et gérer facilement les conflits. Avec Aspose.Words pour Java, la fusion de documents devient un processus transparent et automatisé, permettant d'économiser un temps et des efforts précieux.
 
-## 11. FAQ 
+## 11.FAQ 
 
 ### Puis-je fusionner des documents avec des formats et des styles différents ?
 

@@ -1,7 +1,7 @@
 ---
 title: Schriftarten und Textstil in Word-Dokumenten verstehen
 linktitle: Schriftarten und Textstil in Word-Dokumenten verstehen
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Entdecken Sie die Welt der Schriftarten und Textstile in Word-Dokumenten. Erfahren Sie, wie Sie mit Aspose.Words für Python die Lesbarkeit und visuelle Attraktivität verbessern. Umfassende Anleitung mit Schritt-für-Schritt-Beispielen.
 type: docs
 weight: 13
@@ -11,7 +11,7 @@ Im Bereich der Textverarbeitung spielen Schriftarten und Textstil eine entscheid
 
 ## Einführung
 
-Eine effektive Dokumentformatierung geht über die bloße Vermittlung des Inhalts hinaus. Es fesselt die Aufmerksamkeit des Lesers und verbessert das Verständnis. Schriftarten und Textstil tragen wesentlich zu diesem Prozess bei. Lassen Sie uns die grundlegenden Konzepte von Schriftarten und Textstilen erkunden, bevor wir uns mit der praktischen Umsetzung mit Aspose.Words für Python befassen.
+Eine effektive Dokumentformatierung geht über die bloße Vermittlung des Inhalts hinaus; Es fesselt die Aufmerksamkeit des Lesers und verbessert das Verständnis. Schriftarten und Textstil tragen wesentlich zu diesem Prozess bei. Lassen Sie uns die grundlegenden Konzepte von Schriftarten und Textstilen erkunden, bevor wir uns mit der praktischen Umsetzung mit Aspose.Words für Python befassen.
 
 ## Bedeutung von Schriftarten und Textstil
 
@@ -29,7 +29,7 @@ Die Schriftgröße bestimmt die visuelle Hervorhebung des Textes. Überschriften
 
 ### Schriftarten
 
-Schriftstile betonen den Text. Fett gedruckter Text weist auf Wichtigkeit hin, während kursiver Text häufig auf eine Definition oder einen Fremdbegriff hinweist. Durch Unterstreichungen können auch wichtige Punkte hervorgehoben werden.
+Schriftstile betonen den Text. Fettgedruckter Text weist auf Wichtigkeit hin, während kursiver Text häufig auf eine Definition oder einen Fremdbegriff hinweist. Durch Unterstreichungen können auch wichtige Punkte hervorgehoben werden.
 
 ## Textfarbe und Hervorhebung
 

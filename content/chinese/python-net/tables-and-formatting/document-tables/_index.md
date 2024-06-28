@@ -104,7 +104,7 @@ table.description = "Figures are in USD."
 
 ## 表格的响应式设计：
 
-在布局不同的文档中，响应式表格设计变得至关重要。根据可用空间调整列宽和单元格高度可确保表格保持可读性和视觉吸引力。
+在具有不同布局的文档中，响应式表格设计变得至关重要。根据可用空间调整列宽和单元格高度可确保表格保持可读性和视觉吸引力。
 
 ```python
 # Check available space and adjust column widths accordingly

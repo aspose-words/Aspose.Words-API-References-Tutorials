@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 5. lépés: Mentse el a módosított dokumentumot
 
- Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ Ezzel befejeződik a két dokumentum egy új oldalon történő egyesítése az 
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Állítsa be a csatolt dokumentumot úgy, hogy egy új oldalon induljon.
+	// Állítsa be a csatolt dokumentumot úgy, hogy egy új oldalon induljon.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// A forrásdokumentum hozzáfűzése a forrásdokumentumban található eredeti stílusok használatával.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

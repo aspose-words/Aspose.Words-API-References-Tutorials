@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Ten kod uzyskuje dostęp do pierwszej sekcji dokumentu za pomocą indeksu`0` i usuwa cały tekst w tym zakresie.
+ Ten kod uzyskuje dostęp do pierwszej sekcji dokumentu za pomocą indeksu.`0` i usuwa cały tekst w tym zakresie.
 
 #### P: Czy mogę usunąć tekst z wielu zakresów w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
 

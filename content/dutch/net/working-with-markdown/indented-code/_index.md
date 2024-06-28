@@ -18,16 +18,16 @@ Eerst gebruiken we een documentgenerator om inhoud aan ons document toe te voege
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Stap 2: Voeg styling toe voor ingesprongen code
+## Stap 2: Voeg styling toe voor de opgegeven code
 
- We zullen een aangepaste stijl toevoegen voor de ingesprongen code met behulp van de`Styles.Add` werkwijze van de`Document` voorwerp. In dit voorbeeld maken we een stijl met de naam "IndentedCode" voor ingesprongen code.
+We zullen een aangepaste stijl toevoegen voor de ingesprongen code met behulp van de`Styles.Add` werkwijze van de`Document` voorwerp. In dit voorbeeld maken we een stijl met de naam "IndentedCode" voor ingesprongen code.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Stap 3: Voeg ingesprongen code toe
+## Stap 3: Voeg de opgegeven code toe
 
 Nu kunnen we een ingesprongen codeblok toevoegen met behulp van de aangepaste stijl "IndentedCode".
 
@@ -51,7 +51,7 @@ Gefeliciteerd! U hebt nu geleerd hoe u de ingesprongen codefunctie kunt gebruike
 
 ### Veelgestelde vragen
 
-#### Vraag: Wat is ingesprongen code in Markdown?
+#### Vraag: Wat is de opgegeven code in Markdown?
 
 A: Ingesprongen code in Markdown is een opmaakmethode die wordt gebruikt om code in een Markdown-document weer te geven. Het bestaat uit het inspringen van elke regel code met spaties of tabs.
 

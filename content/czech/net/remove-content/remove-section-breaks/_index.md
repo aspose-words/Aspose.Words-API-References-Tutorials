@@ -40,7 +40,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
     // Zkopírujte obsah aktuální sekce na začátek poslední sekce.
     doc.LastSection.PrependContent(doc.Sections[i]);
-    // Odstraňte zkopírovanou sekci.
+    // Odstraňte zkopírovanou část.
     doc.Sections[i].Remove();
 }
 ```
@@ -67,7 +67,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
 	// Zkopírujte obsah aktuální sekce na začátek poslední sekce.
 	doc.LastSection.PrependContent(doc.Sections[i]);
-	// Odstraňte zkopírovanou sekci.
+	// Odstraňte zkopírovanou část.
 	doc.Sections[i].Remove();
 }
 

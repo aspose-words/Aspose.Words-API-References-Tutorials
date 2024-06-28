@@ -53,7 +53,7 @@ Odblokuj moc Aspose.Words dla Java. Dowiedz się, jak ładować dokumenty teksto
 ### [Zaawansowane opcje zapisywania w Aspose.Words dla Java](./advance-saving-options/)
 Naucz się zaawansowanej manipulacji dokumentami za pomocą Aspose.Words dla Java. Szyfruj, obsługuj metapliki i nie tylko. Dokumenty programu Word na Twój sposób.
 ### [Zapisywanie dokumentów HTML ze stałym układem w Aspose.Words dla Java](./saving-html-documents-with-fixed-layout/)
-Dowiedz się, jak zapisywać dokumenty HTML ze stałym układem w Aspose.Words dla Java. Postępuj zgodnie z naszym przewodnikiem krok po kroku dotyczącym bezproblemowego formatowania dokumentów.
+Dowiedz się, jak zapisywać dokumenty HTML ze stałym układem w Aspose.Words dla Java. Postępuj zgodnie z naszym przewodnikiem krok po kroku dotyczącym płynnego formatowania dokumentów.
 ### [Zaawansowane opcje zapisywania dokumentów HTML w Aspose.Words Java](./advance-html-documents-saving-options/)
 tym samouczku omówiliśmy różne zaawansowane opcje zapisywania dokumentów HTML za pomocą Aspose.Words dla Java. Opcje te umożliwiają tworzenie wysokiej jakości kodu HTML.
 ### [Zapisywanie obrazów z dokumentów w Aspose.Words dla Java](./saving-images-from-documents/)

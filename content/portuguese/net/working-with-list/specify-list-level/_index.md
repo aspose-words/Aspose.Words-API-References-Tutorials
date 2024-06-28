@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Etapa 6: parar de formatar a lista
 
- Para interromper a formatação da lista, defina`null` para o`List` propriedade do gerador de documentos:
+ Para interromper a formatação da lista, defina`null` para o`List`propriedade do gerador de documentos:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Crie uma lista numerada com base em um dos modelos de lista do Microsoft Word
+// Crie uma lista numerada com base em um dos modelos de lista do Microsoft Word.
 // aplique-o ao parágrafo atual do construtor de documentos.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Crie uma lista com marcadores com base em um dos modelos de lista do Microsoft Word
+// Crie uma lista com marcadores com base em um dos modelos de lista do Microsoft Word.
 // aplique-o ao parágrafo atual do construtor de documentos.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### P: Posso adicionar níveis adicionais a uma lista numerada no Aspose.Words?
 
- R: Sim, é possível adicionar níveis adicionais a uma lista numerada no Aspose.Words. O`ListLevel` class permite definir propriedades de formatação para cada nível da lista. Você pode definir opções como prefixo, sufixo, alinhamento, recuo, etc. Isso permite criar listas com vários níveis de hierarquia.
+ R: Sim, é possível adicionar níveis adicionais a uma lista numerada no Aspose.Words. O`ListLevel`class permite definir propriedades de formatação para cada nível da lista. Você pode definir opções como prefixo, sufixo, alinhamento, recuo, etc. Isso permite criar listas com vários níveis de hierarquia.
 
 

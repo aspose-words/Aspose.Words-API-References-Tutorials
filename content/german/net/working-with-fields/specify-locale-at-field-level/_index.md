@@ -72,4 +72,4 @@ Dies war ein Beispielquellcode zur Angabe der Lokalisierung auf Feldebene in ein
 
 #### F: Wie kann ich das aktuell verwendete Gebietsschema für ein Feld in Aspose.Words für .NET abrufen?
 
- A: Um das aktuell verwendete Gebietsschema für ein Feld in Aspose.Words für .NET abzurufen, können Sie das Feld verwenden`Field.LocaleId` Eigentum. Dadurch können Sie die mit dem Feld verknüpfte Gebietsschemakennung abrufen.
+ A: Um das aktuell verwendete Gebietsschema für ein Feld in Aspose.Words für .NET abzurufen, können Sie das Feld verwenden`Field.LocaleId`Eigentum. Dadurch können Sie die mit dem Feld verknüpfte Gebietsschemakennung abrufen.

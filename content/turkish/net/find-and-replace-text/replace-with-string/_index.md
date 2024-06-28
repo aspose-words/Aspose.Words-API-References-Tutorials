@@ -40,7 +40,7 @@ builder.Writeln("sad mad bad");
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-## Adım 4: Düzenlenen belgeyi kaydetme
+## 4. Adım: Düzenlenen belgeyi kaydetme
 
 Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydederiz:`Save` yöntem:
 

@@ -10,7 +10,7 @@ url: /hu/java/document-loading-and-saving/loading-and-saving-html-documents/
 
 ## Bevezetés a HTML-dokumentumok betöltéséhez és mentéséhez az Aspose.Words for Java segítségével
 
-Ebben a cikkben megvizsgáljuk, hogyan tölthet be és menthet HTML dokumentumokat az Aspose.Words for Java könyvtár használatával. Az Aspose.Words egy hatékony Java API, amely lehetővé teszi a Word-dokumentumok kezelését, és különféle funkciókat biztosít a különböző dokumentumformátumok, köztük a HTML kezeléséhez. Lépésről lépésre végigvezetjük a folyamaton, forráskód-példákkal kiegészítve.
+Ebben a cikkben megvizsgáljuk, hogyan tölthet be és menthet HTML dokumentumokat az Aspose.Words for Java könyvtár használatával. Az Aspose.Words egy hatékony Java API, amely lehetővé teszi a Word-dokumentumokkal való munkát, és különféle funkciókat biztosít a különböző dokumentumformátumok, köztük a HTML kezeléséhez. Lépésről lépésre végigvezetjük a folyamaton, forráskód-példákkal kiegészítve.
 
 ## Előfeltételek
 

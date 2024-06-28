@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/split-document/by-sections/
 ---
 
-tym przykładzie pokażemy, jak podzielić dokument programu Word na osobne sekcje za pomocą funkcji Według sekcji w Aspose.Words dla .NET. Wykonaj poniższe kroki, aby zrozumieć kod źródłowy i uzyskać osobne dokumenty dla każdej sekcji.
+W tym przykładzie pokażemy, jak podzielić dokument programu Word na osobne sekcje za pomocą funkcji Według sekcji w Aspose.Words dla .NET. Wykonaj poniższe kroki, aby zrozumieć kod źródłowy i uzyskać osobne dokumenty dla każdej sekcji.
 
 ## Krok 1: Ładowanie dokumentu
 
@@ -52,7 +52,7 @@ Document doc = new Document(MyDir + "Big document.docx");
 
 for (int i = 0; i < doc.Sections.Count; i++)
 {
-	// Podziel dokument na mniejsze części, w tym przypadku według sekcji.
+	//Podziel dokument na mniejsze części, w tym przypadku według sekcji.
 	Section section = doc.Sections[i].Clone();
 
 	Document newDoc = new Document();
@@ -81,7 +81,7 @@ Zachęcamy do zapoznania się z innymi zaawansowanymi funkcjami oferowanymi prze
 ### Często zadawane pytania
 
 #### P1: Czy mogę podzielić dokument programu Word na sekcje w oparciu o określone kryteria inne niż podział sekcji?
-Tak, możesz dostosować kryteria podziału zgodnie ze swoimi konkretnymi potrzebami. Oprócz podziałów sekcji, możesz dzielić dokument na podstawie innych elementów, takich jak nagłówki, zakładki lub określona treść, korzystając z różnych funkcji i metod udostępnianych przez Aspose.Words dla .NET.
+Tak, możesz dostosować kryteria podziału zgodnie ze swoimi konkretnymi potrzebami. Oprócz podziałów sekcji możesz dzielić dokument na podstawie innych elementów, takich jak nagłówki, zakładki lub określona treść, korzystając z różnych funkcji i metod udostępnianych przez Aspose.Words dla .NET.
 
 #### P2: Czy możliwe jest ponowne połączenie sekcji w jeden dokument?
  Tak, możesz scalić oddzielne sekcje z powrotem w jeden dokument, importując i łącząc sekcje z wielu dokumentów za pomocą`ImportNode` I`Sections.Add` metody. Dzięki temu można odwrócić proces podziału i zrekonstruować oryginalny dokument.

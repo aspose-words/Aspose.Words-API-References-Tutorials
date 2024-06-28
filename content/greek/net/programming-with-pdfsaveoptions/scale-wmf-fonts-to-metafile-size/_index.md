@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Βήμα 3: Διαμορφώστε τις επιλογές απόδοσης μετα-αρχείων
 
- Για να ενεργοποιήσετε ή να απενεργοποιήσετε την κλιμάκωση γραμματοσειρών WMF στο μέγεθος μετα-αρχείου, πρέπει να ρυθμίσουμε τις παραμέτρους`MetafileRenderingOptions`αντικείμενο. Σε αυτό το παράδειγμα, απενεργοποιούμε την κλίμακα γραμματοσειράς ορίζοντας το`ScaleWmfFontsToMetafileSize`ιδιοκτησία σε`false`.
+ Για να ενεργοποιήσετε ή να απενεργοποιήσετε την κλιμάκωση γραμματοσειρών WMF στο μέγεθος μετα-αρχείου, πρέπει να ρυθμίσουμε τις παραμέτρους`MetafileRenderingOptions` αντικείμενο. Σε αυτό το παράδειγμα, απενεργοποιούμε την κλίμακα γραμματοσειράς ορίζοντας το`ScaleWmfFontsToMetafileSize`ιδιοκτησία σε`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Εάν το Aspose.Words δεν μπορεί να αποδώσει σωστά ορισμένες από τις εγγραφές μετα-αρχείου σε διανυσματικά γραφικά
+	//Εάν το Aspose.Words δεν μπορεί να αποδώσει σωστά ορισμένες από τις εγγραφές μετα-αρχείου σε διανυσματικά γραφικά
 	// τότε το Aspose.Words αποδίδει αυτό το μετααρχείο σε bitmap.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

@@ -23,7 +23,7 @@ url: /zh-hant/net/working-with-fields/
 | [使用 DOM 插入合併字段](./insert-merge-field-using-dom/) | 了解如何使用 Aspose.Words for .NET 將自訂欄位合併欄位插入 Word 文件中。 |
 | [使用 DOM 插入郵件合併地址區塊字段](./insert-mail-merge-address-block-field-using-dom/) | 了解如何使用 Aspose.Words for .NET 將郵件合併位址區塊欄位插入 Word 文件中。 |
 | [在沒有文件產生器的情況下插入 FieldIncludeText](./insert-field-include-text-without-document-builder/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中插入 FieldIncludeText 欄位。 |
-| [插入欄位 無](./insert-field-none/) | 了解如何在 .NET 的 Word 和 Aspose.Words 文件中贏得 AUCUN 冠軍。 |
+| [插入欄位 無](./insert-field-none/) | 了解如何在 Word avec Aspose.Words pour .NET 中使用 AUCUN 建立文件。 |
 | [插入字段](./insert-field/) | 了解如何使用 Aspose.Words for .NET 將欄位插入 Word 文件中。使用動態欄位個性化您的文件。 |
 | [使用字段生成器插入字段](./insert-field-using-field-builder/) | 了解如何使用 Aspose.Words for .NET 將自訂欄位插入 Word 文件中。 |
 | [插入作者字段](./insert-author-field/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中插入作者欄位。指定作者姓名以個性化您的文件。 |

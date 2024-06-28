@@ -91,7 +91,7 @@ Hier is de volledige broncode voor de functie Randen en arcering toepassen op al
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u randen en arcering kunt toepassen op een alinea in een Word-document met behulp van Aspose.Words voor .NET. Door de alinea's te configureren`Borders` En`Shading` eigenschappen konden we de randstijl, lijnkleur en vulkleur voor de alinea instellen. Aspose.Words voor .NET biedt krachtige opmaakmogelijkheden om het uiterlijk van alinea's aan te passen en de visuele weergave van uw documenten te verbeteren.
+ In deze zelfstudie hebben we geleerd hoe u randen en arcering kunt toepassen op een alinea in een Word-document met behulp van Aspose.Words voor .NET. Door de alinea's te configureren`Borders` En`Shading` eigenschappen konden we de randstijl, lijnkleur en vulkleur voor de alinea instellen. Aspose.Words voor .NET biedt krachtige opmaakmogelijkheden om het uiterlijk van alinea's aan te passen en de visuele weergave van uw documenten te verbeteren.
 
 ### Veelgestelde vragen
 
@@ -100,7 +100,7 @@ In deze zelfstudie hebben we geleerd hoe u randen en arcering kunt toepassen op 
 A: Volg deze stappen om randen en arcering toe te passen op een alinea in een Word-document met Aspose.Words voor .NET:
 1.  Maak een nieuw document en a`DocumentBuilder` voorwerp.
 2.  Configureer de alinearanden door naar het bestand te gaan`Borders` eigendom van de`ParagraphFormat` en het instellen van de randstijl voor elke zijde.
-3.  Configureer de alinea-opvulling door naar het bestand te gaan`Shading` eigendom van de`ParagraphFormat` en het specificeren van de textuur en opvulkleuren.
+3. Configureer de alinea-opvulling door naar het bestand te gaan`Shading` eigendom van de`ParagraphFormat` en het specificeren van de textuur en opvulkleuren.
 4.  Voeg inhoud toe aan de alinea met behulp van de`Write` werkwijze van de`DocumentBuilder`.
 5.  Sla het document op met behulp van de`Save` methode.
 

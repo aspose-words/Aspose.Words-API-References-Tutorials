@@ -99,7 +99,7 @@ date_picker.name = "birth_date"
 text_input_field.placeholder_text = "Enter your full name"
 ```
 
-### デフォルト値とフォーマット
+### デフォルト値と書式設定
 
 フォームフィールドにデフォルト値を事前に入力し、それに応じてフォーマットすることができます。
 

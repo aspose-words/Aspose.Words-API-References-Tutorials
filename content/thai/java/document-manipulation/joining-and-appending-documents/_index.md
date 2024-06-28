@@ -2,7 +2,7 @@
 title: การรวมและผนวกเอกสารใน Aspose.Words สำหรับ Java
 linktitle: การเข้าร่วมและแนบเอกสาร
 second_title: Aspose.Words Java การประมวลผลเอกสาร API
-description: เรียนรู้วิธีเข้าร่วมและผนวกเอกสารอย่างง่ายดายโดยใช้ Aspose.Words สำหรับ Java รักษาการจัดรูปแบบ จัดการส่วนท้ายของส่วนหัว และอื่นๆ
+description: เรียนรู้วิธีเข้าร่วมและผนวกเอกสารอย่างง่ายดายโดยใช้ Aspose.Words สำหรับ Java รักษาการจัดรูปแบบ จัดการส่วนหัว ส่วนท้าย และอื่นๆ
 type: docs
 weight: 30
 url: /th/java/document-manipulation/joining-and-appending-documents/
@@ -63,7 +63,7 @@ srcDoc.getFirstSection().getPageSetup().setRestartPageNumbering(true);
 // ตรวจสอบให้แน่ใจว่าการตั้งค่าการตั้งค่าหน้าตรงกับเอกสารปลายทาง
 ```
 
-## การรวมเอกสารด้วยสไตล์ที่แตกต่าง
+## การรวมเอกสารที่มีสไตล์ต่างกัน
 
 ```java
 dstDoc.appendDocument(srcDoc, ImportFormatMode.USE_DESTINATION_STYLES);

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกบันทึกเป็น PDF พร้อมตัวเลือกแผน
 
- ในการตั้งค่าตัวเลือกโครงร่างใน PDF ที่สร้างขึ้น เราจำเป็นต้องกำหนดค่า`PdfSaveOptions` วัตถุ. เราสามารถกำหนดจำนวนระดับโครงร่างส่วนหัวได้ (`HeadingsOutlineLevels`) และจำนวนระดับโครงร่างที่ขยาย (`ExpandedOutlineLevels`).
+ในการตั้งค่าตัวเลือกโครงร่างใน PDF ที่สร้างขึ้น เราจำเป็นต้องกำหนดค่า`PdfSaveOptions` วัตถุ วัตถุ เราสามารถกำหนดจำนวนระดับโครงร่างส่วนหัวได้ (`HeadingsOutlineLevels`) และจำนวนระดับโครงร่างที่ขยาย (`ExpandedOutlineLevels`-
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -46,7 +46,7 @@ saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-นั่นคือทั้งหมดที่ ! คุณได้ตั้งค่าตัวเลือกเค้าร่างในเอกสารเรียบร้อยแล้ว และสร้าง PDF ที่มีตัวเลือกเค้าร่างที่เกี่ยวข้องโดยใช้ Aspose.Words สำหรับ .NET
+นั่นคือทั้งหมด! คุณได้ตั้งค่าตัวเลือกเค้าร่างในเอกสารเรียบร้อยแล้ว และสร้าง PDF ที่มีตัวเลือกเค้าร่างที่เกี่ยวข้องโดยใช้ Aspose.Words สำหรับ .NET
 
 ### ตัวอย่างซอร์สโค้ดเพื่อตั้งค่าตัวเลือกแผนเป็นขนาด metafile ด้วย Aspose.Words สำหรับ .NET
 

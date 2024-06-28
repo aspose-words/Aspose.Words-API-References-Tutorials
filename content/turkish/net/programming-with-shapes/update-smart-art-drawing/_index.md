@@ -24,14 +24,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Belgeyi Yükleyin
-Smart Art çizimini içeren Word belgesini kullanarak yükleyin.`Document` sınıf yapıcısı.
+ Smart Art çizimini içeren Word belgesini kullanarak yükleyin.`Document` sınıf yapıcısı.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## 3. Adım: Akıllı Sanat Çizimini Güncelleyin
- kullanarak belgedeki şekilleri yineleyin.`GetChildNodes` yöntemi ile`NodeType.Shape` parametre. kullanarak her şeklin Smart Art'a sahip olup olmadığını kontrol edin.`HasSmartArt` mülk ve eğer doğruysa, arayın`UpdateSmartArtDrawing` Smart Art çizimini güncelleme yöntemi.
+ kullanarak belgedeki şekilleri yineleyin.`GetChildNodes` yöntemi ile`NodeType.Shape` parametreler. kullanarak her şeklin Smart Art'a sahip olup olmadığını kontrol edin.`HasSmartArt` mülk ve eğer doğruysa, arayın`UpdateSmartArtDrawing` Smart Art çizimini güncelleme yöntemi.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

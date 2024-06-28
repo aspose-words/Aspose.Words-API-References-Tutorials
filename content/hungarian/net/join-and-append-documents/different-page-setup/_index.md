@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. lépés: Állítsa be a forrásdokumentum oldalbeállításait
 
- Módosítsa a forrásdokumentum oldalbeállítási beállításait a megfelelő folytatás és számozás érdekében. Ebben a példában a szakasz kezdetét állítjuk be`SectionStart.Continuous` és indítsa újra az oldalszámozást. Gondoskodunk arról is, hogy az oldal szélessége, magassága és tájolása megegyezzen a céldokumentum utolsó részével.
+ Módosítsa a forrásdokumentum oldalbeállítási beállításait a megfelelő folytatás és számozás érdekében. Ebben a példában a szakasz kezdetét állítjuk be`SectionStart.Continuous`és indítsa újra az oldalszámozást. Gondoskodunk arról is, hogy az oldal szélessége, magassága és tájolása megegyezzen a céldokumentum utolsó részével.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## 4. lépés: Módosítsa a bekezdés formázását
 
- A megfelelő formázás megőrzése érdekében ismételje meg a forrásdokumentum összes bekezdését, és állítsa be a`KeepWithNext`tulajdonát`true`Ez biztosítja, hogy a bekezdések együtt maradjanak a hozzáfűzési folyamat során.
+ A megfelelő formázás megőrzése érdekében ismételje meg a forrásdokumentum összes bekezdését, és állítsa be a`KeepWithNext`tulajdonát`true`. Ez biztosítja, hogy a bekezdések együtt maradjanak a hozzáfűzési folyamat során.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 6. lépés: Mentse el a céldokumentumot
 
- Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ Ezzel befejeződik a különböző oldalbeállítási beállításokkal rendelke
 	// Indítsa újra az oldalszámozást a forrásdokumentum elején.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Annak érdekében, hogy ez ne forduljon elő, ha a forrásdokumentum eltérő oldalbeállításokkal rendelkezik, győződjön meg arról, hogy a
+	//Annak érdekében, hogy ez ne forduljon elő, ha a forrásdokumentum eltérő oldalbeállításokkal rendelkezik, győződjön meg arról, hogy a
 	// a beállítások megegyeznek a céldokumentum utolsó részében.
 	// Ha további folyamatos szakaszok következnek a forrásdokumentumban,
-	//ezt meg kell ismételni azoknál a szakaszoknál.
+	// ezt meg kell ismételni azoknál a szakaszoknál.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

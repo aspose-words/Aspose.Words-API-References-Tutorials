@@ -21,7 +21,7 @@ Với những hướng dẫn này, bạn sẽ có thể cải thiện tài liệ
 | [Chèn biểu đồ cột đơn giản](./insert-simple-column-chart/) | Tìm hiểu cách chèn biểu đồ cột đơn giản vào tài liệu bằng Aspose.Words cho .NET. |
 | [Chèn biểu đồ cột](./insert-column-chart/) | Tìm hiểu cách chèn biểu đồ cột vào tài liệu bằng Aspose.Words cho .NET. |
 | [Chèn biểu đồ vùng](./insert-area-chart/) | Tìm hiểu cách chèn biểu đồ vùng vào tài liệu bằng Aspose.Words cho .NET. Thêm dữ liệu chuỗi và lưu tài liệu cùng với biểu đồ. |
-| [Chèn biểu đồ bong bóng](./insert-bubble-chart/) | Tìm hiểu cách chèn biểu đồ bong bóng vào tài liệu bằng Aspose.Words cho .NET. Thêm dữ liệu chuỗi với các giá trị kích thước X, Y và bong bóng. |
+| [Chèn biểu đồ bong bóng](./insert-bubble-chart/) | Tìm hiểu cách chèn biểu đồ bong bóng vào tài liệu bằng Aspose.Words for .NET. Thêm dữ liệu chuỗi với các giá trị kích thước X, Y và bong bóng. |
 | [Chèn biểu đồ phân tán](./insert-scatter-chart/) | Tìm hiểu cách chèn biểu đồ phân tán vào tài liệu bằng Aspose.Words cho .NET. Thêm dữ liệu chuỗi với tọa độ X và Y. |
 | [Xác định thuộc tính XYAxis](./define-xyaxis-properties/) | Tìm hiểu cách xác định thuộc tính trục XY trong biểu đồ bằng Aspose.Words for .NET. Các tùy chọn tùy chỉnh cho trục X và Y được thể hiện. |
 | [Giá trị ngày giờ theo trục](./date-time-values-to-axis/) | Tìm hiểu cách thêm giá trị ngày giờ vào trục của biểu đồ bằng Aspose.Words for .NET. |

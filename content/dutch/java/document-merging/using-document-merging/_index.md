@@ -23,7 +23,7 @@ Voordat we ingaan op het samenvoegen van documenten, moeten we ervoor zorgen dat
 ### Aspose.Words-bibliotheek toevoegen:
  Neem het JAR-bestand Aspose.Words op in het klassenpad van uw Java-project.
 
-### Initialiseer Aspose.Woorden:
+### Initialiseer Aspose.Words:
  Importeer in uw Java-code de benodigde klassen uit Aspose.Words en u bent klaar om documenten samen te voegen.
 
 ## 3. Twee documenten samenvoegen
@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words voor Java geeft Java-ontwikkelaars de mogelijkheid om moeiteloos Word-documenten samen te voegen. Door de stapsgewijze handleiding in dit artikel te volgen, kunt u nu eenvoudig documenten samenvoegen, de opmaak afhandelen, pauzes invoegen en conflicten beheren. Met Aspose.Words voor Java wordt het samenvoegen van documenten een naadloos en geautomatiseerd proces, waardoor kostbare tijd en moeite worden bespaard.
 
-## 11. Veelgestelde vragen 
+## 11.Veelgestelde vragen 
 
 ### Kan ik documenten met verschillende formaten en stijlen samenvoegen?
 

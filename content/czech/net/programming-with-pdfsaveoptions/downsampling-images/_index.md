@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- The`Resolution` vlastnost určuje cílové rozlišení obrázků a`ResolutionThreshold`vlastnost určuje minimální rozlišení, pod kterým nebudou obrázky zmenšeny.
+ The`Resolution` vlastnost určuje cílové rozlišení obrázků a`ResolutionThreshold`Vlastnost určuje minimální rozlišení, pod kterým nebudou obrázky zmenšeny.
 
 ## Krok 3: Převeďte dokument do PDF
 

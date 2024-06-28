@@ -35,7 +35,7 @@ builder.InsertHtml(
 
 ## Βήμα 3: Ορίστε τις επιλογές αποθήκευσης HTML
 
-Τώρα θα ορίσουμε τις επιλογές αποθήκευσης HTML, προσδιορίζοντας ότι τα μετααρχεία θα πρέπει να μετατραπούν σε μορφή SVG. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τώρα θα ορίσουμε τις επιλογές αποθήκευσης HTML, προσδιορίζοντας ότι τα μετααρχεία θα πρέπει να μετατραπούν σε μορφή SVG. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Svg };
@@ -45,7 +45,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafil
 
 ## Βήμα 4: Μετατροπή και αποθήκευση του εγγράφου σε HTML
 
-Τέλος, θα μετατρέψουμε το έγγραφο σε HTML χρησιμοποιώντας τις επιλογές αποθήκευσης HTML που καθορίστηκαν προηγουμένως. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τέλος, θα μετατρέψουμε το έγγραφο σε HTML χρησιμοποιώντας τις επιλογές αποθήκευσης HTML που καθορίστηκαν προηγουμένως. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);

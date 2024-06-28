@@ -97,7 +97,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Zde používáme tvůrce dokumentů k sestavení tabulky krok za krokem. Začínáme telefonátem`StartTable()` k inicializaci tabulky. Poté použijeme`InsertCell()` vkládat buňky a`Write()` přidat obsah do každé buňky. K definování formátování řádků, buněk a textu tabulky používáme také různé vlastnosti formátování.
+ Zde používáme tvůrce dokumentů k sestavení tabulky krok za krokem. Začínáme telefonátem`StartTable()` k inicializaci tabulky. Pak použijeme`InsertCell()` vkládat buňky a`Write()` přidat obsah do každé buňky. K definování formátování řádků, buněk a textu tabulky používáme také různé vlastnosti formátování.
 
 ## Krok 4: Uložte dokument
 Nakonec musíme uložit dokument obsahující formátovanou tabulku. Použijte následující kód:

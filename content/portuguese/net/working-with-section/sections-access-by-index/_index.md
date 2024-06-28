@@ -36,7 +36,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Etapa 3: editar as configurações da seção
-Para modificar as configurações da seção, usamos as propriedades da seção`PageSetup` objeto. Neste exemplo, estamos alterando as margens, a distância do cabeçalho e rodapé e o espaçamento das colunas de texto.
+ Para modificar as configurações da seção, usamos as propriedades da seção`PageSetup`objeto. Neste exemplo, estamos alterando as margens, a distância do cabeçalho e rodapé e o espaçamento das colunas de texto.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17cm
@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### P: Como altero as configurações da seção no Aspose.Words for .NET?
 
- R: Para modificar as configurações de uma seção, você pode usar as propriedades da seção`PageSetup` objeto. Neste exemplo, estamos alterando as margens, a distância do cabeçalho e rodapé e o espaçamento das colunas de texto.
+ R: Para modificar as configurações de uma seção, você pode usar as propriedades da seção.`PageSetup`objeto. Neste exemplo, estamos alterando as margens, a distância do cabeçalho e rodapé e o espaçamento das colunas de texto.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17cm

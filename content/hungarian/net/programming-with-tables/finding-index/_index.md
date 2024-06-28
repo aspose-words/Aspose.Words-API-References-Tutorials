@@ -15,7 +15,7 @@ Ebben az oktatóanyagban megtanuljuk, hogyan kell az Aspose.Words for .NET haszn
 2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
 
 ## 2. lépés: A dokumentum betöltése és a táblázat elérése
-Szövegfeldolgozás elindításához a táblázattal be kell töltenünk az azt tartalmazó dokumentumot, és hozzá kell férnünk. Kovesd ezeket a lepeseket:
+A Szövegfeldolgozás elindításához a táblázattal be kell töltenünk az azt tartalmazó dokumentumot, és hozzá kell férnünk. Kovesd ezeket a lepeseket:
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -49,7 +49,7 @@ int cellIndex = row.IndexOf(row.Cells[4]);
 Console.WriteLine("\nCell index is " + cellIndex);
 ```
 
- Itt használjuk a`GetChildNodes` módszert a dokumentum összes táblájának lekéréséhez. Akkor használjuk`IndexOf` hogy az összes tábla gyűjteményében megtaláljuk az adott tábla indexét. Hasonlóképpen használjuk`IndexOf` hogy megkeressük a táblázat utolsó sorának indexét, és`IndexOf` soron belül, hogy megkeresse egy adott cella indexét.
+ Itt használjuk a`GetChildNodes` módszerrel lekérheti a dokumentum összes tábláját. Akkor használjuk`IndexOf` hogy az összes tábla gyűjteményében megtaláljuk az adott tábla indexét. Hasonlóképpen használjuk`IndexOf` hogy megkeressük a táblázat utolsó sorának indexét, és`IndexOf` soron belül, hogy megkeresse egy adott cella indexét.
 
 ### Minta forráskód az Index kereséshez az Aspose.Words for .NET használatával 
 

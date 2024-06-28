@@ -14,7 +14,7 @@ url: /pl/java/word-processing/manipulating-document-content/
 
 ## Pierwsze kroki z Aspose.Words dla Java
 
-Zanim zagłębimy się w szczegóły manipulowania zawartością dokumentu, upewnijmy się, że dysponujesz niezbędnymi narzędziami i wiedzą, aby rozpocząć. Wykonaj następujące kroki:
+Zanim zagłębimy się w szczegóły manipulowania treścią dokumentu, upewnijmy się, że dysponujesz niezbędnymi narzędziami i wiedzą, aby rozpocząć. Wykonaj następujące kroki:
 
 1. Instalacja i konfiguracja
    
@@ -154,7 +154,7 @@ Ten kod wiąże dane XML z określonymi częściami dokumentu, czyniąc go dynam
 
 ### Jakie znaczenie ma czyszczenie zawartości dokumentu?
 
-   Oczyszczenie zawartości dokumentu jest ważne, aby mieć pewność, że dokumenty są wolne od niepotrzebnych elementów, które mogą poprawić czytelność i zmniejszyć rozmiar pliku. Pomaga także w utrzymaniu spójności dokumentów.
+   Oczyszczenie zawartości dokumentu jest ważne, aby upewnić się, że dokumenty są wolne od niepotrzebnych elementów, które mogą poprawić czytelność i zmniejszyć rozmiar pliku. Pomaga także w utrzymaniu spójności dokumentów.
 
 ### Jak usunąć nieużywane style z dokumentu?
 

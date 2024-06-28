@@ -57,7 +57,7 @@ Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu c�
 
 #### Hỏi: Điều gì xảy ra nếu dấu trang không tồn tại trong tài liệu?
 
-Đáp: Nếu dấu trang được chỉ định không tồn tại trong tài liệu thì đoạn mã sẽ trả về giá trị rỗng cho đối tượng dấu trang. Do đó, bạn cần xử lý tình huống này trong mã của mình bằng cách thêm các bước kiểm tra thích hợp trước khi cố gắng xóa hàng của bảng.
+Đáp: Nếu dấu trang được chỉ định không tồn tại trong tài liệu, đoạn mã sẽ trả về giá trị rỗng cho đối tượng dấu trang. Do đó, bạn cần xử lý tình huống này trong mã của mình bằng cách thêm các bước kiểm tra thích hợp trước khi cố gắng xóa hàng của bảng.
 
 #### Câu hỏi: Thư viện Aspose.Words có được sử dụng miễn phí không?
 

@@ -35,7 +35,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 ### Példa forráskód a Revision Types lekéréséhez az Aspose.Words for .NET használatával
 
-Íme a teljes forráskód, amellyel az Aspose.Words for .NET használatával lekérheti a revíziótípusokat egy dokumentumban:
+Íme a teljes forráskód a revíziótípusok lekéréséhez egy dokumentumban az Aspose.Words for .NET használatával:
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");

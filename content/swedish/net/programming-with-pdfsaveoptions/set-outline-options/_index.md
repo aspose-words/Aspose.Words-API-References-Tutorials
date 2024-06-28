@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Steg 3: Konfigurera spara som PDF-alternativ med planalternativ
 
- För att ställa in dispositionsalternativ i den genererade PDF-filen måste vi konfigurera`PdfSaveOptions` objekt. Vi kan ställa in antalet rubriknivåer (`HeadingsOutlineLevels`) och antalet utökade dispositionsnivåer (`ExpandedOutlineLevels`).
+För att ställa in dispositionsalternativ i den genererade PDF-filen måste vi konfigurera`PdfSaveOptions` objekt. Vi kan ställa in antalet rubriknivåer (`HeadingsOutlineLevels`) och antalet utökade dispositionsnivåer (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

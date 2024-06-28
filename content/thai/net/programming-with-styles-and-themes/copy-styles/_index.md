@@ -29,7 +29,7 @@ Document target = new Document(dataDir + "Rendering.docx");
 target. CopyStylesFromTemplate(doc);
 ```
 
- ในขั้นตอนนี้เราใช้`CopyStylesFromTemplate` วิธีการคัดลอกสไตล์จากเอกสารต้นฉบับ (`doc`) ไปยังเอกสารเป้าหมาย (`target`).
+ ในขั้นตอนนี้เราใช้`CopyStylesFromTemplate` วิธีการคัดลอกสไตล์จากเอกสารต้นฉบับ (`doc`) ไปยังเอกสารเป้าหมาย (`target`-
 
 ## ขั้นตอนที่ 4: บันทึกเอกสาร
 

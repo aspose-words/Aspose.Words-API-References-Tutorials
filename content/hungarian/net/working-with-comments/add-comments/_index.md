@@ -12,7 +12,7 @@ Ebből az átfogó oktatóanyagból megtudhatja, hogyan fűzhet megjegyzéseket 
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
 Kezdésként hozzon létre egy új dokumentumot a Document osztály használatával, és inicializáljon egy DocumentBuilder objektumot:
@@ -51,7 +51,7 @@ comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
 ## 4. lépés: Mentse el a dokumentumot
-A megjegyzés és annak tartalmának hozzáadása után mentse a dokumentumot fájlba a Dokumentum osztály Mentés metódusával:
+megjegyzés és annak tartalmának hozzáadása után mentse a dokumentumot fájlba a Dokumentum osztály Mentés metódusával:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
@@ -93,7 +93,7 @@ V: Igen, az Aspose.Words for .NET-ben a megjegyzések szövegét formázhatja a 
 
 #### K: Hogyan kérhetem le a dokumentumban található összes megjegyzést?
 
-V: A dokumentumban található összes megjegyzést lekérheti a`Document.Comments` ingatlan.
+ V: A dokumentumban szereplő összes megjegyzést lekérheti a`Document.Comments` ingatlan.
 
 #### K: Törölhetek egy adott megjegyzést az Aspose.Words for .NET-ben?
 

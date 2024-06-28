@@ -150,7 +150,7 @@ Thuộc tính tài liệu đóng một vai trò quan trọng trong việc quản
 
 ### Tôi có thể thêm thuộc tính tài liệu tùy chỉnh vào tài liệu không?
 
- Có, bạn có thể thêm thuộc tính tài liệu tùy chỉnh vào tài liệu bằng cách sử dụng`CustomDocumentProperties` bộ sưu tập. Bạn có thể xác định các thuộc tính tùy chỉnh với nhiều loại dữ liệu khác nhau, bao gồm chuỗi, booleans, ngày tháng và giá trị số.
+ Có, bạn có thể thêm thuộc tính tài liệu tùy chỉnh vào tài liệu bằng cách sử dụng`CustomDocumentProperties` bộ sưu tập. Bạn có thể xác định các thuộc tính tùy chỉnh với nhiều loại dữ liệu khác nhau, bao gồm chuỗi, boolean, ngày tháng và giá trị số.
 
 ### Làm cách nào để xóa thuộc tính tài liệu tùy chỉnh cụ thể?
 
@@ -158,7 +158,7 @@ Thuộc tính tài liệu đóng một vai trò quan trọng trong việc quản
 
 ### Mục đích của việc liên kết đến nội dung trong tài liệu là gì?
 
-Liên kết đến nội dung trong tài liệu cho phép bạn tạo các tham chiếu động tới các phần cụ thể của tài liệu. Điều này có thể hữu ích cho việc tạo tài liệu tương tác hoặc tham khảo chéo giữa các phần.
+Liên kết đến nội dung trong tài liệu cho phép bạn tạo các tham chiếu động đến các phần cụ thể của tài liệu. Điều này có thể hữu ích cho việc tạo tài liệu tương tác hoặc tham khảo chéo giữa các phần.
 
 ### Làm cách nào tôi có thể chuyển đổi giữa các đơn vị đo lường khác nhau trong Aspose.Words cho Java?
 

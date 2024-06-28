@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-markdown/bulleted-list/
 ---
 
-V tomto tutoriálu vám řekneme, jak vytvořit seznam s odrážkami pomocí Aspose.Words pro .NET. Seznam s odrážkami se používá k výpisu položek bez použití číslování.
+tomto tutoriálu vám řekneme, jak vytvořit seznam s odrážkami pomocí Aspose.Words pro .NET. Seznam s odrážkami se používá k výpisu položek bez použití číslování.
 
 ## Krok 1: Použití generátoru dokumentů
 
@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## Krok 3: Přizpůsobení formátu odrážky
 
-Můžeme přizpůsobit formát odrážky přístupem k vlastnostem`ListFormat.List.ListLevels[0]`. V tomto příkladu používáme jako odrážku pomlčku „-“.
+ Můžeme přizpůsobit formát odrážky přístupem k vlastnostem`ListFormat.List.ListLevels[0]`. V tomto příkladu používáme jako odrážku pomlčku „-“.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

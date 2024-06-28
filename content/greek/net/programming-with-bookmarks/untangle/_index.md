@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Βήμα 2: Λήψη γονικών σειρών από σελιδοδείκτες
 
- Χρησιμοποιούμε το`GetAncestor` μέθοδοι για την ανάκτηση των γονικών σειρών των κόμβων έναρξης και τέλους του σελιδοδείκτη:
+ Χρησιμοποιούμε το`GetAncestor` Μέθοδοι για την ανάκτηση των γονικών σειρών των κόμβων έναρξης και τέλους του σελιδοδείκτη:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

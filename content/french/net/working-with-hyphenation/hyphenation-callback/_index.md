@@ -2,107 +2,148 @@
 title: Rappel de césure
 linktitle: Rappel de césure
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment utiliser le rappel de césure dans Aspose.Words for .NET pour gérer la césure des mots.
+description: Apprenez à implémenter le rappel de césure dans Aspose.Words for .NET pour améliorer le formatage des documents avec ce guide complet étape par étape.
 type: docs
 weight: 10
 url: /fr/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-Dans ce didacticiel étape par étape, nous allons vous montrer comment utiliser la fonctionnalité de rappel de césure dans Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
+## Introduction
 
- Pour commencer, assurez-vous que Aspose.Words for .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas déjà fait, téléchargez et installez la bibliothèque depuis[Aspose.Releases]https://releases.aspose.com/words/net/.
+Salut! Vous êtes-vous déjà retrouvé mêlé aux complexités du formatage du texte, en particulier lorsqu'il s'agit de langues nécessitant une césure ? Tu n'es pas seul. La césure, bien que cruciale pour une mise en page correcte du texte, peut être un peu un casse-tête. Mais devinez quoi ? Aspose.Words for .NET vous soutient. Cette puissante bibliothèque vous permet de gérer le formatage du texte de manière transparente, y compris la gestion de la césure via un mécanisme de rappel. Intrigué ? Voyons dans le détail comment implémenter un rappel de césure à l'aide d'Aspose.Words pour .NET.
 
-## Étape 1 : Enregistrer le rappel de césure
+## Conditions préalables
 
- Tout d'abord, nous allons enregistrer le rappel de césure à l'aide d'un paramètre personnalisé`CustomHyphenationCallback` classe. Cela nous permettra de gérer la césure des mots selon nos propres règles :
+Avant de nous salir les mains avec le code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  Aspose.Words for .NET : assurez-vous de disposer de la bibliothèque. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+2. IDE : Un environnement de développement comme Visual Studio.
+3. Connaissance de base de C# : Compréhension de C# et du framework .NET.
+4. Dictionnaires de césure : dictionnaires de césure pour les langues que vous envisagez d'utiliser.
+5.  Licence Aspose : une licence Aspose valide. Vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) si vous n'en avez pas.
 
- Assurez-vous d'avoir mis en œuvre le`CustomHyphenationCallback` cours selon vos besoins spécifiques.
+## Importer des espaces de noms
 
-## Étape 2 : Chargement du document et application de la césure
-
-Ensuite, chargez votre document à partir du répertoire spécifié et coupez les mots en utilisant Aspose.Words :
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## Étape 3 : Gestion des erreurs de dictionnaire manquantes
-
-Dans le cas où un dictionnaire de césure est manquant, nous intercepterons l'exception correspondante et afficherons un message d'erreur :
+Tout d’abord, importons les espaces de noms nécessaires. Cela garantit que notre code a accès à toutes les classes et méthodes dont nous avons besoin à partir d'Aspose.Words.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## Étape 4 : Nettoyer et désactiver le rappel de césure
+## Étape 1 : Enregistrez le rappel de césure
 
-Enfin, par souci de propreté et pour désactiver le rappel de césure, effectuez les étapes suivantes :
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-Cela nettoie et désactive le rappel de césure une fois le traitement terminé.
-
-Donc ! Vous avez utilisé avec succès le rappel de césure dans Aspose.Words pour .NET.
-
-### Exemple de code source pour le rappel de césure avec Aspose.Words pour .NET
+Pour commencer, nous devons enregistrer notre rappel de césure. C'est ici que nous demandons à Aspose.Words d'utiliser notre logique de césure personnalisée.
 
 ```csharp
 try
 {
-	 // Enregistrez le rappel de césure.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // Enregistrez le rappel de césure.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ Ici, nous créons une instance de notre rappel personnalisé et l'attribuons à`Hyphenation.Callback`.
+
+## Étape 2 : Définir le chemin du document
+
+Ensuite, nous devons définir le répertoire dans lequel nos documents sont stockés. Ceci est crucial car nous allons charger et enregistrer des documents à partir de ce chemin.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers vos documents.
+
+## Étape 3 : Charger le document
+
+Maintenant, chargeons le document qui nécessite une césure.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ Ici, nous chargeons un document texte allemand. Vous pouvez remplacer`"German text.docx"` avec le nom de fichier de votre document.
+
+## Étape 4 : Enregistrez le document
+
+Après avoir chargé le document, nous l'enregistrons dans un nouveau fichier, en appliquant le rappel de césure dans le processus.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+Cette ligne enregistre le document au format PDF avec césure appliquée.
+
+## Étape 5 : Gérer l'exception du dictionnaire de césure manquante
+
+Parfois, vous pouvez rencontrer un problème où le dictionnaire de césure est manquant. Gérons ça.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.
+Dans ce bloc, nous captons l'exception spécifique liée aux dictionnaires manquants et imprimons le message.
 
-### FAQ
+## Étape 6 : implémenter la classe de rappel de césure personnalisée
 
-#### Q : Qu'est-ce qu'un rappel de syllabisation dans Aspose.Words ?
+ Maintenant, implémentons le`CustomHyphenationCallback` classe qui gère la demande de dictionnaires de césure.
 
-R : Un rappel de syllabisation dans Aspose.Words est une fonctionnalité qui vous permet de personnaliser la façon dont les mots sont syllabés dans vos documents. En utilisant un rappel de syllabation, vous pouvez spécifier des règles personnalisées pour la syllabation des mots, ce qui peut être utile pour des langues spécifiques ou des scénarios particuliers dans lesquels la syllabation par défaut ne produit pas les résultats souhaités.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // Enregistrez le dictionnaire pour la langue demandée.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### Q : Comment définir un rappel de syllabisation dans Aspose.Words ?
+ Dans cette classe, le`RequestDictionary` La méthode est appelée chaque fois qu’un dictionnaire de césure est nécessaire. Il vérifie la langue et enregistre le dictionnaire approprié.
 
- R : Pour définir un rappel de césure dans Aspose.Words, vous devez créer une classe qui implémente le`HyphenationCallback` interfacer et mettre en œuvre le`HandleWord()` méthode. Cette méthode sera appelée pour chaque mot rencontré lors de la syllabation. Vous pouvez lui appliquer des règles de syllabation personnalisées et renvoyer le mot syllabisé. Ensuite, vous pouvez lier votre rappel de césure à l'aide du`Document.HyphenationCallback` propriété de votre document.
+## Conclusion
 
-#### Q : Quel est l'avantage d'utiliser un rappel de syllabisation dans Aspose.Words ?
+Et voila! Vous venez d'apprendre comment implémenter un rappel de césure dans Aspose.Words pour .NET. En suivant ces étapes, vous pouvez vous assurer que vos documents sont magnifiquement formatés, quelle que soit la langue. Que vous ayez affaire à l'anglais, à l'allemand ou à toute autre langue, cette méthode vous permet de gérer la césure sans effort.
 
-R : L'avantage d'utiliser un rappel de syllabisation dans Aspose.Words est la possibilité de personnaliser la façon dont les mots sont syllabés dans vos documents. Cela vous donne plus de contrôle sur la syllabation, en particulier pour des langues ou des scénarios spécifiques où la syllabation par défaut ne donne pas les résultats souhaités. Vous pouvez appliquer des règles spécifiques à chaque mot pour obtenir une syllabation précise selon vos besoins.
+## FAQ
 
-#### Q : Quels sont les scénarios courants dans lesquels l’utilisation d’un rappel de syllabation peut être utile ?
+### Qu’est-ce qu’Aspose.Words pour .NET ?
+Aspose.Words for .NET est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents par programme.
 
-R : L'utilisation d'un booster de syllabisation peut être utile dans plusieurs scénarios, tels que :
-- Syllabisation de mots dans des langues spécifiques qui ont des règles de syllabisation particulières.
-- L'application de règles de syllabisation personnalisées pour des acronymes ou des mots techniques.
-- Adaptation de la syllabation selon des préférences stylistiques ou des normes typographiques.
+### Pourquoi la césure est-elle importante dans le formatage des documents ?
+La césure améliore la mise en page du texte en coupant les mots aux endroits appropriés, garantissant ainsi un document plus lisible et visuellement attrayant.
 
-#### Q : Comment puis-je tester la syllabation personnalisée avec un rappel de syllabation dans Aspose.Words ?
+### Puis-je utiliser Aspose.Words gratuitement ?
+ Aspose.Words propose un essai gratuit. Tu peux l'avoir[ici](https://releases.aspose.com/).
 
- R : Pour tester la syllabation personnalisée avec un rappel de syllabation dans Aspose.Words, vous pouvez créer un document de test contenant des mots pour lesquels vous souhaitez appliquer des règles de syllabation personnalisées. Ensuite, vous pouvez définir votre rappel de syllabisation personnalisé, appeler le`Document.Range.Replace()` méthode pour remplacer les mots dans le document et utilisez la`Hyphenate()` méthode du`Hyphenation` classe pour obtenir la syllabisation des mots. Vous pouvez ensuite formater les mots syllabés selon vos besoins, par exemple en ajoutant des traits d'union entre les syllabes.
+### Comment obtenir un dictionnaire de césure ?
+Vous pouvez télécharger des dictionnaires de césure à partir de diverses ressources en ligne ou créer le vôtre si nécessaire.
+
+### Que se passe-t-il s’il manque un dictionnaire de césure ?
+ S'il manque un dictionnaire, le`RequestDictionary` La méthode lève une exception, que vous pouvez gérer pour informer l'utilisateur ou fournir une solution de secours.

@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Βήμα 4: Προσθέστε το έγγραφο προέλευσης στο έγγραφο προορισμού
 
- Χρησιμοποιήστε το`AppendDocument` μέθοδο του εγγράφου προορισμού για να προσαρτήσετε το έγγραφο προέλευσης. Πέρασμα`ImportFormatMode.KeepSourceFormatting` ως δεύτερη παράμετρος και οι επιλογές μορφής εισαγωγής ως τρίτη παράμετρος.
+ Χρησιμοποιήστε το`AppendDocument` μέθοδο του εγγράφου προορισμού για να προσαρτήσετε το έγγραφο προέλευσης. Πέρασμα`ImportFormatMode.KeepSourceFormatting`ως δεύτερη παράμετρος και οι επιλογές μορφής εισαγωγής ως τρίτη παράμετρος.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## Βήμα 5: Αποθηκεύστε το έγγραφο προορισμού
 
- Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
+Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

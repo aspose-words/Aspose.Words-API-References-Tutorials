@@ -28,7 +28,7 @@ public class TableCreation {
         // Vytvořte nový dokument
         Document doc = new Document();
         
-        // Vytvořte tabulku se 3 řádky a 3 sloupci
+        // Vytvořte tabulku se 3 řádky a 3 sloupci.
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // Naplňte buňky tabulky daty

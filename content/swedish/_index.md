@@ -25,7 +25,7 @@ Det här är länkar till några användbara resurser:
 - [Arbeta med List](./net/working-with-list/)   
 - [Jobbar med Markdown](./net/working-with-markdown/)   
 - [Arbeta med Node](./net/working-with-node/)   
-- [Arbeta med revisioner](./net/working-with-revisions/)   
+- [Arbeta med recensioner](./net/working-with-revisions/)   
 - [Arbeta med textboxar](./net/working-with-textboxes/)   
 - [Dela dokument](./net/split-document/)   
 - [Lägg till innehåll med Documentbuilder](./net/add-content-using-documentbuilder/)

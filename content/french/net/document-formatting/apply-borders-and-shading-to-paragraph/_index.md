@@ -91,7 +91,7 @@ Voici le code source complet de la fonctionnalité Appliquer des bordures et un 
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons appris à appliquer des bordures et un ombrage à un paragraphe d'un document Word à l'aide d'Aspose.Words pour .NET. En configurant le paragraphe`Borders` et`Shading` propriétés, nous avons pu définir le style de bordure, la couleur de ligne et la couleur de remplissage du paragraphe. Aspose.Words for .NET offre de puissantes capacités de formatage pour personnaliser l'apparence des paragraphes et améliorer la représentation visuelle de vos documents.
+ Dans ce didacticiel, nous avons appris à appliquer des bordures et un ombrage à un paragraphe d'un document Word à l'aide d'Aspose.Words pour .NET. En configurant le paragraphe`Borders` et`Shading` propriétés, nous avons pu définir le style de bordure, la couleur de ligne et la couleur de remplissage du paragraphe. Aspose.Words for .NET offre de puissantes capacités de formatage pour personnaliser l'apparence des paragraphes et améliorer la représentation visuelle de vos documents.
 
 ### FAQ
 
@@ -100,13 +100,13 @@ Dans ce didacticiel, nous avons appris à appliquer des bordures et un ombrage �
 R : Pour appliquer des bordures et un ombrage à un paragraphe dans un document Word à l'aide d'Aspose.Words for .NET, procédez comme suit :
 1.  Créez un nouveau document et un`DocumentBuilder` objet.
 2.  Configurez les bordures de paragraphe en accédant au`Borders` propriété du`ParagraphFormat` et définir le style de bordure pour chaque côté.
-3.  Configurez le remplissage du paragraphe en accédant à`Shading` propriété du`ParagraphFormat` et en spécifiant la texture et les couleurs de remplissage.
+3. Configurez le remplissage du paragraphe en accédant à`Shading` propriété du`ParagraphFormat` et en spécifiant la texture et les couleurs de remplissage.
 4.  Ajoutez du contenu au paragraphe en utilisant le`Write` méthode du`DocumentBuilder`.
 5.  Enregistrez le document à l'aide du`Save` méthode.
 
 #### Q : Comment définir le style de bordure de chaque côté du paragraphe ?
 
- R : Pour définir le style de bordure de chaque côté du paragraphe, vous pouvez accéder à la`Borders` propriété du`ParagraphFormat` et réglez le`LineStyle` propriété pour chacun`BorderType` (par exemple,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Vous pouvez spécifier différents styles de ligne tels que`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, etc.
+ R : Pour définir le style de bordure de chaque côté du paragraphe, vous pouvez accéder à la`Borders` propriété du`ParagraphFormat` et réglez le`LineStyle` propriété pour chacun`BorderType` (par exemple.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Vous pouvez spécifier différents styles de ligne tels que`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, etc.
 
 #### Q : Comment puis-je spécifier la texture et les couleurs de remplissage pour l'ombrage du paragraphe ?
 

@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Schritt 2: Ein bestimmtes Lesezeichen ein- oder ausblenden
 
- Wir benutzen das`ShowHideBookmarkedContent`Funktion zum Ein- oder Ausblenden eines bestimmten Lesezeichens im Dokument. Diese Funktion verwendet als Parameter das Dokument, den Namen des Lesezeichens und einen booleschen Wert, der angibt, ob das Lesezeichen angezeigt oder ausgeblendet werden soll:
+ Wir benutzen das`ShowHideBookmarkedContent` Funktion zum Ein- oder Ausblenden eines bestimmten Lesezeichens im Dokument. Diese Funktion verwendet als Parameter das Dokument, den Namen des Lesezeichens und einen booleschen Wert, der angibt, ob das Lesezeichen angezeigt oder ausgeblendet werden soll:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -126,7 +126,7 @@ A: Ja, der bereitgestellte Code funktioniert mit verschiedenen Word-Dokumentform
 
  A: Um ein ausgeblendetes Lesezeichen wieder anzuzeigen, müssen Sie dasselbe verwenden`ShowHideBookmarkedContent` Funktion, die den Wert übergibt`true` für den booleschen Parameter, der angibt, ob das Lesezeichen angezeigt oder ausgeblendet werden soll.
 
-#### F: Kann ich Bedingungen verwenden, um Lesezeichen basierend auf Briefvorlagenfeldwerten im Dokument anzuzeigen oder auszublenden?
+#### F: Kann ich Bedingungen verwenden, um Lesezeichen basierend auf Zusammenführungsfeldwerten im Dokument anzuzeigen oder auszublenden?
 
  A: Ja, Sie können Bedingungen und Werte von Zusammenführungsfeldern verwenden, um zu bestimmen, ob ein Lesezeichen angezeigt oder ausgeblendet werden soll. Sie können den Code des anpassen`ShowHideBookmarkedContent` Funktion, um die entsprechenden Bedingungen und Werte zu berücksichtigen.
 

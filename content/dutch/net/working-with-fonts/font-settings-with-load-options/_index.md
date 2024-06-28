@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Stap 2: Configureer laadopties met lettertype-instellingen
- Vervolgens maken we een exemplaar van`LoadOptions`en geef lettertype-instellingen op door een nieuw exemplaar van te maken`FontSettings` en het toewijzen ervan`loadOptions.FontSettings`.
+ Vervolgens maken we een exemplaar van`LoadOptions` en geef lettertype-instellingen op door een nieuw exemplaar van te maken`FontSettings` en het toewijzen ervan`loadOptions.FontSettings`.
 
 ```csharp
 // Configureer laadopties met lettertype-instellingen
@@ -61,7 +61,7 @@ In deze tutorial hebben we gezien hoe je laadopties met lettertype-instellingen 
 
 #### Vraag: Welke andere lettertype-instellingen kan ik opgeven met laadopties in Aspose.Words?
 
-A: Naast het opgeven van het standaardlettertype, kunt u ook andere lettertype-instellingen opgeven, zoals de standaardcodering, met behulp van de juiste eigenschappen van de`LoadOptions` klasse, zoals`DefaultEncoding`.
+ A: Naast het opgeven van het standaardlettertype, kunt u ook andere lettertype-instellingen opgeven, zoals de standaardcodering, met behulp van de juiste eigenschappen van de`LoadOptions` klasse, zoals`DefaultEncoding`.
 
 #### Vraag: Wat gebeurt er als het opgegeven standaardlettertype niet beschikbaar is bij het laden van het document?
 

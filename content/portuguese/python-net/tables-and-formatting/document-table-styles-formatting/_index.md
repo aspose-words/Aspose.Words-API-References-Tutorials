@@ -8,7 +8,7 @@ weight: 12
 url: /pt/python-net/tables-and-formatting/document-table-styles-formatting/
 ---
 
-As tabelas de documentos desempenham um papel crucial na apresentação da informação de forma organizada e visualmente apelativa. Aspose.Words for Python fornece um poderoso conjunto de ferramentas que permite aos desenvolvedores trabalhar com tabelas de maneira eficiente e personalizar seus estilos e formatação. Neste artigo, exploraremos como manipular e aprimorar tabelas de documentos usando a API Aspose.Words for Python. Vamos mergulhar!
+As tabelas de documentos desempenham um papel crucial na apresentação da informação de forma organizada e visualmente apelativa. Aspose.Words for Python fornece um poderoso conjunto de ferramentas que permite aos desenvolvedores trabalhar com tabelas de maneira eficiente e personalizar seus estilos e formatação. Neste artigo, exploraremos como manipular e aprimorar tabelas de documentos usando a API Aspose.Words para Python. Vamos mergulhar!
 
 ## Primeiros passos com Aspose.Words para Python
 

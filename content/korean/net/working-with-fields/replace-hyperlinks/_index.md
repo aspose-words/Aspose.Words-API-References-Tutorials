@@ -2,106 +2,95 @@
 title: 하이퍼링크 바꾸기
 linktitle: 하이퍼링크 바꾸기
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서의 하이퍼링크를 바꿉니다. 하이퍼링크 교체에 대한 단계별 지침입니다.
+description: 효율적인 문서 관리 및 동적 콘텐츠 업데이트를 위해 Aspose.Words를 사용하여 .NET 문서의 하이퍼링크를 바꾸는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-fields/replace-hyperlinks/
 ---
 
-다음은 .NET 기능용 Aspose.Words를 사용하여 하이퍼링크를 대체하기 위한 다음 C# 소스 코드를 설명하는 단계별 가이드입니다. 이 코드를 사용하기 전에 프로젝트에 Aspose.Words 라이브러리를 포함했는지 확인하세요.
+## 소개
 
-## 1단계: 문서 디렉터리 경로 설정
+.NET 개발 세계에서 문서 관리 및 조작은 중요한 작업이며 문서 내 하이퍼링크를 효율적으로 처리해야 하는 경우가 많습니다. Aspose.Words for .NET은 하이퍼링크를 원활하게 대체할 수 있는 강력한 기능을 제공하여 문서가 올바른 리소스에 동적으로 연결되도록 합니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 이를 달성하는 방법을 자세히 설명하고 프로세스를 단계별로 안내합니다.
+
+## 전제조건
+
+하이퍼링크를 .NET용 Aspose.Words로 대체하기 전에 다음 사항이 있는지 확인하세요.
+
+- Visual Studio: .NET 개발을 위해 설치 및 설정되었습니다.
+-  Aspose.Words for .NET: 다운로드되어 프로젝트에서 참조됩니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+- C#에 대한 지식: 코드 작성 및 컴파일에 대한 기본적인 이해.
+
+## 네임스페이스 가져오기
+
+먼저 프로젝트에 필요한 네임스페이스를 포함했는지 확인하세요.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- 다음을 포함하는 문서 디렉토리의 올바른 경로를 지정하십시오.`Hyperlinks.docx` 파일.
+## 1단계: 문서 로드
 
-## 2단계: 하이퍼링크가 포함된 문서 로드
+하이퍼링크를 바꾸려는 문서를 로드하여 시작하십시오.
 
 ```csharp
+// 문서 디렉터리 경로
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- 여기서 우리는`Document` 지정된 파일의 클래스입니다.
+ 바꾸다`"Hyperlinks.docx"` 실제 문서의 경로와 함께.
 
-## 3단계: 필드를 탐색하여 하이퍼링크 찾기
+## 2단계: 필드 반복
+
+문서의 각 필드를 반복하여 하이퍼링크를 찾고 바꿉니다.
 
 ```csharp
-foreach(Field field in doc.Range.Fields)
+foreach (Field field in doc.Range.Fields)
 {
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
-
-         // 일부 하이퍼링크는 로컬(문서 내부 책갈피에 대한 링크)일 수 있으므로 무시됩니다.
-         if (hyperlink.SubAddress != null)
-             keep on going;
-
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
+    if (field.Type == FieldType.FieldHyperlink)
+    {
+        FieldHyperlink hyperlink = (FieldHyperlink)field;
+        
+        // 하이퍼링크가 로컬 링크가 아닌지 확인하세요(책갈피 무시).
+        if (hyperlink.SubAddress != null)
+            continue;
+        
+        // 하이퍼링크 주소와 결과를 바꿉니다.
+        hyperlink.Address = "http://www.aspose.com";
+        hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
+    }
 }
 ```
 
- 이 루프는 문서의 모든 필드를 거쳐 다음 유형의 필드를 찾습니다.`FieldType.FieldHyperlink` . 이 유형의 필드가 발견되면 다음을 확인하여 로컬 링크인지 확인합니다.`SubAddress` 재산. 그렇지 않은 경우 링크 주소를 다음으로 바꿉니다.`"http://www.aspose.com"` 결과는`"Aspose - The .NET & Java Component Editor"`.
+## 3단계: 문서 저장
 
-## 4단계: 수정된 문서 저장
+마지막으로 대체된 하이퍼링크를 사용하여 수정된 문서를 저장합니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-마지막으로 지정된 파일에 대한 대체된 하이퍼링크와 함께 수정된 문서를 저장합니다.
+ 바꾸다`"WorkingWithFields.ReplaceHyperlinks.docx"` 원하는 출력 파일 경로로.
 
-### 하이퍼링크를 .NET용 Aspose.Words로 대체하는 예제 소스 코드
+## 결론
 
-```csharp
-// 문서 디렉터리의 경로입니다.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+.NET용 Aspose.Words를 사용하여 문서의 하이퍼링크를 바꾸는 것은 간단하며 문서의 동적 특성을 향상시킵니다. URL을 업데이트하든 문서 내용을 프로그래밍 방식으로 변환하든 Aspose.Words는 이러한 작업을 단순화하여 효율적인 문서 관리를 보장합니다.
 
-Document doc = new Document(dataDir + "Hyperlinks.docx");
+## 자주 묻는 질문(FAQ)
 
-foreach(Field field in doc.Range.Fields)
-{
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
+### .NET용 Aspose.Words가 복잡한 문서 구조를 처리할 수 있습니까?
+예, Aspose.Words는 테이블, 이미지, 하이퍼링크와 같은 복잡한 구조를 원활하게 지원합니다.
 
-         // 일부 하이퍼링크는 로컬(문서 내부 책갈피에 대한 링크)일 수 있으므로 무시됩니다.
-         if (hyperlink.SubAddress != null)
-             keep on going;
+### .NET용 Aspose.Words에 사용할 수 있는 평가판이 있습니까?
+ 예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
-}
+### .NET용 Aspose.Words에 대한 문서는 어디서 찾을 수 있나요?
+ 자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
 
-doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
-```
+### .NET용 Aspose.Words에 대한 임시 라이선스를 어떻게 얻을 수 있나요?
+ 임시면허 취득 가능[여기](https://purchase.aspose.com/temporary-license/).
 
-Aspose.Words for .NET을 사용하여 문서의 하이퍼링크를 대체하는 샘플 소스 코드입니다.
-
-### FAQ
-
-#### Q: .NET용 Aspose.Words를 사용하여 Word 문서의 하이퍼링크를 어떻게 바꿀 수 있나요?
-
- A: .NET용 Aspose.Words를 사용하여 Word 문서의 하이퍼링크를 바꾸려면 다음을 사용할 수 있습니다.`Document.Range.Replace`검색할 텍스트와 대체 텍스트를 지정하는 메서드입니다. 검색 및 바꾸기 매개변수를 설정하려면 적절한 옵션을 사용해야 합니다.
-
-#### Q: Word 문서의 특정 하이퍼링크만 Aspose.Words for .NET으로 바꿀 수 있나요?
-
-A: 예, Word 문서의 특정 하이퍼링크만 Aspose.Words for .NET으로 바꾸는 것이 가능합니다. 링크 URL, 링크 텍스트 또는 기타 관련 속성과 같은 특정 기준을 사용하여 대체할 하이퍼링크를 필터링할 수 있습니다. 그런 다음 일치하는 하이퍼링크에만 대체를 적용할 수 있습니다.
-
-#### Q: Aspose.Words for .NET으로 교체할 때 머리글, 바닥글 또는 각주의 하이퍼링크를 어떻게 무시할 수 있나요?
-
-A: .NET용 Aspose.Words로 교체할 때 머리글, 바닥글 또는 각주의 하이퍼링크를 무시하려면 고급 검색 옵션을 사용하고 적절한 검색 제한을 지정할 수 있습니다. 예를 들어 문서의 주요 섹션으로 검색을 제한하고 머리글, 바닥글 또는 각주를 제외할 수 있습니다.
-
-#### Q: 하이퍼링크를 문서의 다른 부분에 대한 내부 링크로 바꾸는 것이 가능합니까?
-
- A: 예, Aspose.Words for .NET을 사용하여 하이퍼링크를 문서의 다른 부분에 대한 내부 링크로 바꾸는 것이 가능합니다. 앵커나 텍스트 ID를 사용하여 내부 링크를 만든 다음`Document.Range.Replace` 적절한 옵션을 사용하는 방법입니다.
-
-#### Q: 하이퍼링크를 .NET용 Aspose.Words로 바꾸면 색상이나 스타일과 같은 링크 속성이 유지됩니까?
-
-A: 예, 하이퍼링크를 .NET용 Aspose.Words로 바꾸면 색상이나 스타일과 같은 링크 속성이 유지됩니다. 일관된 결과를 얻기 위해 대체 텍스트에 동일한 서식 속성을 지정할 수 있습니다.
+### .NET용 Aspose.Words에 어떤 지원 옵션을 사용할 수 있나요?
+ 커뮤니티 지원을 받거나 문의 사항을 제출할 수 있습니다.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).

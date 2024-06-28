@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-の`ImportFormatMode.KEEP_SOURCE_FORMATTING`このオプションを使用すると、ソース文書の書式設定が確実に保持されます。
+の`ImportFormatMode.KEEP_SOURCE_FORMATTING`このオプションにより、ソース文書の書式設定が確実に保持されます。
 
 ## ステップ 5: 結果を保存する
 

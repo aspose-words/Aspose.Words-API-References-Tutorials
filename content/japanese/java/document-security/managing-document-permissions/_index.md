@@ -49,7 +49,7 @@ Aspose.Words for Java を起動して実行できるようになったので、�
 ドキュメントのアクセス許可を設定するためのサンプル Java コード スニペットを次に示します。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("sample.docx");
 
 //アクセス制御を定義する

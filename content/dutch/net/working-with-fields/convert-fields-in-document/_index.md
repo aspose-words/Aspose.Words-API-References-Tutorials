@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Stap 5: Sla het getransformeerde document op
- Gebruik de`Save()`methode om het document op te slaan met de velden geconverteerd naar tekst in de opgegeven documentmap.
+ Gebruik de`Save()` methode om het document op te slaan met de velden geconverteerd naar tekst in de opgegeven documentmap.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

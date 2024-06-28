@@ -10,7 +10,7 @@ url: /th/net/basic-conversions/docx-to-mhtml-and-sending-email/
 
 ในบทช่วยสอนทีละขั้นตอนนี้ เราจะแนะนำคุณเกี่ยวกับวิธีใช้ Aspose.Words สำหรับ .NET เพื่อแปลงเอกสาร Word ในรูปแบบ Docx เป็น MHTML และส่งเป็นอีเมลโดยใช้ Aspose.Email เราจะอธิบายซอร์สโค้ด C# ที่ให้มา และแสดงวิธีนำไปใช้ในโครงการของคุณเอง
 
- ในการเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีทั้งไลบรารี Aspose.Words สำหรับ .NET และ Aspose.Email ติดตั้งและตั้งค่าในสภาพแวดล้อมการพัฒนาของคุณ หากคุณยังไม่ได้ดำเนินการ ให้ดาวน์โหลดและติดตั้งไลบรารีจาก[กำหนดเผยแพร่](https://releases.aspose.com/words/net/).
+ ในการเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีทั้งไลบรารี Aspose.Words สำหรับ .NET และ Aspose.Email ติดตั้งและตั้งค่าในสภาพแวดล้อมการพัฒนาของคุณ หากคุณยังไม่ได้ดำเนินการ ให้ดาวน์โหลดและติดตั้งไลบรารีจาก[กำหนด](https://releases.aspose.com/words/net/).
 
 ## ขั้นตอนที่ 1: การเริ่มต้นวัตถุเอกสาร
 
@@ -39,7 +39,7 @@ stream.Position = 0;
 
 ## ขั้นตอนที่ 4: การสร้างข้อความ MIME ของ Aspose.Email
 
- สร้างก`MailMessage` วัตถุจากสตรีมโดยใช้`MhtmlLoadOptions`: :
+ สร้างก`MailMessage` วัตถุจากสตรีมโดยใช้`MhtmlLoadOptions`-
 
 ```csharp
 MailMessage message = MailMessage.Load(stream, new MhtmlLoadOptions());

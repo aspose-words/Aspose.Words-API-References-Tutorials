@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
-## 步驟3：檢查文件是否已加密
+## 第三步：檢查文件是否加密
 
 我們使用`IsEncrypted`的財產`FileFormatInfo`物件檢查文件是否已加密。該屬性傳回`true`如果文件已加密，否則返回`false`。我們在控制台中顯示結果。
 
@@ -70,7 +70,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### Q：如何檢測文件格式？
-您可以使用`DetectFileFormat`的方法`FileFormatUtil`類別來檢測文件格式資訊。在下列範例中，我們假設加密文件名稱為「Encrypted.docx」並且位於指定的文件目錄中：
+您可以使用`DetectFileFormat`的方法`FileFormatUtil`類別來檢測文件格式資訊。在以下範例中，我們假設加密文件名稱為「Encrypted.docx」並且位於指定的文檔目錄中：
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");

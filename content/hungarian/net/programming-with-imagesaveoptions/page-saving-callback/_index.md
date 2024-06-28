@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          // Itt hajtsa végre egyéni műveleteit
          // Az oldaladatokat az "args.PageIndex" tulajdonságon keresztül érheti el
-         // Az egyes oldalak mentési beállításait külön-külön is módosíthatja
+         // Az egyes oldalak mentési beállításait külön-külön is módosíthatja.
      }
 }
 ```

@@ -91,7 +91,7 @@ End Sub
 
 ## Xử lý lỗi và gỡ lỗi
 
-Tự động hóa mạnh mẽ bao gồm cơ chế xử lý lỗi và gỡ lỗi thích hợp. Với sức mạnh kết hợp của macro Aspose.Words Python và VBA, bạn có thể triển khai các quy trình bắt lỗi và nâng cao tính ổn định của quy trình làm việc tự động hóa của mình.
+Tự động hóa mạnh mẽ bao gồm cơ chế xử lý lỗi và gỡ lỗi thích hợp. Với sức mạnh kết hợp của macro Aspose.Words Python và VBA, bạn có thể triển khai các quy trình bắt lỗi và nâng cao tính ổn định của quy trình tự động hóa của mình.
 
 ```vba
 Sub HandleErrors()

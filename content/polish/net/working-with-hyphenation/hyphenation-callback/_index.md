@@ -2,107 +2,148 @@
 title: Wywołanie zwrotne dzielenia
 linktitle: Wywołanie zwrotne dzielenia
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak używać wywołania zwrotnego dzielenia wyrazów w Aspose.Words dla .NET do obsługi dzielenia wyrazów.
+description: Dowiedz się, jak wdrożyć wywołanie zwrotne dzielenia wyrazów w Aspose.Words dla .NET, aby ulepszyć formatowanie dokumentów, dzięki temu kompleksowemu przewodnikowi krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-W tym samouczku krok po kroku pokażemy, jak korzystać z funkcji wywołania zwrotnego dzielenia wyrazów w Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+## Wstęp
 
- Aby rozpocząć, upewnij się, że masz zainstalowane i skonfigurowane Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
+No hej! Czy kiedykolwiek byłeś zaplątany w zawiłości formatowania tekstu, szczególnie w przypadku języków wymagających dzielenia wyrazów? Nie jesteś sam. Dzielenie wyrazów, choć kluczowe dla prawidłowego układu tekstu, może przyprawiać o ból głowy. Ale zgadnij co? Aspose.Words dla .NET Cię wspiera. Ta potężna biblioteka umożliwia płynne zarządzanie formatowaniem tekstu, w tym obsługę dzielenia wyrazów poprzez mechanizm wywołania zwrotnego. Zaintrygowany? Zanurzmy się w sedno tego, jak zaimplementować wywołanie zwrotne polegające na dzieleniu wyrazów przy użyciu Aspose.Words dla .NET.
 
-## Krok 1: Zapisz przypomnienie o dzieleniu wyrazów
+## Warunki wstępne
 
- Najpierw zarejestrujemy wywołanie zwrotne dzielenia wyrazów, używając niestandardowego`CustomHyphenationCallback` klasa. Dzięki temu będziemy mogli obsługiwać dzielenie wyrazów według naszych własnych zasad:
+Zanim zabrudzimy sobie ręce kodem, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+2. IDE: środowisko programistyczne, takie jak Visual Studio.
+3. Podstawowa znajomość C#: Zrozumienie C# i frameworku .NET.
+4. Słowniki dzielenia wyrazów: Słowniki dzielenia wyrazów dla języków, których planujesz używać.
+5.  Licencja Aspose: Ważna licencja Aspose. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli go nie masz.
 
- Upewnij się, że zaimplementowałeś`CustomHyphenationCallback` klasy zgodnie z Twoimi konkretnymi potrzebami.
+## Importuj przestrzenie nazw
 
-## Krok 2: Załaduj dokument i zastosuj dzielenie wyrazów
-
-Następnie załaduj dokument z określonego katalogu i podziel słowa za pomocą Aspose.Words:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## Krok 3: Obsługa błędów brakujących słowników
-
-przypadku braku słownika dzielenia wyrazów przechwycimy odpowiedni wyjątek i wyświetlimy komunikat o błędzie:
+Na początek zaimportujmy niezbędne przestrzenie nazw. Dzięki temu nasz kod ma dostęp do wszystkich klas i metod, których potrzebujemy z Aspose.Words.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## Krok 4: Oczyść i wyłącz przypomnienie o dzieleniu wyrazów
+## Krok 1: Zarejestruj wywołanie zwrotne polegające na dzieleniu wyrazów
 
-Na koniec, dla zachowania czystości i wyłączenia przypomnienia o dzieleniu wyrazów, wykonaj następujące kroki:
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-Spowoduje to oczyszczenie i wyłączenie przypomnienia o dzieleniu wyrazów po zakończeniu przetwarzania.
-
-Więc ! Pomyślnie użyłeś wywołania zwrotnego dzielenia wyrazów w Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy wywołania zwrotnego dzielenia wyrazów w Aspose.Words dla .NET
+Na początek musimy zarejestrować nasze wywołanie zwrotne polegające na dzieleniu wyrazów. W tym miejscu mówimy Aspose.Words, aby używał naszej niestandardowej logiki dzielenia wyrazów.
 
 ```csharp
 try
 {
-	 // Zarejestruj wywołanie zwrotne dzielenia wyrazów.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // Zarejestruj wywołanie zwrotne dzielenia wyrazów.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ Tutaj tworzymy instancję naszego niestandardowego wywołania zwrotnego i przypisujemy ją do`Hyphenation.Callback`.
+
+## Krok 2: Zdefiniuj ścieżkę dokumentu
+
+Następnie musimy zdefiniować katalog, w którym przechowywane są nasze dokumenty. Jest to o tyle istotne, że będziemy wczytywać i zapisywać dokumenty z tej ścieżki.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentów.
+
+## Krok 3: Załaduj dokument
+
+Teraz załadujmy dokument wymagający dzielenia wyrazów.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ Tutaj ładujemy niemiecki dokument tekstowy. Możesz wymienić`"German text.docx"` z nazwą pliku dokumentu.
+
+## Krok 4: Zapisz dokument
+
+Po wczytaniu dokumentu zapisujemy go do nowego pliku, stosując przy tym funkcję zwrotną dzielenia wyrazów.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+Ta linia zapisuje dokument jako plik PDF z zastosowanym dzieleniem wyrazów.
+
+## Krok 5: Obsłuż wyjątek dotyczący braku słownika dzielenia wyrazów
+
+Czasami możesz napotkać problem polegający na braku słownika dzielenia wyrazów. Zajmijmy się tym.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go tak, aby odpowiadał Twoim konkretnym potrzebom.
+W tym bloku przechwytujemy konkretny wyjątek związany z brakującymi słownikami i drukujemy wiadomość.
 
-### Często zadawane pytania
+## Krok 6: Zaimplementuj niestandardową klasę wywołania zwrotnego dzielenia wyrazów
 
-#### P: Co to jest przypomnienie o sylabizacji w Aspose.Words?
+ Teraz zaimplementujmy`CustomHyphenationCallback` klasa, która obsługuje żądanie słowników dzielenia wyrazów.
 
-Odp.: Przypomnienie o sylabizacji w Aspose.Words to funkcja, która pozwala dostosować sposób sylabizacji słów w dokumentach. Korzystając z przypomnienia o sylabizacji, możesz określić niestandardowe reguły sylabizacji słów, co może być przydatne w określonych językach lub w określonych scenariuszach, w których domyślna sylabizacja nie daje pożądanych rezultatów.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // Zarejestruj słownik dla żądanego języka.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### P: Jak ustawić przypomnienie o sylabizacji w Aspose.Words?
+ W tej klasie`RequestDictionary` Metoda jest wywoływana, gdy potrzebny jest słownik dzielenia wyrazów. Sprawdza język i rejestruje odpowiedni słownik.
 
- O: Aby zdefiniować wywołanie zwrotne polegające na dzieleniu wyrazów w Aspose.Words, musisz utworzyć klasę, która implementuje`HyphenationCallback` interfejs i zaimplementuj`HandleWord()` metoda. Ta metoda będzie wywoływana dla każdego słowa napotkanego podczas sylabizacji. Możesz zastosować do niego niestandardowe reguły sylabizacji i zwrócić sylabizowane słowo. Następnie możesz powiązać wywołanie zwrotne dzielenia wyrazów za pomocą`Document.HyphenationCallback` własność Twojego dokumentu.
+## Wniosek
 
-#### P: Jaka jest zaleta używania przypomnienia o sylabizacji w Aspose.Words?
+I masz to! Właśnie nauczyłeś się, jak zaimplementować wywołanie zwrotne polegające na dzieleniu wyrazów w Aspose.Words dla .NET. Wykonując poniższe kroki, możesz mieć pewność, że Twoje dokumenty będą pięknie sformatowane, niezależnie od języka. Niezależnie od tego, czy masz do czynienia z angielskim, niemieckim czy jakimkolwiek innym językiem, ta metoda pozwala bez wysiłku poradzić sobie z dzieleniem wyrazów.
 
-Odp.: Zaletą korzystania z przypomnienia o sylabie w Aspose.Words jest możliwość dostosowania sposobu sylabizacji słów w dokumentach. Daje to większą kontrolę nad sylabizacją, szczególnie w przypadku określonych języków lub scenariuszy, w których domyślna sylabizacja nie daje pożądanych rezultatów. Do każdego słowa możesz zastosować określone reguły, aby uzyskać precyzyjną sylabizację zgodnie ze swoimi potrzebami.
+## Często zadawane pytania
 
-#### P: W jakich typowych sytuacjach pomocne może być użycie przypomnienia o sylabizacji?
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do manipulacji dokumentami, która umożliwia programistom programowe tworzenie, modyfikowanie i konwertowanie dokumentów.
 
-Odp.: Użycie wzmacniacza sylabizacji może być przydatne w kilku scenariuszach, takich jak:
-- Sylabizacja słów w określonych językach, które mają określone zasady sylabizacji.
-- Zastosowanie spersonalizowanych zasad sylabizacji akronimów lub słów technicznych.
-- Dostosowanie sylabizacji do preferencji stylistycznych lub standardów typograficznych.
+### Dlaczego dzielenie wyrazów jest ważne w formatowaniu dokumentu?
+Dzielenie wyrazów poprawia układ tekstu poprzez dzielenie słów w odpowiednich miejscach, zapewniając bardziej czytelny i atrakcyjny wizualnie dokument.
 
-#### P: Jak mogę przetestować niestandardową sylabizację z przypomnieniem o sylabizacji w Aspose.Words?
+### Czy mogę używać Aspose.Words za darmo?
+ Aspose.Words oferuje bezpłatną wersję próbną. Możesz to dostać[Tutaj](https://releases.aspose.com/).
 
- O: Aby przetestować niestandardową sylabizację z przypomnieniem o sylabizacji w Aspose.Words, możesz utworzyć dokument testowy zawierający słowa, dla których chcesz zastosować niestandardowe reguły sylabizacji. Następnie możesz ustawić niestandardowe wywołanie zwrotne sylabizacji, zadzwoń pod numer`Document.Range.Replace()` metodę zamiany słów w dokumencie i użyj metody`Hyphenate()` metoda`Hyphenation` class, aby uzyskać sylabizację słów. Następnie możesz sformatować sylabizowane słowa według potrzeb, na przykład dodając łączniki między sylabami.
+### Jak uzyskać słownik dzielenia wyrazów?
+Możesz pobrać słowniki dzielenia wyrazów z różnych zasobów internetowych lub w razie potrzeby utworzyć własne.
+
+### Co się stanie, jeśli brakuje słownika dzielenia wyrazów?
+ Jeśli brakuje słownika,`RequestDictionary` Metoda zgłasza wyjątek, który można obsłużyć, aby poinformować użytkownika lub zapewnić rozwiązanie awaryjne.

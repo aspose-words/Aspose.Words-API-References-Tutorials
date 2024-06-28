@@ -2,94 +2,123 @@
 title: Erhalten Sie Benachrichtigungen über Schriftarten
 linktitle: Erhalten Sie Benachrichtigungen über Schriftarten
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie Benachrichtigungen über fehlende oder ersetzte Schriftarten erhalten, wenn Sie Aspose.Words für .NET verwenden.
+description: Erfahren Sie in unserer ausführlichen Anleitung, wie Sie Benachrichtigungen zum Ersetzen von Schriftarten in Aspose.Words für .NET erhalten. Stellen Sie sicher, dass Ihre Dokumente jedes Mal korrekt wiedergegeben werden.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie Schriftartenbenachrichtigungen erhalten, während Sie Aspose.Words für .NET verwenden. Mithilfe von Schriftartbenachrichtigungen können Sie fehlende oder ersetzte Schriftarten in Ihren Dokumenten erkennen und verwalten. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
+
+Wenn Sie jemals Probleme damit hatten, dass Schriftarten in Ihren Dokumenten nicht korrekt wiedergegeben werden, sind Sie nicht allein. Das Verwalten von Schriftarteinstellungen und der Empfang von Benachrichtigungen über Schriftartersetzungen können Ihnen viel Ärger ersparen. In diesem umfassenden Benachrichtigungsleitfaden erfahren Sie, wie Sie mit Aspose.Words für .NET mit Schriftarten umgehen und sicherstellen, dass Ihre Dokumente immer optimal aussehen.
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
-- Grundkenntnisse der Programmiersprache C#
-- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
+
+Bevor wir auf die Details eingehen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+
+- Grundkenntnisse in C#: Vertrautheit mit der C#-Programmierung wird Ihnen dabei helfen, weiterzumachen.
+-  Aspose.Words für .NET-Bibliothek: Laden Sie es herunter und installieren Sie es von[Offizieller Download-Link](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Ein Setup wie Visual Studio zum Schreiben und Ausführen Ihres Codes.
+-  Beispieldokument: Halten Sie ein Beispieldokument bereit (z. B.`Rendering.docx`) bereit, die Schriftarteinstellungen zu testen.
+
+## Namespaces importieren
+
+Um mit Aspose.Words arbeiten zu können, müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren. Dadurch erhalten Sie Zugriff auf die Klassen und Methoden, die Sie benötigen.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+```
 
 ## Schritt 1: Definieren Sie das Dokumentenverzeichnis
- Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments festlegen. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+
+Geben Sie zunächst das Verzeichnis an, in dem Ihr Dokument gespeichert ist. Dies ist entscheidend für das Auffinden des Dokuments, das Sie bearbeiten möchten.
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Schritt 2: Laden Sie das Dokument und konfigurieren Sie die Schriftarteinstellungen
- Als nächstes laden wir das Dokument mit`Document` Klasse und konfigurieren Sie die Schriftarteinstellungen mithilfe der`FontSettings` Klasse. Wir werden die Standardschriftart festlegen, die verwendet werden soll, falls Schriftarten fehlen.
-
-```csharp
-// Laden Sie das Dokument und konfigurieren Sie die Schriftarteinstellungen
-Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-```
-
-## Schritt 3: Benachrichtigungshandler festlegen
-Als Nächstes definieren wir einen Benachrichtigungshandler, indem wir den implementieren`IWarningCallback` Schnittstelle. Dadurch können wir beim Speichern des Dokuments Schriftartenwarnungen erfassen.
-
-```csharp
-// Definieren Sie den Benachrichtigungshandler
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc. WarningCallback = callback;
-```
-
-## Schritt 4: Schriftarteinstellungen anwenden und das Dokument speichern
-Abschließend wenden wir die Schriftarteinstellungen auf das Dokument an und speichern es. Alle Schriftartwarnungen werden vom zuvor definierten Benachrichtigungshandler erfasst.
-
-```csharp
-// Übernehmen Sie die Schriftarteinstellungen und speichern Sie das Dokument
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
-```
-
-### Beispielquellcode für den Empfang von Benachrichtigungen über Schriftarten mit Aspose.Words für .NET 
-```csharp
-
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Schritt 2: Laden Sie das Dokument
+
+ Laden Sie Ihr Dokument in ein Aspose.Words`Document` Objekt. Dadurch können Sie das Dokument programmgesteuert bearbeiten.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Schritt 3: Schriftarteinstellungen konfigurieren
+
+Konfigurieren Sie nun die Schriftarteinstellungen, um eine Standardschriftart anzugeben, die Aspose.Words verwenden soll, wenn die erforderlichen Schriftarten nicht gefunden werden.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Wir können die Standardschriftart auswählen, die verwendet werden soll, falls Schriftarten fehlen.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-// Zum Testen stellen wir Aspose.Words so ein, dass es nur in einem Ordner nach Schriftarten sucht, der nicht existiert. Da Aspose.Words dies nicht tut
-// Suchen Sie alle Schriftarten im angegebenen Verzeichnis. Beim Rendern werden die Schriftarten im Dokument dann durch die Standardschriftarten ersetzt
-// Schriftart, die unter FontSettings.DefaultFontName angegeben ist. Diesen Antrag können wir über unseren Rückruf aufgreifen.
+
+// Stellen Sie Aspose.Words so ein, dass nur in einem nicht vorhandenen Ordner nach Schriftarten gesucht wird
 fontSettings.SetFontsFolder(string.Empty, false);
-//Erstellen Sie eine neue Klasse, die IWarningCallback implementiert und alle beim Speichern des Dokuments erzeugten Warnungen sammelt.
+```
+
+## Schritt 4: Richten Sie den Warnrückruf ein
+
+ Um Schriftartersetzungswarnungen zu erfassen und zu verarbeiten, erstellen Sie eine Klasse, die Folgendes implementiert`IWarningCallback` Schnittstelle. Diese Klasse protokolliert alle Warnungen, die während der Dokumentverarbeitung auftreten.
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        // Wir sind nur daran interessiert, dass Schriftarten ersetzt werden.
+        if (info.WarningType == WarningType.FontSubstitution)
+        {
+            Console.WriteLine("Font substitution: " + info.Description);
+        }
+    }
+}
+```
+
+## Schritt 5: Weisen Sie dem Dokument die Rückruf- und Schriftarteinstellungen zu
+
+Weisen Sie dem Dokument den Warnrückruf und die konfigurierten Schriftarteinstellungen zu. Dadurch wird sichergestellt, dass etwaige Schriftprobleme erfasst und protokolliert werden.
+
+```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
-
 ```
 
+## Schritt 6: Speichern Sie das Dokument
+
+Speichern Sie abschließend das Dokument, nachdem Sie die Schriftarteinstellungen angewendet und etwaige Schriftartersetzungen vorgenommen haben. Speichern Sie es in einem Format Ihrer Wahl; Hier speichern wir es als PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
+```
+
+Indem Sie diese Schritte ausführen, haben Sie Ihre Anwendung so konfiguriert, dass sie Schriftartersetzungen ordnungsgemäß verarbeitet und Benachrichtigungen erhält, wenn eine Ersetzung erfolgt.
+
 ## Abschluss
-In diesem Tutorial haben wir gesehen, wie Sie Schriftartbenachrichtigungen erhalten, während Sie Aspose.Words für .NET verwenden. Mithilfe von Schriftartbenachrichtigungen können Sie fehlende oder ersetzte Schriftarten in Ihren Dokumenten erkennen und verwalten. Nutzen Sie diese Funktion, um die Schriftartenkonsistenz in Ihren Dokumenten sicherzustellen und bei fehlenden Schriftarten entsprechende Maßnahmen zu ergreifen.
 
-### FAQs
+Sie beherrschen jetzt den Prozess des Empfangens von Benachrichtigungen für Schriftartersetzungen mit Aspose.Words für .NET. Mit dieser Fähigkeit stellen Sie sicher, dass Ihre Dokumente immer optimal aussehen, auch wenn die erforderlichen Schriftarten nicht verfügbar sind. Experimentieren Sie weiter mit verschiedenen Einstellungen, um die Leistungsfähigkeit von Aspose.Words voll auszuschöpfen.
 
-#### F: Wie kann ich Benachrichtigungen über fehlende Schriftarten in Aspose.Words erhalten?
+## FAQs
 
- A: Um Benachrichtigungen über fehlende Schriftarten in Aspose.Words zu erhalten, können Sie die verwenden`FontSettings` Klasse und die`FontSubstitutionCallback` Ereignis. Sie können eine Rückrufmethode festlegen, die benachrichtigt wird, wenn bei der Verarbeitung von Dokumenten fehlende Schriftarten festgestellt werden.
+### F1: Kann ich mehrere Standardschriftarten angeben?
 
-#### F: Wie kann ich mit fehlenden Schriftarten in meinen Word-Dokumenten umgehen?
+Nein, Sie können nur eine Standardschriftart für die Ersetzung angeben. Sie können jedoch mehrere Fallback-Schriftartenquellen konfigurieren.
 
-A: Um mit fehlenden Schriftarten in Ihren Word-Dokumenten umzugehen, können Sie verschiedene Strategien anwenden. Sie können die fehlenden Schriftarten auf dem System installieren, auf dem Sie Ihre Aspose.Words-Anwendung ausführen, oder Sie können die fehlenden Schriftarten durch verfügbare alternative Schriftarten ersetzen.
+### F2: Wo kann ich eine kostenlose Testversion von Aspose.Words für .NET erhalten?
 
-#### F: Ist es möglich, Benachrichtigungen zu ersetzten Schriftarten in Aspose.Words zu erhalten?
+ Sie können eine kostenlose Testversion herunterladen[Aspose kostenlose Testseite](https://releases.aspose.com/).
 
- A: Ja, es ist möglich, Benachrichtigungen zu ersetzten Schriftarten in Aspose.Words zu erhalten. Wenn Schriftarten während der Dokumentverarbeitung ersetzt werden, können Sie über das benachrichtigt werden`FontSubstitutionCallback` Ereignis und ergreifen Sie geeignete Maßnahmen, um das Erscheinungsbild des Textes anzupassen.
+###  F3: Kann ich mit anderen Arten von Warnungen umgehen?`IWarningCallback`?
 
-#### F: Wie kann ich das Erscheinungsbild des Textes konsistent halten, wenn Schriftarten in Aspose.Words ersetzt werden?
+ Ja das`IWarningCallback` Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur das Ersetzen von Schriftarten.
 
-A: Um beim Ersetzen von Schriftarten ein einheitliches Erscheinungsbild des Textes zu gewährleisten, können Sie Textformatierungseigenschaften wie Schriftgröße, Stil und Farbe anpassen. Sie können auch Ersatzschriftarten verwenden, die den Originalschriftarten optisch ähneln.
+### F4: Wo finde ich Unterstützung für Aspose.Words?
+
+ Besuche den[Aspose.Words-Supportforum](https://forum.aspose.com/c/words/8) zur Hilfe.
+
+### F5: Ist es möglich, eine temporäre Lizenz für Aspose.Words zu erhalten?
+
+ Ja, Sie können eine temporäre Lizenz bei der erhalten[temporäre Lizenzseite](https://purchase.aspose.com/temporary-license/).

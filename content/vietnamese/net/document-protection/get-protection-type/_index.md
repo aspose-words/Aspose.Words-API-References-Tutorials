@@ -50,7 +50,7 @@ Trong bài viết này, chúng tôi đã giải thích cách sử dụng chức 
 
 Trả lời: Để truy xuất loại bảo vệ của tài liệu bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
 1.  Tải tài liệu bằng cách sử dụng`Document` lớp học.
-2.  Truy cập`ProtectionType` tài sản của`Document`đối tượng để lấy loại bảo vệ.
+2.  Truy cập`ProtectionType` tài sản của`Document` đối tượng để lấy loại bảo vệ.
 
 #### Câu hỏi: Tôi có thể xác định xem tài liệu có được bảo vệ cho biểu mẫu hoặc trường biểu mẫu bằng thuộc tính ProtectionType không?
 

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-section/clone-section/
 ---
 
-tym samouczku pokażemy, jak sklonować sekcję dokumentu programu Word przy użyciu biblioteki Aspose.Words dla platformy .NET. Klonowanie sekcji powoduje utworzenie identycznej kopii istniejącej sekcji. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+W tym samouczku pokażemy, jak sklonować sekcję dokumentu programu Word przy użyciu biblioteki Aspose.Words dla platformy .NET. Klonowanie sekcji powoduje utworzenie identycznej kopii istniejącej sekcji. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -49,7 +49,7 @@ Section cloneSection = doc.Sections[0].Clone();
 ```
 
 ## Wniosek
-W tym samouczku widzieliśmy, jak sklonować sekcję dokumentu programu Word za pomocą Aspose.Words dla .NET. Klonowanie sekcji umożliwia utworzenie identycznych kopii istniejących sekcji w dokumencie. Możesz swobodnie dostosowywać i używać tej funkcji klonowania w swoich projektach, aby efektywnie manipulować i edytować sekcje dokumentów.
+tym samouczku widzieliśmy, jak sklonować sekcję dokumentu programu Word za pomocą Aspose.Words dla .NET. Klonowanie sekcji umożliwia utworzenie identycznych kopii istniejących sekcji w dokumencie. Możesz swobodnie dostosowywać i używać tej funkcji klonowania w swoich projektach, aby efektywnie manipulować i edytować sekcje dokumentów.
 
 ### Często zadawane pytania
 

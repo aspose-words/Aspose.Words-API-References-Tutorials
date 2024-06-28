@@ -62,7 +62,7 @@ To je vše ! Úspěšně jste vygenerovali PDF bez vložení písem Arial a Time
 
 ## Závěr
 
-tomto tutoriálu jsme vysvětlili, jak zakázat vkládání písem Arial a Times Roman do dokumentu PDF pomocí Aspose.Words for .NET. Podle uvedených kroků můžete vygenerovat soubor PDF bez vkládání těchto specifických písem, což může pomoci snížit velikost souboru a zajistit lepší kompatibilitu dokumentů na různých platformách. Při používání této funkce nezapomeňte zvážit důsledky zakázání vkládání písem. Neváhejte a prozkoumejte další funkce Aspose.Words for .NET pro optimalizaci generování vašich souborů PDF.
+tomto tutoriálu jsme vysvětlili, jak zakázat vkládání písem Arial a Times Roman do dokumentu PDF pomocí Aspose.Words for .NET. Podle uvedených kroků můžete vygenerovat soubor PDF bez vkládání těchto specifických písem, což může pomoci snížit velikost souboru a zajistit lepší kompatibilitu dokumentů na různých platformách. Při používání této funkce nezapomeňte zvážit důsledky zakázání vkládání písem. Neváhejte a prozkoumejte další funkce Aspose.Words pro .NET, abyste optimalizovali generování vašich souborů PDF.
 
 ### Často kladené otázky
 

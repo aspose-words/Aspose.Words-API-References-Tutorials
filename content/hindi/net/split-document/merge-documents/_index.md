@@ -2,110 +2,113 @@
 title: Word दस्तावेज़ मर्ज करें
 linktitle: दस्तावेज़ मर्ज करें
 second_title: Aspose.Words दस्तावेज़ प्रोसेसिंग एपीआई
-description: .NET के लिए Aspose.Words का उपयोग करके एकाधिक Word दस्तावेज़ों को मर्ज करना सीखें। यह शक्तिशाली एपीआई दस्तावेज़ों को मर्ज करने की प्रक्रिया को सरल बनाता है, जिससे यह कुशल और सरल हो जाती है।
+description: इस व्यापक, चरण-दर-चरण मार्गदर्शिका के साथ जानें कि .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों को कैसे मर्ज किया जाए। आपके दस्तावेज़ वर्कफ़्लो को स्वचालित करने के लिए बिल्कुल सही।
 type: docs
 weight: 10
 url: /hi/net/split-document/merge-documents/
 ---
+## परिचय
 
-इस ट्यूटोरियल में, हम आपको बताएंगे कि .NET के लिए Aspose.Words के मर्ज दस्तावेज़ सुविधा का उपयोग करके एकाधिक Word दस्तावेज़ों को कैसे मर्ज किया जाए। स्रोत कोड को समझने और सभी स्रोत दस्तावेज़ों वाला एक मर्ज किया गया दस्तावेज़ प्राप्त करने के लिए नीचे दिए गए चरणों का पालन करें।
+सुनो! क्या आपने कभी पाया है कि आपको एकाधिक Word दस्तावेज़ों को एक संयोजित फ़ाइल में मर्ज करने की आवश्यकता पड़ रही है? चाहे आप रिपोर्ट संकलित कर रहे हों, किसी प्रोजेक्ट को असेंबल कर रहे हों, या बस व्यवस्थित करने का प्रयास कर रहे हों, दस्तावेज़ों को मर्ज करने से आपका बहुत सारा समय और मेहनत बच सकती है। .NET के लिए Aspose.Words के साथ, यह प्रक्रिया आसान हो जाती है। इस ट्यूटोरियल में, हम .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों को मर्ज करने के तरीके के बारे में जानेंगे, प्रत्येक चरण को तोड़ेंगे ताकि आप आसानी से अनुसरण कर सकें। अंत तक, आप एक पेशेवर की तरह दस्तावेज़ों का विलय कर देंगे!
 
-## चरण 1: मर्ज करने के लिए दस्तावेज़ खोजें
+## आवश्यक शर्तें
 
-दस्तावेज़ों को मर्ज करने से पहले, हमें मर्ज किए जाने वाले स्रोत दस्तावेज़ों का पता लगाना होगा। ऐसे:
+इससे पहले कि हम आगे बढ़ें, आइए सुनिश्चित करें कि आपको वह सब कुछ मिल गया है जो आपको चाहिए:
+
+1. C# का बुनियादी ज्ञान: आपको C# सिंटैक्स और अवधारणाओं के साथ सहज होना चाहिए।
+2.  .NET के लिए Aspose.Words: इसे डाउनलोड करें[यहाँ](https://releases.aspose.com/words/net/) . यदि आप अभी खोज कर रहे हैं, तो आप इसके साथ शुरुआत कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/).
+3. विज़ुअल स्टूडियो: किसी भी नवीनतम संस्करण को काम करना चाहिए, लेकिन नवीनतम संस्करण की अनुशंसा की जाती है।
+4. .NET फ्रेमवर्क: सुनिश्चित करें कि यह आपके सिस्टम पर स्थापित है।
+
+ठीक है, अब जब हमने पूर्वापेक्षाएँ सुलझा ली हैं, तो चलिए मज़ेदार हिस्से पर आते हैं!
+
+## नामस्थान आयात करें
+
+सबसे पहली बात, हमें Aspose.Words के साथ काम करने के लिए आवश्यक नामस्थान आयात करने की आवश्यकता है। यह हमें उन सभी कक्षाओं और विधियों तक पहुँचने की अनुमति देता है जिनकी हमें आवश्यकता होगी।
 
 ```csharp
-// दस्तावेज़ निर्देशिका का पथ.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// मर्ज करने के लिए दस्तावेज़ खोजें.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-.GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.LowCode;
 ```
 
-## चरण 2: दस्तावेज़ मर्ज करें
+ये नामस्थान दस्तावेज़ निर्माण, हेरफेर और विभिन्न स्वरूपों में सहेजने के लिए आवश्यक हैं।
 
-अब हम अंतिम मर्ज किए गए दस्तावेज़ बनाने के लिए दस्तावेज़ों को एक-एक करके मर्ज करेंगे। ऐसे:
+## चरण 1: दस्तावेज़ निर्देशिका स्थापित करना
 
-```csharp
-// परिणामी दस्तावेज़ का पहला भाग खोलें.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// एक नया परिणामी दस्तावेज़ बनाएँ।
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// दस्तावेज़ों को एक-एक करके मर्ज करें।
-foreach(FileSystemInfo documentPath in documentPaths)
-{
-if (documentPath.FullName == sourceDocumentPath)
-keep on going;
-
-mergedDocBuilder.MoveToDocumentEnd();
-mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-```
-
-### .NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ों को मर्ज करने के लिए उदाहरण स्रोत कोड
-
-.NET के लिए Aspose.Words के मर्ज दस्तावेज़ सुविधा का संपूर्ण स्रोत कोड यहां दिया गया है:
+इससे पहले कि हम दस्तावेज़ों का विलय शुरू करें, हमें वह निर्देशिका निर्दिष्ट करनी होगी जहाँ हमारे दस्तावेज़ संग्रहीत हैं। यह Aspose.Words को उन फ़ाइलों का पता लगाने में मदद करता है जिन्हें हम मर्ज करना चाहते हैं।
 
 ```csharp
-// दस्तावेज़ निर्देशिका का पथ.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// मर्ज के लिए उपयोग किए जाने वाले दस्तावेज़ ढूंढें।
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
-
-// परिणामी दस्तावेज़ का पहला भाग खोलें.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// एक नया परिणामी दस्तावेज़ बनाएँ।
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// दस्तावेज़ के हिस्सों को एक-एक करके मर्ज करें।
-foreach (FileSystemInfo documentPath in documentPaths)
-{
-	if (documentPath.FullName == sourceDocumentPath)
-		continue;
-
-	mergedDocBuilder.MoveToDocumentEnd();
-	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-	sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
+
+ यहां, हम उस निर्देशिका के लिए पथ निर्धारित करते हैं जहां आपके Word दस्तावेज़ स्थित हैं। प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` वास्तविक पथ के साथ.
+
+## चरण 2: सरल विलय
+
+ आइए एक साधारण मर्ज से शुरुआत करें। हम इसका उपयोग करके दो दस्तावेज़ों को एक में मिला देंगे`Merger.Merge` तरीका।
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
+```
+
+ इस चरण में, हम विलीन हो जाते हैं`Document1.docx` और`Document2.docx` नामक एक नई फ़ाइल में`MergedDocument.docx`.
+
+## चरण 3: सेव ऑप्शन के साथ विलय
+
+कभी-कभी, आप मर्ज किए गए दस्तावेज़ के लिए पासवर्ड सुरक्षा जैसे विशिष्ट विकल्प सेट करना चाह सकते हैं। यहां बताया गया है कि आप यह कैसे कर सकते हैं:
+
+```csharp
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" };
+Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
+```
+
+यह कोड स्निपेट दस्तावेज़ों को पासवर्ड सुरक्षा के साथ मर्ज कर देता है, जिससे यह सुनिश्चित होता है कि अंतिम दस्तावेज़ सुरक्षित है।
+
+## चरण 4: पीडीएफ के रूप में विलय और सहेजना
+
+यदि आपको दस्तावेज़ों को मर्ज करने और परिणाम को पीडीएफ के रूप में सहेजने की आवश्यकता है, तो Aspose.Words इसे आसान बनाता है:
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
+```
+
+ यहाँ, हम विलीन हो जाते हैं`Document1.docx` और`Document2.docx` और परिणाम को पीडीएफ फाइल के रूप में सहेजें।
+
+## चरण 5: मर्ज किए गए दस्तावेज़ों से एक दस्तावेज़ उदाहरण बनाना
+
+कभी-कभी, आप सहेजने से पहले मर्ज किए गए दस्तावेज़ के साथ आगे काम करना चाह सकते हैं। आप एक बना सकते हैं`Document` मर्ज किए गए दस्तावेज़ों से उदाहरण:
+
+```csharp
+Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
+doc.Save(dataDir + "MergedDocumentInstance.docx");
+```
+
+ इस चरण में, हम एक बनाते हैं`Document` मर्ज किए गए दस्तावेज़ों से उदाहरण, सहेजने से पहले और हेरफेर की अनुमति देता है।
 
 ## निष्कर्ष
 
-बधाई हो! आपने सीखा है कि .NET के लिए Aspose.Words के मर्ज दस्तावेज़ सुविधा का उपयोग करके एकाधिक Word दस्तावेज़ों को कैसे मर्ज किया जाए। दिए गए स्रोत कोड का पालन करके, आप प्रत्येक स्रोत दस्तावेज़ के स्वरूपण को संरक्षित करते हुए अलग-अलग दस्तावेज़ों को एक मर्ज किए गए दस्तावेज़ में जोड़ सकते हैं।
+ आखिर तुमने इसे हासिल कर ही लिया है! आपने सीखा कि .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों को कैसे मर्ज किया जाए। इस ट्यूटोरियल में आपके वातावरण को स्थापित करना, सरल मर्ज करना, सेव विकल्पों के साथ विलय करना, मर्ज किए गए दस्तावेज़ों को पीडीएफ में परिवर्तित करना और मर्ज किए गए दस्तावेज़ों से एक दस्तावेज़ उदाहरण बनाना शामिल है। Aspose.Words सुविधाओं की एक विस्तृत श्रृंखला प्रदान करता है, इसलिए इसे अवश्य देखें[एपीआई दस्तावेज़ीकरण](https://reference.aspose.com/words/net/) इसकी पूरी क्षमता को उजागर करने के लिए।
 
-दस्तावेज़ों को मर्ज करना तब उपयोगी हो सकता है जब आप कई स्रोतों से जानकारी को समेकित करना चाहते हैं या अलग-अलग हिस्सों से एक एकीकृत दस्तावेज़ बनाना चाहते हैं। .NET के लिए Aspose.Words एक शक्तिशाली एपीआई प्रदान करता है जो दस्तावेज़ों को मर्ज करने की प्रक्रिया को सरल बनाता है, इसे कुशल और सीधा बनाता है।
+## पूछे जाने वाले प्रश्न
 
-अपनी दस्तावेज़ प्रसंस्करण क्षमताओं को बढ़ाने और अपने वर्कफ़्लो को सुव्यवस्थित करने के लिए .NET के लिए Aspose.Words द्वारा दी गई अन्य सुविधाओं का बेझिझक पता लगाएं।
+### 1. .NET के लिए Aspose.Words क्या है?
 
-### पूछे जाने वाले प्रश्न
+.NET के लिए Aspose.Words एक शक्तिशाली लाइब्रेरी है जो डेवलपर्स को Word दस्तावेज़ों को प्रोग्रामेटिक रूप से बनाने, हेरफेर करने और परिवर्तित करने की अनुमति देती है। यह दस्तावेज़-संबंधित कार्यों को स्वचालित करने के लिए आदर्श है।
 
-#### मैं भिन्न स्वरूपण वाले दस्तावेज़ों को कैसे मर्ज कर सकता हूँ?
+### 2. क्या मैं .NET के लिए Aspose.Words का निःशुल्क उपयोग कर सकता हूँ?
 
- दस्तावेज़ों को मर्ज करते समय, .NET के लिए Aspose.Words प्रत्येक स्रोत दस्तावेज़ के स्वरूपण को संरक्षित करने का विकल्प प्रदान करता है। का उपयोग करके`ImportFormatMode.KeepSourceFormatting` विकल्प, मर्ज किए गए दस्तावेज़ मूल दस्तावेज़ों के स्वरूपण को बनाए रखेंगे। यदि आप मर्ज किए गए दस्तावेज़ में लगातार फ़ॉर्मेटिंग लागू करना चाहते हैं, तो आप दस्तावेज़ों को मर्ज करने के बाद Aspose.Words API का उपयोग करके फ़ॉर्मेटिंग को संशोधित कर सकते हैं।
+ आप a का उपयोग करके .NET के लिए Aspose.Words आज़मा सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/). दीर्घकालिक उपयोग के लिए, आपको लाइसेंस खरीदने की आवश्यकता होगी।
 
-#### क्या मैं दस्तावेज़ों को विभिन्न प्रारूपों में मर्ज कर सकता हूँ?
+### 3. मैं विलय के दौरान विभिन्न स्वरूपण को कैसे संभालूं?
 
-हाँ, .NET के लिए Aspose.Words DOCX, DOC, RTF और अन्य सहित विभिन्न स्वरूपों में दस्तावेज़ों को मर्ज करने का समर्थन करता है। आप विभिन्न प्रारूपों के दस्तावेज़ों को Aspose.Words API में लोड कर सकते हैं और उनके मूल प्रारूपों की परवाह किए बिना उन्हें एक ही दस्तावेज़ में मर्ज कर सकते हैं।
+ Aspose.Words जैसे विभिन्न मर्ज प्रारूप मोड प्रदान करता है`KeepSourceFormatting` और`MergeFormatting` . को देखें[एपीआई दस्तावेज़ीकरण](https://reference.aspose.com/words/net/) विस्तृत निर्देशों के लिए.
 
-#### क्या मैं दस्तावेज़ों को तालिकाओं और छवियों जैसी जटिल संरचनाओं के साथ मर्ज कर सकता हूँ?
+### 4. मुझे .NET के लिए Aspose.Words के लिए समर्थन कैसे मिलेगा?
 
-बिल्कुल! .NET के लिए Aspose.Words तालिकाओं, छवियों, शीर्षलेखों, पादलेखों और अन्य सहित जटिल संरचनाओं वाले दस्तावेज़ों को मर्ज करने में सक्षम है। एपीआई प्रत्येक दस्तावेज़ में सामग्री की अखंडता और लेआउट को संरक्षित करते हुए विलय प्रक्रिया को संभालता है।
+पर जाकर समर्थन प्राप्त कर सकते हैं[Aspose समर्थन मंच](https://forum.aspose.com/c/words/8).
 
-#### क्या विभिन्न पेज ओरिएंटेशन या आकार वाले दस्तावेज़ों को मर्ज करना संभव है?
+### 5. क्या मैं .NET के लिए अन्य फ़ाइल स्वरूपों को Aspose.Words के साथ मर्ज कर सकता हूँ?
 
-हाँ, .NET के लिए Aspose.Words विलय प्रक्रिया के दौरान विभिन्न पेज ओरिएंटेशन या आकार वाले दस्तावेज़ों को संभालता है। परिणामी मर्ज किया गया दस्तावेज़ स्रोत दस्तावेज़ों के अलग-अलग पेज ओरिएंटेशन और आकार को समायोजित करेगा।
+हाँ, Aspose.Words DOCX, PDF और HTML सहित विभिन्न फ़ाइल स्वरूपों को मर्ज करने का समर्थन करता है।

@@ -19,7 +19,7 @@ url: /ko/net/programming-with-styles-and-themes/set-theme-properties/
 Document doc = new Document();
 ```
 
- 이 단계에서는 새로운`Document` 물체.
+이 단계에서는 새로운`Document` 물체.
 
 ## 3단계: 테마 속성 편집
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- 이 단계에서는`Theme` 의 대상`Document` 문서 테마를 가져오는 개체입니다. 다음으로 보조 글꼴(`MinorFonts.Latin`) 및 색상(`Colors.Hyperlink`).
+ 이 단계에서는`Theme` 의 대상`Document`문서 테마를 가져오는 개체입니다. 다음으로 보조 글꼴(`MinorFonts.Latin`) 및 색상(`Colors.Hyperlink`).
 
 ## 4단계: 문서 저장
 
@@ -67,7 +67,7 @@ Aspose.Words for .NET은 문서 스타일과 테마를 조작하기 위한 강�
 
 #### 테마 속성에 어떻게 액세스하고 수정합니까?
 
- 테마 속성에 액세스하고 수정하려면 다음을 사용할 수 있습니다.`Theme` 의 대상`Document` 수업. 액세스하여`Theme`객체의 경우 보조 글꼴(`MinorFonts.Latin`) 및 색상(`Colors.Hyperlink`). 문서의 테마를 사용자 정의하려면 이러한 속성에 원하는 값을 할당하세요.
+ 테마 속성에 액세스하고 수정하려면 다음을 사용할 수 있습니다.`Theme` 의 대상`Document` 수업. 액세스하여`Theme` 객체의 경우 보조 글꼴(`MinorFonts.Latin`) 및 색상(`Colors.Hyperlink`). 문서의 테마를 사용자 정의하려면 이러한 속성에 원하는 값을 할당하십시오.
 
 #### Word 문서에서 테마 속성을 설정하면 어떤 이점이 있나요?
 
@@ -79,4 +79,4 @@ Word 문서에서 테마 속성을 설정하면 원하는 스타일이나 브랜
 
 #### 수정된 문서를 다른 형식으로 저장할 수 있나요?
 
-예, Aspose.Words for .NET에서 지원하는 다양한 형식으로 수정된 문서를 저장할 수 있습니다. 그만큼`Save` 의 방법`Document` 개체를 사용하면 DOCX, PDF, HTML 등과 같은 출력 파일 형식을 지정할 수 있습니다. 요구 사항에 따라 적절한 형식을 선택하십시오.
+ 예, Aspose.Words for .NET에서 지원하는 다양한 형식으로 수정된 문서를 저장할 수 있습니다. 그만큼`Save` 의 방법`Document` 개체를 사용하면 DOCX, PDF, HTML 등과 같은 출력 파일 형식을 지정할 수 있습니다. 요구 사항에 따라 적절한 형식을 선택하십시오.

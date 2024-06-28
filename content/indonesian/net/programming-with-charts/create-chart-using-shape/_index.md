@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 Itu dia! Anda telah berhasil membuat bagan menggunakan bentuk di dokumen Word menggunakan Aspose.Words untuk .NET.
 
 ## Kesimpulan
-Dalam tutorial ini, Anda telah mempelajari cara membuat bagan menggunakan bentuk di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah, Anda dapat menyisipkan dan mengonfigurasi bentuk bagan, menyesuaikan tampilannya, dan menyimpan dokumen. Aspose.Words untuk .NET menyediakan serangkaian fitur komprehensif untuk Pemrosesan Kata dengan dokumen dan bagan Word, memungkinkan Anda membuat bagan yang terlihat profesional dan menarik secara visual langsung di aplikasi .NET Anda.
+Dalam tutorial ini, Anda telah mempelajari cara membuat bagan menggunakan bentuk di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah, Anda dapat menyisipkan dan mengonfigurasi bentuk bagan, menyesuaikan tampilannya, dan menyimpan dokumen. Aspose.Words untuk .NET menyediakan serangkaian fitur komprehensif untuk Pemrosesan Kata dengan dokumen dan bagan Word, memungkinkan Anda membuat bagan yang tampak profesional dan menarik secara visual langsung di aplikasi .NET Anda.
 
 ### FAQ
 

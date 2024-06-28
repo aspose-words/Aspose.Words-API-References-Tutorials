@@ -74,7 +74,7 @@ N'hésitez pas à explorer d'autres fonctionnalités puissantes offertes par Asp
  Oui, vous pouvez extraire des pages non consécutives en spécifiant la plage de pages souhaitée. Par exemple, si vous souhaitez extraire les pages 1, 3 et 5, vous pouvez définir la plage de pages comme`1,3,5` dans le`ExtractPages` fonction.
 
 #### Q2 : Est-il possible d’extraire simultanément une plage de pages spécifique à partir de plusieurs documents ?
-Oui, vous pouvez appliquer la fonctionnalité « Par plage de pages » à plusieurs documents. Chargez simplement chaque document individuellement et extrayez la plage de pages souhaitée à l'aide du`ExtractPages` fonction. Vous pouvez ensuite enregistrer les pages extraites de chaque document séparément.
+ Oui, vous pouvez appliquer la fonctionnalité « Par plage de pages » à plusieurs documents. Chargez simplement chaque document individuellement et extrayez la plage de pages souhaitée à l'aide du`ExtractPages` fonction. Vous pouvez ensuite enregistrer les pages extraites de chaque document séparément.
 
 #### Q3 : Puis-je extraire des plages de pages de documents Word cryptés ou protégés par mot de passe ?
 Non, la fonctionnalité « Par plage de pages » fonctionne sur les documents Word non protégés. Si un document est crypté ou protégé par mot de passe, vous devrez fournir le mot de passe correct et supprimer la protection avant d'extraire la plage de pages souhaitée.

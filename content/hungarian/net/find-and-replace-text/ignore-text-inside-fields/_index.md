@@ -16,7 +16,7 @@ Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogya
 
 ## 1. lépés: Új dokumentum létrehozása
 
- Mielőtt elkezdené manipulálni a mezőkön belüli szöveget, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ez megtehető az a. példányosításával`Document` tárgy:
+ Mielőtt elkezdené manipulálni a mezőkön belüli szöveget, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ezt úgy lehet megtenni, hogy a`Document` tárgy:
 
 ```csharp
 Document doc = new Document();
@@ -66,7 +66,7 @@ options.IgnoreFields = false;
 
 ## 7. lépés: A módosított dokumentum megjelenítése a mezőkkel
 
-Az opciók módosítása után végre tudjuk hajtani a keresést és a cserét újra, hogy az eredmény a mellékelt mezőkben lévő szöveggel kapjuk meg:
+Az opciók megváltoztatása után végre tudjuk hajtani a keresést és a cserét, hogy az eredményt a megadott mezőkben lévő szöveggel kapjuk meg:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);

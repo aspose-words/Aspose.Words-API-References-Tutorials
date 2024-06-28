@@ -10,7 +10,7 @@ url: /vi/python-net/data-visualization-and-formatting/document-shape-handling-fo
 
 ## Giới thiệu
 
-Các tài liệu hiện đại không chỉ xoay quanh nội dung chứa đựng trong đó; sức hấp dẫn trực quan của chúng đóng một vai trò quan trọng trong việc thu hút độc giả. Aspose.Words for Python cung cấp một bộ công cụ mạnh mẽ để thao tác các tài liệu theo chương trình, cho phép bạn tạo các bố cục trực quan ấn tượng, gây ấn tượng với khán giả của mình.
+Các tài liệu hiện đại không chỉ xoay quanh nội dung chứa đựng trong đó; Sự hấp dẫn trực quan của chúng đóng một vai trò quan trọng trong việc thu hút độc giả. Aspose.Words for Python cung cấp một bộ công cụ mạnh mẽ để thao tác các tài liệu theo chương trình, cho phép bạn tạo các bố cục trực quan ấn tượng, gây ấn tượng với khán giả của mình.
 
 ## Thiết lập môi trường
 
@@ -98,4 +98,4 @@ Tuyệt đối! Aspose.Words for Python cung cấp các tùy chọn để tùy c
 Bạn có thể thêm hình ảnh vào tài liệu của mình bằng cách sử dụng`append_image` phương thức, cung cấp đường dẫn đến tệp hình ảnh.
 
 ### Có nhiều tính năng nâng cao hơn có sẵn trong Aspose.Words cho Python không?
-Có, Aspose.Words for Python cung cấp nhiều tính năng nâng cao, bao gồm bảng, biểu đồ, siêu liên kết, v.v. để tạo tài liệu động và hấp dẫn.
+Có, Aspose.Words for Python cung cấp nhiều tính năng nâng cao, bao gồm bảng, biểu đồ, siêu liên kết, v.v., để tạo tài liệu động và hấp dẫn.

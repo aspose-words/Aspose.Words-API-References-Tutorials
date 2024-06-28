@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Βήμα 4: Προσθήκη περιεχομένου πλαισίου κειμένου
 
- Δημιουργώ ένα`NodeImporter` αντικείμενο και χρησιμοποιήστε το για να εισαγάγετε κόμβους πλαισίου κειμένου από το έγγραφο προέλευσης στο έγγραφο προορισμού. Επαναλάβετε κάθε παράγραφο στο έγγραφο προέλευσης και εισαγάγετε το στο έγγραφο προορισμού.
+ Δημιουργώ ένα`NodeImporter`αντικείμενο και χρησιμοποιήστε το για να εισαγάγετε κόμβους πλαισίου κειμένου από το έγγραφο προέλευσης στο έγγραφο προορισμού. Επαναλάβετε κάθε παράγραφο στο έγγραφο προέλευσης και εισαγάγετε το στο έγγραφο προορισμού.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Βήμα 5: Αποθηκεύστε το έγγραφο προορισμού
 
- Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
+Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

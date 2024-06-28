@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-นั่นคือทั้งหมดที่ ! คุณได้ฝังชุดย่อยของแบบอักษรในเอกสารเรียบร้อยแล้ว และสร้าง PDF ที่มีเฉพาะสัญลักษณ์ที่ใช้ในเอกสารด้วย Aspose.Words สำหรับ .NET
+นั่นคือทั้งหมด! คุณได้ฝังชุดย่อยของแบบอักษรในเอกสารเรียบร้อยแล้ว และสร้าง PDF ที่มีเฉพาะสัญลักษณ์ที่ใช้ในเอกสารด้วย Aspose.Words สำหรับ .NET
 
 ### ตัวอย่างซอร์สโค้ดสำหรับการฝังชุดย่อยแบบอักษรด้วย Aspose.Words สำหรับ .NET
 

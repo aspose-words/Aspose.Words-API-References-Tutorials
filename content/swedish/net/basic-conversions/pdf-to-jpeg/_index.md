@@ -57,7 +57,7 @@ När du konverterar PDF till JPEG kan du ange upplösningen och kvaliteten på d
 
 #### Vilka är begränsningarna i konverteringsprocessen?
 
-Begränsningarna för konverteringsprocessen beror på det specifika verktyget eller biblioteket du använder. Vissa verktyg kan ha begränsningar relaterade till komplex layout, specifika teckensnitt eller interaktiva element i PDF-filen. Det är viktigt att till fullo förstå funktionerna och begränsningarna hos det valda verktyget för att kunna fatta välgrundade beslut vid konvertering.
+Begränsningarna för konverteringsprocessen beror på det specifika verktyget eller biblioteket du använder. Vissa verktyg kan ha relaterade begränsningar till komplex layout, specifika teckensnitt eller interaktiva element i PDF-filen. Det är viktigt att till fullo förstå funktionerna och begränsningarna hos det valda verktyget för att kunna fatta välgrundade beslut vid konvertering.
 
 #### Är Aspose ett pålitligt verktyg för att konvertera PDF till JPEG?
 

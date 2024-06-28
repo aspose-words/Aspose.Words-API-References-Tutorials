@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Langkah 3: Sisipkan dan Konfigurasikan Bentuk
-Sisipkan bentuk ke dalam dokumen menggunakan`InsertShape` metode`DocumentBuilder` obyek. Tetapkan dimensi yang diinginkan untuk bentuknya.
+ Sisipkan bentuk ke dalam dokumen menggunakan`InsertShape` metode`DocumentBuilder` obyek. Tetapkan dimensi yang diinginkan untuk bentuknya.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## Langkah 6: Simpan Dokumen
- Simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithShapes.VerticalAnchor.docx".
+ Simpan dokumen ke direktori yang ditentukan menggunakan`Save`metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithShapes.VerticalAnchor.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/get-floating-table-position/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 

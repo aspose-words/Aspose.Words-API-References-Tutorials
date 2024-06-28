@@ -79,7 +79,7 @@ foreach (DigitalSignature signature in doc.DigitalSignatures)
 
 答：要使用 Aspose.Words for .NET 访问 Word 文档中的数字签名，您可以按照以下步骤操作：
 1. 使用加载文档`Document`类并指定文档文件的路径。
-2. 使用循环来迭代`DigitalSignatures`文档的集合。每次迭代都代表一个数字签名。
+2. 使用循环来迭代`DigitalSignatures`文件收集。每次迭代都代表一个数字签名。
 
 #### 问：我可以从 Word 文档中的数字签名访问哪些信息？
 
@@ -97,13 +97,13 @@ foreach (DigitalSignature signature in doc.DigitalSignatures)
 #### 问：如何使用 Aspose.Words for .NET 验证 Word 文档中数字签名的有效性？
 
 答：要使用 Aspose.Words for .NET 验证 Word 文档中数字签名的有效性，您可以按照以下步骤操作：
-1. 访问`DigitalSignatures`文档的集合。
+1. 访问`DigitalSignatures`文件收集。
 2. 迭代每个`DigitalSignature`集合中的对象。
 3. 使用`IsValid`的财产`DigitalSignature`对象检查签名是否有效。
 
 #### 问：我可以从 Word 文档中的数字签名中检索签名者的注释或签名原因吗？
 
-答：是的，您可以从 Word 文档中的数字签名中检索签名者的注释或签名原因。这`Comments`的财产`DigitalSignature`对象提供对签名者在签名过程中指定的注释的访问。
+答：是的，您可以从 Word 文档中的数字签名中检索签名者的注释或签名原因。这`Comments`的财产`DigitalSignature`该对象提供对签名者在签名过程中指定的注释的访问。
 
 #### 问：Aspose.Words for .NET 中的签名验证功能支持什么类型的文档？
 

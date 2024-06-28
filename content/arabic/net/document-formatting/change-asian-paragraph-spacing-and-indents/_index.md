@@ -51,9 +51,9 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // سيتم تحديث ParagraphFormat.LeftIndent
-	format.CharacterUnitRightIndent = 10;      // سيتم تحديث ParagraphFormat.RightIndent
-	format.CharacterUnitFirstLineIndent = 20;  // سيتم تحديث ParagraphFormat.FirstLineIndent
+	format.CharacterUnitLeftIndent = 10;       // سيتم تحديث ParagraphFormat.LeftIndent.
+	format.CharacterUnitRightIndent = 10;      // سيتم تحديث ParagraphFormat.RightIndent.
+	format.CharacterUnitFirstLineIndent = 20;  // سيتم تحديث ParagraphFormat.FirstLineIndent.
 	format.LineUnitBefore = 5;                 // سيتم تحديث ParagraphFormat.SpaceBefore
 	format.LineUnitAfter = 10;                 // سيتم تحديث ParagraphFormat.SpaceAfter
 
@@ -71,7 +71,7 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 
 #### س: ما الذي تفعله ميزة "تغيير تباعد الفقرات والمسافات البادئة الآسيوية" في Aspose.Words لـ .NET؟
 
-ج: تتيح لك ميزة "تغيير تباعد الفقرات الآسيوية والمسافات البادئة" في Aspose.Words لـ .NET تعديل خصائص التباعد والمسافات البادئة للفقرة الآسيوية في مستند Word. يمكنك ضبط المسافات البادئة اليمنى واليسرى، والمسافة البادئة للسطر الأول، والمسافة قبل، والمسافة بعد القيم للتحكم في تخطيط الفقرة ومظهرها.
+ج: تتيح لك ميزة "تغيير تباعد الفقرات الآسيوية والمسافات البادئة" في Aspose.Words لـ .NET تعديل خصائص التباعد والمسافات البادئة للفقرة الآسيوية في مستند Word. يمكنك ضبط المسافات البادئة اليسرى واليمنى، والمسافة البادئة للسطر الأول، والمسافة قبل، والمسافة بعد القيم للتحكم في تخطيط الفقرة ومظهرها.
 
 #### س: كيف يمكنني تغيير التباعد والمسافات البادئة للفقرة الآسيوية باستخدام Aspose.Words لـ .NET؟
 

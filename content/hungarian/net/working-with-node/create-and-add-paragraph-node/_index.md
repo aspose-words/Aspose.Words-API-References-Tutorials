@@ -86,4 +86,4 @@ V: Egy XML-dokumentum bekezdéscsomópontja a szöveg egy bekezdésének megjele
 
 #### K: Hogyan formázhatok szöveget egy bekezdés csomópontjában?
 
-V: A bekezdéscsomópontban lévő szöveg formázása a Node.js környezetben használt XML API-tól függ. Általában speciális tulajdonságokat és módszereket használhat a formázási attribútumok, például betűtípus, méret, szín stb. beállításához.
+V: A bekezdéscsomópontban lévő szöveg formázása a Node.js környezetben használt XML API-tól függ. Általában meghatározott tulajdonságokat és módszereket használhat a formázási attribútumok, például betűtípus, méret, szín stb. beállításához.

@@ -25,13 +25,13 @@ url: /th/python-net/document-options-and-settings/document-functionality-web-ext
 ในการเริ่มต้น ให้ทำตามขั้นตอนเหล่านี้เพื่อตั้งค่า Aspose.Words สำหรับ Python:
 
 1. ดาวน์โหลดไลบรารี Aspose.Words สำหรับ Python จากลิงก์ที่ให้ไว้
-2.  ติดตั้งไลบรารีโดยใช้ตัวจัดการแพ็คเกจที่เหมาะสม (เช่น`pip`).
+2.  ติดตั้งไลบรารีโดยใช้ตัวจัดการแพ็คเกจที่เหมาะสม (เช่น`pip`-
 
 ```python
 pip install aspose-words
 ```
 
-3. นำเข้าไลบรารีในสคริปต์ Python ของคุณ
+3. นำเข้าไลบรารีลงในสคริปต์ Python ของคุณ
 
 ```python
 import aspose.words

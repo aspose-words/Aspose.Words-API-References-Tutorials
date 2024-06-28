@@ -1,7 +1,7 @@
 ---
 title: Datenvisualisierung und Formatierung
 linktitle: Datenvisualisierung und Formatierung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Entdecken Sie Aspose.Words-Tutorials zur Datenvisualisierung und -formatierung in Python und .NET. Lernen Sie, Daten effektiv zu präsentieren, beeindruckende Berichte zu erstellen und Dokumente programmgesteuert zu formatieren.
 type: docs
 weight: 15
@@ -24,7 +24,7 @@ In dieser Tutorialreihe führen wir Sie durch verschiedene Aspekte der Datenvisu
 - Diagrammerstellung: Entdecken Sie Techniken zum Erstellen optisch ansprechender Diagramme zur Visualisierung von Datentrends.
 - Tabellenformatierung: Beherrschen Sie die Kunst, Tabellen zu formatieren, um Daten effektiv zu organisieren.
 - Dokumentgestaltung: Entdecken Sie Methoden zur Gestaltung von Dokumenten, die Konsistenz und Professionalität gewährleisten.
-- Berichtserstellung: Erfahren Sie, wie Sie ganz einfach umfassende Berichte erstellen.
+- Berichterstellung: Erfahren Sie, wie Sie ganz einfach umfassende Berichte erstellen.
 - Datengesteuerte Dokumente: Entdecken Sie die Zusammenführung von Daten und Dokumenten und ermöglichen Sie so intelligente Berichte.
 - Benutzerdefinierte Formatierung: Erfahren Sie, wie Sie benutzerdefinierte Formatierungen anwenden, um bestimmte Dokumentanforderungen zu erfüllen.
 - Python- und .NET-Integration: Profitieren Sie von Tutorials, die sich sowohl an Python- als auch an .NET-Entwickler richten.
@@ -37,6 +37,6 @@ Erfahren Sie, wie Sie mit Aspose.Words für Python dynamische Dokumentdiagramme 
 ### [Verbessern Sie die Wirkung von Dokumenten mit Rich Media-Bildern](./document-images/)
 Verbessern Sie die Wirkung von Dokumenten mit Rich-Media-Bildern mit Aspose.Words für Python. Erfahren Sie Schritt für Schritt, wie Sie Bilder einfügen, formatieren und optimieren.
 ### [Verwendung von Office Math für fortgeschrittene mathematische Ausdrücke](./office-math-documents/)
-Erfahren Sie, wie Sie Office Math mit Aspose.Words für Python für erweiterte mathematische Ausdrücke nutzen können. Schritt für Schritt Gleichungen erstellen, formatieren und einfügen.
+Erfahren Sie, wie Sie Office Math mit Aspose.Words für Python für erweiterte mathematische Ausdrücke nutzen können. Erstellen, formatieren und fügen Sie Gleichungen Schritt für Schritt ein.
 ### [Erstellen Sie visuell beeindruckende Dokumentformen und -layouts](./document-shape-handling-formatting/)
 Erstellen Sie visuell beeindruckende Dokumentlayouts mit Aspose.Words für Python. Erfahren Sie, wie Sie Formen hinzufügen, Stile anpassen, Bilder einfügen, den Textfluss verwalten und die Attraktivität steigern.

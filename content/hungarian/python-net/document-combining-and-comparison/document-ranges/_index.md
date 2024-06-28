@@ -58,7 +58,7 @@ for section in doc.sections:
 
 ## Munka a táblázatokkal
 
-A táblázatok strukturált módon rendezik az adatokat. A táblázatokban való navigálás lehetővé teszi a táblázatos tartalom manipulálását:
+A táblázatok strukturáltan rendezik az adatokat. A táblázatokban való navigálás lehetővé teszi a táblázatos tartalom manipulálását:
 
 ```python
 for table in doc.get_child_nodes(NodeType.TABLE, True):

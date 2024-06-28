@@ -16,14 +16,14 @@ Innan du börjar, se till att du har följande saker:
 - Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
 ## Steg 1: Definiera dokumentkatalogen
- Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
+Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Skapa och anpassa dokumentet
- Skapa en instans av`Document` klass och en tillhörande`DocumentBuilder` att bygga dokumentinnehållet. Använd`Font.EmphasisMark` egenskap för att ställa in teckensnittets betoningstil till`EmphasisMark.UnderSolidCircle` . Använd sedan`Write` och`Writeln` metoder för`DocumentBuilder` för att lägga till text med den angivna teckensnittets betoning.
+ Skapa en instans av`Document` klass och en tillhörande`DocumentBuilder` att bygga dokumentinnehållet. Använd`Font.EmphasisMark` egenskap för att ställa in teckensnittets betoningsstil till`EmphasisMark.UnderSolidCircle` . Använd sedan`Write` och`Writeln` metoder för`DocumentBuilder` för att lägga till text med det angivna teckensnittet.
 
 ```csharp
 Document document = new Document();
@@ -59,7 +59,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Slutsats
-den här handledningen lärde du dig hur du ställer in teckensnittets betoningstil i ett Word-dokument med Aspose.Words för .NET. Experimentera med olika stilar av betoning och använd den här funktionen för att markera ord eller fraser i dina dokument.
+I den här handledningen lärde du dig hur du ställer in teckensnittets betoningstil i ett Word-dokument med Aspose.Words för .NET. Experimentera med olika stilar av betoning och använd den här funktionen för att markera ord eller fraser i dina dokument.
 
 ### FAQ's
 

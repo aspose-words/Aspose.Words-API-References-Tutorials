@@ -1,7 +1,7 @@
 ---
 title: Verfolgen und Überprüfen von Dokumentrevisionen
 linktitle: Verfolgen und Überprüfen von Dokumentrevisionen
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie Dokumentrevisionen mit Aspose.Words für Python verfolgen und überprüfen. Schritt-für-Schritt-Anleitung mit Quellcode für effiziente Zusammenarbeit. Erweitern Sie noch heute Ihr Dokumentenmanagement!
 type: docs
 weight: 23

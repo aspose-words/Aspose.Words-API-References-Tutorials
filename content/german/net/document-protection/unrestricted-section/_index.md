@@ -75,7 +75,7 @@ builder.Writeln("Section 1. Unprotected.");
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 
-// Der Abschnittsschutz funktioniert nur, wenn der Dokumentschutz aktiviert ist und nur die Bearbeitung in Formularfeldern zulässig ist.
+// Der Abschnittsschutz funktioniert nur, wenn der Dokumentschutz aktiviert ist und nur die Bearbeitung in Formularfeldern erlaubt ist.
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
 //Standardmäßig sind alle Abschnitte geschützt, wir können den Schutz jedoch gezielt deaktivieren.

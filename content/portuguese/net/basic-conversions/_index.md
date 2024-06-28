@@ -18,7 +18,7 @@ Conversões básicas orienta você nas conversões básicas de documentos usando
 | [Converter arquivo do Word em PDF](./docx-to-pdf/) | Aprenda como converter documentos Word de Docx para PDF usando Aspose.Words for .NET. | 
 | [Converter Docx em Byte](./docx-to-byte/) | Aprenda como converter documentos do Word de Docx em matriz de bytes usando Aspose.Words for .NET. |  
 | [Converter Docx em EPUB](./docx-to-epub/) | Aprenda como converter documentos Word do formato Docx para Epub usando Aspose.Words for .NET. |
-| [Converta Docx em Mhtml e envie e-mail](./docx-to-mhtml-and-sending-email/) | Aprenda como converter documentos do Word de Docx para MHTML e enviá-los como e-mails usando Aspose.Words e Aspose.Email. |
+| [Converter Docx em Mhtml e enviar e-mail](./docx-to-mhtml-and-sending-email/) | Aprenda como converter documentos do Word de Docx para MHTML e enviá-los como e-mails usando Aspose.Words e Aspose.Email. |
 | [Converter arquivo Docx em Markdown](./docx-to-markdown/) | Aprenda como converter documentos do Word do formato Docx para Markdown usando Aspose.Words for .NET. |
 | [Converter Docx em Txt](./docx-to-txt/) | Aprenda como converter documentos Word de Docx para texto simples (Txt) usando Aspose.Words for .NET. |
 | [Converter arquivo de texto em documento do Word](./txt-to-docx/) | Aprenda como converter arquivos de texto simples (Txt) em documentos Word (Docx) usando Aspose.Words for .NET. | 

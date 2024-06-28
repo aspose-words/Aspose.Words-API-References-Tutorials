@@ -2,80 +2,116 @@
 title: Yazı Tipi Geri Dönüş Ayarlarını Belirleyin
 linktitle: Yazı Tipi Geri Dönüş Ayarlarını Belirleyin
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'te yazı tipi değiştirme ayarlarını nasıl yapacağınızı ve Word belgelerinizde yazı tipi değiştirmeyi nasıl özelleştireceğinizi öğrenin.
+description: Aspose.Words for .NET'te Font Geri Dönüş Ayarlarını nasıl ayarlayacağınızı öğrenin. Bu kapsamlı kılavuz, belgelerinizdeki tüm karakterlerin doğru şekilde görüntülenmesini sağlar.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-font-fallback-settings/
 ---
-Bu eğitimde size Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi değiştirme ayarlarının nasıl yapılacağını göstereceğiz. Yazı tipi değiştirme ayarları, belirtilen yazı tipleri kullanılamadığında kullanılacak yedek yazı tiplerini belirtmenize olanak tanır.
+
+Farklı diller veya özel karakterler gibi çeşitli metin öğeleri içeren belgelerle çalışırken bu öğelerin doğru şekilde görüntülendiğinden emin olmak çok önemlidir. Aspose.Words for .NET, orijinal yazı tipi belirli karakterleri desteklemediğinde yazı tiplerinin değiştirilmesine ilişkin kuralların tanımlanmasına yardımcı olan Yazı Tipi Geri Dönüş Ayarları adı verilen güçlü bir özellik sunar. Bu kılavuzda, Aspose.Words for .NET kullanarak Font Geri Dönüş Ayarlarının nasıl kurulacağını adım adım eğitimle inceleyeceğiz.
 
 ## Önkoşullar
-Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
-- C# programlama dili hakkında çalışma bilgisi
-- .NET için Aspose.Words kütüphanesi projenizde yüklü
 
-## 1. Adım: Belge dizinini tanımlayın
- Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
+Eğiticiye dalmadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+
+- Temel C# Bilgisi: C# programlama dili ve .NET çerçevesine aşinalık.
+-  Aspose.Words for .NET: Buradan indirip yükleyin.[İndirme: {link](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi bir kurulum.
+-  Örnek Belge: Örnek bir belgeye sahip olun (örn.`Rendering.docx`) teste hazır.
+- Yazı Tipi Geri Dönüş Kuralları XML: Yazı tipi geri dönüş kurallarını tanımlayan bir XML dosyası hazırlayın.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words'ü kullanmak için gerekli ad alanlarını içe aktarmanız gerekir. Bu, belge işleme için gereken çeşitli sınıflara ve yöntemlere erişim sağlar.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
 ```
 
-## 2. Adım: Yazı tipi değiştirme ayarlarını yükleyin
- Bir örneğini oluşturun`FontSettings` sınıf ve kullanın`Load` Yazı tipi geçersiz kılma ayarlarını bir XML dosyasından yükleme yöntemi. Belirtilen XML dosyası kullanılacak yazı tipi değiştirme kurallarını içermelidir.
+## Adım 1: Belge Dizinini Tanımlayın
+
+Öncelikle belgenizin saklandığı dizini tanımlayın. Bu, belgenizin bulunması ve işlenmesi için gereklidir.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## 3. Adım: Yazı tipi değiştirme ayarlarını uygulayın
- Yazı tipi değiştirme ayarlarını belgenin ayarlarına atayarak belgeyle ilişkilendirin.`FontSettings` mülk.
-
-```csharp
-doc.FontSettings = fontSettings;
-```
-
-## 4. Adım: Belgeyi kaydedin
- kullanarak belgeyi kaydedin.`Save` yöntemi`Document` uygun yol ve dosya adı ile.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
-
-### Aspose.Words for .NET kullanarak Yazı Tipi Geri Dönüş Ayarlarını Ayarlama için örnek kaynak kodu 
-```csharp
-// Belge dizininizin yolu
+// Belgeler dizininin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Adım 2: Belgeyi Yükleyin
+
+ Belgenizi Aspose.Words'e yükleyin`Document` nesne. Bu adım, belgeyle programlı olarak çalışmanıza olanak tanır.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## 3. Adım: Yazı Tipi Ayarlarını Yapılandırın
+
+ Yeni bir tane oluştur`FontSettings` nesnesini kullanın ve yazı tipi geri dönüş ayarlarını bir XML dosyasından yükleyin. Bu XML dosyası, yazı tipi geri dönüşüne ilişkin kuralları içerir.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## Adım 4: Yazı Tipi Ayarlarını Belgeye Uygulayın
+
+ Yapılandırılmış olanı ata`FontSettings`belgeye. Bu, belge oluşturulurken yazı tipi geri dönüş kurallarının uygulanmasını sağlar.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Adım 5: Belgeyi Kaydedin
+
+Son olarak belgeyi kaydedin. Yazı tipinin doğru şekilde değiştirilmesini sağlamak için kaydetme işlemi sırasında yazı tipi geri dönüş ayarları kullanılacaktır.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
+```
+
+## XML Dosyası: Yazı Tipi Geri Dönüş Kuralları
+
+Aşağıda, yazı tipi geri dönüş kurallarını tanımlayan XML dosyanızın nasıl görünmesi gerektiğine ilişkin bir örnek verilmiştir:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
 ```
 
 ## Çözüm
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi değiştirme ayarlarının nasıl yapılacağını öğrendiniz. Belirtilen yazı tipleri mevcut olmadığında bile belgenizin tutarlı görünmesini sağlamak için farklı yazı tipi değiştirme kurallarını deneyin.
 
-### SSS'ler
+Bu adımları izleyerek Aspose.Words for .NET'te Font Geri Dönüş Ayarlarını etkili bir şekilde ayarlayabilir ve kullanabilirsiniz. Bu, orijinal yazı tipi belirli karakterleri desteklemese bile belgelerinizin tüm karakterleri doğru şekilde görüntülemesini sağlar. Bu ayarların uygulanması belgelerinizin kalitesini ve okunabilirliğini büyük ölçüde artıracaktır.
 
-#### S: Aspose.Words ile bir Word belgesinde yazı tipi değiştirme ayarlarını nasıl ayarlayabilirim?
+## SSS
 
-C: Aspose.Words ile bir Word belgesinde yazı tipi değiştirme ayarlarını yapmak için gerekli yazı tipleri mevcut olmadığında kullanılacak yedek yazı tiplerini belirlemek için API'yi kullanabilirsiniz. Bu, orijinal yazı tipleri olmasa bile tutarlı metin görselleştirmesi sağlar.
+### S1: Yazı Tipi Geri Dönüşü nedir?
 
-#### S: Aspose.Words ile bir Word belgesinde geçersiz kılınırken yedek yazı tiplerini kullanmak mümkün müdür?
+Yazı Tipi Geri Dönüşü, orijinal yazı tipi belirli karakterleri desteklemediğinde yazı tiplerinin değiştirilmesine olanak tanıyan ve tüm metin öğelerinin düzgün görüntülenmesini sağlayan bir özelliktir.
 
-C: Evet, Aspose.Words ile bir Word belgesinde yer değiştirirken yedek yazı tiplerini yönetebilirsiniz. API, eksik yazı tiplerini tespit etmenize ve yazı tipleri değiştirildiğinde bile tutarlı metin görünümünü korumak için uygun yedek yazı tiplerini belirtmenize olanak tanır.
+### S2: Birden fazla yedek yazı tipi belirtebilir miyim?
 
-#### S: Bir Word belgesinde yazı tipi değiştirme ayarlarını doğru şekilde yapılandırmak neden önemlidir?
+Evet, XML kurallarında birden çok yedek yazı tipi belirtebilirsiniz. Aspose.Words, karakteri destekleyen bir yazı tipi bulana kadar her yazı tipini belirtilen sırayla kontrol edecektir.
 
-C: Metnin görsel bütünlüğünü korumak için bir Word belgesinde yazı tipi değiştirme ayarlarının doğru şekilde yapılandırılması önemlidir. Aspose.Words ile uygun yedek yazı tiplerini ayarlayarak, gerekli yazı tipleri mevcut olmasa bile metnin tutarlı bir şekilde görüntülenmesini sağlarsınız.
+### S3: Aspose.Words for .NET'i nereden indirebilirim?
 
-#### S: Bir Word belgesindeki yazı tiplerini Aspose.Words ile değiştirirken eksik yazı tiplerini nasıl tespit edebilirim?
+ adresinden indirebilirsiniz.[İndirme sayfasını düşünün](https://releases.aspose.com/words/net/).
 
-C: Aspose.Words, API'yi kullanarak bir Word belgesindeki değişiklik sırasında eksik yazı tiplerini tespit etmenize olanak tanır. Gerekli yazı tiplerinin kullanılabilirliğini kontrol etmek ve eksik yazı tipleri olması durumunda uygun önlemleri almak için Aspose.Words tarafından sağlanan yöntemleri kullanabilirsiniz.
+### S4: Yazı tipi geri dönüş kuralları için XML dosyasını nasıl oluşturabilirim?
 
-#### S: Yazı tipi değişikliği Word belgemin düzenini etkiler mi?
+XML dosyası herhangi bir metin düzenleyici kullanılarak oluşturulabilir. Bu eğitimde verilen örnekte gösterilen yapıyı takip etmelidir.
 
-C: Yedek yazı tipleri orijinal yazı tiplerinden farklı boyutlara sahipse, yazı tipi değişikliği Word belgenizin düzenini etkileyebilir. Ancak, yedek yazı tiplerini akıllıca seçerek ve yazı tipi değiştirme ayarlarını Aspose.Words ile yapılandırarak düzen etkilerini en aza indirebilirsiniz.
+### S5: Aspose.Words için destek mevcut mu?
+
+ Evet, şuradan destek bulabilirsiniz:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).

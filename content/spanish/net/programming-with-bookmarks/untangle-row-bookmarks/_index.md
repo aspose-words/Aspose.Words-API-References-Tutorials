@@ -120,7 +120,7 @@ R: Sí, la función Desenredar marcadores de filas está diseñada específicame
 
 #### P: ¿La función Descodificar marcadores de líneas modifica el contenido del documento original?
 
-R: Sí, la función Descifrar marcadores de línea modifica el documento original moviendo los extremos de los marcadores de línea para colocarlos en la misma línea que el comienzo de los marcadores. Asegúrese de guardar una copia de seguridad del documento antes de aplicar esta función.
+R: Sí, la función Descifrar marcadores de línea modifica el documento original moviendo los finales de los marcadores de línea para colocarlos en la misma línea que el comienzo de los marcadores. Asegúrese de guardar una copia de seguridad del documento antes de aplicar esta función.
 
 #### P: ¿Cómo puedo identificar marcadores de línea en mi documento de Word?
 

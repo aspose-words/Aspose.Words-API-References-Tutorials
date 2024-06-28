@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Etapa 4: anexar o conteúdo da caixa de texto
 
- Criar uma`NodeImporter` objeto e use-o para importar nós de caixa de texto do documento de origem para o documento de destino. Itere cada parágrafo no documento de origem e importe-o para o documento de destino.
+ Criar uma`NodeImporter`objeto e use-o para importar nós de caixa de texto do documento de origem para o documento de destino. Itere cada parágrafo no documento de origem e importe-o para o documento de destino.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Etapa 5: salve o documento de destino
 
- Finalmente, salve o documento de destino modificado usando o`Save` método do`Document` objeto.
+Finalmente, salve o documento de destino modificado usando o`Save` método do`Document` objeto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

@@ -65,7 +65,7 @@ Zde je úplný ukázkový zdrojový kód pro ilustraci použití shod a substitu
 
 ## Závěr
 
-V tomto článku jsme prozkoumali zdrojový kód C#, abychom porozuměli tomu, jak používat funkci Rozpoznat a nahradit náhradní vzory v Aspose.Words for .NET. Postupovali jsme podle podrobného průvodce, jak vytvořit dokument, vložit text, provést vyhledávání a nahrazování pomocí regulárních výrazů a substitučních vzorů na základě zachycených skupin a manipulovat s dokumentem.
+V tomto článku jsme prozkoumali zdrojový kód C#, abychom porozuměli tomu, jak používat funkci Rozpoznat a nahradit náhradní vzory v Aspose.Words pro .NET. Postupovali jsme podle podrobného průvodce, jak vytvořit dokument, vložit text, provést vyhledávání a nahrazování pomocí regulárních výrazů a substitučních vzorů na základě zachycených skupin a manipulovat s dokumentem.
 
 ### FAQ
 
@@ -124,6 +124,6 @@ Odpověď: Ano, během vyhledávání a nahrazování textu můžete manipulovat
 
 Odpověď: I když regulární výrazy a zachycené skupiny nabízejí výkonné možnosti pro vyhledávání a nahrazování textu v Aspose.Words pro .NET, je důležité vzít v úvahu jejich složitost a dopady na výkon. Vysoce složité regulární výrazy a velký počet zachycených skupin mohou ovlivnit výkon. Doporučuje se otestovat a optimalizovat regulární výrazy pro vaše konkrétní případy použití, abyste zajistili efektivní manipulaci s dokumenty.
 
-#### Otázka: Mohu použít funkci "Rozpoznat a nahradit náhradní vzory" s jinými jazyky než angličtinou?
+#### Otázka: Mohu použít funkci „Rozpoznat a nahradit v náhradních vzorech“ s jinými jazyky než angličtinou?
 
-Odpověď: Ano, funkci "Rozpoznat a nahradit v rámci nahrazovacích vzorů" v Aspose.Words pro .NET lze použít s jinými jazyky než s angličtinou. Regulární výrazy jsou jazykově agnostické a lze je vytvořit tak, aby odpovídaly konkrétním vzorům v jakémkoli jazyce. Vzor regulárního výrazu můžete upravit tak, aby vyhovoval požadovanému jazyku a konkrétním textovým vzorům, které chcete rozpoznat a nahradit.
+Odpověď: Ano, funkci „Rozpoznat a nahradit v rámci nahrazovacích vzorů“ v Aspose.Words pro .NET lze použít s jinými jazyky než je angličtina. Regulární výrazy jsou jazykově agnostické a lze je vytvořit tak, aby odpovídaly konkrétním vzorům v jakémkoli jazyce. Vzor regulárního výrazu můžete upravit tak, aby vyhovoval požadovanému jazyku a konkrétním textovým vzorům, které chcete rozpoznat a nahradit.

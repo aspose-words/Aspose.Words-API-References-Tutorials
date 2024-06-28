@@ -2,88 +2,116 @@
 title: Otrzymuj powiadomienie ostrzegawcze
 linktitle: Otrzymuj powiadomienie ostrzegawcze
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak otrzymać powiadomienie z ostrzeżeniem podczas korzystania z Aspose.Words dla .NET i zarządzać wszelkimi problemami lub ostrzeżeniami w swoich dokumentach.
+description: Dowiedz się, jak otrzymywać powiadomienia o zastąpieniu czcionek w Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika. Upewnij się, że Twoje dokumenty są renderowane poprawnie za każdym razem.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/receive-warning-notification/
 ---
 
-W tym samouczku pokażemy, jak uzyskać powiadomienie ostrzegawcze podczas korzystania z Aspose.Words dla .NET. Podczas konfigurowania lub zapisywania dokumentu mogą zostać wyświetlone ostrzeżenia. Poprowadzimy Cię krok po kroku, aby zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+Czy masz dość rozwiązywania nieoczekiwanych problemów z czcionkami w dokumentach? Dzięki Aspose.Words dla .NET możesz otrzymywać powiadomienia o wszelkich potencjalnych problemach podczas przetwarzania dokumentów, co ułatwia utrzymanie jakości dokumentów. Ten obszerny przewodnik przeprowadzi Cię przez proces konfigurowania powiadomień ostrzegawczych w Aspose.Words, dzięki czemu nigdy więcej nie przegapisz żadnego ważnego ostrzeżenia.
 
 ## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-- Praktyczna znajomość języka programowania C#
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
+
+Zanim zagłębimy się w temat, upewnij się, że masz następujące elementy:
+
+- Podstawowa znajomość języka C#: Znajomość języka C# pomoże Ci zrozumieć i wdrożyć kroki.
+-  Biblioteka Aspose.Words dla .NET: Pobierz i zainstaluj ją z[link do pobrania](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: konfiguracja taka jak Visual Studio do pisania i uruchamiania kodu.
+-  Przykładowy dokument: Przygotuj przykładowy dokument (np.`Rendering.docx`) pracować z.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Zapewnią one dostęp do klas i metod wymaganych do naszego zadania.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.WarningInfo;
+```
 
 ## Krok 1: Zdefiniuj katalog dokumentów
- Zacznij od ustawienia ścieżki katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+
+Najpierw określ katalog, w którym przechowywany jest dokument. Jest to niezbędne do zlokalizowania dokumentu, który chcesz przetworzyć.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Krok 2: Prześlij dokument i skonfiguruj procedurę obsługi ostrzeżeń
- Załaduj dokument za pomocą`Document` klasa. Następnie utwórz instancję`HandleDocumentWarnings` klasa do obsługi ostrzeżeń.
-
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc. WarningCallback = callback;
-```
-
-## Krok 3: Zaktualizuj układ i zapisz dokument
- Zaktualizuj układ dokumentu, wywołując metodę`UpdatePageLayout()` metoda. Spowoduje to wyświetlenie ostrzeżeń, jeśli takie istnieją. Następnie zapisz dokument.
-
-```csharp
-doc.UpdatePageLayout();
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-```
-
-### Przykładowy kod źródłowy dla Otrzymuj powiadomienie ostrzegawcze przy użyciu Aspose.Words dla .NET 
-
-```csharp
-
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Rendering.docx");
-// Po wywołaniu UpdatePageLayout dokument jest renderowany w pamięci. Wszelkie ostrzeżenia, które wystąpiły podczas renderowania
-//przechowywane są do momentu zapisania dokumentu i następnie wysyłane do odpowiedniego WarningCallbacku.
-doc.UpdatePageLayout();
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc.WarningCallback = callback;
-// Mimo że dokument został wcześniej wyrenderowany, podczas zapisywania dokumentu użytkownik otrzymuje powiadomienie o wszelkich ostrzeżeniach dotyczących zapisywania.
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-
 ```
 
+## Krok 2: Załaduj dokument
+
+ Załaduj swój dokument do Aspose.Words`Document` obiekt. Pozwala to na programową manipulację dokumentem.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Krok 3: Zaktualizuj układ strony
+
+ Zadzwoń do`UpdatePageLayout` metoda. Spowoduje to renderowanie dokumentu w pamięci i przechwytywanie wszelkich ostrzeżeń pojawiających się podczas renderowania.
+
+```csharp
+doc.UpdatePageLayout();
+```
+
+## Krok 4: Skonfiguruj ostrzegawcze wywołanie zwrotne
+
+ Aby przechwytywać i obsługiwać ostrzeżenia, utwórz klasę implementującą`IWarningCallback` interfejs. Ta klasa będzie rejestrować wszelkie ostrzeżenia, które wystąpią podczas przetwarzania dokumentu.
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        // Nas interesuje tylko podmiana czcionek.
+        if (info.WarningType == WarningType.FontSubstitution)
+        {
+            Console.WriteLine("Font substitution: " + info.Description);
+        }
+    }
+}
+```
+
+## Krok 5: Przypisz wywołanie zwrotne do dokumentu
+
+Przypisz wywołanie zwrotne ostrzeżenia do dokumentu. Dzięki temu wszelkie problemy z czcionkami zostaną przechwycone i zarejestrowane.
+
+```csharp
+HandleDocumentWarnings callback = new HandleDocumentWarnings();
+doc.WarningCallback = callback;
+```
+
+## Krok 6: Zapisz dokument
+
+Na koniec zapisz dokument. Nawet jeśli dokument został wcześniej wyrenderowany, na tym etapie użytkownik zostanie powiadomiony o wszelkich ostrzeżeniach dotyczących zapisywania.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
+```
+
+Wykonując te kroki, skonfigurowałeś aplikację tak, aby sprawnie obsługiwała podstawienia czcionek i otrzymywała powiadomienia za każdym razem, gdy nastąpi podstawienie.
+
 ## Wniosek
-W tym samouczku nauczyłeś się, jak otrzymywać powiadomienia ostrzegawcze podczas korzystania z Aspose.Words dla .NET. Podczas konfigurowania lub zapisywania dokumentu mogą zostać wyświetlone ostrzeżenia. Użyj tej funkcji, aby otrzymywać powiadomienia o wszelkich problemach lub ostrzeżeniach związanych z Twoimi dokumentami.
 
-### Często zadawane pytania
+Opanowałeś teraz proces otrzymywania powiadomień o podstawieniach czcionek za pomocą Aspose.Words dla .NET. Ta umiejętność pomoże Ci mieć pewność, że Twoje dokumenty zawsze będą wyglądać najlepiej, nawet jeśli niezbędne czcionki nie są dostępne. Eksperymentuj z różnymi ustawieniami, aby w pełni wykorzystać moc Aspose.Words.
 
-#### P: Jak mogę otrzymywać powiadomienia ostrzegawcze w Aspose.Words?
+## Często zadawane pytania
 
- Odp.: Aby otrzymywać powiadomienia ostrzegawcze w Aspose.Words, możesz użyć`FontSettings` klasa i`WarningCallback` wydarzenie. Można zdefiniować metodę wywołania zwrotnego, która będzie powiadamiana w przypadku napotkania ostrzeżeń związanych z czcionkami podczas przetwarzania dokumentów.
+### P1: Czy mogę określić wiele domyślnych czcionek?
 
-#### P: Jakie są typowe typy ostrzeżeń związanych z czcionkami w Aspose.Words?
+Nie, możesz określić tylko jedną domyślną czcionkę do zamiany. Można jednak skonfigurować wiele źródeł czcionek zastępczych.
 
-O: Niektóre typowe typy ostrzeżeń związanych z czcionkami w Aspose.Words to:
-- Brakujące czcionki
-- Podstawione czcionki
-- Problemy z formatowaniem czcionek
+### P2: Gdzie mogę uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
 
-#### P: Jak mogę rozwiązać problemy związane z czcionkami w dokumentach programu Word?
+ Możesz pobrać bezpłatną wersję próbną ze strony[Aspose bezpłatna strona próbna](https://releases.aspose.com/).
 
-Odp.: Aby rozwiązać problemy związane z czcionkami w dokumentach programu Word, możesz wykonać następujące kroki:
-- Zainstaluj brakujące czcionki w systemie, w którym uruchamiasz aplikację Aspose.Words.
-- Użyj odpowiednich czcionek zastępczych, które są wizualnie podobne do czcionek oryginalnych.
-- Sprawdź i dostosuj formatowanie czcionki, aby zapewnić spójny wygląd.
+###  P3: Czy mogę obsługiwać inne typy ostrzeżeń za pomocą`IWarningCallback`?
 
-#### P: Dlaczego ważne jest, aby otrzymywać powiadomienia dotyczące czcionek w Aspose.Words?
+ Tak`IWarningCallback` interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
 
-Odp.: Ważne jest, aby otrzymywać powiadomienia ostrzegawcze dotyczące czcionek w Aspose.Words, ponieważ pomagają one zidentyfikować potencjalne problemy w dokumentach. Dzięki temu możesz podjąć niezbędne kroki, aby rozwiązać te problemy i zapewnić jakość swoich dokumentów.
+### P4: Gdzie mogę znaleźć wsparcie dla Aspose.Words?
 
-#### P: Jak mogę włączyć lub wyłączyć powiadomienia ostrzegawcze w Aspose.Words?
+ Odwiedzić[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) do pomocy.
 
- O: Aby włączyć lub wyłączyć powiadomienia ostrzegawcze w Aspose.Words, możesz użyć opcji`FontSettings.ShowFontWarnings` właściwość i ustaw ją na`true` Lub`false` zależności od potrzeb. Po włączeniu będziesz otrzymywać powiadomienia ostrzegawcze dotyczące czcionek.
+### P5: Czy można uzyskać tymczasową licencję na Aspose.Words?
+
+ Tak, możesz uzyskać tymczasową licencję od[strona licencji tymczasowej](https://purchase.aspose.com/temporary-license/).

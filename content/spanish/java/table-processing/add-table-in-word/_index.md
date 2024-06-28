@@ -21,7 +21,7 @@ Abra su entorno de desarrollo integrado (IDE) preferido o un editor de texto y c
 
 ## Paso 3: agregar la dependencia de Aspose.Words
 
- Para trabajar con Aspose.Words para Java, debe incluir el archivo JAR Aspose.Words en la ruta de clase de su proyecto. Descargue la última versión de Aspose.Words para Java desde[Lanzamientos.Aspose](https://releases.aspose.com/words/java) y agregue el archivo JAR a su proyecto.
+ Para trabajar con Aspose.Words para Java, debe incluir el archivo JAR Aspose.Words en la ruta de clases de su proyecto. Descargue la última versión de Aspose.Words para Java desde[Lanzamientos.Aspose](https://releases.aspose.com/words/java) y agregue el archivo JAR a su proyecto.
 
 ## Paso 4: importar las clases requeridas
 

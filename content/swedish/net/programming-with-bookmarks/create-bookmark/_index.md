@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Steg 3: Skapa kapslade bokmärken
 
-Vi kan också skapa kapslade bokmärken inuti ett huvudbokmärke. Vi använder samma`StartBookmark` och`EndBookmark` metoder för att skapa och avsluta kapslade bokmärken:
+ Vi kan också skapa kapslade bokmärken inuti ett huvudbokmärke. Vi använder samma`StartBookmark` och`EndBookmark` metoder för att skapa och avsluta kapslade bokmärken:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");

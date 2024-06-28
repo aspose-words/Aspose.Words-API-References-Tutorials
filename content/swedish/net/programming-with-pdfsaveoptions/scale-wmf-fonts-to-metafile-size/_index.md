@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Steg 3: Konfigurera alternativ för metafilrendering
 
- För att aktivera eller inaktivera WMF-teckensnittsskalning till metafilstorlek måste vi konfigurera`MetafileRenderingOptions`objekt. I det här exemplet inaktiverar vi teckensnittsskalning genom att ställa in`ScaleWmfFontsToMetafileSize`egendom till`false`.
+ För att aktivera eller inaktivera WMF-teckensnittsskalning till metafilstorlek måste vi konfigurera`MetafileRenderingOptions` objekt. I det här exemplet inaktiverar vi teckensnittsskalning genom att ställa in`ScaleWmfFontsToMetafileSize`egendom till`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ ett PDF-dokument med Aspose.Words för .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Om Aspose.Words inte kan rendera några av metafilposterna korrekt till vektorgrafik
+	//Om Aspose.Words inte kan rendera några av metafilposterna korrekt till vektorgrafik
 	// sedan renderar Aspose.Words denna metafil till en bitmapp.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 
@@ -83,7 +83,7 @@ ett PDF-dokument med Aspose.Words för .NET.
 
 ## Slutsats
 
-den här handledningen förklarade vi hur man aktiverar eller inaktiverar storleksändring av WMF-teckensnitt till metafilstorlek i ett PDF-dokument med Aspose.Words för .NET. Genom att följa stegen som beskrivs kan du enkelt kontrollera om WMF-teckensnitt ska ändras för att matcha metafilstorleken vid konvertering till ett PDF-dokument. Detta kan hjälpa dig att minska storleken på den genererade PDF-filen och förbättra renderingsprestanda. Var noga med att ange rätt sökväg till dina dokument och konfigurera alternativen för metafilrendering efter behov.
+I den här handledningen förklarade vi hur man aktiverar eller inaktiverar storleksändring av WMF-teckensnitt till metafilstorlek i ett PDF-dokument med Aspose.Words för .NET. Genom att följa stegen som beskrivs kan du enkelt kontrollera om WMF-teckensnitt ska ändras för att matcha metafilstorleken vid konvertering till ett PDF-dokument. Detta kan hjälpa dig att minska storleken på den genererade PDF-filen och förbättra renderingsprestanda. Var noga med att ange rätt sökväg till dina dokument och konfigurera alternativen för metafilrendering efter behov.
 
 ### Vanliga frågor
 

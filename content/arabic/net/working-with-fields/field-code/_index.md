@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Hyperlinks.docx");
 
 ## الخطوة 3: تصفح حقول المستند
 
- نحن نستخدم`foreach` تكرار للتكرار عبر كافة الحقول الموجودة في المستند.
+ نحن نستخدم`foreach`تكرار للتكرار عبر كافة الحقول الموجودة في المستند.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ foreach(Field field in doc.Range.Fields)
 
 #### س: كيف يمكنني إدراج حقل في مستند Word باستخدام Aspose.Words لـ .NET؟
 
- ج: لإدراج حقل في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك استخدام`DocumentBuilder.InsertField` طريقة تحديد رمز الحقل المناسب. على سبيل المثال، يمكنك استخدام`builder.InsertField("MERGEFIELD CustomerName")` لإدراج حقل دمج في المستند.
+ ج: لإدراج حقل في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك استخدام`DocumentBuilder.InsertField` طريقة تحديد رمز الحقل المناسب. على سبيل المثال، يمكنك استخدام`builder.InsertField("MERGEFIELD CustomerName")`لإدراج حقل دمج في المستند.
 
 #### س: كيف يمكنني تحديث الحقول في مستند باستخدام Aspose.Words for .NET؟
 
- ج: لتحديث حقول المستند باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Document.UpdateFields`طريقة. سيؤدي هذا إلى تحديث جميع الحقول الموجودة في المستند، مثل حقول الدمج وحقول التاريخ وما إلى ذلك.
+ ج: لتحديث حقول المستند باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Document.UpdateFields` طريقة. سيؤدي هذا إلى تحديث جميع الحقول الموجودة في المستند، مثل حقول الدمج وحقول التاريخ وما إلى ذلك.
 
 #### س: كيف يمكنني استرداد قيمة حقل معين في Aspose.Words لـ .NET؟
 

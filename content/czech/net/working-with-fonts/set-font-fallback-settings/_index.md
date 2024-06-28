@@ -2,80 +2,116 @@
 title: Nastavte záložní nastavení písma
 linktitle: Nastavte záložní nastavení písma
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Zjistěte, jak nastavit nastavení nahrazování písem v Aspose.Words pro .NET a přizpůsobit si nahrazování písem v dokumentech aplikace Word.
+description: Přečtěte si, jak nastavit záložní nastavení písem v Aspose.Words pro .NET. Tento komplexní průvodce zajišťuje správné zobrazení všech znaků ve vašich dokumentech.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/set-font-fallback-settings/
 ---
-tomto tutoriálu vám ukážeme, jak nastavit nastavení nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words for .NET. Nastavení náhrady písem umožňuje určit náhradní písma, která se mají použít, když zadaná písma nejsou k dispozici.
+
+Při práci s dokumenty, které obsahují různé textové prvky, jako jsou různé jazyky nebo speciální znaky, je zásadní zajistit, aby se tyto prvky zobrazovaly správně. Aspose.Words for .NET nabízí výkonnou funkci nazvanou Font Fallback Settings, která pomáhá při definování pravidel pro nahrazování písem, když původní písmo nepodporuje určité znaky. V této příručce prozkoumáme, jak nastavit nastavení zálohování písem pomocí Aspose.Words pro .NET v podrobném tutoriálu.
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující položky:
-- Pracovní znalost programovacího jazyka C#
-- Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
+
+Než se pustíte do výukového programu, ujistěte se, že máte splněny následující předpoklady:
+
+- Základní znalost C#: Znalost programovacího jazyka C# a .NET frameworku.
+-  Aspose.Words for .NET: Stáhněte a nainstalujte z[odkaz ke stažení](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Nastavení jako Visual Studio pro psaní a spouštění kódu.
+-  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven k testování.
+- Pravidla pro záložní písma XML: Připravte soubor XML definující pravidla pro záložní písma.
+
+## Importovat jmenné prostory
+
+Chcete-li používat Aspose.Words, musíte importovat potřebné jmenné prostory. To umožňuje přístup k různým třídám a metodám potřebným pro zpracování dokumentů.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
+```
 
 ## Krok 1: Definujte adresář dokumentů
- Začněte nastavením cesty k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+
+Nejprve definujte adresář, kde je dokument uložen. To je nezbytné pro vyhledání a zpracování vašeho dokumentu.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Krok 2: Načtěte nastavení nahrazování písem
- Vytvořte instanci souboru`FontSettings` třídy a použijte`Load` metoda pro načtení nastavení přepsání písem ze souboru XML. Zadaný soubor XML musí obsahovat pravidla pro nahrazování písem, která se mají použít.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## Krok 3: Použijte nastavení nahrazování písem
- Přiřaďte nastavení nahrazování písem k dokumentu tak, že je přiřadíte k dokumentu`FontSettings` vlastnictví.
-
-```csharp
-doc.FontSettings = fontSettings;
-```
-
-## Krok 4: Uložte dokument
- Uložte dokument pomocí`Save` metoda`Document` s příslušnou cestou a názvem souboru.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
-
-### Ukázkový zdrojový kód pro Set Font Fallback Settings pomocí Aspose.Words for .NET 
-```csharp
-// Cesta k vašemu adresáři dokumentů
+// Cesta k adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Krok 2: Vložte dokument
+
+ Vložte dokument do Aspose.Words`Document` objekt. Tento krok vám umožní pracovat s dokumentem programově.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Krok 3: Nakonfigurujte nastavení písma
+
+ Vytvoř nový`FontSettings` objekt a načtěte záložní nastavení písma ze souboru XML. Tento soubor XML obsahuje pravidla pro záložní písmo.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## Krok 4: Použijte nastavení písma na dokument
+
+ Přiřadit nakonfigurované`FontSettings` dokumentu. Tím je zajištěno, že se při vykreslování dokumentu použijí záložní pravidla pro písmo.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Krok 5: Uložte dokument
+
+Nakonec dokument uložte. Záložní nastavení písem bude použito během operace ukládání, aby byla zajištěna správná náhrada písem.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
+```
+
+## Soubor XML: Pravidla zálohování písem
+
+Zde je příklad toho, jak by měl vypadat váš soubor XML definující pravidla pro záložní písma:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
 ```
 
 ## Závěr
-V tomto tutoriálu jste se naučili, jak nastavit nastavení nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words for .NET. Experimentujte s různými pravidly pro nahrazování písem, abyste zajistili, že váš dokument bude vypadat konzistentně, i když zadaná písma nebudou k dispozici.
 
-### FAQ
+Pomocí následujících kroků můžete efektivně nastavit a používat nastavení Obnovení písma v Aspose.Words for .NET. Tím zajistíte, že vaše dokumenty zobrazí všechny znaky správně, i když původní písmo určité znaky nepodporuje. Implementace těchto nastavení výrazně zvýší kvalitu a čitelnost vašich dokumentů.
 
-#### Otázka: Jak mohu nastavit nastavení nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words?
+## Nejčastější dotazy
 
-Odpověď: Chcete-li nastavit nastavení nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words, můžete použít API k určení záložních písem, která se mají použít, když požadovaná písma nejsou k dispozici. To zajišťuje konzistentní vizualizaci textu i bez původních písem.
+### Q1: Co je to zálohování písem?
 
-#### Otázka: Je možné zpracovat záložní písma při přepisování v dokumentu aplikace Word pomocí Aspose.Words?
+Font Fallback je funkce, která umožňuje nahrazování písem, když původní písmo nepodporuje určité znaky, a zajišťuje správné zobrazení všech textových prvků.
 
-Odpověď: Ano, pomocí Aspose.Words můžete spravovat záložní písma při nahrazování v dokumentu aplikace Word. Rozhraní API umožňuje detekovat chybějící písma a specifikovat vhodná záložní písma, aby byl zachován konzistentní vzhled textu, i když jsou písma nahrazena.
+### Q2: Mohu zadat více záložních písem?
 
-#### Otázka: Proč je důležité správně nakonfigurovat nastavení nahrazování písem v dokumentu aplikace Word?
+Ano, v pravidlech XML můžete zadat více záložních písem. Aspose.Words bude kontrolovat každé písmo v zadaném pořadí, dokud nenajde takové, které daný znak podporuje.
 
-Odpověď: Je důležité správně nakonfigurovat nastavení nahrazování písem v dokumentu aplikace Word, aby byla zachována vizuální integrita textu. Nastavením vhodných záložních písem pomocí Aspose.Words zajistíte, že text bude zobrazen konzistentně, i když požadovaná písma nejsou k dispozici.
+### Q3: Kde si mohu stáhnout Aspose.Words pro .NET?
 
-#### Otázka: Jak mohu zjistit chybějící písma při nahrazování v dokumentu aplikace Word pomocí Aspose.Words?
+ Můžete si jej stáhnout z[Aspose stránku ke stažení](https://releases.aspose.com/words/net/).
 
-Odpověď: Aspose.Words vám umožňuje zjistit chybějící písma během nahrazování v dokumentu aplikace Word pomocí rozhraní API. Můžete použít metody poskytované Aspose.Words ke kontrole dostupnosti požadovaných písem a přijmout vhodná opatření v případě chybějících písem.
+### Otázka 4: Jak vytvořím soubor XML pro pravidla záložních písem?
 
-#### Otázka: Má náhrada písem vliv na rozvržení mého dokumentu aplikace Word?
+Soubor XML lze vytvořit pomocí libovolného textového editoru. Mělo by se řídit strukturou uvedenou v příkladu v tomto tutoriálu.
 
-Odpověď: Náhrada písem může ovlivnit rozvržení dokumentu aplikace Word, pokud mají záložní písma jiné rozměry než původní písma. Rozumným výběrem záložních písem a konfigurací nastavení nahrazování písem pomocí Aspose.Words však můžete minimalizovat dopady na rozvržení.
+### Q5: Je k dispozici podpora pro Aspose.Words?
+
+ Ano, podporu najdete na[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).

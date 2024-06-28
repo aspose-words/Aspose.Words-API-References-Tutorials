@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-fields/change-field-update-culture-source/
 ---
 
-V tomto tutoriálu vás provedeme procesem změny zdroje kultury aktualizace pole v dokumentech aplikace Word pomocí Aspose.Words for .NET. Úpravou zdroje jazykové verze můžete řídit formátování data během operací aktualizace polí a hromadné korespondence. Poskytneme vám potřebný zdrojový kód C# a pokyny krok za krokem, jak toho dosáhnout.
+tomto tutoriálu vás provedeme procesem změny zdroje kultury aktualizace pole v dokumentech aplikace Word pomocí Aspose.Words for .NET. Úpravou zdroje jazykové verze můžete řídit formátování data během operací aktualizace polí a hromadné korespondence. Poskytneme vám potřebný zdrojový kód C# a pokyny krok za krokem, jak toho dosáhnout.
 
 ## Předpoklady
 Než začneme, ujistěte se, že máte následující předpoklady:
@@ -91,7 +91,7 @@ Gratulujeme! Úspěšně jste se naučili, jak změnit zdroj kultury aktualizace
 
 #### Otázka: Jak mohu určit konkrétní kulturu pro aktualizaci polí v Aspose.Words pro .NET?
 
-A: Chcete-li určit konkrétní kulturu pro aktualizaci polí v Aspose.Words pro .NET, můžete použít`Document.FieldOptions.FieldUpdateCultureInfo` vlastnost a nastavte`CultureInfo` objekt odpovídající požadované kultuře. Můžete například použít`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` specifikovat francouzskou (francouzskou) kulturu.
+ A: Chcete-li určit konkrétní kulturu pro aktualizaci polí v Aspose.Words pro .NET, můžete použít`Document.FieldOptions.FieldUpdateCultureInfo` vlastnost a nastavte`CultureInfo` objekt odpovídající požadované kultuře. Můžete například použít`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` specifikovat francouzskou (francouzskou) kulturu.
 
 #### Otázka: Je možné zakázat automatickou aktualizaci polí v Aspose.Words pro .NET?
 

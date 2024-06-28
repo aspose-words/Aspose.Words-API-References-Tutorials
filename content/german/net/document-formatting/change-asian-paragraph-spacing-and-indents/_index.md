@@ -51,9 +51,9 @@ Hier ist der vollständige Quellcode für die Funktion „Asiatische Absatzabst�
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent wird aktualisiert
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent wird aktualisiert
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent wird aktualisiert
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent wird aktualisiert.
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent wird aktualisiert.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent wird aktualisiert.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore wird aktualisiert
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter wird aktualisiert
 
@@ -65,7 +65,7 @@ Mit diesem Code können Sie die Abstände und Einzüge eines asiatischen Absatze
 
 ## Abschluss
 
- In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET die Abstände und Einzüge eines asiatischen Absatzes ändert. Durch Ändern der relevanten Eigenschaften des`ParagraphFormat`können wir das Layout und die Darstellung asiatischer Absätze in einem Word-Dokument steuern. Diese Funktion ist nützlich, um die Formatierung von Text mit asiatischen Zeichen anzupassen und die gewünschte visuelle Präsentation in Dokumenten mit gemischtsprachigen Inhalten zu erreichen.
+ In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET den Abstand und die Einzüge eines asiatischen Absatzes ändert. Durch Ändern der relevanten Eigenschaften des`ParagraphFormat`können wir das Layout und die Darstellung asiatischer Absätze in einem Word-Dokument steuern. Diese Funktion ist nützlich, um die Formatierung von Text mit asiatischen Zeichen anzupassen und die gewünschte visuelle Präsentation in Dokumenten mit gemischtsprachigen Inhalten zu erreichen.
 
 ### FAQs
 

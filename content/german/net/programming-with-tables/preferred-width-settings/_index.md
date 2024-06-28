@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Hier verwenden wir den Document Builder, um eine Tabelle mit drei Zellen zu erstellen. Die erste Zelle hat eine bevorzugte Breite von 40 Punkten, die zweite Zelle hat eine bevorzugte Breite von 20 % der Tabellenbreite und die dritte Zelle hat eine automatische bevorzugte Breite, die sich anpasst
+Hier verwenden wir den Document Builder, um eine Tabelle mit drei Zellen zu erstellen. Die erste Zelle hat eine bevorzugte Breite von 40 Punkten, die zweite Zelle hat eine bevorzugte Breite von 20 % der Tabellenbreite und die dritte Zelle hat eine automatische bevorzugte Breite, die sich anpasst.
 
   je nach verfügbarem Platz.
 

@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Steg 5: Infoga det kapslade fältet
 
- Vi använder DocumentBuilder's`InsertField()`metod för att infoga ett kapslat fält i sidfoten.
+ Vi använder DocumentBuilder's`InsertField()` metod för att infoga ett kapslat fält i sidfoten.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -94,7 +94,7 @@ field. Update();
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-I det här exemplet skapade vi ett nytt dokument, infogade sidbrytningar, flyttade markören till sidfoten och infogade sedan ett kapslat fält i sidfoten.
+det här exemplet skapade vi ett nytt dokument, infogade sidbrytningar, flyttade markören till sidfoten och infogade sedan ett kapslat fält i sidfoten.
 
 ### FAQ's
 
@@ -108,7 +108,7 @@ S: För att infoga kapslade fält i ett Word-dokument med Aspose.Words för .NET
 
 #### F: Vilka är fördelarna med att använda kapslade fält i ett Word-dokument med Aspose.Words för .NET?
 
-S: Att använda kapslade fält ger flera fördelar i ett Word-dokument med Aspose.Words för .NET. Detta ger större flexibilitet när det gäller att skapa dynamiska dokumentmallar genom att tillåta infogning av variabelvärden och beräkningar i kapslade fält. Kapslade fält kan också underlätta automatisk generering av innehåll, som att generera innehållsförteckningar, sidnummer, etc.
+S: Att använda kapslade fält ger flera fördelar i ett Word-dokument med Aspose.Words för .NET. Detta ger större flexibilitet i att skapa dynamiska dokumentmallar, genom att tillåta infogning av variabelvärden och beräkningar i kapslade fält. Kapslade fält kan också underlätta automatisk generering av innehåll, som att generera innehållsförteckningar, sidnummer, etc.
 
 #### F: Kan jag ha kapslade fält på flera nivåer i ett Word-dokument med Aspose.Words för .NET?
 

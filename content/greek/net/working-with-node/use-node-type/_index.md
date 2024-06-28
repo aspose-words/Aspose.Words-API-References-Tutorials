@@ -1,6 +1,6 @@
 ---
-title: Χρησιμοποιήστε τον Τύπο κόμβου
-linktitle: Χρησιμοποιήστε τον Τύπο κόμβου
+title: Χρησιμοποιήστε τον τύπο κόμβου
+linktitle: Χρησιμοποιήστε τον τύπο κόμβου
 second_title: Aspose.Words Document Processing API
 description: Μάθετε πώς να χρησιμοποιείτε τον τύπο κόμβου για πρόσβαση σε συγκεκριμένες πληροφορίες εγγράφων με το Aspose.Words για .NET.
 type: docs

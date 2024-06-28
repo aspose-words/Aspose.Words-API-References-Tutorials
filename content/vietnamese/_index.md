@@ -10,7 +10,7 @@ is_root: true
 
 ## Hướng dẫn xử lý tài liệu Aspose.Words cho .NET
 {{% alert color="primary" %}}
-Những hướng dẫn này cung cấp hướng dẫn rõ ràng và chi tiết về cách làm việc với các tài liệu Microsoft Word theo chương trình, bao gồm nhiều chức năng. Từ các tác vụ đơn giản như tạo và chỉnh sửa tài liệu đến các tính năng nâng cao hơn như trộn thư, chuyển đổi tài liệu và mã hóa tài liệu, nhà phát triển có thể tìm thấy các ví dụ thực tế và đoạn mã để triển khai trong dự án của họ. Bằng cách làm theo những hướng dẫn này, các nhà phát triển .NET có thể nâng cao ứng dụng của họ bằng khả năng xử lý tài liệu mạnh mẽ, đảm bảo xử lý hiệu quả và liền mạch các tài liệu Word trong giải pháp phần mềm của họ. 
+Các hướng dẫn này cung cấp hướng dẫn rõ ràng và chi tiết về cách làm việc với các tài liệu Microsoft Word theo chương trình, bao gồm nhiều chức năng. Từ các tác vụ đơn giản như tạo và chỉnh sửa tài liệu đến các tính năng nâng cao hơn như trộn thư, chuyển đổi tài liệu và mã hóa tài liệu, nhà phát triển có thể tìm thấy các ví dụ thực tế và đoạn mã để triển khai trong dự án của họ. Bằng cách làm theo những hướng dẫn này, các nhà phát triển .NET có thể nâng cao ứng dụng của họ bằng khả năng xử lý tài liệu mạnh mẽ, đảm bảo xử lý hiệu quả và liền mạch các tài liệu Word trong giải pháp phần mềm của họ. 
 {{% /alert %}}
 
 Đây là các liên kết đến một số tài nguyên hữu ích:
@@ -25,7 +25,7 @@ Những hướng dẫn này cung cấp hướng dẫn rõ ràng và chi tiết v
 - [Làm việc với Danh sách](./net/working-with-list/)   
 - [Làm việc với Markdown](./net/working-with-markdown/)   
 - [Làm việc với nút](./net/working-with-node/)   
-- [Làm việc với các bản sửa đổi](./net/working-with-revisions/)   
+- [Làm việc với các bài đánh giá](./net/working-with-revisions/)   
 - [Làm việc với hộp văn bản](./net/working-with-textboxes/)   
 - [Tách tài liệu](./net/split-document/)   
 - [Thêm nội dung bằng Documentbuilder](./net/add-content-using-documentbuilder/)

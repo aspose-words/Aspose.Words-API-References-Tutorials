@@ -34,7 +34,7 @@ import com.aspose.words.Document;
 
 public class DocumentRenderer {
     public static void main(String[] args) throws Exception {
-        //ドキュメントをロードします
+        //ドキュメントをロードする
         Document doc = new Document("path/to/your/document.docx");
     }
 }
@@ -51,7 +51,7 @@ import com.aspose.words.HtmlSaveOptions;
 
 public class DocumentRenderer {
     public static void main(String[] args) throws Exception {
-        //ドキュメントをロードします
+        //ドキュメントをロードする
         Document doc = new Document("path/to/your/document.docx");
         
         // HTML 保存オプションを設定する

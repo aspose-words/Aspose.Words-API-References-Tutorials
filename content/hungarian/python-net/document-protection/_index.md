@@ -19,7 +19,7 @@ Az oktatóanyagok a dokumentumok biztonságának Python dokumentumvédelmi funkc
 
 ## Erősítse meg dokumentumkezelését
 
-Az Aspose.Words for Python segítségével a dokumentumvédelem elsajátításával a fejlesztők felerősíthetik dokumentumkezelési képességeiket. Az oktatóanyagok lépésenkénti utasításokat, kódmintákat és gyakorlati példákat kínálnak, amelyek lehetővé teszik a fejlesztők számára, hogy robusztus dokumentumvédelmi funkciókat alkalmazzanak Python-alkalmazásaikban. Használja ezeket az oktatóanyagokat, hogy biztosítsa dokumentumai titkosságát és integritását.
+Az Aspose.Words for Python segítségével a dokumentumvédelem elsajátításával a fejlesztők felerősíthetik dokumentumkezelési képességeiket. Az oktatóanyagok lépésről lépésre szóló utasításokat, kódmintákat és gyakorlati példákat kínálnak, amelyek lehetővé teszik a fejlesztők számára, hogy robusztus dokumentumvédelmi funkciókat implementáljanak Python-alkalmazásaikban. Használja ezeket az oktatóanyagokat, hogy biztosítsa dokumentumai titkosságát és integritását.
 
 ## Dokumentumvédelem Python segítségével
 ### [Dokumentumbiztonság Python segítségével – Útmutató lépésről lépésre](./document-security-python/)

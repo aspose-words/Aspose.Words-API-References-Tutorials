@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Formatieren von Wasserzeichen für die Dokumentästhetik
 linktitle: Erstellen und Formatieren von Wasserzeichen für die Dokumentästhetik
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Wasserzeichen in Dokumenten erstellen und formatieren. Schritt-für-Schritt-Anleitung mit Quellcode zum Hinzufügen von Text- und Bildwasserzeichen. Verbessern Sie die Ästhetik Ihres Dokuments mit diesem Tutorial.
 type: docs
 weight: 10
@@ -35,7 +35,7 @@ Gehen Sie folgendermaßen vor, um ein Textwasserzeichen hinzuzufügen:
 
 1. Erstellen Sie ein Wasserzeichenobjekt.
 2. Geben Sie den Text für das Wasserzeichen an.
-3. Fügen Sie dem Dokument das Wasserzeichen hinzu.
+3. Fügen Sie das Wasserzeichen zum Dokument hinzu.
 
 ```python
 # Create a watermark object
@@ -48,7 +48,7 @@ watermark.text = "Confidential"
 doc.watermark = watermark
 ```
 
-## Anpassen der Darstellung des Textwasserzeichens
+## Anpassen der Darstellung von Textwasserzeichen
 
 Sie können das Erscheinungsbild des Textwasserzeichens anpassen, indem Sie verschiedene Eigenschaften anpassen:
 

@@ -1,7 +1,7 @@
 ---
 title: Fortgeschrittene Techniken zum Zusammenfügen und Anhängen von Dokumenten
 linktitle: Fortgeschrittene Techniken zum Zusammenfügen und Anhängen von Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Lernen Sie fortgeschrittene Techniken zum Zusammenführen und Anhängen von Dokumenten mit Aspose.Words in Python. Schritt-für-Schritt-Anleitung mit Codebeispielen.
 type: docs
 weight: 10

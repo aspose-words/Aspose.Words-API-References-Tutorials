@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 	Document doc = new Document(dataDir + "Document.docx");
 
 	//设置允许定义文档网格行为的部分的布局模式。
-	//请注意，“文档网格”选项卡在 MS Word 的“页面设置”对话框中变得可见
+	//请注意，“文档网格”选项卡在 MS Word 的“页面设置”对话框中变为可见。
 	//是否将任何亚洲语言定义为编辑语言。
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

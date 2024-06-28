@@ -121,4 +121,4 @@ V: A TOA-mező sikeres beszúrásának ellenőrzéséhez böngészhet a dokument
 
 #### K: A TOA mező beszúrása a DocumentBuilder használata nélkül hatással van a Word dokumentum formázására az Aspose.Words for .NET használatával?
 
-V: A TOA mező beszúrása a DocumentBuilder használata nélkül nem befolyásolja közvetlenül a Word-dokumentum formázását. A TOA mező formázási beállításai azonban hatással lehetnek a dokumentum általános formázására.
+V: A TOA mező beszúrása a DocumentBuilder használata nélkül nincs közvetlen hatással a Word dokumentum formázására. A TOA mező formázási beállításai azonban hatással lehetnek a dokumentum általános formázására.

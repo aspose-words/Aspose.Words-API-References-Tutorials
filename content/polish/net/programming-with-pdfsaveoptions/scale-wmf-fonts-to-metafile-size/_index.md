@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Krok 3: Skonfiguruj opcje renderowania metapliku
 
- Aby włączyć lub wyłączyć skalowanie czcionek WMF do rozmiaru metapliku, musimy skonfigurować`MetafileRenderingOptions`obiekt. W tym przykładzie wyłączamy skalowanie czcionek, ustawiając opcję`ScaleWmfFontsToMetafileSize`własność do`false`.
+ Aby włączyć lub wyłączyć skalowanie czcionek WMF do rozmiaru metapliku, musimy skonfigurować`MetafileRenderingOptions` obiekt. W tym przykładzie wyłączamy skalowanie czcionek, ustawiając opcję`ScaleWmfFontsToMetafileSize`własność do`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ dokument PDF przy użyciu Aspose.Words dla .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Jeśli Aspose.Words nie może poprawnie renderować niektórych rekordów metaplików do grafiki wektorowej
+	//Jeśli Aspose.Words nie może poprawnie renderować niektórych rekordów metaplików do grafiki wektorowej
 	// następnie Aspose.Words renderuje ten metaplik do postaci bitmapy.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 
@@ -83,7 +83,7 @@ dokument PDF przy użyciu Aspose.Words dla .NET.
 
 ## Wniosek
 
-tym samouczku wyjaśniliśmy, jak włączyć lub wyłączyć zmianę rozmiaru czcionek WMF do rozmiaru metapliku w dokumencie PDF przy użyciu Aspose.Words dla .NET. Wykonując opisane kroki, możesz łatwo kontrolować, czy podczas konwersji do dokumentu PDF należy zmieniać rozmiar czcionek WMF, aby dopasować je do rozmiaru metapliku. Może to pomóc w zmniejszeniu rozmiaru wygenerowanego pliku PDF i poprawie wydajności renderowania. Pamiętaj, aby określić poprawną ścieżkę do dokumentów i odpowiednio skonfigurować opcje renderowania metaplików.
+W tym samouczku wyjaśniliśmy, jak włączyć lub wyłączyć zmianę rozmiaru czcionek WMF do rozmiaru metapliku w dokumencie PDF przy użyciu Aspose.Words dla .NET. Wykonując opisane kroki, możesz łatwo kontrolować, czy podczas konwersji do dokumentu PDF należy zmieniać rozmiar czcionek WMF, aby dopasować je do rozmiaru metapliku. Może to pomóc w zmniejszeniu rozmiaru wygenerowanego pliku PDF i poprawie wydajności renderowania. Pamiętaj, aby określić poprawną ścieżkę do dokumentów i odpowiednio skonfigurować opcje renderowania metaplików.
 
 ### Często Zadawane Pytania
 
@@ -103,7 +103,7 @@ O: Aby włączyć lub wyłączyć zmianę rozmiaru czcionek WMF do rozmiaru meta
 
  Zapisz dokument w formacie PDF za pomocą`Save` metoda`Document` class określając ścieżkę i opcje zapisu.
 
-#### P: Jakie są korzyści ze zmiany rozmiaru czcionek WMF na rozmiar metapliku w dokumencie PDF?
+#### P: Jakie są zalety zmiany rozmiaru czcionek WMF na rozmiar metapliku w dokumencie PDF?
 Odp.: Zalety zmiany rozmiaru czcionek WMF do rozmiaru metapliku w dokumencie PDF to:
 
 Zmniejszanie rozmiaru pliku PDF: Zmiana rozmiaru czcionek WMF do rozmiaru metapliku może zmniejszyć rozmiar wygenerowanego dokumentu PDF, dostosowując rozmiar czcionki do potrzeb metapliku.

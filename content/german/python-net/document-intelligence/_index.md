@@ -1,7 +1,7 @@
 ---
 title: Dokumentenintelligenz
 linktitle: Dokumentenintelligenz
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Gewinnen Sie wertvolle Erkenntnisse aus Ihren Dokumenten mit Aspose.Words für Pythons Document Intelligence. Automatisieren Sie Analyse, Textextraktion und Klassifizierung.
 type: docs
 weight: 12

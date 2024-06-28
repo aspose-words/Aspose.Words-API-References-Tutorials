@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### Q：如何在 Aspose.Words for .NET 中載入來源文檔和目標文件？
 
- A：將來源文檔載入到實例中`Document`類稱為`srcDoc`並建立一個空實例`Document`類稱為`dstDoc`對於目標文檔，您可以使用以下程式碼：
+A：將來源文檔載入到實例中`Document`類稱為`srcDoc`並建立一個空實例`Document`類稱為`dstDoc`對於目標文檔，您可以使用以下程式碼：
 
 ```csharp
 //載入來源文檔

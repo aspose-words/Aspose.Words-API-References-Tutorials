@@ -19,7 +19,7 @@ Dengan mengikuti tutorial ini, Anda akan dapat memanfaatkan sepenuhnya fitur man
 | [Sesuaikan Tabel Secara Otomatis Dengan Isi](./auto-fit-table-to-contents/) | Pelajari cara menyesuaikan tabel secara otomatis dengan kontennya di dokumen Word menggunakan Aspose.Words untuk .NET. |
 | [Tabel Lengkap Klon](./clone-complete-table/) | Pelajari cara mengkloning seluruh tabel ke dalam dokumen Word dengan Aspose.Words untuk .NET. |
 | [Menemukan Indeks](./finding-index/) | Pelajari cara menemukan indeks tabel, baris, dan sel dalam dokumen Word dengan Aspose.Words untuk .NET. |
-| [Masukkan Tabel Secara Langsung](./insert-table-directly/) | Pelajari cara menyisipkan tabel langsung ke dokumen Word dengan Aspose.Words untuk .NET. |
+| [Masukkan Tabel Secara Langsung](./insert-table-directly/) | Pelajari cara menyisipkan tabel langsung ke dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci untuk menyederhanakan pembuatan dokumen Anda. |
 | [Sisipkan Tabel Dari Html](./insert-table-from-html/) | Pelajari cara menyisipkan tabel dari HTML ke dalam dokumen Word dengan Aspose.Words untuk .NET. |
 | [Buat Tabel Sederhana](./create-simple-table/) | Pelajari cara membuat tabel sederhana di dokumen Word dengan Aspose.Words untuk .NET. |
 | [Tabel Terformat](./formatted-table/) | Pelajari cara membuat tabel berformat dalam dokumen Word dengan Aspose.Words untuk .NET. |

@@ -53,7 +53,7 @@ Bir DOCX dosyasını EPUB'a dönüştürmek için bu işlevi sağlayan farklı y
 
 #### Dönüştürme sürecinin sınırlamaları nelerdir?
 
-Dönüştürme işleminin sınırlamaları, kullandığınız belirli araca veya kitaplığa bağlıdır. Bazı araçlarda giriş belgesinin boyutuna veya karmaşıklığına ilişkin kısıtlamalar bulunabilir. Dönüşüm görevinizin taleplerini karşılayabilecek bir araç seçmek önemlidir.
+Dönüştürme işleminin sınırlamaları, kullandığınız belirli araca veya kitaplığa bağlıdır. Bazı araçların girdi belgesinin boyutu veya karmaşıklığıyla ilgili kısıtlamaları olabilir. Dönüşüm görevinizin taleplerini karşılayabilecek bir araç seçmek önemlidir.
 
 #### Orijinal belgenin biçimlendirmesini koruyabilir miyim?
 

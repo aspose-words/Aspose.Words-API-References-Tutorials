@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fonts/set-font-formatting/
 ---
-tym samouczku pokażemy, jak ustawić formatowanie czcionek w dokumencie programu Word za pomocą Aspose.Words dla .NET. Dowiesz się, jak stosować style, takie jak pogrubienie, kolor, kursywa, czcionka, rozmiar, odstępy i podkreślenie.
+W tym samouczku pokażemy, jak ustawić formatowanie czcionek w dokumencie programu Word za pomocą Aspose.Words dla .NET. Dowiesz się, jak stosować style, takie jak pogrubienie, kolor, kursywa, czcionka, rozmiar, odstępy i podkreślenie.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -15,14 +15,14 @@ Zanim zaczniesz, upewnij się, że masz następujące elementy:
 - Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
 
 ## Krok 1: Zdefiniuj katalog dokumentów
- Zacznij od ustawienia ścieżki katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+Zacznij od ustawienia ścieżki katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Utwórz i sformatuj dokument
- Utwórz instancję`Document` klasa i`DocumentBuilder` klasa do zbudowania dokumentu. Użyj`Font` własność`DocumentBuilder` aby uzyskać dostęp do właściwości formatowania czcionki.
+ Utwórz instancję`Document` klasa i`DocumentBuilder`klasa do zbudowania dokumentu. Użyj`Font` własność`DocumentBuilder` aby uzyskać dostęp do właściwości formatowania czcionki.
 
 ```csharp
 Document doc = new Document();

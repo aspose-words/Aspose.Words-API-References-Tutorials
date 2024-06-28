@@ -59,7 +59,7 @@ builder.Font.Style = inlineCode3BackTicks;
 builder.Writeln("Text with InlineCode style with 3 backtick");
 ```
 
-Συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη λειτουργία ενσωματωμένου κώδικα με το Aspose.Words για .NET.
+συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη λειτουργία ενσωματωμένου κώδικα με το Aspose.Words για .NET.
 
 
 ### Συχνές ερωτήσεις

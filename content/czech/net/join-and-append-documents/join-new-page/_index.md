@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Krok 5: Uložte upravený dokument
 
- Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ Tím je dokončena implementace spojení dvou dokumentů na nové stránce pomoc
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Nastavte připojený dokument tak, aby začínal na nové stránce.
+	// Nastavte připojený dokument tak, aby začínal na nové stránce.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Připojte zdrojový dokument pomocí původních stylů nalezených ve zdrojovém dokumentu.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

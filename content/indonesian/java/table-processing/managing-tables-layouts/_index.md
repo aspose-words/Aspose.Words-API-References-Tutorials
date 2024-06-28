@@ -30,7 +30,7 @@ Langkah pertama dalam mengelola tabel adalah membuatnya. Aspose.Words membuatnya
 // Buat Dokumen baru
 Document doc = new Document();
 
-// Buat tabel dengan 3 baris dan 4 kolom
+// Buat tabel dengan 3 baris dan 4 kolom.
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 #### Q: Aspose.Words for .NET でフィールドを更新するための特定のカルチャを指定するにはどうすればよいですか?
 
-A: Aspose.Words for .NET でフィールドを更新するための特定のカルチャを指定するには、`Document.FieldOptions.FieldUpdateCultureInfo`プロパティを設定し、`CultureInfo`目的の文化に対応するオブジェクト。たとえば、次のように使用できます`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")`フランス (フランス) の文化を指定します。
+ A: Aspose.Words for .NET でフィールドを更新するための特定のカルチャを指定するには、`Document.FieldOptions.FieldUpdateCultureInfo`プロパティを設定し、`CultureInfo`目的の文化に対応するオブジェクト。たとえば、次のように使用できます`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")`フランス (フランス) の文化を指定します。
 
 #### Q: Aspose.Words for .NET での自動フィールド更新を無効にすることはできますか?
 

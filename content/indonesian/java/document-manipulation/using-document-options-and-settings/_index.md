@@ -123,7 +123,7 @@ public void addJapaneseAsEditingLanguages() throws Exception
 }
 ```
 
-Bahasa pengeditan memainkan peran penting dalam pemrosesan dokumen. Dengan Aspose.Words untuk Java, Anda dapat mengatur dan mengkustomisasi bahasa pengeditan agar sesuai dengan kebutuhan linguistik dokumen Anda.
+Bahasa pengeditan memainkan peran penting dalam pemrosesan dokumen. Dengan Aspose.Words for Java, Anda dapat mengatur dan menyesuaikan bahasa pengeditan agar sesuai dengan kebutuhan linguistik dokumen Anda.
 
 
 ## Kesimpulan

@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-comments/comment-resolved-and-replies/
 ---
 
-tomto komplexním tutoriálu se naučíte, jak vyřešit komentáře a jejich odpovědi v dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete moci spravovat řešení komentářů a aktualizovat stav komentářů a jejich odpovědí.
+V tomto komplexním tutoriálu se naučíte, jak vyřešit komentáře a jejich odpovědi v dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete moci spravovat řešení komentářů a aktualizovat stav komentářů a jejich odpovědí.
 
 ## Předpoklady
 Než začneme, ujistěte se, že máte následující předpoklady:
@@ -84,7 +84,7 @@ Rozlišení komentářů pomáhá při sledování a správě zpětné vazby v d
 
 #### Otázka: Jak přidám odpověď na vyřešený komentář v Aspose.Words pro .NET?
 
- Odpověď: Přestože jsou vyřešené komentáře ve výchozím nastavení v konečném dokumentu skryté, stále můžete přidat odpověď na vyřešený komentář pomocí`Comment.AddReply` metoda určující text odpovědi a místo, kam jej chcete přidat.
+ Odpověď: Přestože jsou vyřešené komentáře ve výchozím nastavení v konečném dokumentu skryté, stále můžete přidat odpověď na vyřešený komentář pomocí`Comment.AddReply`metoda určující text odpovědi a místo, kam jej chcete přidat.
 
 #### Otázka: Jak zobrazím vyřešené komentáře v Aspose.Words for .NET?
 

@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## Etapa 3: Personalizando o formato do marcador
 
-Podemos personalizar o formato do marcador acessando as propriedades de`ListFormat.List.ListLevels[0]`. Neste exemplo, usamos o travessão "-" como marcador.
+ Podemos personalizar o formato do marcador acessando as propriedades de`ListFormat.List.ListLevels[0]`. Neste exemplo, usamos o travessão "-" como marcador.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

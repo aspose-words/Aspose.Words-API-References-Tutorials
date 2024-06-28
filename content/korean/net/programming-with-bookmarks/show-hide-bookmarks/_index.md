@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## 2단계: 특정 북마크 표시 또는 숨기기
 
- 우리는`ShowHideBookmarkedContent`문서 내 특정 북마크를 표시하거나 숨기는 기능입니다. 이 함수는 문서, 북마크 이름, 북마크 표시 여부를 나타내는 부울 값을 매개변수로 사용합니다.
+ 우리는`ShowHideBookmarkedContent` 문서 내 특정 북마크를 표시하거나 숨기는 기능입니다. 이 함수는 문서, 북마크 이름, 북마크 표시 여부를 나타내는 부울 값을 매개변수로 사용합니다.
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -126,7 +126,7 @@ A: 예, 제공된 코드는 .doc 및 .docm과 같이 Aspose.Words가 지원하�
 
  A: 숨겨진 북마크를 다시 표시하려면 동일한 북마크를 사용해야 합니다.`ShowHideBookmarkedContent` 값을 전달하는 함수`true` 북마크를 표시할지 숨길지를 나타내는 부울 매개변수입니다.
 
-#### Q: 조건을 사용하여 문서의 병합 필드 값을 기반으로 책갈피를 표시하거나 숨길 수 있나요?
+#### Q: 문서의 병합 필드 값을 기반으로 북마크를 표시하거나 숨기는 조건을 사용할 수 있나요?
 
  A: 예, 조건과 병합 필드 값을 사용하여 북마크를 표시할지 숨길지 결정할 수 있습니다. 코드를 사용자 정의할 수 있습니다.`ShowHideBookmarkedContent` 적절한 조건과 값을 고려하는 기능입니다.
 

@@ -23,7 +23,7 @@ Aspose.Words for Java を使用してドキュメントを複数のファイル�
 最初のステップは、分割するドキュメントをロードすることです。開始に役立つコード スニペットを次に示します。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("your-document.docx");
 ```
 

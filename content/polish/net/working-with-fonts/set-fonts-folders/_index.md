@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-fonts/set-fonts-folders/
 ---
 
-tym samouczku przeprowadzimy Cię krok po kroku przez proces ustawiania folderów czcionek podczas renderowania dokumentu za pomocą Aspose.Words dla .NET. Wyjaśnimy dołączony kod źródłowy C# i udostępnimy kompleksowy przewodnik, który pomoże Ci zrozumieć i wdrożyć tę funkcję we własnych projektach. Pod koniec tego samouczka będziesz wiedział, jak określić foldery czcionek, które mają być używane podczas renderowania dokumentów przy użyciu Aspose.Words dla .NET.
+W tym samouczku przeprowadzimy Cię krok po kroku przez proces ustawiania folderów czcionek podczas renderowania dokumentu za pomocą Aspose.Words dla .NET. Wyjaśnimy dołączony kod źródłowy C# i udostępnimy kompleksowy przewodnik, który pomoże Ci zrozumieć i wdrożyć tę funkcję we własnych projektach. Pod koniec tego samouczka będziesz wiedział, jak określić foldery czcionek, które mają być używane podczas renderowania dokumentów przy użyciu Aspose.Words dla .NET.
 
 ## Krok 1: Zdefiniuj katalog dokumentów
 Najpierw musisz ustawić ścieżkę do katalogu dokumentów. Jest to lokalizacja, w której chcesz zapisać edytowany, wyrenderowany dokument. Zastąp „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką.
@@ -56,13 +56,13 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
 ## Wniosek
-W tym samouczku dowiedzieliśmy się, jak ustawić foldery czcionek podczas renderowania dokumentu za pomocą Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku, możesz łatwo określić źródła czcionek, które mają być używane podczas renderowania dokumentów. Aspose.Words oferuje potężny i elastyczny interfejs API do przetwarzania tekstu z czcionkami w dokumentach. Dzięki tej wiedzy możesz kontrolować i dostosowywać źródła czcionek używanych podczas renderowania dokumentów do swoich konkretnych potrzeb.
+tym samouczku dowiedzieliśmy się, jak ustawić foldery czcionek podczas renderowania dokumentu za pomocą Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku, możesz łatwo określić źródła czcionek, które mają być używane podczas renderowania dokumentów. Aspose.Words oferuje potężny i elastyczny interfejs API do przetwarzania tekstu z czcionkami w dokumentach. Dzięki tej wiedzy możesz kontrolować i dostosowywać źródła czcionek używanych podczas renderowania dokumentów do swoich konkretnych potrzeb.
 
 ### Często zadawane pytania
 
 #### P: Jak mogę skonfigurować foldery czcionek w dokumencie programu Word przy użyciu Aspose.Words?
 
-Odp.: Aby skonfigurować foldery czcionek w dokumencie programu Word za pomocą Aspose.Words, możesz użyć interfejsu API w celu określenia niestandardowych folderów czcionek, które będą używane podczas generowania lub edytowania dokumentu. Umożliwi to programowi Word znalezienie czcionek wymaganych do prawidłowego renderowania.
+Odp.: Aby skonfigurować foldery czcionek w dokumencie programu Word za pomocą Aspose.Words, możesz użyć interfejsu API do określenia niestandardowych folderów czcionek, które będą używane podczas generowania lub edytowania dokumentu. Umożliwi to programowi Word znalezienie czcionek wymaganych do prawidłowego renderowania.
 
 #### P: Czy można dodać niestandardowe czcionki do dokumentu programu Word za pomocą Aspose.Words?
 

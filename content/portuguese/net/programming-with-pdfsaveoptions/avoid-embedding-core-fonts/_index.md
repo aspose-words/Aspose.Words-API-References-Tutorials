@@ -63,7 +63,7 @@ Seguindo essas etapas, você pode controlar facilmente se as fontes básicas dev
 
 ## Conclusão
 
-Neste tutorial, explicamos como reduzir o tamanho de um arquivo PDF não incorporando fontes básicas com Aspose.Words for .NET. Este recurso permite controlar se as fontes básicas devem ser incorporadas no PDF ao converter um documento do Word. Seguindo as etapas descritas, você pode controlar facilmente a incorporação ou não incorporação de fontes básicas, o que pode ajudar a reduzir o tamanho do arquivo PDF e garantir melhor compatibilidade e aparência consistente do documento em diferentes dispositivos e plataformas. Não se esqueça de considerar as consequências de não incorporar fontes básicas e de experimentar para garantir que o documento seja renderizado conforme o esperado.
+Neste tutorial, explicamos como reduzir o tamanho de um arquivo PDF não incorporando fontes básicas com Aspose.Words for .NET. Este recurso permite controlar se as fontes básicas devem ser incorporadas no PDF ao converter um documento do Word. Seguindo as etapas descritas, você pode controlar facilmente a incorporação ou não incorporação de fontes básicas, o que pode ajudar a reduzir o tamanho do arquivo PDF e garantir melhor compatibilidade e uma aparência consistente do documento em diferentes dispositivos e plataformas. Não se esqueça de considerar as consequências de não incorporar fontes básicas e de experimentar para garantir que o documento seja renderizado conforme o esperado.
 
 ### perguntas frequentes
 

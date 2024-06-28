@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 #### प्रश्न: मैं .NET के लिए Aspose.Words में फ़ील्ड अपडेट करने के लिए एक विशिष्ट संस्कृति कैसे निर्दिष्ट कर सकता हूं?
 
-उ: .NET के लिए Aspose.Words में फ़ील्ड अपडेट करने के लिए एक विशिष्ट संस्कृति निर्दिष्ट करने के लिए, आप इसका उपयोग कर सकते हैं`Document.FieldOptions.FieldUpdateCultureInfo` संपत्ति और सेट करें`CultureInfo` वांछित संस्कृति के अनुरूप वस्तु। उदाहरण के लिए, आप उपयोग कर सकते हैं`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` फ़्रेंच (फ्रांस) संस्कृति को निर्दिष्ट करने के लिए।
+ उ: .NET के लिए Aspose.Words में फ़ील्ड अपडेट करने के लिए एक विशिष्ट संस्कृति निर्दिष्ट करने के लिए, आप इसका उपयोग कर सकते हैं`Document.FieldOptions.FieldUpdateCultureInfo` संपत्ति और सेट करें`CultureInfo` वांछित संस्कृति के अनुरूप वस्तु। उदाहरण के लिए, आप उपयोग कर सकते हैं`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` फ़्रेंच (फ्रांस) संस्कृति को निर्दिष्ट करने के लिए।
 
 #### प्रश्न: क्या .NET के लिए Aspose.Words में स्वचालित फ़ील्ड अपडेट को अक्षम करना संभव है?
 

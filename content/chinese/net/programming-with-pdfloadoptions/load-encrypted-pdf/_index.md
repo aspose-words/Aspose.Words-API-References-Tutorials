@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 
-在 .NET 应用程序中对 PDF 文档进行文字处理时，可能需要加载受密码保护的 PDF 文件。 Aspose.Words for .NET 是一个功能强大的库，提供加载加密 PDF 文档的功能。在本文中，我们将逐步指导您了解和使用此功能。
+在 .NET 应用程序中对 PDF 文档进行文字处理时，可能需要加载受密码保护的 PDF 文件。 Aspose.Words for .NET 是一个功能强大的库，提供加载加密 PDF 文档的功能。在本文中，我们将逐步引导您了解和使用此功能。
 
 ## 了解加载加密 PDF 功能
 

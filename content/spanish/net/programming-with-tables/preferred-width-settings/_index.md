@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Aquí utilizamos el generador de documentos para crear una tabla con tres celdas. La primera celda tiene un ancho preferido de 40 puntos, la segunda celda tiene un ancho preferido del 20% del ancho de la tabla y la tercera celda tiene un ancho preferido automático que se ajusta
+Aquí utilizamos el generador de documentos para crear una tabla con tres celdas. La primera celda tiene un ancho preferido de 40 puntos, la segunda celda tiene un ancho preferido del 20% del ancho de la tabla y la tercera celda tiene un ancho preferido automático que se ajusta.
 
   dependiendo del espacio disponible.
 

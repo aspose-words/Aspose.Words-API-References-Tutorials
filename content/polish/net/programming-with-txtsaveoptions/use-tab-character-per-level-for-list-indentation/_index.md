@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Na tym etapie tworzymy nowy`Document` obiekt i powiązany`DocumentBuilder` obiekt. Obiekty te pozwolą nam manipulować i generować nasz dokument.
+Na tym etapie tworzymy nowy`Document` obiekt i powiązany`DocumentBuilder` obiekt. Obiekty te pozwolą nam manipulować i generować nasz dokument.
 
 ## Krok 3: Tworzenie listy z trzema poziomami wcięć
 
@@ -110,7 +110,7 @@ Skonfiguruj środowisko programistyczne, dodając niezbędne odniesienia i impor
  Tak, możesz dostosować liczbę znaków tabulacji na poziom wcięcia listy, zmieniając wartość parametru`ListIndentation.Count` nieruchomość w`TxtSaveOptions` klasa. Możesz określić liczbę znaków tabulacji dla każdego poziomu wcięcia.
 
 #### P: Jakich innych znaków mogę użyć do wcięcia listy w Aspose.Words dla .NET?
- Oprócz znaków tabulacji możesz także używać innych znaków do wcięcia listy w Aspose.Words dla .NET. Możesz ustawić`ListIndentation.Character` na dowolny żądany znak, taki jak spacja (`' '`), dla list wcięć.
+ Oprócz znaków tabulacji możesz także używać innych znaków do wcięcia listy w Aspose.Words dla .NET. Możesz ustawić`ListIndentation.Character` na dowolny żądany znak, taki jak spacja (`' '`), do list identyfikacyjnych.
 
 #### P: Czy Aspose.Words dla .NET oferuje inne funkcje do zarządzania listami?
 Tak, Aspose.Words dla .NET oferuje wiele funkcji do zarządzania listami w dokumentach Word. Możesz tworzyć listy numerowane lub punktowane, ustawiać poziomy wcięć, dostosowywać styl list, dodawać elementy list i nie tylko.

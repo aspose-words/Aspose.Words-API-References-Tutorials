@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bullet points with alternative font.docx"
 
 ## बैकअप विकल्प कॉन्फ़िगर करना
 
-अगला कदम निश्चित HTML में कनवर्ट करने के लिए सेव विकल्पों को कॉन्फ़िगर करना है। लक्ष्य मशीन से फ़ॉन्ट का उपयोग करने के लिए Aspose.Words को बताने के लिए HtmlFixedSaveOptions क्लास का उपयोग करें और UseTargetMachineFonts प्रॉपर्टी को सही पर सेट करें। इसे करने का तरीका यहां बताया गया है:
+अगला कदम निश्चित HTML में कनवर्ट करने के लिए सेव विकल्पों को कॉन्फ़िगर करना है। लक्ष्य मशीन से फ़ॉन्ट का उपयोग करने के लिए Aspose.Words को बताने के लिए HtmlFixedSaveOptions क्लास का उपयोग करें और UseTargetMachineFonts प्रॉपर्टी को सही पर सेट करें। यह कैसे करना है यहां बताया गया है:
 
 ```csharp
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };

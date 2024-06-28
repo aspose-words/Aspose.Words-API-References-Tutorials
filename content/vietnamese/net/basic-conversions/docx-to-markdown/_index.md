@@ -71,7 +71,7 @@ Việc định dạng có được giữ nguyên trong quá trình chuyển đ�
 
 #### Những hạn chế của quá trình chuyển đổi là gì?
 
-Những hạn chế của quá trình chuyển đổi tùy thuộc vào công cụ hoặc thư viện cụ thể mà bạn đang sử dụng. Một số công cụ có thể có những hạn chế liên quan đến định dạng, bảng hoặc hình ảnh phức tạp được nhúng trong tệp DOCX. Điều quan trọng là phải hiểu đầy đủ các tính năng và hạn chế của công cụ đã chọn để đưa ra quyết định sáng suốt khi chuyển đổi.
+Những hạn chế của quá trình chuyển đổi tùy thuộc vào công cụ hoặc thư viện cụ thể mà bạn đang sử dụng. Một số công cụ có thể có các hạn chế liên quan đến định dạng, bảng hoặc hình ảnh phức tạp được nhúng trong tệp DOCX. Điều quan trọng là phải hiểu đầy đủ các tính năng và hạn chế của công cụ đã chọn để đưa ra quyết định sáng suốt khi chuyển đổi.
 
 #### Aspose có phải là công cụ đáng tin cậy để chuyển đổi DOCX sang Markdown không?
 

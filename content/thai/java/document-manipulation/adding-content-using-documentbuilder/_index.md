@@ -150,7 +150,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
 // เพิ่มเนื้อหาเอกสาร
-// ...
+// -
 
 // อัพเดตสารบัญ
 doc.updateFields();
@@ -167,7 +167,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกรูปภาพในบรรทัด
+// แทรกรูปภาพออนไลน์
 builder.insertImage("path/to/your/image.png");
 
 // บันทึกเอกสาร
@@ -253,7 +253,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
 // เพิ่มเนื้อหาเอกสาร
-// ...
+// -
 
 // อัพเดตสารบัญ
 doc.updateFields();
@@ -261,7 +261,7 @@ doc.updateFields();
 
 ### ถาม: ฉันจะแทรกรูปภาพลงในเอกสารโดยใช้ Aspose.Words สำหรับ Java ได้อย่างไร
 
- ตอบ: คุณสามารถแทรกรูปภาพทั้งแบบอินไลน์และแบบลอยได้โดยใช้`DocumentBuilder`. นี่คือตัวอย่างของทั้งสอง:
+ ตอบ: คุณสามารถแทรกรูปภาพทั้งแบบอินไลน์และแบบลอยได้โดยใช้`DocumentBuilder`- นี่คือตัวอย่างของทั้งสอง:
 
 #### รูปภาพอินไลน์:
 
@@ -269,7 +269,7 @@ doc.updateFields();
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกรูปภาพในบรรทัด
+// แทรกรูปภาพออนไลน์
 builder.insertImage("path/to/your/image.png");
 ```
 
@@ -285,7 +285,7 @@ builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN,
 
 ### ถาม: ฉันสามารถจัดรูปแบบข้อความและย่อหน้าเมื่อเพิ่มเนื้อหาได้หรือไม่
 
- ตอบ: ได้ คุณสามารถจัดรูปแบบข้อความและย่อหน้าได้โดยใช้`DocumentBuilder`. คุณสามารถตั้งค่าคุณสมบัติแบบอักษร การจัดแนวย่อหน้า การเยื้อง และอื่นๆ ได้ นี่คือตัวอย่าง:
+ ตอบ: ได้ คุณสามารถจัดรูปแบบข้อความและย่อหน้าได้โดยใช้`DocumentBuilder`- คุณสามารถตั้งค่าคุณสมบัติแบบอักษร การจัดแนวย่อหน้า การเยื้อง และอื่นๆ ได้ นี่คือตัวอย่าง:
 
 ```java
 Document doc = new Document();

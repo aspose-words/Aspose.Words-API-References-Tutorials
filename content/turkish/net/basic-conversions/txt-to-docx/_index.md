@@ -58,7 +58,7 @@ Dönüştürme sırasında biçimlendirmenin korunup korunmayacağı, kullandı�
 
 #### Dönüştürme sürecinin sınırlamaları nelerdir?
 
-Dönüştürme işleminin sınırlamaları, kullandığınız belirli araca veya kitaplığa bağlıdır. Bazı araçlarda karmaşık biçimlendirme, tablolar veya metin dosyasına gömülü resimlerle ilgili kısıtlamalar bulunabilir. Dönüştürme sırasında bilinçli kararlar verebilmek için seçilen aracın özelliklerini ve sınırlamalarını tam olarak anlamak önemlidir.
+Dönüştürme işleminin sınırlamaları, kullandığınız belirli araca veya kitaplığa bağlıdır. Bazı araçların karmaşık biçimlendirme, tablolar veya metin dosyasına gömülü resimlerle ilgili kısıtlamaları olabilir. Dönüştürme sırasında bilinçli kararlar verebilmek için seçilen aracın özelliklerini ve sınırlamalarını tam olarak anlamak önemlidir.
 
 #### Aspose, metin dosyasını Word belgesine dönüştürmek için güvenilir bir araç mıdır?
 

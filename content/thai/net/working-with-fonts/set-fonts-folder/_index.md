@@ -15,7 +15,7 @@ url: /th/net/working-with-fonts/set-fonts-folder/
 - ไลบรารี Aspose.Words สำหรับ .NET ที่ติดตั้งในโครงการของคุณ
 
 ## ขั้นตอนที่ 1: กำหนดไดเร็กทอรีเอกสาร
- เริ่มต้นด้วยการตั้งค่าเส้นทางไดเรกทอรีไปยังตำแหน่งของเอกสาร Word ของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ในโค้ดด้วยเส้นทางที่เหมาะสม
+เริ่มต้นด้วยการตั้งค่าเส้นทางไดเรกทอรีไปยังตำแหน่งของเอกสาร Word ของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ในโค้ดด้วยเส้นทางที่เหมาะสม
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

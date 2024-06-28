@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines umfassenden Inhaltsverzeichnisses für Word-Dokumente
 linktitle: Erstellen eines umfassenden Inhaltsverzeichnisses für Word-Dokumente
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erstellen Sie mit Aspose.Words für Python ein leserfreundliches Inhaltsverzeichnis. Erfahren Sie, wie Sie die Struktur Ihres Dokuments nahtlos erstellen, anpassen und aktualisieren.
 type: docs
 weight: 15
@@ -112,7 +112,7 @@ def generate_table_of_contents(document_path):
 
 ## Umgang mit Seitenzahlen
 
-Sie können dem Inhaltsverzeichnis Seitenzahlen hinzufügen, um den Lesern mehr Kontext darüber zu bieten, wo bestimmte Abschnitte zu finden sind.
+Sie können dem Inhaltsverzeichnis Seitenzahlen hinzufügen, um den Lesern mehr Kontext darüber zu bieten, wo sie bestimmte Abschnitte finden.
 
 ```python
 # Add page numbers to table of contents

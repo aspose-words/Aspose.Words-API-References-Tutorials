@@ -2,216 +2,103 @@
 title: إزالة جدول المحتويات في مستند Word
 linktitle: إزالة جدول المحتويات في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إزالة جدول المحتويات في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إزالة جدول المحتويات (TOC) في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا البرنامج التعليمي سهل المتابعة.
 type: docs
 weight: 10
 url: /ar/net/remove-content/remove-table-of-contents/
 ---
-في هذا البرنامج التعليمي، سنرشدك إلى كيفية إزالة جدول المحتويات في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن يكون جدول المحتويات زائدًا أو غير ضروري في بعض الأحيان، وسيساعدك هذا الرمز على إزالته بشكل فعال. سنقدم لك دليلاً خطوة بخطوة لمساعدتك على فهم التعليمات البرمجية وتنفيذها في مشروع .NET الخاص بك.
+## قم بإزالة جدول المحتويات في مستند Word باستخدام Aspose.Words لـ .NET
+
+هل سئمت من التعامل مع جدول المحتويات (TOC) غير المرغوب فيه في مستندات Word الخاصة بك؟ لقد مررنا جميعًا بذلك - في بعض الأحيان لا يكون جدول المحتويات ضروريًا. من حسن حظك أن Aspose.Words for .NET يجعل من السهل إزالة جدول المحتويات برمجيًا. في هذا البرنامج التعليمي، سأرشدك خلال العملية خطوة بخطوة، حتى تتمكن من إتقانها في لمح البصر. دعونا نتعمق في الأمر!
 
 ## المتطلبات الأساسية
-قبل البدء، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C#
-- تم تثبيت مكتبة Aspose.Words الخاصة بـ .NET في مشروعك
-- مستند Word يحتوي على جدول محتويات تريد حذفه
 
-## الخطوة 1: تحديد دليل المستند
- أولاً، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب
+قبل أن نبدأ، دعونا نتأكد من أن لديك كل ما تحتاجه:
+
+1.  Aspose.Words for .NET Library: إذا لم تكن قد قمت بذلك بالفعل، فقم بتنزيل وتثبيت مكتبة Aspose.Words for .NET من[Aspose.Releases](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: إن بيئة التطوير المتكاملة (IDE) مثل Visual Studio ستجعل عملية البرمجة أسهل.
+3. .NET Framework: تأكد من تثبيت .NET Framework.
+4. مستند Word: احصل على مستند Word (.docx) مع جدول المحتويات الذي تريد إزالته.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، فلنستورد مساحات الأسماء الضرورية. يؤدي هذا إلى إعداد البيئة اللازمة لاستخدام Aspose.Words.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## الخطوة 2: تحميل الوثيقة
- بعد ذلك، سنقوم بتحميل مستند Word إلى مثيل الملف`Document` الطبقة باستخدام`Load` طريقة.
+الآن، دعنا نقسم عملية إزالة جدول المحتويات من مستند Word إلى خطوات واضحة يمكن التحكم فيها.
+
+## الخطوة 1: قم بإعداد دليل المستندات الخاص بك
+
+قبل أن نتمكن من التعامل مع المستند الخاص بك، نحتاج إلى تحديد مكان وجوده. هذا هو مسار دليل المستند الخاص بك.
 
 ```csharp
-// قم بتحميل المستند
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار إلى مجلد المستندات الخاص بك. هذا هو المكان الذي يوجد فيه ملف Word الخاص بك.
+
+## الخطوة 2: قم بتحميل المستند
+
+بعد ذلك، نحتاج إلى تحميل مستند Word في تطبيقنا. Aspose.Words يجعل هذا الأمر بسيطًا للغاية.
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## الخطوة 3: حذف جدول المحتويات
- لإزالة جدول المحتويات، سنقوم بالتكرار عبر نوع جدول المحتويات (TOC).`FieldStart` العقد في الوثيقة. سنقوم بتخزين هذه العقد حتى نتمكن من الوصول إليها بسرعة وإنشاء قائمة بالعقد المراد حذفها.
+ يستبدل`"your-document.docx"` مع اسم الملف الخاص بك. يقوم سطر التعليمات البرمجية هذا بتحميل المستند الخاص بك حتى نتمكن من بدء العمل عليه.
+
+## الخطوة 3: تحديد حقل TOC وإزالته
+
+هذا هو المكان الذي يحدث السحر. سنقوم بتحديد موقع حقل TOC وإزالته.
 
 ```csharp
-// قم بتخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول إليها بسرعة.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. سيتم حذفها في نهاية هذه الطريقة.
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+إليك ما يحدث:
+- `doc.Range.Fields`: يؤدي هذا إلى الوصول إلى كافة الحقول الموجودة في المستند.
+- `.Where(f => f.Type == FieldType.FieldTOC)`: يؤدي ذلك إلى تصفية الحقول للعثور على تلك التي تمثل جداول المحتويات فقط.
+- `.ToList().ForEach(f => f.Remove())`: يؤدي هذا إلى تحويل الحقول التي تمت تصفيتها إلى قائمة وإزالة كل منها.
 
-// تحقق من وجود فهرس جدول المحتويات المحدد.
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## الخطوة 4: احفظ المستند المعدل
 
-bool isRemoving = true;
+وأخيرا، نحن بحاجة إلى حفظ التغييرات التي أجريناها. يمكنك حفظ المستند باسم جديد للحفاظ على الملف الأصلي.
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // من الآمن تخزين هذه العقد وحذفها جميعًا في النهاية.
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // عندما نواجه عقدة FieldEnd من النوع FieldTOC،
-     //نحن نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### نموذج التعليمات البرمجية المصدر لإزالة جدول المحتويات باستخدام Aspose.Words لـ .NET 
-```csharp
-
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// قم بتحميل المستند
-Document doc = new Document(dataDir + "your-document.docx");
-
-// قم بتخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول إليها بسرعة.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. سيتم إزالتها في نهاية هذه الطريقة.
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// تأكد من وجود جدول المحتويات المحدد بواسطة الفهرس الذي تم تمريره.
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// من الآمن تخزين هذه العقد وحذفها جميعًا مرة واحدة لاحقًا.
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// بمجرد أن نواجه عقدة FieldEnd من النوع FieldTOC،
-	// نحن نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ يحفظ هذا السطر المستند الخاص بك مع التغييرات التي تم إجراؤها. يستبدل`"modified-document.docx"` مع اسم الملف المطلوب.
 
 ## خاتمة
-في هذا البرنامج التعليمي، قدمنا دليلًا خطوة بخطوة لإزالة جدول المحتويات من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. باتباع التعليمات البرمجية والتعليمات المقدمة، يمكنك بسهولة حذف جدول المحتويات وتحسين تخطيط المستند. تذكر أن تقوم بتكييف مسار الدليل وأسماء الملفات لتناسب احتياجاتك الخاصة.
 
-### الأسئلة الشائعة
+وهناك لديك! تعد إزالة جدول المحتويات من مستند Word باستخدام Aspose.Words for .NET أمرًا سهلاً بمجرد تقسيمه إلى هذه الخطوات البسيطة. لا تساعد هذه المكتبة القوية في إزالة جداول المحتويات فحسب، بل يمكنها أيضًا التعامل مع عدد لا يحصى من عمليات معالجة المستندات الأخرى. إذا انطلق وقم بالمحاولة!
 
-#### س: لماذا يجب علي استخدام Aspose.Words لإزالة جدول المحتويات في مستند Word؟
+## الأسئلة الشائعة
 
-ج: Aspose.Words هي مكتبة فئة قوية ومتعددة الاستخدامات لمعالجة مستندات Word في تطبيقات .NET. باستخدام Aspose.Words، يمكنك إزالة جدول المحتويات من مستنداتك بشكل فعال، وهو ما قد يكون مفيدًا إذا كان جدول المحتويات زائدًا عن الحاجة أو غير ضروري. يتيح لك ذلك تخصيص محتوى المستند الخاص بك وتحسين العرض العام له.
+### 1. ما هو Aspose.Words لـ .NET؟
 
-#### س: كيف يمكنني تحميل مستند في Aspose.Words لـ .NET؟
+Aspose.Words for .NET هي مكتبة .NET قوية لمعالجة المستندات، مما يسمح للمطورين بإنشاء مستندات Word وتعديلها وتحويلها برمجيًا.
 
-ج: لإزالة جدول المحتويات في مستند Word، يجب عليك أولاً تحميل المستند إلى الذاكرة باستخدام أسلوب Load() الخاص بـ Aspose.Words. إليك نموذج التعليمات البرمجية لتحميل مستند من دليل محدد:
+### 2. هل يمكنني استخدام Aspose.Words مجانًا؟
 
-```csharp
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ نعم، يمكنك استخدام Aspose.Words مع[تجربة مجانية](https://releases.aspose.com/) أو الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/).
 
-// قم بتحميل المستند
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. هل من الممكن إزالة الحقول الأخرى باستخدام Aspose.Words؟
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي إلى المستند الخاص بك.
+قطعاً! يمكنك إزالة أي حقل عن طريق تحديد نوعه في حالة التصفية.
 
-#### س: كيف يمكنني إزالة جدول المحتويات في مستند باستخدام Aspose.Words؟
+### 4. هل أحتاج إلى Visual Studio لاستخدام Aspose.Words؟
 
- ج: لإزالة جدول المحتويات، تحتاج إلى التكرار من خلال ملف`FieldStart` اكتب عقد جدول المحتويات في المستند. يمكنك تخزين هذه العقد للوصول السريع إليها وإنشاء قائمة بالعقد المراد حذفها. هنا نموذج التعليمات البرمجية:
+بينما يوصى بشدة باستخدام Visual Studio لسهولة التطوير، يمكنك استخدام أي بيئة تطوير متكاملة (IDE) تدعم .NET.
 
-```csharp
-// قم بتخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول إليها بسرعة.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. سيتم حذفها في نهاية هذه الطريقة.
-List<Node> nodeList = new List<Node>();
+### 5. أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words؟
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// تحقق من وجود فهرس جدول المحتويات المحدد.
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// من الآمن تخزين هذه العقد وحذفها جميعًا في النهاية.
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// عندما نواجه عقدة FieldEnd من النوع FieldTOC،
-//نحن نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### س: كيف يتم حفظ المستند الذي تم تحريره في Aspose.Words لـ .NET؟
-
-ج: بعد حذف جدول المحتويات، يجب عليك حفظ المستند المعدل باستخدام طريقة Save(). حدد مسار وتنسيق ملف الإخراج المطلوب (على سبيل المثال، DOCX) للمستند الذي تم تحريره. هنا نموذج التعليمات البرمجية:
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ لمزيد من الوثائق التفصيلية، قم بزيارة[Aspose.Words لوثائق .NET API](https://reference.aspose.com/words/net/).

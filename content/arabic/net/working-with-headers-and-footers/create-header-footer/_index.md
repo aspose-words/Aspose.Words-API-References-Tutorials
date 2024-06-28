@@ -2,157 +2,68 @@
 title: إنشاء تذييل الرأس
 linktitle: إنشاء تذييل الرأس
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إنشاء الرؤوس والتذييلات في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. تخصيص الرؤوس والتذييلات لكل صفحة.
+description: تعرف على كيفية إضافة الرؤوس والتذييلات وتخصيصها في مستندات Word باستخدام Aspose.Words for .NET. يضمن هذا الدليل خطوة بخطوة تنسيقًا احترافيًا للمستندات.
 type: docs
 weight: 10
 url: /ar/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-فيما يلي دليل خطوة بخطوة لشرح التعليمات البرمجية المصدر لـ C# التالية لإنشاء الرؤوس والتذييلات باستخدام Aspose.Words لوظيفة .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+يمكن أن تؤدي إضافة الرؤوس والتذييلات إلى مستنداتك إلى تحسين احترافيتها وسهولة قراءتها. باستخدام Aspose.Words for .NET، يمكنك بسهولة إنشاء وتخصيص الرؤوس والتذييلات لمستندات Word الخاصة بك. في هذا البرنامج التعليمي، سنرشدك خلال العملية خطوة بخطوة، مما يضمن أنه يمكنك تنفيذ هذه الميزات بسلاسة.
 
-## الخطوة 1: قم بتعيين مسار دليل المستند
+## المتطلبات الأساسية
+
+قبل أن تبدأ، تأكد من أن لديك ما يلي:
+
+-  Aspose.Words لـ .NET: قم بالتنزيل والتثبيت من[رابط التحميل](https://releases.aspose.com/words/net/).
+- بيئة التطوير: مثل Visual Studio، لكتابة وتشغيل التعليمات البرمجية الخاصة بك.
+- المعرفة الأساسية بـ C#: فهم C# و.NET Framework.
+- نموذج مستند: نموذج مستند لتطبيق الرؤوس والتذييلات، أو إنشاء مستند جديد كما هو موضح في البرنامج التعليمي.
+
+## استيراد مساحات الأسماء
+
+أولاً، تحتاج إلى استيراد مساحات الأسماء الضرورية للوصول إلى فئات وأساليب Aspose.Words.
 
 ```csharp
-// المسار إلى دليل المستندات.
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System;
+```
+
+## الخطوة 1: تحديد دليل المستندات
+
+حدد الدليل الذي سيتم حفظ المستند فيه. وهذا يساعد في إدارة المسار بفعالية.
+
+```csharp
+// المسار إلى دليل المستندات
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+## الخطوة 2: إنشاء مستند جديد
 
-## الخطوة 2: إنشاء مستند ومولد المستندات
+ إنشاء مستند جديد و`DocumentBuilder` لتسهيل إضافة المحتوى.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثال على`DocumentBuilder` فئة والتي سوف تسمح لنا بمعالجة الوثيقة وإضافة عناصر.
+## الخطوة 3: تكوين إعداد الصفحة
 
-## الخطوة 3: تعيين معلمات الصفحة والرأس الأول
+قم بإعداد إعدادات الصفحة، بما في ذلك ما إذا كانت الصفحة الأولى ستحتوي على رأس/تذييل مختلف.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// حدد ما إذا كنا نريد أن تكون رؤوس/تذييلات الصفحة الأولى مختلفة عن الصفحات الأخرى.
-// يمكنك أيضًا استخدام الخاصية PageSetup.OddAndEvenPagesHeaderFooter للتحديد
-// رؤوس/تذييلات مختلفة للصفحات الفردية والزوجية.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
-
-builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-
-builder.Font.Name = "Arial";
-builder.Font.Bold = true;
-builder.Font.Size = 14;
-
-builder.Write("Aspose.Words - Creating Headers/Footers - Title Page.");
-
-pageSetup.HeaderDistance = 20;
-builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-نقوم بتعيين معلمات الصفحة، بما في ذلك مسافة الرأس، ثم ننتقل إلى الرأس الرئيسي (`HeaderPrimary`). نستخدم منشئ المستندات لإضافة نص وتنسيق الرأس.
+## الخطوة 4: إضافة رأس إلى الصفحة الأولى
 
-## الخطوة 4: أدخل صورة ونصًا في الرأس الرئيسي
-
-```csharp
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-     RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
-
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.Write("Aspose.Words - Building headers/footers.");
-
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
-```
-
-نستخدم منشئ المستندات لإدراج صورة في الزاوية اليسرى العليا من الرأس الرئيسي، ثم نضيف بعض النص بمحاذاة إلى اليمين.
-
-## الخطوة 5: قم بإدراج جدول في التذييل الرئيسي
+انتقل إلى قسم الرأس للصفحة الأولى وقم بتكوين نص الرأس.
 
 ```csharp
-builder.StartTable();
-
-builder.CellFormat.ClearFormatting();
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-
-builder.Write("Page ");
-builder.InsertField("PAGE", "");
-builder.Write(" of ");
-builder.InsertField("NUMPAGES", "");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.EndRow();
-builder.EndTable();
-
-builder.MoveToDocumentEnd();
-```
-
-## الخطوة 6: أضف صفحة جديدة وقم بتعيين الرؤوس/التذييلات
-
-```csharp
-builder. InsertBreak(BreakType.PageBreak);
-builder.InsertBreak(BreakType.SectionBreakNewPage);
-
-currentSection = builder. CurrentSection;
-pageSetup = currentSection.PageSetup;
-pageSetup.Orientation = Orientation.Landscape;
-// لا يحتاج هذا القسم إلى رأس/تذييل مختلف للصفحة الأولى، نحتاج فقط إلى صفحة عنوان واحدة في المستند،
-//وقد تم بالفعل تحديد رأس/تذييل هذه الصفحة في القسم السابق.
-pageSetup.DifferentFirstPageHeaderFooter = false;
-
-// يعرض هذا القسم رؤوس/تذييلات القسم السابق بشكل افتراضي، اتصل بـcurrentSection.HeadersFooters.LinkToPrevious(false) لقطع هذا الارتباط،
-// يختلف عرض الصفحة بالنسبة للقسم الجديد، لذلك نحتاج إلى تعيين عروض خلايا مختلفة لجدول التذييل.
-currentSection.HeadersFooters.LinkToPrevious(false);
-
-// إذا أردنا استخدام الرؤوس/التذييلات الموجودة بالفعل لهذا القسم،
-//ولكن مع بعض التغييرات الطفيفة، قد يكون من المنطقي نسخ الرؤوس/التذييلات
-// من القسم السابق وقم بتطبيق التغييرات اللازمة حيث نريدها.
-CopyHeadersFootersFromPreviousSection(currentSection);
-
-HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
-Row row = primaryFooter.Tables[0].FirstRow;
-row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-// احفظ المستند
-doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
-```
-
- نضيف فاصل صفحة وفاصل مقطعي لإنشاء صفحة جديدة حيث ستكون الرؤوس/التذييلات الأساسية مرئية. نقوم بتعيين المعلمات للقسم الجديد، ثم نستخدم`CopyHeadersFootersFromPreviousSection` طريقة لنسخ الرؤوس والتذييلات من القسم السابق. أخيرًا، قمنا بتعيين عرض الخلايا المناسب لجدول التذييل الرئيسي وحفظ المستند.
-
-### مثال على التعليمات البرمجية المصدر لإنشاء الرؤوس والتذييلات باستخدام Aspose.Words لـ .NET
-
-```csharp
-// المسار إلى دليل المستندات.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-Section currentSection = builder.CurrentSection;
-PageSetup pageSetup = currentSection.PageSetup;
-// حدد ما إذا كنا نريد أن تكون رؤوس/تذييلات الصفحة الأولى مختلفة عن الصفحات الأخرى.
-// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter للتحديد
-// رؤوس/تذييلات مختلفة للصفحات الفردية والزوجية.
-pageSetup.DifferentFirstPageHeaderFooter = true;
-pageSetup.HeaderDistance = 20;
-
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
@@ -161,75 +72,70 @@ builder.Font.Bold = true;
 builder.Font.Size = 14;
 
 builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+```
 
-pageSetup.HeaderDistance = 20;
+## الخطوة 5: إضافة رأس أساسي
+
+انتقل إلى قسم الرأس الأساسي وأدخل صورة ونصًا.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-// قم بإدراج صورة موضوعة في الزاوية العلوية/اليسرى من الرأس.
-// يتم ضبط المسافة من الحواف العلوية/اليسرى للصفحة على 10 نقاط.
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+// أدخل صورة في الرأس
+builder.InsertImage(dataDir + "Graphics Interchange Format.gif", 
+    RelativeHorizontalPosition.Page, 10, RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
 builder.Write("Aspose.Words Header/Footer Creation Primer.");
+```
 
+## الخطوة 6: إضافة تذييل أساسي
+
+انتقل إلى قسم التذييل الأساسي وقم بإنشاء جدول لتنسيق محتوى التذييل.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// نستخدم جدولاً يحتوي على خليتين لإنشاء جزء واحد من النص على السطر (مع ترقيم الصفحات).
-// تتم محاذاته إلى اليسار، ومحاذاة الجزء الآخر من النص (مع حقوق الطبع والنشر) إلى اليمين.
 builder.StartTable();
-
 builder.CellFormat.ClearFormatting();
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-// ويستخدم حقول PAGE وNUMPAGES لحساب رقم الصفحة الحالية والعديد من الصفحات تلقائيًا.
+// إضافة ترقيم الصفحات
 builder.Write("Page ");
 builder.InsertField("PAGE", "");
 builder.Write(" of ");
 builder.InsertField("NUMPAGES", "");
 
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
 builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
 builder.EndRow();
 builder.EndTable();
+```
 
+## الخطوة 7: إضافة المحتوى وفواصل الصفحات
+
+انتقل إلى نهاية المستند، وأضف فاصل صفحات، وأنشئ قسمًا جديدًا بإعدادات صفحة مختلفة.
+
+```csharp
 builder.MoveToDocumentEnd();
-
-// قم بعمل فاصل صفحات لإنشاء صفحة ثانية تظهر عليها الرؤوس والتذييلات الأساسية.
 builder.InsertBreak(BreakType.PageBreak);
 builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-// لا يحتاج هذا القسم إلى رأس/تذييل مختلف للصفحة الأولى، فنحن نحتاج فقط إلى صفحة عنوان واحدة في المستند،
-//وقد تم بالفعل تحديد رأس/تذييل هذه الصفحة في القسم السابق.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// يعرض هذا القسم الرؤوس/التذييلات من القسم السابق
-// بشكل افتراضي، قم باستدعاء currentSection.HeadersFooters.LinkToPrevious(false) لإلغاء عرض الصفحة هذا
-// يختلف بالنسبة للقسم الجديد، وبالتالي نحتاج إلى تعيين عروض مختلفة للخلايا لجدول التذييل.
 currentSection.HeadersFooters.LinkToPrevious(false);
-
-// إذا أردنا استخدام مجموعة الرأس/التذييل الموجودة بالفعل لهذا القسم.
-// ولكن مع بعض التعديلات الطفيفة، قد يكون من المناسب نسخ الرؤوس/التذييلات
-// من القسم السابق وتطبيق التعديلات اللازمة حيث نريدها.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
 Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
@@ -237,24 +143,47 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
-### الأسئلة الشائعة
+## الخطوة 8: انسخ الرؤوس والتذييلات من القسم السابق
 
-#### س: كيف يمكنني إضافة رأس إلى مستندي في Aspose.Words؟
+إذا كنت تريد إعادة استخدام الرؤوس والتذييلات من قسم سابق، فانسخها وقم بتطبيق التعديلات اللازمة.
 
- ج: لإضافة رأس إلى مستندك في Aspose.Words، يمكنك استخدام الملف`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` طريقة. تضيف هذه الطريقة عنوانًا أساسيًا إلى القسم الأول من المستند.
+```csharp
+private static void CopyHeadersFootersFromPreviousSection(Section section)
+{
+    Section previousSection = (Section)section.PreviousSibling;
+    if (previousSection == null) return;
 
-#### س: كيف يمكنني إضافة تذييل إلى مستندي في Aspose.Words؟
+    section.HeadersFooters.Clear();
 
- ج: لإضافة تذييل إلى مستندك في Aspose.Words، يمكنك استخدام الملف`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`طريقة. تضيف هذه الطريقة تذييلًا أساسيًا إلى القسم الأول من المستند.
+    foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
+    {
+        section.HeadersFooters.Add(headerFooter.Clone(true));
+    }
+}
+```
 
-#### س: كيف يمكنني إضافة نص إلى رأس الصفحة أو تذييل الصفحة في Aspose.Words؟
+## خاتمة
 
- ج: لإضافة نص إلى رأس الصفحة أو تذييلها في Aspose.Words، يمكنك استخدام`HeaderFooter.Paragraphs` للحصول على مجموعة الفقرات من الرأس أو التذييل، ثم قم بإضافة فقرة تحتوي على النص الخاص بك إلى هذه المجموعة باستخدام الخاصية`ParagraphCollection.Add` طريقة.
+باتباع هذه الخطوات، يمكنك إضافة الرؤوس والتذييلات وتخصيصها بشكل فعال في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. يؤدي ذلك إلى تحسين مظهر مستندك واحترافيته، مما يجعله أكثر قابلية للقراءة وجاذبية.
 
-#### س: هل يمكنني تخصيص محتوى الرأس أو التذييل باستخدام الصور وأرقام الصفحات في Aspose.Words؟
+## الأسئلة الشائعة
 
- ج: نعم، يمكنك تخصيص محتوى الرأس أو التذييل باستخدام الصور وأرقام الصفحات في Aspose.Words. يمكنك استخدام كائنات مثل`Shape` لإضافة الصور والكائنات مثل`Field` لإضافة أرقام الصفحات إلى رأس الصفحة أو تذييلها.
+### س1: ما هو Aspose.Words لـ .NET؟
 
-#### س: هل يمكنني تغيير خط النص وحجمه ولونه في رأس الصفحة أو تذييلها في Aspose.Words؟
+Aspose.Words for .NET هي مكتبة تمكن المطورين من إنشاء مستندات Word وتحريرها وتحويلها برمجيًا ضمن تطبيقات .NET.
 
- ج: نعم، يمكنك تغيير خط النص وحجمه ولونه في رأس الصفحة أو تذييل الصفحة في Aspose.Words. يمكنك الوصول إلى خصائص تنسيق النص مثل`Font` لتغيير الخط،`Size` لضبط الحجم، و`Color`لتعيين لون النص.
+### س2: هل يمكنني إضافة صور إلى الرأس أو التذييل؟
+
+ نعم، يمكنك بسهولة إضافة صور إلى الرأس أو التذييل باستخدام`DocumentBuilder.InsertImage` طريقة.
+
+### Q3: كيف يمكنني تعيين رؤوس وتذييلات مختلفة للصفحة الأولى؟
+
+ يمكنك تعيين رؤوس وتذييلات مختلفة للصفحة الأولى باستخدام`DifferentFirstPageHeaderFooter` ملكية`PageSetup` فصل.
+
+### س4: أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words؟
+
+ يمكنك العثور على وثائق شاملة عن[صفحة وثائق Aspose.Words API](https://reference.aspose.com/words/net/).
+
+### س5: هل يتوفر دعم لـ Aspose.Words؟
+
+ نعم، Aspose يقدم الدعم من خلال[منتدى الدعم](https://forum.aspose.com/c/words/8).

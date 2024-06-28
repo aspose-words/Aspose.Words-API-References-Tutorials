@@ -104,7 +104,7 @@ builder.getFont().setBold(true);
 Aspose.Words for Java 提供强大的条件格式化功能。您可以创建根据文档中的特定条件应用样式或字体的规则。
 
 ### 我可以使用非拉丁字体和字符吗？
-绝对地！ Aspose.Words for Java 支持各种语言和脚本的各种字体和字符。
+绝对地！ Aspose.Words for Java 支持来自各种语言和脚本的多种字体和字符。
 
 ### 如何向具有特定样式的文本添加超链接？
 要向文本添加超链接，请使用`FieldHyperlink`类与样式相结合以实现所需的格式。

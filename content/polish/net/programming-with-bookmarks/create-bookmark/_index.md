@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Krok 3: Tworzenie zagnieżdżonych zakładek
 
-Możemy także tworzyć zagnieżdżone zakładki wewnątrz głównej zakładki. Używamy tego samego`StartBookmark` I`EndBookmark` metody tworzenia i kończenia zagnieżdżonych zakładek:
+ Możemy także tworzyć zagnieżdżone zakładki wewnątrz głównej zakładki. Używamy tego samego`StartBookmark` I`EndBookmark` metody tworzenia i kończenia zagnieżdżonych zakładek:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");

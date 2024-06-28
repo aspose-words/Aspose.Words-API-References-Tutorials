@@ -92,7 +92,7 @@ Puoi personalizzare l'aspetto dei campi modulo, ad esempio regolando la dimensio
    Puoi personalizzare l'aspetto del campo modulo regolando la dimensione del carattere, il colore e altre opzioni di formattazione.
 
 4. ### È disponibile una prova gratuita per Aspose.Words per Java?
-    Sì, puoi accedere a una prova gratuita di Aspose.Words per Java[Qui](https://releases.aspose.com/).
+    Sì, puoi accedere a una prova gratuita di Aspose.Words per Java.[Qui](https://releases.aspose.com/).
 
 5. ### Dove posso ottenere supporto per Aspose.Words per Java?
     Per supporto e assistenza, visitare il[Forum Aspose.Words](https://forum.aspose.com/).

@@ -27,7 +27,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Βήμα 3: Διαμόρφωση επιλογών δημιουργίας αντιγράφων ασφαλείας HTML
 
-Τώρα θα διαμορφώσουμε τις επιλογές αποθήκευσης HTML για την εξαγωγή των πληροφοριών μετ' επιστροφής του εγγράφου. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τώρα θα διαμορφώσουμε τις επιλογές αποθήκευσης HTML για την εξαγωγή των πληροφοριών μετ' επιστροφής του εγγράφου. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
@@ -37,7 +37,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation =
 
 ## Βήμα 4: Μετατροπή και αποθήκευση του εγγράφου σε HTML
 
-Τέλος, θα μετατρέψουμε το έγγραφο σε HTML χρησιμοποιώντας τις επιλογές αποθήκευσης HTML που διαμορφώθηκαν νωρίτερα. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τέλος, θα μετατρέψουμε το έγγραφο σε HTML χρησιμοποιώντας τις επιλογές αποθήκευσης HTML που διαμορφώθηκαν νωρίτερα. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);

@@ -2,82 +2,88 @@
 title: Chuyển đổi các trường trong nội dung
 linktitle: Chuyển đổi các trường trong nội dung
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách sử dụng Aspose.Words cho .NET để chuyển đổi các trường Trang thành văn bản trong nội dung của tài liệu Word.
+description: Tìm hiểu cách chuyển đổi các trường tài liệu thành văn bản tĩnh bằng Aspose.Words cho .NET để nâng cao hiệu quả xử lý tài liệu.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/convert-fields-in-body/
 ---
 
-Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn cách sử dụng tính năng ConvertFieldsInBody của Aspose.Words cho .NET bằng mã nguồn C# được cung cấp. Tính năng này cho phép bạn chuyển đổi các trường cụ thể trong nội dung tài liệu thành văn bản thuần túy, giúp xử lý tài liệu của bạn dễ dàng hơn. Hãy thực hiện theo các bước dưới đây để sử dụng tính năng này một cách hiệu quả.
+## Giới thiệu
 
-## Bước 1: Điều kiện tiên quyết
+Trong lĩnh vực phát triển .NET, việc quản lý nội dung tài liệu một cách linh hoạt là điều cần thiết, thường yêu cầu thao tác với nhiều loại trường khác nhau trong tài liệu. Aspose.Words for .NET nổi bật như một bộ công cụ mạnh mẽ dành cho các nhà phát triển, cung cấp các chức năng mạnh mẽ để xử lý các trường tài liệu một cách hiệu quả. Hướng dẫn toàn diện này tập trung vào cách chuyển đổi các trường trong nội dung tài liệu bằng Aspose.Words cho .NET, cung cấp hướng dẫn từng bước để trao quyền cho các nhà phát triển trong việc tăng cường quản lý và tự động hóa tài liệu.
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt Aspose.Words cho .NET và có sẵn tài liệu để xử lý. Đồng thời đảm bảo rằng bạn có đường dẫn thư mục đến tài liệu của mình.
+## Điều kiện tiên quyết
 
-## Bước 2: Tải tài liệu
+Trước khi đi sâu vào hướng dẫn về cách chuyển đổi các trường trong nội dung tài liệu bằng Aspose.Words cho .NET, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
 
-Bắt đầu bằng cách khai báo một biến cho đường dẫn đến thư mục tài liệu của bạn, sau đó sử dụng biến đó để khởi tạo đối tượng Tài liệu từ tài liệu đã chỉ định. Trong ví dụ của chúng tôi, tài liệu có tên là "Trường được liên kết.docx".
+- Visual Studio: Được cài đặt và cấu hình để phát triển .NET.
+-  Aspose.Words for .NET: Đã tải xuống và tham chiếu trong dự án Visual Studio của bạn. Bạn có thể lấy nó từ[đây](https://releases.aspose.com/words/net/).
+- Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C# để hiểu và sửa đổi các đoạn mã được cung cấp.
+
+## Nhập không gian tên
+
+Để bắt đầu, hãy đảm bảo nhập các không gian tên cần thiết vào dự án của bạn:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu của bạn.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using System.Linq;
+```
 
-// Tải tài liệu
+Các không gian tên này rất cần thiết để truy cập các chức năng Aspose.Words và truy vấn LINQ.
+
+## Hướng dẫn từng bước để chuyển đổi các trường trong nội dung bằng Aspose.Words cho .NET
+
+### Bước 1: Tải tài liệu
+
+Bắt đầu bằng cách tải tài liệu nơi bạn muốn chuyển đổi các trường:
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## Bước 3: Chuyển đổi trường trang thành văn bản thuần túy
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn đến tài liệu thực tế của bạn.
 
- Bây giờ tài liệu đã được tải, chúng ta có thể chuyển sang các bước chuyển đổi. Để chuyển đổi các trường trang thành văn bản thuần túy trong phần nội dung của phần đầu tiên, bạn có thể sử dụng`Range.Fields` phương pháp để lấy tất cả các trường trong phạm vi đã chỉ định, sau đó lọc ra các trường thuộc loại`FieldType.FieldPage` . Sau đó bạn có thể sử dụng`ForEach` phương thức lặp qua từng trường và gọi`Unlink()` phương pháp chuyển đổi nó thành văn bản thuần túy.
+### Bước 2: Xác định và chuyển đổi trường
+
+Xác định và chuyển đổi các trường cụ thể trong nội dung tài liệu. Ví dụ: để chuyển đổi các trường TRANG thành văn bản:
 
 ```csharp
-// Truyền các tham số thích hợp để chuyển đổi các trường trang thành văn bản thuần túy trong nội dung của phần đầu tiên.
-doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.Unlink());
+doc.FirstSection.Body.Range.Fields
+    .Where(f => f.Type == FieldType.FieldPage)
+    .ToList()
+    .ForEach(f => f.Unlink());
 ```
 
-## Bước 4: Lưu tài liệu đã sửa đổi
+Đoạn mã này sử dụng LINQ để tìm tất cả các trường TRANG trong nội dung tài liệu rồi hủy liên kết chúng, chuyển đổi chúng thành văn bản tĩnh một cách hiệu quả.
 
-Khi bạn đã chuyển đổi các trường trang thành văn bản thuần túy, bạn có thể lưu tài liệu đã sửa đổi bằng cách sử dụng`Save()` phương thức và chỉ định đường dẫn và tên của tệp đầu ra. Trong ví dụ của chúng tôi, chúng tôi lưu nó dưới dạng "WorkingWithFields.ConvertFieldsInBody.docx".
+### Bước 3: Lưu tài liệu
+
+Lưu tài liệu đã sửa đổi sau khi chuyển đổi các trường:
 
 ```csharp
-// Lưu tài liệu đã sửa đổi
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
-### Mã nguồn ví dụ để chuyển đổi các trường trong nội dung bằng Aspose.Words cho .NET
+ Điều chỉnh`"WorkingWithFields.ConvertFieldsInBody.docx"` để chỉ định đường dẫn tệp đầu ra mong muốn.
 
-Đây là ví dụ mã nguồn đầy đủ để chuyển đổi các trường thành nội dung bằng Aspose.Words cho .NET:
+## Phần kết luận
 
-```csharp
-// Đường dẫn đến thư mục tài liệu của bạn.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Nắm vững nghệ thuật thao tác các trường tài liệu bằng Aspose.Words cho .NET trao quyền cho các nhà phát triển tự động hóa quy trình làm việc tài liệu một cách hiệu quả. Cho dù chuyển đổi các trường thành văn bản thuần túy hay xử lý các loại trường phức tạp hơn, Aspose.Words đều đơn giản hóa các tác vụ này bằng API trực quan và bộ tính năng mạnh mẽ, đảm bảo tích hợp liền mạch vào các ứng dụng .NET.
 
-// Tải tài liệu
-Document doc = new Document(dataDir + "Linked fields.docx");
+## Câu hỏi thường gặp (FAQ)
 
-// Truyền các tham số thích hợp để chuyển đổi các trường trang thành văn bản thuần túy trong nội dung của phần đầu tiên.
-doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
-doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
-```
+### Các trường tài liệu trong Aspose.Words cho .NET là gì?
+Các trường tài liệu trong Aspose.Words là các phần giữ chỗ có thể lưu trữ và hiển thị dữ liệu động, chẳng hạn như ngày tháng, số trang và phép tính.
 
-### Câu hỏi thường gặp
+### Làm cách nào tôi có thể xử lý các loại trường khác nhau trong Aspose.Words cho .NET?
+Aspose.Words hỗ trợ nhiều loại trường khác nhau như DATE, PAGE, MERGEFIELD, v.v., cho phép các nhà phát triển thao tác chúng theo chương trình.
 
-#### Hỏi: Aspose.Words có tương thích với các phiên bản Microsoft Word khác nhau không?
+### Aspose.Words cho .NET có thể chuyển đổi các trường trên các định dạng tài liệu khác nhau không?
+Có, Aspose.Words for .NET có thể chuyển đổi và thao tác các trường trên các định dạng như DOCX, DOC, RTF, v.v. một cách liền mạch hơn.
 
-Trả lời: Có, Aspose.Words tương thích với nhiều phiên bản Microsoft Word khác nhau, bao gồm Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 và Word 2019.
+### Tôi có thể tìm tài liệu toàn diện về Aspose.Words cho .NET ở đâu?
+ Tài liệu chi tiết và tài liệu tham khảo API có sẵn.[đây](https://reference.aspose.com/words/net/).
 
-#### Câu hỏi: Aspose.Words có thể xử lý các cấu trúc trường phức tạp không?
-
-Đ: Chắc chắn rồi! Aspose.Words cung cấp hỗ trợ rộng rãi cho các cấu trúc trường phức tạp, bao gồm các trường lồng nhau, các phép tính và biểu thức điều kiện. Bạn có thể tận dụng API mạnh mẽ để hoạt động với bất kỳ loại cấu trúc trường nào.
-
-#### Câu hỏi: Aspose.Words có hỗ trợ các hoạt động cập nhật trường không?
-
-Đáp: Có, Aspose.Words cho phép bạn cập nhật các trường theo chương trình. Bạn có thể dễ dàng cập nhật giá trị trường, làm mới các phép tính và thực hiện các hoạt động khác liên quan đến trường bằng API.
-
-#### Câu hỏi: Tôi có thể chuyển đổi các trường thành văn bản thuần túy bằng Aspose.Words không?
-
-Đ: Chắc chắn rồi! Aspose.Words cung cấp các phương thức để chuyển đổi các trường thành văn bản thuần túy. Điều này có thể hữu ích khi bạn cần trích xuất nội dung mà không có bất kỳ định dạng hoặc chức năng nào liên quan đến trường.
-
-#### Câu hỏi: Có thể tạo tài liệu Word có trường động bằng Aspose.Words không?
-
-Đ: Chắc chắn rồi! Aspose.Words cung cấp các tính năng mạnh mẽ để tạo tài liệu Word với các trường động. Bạn có thể tạo mẫu với các trường được xác định trước và điền dữ liệu vào chúng một cách linh hoạt, cung cấp giải pháp tạo tài liệu linh hoạt và hiệu quả.
+### Có phiên bản dùng thử cho Aspose.Words cho .NET không?
+ Có, bạn có thể tải xuống phiên bản dùng thử miễn phí từ[đây](https://releases.aspose.com/).

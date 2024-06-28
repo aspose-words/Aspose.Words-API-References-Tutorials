@@ -2,7 +2,7 @@
 title: Grafieken gebruiken in Aspose.Words voor Java
 linktitle: Grafieken gebruiken
 second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer hoe u diagrammen maakt en aanpast in Aspose.Words voor Java. Ontdek diagramtypen, opmaak en aseigenschappen voor gegevensvisualisatie.
+description: Leer hoe u diagrammen kunt maken en aanpassen in Aspose.Words voor Java. Ontdek diagramtypen, opmaak en aseigenschappen voor gegevensvisualisatie.
 type: docs
 weight: 12
 url: /nl/java/document-conversion-and-export/using-charts/

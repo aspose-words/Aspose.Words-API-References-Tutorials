@@ -1,6 +1,6 @@
 ---
-title: सेटटेक्स्ट शीर्षक
-linktitle: सेटटेक्स्ट शीर्षक
+title: सेटेक्स हेडिंग
+linktitle: सेटेक्स हेडिंग
 second_title: Aspose.Words दस्तावेज़ प्रोसेसिंग एपीआई
 description: Aspose.Words for .NET चरण-दर-चरण मार्गदर्शिका के साथ अपने दस्तावेज़ों को प्रारूपित करने के लिए Settext शीर्षकों का उपयोग करना सीखें।
 type: docs

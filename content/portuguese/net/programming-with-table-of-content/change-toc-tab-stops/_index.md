@@ -85,7 +85,7 @@ Neste guia, abordamos como usar Aspose.Words for .NET para alterar as guias no �
 
 #### P: Qual é o propósito da funcionalidade "Alterar paradas de tabulação no documento do Word" no Aspose.Words for .NET?
 
-R: A funcionalidade "Alterar paradas de tabulação no documento do Word" no Aspose.Words for .NET permite que você modifique as paradas de tabulação usadas no índice de um documento do Word. Ele permite que você personalize o alinhamento e o posicionamento dos números das páginas e dos títulos correspondentes no índice analítico.
+R: A funcionalidade "Alterar paradas de tabulação no documento do Word" no Aspose.Words for .NET permite modificar as paradas de tabulação usadas no índice de um documento do Word. Ele permite que você personalize o alinhamento e o posicionamento dos números das páginas e dos títulos correspondentes no índice analítico.
 
 #### P: O que é Aspose.Words para .NET?
 
@@ -140,7 +140,7 @@ R: Sim, com Aspose.Words for .NET, você pode personalizar vários aspectos do �
 
 #### P:. Posso alterar o alinhamento das guias e os caracteres iniciais do índice usando Aspose.Words for .NET?
 
-R: Sim, você pode alterar o alinhamento das guias e os caracteres iniciais do índice usando Aspose.Words for .NET. Acessando as paradas de tabulação e ajustando seu alinhamento e propriedades de linha de chamada, você pode controlar o alinhamento e a aparência visual dos números de página e títulos correspondentes no índice analítico.
+R: Sim, você pode alterar o alinhamento das guias e os caracteres iniciais do índice usando Aspose.Words for .NET. Ao acessar as paradas de tabulação e ajustar seu alinhamento e propriedades de linha de chamada, você pode controlar o alinhamento e a aparência visual dos números de página e títulos correspondentes no índice analítico.
 
 #### P: O Aspose.Words for .NET oferece suporte à alteração de outros estilos e formatação em documentos do Word?
 

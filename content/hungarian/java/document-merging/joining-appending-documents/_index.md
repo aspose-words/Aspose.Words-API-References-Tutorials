@@ -10,7 +10,7 @@ url: /hu/java/document-merging/joining-appending-documents/
 
 ## Bevezetés
 
-Az Aspose.Words for Java egy funkciókban gazdag könyvtár, amely lehetővé teszi, hogy különféle dokumentumformátumokkal dolgozzon, beleértve a DOC-t, DOCX-et, RTF-et és még sok mást. A dokumentumok összeillesztése és hozzáfűzése gyakori feladat a dokumentumkezelés során, és ez az útmutató lépésről lépésre tartalmaz utasításokat és Java kódpéldákat ennek zökkenőmentes eléréséhez.
+Az Aspose.Words for Java egy funkciókban gazdag könyvtár, amely lehetővé teszi, hogy különféle dokumentumformátumokkal dolgozzon, beleértve a DOC-t, DOCX-et, RTF-et és még sok mást. A dokumentumok összeillesztése és hozzáfűzése gyakori feladat a dokumentumkezelés során, és ez az útmutató lépésenkénti utasításokat és Java-kódpéldákat kínál ennek zökkenőmentes eléréséhez.
 
 ## Előfeltételek
 
@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
- A`ImportFormatMode.KEEP_SOURCE_FORMATTING` opció biztosítja a forrásdokumentumok formázásának megőrzését.
+ A`ImportFormatMode.KEEP_SOURCE_FORMATTING` Az opció biztosítja a forrásdokumentumok formázásának megőrzését.
 
 ## 5. lépés: Az eredmény mentése
 
@@ -91,7 +91,7 @@ Teljesen! Az Aspose.Words-t úgy tervezték, hogy hatékonyan kezelje a nagymér
 
 ### Vannak-e korlátozások a dokumentumok Aspose.Words programmal való összekapcsolásakor?
 
-Míg az Aspose.Words robusztus dokumentumkezelési képességeket biztosít, az optimális teljesítmény biztosítása érdekében elengedhetetlen a dokumentumok összetettségének és méretének figyelembe vétele.
+Míg az Aspose.Words robusztus dokumentumkezelési lehetőségeket biztosít, az optimális teljesítmény biztosítása érdekében elengedhetetlen a dokumentumok összetettségének és méretének figyelembe vétele.
 
 ### Fizetnem kell az Aspose.Words for Java használatához szükséges licencért?
 

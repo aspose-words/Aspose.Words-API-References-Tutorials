@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Skapa tabeller
 
 ```java
-// Skapa en tabell med 3 rader och 4 kolumner
+// Skapa en tabell med 3 rader och 4 kolumner.
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOption
 
 To je vše ! Úspěšně jste vložili podmnožiny písem do dokumentu a pomocí Aspose.Words for .NET vygenerovali PDF obsahující pouze glyfy použité v dokumentu.
 
-### Ukázka zdrojového kódu pro vkládání podmnožin písem pomocí Aspose.Words pro .NET
+### Ukázkový zdrojový kód pro vkládání podmnožin písem pomocí Aspose.Words pro .NET
 
 ```csharp
 

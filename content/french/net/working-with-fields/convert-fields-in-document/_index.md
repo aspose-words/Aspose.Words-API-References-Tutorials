@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Étape 5 : Enregistrez le document transformé
- Utilisez le`Save()`méthode pour enregistrer le document avec les champs convertis en texte dans le répertoire de documents spécifié.
+ Utilisez le`Save()` méthode pour enregistrer le document avec les champs convertis en texte dans le répertoire de documents spécifié.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
@@ -74,7 +74,7 @@ R : Une conversion de champ dans Aspose.Words fait référence à la possibilit�
 
 #### Q : Comment convertir les champs d'un document Word avec Aspose.Words ?
 
-: Pour convertir les champs d'un document Word avec Aspose.Words, vous pouvez suivre ces étapes :
+R : Pour convertir les champs d'un document Word avec Aspose.Words, vous pouvez suivre ces étapes :
 
 1. Importez la classe Document à partir de l’espace de noms Aspose.Words.
 2. Créez une instance de Document en chargeant votre document existant.
@@ -86,7 +86,7 @@ R : Aspose.Words prend en charge plusieurs types de conversions dans les champs
 
 #### Q : La conversion des champs modifie-t-elle les données d'origine dans le document Word ?
 
-: Non, la conversion des champs dans Aspose.Words n'affecte pas les données d'origine du document Word. La conversion est appliquée lors de la mise à jour des champs, mais les données d'origine restent intactes. Cela garantit que vous pouvez revenir à l'état d'origine du document à tout moment.
+R : Non, la conversion des champs dans Aspose.Words n'affecte pas les données d'origine du document Word. La conversion est appliquée lors de la mise à jour des champs, mais les données d'origine restent intactes. Cela garantit que vous pouvez revenir à l'état d'origine du document à tout moment.
 
 #### Q : Est-il possible de personnaliser les conversions de champs dans Aspose.Words ?
 

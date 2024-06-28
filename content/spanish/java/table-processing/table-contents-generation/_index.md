@@ -8,7 +8,7 @@ weight: 14
 url: /es/java/table-processing/table-contents-generation/
 ---
 
-¿Estás listo para embarcarte en un viaje para dominar la generación de tablas de contenido (TOC) usando Aspose.Words para Java? En esta guía completa, exploraremos el arte de crear TOC dinámicos y visualmente atractivos sin esfuerzo. Estará equipado con el conocimiento y las habilidades necesarias para implementar esta característica sin problemas en sus aplicaciones Java. Así que ¡vamos a sumergirnos de lleno!
+¿Estás listo para embarcarte en un viaje para dominar la generación de tablas de contenido (TOC) usando Aspose.Words para Java? En esta guía completa, exploraremos el arte de crear TOC dinámicos y visualmente atractivos sin esfuerzo. Estará equipado con el conocimiento y las habilidades necesarios para implementar esta característica sin problemas en sus aplicaciones Java. Así que ¡vamos a sumergirnos de lleno!
 
 ## Introducción
 
@@ -56,7 +56,7 @@ La generación de TOC implica identificar títulos o contenidos específicos den
 Ahora que tenemos una base sólida, generemos un TOC básico usando Aspose.Words para Java.
 
 ```java
-// Crear una nueva tabla de contenidos
+// Crear una nueva tabla de contenido
 com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
 tocField.update();
 ```

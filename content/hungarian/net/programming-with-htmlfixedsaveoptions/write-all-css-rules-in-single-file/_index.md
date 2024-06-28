@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/
 ---
 
-Amikor egy Word-dokumentumot rögzített HTML-re konvertál egy C#-alkalmazásban, érdemes az összes CSS-szabályt egyetlen fájlba egyesíteni a jobb rendszerezés és hordozhatóság érdekében. A .NET Aspose.Words könyvtárával egyszerűen megadhatja ezt a funkciót a HtmlFixedSaveOptions mentési beállításaival. Ebben a részletes útmutatóban végigvezetjük, hogyan használhatja az Aspose.Words for .NET C# forráskódját Word-dokumentum rögzített HTML-formátumba való konvertálására úgy, hogy az összes CSS-szabályt egyetlen fájlba írja a HtmlFixedSaveOptions mentési beállításokkal.
+Amikor egy Word-dokumentumot rögzített HTML-re konvertál egy C#-alkalmazásban, érdemes az összes CSS-szabályt egyetlen fájlba egyesíteni a jobb rendszerezés és hordozhatóság érdekében. A .NET Aspose.Words könyvtárával egyszerűen megadhatja ezt a funkciót a HtmlFixedSaveOptions mentési beállításaival. Ebben a részletes útmutatóban végigvezetjük, hogyan használhatja az Aspose.Words for .NET C# forráskódját Word-dokumentumok rögzített HTML-formátumba való konvertálására úgy, hogy az összes CSS-szabályt egyetlen fájlba írja a HtmlFixedSaveOptions mentési beállításokkal.
 
 ## Az Aspose.Words könyvtár megértése
 
@@ -34,7 +34,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSep
 
 Létrehozunk egy új HtmlFixedSaveOptions objektumot, és a SaveFontFaceCssSeparately tulajdonságot false értékre állítjuk, hogy az összes CSS-szabályt egyetlen fájlba írhassuk.
 
-## Javított HTML dokumentum konvertálás
+## Javítva a HTML dokumentum átalakítás
 
 Most, hogy konfiguráltuk a mentési beállításokat, folytathatjuk a dokumentum konvertálását rögzített HTML-re. A Dokumentum osztály Mentés metódusával mentheti a konvertált dokumentumot rögzített HTML formátumba a mentési beállítások megadásával. Íme egy példa:
 

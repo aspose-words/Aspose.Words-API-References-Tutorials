@@ -19,7 +19,7 @@ Dodržováním těchto výukových programů budete moci plně využívat funkce
 | [Automaticky přizpůsobit tabulku obsahu](./auto-fit-table-to-contents/) | Naučte se, jak automaticky přizpůsobit tabulku jejímu obsahu v dokumentu Word pomocí Aspose.Words for .NET. |
 | [Klonovat kompletní tabulku](./clone-complete-table/) | Naučte se, jak naklonovat celou tabulku do dokumentu aplikace Word pomocí Aspose.Words for .NET. |
 | [Index hledání](./finding-index/) | Naučte se, jak najít indexy tabulek, řádků a buněk v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Vložit tabulku přímo](./insert-table-directly/) | Naučte se, jak vložit tabulku přímo do dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Vložit tabulku přímo](./insert-table-directly/) | Naučte se vkládat tabulky přímo do dokumentů aplikace Word pomocí Aspose.Words for .NET. Chcete-li zjednodušit vytváření dokumentů, postupujte podle našeho podrobného průvodce krok za krokem. |
 | [Vložit tabulku z HTML](./insert-table-from-html/) | Naučte se, jak vložit tabulku z HTML do dokumentu aplikace Word pomocí Aspose.Words for .NET. |
 | [Vytvořte jednoduchou tabulku](./create-simple-table/) | Naučte se, jak vytvořit jednoduchou tabulku v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
 | [Formátovaná tabulka](./formatted-table/) | Naučte se, jak vytvořit formátovanou tabulku v dokumentu aplikace Word pomocí Aspose.Words for .NET. |

@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Bước 5: Lưu tài liệu đã sửa đổi
 
- Cuối cùng, lưu tài liệu đích đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
+Cuối cùng, lưu tài liệu đích đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ Việc này hoàn tất việc triển khai việc nối hai tài liệu trên m
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Đặt tài liệu được nối thêm để bắt đầu trên một trang mới.
+	// Đặt tài liệu được nối thêm để bắt đầu trên một trang mới.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Nối tài liệu nguồn bằng cách sử dụng các kiểu gốc được tìm thấy trong tài liệu nguồn.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

@@ -30,7 +30,7 @@ Az Aspose.Words for Java használatához tartalmaznia kell az Aspose.Words JAR f
 
 ## Dokumentumok betöltése és kezelése
 
-Miután beállította az Aspose.Words for Java programot, megkezdheti a dokumentumok betöltését és kezelését. Az Aspose.Words különféle dokumentumformátumokat támogat, például DOCX, DOC, RTF, HTML stb. Ezeket a dokumentumokat betöltheti a memóriába, és programozottan elérheti a tartalmukat.
+Miután beállította az Aspose.Words for Java programot, megkezdheti a dokumentumok betöltését és kezelését. Az Aspose.Words különféle dokumentumformátumokat támogat, mint például a DOCX, DOC, RTF, HTML stb. Ezeket a dokumentumokat betöltheti a memóriába, és programozottan elérheti a tartalmukat.
 
 ### Különböző dokumentumformátumok betöltése
 
@@ -211,7 +211,7 @@ doc.save("output.png", saveOptions);
 
 ## Következtetés
 
-A dokumentummegjelenítés elsajátítása elengedhetetlen a dokumentumokat hatékonyan kezelő, robusztus alkalmazások létrehozásához. Az Aspose.Words for Java segítségével hatékony eszközkészlet áll rendelkezésére a dokumentumok zökkenőmentes kezeléséhez és megjelenítéséhez. Ebben az oktatóanyagban bemutattuk a dokumentum-megjelenítés alapjait, a dokumentumelrendezésekkel való munkát, a különféle kimeneti formátumokba való renderelést és a fejlett renderelési technikákat. Az Aspose.Words for Java kiterjedt API-jának használatával lenyűgöző, dokumentum-központú alkalmazásokat hozhat létre, amelyek kiváló felhasználói élményt nyújtanak.
+A dokumentummegjelenítés elsajátítása elengedhetetlen a dokumentumokat hatékonyan kezelő, robusztus alkalmazások létrehozásához. Az Aspose.Words for Java segítségével hatékony eszközkészlet áll rendelkezésére a dokumentumok zökkenőmentes kezeléséhez és megjelenítéséhez. Ebben az oktatóanyagban bemutattuk a dokumentum-megjelenítés alapjait, a dokumentumelrendezésekkel való munkát, a különféle kimeneti formátumokba való renderelést és a fejlett renderelési technikákat. Az Aspose.Words for Java kiterjedt API-jának használatával lenyűgöző, dokumentumközpontú alkalmazásokat hozhat létre, amelyek kiváló felhasználói élményt nyújtanak.
 
 ## GYIK
 

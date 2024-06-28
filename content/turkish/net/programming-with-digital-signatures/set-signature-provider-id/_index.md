@@ -75,7 +75,7 @@ Aspose.Words for .NET ile Word belgenizdeki İmza Sağlayıcı Kimliğini tamaml
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki imza satırı için imza sağlayıcı kimliğinin nasıl ayarlanacağını öğrendik. Verilen adımları takip ederek belgeyi kolayca yükleyebilir, imza satırına erişebilir, sağlayıcı kimliğini ayarlayabilir ve belgeyi imzalayabilirsiniz. İmza sağlayıcı kimliğini ayarlama yeteneği, imzalayanın kimliğinin ve güvenilirliğinin belirlenmesine yardımcı olarak Word belgelerinizin güvenliğini ve bütünlüğünü artırır. Aspose.Words for .NET, dijital imzalarla Kelime İşleme için güçlü bir API sunarak imza sürecini kolaylıkla özelleştirmenize ve yönetmenize olanak tanır.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki imza satırı için imza sağlayıcı kimliğinin nasıl ayarlanacağını öğrendik. Verilen adımları takip ederek belgeyi kolayca yükleyebilir, imza satırına erişebilir, sağlayıcı kimliğini ayarlayabilir ve belgeyi imzalayabilirsiniz. İmza sağlayıcı kimliğini belirleme yeteneği, imzalayanın kimliğinin ve güvenilirliğinin belirlenmesine yardımcı olarak Word belgelerinizin güvenliğini ve bütünlüğünü artırır. Aspose.Words for .NET, dijital imzalarla Kelime İşleme için güçlü bir API sunarak imza sürecini kolaylıkla özelleştirmenize ve yönetmenize olanak tanır.
 
 ### Word belgesinde imza sağlayıcı kimliğini ayarlamakla ilgili SSS
 
@@ -87,7 +87,7 @@ C: Word belgesindeki imza sağlayıcı kimliği, dijital imza sağlayıcısını
 
 C: Aspose.Words for .NET kullanarak bir Word belgesindeki imza satırı için imza sağlayıcı kimliğini ayarlamak için şu adımları takip edebilirsiniz:
 1.  Belgeyi kullanarak yükleyin`Document` sınıfını seçin ve belge dosyasının yolunu belirtin.
-2.  Uygun yöntemi veya özelliği kullanarak imza satırına erişin. Örneğin, kullanabilirsiniz`GetChild` İmza çizgisi şeklini alma yöntemi.
+2.  Uygun yöntemi veya özelliği kullanarak imza satırına erişin. Örneğin şunları kullanabilirsiniz:`GetChild` İmza çizgisi şeklini alma yöntemi.
 3. Sağlayıcı kimliğini imza satırından alın.
 4.  Bir örneğini oluşturun`SignOptions` sınıfı seçin ve ayarlayın`ProviderId` özelliği alınan sağlayıcı kimliğine aktarın.
 5.  Kullan`DigitalSignatureUtil.Sign` dahil olmak üzere gerekli parametreleri sağlayarak belgeyi imzalama yöntemi`SignOptions` nesne.

@@ -14,7 +14,7 @@ Ordbehandling med Markdown ger en omfattande resurs för att lära sig hur man a
 | Titel | Beskrivning |
 | --- | --- |
 | [Fettext](./bold-text/) | Lär dig hur du gör fet text med Aspose.Words för .NET Steg-för-steg-guide. |
-| [Kursiv text](./italic-text/) | Lär dig att kursiv text med Aspose.Words för .NET Steg-för-steg-guide. |
+| [Italiensk text](./italic-text/) | Lär dig att kursiv text med Aspose.Words för .NET Steg-för-steg-guide. |
 | [Genomstruken](./strikethrough/) | Lär dig hur du använder den genomstrukna textstilen med Aspose.Words för .NET Steg-för-steg-guide. |
 | [Inline kod](./inline-code/) | Lär dig hur du infogar kod med Aspose.Words för .NET Steg-för-steg-guide. |
 | [Autolänk](./autolink/) | Lär dig hur du infogar autolänk med Aspose.Words för .NET Steg-för-steg-guide. |
@@ -22,7 +22,7 @@ Ordbehandling med Markdown ger en omfattande resurs för att lära sig hur man a
 | [Bild](./image/) | Lär dig hur du infogar och anpassar en bild med Aspose.Words för .NET Steg-för-steg-guide. |
 | [Horisontell regel](./horizontal-rule/) | Lär dig hur du infogar en horisontell regel med Aspose.Words för .NET Steg-för-steg-guide. |
 | [Rubrik](./heading/) | Lär dig hur du använder heading med Aspose.Words för .NET Steg-för-steg-guide. |
-| [Setext Rubrik](./setext-heading/) | Lär dig hur du använder Setext-rubriker för att formatera dina dokument med Aspose.Words för .NET Steg-för-steg-guide. |
+| [Setex rubrik](./setext-heading/) | Lär dig hur du använder Setext-rubriker för att formatera dina dokument med Aspose.Words för .NET Steg-för-steg-guide. |
 | [Indragen kod](./indented-code/) | Lär dig hur du använder indragen kod med Aspose.Words för .NET Steg-för-steg-guide. |
 | [Inhägnad kod](./fenced-code/) | Lär dig hur du använder den inhägnade kodfunktionen med Aspose.Words för .NET Steg-för-steg-guide. |
 | [Citat](./quote/) | Lär dig hur du använder citat med Aspose.Words för .NET Steg-för-steg-guide. |

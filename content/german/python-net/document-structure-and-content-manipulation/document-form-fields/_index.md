@@ -1,7 +1,7 @@
 ---
 title: Formularfelder und Datenerfassung in Word-Dokumenten beherrschen
 linktitle: Formularfelder und Datenerfassung in Word-Dokumenten beherrschen
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Meistern Sie die Kunst des Erstellens und Verwaltens von Formularfeldern in Word-Dokumenten mit Aspose.Words für Python. Lernen Sie, Daten effizient zu erfassen und die Benutzereinbindung zu verbessern.
 type: docs
 weight: 15
@@ -246,7 +246,7 @@ pip install aspose-words
 
 ### Kann ich Standardwerte für Formularfelder festlegen?
 
- Ja, Sie können mithilfe der entsprechenden Eigenschaften Standardwerte für Formularfelder festlegen. Um beispielsweise den Standardtext für ein Texteingabefeld festzulegen, verwenden Sie die`text` Eigentum.
+ Ja, Sie können über die entsprechenden Eigenschaften Standardwerte für Formularfelder festlegen. Um beispielsweise den Standardtext für ein Texteingabefeld festzulegen, verwenden Sie die`text` Eigentum.
 
 ### Sind Formularfelder für Benutzer mit Behinderungen zugänglich?
 

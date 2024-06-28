@@ -68,7 +68,7 @@ doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 
 请务必将“dataDir”替换为文档目录的路径。
 
-### 使用 Aspose.Words for .NET 的具有不压缩小图元文件功能的 DocSaveOptions 示例源代码
+### 使用 Aspose.Words for .NET 具有不压缩小图元文件功能的 DocSaveOptions 示例源代码
 
 ```csharp
 //文档目录的路径

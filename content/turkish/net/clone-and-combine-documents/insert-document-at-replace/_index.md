@@ -2,87 +2,166 @@
 title: Belgeyi Değiştirme Sırasına Ekle
 linktitle: Belgeyi Değiştirme Sırasına Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir belgeyi değiştirildiğinde nasıl ekleyeceğinizi öğrenin.
+description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesini diğerine sorunsuz bir şekilde nasıl ekleyeceğinizi öğrenin. Belge işlemeyi kolaylaştırmak isteyen geliştiriciler için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-Bu eğitimde, Aspose.Words for .NET'in Değiştirirken Belge Ekle özelliğini kullanarak bir belgeyi değiştirirken başka bir belgeye nasıl ekleyeceğinizi anlatacağız. Kaynak kodunu anlamak ve belge ekleme işlemini gerçekleştirmek için aşağıdaki adımları izleyin.
+## giriiş
 
-## 1. Adım: Ana belgeyi yükleme
+Merhaba belge ustaları! Hiç kendinizi bir Word belgesini diğerine sorunsuz bir şekilde nasıl ekleyeceğinizi bulmaya çalışırken kodlara gömülmüş halde buldunuz mu? Korkmayın, çünkü bugün bu görevi kolaylaştırmak için Aspose.Words for .NET dünyasına dalıyoruz. Bulma ve değiştirme işlemi sırasında belgeleri belirli noktalara eklemek için bu güçlü kitaplığın nasıl kullanılacağına ilişkin ayrıntılı, adım adım bir kılavuzu inceleyeceğiz. Aspose.Words sihirbazı olmaya hazır mısınız? Başlayalım!
 
-Başlamak için belgelerinizin dizini belirtin ve ana belgeyi bir Belge nesnesine yükleyin. İşte nasıl:
+## Önkoşullar
+
+Koda geçmeden önce, yerine getirmeniz gereken birkaç şey var:
+
+-  Visual Studio: Makinenizde Visual Studio'nun kurulu olduğundan emin olun. Henüz sahip değilseniz, adresinden indirebilirsiniz.[Burada](https://visualstudio.microsoft.com/).
+-  Aspose.Words for .NET: Aspose.Words kütüphanesine ihtiyacınız olacak. Şu adresten alabilirsiniz:[Web sitesi](https://releases.aspose.com/words/net/).
+- Temel C# Bilgisi: C# ve .NET'e ilişkin temel bir anlayış, bu öğreticiyi takip etmenize yardımcı olacaktır.
+
+Pekala, bunları aradan çıkaralım, biraz kodla ellerimizi kirletelim!
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle Aspose.Words ile çalışmak için gerekli ad alanlarını içe aktarmamız gerekiyor. Bu, bir projeye başlamadan önce tüm araçlarınızı toplamaya benzer. Bunları kullanarak C# dosyanızın en üstüne yönergeleri ekleyin:
 
 ```csharp
-// Belgeler dizininin yolu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using Aspose.Words.Tables;
 ```
 
-## 2. Adım: Arama ve değiştirme seçeneklerini yapılandırın
+Artık önkoşullarımızı yerine getirdiğimize göre, süreci küçük adımlara ayıralım. Her adım çok önemli ve bizi hedefimize yaklaştıracak.
 
-Şimdi, bir belgeyi başka bir belgeye eklemek için arama yönünü ve değiştirme geri çağrısını belirterek bul ve değiştir seçeneklerini yapılandıracağız. İşte nasıl:
+## 1. Adım: Belge Dizinini Ayarlama
 
-```csharp
-// Arama ve değiştirme seçeneklerini yapılandırın.
-FindReplaceOptions options = new FindReplaceOptions
-{
-Direction = FindReplaceDirection.Backward,
-ReplacingCallback = new InsertDocumentAtReplaceHandler()
-};
-```
-
-## 3. Adım: Değiştirme yöntemini çağırma
-
-Şimdi, yapılandırılmış seçenekleri kullanarak, belirtilen metni bulup boş bir dizeyle değiştirmek için değiştirme yöntemini çağıracağız. İşte nasıl:
+Öncelikle belgelerimizin saklandığı dizini belirtmemiz gerekiyor. Bu, büyük performanstan önce sahneyi hazırlamak gibidir.
 
 ```csharp
-mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-```
-
-### Aspose.Words for .NET kullanarak Değiştirme Sırasında Belge Ekle için örnek kaynak kodu
-
-Aspose.Words for .NET'i değiştirirken Belge Ekle özelliğinin tam kaynak kodunu burada bulabilirsiniz:
-
-```csharp
-// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
-// Bul ve değiştir seçeneklerini ayarlayın.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` dizininizin yolu ile. Belgelerinizin yaşayacağı ve nefes alacağı yer burasıdır.
+
+## Adım 2: Ana Belgeyi Yükleyin
+
+Daha sonra içine başka bir belge eklemek istediğimiz ana belgeyi yüklüyoruz. Bunu tüm aksiyonun gerçekleşeceği ana sahnemiz olarak düşünün.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+Bu kod, ana belgeyi belirtilen dizinden yükler.
+
+## 3. Adım: Bul ve Değiştir Seçeneklerini Ayarlayın
+
+Belgemizi eklemek istediğimiz belirli konumu bulmak için bul ve değiştir işlevini kullanırız. Bu, yeni eklememizin tam yerini bulmak için harita kullanmaya benziyor.
+
+```csharp
 FindReplaceOptions options = new FindReplaceOptions
 {
-	Direction = FindReplaceDirection.Backward, 
-	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+    Direction = FindReplaceDirection.Backward,
+    ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
+```
 
-// Değiştirme yöntemini çağırın.
+Burada yönü geriye doğru ayarlıyoruz ve daha sonra tanımlayacağımız özel bir geri arama işleyicisini belirliyoruz.
+
+## Adım 4: Değiştirme İşlemini Gerçekleştirin
+
+Şimdi, başka bir belge eklemek için özel geri çağrımızı kullanırken, ana belgemize belirli bir yer tutucu metni aramasını ve onu hiçbir şeyle değiştirmemesini söylüyoruz.
+
+```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+Bu kod bul ve değiştir işlemini gerçekleştirir ve ardından güncellenen belgeyi kaydeder.
+
+## Adım 5: Özel Bir Geri Arama İşleyicisini Değiştirme Oluşturun
+
+Özel geri arama işleyicimiz sihrin gerçekleştiği yerdir. Bu işleyici, bulma ve değiştirme işlemi sırasında belge ekleme işleminin nasıl gerçekleştirileceğini tanımlayacaktır.
+
+```csharp
+private class InsertDocumentAtReplaceHandler : IReplacingCallback
+{
+    ReplaceAction IReplacingCallback.Replacing(ReplacingArgs args)
+    {
+        Document subDoc = new Document(dataDir + "Document insertion 2.docx");
+
+        // Eşleşme metnini içeren paragraftan sonra bir belge ekleyin.
+        Paragraph para = (Paragraph)args.MatchNode.ParentNode;
+        InsertDocument(para, subDoc);
+
+        // Eşleşme metnini içeren paragrafı kaldırın.
+        para.Remove();
+        return ReplaceAction.Skip;
+    }
+}
+```
+
+Burada eklenecek belgeyi yüklüyoruz ve ardından eklemeyi gerçekleştirmek için bir yardımcı yöntem çağırıyoruz.
+
+## Adım 6: Belge Ekleme Yöntemini Tanımlayın
+
+Yapbozumuzun son parçası, belgeyi belirtilen konuma gerçekten yerleştiren yöntemdir.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+	{
+		CompositeNode destinationParent = insertionDestination.ParentNode;
+
+		NodeImporter importer =
+			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+		// Bölümün gövdesindeki tüm blok düzeyindeki düğümler arasında döngü yapın,
+		// daha sonra bir bölümün son boş paragrafı olmayan her düğümü kopyalayın ve ekleyin.
+		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+		foreach (Node srcNode in srcSection.Body)
+		{
+			if (srcNode.NodeType == NodeType.Paragraph)
+			{
+				Paragraph para = (Paragraph)srcNode;
+				if (para.IsEndOfSection && !para.HasChildNodes)
+					continue;
+			}
+
+			Node newNode = importer.ImportNode(srcNode, true);
+
+			destinationParent.InsertAfter(newNode, insertionDestination);
+			insertionDestination = newNode;
+		}
+	}
+	else
+	{
+		throw new ArgumentException("The destination node should be either a paragraph or table.");
+	}
+}
+```
+
+Bu yöntem, eklenecek belgedeki düğümlerin içe aktarılmasını ve bunların ana belgede doğru noktaya yerleştirilmesini sağlar.
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET'in Değiştirirken Belge Ekle özelliğini kullanarak değiştirme sırasında bir belgeyi başka bir belgeye nasıl ekleyeceğimizi araştırdık. Bul ve değiştir seçeneklerini yapılandırarak ve gerekli verileri sağlayarak, belirli yer tutucuları diğer belge şablonlarının veya bölümlerinin içerikleriyle değiştirerek belgeleri dinamik olarak birleştirebilirsiniz. Aspose.Words for .NET, karmaşık belge işleme görevlerini yönetmek için güçlü ve esnek bir yol sunarak onu belge oluşturma ve içerik ekleme senaryolarını otomatikleştirmek için değerli bir araç haline getiriyor.
+İşte buyur! Aspose.Words for .NET kullanarak bir belgeyi diğerine eklemeye yönelik kapsamlı bir kılavuz. Bu adımları izleyerek belge birleştirme ve düzenleme görevlerini kolayca otomatikleştirebilirsiniz. İster bir belge yönetim sistemi oluşturuyor olun, ister yalnızca belge işleme iş akışınızı kolaylaştırmaya ihtiyacınız olsun, Aspose.Words güvenilir yardımcınızdır.
 
-### SSS'ler
+## SSS'ler
 
-#### S: Değiştirme sırasında bir belgeyi başka bir belgeye eklemenin amacı nedir?
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, Word belgelerini programlı olarak işlemek için güçlü bir kütüphanedir. Word belgelerini kolaylıkla oluşturmanıza, değiştirmenize, dönüştürmenize ve işlemenize olanak tanır.
 
-C: Değiştirme sırasında bir belgeyi başka bir belgeye eklemek, belirli bir yer tutucuyu dinamik olarak ayrı bir belgenin içeriğiyle değiştirmenize olanak tanır. Bu özellik, önceden tanımlanmış çeşitli belge şablonlarını veya bölümlerini belirli yer tutucularda birleştirerek daha büyük bir belge oluşturmak istediğinizde özellikle kullanışlıdır.
+### Aynı anda birden fazla belge ekleyebilir miyim?
+Evet, bir belge koleksiyonu üzerinde yineleme yaparak geri arama işleyicisini birden çok eklemeyi işleyecek şekilde değiştirebilirsiniz.
 
-#### S: Aspose.Words for .NET kullanarak değiştirme sırasında bir belgeyi başka bir belgeye nasıl eklerim?
+### Ücretsiz deneme mevcut mu?
+ Kesinlikle! Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
 
-C: Aspose.Words for .NET kullanarak değiştirme sırasında bir belgeyi başka bir belgeye eklemek için şu adımları izleyin:
-1. Yer tutucuları içeren ana belgeyi bir Document nesnesine yükleyin.
-2. Belge ekleme işlemini gerçekleştirmek için arama yönü ve geri aramayı değiştirme de dahil olmak üzere bul ve değiştir seçeneklerini yapılandırın.
-3. Yapılandırılmış seçenekleri kullanarak yer tutucuları boş bir dizeyle değiştirerek değiştirme yöntemini uygun arama düzeniyle çağırın.
+### Aspose.Words için nasıl destek alabilirim?
+adresini ziyaret ederek destek alabilirsiniz.[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
 
-#### S: Değiştirme sırasında ekleme davranışını özelleştirebilir miyim?
-
-C: Evet, özel bir ReplaceingCallback uygulayarak değiştirme sırasında ekleme davranışını özelleştirebilirsiniz. IReplacingCallback arayüzünden miras alarak, yer tutucuları değiştirirken özel gereksinimlerinize göre belgelerin nasıl eklendiğini ve birleştirildiğini kontrol edebilirsiniz.
-
-#### S: Birden fazla yer tutucuyu farklı belgelerle değiştirebilir miyim?
-
-C: Evet, her yer tutucu için uygun arama modellerini belirleyerek ve ilgili belgelerin eklenmesini sağlayarak birden çok yer tutucuyu farklı belgelerle değiştirebilirsiniz.
+### Eklenen belgenin formatını koruyabilir miyim?
+ Evet`NodeImporter`class, düğümleri bir belgeden diğerine aktarırken biçimlendirmenin nasıl işleneceğini belirtmenize olanak tanır.

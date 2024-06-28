@@ -1,6 +1,6 @@
 ---
 title: Formatage des tableaux et des styles de tableau dans Aspose.Words pour Java
-linktitle: Formatage des tableaux et des styles de tableau
+linktitle: Formatage des tableaux et des styles de tableaux
 second_title: API de traitement de documents Java Aspose.Words
 description: Découvrez comment formater des tableaux et appliquer des styles de tableau dans Aspose.Words pour Java. Explorez des guides étape par étape avec le code source pour un formatage efficace des tableaux. Améliorez la mise en page de votre document avec Aspose.Words.
 type: docs

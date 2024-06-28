@@ -41,7 +41,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
 ```
 
- В этом коде мы создаем строку HTML и используем`HtmlLoadOptions` чтобы указать, что мы хотим рассматривать HTML как структурированный документ. Затем мы загружаем HTML-контент в`Document` объект.
+ В этом коде мы создаем строку HTML и используем`HtmlLoadOptions` чтобы указать, что мы хотим рассматривать HTML как структурированный документ. Затем мы загружаем HTML-контент в`Document` Объект Object.
 
 ## Сохранение как документ Word
 

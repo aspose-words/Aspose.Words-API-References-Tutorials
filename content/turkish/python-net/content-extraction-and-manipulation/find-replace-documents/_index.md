@@ -108,7 +108,7 @@ Word belgelerini verimli bir şekilde yönetmek ve değiştirmek genellikle bulm
 
  Evet yapabilirsin. Değiştirmeyi gerçekleştirmeden önce, sayfa aralığını kullanarak belirtin.`doc.get_child_nodes()` belirli sayfaların içeriğini alma yöntemi.
 
-### Bul ve değiştir işlemini geri almak mümkün mü?
+### Bul ve değiştir işlemini geri almak mümkün müdür?
 
 Ne yazık ki Aspose.Words kütüphanesi bulma ve değiştirme işlemleri için yerleşik bir geri alma mekanizması sunmuyor. Kapsamlı değişiklikler yapmadan önce belgenizin yedeğini almanız önerilir.
 

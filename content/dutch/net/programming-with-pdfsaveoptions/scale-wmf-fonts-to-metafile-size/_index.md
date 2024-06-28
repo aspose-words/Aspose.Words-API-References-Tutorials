@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Stap 3: Configureer de weergaveopties voor metabestanden
 
- Om het schalen van WMF-lettertypen naar metabestandsgrootte in of uit te schakelen, moeten we de`MetafileRenderingOptions`voorwerp. In dit voorbeeld schakelen we het schalen van lettertypen uit door de`ScaleWmfFontsToMetafileSize`eigendom aan`false`.
+ Om het schalen van WMF-lettertypen naar metabestandsgrootte in of uit te schakelen, moeten we de`MetafileRenderingOptions` voorwerp. In dit voorbeeld schakelen we het schalen van lettertypen uit door de`ScaleWmfFontsToMetafileSize`eigendom aan`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ een PDF-document met Aspose.Words voor .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Als Aspose.Words sommige metabestandsrecords niet correct kan weergeven in vectorafbeeldingen
+	//Als Aspose.Words sommige metabestandsrecords niet correct kan weergeven in vectorafbeeldingen
 	// vervolgens rendert Aspose.Words dit metabestand naar een bitmap.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

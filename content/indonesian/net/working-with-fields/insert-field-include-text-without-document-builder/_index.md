@@ -97,4 +97,4 @@ J: Memasukkan bidang penyertaan teks tanpa pembuat dokumen tidak secara langsung
 
 #### T: Dapatkah saya mengkustomisasi tampilan bidang penyertaan teks dalam dokumen Word dengan Aspose.Words untuk .NET?
 
-J: Bidang penyertaan teks tidak secara langsung menyesuaikan tampilannya di dokumen Word. Namun, Anda dapat memformat teks yang disertakan menggunakan properti paragraf, properti font, dan objek pemformatan lain yang tersedia di Aspose.Words untuk .NET.
+J: Penyertaan bidang teks tidak secara langsung menyesuaikan tampilannya di dokumen Word. Namun, Anda dapat memformat teks yang disertakan menggunakan properti paragraf, properti font, dan objek pemformatan lain yang tersedia di Aspose.Words untuk .NET.

@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-comments/add-remove-comment-reply/
 ---
 
-Bu kapsamlı eğitimde, Aspose.Words for .NET'i kullanarak bir Word belgesine yorum yanıtlarını nasıl ekleyip kaldıracağınızı öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda yorum yanıtlarını yönetebilecek ve bunları gereksinimlerinize göre özelleştirebileceksiniz.
+Bu kapsamlı eğitimde, Aspose.Words for .NET kullanarak bir Word belgesine yorum yanıtlarını nasıl ekleyip kaldıracağınızı öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda yorum yanıtlarını yönetebilecek ve bunları gereksinimlerinize göre özelleştirebileceksiniz.
 
 ## Önkoşullar
 Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
@@ -42,7 +42,7 @@ comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New re
 ```
 
 ## 3. Adım: Belgeyi Kaydedin
-Yorum yanıtlarını ekledikten veya kaldırdıktan sonra, Document sınıfının Kaydet yöntemini kullanarak belgeyi bir dosyaya kaydedin:
+Yorum yanıtlarını ekledikten veya kaldırdıktan sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
@@ -77,7 +77,7 @@ Yorum yanıtları, bir belge içinde işbirlikçi tartışmalara ve geri bildiri
 
 #### S: Aspose.Words for .NET'te bir yorumu nasıl kaldırabilirim?
 
- C: Aspose.Words for .NET'te bir yorumu kaldırmak için şu komutu kullanabilirsiniz:`Comment.Remove` belirten yöntem`Comment` Kaldırmak istediğiniz nesneyi seçin.
+C: Aspose.Words for .NET'te bir yorumu kaldırmak için şu komutu kullanabilirsiniz:`Comment.Remove` belirten yöntem`Comment` Kaldırmak istediğiniz nesneyi seçin.
 
 #### S: Aspose.Words for .NET'te bir yorumu yanıtlayabilir miyim?
 
@@ -85,7 +85,7 @@ Yorum yanıtları, bir belge içinde işbirlikçi tartışmalara ve geri bildiri
 
 #### S: Aspose.Words for .NET'te mevcut yorumlara nasıl erişebilirim?
 
- C: Aspose.Words for .NET'teki mevcut yorumlara şu komutu kullanarak erişebilirsiniz:`CommentCollection` mülkiyeti`Document`nesne. Bu, belgede bulunan tüm yorumlara göz atmanıza olanak tanır.
+ C: Aspose.Words for .NET'teki mevcut yorumlara şu komutu kullanarak erişebilirsiniz:`CommentCollection` mülkiyeti`Document` nesne. Bu, belgede bulunan tüm yorumlara göz atmanıza olanak tanır.
 
 #### S: Aspose.Words for .NET'te yorum metnini düzenleyebilir miyim?
 

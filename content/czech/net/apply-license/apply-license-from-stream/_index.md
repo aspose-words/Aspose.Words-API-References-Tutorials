@@ -71,7 +71,7 @@ catch (Exception e)
 ## Závěr
 V tomto tutoriálu jste se naučili, jak použít licenci ze streamu pomocí Aspose.Words for .NET. Podle podrobného průvodce a pomocí poskytnutého zdrojového kódu můžete snadno nastavit licenci a odemknout plný potenciál Aspose.Words pro vaše úlohy zpracování dokumentů.
 
-Nyní můžete s jistotou použít licenci ze streamu a využívat výkonné funkce Aspose.Words k vytváření, úpravě a převodu dokumentů aplikace Word programově.
+Nyní můžete s jistotou použít licenci ze streamu a využít výkonné funkce Aspose.Words k vytváření, úpravě a převodu dokumentů aplikace Word programově.
 
 ### FAQ
 

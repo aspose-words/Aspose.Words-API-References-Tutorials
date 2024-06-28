@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-markdown/bulleted-list/
 ---
 
-W tym samouczku powiemy Ci, jak utworzyć listę punktowaną za pomocą Aspose.Words dla .NET. Lista punktowana służy do wyszczególniania elementów bez stosowania numeracji.
+tym samouczku powiemy Ci, jak utworzyć listę punktowaną za pomocą Aspose.Words dla .NET. Lista punktowana służy do wyszczególniania elementów bez stosowania numeracji.
 
 ## Krok 1: Korzystanie z generatora dokumentów
 
@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## Krok 3: Dostosowywanie formatu punktora
 
-Możemy dostosować format punktora, uzyskując dostęp do właściwości`ListFormat.List.ListLevels[0]`. W tym przykładzie użyliśmy myślnika „-” jako punktora.
+ Możemy dostosować format punktora, uzyskując dostęp do właściwości`ListFormat.List.ListLevels[0]`. W tym przykładzie użyliśmy myślnika „-” jako punktora.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

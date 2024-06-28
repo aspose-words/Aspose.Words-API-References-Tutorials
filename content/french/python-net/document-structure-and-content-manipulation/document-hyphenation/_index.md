@@ -98,7 +98,7 @@ Aspose.Words vous permet de justifier ou d'aligner votre texte en fonction de vo
 
 ## Gestion des veuves et des orphelins
 
-Les veuves (une seule ligne en haut d'une page) et les orphelins (une seule ligne en bas) peuvent perturber le flux de votre document. Utilisez des options pour prévenir ou contrôler les veuves et les orphelins.
+Les veuves (une seule ligne en haut d'une page) et les orphelines (une seule ligne en bas) peuvent perturber le flux de votre document. Utilisez des options pour prévenir ou contrôler les veuves et les orphelins.
 
 ## Conclusion
 
@@ -126,4 +126,4 @@ Pour éviter les veuves et les orphelins, utilisez les options fournies par Aspo
 
 ### Où puis-je accéder à la documentation Aspose.Words pour Python ?
 
- Vous pouvez accéder à la documentation de l'API à l'adresse[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+Vous pouvez accéder à la documentation de l'API à l'adresse[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

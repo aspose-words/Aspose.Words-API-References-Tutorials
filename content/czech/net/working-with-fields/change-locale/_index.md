@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-fields/change-locale/
 ---
 
-tomto tutoriálu vás provedeme procesem změny národního prostředí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Úpravou národního prostředí můžete řídit formátování dat a čísel během operací hromadné korespondence. Poskytneme vám potřebný zdrojový kód C# a pokyny krok za krokem, jak toho dosáhnout.
+V tomto tutoriálu vás provedeme procesem změny národního prostředí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Úpravou národního prostředí můžete řídit formátování dat a čísel během operací hromadné korespondence. Poskytneme vám potřebný zdrojový kód C# a pokyny krok za krokem, jak toho dosáhnout.
 
 ## Předpoklady
 Než začneme, ujistěte se, že máte následující předpoklady:
@@ -49,7 +49,7 @@ Proveďte operaci hromadné korespondence a zadejte hodnotu data do pole "Datum"
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-tomto fragmentu kódu provedeme operaci hromadné korespondence a jako hodnotu pole „Datum“ poskytneme aktuální datum.
+V tomto fragmentu kódu provedeme operaci hromadné korespondence a jako hodnotu pole „Datum“ poskytneme aktuální datum.
 
 ## Krok 5: Obnovte původní národní prostředí
 Po dokončení hromadné korespondence obnovte původní kulturu vlákna:

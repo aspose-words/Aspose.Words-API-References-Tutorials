@@ -99,7 +99,7 @@ NodeList<Table> tables = doc.getChildNodes(NodeType.TABLE, true);
 
 // Ismételje meg a táblázatokat, és dolgozza fel őket
 for (Table table : tables) {
-    // A táblázattal való együttműködéshez szükséges kód itt található
+    // A táblázathoz tartozó kód itt található
 }
 ```
 

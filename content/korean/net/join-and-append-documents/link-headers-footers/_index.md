@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2단계: 소스 및 대상 문서 로드
 
- 다음으로 Aspose.Words를 사용하여 소스 및 대상 문서를 로드해야 합니다.`Document` 수업. 다음에서 파일 이름을 업데이트합니다.`Document` 문서 이름에 따른 생성자.
+다음으로 Aspose.Words를 사용하여 소스 및 대상 문서를 로드해야 합니다.`Document` 수업. 다음에서 파일 이름을 업데이트합니다.`Document` 문서 이름에 따른 생성자.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## 4단계: 머리글과 바닥글을 이전 섹션에 연결
 
-원본 문서의 머리글과 바닥글을 대상 문서의 이전 섹션에 연결하려면`LinkToPrevious` 의 방법`HeadersFooters` 수집. 통과하여`true` 매개변수로 소스 문서의 기존 머리글이나 바닥글을 재정의합니다.
+ 원본 문서의 머리글과 바닥글을 대상 문서의 이전 섹션에 연결하려면`LinkToPrevious` 의 방법`HeadersFooters` 수집. 통과하여`true` 매개변수로 소스 문서의 기존 머리글이나 바닥글을 재정의합니다.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## 3단계: 새 모듈 생성 및 매크로 소스 코드 지정
+## 3단계: 새 모듈을 만들고 매크로 소스 코드를 지정합니다.
  인스턴스화하여 새 모듈을 생성하겠습니다.`VbaModule` 클래스를 지정하고 매크로 이름, 유형(절차적 모듈) 및 소스 코드를 지정합니다.
 
 ```csharp
@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 ```
 
 ## 결론
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 VBA 프로젝트를 만드는 방법을 살펴보았습니다. VBA 프로젝트를 만들면 Word 문서에 VBA 코드를 추가하고 사용자 지정할 수 있습니다. 이 기능을 자유롭게 사용하여 작업을 자동화하거나 Word 문서에 사용자 지정 기능을 추가하세요.
+이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 VBA 프로젝트를 만드는 방법을 살펴보았습니다. VBA 프로젝트를 만들면 Word 문서에 VBA 코드를 추가하고 사용자 지정할 수 있습니다. 이 기능을 자유롭게 사용하여 작업을 자동화하거나 Word 문서에 사용자 정의 기능을 추가하세요.
 
 ### FAQ
 
@@ -94,7 +94,7 @@ A: Word 문서에서 VBA 프로젝트를 만들려면 C# 프로그래밍 언어�
 
 #### Q: 코드에서 문서 디렉터리를 어떻게 설정하나요?
 
- A: 제공된 코드에서 다음을 교체해야 합니다.`"YOUR DOCUMENTS DIRECTORY"` VBA 프로젝트와 함께 Word 문서를 저장하려는 디렉터리에 대한 적절한 경로를 사용합니다.
+ A: 제공된 코드에서 교체해야 합니다.`"YOUR DOCUMENTS DIRECTORY"` VBA 프로젝트와 함께 Word 문서를 저장하려는 디렉터리에 대한 적절한 경로를 사용합니다.
 
 #### Q: VBA 모듈에서 매크로 소스 코드를 지정하는 방법은 무엇입니까?
 

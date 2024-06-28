@@ -13,7 +13,7 @@ Nell’era moderna del rapido progresso tecnologico, l’automazione è diventat
 
 ## introduzione
 
-Nel panorama digitale odierno, la gestione e l'elaborazione efficiente dei documenti Word è fondamentale. Aspose.Words per Python funge da solida API che consente agli sviluppatori di manipolare e automatizzare vari aspetti dei documenti Word a livello di codice. Se abbinate alle macro VBA, le funzionalità di automazione diventano ancora più potenti, consentendo l'esecuzione di attività complesse senza problemi.
+Nel panorama digitale odierno, la gestione e l'elaborazione efficiente dei documenti Word è fondamentale. Aspose.Words per Python funge da solida API che consente agli sviluppatori di manipolare e automatizzare vari aspetti dei documenti Word in modo programmatico. Se abbinate alle macro VBA, le funzionalità di automazione diventano ancora più potenti, consentendo l'esecuzione di attività complesse senza problemi.
 
 ## Iniziare con Aspose.Words per Python
 

@@ -109,7 +109,7 @@ Anda dapat menyesuaikan lebih lanjut pengaturan catatan akhir untuk memenuhi keb
 
 Dalam tutorial ini, kita telah menjelajahi cara bekerja dengan catatan kaki dan catatan akhir di Aspose.Words untuk Java. Fitur-fitur ini sangat berharga untuk membuat dokumen terstruktur dengan baik dengan kutipan dan referensi yang tepat.
 
-Sekarang setelah Anda mempelajari cara menggunakan catatan kaki dan catatan akhir, Anda dapat menyempurnakan format dokumen dan menjadikan konten Anda lebih profesional.
+Kini setelah Anda mempelajari cara menggunakan catatan kaki dan catatan akhir, Anda dapat menyempurnakan format dokumen dan menjadikan konten Anda lebih profesional.
 
 ### Pertanyaan yang Sering Diajukan
 

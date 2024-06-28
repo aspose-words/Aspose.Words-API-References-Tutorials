@@ -104,7 +104,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 	builder.InsertCell();
 	// अद्वितीय शैली पहचानकर्ता के आधार पर प्रयुक्त तालिका शैली सेट करें।
 	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	// लागू करें कि किन विशेषताओं को शैली द्वारा स्वरूपित किया जाना चाहिए।
+	// लागू करें कि किन विशेषताओं को शैली के अनुसार स्वरूपित किया जाना चाहिए।
 	table.StyleOptions =
 		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
 	table.AutoFit(AutoFitBehavior.AutoFitToContents);

@@ -2,57 +2,104 @@
 title: كشف الشكل الفني الذكي
 linktitle: كشف الشكل الفني الذكي
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية اكتشاف أشكال Smart Art في مستند Word باستخدام Aspose.Words لـ .NET، وتحديد التمثيلات الرسومية.
+description: تعرف على كيفية اكتشاف أشكال SmartArt في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل الشامل خطوة بخطوة. مثالية لأتمتة سير عمل المستندات الخاصة بك.
 type: docs
 weight: 10
 url: /ar/net/programming-with-shapes/detect-smart-art-shape/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية اكتشاف أشكال Smart Art في مستند Word باستخدام Aspose.Words لـ .NET. الأشكال الفنية الذكية هي تمثيلات رسومية تستخدم لتقديم المعلومات والأفكار بشكل مرئي.
+## مقدمة
+
+مرحبًا يا من هناك! هل سبق لك أن احتجت إلى العمل مع SmartArt في مستندات Word برمجياً؟ سواء كنت تقوم بأتمتة التقارير، أو إنشاء مستندات ديناميكية، أو مجرد الغوص في معالجة المستندات، فإن Aspose.Words for .NET يوفر لك كل ما تحتاجه. في هذا البرنامج التعليمي، سوف نستكشف كيفية اكتشاف أشكال SmartArt في مستندات Word باستخدام Aspose.Words for .NET. سنقوم بتفصيل كل خطوة في دليل مفصل وسهل المتابعة. بحلول نهاية هذه المقالة، ستتمكن من التعرف على أشكال SmartArt في أي مستند Word دون عناء!
 
 ## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي، يجب أن يكون لديك ما يلي:
 
-- تم تثبيت Aspose.Words لمكتبة .NET.
-- المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
+قبل أن نتعمق في التفاصيل، دعونا نتأكد من إعداد كل شيء:
+
+1. المعرفة الأساسية بـ C#: يجب أن تكون مرتاحًا لبناء جملة C# ومفاهيمها.
+2.  Aspose.Words لـ .NET: قم بتنزيله[هنا](https://releases.aspose.com/words/net/) . إذا كنت تستكشف فقط، فيمكنك البدء بـ[تجربة مجانية](https://releases.aspose.com/).
+3. Visual Studio: يجب أن يعمل أي إصدار حديث، ولكن يوصى باستخدام الإصدار الأحدث.
+4. .NET Framework: تأكد من تثبيته على نظامك.
+
+على استعداد للبدء؟ مذهل! دعونا نقفز مباشرة.
+
+## استيراد مساحات الأسماء
+
+للبدء، نحتاج إلى استيراد مساحات الأسماء الضرورية. تعتبر هذه الخطوة حاسمة لأنها توفر الوصول إلى الفئات والأساليب التي سنستخدمها.
+
+```csharp
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+تعد مساحات الأسماء هذه ضرورية لإنشاء مستندات Word ومعالجتها وتحليلها.
 
 ## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى الدليل الذي يوجد به المستند الخاص بك.
+
+أولاً، نحتاج إلى تحديد الدليل الذي سيتم تخزين مستنداتنا فيه. يساعد هذا Aspose.Words في تحديد موقع الملفات التي نريد تحليلها.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- قم بتحميل مستند Word باستخدام`Document` منشئ، وتمرير المسار إلى الوثيقة كمعلمة.
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى المستندات الخاصة بك.
+
+## الخطوة 2: تحميل المستند
+
+بعد ذلك، سنقوم بتحميل مستند Word الذي يحتوي على أشكال SmartArt التي نريد اكتشافها.
 
 ```csharp
 Document doc = new Document(dataDir + "Smart Art.docx");
 ```
 
-## الخطوة 3: اكتشاف الأشكال الفنية الذكية
- التكرار من خلال العقد الفرعية من النوع`Shape` في المستند باستخدام`GetChildNodes`طريقة. تحقق مما إذا كان كل شكل يحتوي على Smart Art باستخدام`HasSmart Art` ملكية.
+ هنا، نقوم بتهيئة أ`Document` كائن مع المسار إلى ملف Word الخاص بنا.
+
+## الخطوة 3: اكتشاف أشكال SmartArt
+
+الآن يأتي الجزء المثير – اكتشاف أشكال SmartArt في المستند. سنقوم بإحصاء عدد الأشكال التي تحتوي على SmartArt.
 
 ```csharp
-int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmart Art);
+int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmartArt);
+
+Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
-## الخطوة 4: إخراج النتيجة
-اطبع عدد الأشكال باستخدام Smart Art المكتشف في المستند.
+ في هذه الخطوة، نستخدم LINQ لتصفية وإحصاء الأشكال التي تحتوي على SmartArt. ال`GetChildNodes` الأسلوب يسترد جميع الأشكال، و`HasSmartArt` تتحقق الخاصية مما إذا كان الشكل يحتوي على SmartArt.
 
-```csharp
-Console.WriteLine("The document has {0} shapes with Smart Art.", count);
+## الخطوة 4: تشغيل الكود
+
+بمجرد كتابة الكود، قم بتشغيله في Visual Studio. ستعرض وحدة التحكم عدد أشكال SmartArt الموجودة في المستند.
+
+```plaintext
+The document has X shapes with SmartArt.
 ```
 
-### مثال على التعليمات البرمجية المصدر لـ Detect Smart Art Shape باستخدام Aspose.Words لـ .NET 
+استبدل "X" بالعدد الفعلي لأشكال SmartArt في المستند.
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## خاتمة
 
-	Document doc = new Document(dataDir + "Smart Art.docx");
-	int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmart Art);
-	Console.WriteLine("The document has {0} shapes with Smart Art.", count);
-```
+وهناك لديك! لقد تعلمت بنجاح كيفية اكتشاف أشكال SmartArt في مستندات Word باستخدام Aspose.Words لـ .NET. يغطي هذا البرنامج التعليمي إعداد البيئة الخاصة بك، وتحميل المستندات، واكتشاف أشكال SmartArt، وتشغيل التعليمات البرمجية. يقدم Aspose.Words مجموعة واسعة من الميزات، لذا تأكد من استكشاف[وثائق واجهة برمجة التطبيقات](https://reference.aspose.com/words/net/) لإطلاق العنان لإمكاناته الكاملة.
 
-هذا كل شيء! لقد نجحت في اكتشاف أشكال Smart Art في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+## الأسئلة الشائعة
+
+### 1. ما هو Aspose.Words لـ .NET؟
+
+Aspose.Words for .NET هي مكتبة قوية تتيح للمطورين إنشاء مستندات Word ومعالجتها وتحويلها برمجيًا. إنه مثالي لأتمتة المهام المتعلقة بالمستندات.
+
+### 2. هل يمكنني استخدام Aspose.Words لـ .NET مجانًا؟
+
+ يمكنك تجربة Aspose.Words لـ .NET باستخدام ملف[تجربة مجانية](https://releases.aspose.com/). للاستخدام طويل الأمد، ستحتاج إلى شراء ترخيص.
+
+### 3. كيف يمكنني اكتشاف أنواع أخرى من الأشكال في المستند؟
+
+ يمكنك تعديل استعلام LINQ للتحقق من الخصائص أو أنواع الأشكال الأخرى. الرجوع إلى[توثيق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
+
+### 4. كيف يمكنني الحصول على الدعم لـ Aspose.Words لـ .NET؟
+
+يمكنك الحصول على الدعم من خلال زيارة[Aspose منتدى الدعم](https://forum.aspose.com/c/words/8).
+
+### 5. هل يمكنني التعامل مع أشكال SmartArt برمجيًا؟
+
+ نعم، يتيح لك Aspose.Words التعامل مع أشكال SmartArt برمجيًا. افحص ال[توثيق](https://reference.aspose.com/words/net/) للحصول على تعليمات مفصلة.

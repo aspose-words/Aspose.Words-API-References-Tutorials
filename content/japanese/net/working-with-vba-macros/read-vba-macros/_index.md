@@ -23,11 +23,11 @@ url: /ja/net/working-with-vba-macros/read-vba-macros/
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## ステップ 2: ドキュメントをロードして VBA マクロを読み取る
+## ステップ 2: ドキュメントをロードし、VBA マクロを読み取ります。
 次に、Word 文書をロードし、VBA プロジェクトが含まれているかどうかを確認します。ドキュメントに VBA プロジェクトがある場合、プロジェクト内のすべてのモジュールをループし、各モジュールのソース コードを表示します。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "VBA project.docm");
 if (doc.VbaProject!= null)
 {

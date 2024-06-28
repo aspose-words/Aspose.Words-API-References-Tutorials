@@ -1,6 +1,6 @@
 ---
 title: การกำหนดค่าตัวเลือกการโหลด RTF ใน Aspose.Words สำหรับ Java
-linktitle: การกำหนดค่าตัวเลือกโหลด RTF
+linktitle: การกำหนดค่าตัวเลือกการโหลด RTF
 second_title: Aspose.Words Java การประมวลผลเอกสาร API
 description: การกำหนดค่าตัวเลือกการโหลด RTF ใน Aspose.Words สำหรับ Java เรียนรู้วิธีจดจำข้อความ UTF-8 ในเอกสาร RTF คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ด
 type: docs
@@ -66,7 +66,7 @@ doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rt
 
 ### ฉันจะปิดการใช้งานการรู้จำข้อความ UTF-8 ได้อย่างไร
 
- หากต้องการปิดใช้งานการรู้จำข้อความ UTF-8 เพียงตั้งค่า`RecognizeUtf8Text` ตัวเลือกในการ`false` เมื่อกำหนดค่าของคุณ`RtfLoadOptions` . ซึ่งสามารถทำได้โดยการโทร`setRecognizeUtf8Text(false)`.
+ หากต้องการปิดใช้งานการรู้จำข้อความ UTF-8 เพียงตั้งค่า`RecognizeUtf8Text` ตัวเลือกในการ`false` เมื่อกำหนดค่าของคุณ`RtfLoadOptions` - ซึ่งสามารถทำได้โดยการโทร`setRecognizeUtf8Text(false)`.
 
 ### RtfLoadOptions มีตัวเลือกอื่นใดบ้าง?
 

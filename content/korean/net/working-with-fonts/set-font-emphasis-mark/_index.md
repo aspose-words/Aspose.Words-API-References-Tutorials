@@ -16,7 +16,7 @@ url: /ko/net/working-with-fonts/set-font-emphasis-mark/
 - 프로젝트에 설치된 .NET용 Aspose.Words 라이브러리
 
 ## 1단계: 문서 디렉터리 정의
- Word 문서 위치에 대한 디렉터리 경로를 설정하여 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 코드에서 적절한 경로를 사용하세요.
+Word 문서 위치에 대한 디렉터리 경로를 설정하여 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 코드에서 적절한 경로를 사용하세요.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

@@ -59,18 +59,18 @@ public class DocumentMerger {
 
 เมื่อรวมเอกสาร อาจมีกรณีที่ลักษณะและการจัดรูปแบบของเอกสารต้นฉบับขัดแย้งกัน Aspose.Words สำหรับ Java มีโหมดรูปแบบการนำเข้าหลายโหมดเพื่อจัดการกับสถานการณ์ดังกล่าว:
 
-- `ImportFormatMode.KEEP_SOURCE_FORMATTING`: : 
+- `ImportFormatMode.KEEP_SOURCE_FORMATTING`- 
 คงการจัดรูปแบบของเอกสารต้นฉบับ
 
-- `ImportFormatMode.USE_DESTINATION_STYLES`: : 
+- `ImportFormatMode.USE_DESTINATION_STYLES`- 
 ใช้สไตล์ของเอกสารปลายทาง
 
-- `ImportFormatMode.KEEP_DIFFERENT_STYLES`: : 
+- `ImportFormatMode.KEEP_DIFFERENT_STYLES`- 
 รักษาสไตล์ที่แตกต่างกันระหว่างเอกสารต้นทางและปลายทาง
 
 เลือกโหมดรูปแบบการนำเข้าที่เหมาะสมตามความต้องการในการรวมของคุณ
 
-## 5. การรวมเอกสารหลายชุด
+## 5. การรวมเอกสารหลายชุดเข้าด้วยกัน
 
  หากต้องการรวมเอกสารมากกว่าสองรายการ ให้ปฏิบัติตามแนวทางที่คล้ายกันข้างต้น และใช้`appendDocument()` วิธีการหลายครั้ง:
 
@@ -101,13 +101,13 @@ public class DocumentMerger {
 
 บางครั้ง จำเป็นต้องแทรกตัวแบ่งหน้าหรือตัวแบ่งส่วนระหว่างเอกสารที่ผสานเพื่อรักษาโครงสร้างเอกสารที่เหมาะสม Aspose.Words มีตัวเลือกในการแทรกตัวแบ่งระหว่างการรวม:
 
-- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`: :
-ผสานเอกสารโดยไม่มีการหยุดพัก
+- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`-
+รวมเอกสารโดยไม่มีการหยุดพัก
 
-- `doc1.appendDocument(doc2, ImportFormatMode.USE_DESTINATION_STYLES);`: : 
+- `doc1.appendDocument(doc2, ImportFormatMode.USE_DESTINATION_STYLES);`- 
 แทรกตัวแบ่งอย่างต่อเนื่องระหว่างเอกสาร
 
-- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_DIFFERENT_STYLES);`: : 
+- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_DIFFERENT_STYLES);`- 
 แทรกตัวแบ่งหน้าเมื่อสไตล์ที่แตกต่างกันระหว่างเอกสาร
 
 เลือกวิธีการที่เหมาะสมตามความต้องการเฉพาะของคุณ
@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words สำหรับ Java ช่วยให้นักพัฒนา Java สามารถผสานเอกสาร Word ได้อย่างง่ายดาย ด้วยการทำตามคำแนะนำทีละขั้นตอนในบทความนี้ คุณสามารถผสานเอกสาร จัดการการจัดรูปแบบ แทรกตัวแบ่ง และจัดการข้อขัดแย้งได้อย่างง่ายดาย ด้วย Aspose.Words สำหรับ Java การรวมเอกสารจะกลายเป็นกระบวนการอัตโนมัติที่ราบรื่น ช่วยประหยัดเวลาและความพยายามอันมีค่า
 
-## 11. คำถามที่พบบ่อย 
+## 11.คำถามที่พบบ่อย 
 
 ### ฉันสามารถรวมเอกสารที่มีรูปแบบและสไตล์ต่างกันได้หรือไม่
 

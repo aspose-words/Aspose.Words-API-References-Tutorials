@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 おめでとう！ Aspose.Words for Java で図形をレンダリングする方法を学習しました。この機能により、Word 文書をプログラムで操作する際に可能性が広がります。
 
-## 9. よくある質問
+## 9.よくある質問
 
 ### Q1: 1 つのドキュメント内で複数の図形をレンダリングできますか?
 

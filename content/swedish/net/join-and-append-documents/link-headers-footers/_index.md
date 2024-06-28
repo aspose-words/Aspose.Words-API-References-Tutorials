@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Ladda käll- och måldokumenten
 
- Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
+Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words.`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Steg 4: Länka sidhuvuden och sidfötter till föregående avsnitt
 
-För att länka sidhuvuden och sidfötter i källdokumentet till föregående avsnitt i måldokumentet kan du använda`LinkToPrevious` metod för`HeadersFooters` samling. Genom att passera`true` som parameter åsidosätter du befintliga sidhuvuden eller sidfötter i källdokumentet.
+ För att länka sidhuvuden och sidfötter i källdokumentet till föregående avsnitt i måldokumentet kan du använda`LinkToPrevious` metod för`HeadersFooters` samling. Genom att passera`true` som parameter åsidosätter du befintliga sidhuvuden eller sidfötter i källdokumentet.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

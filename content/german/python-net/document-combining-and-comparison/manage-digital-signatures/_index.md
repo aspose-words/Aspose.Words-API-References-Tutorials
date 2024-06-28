@@ -1,7 +1,7 @@
 ---
 title: Verwalten digitaler Signaturen und Authentizität
 linktitle: Verwalten digitaler Signaturen und Authentizität
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python digitale Signaturen verwalten und die Echtheit von Dokumenten sicherstellen. Schritt-für-Schritt-Anleitung mit Quellcode.
 type: docs
 weight: 17
@@ -76,7 +76,7 @@ document.save("unsigned_document.docx")
 
 ## Sicherstellung der Dokumentenauthentizität
 
-Digitale Signaturen stellen die Authentizität des Dokuments sicher, indem sie die Quelle und Integrität des Dokuments bestätigen. Sie schützen vor Manipulationen und unbefugten Änderungen.
+Digitale Signaturen stellen die Authentizität von Dokumenten sicher, indem sie die Quelle und Integrität des Dokuments bestätigen. Sie schützen vor Manipulationen und unbefugten Änderungen.
 
 ## Anpassen des Erscheinungsbilds digitaler Signaturen
 

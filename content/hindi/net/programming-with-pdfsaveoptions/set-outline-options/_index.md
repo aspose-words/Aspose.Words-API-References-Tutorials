@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## चरण 3: योजना विकल्पों के साथ पीडीएफ विकल्पों के रूप में सहेजें को कॉन्फ़िगर करें
 
- उत्पन्न पीडीएफ में रूपरेखा विकल्प सेट करने के लिए, हमें कॉन्फ़िगर करने की आवश्यकता है`PdfSaveOptions` वस्तु। हम शीर्षक रूपरेखा स्तरों की संख्या निर्धारित कर सकते हैं (`HeadingsOutlineLevels`) और विस्तारित रूपरेखा स्तरों की संख्या (`ExpandedOutlineLevels`).
+उत्पन्न पीडीएफ में रूपरेखा विकल्प सेट करने के लिए, हमें कॉन्फ़िगर करने की आवश्यकता है`PdfSaveOptions` वस्तु। हम शीर्षक रूपरेखा स्तरों की संख्या निर्धारित कर सकते हैं (`HeadingsOutlineLevels`) और विस्तारित रूपरेखा स्तरों की संख्या (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

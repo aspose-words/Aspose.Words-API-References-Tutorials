@@ -24,7 +24,7 @@ url: /ja/java/document-loading-and-saving/saving-documents-as-ooxml-format/
 import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("Document.docx");
 
 // OoxmlSaveOptions を作成し、パスワードを設定する
@@ -45,7 +45,7 @@ import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.MsWordVersion;
 import com.aspose.words.OoxmlCompliance;
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("Document.docx");
 
 // Word 2016 用に最適化する
@@ -67,7 +67,7 @@ doc.save("ComplianceDoc.docx", saveOptions);
 import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("Document.docx");
 
 // OoxmlSaveOptions を作成し、最終保存時刻プロパティの更新を有効にする
@@ -107,7 +107,7 @@ import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.CompressionLevel;
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("Document.docx");
 
 // OoxmlSaveOptions を作成し、圧縮レベルを設定する

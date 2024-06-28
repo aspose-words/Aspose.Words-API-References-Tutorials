@@ -32,7 +32,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## 步骤 3：使用克隆的 VBA 项目创建新文档
+## 步骤 3：使用克隆的 VBA 项目创建一个新文档。
 我们将使用空的 VBA 项目创建一个新文档，并从源文档克隆 VBA 项目。
 
 ```csharp
@@ -74,7 +74,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaProject.docm");
 答：在从 Word 文档克隆 VBA 项目之前，您必须具备 C# 编程语言的应用知识。您还需要在项目中安装 Aspose.Words for .NET 库。此外，您还需要一个包含要克隆的 VBA 项目的 Word 文档。
 
 #### Q：代码中如何设置文档目录？
- A：在提供的代码中，您需要替换`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 项目的 Word 文档所在目录的适当路径。
+ A：在提供的代码中，需要替换。`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 项目的 Word 文档所在目录的适当路径。
 
 #### 问：如何使用克隆的 VBA 项目保存目标文档？
 

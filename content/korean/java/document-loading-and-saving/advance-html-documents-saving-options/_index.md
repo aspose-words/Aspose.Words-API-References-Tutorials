@@ -60,7 +60,7 @@ public void exportResources() throws Exception {
 ```java
 @Test
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    // 간결성을 위해 코드 조각은 표시되지 않습니다.
+    // 간결성을 위해 코드 조각은 표시되지 않았습니다.
 }
 ```
 
@@ -70,7 +70,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```java
 @Test
 public void convertMetafilesToSvg() throws Exception {
-    // 간결성을 위해 코드 조각은 표시되지 않습니다.
+    // 간결성을 위해 코드 조각은 표시되지 않았습니다.
 }
 ```
 
@@ -94,7 +94,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```java
 @Test
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    // 간결성을 위해 코드 조각은 표시되지 않습니다.
+    // 간결성을 위해 코드 조각은 표시되지 않았습니다.
 }
 ```
 
@@ -104,7 +104,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```java
 @Test
 public void resolveFontNames() throws Exception {
-    // 간결성을 위해 코드 조각은 표시되지 않습니다.
+    // 간결성을 위해 코드 조각은 표시되지 않았습니다.
 }
 ```
 
@@ -114,14 +114,14 @@ public void resolveFontNames() throws Exception {
 ```java
 @Test
 public void exportTextInputFormFieldAsText() throws Exception {
-    // 간결성을 위해 코드 조각은 표시되지 않습니다.
+    // 간결성을 위해 코드 조각은 표시되지 않았습니다.
 }
 ```
 
 ## 11. 결론
 이 튜토리얼에서는 Aspose.Words for Java가 제공하는 고급 HTML 문서 저장 옵션을 살펴보았습니다. 이러한 옵션을 사용하면 변환 프로세스를 세밀하게 제어할 수 있으므로 원본 Word 문서와 매우 유사한 HTML 문서를 만들 수 있습니다.
 
-## 12. FAQ
+## 12.FAQ
 다음은 Aspose.Words for Java 및 HTML 문서 저장 옵션 작업에 관해 자주 묻는 질문입니다:
 
 ### Q1: Aspose.Words for Java를 사용하여 HTML을 다시 Word 형식으로 변환하려면 어떻게 해야 합니까?

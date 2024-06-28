@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- In questo passaggio ne creiamo uno nuovo`Document` oggetto e un associato`DocumentBuilder` oggetto. Questi oggetti ci permetteranno di manipolare e generare il nostro documento.
+In questo passaggio ne creiamo uno nuovo`Document` oggetto e un associato`DocumentBuilder` oggetto. Questi oggetti ci permetteranno di manipolare e generare il nostro documento.
 
 ## Passaggio 3: creazione di un elenco con tre livelli di rientro
 
@@ -110,7 +110,7 @@ Configura il tuo ambiente di sviluppo aggiungendo i riferimenti necessari e impo
  Sì, puoi personalizzare il numero di caratteri di tabulazione per livello per il rientro dell'elenco modificando il valore di`ListIndentation.Count` proprietà nel`TxtSaveOptions` classe. È possibile specificare il numero di caratteri di tabulazione desiderati per ciascun livello di rientro.
 
 #### D: Quali altri caratteri posso utilizzare per il rientro dell'elenco con Aspose.Words per .NET?
- Oltre ai caratteri di tabulazione, puoi anche utilizzare altri caratteri per il rientro dell'elenco con Aspose.Words per .NET. È possibile impostare il`ListIndentation.Character` proprietà a qualsiasi carattere desiderato, come lo spazio (`' '`), per gli elenchi con rientro.
+ Oltre ai caratteri di tabulazione, puoi anche utilizzare altri caratteri per il rientro dell'elenco con Aspose.Words per .NET. È possibile impostare il`ListIndentation.Character` proprietà a qualsiasi carattere desiderato, come lo spazio (`' '`), per identificare gli elenchi.
 
 #### D: Aspose.Words per .NET offre altre funzionalità per la gestione degli elenchi?
 Sì, Aspose.Words per .NET offre molte funzionalità per la gestione degli elenchi nei documenti Word. Puoi creare elenchi numerati o puntati, impostare livelli di rientro, personalizzare lo stile degli elenchi, aggiungere elementi all'elenco e altro ancora.

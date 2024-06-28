@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Chỉ định danh sách có thứ tự.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Chỉ định nhấn mạnh kiểu nghiêng cho văn bản.
+// Chỉ định sự nhấn mạnh tiếng Ý cho văn bản.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

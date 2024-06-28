@@ -15,7 +15,7 @@ Avant de commencer, assurez-vous de disposer des éléments suivants :
 - La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
 ## Étape 1 : Définir le répertoire des documents
- Commencez par définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
+Commencez par définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -69,7 +69,7 @@ Félicitation ! Vous savez maintenant comment définir le répertoire des police
 
 #### Q : Que se passe-t-il si une police utilisée dans le document n'est pas présente dans les dossiers de polices définis ?
 
-: Si une police utilisée dans le document n'est pas présente dans les dossiers de polices définis dans Aspose.Words, une police de remplacement sera utilisée à la place. Cela garantit que le texte du document sera toujours affiché correctement, même si la police d'origine n'est pas disponible.
+R : Si une police utilisée dans le document n'est pas présente dans les dossiers de polices définis dans Aspose.Words, une police de remplacement sera utilisée à la place. Cela garantit que le texte du document sera toujours affiché correctement, même si la police d'origine n'est pas disponible.
 
 #### Q : Les dossiers de polices définis dans Aspose.Words ont-ils la priorité sur les polices installées sur le système ?
 

@@ -20,7 +20,7 @@ url: /zh/python-net/document-creation/creating-word-documents-using-python/
 
 ## 选择正确的 Python 库
 
-为了实现使用 Python 生成 Word 文档的目标，我们需要一个可靠且功能丰富的库。此任务的流行选择之一是“Aspose.Words for Python”库。它提供了一组强大的 API，可以轻松高效地进行文档操作。让我们探讨如何为我们的项目设置和使用这个库。
+为了实现使用 Python 生成 Word 文档的目标，我们需要一个可靠且功能丰富的库。此任务的流行选择之一是“Apose.Words for Python”库。它提供了一组强大的 API，可以轻松高效地进行文档操作。让我们探讨如何为我们的项目设置和使用这个库。
 
 ## 安装 Aspose.Words for Python
 

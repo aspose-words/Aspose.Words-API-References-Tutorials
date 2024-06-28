@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);
 ```
 
-Вот и все ! Вы успешно включили интерполяцию изображений при преобразовании документа в PDF с помощью Aspose.Words для .NET.
+Вот и все! Вы успешно включили интерполяцию изображений при преобразовании документа в PDF с помощью Aspose.Words для .NET.
 
 ### Пример исходного кода для интерполяции изображений с помощью Aspose.Words для .NET
 

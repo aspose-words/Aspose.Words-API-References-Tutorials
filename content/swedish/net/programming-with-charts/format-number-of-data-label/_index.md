@@ -17,7 +17,7 @@ Se till att du har följande förutsättningar:
 - Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den genom att använda NuGet-pakethanteraren för att installera den.
 - En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram.
 
  Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
@@ -115,13 +115,13 @@ Genom att använda Aspose.Words för .NET kan du införliva kraftfulla kartfunkt
 Aspose.Words för .NET är ett funktionsrikt dokumentbehandlingsbibliotek som gör det möjligt för utvecklare att skapa, manipulera och spara Word-dokument programmatiskt i .NET-applikationer. Den tillhandahåller ett brett utbud av funktioner för ordbehandling med dokumentelement, inklusive diagram och dataetiketter.
 
 #### Q2. Hur kan jag installera Aspose.Words för .NET?
-Du kan installera Aspose.Words för .NET genom att ladda ner det genom att använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Aspose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
+Du kan installera Aspose.Words för .NET genom att ladda ner det genom att använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Apose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
 
 #### Q3. Kan jag formatera andra aspekter av diagrammet med Aspose.Words för .NET?
 Ja, Aspose.Words för .NET tillhandahåller omfattande möjligheter för att formatera olika aspekter av ett diagram. Förutom dataetiketter kan du anpassa diagramtyp, seriedata, axelegenskaper, förklaring, titel, plotområde och många andra element i diagrammet. API:et erbjuder finkornig kontroll över diagrammets utseende och formatering.
 
 #### Q4. Kan jag använda olika nummerformat på olika dataetiketter i samma serie?
-Ja, Aspose.Words för .NET låter dig tillämpa olika nummerformat på enskilda dataetiketter inom samma serie. Genom att komma åt`DataLabels` samling associerad med en serie kan du ställa in`FormatCode` egenskapen för varje dataetikett för att ange önskat nummerformat. Detta gör att du kan presentera numeriska värden i olika format inom samma diagram.
+Ja, Aspose.Words för .NET låter dig tillämpa olika nummerformat på enskilda dataetiketter inom samma serie. Genom att komma åt`DataLabels` samling associerad med en serie kan du ställa in`FormatCode` egenskapen för varje dataetikett för att ange önskat nummerformat. Detta låter dig presentera numeriska värden i olika format inom samma diagram.
 
 #### F5. Kan jag använda anpassade nummerformat för dataetiketter?
  Ja, Aspose.Words för .NET stöder anpassade nummerformat för dataetiketter. Du kan ange önskat talformat genom att ställa in`FormatCode` egenskapen för en dataetikett till en anpassad formatkod. Detta ger dig flexibiliteten att använda ett brett utbud av talformat, som valutasymboler, datumformat, procentvärden och mer.

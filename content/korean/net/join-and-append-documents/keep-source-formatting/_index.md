@@ -8,7 +8,7 @@ weight: 10
 url: /ko/net/join-and-append-documents/keep-source-formatting/
 ---
 
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 소스 문서의 원래 형식을 유지하면서 대상 문서에 소스 문서를 추가하는 방법을 보여줍니다.
+이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 소스 문서의 원래 형식을 유지하면서 소스 문서를 대상 문서에 추가하는 방법을 보여줍니다.
 
 ## 1단계: 프로젝트 설정
 

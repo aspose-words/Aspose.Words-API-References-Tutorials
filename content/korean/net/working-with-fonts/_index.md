@@ -39,4 +39,4 @@ url: /ko/net/working-with-fonts/
 | [글꼴 알림 받기](./receive-notifications-of-fonts/) | .NET용 Aspose.Words를 사용할 때 누락되거나 대체된 글꼴 알림을 받는 방법을 알아보세요. |
 | [경고 알림 수신](./receive-warning-notification/) | .NET용 Aspose.Words를 사용할 때 경고 알림을 받고 문서의 문제나 경고를 관리하는 방법을 알아보세요. |
 | [리소스 Steam 글꼴 소스 예](./resource-steam-font-source-example/) | 리소스 스트림 글꼴 소스를 사용하여 .NET용 Aspose.Words에 사용자 정의 글꼴을 로드하는 방법을 알아보세요. |
-| [접미사 없이 대체 가져오기](./get-substitution-without-suffixes/) | 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서에서 접미사 없는 재정의를 얻는 방법을 알아봅니다. |
+| [접미사 없이 대체 가져오기](./get-substitution-without-suffixes/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 접미사 없는 재정의를 얻는 방법을 알아봅니다. |

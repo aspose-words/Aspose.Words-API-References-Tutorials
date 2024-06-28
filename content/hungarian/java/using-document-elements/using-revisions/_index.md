@@ -107,7 +107,7 @@ para.remove();
 // és változatként jelenik meg a Microsoft Wordben, amíg el nem fogadjuk vagy el nem utasítjuk az összes revíziót.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// A revízió törlése bekezdés eltávolításra kerül, ha elfogadjuk a változtatásokat.
+// A törölt revíziós bekezdést a rendszer eltávolítja, ha elfogadjuk a változtatásokat.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //volt.Üres

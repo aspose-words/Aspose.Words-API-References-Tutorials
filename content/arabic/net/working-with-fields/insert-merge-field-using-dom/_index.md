@@ -2,65 +2,52 @@
 title: أدخل حقل الدمج باستخدام DOM
 linktitle: أدخل حقل الدمج باستخدام DOM
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج حقول دمج الحقول المخصصة في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إدراج حقول الدمج وتكوينها في مستندات Word باستخدام Aspose.Words لـ .NET من خلال هذا البرنامج التعليمي الشامل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/working-with-fields/insert-merge-field-using-dom/
 ---
 
-فيما يلي دليل خطوة بخطوة لشرح كود مصدر C# أدناه والذي يستخدم ميزة "إدراج حقل دمج الحقول" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+إذا كنت تعمل على معالجة المستندات في .NET، فمن المحتمل أنك صادفت Aspose.Words. توفر هذه المكتبة القوية مجموعة واسعة من الميزات لمعالجة مستندات Word برمجياً. في هذا البرنامج التعليمي، سنركز على ميزة واحدة محددة: إدراج حقل دمج باستخدام نموذج كائن المستند (DOM) في Aspose.Words لـ .NET. سيرشدك هذا الدليل خلال كل خطوة، بدءًا من إعداد بيئتك وحتى إدراج حقل دمج وتحديثه في مستند Word.
 
-## الخطوة 1: إعداد دليل المستندات
+## المتطلبات الأساسية
 
-في الكود المقدم، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب لدليل المستندات الخاص بك.
+قبل الغوص في التعليمات البرمجية، دعنا نتأكد من أن لديك كل ما تحتاج إلى متابعته مع هذا البرنامج التعليمي.
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1. **Basic Knowledge of C#:** يجب أن تكون مرتاحًا مع برمجة C#.
+2. **Visual Studio Installed:** تأكد من تثبيت Visual Studio أو أي برنامج C# IDE آخر على جهازك.
+3. **Aspose.Words for .NET:** قم بتنزيل وتثبيت أحدث إصدار من Aspose.Words لـ .NET من[إطلاق](https://releases.aspose.com/words/net/).
+4. **Valid License:** إذا لم يكن لديك ترخيص، يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
 
-## الخطوة 2: إنشاء المستند و DocumentBuilder
+## الخطوة 1: قم بإعداد مشروعك
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+أول الأشياء أولاً، لنقم بإعداد مشروع جديد في Visual Studio.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+1. **Open Visual Studio.**
+2. **Create a New Project:** انتقل إلى ملف > جديد > المشروع. حدد تطبيق وحدة التحكم C#.
+3. **Name Your Project:** امنح مشروعك اسمًا ذا معنى، ثم انقر فوق "إنشاء".
 
-## الخطوة 3: نقل المؤشر إلى الفقرة
+## الخطوة 2: تثبيت Aspose.Words
 
- نحن نستخدم ال`MoveTo()` طريقة DocumentBuilder لتحريك المؤشر إلى الفقرة التي نريد إدراج حقل دمج الحقول فيها.
+لاستخدام Aspose.Words، تحتاج إلى إضافته إلى مشروعك. يمكن القيام بذلك عبر NuGet Package Manager.
 
-```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-builder. MoveTo(para);
-```
+1. **Open NuGet Package Manager:** انقر بزر الماوس الأيمن على مشروعك في Solution Explorer، ثم حدد Manage NuGet Packages.
+2. **Search for Aspose.Words:** في مدير الحزم NuGet، ابحث عن "Apose.Words".
+3. **Install the Package:** انقر فوق "تثبيت" لإضافة Aspose.Words إلى مشروعك.
 
-## الخطوة 4: إدراج حقل دمج الحقول
+## الخطوة 3: استيراد مساحات الأسماء
 
- نحن نستخدم DocumentBuilder`InsertField()` طريقة لإدراج حقل دمج الحقول في الفقرة.
-
-```csharp
-FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
-```
-
-نقوم بعد ذلك بتكوين خصائص حقل دمج الحقول عن طريق تحديد الخيارات المناسبة، مثل اسم الحقل، والنص الموجود قبل الحقل وبعده، وخيارات التنسيق الرأسي.
+لبدء استخدام Aspose.Words، تحتاج إلى استيراد مساحات الأسماء الضرورية إلى مشروعك. وإليك كيف يمكنك القيام بذلك:
 
 ```csharp
-field.FieldName = "Test1";
-field.TextBefore = "Test2";
-field. TextAfter = "Test3";
-field. IsMapped = true;
-field. IsVerticalFormatting = true;
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- وأخيراً نسمي`Update()` طريقة تحديث الحقل
+## الخطوة 4: تهيئة المستند الخاص بك
 
-```csharp
-field. Update();
-```
-
-### نموذج التعليمات البرمجية المصدر لإدراج حقل دمج الحقول مع Aspose.Words لـ .NET
+الآن بعد أن تم إعداد كل شيء، فلنقم بإنشاء مستند Word جديد وتهيئة DocumentBuilder.
 
 ```csharp
 // المسار إلى دليل المستندات.
@@ -69,51 +56,67 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // قم بإنشاء المستند وDocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## الخطوة 5: نقل المؤشر إلى فقرة محددة
+
+بعد ذلك، نحتاج إلى تحريك المؤشر إلى فقرة معينة في المستند حيث نريد إدراج حقل الدمج.
+
+```csharp
 // نقل المؤشر إلى الفقرة.
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-builder. MoveTo(para);
+builder.MoveToParagraph(2, 0);
+```
 
+## الخطوة 6: أدخل حقل الدمج
+
+ يعد إدراج حقل دمج أمرًا بسيطًا. سوف نستخدم`InsertField` طريقة`DocumentBuilder` فصل.
+
+```csharp
 // أدخل حقل دمج الحقول.
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
+```
 
+## الخطوة 7: تكوين حقل الدمج
+
+بعد إدراج حقل الدمج، يمكنك تعيين خصائص مختلفة لتكوينه وفقًا لاحتياجاتك.
+
+```csharp
 field.FieldName = "Test1";
 field.TextBefore = "Test2";
-field. TextAfter = "Test3";
-field. IsMapped = true;
-field. IsVerticalFormatting = true;
+field.TextAfter = "Test3";
+field.IsMapped = true;
+field.IsVerticalFormatting = true;
+```
 
+## الخطوة 8: تحديث وحفظ المستند
+
+وأخيرًا، قم بتحديث الحقل للتأكد من تطبيق كافة الإعدادات وحفظ المستند.
+
+```csharp
 // قم بتحديث الحقل.
-field. Update();
+field.Update();
 
+// احفظ المستند.
 doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
-في هذا المثال، قمنا بإنشاء مستند جديد، ونقلنا المؤشر إلى الفقرة المطلوبة، ثم قمنا بإدراج حقل دمج الحقول في المستند.
+## خاتمة
 
-### الأسئلة الشائعة
+باتباع هذه الخطوات، يمكنك بسهولة إدراج حقول الدمج وتكوينها في مستند Word باستخدام Aspose.Words for .NET. غطى هذا البرنامج التعليمي الخطوات الأساسية بدءًا من إعداد البيئة الخاصة بك وحتى حفظ المستند النهائي. باستخدام Aspose.Words، يمكنك أتمتة مهام معالجة المستندات المعقدة، مما يجعل تطبيقات .NET الخاصة بك أكثر قوة وكفاءة.
 
-#### س: كيف يمكنني إدراج حقل دمج في مستند Word باستخدام Aspose.Words لـ .NET مع DOM؟
+## الأسئلة الشائعة
 
-ج: لإدراج حقل دمج في مستند Word باستخدام Aspose.Words لـ .NET مع DOM، يمكنك اتباع الخطوات التالية:
+### 1. ما هو حقل الدمج؟
+حقل الدمج هو عنصر نائب في مستند يمكن استبداله ديناميكيًا ببيانات من مصدر بيانات، مثل قاعدة بيانات أو ملف CSV.
 
-1. انتقل إلى الفقرة التي تريد إدراج حقل الدمج فيها.
-2.  إنشاء`FieldMergeField` هدف.
-3. قم بتعيين خصائص حقل الدمج، مثل اسم الحقل وخيارات التنسيق.
-4.  أضف حقل الدمج إلى الفقرة باستخدام`Paragraph.AppendChild` طريقة.
+### 2. هل يمكنني استخدام Aspose.Words مجانًا؟
+ يقدم Aspose.Words نسخة تجريبية مجانية يمكنك تنزيلها[هنا](https://releases.aspose.com/). للاستخدام على المدى الطويل، سوف تحتاج إلى شراء ترخيص.
 
-#### س: كيف يمكنني تحديد البيانات المصدر لحقل الدمج في Aspose.Words لـ .NET؟
+### 3. كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words؟
+ يمكنك الحصول على ترخيص مؤقت من موقع Aspose[هنا](https://purchase.aspose.com/temporary-license/).
 
-ج: لتحديد البيانات المصدر لحقل الدمج في Aspose.Words لـ .NET، يمكنك استخدام`FieldMergeField.FieldName` طريقة لتعيين اسم حقل الدمج، وهو اسم حقل في مصدر بيانات خارجي مثل ملف CSV، أو قاعدة البيانات، وما إلى ذلك. يمكنك أيضًا استخدام`FieldMergeField.Text` طريقة لتعيين قيمة حقل الدمج مباشرة.
+### 4. ما هي إصدارات .NET التي يدعمها Aspose.Words؟
+يدعم Aspose.Words إصدارات متعددة من .NET، بما في ذلك .NET Framework و.NET Core و.NET Standard.
 
-#### س: هل يمكنني تخصيص مظهر حقل الدمج في مستند Word باستخدام Aspose.Words لـ .NET؟
-
- ج: نعم، يمكنك تخصيص مظهر حقل الدمج في مستند Word باستخدام Aspose.Words لـ .NET. يمكنك ضبط خيارات التنسيق مثل الحالة والخط واللون وما إلى ذلك باستخدام خصائص الملف`FieldMergeField` هدف.
-
-#### س: كيف يمكنني التحقق مما إذا كان قد تم إدراج حقل دمج بنجاح في مستند Word باستخدام Aspose.Words for .NET؟
-
- ج: للتحقق من إدراج حقل الدمج بنجاح، يمكنك استعراض محتوى المستند والبحث عن مثيلات حقل الدمج. يمكنك استخدام أساليب وخصائص`Document` كائن للوصول إلى الفقرات والحقول والعناصر الأخرى في المستند.
-
-#### س: هل يؤثر إدراج حقل دمج باستخدام DOM على بنية مستند Word مع Aspose.Words لـ .NET؟
-
-ج: لا يؤثر إدراج حقل دمج باستخدام DOM بشكل مباشر على بنية مستند Word. ومع ذلك، فإنه يضيف عنصر حقل جديد إلى محتوى المستند. يمكنك التعامل مع بنية المستند عن طريق إضافة العناصر الموجودة أو حذفها أو تعديلها وفقًا لاحتياجاتك.
+### 5. أين يمكنني العثور على وثائق واجهة برمجة التطبيقات الخاصة بـ Aspose.Words؟
+ وثائق API متاحة.[هنا](https://reference.aspose.com/words/net/).

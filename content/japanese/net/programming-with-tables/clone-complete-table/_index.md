@@ -2,7 +2,7 @@
 title: 完全なテーブルのクローンを作成する
 linktitle: 完全なテーブルのクローンを作成する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、表全体を Word 文書に複製する方法を学びます。
+description: Aspose.Words for .NET を使用して、テーブル全体のクローンを Word ドキュメントに作成する方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/programming-with-tables/clone-complete-table/
@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/clone-complete-table/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Tables.docx");
 
 //アレイへのアクセス
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 	//テーブルのクローンを作成し、元のテーブルの後にドキュメントに挿入します。
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// 2 つの表の間に空の段落を挿入します。
+	// つの表の間に空の段落を挿入します。
 	//そうしないと、保存時に 1 つに結合されます。これは文書の検証に関係します。
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

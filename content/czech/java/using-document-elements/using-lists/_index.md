@@ -164,7 +164,7 @@ Podle těchto kroků můžete vytvořit dokumenty s vlastními úrovněmi seznam
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Vytvořte číslovaný seznam založený na jedné ze šablon seznamu Microsoft Word
+        // Vytvořte číslovaný seznam založený na jedné ze šablon seznamu Microsoft Word.
         // použijte jej na aktuální odstavec tvůrce dokumentů.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // V tomto seznamu je devět úrovní, pojďme si je všechny vyzkoušet.
@@ -173,7 +173,7 @@ Podle těchto kroků můžete vytvořit dokumenty s vlastními úrovněmi seznam
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Vytvořte seznam s odrážkami založený na jedné ze šablon seznamu Microsoft Word
+        // Vytvořte seznam s odrážkami založený na jedné ze šablon seznamu Microsoft Word.
         // použijte jej na aktuální odstavec tvůrce dokumentů.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)
@@ -214,7 +214,7 @@ Podle těchto kroků můžete vytvořit dokumenty s vlastními úrovněmi seznam
 
 ## Závěr
 
-Gratulujeme! Naučili jste se efektivně pracovat se seznamy v Aspose.Words for Java. Seznamy jsou zásadní pro uspořádání a prezentaci obsahu ve vašich dokumentech. Ať už potřebujete restartovat seznamy v každé sekci nebo zadat úrovně seznamu, Aspose.Words for Java poskytuje nástroje, které potřebujete k vytváření profesionálně vypadajících dokumentů.
+Gratulujeme! Naučili jste se efektivně pracovat se seznamy v Aspose.Words for Java. Seznamy jsou zásadní pro uspořádání a prezentaci obsahu ve vašich dokumentech. Ať už potřebujete restartovat seznamy v každé sekci nebo zadat úrovně seznamu, Aspose.Words pro Java poskytuje nástroje, které potřebujete k vytváření profesionálně vypadajících dokumentů.
 
 Nyní můžete s jistotou používat tyto funkce k vylepšení úloh generování a formátování dokumentů. Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte se obrátit na[Aspose komunitní fórum](https://forum.aspose.com/) pro podporu.
 

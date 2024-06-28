@@ -173,7 +173,7 @@ public class DocumentMerger {
 
 - Thường xuyên kiểm tra các bản cập nhật và sử dụng phiên bản mới nhất của Aspose.Words dành cho Java để hưởng lợi từ các bản sửa lỗi và tính năng mới.
 
-- Kiểm tra việc hợp nhất tài liệu với nhiều loại và kích thước tài liệu khác nhau để đảm bảo hiệu suất tối ưu.
+- Kiểm tra việc hợp nhất tài liệu với nhiều loại và kích cỡ tài liệu khác nhau để đảm bảo hiệu suất tối ưu.
 
 - Hãy cân nhắc sử dụng hệ thống kiểm soát phiên bản để theo dõi các thay đổi trong quá trình hợp nhất tài liệu.
 
@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words for Java trao quyền cho các nhà phát triển Java khả năng hợp nhất các tài liệu Word một cách dễ dàng. Bằng cách làm theo hướng dẫn từng bước trong bài viết này, giờ đây bạn có thể hợp nhất tài liệu, xử lý định dạng, chèn dấu ngắt và quản lý xung đột một cách dễ dàng. Với Aspose.Words cho Java, việc hợp nhất tài liệu trở thành một quy trình liền mạch và tự động, tiết kiệm thời gian và công sức quý báu.
 
-## 11. Câu hỏi thường gặp 
+## 11.Câu hỏi thường gặp 
 
 ### Tôi có thể hợp nhất các tài liệu có định dạng và kiểu dáng khác nhau không?
 

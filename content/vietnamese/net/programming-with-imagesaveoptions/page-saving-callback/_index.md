@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          // Thực hiện các hành động tùy chỉnh của bạn ở đây
          // Bạn có thể truy cập thông tin trang thông qua thuộc tính "args.PageIndex"
-         // Bạn cũng có thể thay đổi tùy chọn lưu cho từng trang riêng lẻ
+         // Bạn cũng có thể thay đổi tùy chọn lưu cho từng trang riêng lẻ.
      }
 }
 ```

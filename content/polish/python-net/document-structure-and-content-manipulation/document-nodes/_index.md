@@ -8,7 +8,7 @@ weight: 20
 url: /pl/python-net/document-structure-and-content-manipulation/document-nodes/
 ---
 
-Przetwarzanie dokumentów jest podstawowym aspektem wielu aplikacji, a Aspose.Words dla Pythona zapewnia potężny interfejs API do programowego manipulowania dokumentami Word. Ten samouczek poprowadzi Cię przez proces zrozumienia i poruszania się po węzłach dokumentu przy użyciu Aspose.Words dla Pythona. Pod koniec tego przewodnika będziesz w stanie wykorzystać możliwości tego interfejsu API w celu usprawnienia zadań związanych z manipulowaniem dokumentami.
+Przetwarzanie dokumentów jest podstawowym aspektem wielu aplikacji, a Aspose.Words dla Pythona zapewnia potężne API do programowego manipulowania dokumentami Worda. Ten samouczek poprowadzi Cię przez proces zrozumienia i poruszania się po węzłach dokumentu przy użyciu Aspose.Words dla Pythona. Pod koniec tego przewodnika będziesz w stanie wykorzystać możliwości tego interfejsu API w celu usprawnienia zadań związanych z manipulowaniem dokumentami.
 
 ## Wprowadzenie do Aspose.Words dla Pythona
 

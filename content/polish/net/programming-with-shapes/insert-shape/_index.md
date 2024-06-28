@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Wstaw kształty
- Użyj`InsertShape` metoda`DocumentBuilder` obiekt, aby wstawić kształty do dokumentu. Określ typ kształtu, względne położenie w poziomie i w pionie, wymiary strony, rozmiar i typ zawijania. W razie potrzeby możesz także ustawić kąt obrotu kształtów.
+ Użyj`InsertShape` metoda`DocumentBuilder`obiekt, aby wstawić kształty do dokumentu. Określ typ kształtu, względne położenie w poziomie i w pionie, wymiary strony, rozmiar i typ zawijania. W razie potrzeby możesz także ustawić kąt obrotu kształtów.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

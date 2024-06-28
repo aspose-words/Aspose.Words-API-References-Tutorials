@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInforma
 
 ## ขั้นตอนที่ 3: ลบข้อมูลส่วนบุคคล
 
- ตอนนี้เราจะเปิดใช้งานการลบข้อมูลส่วนบุคคลโดยการตั้งค่า`RemovePersonalInformation`ทรัพย์สินเพื่อ`true`. ใช้รหัสต่อไปนี้:
+ ตอนนี้เราจะเปิดใช้งานการลบข้อมูลส่วนบุคคลโดยการตั้งค่า`RemovePersonalInformation`ทรัพย์สินเพื่อ`true`- ใช้รหัสต่อไปนี้:
 
 ```csharp
 doc.RemovePersonalInformation = true;

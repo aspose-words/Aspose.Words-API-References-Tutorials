@@ -79,7 +79,7 @@ for table in doc.get_child_nodes(doc.is_table, True):
             print("Cell Text:", cell.get_text())
 ```
 
-## Hiperhivatkozásokkal való munka
+## Munka a hiperhivatkozásokkal
 
 Hiperhivatkozások kibontása:
 

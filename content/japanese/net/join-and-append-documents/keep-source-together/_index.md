@@ -8,7 +8,7 @@ weight: 10
 url: /ja/net/join-and-append-documents/keep-source-together/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET の Keep Source Together 機能を使用するプロセスについて説明します。この機能を使用すると、ソース ドキュメントのコンテンツを宛先ドキュメントのコンテンツとともに保持しながら、複数の Word ドキュメントを結合して追加できます。 
+このチュートリアルでは、Aspose.Words for .NET の Keep Source Together 機能を使用するプロセスについて説明します。この機能を使用すると、ソース文書のコンテンツを宛先文書のコンテンツと一緒に保持しながら、複数の Word 文書を結合して追加できます。 
 
 ## 前提条件
 

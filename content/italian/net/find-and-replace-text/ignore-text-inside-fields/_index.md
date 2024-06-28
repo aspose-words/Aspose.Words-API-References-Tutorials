@@ -41,7 +41,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 
 ## Passaggio 4: utilizzo delle espressioni regolari per la ricerca e la sostituzione
 
-Per eseguire operazioni di ricerca e sostituzione sul testo del documento, utilizzeremo le espressioni regolari. Nel nostro esempio cercheremo tutte le occorrenze della lettera "e" e le sostituiremo con un asterisco "* ". Utilizzeremo .NET`Regex` classe per questo:
+Per eseguire operazioni di ricerca e sostituzione sul testo del documento, utilizzeremo le espressioni regolari. Nel nostro esempio cercheremo tutte le occorrenze della lettera "e" e le sostituiremo con un asterisco "* ". Utilizzeremo .NET`Regex` lezione per questo:
 
 ```csharp
 Regex regex = new Regex("e");

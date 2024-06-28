@@ -43,7 +43,7 @@ FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWho
 
 ## Étape 4 : Remplacer le texte dans le pied de page
 
- Nous utilisons le`Range.Replace` méthode pour effectuer le remplacement de texte dans le pied de page. Dans notre exemple, nous remplaçons l'expression « (C) 2006 Aspose Pty Ltd. » par « Copyright (C) 2020 par Aspose Pty Ltd. » :
+ Nous utilisons le`Range.Replace` méthode pour effectuer le remplacement de texte dans le pied de page. Dans notre exemple, nous remplaçons l'expression "(C) 2006 Aspose Pty Ltd." par « Copyright (C) 2020 par Aspose Pty Ltd. » :
 
 ```csharp
 footer

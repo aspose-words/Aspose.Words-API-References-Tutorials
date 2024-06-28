@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- De`Resolution` eigenschap specificeert de doelresolutie van de afbeeldingen en de`ResolutionThreshold`eigenschap specificeert de minimale resolutie waaronder de afbeeldingen niet worden verkleind.
+ De`Resolution` eigenschap specificeert de doelresolutie van de afbeeldingen en de`ResolutionThreshold`De eigenschap specificeert de minimale resolutie waaronder de afbeeldingen niet worden verkleind.
 
 ## Stap 3: Converteer document naar PDF
 

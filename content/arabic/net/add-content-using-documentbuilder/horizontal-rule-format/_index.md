@@ -2,36 +2,60 @@
 title: تنسيق القاعدة الأفقية في مستند Word
 linktitle: تنسيق القاعدة الأفقية في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية تنسيق القواعد الأفقية في مستندات Word باستخدام Aspose.Words لـ .NET. دليل خطوة بخطوة.
+description: تعرف على كيفية إدراج قواعد أفقية قابلة للتخصيص في مستندات Word باستخدام Aspose.Words لـ .NET. تعزيز أتمتة المستندات الخاصة بك.
 type: docs
 weight: 10
 url: /ar/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
-في هذا المثال الشامل، ستتعلم كيفية تنسيق قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. سنرشدك خلال العملية ونزودك بمقتطفات التعليمات البرمجية اللازمة لـ C#. بحلول نهاية هذا الدليل، ستكون قادرًا على تخصيص المحاذاة والعرض والارتفاع واللون والخصائص الأخرى للقاعدة الأفقية.
+## مقدمة
+
+في مجال تطوير .NET، يمكن أن تكون معالجة مستندات Word وتنسيقها برمجيًا مهمة شاقة. لحسن الحظ، يوفر Aspose.Words for .NET حلاً قويًا، يمكّن المطورين من أتمتة إنشاء المستندات وتحريرها وإدارتها بسهولة. تتعمق هذه المقالة في إحدى الميزات الأساسية: إدراج القواعد الأفقية في مستندات Word. سواء كنت مطورًا متمرسًا أو بدأت للتو في استخدام Aspose.Words، فإن إتقان هذه الإمكانية سيعزز عملية إنشاء المستندات لديك.
 
 ## المتطلبات الأساسية
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
-- Aspose.Words لمكتبة .NET المثبتة على نظامك.
 
-## الخطوة 1: إنشاء DocumentBuilder وإدراج قاعدة أفقية
-للبدء، أنشئ كائن DocumentBuilder واستخدم التابع InsertHorizontalRule لإدراج قاعدة أفقية:
+قبل الغوص في تنفيذ القواعد الأفقية باستخدام Aspose.Words لـ .NET، تأكد من أن لديك المتطلبات الأساسية التالية:
+
+- Visual Studio: قم بتثبيت Visual Studio IDE لتطوير .NET.
+- Aspose.Words لـ .NET: قم بتنزيل Aspose.Words لـ .NET وتثبيته من[هنا](https://releases.aspose.com/words/net/).
+- المعرفة الأساسية بـ C#: الإلمام بأساسيات لغة البرمجة C#.
+-  فئة DocumentBuilder: فهم`DocumentBuilder` فئة في Aspose.Words لمعالجة المستندات.
+
+## استيراد مساحات الأسماء
+
+للبدء، قم باستيراد مساحات الأسماء الضرورية في مشروع C# الخاص بك:
 
 ```csharp
+using Aspose.Words;
+using System.Drawing;
+```
+
+توفر مساحات الأسماء هذه إمكانية الوصول إلى فئات Aspose.Words لمعالجة المستندات وفئات .NET القياسية لمعالجة الألوان.
+
+دعنا نقسم عملية إضافة قاعدة أفقية في مستند Word باستخدام Aspose.Words لـ .NET إلى خطوات شاملة:
+
+## الخطوة 1: تهيئة DocumentBuilder وتعيين الدليل
+
+ أولاً، قم بتهيئة أ`DocumentBuilder` الكائن وقم بتعيين مسار الدليل حيث سيتم حفظ المستند.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 DocumentBuilder builder = new DocumentBuilder();
+```
+
+## الخطوة 2: أدخل القاعدة الأفقية
+
+ استخدم ال`InsertHorizontalRule()` طريقة`DocumentBuilder` فئة لإضافة قاعدة أفقية.
+
+```csharp
 Shape shape = builder.InsertHorizontalRule();
 ```
 
-## الخطوة 2: الوصول إلى تنسيق القاعدة الأفقية
-بعد ذلك، قم بالوصول إلى خاصية HorizontalRuleFormat لكائن الشكل لاسترداد خيارات التنسيق:
+## الخطوة 3: تخصيص تنسيق القاعدة الأفقية
+
+ الوصول إلى`HorizontalRuleFormat` خاصية الشكل المدرج لتخصيص مظهر القاعدة الأفقية.
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-```
-
-## الخطوة 3: تخصيص خيارات التنسيق
-الآن، يمكنك تخصيص خيارات التنسيق المتنوعة للقاعدة الأفقية. على سبيل المثال، يمكنك ضبط المحاذاة والعرض والارتفاع واللون والتظليل:
-
-```csharp
 horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
 horizontalRuleFormat.WidthPercent = 70;
 horizontalRuleFormat.Height = 3;
@@ -39,56 +63,37 @@ horizontalRuleFormat.Color = Color.Blue;
 horizontalRuleFormat.NoShade = true;
 ```
 
-## الخطوة 4: احفظ المستند
-بعد تنسيق القاعدة الأفقية، احفظ المستند في ملف باستخدام طريقة Save لكائن Document:
+- المحاذاة: تحديد محاذاة القاعدة الأفقية (`HorizontalRuleAlignment.Center` في هذا المثال).
+- WidthPercent: يضبط عرض القاعدة الأفقية كنسبة مئوية من عرض الصفحة (70% في هذا المثال).
+- الارتفاع: يحدد ارتفاع القاعدة الأفقية بالنقاط (3 نقاط في هذا المثال).
+- اللون: يضبط لون القاعدة الأفقية (`Color.Blue` في هذا المثال).
+- NoShade: يحدد ما إذا كان يجب أن يكون للقاعدة الأفقية ظل (`true` في هذا المثال).
+
+## الخطوة 4: حفظ المستند
+
+ وأخيرًا، احفظ المستند المعدل باستخدام الملف`Save` طريقة`Document` هدف.
 
 ```csharp
-builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
+builder.Document.Save(dataDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
-
-### مثال على كود المصدر لتنسيق القاعدة الأفقية باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لتنسيق القاعدة الأفقية باستخدام Aspose.Words لـ .NET:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder();
-
-Shape shape = builder.InsertHorizontalRule();
-
-HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
-horizontalRuleFormat.WidthPercent = 70;
-horizontalRuleFormat.Height = 3;
-horizontalRuleFormat.Color = Color.Blue;
-horizontalRuleFormat.NoShade = true;
-
-builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
-```
-
-تذكر تعديل الكود وفقًا لمتطلباتك المحددة وتعزيزه بوظائف إضافية حسب الحاجة.
 
 ## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تنسيق قاعدة أفقية في مستند Word باستخدام Aspose.Words لـ .NET. باتباع الدليل الموضح خطوة بخطوة واستخدام التعليمات البرمجية المصدر المتوفرة، يمكنك الآن تخصيص مظهر القواعد الأفقية لتحسين التخطيط المرئي للمستند.
 
-قم بتجربة خيارات التنسيق المختلفة لتحقيق النمط والتأثير المطلوبين لقواعدك الأفقية.
+يؤدي إتقان إدراج القواعد الأفقية في مستندات Word باستخدام Aspose.Words for .NET إلى تحسين قدرات أتمتة المستندات لديك. من خلال الاستفادة من مرونة وقوة Aspose.Words، يمكن للمطورين تبسيط عمليات إنشاء المستندات وتنسيقها بكفاءة.
 
-### الأسئلة الشائعة حول تنسيق القاعدة الأفقية في مستند Word
+## الأسئلة الشائعة
 
-#### س: هل يمكنني تطبيق ألوان مختلفة على القاعدة الأفقية؟
+### ما هو Aspose.Words لـ .NET؟
+تعد Aspose.Words for .NET مكتبة قوية للعمل مع مستندات Word برمجيًا في تطبيقات .NET.
 
-ج: بالتأكيد! باستخدام Aspose.Words for .NET، يمكنك بسهولة تخصيص لون القاعدة الأفقية عن طريق تعيين خاصية اللون إلى قيمة اللون المطلوبة. يتيح لك ذلك مطابقة القاعدة الأفقية مع التصميم العام للمستند الخاص بك.
+### كيف يمكنني تنزيل Aspose.Words لـ .NET؟
+ يمكنك تنزيل Aspose.Words لـ .NET من[هنا](https://releases.aspose.com/words/net/).
 
-#### س: هل من الممكن تعديل عرض وارتفاع القاعدة الأفقية؟
+### هل يمكنني تخصيص مظهر القواعد الأفقية في Aspose.Words؟
+نعم، يمكنك تخصيص جوانب مختلفة مثل المحاذاة والعرض والارتفاع واللون وتظليل القواعد الأفقية باستخدام Aspose.Words.
 
-ج: نعم، لديك السيطرة الكاملة على عرض وارتفاع القاعدة الأفقية. من خلال تعديل خصائص WidthPercent وHeight، يمكنك تحقيق الأبعاد المطلوبة للقاعدة الأفقية.
+### هل Aspose.Words مناسب لمعالجة المستندات على مستوى المؤسسة؟
+نعم، يتم استخدام Aspose.Words على نطاق واسع في بيئات المؤسسات نظرًا لإمكانياته القوية في معالجة المستندات.
 
-#### س: هل يمكنني تغيير محاذاة المسطرة الأفقية داخل المستند؟
-
-ج: بالتأكيد! يمكّنك Aspose.Words for .NET من تحديد محاذاة القاعدة الأفقية باستخدام خاصية Alignment. يمكنك الاختيار من بين خيارات متنوعة مثل Center وLeft وRight وJustified.
-
-#### س: هل يمكنني تطبيق التظليل أو لون الخلفية على القاعدة الأفقية؟
-
-ج: نعم، يمكنك إضافة تظليل أو لون الخلفية إلى القاعدة الأفقية. افتراضيًا، يتم تعيين الخاصية NoShade إلى true، ولكن يمكنك تعيينها إلى false وتحديد التظليل باستخدام الطرق المناسبة.
-
-#### س: هل يمكنني إدراج قواعد أفقية متعددة في مستند واحد؟
-
-ج: بالتأكيد! يمكنك إدراج قواعد أفقية متعددة في مستند Word باستخدام Aspose.Words لـ .NET. ما عليك سوى تكرار الخطوات الموجودة في البرنامج التعليمي حسب الحاجة لإضافة أي عدد تريده من القواعد الأفقية.
+### أين يمكنني الحصول على الدعم لـ Aspose.Words لـ .NET؟
+ للحصول على الدعم والمشاركة المجتمعية، قم بزيارة[منتدى Aspose.Words](https://forum.aspose.com/c/words/8).

@@ -24,14 +24,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Βήμα 2: Φορτώστε το έγγραφο
-Φορτώστε το έγγραφο του Word που περιέχει το σχέδιο Smart Art χρησιμοποιώντας το`Document` κατασκευαστής τάξης.
+ Φορτώστε το έγγραφο του Word που περιέχει το σχέδιο Smart Art χρησιμοποιώντας το`Document` κατασκευαστής τάξης.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Βήμα 3: Ενημερώστε το Έξυπνο Καλλιτεχνικό Σχέδιο
- Επαναλάβετε τα σχήματα στο έγγραφο χρησιμοποιώντας το`GetChildNodes` μέθοδος με το`NodeType.Shape` παράμετρος. Ελέγξτε εάν κάθε σχήμα έχει Smart Art χρησιμοποιώντας το`HasSmartArt` ιδιοκτησίας, και αν αληθεύει, καλέστε το`UpdateSmartArtDrawing` μέθοδος ενημέρωσης του σχεδίου Smart Art.
+ Επαναλάβετε τα σχήματα στο έγγραφο χρησιμοποιώντας το`GetChildNodes` μέθοδος με το`NodeType.Shape` Παράμετροι. Ελέγξτε εάν κάθε σχήμα έχει Smart Art χρησιμοποιώντας το`HasSmartArt` ιδιοκτησίας, και αν αληθεύει, καλέστε το`UpdateSmartArtDrawing` μέθοδος ενημέρωσης του σχεδίου Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

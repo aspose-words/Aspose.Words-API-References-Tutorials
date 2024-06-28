@@ -16,14 +16,14 @@ url: /ru/net/working-with-fonts/set-font-emphasis-mark/
 - Библиотека Aspose.Words для .NET, установленная в вашем проекте.
 
 ## Шаг 1. Определите каталог документов.
- Начните с установки пути к каталогу, соответствующего местоположению вашего документа Word. Заменять`"YOUR DOCUMENT DIRECTORY"` в коде с соответствующим путем.
+Начните с установки пути к каталогу, соответствующего местоположению вашего документа Word. Заменять`"YOUR DOCUMENT DIRECTORY"` в коде с соответствующим путем.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 2. Создайте и настройте документ
- Создайте экземпляр`Document` класс и связанный с ним`DocumentBuilder` для построения содержания документа. Использовать`Font.EmphasisMark` свойство, позволяющее установить стиль выделения шрифта`EmphasisMark.UnderSolidCircle` . Затем используйте`Write` и`Writeln` методы`DocumentBuilder` чтобы добавить текст с указанным выделением шрифта.
+ Создайте экземпляр`Document` класс и связанный с ним`DocumentBuilder` для построения содержания документа. Использовать`Font.EmphasisMark` свойство, позволяющее установить стиль выделения шрифта`EmphasisMark.UnderSolidCircle` . Затем используйте`Write` и`Writeln` методы`DocumentBuilder` Чтобы добавить текст с указанным выделением шрифта.
 
 ```csharp
 Document document = new Document();

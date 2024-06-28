@@ -112,7 +112,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 ## Fonctionnalités avancées d'automatisation des mots
 
-Aspose.Words fournit des fonctionnalités avancées telles que le publipostage, le cryptage de documents et l'utilisation de signets, de liens hypertexte et de commentaires.
+Aspose.Words fournit des fonctionnalités avancées telles que le publipostage, le cryptage de documents et l'utilisation de signets, d'hyperliens et de commentaires.
 
 ## Automatisation du traitement des documents
 
@@ -130,7 +130,7 @@ Oui, Aspose.Words est disponible pour plusieurs plates-formes, notamment Java et
 ### Puis-je convertir des documents Word en PDF à l’aide d’Aspose.Words ?
 Absolument! Aspose.Words prend en charge divers formats, y compris la conversion DOCX en PDF.
 
-### Aspose.Words est-il adapté à l’automatisation de tâches de traitement de documents à grande échelle ?
+### Aspose.Words est-il adapté à l’automatisation de tâches de traitement de documents à grande échelle ?
 Oui, Aspose.Words est conçu pour gérer efficacement de gros volumes de documents.
 
 ### Aspose.Words prend-il en charge la manipulation de documents dans le cloud ?
@@ -149,7 +149,7 @@ Absolument! Aspose.Words offre une prise en charge complète du formatage des do
 Oui, Aspose.Words simplifie la gestion des tableaux en vous permettant de créer, d'ajouter des lignes et des cellules et d'appliquer un formatage aux tableaux par programme.
 
 ### Aspose.Words prend-il en charge l'insertion d'images dans des documents ?
-A6 : Oui, vous pouvez facilement insérer des images dans des documents Word à l'aide d'Aspose.Words for Python, améliorant ainsi les aspects visuels de vos documents générés.
+A6 : Oui, vous pouvez facilement insérer des images dans des documents Word à l'aide d'Aspose.Words pour Python, améliorant ainsi les aspects visuels de vos documents générés.
 
 ### Puis-je exporter des documents Word vers différents formats de fichiers à l’aide d’Aspose.Words ?
 Absolument! Aspose.Words prend en charge divers formats de fichiers pour l'exportation, notamment PDF, DOCX, RTF, HTML, etc., offrant une flexibilité pour différents besoins.

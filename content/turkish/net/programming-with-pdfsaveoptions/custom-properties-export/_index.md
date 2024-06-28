@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## 2. Adım: Özel özellikler ekleyin
- Daha sonra istediğiniz özel özellikleri ekleyin. Örneğin, "Aspose" değerine sahip bir "Şirket" özelliği eklemek için şunu kullanın:`Add` CustomDocumentProperties koleksiyonunun yöntemi:
+ Daha sonra istediğiniz özel özellikleri ekleyin. Örneğin, "Apose" değerine sahip bir "Şirket" özelliği eklemek için şunu kullanın:`Add` CustomDocumentProperties koleksiyonunun yöntemi:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ C: Aspose.Words for .NET kullanarak bir belgenin özel özelliklerini PDF belges
 
  Bir örneğini oluşturun`Document` sınıf.
 
- İstenilen özel özellikleri kullanarak ekleyin`CustomDocumentProperties` Toplamak. Örneğin, şunu kullanın:`Add` "Aspose" değerine sahip bir "Şirket" özelliği ekleme yöntemi.
+ İstenilen özel özellikleri kullanarak ekleyin`CustomDocumentProperties` Toplamak. Örneğin, şunu kullanın:`Add` "Apose" değerine sahip bir "Şirket" özelliği ekleme yöntemi.
 
  Bir örneğini oluşturun`PdfSaveOptions` sınıfını seçin ve özel özelliklerin nasıl dışa aktarılacağını belirtin.`CustomPropertiesExport` mülk.`PdfCustomPropertiesExport.Standard` değer, özel özellikleri varsayılan ayarlara göre dışa aktarır.
 

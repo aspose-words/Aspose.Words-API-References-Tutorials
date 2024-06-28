@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 在本指南中，我們解釋如何使用 Aspose.Words for .NET 使用提供的 C# 原始程式碼變更 Word 文件目錄層級的樣式。透過按照提供的步驟操作，您可以輕鬆地在 C# 應用程式中自訂 Word 文件的目錄樣式。 Aspose.Words 提供了巨大的靈活性和強大的功能來處理文件的樣式和格式，使您能夠創建有吸引力且專業的 Word 文件。
 
-### Word 文件中更改目錄樣式的常見問題解答
+### Word文件中更改目錄樣式的常見問題解答
 
 #### Q：Aspose.Words for .NET 中「更改 Word 文件中的目錄樣式」功能的用途是什麼？
 

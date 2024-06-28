@@ -32,7 +32,7 @@ Tiếp theo, chúng tôi sẽ tải tài liệu Word nguồn chứa dự án VBA
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## Bước 3: Tạo một tài liệu mới với dự án VBA được nhân bản
+## Bước 3: Tạo một tài liệu mới với dự án VBA được nhân bản.
 Chúng tôi sẽ tạo một tài liệu mới với một dự án VBA trống và sao chép dự án VBA từ tài liệu nguồn.
 
 ```csharp
@@ -74,7 +74,7 @@ Trả lời: Sao chép dự án VBA bao gồm sao chép tất cả mã VBA từ 
 Trả lời: Trước khi có thể sao chép dự án VBA từ tài liệu Word, bạn phải có kiến thức làm việc về ngôn ngữ lập trình C#. Bạn cũng cần cài đặt thư viện Aspose.Words for .NET trong dự án của mình. Ngoài ra, bạn cần một tài liệu Word chứa dự án VBA mà bạn muốn sao chép.
 
 #### Hỏi: Làm cách nào để đặt thư mục tài liệu trong mã?
- Đáp: Trong mã được cung cấp, bạn cần thay thế`"YOUR DOCUMENTS DIRECTORY"` bằng đường dẫn thích hợp tới thư mục chứa tài liệu Word chứa dự án VBA.
+ Đáp: Trong mã được cung cấp, bạn cần thay thế.`"YOUR DOCUMENTS DIRECTORY"` bằng đường dẫn thích hợp tới thư mục chứa tài liệu Word chứa dự án VBA.
 
 #### Câu hỏi: Làm cách nào để lưu tài liệu đích bằng dự án VBA được sao chép?
 

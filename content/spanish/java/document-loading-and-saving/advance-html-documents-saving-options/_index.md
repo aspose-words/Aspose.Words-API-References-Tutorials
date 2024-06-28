@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. Conclusión
 En este tutorial, exploramos las opciones avanzadas para guardar documentos HTML proporcionadas por Aspose.Words para Java. Estas opciones le brindan un control detallado sobre el proceso de conversión, lo que le permite crear documentos HTML que se parecen mucho a los documentos originales de Word.
 
-## 12. Preguntas frecuentes
+## 12.Preguntas frecuentes
 Aquí hay algunas preguntas frecuentes sobre cómo trabajar con Aspose.Words para Java y las opciones para guardar documentos HTML:
 
 ### P1: ¿Cómo puedo convertir HTML nuevamente al formato Word usando Aspose.Words para Java?

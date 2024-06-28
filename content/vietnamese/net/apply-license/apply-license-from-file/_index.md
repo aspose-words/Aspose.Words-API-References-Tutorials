@@ -46,7 +46,7 @@ catch (Exception e)
 ```
 
 ## Bước 4: Xử lý bộ giấy phép hoặc lỗi
-Sau khi cài đặt giấy phép, bạn có thể xử lý các trường hợp cài đặt giấy phép hoặc lỗi dựa trên yêu cầu của mình. Trong đoạn mã trên, chúng tôi hiển thị thông báo thành công khi giấy phép được đặt thành công. Nếu có lỗi, chúng tôi sẽ bắt ngoại lệ và hiển thị thông báo lỗi.
+Sau khi đặt giấy phép, bạn có thể xử lý các tình huống đặt giấy phép hoặc lỗi dựa trên yêu cầu của mình. Trong đoạn mã trên, chúng tôi hiển thị thông báo thành công khi giấy phép được đặt thành công. Nếu có lỗi, chúng tôi sẽ bắt ngoại lệ và hiển thị thông báo lỗi.
 
 Bây giờ bạn đã áp dụng thành công giấy phép từ một tệp bằng Aspose.Words cho .NET. Bạn có thể tiếp tục các tác vụ xử lý tài liệu của mình bằng cách sử dụng đầy đủ chức năng của thư viện.
 

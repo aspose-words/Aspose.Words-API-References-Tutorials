@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 3: แทรกและกำหนดค่ารูปร่าง
-แทรกรูปร่างลงในเอกสารโดยใช้`InsertShape` วิธีการของ`DocumentBuilder` วัตถุ. กำหนดขนาดรูปร่างที่ต้องการ
+ แทรกรูปร่างลงในเอกสารโดยใช้`InsertShape` วิธีการของ`DocumentBuilder` วัตถุ วัตถุ กำหนดขนาดรูปร่างที่ต้องการ
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## ขั้นตอนที่ 6: บันทึกเอกสาร
- บันทึกเอกสารไปยังไดเร็กทอรีที่ระบุโดยใช้`Save` วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithShapes.VerticalAnchor.docx"
+ บันทึกเอกสารไปยังไดเร็กทอรีที่ระบุโดยใช้`Save`วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithShapes.VerticalAnchor.docx"
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

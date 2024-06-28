@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Paso 2: cargue los documentos de origen y de destino
 
- A continuación, debe cargar los documentos de origen y de destino utilizando Aspose.Words.`Document` clase. Actualice los nombres de los archivos en el`Document` constructor de acuerdo con los nombres de sus documentos.
+ continuación, debe cargar los documentos de origen y de destino utilizando Aspose.Words.`Document` clase. Actualice los nombres de los archivos en el`Document` constructor de acuerdo con los nombres de sus documentos.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -74,4 +74,4 @@ Aquí está el código fuente completo de la función Mantener formato de códig
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-¡Eso es todo! Ha implementado con éxito la función Listar mantener formato de origen utilizando Aspose.Words para .NET. El documento final contendrá el contenido combinado conservando el formato de lista del documento fuente.
+¡Eso es todo! Ha implementado con éxito la función Mantener formato de origen de lista utilizando Aspose.Words para .NET. El documento final contendrá el contenido combinado conservando el formato de lista del documento fuente.

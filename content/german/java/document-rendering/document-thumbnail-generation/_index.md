@@ -60,13 +60,13 @@ stream.writeTo(outputStream);
 
 ## Abschluss
 
-Die Erstellung von Miniaturansichten von Dokumenten mit Aspose.Words für Java bietet eine nahtlose Möglichkeit, das Benutzererlebnis Ihrer Anwendung durch die Bereitstellung optisch ansprechender Vorschauen von Dokumenten zu verbessern. Dies kann besonders in Dokumentenmanagementsystemen, Content-Plattformen und E-Commerce-Websites von Nutzen sein.
+Die Erstellung von Miniaturansichten von Dokumenten mit Aspose.Words für Java bietet eine nahtlose Möglichkeit, die Benutzererfahrung Ihrer Anwendung durch die Bereitstellung optisch ansprechender Vorschauen von Dokumenten zu verbessern. Dies kann besonders in Dokumentenmanagementsystemen, Content-Plattformen und E-Commerce-Websites von Nutzen sein.
 
 ## FAQs
 
 ### Wie installiere ich Aspose.Words für Java?
 
- Um Aspose.Words für Java zu installieren, besuchen Sie die Download-Seite[Hier](https://releases.aspose.com/words/java/) und befolgen Sie die mitgelieferten Installationsanweisungen.
+ Um Aspose.Words für Java zu installieren, besuchen Sie die Download-Seite.[Hier](https://releases.aspose.com/words/java/) und befolgen Sie die mitgelieferten Installationsanweisungen.
 
 ### Kann ich die Größe des generierten Miniaturbilds anpassen?
 

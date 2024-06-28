@@ -35,7 +35,7 @@ using Aspose.Words.DocumentBuilder;
 DocumentBuilder builderA = new DocumentBuilder(new Document());
 builderA.Writeln("This is a simple A word.");
 
-// दस्तावेज़ बी बनाएँ.
+// दस्तावेज़ बी बनाएं.
 DocumentBuilder builderB = new DocumentBuilder(new Document());
 builderB.Writeln("This is simple B words.");
 ```

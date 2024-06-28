@@ -34,7 +34,7 @@ Aspose.Words for Java 是一个功能强大且多功能的库，使 Java 开发�
 ### [使用 HTML、RTF 和 TXT 选项优化文档加载](./optimizing-document-loading-options/)
 使用 Aspose.Words for Java 优化文档加载。提高 HTML、RTF 和 TXT 文件的速度和效率。今天就提升用户体验！
 ### [使用 DOC、HTML 和图像选项高效保存文档](./efficient-document-saving-options/)
-使用 Aspose.Words for Java 学习高效的文档保存。本分步指南涵盖 DOC、HTML 和图像选项，可增强您的文档管理技能
+使用 Aspose.Words for Java 学习高效的文档保存。本分步指南涵盖了 DOC、HTML 和图像选项，可增强您的文档管理技能。
 ### [掌握文档的高级保存设置](./mastering-advanced-save-settings/)
 使用 Aspose.Words for Java 掌握高级文档保存设置。了解轻松格式化、保护、优化和自动化文档创建。
 ### [使用清理、字段和 XML 数据操作文档内容](./manipulating-document-content/)

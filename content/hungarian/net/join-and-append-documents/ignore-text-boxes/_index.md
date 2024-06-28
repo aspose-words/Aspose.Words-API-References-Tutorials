@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## 4. lépés: Szövegdoboz tartalmának hozzáfűzése
 
- Hozzon létre egy`NodeImporter` objektumot, és ezzel importálhatja a szövegdoboz-csomópontokat a forrásdokumentumból a céldokumentumba. Ismételje meg a forrásdokumentum minden bekezdését, és importálja azokat a céldokumentumba.
+ Hozzon létre egy`NodeImporter`objektumot, és ezzel importálhatja a szövegdoboz-csomópontokat a forrásdokumentumból a céldokumentumba. Ismételje meg a forrásdokumentum minden bekezdését, és importálja azokat a céldokumentumba.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## 5. lépés: Mentse el a céldokumentumot
 
- Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

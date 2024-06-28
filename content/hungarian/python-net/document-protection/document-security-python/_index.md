@@ -18,7 +18,7 @@ A dokumentumbiztonság a digitális dokumentumok jogosulatlan hozzáféréstől,
 
 ## 2. A dokumentumbiztonság fontosságának megértése
 
-A mai összekapcsolt világban az adatszivárgások és a kibertámadások kockázata nagyobb, mint valaha. A személyes dokumentumoktól a vállalati aktákig minden védelem nélkül hagyott adat rossz kezekbe kerülhet, ami súlyos következményekkel járhat. A dokumentumok biztonsága az egyének és a szervezetek számára egyaránt elengedhetetlen az adatszivárgások megelőzése és a bizalmas információk veszélyeztetésének elkerülése érdekében.
+A mai összekapcsolt világban az adatszivárgások és a kibertámadások kockázata nagyobb, mint valaha. A személyes dokumentumoktól a vállalati aktákig minden védelem nélkül hagyott adat rossz kezekbe kerülhet, ami súlyos következményekkel járhat. A dokumentumok biztonsága alapvető fontosságú az egyének és a szervezetek számára az adatok kiszivárogtatásának megakadályozása és az érzékeny információk veszélyeztetése ellen.
 
 ## 3. Az Aspose.Words for Python bemutatása
 

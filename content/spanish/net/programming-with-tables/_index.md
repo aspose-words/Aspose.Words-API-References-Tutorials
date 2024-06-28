@@ -19,7 +19,7 @@ Si sigue estos tutoriales, podrá aprovechar al máximo las funciones de manipul
 | [Ajustar automáticamente la tabla al contenido](./auto-fit-table-to-contents/) | Aprenda cómo ajustar automáticamente una tabla a su contenido en un documento de Word usando Aspose.Words para .NET. |
 | [Clonar tabla completa](./clone-complete-table/) | Aprenda a clonar una tabla completa en un documento de Word con Aspose.Words para .NET. |
 | [Índice de búsqueda](./finding-index/) | Aprenda a buscar índices de tablas, filas y celdas en un documento de Word con Aspose.Words para .NET. |
-| [Insertar tabla directamente](./insert-table-directly/) | Aprenda cómo insertar una tabla directamente en un documento de Word con Aspose.Words para .NET. |
+| [Insertar tabla directamente](./insert-table-directly/) | Aprenda a insertar tablas directamente en documentos de Word usando Aspose.Words para .NET. Siga nuestra guía detallada paso a paso para agilizar la creación de documentos. |
 | [Insertar tabla desde HTML](./insert-table-from-html/) | Aprenda a insertar una tabla desde HTML en un documento de Word con Aspose.Words para .NET. |
 | [Crear tabla simple](./create-simple-table/) | Aprenda a crear una tabla sencilla en un documento de Word con Aspose.Words para .NET. |
 | [Tabla formateada](./formatted-table/) | Aprenda a crear una tabla formateada en un documento de Word con Aspose.Words para .NET. |

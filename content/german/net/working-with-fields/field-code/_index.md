@@ -30,7 +30,7 @@ Ersetzen Sie „Hyperlinks.docx“ unbedingt durch den Namen Ihrer eigenen Datei
 
 ## Schritt 3: Dokumentfelder durchsuchen
 
- Wir benutzen ein`foreach` Schleife, um alle im Dokument vorhandenen Felder zu durchlaufen.
+ Wir benutzen ein`foreach`Schleife, um alle im Dokument vorhandenen Felder zu durchlaufen.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Damit ist unser Leitfaden zur Verwendung der Funktion „Get Field Code“ mit A
 
 #### F: Wie kann ich mit Aspose.Words für .NET ein Feld in ein Word-Dokument einfügen?
 
- A: Um mit Aspose.Words für .NET ein Feld in ein Word-Dokument einzufügen, können Sie das verwenden`DocumentBuilder.InsertField` Methode, die den entsprechenden Feldcode angibt. Sie können zum Beispiel verwenden`builder.InsertField("MERGEFIELD CustomerName")` um ein Zusammenführungsfeld in das Dokument einzufügen.
+ A: Um mit Aspose.Words für .NET ein Feld in ein Word-Dokument einzufügen, können Sie das verwenden`DocumentBuilder.InsertField` Methode, die den entsprechenden Feldcode angibt. Sie können zum Beispiel verwenden`builder.InsertField("MERGEFIELD CustomerName")`um ein Zusammenführungsfeld in das Dokument einzufügen.
 
 #### F: Wie kann ich Felder in einem Dokument mit Aspose.Words für .NET aktualisieren?
 
- A: Um Dokumentfelder mit Aspose.Words für .NET zu aktualisieren, können Sie das verwenden`Document.UpdateFields`Methode. Dadurch werden alle im Dokument vorhandenen Felder aktualisiert, z. B. Zusammenführungsfelder, Datumsfelder usw.
+ A: Um Dokumentfelder mit Aspose.Words für .NET zu aktualisieren, können Sie das verwenden`Document.UpdateFields` Methode. Dadurch werden alle im Dokument vorhandenen Felder aktualisiert, z. B. Zusammenführungsfelder, Datumsfelder usw.
 
 #### F: Wie kann ich den Wert eines bestimmten Felds in Aspose.Words für .NET abrufen?
 

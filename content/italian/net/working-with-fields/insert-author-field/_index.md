@@ -84,7 +84,7 @@ R: Il campo autore in un documento Word può essere aggiornato per riflettere il
 
 #### D: È possibile personalizzare il formato del campo autore in un documento Word?
 
-R: Sì, è possibile personalizzare il formato del campo autore in un documento Word. Per impostazione predefinita, il campo autore visualizza semplicemente il nome dell'autore. Tuttavia, puoi aggiungere ulteriori informazioni come data e ora di modifica utilizzando le opzioni di formattazione disponibili in Aspose.Words.
+R: Sì, è possibile personalizzare il formato del campo autore in un documento Word. Per impostazione predefinita, il campo autore mostra semplicemente il nome dell'autore. Tuttavia, puoi aggiungere ulteriori informazioni come data e ora di modifica utilizzando le opzioni di formattazione disponibili in Aspose.Words.
 
 #### D: Il campo autore è sensibile alle successive modifiche al nome dell'autore?
 

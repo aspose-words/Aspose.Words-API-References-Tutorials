@@ -19,7 +19,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 
 ## Stap 2: Open de bron- en doeldocumenten
 
- Open de bron- en doeldocumenten met behulp van de`Document` klasse constructeur. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+ Open de bron- en doeldocumenten met behulp van de`Document` klasse constructor. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
 
 ```csharp
 // Pad naar uw documentmap
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Stap 3: Stel pagina-instellingen in voor het brondocument
 
- Pas de pagina-instellingen van het brondocument aan om een goede voortzetting en nummering te garanderen. In dit voorbeeld stellen we het begin van de sectie in op`SectionStart.Continuous` en start de paginanummering opnieuw. We zorgen er ook voor dat de paginabreedte, hoogte en richting overeenkomen met het laatste gedeelte van het bestemmingsdocument.
+ Pas de pagina-instellingen van het brondocument aan om een goede voortzetting en nummering te garanderen. In dit voorbeeld stellen we het begin van de sectie in op`SectionStart.Continuous`en start de paginanummering opnieuw. We zorgen er ook voor dat de paginabreedte, hoogte en richting overeenkomen met het laatste gedeelte van het bestemmingsdocument.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Stap 4: Pas de alineaopmaak aan
 
- Om de juiste opmaak te behouden, doorloopt u alle alinea's in het brondocument en stelt u de`KeepWithNext`eigendom aan`true`Dit zorgt ervoor dat alinea's bij elkaar blijven tijdens het toevoegproces.
+ Om de juiste opmaak te behouden, doorloopt u alle alinea's in het brondocument en stelt u de`KeepWithNext`eigendom aan`true`. Dit zorgt ervoor dat alinea's bij elkaar blijven tijdens het toevoegproces.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Stap 6: Sla het bestemmingsdocument op
 
- Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
+Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ Hiermee is de implementatie voltooid van het toevoegen van een document met vers
 	// Begin de paginanummering opnieuw aan het begin van het brondocument.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Om er zeker van te zijn dat dit niet gebeurt als het brondocument verschillende pagina-instellingen heeft, zorgt u ervoor dat de
+	//Om er zeker van te zijn dat dit niet gebeurt als het brondocument verschillende pagina-instellingen heeft, zorgt u ervoor dat de
 	// instellingen zijn identiek voor het laatste gedeelte van het bestemmingsdocument.
 	// Als er nog meer doorlopende secties volgen in het brondocument,
-	//dit moet voor die secties worden herhaald.
+	// dit moet voor die secties worden herhaald.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

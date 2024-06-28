@@ -16,7 +16,7 @@ Seznamy existují ve dvou základních typech: s odrážkami a číslované. Umo
 
 ## Nastavení prostředí
 
- Než se vrhneme na vytváření a správu seznamů, ujistěte se, že máte nainstalovanou knihovnu Aspose.Words pro Python. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/python/) . Dále se podívejte do dokumentace API na adrese[tento odkaz](https://reference.aspose.com/words/python-net/) pro podrobné informace.
+Než se vrhneme na vytváření a správu seznamů, ujistěte se, že máte nainstalovanou knihovnu Aspose.Words pro Python. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/python/) . Dále se podívejte do dokumentace API na adrese[tento odkaz](https://reference.aspose.com/words/python-net/) pro podrobné informace.
 
 ## Vytváření seznamů s odrážkami
 

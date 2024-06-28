@@ -32,4 +32,4 @@ Ismerje meg, hogyan lehet dokumentumokat titkosítani és visszafejteni az Aspos
 ### [Digitális aláírások a dokumentumokban](./digital-signatures-in-documents/)
 Ismerje meg, hogyan valósíthat meg biztonságos digitális aláírást dokumentumokban az Aspose.Words for Java használatával. Biztosítsa a dokumentum integritását lépésről lépésre szóló útmutatásokkal és forráskóddal
 ### [Dokumentumok szerkesztése és adatvédelem](./document-redaction-data-protection/)
-Ismerje meg, hogyan védheti meg dokumentumait és hogyan törölheti az érzékeny adatokat az Aspose.Words for Java segítségével. Lépésről lépésre útmutató forráskóddal.
+Ismerje meg, hogyan védheti meg dokumentumait és törölheti az érzékeny adatokat az Aspose.Words for Java használatával. Lépésről lépésre útmutató forráskóddal.

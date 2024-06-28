@@ -30,7 +30,7 @@ url: /zh/java/table-processing/managing-tables-layouts/
 //创建一个新文档
 Document doc = new Document();
 
-//创建一个 3 行 4 列的表
+//创建一个 3 行 4 列的表。
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

@@ -2,87 +2,166 @@
 title: 在替換處插入文檔
 linktitle: 在替換處插入文檔
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 插入取代文件。
+description: 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 將一個 Word 文件無縫插入到另一個文件中。非常適合希望簡化文件處理的開發人員。
 type: docs
 weight: 10
 url: /zh-hant/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-在本教學中，我們將引導您了解如何使用 Aspose.Words for .NET 的「替換時插入文件」功能在替換時將文件插入到另一個文件中。請按照以下步驟了解原始程式碼並執行文件插入。
+## 介紹
 
-## 第 1 步：載入主文檔
+嘿，文檔大師！您是否曾經發現自己陷入了程式碼困境，試圖找出如何將一個 Word 文件無縫插入到另一個文件中？不要害怕，因為今天我們將深入了解 Aspose.Words for .NET 的世界，讓這項任務變得輕而易舉。我們將詳細介紹如何使用這個強大的程式庫在尋找和取代操作期間的特定點插入文件。準備好成為 Aspose.Words 嚮導了嗎？讓我們開始吧！
 
-首先，指定文檔的目錄並將主文檔載入到 Document 物件中。就是這樣：
+## 先決條件
+
+在我們開始編寫程式碼之前，您需要做好以下幾件事：
+
+-  Visual Studio：確保您的電腦上安裝了 Visual Studio。如果您還沒有，您可以從以下位置下載[這裡](https://visualstudio.microsoft.com/).
+- Aspose.Words for .NET：您需要 Aspose.Words 函式庫。您可以從[阿斯普斯網站](https://releases.aspose.com/words/net/).
+- 基本 C# 知識：對 C# 和 .NET 的基本了解將幫助您遵循本教學。
+
+好吧，拋開這些，讓我們開始寫一些程式碼吧！
+
+## 導入命名空間
+
+首先，我們需要導入必要的命名空間來使用 Aspose.Words。這就像在開始專案之前收集所有工具一樣。在 C# 檔案頂部加入這些 using 指令：
 
 ```csharp
-//文檔目錄的路徑。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using Aspose.Words.Tables;
 ```
 
-## 步驟 2：配置搜尋和取代選項
+現在我們已經具備了先決條件，讓我們將這個過程分解為幾個小步驟。每一步都至關重要，將使我們更接近我們的目標。
 
-現在，我們將透過指定搜尋方向和取代回呼來配置查找和取代選項，以將一個文件插入另一個文件。就是這樣：
+## 第 1 步：設定文檔目錄
 
-```csharp
-//配置搜尋和取代選項。
-FindReplaceOptions options = new FindReplaceOptions
-{
-Direction = FindReplaceDirection.Backward,
-ReplacingCallback = new InsertDocumentAtReplaceHandler()
-};
-```
-
-## 第三步：呼叫替換方法
-
-現在，我們將使用配置的選項呼叫替換方法來查找指定文字並將其替換為空字串。就是這樣：
+首先，我們需要指定儲存文檔的目錄。這就像大型表演之前的舞台搭建。
 
 ```csharp
-mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-```
-
-### 使用 Aspose.Words for .NET 在替換時插入文件的範例原始碼
-
-以下是取代 Aspose.Words for .NET 時插入文件功能的完整原始碼：
-
-```csharp
-//文檔目錄的路徑。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
-//設定尋找和取代選項。
+代替`"YOUR DOCUMENT DIRECTORY"`與您的目錄的路徑。這是您的文件生存和呼吸的地方。
+
+## 步驟2：載入主文檔
+
+接下來，我們載入要插入另一個文檔的主文檔。將此視為我們的主要舞台，所有動作都將在其中發生。
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+此程式碼從指定目錄載入主文檔。
+
+## 步驟 3：設定查找和取代選項
+
+為了找到我們想要插入文件的特定位置，我們使用尋找和取代功能。這就像使用地圖來找到我們新添加的確切位置一樣。
+
+```csharp
 FindReplaceOptions options = new FindReplaceOptions
 {
-	Direction = FindReplaceDirection.Backward, 
-	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+    Direction = FindReplaceDirection.Backward,
+    ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
+```
 
-//調用替換方法。
+在這裡，我們將方向設定為向後並指定接下來定義的自訂回調處理程序。
+
+## 步驟4：執行取代操作
+
+現在，我們告訴主文件尋找特定的佔位符文字並將其替換為空，同時使用自訂回調插入另一個文件。
+
+```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+此程式碼執行尋找和取代操作，然後儲存更新的文件。
+
+## 第 5 步：建立自訂替換回呼處理程序
+
+我們的自訂回調處理程序就是神奇發生的地方。此處理程序將定義在尋找和取代作業期間如何執行文件插入。
+
+```csharp
+private class InsertDocumentAtReplaceHandler : IReplacingCallback
+{
+    ReplaceAction IReplacingCallback.Replacing(ReplacingArgs args)
+    {
+        Document subDoc = new Document(dataDir + "Document insertion 2.docx");
+
+        //在包含符合文字的段落之後插入文件。
+        Paragraph para = (Paragraph)args.MatchNode.ParentNode;
+        InsertDocument(para, subDoc);
+
+        //刪除包含符合文字的段落。
+        para.Remove();
+        return ReplaceAction.Skip;
+    }
+}
+```
+
+在這裡，我們載入要插入的文檔，然後呼叫輔助方法來執行插入。
+
+## 第 6 步：定義插入文檔方法
+
+我們的最後一個難題是在指定位置實際插入文件的方法。
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+	{
+		CompositeNode destinationParent = insertionDestination.ParentNode;
+
+		NodeImporter importer =
+			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+		//循環該節主體中的所有區塊級節點，
+		//然後克隆並插入不是節的最後一個空段落的每個節點。
+		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+		foreach (Node srcNode in srcSection.Body)
+		{
+			if (srcNode.NodeType == NodeType.Paragraph)
+			{
+				Paragraph para = (Paragraph)srcNode;
+				if (para.IsEndOfSection && !para.HasChildNodes)
+					continue;
+			}
+
+			Node newNode = importer.ImportNode(srcNode, true);
+
+			destinationParent.InsertAfter(newNode, insertionDestination);
+			insertionDestination = newNode;
+		}
+	}
+	else
+	{
+		throw new ArgumentException("The destination node should be either a paragraph or table.");
+	}
+}
+```
+
+此方法負責從要插入的文件中匯入節點並將它們放置在主文件中的正確位置。
 
 ## 結論
 
-在本教學中，我們探討如何使用 Aspose.Words for .NET 的「替換時插入文件」功能在替換期間將文件插入到另一個文件中。透過配置查找和取代選項並提供必要的數據，您可以透過用其他文件範本或部分的內容取代特定佔位符來動態組合文件。 Aspose.Words for .NET 提供了一種強大且靈活的方法來管理複雜的文件操作任務，使其成為自動化文件創建和內容插入場景的寶貴工具。
+現在你就得到它了！使用 Aspose.Words for .NET 將一個文件插入另一個文件的綜合指南。透過執行這些步驟，您可以輕鬆地自動執行文件組裝和操作任務。無論您是要建立文件管理系統還是只是需要簡化文件處理工作流程，Aspose.Words 都是您值得信賴的助手。
 
-### 常見問題解答
+## 常見問題解答
 
-#### Q：替換時將一個文檔插入另一個文檔的目的是什麼？
+### 什麼是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一個功能強大的程式庫，用於以程式設計方式操作 Word 文件。它允許您輕鬆建立、修改、轉換和處理 Word 文件。
 
-答：在替換過程中將一個文件插入到另一個文件中，您可以使用單獨文件的內容動態取代特定佔位符。當您想要透過將各種預先定義文件範本或部分組合到特定佔位符中來組裝更大的文件時，此功能特別有用。
+### 我可以一次插入多個文件嗎？
+是的，您可以修改回呼處理程序以透過迭代文件集合來處理多個插入。
 
-#### Q：如何使用 Aspose.Words for .NET 在替換過程中將文件插入到另一個文件中？
+### 有免費試用嗎？
+絕對地！您可以從以下位置下載免費試用版[這裡](https://releases.aspose.com/).
 
-答：若要使用 Aspose.Words for .NET 在取代過程中將文件插入到另一個文件中，請依照下列步驟操作：
-1. 將包含佔位符的主文檔載入到 Document 物件中。
-2. 配置查找和取代選項，包括搜尋方向和取代回呼以處理文件插入。
-3. 使用配置的選項，使用適當的搜尋模式呼叫替換方法，將佔位符替換為空字串。
+### 如何獲得 Aspose.Words 支援？
+您可以透過訪問獲得支持[Aspose.Words 論壇](https://forum.aspose.com/c/words/8).
 
-#### Q：我可以自訂替換期間的插入行為嗎？
-
-答：是的，您可以透過實作自訂 ReplacingCallback 來自訂替換期間的插入行為。透過繼承IReplacingCallback接口，您可以在替換佔位符時根據您的特定需求控製文件的插入和合併方式。
-
-#### Q：我可以用不同的文件替換多個佔位符嗎？
-
-答：是的，您可以透過為每個佔位符指定適當的搜尋模式並提供要插入的對應文檔，將多個佔位符替換為不同的文檔。
+### 我可以保留插入文件的格式嗎？
+是的`NodeImporter`類別可讓您指定將節點從一個文件匯入到另一個文件時如何處理格式。

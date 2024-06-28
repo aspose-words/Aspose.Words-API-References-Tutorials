@@ -11,7 +11,7 @@ url: /ja/python-net/document-splitting-and-formatting/compare-document-versions/
 
 ## 導入
 
-ドキュメントを共同で作業する場合、さまざまな作成者によって加えられた変更を追跡することが重要です。 Aspose.Words for Python は、ドキュメントのバージョンの比較を自動化する信頼性の高い方法を提供し、変更の特定と改訂の明確な記録の維持を容易にします。
+ドキュメントを共同で作業する場合、さまざまな作成者によって加えられた変更を追跡することが重要です。 Aspose.Words for Python は、ドキュメントのバージョン比較を自動化する信頼性の高い方法を提供し、変更の特定と改訂の明確な記録の維持を容易にします。
 
 ## Python 用の Aspose.Words のセットアップ
 

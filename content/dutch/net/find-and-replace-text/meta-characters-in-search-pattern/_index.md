@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Stap 4: Een pagina-einde in het document invoegen
 
- Om het gebruik van een ander metateken te illustreren, voegen we een pagina-einde in het document in met behulp van de`InsertBreak` methode met de`BreakType.PageBreak` parameter. We verplaatsen eerst de cursor van de`DocumentBuilder` aan het einde van het document, waarna we het pagina-einde en een nieuwe regel tekst invoegen:
+ Om het gebruik van een ander metateken te illustreren, voegen we een pagina-einde in het document in met behulp van de`InsertBreak` methode met de`BreakType.PageBreak` parameters. We verplaatsen eerst de cursor van de`DocumentBuilder` aan het einde van het document, waarna we het pagina-einde en een nieuwe regel tekst invoegen:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### Vraag: Hoe kan ik een pagina-einde in een document invoegen met Aspose.Words voor .NET?
 
-A: Om het gebruik van een ander metateken te illustreren, voegen we een pagina-einde in het document in met behulp van de`InsertBreak` methode met de`BreakType.PageBreak` parameter. We verplaatsen eerst de cursor van de`DocumentBuilder` aan het einde van het document, waarna we het pagina-einde en een nieuwe regel tekst invoegen:
+A: Om het gebruik van een ander metateken te illustreren, voegen we een pagina-einde in het document in met behulp van de`InsertBreak` methode met de`BreakType.PageBreak` parameters. We verplaatsen eerst de cursor van de`DocumentBuilder` aan het einde van het document, waarna we het pagina-einde en een nieuwe regel tekst invoegen:
 
 ```csharp
 builder. MoveToDocumentEnd();

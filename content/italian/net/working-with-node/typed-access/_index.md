@@ -83,7 +83,7 @@ Questo è un codice di esempio completo per l'accesso digitato alle tabelle con 
 
 #### D: Cos'è l'accesso digitato in Node.js?
 
-R: L'accesso tipizzato in Node.js si riferisce all'uso di tipi di nodo specifici per accedere alle proprietà e ai valori del nodo in un documento XML. Invece di utilizzare proprietà generiche, l'accesso tipizzato utilizza metodi specifici per accedere a particolari tipi di nodi come nodi di testo, nodi di elementi, nodi di attributi, ecc.
+R: L'accesso digitato in Node.js si riferisce all'uso di tipi di nodo specifici per accedere alle proprietà e ai valori del nodo in un documento XML. Invece di utilizzare proprietà generiche, l'accesso digitato utilizza metodi specifici per accedere a particolari tipi di nodi come nodi di testo, nodi di elementi, nodi di attributi, ecc.
 
 #### D: Come posso accedere ai nodi utilizzando l'accesso digitato?
 

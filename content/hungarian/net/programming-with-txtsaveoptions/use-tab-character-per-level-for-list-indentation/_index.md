@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ebben a lépésben létrehozunk egy újat`Document` objektum és kapcsolódó`DocumentBuilder` tárgy. Ezek az objektumok lehetővé teszik számunkra a dokumentumunk kezelését és létrehozását.
+Ebben a lépésben létrehozunk egy újat`Document` objektum és kapcsolódó`DocumentBuilder` tárgy. Ezek az objektumok lehetővé teszik számunkra a dokumentumunk kezelését és létrehozását.
 
 ## 3. lépés: Lista létrehozása három behúzási szinttel
 
@@ -91,7 +91,7 @@ Most, hogy befejezte a dokumentum létrehozását a lista behúzásával tabulá
 ### Gyakran Ismételt Kérdések
 
 #### K: Mi az Aspose.Words for .NET "Egy tabulátor karakter használata szintenként a lista behúzásához" funkció?
-Az Aspose.Words for .NET "Egy tabulátor karakter használata szintenként a lista behúzásához" funkciója lehetővé teszi tabulátor karakterek alkalmazását a lista behúzásához minden szinten. Ez nagyobb rugalmasságot és ellenőrzést biztosít a dokumentumok megjelenése felett.
+Az Aspose.Words for .NET "Egy tabulátorkarakter használata szintenként a lista behúzásához" funkciója lehetővé teszi tabulátor karakterek alkalmazását a lista behúzásához minden szinten. Ez nagyobb rugalmasságot és ellenőrzést biztosít a dokumentumok megjelenése felett.
 
 #### K: Hogyan használhatom ezt a funkciót az Aspose.Words for .NET-hez?
 Ha ezt a funkciót az Aspose.Words for .NET programmal szeretné használni, kövesse az alábbi lépéseket:
@@ -110,7 +110,7 @@ Ha ezt a funkciót az Aspose.Words for .NET programmal szeretné használni, kö
  Igen, testreszabhatja a tabulátor karakterek számát szintenként a lista behúzásához az érték módosításával`ListIndentation.Count` ingatlan a`TxtSaveOptions` osztály. Minden behúzási szinthez megadhatja a tabulátor karakterek számát.
 
 #### K: Milyen más karaktereket használhatok a lista behúzására az Aspose.Words for .NET-ben?
- A tabulátor karakterek mellett más karaktereket is használhat a lista behúzásához az Aspose.Words for .NET segítségével. Beállíthatja a`ListIndentation.Character` tulajdonság bármely kívánt karakterhez, például szóköz (`' '`), a behúzó listákhoz.
+ A tabulátor karakterek mellett más karaktereket is használhat a lista behúzásához az Aspose.Words for .NET segítségével. Beállíthatja a`ListIndentation.Character` tulajdonság bármely kívánt karakterhez, például szóköz (`' '`), a listák azonosításához.
 
 #### K: Az Aspose.Words for .NET kínál egyéb funkciókat a listák kezeléséhez?
 Igen, az Aspose.Words for .NET számos szolgáltatást kínál a Word-dokumentumok listáinak kezelésére. Létrehozhat számozott vagy felsorolásjeles listákat, behúzási szinteket állíthat be, testreszabhatja a listák stílusát, hozzáadhat listaelemeket stb.

@@ -2,7 +2,7 @@
 title: Wstaw obiekt Ole do programu Word z pakietem Ole
 linktitle: Wstaw obiekt Ole do programu Word z pakietem Ole
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić obiekt OLE z pakietem OLE do dokumentu przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawić obiekt OLE z pakietem OLE do dokumentu za pomocą Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
@@ -66,7 +66,7 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-To jest kompletny przykładowy kod do wstawiania obiektu OLE z pakietem OLE za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać kroki opisane wcześniej, aby zintegrować ten kod ze swoim projektem.
+To jest kompletny przykładowy kod do wstawiania obiektu OLE z pakietem OLE za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać opisane wcześniej kroki, aby zintegrować ten kod ze swoim projektem.
 
 ## Wniosek
 

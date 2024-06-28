@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## 3. lépés: Másolja a részt a céldokumentumba
- A szakasz forrásdokumentumból a céldokumentumba másolásához a következőt használjuk:`ImportNode` módszerrel importálhatja a forrásszakaszt, és hozzáadhatja a céldokumentumhoz.
+ A szakasz forrásdokumentumból a céldokumentumba másolásához a következőt használjuk:`ImportNode`módszerrel importálhatja a forrásszakaszt, és hozzáadhatja a céldokumentumhoz.
 
 ```csharp
 // Szerezd meg a forrás részt
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### K: Hogyan tölthetők be forrás- és céldokumentumok az Aspose.Words for .NET-be?
 
- V: A forrásdokumentum betöltése a`Document` osztály hívott`srcDoc` és hozzon létre egy üres példányt a`Document` osztály hívott`dstDoc` a céldokumentumhoz a következő kódot használhatja:
+V: A forrásdokumentum betöltése a`Document` osztály hívott`srcDoc` és hozzon létre egy üres példányt a`Document` osztály hívott`dstDoc` a céldokumentumhoz a következő kódot használhatja:
 
 ```csharp
 // Töltse be a forrásdokumentumot

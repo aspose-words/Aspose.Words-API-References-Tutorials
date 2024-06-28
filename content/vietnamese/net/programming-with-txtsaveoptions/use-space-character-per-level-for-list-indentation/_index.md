@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Trong ví dụ này, chúng tôi tạo một tài liệu mới và sử dụng DocumentBuilder để thêm văn bản và tạo danh sách có ba cấp độ thụt lề. Chúng tôi đã thêm ba mục vào danh sách, với mỗi mục được thụt vào một cấp độ bổ sung.
+Trong ví dụ này, chúng tôi tạo một tài liệu mới và sử dụng DocumentBuilder để thêm văn bản và tạo danh sách có ba cấp độ thụt lề. Chúng tôi đã thêm ba mục vào danh sách, mỗi mục chỉ ra một cấp độ bổ sung.
 
 ## Sử dụng một ký tự khoảng trắng cho mỗi cấp độ để thụt lề danh sách
 
@@ -44,7 +44,7 @@ saveOptions.ListIndentation.Character = ' ';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-Trong ví dụ này, chúng tôi tạo một phiên bản của TxtSaveOptions và đặt thuộc tính ListIndentation.Count thành 3 để cho biết rằng có ba cấp độ thụt lề trong danh sách. Chúng tôi cũng đặt thuộc tính ListIndentation.Character thành ký tự khoảng trắng (' ') mà chúng tôi muốn sử dụng để thụt lề.
+Trong ví dụ này, chúng tôi tạo một phiên bản của TxtSaveOptions và đặt thuộc tính ListIndentation.Count thành 3 để cho biết rằng có ba mức thụt lề trong danh sách. Chúng tôi cũng đặt thuộc tính ListIndentation.Character thành ký tự khoảng trắng (' ') mà chúng tôi muốn sử dụng để thụt lề.
 
 ### Mã nguồn mẫu cho tính năng "Sử dụng một ký tự khoảng trắng cho mỗi cấp độ để thụt lề danh sách" với Aspose.Words for .NET
 
@@ -99,7 +99,7 @@ Trong hướng dẫn này, chúng tôi đã giải thích cách sử dụng Aspo
 Aspose.Words for .NET là một thư viện mạnh mẽ để tạo, chỉnh sửa và thao tác các tài liệu Word trong ứng dụng C#. Nó cung cấp nhiều tính năng để Xử lý văn bản bằng tài liệu Word, bao gồm khả năng sử dụng một khoảng trắng cho mỗi cấp độ để thụt lề danh sách.
 
 #### Câu hỏi: Làm cách nào tôi có thể sử dụng một khoảng trắng cho mỗi cấp độ để thụt lề danh sách với Aspose.Words cho .NET?
-Bạn có thể sử dụng một dấu cách cho mỗi cấp độ để thụt lề danh sách bằng cách làm theo các bước sau:
+Bạn có thể sử dụng một khoảng trắng cho mỗi cấp độ để thụt lề danh sách bằng cách làm theo các bước sau:
 
  Tạo một tài liệu mới bằng cách sử dụng`Document` lớp học.
 

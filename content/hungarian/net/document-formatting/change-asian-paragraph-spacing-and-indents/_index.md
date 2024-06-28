@@ -51,9 +51,9 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // A bekezdésforma.LeftIndent frissítésre kerül
-	format.CharacterUnitRightIndent = 10;      // A ParagrafusFormat.RightIndent frissítésre kerül
-	format.CharacterUnitFirstLineIndent = 20;  // ParagrafusFormat.FirstLineIndent frissítésre kerül
+	format.CharacterUnitLeftIndent = 10;       // A bekezdésforma.LeftIndent frissítésre kerül.
+	format.CharacterUnitRightIndent = 10;      // A ParagrafusFormat.RightIndent frissítésre kerül.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagrafusFormat.FirstLineIndent frissítésre kerül.
 	format.LineUnitBefore = 5;                 // A ParagrafusFormat.SpaceBefore frissítésre kerül
 	format.LineUnitAfter = 10;                 // A ParagrafusFormat.SpaceAfter frissítésre kerül
 
@@ -71,7 +71,7 @@ Ezzel a kóddal módosíthatja az ázsiai bekezdések térközét és behúzás�
 
 #### K: Mit csinál az Aspose.Words for .NET "Ázsiai bekezdésközök és behúzások módosítása" funkciója?
 
-V: Az Aspose.Words for .NET "Ázsiai bekezdésközök és behúzások módosítása" funkciója lehetővé teszi az ázsiai bekezdések térközeinek és behúzási tulajdonságainak módosítását egy Word-dokumentumban. A bekezdés elrendezésének és megjelenésének szabályozásához beállíthatja a bal és a jobb oldali behúzást, az első sor behúzását, a szóközt az előtte és a szóköz után.
+V: Az Aspose.Words for .NET "Ázsiai bekezdésközök és behúzások módosítása" funkciója lehetővé teszi az ázsiai bekezdések térközeinek és behúzási tulajdonságainak módosítását egy Word-dokumentumban. A bekezdés elrendezésének és megjelenésének szabályozásához beállíthatja a bal és a jobb oldali behúzást, az első sor behúzását, az előtti és utáni szóközt.
 
 #### K: Hogyan módosíthatom egy ázsiai bekezdés térközét és behúzását az Aspose.Words for .NET használatával?
 

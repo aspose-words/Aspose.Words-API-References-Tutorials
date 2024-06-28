@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // 순서가 지정된 목록을 지정합니다.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// 텍스트의 기울임꼴 강조를 지정합니다.
+// 텍스트에 이탈리아어 강조를 지정합니다.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);
@@ -178,7 +178,7 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
    예, Aspose.Words for Java를 사용하여 Markdown 문서를 Word 문서로 변환하거나 그 반대로 변환할 수 있습니다.
 
 ### Aspose.Words for Java는 무료로 사용할 수 있나요? 
-    Aspose.Words for Java는 상용 제품이므로 사용하려면 라이센스가 필요합니다. 에서 라이센스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/buy).
+    Aspose.Words for Java는 상용 제품이므로 사용하려면 라이선스가 필요합니다. 에서 라이센스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/buy).
 
 ### Aspose.Words for Java에 사용할 수 있는 튜토리얼이나 문서가 있나요? 
     예, 다음에서 포괄적인 튜토리얼과 문서를 찾을 수 있습니다.[Java API 문서용 Aspose.Words](https://reference.aspose.com/words/java/).

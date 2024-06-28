@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 //順序付きリストを指定します。
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-//テキストの斜体の強調を指定します。
+//テキストのイタリア語の強調を指定します。
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

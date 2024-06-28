@@ -107,7 +107,7 @@ para.remove();
 // und wird als Revision in Microsoft Word angezeigt, bis wir alle Revisionen akzeptieren oder ablehnen.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Der Absatz zum Löschen der Revision wird entfernt, sobald wir die Änderungen akzeptieren.
+// Der gelöschte Revisionsabsatz wird entfernt, sobald wir die Änderungen akzeptieren.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //war Is.Empty

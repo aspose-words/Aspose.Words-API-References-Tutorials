@@ -58,7 +58,7 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fitur "Tautan Otomatis
 
 #### T: Bagaimana cara membuat tautan otomatis ke alamat URL di Aspose.Words?
 
-A: Untuk membuat tautan otomatis ke alamat URL di Aspose.Words, Anda dapat menggunakan`<a>` tandai dengan`href` atribut yang berisi alamat URL. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com">https://www.aspose.com</a>` untuk secara otomatis menautkan ke "https: //www.aspose.com".
+ A: Untuk membuat tautan otomatis ke alamat URL di Aspose.Words, Anda dapat menggunakan`<a>` tandai dengan`href` atribut yang berisi alamat URL. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com">https://www.aspose.com</a>` untuk secara otomatis menautkan ke "https: //www.aspose.com".
 
 #### T: Apakah mungkin untuk menyesuaikan teks tampilan tautan otomatis di Aspose.Words?
 
@@ -66,4 +66,4 @@ A: Untuk membuat tautan otomatis ke alamat URL di Aspose.Words, Anda dapat mengg
 
 #### T: Bagaimana cara menambahkan atribut tambahan ke tautan otomatis di Aspose.Words?
 
- A: Untuk menambahkan atribut tambahan pada tautan otomatis di Aspose.Words, Anda dapat menggunakan atribut HTML tambahan di dalamnya`<a>` menandai. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com" target="_blank">Link</a>` untuk membuka tautan di jendela atau tab baru menggunakan` attribute target="_blank"`.
+A: Untuk menambahkan atribut tambahan pada tautan otomatis di Aspose.Words, Anda dapat menggunakan atribut HTML tambahan di dalamnya`<a>` menandai. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com" target="_blank">Link</a>` untuk membuka tautan di jendela atau tab baru menggunakan` attribute target="_blank"`.

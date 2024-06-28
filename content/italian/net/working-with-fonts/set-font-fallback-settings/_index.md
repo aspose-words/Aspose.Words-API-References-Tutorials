@@ -2,80 +2,116 @@
 title: Configura le impostazioni di fallback dei caratteri
 linktitle: Configura le impostazioni di fallback dei caratteri
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come impostare le impostazioni di sostituzione dei caratteri in Aspose.Words per .NET e personalizzare la sostituzione dei caratteri nei tuoi documenti Word.
+description: Scopri come configurare le impostazioni di fallback dei caratteri in Aspose.Words per .NET. Questa guida completa garantisce che tutti i caratteri nei tuoi documenti vengano visualizzati correttamente.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-font-fallback-settings/
 ---
-In questo tutorial, ti mostreremo come impostare le impostazioni di sostituzione dei caratteri in un documento Word utilizzando Aspose.Words per .NET. Le impostazioni di sostituzione dei caratteri consentono di specificare i caratteri sostitutivi da utilizzare quando i caratteri specificati non sono disponibili.
+
+Quando si lavora con documenti che contengono diversi elementi di testo, come lingue diverse o caratteri speciali, è fondamentale garantire che questi elementi vengano visualizzati correttamente. Aspose.Words per .NET offre una potente funzionalità chiamata Impostazioni di fallback dei caratteri, che aiuta a definire le regole per la sostituzione dei caratteri quando il carattere originale non supporta determinati caratteri. In questa guida, esploreremo come configurare le impostazioni di fallback dei caratteri utilizzando Aspose.Words per .NET in un tutorial passo passo.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere i seguenti elementi:
-- Una conoscenza pratica del linguaggio di programmazione C#
-- La libreria Aspose.Words per .NET installata nel tuo progetto
+
+Prima di immergerti nel tutorial, assicurati di avere i seguenti prerequisiti:
+
+- Conoscenza di base di C#: familiarità con il linguaggio di programmazione C# e il framework .NET.
+-  Aspose.Words per .NET: scarica e installa da[Link per scaricare](https://releases.aspose.com/words/net/).
+- Ambiente di sviluppo: una configurazione come Visual Studio per scrivere ed eseguire il codice.
+-  Documento di esempio: disporre di un documento di esempio (ad es.`Rendering.docx`) pronto per il test.
+- XML delle regole di fallback dei caratteri: preparare un file XML che definisce le regole di fallback dei caratteri.
+
+## Importa spazi dei nomi
+
+Per utilizzare Aspose.Words, è necessario importare gli spazi dei nomi necessari. Ciò consente l'accesso a varie classi e metodi richiesti per l'elaborazione dei documenti.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
+```
 
 ## Passaggio 1: definire la directory dei documenti
- Inizia impostando il percorso della directory sulla posizione del tuo documento Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
+
+Innanzitutto, definisci la directory in cui è archiviato il tuo documento. Questo è essenziale per individuare ed elaborare il documento.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Passaggio 2: caricare le impostazioni di sostituzione dei caratteri
- Crea un'istanza di`FontSettings` classe e utilizzare il file`Load` metodo per caricare le impostazioni di sostituzione dei caratteri da un file XML. Il file XML specificato deve contenere le regole di sostituzione dei caratteri da utilizzare.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## Passaggio 3: applica le impostazioni di sostituzione dei caratteri
- Associa le impostazioni di sostituzione dei caratteri al documento assegnandole a quelle del documento`FontSettings` proprietà.
-
-```csharp
-doc.FontSettings = fontSettings;
-```
-
-## Passaggio 4: salva il documento
- Salvare il documento utilizzando il file`Save` metodo del`Document` con il percorso e il nome file appropriati.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
-
-### Codice sorgente di esempio per impostare le impostazioni di fallback dei caratteri utilizzando Aspose.Words per .NET 
-```csharp
-// Percorso della directory dei documenti
+// Il percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Passaggio 2: caricare il documento
+
+ Carica il tuo documento in un Aspose.Words`Document` oggetto. Questo passaggio consente di lavorare con il documento a livello di codice.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Passaggio 3: configura le impostazioni dei caratteri
+
+ Creane uno nuovo`FontSettings` oggetto e caricare le impostazioni di fallback dei caratteri da un file XML. Questo file XML contiene le regole per il fallback dei caratteri.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## Passaggio 4: applica le impostazioni dei caratteri al documento
+
+ Assegnare il configurato`FontSettings`al documento. Ciò garantisce che le regole di fallback dei caratteri vengano applicate durante il rendering del documento.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Passaggio 5: salva il documento
+
+Infine, salva il documento. Le impostazioni di fallback dei caratteri verranno utilizzate durante l'operazione di salvataggio per garantire la corretta sostituzione dei caratteri.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
+```
+
+## File XML: regole di fallback dei caratteri
+
+Ecco un esempio di come dovrebbe apparire il tuo file XML che definisce le regole di fallback dei caratteri:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
 ```
 
 ## Conclusione
-In questo tutorial, hai imparato come impostare le impostazioni di sostituzione dei caratteri in un documento di Word utilizzando Aspose.Words per .NET. Sperimenta diverse regole di sostituzione dei caratteri per garantire che il tuo documento abbia un aspetto coerente, anche quando i caratteri specificati non sono disponibili.
 
-### Domande frequenti
+Seguendo questi passaggi, è possibile configurare e utilizzare in modo efficace le impostazioni di fallback dei caratteri in Aspose.Words per .NET. Ciò garantisce che i tuoi documenti visualizzino correttamente tutti i caratteri, anche se il carattere originale non supporta determinati caratteri. L'implementazione di queste impostazioni migliorerà notevolmente la qualità e la leggibilità dei tuoi documenti.
 
-#### D: Come posso impostare le impostazioni di sostituzione dei caratteri in un documento Word con Aspose.Words?
+## Domande frequenti
 
-R: Per impostare le impostazioni di sostituzione dei caratteri in un documento di Word con Aspose.Words, è possibile utilizzare l'API per specificare i caratteri di fallback da utilizzare quando i caratteri richiesti non sono disponibili. Ciò garantisce una visualizzazione coerente del testo, anche senza i caratteri originali.
+### Q1: Cos'è il fallback dei caratteri?
 
-#### D: È possibile gestire i caratteri di fallback durante l'override in un documento di Word con Aspose.Words?
+Font Fallback è una funzionalità che consente la sostituzione dei caratteri quando il carattere originale non supporta determinati caratteri, garantendo la corretta visualizzazione di tutti gli elementi di testo.
 
-R: Sì, con Aspose.Words puoi gestire i caratteri di fallback durante la sostituzione in un documento Word. L'API consente di rilevare i caratteri mancanti e di specificare i caratteri di fallback appropriati per mantenere un aspetto coerente del testo anche quando i caratteri vengono sostituiti.
+### Q2: Posso specificare più caratteri di fallback?
 
-#### D: Perché è importante configurare correttamente le impostazioni di sostituzione dei caratteri in un documento Word?
+Sì, puoi specificare più caratteri di fallback nelle regole XML. Aspose.Words controllerà ciascun carattere nell'ordine specificato finché non ne troverà uno che supporti il carattere.
 
-R: È importante configurare correttamente le impostazioni di sostituzione dei caratteri in un documento Word per mantenere l'integrità visiva del testo. Impostando i caratteri di fallback appropriati con Aspose.Words, ti assicuri che il testo verrà visualizzato in modo coerente, anche se i caratteri richiesti non sono disponibili.
+### Q3: Dove posso scaricare Aspose.Words per .NET?
 
-#### D: Come posso rilevare i caratteri mancanti durante la sostituzione in un documento Word con Aspose.Words?
+ Puoi scaricarlo da[Asporre la pagina di download](https://releases.aspose.com/words/net/).
 
-R: Aspose.Words ti consente di rilevare i caratteri mancanti durante la sostituzione in un documento Word utilizzando l'API. È possibile utilizzare i metodi forniti da Aspose.Words per verificare la disponibilità dei caratteri richiesti e intraprendere le azioni appropriate in caso di caratteri mancanti.
+### Q4: Come posso creare il file XML per le regole di fallback dei caratteri?
 
-#### D: La sostituzione dei caratteri influisce sul layout del mio documento Word?
+Il file XML può essere creato utilizzando qualsiasi editor di testo. Dovrebbe seguire la struttura mostrata nell'esempio fornito in questo tutorial.
 
-R: La sostituzione dei caratteri può influire sul layout del documento Word se i caratteri di fallback hanno dimensioni diverse rispetto ai caratteri originali. Tuttavia, scegliendo saggiamente i caratteri di fallback e configurando le impostazioni di sostituzione dei caratteri con Aspose.Words, è possibile ridurre al minimo l'impatto del layout.
+### Q5: è disponibile il supporto per Aspose.Words?
+
+ Sì, puoi trovare supporto su[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8).

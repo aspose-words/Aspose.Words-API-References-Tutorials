@@ -16,7 +16,7 @@ Danh sách có hai loại chính: có dấu đầu dòng và được đánh s�
 
 ## Thiết lập môi trường
 
- Trước khi chúng ta đi sâu vào việc tạo và quản lý danh sách, hãy đảm bảo bạn đã cài đặt thư viện Aspose.Words cho Python. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/python/) . Ngoài ra, hãy tham khảo tài liệu API tại[liên kết này](https://reference.aspose.com/words/python-net/) để biết thông tin chi tiết.
+Trước khi chúng ta đi sâu vào việc tạo và quản lý danh sách, hãy đảm bảo bạn đã cài đặt thư viện Aspose.Words cho Python. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/python/) . Ngoài ra, hãy tham khảo tài liệu API tại[liên kết này](https://reference.aspose.com/words/python-net/) để biết thông tin chi tiết.
 
 ## Tạo danh sách có dấu đầu dòng
 

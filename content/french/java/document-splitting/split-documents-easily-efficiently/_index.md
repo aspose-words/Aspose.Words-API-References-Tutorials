@@ -132,9 +132,9 @@ Lorsque vous traitez des documents volumineux, il est essentiel d’envisager de
 
 ## 11. Conclusion
 
-Dans ce guide, nous avons exploré comment diviser des documents facilement et efficacement à l'aide d'Aspose.Words pour Java. En divisant les documents volumineux en parties plus petites et plus faciles à gérer, les développeurs peuvent travailler avec des sections spécifiques et simplifier les tâches de traitement des documents. Aspose.Words for Java propose diverses méthodes pour diviser des documents en fonction de pages, de paragraphes, de titres et de sections, offrant aux développeurs la flexibilité nécessaire pour adapter le processus de fractionnement à leurs besoins spécifiques.
+Dans ce guide, nous avons exploré comment diviser des documents facilement et efficacement à l'aide d'Aspose.Words pour Java. En divisant les documents volumineux en parties plus petites et plus faciles à gérer, les développeurs peuvent travailler avec des sections spécifiques et simplifier les tâches de traitement des documents. Aspose.Words for Java propose diverses méthodes pour diviser des documents en fonction de pages, de paragraphes, de titres et de sections, offrant ainsi aux développeurs la flexibilité d'adapter le processus de fractionnement à leurs besoins spécifiques.
 
-## 12. FAQ
+## 12.FAQ
 
 ### T1. Aspose.Words for Java peut-il diviser des documents de différents formats comme DOC et DOCX ?
 

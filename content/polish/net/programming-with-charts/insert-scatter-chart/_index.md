@@ -17,7 +17,7 @@ Upewnij się, że masz następujące wymagania wstępne:
 - Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
 - Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres
+## Krok 2: Utwórz nowy dokument i wstaw wykres.
 
  Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
 
@@ -72,7 +72,7 @@ To kończy implementację wstawiania wykresu punktowego przy użyciu Aspose.Word
 
 W tym samouczku nauczyłeś się, jak wstawić wykres punktowy do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z instrukcją krok po kroku i wykorzystując dostarczony kod źródłowy, możesz utworzyć nowy dokument, wstawić wykres punktowy, dodać dane serii ze współrzędnymi X i Y oraz zapisać dokument z wykresem.
 
-Aspose.Words dla .NET zapewnia kompleksowe API do przetwarzania słów z wykresami w dokumentach Word. Wykresy punktowe są przydatne do wizualizacji i analizowania danych za pomocą dwóch zmiennych numerycznych. Dzięki Aspose.Words dla .NET możesz łatwo tworzyć wykresy punktowe przedstawiające relacje między wartościami X i Y oraz identyfikować wzorce i trendy w danych.
+Aspose.Words dla .NET zapewnia kompleksowe API do przetwarzania słów z wykresami w dokumentach Word. Wykresy punktowe są przydatne do wizualizacji i analizowania danych za pomocą dwóch zmiennych numerycznych. Dzięki Aspose.Words dla .NET możesz łatwo tworzyć wykresy punktowe przedstawiające relacje między wartościami X i Y oraz identyfikować wzorce lub trendy w danych.
 
 Używając Aspose.Words dla .NET, możesz zautomatyzować proces generowania dokumentów za pomocą wykresów punktowych, oszczędzając czas i wysiłek przy ręcznym tworzeniu dokumentów. Biblioteka oferuje szeroką gamę typów wykresów, w tym wykresy punktowe, a także zapewnia różne opcje dostosowywania, aby dostosować wygląd wykresu do własnych potrzeb.
 
@@ -91,4 +91,4 @@ Tak, używając Aspose.Words dla .NET, możesz dostosować różne aspekty wygl�
 Tak, Aspose.Words dla .NET umożliwia zapisanie dokumentu z wstawionym wykresem punktowym w różnych formatach, takich jak DOCX, PDF, HTML i innych. Możesz wybrać żądany format wyjściowy w oparciu o swoje wymagania i użyć`Save` metoda`Document` obiekt, aby zapisać dokument. Wstawiony wykres punktowy zostanie zachowany w zapisanym dokumencie.
 
 #### Pytanie 5. Czy mogę modyfikować dane i wygląd wykresu punktowego po jego wstawieniu?
-Tak, po wstawieniu wykresu punktowego do dokumentu, możesz modyfikować jego dane i wygląd, korzystając z API udostępnianych przez Aspose.Words dla .NET. Możesz aktualizować dane serii o nowe współrzędne X i Y, zmieniać kształty i kolory znaczników, dostosowywać właściwości osi i stosować opcje formatowania, aby tworzyć dynamiczne i interaktywne wykresy w dokumentach programu Word.
+Tak, po wstawieniu wykresu punktowego do dokumentu możesz modyfikować jego dane i wygląd, korzystając z API udostępnianych przez Aspose.Words dla .NET. Możesz aktualizować dane serii o nowe współrzędne X i Y, zmieniać kształty i kolory znaczników, dostosowywać właściwości osi i stosować opcje formatowania, aby tworzyć dynamiczne i interaktywne wykresy w dokumentach programu Word.

@@ -134,7 +134,7 @@ Bij het omgaan met grote documenten is het essentieel om prestatie-optimalisatie
 
 In deze handleiding hebben we onderzocht hoe u documenten eenvoudig en efficiënt kunt splitsen met Aspose.Words voor Java. Door grote documenten in kleinere, beter beheersbare delen te verdelen, kunnen ontwikkelaars met specifieke secties werken en documentverwerkingstaken vereenvoudigen. Aspose.Words voor Java biedt verschillende methoden om documenten te splitsen op basis van pagina's, alinea's, koppen en secties, waardoor ontwikkelaars de flexibiliteit krijgen om het splitsingsproces aan te passen aan hun specifieke behoeften.
 
-## 12. Veelgestelde vragen
+## 12.Veelgestelde vragen
 
 ### Q1. Kan Aspose.Words voor Java documenten van verschillende formaten zoals DOC en DOCX splitsen?
 

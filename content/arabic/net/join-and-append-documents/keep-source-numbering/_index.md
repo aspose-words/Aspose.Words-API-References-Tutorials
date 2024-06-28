@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## الخطوة 4: استيراد وإلحاق الفقرات
 
-قم بالتكرار عبر الفقرات الموجودة في المستند المصدر وقم باستيراد كل فقرة إلى المستند الوجهة باستخدام الملف`importer`. قم بإلحاق العقد المستوردة بالنص الأساسي للمستند الوجهة.
+ قم بالتكرار عبر الفقرات الموجودة في المستند المصدر وقم باستيراد كل فقرة إلى المستند الوجهة باستخدام الملف`importer`. قم بإلحاق العقد المستوردة بالنص الأساسي للمستند الوجهة.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// احتفظ بتنسيق قائمة المصدر عند استيراد فقرات مرقمة.
+	//احتفظ بتنسيق قائمة المصدر عند استيراد فقرات مرقمة.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- Trong mã này, chúng tôi tạo một mới`Document` và một`DocumentBuilder` . Các`insert_text_box`phương thức được sử dụng để thêm hộp văn bản vào tài liệu. Bạn có thể tùy chỉnh nội dung, vị trí và kích thước của hộp văn bản theo yêu cầu của mình.
+ Trong mã này, chúng tôi tạo một mới`Document` và một`DocumentBuilder` . Các`insert_text_box` phương thức được sử dụng để thêm hộp văn bản vào tài liệu. Bạn có thể tùy chỉnh nội dung, vị trí và kích thước của hộp văn bản theo yêu cầu của mình.
 
 ## Định dạng hộp văn bản
 

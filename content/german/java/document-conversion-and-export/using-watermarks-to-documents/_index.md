@@ -117,7 +117,7 @@ options.setFontFamily("Times New Roman");
 
 ### Ist es möglich, ein Wasserzeichen zu drehen?
 
- Ja, Sie können ein Wasserzeichen drehen, indem Sie das festlegen`setRotation` Eigentum in der`Shape` Objekt. Positive Werte drehen das Wasserzeichen im Uhrzeigersinn, negative Werte drehen es gegen den Uhrzeigersinn.
+ Ja, Sie können ein Wasserzeichen drehen, indem Sie das festlegen`setRotation` Eigentum in der`Shape` Objekt. Positive Werte drehen das Wasserzeichen im Uhrzeigersinn und negative Werte drehen es gegen den Uhrzeigersinn.
 
 ### Wie kann ich ein Wasserzeichen halbtransparent machen?
 

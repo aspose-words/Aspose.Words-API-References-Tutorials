@@ -15,7 +15,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel
 - A projektben telepített .NET Aspose.Words könyvtár
 
 ## 1. lépés: Hozzon létre egy dokumentumot és egy konstruktort
- Először létrehozunk egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` konstruktor a dokumentum elkészítéséhez.
+ Először is létrehozunk egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` konstruktor a dokumentum elkészítéséhez.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## 3. lépés: Törölje az összes szakaszt
- Az összes szakasz eltávolításához a dokumentumból a`Clear` módszere a`Sections` a dokumentum gyűjteménye.
+ Az összes szakasz eltávolításához a dokumentumból a`Clear` módszere a`Sections` a dokumentumok gyűjteménye.
 
 ```csharp
 doc.Sections.Clear();
@@ -85,7 +85,7 @@ doc.AppendChild(new Section(doc));
 
 #### K: Hogyan lehet eltávolítani az Aspose.Words for .NET összes szakaszát?
 
- V: Az Aspose.Words for .NET dokumentumból az összes szakasz eltávolításához használja a`Clear` módszere a`Sections` dokumentum gyűjtemény:
+ V: Az Aspose.Words for .NET dokumentumból az összes szakasz eltávolításához használja a`Clear` módszere a`Sections` dokumentumok gyűjteménye:
 
 ```csharp
 doc.Sections.Clear();

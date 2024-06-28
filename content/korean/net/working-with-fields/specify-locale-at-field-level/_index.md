@@ -72,4 +72,4 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.doc
 
 #### Q: .NET용 Aspose.Words의 필드에 현재 사용되는 로캘을 어떻게 얻을 수 있나요?
 
- A: .NET용 Aspose.Words의 필드에 대해 현재 사용되는 로케일을 얻으려면 해당 필드의 로케일을 사용할 수 있습니다.`Field.LocaleId` 재산. 이를 통해 필드와 연관된 로케일 식별자를 얻을 수 있습니다.
+ A: .NET용 Aspose.Words의 필드에 대해 현재 사용되는 로케일을 얻으려면 해당 필드의 로케일을 사용할 수 있습니다.`Field.LocaleId`재산. 이를 통해 필드와 연관된 로케일 식별자를 얻을 수 있습니다.

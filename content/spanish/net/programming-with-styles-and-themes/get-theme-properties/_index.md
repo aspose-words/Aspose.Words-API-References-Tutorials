@@ -20,7 +20,7 @@ Asegúrese de haber configurado su entorno de desarrollo con Aspose.Words para .
 Document doc = new Document();
 ```
 
- En este paso, creamos un nuevo`Document` objeto.
+En este paso, creamos un nuevo`Document` objeto.
 
 ## Paso 3: obtener propiedades del tema
 
@@ -32,11 +32,11 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- En este paso utilizamos el`Theme` propiedad de la`Document`objeto para obtener el`Theme` objeto. Luego podremos acceder a las diferentes propiedades del tema como las fuentes principales (`MajorFonts`), las fuentes secundarias (`MinorFonts`) y los colores de acento (`Colors`).
+ En este paso utilizamos el`Theme` propiedad de la`Document` objeto para obtener el`Theme` objeto. Luego podremos acceder a las diferentes propiedades del tema como las fuentes principales (`MajorFonts`), las fuentes secundarias (`MinorFonts`) y los colores de acento (`Colors`).
 
 ## Paso 4: mostrar las propiedades del tema
 
- En este paso final, mostramos los valores de las propiedades del tema usando`Console.WriteLine`. Puedes adaptar la pantalla según tus necesidades.
+ En este paso final, mostramos los valores de propiedad del tema usando`Console.WriteLine`. Puedes adaptar la pantalla según tus necesidades.
 
 Puede ejecutar el código fuente para obtener las propiedades del tema de un documento. Esta función le permite recuperar información sobre las fuentes y los colores utilizados en el tema de un documento, lo que puede resultar útil para la personalización o el análisis de estilos.
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Conclusión
 
- En este tutorial, exploramos la funcionalidad de obtener las propiedades del tema de un documento con Aspose.Words para .NET. Utilizando el`Theme` object y sus propiedades asociadas, pudimos acceder a información sobre las fuentes primarias y secundarias, así como los colores de acento utilizados en el tema del documento.
+ En este tutorial, exploramos la funcionalidad de obtener las propiedades del tema de un documento con Aspose.Words para .NET. Utilizando el`Theme`object y sus propiedades asociadas, pudimos acceder a información sobre las fuentes primarias y secundarias, así como los colores de acento utilizados en el tema del documento.
 
 La capacidad de obtener propiedades del tema le permite analizar y personalizar los estilos y diseños de sus documentos. Puede utilizar esta información para aplicar cambios específicos, crear informes o realizar análisis sobre el uso de fuentes y colores en sus documentos.
 
@@ -68,11 +68,11 @@ No dude en explorar más funciones de Aspose.Words para .NET para mejorar su flu
 
 #### ¿Cómo puedo acceder a las propiedades del tema de un documento usando Aspose.Words para .NET?
 
- Para acceder a las propiedades del tema de un documento, puede utilizar el`Theme` propiedad de la`Document` objeto. Devuelve un`Theme` Objeto que contiene información sobre las fuentes primarias y secundarias, así como los colores de acento utilizados en el tema del documento.
+ Para acceder a las propiedades del tema de un documento, puede utilizar el`Theme` propiedad de la`Document` objeto. Devuelve un`Theme`Objeto que contiene información sobre las fuentes primarias y secundarias, así como los colores de acento utilizados en el tema del documento.
 
 #### ¿Cómo puedo recuperar las fuentes primarias y secundarias del tema de un documento?
 
-Puede acceder a las fuentes primarias y secundarias del tema de un documento utilizando el`MajorFonts` y`MinorFonts` propiedades de la`Theme` objeto, respectivamente. Estas propiedades brindan acceso a los nombres de fuentes utilizados en el tema del documento para diferentes idiomas o regiones.
+ Puede acceder a las fuentes primarias y secundarias del tema de un documento utilizando el`MajorFonts` y`MinorFonts` propiedades de la`Theme` objeto, respectivamente. Estas propiedades brindan acceso a los nombres de fuentes utilizados en el tema del documento para diferentes idiomas o regiones.
 
 #### ¿Puedo obtener los colores de acento utilizados en el tema de un documento?
 

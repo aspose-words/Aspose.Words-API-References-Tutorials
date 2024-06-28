@@ -22,7 +22,7 @@ url: /ja/java/document-rendering/document-thumbnail-generation/
 
 ## ステップ 1: 開発環境のセットアップ
 
-開始するには、Java と Aspose.Words for Java がシステムにインストールされていることを確認してください。コーディングには IDE も必要です。
+開始するには、Java と Aspose.Words for Java がシステムにインストールされていることを確認してください。コーディング用の IDE も必要です。
 
 ## ステップ 2: Word 文書をロードする
 
@@ -66,7 +66,7 @@ Aspose.Words for Java を使用したドキュメントのサムネイル生成�
 
 ### Aspose.Words for Java をインストールするにはどうすればよいですか?
 
- Aspose.Words for Java をインストールするには、ダウンロード ページにアクセスしてください[ここ](https://releases.aspose.com/words/java/)提供されるインストール手順に従ってください。
+ Aspose.Words for Java をインストールするには、ダウンロード ページにアクセスしてください。[ここ](https://releases.aspose.com/words/java/)提供されるインストール手順に従ってください。
 
 ### 生成されるサムネイルのサイズをカスタマイズできますか?
 

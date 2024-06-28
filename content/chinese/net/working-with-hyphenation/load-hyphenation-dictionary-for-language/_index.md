@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## 第 2 步：加载连字符字典
 
-接下来，打开连字符字典文件的流并将其保存为所需的语言。在此示例中，我们加载瑞士德语 (de-CH) 词典：
+接下来，打开连字符字典文件的流并将其保存为所需的语言。在此示例中，我们加载瑞士德语 (de-CH) 字典：
 
 ```csharp
 Stream stream = File.OpenRead(dataDir + "hyph_de_CH.dic");

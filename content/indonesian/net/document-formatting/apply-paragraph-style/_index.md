@@ -59,7 +59,7 @@ Dengan kode ini Anda akan dapat menerapkan gaya paragraf menggunakan Aspose.Word
 
 ## Kesimpulan
 
- Dalam tutorial ini, kita menjelajahi cara menerapkan gaya paragraf dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengatur`StyleIdentifier` properti dari`ParagraphFormat`, kami dapat menerapkan gaya bawaan pada paragraf. Aspose.Words for .NET menyediakan berbagai pilihan pemformatan, termasuk kemampuan untuk membuat dan menerapkan gaya khusus, memungkinkan Anda mendapatkan dokumen yang terlihat profesional dengan mudah.
+ Dalam tutorial ini, kita menjelajahi cara menerapkan gaya paragraf dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengatur`StyleIdentifier` properti dari`ParagraphFormat`kami dapat menerapkan gaya bawaan pada paragraf. Aspose.Words for .NET menyediakan berbagai pilihan pemformatan, termasuk kemampuan untuk membuat dan menerapkan gaya khusus, memungkinkan Anda mendapatkan dokumen yang terlihat profesional dengan mudah.
 
 ### FAQ
 

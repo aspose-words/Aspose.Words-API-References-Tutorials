@@ -30,7 +30,7 @@ Nezapomeňte nahradit "Hyperlinks.docx" názvem svého vlastního souboru.
 
 ## Krok 3: Procházení polí dokumentu
 
- Používáme a`foreach` loop pro procházení všech polí přítomných v dokumentu.
+ Používáme a`foreach`loop pro procházení všech polí přítomných v dokumentu.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Tímto končí náš průvodce používáním funkce „Získat kód pole“ s A
 
 #### Otázka: Jak mohu vložit pole do dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
- A: Chcete-li vložit pole do dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete použít`DocumentBuilder.InsertField` metoda specifikující příslušný kód pole. Můžete například použít`builder.InsertField("MERGEFIELD CustomerName")` pro vložení slučovacího pole do dokumentu.
+ A: Chcete-li vložit pole do dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete použít`DocumentBuilder.InsertField` metoda specifikující příslušný kód pole. Můžete například použít`builder.InsertField("MERGEFIELD CustomerName")`pro vložení slučovacího pole do dokumentu.
 
 #### Otázka: Jak mohu aktualizovat pole v dokumentu pomocí Aspose.Words for .NET?
 
- A: Chcete-li aktualizovat pole dokumentu pomocí Aspose.Words pro .NET, můžete použít`Document.UpdateFields`metoda. Tím se aktualizují všechna pole přítomná v dokumentu, jako jsou slučovací pole, datová pole atd.
+ A: Chcete-li aktualizovat pole dokumentu pomocí Aspose.Words pro .NET, můžete použít`Document.UpdateFields` metoda. Tím se aktualizují všechna pole přítomná v dokumentu, jako jsou slučovací pole, datová pole atd.
 
 #### Otázka: Jak mohu získat hodnotu konkrétního pole v Aspose.Words pro .NET?
 

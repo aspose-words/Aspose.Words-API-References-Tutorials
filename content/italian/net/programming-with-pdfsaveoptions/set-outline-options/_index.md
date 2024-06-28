@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Passaggio 3: configura le opzioni di salvataggio come PDF con le opzioni del piano
 
- Per impostare le opzioni di struttura nel PDF generato, dobbiamo configurare il file`PdfSaveOptions` oggetto. Possiamo impostare il numero di livelli di struttura dell'intestazione (`HeadingsOutlineLevels`) e il numero di livelli di struttura espansi (`ExpandedOutlineLevels`).
+Per impostare le opzioni di struttura nel PDF generato, dobbiamo configurare il file`PdfSaveOptions` oggetto. Possiamo impostare il numero di livelli di struttura dell'intestazione (`HeadingsOutlineLevels`) e il numero di livelli di struttura espansi (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

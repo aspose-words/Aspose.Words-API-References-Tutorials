@@ -2,74 +2,84 @@
 title: Wstaw obraz osadzony w dokumencie programu Word
 linktitle: Wstaw obraz osadzony w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawiać obrazy w tekście w dokumentach programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawiać obrazy wbudowane do dokumentów programu Word przy użyciu Aspose.Words dla .NET. Przewodnik krok po kroku z przykładami kodu i często zadawanymi pytaniami.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/insert-inline-image/
 ---
-W tym kompleksowym samouczku dowiesz się, jak wstawiać obrazy wbudowane do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Pod koniec tego przewodnika będziesz mógł dodawać obrazy bezpośrednio do tekstu swoich dokumentów.
+## Wstęp
+
+W dziedzinie przetwarzania dokumentów za pomocą aplikacji .NET Aspose.Words wyróżnia się jako solidne rozwiązanie do programowego manipulowania dokumentami Word. Jedną z jego kluczowych funkcji jest możliwość łatwego wstawiania obrazów w tekście, co zwiększa atrakcyjność wizualną i funkcjonalność dokumentów. W tym samouczku szczegółowo opisano, w jaki sposób można wykorzystać Aspose.Words dla .NET do płynnego osadzania obrazów w dokumentach programu Word.
 
 ## Warunki wstępne
-Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim systemie.
 
-## Krok 1: Utwórz nowy dokument i narzędzie DocumentBuider
-Aby rozpocząć, utwórz nowy dokument za pomocą klasy Document i zainicjuj obiekt DocumentBuilder:
+Zanim zagłębisz się w proces wstawiania obrazów wbudowanych przy użyciu Aspose.Words dla .NET, upewnij się, że spełnione są następujące wymagania wstępne:
+
+1. Środowisko Visual Studio: Zainstaluj program Visual Studio i przygotuj go do tworzenia i kompilowania aplikacji .NET.
+2.  Biblioteka Aspose.Words dla .NET: Pobierz i zainstaluj bibliotekę Aspose.Words dla .NET ze strony[Tutaj](https://releases.aspose.com/words/net/).
+3. Podstawowa znajomość języka C#: Znajomość podstaw języka programowania C# będzie korzystna przy wdrażaniu fragmentów kodu.
+
+Teraz przejdźmy przez kolejne kroki, aby zaimportować niezbędne przestrzenie nazw i wstawić obraz wbudowany przy użyciu Aspose.Words dla .NET.
+
+## Importuj przestrzenie nazw
+
+Po pierwsze, musisz zaimportować wymagane przestrzenie nazw do swojego kodu C#, aby uzyskać dostęp do funkcjonalności Aspose.Words dla .NET:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Te przestrzenie nazw zapewniają dostęp do klas i metod niezbędnych do manipulowania dokumentami Worda i obsługi obrazów.
+
+## Krok 1: Utwórz nowy dokument
+
+ Rozpocznij od zainicjowania nowej instancji pliku`Document` klasa i A`DocumentBuilder` aby ułatwić tworzenie dokumentów.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 2: Wstaw obraz osadzony
-Następnie użyj metody InsertImage klasy DocumentBuilder, aby wstawić obraz osadzony w dokumencie. Podaj ścieżkę pliku obrazu jako parametr:
+
+ Użyj`InsertImage` metoda`DocumentBuilder` class, aby wstawić obraz do dokumentu w bieżącym miejscu.
 
 ```csharp
-builder.InsertImage(ImagesDir + "Transparent background logo.png");
+string imagePath = "PATH_TO_YOUR_IMAGE_FILE";
+builder.InsertImage(imagePath);
 ```
+
+ Zastępować`"PATH_TO_YOUR_IMAGE_FILE"` z rzeczywistą ścieżką do pliku obrazu. Ta metoda płynnie integruje obraz z dokumentem.
 
 ## Krok 3: Zapisz dokument
-Po wstawieniu obrazu inline należy zapisać dokument do pliku korzystając z metody Save klasy Document:
+
+ Na koniec zapisz dokument w wybranej lokalizacji za pomocą`Save` metoda`Document` klasa.
 
 ```csharp
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
+doc.Save(dataDir + "InsertInlineImage.docx");
 ```
 
-### Przykładowy kod źródłowy do wstawiania obrazu wbudowanego przy użyciu Aspose.Words dla .NET
-Oto kompletny kod źródłowy do wstawiania obrazu wbudowanego przy użyciu Aspose.Words dla .NET:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertImage(ImagesDir + "Transparent background logo.png");
-
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
-```
+Ten krok gwarantuje, że dokument zawierający obraz osadzony zostanie zapisany pod określoną nazwą pliku.
 
 ## Wniosek
-Gratulacje! Pomyślnie nauczyłeś się, jak wstawiać obrazy wbudowane do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz teraz bezproblemowo dodawać obrazy do tekstu swoich dokumentów.
 
-Obrazy wbudowane są przydatne w różnych scenariuszach, takich jak dodawanie ilustracji, logo lub innych elementów wizualnych bezpośrednio do przepływu dokumentu.
+Podsumowując, integracja obrazów wbudowanych z dokumentami programu Word za pomocą Aspose.Words dla .NET jest prostym procesem, który poprawia wizualizację i funkcjonalność dokumentu. Wykonując kroki opisane powyżej, możesz efektywnie programowo manipulować obrazami w dokumentach, wykorzystując moc Aspose.Words.
 
-### Często zadawane pytania dotyczące wstawiania obrazu wbudowanego w dokumencie programu Word
+## Często zadawane pytania
 
-#### P: Czy mogę zmienić rozmiar obrazów wbudowanych w dokumencie programu Word?
+### Czy mogę wstawić wiele obrazów do jednego dokumentu programu Word przy użyciu Aspose.Words dla .NET?
+ Tak, możesz wstawić wiele obrazów, przeglądając pliki obrazów i wywołując`builder.InsertImage` dla każdego obrazu.
 
-Odp.: Tak, możesz zmienić rozmiar obrazów wbudowanych za pomocą Aspose.Words dla .NET. Po wstawieniu obrazu można manipulować jego rozmiarem, dostosowując właściwości szerokości i wysokości obiektu Shape reprezentującego obraz.
+### Czy Aspose.Words dla .NET obsługuje wstawianie obrazów z przezroczystym tłem?
+Tak, Aspose.Words dla .NET obsługuje wstawianie obrazów z przezroczystym tłem, zachowując przezroczystość obrazu w dokumencie.
 
-#### P: Czy można dodać tekst alternatywny do obrazów wbudowanych ze względów dostępności?
+### Jak zmienić rozmiar obrazu wstawionego za pomocą Aspose.Words dla .NET?
+ Możesz zmienić rozmiar obrazu, ustawiając właściwości szerokości i wysokości pliku`Shape` obiekt zwrócony przez`builder.InsertImage`.
 
-Odp.: Tak, możesz dodać tekst alternatywny do obrazów wbudowanych, aby zwiększyć dostępność. Aspose.Words dla .NET obsługuje dodawanie tekstu alternatywnego do obrazów, umożliwiając czytnikom ekranu i innym technologiom wspomagającym opisywanie zawartości obrazu użytkownikom niedowidzącym.
+### Czy możliwe jest umieszczenie obrazu wbudowanego w określonym miejscu w dokumencie za pomocą Aspose.Words dla .NET?
+ Tak, możesz określić pozycję obrazu wbudowanego, korzystając z pozycji kursora kreatora dokumentów przed wywołaniem`builder.InsertImage`.
 
-#### P: Czy mogę zastosować formatowanie lub style do obrazów wbudowanych?
-
-Odp.: Absolutnie! Aspose.Words dla .NET zapewnia rozbudowane opcje formatowania obrazów wbudowanych. Do obrazów można zastosować różne style, obramowania, efekty i inne atrybuty formatowania, aby dopasować je do projektu wizualnego dokumentu.
-
-#### P: Czy Aspose.Words dla .NET obsługuje wstawianie obrazów ze strumienia lub tablicy bajtów?
-
-Odp.: Tak, możesz wstawiać obrazy wbudowane ze strumieni lub tablic bajtowych za pomocą Aspose.Words dla .NET. Umożliwia to pracę z obrazami ładowanymi ze źródeł zewnętrznych lub obrazami generowanymi dynamicznie.
-
-#### P: Czy mogę wstawiać obrazy w określonych miejscach w treści tekstowej?
-
-O: Tak, klasa DocumentBuilder w Aspose.Words dla .NET zapewnia precyzyjną kontrolę nad pozycją wstawiania obrazów wbudowanych. Możesz określić dokładną lokalizację w tekście, gdzie powinien zostać wstawiony obraz.
+### Czy mogę osadzić obrazy z adresów URL w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
+Tak, możesz pobierać obrazy z adresów URL za pomocą bibliotek .NET, a następnie wstawiać je do dokumentu programu Word za pomocą Aspose.Words dla .NET.

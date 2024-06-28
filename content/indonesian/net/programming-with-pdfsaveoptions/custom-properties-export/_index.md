@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## Langkah 2: Tambahkan properti khusus
- Selanjutnya, tambahkan properti khusus yang diinginkan. Misalnya, untuk menambahkan properti "Perusahaan" dengan nilai "Aspose", gunakan`Add` metode pengumpulan CustomDocumentProperties:
+ Selanjutnya, tambahkan properti khusus yang diinginkan. Misalnya, untuk menambahkan properti "Perusahaan" dengan nilai "Apose", gunakan`Add` metode pengumpulan CustomDocumentProperties:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ J: Untuk mengekspor properti kustom dokumen ke dokumen PDF menggunakan Aspose.Wo
 
  Buat sebuah instance dari`Document` kelas.
 
- Tambahkan properti khusus yang diinginkan menggunakan`CustomDocumentProperties` koleksi. Misalnya, gunakan`Add` metode untuk menambahkan properti "Perusahaan" dengan nilai "Aspose".
+ Tambahkan properti khusus yang diinginkan menggunakan`CustomDocumentProperties` koleksi. Misalnya, gunakan`Add` metode untuk menambahkan properti "Perusahaan" dengan nilai "Apose".
 
  Buat sebuah instance dari`PdfSaveOptions` kelas dan tentukan cara mengekspor properti khusus menggunakan`CustomPropertiesExport` Properti. Itu`PdfCustomPropertiesExport.Standard` value mengekspor properti khusus sesuai dengan pengaturan default.
 

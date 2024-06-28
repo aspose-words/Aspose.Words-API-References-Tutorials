@@ -10,7 +10,7 @@ url: /vi/java/word-processing/manipulating-document-content/
 
 ## Giới thiệu
 
-Trong thế giới lập trình Java, quản lý tài liệu hiệu quả là một khía cạnh quan trọng của nhiều ứng dụng. Cho dù bạn đang làm việc tạo báo cáo, xử lý hợp đồng hay xử lý bất kỳ tác vụ nào liên quan đến tài liệu, Aspose.Words for Java là một công cụ mạnh mẽ cần có trong bộ công cụ của bạn. Trong hướng dẫn toàn diện này, chúng tôi sẽ đi sâu vào sự phức tạp của việc thao tác nội dung tài liệu với tính năng dọn dẹp, trường và dữ liệu XML bằng Aspose.Words cho Java. Chúng tôi sẽ cung cấp hướng dẫn từng bước cùng với các ví dụ về mã nguồn để trang bị cho bạn kiến thức và kỹ năng cần thiết để làm chủ thư viện đa năng này.
+Trong thế giới lập trình Java, quản lý tài liệu hiệu quả là một khía cạnh quan trọng của nhiều ứng dụng. Cho dù bạn đang làm việc tạo báo cáo, xử lý hợp đồng hay xử lý bất kỳ tác vụ nào liên quan đến tài liệu, Aspose.Words for Java là một công cụ mạnh mẽ cần có trong bộ công cụ của bạn. Trong hướng dẫn toàn diện này, chúng tôi sẽ đi sâu vào sự phức tạp của việc thao tác nội dung tài liệu với tính năng dọn dẹp, trường và dữ liệu XML bằng cách sử dụng Aspose.Words cho Java. Chúng tôi sẽ cung cấp hướng dẫn từng bước cùng với các ví dụ về mã nguồn để trang bị cho bạn kiến thức và kỹ năng cần thiết để làm chủ thư viện đa năng này.
 
 ## Bắt đầu với Aspose.Words cho Java
 

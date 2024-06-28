@@ -59,7 +59,7 @@ Con este código podrás aplicar un estilo de párrafo usando Aspose.Words para 
 
 ## Conclusión
 
- En este tutorial, exploramos cómo aplicar un estilo de párrafo en un documento de Word usando Aspose.Words para .NET. Al configurar el`StyleIdentifier` propiedad de la`ParagraphFormat`, pudimos aplicar un estilo integrado al párrafo. Aspose.Words para .NET ofrece una amplia gama de opciones de formato, incluida la capacidad de crear y aplicar estilos personalizados, lo que le permite lograr documentos de aspecto profesional con facilidad.
+ En este tutorial, exploramos cómo aplicar un estilo de párrafo en un documento de Word usando Aspose.Words para .NET. Al configurar el`StyleIdentifier` propiedad de la`ParagraphFormat`pudimos aplicar un estilo integrado al párrafo. Aspose.Words para .NET ofrece una amplia gama de opciones de formato, incluida la capacidad de crear y aplicar estilos personalizados, lo que le permite lograr documentos de aspecto profesional con facilidad.
 
 ### Preguntas frecuentes
 

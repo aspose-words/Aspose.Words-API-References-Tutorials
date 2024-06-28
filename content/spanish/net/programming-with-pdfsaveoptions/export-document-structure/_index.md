@@ -44,7 +44,7 @@ Finalmente podremos guardar el documento en formato PDF utilizando las opciones 
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
 ```
 
-Eso es todo ! Ha exportado exitosamente una estructura de documento y generado un PDF con la estructura del documento visible usando Aspose.Words para .NET.
+Eso es todo ! Ha exportado con éxito una estructura de documento y generado un PDF con la estructura del documento visible usando Aspose.Words para .NET.
 
 ### Código fuente de muestra para exportar la estructura de un documento con Aspose.Words para .NET
 

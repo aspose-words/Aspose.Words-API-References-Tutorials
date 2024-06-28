@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## 步骤 4：在文档中插入分页符
 
-为了说明另一个元字符的使用，我们将使用以下命令在文档中插入分页符`InsertBreak`方法与`BreakType.PageBreak`范围。我们首先将光标从`DocumentBuilder`到文档末尾，然后插入分页符和新的文本行：
+为了说明另一个元字符的使用，我们将使用以下命令在文档中插入分页符`InsertBreak`方法与`BreakType.PageBreak`参数。我们首先将光标从`DocumentBuilder`到文档末尾，然后插入分页符和新的文本行：
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### 问：如何使用 Aspose.Words for .NET 在文档中插入分页符？
 
-答：为了说明另一个元字符的使用，我们将使用以下命令在文档中插入分页符：`InsertBreak`方法与`BreakType.PageBreak`范围。我们首先将光标从`DocumentBuilder`到文档末尾，然后插入分页符和新的文本行：
+答：为了说明另一个元字符的使用，我们将使用以下命令在文档中插入分页符：`InsertBreak`方法与`BreakType.PageBreak`参数。我们首先将光标从`DocumentBuilder`到文档末尾，然后插入分页符和新的文本行：
 
 ```csharp
 builder. MoveToDocumentEnd();

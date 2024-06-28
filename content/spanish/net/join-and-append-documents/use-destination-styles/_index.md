@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Paso 2: cargue los documentos de origen y de destino
 
- A continuación, debe cargar los documentos de origen y de destino utilizando Aspose.Words.`Document` clase. Actualice los nombres de los archivos en el`Document` constructor de acuerdo con los nombres de sus documentos.
+ continuación, debe cargar los documentos de origen y de destino utilizando Aspose.Words.`Document` clase. Actualice los nombres de los archivos en el`Document` constructor de acuerdo con los nombres de sus documentos.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: agregue el documento de origen con estilos de destino
 
- Para adjuntar el documento de origen al documento de destino mientras se aplican los estilos del documento de destino, puede utilizar el`AppendDocument` método de la`Document` clase con el`ImportFormatMode.UseDestinationStyles` parámetro.
+ Para adjuntar el documento de origen al documento de destino mientras se aplican los estilos del documento de destino, puede utilizar el`AppendDocument` método de la`Document` clase con el`ImportFormatMode.UseDestinationStyles` parámetros.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);

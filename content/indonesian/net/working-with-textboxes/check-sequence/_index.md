@@ -91,11 +91,11 @@ A: Untuk memeriksa urutan TextBox menggunakan Aspose.Words for .NET, perpustakaa
 
 #### T: Bagaimana cara menentukan apakah TextBox adalah kepala urutan?
 
-A: Untuk menentukan apakah TextBox adalah kepala urutan, Anda dapat memeriksa apakah ia memiliki bentuk berikutnya (`Next`) tetapi bukan bentuk sebelumnya (`Previous`). Jika iya, berarti dia adalah pemimpinnya.
+A: Untuk menentukan apakah TextBox adalah kepala urutan, Anda dapat memeriksa apakah ia memiliki bentuk selanjutnya (`Next`) tetapi bukan bentuk sebelumnya (`Previous`). Jika iya, berarti dia adalah pemimpinnya.
 
 #### T: Bagaimana cara mengetahui apakah TextBox berada di tengah-tengah urutan?
 
-A: Untuk menentukan apakah TextBox berada di tengah-tengah urutan, Anda perlu memeriksa apakah ia memiliki kedua bentuk selanjutnya (`Next`) dan bentuk sebelumnya (`Previous`). Jika ya, berarti ini berada di tengah-tengah barisan.
+A: Untuk menentukan apakah TextBox berada di tengah-tengah urutan, Anda perlu memeriksa apakah ia memiliki kedua bentuk berikutnya (`Next`) dan bentuk sebelumnya (`Previous`). Jika ya, berarti ini berada di tengah-tengah barisan.
 
 #### T: Bagaimana cara memeriksa apakah TextBox adalah akhir dari urutan?
 

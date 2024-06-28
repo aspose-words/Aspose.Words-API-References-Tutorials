@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Nastavte výchozí složku písem
-Poté můžete nastavit výchozí složku písem pomocí`FontSettings.DefaultInstance` třída a`SetFontsFolder()` metoda. Zadejte cestu ke složce písem, kterou chcete použít jako výchozí složku.
+ Poté můžete nastavit výchozí složku písem pomocí`FontSettings.DefaultInstance` třída a`SetFontsFolder()`metoda. Zadejte cestu ke složce písem, kterou chcete použít jako výchozí složku.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

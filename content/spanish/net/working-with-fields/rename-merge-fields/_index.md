@@ -48,7 +48,7 @@ foreach(Field f in doc.Range.Fields)
 
 ## Paso 4: guardar el documento
 
- Finalmente llamamos al`Save()` Método para guardar el documento modificado.
+ Finalmente llamamos al`Save()` método para guardar el documento modificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
@@ -88,7 +88,7 @@ Siga estos pasos para cambiar el nombre de los campos de combinación en su docu
 
 #### P: ¿Cómo puedo cambiar el nombre de los campos combinados en un documento de Word usando Aspose.Words para .NET?
 
- R: Para cambiar el nombre de los campos combinados en un documento de Word usando Aspose.Words para .NET, puede recorrer los campos en el documento usando el`FieldMergingArgs` clase y utilizar el`FieldMergingArgs.FieldName` método para cambiar el nombre del campo.
+ R: Para cambiar el nombre de los campos combinados en un documento de Word usando Aspose.Words para .NET, puede recorrer los campos en el documento usando el`FieldMergingArgs` clase y utilizar el`FieldMergingArgs.FieldName` método para cambiar el nombre de los campos.
 
 #### P: ¿Es posible cambiar el nombre sólo de ciertos campos combinados en un documento de Word con Aspose.Words para .NET?
 

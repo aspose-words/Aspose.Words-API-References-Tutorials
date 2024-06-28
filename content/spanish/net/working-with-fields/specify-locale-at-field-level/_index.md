@@ -72,4 +72,4 @@ Este fue un código fuente de ejemplo para especificar la localización a nivel 
 
 #### P: ¿Cómo puedo obtener la configuración regional utilizada actualmente para un campo en Aspose.Words para .NET?
 
- R: Para obtener la configuración regional utilizada actualmente para un campo en Aspose.Words para .NET, puede usar la configuración regional del campo.`Field.LocaleId` propiedad. Esto le permitirá obtener el identificador local asociado con el campo.
+ R: Para obtener la configuración regional utilizada actualmente para un campo en Aspose.Words para .NET, puede usar la configuración regional del campo.`Field.LocaleId`propiedad. Esto le permitirá obtener el identificador local asociado con el campo.

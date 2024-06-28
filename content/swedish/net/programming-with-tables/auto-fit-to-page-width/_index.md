@@ -1,79 +1,114 @@
 ---
-title: Autopassa till sidbredd
-linktitle: Autopassa till sidbredd
+title: Autopassa till fönster
+linktitle: Autopassa till fönster
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du automatiskt anpassar en tabell till sidbredd i ett Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du automatiskt anpassar tabeller till sidbredd i Word-dokument med Aspose.Words för .NET med denna omfattande, steg-för-steg-guide. Perfekt för att automatisera ditt dokumentarbetsflöde.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/auto-fit-to-page-width/
 ---
 
-I den här handledningen kommer vi att lära oss hur man använder Aspose.Words för .NET för att automatiskt anpassa en tabell till sidbredd i ett Word-dokument. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna manipulera tabeller i Word-dokument programmatiskt.
+## Introduktion
 
-## Steg 1: Projektinställning
-1. Starta Visual Studio och skapa ett nytt C#-projekt.
-2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
+Hallå där! Vill du automatisera dina dokumentbearbetningsuppgifter med Aspose.Words för .NET? Oavsett om du genererar rapporter, skapar mallar eller manipulerar befintliga dokument är Aspose.Words ett kraftfullt verktyg som kan hjälpa dig att uppnå allt detta och mer. I den här självstudien kommer vi att dyka in i hur man automatiskt anpassar tabeller till sidbredd i Word-dokument med Aspose.Words för .NET. Vi guidar dig genom varje steg, från att ställa in din miljö till att implementera funktionen i din kod. I slutet av den här guiden har du ett gediget grepp om hur du hanterar tabellformatering programmatiskt.
 
-## Steg 2: Skapa och konfigurera dokumentet
-För att starta ordbehandling med tabellen måste vi skapa ett dokument och konfigurera dokumentgeneratorn. Följ dessa steg:
+## Förutsättningar
+
+Innan vi börjar, låt oss se till att du har allt du behöver:
+
+1. Grundläggande kunskaper i C#: Bekantskap med C#-syntax och begrepp är väsentligt.
+2.  Aspose.Words för .NET: Ladda ner det[här](https://releases.aspose.com/words/net/) . Du kan börja med en[gratis provperiod](https://releases.aspose.com/).
+3. Visual Studio: Alla senaste versioner fungerar, men den senaste versionen rekommenderas.
+4. .NET Framework: Se till att det är installerat på ditt system.
+
+Har du allt? Bra! Låt oss gå vidare till den roliga delen.
+
+## Importera namnområden
+
+Till att börja med måste vi importera de nödvändiga namnrymden. Detta är avgörande eftersom det ger oss tillgång till de klasser och metoder som vi kommer att använda i den här handledningen.
 
 ```csharp
-// Sökväg till din dokumentkatalog
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// Skapa dokumentet och dokumentgeneratorn
+Dessa namnutrymmen är viktiga för att arbeta med dokument och tabellformatering i Aspose.Words.
+
+## Steg 1: Konfigurera dokumentkatalogen
+
+Först och främst, låt oss specificera katalogen där våra dokument kommer att sparas. Detta hjälper Aspose.Words att hitta och spara filerna vi vill manipulera.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentmapp.
+
+## Steg 2: Skapa ett nytt dokument
+
+ Därefter skapar vi ett nytt Word-dokument och initierar ett`DocumentBuilder` för att hjälpa oss bygga dokumentinnehållet.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
+ Här initierar vi en`Document` föremål och ett`DocumentBuilder` objekt som vi kommer att använda för att infoga och formatera vårt innehåll.
 
-## Steg 3: Infoga och konfigurera tabellen
-Därefter infogar vi en tabell i dokumentet med en bredd som tar upp halva sidans bredd. Använd följande kod:
+## Steg 3: Infoga en tabell
+
+Låt oss nu infoga en tabell i vårt dokument. Vi börjar med att skapa en tabell som tar upp halva sidbredden.
 
 ```csharp
-// Sätt in tabellen och konfigurera dess bredd
-Table table = builder. StartTable();
-builder. InsertCell();
-table. PreferredWidth = PreferredWidth. FromPercent(50);
+Table table = builder.StartTable();
+builder.InsertCell();
+table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("Cell #2");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("Cell #3");
 ```
 
-Här använder vi dokumentbyggaren för att börja skapa tabellen, infoga celler och ställa in den föredragna bredden på tabellen till 50 % av sidbredden. Sedan lägger vi till text i varje cell.
+ I det här steget startar vi en tabell, infogar celler och lägger till lite text i varje cell. De`AutoFit` metod används för att ställa in tabellens bredd så att den passar sidbredden.
 
-## Steg 4: Spara det ändrade dokumentet
-Slutligen måste vi spara det ändrade dokumentet med tabellen anpassad till sidans bredd. Använd följande kod:
+## Steg 4: Spara dokumentet
+
+Slutligen måste vi spara vårt dokument. Detta kommer att skriva ändringarna vi har gjort i en ny Word-fil.
 
 ```csharp
-// Spara det ändrade dokumentet
 doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
-Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
-  
-### Exempel på källkod för Autopassa till sidabredd med Aspose.Words för .NET 
+Denna kodrad sparar dokumentet i den angivna katalogen med det angivna filnamnet.
 
-```csharp
-	// Sökväg till din dokumentkatalog
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Steg 5: Kör koden
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Infoga en tabell med en bredd som tar upp halva sidbredden.
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	table.PreferredWidth = PreferredWidth.FromPercent(50);
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	builder.Writeln("Cell #2");
-	builder.InsertCell();
-	builder.Writeln("Cell #3");
-	doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
-```
+När du har skrivit koden kör du den i Visual Studio. Ditt dokument kommer att sparas i den angivna katalogen med tabellen automatiskt anpassad till sidbredden.
 
 ## Slutsats
-den här handledningen lärde vi oss hur man automatiskt anpassar en tabell till sidbredd i ett Word-dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och implementera den medföljande C#-koden kan du manipulera tabeller i dina Word-dokument programmatiskt. Denna funktion gör att du dynamiskt kan anpassa tabellens bredd efter sidan, vilket ger ett professionellt och visuellt tilltalande dokument.
+
+ Och där har du det! Du har framgångsrikt lärt dig hur du automatiskt anpassar tabeller till sidbredden i Word-dokument med Aspose.Words för .NET. Denna handledning behandlade hur du ställer in din miljö, skapar och formaterar tabeller och sparar dokumentet. Aspose.Words erbjuder en uppsjö av funktioner, så se till att utforska[API dokumentation](https://reference.aspose.com/words/net/) att fullt ut utnyttja dess kapacitet.
+
+## Vanliga frågor
+
+### 1. Vad är Aspose.Words för .NET?
+
+Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa, manipulera och konvertera Word-dokument programmatiskt. Den är perfekt för att automatisera dokumentrelaterade uppgifter.
+
+### 2. Kan jag använda Aspose.Words för .NET gratis?
+
+ Du kan prova Aspose.Words för .NET med en[gratis provperiod](https://releases.aspose.com/). För långvarig användning måste du köpa en licens.
+
+### 3. Hur formaterar jag tabeller annorlunda?
+
+Du kan anpassa tabellformateringen genom att använda olika metoder från Aspose.Words. Kolla[API dokumentation](https://reference.aspose.com/words/net/) för detaljerade instruktioner.
+
+### 4. Hur får jag support för Aspose.Words för .NET?
+
+Du kan få stöd genom att besöka[Aspose supportforum](https://forum.aspose.com/c/words/8).
+
+### 5. Kan jag manipulera andra element som bilder och diagram?
+
+ Ja, Aspose.Words låter dig manipulera olika element som bilder, diagram och SmartArt. Utforska[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.

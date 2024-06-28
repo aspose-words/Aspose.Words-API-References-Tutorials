@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ---
 
-En este tutorial, le explicaremos cómo cargar un rango de páginas específico desde un documento PDF usando Aspose.Words para .NET. Siga los pasos a continuación:
+En este tutorial, le explicaremos cómo cargar un rango de páginas específico desde un documento PDF utilizando Aspose.Words para .NET. Siga los pasos a continuación:
 
 ## Paso 1: cargar una variedad de páginas PDF
 

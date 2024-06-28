@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Ange den beställda listan.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Ange kursiv betoning för texten.
+// Ange den italienska betoningen för texten.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

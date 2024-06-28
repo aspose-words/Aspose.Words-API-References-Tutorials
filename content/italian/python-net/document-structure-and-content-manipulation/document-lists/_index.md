@@ -16,7 +16,7 @@ Gli elenchi sono disponibili in due tipi principali: puntati e numerati. Permett
 
 ## Impostazione dell'ambiente
 
- Prima di immergerci nella creazione e gestione degli elenchi, assicurati di avere installata la libreria Aspose.Words per Python. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/python/) . Inoltre, fare riferimento alla documentazione API all'indirizzo[questo link](https://reference.aspose.com/words/python-net/) per informazioni dettagliate.
+Prima di immergerci nella creazione e gestione degli elenchi, assicurati di avere installata la libreria Aspose.Words per Python. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/python/) . Inoltre, fare riferimento alla documentazione API all'indirizzo[questo link](https://reference.aspose.com/words/python-net/) per informazioni dettagliate.
 
 ## Creazione di elenchi puntati
 

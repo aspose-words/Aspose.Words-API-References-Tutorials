@@ -1,6 +1,6 @@
 ---
-title: Texto em itálico
-linktitle: Texto em itálico
+title: Texto italiano
+linktitle: Texto italiano
 second_title: API de processamento de documentos Aspose.Words
 description: Aprenda como colocar texto em itálico com o guia passo a passo do Aspose.Words for .NET.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Use um construtor de documentos para adicionar conteúdo ao documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Deixe o texto em itálico.
+// Torne o texto italiano.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
@@ -46,7 +46,7 @@ Parabéns! Agora você aprendeu como usar o recurso de texto em itálico com Asp
 
 #### P: Como posso colocar o texto em itálico no Aspose.Words?
 
-R: Para colocar o texto em itálico no Aspose.Words, você pode usar o`Font.Italic` propriedade do`Run` objeto. Você pode definir esta propriedade como`true` para colocar em itálico um texto específico. Por exemplo, você pode usar`run.Font.Italic=true` colocar em itálico o texto contido no`Run` objeto.
+R: Para colocar o texto em itálico no Aspose.Words, você pode usar o`Font.Italic` propriedade do`Run`objeto. Você pode definir esta propriedade como`true` para colocar em itálico um texto específico. Por exemplo, você pode usar`run.Font.Italic=true` colocar em itálico o texto contido no`Run` objeto.
 
 #### P: É possível colocar vários trechos de texto em itálico no mesmo parágrafo?
 

@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
-在此示例中，我们正在加载 PDF 文档的第一页。您可以更改以下值`PageIndex`和`PageCount`到所需的页面范围。
+在此示例中，我们正在加载 PDF 文档的第一页。您可以更改的值`PageIndex`和`PageCount`到所需的页面范围。
 
 ## 第 2 步：保存文档
 

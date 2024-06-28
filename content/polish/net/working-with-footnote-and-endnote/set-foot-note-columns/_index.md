@@ -65,7 +65,7 @@ O: Konfigurowanie kolumn przypisów pomaga poprawić czytelność dokumentów po
 
 #### P: Czy można określić różną liczbę kolumn dla różnych sekcji dokumentu?
 
-O: Tak, możliwe jest określenie różnej liczby kolumn dla różnych sekcji dokumentu. Możesz użyć metod manipulacji sekcją Aspose.Words, aby zdefiniować określone konfiguracje dla każdej sekcji, w tym liczbę kolumn przypisów.
+O: Tak, możliwe jest określenie różnej liczby kolumn dla różnych sekcji dokumentu. Możesz użyć metod manipulacji sekcjami Aspose.Words, aby zdefiniować określone konfiguracje dla każdej sekcji, w tym liczbę kolumn przypisów.
 
 #### P: Czy kolumny przypisów są brane pod uwagę podczas konwersji do innych formatów plików?
 
@@ -73,4 +73,4 @@ O: Tak, podczas konwertowania dokumentów zawierających kolumny przypisów do i
 
 #### P: Czy mogę dostosować wygląd kolumn przypisów?
 
-O: Tak, możesz dostosować wygląd kolumn przypisów, korzystając z właściwości formatowania dostępnych w Aspose.Words. Możesz dostosować szerokość kolumn, ustawić odstępy między kolumnami i zastosować niestandardowe style czcionek, jeśli to konieczne.
+Odp.: Tak, możesz dostosować wygląd kolumn przypisów, korzystając z właściwości formatowania dostępnych w Aspose.Words. Możesz dostosować szerokość kolumn, ustawić odstępy między kolumnami i zastosować niestandardowe style czcionek, jeśli to konieczne.

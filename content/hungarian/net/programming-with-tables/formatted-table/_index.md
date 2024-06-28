@@ -21,7 +21,7 @@ A formázott táblázat felépítéséhez új dokumentumot kell létrehoznunk, �
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Hozza létre a dokumentumot, és inicializálja a dokumentumgenerátort
+// Hozzon létre egy dokumentumot, és inicializálja a dokumentumgenerátort
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

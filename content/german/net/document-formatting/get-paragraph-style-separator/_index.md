@@ -71,7 +71,7 @@ A: Nein, Aspose.Words für .NET ist nicht die einzige verfügbare Lösung für d
 
 #### F: Kann ich die Funktion „Absatzstil-Trennzeichen abrufen“ mit anderen Programmiersprachen verwenden?
 
-A: Ja, Sie können die Funktion „Absatzstil-Trennzeichen abrufen“ mit anderen von Aspose.Words unterstützten Programmiersprachen wie Java, Python oder C verwenden++. Aspose.Words bietet eine Reihe sprachspezifischer APIs und Bibliotheken, um die Dokumentenverarbeitung über mehrere Plattformen hinweg zu erleichtern.
+A: Ja, Sie können die Funktion „Absatzstil-Trennzeichen abrufen“ mit anderen von Aspose.Words unterstützten Programmiersprachen wie Java, Python oder C verwenden.++. Aspose.Words bietet eine Reihe sprachspezifischer APIs und Bibliotheken, um die Dokumentenverarbeitung über mehrere Plattformen hinweg zu erleichtern.
 
 #### F: Wie kann ich auf die Dokumentation zu Aspose.Words für .NET zugreifen?
 

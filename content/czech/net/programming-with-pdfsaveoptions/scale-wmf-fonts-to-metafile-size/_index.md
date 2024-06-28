@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Krok 3: Nakonfigurujte možnosti vykreslování metasouboru
 
- Chcete-li povolit nebo zakázat změnu velikosti písma WMF na velikost metasouboru, musíme nakonfigurovat`MetafileRenderingOptions`objekt. V tomto příkladu zakážeme změnu velikosti písma nastavením`ScaleWmfFontsToMetafileSize`majetek do`false`.
+ Chcete-li povolit nebo zakázat změnu velikosti písma WMF na velikost metasouboru, musíme nakonfigurovat`MetafileRenderingOptions` objekt. V tomto příkladu zakážeme změnu velikosti písma nastavením`ScaleWmfFontsToMetafileSize`majetek do`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ dokument PDF pomocí Aspose.Words for .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Pokud Aspose.Words nemůže správně vykreslit některé záznamy metasouboru do vektorové grafiky
+	//Pokud Aspose.Words nemůže správně vykreslit některé záznamy metasouboru do vektorové grafiky
 	// pak Aspose.Words vykreslí tento metasoubor do bitmapy.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 
@@ -83,7 +83,7 @@ dokument PDF pomocí Aspose.Words for .NET.
 
 ## Závěr
 
-tomto tutoriálu jsme vysvětlili, jak povolit nebo zakázat změnu velikosti písem WMF na velikost metasouboru v dokumentu PDF pomocí Aspose.Words for .NET. Podle popsaných kroků můžete snadno určit, zda má být velikost písem WMF při převodu do dokumentu PDF změněna tak, aby odpovídala velikosti metasouboru. To vám může pomoci zmenšit velikost generovaného souboru PDF a zlepšit výkon vykreslování. Ujistěte se, že jste zadali správnou cestu k vašim dokumentům a podle potřeby nakonfigurujte možnosti vykreslování metasouborů.
+V tomto tutoriálu jsme vysvětlili, jak povolit nebo zakázat změnu velikosti písem WMF na velikost metasouboru v dokumentu PDF pomocí Aspose.Words for .NET. Podle popsaných kroků můžete snadno určit, zda má být velikost písem WMF při převodu do dokumentu PDF změněna tak, aby odpovídala velikosti metasouboru. To vám může pomoci zmenšit velikost generovaného souboru PDF a zlepšit výkon vykreslování. Ujistěte se, že jste zadali správnou cestu k vašim dokumentům a podle potřeby nakonfigurujte možnosti vykreslování metasouborů.
 
 ### Často kladené otázky
 

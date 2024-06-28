@@ -92,7 +92,7 @@ Você pode personalizar a aparência dos campos do formulário, como ajustar o t
    Você pode personalizar a aparência do campo do formulário ajustando o tamanho da fonte, a cor e outras opções de formatação.
 
 4. ### Existe um teste gratuito disponível para Aspose.Words for Java?
-    Sim, você pode acessar uma avaliação gratuita do Aspose.Words for Java[aqui](https://releases.aspose.com/).
+    Sim, você pode acessar uma avaliação gratuita do Aspose.Words for Java.[aqui](https://releases.aspose.com/).
 
 5. ### Onde posso obter suporte para Aspose.Words for Java?
     Para suporte e assistência, visite o[Fórum Aspose.Words](https://forum.aspose.com/).

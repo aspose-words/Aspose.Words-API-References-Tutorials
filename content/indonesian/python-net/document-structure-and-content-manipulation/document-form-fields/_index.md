@@ -246,7 +246,7 @@ pip install aspose-words
 
 ### Bisakah saya menetapkan nilai default untuk bidang formulir?
 
- Ya, Anda bisa mengatur nilai default untuk bidang formulir menggunakan properti yang sesuai. Misalnya, untuk menyetel teks default pada kolom input teks, gunakan`text` Properti.
+ Ya, Anda dapat menetapkan nilai default untuk bidang formulir menggunakan properti yang sesuai. Misalnya, untuk menyetel teks default pada kolom input teks, gunakan`text` Properti.
 
 ### Apakah kolom formulir dapat diakses oleh pengguna penyandang disabilitas?
 

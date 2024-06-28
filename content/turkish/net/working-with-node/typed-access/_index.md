@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-node/typed-access/
 ---
 
-Aspose.Words for .NET ile Yazılı Erişim özelliğinin nasıl kullanılacağını gösteren C# kaynak kodunu açıklayan adım adım bir kılavuz aşağıda verilmiştir.
+Aspose.Words for .NET ile Yazılı Erişim özelliğinin nasıl kullanılacağını gösteren, C# kaynak kodunu açıklayan adım adım bir kılavuzu burada bulabilirsiniz.
 
 ## 1. Adım: Gerekli referansları içe aktarın
 Başlamadan önce Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Buna Aspose.Words kütüphanesinin içe aktarılması ve gerekli ad alanlarının kaynak dosyanıza eklenmesi de dahildir.

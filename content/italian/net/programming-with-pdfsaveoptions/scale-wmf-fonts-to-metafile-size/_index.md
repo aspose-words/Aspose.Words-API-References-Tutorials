@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Passaggio 3: configura le opzioni di rendering del metafile
 
- Per abilitare o disabilitare il ridimensionamento dei caratteri WMF alla dimensione del metafile, dobbiamo configurare il file`MetafileRenderingOptions`oggetto. In questo esempio, disabilitiamo il ridimensionamento dei caratteri impostando il file`ScaleWmfFontsToMetafileSize`proprietà a`false`.
+ Per abilitare o disabilitare il ridimensionamento dei caratteri WMF alla dimensione del metafile, dobbiamo configurare il file`MetafileRenderingOptions` oggetto. In questo esempio, disabilitiamo il ridimensionamento dei caratteri impostando il file`ScaleWmfFontsToMetafileSize`proprietà a`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ un documento PDF utilizzando Aspose.Words per .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Se Aspose.Words non riesce a eseguire correttamente il rendering di alcuni record del metafile in grafica vettoriale
+	//Se Aspose.Words non riesce a eseguire correttamente il rendering di alcuni record del metafile in grafica vettoriale
 	// quindi Aspose.Words esegue il rendering di questo metafile in una bitmap.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

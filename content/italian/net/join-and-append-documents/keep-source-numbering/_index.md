@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Passaggio 4: importa e aggiungi paragrafi
 
-Scorri i paragrafi nel documento di origine e importa ogni paragrafo nel documento di destinazione utilizzando il file`importer`. Aggiungi i nodi importati al corpo del documento di destinazione.
+ Scorri i paragrafi nel documento di origine e importa ogni paragrafo nel documento di destinazione utilizzando il file`importer`. Aggiungi i nodi importati al corpo del documento di destinazione.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ Ciò completa l'implementazione dell'aggiunta di un documento di origine a un do
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Mantieni la formattazione dell'elenco di origine durante l'importazione dei paragrafi numerati.
+	//Mantieni la formattazione dell'elenco di origine durante l'importazione dei paragrafi numerati.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

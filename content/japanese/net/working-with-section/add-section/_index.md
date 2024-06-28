@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## ステップ 3: 新しいセクションを追加する
-ドキュメントに新しいセクションを追加するには、`Section`クラスに追加します`Sections`文書のコレクション。
+ドキュメントに新しいセクションを追加するには、`Section`クラスに追加します`Sections`書類のコレクション。
 
 ```csharp
 Section sectionToAdd = new Section(doc);

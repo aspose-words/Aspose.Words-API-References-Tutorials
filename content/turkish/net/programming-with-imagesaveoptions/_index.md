@@ -16,6 +16,6 @@ Eğitimler aynı zamanda Aspose.Words for .NET kullanarak bir Word belgesine res
 | --- | --- |
 | [Tiff Binarizasyonu İçin Eşik Kontrolünü Açığa Çıkarın](./expose-threshold-control-for-tiff-binarization/) | Aspose.Words for .NET ile TIFF ikilileştirme eşiğini nasıl kontrol edeceğinizi öğrenin. Daha kaliteli görüntüler için eğitimi tamamlayın. |
 | [Tiff Sayfa Aralığını Alın](./get-tiff-page-range/) | Aspose.Words for .NET ile çeşitli TIFF sayfalarını nasıl çıkaracağınızı öğrenin. Özel TIFF dosyaları için eğitimi tamamlayın. |
-| [1Bpp Dizine Alınmış Format](./format-1bpp-indexed/) | Aspose.Words for .NET ile indekslenmiş görüntüleri 1 bpp'lik formatta nasıl formatlayacağınızı öğrenin. Düşük renk derinliğine sahip görüntüler için eğitimi tamamlayın. |
+| [1Bpp Dizine Alınmış Biçim](./format-1bpp-indexed/) | Aspose.Words for .NET ile indekslenmiş görüntüleri 1 bpp'lik formatta nasıl formatlayacağınızı öğrenin. Düşük renk derinliğine sahip görüntüler için eğitimi tamamlayın. |
 | [Jpeg Sayfa Aralığını Al](./get-jpeg-page-range/) | Aspose.Words for .NET ile çeşitli JPEG sayfalarını nasıl elde edeceğinizi öğrenin. Özel görüntülerin çıkarılmasına yönelik eksiksiz eğitim. |
 | [Sayfa Kaydederek Geri Arama](./page-saving-callback/) | Aspose.Words for .NET ile belge sayfalarını görüntülere kaydetmeyi nasıl özelleştireceğinizi öğrenin. |

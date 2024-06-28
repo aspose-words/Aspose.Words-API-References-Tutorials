@@ -37,7 +37,7 @@ builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-## Шаг 3: Сохранение документа
+## Шаг 3. Сохраните документ.
 
  После вставки поля формы ввода текста сохраните документ в нужное место с помощью кнопки`Save` метод. Обязательно укажите правильный путь к файлу:
 

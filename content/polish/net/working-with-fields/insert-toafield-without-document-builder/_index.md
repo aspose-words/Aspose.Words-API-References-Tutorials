@@ -121,4 +121,4 @@ Odp.: Aby sprawdzić, czy pole TOA zostało pomyślnie wstawione, możesz przegl
 
 #### P: Czy wstawienie pola TOA bez użycia narzędzia DocumentBuilder wpływa na formatowanie dokumentu programu Word za pomocą Aspose.Words dla .NET?
 
-O: Wstawienie pola TOA bez użycia narzędzia DocumentBuilder nie ma bezpośredniego wpływu na formatowanie dokumentu programu Word. Jednak opcje formatowania pola TOA mogą mieć wpływ na ogólne formatowanie dokumentu.
+Odp.: Wstawienie pola TOA bez użycia narzędzia DocumentBuilder nie ma bezpośredniego wpływu na formatowanie dokumentu programu Word. Jednak opcje formatowania pola TOA mogą mieć wpływ na ogólne formatowanie dokumentu.

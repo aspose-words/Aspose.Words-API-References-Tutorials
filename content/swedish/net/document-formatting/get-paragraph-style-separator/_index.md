@@ -19,7 +19,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## Steg 2: Hitta styckestilseparatorer
+## Steg 2: Hitta styckeformatavskiljare
 
 Vi kommer nu att gå igenom alla stycken i dokumentet och kontrollera om ett stycke är en stilavgränsare. Här är hur:
 
@@ -71,7 +71,7 @@ S: Nej, Aspose.Words för .NET är inte den enda lösningen som är tillgänglig
 
 #### F: Kan jag använda funktionen "Get Paragraph Style Separator" med andra programmeringsspråk?
 
-S: Ja, du kan använda funktionen "Hämta styckestilseparator" med andra programmeringsspråk som stöds av Aspose.Words, som Java, Python eller C++. Aspose.Words erbjuder en rad språkspecifika API:er och bibliotek för att underlätta dokumentbehandling över flera plattformar.
+S: Ja, du kan använda funktionen "Hämta Paragraph Style Separator" med andra programmeringsspråk som stöds av Aspose.Words, som Java, Python eller C.++. Aspose.Words erbjuder en rad språkspecifika API:er och bibliotek för att underlätta dokumentbehandling över flera plattformar.
 
 #### F: Hur kommer jag åt Aspose.Words för .NET-dokumentationen?
 

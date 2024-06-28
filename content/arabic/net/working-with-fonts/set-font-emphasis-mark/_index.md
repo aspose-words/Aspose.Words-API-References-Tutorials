@@ -8,7 +8,7 @@ weight: 10
 url: /ar/net/working-with-fonts/set-font-emphasis-mark/
 ---
 
-سنوضح لك في هذا البرنامج التعليمي كيفية تعيين نمط تركيز الخط في مستند Word باستخدام Aspose.Words for .NET. يتم استخدام التركيز على الخط لتسليط الضوء على كلمات أو عبارات معينة في النص.
+سنوضح لك في هذا البرنامج التعليمي كيفية تعيين نمط إبراز الخط في مستند Word باستخدام Aspose.Words for .NET. يتم استخدام التركيز على الخط لتسليط الضوء على كلمات أو عبارات معينة في النص.
 
 ## المتطلبات الأساسية
 قبل البدء، تأكد من أن لديك العناصر التالية:
@@ -16,14 +16,14 @@ url: /ar/net/working-with-fonts/set-font-emphasis-mark/
 - تم تثبيت مكتبة Aspose.Words الخاصة بـ .NET في مشروعك
 
 ## الخطوة 1: تحديد دليل المستند
- ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب
+ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## الخطوة 2: إنشاء وتخصيص المستند
- إنشاء مثيل لـ`Document` الطبقة وما يرتبط بها`DocumentBuilder` لبناء محتوى الوثيقة. استخدم ال`Font.EmphasisMark` خاصية لتعيين نمط التركيز على الخط`EmphasisMark.UnderSolidCircle` . ثم استخدم`Write` و`Writeln` أساليب`DocumentBuilder` لإضافة نص مع التركيز على الخط المحدد.
+ إنشاء مثيل لـ`Document` الطبقة وما يرتبط بها`DocumentBuilder` لبناء محتوى الوثيقة. استخدم ال`Font.EmphasisMark` خاصية لتعيين نمط التأكيد على الخط`EmphasisMark.UnderSolidCircle` . ثم استخدم`Write` و`Writeln` أساليب`DocumentBuilder` لإضافة نص مع التركيز على الخط المحدد.
 
 ```csharp
 Document document = new Document();
@@ -59,7 +59,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمت كيفية تعيين نمط تركيز الخط في مستند Word باستخدام Aspose.Words لـ .NET. قم بتجربة أنماط مختلفة من التركيز واستخدم هذه الميزة لتمييز الكلمات أو العبارات في مستنداتك.
+في هذا البرنامج التعليمي، تعلمت كيفية تعيين نمط إبراز الخط في مستند Word باستخدام Aspose.Words لـ .NET. قم بتجربة أنماط مختلفة من التركيز واستخدم هذه الميزة لتمييز الكلمات أو العبارات في مستنداتك.
 
 ### الأسئلة الشائعة
 

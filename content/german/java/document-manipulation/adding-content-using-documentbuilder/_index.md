@@ -233,7 +233,7 @@ Dies sind einige häufige Vorgänge, die Sie mit Aspose.Words für den DocumentB
 
 ## Abschluss
 
-In diesem umfassenden Leitfaden haben wir die Möglichkeiten von Aspose.Words für Javas DocumentBuilder zum Hinzufügen verschiedener Arten von Inhalten zu Word-Dokumenten untersucht. Wir haben Text, Tabellen, horizontale Linien, Formularfelder, HTML, Hyperlinks, Inhaltsverzeichnis, Bilder, Absätze und Cursorbewegungen behandelt.
+In diesem umfassenden Leitfaden haben wir die Möglichkeiten von Aspose.Words für Javas DocumentBuilder untersucht, um Word-Dokumenten verschiedene Arten von Inhalten hinzuzufügen. Wir haben Text, Tabellen, horizontale Linien, Formularfelder, HTML, Hyperlinks, Inhaltsverzeichnis, Bilder, Absätze und Cursorbewegungen behandelt.
 
 ## FAQs
 

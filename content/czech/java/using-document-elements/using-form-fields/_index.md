@@ -49,7 +49,7 @@ public void formFieldsWorkWithProperties() throws Exception {
 ```
 
 ## 6. Přístup ke kolekci polí formuláře
-Chcete-li efektivně pracovat s poli formuláře, můžete přistupovat ke kolekci polí formuláře v dokumentu:
+Chcete-li efektivně pracovat s poli formuláře, můžete v dokumentu přistupovat ke kolekci polí formuláře:
 
 ```java
 @Test
@@ -92,7 +92,7 @@ Vzhled polí formuláře můžete upravit, například upravit velikost a barvu 
    Vzhled pole formuláře můžete upravit úpravou velikosti písma, barvy a dalších možností formátování.
 
 4. ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro Java?
-    Ano, máte přístup k bezplatné zkušební verzi Aspose.Words for Java[tady](https://releases.aspose.com/).
+    Ano, máte přístup k bezplatné zkušební verzi Aspose.Words for Java.[tady](https://releases.aspose.com/).
 
 5. ### Kde mohu získat podporu pro Aspose.Words pro Java?
     Pro podporu a pomoc navštivte stránku[Fórum Aspose.Words](https://forum.aspose.com/).

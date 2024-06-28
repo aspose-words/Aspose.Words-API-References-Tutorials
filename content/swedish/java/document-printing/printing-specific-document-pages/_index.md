@@ -82,7 +82,7 @@ I den här handledningen har vi lärt oss hur man skriver ut specifika sidor i e
 
 ### Hur kan jag skriva ut flera icke-konsekutiva sidor från ett Word-dokument?
 
- Om du vill skriva ut flera icke-på varandra följande sidor kan du skapa flera`PageRange` objekt och ange önskade sidintervall. Lägg sedan till dessa`PageRange` objekt mot`PageRanges` array i`PrintOptions` objekt.
+ Om du vill skriva ut flera icke-på varandra följande sidor kan du skapa flera`PageRange` objekt och ange önskade sidintervall. Lägg sedan till dessa`PageRange` föremål för`PageRanges` array i`PrintOptions` objekt.
 
 ### Är Aspose.Words for Java kompatibelt med olika dokumentformat?
 

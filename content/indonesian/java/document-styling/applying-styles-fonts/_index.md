@@ -104,7 +104,7 @@ Ya, Anda dapat mengimpor gaya dari dokumen templat menggunakan Aspose.Words untu
 Aspose.Words untuk Java menyediakan kemampuan pemformatan bersyarat yang kuat. Anda dapat membuat aturan yang menerapkan gaya atau font berdasarkan kondisi tertentu dalam dokumen.
 
 ### Bisakah saya bekerja dengan font dan karakter non-Latin?
-Sangat! Aspose.Words untuk Java mendukung berbagai font dan karakter dari berbagai bahasa dan skrip.
+Sangat! Aspose.Words for Java mendukung berbagai macam font dan karakter dari berbagai bahasa dan skrip.
 
 ### Bagaimana cara menambahkan hyperlink ke teks dengan gaya tertentu?
  Untuk menambahkan hyperlink ke teks, gunakan`FieldHyperlink`kelas dalam kombinasi dengan gaya untuk mencapai format yang diinginkan.

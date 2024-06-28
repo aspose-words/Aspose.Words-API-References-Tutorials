@@ -24,14 +24,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Étape 2 : Charger le document
-Chargez le document Word contenant le dessin Smart Art à l'aide du`Document` constructeur de classe.
+ Chargez le document Word contenant le dessin Smart Art à l'aide du`Document` constructeur de classe.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
-## Étape 3 : Mettre à jour le dessin Smart Art
- Parcourez les formes du document à l'aide de l'outil`GetChildNodes` méthode avec le`NodeType.Shape` paramètre. Vérifiez si chaque forme a Smart Art en utilisant le`HasSmartArt` propriété, et si c'est vrai, appelez le`UpdateSmartArtDrawing` méthode pour mettre à jour le dessin Smart Art.
+## Étape 3 : mettre à jour le dessin Smart Art
+ Parcourez les formes du document à l'aide de l'outil`GetChildNodes` méthode avec le`NodeType.Shape` paramètres. Vérifiez si chaque forme a Smart Art en utilisant le`HasSmartArt` propriété, et si c'est vrai, appelez le`UpdateSmartArtDrawing` méthode pour mettre à jour le dessin Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

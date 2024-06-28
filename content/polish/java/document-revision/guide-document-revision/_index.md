@@ -19,7 +19,7 @@ Wersja dokumentu odnosi się do procesu wprowadzania zmian w dokumencie, niezale
 
 ### 1.2 Znaczenie weryfikacji dokumentów we wspólnej pracy
 
-Rewizja dokumentu odgrywa kluczową rolę w zapewnieniu dokładności, spójności i jakości informacji przedstawionych w dokumencie. W warunkach współpracy umożliwia członkom zespołu sugerowanie modyfikacji, uzyskiwanie zatwierdzeń i płynne uwzględnianie opinii. Ten iteracyjny proces ostatecznie prowadzi do dopracowanego i wolnego od błędów dokumentu.
+Rewizja dokumentu odgrywa kluczową rolę w zapewnieniu dokładności, spójności i jakości informacji przedstawionych w dokumencie. W warunkach pracy zespołowej umożliwia członkom zespołu sugerowanie modyfikacji, uzyskiwanie zatwierdzeń i płynne uwzględnianie opinii. Ten iteracyjny proces ostatecznie prowadzi do dopracowanego i wolnego od błędów dokumentu.
 
 ### 1.3 Wyzwania związane z obsługą poprawek dokumentów
 
@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### Odrzucanie poprawek:
+#### Odrzucanie recenzji:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");
@@ -155,7 +155,7 @@ Współpracownicy często korzystają z komentarzy, aby przekazać opinie i suge
 
 ### 4.4 Zaawansowana obsługa wersji
 
-Aspose.Words oferuje zaawansowane funkcje obsługi wersji, takie jak rozwiązywanie konfliktów w przypadku równoczesnych edycji, wykrywanie przesunięć treści i praca ze złożonymi wersjami obejmującymi tabele, obrazy i inne elementy.
+Aspose.Words oferuje zaawansowane funkcje do obsługi wersji, takie jak rozwiązywanie konfliktów w przypadku równoczesnych edycji, wykrywanie przesunięć treści i praca ze złożonymi wersjami obejmującymi tabele, obrazy i inne elementy.
 
 ## Przetwarzanie tekstu i przetwarzanie dokumentów
 
@@ -188,7 +188,7 @@ Weryfikacja dokumentów to krytyczny aspekt wspólnej pracy, zapewniający dokł
    - Aspose.Words dla Java zapewnia potężne rozwiązanie do programowego zarządzania wersjami dokumentów. Pozwala użytkownikom przeglądać, akceptować lub odrzucać zmiany, obsługiwać różne typy wersji i efektywnie poruszać się po dokumencie.
 
 ### Czy mogę śledzić poprawki wprowadzone w dokumencie przez różnych autorów?
-   - Tak, Aspose.Words umożliwia dostęp do informacji o wersjach, w tym o autorze, dacie zmiany i modyfikacji treści, co ułatwia śledzenie zmian wprowadzanych przez różnych współpracowników.
+   - Tak, Aspose.Words umożliwia dostęp do informacji o wersjach, w tym o autorze, dacie zmiany i zmodyfikowanej treści, co ułatwia śledzenie zmian wprowadzanych przez różnych współpracowników.
 
 ### Czy możliwe jest programowe zaakceptowanie lub odrzucenie określonych wersji?
    - Absolutnie! Aspose.Words umożliwia selektywne akceptowanie lub odrzucanie poprawek w oparciu o określone kryteria, zapewniając precyzyjną kontrolę nad procesem sprawdzania.

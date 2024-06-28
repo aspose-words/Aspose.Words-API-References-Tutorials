@@ -2,7 +2,7 @@
 title: Chèn trường Không có
 linktitle: Chèn trường Không có
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách Insérez un champ AUCUN dans vos tài liệu Word với Aspose.Words pour .NET.
+description: Tìm hiểu cách tạo tài liệu bằng AUCUN trong Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/insert-field-none/

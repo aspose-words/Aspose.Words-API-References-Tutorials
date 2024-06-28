@@ -94,7 +94,7 @@ shape.image_data.set_image("image.png")
 doc.first_section.body.first_paragraph.append_child(shape)
 ```
 
-## การบันทึกและการส่งออกเอกสาร:
+## การบันทึกและส่งออกเอกสาร:
 
 บันทึกเอกสารที่คุณแก้ไขในรูปแบบต่างๆ:
 
@@ -123,7 +123,7 @@ pip install aspose-words
 
 ### ฉันจะปรับระยะขอบของหน้าโดยใช้ API ได้อย่างไร
 
- คุณสามารถปรับระยะขอบของหน้าได้โดยใช้`PageSetup` ระดับ. ตัวอย่างเช่น:
+ คุณสามารถปรับระยะขอบของหน้าได้โดยใช้`PageSetup` ชั้นเรียน ตัวอย่างเช่น:
 
 ```python
 page_setup = doc.sections[0].page_setup

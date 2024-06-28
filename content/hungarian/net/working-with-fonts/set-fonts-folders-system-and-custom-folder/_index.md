@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan állíthat be rendszerbetűtípus-mappákat és egyéni mappákat, amikor egy dokumentumot az Aspose.Words for .NET használatával renderel. A lépésenkénti útmutató követésével könnyedén megadhat több betűtípus-mappát, beleértve a rendszermappát és egy egyéni mappát is, amelyeket a dokumentumok renderelésekor használ. Az Aspose.Words hatékony és rugalmas API-t kínál a szövegfeldolgozáshoz a dokumentumokban található betűtípusokkal. Ezzel a tudással szabályozhatja és testreszabhatja a dokumentumok renderelésekor használt betűtípusokat az Ön egyedi igényei szerint.
+Ebben az oktatóanyagban megtanultuk, hogyan állíthat be rendszerbetűtípus-mappákat és egyéni mappákat, amikor egy dokumentumot az Aspose.Words for .NET használatával renderel. A lépésenkénti útmutató követésével egyszerűen megadhat több betűtípus-mappát, beleértve a rendszermappát és egy egyéni mappát is, amelyeket a dokumentumok renderelésekor használ. Az Aspose.Words hatékony és rugalmas API-t kínál a szövegfeldolgozáshoz a dokumentumokban található betűtípusokkal. Ezzel a tudással szabályozhatja és testreszabhatja a dokumentumok renderelésekor használt betűtípusokat az Ön egyedi igényei szerint.
 
 ### GYIK
 

@@ -74,7 +74,7 @@ A: Ja, u kunt een standaardlettertype opgeven voor andere uitvoerformaten, zoals
 
 #### Vraag: Hoe kan ik het standaardlettertype controleren dat is opgegeven in Aspose.Words?
 
- A: Om het standaardlettertype dat is opgegeven in Aspose.Words te controleren, kunt u de`DefaultFontName` eigendom van de`PdfOptions` class en haal de naam op van het geconfigureerde lettertype.
+ A: Om het standaardlettertype dat is opgegeven in Aspose.Words te controleren, kunt u de`DefaultFontName` eigendom van de`PdfOptions` class en haal de naam van het geconfigureerde lettertype op.
 
 #### Vraag: Is het mogelijk om voor elke sectie van het document een ander standaardlettertype op te geven?
 

@@ -161,7 +161,7 @@ doc.save("path/to/your/document.docx");
 
 ## 添加图像
 
-### 内联图像
+### 内嵌图像
 
 ```java
 Document doc = new Document();

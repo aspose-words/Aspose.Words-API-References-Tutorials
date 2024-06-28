@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 
@@ -82,7 +82,7 @@ Với Aspose.Words for .NET, bạn có thể dễ dàng truy cập và sửa đ�
 ### Câu hỏi thường gặp
 
 #### Q1. Đánh dấu các nhãn nhiều dòng trong trục biểu đồ là gì?
-Đánh dấu các nhãn nhiều dòng trong trục biểu đồ đề cập đến các nhãn trục trải dài trên nhiều dòng khi văn bản nhãn dài hoặc yêu cầu ngắt dòng để vừa với không gian có sẵn. Thay vì cắt bớt văn bản nhãn hoặc gây lộn xộn về mặt hình ảnh, trục biểu đồ sẽ tự động chia nhãn thành nhiều dòng để đảm bảo khả năng đọc. Đánh dấu các nhãn nhiều dòng đặc biệt hữu ích khi xử lý các nhãn danh mục hoặc giá trị dài trong biểu đồ.
+Đánh dấu nhãn nhiều dòng trong trục biểu đồ đề cập đến các nhãn trục trải dài trên nhiều dòng khi văn bản nhãn dài hoặc yêu cầu ngắt dòng để vừa với không gian có sẵn. Thay vì cắt bớt văn bản nhãn hoặc gây lộn xộn về mặt hình ảnh, trục biểu đồ sẽ tự động chia nhãn thành nhiều dòng để đảm bảo khả năng đọc. Đánh dấu các nhãn nhiều dòng đặc biệt hữu ích khi xử lý các nhãn danh mục hoặc giá trị dài trong biểu đồ.
 
 #### Q2. Tôi có thể tùy chỉnh căn chỉnh nhãn đánh dấu trong trục biểu đồ không?
  Có, bạn có thể tùy chỉnh căn chỉnh các nhãn đánh dấu trong trục biểu đồ bằng Aspose.Words for .NET. Bằng cách truy cập vào`TickLabelAlignment` tài sản của`ChartAxis` đối tượng, bạn có thể đặt căn chỉnh mong muốn cho nhãn đánh dấu. Các tùy chọn căn chỉnh bao gồm căn trái, phải, giữa hoặc căn đều. Việc điều chỉnh căn chỉnh cho phép bạn kiểm soát vị trí nằm ngang của nhãn đánh dấu dọc theo trục biểu đồ, đảm bảo khả năng đọc và trình bày trực quan phù hợp.

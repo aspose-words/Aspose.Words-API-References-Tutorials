@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Étape 3 : Configurez les options d'enregistrement au format PDF avec les options du plan
 
- Pour définir les options de plan dans le PDF généré, nous devons configurer le`PdfSaveOptions` objet. Nous pouvons définir le nombre de niveaux de plan de titre (`HeadingsOutlineLevels`) et le nombre de niveaux de plan étendus (`ExpandedOutlineLevels`).
+Pour définir les options de plan dans le PDF généré, nous devons configurer le`PdfSaveOptions` objet. Nous pouvons définir le nombre de niveaux de plan de titre (`HeadingsOutlineLevels`) et le nombre de niveaux de plan étendus (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

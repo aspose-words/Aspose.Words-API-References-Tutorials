@@ -124,7 +124,7 @@ Có, bạn có thể tùy chỉnh định dạng của các mục trong danh sá
 ### Aspose.Words for Java có tương thích với nhiều định dạng tài liệu khác nhau không?
 Tuyệt đối! Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu, bao gồm DOCX, PDF, HTML, v.v.
 
-### Làm cách nào tôi có thể chuyển đổi danh sách tài liệu sang PDF?
+### Làm cách nào để chuyển đổi danh sách tài liệu sang PDF?
 Để chuyển đổi danh sách tài liệu sang PDF, chỉ cần tải tài liệu bằng Aspose.Words cho Java và lưu nó ở định dạng PDF. Nó là dễ dàng!
 
 ### Aspose.Words for Java có hỗ trợ làm việc với các bảng trong tài liệu không?

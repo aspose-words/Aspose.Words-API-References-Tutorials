@@ -84,7 +84,7 @@ Resolusi komentar membantu dalam melacak dan mengelola umpan balik dalam dokumen
 
 #### T: Bagaimana cara menambahkan balasan ke komentar yang diselesaikan di Aspose.Words untuk .NET?
 
- J: Meskipun komentar yang diselesaikan disembunyikan secara default di dokumen akhir, Anda masih dapat menambahkan balasan ke komentar yang diselesaikan menggunakan`Comment.AddReply` metode yang menentukan teks balasan dan di mana Anda ingin menambahkannya.
+ J: Meskipun komentar yang diselesaikan disembunyikan secara default di dokumen akhir, Anda masih dapat menambahkan balasan ke komentar yang diselesaikan menggunakan`Comment.AddReply`metode yang menentukan teks balasan dan di mana Anda ingin menambahkannya.
 
 #### T: Bagaimana cara melihat komentar yang terselesaikan di Aspose.Words untuk .NET?
 

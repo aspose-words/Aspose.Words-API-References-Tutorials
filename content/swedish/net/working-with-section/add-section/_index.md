@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## Steg 3: Lägg till ett nytt avsnitt
- För att lägga till ett nytt avsnitt i dokumentet skapar vi en instans av`Section` klass och lägg till den i`Sections` insamling av dokumentet.
+ För att lägga till ett nytt avsnitt i dokumentet skapar vi en instans av`Section` klass och lägg till den i`Sections` insamling av dokumenten.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
@@ -82,7 +82,7 @@ builder. Writen("Hello2");
 
 #### F: Hur lägger man till ett nytt avsnitt i dokumentet i Aspose.Words för .NET?
 
- S: För att lägga till ett nytt avsnitt i dokumentet i Aspose.Words för .NET kan du skapa en instans av`Section` klass och lägg till den i`Sections` samling av dokumentet:
+ S: För att lägga till ett nytt avsnitt i dokumentet i Aspose.Words för .NET kan du skapa en instans av`Section` klass och lägg till den i`Sections` insamling av dokument:
 
 ```csharp
 Section sectionToAdd = new Section(doc);

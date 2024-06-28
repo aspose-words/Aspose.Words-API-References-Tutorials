@@ -71,7 +71,7 @@ foreach (Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
 
 #### س: هل يمكنني استخدام ميزة "الحصول على فاصل نمط الفقرة" مع لغات البرمجة الأخرى؟
 
-ج: نعم، يمكنك استخدام ميزة "Get Paragraph Style Separator" مع لغات البرمجة الأخرى التي يدعمها Aspose.Words، مثل Java أو Python أو C.++. يقدم Aspose.Words مجموعة من واجهات برمجة التطبيقات والمكتبات الخاصة باللغة لتسهيل معالجة المستندات عبر منصات متعددة.
+ج: نعم، يمكنك استخدام خاصية "Get Paragraph Style Separator" مع لغات البرمجة الأخرى التي يدعمها Aspose.Words، مثل Java أو Python أو C.++. يقدم Aspose.Words مجموعة من واجهات برمجة التطبيقات والمكتبات الخاصة باللغة لتسهيل معالجة المستندات عبر منصات متعددة.
 
 #### س: كيف يمكنني الوصول إلى وثائق Aspose.Words for .NET؟
 

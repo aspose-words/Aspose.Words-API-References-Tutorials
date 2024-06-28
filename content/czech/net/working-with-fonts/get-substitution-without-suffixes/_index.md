@@ -2,86 +2,122 @@
 title: Získejte substituci bez přípon
 linktitle: Získejte substituci bez přípon
 second_title: Aspose.Words API pro zpracování dokumentů
-description: V tomto kurzu se dozvíte, jak získat přepsání bez přípon v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se spravovat nahrazování písem bez přípon v Aspose.Words pro .NET. Postupujte podle našeho podrobného průvodce, abyste zajistili, že vaše dokumenty budou vždy vypadat dokonale.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-V tomto tutoriálu vám ukážeme, jak získat přepsání bez přípon v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Náhrady bez přípon se používají k řešení problémů se záměnou písem při zobrazování nebo tisku dokumentů. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+Vítejte v této komplexní příručce o správě nahrazování písem pomocí Aspose.Words pro .NET. Pokud jste se někdy potýkali s tím, že se písma ve vašich dokumentech nezobrazují správně, jste na správném místě. Tento výukový program vás krok za krokem provede procesem efektivního nahrazování písem bez přípon. Začněme!
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující položky:
-- Pracovní znalost programovacího jazyka C#
-- Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
+
+Než se pustíte do výukového programu, ujistěte se, že máte následující:
+
+- Základní znalost C#: Pochopení programování v C# vám usnadní sledování a implementaci kroků.
+-  Aspose.Words for .NET Library: Stáhněte a nainstalujte knihovnu z[odkaz ke stažení](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Nastavte vývojové prostředí, jako je Visual Studio, abyste mohli psát a spouštět svůj kód.
+-  Vzorový dokument: Vzorový dokument (např.`Rendering.docx`), se kterými budete pracovat během tohoto tutoriálu.
+
+## Importovat jmenné prostory
+
+Nejprve musíme importovat potřebné jmenné prostory pro přístup ke třídám a metodám poskytovaným Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
+```
 
 ## Krok 1: Definujte adresář dokumentů
- Nejprve musíte nastavit cestu k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+
+Chcete-li začít, zadejte adresář, ve kterém je umístěn váš dokument. Pomůže vám to najít dokument, na kterém chcete pracovat.
 
 ```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Krok 2: Načtěte dokument a nakonfigurujte náhrady bez přípon
- Dále načteme dokument pomocí`Document` třídy a nakonfigurujte bezpříponové substituce pomocí`DocumentSubstitutionWarnings` třída. Přidáme také zdroj písem zadáním složky obsahující písma.
-
-```csharp
-// Načtěte dokument a nakonfigurujte náhrady bez přípon
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## Krok 3: Uložte dokument
-Nakonec dokument uložíme s aplikovaným přepsáním bez přípon.
-
-```csharp
-// Uložte dokument
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### Ukázkový zdrojový kód pro Get Substitution Without Suffixes pomocí Aspose.Words for .NET 
-```csharp
-
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## Krok 2: Nastavte obslužný program varování při nahrazení
+
+Dále musíme nastavit obsluhu varování, která nás upozorní, kdykoli dojde během zpracování dokumentu k záměně písem. To je zásadní pro zachycení a řešení jakýchkoli problémů s písmem.
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## Krok 3: Přidejte vlastní zdroje písem
+
+V tomto kroku přidáme vlastní zdroje písem, abychom zajistili, že Aspose.Words dokáže najít a použít správná písma. To je zvláště užitečné, pokud máte konkrétní fonty uloženy ve vlastních adresářích.
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+V tomto kódu:
+-  Načteme aktuální zdroje písem a přidáme nové`FolderFontSource` ukazující na náš vlastní adresář písem (`C:\\MyFonts\\`).
+- Poté aktualizujeme zdroje písem tímto novým seznamem.
+
+## Krok 4: Uložte dokument
+
+Nakonec uložte dokument po použití nastavení náhrady písem. Pro tento tutoriál jej uložíme jako PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## Krok 5: Vytvořte třídu Warning Handler
+
+Chcete-li efektivně zpracovávat varování, vytvořte vlastní třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zachytí a zaprotokoluje všechna varování o záměně písem.
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+V této třídě:
+-  The`Warning` metoda zachycuje varování související se záměnou písem.
+-  The`FontWarnings` kolekce ukládá tato varování pro další kontrolu nebo protokolování.
+
 ## Závěr
-V tomto tutoriálu jsme viděli, jak získat přepsání bez přípon v dokumentu aplikace Word pomocí Aspose.Words pro .NET. Náhrady bez přípon jsou užitečné při řešení problémů se záměnou písem. Neváhejte využít tuto funkci ke zlepšení zobrazení a tisku vašich dokumentů.
 
-### FAQ
+Nyní jste zvládli proces nahrazování písem bez přípon pomocí Aspose.Words for .NET. Tyto znalosti zajistí, že si vaše dokumenty zachovají svůj zamýšlený vzhled bez ohledu na písma dostupná v systému. Pokračujte v experimentování s různými nastaveními a zdroji, abyste plně využili sílu Aspose.Words.
 
-#### Otázka: Proč Aspose.Words přidává přípony k náhradám písem?
+## Nejčastější dotazy
 
-Odpověď: Aspose.Words přidává k náhradám písem přípony, aby se zabránilo konfliktům mezi původními písmy a nahrazenými písmy. To pomáhá zajistit maximální kompatibilitu při převodu a manipulaci s dokumenty.
+### Q1: Jak mohu používat písma z více vlastních adresářů?
 
-#### Otázka: Jak mohu v Aspose.Words získat náhrady písem bez přípon?
+ Můžete přidat více`FolderFontSource` instance k`fontSources` seznam a odpovídajícím způsobem aktualizujte zdroje písem.
 
- Odpověď: Chcete-li v Aspose.Words načíst náhrady písem bez přípon, můžete použít`FontSubstitutionSettings` třída a`RemoveSuffixes` vlastnictví. Nastavení této vlastnosti na`true` získá náhrady písem bez přidaných přípon.
+### Q2: Kde si mohu stáhnout bezplatnou zkušební verzi Aspose.Words pro .NET?
 
-#### Otázka: Je možné zakázat přidávání přípon do náhrad písem v Aspose.Words?
+ Můžete si stáhnout bezplatnou zkušební verzi z[Aspose zkušební stránku zdarma](https://releases.aspose.com/).
 
-Odpověď: Ne, v Aspose.Words není možné zakázat přidávání přípon do substitucí písem. Ve výchozím nastavení se přidávají přípony, aby byla zajištěna kompatibilita a konzistence dokumentů.
+###  Q3: Mohu zpracovat více typů varování pomocí`IWarningCallback`?
 
-#### Otázka: Jak mohu odfiltrovat nežádoucí přípony v náhradách písem v Aspose.Words?
+ Ano,`IWarningCallback` rozhraní vám umožňuje zpracovávat různé typy varování, nejenom nahrazování písem.
 
- Odpověď: Chcete-li odfiltrovat nežádoucí přípony v náhradách písem v Aspose.Words, můžete použít techniky zpracování řetězců, jako je`Replace` nebo`Substring` metody k odstranění konkrétních přípon, které nechcete zahrnout.
+### Q4: Kde mohu získat podporu pro Aspose.Words?
+
+ Pro podporu navštivte stránku[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### Q5: Je možné zakoupit dočasnou licenci?
+
+ Ano, můžete získat dočasnou licenci od[dočasná licenční stránka](https://purchase.aspose.com/temporary-license/).

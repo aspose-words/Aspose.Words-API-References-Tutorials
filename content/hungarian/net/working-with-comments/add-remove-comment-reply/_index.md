@@ -12,7 +12,7 @@ Ebből az átfogó oktatóanyagból megtudhatja, hogyan adhat hozzá és távol�
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Töltse be a dokumentumot
 Kezdésként töltse be a megjegyzéseket tartalmazó dokumentumot a Dokumentum osztály használatával:
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
 ```
 
-## 2. lépés: Nyissa meg a Megjegyzések és a válaszok kezelését
+## 2. lépés: Nyissa meg a megjegyzéseket és a válaszok kezelését
 Ezután nyissa meg a megjegyzést a dokumentumból a GetChild metódussal a NodeType.Comment paraméterrel:
 
 ```csharp
@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 ## Következtetés
 Gratulálunk! Sikeresen megtanulta, hogyan adhat hozzá és távolíthat el megjegyzésekre adott válaszokat egy Word-dokumentumban az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével és a megadott forráskód használatával mostantól kezelheti a megjegyzésekre adott válaszokat, és igényei szerint testreszabhatja azokat.
 
-megjegyzésekre adott válaszok lehetővé teszik az együttműködésen alapuló megbeszéléseket és visszajelzéseket a dokumentumon belül. Kísérletezzen a válaszok különböző szerzőivel, kezdőbetűivel, dátumaival és szövegeivel, hogy javítsa az együttműködést és a kommunikációt a dokumentumokon belül.
+A megjegyzésekre adott válaszok lehetővé teszik az együttműködésen alapuló megbeszéléseket és visszajelzéseket a dokumentumon belül. Kísérletezzen a válaszok különböző szerzőivel, kezdőbetűivel, dátumaival és szövegeivel, hogy javítsa az együttműködést és a kommunikációt a dokumentumokon belül.
 
 ### GYIK
 
@@ -77,7 +77,7 @@ megjegyzésekre adott válaszok lehetővé teszik az együttműködésen alapul�
 
 #### K: Hogyan távolíthatok el egy megjegyzést az Aspose.Words for .NET-ből?
 
- V: Az Aspose.Words for .NET-ben található megjegyzés eltávolításához használja a`Comment.Remove` módszer, amely meghatározza a`Comment` az eltávolítani kívánt objektumot.
+V: Az Aspose.Words for .NET-ben található megjegyzés eltávolításához használja a`Comment.Remove` módszer, amely meghatározza a`Comment` az eltávolítani kívánt objektumot.
 
 #### K: Válaszolhatok egy megjegyzésre az Aspose.Words for .NET-ben?
 
@@ -85,7 +85,7 @@ megjegyzésekre adott válaszok lehetővé teszik az együttműködésen alapul�
 
 #### K: Hogyan érhetem el az Aspose.Words for .NET meglévő megjegyzéseit?
 
- V: Az Aspose.Words for .NET meglévő megjegyzéseit a következővel érheti el`CommentCollection` tulajdona a`Document`tárgy. Ez lehetővé teszi, hogy a dokumentumban található összes megjegyzés között böngésszen.
+ V: Az Aspose.Words for .NET meglévő megjegyzéseit a következővel érheti el`CommentCollection` tulajdona a`Document` tárgy. Ez lehetővé teszi, hogy a dokumentumban található összes megjegyzés között böngésszen.
 
 #### K: Szerkeszthetem a megjegyzés szövegét az Aspose.Words for .NET-ben?
 

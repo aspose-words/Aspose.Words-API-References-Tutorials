@@ -17,7 +17,7 @@ Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 - Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen, indem Sie es mit dem NuGet-Paketmanager installieren.
 - Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
 
-## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein
+## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein.
 
  Erstelle eine neue`Document` Objekt und a`DocumentBuilder` um das Dokument zu erstellen.
 

@@ -21,7 +21,7 @@ Document doc = new Document(MyDir + "Asian typography.docx");
 
 ## Steg 2: Ändra styckeavstånd och indrag
 
-Vi kommer nu att ändra avståndet och indragen i första stycket i det asiatiska dokumentet. Här är hur:
+Vi kommer nu att ändra avstånden och indragen i första stycket i det asiatiska dokumentet. Här är hur:
 
 ```csharp
 ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
@@ -51,9 +51,9 @@ Här är den fullständiga källkoden för funktionen Redigera asiatiska styckea
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent kommer att uppdateras
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent kommer att uppdateras
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent kommer att uppdateras
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent kommer att uppdateras.
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent kommer att uppdateras.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent kommer att uppdateras.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore kommer att uppdateras
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter kommer att uppdateras
 
@@ -61,7 +61,7 @@ Här är den fullständiga källkoden för funktionen Redigera asiatiska styckea
 
 ```
 
-Med denna kod kommer du att kunna ändra mellanrum och indrag i ett asiatiskt stycke med Aspose.Words för .NET.
+Med den här koden kommer du att kunna ändra mellanrum och indrag i ett asiatiskt stycke med Aspose.Words för .NET.
 
 ## Slutsats
 

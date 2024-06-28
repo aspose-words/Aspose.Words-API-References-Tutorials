@@ -71,7 +71,7 @@ Selamat! Anda sekarang telah mempelajari cara memutus tautan pengalihan di dokum
 
 ### FAQ untuk tautan maju dalam dokumen Word
 
-#### T: Pustaka apa yang digunakan untuk memutus tautan pengalihan di dokumen Word menggunakan Aspose.Words untuk .NET?
+#### T: Pustaka apa yang digunakan untuk memutus tautan pengalihan dalam dokumen Word menggunakan Aspose.Words untuk .NET?
 
 A: Untuk memutus link pengalihan pada dokumen Word menggunakan Aspose.Words for .NET, pustaka yang digunakan adalah Aspose.Words for .NET.
 

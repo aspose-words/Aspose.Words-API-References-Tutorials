@@ -9,7 +9,7 @@ url: /fr/net/compare-documents/comparison-target/
 ---
 Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la cible de comparaison dans la fonctionnalité de document Word d'Aspose.Words pour .NET.
 
-## Étape 1 : Introduction
+## Étape 1 : Présentation
 
 La fonctionnalité de comparaison de cible d'Aspose.Words for .NET vous permet de comparer deux documents et de générer un nouveau document contenant les modifications apportées au document cible. Cela peut être utile pour suivre les modifications apportées entre les différentes versions d'un document.
 
@@ -58,7 +58,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
  Le`Compare`La méthode compare le document A avec le document B et enregistre les modifications apportées au document A. Vous pouvez spécifier le nom d'utilisateur et la date de comparaison pour référence.
 
-### Exemple de code source pour Comparison Target utilisant Aspose.Words for .NET
+### Exemple de code source pour Compare Target à l’aide d’Aspose.Words for .NET
 
 
 ```csharp
@@ -90,7 +90,7 @@ R : Pour utiliser Comparison Target dans Aspose.Words for .NET, procédez comme
 1. Configurez votre environnement de développement avec la bibliothèque Aspose.Words.
 2. Ajoutez les assemblys nécessaires à votre projet en faisant référence à Aspose.Words.
 3.  Initialisez les documents que vous souhaitez comparer à l'aide du`Document` classe ou le`DocumentBuilder` classe.
-4.  Configurez les options de comparaison en créant un`CompareOptions` objet et définition de propriétés telles que`IgnoreFormatting` et`Target` (par exemple,`ComparisonTargetType.New` pour cible de comparaison).
+4.  Configurez les options de comparaison en créant un`CompareOptions` objet et définition de propriétés telles que`IgnoreFormatting` et`Target` (par exemple.,`ComparisonTargetType.New` pour cible de comparaison).
 5.  Utilisez le`Compare` méthode sur un document, en passant l'autre document et le`CompareOptions` objet comme paramètres. Cette méthode comparera les documents et enregistrera les modifications dans le premier document.
 
 ####  Q : Quel est le but du`Target` property in the `CompareOptions` class?

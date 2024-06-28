@@ -16,7 +16,7 @@ url: /ko/python-net/document-conversion/python-document-conversion/
 
 ### 문서변환이란 무엇입니까?
 
-문서 변환이란 내용을 변경하지 않고 파일을 한 형식에서 다른 형식으로 변환하는 프로세스를 말합니다. Word 문서, PDF 등과 같은 다양한 파일 형식 간에 원활하게 전환할 수 있습니다. 이러한 유연성을 통해 사용자는 보유하고 있는 소프트웨어에 관계없이 파일에 액세스하고, 보고, 편집할 수 있습니다.
+문서 변환이란 내용을 변경하지 않고 파일을 한 형식에서 다른 형식으로 변환하는 프로세스를 말합니다. Word 문서, PDF 등과 같은 다양한 파일 형식 간에 원활하게 전환할 수 있습니다. 이러한 유연성을 통해 사용자는 보유한 소프트웨어에 관계없이 파일에 액세스하고, 보고, 편집할 수 있습니다.
 
 ### 문서 변환의 중요성
 
@@ -48,7 +48,7 @@ Aspose.Words를 사용하면 변환 프로세스 중에 머리글, 바닥글 및
 
 ### 전제조건
 
-Python용 Aspose.Words를 설치하기 전에 시스템에 Python이 설치되어 있어야 합니다. Aspose.Releases(https://releases.aspose.com/words/python/) 설치 지침을 따르십시오.
+Python용 Aspose.Words를 설치하기 전에 시스템에 Python이 설치되어 있어야 합니다. Aspose.Releases(https://releases.aspose.com/words/python/) 설치 지침을 따르세요.
 
 ### 설치 단계
 

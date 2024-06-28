@@ -15,7 +15,7 @@ Zorg ervoor dat u over de volgende items beschikt voordat u begint:
 - De Aspose.Words-bibliotheek voor .NET die in uw project is geïnstalleerd
 
 ## Stap 1: Definieer de documentmap
- Begin met het instellen van het mappad naar de locatie van uw Word-document. Vervangen`"YOUR DOCUMENT DIRECTORY"` in de code met het juiste pad.
+Begin met het instellen van het mappad naar de locatie van uw Word-document. Vervangen`"YOUR DOCUMENT DIRECTORY"` in de code met het juiste pad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

@@ -77,7 +77,7 @@ public class ModifyDocumentListExample {
         // Accede a la lista
         List list = doc.getLists().get(0);
 
-        // Agregar un nuevo artículo
+        // Agregar un nuevo elemento
         list.getListItems().add("New Item");
 
         // Guardar el documento modificado

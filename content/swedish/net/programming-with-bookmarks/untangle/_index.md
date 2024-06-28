@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Steg 2: Hämta överordnade rader från bokmärken
 
- Vi använder`GetAncestor` metoder för att hämta de överordnade raderna för bokmärkets start- och slutnoder:
+ Vi använder`GetAncestor` Metoder för att hämta de överordnade raderna för bokmärkets start- och slutnoder:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

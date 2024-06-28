@@ -14,7 +14,7 @@ Prima di immergerci nei dettagli tecnici, presentiamo brevemente Aspose.Words pe
 
 ## Prerequisiti
 
-Prima di iniziare a scrivere codice, assicurati di avere i seguenti prerequisiti:
+Prima di iniziare a scrivere codice, assicurati di disporre dei seguenti prerequisiti:
 
 1.  Aspose.Words per Java: Scarica e installa Aspose.Words per Java da[Qui](https://releases.aspose.com/words/java/).
 

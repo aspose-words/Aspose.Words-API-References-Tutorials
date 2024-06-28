@@ -93,7 +93,7 @@ A: Ja, Sie können Kommentartext in Aspose.Words für .NET mithilfe der verfügb
 
 #### F: Wie kann ich alle in einem Dokument vorhandenen Kommentare abrufen?
 
-A: Sie können alle in einem Dokument vorhandenen Kommentare mithilfe von abrufen`Document.Comments` Eigentum.
+ A: Sie können alle in einem Dokument angezeigten Kommentare mithilfe von abrufen`Document.Comments` Eigentum.
 
 #### F: Kann ich einen bestimmten Kommentar in Aspose.Words für .NET löschen?
 

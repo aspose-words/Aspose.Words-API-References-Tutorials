@@ -13,7 +13,7 @@ Sblocca la potenza di Aspose.Words per Java per proteggere i tuoi documenti con 
 
 ## introduzione
 
-Nel mondo digitale di oggi, la sicurezza dei dati è fondamentale. Che tu stia gestendo documenti aziendali riservati o file personali, è fondamentale garantire che solo le persone autorizzate possano accedere ai tuoi documenti. Questa guida passo passo ti mostrerà come utilizzare Aspose.Words per Java per aggiungere un robusto livello di sicurezza ai tuoi documenti applicando le password.
+Nel mondo digitale di oggi, la sicurezza dei dati è fondamentale. Che tu stia gestendo documenti aziendali riservati o file personali, è fondamentale garantire che solo le persone autorizzate possano accedere ai tuoi documenti. Questa guida passo passo ti mostrerà come utilizzare Aspose.Words per Java per aggiungere un solido livello di sicurezza ai tuoi documenti applicando le password.
 
 ## Configurazione di Aspose.Words per Java
 

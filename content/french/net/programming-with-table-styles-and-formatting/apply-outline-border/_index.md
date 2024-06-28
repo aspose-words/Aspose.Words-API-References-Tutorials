@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Étape 5 : Effacer les bordures de tableau existantes
+## Étape 5 : Effacez les bordures du tableau existantes.
 Pour commencer avec une nouvelle bordure de contour, nous devons d'abord effacer toutes les bordures existantes du tableau. Cela peut être fait en utilisant le`ClearBorders()` méthode.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Étape 7 : Remplissez les cellules avec une couleur d'arrière-plan
-Pour améliorer la présentation visuelle du tableau, on peut remplir les cellules avec une couleur de fond de fond
+## Étape 7 : Remplissez les cellules avec une couleur d'arrière-plan.
+Pour améliorer la présentation visuelle du tableau, on peut remplir les cellules avec une couleur de fond de fond.
 
 idée. Dans cet exemple, nous utilisons une couleur vert clair.
 

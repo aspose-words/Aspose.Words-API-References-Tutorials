@@ -12,7 +12,7 @@ Ebben az oktatóanyagban végigvezetjük a Word-dokumentumok nyelv- és terület
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Hozzon létre egy dokumentumot és a DocumentBuildert
 Kezdésként hozzon létre egy példányt a Document osztályból és egy DocumentBuilder objektumból:
@@ -33,7 +33,7 @@ builder.InsertField("MERGEFIELD Date");
 A fenti kódban beszúrunk egy "Dátum" nevű egyesítési mezőt a dokumentumba.
 
 ## 3. lépés: Változtassa meg a nyelvet
-A dátum- és számformázás területi beállításának módosításához módosíthatja a szál jelenlegi kultúráját. Ebben a példában a területi beállítást németre ("de-DE") állítjuk be:
+dátum- és számformázás területi beállításának módosításához módosíthatja a szál jelenlegi kultúráját. Ebben a példában a területi beállítást németre ("de-DE") állítjuk be:
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;

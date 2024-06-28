@@ -17,7 +17,7 @@ Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
 - Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden met NuGet-pakketbeheer om het te installeren.
 - Een documentmappad waar het uitvoerdocument wordt opgeslagen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Stap 2: Maak een nieuw document en voeg een diagram in.
 
  Laten we eerst een nieuwe maken`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
 
@@ -108,7 +108,7 @@ In deze zelfstudie hebt u geleerd hoe u standaardopties voor gegevenslabels in e
 Aspose.Words voor .NET is een bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, manipuleren en opslaan met behulp van .NET-toepassingen. Het biedt een breed scala aan functies voor tekstverwerking met documentelementen, waaronder grafieken.
 
 #### Vraag 2. Hoe kan ik Aspose.Words voor .NET installeren?
-U kunt Aspose.Words voor .NET installeren door het te downloaden met NuGet-pakketbeheer in Visual Studio. Zoek eenvoudigweg naar "Aspose.Words" in de NuGet-pakketbeheerder en installeer het in uw project.
+U kunt Aspose.Words voor .NET installeren door het te downloaden met NuGet-pakketbeheer in Visual Studio. Zoek eenvoudigweg naar "Apose.Words" in de NuGet-pakketbeheerder en installeer het in uw project.
 
 #### Q3. Kan ik andere aspecten van het diagram aanpassen met Aspose.Words voor .NET?
 Ja, met Aspose.Words voor .NET kunt u verschillende aspecten van een diagram aanpassen, zoals diagramtype, aslabels, legenda, plotgebied en meer. U kunt verschillende eigenschappen van het diagramobject openen en wijzigen om het gewenste uiterlijk en gedrag te bereiken.

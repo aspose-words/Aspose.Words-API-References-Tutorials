@@ -18,16 +18,16 @@ Najpierw użyjemy generatora dokumentów, aby dodać treść do naszego dokument
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Dodaj styl dla wciętego kodu
+## Krok 2: Dodaj styl dla określonego kodu
 
- Dodamy niestandardowy styl dla wciętego kodu za pomocą`Styles.Add` metoda`Document` obiekt. W tym przykładzie tworzymy styl o nazwie „IndentedCode” dla kodu z wcięciem.
+Dodamy niestandardowy styl dla wciętego kodu za pomocą`Styles.Add` metoda`Document` obiekt. W tym przykładzie tworzymy styl o nazwie „IndentedCode” dla kodu z wcięciem.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Krok 3: Dodaj wcięty kod
+## Krok 3: Dodaj określony kod
 
 Teraz możemy dodać blok kodu z wcięciem, używając niestandardowego stylu „IndentedCode”.
 
@@ -46,12 +46,12 @@ builder.ParagraphFormat.Style = indentedCode;
 builder.Writeln("This is an indented code");
 ```
 
-Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji kodu z wcięciem w Aspose.Words dla .NET.
+Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji kodu z wcięciami w Aspose.Words dla .NET.
 
 
 ### Często zadawane pytania
 
-#### P: Co to jest kod z wcięciem w Markdown?
+#### P: Jaki jest określony kod w Markdown?
 
 Odp.: Kod z wcięciem w Markdown to metoda formatowania używana do wyświetlania kodu w dokumencie Markdown. Polega na wcięciu każdej linii kodu spacjami lub tabulatorami.
 

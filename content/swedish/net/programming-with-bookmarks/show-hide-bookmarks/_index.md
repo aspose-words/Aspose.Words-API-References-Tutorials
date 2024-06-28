@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Steg 2: Visa eller dölj ett specifikt bokmärke
 
- Vi använder`ShowHideBookmarkedContent`funktion för att visa eller dölja ett specifikt bokmärke i dokumentet. Den här funktionen tar som parametrar dokumentet, namnet på bokmärket och en boolean för att indikera om bokmärket ska visas eller döljas:
+ Vi använder`ShowHideBookmarkedContent` funktion för att visa eller dölja ett specifikt bokmärke i dokumentet. Den här funktionen tar som parametrar dokumentet, namnet på bokmärket och en boolean för att indikera om bokmärket ska visas eller döljas:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);

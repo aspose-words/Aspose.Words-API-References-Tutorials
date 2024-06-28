@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-list/specify-list-level/
 ---
 
-W tym samouczku krok po kroku pokażemy, jak określić poziom listy w dokumencie programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+tym samouczku krok po kroku pokażemy, jak określić poziom listy w dokumencie programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
 
  Aby rozpocząć, upewnij się, że masz zainstalowane i skonfigurowane Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Krok 6: Zatrzymaj formatowanie listy
 
- Aby zatrzymać formatowanie listy, ustaw`null` do`List` właściwość generatora dokumentów:
+ Aby zatrzymać formatowanie listy, ustaw`null` do`List`właściwość generatora dokumentów:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Utwórz listę numerowaną w oparciu o jeden z szablonów list Microsoft Word
+// Utwórz listę numerowaną w oparciu o jeden z szablonów list Microsoft Word.
 // zastosuj go do bieżącego akapitu kreatora dokumentu.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Utwórz listę punktowaną w oparciu o jeden z szablonów list programu Microsoft Word
+// Utwórz listę punktowaną w oparciu o jeden z szablonów list programu Microsoft Word.
 // zastosuj go do bieżącego akapitu kreatora dokumentu.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### P: Czy mogę dodać dodatkowe poziomy do listy numerowanej w Aspose.Words?
 
- O: Tak, możliwe jest dodanie dodatkowych poziomów do listy numerowanej w Aspose.Words. The`ListLevel` class umożliwia ustawienie właściwości formatowania dla każdego poziomu listy. Możesz ustawić opcje takie jak przedrostek, przyrostek, wyrównanie, wcięcie itp. Umożliwia to tworzenie list o wielu poziomach hierarchii.
+ O: Tak, możliwe jest dodanie dodatkowych poziomów do listy numerowanej w Aspose.Words. The`ListLevel`class umożliwia ustawienie właściwości formatowania dla każdego poziomu listy. Możesz ustawić opcje takie jak przedrostek, przyrostek, wyrównanie, wcięcie itp. Umożliwia to tworzenie list o wielu poziomach hierarchii.
 
 

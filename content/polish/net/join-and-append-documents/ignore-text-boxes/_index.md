@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Krok 4: Dołącz zawartość pola tekstowego
 
- Stwórz`NodeImporter` obiekt i użyj go do zaimportowania węzłów pól tekstowych z dokumentu źródłowego do dokumentu docelowego. Wykonaj iterację po każdym akapicie w dokumencie źródłowym i zaimportuj go do dokumentu docelowego.
+ Stwórz`NodeImporter`obiekt i użyj go do zaimportowania węzłów pól tekstowych z dokumentu źródłowego do dokumentu docelowego. Wykonaj iterację po każdym akapicie w dokumencie źródłowym i zaimportuj go do dokumentu docelowego.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Krok 5: Zapisz dokument docelowy
 
- Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
+Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

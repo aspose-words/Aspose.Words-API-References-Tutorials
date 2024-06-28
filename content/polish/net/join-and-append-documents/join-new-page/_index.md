@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/join-and-append-documents/join-new-page/
 ---
 
-W tym samouczku wyjaśniono, jak połączyć dwa dokumenty na nowej stronie za pomocą Aspose.Words dla .NET. Dostarczony kod źródłowy pokazuje, jak dołączyć dokument na końcu innego dokumentu, rozpoczynając dołączany dokument na nowej stronie.
+tym samouczku wyjaśniono, jak połączyć dwa dokumenty na nowej stronie za pomocą Aspose.Words dla .NET. Dostarczony kod źródłowy pokazuje, jak dołączyć dokument na końcu innego dokumentu, rozpoczynając dołączany dokument na nowej stronie.
 
 ## Krok 1: Skonfiguruj projekt
 
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Krok 5: Zapisz zmodyfikowany dokument
 
- Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
+Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ To kończy implementację łączenia dwóch dokumentów na nowej stronie za pomo
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Ustaw dołączony dokument tak, aby zaczynał się od nowej strony.
+	// Ustaw dołączony dokument tak, aby zaczynał się od nowej strony.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Dołącz dokument źródłowy, używając oryginalnych stylów znalezionych w dokumencie źródłowym.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

@@ -13,5 +13,5 @@ Clone And Combine Documents cung cấp các hướng dẫn về sao chép và k�
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
 | [Sao chép một tài liệu Word](./cloning-document/) | Tìm hiểu cách sao chép tài liệu Word bằng Aspose.Words cho .NET. |
-| [Chèn tài liệu vào thay thế](./insert-document-at-replace/) | Tìm hiểu cách chèn tài liệu thay thế bằng Aspose.Words cho .NET. |
-| [Chèn tài liệu khi trộn thư](./insert-document-at-mail-merge/) | Tìm hiểu cách chèn tài liệu vào tài liệu khác trong quá trình trộn thư bằng Aspose.Words for .NET. |
+| [Chèn tài liệu vào thay thế](./insert-document-at-replace/) | Tìm hiểu cách chèn liền mạch một tài liệu Word vào một tài liệu Word khác bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển muốn hợp lý hóa việc xử lý tài liệu. |
+| [Chèn tài liệu khi trộn thư](./insert-document-at-mail-merge/) | Tìm hiểu cách chèn tài liệu vào trường phối thư bằng Aspose.Words cho .NET trong hướng dẫn từng bước toàn diện này. |

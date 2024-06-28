@@ -28,7 +28,7 @@ public class TableCreation {
         // Tạo một tài liệu mới
         Document doc = new Document();
         
-        // Tạo bảng có 3 hàng và 3 cột
+        // Tạo bảng có 3 hàng và 3 cột.
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // Điền dữ liệu vào các ô của bảng

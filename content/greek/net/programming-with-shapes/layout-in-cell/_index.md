@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Βήμα 3: Δημιουργήστε τον πίνακα
- Χρησιμοποιήστε το`StartTable`, `EndTable`, `InsertCell` , και`Write` μεθόδους του`DocumentBuilder` αντικείμενο να φτιάξει ένα τραπέζι. Ορίστε τον επιθυμητό κανόνα ύψους και ύψους σειράς χρησιμοποιώντας το`RowFormat` ιδιότητες.
+ Χρησιμοποιήστε το`StartTable`, `EndTable`, `InsertCell` , και`Write` μεθόδους του`DocumentBuilder`αντικείμενο να φτιάξει ένα τραπέζι. Ορίστε τον επιθυμητό κανόνα ύψους και ύψους σειράς χρησιμοποιώντας το`RowFormat` ιδιότητες.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Βήμα 6: Εισαγάγετε το σχήμα στο έγγραφο
-Εισαγάγετε το σχήμα του υδατογραφήματος στο έγγραφο χρησιμοποιώντας το`InsertNode` μέθοδος του`DocumentBuilder` αντικείμενο. Τοποθετήστε το σχήμα χρησιμοποιώντας το`MoveTo` μέθοδο για να το τοποθετήσετε μετά την τελευταία εκτέλεση στο έγγραφο.
+ Εισαγάγετε το σχήμα του υδατογραφήματος στο έγγραφο χρησιμοποιώντας το`InsertNode` μέθοδος του`DocumentBuilder` αντικείμενο. Τοποθετήστε το σχήμα χρησιμοποιώντας το`MoveTo` μέθοδο για να το τοποθετήσετε μετά την τελευταία εκτέλεση στο έγγραφο.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

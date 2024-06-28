@@ -75,7 +75,7 @@ Odpověď: Chcete-li použít ochranu heslem na dokument aplikace Word pomocí A
 
 #### Otázka: Jaký je účel parametru ProtectionType v metodě Protect?
 
- A:`ProtectionType` parametr v`Protect` metoda Aspose.Words for .NET umožňuje určit typ ochrany, která se má na dokument použít. V případě ochrany heslem byste nastavili`ProtectionType` na`NoProtection` pro označení, že dokument je chráněn heslem.
+ A:`ProtectionType` parametry v`Protect` metoda Aspose.Words for .NET umožňuje určit typ ochrany, která se má na dokument použít. V případě ochrany heslem byste nastavili`ProtectionType` na`NoProtection` pro označení, že dokument je chráněn heslem.
 
 #### Otázka: Mohu odstranit ochranu heslem z dokumentu aplikace Word pomocí Aspose.Words for .NET?
 

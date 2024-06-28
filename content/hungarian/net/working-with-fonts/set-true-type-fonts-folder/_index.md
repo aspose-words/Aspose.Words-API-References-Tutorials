@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-fonts/set-true-type-fonts-folder/
 ---
 
-Ebben az oktatóanyagban lépésről lépésre végigvezetjük a valódi betűtípus mappa beállításának folyamatán, amikor egy dokumentumot az Aspose.Words for .NET használatával renderel. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Ennek az oktatóanyagnak a végén tudni fogja, hogyan adjon meg egy True Type betűtípusokat tartalmazó egyéni mappát, amelyet a dokumentumok Aspose.Words for .NET használatával történő megjelenítéséhez használ.
+Ebben az oktatóanyagban lépésről lépésre végigvezetjük a valódi betűtípus mappa beállításának folyamatán, amikor egy dokumentumot az Aspose.Words for .NET használatával renderel. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Ennek az oktatóanyagnak a végén tudni fogja, hogyan adhat meg egy True Type betűtípusokat tartalmazó egyéni mappát, amelyet a dokumentumok Aspose.Words for .NET használatával történő renderelésekor használ.
 
 ## 1. lépés: Határozza meg a dokumentumkönyvtárat
 Először is be kell állítania a dokumentumkönyvtár elérési útját. Ez az a hely, ahová menteni szeretné a szerkesztett renderelt dokumentumot. Cserélje ki a "DOKUMENTUMKÖNYVTÁR" elemet a megfelelő elérési útra.
@@ -68,9 +68,9 @@ Ebben az oktatóanyagban megtanultuk, hogyan állíthatja be a valódi betűtíp
 
 #### K: Milyen típusú betűtípusok tekinthetők TrueType betűtípusoknak?
 
-V: A TrueType betűtípusok népszerű betűtípusok. Gyakran használják a Word dokumentumokban, és .ttf vagy .ttc fájlkiterjesztésük van.
+V: A TrueType betűtípusok népszerű betűtípusok. Gyakran használják a Word dokumentumokban, és .ttf vagy .ttc fájlkiterjesztéssel rendelkeznek.
 
-#### K: Megadhatok több TrueType font mappát az Aspose.Wordsben?
+#### K: Megadhatok több TrueType font mappát az Aspose.Words fájlban?
 
 V: Igen, több TrueType betűtípus mappát is megadhat az Aspose.Wordsben a`SetTrueTypeFontsFolder` módszere a`Fonts` osztályt a mappahelyek listájával.
 
@@ -80,4 +80,4 @@ V: Igen, több TrueType betűtípus mappát is megadhat az Aspose.Wordsben a`Set
 
 #### K: Miért fontos az Aspose.Words TrueType fonts mappájának konfigurálása?
 
-V: Az Aspose.Words TrueType fonts mappájának beállítása azért fontos, mert segít az Aspose.Wordsnak megtalálni a Word dokumentumok feldolgozásakor szükséges betűtípusokat. Ez biztosítja a dokumentumok formázásának és megjelenésének egységességét, még a különböző rendszerekben is.
+V: Az Aspose.Words TrueType fonts mappájának beállítása azért fontos, mert segít az Aspose.Wordsnek megtalálni a Word dokumentumok feldolgozásakor szükséges betűtípusokat. Ez biztosítja a dokumentumok formázásának és megjelenésének egységességét, még a különböző rendszerekben is.

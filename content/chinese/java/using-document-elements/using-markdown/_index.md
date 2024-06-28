@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 //指定有序列表。
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-//指定文本的斜体强调。
+//指定文本的意大利语强调。
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

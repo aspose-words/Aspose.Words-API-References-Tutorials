@@ -71,7 +71,7 @@ R: No, Aspose.Words per .NET non è l'unica soluzione disponibile per lavorare c
 
 #### D: Posso utilizzare la funzione "Ottieni separatore stile paragrafo" con altri linguaggi di programmazione?
 
-R: Sì, puoi utilizzare la funzione "Ottieni separatore di stile di paragrafo" con altri linguaggi di programmazione supportati da Aspose.Words, come Java, Python o C++. Aspose.Words offre una gamma di API e librerie specifiche della lingua per facilitare l'elaborazione dei documenti su più piattaforme.
+R: Sì, puoi utilizzare la funzione "Ottieni separatore di stile di paragrafo" con altri linguaggi di programmazione supportati da Aspose.Words, come Java, Python o C.++. Aspose.Words offre una gamma di API e librerie specifiche della lingua per facilitare l'elaborazione dei documenti su più piattaforme.
 
 #### D: Come posso accedere alla documentazione di Aspose.Words per .NET?
 

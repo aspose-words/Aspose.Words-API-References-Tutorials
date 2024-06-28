@@ -2,7 +2,7 @@
 title: Infoga fält Inget
 linktitle: Infoga fält Inget
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du lägger in en mästare AUCUN i dokumenten Word avec Aspose.Words för .NET.
+description: Lär dig hur du skapar dokument med AUCUN i Word med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/insert-field-none/

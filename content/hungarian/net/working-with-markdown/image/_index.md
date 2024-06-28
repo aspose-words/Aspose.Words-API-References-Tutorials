@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. lépés: Kép beszúrása
 
- Képet a segítségével szúrhatunk be`Shape` osztályba, és itt adja meg a kép típusát`ShapeType.Image` Beállítjuk a kép tördelési típusát is`WrapType.Inline`.
+ Képet a segítségével szúrhatunk be`Shape` osztályba, és itt adja meg a kép típusát`ShapeType.Image` . Beállítjuk a kép tördelési típusát is`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ Gratulálok ! Most már megtanulta, hogyan kell használni a képek funkciót az
 
 #### K: Beszúrhatok képet az Aspose.Words URL-ből?
 
- V: Igen, beszúrhat egy képet az Aspose.Words URL-ből. Ugyanazt használhatod`InsertImage` módszert, és adja meg a kép URL-címét a helyi fájl elérési útja helyett.
+ V: Igen, beszúrhat egy képet az Aspose.Words-ben található URL-ből. Ugyanazt használhatod`InsertImage`módszert, és adja meg a kép URL-címét a helyi fájl elérési útja helyett.
 
 #### K: Hogyan méretezhetek át egy képet az Aspose.Words programban?
 
@@ -69,7 +69,7 @@ Gratulálok ! Most már megtanulta, hogyan kell használni a képek funkciót az
 
 #### K: Alkalmazhatok szűrőket az Aspose.Words képeire?
 
-V: Igen, alkalmazhat szűrőket az Aspose.Words képeire. Például alkalmazhat elmosódási szűrőt egy képre a`ApplyGaussianBlur` módszere a`Shape` tárgy.
+ V: Igen, alkalmazhat szűrőket az Aspose.Words képeire. Például alkalmazhat elmosódási szűrőt egy képre a`ApplyGaussianBlur` módszere a`Shape` tárgy.
 
 #### K: Hogyan cserélhetek le egy képet egy másikra az Aspose.Wordsben?
 

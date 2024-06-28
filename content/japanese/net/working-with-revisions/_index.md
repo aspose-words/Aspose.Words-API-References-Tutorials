@@ -16,7 +16,7 @@ url: /ja/net/working-with-revisions/
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [改訂を受け入れる](./accept-revisions/) | Aspose.Words for .NET を使用して Word 文書の改訂を受け入れる方法を学びます。 |
+| [レビューを受け入れる](./accept-revisions/) | Aspose.Words for .NET を使用して Word 文書の改訂を受け入れる方法を学びます。 |
 | [単語のリビジョンの種類を取得する](./get-revision-types/) | Aspose.Words for .NET を使用して、Word 文書内の単語のリビジョン タイプを取得します。 |
 | [リビジョングループの取得](./get-revision-groups/) | Aspose.Words for .NET を使用して、Word 文書内のリビジョン グループの詳細を取得します。 |
 | [PDF ファイル内のコメントを削除する](./remove-comments-in-pdf/) | Aspose.Words for .NET を使用して PDF ファイル内のコメントを削除します。 |

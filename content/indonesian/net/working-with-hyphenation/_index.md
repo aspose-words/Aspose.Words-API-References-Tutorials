@@ -12,6 +12,6 @@ Pemrosesan Kata dengan Tanda Hubung adalah sumber daya komprehensif yang memandu
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Kata-kata Bahasa Dengan Tanda Hubung](./hyphenate-words-of-languages/) | Pelajari cara memberi tanda hubung pada kata dalam berbagai bahasa di dokumen Word menggunakan Aspose.Words untuk .NET. |
+| [Kata-kata Bahasa Dengan Tanda Hubung](./hyphenate-words-of-languages/) | Pelajari cara memberi tanda hubung pada kata-kata dalam berbagai bahasa di dokumen Word menggunakan Aspose.Words untuk .NET. |
 | [Muat Kamus Tanda Hubung Untuk Bahasa](./load-hyphenation-dictionary-for-language/) |Pelajari cara memuat kamus tanda hubung untuk bahasa tertentu di Aspose.Words untuk .NET. |
 | [Panggilan Balik Tanda Hubung](./hyphenation-callback/) | Pelajari cara menggunakan panggilan balik tanda hubung di Aspose.Words untuk .NET untuk menangani tanda hubung kata. |

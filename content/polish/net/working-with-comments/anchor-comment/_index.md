@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-comments/anchor-comment/
 ---
 
-W tym obszernym samouczku dowiesz się, jak zakotwiczyć odpowiedzi na komentarze w określonym tekście w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Pod koniec tego przewodnika będziesz mógł powiązać komentarze z określonym tekstem w swoich dokumentach.
+tym obszernym samouczku dowiesz się, jak zakotwiczyć odpowiedzi na komentarze w określonym tekście w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Pod koniec tego przewodnika będziesz mógł powiązać komentarze z określonym tekstem w swoich dokumentach.
 
 ## Warunki wstępne
 Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Utwórz trzy obiekty Run.
-// Pierwsze dwa wyświetlają tekst, a trzeci uruchamia komentarz
+//Pierwsze dwa wyświetlają tekst, a trzeci uruchamia komentarz
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ O: Aby dodać kotwicę komentarza w dokumencie Aspose.Words for .NET, wykonaj kr
 
 #### P: Jak mogę edytować tekst komentarza połączonego z kotwicą komentarza w Aspose.Words dla .NET?
 
- O: Aby zmodyfikować tekst komentarza powiązanego z kotwicą komentarza w Aspose.Words dla .NET, możesz uzyskać dostęp do`Comment.Text` właściwość odpowiedniego`Comment` obiekt i zmodyfikuj tekst według potrzeb.
+O: Aby zmodyfikować tekst komentarza powiązanego z kotwicą komentarza w Aspose.Words dla .NET, możesz uzyskać dostęp do`Comment.Text` właściwość odpowiedniego`Comment` obiekt i zmodyfikuj tekst według potrzeb.
 

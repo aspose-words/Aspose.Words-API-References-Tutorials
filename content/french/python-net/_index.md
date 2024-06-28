@@ -1,5 +1,5 @@
 ---
-title: Gestion de documents | API de traitement de documents Python Aspose.Words
+title: Gestion des documents | API de traitement de documents Python Aspose.Words
 linktitle: Aspose.Words pour les didacticiels Python
 type: docs
 weight: 12
@@ -11,7 +11,7 @@ Aspose.Words for Python propose une gamme de didacticiels permettant aux dévelo
 
 ## API de document Python pour une gestion transparente des documents
 
-Explorez la puissance de l'API Python Document avec les didacticiels Aspose.Words. Les développeurs apprendront à créer, modifier et gérer des documents Word par programmation. L'API permet de personnaliser le formatage, l'insertion de contenu et la fusion de documents, rationalisant ainsi les tâches de gestion des documents.
+Explorez la puissance de l'API Python Document avec les didacticiels Aspose.Words. Les développeurs apprendront à créer, modifier et gérer des documents Word par programmation. L'API permet la personnalisation du formatage, de l'insertion de contenu et de la fusion de documents, ainsi que des tâches de gestion de documents en continu.
 
 ## Automatisez le traitement des documents avec Python
 

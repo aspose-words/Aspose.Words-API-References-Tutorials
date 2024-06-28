@@ -116,7 +116,7 @@ Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu c�
 
 #### Câu hỏi: Dấu trang sắp xếp lại hàng có chỉ hoạt động với dấu trang hàng trong bảng không?
 
-Trả lời: Có, tính năng Gỡ rối dấu trang hàng được thiết kế đặc biệt để gỡ rối các dấu trang hàng trong bảng. Chức năng này có thể được sử dụng để xử lý dấu trang dòng trong mảng và đảm bảo rằng phần cuối của dấu trang nằm trên cùng dòng khi dấu trang bắt đầu.
+Trả lời: Có, tính năng Gỡ rối dấu trang hàng được thiết kế đặc biệt để gỡ rối các dấu trang hàng trong bảng. Chức năng này có thể được sử dụng để xử lý dấu trang dòng trong mảng và đảm bảo rằng phần cuối của dấu trang ở cùng dòng khi dấu trang bắt đầu.
 
 #### Câu hỏi: Chức năng Đánh dấu dòng sắp xếp lại có sửa đổi nội dung của tài liệu gốc không?
 

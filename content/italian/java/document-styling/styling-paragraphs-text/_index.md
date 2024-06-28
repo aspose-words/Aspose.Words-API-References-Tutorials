@@ -321,7 +321,7 @@ Le tabelle rappresentano un modo efficace per organizzare e presentare i dati ne
 // Crea un nuovo documento
 Document doc = new Document();
 
-// Crea una tabella con 3 righe e 3 colonne
+// Crea una tabella con 3 righe e 3 colonne.
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

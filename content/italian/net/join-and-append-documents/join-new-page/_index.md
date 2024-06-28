@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Passaggio 5: salva il documento modificato
 
- Infine, salva il documento di destinazione modificato utilizzando il file`Save` metodo del`Document` oggetto.
+Infine, salva il documento di destinazione modificato utilizzando il file`Save` metodo del`Document` oggetto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ Ciò completa l'implementazione dell'unione di due documenti su una nuova pagina
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Imposta il documento aggiunto in modo che inizi su una nuova pagina.
+	// Imposta il documento aggiunto in modo che inizi su una nuova pagina.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Aggiungi il documento di origine utilizzando gli stili originali trovati nel documento di origine.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

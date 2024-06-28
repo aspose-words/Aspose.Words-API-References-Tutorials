@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 Đảm bảo thay thế "dataDir" bằng đường dẫn thư mục tới tài liệu của bạn.
 
-### Mã nguồn mẫu cho các tùy chọn lưu DocSaveOptions với chức năng "Mã hóa tài liệu bằng mật khẩu" bằng Aspose.Words cho .NET
+### Mã nguồn ví dụ cho các tùy chọn lưu DocSaveOptions với chức năng "Mã hóa tài liệu bằng mật khẩu" bằng Aspose.Words cho .NET
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn

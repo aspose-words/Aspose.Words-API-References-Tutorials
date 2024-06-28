@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Schritt 5: Speichern Sie das geänderte Dokument
 
- Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
+Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ Damit ist die Implementierung des Zusammenfügens zweier Dokumente auf einer neu
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Legen Sie fest, dass das angehängte Dokument auf einer neuen Seite beginnt.
+	// Legen Sie fest, dass das angehängte Dokument auf einer neuen Seite beginnt.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Hängen Sie das Quelldokument mit den im Quelldokument gefundenen Originalstilen an.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

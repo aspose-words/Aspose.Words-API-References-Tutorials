@@ -61,12 +61,12 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // Aktualizujte pole.
 document. UpdateFields();
 
-// Zobrazení výsledků pole.
+//Zobrazení výsledků pole.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
-tomto příkladu jsme nahráli dokument, aktualizovali všechna pole a poté jsme cyklicky procházeli poli, abychom zobrazili jejich výsledky. Tento krok můžete přizpůsobit pomocí své vlastní logiky pro zpracování výsledků pole.
+V tomto příkladu jsme nahráli dokument, aktualizovali všechna pole a poté jsme cyklicky procházeli poli, abychom zobrazili jejich výsledky. Tento krok můžete přizpůsobit pomocí své vlastní logiky pro zpracování výsledků pole.
 
 Tímto končí náš průvodce používáním funkce "Zobrazit výsledky pole" s Aspose.Words pro .NET.
 
@@ -78,7 +78,7 @@ Odpověď: Pole zobrazení výsledku v Aspose.Words je typ pole, které zobrazuj
 
 #### Otázka: Jak aktualizovat pole zobrazení výsledků v dokumentu aplikace Word pomocí Aspose.Words?
 
-Odpověď: Chcete-li aktualizovat pole zobrazení výsledků v dokumentu aplikace Word pomocí Aspose.Words, můžete použít metodu UpdateFields. Tato metoda prochází dokumentem a aktualizuje všechna pole, včetně polí zobrazení výsledků, přičemž přepočítává hodnoty na základě aktuálních dat.
+Odpověď: Chcete-li aktualizovat pole zobrazení výsledků v dokumentu aplikace Word pomocí Aspose.Words, můžete použít metodu UpdateFields. Tato metoda prochází dokumentem a aktualizuje všechna pole, včetně polí zobrazení výsledků, přepočítává hodnoty na základě aktuálních dat.
 
 #### Otázka: Mohu formátovat výsledek zobrazený v poli zobrazení výsledku?
 

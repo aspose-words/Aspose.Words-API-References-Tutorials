@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 #### Q: Aspose.Words for .NET에서 필드를 업데이트하기 위해 특정 문화권을 어떻게 지정할 수 있습니까?
 
-A: .NET용 Aspose.Words에서 필드를 업데이트하기 위한 특정 문화권을 지정하려면 다음을 사용할 수 있습니다.`Document.FieldOptions.FieldUpdateCultureInfo` 속성을 설정하고`CultureInfo` 원하는 문화에 해당하는 개체입니다. 예를 들어 다음을 사용할 수 있습니다.`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` 프랑스어(프랑스) 문화권을 지정합니다.
+ A: .NET용 Aspose.Words에서 필드를 업데이트하기 위한 특정 문화권을 지정하려면 다음을 사용할 수 있습니다.`Document.FieldOptions.FieldUpdateCultureInfo` 속성을 설정하고`CultureInfo` 원하는 문화에 해당하는 개체입니다. 예를 들어 다음을 사용할 수 있습니다.`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` 프랑스어(프랑스) 문화권을 지정합니다.
 
 #### Q: .NET용 Aspose.Words에서 자동 필드 업데이트를 비활성화할 수 있습니까?
 

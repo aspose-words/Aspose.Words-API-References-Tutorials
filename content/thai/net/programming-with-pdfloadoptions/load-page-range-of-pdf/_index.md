@@ -1,6 +1,6 @@
 ---
-title: โหลดหน้าช่วงของ Pdf
-linktitle: โหลดหน้าช่วงของ Pdf
+title: โหลดช่วงหน้าของ PDF
+linktitle: โหลดช่วงหน้าของ PDF
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: คำแนะนำทีละขั้นตอนในการโหลดช่วงหน้า PDF เฉพาะด้วย Aspose.Words สำหรับ .NET
 type: docs
@@ -35,7 +35,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 
 อย่าลืมระบุเส้นทางที่ถูกต้องเพื่อบันทึกเอกสารที่แก้ไข
 
-นั่นคือทั้งหมดที่ ! ขณะนี้ คุณได้โหลดช่วงหน้าเฉพาะจากเอกสาร PDF โดยใช้ Aspose.Words สำหรับ .NET แล้ว
+นั่นคือทั้งหมด! ขณะนี้ คุณได้โหลดช่วงหน้าเฉพาะจากเอกสาร PDF โดยใช้ Aspose.Words สำหรับ .NET แล้ว
 
 ### ตัวอย่างซอร์สโค้ดสำหรับโหลดช่วงหน้าของ Pdf โดยใช้ Aspose.Words สำหรับ .NET
 

@@ -97,4 +97,4 @@ Odpověď: Vložení textového pole bez tvůrce dokumentu přímo neovlivní st
 
 #### Otázka: Mohu upravit vzhled pole pro zahrnutí textu v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
-Odpověď: Pole pro zahrnutí textu přímo nepřizpůsobuje svůj vzhled v dokumentu aplikace Word. Můžete však formátovat zahrnutý text pomocí vlastností odstavce, vlastností písma a dalších objektů formátování dostupných v Aspose.Words for .NET.
+Odpověď: Zahrnutí textového pole přímo nepřizpůsobuje jeho vzhled v dokumentu aplikace Word. Můžete však formátovat zahrnutý text pomocí vlastností odstavce, vlastností písma a dalších objektů formátování dostupných v Aspose.Words for .NET.

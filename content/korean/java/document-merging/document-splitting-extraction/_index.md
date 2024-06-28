@@ -110,4 +110,4 @@ Aspose.Words for Java는 DOC, DOCX, RTF, PDF 등을 포함한 광범위한 문�
 
 ### Aspose.Words for Java 설명서는 어디에서 액세스할 수 있나요?
 
- Aspose.Words for Java에 대한 문서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/java/).
+ Aspose.Words for Java에 대한 설명서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/java/).

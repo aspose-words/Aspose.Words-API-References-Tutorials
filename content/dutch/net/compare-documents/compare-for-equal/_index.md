@@ -73,4 +73,4 @@ A: Ja, Aspose.Words voor .NET biedt verschillende opties om het vergelijkingspro
 
 #### Vraag: Kan ik een meer gedetailleerde vergelijking uitvoeren om specifieke verschillen tussen documenten te identificeren?
 
-A: Ja, u kunt een meer gedetailleerde vergelijking uitvoeren om specifieke verschillen tussen documenten te identificeren door de`Revisions` verzameling van het originele document. Elke revisie vertegenwoordigt een wijziging of verschil tussen de documenten. U hebt toegang tot de details van elke revisie, zoals het type wijziging (invoeging, verwijdering, opmaakwijziging) en het getroffen bereik van het document.
+ A: Ja, u kunt een meer gedetailleerde vergelijking uitvoeren om specifieke verschillen tussen documenten te identificeren door de`Revisions` verzameling van de originele documenten. Elke revisie vertegenwoordigt een wijziging of verschil tussen de documenten. U hebt toegang tot de details van elke revisie, zoals het type wijziging (invoeging, verwijdering, opmaakwijziging) en het getroffen bereik van het document.

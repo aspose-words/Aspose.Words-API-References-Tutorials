@@ -15,7 +15,7 @@ Ebben az oktatóanyagban megtanuljuk, hogyan lehet lebegő táblázat helyzetét
 2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
 
 ## 2. lépés: A dokumentum betöltése és a táblázatok elérése
-A táblázatokkal történő szövegfeldolgozás elindításához be kell töltenünk az azokat tartalmazó dokumentumot, és el kell érnünk őket. Kovesd ezeket a lepeseket:
+táblázatokkal történő szövegfeldolgozás elindításához be kell töltenünk az azokat tartalmazó dokumentumot, és el kell érnünk őket. Kovesd ezeket a lepeseket:
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -48,7 +48,7 @@ Console.WriteLine("...............................");
 }
 ```
 
- Itt használjuk a`foreach` ciklus a dokumentum összes tömbjének ciklusához. Ellenőrizzük, hogy a tömb float típusú-e a`TextWrapping` ingatlan. Ha igen, akkor kinyomtatjuk a táblázat pozicionálási tulajdonságait, például vízszintes horgony, függőleges horgony, abszolút vízszintes és függőleges távolságok, átfedési engedély, abszolút vízszintes távolság és függőleges igazítási relatív.
+ Itt használjuk a`foreach` hurok a dokumentum összes tömbjének ciklusához. Ellenőrizzük, hogy a tömb float típusú-e a`TextWrapping` ingatlan. Ha igen, akkor kinyomtatjuk a táblázat pozicionálási tulajdonságait, például vízszintes horgony, függőleges horgony, abszolút vízszintes és függőleges távolságok, átfedési engedély, abszolút vízszintes távolság és függőleges igazítási relatív.
  
 ### Minta forráskód a Lebegő táblázatpozíció lekéréséhez az Aspose.Words for .NET használatával 
 

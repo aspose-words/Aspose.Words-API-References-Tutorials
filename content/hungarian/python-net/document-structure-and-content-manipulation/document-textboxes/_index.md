@@ -32,7 +32,7 @@ pip install aspose-words
 
 ## Szövegdobozok hozzáadása Word-dokumentumhoz
 
-Kezdjük egy új Word-dokumentum létrehozásával, és adjunk hozzá egy szövegmezőt. Íme egy példa kódrészlet ennek eléréséhez:
+Kezdjük egy új Word-dokumentum létrehozásával, és adjunk hozzá egy szövegmezőt. Íme egy minta kódrészlet ennek eléréséhez:
 
 ```python
 import aspose.words as aw
@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- Ebben a kódban létrehozunk egy újat`Document` és a`DocumentBuilder` . A`insert_text_box`módszerrel szövegdobozt adunk a dokumentumhoz. Igényei szerint testreszabhatja a szövegdoboz tartalmát, helyzetét és méretét.
+ Ebben a kódban létrehozunk egy újat`Document` és a`DocumentBuilder` . A`insert_text_box` módszerrel szövegdobozt adunk a dokumentumhoz. Igényei szerint testreszabhatja a szövegdoboz tartalmát, helyzetét és méretét.
 
 ## Szövegdobozok formázása
 
@@ -98,7 +98,7 @@ Ebben az útmutatóban megvizsgáltuk a vizuális tartalom szövegdobozokkal tö
 
 ### Hogyan lehet átméretezni egy szövegdobozt?
 
- Szövegdoboz átméretezéséhez módosíthatja a szélességi és magassági tulajdonságait a gombbal`width` és`height` attribútumokat.
+ Szövegdoboz átméretezéséhez módosíthatja a szélességi és magassági tulajdonságait a gombbal`width` és`height` attribútumok.
 
 ### Elforgathatom a szövegdobozt?
 

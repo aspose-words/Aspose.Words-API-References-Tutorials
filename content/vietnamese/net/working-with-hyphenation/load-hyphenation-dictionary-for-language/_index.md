@@ -64,12 +64,12 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Hỏi: Tôi có thể tìm các tập tin từ điển âm tiết cho các ngôn ngữ khác nhau ở đâu?
 
-Đáp: Bạn có thể tìm thấy các tệp từ điển âm tiết cho các ngôn ngữ khác nhau trên nhiều nguồn trực tuyến khác nhau. Các tệp này thường ở định dạng XML hoặc TEX. Bạn có thể tìm thấy các từ điển âm tiết mã nguồn mở cho các ngôn ngữ khác nhau trên các trang web dành riêng cho các dự án ngôn ngữ học hoặc kho mã nguồn.
+Trả lời: Bạn có thể tìm thấy các tệp từ điển âm tiết cho các ngôn ngữ khác nhau trên nhiều tài nguyên trực tuyến khác nhau. Các tệp này thường ở định dạng XML hoặc TEX. Bạn có thể tìm thấy từ điển âm tiết mã nguồn mở cho các ngôn ngữ khác nhau trên các trang web dành riêng cho các dự án ngôn ngữ học hoặc kho lưu trữ mã nguồn.
 
 #### Câu hỏi: Làm cách nào tôi có thể áp dụng từ điển âm tiết đã tải vào tài liệu trong Aspose.Words?
 
- Trả lời: Để áp dụng từ điển âm tiết đã tải vào tài liệu trong Aspose.Words, bạn cần lặp lại các từ trong tài liệu và sử dụng`Hyphenate()` phương pháp của`Hyphenation`lớp để có được âm tiết của các từ. Sau đó, bạn có thể định dạng các từ có âm tiết nếu cần, ví dụ bằng cách thêm dấu gạch nối giữa các âm tiết.
+Trả lời: Để áp dụng từ điển âm tiết đã tải vào tài liệu trong Aspose.Words, bạn cần lặp lại các từ trong tài liệu và sử dụng`Hyphenate()` phương pháp của`Hyphenation` lớp để có được âm tiết của các từ. Sau đó, bạn có thể định dạng các từ có âm tiết nếu cần, ví dụ bằng cách thêm dấu gạch nối giữa các âm tiết.
 
-#### Câu hỏi: Ngôn ngữ nào được hỗ trợ cho việc sắp xếp âm tiết trong Aspose.Words?
+#### Câu hỏi: Ngôn ngữ nào được hỗ trợ cho âm tiết trong Aspose.Words?
 
-Trả lời: Aspose.Words hỗ trợ âm tiết cho nhiều ngôn ngữ bao gồm tiếng Anh, tiếng Pháp, tiếng Tây Ban Nha, tiếng Đức, tiếng Ý, tiếng Hà Lan, tiếng Nga, tiếng Bồ Đào Nha, tiếng Thụy Điển, tiếng Na Uy, tiếng Đan Mạch, tiếng Phần Lan, tiếng Ba Lan, tiếng Séc và nhiều ngôn ngữ khác. Kiểm tra tài liệu Aspose.Words để biết danh sách đầy đủ các ngôn ngữ được hỗ trợ về âm tiết.
+Trả lời: Aspose.Words hỗ trợ âm tiết cho nhiều ngôn ngữ bao gồm tiếng Anh, tiếng Pháp, tiếng Tây Ban Nha, tiếng Đức, tiếng Ý, tiếng Hà Lan, tiếng Nga, tiếng Bồ Đào Nha, tiếng Thụy Điển, tiếng Na Uy, tiếng Đan Mạch, tiếng Phần Lan, tiếng Ba Lan, tiếng Séc và nhiều ngôn ngữ khác. Kiểm tra tài liệu Aspose.Words để biết danh sách đầy đủ các ngôn ngữ được hỗ trợ cho âm tiết.

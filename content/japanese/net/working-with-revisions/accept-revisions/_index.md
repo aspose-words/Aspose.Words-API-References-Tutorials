@@ -1,6 +1,6 @@
 ---
-title: 改訂を受け入れる
-linktitle: 改訂を受け入れる
+title: レビューを受け入れる
+linktitle: レビューを受け入れる
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET を使用して Word 文書の改訂を受け入れる方法を学習します。
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-//リビジョン削除の段落は、変更を受け入れると削除されます。
+//削除された改訂段落は、変更を受け入れると削除されます。
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

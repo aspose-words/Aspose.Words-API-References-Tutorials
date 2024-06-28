@@ -38,7 +38,7 @@ Console.WriteLine(info.IsEncrypted);
 
 C'est tout ! Vous avez vérifié avec succès si un document est crypté à l'aide d'Aspose.Words pour .NET.
 
-### Exemple de code source pour vérifier des documents chiffrés avec Aspose.Words for .NET
+### Exemple de code source pour vérifier les documents chiffrés avec Aspose.Words for .NET
 
 ```csharp
 

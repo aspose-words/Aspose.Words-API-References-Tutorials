@@ -17,7 +17,7 @@ Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
 - Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
+## Adım 2: Yeni bir belge oluşturun ve bir grafik ekleyin.
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -70,7 +70,7 @@ Bu, Aspose.Words for .NET kullanarak dağılım grafiği ekleme işlemini tamaml
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine dağılım grafiğinin nasıl ekleneceğini öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak yeni bir belge oluşturabilir, dağılım grafiği ekleyebilir, X ve Y koordinatlarıyla seri verileri ekleyebilir ve belgeyi grafikle birlikte kaydedebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine dağılım grafiğinin nasıl ekleneceğini öğrendiniz. Adım adım kılavuzu takip ederek ve verilen kaynak kodunu kullanarak yeni bir belge oluşturabilir, dağılım grafiği ekleyebilir, X ve Y koordinatlarıyla seri verileri ekleyebilir ve belgeyi grafikle birlikte kaydedebilirsiniz.
 
 Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için kapsamlı bir API sağlar. Dağılım grafikleri, iki sayısal değişkenli verileri görselleştirmek ve analiz etmek için kullanışlıdır. Aspose.Words for .NET ile X ve Y değerleri arasındaki ilişkiyi temsil eden dağılım grafiklerini kolayca oluşturabilir ve verilerdeki kalıpları veya eğilimleri tanımlayabilirsiniz.
 
@@ -82,7 +82,7 @@ Aspose.Words for .NET'i kullanarak, dağılım grafikleriyle belge oluşturma s�
 Dağılım grafiği, iki sayısal değişken arasındaki ilişkiyi görüntüleyen bir grafik türüdür. Bir değişkenin X ekseninde ve diğer değişkenin Y ekseninde temsil edildiği bir koordinat ızgarası üzerinde çizilen bir dizi noktadan oluşur. Dağılım grafikleri, iki veri noktası kümesi arasındaki kalıpları, korelasyonları veya eğilimleri tanımlamak için kullanılır.
 
 #### Q2. Dağılım grafiğine birden fazla seri ekleyebilir miyim?
-Evet, Aspose.Words for .NET'i kullanarak dağılım grafiğine birden fazla seri ekleyebilirsiniz. Her seri, ilgili X ve Y koordinatlarıyla birlikte bir dizi veri noktasını temsil eder. Birden fazla seri ekleyerek, aynı dağılım grafiğindeki farklı veri kümelerini karşılaştırıp analiz edebilir, verilerinizin kapsamlı bir görünümünü sağlayabilirsiniz.
+Evet, Aspose.Words for .NET'i kullanarak dağılım grafiğine birden fazla seri ekleyebilirsiniz. Her seri, ilgili X ve Y koordinatlarıyla birlikte bir dizi veri noktasını temsil eder. Birden fazla seri ekleyerek aynı dağılım grafiğindeki farklı veri kümelerini karşılaştırıp analiz edebilir, verilerinizin kapsamlı bir görünümünü sağlayabilirsiniz.
 
 #### S3. Dağılım grafiğinin görünümünü özelleştirebilir miyim?
 Evet, Aspose.Words for .NET'i kullanarak dağılım grafiğinin görünümünün çeşitli yönlerini özelleştirebilirsiniz. Seri rengi, işaretçi şekli, eksen etiketleri ve grafik alanı formatlaması gibi özellikleri değiştirebilirsiniz. Kitaplık, grafiğin görsel öğelerini kontrol etmek ve ihtiyaçlarınıza uygun özelleştirilmiş bir görünüm oluşturmak için zengin bir API seti sağlar.
@@ -91,4 +91,4 @@ Evet, Aspose.Words for .NET'i kullanarak dağılım grafiğinin görünümünün
 Evet, Aspose.Words for .NET, belgeyi eklenen dağılım grafiğiyle birlikte DOCX, PDF, HTML ve daha fazlası gibi çeşitli formatlarda kaydetmenize olanak tanır. Gereksinimlerinize göre istediğiniz çıktı formatını seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne. Eklenen dağılım grafiği kaydedilen belgede korunacaktır.
 
 #### S5. Dağılım grafiğini ekledikten sonra verilerini ve görünümünü değiştirebilir miyim?
-Evet, dağılım grafiğini belgeye ekledikten sonra Aspose.Words for .NET tarafından sağlanan API'leri kullanarak verilerini ve görünümünü değiştirebilirsiniz. Seri verilerini yeni X ve Y koordinatlarıyla güncelleyebilir, işaretçi şekillerini ve renklerini değiştirebilir, eksen özelliklerini özelleştirebilir ve biçimlendirme seçeneklerini uygulayarak Word belgelerinizde dinamik ve etkileşimli grafikler oluşturabilirsiniz.
+Evet, dağılım grafiğini belgeye ekledikten sonra Aspose.Words for .NET tarafından sağlanan API'leri kullanarak verilerini ve görünümünü değiştirebilirsiniz. Seri verilerini yeni X ve Y koordinatlarıyla güncelleyebilir, işaretçi şekillerini ve renklerini değiştirebilir, eksen özelliklerini özelleştirebilir ve Word belgelerinizde dinamik ve etkileşimli grafikler oluşturmak için biçimlendirme seçeneklerini uygulayabilirsiniz.

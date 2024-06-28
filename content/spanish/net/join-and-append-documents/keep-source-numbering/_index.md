@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Paso 4: importar y agregar párrafos
 
-Repita los párrafos del documento de origen e importe cada párrafo al documento de destino utilizando el`importer`. Agregue los nodos importados al cuerpo del documento de destino.
+ Repita los párrafos del documento de origen e importe cada párrafo al documento de destino utilizando el`importer`. Agregue los nodos importados al cuerpo del documento de destino.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ Esto completa la implementación de agregar un documento de origen a un document
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Mantenga el formato de la lista de fuentes al importar párrafos numerados.
+	//Mantenga el formato de la lista de fuentes al importar párrafos numerados.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

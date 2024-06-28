@@ -4,7 +4,7 @@ linktitle: Aspose.Words für .NET-Tutorials
 type: docs
 weight: 10
 url: /de/net/
-description: „API-Tutorials und Code-Snippets von Aspose.Words für .NET, die das Erstellen, Bearbeiten, Konvertieren, Drucken und viele weitere Funktionen sowie die Verwendung der Word-Dokumentverarbeitung umfassen.“
+description: „API-Tutorials und Codeausschnitte von Aspose.Words für .NET, die das Erstellen, Bearbeiten, Konvertieren, Drucken und viele weitere Funktionen sowie die Verwendung der Word-Dokumentverarbeitung umfassen.“
 is_root: true
 ---
 
@@ -13,7 +13,7 @@ is_root: true
 ## Tutorials
 | Titel | Beschreibung |
 | --- | --- | 
-| [Lizenz anwenden](./apply-license/) | Tutorials zu verschiedenen Varianten der Lizenzierung von Aspose.Words für .NET, einschließlich der Anwendung von Lizenzen aus Dateien, Streams und gemessenen Lizenzen. |  
+| [Lizenz anwenden](./apply-license/) | Tutorials zu verschiedenen Variationen der Lizenzierung von Aspose.Words für .NET, einschließlich der Anwendung von Lizenzen aus Dateien, Streams und gemessenen Lizenzen. |  
 | [Aktivieren Sie OpenType-Funktionen](./enable-opentype-features/) | Erfahren Sie, wie Sie OpenType-Funktionen in Word-Dokumenten mit Aspose.Words für .NET aktivieren. Die Tutorials führen Sie durch die Schritte zum Aktivieren erweiterter Funktionen von OpenType-Schriftarten. |  
 | [Wortverarbeitung mit Kommentaren](./working-with-comments/) | Entdecken Sie die Kommentarverwaltungsfunktionen in Word-Dokumenten mit Aspose.Words für .NET. Erfahren Sie anhand von Schritt-für-Schritt-Anleitungen, wie Sie Kommentare hinzufügen, löschen, suchen und formatieren. |  
 | [Wortverarbeitung mit Feldern](./working-with-fields/) | Eine umfassende Ressource für die Textverarbeitung mit Feldern in Word-Dokumenten unter Verwendung von Aspose.Words für .NET. Tutorials, Beispiele und ausführliche Erklärungen. |  

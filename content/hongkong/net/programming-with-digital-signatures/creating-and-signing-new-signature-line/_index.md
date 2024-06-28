@@ -105,7 +105,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 #### Q：我可以自訂簽名行選項，例如姓名、標題和日期嗎？
 
-答：是的，您可以自訂簽名行選項。這`SignatureLineOptions`類別提供屬性來設定所需的選項，例如`Signer`, `SignerTitle`, `ShowDate`等等。您可以在插入簽名行之前修改這些屬性。
+答：是的，您可以自訂簽名行選項。這`SignatureLineOptions`類別提供屬性來設定所需的選項，例如`Signer`, `SignerTitle`, `ShowDate`等等。
 
 #### Q：建立簽名行後如何在文件上簽名？
 

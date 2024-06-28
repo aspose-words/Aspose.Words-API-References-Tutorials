@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Etapa 2: Carregar os Documentos de Origem e Destino
 
- Em seguida, você precisa carregar os documentos de origem e destino usando o Aspose.Words`Document` aula. Atualize os nomes dos arquivos no`Document` construtor de acordo com os nomes dos seus documentos.
+Em seguida, você precisa carregar os documentos de origem e destino usando Aspose.Words.`Document` aula. Atualize os nomes dos arquivos no`Document` construtor de acordo com os nomes dos seus documentos.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Etapa 4: vincular cabeçalhos e rodapés à seção anterior
 
-Para vincular os cabeçalhos e rodapés do documento de origem à seção anterior do documento de destino, você pode usar o comando`LinkToPrevious` método do`HeadersFooters` coleção. Ao passar`true` como parâmetro, você substitui quaisquer cabeçalhos ou rodapés existentes no documento de origem.
+ Para vincular os cabeçalhos e rodapés do documento de origem à seção anterior do documento de destino, você pode usar o comando`LinkToPrevious` método do`HeadersFooters` coleção. Ao passar`true` como parâmetro, você substitui quaisquer cabeçalhos ou rodapés existentes no documento de origem.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

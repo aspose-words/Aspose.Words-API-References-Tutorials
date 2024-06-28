@@ -13,7 +13,7 @@ Desbloquee el poder de Aspose.Words para Java para proteger sus documentos con c
 
 ## Introducción
 
-En el mundo digital actual, la seguridad de los datos es primordial. Ya sea que maneje documentos comerciales confidenciales o archivos personales, es fundamental asegurarse de que solo las personas autorizadas puedan acceder a sus documentos. Esta guía paso a paso le mostrará cómo utilizar Aspose.Words para Java para agregar una sólida capa de seguridad a sus documentos mediante la aplicación de contraseñas.
+En el mundo digital actual, la seguridad de los datos es primordial. Ya sea que maneje documentos comerciales confidenciales o archivos personales, es fundamental asegurarse de que solo las personas autorizadas puedan acceder a sus documentos. Esta guía paso a paso le mostrará cómo utilizar Aspose.Words para Java para agregar una capa sólida de seguridad a sus documentos mediante la aplicación de contraseñas.
 
 ## Configurando Aspose.Words para Java
 
@@ -63,7 +63,7 @@ La protección con contraseña en Aspose.Words para Java es altamente segura. Ut
 
 ### ¿Puedo cambiar o eliminar la contraseña más tarde?
 
-Sí, puede cambiar o eliminar la contraseña más adelante utilizando Aspose.Words para Java. Simplemente cargue el documento, realice los cambios necesarios y guárdelo nuevamente.
+Sí, puedes cambiar o eliminar la contraseña más adelante usando Aspose.Words para Java. Simplemente cargue el documento, realice los cambios necesarios y guárdelo nuevamente.
 
 ### ¿Es posible establecer contraseñas diferentes para diferentes partes del documento?
 

@@ -15,7 +15,7 @@ Než začnete, ujistěte se, že máte následující položky:
 - Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
 
 ## Krok 1: Definujte adresář dokumentů
- Začněte nastavením cesty k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+Začněte nastavením cesty k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

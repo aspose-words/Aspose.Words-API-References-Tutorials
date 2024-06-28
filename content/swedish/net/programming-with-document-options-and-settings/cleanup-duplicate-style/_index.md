@@ -73,7 +73,7 @@ Detta uttalande visar antalet stilar som återstår efter rengöring.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//Antalet stilar efter rengöring minskades.
+	//Antalet stilar efter Cleanup minskade.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

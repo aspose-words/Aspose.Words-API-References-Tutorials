@@ -123,7 +123,7 @@ public void addJapaneseAsEditingLanguages() throws Exception
 }
 ```
 
-Języki edycji odgrywają kluczową rolę w przetwarzaniu dokumentów. Dzięki Aspose.Words dla Java możesz ustawić i dostosować języki edycji tak, aby odpowiadały potrzebom językowym Twojego dokumentu.
+Języki edycji odgrywają istotną rolę w przetwarzaniu dokumentów. Dzięki Aspose.Words dla Java możesz ustawić i dostosować języki edycji tak, aby odpowiadały potrzebom językowym Twojego dokumentu.
 
 
 ## Wniosek

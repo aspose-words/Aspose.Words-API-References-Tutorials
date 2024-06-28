@@ -18,16 +18,16 @@ Först använder vi en dokumentgenerator för att lägga till innehåll i vårt 
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Steg 2: Lägg till stil för indragen kod
+## Steg 2: Lägg till stil för angiven kod
 
- Vi kommer att lägga till en anpassad stil för den indragna koden med hjälp av`Styles.Add` metod för`Document` objekt. I det här exemplet skapar vi en stil som heter "IndentedCode" för indragen kod.
+Vi kommer att lägga till en anpassad stil för den indragna koden med hjälp av`Styles.Add` metod för`Document` objekt. I det här exemplet skapar vi en stil som heter "IndentedCode" för indragen kod.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Steg 3: Lägg till indragen kod
+## Steg 3: Lägg till angiven kod
 
 Nu kan vi lägga till ett indraget kodblock med den anpassade stilen "IndentedCode".
 
@@ -51,7 +51,7 @@ Grattis! Du har nu lärt dig hur du använder den indragna kodfunktionen med Asp
 
 ### FAQ's
 
-#### F: Vad är indragen kod i Markdown?
+#### F: Vad är specificerad kod i Markdown?
 
 S: Indragen kod i Markdown är en formateringsmetod som används för att visa kod i ett Markdown-dokument. Den består av att indraga varje kodrad med mellanslag eller tabbar.
 

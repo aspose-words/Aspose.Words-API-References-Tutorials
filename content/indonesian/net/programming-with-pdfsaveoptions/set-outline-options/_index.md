@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Langkah 3: Konfigurasikan opsi simpan sebagai PDF dengan opsi paket
 
- Untuk mengatur opsi kerangka dalam PDF yang dihasilkan, kita perlu mengkonfigurasi`PdfSaveOptions` obyek. Kita dapat mengatur jumlah level outline heading (`HeadingsOutlineLevels`) dan jumlah tingkat garis besar yang diperluas (`ExpandedOutlineLevels`).
+Untuk mengatur opsi kerangka dalam PDF yang dihasilkan, kita perlu mengkonfigurasi`PdfSaveOptions` obyek. Kita dapat mengatur jumlah level outline heading (`HeadingsOutlineLevels`) dan jumlah tingkat garis besar yang diperluas (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

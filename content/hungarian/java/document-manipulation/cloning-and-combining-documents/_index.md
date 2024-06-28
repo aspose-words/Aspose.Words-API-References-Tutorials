@@ -96,7 +96,7 @@ mainDoc.save("Your Directory Path" + "CombinedDocument.docx");
 
 ### Hogyan illeszthetek be dokumentumokat az Aspose.Words for Java programban?
 
-Az Aspose.Words for Java-ban a körlevél-összevonás során dokumentumokat illeszthet be úgy, hogy beállít egy mezőegyesítési visszahívást, és megadja a beszúrandó dokumentumot. Íme egy példa:
+Az Aspose.Words for Java programban a körlevél-összevonás során dokumentumokat illeszthet be úgy, hogy beállít egy mezőegyesítési visszahívást, és megadja a beillesztendő dokumentumot. Íme egy példa:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");

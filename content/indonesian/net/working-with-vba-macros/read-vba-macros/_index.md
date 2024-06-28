@@ -23,7 +23,7 @@ Sebelum memulai, pastikan Anda memiliki item berikut:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Langkah 2: Muat dokumen dan baca makro VBA
+## Langkah 2: Muat dokumen dan baca makro VBA.
 Selanjutnya, kita akan memuat dokumen Word dan memeriksa apakah itu berisi proyek VBA. Jika dokumen memiliki proyek VBA, kami akan mengulang semua modul dalam proyek dan menampilkan kode sumber untuk setiap modul.
 
 ```csharp

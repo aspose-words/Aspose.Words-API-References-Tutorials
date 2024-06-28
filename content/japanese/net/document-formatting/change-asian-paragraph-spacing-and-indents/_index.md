@@ -51,10 +51,10 @@ Aspose.Words for .NET を使用したアジア言語の段落間隔とインデ�
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent が更新されます
-	format.CharacterUnitRightIndent = 10;      //ParagraphFormat.RightIndent が更新されます
-	format.CharacterUnitFirstLineIndent = 20;  //ParagraphFormat.FirstLineIndent が更新されます
-	format.LineUnitBefore = 5;                 //ParagraphFormat.SpaceBefore が更新されます
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent が更新されます。
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent が更新されます。
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent が更新されます。
+	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore が更新されます
 	format.LineUnitAfter = 10;                 //ParagraphFormat.SpaceAfter が更新されます
 
 	doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc");
@@ -71,7 +71,7 @@ Aspose.Words for .NET を使用したアジア言語の段落間隔とインデ�
 
 #### Q: Aspose.Words for .NET の「アジア言語の段落間隔とインデントの変更」機能は何をしますか?
 
-A: Aspose.Words for .NET の「アジア言語の段落間隔とインデントの変更」機能を使用すると、Word 文書内のアジア言語の段落の間隔とインデントのプロパティを変更できます。左右のインデント、最初の行のインデント、前後のスペースの値を調整して、段落のレイアウトと外観を制御できます。
+A: Aspose.Words for .NET の「アジア言語の段落間隔とインデントの変更」機能を使用すると、Word 文書内のアジア言語の段落の間隔とインデントのプロパティを変更できます。左右のインデント、最初の行のインデント、前のスペース、後のスペースの値を調整して、段落のレイアウトと外観を制御できます。
 
 #### Q: Aspose.Words for .NET を使用してアジア言語の段落の間隔とインデントを変更するにはどうすればよいですか?
 

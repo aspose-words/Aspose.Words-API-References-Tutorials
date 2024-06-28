@@ -25,7 +25,7 @@ Oto linki do przydatnych zasobów:
 - [Praca z listą](./net/working-with-list/)   
 - [Praca z Markdownem](./net/working-with-markdown/)   
 - [Praca z węzłem](./net/working-with-node/)   
-- [Praca z wersjami](./net/working-with-revisions/)   
+- [Praca z recenzjami](./net/working-with-revisions/)   
 - [Praca z polami tekstowymi](./net/working-with-textboxes/)   
 - [Podzielony dokument](./net/split-document/)   
 - [Dodaj treść za pomocą narzędzia Documentbuilder](./net/add-content-using-documentbuilder/)
@@ -62,7 +62,7 @@ Oto linki do przydatnych zasobów:
 
 ## Poradniki zarządzania dokumentami Aspose.Words dla języka Python
 {{% alert color="primary" %}}
-Te samouczki zawierają wskazówki krok po kroku dotyczące programowej pracy z dokumentami programu Microsoft Word, w tym tworzenia dokumentów, manipulowania nimi i różnych funkcji zabezpieczeń, takich jak szyfrowanie i ochrona hasłem. Za pomocą tego zasobu programiści mogą efektywnie wdrażać funkcje przetwarzania dokumentów w swoich aplikacjach w języku Python przy użyciu Aspose.Words, zwiększając produktywność i zapewniając bezpieczeństwo dokumentów. 
+Te samouczki zawierają szczegółowe wskazówki dotyczące programowej pracy z dokumentami programu Microsoft Word, w tym tworzenia dokumentów, manipulowania nimi i różnych funkcji zabezpieczeń, takich jak szyfrowanie i ochrona hasłem. Za pomocą tego zasobu programiści mogą efektywnie wdrażać funkcje przetwarzania dokumentów w swoich aplikacjach w języku Python przy użyciu Aspose.Words, zwiększając produktywność i zapewniając bezpieczeństwo dokumentów. 
 {{% /alert %}}
 
 Oto linki do przydatnych zasobów:

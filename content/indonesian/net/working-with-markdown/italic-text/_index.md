@@ -1,6 +1,6 @@
 ---
-title: Teks Miring
-linktitle: Teks Miring
+title: Teks Italia
+linktitle: Teks Italia
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara membuat teks miring dengan Aspose.Words untuk .NET Panduan langkah demi langkah.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Buatlah teks menjadi miring.
+// Buatlah teks dalam bahasa Italia.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
@@ -46,7 +46,7 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fitur teks miring deng
 
 #### T: Bagaimana cara membuat teks miring di Aspose.Words?
 
-A: Untuk membuat teks miring di Aspose.Words, Anda dapat menggunakan`Font.Italic` properti dari`Run` obyek. Anda dapat mengatur properti ini menjadi`true` untuk mencetak miring teks tertentu. Misalnya, Anda bisa menggunakan`run.Font.Italic=true` untuk mencetak miring teks yang terdapat dalam`Run` obyek.
+A: Untuk membuat teks miring di Aspose.Words, Anda dapat menggunakan`Font.Italic` properti dari`Run`obyek. Anda dapat mengatur properti ini menjadi`true` untuk mencetak miring teks tertentu. Misalnya, Anda bisa menggunakan`run.Font.Italic=true` untuk mencetak miring teks yang terdapat dalam`Run` obyek.
 
 #### Q: Apakah mungkin untuk mencetak miring beberapa bagian teks dalam satu paragraf?
 

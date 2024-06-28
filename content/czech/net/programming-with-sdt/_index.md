@@ -11,7 +11,7 @@ Výukové programy Aspose.Words for .NET vám umožní prozkoumat funkce knihovn
 
 V těchto výukových programech se dozvíte, jak přidat a odebrat ovládací prvky SDT, jak je přizpůsobit konkrétním vlastnostem a jak přistupovat k jejich datům a upravovat je. Dozvíte se také, jak používat události související s ovládacími prvky SDT k provádění vlastních akcí při úpravách nebo ověřování dat.
 
-Ukázky kódu poskytnuté ve výukových programech vám pomohou porozumět konceptům a procvičit si funkčnost ovládacích prvků SDT ve vašich vlastních projektech. Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy vám pomohou zvládnout používání ovládacích prvků SDT v Aspose.Words pro .NET a zlepšit vaše dovednosti ve vývoji dokumentů Word.
+Ukázky kódu poskytnuté ve výukových programech vám pomohou pochopit koncepty a procvičit si funkčnost ovládacích prvků SDT ve vašich vlastních projektech. Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy vám pomohou zvládnout používání ovládacích prvků SDT v Aspose.Words pro .NET a zlepšit vaše dovednosti ve vývoji dokumentů Word.
 
  ## Tutoriály
 | Titul | Popis |

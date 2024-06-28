@@ -109,7 +109,7 @@ section.watermark = watermark
 watermark.transparency = 0.5  # Range: 0 (opaque) to 1 (fully transparent)
 ```
 
-## 保存带有水印的文档
+## 保存带水印的文档
 
 添加水印后，保存带有应用水印的文档：
 

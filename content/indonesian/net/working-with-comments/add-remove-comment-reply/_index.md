@@ -77,7 +77,7 @@ Balasan komentar memungkinkan diskusi kolaboratif dan umpan balik dalam dokumen.
 
 #### T: Bagaimana cara menghapus komentar di Aspose.Words untuk .NET?
 
- J: Untuk menghapus komentar di Aspose.Words untuk .NET, Anda dapat menggunakan`Comment.Remove` metode yang menentukan`Comment` objek yang ingin Anda hapus.
+J: Untuk menghapus komentar di Aspose.Words untuk .NET, Anda dapat menggunakan`Comment.Remove` metode yang menentukan`Comment` objek yang ingin Anda hapus.
 
 #### T: Dapatkah saya membalas komentar di Aspose.Words untuk .NET?
 
@@ -85,8 +85,8 @@ Balasan komentar memungkinkan diskusi kolaboratif dan umpan balik dalam dokumen.
 
 #### T: Bagaimana cara mengakses komentar yang ada di Aspose.Words untuk .NET?
 
- J: Anda dapat mengakses komentar yang ada di Aspose.Words untuk .NET menggunakan`CommentCollection` properti dari`Document`obyek. Ini akan memungkinkan Anda menelusuri semua komentar yang ada di dokumen.
+ J: Anda dapat mengakses komentar yang ada di Aspose.Words untuk .NET menggunakan`CommentCollection` properti dari`Document` obyek. Ini akan memungkinkan Anda menelusuri semua komentar yang ada di dokumen.
 
-#### T: Dapatkah saya mengedit teks komentar di Aspose.Words untuk .NET?
+#### T: Bisakah saya mengedit teks komentar di Aspose.Words untuk .NET?
 
  J: Ya, Anda dapat mengedit teks komentar di Aspose.Words untuk .NET dengan mengakses`Comment.Text` milik yang bersangkutan`Comment` objek dan memodifikasi teks sesuai kebutuhan.

@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Az Aspose.Words for Java segítségével a Java fejlesztők könnyedén egyesíthetik Word dokumentumokat. Az ebben a cikkben található, lépésenkénti útmutatót követve könnyedén egyesítheti a dokumentumokat, kezelheti a formázást, beszúrhat töréseket és kezelheti az ütközéseket. Az Aspose.Words for Java segítségével a dokumentumok egyesítése zökkenőmentes és automatizált folyamattá válik, értékes időt és erőfeszítést takarítva meg.
 
-## 11. GYIK 
+## 11.GYIK 
 
 ### Összevonhatok különböző formátumú és stílusú dokumentumokat?
 

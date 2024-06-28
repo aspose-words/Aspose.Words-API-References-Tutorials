@@ -18,7 +18,7 @@ url: /zh-hant/python-net/document-protection/document-security-python/
 
 ## 2.了解文件安全的重要性
 
-在當今互聯的世界中，資料外洩和網路攻擊的風險比以往任何時候都高。從個人文件到公司文件，任何未受保護的資料都可能落入壞人之手，從而導致嚴重後果。文件安全對於個人和組織來說至關重要，以防止資料外洩並保護敏感資訊免遭洩露。
+在當今互聯的世界中，資料外洩和網路攻擊的風險比以往任何時候都高。從個人文件到公司文件，任何未受保護的資料都可能落入壞人之手，從而導致嚴重後果。文件安全對於個人和類似組織防止資料外洩和保護敏感資訊免遭洩露至關重要。
 
 ## 3. Python 版 Aspose.Words 簡介
 
@@ -183,7 +183,7 @@ if __name__ == "__main__":
 
 是的，Aspose.Words 支援多種文件格式，包括 DOC、RTF、HTML、PDF 等。
 
-### 什麼是 Aspose.Words for Python？它與文件安全有何關係？
+### 什麼是 Aspose.Words for Python？
 
 Aspose.Words for Python 是一個功能強大的函式庫，可讓開發人員以程式設計方式處理 Microsoft Word 文件。它提供各種文件安全功能，例如加密、密碼保護和存取限制，有助於保護敏感文件免遭未經授權的存取。
 

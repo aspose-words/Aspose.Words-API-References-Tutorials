@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-comments/add-remove-comment-reply/
 ---
 
-V tomto komplexním tutoriálu se naučíte přidávat a odstraňovat odpovědi na komentáře v dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete moci spravovat odpovědi na komentáře a upravovat je podle svých požadavků.
+tomto komplexním tutoriálu se naučíte přidávat a odstraňovat odpovědi na komentáře v dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete moci spravovat odpovědi na komentáře a upravovat je podle svých požadavků.
 
 ## Předpoklady
 Než začneme, ujistěte se, že máte následující předpoklady:
@@ -77,7 +77,7 @@ Odpovědi na komentáře umožňují společné diskuse a zpětnou vazbu v rámc
 
 #### Otázka: Jak mohu odstranit komentář v Aspose.Words pro .NET?
 
- A: Chcete-li odstranit komentář v Aspose.Words pro .NET, můžete použít`Comment.Remove` způsob upřesňující`Comment` objekt, který chcete odstranit.
+A: Chcete-li odstranit komentář v Aspose.Words pro .NET, můžete použít`Comment.Remove` způsob upřesňující`Comment` objekt, který chcete odstranit.
 
 #### Otázka: Mohu odpovědět na komentář v Aspose.Words pro .NET?
 
@@ -85,7 +85,7 @@ Odpovědi na komentáře umožňují společné diskuse a zpětnou vazbu v rámc
 
 #### Otázka: Jak mohu získat přístup ke stávajícím komentářům v Aspose.Words for .NET?
 
- Odpověď: Ke stávajícím komentářům v Aspose.Words for .NET můžete přistupovat pomocí`CommentCollection` vlastnictvím`Document`objekt. To vám umožní procházet všechny komentáře v dokumentu.
+ Odpověď: Ke stávajícím komentářům v Aspose.Words pro .NET můžete přistupovat pomocí`CommentCollection` vlastnictvím`Document` objekt. To vám umožní procházet všechny komentáře v dokumentu.
 
 #### Otázka: Mohu upravit text komentáře v Aspose.Words pro .NET?
 

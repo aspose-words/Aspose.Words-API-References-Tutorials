@@ -46,7 +46,7 @@ Med denna kod kommer du att kunna klona Word-dokument med Aspose.Words för .NET
 
 ## Slutsats
 
-I den här handledningen undersökte vi hur man klona ett Word-dokument med hjälp av klonfunktionen i Aspose.Words för .NET. Genom att ladda ett befintligt dokument och skapa en klon kan du skapa en exakt kopia av dokumentet utan att ändra originalet. Denna funktion är värdefull när du behöver utföra oberoende operationer på ett dokument utan att påverka källfilen. Aspose.Words för .NET ger ett enkelt sätt att klona dokument, vilket gör det enkelt att arbeta med Word-dokument programmatiskt och hantera dokumentversioner effektivt.
+I den här handledningen undersökte vi hur man klona ett Word-dokument med hjälp av klonfunktionen i Aspose.Words för .NET. Genom att ladda ett befintligt dokument och skapa en klon kan du skapa en exakt kopia av dokumentet utan att ändra originalet. Den här funktionen är värdefull när du behöver utföra oberoende operationer på ett dokument utan att påverka källfilen. Aspose.Words för .NET ger ett enkelt sätt att klona dokument, vilket gör det enkelt att arbeta med Word-dokument programmatiskt och hantera dokumentversioner effektivt.
 
 ### Vanliga frågor för att klona ett word-dokument
 

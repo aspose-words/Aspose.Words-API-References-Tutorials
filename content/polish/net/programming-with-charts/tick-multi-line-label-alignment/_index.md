@@ -17,7 +17,7 @@ Upewnij się, że masz następujące wymagania wstępne:
 - Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
 - Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres
+## Krok 2: Utwórz nowy dokument i wstaw wykres.
 
  Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
 
@@ -73,7 +73,7 @@ To kończy implementację ustawiania wyrównania wielowierszowych etykiet przy u
 
 W tym samouczku nauczyłeś się, jak ustawić wyrównanie wieloliniowych etykiet znaczników na osi wykresu za pomocą Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz utworzyć nowy dokument, wstawić wykres punktowy, uzyskać dostęp do osi wykresu i zmodyfikować wyrównanie znaczników.
 
-Aspose.Words dla .NET zapewnia zaawansowane funkcje do manipulowania wykresami w dokumentach Word. Etykiety wielowierszowe zaznaczenia są przydatne, gdy etykiety osi zawierają długi tekst, który wymaga zawijania lub dzielenia na wiele wierszy. Ustawiając wyrównanie etykiet znaczników, możesz kontrolować poziome wyrównanie wieloliniowych etykiet na osi wykresu, zapewniając optymalną prezentację i czytelność.
+Aspose.Words dla .NET zapewnia zaawansowane funkcje do manipulowania wykresami w dokumentach Word. Etykiety wielowierszowe z zaznaczeniem są przydatne, gdy etykiety osi zawierają długi tekst, który wymaga zawijania lub dzielenia na wiele linii. Ustawiając wyrównanie etykiet znaczników, możesz kontrolować poziome wyrównanie wieloliniowych etykiet na osi wykresu, zapewniając optymalną prezentację i czytelność.
 
 Dostosowanie wyrównania wieloliniowych etykiet znaczników pozwala dostosować wygląd wykresu, szczególnie w przypadku długich lub złożonych etykiet. Wyrównując etykiety do prawej, lewej, do środka lub wyjustowane, można uzyskać zrównoważone i atrakcyjne wizualnie rozmieszczenie etykiet wzdłuż osi.
 
@@ -82,7 +82,7 @@ Dzięki Aspose.Words dla .NET możesz łatwo uzyskać dostęp i modyfikować wł
 ### Często zadawane pytania
 
 #### Pytanie 1. Co to są wieloliniowe etykiety znaczników na osi wykresu?
-Zaznaczenie etykiet wieloliniowych na osi wykresu odnosi się do etykiet osi rozciągających się na wiele linii, gdy tekst etykiety jest długi lub wymaga zawinięcia w celu zmieszczenia się w dostępnej przestrzeni. Zamiast obcinać tekst etykiety lub powodować bałagan wizualny, oś wykresu automatycznie dzieli etykiety na wiele linii, aby zapewnić czytelność. Etykiety wieloliniowe ze znacznikami są szczególnie przydatne w przypadku długich etykiet kategorii lub wartości na wykresach.
+Zaznaczenie etykiet wieloliniowych na osi wykresu odnosi się do etykiet osi rozciągających się na wiele linii, gdy tekst etykiety jest długi lub wymaga zawinięcia, aby zmieścił się w dostępnej przestrzeni. Zamiast obcinać tekst etykiety lub powodować bałagan wizualny, oś wykresu automatycznie dzieli etykiety na wiele linii, aby zapewnić czytelność. Etykiety wieloliniowe z zaznaczeniem są szczególnie przydatne w przypadku długich etykiet kategorii lub wartości na wykresach.
 
 #### Pytanie 2. Czy mogę dostosować wyrównanie etykiet znaczników na osi wykresu?
  Tak, możesz dostosować wyrównanie etykiet znaczników na osi wykresu za pomocą Aspose.Words dla .NET. Uzyskując dostęp do`TickLabelAlignment` własność`ChartAxis` obiektu, możesz ustawić żądane wyrównanie etykiet znaczników. Opcje wyrównania obejmują wyrównanie do lewej, prawej, do środka lub wyrównane. Regulacja wyrównania pozwala kontrolować poziome położenie znaczników wzdłuż osi wykresu, zapewniając odpowiednią czytelność i prezentację wizualną.

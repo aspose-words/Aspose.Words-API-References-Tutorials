@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/set-relative-horizontal-or-vertical-positio
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 

@@ -2,86 +2,122 @@
 title: प्रत्यय के बिना प्रतिस्थापन प्राप्त करें
 linktitle: प्रत्यय के बिना प्रतिस्थापन प्राप्त करें
 second_title: Aspose.Words दस्तावेज़ प्रोसेसिंग एपीआई
-description: इस ट्यूटोरियल में, सीखें कि .NET के लिए Aspose.Words के साथ किसी Word दस्तावेज़ में प्रत्यय रहित ओवरराइड कैसे प्राप्त करें।
+description: .NET के लिए Aspose.Words में प्रत्यय के बिना फ़ॉन्ट प्रतिस्थापन को प्रबंधित करना सीखें। यह सुनिश्चित करने के लिए कि आपके दस्तावेज़ हर बार सही दिखें, हमारी चरण-दर-चरण मार्गदर्शिका का पालन करें।
 type: docs
 weight: 10
 url: /hi/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-इस ट्यूटोरियल में, हम आपको दिखाने जा रहे हैं कि .NET के लिए Aspose.Words लाइब्रेरी का उपयोग करके किसी Word दस्तावेज़ में प्रत्यय के बिना ओवरराइड कैसे प्राप्त करें। दस्तावेज़ों को प्रदर्शित या मुद्रित करते समय फ़ॉन्ट प्रतिस्थापन समस्याओं को हल करने के लिए प्रत्यय के बिना प्रतिस्थापन का उपयोग किया जाता है। हम आपके .NET प्रोजेक्ट में कोड को समझने और लागू करने में आपकी सहायता के लिए चरण-दर-चरण कदम उठाएंगे।
+.NET के लिए Aspose.Words का उपयोग करके फ़ॉन्ट प्रतिस्थापन के प्रबंधन पर इस व्यापक मार्गदर्शिका में आपका स्वागत है। यदि आप कभी भी अपने दस्तावेज़ों में फ़ॉन्ट के सही ढंग से प्रदर्शित न होने से जूझ रहे हैं, तो आप सही जगह पर आए हैं। यह ट्यूटोरियल आपको प्रत्यय के बिना फ़ॉन्ट प्रतिस्थापन को कुशलतापूर्वक संभालने के लिए चरण-दर-चरण प्रक्रिया में ले जाएगा। आएँ शुरू करें!
 
 ## आवश्यक शर्तें
-शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित चीज़ें हैं:
-- C# प्रोग्रामिंग भाषा का कार्यसाधक ज्ञान
-- आपके प्रोजेक्ट में .NET के लिए Aspose.Words लाइब्रेरी स्थापित है
+
+ट्यूटोरियल में जाने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
+
+- C# का बुनियादी ज्ञान: C# प्रोग्रामिंग को समझने से चरणों का पालन करना और कार्यान्वित करना आसान हो जाएगा।
+-  .NET लाइब्रेरी के लिए Aspose.Words: लाइब्रेरी को डाउनलोड और इंस्टॉल करें[लिंक को डाउनलोड करें](https://releases.aspose.com/words/net/).
+- विकास परिवेश: अपना कोड लिखने और चलाने के लिए विज़ुअल स्टूडियो जैसा विकास परिवेश स्थापित करें।
+-  नमूना दस्तावेज़: एक नमूना दस्तावेज़ (जैसे,`Rendering.docx`) इस ट्यूटोरियल के दौरान काम करने के लिए।
+
+## नामस्थान आयात करें
+
+सबसे पहले, हमें Aspose.Words द्वारा प्रदान की गई कक्षाओं और विधियों तक पहुंचने के लिए आवश्यक नामस्थान आयात करने की आवश्यकता है।
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
+```
 
 ## चरण 1: दस्तावेज़ निर्देशिका को परिभाषित करें
- सबसे पहले, आपको अपने Word दस्तावेज़ के स्थान पर निर्देशिका पथ सेट करना होगा। प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` उचित पथ के साथ कोड में।
+
+आरंभ करने के लिए, वह निर्देशिका निर्दिष्ट करें जहां आपका दस्तावेज़ स्थित है। यह उस दस्तावेज़ को ढूंढने में मदद करता है जिस पर आप काम करना चाहते हैं।
 
 ```csharp
-// आपके दस्तावेज़ निर्देशिका का पथ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## चरण 2: दस्तावेज़ लोड करें और प्रत्यय के बिना प्रतिस्थापन कॉन्फ़िगर करें
- इसके बाद, हम इसका उपयोग करके दस्तावेज़ लोड करेंगे`Document` का उपयोग करके वर्ग बनाएं और प्रत्यय रहित प्रतिस्थापनों को कॉन्फ़िगर करें`DocumentSubstitutionWarnings` कक्षा। हम फ़ॉन्ट वाले फ़ोल्डर को निर्दिष्ट करके एक फ़ॉन्ट स्रोत भी जोड़ेंगे।
-
-```csharp
-// दस्तावेज़ लोड करें और प्रत्ययों के बिना प्रतिस्थापन कॉन्फ़िगर करें
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## चरण 3: दस्तावेज़ सहेजें
-अंत में, हम दस्तावेज़ को नो-प्रत्यय ओवरराइड लागू करके सहेजेंगे।
-
-```csharp
-// दस्तावेज़ सहेजें
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### .NET के लिए Aspose.Words का उपयोग करके प्रत्यय के बिना प्रतिस्थापन प्राप्त करने के लिए नमूना स्रोत कोड 
-```csharp
-
 // आपकी दस्तावेज़ निर्देशिका का पथ
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## चरण 2: प्रतिस्थापन चेतावनी हैंडलर सेट करें
+
+इसके बाद, हमें एक चेतावनी हैंडलर स्थापित करने की आवश्यकता है जो दस्तावेज़ प्रसंस्करण के दौरान फ़ॉन्ट प्रतिस्थापन होने पर हमें सूचित करेगा। यह किसी भी फ़ॉन्ट समस्या को पकड़ने और संभालने के लिए महत्वपूर्ण है।
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## चरण 3: कस्टम फ़ॉन्ट स्रोत जोड़ें
+
+इस चरण में, हम यह सुनिश्चित करने के लिए कस्टम फ़ॉन्ट स्रोत जोड़ेंगे कि Aspose.Words सही फ़ॉन्ट का पता लगा सके और उसका उपयोग कर सके। यह विशेष रूप से उपयोगी है यदि आपके पास कस्टम निर्देशिकाओं में विशिष्ट फ़ॉन्ट संग्रहीत हैं।
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+इस कोड में:
+-  हम वर्तमान फ़ॉन्ट स्रोतों को पुनः प्राप्त करते हैं और एक नया जोड़ते हैं`FolderFontSource` हमारी कस्टम फ़ॉन्ट निर्देशिका की ओर इशारा करते हुए (`C:\\MyFonts\\`).
+- फिर हम इस नई सूची के साथ फ़ॉन्ट स्रोतों को अपडेट करते हैं।
+
+## चरण 4: दस्तावेज़ सहेजें
+
+अंत में, फ़ॉन्ट प्रतिस्थापन सेटिंग्स लागू करने के बाद दस्तावेज़ को सहेजें। इस ट्यूटोरियल के लिए, हम इसे पीडीएफ के रूप में सहेजेंगे।
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## चरण 5: चेतावनी हैंडलर क्लास बनाएं
+
+चेतावनियों को प्रभावी ढंग से संभालने के लिए, एक कस्टम क्लास बनाएं जो इसे लागू करे`IWarningCallback` इंटरफेस। यह वर्ग किसी भी फ़ॉन्ट प्रतिस्थापन चेतावनियों को कैप्चर और लॉग करेगा।
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+इस वर्ग में:
+- `Warning` विधि फ़ॉन्ट प्रतिस्थापन से संबंधित चेतावनियों को पकड़ती है।
+- `FontWarnings` संग्रह इन चेतावनियों को आगे के निरीक्षण या लॉगिंग के लिए संग्रहीत करता है।
+
 ## निष्कर्ष
-इस ट्यूटोरियल में, हमने देखा कि .NET के लिए Aspose.Words के साथ किसी Word दस्तावेज़ में प्रत्यय के बिना ओवरराइड कैसे प्राप्त करें। फ़ॉन्ट प्रतिस्थापन समस्याओं को हल करने के लिए प्रत्यय के बिना प्रतिस्थापन उपयोगी होते हैं। अपने दस्तावेज़ों के प्रदर्शन और मुद्रण को बेहतर बनाने के लिए बेझिझक इस सुविधा का उपयोग करें।
 
-### अक्सर पूछे जाने वाले प्रश्न
+अब आप .NET के लिए Aspose.Words का उपयोग करके प्रत्यय के बिना फ़ॉन्ट प्रतिस्थापन को संभालने की प्रक्रिया में महारत हासिल कर चुके हैं। यह ज्ञान यह सुनिश्चित करेगा कि आपके दस्तावेज़ सिस्टम पर उपलब्ध फ़ॉन्ट की परवाह किए बिना अपना इच्छित स्वरूप बनाए रखें। Aspose.Words की शक्ति का पूर्ण उपयोग करने के लिए विभिन्न सेटिंग्स और स्रोतों के साथ प्रयोग करते रहें।
 
-#### प्रश्न: Aspose.Words फ़ॉन्ट प्रतिस्थापन में प्रत्यय क्यों जोड़ता है?
+## पूछे जाने वाले प्रश्न
 
-उत्तर: Aspose.Words मूल फ़ॉन्ट और प्रतिस्थापित फ़ॉन्ट के बीच टकराव से बचने के लिए फ़ॉन्ट प्रतिस्थापन में प्रत्यय जोड़ता है। यह दस्तावेज़ों को परिवर्तित और हेरफेर करते समय अधिकतम अनुकूलता सुनिश्चित करने में मदद करता है।
+### Q1: मैं एकाधिक कस्टम निर्देशिकाओं से फ़ॉन्ट का उपयोग कैसे कर सकता हूं?
 
-#### प्रश्न: मैं Aspose.Words में प्रत्यय के बिना फ़ॉन्ट प्रतिस्थापन कैसे प्राप्त कर सकता हूं?
+ आप एकाधिक जोड़ सकते हैं`FolderFontSource` के उदाहरण`fontSources` तदनुसार फ़ॉन्ट स्रोतों को सूचीबद्ध करें और अद्यतन करें।
 
- उ: Aspose.Words में प्रत्यय के बिना फ़ॉन्ट प्रतिस्थापन को पुनः प्राप्त करने के लिए, आप इसका उपयोग कर सकते हैं`FontSubstitutionSettings` कक्षा और`RemoveSuffixes` संपत्ति। इस प्रॉपर्टी को यहां सेट कर रहा हूं`true` अतिरिक्त प्रत्यय के बिना फ़ॉन्ट प्रतिस्थापन मिलेगा।
+### Q2: मैं .NET के लिए Aspose.Words का निःशुल्क परीक्षण कहां से डाउनलोड कर सकता हूं?
 
-#### प्रश्न: क्या Aspose.Words में फ़ॉन्ट प्रतिस्थापन में प्रत्यय जोड़ना अक्षम करना संभव है?
+ आप यहां से नि:शुल्क परीक्षण डाउनलोड कर सकते हैं[निःशुल्क परीक्षण पृष्ठ का अनुमान लगाएं](https://releases.aspose.com/).
 
-उत्तर: नहीं, Aspose.Words में फ़ॉन्ट प्रतिस्थापन में प्रत्यय जोड़ना अक्षम करना संभव नहीं है। दस्तावेज़ अनुकूलता और एकरूपता सुनिश्चित करने के लिए प्रत्यय डिफ़ॉल्ट रूप से जोड़े जाते हैं।
+###  Q3: क्या मैं कई प्रकार की चेतावनियों का उपयोग करके संभाल सकता हूँ?`IWarningCallback`?
 
-#### प्रश्न: मैं Aspose.Words में फ़ॉन्ट प्रतिस्थापनों में अवांछित प्रत्ययों को कैसे फ़िल्टर कर सकता हूँ?
+ हां`IWarningCallback` इंटरफ़ेस आपको केवल फ़ॉन्ट प्रतिस्थापन ही नहीं, बल्कि विभिन्न प्रकार की चेतावनियों को संभालने की अनुमति देता है।
 
- उत्तर: Aspose.Words में फ़ॉन्ट प्रतिस्थापनों में अवांछित प्रत्ययों को फ़िल्टर करने के लिए, आप स्ट्रिंग प्रोसेसिंग तकनीकों का उपयोग कर सकते हैं, जैसे कि`Replace` या`Substring` उन विशिष्ट प्रत्ययों को हटाने की विधियाँ जिन्हें आप शामिल नहीं करना चाहते हैं।
+### Q4: मुझे Aspose.Words के लिए समर्थन कहां से मिल सकता है?
+
+ समर्थन के लिए, पर जाएँ[Aspose.Words समर्थन फ़ोरम](https://forum.aspose.com/c/words/8).
+
+### Q5: क्या अस्थायी लाइसेंस खरीदना संभव है?
+
+ हां, आप यहां से अस्थायी लाइसेंस प्राप्त कर सकते हैं[अस्थायी लाइसेंस पृष्ठ](https://purchase.aspose.com/temporary-license/).

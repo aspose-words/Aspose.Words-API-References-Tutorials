@@ -88,7 +88,7 @@ doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelet
 
 #### S: Aspose.Words for .NET ile bir belge PDF formatında nasıl kaydedilir?
 
- C: Kullan`Save` yöntemi`Document` Belgeyi PDF formatında kaydetmek için nesne. Tam hedef yolu ".pdf" uzantısıyla belirtmeniz gerekir.
+ C: Kullan`Save` yöntemi`Document` Belgeyi PDF formatında kaydetmek için nesne. Tam hedef yolunu ".pdf" uzantısıyla belirtmeniz gerekir.
 
 ```csharp
 doc.Save("path/to/destination/document.pdf");

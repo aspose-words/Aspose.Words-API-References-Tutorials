@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## Stap 2: Voeg aangepaste eigenschappen toe
- Voeg vervolgens de gewenste aangepaste eigenschappen toe. Als u bijvoorbeeld een eigenschap "Bedrijf" met de waarde "Aspose" wilt toevoegen, gebruikt u de`Add` methode van de CustomDocumentProperties-verzameling:
+ Voeg vervolgens de gewenste aangepaste eigenschappen toe. Als u bijvoorbeeld een eigenschap "Bedrijf" met de waarde "Apose" wilt toevoegen, gebruikt u de`Add` methode van de CustomDocumentProperties-verzameling:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ A: Volg deze stappen om de aangepaste eigenschappen van een document naar een PD
 
  Maak een exemplaar van de`Document` klas.
 
- Voeg de gewenste aangepaste eigenschappen toe met behulp van de`CustomDocumentProperties` verzameling. Gebruik bijvoorbeeld de`Add` methode om een eigenschap "Bedrijf" toe te voegen met de waarde "Aspose".
+ Voeg de gewenste aangepaste eigenschappen toe met behulp van de`CustomDocumentProperties` verzameling. Gebruik bijvoorbeeld de`Add` methode om een eigenschap "Bedrijf" toe te voegen met de waarde "Apose".
 
  Maak een exemplaar van de`PdfSaveOptions` class en geef op hoe aangepaste eigenschappen moeten worden geëxporteerd met behulp van de`CustomPropertiesExport` eigendom. De`PdfCustomPropertiesExport.Standard` waarde exporteert aangepaste eigenschappen volgens de standaardinstellingen.
 

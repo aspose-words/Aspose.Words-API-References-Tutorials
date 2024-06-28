@@ -321,7 +321,7 @@ Tabulky představují účinný způsob, jak organizovat a prezentovat data ve v
 // Vytvořte nový dokument
 Document doc = new Document();
 
-// Vytvořte tabulku se 3 řádky a 3 sloupci
+// Vytvořte tabulku se 3 řádky a 3 sloupci.
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

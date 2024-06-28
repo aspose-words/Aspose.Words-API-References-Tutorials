@@ -15,14 +15,14 @@ Antes de começar, certifique-se de ter os seguintes itens:
 - A biblioteca Aspose.Words para .NET instalada em seu projeto
 
 ## Passo 1: Defina o diretório do documento
- Comece definindo o caminho do diretório para o local do seu documento do Word. Substituir`"YOUR DOCUMENT DIRECTORY"` no código com o caminho apropriado.
+Comece definindo o caminho do diretório para o local do seu documento do Word. Substituir`"YOUR DOCUMENT DIRECTORY"` no código com o caminho apropriado.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passo 2: Crie e formate o documento
- Crie uma instância do`Document` classe e o`DocumentBuilder` classe para construir o documento. Use o`Font` propriedade do`DocumentBuilder` para acessar as propriedades de formatação da fonte.
+ Crie uma instância do`Document` classe e o`DocumentBuilder`classe para construir o documento. Use o`Font` propriedade do`DocumentBuilder` para acessar as propriedades de formatação da fonte.
 
 ```csharp
 Document doc = new Document();

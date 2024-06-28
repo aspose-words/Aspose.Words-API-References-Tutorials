@@ -25,7 +25,7 @@ Bunlar bazı yararlı kaynaklara bağlantılar:
 - [Listeyle Çalışmak](./net/working-with-list/)   
 - [Markdown'la çalışmak](./net/working-with-markdown/)   
 - [Düğümle Çalışmak](./net/working-with-node/)   
-- [Düzeltmelerle Çalışmak](./net/working-with-revisions/)   
+- [İncelemelerle Çalışmak](./net/working-with-revisions/)   
 - [Metin Kutularıyla Çalışmak](./net/working-with-textboxes/)   
 - [Belgeyi Böl](./net/split-document/)   
 - [Documentbuilder'ı Kullanarak İçerik Ekleme](./net/add-content-using-documentbuilder/)

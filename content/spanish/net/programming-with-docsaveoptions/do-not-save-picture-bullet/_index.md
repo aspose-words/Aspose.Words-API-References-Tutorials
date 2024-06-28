@@ -2,13 +2,13 @@
 title: No guardar viñeta de imagen
 linktitle: No guardar viñeta de imagen
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a deshabilitar el guardado de viñetas de imágenes en documentos de Word usando Aspose.Words para .NET.
+description: Aprenda cómo deshabilitar el guardado de viñetas de imágenes en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 
-Las viñetas de imagen son una característica de uso común en los documentos de Word para agregar viñetas personalizadas. Sin embargo, en algunos casos puede ser necesario desactivar el registro de viñetas de imágenes al manipular documentos utilizando la biblioteca Aspose.Words para .NET. En esta guía paso a paso, explicaremos cómo usar el código fuente de Aspose.Words C# para .NET para deshabilitar el guardado de viñetas de imágenes usando las opciones de guardado de DocSaveOptions.
+Las viñetas de imagen son una característica de uso común en los documentos de Word para agregar viñetas personalizadas. Sin embargo, en algunos casos puede ser necesario desactivar el registro de viñetas de imágenes al manipular documentos utilizando la biblioteca Aspose.Words para .NET. En esta guía paso a paso, explicaremos cómo usar el código fuente C# de Aspose.Words para .NET para deshabilitar el guardado de viñetas de imágenes usando las opciones de guardado de DocSaveOptions.
 
 ## Comprender la biblioteca Aspose.Words
 

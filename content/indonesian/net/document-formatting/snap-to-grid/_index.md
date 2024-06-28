@@ -80,7 +80,7 @@ Dalam tutorial ini, kami menjelajahi proses penggunaan fitur Snap to Grid di dok
 
 #### T: Apa itu Snap to Grid di dokumen Word?
 
-J: Snap to Grid adalah fitur di dokumen Word yang menyelaraskan objek, seperti teks dan gambar, ke sistem grid. Hal ini memastikan posisi yang tepat dan keselarasan yang rapi, terutama berguna ketika berhadapan dengan tata letak yang rumit atau karakter Asia.
+J: Snap to Grid adalah fitur di dokumen Word yang menyelaraskan objek, seperti teks dan gambar, ke sistem grid. Hal ini memastikan posisi yang tepat dan kesejajaran yang rapi, terutama berguna ketika berhadapan dengan tata letak yang rumit atau karakter Asia.
 
 #### T: Bagaimana cara Snap to Grid meningkatkan tampilan dokumen?
 

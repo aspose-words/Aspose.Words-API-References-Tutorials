@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/programming-with-charts/insert-bubble-chart/
 ---
 
-In deze zelfstudie wordt uitgelegd hoe u Aspose.Words voor .NET gebruikt om een bellendiagram in een document in te voegen. De meegeleverde broncode laat zien hoe u een diagram maakt, reeksgegevens toevoegt en het document opslaat.
+In deze zelfstudie wordt uitgelegd hoe u Aspose.Words voor .NET gebruikt om een bellendiagram in een document in te voegen. De meegeleverde broncode laat zien hoe u een diagram maakt, seriegegevens toevoegt en het document opslaat.
 
 ## Stap 1: Zet het project op
 
@@ -17,7 +17,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 - Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
 - Een documentmappad waar het uitvoerdocument wordt opgeslagen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Stap 2: Maak een nieuw document en voeg een diagram in.
 
  Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
 

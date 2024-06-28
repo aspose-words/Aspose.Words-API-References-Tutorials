@@ -1,6 +1,6 @@
 ---
-title: Acceptera revisioner
-linktitle: Acceptera revisioner
+title: Acceptera recensioner
+linktitle: Acceptera recensioner
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du accepterar ändringar av ett Word-dokument med Aspose.Words för .NET
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Raderingsrevisionsparagrafen tas bort när vi accepterar ändringar.
+// Det raderade revisionsstycket tas bort när vi accepterar ändringar.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

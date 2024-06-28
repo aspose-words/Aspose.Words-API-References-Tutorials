@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Étape 2 : Charger les documents source et de destination
 
- Ensuite, vous devez charger les documents source et de destination à l'aide du Aspose.Words`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
+Ensuite, vous devez charger les documents source et de destination à l'aide de Aspose.Words.`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Étape 4 : définissez le formatage du paragraphe « Conserver avec le suivant » pour le document source
 
-Pour conserver les paragraphes du document source ensemble, vous pouvez parcourir chaque paragraphe du document et définir le`KeepWithNext`propriété à`true`.
+ Pour conserver les paragraphes du document source ensemble, vous pouvez parcourir chaque paragraphe du document et définir le`KeepWithNext`propriété à`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

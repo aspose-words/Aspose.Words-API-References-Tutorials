@@ -158,7 +158,7 @@ Bei den Bereinigungsoptionen in Aspose.Words für Java handelt es sich um Einste
 
 ###  Was passiert, wenn ich das einstelle?`REMOVE_CONTAINING_FIELDS` option?
 
- Einstellen der`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` Mit dieser Option wird während des Seriendruckvorgangs das gesamte Serienbrieffeld, einschließlich des enthaltenden Absatzes, aus dem Dokument entfernt. Dies ist nützlich, wenn Sie Briefvorlagenfelder und den zugehörigen Text entfernen möchten.
+ Einstellen der`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` Mit dieser Option wird während des Serienbriefvorgangs das gesamte Serienbrieffeld, einschließlich des enthaltenden Absatzes, aus dem Dokument entfernt. Dies ist nützlich, wenn Sie Briefvorlagenfelder und den zugehörigen Text entfernen möchten.
 
 ### Wie kann ich nicht verwendete Zusammenführungsfelder aus meinem Dokument entfernen?
 

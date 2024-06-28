@@ -14,7 +14,7 @@ url: /zh/net/programming-with-tables/clone-complete-table/
 1. 启动 Visual Studio 并创建一个新的 C# 项目。
 2. 添加对 Aspose.Words for .NET 库的引用。
 
-## 第 2 步：加载文档并访问表
+## 第 2 步：加载文档并访问表格
 要对表启动文字处理，我们需要加载包含该表的文档并访问它。按着这些次序：
 
 ```csharp

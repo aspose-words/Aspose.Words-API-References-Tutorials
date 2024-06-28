@@ -17,7 +17,7 @@ url: /zh/net/programming-with-charts/define-xyaxis-properties/
 - 已安装 Aspose.Words for .NET 库。您可以使用 NuGet 包管理器下载并安装它。
 - 将保存输出文档的文档目录路径。
 
-## 步骤 2：创建一个新文档并插入图表
+## 步骤2：创建一个新文档并插入图表。
 
 创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
@@ -51,7 +51,7 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 640, 320, 280, 120, 150 });
 ```
 
-## 第 4 步：自定义 X 和 Y 轴属性
+## 步骤 4：自定义 X 和 Y 轴属性
 
 要自定义 X 轴和 Y 轴的属性，请访问`ChartAxis`与图表关联的对象。
 
@@ -141,7 +141,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 Aspose.Words for .NET 是一个功能强大的文档处理库，使开发人员能够在 .NET 应用程序中以编程方式创建、操作和保存 Word 文档。它为文档元素（包括图表）的文字处理提供了广泛的功能。
 
 #### Q2。如何安装 Aspose.Words for .NET？
-您可以使用 Visual Studio 中的 NuGet 包管理器下载 Aspose.Words for .NET 来安装它。只需在 NuGet 包管理器中搜索“Aspose.Words”并将其安装到您的项目中即可。
+您可以使用 Visual Studio 中的 NuGet 包管理器下载 Aspose.Words for .NET 来安装它。只需在 NuGet 包管理器中搜索“Apose.Words”并将其安装到您的项目中即可。
 
 #### Q3。我可以使用 Aspose.Words for .NET 自定义图表的其他方面吗？
 是的，Aspose.Words for .NET 提供了广泛的功能来自定义图表的各个方面。除了定义轴属性之外，您还可以修改图表类型、数据系列、图例、标题、绘图区域、数据标签和图表的许多其他元素。该 API 提供对图表外观和行为的细粒度控制。

@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## चरण 4: दस्तावेज़बिल्डर को स्थिति दें
 
- चलाएं`DocumentBuilder` का उपयोग करके दस्तावेज़ के अंत तक`MoveToDocumentEnd` तरीका। मौजूदा सामग्री को सम्मिलित दस्तावेज़ से अलग करने के लिए एक पृष्ठ विराम डालें।
+चलाएं`DocumentBuilder` का उपयोग करके दस्तावेज़ के अंत तक`MoveToDocumentEnd` तरीका। मौजूदा सामग्री को सम्मिलित दस्तावेज़ से अलग करने के लिए एक पृष्ठ विराम डालें।
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## चरण 6: संशोधित दस्तावेज़ सहेजें
 
- अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
+अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

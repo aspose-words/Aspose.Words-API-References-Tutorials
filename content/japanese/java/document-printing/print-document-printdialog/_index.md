@@ -42,7 +42,7 @@ import java.awt.print.PrinterJob;
 
 public class PrintDocumentWithDialog {
     public static void main(String[] args) throws Exception {
-        //ドキュメントをロードします
+        //ドキュメントをロードする
         Document doc = new Document("sample.docx");
 
         //プリンター設定の初期化

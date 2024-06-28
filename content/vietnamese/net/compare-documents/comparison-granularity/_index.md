@@ -80,7 +80,7 @@ builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOpti
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã khám phá tính năng So sánh chi tiết của Aspose.Words cho .NET. Tính năng này cho phép bạn chỉ định mức độ chi tiết khi so sánh tài liệu. Bằng cách chọn các mức độ chi tiết khác nhau, bạn có thể thực hiện so sánh chi tiết ở cấp độ ký tự, từ hoặc khối, tùy thuộc vào yêu cầu cụ thể của bạn. Aspose.Words for .NET cung cấp khả năng so sánh tài liệu linh hoạt và mạnh mẽ, giúp dễ dàng xác định sự khác biệt trong các tài liệu với mức độ chi tiết khác nhau.
+Trong hướng dẫn này, chúng tôi đã khám phá tính năng So sánh chi tiết của Aspose.Words cho .NET. Tính năng này cho phép bạn chỉ định mức độ chi tiết khi so sánh tài liệu. Bằng cách chọn các mức độ chi tiết khác nhau, bạn có thể thực hiện so sánh chi tiết ở cấp độ ký tự, từ hoặc khối, tùy thuộc vào yêu cầu cụ thể của bạn. Aspose.Words for .NET cung cấp khả năng so sánh tài liệu linh hoạt và mạnh mẽ, giúp dễ dàng xác định sự khác biệt trong tài liệu với mức độ chi tiết khác nhau.
 
 ### Câu hỏi thường gặp
 

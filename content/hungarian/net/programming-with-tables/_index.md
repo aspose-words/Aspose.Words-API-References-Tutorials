@@ -19,7 +19,7 @@ Ezen oktatóanyagok követésével teljes mértékben kihasználhatja az Aspose.
 | [A táblázat automatikus igazítása a tartalomhoz](./auto-fit-table-to-contents/) | Ismerje meg, hogyan illeszthet automatikusan egy táblázatot a tartalmához egy Word-dokumentumban az Aspose.Words for .NET használatával. |
 | [Teljes táblázat klónozása](./clone-complete-table/) | Ismerje meg, hogyan klónozhat egy teljes táblázatot Word-dokumentumba az Aspose.Words for .NET segítségével. |
 | [Index keresése](./finding-index/) | Ismerje meg, hogyan találhat táblázat-, sor- és cellaindexeket egy Word-dokumentumban az Aspose.Words for .NET segítségével. |
-| [Táblázat beszúrása közvetlenül](./insert-table-directly/) | Ismerje meg, hogyan illeszthet be táblázatot közvetlenül egy Word-dokumentumba az Aspose.Words for .NET segítségével. |
+| [Táblázat beszúrása közvetlenül](./insert-table-directly/) | Ismerje meg, hogyan illeszthet be táblázatokat közvetlenül a Word dokumentumokba az Aspose.Words for .NET használatával. Kövesse részletes, lépésenkénti útmutatónkat a dokumentumkészítés egyszerűsítéséhez. |
 | [Táblázat beszúrása HTML-ből](./insert-table-from-html/) | Ismerje meg, hogyan szúrhat be táblázatot HTML-kódból Word-dokumentumba az Aspose.Words for .NET segítségével. |
 | [Egyszerű táblázat létrehozása](./create-simple-table/) | Ismerje meg, hogyan hozhat létre egyszerű táblázatot Word-dokumentumban az Aspose.Words for .NET segítségével. |
 | [Formázott táblázat](./formatted-table/) | Ismerje meg, hogyan hozhat létre formázott táblázatot Word-dokumentumban az Aspose.Words for .NET segítségével. |

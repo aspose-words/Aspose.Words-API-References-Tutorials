@@ -1,8 +1,8 @@
 ---
 title: Verwendung von Office Math für fortgeschrittene mathematische Ausdrücke
 linktitle: Verwendung von Office Math für fortgeschrittene mathematische Ausdrücke
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
-description: Erfahren Sie, wie Sie Office Math mit Aspose.Words für Python für erweiterte mathematische Ausdrücke nutzen können. Schritt für Schritt Gleichungen erstellen, formatieren und einfügen.
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
+description: Erfahren Sie, wie Sie Office Math mit Aspose.Words für Python für erweiterte mathematische Ausdrücke nutzen können. Erstellen, formatieren und fügen Sie Gleichungen Schritt für Schritt ein.
 type: docs
 weight: 12
 url: /de/python-net/data-visualization-and-formatting/office-math-documents/

@@ -8,7 +8,7 @@ weight: 19
 url: /tr/java/document-revision/
 ---
 
-Belge revizyonu, sözcük işlem ve belge işlemenin çok önemli bir yönüdür ve belgelerin kapsamlı incelemelerden ve güncellemelerden geçmesini sağlar. Aspose.Words for Java, belge revizyonu konusunda kapsamlı eğitimler sunarak geliştiricilerin revizyonları verimli bir şekilde yönetmesine ve sürüm kontrolünü sürdürmesine olanak tanır.
+Belge revizyonu, sözcük işlem ve belge işlemenin çok önemli bir yönüdür ve belgelerin kapsamlı incelemelerden ve güncellemelerden geçmesini sağlar. Aspose.Words for Java, belge revizyonuyla ilgili kapsamlı eğitimler sunarak geliştiricilerin revizyonları verimli bir şekilde yönetmesine ve sürüm kontrolünü sürdürmesine olanak tanır.
 
 ## Aspose.Words ile Revizyonları Takip Etme
 

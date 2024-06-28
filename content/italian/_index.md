@@ -25,7 +25,7 @@ Questi sono i link ad alcune risorse utili:
 - [Lavorare con la lista](./net/working-with-list/)   
 - [Lavorare con Markdown](./net/working-with-markdown/)   
 - [Lavorare con Node](./net/working-with-node/)   
-- [Lavorare con le revisioni](./net/working-with-revisions/)   
+- [Lavorare con le recensioni](./net/working-with-revisions/)   
 - [Lavorare con le caselle di testo](./net/working-with-textboxes/)   
 - [Documento diviso](./net/split-document/)   
 - [Aggiungi contenuto utilizzando Documentbuilder](./net/add-content-using-documentbuilder/)

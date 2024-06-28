@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Etapa 3: construir a mesa
- Use o`StartTable`, `EndTable`, `InsertCell` , e`Write` métodos do`DocumentBuilder` objeto para construir uma mesa. Defina a altura da linha desejada e a regra de altura usando o`RowFormat` propriedades.
+ Use o`StartTable`, `EndTable`, `InsertCell` , e`Write` métodos do`DocumentBuilder`objeto para construir uma mesa. Defina a altura da linha desejada e a regra de altura usando o`RowFormat` propriedades.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Etapa 6: insira a forma no documento
-Insira o formato da marca d'água no documento usando o`InsertNode` método do`DocumentBuilder` objeto. Posicione a forma usando o`MoveTo` método para colocá-lo após a última execução no documento.
+ Insira o formato da marca d'água no documento usando o`InsertNode` método do`DocumentBuilder` objeto. Posicione a forma usando o`MoveTo` método para colocá-lo após a última execução no documento.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

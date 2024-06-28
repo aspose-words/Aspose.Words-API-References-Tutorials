@@ -2,110 +2,113 @@
 title: Word Belgelerini Birleştir
 linktitle: Belgeleri Birleştir
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak birden fazla Word belgesini nasıl birleştireceğinizi öğrenin. Bu güçlü API, belgeleri birleştirme sürecini basitleştirerek verimli ve basit hale getirir.
+description: Bu kapsamlı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerini nasıl birleştireceğinizi öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/split-document/merge-documents/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET'in Belgeleri Birleştir özelliğini kullanarak birden fazla Word belgesini nasıl birleştireceğinizi anlatacağız. Kaynak kodunu anlamak ve tüm kaynak belgeleri içeren birleştirilmiş bir belge elde etmek için aşağıdaki adımları izleyin.
+Selam! Hiç birden fazla Word belgesini tek bir dosyada birleştirme ihtiyacı duyduğunuzu fark ettiniz mi? İster rapor derliyor olun, ister bir projeyi bir araya getiriyor olun, ister sadece toparlamaya çalışıyor olun, belgeleri birleştirmek size tonlarca zaman ve emek tasarrufu sağlayabilir. Aspose.Words for .NET ile bu süreç çocuk oyuncağı haline geliyor. Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerini nasıl birleştireceğinizi, her adımı parçalara ayırarak, kolayca takip edebilmenizi anlatacağız. Sonunda belgeleri bir profesyonel gibi birleştireceksiniz!
 
-## 1. Adım: Birleştirilecek belgeleri arayın
+## Önkoşullar
 
-Belgeleri birleştirmeden önce birleştirilecek kaynak belgeleri bulmamız gerekiyor. İşte nasıl:
+Konuya dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1. Temel C# Bilgisi: C# sözdizimi ve kavramları konusunda rahat olmalısınız.
+2.  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/) . Sadece keşfediyorsanız, bir tane ile başlayabilirsiniz.[ücretsiz deneme](https://releases.aspose.com/).
+3. Visual Studio: Güncel sürümlerden herhangi biri çalışmalıdır ancak en son sürüm önerilir.
+4. .NET Framework: Sisteminizde kurulu olduğundan emin olun.
+
+Pekala, artık önkoşulları sıraladığımıza göre işin eğlenceli kısmına geçelim!
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle Aspose.Words ile çalışmak için gerekli ad alanlarını içe aktarmamız gerekiyor. Bu, ihtiyacımız olan tüm sınıflara ve yöntemlere erişmemizi sağlar.
 
 ```csharp
-// Belgeler dizininin yolu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// Birleştirilecek belgeleri arayın.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-.GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.LowCode;
 ```
 
-## 2. Adım: Belgeleri birleştirin
+Bu ad alanları, belgenin oluşturulması, işlenmesi ve farklı formatlarda kaydedilmesi için gereklidir.
 
-Şimdi nihai birleştirilmiş belge oluşturmak için belgeleri tek tek birleştireceğiz. İşte nasıl:
+## Adım 1: Belge Dizinini Ayarlama
 
-```csharp
-// Ortaya çıkan belgenin ilk bölümünü açın.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// Ortaya çıkan yeni bir belge oluşturun.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// Belgeleri tek tek birleştirin.
-foreach(FileSystemInfo documentPath in documentPaths)
-{
-if (documentPath.FullName == sourceDocumentPath)
-keep on going;
-
-mergedDocBuilder.MoveToDocumentEnd();
-mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-```
-
-### Aspose.Words for .NET kullanarak Belgeleri Birleştirme için örnek kaynak kodu
-
-Aspose.Words for .NET'in Belgeleri Birleştir özelliğinin tam kaynak kodu:
+Belgeleri birleştirmeye başlamadan önce belgelerimizin saklandığı dizini belirtmemiz gerekiyor. Bu, Aspose.Words'ün birleştirmek istediğimiz dosyaları bulmasına yardımcı olur.
 
 ```csharp
-// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Birleştirme için kullanarak belgeleri bulun.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
-
-// Ortaya çıkan belgenin ilk bölümünü açın.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// Ortaya çıkan yeni bir belge oluşturun.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// Belge parçalarını tek tek birleştirin.
-foreach (FileSystemInfo documentPath in documentPaths)
-{
-	if (documentPath.FullName == sourceDocumentPath)
-		continue;
-
-	mergedDocBuilder.MoveToDocumentEnd();
-	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-	sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
+
+ Burada Word belgelerinizin bulunduğu dizinin yolunu belirliyoruz. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` gerçek yol ile.
+
+## Adım 2: Basit Birleştirme
+
+ Basit bir birleştirmeyle başlayalım. Aşağıdakileri kullanarak iki belgeyi tek bir belgede birleştireceğiz:`Merger.Merge` yöntem.
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
+```
+
+ Bu adımda birleştiriyoruz`Document1.docx` Ve`Document2.docx` adlı yeni bir dosyaya`MergedDocument.docx`.
+
+## 3. Adım: Kaydetme Seçenekleri ile Birleştirme
+
+Bazen birleştirilmiş belge için parola koruması gibi belirli seçenekler ayarlamak isteyebilirsiniz. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+
+```csharp
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" };
+Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
+```
+
+Bu kod parçacığı, belgeleri şifre korumasıyla birleştirerek nihai belgenin güvenli olmasını sağlar.
+
+## Adım 4: Birleştirme ve PDF Olarak Kaydetme
+
+Belgeleri birleştirmeniz ve sonucu PDF olarak kaydetmeniz gerekiyorsa Aspose.Words bunu kolaylaştırır:
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
+```
+
+ Burada birleşiyoruz`Document1.docx` Ve`Document2.docx` ve sonucu PDF dosyası olarak kaydedin.
+
+## Adım 5: Birleştirilmiş Belgelerden Belge Örneği Oluşturma
+
+Bazen, birleştirilmiş belgeyi kaydetmeden önce üzerinde daha fazla çalışmak isteyebilirsiniz. Bir oluşturabilirsiniz`Document` birleştirilmiş belgelerden örnek:
+
+```csharp
+Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
+doc.Save(dataDir + "MergedDocumentInstance.docx");
+```
+
+ Bu adımda bir oluşturuyoruz.`Document` örneğin birleştirilmiş belgelerden kaydedilerek, kaydetmeden önce daha fazla manipülasyon yapılmasına olanak sağlanır.
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for .NET'in Belgeleri Birleştir özelliğini kullanarak birden fazla Word belgesini nasıl birleştireceğinizi öğrendiniz. Sağlanan kaynak kodunu takip ederek, her kaynak belgenin formatını korurken ayrı belgeleri tek bir birleştirilmiş belgede birleştirebilirsiniz.
+ İşte buyur! Aspose.Words for .NET kullanarak Word belgelerini nasıl birleştireceğinizi öğrendiniz. Bu eğitim, ortamınızı ayarlamayı, basit birleştirmeleri gerçekleştirmeyi, kaydetme seçenekleriyle birleştirmeyi, birleştirilmiş belgeleri PDF'ye dönüştürmeyi ve birleştirilmiş belgelerden belge örneği oluşturmayı kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
 
-Birden çok kaynaktan gelen bilgileri birleştirmek veya tek tek parçalardan birleşik bir belge oluşturmak istediğinizde belgeleri birleştirmek yararlı olabilir. Aspose.Words for .NET, belgeleri birleştirme işlemini basitleştirerek verimli ve basit hale getiren güçlü bir API sağlar.
+## SSS
 
-Belge işleme yeteneklerinizi geliştirmek ve iş akışınızı kolaylaştırmak için Aspose.Words for .NET tarafından sunulan diğer özellikleri keşfetmekten çekinmeyin.
+### 1. Aspose.Words for .NET nedir?
 
-### SSS
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır. Belgeyle ilgili görevleri otomatikleştirmek için idealdir.
 
-#### Farklı biçimlendirmeye sahip belgeleri nasıl birleştirebilirim?
+### 2. Aspose.Words for .NET'i ücretsiz kullanabilir miyim?
 
- Aspose.Words for .NET, belgeleri birleştirirken her kaynak belgenin formatını koruma seçeneğini sunar. kullanarak`ImportFormatMode.KeepSourceFormatting` seçeneğini seçerseniz, birleştirilen belge orijinal belgelerin biçimlendirmesini koruyacaktır. Birleştirilen belgenin tamamında tutarlı formatlama uygulamak istiyorsanız, belgeleri birleştirdikten sonra Aspose.Words API'sini kullanarak formatı değiştirebilirsiniz.
+ Aspose.Words for .NET'i kullanarak deneyebilirsiniz.[ücretsiz deneme](https://releases.aspose.com/). Uzun süreli kullanım için lisans satın almanız gerekir.
 
-#### Farklı formatlardaki belgeleri birleştirebilir miyim?
+### 3. Birleştirme sırasında farklı biçimlendirmeleri nasıl halledebilirim?
 
-Evet, Aspose.Words for .NET, DOCX, DOC, RTF ve daha fazlası dahil olmak üzere çeşitli formatlardaki belgelerin birleştirilmesini destekler. Aspose.Words API'sine farklı formatlardaki belgeleri yükleyebilir ve orijinal formatlarına bakılmaksızın bunları tek bir belgede birleştirebilirsiniz.
+ Aspose.Words aşağıdakiler gibi çeşitli birleştirme formatı modları sağlar:`KeepSourceFormatting` Ve`MergeFormatting` . Bakın[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
 
-#### Tablolar ve resimler gibi karmaşık yapılara sahip belgeleri birleştirebilir miyim?
+### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 
-Kesinlikle! Aspose.Words for .NET; tablolar, resimler, üstbilgiler, altbilgiler ve daha fazlasını içeren karmaşık yapılara sahip belgeleri birleştirme yeteneğine sahiptir. API, her belgedeki içeriğin bütünlüğünü ve düzenini korurken birleştirme işlemini gerçekleştirir.
+adresini ziyaret ederek destek alabilirsiniz.[Aspose destek forumu](https://forum.aspose.com/c/words/8).
 
-#### Farklı sayfa yönelimlerine veya boyutlarına sahip belgeleri birleştirmek mümkün müdür?
+### 5. Diğer dosya formatlarını Aspose.Words for .NET ile birleştirebilir miyim?
 
-Evet, Aspose.Words for .NET, birleştirme işlemi sırasında farklı sayfa yönelimlerine veya boyutlarına sahip belgeleri işler. Ortaya çıkan birleştirilmiş belge, kaynak belgelerin değişen sayfa yönelimlerine ve boyutlarına uyum sağlayacaktır.
+Evet, Aspose.Words DOCX, PDF ve HTML dahil olmak üzere çeşitli dosya formatlarının birleştirilmesini destekler.

@@ -86,4 +86,4 @@ R : Un nœud de paragraphe dans un document XML est utilisé pour représenter 
 
 #### Q : Comment formater le texte dans un nœud de paragraphe ?
 
-R : La mise en forme du texte dans un nœud de paragraphe dépend de l'API XML que vous utilisez dans votre environnement Node.js. Vous pouvez généralement utiliser des propriétés et des méthodes spécifiques pour définir des attributs de formatage tels que la police, la taille, la couleur, etc.
+R : La mise en forme du texte dans un nœud de paragraphe dépend de l'API XML que vous utilisez dans votre environnement Node.js. Vous pouvez généralement utiliser des propriétés et des méthodes spécifiques pour définir des attributs de formatage tels que la police, la taille, la couleur, etc.

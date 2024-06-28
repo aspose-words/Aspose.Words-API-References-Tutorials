@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Đặt thư mục phông chữ mặc định
-Sau đó, bạn có thể đặt thư mục phông chữ mặc định bằng cách sử dụng`FontSettings.DefaultInstance` lớp học và`SetFontsFolder()` phương pháp. Chỉ định đường dẫn đến thư mục phông chữ bạn muốn sử dụng làm thư mục mặc định.
+ Sau đó, bạn có thể đặt thư mục phông chữ mặc định bằng cách sử dụng`FontSettings.DefaultInstance` lớp học và`SetFontsFolder()`phương pháp. Chỉ định đường dẫn đến thư mục phông chữ bạn muốn sử dụng làm thư mục mặc định.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

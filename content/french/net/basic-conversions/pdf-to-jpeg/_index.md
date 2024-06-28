@@ -57,7 +57,7 @@ Lors de la conversion d'un PDF en JPEG, vous pouvez spécifier la résolution et
 
 #### Quelles sont les limites du processus de conversion ?
 
-Les limites du processus de conversion dépendent de l'outil ou de la bibliothèque spécifique que vous utilisez. Certains outils peuvent avoir des restrictions liées à une mise en page complexe, des polices spécifiques ou des éléments interactifs dans le PDF. Il est important de bien comprendre les fonctionnalités et les limites de l'outil choisi afin de prendre des décisions éclairées lors de la conversion.
+Les limites du processus de conversion dépendent de l'outil ou de la bibliothèque spécifique que vous utilisez. Certains outils peuvent avoir des restrictions liées à une mise en page complexe, des polices spécifiques ou des éléments interactifs du PDF. Il est important de bien comprendre les fonctionnalités et les limites de l'outil choisi afin de prendre des décisions éclairées lors de la conversion.
 
 #### Aspose est-il un outil fiable pour convertir des PDF en JPEG ?
 

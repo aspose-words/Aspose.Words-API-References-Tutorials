@@ -62,4 +62,4 @@ double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
 ## Çözüm
-Bu eğitimde, tercih edilen genişlik tipini ve değerini Aspose.Words for .NET kullanarak bir Word belgesindeki tablo hücresinden nasıl alacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, bu bilgiyi Word belge tablolarınızdaki belirli hücreler için alabilirsiniz.
+Bu eğitimde, tercih edilen genişlik tipini ve değerini Aspose.Words for .NET kullanarak bir Word belgesindeki tablo hücresinden nasıl alacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, bu bilgiyi Word belge tablolarınızdaki belirli hücreler için alabilirsiniz.

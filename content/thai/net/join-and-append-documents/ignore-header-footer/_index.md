@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## ขั้นตอนที่ 3: ตั้งค่าตัวเลือกรูปแบบการนำเข้า
 
- สร้างอินสแตนซ์ของ`ImportFormatOptions` คลาสและตั้งค่า`IgnoreHeaderFooter`ทรัพย์สินเพื่อ`false`. เพื่อให้แน่ใจว่าเนื้อหาส่วนหัวและส่วนท้ายถูกรวมไว้ในระหว่างกระบวนการต่อท้าย
+ สร้างอินสแตนซ์ของ`ImportFormatOptions` คลาสและตั้งค่า`IgnoreHeaderFooter`ทรัพย์สินเพื่อ`false`- เพื่อให้แน่ใจว่าเนื้อหาส่วนหัวและส่วนท้ายถูกรวมไว้ในระหว่างกระบวนการต่อท้าย
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## ขั้นตอนที่ 4: ผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทาง
 
- ใช้`AppendDocument` วิธีการนำเอกสารปลายทางมาต่อท้ายเอกสารต้นทาง ผ่าน`ImportFormatMode.KeepSourceFormatting` เป็นพารามิเตอร์ที่สองและตัวเลือกรูปแบบการนำเข้าเป็นพารามิเตอร์ที่สาม
+ ใช้`AppendDocument` วิธีการนำเอกสารปลายทางมาต่อท้ายเอกสารต้นทาง ผ่าน`ImportFormatMode.KeepSourceFormatting`เป็นพารามิเตอร์ที่สองและตัวเลือกรูปแบบการนำเข้าเป็นพารามิเตอร์ที่สาม
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## ขั้นตอนที่ 5: บันทึกเอกสารปลายทาง
 
- สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ.
+สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ วัตถุ
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

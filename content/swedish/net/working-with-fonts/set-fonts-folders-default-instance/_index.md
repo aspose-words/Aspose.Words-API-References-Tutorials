@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Ställ in standardfontmapp
-Sedan kan du ställa in standardfontmappen med hjälp av`FontSettings.DefaultInstance` klass och`SetFontsFolder()` metod. Ange sökvägen till den typsnittsmapp du vill använda som standardmapp.
+ Sedan kan du ställa in standardfontmappen med hjälp av`FontSettings.DefaultInstance` klass och`SetFontsFolder()`metod. Ange sökvägen till den typsnittsmapp du vill använda som standardmapp.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

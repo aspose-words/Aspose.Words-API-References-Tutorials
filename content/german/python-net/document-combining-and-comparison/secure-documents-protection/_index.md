@@ -1,7 +1,7 @@
 ---
 title: Sichern von Dokumenten mit fortschrittlichen Schutztechniken
 linktitle: Sichern von Dokumenten mit fortschrittlichen Schutztechniken
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Sichern Sie Ihre Dokumente mit erweitertem Schutz mit Aspose.Words für Python. Erfahren Sie, wie Sie Passwörter hinzufügen, Inhalte verschlüsseln, digitale Signaturen anwenden und mehr.
 type: docs
 weight: 16

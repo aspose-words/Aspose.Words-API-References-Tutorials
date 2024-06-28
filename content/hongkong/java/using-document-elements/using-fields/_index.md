@@ -357,7 +357,7 @@ HandleMergeField類別的原始碼
 
 恭喜！您已經學習如何使用 Aspose.Words for Java 中的欄位來動態操作 Word 文件。這個強大的 API 使您能夠完全控製文檔，使其成為 Java 開發人員的寶貴資產。
 
-## 7. 常見問題解答
+## 7.常見問題解答
 
 ### Q1：哪裡可以下載 Aspose.Words for Java？
 您可以從以下位置下載 Aspose.Words for Java：[這裡](https://releases.aspose.com/words/java/).

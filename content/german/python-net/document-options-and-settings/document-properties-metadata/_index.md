@@ -1,7 +1,7 @@
 ---
 title: Dokumenteigenschaften und Metadatenverwaltung
 linktitle: Dokumenteigenschaften und Metadatenverwaltung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie Dokumenteigenschaften und Metadaten mit Aspose.Words für Python verwalten. Schritt-für-Schritt-Anleitung mit Quellcode.
 type: docs
 weight: 12

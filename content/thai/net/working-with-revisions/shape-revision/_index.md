@@ -78,7 +78,7 @@ Assert. False(shapes[1].IsMoveToRevision);
 ```csharp
 Document doc = new Document();
 
-//แทรกรูปร่างอินไลน์โดยไม่ต้องติดตามการแก้ไข
+//แทรกแบบฟอร์มอินไลน์โดยไม่ต้องติดตามการแก้ไข
 Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
@@ -148,7 +148,7 @@ doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
 #### ถาม: ฉันจะเปิดใช้งานการติดตามการแก้ไขใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: หากต้องการเปิดใช้งานการติดตามการแก้ไขใน Aspose.Words สำหรับ .NET คุณสามารถใช้`StartTrackRevisions` วิธีการของ`Document` วัตถุ. วิธีการนี้ใช้ชื่อผู้เขียนการแก้ไขเป็นพารามิเตอร์:
+ ตอบ: หากต้องการเปิดใช้งานการติดตามการแก้ไขใน Aspose.Words สำหรับ .NET คุณสามารถใช้`StartTrackRevisions` วิธีการของ`Document` วัตถุ วัตถุ วิธีการนี้ใช้ชื่อผู้เขียนการแก้ไขเป็นพารามิเตอร์:
 
 ```csharp
 doc.StartTrackRevisions("John Doe");

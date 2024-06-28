@@ -117,9 +117,9 @@ options.setFontFamily("Times New Roman");
 
 ### Är det möjligt att rotera en vattenstämpel?
 
- Ja, du kan rotera en vattenstämpel genom att ställa in`setRotation` egendom i`Shape` objekt. Positiva värden roterar vattenstämpeln medurs och negativa värden roterar den moturs.
+ Ja, du kan rotera en vattenstämpel genom att ställa in`setRotation` egendom i`Shape` objekt. Positiva värden roterar vattenstämpeln medurs, och negativa värden roterar den moturs.
 
-### Hur gör jag en vattenstämpel halvtransparent?
+### Hur kan jag göra en vattenstämpel halvtransparent?
 
  För att göra en vattenstämpel halvtransparent, ställ in`setSemitransparent`egendom till`true` i`TextWatermarkOptions`.
 

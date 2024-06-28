@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Δημιουργία πινάκων
 
 ```java
-// Δημιουργήστε έναν πίνακα με 3 σειρές και 4 στήλες
+// Δημιουργήστε έναν πίνακα με 3 σειρές και 4 στήλες.
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

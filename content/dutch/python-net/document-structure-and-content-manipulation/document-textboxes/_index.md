@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- In deze code maken we een nieuw`Document` en een`DocumentBuilder` . De`insert_text_box`methode wordt gebruikt om een tekstvak aan het document toe te voegen. U kunt de inhoud, positie en grootte van het tekstvak aanpassen aan uw wensen.
+ In deze code maken we een nieuw`Document` en een`DocumentBuilder` . De`insert_text_box` methode wordt gebruikt om een tekstvak aan het document toe te voegen. U kunt de inhoud, positie en grootte van het tekstvak aanpassen aan uw wensen.
 
 ## Tekstvakken opmaken
 

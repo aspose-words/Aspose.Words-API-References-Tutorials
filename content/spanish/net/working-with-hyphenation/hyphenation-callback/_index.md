@@ -2,107 +2,148 @@
 title: Devolución de llamada de separación de palabras
 linktitle: Devolución de llamada de separación de palabras
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a utilizar la devolución de llamada de separación de palabras en Aspose.Words para .NET para manejar la separación de palabras.
+description: Aprenda a implementar la devolución de llamada de separación de palabras en Aspose.Words para .NET para mejorar el formato de documentos con esta guía completa paso a paso.
 type: docs
 weight: 10
 url: /es/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-En este tutorial paso a paso, le mostraremos cómo utilizar la función de devolución de llamada de separación de palabras en Aspose.Words para .NET. Explicaremos el código fuente C# proporcionado y le mostraremos cómo implementarlo en sus propios proyectos.
+## Introducción
 
- Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo has hecho, descarga e instala la biblioteca desde[Aspose.Releases]https://releases.aspose.com/words/net/.
+¡Hola! ¿Alguna vez te has visto enredado en las complejidades del formato de texto, especialmente cuando se trata de idiomas que requieren separación de palabras? No estás solo. La separación de sílabas, si bien es crucial para el diseño adecuado del texto, puede ser un dolor de cabeza. ¿Pero adivina que? Aspose.Words para .NET te respalda. Esta poderosa biblioteca le permite administrar el formato de texto sin problemas, incluido el manejo de la separación de palabras a través de un mecanismo de devolución de llamada. ¿Intrigado? Profundicemos en el meollo de la cuestión de cómo implementar una devolución de llamada con separación de palabras utilizando Aspose.Words para .NET.
 
-## Paso 1: guardar el recordatorio de separación de palabras
+## Requisitos previos
 
- Primero, registraremos la devolución de llamada de separación de palabras usando un archivo personalizado.`CustomHyphenationCallback` clase. Esto nos permitirá manejar la separación de palabras según nuestras propias reglas:
+Antes de ensuciarnos las manos con el código, asegurémonos de que tienes todo lo que necesitas:
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  Aspose.Words para .NET: asegúrese de tener la biblioteca. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+2. IDE: un entorno de desarrollo como Visual Studio.
+3. Conocimientos básicos de C#: comprensión de C# y .NET framework.
+4. Diccionarios de separación de sílabas: diccionarios de separación de sílabas para los idiomas que planea utilizar.
+5.  Licencia Aspose: Una licencia Aspose válida. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) si no tienes uno.
 
- Asegúrese de haber implementado el`CustomHyphenationCallback` clase de acuerdo a sus necesidades específicas.
+## Importar espacios de nombres
 
-## Paso 2: cargar el documento y aplicar la separación de palabras
-
-A continuación, cargue su documento desde el directorio especificado y separe las palabras con guiones usando Aspose.Words:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## Paso 3: Manejo de errores de diccionario faltantes
-
-En caso de que falte un diccionario de separación de palabras, detectaremos la excepción correspondiente y mostraremos un mensaje de error:
+Primero lo primero, importemos los espacios de nombres necesarios. Esto garantiza que nuestro código tenga acceso a todas las clases y métodos que necesitamos de Aspose.Words.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## Paso 4: Limpiar y desactivar el recordatorio de separación de palabras
+## Paso 1: registre la devolución de llamada con sílabas
 
-Finalmente, por motivos de limpieza y para desactivar el recordatorio de separación de palabras, realice los siguientes pasos:
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-Esto limpia y desactiva el recordatorio de separación de palabras después de finalizar el procesamiento.
-
-Entonces ! Ha utilizado con éxito la devolución de llamada de separación de palabras en Aspose.Words para .NET.
-
-### Código fuente de muestra para devolución de llamada de separación de palabras con Aspose.Words para .NET
+Para comenzar, necesitamos registrar nuestra devolución de llamada de separación de palabras. Aquí es donde le decimos a Aspose.Words que use nuestra lógica de separación de palabras personalizada.
 
 ```csharp
 try
 {
-	 // Registre la devolución de llamada con separación de palabras.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // Registre la devolución de llamada con separación de palabras.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ Aquí, estamos creando una instancia de nuestra devolución de llamada personalizada y asignándola a`Hyphenation.Callback`.
+
+## Paso 2: definir la ruta del documento
+
+A continuación, debemos definir el directorio donde se almacenan nuestros documentos. Esto es crucial ya que cargaremos y guardaremos documentos desde esta ruta.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a sus documentos.
+
+## Paso 3: cargue el documento
+
+Ahora, carguemos el documento que requiere separación de palabras.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ Aquí, estamos cargando un documento de texto en alemán. puedes reemplazar`"German text.docx"` con el nombre de archivo de su documento.
+
+## Paso 4: guarde el documento
+
+Después de cargar el documento, lo guardamos en un archivo nuevo, aplicando la devolución de llamada de separación de palabras en el proceso.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+Esta línea guarda el documento como PDF con separación de palabras aplicada.
+
+## Paso 5: Manejar la excepción del diccionario de separación de palabras que falta
+
+A veces, es posible que te encuentres con un problema en el que falta el diccionario de separación de palabras. Manejemos eso.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-Siéntase libre de utilizar este código en sus propios proyectos y modificarlo para adaptarlo a sus necesidades específicas.
+En este bloque, detectamos la excepción específica relacionada con los diccionarios que faltan e imprimimos el mensaje.
 
-### Preguntas frecuentes
+## Paso 6: Implementar la clase de devolución de llamada de separación de palabras personalizada
 
-#### P: ¿Qué es un recordatorio de silabización en Aspose.Words?
+ Ahora, implementemos el`CustomHyphenationCallback` clase que maneja la solicitud de diccionarios de separación de palabras.
 
-R: Un recordatorio de silabización en Aspose.Words es una función que le permite personalizar cómo se silabizan las palabras en sus documentos. Al utilizar un recordatorio de silabización, puede especificar reglas personalizadas para la silabización de palabras, lo que puede ser útil para idiomas específicos o escenarios particulares donde la silabización predeterminada no produce los resultados deseados.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // Registrar diccionario para el idioma solicitado.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### P: ¿Cómo configurar un recordatorio de silabización en Aspose.Words?
+ En esta clase, el`RequestDictionary` Se llama al método siempre que se necesita un diccionario de separación de palabras. Comprueba el idioma y registra el diccionario apropiado.
 
- R: Para definir una devolución de llamada de separación de palabras en Aspose.Words, necesita crear una clase que implemente la`HyphenationCallback` interfaz e implementar el`HandleWord()` método. Este método se llamará para cada palabra encontrada durante la silabización. Puede aplicarle reglas de silabización personalizadas y devolver la palabra silabizada. Luego puede vincular su devolución de llamada de separación de palabras usando el`Document.HyphenationCallback` propiedad de su documento.
+## Conclusión
 
-#### P: ¿Cuál es la ventaja de utilizar un recordatorio de silabización en Aspose.Words?
+¡Y ahí lo tienes! Acaba de aprender cómo implementar una devolución de llamada con separación de palabras en Aspose.Words para .NET. Si sigue estos pasos, podrá asegurarse de que sus documentos tengan un formato atractivo, independientemente del idioma. Ya sea que trabaje con inglés, alemán o cualquier otro idioma, este método le permite manejar la separación de palabras sin esfuerzo.
 
-R: El beneficio de utilizar un recordatorio de silabización en Aspose.Words es la capacidad de personalizar cómo se silabizan las palabras en sus documentos. Esto le brinda más control sobre la silabización, especialmente para idiomas o escenarios específicos donde la silabización predeterminada no proporciona los resultados deseados. Podrás aplicar reglas específicas a cada palabra para obtener una silabización precisa según tus necesidades.
+## Preguntas frecuentes
 
-#### P: ¿Cuáles son algunos escenarios comunes en los que puede resultar útil utilizar un recordatorio de silabización?
+### ¿Qué es Aspose.Words para .NET?
+Aspose.Words para .NET es una potente biblioteca de manipulación de documentos que permite a los desarrolladores crear, modificar y convertir documentos mediante programación.
 
-R: Usar un refuerzo de silabización puede resultar útil en varios escenarios, como por ejemplo:
-- Silabización de palabras en idiomas específicos que tienen reglas de silabización particulares.
-- La aplicación de reglas de silabización personalizadas para siglas o palabras técnicas.
-- Adaptación de la silabización según preferencias estilísticas o estándares tipográficos.
+### ¿Por qué es importante la separación de palabras en el formato de documentos?
+La separación de palabras mejora el diseño del texto al dividir las palabras en los lugares apropiados, lo que garantiza un documento más legible y visualmente atractivo.
 
-#### P: ¿Cómo puedo probar la silabización personalizada con un recordatorio de silabización en Aspose.Words?
+### ¿Puedo utilizar Aspose.Words gratis?
+ Aspose.Words ofrece una prueba gratuita. Puedes conseguirlo[aquí](https://releases.aspose.com/).
 
- R: Para probar la silabización personalizada con un recordatorio de silabización en Aspose.Words, puede crear un documento de prueba que contenga palabras a las que desee aplicar reglas de silabización personalizadas. Luego puede configurar su devolución de llamada de silabización personalizada, llame al`Document.Range.Replace()` método para reemplazar las palabras en el documento y utilizar el`Hyphenate()` método de la`Hyphenation` clase para obtener la silabización de las palabras. Luego puede formatear las palabras con sílabas según sea necesario, por ejemplo agregando guiones entre sílabas.
+### ¿Cómo obtengo un diccionario de separación de palabras?
+Puede descargar diccionarios de separación de palabras de varios recursos en línea o crear los suyos propios si es necesario.
+
+### ¿Qué sucede si falta un diccionario de separación de palabras?
+ Si falta un diccionario, el`RequestDictionary` El método genera una excepción, que puede manejar para informar al usuario o proporcionar una alternativa.

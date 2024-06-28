@@ -34,7 +34,7 @@ format.LineUnitAfter = 10; // Aktualizujte odstavecFormat.SpaceAfter
 
 ## Krok 3: Uložení dokumentu
 
- Po vložení textového pole formuláře uložte dokument na požadované místo pomocí`Save` metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
+ Po vložení pole formuláře pro zadání textu uložte dokument na požadované místo pomocí`Save` metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc");
@@ -51,9 +51,9 @@ Zde je úplný zdrojový kód pro funkci Upravit asijské rozestupy a odsazení 
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagrafFormat.LeftIndent bude aktualizován
-	format.CharacterUnitRightIndent = 10;      // OdstavecFormat.RightIndent bude aktualizován
-	format.CharacterUnitFirstLineIndent = 20;  // ParagrafFormat.FirstLineIndent bude aktualizován
+	format.CharacterUnitLeftIndent = 10;       // ParagrafFormat.LeftIndent bude aktualizován.
+	format.CharacterUnitRightIndent = 10;      // OdstavecFormat.RightIndent bude aktualizován.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagrafFormat.FirstLineIndent bude aktualizován.
 	format.LineUnitBefore = 5;                 // OdstavecFormat.SpaceBefore bude aktualizován
 	format.LineUnitAfter = 10;                 // OdstavecFormat.SpaceAfter bude aktualizován
 

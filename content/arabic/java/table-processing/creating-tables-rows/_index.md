@@ -28,7 +28,7 @@ public class TableCreation {
         // إنشاء مستند جديد
         Document doc = new Document();
         
-        // إنشاء جدول مكون من 3 صفوف و3 أعمدة
+        // إنشاء جدول مكون من 3 صفوف و3 أعمدة.
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // تعبئة خلايا الجدول بالبيانات

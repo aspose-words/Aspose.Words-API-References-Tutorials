@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Passaggio 3: costruisci la tabella
- Usa il`StartTable`, `EndTable`, `InsertCell` , E`Write` metodi del`DocumentBuilder` oggetto per costruire una tabella. Imposta l'altezza della riga desiderata e la regola dell'altezza utilizzando`RowFormat` proprietà.
+ Usa il`StartTable`, `EndTable`, `InsertCell` , E`Write` metodi del`DocumentBuilder`oggetto per costruire una tabella. Imposta l'altezza della riga desiderata e la regola dell'altezza utilizzando`RowFormat` proprietà.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Passaggio 6: inserire la forma nel documento
-Inserisci la forma della filigrana nel documento utilizzando il file`InsertNode` metodo del`DocumentBuilder` oggetto. Posiziona la forma utilizzando il`MoveTo` metodo per posizionarlo dopo l'ultima esecuzione nel documento.
+ Inserisci la forma della filigrana nel documento utilizzando il file`InsertNode` metodo del`DocumentBuilder` oggetto. Posiziona la forma utilizzando il`MoveTo` metodo per posizionarlo dopo l'ultima esecuzione nel documento.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

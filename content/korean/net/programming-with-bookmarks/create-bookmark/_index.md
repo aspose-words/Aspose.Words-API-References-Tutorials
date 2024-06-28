@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## 3단계: 중첩된 책갈피 만들기
 
-기본 책갈피 안에 중첩된 책갈피를 만들 수도 있습니다. 우리는 같은 것을 사용합니다`StartBookmark` 그리고`EndBookmark` 중첩된 책갈피를 만들고 종료하는 방법:
+ 기본 책갈피 안에 중첩된 책갈피를 만들 수도 있습니다. 우리는 같은 것을 사용합니다`StartBookmark` 그리고`EndBookmark` 중첩된 책갈피를 만들고 종료하는 방법:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");

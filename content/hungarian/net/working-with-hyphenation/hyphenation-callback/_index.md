@@ -2,107 +2,148 @@
 title: Elválasztás visszahívás
 linktitle: Elválasztás visszahívás
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan használhatja az Aspose.Words for .NET elválasztási visszahívását a szóelválasztás kezelésére.
+description: Ismerje meg, hogyan valósíthat meg elválasztási visszahívást az Aspose.Words for .NET-ben a dokumentumok formázásának javítása érdekében ezzel az átfogó, lépésről lépésre szóló útmutatóval.
 type: docs
 weight: 10
 url: /hu/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-Ebben a lépésenkénti oktatóanyagban bemutatjuk, hogyan használhatja az Aspose.Words for .NET elválasztási visszahívási funkcióját. Elmagyarázzuk a mellékelt C# forráskódot, és megmutatjuk, hogyan implementálhatja azt saját projektjeibe.
+## Bevezetés
 
- A kezdéshez győződjön meg arról, hogy az Aspose.Words for .NET telepítve van és konfigurálva van a fejlesztői környezetben. Ha még nem tette meg, töltse le és telepítse a könyvtárat innen[Aspose.Releases]https://releases.aspose.com/words/net/.
+Halihó! Volt már olyan, hogy belegabalyodott a szövegformázás bonyolultságába, különösen, ha olyan nyelvekkel foglalkozik, amelyek elválasztást igényelnek? Nem vagy egyedül. Az elválasztás, bár kulcsfontosságú a megfelelő szövegelrendezéshez, egy kis fejfájást okozhat. De képzeld csak? Az Aspose.Words for .NET hátat kapott. Ez a hatékony könyvtár lehetővé teszi a szöveg formázásának zökkenőmentes kezelését, beleértve az elválasztás kezelését visszahívási mechanizmuson keresztül. Érdekelt? Nézzük meg, hogyan valósíthat meg elválasztási visszahívást az Aspose.Words for .NET használatával.
 
-## 1. lépés: Mentse el az elválasztási emlékeztetőt
+## Előfeltételek
 
- Először is regisztráljuk az elválasztási visszahívást egyéni használatával`CustomHyphenationCallback` osztály. Ez lehetővé teszi számunkra, hogy a szavak elválasztását saját szabályaink szerint kezeljük:
+Mielőtt bepiszkítanánk a kódot, győződjünk meg arról, hogy mindennel megvan, amire szüksége van:
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik a könyvtárral. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+2. IDE: Olyan fejlesztői környezet, mint a Visual Studio.
+3. C# alapismeretek: C# és .NET keretrendszer ismerete.
+4. Elválasztási szótárak: Elválasztási szótárak a használni kívánt nyelvekhez.
+5.  Aspose licenc: Érvényes Aspose licenc. Kaphatsz a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) ha nincs ilyened.
 
- Győződjön meg arról, hogy végrehajtotta a`CustomHyphenationCallback` osztály az Ön egyedi igényei szerint.
+## Névterek importálása
 
-## 2. lépés: A dokumentum betöltése és elválasztás alkalmazása
-
-Ezután töltse be a dokumentumot a megadott könyvtárból, és kötőjelezze el a szavakat az Aspose.Words használatával:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## 3. lépés: A hiányzó szótárhibák kezelése
-
-Ha hiányzik egy elválasztási szótár, elkapjuk a megfelelő kivételt, és hibaüzenetet jelenítünk meg:
+Először is importáljuk a szükséges névtereket. Ez biztosítja, hogy kódunk hozzáférjen az Aspose.Words összes osztályához és metódusához, amire szükségünk van.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## 4. lépés: Tisztítsa meg és tiltsa le az elválasztási emlékeztetőt
+## 1. lépés: Regisztrálja az elválasztási visszahívást
 
-Végül a tisztaság és az elválasztási emlékeztető kikapcsolása érdekében hajtsa végre a következő lépéseket:
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-Ez megtisztítja és letiltja az elválasztási emlékeztetőt a feldolgozás befejezése után.
-
-Így ! Sikeresen használta az elválasztási visszahívást az Aspose.Words for .NET-ben.
-
-### Forráskód minta elválasztási visszahíváshoz Aspose.Words .NET-hez
+A kezdéshez regisztrálnunk kell az elválasztási visszahívásunkat. Itt mondjuk meg az Aspose.Words-nek, hogy használja az egyéni elválasztási logikánkat.
 
 ```csharp
 try
 {
-	 // Regisztráljon elválasztási visszahívást.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // Regisztráljon elválasztási visszahívást.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ Itt létrehozzuk az egyéni visszahívásunk példányát, és hozzárendeljük`Hyphenation.Callback`.
+
+## 2. lépés: Határozza meg a dokumentum elérési útját
+
+Ezután meg kell határoznunk a könyvtárat, ahol a dokumentumainkat tároljuk. Ez kulcsfontosságú, mivel ezen az úton fogunk betölteni és elmenteni dokumentumokat.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumok tényleges elérési útjával.
+
+## 3. lépés: Töltse be a dokumentumot
+
+Most töltsük be az elválasztást igénylő dokumentumot.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ Itt egy német szöveges dokumentumot töltünk be. Cserélheted`"German text.docx"` a dokumentum fájlnevével.
+
+## 4. lépés: Mentse el a dokumentumot
+
+A dokumentum betöltése után elmentjük egy új fájlba, és közben alkalmazzuk az elválasztási visszahívást.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+Ez a sor PDF-ként menti a dokumentumot elválasztással.
+
+## 5. lépés: Kezelje a hiányzó elválasztási szótár kivételét
+
+Néha olyan problémába ütközhet, hogy hiányzik az elválasztási szótár. Intézzük ezt.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-Nyugodtan használhatja ezt a kódot saját projektjeiben, és módosíthatja sajátos igényei szerint.
+Ebben a blokkban felfogjuk a hiányzó szótárak kivételét, és kinyomtatjuk az üzenetet.
 
-### GYIK
+## 6. lépés: Valósítsa meg az Egyéni elválasztási visszahívási osztályt
 
-#### K: Mit jelent az Aspose.Words szótagosítási emlékeztetője?
+ Most pedig hajtsuk végre a`CustomHyphenationCallback` osztály, amely kezeli az elválasztási szótárak kérését.
 
-V: Az Aspose.Words szótagosítási emlékeztetője egy olyan funkció, amely lehetővé teszi a szavak szótagozásának testreszabását a dokumentumokban. A szótagosítási emlékeztető használatával egyéni szabályokat adhat meg a szavak szótagosításához, amelyek hasznosak lehetnek bizonyos nyelveknél vagy olyan helyzetekben, ahol az alapértelmezett szótagosítás nem hozza meg a kívánt eredményt.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // Regisztráljon szótárt a kívánt nyelvhez.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### K: Hogyan állíthat be szótagosítási emlékeztetőt az Aspose.Words-ben?
+ Ebben az osztályban a`RequestDictionary` metódus hívódik meg, amikor elválasztási szótárra van szükség. Ellenőrzi a nyelvet és regisztrálja a megfelelő szótárt.
 
- V: Elválasztási visszahívás meghatározásához az Aspose.Wordsben létre kell hoznia egy osztályt, amely megvalósítja a`HyphenationCallback` interfész és valósítsa meg a`HandleWord()` módszer. Ezt a metódust minden egyes szótag esetében meg kell hívni. Egyéni szótagképzési szabályokat alkalmazhat rá, és visszaadhatja a szótagozott szót. Ezután kötheti az elválasztási visszahívást a`Document.HyphenationCallback` dokumentumának tulajdonsága.
+## Következtetés
 
-#### K: Mi az előnye az Aspose.Words szótagosítási emlékeztetőjének?
+És megvan! Most tanulta meg, hogyan valósítson meg elválasztási visszahívást az Aspose.Words for .NET-ben. Az alábbi lépések követésével biztosíthatja, hogy a dokumentumok gyönyörűen formázva legyenek, nyelvtől függetlenül. Legyen szó angolról, németről vagy bármilyen más nyelvről, ezzel a módszerrel könnyedén kezelheti az elválasztást.
 
-V: Az Aspose.Words szótagosítási emlékeztetőjének használatának előnye, hogy testreszabhatja a szavak szótagolását a dokumentumokban. Ez nagyobb szabályozást biztosít a szótagosítás felett, különösen bizonyos nyelvek vagy forgatókönyvek esetén, ahol az alapértelmezett szótagosítás nem hozza meg a kívánt eredményt. Minden egyes szóra sajátos szabályokat alkalmazhat, hogy az igényeinek megfelelő pontos szótagozást kapjon.
+## GYIK
 
-#### K: Milyen gyakori forgatókönyvek fordulhatnak elő, amikor a szótagosítási emlékeztető hasznos lehet?
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony dokumentummanipulációs könyvtár, amely lehetővé teszi a fejlesztők számára a dokumentumok programozott létrehozását, módosítását és konvertálását.
 
-V: A szótagolás-erősítő használata számos forgatókönyv esetén hasznos lehet, például:
-- Szavak szótagosítása meghatározott nyelveken, amelyeknek sajátos szótagolási szabályai vannak.
-- A betűszavakra vagy szakszavakra személyre szabott szótagképzési szabályok alkalmazása.
-- A szótagolás stiláris preferenciáinak vagy tipográfiai szabványoknak megfelelő adaptálása.
+### Miért fontos az elválasztás a dokumentum formázásánál?
+Az elválasztás javítja a szöveg elrendezését azáltal, hogy a megfelelő helyeken töri a szavakat, így olvashatóbb és látványosabb dokumentumot biztosít.
 
-#### K: Hogyan tesztelhetem az egyéni szótagozást az Aspose.Words szótagosítási emlékeztetőjével?
+### Használhatom ingyenesen az Aspose.Words-t?
+ Az Aspose.Words ingyenes próbaverziót kínál. Megkaphatod[itt](https://releases.aspose.com/).
 
- V: Ha az Aspose.Words szótagosítási emlékeztetővel szeretné tesztelni az egyéni szótagozást, létrehozhat egy tesztdokumentumot, amely olyan szavakat tartalmaz, amelyekre egyéni szótagképzési szabályokat kíván alkalmazni. Ezután beállíthatja az egyéni szótagozás visszahívását, hívja a`Document.Range.Replace()` módszerrel helyettesítheti a szavakat a dokumentumban, és használja a`Hyphenate()` módszere a`Hyphenation` osztályban, hogy megkapjuk a szavak szótagolását. Ezután szükség szerint formázhatja a szótagozott szavakat, például kötőjelek hozzáadásával a szótagok közé.
+### Hogyan juthatok el kötőjeles szótárhoz?
+Elválasztási szótárakat letölthet különféle online forrásokból, vagy szükség esetén létrehozhat saját szótárakat.
+
+### Mi történik, ha hiányzik egy elválasztási szótár?
+ Ha hiányzik egy szótár, a`RequestDictionary` metódus kivételt dob, amelyet kezelve tájékoztathatja a felhasználót, vagy tartalékot adhat.

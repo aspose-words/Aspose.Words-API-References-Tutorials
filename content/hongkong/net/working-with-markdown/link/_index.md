@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 第 2 步：插入鏈接
 
-我們可以使用以下命令插入鏈接`Insertlink`文檔生成器的方法。我們需要指定連結文字（此處為「Aspose」）以及目標 URL。
+我們可以使用以下命令插入鏈接`InsertHyperlink`文檔生成器的方法。我們需要指定連結文字（此處為「Apose」）以及目標 URL。
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com”，錯誤）；
+builder.InsertHyperlink("Aspose", "https://www.aspose.com”，錯誤）；
 ```
 
 ### Aspose.Words for .NET 連結的範例原始碼
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com”，錯誤）；
 DocumentBuilder builder = new DocumentBuilder();
 
 //插入連結。
-builder.Insertlink("Aspose", "https://www.aspose.com”，錯誤）；
+builder.InsertHyperlink("Aspose", "https://www.aspose.com”，錯誤）；
 ```
 恭喜！現在您已經了解如何使用 Aspose.Words for .NET 的連結功能。
 

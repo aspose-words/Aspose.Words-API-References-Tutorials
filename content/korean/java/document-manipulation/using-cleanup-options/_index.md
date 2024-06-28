@@ -136,7 +136,7 @@ doc.save("WorkingWithCleanupOptions.RemoveEmptyTableRows.docx");
 
 ## 결론
 
-이 튜토리얼에서는 Aspose.Words for Java의 정리 옵션을 사용하여 메일 병합 프로세스 중에 문서를 조작하고 정리하는 방법을 배웠습니다. 이러한 옵션은 문서 정리에 대한 세밀한 제어를 제공하므로 세련되고 사용자 정의된 문서를 쉽게 만들 수 있습니다.
+이 튜토리얼에서는 편지 병합 프로세스 중에 문서를 조작하고 정리하기 위해 Aspose.Words for Java의 정리 옵션을 사용하는 방법을 배웠습니다. 이러한 옵션은 문서 정리에 대한 세밀한 제어를 제공하므로 세련되고 사용자 정의된 문서를 쉽게 만들 수 있습니다.
 
 ## FAQ
 
@@ -158,7 +158,7 @@ Aspose.Words for Java의 정리 옵션은 메일 병합 프로세스 중 문서 
 
 ###  설정하면 어떻게 되나요?`REMOVE_CONTAINING_FIELDS` option?
 
- 설정`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` 옵션은 메일 병합 프로세스 중에 포함된 단락을 포함하여 전체 병합 필드를 문서에서 제거합니다. 이는 병합 필드와 관련 텍스트를 제거하려는 경우에 유용합니다.
+ 설정`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` 이 옵션은 메일 병합 프로세스 중에 포함된 단락을 포함하여 전체 병합 필드를 문서에서 제거합니다. 이는 병합 필드와 관련 텍스트를 제거하려는 경우에 유용합니다.
 
 ### 내 문서에서 사용하지 않는 병합 필드를 제거하려면 어떻게 해야 합니까?
 

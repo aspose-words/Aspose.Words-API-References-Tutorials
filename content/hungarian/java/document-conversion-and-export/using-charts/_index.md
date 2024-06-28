@@ -10,7 +10,7 @@ url: /hu/java/document-conversion-and-export/using-charts/
 
 ## Bevezetés a diagramok használatába az Aspose.Words for Java programban
 
-Ebben az oktatóanyagban megvizsgáljuk, hogyan dolgozhatunk diagramokkal az Aspose.Words for Java használatával. Megtanulja, hogyan hozhat létre különféle típusú diagramokat, hogyan testreszabhatja a tengely tulajdonságait, formázhatja az adatcímkéket stb. Merüljünk el!
+Ebben az oktatóanyagban megvizsgáljuk, hogyan dolgozhatunk diagramokkal az Aspose.Words for Java használatával. Megtanulja, hogyan hozhat létre különféle típusú diagramokat, hogyan szabhatja testre a tengely tulajdonságait, formázhatja az adatcímkéket stb. Merüljünk el!
 
 ## Vonaldiagram készítése
 

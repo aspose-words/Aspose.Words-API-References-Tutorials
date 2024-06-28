@@ -1,6 +1,6 @@
 ---
-title: Aceitar revisões
-linktitle: Aceitar revisões
+title: Aceitar avaliações
+linktitle: Aceitar avaliações
 second_title: API de processamento de documentos Aspose.Words
 description: Aprenda como aceitar revisões em um documento do Word usando Aspose.Words for .NET
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// O parágrafo de exclusão de revisão é removido assim que aceitamos as alterações.
+// O parágrafo de revisão excluído será removido assim que aceitarmos as alterações.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

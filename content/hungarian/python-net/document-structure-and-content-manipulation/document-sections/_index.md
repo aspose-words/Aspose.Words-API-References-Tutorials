@@ -42,7 +42,7 @@ section.page_setup.left_margin = aw.ConvertUtil.inch_to_point(1)
 
 ## Az oldalelrendezés testreszabása
 
-Az Aspose.Words for Python lehetővé teszi az oldalelrendezés személyre szabását az Ön igényei szerint. Beállíthatja a margókat, az oldalméretet, a tájolást stb. Például:
+Az Aspose.Words for Python lehetővé teszi, hogy az oldal elrendezését az Ön igényei szerint szabja. Beállíthatja a margókat, az oldalméretet, a tájolást stb. Például:
 
 ```python
 # Customize page layout
@@ -55,7 +55,7 @@ page_setup.right_margin = aw.ConvertUtil.inch_to_point(1)
 
 ## Fejlécek és láblécek használata
 
-A fejlécek és a láblécek lehetőséget kínálnak arra, hogy minden oldal tetején és alján egységes tartalmat helyezzenek el. A fejlécekhez és láblécekhez szöveget, képeket és mezőket is hozzáadhat:
+A fejlécek és láblécek lehetőséget kínálnak arra, hogy az egyes oldalak tetején és alján egységes tartalmat helyezzenek el. A fejlécekhez és láblécekhez szöveget, képeket és mezőket is hozzáadhat:
 
 ```python
 # Add header and footer
@@ -68,7 +68,7 @@ footer.paragraphs.add_run("Footer Text")
 
 ## Oldaltörések kezelése
 
-Az oldaltörések biztosítják a tartalom zökkenőmentes áramlását a szakaszok között. Oldaltöréseket szúrhat be a dokumentum bizonyos pontjaira:
+Az oldaltörések biztosítják a tartalom zökkenőmentes áramlását a részek között. Oldaltöréseket szúrhat be a dokumentum bizonyos pontjaira:
 
 ```python
 # Insert page break

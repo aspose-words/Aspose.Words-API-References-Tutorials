@@ -7,7 +7,7 @@ type: docs
 weight: 1680
 url: /es/net/programming-with-pdfsaveoptions/
 ---
-Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con PdfSaveOptions lo guiarán a través de las diversas funciones y técnicas para el procesamiento de textos con opciones de guardado de PDF. Estos tutoriales lo ayudarán a comprender cómo personalizar la conversión de Word a PDF cambiando la configuración de diseño, fuentes, imágenes, metadatos y más.
+Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con PdfSaveOptions lo guiarán a través de las diversas características y técnicas para el procesamiento de textos con opciones de guardado de PDF. Estos tutoriales lo ayudarán a comprender cómo personalizar la conversión de Word a PDF cambiando la configuración de diseño, fuentes, imágenes, metadatos y más.
 
 Aprenderá cómo ajustar las opciones de calidad de imagen, elegir el nivel de compresión de las imágenes, establecer configuraciones de seguridad de PDF, como cifrado y permisos, e incluso insertar marcas de agua en los archivos PDF generados. Los tutoriales también incluyen ejemplos de código detallados para ayudarle a practicar estas funciones en sus proyectos.
 

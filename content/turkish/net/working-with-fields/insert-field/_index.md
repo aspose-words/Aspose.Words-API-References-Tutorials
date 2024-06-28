@@ -51,7 +51,7 @@ builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-Bu örnekte, yeni bir belge oluşturduk, bir DocumentBuilder başlattık ve ardından "MyFieldName" alan adına ve birleştirme biçimine sahip bir birleştirme alanı ekledik. Belge daha sonra belirtilen bir dosya adıyla kaydedilir.
+Bu örnekte yeni bir belge oluşturduk, DocumentBuilder'ı başlattık ve ardından "MyFieldName" alan adına ve birleştirme biçimine sahip bir birleştirme alanı ekledik. Belge daha sonra belirtilen bir dosya adıyla kaydedilir.
 
 Bu, Aspose.Words for .NET ile "Alan Ekle" özelliğinin kullanımına ilişkin kılavuzumuzu tamamlıyor.
 

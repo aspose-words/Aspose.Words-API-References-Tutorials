@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 
@@ -112,4 +112,4 @@ Có, Aspose.Words for .NET cho phép bạn tùy chỉnh các khía cạnh khác 
  Có, Aspose.Words for .NET cho phép bạn lưu tài liệu có biểu đồ cột được chèn ở nhiều định dạng khác nhau, chẳng hạn như DOCX, PDF, HTML, v.v. Bạn có thể chọn định dạng đầu ra mong muốn dựa trên yêu cầu của mình và sử dụng`Save` phương pháp của`Document` đối tượng để lưu tài liệu. Biểu đồ cột được chèn sẽ được giữ nguyên trong tài liệu đã lưu.
 
 #### Q5. Tôi có thể sửa đổi dữ liệu và hình thức của biểu đồ cột sau khi chèn nó không?
-Có, sau khi chèn biểu đồ cột vào tài liệu, bạn có thể sửa đổi dữ liệu và giao diện của biểu đồ cột bằng cách sử dụng API do Aspose.Words cung cấp cho .NET. Bạn có thể cập nhật dữ liệu chuỗi với các danh mục và giá trị mới, thay đổi màu sắc và định dạng của cột, tùy chỉnh thuộc tính trục và áp dụng các tùy chọn định dạng khác nhau để tạo biểu đồ động và hấp dẫn trực quan trong tài liệu Word của bạn.
+Có, sau khi chèn biểu đồ cột vào tài liệu, bạn có thể sửa đổi dữ liệu và giao diện của biểu đồ cột bằng cách sử dụng API do Aspose.Words cho .NET cung cấp. Bạn có thể cập nhật dữ liệu chuỗi với các danh mục và giá trị mới, thay đổi màu sắc và định dạng của cột, tùy chỉnh thuộc tính trục và áp dụng các tùy chọn định dạng khác nhau để tạo biểu đồ động và hấp dẫn trực quan trong tài liệu Word của bạn.

@@ -33,7 +33,7 @@ import com.aspose.words.ImageSaveOptions;
 
 public class DocumentToImageConverter {
     public static void main(String[] args) throws Exception {
-        //ドキュメントをロードします
+        //ドキュメントをロードする
         Document doc = new Document("sample.docx");
 
         //ImageSaveOptions の初期化

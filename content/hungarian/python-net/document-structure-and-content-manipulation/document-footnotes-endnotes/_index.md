@@ -74,7 +74,7 @@ A lábjegyzeteket és a végjegyzeteket programozottan kezelheti:
 - A lábjegyzetek legyenek tömörek és relevánsak
 - A részletesebb magyarázatokhoz használja a végjegyzeteket
 - Tartsa fenn a következetes formázást
-- Ellenőrizze még egyszer az idézetek pontosságát
+- Ellenőrizze még egyszer az idézetek pontosságát.
 
 ## Gyakori problémák hibaelhárítása
 

@@ -11,11 +11,11 @@ Aspose.Words untuk Python menawarkan serangkaian tutorial yang memberdayakan pen
 
 ## API Dokumen Python untuk Manajemen Dokumen yang Mulus
 
-Jelajahi kekuatan API Dokumen Python dengan tutorial Aspose.Words. Pengembang akan belajar membuat, memodifikasi, dan mengelola dokumen Word secara terprogram. API memungkinkan penyesuaian pemformatan, penyisipan konten, dan penggabungan dokumen, sehingga menyederhanakan tugas manajemen dokumen.
+Jelajahi kekuatan API Dokumen Python dengan tutorial Aspose.Words. Pengembang akan belajar membuat, memodifikasi, dan mengelola dokumen Word secara terprogram. API memungkinkan penyesuaian pemformatan, penyisipan konten, dan penggabungan dokumen, streaming tugas manajemen dokumen.
 
 ## Otomatiskan Pemrosesan Dokumen dengan Python
 
-Tutorial Aspose.Words untuk Python memandu pengembang dalam mengotomatiskan alur kerja pemrosesan dokumen. Pelajari cara membuat dokumen dinamis dari templat, melakukan operasi penggabungan surat, dan menangani manipulasi dokumen tingkat lanjut. Meningkatkan produktivitas dan efisiensi dalam tugas pemrosesan dokumen.
+Tutorial Aspose.Words untuk Python memandu pengembang dalam mengotomatisasi alur kerja pemrosesan dokumen. Pelajari cara membuat dokumen dinamis dari templat, melakukan operasi penggabungan surat, dan menangani manipulasi dokumen tingkat lanjut. Meningkatkan produktivitas dan efisiensi dalam tugas pemrosesan dokumen.
 
 ## Tingkatkan Pemrosesan Dokumen Word dengan Python
 

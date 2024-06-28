@@ -134,7 +134,7 @@ Při práci s velkými dokumenty je nezbytné zvážit optimalizaci výkonu. Asp
 
 této příručce jsme prozkoumali, jak snadno a efektivně rozdělit dokumenty pomocí Aspose.Words pro Java. Rozdělením velkých dokumentů na menší, lépe ovladatelné části mohou vývojáři pracovat s konkrétními sekcemi a zjednodušit úlohy zpracování dokumentů. Aspose.Words for Java nabízí různé metody pro rozdělení dokumentů na základě stránek, odstavců, nadpisů a sekcí a poskytuje vývojářům flexibilitu přizpůsobit proces rozdělení jejich specifickým potřebám.
 
-## 12. Nejčastější dotazy
+## 12.Časté dotazy
 
 ### Q1. Může Aspose.Words for Java rozdělit dokumenty různých formátů jako DOC a DOCX?
 

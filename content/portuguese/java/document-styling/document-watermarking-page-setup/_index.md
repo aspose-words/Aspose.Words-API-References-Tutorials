@@ -13,7 +13,7 @@ No domínio da manipulação de documentos, Aspose.Words for Java se destaca com
 
 ## Marca d'água de documento
 
-### Adicionando marcas d’água
+### Adicionando marcas d'água
 
 Adicionar marcas d'água a documentos pode ser crucial para promover a marca ou proteger seu conteúdo. Aspose.Words for Java torna essa tarefa simples. Veja como:
 
@@ -34,14 +34,14 @@ watermark.setWrapType(WrapType.NONE);
 watermark.setVerticalAlignment(VerticalAlignment.CENTER);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
 
-// Insira a marca d'água
+// Insira a marca d’água
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
 // Salve o documento
 doc.save("document_with_watermark.docx");
 ```
 
-### Personalizando marcas d’água
+### Personalizando marcas d'água
 
 Você pode personalizar ainda mais as marcas d'água ajustando a fonte, o tamanho, a cor e a rotação. Essa flexibilidade garante que sua marca d'água corresponda perfeitamente ao estilo do seu documento.
 
@@ -126,7 +126,7 @@ A fonte padrão para marcas d'água é Calibri com tamanho de fonte 36.
 
 ### Como posso adicionar números de página a partir de uma página específica?
 
-Você pode conseguir isso definindo o número da página inicial em seu documento da seguinte forma:
+Você pode conseguir isso definindo o número da página inicial em seu documento da seguinte maneira:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageStartingNumber(5);

@@ -2,7 +2,7 @@
 title: Dokumentumok szerkesztése és adatvédelem
 linktitle: Dokumentumok szerkesztése és adatvédelem
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan védheti meg dokumentumait és hogyan törölheti az érzékeny adatokat az Aspose.Words for Java segítségével. Lépésről lépésre útmutató forráskóddal.
+description: Ismerje meg, hogyan védheti meg dokumentumait és törölheti az érzékeny adatokat az Aspose.Words for Java használatával. Lépésről lépésre útmutató forráskóddal.
 type: docs
 weight: 14
 url: /hu/java/document-security/document-redaction-data-protection/
@@ -74,7 +74,7 @@ doc.save("redacted_and_protected.docx");
 
 ## Következtetés
 
-Ebben a részletes útmutatóban megvizsgáltuk, hogyan használható az Aspose.Words for Java a bizalmas információk törlésére és adatvédelmi intézkedések alkalmazására a Word dokumentumokon. Ezen lépések követésével különféle iparágakban biztosíthatja dokumentumai bizalmas kezelését és biztonságát.
+Ebben a lépésenkénti útmutatóban megvizsgáltuk, hogyan használhatja az Aspose.Words for Java alkalmazást az érzékeny információk törlésére és adatvédelmi intézkedések alkalmazására a Word dokumentumokon. Ezen lépések követésével biztosíthatja dokumentumai bizalmas kezelését és biztonságát a különböző iparágakban.
 
 ## GYIK
 

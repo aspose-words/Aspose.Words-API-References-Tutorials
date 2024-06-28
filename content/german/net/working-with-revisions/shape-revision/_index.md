@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Schritt 3: Holen Sie sich die Formensammlung und prüfen Sie, ob Änderungen vorliegen
+## Schritt 3: Holen Sie sich die Formensammlung und prüfen Sie, ob Änderungen vorliegen.
 
 Wir rufen die Formensammlung aus dem Dokument ab und überprüfen die mit jeder Form verbundenen Revisionen.
 

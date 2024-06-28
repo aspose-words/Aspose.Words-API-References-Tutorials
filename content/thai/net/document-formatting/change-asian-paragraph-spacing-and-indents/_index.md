@@ -28,8 +28,8 @@ ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
 format.CharacterUnitLeftIndent = 10; // อัปเดต ParagraphFormat.LeftIndent
 format.CharacterUnitRightIndent = 10; // อัปเดต ParagraphFormat.RightIndent
 format.CharacterUnitFirstLineIndent = 20; //อัปเดต ParagraphFormat.FirstLineIndent
-format.LineUnitBefore = 5; // อัปเดต ParagraphFormat.SpaceBefore
-format.LineUnitAfter = 10; // อัปเดต ParagraphFormat.SpaceAfter
+format.LineUnitBefore = 5; // อัปเดตรูปแบบย่อหน้า SpaceBefore
+format.LineUnitAfter = 10; // อัปเดตรูปแบบย่อหน้า SpaceAfter
 ```
 
 ## ขั้นตอนที่ 3: บันทึกเอกสาร
@@ -54,8 +54,8 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent จะได้รับการปรับปรุง
 	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent จะได้รับการปรับปรุง
 	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent จะได้รับการปรับปรุง
-	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore จะได้รับการอัปเดต
-	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter จะได้รับการอัปเดต
+	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore จะได้รับการปรับปรุง
+	format.LineUnitAfter = 10;                 // ParagraphFormat SpaceAfter จะได้รับการอัปเดต
 
 	doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc");
 
@@ -69,9 +69,9 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 
 ### คำถามที่พบบ่อย
 
-#### ถาม: ฟีเจอร์ "เปลี่ยนระยะห่างและการเยื้องย่อหน้าเอเชีย" ใน Aspose.Words สำหรับ .NET ทำหน้าที่อะไร
+#### ถาม: ฟีเจอร์ “เปลี่ยนระยะห่างและการเยื้องย่อหน้าเอเชีย” ใน Aspose.Words สำหรับ .NET ทำหน้าที่อะไร
 
-ตอบ: คุณลักษณะ "เปลี่ยนระยะห่างและการเยื้องย่อหน้าเอเชีย" ใน Aspose.Words สำหรับ .NET ช่วยให้คุณสามารถปรับเปลี่ยนคุณสมบัติระยะห่างและการเยื้องของย่อหน้าเอเชียในเอกสาร Word ได้ คุณสามารถปรับการเยื้องซ้ายและขวา การเยื้องบรรทัดแรก ช่องว่างก่อน และช่องว่างหลังค่าเพื่อควบคุมเค้าโครงและลักษณะของย่อหน้า
+ตอบ: คุณลักษณะ “เปลี่ยนระยะห่างและการเยื้องย่อหน้าเอเชีย” ใน Aspose.Words สำหรับ .NET ช่วยให้คุณสามารถปรับเปลี่ยนคุณสมบัติระยะห่างและการเยื้องของย่อหน้าเอเชียในเอกสาร Word ได้ คุณสามารถปรับการเยื้องซ้ายและขวา การเยื้องบรรทัดแรก ช่องว่างก่อน และช่องว่างหลังค่า เพื่อควบคุมเค้าโครงและรูปลักษณ์ของย่อหน้า
 
 #### ถาม: ฉันจะเปลี่ยนระยะห่างและการเยื้องของย่อหน้าเอเชียโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
 
@@ -79,4 +79,4 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 
 #### ถาม: ฉันสามารถนำการเปลี่ยนแปลงเหล่านี้ไปใช้กับย่อหน้าอื่นในเอกสารได้หรือไม่
 
- ตอบ: ได้ คุณสามารถใช้การเปลี่ยนแปลงเหล่านี้กับย่อหน้าอื่นๆ ในเอกสารได้โดยเข้าไปที่ส่วนที่เกี่ยวข้อง`ParagraphFormat` วัตถุ โค้ดตัวอย่างกำหนดเป้าหมายไปที่ย่อหน้าแรกของเอกสาร แต่คุณสามารถแก้ไขย่อหน้าอื่นๆ ได้โดยการปรับดัชนีใน`Paragraphs` รวบรวมหรือใช้เกณฑ์อื่นเพื่อเลือกย่อหน้าที่ต้องการ
+ ตอบ: ได้ คุณสามารถนำการเปลี่ยนแปลงเหล่านี้ไปใช้กับย่อหน้าอื่นๆ ในเอกสารได้โดยเข้าไปที่ส่วนต่างๆ ตามลำดับ`ParagraphFormat` วัตถุ โค้ดตัวอย่างกำหนดเป้าหมายไปที่ย่อหน้าแรกของเอกสาร แต่คุณสามารถแก้ไขย่อหน้าอื่นๆ ได้โดยการปรับดัชนีใน`Paragraphs` รวบรวมหรือใช้เกณฑ์อื่นเพื่อเลือกย่อหน้าที่ต้องการ

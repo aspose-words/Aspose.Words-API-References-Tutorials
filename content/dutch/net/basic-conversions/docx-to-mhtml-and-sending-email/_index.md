@@ -12,7 +12,7 @@ In deze stapsgewijze zelfstudie laten we u zien hoe u Aspose.Words voor .NET kun
 
  Om aan de slag te gaan, moet u ervoor zorgen dat u zowel de Aspose.Words voor .NET- als de Aspose.Email-bibliotheken in uw ontwikkelomgeving hebt geïnstalleerd en ingesteld. Als u dit nog niet hebt gedaan, downloadt en installeert u de bibliotheken van[Aspose.Releases](https://releases.aspose.com/words/net/).
 
-## Stap 1: Het documentobject initialiseren
+## Stap 1: Initialiseren van het documentobject
 
  Initialiseer eerst de`Document`object met het pad naar uw brondocument in Docx-indeling:
 
@@ -103,7 +103,7 @@ Als u een e-mail wilt verzenden met een MHTML-bestand als bijlage, kunt u biblio
 
 #### Wat zijn de beperkingen van het e-mailconversie- en verzendproces?
 
-De beperkingen van het e-mailconversie- en verzendproces zijn afhankelijk van de specifieke tools die u gebruikt. Voor sommige tools kunnen beperkingen gelden met betrekking tot de bestandsgrootte, beveiligingsinstellingen of ondersteunde e-mailprotocollen. Het is belangrijk om tools te kiezen die bij uw behoeften passen en bij de implementatie rekening te houden met deze beperkingen.
+De beperkingen van het e-mailconversie- en verzendproces zijn afhankelijk van de specifieke tools die u gebruikt. Voor sommige hulpprogramma's gelden mogelijk beperkingen wat betreft de bestandsgrootte, beveiligingsinstellingen of ondersteunde e-mailprotocollen. Het is belangrijk om tools te kiezen die bij uw behoeften passen en bij de implementatie rekening te houden met deze beperkingen.
 
 #### Is Aspose een betrouwbaar hulpmiddel voor DOCX naar MHTML-conversie en het verzenden van e-mail?
 

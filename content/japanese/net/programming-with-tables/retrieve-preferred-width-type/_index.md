@@ -8,7 +8,7 @@ weight: 10
 url: /ja/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書の表のセルから優先幅のタイプとその値を取得する方法を学習します。ステップバイステップのガイドに従ってコードを理解し、この機能を実装していきます。このチュートリアルの最後には、Word 文書表の特定のセルの推奨幅タイプ (絶対、相対、または自動) とその値を取得できるようになります。
+このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書の表のセルから推奨される幅のタイプとその値を取得する方法を学習します。ステップバイステップのガイドに従ってコードを理解し、この機能を実装していきます。このチュートリアルの最後には、Word 文書表の特定のセルの推奨幅タイプ (絶対、相対、または自動) とその値を取得できるようになります。
 
 ## ステップ 1: プロジェクトのセットアップ
 1. Visual Studio を起動し、新しい C# プロジェクトを作成します。
@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/retrieve-preferred-width-type/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 

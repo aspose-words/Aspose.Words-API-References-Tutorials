@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Określ uporządkowaną listę.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Określ podkreślenie kursywy w tekście.
+// Określ akcent włoski w tekście.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);
@@ -177,7 +177,7 @@ tym samouczku omówiliśmy podstawy używania Markdown w Aspose.Words dla Java. 
 ### Czy mogę używać Aspose.Words dla Java do konwersji Markdown na dokumenty Word? 
    Tak, możesz użyć Aspose.Words for Java do konwersji dokumentów Markdown na dokumenty Word i odwrotnie.
 
-### Czy korzystanie z Aspose.Words dla Java jest darmowe? 
+### Czy korzystanie z Aspose.Words dla Java jest bezpłatne? 
     Aspose.Words for Java jest produktem komercyjnym i do jego używania wymagana jest licencja. Licencję można uzyskać od[Tutaj](https://purchase.aspose.com/buy).
 
 ### Czy są dostępne jakieś tutoriale lub dokumentacja dla Aspose.Words dla Java? 

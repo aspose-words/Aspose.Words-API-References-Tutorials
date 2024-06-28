@@ -1,6 +1,6 @@
 ---
-title: Settext-Überschrift
-linktitle: Settext-Überschrift
+title: Setex-Überschrift
+linktitle: Setex-Überschrift
 second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Setext-Überschriften zum Formatieren Ihrer Dokumente mit Aspose.Words für .NET verwenden.
 type: docs

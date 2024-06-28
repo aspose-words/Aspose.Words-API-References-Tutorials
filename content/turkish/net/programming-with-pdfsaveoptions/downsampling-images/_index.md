@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
-`Resolution` özelliği, görüntülerin hedef çözünürlüğünü ve`ResolutionThreshold`özelliği, görüntülerin küçültülmeyeceği minimum çözünürlüğü belirtir.
+`Resolution` özelliği, görüntülerin hedef çözünürlüğünü ve`ResolutionThreshold`Özellik, görüntülerin küçültülmeyeceği minimum çözünürlüğü belirtir.
 
 ## 3. Adım: Belgeyi PDF'ye Dönüştürün
 

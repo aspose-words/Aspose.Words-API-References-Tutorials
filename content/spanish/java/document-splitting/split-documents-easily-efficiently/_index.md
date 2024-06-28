@@ -134,7 +134,7 @@ Cuando se trata de documentos grandes, es esencial considerar optimizaciones del
 
 En esta guía, exploramos cómo dividir documentos de manera fácil y eficiente usando Aspose.Words para Java. Al dividir documentos grandes en partes más pequeñas y manejables, los desarrolladores pueden trabajar con secciones específicas y simplificar las tareas de procesamiento de documentos. Aspose.Words para Java ofrece varios métodos para dividir documentos según páginas, párrafos, encabezados y secciones, brindando a los desarrolladores la flexibilidad de adaptar el proceso de división a sus necesidades específicas.
 
-## 12. Preguntas frecuentes
+## 12.Preguntas frecuentes
 
 ### P1. ¿Puede Aspose.Words para Java dividir documentos de diferentes formatos como DOC y DOCX?
 

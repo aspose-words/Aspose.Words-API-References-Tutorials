@@ -277,7 +277,7 @@ Dominar la inteligencia de documentos con Python y Aspose.Words abre un mundo de
 Document Intelligence se refiere al proceso de extraer automáticamente información valiosa de documentos, como texto, metadatos, tablas y gráficos. Implica analizar datos no estructurados dentro de los documentos y convertirlos en formatos estructurados y utilizables.
 
 ### ¿Por qué es importante la inteligencia documental?
-La inteligencia documental es esencial porque permite a las organizaciones optimizar sus flujos de trabajo documentales, mejorar la toma de decisiones basada en datos y mejorar la productividad general. Permite la extracción eficiente de conocimientos de documentos ricos en datos, lo que conduce a mejores resultados comerciales.
+Document Intelligence es esencial porque permite a las organizaciones optimizar sus flujos de trabajo documentales, mejorar la toma de decisiones basada en datos y mejorar la productividad general. Permite la extracción eficiente de conocimientos de documentos ricos en datos, lo que conduce a mejores resultados comerciales.
 
 ### ¿Cómo ayuda Aspose.Words en Document Intelligence con Python?
 Aspose.Words es una poderosa biblioteca de Python que proporciona una amplia gama de capacidades de procesamiento de documentos. Permite a los usuarios crear, editar, extraer y manipular documentos de Word mediante programación, lo que la convierte en una herramienta valiosa para tareas de inteligencia documental.

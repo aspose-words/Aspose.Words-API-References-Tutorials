@@ -66,7 +66,7 @@ Met deze code kunt u automatisch de ruimte tussen Aziatische en Latijnse tekst i
 
 ## Conclusie
 
-In deze zelfstudie hebben we het proces van het gebruik van de spatiefunctie onderzocht om de afstand tussen Aziatische en Latijnse tekst in een Word-document aan te passen met Aspose.Words voor .NET. Door de beschreven stappen te volgen, kunt u zorgen voor de juiste spatiëring en uitlijning, wat vooral handig is als u te maken heeft met gemengde Aziatische en Latijnse inhoud.
+In deze zelfstudie hebben we het proces onderzocht van het gebruik van de functie Spatie om de afstand tussen Aziatische en Latijnse tekst in een Word-document aan te passen met Aspose.Words voor .NET. Door de beschreven stappen te volgen, kunt u zorgen voor de juiste spatiëring en uitlijning, wat vooral handig is als u te maken heeft met gemengde Aziatische en Latijnse inhoud.
 
 ### Veelgestelde vragen
 

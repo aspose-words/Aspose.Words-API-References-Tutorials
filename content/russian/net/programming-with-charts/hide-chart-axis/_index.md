@@ -59,7 +59,7 @@ chart.AxisY.Hidden = true;
 
 ## Шаг 5: Сохраните документ
 
- Наконец, сохраните документ в указанном каталоге, используя команду`Save` метод`Document` объект.
+ Наконец, сохраните документ в указанном каталоге, используя команду`Save` метод`Document` Объект Object.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Ustaw domyślny folder czcionek
-Następnie możesz ustawić domyślny folder czcionek za pomocą`FontSettings.DefaultInstance` klasa i`SetFontsFolder()` metoda. Określ ścieżkę do folderu czcionek, którego chcesz używać jako folderu domyślnego.
+ Następnie możesz ustawić domyślny folder czcionek za pomocą`FontSettings.DefaultInstance` klasa i`SetFontsFolder()`metoda. Określ ścieżkę do folderu czcionek, którego chcesz używać jako folderu domyślnego.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

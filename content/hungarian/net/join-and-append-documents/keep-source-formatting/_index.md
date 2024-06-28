@@ -48,7 +48,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 ```
 
-Ezzel befejeződik a forrásdokumentumnak a céldokumentumhoz való hozzáfűzése, miközben megtartja az eredeti formázást az Aspose.Words for .NET használatával.
+Ez befejezi a forrásdokumentumnak a céldokumentumhoz való hozzáfűzését, miközben megtartja az eredeti formázást az Aspose.Words for .NET használatával.
 
 ### Példa forráskód a Keep Source Formatting alkalmazáshoz az Aspose.Words for .NET használatával 
 

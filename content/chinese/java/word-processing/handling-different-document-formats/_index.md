@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### 创建表
 
 ```java
-//创建一个 3 行 4 列的表
+//创建一个 3 行 4 列的表。
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

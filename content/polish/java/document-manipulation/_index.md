@@ -31,7 +31,7 @@ Po zainstalowaniu Aspose.Words czas rozpocząć tworzenie i modyfikowanie dokume
 
 Chcesz konwertować dokumenty pomiędzy różnymi formatami? Aspose.Words dla Java ma wszystko, czego potrzebujesz. W tym samouczku dowiesz się, jak przekonwertować DOCX na PDF, HTML na DOCX i wiele innych sztuczek konwersji.
 
-## Zwiększanie umiejętności manipulacji dokumentami
+## Zwiększanie umiejętności manipulowania dokumentami
 
 W tym momencie opanowałeś podstawy Aspose.Words dla Java. Ale jest o wiele więcej do odkrycia! 
 
@@ -52,7 +52,7 @@ Rozpocznij swoją podróż edukacyjną już dziś i odblokuj nieskończone możl
 Zwiększ przejrzystość dokumentu dzięki Aspose.Words dla opcji czyszczenia Java. Dowiedz się, jak usunąć puste akapity, nieużywane regiony i nie tylko.
 ### [Korzystanie z pól w Aspose.Words dla Java](./using-fields/)
 Odblokuj automatyzację dokumentów za pomocą Aspose.Words dla Java. Dowiedz się, jak scalać, formatować i wstawiać obrazy w dokumentach Java. Obszerny przewodnik i przykłady kodu umożliwiające wydajne przetwarzanie dokumentów.
-### [Używanie danych XML w Aspose.Words dla Java](./using-xml-data/)
+### [Korzystanie z danych XML w Aspose.Words dla Java](./using-xml-data/)
 Odblokuj moc Aspose.Words dla Java. Naucz się obsługi danych XML, korespondencji seryjnej i składni wąsów dzięki samouczkom krok po kroku.
 ### [Wyodrębnianie treści z dokumentów w Aspose.Words dla Java](./extracting-content-from-documents/)
 Dowiedz się, jak z łatwością wyodrębniać zawartość z dokumentów za pomocą Aspose.Words dla Java. Nasz przewodnik krok po kroku i próbki kodu upraszczają ten proces.

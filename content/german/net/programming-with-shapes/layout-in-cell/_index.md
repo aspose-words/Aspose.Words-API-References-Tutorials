@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Schritt 3: Erstellen Sie die Tabelle
- Benutzen Sie die`StartTable`, `EndTable`, `InsertCell` , Und`Write` Methoden der`DocumentBuilder` Objekt zum Erstellen einer Tabelle. Stellen Sie die gewünschte Zeilenhöhe und Höhenregel mit ein`RowFormat` Eigenschaften.
+ Benutzen Sie die`StartTable`, `EndTable`, `InsertCell` , Und`Write` Methoden der`DocumentBuilder`Objekt zum Erstellen einer Tabelle. Stellen Sie die gewünschte Zeilenhöhe und Höhenregel mit ein`RowFormat` Eigenschaften.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Schritt 6: Fügen Sie die Form in das Dokument ein
-Fügen Sie die Wasserzeichenform mit in das Dokument ein`InsertNode` Methode der`DocumentBuilder` Objekt. Positionieren Sie die Form mit dem`MoveTo` Methode, um es nach der letzten Ausführung im Dokument zu platzieren.
+ Fügen Sie die Wasserzeichenform mit in das Dokument ein`InsertNode` Methode der`DocumentBuilder` Objekt. Positionieren Sie die Form mit dem`MoveTo` Methode, um es nach der letzten Ausführung im Dokument zu platzieren.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

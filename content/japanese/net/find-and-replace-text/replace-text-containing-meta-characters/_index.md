@@ -57,7 +57,7 @@ int count = doc.Range.Replace("section&p", "section&p----------------------&p", 
 
 ## ステップ 5: カスタム テキスト タグを置換する
 
-私たちはまた、`Range.Replace`カスタムを置き換えるメソッド「{insert-section}" セクション区切りのあるテキスト タグ。この例では、 " を置き換えます。{insert-section}" と "&b" を組み合わせてセクション区切りを挿入します。
+また、`Range.Replace`カスタムを置き換えるメソッド「{insert-section}" セクション区切りのあるテキスト タグ。この例では、 " を置き換えます。{insert-section}" と "&b" を組み合わせてセクション区切りを挿入します。
 
 ```csharp
 count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);

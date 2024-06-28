@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Sestavte stůl
- Použijte`StartTable`, `EndTable`, `InsertCell` , a`Write` metody`DocumentBuilder` objekt k sestavení tabulky. Nastavte požadovanou výšku řádku a pravidlo výšky pomocí`RowFormat` vlastnosti.
+ Použijte`StartTable`, `EndTable`, `InsertCell` , a`Write` metody`DocumentBuilder`objekt k sestavení tabulky. Nastavte požadovanou výšku řádku a pravidlo výšky pomocí`RowFormat` vlastnosti.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Krok 6: Vložte tvar do dokumentu
-Vložte tvar vodoznaku do dokumentu pomocí`InsertNode` metoda`DocumentBuilder` objekt. Umístěte tvar pomocí`MoveTo` způsob, jak jej umístit za poslední spuštění v dokumentu.
+ Vložte tvar vodoznaku do dokumentu pomocí`InsertNode` metoda`DocumentBuilder` objekt. Umístěte tvar pomocí`MoveTo` způsob, jak jej umístit za poslední spuštění v dokumentu.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

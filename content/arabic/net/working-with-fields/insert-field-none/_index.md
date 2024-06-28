@@ -2,7 +2,7 @@
 title: أدخل الحقل لا شيء
 linktitle: أدخل الحقل لا شيء
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدخال بطل AUCUN في مستنداتك Word مع Aspose.Words لـ .NET.
+description: تعرف على كيفية إنشاء المستندات باستخدام AUCUN في Word مع Aspose.Words لـ .NET.
 type: docs
 weight: 10
 url: /ar/net/working-with-fields/insert-field-none/

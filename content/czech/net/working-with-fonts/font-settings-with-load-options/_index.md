@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fonts/font-settings-with-load-options/
 ---
-V tomto tutoriálu vám ukážeme, jak používat možnosti načítání s nastavením písma v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Volby načítání umožňují zadat další nastavení při načítání dokumentu, včetně nastavení písma. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+tomto tutoriálu vám ukážeme, jak používat možnosti načítání s nastavením písma v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Volby načítání umožňují zadat další nastavení při načítání dokumentu, včetně nastavení písma. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
 
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující položky:
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Nakonfigurujte možnosti načítání pomocí nastavení písma
- Dále vytvoříme instanci`LoadOptions` určete nastavení písma vytvořením nové instance`FontSettings` a přiřadit jej`loadOptions.FontSettings`.
+ Dále vytvoříme instanci`LoadOptions` a určete nastavení písma vytvořením nové instance`FontSettings` a přiřadit jej`loadOptions.FontSettings`.
 
 ```csharp
 // Nakonfigurujte možnosti načítání pomocí nastavení písma
@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
 ## Závěr
-V tomto tutoriálu jsme viděli, jak používat možnosti načítání s nastavením písma v dokumentu aplikace Word s Aspose.Words pro .NET. Volby načítání umožňují přizpůsobit načítání dokumentu zadáním dalších nastavení, včetně nastavení písma. Neváhejte použít tuto funkci k přizpůsobení načítání dokumentů vašim konkrétním potřebám.
+tomto tutoriálu jsme viděli, jak používat možnosti načítání s nastavením písma v dokumentu aplikace Word s Aspose.Words pro .NET. Volby načítání umožňují přizpůsobit načítání dokumentu zadáním dalších nastavení, včetně nastavení písma. Neváhejte použít tuto funkci k přizpůsobení načítání dokumentů vašim konkrétním potřebám.
 
 ### FAQ
 
@@ -61,7 +61,7 @@ V tomto tutoriálu jsme viděli, jak používat možnosti načítání s nastave
 
 #### Otázka: Jaká další nastavení písma mohu určit pomocí možností načítání v Aspose.Words?
 
-Odpověď: Kromě zadání výchozího písma můžete také určit další nastavení písma, jako je výchozí kódování, pomocí příslušných vlastností`LoadOptions` třídy, jako např`DefaultEncoding`.
+ Odpověď: Kromě zadání výchozího písma můžete také určit další nastavení písma, jako je výchozí kódování, pomocí příslušných vlastností`LoadOptions` třídy, jako např`DefaultEncoding`.
 
 #### Otázka: Co se stane, když zadané výchozí písmo není k dispozici při načítání dokumentu?
 

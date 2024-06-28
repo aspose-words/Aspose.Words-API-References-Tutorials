@@ -91,7 +91,7 @@ Ecco il codice sorgente completo per la funzione Applica bordi e ombreggiatura a
 
 ## Conclusione
 
-In questo tutorial, abbiamo imparato come applicare bordi e ombreggiature a un paragrafo in un documento Word utilizzando Aspose.Words per .NET. Configurando i paragrafi`Borders` E`Shading` proprietà, siamo stati in grado di impostare lo stile del bordo, il colore della linea e il colore di riempimento per il paragrafo. Aspose.Words per .NET fornisce potenti funzionalità di formattazione per personalizzare l'aspetto dei paragrafi e migliorare la rappresentazione visiva dei tuoi documenti.
+ In questo tutorial, abbiamo imparato come applicare bordi e ombreggiature a un paragrafo in un documento Word utilizzando Aspose.Words per .NET. Configurando i paragrafi`Borders` E`Shading` proprietà, siamo stati in grado di impostare lo stile del bordo, il colore della linea e il colore di riempimento per il paragrafo. Aspose.Words per .NET fornisce potenti funzionalità di formattazione per personalizzare l'aspetto dei paragrafi e migliorare la rappresentazione visiva dei tuoi documenti.
 
 ### Domande frequenti
 
@@ -100,13 +100,13 @@ In questo tutorial, abbiamo imparato come applicare bordi e ombreggiature a un p
 R: Per applicare bordi e ombreggiature a un paragrafo in un documento di Word utilizzando Aspose.Words per .NET, attenersi alla seguente procedura:
 1.  Creare un nuovo documento e a`DocumentBuilder` oggetto.
 2.  Configura i bordi del paragrafo accedendo a`Borders` proprietà del`ParagraphFormat` e impostare lo stile del bordo per ciascun lato.
-3.  Configura il riempimento del paragrafo accedendo al file`Shading` proprietà del`ParagraphFormat` e specificando la trama e i colori di riempimento.
+3. Configura il riempimento del paragrafo accedendo al file`Shading` proprietà del`ParagraphFormat` e specificando la trama e i colori di riempimento.
 4.  Aggiungi contenuto al paragrafo utilizzando il`Write` metodo del`DocumentBuilder`.
 5.  Salvare il documento utilizzando il file`Save` metodo.
 
 #### D: Come posso impostare lo stile del bordo per ciascun lato del paragrafo?
 
- R: Per impostare lo stile del bordo per ciascun lato del paragrafo, puoi accedere a`Borders` proprietà del`ParagraphFormat` e impostare il`LineStyle` proprietà per ciascuno`BorderType` (per esempio,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). È possibile specificare diversi stili di linea come`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, eccetera.
+ R: Per impostare lo stile del bordo per ciascun lato del paragrafo, puoi accedere a`Borders` proprietà del`ParagraphFormat` e impostare il`LineStyle` proprietà per ciascuno`BorderType` (per esempio.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). È possibile specificare diversi stili di linea come`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, eccetera.
 
 #### D: Come posso specificare la trama e i colori di riempimento per l'ombreggiatura del paragrafo?
 

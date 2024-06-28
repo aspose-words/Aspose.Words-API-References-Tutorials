@@ -21,7 +21,7 @@ A tábla felépítéséhez új dokumentumot kell létrehoznunk, és inicializál
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Hozza létre a dokumentumot, és inicializálja a dokumentumgenerátort
+// Hozzon létre egy dokumentumot, és inicializálja a dokumentumgenerátort
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -57,7 +57,7 @@ builder.Write("Contents of cell 2 of row 2.");
 // Hívja a következő metódust a második sor befejezéséhez
 builder. EndRow();
 
-// Jelzi, hogy az asztal építése befejeződött
+// Jelzi, hogy az asztal felépítése befejeződött
 builder. EndTable();
 ```
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 	builder.StartTable();
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 1 Content.");
-	// Építse meg a második cellát.
+	// Építsd meg a második cellát.
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 2 Content.");
 	// Hívja a következő metódust a sor befejezéséhez és egy új sor indításához.
@@ -95,7 +95,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 	// Építse fel a második sor első celláját.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 1 Content");
-	// Építse meg a második cellát.
+	// Építsd meg a második cellát.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();

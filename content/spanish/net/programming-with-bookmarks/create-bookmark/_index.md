@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Paso 3: crear marcadores anidados
 
-También podemos crear marcadores anidados dentro de un marcador principal. Usamos lo mismo`StartBookmark` y`EndBookmark` Métodos para crear y finalizar marcadores anidados:
+ También podemos crear marcadores anidados dentro de un marcador principal. Usamos lo mismo`StartBookmark` y`EndBookmark` Métodos para crear y finalizar marcadores anidados:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");

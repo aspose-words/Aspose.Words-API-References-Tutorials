@@ -2,86 +2,122 @@
 title: サフィックスなしで置換を取得
 linktitle: サフィックスなしで置換を取得
 second_title: Aspose.Words ドキュメント処理 API
-description: このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書でサフィックスのないオーバーライドを取得する方法を学びます。
+description: Aspose.Words for .NET でサフィックスなしのフォント置換を管理する方法を学習します。ステップバイステップのガイドに従って、ドキュメントを常に完璧に見せることができます。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-このチュートリアルでは、.NET 用の Aspose.Words ライブラリを使用して、Word 文書内の接尾辞なしでオーバーライドを取得する方法を説明します。接尾辞のない置換は、ドキュメントを表示または印刷する際のフォント置換の問題を解決するために使用されます。 .NET プロジェクトのコードを理解して実装できるように、段階的に説明します。
+Aspose.Words for .NET を使用したフォント置換の管理に関するこの包括的なガイドへようこそ。文書内でフォントが正しく表示されないことに悩んだことがあるなら、ここが正しい場所です。このチュートリアルでは、サフィックスのないフォント置換を効率的に処理するための段階的なプロセスを説明します。始めましょう！
 
 ## 前提条件
-始める前に、次のものが揃っていることを確認してください。
-- C# プログラミング言語に関する実践的な知識
-- プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
+
+チュートリアルに入る前に、次のものが揃っていることを確認してください。
+
+- C# の基本知識: C# プログラミングを理解すると、手順に従って実装することが容易になります。
+-  Aspose.Words for .NET ライブラリ: からライブラリをダウンロードしてインストールします。[ダウンロードリンク](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio などの開発環境をセットアップして、コードを作成して実行します。
+- サンプルドキュメント: サンプルドキュメント (例:`Rendering.docx`) このチュートリアルで使用します。
+
+## 名前空間のインポート
+
+まず、Aspose.Words が提供するクラスとメソッドにアクセスするために必要な名前空間をインポートする必要があります。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
+```
 
 ## ステップ 1: ドキュメント ディレクトリを定義する
-まず、Word 文書の場所へのディレクトリ パスを設定する必要があります。交換する`"YOUR DOCUMENT DIRECTORY"`コード内で適切なパスを指定します。
+
+まず、ドキュメントが存在するディレクトリを指定します。これは、作業したいドキュメントを見つけるのに役立ちます。
 
 ```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## ステップ 2: ドキュメントをロードし、サフィックスなしで置換を構成する
-次に、次のコマンドを使用してドキュメントをロードします。`Document`クラスを作成し、`DocumentSubstitutionWarnings`クラス。フォントが含まれるフォルダーを指定して、フォント ソースも追加します。
-
-```csharp
-//ドキュメントをロードし、接尾辞なしで置換を構成します
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## ステップ 3: ドキュメントを保存する
-最後に、サフィックスなしのオーバーライドを適用してドキュメントを保存します。
-
-```csharp
-//文書を保存する
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### Aspose.Words for .NET を使用したサフィックスなしの置換の取得のサンプル ソース コード 
-```csharp
-
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## ステップ 2: 置換警告ハンドラーを設定する
+
+次に、ドキュメント処理中にフォントの置換が発生するたびに通知する警告ハンドラーを設定する必要があります。これは、フォントの問題を検出して処理するために非常に重要です。
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## ステップ 3: カスタム フォント ソースを追加する
+
+この手順では、Aspose.Words が正しいフォントを見つけて使用できるようにするために、カスタム フォント ソースを追加します。これは、特定のフォントをカスタム ディレクトリに保存している場合に特に便利です。
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+このコードでは:
+- 現在のフォント ソースを取得し、新しいフォント ソースを追加します。`FolderFontSource`カスタム フォント ディレクトリを指します (`C:\\MyFonts\\`）。
+- 次に、この新しいリストでフォント ソースを更新します。
+
+## ステップ 4: ドキュメントを保存する
+
+最後に、フォント置換設定を適用した後、ドキュメントを保存します。このチュートリアルでは、PDF として保存します。
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## ステップ 5: 警告ハンドラー クラスを作成する
+
+警告を効果的に処理するには、`IWarningCallback`インターフェース。このクラスは、フォント置換の警告をキャプチャしてログに記録します。
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+このクラスでは:
+- の`Warning`このメソッドは、フォントの置換に関連する警告をキャプチャします。
+- の`FontWarnings`コレクションには、さらなる検査またはログ記録のためにこれらの警告が保存されます。
+
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内の接尾辞なしでオーバーライドを取得する方法を説明しました。接尾辞のない置換は、フォント置換の問題を解決するのに役立ちます。ドキュメントの表示と印刷を改善するために、この機能を自由に使用してください。
 
-### よくある質問
+これで、Aspose.Words for .NET を使用してサフィックスなしのフォント置換を処理するプロセスをマスターできました。この知識により、システムで使用可能なフォントに関係なく、ドキュメントが意図した外観を維持できるようになります。 Aspose.Words の機能を最大限に活用するには、さまざまな設定とソースを試し続けてください。
 
-#### Q: Aspose.Words がフォント置換にサフィックスを追加するのはなぜですか?
+## よくある質問
 
-A: Aspose.Words は、元のフォントと置換されたフォントの間の競合を避けるために、フォント置換にサフィックスを追加します。これにより、ドキュメントの変換および操作時に最大限の互換性が保証されます。
+### Q1: 複数のカスタム ディレクトリのフォントを使用するにはどうすればよいですか?
 
-#### Q: Aspose.Words でサフィックスのないフォント置換を取得するにはどうすればよいですか?
+複数追加することもできます`FolderFontSource`インスタンスへの`fontSources`フォント ソースをリストし、それに応じて更新します。
 
- A: Aspose.Words でサフィックスのないフォント置換を取得するには、`FontSubstitutionSettings`クラスと`RemoveSuffixes`財産。このプロパティを次のように設定する`true`接尾辞を追加せずにフォント置換を取得します。
+### Q2: Aspose.Words for .NET の無料トライアルはどこでダウンロードできますか?
 
-#### Q: Aspose.Words のフォント置換へのサフィックスの追加を無効にすることはできますか?
+無料トライアル版は次からダウンロードできます。[Asposeの無料トライアルページ](https://releases.aspose.com/).
 
-A: いいえ、Aspose.Words のフォント置換へのサフィックスの追加を無効にすることはできません。ドキュメントの互換性と一貫性を確保するために、デフォルトでサフィックスが追加されます。
+###  Q3: を使用して複数の種類の警告を処理できますか?`IWarningCallback`?
 
-#### Q: Aspose.Words のフォント置換で不要な接尾辞を除外するにはどうすればよいですか?
+はい`IWarningCallback`インターフェイスを使用すると、フォントの置換だけでなく、さまざまな種類の警告を処理できます。
 
- A: Aspose.Words のフォント置換で不要なサフィックスをフィルタリングして除外するには、次のような文字列処理テクニックを使用できます。`Replace`または`Substring`含めたくない特定のサフィックスを削除するメソッド。
+### Q4: Aspose.Words のサポートはどこで受けられますか?
+
+サポートについては、次のサイトにアクセスしてください。[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8).
+
+### Q5: 一時ライセンスを購入することはできますか?
+
+はい、次のサイトから一時ライセンスを取得できます。[一時ライセンスのページ](https://purchase.aspose.com/temporary-license/).

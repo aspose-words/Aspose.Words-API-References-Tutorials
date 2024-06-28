@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", 
 
 通过创建一个实例来配置另存为 PDF 选项`PdfSaveOptions`类并设置适当的页眉和页脚书签选项。
 
-使用以下命令将文档保存为 PDF 格式`Save`的方法`Document`指定路径和保存选项的类。
+使用以下命令将文档保存为 PDF 格式`Save`的方法`Document`类指定路径和保存选项。
 
 ### 问：将页眉和页脚书签导出到 PDF 文档有什么好处？
 答：将页眉和页脚书签导出到 PDF 文档的优点是：

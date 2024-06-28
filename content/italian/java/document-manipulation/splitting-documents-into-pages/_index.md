@@ -73,7 +73,7 @@ In questo passaggio, iteriamo su ogni pagina del documento e la salviamo come do
 
 ## 6. Esecuzione del codice
 
-Per eseguire correttamente questo codice, assicurati di aver configurato il tuo ambiente e aggiunto la libreria Aspose.Words per Java al tuo progetto. Quindi, esegui il codice e il tuo documento sarà diviso in pagine separate.
+Per eseguire correttamente questo codice, assicurati di aver configurato il tuo ambiente e aggiunto la libreria Aspose.Words per Java al tuo progetto. Quindi, esegui il codice e il tuo documento verrà diviso in pagine separate.
 
 ## Codice sorgente DocumentPageSplitter
 

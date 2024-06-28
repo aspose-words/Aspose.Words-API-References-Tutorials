@@ -19,13 +19,13 @@ Ezek a linkek néhány hasznos forráshoz:
 - [Munka a megjegyzésekkel](./net/working-with-comments/)   
 - [Mezőkkel való munka](./net/working-with-fields/)   
 - [lábjegyzet és a végjegyzet használata](./net/working-with-footnote-and-endnote/)   
-- [A FormFields használata](./net/working-with-formfields/)   
+- [FormFields használata](./net/working-with-formfields/)   
 - [Fejlécek és láblécek használata](./net/working-with-headers-and-footers/)   
 - [Az elválasztás használata](./net/working-with-hyphenation/)   
 - [Munka a listával](./net/working-with-list/)   
 - [Munka a Markdownnal](./net/working-with-markdown/)   
 - [Munka a Node-dal](./net/working-with-node/)   
-- [Munka a felülvizsgálatokkal](./net/working-with-revisions/)   
+- [Munka a véleményekkel](./net/working-with-revisions/)   
 - [Munka szövegdobozokkal](./net/working-with-textboxes/)   
 - [Felosztott dokumentum](./net/split-document/)   
 - [Tartalom hozzáadása a Documentbuilder segítségével](./net/add-content-using-documentbuilder/)
@@ -38,7 +38,7 @@ Ezek a linkek néhány hasznos forráshoz:
 
 ## Aspose.Words dokumentumfeldolgozási oktatóanyagok Java-hoz
 {{% alert color="primary" %}}
-Ez az átfogó oktatóanyag-gyűjtemény lépésről lépésre útmutatást ad a Microsoft Word dokumentumok hatékony programozott kezeléséhez. Ezek az oktatóanyagok a funkciók széles skáláját fedik le, a dokumentumok létrehozásától és kezelésétől a speciális funkciókig, például a körlevél-egyesítésig, a táblázatformázásig és a dokumentumtitkosításig. Ezen oktatóanyagok követésével a fejlesztők zökkenőmentesen integrálhatják az Aspose.Words-t Java-projektjeikbe, lehetővé téve a hatékony dokumentumfeldolgozást, és professzionális szintű dokumentumkezelési képességekkel bővíthetik alkalmazásaikat. 
+Ez az átfogó oktatóanyag-gyűjtemény lépésről lépésre útmutatást ad a Microsoft Word dokumentumok hatékony programozott kezeléséhez. Ezek az oktatóanyagok a funkciók széles skáláját fedik le, a dokumentumok létrehozásától és kezelésétől a speciális funkciókig, például a körlevél-egyesítésig, a táblázatformázásig és a dokumentumtitkosításig. Ezen oktatóanyagok követésével a fejlesztők zökkenőmentesen integrálhatják az Aspose.Words-t Java-projektjeikbe, lehetővé téve a hatékony dokumentumfeldolgozást és professzionális szintű dokumentumkezelési képességekkel bővítve alkalmazásaikat. 
 {{% /alert %}}
 
 Ezek a linkek néhány hasznos forráshoz:
@@ -46,7 +46,7 @@ Ezek a linkek néhány hasznos forráshoz:
 - [Táblázat feldolgozása](./java/table-processing/)
 - [Dokumentum stílus](./java/document-styling/)
 - [Dokumentum egyesítése](./java/document-merging/)
-- [Dokumentum konvertálása](./java/document-converting/)
+- [Dokumentum konvertálás](./java/document-converting/)
 - [Dokumentumnyomtatás](./java/document-printing/)
 - [Dokumentum renderelés](./java/document-rendering/)
 - [Dokumentumbiztonság](./java/document-security/)

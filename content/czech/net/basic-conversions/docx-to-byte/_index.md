@@ -78,7 +78,7 @@ Chcete-li převést soubor DOCX na bajty, můžete použít různé softwarové 
 
 #### Jaká jsou omezení procesu konverze?
 
-Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít omezení související s velikostí nebo složitostí vstupního dokumentu. Je důležité vybrat si nástroj, který zvládne požadavky vašeho konverzního úkolu.
+Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít související omezení velikosti nebo složitosti vstupního dokumentu. Je důležité vybrat si nástroj, který zvládne požadavky vašeho konverzního úkolu.
 
 ### Mohu zachovat formátování původního dokumentu?
 

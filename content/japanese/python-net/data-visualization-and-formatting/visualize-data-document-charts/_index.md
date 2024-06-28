@@ -63,7 +63,7 @@ builder = aw.DocumentBuilder(doc)
 chart = builder.insert_chart(aw.drawing.charts.ChartType.COLUMN, 432, 252)
 ```
 
-## グラフのカスタマイズ
+## チャートのカスタマイズ
 
 好みに応じてグラフの外観とラベルをカスタマイズできます。たとえば、グラフのタイトルと軸のラベルを設定できます。
 

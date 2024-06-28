@@ -119,7 +119,7 @@ A: Word 文書からフッターを削除するには、まず Aspose.Words の 
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Name_of_document.docx");
 ```
 

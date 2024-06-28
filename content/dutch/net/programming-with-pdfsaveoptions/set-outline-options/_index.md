@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Stap 3: Configureer opties voor opslaan als PDF met planopties
 
- Om overzichtsopties in de gegenereerde PDF in te stellen, moeten we de`PdfSaveOptions` voorwerp. We kunnen het aantal kopoverzichtniveaus instellen (`HeadingsOutlineLevels`) en het aantal uitgebreide overzichtsniveaus (`ExpandedOutlineLevels`).
+Om overzichtsopties in de gegenereerde PDF in te stellen, moeten we de`PdfSaveOptions` voorwerp. We kunnen het aantal kopoverzichtniveaus instellen (`HeadingsOutlineLevels`) en het aantal uitgebreide overzichtsniveaus (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

@@ -269,7 +269,7 @@ else:
 
 ## Wniosek
 
-Opanowanie inteligencji dokumentów za pomocą Pythona i Aspose.Words otwiera świat możliwości. Od wydajnego przetwarzania dokumentów po automatyzację przepływów pracy – połączenie Pythona i Aspose.Words umożliwia firmom wyciąganie cennych wniosków z dokumentów bogatych w dane.
+Opanowanie inteligencji dokumentów za pomocą Pythona i Aspose.Words otwiera świat możliwości. Od wydajnego przetwarzania dokumentów po automatyzację przepływów pracy, połączenie Pythona i Aspose.Words umożliwia firmom wyciąganie cennych wniosków z dokumentów bogatych w dane.
 
 ## Często zadawane pytania
 

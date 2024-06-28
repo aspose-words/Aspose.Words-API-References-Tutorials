@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. lépés: Állítsa be a folyamatos szakaszindítást
 
- Ha azt szeretné, hogy a forrásdokumentum közvetlenül a céldokumentum tartalma után jelenjen meg, állítsa be a`SectionStart` a forrásdokumentum első szakaszának tulajdonsága`SectionStart.Continuous`.
+Ha azt szeretné, hogy a forrásdokumentum közvetlenül a céldokumentum tartalma után jelenjen meg, állítsa be a`SectionStart` a forrásdokumentum első szakaszának tulajdonsága`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 5. lépés: Mentse el a módosított dokumentumot
 
- Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");

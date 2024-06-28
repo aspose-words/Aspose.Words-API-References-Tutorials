@@ -30,7 +30,7 @@ Trước khi chúng ta đi sâu vào mã, hãy đảm bảo bạn có sẵn các
 
 ## Bước 1: Tải tài liệu
 
-Để bắt đầu, chúng ta cần tải tài liệu mà chúng ta muốn tách thành các trang. Đây là cách bạn có thể làm điều đó:
+Để bắt đầu, chúng ta cần tải tài liệu mà chúng ta muốn tách các trang. Đây là cách bạn có thể làm điều đó:
 
 ```java
 // Tải tài liệu
@@ -84,7 +84,7 @@ Có, Aspose.Words hỗ trợ nhiều định dạng tài liệu khác nhau, bao 
 
 Aspose.Words for Java là một thư viện thương mại nhưng nó cung cấp phiên bản dùng thử miễn phí. Bạn có thể kiểm tra trang web của họ để biết chi tiết về giá cả và thông tin cấp phép.
 
-### Tôi có thể hợp nhất các trang đã tách lại thành một tài liệu không?
+### Tôi có thể tách các trang hợp nhất lại thành một tài liệu không?
 
 Có, bạn có thể hợp nhất các trang đã tách lại thành một tài liệu duy nhất bằng cách sử dụng Aspose.Words for Java. Tham khảo tài liệu để biết hướng dẫn hợp nhất.
 

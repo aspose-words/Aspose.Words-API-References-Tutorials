@@ -8,7 +8,7 @@ weight: 18
 url: /cs/java/document-splitting/
 ---
 
-Rozdělení dokumentů je klíčovým aspektem zpracování textu a dokumentů, které uživatelům umožňuje rozdělit velké dokumenty na menší, spravovatelné části. Aspose.Words for Java nabízí komplexní návody na dělení dokumentů, které umožňují vývojářům efektivně rozdělovat dokumenty na základě specifických kritérií.
+Rozdělení dokumentů je zásadním aspektem zpracování textu a dokumentů, které uživatelům umožňuje rozdělit velké dokumenty na menší, spravovatelné části. Aspose.Words for Java nabízí komplexní návody na dělení dokumentů, které umožňují vývojářům efektivně rozdělovat dokumenty na základě specifických kritérií.
 
 ## Efektivní rozdělení dokumentů
 

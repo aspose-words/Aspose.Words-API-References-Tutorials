@@ -104,7 +104,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 	builder.InsertCell();
 	//一意のスタイル識別子に基づいて、使用するテーブル スタイルを設定します。
 	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	//どのフィーチャをスタイルによって書式設定する必要があるかを適用します。
+	//どの地物をスタイルによって書式設定する必要があるかを適用します。
 	table.StyleOptions =
 		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
 	table.AutoFit(AutoFitBehavior.AutoFitToContents);

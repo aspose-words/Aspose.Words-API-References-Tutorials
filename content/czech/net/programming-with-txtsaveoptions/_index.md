@@ -7,7 +7,7 @@ type: docs
 weight: 1700
 url: /cs/net/programming-with-txtsaveoptions/
 ---
-Výukové programy Aspose.Words for .NET vás provedou různými funkcemi a způsoby použití knihovny v kontextu manipulace s dokumenty aplikace Word. Jeden z výukových programů se zaměřuje na textové zpracování s možnostmi uložení TXT a ukazuje, jak generovat textové soubory z dokumentů aplikace Word při zachování formátování a struktury obsahu. Naučíte se používat různé dostupné možnosti k přizpůsobení převodu dokumentů na textové soubory, jako je například určení oddělovače sloupců a správa prázdných míst.
+Výukové programy Aspose.Words for .NET vás provedou různými funkcemi a způsoby použití knihovny v kontextu manipulace s dokumenty aplikace Word. Jeden z výukových programů se zaměřuje na textové zpracování s možnostmi uložení TXT a ukazuje, jak generovat textové soubory z dokumentů aplikace Word při zachování formátování a struktury obsahu. Dozvíte se, jak používat různé dostupné možnosti k přizpůsobení převodu dokumentů na textové soubory, jako je například určení oddělovače sloupců a správa prázdných míst.
 
 Tyto výukové programy poskytují podrobné pokyny spolu s ukázkovým kódem C#, které vám pomohou pochopit a procvičit si obsažené pojmy. Ať už jste začátečník nebo zkušený vývojář, najdete zde podrobné informace o tom, jak používat Aspose.Words pro .NET a jak z této výkonné knihovny pro manipulaci s dokumenty vytěžit maximum.
 

@@ -1,6 +1,6 @@
 ---
-title: 接受修改
-linktitle: 接受修改
+title: 接受评论
+linktitle: 接受评论
 second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 接受对 Word 文档的修订
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-//一旦我们接受更改，删除修订段落就会被删除。
+//一旦我们接受更改，已删除的修订段落就会被删除。
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

@@ -28,7 +28,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Name_of_large_document.docx");
 ```
 
-"BELGELERİNİZ_DİREKTÖRÜNÜZ" ifadesini belge dizininizin gerçek yolu ile ve "Büyük_Belgenin_Document.docx" kısmını büyük Word dosyanızın adıyla değiştirdiğinizden emin olun.
+"BELGELERİNİZ_DİZİN" kısmını belge dizininizin gerçek yolu ile ve "Büyük_Belgenin_Document.docx" kısmını büyük Word dosyanızın adıyla değiştirdiğinizden emin olun.
 
 ## Adım 2: Belgenin bir kısmının çıkarılması
  Artık belgeyi yüklediğimize göre, belirli bir parçayı kullanarak çıkartabiliriz.`ExtractPages` istenilen sayfa aralığıyla çalışır. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
@@ -74,7 +74,7 @@ Belge işleme yeteneklerinizi geliştirmek ve iş akışınızı kolaylaştırma
  Evet, istediğiniz sayfa aralığını belirterek ardışık olmayan sayfaları çıkarabilirsiniz. Örneğin 1, 3 ve 5. sayfaları çıkarmak istiyorsanız sayfa aralığını şu şekilde ayarlayabilirsiniz:`1,3,5` içinde`ExtractPages` işlev.
 
 #### S2: Belirli bir sayfa aralığını aynı anda birden fazla belgeden çıkarmak mümkün müdür?
-Evet, "Sayfa Aralığına Göre" özelliğini birden fazla belgeye uygulayabilirsiniz. Her belgeyi tek tek yükleyin ve istediğiniz sayfa aralığını`ExtractPages` işlev. Daha sonra her belgeden çıkarılan sayfaları ayrı ayrı kaydedebilirsiniz.
+ Evet, "Sayfa Aralığına Göre" özelliğini birden fazla belgeye uygulayabilirsiniz. Her belgeyi tek tek yükleyin ve istediğiniz sayfa aralığını`ExtractPages` işlev. Daha sonra her belgeden çıkarılan sayfaları ayrı ayrı kaydedebilirsiniz.
 
 #### S3: Şifrelenmiş veya parola korumalı Word belgelerinden sayfa aralıklarını çıkarabilir miyim?
 Hayır, "Sayfa Aralığına Göre" özelliği korumasız Word belgelerinde çalışır. Bir belge şifrelenmişse veya parola korumalıysa, istediğiniz sayfa aralığını çıkarmadan önce doğru parolayı girmeniz ve korumayı kaldırmanız gerekir.

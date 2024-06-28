@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOption
 
 透過建立一個實例來配置另存為 PDF 選項`PdfSaveOptions`類別並使用`OutlineOptions`屬性來設定輪廓選項。您可以使用下列命令指定要包含在大綱中的標題等級數：`HeadingsOutlineLevels`屬性和使用的擴展大綱層級的數量`ExpandedOutlineLevels`財產。
 
-使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`指定路徑和儲存選項的類別。
+使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`類別指定路徑和儲存選項。
 
 #### Q：PDF 文件中的計畫選項是什麼？
 答：PDF 文件中的大綱選項可讓您建立內容的層次結構，這使得瀏覽文件和存取不同部分變得更加容易。這允許使用者透過點擊目錄或大綱中的條目快速跳到文件的特定部分。大綱選項還透過提供整體文件結構的概述來增強閱讀體驗。

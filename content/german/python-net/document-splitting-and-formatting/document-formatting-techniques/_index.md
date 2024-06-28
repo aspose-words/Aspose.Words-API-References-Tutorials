@@ -1,7 +1,7 @@
 ---
 title: Beherrschen von Dokumentformatierungstechniken für visuelle Wirkung
 linktitle: Beherrschen von Dokumentformatierungstechniken für visuelle Wirkung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie die Formatierung von Dokumenten mit Aspose.Words für Python beherrschen. Erstellen Sie optisch ansprechende Dokumente mit Schriftarten, Tabellen, Bildern und mehr. Schritt-für-Schritt-Anleitung mit Codebeispielen.
 type: docs
 weight: 14
@@ -11,7 +11,7 @@ Die Formatierung von Dokumenten spielt eine entscheidende Rolle bei der Präsent
 
 ## Einführung in Aspose.Words für Python
 
-Aspose.Words für Python ist eine vielseitige Bibliothek, mit der Sie die Erstellung, Änderung und Formatierung von Dokumenten automatisieren können. Unabhängig davon, ob Sie mit Microsoft Word-Dateien oder anderen Dokumentformaten arbeiten, bietet Aspose.Words eine breite Palette an Funktionen für die Verarbeitung von Text, Tabellen, Bildern und mehr.
+Aspose.Words für Python ist eine vielseitige Bibliothek, mit der Sie die Erstellung, Änderung und Formatierung von Dokumenten automatisieren können. Unabhängig davon, ob Sie mit Microsoft Word-Dateien oder anderen Dokumentformaten arbeiten, bietet Aspose.Words eine breite Palette von Funktionen zur Verarbeitung von Text, Tabellen, Bildern und mehr.
 
 ## Einrichten der Entwicklungsumgebung
 

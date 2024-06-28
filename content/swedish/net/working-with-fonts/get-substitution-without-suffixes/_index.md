@@ -2,86 +2,122 @@
 title: Få substitution utan suffix
 linktitle: Få substitution utan suffix
 second_title: Aspose.Words Document Processing API
-description: I den här självstudien lär du dig hur du får åsidosättningar utan suffix i ett Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du hanterar teckensnittsersättning utan suffix i Aspose.Words för .NET. Följ vår steg-för-steg-guide för att säkerställa att dina dokument ser perfekta ut varje gång.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-I den här handledningen kommer vi att visa dig hur du får åsidosättningar utan suffix i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Substitutioner utan suffix används för att lösa teckensnittsersättningsproblem vid visning eller utskrift av dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
+Välkommen till den här omfattande guiden om hur du hanterar teckensnittsersättning med Aspose.Words för .NET. Om du någonsin har kämpat med att teckensnitt inte visas korrekt i dina dokument, har du kommit till rätt plats. Denna handledning tar dig igenom en steg-för-steg-process för att effektivt hantera teckensnittsersättning utan suffix. Låt oss börja!
 
 ## Förutsättningar
-Innan du börjar, se till att du har följande saker:
-- Har praktiska kunskaper i programmeringsspråket C#
-- Aspose.Words-biblioteket för .NET installerat i ditt projekt
+
+Innan du dyker in i handledningen, se till att du har följande:
+
+- Grundläggande kunskaper om C#: Att förstå C#-programmering gör det lättare att följa och implementera stegen.
+-  Aspose.Words för .NET Library: Ladda ner och installera biblioteket från[nedladdningslänk](https://releases.aspose.com/words/net/).
+- Utvecklingsmiljö: Konfigurera en utvecklingsmiljö som Visual Studio för att skriva och köra din kod.
+-  Exempeldokument: Ett exempeldokument (t.ex.`Rendering.docx`) att arbeta med under denna handledning.
+
+## Importera namnområden
+
+Först måste vi importera de nödvändiga namnområdena för att komma åt klasserna och metoderna som tillhandahålls av Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
+```
 
 ## Steg 1: Definiera dokumentkatalogen
- Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
+
+För att börja, ange katalogen där ditt dokument finns. Detta hjälper dig att hitta dokumentet du vill arbeta med.
 
 ```csharp
-// Sökväg till din dokumentkatalog
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Steg 2: Ladda dokumentet och konfigurera ersättningar utan suffix
- Därefter laddar vi dokumentet med hjälp av`Document` klass och konfigurera ersättningar utan suffix med hjälp av`DocumentSubstitutionWarnings` klass. Vi kommer också att lägga till en teckensnittskälla genom att ange en mapp som innehåller teckensnitten.
-
-```csharp
-// Ladda dokumentet och konfigurera ersättningar utan suffix
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## Steg 3: Spara dokumentet
-Slutligen kommer vi att spara dokumentet med åsidosättningar utan suffix tillämpade.
-
-```csharp
-// Spara dokumentet
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### Exempel på källkod för Get Substitution Without Suffixes med Aspose.Words för .NET 
-```csharp
-
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## Steg 2: Ställ in utbytesvarningshanteraren
+
+Därefter måste vi ställa in en varningshanterare som kommer att meddela oss när en teckensnittsersättning inträffar under dokumentbehandlingen. Detta är avgörande för att fånga upp och hantera eventuella teckensnittsproblem.
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## Steg 3: Lägg till anpassade teckensnittskällor
+
+I det här steget kommer vi att lägga till anpassade teckensnittskällor för att säkerställa att Aspose.Words kan hitta och använda rätt typsnitt. Detta är särskilt användbart om du har specifika teckensnitt lagrade i anpassade kataloger.
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+I denna kod:
+-  Vi hämtar de aktuella teckensnittskällorna och lägger till en ny`FolderFontSource` pekar på vår anpassade teckensnittskatalog (`C:\\MyFonts\\`).
+- Vi uppdaterar sedan teckensnittskällorna med denna nya lista.
+
+## Steg 4: Spara dokumentet
+
+Slutligen sparar du dokumentet efter att du har tillämpat inställningarna för teckensnittsersättning. För den här handledningen sparar vi den som en PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## Steg 5: Skapa varningshanterarens klass
+
+För att hantera varningar effektivt, skapa en anpassad klass som implementerar`IWarningCallback` gränssnitt. Den här klassen kommer att fånga och logga alla varningar för teckensnittsersättning.
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+I den här klassen:
+-  De`Warning` metoden fångar varningar relaterade till teckensnittsersättning.
+-  De`FontWarnings` insamling lagrar dessa varningar för vidare inspektion eller loggning.
+
 ## Slutsats
-I den här handledningen såg vi hur man får åsidosättningarna utan suffix i ett Word-dokument med Aspose.Words för .NET. Substitutioner utan suffix är användbara för att lösa problem med teckensnittsersättning. Använd gärna den här funktionen för att förbättra visningen och utskriften av dina dokument.
 
-### FAQ's
+Du har nu bemästrat processen att hantera teckensnittsersättning utan suffix med Aspose.Words för .NET. Denna kunskap säkerställer att dina dokument behåller sitt avsedda utseende, oavsett vilka teckensnitt som finns tillgängliga i systemet. Fortsätt att experimentera med olika inställningar och källor för att fullt ut utnyttja kraften i Aspose.Words.
 
-#### F: Varför lägger Aspose.Words till suffix till teckensnittsersättningar?
+## Vanliga frågor
 
-S: Aspose.Words lägger till suffix till teckensnittsersättningar för att undvika konflikter mellan originaltypsnitt och ersatta teckensnitt. Detta hjälper till att säkerställa maximal kompatibilitet vid konvertering och manipulering av dokument.
+### F1: Hur kan jag använda typsnitt från flera anpassade kataloger?
 
-#### F: Hur kan jag hämta teckensnittsersättningar utan suffix i Aspose.Words?
+ Du kan lägga till flera`FolderFontSource` instanser till`fontSources` lista och uppdatera teckensnittskällorna därefter.
 
- S: För att hämta teckensnittsersättningar utan suffix i Aspose.Words kan du använda`FontSubstitutionSettings` klass och`RemoveSuffixes` fast egendom. Ställer in den här egenskapen till`true` kommer att få teckensnittsersättningarna utan de tillagda suffixen.
+### F2: Var kan jag ladda ner en gratis testversion av Aspose.Words för .NET?
 
-#### F: Är det möjligt att inaktivera att lägga till suffix i teckensnittsersättningar i Aspose.Words?
+ Du kan ladda ner en gratis testversion från[Aspose gratis provsida](https://releases.aspose.com/).
 
-S: Nej, det är inte möjligt att inaktivera att lägga till suffix till teckensnittsersättningar i Aspose.Words. Suffix läggs till som standard för att säkerställa dokumentkompatibilitet och konsekvens.
+###  F3: Kan jag hantera flera typer av varningar med hjälp av`IWarningCallback`?
 
-#### F: Hur kan jag filtrera bort oönskade suffix i teckensnittsersättningar i Aspose.Words?
+ Ja den`IWarningCallback` gränssnitt låter dig hantera olika typer av varningar, inte bara teckensnittsersättning.
 
- S: För att filtrera bort oönskade suffix i teckensnittsersättningar i Aspose.Words kan du använda strängbearbetningstekniker, som att använda`Replace` eller`Substring` metoder för att ta bort specifika suffix som du inte vill inkludera.
+### F4: Var kan jag få support för Aspose.Words?
+
+ För support, besök[Aspose.Words supportforum](https://forum.aspose.com/c/words/8).
+
+### F5: Är det möjligt att köpa en tillfällig licens?
+
+ Ja, du kan få en tillfällig licens från[sida för tillfällig licens](https://purchase.aspose.com/temporary-license/).

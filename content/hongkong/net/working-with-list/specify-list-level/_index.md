@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//根據 Microsoft Word 清單範本之一建立編號列表
+//根據 Microsoft Word 清單範本之一建立編號清單。
 //並將其應用於文件生成器的當前段落。
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-//基於 Microsoft Word 清單範本之一建立項目符號列表
+//根據 Microsoft Word 清單範本之一建立項目符號清單。
 //並將其應用於文件生成器的當前段落。
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -125,10 +125,10 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### Q：是否可以更改 Aspose.Words 中清單項目的編號格式？
 
-答：是的，您可以變更 Aspose.Words 中清單項目的編號格式。這`ListLevel`類別為此提供了幾個屬性，例如`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`等等。您可以使用這些屬性來設定清單項目的編號格式，例如阿拉伯數字、羅馬數字、字母等。
+答：是的，您可以變更 Aspose.Words 中清單項目的編號格式。這`ListLevel`類別為此提供了幾個屬性，例如`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`等等。
 
 #### Q：我可以為 Aspose.Words 中的編號清單新增其他層級嗎？
 
-答：是的，可以在 Aspose.Words 中的編號清單中新增其他等級。這`ListLevel`類別允許您為清單的每個層級設定格式屬性。您可以設定前綴、後綴、對齊、縮排等選項。這允許您建立具有多個層次結構的清單。
+答：是的，可以在 Aspose.Words 中的編號清單中新增其他等級。這`ListLevel`類別允許您為清單的每個層級設定格式屬性。您可以設定前綴、後綴、對齊、縮排等選項。
 
 

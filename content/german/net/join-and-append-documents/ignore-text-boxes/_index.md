@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Schritt 4: Textfeldinhalt anhängen
 
- Ein ... kreieren`NodeImporter` Objekt und verwenden Sie es, um Textfeldknoten aus dem Quelldokument in das Zieldokument zu importieren. Gehen Sie jeden Absatz im Quelldokument durch und importieren Sie ihn in das Zieldokument.
+ Ein ... kreieren`NodeImporter`Objekt und verwenden Sie es, um Textfeldknoten aus dem Quelldokument in das Zieldokument zu importieren. Gehen Sie jeden Absatz im Quelldokument durch und importieren Sie ihn in das Zieldokument.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Schritt 5: Speichern Sie das Zieldokument
 
- Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
+Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

@@ -53,11 +53,11 @@ Gefeliciteerd! U hebt nu geleerd hoe u de doorgehaalde tekststijl kunt toepassen
 
 #### Vraag: Hoe kan ik de doorgehaalde tekst toevoegen in Aspose.Words?
 
- A: Om de doorgehaalde tekst in Aspose.Words toe te voegen, kunt u de`Font.StrikeThrough` eigendom van de`Run` voorwerp. U kunt deze eigenschap instellen op`true` om doorgehaalde tekst toe te voegen aan specifieke tekst. U kunt bijvoorbeeld gebruiken`run.Font.StrikeThrough=true` om de doorgestreepte tekst toe te voegen aan het`Run` voorwerp.
+ A: Om de doorgehaalde tekst in Aspose.Words toe te voegen, kunt u de`Font.StrikeThrough` eigendom van de`Run`voorwerp. U kunt deze eigenschap instellen op`true` om doorgehaalde tekst toe te voegen aan specifieke tekst. U kunt bijvoorbeeld gebruiken`run.Font.StrikeThrough=true` om de doorgestreepte tekst toe te voegen aan het`Run` voorwerp.
 
 #### Vraag: Is het mogelijk om de doorgestreepte tekst toe te voegen aan verschillende stukken tekst in dezelfde alinea?
 
- A: Ja, u kunt doorgestreepte tekst toevoegen aan meerdere tekstdelen in één alinea door er meerdere te gebruiken`Run` voorwerpen. Je kunt er meerdere maken`Run` objecten en stel de in`Font.StrikeThrough`eigendom aan`true` voor elk object om de doorgestreepte tekst aan de gewenste tekstdelen toe te voegen. Vervolgens kunt u ze aan de alinea toevoegen met behulp van de`Paragraph.AppendChild(run)` methode.
+ A: Ja, u kunt doorgestreepte tekst toevoegen aan meerdere tekstdelen in één alinea door er meerdere te gebruiken.`Run` voorwerpen. Je kunt er meerdere maken`Run` objecten en stel de in`Font.StrikeThrough`eigendom aan`true` voor elk object om de doorgestreepte tekst aan de gewenste tekstdelen toe te voegen. Vervolgens kunt u ze aan de alinea toevoegen met behulp van de`Paragraph.AppendChild(run)` methode.
 
 #### Vraag: Kan ik doorgehaalde tekst toevoegen aan tekst die in een tabel of cel in Aspose.Words staat?
 

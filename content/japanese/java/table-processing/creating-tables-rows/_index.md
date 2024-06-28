@@ -28,7 +28,7 @@ public class TableCreation {
         //新しいドキュメントを作成する
         Document doc = new Document();
         
-        // 3行3列のテーブルを作成します
+        // 3行3列のテーブルを作成します。
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         //表のセルにデータを入力します

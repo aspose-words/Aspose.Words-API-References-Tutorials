@@ -1,6 +1,6 @@
 ---
-title: Kursiver Text
-linktitle: Kursiver Text
+title: Italienischer Text
+linktitle: Italienischer Text
 second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Text mit Aspose.Words für .NET kursiv formatieren.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Machen Sie den Text kursiv.
+// Machen Sie den Text italienisch.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
@@ -46,7 +46,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Funktion für kurs
 
 #### F: Wie kann ich Text in Aspose.Words kursiv schreiben?
 
-A: Um Text in Aspose.Words kursiv zu schreiben, können Sie die verwenden`Font.Italic` Eigentum der`Run` Objekt. Sie können diese Eigenschaft auf festlegen`true` um einen bestimmten Text kursiv zu schreiben. Sie können zum Beispiel verwenden`run.Font.Italic=true` um den darin enthaltenen Text kursiv zu schreiben`Run` Objekt.
+A: Um Text in Aspose.Words kursiv zu schreiben, können Sie die verwenden`Font.Italic` Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf festlegen`true` um einen bestimmten Text kursiv zu schreiben. Sie können zum Beispiel verwenden`run.Font.Italic=true` um den darin enthaltenen Text kursiv zu schreiben`Run` Objekt.
 
 #### F: Ist es möglich, mehrere Textteile im selben Absatz kursiv zu schreiben?
 

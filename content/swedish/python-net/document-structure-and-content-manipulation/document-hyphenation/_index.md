@@ -88,7 +88,7 @@ hyphenation_options.consecutive_hyphen_limit = 2
 
 ## Förbättra läsbarheten
 
-### Justering av linjeavstånd
+### Justera radavstånd
 
 Korrekt radavstånd förbättrar läsbarheten. Du kan ställa in radavstånd i dokumentet för att förbättra det övergripande visuella utseendet.
 
@@ -126,4 +126,4 @@ För att förhindra änkor och föräldralösa barn, använd alternativen som ti
 
 ### Var kan jag komma åt Aspose.Words för Python-dokumentationen?
 
- Du kan komma åt API-dokumentationen på[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+Du kan komma åt API-dokumentationen på[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

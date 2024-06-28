@@ -1,7 +1,7 @@
 ---
 title: Extrahieren und Ändern von Inhalten in Word-Dokumenten
 linktitle: Extrahieren und Ändern von Inhalten in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Inhalte in Word-Dokumenten extrahieren und ändern. Schritt-für-Schritt-Anleitung mit Quellcode.
 type: docs
 weight: 10
@@ -145,7 +145,7 @@ Ja, Sie können Textformatierungen wie Fettdruck, Farbe und Schriftgröße mithi
 
  Natürlich können Sie das verwenden`replace` Methode zum Ersetzen von bestimmtem Text im Dokument.
 
-### Kann ich Hyperlinks zu meinem Word-Dokument hinzufügen?
+### Kann ich meinem Word-Dokument Hyperlinks hinzufügen?
 
  Auf jeden Fall können Sie mit dem Hyperlinks zu Ihrem Dokument hinzufügen`insert_hyperlink` Methode, die von Aspose.Words bereitgestellt wird.
 

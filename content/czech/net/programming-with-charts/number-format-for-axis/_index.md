@@ -17,7 +17,7 @@ Ujistěte se, že máte následující předpoklady:
 - Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
 - Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
 
-## Krok 2: Vytvořte nový dokument a vložte graf
+## Krok 2: Vytvořte nový dokument a vložte graf.
 
  Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
 
@@ -49,7 +49,7 @@ chart.Series.Add("Aspose Series 1",
 
 ## Krok 4: Naformátujte popisky os
 
- Chcete-li nastavit formát čísel pro štítky osy Y, přejděte na`AxisY` vlastnost grafu a nastavte`NumberFormat.FormatCode` vlastnost do požadovaného formátu. V tomto příkladu jsme nastavili formát na "#,##0" pro zobrazení čísel s oddělovači tisíců.
+ Chcete-li nastavit formát čísel pro štítky osy Y, přejděte na`AxisY` vlastnost grafu a nastavte`NumberFormat.FormatCode` vlastnost do požadovaného formátu. V tomto příkladu jsme nastavili formát na "#,##0", abychom zobrazili čísla s oddělovači tisíců.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
@@ -89,7 +89,7 @@ V tomto tutoriálu jste se naučili, jak nastavit formát čísla pro osu v graf
 
 Aspose.Words for .NET poskytuje výkonné funkce pro přizpůsobení vzhledu grafů v dokumentech aplikace Word. Nastavením formátu čísel pro popisky os můžete ovládat způsob zobrazení čísel, včetně možností, jako jsou desetinná místa, oddělovače tisíců, symboly měn a další. To vám umožní prezentovat číselná data jasným a smysluplným způsobem.
 
-Aspose.Words for .NET máte flexibilitu při formátování různých aspektů grafu, včetně označení os. Nastavením formátu čísel pro osu můžete zajistit konzistenci a zlepšit čitelnost grafu, což uživatelům usnadní interpretaci reprezentovaných hodnot.
+Aspose.Words for .NET máte flexibilitu při formátování různých aspektů grafu, včetně označení os. Nastavením formátu čísel pro osu můžete zajistit konzistenci a zlepšit čitelnost grafu, což uživatelům usnadní interpretaci zobrazených hodnot.
 
 ### Nejčastější dotazy
 
@@ -107,7 +107,7 @@ Aspose.Words for .NET podporuje širokou škálu kódů formátu čísel, které
 
 - `0` nebo`#` - Zobrazí číslo bez desetinných míst.
 - `0.00` nebo`#.00` - Zobrazí číslo se dvěma desetinnými místy.
-- `#,##0` Zobrazí číslo s oddělovači tisíců.
+- `#,##0` Zobrazí číslo s tisíci oddělovačů.
 - `"€"0.00` - Zobrazí číslo se symbolem měny Euro a dvěma desetinnými místy.
 - `"%"0` - Zobrazuje číslo v procentech.
 

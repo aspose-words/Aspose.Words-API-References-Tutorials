@@ -64,7 +64,7 @@ doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Töltsön fel egy dokumentumot, és tegye csak olvashatóvá.
+// Töltse fel a dokumentumot, és tegye csak olvashatóvá.
 Document doc = new Document(MyDir + "Document.docx");
 DocumentBuilder builder = new DocumentBuilder(doc);
 
@@ -97,7 +97,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan hozhat létre korlátlanul szerkesz
 
 #### K: Mik azok a korlátlanul szerkeszthető régiók az Aspose.Words for .NET-ben?
 
-V: A korlátlan szerkeszthető régiók az Aspose.Words for .NET-ben olyan területek a Word-dokumentumban, ahol a tartalom korlátozás nélkül szerkeszthető, még akkor is, ha a dokumentum többi része csak olvashatóként van beállítva. Ezek a régiók lehetőséget biztosítanak a dokumentum bizonyos részei meghatározására, amelyeket a felhasználók módosíthatnak, miközben fenntartják az általános dokumentumvédelmet.
+V: A korlátlan szerkeszthető régiók az Aspose.Words for .NET-ben olyan területek a Word-dokumentumban, ahol a tartalom korlátozás nélkül szerkeszthető, még akkor is, ha a dokumentum többi része csak olvashatóként van beállítva. Ezek a régiók lehetőséget biztosítanak a dokumentum egyes részei meghatározására, amelyeket a felhasználók módosíthatnak, miközben fenntartják az általános dokumentumvédelmet.
 
 #### K: Hogyan hozhatok létre korlátlan szerkeszthető régiókat az Aspose.Words for .NET használatával?
 

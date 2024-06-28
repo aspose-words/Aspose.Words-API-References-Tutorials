@@ -14,7 +14,7 @@ url: /zh/net/programming-with-tables/floating-table-position/
 1. 启动 Visual Studio 并创建一个新的 C# 项目。
 2. 添加对 Aspose.Words for .NET 库的引用。
 
-## 第 2 步：加载文档并访问表
+## 第 2 步：加载文档并访问表格
 要对表启动文字处理，我们需要加载包含该表的文档并访问它。按着这些次序：
 
 ```csharp
@@ -65,4 +65,4 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ```
 
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 将表格放置在 Word 文档中的浮动位置。通过遵循本分步指南并实现提供的 C# 代码，您可以以编程方式控制 Word 文档中浮动表格的位置和对齐方式。
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 将表格放置在 Word 文档中的浮动位置。通过遵循本分步指南并实现提供的 C# 代码，您可以通过编程方式控制 Word 文档中浮动表格的位置和对齐方式。

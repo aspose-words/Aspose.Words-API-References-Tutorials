@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Tentukan daftar yang dipesan.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Tentukan penekanan miring untuk teks.
+// Tentukan penekanan bahasa Italia untuk teks tersebut.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

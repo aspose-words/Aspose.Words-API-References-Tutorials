@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### หัวเรื่อง
 
-ส่วนหัวของ Markdown มีความสำคัญต่อการจัดโครงสร้างเอกสารของคุณ เราจะใช้รูปแบบ "หัวเรื่อง 1" สำหรับหัวเรื่องหลัก
+ส่วนหัวของ Markdown จำเป็นสำหรับการจัดโครงสร้างเอกสารของคุณ เราจะใช้รูปแบบ "หัวเรื่อง 1" สำหรับหัวเรื่องหลัก
 
 ```java
 builder.getParagraphFormat().setStyleName("Heading 1");
@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // ระบุรายการสั่งซื้อ
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// ระบุการเน้นตัวเอียงสำหรับข้อความ
+// ระบุการเน้นภาษาอิตาลีสำหรับข้อความ
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

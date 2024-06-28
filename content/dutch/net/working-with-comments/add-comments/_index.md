@@ -93,7 +93,7 @@ A: Ja, u kunt commentaartekst in Aspose.Words voor .NET opmaken met behulp van d
 
 #### Vraag: Hoe kan ik alle opmerkingen in een document ophalen?
 
-A: U kunt alle opmerkingen in een document ophalen met behulp van de`Document.Comments` eigendom.
+ A: U kunt alle opmerkingen in een document ophalen met behulp van de`Document.Comments` eigendom.
 
 #### Vraag: Kan ik een specifieke opmerking in Aspose.Words voor .NET verwijderen?
 

@@ -42,7 +42,7 @@ Console.WriteLine(
 
 Der Code prüft, ob die fernöstliche Sprach-ID mit der japanischen übereinstimmt. Je nach Ergebnis wird eine entsprechende Meldung angezeigt.
 
-### Beispielquellcode für „Japanisch als Bearbeitungssprachen hinzufügen“ mit Aspose.Words für .NET
+### Beispielquellcode für das Hinzufügen von Japanisch als Bearbeitungssprachen mit Aspose.Words für .NET
 
 ```csharp
 

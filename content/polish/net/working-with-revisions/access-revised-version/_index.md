@@ -73,7 +73,7 @@ foreach (Revision revision in doc.Revisions)
 
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak uzyskać dostęp do poprawionej wersji dokumentu programu Word za pomocą Aspose.Words dla .NET. Ładując dokument, przechodząc do poprawionej wersji i przeglądając poprawki, mogliśmy uzyskać szczegółowe informacje dotyczące akapitów będących pozycjami listy. Aspose.Words dla .NET oferuje zaawansowane funkcje do manipulowania dokumentami Word, w tym dostęp do recenzji. Możesz teraz wykorzystać tę wiedzę, aby uzyskać dostęp do poprawionej wersji własnych dokumentów programu Word za pomocą Aspose.Words dla .NET.
+W tym samouczku nauczyliśmy się, jak uzyskać dostęp do poprawionej wersji dokumentu programu Word za pomocą Aspose.Words dla .NET. Ładując dokument, przechodząc do poprawionej wersji i przeglądając poprawki, mogliśmy uzyskać szczegółowe informacje na temat akapitów będących pozycjami listy. Aspose.Words dla .NET oferuje zaawansowane funkcje do manipulowania dokumentami Word, w tym dostęp do recenzji. Możesz teraz wykorzystać tę wiedzę, aby uzyskać dostęp do poprawionej wersji własnych dokumentów programu Word za pomocą Aspose.Words dla .NET.
 
 ### Często zadawane pytania
 

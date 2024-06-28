@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
 
-Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah untuk mengizinkan penspasian sel dalam tabel menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan kode sumber C# yang menyelesaikan tugas ini dan memberikan panduan komprehensif untuk membantu Anda memahami dan menerapkannya dalam proyek Anda sendiri. Di akhir tutorial ini, Anda akan memiliki pemahaman yang jelas tentang cara memanipulasi pemformatan tabel di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah dalam mengizinkan penspasian sel dalam tabel menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan kode sumber C# yang menyelesaikan tugas ini dan memberikan panduan komprehensif untuk membantu Anda memahami dan menerapkannya dalam proyek Anda sendiri. Di akhir tutorial ini, Anda akan memiliki pemahaman yang jelas tentang cara memanipulasi pemformatan tabel di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
 
 ## Langkah 1: Atur Direktori Dokumen
 Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ini adalah lokasi penyimpanan dokumen Word Anda. Ganti "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai.

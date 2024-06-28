@@ -67,7 +67,7 @@ C: Evet, Word belgenizdeki stil ayırıcıyı özel ihtiyaçlarınıza uyacak ş
 
 #### S: Aspose.Words for .NET paragraf stili ayırıcılarla çalışmak için tek çözüm mü?
 
-C: Hayır, Aspose.Words for .NET paragraf stili ayırıcılarla çalışmak için mevcut tek çözüm değildir. Ancak Aspose.Words, paragraf stili ayırıcıların tanımlanması ve değiştirilmesi de dahil olmak üzere, belge işleme görevlerini kolaylaştıran kapsamlı bir dizi özellik ve API sağlar.
+C: Hayır, Aspose.Words for .NET paragraf stili ayırıcılarla çalışmak için mevcut tek çözüm değildir. Ancak Aspose.Words, paragraf stili ayırıcıların tanımlanması ve değiştirilmesi de dahil olmak üzere, belge işleme görevlerini basitleştiren kapsamlı bir dizi özellik ve API sağlar.
 
 #### S: "Paragraf Stil Ayırıcısını Al" özelliğini diğer programlama dilleriyle kullanabilir miyim?
 

@@ -58,4 +58,4 @@ using (MemoryStream stream = new MemoryStream())
      doc. Save(stream, saveOptions);
 ```
 
-Deze broncode laat zien hoe u een document laadt dat afbeeldingen bevat en vervolgens de map afbeeldingen instelt voor Markdown-exportopties. Met behulp van de opgegeven opties wordt het document vervolgens opgeslagen in een geheugenstroom. Hiermee kunt u de locatie van de map met afbeeldingen aanpassen wanneer u Markdown-inhoud exporteert.
+Deze broncode laat zien hoe u een document laadt dat afbeeldingen bevat en vervolgens de map afbeeldingen instelt voor Markdown-exportopties. Met behulp van de opgegeven opties wordt het document vervolgens opgeslagen in een geheugenstroom. Hiermee kunt u de locatie van de afbeeldingenmap aanpassen wanneer u Markdown-inhoud exporteert.

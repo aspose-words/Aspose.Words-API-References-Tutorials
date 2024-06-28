@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-tables/set-relative-horizontal-or-vertical-position/
 ---
 
-W tym samouczku nauczymy się, jak ustawić względną pozycję poziomą lub pionową tabeli w dokumencie programu Word za pomocą Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł ustawić względną poziomą lub pionową pozycję tabeli w dokumentach programu Word.
+W tym samouczku nauczymy się, jak ustawić względne położenie tabeli w poziomie lub pionie w dokumencie programu Word za pomocą Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł ustawić względną poziomą lub pionową pozycję tabeli w dokumentach programu Word.
 
 ## Krok 1: Konfiguracja projektu
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.

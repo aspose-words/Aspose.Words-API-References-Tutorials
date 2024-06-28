@@ -8,7 +8,7 @@ weight: 10
 url: /pt/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 ---
 
-Este tutorial demonstra como vincular uma tag de documento estruturado (SDT) a uma parte Xml personalizada usando Aspose.Words for .NET. Os SDTs permitem adicionar controles de conteúdo estruturados a um documento do Word, e CustomXmlParts fornecem uma maneira de armazenar dados XML personalizados associados ao documento.
+Este tutorial demonstra como vincular uma tag de documento estruturado (SDT) a uma parte Xml personalizada usando Aspose.Words for .NET. SDTs permitem adicionar controles de conteúdo estruturados a um documento do Word, e CustomXmlParts fornecem uma maneira de armazenar dados XML personalizados associados ao documento.
 
 ## Pré-requisitos
 Para seguir este tutorial, você precisa ter o seguinte:

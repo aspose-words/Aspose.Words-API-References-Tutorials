@@ -111,7 +111,7 @@ W tym kodzie tworzymy niestandardowy styl akapitu i wstawiamy separator stylu, a
 
 ## Wniosek
 
-tym przewodniku omówiono podstawy pracy ze stylami i motywami w Aspose.Words dla Java. Nauczyłeś się pobierać i kopiować style, zarządzać motywami i wstawiać separatory stylów, aby tworzyć atrakcyjne wizualnie i dobrze sformatowane dokumenty. Eksperymentuj z tymi technikami, aby dostosować dokumenty do swoich wymagań.
+tym przewodniku omówiono podstawy pracy ze stylami i motywami w Aspose.Words dla Java. Nauczyłeś się, jak pobierać i kopiować style, zarządzać motywami i wstawiać separatory stylów, aby tworzyć atrakcyjne wizualnie i dobrze sformatowane dokumenty. Eksperymentuj z tymi technikami, aby dostosować dokumenty do swoich wymagań.
 
 
 ## Często zadawane pytania

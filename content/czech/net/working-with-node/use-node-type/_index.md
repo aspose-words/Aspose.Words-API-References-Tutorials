@@ -58,7 +58,7 @@ A: Běžné typy uzlů používané s typem uzlu jsou prvky (typ 1), atributy (t
 
 #### Otázka: Jak zkontroluji typ uzlu v Node.js?
 
- Odpověď: Chcete-li zkontrolovat typ uzlu v Node.js, můžete získat přístup k`nodeType` vlastnost uzlu. Tato vlastnost vrací číslo odpovídající typu uzlu.
+ A: Chcete-li zkontrolovat typ uzlu v Node.js, můžete získat přístup k`nodeType` vlastnost uzlu. Tato vlastnost vrací číslo odpovídající typu uzlu.
 
 #### Otázka: Lze v Node.js vytvořit nové vlastní typy uzlů?
 

@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## 3단계: 섹션을 대상 문서에 복사
- 원본 문서의 섹션을 대상 문서로 복사하려면 다음을 사용합니다.`ImportNode` 소스 섹션을 가져와서 대상 문서에 추가하는 방법입니다.
+ 원본 문서의 섹션을 대상 문서로 복사하려면 다음을 사용합니다.`ImportNode`소스 섹션을 가져와서 대상 문서에 추가하는 방법입니다.
 
 ```csharp
 // 소스 섹션 가져오기
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### Q: .NET용 Aspose.Words에서 소스 및 대상 문서를 로드하는 방법은 무엇입니까?
 
- A: 소스 문서를 인스턴스로 로드하려면`Document` 클래스라는`srcDoc` 그리고 빈 인스턴스를 생성합니다.`Document` 클래스라는`dstDoc` 대상 문서의 경우 다음 코드를 사용할 수 있습니다.
+A: 소스 문서를 인스턴스로 로드하려면`Document` 클래스라는`srcDoc` 그리고 빈 인스턴스를 생성합니다.`Document` 클래스라는`dstDoc` 대상 문서의 경우 다음 코드를 사용할 수 있습니다.
 
 ```csharp
 // 원본 문서 로드

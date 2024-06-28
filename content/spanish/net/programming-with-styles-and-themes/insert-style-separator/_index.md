@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- En este paso, creamos un nuevo`Document` objeto y un asociado`DocumentBuilder` objeto.
+En este paso, creamos un nuevo`Document` objeto y un asociado`DocumentBuilder` objeto.
 
 ## Paso 3: crear y configurar el estilo personalizado
 
@@ -98,7 +98,7 @@ Para configurar el entorno, debe asegurarse de tener Aspose.Words para .NET inst
 
 #### ¿Cómo creo y configuro un estilo personalizado?
 
- Para crear un estilo personalizado, puede utilizar el`Styles.Add` método de la`Document` objeto. Especifique el tipo de estilo (p. ej.,`StyleType.Paragraph`y proporcione un nombre para el estilo. Una vez creado, puede modificar las propiedades de fuente del objeto de estilo para configurar su apariencia.
+ Para crear un estilo personalizado, puede utilizar el`Styles.Add` método de la`Document` objeto. Especifique el tipo de estilo (p. ej.,`StyleType.Paragraph`) y proporcione un nombre para el estilo. Una vez creado, puede modificar las propiedades de fuente del objeto de estilo para configurar su apariencia.
 
 #### ¿Cómo inserto un separador de estilo?
 
@@ -106,7 +106,7 @@ Para configurar el entorno, debe asegurarse de tener Aspose.Words para .NET inst
 
 #### ¿Cómo puedo aplicar diferentes estilos a diferentes secciones de texto?
 
- Puede aplicar diferentes estilos a diferentes secciones de texto configurando el`ParagraphFormat.StyleName` propiedad de la`DocumentBuilder` objeto. Antes de escribir el texto, puede configurar el nombre del estilo en el estilo deseado y el texto siguiente tendrá el formato correspondiente.
+ Puede aplicar diferentes estilos a diferentes secciones de texto configurando el`ParagraphFormat.StyleName` propiedad de la`DocumentBuilder`objeto. Antes de escribir el texto, puede configurar el nombre del estilo en el estilo deseado y el texto siguiente tendrá el formato correspondiente.
 
 #### ¿Puedo guardar el documento en diferentes formatos?
 

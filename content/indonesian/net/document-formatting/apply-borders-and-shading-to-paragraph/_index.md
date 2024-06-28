@@ -91,7 +91,7 @@ Berikut source code lengkap fitur Apply Borders dan shading to Paragraph dengan 
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita mempelajari cara menerapkan batas dan bayangan pada paragraf di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengkonfigurasi paragraf`Borders` Dan`Shading` properti, kami dapat mengatur gaya batas, warna garis, dan warna isian untuk paragraf. Aspose.Words untuk .NET memberikan kemampuan pemformatan yang kuat untuk menyesuaikan tampilan paragraf dan menyempurnakan representasi visual dokumen Anda.
+ Dalam tutorial ini, kita mempelajari cara menerapkan batas dan bayangan pada paragraf di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengkonfigurasi paragraf`Borders` Dan`Shading` properti, kami dapat mengatur gaya batas, warna garis, dan warna isian untuk paragraf. Aspose.Words untuk .NET memberikan kemampuan pemformatan yang kuat untuk menyesuaikan tampilan paragraf dan menyempurnakan representasi visual dokumen Anda.
 
 ### FAQ
 
@@ -100,13 +100,13 @@ Dalam tutorial ini, kita mempelajari cara menerapkan batas dan bayangan pada par
 J: Untuk menerapkan batas dan bayangan pada paragraf di dokumen Word menggunakan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
 1.  Buat dokumen baru dan a`DocumentBuilder` obyek.
 2.  Konfigurasikan batas paragraf dengan mengakses`Borders` properti dari`ParagraphFormat` dan mengatur gaya perbatasan untuk setiap sisi.
-3.  Konfigurasikan pengisian paragraf dengan mengakses`Shading` properti dari`ParagraphFormat` dan menentukan tekstur dan warna isian.
+3. Konfigurasikan pengisian paragraf dengan mengakses`Shading` properti dari`ParagraphFormat` dan menentukan tekstur dan warna isian.
 4.  Tambahkan konten ke paragraf menggunakan`Write` metode`DocumentBuilder`.
 5.  Simpan dokumen menggunakan`Save` metode.
 
 #### T: Bagaimana cara mengatur gaya batas untuk setiap sisi paragraf?
 
- A: Untuk mengatur gaya batas setiap sisi paragraf, Anda dapat mengakses`Borders` properti dari`ParagraphFormat` dan atur`LineStyle` properti untuk masing-masing`BorderType` (misalnya,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Anda dapat menentukan gaya garis yang berbeda seperti`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, dll.
+ A: Untuk mengatur gaya batas setiap sisi paragraf, Anda dapat mengakses`Borders` properti dari`ParagraphFormat` dan atur`LineStyle` properti untuk masing-masing`BorderType` (misalnya.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Anda dapat menentukan gaya garis yang berbeda seperti`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, dll.
 
 #### T: Bagaimana cara menentukan tekstur dan warna isian untuk bayangan paragraf?
 

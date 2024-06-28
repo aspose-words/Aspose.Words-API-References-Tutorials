@@ -53,11 +53,11 @@ Xin chúc mừng! Bây giờ bạn đã học cách in đậm văn bản bằng 
 
 #### Câu hỏi: Làm cách nào để in đậm văn bản trong Aspose.Words?
 
- Đáp: Để in đậm văn bản trong Aspose.Words, bạn có thể sử dụng`Font.Bold` tài sản của`Run` sự vật. Bạn có thể đặt thuộc tính này thành`true` để in đậm văn bản cụ thể. Ví dụ, bạn có thể sử dụng`run.Font.Bold=true` để in đậm văn bản bên trong`Run` sự vật.
+ Đáp: Để in đậm văn bản trong Aspose.Words, bạn có thể sử dụng`Font.Bold` tài sản của`Run`sự vật. Bạn có thể đặt thuộc tính này thành`true` để in đậm văn bản cụ thể. Ví dụ, bạn có thể sử dụng`run.Font.Bold=true` để in đậm văn bản bên trong`Run` sự vật.
 
 #### Hỏi: Có thể in đậm nhiều đoạn văn bản trong cùng một đoạn văn không?
 
-Đáp: Có, bạn có thể in đậm nhiều đoạn văn bản trong một đoạn văn bằng cách sử dụng nhiều`Run` các đối tượng. Bạn có thể tạo nhiều`Run` các đối tượng và thiết lập`Font.Bold`tài sản để`true` để mỗi đối tượng in đậm những phần văn bản mong muốn. Sau đó, bạn có thể thêm chúng vào đoạn văn bằng cách sử dụng`Paragraph.AppendChild(run)` phương pháp.
+ Đáp: Có, bạn có thể in đậm nhiều đoạn văn bản trong một đoạn văn bằng cách sử dụng nhiều`Run` các đối tượng. Bạn có thể tạo nhiều`Run` các đối tượng và thiết lập`Font.Bold`tài sản để`true` để mỗi đối tượng in đậm những phần văn bản mong muốn. Sau đó, bạn có thể thêm chúng vào đoạn văn bằng cách sử dụng`Paragraph.AppendChild(run)` phương pháp.
 
 #### Câu hỏi: Tôi có thể in đậm văn bản trong bảng hoặc ô trong Aspose.Words không?
 

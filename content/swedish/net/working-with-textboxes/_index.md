@@ -2,7 +2,7 @@
 title: Ordbehandling med textrutor
 linktitle: Ordbehandling med textrutor
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du arbetar med textrutor i Word-dokument med Aspose.Words för .NET. Steg-för-steg tutorials med exempelkod för att skapa, manipulera och formatera textrutor effektivt.
+description: Lär dig hur du arbetar med textrutor i Word-dokument med Aspose.Words för .NET. Steg-för-steg handledning med exempelkod för att skapa, manipulera och formatera textrutor effektivt.
 type: docs
 weight: 1320
 url: /sv/net/working-with-textboxes/

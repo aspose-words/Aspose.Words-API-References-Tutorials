@@ -10,7 +10,7 @@ url: /cs/java/table-processing/managing-tables-layouts/
 
 ## Úvod
 
-Pokud jde o práci s dokumenty v Javě, Aspose.Words je výkonný a všestranný nástroj. V tomto komplexním průvodci vás provedeme procesem správy tabulek a rozvržení ve vašich dokumentech pomocí Aspose.Words for Java. Ať už jste začátečník nebo zkušený vývojář, najdete zde cenné poznatky a praktické příklady zdrojového kódu, které zjednoduší vaše úkoly správy dokumentů.
+Pokud jde o práci s dokumenty v Javě, Aspose.Words je výkonný a všestranný nástroj. V tomto komplexním průvodci vás provedeme procesem správy tabulek a rozvržení ve vašich dokumentech pomocí Aspose.Words for Java. Ať už jste začátečník nebo zkušený vývojář, najdete zde cenné poznatky a praktické příklady zdrojového kódu, které vám pomohou zjednodušit úkoly správy dokumentů.
 
 ## Pochopení důležitosti rozvržení dokumentu
 
@@ -30,7 +30,7 @@ Prvním krokem při správě tabulek je jejich vytvoření. Díky Aspose.Words j
 // Vytvořte nový dokument
 Document doc = new Document();
 
-// Vytvořte tabulku se 3 řádky a 4 sloupci
+// Vytvořte tabulku se 3 řádky a 4 sloupci.
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

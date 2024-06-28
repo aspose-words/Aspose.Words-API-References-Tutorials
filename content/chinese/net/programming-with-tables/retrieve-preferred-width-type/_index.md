@@ -62,4 +62,4 @@ double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 从 Word 文档中的表格单元格检索首选宽度类型及其值。通过遵循此分步指南并实施提供的 C# 代码，您可以检索 Word 文档表格中特定单元格的此信息。
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 从 Word 文档的表格单元格中检索首选宽度类型及其值。通过遵循此分步指南并实施提供的 C# 代码，您可以检索 Word 文档表格中特定单元格的此信息。

@@ -2,176 +2,156 @@
 title: Mostra Nascondi contenuto con segnalibro nel documento di Word
 linktitle: Mostra Nascondi contenuto con segnalibro nel documento di Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come mostrare o nascondere il contenuto dei segnalibri nel documento Word utilizzando Aspose.Words per .NET.
+description: Scopri come mostrare o nascondere dinamicamente il contenuto con segnalibri nei documenti Word utilizzando Aspose.Words per .NET con questa guida passo passo completa.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-In questo articolo, esploreremo il codice sorgente C# sopra riportato per capire come utilizzare la funzione Mostra Nascondi contenuto con segnalibri nella libreria Aspose.Words per .NET. Questa funzionalità consente di mostrare o nascondere il contenuto di un segnalibro in un documento Word in base a una condizione specifica durante l'unione dei dati.
+## introduzione
+
+Ehilà! Hai mai desiderato controllare la visibilità di contenuti specifici all'interno di un documento Word in base a determinate condizioni? Con Aspose.Words per .NET, puoi mostrare o nascondere dinamicamente il contenuto dei segnalibri con solo poche righe di codice. In questo tutorial ti guiderò attraverso il processo passo dopo passo, assicurandoti di comprendere ogni parte del codice. Alla fine, sarai un professionista nel manipolare i segnalibri nei documenti Word. Iniziamo!
 
 ## Prerequisiti
 
-- Conoscenza base del linguaggio C#.
-- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
+Prima di immergerci nel tutorial, assicuriamoci di avere tutto ciò di cui hai bisogno:
 
-## Passaggio 1: ottenere il segnalibro
+1. Conoscenza di base di C#: dovresti avere dimestichezza con la sintassi e i concetti di C#.
+2.  Aspose.Words per .NET: scaricalo[Qui](https://releases.aspose.com/words/net/) . Se non sei pronto per l'acquisto, puoi iniziare con a[prova gratuita](https://releases.aspose.com/).
+3. Visual Studio: funzionerà qualsiasi versione recente, ma è consigliabile utilizzare la versione più recente.
+4. .NET Framework: assicurati che sia installato sul tuo computer.
 
- Noi usiamo il`Bookmarks` proprietà dell'intervallo di documenti per ottenere il segnalibro specifico su cui vogliamo mostrare o nascondere il contenuto:
+Pronti per iniziare? Grande! Iniziamo importando gli spazi dei nomi necessari.
+
+## Importa spazi dei nomi
+
+Per utilizzare Aspose.Words per .NET, dobbiamo importare gli spazi dei nomi richiesti. Questo passaggio garantisce l'accesso a tutte le classi e i metodi che utilizzeremo.
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Passaggio 2: inserimento dei campi di unione
+Questi spazi dei nomi sono fondamentali per lavorare con documenti Word e manipolarne il contenuto.
 
- Usiamo un generatore di documenti`DocumentBuilder` per inserire i campi di unione necessari. Questi campi di unione imposteranno una condizione per mostrare o nascondere il contenuto del segnalibro a seconda del valore di`showHide` variabile:
+## Passaggio 1: impostazione del documento
+
+Innanzitutto, creiamo un nuovo documento Word e un generatore di documenti. Il generatore di documenti ci aiuta ad aggiungere e manipolare facilmente il contenuto all'interno del documento.
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## Passaggio 3: spostare il contenuto dei segnalibri
+In questo passaggio inizializziamo un nuovo documento e un generatore di documenti. Questo imposta il nostro ambiente per ulteriori operazioni.
 
-Esaminiamo il contenuto del segnalibro e lo spostiamo in modo che appaia
+## Passaggio 2: aggiunta di contenuti aggiunti ai segnalibri
 
-isse prima del segnalibro. Ciò controllerà la visualizzazione o l'occultamento del contenuto in base alla condizione specificata:
+Successivamente, aggiungeremo del contenuto al documento e creeremo un segnalibro attorno ad esso. Questo segnalibro ci aiuterà a identificare e manipolare il contenuto.
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ Qui aggiungiamo del testo prima e dopo il contenuto aggiunto ai segnalibri. IL`StartBookmark` E`EndBookmark` metodi definiscono i confini del segnalibro.
+
+## Passaggio 3: inserimento di un campo condizionale
+
+Per controllare la visibilità del contenuto aggiunto ai segnalibri, utilizzeremo un campo condizionale. Questo campo controllerà una condizione e visualizzerà o nasconderà il contenuto di conseguenza.
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+In questo passaggio inseriamo un campo IF che controlla il valore del segnalibro. Se il valore è "vero", verrà visualizzato "Visibile"; altrimenti verrà visualizzato "Nascosto".
+
+## Passaggio 4: riorganizzazione dei nodi
+
+Successivamente, dobbiamo riorganizzare i nodi per garantire che la logica condizionale si applichi correttamente al contenuto aggiunto ai segnalibri.
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## Passaggio 4: spostare il resto del contenuto del segnalibro
-
-Spostiamo il resto del contenuto del segnalibro dopo il segnalibro, utilizzando il nodo finale del segnalibro come punto di inserimento:
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## Passaggio 5: esecuzione dell'unione
+Qui spostiamo i nodi per assicurarci che la condizione comprenda correttamente il contenuto aggiunto ai segnalibri.
 
- Noi usiamo il`Execute` metodo del documento`s `Stampa unione` object to execute the merge using the bookmark name and the value of the `mostraHide` variabile:
+## Passaggio 5: esecuzione della stampa unione
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### Codice sorgente di esempio per Mostra Nascondi contenuto con segnalibri utilizzando Aspose.Words per .NET
-
-Ecco l'esempio completo del codice sorgente per dimostrare come mostrare o nascondere il contenuto dei segnalibri utilizzando Aspose.Words per .NET:
+Infine, eseguiremo una stampa unione per impostare il valore del segnalibro e determinare se il contenuto deve essere mostrato o nascosto.
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MERGEFIELD segnalibro}" = "true" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+Questo passaggio imposta il valore del segnalibro su "true", che renderà visibile il contenuto in base alla nostra condizione.
+
+## Passaggio 6: salvataggio del documento
+
+Dopo tutte le manipolazioni, l'ultimo passaggio è salvare il documento modificato.
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+Qui salviamo il documento con un nome file descrittivo per indicare le modifiche.
 
 ## Conclusione
 
-In questo articolo, abbiamo esplorato il codice sorgente C# per comprendere come utilizzare la funzionalità Mostra Nascondi contenuto con segnalibri di Aspose.Words per .NET. Abbiamo seguito una guida passo passo per mostrare o nascondere il contenuto di un segnalibro in base a una condizione specifica durante l'unione dei dati.
+ E questo è tutto! Hai imparato con successo come mostrare o nascondere il contenuto dei segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questo tutorial ha trattato la creazione di un documento, l'aggiunta di segnalibri, l'inserimento di campi condizionali, la riorganizzazione dei nodi e l'esecuzione di una stampa unione. Aspose.Words offre una miriade di funzionalità, quindi non esitare a esplorare il[Documentazione dell'API](https://reference.aspose.com/words/net/) per funzionalità più avanzate.
 
-### Domande frequenti su Mostra nascondi contenuto con segnalibri nel documento Word
+## Domande frequenti
 
-#### D: Posso utilizzare la stessa condizione per più segnalibri nello stesso documento?
+### 1. Cos'è Aspose.Words per .NET?
 
-R: Sì, puoi utilizzare la stessa condizione per più segnalibri nello stesso documento. Basta ripetere i passaggi 2-5 per ciascun segnalibro, modificando il nome del segnalibro e facoltativamente il valore del file`showhide` variabile secondo necessità.
+Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di creare, modificare e convertire documenti Word a livello di codice. È ampiamente utilizzato per attività di automazione dei documenti.
 
-#### D: Come posso aggiungere ulteriori condizioni per mostrare o nascondere il contenuto dei segnalibri?
+### 2. Posso utilizzare Aspose.Words per .NET gratuitamente?
 
- R: Per aggiungere più condizioni, puoi utilizzare operatori logici come`AND` E`OR` nel codice per inserire i campi di unione nel passaggio 2. Modifica la condizione nel codice seguente per aggiungere ulteriori condizioni:
+ Puoi provare Aspose.Words per .NET utilizzando a[prova gratuita](https://releases.aspose.com/). Per un utilizzo a lungo termine, dovrai acquistare una licenza.
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. Come posso modificare altre proprietà di un segnalibro?
 
-#### D: Come posso eliminare un segnalibro in un documento Word utilizzando Aspose.Words per .NET?
+ Aspose.Words ti consente di manipolare varie proprietà di un segnalibro, come il testo e la posizione. Fare riferimento al[Documentazione dell'API](https://reference.aspose.com/words/net/) per istruzioni dettagliate.
 
- R: Per rimuovere un segnalibro in un documento Word utilizzando Aspose.Words per .NET, è possibile utilizzare il file`Remove` metodo da`Bookmarks` raccolta della gamma di documenti. Ecco un codice di esempio per eliminare un segnalibro specifico:
+### 4. Come posso ottenere supporto per Aspose.Words per .NET?
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+Puoi ottenere supporto visitando il[Aspose forum di supporto](https://forum.aspose.com/c/words/8).
 
-#### D: La libreria Aspose.Words è gratuita?
+### 5. Posso manipolare altri tipi di contenuti con Aspose.Words per .NET?
 
- R: La libreria Aspose.Words è una libreria commerciale e richiede una licenza valida per l'utilizzo nei tuoi progetti. Puoi controllare[Aspose.Words per riferimenti API .NET](https://reference.aspose.com/words/net/) per saperne di più sulle opzioni di licenza e sui prezzi.
-
-#### D: Sono disponibili altre librerie per l'elaborazione di testi con documenti Word in .NET?
-
-R: Sì, sono disponibili altre librerie per l'elaborazione di parole con documenti Word in .NET, come Open XML SDK e GemBox.Document. Puoi esplorare queste librerie come alternative ad Aspose.Words in base alle tue esigenze e preferenze specifiche.
+Sì, Aspose.Words per .NET supporta vari tipi di manipolazione dei contenuti, inclusi testo, immagini, tabelle e altro.

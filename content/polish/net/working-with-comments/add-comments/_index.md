@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-comments/add-comments/
 ---
 
-tym obszernym samouczku dowiesz się, jak dodawać komentarze do dokumentu programu Word za pomocą Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Pod koniec tego przewodnika będziesz mógł wstawiać komentarze i dostosowywać ich treść w swoich dokumentach.
+W tym obszernym samouczku dowiesz się, jak dodawać komentarze do dokumentu programu Word za pomocą Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Pod koniec tego przewodnika będziesz mógł wstawiać komentarze i dostosowywać ich treść w swoich dokumentach.
 
 ## Warunki wstępne
 Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
@@ -93,7 +93,7 @@ O: Tak, możesz sformatować tekst komentarza w Aspose.Words dla .NET, korzystaj
 
 #### P: Jak mogę odzyskać wszystkie komentarze znajdujące się w dokumencie?
 
-Odp.: Możesz pobrać wszystkie komentarze znajdujące się w dokumencie za pomocą`Document.Comments` nieruchomość.
+ Odp.: Możesz pobrać wszystkie komentarze zawarte w dokumencie za pomocą`Document.Comments` nieruchomość.
 
 #### P: Czy mogę usunąć konkretny komentarz w Aspose.Words dla .NET?
 

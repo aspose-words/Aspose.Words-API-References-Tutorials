@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // आदेशित सूची निर्दिष्ट करें.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// पाठ के लिए इटैलिक जोर निर्दिष्ट करें।
+// पाठ के लिए इतालवी जोर निर्दिष्ट करें।
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

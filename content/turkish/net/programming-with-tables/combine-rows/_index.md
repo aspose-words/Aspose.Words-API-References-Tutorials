@@ -72,4 +72,4 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki tablo satırlarını nasıl birleştireceğimizi öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki tablo satırlarını programlı olarak değiştirebilirsiniz. Bu özellik, verilerinizi verimli bir şekilde birleştirmenize ve bir tablo halinde düzenlemenize olanak tanır.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki tablo satırlarını nasıl birleştireceğimizi öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, Word belgelerinizdeki tablo satırlarını programlı olarak değiştirebilirsiniz. Bu özellik, verilerinizi verimli bir şekilde birleştirmenize ve bir tablo halinde düzenlemenize olanak tanır.

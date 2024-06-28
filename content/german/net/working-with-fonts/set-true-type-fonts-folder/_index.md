@@ -80,4 +80,4 @@ A: Ja, Sie können mehrere TrueType-Schriftartordner in Aspose.Words angeben, in
 
 #### F: Warum ist es wichtig, den TrueType-Schriftartenordner in Aspose.Words zu konfigurieren?
 
-A: Das Einrichten des TrueType-Schriftartenordners in Aspose.Words ist wichtig, da es Aspose.Words dabei hilft, die Schriftarten zu finden, die bei der Verarbeitung von Word-Dokumenten benötigt werden. Dies gewährleistet eine einheitliche Formatierung und Darstellung des Dokuments, auch über verschiedene Systeme hinweg.
+A: Das Einrichten des Ordners „TrueType-Schriftarten“ in Aspose.Words ist wichtig, da es Aspose.Words dabei hilft, die Schriftarten zu finden, die bei der Verarbeitung von Word-Dokumenten benötigt werden. Dies gewährleistet eine einheitliche Formatierung und Darstellung des Dokuments, auch über verschiedene Systeme hinweg.

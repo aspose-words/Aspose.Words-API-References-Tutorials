@@ -17,7 +17,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 - Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
 - Een documentmappad waar het uitvoerdocument wordt opgeslagen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Stap 2: Maak een nieuw document en voeg een diagram in.
 
  Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
 
@@ -94,7 +94,7 @@ Met Aspose.Words voor .NET heeft u de flexibiliteit om verschillende aspecten va
 ### Veelgestelde vragen
 
 #### Q1. Wat zijn aslabels in een diagram?
-Aslabels in een diagram verwijzen naar de tekstuele weergave van waarden langs de horizontale (X-as) of verticale (Y-as) as van het diagram. Deze labels helpen bij het identificeren en interpreteren van de gegevenspunten die in het diagram zijn uitgezet. Aslabels bieden context en zorgen ervoor dat gebruikers de schaal en het bereik van waarden in het diagram kunnen begrijpen.
+Aslabels in een diagram verwijzen naar de tekstuele weergave van waarden langs de horizontale (X-as) of verticale (Y-as) as van het diagram. Deze labels helpen bij het identificeren en interpreteren van de gegevenspunten die in het diagram zijn uitgezet. Aslabels bieden context en stellen gebruikers in staat de schaal en het bereik van waarden in het diagram te begrijpen.
 
 #### Vraag 2. Hoe kan ik de afstand tussen aslabels aanpassen?
  Om de afstand tussen aslabels in een diagram aan te passen met Aspose.Words voor .NET, kunt u toegang krijgen tot de`AxisX` of`AxisY` eigenschap van het diagram en wijzig de`TickLabelSpacing` eigendom. Door het instellen van de`TickLabelSpacing` tot een specifieke waarde, kunt u de intervaleenheid tussen de labels op de betreffende as regelen, waarbij u de afstand naar wens aanpast.

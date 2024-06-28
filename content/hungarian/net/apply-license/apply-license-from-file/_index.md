@@ -13,7 +13,7 @@ Ebben az oktatóanyagban végigvezetjük Önt az Aspose.Words for .NET könyvtá
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 - Az Aspose.Words érvényes licencfájlja. 
 
 ## 1. lépés: Importálja az Aspose.Words névteret

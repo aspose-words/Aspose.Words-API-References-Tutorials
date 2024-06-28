@@ -73,4 +73,4 @@ V: Igen, az Aspose.Words for .NET különféle lehetőségeket kínál az össze
 
 #### K: Végezhetek részletesebb összehasonlítást a dokumentumok közötti konkrét különbségek azonosítására?
 
-V: Igen, részletesebb összehasonlítást végezhet, hogy azonosítsa a dokumentumok közötti konkrét különbségeket az iteráció segítségével`Revisions` az eredeti dokumentum gyűjteménye. Minden revízió változást vagy eltérést jelent a dokumentumok között. Elérheti az egyes revíziók részleteit, például a változtatás típusát (beszúrás, törlés, formázási módosítás) és a dokumentum érintett tartományát.
+ V: Igen, részletesebb összehasonlítást végezhet, hogy azonosítsa a dokumentumok közötti konkrét különbségeket az iteráció segítségével`Revisions` az eredeti dokumentumok gyűjteménye. Minden revízió változást vagy eltérést jelent a dokumentumok között. Elérheti az egyes revíziók részleteit, például a változtatás típusát (beszúrás, törlés, formázási módosítás) és a dokumentum érintett tartományát.

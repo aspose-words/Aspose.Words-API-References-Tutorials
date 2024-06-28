@@ -16,7 +16,7 @@ Les listes sont de deux types principaux : à puces et numérotées. Ils vous p
 
 ## Configuration de l'environnement
 
- Avant de nous lancer dans la création et la gestion de listes, assurez-vous que la bibliothèque Aspose.Words for Python est installée. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/python/) . De plus, reportez-vous à la documentation de l'API à l'adresse[ce lien](https://reference.aspose.com/words/python-net/) pour des informations détaillées.
+Avant de nous lancer dans la création et la gestion de listes, assurez-vous que la bibliothèque Aspose.Words for Python est installée. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/python/) . De plus, reportez-vous à la documentation de l'API à l'adresse[ce lien](https://reference.aspose.com/words/python-net/) pour des informations détaillées.
 
 ## Création de listes à puces
 

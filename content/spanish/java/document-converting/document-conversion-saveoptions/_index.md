@@ -14,7 +14,7 @@ Aspose.Words para Java es una biblioteca de Java que proporciona una amplia func
 
 ## Configurando su entorno Java
 
-Antes de poder comenzar a usar Aspose.Words para Java, debe configurar su entorno de desarrollo Java. Siga estos pasos para comenzar:
+Antes de poder comenzar a utilizar Aspose.Words para Java, debe configurar su entorno de desarrollo Java. Siga estos pasos para comenzar:
 
 - Paso 1: descargue e instale el kit de desarrollo Java (JDK)
 - Paso 2: cree un nuevo proyecto Java en su entorno de desarrollo integrado (IDE) favorito

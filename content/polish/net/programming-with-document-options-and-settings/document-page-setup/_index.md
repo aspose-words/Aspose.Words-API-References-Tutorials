@@ -50,7 +50,7 @@ Ten kod ustawia tryb układu na „Siatka”, a następnie określa liczbę znak
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Ustaw tryb układu sekcji, pozwalający na zdefiniowanie zachowania siatki dokumentu.
-	// Należy pamiętać, że zakładka Siatka dokumentu staje się widoczna w oknie dialogowym Ustawienia strony programu MS Word
+	// Należy pamiętać, że zakładka Siatka dokumentu staje się widoczna w oknie dialogowym Ustawienia strony programu MS Word.
 	// jeśli jakikolwiek język azjatycki jest zdefiniowany jako język edycji.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

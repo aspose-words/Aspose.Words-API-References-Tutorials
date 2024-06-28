@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 5. Adım: Değiştirilen belgeyi kaydedin
 
- Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
+Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ Bu, Aspose.Words for .NET kullanarak iki belgeyi yeni bir sayfada birleştirme u
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Eklenen belgeyi yeni bir sayfada başlayacak şekilde ayarlayın.
+	// Eklenen belgeyi yeni bir sayfada başlayacak şekilde ayarlayın.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Kaynak belgede bulunan orijinal stilleri kullanarak kaynak belgeyi ekleyin.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

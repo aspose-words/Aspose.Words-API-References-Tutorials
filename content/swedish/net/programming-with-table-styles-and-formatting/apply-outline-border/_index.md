@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Steg 5: Radera befintliga bordskanter
+## Steg 5: Radera befintliga bordskanter.
 För att börja med en ny konturgräns måste vi först radera alla befintliga gränser från tabellen. Detta kan göras med hjälp av`ClearBorders()` metod.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Steg 7: Fyll cellerna med en bakgrundsfärg
-För att förbättra den visuella presentationen av tabellen kan vi fylla cellerna med en grundbakgrundsfärg
+## Steg 7: Fyll cellerna med en bakgrundsfärg.
+För att förbättra den visuella presentationen av tabellen kan vi fylla cellerna med en grundbakgrundsfärg.
 
 aning. I det här exemplet använder vi en ljusgrön färg.
 

@@ -40,7 +40,7 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 
 ### Przykładowy kod źródłowy grupy podziału linii typografii azjatyckiej przy użyciu Aspose.Words dla .NET
 
-Oto kompletny kod źródłowy funkcji Asian Typography Line Break Group w Aspose.Words dla .NET:
+Oto pełny kod źródłowy funkcji Asian Typography Line Break Group w Aspose.Words dla .NET:
 
 ```csharp
 

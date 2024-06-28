@@ -2,84 +2,153 @@
 title: 在郵件合併中插入文檔
 linktitle: 在郵件合併中插入文檔
 second_title: Aspose.Words 文件處理 API
-description: 了解如何在郵件合併期間使用 Aspose.Words for .NET 將文件插入到另一個文件中。
+description: 在此全面的逐步教學中，了解如何使用 Aspose.Words for .NET 在郵件合併欄位中插入文件。
 type: docs
 weight: 10
 url: /zh-hant/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-在本教學中，我們將引導您了解如何使用 Aspose.Words for .NET 的「郵件合併期間插入文件」功能在郵件合併期間將文件插入到另一個文件中。請按照以下步驟了解原始程式碼並執行文件插入。
+## 介紹
 
-## 第 1 步：載入主文檔
+歡迎來到 Aspose.Words for .NET 的文件自動化世界！您是否想知道如何在郵件合併作業期間將文件動態插入主文檔中的特定欄位？嗯，您來對地方了。本教學將引導您逐步完成使用 Aspose.Words for .NET 在郵件合併欄位中插入文件的過程。這就像拼圖一樣，每一塊都完美地拼湊到位。那麼，讓我們深入了解一下吧！
 
-首先，指定文檔的目錄並將主文檔載入到 Document 物件中。就是這樣：
+## 先決條件
+
+在我們開始之前，請確保您具備以下條件：
+
+1.  Aspose.Words for .NET：您可以[點這裡下載最新版本](https://releases.aspose.com/words/net/)。如果您需要購買許可證，您可以這樣做[這裡](https://purchase.aspose.com/buy)。或者，您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)或者嘗試一下[免費試用](https://releases.aspose.com/).
+2. 開發環境：Visual Studio 或任何其他 C# IDE。
+3. C# 基礎知識：熟悉 C# 程式設計將使本教學變得輕而易舉。
+
+## 導入命名空間
+
+首先，您需要匯入必要的名稱空間。這些就像您專案的構建塊。
 
 ```csharp
-//文檔目錄的路徑。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+using System.Linq;
 ```
 
-## 步驟 2：設定郵件合併
+讓我們將這個過程分解為可管理的步驟。每一步都將建立在前一步的基礎上，從而引導您獲得完整的解決方案。
 
-現在讓我們配置郵件合併並指定欄位合併回呼以將一個文件插入另一個文件。就是這樣：
+## 第 1 步：設定您的目錄
 
-```csharp
-mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-```
-
-## 第 3 步：運行郵件合併
-
-我們將透過提供合併欄位的名稱和相應的資料來運行郵件合併。就是這樣：
+在開始插入文件之前，您需要定義文檔目錄的路徑。這是您的文件的儲存位置。
 
 ```csharp
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-```
-
-### 使用 Aspose.Words for .NET 在郵件合併中插入文件的範例原始碼
-
-以下是 Aspose.Words for .NET 的「在郵件合併中插入文件」功能的完整原始碼：
-
-```csharp
-//文檔目錄的路徑。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
+## 步驟2：載入主文檔
+
+接下來，您將載入主文檔。該文件包含將插入其他文件的合併欄位。
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+## 第三步：設定欄位合併回調
+
+要處理合併過程，您需要設定一個回呼函數。此函數將負責在指定的合併欄位中插入文件。
+
+```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-//主文檔中有一個名為「Document_1」的合併欄位。
-//此欄位的對應資料包含文件的完全限定路徑。
-//應該將其插入到該欄位中。
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
+```
 
+## 步驟 4：執行郵件合併
+
+現在是執行郵件合併的時候了。這就是奇蹟發生的地方。您將指定合併欄位以及應在此欄位插入的文件。
+
+```csharp
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
+```
+
+## 第 5 步：儲存文檔
+
+郵件合併完成後，您將儲存修改後的文件。這個新文件將在您想要的位置插入內容。
+
+```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-透過此程式碼，您將能夠在郵件合併期間使用 Aspose.Words for .NET 將一個文件插入到另一個文件中。產生的文件將以新名稱儲存
+## 第 6 步：建立回調處理程序
 
+回呼處理程序是一個對合併欄位進行特殊處理的類別。它會載入欄位值中指定的文件並將其插入到目前合併欄位中。
+
+```csharp
+private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
+{
+    void IFieldMergingCallback.FieldMerging(FieldMergingArgs args)
+    {
+        if (args.DocumentFieldName == "Document_1")
+        {
+            DocumentBuilder builder = new DocumentBuilder(args.Document);
+            builder.MoveToMergeField(args.DocumentFieldName);
+
+            Document subDoc = new Document((string)args.FieldValue);
+            InsertDocument(builder.CurrentParagraph, subDoc);
+
+            if (!builder.CurrentParagraph.HasChildNodes)
+                builder.CurrentParagraph.Remove();
+
+            args.Text = null;
+        }
+    }
+}
+```
+
+## 步驟7：插入文檔
+
+此方法將指定文件插入到目前段落或表格儲存格中。
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        foreach (Node srcNode in srcSection.Body)
+        {
+            if (srcNode.NodeType == NodeType.Paragraph)
+            {
+                Paragraph para = (Paragraph)srcNode;
+                if (para.IsEndOfSection && !para.HasChildNodes)
+                    continue;
+            }
+
+            Node newNode = importer.ImportNode(srcNode, true);
+            destinationParent.InsertAfter(newNode, insertionDestination);
+            insertionDestination = newNode;
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
+}
+```
 
 ## 結論
 
-在本教學中，我們探討如何使用 Aspose.Words for .NET 的「郵件合併期間插入文件」功能在郵件合併期間將文件插入到另一個文件中。透過配置郵件合併並提供必要的數據，您可以透過合併各種文件範本或部分來動態組合文件。 Aspose.Words for .NET 提供了一種靈活且強大的方法來管理複雜的文件產生場景，使其成為自動化文件建立和操作任務的寶貴工具。
+現在你就得到它了！您已使用 Aspose.Words for .NET 在郵件合併作業期間成功將文件插入到特定欄位。這項強大的功能可以為您節省大量的時間和精力，特別是在處理大量文件時。您可以將其視為擁有私人助理，為您處理所有繁重的工作。所以，繼續嘗試吧。快樂編碼！
 
-### 常見問題解答
+## 常見問題解答
 
-#### Q：郵件合併時將一個文檔插入另一個文檔的目的是什麼？
+### 我可以在不同的合併欄位插入多個文件嗎？
+是的你可以。只需在中指定適當的合併欄位和相應的文件路徑即可`MailMerge.Execute`方法。
 
-答：在郵件合併過程中將一個文件插入到另一個文件中，您可以根據合併過程中提供的資料動態組合不同的文件範本或部分。當您想要透過將各種預定義範本或部分合併到最終文件中來組裝複雜文件時，此功能特別有用。
+### 插入文件的格式是否可以與主文件不同？
+絕對地！您可以使用`ImportFormatMode`中的參數`NodeImporter`來控制格式。
 
-#### Q：如何在郵件合併過程中使用 Aspose.Words for .NET 將文件插入到另一個文件中？
+### 如果合併欄位名稱是動態的怎麼辦？
+您可以透過將動態合併欄位名稱作為參數傳遞給回呼處理程序來處理動態合併欄位名稱。
 
-答：若要在郵件合併過程中使用 Aspose.Words for .NET 將文件插入到另一個文件中，請依照下列步驟操作：
-1. 將作為基礎的主文檔載入到 Document 物件中。
-2. 設定郵件合併並指定欄位合併回呼來處理文件插入。
-3. 使用合併欄位的名稱和對應的資料（要插入的文件的路徑）執行郵件合併。
+### 我可以對不同的文件格式使用此方法嗎？
+是的，Aspose.Words 支援各種文件格式，包括 DOCX、PDF 等。
 
-#### 問：如何自訂郵件合併期間的插入行為？
-
-答：要自訂郵件合併期間的插入行為，您可以透過繼承 IFieldMergingCallback 介面來實作自訂 FieldMergingCallback。這使您可以根據您的特定要求控製文件的插入和合併方式。
-
-#### Q：郵件合併時可以插入多個文件嗎？
-
-答：是的，您可以透過為每個合併欄位提供適當的數據，在郵件合併期間插入多個文件。對於每個需要文件插入的合併字段，指定相應文件的路徑作為資料。
-
-
+### 如何處理文件插入過程中的錯誤？
+在回調處理程序中實作錯誤處理以管理可能發生的任何異常。

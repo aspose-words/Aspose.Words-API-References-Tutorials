@@ -40,7 +40,7 @@ url: /ko/java/document-security/managing-document-permissions/
 
 1. 문서 열기: Aspose.Words for Java를 사용하여 Word 문서를 로드합니다.
 
-2. 액세스 제어 정의: Java용 Aspose.Words를 사용하여 문서에 액세스할 수 있는 사용자 또는 그룹과 읽기, 편집, 인쇄 등 이들이 수행할 수 있는 작업을 지정합니다.
+2. 액세스 제어 정의: Java용 Aspose.Words를 사용하여 문서에 액세스할 수 있는 사용자 또는 그룹과 이들이 수행할 수 있는 작업(예: 읽기, 편집, 인쇄)을 지정합니다.
 
 3. 문서 보호 적용: 필요한 경우 비밀번호로 문서 보호를 적용하여 접근을 제한합니다.
 

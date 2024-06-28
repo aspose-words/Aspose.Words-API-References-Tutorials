@@ -18,11 +18,11 @@ Než se ponoříme do podrobností o převodu dokumentů, začněme s Aspose.Wor
 
 ## Krok 1: Instalace
 
- Chcete-li začít, musíte si stáhnout a nainstalovat Aspose.Words for Java. Můžete si jej stáhnout z webu:[Stáhněte si Aspose.Words pro Java](https://releases.aspose.com/words/java/).
+ Chcete-li začít, musíte si stáhnout a nainstalovat Aspose.Words for Java. Stáhnout si ho můžete z webu:[Stáhněte si Aspose.Words pro Java](https://releases.aspose.com/words/java/).
 
 ## Krok 2: Nastavení vašeho projektu Java
 
-Jakmile si stáhnete Aspose.Words for Java, vytvořte nový Java projekt ve vámi preferovaném IDE. Přidejte soubor JAR Aspose.Words do cesty třídy vašeho projektu.
+Jakmile si stáhnete Aspose.Words for Java, vytvořte nový projekt Java ve vámi preferovaném IDE. Přidejte soubor JAR Aspose.Words do cesty třídy vašeho projektu.
 
 ## Převod dokumentů do různých formátů
 

@@ -2,80 +2,116 @@
 title: 設定字體回退設定
 linktitle: 設定字體回退設定
 second_title: Aspose.Words 文件處理 API
-description: 了解如何在 Aspose.Words for .NET 中設定字體替換設定並在 Word 文件中自訂字體替換。
+description: 了解如何在 Aspose.Words for .NET 中設定字體後備設定。此綜合指南可確保文件中的所有字元都能正確顯示。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/set-font-fallback-settings/
 ---
-在本教學中，我們將向您展示如何使用 Aspose.Words for .NET 在 Word 文件中設定字體替換設定。字型替換設定可讓您指定在指定字型不可用時要使用的替換字型。
+
+當處理包含不同文字元素（例如不同語言或特殊字元）的文件時，請確保這些元素正確顯示至關重要。 Aspose.Words for .NET 提供了一個名為「字體回退設定」的強大功能，該功能有助於在原始字體不支援某些字元時定義替換字體的規則。在本指南中，我們將透過逐步教學來探索如何使用 Aspose.Words for .NET 設定字體回退設定。
 
 ## 先決條件
-在開始之前，請確保您擁有以下物品：
-- C# 程式語言的應用知識
-- 專案中安裝的 .NET 的 Aspose.Words 函式庫
 
-## 步驟1：定義文檔目錄
-首先將目錄路徑設定為 Word 文件的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有適當路徑的程式碼中。
+在深入學習本教程之前，請確保您具備以下先決條件：
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+- C#基礎：熟悉C#程式語言和.NET架構。
+-  Aspose.Words for .NET：從以下位置下載並安裝[下載連結](https://releases.aspose.com/words/net/).
+- 開發環境：用於編寫和執行程式碼的 Visual Studio 等設定。
+- 範例文件：有一個範例文件（例如，`Rendering.docx`）準備測試。
+- 字型回退規則 XML：準備定義字型回退規則的 XML 檔案。
 
-## 第 2 步：載入字型替換設定
-建立一個實例`FontSettings`類別並使用`Load`從 XML 檔案載入字型覆蓋設定的方法。指定的 XML 檔案必須包含要使用的字型替換規則。
+## 導入命名空間
 
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## 步驟 3：應用字型替換設定
-透過將字體替換設定分配給文件的`FontSettings`財產。
+要使用Aspose.Words，您需要匯入必要的命名空間。這允許存取文件處理所需的各種類別和方法。
 
 ```csharp
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
 ```
 
-## 步驟 4：儲存文檔
-使用儲存文檔`Save`的方法`Document`具有適當的路徑和檔案名稱。
+## 第 1 步：定義文檔目錄
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
+首先，定義儲存文件的目錄。這對於查找和處理文件至關重要。
 
-### 使用 Aspose.Words for .NET 設定字體後備設定的範例原始碼 
 ```csharp
 //文檔目錄的路徑
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## 第 2 步：載入文檔
+
+將文件載入到 Aspose.Words 中`Document`目的。此步驟可讓您以程式設計方式處理文件。
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## 步驟 3：配置字型設定
+
+創建一個新的`FontSettings`物件並從 XML 檔案載入字體後備設定。此 XML 檔案包含字型後備規則。
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## 步驟 4：將字型設定套用到文檔
+
+分配已配置的`FontSettings`到文檔。這可確保在呈現文件時套用字型後備規則。
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## 第 5 步：儲存文檔
+
+最後，儲存文件。儲存作業期間將使用字體後備設置，以確保正確的字體替換。
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
+## XML 檔案：字型後備規則
+
+以下是定義字體後備規則的 XML 檔案的範例：
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
+```
+
 ## 結論
-在本教學中，您學習如何使用 Aspose.Words for .NET 在 Word 文件中設定字型取代設定。嘗試不同的字型替換規則，以確保文件看起來一致，即使指定的字型不可用。
 
-### 常見問題解答
+透過執行以下步驟，您可以在 Aspose.Words for .NET 中有效地設定和使用字體回退設定。這可以確保您的文件正確顯示所有字符，即使原始字體不支援某些字符。實施這些設定將大大提高文件的品質和可讀性。
 
-#### Q：如何使用 Aspose.Words 在 Word 文件中設定字體替換設定？
+## 常見問題解答
 
-答：要使用 Aspose.Words 在 Word 文件中設定字體替換設置，您可以使用 API 指定在所需字體不可用時要使用的後備字體。即使沒有原始字體，這也可以確保一致的文字視覺化。
+### Q1：什麼是字體回退？
 
-#### Q：使用 Aspose.Words 覆寫 Word 文件時是否可以處理後備字體？
+字體後備功能允許在原始字體不支援某些字元時替換字體，從而確保所有文字元素的正確顯示。
 
-答：是的，使用 Aspose.Words，您可以在 Word 文件中進行替換時管理後備字體。此 API 可讓您偵測遺失的字體並指定適當的後備字體，以保持一致的文字外觀，即使在替換字體時也是如此。
+### Q2：我可以指定多種後備字體嗎？
 
-#### Q：為什麼在 Word 文件中正確配置字型替換設定很重要？
+是的，您可以在 XML 規則中指定多種後備字型。 Aspose.Words 將按照指定的順序檢查每種字體，直到找到支援該字元的字體。
 
-答：在 Word 文件中正確配置字型替換設定對於保持文字的視覺完整性非常重要。透過使用 Aspose.Words 設定適當的後備字體，即使所需的字體不可用，也可以確保文字顯示一致。
+### Q3：哪裡可以下載 Aspose.Words for .NET？
 
-#### Q：在使用 Aspose.Words 取代 Word 文件時，如何偵測缺少的字體？
+您可以從[Aspose下載頁面](https://releases.aspose.com/words/net/).
 
-答：Aspose.Words 可讓您使用 API 偵測 Word 文件中取代過程中遺失的字型。您可以使用 Aspose.Words 提供的方法來檢查所需字體的可用性，並在缺少字體的情況下採取適當的操作。
+### 問題 4：如何建立字體後備規則的 XML 檔案？
 
-#### Q：字體替換會影響我的 Word 文件的佈局嗎？
+可以使用任何文字編輯器建立 XML 檔案。它應遵循本教程提供的範例中所示的結構。
 
-答：如果備用字體的尺寸與原始字體不同，字體替換可能會影響 Word 文件的佈局。然而，透過明智地選擇後備字體並使用 Aspose.Words 配置字體替換設置，您可以最大限度地減少佈局影響。
+### Q5：Aspose.Words 有支援嗎？
+
+是的，您可以在[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8).

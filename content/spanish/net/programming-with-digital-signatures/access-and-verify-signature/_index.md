@@ -79,7 +79,7 @@ R: Las firmas digitales en un documento de Word son firmas electrónicas que bri
 
 R: Para acceder a firmas digitales en un documento de Word usando Aspose.Words para .NET, puede seguir estos pasos:
 1.  Cargue el documento usando el`Document` clase y especifique la ruta al archivo del documento.
-2.  Utilice un bucle para recorrer el`DigitalSignatures` recogida del documento. Cada iteración representa una firma digital.
+2.  Utilice un bucle para recorrer el`DigitalSignatures` recogida de los documentos. Cada iteración representa una firma digital.
 
 #### P: ¿A qué información puedo acceder desde una firma digital en un documento de Word?
 
@@ -97,7 +97,7 @@ R: Desde una firma digital en un documento de Word, se puede acceder a diversa i
 #### P: ¿Cómo puedo verificar la validez de las firmas digitales en un documento de Word usando Aspose.Words para .NET?
 
 R: Para verificar la validez de las firmas digitales en un documento de Word usando Aspose.Words para .NET, puede seguir estos pasos:
-1.  Acceder al`DigitalSignatures` recogida del documento.
+1.  Acceder al`DigitalSignatures` recogida de los documentos.
 2.  Iterar a través de cada`DigitalSignature` objeto de la colección.
 3.  Utilizar el`IsValid` propiedad de la`DigitalSignature` objeto de comprobar si la firma es válida.
 

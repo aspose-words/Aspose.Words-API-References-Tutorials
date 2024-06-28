@@ -53,7 +53,7 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 
 请务必为输出文档指定正确的路径和文件名。
 
-### 使用 Aspose.Words for .NET 合并行的示例源代码 
+### 使用 Aspose.Words for .NET 组合行的示例源代码 
 
 ```csharp
 	//文档目录的路径

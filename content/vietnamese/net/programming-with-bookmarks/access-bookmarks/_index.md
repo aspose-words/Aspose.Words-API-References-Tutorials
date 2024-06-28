@@ -8,7 +8,7 @@ weight: 10
 url: /vi/net/programming-with-bookmarks/access-bookmarks/
 ---
 
-Trong bài viết này, chúng ta sẽ khám phá mã nguồn C# ở trên để hiểu cách sử dụng chức năng Access Bookmarks trong thư viện Aspose.Words cho .NET. Tính năng này cung cấp quyền truy cập vào các dấu trang cụ thể trong tài liệu Word.
+Trong bài viết này, chúng ta sẽ khám phá mã nguồn C# ở trên để hiểu cách sử dụng chức năng Access Bookmarks trong thư viện Aspose.Words for .NET. Tính năng này cung cấp quyền truy cập vào các dấu trang cụ thể trong tài liệu Word.
 
 ## Điều kiện tiên quyết
 

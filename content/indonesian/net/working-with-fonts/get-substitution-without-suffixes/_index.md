@@ -2,86 +2,122 @@
 title: Dapatkan Substitusi Tanpa Sufiks
 linktitle: Dapatkan Substitusi Tanpa Sufiks
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Dalam tutorial ini, pelajari cara mendapatkan penggantian tanpa sufiks di dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengelola substitusi font tanpa sufiks di Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk memastikan dokumen Anda terlihat sempurna setiap saat.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-Dalam tutorial ini, kami akan menunjukkan kepada Anda cara mendapatkan penggantian tanpa sufiks di dokumen Word menggunakan pustaka Aspose.Words untuk .NET. Substitusi tanpa sufiks digunakan untuk mengatasi masalah substitusi font saat menampilkan atau mencetak dokumen. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
+Selamat datang di panduan komprehensif tentang mengelola substitusi font menggunakan Aspose.Words untuk .NET. Jika Anda pernah mengalami masalah dengan font yang tidak muncul dengan benar di dokumen Anda, Anda telah datang ke tempat yang tepat. Tutorial ini akan membawa Anda melalui proses langkah demi langkah untuk menangani substitusi font tanpa sufiks secara efisien. Mari kita mulai!
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki item berikut:
-- Pengetahuan tentang bahasa pemrograman C#
-- Pustaka Aspose.Words untuk .NET diinstal di proyek Anda
 
-## Langkah 1: Tentukan direktori dokumen
- Pertama, Anda perlu mengatur jalur direktori ke lokasi dokumen Word Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai.
+Sebelum mendalami tutorial, pastikan Anda memiliki hal berikut:
+
+- Pengetahuan Dasar C#: Memahami pemrograman C# akan memudahkan untuk mengikuti dan mengimplementasikan langkah-langkahnya.
+-  Aspose.Words untuk .NET Library: Unduh dan instal perpustakaan dari[tautan unduhan](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Siapkan lingkungan pengembangan seperti Visual Studio untuk menulis dan menjalankan kode Anda.
+-  Contoh Dokumen: Contoh dokumen (misalnya,`Rendering.docx`) untuk digunakan selama tutorial ini.
+
+## Impor Namespace
+
+Pertama, kita perlu mengimpor namespace yang diperlukan untuk mengakses kelas dan metode yang disediakan oleh Aspose.Words.
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
 ```
 
-## Langkah 2: Muat dokumen dan konfigurasikan substitusi tanpa sufiks
- Selanjutnya, kita akan memuat dokumen menggunakan`Document` kelas dan konfigurasikan substitusi tanpa akhiran menggunakan`DocumentSubstitutionWarnings` kelas. Kami juga akan menambahkan sumber font dengan menentukan folder yang berisi font.
+## Langkah 1: Tentukan Direktori Dokumen
+
+Untuk memulai, tentukan direktori tempat dokumen Anda berada. Ini membantu dalam menemukan dokumen yang ingin Anda kerjakan.
 
 ```csharp
-// Muat dokumen dan konfigurasikan substitusi tanpa sufiks
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## Langkah 3: Simpan dokumen
-Terakhir, kita akan menyimpan dokumen dengan penerapan no-suffix override.
-
-```csharp
-// Simpan dokumennya
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### Contoh kode sumber untuk Dapatkan Substitusi Tanpa Sufiks menggunakan Aspose.Words untuk .NET 
-```csharp
-
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## Langkah 2: Siapkan Pengendali Peringatan Pergantian
+
+Selanjutnya, kita perlu menyiapkan penangan peringatan yang akan memberi tahu kita setiap kali terjadi penggantian font selama pemrosesan dokumen. Ini penting untuk menangkap dan menangani masalah font apa pun.
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## Langkah 3: Tambahkan Sumber Font Khusus
+
+Pada langkah ini, kami akan menambahkan sumber font khusus untuk memastikan Aspose.Words dapat menemukan dan menggunakan font yang benar. Ini sangat berguna jika Anda memiliki font tertentu yang disimpan di direktori khusus.
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+Dalam kode ini:
+-  Kami mengambil sumber font saat ini dan menambahkan yang baru`FolderFontSource` menunjuk ke direktori font khusus kami (`C:\\MyFonts\\`).
+- Kami kemudian memperbarui sumber font dengan daftar baru ini.
+
+## Langkah 4: Simpan Dokumen
+
+Terakhir, simpan dokumen setelah menerapkan pengaturan substitusi font. Untuk tutorial ini, kami akan menyimpannya sebagai PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## Langkah 5: Buat Kelas Penangan Peringatan
+
+Untuk menangani peringatan secara efektif, buat kelas khusus yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan menangkap dan mencatat peringatan penggantian font apa pun.
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+Di kelas ini:
+-  Itu`Warning` metode menangkap peringatan terkait penggantian font.
+-  Itu`FontWarnings` koleksi menyimpan peringatan ini untuk pemeriksaan atau pencatatan lebih lanjut.
+
 ## Kesimpulan
-Dalam tutorial ini, kita melihat cara mendapatkan override tanpa sufiks di dokumen Word dengan Aspose.Words untuk .NET. Substitusi tanpa sufiks berguna untuk menyelesaikan masalah substitusi font. Jangan ragu untuk menggunakan fitur ini untuk meningkatkan tampilan dan pencetakan dokumen Anda.
 
-### FAQ
+Anda sekarang telah menguasai proses penanganan substitusi font tanpa sufiks menggunakan Aspose.Words untuk .NET. Pengetahuan ini akan memastikan bahwa dokumen Anda mempertahankan tampilan yang diinginkan, apa pun font yang tersedia di sistem. Teruslah bereksperimen dengan pengaturan dan sumber yang berbeda untuk sepenuhnya memanfaatkan kekuatan Aspose.Words.
 
-#### T: Mengapa Aspose.Words menambahkan sufiks pada substitusi font?
+## FAQ
 
-J: Aspose.Words menambahkan sufiks pada substitusi font untuk menghindari konflik antara font asli dan font pengganti. Ini membantu memastikan kompatibilitas maksimum saat mengonversi dan memanipulasi dokumen.
+### Q1: Bagaimana cara menggunakan font dari beberapa direktori khusus?
 
-#### T: Bagaimana cara mengambil substitusi font tanpa sufiks di Aspose.Words?
+ Anda dapat menambahkan banyak`FolderFontSource` contoh ke`fontSources` daftar dan perbarui sumber font yang sesuai.
 
- A: Untuk mengambil substitusi font tanpa sufiks di Aspose.Words, Anda dapat menggunakan`FontSubstitutionSettings` kelas dan`RemoveSuffixes` Properti. Menyetel properti ini ke`true` akan mendapatkan penggantian font tanpa sufiks tambahan.
+### Q2: Di mana saya dapat mengunduh uji coba gratis Aspose.Words untuk .NET?
 
-#### T: Apakah mungkin untuk menonaktifkan penambahan sufiks ke substitusi font di Aspose.Words?
+ Anda dapat mengunduh uji coba gratis dari[Asumsikan halaman uji coba gratis](https://releases.aspose.com/).
 
-J: Tidak, tidak mungkin untuk menonaktifkan penambahan sufiks ke substitusi font di Aspose.Words. Sufiks ditambahkan secara default untuk memastikan kompatibilitas dan konsistensi dokumen.
+###  Q3: Dapatkah saya menangani beberapa jenis peringatan menggunakan`IWarningCallback`?
 
-#### T: Bagaimana cara memfilter sufiks yang tidak diinginkan dalam penggantian font di Aspose.Words?
+ Ya, itu`IWarningCallback` antarmuka memungkinkan Anda menangani berbagai jenis peringatan, bukan hanya penggantian font.
 
- A: Untuk memfilter sufiks yang tidak diinginkan pada substitusi font di Aspose.Words, Anda dapat menggunakan teknik pemrosesan string, seperti menggunakan`Replace` atau`Substring` metode untuk menghapus sufiks tertentu yang tidak ingin Anda sertakan.
+### Q4: Di mana saya bisa mendapatkan dukungan untuk Aspose.Words?
+
+ Untuk dukungan, kunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### Q5: Apakah mungkin untuk membeli lisensi sementara?
+
+ Ya, Anda bisa mendapatkan lisensi sementara dari[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/).

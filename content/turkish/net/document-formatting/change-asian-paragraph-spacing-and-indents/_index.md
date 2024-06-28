@@ -51,9 +51,9 @@ Aspose.Words for .NET ile Asya Paragraf Aralığını ve Girintilerini Düzenle 
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent güncellenecek
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent güncellenecek
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent güncellenecek
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent güncellenecektir.
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent güncellenecektir.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent güncellenecektir.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore güncellenecek
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter güncellenecek
 

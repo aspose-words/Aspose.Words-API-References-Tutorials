@@ -18,7 +18,7 @@ url: /ja/java/document-styling/document-watermarking-page-setup/
 ドキュメントに透かしを追加することは、コンテンツのブランディングやセキュリティを確保するために非常に重要です。 Aspose.Words for Java を使用すると、このタスクが簡単になります。その方法は次のとおりです。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("document.docx");
 
 //透かしを作成する
@@ -52,7 +52,7 @@ doc.save("document_with_watermark.docx");
 ページ設定はドキュメントの書式設定において極めて重要です。 Aspose.Words for Java では、ページ サイズと方向を完全に制御できます。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("document.docx");
 
 //ページサイズをA4に設定します
@@ -71,7 +71,7 @@ doc.save("formatted_document.docx");
 専門的な文書には、余白とページ番号を正確に制御することが不可欠です。 Aspose.Words for Java を使用してこれを実現します。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("document.docx");
 
 //余白を設定する

@@ -65,10 +65,10 @@ Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//Naklonujte tabulku a vložte ji do dokumentu za originál.
+	// Naklonujte tabulku a vložte ji do dokumentu za originál.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Vložte prázdný odstavec mezi dvě tabulky,
+	//Vložte prázdný odstavec mezi dvě tabulky,
 	// jinak budou po uložení spojeny do jednoho, což souvisí s ověřením dokumentu.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

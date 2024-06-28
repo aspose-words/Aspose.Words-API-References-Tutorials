@@ -290,7 +290,7 @@ private void checkPageListsPopulated() throws Exception {
 		return;
 	}
 	reversePageLookup = new HashMap<Integer, ArrayList<Node>>();
-	// Fügen Sie jeden Knoten zu einer Liste hinzu, die die auf jeder Seite gefundenen Knoten darstellt.
+	// Fügen Sie jeden Knoten einer Liste hinzu, die die auf jeder Seite gefundenen Knoten darstellt.
 	for (Node node : (Iterable<Node>) collector.getDocument().getChildNodes(NodeType.ANY, true))
 	{
 		//Kopf-/Fußzeilen folgen den Abschnitten und werden nicht einzeln geteilt.
@@ -459,7 +459,7 @@ public int visitParagraphEnd(Paragraph paragraph) throws Exception {
 	{
 		Paragraph clonePara = (Paragraph) cloneNode;
 		// Entfernen Sie die Listennummerierung aus dem geklonten Absatz, lassen Sie jedoch den Einzug unverändert
-		// da der Absatz vorher Teil des Artikels sein soll.
+		// da der Absatz vorher Teil des Artikels sein sollte.
 		if (paragraph.isListItem())
 		{
 			double textPosition = clonePara.getListFormat().getListLevel().getTextPosition();

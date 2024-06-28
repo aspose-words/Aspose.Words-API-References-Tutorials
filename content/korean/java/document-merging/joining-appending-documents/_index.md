@@ -21,7 +21,7 @@ Aspose.Words for Java는 DOC, DOCX, RTF 등을 포함한 다양한 문서 형식
 
 ## 1단계: Java 프로젝트 설정
 
-시작하려면 선호하는 IDE(통합 개발 환경)에서 새 Java 프로젝트를 생성하세요. 프로젝트의 종속성에 Aspose.Words 라이브러리를 포함해야 합니다.
+시작하려면 선호하는 IDE(통합 개발 환경)에서 새 Java 프로젝트를 생성하세요. 프로젝트 종속성에 Aspose.Words 라이브러리를 포함해야 합니다.
 
 ## 2단계: Aspose.Words 초기화
 
@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
- 그만큼`ImportFormatMode.KEEP_SOURCE_FORMATTING` 옵션을 사용하면 소스 문서의 형식이 유지됩니다.
+ 그만큼`ImportFormatMode.KEEP_SOURCE_FORMATTING` 이 옵션을 사용하면 원본 문서의 형식이 유지됩니다.
 
 ## 5단계: 결과 저장
 

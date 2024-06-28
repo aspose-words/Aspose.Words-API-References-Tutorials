@@ -123,7 +123,7 @@ tomto článku jsme prozkoumali zdrojový kód C#, abychom pochopili, jak použ�
 
 ### FAQ
 
-#### Otázka: Co je funkce "Ignorovat text uvnitř revizí vložení" v Aspose.Words for .NET?
+#### Otázka: Co je funkce "Ignorovat text uvnitř revizí vložení" v Aspose.Words pro .NET?
 
 Odpověď: Funkce "Ignorovat text uvnitř revizí vložení" v Aspose.Words for .NET umožňuje určit, zda má být text uvnitř revizí vložení ignorován při určitých operacích, jako je hledání a nahrazování textu. Když je tato funkce povolena, text uvnitř revizí vložení se během operací nebere v úvahu.
 

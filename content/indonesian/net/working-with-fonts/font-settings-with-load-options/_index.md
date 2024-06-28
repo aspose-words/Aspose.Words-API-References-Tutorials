@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 2: Konfigurasikan Opsi Pemuatan dengan Pengaturan Font
- Selanjutnya, kita akan membuat sebuah instance dari`LoadOptions`dan tentukan pengaturan font dengan membuat instance baru`FontSettings` dan menugaskannya ke`loadOptions.FontSettings`.
+ Selanjutnya, kita akan membuat sebuah instance dari`LoadOptions` dan tentukan pengaturan font dengan membuat instance baru`FontSettings` dan menugaskannya ke`loadOptions.FontSettings`.
 
 ```csharp
 // Konfigurasikan opsi pemuatan dengan pengaturan font
@@ -61,7 +61,7 @@ Dalam tutorial ini, kita melihat cara menggunakan opsi pemuatan dengan pengatura
 
 #### T: Pengaturan font apa lagi yang dapat saya tentukan dengan opsi pemuatan di Aspose.Words?
 
-J: Selain menentukan font default, Anda juga dapat menentukan pengaturan font lain seperti pengkodean default menggunakan properti yang sesuai`LoadOptions` kelas, seperti`DefaultEncoding`.
+ J: Selain menentukan font default, Anda juga dapat menentukan pengaturan font lain seperti pengkodean default menggunakan properti yang sesuai`LoadOptions` kelas, seperti`DefaultEncoding`.
 
 #### T: Apa yang terjadi jika font default yang ditentukan tidak tersedia saat memuat dokumen?
 

@@ -91,7 +91,7 @@ doc.save("output.docx")
 
 ## Következtetés
 
-Ebben az útmutatóban megvizsgáltuk a Markdown formázás lenyűgöző fúzióját a Word dokumentumokon belül az Aspose.Words for Python használatával. Lefedtük a környezet beállításának alapjait, a dokumentumok betöltését és létrehozását, a Markdown szöveg hozzáadását, a stílust, a képek beszúrását, a táblázatok és listák kezelését, valamint az oldalformázást. Ez az erőteljes integráció kreatív lehetőségek tárházát nyitja meg dinamikus és tetszetős tartalom létrehozásához.
+Ebben az útmutatóban megvizsgáltuk a Markdown formázás lenyűgöző fúzióját a Word dokumentumokon belül az Aspose.Words for Python használatával. Lefedtük a környezet beállításának, a dokumentumok betöltésének és létrehozásának, a Markdown szöveg hozzáadásának, a stílusnak, a képek beszúrásának, a táblázatok és listák kezelésének, valamint az oldalformázásnak az alapjait. Ez az erőteljes integráció kreatív lehetőségek tárházát nyitja meg dinamikus és tetszetős tartalom létrehozásához.
 
 ## GYIK
 
@@ -110,7 +110,7 @@ Teljesen! A Markdown szintaxis használatával képeket szúrhat be a dokumentum
 
 Igen, az Aspose.Words módszereket biztosít az oldalelrendezés és a margók igényeinek megfelelő beállítására.
 
-### Menthetem a dokumentumomat különböző formátumokban?
+### Elmenthetem a dokumentumomat különböző formátumokban?
 
 Igen, az Aspose.Words támogatja a dokumentumok mentését különféle formátumokban, például DOCX, PDF, HTML stb.
 

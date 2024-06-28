@@ -59,7 +59,7 @@ taskPane.getWebExtension().getBindings().add(new WebExtensionBinding("UnnamedBin
 doc.save("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## Hämtar information om uppgiftsfönstret
+## Hämtar information om uppgiftsrutan
 
 För att hämta information om uppgiftsrutorna i dokumentet kan du iterera genom dem och komma åt deras referenser:
 

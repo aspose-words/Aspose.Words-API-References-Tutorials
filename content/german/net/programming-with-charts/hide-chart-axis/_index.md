@@ -17,7 +17,7 @@ Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 - Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen, indem Sie es mit dem NuGet-Paketmanager installieren.
 - Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
 
-## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein
+## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein.
 
  Erstelle eine neue`Document` Objekt und a`DocumentBuilder` um das Dokument zu erstellen.
 
@@ -101,7 +101,7 @@ Durch die Verwendung von Aspose.Words für .NET können Sie problemlos Diagrammf
 Aspose.Words für .NET ist eine leistungsstarke Dokumentverarbeitungsbibliothek, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert in .NET-Anwendungen zu erstellen, zu bearbeiten und zu speichern. Es bietet zahlreiche Funktionen für die Textverarbeitung mit Dokumentelementen, einschließlich Diagrammen und Diagrammachsen.
 
 #### Q2. Wie kann ich Aspose.Words für .NET installieren?
-Sie können Aspose.Words für .NET installieren, indem Sie es mithilfe des NuGet-Paketmanagers in Visual Studio herunterladen. Suchen Sie einfach im NuGet-Paketmanager nach „Aspose.Words“ und installieren Sie es in Ihrem Projekt.
+Sie können Aspose.Words für .NET installieren, indem Sie es mithilfe des NuGet-Paketmanagers in Visual Studio herunterladen. Suchen Sie einfach im NuGet-Paketmanager nach „Apose.Words“ und installieren Sie es in Ihrem Projekt.
 
 #### Q3. Kann ich sowohl die X-Achse als auch die Y-Achse eines Diagramms ausblenden?
  Ja, Sie können mit Aspose.Words für .NET sowohl die X-Achse als auch die Y-Achse eines Diagramms ausblenden. Um die X-Achse auszublenden, können Sie auf die zugreifen`AxisX` Eigenschaft des Diagramms und legen Sie fest`Hidden`Eigentum zu`true` . Um die Y-Achse auszublenden, können Sie ebenfalls auf Folgendes zugreifen`AxisY` Eigenschaft und legen Sie die fest`Hidden`Eigentum zu`true`. Dadurch können Sie beide Achsen aus der Diagrammvisualisierung entfernen.

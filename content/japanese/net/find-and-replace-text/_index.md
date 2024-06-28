@@ -21,7 +21,7 @@ Aspose.Words for .NET は、.NET アプリケーションで Word 文書を処�
 | [メタ文字を含むテキストを Word で置換](./replace-text-containing-meta-characters/) | Aspose.Words for .NET を使用して、Word 文書内のメタキャラクターを含むテキストを単語置換する方法を学びます。 |
 | [フィールド内のテキストを無視する](./ignore-text-inside-fields/) | Aspose.Words for .NET の「フィールド内のテキストを無視」機能の使用方法を学習します。 |
 | [リビジョンの削除内のテキストを無視する](./ignore-text-inside-delete-revisions/) | Aspose.Words for .NET の「リビジョンの削除内のテキストを無視」機能の使用方法を学習します。 |
-| [リビジョンの挿入内のテキストを無視](./ignore-text-inside-insert-revisions/) | Aspose.Words for .NET の「挿入リビジョン内のテキストを無視」機能を使用して、Word 文書内の挿入リビジョンを操作する方法を学習します。 |
+| [リビジョンを挿入内のテキストを無視](./ignore-text-inside-insert-revisions/) | Aspose.Words for .NET の「挿入リビジョン内のテキストを無視」機能を使用して、Word 文書内の挿入リビジョンを操作する方法を説明します。 |
 | [フッターのテキストを置換](./replace-text-in-footer/) | Aspose.Words for .NET を使用して Word 文書のフッターのテキストを置換する方法を学習します。 |
 | [正規表現で置換](./replace-with-regex/) | Aspose.Words for .NET を使用して Word 文書内の正規表現ベースのテキスト置換を実行する方法を学びます。 |
 | [置換パターン内の認識と置換](./recognize-and-substitutions-within-replacement-patterns/) | Aspose.Words for .NET の認識と置換による置換パターンを使用して Word ドキュメントを操作する方法を学びます。 |

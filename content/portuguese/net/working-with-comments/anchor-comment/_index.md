@@ -37,7 +37,7 @@ doc.FirstSection.Body.AppendChild(para2);
 ```
 
 ## Etapa 2: crie um comentário e adicione um intervalo de comentários
-seguir, crie um comentário e associe-o a um texto específico usando os objetos CommentRangeStart e CommentRangeEnd:
+A seguir, crie um comentário e associe-o a um texto específico usando os objetos CommentRangeStart e CommentRangeEnd:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Crie três objetos Run.
-// Os dois primeiros executam algum texto, enquanto o terceiro executa um comentário
+//Os dois primeiros executam algum texto, enquanto o terceiro executa um comentário
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ R: Para adicionar uma âncora de comentário em um documento Aspose.Words for .N
 
 #### P: Como posso editar o texto de um comentário vinculado a uma âncora de comentário no Aspose.Words for .NET?
 
- R: Para modificar o texto de um comentário vinculado a uma âncora de comentário no Aspose.Words for .NET, você pode acessar o`Comment.Text` propriedade do correspondente`Comment` objeto e modifique o texto conforme necessário.
+R: Para modificar o texto de um comentário vinculado a uma âncora de comentário no Aspose.Words for .NET, você pode acessar o`Comment.Text` propriedade do correspondente`Comment` objeto e modifique o texto conforme necessário.
 

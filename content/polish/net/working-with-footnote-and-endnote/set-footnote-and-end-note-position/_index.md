@@ -2,7 +2,7 @@
 title: Ustaw położenie przypisu dolnego i przypisu końcowego
 linktitle: Ustaw położenie przypisu dolnego i przypisu końcowego
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić położenie przypisów dolnych i końcowych w dokumentach programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak ustawić położenie przypisów dolnych i końcowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-footnote-and-endnote/set-footnote-and-end-note-position/
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Krok 2: Ustawianie pozycji przypisu dolnego i przypisu końcowego
 
- Następnie uzyskaj dostęp do`FootnoteOptions` I`EndnoteOptions` właściwości dokumentu, aby ustawić położenie przypisów dolnych i końcowych. W tym przykładzie ustawiamy położenie przypisów pod tekstem, a położenie przypisów końcowych na końcu sekcji:
+ Następnie uzyskaj dostęp do`FootnoteOptions` I`EndnoteOptions`właściwości dokumentu, aby ustawić położenie przypisów dolnych i końcowych. W tym przykładzie ustawiamy położenie przypisów pod tekstem, a położenie przypisów końcowych na końcu sekcji:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

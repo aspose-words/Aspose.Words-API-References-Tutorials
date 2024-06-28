@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-fonts/set-fonts-folders/
 ---
 
-den här handledningen går vi igenom steg-för-steg-processen för att ställa in teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du anger typsnittsmappar som ska användas när du renderar dina dokument med Aspose.Words för .NET.
+I den här handledningen går vi igenom steg-för-steg-processen för att ställa in teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du anger typsnittsmappar som ska användas när du renderar dina dokument med Aspose.Words för .NET.
 
 ## Steg 1: Definiera dokumentkatalogen
 Först måste du ställa in sökvägen till din dokumentkatalog. Det här är platsen där du vill spara ditt redigerade renderade dokument. Ersätt "DIN DOKUMENTKATOLOG" med lämplig sökväg.
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
 ## Slutsats
-I den här handledningen lärde vi oss hur man ställer in teckensnittsmappar när man renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange vilka teckensnittskällor som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för ordbehandling med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa teckensnittskällorna som används när du renderar dina dokument efter dina specifika behov.
+den här handledningen lärde vi oss hur man ställer in teckensnittsmappar när man renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange vilka teckensnittskällor som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för ordbehandling med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa teckensnittskällorna som används när du renderar dina dokument efter dina specifika behov.
 
 ### FAQ's
 

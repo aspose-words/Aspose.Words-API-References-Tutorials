@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Langkah 3: Siapkan pengaturan halaman untuk dokumen sumber
 
- Sesuaikan pengaturan pengaturan halaman dokumen sumber untuk memastikan kelanjutan dan penomoran yang tepat. Dalam contoh ini, kami menyetel bagian mulai ke`SectionStart.Continuous` dan mulai ulang penomoran halaman. Kami juga memastikan bahwa lebar, tinggi, dan orientasi halaman sesuai dengan bagian terakhir dokumen tujuan.
+ Sesuaikan pengaturan pengaturan halaman dokumen sumber untuk memastikan kelanjutan dan penomoran yang tepat. Dalam contoh ini, kami menyetel bagian mulai ke`SectionStart.Continuous`dan mulai ulang penomoran halaman. Kami juga memastikan bahwa lebar, tinggi, dan orientasi halaman sesuai dengan bagian terakhir dokumen tujuan.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Langkah 4: Ubah format paragraf
 
- Untuk mempertahankan pemformatan yang benar, ulangi seluruh paragraf dalam dokumen sumber dan atur`KeepWithNext`properti ke`true`Hal ini memastikan bahwa paragraf tetap menyatu selama proses penambahan.
+ Untuk mempertahankan pemformatan yang benar, ulangi seluruh paragraf dalam dokumen sumber dan atur`KeepWithNext`properti ke`true`. Hal ini memastikan bahwa paragraf tetap menyatu selama proses penambahan.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Langkah 6: Simpan dokumen tujuan
 
- Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
+Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ Ini menyelesaikan implementasi penambahan dokumen dengan pengaturan pengaturan h
 	// Mulai ulang penomoran halaman di awal dokumen sumber.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Untuk memastikan hal ini tidak terjadi ketika dokumen sumber memiliki pengaturan pengaturan halaman yang berbeda, pastikan
+	//Untuk memastikan hal ini tidak terjadi ketika dokumen sumber memiliki pengaturan pengaturan halaman yang berbeda, pastikan
 	// pengaturannya identik antara bagian terakhir dokumen tujuan.
 	// Jika ada bagian lanjutan yang mengikuti dokumen sumber,
-	//ini perlu diulangi untuk bagian tersebut.
+	// ini perlu diulangi untuk bagian tersebut.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

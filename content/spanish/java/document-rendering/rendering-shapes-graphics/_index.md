@@ -10,7 +10,7 @@ url: /es/java/document-rendering/rendering-shapes-graphics/
 
 ## Introducción
 
-En esta era digital, los documentos a menudo necesitan ser algo más que texto sin formato. Agregar formas y gráficos puede transmitir información de manera más efectiva y hacer que sus documentos sean visualmente atractivos. Aspose.Words para Java es una poderosa API de Java que le permite manipular documentos de Word, incluida la adición y personalización de formas y gráficos.
+En esta era digital, los documentos a menudo necesitan ser algo más que texto sin formato. Agregar formas y gráficos puede transmitir información de manera más efectiva y hacer que sus documentos sean visualmente atractivos. Aspose.Words para Java es una potente API de Java que le permite manipular documentos de Word, incluida la adición y personalización de formas y gráficos.
 
 ## Primeros pasos con Aspose.Words para Java
 

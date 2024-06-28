@@ -321,7 +321,7 @@ Tabele to skuteczny sposób organizowania i prezentowania danych w dokumentach. 
 // Utwórz nowy dokument
 Document doc = new Document();
 
-// Utwórz tabelę z 3 wierszami i 3 kolumnami
+// Utwórz tabelę z 3 wierszami i 3 kolumnami.
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

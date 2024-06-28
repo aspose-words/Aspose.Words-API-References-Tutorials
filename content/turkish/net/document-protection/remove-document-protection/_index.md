@@ -29,7 +29,7 @@ builder.Writeln("Text added to a document.");
 
 ## 3. Adım: Belgenin Korumasını Kaldır
 
-Belgenin korumasını kaldırmak için Document nesnesinin Unprotect() yöntemini kullanabilirsiniz. Korumayı şifre olmadan veya doğru şifreyle kaldırmayı seçebilirsiniz. Parolasız korumayı kaldırma:
+Belgenin korumasını kaldırmak için Belge nesnesinin Unprotect() yöntemini kullanabilirsiniz. Korumayı şifre olmadan veya doğru şifreyle kaldırmayı seçebilirsiniz. Parolasız korumayı kaldırma:
 
 ```csharp
 doc.Unprotect();

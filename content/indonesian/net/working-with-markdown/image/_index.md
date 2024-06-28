@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Langkah 2: Memasukkan gambar
 
- Kita dapat menyisipkan gambar menggunakan`Shape` kelas dan menentukan jenis gambar, di sini`ShapeType.Image` Kami juga mengatur jenis bungkus gambar`WrapType.Inline`.
+ Kita dapat menyisipkan gambar menggunakan`Shape` kelas dan menentukan jenis gambar, di sini`ShapeType.Image` . Kami juga mengatur jenis bungkus gambar`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fitur gambar dengan As
 
 #### T: Bisakah saya menyisipkan gambar dari URL di Aspose.Words?
 
- A: Ya, Anda dapat menyisipkan gambar dari URL di Aspose.Words. Anda dapat menggunakan hal yang sama`InsertImage` metode dan tentukan URL gambar alih-alih jalur file lokal.
+ A: Ya, Anda dapat menyisipkan gambar dari URL di Aspose.Words. Anda dapat menggunakan hal yang sama`InsertImage`metode dan tentukan URL gambar alih-alih jalur file lokal.
 
 #### T: Bagaimana cara mengubah ukuran gambar di Aspose.Words?
 
@@ -69,7 +69,7 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fitur gambar dengan As
 
 #### T: Dapatkah saya menerapkan filter pada gambar di Aspose.Words?
 
-A: Ya, Anda dapat menerapkan filter pada gambar di Aspose.Words. Misalnya, Anda dapat menerapkan filter buram pada gambar menggunakan`ApplyGaussianBlur` metode`Shape` obyek.
+ A: Ya, Anda dapat menerapkan filter pada gambar di Aspose.Words. Misalnya, Anda dapat menerapkan filter buram pada gambar menggunakan`ApplyGaussianBlur` metode`Shape` obyek.
 
 #### T: Bagaimana cara mengganti satu gambar dengan gambar lain di Aspose.Words?
 

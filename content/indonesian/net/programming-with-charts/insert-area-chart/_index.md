@@ -17,7 +17,7 @@ Pastikan Anda memiliki prasyarat berikut:
 - Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
 - Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Langkah 2: Buat dokumen baru dan masukkan bagan.
 
  Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
 
@@ -98,7 +98,7 @@ Dengan menggunakan Aspose.Words untuk .NET, Anda dapat mengotomatiskan proses pe
 Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram dalam aplikasi .NET. Ini menyediakan serangkaian API komprehensif untuk Pemrosesan Kata dengan elemen dokumen, termasuk bagan, paragraf, tabel, dan banyak lagi.
 
 #### Q2. Bagaimana cara menginstal Aspose.Words untuk .NET?
-Untuk menginstal Aspose.Words untuk .NET, Anda dapat menggunakan manajer paket NuGet di Visual Studio untuk menginstal pustaka langsung ke proyek Anda. Cukup cari "Aspose.Words" di manajer paket NuGet dan instal paketnya.
+Untuk menginstal Aspose.Words untuk .NET, Anda dapat menggunakan manajer paket NuGet di Visual Studio untuk menginstal pustaka langsung ke proyek Anda. Cukup cari "Apose.Words" di manajer paket NuGet dan instal paketnya.
 
 #### Q3. Bisakah saya menyesuaikan tampilan bagan area?
 Ya, menggunakan Aspose.Words untuk .NET, Anda dapat menyesuaikan berbagai aspek tampilan bagan area. Anda dapat mengubah properti seperti judul bagan, warna rangkaian, label sumbu, dan format area bagan. Pustaka ini menyediakan serangkaian API untuk mengontrol elemen visual bagan dan membuat tampilan yang disesuaikan dengan kebutuhan Anda.

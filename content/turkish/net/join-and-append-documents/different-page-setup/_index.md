@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: Kaynak belge için sayfa ayarlarını yapın
 
- Devamın ve numaralandırmanın doğru olmasını sağlamak için kaynak belgenin sayfa düzeni ayarlarını yapın. Bu örnekte bölümün başlangıcını şu şekilde ayarladık:`SectionStart.Continuous` ve sayfa numaralandırmayı yeniden başlatın. Ayrıca sayfa genişliğinin, yüksekliğinin ve yönünün hedef belgenin son bölümüyle eşleştiğinden de emin oluruz.
+ Devamın ve numaralandırmanın doğru olmasını sağlamak için kaynak belgenin sayfa düzeni ayarlarını yapın. Bu örnekte bölümün başlangıcını şu şekilde ayarladık:`SectionStart.Continuous`ve sayfa numaralandırmayı yeniden başlatın. Ayrıca sayfa genişliğinin, yüksekliğinin ve yönünün hedef belgenin son bölümüyle eşleştiğinden de emin oluruz.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## 4. Adım: Paragraf biçimlendirmesini değiştirin
 
- Doğru biçimlendirmeyi korumak için kaynak belgedeki tüm paragrafları yineleyin ve`KeepWithNext`mülkiyet`true`Bu, ekleme işlemi sırasında paragrafların bir arada kalmasını sağlar.
+ Doğru biçimlendirmeyi korumak için kaynak belgedeki tüm paragrafları yineleyin ve`KeepWithNext`mülkiyet`true`. Bu, ekleme işlemi sırasında paragrafların bir arada kalmasını sağlar.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 6. Adım: Hedef belgeyi kaydedin
 
- Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
+Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ Bu, Aspose.Words for .NET kullanılarak farklı sayfa yapısı ayarlarına sahip
 	// Kaynak belgenin başlangıcındaki sayfa numaralandırmasını yeniden başlatın.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Kaynak belgenin farklı sayfa yapısı ayarları olduğunda bunun oluşmamasını sağlamak için,
+	//Kaynak belgenin farklı sayfa yapısı ayarları olduğunda bunun oluşmamasını sağlamak için,
 	// ayarlar hedef belgenin son bölümü arasında aynıdır.
 	// Kaynak belgede devam eden başka sürekli bölümler varsa,
-	//bu bölümler için bunun tekrarlanması gerekecektir.
+	// bu bölümler için bunun tekrarlanması gerekecektir.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

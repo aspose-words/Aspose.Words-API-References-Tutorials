@@ -18,7 +18,7 @@ Documentbeveiliging verwijst naar de praktijk van het beschermen van digitale do
 
 ## 2. Het belang van documentbeveiliging begrijpen
 
-In de onderling verbonden wereld van vandaag is het risico op datalekken en cyberaanvallen groter dan ooit tevoren. Van persoonlijke documenten tot bedrijfsbestanden: alle onbeschermde gegevens kunnen in verkeerde handen vallen, met ernstige gevolgen tot gevolg. Documentbeveiliging is essentieel voor zowel individuen als organisaties om datalekken te voorkomen en te voorkomen dat gevoelige informatie in gevaar komt.
+In de onderling verbonden wereld van vandaag is het risico op datalekken en cyberaanvallen groter dan ooit tevoren. Van persoonlijke documenten tot bedrijfsbestanden: alle onbeschermde gegevens kunnen in verkeerde handen vallen, met ernstige gevolgen tot gevolg. Documentbeveiliging is essentieel voor individuen en organisaties om datalekken te voorkomen en te voorkomen dat gevoelige informatie in gevaar komt.
 
 ## 3. Inleiding tot Aspose.Words voor Python
 
@@ -69,7 +69,7 @@ Om uw Word-document te beschermen, moet u een wachtwoord instellen en bepaalde a
 
 ### 6.1 Documentwachtwoord instellen
 
-Het instellen van een wachtwoord is de meest basale vorm van documentbeveiliging. Het voorkomt dat onbevoegde gebruikers het document openen zonder het juiste wachtwoord.
+Het instellen van een wachtwoord is de meest basale vorm van documentbeveiliging. Het voorkomt dat ongeautoriseerde gebruikers het document openen zonder het juiste wachtwoord.
 
 ```python
 # Sample Python code for setting a document password

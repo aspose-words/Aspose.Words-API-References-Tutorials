@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## Bước 3: Xóa tất cả các phần
- Để xóa tất cả các phần khỏi tài liệu, chúng tôi sẽ sử dụng`Clear` phương pháp của`Sections` việc sưu tầm tài liệu.
+ Để xóa tất cả các phần khỏi tài liệu, chúng tôi sẽ sử dụng`Clear` phương pháp của`Sections` việc thu thập tài liệu.
 
 ```csharp
 doc.Sections.Clear();

@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Krok 3: Wstawienie pola zaawansowanego
+## Krok 3: Wstawianie pól zaawansowanych
 
  Używamy`AppendField()` metoda wstawiania zaawansowanego pola do akapitu.
 

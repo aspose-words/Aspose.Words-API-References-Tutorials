@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-formfields/insert-form-fields/
 ---
 
-W tym samouczku krok po kroku poprowadzimy Cię, jak wstawiać pola formularza, w szczególności pole formularza rozwijanego, do dokumentu programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+W tym samouczku krok po kroku poprowadzimy Cię, jak wstawić pola formularza, w szczególności pole formularza rozwijanego, do dokumentu programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
 
  Aby rozpocząć, upewnij się, że masz zainstalowany i skonfigurowany Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
 

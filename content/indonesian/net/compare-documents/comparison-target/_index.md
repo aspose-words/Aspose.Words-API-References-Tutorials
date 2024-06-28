@@ -58,7 +58,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
  Itu`Compare`metode membandingkan dokumen A dengan dokumen B dan menyimpan perubahan pada dokumen A. Anda dapat menentukan nama pengguna dan tanggal perbandingan untuk referensi.
 
-### Contoh kode sumber untuk Target Perbandingan menggunakan Aspose.Words untuk .NET
+### Contoh kode sumber untuk Bandingkan Target menggunakan Aspose.Words untuk .NET
 
 
 ```csharp
@@ -90,7 +90,7 @@ J: Untuk menggunakan Target Perbandingan di Aspose.Words untuk .NET, ikuti langk
 1. Siapkan lingkungan pengembangan Anda dengan perpustakaan Aspose.Words.
 2. Tambahkan rakitan yang diperlukan ke proyek Anda dengan merujuk Aspose.Words.
 3.  Inisialisasi dokumen yang ingin Anda bandingkan menggunakan`Document` kelas atau itu`DocumentBuilder` kelas.
-4.  Konfigurasikan opsi perbandingan dengan membuat a`CompareOptions` objek dan pengaturan properti seperti`IgnoreFormatting` Dan`Target` (misalnya,`ComparisonTargetType.New` untuk target perbandingan).
+4.  Konfigurasikan opsi perbandingan dengan membuat a`CompareOptions` objek dan pengaturan properti seperti`IgnoreFormatting` Dan`Target` (misalnya.,`ComparisonTargetType.New` untuk target perbandingan).
 5.  Menggunakan`Compare` metode pada satu dokumen, meneruskan dokumen lain dan`CompareOptions` objek sebagai parameter. Cara ini akan membandingkan dokumen dan menyimpan perubahan pada dokumen pertama.
 
 ####  T: Apa tujuan dari`Target` property in the `CompareOptions` class?

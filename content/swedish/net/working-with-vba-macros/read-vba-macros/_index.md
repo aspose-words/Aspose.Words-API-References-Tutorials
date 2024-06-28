@@ -23,7 +23,7 @@ Innan du börjar, se till att du har följande saker:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Steg 2: Ladda dokumentet och läs VBA-makron
+## Steg 2: Ladda dokumentet och läs VBA-makron.
 Därefter kommer vi att ladda Word-dokumentet och kontrollera om det innehåller ett VBA-projekt. Om dokumentet har ett VBA-projekt kommer vi att gå igenom alla moduler i projektet och visa källkoden för varje modul.
 
 ```csharp

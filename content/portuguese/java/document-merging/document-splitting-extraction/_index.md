@@ -110,4 +110,4 @@ Sim, Aspose.Words for Java pode extrair texto de documentos digitalizados com re
 
 ### Onde posso acessar a documentação do Aspose.Words for Java?
 
- Você pode encontrar a documentação do Aspose.Words for Java[aqui](https://reference.aspose.com/words/java/).
+ Você pode encontrar a documentação do Aspose.Words for Java.[aqui](https://reference.aspose.com/words/java/).

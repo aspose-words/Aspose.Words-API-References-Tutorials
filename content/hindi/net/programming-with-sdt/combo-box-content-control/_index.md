@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## चरण 2: एक दस्तावेज़ और संरचित दस्तावेज़ टैग बनाएं
- का एक नया उदाहरण बनाएं`Document` कक्षा और ए`StructuredDocumentTag` कॉम्बो बॉक्स सामग्री नियंत्रण का प्रतिनिधित्व करने के लिए। उल्लिखित करना`SdtType.ComboBox` प्रकार और के रूप में`MarkupLevel.Block` ब्लॉक-स्तरीय कॉम्बो बॉक्स बनाने के लिए मार्कअप स्तर के रूप में।
+ का एक नया उदाहरण बनाएं`Document` कक्षा और ए`StructuredDocumentTag` कॉम्बो बॉक्स सामग्री नियंत्रण का प्रतिनिधित्व करने के लिए। उल्लिखित करना`SdtType.ComboBox` प्रकार के रूप में और`MarkupLevel.Block` ब्लॉक-स्तरीय कॉम्बो बॉक्स बनाने के लिए मार्कअप स्तर के रूप में।
 
 ```csharp
 Document doc = new Document();

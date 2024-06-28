@@ -64,7 +64,7 @@ private static Color convertColor(String inputColor) throws Exception {
 
 ```java
 /// <概要>
-/// バーコードのスケール係数をパーセントから浮動小数点数に変換します。
+/// バーコードのスケール係数をパーセントから浮動小数点に変換します。
 /// </概要>
 ///<param name="scalingFactor"></param>
 /// <戻り値></戻り値>

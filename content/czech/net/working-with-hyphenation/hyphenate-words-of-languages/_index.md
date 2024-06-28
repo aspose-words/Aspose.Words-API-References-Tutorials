@@ -34,7 +34,7 @@ Ujistěte se, že máte v datovém adresáři příslušné soubory slovníku.
 
 ## Krok 3: Zpracování slov dělením slov
 
- Nyní můžete používat funkce dělení slov ke zpracování slov v různých jazycích. Můžete použít různé metody`Document` nebo`DocumentBuilder` v závislosti na vašich konkrétních potřebách.
+Nyní můžete používat funkce dělení slov ke zpracování slov v různých jazycích. Můžete použít různé metody`Document` nebo`DocumentBuilder` v závislosti na vašich konkrétních potřebách.
 
 ```csharp
 // Příklad: Použití metody dělení slov v DocumentBuilderu
@@ -71,7 +71,7 @@ Neváhejte použít tento kód ve svých vlastních projektech a upravit jej tak
 
 #### Otázka: Jak mohu pomocí Aspose.Words slabikovat slovo v určitém jazyce?
 
- A: Chcete-li slabikovat slovo v určitém jazyce pomocí Aspose.Words, můžete použít`Hyphenation` třída a`Hyphenate()` metoda. Vytvořte instanci souboru`Hyphenation` třídu specifikující požadovaný jazyk a poté zavolejte`Hyphenate()`metoda předávání slova do slabikovat jako argument. Tím získáte slabiky slova v určeném jazyce.
+ A: Chcete-li slabikovat slovo v určitém jazyce pomocí Aspose.Words, můžete použít`Hyphenation` třída a`Hyphenate()` metoda. Vytvořte instanci souboru`Hyphenation` třídu specifikující požadovaný jazyk a poté zavolejte`Hyphenate()` metoda předávání slova do slabikovat jako argument. Tím získáte slabiky slova v určeném jazyce.
 
 #### Otázka: Jaké jazykové kódy bych měl použít k určení slabikového jazyka v Aspose.Words?
 
@@ -79,4 +79,4 @@ A: Chcete-li určit jazyk slabikáře v Aspose.Words, musíte použít příslu�
 
 #### Otázka: Funguje slabikování pro všechny jazyky v Aspose.Words?
 
-A: Slabikování v Aspose.Words závisí na pravidlech slabikování specifických pro jazyk. Přestože Aspose.Words podporuje širokou škálu jazyků, některé jazyky nemusí být podporovány nebo pro ně nemusí být slabikování dostupné. Podívejte se do dokumentace Aspose.Words a zjistěte, které jazyky jsou podporovány pro slabikování.
+A: Slabikování v Aspose.Words závisí na pravidlech slabikování specifických pro jazyk. Přestože Aspose.Words podporuje širokou škálu jazyků, některé jazyky nemusí být podporovány nebo pro ně nemusí být k dispozici slabika. Podívejte se do dokumentace Aspose.Words a zjistěte, které jazyky jsou podporovány pro slabikování.

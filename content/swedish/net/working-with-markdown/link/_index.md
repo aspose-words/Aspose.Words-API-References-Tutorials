@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Steg 2: Infoga en länk
 
- Vi kan infoga en länk med hjälp av`Insertlink` dokumentgeneratorns metod. Vi måste ange länktexten, här "Aspose", samt måladressen.
+ Vi kan infoga en länk med hjälp av`InsertHyperlink` dokumentgeneratorns metod. Vi måste ange länktexten, här "Apose", samt måladressen.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com", false);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
 
 ### Exempel på källkod för länkar med Aspose.Words för .NET
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", false);
 DocumentBuilder builder = new DocumentBuilder();
 
 // Infoga länk.
-builder.Insertlink("Aspose", "https://www.aspose.com", false);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
 Grattis! Du har nu lärt dig hur du använder länkfunktionen med Aspose.Words för .NET.
 

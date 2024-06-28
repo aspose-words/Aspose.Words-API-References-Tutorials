@@ -2,7 +2,7 @@
 title: 文書の結合
 linktitle: 文書の結合
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words を使用して、Java でのドキュメント結合の可能性を解き放ちます。詳細なチュートリアルで効率的なワードプロセッサと文書処理を学びます。
+description: Aspose.Words を使用して、Java でのドキュメント結合の可能性を解き放ちます。詳細なチュートリアルで効率的なワードプロセッサとドキュメント処理を学びます。
 type: docs
 weight: 13
 url: /ja/java/document-merging/

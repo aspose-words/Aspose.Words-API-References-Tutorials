@@ -2,7 +2,7 @@
 title: Pokročilé možnosti ukládání dokumentů HTML pomocí Aspose.Words Java
 linktitle: Ukládání HTML dokumentů pomocí
 second_title: Aspose.Words Java Document Processing API
-description: V tomto tutoriálu jsme se zabývali různými pokročilými možnostmi ukládání dokumentů HTML pomocí Aspose.Words pro Java. Tyto možnosti vám umožňují vytvářet vysoce kvalitní HTML
+description: V tomto tutoriálu jsme se zabývali různými pokročilými možnostmi ukládání dokumentů HTML pomocí Aspose.Words pro Java. Tyto možnosti vám umožňují vytvářet vysoce kvalitní HTML.
 type: docs
 weight: 16
 url: /cs/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. Závěr
 tomto tutoriálu jsme prozkoumali pokročilé možnosti ukládání dokumentů HTML, které poskytuje Aspose.Words pro Java. Tyto možnosti vám poskytují jemnou kontrolu nad procesem převodu a umožňují vám vytvářet dokumenty HTML, které se velmi podobají původním dokumentům aplikace Word.
 
-## 12. Nejčastější dotazy
+## 12.Časté dotazy
 Zde jsou některé často kladené otázky o práci s Aspose.Words pro Java a možnosti uložení dokumentu HTML:
 
 ### Q1: Jak mohu převést HTML zpět do formátu Word pomocí Aspose.Words for Java?

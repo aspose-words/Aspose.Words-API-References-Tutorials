@@ -8,7 +8,7 @@ weight: 10
 url: /pt/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
 
-Ao converter um documento do Word em HTML fixo em um aplicativo C#, você pode usar as fontes da máquina de destino para garantir que o HTML renderizado retenha a aparência e o estilo originais do documento. Com a biblioteca Aspose.Words para .NET, você pode especificar facilmente essa funcionalidade usando as opções de salvamento HtmlFixedSaveOptions. Neste guia passo a passo, orientaremos você sobre como usar o código-fonte C# do Aspose.Words for .NET para converter um documento do Word em HTML fixo usando as fontes da máquina de destino usando HtmlFixedSaveOptions.
+Ao converter um documento do Word em HTML fixo em um aplicativo C#, você pode querer usar as fontes da máquina de destino para garantir que o HTML renderizado retenha a aparência e o estilo originais do documento. Com a biblioteca Aspose.Words para .NET, você pode especificar facilmente essa funcionalidade usando as opções de salvamento HtmlFixedSaveOptions. Neste guia passo a passo, orientaremos você sobre como usar o código-fonte C# do Aspose.Words for .NET para converter um documento do Word em HTML fixo usando as fontes da máquina de destino usando HtmlFixedSaveOptions.
 
 ## Compreendendo a biblioteca Aspose.Words
 

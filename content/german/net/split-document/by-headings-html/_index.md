@@ -70,11 +70,11 @@ Erkunden Sie gerne die zusätzlichen Funktionen und Optionen von Aspose.Words f�
 
 #### In welche Formate kann ich das Word-Dokument aufteilen?
 
-Der bereitgestellte Quellcode demonstriert die Aufteilung des Word-Dokuments in kleinere Teile im HTML-Format. Aspose.Words für .NET unterstützt jedoch verschiedene Ausgabeformate, darunter DOCX, PDF, EPUB und mehr. Sie können den Code ändern und das gewünschte Ausgabeformat im angeben`HtmlSaveOptions` entsprechend widersprechen.
+ Der bereitgestellte Quellcode demonstriert die Aufteilung des Word-Dokuments in kleinere Teile im HTML-Format. Aspose.Words für .NET unterstützt jedoch verschiedene Ausgabeformate, darunter DOCX, PDF, EPUB und mehr. Sie können den Code ändern und das gewünschte Ausgabeformat im angeben`HtmlSaveOptions` entsprechend widersprechen.
 
 #### Kann ich ein anderes Kriterium für die Aufteilung des Dokuments wählen?
 
- Ja, Sie können je nach Ihren Anforderungen ein anderes Kriterium für die Aufteilung des Dokuments auswählen. Aspose.Words für .NET bietet mehrere Kriterienoptionen, wie z`HeadingParagraph`, `Page`, `Section` , und mehr. Modifiziere den`DocumentSplitCriteria` Eigentum in der`HtmlSaveOptions` Objekt, um die geeigneten Kriterien für die Aufteilung auszuwählen.
+Ja, Sie können je nach Ihren Anforderungen ein anderes Kriterium für die Aufteilung des Dokuments auswählen. Aspose.Words für .NET bietet mehrere Kriterienoptionen, wie z`HeadingParagraph`, `Page`, `Section` , und mehr. Modifiziere den`DocumentSplitCriteria` Eigentum in der`HtmlSaveOptions` Objekt, um die geeigneten Kriterien für die Aufteilung auszuwählen.
 
 #### Wie kann ich den Ausgabe-HTML für die geteilten Teile anpassen?
 

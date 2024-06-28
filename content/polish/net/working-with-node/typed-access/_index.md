@@ -83,7 +83,7 @@ To jest kompletny przykładowy kod umożliwiający wpisany dostęp do tabel za p
 
 #### P: Co to jest dostęp wpisany w Node.js?
 
-O: Dostęp wpisany w Node.js odnosi się do użycia określonych typów węzłów w celu uzyskania dostępu do właściwości i wartości węzła w dokumencie XML. Zamiast korzystać z właściwości ogólnych, dostęp wpisany wykorzystuje określone metody w celu uzyskania dostępu do określonych typów węzłów, takich jak węzły tekstowe, węzły elementów, węzły atrybutów itp.
+Odp.: Dostęp wpisany w Node.js odnosi się do użycia określonych typów węzłów w celu uzyskania dostępu do właściwości i wartości węzła w dokumencie XML. Zamiast korzystać z właściwości ogólnych, dostęp wpisany wykorzystuje określone metody w celu uzyskania dostępu do określonych typów węzłów, takich jak węzły tekstowe, węzły elementów, węzły atrybutów itp.
 
 #### P: Jak uzyskać dostęp do węzłów za pomocą dostępu wpisywanego?
 

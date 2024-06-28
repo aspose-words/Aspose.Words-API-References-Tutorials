@@ -22,7 +22,7 @@ Document doc = new Document(MyDir + "Rendering.docx");
 
 ## चरण 2: दस्तावेज़ को HTML प्रारूप में अनुभागों में विभाजित करना
 
-अब हम दस्तावेज़ को HTML प्रारूप में अनुभागों में विभाजित करने के लिए सेव विकल्प सेट करेंगे। इसे करने का तरीका यहां बताया गया है:
+अब हम दस्तावेज़ को HTML प्रारूप में अनुभागों में विभाजित करने के लिए सेव विकल्प सेट करेंगे। यह कैसे करना है यहां बताया गया है:
 
 ```csharp
 HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };

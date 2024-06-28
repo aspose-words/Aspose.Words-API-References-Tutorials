@@ -28,7 +28,7 @@ public class TableCreation {
         // Skapa ett nytt dokument
         Document doc = new Document();
         
-        // Skapa en tabell med 3 rader och 3 kolumner
+        // Skapa en tabell med 3 rader och 3 kolumner.
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // Fyll tabellcellerna med data

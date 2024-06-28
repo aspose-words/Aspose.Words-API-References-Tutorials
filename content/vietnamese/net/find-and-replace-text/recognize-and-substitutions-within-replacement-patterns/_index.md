@@ -65,7 +65,7 @@ Dưới đây là mã nguồn ví dụ đầy đủ để minh họa việc sử
 
 ## Phần kết luận
 
-Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu cách sử dụng tính năng Nhận biết và thay thế trong các mẫu thay thế của Aspose.Words cho .NET. Chúng tôi đã làm theo hướng dẫn từng bước để tạo tài liệu, chèn văn bản, thực hiện tìm kiếm và thay thế bằng cách sử dụng biểu thức thông thường và mẫu thay thế dựa trên các nhóm đã chụp và thao tác trên tài liệu.
+Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu cách sử dụng tính năng Nhận biết và thay thế trong các mẫu thay thế của Aspose.Words cho .NET. Chúng tôi đã làm theo hướng dẫn từng bước để tạo tài liệu, chèn văn bản, thực hiện tìm kiếm và thay thế bằng cách sử dụng biểu thức thông thường và mẫu thay thế dựa trên các nhóm đã chụp và thao tác với tài liệu.
 
 ### Câu hỏi thường gặp
 
@@ -114,7 +114,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### Câu hỏi: Tôi có thể tìm thêm thông tin và ví dụ về cách sử dụng biểu thức chính quy trong Aspose.Words cho .NET ở đâu?
 
-Trả lời: Để biết thêm thông tin và ví dụ về cách sử dụng biểu thức chính quy trong Aspose.Words cho .NET, bạn có thể tham khảo[Aspose.Words cho tài liệu tham khảo API .NET](https://reference.aspose.com/words/net/). Tài liệu này cung cấp các giải thích chi tiết và ví dụ mã cho các tình huống khác nhau liên quan đến biểu thức chính quy và thao tác văn bản trong Aspose.Words for .NET.
+Trả lời: Để biết thêm thông tin và ví dụ về cách sử dụng biểu thức chính quy trong Aspose.Words cho .NET, bạn có thể tham khảo[Aspose.Words cho tài liệu tham khảo API .NET](https://reference.aspose.com/words/net/). Tài liệu này cung cấp các giải thích chi tiết và ví dụ mã cho các tình huống khác nhau liên quan đến biểu thức chính quy và thao tác văn bản trong Aspose.Words cho .NET.
 
 #### Câu hỏi: Tôi có thể thao tác các khía cạnh khác của tài liệu dựa trên các nhóm đã thu thập trong quá trình tìm kiếm và thay thế văn bản không?
 

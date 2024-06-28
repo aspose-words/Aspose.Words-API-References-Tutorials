@@ -15,14 +15,14 @@ url: /ar/net/working-with-fonts/set-font-formatting/
 - تم تثبيت مكتبة Aspose.Words الخاصة بـ .NET في مشروعك
 
 ## الخطوة 1: تحديد دليل المستند
- ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب
+ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## الخطوة 2: إنشاء وتنسيق المستند
- إنشاء مثيل لـ`Document` الطبقة و`DocumentBuilder` فئة لبناء الوثيقة. استخدم ال`Font` ملكية`DocumentBuilder` للوصول إلى خصائص تنسيق الخط.
+ إنشاء مثيل لـ`Document` الطبقة و`DocumentBuilder`فئة لبناء الوثيقة. استخدم ال`Font` ملكية`DocumentBuilder` للوصول إلى خصائص تنسيق الخط.
 
 ```csharp
 Document doc = new Document();

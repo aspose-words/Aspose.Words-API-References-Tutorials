@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のバルーンにリビジョンを表示する方法を学習しました。適切な表示オプションを使用することで、右側にリビジョン バーを備えたバブル内にリビジョンを表示することができました。 Aspose.Words for .NET は、リビジョン管理など、Word ドキュメントを操作するための強力な機能を多数提供します。この知識を利用して、Aspose.Words for .NET を使用して独自の Word 文書のバルーンにリビジョンを表示できるようになりました。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のバルーンにリビジョンを表示する方法を学びました。適切な表示オプションを使用することで、右側にリビジョン バーを備えたバブル内にリビジョンを表示することができました。 Aspose.Words for .NET は、リビジョン管理など、Word ドキュメントを操作するための強力な機能を多数提供します。この知識を利用して、Aspose.Words for .NET を使用して独自の Word 文書のバルーンにリビジョンを表示できるようになりました。
 
 
 ### よくある質問

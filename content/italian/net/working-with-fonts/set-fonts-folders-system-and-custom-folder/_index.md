@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Passaggio 3: imposta le cartelle dei caratteri di sistema e personalizzati
- Ora puoi impostare le cartelle dei caratteri di sistema e una cartella personalizzata utilizzando il file`FontSettings` classe e il`SetFontsSources()` metodo. Innanzitutto, è necessario recuperare l'elenco delle origini dei caratteri dipendenti dall'ambiente utilizzando`GetFontsSources()` e memorizzarlo in un elenco. Quindi puoi creare una nuova istanza di`FolderFontSource` specificando il percorso della cartella personalizzata contenente i tuoi caratteri. Aggiungi questa istanza all'elenco delle origini dei caratteri esistenti. Infine, usa`SetFontsSources()` per aggiornare le origini dei caratteri con il nuovo elenco.
+ Ora puoi impostare le cartelle dei caratteri di sistema e una cartella personalizzata utilizzando il file`FontSettings` classe e il`SetFontsSources()` metodo. Innanzitutto, è necessario recuperare l'elenco delle fonti di caratteri dipendenti dall'ambiente utilizzando`GetFontsSources()` e memorizzarlo in un elenco. Quindi puoi creare una nuova istanza di`FolderFontSource` specificando il percorso della cartella personalizzata contenente i tuoi caratteri. Aggiungi questa istanza all'elenco delle origini dei caratteri esistenti. Infine, usa`SetFontsSources()` per aggiornare le origini dei caratteri con il nuovo elenco.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

@@ -72,7 +72,7 @@ Ez az oktatóanyag lépésről lépésre bemutatja, hogyan észlelheti a digitá
 
 #### Hogyan lehet megadni azt a könyvtárat, amely a digitális aláírást keresendő dokumentumokat tartalmazza?
 
- A digitális aláírást keresni kívánt dokumentumokat tartalmazó könyvtár megadásához módosítania kell a`dataDir` változó a kódban. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+ A digitális aláírást keresni kívánt dokumentumokat tartalmazó könyvtár megadásához módosítania kell a`dataDir` változók a kódban. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -84,7 +84,7 @@ Amikor megnyit vagy ment egy dokumentumot az Aspose.Words segítségével, a dok
 
 #### Az Aspose.Words for .NET mely egyéb funkciói használhatók a digitális aláírás észlelésével együtt?
 
- Az Aspose.Words for .NET számos szolgáltatást kínál a Word-dokumentumok feldolgozásához és kezeléséhez. A digitális aláírások észlelése mellett a könyvtár segítségével szövegeket, képeket vagy metaadatokat kinyerhet a dokumentumokból, formázási változtatásokat alkalmazhat, dokumentumokat egyesíthet, dokumentumokat konvertálhat különböző formátumokba és sok mást is használhat. Feltárhatod a[Aspose.Words .NET API hivatkozásokhoz](https://reference.aspose.com/words/net/) hogy felfedezze az összes elérhető funkciót, és megtalálja az igényeinek leginkább megfelelőt.
+ Az Aspose.Words for .NET számos szolgáltatást kínál a Word-dokumentumok feldolgozásához és kezeléséhez. A digitális aláírások észlelése mellett a könyvtár segítségével szövegeket, képeket vagy metaadatokat kinyerhet a dokumentumokból, formázási változtatásokat alkalmazhat, dokumentumokat egyesíthet, dokumentumokat konvertálhat különböző formátumokba és még sok mást. Feltárhatod a[Aspose.Words .NET API hivatkozásokhoz](https://reference.aspose.com/words/net/) hogy felfedezze az összes elérhető funkciót, és megtalálja az igényeinek leginkább megfelelőt.
 
 #### Milyen korlátai vannak a digitális aláírások Aspose.Words for .NET segítségével történő észlelésének?
 

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: configura le opzioni di caricamento con le impostazioni dei caratteri
- Successivamente, creeremo un'istanza di`LoadOptions` specificare le impostazioni del carattere creando una nuova istanza di`FontSettings` e assegnandolo a`loadOptions.FontSettings`.
+ Successivamente, creeremo un'istanza di`LoadOptions` e specificare le impostazioni del carattere creando una nuova istanza di`FontSettings` e assegnandolo a`loadOptions.FontSettings`.
 
 ```csharp
 // Configura le opzioni di caricamento con le impostazioni dei caratteri
@@ -61,7 +61,7 @@ In questo tutorial, abbiamo visto come utilizzare le opzioni di caricamento con 
 
 #### D: Quali altre impostazioni dei caratteri posso specificare con le opzioni di caricamento in Aspose.Words?
 
-R: Oltre a specificare il carattere predefinito, puoi anche specificare altre impostazioni del carattere come la codifica predefinita utilizzando le proprietà appropriate del`LoadOptions` classe, come ad es`DefaultEncoding`.
+ R: Oltre a specificare il carattere predefinito, puoi anche specificare altre impostazioni del carattere come la codifica predefinita utilizzando le proprietà appropriate del`LoadOptions` classe, come ad es`DefaultEncoding`.
 
 #### D: Cosa succede se il carattere predefinito specificato non è disponibile durante il caricamento del documento?
 

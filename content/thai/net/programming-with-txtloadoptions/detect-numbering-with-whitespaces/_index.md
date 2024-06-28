@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /th/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-ในบทช่วยสอนนี้ เราจะสำรวจซอร์สโค้ด C# ที่ให้มาสำหรับฟีเจอร์ "การตรวจจับการกำหนดหมายเลขด้วยช่องว่าง" ด้วย Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณสามารถตรวจจับและสร้างรายการจากเอกสารข้อความที่มีหมายเลขรายการตามด้วยช่องว่าง
+ในบทช่วยสอนนี้ เราจะสำรวจซอร์สโค้ด C# ที่ให้มาสำหรับฟีเจอร์ “การตรวจจับการกำหนดหมายเลขด้วยช่องว่าง” ด้วย Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณสามารถตรวจจับและสร้างรายการจากเอกสารข้อความที่มีหมายเลขรายการตามด้วยช่องว่าง
 
 ## ขั้นตอนที่ 1: การตั้งค่าสภาพแวดล้อม
 
@@ -45,7 +45,7 @@ string textDoc = "Full stop delimiters:\n" +
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- ในขั้นตอนนี้ เรากำหนดค่าตัวเลือกการโหลดเอกสาร เราสร้างใหม่`TxtLoadOptions` วัตถุและตั้งค่า`DetectNumberingWithWhitespaces`ทรัพย์สินเพื่อ`true`. ซึ่งจะทำให้ Aspose.Words ตรวจจับหมายเลขรายการได้แม้ว่าจะมีช่องว่างตามหลังก็ตาม
+ ในขั้นตอนนี้ เรากำหนดค่าตัวเลือกการโหลดเอกสาร เราสร้างใหม่`TxtLoadOptions` วัตถุและตั้งค่า`DetectNumberingWithWhitespaces`ทรัพย์สินเพื่อ`true`- ซึ่งจะทำให้ Aspose.Words ตรวจจับหมายเลขรายการได้แม้ว่าจะมีช่องว่างตามหลังก็ตาม
 
 ## ขั้นตอนที่ 4: กำลังโหลดเอกสารและบันทึก
 
@@ -85,7 +85,7 @@ const string textDoc = "Full stop delimiters:\n" +
 					   "2 Fourth list item 2\n" +
 					   "3 Fourth list item 3";
 
-// รายการที่สี่ โดยมีช่องว่างอยู่ระหว่างหมายเลขรายการและเนื้อหารายการ
+// รายการที่สี่ โดยมีช่องว่างระหว่างหมายเลขรายการและเนื้อหารายการ
 // จะถูกตรวจพบเป็นรายการหากตั้งค่า "DetectNumberingWithWhitespaces" ในวัตถุ LoadOptions เป็นจริงเท่านั้น
 // เพื่อหลีกเลี่ยงย่อหน้าที่ขึ้นต้นด้วยตัวเลขที่ถูกตรวจพบว่าเป็นรายการโดยไม่ตั้งใจ
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };

@@ -2,7 +2,7 @@
 title: Tùy chọn lưu tài liệu HTML nâng cao với Aspose.Words Java
 linktitle: Lưu tài liệu HTML với
 second_title: API xử lý tài liệu Java Aspose.Words
-description: Trong hướng dẫn này, chúng tôi đã đề cập đến nhiều tùy chọn lưu tài liệu HTML nâng cao khác nhau với Aspose.Words cho Java. Các tùy chọn này cho phép bạn tạo HTML chất lượng cao
+description: Trong hướng dẫn này, chúng tôi đã đề cập đến nhiều tùy chọn lưu tài liệu HTML nâng cao khác nhau với Aspose.Words cho Java. Các tùy chọn này cho phép bạn tạo HTML chất lượng cao.
 type: docs
 weight: 16
 url: /vi/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -75,7 +75,7 @@ public void convertMetafilesToSvg() throws Exception {
 ```
 
 ## 7. Thêm tiền tố tên lớp CSS
- Với`addCssClassNamePrefix` phương thức này, bạn có thể thêm tiền tố vào tên lớp CSS trong HTML được xuất. Điều này giúp ngăn ngừa xung đột với các phong cách hiện có.
+ Với`addCssClassNamePrefix` phương thức này, bạn có thể thêm tiền tố vào tên lớp CSS trong HTML đã xuất. Điều này giúp ngăn ngừa xung đột với các phong cách hiện có.
 
 ```java
 @Test
@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. Kết luận
 Trong hướng dẫn này, chúng ta đã khám phá các tùy chọn lưu tài liệu HTML nâng cao do Aspose.Words cho Java cung cấp. Các tùy chọn này cung cấp cho bạn quyền kiểm soát chi tiết trong quá trình chuyển đổi, cho phép bạn tạo tài liệu HTML gần giống với tài liệu Word gốc.
 
-## 12. Câu hỏi thường gặp
+## 12.Câu hỏi thường gặp
 Dưới đây là một số câu hỏi thường gặp khi làm việc với Aspose.Words cho các tùy chọn lưu tài liệu Java và HTML:
 
 ### Câu hỏi 1: Làm cách nào tôi có thể chuyển đổi HTML trở lại định dạng Word bằng Aspose.Words cho Java?

@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 2: Kaynak ve Hedef Belgelerini Yükleyin
 
- Daha sonra Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. Dosya adlarını güncelleyin`Document` belge adlarınıza göre yapıcı.
+Daha sonra Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. Dosya adlarını güncelleyin`Document` belge adlarınıza göre yapıcı.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## Adım 5: Kaynak Belgeyi Hedef Belgeye Ekleme
 
- Artık kaynak belgeyi hedef belgeye aşağıdaki komutu kullanarak ekleyebilirsiniz:`InsertDocument` yöntemi`DocumentBuilder` sınıf. Kullan`ImportFormatMode.UseDestinationStyles` parametreyi girin ve iletin`ImportFormatOptions` Akıllı stil davranışını sürdürmek için nesne.
+ Artık kaynak belgeyi hedef belgeye aşağıdaki komutu kullanarak ekleyebilirsiniz:`InsertDocument` yöntemi`DocumentBuilder` sınıf. Kullan`ImportFormatMode.UseDestinationStyles` parametreleri ve iletin`ImportFormatOptions` Akıllı stil davranışını sürdürmek için nesne.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

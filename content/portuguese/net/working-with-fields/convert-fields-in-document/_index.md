@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Passo 5: Salve o documento transformado
- Use o`Save()`método para salvar o documento com os campos convertidos em texto no diretório de documentos especificado.
+ Use o`Save()` método para salvar o documento com os campos convertidos em texto no diretório de documentos especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

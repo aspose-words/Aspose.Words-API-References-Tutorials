@@ -16,7 +16,7 @@ V těchto výukových programech vývojáři prozkoumají, jak využít Aspose.W
 
 ## Zlepšení zpracování dokumentů Word
 
-Výukové programy se zaměřují na vylepšení pracovních postupů zpracování textových dokumentů pomocí převodu dokumentů. Vývojáři získají přehled o dávkovém převodu, zachování prvků dokumentu a zpracování chyb při převodu. Aspose.Words zjednodušuje složité úlohy převodu dokumentů, což z něj činí neocenitelný nástroj pro vývojáře Pythonu.
+Výukové programy se zaměřují na vylepšení pracovních postupů zpracování textových dokumentů pomocí převodu dokumentů. Vývojáři získají přehled o dávkovém převodu, zachování prvků dokumentu a řešení chyb převodu. Aspose.Words zjednodušuje složité úlohy převodu dokumentů, což z něj činí neocenitelný nástroj pro vývojáře Pythonu.
 
 ## Zjednodušte si správu dokumentů
 

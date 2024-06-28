@@ -2,88 +2,116 @@
 title: 警告通知を受け取る
 linktitle: 警告通知を受け取る
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET の使用時に警告通知を受信し、ドキュメント内の問題や警告を管理する方法を学びます。
+description: 詳細なガイドを参照して、Aspose.Words for .NET でフォント置換通知を受け取る方法を学びましょう。ドキュメントが毎回正しく表示されるようにします。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/receive-warning-notification/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET の使用中に警告通知を受け取る方法を説明します。ドキュメントの設定時または保存時に警告を発行できます。 .NET プロジェクトのコードを理解して実装できるように、段階的にガイドします。
+ドキュメント内の予期しないフォントの問題に対処することにうんざりしていませんか? Aspose.Words for .NET を使用すると、ドキュメント処理中に潜在的な問題が発生した場合に通知を受け取ることができるため、ドキュメントの品質を維持しやすくなります。この包括的なガイドでは、Aspose.Words で警告通知を設定する手順を説明し、重要な警告を二度と見逃さないようにします。
 
 ## 前提条件
-始める前に、次のものが揃っていることを確認してください。
-- C# プログラミング言語に関する実践的な知識
-- プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
+
+本題に入る前に、次のものが揃っていることを確認してください。
+
+- C# の基本知識: C# に精通していると、手順を理解して実装するのに役立ちます。
+-  Aspose.Words for .NET ライブラリ:[ダウンロードリンク](https://releases.aspose.com/words/net/).
+- 開発環境: コードを作成して実行するための Visual Studio などのセットアップ。
+- サンプルドキュメント: サンプルドキュメントを用意します (例:`Rendering.docx`) を使用して作業します。
+
+## 名前空間のインポート
+
+開始するには、必要な名前空間をインポートする必要があります。これらにより、タスクに必要なクラスとメソッドへのアクセスが提供されます。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.WarningInfo;
+```
 
 ## ステップ 1: ドキュメント ディレクトリを定義する
-まず、Word 文書の場所へのディレクトリ パスを設定します。交換する`"YOUR DOCUMENT DIRECTORY"`コード内で適切なパスを指定します。
+
+まず、ドキュメントが保存されているディレクトリを指定します。これは、処理するドキュメントを見つけるために不可欠です。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## ステップ 2: ドキュメントをアップロードし、警告ハンドラーを構成する
-を使用してドキュメントをロードします。`Document`クラス。次に、のインスタンスを作成します。`HandleDocumentWarnings`警告を処理するクラス。
-
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc. WarningCallback = callback;
-```
-
-## ステップ 3: レイアウトを更新してドキュメントを保存する
-を呼び出してドキュメントのレイアウトを更新します。`UpdatePageLayout()`方法。これにより、警告が表示される場合があります。次に、ドキュメントを保存します。
-
-```csharp
-doc.UpdatePageLayout();
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-```
-
-### Aspose.Words for .NET を使用した警告通知の受信のサンプル ソース コード 
-
-```csharp
-
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Rendering.docx");
-//UpdatePageLayout を呼び出すと、ドキュメントがメモリ内にレンダリングされます。レンダリング中に発生した警告
-//ドキュメントが保存されるまで保存され、その後適切な WarningCallback に送信されます。
-doc.UpdatePageLayout();
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc.WarningCallback = callback;
-//ドキュメントが以前にレンダリングされた場合でも、ドキュメントの保存中に保存警告がユーザーに通知されます。
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-
 ```
 
+## ステップ 2: ドキュメントをロードする
+
+ドキュメントを Aspose.Words にロードします。`Document`物体。これにより、ドキュメントをプログラムで操作できるようになります。
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## ステップ 3: ページ レイアウトを更新する
+
+電話してください`UpdatePageLayout`方法。これにより、ドキュメントがメモリ内にレンダリングされ、レンダリング中に発生する警告がキャプチャされます。
+
+```csharp
+doc.UpdatePageLayout();
+```
+
+## ステップ 4: 警告コールバックを設定する
+
+警告をキャプチャして処理するには、`IWarningCallback`インターフェース。このクラスは、ドキュメント処理中に発生する警告をログに記録します。
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        //置き換えられるフォントのみに興味があります。
+        if (info.WarningType == WarningType.FontSubstitution)
+        {
+            Console.WriteLine("Font substitution: " + info.Description);
+        }
+    }
+}
+```
+
+## ステップ 5: ドキュメントにコールバックを割り当てる
+
+警告コールバックをドキュメントに割り当てます。これにより、フォントの問題が確実にキャプチャされ、ログに記録されます。
+
+```csharp
+HandleDocumentWarnings callback = new HandleDocumentWarnings();
+doc.WarningCallback = callback;
+```
+
+## ステップ 6: ドキュメントを保存する
+
+最後に、ドキュメントを保存します。ドキュメントが以前にレンダリングされた場合でも、このステップ中に保存の警告がユーザーに通知されます。
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
+```
+
+これらの手順に従うことで、フォントの置換を適切に処理し、置換が発生するたびに通知を受け取るようにアプリケーションを構成しました。
+
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET の使用中に警告通知を受け取る方法を学習しました。ドキュメントの設定時または保存時に警告を発行できます。この機能を使用すると、ドキュメントに関連する問題や警告について通知を受け取ることができます。
 
-### よくある質問
+これで、Aspose.Words for .NET を使用してフォント置換の通知を受け取るプロセスをマスターできました。このスキルは、必要なフォントが利用できない場合でも、ドキュメントを常に最高の状態に保つのに役立ちます。 Aspose.Words の機能を最大限に活用するには、さまざまな設定を試し続けてください。
 
-#### Q: Aspose.Words で警告通知を受け取るにはどうすればよいですか?
+## よくある質問
 
- A: Aspose.Words で警告通知を受信するには、`FontSettings`クラスと`WarningCallback`イベント。ドキュメントの処理中にフォント関連の警告が発生したときに通知を受けるコールバック メソッドを定義できます。
+### Q1: デフォルトのフォントを複数指定できますか?
 
-#### Q: Aspose.Words のフォント関連の警告の一般的な種類は何ですか?
+いいえ、置換用に指定できるデフォルトのフォントは 1 つだけです。ただし、複数のフォールバック フォント ソースを構成できます。
 
-A: Aspose.Words のフォント関連の一般的な警告の種類は次のとおりです。
-- フォントが見つからない
-- 置換されたフォント
-- フォントの書式設定の問題
+### Q2: Aspose.Words for .NET の無料トライアルはどこで入手できますか?
 
-#### Q: Word 文書内のフォント関連の問題をトラブルシューティングするにはどうすればよいですか?
+無料トライアル版は次からダウンロードできます。[Asposeの無料トライアルページ](https://releases.aspose.com/).
 
-A: Word 文書内のフォント関連の問題を修正するには、次の手順を実行できます。
-- Aspose.Words アプリケーションを実行しているシステムに不足しているフォントをインストールします。
-- 元のフォントと視覚的に似た適切な代替フォントを使用します。
-- フォントの書式を確認および調整して、一貫した外観を確保します。
+###  Q3: 他の種類の警告を次の方法で処理できますか?`IWarningCallback`?
 
-#### Q: Aspose.Words でフォント関連の警告通知を受け取ることが重要なのはなぜですか?
+はい`IWarningCallback`インターフェイスは、フォントの置換だけでなく、さまざまなタイプの警告を処理できます。
 
-A: Aspose.Words でフォント関連の警告通知を取得することは、文書内の潜在的な問題を特定するのに役立つため、重要です。これにより、これらの問題を解決し、ドキュメントの品質を確保するために必要な手順を実行できるようになります。
+### Q4: Aspose.Words のサポートはどこで見つけられますか?
 
-#### Q: Aspose.Words で警告通知を有効または無効にするにはどうすればよいですか?
+訪問[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)援助のために。
 
- A: Aspose.Words で警告通知を有効または無効にするには、`FontSettings.ShowFontWarnings`プロパティを設定して、`true`または`false`ニーズに応じて。有効にすると、フォント関連の警告通知が届きます。
+### Q5: Aspose.Words の一時ライセンスを取得することはできますか?
+
+はい、次のサイトから一時ライセンスを取得できます。[一時ライセンスのページ](https://purchase.aspose.com/temporary-license/).

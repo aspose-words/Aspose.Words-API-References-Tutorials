@@ -74,5 +74,5 @@ Wreszcie możemy zapisać dokument z dodanym tekstowym znakiem wodnym.
 	
 ```
 
-Gratulacje! Nauczyłeś się teraz, jak dodawać tekstowy znak wodny z określonymi opcjami przy użyciu Aspose.Words dla .NET.
+Gratulacje! Nauczyłeś się teraz, jak dodać tekstowy znak wodny z określonymi opcjami przy użyciu Aspose.Words dla .NET.
 

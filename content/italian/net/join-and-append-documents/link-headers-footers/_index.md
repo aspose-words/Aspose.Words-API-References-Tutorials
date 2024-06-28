@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Passaggio 2: caricare i documenti di origine e di destinazione
 
- Successivamente, è necessario caricare i documenti di origine e di destinazione utilizzando Aspose.Words`Document` classe. Aggiorna i nomi dei file nel file`Document` costruttore in base ai nomi dei documenti.
+Successivamente, è necessario caricare i documenti di origine e di destinazione utilizzando Aspose.Words.`Document` classe. Aggiorna i nomi dei file nel file`Document` costruttore in base ai nomi dei documenti.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Passaggio 4: collega intestazioni e piè di pagina alla sezione precedente
 
-Per collegare le intestazioni e i piè di pagina del documento di origine alla sezione precedente del documento di destinazione, è possibile utilizzare il file`LinkToPrevious` metodo del`HeadersFooters` collezione. Di passaggio`true` come parametro, sovrascrivi eventuali intestazioni o piè di pagina esistenti nel documento di origine.
+ Per collegare le intestazioni e i piè di pagina del documento di origine alla sezione precedente del documento di destinazione, è possibile utilizzare il file`LinkToPrevious` metodo del`HeadersFooters` collezione. Di passaggio`true` come parametro, sovrascrivi eventuali intestazioni o piè di pagina esistenti nel documento di origine.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Paso 2: cargue los documentos de origen y de destino
 
- A continuación, debe cargar los documentos de origen y de destino utilizando Aspose.Words.`Document` clase. Actualice los nombres de los archivos en el`Document` constructor de acuerdo con los nombres de sus documentos.
+ continuación, debe cargar los documentos de origen y de destino utilizando Aspose.Words.`Document` clase. Actualice los nombres de los archivos en el`Document` constructor de acuerdo con los nombres de sus documentos.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Paso 4: vincular encabezados y pies de página a la sección anterior
 
-Para vincular los encabezados y pies de página del documento de origen a la sección anterior del documento de destino, puede utilizar el`LinkToPrevious` método de la`HeadersFooters` recopilación. Al pasar`true` como parámetro, anula cualquier encabezado o pie de página existente en el documento fuente.
+ Para vincular los encabezados y pies de página del documento de origen a la sección anterior del documento de destino, puede utilizar el`LinkToPrevious` método de la`HeadersFooters` recopilación. Al pasar`true` como parámetro, anula cualquier encabezado o pie de página existente en el documento fuente.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

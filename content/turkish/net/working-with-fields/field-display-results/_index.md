@@ -61,7 +61,7 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // Alanları güncelleyin.
 document. UpdateFields();
 
-// Saha sonuçlarının görüntülenmesi.
+//Saha sonuçlarının görüntülenmesi.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
@@ -78,7 +78,7 @@ C: Aspose.Words'teki sonuç görüntüleme alanı, Word belgesindeki bir işlemi
 
 #### S: Aspose.Words ile bir Word belgesindeki sonuç görüntüleme alanı nasıl güncellenir?
 
-C: Bir Word belgesindeki sonuç görüntüleme alanını Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem belgede döngü yapar ve sonuç görüntüleme alanları da dahil olmak üzere tüm alanları günceller ve değerleri mevcut verilere göre yeniden hesaplar.
+C: Bir Word belgesindeki sonuç görüntüleme alanını Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem belgede döngü yapar ve sonuç görüntüleme alanları da dahil olmak üzere tüm alanları günceller, değerleri mevcut verilere göre yeniden hesaplar.
 
 #### S: Sonuç görüntüleme alanı tarafından görüntülenen sonucu biçimlendirebilir miyim?
 

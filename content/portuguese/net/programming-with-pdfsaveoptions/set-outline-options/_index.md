@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Etapa 3: configurar opções de salvar como PDF com opções de plano
 
- Para definir opções de contorno no PDF gerado, precisamos configurar o`PdfSaveOptions` objeto. Podemos definir o número de níveis de contorno do título (`HeadingsOutlineLevels`) e o número de níveis de estrutura de tópicos expandidos (`ExpandedOutlineLevels`).
+Para definir opções de contorno no PDF gerado, precisamos configurar o`PdfSaveOptions` objeto. Podemos definir o número de níveis de contorno do título (`HeadingsOutlineLevels`) e o número de níveis de estrutura de tópicos expandidos (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

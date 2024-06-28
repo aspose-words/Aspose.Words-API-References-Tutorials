@@ -66,7 +66,7 @@ Với mã này, bạn sẽ có thể tự động điều chỉnh khoảng cách
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã khám phá quy trình sử dụng tính năng Space để điều chỉnh khoảng cách giữa văn bản Châu Á và Latinh trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đã nêu, bạn có thể đảm bảo khoảng cách và căn chỉnh phù hợp, đặc biệt hữu ích khi xử lý nội dung hỗn hợp Châu Á và Latinh.
+Trong hướng dẫn này, chúng ta đã khám phá quy trình sử dụng tính năng Space để điều chỉnh khoảng cách giữa văn bản Châu Á và Latinh trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đã nêu, bạn có thể đảm bảo khoảng cách và căn chỉnh phù hợp, đặc biệt hữu ích khi xử lý nội dung hỗn hợp giữa Châu Á và Latinh.
 
 ### Câu hỏi thường gặp
 
@@ -78,7 +78,7 @@ Trả lời: Tính năng Khoảng cách giữa văn bản Châu Á và Latinh tr
 
 Đáp: Việc điều chỉnh khoảng cách giữa văn bản Châu Á và Latinh là rất quan trọng để đảm bảo rằng các kiểu chữ viết khác nhau hòa hợp hài hòa trong tài liệu. Khoảng cách thích hợp sẽ nâng cao khả năng đọc và hình thức trực quan tổng thể, ngăn không cho văn bản xuất hiện quá chật chội hoặc dàn trải.
 
-#### Hỏi: Tôi có thể tùy chỉnh điều chỉnh khoảng trắng giữa các tập lệnh khác nhau không?
+#### Hỏi: Tôi có thể tùy chỉnh điều chỉnh khoảng cách giữa các tập lệnh khác nhau không?
 
  Đáp: Có, bạn có thể tùy chỉnh điều chỉnh khoảng cách giữa các tập lệnh khác nhau bằng cách sử dụng`AddSpaceBetweenFarEastAndAlpha` Và`AddSpaceBetweenFarEastAndDigit` của cải. Bằng cách bật hoặc tắt các thuộc tính này, bạn có thể kiểm soát khoảng cách giữa văn bản Châu Á và Latinh, cũng như giữa văn bản và số Châu Á.
 

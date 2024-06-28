@@ -63,7 +63,7 @@ Wykonując te kroki, możesz łatwo kontrolować, czy czcionki podstawowe powinn
 
 ## Wniosek
 
-tym samouczku wyjaśniliśmy, jak zmniejszyć rozmiar pliku PDF, nie osadzając podstawowych czcionek w Aspose.Words dla .NET. Ta funkcja pozwala kontrolować, czy czcionki podstawowe powinny być osadzane w pliku PDF podczas konwertowania dokumentu programu Word. Wykonując opisane czynności, możesz łatwo kontrolować osadzanie lub brak osadzania podstawowych czcionek, co może pomóc zmniejszyć rozmiar pliku PDF i zapewnić lepszą kompatybilność oraz spójny wygląd dokumentu na różnych urządzeniach i platformach. Nie zapomnij wziąć pod uwagę konsekwencji nieosadzenia czcionek podstawowych i poeksperymentować, aby upewnić się, że dokument będzie renderowany zgodnie z oczekiwaniami.
+tym samouczku wyjaśniliśmy, jak zmniejszyć rozmiar pliku PDF, nie osadzając podstawowych czcionek w Aspose.Words dla .NET. Ta funkcja pozwala kontrolować, czy czcionki podstawowe powinny być osadzane w pliku PDF podczas konwertowania dokumentu programu Word. Wykonując opisane kroki, możesz łatwo kontrolować osadzanie lub nie osadzanie podstawowych czcionek, co może pomóc zmniejszyć rozmiar pliku PDF i zapewnić lepszą kompatybilność i spójny wygląd dokumentu na różnych urządzeniach i platformach. Nie zapomnij wziąć pod uwagę konsekwencji nieosadzenia czcionek podstawowych i poeksperymentować, aby upewnić się, że dokument będzie renderowany zgodnie z oczekiwaniami.
 
 ### Często Zadawane Pytania
 

@@ -50,7 +50,7 @@ Console.WriteLine("...............................");
 
  Zde používáme a`foreach` smyčka pro procházení všech polí v dokumentu. Zkontrolujeme, zda je pole typu float zaškrtnutím`TextWrapping` vlastnictví. Pokud ano, vytiskneme vlastnosti umístění tabulky, jako je horizontální kotva, vertikální kotva, absolutní horizontální a vertikální vzdálenosti, povolení překrytí, absolutní horizontální vzdálenost a relativní vertikální zarovnání.
  
-### Ukázka zdrojového kódu pro Get Floating Table Position pomocí Aspose.Words for .NET 
+### Ukázkový zdrojový kód pro Get Floating Table Position pomocí Aspose.Words for .NET 
 
 ```csharp
 	// Cesta k vašemu adresáři dokumentů

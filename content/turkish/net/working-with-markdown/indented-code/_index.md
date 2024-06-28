@@ -18,16 +18,16 @@ Bu örnekte girintili kod özelliğinin Aspose.Words for .NET ile nasıl kullan�
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. Adım: Girintili kod için stil ekleyin
+## 2. Adım: Belirtilen kod için stil ekleyin
 
- Girintili kod için özel bir stil ekleyeceğiz.`Styles.Add` yöntemi`Document` nesne. Bu örnekte girintili kod için "IndentedCode" adında bir stil oluşturuyoruz.
+Girintili kod için özel bir stil ekleyeceğiz.`Styles.Add` yöntemi`Document` nesne. Bu örnekte girintili kod için "IndentedCode" adında bir stil oluşturuyoruz.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## 3. Adım: Girintili kodu ekleyin
+## 3. Adım: Belirtilen kodu ekleyin
 
 Artık "IndentedCode" özel stilini kullanarak girintili bir kod bloğu ekleyebiliriz.
 
@@ -51,7 +51,7 @@ Tebrikler! Artık Aspose.Words for .NET ile girintili kod özelliğini nasıl ku
 
 ### SSS'ler
 
-#### S: Markdown'daki girintili kod nedir?
+#### S: Markdown'da belirtilen kod nedir?
 
 C: Markdown'daki girintili kod, Markdown belgesindeki kodu görüntülemek için kullanılan bir biçimlendirme yöntemidir. Her kod satırının boşluk veya sekmelerle girintilenmesinden oluşur.
 

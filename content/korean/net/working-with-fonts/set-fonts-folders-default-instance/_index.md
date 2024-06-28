@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2단계: 기본 글꼴 폴더 설정
-그런 다음 다음을 사용하여 기본 글꼴 폴더를 설정할 수 있습니다.`FontSettings.DefaultInstance` 수업과`SetFontsFolder()` 방법. 기본 폴더로 사용하려는 글꼴 폴더의 경로를 지정합니다.
+ 그런 다음 다음을 사용하여 기본 글꼴 폴더를 설정할 수 있습니다.`FontSettings.DefaultInstance` 수업과`SetFontsFolder()`방법. 기본 폴더로 사용하려는 글꼴 폴더의 경로를 지정합니다.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

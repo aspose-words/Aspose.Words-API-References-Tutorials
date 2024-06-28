@@ -51,9 +51,9 @@ Aqui está o código-fonte completo para o recurso Editar espaçamento e recuos 
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent será atualizado
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent será atualizado
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent será atualizado
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent será atualizado.
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent será atualizado.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent será atualizado.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore será atualizado
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter será atualizado
 
@@ -71,7 +71,7 @@ Com este código você poderá alterar o espaçamento e os recuos de um parágra
 
 #### P: O que o recurso "Alterar espaçamento e recuos de parágrafos asiáticos" no Aspose.Words for .NET faz?
 
-R: O recurso "Alterar espaçamento e recuos de parágrafos asiáticos" em Aspose.Words for .NET permite modificar as propriedades de espaçamento e recuo de um parágrafo asiático em um documento do Word. Você pode ajustar os recuos esquerdo e direito, recuo da primeira linha, espaço antes e espaço depois dos valores para controlar o layout e a aparência do parágrafo.
+R: O recurso "Alterar espaçamento e recuos de parágrafos asiáticos" em Aspose.Words for .NET permite modificar as propriedades de espaçamento e recuo de um parágrafo asiático em um documento do Word. Você pode ajustar os recuos à esquerda e à direita, recuo da primeira linha, espaço antes e espaço depois dos valores para controlar o layout e a aparência do parágrafo.
 
 #### P: Como altero o espaçamento e os recuos de um parágrafo asiático usando Aspose.Words for .NET?
 

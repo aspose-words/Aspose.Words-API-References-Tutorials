@@ -189,7 +189,7 @@ options.IgnoreInserted = false;
 
 #### P: Jak mogę wyświetlić zmodyfikowany dokument z wersjami wstawek w Aspose.Words dla .NET?
 
-Odp.: Po zmianie opcji w celu uwzględnienia wersji wkładki możesz ponownie przeprowadzić wyszukiwanie i zamianę, aby uzyskać wynik zawierający tekst znajdujący się we wstawionych wersjach:
+Odp.: Po zmianie opcji w celu uwzględnienia wersji wkładki można ponownie przeprowadzić wyszukiwanie i zamianę, aby uzyskać wynik zawierający tekst znajdujący się wewnątrz wersji wkładki:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);

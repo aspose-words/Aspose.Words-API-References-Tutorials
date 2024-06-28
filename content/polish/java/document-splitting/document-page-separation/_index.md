@@ -30,7 +30,7 @@ Zanim zagłębimy się w kod, upewnij się, że spełnione są następujące wym
 
 ## Krok 1: Załaduj dokument
 
-Na początek musimy załadować dokument, który chcemy podzielić na strony. Oto jak możesz to zrobić:
+Na początek musimy załadować dokument, w którym chcemy oddzielić strony. Oto jak możesz to zrobić:
 
 ```java
 // Załaduj dokument
@@ -74,17 +74,17 @@ Dzięki Aspose.Words dla Java manipulacja dokumentami staje się dziecinnie pros
 
 ### Jak mogę dostosować proces separacji stron?
 
-Możesz dostosować proces rozdzielania stron, określając różne kryteria, takie jak podział strony lub określone akapity, w celu podzielenia dokumentu.
+Możesz dostosować proces rozdzielania stron, określając różne kryteria, takie jak podziały stron lub określone akapity, w celu podzielenia dokumentu.
 
 ### Czy Aspose.Words obsługuje inne formaty dokumentów oprócz DOCX?
 
 Tak, Aspose.Words obsługuje różne formaty dokumentów, w tym DOC, RTF, HTML i inne.
 
-### Czy korzystanie z Aspose.Words dla Java jest darmowe?
+### Czy korzystanie z Aspose.Words dla Java jest bezpłatne?
 
 Aspose.Words dla Java jest biblioteką komercyjną, ale oferuje bezpłatną wersję próbną. Możesz sprawdzić ich stronę internetową, aby uzyskać szczegółowe informacje o cenach i licencjach.
 
-### Czy mogę połączyć oddzielone strony z powrotem w jeden dokument?
+### Czy mogę oddzielić scalone strony z powrotem w jeden dokument?
 
 Tak, możesz połączyć oddzielone strony z powrotem w jeden dokument, używając Aspose.Words for Java. Instrukcje łączenia znajdują się w dokumentacji.
 

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Schritt 3: Konfigurieren Sie die Metadatei-Rendering-Optionen
 
- Um die WMF-Schriftskalierung auf die Metadateigröße zu aktivieren oder zu deaktivieren, müssen wir Folgendes konfigurieren`MetafileRenderingOptions`Objekt. In diesem Beispiel deaktivieren wir die Schriftskalierung, indem wir die festlegen`ScaleWmfFontsToMetafileSize`Eigentum zu`false`.
+ Um die WMF-Schriftskalierung auf die Metadateigröße zu aktivieren oder zu deaktivieren, müssen wir Folgendes konfigurieren`MetafileRenderingOptions` Objekt. In diesem Beispiel deaktivieren wir die Schriftskalierung, indem wir die festlegen`ScaleWmfFontsToMetafileSize`Eigentum zu`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ ein PDF-Dokument mit Aspose.Words für .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Wenn Aspose.Words einige der Metadateidatensätze nicht korrekt in Vektorgrafiken rendern kann
+	//Wenn Aspose.Words einige der Metadateidatensätze nicht korrekt in Vektorgrafiken rendern kann
 	// dann rendert Aspose.Words diese Metadatei in eine Bitmap.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

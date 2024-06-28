@@ -1,6 +1,6 @@
 ---
-title: 개정판 수락
-linktitle: 개정판 수락
+title: 리뷰 수락
+linktitle: 리뷰 수락
 second_title: Aspose.Words 문서 처리 API
 description: .NET용 Aspose.Words를 사용하여 Word 문서의 수정본을 수락하는 방법을 알아보세요.
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// 변경 사항을 수락하면 개정 삭제 단락이 제거됩니다.
+// 삭제된 개정 단락은 변경 사항이 승인되면 제거됩니다.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

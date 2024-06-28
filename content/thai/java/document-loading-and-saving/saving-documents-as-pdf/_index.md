@@ -33,7 +33,7 @@ doc.save("output.pdf", saveOptions);
 
 ## การควบคุมตัวเลือกการบันทึก PDF
 
- คุณสามารถควบคุมตัวเลือกการบันทึก PDF ต่างๆ ได้โดยใช้`PdfSaveOptions` ระดับ. ตัวอย่างเช่น คุณสามารถตั้งชื่อที่แสดงสำหรับเอกสาร PDF ได้ดังนี้:
+ คุณสามารถควบคุมตัวเลือกการบันทึก PDF ต่างๆ ได้โดยใช้`PdfSaveOptions` ชั้นเรียน ตัวอย่างเช่น คุณสามารถตั้งชื่อที่แสดงสำหรับเอกสาร PDF ได้ดังนี้:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -63,7 +63,7 @@ doc.save("output.pdf", saveOptions);
 
 ## การส่งออกโครงสร้างเอกสาร
 
- หากต้องการส่งออกโครงสร้างเอกสาร ให้ตั้งค่า`exportDocumentStructure` ตัวเลือกในการ`true`: :
+ หากต้องการส่งออกโครงสร้างเอกสาร ให้ตั้งค่า`exportDocumentStructure` ตัวเลือกในการ`true`-
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -81,7 +81,7 @@ saveOptions.setImageCompression(PdfImageCompression.JPEG);
 doc.save("output.pdf", saveOptions);
 ```
 
-## การอัปเดตคุณสมบัติการพิมพ์ครั้งล่าสุด
+## อัปเดตคุณสมบัติการพิมพ์ครั้งล่าสุด
 
 หากต้องการอัปเดตคุณสมบัติ "พิมพ์ล่าสุด" ใน PDF ให้ใช้:
 
@@ -131,7 +131,7 @@ doc.save("output.pdf", saveOptions);
 
 ### ฉันสามารถฝังแบบอักษรใน PDF ที่สร้างโดย Aspose.Words สำหรับ Java ได้หรือไม่
 
- ใช่ คุณสามารถฝังแบบอักษรใน PDF ได้โดยการตั้งค่า`setEmbedFullFonts` ตัวเลือกในการ`true` ใน`PdfSaveOptions`. นี่คือตัวอย่าง:
+ ใช่ คุณสามารถฝังแบบอักษรใน PDF ได้โดยการตั้งค่า`setEmbedFullFonts` ตัวเลือกในการ`true` ใน`PdfSaveOptions`- นี่คือตัวอย่าง:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -141,7 +141,7 @@ doc.save("output.pdf", saveOptions);
 
 ### ฉันจะปรับแต่งคุณสมบัติเอกสารใน PDF ที่สร้างขึ้นได้อย่างไร
 
- คุณสามารถปรับแต่งคุณสมบัติของเอกสารในรูปแบบ PDF ได้โดยใช้`setCustomPropertiesExport` ตัวเลือกใน`PdfSaveOptions`. ตัวอย่างเช่น:
+ คุณสามารถปรับแต่งคุณสมบัติของเอกสารในรูปแบบ PDF ได้โดยใช้`setCustomPropertiesExport` ตัวเลือกใน`PdfSaveOptions`- ตัวอย่างเช่น:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -155,8 +155,8 @@ doc.save("output.pdf", saveOptions);
 
 ### ฉันจะอัปเดตคุณสมบัติ "พิมพ์ล่าสุด" ใน PDF ได้อย่างไร
 
- คุณสามารถอัปเดตคุณสมบัติ "พิมพ์ล่าสุด" ใน PDF ได้โดยการตั้งค่า`setUpdateLastPrintedProperty` ถึง`true` ใน`PdfSaveOptions`. ซึ่งจะแสดงวันที่พิมพ์ครั้งล่าสุดในข้อมูลเมตา PDF
+ คุณสามารถอัปเดตคุณสมบัติ "พิมพ์ล่าสุด" ใน PDF ได้โดยการตั้งค่า`setUpdateLastPrintedProperty` ถึง`true` ใน`PdfSaveOptions`- ซึ่งจะแสดงวันที่พิมพ์ครั้งล่าสุดในข้อมูลเมตา PDF
 
 ### ฉันจะปรับปรุงคุณภาพของภาพเมื่อแปลงเป็น PDF ได้อย่างไร
 
- หากต้องการปรับปรุงคุณภาพของภาพ ให้เปิดใช้งานการแก้ไขภาพโดยการตั้งค่า`setInterpolateImages` ถึง`true` ใน`PdfSaveOptions`. ซึ่งจะส่งผลให้รูปภาพใน PDF มีความนุ่มนวลและมีคุณภาพสูงขึ้น
+ หากต้องการปรับปรุงคุณภาพของภาพ ให้เปิดใช้งานการแก้ไขภาพโดยการตั้งค่า`setInterpolateImages` ถึง`true` ใน`PdfSaveOptions`- ซึ่งจะส่งผลให้รูปภาพใน PDF มีความนุ่มนวลและมีคุณภาพสูงขึ้น

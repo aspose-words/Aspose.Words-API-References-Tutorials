@@ -10,7 +10,7 @@ url: /zh-hant/java/document-conversion-and-export/using-charts/
 
 ## 在 Aspose.Words for Java 中使用圖表簡介
 
-在本教程中，我們將探索如何使用 Aspose.Words for Java 處理圖表。您將學習如何建立各種類型的圖表、自訂軸屬性、設定資料標籤格式等。讓我們深入了解一下吧！
+在本教程中，我們將探索如何使用 Aspose.Words for Java 處理圖表。您將學習如何建立各種類型的圖表、自訂軸屬性、設定資料標籤格式等。讓我們深入了解吧！
 
 ## 建立折線圖
 
@@ -45,7 +45,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.FormatNumberOfDataLabel.docx
 
 ## 建立其他類型的圖表
 
-您可以使用類似的技術建立不同類型的圖表，例如長條圖、面積圖、氣泡圖、散點圖等。下面是插入簡單長條圖的範例：
+您可以使用類似的技術來建立不同類型的圖表，例如長條圖、面積圖、氣泡圖、散點圖等。下面是插入簡單長條圖的範例：
 
 ```java
 Document doc = new Document();

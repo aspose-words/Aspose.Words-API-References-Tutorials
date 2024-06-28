@@ -2,157 +2,68 @@
 title: Üstbilgi Altbilgisi Oluştur
 linktitle: Üstbilgi Altbilgisi Oluştur
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile Word belgelerinizde üstbilgi ve altbilgileri nasıl oluşturacağınızı öğrenin. Her sayfa için üstbilgileri ve altbilgileri özelleştirin.
+description: Aspose.Words for .NET'i kullanarak Word belgelerine üstbilgi ve altbilgileri nasıl ekleyeceğinizi ve özelleştireceğinizi öğrenin. Bu adım adım kılavuz, profesyonel belge biçimlendirmeyi sağlar.
 type: docs
 weight: 10
 url: /tr/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-Aspose.Words for .NET işlevini kullanarak üstbilgiler ve altbilgiler oluşturmak için aşağıdaki C# kaynak kodunu açıklayan adım adım bir kılavuzu burada bulabilirsiniz. Bu kodu kullanmadan önce projenize Aspose.Words kütüphanesini eklediğinizden emin olun.
+Belgelerinize üstbilgi ve altbilgi eklemek, belgelerinizin profesyonelliğini ve okunabilirliğini artırabilir. Aspose.Words for .NET ile Word belgeleriniz için kolayca üstbilgi ve altbilgi oluşturabilir ve özelleştirebilirsiniz. Bu eğitimde, bu özellikleri sorunsuz bir şekilde uygulayabilmenizi sağlamak için süreç boyunca size adım adım yol göstereceğiz.
 
-## 1. Adım: Belge dizini yolunu ayarlayın
+## Önkoşullar
+
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+
+-  Aspose.Words for .NET: Buradan indirip yükleyin.[İndirme: {link](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi.
+- Temel C# Bilgisi: C# ve .NET çerçevesinin anlaşılması.
+- Örnek Belge: Üstbilgileri ve altbilgileri uygulamak veya öğreticide gösterildiği gibi yeni bir tane oluşturmak için örnek bir belge.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words sınıflarına ve yöntemlerine erişmek için öncelikle gerekli ad alanlarını içe aktarmanız gerekir.
 
 ```csharp
-// Belgeler dizininin yolu.
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System;
+```
+
+## Adım 1: Belge Dizinini Tanımlayın
+
+Belgenizin kaydedileceği dizini tanımlayın. Bu, yolu etkili bir şekilde yönetmenize yardımcı olur.
+
+```csharp
+// Belgeler dizininin yolu
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-Düzenlenen belgenin kaydedileceği belge dizininize giden doğru yolu belirttiğinizden emin olun.
+## Adım 2: Yeni Bir Belge Oluşturun
 
-## Adım 2: Bir belge ve belge oluşturucu oluşturun
+ Yeni bir belge oluşturun ve`DocumentBuilder` İçerik eklenmesini kolaylaştırmak için.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Burada bir örneğini oluşturuyoruz`Document` sınıf ve bir örnek`DocumentBuilder` belgeyi değiştirmemize ve öğeler eklememize izin verecek sınıf.
+## 3. Adım: Sayfa Yapısını Yapılandırın
 
-## 3. Adım: Sayfa parametrelerini ve ilk başlığı ayarlayın
+İlk sayfanın farklı bir üstbilgiye/altbilgiye sahip olup olmayacağı da dahil olmak üzere sayfa ayarlarını yapın.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// İlk sayfanın üstbilgilerinin/altbilgilerinin diğer sayfalardan farklı olmasını isteyip istemediğimizi belirtin.
-// Ayrıca belirtmek için PageSetup.OddAndEvenPagesHeaderFooter özelliğini de kullanabilirsiniz.
-// tek ve çift sayfalar için farklı üstbilgiler/altbilgiler.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
-
-builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-
-builder.Font.Name = "Arial";
-builder.Font.Bold = true;
-builder.Font.Size = 14;
-
-builder.Write("Aspose.Words - Creating Headers/Footers - Title Page.");
-
-pageSetup.HeaderDistance = 20;
-builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-Başlık mesafesi de dahil olmak üzere sayfa parametrelerini ayarlıyoruz ve ardından ana başlığa geçiyoruz (`HeaderPrimary`). Metin eklemek ve başlığı biçimlendirmek için belge oluşturucuyu kullanıyoruz.
+## Adım 4: İlk Sayfaya Başlık Ekleme
 
-## 4. Adım: Ana başlığa bir resim ve metin ekleyin
-
-```csharp
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-     RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
-
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.Write("Aspose.Words - Building headers/footers.");
-
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
-```
-
-Ana başlığın sol üst köşesine bir resim eklemek için belge oluşturucuyu kullanıyoruz, ardından sağa hizalanmış bir metin ekliyoruz.
-
-## Adım 5: Ana altbilgiye bir tablo ekleyin
+İlk sayfanın başlık bölümüne gidin ve başlık metnini yapılandırın.
 
 ```csharp
-builder.StartTable();
-
-builder.CellFormat.ClearFormatting();
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-
-builder.Write("Page ");
-builder.InsertField("PAGE", "");
-builder.Write(" of ");
-builder.InsertField("NUMPAGES", "");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.EndRow();
-builder.EndTable();
-
-builder.MoveToDocumentEnd();
-```
-
-## 6. Adım: Yeni bir sayfa ekleyin ve üstbilgileri/altbilgileri ayarlayın
-
-```csharp
-builder. InsertBreak(BreakType.PageBreak);
-builder.InsertBreak(BreakType.SectionBreakNewPage);
-
-currentSection = builder. CurrentSection;
-pageSetup = currentSection.PageSetup;
-pageSetup.Orientation = Orientation.Landscape;
-// Bu bölümün ilk sayfa için farklı bir üstbilgi/altbilgiye ihtiyacı yoktur, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır,
-//ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde zaten tanımlanmıştı.
-pageSetup.DifferentFirstPageHeaderFooter = false;
-
-// Bu bölüm varsayılan olarak önceki bölümün üstbilgilerini/altbilgilerini görüntüler; bu bağlantıyı kesmek için currentSection.HeadersFooters.LinkToPrecious(false) çağrısını yapın,
-// yeni bölüm için sayfa genişliği farklıdır, dolayısıyla alt bilgi tablosu için farklı hücre genişlikleri ayarlamamız gerekir.
-currentSection.HeadersFooters.LinkToPrevious(false);
-
-// Bu bölüm için zaten mevcut üstbilgileri/altbilgileri kullanmak istiyorsak,
-//ancak birkaç küçük değişiklikle üstbilgileri/altbilgileri kopyalamak mantıklı olabilir
-// önceki bölümden ve gerekli değişiklikleri istediğimiz yere uygulayın.
-CopyHeadersFootersFromPreviousSection(currentSection);
-
-HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
-Row row = primaryFooter.Tables[0].FirstRow;
-row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-// Belgeyi kaydet
-doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
-```
-
- Birincil üstbilgilerin/altbilgilerin görünebileceği yeni bir sayfa oluşturmak için bir sayfa sonu ve bir bölüm sonu ekliyoruz. Yeni bölümün parametrelerini ayarlıyoruz, ardından`CopyHeadersFootersFromPreviousSection` Önceki bölümdeki üstbilgileri/altbilgileri kopyalama yöntemi. Son olarak ana altbilgi tablosu için uygun hücre genişliklerini ayarlayıp belgeyi kaydediyoruz.
-
-### Aspose.Words for .NET ile üstbilgi ve altbilgi oluşturmak için örnek kaynak kodu
-
-```csharp
-// Belgeler dizininin yolu.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-Section currentSection = builder.CurrentSection;
-PageSetup pageSetup = currentSection.PageSetup;
-// İlk sayfanın üstbilgilerinin/altbilgilerinin diğer sayfalardan farklı olmasını isteyip istemediğimizi belirtin.
-// Ayrıca belirtmek için PageSetup.OddAndEvenPagesHeaderFooter özelliğini de kullanabilirsiniz.
-// tek ve çift sayfalar için farklı üstbilgiler/altbilgiler.
-pageSetup.DifferentFirstPageHeaderFooter = true;
-pageSetup.HeaderDistance = 20;
-
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
@@ -161,75 +72,70 @@ builder.Font.Bold = true;
 builder.Font.Size = 14;
 
 builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+```
 
-pageSetup.HeaderDistance = 20;
+## Adım 5: Birincil Başlık Ekleme
+
+Birincil başlık bölümüne gidin ve bir resim ve metin ekleyin.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-// Üstbilginin üst/sol köşesine konumlandırılmış bir resim ekleyin.
-// Sayfanın üst/sol kenarlarına olan mesafe 10 noktaya ayarlanmıştır.
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+// Başlığa bir resim ekleyin
+builder.InsertImage(dataDir + "Graphics Interchange Format.gif", 
+    RelativeHorizontalPosition.Page, 10, RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
 builder.Write("Aspose.Words Header/Footer Creation Primer.");
+```
 
+## Adım 6: Birincil Altbilgi Ekleme
+
+Birincil altbilgi bölümüne gidin ve altbilgi içeriğini biçimlendirmek için bir tablo oluşturun.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// Satırdaki metnin bir bölümünü (sayfa numaralandırmayla) yapmak için iki hücreli bir tablo kullanıyoruz.
-// Sola hizalanacak ve metnin diğer kısmı (telif hakkıyla birlikte) sağa hizalanacak.
 builder.StartTable();
-
 builder.CellFormat.ClearFormatting();
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-// Geçerli sayfa numarasını ve birçok sayfayı otomatik olarak hesaplamak için PAGE ve NUMPAGES alanlarını kullanır.
+// Sayfa numaralandırması ekle
 builder.Write("Page ");
 builder.InsertField("PAGE", "");
 builder.Write(" of ");
 builder.InsertField("NUMPAGES", "");
 
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
 builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
 builder.EndRow();
 builder.EndTable();
+```
 
+## 7. Adım: İçerik ve Sayfa Sonu Ekleme
+
+Belgenin sonuna gidin, sayfa sonu ekleyin ve farklı sayfa ayarlarıyla yeni bir bölüm oluşturun.
+
+```csharp
 builder.MoveToDocumentEnd();
-
-// Birincil üstbilgilerin/altbilgilerin görüneceği ikinci bir sayfa oluşturmak için sayfa sonu yapın.
 builder.InsertBreak(BreakType.PageBreak);
 builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-// Bu bölümün farklı bir ilk sayfa üstbilgisine/altbilgisine ihtiyacı yoktur, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır.
-//ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde zaten tanımlanmıştı.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// Bu bölümde önceki bölümdeki üstbilgiler/altbilgiler görüntülenir
-// Bu sayfa genişliğini iptal etmek için varsayılan olarak currentSection.HeadersFooters.LinkToPrecious(false) öğesini çağırın
-// yeni bölüm için farklıdır ve bu nedenle altbilgi tablosu için farklı hücre genişlikleri ayarlamamız gerekir.
 currentSection.HeadersFooters.LinkToPrevious(false);
-
-// Bu bölüm için zaten var olan üstbilgi/altbilgi setini kullanmak istiyorsak.
-// Ancak bazı küçük değişikliklerle üstbilgileri/altbilgileri kopyalamak uygun olabilir
-// önceki bölümden ve gerekli değişiklikleri istediğimiz yere uygulayın.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
 Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
@@ -237,24 +143,47 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
-### SSS'ler
+## Adım 8: Önceki Bölümden Üstbilgileri ve Altbilgileri Kopyalayın
 
-#### S: Aspose.Words'teki belgeme nasıl başlık ekleyebilirim?
+Önceki bir bölümdeki üstbilgileri ve altbilgileri yeniden kullanmak istiyorsanız bunları kopyalayın ve gerekli değişiklikleri uygulayın.
 
- C: Aspose.Words'te belgenize başlık eklemek için`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` yöntem. Bu yöntem, belgenizin ilk bölümüne birincil başlık ekler.
+```csharp
+private static void CopyHeadersFootersFromPreviousSection(Section section)
+{
+    Section previousSection = (Section)section.PreviousSibling;
+    if (previousSection == null) return;
 
-#### S: Aspose.Words'te belgeme nasıl altbilgi ekleyebilirim?
+    section.HeadersFooters.Clear();
 
- C: Aspose.Words'te belgenize altbilgi eklemek için`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`yöntem. Bu yöntem, belgenizin ilk bölümüne birincil altbilgi ekler.
+    foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
+    {
+        section.HeadersFooters.Add(headerFooter.Clone(true));
+    }
+}
+```
 
-#### S: Aspose.Words'te üst bilgi veya alt bilgime nasıl metin ekleyebilirim?
+## Çözüm
 
- C: Aspose.Words'te üstbilginize veya altbilginize metin eklemek için`HeaderFooter.Paragraphs` Üstbilgi veya altbilginin paragraf koleksiyonunu almak için özelliği kullanın, ardından metninizi içeren bir paragrafı bu koleksiyona ekleyin.`ParagraphCollection.Add` yöntem.
+Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinize etkili bir şekilde üstbilgi ve altbilgi ekleyebilir ve özelleştirebilirsiniz. Bu, belgenizin görünümünü ve profesyonelliğini geliştirerek onu daha okunabilir ve ilgi çekici hale getirir.
 
-#### S: Aspose.Words'te üstbilgi veya altbilgi içeriğini görseller ve sayfa numaralarıyla özelleştirebilir miyim?
+## SSS
 
- C: Evet, Aspose.Words'te üstbilgi veya altbilgi içeriğini resimler ve sayfa numaralarıyla özelleştirebilirsiniz. Gibi nesneleri kullanabilirsiniz`Shape` gibi resimler ve nesneler eklemek için`Field` Üstbilginize veya altbilginize sayfa numaraları eklemek için.
+### S1: Aspose.Words for .NET nedir?
 
-#### S: Aspose.Words'te üst bilgim veya alt bilgimdeki metnin yazı tipini, boyutunu ve rengini değiştirebilir miyim?
+Aspose.Words for .NET, geliştiricilerin .NET uygulamaları içerisinde Word belgelerini programlı olarak oluşturmasına, düzenlemesine ve dönüştürmesine olanak tanıyan bir kütüphanedir.
 
- C: Evet, Aspose.Words'te üst bilginizdeki veya alt bilginizdeki metnin yazı tipini, boyutunu ve rengini değiştirebilirsiniz. Aşağıdaki gibi metin biçimlendirme özelliklerine erişebilirsiniz:`Font` yazı tipini değiştirmek için,`Size` Boyutu ayarlamak için ve`Color`Metin rengini ayarlamak için.
+### S2: Üstbilgiye veya altbilgiye resim ekleyebilir miyim?
+
+ Evet, üst bilgi veya alt bilgiye kolayca resim ekleyebilirsiniz.`DocumentBuilder.InsertImage` yöntem.
+
+### S3: İlk sayfa için farklı üstbilgileri ve altbilgileri nasıl ayarlarım?
+
+ İlk sayfa için farklı üstbilgiler ve altbilgiler ayarlayabilirsiniz.`DifferentFirstPageHeaderFooter` mülkiyeti`PageSetup` sınıf.
+
+### S4: Aspose.Words hakkında daha fazla belgeyi nerede bulabilirim?
+
+ Hakkında kapsamlı belgeler bulabilirsiniz.[Aspose.Words API dokümantasyon sayfası](https://reference.aspose.com/words/net/).
+
+### S5: Aspose.Words için destek mevcut mu?
+
+ Evet, Aspose kendi aracılığıyla destek sunuyor[destek Forumu](https://forum.aspose.com/c/words/8).

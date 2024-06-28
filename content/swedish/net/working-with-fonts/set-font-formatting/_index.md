@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/working-with-fonts/set-font-formatting/
 ---
-den här handledningen kommer vi att visa dig hur du ställer in teckensnittsformatering i ett Word-dokument med Aspose.Words för .NET. Du kommer att lära dig hur du använder stilar som fetstil, färg, kursiv stil, teckensnitt, storlek, mellanrum och understrykning.
+I den här handledningen kommer vi att visa dig hur du ställer in teckensnittsformatering i ett Word-dokument med Aspose.Words för .NET. Du kommer att lära dig hur du använder stilar som fetstil, färg, kursiv stil, teckensnitt, storlek, mellanrum och understrykning.
 
 ## Förutsättningar
 Innan du börjar, se till att du har följande saker:
@@ -15,14 +15,14 @@ Innan du börjar, se till att du har följande saker:
 - Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
 ## Steg 1: Definiera dokumentkatalogen
- Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
+Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Skapa och formatera dokumentet
- Skapa en instans av`Document` klass och`DocumentBuilder` klass för att bygga dokumentet. Använd`Font` egendom av`DocumentBuilder` för att komma åt egenskaper för teckensnittsformatering.
+ Skapa en instans av`Document` klass och`DocumentBuilder`klass för att bygga dokumentet. Använd`Font` egendom av`DocumentBuilder` för att komma åt egenskaper för teckensnittsformatering.
 
 ```csharp
 Document doc = new Document();

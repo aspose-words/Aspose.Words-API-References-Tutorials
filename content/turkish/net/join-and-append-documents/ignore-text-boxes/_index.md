@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## 4. Adım: Metin kutusu içeriğini ekleyin
 
- Oluşturmak`NodeImporter` nesnesini kullanın ve metin kutusu düğümlerini kaynak belgeden hedef belgeye aktarmak için kullanın. Kaynak belgedeki her paragrafı yineleyin ve bunu hedef belgeye aktarın.
+ Oluşturmak`NodeImporter`nesnesini kullanın ve metin kutusu düğümlerini kaynak belgeden hedef belgeye aktarmak için kullanın. Kaynak belgedeki her paragrafı yineleyin ve bunu hedef belgeye aktarın.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## 5. Adım: Hedef belgeyi kaydedin
 
- Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
+Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

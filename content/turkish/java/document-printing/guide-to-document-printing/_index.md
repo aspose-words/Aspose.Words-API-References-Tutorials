@@ -175,7 +175,7 @@ Aspose.Words for Java ile belge yazdırma, çeşitli senaryolarda uygulama alan�
 
 
 
-Geliştiriciler, belge yazdırmayı Java uygulamalarına entegre edebilir ve böylece kullanıcıların önemli belgelerin basılı kopyalarını oluşturmasını kolaylaştırabilir.
+Geliştiriciler, belge yazdırmayı Java uygulamalarına entegre ederek kullanıcıların önemli belgelerin basılı kopyalarını oluşturmasını kolaylaştırabilir.
 
 ### Otomatik Belge Yazdırma
 
@@ -183,7 +183,7 @@ Belge yazdırma işleminin otomatikleştirilmesi, toplu işlemlerde ve tekrarlan
 
 ## Çözüm
 
-Aspose.Words for Java ile belgeleri programlı olarak yazdırmak, kelime işlemci ve belge işleme projelerinde çalışan geliştiriciler için bir fırsatlar dünyasının kapılarını açar. Bu makalede sunulan adım adım kılavuz, başlamanıza ve Aspose.Words for Java kullanarak belge yazdırmanın tüm potansiyelini ortaya çıkarmanıza yardımcı olacaktır.
+Aspose.Words for Java ile belgeleri programlı olarak yazdırmak, kelime işlemci ve belge işleme projelerinde çalışan geliştiriciler için bir fırsatlar dünyasının kapılarını açar. Bu makalede sunulan adım adım kılavuz, Aspose.Words for Java'yı kullanarak belge yazdırmaya başlamanıza ve tüm potansiyelini açığa çıkarmanıza yardımcı olacaktır.
 
 ## SSS'ler
 

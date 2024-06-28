@@ -2,7 +2,7 @@
 title: Přidejte hodnoty data a času na osu grafu
 linktitle: Přidejte hodnoty data a času na osu grafu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak přidat hodnoty data a času na osu grafu pomocí Aspose.Words for .NET.
+description: Naučte se přidávat hodnoty data a času na osu grafu pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/programming-with-charts/date-time-values-to-axis/
@@ -105,15 +105,15 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 Tento příklad kódu vytvoří nový dokument aplikace Word, vloží sloupcový graf s hodnotami data a času na ose X a uloží dokument do určeného adresáře.
 
 ## Závěr
-tomto tutoriálu jste se naučili, jak přidat hodnoty data a času na osu grafu pomocí Aspose.Words for .NET. Podle podrobného průvodce můžete vytvořit graf, přidat hodnoty data a času do řady a nakonfigurovat osu tak, aby přesně zobrazovala hodnoty data a času. Aspose.Words for .NET poskytuje výkonnou sadu funkcí pro textové zpracování s grafy v dokumentech aplikace Word, což vám umožňuje efektivně reprezentovat a vizualizovat data s hodnotami data a času.
+tomto tutoriálu jste se naučili, jak přidat hodnoty data a času na osu grafu pomocí Aspose.Words for .NET. Podle podrobného průvodce můžete vytvořit graf, přidat hodnoty data a času do série a nakonfigurovat osu tak, aby zobrazovala hodnoty data a času přesně. Aspose.Words for .NET poskytuje výkonnou sadu funkcí pro textové zpracování s grafy v dokumentech aplikace Word, což vám umožňuje efektivně reprezentovat a vizualizovat data s hodnotami data a času.
 
 ### Nejčastější dotazy
 
 #### Q1. Mohu přidat hodnoty data a času na osu grafu pomocí Aspose.Words for .NET?
 Ano, pomocí Aspose.Words for .NET můžete přidávat a zobrazovat hodnoty data a času na ose grafu v dokumentu aplikace Word. Aspose.Words poskytuje rozhraní API a funkce pro práci s různými typy grafů a přizpůsobení jejich vzhledu, včetně zpracování hodnot data a času na ose.
 
-#### Q2. Jak přidám hodnoty data a času do řady grafu?
- Chcete-li do řady grafů přidat hodnoty data a času, můžete použít`Add`metoda řady grafu. Poskytněte pole hodnot data a času jako data kategorie (osa X) spolu s odpovídajícími hodnotami řady. To vám umožní vykreslit datové body s hodnotami data a času do grafu.
+#### Q2. Jak přidám hodnoty data a času do série grafu?
+ Chcete-li přidat hodnoty data a času do řady grafů, můžete použít`Add`metoda řady grafu. Poskytněte pole hodnot data a času jako data kategorie (osa X) spolu s odpovídajícími hodnotami řady. To vám umožní vykreslit datové body s hodnotami data a času do grafu.
 
 #### Q3. Jak mohu nakonfigurovat osu tak, aby zobrazovala hodnoty data a času?
  Nastavením příslušných vlastností můžete nakonfigurovat osu grafu tak, aby zobrazovala hodnoty data a času. Můžete například zadat minimální a maximální hodnoty pro osu pomocí`Scaling.Minimum` a`Scaling.Maximum` vlastnosti, resp. Kromě toho můžete nastavit hlavní a vedlejší jednotky pro definování intervalu a značek pro osu.

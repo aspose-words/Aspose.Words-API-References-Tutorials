@@ -105,7 +105,7 @@ End Sub
 
 ## Biztonsági szempontok
 
-A Word dokumentumok automatizálása figyelmet igényel a biztonságra. Az Aspose.Words for Python funkciókat biztosít a dokumentumok és makrók védelmére, így biztosítva, hogy az automatizálási folyamatok hatékonyak és biztonságosak legyenek.
+A Word dokumentumok automatizálása figyelmet igényel a biztonságra. Az Aspose.Words for Python olyan funkciókat kínál, amelyek biztonságossá teszik a dokumentumokat és a makrókat, biztosítva, hogy az automatizálási folyamatok hatékonyak és biztonságosak legyenek.
 
 ## Következtetés
 

@@ -2,100 +2,103 @@
 title: Wylicz węzły podrzędne
 linktitle: Wylicz węzły podrzędne
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wyliczyć węzły podrzędne w akapicie za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak wyliczyć węzły podrzędne w dokumencie programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego samouczka krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-node/enumerate-child-nodes/
 ---
 
-Oto przewodnik krok po kroku wyjaśniający poniższy kod źródłowy C#, który ilustruje sposób wyliczania węzłów podrzędnych przy użyciu Aspose.Words dla .NET.
+Dzięki odpowiednim narzędziom programowa praca z dokumentami może być prosta. Aspose.Words dla .NET to jedna z tak potężnych bibliotek, która pozwala programistom z łatwością manipulować dokumentami programu Word. Dzisiaj omówimy proces wyliczania węzłów podrzędnych w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ten przewodnik krok po kroku obejmie wszystko, od wymagań wstępnych po praktyczne przykłady, dzięki czemu będziesz mieć pewność, że dobrze rozumiesz proces.
 
-## Krok 1: Zaimportuj niezbędne referencje
-Zanim zaczniesz, upewnij się, że zaimportowałeś do swojego projektu niezbędne odniesienia do korzystania z Aspose.Words dla .NET. Obejmuje to importowanie biblioteki Aspose.Words i dodanie wymaganych przestrzeni nazw do pliku źródłowego.
+## Warunki wstępne
+
+Zanim zagłębimy się w kod, omówmy podstawowe wymagania wstępne, aby zapewnić płynne działanie:
+
+1. Środowisko programistyczne: Upewnij się, że masz zainstalowany program Visual Studio lub inne środowisko IDE zgodne z platformą .NET.
+2.  Aspose.Words dla .NET: Pobierz bibliotekę Aspose.Words dla .NET z[strona wydania](https://releases.aspose.com/words/net/).
+3.  Licencja: Uzyskaj bezpłatną wersję próbną lub licencję tymczasową od[Tutaj](https://purchase.aspose.com/temporary-license/).
+
+## Importuj przestrzenie nazw
+
+Zanim zaczniesz kodować, pamiętaj o zaimportowaniu niezbędnych przestrzeni nazw. Umożliwi to bezproblemowy dostęp do klas i metod Aspose.Words.
 
 ```csharp
+using System;
 using Aspose.Words;
-using Aspose.Words.Nodes;
-using Aspose.Words.NodeTypes;
 ```
 
-## Krok 2: Utwórz nowy dokument
- Na tym etapie utworzymy nowy dokument za pomocą pliku`Document` klasa.
+## Krok 1: Zainicjuj dokument
+
+Pierwszy krok polega na utworzeniu nowego dokumentu Word lub załadowaniu istniejącego. Dokument ten będzie dla nas punktem wyjścia do wyliczeń.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## Krok 3: Uzyskaj dostęp do akapitu i jego węzłów podrzędnych
- Aby wyliczyć węzły podrzędne akapitu, najpierw musimy uzyskać dostęp do samego akapitu. Użyj`GetChild` metoda z`Paragraph` typ węzła, aby uzyskać pierwszy akapit dokumentu.
+W tym przykładzie zaczynamy od pustego dokumentu, ale możesz załadować istniejący dokument za pomocą:
+
+```csharp
+Document doc = new Document("path/to/your/document.docx");
+```
+
+## Krok 2: Uzyskaj dostęp do pierwszego akapitu
+
+Następnie musimy uzyskać dostęp do określonego akapitu w dokumencie. Dla uproszczenia otrzymamy pierwszy akapit.
 
 ```csharp
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
- Następnie pobieramy kolekcję węzłów podrzędnych akapitu za pomocą metody`ChildNodes` nieruchomość.
+Ten kod pobiera węzeł pierwszego akapitu w dokumencie. Jeśli Twój dokument zawiera określone akapity, na które chcesz kierować, dostosuj odpowiednio indeks.
+
+## Krok 3: Pobierz węzły podrzędne
+
+Teraz, gdy mamy już nasz akapit, czas pobrać jego węzły podrzędne. Węzły podrzędne mogą być przebiegami, kształtami lub innymi typami węzłów w akapicie.
 
 ```csharp
-NodeCollection children = paragraph. ChildNodes;
+NodeCollection children = paragraph.GetChildNodes(NodeType.Any, false);
 ```
 
-## Krok 4: Przeglądaj węzły podrzędne
- Teraz, gdy mamy już kolekcję węzłów podrzędnych, możemy przeglądać je w pętli za pomocą a`foreach` pętla. Sprawdzamy typ każdego węzła podrzędnego i wykonujemy określone operacje w oparciu o typ.
+Ten wiersz kodu zbiera wszystkie węzły podrzędne dowolnego typu w określonym akapicie.
+
+## Krok 4: Iteruj przez węzły potomne
+
+Mając pod ręką węzły podrzędne, możemy je przeglądać, aby wykonać określone działania w oparciu o ich typy. W tym przypadku wydrukujemy tekst wszystkich znalezionych węzłów uruchomieniowych.
 
 ```csharp
 foreach (Node child in children)
 {
-     // Akapit może zawierać elementy podrzędne różnych typów, takie jak przebiegi, kształty i inne.
-     if (child. NodeType == NodeType.Run)
-     {
-         Run run = (Run)child;
-         Console.WriteLine(run.Text);
-     }
+    if (child.NodeType == NodeType.Run)
+    {
+        Run run = (Run)child;
+        Console.WriteLine(run.Text);
+    }
 }
 ```
 
- W tym przykładzie sprawdzamy, czy węzeł podrzędny jest typu`Run` (np. fragment tekstu). Jeśli tak, konwertujemy węzeł do`Run` i wyświetl tekst za pomocą`run.Text`.
+## Krok 5: Uruchom i przetestuj swój kod
 
-## Przykładowy kod źródłowy do wyliczania węzłów podrzędnych za pomocą Aspose.Words dla .NET
+Skompiluj i uruchom aplikację. Jeśli wszystko skonfigurowałeś poprawnie, powinieneś zobaczyć tekst każdego węzła uruchomieniowego w pierwszym akapicie wydrukowanym na konsoli.
 
+## Wniosek
 
-```csharp
-Document doc = new Document();
-Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Wyliczanie węzłów podrzędnych w dokumencie programu Word przy użyciu Aspose.Words dla .NET jest proste, jeśli zrozumiesz podstawowe kroki. Inicjując dokument, uzyskując dostęp do określonych akapitów, pobierając węzły podrzędne i iterując po nich, można z łatwością programowo manipulować dokumentami programu Word. Aspose.Words oferuje solidne API do obsługi różnych elementów dokumentów, co czyni go niezbędnym narzędziem dla programistów .NET.
 
-NodeCollection children = paragraph.ChildNodes;
-foreach (Node child in children)
-{
-	// Akapit może zawierać elementy podrzędne różnych typów, takie jak przebiegi, kształty i inne.
-	if (child.NodeType == NodeType.Run)
-	{
-		Run run = (Run) child;
-		Console.WriteLine(run.Text);
-	}
-}
-```
+ Bardziej szczegółową dokumentację i zaawansowane zastosowania można znaleźć na stronie[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/) . Jeśli potrzebujesz dodatkowego wsparcia, sprawdź[fora wsparcia](https://forum.aspose.com/c/words/8).
 
-To jest kompletny przykład kodu umożliwiający wyliczenie węzłów podrzędnych akapitu za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować odniesienia
+## Często zadawane pytania
 
+### 1. Jakie typy węzłów może zawierać akapit?
+Akapit może zawierać węzły, takie jak przebiegi, kształty, komentarze i inne elementy wbudowane.
 
-### Często zadawane pytania
+### 2. Jak mogę załadować istniejący dokument Word?
+ Możesz załadować istniejący dokument za pomocą`Document doc = new Document("path/to/your/document.docx");`.
 
-#### P: Co to jest węzeł podrzędny w Node.js?
+### 3. Czy mogę manipulować innymi typami węzłów oprócz Uruchom?
+ Tak, możesz manipulować różnymi typami węzłów, takimi jak kształty, komentarze i inne, sprawdzając ich`NodeType`.
 
-O: Węzeł podrzędny w Node.js odnosi się do węzła, który jest bezpośrednio zawarty w określonym węźle. Są to węzły znajdujące się bezpośrednio niżej w hierarchii niż węzeł nadrzędny.
+### 4. Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
+ Możesz rozpocząć od bezpłatnego okresu próbnego lub uzyskać tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-#### P: Jak wyliczyć węzły podrzędne określonego węzła?
-
- O: Aby wyliczyć węzły podrzędne określonego węzła w Node.js, możesz użyć metody`childNodes` właściwość węzła. Ta właściwość zwraca listę wszystkich węzłów podrzędnych określonego węzła.
-
-#### P: Jak uzyskać dostęp do właściwości węzła podrzędnego?
-
- O: Aby uzyskać dostęp do właściwości węzła podrzędnego w Node.js, możesz skorzystać z metod i właściwości udostępnianych przez interfejs API XML używany w środowisku Node.js. Możesz na przykład użyć metod takich jak`getAttribute` aby uzyskać wartość określonego atrybutu węzła podrzędnego.
-
-#### P: Czy możemy modyfikować węzły podrzędne węzła?
-
-O: Tak, możliwe jest modyfikowanie węzłów podrzędnych węzła w Node.js przy użyciu metod i właściwości udostępnianych przez interfejs API XML używany w środowisku Node.js. Możesz na przykład użyć metod takich jak`appendChild` Lub`removeChild` aby dodać lub usunąć węzły podrzędne z określonego węzła.
-
-#### P: Jak przeglądać wszystkie węzły podrzędne węzła?
-
- O: Aby przejść przez wszystkie węzły podrzędne określonego węzła w Node.js, możesz użyć a`for` pętla do iteracji po liście węzłów podrzędnych zwróconych przez metodę`childNodes` nieruchomość. Następnie możesz uzyskać dostęp do właściwości i wartości każdego węzła podrzędnego wewnątrz pętli.
+### 5. Gdzie mogę znaleźć więcej przykładów i dokumentacji?
+ Odwiedzić[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/) aby uzyskać więcej przykładów i szczegółowej dokumentacji.

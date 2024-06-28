@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Krok 3: Pobierz kolekcję kształtów i sprawdź, czy nie ma poprawek
+## Krok 3: Pobierz kolekcję kształtów i sprawdź, czy nie ma poprawek.
 
 Pobierzemy kolekcję kształtów z dokumentu i sprawdzimy wersje powiązane z każdym kształtem.
 
@@ -127,7 +127,7 @@ Assert.False(shapes[1].IsMoveToRevision);
 
 ## Wniosek
 
-tym samouczku nauczyliśmy się, jak wprowadzać poprawki do kształtów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z etapami tworzenia dokumentu, włączając śledzenie wersji, sprawdzając wersje powiązane z każdym kształtem i sprawdzając wersje pod kątem przenoszenia kształtów, byliśmy w stanie pomyślnie zarządzać wersjami. Aspose.Words dla .NET oferuje potężny interfejs API do przetwarzania tekstu z recenzjami i formularzami w dokumentach Word.
+tym samouczku nauczyliśmy się, jak wprowadzać poprawki do kształtów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z etapami tworzenia dokumentu, włączając śledzenie wersji, sprawdzając wersje powiązane z każdym kształtem i sprawdzając wersje pod kątem przenoszenia kształtów, byliśmy w stanie pomyślnie zarządzać wersjami. Aspose.Words dla .NET oferuje potężne API do przetwarzania tekstu z recenzjami i formularzami w dokumentach Word.
 
 ### Często zadawane pytania
 

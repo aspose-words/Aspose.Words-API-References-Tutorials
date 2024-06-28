@@ -143,7 +143,7 @@ Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-#### Q: .NET용 Aspose.Words에서 문서의 수정된 출력을 어떻게 볼 수 있나요?
+#### Q: Aspose.Words for .NET에서 문서의 수정된 출력을 어떻게 볼 수 있나요?
 
  A: 검색 및 바꾸기 작업을 적용한 후 다음을 사용하여 문서의 변경된 내용을 볼 수 있습니다.`GetText` 방법:
 

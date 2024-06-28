@@ -91,12 +91,12 @@ Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasiny
 
 #### T: Bagaimana cara memulai ulang daftar di setiap bagian di Aspose.Words?
 
- J: Untuk memulai ulang daftar di setiap bagian di Aspose.Words, Anda perlu membuat instance dari`List` kelas dan berikan daftar bernomor padanya. Kemudian Anda dapat menggunakan`List.IsRestartAtEachSection` properti untuk menentukan bahwa penomoran harus dimulai ulang di setiap bagian. Anda dapat mengaitkan daftar ini dengan satu atau beberapa bagian dokumen Anda sehingga penomoran dimulai ulang dengan benar di setiap bagian.
+ J: Untuk memulai ulang daftar di setiap bagian di Aspose.Words, Anda perlu membuat instance dari`List`kelas dan berikan daftar bernomor padanya. Kemudian Anda dapat menggunakan`List.IsRestartAtEachSection` properti untuk menentukan bahwa penomoran harus dimulai ulang di setiap bagian. Anda dapat mengaitkan daftar ini dengan satu atau beberapa bagian dokumen Anda sehingga penomoran dimulai ulang dengan benar di setiap bagian.
 
 #### T: Dapatkah saya menyesuaikan format penomoran daftar di Aspose.Words?
 
-A: Ya, Anda dapat menyesuaikan format penomoran daftar di Aspose.Words. Itu`List` class menawarkan beberapa properti untuk ini, seperti`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, dll. Anda dapat menggunakan properti ini untuk mengatur jenis daftar (bernomor, berpoin, dll.), format penomoran (angka Arab, angka Romawi, huruf, dll.), dan opsi pemformatan penomoran lainnya.
+ A: Ya, Anda dapat menyesuaikan format penomoran daftar di Aspose.Words. Itu`List` class menawarkan beberapa properti untuk ini, seperti`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, dll. Anda dapat menggunakan properti ini untuk mengatur jenis daftar (bernomor, berpoin, dll.), format penomoran (angka Arab, angka Romawi, huruf, dll.), dan opsi pemformatan penomoran lainnya.
 
 #### T: Apakah mungkin untuk menambahkan level tambahan ke daftar bernomor di Aspose.Words?
 
- J: Ya, dimungkinkan untuk menambahkan level tambahan ke daftar bernomor di Aspose.Words. Itu`ListLevel` kelas memungkinkan Anda mengatur properti pemformatan untuk setiap level daftar. Anda dapat mengatur opsi seperti awalan, akhiran, perataan, indentasi, dll. Ini memungkinkan Anda membuat daftar dengan berbagai tingkat hierarki.
+ J: Ya, dimungkinkan untuk menambahkan level tambahan ke daftar bernomor di Aspose.Words. Itu`ListLevel`kelas memungkinkan Anda mengatur properti pemformatan untuk setiap level daftar. Anda dapat mengatur opsi seperti awalan, akhiran, perataan, indentasi, dll. Ini memungkinkan Anda membuat daftar dengan berbagai tingkat hierarki.

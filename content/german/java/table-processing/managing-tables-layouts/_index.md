@@ -30,7 +30,7 @@ Der erste Schritt bei der Verwaltung von Tabellen ist deren Erstellung. Aspose.W
 // Erstellen Sie ein neues Dokument
 Document doc = new Document();
 
-// Erstellen Sie eine Tabelle mit 3 Zeilen und 4 Spalten
+// Erstellen Sie eine Tabelle mit 3 Zeilen und 4 Spalten.
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {
@@ -107,7 +107,7 @@ table.getRows().get(0).getCells().get(0).getParagraphs().get(0).getRuns().get(0)
 Ja, Sie können Zellen in einer Tabelle mit Aspose.Words zusammenführen, wie in der Anleitung gezeigt.
 
 ### Was passiert, wenn ich zuvor verbundene Zellen teilen muss?
- Keine Sorge! Sie können zuvor zusammengeführte Zellen einfach teilen, indem Sie ihre horizontale Zusammenführungseigenschaft auf setzen`NONE`.
+ Keine Sorge! Sie können zuvor zusammengeführte Zellen einfach teilen, indem Sie ihre horizontale Zusammenführungseigenschaft auf festlegen`NONE`.
 
 ### Wie kann ich vor einer Tabelle einen Seitenumbruch einfügen?
  Um einen Seitenumbruch vor einer Tabelle einzufügen, ändern Sie die Schriftart`PageBreakBefore` Eigentum wie gezeigt.

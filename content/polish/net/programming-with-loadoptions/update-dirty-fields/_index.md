@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## Wniosek
 
-W tym przewodniku wyjaśniliśmy, jak przesłać dokument, aktualizując brudne pola przy użyciu biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Aktualizacja Brudne pola podczas ładowania dokumentu wyświetli najnowsze wartości z dokumentu programu Word.
+W tym przewodniku wyjaśniliśmy, jak przesłać dokument, aktualizując brudne pola przy użyciu biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Aktualizacja Brudne pola podczas ładowania dokumentu wyświetli najnowsze wartości z Twojego dokumentu Word.
 
 
 ### Często zadawane pytania dotyczące aktualizacji brudnych pól w dokumencie programu Word
@@ -64,14 +64,14 @@ Odp.: Brudne pola w dokumencie programu Word odnoszą się do pól, które uleg�
 
 Odp.: Absolutnie! Aspose.Words zapewnia szereg opcji ładowania, które można dostosować do własnych wymagań, co czyni go elastycznym i wydajnym narzędziem do przetwarzania dokumentów.
 
-#### P: W jaki sposób aktualizacja brudnych pól przynosi korzyści mojej aplikacji?
+#### P: W jaki sposób aktualizacja brudnych pól przynosi korzyść mojej aplikacji?
 
 Odp.: Aktualizacja nieczytelnych pól gwarantuje, że aplikacja C# będzie wyświetlać najnowsze dane w dokumentach programu Word, poprawiając ogólne wrażenia użytkownika i dokładność informacji.
 
-#### P: Czy Aspose.Words obsługuje inne formaty dokumentów niż Word?
+#### P: Czy Aspose.Words obsługuje inne formaty dokumentów oprócz Worda?
 
 O: Tak, Aspose.Words obsługuje różne formaty dokumentów, w tym PDF, HTML, EPUB i inne, co czyni go kompleksowym rozwiązaniem do manipulowania dokumentami na różnych platformach.
 
 #### P: Czy Aspose.Words nadaje się do obsługi dużych dokumentów Word?
 
-Odp.: Absolutnie! Aspose.Words został zaprojektowany do obsługi dokumentów o różnych rozmiarach, a jego wydajność jest zoptymalizowana pod kątem wydajnej pracy z dużymi dokumentami Word.
+Odp.: Absolutnie! Aspose.Words został zaprojektowany do obsługi dokumentów o różnych rozmiarach, a jego wydajność jest zoptymalizowana pod kątem wydajnej pracy z dużymi dokumentami programu Word.

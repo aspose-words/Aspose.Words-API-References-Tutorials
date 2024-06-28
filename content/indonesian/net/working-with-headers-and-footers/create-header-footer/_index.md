@@ -2,157 +2,68 @@
 title: Buat Header Footer
 linktitle: Buat Header Footer
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat header dan footer di dokumen Word Anda dengan Aspose.Words untuk .NET. Sesuaikan header dan footer untuk setiap halaman.
+description: Pelajari cara menambahkan dan mengkustomisasi header dan footer di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini memastikan pemformatan dokumen profesional.
 type: docs
 weight: 10
 url: /id/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# berikut untuk membuat header dan footer menggunakan Aspose.Words untuk fungsionalitas .NET. Pastikan Anda telah menyertakan perpustakaan Aspose.Words di proyek Anda sebelum menggunakan kode ini.
+Menambahkan header dan footer ke dokumen Anda dapat meningkatkan profesionalisme dan keterbacaannya. Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah membuat dan mengkustomisasi header dan footer untuk dokumen Word Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah, memastikan Anda dapat mengimplementasikan fitur-fitur ini dengan lancar.
 
-## Langkah 1: Tetapkan jalur direktori dokumen
+## Prasyarat
+
+Sebelum memulai, pastikan Anda memiliki hal berikut:
+
+-  Aspose.Words untuk .NET: Unduh dan instal dari[tautan unduhan](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Seperti Visual Studio, untuk menulis dan menjalankan kode Anda.
+- Pengetahuan Dasar C#: Pemahaman C# dan .NET framework.
+- Contoh Dokumen: Contoh dokumen untuk menerapkan header dan footer, atau membuat yang baru seperti yang ditunjukkan dalam tutorial.
+
+## Impor Namespace
+
+Pertama, Anda perlu mengimpor namespace yang diperlukan untuk mengakses kelas dan metode Aspose.Words.
 
 ```csharp
-// Jalur ke direktori dokumen.
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System;
+```
+
+## Langkah 1: Tentukan Direktori Dokumen
+
+Tentukan direktori tempat dokumen Anda akan disimpan. Ini membantu dalam mengelola jalur secara efektif.
+
+```csharp
+// Jalur ke direktori dokumen
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-Pastikan untuk menentukan jalur yang benar ke direktori dokumen Anda tempat dokumen yang diedit akan disimpan.
+## Langkah 2: Buat Dokumen Baru
 
-## Langkah 2: Buat dokumen dan pembuat dokumen
+ Buat dokumen baru dan a`DocumentBuilder` untuk memudahkan penambahan konten.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Di sini kita membuat sebuah instance dari`Document` kelas dan sebuah instance dari`DocumentBuilder` kelas yang memungkinkan kita memanipulasi dokumen dan menambahkan elemen.
+## Langkah 3: Konfigurasikan Pengaturan Halaman
 
-## Langkah 3: Tetapkan parameter halaman dan header pertama
+Siapkan pengaturan halaman, termasuk apakah halaman pertama akan memiliki header/footer yang berbeda.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// Tentukan apakah kita ingin header/footer halaman pertama berbeda dengan halaman lainnya.
-// Anda juga dapat menggunakan properti PageSetup.OddAndEvenPagesHeaderFooter untuk menentukan
-// header/footer yang berbeda untuk halaman ganjil dan genap.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
-
-builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-
-builder.Font.Name = "Arial";
-builder.Font.Bold = true;
-builder.Font.Size = 14;
-
-builder.Write("Aspose.Words - Creating Headers/Footers - Title Page.");
-
-pageSetup.HeaderDistance = 20;
-builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-Kami mengatur parameter halaman, termasuk jarak header, dan kemudian berpindah ke header utama (`HeaderPrimary`). Kami menggunakan pembuat dokumen untuk menambahkan teks dan memformat header.
+## Langkah 4: Tambahkan Header ke Halaman Pertama
 
-## Langkah 4: Sisipkan gambar dan teks di header utama
-
-```csharp
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-     RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
-
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.Write("Aspose.Words - Building headers/footers.");
-
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
-```
-
-Kami menggunakan pembuat dokumen untuk menyisipkan gambar di sudut kiri atas header utama, lalu kami menambahkan beberapa teks rata kanan.
-
-## Langkah 5: Sisipkan tabel di footer utama
+Pindah ke bagian header untuk halaman pertama dan konfigurasikan teks header.
 
 ```csharp
-builder.StartTable();
-
-builder.CellFormat.ClearFormatting();
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-
-builder.Write("Page ");
-builder.InsertField("PAGE", "");
-builder.Write(" of ");
-builder.InsertField("NUMPAGES", "");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.EndRow();
-builder.EndTable();
-
-builder.MoveToDocumentEnd();
-```
-
-## Langkah 6: Tambahkan halaman baru dan atur header/footer
-
-```csharp
-builder. InsertBreak(BreakType.PageBreak);
-builder.InsertBreak(BreakType.SectionBreakNewPage);
-
-currentSection = builder. CurrentSection;
-pageSetup = currentSection.PageSetup;
-pageSetup.Orientation = Orientation.Landscape;
-// Bagian ini tidak memerlukan header/footer yang berbeda untuk halaman pertama, kita hanya memerlukan satu halaman judul dalam dokumen,
-//dan header/footer untuk halaman ini telah ditentukan di bagian sebelumnya.
-pageSetup.DifferentFirstPageHeaderFooter = false;
-
-// Bagian ini menampilkan header/footer dari bagian sebelumnya secara default, panggil currentSection.HeadersFooters.LinkToPrevious(false) untuk memutus tautan ini,
-// lebar halaman berbeda untuk bagian baru, jadi kita perlu mengatur lebar sel yang berbeda untuk tabel footer.
-currentSection.HeadersFooters.LinkToPrevious(false);
-
-// Jika kita ingin menggunakan header/footer yang sudah ada untuk bagian ini,
-//namun dengan sedikit perubahan, mungkin masuk akal untuk menyalin header/footer
-// dari bagian sebelumnya dan terapkan perubahan yang diperlukan sesuai keinginan kita.
-CopyHeadersFootersFromPreviousSection(currentSection);
-
-HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
-Row row = primaryFooter.Tables[0].FirstRow;
-row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-// Simpan dokumennya
-doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
-```
-
- Kami menambahkan hentian halaman dan hentian bagian untuk membuat halaman baru di mana header/footer utama akan terlihat. Kami mengatur parameter untuk bagian baru, lalu kami menggunakan`CopyHeadersFootersFromPreviousSection` metode untuk menyalin header/footer dari bagian sebelumnya. Terakhir, kami mengatur lebar sel yang sesuai untuk tabel footer utama dan menyimpan dokumen.
-
-### Contoh kode sumber untuk membuat header dan footer dengan Aspose.Words untuk .NET
-
-```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-Section currentSection = builder.CurrentSection;
-PageSetup pageSetup = currentSection.PageSetup;
-// Tentukan apakah kita ingin header/footer halaman pertama berbeda dengan halaman lainnya.
-// Anda juga dapat menggunakan properti PageSetup.OddAndEvenPagesHeaderFooter untuk menentukan
-// header/footer yang berbeda untuk halaman ganjil dan genap.
-pageSetup.DifferentFirstPageHeaderFooter = true;
-pageSetup.HeaderDistance = 20;
-
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
@@ -161,75 +72,70 @@ builder.Font.Bold = true;
 builder.Font.Size = 14;
 
 builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+```
 
-pageSetup.HeaderDistance = 20;
+## Langkah 5: Tambahkan Header Utama
+
+Pindah ke bagian header utama dan masukkan gambar dan teks.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-// Sisipkan gambar yang diposisikan ke sudut atas/kiri header.
-// Jarak dari tepi atas/kiri halaman diatur ke 10 poin.
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+// Masukkan gambar ke dalam header
+builder.InsertImage(dataDir + "Graphics Interchange Format.gif", 
+    RelativeHorizontalPosition.Page, 10, RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
 builder.Write("Aspose.Words Header/Footer Creation Primer.");
+```
 
+## Langkah 6: Tambahkan Footer Utama
+
+Pindah ke bagian footer utama dan buat tabel untuk memformat konten footer.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// Kami menggunakan tabel dengan dua sel untuk membuat satu bagian teks per baris (dengan penomoran halaman).
-// Untuk disejajarkan ke kiri, dan bagian teks lainnya (dengan hak cipta) disejajarkan ke kanan.
 builder.StartTable();
-
 builder.CellFormat.ClearFormatting();
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-// Ia menggunakan bidang PAGE dan NUMPAGES untuk menghitung secara otomatis nomor halaman saat ini dan banyak halaman.
+// Tambahkan penomoran halaman
 builder.Write("Page ");
 builder.InsertField("PAGE", "");
 builder.Write(" of ");
 builder.InsertField("NUMPAGES", "");
 
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
 builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
 builder.EndRow();
 builder.EndTable();
+```
 
+## Langkah 7: Tambahkan Konten dan Hentian Halaman
+
+Pindah ke akhir dokumen, tambahkan hentian halaman, dan buat bagian baru dengan pengaturan halaman berbeda.
+
+```csharp
 builder.MoveToDocumentEnd();
-
-// Buat hentian halaman untuk membuat halaman kedua di mana header/footer utama akan terlihat.
 builder.InsertBreak(BreakType.PageBreak);
 builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-// Bagian ini tidak memerlukan header/footer halaman pertama yang berbeda, kami hanya memerlukan satu halaman judul dalam dokumen,
-//dan header/footer untuk halaman ini telah ditentukan di bagian sebelumnya.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// Bagian ini menampilkan header/footer dari bagian sebelumnya
-// secara default panggil currentSection.HeadersFooters.LinkToPrevious(false) untuk membatalkan lebar halaman ini
-// berbeda untuk bagian baru, dan oleh karena itu kita perlu mengatur lebar sel yang berbeda untuk tabel footer.
 currentSection.HeadersFooters.LinkToPrevious(false);
-
-// Jika kita ingin menggunakan set header/footer yang sudah ada untuk bagian ini.
-// Namun dengan sedikit modifikasi, mungkin lebih baik menyalin header/footer
-// dari bagian sebelumnya dan terapkan modifikasi yang diperlukan sesuai keinginan kita.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
 Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
@@ -237,24 +143,47 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
-### FAQ
+## Langkah 8: Salin Header dan Footer dari Bagian Sebelumnya
 
-#### T: Bagaimana cara menambahkan header ke dokumen saya di Aspose.Words?
+Jika Anda ingin menggunakan kembali header dan footer dari bagian sebelumnya, salin dan terapkan modifikasi yang diperlukan.
 
- A: Untuk menambahkan header ke dokumen Anda di Aspose.Words, Anda dapat menggunakan`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` metode. Metode ini menambahkan judul utama ke bagian pertama dokumen Anda.
+```csharp
+private static void CopyHeadersFootersFromPreviousSection(Section section)
+{
+    Section previousSection = (Section)section.PreviousSibling;
+    if (previousSection == null) return;
 
-#### T: Bagaimana cara menambahkan footer ke dokumen saya di Aspose.Words?
+    section.HeadersFooters.Clear();
 
- A: Untuk menambahkan footer ke dokumen Anda di Aspose.Words, Anda dapat menggunakan`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`metode. Metode ini menambahkan footer utama ke bagian pertama dokumen Anda.
+    foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
+    {
+        section.HeadersFooters.Add(headerFooter.Clone(true));
+    }
+}
+```
 
-#### T: Bagaimana cara menambahkan teks ke header atau footer saya di Aspose.Words?
+## Kesimpulan
 
- A: Untuk menambahkan teks ke header atau footer Anda di Aspose.Words, Anda dapat menggunakan`HeaderFooter.Paragraphs` properti untuk mendapatkan kumpulan paragraf header atau footer, lalu tambahkan paragraf yang berisi teks Anda ke koleksi ini menggunakan`ParagraphCollection.Add` metode.
+Dengan mengikuti langkah-langkah ini, Anda dapat secara efektif menambahkan dan mengkustomisasi header dan footer di dokumen Word Anda menggunakan Aspose.Words untuk .NET. Hal ini meningkatkan tampilan dan profesionalisme dokumen Anda, membuatnya lebih mudah dibaca dan menarik.
 
-#### T: Bisakah saya mengkustomisasi konten header atau footer dengan gambar dan nomor halaman di Aspose.Words?
+## FAQ
 
- A: Ya, Anda dapat menyesuaikan konten header atau footer dengan gambar dan nomor halaman di Aspose.Words. Anda dapat menggunakan objek seperti`Shape` untuk menambahkan gambar dan objek seperti`Field` untuk menambahkan nomor halaman ke header atau footer Anda.
+### Q1: Apa itu Aspose.Words untuk .NET?
 
-#### T: Bisakah saya mengubah font, ukuran dan warna teks di header atau footer saya di Aspose.Words?
+Aspose.Words untuk .NET adalah pustaka yang memungkinkan pengembang membuat, mengedit, dan mengonversi dokumen Word secara terprogram dalam aplikasi .NET.
 
- A: Ya, Anda dapat mengubah font, ukuran dan warna teks di header atau footer Anda di Aspose.Words. Anda dapat mengakses properti pemformatan teks seperti`Font` untuk mengubah font,`Size` untuk menyesuaikan ukuran, dan`Color`untuk mengatur warna teks.
+### Q2: Bisakah saya menambahkan gambar ke header atau footer?
+
+ Ya, Anda dapat dengan mudah menambahkan gambar ke header atau footer menggunakan`DocumentBuilder.InsertImage` metode.
+
+### Q3: Bagaimana cara mengatur header dan footer yang berbeda untuk halaman pertama?
+
+ Anda dapat mengatur header dan footer yang berbeda untuk halaman pertama dengan menggunakan`DifferentFirstPageHeaderFooter` properti dari`PageSetup` kelas.
+
+### Q4: Di mana saya dapat menemukan lebih banyak dokumentasi tentang Aspose.Words?
+
+ Anda dapat menemukan dokumentasi lengkap di[Halaman dokumentasi Aspose.Words API](https://reference.aspose.com/words/net/).
+
+### Q5: Apakah tersedia dukungan untuk Aspose.Words?
+
+ Ya, Aspose menawarkan dukungan melalui mereka[forum dukungan](https://forum.aspose.com/c/words/8).

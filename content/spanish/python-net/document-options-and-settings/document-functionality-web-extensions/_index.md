@@ -10,7 +10,7 @@ url: /es/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## Introducción
 
-Las extensiones web se han convertido en una parte integral de los sistemas modernos de gestión de documentos. Permiten a los desarrolladores mejorar la funcionalidad de los documentos integrando perfectamente componentes basados en web. Aspose.Words, una poderosa API de manipulación de documentos para Python, proporciona una solución integral para incorporar extensiones web en sus documentos.
+Las extensiones web se han convertido en una parte integral de los sistemas modernos de gestión de documentos. Permiten a los desarrolladores mejorar la funcionalidad de los documentos integrando perfectamente componentes basados en web. Aspose.Words, una potente API de manipulación de documentos para Python, proporciona una solución integral para integrar extensiones web en sus documentos.
 
 ## Requisitos previos
 

@@ -15,7 +15,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel
 - A projektben telepített .NET Aspose.Words könyvtár
 
 ## 1. lépés: Határozza meg a dokumentumkönyvtárat
- Először állítsa be a könyvtár elérési útját a Word-dokumentum helyére. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal.
+Először állítsa be a könyvtár elérési útját a Word-dokumentum helyére. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -73,4 +73,4 @@ V: Ha a dokumentumban használt betűtípus nem található az Aspose.Words-ben 
 
 #### K: Az Aspose.Words-ben meghatározott betűtípus-mappák elsőbbséget élveznek a rendszerre telepített betűtípusokkal szemben?
 
-V: Igen, az Aspose.Words-ben meghatározott betűkészlet-mappák elsőbbséget élveznek a rendszerre telepített betűtípusokkal szemben. Ez azt jelenti, hogy ha egy azonos nevű betűtípus megtalálható a definiált betűtípus-mappákban és a rendszer-betűkészletekben is, akkor a Word-dokumentumok feldolgozása során a betűtípusmappában lévő verzió kerül felhasználásra.
+V: Igen, az Aspose.Words-ben meghatározott betűkészlet-mappák elsőbbséget élveznek a rendszerre telepített betűtípusokkal szemben. Ez azt jelenti, hogy ha egy azonos nevű betűtípus megtalálható mind a definiált betűtípusmappákban, mind a rendszer betűtípusaiban, akkor a Word-dokumentumok feldolgozása során a fontmappában lévő verzió kerül felhasználásra.

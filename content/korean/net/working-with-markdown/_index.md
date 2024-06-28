@@ -8,13 +8,13 @@ weight: 810
 url: /ko/net/working-with-markdown/
 ---
 
-Markdown을 사용한 단어 처리는 .NET용 Aspose.Words 라이브러리를 사용하여 Markdown 형식으로 작업하는 방법을 학습할 수 있는 포괄적인 리소스를 제공합니다. 튜토리얼은 Markdown 파일 가져오기, Word 문서를 Markdown으로 변환, Markdown 스타일 사용자 지정, PDF로 내보내기 등 기타 형식 등을 포함하여 Markdown 문서를 조작하고 생성하기 위한 자세한 설명, 전체 소스 코드 및 실제 예제를 제공합니다. 이 리소스는 .NET용 Aspose.Words와 함께 Markdown 사용을 마스터하고 텍스트 기반 콘텐츠 생성을 위한 고급 기능을 최대한 활용하려는 개발자에게 필수적입니다.
+Markdown을 사용한 단어 처리는 .NET용 Aspose.Words 라이브러리를 사용하여 Markdown 형식으로 작업하는 방법을 학습할 수 있는 포괄적인 리소스를 제공합니다. 튜토리얼에서는 Markdown 파일 가져오기, Word 문서를 Markdown으로 변환, Markdown 스타일 사용자 지정, PDF로 내보내기 등 기타 형식 등을 포함하여 Markdown 문서를 조작하고 생성하기 위한 자세한 설명, 전체 소스 코드 및 실제 예제를 제공합니다. 이 리소스는 .NET용 Aspose.Words와 함께 Markdown 사용을 마스터하고 텍스트 기반 콘텐츠 생성을 위한 고급 기능을 최대한 활용하려는 개발자에게 필수적입니다.
 
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
 | [굵은 텍스트](./bold-text/) | .NET용 Aspose.Words 단계별 가이드를 통해 텍스트를 굵은 글씨로 표시하는 방법을 알아보세요. |
-| [기울임꼴 텍스트](./italic-text/) | .NET용 Aspose.Words 단계별 가이드를 통해 기울임꼴 텍스트를 만드는 방법을 알아보세요. |
+| [이탈리아어 텍스트](./italic-text/) | .NET용 Aspose.Words 단계별 가이드를 통해 기울임꼴 텍스트를 만드는 방법을 알아보세요. |
 | [취소선](./strikethrough/) | Aspose.Words for .NET 단계별 가이드를 통해 취소선 텍스트 스타일을 적용하는 방법을 알아보세요. |
 | [인라인 코드](./inline-code/) | .NET용 Aspose.Words 단계별 가이드를 통해 코드를 인라인하는 방법을 알아보세요. |
 | [자동링크](./autolink/) | .NET용 Aspose.Words 단계별 가이드를 통해 자동 링크를 삽입하는 방법을 알아보세요. |
@@ -22,7 +22,7 @@ Markdown을 사용한 단어 처리는 .NET용 Aspose.Words 라이브러리를 �
 | [영상](./image/) | .NET용 Aspose.Words 단계별 가이드를 통해 이미지를 삽입하고 사용자 정의하는 방법을 알아보세요. |
 | [수평 법칙](./horizontal-rule/) | Aspose.Words for .NET 단계별 가이드를 통해 수평선을 삽입하는 방법을 알아보세요. |
 | [표제](./heading/) | .NET용 Aspose.Words 단계별 가이드를 통해 제목을 사용하는 방법을 알아보세요. |
-| [Setext 제목](./setext-heading/) | .NET용 Aspose.Words 단계별 가이드를 통해 Setext 제목을 사용하여 문서 형식을 지정하는 방법을 알아보세요. |
+| [세텍스 제목](./setext-heading/) | .NET용 Aspose.Words 단계별 가이드를 통해 Setext 제목을 사용하여 문서 형식을 지정하는 방법을 알아보세요. |
 | [들여쓰기된 코드](./indented-code/) | Aspose.Words for .NET 단계별 가이드를 통해 들여쓰기된 코드를 사용하는 방법을 알아보세요. |
 | [펜스된 코드](./fenced-code/) | .NET용 Aspose.Words 단계별 가이드로 분리 코드 기능을 사용하는 방법을 알아보세요. |
 | [인용하다](./quote/) | .NET용 Aspose.Words 단계별 가이드를 통해 견적을 사용하는 방법을 알아보세요. |

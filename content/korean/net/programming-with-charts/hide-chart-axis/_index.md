@@ -17,7 +17,7 @@ url: /ko/net/programming-with-charts/hide-chart-axis/
 - .NET 라이브러리용 Aspose.Words가 설치되었습니다. NuGet 패키지 관리자를 사용하여 다운로드하여 설치할 수 있습니다.
 - 출력 문서가 저장될 문서 디렉터리 경로입니다.
 
-## 2단계: 새 문서 만들기 및 차트 삽입
+## 2단계: 새 문서를 만들고 차트를 삽입합니다.
 
  새로 만들기`Document` 객체와`DocumentBuilder` 문서를 작성합니다.
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 Aspose.Words for .NET은 개발자가 .NET 애플리케이션에서 프로그래밍 방식으로 Word 문서를 생성, 조작 및 저장할 수 있도록 하는 강력한 문서 처리 라이브러리입니다. 차트 및 차트 축을 포함한 문서 요소를 사용하여 단어 처리를 위한 광범위한 기능을 제공합니다.
 
 #### Q2. .NET용 Aspose.Words를 어떻게 설치하나요?
-Visual Studio의 NuGet 패키지 관리자를 사용하여 .NET용 Aspose.Words를 다운로드하여 설치할 수 있습니다. NuGet 패키지 관리자에서 "Aspose.Words"를 검색하여 프로젝트에 설치하기만 하면 됩니다.
+Visual Studio의 NuGet 패키지 관리자를 사용하여 .NET용 Aspose.Words를 다운로드하여 설치할 수 있습니다. NuGet 패키지 관리자에서 "Apose.Words"를 검색하여 프로젝트에 설치하기만 하면 됩니다.
 
 #### Q3. 차트의 X축과 Y축을 모두 숨길 수 있나요?
  예, Aspose.Words for .NET을 사용하여 차트의 X축과 Y축을 모두 숨길 수 있습니다. X축을 숨기려면`AxisX` 차트의 속성을 설정하고`Hidden`재산`true` . 마찬가지로 Y축을 숨기려면`AxisY` 속성을 설정하고`Hidden`재산`true`. 이를 통해 차트 시각화에서 두 축을 모두 제거할 수 있습니다.

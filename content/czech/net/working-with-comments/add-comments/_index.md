@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-comments/add-comments/
 ---
 
-tomto komplexním tutoriálu se naučíte přidávat komentáře k dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete moci vkládat komentáře a upravovat jejich obsah ve svých dokumentech.
+V tomto komplexním tutoriálu se naučíte přidávat komentáře k dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete moci vkládat komentáře a upravovat jejich obsah ve svých dokumentech.
 
 ## Předpoklady
 Než začneme, ujistěte se, že máte následující předpoklady:
@@ -93,7 +93,7 @@ Odpověď: Ano, můžete formátovat text komentáře v Aspose.Words pro .NET po
 
 #### Otázka: Jak mohu načíst všechny komentáře přítomné v dokumentu?
 
-Odpověď: Všechny komentáře přítomné v dokumentu můžete načíst pomocí`Document.Comments` vlastnictví.
+ Odpověď: Všechny komentáře uvedené v dokumentu můžete načíst pomocí`Document.Comments` vlastnictví.
 
 #### Otázka: Mohu smazat konkrétní komentář v Aspose.Words pro .NET?
 

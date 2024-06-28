@@ -2,12 +2,12 @@
 title: Povolit Zakázat nahrazování písem
 linktitle: Povolit Zakázat nahrazování písem
 second_title: Aspose.Words API pro zpracování dokumentů
-description: tomto kurzu se dozvíte, jak povolit nebo zakázat nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: V tomto kurzu se dozvíte, jak povolit nebo zakázat nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/enable-disable-font-substitution/
 ---
-V tomto tutoriálu vás provedeme tím, jak povolit nebo zakázat nahrazování písem v dokumentu aplikace Word při vykreslování pomocí knihovny Aspose.Words pro .NET. Povolení nebo zakázání nahrazování písem vám umožňuje řídit, zda budou chybějící písma automaticky nahrazena výchozím písmem. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+tomto tutoriálu vás provedeme tím, jak povolit nebo zakázat nahrazování písem v dokumentu aplikace Word při vykreslování pomocí knihovny Aspose.Words pro .NET. Povolení nebo zakázání nahrazování písem vám umožňuje řídit, zda budou chybějící písma automaticky nahrazena výchozím písmem. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
 
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující položky:

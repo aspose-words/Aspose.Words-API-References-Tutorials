@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 
 #### 问：如何检索文档中的所有注释？
 
-答：您可以使用以下命令检索文档中存在的所有注释`Document.Comments`财产。
+答：您可以使用以下命令检索文档中出现的所有注释`Document.Comments`财产。
 
 #### 问：我可以删除 Aspose.Words for .NET 中的特定评论吗？
 

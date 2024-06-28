@@ -1,6 +1,6 @@
 ---
-title: Mesclagem Vertical
-linktitle: Mesclagem Vertical
+title: Mesclagem vertical
+linktitle: Mesclagem vertical
 second_title: API de processamento de documentos Aspose.Words
 description: Aprenda como mesclar células verticais em uma tabela em um documento do Word usando Aspose.Words for .NET.
 type: docs

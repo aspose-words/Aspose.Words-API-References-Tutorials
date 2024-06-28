@@ -78,7 +78,7 @@ Om een DOCX-bestand naar bytes te converteren, kunt u verschillende softwaretool
 
 #### Wat zijn de beperkingen van het conversieproces?
 
-De beperkingen van het conversieproces zijn afhankelijk van de specifieke tool of bibliotheek die u gebruikt. Voor sommige tools kunnen beperkingen gelden die verband houden met de grootte of complexiteit van het invoerdocument. Het is belangrijk om een tool te kiezen die aan de eisen van uw conversietaak kan voldoen.
+De beperkingen van het conversieproces zijn afhankelijk van de specifieke tool of bibliotheek die u gebruikt. Sommige tools kunnen beperkingen hebben met betrekking tot de grootte of complexiteit van het invoerdocument. Het is belangrijk om een tool te kiezen die aan de eisen van uw conversietaak kan voldoen.
 
 ### Kan ik de opmaak van het originele document behouden?
 

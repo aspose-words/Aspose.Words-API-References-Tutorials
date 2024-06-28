@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-markdown/heading/
 ---
 
-tomto příkladu vám ukážeme, jak používat funkci nadpisů s Aspose.Words pro .NET. Nadpisy se používají ke strukturování a upřednostňování obsahu dokumentu.
+V tomto příkladu vám ukážeme, jak používat funkci nadpisů s Aspose.Words pro .NET. Nadpisy se používají ke strukturování a upřednostňování obsahu dokumentu.
 
 ## Krok 1: Použití generátoru dokumentů
 
@@ -29,7 +29,7 @@ builder.Font.Italic = false;
 
 ## Krok 3: Přidání titulu 1. úrovně
 
- Můžeme přidat nadpis úrovně 1 zadáním příslušného názvu stylu odstavce a použitím`Writeln` způsob psaní obsahu názvu.
+ Můžeme přidat nadpis úrovně 1 zadáním příslušného názvu stylu odstavce a použitím`Writeln` způsob psaní obsahu titulku.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";

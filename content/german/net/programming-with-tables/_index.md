@@ -19,7 +19,7 @@ Wenn Sie diese Tutorials befolgen, können Sie die Tabellenbearbeitungsfunktione
 | [Tabelle automatisch an Inhalt anpassen](./auto-fit-table-to-contents/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle automatisch an ihren Inhalt in einem Word-Dokument anpassen. |
 | [Vollständige Tabelle klonen](./clone-complete-table/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine ganze Tabelle in ein Word-Dokument klonen. |
 | [Suchindex](./finding-index/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellen-, Zeilen- und Zellenindizes in einem Word-Dokument finden. |
-| [Tabelle direkt einfügen](./insert-table-directly/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle direkt in ein Word-Dokument einfügen. |
+| [Tabelle direkt einfügen](./insert-table-directly/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellen direkt in Word-Dokumente einfügen. Befolgen Sie unsere detaillierte Schritt-für-Schritt-Anleitung, um Ihre Dokumentenerstellung zu optimieren. |
 | [Tabelle aus HTML einfügen](./insert-table-from-html/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle aus HTML in ein Word-Dokument einfügen. |
 | [Erstellen Sie eine einfache Tabelle](./create-simple-table/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine einfache Tabelle in einem Word-Dokument erstellen. |
 | [Formatierte Tabelle](./formatted-table/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine formatierte Tabelle in einem Word-Dokument erstellen. |

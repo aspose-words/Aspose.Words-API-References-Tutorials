@@ -67,7 +67,7 @@ W tym przewodniku omówiliśmy, jak używać Aspose.Words dla .NET do wyodrębni
 
 #### P: Jaki jest cel funkcji „Zakresy Pobierz tekst w dokumencie programu Word” w Aspose.Words dla .NET?
 
-Odp.: Funkcja „Zakresy Pobierz tekst w dokumencie programu Word” w Aspose.Words dla .NET umożliwia wyodrębnienie tekstu zawartego w określonych zakresach dokumentu programu Word. Zapewnia możliwość dostępu i pobierania treści tekstowych w żądanych zakresach, takich jak sekcje, akapity lub inne niestandardowo zdefiniowane zakresy.
+O: Funkcja „Zakresy Pobierz tekst w dokumencie programu Word” w Aspose.Words dla .NET umożliwia wyodrębnienie tekstu zawartego w określonych zakresach dokumentu programu Word. Zapewnia możliwość dostępu i pobierania treści tekstowych w żądanych zakresach, takich jak sekcje, akapity lub inne niestandardowo zdefiniowane zakresy.
 
 #### P: Co to jest Aspose.Words dla .NET?
 

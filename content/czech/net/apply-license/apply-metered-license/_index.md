@@ -22,7 +22,7 @@ Chcete-li začít, importujte potřebné jmenné prostory do kódu C#. Tyto jmen
 using Aspose.Words;
 ```
 
-## Krok 2: Nastavte měřený licenční klíč
+## Krok 2: Nastavte Metered License Key
 Dále je třeba nastavit měřený licenční klíč pomocí metody SetMeteredKey třídy Metered. Poskytněte své měřené veřejné a soukromé klíče jako parametry této metody.
 
 ```csharp
@@ -72,7 +72,7 @@ catch (Exception e)
 ```
 
 ## Závěr
-Gratulujeme! Úspěšně jste se naučili, jak použít měřenou licenci pomocí Aspose.Words pro .NET. Budete-li se řídit podrobným průvodcem a pomocí poskytnutého zdrojového kódu, můžete nyní využít pokročilé funkce Aspose.Words pro své úlohy zpracování dokumentů.
+Gratulujeme! Úspěšně jste se naučili, jak použít měřenou licenci pomocí Aspose.Words pro .NET. Budete-li se řídit podrobným průvodcem a využívat dodaný zdrojový kód, můžete nyní využít pokročilé funkce Aspose.Words pro své úlohy zpracování dokumentů.
 
 Nyní můžete s jistotou nastavit měřenou licenci, načítat a zpracovávat dokumenty a využít plný potenciál Aspose.Words k vytváření, úpravě a manipulaci s dokumenty Word programově.
 

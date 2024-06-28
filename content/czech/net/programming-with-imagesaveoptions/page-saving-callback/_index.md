@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          // Zde implementujte své vlastní akce
          // K informacím o stránce můžete přistupovat prostřednictvím vlastnosti „args.PageIndex“.
-         // Můžete také změnit možnosti uložení pro každou stránku jednotlivě
+         // Můžete také změnit možnosti uložení pro každou stránku jednotlivě.
      }
 }
 ```

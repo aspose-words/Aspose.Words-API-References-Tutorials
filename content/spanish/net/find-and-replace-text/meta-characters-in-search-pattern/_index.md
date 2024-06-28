@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/find-and-replace-text/meta-characters-in-search-pattern/
 ---
-En este artículo, exploraremos el código fuente de C# anterior para comprender cómo utilizar la función Metacaracteres en patrón de búsqueda en la biblioteca Aspose.Words para .NET. Esta función le permite utilizar metacaracteres especiales para realizar búsquedas avanzadas y reemplazos en documentos de Word.
+En este artículo, exploraremos el código fuente de C# anterior para comprender cómo utilizar la función Metacaracteres en patrón de búsqueda en Aspose.Words para la biblioteca .NET. Esta función le permite utilizar metacaracteres especiales para realizar búsquedas avanzadas y reemplazos en documentos de Word.
 
 ## Requisitos previos
 
@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Paso 4: insertar un salto de página en el documento
 
- Para ilustrar el uso de otro metacarácter, insertaremos un salto de página en el documento usando el`InsertBreak` método con el`BreakType.PageBreak` parámetro. Primero movemos el cursor desde el`DocumentBuilder` hasta el final del documento, luego insertamos el salto de página y una nueva línea de texto:
+ Para ilustrar el uso de otro metacarácter, insertaremos un salto de página en el documento usando el`InsertBreak` método con el`BreakType.PageBreak` parámetros. Primero movemos el cursor desde el`DocumentBuilder` hasta el final del documento, luego insertamos el salto de página y una nueva línea de texto:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### P: ¿Cómo insertar un salto de página en un documento usando Aspose.Words para .NET?
 
-R: Para ilustrar el uso de otro metacarácter, insertaremos un salto de página en el documento usando el`InsertBreak` método con el`BreakType.PageBreak` parámetro. Primero movemos el cursor desde el`DocumentBuilder` hasta el final del documento, luego insertamos el salto de página y una nueva línea de texto:
+R: Para ilustrar el uso de otro metacarácter, insertaremos un salto de página en el documento usando el`InsertBreak` método con el`BreakType.PageBreak` parámetros. Primero movemos el cursor desde el`DocumentBuilder` hasta el final del documento, luego insertamos el salto de página y una nueva línea de texto:
 
 ```csharp
 builder. MoveToDocumentEnd();

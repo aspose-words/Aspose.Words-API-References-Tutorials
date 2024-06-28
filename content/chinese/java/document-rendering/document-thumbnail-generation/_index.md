@@ -66,7 +66,7 @@ stream.writeTo(outputStream);
 
 ### 如何安装 Aspose.Words for Java？
 
-要安装 Aspose.Words for Java，请访问下载页面[这里](https://releases.aspose.com/words/java/)并按照提供的安装说明进行操作。
+要安装 Aspose.Words for Java，请访问下载页面。[这里](https://releases.aspose.com/words/java/)并按照提供的安装说明进行操作。
 
 ### 我可以自定义生成的缩略图的大小吗？
 

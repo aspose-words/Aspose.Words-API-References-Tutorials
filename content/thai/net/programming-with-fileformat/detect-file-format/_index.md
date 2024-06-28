@@ -8,7 +8,7 @@ weight: 10
 url: /th/net/programming-with-fileformat/detect-file-format/
 ---
 
-บทความนี้ให้คำแนะนำทีละขั้นตอนเกี่ยวกับวิธีการใช้คุณลักษณะการตรวจจับรูปแบบไฟล์เอกสารกับ Aspose.Words สำหรับ .NET เราจะอธิบายโค้ดแต่ละส่วนอย่างละเอียด ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถเข้าใจวิธีการตรวจสอบรูปแบบของไฟล์เอกสารต่างๆ
+บทความนี้ให้คำแนะนำทีละขั้นตอนเกี่ยวกับวิธีการใช้คุณลักษณะการตรวจจับรูปแบบไฟล์เอกสารกับ Aspose.Words สำหรับ .NET เราจะอธิบายโค้ดแต่ละส่วนโดยละเอียด ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถเข้าใจวิธีการตรวจสอบรูปแบบของไฟล์เอกสารต่างๆ
 
 ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งและกำหนดค่าไลบรารี Aspose.Words สำหรับ .NET ในโปรเจ็กต์ของคุณแล้ว คุณสามารถดูไลบรารีและคำแนะนำในการติดตั้งได้จากเว็บไซต์ Aspose
 
@@ -66,7 +66,7 @@ break;
 LoadFormat.Docx box:
 Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
 break;
-// ... เพิ่มเคสสำหรับรูปแบบเอกสารอื่นๆ ที่รองรับ
+// ...เพิ่มเคสสำหรับรูปแบบเอกสารอื่นๆ ที่รองรับ
 LoadFormat.Unknown case:
 Console.WriteLine("\tFormat in
 
@@ -97,7 +97,7 @@ break;
 }
 ```
 
-นั่นคือทั้งหมดที่ ! คุณตรวจพบรูปแบบของไฟล์เอกสารที่แตกต่างกันโดยใช้ Aspose.Words สำหรับ .NET สำเร็จ
+นั่นคือทั้งหมด! คุณตรวจพบรูปแบบของไฟล์เอกสารที่แตกต่างกันโดยใช้ Aspose.Words สำหรับ .NET สำเร็จ
 
 ### ตัวอย่างซอร์สโค้ดสำหรับการตรวจจับรูปแบบไฟล์ด้วย Aspose.Words สำหรับ .NET
 
@@ -215,7 +215,7 @@ break;
 
 #### Aspose.Words for .NET รองรับรูปแบบเอกสารใดบ้าง
 
-Aspose.Words สำหรับ .NET รองรับรูปแบบเอกสารที่หลากหลาย รวมถึงเอกสาร Microsoft Word 97-2003 (DOC), เทมเพลต (DOT), เอกสาร Office Open XML WordprocessingML (DOCX), เอกสาร Office Open XML WordprocessingML พร้อมมาโคร (DOCM), Office Open เทมเพลต XML WordprocessingML ที่ไม่มีมาโคร (DOTX), เทมเพลต Office Open XML WordprocessingML พร้อมมาโคร (DOTM), เอกสาร OPC แบบเรียบ, เอกสาร RTF, เอกสาร Microsoft Word 2003 WordprocessingML, เอกสาร HTML, เอกสาร MHTML (เก็บถาวรเว็บ), เอกสาร OpenDocument Text (ODT) เทมเพลต OpenDocument Text (OTT), เอกสาร MS Word 6 หรือ Word 95 และรูปแบบเอกสารที่ไม่รู้จัก
+Aspose.Words สำหรับ .NET รองรับรูปแบบเอกสารที่หลากหลาย รวมถึงเอกสาร Microsoft Word 97-2003 (DOC), เทมเพลต (DOT), เอกสาร Office Open XML WordprocessingML (DOCX), เอกสาร Office Open XML WordprocessingML พร้อมมาโคร (DOCM), Office Open เทมเพลต XML WordprocessingML ที่ไม่มีมาโคร (DOTX), เทมเพลต Office Open OpenDocument Text (OTT), เอกสาร MS Word 6 หรือ Word 95 และรูปแบบเอกสารที่ไม่รู้จัก
 
 #### วิธีจัดการกับไฟล์เอกสารที่เข้ารหัสระหว่างการตรวจจับรูปแบบ
 

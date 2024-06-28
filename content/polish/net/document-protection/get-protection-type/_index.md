@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/document-protection/get-protection-type/
 ---
-Witamy w tym przewodniku krok po kroku, który wyjaśnia kod źródłowy C# dla funkcji Get Protection Type w Aspose.Words dla .NET. W tym artykule pokażemy, jak korzystać z tej zaawansowanej funkcji w celu określenia typu ochrony dokumentu. Ochrona dokumentów jest niezbędna, aby zapewnić poufność i integralność Twoich plików. Przeprowadzimy Cię przez kroki potrzebne do integracji Aspose.Words dla .NET i korzystania z funkcji Uzyskaj typ ochrony.
+Witamy w tym przewodniku krok po kroku, który wyjaśnia kod źródłowy C# dla funkcji Get Protection Type w Aspose.Words dla .NET. W tym artykule pokażemy, jak korzystać z tej zaawansowanej funkcji w celu określenia typu ochrony dokumentu. Ochrona dokumentów jest niezbędna, aby zapewnić poufność i integralność plików. Przeprowadzimy Cię przez kroki potrzebne do integracji Aspose.Words dla .NET i korzystania z funkcji Uzyskaj typ ochrony.
 
 ## Krok 1: Ładowanie dokumentu
 
@@ -50,7 +50,7 @@ tym artykule wyjaśniliśmy, jak używać funkcji Get Protection Type w Aspose.W
 
 Odp.: Aby pobrać typ ochrony dokumentu za pomocą Aspose.Words dla .NET, możesz wykonać następujące kroki:
 1.  Załaduj dokument za pomocą`Document` klasa.
-2.  Uzyskać dostęp do`ProtectionType` własność`Document`obiekt, aby pobrać typ ochrony.
+2.  Uzyskać dostęp do`ProtectionType` własność`Document` obiekt, aby pobrać typ ochrony.
 
 #### P: Czy mogę określić, czy dokument jest chroniony dla formularzy lub pól formularzy, korzystając z właściwości ProtectionType?
 

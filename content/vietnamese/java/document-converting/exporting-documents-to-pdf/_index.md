@@ -57,7 +57,7 @@ Xuất tài liệu sang PDF bằng Aspose.Words cho Java là một quy trình đ
 
 ### Làm cách nào tôi có thể xử lý định dạng phức tạp trong quá trình chuyển đổi?
 
-Aspose.Words for Java giữ nguyên định dạng phức tạp, chẳng hạn như bảng, hình ảnh và kiểu trong quá trình chuyển đổi. Bạn không cần phải lo lắng về việc mất bất kỳ cấu trúc hoặc thiết kế tài liệu nào.
+Aspose.Words for Java giữ nguyên định dạng phức tạp, chẳng hạn như bảng, hình ảnh và kiểu trong quá trình chuyển đổi. Bạn không cần lo lắng về việc mất bất kỳ cấu trúc hoặc thiết kế tài liệu nào.
 
 ### Tôi có thể chuyển đổi nhiều tài liệu cùng lúc không?
 

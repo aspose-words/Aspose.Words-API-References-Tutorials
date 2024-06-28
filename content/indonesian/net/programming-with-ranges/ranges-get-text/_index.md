@@ -35,7 +35,7 @@ Dalam contoh ini, kita menggunakan properti Range dari kelas Dokumen untuk menga
 
 ## Tampilan teks yang diekstraksi
 
-Sekarang kita telah mengekstrak teks dari rentang yang ditentukan, kita dapat menampilkan atau memprosesnya sesuai kebutuhan aplikasi Anda. Misalnya, Anda dapat menampilkannya di layar atau menyimpannya ke file keluaran. Berikut ini contoh untuk menampilkan teks yang diekstraksi:
+Sekarang kita telah mengekstrak teks dari rentang yang ditentukan, kita dapat menampilkan atau memprosesnya sesuai kebutuhan aplikasi Anda. Misalnya, Anda dapat menampilkannya di layar atau menyimpannya ke file keluaran. Berikut ini contoh untuk menampilkan teks yang diekstrak:
 
 ```csharp
 Console.WriteLine(text);
@@ -111,6 +111,6 @@ J: Ya, Anda hanya dapat mengekstrak bagian teks tertentu dalam rentang menggunak
 
  J: Ya, Aspose.Words untuk .NET mendukung ekstraksi teks dari dokumen Word yang dilindungi kata sandi atau terenkripsi. Namun, Anda perlu memberikan kata sandi atau kunci dekripsi yang benar saat memuat dokumen menggunakan`Document` konstruktor kelas. Hal ini memastikan bahwa dokumen didekripsi dengan benar sebelum mengakses konten teksnya.
 
-#### T: Dapatkah saya mengekstrak teks yang diformat atau diberi gaya (seperti teks kaya atau HTML) dari dokumen Word menggunakan Aspose.Words untuk .NET?
+#### T: Bisakah saya mengekstrak teks yang diformat atau diberi gaya (seperti teks kaya atau HTML) dari dokumen Word menggunakan Aspose.Words untuk .NET?
 
 J: Ya, Aspose.Words untuk .NET memungkinkan Anda mengekstrak teks yang diformat atau ditata dari dokumen Word. Teks yang diekstraksi mempertahankan format aslinya, yang mencakup gaya font, ukuran, warna, dan atribut pemformatan lainnya. Anda dapat memproses teks yang diekstraksi ini lebih lanjut atau mengonversinya ke format lain, seperti HTML, sesuai kebutuhan.

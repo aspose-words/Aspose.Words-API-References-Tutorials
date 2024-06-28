@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Langkah 3: Sisipkan Bentuk
- Menggunakan`InsertShape` metode`DocumentBuilder` objek untuk menyisipkan bentuk ke dalam dokumen. Tentukan tipe bentuk, posisi relatif horizontal dan vertikal, dimensi halaman, ukuran, dan tipe pembungkus. Anda juga dapat mengatur sudut rotasi bentuk jika diinginkan.
+ Menggunakan`InsertShape` metode`DocumentBuilder`objek untuk menyisipkan bentuk ke dalam dokumen. Tentukan tipe bentuk, posisi relatif horizontal dan vertikal, dimensi halaman, ukuran, dan tipe pembungkus. Anda juga dapat mengatur sudut rotasi bentuk jika diinginkan.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

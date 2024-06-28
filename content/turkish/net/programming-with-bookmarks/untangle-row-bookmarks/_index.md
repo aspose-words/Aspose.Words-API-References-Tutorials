@@ -120,7 +120,7 @@ C: Evet, Satır Yer İmlerini Çözme özelliği, tablolardaki satır yer imleri
 
 #### S: Satır Yer İmlerini Çözme işlevi orijinal belgenin içeriğini değiştirir mi?
 
-C: Evet, Satır yer imlerinin şifresini çözme işlevi, satır yer imlerinin uçlarını yer imlerinin başlangıçlarıyla aynı satıra yerleştirecek şekilde hareket ettirerek orijinal belgeyi değiştirir. Bu özelliği uygulamadan önce belgenin yedek bir kopyasını kaydettiğinizden emin olun.
+C: Evet, Satır yer imlerinin şifresini çözme işlevi, satır yer imlerinin uçlarını, yer imlerinin başlangıçlarıyla aynı satıra yerleştirecek şekilde hareket ettirerek orijinal belgeyi değiştirir. Bu özelliği uygulamadan önce belgenin yedek bir kopyasını kaydettiğinizden emin olun.
 
 #### S: Word belgemdeki satır yer işaretlerini nasıl tanımlayabilirim?
 

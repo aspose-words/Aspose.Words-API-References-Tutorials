@@ -74,7 +74,7 @@ Zachęcamy do zapoznania się z innymi zaawansowanymi funkcjami oferowanymi prze
  Tak, możesz wyodrębnić strony nie sąsiadujące ze sobą, określając żądany zakres stron. Na przykład, jeśli chcesz wyodrębnić strony 1, 3 i 5, możesz ustawić zakres stron jako`1,3,5` w`ExtractPages` funkcjonować.
 
 #### P2: Czy możliwe jest wyodrębnienie określonego zakresu stron z wielu dokumentów jednocześnie?
-Tak, możesz zastosować funkcję „Według zakresu stron” do wielu dokumentów. Po prostu załaduj każdy dokument osobno i wyodrębnij żądany zakres stron za pomocą`ExtractPages` funkcjonować. Następnie możesz zapisać wyodrębnione strony z każdego dokumentu osobno.
+ Tak, możesz zastosować funkcję „Według zakresu stron” do wielu dokumentów. Po prostu załaduj każdy dokument osobno i wyodrębnij żądany zakres stron za pomocą`ExtractPages` funkcjonować. Następnie możesz zapisać wyodrębnione strony z każdego dokumentu osobno.
 
 #### P3: Czy mogę wyodrębnić zakresy stron z zaszyfrowanych lub chronionych hasłem dokumentów programu Word?
 Nie, funkcja „Według zakresu stron” działa w przypadku niezabezpieczonych dokumentów programu Word. Jeśli dokument jest zaszyfrowany lub chroniony hasłem, przed wyodrębnieniem żądanego zakresu stron należy podać prawidłowe hasło i usunąć zabezpieczenie.

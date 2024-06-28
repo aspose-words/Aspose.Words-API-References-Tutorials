@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 第 2 步：載入文件並檢索多節標籤
-使用以下命令載入 Word 文檔`Document`建構函數，將文檔的路徑作為參數傳遞。使用下列命令檢索文件中所有結構化文件標籤範圍起始節點`GetChildNodes`方法。
+使用以下命令載入 Word 文檔`Document`建構函數，將文檔的路徑作為參數傳遞。使用下列命令檢索文件中所有結構化文件標記範圍起始節點`GetChildNodes`方法。
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

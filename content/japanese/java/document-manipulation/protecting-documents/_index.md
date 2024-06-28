@@ -21,7 +21,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 ```
 
-上記のコードでは、Word 文書をロードし、パスワードで保護して、フォーム フィールドのみを編集できるようにしています。
+上記のコードでは、Word 文書をロードし、パスワードで保護して、フォーム フィールドのみを編集できるようにします。
 
 ## ドキュメント保護の解除
 

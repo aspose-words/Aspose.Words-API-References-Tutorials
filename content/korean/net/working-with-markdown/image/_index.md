@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2단계: 이미지 삽입
 
- 다음을 사용하여 이미지를 삽입할 수 있습니다.`Shape` 클래스를 지정하고 이미지 유형을 지정합니다.`ShapeType.Image` 또한 이미지의 랩 유형을 다음과 같이 설정했습니다.`WrapType.Inline`.
+ 다음을 사용하여 이미지를 삽입할 수 있습니다.`Shape` 클래스를 지정하고 이미지 유형을 지정합니다.`ShapeType.Image` . 또한 이미지의 랩 유형을 다음과 같이 설정했습니다.`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ builder.InsertNode(shape);
 
 #### Q: Aspose.Words의 URL에서 이미지를 삽입할 수 있나요?
 
- A: 예, Aspose.Words의 URL에서 이미지를 삽입할 수 있습니다. 당신은 같은 것을 사용할 수 있습니다`InsertImage` 메서드를 사용하고 로컬 파일 경로 대신 이미지 URL을 지정하세요.
+ A: 예, Aspose.Words의 URL에서 이미지를 삽입할 수 있습니다. 당신은 같은 것을 사용할 수 있습니다`InsertImage`메서드를 사용하고 로컬 파일 경로 대신 이미지 URL을 지정하세요.
 
 #### Q: Aspose.Words에서 이미지 크기를 어떻게 조정할 수 있나요?
 
@@ -69,7 +69,7 @@ builder.InsertNode(shape);
 
 #### Q: Aspose.Words의 이미지에 필터를 적용할 수 있나요?
 
-A: 예, Aspose.Words의 이미지에 필터를 적용할 수 있습니다. 예를 들어 다음을 사용하여 이미지에 흐림 필터를 적용할 수 있습니다.`ApplyGaussianBlur` 의 방법`Shape` 물체.
+ A: 예, Aspose.Words의 이미지에 필터를 적용할 수 있습니다. 예를 들어 다음을 사용하여 이미지에 흐림 필터를 적용할 수 있습니다.`ApplyGaussianBlur` 의 방법`Shape` 물체.
 
 #### Q: Aspose.Words에서 한 이미지를 다른 이미지로 바꾸려면 어떻게 해야 합니까?
 

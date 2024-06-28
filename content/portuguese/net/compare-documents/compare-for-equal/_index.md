@@ -73,4 +73,4 @@ R: Sim, Aspose.Words for .NET oferece várias opções para personalizar o proce
 
 #### P: Posso realizar uma comparação mais detalhada para identificar diferenças específicas entre documentos?
 
-R: Sim, você pode realizar uma comparação mais detalhada para identificar diferenças específicas entre documentos iterando através do`Revisions` recolha do documento original. Cada revisão representa uma alteração ou diferença entre os documentos. Você pode acessar os detalhes de cada revisão, como o tipo de alteração (inserção, exclusão, alteração de formatação) e o intervalo afetado do documento.
+ R: Sim, você pode realizar uma comparação mais detalhada para identificar diferenças específicas entre documentos iterando através do`Revisions` recolha dos documentos originais. Cada revisão representa uma alteração ou diferença entre os documentos. Você pode acessar os detalhes de cada revisão, como o tipo de alteração (inserção, exclusão, alteração de formatação) e o intervalo afetado do documento.

@@ -36,12 +36,12 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-`actualResult` переменная содержит результат оценки условия.
+`actualResult` Переменная содержит результат оценки условия.
 
 ### Пример исходного кода для оценки условия IF с помощью Aspose.Words для .NET
 
 ```csharp
-// Создание генератора документов.
+//Создание генератора документов.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Вставьте поле ЕСЛИ в документ.

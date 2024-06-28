@@ -72,7 +72,7 @@ Dieses Tutorial bietet Ihnen eine Schritt-für-Schritt-Anleitung zum Erkennen di
 
 #### Wie kann das Verzeichnis mit den Dokumenten angegeben werden, in denen nach der digitalen Signatur gesucht werden soll?
 
- Um das Verzeichnis anzugeben, das die Dokumente enthält, in denen Sie nach der digitalen Signatur suchen möchten, müssen Sie das Verzeichnis ändern`dataDir` Variable im Code. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
+ Um das Verzeichnis anzugeben, das die Dokumente enthält, in denen Sie nach der digitalen Signatur suchen möchten, müssen Sie das Verzeichnis ändern`dataDir` Variablen im Code. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

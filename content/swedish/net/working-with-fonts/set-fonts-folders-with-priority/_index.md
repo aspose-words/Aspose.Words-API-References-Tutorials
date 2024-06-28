@@ -1,6 +1,6 @@
 ---
-title: Ställ in typsnittsmappar med prioritet
-linktitle: Ställ in typsnittsmappar med prioritet
+title: Ställ in teckensnittsmappar med prioritet
+linktitle: Ställ in teckensnittsmappar med prioritet
 second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ställa in teckensnittsmappar med prioritet när du renderar ett dokument med Aspose.Words för .NET.
 type: docs

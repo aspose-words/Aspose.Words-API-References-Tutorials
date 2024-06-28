@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 3: إدراج شكل وتكوينه
-قم بإدراج شكل في المستند باستخدام`InsertShape` طريقة`DocumentBuilder` هدف. ضبط الأبعاد المطلوبة للشكل.
+ قم بإدراج شكل في المستند باستخدام`InsertShape` طريقة`DocumentBuilder` هدف. ضبط الأبعاد المطلوبة للشكل.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام ملف`Save` طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithShapes.VerticalAnchor.docx".
+ احفظ المستند في الدليل المحدد باستخدام ملف`Save`طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithShapes.VerticalAnchor.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

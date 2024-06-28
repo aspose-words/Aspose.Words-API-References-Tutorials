@@ -82,7 +82,7 @@ O: Aby osadzić wszystkie czcionki w dokumencie PDF za pomocą Aspose.Words dla 
  Zapisz dokument w formacie PDF z osadzonymi czcionkami, korzystając z pliku`Save` metoda`Document`obiektu, podając nazwę pliku wyjściowego i skonfigurowane wcześniej opcje zapisu.
 
 #### P: Dlaczego ważne jest, aby osadzić wszystkie czcionki w dokumencie PDF?
-Odp.: Osadzanie wszystkich czcionek w dokumencie PDF jest ważne, aby zapewnić prawidłowe wyświetlanie dokumentu, nawet jeśli określone czcionki nie są dostępne w systemie, w którym otwiera się plik PDF. Pomaga to zachować wygląd, formatowanie i czytelność dokumentu, zapewniając spójne renderowanie używanych czcionek na różnych urządzeniach i platformach.
+Odp.: Osadzanie wszystkich czcionek w dokumencie PDF jest ważne, aby zapewnić prawidłowe wyświetlanie dokumentu, nawet jeśli określone czcionki nie są dostępne w systemie, w którym otwierany jest plik PDF. Pomaga to zachować wygląd, formatowanie i czytelność dokumentu, zapewniając spójne renderowanie używanych czcionek na różnych urządzeniach i platformach.
 
 #### P: Jakie są korzyści z osadzania czcionek w dokumencie PDF?
 O: Korzyści z osadzania czcionek w dokumencie PDF są następujące:

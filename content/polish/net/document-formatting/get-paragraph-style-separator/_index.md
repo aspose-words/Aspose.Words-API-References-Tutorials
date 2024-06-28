@@ -59,7 +59,7 @@ W tym samouczku omówiliśmy proces wykorzystania funkcji „Uzyskaj separator s
 
 #### P: Co to jest separator stylu akapitu w dokumencie programu Word?
 
-Odp.: Separator stylu akapitu w dokumencie programu Word to specyficzny element formatowania, który oddziela akapity na podstawie różnych stylów. Umożliwia zastosowanie unikalnych stylów do odrębnych sekcji dokumentu, poprawiając jego atrakcyjność wizualną i czytelność.
+Odp.: Separator stylu akapitu w dokumencie programu Word to specyficzny element formatowania, który oddziela akapity na podstawie różnych stylów. Umożliwia zastosowanie unikalnych stylów do odrębnych sekcji dokumentu, zwiększając jego atrakcyjność wizualną i czytelność.
 
 #### P: Czy mogę dostosować separator stylu w dokumencie programu Word?
 
@@ -71,7 +71,7 @@ O: Nie, Aspose.Words dla .NET nie jest jedynym dostępnym rozwiązaniem do pracy
 
 #### P: Czy mogę używać funkcji „Uzyskaj separator stylu akapitu” w innych językach programowania?
 
-O: Tak, możesz użyć funkcji „Pobierz separator stylu akapitu” z innymi językami programowania obsługiwanymi przez Aspose.Words, takimi jak Java, Python lub C++. Aspose.Words oferuje szereg interfejsów API i bibliotek specyficznych dla języka, ułatwiających przetwarzanie dokumentów na wielu platformach.
+Odp.: Tak, możesz użyć funkcji „Pobierz separator stylu akapitu” z innymi językami programowania obsługiwanymi przez Aspose.Words, takimi jak Java, Python lub C.++. Aspose.Words oferuje szereg interfejsów API i bibliotek specyficznych dla języka, ułatwiających przetwarzanie dokumentów na wielu platformach.
 
 #### P: Jak mogę uzyskać dostęp do dokumentacji Aspose.Words for .NET?
 

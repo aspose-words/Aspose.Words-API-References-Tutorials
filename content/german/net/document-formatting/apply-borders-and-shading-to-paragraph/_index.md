@@ -91,7 +91,7 @@ Hier ist der vollständige Quellcode für die Funktion „Rahmen und Schattierun
 
 ## Abschluss
 
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Rahmen und Schattierungen auf einen Absatz in einem Word-Dokument anwendet. Durch die Konfiguration der Absätze`Borders` Und`Shading` Eigenschaften konnten wir den Rahmenstil, die Linienfarbe und die Füllfarbe für den Absatz festlegen. Aspose.Words für .NET bietet leistungsstarke Formatierungsfunktionen, um das Erscheinungsbild von Absätzen anzupassen und die visuelle Darstellung Ihrer Dokumente zu verbessern.
+ In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Rahmen und Schattierungen auf einen Absatz in einem Word-Dokument anwendet. Durch die Konfiguration der Absätze`Borders` Und`Shading` Eigenschaften konnten wir den Rahmenstil, die Linienfarbe und die Füllfarbe für den Absatz festlegen. Aspose.Words für .NET bietet leistungsstarke Formatierungsfunktionen, um das Erscheinungsbild von Absätzen anzupassen und die visuelle Darstellung Ihrer Dokumente zu verbessern.
 
 ### FAQs
 
@@ -100,13 +100,13 @@ In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Rahmen 
 A: Um mit Aspose.Words für .NET Rahmen und Schattierungen auf einen Absatz in einem Word-Dokument anzuwenden, führen Sie die folgenden Schritte aus:
 1.  Erstellen Sie ein neues Dokument und a`DocumentBuilder` Objekt.
 2.  Konfigurieren Sie die Absatzränder, indem Sie auf zugreifen`Borders` Eigentum der`ParagraphFormat` und Festlegen des Rahmenstils für jede Seite.
-3.  Konfigurieren Sie die Absatzfüllung, indem Sie auf zugreifen`Shading` Eigentum der`ParagraphFormat` und Festlegen der Textur- und Füllfarben.
+3. Konfigurieren Sie die Absatzfüllung, indem Sie auf zugreifen`Shading` Eigentum der`ParagraphFormat` und Festlegen der Textur- und Füllfarben.
 4.  Fügen Sie dem Absatz Inhalte hinzu, indem Sie verwenden`Write` Methode der`DocumentBuilder`.
 5.  Speichern Sie das Dokument mit`Save` Methode.
 
 #### F: Wie stelle ich den Rahmenstil für jede Seite des Absatzes ein?
 
- A: Um den Rahmenstil für jede Seite des Absatzes festzulegen, können Sie auf zugreifen`Borders` Eigentum der`ParagraphFormat` und stellen Sie die ein`LineStyle` Eigentum für jeden`BorderType` (z.B,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Sie können verschiedene Linienstile angeben, z`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, usw.
+ A: Um den Rahmenstil für jede Seite des Absatzes festzulegen, können Sie auf zugreifen`Borders` Eigentum der`ParagraphFormat` und stellen Sie die ein`LineStyle` Eigentum für jeden`BorderType` (z.B.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Sie können verschiedene Linienstile angeben, z`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, usw.
 
 #### F: Wie lege ich die Textur- und Füllfarben für die Absatzschattierung fest?
 
